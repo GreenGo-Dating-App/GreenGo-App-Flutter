@@ -1,0 +1,835 @@
+{
+ "topic": "road_trips",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Own car or rental?",
+     "g": "Weigh comfort, cost, wear and flexibility before choosing which vehicle takes you on the trip.",
+     "p": [
+      "Your own car is familiar and ready, but long trips add kilometres and wear to it.",
+      "A rental can be newer, bigger or better suited to the route, and it is ideal when you fly in.",
+      "Compare the full picture: fuel, insurance, fees and how relaxed you feel at the wheel."
+     ],
+     "q": "Would you feel more at ease in your own car or in a fresh rental, and why?",
+     "c": "List two pros and two cons of using your own car for your dream trip."
+    },
+    "de": {
+     "t": "Eigenes Auto oder Mietwagen?",
+     "g": "Wäge Komfort, Kosten, Verschleiß und Flexibilität ab, bevor du dein Reisefahrzeug wählst.",
+     "p": [
+      "Dein eigenes Auto ist vertraut und startklar, doch lange Reisen bringen Kilometer und Verschleiß.",
+      "Ein Mietwagen kann neuer, größer oder passender für die Route sein, ideal nach einer Flugreise.",
+      "Vergleiche das Gesamtbild: Sprit, Versicherung, Gebühren und wie entspannt du am Steuer bist."
+     ],
+     "q": "Fühlst du dich im eigenen Auto oder in einem Mietwagen wohler, und warum?",
+     "c": "Notiere zwei Vor- und zwei Nachteile, mit dem eigenen Auto auf deine Traumreise zu gehen."
+    },
+    "es": {
+     "t": "¿Coche propio o de alquiler?",
+     "g": "Valora comodidad, coste, desgaste y flexibilidad antes de elegir el vehículo del viaje.",
+     "p": [
+      "Tu coche es conocido y está listo, pero los viajes largos le suman kilómetros y desgaste.",
+      "Un coche de alquiler puede ser más nuevo, grande o adecuado a la ruta, ideal si llegas en avión.",
+      "Compara el conjunto: combustible, seguro, tasas y lo tranquilo que te sientes al volante."
+     ],
+     "q": "¿Te sentirías más a gusto con tu propio coche o con uno de alquiler, y por qué?",
+     "c": "Anota dos ventajas y dos inconvenientes de usar tu coche en tu viaje soñado."
+    },
+    "fr": {
+     "t": "Ta voiture ou une location ?",
+     "g": "Pèse confort, coût, usure et souplesse avant de choisir le véhicule de ton voyage.",
+     "p": [
+      "Ta voiture est familière et prête, mais un long voyage lui ajoute des kilomètres et de l'usure.",
+      "Une location peut être plus récente, plus grande ou mieux adaptée, idéale si tu arrives en avion.",
+      "Compare l'ensemble : carburant, assurance, frais et ta sérénité au volant."
+     ],
+     "q": "Te sentirais-tu plus à l'aise dans ta voiture ou dans une location, et pourquoi ?",
+     "c": "Note deux avantages et deux inconvénients de partir avec ta voiture pour ton voyage rêvé."
+    },
+    "it": {
+     "t": "Auto tua o a noleggio?",
+     "g": "Valuta comfort, costi, usura e flessibilità prima di scegliere il veicolo del viaggio.",
+     "p": [
+      "La tua auto è familiare e pronta, ma un viaggio lungo le aggiunge chilometri e usura.",
+      "Un'auto a noleggio può essere più nuova, grande o adatta al percorso, ideale se arrivi in aereo.",
+      "Confronta il quadro completo: carburante, assicurazione, costi extra e quanto sei sereno alla guida."
+     ],
+     "q": "Ti sentiresti più a tuo agio con la tua auto o con una a noleggio, e perché?",
+     "c": "Scrivi due pro e due contro dell'usare la tua auto per il viaggio dei sogni."
+    },
+    "pt": {
+     "t": "Carro próprio ou alugado?",
+     "g": "Pesa conforto, custo, desgaste e flexibilidade antes de escolher o veículo da viagem.",
+     "p": [
+      "O teu carro é conhecido e está pronto, mas viagens longas somam quilómetros e desgaste.",
+      "Um carro de aluguer pode ser mais novo, maior ou mais adequado, ideal se chegares de avião.",
+      "Compara tudo: combustível, seguro, taxas e quão tranquilo te sentes ao volante."
+     ],
+     "q": "Sentir-te-ias mais à vontade no teu carro ou num carro alugado, e porquê?",
+     "c": "Anota duas vantagens e duas desvantagens de levar o teu carro na viagem de sonho."
+    },
+    "pt_BR": {
+     "t": "Carro próprio ou alugado?",
+     "g": "Pese conforto, custo, desgaste e flexibilidade antes de escolher o veículo da viagem.",
+     "p": [
+      "Seu carro é conhecido e está pronto, mas viagens longas somam quilômetros e desgaste.",
+      "Um carro alugado pode ser mais novo, maior ou mais adequado à rota, ideal se você chega de avião.",
+      "Compare o conjunto: combustível, seguro, taxas e o quanto você fica tranquilo ao volante."
+     ],
+     "q": "Você se sentiria mais à vontade no seu carro ou num alugado, e por quê?",
+     "c": "Anote duas vantagens e duas desvantagens de usar seu carro na viagem dos sonhos."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Renting a car: the basics",
+     "g": "Learn the main steps of renting: booking, age rules, pick-up checks and smart desk questions.",
+     "p": [
+      "Book ahead in busy seasons and read the conditions on age, mileage and extra drivers.",
+      "At pick-up, walk around the car and photograph every scratch before you drive away.",
+      "Ask about the fuel policy, who to call in a breakdown and how to return the car."
+     ],
+     "q": "Have you ever rented a car, or what part of renting would you like to understand better?",
+     "c": "Write three questions you would ask at a rental desk before taking the keys."
+    },
+    "de": {
+     "t": "Auto mieten: die Grundlagen",
+     "g": "Lerne die Schritte beim Mieten: Buchung, Altersregeln, Check bei Abholung und kluge Fragen.",
+     "p": [
+      "Buch in der Hauptsaison früh und lies die Bedingungen zu Alter, Kilometern und Zusatzfahrern.",
+      "Geh bei der Abholung ums Auto und fotografiere jeden Kratzer, bevor du losfährst.",
+      "Frag nach der Tankregel, wen du bei einer Panne anrufst und wie die Rückgabe läuft."
+     ],
+     "q": "Hast du schon einmal ein Auto gemietet, oder was daran möchtest du besser verstehen?",
+     "c": "Schreib drei Fragen auf, die du am Mietschalter stellen würdest, bevor du den Schlüssel nimmst."
+    },
+    "es": {
+     "t": "Alquilar un coche: lo básico",
+     "g": "Aprende los pasos del alquiler: reserva, normas de edad, revisión al recoger y buenas preguntas.",
+     "p": [
+      "Reserva con antelación en temporada alta y lee las condiciones de edad, kilometraje y conductores extra.",
+      "Al recogerlo, rodea el coche y fotografía cada arañazo antes de salir.",
+      "Pregunta por la política de combustible, a quién llamar si hay avería y cómo devolverlo."
+     ],
+     "q": "¿Has alquilado alguna vez un coche, o qué parte del alquiler te gustaría entender mejor?",
+     "c": "Escribe tres preguntas que harías en el mostrador antes de coger las llaves."
+    },
+    "fr": {
+     "t": "Louer une voiture : les bases",
+     "g": "Apprends les étapes d'une location : réservation, âge, état des lieux et bonnes questions.",
+     "p": [
+      "Réserve tôt en haute saison et lis les conditions sur l'âge, le kilométrage et les conducteurs en plus.",
+      "Au départ, fais le tour de la voiture et photographie chaque rayure avant de partir.",
+      "Demande la politique carburant, qui appeler en cas de panne et comment rendre la voiture."
+     ],
+     "q": "As-tu déjà loué une voiture, ou quelle étape de la location aimerais-tu mieux comprendre ?",
+     "c": "Écris trois questions que tu poserais au comptoir avant de prendre les clés."
+    },
+    "it": {
+     "t": "Noleggiare un'auto: le basi",
+     "g": "Impara i passi del noleggio: prenotazione, limiti di età, controlli al ritiro e domande utili.",
+     "p": [
+      "Prenota in anticipo in alta stagione e leggi le condizioni su età, chilometri e guidatori aggiuntivi.",
+      "Al ritiro fai il giro dell'auto e fotografa ogni graffio prima di partire.",
+      "Chiedi la politica sul carburante, chi chiamare in caso di guasto e come restituire l'auto."
+     ],
+     "q": "Hai mai noleggiato un'auto, o quale parte del noleggio vorresti capire meglio?",
+     "c": "Scrivi tre domande che faresti al banco del noleggio prima di prendere le chiavi."
+    },
+    "pt": {
+     "t": "Alugar um carro: o básico",
+     "g": "Aprende os passos do aluguer: reserva, regras de idade, verificação na entrega e boas perguntas.",
+     "p": [
+      "Reserva cedo na época alta e lê as condições sobre idade, quilómetros e condutores extra.",
+      "Na entrega, dá a volta ao carro e fotografa cada risco antes de arrancar.",
+      "Pergunta pela política de combustível, a quem ligar em caso de avaria e como devolver o carro."
+     ],
+     "q": "Já alugaste um carro, ou que parte do aluguer gostarias de perceber melhor?",
+     "c": "Escreve três perguntas que farias no balcão antes de receberes as chaves."
+    },
+    "pt_BR": {
+     "t": "Alugando um carro: o básico",
+     "g": "Aprenda as etapas do aluguel: reserva, regras de idade, vistoria na retirada e boas perguntas.",
+     "p": [
+      "Reserve cedo na alta temporada e leia as condições sobre idade, quilometragem e motorista extra.",
+      "Na retirada, dê a volta no carro e fotografe cada arranhão antes de sair.",
+      "Pergunte sobre a política de combustível, para quem ligar em caso de pane e como devolver o carro."
+     ],
+     "q": "Você já alugou um carro, ou que parte do aluguel gostaria de entender melhor?",
+     "c": "Escreva três perguntas que você faria no balcão da locadora antes de pegar a chave."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding car insurance terms",
+     "g": "Learn what common cover types mean in plain words so you can compare offers calmly.",
+     "p": [
+      "Third-party liability covers damage you cause to others; it is the basic cover in most places.",
+      "Damage waivers reduce what you pay if the rental car is damaged, often down to a set excess.",
+      "The excess or deductible is the amount you still pay yourself; always check how high it is."
+     ],
+     "q": "Which insurance word has always confused you a little?",
+     "c": "Find the excess amount in any rental or car policy and explain it in one sentence."
+    },
+    "de": {
+     "t": "Versicherungsbegriffe verstehen",
+     "g": "Lerne, was gängige Versicherungsarten in einfachen Worten bedeuten, um Angebote ruhig zu vergleichen.",
+     "p": [
+      "Die Haftpflicht deckt Schäden, die du anderen zufügst; sie ist fast überall der Grundschutz.",
+      "Eine Vollkasko oder Schadenverzichtserklärung senkt deine Kosten bei Schäden am Mietwagen.",
+      "Die Selbstbeteiligung ist der Betrag, den du trotzdem zahlst; prüfe immer, wie hoch sie ist."
+     ],
+     "q": "Welcher Versicherungsbegriff hat dich schon immer ein bisschen verwirrt?",
+     "c": "Such in einem Miet- oder Versicherungsvertrag die Selbstbeteiligung und erkläre sie in einem Satz."
+    },
+    "es": {
+     "t": "Entender los términos del seguro",
+     "g": "Aprende qué significan las coberturas habituales en palabras sencillas para comparar con calma.",
+     "p": [
+      "La responsabilidad civil cubre los daños que causas a otros; es la cobertura básica casi siempre.",
+      "Las exenciones por daños reducen lo que pagas si el coche de alquiler sufre daños.",
+      "La franquicia es la cantidad que pagas tú de todos modos; comprueba siempre su importe."
+     ],
+     "q": "¿Qué palabra del mundo de los seguros siempre te ha confundido un poco?",
+     "c": "Busca la franquicia en una póliza o contrato de alquiler y explícala en una frase."
+    },
+    "fr": {
+     "t": "Comprendre l'assurance auto",
+     "g": "Découvre ce que signifient les garanties courantes en mots simples pour comparer sereinement.",
+     "p": [
+      "La responsabilité civile couvre les dommages causés aux autres ; c'est la garantie de base presque partout.",
+      "Les rachats de dommages réduisent ce que tu paies si la voiture de location est abîmée.",
+      "La franchise est le montant qui reste à ta charge ; vérifie toujours son niveau."
+     ],
+     "q": "Quel mot d'assurance t'a toujours un peu embrouillé ?",
+     "c": "Trouve le montant de la franchise dans un contrat et explique-le en une phrase."
+    },
+    "it": {
+     "t": "Capire i termini assicurativi",
+     "g": "Scopri cosa significano le coperture più comuni in parole semplici, per confrontare con calma.",
+     "p": [
+      "La responsabilità civile copre i danni che causi ad altri; è la copertura base quasi ovunque.",
+      "Le coperture danni riducono quanto paghi se l'auto a noleggio viene danneggiata.",
+      "La franchigia è la cifra che paghi comunque tu; controlla sempre quanto è alta."
+     ],
+     "q": "Quale termine assicurativo ti ha sempre confuso un po'?",
+     "c": "Trova la franchigia in un contratto di noleggio o polizza e spiegala in una frase."
+    },
+    "pt": {
+     "t": "Perceber os termos do seguro",
+     "g": "Aprende o que significam as coberturas habituais em palavras simples para comparar com calma.",
+     "p": [
+      "A responsabilidade civil cobre os danos que causas a terceiros; é a cobertura base quase sempre.",
+      "As coberturas de danos próprios reduzem o que pagas se o carro alugado ficar danificado.",
+      "A franquia é o valor que pagas sempre do teu bolso; confirma sempre quanto é."
+     ],
+     "q": "Que palavra de seguros sempre te baralhou um pouco?",
+     "c": "Encontra o valor da franquia num contrato ou apólice e explica-o numa frase."
+    },
+    "pt_BR": {
+     "t": "Entendendo os termos do seguro",
+     "g": "Aprenda o que significam as coberturas comuns em palavras simples para comparar com calma.",
+     "p": [
+      "A cobertura de terceiros paga danos que você causa a outros; é a proteção básica quase sempre.",
+      "As proteções contra danos ao veículo reduzem o que você paga se o carro alugado for danificado.",
+      "A franquia é o valor que você paga do próprio bolso; sempre confira quanto é."
+     ],
+     "q": "Qual palavra de seguro sempre deixou você um pouco confuso?",
+     "c": "Encontre o valor da franquia num contrato ou apólice e explique-o numa frase."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing the right vehicle size",
+     "g": "Match seats, luggage space, fuel use and road types to the trip you are planning.",
+     "p": [
+      "Count people and bags first; a car that is full to the roof is tiring and less safe.",
+      "Small cars are easier on narrow lanes, old towns and parking, and usually use less fuel.",
+      "Bigger cars or estates bring comfort on long highways and room for gear like bikes or tents."
+     ],
+     "q": "For your dream trip, would you pick a small nimble car or a roomy one?",
+     "c": "Write down how many people and bags your trip needs, then pick a car size."
+    },
+    "de": {
+     "t": "Die richtige Fahrzeuggröße",
+     "g": "Stimme Sitze, Kofferraum, Verbrauch und Straßenart auf deine geplante Reise ab.",
+     "p": [
+      "Zähl zuerst Personen und Gepäck; ein bis unters Dach volles Auto ist anstrengend und weniger sicher.",
+      "Kleine Autos sind leichter auf engen Straßen, in Altstädten und beim Parken und brauchen meist weniger.",
+      "Größere Autos oder Kombis bieten Komfort auf langen Strecken und Platz für Räder oder Zelte."
+     ],
+     "q": "Würdest du für deine Traumreise ein kleines, wendiges oder ein geräumiges Auto wählen?",
+     "c": "Notiere, wie viele Personen und Taschen mitkommen, und wähle dann eine Fahrzeuggröße."
+    },
+    "es": {
+     "t": "Elegir el tamaño del coche",
+     "g": "Ajusta plazas, maletero, consumo y tipo de carretera al viaje que estás planeando.",
+     "p": [
+      "Cuenta primero personas y maletas; un coche lleno hasta el techo cansa y es menos seguro.",
+      "Los coches pequeños van mejor en calles estrechas, cascos antiguos y aparcamientos, y gastan menos.",
+      "Los coches grandes o familiares dan comodidad en autopistas largas y espacio para bicis o tiendas."
+     ],
+     "q": "Para tu viaje soñado, ¿elegirías un coche pequeño y ágil o uno espacioso?",
+     "c": "Apunta cuántas personas y maletas lleva tu viaje y elige un tamaño de coche."
+    },
+    "fr": {
+     "t": "Bien choisir la taille du véhicule",
+     "g": "Adapte places, coffre, consommation et type de routes au voyage que tu prépares.",
+     "p": [
+      "Compte d'abord passagers et bagages ; une voiture pleine jusqu'au toit fatigue et est moins sûre.",
+      "Les petites voitures passent mieux dans les ruelles, les vieilles villes et les parkings, et consomment moins.",
+      "Les grandes voitures ou breaks apportent du confort sur autoroute et de la place pour vélos ou tentes."
+     ],
+     "q": "Pour ton voyage rêvé, choisirais-tu une petite voiture agile ou une voiture spacieuse ?",
+     "c": "Note combien de personnes et de sacs partent, puis choisis une taille de voiture."
+    },
+    "it": {
+     "t": "Scegliere la misura dell'auto",
+     "g": "Abbina posti, bagagliaio, consumi e tipo di strade al viaggio che stai pianificando.",
+     "p": [
+      "Conta prima persone e bagagli: un'auto piena fino al tetto stanca ed è meno sicura.",
+      "Le auto piccole sono comode su stradine, centri storici e parcheggi, e di solito consumano meno.",
+      "Auto grandi o station wagon danno comfort in autostrada e spazio per bici o tende."
+     ],
+     "q": "Per il viaggio dei sogni sceglieresti un'auto piccola e agile o una spaziosa?",
+     "c": "Scrivi quante persone e borse partono e scegli la misura dell'auto."
+    },
+    "pt": {
+     "t": "Escolher o tamanho do carro",
+     "g": "Ajusta lugares, bagageira, consumo e tipo de estrada à viagem que estás a planear.",
+     "p": [
+      "Conta primeiro pessoas e malas; um carro cheio até ao tejadilho cansa e é menos seguro.",
+      "Carros pequenos são mais fáceis em ruas estreitas, centros históricos e estacionamento, e gastam menos.",
+      "Carros maiores ou carrinhas dão conforto em autoestrada e espaço para bicicletas ou tendas."
+     ],
+     "q": "Para a viagem de sonho, escolherias um carro pequeno e ágil ou um espaçoso?",
+     "c": "Anota quantas pessoas e malas vão e escolhe um tamanho de carro."
+    },
+    "pt_BR": {
+     "t": "Escolhendo o tamanho do carro",
+     "g": "Combine lugares, porta-malas, consumo e tipo de estrada com a viagem que você planeja.",
+     "p": [
+      "Conte primeiro pessoas e malas; um carro lotado até o teto cansa e é menos seguro.",
+      "Carros pequenos são mais fáceis em ruas estreitas, centros históricos e vagas, e gastam menos.",
+      "Carros maiores ou peruas dão conforto em rodovias longas e espaço para bikes ou barracas."
+     ],
+     "q": "Para a viagem dos sonhos, você escolheria um carro pequeno e ágil ou um espaçoso?",
+     "c": "Anote quantas pessoas e malas vão e escolha um tamanho de carro."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Manual or automatic?",
+     "g": "See how the gearbox affects comfort, rental options and driving in hills or heavy traffic.",
+     "p": [
+      "Automatics are relaxing in traffic jams and on steep hill starts, especially in unfamiliar places.",
+      "In some regions manual cars are more common in rental fleets, so book early if you need an automatic.",
+      "Only drive a manual if you are already confident with it; a road trip is not the place to learn."
+     ],
+     "q": "Which do you drive, manual or automatic, and how confident do you feel with it?",
+     "c": "Check whether your driving licence has any restriction about manual or automatic cars."
+    },
+    "de": {
+     "t": "Schaltung oder Automatik?",
+     "g": "Sieh, wie das Getriebe Komfort, Mietangebot und Fahren am Berg oder im Stau beeinflusst.",
+     "p": [
+      "Automatik ist entspannt im Stau und beim Anfahren am Berg, gerade an unbekannten Orten.",
+      "In manchen Regionen sind Schaltwagen in Mietflotten häufiger, buch Automatik also früh.",
+      "Fahr nur Schaltung, wenn du darin schon sicher bist; ein Roadtrip ist nicht der Ort zum Lernen."
+     ],
+     "q": "Was fährst du, Schaltung oder Automatik, und wie sicher fühlst du dich damit?",
+     "c": "Prüfe, ob dein Führerschein eine Einschränkung für Schalt- oder Automatikwagen hat."
+    },
+    "es": {
+     "t": "¿Manual o automático?",
+     "g": "Mira cómo el cambio afecta a la comodidad, al alquiler y a la conducción en cuestas o atascos.",
+     "p": [
+      "El automático relaja en atascos y al arrancar en cuesta, sobre todo en lugares que no conoces.",
+      "En algunas regiones abundan más los manuales en el alquiler, así que reserva pronto si quieres automático.",
+      "Conduce un manual solo si ya te sientes seguro; un road trip no es el sitio para aprender."
+     ],
+     "q": "¿Qué conduces, manual o automático, y cuánta seguridad sientes con él?",
+     "c": "Comprueba si tu permiso de conducir tiene alguna restricción sobre cambio manual o automático."
+    },
+    "fr": {
+     "t": "Manuelle ou automatique ?",
+     "g": "Vois comment la boîte de vitesses influence le confort, la location et la conduite en côte ou bouchons.",
+     "p": [
+      "L'automatique repose dans les bouchons et les démarrages en côte, surtout en terrain inconnu.",
+      "Dans certaines régions, les manuelles dominent les flottes de location : réserve tôt une automatique.",
+      "Ne conduis une manuelle que si tu es déjà à l'aise ; un road trip n'est pas le moment d'apprendre."
+     ],
+     "q": "Tu conduis en manuelle ou en automatique, et à quel point te sens-tu à l'aise ?",
+     "c": "Vérifie si ton permis comporte une restriction liée à la boîte manuelle ou automatique."
+    },
+    "it": {
+     "t": "Cambio manuale o automatico?",
+     "g": "Scopri come il cambio influisce su comfort, noleggio e guida in salita o nel traffico.",
+     "p": [
+      "L'automatico è rilassante nelle code e nelle partenze in salita, soprattutto in posti nuovi.",
+      "In alcune regioni le auto manuali sono più diffuse a noleggio: prenota presto se vuoi l'automatico.",
+      "Guida un manuale solo se sei già sicuro: un road trip non è il momento per imparare."
+     ],
+     "q": "Tu cosa guidi, manuale o automatico, e quanto ti senti sicuro?",
+     "c": "Controlla se la tua patente ha limitazioni per il cambio manuale o automatico."
+    },
+    "pt": {
+     "t": "Manual ou automático?",
+     "g": "Vê como a caixa de velocidades afeta o conforto, o aluguer e a condução em subidas ou trânsito.",
+     "p": [
+      "O automático é descansado no trânsito e nos arranques em subida, sobretudo em sítios novos.",
+      "Em algumas regiões os manuais são mais comuns no aluguer, por isso reserva cedo um automático.",
+      "Só conduzas um manual se já te sentires seguro; uma road trip não é sítio para aprender."
+     ],
+     "q": "Conduzes manual ou automático, e quão seguro te sentes?",
+     "c": "Confirma se a tua carta de condução tem alguma restrição sobre caixa manual ou automática."
+    },
+    "pt_BR": {
+     "t": "Manual ou automático?",
+     "g": "Veja como o câmbio afeta o conforto, as opções de aluguel e a direção em subidas ou trânsito.",
+     "p": [
+      "O automático é tranquilo no trânsito e nas arrancadas em subida, ainda mais em lugares novos.",
+      "Em algumas regiões os manuais são mais comuns nas locadoras, então reserve cedo um automático.",
+      "Só dirija manual se você já tiver segurança; uma road trip não é hora de aprender."
+     ],
+     "q": "Você dirige manual ou automático, e quanta segurança sente?",
+     "c": "Confira se a sua carteira de motorista tem alguma restrição sobre câmbio manual ou automático."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your driving documents",
+     "g": "Know which papers to carry: licence, vehicle papers, rental contract and maybe an international permit.",
+     "p": [
+      "Always carry your valid licence and ID; keep a photo of both stored safely on your phone.",
+      "Keep vehicle registration and insurance papers, or the rental contract, in the car.",
+      "Some countries ask for an international driving permit; check official sources well before you go."
+     ],
+     "q": "Where do you usually keep your important documents when you travel?",
+     "c": "Check the expiry date of your licence and note it in your phone calendar."
+    },
+    "de": {
+     "t": "Deine Fahrdokumente",
+     "g": "Wisse, welche Papiere mitmüssen: Führerschein, Fahrzeugpapiere, Mietvertrag und eventuell ein internationaler Führerschein.",
+     "p": [
+      "Hab immer deinen gültigen Führerschein und Ausweis dabei, dazu ein sicheres Foto davon im Handy.",
+      "Bewahr Fahrzeugschein und Versicherungsnachweis oder den Mietvertrag im Auto auf.",
+      "Manche Länder verlangen einen internationalen Führerschein; prüfe offizielle Quellen rechtzeitig."
+     ],
+     "q": "Wo bewahrst du deine wichtigen Dokumente auf Reisen normalerweise auf?",
+     "c": "Prüf das Ablaufdatum deines Führerscheins und trag es in deinen Handykalender ein."
+    },
+    "es": {
+     "t": "Tus documentos para conducir",
+     "g": "Conoce qué papeles llevar: permiso, papeles del coche, contrato de alquiler y quizá un permiso internacional.",
+     "p": [
+      "Lleva siempre tu permiso vigente y tu documento de identidad, y guarda una foto segura en el móvil.",
+      "Ten en el coche la documentación del vehículo y el seguro, o el contrato de alquiler.",
+      "Algunos países piden un permiso internacional de conducir; consulta fuentes oficiales con tiempo."
+     ],
+     "q": "¿Dónde sueles guardar tus documentos importantes cuando viajas?",
+     "c": "Mira la fecha de caducidad de tu permiso y apúntala en el calendario del móvil."
+    },
+    "fr": {
+     "t": "Tes papiers pour conduire",
+     "g": "Sache quels papiers emporter : permis, papiers du véhicule, contrat de location et parfois un permis international.",
+     "p": [
+      "Garde toujours ton permis valide et ta pièce d'identité, avec une photo bien protégée sur ton téléphone.",
+      "Laisse dans la voiture la carte grise et l'attestation d'assurance, ou le contrat de location.",
+      "Certains pays exigent un permis international ; vérifie les sources officielles bien avant de partir."
+     ],
+     "q": "Où ranges-tu d'habitude tes documents importants en voyage ?",
+     "c": "Vérifie la date d'expiration de ton permis et note-la dans le calendrier de ton téléphone."
+    },
+    "it": {
+     "t": "I tuoi documenti di guida",
+     "g": "Sappi quali documenti portare: patente, libretto, contratto di noleggio e magari un permesso internazionale.",
+     "p": [
+      "Porta sempre patente valida e documento d'identità, con una foto conservata in modo sicuro sul telefono.",
+      "Tieni in auto libretto di circolazione e assicurazione, oppure il contratto di noleggio.",
+      "Alcuni paesi chiedono il permesso internazionale di guida: controlla le fonti ufficiali per tempo."
+     ],
+     "q": "Dove tieni di solito i documenti importanti quando viaggi?",
+     "c": "Controlla la scadenza della tua patente e annotala nel calendario del telefono."
+    },
+    "pt": {
+     "t": "Os teus documentos de condução",
+     "g": "Sabe que papéis levar: carta, documentos do carro, contrato de aluguer e talvez uma licença internacional.",
+     "p": [
+      "Leva sempre a carta de condução válida e a identificação, com uma foto guardada em segurança no telemóvel.",
+      "Guarda no carro os documentos do veículo e do seguro, ou o contrato de aluguer.",
+      "Alguns países pedem a licença internacional de condução; consulta fontes oficiais com tempo."
+     ],
+     "q": "Onde costumas guardar os teus documentos importantes quando viajas?",
+     "c": "Vê a data de validade da tua carta e aponta-a no calendário do telemóvel."
+    },
+    "pt_BR": {
+     "t": "Seus documentos para dirigir",
+     "g": "Saiba quais papéis levar: carteira, documento do carro, contrato de aluguel e talvez a permissão internacional.",
+     "p": [
+      "Leve sempre sua carteira de motorista válida e um documento, com uma foto guardada com segurança no celular.",
+      "Deixe no carro o documento do veículo e o do seguro, ou o contrato da locadora.",
+      "Alguns países pedem a permissão internacional para dirigir; confira fontes oficiais com antecedência."
+     ],
+     "q": "Onde você costuma guardar seus documentos importantes quando viaja?",
+     "c": "Veja a validade da sua carteira de motorista e anote no calendário do celular."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The pre-trip tyre check",
+     "g": "Learn a five-minute tyre check of tread, pressure and visible damage before every trip.",
+     "p": [
+      "Check pressure when tyres are cold, using the values on the door frame sticker or in the manual.",
+      "Look at the tread: many tyres have small wear bars in the grooves that show when they are too worn.",
+      "Scan the sides for cuts, bulges or nails, and ask a mechanic if anything looks wrong."
+     ],
+     "q": "Have you ever checked tyre pressure yourself, or would this be your first time?",
+     "c": "Find the tyre pressure sticker on a car you use, often inside the driver's door frame."
+    },
+    "de": {
+     "t": "Der Reifencheck vor der Fahrt",
+     "g": "Lerne einen Fünf-Minuten-Check von Profil, Luftdruck und sichtbaren Schäden vor jeder Reise.",
+     "p": [
+      "Prüfe den Druck bei kalten Reifen mit den Werten vom Aufkleber im Türrahmen oder aus dem Handbuch.",
+      "Sieh dir das Profil an: Viele Reifen haben kleine Verschleißstege in den Rillen.",
+      "Such die Flanken nach Schnitten, Beulen oder Nägeln ab und frag bei Zweifeln eine Werkstatt."
+     ],
+     "q": "Hast du den Reifendruck schon einmal selbst geprüft, oder wäre es das erste Mal?",
+     "c": "Such an einem Auto, das du nutzt, den Aufkleber mit dem Reifendruck, oft im Fahrertürrahmen."
+    },
+    "es": {
+     "t": "Revisión de neumáticos",
+     "g": "Aprende una revisión de cinco minutos del dibujo, la presión y los daños visibles antes de cada viaje.",
+     "p": [
+      "Mide la presión con los neumáticos en frío, con los valores de la pegatina de la puerta o del manual.",
+      "Mira el dibujo: muchos neumáticos tienen testigos de desgaste en las ranuras que avisan cuándo cambiarlos.",
+      "Revisa los flancos en busca de cortes, bultos o clavos, y consulta a un taller si algo no te convence."
+     ],
+     "q": "¿Has comprobado alguna vez tú mismo la presión de los neumáticos, o sería la primera vez?",
+     "c": "Busca la pegatina de presiones en un coche que uses, a menudo en el marco de la puerta del conductor."
+    },
+    "fr": {
+     "t": "Le contrôle des pneus",
+     "g": "Apprends un contrôle de cinq minutes : sculptures, pression et dégâts visibles avant chaque départ.",
+     "p": [
+      "Vérifie la pression à froid, avec les valeurs de l'étiquette sur le montant de porte ou du manuel.",
+      "Regarde les sculptures : beaucoup de pneus ont des témoins d'usure dans les rainures.",
+      "Inspecte les flancs pour repérer coupures, hernies ou clous, et demande à un garagiste au moindre doute."
+     ],
+     "q": "As-tu déjà vérifié toi-même la pression des pneus, ou ce serait la première fois ?",
+     "c": "Trouve l'étiquette de pression sur une voiture que tu utilises, souvent sur le montant de la porte conducteur."
+    },
+    "it": {
+     "t": "Il controllo delle gomme",
+     "g": "Impara un controllo di cinque minuti di battistrada, pressione e danni visibili prima di ogni viaggio.",
+     "p": [
+      "Controlla la pressione a gomme fredde, con i valori dell'etichetta sul montante della porta o del manuale.",
+      "Guarda il battistrada: molte gomme hanno indicatori di usura nei solchi che segnalano quando cambiarle.",
+      "Osserva i fianchi in cerca di tagli, bolle o chiodi e chiedi a un gommista se qualcosa non va."
+     ],
+     "q": "Hai mai controllato da solo la pressione delle gomme, o sarebbe la prima volta?",
+     "c": "Trova l'etichetta della pressione su un'auto che usi, spesso sul montante della porta del guidatore."
+    },
+    "pt": {
+     "t": "Verificar os pneus",
+     "g": "Aprende uma verificação de cinco minutos ao piso, à pressão e a danos visíveis antes de cada viagem.",
+     "p": [
+      "Mede a pressão com os pneus frios, com os valores do autocolante na porta ou do manual.",
+      "Olha para o piso: muitos pneus têm indicadores de desgaste nos sulcos que mostram quando trocar.",
+      "Procura nos flancos cortes, bolhas ou pregos e pergunta a um mecânico se algo te parecer estranho."
+     ],
+     "q": "Já verificaste sozinho a pressão dos pneus, ou seria a primeira vez?",
+     "c": "Encontra o autocolante da pressão num carro que uses, muitas vezes no pilar da porta do condutor."
+    },
+    "pt_BR": {
+     "t": "Checando os pneus",
+     "g": "Aprenda uma checagem de cinco minutos da banda, da calibragem e de danos visíveis antes de viajar.",
+     "p": [
+      "Calibre com os pneus frios, usando os valores da etiqueta na coluna da porta ou do manual.",
+      "Olhe a banda de rodagem: muitos pneus têm indicadores de desgaste nos sulcos, o famoso TWI.",
+      "Procure nas laterais cortes, bolhas ou pregos e consulte um borracheiro se algo parecer errado."
+     ],
+     "q": "Você já calibrou os pneus sozinho, ou seria a primeira vez?",
+     "c": "Encontre a etiqueta de calibragem num carro que você usa, geralmente na coluna da porta do motorista."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fluids and lights check",
+     "g": "Learn simple checks of oil, coolant, washer fluid and every light that anyone can do.",
+     "p": [
+      "Check engine oil on level ground with a cool engine, using the dipstick or the car's display.",
+      "Look at coolant and washer fluid levels in their marked tanks; never open a hot coolant cap.",
+      "Walk around with a friend to test headlights, brake lights, indicators and hazard lights."
+     ],
+     "q": "Which of these checks feels easy for you, and which feels a bit mysterious?",
+     "c": "Open the bonnet of a car you use and find the oil dipstick and the washer fluid tank."
+    },
+    "de": {
+     "t": "Flüssigkeiten und Licht prüfen",
+     "g": "Lerne einfache Checks von Öl, Kühlmittel, Scheibenwasser und allen Lichtern, die jeder kann.",
+     "p": [
+      "Prüf das Motoröl auf ebenem Boden bei kaltem Motor, per Messstab oder Anzeige im Auto.",
+      "Kontrolliere Kühlmittel und Scheibenwasser in den markierten Behältern; öffne nie einen heißen Kühlerdeckel.",
+      "Geh mit jemandem ums Auto und teste Scheinwerfer, Bremslichter, Blinker und Warnblinker."
+     ],
+     "q": "Welcher dieser Checks fällt dir leicht, und welcher wirkt noch etwas rätselhaft?",
+     "c": "Öffne die Motorhaube eines Autos, das du nutzt, und finde Ölmessstab und Scheibenwasserbehälter."
+    },
+    "es": {
+     "t": "Líquidos y luces",
+     "g": "Aprende comprobaciones sencillas de aceite, refrigerante, limpiaparabrisas y todas las luces.",
+     "p": [
+      "Mira el aceite en terreno llano y con el motor frío, con la varilla o en la pantalla del coche.",
+      "Revisa los niveles de refrigerante y limpiaparabrisas en sus depósitos; nunca abras el tapón en caliente.",
+      "Da una vuelta con alguien para probar faros, luces de freno, intermitentes y luces de emergencia."
+     ],
+     "q": "¿Cuál de estas revisiones te parece fácil y cuál un poco misteriosa?",
+     "c": "Abre el capó de un coche que uses y localiza la varilla del aceite y el depósito del limpiaparabrisas."
+    },
+    "fr": {
+     "t": "Niveaux et éclairage",
+     "g": "Apprends des contrôles simples de l'huile, du liquide de refroidissement, du lave-glace et des feux.",
+     "p": [
+      "Vérifie l'huile sur sol plat, moteur froid, avec la jauge ou l'écran de la voiture.",
+      "Contrôle le liquide de refroidissement et le lave-glace dans leurs réservoirs ; n'ouvre jamais un bouchon chaud.",
+      "Fais le tour avec quelqu'un pour tester phares, feux stop, clignotants et feux de détresse."
+     ],
+     "q": "Lequel de ces contrôles te semble facile, et lequel un peu mystérieux ?",
+     "c": "Ouvre le capot d'une voiture que tu utilises et repère la jauge d'huile et le réservoir de lave-glace."
+    },
+    "it": {
+     "t": "Liquidi e luci",
+     "g": "Impara controlli semplici di olio, liquido di raffreddamento, lavavetri e di tutte le luci.",
+     "p": [
+      "Controlla l'olio in piano e a motore freddo, con l'astina o sul display dell'auto.",
+      "Guarda i livelli di refrigerante e lavavetri nei serbatoi segnati; non aprire mai il tappo a motore caldo.",
+      "Fai il giro dell'auto con qualcuno per provare fari, luci dei freni, frecce e quattro frecce."
+     ],
+     "q": "Quale di questi controlli ti sembra facile e quale un po' misterioso?",
+     "c": "Apri il cofano di un'auto che usi e trova l'astina dell'olio e il serbatoio del lavavetri."
+    },
+    "pt": {
+     "t": "Líquidos e luzes",
+     "g": "Aprende verificações simples do óleo, do líquido de refrigeração, do limpa-vidros e de todas as luzes.",
+     "p": [
+      "Verifica o óleo em piso plano e com o motor frio, com a vareta ou no painel do carro.",
+      "Vê os níveis do líquido de refrigeração e do limpa-vidros; nunca abras o tampão com o motor quente.",
+      "Dá a volta com alguém para testar faróis, luzes de travão, piscas e quatro piscas."
+     ],
+     "q": "Qual destas verificações te parece fácil e qual te parece um pouco misteriosa?",
+     "c": "Abre o capô de um carro que uses e encontra a vareta do óleo e o depósito do limpa-vidros."
+    },
+    "pt_BR": {
+     "t": "Fluidos e luzes",
+     "g": "Aprenda checagens simples de óleo, líquido de arrefecimento, água do limpador e todas as luzes.",
+     "p": [
+      "Confira o óleo em piso plano e com o motor frio, pela vareta ou pelo painel do carro.",
+      "Veja os níveis do arrefecimento e da água do limpador; nunca abra o reservatório com o motor quente.",
+      "Dê a volta com alguém para testar faróis, luz de freio, setas e pisca-alerta."
+     ],
+     "q": "Qual dessas checagens parece fácil para você e qual parece um pouco misteriosa?",
+     "c": "Abra o capô de um carro que você usa e ache a vareta do óleo e o reservatório do limpador."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet your spare tyre",
+     "g": "Find where the spare hides, which type of spare wheel you have and the tools that come with it.",
+     "p": [
+      "The spare is usually under the boot floor or under the car; some cars carry a repair kit instead.",
+      "A space-saver spare is narrow and only for short distances at reduced speed, as its label says.",
+      "Look for the jack, wheel wrench and locking wheel nut key, and read how the manual uses them."
+     ],
+     "q": "Do you know what your car has: a full spare, a space-saver or a repair kit?",
+     "c": "Find the spare wheel or repair kit in a car you use and check it is really there."
+    },
+    "de": {
+     "t": "Lerne dein Reserverad kennen",
+     "g": "Finde heraus, wo das Reserverad steckt, welche Art es ist und welches Werkzeug dazugehört.",
+     "p": [
+      "Das Reserverad liegt meist unter dem Kofferraumboden oder unter dem Auto; manche Autos haben nur ein Pannenset.",
+      "Ein Notrad ist schmal und nur für kurze Strecken mit reduziertem Tempo gedacht, wie sein Etikett zeigt.",
+      "Such Wagenheber, Radschlüssel und Felgenschloss-Adapter und lies im Handbuch, wie man sie nutzt."
+     ],
+     "q": "Weißt du, was dein Auto hat: ein volles Reserverad, ein Notrad oder ein Pannenset?",
+     "c": "Such in einem Auto, das du nutzt, das Reserverad oder Pannenset und prüfe, ob es wirklich da ist."
+    },
+    "es": {
+     "t": "Conoce tu rueda de repuesto",
+     "g": "Descubre dónde se esconde la rueda de repuesto, de qué tipo es y qué herramientas la acompañan.",
+     "p": [
+      "Suele estar bajo el suelo del maletero o bajo el coche; algunos coches llevan solo un kit antipinchazos.",
+      "La rueda de emergencia es estrecha y solo sirve para tramos cortos a velocidad reducida, como indica su etiqueta.",
+      "Busca el gato, la llave de ruedas y la llave del tornillo antirrobo, y lee en el manual cómo usarlos."
+     ],
+     "q": "¿Sabes qué lleva tu coche: rueda completa, rueda de emergencia o kit antipinchazos?",
+     "c": "Busca la rueda de repuesto o el kit en un coche que uses y comprueba que de verdad está."
+    },
+    "fr": {
+     "t": "Découvre ta roue de secours",
+     "g": "Trouve où se cache la roue de secours, de quel type elle est et les outils qui l'accompagnent.",
+     "p": [
+      "Elle est souvent sous le plancher du coffre ou sous la voiture ; certaines voitures n'ont qu'un kit anticrevaison.",
+      "Une roue galette est étroite, prévue pour de courtes distances à vitesse réduite, comme l'indique son étiquette.",
+      "Repère le cric, la clé de roue et la clé antivol, et lis dans le manuel comment les utiliser."
+     ],
+     "q": "Sais-tu ce qu'a ta voiture : une vraie roue, une roue galette ou un kit anticrevaison ?",
+     "c": "Trouve la roue de secours ou le kit dans une voiture que tu utilises et vérifie qu'il est bien là."
+    },
+    "it": {
+     "t": "Conosci la ruota di scorta",
+     "g": "Scopri dove si trova la ruota di scorta, di che tipo è e quali attrezzi la accompagnano.",
+     "p": [
+      "Di solito è sotto il pianale del bagagliaio o sotto l'auto; alcune auto hanno solo un kit di riparazione.",
+      "Il ruotino è stretto e serve solo per brevi tratti a velocità ridotta, come indica la sua etichetta.",
+      "Cerca il cric, la chiave per i bulloni e l'adattatore antifurto, e leggi sul manuale come usarli."
+     ],
+     "q": "Sai cosa ha la tua auto: una ruota completa, un ruotino o un kit di riparazione?",
+     "c": "Trova la ruota di scorta o il kit in un'auto che usi e controlla che ci sia davvero."
+    },
+    "pt": {
+     "t": "Conhece o pneu sobresselente",
+     "g": "Descobre onde está o sobresselente, de que tipo é e que ferramentas vêm com ele.",
+     "p": [
+      "Costuma estar debaixo do piso da bagageira ou do carro; alguns carros só têm um kit de reparação.",
+      "A roda de emergência é estreita e serve só para distâncias curtas a velocidade reduzida, como diz a etiqueta.",
+      "Procura o macaco, a chave de rodas e a chave antirroubo, e lê no manual como usá-los."
+     ],
+     "q": "Sabes o que o teu carro tem: roda completa, roda de emergência ou kit de reparação?",
+     "c": "Encontra o sobresselente ou o kit num carro que uses e confirma que está mesmo lá."
+    },
+    "pt_BR": {
+     "t": "Conheça o estepe",
+     "g": "Descubra onde fica o estepe, de que tipo ele é e quais ferramentas vêm junto.",
+     "p": [
+      "Ele costuma ficar sob o assoalho do porta-malas ou embaixo do carro; alguns carros têm só um kit de reparo.",
+      "O estepe fino, temporário, serve só para trechos curtos em velocidade reduzida, como diz a etiqueta.",
+      "Procure o macaco, a chave de roda e a chave do parafuso antifurto, e leia no manual como usá-los."
+     ],
+     "q": "Você sabe o que o seu carro tem: estepe completo, estepe temporário ou kit de reparo?",
+     "c": "Encontre o estepe ou o kit num carro que você usa e confirme que ele está mesmo lá."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fuel types explained",
+     "g": "Understand petrol, diesel, hybrid and electric, and why choosing the right pump matters.",
+     "p": [
+      "Petrol and diesel engines need their own fuel; filling the wrong one can seriously damage the car.",
+      "Check the fuel cap or flap: it usually shows the correct fuel type, and rental keys often do too.",
+      "Hybrids use fuel plus a battery; fully electric cars charge at points with different plug types."
+     ],
+     "q": "What kind of car would you love to take on a road trip: petrol, diesel, hybrid or electric?",
+     "c": "Look at the inside of a car's fuel flap and note what it says about the fuel."
+    },
+    "de": {
+     "t": "Kraftstoffarten erklärt",
+     "g": "Verstehe Benzin, Diesel, Hybrid und Elektro und warum die richtige Zapfsäule zählt.",
+     "p": [
+      "Benzin- und Dieselmotoren brauchen ihren eigenen Kraftstoff; falsch tanken kann das Auto schwer beschädigen.",
+      "Schau auf den Tankdeckel: Dort steht meist die richtige Sorte, bei Mietwagen oft auch am Schlüssel.",
+      "Hybride nutzen Kraftstoff plus Akku; reine E-Autos laden an Säulen mit verschiedenen Steckertypen."
+     ],
+     "q": "Mit welcher Antriebsart würdest du am liebsten auf Roadtrip gehen: Benzin, Diesel, Hybrid oder Elektro?",
+     "c": "Sieh dir die Innenseite einer Tankklappe an und notiere, was dort zum Kraftstoff steht."
+    },
+    "es": {
+     "t": "Tipos de combustible",
+     "g": "Entiende gasolina, diésel, híbrido y eléctrico, y por qué importa elegir el surtidor correcto.",
+     "p": [
+      "Los motores de gasolina y diésel necesitan su propio combustible; equivocarse puede dañar mucho el coche.",
+      "Mira la tapa del depósito: suele indicar el combustible correcto, y en alquiler a veces también la llave.",
+      "Los híbridos usan combustible y batería; los eléctricos cargan en puntos con distintos tipos de enchufe."
+     ],
+     "q": "¿Con qué tipo de coche te encantaría hacer un road trip: gasolina, diésel, híbrido o eléctrico?",
+     "c": "Mira el interior de la tapa del depósito de un coche y apunta lo que dice sobre el combustible."
+    },
+    "fr": {
+     "t": "Les carburants expliqués",
+     "g": "Comprends essence, diesel, hybride et électrique, et pourquoi la bonne pompe compte.",
+     "p": [
+      "Moteurs essence et diesel ont chacun leur carburant ; se tromper peut gravement abîmer la voiture.",
+      "Regarde la trappe à carburant : elle indique souvent le bon carburant, la clé de location aussi parfois.",
+      "Les hybrides combinent carburant et batterie ; les électriques se rechargent à des bornes aux prises variées."
+     ],
+     "q": "Avec quel type de voiture aimerais-tu faire un road trip : essence, diesel, hybride ou électrique ?",
+     "c": "Regarde l'intérieur de la trappe à carburant d'une voiture et note ce qui y est écrit."
+    },
+    "it": {
+     "t": "I tipi di carburante",
+     "g": "Capisci benzina, diesel, ibrido ed elettrico, e perché scegliere la pompa giusta è importante.",
+     "p": [
+      "Motori a benzina e diesel vogliono il loro carburante; sbagliare può danneggiare seriamente l'auto.",
+      "Guarda lo sportello del serbatoio: di solito indica il carburante giusto, a noleggio spesso anche la chiave.",
+      "Gli ibridi usano carburante e batteria; le elettriche si ricaricano a colonnine con prese diverse."
+     ],
+     "q": "Con che tipo di auto ti piacerebbe fare un road trip: benzina, diesel, ibrida o elettrica?",
+     "c": "Guarda l'interno dello sportello del carburante di un'auto e annota cosa c'è scritto."
+    },
+    "pt": {
+     "t": "Tipos de combustível",
+     "g": "Percebe a gasolina, o gasóleo, o híbrido e o elétrico, e porque escolher a bomba certa é importante.",
+     "p": [
+      "Motores a gasolina e a gasóleo precisam do seu combustível; enganar-se pode danificar muito o carro.",
+      "Olha para a tampa do depósito: costuma indicar o combustível certo, e no aluguer às vezes a chave também.",
+      "Os híbridos usam combustível e bateria; os elétricos carregam em postos com fichas diferentes."
+     ],
+     "q": "Com que tipo de carro adorarias fazer uma road trip: gasolina, gasóleo, híbrido ou elétrico?",
+     "c": "Olha para o interior da tampa do depósito de um carro e anota o que diz sobre o combustível."
+    },
+    "pt_BR": {
+     "t": "Tipos de combustível",
+     "g": "Entenda gasolina, diesel, etanol, híbrido e elétrico, e por que a bomba certa importa.",
+     "p": [
+      "Cada motor precisa do combustível certo; abastecer diesel num carro a gasolina pode danificar muito o motor.",
+      "Olhe a tampa do tanque: ela costuma indicar o combustível correto, e nas locadoras às vezes a chave também.",
+      "Híbridos usam combustível e bateria; elétricos carregam em eletropostos com tipos diferentes de plugue."
+     ],
+     "q": "Com que tipo de carro você adoraria fazer uma road trip: gasolina, flex, híbrido ou elétrico?",
+     "c": "Olhe o lado de dentro da portinhola do tanque de um carro e anote o que diz sobre o combustível."
+    }
+   }
+  }
+ ]
+}

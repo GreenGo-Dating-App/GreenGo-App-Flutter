@@ -1,0 +1,835 @@
+{
+ "topic": "nature_trips",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: ready for the trail",
+     "g": "Recap planning, gear, safety and trail manners from your first three weeks.",
+     "p": [
+      "Plan: pick an easy trip, read the map, check the weather and visit the visitor centre.",
+      "Gear: layers, good shoes, a daypack with water, snacks and sun protection.",
+      "Safety and manners: tell someone your plan, follow markers, share trails kindly and leave no trace."
+     ],
+     "q": "Which lesson so far has changed how you will plan your next trip?",
+     "c": "Make a one-page checklist for your next nature trip using what you have learned."
+    },
+    "de": {
+     "t": "Rückblick: bereit für den Weg",
+     "g": "Wiederhole Planung, Ausrüstung, Sicherheit und Wegbenimm aus deinen ersten drei Wochen.",
+     "p": [
+      "Planen: leichten Ausflug wählen, Karte lesen, Wetter prüfen und ins Besucherzentrum gehen.",
+      "Ausrüstung: Schichten, gute Schuhe, Tagesrucksack mit Wasser, Snacks und Sonnenschutz.",
+      "Sicherheit und Benimm: Plan mitteilen, Markierungen folgen, Wege freundlich teilen, keine Spuren hinterlassen."
+     ],
+     "q": "Welche Lektion hat bisher verändert, wie du deinen nächsten Ausflug planst?",
+     "c": "Erstelle eine einseitige Checkliste für deinen nächsten Naturausflug mit allem Gelernten."
+    },
+    "es": {
+     "t": "Repaso: listo para el sendero",
+     "g": "Repasa planificación, equipo, seguridad y cortesía de tus tres primeras semanas.",
+     "p": [
+      "Planificar: elegir una salida fácil, leer el mapa, mirar el tiempo y pasar por el centro de visitantes.",
+      "Equipo: capas, buen calzado y una mochila con agua, tentempiés y protección solar.",
+      "Seguridad y cortesía: contar tu plan, seguir las marcas, compartir el sendero y no dejar rastro."
+     ],
+     "q": "¿Qué lección hasta ahora ha cambiado tu forma de planear la próxima salida?",
+     "c": "Haz una lista de una página para tu próxima salida con todo lo aprendido."
+    },
+    "fr": {
+     "t": "Révision : prêt pour le sentier",
+     "g": "Révise préparation, équipement, sécurité et savoir-vivre de tes trois premières semaines.",
+     "p": [
+      "Préparer : choisir une sortie facile, lire la carte, vérifier la météo et passer au centre d'accueil.",
+      "Équipement : couches, bonnes chaussures, sac de journée avec eau, en-cas et protection solaire.",
+      "Sécurité et savoir-vivre : prévenir quelqu'un, suivre le balisage, partager les sentiers et ne laisser aucune trace."
+     ],
+     "q": "Quelle leçon a déjà changé ta façon de préparer ta prochaine sortie ?",
+     "c": "Fais une liste d'une page pour ta prochaine sortie nature avec tout ce que tu as appris."
+    },
+    "it": {
+     "t": "Ripasso: pronti per il sentiero",
+     "g": "Ripassa pianificazione, attrezzatura, sicurezza e galateo delle tue prime tre settimane.",
+     "p": [
+      "Pianificare: scegliere una gita facile, leggere la mappa, controllare il meteo e passare al centro visita.",
+      "Attrezzatura: strati, buone scarpe e uno zaino con acqua, snack e protezione solare.",
+      "Sicurezza e galateo: comunicare il piano, seguire i segnavia, condividere i sentieri e non lasciare tracce."
+     ],
+     "q": "Quale lezione finora ha cambiato il modo in cui pianificherai la prossima gita?",
+     "c": "Prepara una checklist di una pagina per la tua prossima gita usando ciò che hai imparato."
+    },
+    "pt": {
+     "t": "Revisão: pronto para o trilho",
+     "g": "Revê planeamento, equipamento, segurança e etiqueta das tuas três primeiras semanas.",
+     "p": [
+      "Planear: escolher uma saída fácil, ler o mapa, ver o tempo e passar pelo centro de visitantes.",
+      "Equipamento: camadas, bom calçado e uma mochila com água, snacks e proteção solar.",
+      "Segurança e etiqueta: contar o plano, seguir as marcas, partilhar o trilho e não deixar rasto."
+     ],
+     "q": "Que lição até agora mudou a forma como vais planear a próxima saída?",
+     "c": "Faz uma lista de uma página para a tua próxima saída com tudo o que aprendeste."
+    },
+    "pt_BR": {
+     "t": "Revisão: pronto para a trilha",
+     "g": "Revise planejamento, equipamento, segurança e etiqueta das suas três primeiras semanas.",
+     "p": [
+      "Planejar: escolher um passeio fácil, ler o mapa, ver a previsão e passar no centro de visitantes.",
+      "Equipamento: camadas, bom calçado e uma mochila com água, lanches e proteção solar.",
+      "Segurança e etiqueta: contar seu plano, seguir a sinalização, dividir a trilha e não deixar rastros."
+     ],
+     "q": "Qual lição até agora mudou o jeito como você vai planejar o próximo passeio?",
+     "c": "Faça uma lista de uma página para seu próximo passeio com tudo o que aprendeu."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beaches of the world",
+     "g": "Meet sandy, rocky, pebble, black sand and pink sand beaches.",
+     "p": [
+      "Golden and white sand beaches are made of tiny grains of rock, shell and coral.",
+      "Black sand beaches, like those in Iceland and Hawaii, come from dark volcanic rock.",
+      "Pink sand beaches, as in Bermuda, get their colour from tiny red-shelled sea creatures mixed with the sand."
+     ],
+     "q": "Which type of beach would you most like to walk on barefoot?",
+     "c": "Look at photos of a black or pink sand beach and say which one you would visit first."
+    },
+    "de": {
+     "t": "Strände der Welt",
+     "g": "Lerne Sand-, Fels-, Kiesel-, schwarze und rosa Sandstrände kennen.",
+     "p": [
+      "Goldene und weiße Sandstrände bestehen aus winzigen Körnchen von Gestein, Muscheln und Korallen.",
+      "Schwarze Sandstrände, etwa auf Island und Hawaii, entstehen aus dunklem Vulkangestein.",
+      "Rosa Strände wie auf den Bermudas verdanken ihre Farbe winzigen Meerestieren mit roter Schale im Sand."
+     ],
+     "q": "Auf welcher Art Strand würdest du am liebsten barfuß laufen?",
+     "c": "Sieh dir Fotos eines schwarzen oder rosa Strandes an und sag, welchen du zuerst besuchen würdest."
+    },
+    "es": {
+     "t": "Playas del mundo",
+     "g": "Conoce playas de arena, de rocas, de cantos rodados, de arena negra y de arena rosa.",
+     "p": [
+      "Las playas de arena dorada o blanca están hechas de granitos de roca, conchas y coral.",
+      "Las playas de arena negra, como las de Islandia y Hawái, vienen de roca volcánica oscura.",
+      "Las playas rosas, como en Bermudas, deben su color a diminutos animales marinos de concha roja mezclados con la arena."
+     ],
+     "q": "¿En qué tipo de playa te gustaría más caminar descalzo?",
+     "c": "Mira fotos de una playa de arena negra o rosa y di cuál visitarías primero."
+    },
+    "fr": {
+     "t": "Les plages du monde",
+     "g": "Découvre les plages de sable, de rochers, de galets, de sable noir et de sable rose.",
+     "p": [
+      "Les plages de sable doré ou blanc sont faites de minuscules grains de roche, de coquillages et de corail.",
+      "Les plages de sable noir, comme en Islande et à Hawaï, viennent de roches volcaniques sombres.",
+      "Les plages roses, comme aux Bermudes, doivent leur couleur à de minuscules organismes marins à coquille rouge."
+     ],
+     "q": "Sur quel type de plage aimerais-tu le plus marcher pieds nus ?",
+     "c": "Regarde des photos d'une plage de sable noir ou rose et dis laquelle tu visiterais en premier."
+    },
+    "it": {
+     "t": "Spiagge del mondo",
+     "g": "Conosci spiagge di sabbia, di scogli, di ciottoli, di sabbia nera e di sabbia rosa.",
+     "p": [
+      "Le spiagge dorate o bianche sono fatte di granelli minuscoli di roccia, conchiglie e corallo.",
+      "Le spiagge di sabbia nera, come in Islanda e alle Hawaii, nascono da roccia vulcanica scura.",
+      "Le spiagge rosa, come alle Bermuda, devono il colore a minuscoli organismi marini dal guscio rosso mescolati alla sabbia."
+     ],
+     "q": "Su che tipo di spiaggia ti piacerebbe di più camminare a piedi nudi?",
+     "c": "Guarda foto di una spiaggia nera o rosa e di' quale visiteresti per prima."
+    },
+    "pt": {
+     "t": "Praias do mundo",
+     "g": "Conhece praias de areia, de rochas, de seixos, de areia preta e de areia cor-de-rosa.",
+     "p": [
+      "As praias de areia dourada ou branca são feitas de grãos minúsculos de rocha, conchas e coral.",
+      "As praias de areia preta, como na Islândia e no Havai, vêm de rocha vulcânica escura.",
+      "As praias cor-de-rosa, como nas Bermudas, devem a cor a minúsculos seres marinhos de concha vermelha misturados na areia."
+     ],
+     "q": "Em que tipo de praia mais gostarias de andar descalço?",
+     "c": "Vê fotos de uma praia de areia preta ou rosa e diz qual visitarias primeiro."
+    },
+    "pt_BR": {
+     "t": "Praias do mundo",
+     "g": "Conheça praias de areia, de pedras, de seixos, de areia preta e de areia rosa.",
+     "p": [
+      "As praias de areia dourada ou branca são feitas de grãozinhos de rocha, conchas e corais.",
+      "As praias de areia preta, como na Islândia e no Havaí, vêm de rocha vulcânica escura.",
+      "As praias rosa, como nas Bermudas, ganham a cor de minúsculos bichinhos marinhos de concha vermelha misturados à areia."
+     ],
+     "q": "Em que tipo de praia você mais gostaria de andar descalço?",
+     "c": "Veja fotos de uma praia de areia preta ou rosa e diga qual você visitaria primeiro."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How beaches form",
+     "g": "Learn where beach sand comes from and how waves, rivers and rocks build beaches.",
+     "p": [
+      "Over thousands of years, waves, wind and rain break rocks into smaller and smaller pieces.",
+      "Rivers carry sand and pebbles to the sea, where waves spread them along the coast.",
+      "On tropical coasts, much sand comes from broken shells and coral, which is why it looks so white."
+     ],
+     "q": "Have you ever looked closely at sand grains? What colours did you notice?",
+     "c": "Next time you are at a beach, look at a pinch of sand and guess where it came from."
+    },
+    "de": {
+     "t": "Wie Strände entstehen",
+     "g": "Erfahre, woher der Strandsand kommt und wie Wellen, Flüsse und Gestein Strände formen.",
+     "p": [
+      "Über Jahrtausende zerkleinern Wellen, Wind und Regen Felsen in immer kleinere Stücke.",
+      "Flüsse tragen Sand und Kies ins Meer, wo Wellen sie entlang der Küste verteilen.",
+      "An tropischen Küsten stammt viel Sand aus zerbrochenen Muscheln und Korallen, deshalb ist er so weiß."
+     ],
+     "q": "Hast du dir Sandkörner schon mal genau angesehen? Welche Farben hast du entdeckt?",
+     "c": "Schau dir beim nächsten Strandbesuch eine Prise Sand an und rate, woher sie stammt."
+    },
+    "es": {
+     "t": "Cómo se forman las playas",
+     "g": "Aprende de dónde viene la arena y cómo olas, ríos y rocas construyen las playas.",
+     "p": [
+      "Durante miles de años, olas, viento y lluvia rompen las rocas en trozos cada vez más pequeños.",
+      "Los ríos llevan arena y piedras al mar, donde las olas las reparten a lo largo de la costa.",
+      "En costas tropicales, gran parte de la arena viene de conchas y coral rotos, por eso es tan blanca."
+     ],
+     "q": "¿Te has fijado alguna vez en los granos de arena? ¿Qué colores viste?",
+     "c": "La próxima vez que vayas a la playa, mira un puñado de arena y adivina de dónde viene."
+    },
+    "fr": {
+     "t": "Comment se forment les plages",
+     "g": "Découvre d'où vient le sable et comment vagues, rivières et roches construisent les plages.",
+     "p": [
+      "Pendant des milliers d'années, vagues, vent et pluie brisent les roches en morceaux de plus en plus petits.",
+      "Les rivières apportent sable et galets à la mer, où les vagues les répartissent le long de la côte.",
+      "Sur les côtes tropicales, une grande partie du sable vient de coquillages et de coraux brisés, d'où sa blancheur."
+     ],
+     "q": "As-tu déjà observé des grains de sable de près ? Quelles couleurs as-tu vues ?",
+     "c": "À ta prochaine sortie à la plage, observe une pincée de sable et devine d'où elle vient."
+    },
+    "it": {
+     "t": "Come si formano le spiagge",
+     "g": "Scopri da dove viene la sabbia e come onde, fiumi e rocce creano le spiagge.",
+     "p": [
+      "In migliaia di anni onde, vento e pioggia spezzano le rocce in pezzi sempre più piccoli.",
+      "I fiumi portano sabbia e ciottoli al mare, dove le onde li distribuiscono lungo la costa.",
+      "Sulle coste tropicali molta sabbia nasce da conchiglie e coralli frantumati, per questo è così bianca."
+     ],
+     "q": "Hai mai osservato da vicino i granelli di sabbia? Che colori hai notato?",
+     "c": "La prossima volta in spiaggia osserva un pizzico di sabbia e indovina da dove viene."
+    },
+    "pt": {
+     "t": "Como se formam as praias",
+     "g": "Aprende de onde vem a areia e como ondas, rios e rochas constroem as praias.",
+     "p": [
+      "Ao longo de milhares de anos, ondas, vento e chuva partem as rochas em pedaços cada vez mais pequenos.",
+      "Os rios levam areia e seixos até ao mar, onde as ondas os espalham ao longo da costa.",
+      "Nas costas tropicais, muita areia vem de conchas e coral partidos, por isso é tão branca."
+     ],
+     "q": "Já olhaste de perto para grãos de areia? Que cores viste?",
+     "c": "Da próxima vez que fores à praia, observa uma pitada de areia e adivinha de onde veio."
+    },
+    "pt_BR": {
+     "t": "Como as praias se formam",
+     "g": "Aprenda de onde vem a areia e como ondas, rios e rochas constroem as praias.",
+     "p": [
+      "Ao longo de milhares de anos, ondas, vento e chuva quebram as rochas em pedaços cada vez menores.",
+      "Os rios levam areia e pedrinhas até o mar, onde as ondas espalham tudo pela costa.",
+      "Em litorais tropicais, muita areia vem de conchas e corais quebrados, por isso é tão branca."
+     ],
+     "q": "Você já olhou grãos de areia de perto? Que cores reparou?",
+     "c": "Da próxima vez que for à praia, observe uma pitada de areia e adivinhe de onde ela veio."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tides made simple",
+     "g": "Understand why the sea rises and falls and how to use tide tables.",
+     "p": [
+      "Tides are caused mainly by the Moon's gravity pulling on the oceans, helped by the Sun.",
+      "Many coasts have two high and two low tides roughly every day, about six hours apart.",
+      "Tide tables list the times and heights; check them so a rising tide does not cut off your path back."
+     ],
+     "q": "Have you ever seen a beach completely change between high and low tide?",
+     "c": "Look up today's tide times for a coast you know and note the next low tide."
+    },
+    "de": {
+     "t": "Gezeiten einfach erklärt",
+     "g": "Verstehe, warum das Meer steigt und fällt und wie man Gezeitentabellen nutzt.",
+     "p": [
+      "Gezeiten entstehen vor allem durch die Anziehung des Mondes auf die Ozeane, unterstützt von der Sonne.",
+      "An vielen Küsten gibt es etwa täglich zwei Hoch- und zwei Niedrigwasser, rund sechs Stunden auseinander.",
+      "Gezeitentabellen nennen Zeiten und Höhen; prüfe sie, damit die Flut dir nicht den Rückweg abschneidet."
+     ],
+     "q": "Hast du schon einmal gesehen, wie sich ein Strand zwischen Ebbe und Flut völlig verändert?",
+     "c": "Such die heutigen Gezeiten für eine Küste, die du kennst, und notiere das nächste Niedrigwasser."
+    },
+    "es": {
+     "t": "Las mareas, fácil",
+     "g": "Entiende por qué el mar sube y baja y cómo usar las tablas de mareas.",
+     "p": [
+      "Las mareas se deben sobre todo a la gravedad de la Luna que tira de los océanos, con ayuda del Sol.",
+      "En muchas costas hay dos pleamares y dos bajamares casi cada día, separadas por unas seis horas.",
+      "Las tablas de mareas dan horas y alturas; míralas para que la marea alta no te corte el camino de vuelta."
+     ],
+     "q": "¿Has visto alguna vez una playa cambiar por completo entre marea alta y baja?",
+     "c": "Busca las mareas de hoy en una costa que conozcas y anota la próxima bajamar."
+    },
+    "fr": {
+     "t": "Les marées en toute simplicité",
+     "g": "Comprends pourquoi la mer monte et descend et comment lire un annuaire des marées.",
+     "p": [
+      "Les marées viennent surtout de l'attraction de la Lune sur les océans, aidée par le Soleil.",
+      "Sur beaucoup de côtes, il y a environ deux marées hautes et deux basses par jour, espacées d'environ six heures.",
+      "Les horaires des marées donnent heures et hauteurs ; consulte-les pour que la marée montante ne te coupe pas le retour."
+     ],
+     "q": "As-tu déjà vu une plage changer complètement entre marée haute et marée basse ?",
+     "c": "Cherche les horaires des marées du jour pour une côte que tu connais et note la prochaine marée basse."
+    },
+    "it": {
+     "t": "Le maree in parole semplici",
+     "g": "Capisci perché il mare sale e scende e come usare le tabelle delle maree.",
+     "p": [
+      "Le maree sono causate soprattutto dalla gravità della Luna che attira gli oceani, aiutata dal Sole.",
+      "Su molte coste ci sono circa due alte e due basse maree al giorno, a circa sei ore di distanza.",
+      "Le tabelle indicano orari e altezze; consultale perché l'alta marea non ti tagli la via del ritorno."
+     ],
+     "q": "Hai mai visto una spiaggia cambiare completamente tra alta e bassa marea?",
+     "c": "Cerca gli orari di marea di oggi per una costa che conosci e segna la prossima bassa marea."
+    },
+    "pt": {
+     "t": "As marés de forma simples",
+     "g": "Percebe porque o mar sobe e desce e como usar as tabelas de marés.",
+     "p": [
+      "As marés devem-se sobretudo à gravidade da Lua a puxar os oceanos, com a ajuda do Sol.",
+      "Em muitas costas há duas marés altas e duas baixas quase todos os dias, com cerca de seis horas de intervalo.",
+      "As tabelas de marés indicam horas e alturas; consulta-as para a maré cheia não te cortar o caminho de volta."
+     ],
+     "q": "Já viste uma praia mudar completamente entre a maré cheia e a vazia?",
+     "c": "Procura as marés de hoje numa costa que conheças e anota a próxima maré baixa."
+    },
+    "pt_BR": {
+     "t": "Marés de um jeito simples",
+     "g": "Entenda por que o mar sobe e desce e como usar a tábua de marés.",
+     "p": [
+      "As marés são causadas principalmente pela gravidade da Lua puxando os oceanos, com ajuda do Sol.",
+      "Em muitos litorais há duas marés altas e duas baixas quase todo dia, com cerca de seis horas entre elas.",
+      "A tábua de marés mostra horários e alturas; confira para a maré alta não fechar seu caminho de volta."
+     ],
+     "q": "Você já viu uma praia mudar totalmente entre a maré alta e a baixa?",
+     "c": "Pesquise as marés de hoje num litoral que você conhece e anote a próxima maré baixa."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Safe swimming",
+     "g": "Learn about flags, lifeguards and checking local conditions before you swim.",
+     "p": [
+      "Swim at beaches with lifeguards when you can, and stay between their flags.",
+      "Flag meanings differ between countries, but a red flag usually means no swimming: read the local sign.",
+      "Ask about currents, enter the water slowly, never swim alone and avoid swimming after a big meal in the sun."
+     ],
+     "q": "Do you feel confident in the sea, or do you prefer pools and calm lakes?",
+     "c": "Look up what the beach flag colours mean in a country you would like to visit."
+    },
+    "de": {
+     "t": "Sicher schwimmen",
+     "g": "Lerne Flaggen, Rettungsschwimmer und das Prüfen der Bedingungen vor dem Baden kennen.",
+     "p": [
+      "Bade, wenn möglich, an bewachten Stränden und bleib zwischen den Flaggen der Rettungsschwimmer.",
+      "Flaggenfarben unterscheiden sich je nach Land, Rot heißt aber meist Badeverbot: lies das Schild vor Ort.",
+      "Frag nach Strömungen, geh langsam ins Wasser, schwimm nie allein und übernimm dich nicht in der Sonne."
+     ],
+     "q": "Fühlst du dich im Meer sicher, oder magst du lieber Becken und ruhige Seen?",
+     "c": "Finde heraus, was die Strandflaggen in einem Land bedeuten, das du besuchen möchtest."
+    },
+    "es": {
+     "t": "Nadar con seguridad",
+     "g": "Aprende sobre banderas, socorristas y cómo revisar las condiciones antes de nadar.",
+     "p": [
+      "Siempre que puedas, báñate en playas con socorristas y quédate entre sus banderas.",
+      "El significado de las banderas cambia según el país, pero la roja suele prohibir el baño: lee el cartel local.",
+      "Pregunta por las corrientes, entra despacio, nunca nades solo y no te excedas bajo el sol."
+     ],
+     "q": "¿Te sientes seguro en el mar o prefieres piscinas y lagos tranquilos?",
+     "c": "Busca qué significan los colores de las banderas de playa en un país que quieras visitar."
+    },
+    "fr": {
+     "t": "Se baigner en sécurité",
+     "g": "Découvre les drapeaux, les sauveteurs et comment vérifier les conditions avant de nager.",
+     "p": [
+      "Baigne-toi si possible sur des plages surveillées et reste dans la zone délimitée par les sauveteurs.",
+      "Le sens des drapeaux varie selon les pays, mais le rouge interdit en général la baignade : lis le panneau local.",
+      "Renseigne-toi sur les courants, entre doucement dans l'eau, ne nage jamais seul et ménage-toi au soleil."
+     ],
+     "q": "Te sens-tu à l'aise dans la mer, ou préfères-tu les piscines et les lacs calmes ?",
+     "c": "Cherche ce que signifient les couleurs des drapeaux de plage dans un pays que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Nuotare in sicurezza",
+     "g": "Impara a conoscere bandiere, bagnini e a controllare le condizioni prima di fare il bagno.",
+     "p": [
+      "Quando puoi, nuota nelle spiagge con bagnino e resta nella zona sorvegliata.",
+      "Il significato delle bandiere cambia da paese a paese, ma la rossa di solito vieta il bagno: leggi il cartello locale.",
+      "Informati sulle correnti, entra in acqua piano, non nuotare mai da solo e non esagerare sotto il sole."
+     ],
+     "q": "Ti senti sicuro in mare o preferisci piscine e laghi tranquilli?",
+     "c": "Cerca cosa significano i colori delle bandiere in spiaggia in un paese che vorresti visitare."
+    },
+    "pt": {
+     "t": "Nadar em segurança",
+     "g": "Aprende sobre bandeiras, nadadores-salvadores e como ver as condições antes de nadar.",
+     "p": [
+      "Sempre que possível, nada em praias vigiadas e fica dentro da zona assinalada.",
+      "O significado das bandeiras muda de país para país, mas a vermelha costuma proibir banhos: lê a placa local.",
+      "Pergunta pelas correntes, entra na água devagar, nunca nades sozinho e não exageres ao sol."
+     ],
+     "q": "Sentes-te confiante no mar, ou preferes piscinas e lagos calmos?",
+     "c": "Procura o que significam as cores das bandeiras de praia num país que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Nadando com segurança",
+     "g": "Aprenda sobre bandeiras, salva-vidas e como checar as condições antes de entrar no mar.",
+     "p": [
+      "Sempre que der, nade em praias com salva-vidas e fique na área que eles indicam.",
+      "O significado das bandeiras muda de país para país, mas a vermelha costuma proibir o banho: leia a placa local.",
+      "Pergunte sobre correntezas, entre na água devagar, nunca nade sozinho e não exagere no sol."
+     ],
+     "q": "Você se sente seguro no mar ou prefere piscinas e lagos calmos?",
+     "c": "Pesquise o que significam as cores das bandeiras de praia num país que você quer visitar."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rip currents",
+     "g": "Learn to spot rip currents and how to get out of one calmly.",
+     "p": [
+      "A rip is a narrow channel of water flowing away from the shore, often between breaking waves.",
+      "Look for a darker, calmer-looking gap in the waves, foam moving out to sea or rippled water.",
+      "If caught, stay calm and float; swim parallel to the beach until free, then head back, or raise an arm and call for help."
+     ],
+     "q": "Had you heard of rip currents before today?",
+     "c": "Watch a short video about spotting rip currents so you recognise them next time."
+    },
+    "de": {
+     "t": "Brandungsrückströme",
+     "g": "Lerne, Rückströmungen zu erkennen und ruhig aus ihnen herauszukommen.",
+     "p": [
+      "Eine Rückströmung ist ein schmaler Wasserkanal, der vom Ufer wegfließt, oft zwischen brechenden Wellen.",
+      "Achte auf eine dunklere, ruhig wirkende Lücke in der Brandung, Schaum, der hinaustreibt, oder gekräuseltes Wasser.",
+      "Erwischt sie dich: ruhig bleiben, treiben lassen, parallel zum Strand schwimmen oder Arm heben und um Hilfe rufen."
+     ],
+     "q": "Hattest du vor heute schon von Brandungsrückströmen gehört?",
+     "c": "Schau dir ein kurzes Video zum Erkennen von Rückströmungen an, damit du sie wiedererkennst."
+    },
+    "es": {
+     "t": "Corrientes de resaca",
+     "g": "Aprende a reconocer las corrientes de resaca y a salir de una con calma.",
+     "p": [
+      "Una corriente de resaca es un canal estrecho de agua que se aleja de la orilla, a menudo entre las olas.",
+      "Busca un hueco más oscuro y en apariencia tranquilo entre las olas, espuma que va mar adentro o agua rizada.",
+      "Si te atrapa, mantén la calma y flota; nada en paralelo a la playa hasta salir, o levanta un brazo y pide ayuda."
+     ],
+     "q": "¿Habías oído hablar de las corrientes de resaca antes de hoy?",
+     "c": "Mira un vídeo corto sobre cómo detectar corrientes de resaca para reconocerlas la próxima vez."
+    },
+    "fr": {
+     "t": "Les courants d'arrachement",
+     "g": "Apprends à repérer les courants d'arrachement et à en sortir calmement.",
+     "p": [
+      "Un courant d'arrachement, ou baïne, est un chenal étroit d'eau qui s'éloigne du rivage, souvent entre les vagues.",
+      "Cherche une zone plus sombre et d'apparence calme entre les vagues, de l'écume qui part au large ou une eau agitée.",
+      "Si tu es pris, reste calme et flotte ; nage parallèlement à la plage pour en sortir, ou lève un bras et appelle à l'aide."
+     ],
+     "q": "Avais-tu déjà entendu parler des courants d'arrachement ?",
+     "c": "Regarde une courte vidéo pour apprendre à repérer ces courants et les reconnaître la prochaine fois."
+    },
+    "it": {
+     "t": "Correnti di risacca",
+     "g": "Impara a riconoscere le correnti di risacca e come uscirne con calma.",
+     "p": [
+      "Una corrente di risacca è un canale stretto d'acqua che si allontana dalla riva, spesso tra le onde che si frangono.",
+      "Cerca un varco più scuro e apparentemente calmo tra le onde, schiuma che va verso il largo o acqua increspata.",
+      "Se ti trascina, resta calmo e galleggia; nuota parallelo alla spiaggia finché ne esci, oppure alza un braccio e chiedi aiuto."
+     ],
+     "q": "Avevi già sentito parlare delle correnti di risacca prima di oggi?",
+     "c": "Guarda un breve video su come riconoscere le correnti di risacca, così le noterai la prossima volta."
+    },
+    "pt": {
+     "t": "Correntes de retorno",
+     "g": "Aprende a reconhecer correntes de retorno e a sair de uma com calma.",
+     "p": [
+      "Um agueiro é um canal estreito de água que se afasta da costa, muitas vezes entre as ondas.",
+      "Procura uma zona mais escura e aparentemente calma entre as ondas, espuma a ir para o largo ou água encrespada.",
+      "Se fores apanhado, mantém a calma e flutua; nada paralelo à praia até saíres, ou levanta um braço e pede ajuda."
+     ],
+     "q": "Já tinhas ouvido falar de correntes de retorno antes de hoje?",
+     "c": "Vê um vídeo curto sobre como identificar agueiros para os reconheceres da próxima vez."
+    },
+    "pt_BR": {
+     "t": "Correntes de retorno",
+     "g": "Aprenda a reconhecer correntes de retorno e a sair de uma com calma.",
+     "p": [
+      "A corrente de retorno é um canal estreito de água que se afasta da areia, muitas vezes entre as ondas.",
+      "Procure uma faixa mais escura e aparentemente calma entre as ondas, espuma indo para o fundo ou água mexida.",
+      "Se for pego, mantenha a calma e boie; nade paralelo à praia até sair, ou levante um braço e peça ajuda."
+     ],
+     "q": "Você já tinha ouvido falar de correntes de retorno antes de hoje?",
+     "c": "Assista a um vídeo curto sobre como identificar correntes de retorno para reconhecê-las da próxima vez."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beach etiquette",
+     "g": "Learn to respect space, noise, litter rules and nesting areas at the beach.",
+     "p": [
+      "Leave room between your spot and others, and keep music low or use headphones.",
+      "Take everything home, including small things like bottle caps and cigarette ends.",
+      "Respect fenced dunes and nesting areas: turtles and shorebirds lay eggs right in the sand."
+     ],
+     "q": "What is your biggest pet peeve at a busy beach?",
+     "c": "On your next beach visit, leave your spot cleaner than you found it."
+    },
+    "de": {
+     "t": "Benimm am Strand",
+     "g": "Lerne, am Strand Platz, Lautstärke, Müllregeln und Brutgebiete zu respektieren.",
+     "p": [
+      "Lass Abstand zu anderen und hör Musik leise oder mit Kopfhörern.",
+      "Nimm alles wieder mit, auch Kleinkram wie Kronkorken und Zigarettenstummel.",
+      "Respektiere abgesperrte Dünen und Brutzonen: Schildkröten und Küstenvögel legen ihre Eier direkt in den Sand."
+     ],
+     "q": "Was stört dich an einem vollen Strand am meisten?",
+     "c": "Hinterlass deinen Platz beim nächsten Strandbesuch sauberer, als du ihn vorgefunden hast."
+    },
+    "es": {
+     "t": "Cortesía en la playa",
+     "g": "Aprende a respetar el espacio, el ruido, la basura y las zonas de nidificación en la playa.",
+     "p": [
+      "Deja espacio entre tu sitio y los demás, y pon la música baja o usa auriculares.",
+      "Llévate todo, incluso lo pequeño como chapas y colillas.",
+      "Respeta las dunas valladas y las zonas de nidos: tortugas y aves costeras ponen huevos en la arena."
+     ],
+     "q": "¿Qué es lo que más te molesta en una playa llena?",
+     "c": "En tu próxima visita a la playa, deja tu sitio más limpio de lo que lo encontraste."
+    },
+    "fr": {
+     "t": "Le savoir-vivre à la plage",
+     "g": "Apprends à respecter l'espace, le bruit, les déchets et les zones de nidification à la plage.",
+     "p": [
+      "Laisse de la place entre toi et les autres, et garde la musique basse ou mets des écouteurs.",
+      "Rapporte tout, même les petites choses comme les capsules et les mégots.",
+      "Respecte les dunes protégées et les zones de nidification : tortues et oiseaux de rivage pondent dans le sable."
+     ],
+     "q": "Qu'est-ce qui t'agace le plus sur une plage bondée ?",
+     "c": "À ta prochaine sortie à la plage, laisse ta place plus propre que tu ne l'as trouvée."
+    },
+    "it": {
+     "t": "Galateo in spiaggia",
+     "g": "Impara a rispettare spazio, rumore, rifiuti e zone di nidificazione in spiaggia.",
+     "p": [
+      "Lascia spazio tra il tuo posto e gli altri, e tieni la musica bassa o usa le cuffie.",
+      "Porta via tutto, anche le cose piccole come tappi e mozziconi.",
+      "Rispetta le dune recintate e le zone di nidificazione: tartarughe e uccelli costieri depongono le uova nella sabbia."
+     ],
+     "q": "Cosa ti dà più fastidio in una spiaggia affollata?",
+     "c": "Alla prossima gita al mare lascia il tuo posto più pulito di come l'hai trovato."
+    },
+    "pt": {
+     "t": "Etiqueta na praia",
+     "g": "Aprende a respeitar o espaço, o barulho, o lixo e as zonas de nidificação na praia.",
+     "p": [
+      "Deixa espaço entre o teu lugar e os outros, e mantém a música baixa ou usa auscultadores.",
+      "Leva tudo contigo, até coisas pequenas como caricas e beatas.",
+      "Respeita as dunas vedadas e as zonas de ninhos: tartarugas e aves costeiras põem ovos na areia."
+     ],
+     "q": "O que é que mais te irrita numa praia cheia?",
+     "c": "Na tua próxima ida à praia, deixa o teu lugar mais limpo do que o encontraste."
+    },
+    "pt_BR": {
+     "t": "Etiqueta na praia",
+     "g": "Aprenda a respeitar espaço, barulho, lixo e áreas de ninhos na praia.",
+     "p": [
+      "Deixe espaço entre o seu lugar e o dos outros, e mantenha a música baixa ou use fones.",
+      "Leve tudo embora, até coisas pequenas como tampinhas e bitucas.",
+      "Respeite dunas cercadas e áreas de ninhos: tartarugas e aves costeiras botam ovos na areia."
+     ],
+     "q": "O que mais incomoda você numa praia lotada?",
+     "c": "Na próxima ida à praia, deixe seu lugar mais limpo do que encontrou."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rock pools",
+     "g": "Discover small sea creatures gently at low tide.",
+     "p": [
+      "When the tide goes out, pools of water stay among the rocks, full of crabs, anemones, snails and small fish.",
+      "Move slowly, look before you touch, and if you lift a stone, put it back exactly as it was.",
+      "Wear shoes with grip, watch the incoming tide and leave every creature in its pool."
+     ],
+     "q": "What sea creature would you most like to find in a rock pool?",
+     "c": "Look up three creatures that live in rock pools on a coast near you."
+    },
+    "de": {
+     "t": "Gezeitentümpel",
+     "g": "Entdecke bei Ebbe behutsam kleine Meerestiere.",
+     "p": [
+      "Bei Ebbe bleiben zwischen den Felsen Wasserbecken voller Krabben, Anemonen, Schnecken und kleiner Fische zurück.",
+      "Beweg dich langsam, schau erst und fass dann vorsichtig an; dreh einen Stein um, leg ihn genau so zurück.",
+      "Trag griffige Schuhe, behalte die Flut im Blick und lass jedes Tier in seinem Becken."
+     ],
+     "q": "Welches Meerestier würdest du am liebsten in einem Gezeitentümpel finden?",
+     "c": "Finde drei Tiere, die in Gezeitentümpeln an einer Küste in deiner Nähe leben."
+    },
+    "es": {
+     "t": "Pozas de marea",
+     "g": "Descubre con cuidado pequeños seres marinos con la marea baja.",
+     "p": [
+      "Cuando baja la marea, quedan pozas entre las rocas llenas de cangrejos, anémonas, caracoles y pececillos.",
+      "Muévete despacio, mira antes de tocar y, si levantas una piedra, déjala exactamente como estaba.",
+      "Lleva calzado que agarre, vigila la subida de la marea y deja a cada animal en su poza."
+     ],
+     "q": "¿Qué animal marino te gustaría encontrar en una poza?",
+     "c": "Busca tres animales que vivan en las pozas de marea de una costa cercana."
+    },
+    "fr": {
+     "t": "Les cuvettes de marée",
+     "g": "Découvre en douceur les petites créatures marines à marée basse.",
+     "p": [
+      "À marée basse, des flaques restent entre les rochers, pleines de crabes, d'anémones, de bigorneaux et de petits poissons.",
+      "Bouge lentement, observe avant de toucher et, si tu soulèves une pierre, remets-la exactement en place.",
+      "Porte des chaussures qui accrochent, surveille la marée montante et laisse chaque animal dans sa flaque."
+     ],
+     "q": "Quelle créature marine aimerais-tu le plus trouver dans une flaque ?",
+     "c": "Cherche trois créatures qui vivent dans les flaques rocheuses d'une côte proche de chez toi."
+    },
+    "it": {
+     "t": "Pozze di scogliera",
+     "g": "Scopri con delicatezza piccoli animali marini con la bassa marea.",
+     "p": [
+      "Con la bassa marea restano pozze tra gli scogli piene di granchi, anemoni, lumachine e pesciolini.",
+      "Muoviti piano, guarda prima di toccare e se sollevi un sasso rimettilo esattamente com'era.",
+      "Indossa scarpe con buona presa, tieni d'occhio la marea che sale e lascia ogni creatura nella sua pozza."
+     ],
+     "q": "Quale animale marino ti piacerebbe di più trovare in una pozza?",
+     "c": "Cerca tre animali che vivono nelle pozze di scogliera di una costa vicina a te."
+    },
+    "pt": {
+     "t": "Poças de maré",
+     "g": "Descobre com cuidado pequenos seres marinhos na maré baixa.",
+     "p": [
+      "Quando a maré desce, ficam poças entre as rochas cheias de caranguejos, anémonas, búzios e peixinhos.",
+      "Mexe-te devagar, olha antes de tocar e, se levantares uma pedra, volta a pô-la exatamente como estava.",
+      "Usa calçado que agarre, vigia a maré a subir e deixa cada animal na sua poça."
+     ],
+     "q": "Que animal marinho mais gostavas de encontrar numa poça de maré?",
+     "c": "Procura três animais que vivam nas poças de maré de uma costa perto de ti."
+    },
+    "pt_BR": {
+     "t": "Piscinas naturais nas pedras",
+     "g": "Descubra com cuidado pequenos bichos marinhos na maré baixa.",
+     "p": [
+      "Quando a maré baixa, ficam poças entre as pedras cheias de caranguejos, anêmonas, caramujos e peixinhos.",
+      "Mexa-se devagar, olhe antes de tocar e, se levantar uma pedra, coloque de volta exatamente como estava.",
+      "Use calçado com aderência, fique de olho na maré subindo e deixe cada bichinho na sua poça."
+     ],
+     "q": "Que animal marinho você mais gostaria de encontrar numa poça?",
+     "c": "Pesquise três animais que vivem nas poças de maré de um litoral perto de você."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snorkelling first steps",
+     "g": "Learn to use mask, snorkel and fins to enjoy the underwater world safely.",
+     "p": [
+      "A good mask seals gently on your face; test it on land by breathing in through your nose.",
+      "Practise in calm, shallow water first, breathing slowly through the snorkel while floating face down.",
+      "Snorkel with a buddy, wear a bright top or vest and stay where you can easily get back to shore."
+     ],
+     "q": "Have you ever snorkelled, or would this be your first time?",
+     "c": "Find a calm, protected bay or beach where beginners can try snorkelling."
+    },
+    "de": {
+     "t": "Erste Schritte beim Schnorcheln",
+     "g": "Lerne, Maske, Schnorchel und Flossen zu nutzen, um die Unterwasserwelt sicher zu genießen.",
+     "p": [
+      "Eine gute Maske sitzt sanft dicht; teste sie an Land, indem du durch die Nase einatmest.",
+      "Übe zuerst in ruhigem, flachem Wasser und atme langsam durch den Schnorchel, während du mit dem Gesicht nach unten treibst.",
+      "Schnorchel mit Partner, trag ein auffälliges Oberteil oder eine Weste und bleib in Ufernähe."
+     ],
+     "q": "Bist du schon mal geschnorchelt, oder wäre es dein erstes Mal?",
+     "c": "Finde eine ruhige, geschützte Bucht, in der Anfänger schnorcheln können."
+    },
+    "es": {
+     "t": "Primeros pasos en snorkel",
+     "g": "Aprende a usar gafas, tubo y aletas para disfrutar del mundo submarino con seguridad.",
+     "p": [
+      "Unas buenas gafas sellan suavemente; pruébalas en tierra aspirando por la nariz.",
+      "Practica primero en agua tranquila y poco profunda, respirando despacio por el tubo mientras flotas boca abajo.",
+      "Haz snorkel acompañado, lleva una prenda de color vivo o chaleco y quédate cerca de la orilla."
+     ],
+     "q": "¿Has hecho snorkel alguna vez o sería tu primera vez?",
+     "c": "Busca una cala o playa tranquila y protegida donde los principiantes puedan probar el snorkel."
+    },
+    "fr": {
+     "t": "Premiers pas en snorkeling",
+     "g": "Apprends à utiliser masque, tuba et palmes pour profiter du monde sous-marin en sécurité.",
+     "p": [
+      "Un bon masque épouse doucement le visage ; teste-le à terre en inspirant par le nez.",
+      "Entraîne-toi d'abord en eau calme et peu profonde, en respirant lentement dans le tuba en flottant sur le ventre.",
+      "Nage toujours en binôme, porte un haut ou un gilet bien visible et reste près du rivage."
+     ],
+     "q": "As-tu déjà fait du snorkeling, ou ce serait ta première fois ?",
+     "c": "Trouve une crique calme et abritée où les débutants peuvent essayer le snorkeling."
+    },
+    "it": {
+     "t": "Primi passi nello snorkeling",
+     "g": "Impara a usare maschera, boccaglio e pinne per goderti il mondo sottomarino in sicurezza.",
+     "p": [
+      "Una buona maschera aderisce morbida al viso; provala a terra inspirando con il naso.",
+      "Esercitati prima in acqua calma e bassa, respirando piano dal boccaglio mentre galleggi a pancia in giù.",
+      "Fai snorkeling in coppia, indossa una maglia o un giubbotto ben visibile e resta vicino alla riva."
+     ],
+     "q": "Hai mai fatto snorkeling o sarebbe la tua prima volta?",
+     "c": "Trova una baia calma e riparata dove i principianti possano provare lo snorkeling."
+    },
+    "pt": {
+     "t": "Primeiros passos no snorkel",
+     "g": "Aprende a usar máscara, tubo e barbatanas para desfrutar do mundo subaquático em segurança.",
+     "p": [
+      "Uma boa máscara veda suavemente; experimenta-a em terra a inspirar pelo nariz.",
+      "Pratica primeiro em água calma e pouco funda, a respirar devagar pelo tubo enquanto flutuas de barriga para baixo.",
+      "Faz snorkel acompanhado, usa uma camisola ou colete de cor viva e fica perto da costa."
+     ],
+     "q": "Já fizeste snorkel ou seria a tua primeira vez?",
+     "c": "Encontra uma baía calma e abrigada onde principiantes possam experimentar snorkel."
+    },
+    "pt_BR": {
+     "t": "Primeiros passos no snorkel",
+     "g": "Aprenda a usar máscara, snorkel e nadadeiras para curtir o mundo submarino com segurança.",
+     "p": [
+      "Uma boa máscara veda de leve no rosto; teste em terra puxando o ar pelo nariz.",
+      "Pratique primeiro em água calma e rasa, respirando devagar pelo snorkel enquanto boia de barriga para baixo.",
+      "Faça snorkel com alguém, use uma camiseta ou colete de cor forte e fique perto da praia."
+     ],
+     "q": "Você já fez snorkel ou seria sua primeira vez?",
+     "c": "Encontre uma enseada calma e protegida onde iniciantes possam experimentar o snorkel."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coral reefs",
+     "g": "Learn why reefs matter and how to visit them without causing damage.",
+     "p": [
+      "Corals are tiny animals that build reefs over centuries; reefs cover a small part of the ocean but shelter a huge share of sea life.",
+      "Never touch, stand on or kick coral: even a light touch can harm it, and some corals can sting or cut.",
+      "Choose reef-friendly sunscreen or a rash vest, keep your fins up and take nothing home but photos."
+     ],
+     "q": "Which reef animal would you most like to see: turtle, clownfish or ray?",
+     "c": "Look up the Great Barrier Reef or another famous reef and note one amazing fact."
+    },
+    "de": {
+     "t": "Korallenriffe",
+     "g": "Lerne, warum Riffe wichtig sind und wie man sie besucht, ohne Schaden anzurichten.",
+     "p": [
+      "Korallen sind winzige Tiere, die über Jahrhunderte Riffe bauen; Riffe bedecken wenig Meer, beherbergen aber sehr viel Leben.",
+      "Korallen nie berühren, betreten oder treten: Schon leichter Kontakt schadet, und manche Korallen nesseln oder schneiden.",
+      "Nimm riffschonende Sonnencreme oder ein UV-Shirt, halte die Flossen oben und nimm nur Fotos mit."
+     ],
+     "q": "Welches Rifftier würdest du am liebsten sehen: Schildkröte, Clownfisch oder Rochen?",
+     "c": "Lies über das Great Barrier Reef oder ein anderes berühmtes Riff und notiere eine erstaunliche Tatsache."
+    },
+    "es": {
+     "t": "Arrecifes de coral",
+     "g": "Aprende por qué importan los arrecifes y cómo visitarlos sin dañarlos.",
+     "p": [
+      "Los corales son animales diminutos que construyen arrecifes durante siglos; ocupan poco océano pero albergan muchísima vida.",
+      "Nunca toques, pises ni golpees el coral: un leve roce lo daña, y algunos corales pican o cortan.",
+      "Usa protector solar respetuoso con los arrecifes o camiseta de licra, mantén las aletas altas y llévate solo fotos."
+     ],
+     "q": "¿Qué animal del arrecife te gustaría más ver: tortuga, pez payaso o raya?",
+     "c": "Busca información sobre la Gran Barrera de Coral u otro arrecife famoso y anota un dato asombroso."
+    },
+    "fr": {
+     "t": "Les récifs coralliens",
+     "g": "Découvre pourquoi les récifs comptent et comment les visiter sans les abîmer.",
+     "p": [
+      "Les coraux sont de minuscules animaux qui bâtissent des récifs en des siècles ; ils couvrent peu d'océan mais abritent énormément de vie.",
+      "Ne touche, ne piétine ni ne frappe jamais le corail : un léger contact l'abîme, et certains coraux piquent ou coupent.",
+      "Choisis une crème solaire respectueuse des récifs ou un lycra, garde les palmes hautes et ne rapporte que des photos."
+     ],
+     "q": "Quel animal du récif aimerais-tu le plus voir : tortue, poisson-clown ou raie ?",
+     "c": "Renseigne-toi sur la Grande Barrière de corail ou un autre récif célèbre et note un fait étonnant."
+    },
+    "it": {
+     "t": "Barriere coralline",
+     "g": "Scopri perché le barriere coralline sono importanti e come visitarle senza danneggiarle.",
+     "p": [
+      "I coralli sono minuscoli animali che costruiscono le barriere in secoli; occupano poco oceano ma ospitano moltissima vita.",
+      "Non toccare, calpestare o colpire mai il corallo: anche un lieve contatto lo danneggia, e alcuni pungono o tagliano.",
+      "Usa creme solari rispettose del reef o una maglia in lycra, tieni le pinne alte e porta a casa solo foto."
+     ],
+     "q": "Quale animale della barriera ti piacerebbe vedere di più: tartaruga, pesce pagliaccio o razza?",
+     "c": "Cerca informazioni sulla Grande Barriera Corallina o un'altra barriera famosa e annota un fatto sorprendente."
+    },
+    "pt": {
+     "t": "Recifes de coral",
+     "g": "Aprende porque os recifes importam e como visitá-los sem os danificar.",
+     "p": [
+      "Os corais são animais minúsculos que constroem recifes ao longo de séculos; ocupam pouco oceano mas abrigam imensa vida.",
+      "Nunca toques, pises ou dês pontapés no coral: um leve toque danifica-o, e alguns corais picam ou cortam.",
+      "Usa protetor solar amigo dos recifes ou uma licra, mantém as barbatanas altas e leva só fotografias."
+     ],
+     "q": "Que animal do recife mais gostavas de ver: tartaruga, peixe-palhaço ou raia?",
+     "c": "Pesquisa a Grande Barreira de Coral ou outro recife famoso e anota um facto surpreendente."
+    },
+    "pt_BR": {
+     "t": "Recifes de coral",
+     "g": "Aprenda por que os recifes são importantes e como visitá-los sem causar danos.",
+     "p": [
+      "Corais são animais minúsculos que constroem recifes ao longo de séculos; ocupam pouco do oceano, mas abrigam muita vida.",
+      "Nunca toque, pise ou chute o coral: até um leve toque faz mal, e alguns corais queimam ou cortam.",
+      "Use protetor solar que não agrida os recifes ou camiseta de lycra, mantenha as nadadeiras altas e leve só fotos."
+     ],
+     "q": "Qual bicho do recife você mais gostaria de ver: tartaruga, peixe-palhaço ou arraia?",
+     "c": "Pesquise sobre a Grande Barreira de Corais ou outro recife famoso e anote um fato incrível."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 101,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Brazil",
+     "g": "Feel the warmth of daily life in Brazil, from beaches to football and samba.",
+     "p": [
+      "Brazilians are known for warmth: friends greet with hugs and cheek kisses, and newcomers are quickly made to feel at home.",
+      "Football is a shared passion, played on beaches, streets and fields, and samba fills the air at parties and carnival.",
+      "A churrasco, a barbecue with many cuts of meat grilled slowly, is a classic way to gather friends and family."
+     ],
+     "q": "What part of Brazilian daily life would you love to experience?",
+     "c": "Greet someone today with extra warmth, the Brazilian way, with a big smile and a kind word."
+    },
+    "de": {
+     "t": "Alltag in Brasilien",
+     "g": "Spüre die Herzlichkeit des Alltags in Brasilien, von Stränden über Fußball bis zu Samba.",
+     "p": [
+      "Brasilianer sind für ihre Wärme bekannt: Freunde begrüßen sich mit Umarmungen und Wangenküssen, und Neue fühlen sich schnell zu Hause.",
+      "Fußball ist eine gemeinsame Leidenschaft, gespielt an Stränden, auf Straßen und Plätzen, und Samba erfüllt Partys und Karneval.",
+      "Ein Churrasco, ein Grillfest mit vielen langsam gegrillten Fleischstücken, ist ein Klassiker, um Freunde und Familie zu versammeln."
+     ],
+     "q": "Welchen Teil des brasilianischen Alltags würdest du gern erleben?",
+     "c": "Begrüße heute jemanden besonders herzlich, auf brasilianische Art, mit breitem Lächeln und einem netten Wort."
+    },
+    "es": {
+     "t": "La vida diaria en Brasil",
+     "g": "Siente la calidez de la vida diaria en Brasil, de las playas al fútbol y la samba.",
+     "p": [
+      "Los brasileños son conocidos por su calidez: los amigos se saludan con abrazos y besos, y quien llega se siente pronto en casa.",
+      "El fútbol es una pasión compartida que se juega en playas, calles y campos, y la samba llena fiestas y carnavales.",
+      "El churrasco, una barbacoa con muchos cortes de carne asados despacio, es un clásico para reunir a amigos y familia."
+     ],
+     "q": "¿Qué parte de la vida diaria brasileña te encantaría vivir?",
+     "c": "Saluda hoy a alguien con más calidez, al estilo brasileño, con una gran sonrisa y una palabra amable."
+    },
+    "fr": {
+     "t": "La vie quotidienne au Brésil",
+     "g": "Ressens la chaleur de la vie quotidienne au Brésil, des plages au football et à la samba.",
+     "p": [
+      "Les Brésiliens sont connus pour leur chaleur : on se salue entre amis avec accolades et bises, et les nouveaux venus s'y sentent vite bien.",
+      "Le football est une passion commune, joué sur les plages, dans les rues et sur les terrains, et la samba anime fêtes et carnaval.",
+      "Le churrasco, un barbecue de nombreuses pièces de viande grillées lentement, est un classique pour réunir amis et famille."
+     ],
+     "q": "Quelle part de la vie quotidienne brésilienne aimerais-tu vivre ?",
+     "c": "Salue aujourd'hui quelqu'un avec plus de chaleur, à la brésilienne, avec un grand sourire et un mot gentil."
+    },
+    "it": {
+     "t": "La vita quotidiana in Brasile",
+     "g": "Senti il calore della vita quotidiana in Brasile, dalle spiagge al calcio e alla samba.",
+     "p": [
+      "I brasiliani sono noti per il loro calore: gli amici si salutano con abbracci e baci, e chi arriva si sente presto a casa.",
+      "Il calcio è una passione comune, giocato su spiagge, strade e campi, e la samba riempie feste e carnevale.",
+      "Il churrasco, una grigliata con tanti tagli di carne cotti lentamente, è un classico per riunire amici e famiglia."
+     ],
+     "q": "Quale parte della vita quotidiana brasiliana ti piacerebbe vivere?",
+     "c": "Saluta oggi qualcuno con più calore, alla brasiliana, con un grande sorriso e una parola gentile."
+    },
+    "pt": {
+     "t": "O dia a dia no Brasil",
+     "g": "Sente o calor humano do dia a dia no Brasil, das praias ao futebol e ao samba.",
+     "p": [
+      "Os brasileiros são conhecidos pelo calor humano: os amigos cumprimentam-se com abraços e beijinhos, e quem chega sente-se logo em casa.",
+      "O futebol é uma paixão partilhada, jogado na praia, na rua e no campo, e o samba enche as festas e o Carnaval.",
+      "O churrasco, com muitos cortes de carne grelhados devagar, é um clássico para juntar amigos e família."
+     ],
+     "q": "Que parte do dia a dia brasileiro adorarias viver?",
+     "c": "Cumprimenta hoje alguém com mais calor, à brasileira, com um grande sorriso e uma palavra simpática."
+    },
+    "pt_BR": {
+     "t": "O dia a dia no Brasil",
+     "g": "Sinta o calor humano do dia a dia no Brasil, das praias ao futebol e ao samba.",
+     "p": [
+      "Os brasileiros são conhecidos pelo calor humano: os amigos se cumprimentam com abraços e beijinhos, e quem chega logo se sente em casa.",
+      "O futebol é uma paixão compartilhada, jogado na praia, na rua e no campinho, e o samba enche as festas e o Carnaval.",
+      "O churrasco, com muitos cortes de carne assados devagar, é um clássico para reunir amigos e família."
+     ],
+     "q": "Que parte do dia a dia brasileiro você adoraria viver, ou já vive?",
+     "c": "Cumprimente hoje alguém com mais carinho, do jeito brasileiro, com um sorrisão e uma palavra gentil."
+    }
+   }
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Argentina",
+     "g": "Discover daily life in Argentina, with mate, asado, tango and late nights with friends.",
+     "p": [
+      "Mate is a herbal drink shared from one gourd with a metal straw, passed around a circle of friends as a sign of trust.",
+      "The Sunday asado, meat slowly grilled over embers, is a long family and friends gathering.",
+      "Tango was born in Buenos Aires and Montevideo, and dinners often start late, around ten in the evening."
+     ],
+     "q": "Would you enjoy sharing mate in a circle of friends? Why?",
+     "c": "Share a drink with someone today and take the time to really talk."
+    },
+    "de": {
+     "t": "Alltag in Argentinien",
+     "g": "Entdecke den Alltag in Argentinien mit Mate, Asado, Tango und langen Abenden mit Freunden.",
+     "p": [
+      "Mate ist ein Kräutergetränk, das aus einem Gefäß mit Metallhalm im Freundeskreis herumgereicht wird, als Zeichen des Vertrauens.",
+      "Das sonntägliche Asado, langsam über Glut gegrilltes Fleisch, ist ein langes Treffen mit Familie und Freunden.",
+      "Der Tango entstand in Buenos Aires und Montevideo, und das Abendessen beginnt oft spät, gegen zehn Uhr."
+     ],
+     "q": "Würdest du gern im Freundeskreis Mate teilen? Warum?",
+     "c": "Teile heute ein Getränk mit jemandem und nimm dir Zeit für ein echtes Gespräch."
+    },
+    "es": {
+     "t": "La vida diaria en Argentina",
+     "g": "Descubre la vida diaria en Argentina, con mate, asado, tango y noches largas con amigos.",
+     "p": [
+      "El mate es una infusión de hierba que se comparte de un solo recipiente con bombilla, pasando de mano en mano como signo de confianza.",
+      "El asado del domingo, carne asada lentamente sobre las brasas, es un largo encuentro de familia y amigos.",
+      "El tango nació en Buenos Aires y Montevideo, y la cena suele empezar tarde, hacia las diez de la noche."
+     ],
+     "q": "¿Te gustaría compartir un mate en una ronda de amigos? ¿Por qué?",
+     "c": "Comparte hoy una bebida con alguien y tómate el tiempo de conversar de verdad."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Argentine",
+     "g": "Découvre la vie quotidienne en Argentine, avec le maté, l'asado, le tango et les longues soirées entre amis.",
+     "p": [
+      "Le maté est une infusion d'herbe partagée dans une calebasse avec une paille en métal, qui passe de main en main en signe de confiance.",
+      "L'asado du dimanche, viande grillée lentement sur les braises, est un long moment en famille et entre amis.",
+      "Le tango est né à Buenos Aires et à Montevideo, et le dîner commence souvent tard, vers vingt-deux heures."
+     ],
+     "q": "Aimerais-tu partager un maté dans un cercle d'amis ? Pourquoi ?",
+     "c": "Partage aujourd'hui une boisson avec quelqu'un et prends le temps de vraiment discuter."
+    },
+    "it": {
+     "t": "La vita quotidiana in Argentina",
+     "g": "Scopri la vita quotidiana in Argentina, con il mate, l'asado, il tango e le serate lunghe con gli amici.",
+     "p": [
+      "Il mate è un infuso di erba condiviso da un'unica zucca con una cannuccia di metallo, passato di mano in mano come segno di fiducia.",
+      "L'asado della domenica, carne cotta lentamente sulla brace, è un lungo ritrovo di famiglia e amici.",
+      "Il tango è nato a Buenos Aires e Montevideo, e la cena inizia spesso tardi, verso le dieci di sera."
+     ],
+     "q": "Ti piacerebbe condividere il mate in un cerchio di amici? Perché?",
+     "c": "Condividi oggi una bevanda con qualcuno e prenditi il tempo di parlare davvero."
+    },
+    "pt": {
+     "t": "O dia a dia na Argentina",
+     "g": "Descobre o dia a dia na Argentina, com mate, asado, tango e noites longas com amigos.",
+     "p": [
+      "O mate é uma infusão de erva partilhada numa cuia com uma bomba de metal, que passa de mão em mão como sinal de confiança.",
+      "O asado de domingo, carne grelhada devagar sobre as brasas, é um longo encontro de família e amigos.",
+      "O tango nasceu em Buenos Aires e em Montevideu, e o jantar começa muitas vezes tarde, por volta das dez da noite."
+     ],
+     "q": "Gostavas de partilhar mate numa roda de amigos? Porquê?",
+     "c": "Partilha hoje uma bebida com alguém e dá tempo para uma conversa a sério."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Argentina",
+     "g": "Descubra o dia a dia na Argentina, com mate, asado, tango e noites longas com os amigos.",
+     "p": [
+      "O mate é uma infusão de erva compartilhada numa cuia com bomba de metal, passada de mão em mão como sinal de confiança.",
+      "O asado de domingo, carne assada devagar na brasa, é um longo encontro de família e amigos.",
+      "O tango nasceu em Buenos Aires e em Montevidéu, e o jantar costuma começar tarde, lá pelas dez da noite."
+     ],
+     "q": "Você gostaria de compartilhar mate numa roda de amigos? Por quê?",
+     "c": "Compartilhe hoje uma bebida com alguém e reserve um tempo para conversar de verdade."
+    }
+   }
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Andean cultures",
+     "g": "Discover Quechua and Aymara traditions, textiles and life at high altitude.",
+     "p": [
+      "Quechua and Aymara are spoken by millions of people in Peru, Bolivia, Ecuador and nearby countries.",
+      "Andean weavers use alpaca and llama wool to make bright textiles, with patterns passed down through generations.",
+      "Life at high altitude shaped clever farming, with terraces on mountainsides and thousands of potato varieties."
+     ],
+     "q": "What surprises you most about life high in the Andes?",
+     "c": "Try a food with Andean roots today, such as potatoes, quinoa or corn."
+    },
+    "de": {
+     "t": "Andenkulturen",
+     "g": "Entdecke Traditionen der Quechua und Aymara, ihre Textilien und das Leben in großer Höhe.",
+     "p": [
+      "Quechua und Aymara werden von Millionen Menschen in Peru, Bolivien, Ecuador und Nachbarländern gesprochen.",
+      "Weberinnen und Weber in den Anden weben aus Alpaka- und Lamawolle leuchtende Stoffe mit über Generationen vererbten Mustern.",
+      "Das Leben in großer Höhe brachte kluge Landwirtschaft hervor, mit Terrassen an Berghängen und Tausenden Kartoffelsorten."
+     ],
+     "q": "Was überrascht dich am meisten am Leben hoch oben in den Anden?",
+     "c": "Probiere heute ein Lebensmittel mit Wurzeln in den Anden, etwa Kartoffeln, Quinoa oder Mais."
+    },
+    "es": {
+     "t": "Las culturas andinas",
+     "g": "Descubre las tradiciones quechua y aimara, sus tejidos y la vida a gran altura.",
+     "p": [
+      "El quechua y el aimara los hablan millones de personas en Perú, Bolivia, Ecuador y países vecinos.",
+      "Los tejedores andinos usan lana de alpaca y llama para crear telas vivas, con dibujos heredados de generación en generación.",
+      "La vida a gran altura dio lugar a una agricultura ingeniosa, con terrazas en las laderas y miles de variedades de papa."
+     ],
+     "q": "¿Qué es lo que más te sorprende de la vida en lo alto de los Andes?",
+     "c": "Prueba hoy un alimento de raíz andina, como la papa, la quinua o el maíz."
+    },
+    "fr": {
+     "t": "Les cultures andines",
+     "g": "Découvre les traditions quechua et aymara, leurs textiles et la vie en haute altitude.",
+     "p": [
+      "Le quechua et l'aymara sont parlés par des millions de personnes au Pérou, en Bolivie, en Équateur et dans les pays voisins.",
+      "Les tisserands andins utilisent la laine d'alpaga et de lama pour créer des textiles vifs aux motifs transmis de génération en génération.",
+      "La vie en altitude a donné une agriculture ingénieuse, avec des terrasses en montagne et des milliers de variétés de pommes de terre."
+     ],
+     "q": "Qu'est-ce qui te surprend le plus dans la vie en haut des Andes ?",
+     "c": "Goûte aujourd'hui un aliment aux racines andines, comme la pomme de terre, le quinoa ou le maïs."
+    },
+    "it": {
+     "t": "Le culture andine",
+     "g": "Scopri le tradizioni quechua e aymara, i loro tessuti e la vita ad alta quota.",
+     "p": [
+      "Il quechua e l'aymara sono parlati da milioni di persone in Perù, Bolivia, Ecuador e paesi vicini.",
+      "I tessitori andini usano lana di alpaca e lama per creare stoffe vivaci, con motivi tramandati di generazione in generazione.",
+      "La vita ad alta quota ha dato origine a un'agricoltura ingegnosa, con terrazze sui pendii e migliaia di varietà di patate."
+     ],
+     "q": "Che cosa ti sorprende di più della vita in alto sulle Ande?",
+     "c": "Assaggia oggi un cibo di origine andina, come patate, quinoa o mais."
+    },
+    "pt": {
+     "t": "As culturas andinas",
+     "g": "Descobre as tradições quíchua e aimará, os seus tecidos e a vida em grande altitude.",
+     "p": [
+      "O quíchua e o aimará são falados por milhões de pessoas no Peru, na Bolívia, no Equador e em países vizinhos.",
+      "Os tecelões andinos usam lã de alpaca e de lama para criar tecidos vivos, com padrões passados de geração em geração.",
+      "A vida em altitude deu origem a uma agricultura engenhosa, com socalcos nas encostas e milhares de variedades de batata."
+     ],
+     "q": "O que mais te surpreende na vida no alto dos Andes?",
+     "c": "Prova hoje um alimento de origem andina, como a batata, a quinoa ou o milho."
+    },
+    "pt_BR": {
+     "t": "As culturas andinas",
+     "g": "Descubra as tradições quéchua e aimará, seus tecidos e a vida em grandes altitudes.",
+     "p": [
+      "O quéchua e o aimará são falados por milhões de pessoas no Peru, na Bolívia, no Equador e em países vizinhos.",
+      "Os tecelões andinos usam lã de alpaca e de lhama para criar tecidos vibrantes, com padrões passados de geração em geração.",
+      "A vida na altitude criou uma agricultura engenhosa, com terraços nas encostas e milhares de variedades de batata."
+     ],
+     "q": "O que mais surpreende você na vida no alto dos Andes?",
+     "c": "Prove hoje um alimento de origem andina, como batata, quinoa ou milho."
+    }
+   }
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Colombia",
+     "g": "Discover Colombia's coffee country, music, arepas and warm hospitality.",
+     "p": [
+      "Colombia's coffee region, with green hills and colourful towns, is recognised by UNESCO as a cultural landscape.",
+      "Vallenato, a joyful music with accordion, drum and scraper, tells stories of everyday life and love of the land.",
+      "Arepas, round corn cakes, are eaten at any time of day, and visitors are often welcomed with a cup of coffee."
+     ],
+     "q": "Which would you try first in Colombia: a fresh coffee, an arepa or a vallenato concert?",
+     "c": "Make your coffee or tea slowly today and enjoy it with full attention."
+    },
+    "de": {
+     "t": "Alltag in Kolumbien",
+     "g": "Entdecke Kolumbiens Kaffeeland, seine Musik, Arepas und herzliche Gastfreundschaft.",
+     "p": [
+      "Kolumbiens Kaffeeregion mit grünen Hügeln und bunten Dörfern ist von der UNESCO als Kulturlandschaft anerkannt.",
+      "Vallenato, fröhliche Musik mit Akkordeon, Trommel und Schaber, erzählt vom Alltag und von der Liebe zur Heimat.",
+      "Arepas, runde Maisfladen, isst man zu jeder Tageszeit, und Besucher werden oft mit einer Tasse Kaffee begrüßt."
+     ],
+     "q": "Was würdest du in Kolumbien zuerst probieren: frischen Kaffee, eine Arepa oder ein Vallenato-Konzert?",
+     "c": "Bereite heute deinen Kaffee oder Tee in Ruhe zu und genieße ihn mit voller Aufmerksamkeit."
+    },
+    "es": {
+     "t": "La vida diaria en Colombia",
+     "g": "Descubre el eje cafetero de Colombia, su música, las arepas y su cálida hospitalidad.",
+     "p": [
+      "La región cafetera de Colombia, con colinas verdes y pueblos coloridos, está reconocida por la UNESCO como paisaje cultural.",
+      "El vallenato, música alegre con acordeón, caja y guacharaca, cuenta historias de la vida diaria y del amor a la tierra.",
+      "Las arepas, tortas redondas de maíz, se comen a cualquier hora, y a las visitas se las suele recibir con un tinto."
+     ],
+     "q": "¿Qué probarías primero en Colombia: un café recién hecho, una arepa o un concierto de vallenato?",
+     "c": "Prepara hoy tu café o té con calma y disfrútalo con toda tu atención."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Colombie",
+     "g": "Découvre la région du café en Colombie, sa musique, les arepas et son accueil chaleureux.",
+     "p": [
+      "La région caféière de Colombie, avec ses collines vertes et ses villages colorés, est reconnue par l'UNESCO comme paysage culturel.",
+      "Le vallenato, musique joyeuse à l'accordéon, au tambour et au racleur, raconte la vie quotidienne et l'amour de la terre.",
+      "Les arepas, galettes rondes de maïs, se mangent à toute heure, et on accueille souvent les visiteurs avec un café."
+     ],
+     "q": "Que goûterais-tu en premier en Colombie : un café frais, une arepa ou un concert de vallenato ?",
+     "c": "Prépare aujourd'hui ton café ou ton thé sans te presser et savoure-le en pleine conscience."
+    },
+    "it": {
+     "t": "La vita quotidiana in Colombia",
+     "g": "Scopri la regione del caffè della Colombia, la sua musica, le arepas e l'ospitalità calorosa.",
+     "p": [
+      "La regione del caffè colombiana, con colline verdi e paesi colorati, è riconosciuta dall'UNESCO come paesaggio culturale.",
+      "Il vallenato, musica allegra con fisarmonica, tamburo e raschietto, racconta la vita quotidiana e l'amore per la terra.",
+      "Le arepas, focaccine rotonde di mais, si mangiano a ogni ora, e gli ospiti vengono spesso accolti con un caffè."
+     ],
+     "q": "Cosa proveresti per primo in Colombia: un caffè appena fatto, un'arepa o un concerto di vallenato?",
+     "c": "Prepara oggi il tuo caffè o tè con calma e gustalo con piena attenzione."
+    },
+    "pt": {
+     "t": "O dia a dia na Colômbia",
+     "g": "Descobre a região do café da Colômbia, a sua música, as arepas e a hospitalidade calorosa.",
+     "p": [
+      "A região cafeeira da Colômbia, com colinas verdes e vilas coloridas, é reconhecida pela UNESCO como paisagem cultural.",
+      "O vallenato, música alegre com acordeão, tambor e reco-reco, conta histórias do dia a dia e do amor à terra.",
+      "As arepas, bolachas redondas de milho, comem-se a qualquer hora, e as visitas são muitas vezes recebidas com um café."
+     ],
+     "q": "O que provavas primeiro na Colômbia: um café acabado de fazer, uma arepa ou um concerto de vallenato?",
+     "c": "Prepara hoje o teu café ou chá com calma e saboreia-o com toda a atenção."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Colômbia",
+     "g": "Descubra a região do café da Colômbia, sua música, as arepas e a hospitalidade calorosa.",
+     "p": [
+      "A região cafeeira da Colômbia, com morros verdes e cidadezinhas coloridas, é reconhecida pela UNESCO como paisagem cultural.",
+      "O vallenato, música alegre com sanfona, tambor e reco-reco, conta histórias do dia a dia e do amor pela terra.",
+      "As arepas, discos de massa de milho, são comidas a qualquer hora, e as visitas costumam ser recebidas com um cafezinho."
+     ],
+     "q": "O que você provaria primeiro na Colômbia: um café fresquinho, uma arepa ou um show de vallenato?",
+     "c": "Prepare hoje seu café ou chá com calma e saboreie com toda a atenção."
+    }
+   }
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of Oceania",
+     "g": "Meet Australia, New Zealand and the Pacific Islands, a world of ocean and islands.",
+     "p": [
+      "Oceania includes Australia, New Zealand and thousands of Pacific islands, often grouped as Melanesia, Micronesia and Polynesia.",
+      "In New Zealand Māori culture is part of national life, and te reo Māori is an official language.",
+      "Across the Pacific the ocean connects people, and canoe voyaging and fishing are part of a long shared history."
+     ],
+     "q": "Which part of Oceania would you most like to visit, and what would you do there?",
+     "c": "Learn one greeting today, like kia ora in Māori or bula in Fijian."
+    },
+    "de": {
+     "t": "Rundreise durch Ozeanien",
+     "g": "Lerne Australien, Neuseeland und die Pazifikinseln kennen, eine Welt aus Ozean und Inseln.",
+     "p": [
+      "Zu Ozeanien gehören Australien, Neuseeland und Tausende Pazifikinseln, oft eingeteilt in Melanesien, Mikronesien und Polynesien.",
+      "In Neuseeland ist die Kultur der Māori Teil des nationalen Lebens, und Te Reo Māori ist eine Amtssprache.",
+      "Im ganzen Pazifik verbindet der Ozean die Menschen, und Kanureisen und Fischfang gehören zu einer langen gemeinsamen Geschichte."
+     ],
+     "q": "Welchen Teil Ozeaniens würdest du am liebsten besuchen, und was würdest du dort tun?",
+     "c": "Lerne heute einen Gruß, etwa kia ora auf Māori oder bula auf Fidschianisch."
+    },
+    "es": {
+     "t": "Un recorrido por Oceanía",
+     "g": "Conoce Australia, Nueva Zelanda y las islas del Pacífico, un mundo de océano e islas.",
+     "p": [
+      "Oceanía incluye Australia, Nueva Zelanda y miles de islas del Pacífico, a menudo agrupadas en Melanesia, Micronesia y Polinesia.",
+      "En Nueva Zelanda la cultura maorí forma parte de la vida nacional, y el te reo maorí es lengua oficial.",
+      "En todo el Pacífico el océano une a la gente, y los viajes en canoa y la pesca son parte de una larga historia compartida."
+     ],
+     "q": "¿Qué parte de Oceanía te gustaría más visitar y qué harías allí?",
+     "c": "Aprende hoy un saludo, como kia ora en maorí o bula en fiyiano."
+    },
+    "fr": {
+     "t": "Tour d'Océanie",
+     "g": "Découvre l'Australie, la Nouvelle-Zélande et les îles du Pacifique, un monde d'océan et d'îles.",
+     "p": [
+      "L'Océanie comprend l'Australie, la Nouvelle-Zélande et des milliers d'îles du Pacifique, réparties en Mélanésie, Micronésie et Polynésie.",
+      "En Nouvelle-Zélande, la culture maorie fait partie de la vie nationale, et le te reo maori est une langue officielle.",
+      "Dans tout le Pacifique, l'océan relie les peuples, et les voyages en pirogue et la pêche font partie d'une longue histoire commune."
+     ],
+     "q": "Quelle partie de l'Océanie aimerais-tu le plus visiter, et qu'y ferais-tu ?",
+     "c": "Apprends aujourd'hui une salutation, comme kia ora en maori ou bula en fidjien."
+    },
+    "it": {
+     "t": "Un giro in Oceania",
+     "g": "Conosci Australia, Nuova Zelanda e isole del Pacifico, un mondo di oceano e isole.",
+     "p": [
+      "L'Oceania comprende Australia, Nuova Zelanda e migliaia di isole del Pacifico, spesso divise in Melanesia, Micronesia e Polinesia.",
+      "In Nuova Zelanda la cultura māori fa parte della vita nazionale, e il te reo māori è una lingua ufficiale.",
+      "In tutto il Pacifico l'oceano unisce le persone, e i viaggi in canoa e la pesca fanno parte di una lunga storia comune."
+     ],
+     "q": "Quale parte dell'Oceania vorresti visitare di più, e cosa faresti lì?",
+     "c": "Impara oggi un saluto, come kia ora in māori o bula in figiano."
+    },
+    "pt": {
+     "t": "Uma volta pela Oceânia",
+     "g": "Conhece a Austrália, a Nova Zelândia e as ilhas do Pacífico, um mundo de oceano e ilhas.",
+     "p": [
+      "A Oceânia inclui a Austrália, a Nova Zelândia e milhares de ilhas do Pacífico, muitas vezes agrupadas em Melanésia, Micronésia e Polinésia.",
+      "Na Nova Zelândia a cultura maori faz parte da vida nacional, e o te reo maori é língua oficial.",
+      "Em todo o Pacífico o oceano liga as pessoas, e as viagens de canoa e a pesca fazem parte de uma longa história partilhada."
+     ],
+     "q": "Que parte da Oceânia gostavas mais de visitar, e o que farias lá?",
+     "c": "Aprende hoje um cumprimento, como kia ora em maori ou bula em fijiano."
+    },
+    "pt_BR": {
+     "t": "Um passeio pela Oceania",
+     "g": "Conheça Austrália, Nova Zelândia e as ilhas do Pacífico, um mundo de oceano e ilhas.",
+     "p": [
+      "A Oceania inclui Austrália, Nova Zelândia e milhares de ilhas do Pacífico, muitas vezes agrupadas em Melanésia, Micronésia e Polinésia.",
+      "Na Nova Zelândia a cultura maori faz parte da vida nacional, e o te reo maori é língua oficial.",
+      "Em todo o Pacífico o oceano conecta as pessoas, e as viagens de canoa e a pesca fazem parte de uma longa história compartilhada."
+     ],
+     "q": "Que parte da Oceania você mais gostaria de visitar, e o que faria lá?",
+     "c": "Aprenda hoje um cumprimento, como kia ora em maori ou bula em fijiano."
+    }
+   }
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Australia",
+     "g": "Explore Australia's outdoor living, barbecues, beaches and laid-back friendliness.",
+     "p": [
+      "With lots of sunshine, many Australians spend free time outdoors, at parks, beaches, sports fields and campsites.",
+      "A barbecue with friends is a classic weekend plan, and public parks often have free barbecues anyone can use.",
+      "Australians often keep things informal and friendly, with relaxed phrases like no worries and a love of nicknames."
+     ],
+     "q": "How do you like to spend your free time outdoors?",
+     "c": "Spend some time outdoors today, even just a short walk or lunch in the open air."
+    },
+    "de": {
+     "t": "Alltag in Australien",
+     "g": "Erkunde Australiens Leben im Freien, Barbecues, Strände und entspannte Freundlichkeit.",
+     "p": [
+      "Bei viel Sonnenschein verbringen viele Australier ihre Freizeit draußen, in Parks, an Stränden, auf Sportplätzen und beim Camping.",
+      "Ein Barbecue mit Freunden ist ein klassischer Wochenendplan, und öffentliche Parks haben oft kostenlose Grills für alle.",
+      "Australier geben sich oft locker und freundlich, mit entspannten Sprüchen wie no worries und einer Vorliebe für Spitznamen."
+     ],
+     "q": "Wie verbringst du deine Freizeit am liebsten draußen?",
+     "c": "Verbringe heute etwas Zeit im Freien, und sei es nur ein kurzer Spaziergang oder ein Mittagessen an der frischen Luft."
+    },
+    "es": {
+     "t": "La vida diaria en Australia",
+     "g": "Explora la vida al aire libre de Australia, sus barbacoas, playas y su simpatía relajada.",
+     "p": [
+      "Con tanto sol, muchos australianos pasan su tiempo libre al aire libre, en parques, playas, campos de deporte y campings.",
+      "Una barbacoa con amigos es un plan clásico de fin de semana, y los parques públicos suelen tener barbacoas gratuitas para todos.",
+      "Los australianos suelen ser informales y cercanos, con frases relajadas como no worries y mucho gusto por los apodos."
+     ],
+     "q": "¿Cómo te gusta pasar tu tiempo libre al aire libre?",
+     "c": "Pasa hoy un rato al aire libre, aunque sea un paseo corto o comer fuera."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Australie",
+     "g": "Explore la vie en plein air en Australie, ses barbecues, ses plages et sa convivialité détendue.",
+     "p": [
+      "Avec tant de soleil, beaucoup d'Australiens passent leur temps libre dehors, dans les parcs, à la plage, au stade ou en camping.",
+      "Un barbecue entre amis est un classique du week-end, et les parcs publics ont souvent des barbecues gratuits pour tous.",
+      "Les Australiens restent souvent simples et amicaux, avec des expressions détendues comme no worries et un goût pour les surnoms."
+     ],
+     "q": "Comment aimes-tu passer ton temps libre en plein air ?",
+     "c": "Passe un moment dehors aujourd'hui, même juste une courte balade ou un déjeuner au grand air."
+    },
+    "it": {
+     "t": "La vita quotidiana in Australia",
+     "g": "Esplora la vita all'aria aperta dell'Australia, i barbecue, le spiagge e la cordialità rilassata.",
+     "p": [
+      "Con tanto sole, molti australiani passano il tempo libero all'aperto, tra parchi, spiagge, campi sportivi e campeggi.",
+      "Un barbecue con gli amici è un classico del fine settimana, e i parchi pubblici hanno spesso barbecue gratuiti per tutti.",
+      "Gli australiani sono spesso informali e cordiali, con espressioni rilassate come no worries e la passione per i soprannomi."
+     ],
+     "q": "Come ti piace passare il tempo libero all'aria aperta?",
+     "c": "Passa oggi un po' di tempo all'aperto, anche solo una breve passeggiata o un pranzo all'aria aperta."
+    },
+    "pt": {
+     "t": "O dia a dia na Austrália",
+     "g": "Explora a vida ao ar livre na Austrália, os churrascos, as praias e a simpatia descontraída.",
+     "p": [
+      "Com tanto sol, muitos australianos passam o tempo livre ao ar livre, em parques, praias, campos de desporto e parques de campismo.",
+      "Um churrasco com amigos é um plano clássico de fim de semana, e os parques públicos têm muitas vezes grelhadores gratuitos para todos.",
+      "Os australianos costumam ser informais e simpáticos, com expressões descontraídas como no worries e gosto pelas alcunhas."
+     ],
+     "q": "Como gostas de passar o teu tempo livre ao ar livre?",
+     "c": "Passa hoje algum tempo ao ar livre, nem que seja um passeio curto ou um almoço lá fora."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Austrália",
+     "g": "Explore a vida ao ar livre na Austrália, os churrascos, as praias e a simpatia descontraída.",
+     "p": [
+      "Com tanto sol, muitos australianos passam o tempo livre ao ar livre, em parques, praias, quadras e campings.",
+      "Um churrasco com amigos é um programa clássico de fim de semana, e os parques públicos costumam ter churrasqueiras gratuitas para todos.",
+      "Os australianos costumam ser informais e simpáticos, com expressões tranquilas como no worries e gosto por apelidos."
+     ],
+     "q": "Como você gosta de passar seu tempo livre ao ar livre?",
+     "c": "Passe hoje um tempo ao ar livre, nem que seja uma caminhada curta ou um almoço lá fora."
+    }
+   }
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pacific Island cultures",
+     "g": "Explore Samoa, Fiji and Tonga, where community, the ocean and navigation shape life.",
+     "p": [
+      "In Samoa, fa'a Samoa, the Samoan way, puts family, respect and community at the centre of daily life.",
+      "In Fiji visitors are greeted with a warm bula, and village life is built on sharing and looking after one another.",
+      "Pacific navigators crossed vast oceans by reading stars, waves, winds and birds, an art still taught today."
+     ],
+     "q": "What do you think people can learn from the way Pacific navigators read nature?",
+     "c": "Look at the sky tonight and try to find one bright star or planet."
+    },
+    "de": {
+     "t": "Kulturen der Pazifikinseln",
+     "g": "Erkunde Samoa, Fidschi und Tonga, wo Gemeinschaft, Ozean und Navigation das Leben prägen.",
+     "p": [
+      "In Samoa stellt fa'a Samoa, die samoanische Lebensweise, Familie, Respekt und Gemeinschaft in den Mittelpunkt des Alltags.",
+      "Auf Fidschi werden Besucher mit einem herzlichen Bula begrüßt, und das Dorfleben beruht auf Teilen und gegenseitiger Fürsorge.",
+      "Pazifische Navigatoren überquerten weite Ozeane, indem sie Sterne, Wellen, Winde und Vögel lasen, eine Kunst, die noch heute gelehrt wird."
+     ],
+     "q": "Was können wir deiner Meinung nach davon lernen, wie pazifische Navigatoren die Natur lesen?",
+     "c": "Schau heute Abend in den Himmel und versuche, einen hellen Stern oder Planeten zu finden."
+    },
+    "es": {
+     "t": "Las culturas de las islas del Pacífico",
+     "g": "Explora Samoa, Fiyi y Tonga, donde la comunidad, el océano y la navegación marcan la vida.",
+     "p": [
+      "En Samoa, el fa'a Samoa, la forma samoana, pone a la familia, el respeto y la comunidad en el centro de la vida diaria.",
+      "En Fiyi se recibe a los visitantes con un cálido bula, y la vida en la aldea se basa en compartir y cuidarse unos a otros.",
+      "Los navegantes del Pacífico cruzaron océanos inmensos leyendo estrellas, olas, vientos y aves, un arte que aún se enseña."
+     ],
+     "q": "¿Qué crees que podemos aprender de cómo los navegantes del Pacífico leen la naturaleza?",
+     "c": "Mira el cielo esta noche e intenta encontrar una estrella o un planeta brillante."
+    },
+    "fr": {
+     "t": "Les cultures des îles du Pacifique",
+     "g": "Explore Samoa, les Fidji et les Tonga, où la communauté, l'océan et la navigation rythment la vie.",
+     "p": [
+      "Aux Samoa, le fa'a Samoa, la manière samoane, place la famille, le respect et la communauté au cœur du quotidien.",
+      "Aux Fidji, on accueille les visiteurs avec un bula chaleureux, et la vie du village repose sur le partage et l'entraide.",
+      "Les navigateurs du Pacifique ont traversé d'immenses océans en lisant étoiles, vagues, vents et oiseaux, un art encore enseigné."
+     ],
+     "q": "Que peut-on apprendre, selon toi, de la façon dont les navigateurs du Pacifique lisent la nature ?",
+     "c": "Regarde le ciel ce soir et essaie de trouver une étoile ou une planète brillante."
+    },
+    "it": {
+     "t": "Le culture delle isole del Pacifico",
+     "g": "Esplora Samoa, Figi e Tonga, dove comunità, oceano e navigazione danno forma alla vita.",
+     "p": [
+      "A Samoa il fa'a Samoa, il modo samoano, mette famiglia, rispetto e comunità al centro della vita quotidiana.",
+      "Alle Figi i visitatori sono accolti con un caloroso bula, e la vita di villaggio si basa sulla condivisione e sull'aiuto reciproco.",
+      "I navigatori del Pacifico hanno attraversato oceani immensi leggendo stelle, onde, venti e uccelli, un'arte insegnata ancora oggi."
+     ],
+     "q": "Cosa pensi che possiamo imparare dal modo in cui i navigatori del Pacifico leggono la natura?",
+     "c": "Guarda il cielo stasera e prova a trovare una stella o un pianeta luminoso."
+    },
+    "pt": {
+     "t": "As culturas das ilhas do Pacífico",
+     "g": "Explora Samoa, as Fiji e Tonga, onde a comunidade, o oceano e a navegação marcam a vida.",
+     "p": [
+      "Em Samoa, o fa'a Samoa, a maneira samoana, põe a família, o respeito e a comunidade no centro do dia a dia.",
+      "Nas Fiji os visitantes são recebidos com um caloroso bula, e a vida na aldeia assenta na partilha e na entreajuda.",
+      "Os navegadores do Pacífico atravessaram oceanos imensos lendo estrelas, ondas, ventos e aves, uma arte que ainda hoje se ensina."
+     ],
+     "q": "O que achas que podemos aprender com a forma como os navegadores do Pacífico leem a natureza?",
+     "c": "Olha para o céu esta noite e tenta encontrar uma estrela ou um planeta brilhante."
+    },
+    "pt_BR": {
+     "t": "As culturas das ilhas do Pacífico",
+     "g": "Explore Samoa, Fiji e Tonga, onde a comunidade, o oceano e a navegação marcam a vida.",
+     "p": [
+      "Em Samoa, o fa'a Samoa, o jeito samoano, coloca a família, o respeito e a comunidade no centro do dia a dia.",
+      "Em Fiji os visitantes são recebidos com um caloroso bula, e a vida na aldeia se baseia em compartilhar e cuidar uns dos outros.",
+      "Os navegadores do Pacífico cruzaram oceanos imensos lendo estrelas, ondas, ventos e aves, uma arte que ainda hoje é ensinada."
+     ],
+     "q": "O que você acha que podemos aprender com o jeito como os navegadores do Pacífico leem a natureza?",
+     "c": "Olhe para o céu esta noite e tente encontrar uma estrela ou um planeta brilhante."
+    }
+   }
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Indigenous cultures worldwide",
+     "g": "Discover the diversity and living traditions of Indigenous peoples around the world.",
+     "p": [
+      "Indigenous peoples live in some 90 countries, from the Arctic to the Amazon, and speak thousands of different languages.",
+      "Many communities keep deep knowledge of local plants, animals, seasons and land, passed on through stories and practice.",
+      "Indigenous cultures are living cultures: traditions continue alongside modern life, art, music and technology."
+     ],
+     "q": "Which Indigenous culture would you like to learn more about, and why?",
+     "c": "Find out which Indigenous people traditionally lived in the area where you are today."
+    },
+    "de": {
+     "t": "Indigene Kulturen weltweit",
+     "g": "Entdecke die Vielfalt und die lebendigen Traditionen indigener Völker auf der ganzen Welt.",
+     "p": [
+      "Indigene Völker leben in rund 90 Ländern, von der Arktis bis zum Amazonas, und sprechen Tausende verschiedene Sprachen.",
+      "Viele Gemeinschaften bewahren tiefes Wissen über Pflanzen, Tiere, Jahreszeiten und Land, weitergegeben durch Geschichten und Praxis.",
+      "Indigene Kulturen sind lebendige Kulturen: Traditionen bestehen neben modernem Leben, Kunst, Musik und Technik weiter."
+     ],
+     "q": "Über welche indigene Kultur möchtest du mehr erfahren, und warum?",
+     "c": "Finde heraus, welches indigene Volk traditionell in der Gegend lebte, in der du heute bist."
+    },
+    "es": {
+     "t": "Culturas indígenas del mundo",
+     "g": "Descubre la diversidad y las tradiciones vivas de los pueblos indígenas del mundo.",
+     "p": [
+      "Los pueblos indígenas viven en unos 90 países, del Ártico a la Amazonía, y hablan miles de lenguas distintas.",
+      "Muchas comunidades conservan un saber profundo sobre plantas, animales, estaciones y territorio, transmitido con relatos y práctica.",
+      "Las culturas indígenas son culturas vivas: sus tradiciones continúan junto a la vida moderna, el arte, la música y la tecnología."
+     ],
+     "q": "¿Sobre qué cultura indígena te gustaría saber más y por qué?",
+     "c": "Averigua qué pueblo indígena vivía tradicionalmente en la zona donde estás hoy."
+    },
+    "fr": {
+     "t": "Les cultures autochtones du monde",
+     "g": "Découvre la diversité et les traditions vivantes des peuples autochtones du monde entier.",
+     "p": [
+      "Les peuples autochtones vivent dans quelque 90 pays, de l'Arctique à l'Amazonie, et parlent des milliers de langues.",
+      "Beaucoup de communautés gardent un savoir profond sur les plantes, les animaux, les saisons et la terre, transmis par récits et pratique.",
+      "Les cultures autochtones sont vivantes : les traditions continuent avec la vie moderne, l'art, la musique et la technologie."
+     ],
+     "q": "Sur quelle culture autochtone aimerais-tu en savoir plus, et pourquoi ?",
+     "c": "Cherche quel peuple autochtone vivait traditionnellement dans la région où tu te trouves."
+    },
+    "it": {
+     "t": "Le culture indigene nel mondo",
+     "g": "Scopri la varietà e le tradizioni vive dei popoli indigeni di tutto il mondo.",
+     "p": [
+      "I popoli indigeni vivono in circa 90 paesi, dall'Artico all'Amazzonia, e parlano migliaia di lingue diverse.",
+      "Molte comunità custodiscono una conoscenza profonda di piante, animali, stagioni e territorio, tramandata con racconti e pratica.",
+      "Le culture indigene sono culture vive: le tradizioni continuano accanto alla vita moderna, all'arte, alla musica e alla tecnologia."
+     ],
+     "q": "Su quale cultura indigena vorresti saperne di più, e perché?",
+     "c": "Scopri quale popolo indigeno viveva tradizionalmente nella zona in cui ti trovi oggi."
+    },
+    "pt": {
+     "t": "Culturas indígenas do mundo",
+     "g": "Descobre a diversidade e as tradições vivas dos povos indígenas do mundo inteiro.",
+     "p": [
+      "Os povos indígenas vivem em cerca de 90 países, do Ártico à Amazónia, e falam milhares de línguas diferentes.",
+      "Muitas comunidades guardam um saber profundo sobre plantas, animais, estações e território, passado através de histórias e prática.",
+      "As culturas indígenas são culturas vivas: as tradições continuam lado a lado com a vida moderna, a arte, a música e a tecnologia."
+     ],
+     "q": "Sobre que cultura indígena gostavas de saber mais, e porquê?",
+     "c": "Descobre que povo indígena vivia tradicionalmente na zona onde estás hoje."
+    },
+    "pt_BR": {
+     "t": "Culturas indígenas do mundo",
+     "g": "Descubra a diversidade e as tradições vivas dos povos indígenas do mundo todo.",
+     "p": [
+      "Os povos indígenas vivem em cerca de 90 países, do Ártico à Amazônia, e falam milhares de línguas diferentes.",
+      "Muitas comunidades guardam um saber profundo sobre plantas, animais, estações e território, passado por histórias e prática.",
+      "As culturas indígenas são culturas vivas: as tradições seguem lado a lado com a vida moderna, a arte, a música e a tecnologia."
+     ],
+     "q": "Sobre qual cultura indígena você gostaria de saber mais, e por quê?",
+     "c": "Descubra qual povo indígena vivia tradicionalmente na região onde você está hoje."
+    }
+   }
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aboriginal Australian cultures",
+     "g": "Learn about one of the world's oldest continuous cultures and its Dreaming stories.",
+     "p": [
+      "Aboriginal and Torres Strait Islander cultures in Australia go back tens of thousands of years, over 60,000 by many estimates.",
+      "The Dreaming describes stories of creation, law and connection to land, shared through song, dance and art.",
+      "Songlines are routes across the land remembered in songs, which helped people navigate and remember places."
+     ],
+     "q": "What would you like to ask someone about keeping a culture alive for so long?",
+     "c": "Look at an example of Aboriginal art today and notice the patterns, colours and shapes it uses."
+    },
+    "de": {
+     "t": "Kulturen der Aborigines",
+     "g": "Lerne eine der ältesten fortbestehenden Kulturen der Welt und ihre Geschichten der Traumzeit kennen.",
+     "p": [
+      "Die Kulturen der Aborigines und der Torres-Strait-Insulaner in Australien reichen vielen Schätzungen nach über 60.000 Jahre zurück.",
+      "Die Traumzeit, englisch Dreaming, umfasst Geschichten über Schöpfung, Gesetz und Bindung ans Land, geteilt durch Lied, Tanz und Kunst.",
+      "Songlines sind Wege durch das Land, die in Liedern bewahrt werden und halfen, sich zu orientieren und Orte zu erinnern."
+     ],
+     "q": "Was würdest du jemanden gern fragen, der eine Kultur so lange lebendig hält?",
+     "c": "Sieh dir heute ein Beispiel für Aborigine-Kunst an und achte auf Muster, Farben und Formen."
+    },
+    "es": {
+     "t": "Las culturas aborígenes australianas",
+     "g": "Conoce una de las culturas continuas más antiguas del mundo y sus relatos del Ensueño.",
+     "p": [
+      "Las culturas aborígenes y de las islas del estrecho de Torres se remontan a decenas de miles de años, más de 60.000 según muchos cálculos.",
+      "El Ensueño, o Dreaming, reúne relatos de creación, normas y vínculo con la tierra, compartidos con canto, danza y arte.",
+      "Las songlines son rutas por el territorio recordadas en canciones, que ayudaban a orientarse y a recordar lugares."
+     ],
+     "q": "¿Qué te gustaría preguntarle a alguien sobre mantener viva una cultura durante tanto tiempo?",
+     "c": "Mira hoy un ejemplo de arte aborigen y fíjate en sus dibujos, colores y formas."
+    },
+    "fr": {
+     "t": "Les cultures aborigènes d'Australie",
+     "g": "Découvre l'une des plus anciennes cultures continues du monde et ses récits du Rêve.",
+     "p": [
+      "Les cultures aborigènes et des îles du détroit de Torres remontent à plus de 60 000 ans selon de nombreuses estimations.",
+      "Le Rêve, ou Dreaming, rassemble des récits de création, de loi et de lien à la terre, partagés par le chant, la danse et l'art.",
+      "Les songlines sont des chemins à travers le territoire gardés en mémoire dans des chants, pour s'orienter et se souvenir des lieux."
+     ],
+     "q": "Que voudrais-tu demander à quelqu'un sur le fait de garder une culture vivante si longtemps ?",
+     "c": "Regarde aujourd'hui une œuvre d'art aborigène et observe ses motifs, ses couleurs et ses formes."
+    },
+    "it": {
+     "t": "Le culture aborigene australiane",
+     "g": "Scopri una delle culture continue più antiche del mondo e i suoi racconti del Sogno.",
+     "p": [
+      "Le culture aborigene e degli isolani dello Stretto di Torres risalgono a decine di migliaia di anni fa, oltre 60.000 secondo molte stime.",
+      "Il Sogno, o Dreaming, raccoglie racconti di creazione, regole e legame con la terra, condivisi con canto, danza e arte.",
+      "Le songlines sono percorsi attraverso il territorio ricordati nei canti, che aiutavano a orientarsi e a ricordare i luoghi."
+     ],
+     "q": "Cosa vorresti chiedere a qualcuno su come si mantiene viva una cultura così a lungo?",
+     "c": "Guarda oggi un esempio di arte aborigena e nota motivi, colori e forme."
+    },
+    "pt": {
+     "t": "As culturas aborígenes australianas",
+     "g": "Conhece uma das culturas contínuas mais antigas do mundo e as suas histórias do Sonho.",
+     "p": [
+      "As culturas aborígenes e das ilhas do estreito de Torres remontam a dezenas de milhares de anos, mais de 60 000 segundo muitas estimativas.",
+      "O Sonho, ou Dreaming, reúne histórias de criação, regras e ligação à terra, partilhadas através do canto, da dança e da arte.",
+      "As songlines são caminhos pelo território guardados em canções, que ajudavam a orientar-se e a lembrar lugares."
+     ],
+     "q": "O que gostavas de perguntar a alguém sobre manter uma cultura viva durante tanto tempo?",
+     "c": "Vê hoje um exemplo de arte aborígene e repara nos padrões, nas cores e nas formas."
+    },
+    "pt_BR": {
+     "t": "As culturas aborígenes australianas",
+     "g": "Conheça uma das culturas contínuas mais antigas do mundo e suas histórias do Sonho.",
+     "p": [
+      "As culturas aborígenes e das ilhas do estreito de Torres remontam a dezenas de milhares de anos, mais de 60 mil segundo muitas estimativas.",
+      "O Sonho, ou Dreaming, reúne histórias de criação, regras e ligação com a terra, compartilhadas pelo canto, pela dança e pela arte.",
+      "As songlines são caminhos pelo território guardados em canções, que ajudavam a se orientar e a lembrar lugares."
+     ],
+     "q": "O que você gostaria de perguntar a alguém sobre manter uma cultura viva por tanto tempo?",
+     "c": "Veja hoje um exemplo de arte aborígene e repare nos padrões, nas cores e nas formas."
+    }
+   }
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arctic cultures",
+     "g": "Discover Inuit and Sámi life, adapted to the cold, reindeer and the northern lights.",
+     "p": [
+      "Inuit live in the Arctic regions of Canada, Greenland and Alaska, and words like kayak and anorak come from their languages.",
+      "The Sámi live in northern Norway, Sweden, Finland and Russia, and reindeer herding is a key part of their tradition.",
+      "Joik, a traditional Sámi way of singing, can express a person, an animal or a place rather than just describe it."
+     ],
+     "q": "How do you think living with long winter nights shapes daily life and traditions?",
+     "c": "Find out today when the northern lights can usually be seen and where."
+    },
+    "de": {
+     "t": "Arktische Kulturen",
+     "g": "Entdecke das Leben der Inuit und Samen, angepasst an Kälte, Rentiere und Nordlichter.",
+     "p": [
+      "Inuit leben in den arktischen Regionen Kanadas, Grönlands und Alaskas, und Wörter wie Kajak und Anorak stammen aus ihren Sprachen.",
+      "Die Samen leben im Norden Norwegens, Schwedens, Finnlands und Russlands, und Rentierzucht ist ein wichtiger Teil ihrer Tradition.",
+      "Der Joik, eine traditionelle samische Gesangsform, drückt einen Menschen, ein Tier oder einen Ort aus, statt ihn nur zu beschreiben."
+     ],
+     "q": "Wie prägen lange Winternächte deiner Meinung nach Alltag und Traditionen?",
+     "c": "Finde heute heraus, wann und wo man Nordlichter meistens sehen kann."
+    },
+    "es": {
+     "t": "Las culturas del Ártico",
+     "g": "Descubre la vida inuit y sami, adaptada al frío, a los renos y a la aurora boreal.",
+     "p": [
+      "Los inuit viven en las regiones árticas de Canadá, Groenlandia y Alaska, y palabras como kayak y anorak vienen de sus lenguas.",
+      "Los sami viven en el norte de Noruega, Suecia, Finlandia y Rusia, y la cría de renos es una parte clave de su tradición.",
+      "El joik, forma tradicional de canto sami, puede expresar a una persona, un animal o un lugar en vez de solo describirlo."
+     ],
+     "q": "¿Cómo crees que las largas noches de invierno influyen en la vida diaria y las tradiciones?",
+     "c": "Averigua hoy cuándo y dónde se suele ver la aurora boreal."
+    },
+    "fr": {
+     "t": "Les cultures de l'Arctique",
+     "g": "Découvre la vie des Inuits et des Samis, adaptée au froid, aux rennes et aux aurores boréales.",
+     "p": [
+      "Les Inuits vivent dans les régions arctiques du Canada, du Groenland et de l'Alaska, et les mots kayak et anorak viennent de leurs langues.",
+      "Les Samis vivent au nord de la Norvège, de la Suède, de la Finlande et de la Russie, et l'élevage de rennes est au cœur de leur tradition.",
+      "Le joik, chant traditionnel sami, peut exprimer une personne, un animal ou un lieu plutôt que simplement le décrire."
+     ],
+     "q": "Comment les longues nuits d'hiver façonnent-elles, selon toi, la vie quotidienne et les traditions ?",
+     "c": "Cherche aujourd'hui quand et où l'on peut généralement voir les aurores boréales."
+    },
+    "it": {
+     "t": "Le culture artiche",
+     "g": "Scopri la vita degli inuit e dei sami, adattata al freddo, alle renne e all'aurora boreale.",
+     "p": [
+      "Gli inuit vivono nelle regioni artiche di Canada, Groenlandia e Alaska, e parole come kayak e anorak vengono dalle loro lingue.",
+      "I sami vivono nel nord di Norvegia, Svezia, Finlandia e Russia, e l'allevamento delle renne è una parte chiave della loro tradizione.",
+      "Lo joik, canto tradizionale sami, può esprimere una persona, un animale o un luogo invece di descriverlo soltanto."
+     ],
+     "q": "Secondo te, come influiscono le lunghe notti invernali sulla vita quotidiana e sulle tradizioni?",
+     "c": "Scopri oggi quando e dove di solito si può vedere l'aurora boreale."
+    },
+    "pt": {
+     "t": "As culturas do Ártico",
+     "g": "Descobre a vida inuíte e sámi, adaptada ao frio, às renas e às auroras boreais.",
+     "p": [
+      "Os inuítes vivem nas regiões árticas do Canadá, da Gronelândia e do Alasca, e palavras como caiaque e anoraque vêm das suas línguas.",
+      "Os sámi vivem no norte da Noruega, da Suécia, da Finlândia e da Rússia, e a criação de renas é uma parte essencial da sua tradição.",
+      "O joik, forma tradicional de canto sámi, pode exprimir uma pessoa, um animal ou um lugar em vez de apenas o descrever."
+     ],
+     "q": "Como achas que as longas noites de inverno moldam o dia a dia e as tradições?",
+     "c": "Descobre hoje quando e onde se costumam ver as auroras boreais."
+    },
+    "pt_BR": {
+     "t": "As culturas do Ártico",
+     "g": "Descubra a vida inuíte e sámi, adaptada ao frio, às renas e à aurora boreal.",
+     "p": [
+      "Os inuítes vivem nas regiões árticas do Canadá, da Groenlândia e do Alasca, e palavras como caiaque e anoraque vêm das suas línguas.",
+      "Os sámi vivem no norte da Noruega, da Suécia, da Finlândia e da Rússia, e a criação de renas é uma parte essencial da sua tradição.",
+      "O joik, forma tradicional de canto sámi, pode expressar uma pessoa, um animal ou um lugar em vez de apenas descrevê-lo."
+     ],
+     "q": "Como você acha que as longas noites de inverno moldam o dia a dia e as tradições?",
+     "c": "Descubra hoje quando e onde a aurora boreal costuma ser vista."
+    }
+   }
+  }
+ ]
+}

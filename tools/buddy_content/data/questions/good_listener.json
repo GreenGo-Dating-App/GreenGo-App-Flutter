@@ -1,0 +1,1305 @@
+{
+ "topic": "good_listener",
+ "questions": [
+  {
+   "id": "good_listener-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What was the best moment of your day so far?",
+    "de": "Was war bisher der schönste Moment deines Tages?",
+    "es": "¿Cuál ha sido el mejor momento de tu día hasta ahora?",
+    "fr": "Quel a été le meilleur moment de ta journée jusqu'ici ?",
+    "it": "Qual è stato finora il momento più bello della tua giornata?",
+    "pt": "Qual foi até agora o melhor momento do teu dia?",
+    "pt_BR": "Qual foi o melhor momento do seu dia até agora?"
+   }
+  },
+  {
+   "id": "good_listener-002",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could describe today in one word, which word would you choose?",
+    "de": "Wenn du den heutigen Tag mit einem Wort beschreiben müsstest, welches wäre es?",
+    "es": "Si pudieras describir el día de hoy con una palabra, ¿cuál elegirías?",
+    "fr": "Si tu devais résumer ta journée en un seul mot, lequel choisirais-tu ?",
+    "it": "Se dovessi descrivere la giornata di oggi con una parola, quale sceglieresti?",
+    "pt": "Se pudesses descrever o dia de hoje numa só palavra, qual escolherias?",
+    "pt_BR": "Se você pudesse descrever o dia de hoje em uma palavra, qual escolheria?"
+   }
+  },
+  {
+   "id": "good_listener-003",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something small that made you smile recently?",
+    "de": "Was ist eine Kleinigkeit, die dich in letzter Zeit zum Lächeln gebracht hat?",
+    "es": "¿Qué cosa pequeña te ha hecho sonreír últimamente?",
+    "fr": "Quelle petite chose t'a fait sourire récemment ?",
+    "it": "Qual è una piccola cosa che ti ha fatto sorridere di recente?",
+    "pt": "Que pequena coisa te fez sorrir nos últimos dias?",
+    "pt_BR": "Que coisinha fez você sorrir recentemente?"
+   }
+  },
+  {
+   "id": "good_listener-004",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually like to start your mornings?",
+    "de": "Wie beginnst du deine Morgen am liebsten?",
+    "es": "¿Cómo te gusta empezar tus mañanas?",
+    "fr": "Comment aimes-tu commencer tes matinées ?",
+    "it": "Come ti piace iniziare le tue mattine?",
+    "pt": "Como é que gostas de começar as tuas manhãs?",
+    "pt_BR": "Como você gosta de começar suas manhãs?"
+   }
+  },
+  {
+   "id": "good_listener-005",
+   "lv": "any",
+   "i18n": {
+    "en": "What helps you relax at the end of a long day?",
+    "de": "Was hilft dir, am Ende eines langen Tages zu entspannen?",
+    "es": "¿Qué te ayuda a relajarte al final de un día largo?",
+    "fr": "Qu'est-ce qui t'aide à te détendre après une longue journée ?",
+    "it": "Cosa ti aiuta a rilassarti alla fine di una lunga giornata?",
+    "pt": "O que te ajuda a descontrair ao fim de um dia longo?",
+    "pt_BR": "O que ajuda você a relaxar no fim de um dia longo?"
+   }
+  },
+  {
+   "id": "good_listener-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Who is someone that always makes you feel heard?",
+    "de": "Wer gibt dir immer das Gefühl, wirklich gehört zu werden?",
+    "es": "¿Quién es alguien que siempre te hace sentir escuchado?",
+    "fr": "Qui te donne toujours l'impression d'être vraiment écouté ?",
+    "it": "Chi è una persona che ti fa sempre sentire ascoltato?",
+    "pt": "Quem é alguém que te faz sempre sentir ouvido?",
+    "pt_BR": "Quem é alguém que sempre faz você se sentir ouvido?"
+   }
+  },
+  {
+   "id": "good_listener-007",
+   "lv": "any",
+   "i18n": {
+    "en": "What are you looking forward to this week?",
+    "de": "Worauf freust du dich diese Woche?",
+    "es": "¿Qué te hace ilusión esta semana?",
+    "fr": "Qu'est-ce que tu attends avec plaisir cette semaine ?",
+    "it": "Cosa aspetti con piacere questa settimana?",
+    "pt": "O que é que estás ansioso por fazer esta semana?",
+    "pt_BR": "O que você está ansioso para fazer nesta semana?"
+   }
+  },
+  {
+   "id": "good_listener-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a hobby that makes you lose track of time?",
+    "de": "Bei welchem Hobby vergisst du die Zeit?",
+    "es": "¿Qué afición te hace perder la noción del tiempo?",
+    "fr": "Quel loisir te fait perdre la notion du temps ?",
+    "it": "Qual è un hobby che ti fa perdere la cognizione del tempo?",
+    "pt": "Que passatempo te faz perder a noção do tempo?",
+    "pt_BR": "Qual hobby faz você perder a noção do tempo?"
+   }
+  },
+  {
+   "id": "good_listener-009",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite place to spend a free afternoon?",
+    "de": "Wo verbringst du am liebsten einen freien Nachmittag?",
+    "es": "¿Cuál es tu lugar favorito para pasar una tarde libre?",
+    "fr": "Quel est ton endroit préféré pour passer un après-midi libre ?",
+    "it": "Qual è il tuo posto preferito per passare un pomeriggio libero?",
+    "pt": "Qual é o teu sítio preferido para passar uma tarde livre?",
+    "pt_BR": "Qual é o seu lugar favorito para passar uma tarde livre?"
+   }
+  },
+  {
+   "id": "good_listener-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What food reminds you of home or of happy times?",
+    "de": "Welches Essen erinnert dich an dein Zuhause oder an schöne Zeiten?",
+    "es": "¿Qué comida te recuerda a tu casa o a momentos felices?",
+    "fr": "Quel plat te rappelle la maison ou des moments heureux ?",
+    "it": "Quale cibo ti ricorda casa o momenti felici?",
+    "pt": "Que comida te lembra a tua casa ou tempos felizes?",
+    "pt_BR": "Que comida lembra a sua casa ou tempos felizes?"
+   }
+  },
+  {
+   "id": "good_listener-011",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something kind someone did for you recently?",
+    "de": "Was hat jemand vor Kurzem Nettes für dich getan?",
+    "es": "¿Qué gesto amable tuvo alguien contigo hace poco?",
+    "fr": "Qu'est-ce que quelqu'un a fait de gentil pour toi récemment ?",
+    "it": "Qual è una gentilezza che qualcuno ha fatto per te di recente?",
+    "pt": "Que gesto simpático alguém teve contigo recentemente?",
+    "pt_BR": "Que gentileza alguém fez por você recentemente?"
+   }
+  },
+  {
+   "id": "good_listener-012",
+   "lv": "any",
+   "i18n": {
+    "en": "What song matches your mood today, and why?",
+    "de": "Welches Lied passt heute zu deiner Stimmung, und warum?",
+    "es": "¿Qué canción va con tu estado de ánimo hoy, y por qué?",
+    "fr": "Quelle chanson correspond à ton humeur aujourd'hui, et pourquoi ?",
+    "it": "Quale canzone rispecchia il tuo umore di oggi, e perché?",
+    "pt": "Que canção combina com o teu humor de hoje, e porquê?",
+    "pt_BR": "Que música combina com o seu humor hoje, e por quê?"
+   }
+  },
+  {
+   "id": "good_listener-013",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a small win you had this week that you are proud of?",
+    "de": "Welchen kleinen Erfolg hattest du diese Woche, auf den du stolz bist?",
+    "es": "¿Qué pequeño logro tuviste esta semana del que te sientas orgulloso?",
+    "fr": "Quelle petite victoire as-tu remportée cette semaine dont tu es fier ?",
+    "it": "Qual è un piccolo successo di questa settimana di cui sei orgoglioso?",
+    "pt": "Que pequena vitória tiveste esta semana de que te orgulhas?",
+    "pt_BR": "Que pequena vitória você teve nesta semana da qual se orgulha?"
+   }
+  },
+  {
+   "id": "good_listener-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a perfect lazy day look like for you?",
+    "de": "Wie sieht für dich ein perfekter fauler Tag aus?",
+    "es": "¿Cómo sería para ti un día perfecto de descanso total?",
+    "fr": "À quoi ressemble pour toi une journée parfaite à ne rien faire ?",
+    "it": "Com'è per te una perfetta giornata di relax?",
+    "pt": "Como é para ti um dia perfeito de preguiça?",
+    "pt_BR": "Como é para você um dia perfeito de preguiça?"
+   }
+  },
+  {
+   "id": "good_listener-015",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something new you learned recently?",
+    "de": "Was hast du in letzter Zeit Neues gelernt?",
+    "es": "¿Qué has aprendido de nuevo últimamente?",
+    "fr": "Qu'est-ce que tu as appris de nouveau récemment ?",
+    "it": "Cosa hai imparato di nuovo ultimamente?",
+    "pt": "O que aprendeste de novo nos últimos tempos?",
+    "pt_BR": "O que você aprendeu de novo recentemente?"
+   }
+  },
+  {
+   "id": "good_listener-016",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of weather puts you in the best mood?",
+    "de": "Bei welchem Wetter bist du am besten gelaunt?",
+    "es": "¿Qué tipo de tiempo te pone de mejor humor?",
+    "fr": "Quel temps te met de la meilleure humeur ?",
+    "it": "Che tipo di tempo ti mette di buon umore?",
+    "pt": "Que tipo de tempo te deixa mais bem-disposto?",
+    "pt_BR": "Que tipo de clima deixa você de melhor humor?"
+   }
+  },
+  {
+   "id": "good_listener-017",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a place you dream of visiting one day?",
+    "de": "Welchen Ort würdest du gern eines Tages besuchen?",
+    "es": "¿Qué lugar sueñas con visitar algún día?",
+    "fr": "Quel endroit rêves-tu de visiter un jour ?",
+    "it": "Qual è un posto che sogni di visitare un giorno?",
+    "pt": "Que lugar sonhas visitar um dia?",
+    "pt_BR": "Que lugar você sonha em visitar um dia?"
+   }
+  },
+  {
+   "id": "good_listener-018",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a tradition from your family or culture that you love?",
+    "de": "Welche Tradition aus deiner Familie oder Kultur liebst du?",
+    "es": "¿Qué tradición de tu familia o de tu cultura te encanta?",
+    "fr": "Quelle tradition de ta famille ou de ta culture aimes-tu particulièrement ?",
+    "it": "Quale tradizione della tua famiglia o della tua cultura ami di più?",
+    "pt": "Que tradição da tua família ou da tua cultura adoras?",
+    "pt_BR": "Qual tradição da sua família ou da sua cultura você adora?"
+   }
+  },
+  {
+   "id": "good_listener-019",
+   "lv": "any",
+   "i18n": {
+    "en": "What sound always makes you feel calm or happy?",
+    "de": "Welches Geräusch macht dich immer ruhig oder fröhlich?",
+    "es": "¿Qué sonido siempre te hace sentir tranquilo o feliz?",
+    "fr": "Quel son te rend toujours calme ou heureux ?",
+    "it": "Quale suono ti fa sempre sentire calmo o felice?",
+    "pt": "Que som te deixa sempre calmo ou feliz?",
+    "pt_BR": "Que som sempre deixa você calmo ou feliz?"
+   }
+  },
+  {
+   "id": "good_listener-020",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a book, film or series that stayed with you?",
+    "de": "Welches Buch, welcher Film oder welche Serie ist dir im Gedächtnis geblieben?",
+    "es": "¿Qué libro, película o serie se te ha quedado grabado?",
+    "fr": "Quel livre, film ou série t'a vraiment marqué ?",
+    "it": "Quale libro, film o serie ti è rimasto nel cuore?",
+    "pt": "Que livro, filme ou série te ficou na memória?",
+    "pt_BR": "Que livro, filme ou série marcou você?"
+   }
+  },
+  {
+   "id": "good_listener-021",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you like to celebrate good news?",
+    "de": "Wie feierst du gern gute Neuigkeiten?",
+    "es": "¿Cómo te gusta celebrar las buenas noticias?",
+    "fr": "Comment aimes-tu fêter les bonnes nouvelles ?",
+    "it": "Come ti piace festeggiare le belle notizie?",
+    "pt": "Como é que gostas de celebrar boas notícias?",
+    "pt_BR": "Como você gosta de comemorar boas notícias?"
+   }
+  },
+  {
+   "id": "good_listener-022",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something you are curious about right now?",
+    "de": "Worauf bist du gerade neugierig?",
+    "es": "¿Qué es algo que te despierta curiosidad ahora mismo?",
+    "fr": "Qu'est-ce qui éveille ta curiosité en ce moment ?",
+    "it": "Cosa ti incuriosisce in questo periodo?",
+    "pt": "O que é que te desperta curiosidade neste momento?",
+    "pt_BR": "O que desperta a sua curiosidade neste momento?"
+   }
+  },
+  {
+   "id": "good_listener-023",
+   "lv": "any",
+   "i18n": {
+    "en": "What does your favourite corner of your home look like?",
+    "de": "Wie sieht deine Lieblingsecke in deinem Zuhause aus?",
+    "es": "¿Cómo es tu rincón favorito de casa?",
+    "fr": "À quoi ressemble ton coin préféré chez toi ?",
+    "it": "Com'è il tuo angolo preferito di casa?",
+    "pt": "Como é o teu cantinho preferido em casa?",
+    "pt_BR": "Como é o seu cantinho favorito em casa?"
+   }
+  },
+  {
+   "id": "good_listener-024",
+   "lv": "any",
+   "i18n": {
+    "en": "What gives you energy when you feel a little tired?",
+    "de": "Was gibt dir Energie, wenn du ein bisschen müde bist?",
+    "es": "¿Qué te da energía cuando te sientes un poco cansado?",
+    "fr": "Qu'est-ce qui te redonne de l'énergie quand tu es un peu fatigué ?",
+    "it": "Cosa ti dà energia quando ti senti un po' stanco?",
+    "pt": "O que te dá energia quando te sentes um pouco cansado?",
+    "pt_BR": "O que dá energia a você quando está um pouco cansado?"
+   }
+  },
+  {
+   "id": "good_listener-025",
+   "lv": "any",
+   "i18n": {
+    "en": "Which season do you enjoy most, and what do you do in it?",
+    "de": "Welche Jahreszeit magst du am liebsten, und was machst du dann gern?",
+    "es": "¿Qué estación del año disfrutas más y qué haces en ella?",
+    "fr": "Quelle saison préfères-tu, et que fais-tu pendant cette période ?",
+    "it": "Quale stagione ti piace di più, e cosa fai in quel periodo?",
+    "pt": "Qual é a estação do ano de que mais gostas, e o que fazes nela?",
+    "pt_BR": "De qual estação do ano você mais gosta, e o que faz nela?"
+   }
+  },
+  {
+   "id": "good_listener-026",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a skill you have that you are quietly proud of?",
+    "de": "Welche Fähigkeit hast du, auf die du heimlich stolz bist?",
+    "es": "¿Qué habilidad tienes de la que estás orgulloso en secreto?",
+    "fr": "Quel talent as-tu dont tu es discrètement fier ?",
+    "it": "Qual è una tua abilità di cui vai segretamente fiero?",
+    "pt": "Que talento tens de que te orgulhas em segredo?",
+    "pt_BR": "Que habilidade você tem da qual se orgulha em silêncio?"
+   }
+  },
+  {
+   "id": "good_listener-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Who in your life would you like to thank, and for what?",
+    "de": "Wem in deinem Leben würdest du gern danken, und wofür?",
+    "es": "¿A quién de tu vida te gustaría dar las gracias, y por qué?",
+    "fr": "Qui aimerais-tu remercier dans ta vie, et pour quoi ?",
+    "it": "Chi vorresti ringraziare nella tua vita, e per cosa?",
+    "pt": "A quem gostavas de agradecer na tua vida, e porquê?",
+    "pt_BR": "A quem você gostaria de agradecer na sua vida, e por quê?"
+   }
+  },
+  {
+   "id": "good_listener-028",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a happy memory from when you were a child?",
+    "de": "Was ist eine schöne Erinnerung aus deiner Kindheit?",
+    "es": "¿Cuál es un recuerdo feliz de cuando eras niño?",
+    "fr": "Quel est un souvenir heureux de ton enfance ?",
+    "it": "Qual è un ricordo felice di quando eri piccolo?",
+    "pt": "Qual é uma memória feliz de quando eras criança?",
+    "pt_BR": "Qual é uma lembrança feliz de quando você era criança?"
+   }
+  },
+  {
+   "id": "good_listener-029",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you usually notice on your way to work, school or the shops?",
+    "de": "Was fällt dir normalerweise auf dem Weg zur Arbeit, zur Schule oder zum Einkaufen auf?",
+    "es": "¿Qué sueles notar de camino al trabajo, a clase o a la tienda?",
+    "fr": "Que remarques-tu d'habitude sur le chemin du travail, de l'école ou des courses ?",
+    "it": "Cosa noti di solito andando al lavoro, a scuola o a fare la spesa?",
+    "pt": "O que costumas reparar a caminho do trabalho, da escola ou das compras?",
+    "pt_BR": "O que você costuma reparar no caminho para o trabalho, a escola ou o mercado?"
+   }
+  },
+  {
+   "id": "good_listener-030",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite way to spend time with friends?",
+    "de": "Wie verbringst du am liebsten Zeit mit Freunden?",
+    "es": "¿Cuál es tu forma favorita de pasar tiempo con amigos?",
+    "fr": "Quelle est ta façon préférée de passer du temps avec tes amis ?",
+    "it": "Qual è il tuo modo preferito di passare il tempo con gli amici?",
+    "pt": "Qual é a tua maneira preferida de passar tempo com os amigos?",
+    "pt_BR": "Qual é o seu jeito favorito de passar tempo com os amigos?"
+   }
+  },
+  {
+   "id": "good_listener-031",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a goal you are working on at the moment?",
+    "de": "An welchem Ziel arbeitest du gerade?",
+    "es": "¿En qué meta estás trabajando en este momento?",
+    "fr": "Sur quel objectif travailles-tu en ce moment ?",
+    "it": "A quale obiettivo stai lavorando in questo periodo?",
+    "pt": "Em que objetivo estás a trabalhar neste momento?",
+    "pt_BR": "Em qual meta você está trabalhando no momento?"
+   }
+  },
+  {
+   "id": "good_listener-032",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a compliment you received that you still remember?",
+    "de": "An welches Kompliment erinnerst du dich bis heute?",
+    "es": "¿Qué cumplido recibiste que todavía recuerdas?",
+    "fr": "Quel compliment as-tu reçu dont tu te souviens encore ?",
+    "it": "Qual è un complimento ricevuto che ricordi ancora?",
+    "pt": "Que elogio recebeste de que ainda te lembras?",
+    "pt_BR": "Que elogio você recebeu e do qual ainda se lembra?"
+   }
+  },
+  {
+   "id": "good_listener-033",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you do with a completely free day tomorrow?",
+    "de": "Was würdest du morgen mit einem ganz freien Tag machen?",
+    "es": "¿Qué harías mañana con un día totalmente libre?",
+    "fr": "Que ferais-tu demain avec une journée entièrement libre ?",
+    "it": "Cosa faresti domani con una giornata completamente libera?",
+    "pt": "O que farias amanhã com um dia totalmente livre?",
+    "pt_BR": "O que você faria amanhã com um dia totalmente livre?"
+   }
+  },
+  {
+   "id": "good_listener-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animal do you like most, and why?",
+    "de": "Welches Tier magst du am liebsten, und warum?",
+    "es": "¿Qué animal te gusta más, y por qué?",
+    "fr": "Quel animal préfères-tu, et pourquoi ?",
+    "it": "Quale animale ti piace di più, e perché?",
+    "pt": "De que animal gostas mais, e porquê?",
+    "pt_BR": "De qual animal você mais gosta, e por quê?"
+   }
+  },
+  {
+   "id": "good_listener-035",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a simple pleasure you would never want to give up?",
+    "de": "Auf welches einfache Vergnügen würdest du nie verzichten wollen?",
+    "es": "¿A qué placer sencillo nunca querrías renunciar?",
+    "fr": "À quel petit plaisir simple ne voudrais-tu jamais renoncer ?",
+    "it": "A quale piccolo piacere non vorresti mai rinunciare?",
+    "pt": "A que prazer simples nunca quererias renunciar?",
+    "pt_BR": "De qual prazer simples você nunca abriria mão?"
+   }
+  },
+  {
+   "id": "good_listener-036",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something that surprised you in a good way lately?",
+    "de": "Was hat dich in letzter Zeit positiv überrascht?",
+    "es": "¿Qué te ha sorprendido para bien últimamente?",
+    "fr": "Qu'est-ce qui t'a agréablement surpris dernièrement ?",
+    "it": "Cosa ti ha sorpreso piacevolmente negli ultimi tempi?",
+    "pt": "O que te surpreendeu pela positiva nos últimos tempos?",
+    "pt_BR": "O que surpreendeu você de forma positiva ultimamente?"
+   }
+  },
+  {
+   "id": "good_listener-037",
+   "lv": "any",
+   "i18n": {
+    "en": "What makes a conversation really enjoyable for you?",
+    "de": "Was macht ein Gespräch für dich wirklich angenehm?",
+    "es": "¿Qué hace que una conversación sea realmente agradable para ti?",
+    "fr": "Qu'est-ce qui rend une conversation vraiment agréable pour toi ?",
+    "it": "Cosa rende una conversazione davvero piacevole per te?",
+    "pt": "O que torna uma conversa realmente agradável para ti?",
+    "pt_BR": "O que torna uma conversa realmente agradável para você?"
+   }
+  },
+  {
+   "id": "good_listener-038",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a dish you love to cook or would like to learn?",
+    "de": "Welches Gericht kochst du gern oder würdest du gern lernen?",
+    "es": "¿Qué plato te encanta cocinar o te gustaría aprender?",
+    "fr": "Quel plat aimes-tu cuisiner ou aimerais-tu apprendre ?",
+    "it": "Quale piatto ami cucinare o vorresti imparare?",
+    "pt": "Que prato adoras cozinhar ou gostavas de aprender?",
+    "pt_BR": "Que prato você adora cozinhar ou gostaria de aprender?"
+   }
+  },
+  {
+   "id": "good_listener-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What time of day do you feel most like yourself?",
+    "de": "Zu welcher Tageszeit fühlst du dich am meisten wie du selbst?",
+    "es": "¿En qué momento del día te sientes más tú mismo?",
+    "fr": "À quel moment de la journée te sens-tu le plus toi-même ?",
+    "it": "In quale momento della giornata ti senti più te stesso?",
+    "pt": "Em que altura do dia te sentes mais tu próprio?",
+    "pt_BR": "Em que hora do dia você se sente mais você mesmo?"
+   }
+  },
+  {
+   "id": "good_listener-040",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a word or saying from your language that you love?",
+    "de": "Welches Wort oder welchen Spruch aus deiner Sprache liebst du?",
+    "es": "¿Qué palabra o dicho de tu idioma te encanta?",
+    "fr": "Quel mot ou quelle expression de ta langue aimes-tu particulièrement ?",
+    "it": "Quale parola o modo di dire della tua lingua ami di più?",
+    "pt": "Que palavra ou expressão da tua língua adoras?",
+    "pt_BR": "Qual palavra ou ditado da sua língua você adora?"
+   }
+  },
+  {
+   "id": "good_listener-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How was your day today, from morning until now?",
+    "de": "Wie war dein Tag heute, vom Morgen bis jetzt?",
+    "es": "¿Qué tal ha ido tu día, desde la mañana hasta ahora?",
+    "fr": "Comment s'est passée ta journée, du matin jusqu'à maintenant ?",
+    "it": "Com'è andata la tua giornata, dalla mattina fino ad ora?",
+    "pt": "Como correu o teu dia, desde manhã até agora?",
+    "pt_BR": "Como foi o seu dia, desde a manhã até agora?"
+   }
+  },
+  {
+   "id": "good_listener-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What are three things you did today?",
+    "de": "Welche drei Dinge hast du heute gemacht?",
+    "es": "¿Qué tres cosas has hecho hoy?",
+    "fr": "Quelles sont trois choses que tu as faites aujourd'hui ?",
+    "it": "Quali sono tre cose che hai fatto oggi?",
+    "pt": "Quais são três coisas que fizeste hoje?",
+    "pt_BR": "Quais são três coisas que você fez hoje?"
+   }
+  },
+  {
+   "id": "good_listener-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What did you eat today that you really enjoyed?",
+    "de": "Was hast du heute gegessen, das dir richtig geschmeckt hat?",
+    "es": "¿Qué comiste hoy que te gustó mucho?",
+    "fr": "Qu'as-tu mangé aujourd'hui que tu as vraiment apprécié ?",
+    "it": "Cosa hai mangiato oggi che ti è piaciuto molto?",
+    "pt": "O que comeste hoje de que gostaste mesmo?",
+    "pt_BR": "O que você comeu hoje de que gostou muito?"
+   }
+  },
+  {
+   "id": "good_listener-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How are you feeling right now, in a few simple words?",
+    "de": "Wie fühlst du dich gerade, in ein paar einfachen Worten?",
+    "es": "¿Cómo te sientes ahora mismo, en pocas palabras?",
+    "fr": "Comment te sens-tu en ce moment, en quelques mots simples ?",
+    "it": "Come ti senti in questo momento, in poche parole?",
+    "pt": "Como te sentes neste momento, em poucas palavras?",
+    "pt_BR": "Como você está se sentindo agora, em poucas palavras?"
+   }
+  },
+  {
+   "id": "good_listener-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Who did you talk to today, and what did you talk about?",
+    "de": "Mit wem hast du heute gesprochen, und worüber?",
+    "es": "¿Con quién hablaste hoy, y de qué?",
+    "fr": "À qui as-tu parlé aujourd'hui, et de quoi ?",
+    "it": "Con chi hai parlato oggi, e di cosa?",
+    "pt": "Com quem falaste hoje, e sobre o quê?",
+    "pt_BR": "Com quem você conversou hoje, e sobre o quê?"
+   }
+  },
+  {
+   "id": "good_listener-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is your favourite drink to enjoy during the day?",
+    "de": "Was trinkst du tagsüber am liebsten?",
+    "es": "¿Cuál es tu bebida favorita durante el día?",
+    "fr": "Quelle est ta boisson préférée dans la journée ?",
+    "it": "Qual è la tua bevanda preferita durante la giornata?",
+    "pt": "Qual é a tua bebida preferida durante o dia?",
+    "pt_BR": "Qual é a sua bebida favorita durante o dia?"
+   }
+  },
+  {
+   "id": "good_listener-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What did you do last weekend?",
+    "de": "Was hast du am letzten Wochenende gemacht?",
+    "es": "¿Qué hiciste el fin de semana pasado?",
+    "fr": "Qu'as-tu fait le week-end dernier ?",
+    "it": "Cosa hai fatto lo scorso fine settimana?",
+    "pt": "O que fizeste no fim de semana passado?",
+    "pt_BR": "O que você fez no fim de semana passado?"
+   }
+  },
+  {
+   "id": "good_listener-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What are your plans for this evening?",
+    "de": "Was hast du heute Abend vor?",
+    "es": "¿Qué planes tienes para esta noche?",
+    "fr": "Qu'as-tu prévu pour ce soir ?",
+    "it": "Che programmi hai per stasera?",
+    "pt": "Quais são os teus planos para esta noite?",
+    "pt_BR": "Quais são os seus planos para hoje à noite?"
+   }
+  },
+  {
+   "id": "good_listener-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is the weather like where you are today?",
+    "de": "Wie ist das Wetter heute bei dir?",
+    "es": "¿Qué tiempo hace hoy donde estás?",
+    "fr": "Quel temps fait-il chez toi aujourd'hui ?",
+    "it": "Che tempo fa oggi dove sei?",
+    "pt": "Como está o tempo hoje onde estás?",
+    "pt_BR": "Como está o tempo hoje onde você está?"
+   }
+  },
+  {
+   "id": "good_listener-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you like most about the place where you live?",
+    "de": "Was gefällt dir an deinem Wohnort am besten?",
+    "es": "¿Qué es lo que más te gusta del lugar donde vives?",
+    "fr": "Qu'est-ce que tu aimes le plus là où tu habites ?",
+    "it": "Cosa ti piace di più del posto in cui vivi?",
+    "pt": "O que é que mais gostas no sítio onde vives?",
+    "pt_BR": "Do que você mais gosta no lugar onde mora?"
+   }
+  },
+  {
+   "id": "good_listener-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What was the last thing that made you laugh?",
+    "de": "Was hat dich zuletzt zum Lachen gebracht?",
+    "es": "¿Qué fue lo último que te hizo reír?",
+    "fr": "Quelle est la dernière chose qui t'a fait rire ?",
+    "it": "Qual è stata l'ultima cosa che ti ha fatto ridere?",
+    "pt": "Qual foi a última coisa que te fez rir?",
+    "pt_BR": "Qual foi a última coisa que fez você rir?"
+   }
+  },
+  {
+   "id": "good_listener-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer quiet evenings at home or going out, and why?",
+    "de": "Magst du lieber ruhige Abende zu Hause oder ausgehen, und warum?",
+    "es": "¿Prefieres las noches tranquilas en casa o salir, y por qué?",
+    "fr": "Préfères-tu les soirées calmes à la maison ou sortir, et pourquoi ?",
+    "it": "Preferisci le serate tranquille a casa o uscire, e perché?",
+    "pt": "Preferes noites calmas em casa ou sair, e porquê?",
+    "pt_BR": "Você prefere noites tranquilas em casa ou sair, e por quê?"
+   }
+  },
+  {
+   "id": "good_listener-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is one thing you would like to do tomorrow?",
+    "de": "Was möchtest du morgen gern machen?",
+    "es": "¿Qué te gustaría hacer mañana?",
+    "fr": "Qu'aimerais-tu faire demain ?",
+    "it": "Cosa ti piacerebbe fare domani?",
+    "pt": "O que gostavas de fazer amanhã?",
+    "pt_BR": "O que você gostaria de fazer amanhã?"
+   }
+  },
+  {
+   "id": "good_listener-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is your favourite snack when you need a little break?",
+    "de": "Was ist dein Lieblingssnack, wenn du eine kleine Pause brauchst?",
+    "es": "¿Cuál es tu tentempié favorito cuando necesitas un descanso?",
+    "fr": "Quel est ton en-cas préféré quand tu as besoin d'une petite pause ?",
+    "it": "Qual è il tuo spuntino preferito quando ti serve una pausa?",
+    "pt": "Qual é o teu petisco preferido quando precisas de uma pausa?",
+    "pt_BR": "Qual é o seu lanchinho favorito quando precisa de uma pausa?"
+   }
+  },
+  {
+   "id": "good_listener-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you like to spend your Sunday mornings?",
+    "de": "Wie verbringst du am liebsten deine Sonntagmorgen?",
+    "es": "¿Cómo te gusta pasar las mañanas de domingo?",
+    "fr": "Comment aimes-tu passer tes dimanches matin ?",
+    "it": "Come ti piace passare la domenica mattina?",
+    "pt": "Como é que gostas de passar as manhãs de domingo?",
+    "pt_BR": "Como você gosta de passar as manhãs de domingo?"
+   }
+  },
+  {
+   "id": "good_listener-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is something that went well for you today?",
+    "de": "Was ist dir heute gut gelungen?",
+    "es": "¿Qué te salió bien hoy?",
+    "fr": "Qu'est-ce qui s'est bien passé pour toi aujourd'hui ?",
+    "it": "Cosa ti è andato bene oggi?",
+    "pt": "O que é que te correu bem hoje?",
+    "pt_BR": "O que deu certo para você hoje?"
+   }
+  },
+  {
+   "id": "good_listener-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a pet, or would you like one? Tell me about it.",
+    "de": "Hast du ein Haustier, oder hättest du gern eins? Erzähl mir davon.",
+    "es": "¿Tienes una mascota o te gustaría tener una? Cuéntame.",
+    "fr": "As-tu un animal de compagnie, ou aimerais-tu en avoir un ? Raconte-moi.",
+    "it": "Hai un animale domestico, o ti piacerebbe averne uno? Raccontami.",
+    "pt": "Tens um animal de estimação ou gostavas de ter? Conta-me.",
+    "pt_BR": "Você tem um bichinho de estimação ou gostaria de ter? Me conta."
+   }
+  },
+  {
+   "id": "good_listener-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What kind of music do you listen to most often?",
+    "de": "Welche Art von Musik hörst du am häufigsten?",
+    "es": "¿Qué tipo de música escuchas más a menudo?",
+    "fr": "Quel genre de musique écoutes-tu le plus souvent ?",
+    "it": "Che tipo di musica ascolti più spesso?",
+    "pt": "Que tipo de música ouves mais vezes?",
+    "pt_BR": "Que tipo de música você mais escuta?"
+   }
+  },
+  {
+   "id": "good_listener-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you like to do when it rains?",
+    "de": "Was machst du gern, wenn es regnet?",
+    "es": "¿Qué te gusta hacer cuando llueve?",
+    "fr": "Qu'aimes-tu faire quand il pleut ?",
+    "it": "Cosa ti piace fare quando piove?",
+    "pt": "O que gostas de fazer quando chove?",
+    "pt_BR": "O que você gosta de fazer quando chove?"
+   }
+  },
+  {
+   "id": "good_listener-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which room in your home do you spend the most time in?",
+    "de": "In welchem Raum deines Zuhauses verbringst du die meiste Zeit?",
+    "es": "¿En qué habitación de tu casa pasas más tiempo?",
+    "fr": "Dans quelle pièce de chez toi passes-tu le plus de temps ?",
+    "it": "In quale stanza di casa passi più tempo?",
+    "pt": "Em que divisão da tua casa passas mais tempo?",
+    "pt_BR": "Em qual cômodo da sua casa você passa mais tempo?"
+   }
+  },
+  {
+   "id": "good_listener-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What did you do today just for yourself?",
+    "de": "Was hast du heute nur für dich gemacht?",
+    "es": "¿Qué hiciste hoy solo para ti?",
+    "fr": "Qu'as-tu fait aujourd'hui rien que pour toi ?",
+    "it": "Cosa hai fatto oggi solo per te?",
+    "pt": "O que fizeste hoje só para ti?",
+    "pt_BR": "O que você fez hoje só para você?"
+   }
+  },
+  {
+   "id": "good_listener-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is your favourite way to say hello to a friend?",
+    "de": "Wie begrüßt du einen Freund am liebsten?",
+    "es": "¿Cuál es tu forma favorita de saludar a un amigo?",
+    "fr": "Quelle est ta façon préférée de dire bonjour à un ami ?",
+    "it": "Qual è il tuo modo preferito di salutare un amico?",
+    "pt": "Qual é a tua maneira preferida de cumprimentar um amigo?",
+    "pt_BR": "Qual é o seu jeito favorito de cumprimentar um amigo?"
+   }
+  },
+  {
+   "id": "good_listener-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a place near you where you like to go for a walk?",
+    "de": "Wo in deiner Nähe gehst du gern spazieren?",
+    "es": "¿Qué lugar cerca de ti te gusta para salir a pasear?",
+    "fr": "Où aimes-tu aller te promener près de chez toi ?",
+    "it": "Qual è un posto vicino a te dove ti piace passeggiare?",
+    "pt": "Que sítio perto de ti gostas de visitar para passear?",
+    "pt_BR": "Qual lugar perto de você é bom para uma caminhada?"
+   }
+  },
+  {
+   "id": "good_listener-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a film you could watch again and again?",
+    "de": "Welchen Film könntest du immer wieder anschauen?",
+    "es": "¿Qué película podrías ver una y otra vez?",
+    "fr": "Quel film pourrais-tu regarder encore et encore ?",
+    "it": "Quale film potresti rivedere all'infinito?",
+    "pt": "Que filme conseguias ver vezes sem conta?",
+    "pt_BR": "Que filme você poderia ver de novo e de novo?"
+   }
+  },
+  {
+   "id": "good_listener-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What was the nicest thing you saw today?",
+    "de": "Was war das Schönste, das du heute gesehen hast?",
+    "es": "¿Qué fue lo más bonito que viste hoy?",
+    "fr": "Quelle est la plus belle chose que tu as vue aujourd'hui ?",
+    "it": "Qual è stata la cosa più bella che hai visto oggi?",
+    "pt": "Qual foi a coisa mais bonita que viste hoje?",
+    "pt_BR": "Qual foi a coisa mais bonita que você viu hoje?"
+   }
+  },
+  {
+   "id": "good_listener-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a decision you are glad you made, and how did you make it?",
+    "de": "Über welche Entscheidung bist du froh, und wie hast du sie getroffen?",
+    "es": "¿De qué decisión te alegras, y cómo la tomaste?",
+    "fr": "De quelle décision es-tu content, et comment l'as-tu prise ?",
+    "it": "Di quale decisione sei contento, e come l'hai presa?",
+    "pt": "De que decisão estás contente, e como a tomaste?",
+    "pt_BR": "De qual decisão você se orgulha, e como a tomou?"
+   }
+  },
+  {
+   "id": "good_listener-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "When you share something with a friend, do you prefer advice or just listening?",
+    "de": "Wenn du einem Freund etwas erzählst, möchtest du lieber Rat oder einfach ein offenes Ohr?",
+    "es": "Cuando le cuentas algo a un amigo, ¿prefieres consejos o que solo te escuche?",
+    "fr": "Quand tu confies quelque chose à un ami, préfères-tu des conseils ou juste une écoute ?",
+    "it": "Quando racconti qualcosa a un amico, preferisci consigli o solo ascolto?",
+    "pt": "Quando contas algo a um amigo, preferes conselhos ou só que te ouça?",
+    "pt_BR": "Quando você conta algo a um amigo, prefere conselhos ou só que ele escute?"
+   }
+  },
+  {
+   "id": "good_listener-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a small mistake that taught you something useful?",
+    "de": "Welcher kleine Fehler hat dir etwas Nützliches beigebracht?",
+    "es": "¿Qué pequeño error te enseñó algo útil?",
+    "fr": "Quelle petite erreur t'a appris quelque chose d'utile ?",
+    "it": "Quale piccolo errore ti ha insegnato qualcosa di utile?",
+    "pt": "Que pequeno erro te ensinou algo útil?",
+    "pt_BR": "Qual pequeno erro ensinou algo útil a você?"
+   }
+  },
+  {
+   "id": "good_listener-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What does being a good friend mean to you?",
+    "de": "Was bedeutet es für dich, ein guter Freund zu sein?",
+    "es": "¿Qué significa para ti ser un buen amigo?",
+    "fr": "Que signifie pour toi être un bon ami ?",
+    "it": "Cosa significa per te essere un buon amico?",
+    "pt": "O que significa para ti ser um bom amigo?",
+    "pt_BR": "O que significa para você ser um bom amigo?"
+   }
+  },
+  {
+   "id": "good_listener-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How has the way you spend your free time changed over the years?",
+    "de": "Wie hat sich die Art, wie du deine Freizeit verbringst, über die Jahre verändert?",
+    "es": "¿Cómo ha cambiado con los años tu forma de pasar el tiempo libre?",
+    "fr": "Comment ta façon de passer ton temps libre a-t-elle changé au fil des années ?",
+    "it": "Com'è cambiato negli anni il modo in cui passi il tempo libero?",
+    "pt": "Como mudou ao longo dos anos a forma como passas o tempo livre?",
+    "pt_BR": "Como mudou ao longo dos anos o jeito como você passa o tempo livre?"
+   }
+  },
+  {
+   "id": "good_listener-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is an object you own that has a special story behind it?",
+    "de": "Welcher Gegenstand, den du besitzt, hat eine besondere Geschichte?",
+    "es": "¿Qué objeto tuyo tiene una historia especial detrás?",
+    "fr": "Quel objet que tu possèdes a une histoire particulière ?",
+    "it": "Quale oggetto che possiedi ha una storia speciale alle spalle?",
+    "pt": "Que objeto teu tem uma história especial por trás?",
+    "pt_BR": "Que objeto seu tem uma história especial por trás?"
+   }
+  },
+  {
+   "id": "good_listener-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "When did you last feel really brave, and what happened?",
+    "de": "Wann hast du dich zuletzt richtig mutig gefühlt, und was ist passiert?",
+    "es": "¿Cuándo te sentiste realmente valiente por última vez, y qué pasó?",
+    "fr": "Quand t'es-tu senti vraiment courageux pour la dernière fois, et que s'est-il passé ?",
+    "it": "Quando ti sei sentito davvero coraggioso l'ultima volta, e cos'è successo?",
+    "pt": "Quando foi a última vez que te sentiste mesmo corajoso, e o que aconteceu?",
+    "pt_BR": "Quando foi a última vez que você se sentiu realmente corajoso, e o que aconteceu?"
+   }
+  },
+  {
+   "id": "good_listener-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What makes you feel at home when you are somewhere new?",
+    "de": "Was gibt dir das Gefühl, zu Hause zu sein, wenn du an einem neuen Ort bist?",
+    "es": "¿Qué te hace sentir como en casa cuando estás en un lugar nuevo?",
+    "fr": "Qu'est-ce qui te fait te sentir chez toi quand tu es dans un nouvel endroit ?",
+    "it": "Cosa ti fa sentire a casa quando sei in un posto nuovo?",
+    "pt": "O que te faz sentir em casa quando estás num sítio novo?",
+    "pt_BR": "O que faz você se sentir em casa quando está num lugar novo?"
+   }
+  },
+  {
+   "id": "good_listener-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Who taught you something important without even trying?",
+    "de": "Wer hat dir etwas Wichtiges beigebracht, ohne es überhaupt zu versuchen?",
+    "es": "¿Quién te enseñó algo importante sin siquiera proponérselo?",
+    "fr": "Qui t'a appris quelque chose d'important sans même le vouloir ?",
+    "it": "Chi ti ha insegnato qualcosa di importante senza nemmeno volerlo?",
+    "pt": "Quem te ensinou algo importante sem sequer se esforçar?",
+    "pt_BR": "Quem ensinou algo importante a você sem nem perceber?"
+   }
+  },
+  {
+   "id": "good_listener-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What helps you stay calm and steady on very busy days?",
+    "de": "Was hilft dir, an sehr vollen Tagen ruhig und gelassen zu bleiben?",
+    "es": "¿Qué te ayuda a mantener la calma en los días muy ajetreados?",
+    "fr": "Qu'est-ce qui t'aide à rester calme et serein les jours très chargés ?",
+    "it": "Cosa ti aiuta a restare calmo e sereno nelle giornate piene?",
+    "pt": "O que te ajuda a manter a calma nos dias muito cheios?",
+    "pt_BR": "O que ajuda você a manter a calma nos dias muito corridos?"
+   }
+  },
+  {
+   "id": "good_listener-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a personal motto or saying that guides you?",
+    "de": "Welches persönliche Motto oder welcher Spruch begleitet dich?",
+    "es": "¿Qué lema o dicho personal te sirve de guía?",
+    "fr": "Quelle devise ou quel dicton te guide au quotidien ?",
+    "it": "Qual è un motto o un detto che ti guida?",
+    "pt": "Que lema ou ditado pessoal te serve de guia?",
+    "pt_BR": "Qual lema ou ditado pessoal guia você?"
+   }
+  },
+  {
+   "id": "good_listener-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you usually show the people you care about that they matter?",
+    "de": "Wie zeigst du den Menschen, die dir wichtig sind, dass sie dir etwas bedeuten?",
+    "es": "¿Cómo sueles demostrar a las personas que quieres que son importantes para ti?",
+    "fr": "Comment montres-tu d'habitude aux gens que tu aimes qu'ils comptent pour toi ?",
+    "it": "Come mostri di solito alle persone a cui tieni che sono importanti?",
+    "pt": "Como costumas mostrar às pessoas de quem gostas que são importantes para ti?",
+    "pt_BR": "Como você costuma mostrar às pessoas queridas que elas são importantes?"
+   }
+  },
+  {
+   "id": "good_listener-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a conversation you still remember because it was so good?",
+    "de": "An welches Gespräch erinnerst du dich noch, weil es so schön war?",
+    "es": "¿Qué conversación recuerdas todavía porque fue muy especial?",
+    "fr": "De quelle conversation te souviens-tu encore parce qu'elle était si belle ?",
+    "it": "Quale conversazione ricordi ancora perché è stata così bella?",
+    "pt": "De que conversa ainda te lembras por ter sido tão boa?",
+    "pt_BR": "De qual conversa você ainda se lembra por ter sido tão boa?"
+   }
+  },
+  {
+   "id": "good_listener-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a hobby you would love to try, and what draws you to it?",
+    "de": "Welches Hobby würdest du gern ausprobieren, und was reizt dich daran?",
+    "es": "¿Qué afición te encantaría probar y qué te atrae de ella?",
+    "fr": "Quel loisir aimerais-tu essayer, et qu'est-ce qui t'attire ?",
+    "it": "Quale hobby ti piacerebbe provare, e cosa ti attira?",
+    "pt": "Que passatempo gostavas de experimentar, e o que te atrai nele?",
+    "pt_BR": "Qual hobby você adoraria experimentar, e o que atrai você nele?"
+   }
+  },
+  {
+   "id": "good_listener-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is something about your culture you would love others to know?",
+    "de": "Was an deiner Kultur sollten andere unbedingt kennenlernen?",
+    "es": "¿Qué te gustaría que otros supieran de tu cultura?",
+    "fr": "Qu'aimerais-tu que les autres sachent sur ta culture ?",
+    "it": "Cosa ti piacerebbe che gli altri sapessero della tua cultura?",
+    "pt": "O que gostavas que os outros soubessem sobre a tua cultura?",
+    "pt_BR": "O que você gostaria que os outros soubessem sobre a sua cultura?"
+   }
+  },
+  {
+   "id": "good_listener-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a small daily habit that makes your life better?",
+    "de": "Welche kleine tägliche Gewohnheit macht dein Leben besser?",
+    "es": "¿Qué pequeño hábito diario mejora tu vida?",
+    "fr": "Quelle petite habitude quotidienne rend ta vie meilleure ?",
+    "it": "Quale piccola abitudine quotidiana ti migliora la vita?",
+    "pt": "Que pequeno hábito diário torna a tua vida melhor?",
+    "pt_BR": "Qual pequeno hábito diário deixa sua vida melhor?"
+   }
+  },
+  {
+   "id": "good_listener-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you like to celebrate your birthday?",
+    "de": "Wie feierst du am liebsten deinen Geburtstag?",
+    "es": "¿Cómo te gusta celebrar tu cumpleaños?",
+    "fr": "Comment aimes-tu fêter ton anniversaire ?",
+    "it": "Come ti piace festeggiare il tuo compleanno?",
+    "pt": "Como é que gostas de celebrar o teu aniversário?",
+    "pt_BR": "Como você gosta de comemorar seu aniversário?"
+   }
+  },
+  {
+   "id": "good_listener-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a trip you remember well, and who did you meet there?",
+    "de": "An welche Reise erinnerst du dich gut, und wen hast du dort getroffen?",
+    "es": "¿Qué viaje recuerdas bien, y a quién conociste allí?",
+    "fr": "De quel voyage te souviens-tu bien, et qui y as-tu rencontré ?",
+    "it": "Quale viaggio ricordi bene, e chi hai conosciuto lì?",
+    "pt": "De que viagem te lembras bem, e quem conheceste lá?",
+    "pt_BR": "De qual viagem você se lembra bem, e quem conheceu lá?"
+   }
+  },
+  {
+   "id": "good_listener-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would you tell your younger self if you could?",
+    "de": "Was würdest du deinem jüngeren Ich sagen, wenn du könntest?",
+    "es": "¿Qué le dirías a tu yo más joven si pudieras?",
+    "fr": "Que dirais-tu à ton toi plus jeune si tu le pouvais ?",
+    "it": "Cosa diresti a te stesso da giovane, se potessi?",
+    "pt": "O que dirias ao teu eu mais novo, se pudesses?",
+    "pt_BR": "O que você diria ao seu eu mais jovem, se pudesse?"
+   }
+  },
+  {
+   "id": "good_listener-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you usually talk more or listen more with friends?",
+    "de": "Redest du mit Freunden normalerweise mehr, oder hörst du mehr zu?",
+    "es": "Con tus amigos, ¿sueles hablar más o escuchar más?",
+    "fr": "Avec tes amis, est-ce que tu parles plus ou écoutes plus d'habitude ?",
+    "it": "Con gli amici, di solito parli di più o ascolti di più?",
+    "pt": "Com os amigos, costumas falar mais ou ouvir mais?",
+    "pt_BR": "Com os amigos, você costuma falar mais ou ouvir mais?"
+   }
+  },
+  {
+   "id": "good_listener-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If your life so far were a book, what would the chapters be called?",
+    "de": "Wenn dein bisheriges Leben ein Buch wäre, wie würden die Kapitel heißen?",
+    "es": "Si tu vida hasta ahora fuera un libro, ¿cómo se llamarían los capítulos?",
+    "fr": "Si ta vie jusqu'ici était un livre, quels seraient les titres des chapitres ?",
+    "it": "Se la tua vita finora fosse un libro, come si chiamerebbero i capitoli?",
+    "pt": "Se a tua vida até agora fosse um livro, como se chamariam os capítulos?",
+    "pt_BR": "Se a sua vida até agora fosse um livro, como se chamariam os capítulos?"
+   }
+  },
+  {
+   "id": "good_listener-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What does success mean to you personally?",
+    "de": "Was bedeutet Erfolg für dich ganz persönlich?",
+    "es": "¿Qué significa para ti el éxito, a nivel personal?",
+    "fr": "Que signifie la réussite pour toi, personnellement ?",
+    "it": "Cosa significa per te il successo, a livello personale?",
+    "pt": "O que significa para ti o sucesso, a nível pessoal?",
+    "pt_BR": "O que sucesso significa para você, pessoalmente?"
+   }
+  },
+  {
+   "id": "good_listener-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What is a conversation that changed the way you see things?",
+    "de": "Welches Gespräch hat deine Sicht auf die Dinge verändert?",
+    "es": "¿Qué conversación cambió tu forma de ver las cosas?",
+    "fr": "Quelle conversation a changé ta façon de voir les choses ?",
+    "it": "Quale conversazione ha cambiato il tuo modo di vedere le cose?",
+    "pt": "Que conversa mudou a tua forma de ver as coisas?",
+    "pt_BR": "Qual conversa mudou o seu jeito de ver as coisas?"
+   }
+  },
+  {
+   "id": "good_listener-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "When did you last act on what matters most to you?",
+    "de": "Wann hast du zuletzt nach dem gehandelt, was dir am wichtigsten ist?",
+    "es": "¿Cuándo fue la última vez que actuaste según lo que más te importa?",
+    "fr": "Quand as-tu agi pour la dernière fois selon ce qui compte le plus pour toi ?",
+    "it": "Quando hai agito l'ultima volta seguendo ciò che conta di più per te?",
+    "pt": "Quando foi a última vez que agiste de acordo com o que mais te importa?",
+    "pt_BR": "Quando foi a última vez que você agiu de acordo com o que mais importa para você?"
+   }
+  },
+  {
+   "id": "good_listener-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What is the best advice you ever received, and who gave it to you?",
+    "de": "Was ist der beste Rat, den du je bekommen hast, und von wem kam er?",
+    "es": "¿Cuál es el mejor consejo que has recibido, y quién te lo dio?",
+    "fr": "Quel est le meilleur conseil qu'on t'ait jamais donné, et qui te l'a donné ?",
+    "it": "Qual è il miglior consiglio che hai mai ricevuto, e chi te l'ha dato?",
+    "pt": "Qual foi o melhor conselho que já recebeste, e quem to deu?",
+    "pt_BR": "Qual foi o melhor conselho que você já recebeu, e quem deu?"
+   }
+  },
+  {
+   "id": "good_listener-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you usually feel about change, and what helps you adapt?",
+    "de": "Wie stehst du normalerweise zu Veränderungen, und was hilft dir, dich anzupassen?",
+    "es": "¿Cómo sueles vivir los cambios y qué te ayuda a adaptarte?",
+    "fr": "Comment vis-tu le changement d'habitude, et qu'est-ce qui t'aide à t'adapter ?",
+    "it": "Come vivi di solito i cambiamenti, e cosa ti aiuta ad adattarti?",
+    "pt": "Como costumas lidar com a mudança, e o que te ajuda a adaptar-te?",
+    "pt_BR": "Como você costuma lidar com mudanças, e o que ajuda você a se adaptar?"
+   }
+  },
+  {
+   "id": "good_listener-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What gives your ordinary days a sense of meaning?",
+    "de": "Was gibt deinen ganz normalen Tagen einen Sinn?",
+    "es": "¿Qué le da sentido a tus días normales?",
+    "fr": "Qu'est-ce qui donne du sens à tes journées ordinaires ?",
+    "it": "Cosa dà un senso alle tue giornate normali?",
+    "pt": "O que dá sentido aos teus dias comuns?",
+    "pt_BR": "O que dá sentido aos seus dias comuns?"
+   }
+  },
+  {
+   "id": "good_listener-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How have you grown as a person over the last few years?",
+    "de": "Wie hast du dich in den letzten Jahren als Mensch weiterentwickelt?",
+    "es": "¿Cómo has crecido como persona en los últimos años?",
+    "fr": "Comment as-tu grandi en tant que personne ces dernières années ?",
+    "it": "Come sei cresciuto come persona negli ultimi anni?",
+    "pt": "Como cresceste como pessoa nos últimos anos?",
+    "pt_BR": "Como você cresceu como pessoa nos últimos anos?"
+   }
+  },
+  {
+   "id": "good_listener-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What quality do you appreciate most in yourself?",
+    "de": "Welche Eigenschaft schätzt du an dir selbst am meisten?",
+    "es": "¿Qué cualidad valoras más de ti mismo?",
+    "fr": "Quelle qualité apprécies-tu le plus chez toi ?",
+    "it": "Quale qualità apprezzi di più in te stesso?",
+    "pt": "Que qualidade mais aprecias em ti próprio?",
+    "pt_BR": "Qual qualidade você mais valoriza em si mesmo?"
+   }
+  },
+  {
+   "id": "good_listener-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would make your neighbourhood or community an even better place?",
+    "de": "Was würde deine Nachbarschaft oder Gemeinschaft noch schöner machen?",
+    "es": "¿Qué haría de tu barrio o tu comunidad un lugar aún mejor?",
+    "fr": "Qu'est-ce qui rendrait ton quartier ou ta communauté encore meilleurs ?",
+    "it": "Cosa renderebbe il tuo quartiere o la tua comunità un posto ancora migliore?",
+    "pt": "O que tornaria o teu bairro ou a tua comunidade um sítio ainda melhor?",
+    "pt_BR": "O que tornaria o seu bairro ou a sua comunidade um lugar ainda melhor?"
+   }
+  },
+  {
+   "id": "good_listener-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What is something you have learned from people of other cultures?",
+    "de": "Was hast du von Menschen aus anderen Kulturen gelernt?",
+    "es": "¿Qué has aprendido de personas de otras culturas?",
+    "fr": "Qu'as-tu appris de personnes d'autres cultures ?",
+    "it": "Cosa hai imparato da persone di altre culture?",
+    "pt": "O que aprendeste com pessoas de outras culturas?",
+    "pt_BR": "O que você aprendeu com pessoas de outras culturas?"
+   }
+  },
+  {
+   "id": "good_listener-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "When did you feel truly understood by someone, and what did they do?",
+    "de": "Wann hast du dich von jemandem wirklich verstanden gefühlt, und was hat er getan?",
+    "es": "¿Cuándo te sentiste realmente comprendido por alguien, y qué hizo esa persona?",
+    "fr": "Quand t'es-tu senti vraiment compris par quelqu'un, et qu'a fait cette personne ?",
+    "it": "Quando ti sei sentito davvero capito da qualcuno, e cosa ha fatto?",
+    "pt": "Quando te sentiste mesmo compreendido por alguém, e o que fez essa pessoa?",
+    "pt_BR": "Quando você se sentiu realmente compreendido por alguém, e o que essa pessoa fez?"
+   }
+  },
+  {
+   "id": "good_listener-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you hope people feel after spending time with you?",
+    "de": "Was hoffst du, wie Menschen sich fühlen, nachdem sie Zeit mit dir verbracht haben?",
+    "es": "¿Qué esperas que sientan las personas después de pasar tiempo contigo?",
+    "fr": "Qu'espères-tu que les gens ressentent après avoir passé du temps avec toi ?",
+    "it": "Cosa speri che provino le persone dopo aver passato del tempo con te?",
+    "pt": "O que esperas que as pessoas sintam depois de passarem tempo contigo?",
+    "pt_BR": "O que você espera que as pessoas sintam depois de passar um tempo com você?"
+   }
+  },
+  {
+   "id": "good_listener-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What are your hopes for the year ahead?",
+    "de": "Was erhoffst du dir vom kommenden Jahr?",
+    "es": "¿Qué esperas del año que viene?",
+    "fr": "Quels sont tes espoirs pour l'année à venir ?",
+    "it": "Quali sono le tue speranze per l'anno che verrà?",
+    "pt": "Quais são as tuas esperanças para o próximo ano?",
+    "pt_BR": "Quais são as suas esperanças para o próximo ano?"
+   }
+  },
+  {
+   "id": "good_listener-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What kind of friend do you want to be known as, and why?",
+    "de": "Als was für ein Freund möchtest du bekannt sein, und warum?",
+    "es": "¿Qué tipo de amigo te gustaría ser para los demás, y por qué?",
+    "fr": "Quel genre d'ami aimerais-tu être aux yeux des autres, et pourquoi ?",
+    "it": "Che tipo di amico vorresti essere per gli altri, e perché?",
+    "pt": "Que tipo de amigo gostavas de ser para os outros, e porquê?",
+    "pt_BR": "Que tipo de amigo você gostaria de ser para os outros, e por quê?"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1305 @@
+{
+"topic": "goal_buddy",
+"questions": [
+{
+"id": "goal_buddy-001",
+"lv": "any",
+"i18n": {
+"en": "What is one goal you would love to reach in the next few months?",
+"de": "Welches Ziel würdest du in den nächsten Monaten gern erreichen?",
+"es": "¿Qué meta te encantaría alcanzar en los próximos meses?",
+"fr": "Quel objectif aimerais-tu atteindre dans les prochains mois ?",
+"it": "Quale obiettivo ti piacerebbe raggiungere nei prossimi mesi?",
+"pt": "Que objetivo gostavas de alcançar nos próximos meses?",
+"pt_BR": "Qual meta você adoraria alcançar nos próximos meses?"
+}
+},
+{
+"id": "goal_buddy-002",
+"lv": "any",
+"i18n": {
+"en": "Which achievement in your life are you most proud of so far?",
+"de": "Auf welche Leistung in deinem Leben bist du bisher am stolzesten?",
+"es": "¿De qué logro de tu vida te sientes más orgulloso hasta ahora?",
+"fr": "De quelle réussite de ta vie es-tu le plus fier jusqu'ici ?",
+"it": "Di quale traguardo della tua vita sei più orgoglioso finora?",
+"pt": "De que conquista da tua vida te orgulhas mais até agora?",
+"pt_BR": "De qual conquista da sua vida você mais se orgulha até agora?"
+}
+},
+{
+"id": "goal_buddy-003",
+"lv": "any",
+"i18n": {
+"en": "How do you usually celebrate when something goes well?",
+"de": "Wie feierst du normalerweise, wenn etwas gut gelaufen ist?",
+"es": "¿Cómo sueles celebrar cuando algo te sale bien?",
+"fr": "Comment fêtes-tu d'habitude une réussite ?",
+"it": "Come festeggi di solito quando qualcosa va bene?",
+"pt": "Como costumas celebrar quando algo corre bem?",
+"pt_BR": "Como você costuma comemorar quando algo dá certo?"
+}
+},
+{
+"id": "goal_buddy-004",
+"lv": "any",
+"i18n": {
+"en": "What is a small win you had this week?",
+"de": "Welchen kleinen Erfolg hattest du diese Woche?",
+"es": "¿Qué pequeño logro tuviste esta semana?",
+"fr": "Quelle petite victoire as-tu eue cette semaine ?",
+"it": "Qual è una piccola vittoria che hai ottenuto questa settimana?",
+"pt": "Que pequena vitória tiveste esta semana?",
+"pt_BR": "Qual foi uma pequena vitória sua nesta semana?"
+}
+},
+{
+"id": "goal_buddy-005",
+"lv": "any",
+"i18n": {
+"en": "Is there a skill you have always wanted to learn? Which one?",
+"de": "Gibt es eine Fähigkeit, die du schon immer lernen wolltest? Welche?",
+"es": "¿Hay alguna habilidad que siempre hayas querido aprender? ¿Cuál?",
+"fr": "Y a-t-il une compétence que tu as toujours voulu apprendre ? Laquelle ?",
+"it": "C'è un'abilità che hai sempre voluto imparare? Quale?",
+"pt": "Há alguma competência que sempre quiseste aprender? Qual?",
+"pt_BR": "Tem alguma habilidade que você sempre quis aprender? Qual?"
+}
+},
+{
+"id": "goal_buddy-006",
+"lv": "any",
+"i18n": {
+"en": "Who in your life inspires you to keep going?",
+"de": "Wer in deinem Leben motiviert dich, dranzubleiben?",
+"es": "¿Quién en tu vida te inspira a seguir adelante?",
+"fr": "Qui, dans ta vie, t'inspire à continuer ?",
+"it": "Chi nella tua vita ti ispira ad andare avanti?",
+"pt": "Quem na tua vida te inspira a continuar?",
+"pt_BR": "Quem na sua vida te inspira a seguir em frente?"
+}
+},
+{
+"id": "goal_buddy-007",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer big ambitious goals or many small ones? Why?",
+"de": "Magst du lieber große, ehrgeizige Ziele oder viele kleine? Warum?",
+"es": "¿Prefieres metas grandes y ambiciosas o muchas pequeñas? ¿Por qué?",
+"fr": "Préfères-tu les grands objectifs ambitieux ou plein de petits ? Pourquoi ?",
+"it": "Preferisci obiettivi grandi e ambiziosi o tanti piccoli? Perché?",
+"pt": "Preferes objetivos grandes e ambiciosos ou muitos pequenos? Porquê?",
+"pt_BR": "Você prefere metas grandes e ambiciosas ou várias pequenas? Por quê?"
+}
+},
+{
+"id": "goal_buddy-008",
+"lv": "any",
+"i18n": {
+"en": "What time of day do you feel most motivated?",
+"de": "Zu welcher Tageszeit bist du am motiviertesten?",
+"es": "¿En qué momento del día te sientes más motivado?",
+"fr": "À quel moment de la journée te sens-tu le plus motivé ?",
+"it": "In quale momento della giornata ti senti più motivato?",
+"pt": "A que hora do dia te sentes mais motivado?",
+"pt_BR": "Em que hora do dia você se sente mais motivado?"
+}
+},
+{
+"id": "goal_buddy-009",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect productive day look like for you?",
+"de": "Wie sieht für dich ein perfekter, produktiver Tag aus?",
+"es": "¿Cómo es para ti un día productivo perfecto?",
+"fr": "À quoi ressemble pour toi une journée productive idéale ?",
+"it": "Com'è per te una giornata produttiva perfetta?",
+"pt": "Como é para ti um dia produtivo perfeito?",
+"pt_BR": "Como é, pra você, um dia produtivo perfeito?"
+}
+},
+{
+"id": "goal_buddy-010",
+"lv": "any",
+"i18n": {
+"en": "What is something new you tried recently?",
+"de": "Was hast du in letzter Zeit zum ersten Mal ausprobiert?",
+"es": "¿Qué cosa nueva has probado últimamente?",
+"fr": "Qu'as-tu essayé de nouveau récemment ?",
+"it": "Qual è una cosa nuova che hai provato di recente?",
+"pt": "Que coisa nova experimentaste recentemente?",
+"pt_BR": "Que coisa nova você experimentou recentemente?"
+}
+},
+{
+"id": "goal_buddy-011",
+"lv": "any",
+"i18n": {
+"en": "Do you write your plans down or keep them in your head?",
+"de": "Schreibst du deine Pläne auf oder behältst du sie im Kopf?",
+"es": "¿Escribes tus planes o los guardas en la cabeza?",
+"fr": "Notes-tu tes projets ou les gardes-tu en tête ?",
+"it": "Scrivi i tuoi piani o li tieni a mente?",
+"pt": "Escreves os teus planos ou guarda-los na cabeça?",
+"pt_BR": "Você anota seus planos ou guarda tudo na cabeça?"
+}
+},
+{
+"id": "goal_buddy-012",
+"lv": "any",
+"i18n": {
+"en": "What would you do with one extra free hour every day?",
+"de": "Was würdest du mit einer zusätzlichen freien Stunde pro Tag machen?",
+"es": "¿Qué harías con una hora libre extra cada día?",
+"fr": "Que ferais-tu d'une heure libre de plus chaque jour ?",
+"it": "Cosa faresti con un'ora libera in più ogni giorno?",
+"pt": "O que farias com uma hora livre a mais todos os dias?",
+"pt_BR": "O que você faria com uma hora livre a mais todo dia?"
+}
+},
+{
+"id": "goal_buddy-013",
+"lv": "any",
+"i18n": {
+"en": "Which place in the world would you love to visit one day?",
+"de": "Welchen Ort der Welt würdest du gern einmal besuchen?",
+"es": "¿Qué lugar del mundo te encantaría visitar algún día?",
+"fr": "Quel endroit du monde aimerais-tu visiter un jour ?",
+"it": "Quale posto del mondo ti piacerebbe visitare un giorno?",
+"pt": "Que lugar do mundo gostavas de visitar um dia?",
+"pt_BR": "Qual lugar do mundo você adoraria visitar um dia?"
+}
+},
+{
+"id": "goal_buddy-014",
+"lv": "any",
+"i18n": {
+"en": "What is a hobby you would like to spend more time on?",
+"de": "Welchem Hobby würdest du gern mehr Zeit widmen?",
+"es": "¿A qué afición te gustaría dedicar más tiempo?",
+"fr": "À quel loisir aimerais-tu consacrer plus de temps ?",
+"it": "A quale hobby vorresti dedicare più tempo?",
+"pt": "A que passatempo gostavas de dedicar mais tempo?",
+"pt_BR": "A qual hobby você gostaria de dedicar mais tempo?"
+}
+},
+{
+"id": "goal_buddy-015",
+"lv": "any",
+"i18n": {
+"en": "What usually helps you start a task you have been putting off?",
+"de": "Was hilft dir meistens, eine aufgeschobene Aufgabe anzufangen?",
+"es": "¿Qué te ayuda normalmente a empezar una tarea que has ido aplazando?",
+"fr": "Qu'est-ce qui t'aide d'habitude à commencer une tâche que tu repousses ?",
+"it": "Cosa ti aiuta di solito a iniziare un compito che rimandi?",
+"pt": "O que te costuma ajudar a começar uma tarefa que andas a adiar?",
+"pt_BR": "O que costuma te ajudar a começar uma tarefa que você vem adiando?"
+}
+},
+{
+"id": "goal_buddy-016",
+"lv": "any",
+"i18n": {
+"en": "Which reward motivates you most after a hard task?",
+"de": "Welche Belohnung motiviert dich nach einer schwierigen Aufgabe am meisten?",
+"es": "¿Qué recompensa te motiva más después de una tarea difícil?",
+"fr": "Quelle récompense te motive le plus après une tâche difficile ?",
+"it": "Quale ricompensa ti motiva di più dopo un compito difficile?",
+"pt": "Que recompensa te motiva mais depois de uma tarefa difícil?",
+"pt_BR": "Qual recompensa mais te motiva depois de uma tarefa difícil?"
+}
+},
+{
+"id": "goal_buddy-017",
+"lv": "any",
+"i18n": {
+"en": "What is a goal you reached that once seemed impossible?",
+"de": "Welches Ziel hast du erreicht, das dir früher unmöglich vorkam?",
+"es": "¿Qué meta alcanzaste que antes te parecía imposible?",
+"fr": "Quel objectif as-tu atteint alors qu'il te semblait impossible autrefois ?",
+"it": "Quale obiettivo hai raggiunto che un tempo ti sembrava impossibile?",
+"pt": "Que objetivo alcançaste que antes te parecia impossível?",
+"pt_BR": "Qual meta você alcançou que antes parecia impossível?"
+}
+},
+{
+"id": "goal_buddy-018",
+"lv": "any",
+"i18n": {
+"en": "How do you like to start a new week?",
+"de": "Wie startest du am liebsten in eine neue Woche?",
+"es": "¿Cómo te gusta empezar una nueva semana?",
+"fr": "Comment aimes-tu commencer une nouvelle semaine ?",
+"it": "Come ti piace iniziare una nuova settimana?",
+"pt": "Como gostas de começar uma nova semana?",
+"pt_BR": "Como você gosta de começar uma nova semana?"
+}
+},
+{
+"id": "goal_buddy-019",
+"lv": "any",
+"i18n": {
+"en": "Is there a book, film or song that motivates you? Tell me about it.",
+"de": "Gibt es ein Buch, einen Film oder ein Lied, das dich motiviert? Erzähl!",
+"es": "¿Hay algún libro, película o canción que te motive? Cuéntame.",
+"fr": "Y a-t-il un livre, un film ou une chanson qui te motive ? Raconte-moi.",
+"it": "C'è un libro, un film o una canzone che ti motiva? Raccontami.",
+"pt": "Há algum livro, filme ou música que te motive? Conta-me.",
+"pt_BR": "Tem algum livro, filme ou música que te motiva? Me conta."
+}
+},
+{
+"id": "goal_buddy-020",
+"lv": "any",
+"i18n": {
+"en": "What does success mean to you in your own words?",
+"de": "Was bedeutet Erfolg für dich, in deinen eigenen Worten?",
+"es": "¿Qué significa el éxito para ti, con tus propias palabras?",
+"fr": "Que signifie la réussite pour toi, avec tes propres mots ?",
+"it": "Cosa significa il successo per te, con parole tue?",
+"pt": "O que significa sucesso para ti, por palavras tuas?",
+"pt_BR": "O que sucesso significa pra você, com suas próprias palavras?"
+}
+},
+{
+"id": "goal_buddy-021",
+"lv": "any",
+"i18n": {
+"en": "Which habit has helped you the most in life so far?",
+"de": "Welche Gewohnheit hat dir bisher im Leben am meisten geholfen?",
+"es": "¿Qué hábito te ha ayudado más en la vida hasta ahora?",
+"fr": "Quelle habitude t'a le plus aidé dans la vie jusqu'ici ?",
+"it": "Quale abitudine ti ha aiutato di più nella vita finora?",
+"pt": "Que hábito te ajudou mais na vida até agora?",
+"pt_BR": "Qual hábito mais te ajudou na vida até agora?"
+}
+},
+{
+"id": "goal_buddy-022",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer working on goals alone or with friends?",
+"de": "Arbeitest du lieber allein an deinen Zielen oder mit Freunden?",
+"es": "¿Prefieres trabajar en tus metas solo o con amigos?",
+"fr": "Préfères-tu avancer vers tes objectifs seul ou avec des amis ?",
+"it": "Preferisci lavorare ai tuoi obiettivi da solo o con gli amici?",
+"pt": "Preferes trabalhar nos teus objetivos sozinho ou com amigos?",
+"pt_BR": "Você prefere trabalhar nas suas metas sozinho ou com amigos?"
+}
+},
+{
+"id": "goal_buddy-023",
+"lv": "any",
+"i18n": {
+"en": "What is something you learned recently that surprised you?",
+"de": "Was hast du kürzlich gelernt, das dich überrascht hat?",
+"es": "¿Qué has aprendido hace poco que te sorprendió?",
+"fr": "Qu'as-tu appris récemment qui t'a surpris ?",
+"it": "Cosa hai imparato di recente che ti ha sorpreso?",
+"pt": "O que aprendeste recentemente que te surpreendeu?",
+"pt_BR": "O que você aprendeu recentemente que te surpreendeu?"
+}
+},
+{
+"id": "goal_buddy-024",
+"lv": "any",
+"i18n": {
+"en": "If you could master any skill in a week, which would it be?",
+"de": "Wenn du in einer Woche jede Fähigkeit meistern könntest, welche wäre es?",
+"es": "Si pudieras dominar cualquier habilidad en una semana, ¿cuál sería?",
+"fr": "Si tu pouvais maîtriser n'importe quelle compétence en une semaine, laquelle ?",
+"it": "Se potessi padroneggiare qualsiasi abilità in una settimana, quale sarebbe?",
+"pt": "Se pudesses dominar qualquer competência numa semana, qual seria?",
+"pt_BR": "Se você pudesse dominar qualquer habilidade em uma semana, qual seria?"
+}
+},
+{
+"id": "goal_buddy-025",
+"lv": "any",
+"i18n": {
+"en": "What helps you stay focused when there are many distractions?",
+"de": "Was hilft dir, konzentriert zu bleiben, wenn es viele Ablenkungen gibt?",
+"es": "¿Qué te ayuda a concentrarte cuando hay muchas distracciones?",
+"fr": "Qu'est-ce qui t'aide à rester concentré quand il y a beaucoup de distractions ?",
+"it": "Cosa ti aiuta a restare concentrato quando ci sono tante distrazioni?",
+"pt": "O que te ajuda a manter o foco quando há muitas distrações?",
+"pt_BR": "O que te ajuda a manter o foco quando há muitas distrações?"
+}
+},
+{
+"id": "goal_buddy-026",
+"lv": "any",
+"i18n": {
+"en": "What is a tradition from your culture about new beginnings?",
+"de": "Welche Tradition aus deiner Kultur hat mit Neuanfängen zu tun?",
+"es": "¿Qué tradición de tu cultura tiene que ver con los nuevos comienzos?",
+"fr": "Quelle tradition de ta culture est liée aux nouveaux départs ?",
+"it": "Quale tradizione della tua cultura riguarda i nuovi inizi?",
+"pt": "Que tradição da tua cultura tem a ver com recomeços?",
+"pt_BR": "Que tradição da sua cultura tem a ver com recomeços?"
+}
+},
+{
+"id": "goal_buddy-027",
+"lv": "any",
+"i18n": {
+"en": "Which proverb or saying about effort do you like best?",
+"de": "Welches Sprichwort über Fleiß und Ausdauer gefällt dir am besten?",
+"es": "¿Qué refrán o dicho sobre el esfuerzo te gusta más?",
+"fr": "Quel proverbe sur l'effort préfères-tu ?",
+"it": "Quale proverbio o detto sull'impegno ti piace di più?",
+"pt": "Que provérbio ou ditado sobre esforço preferes?",
+"pt_BR": "Qual provérbio ou ditado sobre esforço você mais gosta?"
+}
+},
+{
+"id": "goal_buddy-028",
+"lv": "any",
+"i18n": {
+"en": "What would you like to be able to say about yourself one year from now?",
+"de": "Was möchtest du in einem Jahr über dich sagen können?",
+"es": "¿Qué te gustaría poder decir de ti dentro de un año?",
+"fr": "Qu'aimerais-tu pouvoir dire de toi dans un an ?",
+"it": "Cosa ti piacerebbe poter dire di te tra un anno?",
+"pt": "O que gostavas de poder dizer sobre ti daqui a um ano?",
+"pt_BR": "O que você gostaria de poder dizer de você mesmo daqui a um ano?"
+}
+},
+{
+"id": "goal_buddy-029",
+"lv": "any",
+"i18n": {
+"en": "How do you keep track of things you need to do?",
+"de": "Wie behältst du den Überblick über deine Aufgaben?",
+"es": "¿Cómo llevas la cuenta de las cosas que tienes que hacer?",
+"fr": "Comment gardes-tu une trace de ce que tu dois faire ?",
+"it": "Come tieni traccia delle cose che devi fare?",
+"pt": "Como acompanhas as coisas que tens de fazer?",
+"pt_BR": "Como você acompanha as coisas que precisa fazer?"
+}
+},
+{
+"id": "goal_buddy-030",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you do every day without fail?",
+"de": "Was machst du jeden Tag, ohne es je auszulassen?",
+"es": "¿Qué haces cada día sin falta?",
+"fr": "Quelle chose fais-tu chaque jour sans exception ?",
+"it": "Qual è una cosa che fai ogni giorno senza eccezioni?",
+"pt": "Que coisa fazes todos os dias sem falta?",
+"pt_BR": "O que você faz todo dia sem falta?"
+}
+},
+{
+"id": "goal_buddy-031",
+"lv": "any",
+"i18n": {
+"en": "What made you smile today?",
+"de": "Was hat dich heute zum Lächeln gebracht?",
+"es": "¿Qué te ha hecho sonreír hoy?",
+"fr": "Qu'est-ce qui t'a fait sourire aujourd'hui ?",
+"it": "Cosa ti ha fatto sorridere oggi?",
+"pt": "O que te fez sorrir hoje?",
+"pt_BR": "O que te fez sorrir hoje?"
+}
+},
+{
+"id": "goal_buddy-032",
+"lv": "any",
+"i18n": {
+"en": "Which part of your week do you look forward to most?",
+"de": "Auf welchen Teil deiner Woche freust du dich am meisten?",
+"es": "¿Qué parte de la semana esperas con más ganas?",
+"fr": "Quel moment de ta semaine attends-tu le plus ?",
+"it": "Quale parte della settimana aspetti di più?",
+"pt": "Que parte da semana esperas com mais vontade?",
+"pt_BR": "Qual parte da semana você mais espera?"
+}
+},
+{
+"id": "goal_buddy-033",
+"lv": "any",
+"i18n": {
+"en": "Do you like checklists, apps or notebooks for your plans?",
+"de": "Magst du für deine Pläne lieber Checklisten, Apps oder Notizbücher?",
+"es": "¿Prefieres listas, apps o cuadernos para tus planes?",
+"fr": "Pour tes projets, tu préfères les listes, les applis ou les carnets ?",
+"it": "Per i tuoi piani preferisci liste, app o quaderni?",
+"pt": "Para os teus planos preferes listas, apps ou cadernos?",
+"pt_BR": "Pros seus planos, você prefere listas, apps ou cadernos?"
+}
+},
+{
+"id": "goal_buddy-034",
+"lv": "any",
+"i18n": {
+"en": "What is a compliment about your effort that you still remember?",
+"de": "An welches Lob für deinen Einsatz erinnerst du dich noch?",
+"es": "¿Qué elogio a tu esfuerzo todavía recuerdas?",
+"fr": "De quel compliment sur tes efforts te souviens-tu encore ?",
+"it": "Quale complimento per il tuo impegno ricordi ancora?",
+"pt": "De que elogio ao teu esforço ainda te lembras?",
+"pt_BR": "De qual elogio ao seu esforço você ainda se lembra?"
+}
+},
+{
+"id": "goal_buddy-035",
+"lv": "any",
+"i18n": {
+"en": "Which goal would you set if you knew you could not fail?",
+"de": "Welches Ziel würdest du dir setzen, wenn du wüsstest, dass es klappt?",
+"es": "¿Qué meta te pondrías si supieras que no puedes fallar?",
+"fr": "Quel objectif te fixerais-tu si tu savais que tu ne pouvais pas échouer ?",
+"it": "Quale obiettivo ti porresti se sapessi di non poter fallire?",
+"pt": "Que objetivo definirias se soubesses que não podias falhar?",
+"pt_BR": "Que meta você definiria se soubesse que não poderia falhar?"
+}
+},
+{
+"id": "goal_buddy-036",
+"lv": "any",
+"i18n": {
+"en": "What is the best advice about goals you have ever received?",
+"de": "Was ist der beste Rat zum Thema Ziele, den du je bekommen hast?",
+"es": "¿Cuál es el mejor consejo sobre metas que te han dado?",
+"fr": "Quel est le meilleur conseil sur les objectifs qu'on t'ait donné ?",
+"it": "Qual è il miglior consiglio sugli obiettivi che tu abbia mai ricevuto?",
+"pt": "Qual foi o melhor conselho sobre objetivos que já recebeste?",
+"pt_BR": "Qual foi o melhor conselho sobre metas que você já recebeu?"
+}
+},
+{
+"id": "goal_buddy-037",
+"lv": "any",
+"i18n": {
+"en": "How do you like friends to cheer you on?",
+"de": "Wie sollen dich Freunde am liebsten anfeuern?",
+"es": "¿Cómo te gusta que tus amigos te animen?",
+"fr": "Comment aimes-tu que tes amis t'encouragent ?",
+"it": "Come ti piace che gli amici ti incoraggino?",
+"pt": "Como gostas que os teus amigos te apoiem?",
+"pt_BR": "Como você gosta que seus amigos te incentivem?"
+}
+},
+{
+"id": "goal_buddy-038",
+"lv": "any",
+"i18n": {
+"en": "What is something you are looking forward to this month?",
+"de": "Worauf freust du dich in diesem Monat?",
+"es": "¿Qué cosa esperas con ilusión este mes?",
+"fr": "Qu'attends-tu avec impatience ce mois-ci ?",
+"it": "Cosa aspetti con piacere questo mese?",
+"pt": "Que coisa esperas com entusiasmo este mês?",
+"pt_BR": "O que você está esperando com animação este mês?"
+}
+},
+{
+"id": "goal_buddy-039",
+"lv": "any",
+"i18n": {
+"en": "Which personal quality helps you most when you work toward something?",
+"de": "Welche deiner Eigenschaften hilft dir am meisten, wenn du etwas anstrebst?",
+"es": "¿Qué cualidad tuya te ayuda más cuando persigues algo?",
+"fr": "Quelle qualité t'aide le plus quand tu vises quelque chose ?",
+"it": "Quale tua qualità ti aiuta di più quando persegui qualcosa?",
+"pt": "Que qualidade tua mais te ajuda quando lutas por algo?",
+"pt_BR": "Qual qualidade sua mais te ajuda quando você corre atrás de algo?"
+}
+},
+{
+"id": "goal_buddy-040",
+"lv": "any",
+"i18n": {
+"en": "What is a fun goal you would set just for the joy of it?",
+"de": "Welches Ziel würdest du dir nur zum Spaß setzen?",
+"es": "¿Qué meta divertida te pondrías solo por el placer de hacerlo?",
+"fr": "Quel objectif amusant te fixerais-tu juste pour le plaisir ?",
+"it": "Quale obiettivo divertente ti porresti solo per il gusto di farlo?",
+"pt": "Que objetivo divertido definirias só pelo prazer?",
+"pt_BR": "Que meta divertida você criaria só pelo prazer?"
+}
+},
+{
+"id": "goal_buddy-041",
+"lv": "beginner",
+"i18n": {
+"en": "What is the very first small step you could take toward your goal today?",
+"de": "Was ist der allererste kleine Schritt, den du heute für dein Ziel tun könntest?",
+"es": "¿Cuál es el primer pasito que podrías dar hoy hacia tu meta?",
+"fr": "Quel est le tout premier petit pas que tu pourrais faire aujourd'hui vers ton objectif ?",
+"it": "Qual è il primissimo piccolo passo che potresti fare oggi verso il tuo obiettivo?",
+"pt": "Qual é o primeiro pequeno passo que podias dar hoje rumo ao teu objetivo?",
+"pt_BR": "Qual é o primeiro passinho que você poderia dar hoje rumo à sua meta?"
+}
+},
+{
+"id": "goal_buddy-042",
+"lv": "beginner",
+"i18n": {
+"en": "Why does your current goal matter to you?",
+"de": "Warum ist dir dein aktuelles Ziel wichtig?",
+"es": "¿Por qué es importante para ti tu meta actual?",
+"fr": "Pourquoi ton objectif actuel compte-t-il pour toi ?",
+"it": "Perché il tuo obiettivo attuale è importante per te?",
+"pt": "Porque é que o teu objetivo atual é importante para ti?",
+"pt_BR": "Por que a sua meta atual é importante pra você?"
+}
+},
+{
+"id": "goal_buddy-043",
+"lv": "beginner",
+"i18n": {
+"en": "How will you know that you have reached your goal?",
+"de": "Woran wirst du merken, dass du dein Ziel erreicht hast?",
+"es": "¿Cómo sabrás que has alcanzado tu meta?",
+"fr": "Comment sauras-tu que tu as atteint ton objectif ?",
+"it": "Come capirai di aver raggiunto il tuo obiettivo?",
+"pt": "Como vais saber que alcançaste o teu objetivo?",
+"pt_BR": "Como você vai saber que alcançou a sua meta?"
+}
+},
+{
+"id": "goal_buddy-044",
+"lv": "beginner",
+"i18n": {
+"en": "Which area of your life would you most like to grow in right now?",
+"de": "In welchem Lebensbereich möchtest du gerade am meisten wachsen?",
+"es": "¿En qué área de tu vida te gustaría crecer más ahora mismo?",
+"fr": "Dans quel domaine de ta vie aimerais-tu le plus progresser en ce moment ?",
+"it": "In quale area della tua vita vorresti crescere di più adesso?",
+"pt": "Em que área da tua vida gostavas mais de crescer neste momento?",
+"pt_BR": "Em qual área da sua vida você mais gostaria de crescer agora?"
+}
+},
+{
+"id": "goal_buddy-045",
+"lv": "beginner",
+"i18n": {
+"en": "Who could you tell about your goal to feel more committed?",
+"de": "Wem könntest du von deinem Ziel erzählen, um dich stärker zu verpflichten?",
+"es": "¿A quién podrías contarle tu meta para sentirte más comprometido?",
+"fr": "À qui pourrais-tu parler de ton objectif pour te sentir plus engagé ?",
+"it": "A chi potresti raccontare il tuo obiettivo per sentirti più impegnato?",
+"pt": "A quem podias contar o teu objetivo para te sentires mais comprometido?",
+"pt_BR": "Pra quem você poderia contar sua meta e se sentir mais comprometido?"
+}
+},
+{
+"id": "goal_buddy-046",
+"lv": "beginner",
+"i18n": {
+"en": "What would make your goal more specific and clear?",
+"de": "Was würde dein Ziel konkreter und klarer machen?",
+"es": "¿Qué haría tu meta más concreta y clara?",
+"fr": "Qu'est-ce qui rendrait ton objectif plus précis et plus clair ?",
+"it": "Cosa renderebbe il tuo obiettivo più concreto e chiaro?",
+"pt": "O que tornaria o teu objetivo mais concreto e claro?",
+"pt_BR": "O que deixaria a sua meta mais concreta e clara?"
+}
+},
+{
+"id": "goal_buddy-047",
+"lv": "beginner",
+"i18n": {
+"en": "When during your day could you find ten minutes for your goal?",
+"de": "Wann am Tag könntest du zehn Minuten für dein Ziel finden?",
+"es": "¿En qué momento del día podrías encontrar diez minutos para tu meta?",
+"fr": "À quel moment de ta journée pourrais-tu trouver dix minutes pour ton objectif ?",
+"it": "In quale momento della giornata potresti trovare dieci minuti per il tuo obiettivo?",
+"pt": "Em que altura do dia podias arranjar dez minutos para o teu objetivo?",
+"pt_BR": "Em que momento do dia você poderia achar dez minutos para a sua meta?"
+}
+},
+{
+"id": "goal_buddy-048",
+"lv": "beginner",
+"i18n": {
+"en": "What might get in the way of your goal this week?",
+"de": "Was könnte dir diese Woche bei deinem Ziel in die Quere kommen?",
+"es": "¿Qué podría interponerse en tu meta esta semana?",
+"fr": "Qu'est-ce qui pourrait gêner ton objectif cette semaine ?",
+"it": "Cosa potrebbe ostacolare il tuo obiettivo questa settimana?",
+"pt": "O que pode atrapalhar o teu objetivo esta semana?",
+"pt_BR": "O que pode atrapalhar a sua meta nesta semana?"
+}
+},
+{
+"id": "goal_buddy-049",
+"lv": "beginner",
+"i18n": {
+"en": "What skills or tools do you already have that can help you?",
+"de": "Welche Fähigkeiten oder Hilfsmittel hast du schon, die dir helfen können?",
+"es": "¿Qué habilidades o herramientas tienes ya que te pueden ayudar?",
+"fr": "Quelles compétences ou quels outils as-tu déjà qui peuvent t'aider ?",
+"it": "Quali abilità o strumenti hai già che possono aiutarti?",
+"pt": "Que competências ou ferramentas já tens que te podem ajudar?",
+"pt_BR": "Que habilidades ou ferramentas você já tem que podem te ajudar?"
+}
+},
+{
+"id": "goal_buddy-050",
+"lv": "beginner",
+"i18n": {
+"en": "How would you feel on the day you reach your goal?",
+"de": "Wie würdest du dich an dem Tag fühlen, an dem du dein Ziel erreichst?",
+"es": "¿Cómo te sentirías el día que alcances tu meta?",
+"fr": "Comment te sentirais-tu le jour où tu atteindras ton objectif ?",
+"it": "Come ti sentiresti il giorno in cui raggiungerai il tuo obiettivo?",
+"pt": "Como te sentirias no dia em que alcançasses o teu objetivo?",
+"pt_BR": "Como você se sentiria no dia em que alcançasse a sua meta?"
+}
+},
+{
+"id": "goal_buddy-051",
+"lv": "beginner",
+"i18n": {
+"en": "What is a tiny version of your goal you could do even on a busy day?",
+"de": "Welche Mini-Version deines Ziels schaffst du auch an einem vollen Tag?",
+"es": "¿Qué versión mínima de tu meta podrías hacer incluso en un día ajetreado?",
+"fr": "Quelle mini-version de ton objectif pourrais-tu faire même un jour chargé ?",
+"it": "Quale mini versione del tuo obiettivo potresti fare anche in una giornata piena?",
+"pt": "Que versão mínima do teu objetivo conseguias fazer mesmo num dia cheio?",
+"pt_BR": "Que versão mínima da sua meta você conseguiria fazer mesmo num dia corrido?"
+}
+},
+{
+"id": "goal_buddy-052",
+"lv": "beginner",
+"i18n": {
+"en": "Where could you put a reminder of your goal so you see it daily?",
+"de": "Wo könntest du eine Erinnerung an dein Ziel hinlegen, damit du sie täglich siehst?",
+"es": "¿Dónde podrías poner un recordatorio de tu meta para verlo a diario?",
+"fr": "Où pourrais-tu placer un rappel de ton objectif pour le voir chaque jour ?",
+"it": "Dove potresti mettere un promemoria del tuo obiettivo per vederlo ogni giorno?",
+"pt": "Onde podias pôr um lembrete do teu objetivo para o veres todos os dias?",
+"pt_BR": "Onde você poderia colocar um lembrete da sua meta pra ver todo dia?"
+}
+},
+{
+"id": "goal_buddy-053",
+"lv": "beginner",
+"i18n": {
+"en": "How could you break your goal into three smaller milestones?",
+"de": "Wie könntest du dein Ziel in drei kleinere Etappen aufteilen?",
+"es": "¿Cómo podrías dividir tu meta en tres etapas más pequeñas?",
+"fr": "Comment pourrais-tu découper ton objectif en trois étapes plus petites ?",
+"it": "Come potresti dividere il tuo obiettivo in tre tappe più piccole?",
+"pt": "Como podias dividir o teu objetivo em três etapas mais pequenas?",
+"pt_BR": "Como você poderia dividir sua meta em três etapas menores?"
+}
+},
+{
+"id": "goal_buddy-054",
+"lv": "beginner",
+"i18n": {
+"en": "What is a reward you would enjoy after your first week of steps?",
+"de": "Welche Belohnung würde dir nach deiner ersten Woche voller Schritte gefallen?",
+"es": "¿Qué premio disfrutarías después de tu primera semana de pasos?",
+"fr": "Quelle récompense aimerais-tu après ta première semaine de petits pas ?",
+"it": "Quale premio ti godresti dopo la tua prima settimana di passi?",
+"pt": "Que recompensa gostavas de ter depois da tua primeira semana de passos?",
+"pt_BR": "Que recompensa você curtiria depois da sua primeira semana de passos?"
+}
+},
+{
+"id": "goal_buddy-055",
+"lv": "beginner",
+"i18n": {
+"en": "Which daily routine could you attach a goal step to?",
+"de": "An welche tägliche Routine könntest du einen Schritt für dein Ziel koppeln?",
+"es": "¿A qué rutina diaria podrías unir un paso hacia tu meta?",
+"fr": "À quelle routine quotidienne pourrais-tu associer un pas vers ton objectif ?",
+"it": "A quale routine quotidiana potresti collegare un passo verso il tuo obiettivo?",
+"pt": "A que rotina diária podias associar um passo do teu objetivo?",
+"pt_BR": "A qual rotina diária você poderia associar um passo da sua meta?"
+}
+},
+{
+"id": "goal_buddy-056",
+"lv": "beginner",
+"i18n": {
+"en": "How do you plan to track your progress?",
+"de": "Wie willst du deinen Fortschritt festhalten?",
+"es": "¿Cómo piensas seguir tu progreso?",
+"fr": "Comment comptes-tu suivre tes progrès ?",
+"it": "Come pensi di tenere traccia dei tuoi progressi?",
+"pt": "Como pensas acompanhar o teu progresso?",
+"pt_BR": "Como você pretende acompanhar seu progresso?"
+}
+},
+{
+"id": "goal_buddy-057",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever kept a streak going? What was it?",
+"de": "Hast du schon mal eine Serie durchgehalten? Was war es?",
+"es": "¿Alguna vez has mantenido una racha? ¿De qué era?",
+"fr": "As-tu déjà tenu une série de jours d'affilée ? Pour quoi ?",
+"it": "Hai mai mantenuto una serie di giorni di fila? Di cosa?",
+"pt": "Já mantiveste alguma sequência de dias seguidos? De quê?",
+"pt_BR": "Você já manteve uma sequência de dias seguidos? De quê?"
+}
+},
+{
+"id": "goal_buddy-058",
+"lv": "beginner",
+"i18n": {
+"en": "What would you like me to ask you at our daily check-ins?",
+"de": "Was soll ich dich bei unseren täglichen Check-ins fragen?",
+"es": "¿Qué te gustaría que te preguntara en nuestros repasos diarios?",
+"fr": "Qu'aimerais-tu que je te demande lors de nos points quotidiens ?",
+"it": "Cosa vorresti che ti chiedessi nei nostri check-in quotidiani?",
+"pt": "O que gostavas que eu te perguntasse nos nossos pontos de situação diários?",
+"pt_BR": "O que você gostaria que eu te perguntasse nos nossos check-ins diários?"
+}
+},
+{
+"id": "goal_buddy-059",
+"lv": "beginner",
+"i18n": {
+"en": "What is one thing you could say no to so you have more time for your goal?",
+"de": "Wozu könntest du Nein sagen, um mehr Zeit für dein Ziel zu haben?",
+"es": "¿A qué podrías decir que no para tener más tiempo para tu meta?",
+"fr": "À quoi pourrais-tu dire non pour avoir plus de temps pour ton objectif ?",
+"it": "A cosa potresti dire di no per avere più tempo per il tuo obiettivo?",
+"pt": "A que podias dizer que não para teres mais tempo para o teu objetivo?",
+"pt_BR": "Pra que você poderia dizer não e ter mais tempo para a sua meta?"
+}
+},
+{
+"id": "goal_buddy-060",
+"lv": "beginner",
+"i18n": {
+"en": "What did you do today, even something small, for your goal?",
+"de": "Was hast du heute für dein Ziel getan, auch wenn es nur etwas Kleines war?",
+"es": "¿Qué hiciste hoy por tu meta, aunque fuera algo pequeño?",
+"fr": "Qu'as-tu fait aujourd'hui pour ton objectif, même une petite chose ?",
+"it": "Cosa hai fatto oggi per il tuo obiettivo, anche una piccola cosa?",
+"pt": "O que fizeste hoje pelo teu objetivo, nem que seja algo pequeno?",
+"pt_BR": "O que você fez hoje pela sua meta, mesmo que algo pequeno?"
+}
+},
+{
+"id": "goal_buddy-061",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually get back on track after missing a day?",
+"de": "Wie kommst du normalerweise wieder in die Spur, wenn du einen Tag verpasst hast?",
+"es": "¿Cómo sueles retomar el ritmo después de saltarte un día?",
+"fr": "Comment reprends-tu le rythme d'habitude après avoir sauté un jour ?",
+"it": "Come riprendi di solito il ritmo dopo aver saltato un giorno?",
+"pt": "Como costumas retomar o ritmo depois de falhares um dia?",
+"pt_BR": "Como você costuma retomar o ritmo depois de pular um dia?"
+}
+},
+{
+"id": "goal_buddy-062",
+"lv": "beginner",
+"i18n": {
+"en": "Which little sign of progress have you noticed so far?",
+"de": "Welches kleine Zeichen von Fortschritt hast du schon bemerkt?",
+"es": "¿Qué pequeña señal de progreso has notado hasta ahora?",
+"fr": "Quel petit signe de progrès as-tu remarqué jusqu'ici ?",
+"it": "Quale piccolo segno di progresso hai notato finora?",
+"pt": "Que pequeno sinal de progresso já notaste?",
+"pt_BR": "Que pequeno sinal de progresso você já notou?"
+}
+},
+{
+"id": "goal_buddy-063",
+"lv": "beginner",
+"i18n": {
+"en": "What could make working on your goal more fun?",
+"de": "Was könnte die Arbeit an deinem Ziel lustiger machen?",
+"es": "¿Qué podría hacer más divertido trabajar en tu meta?",
+"fr": "Qu'est-ce qui pourrait rendre le travail sur ton objectif plus amusant ?",
+"it": "Cosa potrebbe rendere più divertente lavorare al tuo obiettivo?",
+"pt": "O que podia tornar mais divertido trabalhar no teu objetivo?",
+"pt_BR": "O que poderia deixar mais divertido trabalhar na sua meta?"
+}
+},
+{
+"id": "goal_buddy-064",
+"lv": "beginner",
+"i18n": {
+"en": "What could you prepare tonight to make tomorrow's step easier?",
+"de": "Was könntest du heute Abend vorbereiten, damit der Schritt morgen leichter fällt?",
+"es": "¿Qué podrías preparar esta noche para que el paso de mañana sea más fácil?",
+"fr": "Que pourrais-tu préparer ce soir pour faciliter l'étape de demain ?",
+"it": "Cosa potresti preparare stasera per rendere più facile il passo di domani?",
+"pt": "O que podias preparar esta noite para facilitar o passo de amanhã?",
+"pt_BR": "O que você poderia preparar hoje à noite pra facilitar o passo de amanhã?"
+}
+},
+{
+"id": "goal_buddy-065",
+"lv": "beginner",
+"i18n": {
+"en": "What is your goal statement in one positive sentence?",
+"de": "Wie lautet dein Ziel in einem positiven Satz?",
+"es": "¿Cuál es tu meta expresada en una frase positiva?",
+"fr": "Comment formulerais-tu ton objectif en une phrase positive ?",
+"it": "Come formuleresti il tuo obiettivo in una frase positiva?",
+"pt": "Como formularias o teu objetivo numa frase positiva?",
+"pt_BR": "Como você escreveria sua meta em uma frase positiva?"
+}
+},
+{
+"id": "goal_buddy-066",
+"lv": "intermediate",
+"i18n": {
+"en": "At which hours of the day is your energy highest?",
+"de": "Zu welchen Tageszeiten hast du die meiste Energie?",
+"es": "¿En qué horas del día tienes más energía?",
+"fr": "À quelles heures de la journée as-tu le plus d'énergie ?",
+"it": "In quali ore della giornata hai più energia?",
+"pt": "Em que horas do dia tens mais energia?",
+"pt_BR": "Em que horas do dia você tem mais energia?"
+}
+},
+{
+"id": "goal_buddy-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your best trick for beating procrastination?",
+"de": "Was ist dein bester Trick gegen das Aufschieben?",
+"es": "¿Cuál es tu mejor truco para vencer la procrastinación?",
+"fr": "Quelle est ta meilleure astuce contre la procrastination ?",
+"it": "Qual è il tuo miglior trucco per battere la procrastinazione?",
+"pt": "Qual é o teu melhor truque para vencer a procrastinação?",
+"pt_BR": "Qual é o seu melhor truque pra vencer a procrastinação?"
+}
+},
+{
+"id": "goal_buddy-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Can you share an if-then plan that would help you this week?",
+"de": "Welcher Wenn-dann-Plan würde dir diese Woche helfen?",
+"es": "¿Qué plan de tipo «si pasa esto, haré aquello» te ayudaría esta semana?",
+"fr": "Quel plan du type « si…, alors… » t'aiderait cette semaine ?",
+"it": "Quale piano del tipo «se succede questo, allora faccio quello» ti aiuterebbe questa settimana?",
+"pt": "Que plano do tipo «se acontecer isto, então faço aquilo» te ajudaria esta semana?",
+"pt_BR": "Que plano do tipo «se acontecer isso, então eu faço aquilo» te ajudaria nesta semana?"
+}
+},
+{
+"id": "goal_buddy-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep your goals going when you travel?",
+"de": "Wie bleibst du auf Reisen an deinen Zielen dran?",
+"es": "¿Cómo mantienes tus metas cuando viajas?",
+"fr": "Comment gardes-tu le cap sur tes objectifs quand tu voyages ?",
+"it": "Come porti avanti i tuoi obiettivi quando viaggi?",
+"pt": "Como manténs os teus objetivos quando viajas?",
+"pt_BR": "Como você mantém suas metas quando viaja?"
+}
+},
+{
+"id": "goal_buddy-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which task do you usually avoid, and how could you make it easier?",
+"de": "Welche Aufgabe vermeidest du meistens, und wie könntest du sie leichter machen?",
+"es": "¿Qué tarea sueles evitar y cómo podrías hacerla más fácil?",
+"fr": "Quelle tâche évites-tu souvent, et comment pourrais-tu la rendre plus facile ?",
+"it": "Quale compito eviti di solito e come potresti renderlo più facile?",
+"pt": "Que tarefa costumas evitar e como a podias tornar mais fácil?",
+"pt_BR": "Qual tarefa você costuma evitar e como poderia deixá-la mais fácil?"
+}
+},
+{
+"id": "goal_buddy-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How does your ideal week balance goals, rest and fun?",
+"de": "Wie verteilt deine ideale Woche Ziele, Erholung und Spaß?",
+"es": "¿Cómo equilibra tu semana ideal metas, descanso y diversión?",
+"fr": "Comment ta semaine idéale équilibre-t-elle objectifs, repos et plaisir ?",
+"it": "Come bilancia la tua settimana ideale obiettivi, riposo e divertimento?",
+"pt": "Como é que a tua semana ideal equilibra objetivos, descanso e diversão?",
+"pt_BR": "Como a sua semana ideal equilibra metas, descanso e diversão?"
+}
+},
+{
+"id": "goal_buddy-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What did a recent setback teach you about your goal?",
+"de": "Was hat dir ein kürzlicher Rückschlag über dein Ziel beigebracht?",
+"es": "¿Qué te enseñó un tropiezo reciente sobre tu meta?",
+"fr": "Qu'est-ce qu'un récent contretemps t'a appris sur ton objectif ?",
+"it": "Cosa ti ha insegnato un recente intoppo sul tuo obiettivo?",
+"pt": "O que te ensinou um contratempo recente sobre o teu objetivo?",
+"pt_BR": "O que um tropeço recente te ensinou sobre a sua meta?"
+}
+},
+{
+"id": "goal_buddy-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which distraction steals the most time from your goals?",
+"de": "Welche Ablenkung stiehlt deinen Zielen die meiste Zeit?",
+"es": "¿Qué distracción le roba más tiempo a tus metas?",
+"fr": "Quelle distraction vole le plus de temps à tes objectifs ?",
+"it": "Quale distrazione ruba più tempo ai tuoi obiettivi?",
+"pt": "Que distração rouba mais tempo aos teus objetivos?",
+"pt_BR": "Qual distração mais rouba tempo das suas metas?"
+}
+},
+{
+"id": "goal_buddy-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a thirty-day challenge you would enjoy trying?",
+"de": "Welche 30-Tage-Challenge würdest du gern ausprobieren?",
+"es": "¿Qué reto de treinta días te gustaría probar?",
+"fr": "Quel défi de trente jours aimerais-tu tenter ?",
+"it": "Quale sfida di trenta giorni ti piacerebbe provare?",
+"pt": "Que desafio de trinta dias gostavas de experimentar?",
+"pt_BR": "Que desafio de trinta dias você gostaria de experimentar?"
+}
+},
+{
+"id": "goal_buddy-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide which goal comes first when you have several?",
+"de": "Wie entscheidest du, welches Ziel Vorrang hat, wenn du mehrere hast?",
+"es": "¿Cómo decides qué meta va primero cuando tienes varias?",
+"fr": "Comment décides-tu quel objectif passe en premier quand tu en as plusieurs ?",
+"it": "Come decidi quale obiettivo viene prima quando ne hai diversi?",
+"pt": "Como decides que objetivo vem primeiro quando tens vários?",
+"pt_BR": "Como você decide qual meta vem primeiro quando tem várias?"
+}
+},
+{
+"id": "goal_buddy-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which learning goal would make your daily life more interesting?",
+"de": "Welches Lernziel würde deinen Alltag spannender machen?",
+"es": "¿Qué meta de aprendizaje haría tu día a día más interesante?",
+"fr": "Quel objectif d'apprentissage rendrait ton quotidien plus intéressant ?",
+"it": "Quale obiettivo di apprendimento renderebbe la tua vita quotidiana più interessante?",
+"pt": "Que objetivo de aprendizagem tornaria o teu dia a dia mais interessante?",
+"pt_BR": "Que meta de aprendizado deixaria o seu dia a dia mais interessante?"
+}
+},
+{
+"id": "goal_buddy-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How could you change your space to support your goal?",
+"de": "Wie könntest du deine Umgebung so verändern, dass sie dein Ziel unterstützt?",
+"es": "¿Cómo podrías cambiar tu espacio para que apoye tu meta?",
+"fr": "Comment pourrais-tu aménager ton espace pour soutenir ton objectif ?",
+"it": "Come potresti cambiare il tuo spazio perché sostenga il tuo obiettivo?",
+"pt": "Como podias mudar o teu espaço para apoiar o teu objetivo?",
+"pt_BR": "Como você poderia mudar seu espaço pra apoiar a sua meta?"
+}
+},
+{
+"id": "goal_buddy-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which friend would make a great goal partner, and why?",
+"de": "Welche Freundin oder welcher Freund wäre ein toller Ziele-Partner, und warum?",
+"es": "¿Qué amigo o amiga sería un gran compañero de metas y por qué?",
+"fr": "Quel ami ou quelle amie ferait un super partenaire d'objectifs, et pourquoi ?",
+"it": "Quale amico o amica sarebbe un ottimo compagno di obiettivi, e perché?",
+"pt": "Que amigo ou amiga seria um ótimo parceiro de objetivos, e porquê?",
+"pt_BR": "Qual amigo ou amiga seria um ótimo parceiro de metas, e por quê?"
+}
+},
+{
+"id": "goal_buddy-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you protect your goal time when life gets busy?",
+"de": "Wie schützt du deine Zeit für Ziele, wenn das Leben hektisch wird?",
+"es": "¿Cómo proteges el tiempo para tus metas cuando la vida se complica?",
+"fr": "Comment protèges-tu ton temps pour tes objectifs quand la vie s'accélère ?",
+"it": "Come proteggi il tempo per i tuoi obiettivi quando la vita si fa frenetica?",
+"pt": "Como proteges o tempo para os teus objetivos quando a vida fica agitada?",
+"pt_BR": "Como você protege o tempo das suas metas quando a vida fica corrida?"
+}
+},
+{
+"id": "goal_buddy-080",
+"lv": "intermediate",
+"i18n": {
+"en": "What is one habit you would like to stack onto your morning?",
+"de": "Welche Gewohnheit würdest du gern an deine Morgenroutine anhängen?",
+"es": "¿Qué hábito te gustaría sumar a tu rutina de la mañana?",
+"fr": "Quelle habitude aimerais-tu ajouter à ta routine du matin ?",
+"it": "Quale abitudine vorresti aggiungere alla tua routine del mattino?",
+"pt": "Que hábito gostavas de juntar à tua rotina da manhã?",
+"pt_BR": "Que hábito você gostaria de acrescentar à sua rotina da manhã?"
+}
+},
+{
+"id": "goal_buddy-081",
+"lv": "intermediate",
+"i18n": {
+"en": "When did adjusting a plan help you more than pushing harder?",
+"de": "Wann hat dir das Anpassen eines Plans mehr gebracht als noch mehr Druck?",
+"es": "¿Cuándo te ayudó más ajustar un plan que esforzarte más?",
+"fr": "Quand ajuster un plan t'a-t-il davantage aidé que forcer encore plus ?",
+"it": "Quando adattare un piano ti ha aiutato più che spingere di più?",
+"pt": "Quando é que ajustar um plano te ajudou mais do que esforçares-te mais?",
+"pt_BR": "Quando ajustar um plano te ajudou mais do que se esforçar ainda mais?"
+}
+},
+{
+"id": "goal_buddy-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which goal from another part of your life deserves more attention?",
+"de": "Welches Ziel aus einem anderen Lebensbereich verdient mehr Aufmerksamkeit?",
+"es": "¿Qué meta de otra área de tu vida merece más atención?",
+"fr": "Quel objectif d'un autre domaine de ta vie mérite plus d'attention ?",
+"it": "Quale obiettivo di un'altra area della tua vita merita più attenzione?",
+"pt": "Que objetivo de outra área da tua vida merece mais atenção?",
+"pt_BR": "Qual meta de outra área da sua vida merece mais atenção?"
+}
+},
+{
+"id": "goal_buddy-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you like to plan your week: on Sunday, Monday or another day?",
+"de": "Wann planst du deine Woche am liebsten: sonntags, montags oder an einem anderen Tag?",
+"es": "¿Cuándo te gusta planificar tu semana: el domingo, el lunes u otro día?",
+"fr": "Quand aimes-tu planifier ta semaine : le dimanche, le lundi ou un autre jour ?",
+"it": "Quando ti piace pianificare la settimana: domenica, lunedì o un altro giorno?",
+"pt": "Quando gostas de planear a tua semana: ao domingo, à segunda ou noutro dia?",
+"pt_BR": "Quando você gosta de planejar sua semana: no domingo, na segunda ou em outro dia?"
+}
+},
+{
+"id": "goal_buddy-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which goal tool or app has worked best for you so far?",
+"de": "Welches Hilfsmittel oder welche App für Ziele hat bei dir bisher am besten funktioniert?",
+"es": "¿Qué herramienta o app para metas te ha funcionado mejor hasta ahora?",
+"fr": "Quel outil ou quelle appli pour tes objectifs a le mieux marché jusqu'ici ?",
+"it": "Quale strumento o app per gli obiettivi ha funzionato meglio per te finora?",
+"pt": "Que ferramenta ou app para objetivos resultou melhor contigo até agora?",
+"pt_BR": "Qual ferramenta ou app de metas funcionou melhor pra você até agora?"
+}
+},
+{
+"id": "goal_buddy-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What problem did you solve recently that you are proud of?",
+"de": "Welches Problem hast du kürzlich gelöst, auf das du stolz bist?",
+"es": "¿Qué problema resolviste hace poco del que te sientes orgulloso?",
+"fr": "Quel problème as-tu résolu récemment dont tu es fier ?",
+"it": "Quale problema hai risolto di recente di cui sei orgoglioso?",
+"pt": "Que problema resolveste recentemente de que te orgulhas?",
+"pt_BR": "Que problema você resolveu recentemente e do qual se orgulha?"
+}
+},
+{
+"id": "goal_buddy-086",
+"lv": "advanced",
+"i18n": {
+"en": "Where would you like to be in three years, in a few words?",
+"de": "Wo möchtest du in drei Jahren stehen, in wenigen Worten?",
+"es": "¿Dónde te gustaría estar dentro de tres años, en pocas palabras?",
+"fr": "Où aimerais-tu être dans trois ans, en quelques mots ?",
+"it": "Dove ti piacerebbe essere tra tre anni, in poche parole?",
+"pt": "Onde gostavas de estar daqui a três anos, em poucas palavras?",
+"pt_BR": "Onde você gostaria de estar daqui a três anos, em poucas palavras?"
+}
+},
+{
+"id": "goal_buddy-087",
+"lv": "advanced",
+"i18n": {
+"en": "Which three goals would make the coming year a great one?",
+"de": "Welche drei Ziele würden das kommende Jahr großartig machen?",
+"es": "¿Qué tres metas harían del próximo año un gran año?",
+"fr": "Quels trois objectifs feraient de l'année à venir une belle année ?",
+"it": "Quali tre obiettivi renderebbero fantastico il prossimo anno?",
+"pt": "Que três objetivos fariam do próximo ano um grande ano?",
+"pt_BR": "Quais três metas fariam do próximo ano um ótimo ano?"
+}
+},
+{
+"id": "goal_buddy-088",
+"lv": "advanced",
+"i18n": {
+"en": "What would your goal look like if it were ten times bigger?",
+"de": "Wie sähe dein Ziel aus, wenn es zehnmal größer wäre?",
+"es": "¿Cómo sería tu meta si fuera diez veces más grande?",
+"fr": "À quoi ressemblerait ton objectif s'il était dix fois plus grand ?",
+"it": "Come sarebbe il tuo obiettivo se fosse dieci volte più grande?",
+"pt": "Como seria o teu objetivo se fosse dez vezes maior?",
+"pt_BR": "Como seria a sua meta se ela fosse dez vezes maior?"
+}
+},
+{
+"id": "goal_buddy-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which of your values guides your goals most strongly?",
+"de": "Welcher deiner Werte lenkt deine Ziele am stärksten?",
+"es": "¿Cuál de tus valores guía tus metas con más fuerza?",
+"fr": "Laquelle de tes valeurs guide le plus tes objectifs ?",
+"it": "Quale dei tuoi valori guida di più i tuoi obiettivi?",
+"pt": "Qual dos teus valores mais orienta os teus objetivos?",
+"pt_BR": "Qual dos seus valores mais orienta as suas metas?"
+}
+},
+{
+"id": "goal_buddy-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you measure the actions that lead to results, not just the results?",
+"de": "Wie misst du die Handlungen, die zu Ergebnissen führen, nicht nur die Ergebnisse?",
+"es": "¿Cómo mides las acciones que llevan a resultados, no solo los resultados?",
+"fr": "Comment mesures-tu les actions qui mènent aux résultats, et pas seulement les résultats ?",
+"it": "Come misuri le azioni che portano ai risultati, e non solo i risultati?",
+"pt": "Como medes as ações que levam aos resultados, e não só os resultados?",
+"pt_BR": "Como você mede as ações que levam aos resultados, e não só os resultados?"
+}
+},
+{
+"id": "goal_buddy-091",
+"lv": "advanced",
+"i18n": {
+"en": "What big project would you love to finish one day?",
+"de": "Welches große Projekt würdest du gern eines Tages abschließen?",
+"es": "¿Qué gran proyecto te encantaría terminar algún día?",
+"fr": "Quel grand projet aimerais-tu terminer un jour ?",
+"it": "Quale grande progetto ti piacerebbe portare a termine un giorno?",
+"pt": "Que grande projeto gostavas de terminar um dia?",
+"pt_BR": "Qual grande projeto você adoraria terminar um dia?"
+}
+},
+{
+"id": "goal_buddy-092",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep motivation alive over many months?",
+"de": "Wie hältst du deine Motivation über viele Monate lebendig?",
+"es": "¿Cómo mantienes viva la motivación durante muchos meses?",
+"fr": "Comment entretiens-tu ta motivation sur de longs mois ?",
+"it": "Come mantieni viva la motivazione per molti mesi?",
+"pt": "Como manténs a motivação viva durante muitos meses?",
+"pt_BR": "Como você mantém a motivação viva por muitos meses?"
+}
+},
+{
+"id": "goal_buddy-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which goal did you let go of, and what did that free up?",
+"de": "Welches Ziel hast du losgelassen, und was wurde dadurch frei?",
+"es": "¿Qué meta dejaste ir y qué te permitió eso?",
+"fr": "Quel objectif as-tu laissé de côté, et qu'est-ce que cela t'a libéré ?",
+"it": "Quale obiettivo hai lasciato andare e cosa ti ha liberato?",
+"pt": "Que objetivo deixaste para trás e o que é que isso libertou?",
+"pt_BR": "Qual meta você deixou de lado e o que isso liberou pra você?"
+}
+},
+{
+"id": "goal_buddy-094",
+"lv": "advanced",
+"i18n": {
+"en": "How would you help a friend set their very first goal?",
+"de": "Wie würdest du einem Freund helfen, sein allererstes Ziel zu setzen?",
+"es": "¿Cómo ayudarías a un amigo a ponerse su primera meta?",
+"fr": "Comment aiderais-tu un ami à se fixer son tout premier objectif ?",
+"it": "Come aiuteresti un amico a porsi il suo primissimo obiettivo?",
+"pt": "Como ajudarias um amigo a definir o seu primeiro objetivo?",
+"pt_BR": "Como você ajudaria um amigo a definir a primeira meta dele?"
+}
+},
+{
+"id": "goal_buddy-095",
+"lv": "advanced",
+"i18n": {
+"en": "What does your personal planning ritual look like?",
+"de": "Wie sieht dein persönliches Planungsritual aus?",
+"es": "¿Cómo es tu ritual personal de planificación?",
+"fr": "À quoi ressemble ton rituel de planification personnel ?",
+"it": "Com'è il tuo rituale personale di pianificazione?",
+"pt": "Como é o teu ritual pessoal de planeamento?",
+"pt_BR": "Como é o seu ritual pessoal de planejamento?"
+}
+},
+{
+"id": "goal_buddy-096",
+"lv": "advanced",
+"i18n": {
+"en": "Which shared goal would you enjoy working on with a team?",
+"de": "An welchem gemeinsamen Ziel würdest du gern mit einem Team arbeiten?",
+"es": "¿En qué meta compartida te gustaría trabajar con un equipo?",
+"fr": "Sur quel objectif commun aimerais-tu travailler en équipe ?",
+"it": "A quale obiettivo condiviso ti piacerebbe lavorare con una squadra?",
+"pt": "Em que objetivo partilhado gostavas de trabalhar com uma equipa?",
+"pt_BR": "Em qual meta compartilhada você gostaria de trabalhar com uma equipe?"
+}
+},
+{
+"id": "goal_buddy-097",
+"lv": "advanced",
+"i18n": {
+"en": "What would you write in a letter to yourself one year from now?",
+"de": "Was würdest du dir selbst in einem Brief für die Zeit in einem Jahr schreiben?",
+"es": "¿Qué te escribirías en una carta para leer dentro de un año?",
+"fr": "Qu'écrirais-tu dans une lettre à toi-même à lire dans un an ?",
+"it": "Cosa scriveresti in una lettera a te stesso da leggere tra un anno?",
+"pt": "O que escreverias numa carta a ti próprio para ler daqui a um ano?",
+"pt_BR": "O que você escreveria numa carta pra você mesmo ler daqui a um ano?"
+}
+},
+{
+"id": "goal_buddy-098",
+"lv": "advanced",
+"i18n": {
+"en": "Which personal rule helps you stay on track no matter what?",
+"de": "Welche persönliche Regel hilft dir, in jedem Fall dranzubleiben?",
+"es": "¿Qué regla personal te ayuda a seguir en el camino pase lo que pase?",
+"fr": "Quelle règle personnelle t'aide à garder le cap quoi qu'il arrive ?",
+"it": "Quale regola personale ti aiuta a restare in carreggiata qualunque cosa accada?",
+"pt": "Que regra pessoal te ajuda a manter o rumo aconteça o que acontecer?",
+"pt_BR": "Qual regra pessoal te ajuda a manter o foco aconteça o que acontecer?"
+}
+},
+{
+"id": "goal_buddy-099",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance big ambitions with rest and enjoying today?",
+"de": "Wie bringst du große Ambitionen mit Erholung und Genuss im Heute zusammen?",
+"es": "¿Cómo equilibras las grandes ambiciones con el descanso y disfrutar del presente?",
+"fr": "Comment concilies-tu grandes ambitions, repos et plaisir du moment présent ?",
+"it": "Come concili grandi ambizioni, riposo e il piacere di vivere l'oggi?",
+"pt": "Como equilibras grandes ambições com descanso e aproveitar o presente?",
+"pt_BR": "Como você equilibra grandes ambições com descanso e curtir o presente?"
+}
+},
+{
+"id": "goal_buddy-100",
+"lv": "advanced",
+"i18n": {
+"en": "Looking back, what is the most important thing goals have taught you?",
+"de": "Was ist rückblickend das Wichtigste, das dir Ziele beigebracht haben?",
+"es": "Mirando atrás, ¿qué es lo más importante que te han enseñado tus metas?",
+"fr": "Avec le recul, quelle est la chose la plus importante que tes objectifs t'ont apprise ?",
+"it": "Guardando indietro, qual è la cosa più importante che ti hanno insegnato gli obiettivi?",
+"pt": "Olhando para trás, qual é a coisa mais importante que os objetivos te ensinaram?",
+"pt_BR": "Olhando pra trás, qual é a coisa mais importante que as metas te ensinaram?"
+}
+}
+]
+}

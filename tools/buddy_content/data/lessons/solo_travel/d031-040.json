@@ -1,0 +1,835 @@
+{
+ "topic": "solo_travel",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The day of departure",
+     "g": "Use a calm checklist so your solo trip starts without stress.",
+     "p": [
+      "Check passport, tickets, cards, phone, charger and medicines before leaving home.",
+      "Confirm your departure time and leave early, with a buffer for delays.",
+      "Send your trusted person a quick «Leaving now!» message."
+     ],
+     "q": "What is the one item you always double-check before leaving home?",
+     "c": "Write your personal five-item departure checklist."
+    },
+    "de": {
+     "t": "Der Abreisetag",
+     "g": "Nutze eine ruhige Checkliste, damit deine Solo-Reise ohne Stress beginnt.",
+     "p": [
+      "Prüfe Pass, Tickets, Karten, Handy, Ladekabel und Medikamente, bevor du gehst.",
+      "Bestätige deine Abfahrtszeit und brich früh auf, mit Puffer für Verspätungen.",
+      "Schick deiner Vertrauensperson ein kurzes «Bin unterwegs!»."
+     ],
+     "q": "Was kontrollierst du vor dem Losgehen immer doppelt?",
+     "c": "Schreib deine persönliche Abreise-Checkliste mit fünf Punkten."
+    },
+    "es": {
+     "t": "El día de la salida",
+     "g": "Usa una lista tranquila para que tu viaje en solitario empiece sin estrés.",
+     "p": [
+      "Revisa pasaporte, billetes, tarjetas, móvil, cargador y medicinas antes de salir de casa.",
+      "Confirma la hora de salida y sal con tiempo, con margen para retrasos.",
+      "Envía a tu persona de confianza un rápido «¡Ya salgo!»."
+     ],
+     "q": "¿Qué es lo que siempre compruebas dos veces antes de salir de casa?",
+     "c": "Escribe tu lista personal de salida con cinco cosas."
+    },
+    "fr": {
+     "t": "Le jour du départ",
+     "g": "Utilise une liste sereine pour que ton voyage solo commence sans stress.",
+     "p": [
+      "Vérifie passeport, billets, cartes, téléphone, chargeur et médicaments avant de partir.",
+      "Confirme l’heure de départ et pars tôt, avec une marge pour les retards.",
+      "Envoie à ta personne de confiance un petit « Je pars ! »."
+     ],
+     "q": "Quel objet vérifies-tu toujours deux fois avant de quitter la maison ?",
+     "c": "Écris ta liste personnelle de départ en cinq points."
+    },
+    "it": {
+     "t": "Il giorno della partenza",
+     "g": "Usa una lista tranquilla perché il tuo viaggio da solo inizi senza stress.",
+     "p": [
+      "Controlla passaporto, biglietti, carte, telefono, caricatore e farmaci prima di uscire.",
+      "Verifica l’orario di partenza ed esci presto, con margine per i ritardi.",
+      "Manda alla tua persona di fiducia un veloce «Parto adesso!»."
+     ],
+     "q": "Cosa controlli sempre due volte prima di uscire di casa?",
+     "c": "Scrivi la tua lista personale di partenza con cinque voci."
+    },
+    "pt": {
+     "t": "O dia da partida",
+     "g": "Usa uma lista tranquila para a tua viagem a solo começar sem stress.",
+     "p": [
+      "Verifica passaporte, bilhetes, cartões, telemóvel, carregador e medicamentos antes de sair.",
+      "Confirma a hora de partida e sai cedo, com margem para atrasos.",
+      "Envia à tua pessoa de confiança um rápido «Estou a sair!»."
+     ],
+     "q": "O que verificas sempre duas vezes antes de sair de casa?",
+     "c": "Escreve a tua lista pessoal de partida com cinco itens."
+    },
+    "pt_BR": {
+     "t": "O dia da partida",
+     "g": "Use uma lista tranquila para sua viagem solo começar sem estresse.",
+     "p": [
+      "Confira passaporte, passagens, cartões, celular, carregador e remédios antes de sair.",
+      "Confirme o horário de partida e saia cedo, com folga para atrasos.",
+      "Mande para sua pessoa de confiança um rápido «Saindo agora!»."
+     ],
+     "q": "O que você sempre confere duas vezes antes de sair de casa?",
+     "c": "Escreva sua lista pessoal de partida com cinco itens."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Solo at the airport",
+     "g": "Navigate check-in, security and gates on your own with ease.",
+     "p": [
+      "Check in online when possible and keep your boarding pass on your phone and on paper.",
+      "At security, put liquids and electronics where you can reach them quickly.",
+      "Find your gate first, then relax nearby and keep an eye on the screens for changes."
+     ],
+     "q": "What part of an airport feels easiest or hardest for you?",
+     "c": "Next time you see an airport map, trace the route from entrance to gate."
+    },
+    "de": {
+     "t": "Allein am Flughafen",
+     "g": "Meistere Check-in, Sicherheitskontrolle und Gate ganz entspannt allein.",
+     "p": [
+      "Checke wenn möglich online ein und hab die Bordkarte im Handy und auf Papier.",
+      "Leg Flüssigkeiten und Elektronik für die Kontrolle griffbereit.",
+      "Such zuerst dein Gate, entspann dich dann in der Nähe und behalte die Anzeigen im Blick."
+     ],
+     "q": "Welcher Teil eines Flughafens fällt dir am leichtesten oder schwersten?",
+     "c": "Verfolge beim nächsten Flughafenplan den Weg vom Eingang bis zum Gate."
+    },
+    "es": {
+     "t": "Solo en el aeropuerto",
+     "g": "Muévete por facturación, control y puertas de embarque tú solo y con soltura.",
+     "p": [
+      "Haz el check-in online si puedes y lleva la tarjeta de embarque en el móvil y en papel.",
+      "En el control, ten líquidos y aparatos electrónicos a mano.",
+      "Busca primero tu puerta, luego relájate cerca y mira las pantallas por si hay cambios."
+     ],
+     "q": "¿Qué parte del aeropuerto te resulta más fácil o más difícil?",
+     "c": "La próxima vez que veas un plano de aeropuerto, sigue la ruta de la entrada a la puerta."
+    },
+    "fr": {
+     "t": "Seul à l’aéroport",
+     "g": "Passe l’enregistrement, la sécurité et l’embarquement seul, en toute aisance.",
+     "p": [
+      "Enregistre-toi en ligne si possible et garde ta carte d’embarquement sur téléphone et papier.",
+      "Au contrôle, garde liquides et appareils électroniques faciles à sortir.",
+      "Trouve d’abord ta porte, puis détends-toi à côté en surveillant les écrans."
+     ],
+     "q": "Quelle partie de l’aéroport te paraît la plus simple ou la plus difficile ?",
+     "c": "La prochaine fois que tu vois un plan d’aéroport, suis le trajet de l’entrée à la porte."
+    },
+    "it": {
+     "t": "Da soli in aeroporto",
+     "g": "Gestisci check-in, controlli e gate da solo, con disinvoltura.",
+     "p": [
+      "Fai il check-in online quando puoi e tieni la carta d’imbarco sul telefono e su carta.",
+      "Ai controlli tieni liquidi ed elettronica a portata di mano.",
+      "Trova prima il gate, poi rilassati lì vicino e tieni d’occhio i monitor."
+     ],
+     "q": "Quale parte dell’aeroporto ti sembra più facile o più difficile?",
+     "c": "La prossima volta che vedi una mappa dell’aeroporto, segui il percorso dall’ingresso al gate."
+    },
+    "pt": {
+     "t": "Sozinho no aeroporto",
+     "g": "Passa pelo check-in, segurança e portas de embarque sozinho e com à-vontade.",
+     "p": [
+      "Faz o check-in online quando der e leva o cartão de embarque no telemóvel e em papel.",
+      "Na segurança, tem os líquidos e eletrónicos fáceis de tirar.",
+      "Encontra primeiro a porta, depois descontrai por perto e olha para os ecrãs."
+     ],
+     "q": "Que parte do aeroporto achas mais fácil ou mais difícil?",
+     "c": "Da próxima vez que vires uma planta de aeroporto, segue o caminho da entrada à porta."
+    },
+    "pt_BR": {
+     "t": "Sozinho no aeroporto",
+     "g": "Passe pelo check-in, raio-x e portões de embarque sozinho e com tranquilidade.",
+     "p": [
+      "Faça o check-in online quando der e leve o cartão de embarque no celular e no papel.",
+      "No raio-x, deixe líquidos e eletrônicos fáceis de tirar.",
+      "Encontre primeiro o portão, depois relaxe por perto e fique de olho nos painéis."
+     ],
+     "q": "Que parte do aeroporto você acha mais fácil ou mais difícil?",
+     "c": "Da próxima vez que vir um mapa de aeroporto, siga o caminho da entrada ao portão."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Enjoying waiting time",
+     "g": "Turn waiting time at stations and airports into some of the nicest solo moments.",
+     "p": [
+      "Bring a book, a podcast or a playlist you have been saving for the trip.",
+      "Start a travel journal: where you are, how you feel and what you look forward to.",
+      "People-watching is free entertainment and a great way to feel part of the scene."
+     ],
+     "q": "What do you love doing when you have time to wait?",
+     "c": "Buy or set up a small notebook or notes file to use as your travel journal."
+    },
+    "de": {
+     "t": "Wartezeit genießen",
+     "g": "Mach Wartezeiten an Bahnhöfen und Flughäfen zu schönen Solo-Momenten.",
+     "p": [
+      "Nimm ein Buch, einen Podcast oder eine Playlist mit, die du dir aufgehoben hast.",
+      "Beginne ein Reisetagebuch: wo du bist, wie du dich fühlst, worauf du dich freust.",
+      "Leute beobachten ist kostenlose Unterhaltung und lässt dich Teil des Ganzen fühlen."
+     ],
+     "q": "Was machst du am liebsten, wenn du warten musst?",
+     "c": "Besorg ein kleines Notizbuch oder leg eine Notizdatei als Reisetagebuch an."
+    },
+    "es": {
+     "t": "Disfrutar la espera",
+     "g": "Convierte la espera en estaciones y aeropuertos en uno de tus mejores momentos a solas.",
+     "p": [
+      "Lleva un libro, un pódcast o una lista de música guardada para el viaje.",
+      "Empieza un diario de viaje: dónde estás, cómo te sientes y qué te ilusiona.",
+      "Observar a la gente es un entretenimiento gratis y te hace sentir parte del lugar."
+     ],
+     "q": "¿Qué te encanta hacer cuando tienes tiempo de espera?",
+     "c": "Consigue una libreta o crea una nota para usarla como diario de viaje."
+    },
+    "fr": {
+     "t": "Profiter de l’attente",
+     "g": "Transforme l’attente en gare ou à l’aéroport en jolis moments en solo.",
+     "p": [
+      "Emporte un livre, un podcast ou une playlist gardée pour le voyage.",
+      "Commence un carnet de voyage : où tu es, ce que tu ressens, ce qui te réjouit.",
+      "Observer les gens est un spectacle gratuit qui te fait sentir partie du décor."
+     ],
+     "q": "Qu’aimes-tu faire quand tu dois attendre ?",
+     "c": "Procure-toi un petit carnet ou crée une note qui servira de journal de voyage."
+    },
+    "it": {
+     "t": "Godersi l’attesa",
+     "g": "Trasforma l’attesa in stazione o in aeroporto in uno dei momenti più belli da solo.",
+     "p": [
+      "Porta un libro, un podcast o una playlist tenuta da parte per il viaggio.",
+      "Inizia un diario di viaggio: dove sei, come ti senti e cosa non vedi l’ora di fare.",
+      "Osservare la gente è uno spettacolo gratuito e ti fa sentire parte del luogo."
+     ],
+     "q": "Cosa ami fare quando hai tempo da aspettare?",
+     "c": "Procurati un taccuino o crea una nota da usare come diario di viaggio."
+    },
+    "pt": {
+     "t": "Aproveitar o tempo de espera",
+     "g": "Transforma a espera em estações e aeroportos num dos melhores momentos a solo.",
+     "p": [
+      "Leva um livro, um podcast ou uma playlist guardada para a viagem.",
+      "Começa um diário de viagem: onde estás, como te sentes e o que te entusiasma.",
+      "Observar as pessoas é entretenimento grátis e faz-te sentir parte do lugar."
+     ],
+     "q": "O que adoras fazer quando tens tempo de espera?",
+     "c": "Arranja um caderno ou cria uma nota para usares como diário de viagem."
+    },
+    "pt_BR": {
+     "t": "Curtindo o tempo de espera",
+     "g": "Transforme a espera em rodoviárias e aeroportos num dos melhores momentos solo.",
+     "p": [
+      "Leve um livro, um podcast ou uma playlist guardada para a viagem.",
+      "Comece um diário de viagem: onde você está, como se sente e o que está esperando.",
+      "Observar as pessoas é diversão grátis e faz você se sentir parte do lugar."
+     ],
+     "q": "O que você adora fazer quando tem tempo de espera?",
+     "c": "Arrume um caderninho ou crie uma nota para usar como diário de viagem."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arriving in a new place",
+     "g": "Plan your route to the accommodation before you land, so arrival feels smooth.",
+     "p": [
+      "Know the options: train, bus, taxi or transfer, and roughly how long each takes.",
+      "Save the route and the address offline, plus a screenshot of the map.",
+      "Have a little local money or a working card for the first ticket."
+     ],
+     "q": "How do you usually feel in the first hour after arriving somewhere new?",
+     "c": "Pick a city and plan the route from its airport or station to a central street."
+    },
+    "de": {
+     "t": "Ankommen an einem neuen Ort",
+     "g": "Plane den Weg zur Unterkunft schon vor der Landung, damit die Ankunft entspannt ist.",
+     "p": [
+      "Kenne die Optionen: Zug, Bus, Taxi oder Transfer, und ungefähr wie lange sie dauern.",
+      "Speichere Route und Adresse offline, dazu einen Screenshot der Karte.",
+      "Hab etwas Bargeld in Landeswährung oder eine funktionierende Karte für das erste Ticket."
+     ],
+     "q": "Wie fühlst du dich meist in der ersten Stunde an einem neuen Ort?",
+     "c": "Wähl eine Stadt und plane den Weg vom Flughafen oder Bahnhof ins Zentrum."
+    },
+    "es": {
+     "t": "Llegar a un lugar nuevo",
+     "g": "Planifica la ruta al alojamiento antes de aterrizar para que la llegada sea fluida.",
+     "p": [
+      "Conoce las opciones: tren, autobús, taxi o traslado, y cuánto tarda cada una.",
+      "Guarda la ruta y la dirección sin conexión, más una captura del mapa.",
+      "Ten algo de moneda local o una tarjeta que funcione para el primer billete."
+     ],
+     "q": "¿Cómo te sueles sentir en la primera hora tras llegar a un sitio nuevo?",
+     "c": "Elige una ciudad y planifica la ruta del aeropuerto o la estación al centro."
+    },
+    "fr": {
+     "t": "Arriver dans un nouveau lieu",
+     "g": "Prépare ton trajet jusqu’au logement avant d’atterrir pour une arrivée en douceur.",
+     "p": [
+      "Connais les options : train, bus, taxi ou navette, et leur durée approximative.",
+      "Garde le trajet et l’adresse hors ligne, avec une capture d’écran de la carte.",
+      "Prévois un peu de monnaie locale ou une carte qui fonctionne pour le premier billet."
+     ],
+     "q": "Comment te sens-tu en général dans la première heure après ton arrivée ?",
+     "c": "Choisis une ville et prépare le trajet de l’aéroport ou de la gare au centre."
+    },
+    "it": {
+     "t": "Arrivare in un posto nuovo",
+     "g": "Pianifica il percorso fino all’alloggio prima di atterrare, così l’arrivo è tranquillo.",
+     "p": [
+      "Conosci le opzioni: treno, bus, taxi o transfer, e quanto ci mette ciascuno.",
+      "Salva percorso e indirizzo offline, più uno screenshot della mappa.",
+      "Tieni un po’ di valuta locale o una carta funzionante per il primo biglietto."
+     ],
+     "q": "Come ti senti di solito nella prima ora in un posto nuovo?",
+     "c": "Scegli una città e pianifica il percorso da aeroporto o stazione al centro."
+    },
+    "pt": {
+     "t": "Chegar a um sítio novo",
+     "g": "Planeia o caminho até ao alojamento antes de aterrar para a chegada ser tranquila.",
+     "p": [
+      "Conhece as opções: comboio, autocarro, táxi ou transfer, e quanto demora cada um.",
+      "Guarda o percurso e a morada offline, mais uma captura do mapa.",
+      "Tem algum dinheiro local ou um cartão que funcione para o primeiro bilhete."
+     ],
+     "q": "Como te costumas sentir na primeira hora depois de chegar a um sítio novo?",
+     "c": "Escolhe uma cidade e planeia o caminho do aeroporto ou estação até ao centro."
+    },
+    "pt_BR": {
+     "t": "Chegando a um lugar novo",
+     "g": "Planeje o caminho até a hospedagem antes de pousar para a chegada ser tranquila.",
+     "p": [
+      "Conheça as opções: trem, ônibus, táxi ou transfer, e quanto tempo cada um leva.",
+      "Salve o trajeto e o endereço offline, mais um print do mapa.",
+      "Tenha um pouco de dinheiro local ou um cartão que funcione para a primeira passagem."
+     ],
+     "q": "Como você costuma se sentir na primeira hora num lugar novo?",
+     "c": "Escolha uma cidade e planeje o trajeto do aeroporto ou rodoviária até o centro."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting from the airport",
+     "g": "Use official taxis, trains or pre-booked transfers for a smooth arrival.",
+     "p": [
+      "Follow the airport signs to official taxi ranks, trains or buses.",
+      "Politely ignore people inside the terminal offering rides.",
+      "A pre-booked transfer is a great choice for late arrivals or heavy bags."
+     ],
+     "q": "Which do you prefer after a flight: train, bus, taxi or transfer?",
+     "c": "Look up the official ways to get from one airport you know into the city."
+    },
+    "de": {
+     "t": "Vom Flughafen in die Stadt",
+     "g": "Nutze offizielle Taxis, Züge oder vorgebuchte Transfers für eine entspannte Ankunft.",
+     "p": [
+      "Folge den Schildern zu offiziellen Taxiständen, Zügen oder Bussen.",
+      "Ignoriere freundlich Leute im Terminal, die dir Fahrten anbieten.",
+      "Ein vorgebuchter Transfer ist ideal bei später Ankunft oder schwerem Gepäck."
+     ],
+     "q": "Was nimmst du nach einem Flug am liebsten: Zug, Bus, Taxi oder Transfer?",
+     "c": "Finde die offiziellen Wege von einem Flughafen, den du kennst, in die Stadt."
+    },
+    "es": {
+     "t": "Salir del aeropuerto",
+     "g": "Usa taxis oficiales, trenes o traslados reservados para una llegada sin complicaciones.",
+     "p": [
+      "Sigue las señales del aeropuerto hacia la parada oficial de taxis, el tren o el autobús.",
+      "Ignora con educación a quien te ofrezca transporte dentro de la terminal.",
+      "Un traslado reservado es ideal si llegas tarde o con mucho equipaje."
+     ],
+     "q": "¿Qué prefieres tras un vuelo: tren, autobús, taxi o traslado?",
+     "c": "Busca las formas oficiales de ir de un aeropuerto que conozcas a la ciudad."
+    },
+    "fr": {
+     "t": "Quitter l’aéroport",
+     "g": "Prends un taxi officiel, un train ou une navette réservée pour une arrivée fluide.",
+     "p": [
+      "Suis les panneaux vers la station de taxis officielle, le train ou le bus.",
+      "Ignore poliment les personnes qui proposent des trajets dans le terminal.",
+      "Une navette réservée est idéale en cas d’arrivée tardive ou de gros bagages."
+     ],
+     "q": "Que préfères-tu après un vol : train, bus, taxi ou navette ?",
+     "c": "Cherche les moyens officiels d’aller d’un aéroport que tu connais jusqu’en ville."
+    },
+    "it": {
+     "t": "Uscire dall’aeroporto",
+     "g": "Usa taxi ufficiali, treni o transfer prenotati per un arrivo senza intoppi.",
+     "p": [
+      "Segui i cartelli verso la fila ufficiale dei taxi, il treno o l’autobus.",
+      "Ignora con gentilezza chi ti offre passaggi dentro il terminal.",
+      "Un transfer prenotato è perfetto se arrivi tardi o hai bagagli pesanti."
+     ],
+     "q": "Dopo un volo cosa preferisci: treno, bus, taxi o transfer?",
+     "c": "Cerca i modi ufficiali per andare da un aeroporto che conosci in città."
+    },
+    "pt": {
+     "t": "Sair do aeroporto",
+     "g": "Usa táxis oficiais, comboios ou transfers reservados para uma chegada tranquila.",
+     "p": [
+      "Segue a sinalética do aeroporto até à praça de táxis oficial, ao comboio ou ao autocarro.",
+      "Ignora com educação quem oferece boleias dentro do terminal.",
+      "Um transfer reservado é ótimo para chegadas tardias ou bagagem pesada."
+     ],
+     "q": "O que preferes depois de um voo: comboio, autocarro, táxi ou transfer?",
+     "c": "Procura as formas oficiais de ir de um aeroporto que conheças até à cidade."
+    },
+    "pt_BR": {
+     "t": "Saindo do aeroporto",
+     "g": "Use táxis oficiais, trens ou transfers reservados para uma chegada tranquila.",
+     "p": [
+      "Siga as placas do aeroporto até o ponto de táxi oficial, o trem ou o ônibus.",
+      "Ignore com educação quem oferece corrida dentro do terminal.",
+      "Um transfer reservado é ótimo para chegadas tarde ou bagagem pesada."
+     ],
+     "q": "O que você prefere depois de um voo: trem, ônibus, táxi ou transfer?",
+     "c": "Pesquise as formas oficiais de ir de um aeroporto que você conhece até a cidade."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arriving in daylight",
+     "g": "See why daytime arrivals make a new city feel easier and friendlier.",
+     "p": [
+      "In daylight, streets, signs and landmarks are easier to read.",
+      "Shops, cafés and offices are open if you need help, a snack or a SIM card.",
+      "When you book, choose flights or trains that land by afternoon when you can."
+     ],
+     "q": "Have you ever arrived somewhere late at night? How did it feel?",
+     "c": "Compare two travel times for the same route and pick the daytime one."
+    },
+    "de": {
+     "t": "Bei Tageslicht ankommen",
+     "g": "Erfahre, warum eine Ankunft bei Tag eine neue Stadt leichter und freundlicher wirken lässt.",
+     "p": [
+      "Bei Tageslicht sind Straßen, Schilder und Orientierungspunkte leichter zu erkennen.",
+      "Läden, Cafés und Büros haben offen, falls du Hilfe, einen Snack oder eine SIM brauchst.",
+      "Wähle beim Buchen möglichst Flüge oder Züge, die bis zum Nachmittag ankommen."
+     ],
+     "q": "Bist du schon einmal spät nachts angekommen? Wie war das?",
+     "c": "Vergleiche zwei Reisezeiten für dieselbe Strecke und wähle die am Tag."
+    },
+    "es": {
+     "t": "Llegar de día",
+     "g": "Descubre por qué llegar de día hace que una ciudad nueva parezca más fácil y amable.",
+     "p": [
+      "De día, calles, señales y puntos de referencia se leen mejor.",
+      "Tiendas, cafés y oficinas están abiertos si necesitas ayuda, algo de comer o una SIM.",
+      "Al reservar, elige vuelos o trenes que lleguen antes de la tarde cuando puedas."
+     ],
+     "q": "¿Alguna vez llegaste a un sitio de madrugada? ¿Cómo te sentiste?",
+     "c": "Compara dos horarios para la misma ruta y elige el de día."
+    },
+    "fr": {
+     "t": "Arriver de jour",
+     "g": "Vois pourquoi arriver de jour rend une nouvelle ville plus simple et plus accueillante.",
+     "p": [
+      "En plein jour, rues, panneaux et repères sont plus faciles à lire.",
+      "Boutiques, cafés et bureaux sont ouverts si tu as besoin d’aide, d’un en-cas ou d’une SIM.",
+      "En réservant, choisis si possible des vols ou trains qui arrivent avant la fin d’après-midi."
+     ],
+     "q": "Es-tu déjà arrivé quelque part tard dans la nuit ? Comment l’as-tu vécu ?",
+     "c": "Compare deux horaires pour le même trajet et choisis celui de jour."
+    },
+    "it": {
+     "t": "Arrivare di giorno",
+     "g": "Scopri perché arrivare di giorno rende una nuova città più facile e accogliente.",
+     "p": [
+      "Di giorno strade, cartelli e punti di riferimento si leggono meglio.",
+      "Negozi, bar e uffici sono aperti se ti servono aiuto, uno spuntino o una SIM.",
+      "Quando prenoti, scegli se puoi voli o treni che arrivano entro il pomeriggio."
+     ],
+     "q": "Ti è mai capitato di arrivare a notte fonda? Come ti sei sentito?",
+     "c": "Confronta due orari per la stessa tratta e scegli quello di giorno."
+    },
+    "pt": {
+     "t": "Chegar de dia",
+     "g": "Vê porque chegar de dia torna uma cidade nova mais fácil e acolhedora.",
+     "p": [
+      "De dia, ruas, placas e pontos de referência leem-se melhor.",
+      "Lojas, cafés e serviços estão abertos se precisares de ajuda, um lanche ou um SIM.",
+      "Ao reservar, escolhe quando puderes voos ou comboios que chegam até à tarde."
+     ],
+     "q": "Já chegaste a algum sítio de madrugada? Como te sentiste?",
+     "c": "Compara dois horários para o mesmo percurso e escolhe o de dia."
+    },
+    "pt_BR": {
+     "t": "Chegando de dia",
+     "g": "Veja por que chegar de dia deixa uma cidade nova mais fácil e acolhedora.",
+     "p": [
+      "De dia, ruas, placas e pontos de referência ficam mais fáceis de ler.",
+      "Lojas, cafés e serviços estão abertos se você precisar de ajuda, um lanche ou um chip.",
+      "Ao reservar, escolha quando puder voos ou trens que chegam até a tarde."
+     ],
+     "q": "Você já chegou a algum lugar de madrugada? Como se sentiu?",
+     "c": "Compare dois horários para o mesmo trajeto e escolha o de dia."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking in confidently",
+     "g": "Check in with confidence and get a good feel for your stay from the first minute.",
+     "p": [
+      "Ask about breakfast times, Wi-Fi, keys and late-night entry.",
+      "Ask staff for one tip: a nearby place to eat or something locals love.",
+      "Take the accommodation’s card or photo its address for taxis and maps."
+     ],
+     "q": "What question would you most like to ask at reception when you arrive?",
+     "c": "Write three friendly check-in questions you could ask at any hotel or hostel."
+    },
+    "de": {
+     "t": "Selbstbewusst einchecken",
+     "g": "Checke selbstbewusst ein und bekomm vom ersten Moment an ein gutes Gefühl.",
+     "p": [
+      "Frag nach Frühstückszeiten, WLAN, Schlüsseln und spätem Zugang.",
+      "Bitte das Personal um einen Tipp: ein Lokal in der Nähe oder einen Lieblingsort.",
+      "Nimm eine Visitenkarte mit oder fotografiere die Adresse für Taxis und Karten."
+     ],
+     "q": "Welche Frage würdest du an der Rezeption am liebsten stellen?",
+     "c": "Schreib drei freundliche Fragen, die du in jedem Hotel oder Hostel stellen kannst."
+    },
+    "es": {
+     "t": "Hacer el check-in con confianza",
+     "g": "Haz el check-in con seguridad y hazte una idea de tu estancia desde el primer minuto.",
+     "p": [
+      "Pregunta por el horario del desayuno, el wifi, las llaves y la entrada de noche.",
+      "Pide al personal un consejo: un sitio cercano para comer o algo que guste a los locales.",
+      "Coge una tarjeta del alojamiento o haz foto de la dirección para taxis y mapas."
+     ],
+     "q": "¿Qué pregunta te gustaría hacer en recepción al llegar?",
+     "c": "Escribe tres preguntas amables que podrías hacer en cualquier hotel o albergue."
+    },
+    "fr": {
+     "t": "Arriver à l’accueil avec assurance",
+     "g": "Présente-toi à l’accueil avec assurance et sens l’ambiance dès la première minute.",
+     "p": [
+      "Demande les horaires du petit-déjeuner, le Wi-Fi, les clés et l’accès tard le soir.",
+      "Demande un conseil au personnel : un endroit pour manger ou un lieu que les habitants adorent.",
+      "Prends une carte de l’hébergement ou photographie l’adresse pour les taxis."
+     ],
+     "q": "Quelle question aimerais-tu le plus poser à l’accueil en arrivant ?",
+     "c": "Écris trois questions sympas à poser à l’arrivée dans n’importe quel hôtel ou auberge."
+    },
+    "it": {
+     "t": "Fare il check-in con sicurezza",
+     "g": "Fai il check-in con sicurezza e fatti un’idea del soggiorno dal primo minuto.",
+     "p": [
+      "Chiedi orari della colazione, Wi-Fi, chiavi e ingresso la sera tardi.",
+      "Chiedi allo staff un consiglio: un posto vicino dove mangiare o un luogo amato dalla gente del posto.",
+      "Prendi un biglietto da visita o fotografa l’indirizzo per taxi e mappe."
+     ],
+     "q": "Quale domanda ti piacerebbe fare alla reception quando arrivi?",
+     "c": "Scrivi tre domande gentili da fare al check-in in qualsiasi hotel o ostello."
+    },
+    "pt": {
+     "t": "Fazer o check-in com confiança",
+     "g": "Faz o check-in com segurança e sente o ambiente desde o primeiro minuto.",
+     "p": [
+      "Pergunta pelo horário do pequeno-almoço, Wi-Fi, chaves e entrada à noite.",
+      "Pede uma dica ao pessoal: um sítio perto para comer ou algo de que os locais gostam.",
+      "Leva um cartão do alojamento ou fotografa a morada para táxis e mapas."
+     ],
+     "q": "Que pergunta gostavas mais de fazer na receção quando chegas?",
+     "c": "Escreve três perguntas simpáticas para fazer em qualquer hotel ou hostel."
+    },
+    "pt_BR": {
+     "t": "Fazendo o check-in com confiança",
+     "g": "Faça o check-in com segurança e sinta o clima da estadia desde o primeiro minuto.",
+     "p": [
+      "Pergunte o horário do café da manhã, o Wi-Fi, as chaves e a entrada à noite.",
+      "Peça uma dica à equipe: um lugar perto para comer ou algo que os moradores amam.",
+      "Pegue um cartão da hospedagem ou fotografe o endereço para táxis e mapas."
+     ],
+     "q": "Que pergunta você mais gostaria de fazer na recepção ao chegar?",
+     "c": "Escreva três perguntas simpáticas para fazer em qualquer hotel ou hostel."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Exploring your neighbourhood",
+     "g": "Take a first short walk to find food, a shop and your bearings.",
+     "p": [
+      "Walk a small loop around your accommodation in the first hours.",
+      "Spot a café, a supermarket, a pharmacy and the nearest transport stop.",
+      "Pick a landmark, like a church tower or a big square, to help you navigate back."
+     ],
+     "q": "What is the first thing you look for when you arrive in a new area?",
+     "c": "On your next walk anywhere, choose a landmark and use it to find your way back."
+    },
+    "de": {
+     "t": "Dein Viertel erkunden",
+     "g": "Mach einen ersten kurzen Spaziergang, um Essen, einen Laden und Orientierung zu finden.",
+     "p": [
+      "Geh in den ersten Stunden eine kleine Runde um deine Unterkunft.",
+      "Finde ein Café, einen Supermarkt, eine Apotheke und die nächste Haltestelle.",
+      "Wähle einen Orientierungspunkt wie einen Kirchturm oder einen großen Platz."
+     ],
+     "q": "Wonach suchst du zuerst, wenn du in einer neuen Gegend ankommst?",
+     "c": "Wähle bei deinem nächsten Spaziergang einen Orientierungspunkt für den Rückweg."
+    },
+    "es": {
+     "t": "Explorar tu barrio",
+     "g": "Da un primer paseo corto para encontrar comida, una tienda y orientarte.",
+     "p": [
+      "Camina una pequeña vuelta alrededor del alojamiento en las primeras horas.",
+      "Localiza un café, un supermercado, una farmacia y la parada de transporte más cercana.",
+      "Elige una referencia, como un campanario o una plaza grande, para volver sin perderte."
+     ],
+     "q": "¿Qué es lo primero que buscas al llegar a una zona nueva?",
+     "c": "En tu próximo paseo, elige una referencia y úsala para volver."
+    },
+    "fr": {
+     "t": "Explorer ton quartier",
+     "g": "Fais une première petite balade pour trouver à manger, une boutique et tes repères.",
+     "p": [
+      "Fais un petit tour autour de ton logement dans les premières heures.",
+      "Repère un café, un supermarché, une pharmacie et l’arrêt de transport le plus proche.",
+      "Choisis un repère, un clocher ou une grande place, pour retrouver ton chemin."
+     ],
+     "q": "Que cherches-tu en premier quand tu arrives dans un nouveau quartier ?",
+     "c": "Lors de ta prochaine balade, choisis un repère et sers-t’en pour revenir."
+    },
+    "it": {
+     "t": "Esplorare il quartiere",
+     "g": "Fai una prima breve passeggiata per trovare cibo, un negozio e orientarti.",
+     "p": [
+      "Fai un piccolo giro intorno all’alloggio nelle prime ore.",
+      "Individua un bar, un supermercato, una farmacia e la fermata più vicina.",
+      "Scegli un punto di riferimento, come un campanile o una grande piazza, per ritrovare la strada."
+     ],
+     "q": "Qual è la prima cosa che cerchi quando arrivi in una zona nuova?",
+     "c": "Nella tua prossima passeggiata, scegli un punto di riferimento e usalo per tornare."
+    },
+    "pt": {
+     "t": "Explorar o bairro",
+     "g": "Dá uma primeira volta curta para encontrar comida, uma loja e orientares-te.",
+     "p": [
+      "Faz uma pequena volta à zona do alojamento nas primeiras horas.",
+      "Localiza um café, um supermercado, uma farmácia e a paragem de transportes mais próxima.",
+      "Escolhe uma referência, como uma torre de igreja ou uma praça grande, para voltares."
+     ],
+     "q": "Qual é a primeira coisa que procuras quando chegas a uma zona nova?",
+     "c": "No teu próximo passeio, escolhe uma referência e usa-a para voltar."
+    },
+    "pt_BR": {
+     "t": "Explorando o bairro",
+     "g": "Faça uma primeira caminhada curta para achar comida, uma loja e se orientar.",
+     "p": [
+      "Dê uma pequena volta ao redor da hospedagem nas primeiras horas.",
+      "Localize um café, um mercado, uma farmácia e o ponto de transporte mais próximo.",
+      "Escolha uma referência, como uma torre de igreja ou uma praça grande, para voltar."
+     ],
+     "q": "Qual é a primeira coisa que você procura ao chegar a um bairro novo?",
+     "c": "Na sua próxima caminhada, escolha uma referência e use-a para voltar."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Public transport basics",
+     "g": "Learn how tickets, maps and apps work for buses, metros and trams.",
+     "p": [
+      "Find out where to buy tickets: machines, kiosks, apps or tapping a bank card.",
+      "Learn how to validate your ticket, because some cities check this often.",
+      "Use a transport app or map to check line numbers, directions and the last service."
+     ],
+     "q": "Which city’s public transport have you found easiest to use?",
+     "c": "Look up the metro or bus map of a city you want to visit and find one route."
+    },
+    "de": {
+     "t": "Grundlagen des Nahverkehrs",
+     "g": "Lerne, wie Tickets, Pläne und Apps für Bus, U-Bahn und Tram funktionieren.",
+     "p": [
+      "Finde heraus, wo es Tickets gibt: Automaten, Kioske, Apps oder kontaktlos per Bankkarte.",
+      "Lerne, wie du dein Ticket entwertest, denn manche Städte kontrollieren oft.",
+      "Prüfe mit einer App oder einem Plan Linien, Richtungen und die letzte Fahrt."
+     ],
+     "q": "In welcher Stadt fandest du den Nahverkehr am einfachsten?",
+     "c": "Sieh dir den Netzplan einer Stadt an, die du besuchen willst, und finde eine Route."
+    },
+    "es": {
+     "t": "Lo básico del transporte público",
+     "g": "Aprende cómo funcionan billetes, planos y apps de autobuses, metros y tranvías.",
+     "p": [
+      "Averigua dónde comprar billetes: máquinas, quioscos, apps o pagando con tarjeta.",
+      "Aprende a validar el billete, porque algunas ciudades lo revisan a menudo.",
+      "Usa una app o un plano para ver líneas, direcciones y el último servicio."
+     ],
+     "q": "¿Qué transporte público te ha parecido más fácil de usar?",
+     "c": "Mira el plano de metro o autobús de una ciudad que quieras visitar y busca una ruta."
+    },
+    "fr": {
+     "t": "Les bases des transports en commun",
+     "g": "Apprends comment fonctionnent tickets, plans et applis pour bus, métros et trams.",
+     "p": [
+      "Repère où acheter les tickets : distributeurs, kiosques, applis ou carte bancaire sans contact.",
+      "Apprends à valider ton ticket, car certaines villes contrôlent souvent.",
+      "Utilise une appli ou un plan pour vérifier lignes, directions et dernier passage."
+     ],
+     "q": "Dans quelle ville as-tu trouvé les transports les plus simples ?",
+     "c": "Regarde le plan de métro ou de bus d’une ville qui te tente et trouve un trajet."
+    },
+    "it": {
+     "t": "Le basi dei trasporti pubblici",
+     "g": "Impara come funzionano biglietti, mappe e app per bus, metro e tram.",
+     "p": [
+      "Scopri dove comprare i biglietti: macchinette, edicole, app o carta contactless.",
+      "Impara a convalidare il biglietto, perché in alcune città i controlli sono frequenti.",
+      "Usa un’app o una mappa per controllare linee, direzioni e l’ultima corsa."
+     ],
+     "q": "In quale città hai trovato i trasporti pubblici più facili da usare?",
+     "c": "Guarda la mappa di metro o bus di una città che vuoi visitare e trova un percorso."
+    },
+    "pt": {
+     "t": "O básico dos transportes públicos",
+     "g": "Aprende como funcionam bilhetes, mapas e apps de autocarros, metros e elétricos.",
+     "p": [
+      "Descobre onde comprar bilhetes: máquinas, quiosques, apps ou cartão sem contacto.",
+      "Aprende a validar o bilhete, porque algumas cidades fiscalizam muito.",
+      "Usa uma app ou um mapa para ver linhas, sentidos e a última partida."
+     ],
+     "q": "Em que cidade achaste os transportes públicos mais fáceis de usar?",
+     "c": "Vê o mapa do metro ou dos autocarros de uma cidade que queres visitar e encontra um percurso."
+    },
+    "pt_BR": {
+     "t": "O básico do transporte público",
+     "g": "Aprenda como funcionam passagens, mapas e apps de ônibus, metrô e VLT.",
+     "p": [
+      "Descubra onde comprar passagens: máquinas, guichês, apps ou cartão por aproximação.",
+      "Aprenda a validar a passagem, porque algumas cidades fiscalizam bastante.",
+      "Use um app ou mapa para ver linhas, sentidos e o último horário."
+     ],
+     "q": "Em que cidade você achou o transporte público mais fácil de usar?",
+     "c": "Veja o mapa do metrô ou dos ônibus de uma cidade que quer visitar e encontre um trajeto."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Walking a city alone",
+     "g": "Enjoy the freedom of exploring a city on foot, at your own pace.",
+     "p": [
+      "Walking is the best way to discover markets, side streets and little surprises.",
+      "Plan comfortable routes along main streets, parks and riversides.",
+      "Stop whenever you like: a bench, a café or a view is all yours."
+     ],
+     "q": "What do you enjoy noticing most when you walk through a new city?",
+     "c": "Take a 30-minute walk somewhere new and note three things that surprised you."
+    },
+    "de": {
+     "t": "Allein durch eine Stadt spazieren",
+     "g": "Genieße die Freiheit, eine Stadt in deinem Tempo zu Fuß zu entdecken.",
+     "p": [
+      "Zu Fuß entdeckst du Märkte, Seitenstraßen und kleine Überraschungen am besten.",
+      "Plane angenehme Wege entlang von Hauptstraßen, Parks und Flussufern.",
+      "Bleib stehen, wann du willst: Bank, Café oder Aussicht gehören ganz dir."
+     ],
+     "q": "Was beobachtest du am liebsten, wenn du durch eine neue Stadt gehst?",
+     "c": "Geh 30 Minuten an einem neuen Ort spazieren und notiere drei Überraschungen."
+    },
+    "es": {
+     "t": "Caminar sola o solo por una ciudad",
+     "g": "Disfruta la libertad de explorar una ciudad a pie, a tu ritmo.",
+     "p": [
+      "Caminar es la mejor forma de descubrir mercados, callejuelas y pequeñas sorpresas.",
+      "Planea rutas cómodas por calles principales, parques y orillas de ríos.",
+      "Para cuando quieras: un banco, un café o unas vistas son solo para ti."
+     ],
+     "q": "¿Qué es lo que más te gusta observar al pasear por una ciudad nueva?",
+     "c": "Da un paseo de 30 minutos por un sitio nuevo y apunta tres cosas que te sorprendan."
+    },
+    "fr": {
+     "t": "Marcher seul dans une ville",
+     "g": "Savoure la liberté d’explorer une ville à pied, à ton rythme.",
+     "p": [
+      "La marche est le meilleur moyen de découvrir marchés, ruelles et petites surprises.",
+      "Prévois des itinéraires agréables par les grandes rues, les parcs et les berges.",
+      "Arrête-toi quand tu veux : un banc, un café ou une vue rien que pour toi."
+     ],
+     "q": "Qu’aimes-tu le plus observer quand tu marches dans une ville nouvelle ?",
+     "c": "Fais 30 minutes de marche dans un lieu nouveau et note trois choses surprenantes."
+    },
+    "it": {
+     "t": "Camminare da soli in città",
+     "g": "Goditi la libertà di esplorare una città a piedi, al tuo ritmo.",
+     "p": [
+      "Camminare è il modo migliore per scoprire mercati, vicoli e piccole sorprese.",
+      "Pianifica percorsi piacevoli lungo vie principali, parchi e lungofiume.",
+      "Fermati quando vuoi: una panchina, un bar o un panorama sono tutti tuoi."
+     ],
+     "q": "Cosa ti piace di più notare quando cammini in una città nuova?",
+     "c": "Fai una passeggiata di 30 minuti in un posto nuovo e annota tre sorprese."
+    },
+    "pt": {
+     "t": "Caminhar sozinho pela cidade",
+     "g": "Aproveita a liberdade de explorar uma cidade a pé, ao teu ritmo.",
+     "p": [
+      "Caminhar é a melhor forma de descobrir mercados, ruelas e pequenas surpresas.",
+      "Planeia percursos agradáveis por ruas principais, jardins e margens de rios.",
+      "Para quando quiseres: um banco, um café ou uma vista são só teus."
+     ],
+     "q": "O que mais gostas de observar quando caminhas por uma cidade nova?",
+     "c": "Dá um passeio de 30 minutos num sítio novo e aponta três coisas que te surpreenderam."
+    },
+    "pt_BR": {
+     "t": "Caminhando sozinho pela cidade",
+     "g": "Aproveite a liberdade de explorar uma cidade a pé, no seu ritmo.",
+     "p": [
+      "Caminhar é o melhor jeito de descobrir feiras, ruelas e pequenas surpresas.",
+      "Planeje trajetos agradáveis por ruas principais, parques e beiras de rio.",
+      "Pare quando quiser: um banco, um café ou uma vista são só seus."
+     ],
+     "q": "O que você mais gosta de observar ao caminhar por uma cidade nova?",
+     "c": "Faça uma caminhada de 30 minutos num lugar novo e anote três surpresas."
+    }
+   }
+  }
+ ]
+}

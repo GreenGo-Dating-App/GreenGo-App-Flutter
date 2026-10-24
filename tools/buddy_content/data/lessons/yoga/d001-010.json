@@ -1,0 +1,835 @@
+{
+ "topic": "yoga",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is yoga?",
+     "g": "Get a friendly first picture of yoga as movement, breath and attention working together.",
+     "p": [
+      "Yoga combines physical poses, conscious breathing and calm attention to the present moment.",
+      "People practise it to feel more flexible, relaxed and focused, at home or in a class.",
+      "You do not need to be flexible to start: flexibility is something yoga helps you explore."
+     ],
+     "q": "What made you curious about yoga, and what would you like it to bring into your days?",
+     "c": "Sit or stand tall for one minute today and simply notice how your body feels."
+    },
+    "de": {
+     "t": "Was ist Yoga?",
+     "g": "Ein freundlicher erster Eindruck von Yoga als Zusammenspiel von Bewegung, Atem und Aufmerksamkeit.",
+     "p": [
+      "Yoga verbindet Körperhaltungen, bewusstes Atmen und ruhige Aufmerksamkeit für den Moment.",
+      "Viele üben es, um sich beweglicher, entspannter und konzentrierter zu fühlen, zu Hause oder im Kurs.",
+      "Du musst nicht beweglich sein, um anzufangen: Beweglichkeit entdeckst du mit Yoga nach und nach."
+     ],
+     "q": "Was hat dich neugierig auf Yoga gemacht, und was soll es dir im Alltag bringen?",
+     "c": "Sitz oder steh heute eine Minute lang aufrecht und spür einfach, wie sich dein Körper anfühlt."
+    },
+    "es": {
+     "t": "¿Qué es el yoga?",
+     "g": "Hazte una primera idea amable del yoga como movimiento, respiración y atención trabajando juntos.",
+     "p": [
+      "El yoga une posturas físicas, respiración consciente y una atención tranquila al momento presente.",
+      "Mucha gente lo practica para sentirse más flexible, relajada y concentrada, en casa o en clase.",
+      "No necesitas ser flexible para empezar: la flexibilidad es algo que el yoga te ayuda a explorar."
+     ],
+     "q": "¿Qué te despertó la curiosidad por el yoga y qué te gustaría que aportara a tu día a día?",
+     "c": "Siéntate o ponte de pie bien erguido un minuto hoy y simplemente observa cómo se siente tu cuerpo."
+    },
+    "fr": {
+     "t": "Qu'est-ce que le yoga ?",
+     "g": "Se faire une première idée bienveillante du yoga : mouvement, respiration et attention réunis.",
+     "p": [
+      "Le yoga associe des postures, une respiration consciente et une attention calme au moment présent.",
+      "On le pratique pour se sentir plus souple, détendu et concentré, chez soi ou en cours.",
+      "Pas besoin d'être souple pour commencer : la souplesse, c'est justement ce que le yoga aide à explorer."
+     ],
+     "q": "Qu'est-ce qui a éveillé ta curiosité pour le yoga, et qu'aimerais-tu qu'il t'apporte au quotidien ?",
+     "c": "Aujourd'hui, assieds-toi ou tiens-toi bien droit une minute et observe simplement ton corps."
+    },
+    "it": {
+     "t": "Che cos'è lo yoga?",
+     "g": "Farsi una prima idea serena dello yoga come unione di movimento, respiro e attenzione.",
+     "p": [
+      "Lo yoga unisce posizioni del corpo, respirazione consapevole e un'attenzione calma al momento presente.",
+      "Molti lo praticano per sentirsi più flessibili, rilassati e concentrati, a casa o in classe.",
+      "Non serve essere flessibili per iniziare: la flessibilità è proprio ciò che lo yoga ti aiuta a esplorare."
+     ],
+     "q": "Cosa ti ha incuriosito dello yoga e cosa vorresti che portasse nelle tue giornate?",
+     "c": "Oggi siediti o stai in piedi ben dritto per un minuto e nota semplicemente come si sente il corpo."
+    },
+    "pt": {
+     "t": "O que é o yoga?",
+     "g": "Ficar com uma primeira ideia simpática do yoga como movimento, respiração e atenção em conjunto.",
+     "p": [
+      "O yoga junta posturas físicas, respiração consciente e uma atenção calma ao momento presente.",
+      "Muitas pessoas praticam-no para se sentirem mais flexíveis, descontraídas e concentradas, em casa ou numa aula.",
+      "Não precisas de ser flexível para começar: a flexibilidade é algo que o yoga te ajuda a explorar."
+     ],
+     "q": "O que te despertou a curiosidade pelo yoga e o que gostavas que ele trouxesse ao teu dia a dia?",
+     "c": "Hoje, senta-te ou fica de pé bem direito durante um minuto e repara apenas em como o corpo se sente."
+    },
+    "pt_BR": {
+     "t": "O que é ioga?",
+     "g": "Ter uma primeira ideia acolhedora da ioga como movimento, respiração e atenção trabalhando juntos.",
+     "p": [
+      "A ioga une posturas físicas, respiração consciente e uma atenção tranquila ao momento presente.",
+      "Muita gente pratica para se sentir mais flexível, relaxada e focada, em casa ou numa aula.",
+      "Você não precisa ser flexível para começar: a flexibilidade é algo que a ioga ajuda você a explorar."
+     ],
+     "q": "O que despertou sua curiosidade pela ioga e o que você gostaria que ela trouxesse para o seu dia a dia?",
+     "c": "Hoje, sente ou fique de pé bem ereto por um minuto e apenas perceba como o seu corpo está."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A short history of yoga",
+     "g": "Discover how yoga travelled from ancient India to studios all over the world.",
+     "p": [
+      "Yoga has roots in ancient India, where it was described in old texts as a path of mind and body.",
+      "In the 20th century, teachers brought yoga to Europe and America, where it spread widely.",
+      "Today there are many modern styles, all inspired by those old traditions in different ways."
+     ],
+     "q": "Have you ever seen yoga in a park, studio or film? What image of yoga did you have before today?",
+     "c": "Find out where the nearest yoga studio or community class is to you, just out of curiosity."
+    },
+    "de": {
+     "t": "Eine kurze Geschichte des Yoga",
+     "g": "Entdecke, wie Yoga vom alten Indien in Studios auf der ganzen Welt gelangt ist.",
+     "p": [
+      "Yoga hat seine Wurzeln im alten Indien, wo alte Texte es als Weg für Geist und Körper beschreiben.",
+      "Im 20. Jahrhundert brachten Lehrende Yoga nach Europa und Amerika, wo es sich stark verbreitete.",
+      "Heute gibt es viele moderne Stile, die auf unterschiedliche Weise von diesen alten Traditionen inspiriert sind."
+     ],
+     "q": "Hast du Yoga schon mal im Park, im Studio oder in einem Film gesehen? Welches Bild hattest du davon?",
+     "c": "Finde heute aus reiner Neugier heraus, wo das nächste Yogastudio oder ein Kurs in deiner Nähe ist."
+    },
+    "es": {
+     "t": "Una breve historia del yoga",
+     "g": "Descubre cómo el yoga viajó desde la antigua India hasta estudios de todo el mundo.",
+     "p": [
+      "El yoga tiene raíces en la antigua India, donde textos antiguos lo describían como un camino de mente y cuerpo.",
+      "En el siglo XX, varios maestros llevaron el yoga a Europa y América, donde se difundió muchísimo.",
+      "Hoy existen muchos estilos modernos, todos inspirados de formas distintas en aquellas tradiciones."
+     ],
+     "q": "¿Has visto alguna vez yoga en un parque, un estudio o una película? ¿Qué imagen tenías del yoga?",
+     "c": "Averigua, solo por curiosidad, dónde está el estudio o la clase de yoga más cercana a ti."
+    },
+    "fr": {
+     "t": "Une brève histoire du yoga",
+     "g": "Découvrir comment le yoga a voyagé de l'Inde ancienne jusqu'aux studios du monde entier.",
+     "p": [
+      "Le yoga a ses racines dans l'Inde ancienne, où des textes anciens le décrivent comme une voie du corps et de l'esprit.",
+      "Au XXe siècle, des enseignants l'ont fait connaître en Europe et en Amérique, où il s'est largement répandu.",
+      "Il existe aujourd'hui de nombreux styles modernes, tous inspirés de ces traditions à leur manière."
+     ],
+     "q": "As-tu déjà vu du yoga dans un parc, un studio ou un film ? Quelle image en avais-tu avant aujourd'hui ?",
+     "c": "Par simple curiosité, cherche où se trouve le studio ou le cours de yoga le plus proche de chez toi."
+    },
+    "it": {
+     "t": "Una breve storia dello yoga",
+     "g": "Scoprire come lo yoga è arrivato dall'India antica agli studi di tutto il mondo.",
+     "p": [
+      "Lo yoga ha radici nell'India antica, dove testi antichi lo descrivevano come un percorso di mente e corpo.",
+      "Nel Novecento alcuni insegnanti lo portarono in Europa e in America, dove si diffuse moltissimo.",
+      "Oggi esistono tanti stili moderni, tutti ispirati in modi diversi a quelle antiche tradizioni."
+     ],
+     "q": "Hai mai visto lo yoga in un parco, in uno studio o in un film? Che immagine ne avevi prima di oggi?",
+     "c": "Per pura curiosità, scopri dove si trova lo studio o il corso di yoga più vicino a te."
+    },
+    "pt": {
+     "t": "Uma breve história do yoga",
+     "g": "Descobrir como o yoga viajou da Índia antiga até estúdios de todo o mundo.",
+     "p": [
+      "O yoga tem raízes na Índia antiga, onde textos antigos o descreviam como um caminho de mente e corpo.",
+      "No século XX, vários professores levaram o yoga para a Europa e a América, onde se espalhou bastante.",
+      "Hoje há muitos estilos modernos, todos inspirados de formas diferentes nessas tradições antigas."
+     ],
+     "q": "Já viste yoga num parque, num estúdio ou num filme? Que imagem tinhas do yoga antes de hoje?",
+     "c": "Só por curiosidade, descobre onde fica o estúdio ou a aula de yoga mais perto de ti."
+    },
+    "pt_BR": {
+     "t": "Uma breve história da ioga",
+     "g": "Descobrir como a ioga viajou da Índia antiga até estúdios do mundo inteiro.",
+     "p": [
+      "A ioga tem raízes na Índia antiga, onde textos antigos a descreviam como um caminho de mente e corpo.",
+      "No século 20, vários professores levaram a ioga para a Europa e as Américas, onde ela se espalhou muito.",
+      "Hoje existem muitos estilos modernos, todos inspirados de jeitos diferentes nessas tradições antigas."
+     ],
+     "q": "Você já viu ioga num parque, num estúdio ou num filme? Que imagem você tinha da ioga antes de hoje?",
+     "c": "Só por curiosidade, descubra onde fica o estúdio ou a aula de ioga mais perto de você."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yoga for every body",
+     "g": "See why yoga can be adapted to many ages, sizes and fitness levels.",
+     "p": [
+      "Almost every pose has easier versions, so the practice can meet you where you are today.",
+      "Props, chairs and bent knees are smart tools, not signs of doing it wrong.",
+      "Comparing yourself to others or to photos is not the point: your practice is yours alone."
+     ],
+     "q": "Which part of your body feels the most flexible, and which one feels a bit stiff right now?",
+     "c": "Notice one moment today when you compare yourself to someone, and kindly let it go."
+    },
+    "de": {
+     "t": "Yoga für jeden Körper",
+     "g": "Erkenne, warum sich Yoga an viele Altersstufen, Körperformen und Fitnesslevel anpassen lässt.",
+     "p": [
+      "Fast jede Haltung hat leichtere Varianten, sodass die Praxis dich dort abholt, wo du heute stehst.",
+      "Hilfsmittel, Stühle und gebeugte Knie sind kluge Werkzeuge und kein Zeichen, etwas falsch zu machen.",
+      "Sich mit anderen oder mit Fotos zu vergleichen ist nicht der Sinn: Deine Praxis gehört nur dir."
+     ],
+     "q": "Welcher Teil deines Körpers fühlt sich gerade am beweglichsten an, und welcher eher steif?",
+     "c": "Bemerke heute einen Moment, in dem du dich mit jemandem vergleichst, und lass ihn freundlich los."
+    },
+    "es": {
+     "t": "Yoga para todos los cuerpos",
+     "g": "Entiende por qué el yoga se adapta a muchas edades, tallas y niveles de forma física.",
+     "p": [
+      "Casi todas las posturas tienen versiones más fáciles, así que la práctica se ajusta a cómo estás hoy.",
+      "Los accesorios, las sillas y las rodillas flexionadas son herramientas inteligentes, no errores.",
+      "Compararte con otras personas o con fotos no es el objetivo: tu práctica es solo tuya."
+     ],
+     "q": "¿Qué parte de tu cuerpo sientes más flexible ahora mismo y cuál notas un poco rígida?",
+     "c": "Fíjate hoy en un momento en que te compares con alguien y suéltalo con amabilidad."
+    },
+    "fr": {
+     "t": "Le yoga pour tous les corps",
+     "g": "Comprendre pourquoi le yoga s'adapte à de nombreux âges, morphologies et niveaux de forme.",
+     "p": [
+      "Presque chaque posture a des versions plus simples : la pratique s'adapte à toi tel que tu es aujourd'hui.",
+      "Accessoires, chaises et genoux fléchis sont des outils malins, pas des signes d'erreur.",
+      "Se comparer aux autres ou aux photos n'est pas le but : ta pratique n'appartient qu'à toi."
+     ],
+     "q": "Quelle partie de ton corps te semble la plus souple en ce moment, et laquelle un peu raide ?",
+     "c": "Repère aujourd'hui un moment où tu te compares à quelqu'un, et laisse-le filer avec douceur."
+    },
+    "it": {
+     "t": "Yoga per ogni corpo",
+     "g": "Capire perché lo yoga si adatta a tante età, corporature e livelli di forma fisica.",
+     "p": [
+      "Quasi ogni posizione ha versioni più semplici, così la pratica ti accoglie per come sei oggi.",
+      "Supporti, sedie e ginocchia piegate sono strumenti intelligenti, non segni di errore.",
+      "Confrontarsi con gli altri o con le foto non è lo scopo: la tua pratica è solo tua."
+     ],
+     "q": "Quale parte del tuo corpo senti più flessibile in questo momento, e quale un po' rigida?",
+     "c": "Nota oggi un momento in cui ti paragoni a qualcuno e lascialo andare con gentilezza."
+    },
+    "pt": {
+     "t": "Yoga para todos os corpos",
+     "g": "Perceber porque é que o yoga se adapta a muitas idades, corpos e níveis de forma física.",
+     "p": [
+      "Quase todas as posturas têm versões mais fáceis, por isso a prática adapta-se a ti tal como estás hoje.",
+      "Acessórios, cadeiras e joelhos fletidos são ferramentas inteligentes, não sinais de erro.",
+      "Comparares-te com os outros ou com fotografias não é o objetivo: a tua prática é só tua."
+     ],
+     "q": "Que parte do teu corpo sentes mais flexível neste momento e qual sentes um pouco rígida?",
+     "c": "Repara hoje num momento em que te comparas com alguém e deixa-o ir com gentileza."
+    },
+    "pt_BR": {
+     "t": "Ioga para todos os corpos",
+     "g": "Entender por que a ioga se adapta a muitas idades, corpos e níveis de condicionamento.",
+     "p": [
+      "Quase toda postura tem versões mais fáceis, então a prática se ajusta a você do jeito que você está hoje.",
+      "Acessórios, cadeiras e joelhos dobrados são ferramentas inteligentes, não sinais de erro.",
+      "Se comparar com outras pessoas ou com fotos não é o objetivo: sua prática é só sua."
+     ],
+     "q": "Qual parte do seu corpo você sente mais flexível agora e qual sente um pouco rígida?",
+     "c": "Perceba hoje um momento em que você se compara com alguém e deixe isso ir com gentileza."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting up your space",
+     "g": "Create a simple, calm spot at home where you can practise.",
+     "p": [
+      "A quiet corner is enough: you mainly need room to stretch your arms out to the sides and overhead.",
+      "Use a non-slip surface and move away furniture with sharp edges before you start.",
+      "Soft light, fresh air and a phone on silent make it easier to stay present."
+     ],
+     "q": "Where at home could you roll out a mat, and what would make that spot feel inviting?",
+     "c": "Choose your practice corner today and clear just enough space to lie down and stretch."
+    },
+    "de": {
+     "t": "Deinen Platz einrichten",
+     "g": "Richte dir zu Hause einen einfachen, ruhigen Ort zum Üben ein.",
+     "p": [
+      "Eine ruhige Ecke reicht: Du brauchst vor allem Platz, um die Arme seitlich und nach oben auszustrecken.",
+      "Nutze eine rutschfeste Unterlage und schieb Möbel mit scharfen Kanten vorher zur Seite.",
+      "Sanftes Licht, frische Luft und ein stummgeschaltetes Handy helfen, im Moment zu bleiben."
+     ],
+     "q": "Wo könntest du zu Hause eine Matte ausrollen, und was würde den Platz einladend machen?",
+     "c": "Wähl heute deine Übungsecke aus und schaff gerade so viel Platz, dass du dich hinlegen und strecken kannst."
+    },
+    "es": {
+     "t": "Prepara tu espacio",
+     "g": "Crea en casa un rincón sencillo y tranquilo donde practicar.",
+     "p": [
+      "Basta con un rincón tranquilo: sobre todo necesitas espacio para estirar los brazos a los lados y hacia arriba.",
+      "Usa una superficie antideslizante y aparta los muebles con esquinas duras antes de empezar.",
+      "Una luz suave, aire fresco y el móvil en silencio ayudan a mantenerte presente."
+     ],
+     "q": "¿Dónde podrías extender una esterilla en casa y qué haría ese rincón más acogedor?",
+     "c": "Elige hoy tu rincón de práctica y despeja el espacio justo para tumbarte y estirarte."
+    },
+    "fr": {
+     "t": "Aménager ton espace",
+     "g": "Créer chez toi un coin simple et calme pour pratiquer.",
+     "p": [
+      "Un coin tranquille suffit : il faut surtout de la place pour tendre les bras sur les côtés et au-dessus de la tête.",
+      "Utilise une surface antidérapante et écarte les meubles aux angles durs avant de commencer.",
+      "Une lumière douce, de l'air frais et un téléphone en silencieux aident à rester présent."
+     ],
+     "q": "Où pourrais-tu dérouler un tapis chez toi, et qu'est-ce qui rendrait ce coin accueillant ?",
+     "c": "Choisis aujourd'hui ton coin de pratique et libère juste assez de place pour t'allonger et t'étirer."
+    },
+    "it": {
+     "t": "Preparare il tuo spazio",
+     "g": "Creare in casa un angolo semplice e tranquillo dove praticare.",
+     "p": [
+      "Basta un angolo tranquillo: serve soprattutto spazio per allungare le braccia ai lati e sopra la testa.",
+      "Usa una superficie antiscivolo e sposta i mobili con spigoli prima di iniziare.",
+      "Luce morbida, aria fresca e telefono in silenzioso aiutano a restare presenti."
+     ],
+     "q": "Dove potresti stendere un tappetino in casa e cosa renderebbe quell'angolo accogliente?",
+     "c": "Scegli oggi il tuo angolo di pratica e libera lo spazio giusto per sdraiarti e allungarti."
+    },
+    "pt": {
+     "t": "Preparar o teu espaço",
+     "g": "Criar em casa um cantinho simples e calmo para praticar.",
+     "p": [
+      "Um canto sossegado chega: precisas sobretudo de espaço para esticar os braços para os lados e para cima.",
+      "Usa uma superfície antiderrapante e afasta móveis com arestas antes de começar.",
+      "Luz suave, ar fresco e o telemóvel em silêncio ajudam-te a ficar presente."
+     ],
+     "q": "Onde é que em casa podias estender um tapete e o que tornaria esse canto mais acolhedor?",
+     "c": "Escolhe hoje o teu canto de prática e liberta o espaço suficiente para te deitares e esticares."
+    },
+    "pt_BR": {
+     "t": "Preparando seu espaço",
+     "g": "Criar em casa um cantinho simples e tranquilo para praticar.",
+     "p": [
+      "Um canto silencioso já basta: você precisa principalmente de espaço para abrir os braços para os lados e para cima.",
+      "Use uma superfície antiderrapante e afaste móveis com quinas antes de começar.",
+      "Luz suave, ar fresco e o celular no silencioso ajudam você a ficar presente."
+     ],
+     "q": "Onde na sua casa você poderia abrir um tapetinho e o que deixaria esse canto mais convidativo?",
+     "c": "Escolha hoje seu canto de prática e libere espaço suficiente para deitar e se alongar."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your yoga mat",
+     "g": "Learn what makes a good mat and how to care for it.",
+     "p": [
+      "Thinner mats feel stable for standing poses, while thicker ones cushion knees and back.",
+      "Good grip matters most: a mat that slides can make poses feel shaky.",
+      "Wipe your mat with a damp cloth and mild soap, then let it air-dry before rolling it up."
+     ],
+     "q": "Do you already have a mat or a surface you like? What would you look for in a new one?",
+     "c": "Give your mat or practice surface a quick, gentle clean and let it dry in fresh air."
+    },
+    "de": {
+     "t": "Deine Yogamatte",
+     "g": "Erfahre, was eine gute Matte ausmacht und wie du sie pflegst.",
+     "p": [
+      "Dünnere Matten geben im Stand Stabilität, dickere polstern Knie und Rücken.",
+      "Am wichtigsten ist guter Halt: Eine rutschende Matte macht Haltungen schnell wackelig.",
+      "Wisch die Matte mit einem feuchten Tuch und milder Seife ab und lass sie trocknen, bevor du sie einrollst."
+     ],
+     "q": "Hast du schon eine Matte oder Unterlage, die du magst? Worauf würdest du bei einer neuen achten?",
+     "c": "Reinige heute deine Matte oder Unterlage kurz und sanft und lass sie an der frischen Luft trocknen."
+    },
+    "es": {
+     "t": "Tu esterilla de yoga",
+     "g": "Aprende qué hace buena a una esterilla y cómo cuidarla.",
+     "p": [
+      "Las esterillas finas dan estabilidad de pie, mientras que las gruesas amortiguan rodillas y espalda.",
+      "El agarre es lo más importante: una esterilla que resbala hace que las posturas se tambaleen.",
+      "Límpiala con un paño húmedo y jabón suave, y déjala secar al aire antes de enrollarla."
+     ],
+     "q": "¿Ya tienes una esterilla o una superficie que te guste? ¿Qué buscarías en una nueva?",
+     "c": "Dale hoy una limpieza rápida y suave a tu esterilla o superficie y déjala secar al aire."
+    },
+    "fr": {
+     "t": "Ton tapis de yoga",
+     "g": "Savoir ce qui fait un bon tapis et comment en prendre soin.",
+     "p": [
+      "Un tapis fin donne de la stabilité debout, un tapis épais amortit les genoux et le dos.",
+      "L'adhérence compte le plus : un tapis qui glisse rend les postures instables.",
+      "Nettoie-le avec un chiffon humide et un savon doux, puis laisse-le sécher à l'air avant de l'enrouler."
+     ],
+     "q": "As-tu déjà un tapis ou une surface que tu aimes ? Que chercherais-tu dans un nouveau tapis ?",
+     "c": "Donne aujourd'hui un petit coup de propre à ton tapis ou ta surface et laisse sécher à l'air libre."
+    },
+    "it": {
+     "t": "Il tuo tappetino",
+     "g": "Scoprire cosa rende buono un tappetino e come prendersene cura.",
+     "p": [
+      "I tappetini sottili danno stabilità in piedi, quelli spessi ammortizzano ginocchia e schiena.",
+      "La presa è la cosa più importante: un tappetino che scivola rende le posizioni instabili.",
+      "Puliscilo con un panno umido e sapone delicato, poi lascialo asciugare all'aria prima di arrotolarlo."
+     ],
+     "q": "Hai già un tappetino o una superficie che ti piace? Cosa cercheresti in uno nuovo?",
+     "c": "Oggi dai una pulita veloce e delicata al tuo tappetino o alla tua superficie e lasciala asciugare all'aria."
+    },
+    "pt": {
+     "t": "O teu tapete de yoga",
+     "g": "Saber o que faz um bom tapete e como cuidar dele.",
+     "p": [
+      "Tapetes finos dão estabilidade nas posturas de pé, os mais grossos protegem joelhos e costas.",
+      "A aderência é o mais importante: um tapete que escorrega deixa as posturas instáveis.",
+      "Limpa-o com um pano húmido e sabão suave e deixa-o secar ao ar antes de o enrolar."
+     ],
+     "q": "Já tens um tapete ou uma superfície de que gostes? O que procurarias num tapete novo?",
+     "c": "Dá hoje uma limpeza rápida e suave ao teu tapete ou superfície e deixa secar ao ar."
+    },
+    "pt_BR": {
+     "t": "Seu tapetinho de ioga",
+     "g": "Saber o que faz um bom tapetinho e como cuidar dele.",
+     "p": [
+      "Tapetinhos finos dão estabilidade nas posturas em pé, os mais grossos protegem joelhos e costas.",
+      "A aderência é o mais importante: um tapetinho que escorrega deixa as posturas instáveis.",
+      "Limpe com um pano úmido e sabão neutro e deixe secar ao ar antes de enrolar."
+     ],
+     "q": "Você já tem um tapetinho ou uma superfície de que gosta? O que procuraria num novo?",
+     "c": "Dê hoje uma limpeza rápida e suave no seu tapetinho ou superfície e deixe secar ao ar."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Helpful props",
+     "g": "Discover how simple props make poses easier and more comfortable.",
+     "p": [
+      "Blocks bring the floor closer, straps extend your reach, and blankets cushion knees and hips.",
+      "Bolsters and firm cushions support you in resting and seated poses.",
+      "At home, sturdy books, a belt, a scarf or sofa cushions work very well as swaps."
+     ],
+     "q": "Which household items could you use as props, and which pose do you think they would help with?",
+     "c": "Gather two or three home props today, such as a book, a belt and a cushion, and keep them by your mat."
+    },
+    "de": {
+     "t": "Hilfreiche Hilfsmittel",
+     "g": "Entdecke, wie einfache Hilfsmittel Haltungen leichter und angenehmer machen.",
+     "p": [
+      "Blöcke holen den Boden näher, Gurte verlängern die Reichweite und Decken polstern Knie und Hüften.",
+      "Bolster und feste Kissen stützen dich in ruhenden und sitzenden Haltungen.",
+      "Zu Hause eignen sich stabile Bücher, ein Gürtel, ein Schal oder Sofakissen sehr gut als Ersatz."
+     ],
+     "q": "Welche Dinge aus deinem Haushalt könntest du als Hilfsmittel nutzen, und wobei würden sie helfen?",
+     "c": "Sammle heute zwei oder drei Hilfsmittel, etwa ein Buch, einen Gürtel und ein Kissen, und leg sie zur Matte."
+    },
+    "es": {
+     "t": "Accesorios útiles",
+     "g": "Descubre cómo los accesorios sencillos hacen las posturas más fáciles y cómodas.",
+     "p": [
+      "Los bloques acercan el suelo, las correas alargan tu alcance y las mantas acolchan rodillas y caderas.",
+      "Los cojines alargados (bolsters) y los cojines firmes te sostienen en posturas de descanso y sentadas.",
+      "En casa, libros resistentes, un cinturón, un pañuelo o los cojines del sofá funcionan muy bien."
+     ],
+     "q": "¿Qué objetos de casa podrías usar como accesorios y en qué postura crees que te ayudarían?",
+     "c": "Reúne hoy dos o tres accesorios caseros, como un libro, un cinturón y un cojín, y déjalos junto a tu esterilla."
+    },
+    "fr": {
+     "t": "Les accessoires utiles",
+     "g": "Découvrir comment de simples accessoires rendent les postures plus faciles et confortables.",
+     "p": [
+      "Les briques rapprochent le sol, les sangles prolongent les bras et les couvertures protègent genoux et hanches.",
+      "Les bolsters et les coussins fermes te soutiennent dans les postures assises et de repos.",
+      "À la maison, des livres solides, une ceinture, une écharpe ou des coussins de canapé font très bien l'affaire."
+     ],
+     "q": "Quels objets de chez toi pourraient servir d'accessoires, et pour quelle posture t'aideraient-ils ?",
+     "c": "Rassemble aujourd'hui deux ou trois accessoires maison, comme un livre, une ceinture et un coussin, près de ton tapis."
+    },
+    "it": {
+     "t": "Supporti utili",
+     "g": "Scoprire come semplici supporti rendono le posizioni più facili e comode.",
+     "p": [
+      "I mattoncini avvicinano il pavimento, le cinghie allungano la presa e le coperte proteggono ginocchia e anche.",
+      "Bolster e cuscini rigidi ti sostengono nelle posizioni sedute e di riposo.",
+      "In casa vanno benissimo libri robusti, una cintura, una sciarpa o i cuscini del divano."
+     ],
+     "q": "Quali oggetti di casa potresti usare come supporti e in quale posizione pensi che aiuterebbero?",
+     "c": "Raccogli oggi due o tre supporti di casa, come un libro, una cintura e un cuscino, e tienili vicino al tappetino."
+    },
+    "pt": {
+     "t": "Acessórios úteis",
+     "g": "Descobrir como acessórios simples tornam as posturas mais fáceis e confortáveis.",
+     "p": [
+      "Os blocos aproximam o chão, as correias aumentam o alcance e as mantas protegem joelhos e ancas.",
+      "Os bolsters e as almofadas firmes apoiam-te em posturas sentadas e de descanso.",
+      "Em casa, livros resistentes, um cinto, um lenço ou almofadas do sofá funcionam muito bem."
+     ],
+     "q": "Que objetos de casa podias usar como acessórios e em que postura achas que ajudariam?",
+     "c": "Junta hoje dois ou três acessórios caseiros, como um livro, um cinto e uma almofada, ao pé do teu tapete."
+    },
+    "pt_BR": {
+     "t": "Acessórios úteis",
+     "g": "Descobrir como acessórios simples deixam as posturas mais fáceis e confortáveis.",
+     "p": [
+      "Blocos aproximam o chão, faixas aumentam o alcance e mantas protegem joelhos e quadris.",
+      "Bolsters e almofadas firmes apoiam você em posturas sentadas e de descanso.",
+      "Em casa, livros resistentes, um cinto, uma echarpe ou almofadas do sofá funcionam muito bem."
+     ],
+     "q": "Quais objetos da sua casa você poderia usar como acessórios e em qual postura eles ajudariam?",
+     "c": "Separe hoje dois ou três acessórios caseiros, como um livro, um cinto e uma almofada, perto do seu tapetinho."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What to wear",
+     "g": "Choose clothes that let you move freely and stay out of your way.",
+     "p": [
+      "Stretchy, breathable fabrics let you bend and twist without pulling or pinching.",
+      "Avoid very loose tops that slide over your face when you fold forward.",
+      "Yoga is usually done barefoot for grip, with socks or a layer for the final rest."
+     ],
+     "q": "What do you usually wear to move or relax at home, and does it let you stretch comfortably?",
+     "c": "Pick out one comfortable outfit for your practice and test it with a slow forward bend."
+    },
+    "de": {
+     "t": "Was du anziehst",
+     "g": "Wähle Kleidung, in der du dich frei bewegen kannst und die nicht stört.",
+     "p": [
+      "Dehnbare, atmungsaktive Stoffe lassen dich beugen und drehen, ohne zu ziehen oder zu drücken.",
+      "Vermeide sehr weite Oberteile, die beim Vorbeugen über dein Gesicht rutschen.",
+      "Yoga übt man meist barfuß für guten Halt, mit Socken oder einer Decke für die Schlussentspannung."
+     ],
+     "q": "Was trägst du normalerweise zu Hause, um dich zu bewegen oder zu entspannen, und kannst du dich darin gut strecken?",
+     "c": "Such dir ein bequemes Outfit für deine Praxis aus und teste es mit einer langsamen Vorbeuge."
+    },
+    "es": {
+     "t": "Qué ponerte",
+     "g": "Elige ropa que te deje moverte con libertad y no te moleste.",
+     "p": [
+      "Los tejidos elásticos y transpirables te dejan flexionarte y girar sin tirones ni presiones.",
+      "Evita camisetas muy anchas que se te deslicen sobre la cara al inclinarte hacia delante.",
+      "El yoga suele practicarse descalzo para tener agarre, con calcetines o una manta para la relajación final."
+     ],
+     "q": "¿Qué sueles ponerte para moverte o relajarte en casa y te permite estirarte con comodidad?",
+     "c": "Elige un conjunto cómodo para tu práctica y pruébalo con una flexión lenta hacia delante."
+    },
+    "fr": {
+     "t": "Quoi porter",
+     "g": "Choisir des vêtements qui laissent bouger librement et ne gênent pas.",
+     "p": [
+      "Les tissus extensibles et respirants permettent de se plier et de tourner sans tirer ni serrer.",
+      "Évite les hauts très amples qui glissent sur le visage quand tu te penches en avant.",
+      "On pratique en général pieds nus pour l'adhérence, avec des chaussettes ou une couche pour la relaxation finale."
+     ],
+     "q": "Que portes-tu d'habitude pour bouger ou te détendre chez toi, et peux-tu t'y étirer à l'aise ?",
+     "c": "Choisis une tenue confortable pour ta pratique et teste-la avec une flexion avant lente."
+    },
+    "it": {
+     "t": "Cosa indossare",
+     "g": "Scegliere abiti che ti lascino muovere liberamente e non diano fastidio.",
+     "p": [
+      "Tessuti elastici e traspiranti ti lasciano piegare e ruotare senza tirare o stringere.",
+      "Evita magliette troppo larghe che scivolano sul viso quando ti pieghi in avanti.",
+      "Di solito si pratica a piedi nudi per la presa, con calze o un capo in più per il rilassamento finale."
+     ],
+     "q": "Cosa indossi di solito per muoverti o rilassarti in casa, e ti permette di allungarti comodamente?",
+     "c": "Scegli un abbigliamento comodo per la pratica e provalo con un lento piegamento in avanti."
+    },
+    "pt": {
+     "t": "O que vestir",
+     "g": "Escolher roupa que te deixe mexer à vontade e não incomode.",
+     "p": [
+      "Tecidos elásticos e respiráveis deixam-te dobrar e torcer sem puxar nem apertar.",
+      "Evita camisolas muito largas que te caem para a cara quando te inclinas para a frente.",
+      "O yoga costuma praticar-se descalço para ter aderência, com meias ou uma camada para o relaxamento final."
+     ],
+     "q": "O que costumas vestir para te mexeres ou descansares em casa, e consegues alongar-te à vontade?",
+     "c": "Escolhe uma roupa confortável para a tua prática e experimenta-a com uma flexão lenta para a frente."
+    },
+    "pt_BR": {
+     "t": "O que vestir",
+     "g": "Escolher roupas que deixem você se mexer à vontade e não atrapalhem.",
+     "p": [
+      "Tecidos elásticos e respiráveis deixam você dobrar e girar sem puxar nem apertar.",
+      "Evite camisetas muito largas que escorregam para o rosto quando você se inclina para a frente.",
+      "A ioga costuma ser praticada descalça para dar aderência, com meias ou uma manta para o relaxamento final."
+     ],
+     "q": "O que você costuma usar para se mexer ou relaxar em casa, e dá para se alongar com conforto?",
+     "c": "Escolha uma roupa confortável para sua prática e teste com uma flexão lenta para a frente."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening to your body",
+     "g": "Learn to tell a gentle stretch from strain, and to ease off whenever needed.",
+     "p": [
+      "A good stretch feels like mild, even tension that you can breathe through calmly.",
+      "Sharp, pinching or sudden sensations are a clear signal to back off right away.",
+      "Easing off is always allowed and is a sign of wise, attentive practice."
+     ],
+     "q": "How do you usually notice when your body has had enough, during sport or everyday life?",
+     "c": "In any stretch today, find the point of gentle tension, then back off a little and breathe there."
+    },
+    "de": {
+     "t": "Auf deinen Körper hören",
+     "g": "Lerne, eine sanfte Dehnung von Überlastung zu unterscheiden und rechtzeitig nachzulassen.",
+     "p": [
+      "Eine gute Dehnung fühlt sich wie leichte, gleichmäßige Spannung an, durch die du ruhig atmen kannst.",
+      "Stechende, zwickende oder plötzliche Empfindungen sind ein klares Zeichen, sofort nachzulassen.",
+      "Nachlassen ist immer erlaubt und zeigt eine kluge, aufmerksame Praxis."
+     ],
+     "q": "Woran merkst du normalerweise, dass dein Körper genug hat, beim Sport oder im Alltag?",
+     "c": "Such heute in einer Dehnung den Punkt sanfter Spannung, geh ein wenig zurück und atme dort."
+    },
+    "es": {
+     "t": "Escuchar a tu cuerpo",
+     "g": "Aprende a distinguir un estiramiento suave de un esfuerzo excesivo, y a aflojar cuando haga falta.",
+     "p": [
+      "Un buen estiramiento se siente como una tensión leve y uniforme con la que puedes respirar con calma.",
+      "Las sensaciones agudas, punzantes o repentinas son una señal clara para retroceder enseguida.",
+      "Aflojar siempre está permitido y es señal de una práctica sabia y atenta."
+     ],
+     "q": "¿Cómo sueles notar que tu cuerpo ya ha tenido suficiente, en el deporte o en la vida diaria?",
+     "c": "Hoy, en cualquier estiramiento, busca el punto de tensión suave, retrocede un poco y respira ahí."
+    },
+    "fr": {
+     "t": "Écouter ton corps",
+     "g": "Apprendre à distinguer un étirement doux d'un effort excessif, et à relâcher dès que nécessaire.",
+     "p": [
+      "Un bon étirement ressemble à une tension légère et régulière dans laquelle tu respires calmement.",
+      "Une sensation vive, pincée ou soudaine est un signal clair pour revenir en arrière tout de suite.",
+      "Relâcher est toujours permis et montre une pratique sage et attentive."
+     ],
+     "q": "Comment remarques-tu d'habitude que ton corps en a assez, pendant le sport ou au quotidien ?",
+     "c": "Aujourd'hui, dans un étirement, trouve le point de tension douce, recule un peu et respire là."
+    },
+    "it": {
+     "t": "Ascoltare il tuo corpo",
+     "g": "Imparare a distinguere un allungamento dolce da uno sforzo eccessivo e a mollare quando serve.",
+     "p": [
+      "Un buon allungamento è una tensione leggera e uniforme in cui riesci a respirare con calma.",
+      "Sensazioni acute, pungenti o improvvise sono un chiaro segnale per tornare indietro subito.",
+      "Allentare è sempre permesso ed è segno di una pratica saggia e attenta."
+     ],
+     "q": "Come ti accorgi di solito che il tuo corpo ne ha abbastanza, nello sport o nella vita di tutti i giorni?",
+     "c": "Oggi, in un allungamento, trova il punto di tensione dolce, torna un po' indietro e respira lì."
+    },
+    "pt": {
+     "t": "Ouvir o teu corpo",
+     "g": "Aprender a distinguir um alongamento suave de um esforço excessivo e a aliviar sempre que for preciso.",
+     "p": [
+      "Um bom alongamento sente-se como uma tensão leve e uniforme onde consegues respirar com calma.",
+      "Sensações agudas, de beliscão ou repentinas são um sinal claro para recuar logo.",
+      "Aliviar é sempre permitido e é sinal de uma prática sábia e atenta."
+     ],
+     "q": "Como costumas perceber que o teu corpo já chega, no desporto ou no dia a dia?",
+     "c": "Hoje, num alongamento, encontra o ponto de tensão suave, recua um pouco e respira aí."
+    },
+    "pt_BR": {
+     "t": "Escutando seu corpo",
+     "g": "Aprender a diferenciar um alongamento suave de um esforço excessivo e a aliviar sempre que precisar.",
+     "p": [
+      "Um bom alongamento parece uma tensão leve e uniforme na qual você consegue respirar com calma.",
+      "Sensações agudas, de beliscão ou repentinas são um sinal claro para recuar na hora.",
+      "Aliviar é sempre permitido e mostra uma prática sábia e atenta."
+     ],
+     "q": "Como você costuma perceber que seu corpo já chegou no limite, no esporte ou no dia a dia?",
+     "c": "Hoje, num alongamento, encontre o ponto de tensão suave, recue um pouco e respire ali."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Safety first",
+     "g": "Know the simple habits that keep your practice gentle and safe.",
+     "p": [
+      "Move slowly, especially when entering and leaving poses, and never force a position.",
+      "Skip anything that feels wrong for you today: there is always another option.",
+      "This is general information only, so check with a doctor or qualified teacher when you are unsure."
+     ],
+     "q": "Is there anything about your body you would like to keep in mind as you start practising?",
+     "c": "Before your next stretch, take three calm breaths and decide to move at half your usual speed."
+    },
+    "de": {
+     "t": "Sicherheit zuerst",
+     "g": "Lerne die einfachen Gewohnheiten, die deine Praxis sanft und sicher halten.",
+     "p": [
+      "Beweg dich langsam, besonders beim Ein- und Ausgehen aus Haltungen, und erzwinge nie eine Position.",
+      "Lass weg, was sich heute für dich falsch anfühlt: Es gibt immer eine andere Möglichkeit.",
+      "Das sind nur allgemeine Informationen, frag im Zweifel eine Ärztin oder eine qualifizierte Lehrkraft."
+     ],
+     "q": "Gibt es etwas an deinem Körper, das du beim Einstieg ins Üben im Blick behalten möchtest?",
+     "c": "Atme vor deiner nächsten Dehnung dreimal ruhig und nimm dir vor, dich halb so schnell wie sonst zu bewegen."
+    },
+    "es": {
+     "t": "La seguridad primero",
+     "g": "Conoce los hábitos sencillos que mantienen tu práctica suave y segura.",
+     "p": [
+      "Muévete despacio, sobre todo al entrar y salir de las posturas, y nunca fuerces una posición.",
+      "Sáltate lo que hoy no te siente bien: siempre hay otra opción.",
+      "Esto es solo información general; consulta con un médico o un profesor cualificado si tienes dudas."
+     ],
+     "q": "¿Hay algo de tu cuerpo que quieras tener en cuenta al empezar a practicar?",
+     "c": "Antes de tu próximo estiramiento, haz tres respiraciones tranquilas y decide moverte a la mitad de tu velocidad."
+    },
+    "fr": {
+     "t": "La sécurité d'abord",
+     "g": "Connaître les habitudes simples qui gardent ta pratique douce et sûre.",
+     "p": [
+      "Bouge lentement, surtout en entrant et en sortant des postures, et ne force jamais une position.",
+      "Laisse de côté ce qui ne te convient pas aujourd'hui : il existe toujours une autre option.",
+      "Ce sont des informations générales : en cas de doute, demande l'avis d'un médecin ou d'un enseignant qualifié."
+     ],
+     "q": "Y a-t-il quelque chose concernant ton corps que tu veux garder en tête en commençant ?",
+     "c": "Avant ton prochain étirement, prends trois respirations calmes et décide de bouger deux fois plus lentement."
+    },
+    "it": {
+     "t": "Prima la sicurezza",
+     "g": "Conoscere le semplici abitudini che rendono la pratica dolce e sicura.",
+     "p": [
+      "Muoviti lentamente, soprattutto entrando e uscendo dalle posizioni, e non forzare mai.",
+      "Salta ciò che oggi non ti sembra giusto: c'è sempre un'altra possibilità.",
+      "Sono solo informazioni generali: nel dubbio chiedi a un medico o a un insegnante qualificato."
+     ],
+     "q": "C'è qualcosa del tuo corpo che vuoi tenere presente mentre inizi a praticare?",
+     "c": "Prima del prossimo allungamento fai tre respiri calmi e decidi di muoverti a metà della tua velocità solita."
+    },
+    "pt": {
+     "t": "Segurança em primeiro lugar",
+     "g": "Conhecer os hábitos simples que mantêm a tua prática suave e segura.",
+     "p": [
+      "Mexe-te devagar, sobretudo ao entrar e sair das posturas, e nunca forces uma posição.",
+      "Salta o que hoje não te parecer bem: há sempre outra opção.",
+      "Isto é apenas informação geral; em caso de dúvida, fala com um médico ou um professor qualificado."
+     ],
+     "q": "Há alguma coisa no teu corpo que queiras ter em conta ao começar a praticar?",
+     "c": "Antes do próximo alongamento, faz três respirações calmas e decide mexer-te a metade da tua velocidade."
+    },
+    "pt_BR": {
+     "t": "Segurança em primeiro lugar",
+     "g": "Conhecer os hábitos simples que deixam sua prática suave e segura.",
+     "p": [
+      "Mova-se devagar, principalmente ao entrar e sair das posturas, e nunca force uma posição.",
+      "Pule o que hoje não parecer certo para você: sempre existe outra opção.",
+      "Isto é só informação geral; na dúvida, converse com um médico ou um professor qualificado."
+     ],
+     "q": "Tem algo no seu corpo que você quer levar em conta ao começar a praticar?",
+     "c": "Antes do próximo alongamento, faça três respirações calmas e decida se mover na metade da sua velocidade."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noticing your breath",
+     "g": "Take the first step of any practice: simply observing your natural breath.",
+     "p": [
+      "You do not need to change anything: just notice the air flowing in and out.",
+      "Notice where you feel the breath most, such as the nose, chest or belly.",
+      "When your mind wanders, gently bring your attention back to the next breath."
+     ],
+     "q": "Where do you feel your breath most clearly right now: nose, chest or belly?",
+     "c": "Sit comfortably for two minutes today and count ten natural breaths without changing them."
+    },
+    "de": {
+     "t": "Den Atem bemerken",
+     "g": "Mach den ersten Schritt jeder Praxis: deinen natürlichen Atem einfach beobachten.",
+     "p": [
+      "Du musst nichts verändern: Bemerk einfach, wie die Luft ein- und ausströmt.",
+      "Spür, wo du den Atem am deutlichsten wahrnimmst, etwa in der Nase, der Brust oder dem Bauch.",
+      "Wenn deine Gedanken abschweifen, bring die Aufmerksamkeit sanft zum nächsten Atemzug zurück."
+     ],
+     "q": "Wo spürst du deinen Atem gerade am deutlichsten: in der Nase, der Brust oder dem Bauch?",
+     "c": "Sitz heute zwei Minuten bequem und zähl zehn natürliche Atemzüge, ohne sie zu verändern."
+    },
+    "es": {
+     "t": "Observar tu respiración",
+     "g": "Da el primer paso de cualquier práctica: observar sin más tu respiración natural.",
+     "p": [
+      "No tienes que cambiar nada: solo nota cómo entra y sale el aire.",
+      "Fíjate dónde sientes más la respiración, por ejemplo en la nariz, el pecho o el abdomen.",
+      "Cuando la mente se distraiga, vuelve con suavidad a la siguiente respiración."
+     ],
+     "q": "¿Dónde sientes tu respiración con más claridad ahora mismo: nariz, pecho o abdomen?",
+     "c": "Siéntate cómodo dos minutos hoy y cuenta diez respiraciones naturales sin cambiarlas."
+    },
+    "fr": {
+     "t": "Observer ta respiration",
+     "g": "Faire le premier pas de toute pratique : simplement observer ta respiration naturelle.",
+     "p": [
+      "Tu n'as rien à changer : remarque juste l'air qui entre et qui sort.",
+      "Repère où tu sens le plus le souffle, par exemple au nez, dans la poitrine ou le ventre.",
+      "Quand l'esprit s'égare, ramène doucement ton attention vers la respiration suivante."
+     ],
+     "q": "Où sens-tu ton souffle le plus clairement en ce moment : au nez, dans la poitrine ou le ventre ?",
+     "c": "Assieds-toi confortablement deux minutes aujourd'hui et compte dix respirations naturelles sans les modifier."
+    },
+    "it": {
+     "t": "Osservare il respiro",
+     "g": "Fare il primo passo di ogni pratica: osservare semplicemente il respiro naturale.",
+     "p": [
+      "Non devi cambiare nulla: nota solo l'aria che entra ed esce.",
+      "Nota dove senti di più il respiro, per esempio nel naso, nel petto o nella pancia.",
+      "Quando la mente vaga, riporta con gentilezza l'attenzione al respiro successivo."
+     ],
+     "q": "Dove senti più chiaramente il respiro in questo momento: naso, petto o pancia?",
+     "c": "Oggi siediti comodo per due minuti e conta dieci respiri naturali senza modificarli."
+    },
+    "pt": {
+     "t": "Observar a respiração",
+     "g": "Dar o primeiro passo de qualquer prática: observar simplesmente a tua respiração natural.",
+     "p": [
+      "Não precisas de mudar nada: repara apenas no ar a entrar e a sair.",
+      "Repara onde sentes mais a respiração, por exemplo no nariz, no peito ou na barriga.",
+      "Quando a mente se distrair, traz a atenção com suavidade de volta à respiração seguinte."
+     ],
+     "q": "Onde sentes a respiração com mais clareza agora: no nariz, no peito ou na barriga?",
+     "c": "Senta-te confortavelmente dois minutos hoje e conta dez respirações naturais sem as mudar."
+    },
+    "pt_BR": {
+     "t": "Percebendo sua respiração",
+     "g": "Dar o primeiro passo de qualquer prática: apenas observar sua respiração natural.",
+     "p": [
+      "Você não precisa mudar nada: só perceba o ar entrando e saindo.",
+      "Note onde você sente mais a respiração, por exemplo no nariz, no peito ou na barriga.",
+      "Quando a mente se distrair, traga a atenção com gentileza de volta para a próxima respiração."
+     ],
+     "q": "Onde você sente sua respiração com mais clareza agora: nariz, peito ou barriga?",
+     "c": "Sente-se confortavelmente por dois minutos hoje e conte dez respirações naturais sem mudá-las."
+    }
+   }
+  }
+ ]
+}

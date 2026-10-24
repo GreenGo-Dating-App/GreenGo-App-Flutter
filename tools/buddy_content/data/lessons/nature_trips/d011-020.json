@@ -1,0 +1,835 @@
+{
+ "topic": "nature_trips",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Good walking shoes",
+     "g": "Learn to choose footwear for trails, beaches and rocky paths.",
+     "p": [
+      "Trail shoes or light boots with a grippy sole keep you steady on dirt, roots and wet rock.",
+      "Break in new shoes on short walks first, and wear good socks to avoid blisters.",
+      "On beaches and rocky shores, sandals with straps or water shoes protect your feet better than flip-flops."
+     ],
+     "q": "What shoes do you usually wear for walks, and are they comfy after a few hours?",
+     "c": "Check the soles of your walking shoes today: is the grip still good?"
+    },
+    "de": {
+     "t": "Gute Wanderschuhe",
+     "g": "Lerne, Schuhe für Wanderwege, Strände und felsige Pfade auszuwählen.",
+     "p": [
+      "Trailschuhe oder leichte Stiefel mit griffiger Sohle geben dir Halt auf Erde, Wurzeln und nassem Fels.",
+      "Lauf neue Schuhe erst auf kurzen Strecken ein und trag gute Socken gegen Blasen.",
+      "An Stränden und Felsküsten schützen Riemensandalen oder Wasserschuhe besser als Flip-Flops."
+     ],
+     "q": "Welche Schuhe trägst du meist beim Wandern, und sind sie nach Stunden noch bequem?",
+     "c": "Prüf heute die Sohlen deiner Wanderschuhe: Haben sie noch genug Profil?"
+    },
+    "es": {
+     "t": "Buen calzado para caminar",
+     "g": "Aprende a elegir calzado para senderos, playas y caminos rocosos.",
+     "p": [
+      "Las zapatillas de trail o botas ligeras con suela adherente te dan estabilidad en tierra, raíces y roca mojada.",
+      "Estrena el calzado nuevo en paseos cortos y usa buenos calcetines para evitar ampollas.",
+      "En playas y costas rocosas, las sandalias con tiras o escarpines protegen más que las chanclas."
+     ],
+     "q": "¿Qué calzado usas para caminar y sigue siendo cómodo tras unas horas?",
+     "c": "Revisa hoy la suela de tu calzado de caminar: ¿todavía agarra bien?"
+    },
+    "fr": {
+     "t": "De bonnes chaussures de marche",
+     "g": "Apprends à choisir des chaussures pour les sentiers, les plages et les chemins rocheux.",
+     "p": [
+      "Des chaussures de trail ou des bottes légères à semelle adhérente te gardent stable sur terre, racines et roche mouillée.",
+      "Fais-toi aux chaussures neuves sur de courtes balades et porte de bonnes chaussettes contre les ampoules.",
+      "Sur les plages et rivages rocheux, des sandales à sangles ou des chaussons d'eau protègent mieux que des tongs."
+     ],
+     "q": "Quelles chaussures portes-tu pour marcher, et restent-elles confortables après quelques heures ?",
+     "c": "Regarde aujourd'hui les semelles de tes chaussures de marche : accrochent-elles encore bien ?"
+    },
+    "it": {
+     "t": "Buone scarpe da camminata",
+     "g": "Impara a scegliere le calzature per sentieri, spiagge e percorsi rocciosi.",
+     "p": [
+      "Scarpe da trail o scarponcini leggeri con suola scolpita ti tengono stabile su terra, radici e roccia bagnata.",
+      "Rodaggio prima: usa le scarpe nuove su brevi passeggiate e indossa buone calze contro le vesciche.",
+      "Su spiagge e scogli, sandali con cinturini o scarpette da scoglio proteggono meglio delle infradito."
+     ],
+     "q": "Che scarpe usi di solito per camminare, e sono comode dopo qualche ora?",
+     "c": "Controlla oggi le suole delle tue scarpe da camminata: hanno ancora buona aderenza?"
+    },
+    "pt": {
+     "t": "Bom calçado para caminhar",
+     "g": "Aprende a escolher calçado para trilhos, praias e caminhos rochosos.",
+     "p": [
+      "Sapatilhas de trail ou botas leves com sola aderente dão-te estabilidade em terra, raízes e rocha molhada.",
+      "Habitua-te ao calçado novo em passeios curtos e usa boas meias para evitar bolhas.",
+      "Em praias e costas rochosas, sandálias com tiras ou sapatos de água protegem mais do que chinelos."
+     ],
+     "q": "Que calçado usas para caminhar, e continua confortável ao fim de umas horas?",
+     "c": "Verifica hoje as solas do teu calçado de caminhada: ainda agarram bem?"
+    },
+    "pt_BR": {
+     "t": "Bons calçados para caminhar",
+     "g": "Aprenda a escolher calçados para trilhas, praias e caminhos com pedras.",
+     "p": [
+      "Tênis de trilha ou botas leves com solado aderente dão firmeza em terra, raízes e pedra molhada.",
+      "Amacie o calçado novo em caminhadas curtas e use boas meias para evitar bolhas.",
+      "Em praias e costões, sandálias com tiras ou sapatilhas aquáticas protegem mais que chinelos."
+     ],
+     "q": "Que calçado você usa para caminhar, e ele continua confortável depois de algumas horas?",
+     "c": "Confira hoje a sola do seu calçado de caminhada: ainda tem boa aderência?"
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple daypack",
+     "g": "Find out what to carry for a few hours outdoors.",
+     "p": [
+      "A small backpack of about 15 to 25 litres is enough for most day trips.",
+      "Carry water, snacks, a light jacket, sun protection, a phone, a small first aid kit and a map.",
+      "Put heavy items close to your back and things you need often in the outside pockets."
+     ],
+     "q": "What is the one item you never forget when you go outside for a few hours?",
+     "c": "Pack a daypack at home with the basics and check how heavy it feels."
+    },
+    "de": {
+     "t": "Ein einfacher Tagesrucksack",
+     "g": "Erfahre, was du für ein paar Stunden draußen mitnehmen solltest.",
+     "p": [
+      "Ein kleiner Rucksack mit etwa 15 bis 25 Litern reicht für die meisten Tagesausflüge.",
+      "Pack Wasser, Snacks, eine leichte Jacke, Sonnenschutz, Handy, ein kleines Erste-Hilfe-Set und eine Karte ein.",
+      "Schweres gehört nah an den Rücken, Dinge, die du oft brauchst, in die Außentaschen."
+     ],
+     "q": "Welchen Gegenstand vergisst du nie, wenn du für ein paar Stunden rausgehst?",
+     "c": "Pack zu Hause einen Tagesrucksack mit dem Wichtigsten und spür, wie schwer er ist."
+    },
+    "es": {
+     "t": "Una mochila de día sencilla",
+     "g": "Descubre qué llevar para unas horas al aire libre.",
+     "p": [
+      "Una mochila pequeña de unos 15 a 25 litros basta para la mayoría de excursiones de un día.",
+      "Lleva agua, algo de comer, una chaqueta ligera, protección solar, el móvil, un pequeño botiquín y un mapa.",
+      "Pon lo pesado cerca de la espalda y lo que usas a menudo en los bolsillos exteriores."
+     ],
+     "q": "¿Qué objeto no olvidas nunca cuando sales unas horas?",
+     "c": "Prepara en casa una mochila con lo básico y comprueba cuánto pesa."
+    },
+    "fr": {
+     "t": "Un petit sac à dos de journée",
+     "g": "Découvre quoi emporter pour quelques heures dehors.",
+     "p": [
+      "Un petit sac d'environ 15 à 25 litres suffit pour la plupart des sorties à la journée.",
+      "Emporte de l'eau, des en-cas, une veste légère, une protection solaire, ton téléphone, une petite trousse de secours et une carte.",
+      "Place le lourd contre ton dos et ce dont tu as souvent besoin dans les poches extérieures."
+     ],
+     "q": "Quel objet n'oublies-tu jamais quand tu pars quelques heures ?",
+     "c": "Prépare un sac de journée chez toi avec l'essentiel et sens son poids."
+    },
+    "it": {
+     "t": "Uno zaino da giornata semplice",
+     "g": "Scopri cosa portare per qualche ora all'aperto.",
+     "p": [
+      "Uno zaino piccolo da circa 15-25 litri basta per la maggior parte delle gite in giornata.",
+      "Porta acqua, snack, una giacca leggera, protezione solare, telefono, un piccolo kit di pronto soccorso e una mappa.",
+      "Metti le cose pesanti vicino alla schiena e quelle che usi spesso nelle tasche esterne."
+     ],
+     "q": "Qual è l'oggetto che non dimentichi mai quando esci per qualche ora?",
+     "c": "Prepara a casa uno zaino con l'essenziale e senti quanto pesa."
+    },
+    "pt": {
+     "t": "Uma mochila de dia simples",
+     "g": "Descobre o que levar para umas horas ao ar livre.",
+     "p": [
+      "Uma mochila pequena de 15 a 25 litros chega para a maioria das saídas de um dia.",
+      "Leva água, snacks, um casaco leve, proteção solar, o telemóvel, um pequeno estojo de primeiros socorros e um mapa.",
+      "Põe o mais pesado junto às costas e o que usas muitas vezes nos bolsos exteriores."
+     ],
+     "q": "Qual é o objeto que nunca esqueces quando sais por umas horas?",
+     "c": "Prepara em casa uma mochila com o essencial e vê quanto pesa."
+    },
+    "pt_BR": {
+     "t": "Uma mochila de ataque simples",
+     "g": "Descubra o que levar para algumas horas ao ar livre.",
+     "p": [
+      "Uma mochila pequena de 15 a 25 litros dá conta da maioria dos passeios de um dia.",
+      "Leve água, lanches, uma jaqueta leve, proteção solar, celular, um kit pequeno de primeiros socorros e um mapa.",
+      "Coloque o que é pesado perto das costas e o que você usa muito nos bolsos externos."
+     ],
+     "q": "Qual item você nunca esquece quando sai por algumas horas?",
+     "c": "Monte em casa uma mochila com o básico e sinta quanto ela pesa."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water and snacks",
+     "g": "Learn how much to drink and which easy energy foods work well on the trail.",
+     "p": [
+      "A common guide is about half a litre of water per hour of walking, more in heat or on steep climbs.",
+      "Sip little and often instead of drinking a lot at once, and start the walk well hydrated.",
+      "Nuts, dried fruit, bananas, sandwiches and cereal bars give steady energy and are easy to carry."
+     ],
+     "q": "What is your favourite snack to take on a walk?",
+     "c": "Plan a trail snack box for a two-hour walk and carry the wrappers back home."
+    },
+    "de": {
+     "t": "Wasser und Snacks",
+     "g": "Lerne, wie viel du trinken solltest und welche Energie-Snacks sich unterwegs eignen.",
+     "p": [
+      "Als Faustregel gilt etwa ein halber Liter Wasser pro Gehstunde, bei Hitze oder steilen Anstiegen mehr.",
+      "Trink oft kleine Schlucke statt viel auf einmal, und starte gut getrunken.",
+      "Nüsse, Trockenobst, Bananen, Brote und Müsliriegel geben gleichmäßig Energie und sind leicht zu tragen."
+     ],
+     "q": "Was ist dein liebster Snack für unterwegs?",
+     "c": "Stell eine Snackbox für zwei Stunden Wandern zusammen und nimm die Verpackungen wieder mit."
+    },
+    "es": {
+     "t": "Agua y tentempiés",
+     "g": "Aprende cuánto beber y qué alimentos energéticos funcionan bien en el sendero.",
+     "p": [
+      "Una guía habitual es medio litro de agua por hora de caminata, más con calor o en subidas fuertes.",
+      "Bebe poco y a menudo en lugar de mucho de golpe, y empieza la ruta bien hidratado.",
+      "Frutos secos, fruta deshidratada, plátanos, bocadillos y barritas dan energía constante y son fáciles de llevar."
+     ],
+     "q": "¿Cuál es tu tentempié favorito para una caminata?",
+     "c": "Prepara una cajita de tentempiés para dos horas de ruta y trae los envoltorios de vuelta."
+    },
+    "fr": {
+     "t": "Eau et en-cas",
+     "g": "Apprends combien boire et quels en-cas énergétiques simples marchent bien en randonnée.",
+     "p": [
+      "Un repère courant est un demi-litre d'eau par heure de marche, plus par forte chaleur ou en montée raide.",
+      "Bois peu mais souvent plutôt que beaucoup d'un coup, et pars bien hydraté.",
+      "Noix, fruits secs, bananes, sandwichs et barres de céréales donnent une énergie stable et se transportent facilement."
+     ],
+     "q": "Quel est ton en-cas préféré en balade ?",
+     "c": "Prépare une boîte d'en-cas pour deux heures de marche et rapporte les emballages chez toi."
+    },
+    "it": {
+     "t": "Acqua e snack",
+     "g": "Impara quanto bere e quali snack energetici funzionano bene sul sentiero.",
+     "p": [
+      "Una regola comune è circa mezzo litro d'acqua per ora di cammino, di più con il caldo o in salita ripida.",
+      "Bevi poco e spesso invece di tanto in una volta, e parti già ben idratato.",
+      "Frutta secca, frutta essiccata, banane, panini e barrette danno energia costante e sono facili da portare."
+     ],
+     "q": "Qual è il tuo snack preferito da portare in passeggiata?",
+     "c": "Prepara una scatolina di snack per due ore di cammino e riporta a casa gli incarti."
+    },
+    "pt": {
+     "t": "Água e snacks",
+     "g": "Aprende quanto beber e que alimentos energéticos simples funcionam bem no trilho.",
+     "p": [
+      "Uma referência comum é meio litro de água por hora de caminhada, mais com calor ou em subidas fortes.",
+      "Bebe pouco e muitas vezes em vez de muito de uma vez, e começa bem hidratado.",
+      "Frutos secos, fruta desidratada, bananas, sandes e barras de cereais dão energia estável e são fáceis de levar."
+     ],
+     "q": "Qual é o teu snack preferido para levar numa caminhada?",
+     "c": "Prepara uma caixa de snacks para duas horas de caminhada e traz as embalagens de volta."
+    },
+    "pt_BR": {
+     "t": "Água e lanches",
+     "g": "Aprenda quanto beber e quais lanches energéticos funcionam bem na trilha.",
+     "p": [
+      "Uma referência comum é meio litro de água por hora de caminhada, mais no calor ou em subidas fortes.",
+      "Beba pouco e com frequência em vez de muito de uma vez, e comece a trilha bem hidratado.",
+      "Castanhas, frutas secas, banana, sanduíches e barrinhas de cereal dão energia constante e são fáceis de levar."
+     ],
+     "q": "Qual é o seu lanche favorito para levar numa caminhada?",
+     "c": "Monte uma marmita de lanches para duas horas de trilha e traga as embalagens de volta."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sun protection",
+     "g": "Learn to protect yourself with hats, sunscreen, sunglasses and shade in open landscapes.",
+     "p": [
+      "Sun is stronger at altitude, near water, on snow and around midday, even when it feels cool.",
+      "Use a wide-brimmed hat, sunglasses with UV protection and sunscreen, reapplied every couple of hours.",
+      "Plan breaks in the shade and cover up with light, long sleeves on very sunny days."
+     ],
+     "q": "Do you usually remember sunscreen, or do you only think of it once you are outside?",
+     "c": "Put a small sunscreen and a hat in your daypack so they are always ready."
+    },
+    "de": {
+     "t": "Sonnenschutz",
+     "g": "Lerne, dich in offener Landschaft mit Hut, Sonnencreme, Sonnenbrille und Schatten zu schützen.",
+     "p": [
+      "Die Sonne ist in der Höhe, am Wasser, auf Schnee und mittags stärker, auch wenn es sich kühl anfühlt.",
+      "Nutze einen breitkrempigen Hut, eine Sonnenbrille mit UV-Schutz und Sonnencreme, die du alle paar Stunden erneuerst.",
+      "Plane Pausen im Schatten und trag an sehr sonnigen Tagen leichte, lange Ärmel."
+     ],
+     "q": "Denkst du meist an Sonnencreme, oder fällt sie dir erst draußen ein?",
+     "c": "Leg eine kleine Sonnencreme und einen Hut in deinen Tagesrucksack, damit sie immer bereit sind."
+    },
+    "es": {
+     "t": "Protección solar",
+     "g": "Aprende a protegerte con sombrero, crema solar, gafas de sol y sombra en paisajes abiertos.",
+     "p": [
+      "El sol es más fuerte en altura, cerca del agua, en la nieve y a mediodía, aunque haga fresco.",
+      "Usa sombrero de ala ancha, gafas con protección UV y crema solar, renovándola cada un par de horas.",
+      "Planea descansos a la sombra y cúbrete con manga larga ligera en días muy soleados."
+     ],
+     "q": "¿Sueles acordarte de la crema solar o solo piensas en ella cuando ya estás fuera?",
+     "c": "Mete una crema solar pequeña y un sombrero en tu mochila para tenerlos siempre listos."
+    },
+    "fr": {
+     "t": "Se protéger du soleil",
+     "g": "Apprends à te protéger avec chapeau, crème solaire, lunettes et ombre dans les paysages ouverts.",
+     "p": [
+      "Le soleil tape plus fort en altitude, près de l'eau, sur la neige et vers midi, même quand il fait frais.",
+      "Porte un chapeau à larges bords, des lunettes anti-UV et de la crème solaire, remise toutes les deux heures environ.",
+      "Prévois des pauses à l'ombre et couvre-toi de manches longues légères les jours très ensoleillés."
+     ],
+     "q": "Penses-tu souvent à la crème solaire, ou seulement une fois dehors ?",
+     "c": "Glisse une petite crème solaire et un chapeau dans ton sac pour qu'ils soient toujours prêts."
+    },
+    "it": {
+     "t": "Protezione dal sole",
+     "g": "Impara a proteggerti con cappello, crema solare, occhiali e ombra nei paesaggi aperti.",
+     "p": [
+      "Il sole è più forte in quota, vicino all'acqua, sulla neve e a mezzogiorno, anche quando sembra fresco.",
+      "Usa un cappello a tesa larga, occhiali con filtro UV e crema solare da rimettere ogni paio d'ore.",
+      "Programma pause all'ombra e copriti con maniche lunghe leggere nelle giornate molto soleggiate."
+     ],
+     "q": "Di solito ti ricordi la crema solare o ci pensi solo quando sei già fuori?",
+     "c": "Metti una crema solare piccola e un cappello nello zaino, così sono sempre pronti."
+    },
+    "pt": {
+     "t": "Proteção solar",
+     "g": "Aprende a proteger-te com chapéu, protetor solar, óculos de sol e sombra em paisagens abertas.",
+     "p": [
+      "O sol é mais forte em altitude, perto da água, na neve e por volta do meio-dia, mesmo quando está fresco.",
+      "Usa chapéu de aba larga, óculos com proteção UV e protetor solar, renovado a cada duas horas, mais ou menos.",
+      "Planeia pausas à sombra e cobre-te com mangas compridas leves em dias de muito sol."
+     ],
+     "q": "Costumas lembrar-te do protetor solar ou só pensas nele quando já estás lá fora?",
+     "c": "Põe um protetor solar pequeno e um chapéu na mochila para estarem sempre prontos."
+    },
+    "pt_BR": {
+     "t": "Proteção contra o sol",
+     "g": "Aprenda a se proteger com chapéu, protetor solar, óculos escuros e sombra em lugares abertos.",
+     "p": [
+      "O sol é mais forte na altitude, perto da água, na neve e por volta do meio-dia, mesmo quando está fresco.",
+      "Use chapéu de aba larga, óculos com proteção UV e protetor solar, reaplicado a cada duas horas mais ou menos.",
+      "Planeje pausas na sombra e use mangas compridas leves em dias de sol forte."
+     ],
+     "q": "Você costuma lembrar do protetor solar ou só pensa nele quando já está lá fora?",
+     "c": "Coloque um protetor solar pequeno e um chapéu na mochila para estarem sempre prontos."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leave No Trace basics",
+     "g": "Meet the seven Leave No Trace principles for enjoying nature without harming it.",
+     "p": [
+      "Plan ahead, stay on durable ground and take all your rubbish home with you.",
+      "Leave what you find, keep fires small or skip them, and respect wildlife from a distance.",
+      "Be considerate of other visitors so everyone can enjoy the quiet and the views."
+     ],
+     "q": "Which of the seven principles do you think people forget most often?",
+     "c": "On your next walk, bring a small bag and carry out any litter you find."
+    },
+    "de": {
+     "t": "Grundlagen von Leave No Trace",
+     "g": "Lerne die sieben Leave-No-Trace-Prinzipien kennen, um Natur zu genießen, ohne ihr zu schaden.",
+     "p": [
+      "Plane voraus, bleib auf festem Untergrund und nimm all deinen Müll wieder mit nach Hause.",
+      "Lass liegen, was du findest, halte Feuer klein oder verzichte darauf und beobachte Tiere aus der Ferne.",
+      "Nimm Rücksicht auf andere Besucher, damit alle Ruhe und Aussicht genießen können."
+     ],
+     "q": "Welches der sieben Prinzipien vergessen Menschen deiner Meinung nach am häufigsten?",
+     "c": "Nimm bei deinem nächsten Spaziergang einen kleinen Beutel mit und sammle gefundenen Müll ein."
+    },
+    "es": {
+     "t": "Lo básico de No Dejar Rastro",
+     "g": "Conoce los siete principios de No Dejar Rastro para disfrutar la naturaleza sin dañarla.",
+     "p": [
+      "Planifica con antelación, pisa terreno resistente y llévate toda tu basura a casa.",
+      "Deja lo que encuentres, haz fuegos pequeños o evítalos y respeta a los animales desde lejos.",
+      "Sé considerado con los demás visitantes para que todos disfruten del silencio y las vistas."
+     ],
+     "q": "¿Qué principio de los siete crees que la gente olvida más a menudo?",
+     "c": "En tu próxima caminata, lleva una bolsita y recoge la basura que encuentres."
+    },
+    "fr": {
+     "t": "Les bases de Sans Trace",
+     "g": "Découvre les sept principes Sans Trace pour profiter de la nature sans l'abîmer.",
+     "p": [
+      "Prépare-toi à l'avance, reste sur des surfaces durables et rapporte tous tes déchets.",
+      "Laisse ce que tu trouves, limite les feux ou évite-les, et respecte la faune de loin.",
+      "Sois respectueux des autres visiteurs pour que chacun profite du calme et des paysages."
+     ],
+     "q": "Quel principe parmi les sept est le plus souvent oublié, selon toi ?",
+     "c": "Lors de ta prochaine balade, emporte un petit sac et ramasse les déchets que tu trouves."
+    },
+    "it": {
+     "t": "Le basi di Leave No Trace",
+     "g": "Conosci i sette principi Leave No Trace per goderti la natura senza danneggiarla.",
+     "p": [
+      "Pianifica in anticipo, cammina su terreni resistenti e riporta a casa tutti i tuoi rifiuti.",
+      "Lascia ciò che trovi, fai fuochi piccoli o evitali e rispetta gli animali da lontano.",
+      "Rispetta gli altri visitatori, così tutti possono godersi silenzio e panorami."
+     ],
+     "q": "Quale dei sette principi secondo te viene dimenticato più spesso?",
+     "c": "Nella prossima passeggiata porta un sacchetto e raccogli i rifiuti che trovi."
+    },
+    "pt": {
+     "t": "O básico de Não Deixar Rasto",
+     "g": "Conhece os sete princípios Não Deixar Rasto para desfrutar da natureza sem a prejudicar.",
+     "p": [
+      "Planeia com antecedência, pisa terreno resistente e leva todo o teu lixo para casa.",
+      "Deixa o que encontras, faz fogueiras pequenas ou evita-as e respeita os animais à distância.",
+      "Sê atencioso com os outros visitantes para que todos aproveitem o silêncio e as vistas."
+     ],
+     "q": "Qual dos sete princípios achas que as pessoas esquecem mais vezes?",
+     "c": "Na tua próxima caminhada, leva um saco pequeno e apanha o lixo que encontrares."
+    },
+    "pt_BR": {
+     "t": "O básico de Não Deixe Rastros",
+     "g": "Conheça os sete princípios Não Deixe Rastros para curtir a natureza sem prejudicá-la.",
+     "p": [
+      "Planeje com antecedência, pise em terreno resistente e leve todo o seu lixo de volta para casa.",
+      "Deixe o que encontrar, faça fogueiras pequenas ou evite-as e respeite os animais de longe.",
+      "Seja atencioso com outros visitantes para que todos curtam o silêncio e a paisagem."
+     ],
+     "q": "Qual dos sete princípios você acha que as pessoas mais esquecem?",
+     "c": "Na sua próxima caminhada, leve um saquinho e recolha o lixo que encontrar."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trail etiquette",
+     "g": "Learn who gives way, why we stay on paths and how to share trails kindly.",
+     "p": [
+      "On narrow paths, walkers going uphill usually have right of way, as stopping on a climb is harder.",
+      "Stay on the marked trail, even when it is muddy, to protect plants and avoid widening the path.",
+      "Greet people, keep music off speakers and step aside to let faster groups pass."
+     ],
+     "q": "Have you ever met someone on a trail who made the walk nicer for everyone?",
+     "c": "Practise a friendly trail greeting today and smile at someone you pass outside."
+    },
+    "de": {
+     "t": "Benimm auf dem Wanderweg",
+     "g": "Lerne, wer Vorrang hat, warum wir auf Wegen bleiben und wie man Wege freundlich teilt.",
+     "p": [
+      "Auf schmalen Wegen hat meist Vorrang, wer bergauf geht, denn Anhalten im Anstieg ist schwerer.",
+      "Bleib auf dem markierten Weg, auch wenn er matschig ist, um Pflanzen zu schützen und den Weg nicht zu verbreitern.",
+      "Grüß andere, lass Musik nicht über Lautsprecher laufen und mach Platz für schnellere Gruppen."
+     ],
+     "q": "Hast du unterwegs schon jemanden getroffen, der den Weg für alle schöner gemacht hat?",
+     "c": "Übe heute einen freundlichen Gruß und lächle jemandem zu, an dem du draußen vorbeigehst."
+    },
+    "es": {
+     "t": "Normas de cortesía en el sendero",
+     "g": "Aprende quién cede el paso, por qué seguimos los caminos y cómo compartir senderos con amabilidad.",
+     "p": [
+      "En caminos estrechos, quien sube suele tener preferencia, porque detenerse en una cuesta cuesta más.",
+      "Sigue el sendero marcado aunque haya barro, para proteger las plantas y no ensanchar el camino.",
+      "Saluda, no pongas música en altavoz y apártate para dejar pasar a grupos más rápidos."
+     ],
+     "q": "¿Te has cruzado alguna vez con alguien en un sendero que hizo la ruta más agradable para todos?",
+     "c": "Practica hoy un saludo amable y sonríe a alguien con quien te cruces fuera."
+    },
+    "fr": {
+     "t": "Le savoir-vivre sur les sentiers",
+     "g": "Apprends qui laisse passer, pourquoi rester sur les chemins et comment partager les sentiers avec gentillesse.",
+     "p": [
+      "Sur un sentier étroit, celui qui monte a en général la priorité, car s'arrêter en montée est plus dur.",
+      "Reste sur le sentier balisé, même boueux, pour protéger les plantes et ne pas élargir le chemin.",
+      "Dis bonjour, évite la musique sur haut-parleur et range-toi pour laisser passer les groupes plus rapides."
+     ],
+     "q": "As-tu déjà croisé quelqu'un sur un sentier qui a rendu la balade plus agréable pour tous ?",
+     "c": "Entraîne-toi à un bonjour chaleureux aujourd'hui et souris à une personne croisée dehors."
+    },
+    "it": {
+     "t": "Galateo del sentiero",
+     "g": "Impara chi dà la precedenza, perché restiamo sui sentieri e come condividerli con gentilezza.",
+     "p": [
+      "Sui sentieri stretti di solito ha la precedenza chi sale, perché fermarsi in salita è più faticoso.",
+      "Resta sul sentiero segnato anche se è fangoso, per proteggere le piante e non allargare il tracciato.",
+      "Saluta, non usare musica dalle casse e fatti da parte per far passare i gruppi più veloci."
+     ],
+     "q": "Hai mai incontrato qualcuno su un sentiero che ha reso la camminata più bella per tutti?",
+     "c": "Oggi prova un saluto cordiale e sorridi a qualcuno che incroci all'aperto."
+    },
+    "pt": {
+     "t": "Etiqueta nos trilhos",
+     "g": "Aprende quem dá passagem, porque ficamos nos caminhos e como partilhar trilhos com simpatia.",
+     "p": [
+      "Em trilhos estreitos, quem sobe costuma ter prioridade, porque parar numa subida custa mais.",
+      "Fica no trilho marcado mesmo com lama, para proteger as plantas e não alargar o caminho.",
+      "Cumprimenta as pessoas, não ponhas música em coluna e afasta-te para deixar passar grupos mais rápidos."
+     ],
+     "q": "Já te cruzaste num trilho com alguém que tornou a caminhada mais agradável para todos?",
+     "c": "Pratica hoje um cumprimento simpático e sorri a alguém com quem te cruzes na rua."
+    },
+    "pt_BR": {
+     "t": "Etiqueta na trilha",
+     "g": "Aprenda quem dá passagem, por que ficamos na trilha e como dividir o caminho com gentileza.",
+     "p": [
+      "Em trilhas estreitas, quem sobe costuma ter a preferência, porque parar numa subida é mais difícil.",
+      "Fique na trilha marcada mesmo com lama, para proteger as plantas e não alargar o caminho.",
+      "Cumprimente as pessoas, não toque música em caixa de som e dê passagem para grupos mais rápidos."
+     ],
+     "q": "Você já cruzou com alguém numa trilha que deixou a caminhada mais gostosa para todos?",
+     "c": "Pratique hoje um cumprimento simpático e sorria para alguém que passar por você na rua."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Easy first walks",
+     "g": "Discover short loops, boardwalks and flat lakeside paths that are perfect for beginners.",
+     "p": [
+      "Loop trails bring you back to the start without retracing your steps and are easy to plan.",
+      "Boardwalks cross wetlands and dunes gently while protecting the fragile ground beneath.",
+      "Flat paths around lakes or along rivers give big views with little effort."
+     ],
+     "q": "What kind of easy walk sounds best to you: forest loop, lakeside path or boardwalk?",
+     "c": "Find one easy loop of under five kilometres near you and save it for the weekend."
+    },
+    "de": {
+     "t": "Leichte erste Wanderungen",
+     "g": "Entdecke kurze Rundwege, Holzstege und flache Seeuferwege, ideal für Einsteiger.",
+     "p": [
+      "Rundwege führen dich zum Start zurück, ohne denselben Weg zweimal zu gehen, und sind leicht zu planen.",
+      "Holzstege führen sanft über Moore und Dünen und schützen dabei den empfindlichen Boden.",
+      "Flache Wege um Seen oder entlang von Flüssen bieten weite Blicke mit wenig Anstrengung."
+     ],
+     "q": "Welche leichte Tour klingt für dich am schönsten: Waldrunde, Seeuferweg oder Holzsteg?",
+     "c": "Such dir einen leichten Rundweg unter fünf Kilometern in deiner Nähe für das Wochenende."
+    },
+    "es": {
+     "t": "Primeras rutas fáciles",
+     "g": "Descubre circuitos cortos, pasarelas de madera y caminos llanos junto a lagos, ideales para empezar.",
+     "p": [
+      "Las rutas circulares te devuelven al inicio sin repetir camino y son fáciles de planear.",
+      "Las pasarelas cruzan humedales y dunas con suavidad y protegen el suelo frágil que hay debajo.",
+      "Los caminos llanos junto a lagos o ríos dan grandes vistas con poco esfuerzo."
+     ],
+     "q": "¿Qué ruta fácil te apetece más: circuito por el bosque, orilla de un lago o pasarela?",
+     "c": "Busca una ruta circular fácil de menos de cinco kilómetros cerca de ti y guárdala para el finde."
+    },
+    "fr": {
+     "t": "Premières balades faciles",
+     "g": "Découvre les petites boucles, caillebotis et chemins plats au bord des lacs, parfaits pour débuter.",
+     "p": [
+      "Les boucles te ramènent au départ sans revenir sur tes pas et se planifient facilement.",
+      "Les caillebotis traversent marais et dunes en douceur tout en protégeant le sol fragile.",
+      "Les chemins plats autour des lacs ou le long des rivières offrent de belles vues sans gros effort."
+     ],
+     "q": "Quelle balade facile te tente le plus : boucle en forêt, tour de lac ou caillebotis ?",
+     "c": "Trouve une boucle facile de moins de cinq kilomètres près de chez toi pour le week-end."
+    },
+    "it": {
+     "t": "Prime passeggiate facili",
+     "g": "Scopri brevi anelli, passerelle in legno e sentieri pianeggianti lungo i laghi, perfetti per iniziare.",
+     "p": [
+      "I percorsi ad anello ti riportano al punto di partenza senza rifare la stessa strada e sono facili da pianificare.",
+      "Le passerelle attraversano zone umide e dune con dolcezza, proteggendo il terreno fragile sotto.",
+      "I sentieri piani intorno ai laghi o lungo i fiumi regalano grandi panorami con poca fatica."
+     ],
+     "q": "Quale passeggiata facile ti attira di più: anello nel bosco, giro del lago o passerella?",
+     "c": "Trova un anello facile sotto i cinque chilometri vicino a te e salvalo per il weekend."
+    },
+    "pt": {
+     "t": "Primeiras caminhadas fáceis",
+     "g": "Descobre percursos circulares curtos, passadiços e caminhos planos junto a lagos, ideais para começar.",
+     "p": [
+      "Os percursos circulares levam-te de volta ao início sem repetir caminho e são fáceis de planear.",
+      "Os passadiços atravessam zonas húmidas e dunas com suavidade e protegem o solo frágil por baixo.",
+      "Caminhos planos à volta de lagos ou ao longo de rios dão grandes vistas com pouco esforço."
+     ],
+     "q": "Que caminhada fácil te atrai mais: circuito na floresta, margem de um lago ou passadiço?",
+     "c": "Encontra um percurso circular fácil com menos de cinco quilómetros perto de ti para o fim de semana."
+    },
+    "pt_BR": {
+     "t": "Primeiras trilhas fáceis",
+     "g": "Descubra trilhas circulares curtas, passarelas de madeira e caminhos planos à beira de lagos, ótimos para começar.",
+     "p": [
+      "Trilhas circulares levam você de volta ao início sem repetir o caminho e são fáceis de planejar.",
+      "Passarelas cruzam áreas alagadas e dunas com suavidade e protegem o solo frágil embaixo.",
+      "Caminhos planos em volta de lagos ou à beira de rios dão vistas lindas com pouco esforço."
+     ],
+     "q": "Qual trilha fácil parece melhor para você: circuito na mata, beira de lago ou passarela?",
+     "c": "Encontre uma trilha circular fácil de menos de cinco quilômetros perto de você para o fim de semana."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Following trail markers",
+     "g": "Learn to read waymarks, blazes and signposts so you stay on route.",
+     "p": [
+      "Blazes are painted marks on trees or rocks; each route keeps the same colour or shape along the way.",
+      "Two marks stacked or a bent arrow often signal a turn, so slow down and look around.",
+      "If you have not seen a marker for a while, go back to the last one you saw rather than guessing."
+     ],
+     "q": "Have you ever taken a wrong turn on a walk? How did you find your way back?",
+     "c": "Look up what trail markers look like in a park or region you want to visit."
+    },
+    "de": {
+     "t": "Wegmarkierungen folgen",
+     "g": "Lerne, Markierungen, Farbzeichen und Wegweiser zu lesen, damit du auf Kurs bleibst.",
+     "p": [
+      "Farbzeichen auf Bäumen oder Steinen behalten auf einer Route meist dieselbe Farbe oder Form.",
+      "Zwei Zeichen übereinander oder ein abgeknickter Pfeil zeigen oft eine Abzweigung: langsamer werden und schauen.",
+      "Hast du lange kein Zeichen gesehen, geh zum letzten zurück, statt zu raten."
+     ],
+     "q": "Hast du dich auf einer Wanderung schon mal verlaufen? Wie hast du zurückgefunden?",
+     "c": "Finde heraus, wie die Wegmarkierungen in einer Region aussehen, die du besuchen möchtest."
+    },
+    "es": {
+     "t": "Seguir las marcas del sendero",
+     "g": "Aprende a leer balizas, marcas pintadas y postes indicadores para no perderte.",
+     "p": [
+      "Las marcas pintadas en árboles o rocas mantienen el mismo color o forma a lo largo de cada ruta.",
+      "Dos marcas superpuestas o una flecha doblada suelen indicar un giro: ve más despacio y mira bien.",
+      "Si hace rato que no ves una marca, vuelve a la última que viste en lugar de adivinar."
+     ],
+     "q": "¿Alguna vez te equivocaste de camino en una ruta? ¿Cómo encontraste la vuelta?",
+     "c": "Busca cómo son las marcas de los senderos en una región que quieras visitar."
+    },
+    "fr": {
+     "t": "Suivre le balisage",
+     "g": "Apprends à lire balises, marques peintes et panneaux pour rester sur ton itinéraire.",
+     "p": [
+      "Les marques peintes sur les arbres ou rochers gardent la même couleur ou forme tout au long d'un sentier.",
+      "Deux marques superposées ou une flèche coudée signalent souvent un changement de direction : ralentis et regarde.",
+      "Si tu n'as pas vu de balise depuis un moment, retourne à la dernière plutôt que de deviner."
+     ],
+     "q": "T'es-tu déjà trompé de chemin en balade ? Comment as-tu retrouvé ta route ?",
+     "c": "Regarde à quoi ressemble le balisage dans une région que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Seguire la segnaletica",
+     "g": "Impara a leggere segnavia, bolli colorati e cartelli per restare sul percorso.",
+     "p": [
+      "I segni dipinti su alberi o rocce mantengono lo stesso colore o forma lungo tutto il sentiero.",
+      "Due segni sovrapposti o una freccia piegata indicano spesso una svolta: rallenta e guarda bene.",
+      "Se da un po' non vedi segnali, torna all'ultimo che hai visto invece di tirare a indovinare."
+     ],
+     "q": "Ti è mai capitato di sbagliare strada durante una camminata? Come hai ritrovato il percorso?",
+     "c": "Cerca com'è la segnaletica dei sentieri in una zona che vorresti visitare."
+    },
+    "pt": {
+     "t": "Seguir as marcas do trilho",
+     "g": "Aprende a ler marcas, sinais pintados e placas para não te perderes.",
+     "p": [
+      "As marcas pintadas em árvores ou rochas mantêm a mesma cor ou forma ao longo de cada percurso.",
+      "Duas marcas sobrepostas ou uma seta dobrada costumam indicar uma mudança de direção: abranda e olha.",
+      "Se há algum tempo não vês uma marca, volta à última que viste em vez de adivinhar."
+     ],
+     "q": "Já te enganaste no caminho numa caminhada? Como encontraste o percurso de novo?",
+     "c": "Procura como são as marcas dos trilhos numa região que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Seguindo a sinalização da trilha",
+     "g": "Aprenda a ler marcações, sinais pintados e placas para não sair da rota.",
+     "p": [
+      "As marcas pintadas em árvores ou pedras mantêm a mesma cor ou forma ao longo de cada trilha.",
+      "Duas marcas empilhadas ou uma seta dobrada costumam indicar uma curva: vá mais devagar e olhe bem.",
+      "Se faz tempo que você não vê uma marca, volte até a última que viu em vez de chutar."
+     ],
+     "q": "Você já pegou o caminho errado numa trilha? Como encontrou a volta?",
+     "c": "Pesquise como é a sinalização das trilhas numa região que você quer visitar."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Telling someone your plan",
+     "g": "Learn why sharing your route and return time is a key safety habit.",
+     "p": [
+      "Before you leave, tell a friend or family member where you are going and when you expect to be back.",
+      "Agree on what they should do if they do not hear from you by a set time.",
+      "Let them know when you are safely back, so nobody worries without reason."
+     ],
+     "q": "Who would you tell about your route before a nature trip?",
+     "c": "Write a short trip plan message you could send to a friend: place, route and return time."
+    },
+    "de": {
+     "t": "Jemandem den Plan mitteilen",
+     "g": "Lerne, warum es eine wichtige Sicherheitsgewohnheit ist, Route und Rückkehrzeit zu teilen.",
+     "p": [
+      "Sag vor dem Aufbruch Freunden oder Familie, wohin du gehst und wann du zurück sein willst.",
+      "Vereinbart, was sie tun sollen, wenn sie bis zu einer bestimmten Zeit nichts von dir hören.",
+      "Melde dich, wenn du sicher zurück bist, damit sich niemand grundlos sorgt."
+     ],
+     "q": "Wem würdest du vor einem Naturausflug deine Route mitteilen?",
+     "c": "Schreib eine kurze Nachricht mit deinem Plan: Ort, Route und Rückkehrzeit."
+    },
+    "es": {
+     "t": "Contarle a alguien tu plan",
+     "g": "Aprende por qué compartir tu ruta y tu hora de vuelta es un hábito de seguridad clave.",
+     "p": [
+      "Antes de salir, dile a un amigo o familiar adónde vas y a qué hora piensas volver.",
+      "Acordad qué debe hacer si no tiene noticias tuyas a cierta hora.",
+      "Avísale cuando estés de vuelta, para que nadie se preocupe sin motivo."
+     ],
+     "q": "¿A quién le contarías tu ruta antes de una salida a la naturaleza?",
+     "c": "Escribe un mensaje corto con tu plan: lugar, ruta y hora de regreso."
+    },
+    "fr": {
+     "t": "Prévenir quelqu'un de ton plan",
+     "g": "Apprends pourquoi partager ton itinéraire et ton heure de retour est une habitude de sécurité essentielle.",
+     "p": [
+      "Avant de partir, dis à un ami ou un proche où tu vas et à quelle heure tu comptes rentrer.",
+      "Convenez de ce qu'il doit faire s'il n'a pas de nouvelles de toi à une heure précise.",
+      "Préviens-le quand tu es bien rentré, pour que personne ne s'inquiète inutilement."
+     ],
+     "q": "À qui parlerais-tu de ton itinéraire avant une sortie nature ?",
+     "c": "Rédige un court message avec ton plan : lieu, itinéraire et heure de retour."
+    },
+    "it": {
+     "t": "Dire a qualcuno il tuo piano",
+     "g": "Impara perché condividere percorso e orario di rientro è un'abitudine di sicurezza fondamentale.",
+     "p": [
+      "Prima di partire, di' a un amico o un familiare dove vai e quando pensi di tornare.",
+      "Concordate cosa deve fare se non ha tue notizie entro un certo orario.",
+      "Avvisalo quando sei rientrato, così nessuno si preoccupa senza motivo."
+     ],
+     "q": "A chi diresti il tuo percorso prima di una gita nella natura?",
+     "c": "Scrivi un breve messaggio con il tuo piano: luogo, percorso e ora di rientro."
+    },
+    "pt": {
+     "t": "Contar o teu plano a alguém",
+     "g": "Aprende porque partilhar o percurso e a hora de regresso é um hábito de segurança essencial.",
+     "p": [
+      "Antes de saíres, diz a um amigo ou familiar para onde vais e quando contas voltar.",
+      "Combinem o que deve fazer se não tiver notícias tuas até uma certa hora.",
+      "Avisa quando estiveres de volta, para ninguém se preocupar sem motivo."
+     ],
+     "q": "A quem contarias o teu percurso antes de uma saída à natureza?",
+     "c": "Escreve uma mensagem curta com o teu plano: local, percurso e hora de regresso."
+    },
+    "pt_BR": {
+     "t": "Contando seu plano para alguém",
+     "g": "Aprenda por que compartilhar a rota e o horário de volta é um hábito de segurança essencial.",
+     "p": [
+      "Antes de sair, conte a um amigo ou parente aonde você vai e quando pretende voltar.",
+      "Combinem o que a pessoa deve fazer se não tiver notícias suas até um certo horário.",
+      "Avise quando estiver de volta, para ninguém se preocupar à toa."
+     ],
+     "q": "Para quem você contaria sua rota antes de um passeio na natureza?",
+     "c": "Escreva uma mensagem curta com seu plano: lugar, trilha e horário de volta."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone tips outdoors",
+     "g": "Learn about offline maps, saving battery and what to do when there is no signal.",
+     "p": [
+      "Download offline maps of the area before you leave, because signal often disappears in valleys and forests.",
+      "Save battery with airplane mode and low brightness, and carry a small power bank.",
+      "No signal? Stay calm, follow your planned route and move to higher open ground if you need to call."
+     ],
+     "q": "Do you use any apps on nature trips, like maps or plant and bird identifiers?",
+     "c": "Download an offline map of a nature area you would like to visit."
+    },
+    "de": {
+     "t": "Handy-Tipps für draußen",
+     "g": "Lerne mehr über Offline-Karten, Akku sparen und was zu tun ist, wenn es keinen Empfang gibt.",
+     "p": [
+      "Lade vorher Offline-Karten des Gebiets herunter, denn in Tälern und Wäldern fehlt oft der Empfang.",
+      "Spar Akku mit Flugmodus und geringer Helligkeit und nimm eine kleine Powerbank mit.",
+      "Kein Netz? Bleib ruhig, folge deiner geplanten Route und geh zum Telefonieren auf eine offene Anhöhe."
+     ],
+     "q": "Nutzt du Apps auf Naturausflügen, etwa Karten oder Pflanzen- und Vogelbestimmung?",
+     "c": "Lade eine Offline-Karte eines Naturgebiets herunter, das du besuchen möchtest."
+    },
+    "es": {
+     "t": "Trucos con el móvil al aire libre",
+     "g": "Aprende sobre mapas sin conexión, ahorro de batería y qué hacer cuando no hay cobertura.",
+     "p": [
+      "Descarga mapas sin conexión de la zona antes de salir, porque en valles y bosques la cobertura suele fallar.",
+      "Ahorra batería con el modo avión y poco brillo, y lleva una batería externa pequeña.",
+      "¿Sin cobertura? Mantén la calma, sigue tu ruta prevista y sube a un lugar alto y abierto si necesitas llamar."
+     ],
+     "q": "¿Usas alguna app en tus salidas, como mapas o identificadores de plantas y aves?",
+     "c": "Descarga un mapa sin conexión de una zona natural que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Astuces téléphone en plein air",
+     "g": "Apprends à utiliser les cartes hors ligne, à économiser ta batterie et à réagir sans réseau.",
+     "p": [
+      "Télécharge des cartes hors ligne avant de partir : le réseau disparaît souvent dans les vallées et les forêts.",
+      "Économise la batterie avec le mode avion et une luminosité basse, et emporte une petite batterie externe.",
+      "Pas de réseau ? Reste calme, suis ton itinéraire prévu et monte sur un point haut et dégagé pour appeler si besoin."
+     ],
+     "q": "Utilises-tu des applis en sortie nature, comme des cartes ou des identificateurs de plantes et d'oiseaux ?",
+     "c": "Télécharge une carte hors ligne d'un espace naturel que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Consigli per il telefono all'aperto",
+     "g": "Impara a usare le mappe offline, a risparmiare batteria e cosa fare quando non c'è campo.",
+     "p": [
+      "Scarica le mappe offline della zona prima di partire, perché in valli e boschi il segnale spesso sparisce.",
+      "Risparmia batteria con la modalità aereo e luminosità bassa, e porta un piccolo powerbank.",
+      "Niente campo? Resta calmo, segui il percorso previsto e sali in un punto alto e aperto se devi chiamare."
+     ],
+     "q": "Usi qualche app nelle gite, come mappe o riconoscimento di piante e uccelli?",
+     "c": "Scarica una mappa offline di un'area naturale che vorresti visitare."
+    },
+    "pt": {
+     "t": "Dicas de telemóvel ao ar livre",
+     "g": "Aprende sobre mapas offline, poupar bateria e o que fazer quando não há rede.",
+     "p": [
+      "Descarrega mapas offline da zona antes de saíres, porque em vales e florestas a rede costuma falhar.",
+      "Poupa bateria com o modo de voo e brilho baixo, e leva um pequeno powerbank.",
+      "Sem rede? Mantém a calma, segue o percurso planeado e sobe a um sítio alto e aberto se precisares de ligar."
+     ],
+     "q": "Usas alguma app nas saídas, como mapas ou identificadores de plantas e aves?",
+     "c": "Descarrega um mapa offline de uma zona natural que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Dicas de celular ao ar livre",
+     "g": "Aprenda sobre mapas offline, economia de bateria e o que fazer quando não há sinal.",
+     "p": [
+      "Baixe mapas offline da região antes de sair, porque em vales e matas o sinal costuma sumir.",
+      "Economize bateria com modo avião e brilho baixo, e leve um carregador portátil pequeno.",
+      "Sem sinal? Mantenha a calma, siga a rota planejada e suba para um lugar alto e aberto se precisar ligar."
+     ],
+     "q": "Você usa algum app nos passeios, como mapas ou identificadores de plantas e aves?",
+     "c": "Baixe um mapa offline de uma área natural que você gostaria de visitar."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "nature_trips",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: by the sea",
+     "g": "Recap beaches, tides, swimming safety and coral reefs.",
+     "p": [
+      "Beaches come in many colours, made by waves, rivers, volcanoes and shells over long periods.",
+      "Tides follow the Moon; tide tables keep rock pool walks and coastal paths safe.",
+      "Swim near lifeguards, know the local flags, float and swim sideways out of a rip, and never touch coral."
+     ],
+     "q": "What is your favourite memory by the sea, or the sea trip you dream of?",
+     "c": "Teach a friend how to escape a rip current in three simple steps."
+    },
+    "de": {
+     "t": "Rückblick: am Meer",
+     "g": "Wiederhole Strände, Gezeiten, sicheres Schwimmen und Korallenriffe.",
+     "p": [
+      "Strände gibt es in vielen Farben, geformt von Wellen, Flüssen, Vulkanen und Muscheln über lange Zeit.",
+      "Gezeiten folgen dem Mond; Gezeitentabellen machen Tümpeltouren und Küstenwege sicher.",
+      "Bei Rettungsschwimmern baden, Flaggen kennen, aus Rückströmungen seitlich schwimmen und Korallen nie berühren."
+     ],
+     "q": "Was ist deine schönste Erinnerung ans Meer, oder von welcher Meeresreise träumst du?",
+     "c": "Erklär einer Freundin oder einem Freund in drei Schritten, wie man aus einer Rückströmung kommt."
+    },
+    "es": {
+     "t": "Repaso: junto al mar",
+     "g": "Repasa playas, mareas, seguridad en el baño y arrecifes de coral.",
+     "p": [
+      "Las playas tienen muchos colores, creados por olas, ríos, volcanes y conchas durante mucho tiempo.",
+      "Las mareas siguen a la Luna; las tablas de mareas hacen seguras las pozas y los caminos costeros.",
+      "Báñate cerca de socorristas, conoce las banderas, sal de una resaca nadando en paralelo y nunca toques el coral."
+     ],
+     "q": "¿Cuál es tu mejor recuerdo junto al mar, o con qué viaje al mar sueñas?",
+     "c": "Explícale a un amigo en tres pasos cómo salir de una corriente de resaca."
+    },
+    "fr": {
+     "t": "Révision : au bord de la mer",
+     "g": "Révise plages, marées, baignade en sécurité et récifs coralliens.",
+     "p": [
+      "Les plages ont mille couleurs, façonnées par les vagues, les rivières, les volcans et les coquillages au fil du temps.",
+      "Les marées suivent la Lune ; les horaires de marée sécurisent pêche à pied et sentiers côtiers.",
+      "Nage près des sauveteurs, connais les drapeaux, sors d'un courant en nageant parallèlement et ne touche jamais le corail."
+     ],
+     "q": "Quel est ton plus beau souvenir à la mer, ou le voyage au bord de l'eau dont tu rêves ?",
+     "c": "Explique à un ami en trois étapes comment sortir d'un courant d'arrachement."
+    },
+    "it": {
+     "t": "Ripasso: al mare",
+     "g": "Ripassa spiagge, maree, sicurezza in acqua e barriere coralline.",
+     "p": [
+      "Le spiagge hanno tanti colori, creati nel tempo da onde, fiumi, vulcani e conchiglie.",
+      "Le maree seguono la Luna; le tabelle rendono sicure le pozze e i sentieri costieri.",
+      "Nuota vicino ai bagnini, conosci le bandiere, esci dalla risacca nuotando parallelo e non toccare mai il corallo."
+     ],
+     "q": "Qual è il tuo ricordo più bello al mare, o il viaggio al mare che sogni?",
+     "c": "Spiega a un amico in tre passi come uscire da una corrente di risacca."
+    },
+    "pt": {
+     "t": "Revisão: à beira-mar",
+     "g": "Revê praias, marés, segurança a nadar e recifes de coral.",
+     "p": [
+      "As praias têm muitas cores, criadas por ondas, rios, vulcões e conchas ao longo de muito tempo.",
+      "As marés seguem a Lua; as tabelas de marés tornam seguras as poças e os caminhos costeiros.",
+      "Nada perto de nadadores-salvadores, conhece as bandeiras, sai de um agueiro nadando paralelo e nunca toques no coral."
+     ],
+     "q": "Qual é a tua melhor memória junto ao mar, ou com que viagem à beira-mar sonhas?",
+     "c": "Explica a um amigo em três passos como sair de uma corrente de retorno."
+    },
+    "pt_BR": {
+     "t": "Revisão: à beira-mar",
+     "g": "Revise praias, marés, segurança no mar e recifes de coral.",
+     "p": [
+      "As praias têm muitas cores, criadas ao longo do tempo por ondas, rios, vulcões e conchas.",
+      "As marés seguem a Lua; a tábua de marés deixa seguras as poças e as trilhas pelo litoral.",
+      "Nade perto de salva-vidas, conheça as bandeiras, saia da correnteza nadando paralelo e nunca toque no coral."
+     ],
+     "q": "Qual é sua melhor lembrança de praia, ou com qual viagem para o mar você sonha?",
+     "c": "Explique para um amigo em três passos como sair de uma corrente de retorno."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mountains for beginners",
+     "g": "Learn what makes a mountain and the difference between hills, ranges and peaks.",
+     "p": [
+      "There is no single world definition, but mountains rise steeply and much higher than the land around them.",
+      "Most mountains form when Earth's plates push together and fold rock upwards; others are volcanoes.",
+      "A range is a chain of mountains, a peak is a single summit and a pass is a lower crossing between them."
+     ],
+     "q": "Is there a hill or mountain you can see from your home or town?",
+     "c": "Find the highest point in your region and look up how tall it is."
+    },
+    "de": {
+     "t": "Berge für Einsteiger",
+     "g": "Lerne, was einen Berg ausmacht und wie sich Hügel, Gebirge und Gipfel unterscheiden.",
+     "p": [
+      "Eine weltweit einheitliche Definition gibt es nicht, aber Berge ragen steil und deutlich über ihre Umgebung.",
+      "Die meisten Berge entstehen, wenn Erdplatten zusammenstoßen und Gestein nach oben falten; andere sind Vulkane.",
+      "Ein Gebirge ist eine Kette von Bergen, ein Gipfel ein einzelner höchster Punkt und ein Pass ein tieferer Übergang."
+     ],
+     "q": "Gibt es einen Hügel oder Berg, den du von zu Hause oder deiner Stadt aus siehst?",
+     "c": "Finde den höchsten Punkt deiner Region und schau nach, wie hoch er ist."
+    },
+    "es": {
+     "t": "Montañas para principiantes",
+     "g": "Aprende qué hace a una montaña y la diferencia entre colinas, cordilleras y cumbres.",
+     "p": [
+      "No hay una definición única mundial, pero las montañas se elevan de forma empinada muy por encima de su entorno.",
+      "La mayoría se forman cuando las placas de la Tierra chocan y pliegan la roca hacia arriba; otras son volcanes.",
+      "Una cordillera es una cadena de montañas, una cumbre es una cima concreta y un puerto es un paso más bajo entre ellas."
+     ],
+     "q": "¿Hay alguna colina o montaña que se vea desde tu casa o tu ciudad?",
+     "c": "Busca el punto más alto de tu región y averigua cuánto mide."
+    },
+    "fr": {
+     "t": "La montagne pour débutants",
+     "g": "Découvre ce qui fait une montagne et la différence entre collines, chaînes et sommets.",
+     "p": [
+      "Il n'existe pas de définition mondiale unique, mais une montagne s'élève de façon abrupte bien au-dessus de ses alentours.",
+      "La plupart naissent quand les plaques terrestres se heurtent et plissent la roche vers le haut ; d'autres sont des volcans.",
+      "Une chaîne est une suite de montagnes, un sommet un point culminant et un col un passage plus bas entre elles."
+     ],
+     "q": "Y a-t-il une colline ou une montagne visible depuis chez toi ou ta ville ?",
+     "c": "Trouve le point le plus haut de ta région et cherche son altitude."
+    },
+    "it": {
+     "t": "Montagne per principianti",
+     "g": "Scopri cosa rende una montagna tale e la differenza tra colline, catene e vette.",
+     "p": [
+      "Non esiste una definizione mondiale unica, ma le montagne si innalzano ripide molto sopra il terreno circostante.",
+      "Quasi tutte nascono quando le placche terrestri si scontrano e piegano la roccia verso l'alto; altre sono vulcani.",
+      "Una catena è una serie di montagne, una vetta è una singola cima e un passo è un valico più basso tra di esse."
+     ],
+     "q": "C'è una collina o una montagna che vedi da casa tua o dalla tua città?",
+     "c": "Trova il punto più alto della tua regione e scopri quanto è alto."
+    },
+    "pt": {
+     "t": "Montanhas para principiantes",
+     "g": "Aprende o que faz uma montanha e a diferença entre colinas, cordilheiras e cumes.",
+     "p": [
+      "Não há uma definição mundial única, mas as montanhas erguem-se de forma íngreme bem acima do terreno à volta.",
+      "A maioria forma-se quando as placas da Terra chocam e dobram a rocha para cima; outras são vulcões.",
+      "Uma cordilheira é uma cadeia de montanhas, um cume é um topo e um colo é uma passagem mais baixa entre eles."
+     ],
+     "q": "Há alguma colina ou montanha que consigas ver de tua casa ou da tua cidade?",
+     "c": "Descobre o ponto mais alto da tua região e quanto mede."
+    },
+    "pt_BR": {
+     "t": "Montanhas para iniciantes",
+     "g": "Aprenda o que faz uma montanha e a diferença entre morros, cordilheiras e picos.",
+     "p": [
+      "Não existe uma definição mundial única, mas montanhas se erguem de forma íngreme bem acima do terreno em volta.",
+      "A maioria se forma quando as placas da Terra se chocam e dobram a rocha para cima; outras são vulcões.",
+      "Cordilheira é uma cadeia de montanhas, pico é um cume e passo é uma passagem mais baixa entre elas."
+     ],
+     "q": "Tem algum morro ou montanha que você vê da sua casa ou cidade?",
+     "c": "Descubra o ponto mais alto da sua região e qual é a altura dele."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Altitude basics",
+     "g": "Understand why the air feels thinner higher up and why going up slowly helps.",
+     "p": [
+      "Higher up, air pressure is lower, so each breath brings in less oxygen than at sea level.",
+      "Above about 2,500 metres some people feel headaches, tiredness or poor sleep: signs of altitude sickness.",
+      "Go up gradually, drink water, rest well and go back down if you feel unwell; that is the best cure."
+     ],
+     "q": "Have you ever been somewhere really high? How did your body feel?",
+     "c": "Look up the altitude of your town and of a mountain place you would like to visit."
+    },
+    "de": {
+     "t": "Höhe verstehen",
+     "g": "Verstehe, warum die Luft weiter oben dünner wirkt und warum langsames Aufsteigen hilft.",
+     "p": [
+      "In der Höhe ist der Luftdruck niedriger, deshalb bringt jeder Atemzug weniger Sauerstoff als am Meer.",
+      "Über etwa 2.500 Metern bekommen manche Kopfweh, Müdigkeit oder schlafen schlecht: Zeichen der Höhenkrankheit.",
+      "Steig langsam auf, trink Wasser, ruh dich aus und geh wieder hinunter, wenn es dir schlecht geht; das hilft am besten."
+     ],
+     "q": "Warst du schon einmal richtig hoch oben? Wie hat sich dein Körper angefühlt?",
+     "c": "Finde die Höhe deines Wohnorts und eines Bergorts heraus, den du besuchen möchtest."
+    },
+    "es": {
+     "t": "Lo básico de la altitud",
+     "g": "Entiende por qué el aire parece más fino en altura y por qué subir despacio ayuda.",
+     "p": [
+      "En altura la presión del aire es menor, así que cada respiración aporta menos oxígeno que a nivel del mar.",
+      "Por encima de unos 2.500 metros, algunas personas sienten dolor de cabeza, cansancio o mal sueño: señales del mal de altura.",
+      "Sube poco a poco, bebe agua, descansa bien y baja si te encuentras mal; es el mejor remedio."
+     ],
+     "q": "¿Has estado alguna vez en un lugar muy alto? ¿Cómo se sintió tu cuerpo?",
+     "c": "Busca la altitud de tu ciudad y la de un lugar de montaña que quieras visitar."
+    },
+    "fr": {
+     "t": "Les bases de l'altitude",
+     "g": "Comprends pourquoi l'air semble plus léger en hauteur et pourquoi monter lentement aide.",
+     "p": [
+      "En altitude, la pression de l'air baisse, donc chaque respiration apporte moins d'oxygène qu'au niveau de la mer.",
+      "Au-delà d'environ 2 500 mètres, certains ont mal à la tête, sont fatigués ou dorment mal : signes du mal des montagnes.",
+      "Monte progressivement, bois de l'eau, repose-toi et redescends si tu te sens mal ; c'est le meilleur remède."
+     ],
+     "q": "Es-tu déjà allé très haut ? Comment ton corps a-t-il réagi ?",
+     "c": "Cherche l'altitude de ta ville et celle d'un lieu de montagne que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Basi sull'altitudine",
+     "g": "Capisci perché in quota l'aria sembra più sottile e perché salire piano aiuta.",
+     "p": [
+      "In quota la pressione dell'aria è più bassa, quindi ogni respiro porta meno ossigeno che al livello del mare.",
+      "Oltre circa 2.500 metri alcune persone hanno mal di testa, stanchezza o sonno agitato: segnali del mal di montagna.",
+      "Sali gradualmente, bevi acqua, riposa bene e scendi se non ti senti bene; è il rimedio migliore."
+     ],
+     "q": "Sei mai stato in un posto molto alto? Come si sentiva il tuo corpo?",
+     "c": "Cerca l'altitudine della tua città e di un luogo di montagna che vorresti visitare."
+    },
+    "pt": {
+     "t": "O básico da altitude",
+     "g": "Percebe porque o ar parece mais rarefeito lá em cima e porque subir devagar ajuda.",
+     "p": [
+      "Em altitude a pressão do ar é menor, por isso cada respiração traz menos oxigénio do que ao nível do mar.",
+      "Acima de cerca de 2500 metros, algumas pessoas sentem dor de cabeça, cansaço ou dormem mal: sinais do mal de altitude.",
+      "Sobe aos poucos, bebe água, descansa bem e desce se te sentires mal; é o melhor remédio."
+     ],
+     "q": "Já estiveste num sítio muito alto? Como se sentiu o teu corpo?",
+     "c": "Procura a altitude da tua cidade e de um lugar de montanha que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "O básico da altitude",
+     "g": "Entenda por que o ar parece mais rarefeito lá no alto e por que subir devagar ajuda.",
+     "p": [
+      "Na altitude a pressão do ar é menor, então cada respiração traz menos oxigênio do que ao nível do mar.",
+      "Acima de uns 2.500 metros, algumas pessoas sentem dor de cabeça, cansaço ou dormem mal: sinais do mal da altitude.",
+      "Suba aos poucos, beba água, descanse bem e desça se não se sentir bem; é o melhor remédio."
+     ],
+     "q": "Você já esteve num lugar bem alto? Como seu corpo reagiu?",
+     "c": "Pesquise a altitude da sua cidade e a de um lugar na montanha que você quer visitar."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mountain weather",
+     "g": "Learn about fast changes, afternoon storms and strong wind on ridges.",
+     "p": [
+      "Temperature usually drops by about 6 to 7 °C for every 1,000 metres you climb.",
+      "In summer, clouds often build into thunderstorms in the afternoon, so start early and finish early.",
+      "Ridges and summits catch the strongest wind; if you hear thunder, leave high, exposed ground quickly."
+     ],
+     "q": "Do you like starting walks early in the morning, or are you more of a late riser?",
+     "c": "Plan a pretend mountain day with a start time early enough to be down by early afternoon."
+    },
+    "de": {
+     "t": "Bergwetter",
+     "g": "Lerne mehr über schnelle Wetterwechsel, Nachmittagsgewitter und starken Wind auf Graten.",
+     "p": [
+      "Die Temperatur sinkt meist um etwa 6 bis 7 °C pro 1.000 Höhenmeter.",
+      "Im Sommer türmen sich Wolken nachmittags oft zu Gewittern auf: früh starten, früh zurück sein.",
+      "Grate und Gipfel bekommen den stärksten Wind ab; hörst du Donner, verlass schnell hohes, offenes Gelände."
+     ],
+     "q": "Startest du gern früh am Morgen, oder schläfst du lieber aus?",
+     "c": "Plane einen Fantasie-Bergtag mit einer Startzeit, die dich bis zum frühen Nachmittag wieder ins Tal bringt."
+    },
+    "es": {
+     "t": "El tiempo en la montaña",
+     "g": "Aprende sobre cambios rápidos, tormentas de tarde y viento fuerte en las crestas.",
+     "p": [
+      "La temperatura suele bajar entre 6 y 7 °C por cada 1.000 metros de subida.",
+      "En verano las nubes suelen formar tormentas por la tarde: sal temprano y termina temprano.",
+      "Crestas y cumbres reciben el viento más fuerte; si oyes truenos, deja rápido las zonas altas y expuestas."
+     ],
+     "q": "¿Te gusta empezar las rutas temprano o eres más de levantarte tarde?",
+     "c": "Planea un día de montaña imaginario con una hora de salida que te permita bajar a primera hora de la tarde."
+    },
+    "fr": {
+     "t": "La météo en montagne",
+     "g": "Découvre les changements rapides, les orages d'après-midi et le vent fort sur les crêtes.",
+     "p": [
+      "La température baisse en général d'environ 6 à 7 °C tous les 1 000 mètres de montée.",
+      "En été, les nuages forment souvent des orages l'après-midi : pars tôt et rentre tôt.",
+      "Crêtes et sommets prennent le vent le plus fort ; si tu entends le tonnerre, quitte vite les zones hautes et exposées."
+     ],
+     "q": "Aimes-tu partir tôt le matin, ou es-tu plutôt lève-tard ?",
+     "c": "Planifie une journée en montagne imaginaire avec un départ assez tôt pour être redescendu en début d'après-midi."
+    },
+    "it": {
+     "t": "Il meteo in montagna",
+     "g": "Impara a conoscere i cambi rapidi, i temporali pomeridiani e il vento forte sulle creste.",
+     "p": [
+      "La temperatura scende di solito di circa 6-7 °C ogni 1.000 metri di salita.",
+      "D'estate le nuvole spesso diventano temporali nel pomeriggio: parti presto e rientra presto.",
+      "Creste e cime prendono il vento più forte; se senti tuoni, lascia subito le zone alte ed esposte."
+     ],
+     "q": "Ti piace partire presto la mattina o preferisci dormire un po' di più?",
+     "c": "Pianifica una giornata in montagna immaginaria con una partenza abbastanza presto da scendere entro il primo pomeriggio."
+    },
+    "pt": {
+     "t": "O tempo na montanha",
+     "g": "Aprende sobre mudanças rápidas, trovoadas à tarde e vento forte nas cristas.",
+     "p": [
+      "A temperatura costuma descer cerca de 6 a 7 °C por cada 1000 metros de subida.",
+      "No verão, as nuvens formam muitas vezes trovoadas à tarde: começa cedo e acaba cedo.",
+      "Cristas e cumes apanham o vento mais forte; se ouvires trovões, sai depressa das zonas altas e expostas."
+     ],
+     "q": "Gostas de começar as caminhadas de manhã cedo ou és mais de acordar tarde?",
+     "c": "Planeia um dia de montanha imaginário com uma hora de partida cedo o suficiente para estares cá em baixo no início da tarde."
+    },
+    "pt_BR": {
+     "t": "O tempo na montanha",
+     "g": "Aprenda sobre mudanças rápidas, tempestades à tarde e vento forte nas cristas.",
+     "p": [
+      "A temperatura costuma cair uns 6 a 7 °C a cada 1.000 metros de subida.",
+      "No verão, as nuvens muitas vezes viram tempestade à tarde: saia cedo e termine cedo.",
+      "Cristas e cumes pegam o vento mais forte; se ouvir trovões, saia rápido das áreas altas e expostas."
+     ],
+     "q": "Você gosta de começar as trilhas bem cedo ou prefere acordar tarde?",
+     "c": "Planeje um dia de montanha imaginário com horário de saída cedo o bastante para descer até o início da tarde."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cable cars and scenic railways",
+     "g": "Discover easy ways to enjoy high views without a long climb.",
+     "p": [
+      "Cable cars, gondolas and chairlifts carry you up steep slopes in minutes, often to viewpoints and easy trails.",
+      "Scenic mountain railways, like the Jungfrau Railway in Switzerland, climb through tunnels to high stations.",
+      "Bring a warm layer even on hot days, as it can be much colder and windier at the top."
+     ],
+     "q": "Would you enjoy a cable car ride, or do heights make you a little nervous?",
+     "c": "Find a cable car or mountain railway in a country you would love to visit."
+    },
+    "de": {
+     "t": "Seilbahnen und Bergbahnen",
+     "g": "Entdecke bequeme Wege, Höhenblicke ohne langen Aufstieg zu genießen.",
+     "p": [
+      "Seilbahnen, Gondeln und Sessellifte bringen dich in Minuten steile Hänge hinauf, oft zu Aussichtspunkten und leichten Wegen.",
+      "Bergbahnen wie die Jungfraubahn in der Schweiz fahren durch Tunnel zu hoch gelegenen Stationen.",
+      "Nimm auch an heißen Tagen eine warme Schicht mit, denn oben ist es oft viel kälter und windiger."
+     ],
+     "q": "Würdest du gern Seilbahn fahren, oder machen Höhen dich ein wenig nervös?",
+     "c": "Finde eine Seilbahn oder Bergbahn in einem Land, das du gern besuchen würdest."
+    },
+    "es": {
+     "t": "Teleféricos y trenes panorámicos",
+     "g": "Descubre formas fáciles de disfrutar de vistas altas sin una larga subida.",
+     "p": [
+      "Teleféricos, telecabinas y telesillas te suben por laderas empinadas en minutos, a menudo hasta miradores y senderos fáciles.",
+      "Trenes de montaña como el Ferrocarril de la Jungfrau, en Suiza, suben por túneles hasta estaciones muy altas.",
+      "Lleva una capa de abrigo aunque haga calor: arriba puede hacer mucho más frío y viento."
+     ],
+     "q": "¿Te gustaría subir en teleférico o las alturas te ponen algo nervioso?",
+     "c": "Busca un teleférico o tren de montaña en un país que te encantaría visitar."
+    },
+    "fr": {
+     "t": "Téléphériques et trains panoramiques",
+     "g": "Découvre des moyens faciles de profiter des hauteurs sans longue montée.",
+     "p": [
+      "Téléphériques, télécabines et télésièges te montent en quelques minutes, souvent vers des points de vue et des sentiers faciles.",
+      "Des trains de montagne comme le chemin de fer de la Jungfrau, en Suisse, grimpent par des tunnels jusqu'à des gares très hautes.",
+      "Emporte une couche chaude même par forte chaleur : en haut, il fait souvent bien plus froid et venteux."
+     ],
+     "q": "Aimerais-tu monter en téléphérique, ou la hauteur te rend-elle un peu nerveux ?",
+     "c": "Trouve un téléphérique ou un train de montagne dans un pays que tu rêves de visiter."
+    },
+    "it": {
+     "t": "Funivie e treni panoramici",
+     "g": "Scopri modi facili per godersi panorami in quota senza una lunga salita.",
+     "p": [
+      "Funivie, cabinovie e seggiovie ti portano su pendii ripidi in pochi minuti, spesso verso punti panoramici e sentieri facili.",
+      "Treni di montagna come la Ferrovia della Jungfrau, in Svizzera, salgono in galleria fino a stazioni molto alte.",
+      "Porta uno strato caldo anche nelle giornate afose: in cima può fare molto più freddo e tirare vento."
+     ],
+     "q": "Ti piacerebbe salire in funivia o l'altezza ti mette un po' d'ansia?",
+     "c": "Trova una funivia o un treno di montagna in un paese che ti piacerebbe visitare."
+    },
+    "pt": {
+     "t": "Teleféricos e comboios panorâmicos",
+     "g": "Descobre formas fáceis de apreciar vistas lá do alto sem uma grande subida.",
+     "p": [
+      "Teleféricos, telecabines e telecadeiras levam-te por encostas íngremes em minutos, muitas vezes a miradouros e trilhos fáceis.",
+      "Comboios de montanha, como o da Jungfrau na Suíça, sobem por túneis até estações muito altas.",
+      "Leva uma camada quente mesmo em dias de calor: lá em cima pode estar muito mais frio e ventoso."
+     ],
+     "q": "Gostavas de andar de teleférico ou as alturas deixam-te um pouco nervoso?",
+     "c": "Encontra um teleférico ou comboio de montanha num país que adorarias visitar."
+    },
+    "pt_BR": {
+     "t": "Teleféricos e trens panorâmicos",
+     "g": "Descubra jeitos fáceis de curtir vistas do alto sem uma subida longa.",
+     "p": [
+      "Teleféricos, gôndolas e teleféricos de cadeirinha levam você por encostas íngremes em minutos, muitas vezes até mirantes e trilhas fáceis.",
+      "Trens de montanha, como a Ferrovia da Jungfrau na Suíça, sobem por túneis até estações bem altas.",
+      "Leve uma camada quente mesmo em dias de calor: lá em cima pode estar bem mais frio e com vento."
+     ],
+     "q": "Você curtiria andar de teleférico ou altura deixa você meio nervoso?",
+     "c": "Encontre um teleférico ou trem de montanha num país que você adoraria visitar."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mountain huts",
+     "g": "Learn what mountain huts offer and simple hut manners.",
+     "p": [
+      "Huts give walkers a bed, often in shared dorms, plus hot meals and shelter in remote mountains.",
+      "Book ahead in busy seasons, bring a light sleeping-bag liner and pack only what you need.",
+      "Take boots off at the entrance, keep quiet at night and carry your rubbish back down."
+     ],
+     "q": "Would you enjoy sleeping in a shared mountain hut with other walkers?",
+     "c": "Look up a mountain hut in a range you like and see what it offers guests."
+    },
+    "de": {
+     "t": "Berghütten",
+     "g": "Lerne, was Berghütten bieten und welche einfachen Hüttenregeln gelten.",
+     "p": [
+      "Hütten bieten Wanderern ein Bett, oft im Lager, dazu warmes Essen und Schutz in abgelegenen Bergen.",
+      "Reserviere in der Hauptsaison, nimm einen leichten Hüttenschlafsack mit und pack nur das Nötige ein.",
+      "Zieh die Schuhe am Eingang aus, sei nachts leise und nimm deinen Müll wieder mit ins Tal."
+     ],
+     "q": "Würde dir eine Nacht im Lager einer Berghütte mit anderen Wanderern gefallen?",
+     "c": "Such dir eine Berghütte in einem Gebirge, das du magst, und schau, was sie Gästen bietet."
+    },
+    "es": {
+     "t": "Refugios de montaña",
+     "g": "Aprende qué ofrecen los refugios y unas normas sencillas para comportarte en ellos.",
+     "p": [
+      "Los refugios dan a los montañeros cama, a menudo en literas compartidas, comida caliente y abrigo en zonas remotas.",
+      "Reserva en temporada alta, lleva un saco sábana ligero y carga solo lo necesario.",
+      "Quítate las botas en la entrada, guarda silencio por la noche y bájate tu basura."
+     ],
+     "q": "¿Te gustaría dormir en un refugio compartido con otros montañeros?",
+     "c": "Busca un refugio en una cordillera que te guste y mira qué ofrece a sus huéspedes."
+    },
+    "fr": {
+     "t": "Les refuges de montagne",
+     "g": "Découvre ce qu'offrent les refuges et les règles simples de savoir-vivre.",
+     "p": [
+      "Les refuges offrent aux randonneurs un lit, souvent en dortoir, des repas chauds et un abri en montagne isolée.",
+      "Réserve en haute saison, emporte un drap de sac léger et ne prends que l'essentiel.",
+      "Enlève tes chaussures à l'entrée, reste silencieux la nuit et redescends tes déchets."
+     ],
+     "q": "Aimerais-tu dormir dans un dortoir de refuge avec d'autres randonneurs ?",
+     "c": "Cherche un refuge dans un massif que tu aimes et regarde ce qu'il propose."
+    },
+    "it": {
+     "t": "Rifugi di montagna",
+     "g": "Scopri cosa offrono i rifugi e le semplici regole di comportamento.",
+     "p": [
+      "I rifugi offrono agli escursionisti un letto, spesso in camerata, pasti caldi e riparo in montagna.",
+      "Prenota in alta stagione, porta un sacco lenzuolo leggero e metti nello zaino solo il necessario.",
+      "Togli gli scarponi all'ingresso, fai silenzio la notte e riporta a valle i tuoi rifiuti."
+     ],
+     "q": "Ti piacerebbe dormire in camerata in un rifugio con altri escursionisti?",
+     "c": "Cerca un rifugio in una catena montuosa che ami e guarda cosa offre agli ospiti."
+    },
+    "pt": {
+     "t": "Refúgios de montanha",
+     "g": "Aprende o que os refúgios oferecem e algumas regras simples de convivência.",
+     "p": [
+      "Os refúgios dão aos caminhantes uma cama, muitas vezes em camarata, refeições quentes e abrigo em montanhas remotas.",
+      "Reserva na época alta, leva um saco-cama interior leve e só o que precisas.",
+      "Tira as botas à entrada, faz silêncio à noite e traz o teu lixo de volta."
+     ],
+     "q": "Gostavas de dormir numa camarata de refúgio com outros caminhantes?",
+     "c": "Procura um refúgio numa cordilheira de que gostes e vê o que oferece."
+    },
+    "pt_BR": {
+     "t": "Refúgios de montanha",
+     "g": "Aprenda o que os refúgios oferecem e algumas regras simples de convivência.",
+     "p": [
+      "Refúgios dão aos montanhistas uma cama, muitas vezes em quarto coletivo, comida quente e abrigo em montanhas isoladas.",
+      "Reserve na alta temporada, leve um forro de saco de dormir leve e só o que precisar.",
+      "Tire as botas na entrada, faça silêncio à noite e leve seu lixo de volta."
+     ],
+     "q": "Você curtiria dormir num quarto coletivo de refúgio com outros montanhistas?",
+     "c": "Pesquise um refúgio numa cordilheira que você gosta e veja o que ele oferece."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous mountain ranges",
+     "g": "Take a quick tour of the Alps, Andes, Himalayas, Rockies and more.",
+     "p": [
+      "The Himalayas hold Mount Everest, the highest peak above sea level, and many of the world's tallest mountains.",
+      "The Andes run along the west of South America and are the longest mountain range on land.",
+      "The Alps cross several European countries, and the Rockies stretch from Canada deep into the United States."
+     ],
+     "q": "Which mountain range would you most like to see with your own eyes?",
+     "c": "Find your chosen range on a world map and name one country it passes through."
+    },
+    "de": {
+     "t": "Berühmte Gebirge",
+     "g": "Mach eine kurze Tour durch Alpen, Anden, Himalaya, Rocky Mountains und mehr.",
+     "p": [
+      "Im Himalaya stehen der Mount Everest, der höchste Berg über dem Meeresspiegel, und viele der höchsten Gipfel der Welt.",
+      "Die Anden ziehen sich an der Westseite Südamerikas entlang und sind das längste Gebirge an Land.",
+      "Die Alpen reichen über mehrere Länder Europas, die Rocky Mountains von Kanada weit in die USA."
+     ],
+     "q": "Welches Gebirge würdest du am liebsten mit eigenen Augen sehen?",
+     "c": "Finde dein Wunschgebirge auf einer Weltkarte und nenne ein Land, durch das es verläuft."
+    },
+    "es": {
+     "t": "Cordilleras famosas",
+     "g": "Haz un recorrido rápido por los Alpes, los Andes, el Himalaya, las Rocosas y más.",
+     "p": [
+      "El Himalaya alberga el Everest, la montaña más alta sobre el nivel del mar, y muchas de las cumbres más altas del mundo.",
+      "Los Andes recorren el oeste de Sudamérica y son la cordillera terrestre más larga.",
+      "Los Alpes cruzan varios países europeos, y las Rocosas van de Canadá hasta bien dentro de Estados Unidos."
+     ],
+     "q": "¿Qué cordillera te gustaría más ver con tus propios ojos?",
+     "c": "Busca en un mapamundi la cordillera que elegiste y nombra un país por el que pasa."
+    },
+    "fr": {
+     "t": "Chaînes de montagnes célèbres",
+     "g": "Fais un petit tour des Alpes, des Andes, de l'Himalaya, des Rocheuses et d'autres encore.",
+     "p": [
+      "L'Himalaya abrite l'Everest, le plus haut sommet au-dessus du niveau de la mer, et beaucoup des plus hauts sommets du monde.",
+      "Les Andes longent l'ouest de l'Amérique du Sud et forment la plus longue chaîne de montagnes terrestre.",
+      "Les Alpes traversent plusieurs pays d'Europe, et les Rocheuses vont du Canada jusqu'au cœur des États-Unis."
+     ],
+     "q": "Quelle chaîne de montagnes aimerais-tu le plus voir de tes propres yeux ?",
+     "c": "Trouve ta chaîne préférée sur une carte du monde et cite un pays qu'elle traverse."
+    },
+    "it": {
+     "t": "Catene montuose famose",
+     "g": "Fai un rapido giro tra Alpi, Ande, Himalaya, Montagne Rocciose e altro ancora.",
+     "p": [
+      "L'Himalaya ospita l'Everest, la vetta più alta sul livello del mare, e molte delle montagne più alte del mondo.",
+      "Le Ande corrono lungo l'ovest del Sud America e sono la catena montuosa terrestre più lunga.",
+      "Le Alpi attraversano diversi paesi europei, e le Rocciose vanno dal Canada fin dentro gli Stati Uniti."
+     ],
+     "q": "Quale catena montuosa vorresti vedere con i tuoi occhi?",
+     "c": "Trova la catena che hai scelto su una mappa del mondo e indica un paese che attraversa."
+    },
+    "pt": {
+     "t": "Cordilheiras famosas",
+     "g": "Faz uma volta rápida pelos Alpes, Andes, Himalaias, Montanhas Rochosas e outras.",
+     "p": [
+      "Os Himalaias têm o Evereste, o pico mais alto acima do nível do mar, e muitas das montanhas mais altas do mundo.",
+      "Os Andes percorrem o oeste da América do Sul e são a cordilheira terrestre mais longa.",
+      "Os Alpes atravessam vários países europeus, e as Rochosas vão do Canadá até ao interior dos Estados Unidos."
+     ],
+     "q": "Que cordilheira mais gostavas de ver com os teus próprios olhos?",
+     "c": "Encontra a cordilheira que escolheste num mapa-múndi e diz um país por onde passa."
+    },
+    "pt_BR": {
+     "t": "Cordilheiras famosas",
+     "g": "Faça um tour rápido pelos Alpes, Andes, Himalaia, Montanhas Rochosas e outras.",
+     "p": [
+      "O Himalaia tem o Everest, o pico mais alto acima do nível do mar, e muitas das montanhas mais altas do mundo.",
+      "Os Andes percorrem o oeste da América do Sul e são a cordilheira terrestre mais longa.",
+      "Os Alpes cruzam vários países europeus, e as Rochosas vão do Canadá até o interior dos Estados Unidos."
+     ],
+     "q": "Qual cordilheira você mais gostaria de ver com os próprios olhos?",
+     "c": "Encontre a cordilheira que escolheu num mapa-múndi e diga um país por onde ela passa."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lakes and reflections",
+     "g": "Meet glacial, volcanic and alpine lakes and find out why they shine.",
+     "p": [
+      "Glacial lakes often glow turquoise because fine rock powder from glaciers floats in the water and reflects light.",
+      "Volcanic crater lakes form when rain and snow fill the bowl of an old volcano.",
+      "Calm, clear mornings give the best mirror reflections, before the wind ripples the surface."
+     ],
+     "q": "What is the most beautiful lake you have seen in real life or in photos?",
+     "c": "Find a turquoise glacial lake on a map and learn which glacier feeds it."
+    },
+    "de": {
+     "t": "Seen und Spiegelungen",
+     "g": "Lerne Gletscher-, Vulkan- und Bergseen kennen und erfahre, warum sie so leuchten.",
+     "p": [
+      "Gletscherseen leuchten oft türkis, weil feines Gesteinsmehl der Gletscher im Wasser schwebt und Licht zurückwirft.",
+      "Kraterseen entstehen, wenn Regen und Schnee den Krater eines alten Vulkans füllen.",
+      "Ruhige, klare Morgen liefern die besten Spiegelungen, bevor Wind die Oberfläche kräuselt."
+     ],
+     "q": "Was ist der schönste See, den du je gesehen hast, live oder auf Fotos?",
+     "c": "Finde einen türkisfarbenen Gletschersee auf der Karte und erfahre, welcher Gletscher ihn speist."
+    },
+    "es": {
+     "t": "Lagos y reflejos",
+     "g": "Conoce lagos glaciares, volcánicos y alpinos y descubre por qué brillan.",
+     "p": [
+      "Los lagos glaciares suelen ser turquesa porque un polvo fino de roca de los glaciares flota en el agua y refleja la luz.",
+      "Los lagos de cráter se forman cuando la lluvia y la nieve llenan el hueco de un volcán antiguo.",
+      "Las mañanas tranquilas y despejadas dan los mejores reflejos, antes de que el viento rice el agua."
+     ],
+     "q": "¿Cuál es el lago más bonito que has visto en persona o en fotos?",
+     "c": "Busca en un mapa un lago glaciar turquesa y averigua qué glaciar lo alimenta."
+    },
+    "fr": {
+     "t": "Lacs et reflets",
+     "g": "Découvre les lacs glaciaires, volcaniques et alpins, et pourquoi ils brillent.",
+     "p": [
+      "Les lacs glaciaires sont souvent turquoise car une fine poudre de roche venue des glaciers flotte dans l'eau et renvoie la lumière.",
+      "Les lacs de cratère naissent quand la pluie et la neige remplissent le cratère d'un ancien volcan.",
+      "Les matins calmes et clairs offrent les plus beaux reflets, avant que le vent ne ride la surface."
+     ],
+     "q": "Quel est le plus beau lac que tu aies vu en vrai ou en photo ?",
+     "c": "Trouve un lac glaciaire turquoise sur une carte et cherche quel glacier l'alimente."
+    },
+    "it": {
+     "t": "Laghi e riflessi",
+     "g": "Conosci laghi glaciali, vulcanici e alpini e scopri perché brillano così.",
+     "p": [
+      "I laghi glaciali sono spesso turchesi perché una polvere finissima di roccia portata dai ghiacciai riflette la luce.",
+      "I laghi vulcanici nascono quando pioggia e neve riempiono il cratere di un antico vulcano.",
+      "Le mattine calme e limpide regalano i riflessi migliori, prima che il vento increspi l'acqua."
+     ],
+     "q": "Qual è il lago più bello che hai visto dal vivo o in foto?",
+     "c": "Trova su una mappa un lago glaciale turchese e scopri quale ghiacciaio lo alimenta."
+    },
+    "pt": {
+     "t": "Lagos e reflexos",
+     "g": "Conhece lagos glaciares, vulcânicos e alpinos e descobre porque brilham.",
+     "p": [
+      "Os lagos glaciares são muitas vezes turquesa porque um pó fino de rocha vindo dos glaciares flutua na água e reflete a luz.",
+      "Os lagos de cratera formam-se quando a chuva e a neve enchem a cratera de um vulcão antigo.",
+      "Manhãs calmas e limpas dão os melhores reflexos, antes de o vento encrespar a água."
+     ],
+     "q": "Qual é o lago mais bonito que já viste ao vivo ou em fotografias?",
+     "c": "Encontra num mapa um lago glaciar turquesa e descobre que glaciar o alimenta."
+    },
+    "pt_BR": {
+     "t": "Lagos e reflexos",
+     "g": "Conheça lagos glaciais, vulcânicos e alpinos e descubra por que eles brilham.",
+     "p": [
+      "Lagos glaciais costumam ser turquesa porque um pó finíssimo de rocha trazido pelas geleiras fica na água e reflete a luz.",
+      "Lagos de cratera se formam quando chuva e neve enchem a cratera de um vulcão antigo.",
+      "Manhãs calmas e limpas dão os melhores reflexos, antes de o vento mexer a água."
+     ],
+     "q": "Qual é o lago mais bonito que você já viu ao vivo ou em fotos?",
+     "c": "Encontre num mapa um lago glacial turquesa e descubra qual geleira o alimenta."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Waterfalls",
+     "g": "Learn how waterfalls form and meet some famous ones to dream about.",
+     "p": [
+      "Many waterfalls form where a river flows over hard rock that sits on top of softer rock, which wears away faster.",
+      "Angel Falls in Venezuela is the highest uninterrupted waterfall in the world.",
+      "Iguazú on the Argentina-Brazil border and Victoria Falls between Zambia and Zimbabwe are among the most spectacular."
+     ],
+     "q": "Have you ever stood close to a waterfall and felt the spray?",
+     "c": "Pick one famous waterfall and find out which river feeds it."
+    },
+    "de": {
+     "t": "Wasserfälle",
+     "g": "Lerne, wie Wasserfälle entstehen, und entdecke berühmte Fälle zum Träumen.",
+     "p": [
+      "Viele Wasserfälle entstehen, wo ein Fluss über hartes Gestein fließt, unter dem weicheres liegt, das schneller abgetragen wird.",
+      "Der Salto Ángel in Venezuela ist der höchste frei fallende Wasserfall der Welt.",
+      "Iguazú an der Grenze von Argentinien und Brasilien und die Victoriafälle zwischen Sambia und Simbabwe gehören zu den spektakulärsten."
+     ],
+     "q": "Hast du schon einmal nah an einem Wasserfall gestanden und die Gischt gespürt?",
+     "c": "Wähle einen berühmten Wasserfall und finde heraus, welcher Fluss ihn speist."
+    },
+    "es": {
+     "t": "Cascadas",
+     "g": "Aprende cómo se forman las cascadas y conoce algunas famosas con las que soñar.",
+     "p": [
+      "Muchas cascadas se forman donde un río pasa sobre roca dura que descansa sobre roca más blanda, que se desgasta antes.",
+      "El Salto Ángel, en Venezuela, es la cascada de caída ininterrumpida más alta del mundo.",
+      "Iguazú, entre Argentina y Brasil, y las cataratas Victoria, entre Zambia y Zimbabue, están entre las más espectaculares."
+     ],
+     "q": "¿Has estado alguna vez cerca de una cascada sintiendo las gotas en la cara?",
+     "c": "Elige una cascada famosa y averigua qué río la alimenta."
+    },
+    "fr": {
+     "t": "Les cascades",
+     "g": "Découvre comment se forment les cascades et quelques chutes célèbres qui font rêver.",
+     "p": [
+      "Beaucoup de cascades naissent là où une rivière passe sur une roche dure posée sur une roche plus tendre, qui s'use plus vite.",
+      "Le Salto Ángel, au Venezuela, est la plus haute chute d'eau ininterrompue du monde.",
+      "Iguazú, entre l'Argentine et le Brésil, et les chutes Victoria, entre la Zambie et le Zimbabwe, comptent parmi les plus spectaculaires."
+     ],
+     "q": "T'es-tu déjà tenu près d'une cascade en sentant les embruns ?",
+     "c": "Choisis une cascade célèbre et cherche quelle rivière l'alimente."
+    },
+    "it": {
+     "t": "Cascate",
+     "g": "Scopri come si formano le cascate e conosci alcune famose da sognare.",
+     "p": [
+      "Molte cascate nascono dove un fiume scorre su roccia dura posata su roccia più tenera, che si consuma più in fretta.",
+      "Il Salto Angel, in Venezuela, è la cascata a salto unico più alta del mondo.",
+      "Iguazú, tra Argentina e Brasile, e le cascate Vittoria, tra Zambia e Zimbabwe, sono tra le più spettacolari."
+     ],
+     "q": "Ti sei mai trovato vicino a una cascata sentendo gli spruzzi sul viso?",
+     "c": "Scegli una cascata famosa e scopri quale fiume la alimenta."
+    },
+    "pt": {
+     "t": "Cascatas",
+     "g": "Aprende como se formam as cascatas e conhece algumas famosas para sonhar.",
+     "p": [
+      "Muitas cascatas formam-se onde um rio passa sobre rocha dura assente em rocha mais mole, que se desgasta mais depressa.",
+      "O Salto Ángel, na Venezuela, é a queda de água ininterrupta mais alta do mundo.",
+      "Iguaçu, entre a Argentina e o Brasil, e as Cataratas Vitória, entre a Zâmbia e o Zimbabué, estão entre as mais espetaculares."
+     ],
+     "q": "Já estiveste perto de uma cascata a sentir as gotas na cara?",
+     "c": "Escolhe uma cascata famosa e descobre que rio a alimenta."
+    },
+    "pt_BR": {
+     "t": "Cachoeiras",
+     "g": "Aprenda como as cachoeiras se formam e conheça algumas famosas para sonhar.",
+     "p": [
+      "Muitas cachoeiras se formam onde um rio passa sobre rocha dura apoiada em rocha mais mole, que se desgasta mais rápido.",
+      "O Salto Ángel, na Venezuela, é a queda d'água contínua mais alta do mundo.",
+      "Iguaçu, entre Argentina e Brasil, e as Cataratas Vitória, entre Zâmbia e Zimbábue, estão entre as mais espetaculares."
+     ],
+     "q": "Você já ficou perto de uma cachoeira sentindo os respingos no rosto?",
+     "c": "Escolha uma cachoeira famosa e descubra qual rio a alimenta."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caves and caverns",
+     "g": "Discover limestone caves, stalactites and guided cave visits.",
+     "p": [
+      "Most large caves form in limestone, slowly dissolved by slightly acidic rainwater over thousands of years.",
+      "Stalactites hang from the ceiling and stalagmites grow up from the floor, often just a few centimetres per thousand years.",
+      "Visit caves with a guide, wear a warm layer and do not touch formations, as skin oils can stop them growing."
+     ],
+     "q": "Would you feel excited or a bit nervous deep inside a cave?",
+     "c": "Find a show cave you could visit and learn one fun fact about it."
+    },
+    "de": {
+     "t": "Höhlen",
+     "g": "Entdecke Kalksteinhöhlen, Tropfsteine und geführte Höhlentouren.",
+     "p": [
+      "Die meisten großen Höhlen entstehen im Kalkstein, den leicht saures Regenwasser über Jahrtausende auflöst.",
+      "Stalaktiten hängen von der Decke, Stalagmiten wachsen vom Boden, oft nur wenige Zentimeter in tausend Jahren.",
+      "Besuche Höhlen mit Führung, nimm eine warme Schicht mit und berühre keine Tropfsteine, Hautfett stoppt ihr Wachstum."
+     ],
+     "q": "Wärst du tief in einer Höhle eher begeistert oder ein bisschen nervös?",
+     "c": "Finde eine Schauhöhle in deiner Nähe und lerne eine spannende Tatsache über sie."
+    },
+    "es": {
+     "t": "Cuevas y cavernas",
+     "g": "Descubre cuevas de piedra caliza, estalactitas y visitas guiadas.",
+     "p": [
+      "La mayoría de las grandes cuevas se forman en caliza, disuelta poco a poco por agua de lluvia algo ácida durante milenios.",
+      "Las estalactitas cuelgan del techo y las estalagmitas crecen desde el suelo, a menudo solo unos centímetros cada mil años.",
+      "Visita las cuevas con guía, lleva abrigo y no toques las formaciones: la grasa de la piel puede detener su crecimiento."
+     ],
+     "q": "¿Te sentirías emocionado o algo nervioso en lo más hondo de una cueva?",
+     "c": "Busca una cueva turística que puedas visitar y aprende un dato curioso sobre ella."
+    },
+    "fr": {
+     "t": "Grottes et cavernes",
+     "g": "Découvre les grottes calcaires, les stalactites et les visites guidées.",
+     "p": [
+      "La plupart des grandes grottes se forment dans le calcaire, dissous lentement par une eau de pluie légèrement acide pendant des millénaires.",
+      "Les stalactites pendent du plafond et les stalagmites montent du sol, souvent de quelques centimètres seulement par millénaire.",
+      "Visite les grottes avec un guide, prends une couche chaude et ne touche pas les concrétions : le gras de la peau stoppe leur croissance."
+     ],
+     "q": "Te sentirais-tu émerveillé ou un peu inquiet au fond d'une grotte ?",
+     "c": "Trouve une grotte aménagée à visiter et apprends un fait amusant à son sujet."
+    },
+    "it": {
+     "t": "Grotte e caverne",
+     "g": "Scopri le grotte calcaree, le stalattiti e le visite guidate.",
+     "p": [
+      "La maggior parte delle grandi grotte si forma nel calcare, sciolto lentamente dall'acqua piovana leggermente acida in migliaia di anni.",
+      "Le stalattiti pendono dal soffitto e le stalagmiti crescono dal pavimento, spesso solo pochi centimetri ogni mille anni.",
+      "Visita le grotte con una guida, porta uno strato caldo e non toccare le concrezioni: il sebo della pelle ne blocca la crescita."
+     ],
+     "q": "In fondo a una grotta ti sentiresti emozionato o un po' nervoso?",
+     "c": "Trova una grotta turistica da visitare e impara una curiosità su di essa."
+    },
+    "pt": {
+     "t": "Grutas e cavernas",
+     "g": "Descobre grutas de calcário, estalactites e visitas guiadas.",
+     "p": [
+      "A maioria das grandes grutas forma-se no calcário, dissolvido lentamente pela água da chuva ligeiramente ácida ao longo de milénios.",
+      "As estalactites pendem do teto e as estalagmites crescem do chão, muitas vezes só alguns centímetros em mil anos.",
+      "Visita grutas com guia, leva uma camada quente e não toques nas formações: a gordura da pele pode travar o crescimento."
+     ],
+     "q": "No fundo de uma gruta, sentir-te-ias entusiasmado ou um pouco nervoso?",
+     "c": "Encontra uma gruta visitável e aprende uma curiosidade sobre ela."
+    },
+    "pt_BR": {
+     "t": "Grutas e cavernas",
+     "g": "Descubra cavernas de calcário, estalactites e visitas guiadas.",
+     "p": [
+      "A maioria das grandes cavernas se forma no calcário, dissolvido devagar pela água da chuva levemente ácida ao longo de milênios.",
+      "Estalactites pendem do teto e estalagmites crescem do chão, muitas vezes só alguns centímetros a cada mil anos.",
+      "Visite cavernas com guia, leve uma camada quente e não toque nas formações: a oleosidade da pele pode parar o crescimento."
+     ],
+     "q": "No fundo de uma caverna, você ficaria animado ou meio nervoso?",
+     "c": "Encontre uma caverna aberta a visitas e aprenda uma curiosidade sobre ela."
+    }
+   }
+  }
+ ]
+}

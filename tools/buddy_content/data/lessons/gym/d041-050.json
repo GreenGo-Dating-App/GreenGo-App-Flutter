@@ -1,0 +1,835 @@
+{
+ "topic": "gym",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dumbbell Romanian deadlift",
+     "g": "Practise the hip hinge with light dumbbells.",
+     "p": [
+      "Hold dumbbells in front of your thighs, knees softly bent.",
+      "Push your hips back and slide the weights down close to your legs.",
+      "Stop when you feel a stretch, keep your back neutral, then stand tall."
+     ],
+     "q": "How did the hip hinge drill against the wall go for you?",
+     "c": "Do 2 sets of 10 slow Romanian deadlifts with light dumbbells."
+    },
+    "de": {
+     "t": "Rumänisches Kreuzheben mit Kurzhanteln",
+     "g": "Übe die Hüftbeuge mit leichten Kurzhanteln.",
+     "p": [
+      "Halte die Hanteln vor den Oberschenkeln, Knie leicht gebeugt.",
+      "Schieb die Hüfte zurück und führ die Gewichte nah an den Beinen nach unten.",
+      "Stopp bei spürbarer Dehnung, Rücken neutral, dann richte dich auf."
+     ],
+     "q": "Wie lief die Hüftbeuge-Übung an der Wand für dich?",
+     "c": "Mach 2 Sätze mit 10 langsamen rumänischen Kreuzheben, leicht."
+    },
+    "es": {
+     "t": "Peso muerto rumano con mancuernas",
+     "g": "Practica la bisagra de cadera con mancuernas ligeras.",
+     "p": [
+      "Sujeta las mancuernas delante de los muslos, rodillas algo flexionadas.",
+      "Lleva la cadera atrás y desliza los pesos pegados a las piernas.",
+      "Para al notar el estiramiento, espalda neutra, y vuelve a subir."
+     ],
+     "q": "¿Qué tal te fue el ejercicio de bisagra junto a la pared?",
+     "c": "Haz 2 series de 10 pesos muertos rumanos lentos con mancuernas ligeras."
+    },
+    "fr": {
+     "t": "Le soulevé de terre roumain aux haltères",
+     "g": "Pratique la charnière de hanche avec des haltères légers.",
+     "p": [
+      "Tiens les haltères devant les cuisses, genoux légèrement fléchis.",
+      "Recule les hanches et fais glisser les charges près des jambes.",
+      "Arrête-toi à l’étirement, dos neutre, puis redresse-toi."
+     ],
+     "q": "Comment s’est passé l’exercice de charnière contre le mur ?",
+     "c": "Fais 2 séries de 10 soulevés roumains lents avec des haltères légers."
+    },
+    "it": {
+     "t": "Stacco rumeno con manubri",
+     "g": "Allena la cerniera dell’anca con manubri leggeri.",
+     "p": [
+      "Tieni i manubri davanti alle cosce, ginocchia leggermente piegate.",
+      "Spingi il bacino indietro e fai scendere i pesi vicino alle gambe.",
+      "Fermati quando senti l’allungamento, schiena neutra, poi risali."
+     ],
+     "q": "Com’è andato l’esercizio di cerniera al muro?",
+     "c": "Fai 2 serie da 10 stacchi rumeni lenti con manubri leggeri."
+    },
+    "pt": {
+     "t": "Peso morto romeno com halteres",
+     "g": "Pratica a dobradiça da anca com halteres leves.",
+     "p": [
+      "Segura os halteres à frente das coxas, joelhos ligeiramente dobrados.",
+      "Leva a anca para trás e desliza os pesos junto às pernas.",
+      "Para quando sentires o alongamento, costas neutras, e volta a subir."
+     ],
+     "q": "Como correu o exercício de dobradiça junto à parede?",
+     "c": "Faz 2 séries de 10 pesos mortos romenos lentos com halteres leves."
+    },
+    "pt_BR": {
+     "t": "Stiff romeno com halteres",
+     "g": "Pratique a dobradiça de quadril com halteres leves.",
+     "p": [
+      "Segure os halteres na frente das coxas, joelhos levemente dobrados.",
+      "Leve o quadril para trás e deslize os pesos rente às pernas.",
+      "Pare ao sentir o alongamento, costas neutras, e volte a subir."
+     ],
+     "q": "Como foi o exercício de dobradiça na parede?",
+     "c": "Faça 2 séries de 10 levantamentos romenos lentos com halteres leves."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lunges",
+     "g": "Build balance and leg strength by stepping forward or back.",
+     "p": [
+      "Reverse lunges, stepping back, are often easier to control.",
+      "Lower until both knees are comfortably bent, torso upright.",
+      "Push through the front foot to return to standing."
+     ],
+     "q": "Is balance easy or tricky for you?",
+     "c": "Do 2 sets of 6 reverse lunges per leg, holding a wall if needed."
+    },
+    "de": {
+     "t": "Ausfallschritte",
+     "g": "Bau Gleichgewicht und Beinkraft durch Schritte nach vorn oder hinten auf.",
+     "p": [
+      "Ausfallschritte nach hinten sind oft leichter zu kontrollieren.",
+      "Senk dich ab, bis beide Knie angenehm gebeugt sind, Oberkörper aufrecht.",
+      "Drück dich über den vorderen Fuß zurück in den Stand."
+     ],
+     "q": "Fällt dir Gleichgewicht leicht oder eher schwer?",
+     "c": "Mach 2 Sätze mit 6 Ausfallschritten nach hinten pro Bein, bei Bedarf mit Wandhalt."
+    },
+    "es": {
+     "t": "Zancadas",
+     "g": "Gana equilibrio y fuerza de piernas dando pasos hacia delante o atrás.",
+     "p": [
+      "Las zancadas hacia atrás suelen ser más fáciles de controlar.",
+      "Baja hasta que ambas rodillas se doblen cómodamente, tronco erguido.",
+      "Empuja con el pie delantero para volver arriba."
+     ],
+     "q": "¿El equilibrio te resulta fácil o complicado?",
+     "c": "Haz 2 series de 6 zancadas atrás por pierna, apoyándote en una pared si hace falta."
+    },
+    "fr": {
+     "t": "Les fentes",
+     "g": "Développe équilibre et force des jambes en faisant un pas avant ou arrière.",
+     "p": [
+      "Les fentes arrière sont souvent plus faciles à contrôler.",
+      "Descends jusqu’à ce que les deux genoux soient confortablement fléchis, buste droit.",
+      "Pousse sur le pied avant pour revenir debout."
+     ],
+     "q": "L’équilibre, c’est facile ou délicat pour toi ?",
+     "c": "Fais 2 séries de 6 fentes arrière par jambe, en te tenant au mur si besoin."
+    },
+    "it": {
+     "t": "Gli affondi",
+     "g": "Costruisci equilibrio e forza delle gambe con passi avanti o indietro.",
+     "p": [
+      "Gli affondi indietro sono spesso più facili da controllare.",
+      "Scendi finché entrambe le ginocchia sono comodamente piegate, busto dritto.",
+      "Spingi con il piede davanti per tornare in piedi."
+     ],
+     "q": "L’equilibrio per te è facile o difficile?",
+     "c": "Fai 2 serie da 6 affondi indietro per gamba, tenendoti al muro se serve."
+    },
+    "pt": {
+     "t": "Afundos",
+     "g": "Ganha equilíbrio e força nas pernas com passos à frente ou atrás.",
+     "p": [
+      "Os afundos para trás costumam ser mais fáceis de controlar.",
+      "Desce até os dois joelhos ficarem confortavelmente dobrados, tronco direito.",
+      "Empurra com o pé da frente para voltares a ficar de pé."
+     ],
+     "q": "O equilíbrio é fácil ou difícil para ti?",
+     "c": "Faz 2 séries de 6 afundos para trás por perna, com apoio na parede se precisares."
+    },
+    "pt_BR": {
+     "t": "Afundos",
+     "g": "Ganhe equilíbrio e força nas pernas com passos à frente ou para trás.",
+     "p": [
+      "Afundos para trás costumam ser mais fáceis de controlar.",
+      "Desça até os dois joelhos ficarem confortavelmente dobrados, tronco ereto.",
+      "Empurre com o pé da frente para voltar a ficar em pé."
+     ],
+     "q": "Equilíbrio é fácil ou difícil para você?",
+     "c": "Faça 2 séries de 6 afundos para trás por perna, apoiando na parede se precisar."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Step-ups",
+     "g": "Step onto a box or bench with control.",
+     "p": [
+      "Choose a low, stable step to start, around knee height or lower.",
+      "Place your whole foot on the step and drive up through that leg.",
+      "Step down slowly, one foot at a time."
+     ],
+     "q": "Do you take the stairs often in your daily life?",
+     "c": "Do 2 sets of 8 step-ups per leg on a low, stable step."
+    },
+    "de": {
+     "t": "Step-ups",
+     "g": "Steig kontrolliert auf eine Box oder Bank.",
+     "p": [
+      "Beginne mit einer niedrigen, stabilen Stufe, etwa Kniehöhe oder tiefer.",
+      "Setz den ganzen Fuß auf und drück dich über dieses Bein hoch.",
+      "Steig langsam wieder ab, einen Fuß nach dem anderen."
+     ],
+     "q": "Nimmst du im Alltag oft die Treppe?",
+     "c": "Mach 2 Sätze mit 8 Step-ups pro Bein auf einer niedrigen, stabilen Stufe."
+    },
+    "es": {
+     "t": "Subidas al cajón",
+     "g": "Sube a un cajón o banco con control.",
+     "p": [
+      "Empieza con un escalón bajo y estable, a la altura de la rodilla o menos.",
+      "Apoya todo el pie en el escalón y sube empujando con esa pierna.",
+      "Baja despacio, un pie tras otro."
+     ],
+     "q": "¿Sueles subir por las escaleras en tu día a día?",
+     "c": "Haz 2 series de 8 subidas por pierna en un escalón bajo y estable."
+    },
+    "fr": {
+     "t": "Les montées sur banc",
+     "g": "Monte sur une box ou un banc avec contrôle.",
+     "p": [
+      "Commence par une marche basse et stable, à hauteur de genou ou moins.",
+      "Pose tout le pied sur la marche et pousse avec cette jambe.",
+      "Redescends lentement, un pied après l’autre."
+     ],
+     "q": "Prends-tu souvent les escaliers au quotidien ?",
+     "c": "Fais 2 séries de 8 montées par jambe sur une marche basse et stable."
+    },
+    "it": {
+     "t": "Step-up",
+     "g": "Sali su un box o una panca con controllo.",
+     "p": [
+      "Inizia con un gradino basso e stabile, all’altezza del ginocchio o meno.",
+      "Appoggia tutto il piede e spingi con quella gamba per salire.",
+      "Scendi lentamente, un piede alla volta."
+     ],
+     "q": "Prendi spesso le scale nella vita di tutti i giorni?",
+     "c": "Fai 2 serie da 8 step-up per gamba su un gradino basso e stabile."
+    },
+    "pt": {
+     "t": "Subidas ao banco",
+     "g": "Sobe para uma caixa ou banco com controlo.",
+     "p": [
+      "Começa com um degrau baixo e estável, à altura do joelho ou abaixo.",
+      "Apoia o pé inteiro no degrau e sobe a empurrar com essa perna.",
+      "Desce devagar, um pé de cada vez."
+     ],
+     "q": "Costumas subir pelas escadas no dia a dia?",
+     "c": "Faz 2 séries de 8 subidas por perna num degrau baixo e estável."
+    },
+    "pt_BR": {
+     "t": "Subida no banco",
+     "g": "Suba em uma caixa ou banco com controle.",
+     "p": [
+      "Comece com um degrau baixo e estável, na altura do joelho ou abaixo.",
+      "Apoie o pé inteiro no degrau e suba empurrando com essa perna.",
+      "Desça devagar, um pé de cada vez."
+     ],
+     "q": "Você costuma usar a escada no dia a dia?",
+     "c": "Faça 2 séries de 8 subidas por perna em um degrau baixo e estável."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Biceps curls",
+     "g": "Do a classic arm exercise with control.",
+     "p": [
+      "Stand tall, elbows close to your sides, palms facing forward.",
+      "Curl the weights up without swinging your body.",
+      "Lower slowly; the way down counts as much as the way up."
+     ],
+     "q": "Which arm exercises have you seen people do at the gym?",
+     "c": "Do 2 sets of 10 curls, taking three seconds to lower each rep."
+    },
+    "de": {
+     "t": "Bizepscurls",
+     "g": "Mach eine klassische Armübung mit Kontrolle.",
+     "p": [
+      "Steh aufrecht, Ellbogen nah am Körper, Handflächen nach vorn.",
+      "Beug die Arme, ohne mit dem Körper Schwung zu holen.",
+      "Senk langsam ab; der Weg nach unten zählt genauso wie der nach oben."
+     ],
+     "q": "Welche Armübungen hast du im Studio schon gesehen?",
+     "c": "Mach 2 Sätze mit 10 Curls und senk jede Wiederholung drei Sekunden lang ab."
+    },
+    "es": {
+     "t": "Curl de bíceps",
+     "g": "Haz un clásico ejercicio de brazos con control.",
+     "p": [
+      "De pie y erguido, codos pegados al cuerpo, palmas hacia delante.",
+      "Sube los pesos sin balancear el cuerpo.",
+      "Baja despacio; la bajada cuenta tanto como la subida."
+     ],
+     "q": "¿Qué ejercicios de brazos has visto hacer en el gimnasio?",
+     "c": "Haz 2 series de 10 curls tardando tres segundos en bajar cada repetición."
+    },
+    "fr": {
+     "t": "Les curls biceps",
+     "g": "Fais un exercice de bras classique avec contrôle.",
+     "p": [
+      "Debout bien droit, coudes près du corps, paumes vers l’avant.",
+      "Monte les charges sans balancer le corps.",
+      "Redescends lentement : la descente compte autant que la montée."
+     ],
+     "q": "Quels exercices de bras as-tu vu faire en salle ?",
+     "c": "Fais 2 séries de 10 curls en descendant chaque répétition en trois secondes."
+    },
+    "it": {
+     "t": "Curl per bicipiti",
+     "g": "Fai un classico esercizio per le braccia con controllo.",
+     "p": [
+      "In piedi e dritto, gomiti vicini ai fianchi, palmi in avanti.",
+      "Solleva i pesi senza dondolare il corpo.",
+      "Scendi lentamente: la discesa conta quanto la salita."
+     ],
+     "q": "Quali esercizi per le braccia hai visto fare in palestra?",
+     "c": "Fai 2 serie da 10 curl impiegando tre secondi per scendere a ogni ripetizione."
+    },
+    "pt": {
+     "t": "Curl de bíceps",
+     "g": "Faz um exercício clássico de braços com controlo.",
+     "p": [
+      "De pé e direito, cotovelos junto ao corpo, palmas para a frente.",
+      "Sobe os pesos sem balançar o corpo.",
+      "Desce devagar; a descida conta tanto como a subida."
+     ],
+     "q": "Que exercícios de braços já viste fazer no ginásio?",
+     "c": "Faz 2 séries de 10 curls, a demorar três segundos a descer cada repetição."
+    },
+    "pt_BR": {
+     "t": "Rosca bíceps",
+     "g": "Faça um exercício clássico de braço com controle.",
+     "p": [
+      "Em pé e ereto, cotovelos perto do corpo, palmas para a frente.",
+      "Suba os pesos sem balançar o corpo.",
+      "Desça devagar; a descida vale tanto quanto a subida."
+     ],
+     "q": "Quais exercícios de braço você já viu o pessoal fazendo na academia?",
+     "c": "Faça 2 séries de 10 roscas, levando três segundos para descer cada repetição."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Triceps pushdowns",
+     "g": "Train the back of your arms with a cable exercise.",
+     "p": [
+      "Stand facing the cable, elbows tucked at your sides.",
+      "Push the handle down until your arms are straight, without moving your elbows.",
+      "Let it rise slowly back to about chest height."
+     ],
+     "q": "Which of your arm muscles do you notice most when you push things?",
+     "c": "Do 2 sets of 12 pushdowns with your elbows fixed at your sides."
+    },
+    "de": {
+     "t": "Trizepsdrücken am Kabel",
+     "g": "Trainiere die Rückseite der Arme mit einer Kabelübung.",
+     "p": [
+      "Steh zum Kabelzug gewandt, Ellbogen fest an den Seiten.",
+      "Drück den Griff nach unten, bis die Arme gestreckt sind, ohne die Ellbogen zu bewegen.",
+      "Lass ihn langsam bis etwa Brusthöhe zurück."
+     ],
+     "q": "Welchen Armmuskel spürst du am meisten, wenn du etwas schiebst?",
+     "c": "Mach 2 Sätze mit 12 Wiederholungen, Ellbogen fest an den Seiten."
+    },
+    "es": {
+     "t": "Extensiones de tríceps en polea",
+     "g": "Entrena la parte de atrás de los brazos con un ejercicio en polea.",
+     "p": [
+      "De pie frente a la polea, codos pegados a los costados.",
+      "Empuja el agarre hacia abajo hasta estirar los brazos sin mover los codos.",
+      "Deja que suba despacio hasta la altura del pecho, más o menos."
+     ],
+     "q": "¿Qué músculo del brazo notas más al empujar cosas?",
+     "c": "Haz 2 series de 12 extensiones con los codos fijos a los costados."
+    },
+    "fr": {
+     "t": "Les extensions triceps à la poulie",
+     "g": "Travaille l’arrière des bras avec un exercice à la poulie.",
+     "p": [
+      "Debout face à la poulie, coudes collés au corps.",
+      "Pousse la poignée vers le bas jusqu’à bras tendus, sans bouger les coudes.",
+      "Laisse-la remonter lentement vers la hauteur de la poitrine."
+     ],
+     "q": "Quel muscle du bras sens-tu le plus quand tu pousses quelque chose ?",
+     "c": "Fais 2 séries de 12 extensions, coudes fixés le long du corps."
+    },
+    "it": {
+     "t": "Pushdown per tricipiti",
+     "g": "Allena la parte posteriore delle braccia con un esercizio ai cavi.",
+     "p": [
+      "In piedi di fronte al cavo, gomiti vicini ai fianchi.",
+      "Spingi la maniglia in basso fino a distendere le braccia senza muovere i gomiti.",
+      "Lasciala risalire lentamente fino all’altezza del petto circa."
+     ],
+     "q": "Quale muscolo del braccio senti di più quando spingi qualcosa?",
+     "c": "Fai 2 serie da 12 pushdown con i gomiti fermi ai fianchi."
+    },
+    "pt": {
+     "t": "Extensão de tríceps na polia",
+     "g": "Treina a parte de trás dos braços com um exercício na polia.",
+     "p": [
+      "De pé, de frente para a polia, cotovelos junto ao corpo.",
+      "Empurra a pega para baixo até esticar os braços, sem mexer os cotovelos.",
+      "Deixa-a subir devagar até mais ou menos à altura do peito."
+     ],
+     "q": "Que músculo do braço sentes mais quando empurras alguma coisa?",
+     "c": "Faz 2 séries de 12 extensões com os cotovelos fixos junto ao corpo."
+    },
+    "pt_BR": {
+     "t": "Tríceps na polia",
+     "g": "Treine a parte de trás dos braços com um exercício no cabo.",
+     "p": [
+      "Em pé, de frente para o cabo, cotovelos colados ao corpo.",
+      "Empurre o puxador para baixo até estender os braços, sem mexer os cotovelos.",
+      "Deixe subir devagar até mais ou menos a altura do peito."
+     ],
+     "q": "Qual músculo do braço você mais sente quando empurra alguma coisa?",
+     "c": "Faça 2 séries de 12 repetições com os cotovelos fixos ao lado do corpo."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lateral raises",
+     "g": "Lift light weights out to the side for your shoulders.",
+     "p": [
+      "Start with very light dumbbells; this exercise humbles everyone.",
+      "Raise your arms out to about shoulder height, elbows softly bent.",
+      "Lower slowly and keep your shoulders relaxed, away from your ears."
+     ],
+     "q": "Were you surprised how light shoulder exercises can feel heavy?",
+     "c": "Do 2 sets of 12 lateral raises with the lightest dumbbells."
+    },
+    "de": {
+     "t": "Seitheben",
+     "g": "Heb leichte Gewichte seitlich an für deine Schultern.",
+     "p": [
+      "Beginne mit sehr leichten Hanteln; diese Übung fordert jeden.",
+      "Heb die Arme seitlich bis etwa Schulterhöhe, Ellbogen leicht gebeugt.",
+      "Senk langsam ab und halte die Schultern locker, weg von den Ohren."
+     ],
+     "q": "Überrascht es dich, wie schwer sich leichte Schulterübungen anfühlen?",
+     "c": "Mach 2 Sätze mit 12 Wiederholungen Seitheben mit den leichtesten Hanteln."
+    },
+    "es": {
+     "t": "Elevaciones laterales",
+     "g": "Levanta pesos ligeros hacia los lados para los hombros.",
+     "p": [
+      "Empieza con mancuernas muy ligeras; este ejercicio cuesta a todo el mundo.",
+      "Sube los brazos hasta la altura de los hombros, codos algo flexionados.",
+      "Baja despacio con los hombros relajados, lejos de las orejas."
+     ],
+     "q": "¿Te sorprende lo pesados que se sienten los ejercicios de hombro?",
+     "c": "Haz 2 series de 12 elevaciones laterales con las mancuernas más ligeras."
+    },
+    "fr": {
+     "t": "Les élévations latérales",
+     "g": "Soulève des charges légères sur les côtés pour tes épaules.",
+     "p": [
+      "Commence avec des haltères très légers : cet exercice rend tout le monde humble.",
+      "Monte les bras jusqu’à hauteur d’épaules environ, coudes légèrement fléchis.",
+      "Redescends lentement, épaules détendues et loin des oreilles."
+     ],
+     "q": "Es-tu surpris de voir à quel point c’est dur avec peu de poids ?",
+     "c": "Fais 2 séries de 12 élévations latérales avec les haltères les plus légers."
+    },
+    "it": {
+     "t": "Alzate laterali",
+     "g": "Solleva pesi leggeri lateralmente per le spalle.",
+     "p": [
+      "Inizia con manubri molto leggeri: questo esercizio mette alla prova tutti.",
+      "Alza le braccia fino all’altezza delle spalle, gomiti leggermente piegati.",
+      "Scendi lentamente con le spalle rilassate, lontane dalle orecchie."
+     ],
+     "q": "Ti sorprende quanto pesino anche pesi leggeri per le spalle?",
+     "c": "Fai 2 serie da 12 alzate laterali con i manubri più leggeri."
+    },
+    "pt": {
+     "t": "Elevações laterais",
+     "g": "Levanta pesos leves para os lados para trabalhar os ombros.",
+     "p": [
+      "Começa com halteres muito leves; este exercício custa a toda a gente.",
+      "Sobe os braços até à altura dos ombros, cotovelos ligeiramente dobrados.",
+      "Desce devagar com os ombros relaxados, longe das orelhas."
+     ],
+     "q": "Ficaste surpreendido com o quanto pesos leves custam nos ombros?",
+     "c": "Faz 2 séries de 12 elevações laterais com os halteres mais leves."
+    },
+    "pt_BR": {
+     "t": "Elevação lateral",
+     "g": "Levante pesos leves para os lados para trabalhar os ombros.",
+     "p": [
+      "Comece com halteres bem leves; esse exercício desafia todo mundo.",
+      "Suba os braços até a altura dos ombros, cotovelos levemente dobrados.",
+      "Desça devagar com os ombros relaxados, longe das orelhas."
+     ],
+     "q": "Você se surpreendeu com o quanto peso leve pesa no ombro?",
+     "c": "Faça 2 séries de 12 elevações laterais com os halteres mais leves."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Calf raises",
+     "g": "Build lower-leg strength with simple ankle movements.",
+     "p": [
+      "Stand with the balls of your feet on a step, holding on for balance.",
+      "Rise up onto your toes as high as you comfortably can.",
+      "Lower slowly until your heels dip just below the step."
+     ],
+     "q": "How much walking do you do on a typical day?",
+     "c": "Do 2 sets of 15 slow calf raises, pausing at the top."
+    },
+    "de": {
+     "t": "Wadenheben",
+     "g": "Stärke die Unterschenkel mit einfachen Fußgelenkbewegungen.",
+     "p": [
+      "Stell dich mit den Fußballen auf eine Stufe und halt dich fest.",
+      "Geh so hoch auf die Zehenspitzen, wie es angenehm ist.",
+      "Senk langsam ab, bis die Fersen knapp unter die Stufe kommen."
+     ],
+     "q": "Wie viel gehst du an einem normalen Tag zu Fuß?",
+     "c": "Mach 2 Sätze mit 15 langsamen Wadenhebern und halte oben kurz."
+    },
+    "es": {
+     "t": "Elevaciones de gemelos",
+     "g": "Fortalece la parte baja de las piernas con movimientos de tobillo sencillos.",
+     "p": [
+      "Ponte con la parte delantera de los pies en un escalón, sujetándote.",
+      "Sube de puntillas tan alto como te resulte cómodo.",
+      "Baja despacio hasta que los talones queden un poco por debajo del escalón."
+     ],
+     "q": "¿Cuánto caminas en un día normal?",
+     "c": "Haz 2 series de 15 elevaciones lentas con una pausa arriba."
+    },
+    "fr": {
+     "t": "Les mollets debout",
+     "g": "Renforce le bas des jambes avec de simples mouvements de cheville.",
+     "p": [
+      "Place l’avant des pieds sur une marche en te tenant pour l’équilibre.",
+      "Monte sur la pointe des pieds aussi haut que c’est confortable.",
+      "Redescends lentement jusqu’à ce que les talons passent sous la marche."
+     ],
+     "q": "Combien marches-tu lors d’une journée type ?",
+     "c": "Fais 2 séries de 15 montées lentes sur pointes avec une pause en haut."
+    },
+    "it": {
+     "t": "Calf raise",
+     "g": "Rinforza la parte bassa delle gambe con semplici movimenti della caviglia.",
+     "p": [
+      "Mettiti con l’avampiede su un gradino, tenendoti per l’equilibrio.",
+      "Sali sulle punte fin dove è comodo.",
+      "Scendi lentamente finché i talloni vanno appena sotto il gradino."
+     ],
+     "q": "Quanto cammini in una giornata tipo?",
+     "c": "Fai 2 serie da 15 calf raise lenti con una pausa in alto."
+    },
+    "pt": {
+     "t": "Elevação de gémeos",
+     "g": "Fortalece a parte de baixo das pernas com movimentos simples do tornozelo.",
+     "p": [
+      "Põe a parte da frente dos pés num degrau, segurando-te para equilíbrio.",
+      "Sobe em pontas dos pés até onde for confortável.",
+      "Desce devagar até os calcanhares ficarem um pouco abaixo do degrau."
+     ],
+     "q": "Quanto caminhas num dia normal?",
+     "c": "Faz 2 séries de 15 elevações lentas com uma pausa em cima."
+    },
+    "pt_BR": {
+     "t": "Elevação de panturrilha",
+     "g": "Fortaleça a parte de baixo das pernas com movimentos simples do tornozelo.",
+     "p": [
+      "Apoie a parte da frente dos pés em um degrau, segurando-se para equilibrar.",
+      "Suba na ponta dos pés até onde for confortável.",
+      "Desça devagar até os calcanhares ficarem um pouco abaixo do degrau."
+     ],
+     "q": "Quanto você caminha em um dia normal?",
+     "c": "Faça 2 séries de 15 elevações lentas com uma pausa no alto."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The dead bug",
+     "g": "Learn control with a floor core exercise.",
+     "p": [
+      "Lie on your back, arms up, knees bent at 90 degrees above your hips.",
+      "Slowly lower one arm and the opposite leg while your lower back stays down.",
+      "Return and switch sides, moving slowly and breathing out."
+     ],
+     "q": "Which core exercise have you liked most so far?",
+     "c": "Do 2 sets of 6 slow dead bugs per side."
+    },
+    "de": {
+     "t": "Der Dead Bug",
+     "g": "Lerne Kontrolle mit einer Rumpfübung am Boden.",
+     "p": [
+      "Leg dich auf den Rücken, Arme nach oben, Knie im rechten Winkel über der Hüfte.",
+      "Senk langsam einen Arm und das gegenüberliegende Bein, der untere Rücken bleibt am Boden.",
+      "Komm zurück und wechsle die Seite, langsam und mit Ausatmen."
+     ],
+     "q": "Welche Rumpfübung hat dir bisher am besten gefallen?",
+     "c": "Mach 2 Sätze mit 6 langsamen Dead Bugs pro Seite."
+    },
+    "es": {
+     "t": "El dead bug",
+     "g": "Aprende control con un ejercicio de core en el suelo.",
+     "p": [
+      "Túmbate boca arriba, brazos arriba y rodillas a 90 grados sobre la cadera.",
+      "Baja despacio un brazo y la pierna contraria con la zona lumbar pegada al suelo.",
+      "Vuelve y cambia de lado, despacio y soltando el aire."
+     ],
+     "q": "¿Qué ejercicio de core te ha gustado más hasta ahora?",
+     "c": "Haz 2 series de 6 dead bugs lentos por lado."
+    },
+    "fr": {
+     "t": "Le dead bug",
+     "g": "Apprends le contrôle avec un exercice de gainage au sol.",
+     "p": [
+      "Allongé sur le dos, bras levés, genoux à 90 degrés au-dessus des hanches.",
+      "Descends lentement un bras et la jambe opposée, bas du dos collé au sol.",
+      "Reviens et change de côté, lentement et en expirant."
+     ],
+     "q": "Quel exercice de gainage as-tu préféré jusqu’ici ?",
+     "c": "Fais 2 séries de 6 dead bugs lents par côté."
+    },
+    "it": {
+     "t": "Il dead bug",
+     "g": "Impara il controllo con un esercizio per il core a terra.",
+     "p": [
+      "Sdraiati sulla schiena, braccia in alto, ginocchia a 90 gradi sopra le anche.",
+      "Abbassa lentamente un braccio e la gamba opposta, con la zona lombare a terra.",
+      "Torna e cambia lato, lentamente ed espirando."
+     ],
+     "q": "Quale esercizio per il core ti è piaciuto di più finora?",
+     "c": "Fai 2 serie da 6 dead bug lenti per lato."
+    },
+    "pt": {
+     "t": "O dead bug",
+     "g": "Aprende controlo com um exercício de core no chão.",
+     "p": [
+      "Deita-te de costas, braços para cima, joelhos a 90 graus por cima da anca.",
+      "Desce devagar um braço e a perna oposta, com a lombar encostada ao chão.",
+      "Volta e troca de lado, devagar e a expirar."
+     ],
+     "q": "De que exercício de core gostaste mais até agora?",
+     "c": "Faz 2 séries de 6 dead bugs lentos por lado."
+    },
+    "pt_BR": {
+     "t": "O dead bug",
+     "g": "Aprenda controle com um exercício de core no chão.",
+     "p": [
+      "Deite de costas, braços para cima, joelhos a 90 graus acima do quadril.",
+      "Desça devagar um braço e a perna oposta, mantendo a lombar no chão.",
+      "Volte e troque de lado, devagar e soltando o ar."
+     ],
+     "q": "De qual exercício de core você mais gostou até agora?",
+     "c": "Faça 2 séries de 6 dead bugs lentos de cada lado."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The bird dog",
+     "g": "Reach with the opposite arm and leg to build stability.",
+     "p": [
+      "Start on hands and knees, hands under shoulders, knees under hips.",
+      "Extend one arm and the opposite leg until they form a long line.",
+      "Keep your hips level, pause, then return with control."
+     ],
+     "q": "Do you find it easier to balance on one side?",
+     "c": "Do 2 sets of 8 bird dogs per side with a two-second hold."
+    },
+    "de": {
+     "t": "Der Vierfüßlerstand mit Strecken",
+     "g": "Streck den gegenüberliegenden Arm und das Bein, um Stabilität aufzubauen.",
+     "p": [
+      "Beginne im Vierfüßlerstand, Hände unter den Schultern, Knie unter der Hüfte.",
+      "Streck einen Arm und das gegenüberliegende Bein zu einer langen Linie.",
+      "Halte die Hüfte waagerecht, kurz halten, dann kontrolliert zurück."
+     ],
+     "q": "Fällt dir das Gleichgewicht auf einer Seite leichter?",
+     "c": "Mach 2 Sätze mit 8 Wiederholungen pro Seite und halte je zwei Sekunden."
+    },
+    "es": {
+     "t": "El bird dog",
+     "g": "Estira el brazo y la pierna contrarios para ganar estabilidad.",
+     "p": [
+      "Empieza a cuatro patas, manos bajo los hombros y rodillas bajo la cadera.",
+      "Estira un brazo y la pierna contraria hasta formar una línea larga.",
+      "Mantén la cadera nivelada, haz una pausa y vuelve con control."
+     ],
+     "q": "¿Te resulta más fácil mantener el equilibrio de un lado?",
+     "c": "Haz 2 series de 8 bird dogs por lado aguantando dos segundos."
+    },
+    "fr": {
+     "t": "Le bird dog",
+     "g": "Tends le bras et la jambe opposés pour gagner en stabilité.",
+     "p": [
+      "Commence à quatre pattes, mains sous les épaules, genoux sous les hanches.",
+      "Tends un bras et la jambe opposée pour former une longue ligne.",
+      "Garde le bassin à niveau, marque une pause, puis reviens avec contrôle."
+     ],
+     "q": "L’équilibre est-il plus facile d’un côté pour toi ?",
+     "c": "Fais 2 séries de 8 bird dogs par côté avec un maintien de deux secondes."
+    },
+    "it": {
+     "t": "Il bird dog",
+     "g": "Distendi braccio e gamba opposti per costruire stabilità.",
+     "p": [
+      "Parti a quattro zampe, mani sotto le spalle e ginocchia sotto le anche.",
+      "Distendi un braccio e la gamba opposta fino a formare una linea lunga.",
+      "Tieni il bacino in piano, fai una pausa, poi torna con controllo."
+     ],
+     "q": "Trovi più facile l’equilibrio su un lato?",
+     "c": "Fai 2 serie da 8 bird dog per lato tenendo due secondi."
+    },
+    "pt": {
+     "t": "O bird dog",
+     "g": "Estica o braço e a perna opostos para ganhar estabilidade.",
+     "p": [
+      "Começa de gatas, mãos por baixo dos ombros e joelhos por baixo da anca.",
+      "Estica um braço e a perna oposta até formarem uma linha comprida.",
+      "Mantém a anca nivelada, faz uma pausa e volta com controlo."
+     ],
+     "q": "Achas o equilíbrio mais fácil de um dos lados?",
+     "c": "Faz 2 séries de 8 bird dogs por lado, a segurar dois segundos."
+    },
+    "pt_BR": {
+     "t": "O bird dog",
+     "g": "Estique o braço e a perna opostos para ganhar estabilidade.",
+     "p": [
+      "Comece em quatro apoios, mãos embaixo dos ombros e joelhos embaixo do quadril.",
+      "Estique um braço e a perna oposta até formar uma linha comprida.",
+      "Mantenha o quadril nivelado, faça uma pausa e volte com controle."
+     ],
+     "q": "Você acha o equilíbrio mais fácil de um lado?",
+     "c": "Faça 2 séries de 8 bird dogs de cada lado, segurando dois segundos."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Side plank",
+     "g": "Work the sides of your core.",
+     "p": [
+      "Lie on your side, elbow under your shoulder, knees bent to start.",
+      "Lift your hips so your body forms a straight line.",
+      "Progress to straight legs when the bent-knee version feels steady."
+     ],
+     "q": "Which side do you think will feel stronger?",
+     "c": "Hold a side plank for 15 seconds on each side, twice."
+    },
+    "de": {
+     "t": "Seitstütz",
+     "g": "Trainiere die Seiten deiner Körpermitte.",
+     "p": [
+      "Leg dich auf die Seite, Ellbogen unter der Schulter, zu Beginn mit gebeugten Knien.",
+      "Heb die Hüfte, bis dein Körper eine gerade Linie bildet.",
+      "Geh zu gestreckten Beinen über, wenn die Knievariante stabil ist."
+     ],
+     "q": "Welche Seite wird sich wohl stärker anfühlen?",
+     "c": "Halte den Seitstütz zweimal 15 Sekunden pro Seite."
+    },
+    "es": {
+     "t": "Plancha lateral",
+     "g": "Trabaja los laterales del core.",
+     "p": [
+      "Túmbate de lado, codo bajo el hombro y rodillas dobladas para empezar.",
+      "Eleva la cadera hasta que el cuerpo forme una línea recta.",
+      "Pasa a piernas estiradas cuando la versión con rodillas te resulte estable."
+     ],
+     "q": "¿Qué lado crees que se sentirá más fuerte?",
+     "c": "Aguanta una plancha lateral 15 segundos por lado, dos veces."
+    },
+    "fr": {
+     "t": "La planche latérale",
+     "g": "Travaille les côtés de ton tronc.",
+     "p": [
+      "Allonge-toi sur le côté, coude sous l’épaule, genoux fléchis pour commencer.",
+      "Monte le bassin pour que ton corps forme une ligne droite.",
+      "Passe aux jambes tendues quand la version genoux fléchis est stable."
+     ],
+     "q": "Quel côté penses-tu être le plus fort ?",
+     "c": "Tiens une planche latérale 15 secondes de chaque côté, deux fois."
+    },
+    "it": {
+     "t": "Plank laterale",
+     "g": "Allena i lati del core.",
+     "p": [
+      "Sdraiati sul fianco, gomito sotto la spalla, ginocchia piegate per iniziare.",
+      "Solleva il bacino finché il corpo forma una linea dritta.",
+      "Passa alle gambe tese quando la versione sulle ginocchia è stabile."
+     ],
+     "q": "Quale lato pensi che sarà più forte?",
+     "c": "Tieni il plank laterale 15 secondi per lato, due volte."
+    },
+    "pt": {
+     "t": "Prancha lateral",
+     "g": "Trabalha os lados do core.",
+     "p": [
+      "Deita-te de lado, cotovelo por baixo do ombro, joelhos dobrados para começar.",
+      "Sobe a anca até o corpo formar uma linha reta.",
+      "Passa a pernas esticadas quando a versão de joelhos estiver estável."
+     ],
+     "q": "Que lado achas que vai parecer mais forte?",
+     "c": "Segura uma prancha lateral 15 segundos de cada lado, duas vezes."
+    },
+    "pt_BR": {
+     "t": "Prancha lateral",
+     "g": "Trabalhe as laterais do core.",
+     "p": [
+      "Deite de lado, cotovelo embaixo do ombro, joelhos dobrados para começar.",
+      "Suba o quadril até o corpo formar uma linha reta.",
+      "Passe para as pernas estendidas quando a versão com joelhos estiver estável."
+     ],
+     "q": "Qual lado você acha que vai parecer mais forte?",
+     "c": "Segure a prancha lateral 15 segundos de cada lado, duas vezes."
+    }
+   }
+  }
+ ]
+}

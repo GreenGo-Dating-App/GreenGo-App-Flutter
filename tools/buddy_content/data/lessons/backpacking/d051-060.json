@@ -1,0 +1,835 @@
+{
+ "topic": "backpacking",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bus station survival",
+     "g": "Find the right bus, buy tickets and store your luggage calmly at busy bus stations.",
+     "p": [
+      "Buy tickets at official counters or trusted apps, and ignore touts offering quick deals.",
+      "Ask at the counter which bay your bus leaves from, and show the ticket to the driver or staff.",
+      "If your big bag goes in the hold, keep valuables, water and snacks in your daypack on board."
+     ],
+     "q": "What would worry you most at a big, busy bus station abroad?",
+     "c": "Write the question Which bay does the bus to... leave from? in a language you would like to learn."
+    },
+    "de": {
+     "t": "Überleben am Busbahnhof",
+     "g": "Finde den richtigen Bus, kauf Tickets und verstau dein Gepäck entspannt an vollen Busbahnhöfen.",
+     "p": [
+      "Kauf Tickets an offiziellen Schaltern oder in vertrauenswürdigen Apps und ignorier Schlepper mit Schnellangeboten.",
+      "Frag am Schalter, von welchem Steig dein Bus fährt, und zeig das Ticket dem Fahrer oder Personal.",
+      "Kommt der große Rucksack in den Gepäckraum, behalt Wertsachen, Wasser und Snacks im Tagesrucksack."
+     ],
+     "q": "Was würde dich an einem großen, vollen Busbahnhof im Ausland am meisten beunruhigen?",
+     "c": "Schreib die Frage Von welchem Steig fährt der Bus nach...? in einer Sprache, die du lernen möchtest."
+    },
+    "es": {
+     "t": "Sobrevivir en la terminal",
+     "g": "Encuentra el autobús correcto, compra billetes y guarda tu equipaje con calma en terminales concurridas.",
+     "p": [
+      "Compra billetes en taquillas oficiales o apps de confianza e ignora a quienes ofrecen gangas rápidas.",
+      "Pregunta en taquilla de qué andén sale tu autobús y enseña el billete al conductor o al personal.",
+      "Si la mochila grande va en el maletero, lleva lo valioso, el agua y algo de comer en la de día."
+     ],
+     "q": "¿Qué te preocuparía más en una terminal grande y llena en el extranjero?",
+     "c": "Escribe la pregunta ¿De qué andén sale el autobús a...? en un idioma que te gustaría aprender."
+    },
+    "fr": {
+     "t": "Survivre à la gare routière",
+     "g": "Trouve le bon bus, achète tes billets et range tes bagages sereinement dans les gares animées.",
+     "p": [
+      "Achète tes billets aux guichets officiels ou sur des applis fiables, et ignore les rabatteurs.",
+      "Demande au guichet de quel quai part ton bus et montre le billet au chauffeur ou au personnel.",
+      "Si ton gros sac va en soute, garde objets de valeur, eau et en-cas dans ton sac de jour."
+     ],
+     "q": "Qu'est-ce qui t'inquiéterait le plus dans une grande gare routière animée à l'étranger ?",
+     "c": "Écris la question De quel quai part le bus pour... ? dans une langue que tu aimerais apprendre."
+    },
+    "it": {
+     "t": "Sopravvivere in autostazione",
+     "g": "Trova l'autobus giusto, compra i biglietti e sistema il bagaglio con calma nelle autostazioni affollate.",
+     "p": [
+      "Compra i biglietti agli sportelli ufficiali o su app affidabili e ignora chi offre affari al volo.",
+      "Chiedi allo sportello da quale stallo parte il tuo autobus e mostra il biglietto all'autista o al personale.",
+      "Se lo zaino grande va nel bagagliaio, tieni valori, acqua e snack nello zainetto a bordo."
+     ],
+     "q": "Cosa ti preoccuperebbe di più in una grande autostazione affollata all'estero?",
+     "c": "Scrivi la domanda Da quale stallo parte l'autobus per...? in una lingua che vorresti imparare."
+    },
+    "pt": {
+     "t": "Sobreviver na estação",
+     "g": "Encontra o autocarro certo, compra bilhetes e guarda a bagagem com calma em estações movimentadas.",
+     "p": [
+      "Compra bilhetes nas bilheteiras oficiais ou em apps de confiança e ignora quem oferece negócios rápidos.",
+      "Pergunta na bilheteira de que cais sai o teu autocarro e mostra o bilhete ao motorista ou ao staff.",
+      "Se a mochila grande for no porão, leva os objetos de valor, a água e os snacks na mochila de dia."
+     ],
+     "q": "O que te preocuparia mais numa estação de autocarros grande e cheia no estrangeiro?",
+     "c": "Escreve a pergunta De que cais sai o autocarro para...? numa língua que gostarias de aprender."
+    },
+    "pt_BR": {
+     "t": "Sobrevivendo na rodoviária",
+     "g": "Ache o ônibus certo, compre passagens e guarde a bagagem com calma em rodoviárias movimentadas.",
+     "p": [
+      "Compre passagens em guichês oficiais ou apps confiáveis e ignore quem oferece negócio rápido.",
+      "Pergunte no guichê de qual plataforma sai seu ônibus e mostre a passagem ao motorista ou funcionário.",
+      "Se a mochila grande for no bagageiro, leve objetos de valor, água e lanche na mochila pequena."
+     ],
+     "q": "O que mais preocuparia você numa rodoviária grande e cheia no exterior?",
+     "c": "Escreva a pergunta De qual plataforma sai o ônibus para...? num idioma que você gostaria de aprender."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Train travel for backpackers",
+     "g": "Learn about train classes, sleeper berths and how to book tickets for your journeys.",
+     "p": [
+      "Many trains offer several classes, from basic seats to reserved seats with more space.",
+      "Sleeper trains have berths in shared compartments; lower ones are easier, upper ones more private.",
+      "Popular routes can sell out, so book ahead through official rail sites or stations when possible."
+     ],
+     "q": "Have you ever slept on a train, or would you like to try it?",
+     "c": "Find one famous train journey in the world and read what makes it special."
+    },
+    "de": {
+     "t": "Bahnfahren für Backpacker",
+     "g": "Lerne Zugklassen, Schlafwagenbetten und das Buchen von Tickets für deine Reisen kennen.",
+     "p": [
+      "Viele Züge haben mehrere Klassen, von einfachen Sitzen bis zu reservierten Plätzen mit mehr Raum.",
+      "Nachtzüge haben Liegen in geteilten Abteilen; untere sind bequemer zu erreichen, obere privater.",
+      "Beliebte Strecken sind schnell ausgebucht, also buch möglichst früh über offizielle Bahnseiten oder Bahnhöfe."
+     ],
+     "q": "Hast du schon mal im Zug geschlafen, oder würdest du es gern ausprobieren?",
+     "c": "Such eine berühmte Zugreise der Welt und lies, was sie besonders macht."
+    },
+    "es": {
+     "t": "Viajar en tren de mochilero",
+     "g": "Conoce las clases de tren, las literas y cómo reservar billetes para tus trayectos.",
+     "p": [
+      "Muchos trenes tienen varias clases, de asientos básicos a plazas reservadas con más espacio.",
+      "Los trenes nocturnos tienen literas en compartimentos compartidos; las de abajo son cómodas, las de arriba más privadas.",
+      "Las rutas populares se agotan, así que reserva antes en webs oficiales de tren o en la estación."
+     ],
+     "q": "¿Has dormido alguna vez en un tren o te gustaría probarlo?",
+     "c": "Busca un viaje en tren famoso en el mundo y lee qué lo hace especial."
+    },
+    "fr": {
+     "t": "Le train sac au dos",
+     "g": "Découvre les classes, les couchettes et comment réserver tes billets de train.",
+     "p": [
+      "Beaucoup de trains proposent plusieurs classes, du siège simple à la place réservée plus spacieuse.",
+      "Les trains de nuit ont des couchettes en compartiment partagé ; en bas c'est pratique, en haut plus intime.",
+      "Les lignes populaires affichent complet, alors réserve tôt sur les sites officiels ou en gare."
+     ],
+     "q": "As-tu déjà dormi dans un train, ou aimerais-tu essayer ?",
+     "c": "Trouve un voyage en train célèbre dans le monde et lis ce qui le rend unique."
+    },
+    "it": {
+     "t": "In treno con lo zaino",
+     "g": "Scopri le classi del treno, le cuccette e come prenotare i biglietti per i tuoi spostamenti.",
+     "p": [
+      "Molti treni offrono più classi, dai posti base ai posti prenotati con più spazio.",
+      "I treni notte hanno cuccette in scompartimenti condivisi; quelle in basso sono comode, quelle in alto più riservate.",
+      "Le tratte popolari si esauriscono, quindi prenota prima sui siti ufficiali o in stazione."
+     ],
+     "q": "Hai mai dormito su un treno, o ti piacerebbe provare?",
+     "c": "Trova un viaggio in treno famoso nel mondo e leggi cosa lo rende speciale."
+    },
+    "pt": {
+     "t": "Comboio para mochileiros",
+     "g": "Conhece as classes de comboio, as camas de cabine e como reservar bilhetes para as tuas viagens.",
+     "p": [
+      "Muitos comboios têm várias classes, desde lugares básicos a lugares reservados com mais espaço.",
+      "Os comboios noturnos têm camas em compartimentos partilhados; as de baixo são práticas, as de cima mais privadas.",
+      "As linhas populares esgotam, por isso reserva antes nos sites oficiais ou nas estações."
+     ],
+     "q": "Já dormiste num comboio, ou gostavas de experimentar?",
+     "c": "Encontra uma viagem de comboio famosa no mundo e lê o que a torna especial."
+    },
+    "pt_BR": {
+     "t": "Trem para mochileiros",
+     "g": "Conheça as classes de trem, as cabines-leito e como reservar passagens para suas viagens.",
+     "p": [
+      "Muitos trens têm várias classes, de assentos simples a lugares reservados com mais espaço.",
+      "Trens noturnos têm leitos em cabines compartilhadas; os de baixo são práticos, os de cima mais reservados.",
+      "Trechos populares esgotam, então reserve antes em sites oficiais de trem ou nas estações."
+     ],
+     "q": "Você já dormiu num trem, ou gostaria de experimentar?",
+     "c": "Encontre uma viagem de trem famosa no mundo e leia o que a torna especial."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Night transport",
+     "g": "Use overnight buses and trains to save daytime and a night's accommodation, comfortably and safely.",
+     "p": [
+      "A night journey covers long distances while you sleep and saves the cost of one night's bed.",
+      "Bring layers, a neck pillow, earplugs and an eye mask, as air conditioning can be very cold.",
+      "Keep valuables on your body or in your daypack by your feet, never in an overhead rack out of sight."
+     ],
+     "q": "Could you sleep sitting up on a bus, or would you prefer a sleeper train?",
+     "c": "Pack a small night kit: a layer, earplugs, eye mask, water and a snack."
+    },
+    "de": {
+     "t": "Nachtverbindungen",
+     "g": "Nutz Nachtbusse und -züge, um Tageszeit und eine Übernachtung zu sparen, bequem und sicher.",
+     "p": [
+      "Eine Nachtfahrt legt lange Strecken zurück, während du schläfst, und spart eine Übernachtung.",
+      "Nimm Schichten, Nackenkissen, Ohrstöpsel und Schlafmaske mit, die Klimaanlage kann sehr kalt sein.",
+      "Behalt Wertsachen am Körper oder im Tagesrucksack zu deinen Füßen, nie unbeobachtet in der Ablage."
+     ],
+     "q": "Könntest du im Sitzen im Bus schlafen, oder wäre dir ein Schlafwagen lieber?",
+     "c": "Pack ein kleines Nachtset: eine Jacke, Ohrstöpsel, Schlafmaske, Wasser und einen Snack."
+    },
+    "es": {
+     "t": "Transporte nocturno",
+     "g": "Usa autobuses y trenes nocturnos para ahorrar tiempo de día y una noche de alojamiento, con comodidad y seguridad.",
+     "p": [
+      "Un viaje nocturno cubre largas distancias mientras duermes y te ahorra una noche de cama.",
+      "Lleva capas, almohada de cuello, tapones y antifaz, porque el aire acondicionado puede ser muy frío.",
+      "Lleva lo valioso encima o en la mochila de día a tus pies, nunca en el portaequipajes sin verlo."
+     ],
+     "q": "¿Podrías dormir sentado en un autobús o preferirías un tren con literas?",
+     "c": "Prepara un pequeño kit nocturno: una capa, tapones, antifaz, agua y algo de comer."
+    },
+    "fr": {
+     "t": "Les trajets de nuit",
+     "g": "Utilise bus et trains de nuit pour gagner du temps et une nuit d'hébergement, confortablement et en sécurité.",
+     "p": [
+      "Un trajet de nuit couvre de longues distances pendant ton sommeil et t'économise une nuit.",
+      "Emporte couches chaudes, coussin de voyage, bouchons et masque, car la clim peut être glaciale.",
+      "Garde tes objets de valeur sur toi ou dans ton sac de jour à tes pieds, jamais hors de vue dans le porte-bagages."
+     ],
+     "q": "Pourrais-tu dormir assis dans un bus, ou préférerais-tu un train couchette ?",
+     "c": "Prépare un petit kit de nuit : une couche chaude, bouchons, masque, eau et un en-cas."
+    },
+    "it": {
+     "t": "Viaggi notturni",
+     "g": "Usa autobus e treni notturni per risparmiare tempo e una notte di alloggio, comodo e sicuro.",
+     "p": [
+      "Un viaggio notturno copre lunghe distanze mentre dormi e ti fa risparmiare una notte di alloggio.",
+      "Porta strati, cuscino da viaggio, tappi e mascherina, perché l'aria condizionata può essere gelida.",
+      "Tieni i valori addosso o nello zainetto ai tuoi piedi, mai nella cappelliera fuori dalla tua vista."
+     ],
+     "q": "Riusciresti a dormire seduto in autobus, o preferiresti un treno con cuccette?",
+     "c": "Prepara un piccolo kit notturno: uno strato, tappi, mascherina, acqua e uno snack."
+    },
+    "pt": {
+     "t": "Transporte noturno",
+     "g": "Usa autocarros e comboios noturnos para poupar tempo de dia e uma noite de alojamento, com conforto e segurança.",
+     "p": [
+      "Uma viagem noturna faz longas distâncias enquanto dormes e poupa-te uma noite de alojamento.",
+      "Leva camadas, almofada de pescoço, tampões e máscara, porque o ar condicionado pode ser muito frio.",
+      "Mantém os objetos de valor contigo ou na mochila de dia aos teus pés, nunca na prateleira fora de vista."
+     ],
+     "q": "Conseguias dormir sentado num autocarro, ou preferias um comboio com camas?",
+     "c": "Prepara um pequeno kit noturno: uma camada, tampões, máscara, água e um snack."
+    },
+    "pt_BR": {
+     "t": "Transporte noturno",
+     "g": "Use ônibus e trens noturnos para ganhar tempo de dia e economizar uma diária, com conforto e segurança.",
+     "p": [
+      "Uma viagem noturna cobre longas distâncias enquanto você dorme e economiza uma diária de hospedagem.",
+      "Leve camadas, travesseiro de pescoço, protetor de ouvido e máscara, porque o ar-condicionado pode ser gelado.",
+      "Deixe objetos de valor junto ao corpo ou na mochila pequena aos seus pés, nunca no bagageiro fora de vista."
+     ],
+     "q": "Você conseguiria dormir sentado no ônibus, ou preferiria um trem com leito?",
+     "c": "Monte um kit noturno: uma camada, protetor de ouvido, máscara, água e um lanche."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Border crossings by land",
+     "g": "Prepare documents and expectations for land border crossings, with patience as your best tool.",
+     "p": [
+      "Check visa and entry rules for your nationality on official government sites before you go.",
+      "Have your passport, onward plans and any required photos or forms ready, and keep stamps visible.",
+      "Use official money exchange only, stay with your bus or group, and expect queues; be patient and polite."
+     ],
+     "q": "Have you ever crossed a border by land, or does the idea excite you?",
+     "c": "Check the entry rules for your passport in one country you would love to cross into by land."
+    },
+    "de": {
+     "t": "Grenzübertritte auf dem Landweg",
+     "g": "Bereite Dokumente und Erwartungen für Landgrenzen vor, mit Geduld als wichtigstem Werkzeug.",
+     "p": [
+      "Prüf Visa- und Einreiseregeln für deine Staatsangehörigkeit vorher auf offiziellen Regierungsseiten.",
+      "Halt Pass, Weiterreisepläne und nötige Fotos oder Formulare bereit und achte auf die Stempel.",
+      "Tausch Geld nur offiziell, bleib bei deinem Bus oder deiner Gruppe und rechne mit Schlangen; bleib geduldig und höflich."
+     ],
+     "q": "Bist du schon mal auf dem Landweg über eine Grenze gereist, oder reizt dich die Idee?",
+     "c": "Prüf die Einreiseregeln für deinen Pass in einem Land, in das du gern über Land einreisen würdest."
+    },
+    "es": {
+     "t": "Cruzar fronteras por tierra",
+     "g": "Prepara documentos y expectativas para cruzar fronteras terrestres, con la paciencia como mejor herramienta.",
+     "p": [
+      "Revisa los requisitos de visado y entrada para tu nacionalidad en webs oficiales del gobierno antes de ir.",
+      "Ten listos pasaporte, planes de salida y fotos o formularios necesarios, y revisa que te sellen bien.",
+      "Cambia dinero solo en sitios oficiales, no te separes de tu autobús o grupo y espera colas; paciencia y educación."
+     ],
+     "q": "¿Has cruzado alguna vez una frontera por tierra o te emociona la idea?",
+     "c": "Revisa los requisitos de entrada con tu pasaporte en un país al que te encantaría entrar por tierra."
+    },
+    "fr": {
+     "t": "Passer une frontière terrestre",
+     "g": "Prépare tes documents et tes attentes pour les frontières terrestres, avec la patience comme meilleur outil.",
+     "p": [
+      "Vérifie les règles de visa et d'entrée pour ta nationalité sur les sites officiels avant de partir.",
+      "Prépare passeport, suite du voyage et photos ou formulaires requis, et vérifie bien tes tampons.",
+      "Change ton argent seulement aux guichets officiels, reste avec ton bus ou ton groupe et prévois la queue ; patience et politesse."
+     ],
+     "q": "As-tu déjà passé une frontière par voie terrestre, ou l'idée t'enthousiasme-t-elle ?",
+     "c": "Vérifie les règles d'entrée pour ton passeport dans un pays où tu aimerais entrer par la route."
+    },
+    "it": {
+     "t": "Attraversare confini via terra",
+     "g": "Prepara documenti e aspettative per i confini via terra, con la pazienza come strumento migliore.",
+     "p": [
+      "Controlla le regole su visti e ingresso per la tua nazionalità sui siti ufficiali prima di partire.",
+      "Tieni pronti passaporto, piani di proseguimento ed eventuali foto o moduli, e controlla i timbri.",
+      "Cambia soldi solo in modo ufficiale, resta con il tuo autobus o gruppo e aspettati code; pazienza e gentilezza."
+     ],
+     "q": "Hai mai attraversato un confine via terra, o l'idea ti entusiasma?",
+     "c": "Controlla le regole di ingresso per il tuo passaporto in un paese in cui vorresti entrare via terra."
+    },
+    "pt": {
+     "t": "Atravessar fronteiras por terra",
+     "g": "Prepara documentos e expectativas para fronteiras terrestres, com a paciência como melhor ferramenta.",
+     "p": [
+      "Verifica as regras de visto e entrada para a tua nacionalidade em sites oficiais do governo antes de ir.",
+      "Tem prontos o passaporte, os planos de saída e fotos ou formulários necessários, e confirma os carimbos.",
+      "Troca dinheiro só em sítios oficiais, não te afastes do autocarro ou grupo e conta com filas; paciência e educação."
+     ],
+     "q": "Já atravessaste uma fronteira por terra, ou a ideia entusiasma-te?",
+     "c": "Verifica as regras de entrada para o teu passaporte num país onde adorarias entrar por terra."
+    },
+    "pt_BR": {
+     "t": "Cruzando fronteiras por terra",
+     "g": "Prepare documentos e expectativas para fronteiras terrestres, com a paciência como melhor ferramenta.",
+     "p": [
+      "Confira as regras de visto e entrada para sua nacionalidade em sites oficiais do governo antes de ir.",
+      "Deixe prontos passaporte, planos de saída e fotos ou formulários exigidos, e confira os carimbos.",
+      "Troque dinheiro só em lugares oficiais, não se afaste do ônibus ou grupo e espere filas; paciência e educação."
+     ],
+     "q": "Você já cruzou uma fronteira por terra, ou a ideia empolga você?",
+     "c": "Confira as regras de entrada para o seu passaporte num país onde você adoraria entrar por terra."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Local transport adventures",
+     "g": "Discover tuk-tuks, minibuses, ferries and shared taxis, and how to ride them confidently.",
+     "p": [
+      "Agree on the fare before you get into a tuk-tuk or taxi without a meter, and carry small change.",
+      "Minibuses and shared taxis leave when full; ask locals or hostel staff where they stop and how to pay.",
+      "Choose licensed operators, use seatbelts or life jackets when offered, and skip overloaded boats."
+     ],
+     "q": "Which local ride would you be most excited to try: a tuk-tuk, a ferry or a shared taxi?",
+     "c": "Learn how to ask How much to...? in the language of a place you would like to visit."
+    },
+    "de": {
+     "t": "Abenteuer im Nahverkehr",
+     "g": "Entdecke Tuk-Tuks, Minibusse, Fähren und Sammeltaxis und wie du sie selbstbewusst nutzt.",
+     "p": [
+      "Vereinbar den Preis, bevor du in ein Tuk-Tuk oder Taxi ohne Taxameter steigst, und hab Kleingeld dabei.",
+      "Minibusse und Sammeltaxis fahren los, wenn sie voll sind; frag Einheimische, wo sie halten und wie man zahlt.",
+      "Wähl lizenzierte Anbieter, nutz Gurte oder Schwimmwesten, wenn angeboten, und meide überladene Boote."
+     ],
+     "q": "Welche Fahrt würdest du am liebsten ausprobieren: Tuk-Tuk, Fähre oder Sammeltaxi?",
+     "c": "Lern, wie man Wie viel kostet es bis...? in der Sprache eines Ortes fragt, den du besuchen möchtest."
+    },
+    "es": {
+     "t": "Aventuras en transporte local",
+     "g": "Descubre tuk-tuks, minibuses, ferris y taxis compartidos, y cómo usarlos con confianza.",
+     "p": [
+      "Acuerda el precio antes de subir a un tuk-tuk o taxi sin taxímetro y lleva cambio pequeño.",
+      "Los minibuses y taxis compartidos salen cuando se llenan; pregunta a la gente local dónde paran y cómo se paga.",
+      "Elige operadores con licencia, usa cinturón o chaleco salvavidas si te lo ofrecen y evita barcos sobrecargados."
+     ],
+     "q": "¿Qué transporte local te haría más ilusión probar: un tuk-tuk, un ferri o un taxi compartido?",
+     "c": "Aprende a preguntar ¿Cuánto cuesta ir a...? en el idioma de un lugar que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Aventures en transport local",
+     "g": "Découvre tuk-tuks, minibus, ferries et taxis collectifs, et comment les prendre en confiance.",
+     "p": [
+      "Fixe le prix avant de monter dans un tuk-tuk ou un taxi sans compteur, et garde de la petite monnaie.",
+      "Minibus et taxis collectifs partent quand ils sont pleins ; demande aux habitants où ils s'arrêtent et comment payer.",
+      "Choisis des opérateurs agréés, mets ceinture ou gilet quand on t'en propose, et évite les bateaux surchargés."
+     ],
+     "q": "Quel transport local aimerais-tu le plus essayer : tuk-tuk, ferry ou taxi collectif ?",
+     "c": "Apprends à demander Combien pour aller à... ? dans la langue d'un lieu que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Avventure sui mezzi locali",
+     "g": "Scopri tuk-tuk, minibus, traghetti e taxi collettivi, e come usarli con sicurezza.",
+     "p": [
+      "Concorda il prezzo prima di salire su un tuk-tuk o taxi senza tassametro e tieni spiccioli a portata.",
+      "Minibus e taxi collettivi partono quando sono pieni; chiedi alla gente del posto dove fermano e come si paga.",
+      "Scegli operatori autorizzati, usa cinture o giubbotti quando offerti ed evita le barche sovraccariche."
+     ],
+     "q": "Quale mezzo locale ti piacerebbe di più provare: tuk-tuk, traghetto o taxi collettivo?",
+     "c": "Impara a chiedere Quanto costa andare a...? nella lingua di un posto che vorresti visitare."
+    },
+    "pt": {
+     "t": "Aventuras em transporte local",
+     "g": "Descobre tuk-tuks, carrinhas, ferries e táxis partilhados, e como andar neles com confiança.",
+     "p": [
+      "Combina o preço antes de entrares num tuk-tuk ou táxi sem taxímetro e leva trocos.",
+      "Carrinhas e táxis partilhados partem quando enchem; pergunta aos locais onde param e como se paga.",
+      "Escolhe operadores licenciados, usa cinto ou colete salva-vidas quando oferecido e evita barcos sobrelotados."
+     ],
+     "q": "Que transporte local mais gostavas de experimentar: um tuk-tuk, um ferry ou um táxi partilhado?",
+     "c": "Aprende a perguntar Quanto custa até...? na língua de um lugar que gostarias de visitar."
+    },
+    "pt_BR": {
+     "t": "Aventuras no transporte local",
+     "g": "Conheça tuk-tuks, vans, balsas e táxis compartilhados, e como usá-los com confiança.",
+     "p": [
+      "Combine o preço antes de entrar num tuk-tuk ou táxi sem taxímetro e leve dinheiro trocado.",
+      "Vans e táxis compartilhados saem quando lotam; pergunte aos moradores onde param e como se paga.",
+      "Escolha operadores licenciados, use cinto ou colete salva-vidas quando oferecido e evite barcos superlotados."
+     ],
+     "q": "Qual transporte local você mais gostaria de experimentar: tuk-tuk, balsa ou táxi compartilhado?",
+     "c": "Aprenda a perguntar Quanto custa até...? no idioma de um lugar que você gostaria de conhecer."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arriving in a new town",
+     "g": "Get your bearings and reach your hostel calmly when you arrive somewhere new.",
+     "p": [
+      "Before arriving, note your hostel address and how to get there from the station.",
+      "Take a moment inside the station to orient yourself instead of walking out with the crowd.",
+      "Use official taxis, ride apps or public transport, and politely ignore anyone pushing a hotel deal."
+     ],
+     "q": "What is the first thing you like to do when you arrive somewhere new?",
+     "c": "Pick a town and plan the route from its main station to a hostel there."
+    },
+    "de": {
+     "t": "Ankommen in einer neuen Stadt",
+     "g": "Orientier dich und erreich dein Hostel entspannt, wenn du an einem neuen Ort ankommst.",
+     "p": [
+      "Notier dir vor der Ankunft die Hosteladresse und den Weg vom Bahnhof dorthin.",
+      "Nimm dir im Bahnhof einen Moment zur Orientierung, statt einfach mit der Menge hinauszugehen.",
+      "Nutz offizielle Taxis, Fahrdienst-Apps oder Nahverkehr und ignorier höflich, wer dir ein Hotel aufdrängt."
+     ],
+     "q": "Was machst du am liebsten als Erstes, wenn du an einem neuen Ort ankommst?",
+     "c": "Wähl eine Stadt und plan den Weg vom Hauptbahnhof zu einem Hostel dort."
+    },
+    "es": {
+     "t": "Llegar a un lugar nuevo",
+     "g": "Oriéntate y llega a tu albergue con calma cuando llegas a un sitio nuevo.",
+     "p": [
+      "Antes de llegar, apunta la dirección del albergue y cómo ir desde la estación.",
+      "Tómate un momento dentro de la estación para orientarte en vez de salir con la multitud.",
+      "Usa taxis oficiales, apps de transporte o transporte público, e ignora con educación a quien te ofrezca hoteles."
+     ],
+     "q": "¿Qué es lo primero que te gusta hacer al llegar a un sitio nuevo?",
+     "c": "Elige una ciudad y planea la ruta desde su estación principal hasta un albergue de allí."
+    },
+    "fr": {
+     "t": "Arriver dans une nouvelle ville",
+     "g": "Oriente-toi et rejoins ton auberge sereinement quand tu arrives dans un lieu inconnu.",
+     "p": [
+      "Avant d'arriver, note l'adresse de l'auberge et comment y aller depuis la gare.",
+      "Prends un moment dans la gare pour t'orienter au lieu de sortir avec la foule.",
+      "Prends des taxis officiels, des applis de VTC ou les transports publics, et ignore poliment les rabatteurs d'hôtels."
+     ],
+     "q": "Quelle est la première chose que tu aimes faire en arrivant dans un lieu nouveau ?",
+     "c": "Choisis une ville et prépare le trajet de sa gare principale jusqu'à une auberge."
+    },
+    "it": {
+     "t": "Arrivare in una città nuova",
+     "g": "Orientati e raggiungi l'ostello con calma quando arrivi in un posto nuovo.",
+     "p": [
+      "Prima di arrivare, annota l'indirizzo dell'ostello e come raggiungerlo dalla stazione.",
+      "Prenditi un momento in stazione per orientarti invece di uscire seguendo la folla.",
+      "Usa taxi ufficiali, app di trasporto o mezzi pubblici e ignora con gentilezza chi ti propone hotel."
+     ],
+     "q": "Qual è la prima cosa che ti piace fare quando arrivi in un posto nuovo?",
+     "c": "Scegli una città e pianifica il percorso dalla stazione principale a un ostello."
+    },
+    "pt": {
+     "t": "Chegar a uma cidade nova",
+     "g": "Orienta-te e chega ao hostel com calma quando chegas a um sítio novo.",
+     "p": [
+      "Antes de chegares, aponta a morada do hostel e como lá chegar a partir da estação.",
+      "Tira um momento dentro da estação para te orientares em vez de saíres com a multidão.",
+      "Usa táxis oficiais, apps de transporte ou transportes públicos e ignora com educação quem te impinge hotéis."
+     ],
+     "q": "Qual é a primeira coisa que gostas de fazer quando chegas a um sítio novo?",
+     "c": "Escolhe uma cidade e planeia o caminho da estação principal até um hostel de lá."
+    },
+    "pt_BR": {
+     "t": "Chegando a uma cidade nova",
+     "g": "Oriente-se e chegue ao hostel com calma quando desembarcar num lugar novo.",
+     "p": [
+      "Antes de chegar, anote o endereço do hostel e como ir até ele a partir da estação.",
+      "Tire um momento dentro da estação para se orientar em vez de sair junto com a multidão.",
+      "Use táxis oficiais, apps de transporte ou transporte público e ignore com educação quem empurra hotel."
+     ],
+     "q": "Qual é a primeira coisa que você gosta de fazer quando chega a um lugar novo?",
+     "c": "Escolha uma cidade e planeje o caminho da estação principal até um hostel de lá."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Navigation with offline maps",
+     "g": "Pin your hostel and key places on an offline map before you arrive, so you never get lost without data.",
+     "p": [
+      "Download the map area of your next stop while you still have wifi, often at the hostel you are leaving.",
+      "Pin your hostel, the station, a pharmacy and a few sights, so they show up even without signal.",
+      "GPS usually works offline, so the blue dot still tracks you; keep the battery topped up with a power bank."
+     ],
+     "q": "Do you usually rely on maps on your phone, or do you have a good sense of direction?",
+     "c": "Download an offline map of your own town and pin three useful places."
+    },
+    "de": {
+     "t": "Navigation mit Offline-Karten",
+     "g": "Markier Hostel und wichtige Orte vor der Ankunft auf einer Offline-Karte, damit du dich ohne Daten nie verläufst.",
+     "p": [
+      "Lad den Kartenausschnitt deines nächsten Ziels herunter, solange du WLAN hast, oft im Hostel davor.",
+      "Markier Hostel, Bahnhof, Apotheke und ein paar Sehenswürdigkeiten, damit sie auch ohne Netz erscheinen.",
+      "GPS funktioniert meist offline, der blaue Punkt folgt dir also; halt den Akku mit einer Powerbank voll."
+     ],
+     "q": "Verlässt du dich meist auf Karten im Handy, oder hast du einen guten Orientierungssinn?",
+     "c": "Lad eine Offline-Karte deiner eigenen Stadt herunter und markier drei nützliche Orte."
+    },
+    "es": {
+     "t": "Navegar con mapas offline",
+     "g": "Marca tu albergue y lugares clave en un mapa sin conexión antes de llegar, para no perderte sin datos.",
+     "p": [
+      "Descarga el mapa de tu próxima parada mientras tienes wifi, a menudo en el albergue del que te vas.",
+      "Marca el albergue, la estación, una farmacia y algunos lugares de interés, para verlos incluso sin señal.",
+      "El GPS suele funcionar sin conexión, así que el punto azul te sigue; mantén la batería con una externa."
+     ],
+     "q": "¿Sueles fiarte de los mapas del móvil o tienes buen sentido de la orientación?",
+     "c": "Descarga un mapa sin conexión de tu propia ciudad y marca tres lugares útiles."
+    },
+    "fr": {
+     "t": "Naviguer avec des cartes hors ligne",
+     "g": "Enregistre ton auberge et les lieux clés sur une carte hors ligne avant d'arriver, pour ne jamais te perdre sans données.",
+     "p": [
+      "Télécharge la carte de ta prochaine étape tant que tu as le wifi, souvent à l'auberge que tu quittes.",
+      "Marque l'auberge, la gare, une pharmacie et quelques sites, pour les voir même sans réseau.",
+      "Le GPS fonctionne souvent hors ligne, le point bleu te suit donc ; garde ta batterie chargée avec une batterie externe."
+     ],
+     "q": "Te fies-tu plutôt aux cartes de ton téléphone, ou as-tu un bon sens de l'orientation ?",
+     "c": "Télécharge une carte hors ligne de ta propre ville et marque trois lieux utiles."
+    },
+    "it": {
+     "t": "Orientarsi con mappe offline",
+     "g": "Segna ostello e luoghi chiave su una mappa offline prima di arrivare, così non ti perdi mai senza dati.",
+     "p": [
+      "Scarica la mappa della prossima tappa finché hai il wifi, spesso nell'ostello che stai lasciando.",
+      "Segna ostello, stazione, una farmacia e qualche attrazione, così li vedi anche senza segnale.",
+      "Il GPS di solito funziona offline, quindi il puntino blu ti segue; tieni carica la batteria con una power bank."
+     ],
+     "q": "Ti affidi di solito alle mappe del telefono o hai un buon senso dell'orientamento?",
+     "c": "Scarica una mappa offline della tua città e segna tre posti utili."
+    },
+    "pt": {
+     "t": "Navegar com mapas offline",
+     "g": "Marca o hostel e os sítios principais num mapa offline antes de chegares, para nunca te perderes sem dados.",
+     "p": [
+      "Descarrega o mapa da próxima paragem enquanto tens wifi, muitas vezes no hostel de onde sais.",
+      "Marca o hostel, a estação, uma farmácia e alguns pontos de interesse, para os veres mesmo sem rede.",
+      "O GPS costuma funcionar offline, por isso o ponto azul segue-te; mantém a bateria com uma powerbank."
+     ],
+     "q": "Costumas confiar nos mapas do telemóvel, ou tens um bom sentido de orientação?",
+     "c": "Descarrega um mapa offline da tua cidade e marca três sítios úteis."
+    },
+    "pt_BR": {
+     "t": "Navegando com mapas offline",
+     "g": "Marque o hostel e os lugares principais num mapa offline antes de chegar, para nunca se perder sem internet.",
+     "p": [
+      "Baixe o mapa da próxima parada enquanto tem wi-fi, muitas vezes no hostel de onde você está saindo.",
+      "Marque o hostel, a estação, uma farmácia e alguns pontos turísticos, para vê-los mesmo sem sinal.",
+      "O GPS costuma funcionar offline, então o pontinho azul segue você; mantenha a bateria com um power bank."
+     ],
+     "q": "Você costuma confiar nos mapas do celular, ou tem um bom senso de direção?",
+     "c": "Baixe um mapa offline da sua cidade e marque três lugares úteis."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking for directions",
+     "g": "Use simple phrases and gestures that work almost everywhere to find your way.",
+     "p": [
+      "Start with a greeting and a smile, then name the place or show it written down or on your map.",
+      "Ask in shops, cafés or at your hostel; staff are usually happy to help and know the area well.",
+      "If directions sound unsure, thank them and ask one more person to double-check."
+     ],
+     "q": "How do you feel about asking strangers for help when you are lost?",
+     "c": "Learn how to say Excuse me, where is...? in one new language."
+    },
+    "de": {
+     "t": "Nach dem Weg fragen",
+     "g": "Nutz einfache Sätze und Gesten, die fast überall funktionieren, um deinen Weg zu finden.",
+     "p": [
+      "Beginn mit einem Gruß und einem Lächeln, nenn dann den Ort oder zeig ihn aufgeschrieben oder auf der Karte.",
+      "Frag in Läden, Cafés oder im Hostel; das Personal hilft meist gern und kennt die Gegend gut.",
+      "Klingt die Antwort unsicher, bedank dich und frag zur Sicherheit noch eine Person."
+     ],
+     "q": "Wie fühlst du dich dabei, Fremde um Hilfe zu bitten, wenn du dich verlaufen hast?",
+     "c": "Lern, wie man Entschuldigung, wo ist...? in einer neuen Sprache sagt."
+    },
+    "es": {
+     "t": "Preguntar cómo llegar",
+     "g": "Usa frases y gestos sencillos que funcionan casi en todas partes para encontrar tu camino.",
+     "p": [
+      "Empieza con un saludo y una sonrisa, luego di el lugar o enséñalo escrito o en tu mapa.",
+      "Pregunta en tiendas, cafeterías o en tu albergue; el personal suele ayudar con gusto y conoce la zona.",
+      "Si las indicaciones suenan dudosas, da las gracias y pregunta a otra persona para confirmar."
+     ],
+     "q": "¿Cómo te sientes al pedir ayuda a desconocidos cuando te pierdes?",
+     "c": "Aprende a decir Perdone, ¿dónde está...? en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Demander son chemin",
+     "g": "Utilise des phrases et des gestes simples qui marchent presque partout pour trouver ta route.",
+     "p": [
+      "Commence par un bonjour et un sourire, puis nomme le lieu ou montre-le écrit ou sur ta carte.",
+      "Demande dans les boutiques, les cafés ou à l'auberge ; le personnel aide volontiers et connaît le quartier.",
+      "Si les indications semblent hésitantes, remercie et demande à une autre personne pour vérifier."
+     ],
+     "q": "Comment te sens-tu quand tu dois demander de l'aide à des inconnus parce que tu es perdu ?",
+     "c": "Apprends à dire Excusez-moi, où est... ? dans une nouvelle langue."
+    },
+    "it": {
+     "t": "Chiedere indicazioni",
+     "g": "Usa frasi e gesti semplici che funzionano quasi ovunque per trovare la strada.",
+     "p": [
+      "Inizia con un saluto e un sorriso, poi di' il nome del posto o mostralo scritto o sulla mappa.",
+      "Chiedi in negozi, bar o al tuo ostello: il personale di solito aiuta volentieri e conosce bene la zona.",
+      "Se le indicazioni sembrano incerte, ringrazia e chiedi a un'altra persona per sicurezza."
+     ],
+     "q": "Come ti senti a chiedere aiuto a sconosciuti quando ti perdi?",
+     "c": "Impara a dire Scusi, dov'è...? in una lingua nuova."
+    },
+    "pt": {
+     "t": "Pedir indicações",
+     "g": "Usa frases e gestos simples que funcionam quase em todo o lado para encontrares o caminho.",
+     "p": [
+      "Começa com um cumprimento e um sorriso, depois diz o nome do sítio ou mostra-o escrito ou no mapa.",
+      "Pergunta em lojas, cafés ou no hostel; o staff costuma ajudar com gosto e conhece bem a zona.",
+      "Se as indicações parecerem incertas, agradece e pergunta a outra pessoa para confirmar."
+     ],
+     "q": "Como te sentes ao pedir ajuda a desconhecidos quando estás perdido?",
+     "c": "Aprende a dizer Desculpe, onde fica...? numa língua nova."
+    },
+    "pt_BR": {
+     "t": "Pedindo informação",
+     "g": "Use frases e gestos simples que funcionam em quase todo lugar para achar seu caminho.",
+     "p": [
+      "Comece com um cumprimento e um sorriso, depois diga o nome do lugar ou mostre escrito ou no mapa.",
+      "Pergunte em lojas, cafés ou no hostel; os funcionários costumam ajudar e conhecem bem a região.",
+      "Se a explicação parecer insegura, agradeça e pergunte a outra pessoa para confirmar."
+     ],
+     "q": "Como você se sente ao pedir ajuda a desconhecidos quando está perdido?",
+     "c": "Aprenda a dizer Com licença, onde fica...? num idioma novo."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mastering travel days",
+     "g": "Plan snacks, water, entertainment and rest so long travel days feel easy instead of exhausting.",
+     "p": [
+      "Pack water and filling snacks, since stops can be rare and food options limited.",
+      "Download podcasts, music, books or shows beforehand, and keep a charged power bank handy.",
+      "Eat and sleep well the night before, and plan a calm first evening rather than big sightseeing."
+     ],
+     "q": "What helps you most to enjoy a long journey: music, a book, the view or a chat?",
+     "c": "Make a playlist or download a podcast for your next long journey."
+    },
+    "de": {
+     "t": "Reisetage meistern",
+     "g": "Plan Snacks, Wasser, Unterhaltung und Ruhe, damit lange Reisetage leicht statt anstrengend werden.",
+     "p": [
+      "Pack Wasser und sättigende Snacks ein, denn Stopps können selten und das Essen begrenzt sein.",
+      "Lad Podcasts, Musik, Bücher oder Serien vorher herunter und halt eine geladene Powerbank bereit.",
+      "Iss und schlaf am Abend davor gut und plan einen ruhigen ersten Abend statt großem Programm."
+     ],
+     "q": "Was hilft dir am meisten, eine lange Fahrt zu genießen: Musik, ein Buch, die Aussicht oder ein Gespräch?",
+     "c": "Stell eine Playlist zusammen oder lad einen Podcast für deine nächste lange Fahrt herunter."
+    },
+    "es": {
+     "t": "Dominar los días de viaje",
+     "g": "Planea comida, agua, entretenimiento y descanso para que los días largos de viaje sean fáciles y no agotadores.",
+     "p": [
+      "Lleva agua y algo que llene, porque las paradas pueden ser pocas y la comida, limitada.",
+      "Descarga antes pódcasts, música, libros o series, y ten a mano una batería externa cargada.",
+      "Come y duerme bien la noche anterior y planea una primera tarde tranquila, sin grandes visitas."
+     ],
+     "q": "¿Qué te ayuda más a disfrutar de un trayecto largo: música, un libro, el paisaje o una charla?",
+     "c": "Haz una lista de reproducción o descarga un pódcast para tu próximo viaje largo."
+    },
+    "fr": {
+     "t": "Maîtriser les jours de trajet",
+     "g": "Prévois en-cas, eau, divertissement et repos pour que les longs trajets soient faciles et pas épuisants.",
+     "p": [
+      "Emporte de l'eau et des en-cas nourrissants, car les arrêts peuvent être rares et l'offre limitée.",
+      "Télécharge podcasts, musique, livres ou séries à l'avance, et garde une batterie externe chargée.",
+      "Mange et dors bien la veille, et prévois une première soirée tranquille plutôt que de grosses visites."
+     ],
+     "q": "Qu'est-ce qui t'aide le plus à apprécier un long trajet : musique, livre, paysage ou discussion ?",
+     "c": "Crée une playlist ou télécharge un podcast pour ton prochain long trajet."
+    },
+    "it": {
+     "t": "Padroneggiare i giorni di viaggio",
+     "g": "Pianifica snack, acqua, intrattenimento e riposo perché i lunghi giorni di viaggio siano facili e non stancanti.",
+     "p": [
+      "Porta acqua e snack sostanziosi, perché le soste possono essere rare e il cibo limitato.",
+      "Scarica prima podcast, musica, libri o serie e tieni a portata una power bank carica.",
+      "Mangia e dormi bene la sera prima e prevedi una prima serata tranquilla invece di grandi visite."
+     ],
+     "q": "Cosa ti aiuta di più a goderti un lungo viaggio: musica, un libro, il paesaggio o due chiacchiere?",
+     "c": "Crea una playlist o scarica un podcast per il tuo prossimo lungo viaggio."
+    },
+    "pt": {
+     "t": "Dominar os dias de viagem",
+     "g": "Planeia snacks, água, entretenimento e descanso para que os dias longos de viagem sejam fáceis e não cansativos.",
+     "p": [
+      "Leva água e snacks que encham, porque as paragens podem ser raras e a comida limitada.",
+      "Descarrega antes podcasts, música, livros ou séries e tem à mão uma powerbank carregada.",
+      "Come e dorme bem na noite anterior e planeia uma primeira noite calma em vez de grandes visitas."
+     ],
+     "q": "O que mais te ajuda a aproveitar uma viagem longa: música, um livro, a paisagem ou uma conversa?",
+     "c": "Faz uma playlist ou descarrega um podcast para a tua próxima viagem longa."
+    },
+    "pt_BR": {
+     "t": "Dominando os dias de estrada",
+     "g": "Planeje lanches, água, distração e descanso para que os dias longos de viagem sejam leves e não cansativos.",
+     "p": [
+      "Leve água e lanches que sustentem, porque as paradas podem ser raras e a comida limitada.",
+      "Baixe antes podcasts, músicas, livros ou séries e deixe um power bank carregado à mão.",
+      "Coma e durma bem na noite anterior e planeje uma primeira noite tranquila em vez de muitos passeios."
+     ],
+     "q": "O que mais ajuda você a curtir uma viagem longa: música, um livro, a paisagem ou um papo?",
+     "c": "Monte uma playlist ou baixe um podcast para a sua próxima viagem longa."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: hostels and routes",
+     "g": "Recap what you know about stays and getting around, then sketch your own two-week route.",
+     "p": [
+      "Stays: pick dorm or private, read recent reviews, lock your valuables and be a kind roommate.",
+      "Routes: connect must-see places loosely, choose linear or loop and allow two or three nights per stop.",
+      "Moving: buy official tickets, keep buffers, pin offline maps and keep valuables close on the road."
+     ],
+     "q": "Which lesson from this month would help you most on your very first trip?",
+     "c": "Sketch a two-week route with four or five stops, the nights in each and how you travel between them."
+    },
+    "de": {
+     "t": "Rückblick: Hostels und Routen",
+     "g": "Wiederhol, was du über Unterkünfte und Unterwegssein weißt, und skizzier deine eigene Zwei-Wochen-Route.",
+     "p": [
+      "Unterkünfte: Schlafsaal oder Privatzimmer wählen, neue Bewertungen lesen, Wertsachen sichern, rücksichtsvoll sein.",
+      "Routen: Must-sees locker verbinden, linear oder rund wählen und zwei, drei Nächte pro Stopp einplanen.",
+      "Unterwegs: offizielle Tickets, Puffer einplanen, Offline-Karten markieren und Wertsachen nah am Körper."
+     ],
+     "q": "Welche Lektion aus diesem Monat würde dir auf deiner allerersten Reise am meisten helfen?",
+     "c": "Skizzier eine Zwei-Wochen-Route mit vier oder fünf Stopps, den Nächten pro Ort und den Verbindungen."
+    },
+    "es": {
+     "t": "Repaso: albergues y rutas",
+     "g": "Repasa lo que sabes sobre alojamiento y desplazamientos y dibuja tu propia ruta de dos semanas.",
+     "p": [
+      "Alojamiento: elige dormitorio o privada, lee reseñas recientes, guarda lo valioso y sé buen compañero.",
+      "Rutas: une los imprescindibles sin rigidez, elige lineal o circular y deja dos o tres noches por parada.",
+      "Moverse: billetes oficiales, márgenes en las conexiones, mapas offline y lo valioso siempre cerca."
+     ],
+     "q": "¿Qué lección de este mes te ayudaría más en tu primerísimo viaje?",
+     "c": "Dibuja una ruta de dos semanas con cuatro o cinco paradas, las noches en cada una y cómo te moverás."
+    },
+    "fr": {
+     "t": "Bilan : auberges et itinéraires",
+     "g": "Récapitule ce que tu sais sur l'hébergement et les déplacements, puis esquisse ton itinéraire de deux semaines.",
+     "p": [
+      "Hébergement : dortoir ou chambre privée, avis récents, objets de valeur sous clé et colocataire attentionné.",
+      "Itinéraires : relier les incontournables avec souplesse, linéaire ou boucle, deux ou trois nuits par étape.",
+      "Déplacements : billets officiels, marges entre correspondances, cartes hors ligne et objets de valeur près de toi."
+     ],
+     "q": "Quelle leçon de ce mois t'aiderait le plus lors de ton tout premier voyage ?",
+     "c": "Esquisse un itinéraire de deux semaines avec quatre ou cinq étapes, les nuits par étape et les transports."
+    },
+    "it": {
+     "t": "Ripasso: ostelli e percorsi",
+     "g": "Ripassa ciò che sai su alloggi e spostamenti, poi abbozza il tuo percorso di due settimane.",
+     "p": [
+      "Alloggi: scegli camerata o privata, leggi recensioni recenti, chiudi i valori e sii un buon compagno di stanza.",
+      "Percorsi: collega gli imperdibili con flessibilità, scegli lineare o ad anello e due o tre notti per tappa.",
+      "Spostamenti: biglietti ufficiali, margini tra le coincidenze, mappe offline e valori sempre vicino a te."
+     ],
+     "q": "Quale lezione di questo mese ti aiuterebbe di più nel tuo primissimo viaggio?",
+     "c": "Abbozza un percorso di due settimane con quattro o cinque tappe, le notti per tappa e i mezzi tra una e l'altra."
+    },
+    "pt": {
+     "t": "Revisão: hostels e percursos",
+     "g": "Revê o que sabes sobre alojamento e deslocações e esboça o teu próprio percurso de duas semanas.",
+     "p": [
+      "Alojamento: escolhe dormitório ou privado, lê avaliações recentes, tranca os valores e sê bom colega.",
+      "Percursos: liga os imperdíveis com flexibilidade, escolhe linear ou circular e duas ou três noites por paragem.",
+      "Deslocações: bilhetes oficiais, margem entre ligações, mapas offline e objetos de valor sempre por perto."
+     ],
+     "q": "Que lição deste mês te ajudaria mais na tua primeiríssima viagem?",
+     "c": "Esboça um percurso de duas semanas com quatro ou cinco paragens, as noites em cada uma e os transportes."
+    },
+    "pt_BR": {
+     "t": "Revisão: hostels e roteiros",
+     "g": "Revise o que você sabe sobre hospedagem e deslocamento e esboce seu próprio roteiro de duas semanas.",
+     "p": [
+      "Hospedagem: escolha coletivo ou privativo, leia avaliações recentes, tranque objetos de valor e seja um bom colega.",
+      "Roteiros: ligue os imperdíveis com flexibilidade, escolha linear ou circular e duas ou três noites por parada.",
+      "Deslocamento: passagens oficiais, folga entre conexões, mapas offline e objetos de valor sempre por perto."
+     ],
+     "q": "Qual lição deste mês mais ajudaria você na sua primeiríssima viagem?",
+     "c": "Esboce um roteiro de duas semanas com quatro ou cinco paradas, as noites em cada uma e os transportes."
+    }
+   }
+  }
+ ]
+}

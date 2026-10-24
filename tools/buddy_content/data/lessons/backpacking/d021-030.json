@@ -1,0 +1,835 @@
+{
+ "topic": "backpacking",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The essential tech kit",
+     "g": "Put together a simple tech kit: phone, charger, universal adapter and a power bank.",
+     "p": [
+      "Your phone is map, ticket wallet, translator and camera, so protect it with a sturdy case.",
+      "A universal adapter handles different plug types; check the voltage your chargers accept.",
+      "A power bank keeps you going on long journeys; airlines usually want it in cabin bags only."
+     ],
+     "q": "Which app on your phone do you think would help you most on a trip?",
+     "c": "Check which plug type is used in a country you would like to visit."
+    },
+    "de": {
+     "t": "Die wichtigste Technik",
+     "g": "Stell ein einfaches Technik-Set zusammen: Handy, Ladegerät, Universaladapter und Powerbank.",
+     "p": [
+      "Dein Handy ist Karte, Ticketmappe, Übersetzer und Kamera, also schütz es mit einer robusten Hülle.",
+      "Ein Universaladapter passt auf verschiedene Steckdosen; prüf, welche Spannung deine Ladegeräte vertragen.",
+      "Eine Powerbank hilft auf langen Fahrten; Airlines wollen sie meist nur im Handgepäck."
+     ],
+     "q": "Welche App auf deinem Handy würde dir auf Reisen wohl am meisten helfen?",
+     "c": "Finde heraus, welcher Steckertyp in einem Land benutzt wird, das du besuchen möchtest."
+    },
+    "es": {
+     "t": "El kit tecnológico básico",
+     "g": "Arma un kit sencillo: móvil, cargador, adaptador universal y batería externa.",
+     "p": [
+      "Tu móvil es mapa, cartera de billetes, traductor y cámara, así que protégelo con una funda resistente.",
+      "Un adaptador universal sirve para distintos enchufes; revisa el voltaje que aceptan tus cargadores.",
+      "Una batería externa te salva en trayectos largos; las aerolíneas suelen exigirla solo en cabina."
+     ],
+     "q": "¿Qué aplicación de tu móvil crees que te ayudaría más en un viaje?",
+     "c": "Averigua qué tipo de enchufe se usa en un país que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Le kit tech essentiel",
+     "g": "Monte un kit tech simple : téléphone, chargeur, adaptateur universel et batterie externe.",
+     "p": [
+      "Ton téléphone est carte, porte-billets, traducteur et appareil photo : protège-le avec une coque solide.",
+      "Un adaptateur universel gère différentes prises ; vérifie la tension acceptée par tes chargeurs.",
+      "Une batterie externe t'aide sur les longs trajets ; les compagnies l'acceptent en général seulement en cabine."
+     ],
+     "q": "Quelle appli de ton téléphone t'aiderait le plus en voyage, à ton avis ?",
+     "c": "Cherche quel type de prise est utilisé dans un pays que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Il kit tecnologico",
+     "g": "Prepara un kit semplice: telefono, caricatore, adattatore universale e power bank.",
+     "p": [
+      "Il telefono è mappa, portabiglietti, traduttore e fotocamera, quindi proteggilo con una cover robusta.",
+      "Un adattatore universale va bene per prese diverse; controlla la tensione che accettano i caricatori.",
+      "Una power bank ti salva nei viaggi lunghi; le compagnie aeree di solito la vogliono solo in cabina."
+     ],
+     "q": "Quale app del tuo telefono pensi che ti aiuterebbe di più in viaggio?",
+     "c": "Scopri quale tipo di presa si usa in un paese che vorresti visitare."
+    },
+    "pt": {
+     "t": "O kit tecnológico essencial",
+     "g": "Monta um kit simples: telemóvel, carregador, adaptador universal e powerbank.",
+     "p": [
+      "O telemóvel é mapa, carteira de bilhetes, tradutor e câmara, por isso protege-o com uma capa resistente.",
+      "Um adaptador universal serve vários tipos de tomada; verifica a voltagem que os teus carregadores aceitam.",
+      "Uma powerbank salva-te nas viagens longas; as companhias aéreas costumam exigi-la só na cabine."
+     ],
+     "q": "Que aplicação do teu telemóvel achas que te ajudaria mais numa viagem?",
+     "c": "Descobre que tipo de tomada se usa num país que gostarias de visitar."
+    },
+    "pt_BR": {
+     "t": "O kit tecnológico essencial",
+     "g": "Monte um kit simples: celular, carregador, adaptador universal e power bank.",
+     "p": [
+      "O celular é mapa, carteira de passagens, tradutor e câmera, então proteja com uma capinha resistente.",
+      "Um adaptador universal serve para vários tipos de tomada; confira a voltagem que seus carregadores aceitam.",
+      "Um power bank salva em viagens longas; as companhias aéreas costumam aceitá-lo só na bagagem de mão."
+     ],
+     "q": "Qual aplicativo do seu celular você acha que mais ajudaria numa viagem?",
+     "c": "Descubra que tipo de tomada é usado num país que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small items that save the day",
+     "g": "Meet the tiny, cheap items that solve big problems: headlamp, padlock, earplugs, sleep mask and tape.",
+     "p": [
+      "A headlamp finds things in a dark dorm without waking everyone, and helps on night walks.",
+      "A small padlock secures hostel lockers; earplugs and a sleep mask rescue your sleep.",
+      "A little tape, wrapped around a pen or bottle, fixes torn bags, blisters and broken things."
+     ],
+     "q": "Have you ever had a small problem on a trip that one tiny item could have solved?",
+     "c": "Find a headlamp, padlock or roll of tape at home and set it aside for your next trip."
+    },
+    "de": {
+     "t": "Kleinigkeiten, die retten",
+     "g": "Lern die kleinen Helfer kennen, die große Probleme lösen: Stirnlampe, Schloss, Ohrstöpsel, Schlafmaske, Tape.",
+     "p": [
+      "Eine Stirnlampe findet Dinge im dunklen Schlafsaal, ohne alle zu wecken, und hilft bei Nachtwegen.",
+      "Ein kleines Schloss sichert Hostelspinde; Ohrstöpsel und Schlafmaske retten deinen Schlaf.",
+      "Etwas Tape, um einen Stift oder eine Flasche gewickelt, flickt Taschen, Blasen und Kaputtes."
+     ],
+     "q": "Hattest du auf Reisen schon mal ein kleines Problem, das ein winziges Teil gelöst hätte?",
+     "c": "Such zu Hause eine Stirnlampe, ein Schloss oder Tape und leg es für die nächste Reise bereit."
+    },
+    "es": {
+     "t": "Pequeñas cosas que te salvan",
+     "g": "Conoce los objetos pequeños que resuelven grandes problemas: frontal, candado, tapones, antifaz y cinta.",
+     "p": [
+      "Una linterna frontal encuentra cosas en el dormitorio a oscuras sin despertar a nadie y sirve de noche.",
+      "Un candado pequeño cierra las taquillas; los tapones y el antifaz salvan tu descanso.",
+      "Un poco de cinta enrollada en un boli o una botella arregla bolsas rotas, ampollas y más."
+     ],
+     "q": "¿Te ha pasado en un viaje algún problemita que un objeto diminuto habría resuelto?",
+     "c": "Busca en casa una frontal, un candado o cinta adhesiva y apártalo para tu próximo viaje."
+    },
+    "fr": {
+     "t": "Les petits objets qui sauvent",
+     "g": "Découvre les petits objets qui règlent de gros soucis : frontale, cadenas, bouchons, masque et ruban adhésif.",
+     "p": [
+      "Une frontale retrouve tes affaires dans un dortoir sombre sans réveiller personne, et aide la nuit.",
+      "Un petit cadenas ferme les casiers ; bouchons d'oreilles et masque de nuit sauvent ton sommeil.",
+      "Un peu de ruban adhésif enroulé sur un stylo ou une gourde répare sacs, ampoules et objets cassés."
+     ],
+     "q": "As-tu déjà eu en voyage un petit souci qu'un tout petit objet aurait réglé ?",
+     "c": "Trouve chez toi une frontale, un cadenas ou du ruban adhésif et mets-le de côté pour ton prochain voyage."
+    },
+    "it": {
+     "t": "Piccole cose salvavita",
+     "g": "Conosci gli oggetti piccoli che risolvono grandi problemi: frontale, lucchetto, tappi, mascherina e nastro.",
+     "p": [
+      "Una frontale trova le cose nel dormitorio buio senza svegliare nessuno, e aiuta nelle passeggiate serali.",
+      "Un piccolo lucchetto chiude gli armadietti; tappi per le orecchie e mascherina salvano il sonno.",
+      "Un po' di nastro avvolto su una penna o una borraccia ripara borse strappate, vesciche e oggetti rotti."
+     ],
+     "q": "Ti è mai capitato in viaggio un piccolo problema che un oggetto minuscolo avrebbe risolto?",
+     "c": "Trova a casa una frontale, un lucchetto o del nastro adesivo e mettilo da parte per il prossimo viaggio."
+    },
+    "pt": {
+     "t": "Pequenas coisas que salvam",
+     "g": "Conhece os objetos pequenos que resolvem grandes problemas: lanterna de cabeça, cadeado, tampões, máscara e fita.",
+     "p": [
+      "Uma lanterna de cabeça encontra coisas no dormitório às escuras sem acordar ninguém e ajuda à noite.",
+      "Um cadeado pequeno fecha os cacifos; tampões para os ouvidos e máscara salvam o teu sono.",
+      "Um pouco de fita enrolada numa caneta ou garrafa remenda sacos, bolhas e coisas partidas."
+     ],
+     "q": "Já tiveste numa viagem um pequeno problema que um objeto minúsculo teria resolvido?",
+     "c": "Procura em casa uma lanterna de cabeça, um cadeado ou fita-cola e põe-no de lado para a próxima viagem."
+    },
+    "pt_BR": {
+     "t": "Pequenos itens que salvam",
+     "g": "Conheça os itens pequenos que resolvem grandes problemas: lanterna de cabeça, cadeado, protetor auricular, máscara e fita.",
+     "p": [
+      "Uma lanterna de cabeça acha coisas no quarto escuro sem acordar ninguém e ajuda à noite.",
+      "Um cadeado pequeno tranca os armários; protetor de ouvido e máscara de dormir salvam seu sono.",
+      "Um pouco de fita enrolada numa caneta ou garrafa conserta bolsas, bolhas e coisas quebradas."
+     ],
+     "q": "Você já teve numa viagem um probleminha que um item minúsculo teria resolvido?",
+     "c": "Ache em casa uma lanterna de cabeça, um cadeado ou fita adesiva e separe para a próxima viagem."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A basic first-aid kit",
+     "g": "Pack a small first-aid kit with plasters, blister care and a few simple supplies.",
+     "p": [
+      "Include plasters, blister pads, antiseptic wipes, a small bandage and tweezers.",
+      "Add any personal medicine you take, in original packaging, plus a copy of the prescription.",
+      "Treat a hot spot on your foot right away; it is much easier than fixing a full blister later."
+     ],
+     "q": "Is there anything you always carry for your health when you leave home?",
+     "c": "Check your home first-aid supplies and list what is missing for a travel kit."
+    },
+    "de": {
+     "t": "Ein einfaches Erste-Hilfe-Set",
+     "g": "Pack ein kleines Erste-Hilfe-Set mit Pflastern, Blasenpflaster und ein paar einfachen Dingen.",
+     "p": [
+      "Dazu gehören Pflaster, Blasenpflaster, Desinfektionstücher, eine kleine Binde und eine Pinzette.",
+      "Nimm persönliche Medikamente in Originalverpackung mit, dazu eine Kopie des Rezepts.",
+      "Versorg eine Druckstelle am Fuß sofort, das ist viel leichter als später eine echte Blase."
+     ],
+     "q": "Gibt es etwas, das du für deine Gesundheit immer dabeihast, wenn du aus dem Haus gehst?",
+     "c": "Schau in deine Hausapotheke und notier, was für ein Reiseset noch fehlt."
+    },
+    "es": {
+     "t": "Un botiquín básico",
+     "g": "Prepara un botiquín pequeño con tiritas, apósitos para ampollas y algunos básicos.",
+     "p": [
+      "Incluye tiritas, apósitos para ampollas, toallitas antisépticas, una venda pequeña y pinzas.",
+      "Añade los medicamentos personales que tomes, en su envase original, y una copia de la receta.",
+      "Trata enseguida una rozadura en el pie; es mucho más fácil que curar una ampolla después."
+     ],
+     "q": "¿Hay algo que siempre lleves para tu salud cuando sales de casa?",
+     "c": "Revisa el botiquín de casa y apunta lo que falta para uno de viaje."
+    },
+    "fr": {
+     "t": "Une trousse de secours de base",
+     "g": "Prépare une petite trousse de secours avec pansements, soins des ampoules et quelques basiques.",
+     "p": [
+      "Mets-y pansements, pansements anti-ampoules, lingettes antiseptiques, une petite bande et une pince.",
+      "Ajoute tes médicaments personnels dans leur boîte d'origine, avec une copie de l'ordonnance.",
+      "Soigne tout de suite une zone qui frotte au pied, c'est bien plus simple qu'une vraie ampoule ensuite."
+     ],
+     "q": "Y a-t-il quelque chose que tu emportes toujours pour ta santé quand tu sors ?",
+     "c": "Vérifie ta pharmacie à la maison et note ce qui manque pour une trousse de voyage."
+    },
+    "it": {
+     "t": "Un kit di primo soccorso",
+     "g": "Prepara un piccolo kit di primo soccorso con cerotti, cura delle vesciche e poche cose semplici.",
+     "p": [
+      "Metti cerotti, cerotti per vesciche, salviette disinfettanti, una piccola benda e una pinzetta.",
+      "Aggiungi i farmaci personali nella confezione originale e una copia della ricetta.",
+      "Cura subito un punto che sfrega sul piede: è molto più facile che curare una vescica dopo."
+     ],
+     "q": "C'è qualcosa che porti sempre per la tua salute quando esci di casa?",
+     "c": "Controlla la cassetta dei medicinali di casa e annota cosa manca per un kit da viaggio."
+    },
+    "pt": {
+     "t": "Um kit de primeiros socorros",
+     "g": "Prepara um pequeno kit de primeiros socorros com pensos, cuidados para bolhas e alguns básicos.",
+     "p": [
+      "Inclui pensos rápidos, pensos para bolhas, toalhitas antissépticas, uma ligadura pequena e uma pinça.",
+      "Junta os medicamentos pessoais que tomas, na embalagem original, e uma cópia da receita.",
+      "Trata logo uma zona do pé que esteja a roçar; é muito mais fácil do que tratar uma bolha depois."
+     ],
+     "q": "Há alguma coisa que levas sempre para a tua saúde quando sais de casa?",
+     "c": "Revê a caixa de primeiros socorros de casa e aponta o que falta para um kit de viagem."
+    },
+    "pt_BR": {
+     "t": "Um kit básico de primeiros socorros",
+     "g": "Monte um kit pequeno de primeiros socorros com curativos, proteção para bolhas e alguns básicos.",
+     "p": [
+      "Inclua curativos adesivos, protetores para bolhas, lenços antissépticos, uma atadura pequena e uma pinça.",
+      "Leve os remédios de uso pessoal na embalagem original, com uma cópia da receita.",
+      "Cuide logo de um ponto do pé que esteja esfolando; é bem mais fácil do que tratar uma bolha depois."
+     ],
+     "q": "Tem algo que você sempre leva para a sua saúde quando sai de casa?",
+     "c": "Confira a farmacinha de casa e anote o que falta para um kit de viagem."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Documents and copies",
+     "g": "Keep your passport safe and back it up with printed copies and secure digital copies.",
+     "p": [
+      "Check that your passport is valid for long enough; many countries ask for six months beyond your stay.",
+      "Carry a printed copy of your passport, insurance and key bookings, kept apart from the originals.",
+      "Store digital copies in a secure cloud folder or send them to yourself, so you can reach them anywhere."
+     ],
+     "q": "Do you know when your passport or ID card expires without checking?",
+     "c": "Take photos of your passport and insurance card and save them somewhere secure."
+    },
+    "de": {
+     "t": "Dokumente und Kopien",
+     "g": "Bewahr deinen Pass sicher auf und sichere ihn mit Papierkopien und sicheren digitalen Kopien.",
+     "p": [
+      "Prüf, ob dein Pass lange genug gilt; viele Länder verlangen sechs Monate über den Aufenthalt hinaus.",
+      "Trag eine Papierkopie von Pass, Versicherung und wichtigen Buchungen getrennt von den Originalen.",
+      "Speicher digitale Kopien in einem sicheren Cloud-Ordner oder schick sie dir selbst, damit du überall rankommst."
+     ],
+     "q": "Weißt du, ohne nachzusehen, wann dein Pass oder Ausweis abläuft?",
+     "c": "Fotografier deinen Pass und deine Versicherungskarte und speicher die Bilder an einem sicheren Ort."
+    },
+    "es": {
+     "t": "Documentos y copias",
+     "g": "Guarda tu pasaporte a salvo y respáldalo con copias impresas y copias digitales seguras.",
+     "p": [
+      "Comprueba que tu pasaporte sea válido el tiempo suficiente; muchos países piden seis meses tras tu estancia.",
+      "Lleva una copia impresa del pasaporte, el seguro y las reservas clave, separada de los originales.",
+      "Guarda copias digitales en una carpeta segura en la nube o envíatelas, para tenerlas en cualquier lugar."
+     ],
+     "q": "¿Sabes sin mirar cuándo caduca tu pasaporte o documento de identidad?",
+     "c": "Haz fotos de tu pasaporte y tu tarjeta del seguro y guárdalas en un lugar seguro."
+    },
+    "fr": {
+     "t": "Documents et copies",
+     "g": "Garde ton passeport en sécurité et sauvegarde-le avec des copies papier et numériques sûres.",
+     "p": [
+      "Vérifie que ton passeport est valide assez longtemps ; beaucoup de pays exigent six mois après ton séjour.",
+      "Emporte une copie papier du passeport, de l'assurance et des réservations clés, rangée à part.",
+      "Garde des copies numériques dans un dossier cloud sécurisé ou envoie-les-toi, pour y accéder partout."
+     ],
+     "q": "Sais-tu, sans vérifier, quand expire ton passeport ou ta carte d'identité ?",
+     "c": "Photographie ton passeport et ta carte d'assurance et enregistre-les dans un endroit sûr."
+    },
+    "it": {
+     "t": "Documenti e copie",
+     "g": "Tieni il passaporto al sicuro e fanne copie stampate e copie digitali protette.",
+     "p": [
+      "Controlla che il passaporto sia valido abbastanza a lungo: molti paesi chiedono sei mesi oltre il soggiorno.",
+      "Porta una copia stampata di passaporto, assicurazione e prenotazioni chiave, separata dagli originali.",
+      "Salva copie digitali in una cartella cloud sicura o inviale a te stesso, così le trovi ovunque."
+     ],
+     "q": "Sai senza controllare quando scade il tuo passaporto o la carta d'identità?",
+     "c": "Fotografa passaporto e tessera dell'assicurazione e salva le foto in un posto sicuro."
+    },
+    "pt": {
+     "t": "Documentos e cópias",
+     "g": "Guarda o passaporte em segurança e faz cópias impressas e cópias digitais seguras.",
+     "p": [
+      "Confirma que o passaporte é válido tempo suficiente; muitos países pedem seis meses além da estadia.",
+      "Leva uma cópia impressa do passaporte, do seguro e das reservas principais, separada dos originais.",
+      "Guarda cópias digitais numa pasta segura na nuvem ou envia-as para ti, para as teres em qualquer lado."
+     ],
+     "q": "Sabes, sem ver, quando caduca o teu passaporte ou cartão de cidadão?",
+     "c": "Tira fotografias ao passaporte e ao cartão do seguro e guarda-as num sítio seguro."
+    },
+    "pt_BR": {
+     "t": "Documentos e cópias",
+     "g": "Guarde o passaporte em segurança e tenha cópias impressas e cópias digitais seguras.",
+     "p": [
+      "Confira se o passaporte vale por tempo suficiente; muitos países pedem seis meses além da estadia.",
+      "Leve uma cópia impressa do passaporte, do seguro e das reservas principais, separada dos originais.",
+      "Guarde cópias digitais numa pasta segura na nuvem ou mande para você mesmo, para acessar de qualquer lugar."
+     ],
+     "q": "Você sabe, sem olhar, quando vence seu passaporte ou documento de identidade?",
+     "c": "Fotografe seu passaporte e a carteirinha do seguro e salve num lugar seguro."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What not to pack",
+     "g": "Spot common overpacking mistakes and escape the trap of just-in-case items.",
+     "p": [
+      "Just-in-case items, like a fancy outfit or a third jacket, are the heaviest things you never use.",
+      "Full-size bottles, thick towels, jeans and heavy books eat space; choose lighter versions.",
+      "Leave valuables you would hate to lose at home, like expensive jewellery or sentimental items."
+     ],
+     "q": "What is the strangest thing you have ever packed and never used?",
+     "c": "Write a list called Not coming with me and add at least five items."
+    },
+    "de": {
+     "t": "Was nicht in den Rucksack gehört",
+     "g": "Erkenne typische Fehler beim Zuviel-Packen und entkomme der Falle der Für-alle-Fälle-Teile.",
+     "p": [
+      "Für-alle-Fälle-Teile wie ein schickes Outfit oder eine dritte Jacke sind das schwerste Unbenutzte.",
+      "Große Flaschen, dicke Handtücher, Jeans und schwere Bücher fressen Platz; nimm leichtere Varianten.",
+      "Lass Wertsachen, die du ungern verlieren würdest, zu Hause, etwa teuren Schmuck oder Erinnerungsstücke."
+     ],
+     "q": "Was ist das Seltsamste, das du je eingepackt und nie benutzt hast?",
+     "c": "Schreib eine Liste namens Kommt nicht mit und setz mindestens fünf Dinge darauf."
+    },
+    "es": {
+     "t": "Lo que no debes llevar",
+     "g": "Detecta los errores típicos de llevar demasiado y evita la trampa del por si acaso.",
+     "p": [
+      "Lo que llevas por si acaso, como un conjunto elegante o una tercera chaqueta, es lo que más pesa sin usarse.",
+      "Botes grandes, toallas gruesas, vaqueros y libros pesados ocupan mucho; elige versiones ligeras.",
+      "Deja en casa lo valioso que odiarías perder, como joyas caras u objetos con valor sentimental."
+     ],
+     "q": "¿Qué es lo más raro que has metido en la maleta sin llegar a usarlo?",
+     "c": "Escribe una lista llamada No viene conmigo y añade al menos cinco cosas."
+    },
+    "fr": {
+     "t": "Ce qu'il ne faut pas emporter",
+     "g": "Repère les erreurs classiques de suremballage et évite le piège du au cas où.",
+     "p": [
+      "Les objets au cas où, comme une tenue chic ou une troisième veste, sont les plus lourds et jamais utilisés.",
+      "Grands flacons, serviettes épaisses, jeans et livres lourds prennent de la place ; préfère plus léger.",
+      "Laisse chez toi ce que tu détesterais perdre, comme des bijoux de valeur ou des objets sentimentaux."
+     ],
+     "q": "Quel est l'objet le plus étrange que tu aies emporté sans jamais t'en servir ?",
+     "c": "Écris une liste intitulée Ne vient pas avec moi et ajoutes-y au moins cinq objets."
+    },
+    "it": {
+     "t": "Cosa non mettere nello zaino",
+     "g": "Riconosci gli errori tipici di chi porta troppo ed evita la trappola del non si sa mai.",
+     "p": [
+      "Le cose del non si sa mai, come un abito elegante o una terza giacca, pesano tanto e non si usano.",
+      "Flaconi grandi, asciugamani spessi, jeans e libri pesanti rubano spazio; scegli versioni leggere.",
+      "Lascia a casa gli oggetti di valore che odieresti perdere, come gioielli costosi o ricordi personali."
+     ],
+     "q": "Qual è la cosa più strana che hai messo in valigia senza mai usarla?",
+     "c": "Scrivi una lista intitolata Non viene con me e aggiungi almeno cinque oggetti."
+    },
+    "pt": {
+     "t": "O que não levar",
+     "g": "Identifica os erros típicos de levar demais e foge da armadilha do só por precaução.",
+     "p": [
+      "As coisas só por precaução, como uma roupa elegante ou um terceiro casaco, são o que mais pesa sem uso.",
+      "Frascos grandes, toalhas grossas, calças de ganga e livros pesados ocupam espaço; escolhe versões leves.",
+      "Deixa em casa os objetos de valor que odiarias perder, como joias caras ou coisas com valor sentimental."
+     ],
+     "q": "Qual foi a coisa mais estranha que já levaste e nunca usaste?",
+     "c": "Escreve uma lista chamada Não vem comigo e junta pelo menos cinco coisas."
+    },
+    "pt_BR": {
+     "t": "O que não levar",
+     "g": "Identifique os erros típicos de levar demais e escape da armadilha do vai que precisa.",
+     "p": [
+      "Os itens do vai que precisa, como uma roupa chique ou uma terceira jaqueta, pesam muito e nunca saem da mochila.",
+      "Frascos grandes, toalhas grossas, calça jeans e livros pesados ocupam espaço; escolha versões leves.",
+      "Deixe em casa o que você odiaria perder, como joias caras ou objetos de valor sentimental."
+     ],
+     "q": "Qual foi a coisa mais estranha que você já levou e nunca usou?",
+     "c": "Escreva uma lista chamada Não vai comigo e coloque pelo menos cinco itens."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weighing your pack",
+     "g": "Do a full test pack, weigh it and remove what you will not really use.",
+     "p": [
+      "Pack everything as if you were leaving tomorrow, then weigh the bag on a bathroom or luggage scale.",
+      "Many backpackers aim for a pack that weighs no more than about a tenth to a fifth of their body weight.",
+      "Lay everything out and ask of each item: did I use it on my last trip, or is it just in case?"
+     ],
+     "q": "How heavy do you think your packed bag would be if you left tomorrow?",
+     "c": "Weigh yourself, then yourself holding your bag, and work out the difference."
+    },
+    "de": {
+     "t": "Den Rucksack wiegen",
+     "g": "Mach einen kompletten Probepack, wieg ihn und nimm heraus, was du nicht wirklich brauchst.",
+     "p": [
+      "Pack alles, als würdest du morgen losfahren, und wieg den Rucksack mit einer Personen- oder Kofferwaage.",
+      "Viele Backpacker zielen auf höchstens etwa ein Zehntel bis ein Fünftel ihres Körpergewichts.",
+      "Leg alles aus und frag bei jedem Teil: Hab ich es letztes Mal benutzt, oder ist es nur für alle Fälle?"
+     ],
+     "q": "Wie schwer wäre dein gepackter Rucksack wohl, wenn du morgen losfahren würdest?",
+     "c": "Wieg dich selbst, dann dich mit Rucksack, und rechne den Unterschied aus."
+    },
+    "es": {
+     "t": "Pesar la mochila",
+     "g": "Haz una prueba completa, pesa la mochila y saca lo que en realidad no vas a usar.",
+     "p": [
+      "Prepáralo todo como si salieras mañana y pesa la mochila en una báscula de baño o de equipaje.",
+      "Muchos mochileros intentan que pese como mucho entre una décima y una quinta parte de su peso corporal.",
+      "Extiende todo y pregúntate por cada cosa: ¿la usé en mi último viaje o es solo por si acaso?"
+     ],
+     "q": "¿Cuánto crees que pesaría tu mochila si salieras mañana?",
+     "c": "Pésate, luego pésate con la mochila en brazos y calcula la diferencia."
+    },
+    "fr": {
+     "t": "Peser son sac",
+     "g": "Fais un sac test complet, pèse-le et retire ce que tu n'utiliseras pas vraiment.",
+     "p": [
+      "Prépare tout comme si tu partais demain, puis pèse le sac sur un pèse-personne ou un pèse-bagage.",
+      "Beaucoup visent un sac qui ne dépasse pas environ un dixième à un cinquième de leur poids.",
+      "Étale tout et demande-toi pour chaque objet : l'ai-je utilisé la dernière fois, ou est-ce au cas où ?"
+     ],
+     "q": "Combien penses-tu que pèserait ton sac si tu partais demain ?",
+     "c": "Pèse-toi, puis pèse-toi avec ton sac dans les bras, et calcule la différence."
+    },
+    "it": {
+     "t": "Pesare lo zaino",
+     "g": "Fai una prova completa, pesa lo zaino e togli ciò che non userai davvero.",
+     "p": [
+      "Prepara tutto come se partissi domani, poi pesa lo zaino con una bilancia pesapersone o pesabagagli.",
+      "Molti backpacker puntano a uno zaino che non superi circa un decimo o un quinto del proprio peso.",
+      "Stendi tutto e chiediti per ogni oggetto: l'ho usato nell'ultimo viaggio o è solo per sicurezza?"
+     ],
+     "q": "Quanto pensi che peserebbe il tuo zaino se partissi domani?",
+     "c": "Pesati, poi pesati tenendo lo zaino in braccio e calcola la differenza."
+    },
+    "pt": {
+     "t": "Pesar a mochila",
+     "g": "Faz um teste completo, pesa a mochila e tira o que não vais usar mesmo.",
+     "p": [
+      "Arruma tudo como se partisses amanhã e pesa a mochila numa balança de casa de banho ou de bagagem.",
+      "Muitos mochileiros tentam que pese no máximo entre um décimo e um quinto do seu peso corporal.",
+      "Espalha tudo e pergunta por cada coisa: usei-a na última viagem ou é só por precaução?"
+     ],
+     "q": "Quanto achas que pesaria a tua mochila se partisses amanhã?",
+     "c": "Pesa-te, depois pesa-te com a mochila ao colo e calcula a diferença."
+    },
+    "pt_BR": {
+     "t": "Pesando a mochila",
+     "g": "Faça um teste completo, pese a mochila e tire o que você não vai usar de verdade.",
+     "p": [
+      "Arrume tudo como se fosse viajar amanhã e pese a mochila numa balança de banheiro ou de bagagem.",
+      "Muitos mochileiros tentam que ela pese no máximo entre um décimo e um quinto do seu peso corporal.",
+      "Espalhe tudo e pergunte sobre cada item: usei na última viagem ou é só pelo vai que precisa?"
+     ],
+     "q": "Quanto você acha que pesaria sua mochila se viajasse amanhã?",
+     "c": "Pese-se, depois pese-se segurando a mochila e calcule a diferença."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The test walk",
+     "g": "Walk around your neighbourhood with a full pack before the trip to find problems early.",
+     "p": [
+      "Wear your real shoes and full pack for at least half an hour, including some stairs or a hill.",
+      "Notice where it rubs, pulls or swings, then adjust the straps and repack the heavy items.",
+      "Practise taking the pack on and off and finding your passport, water and phone quickly."
+     ],
+     "q": "Where near your home could you do a short test walk with a full bag?",
+     "c": "Do a 30-minute walk with your packed bag and write down one thing to change."
+    },
+    "de": {
+     "t": "Der Probelauf",
+     "g": "Geh vor der Reise mit vollem Rucksack durch deine Nachbarschaft, um Probleme früh zu finden.",
+     "p": [
+      "Trag deine echten Schuhe und den vollen Rucksack mindestens eine halbe Stunde, mit Treppen oder Hügel.",
+      "Achte darauf, wo es scheuert, zieht oder schwankt, stell dann die Gurte ein und pack Schweres um.",
+      "Üb, den Rucksack auf- und abzusetzen und Pass, Wasser und Handy schnell zu finden."
+     ],
+     "q": "Wo in deiner Nähe könntest du einen kurzen Probelauf mit vollem Rucksack machen?",
+     "c": "Geh 30 Minuten mit gepacktem Rucksack und schreib eine Sache auf, die du ändern willst."
+    },
+    "es": {
+     "t": "La caminata de prueba",
+     "g": "Camina por tu barrio con la mochila llena antes del viaje para detectar problemas a tiempo.",
+     "p": [
+      "Ponte tu calzado real y la mochila llena al menos media hora, con alguna escalera o cuesta.",
+      "Fíjate dónde roza, tira o se balancea, luego ajusta las correas y recoloca lo pesado.",
+      "Practica ponerte y quitarte la mochila y encontrar rápido el pasaporte, el agua y el móvil."
+     ],
+     "q": "¿Dónde cerca de tu casa podrías hacer una caminata corta con la mochila llena?",
+     "c": "Camina 30 minutos con tu mochila preparada y apunta una cosa que cambiarías."
+    },
+    "fr": {
+     "t": "La marche d'essai",
+     "g": "Marche dans ton quartier avec ton sac plein avant le voyage pour repérer les problèmes tôt.",
+     "p": [
+      "Mets tes vraies chaussures et ton sac plein au moins une demi-heure, avec des escaliers ou une côte.",
+      "Repère où ça frotte, tire ou balance, puis règle les sangles et replace les objets lourds.",
+      "Entraîne-toi à mettre et enlever le sac, et à trouver vite passeport, eau et téléphone."
+     ],
+     "q": "Où, près de chez toi, pourrais-tu faire une petite marche d'essai avec ton sac plein ?",
+     "c": "Marche 30 minutes avec ton sac prêt et note une chose à changer."
+    },
+    "it": {
+     "t": "La camminata di prova",
+     "g": "Cammina nel tuo quartiere con lo zaino pieno prima del viaggio per scoprire subito i problemi.",
+     "p": [
+      "Indossa le scarpe vere e lo zaino pieno per almeno mezz'ora, con qualche scala o salita.",
+      "Nota dove sfrega, tira o dondola, poi regola le cinghie e risistema le cose pesanti.",
+      "Esercitati a mettere e togliere lo zaino e a trovare in fretta passaporto, acqua e telefono."
+     ],
+     "q": "Dove, vicino a casa, potresti fare una breve camminata di prova con lo zaino pieno?",
+     "c": "Cammina 30 minuti con lo zaino pronto e annota una cosa da cambiare."
+    },
+    "pt": {
+     "t": "A caminhada de teste",
+     "g": "Caminha pelo teu bairro com a mochila cheia antes da viagem para descobrir problemas cedo.",
+     "p": [
+      "Usa o calçado verdadeiro e a mochila cheia pelo menos meia hora, com escadas ou uma subida.",
+      "Repara onde roça, puxa ou balança, depois ajusta as alças e reorganiza as coisas pesadas.",
+      "Treina pôr e tirar a mochila e encontrar depressa o passaporte, a água e o telemóvel."
+     ],
+     "q": "Onde, perto de casa, podias fazer uma pequena caminhada de teste com a mochila cheia?",
+     "c": "Caminha 30 minutos com a mochila pronta e aponta uma coisa a mudar."
+    },
+    "pt_BR": {
+     "t": "A caminhada de teste",
+     "g": "Caminhe pelo seu bairro com a mochila cheia antes da viagem para descobrir problemas cedo.",
+     "p": [
+      "Use o calçado de verdade e a mochila cheia por pelo menos meia hora, com escadas ou uma ladeira.",
+      "Repare onde esfola, puxa ou balança, depois ajuste as alças e reorganize as coisas pesadas.",
+      "Treine colocar e tirar a mochila e achar rápido o passaporte, a água e o celular."
+     ],
+     "q": "Onde, perto da sua casa, você poderia fazer uma caminhada curta com a mochila cheia?",
+     "c": "Caminhe 30 minutos com a mochila pronta e anote uma coisa para mudar."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing for hot climates",
+     "g": "Choose light, breathable and sun-protective clothes that keep you cool and covered.",
+     "p": [
+      "Loose, light-coloured clothes in linen or quick-dry fabrics stay cooler than tight, dark ones.",
+      "A wide-brimmed hat, sunglasses and sunscreen protect you during the strongest midday sun.",
+      "Pack one light long-sleeved top and long trousers for temples, mosquitoes and sunburn days."
+     ],
+     "q": "How do you usually cope with very hot weather?",
+     "c": "Find one light long-sleeved top you own that would work in the heat."
+    },
+    "de": {
+     "t": "Packen für heiße Länder",
+     "g": "Wähl leichte, atmungsaktive Kleidung mit Sonnenschutz, die kühlt und bedeckt.",
+     "p": [
+      "Weite, helle Kleidung aus Leinen oder schnell trocknenden Stoffen bleibt kühler als enge, dunkle.",
+      "Ein breitkrempiger Hut, Sonnenbrille und Sonnencreme schützen in der stärksten Mittagssonne.",
+      "Pack ein leichtes Langarmshirt und eine lange Hose für Tempel, Mücken und Sonnenbrandtage ein."
+     ],
+     "q": "Wie kommst du normalerweise mit großer Hitze zurecht?",
+     "c": "Such ein leichtes Langarmshirt aus deinem Schrank, das bei Hitze funktionieren würde."
+    },
+    "es": {
+     "t": "Equipaje para climas cálidos",
+     "g": "Elige ropa ligera, transpirable y con protección solar que te mantenga fresco y cubierto.",
+     "p": [
+      "La ropa holgada y clara de lino o de secado rápido es más fresca que la ajustada y oscura.",
+      "Un sombrero de ala ancha, gafas de sol y protector solar te cuidan del sol fuerte del mediodía.",
+      "Lleva una camiseta ligera de manga larga y pantalón largo para templos, mosquitos y quemaduras."
+     ],
+     "q": "¿Cómo sueles llevar el calor intenso?",
+     "c": "Busca en tu armario una prenda ligera de manga larga que te serviría con calor."
+    },
+    "fr": {
+     "t": "Partir sous la chaleur",
+     "g": "Choisis des vêtements légers, respirants et anti-UV qui te gardent au frais et couvert.",
+     "p": [
+      "Des vêtements amples et clairs en lin ou à séchage rapide restent plus frais que serrés et sombres.",
+      "Un chapeau à larges bords, des lunettes de soleil et de la crème solaire protègent du soleil de midi.",
+      "Emporte un haut léger à manches longues et un pantalon pour les temples, les moustiques et les coups de soleil."
+     ],
+     "q": "Comment fais-tu d'habitude face à une forte chaleur ?",
+     "c": "Trouve dans ton armoire un haut léger à manches longues qui irait sous la chaleur."
+    },
+    "it": {
+     "t": "Lo zaino per i climi caldi",
+     "g": "Scegli vestiti leggeri, traspiranti e protettivi dal sole che ti tengano fresco e coperto.",
+     "p": [
+      "Abiti larghi e chiari in lino o tessuti ad asciugatura rapida sono più freschi di quelli stretti e scuri.",
+      "Un cappello a tesa larga, occhiali da sole e crema solare ti proteggono dal sole forte di mezzogiorno.",
+      "Porta una maglia leggera a maniche lunghe e pantaloni lunghi per templi, zanzare e scottature."
+     ],
+     "q": "Come affronti di solito il caldo intenso?",
+     "c": "Trova nel tuo armadio una maglia leggera a maniche lunghe adatta al caldo."
+    },
+    "pt": {
+     "t": "Mochila para climas quentes",
+     "g": "Escolhe roupa leve, respirável e com proteção solar que te mantenha fresco e coberto.",
+     "p": [
+      "Roupa larga e clara, de linho ou de secagem rápida, é mais fresca do que roupa justa e escura.",
+      "Um chapéu de aba larga, óculos de sol e protetor solar protegem-te do sol forte do meio-dia.",
+      "Leva uma camisola leve de manga comprida e calças compridas para templos, mosquitos e escaldões."
+     ],
+     "q": "Como costumas lidar com calor muito forte?",
+     "c": "Encontra no teu armário uma peça leve de manga comprida que servisse no calor."
+    },
+    "pt_BR": {
+     "t": "Mochila para lugares quentes",
+     "g": "Escolha roupas leves, respiráveis e com proteção solar que deixem você fresco e coberto.",
+     "p": [
+      "Roupas largas e claras, de linho ou secagem rápida, são mais frescas do que justas e escuras.",
+      "Chapéu de aba larga, óculos de sol e protetor solar protegem você do sol forte do meio-dia.",
+      "Leve uma blusa leve de manga longa e calça comprida para templos, mosquitos e dias de muito sol."
+     ],
+     "q": "Como você costuma lidar com calor muito forte?",
+     "c": "Ache no seu armário uma peça leve de manga longa que funcionaria no calor."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing for cold climates",
+     "g": "Stay warm in the cold without carrying a huge bag, using smart layers and small accessories.",
+     "p": [
+      "A light down or synthetic puffy jacket packs small but gives a lot of warmth.",
+      "A warm hat, gloves and a neck tube weigh little and make a huge difference.",
+      "Wear your bulkiest items, like boots and the jacket, on travel days instead of packing them."
+     ],
+     "q": "What is the coldest place you have ever been, and how did you stay warm?",
+     "c": "Check if your warmest jacket can be squashed into a small bag or its own pocket."
+    },
+    "de": {
+     "t": "Packen für kalte Länder",
+     "g": "Bleib in der Kälte warm, ohne einen riesigen Rucksack zu schleppen, mit Schichten und kleinen Extras.",
+     "p": [
+      "Eine leichte Daunen- oder Kunstfaserjacke lässt sich klein packen und wärmt sehr gut.",
+      "Eine warme Mütze, Handschuhe und ein Schlauchschal wiegen wenig und bewirken viel.",
+      "Trag die sperrigsten Teile wie Stiefel und Jacke an Reisetagen, statt sie einzupacken."
+     ],
+     "q": "Was ist der kälteste Ort, an dem du je warst, und wie bist du warm geblieben?",
+     "c": "Prüf, ob sich deine wärmste Jacke in einen kleinen Beutel oder ihre eigene Tasche stopfen lässt."
+    },
+    "es": {
+     "t": "Equipaje para climas fríos",
+     "g": "Abrígate en el frío sin cargar una mochila enorme, con capas inteligentes y accesorios pequeños.",
+     "p": [
+      "Una chaqueta ligera de plumas o sintética se comprime mucho y abriga muchísimo.",
+      "Un gorro, guantes y un cuello tubular pesan poco y marcan una gran diferencia.",
+      "Ponte lo más voluminoso, como las botas y la chaqueta, en los días de viaje en vez de guardarlo."
+     ],
+     "q": "¿Cuál es el lugar más frío en el que has estado y cómo te abrigaste?",
+     "c": "Comprueba si tu chaqueta más abrigada cabe comprimida en una bolsa pequeña o en su propio bolsillo."
+    },
+    "fr": {
+     "t": "Partir dans le froid",
+     "g": "Reste au chaud sans porter un énorme sac, grâce aux couches et à quelques petits accessoires.",
+     "p": [
+      "Une doudoune légère, en duvet ou synthétique, se compresse beaucoup et tient très chaud.",
+      "Un bonnet, des gants et un tour de cou pèsent peu et changent tout.",
+      "Porte tes affaires les plus volumineuses, comme les chaussures et la veste, les jours de trajet."
+     ],
+     "q": "Quel est l'endroit le plus froid où tu sois allé, et comment es-tu resté au chaud ?",
+     "c": "Vérifie si ta veste la plus chaude tient compressée dans un petit sac ou dans sa propre poche."
+    },
+    "it": {
+     "t": "Lo zaino per i climi freddi",
+     "g": "Resta al caldo senza portare uno zaino enorme, grazie a strati intelligenti e piccoli accessori.",
+     "p": [
+      "Un piumino leggero, in piuma o sintetico, si comprime molto e scalda tantissimo.",
+      "Berretto, guanti e scaldacollo pesano poco e fanno una grande differenza.",
+      "Indossa le cose più ingombranti, come scarponi e giacca, nei giorni di viaggio invece di metterle nello zaino."
+     ],
+     "q": "Qual è il posto più freddo in cui sei stato e come ti sei tenuto al caldo?",
+     "c": "Controlla se la tua giacca più calda entra compressa in una piccola sacca o nella sua tasca."
+    },
+    "pt": {
+     "t": "Mochila para climas frios",
+     "g": "Mantém-te quente no frio sem carregar uma mochila enorme, com camadas e pequenos acessórios.",
+     "p": [
+      "Um casaco leve de penas ou sintético comprime-se muito e aquece imenso.",
+      "Um gorro, luvas e uma gola tubular pesam pouco e fazem uma grande diferença.",
+      "Veste o que é mais volumoso, como as botas e o casaco, nos dias de viagem em vez de os guardar."
+     ],
+     "q": "Qual foi o sítio mais frio onde já estiveste e como te mantiveste quente?",
+     "c": "Vê se o teu casaco mais quente cabe comprimido num saco pequeno ou no próprio bolso."
+    },
+    "pt_BR": {
+     "t": "Mochila para lugares frios",
+     "g": "Fique aquecido no frio sem carregar uma mochila enorme, com camadas e pequenos acessórios.",
+     "p": [
+      "Uma jaqueta leve de pluma ou sintética fica bem compacta e esquenta muito.",
+      "Gorro, luvas e uma gola tubular pesam pouco e fazem uma enorme diferença.",
+      "Use as peças mais volumosas, como botas e jaqueta, nos dias de deslocamento em vez de guardá-las."
+     ],
+     "q": "Qual foi o lugar mais frio onde você já esteve e como se aqueceu?",
+     "c": "Veja se sua jaqueta mais quente cabe comprimida num saquinho ou no próprio bolso."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your perfect pack",
+     "g": "Recap everything you learned about bags and packing, then do a full packing run from scratch.",
+     "p": [
+      "Bag: around 30 to 45 litres, fitted to your torso, with heavy items close to your back.",
+      "Clothes: a capsule of quick-dry layers, one pair of walking shoes and sandals, nothing just in case.",
+      "Kit: tech, small helpers, first aid and document copies, then weigh it and do a test walk."
+     ],
+     "q": "Which packing tip from this month surprised you the most?",
+     "c": "Empty your bag completely and pack it again from scratch in under 20 minutes."
+    },
+    "de": {
+     "t": "Rückblick: dein perfekter Rucksack",
+     "g": "Wiederhol alles über Rucksäcke und Packen und pack dann einmal komplett von vorn.",
+     "p": [
+      "Rucksack: etwa 30 bis 45 Liter, auf deinen Rücken eingestellt, Schweres nah am Rücken.",
+      "Kleidung: eine Capsule aus schnell trocknenden Schichten, ein Paar Laufschuhe, Sandalen, nichts für alle Fälle.",
+      "Ausrüstung: Technik, kleine Helfer, Erste Hilfe und Kopien, dann wiegen und Probelauf."
+     ],
+     "q": "Welcher Packtipp aus diesem Monat hat dich am meisten überrascht?",
+     "c": "Leer deinen Rucksack komplett und pack ihn in unter 20 Minuten neu."
+    },
+    "es": {
+     "t": "Repaso: tu mochila perfecta",
+     "g": "Repasa todo lo aprendido sobre mochilas y equipaje y haz la mochila completa desde cero.",
+     "p": [
+      "Mochila: unos 30 a 45 litros, ajustada a tu espalda y con lo pesado pegado a ella.",
+      "Ropa: un armario cápsula de capas de secado rápido, unas zapatillas, sandalias y nada por si acaso.",
+      "Equipo: tecnología, pequeños salvavidas, botiquín y copias; luego pésala y haz la caminata de prueba."
+     ],
+     "q": "¿Qué consejo de equipaje de este mes te sorprendió más?",
+     "c": "Vacía la mochila por completo y vuelve a hacerla desde cero en menos de 20 minutos."
+    },
+    "fr": {
+     "t": "Bilan : ton sac parfait",
+     "g": "Récapitule tout ce que tu sais sur les sacs et le rangement, puis refais ton sac entièrement.",
+     "p": [
+      "Sac : environ 30 à 45 litres, réglé à ton dos, avec le lourd près du dos.",
+      "Vêtements : une capsule de couches à séchage rapide, une paire de chaussures, des sandales, rien au cas où.",
+      "Kit : tech, petits sauveurs, trousse de secours et copies, puis pesée et marche d'essai."
+     ],
+     "q": "Quelle astuce de ce mois t'a le plus surpris ?",
+     "c": "Vide entièrement ton sac et refais-le de zéro en moins de 20 minutes."
+    },
+    "it": {
+     "t": "Ripasso: il tuo zaino perfetto",
+     "g": "Ripassa tutto ciò che hai imparato su zaini e bagaglio, poi rifai lo zaino da zero.",
+     "p": [
+      "Zaino: circa 30-45 litri, regolato sul tuo busto, con il peso vicino alla schiena.",
+      "Vestiti: un guardaroba capsula a strati ad asciugatura rapida, scarpe comode, sandali e niente di superfluo.",
+      "Kit: tecnologia, piccoli aiuti, primo soccorso e copie dei documenti, poi pesa e fai la camminata di prova."
+     ],
+     "q": "Quale consiglio di questo mese ti ha sorpreso di più?",
+     "c": "Svuota completamente lo zaino e rifallo da zero in meno di 20 minuti."
+    },
+    "pt": {
+     "t": "Revisão: a tua mochila perfeita",
+     "g": "Revê tudo o que aprendeste sobre mochilas e bagagem e faz a mochila completa do zero.",
+     "p": [
+      "Mochila: cerca de 30 a 45 litros, ajustada ao teu tronco, com o peso junto às costas.",
+      "Roupa: um guarda-roupa cápsula de camadas de secagem rápida, sapatilhas, sandálias e nada por precaução.",
+      "Kit: tecnologia, pequenos salva-vidas, primeiros socorros e cópias; depois pesa e faz a caminhada de teste."
+     ],
+     "q": "Que dica de bagagem deste mês te surpreendeu mais?",
+     "c": "Esvazia a mochila por completo e volta a fazê-la do zero em menos de 20 minutos."
+    },
+    "pt_BR": {
+     "t": "Revisão: sua mochila perfeita",
+     "g": "Revise tudo o que você aprendeu sobre mochilas e bagagem e arrume a mochila do zero.",
+     "p": [
+      "Mochila: cerca de 30 a 45 litros, ajustada ao seu tronco, com o peso perto das costas.",
+      "Roupas: um guarda-roupa cápsula em camadas de secagem rápida, um tênis, sandálias e nada de vai que precisa.",
+      "Kit: tecnologia, itens salva-vidas, primeiros socorros e cópias; depois pese e faça a caminhada de teste."
+     ],
+     "q": "Qual dica de bagagem deste mês mais surpreendeu você?",
+     "c": "Esvazie a mochila por completo e arrume de novo do zero em menos de 20 minutos."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "road_trips",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the open road",
+     "g": "Discover what makes a road trip special: freedom, scenery and room for spontaneity.",
+     "p": [
+      "On a road trip the journey itself is the adventure, not just the place you arrive at.",
+      "You set the pace: stop at a viewpoint, a village market or a lake whenever you like.",
+      "Changing landscapes, shared music and small surprises turn ordinary roads into memories."
+     ],
+     "q": "What is the first picture that comes to mind when you think of a road trip?",
+     "c": "Write down three things you would love to see from a car window."
+    },
+    "de": {
+     "t": "Willkommen auf offener Straße",
+     "g": "Entdecke, was einen Roadtrip besonders macht: Freiheit, Landschaft und Raum für Spontaneität.",
+     "p": [
+      "Beim Roadtrip ist die Reise selbst das Abenteuer, nicht nur das Ziel am Ende.",
+      "Du bestimmst das Tempo: Halt an Aussichtspunkten, Dorfmärkten oder Seen, wann immer du willst.",
+      "Wechselnde Landschaften, gemeinsame Musik und kleine Überraschungen machen Straßen zu Erinnerungen."
+     ],
+     "q": "Welches Bild kommt dir als Erstes in den Sinn, wenn du an einen Roadtrip denkst?",
+     "c": "Schreib drei Dinge auf, die du gern aus dem Autofenster sehen würdest."
+    },
+    "es": {
+     "t": "Bienvenido a la carretera",
+     "g": "Descubre qué hace especial un viaje por carretera: libertad, paisajes y espacio para improvisar.",
+     "p": [
+      "En un road trip el propio viaje es la aventura, no solo el lugar al que llegas.",
+      "Tú marcas el ritmo: para en un mirador, un mercado de pueblo o un lago cuando quieras.",
+      "Paisajes cambiantes, música compartida y pequeñas sorpresas convierten carreteras en recuerdos."
+     ],
+     "q": "¿Qué imagen te viene primero a la mente cuando piensas en un viaje por carretera?",
+     "c": "Apunta tres cosas que te encantaría ver desde la ventanilla del coche."
+    },
+    "fr": {
+     "t": "Bienvenue sur la route",
+     "g": "Découvre ce qui rend un road trip unique : la liberté, les paysages et la place pour l'imprévu.",
+     "p": [
+      "En road trip, le trajet lui-même est l'aventure, pas seulement la destination.",
+      "Tu choisis le rythme : arrête-toi à un belvédère, un marché de village ou un lac quand tu veux.",
+      "Paysages changeants, musique partagée et petites surprises transforment la route en souvenirs."
+     ],
+     "q": "Quelle est la première image qui te vient quand tu penses à un road trip ?",
+     "c": "Note trois choses que tu adorerais voir depuis la fenêtre d'une voiture."
+    },
+    "it": {
+     "t": "Benvenuto sulla strada",
+     "g": "Scopri cosa rende speciale un viaggio on the road: libertà, paesaggi e spazio per l'imprevisto.",
+     "p": [
+      "In un viaggio on the road il percorso stesso è l'avventura, non solo la meta.",
+      "Decidi tu il ritmo: fermati a un belvedere, a un mercato di paese o a un lago quando vuoi.",
+      "Paesaggi che cambiano, musica condivisa e piccole sorprese trasformano le strade in ricordi."
+     ],
+     "q": "Qual è la prima immagine che ti viene in mente pensando a un viaggio on the road?",
+     "c": "Scrivi tre cose che ti piacerebbe vedere dal finestrino di un'auto."
+    },
+    "pt": {
+     "t": "Bem-vindo à estrada",
+     "g": "Descobre o que torna uma viagem de carro especial: liberdade, paisagens e espaço para o improviso.",
+     "p": [
+      "Numa road trip, a própria viagem é a aventura, não apenas o destino final.",
+      "Tu escolhes o ritmo: para num miradouro, num mercado de aldeia ou num lago quando quiseres.",
+      "Paisagens que mudam, música partilhada e pequenas surpresas tornam as estradas memórias."
+     ],
+     "q": "Qual é a primeira imagem que te vem à cabeça quando pensas numa viagem de carro?",
+     "c": "Escreve três coisas que adorarias ver pela janela de um carro."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à estrada",
+     "g": "Descubra o que torna uma viagem de carro especial: liberdade, paisagens e espaço para improvisar.",
+     "p": [
+      "Numa road trip, a própria viagem é a aventura, não só o lugar onde você chega.",
+      "Você escolhe o ritmo: pare num mirante, numa feira de cidadezinha ou num lago quando quiser.",
+      "Paisagens que mudam, música compartilhada e pequenas surpresas viram lembranças de estrada."
+     ],
+     "q": "Qual é a primeira imagem que vem à sua cabeça quando você pensa numa viagem de carro?",
+     "c": "Anote três coisas que você adoraria ver pela janela de um carro."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dreaming up your first trip",
+     "g": "Turn a vague wish into a clear destination, a rough length and a reason to go.",
+     "p": [
+      "Start with a feeling: sea air, mountains, small towns or good food can point the way.",
+      "Pick one region and a rough number of days instead of trying to see everything at once.",
+      "A simple reason, like a lake swim or a famous bakery, makes planning easier and more fun."
+     ],
+     "q": "If you could leave tomorrow, which region would you drive to and why?",
+     "c": "Write one sentence: I want to drive to ___ for ___ days because ___."
+    },
+    "de": {
+     "t": "Deine erste Reise erträumen",
+     "g": "Mach aus einem vagen Wunsch ein klares Ziel, eine grobe Dauer und einen Grund für die Reise.",
+     "p": [
+      "Starte mit einem Gefühl: Meeresluft, Berge, Kleinstädte oder gutes Essen zeigen die Richtung.",
+      "Wähle eine Region und eine ungefähre Zahl an Tagen, statt alles auf einmal sehen zu wollen.",
+      "Ein einfacher Grund, etwa ein Bad im See oder eine berühmte Bäckerei, macht die Planung leichter."
+     ],
+     "q": "Wenn du morgen losfahren könntest, in welche Region würdest du fahren und warum?",
+     "c": "Schreib einen Satz: Ich will ___ Tage nach ___ fahren, weil ___."
+    },
+    "es": {
+     "t": "Soñando tu primer viaje",
+     "g": "Convierte un deseo vago en un destino claro, una duración aproximada y un motivo para ir.",
+     "p": [
+      "Empieza por una sensación: brisa marina, montañas, pueblos o buena comida te marcan el rumbo.",
+      "Elige una región y un número aproximado de días en lugar de querer verlo todo de golpe.",
+      "Un motivo sencillo, como un baño en un lago o una panadería famosa, facilita la planificación."
+     ],
+     "q": "Si pudieras salir mañana, ¿a qué región conducirías y por qué?",
+     "c": "Escribe una frase: Quiero conducir a ___ durante ___ días porque ___."
+    },
+    "fr": {
+     "t": "Imaginer ton premier voyage",
+     "g": "Transforme une envie floue en destination claire, avec une durée approximative et une raison d'y aller.",
+     "p": [
+      "Pars d'une sensation : l'air marin, la montagne, les petits villages ou la bonne cuisine.",
+      "Choisis une région et un nombre de jours approximatif au lieu de vouloir tout voir d'un coup.",
+      "Une raison simple, comme une baignade au lac ou une boulangerie réputée, rend l'organisation plus facile."
+     ],
+     "q": "Si tu pouvais partir demain, vers quelle région roulerais-tu et pourquoi ?",
+     "c": "Écris une phrase : Je veux rouler vers ___ pendant ___ jours parce que ___."
+    },
+    "it": {
+     "t": "Sognare il primo viaggio",
+     "g": "Trasforma un desiderio vago in una meta chiara, una durata indicativa e un motivo per partire.",
+     "p": [
+      "Parti da una sensazione: aria di mare, montagne, borghi o buon cibo possono indicarti la strada.",
+      "Scegli una regione e un numero indicativo di giorni invece di voler vedere tutto insieme.",
+      "Un motivo semplice, come un tuffo in un lago o un forno famoso, rende la pianificazione più facile."
+     ],
+     "q": "Se potessi partire domani, verso quale regione guideresti e perché?",
+     "c": "Scrivi una frase: Voglio guidare fino a ___ per ___ giorni perché ___."
+    },
+    "pt": {
+     "t": "Sonhar a primeira viagem",
+     "g": "Transforma um desejo vago num destino claro, numa duração aproximada e num motivo para ir.",
+     "p": [
+      "Começa por uma sensação: ar do mar, serras, aldeias ou boa comida podem indicar o caminho.",
+      "Escolhe uma região e um número aproximado de dias em vez de tentar ver tudo de uma vez.",
+      "Um motivo simples, como um mergulho num lago ou uma pastelaria famosa, facilita o planeamento."
+     ],
+     "q": "Se pudesses partir amanhã, para que região conduzirias e porquê?",
+     "c": "Escreve uma frase: Quero ir de carro até ___ durante ___ dias porque ___."
+    },
+    "pt_BR": {
+     "t": "Sonhando a primeira viagem",
+     "g": "Transforme um desejo vago num destino claro, numa duração aproximada e num motivo para ir.",
+     "p": [
+      "Comece por uma sensação: brisa do mar, serra, cidadezinhas ou boa comida podem mostrar o caminho.",
+      "Escolha uma região e um número aproximado de dias em vez de tentar ver tudo de uma vez.",
+      "Um motivo simples, como um mergulho num lago ou uma padaria famosa, deixa o planejamento mais fácil."
+     ],
+     "q": "Se você pudesse sair amanhã, para qual região dirigiria e por quê?",
+     "c": "Escreva uma frase: Quero dirigir até ___ por ___ dias porque ___."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How long should a road trip be?",
+     "g": "Compare weekend escapes, one-week loops and longer journeys to find the length that suits you.",
+     "p": [
+      "A weekend trip works best within a few hours of home, with one or two highlights.",
+      "A one-week loop lets you explore a whole region without rushing from place to place.",
+      "Longer journeys need more rest days, flexible plans and a car you feel comfortable in."
+     ],
+     "q": "Does a short weekend escape or a longer journey sound more like you right now?",
+     "c": "Choose a length for your dream trip and list two highlights that fit into it."
+    },
+    "de": {
+     "t": "Wie lang sollte ein Roadtrip sein?",
+     "g": "Vergleiche Wochenendtrips, Wochenrunden und längere Reisen, um die passende Dauer zu finden.",
+     "p": [
+      "Ein Wochenendtrip klappt am besten wenige Stunden von zu Hause, mit ein oder zwei Highlights.",
+      "Mit einer Wochenrunde erkundest du eine ganze Region, ohne von Ort zu Ort zu hetzen.",
+      "Längere Reisen brauchen Ruhetage, flexible Pläne und ein Auto, in dem du dich wohlfühlst."
+     ],
+     "q": "Passt gerade eher ein kurzer Wochenendtrip oder eine längere Reise zu dir?",
+     "c": "Wähle eine Dauer für deine Traumreise und notiere zwei Highlights, die hineinpassen."
+    },
+    "es": {
+     "t": "¿Cuánto debe durar un road trip?",
+     "g": "Compara escapadas de fin de semana, rutas de una semana y viajes largos para elegir tu duración.",
+     "p": [
+      "Una escapada de fin de semana funciona mejor a pocas horas de casa, con uno o dos puntos fuertes.",
+      "Una ruta de una semana te deja explorar toda una región sin correr de un lugar a otro.",
+      "Los viajes largos necesitan días de descanso, planes flexibles y un coche en el que estés cómodo."
+     ],
+     "q": "¿Ahora mismo te va más una escapada corta o un viaje más largo?",
+     "c": "Elige una duración para tu viaje soñado y anota dos puntos fuertes que quepan en ella."
+    },
+    "fr": {
+     "t": "Quelle durée pour un road trip ?",
+     "g": "Compare escapades d'un week-end, boucles d'une semaine et longs voyages pour trouver ta durée idéale.",
+     "p": [
+      "Un week-end marche mieux à quelques heures de chez toi, avec un ou deux temps forts.",
+      "Une boucle d'une semaine permet d'explorer toute une région sans courir d'un endroit à l'autre.",
+      "Les longs voyages demandent des jours de repos, un plan souple et une voiture où tu te sens bien."
+     ],
+     "q": "En ce moment, une courte escapade ou un long voyage te ressemble davantage ?",
+     "c": "Choisis une durée pour ton voyage rêvé et note deux temps forts qui y tiennent."
+    },
+    "it": {
+     "t": "Quanto deve durare un road trip?",
+     "g": "Confronta weekend fuori porta, giri di una settimana e viaggi lunghi per trovare la durata giusta.",
+     "p": [
+      "Un weekend funziona meglio a poche ore da casa, con uno o due punti forti.",
+      "Un giro di una settimana ti fa esplorare un'intera regione senza correre da un posto all'altro.",
+      "I viaggi lunghi richiedono giorni di riposo, piani flessibili e un'auto in cui stai comodo."
+     ],
+     "q": "In questo momento ti somiglia di più una breve fuga o un viaggio lungo?",
+     "c": "Scegli una durata per il tuo viaggio dei sogni e annota due tappe forti che ci stanno."
+    },
+    "pt": {
+     "t": "Quanto deve durar uma road trip?",
+     "g": "Compara escapadinhas de fim de semana, voltas de uma semana e viagens longas para escolher a duração.",
+     "p": [
+      "Um fim de semana resulta melhor a poucas horas de casa, com um ou dois pontos altos.",
+      "Uma volta de uma semana permite explorar uma região inteira sem andar a correr.",
+      "Viagens longas pedem dias de descanso, planos flexíveis e um carro onde te sintas confortável."
+     ],
+     "q": "Neste momento, combina mais contigo uma escapadinha curta ou uma viagem longa?",
+     "c": "Escolhe uma duração para a viagem dos teus sonhos e anota dois pontos altos que cabem nela."
+    },
+    "pt_BR": {
+     "t": "Quanto deve durar uma road trip?",
+     "g": "Compare bate-voltas de fim de semana, roteiros de uma semana e viagens longas para achar sua duração.",
+     "p": [
+      "Um fim de semana funciona melhor a poucas horas de casa, com um ou dois destaques.",
+      "Um roteiro de uma semana deixa você explorar uma região inteira sem correria.",
+      "Viagens longas pedem dias de descanso, planos flexíveis e um carro em que você se sinta bem."
+     ],
+     "q": "Agora, uma escapada curta ou uma viagem mais longa combina mais com você?",
+     "c": "Escolha uma duração para sua viagem dos sonhos e anote dois destaques que cabem nela."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who comes along?",
+     "g": "See how travelling solo, as a couple, with friends or with family changes the whole trip.",
+     "p": [
+      "Solo trips give total freedom, but you do all the driving, so plan shorter days.",
+      "With friends or a partner, agree early on budget, pace and who wants which stops.",
+      "Family trips need more breaks, snacks and activities that keep everyone happy."
+     ],
+     "q": "Who would be your ideal road trip companion, and what would they add to the journey?",
+     "c": "Ask one possible travel buddy what their must-have stop on a trip would be."
+    },
+    "de": {
+     "t": "Wer fährt mit?",
+     "g": "Sieh, wie allein, zu zweit, mit Freunden oder mit Familie die ganze Reise verändert.",
+     "p": [
+      "Allein hast du volle Freiheit, fährst aber jede Strecke selbst, also plane kürzere Tage.",
+      "Mit Freunden oder Partner klärt ihr früh Budget, Tempo und wer welche Stopps möchte.",
+      "Familienreisen brauchen mehr Pausen, Snacks und Aktivitäten, die alle glücklich machen."
+     ],
+     "q": "Wer wäre deine ideale Begleitung auf einem Roadtrip, und was würde sie mitbringen?",
+     "c": "Frag eine mögliche Reisebegleitung, welcher Stopp für sie ein Muss wäre."
+    },
+    "es": {
+     "t": "¿Quién viene contigo?",
+     "g": "Mira cómo viajar solo, en pareja, con amigos o en familia cambia todo el viaje.",
+     "p": [
+      "Viajar solo da libertad total, pero conduces todos los tramos, así que planea días más cortos.",
+      "Con amigos o pareja, acordad pronto el presupuesto, el ritmo y qué paradas quiere cada uno.",
+      "Los viajes en familia necesitan más pausas, tentempiés y actividades que contenten a todos."
+     ],
+     "q": "¿Quién sería tu compañía ideal en un road trip y qué aportaría al viaje?",
+     "c": "Pregunta a un posible compañero de viaje cuál sería su parada imprescindible."
+    },
+    "fr": {
+     "t": "Qui t'accompagne ?",
+     "g": "Vois comment voyager seul, en couple, entre amis ou en famille change tout le voyage.",
+     "p": [
+      "Seul, tu as une liberté totale, mais tu fais toute la conduite : prévois des journées plus courtes.",
+      "Entre amis ou en couple, mettez-vous d'accord tôt sur le budget, le rythme et les arrêts de chacun.",
+      "En famille, il faut plus de pauses, d'en-cas et d'activités qui plaisent à tout le monde."
+     ],
+     "q": "Qui serait ton compagnon de road trip idéal, et qu'apporterait-il au voyage ?",
+     "c": "Demande à un futur compagnon de route quel arrêt serait incontournable pour lui."
+    },
+    "it": {
+     "t": "Chi viene con te?",
+     "g": "Scopri come viaggiare da soli, in coppia, con amici o in famiglia cambia tutto il viaggio.",
+     "p": [
+      "Da solo hai libertà totale, ma guidi sempre tu, quindi pianifica giornate più brevi.",
+      "Con amici o partner, mettetevi d'accordo presto su budget, ritmo e soste preferite.",
+      "I viaggi in famiglia richiedono più pause, spuntini e attività che rendano tutti felici."
+     ],
+     "q": "Chi sarebbe il tuo compagno ideale per un road trip e cosa porterebbe al viaggio?",
+     "c": "Chiedi a un possibile compagno di viaggio quale sarebbe la sua tappa irrinunciabile."
+    },
+    "pt": {
+     "t": "Quem vem contigo?",
+     "g": "Vê como viajar sozinho, a dois, com amigos ou em família muda toda a viagem.",
+     "p": [
+      "Sozinho tens liberdade total, mas conduzes sempre tu, por isso planeia dias mais curtos.",
+      "Com amigos ou com o par, combinem cedo o orçamento, o ritmo e as paragens de cada um.",
+      "Viagens em família pedem mais pausas, lanches e atividades que agradem a todos."
+     ],
+     "q": "Quem seria a tua companhia ideal numa road trip e o que traria à viagem?",
+     "c": "Pergunta a um possível companheiro de viagem qual seria a paragem obrigatória para ele."
+    },
+    "pt_BR": {
+     "t": "Quem vai junto?",
+     "g": "Veja como viajar sozinho, a dois, com amigos ou em família muda a viagem inteira.",
+     "p": [
+      "Sozinho você tem liberdade total, mas dirige todos os trechos, então planeje dias mais curtos.",
+      "Com amigos ou parceiro, combinem cedo o orçamento, o ritmo e as paradas de cada um.",
+      "Viagens em família pedem mais pausas, lanches e atividades que deixem todo mundo feliz."
+     ],
+     "q": "Quem seria sua companhia ideal numa road trip e o que ela traria para a viagem?",
+     "c": "Pergunte a um possível parceiro de viagem qual seria a parada obrigatória para ele."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Picking the right season",
+     "g": "Learn how weather, daylight, crowds and road closures change from season to season.",
+     "p": [
+      "Summer brings long days but also crowds and heat; spring and autumn are often calmer.",
+      "Some mountain passes and park roads close in winter, so check official sources before you plan.",
+      "Shorter winter days mean fewer driving hours in daylight, so plan shorter stages."
+     ],
+     "q": "Which season do you find most beautiful for travelling, and what do you love about it?",
+     "c": "Look up when sunrise and sunset happen in your dream region in your favourite month."
+    },
+    "de": {
+     "t": "Die richtige Jahreszeit",
+     "g": "Lerne, wie sich Wetter, Tageslicht, Andrang und Straßensperren je nach Jahreszeit ändern.",
+     "p": [
+      "Der Sommer bringt lange Tage, aber auch Hitze und Andrang; Frühling und Herbst sind oft ruhiger.",
+      "Manche Pässe und Parkstraßen sind im Winter gesperrt, prüfe daher offizielle Quellen vorab.",
+      "Kurze Wintertage bedeuten weniger Fahrstunden bei Tageslicht, also plane kürzere Etappen."
+     ],
+     "q": "Welche Jahreszeit findest du zum Reisen am schönsten, und was magst du daran?",
+     "c": "Schau nach, wann in deiner Traumregion in deinem Lieblingsmonat die Sonne auf- und untergeht."
+    },
+    "es": {
+     "t": "Elegir la estación ideal",
+     "g": "Aprende cómo cambian el clima, la luz del día, las multitudes y los cierres de carreteras.",
+     "p": [
+      "El verano trae días largos, pero también calor y gente; primavera y otoño suelen ser más tranquilos.",
+      "Algunos puertos de montaña y carreteras de parques cierran en invierno: consulta fuentes oficiales.",
+      "Los días cortos de invierno dan menos horas de luz para conducir, así que planea etapas cortas."
+     ],
+     "q": "¿Qué estación te parece más bonita para viajar y qué te gusta de ella?",
+     "c": "Busca a qué hora sale y se pone el sol en tu región soñada durante tu mes favorito."
+    },
+    "fr": {
+     "t": "Choisir la bonne saison",
+     "g": "Apprends comment météo, lumière du jour, affluence et fermetures de routes changent selon la saison.",
+     "p": [
+      "L'été offre de longues journées, mais aussi chaleur et foule ; printemps et automne sont plus calmes.",
+      "Certains cols et routes de parcs ferment l'hiver : vérifie les sources officielles avant de partir.",
+      "Les jours courts d'hiver laissent moins d'heures de conduite de jour : prévois des étapes plus courtes."
+     ],
+     "q": "Quelle saison trouves-tu la plus belle pour voyager, et qu'aimes-tu en elle ?",
+     "c": "Cherche l'heure du lever et du coucher du soleil dans ta région rêvée pendant ton mois préféré."
+    },
+    "it": {
+     "t": "Scegliere la stagione giusta",
+     "g": "Impara come meteo, ore di luce, folla e chiusure stradali cambiano da stagione a stagione.",
+     "p": [
+      "L'estate porta giornate lunghe ma anche caldo e folla; primavera e autunno sono spesso più tranquille.",
+      "Alcuni passi di montagna e strade dei parchi chiudono d'inverno: controlla le fonti ufficiali.",
+      "Le giornate corte d'inverno danno meno ore di luce per guidare, quindi pianifica tappe brevi."
+     ],
+     "q": "Quale stagione trovi più bella per viaggiare e cosa ti piace di lei?",
+     "c": "Cerca a che ora sorge e tramonta il sole nella tua regione dei sogni nel tuo mese preferito."
+    },
+    "pt": {
+     "t": "Escolher a estação certa",
+     "g": "Aprende como o tempo, a luz do dia, as multidões e os cortes de estrada mudam com as estações.",
+     "p": [
+      "O verão traz dias longos, mas também calor e enchentes; a primavera e o outono são mais calmos.",
+      "Algumas passagens de montanha e estradas de parques fecham no inverno: consulta fontes oficiais.",
+      "Os dias curtos de inverno dão menos horas de luz para conduzir, por isso planeia etapas curtas."
+     ],
+     "q": "Que estação achas mais bonita para viajar e o que adoras nela?",
+     "c": "Procura a que horas nasce e se põe o sol na tua região de sonho no teu mês preferido."
+    },
+    "pt_BR": {
+     "t": "Escolhendo a estação certa",
+     "g": "Aprenda como clima, luz do dia, lotação e bloqueios de estrada mudam de estação para estação.",
+     "p": [
+      "O verão traz dias longos, mas também calor e lotação; primavera e outono costumam ser mais calmos.",
+      "Algumas estradas de serra e de parques fecham em certas épocas: confira fontes oficiais antes.",
+      "Dias curtos de inverno dão menos horas de luz para dirigir, então planeje trechos mais curtos."
+     ],
+     "q": "Qual estação você acha mais bonita para viajar e o que você ama nela?",
+     "c": "Pesquise a que horas o sol nasce e se põe na sua região dos sonhos no seu mês favorito."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a road map",
+     "g": "Understand road classes, colours, symbols and scale on paper and digital maps.",
+     "p": [
+      "Thicker, bolder lines usually mean bigger, faster roads; thin lines are smaller local roads.",
+      "The legend explains colours and symbols such as fuel, viewpoints, campsites and scenic routes.",
+      "The scale bar shows how map distance turns into real distance, so you can estimate a stretch."
+     ],
+     "q": "Do you prefer paper maps, phone maps or a mix of both, and why?",
+     "c": "Open any map, find its legend and identify three symbols you did not know."
+    },
+    "de": {
+     "t": "Eine Straßenkarte lesen",
+     "g": "Verstehe Straßenklassen, Farben, Symbole und Maßstab auf Papier- und Digitalkarten.",
+     "p": [
+      "Dicke, kräftige Linien bedeuten meist große, schnelle Straßen; dünne Linien sind kleine Landstraßen.",
+      "Die Legende erklärt Farben und Symbole wie Tankstellen, Aussichtspunkte, Campingplätze und Panoramastraßen.",
+      "Die Maßstabsleiste zeigt, wie Kartenabstand zu echter Strecke wird, so schätzt du Etappen ab."
+     ],
+     "q": "Magst du lieber Papierkarten, Handykarten oder beides, und warum?",
+     "c": "Öffne eine Karte, such die Legende und finde drei Symbole, die du noch nicht kanntest."
+    },
+    "es": {
+     "t": "Leer un mapa de carreteras",
+     "g": "Entiende los tipos de vía, colores, símbolos y escala en mapas de papel y digitales.",
+     "p": [
+      "Las líneas gruesas suelen ser vías grandes y rápidas; las finas son carreteras locales pequeñas.",
+      "La leyenda explica colores y símbolos como gasolineras, miradores, campings y rutas panorámicas.",
+      "La escala muestra cómo la distancia en el mapa se vuelve distancia real para calcular un tramo."
+     ],
+     "q": "¿Prefieres mapas de papel, mapas en el móvil o una mezcla, y por qué?",
+     "c": "Abre cualquier mapa, busca su leyenda e identifica tres símbolos que no conocías."
+    },
+    "fr": {
+     "t": "Lire une carte routière",
+     "g": "Comprends les types de routes, couleurs, symboles et l'échelle sur cartes papier et numériques.",
+     "p": [
+      "Les traits épais désignent souvent les grandes routes rapides ; les traits fins, les petites routes locales.",
+      "La légende explique couleurs et symboles : stations-service, points de vue, campings, routes pittoresques.",
+      "L'échelle montre comment une distance sur la carte devient une distance réelle pour estimer un trajet."
+     ],
+     "q": "Tu préfères les cartes papier, les cartes sur téléphone ou un mélange des deux, et pourquoi ?",
+     "c": "Ouvre une carte, trouve sa légende et repère trois symboles que tu ne connaissais pas."
+    },
+    "it": {
+     "t": "Leggere una carta stradale",
+     "g": "Capisci classi di strade, colori, simboli e scala sulle carte cartacee e digitali.",
+     "p": [
+      "Le linee spesse indicano di solito strade grandi e veloci; quelle sottili sono strade locali.",
+      "La legenda spiega colori e simboli come distributori, belvedere, campeggi e strade panoramiche.",
+      "La scala mostra come la distanza sulla carta diventa distanza reale, così stimi un tratto."
+     ],
+     "q": "Preferisci le carte di carta, le mappe sul telefono o un mix, e perché?",
+     "c": "Apri una mappa qualsiasi, trova la legenda e individua tre simboli che non conoscevi."
+    },
+    "pt": {
+     "t": "Ler um mapa de estradas",
+     "g": "Percebe as classes de estrada, cores, símbolos e escala em mapas de papel e digitais.",
+     "p": [
+      "Linhas grossas costumam ser estradas grandes e rápidas; linhas finas são estradas locais pequenas.",
+      "A legenda explica cores e símbolos como bombas de gasolina, miradouros, parques de campismo e rotas panorâmicas.",
+      "A escala mostra como a distância no mapa se torna distância real, para estimares um troço."
+     ],
+     "q": "Preferes mapas em papel, mapas no telemóvel ou uma mistura, e porquê?",
+     "c": "Abre um mapa, encontra a legenda e identifica três símbolos que não conhecias."
+    },
+    "pt_BR": {
+     "t": "Lendo um mapa rodoviário",
+     "g": "Entenda tipos de estrada, cores, símbolos e escala em mapas de papel e digitais.",
+     "p": [
+      "Linhas grossas costumam ser rodovias grandes e rápidas; linhas finas são estradas locais menores.",
+      "A legenda explica cores e símbolos como postos de combustível, mirantes, campings e rotas cênicas.",
+      "A escala mostra como a distância no mapa vira distância real, para você estimar um trecho."
+     ],
+     "q": "Você prefere mapa de papel, mapa no celular ou uma mistura, e por quê?",
+     "c": "Abra qualquer mapa, encontre a legenda e identifique três símbolos que você não conhecia."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sketching a simple route",
+     "g": "Connect a start, an end and a few must-see places into a first rough route line.",
+     "p": [
+      "Mark your start and end first, then add two to four places you really want to see.",
+      "Join them in an order that avoids doubling back, like dots in a simple puzzle.",
+      "Keep it rough: today's line is a draft you will adjust as you learn more."
+     ],
+     "q": "Which must-see places would you put on your first route sketch?",
+     "c": "Draw a quick route on paper or a map app with a start, an end and three stops."
+    },
+    "de": {
+     "t": "Eine einfache Route skizzieren",
+     "g": "Verbinde Start, Ziel und ein paar Highlights zu einer ersten groben Routenlinie.",
+     "p": [
+      "Markiere zuerst Start und Ziel, dann zwei bis vier Orte, die du unbedingt sehen willst.",
+      "Verbinde sie in einer Reihenfolge ohne Hin und Her, wie Punkte in einem einfachen Rätsel.",
+      "Bleib grob: Die heutige Linie ist ein Entwurf, den du später anpasst."
+     ],
+     "q": "Welche Highlights würdest du in deine erste Routenskizze aufnehmen?",
+     "c": "Zeichne eine schnelle Route auf Papier oder in einer Karten-App mit Start, Ziel und drei Stopps."
+    },
+    "es": {
+     "t": "Esbozar una ruta sencilla",
+     "g": "Une un inicio, un final y algunos lugares imprescindibles en una primera ruta aproximada.",
+     "p": [
+      "Marca primero el inicio y el final, y luego añade de dos a cuatro lugares que quieras ver.",
+      "Únelos en un orden que evite volver atrás, como puntos en un pasatiempo sencillo.",
+      "Que sea aproximada: la línea de hoy es un borrador que ajustarás más adelante."
+     ],
+     "q": "¿Qué lugares imprescindibles pondrías en tu primer esbozo de ruta?",
+     "c": "Dibuja una ruta rápida en papel o en una app de mapas con inicio, final y tres paradas."
+    },
+    "fr": {
+     "t": "Esquisser un itinéraire simple",
+     "g": "Relie un départ, une arrivée et quelques incontournables en un premier tracé approximatif.",
+     "p": [
+      "Place d'abord le départ et l'arrivée, puis ajoute deux à quatre lieux que tu veux vraiment voir.",
+      "Relie-les dans un ordre qui évite les allers-retours, comme des points à relier.",
+      "Reste approximatif : le tracé du jour est un brouillon que tu ajusteras ensuite."
+     ],
+     "q": "Quels incontournables mettrais-tu sur ta première esquisse d'itinéraire ?",
+     "c": "Dessine un tracé rapide sur papier ou dans une appli de cartes avec départ, arrivée et trois arrêts."
+    },
+    "it": {
+     "t": "Abbozzare un percorso semplice",
+     "g": "Collega partenza, arrivo e alcune tappe imperdibili in una prima linea di percorso.",
+     "p": [
+      "Segna prima partenza e arrivo, poi aggiungi da due a quattro luoghi che vuoi davvero vedere.",
+      "Uniscili in un ordine che eviti di tornare indietro, come i puntini di un gioco enigmistico.",
+      "Resta sul semplice: la linea di oggi è una bozza da ritoccare man mano."
+     ],
+     "q": "Quali tappe imperdibili metteresti nel tuo primo abbozzo di percorso?",
+     "c": "Disegna un percorso veloce su carta o in un'app di mappe con partenza, arrivo e tre soste."
+    },
+    "pt": {
+     "t": "Esboçar um percurso simples",
+     "g": "Liga um ponto de partida, um destino e alguns locais obrigatórios num primeiro percurso.",
+     "p": [
+      "Marca primeiro a partida e a chegada e depois junta dois a quatro sítios que queres mesmo ver.",
+      "Liga-os numa ordem que evite voltar para trás, como pontos num passatempo simples.",
+      "Mantém-no aproximado: a linha de hoje é um rascunho que vais ajustar depois."
+     ],
+     "q": "Que locais obrigatórios porias no teu primeiro esboço de percurso?",
+     "c": "Desenha um percurso rápido em papel ou numa app de mapas com partida, chegada e três paragens."
+    },
+    "pt_BR": {
+     "t": "Rascunhando uma rota simples",
+     "g": "Ligue um ponto de partida, um destino e alguns lugares imperdíveis numa primeira rota.",
+     "p": [
+      "Marque primeiro a partida e a chegada e depois some de dois a quatro lugares que você quer ver.",
+      "Ligue tudo numa ordem que evite voltar para trás, como pontinhos num passatempo.",
+      "Deixe aproximado: a linha de hoje é um rascunho que você vai ajustar depois."
+     ],
+     "q": "Quais lugares imperdíveis você colocaria no seu primeiro rascunho de rota?",
+     "c": "Desenhe uma rota rápida no papel ou num app de mapas com partida, chegada e três paradas."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Loop or one-way?",
+     "g": "Compare circular routes with one-way trips and see how each affects time and costs.",
+     "p": [
+      "A loop brings you back to your start, which is simple with your own car or a standard rental.",
+      "A one-way trip covers more new ground, but rentals may add a drop-off fee and you need a way home.",
+      "Loops can feel repetitive near the end; try returning by a different road than you left."
+     ],
+     "q": "Would you rather end where you started or finish somewhere completely new?",
+     "c": "Look at yesterday's sketch and decide: does it work better as a loop or one-way?"
+    },
+    "de": {
+     "t": "Rundreise oder Einweg?",
+     "g": "Vergleiche Rundrouten mit Einwegreisen und sieh, wie sie Zeit und Kosten beeinflussen.",
+     "p": [
+      "Eine Rundreise endet am Start, das ist einfach mit eigenem Auto oder normalem Mietwagen.",
+      "Eine Einwegreise zeigt mehr Neues, aber Mietfirmen verlangen oft Rückführgebühren und du musst heimkommen.",
+      "Rundreisen wirken am Ende manchmal eintönig; fahr auf anderen Straßen zurück als hin."
+     ],
+     "q": "Würdest du lieber dort enden, wo du gestartet bist, oder an einem ganz neuen Ort?",
+     "c": "Schau auf deine Skizze von gestern: Passt sie besser als Rundreise oder als Einweg?"
+    },
+    "es": {
+     "t": "¿Circular o de ida?",
+     "g": "Compara rutas circulares con viajes solo de ida y cómo afectan al tiempo y al coste.",
+     "p": [
+      "Una ruta circular te devuelve al inicio, algo sencillo con tu coche o un alquiler normal.",
+      "Un viaje de ida cubre más terreno nuevo, pero el alquiler puede cobrar devolución en otro sitio y debes volver.",
+      "Las circulares pueden repetirse al final; intenta volver por otra carretera distinta a la de ida."
+     ],
+     "q": "¿Prefieres terminar donde empezaste o acabar en un lugar totalmente nuevo?",
+     "c": "Mira tu esbozo de ayer y decide: ¿funciona mejor como ruta circular o de ida?"
+    },
+    "fr": {
+     "t": "Boucle ou aller simple ?",
+     "g": "Compare les itinéraires en boucle et les allers simples, et leur effet sur le temps et le coût.",
+     "p": [
+      "Une boucle te ramène au départ, ce qui est simple avec ta voiture ou une location classique.",
+      "Un aller simple couvre plus de nouveautés, mais la location peut facturer un retour ailleurs et il faut rentrer.",
+      "Une boucle peut sembler répétitive à la fin : rentre par une autre route qu'à l'aller."
+     ],
+     "q": "Tu préfères finir là où tu as commencé ou arriver dans un endroit tout nouveau ?",
+     "c": "Regarde ton esquisse d'hier et décide : marche-t-elle mieux en boucle ou en aller simple ?"
+    },
+    "it": {
+     "t": "Anello o sola andata?",
+     "g": "Confronta percorsi ad anello e viaggi di sola andata e il loro effetto su tempi e costi.",
+     "p": [
+      "Un anello ti riporta alla partenza, comodo con la tua auto o un noleggio normale.",
+      "La sola andata copre più posti nuovi, ma il noleggio può costare di più e devi poi tornare a casa.",
+      "Gli anelli possono sembrare ripetitivi alla fine: prova a rientrare per una strada diversa."
+     ],
+     "q": "Preferisci finire dove hai iniziato o arrivare in un posto tutto nuovo?",
+     "c": "Guarda l'abbozzo di ieri e decidi: funziona meglio ad anello o di sola andata?"
+    },
+    "pt": {
+     "t": "Circular ou só de ida?",
+     "g": "Compara percursos circulares com viagens só de ida e o efeito de cada um no tempo e nos custos.",
+     "p": [
+      "Um circuito leva-te de volta ao início, o que é simples com carro próprio ou aluguer normal.",
+      "Uma viagem só de ida mostra mais coisas novas, mas o aluguer pode cobrar entrega noutro local e tens de voltar.",
+      "Os circuitos podem repetir-se no fim: tenta regressar por uma estrada diferente da ida."
+     ],
+     "q": "Preferes acabar onde começaste ou terminar num sítio completamente novo?",
+     "c": "Olha para o esboço de ontem e decide: funciona melhor como circuito ou só de ida?"
+    },
+    "pt_BR": {
+     "t": "Circular ou só de ida?",
+     "g": "Compare roteiros circulares com viagens só de ida e o efeito de cada um no tempo e no custo.",
+     "p": [
+      "Um circuito leva você de volta ao início, algo simples com carro próprio ou aluguel comum.",
+      "A viagem só de ida mostra mais lugares novos, mas a locadora pode cobrar taxa de devolução e você precisa voltar.",
+      "Circuitos podem ficar repetitivos no fim: tente voltar por uma estrada diferente da ida."
+     ],
+     "q": "Você prefere terminar onde começou ou chegar a um lugar totalmente novo?",
+     "c": "Olhe seu rascunho de ontem e decida: funciona melhor como circuito ou só de ida?"
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Realistic daily distances",
+     "g": "See why real average speed is lower than you think and how many driving hours feel good.",
+     "p": [
+      "Towns, curves, traffic and stops pull your average speed well below the speed limits.",
+      "Map apps show driving time only; add extra time for breaks, photos, fuel and meals.",
+      "Many travellers enjoy about three to five hours of driving a day, leaving time to explore."
+     ],
+     "q": "How many hours of driving in a day would still feel fun and relaxed for you?",
+     "c": "Check one leg of your route in a map app, then add 30 percent for stops and surprises."
+    },
+    "de": {
+     "t": "Realistische Tagesetappen",
+     "g": "Sieh, warum der echte Schnitt niedriger ist als gedacht und wie viele Fahrstunden sich gut anfühlen.",
+     "p": [
+      "Orte, Kurven, Verkehr und Pausen drücken deinen Schnitt deutlich unter die Tempolimits.",
+      "Karten-Apps zeigen nur die Fahrzeit; plane Extrazeit für Pausen, Fotos, Tanken und Essen ein.",
+      "Viele Reisende fahren gern etwa drei bis fünf Stunden am Tag und haben dann Zeit zum Entdecken."
+     ],
+     "q": "Wie viele Stunden Fahrt am Tag wären für dich noch entspannt und schön?",
+     "c": "Prüf eine Etappe deiner Route in einer Karten-App und rechne 30 Prozent für Stopps dazu."
+    },
+    "es": {
+     "t": "Distancias diarias realistas",
+     "g": "Descubre por qué la velocidad media real es menor de lo que crees y cuántas horas sientan bien.",
+     "p": [
+      "Pueblos, curvas, tráfico y paradas bajan tu media muy por debajo de los límites de velocidad.",
+      "Las apps de mapas solo muestran el tiempo al volante; añade tiempo para pausas, fotos, gasolina y comidas.",
+      "Muchos viajeros disfrutan con unas tres a cinco horas de conducción al día y tiempo para explorar."
+     ],
+     "q": "¿Cuántas horas de conducción al día te seguirían pareciendo divertidas y relajadas?",
+     "c": "Mira un tramo de tu ruta en una app de mapas y súmale un 30 por ciento para paradas."
+    },
+    "fr": {
+     "t": "Des étapes réalistes",
+     "g": "Comprends pourquoi la vitesse moyenne réelle est plus basse que prévu et combien d'heures font du bien.",
+     "p": [
+      "Villages, virages, circulation et pauses font baisser ta moyenne bien sous les limites de vitesse.",
+      "Les applis de cartes donnent le temps de conduite seul : ajoute du temps pour pauses, photos, plein et repas.",
+      "Beaucoup de voyageurs aiment rouler trois à cinq heures par jour, pour garder du temps pour explorer."
+     ],
+     "q": "Combien d'heures de conduite par jour te sembleraient encore agréables et détendues ?",
+     "c": "Vérifie une étape dans une appli de cartes, puis ajoute 30 pour cent pour les arrêts."
+    },
+    "it": {
+     "t": "Distanze giornaliere realistiche",
+     "g": "Scopri perché la media reale è più bassa del previsto e quante ore di guida fanno stare bene.",
+     "p": [
+      "Paesi, curve, traffico e soste abbassano la media ben sotto i limiti di velocità.",
+      "Le app di mappe mostrano solo il tempo di guida: aggiungi tempo per pause, foto, rifornimenti e pasti.",
+      "Molti viaggiatori guidano volentieri da tre a cinque ore al giorno, lasciando tempo per esplorare."
+     ],
+     "q": "Quante ore di guida al giorno ti sembrerebbero ancora piacevoli e rilassate?",
+     "c": "Controlla una tappa in un'app di mappe e aggiungi il 30 per cento per soste e sorprese."
+    },
+    "pt": {
+     "t": "Distâncias diárias realistas",
+     "g": "Percebe porque a velocidade média real é mais baixa do que pensas e quantas horas sabem bem.",
+     "p": [
+      "Localidades, curvas, trânsito e paragens baixam a tua média muito abaixo dos limites de velocidade.",
+      "As apps de mapas só mostram o tempo de condução: junta tempo para pausas, fotos, combustível e refeições.",
+      "Muitos viajantes gostam de três a cinco horas de condução por dia, com tempo para explorar."
+     ],
+     "q": "Quantas horas de condução por dia ainda te pareceriam divertidas e descontraídas?",
+     "c": "Vê um troço do teu percurso numa app de mapas e junta 30 por cento para paragens."
+    },
+    "pt_BR": {
+     "t": "Distâncias diárias realistas",
+     "g": "Entenda por que a média real é menor do que você imagina e quantas horas ao volante fazem bem.",
+     "p": [
+      "Cidades, curvas, trânsito e paradas derrubam sua média bem abaixo dos limites de velocidade.",
+      "Apps de mapa mostram só o tempo dirigindo; some tempo para pausas, fotos, abastecer e comer.",
+      "Muitos viajantes curtem de três a cinco horas de estrada por dia, com tempo para explorar."
+     ],
+     "q": "Quantas horas dirigindo por dia ainda seriam divertidas e tranquilas para você?",
+     "c": "Veja um trecho da sua rota num app de mapa e some 30 por cento para paradas e surpresas."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The rule of breathing room",
+     "g": "Leave free time in every day for detours, rest and happy surprises along the way.",
+     "p": [
+      "A packed schedule turns every delay into stress; free time turns it into a chance to explore.",
+      "Plan one or two fixed highlights per day and leave the rest open.",
+      "Some of the best moments come from unplanned stops: a beach, a café, a festival in a square."
+     ],
+     "q": "What was the best unplanned moment you ever had on a trip or a day out?",
+     "c": "Look at your draft plan and remove one stop to create an open hour each day."
+    },
+    "de": {
+     "t": "Die Regel vom Freiraum",
+     "g": "Lass an jedem Tag freie Zeit für Umwege, Erholung und schöne Überraschungen unterwegs.",
+     "p": [
+      "Ein voller Plan macht jede Verzögerung zu Stress; freie Zeit macht sie zur Chance zum Entdecken.",
+      "Plane ein oder zwei feste Highlights pro Tag und lass den Rest offen.",
+      "Die schönsten Momente entstehen oft bei ungeplanten Stopps: ein Strand, ein Café, ein Fest auf dem Platz."
+     ],
+     "q": "Was war der schönste ungeplante Moment, den du je auf einer Reise oder einem Ausflug hattest?",
+     "c": "Streich einen Stopp aus deinem Entwurf, damit du jeden Tag eine freie Stunde hast."
+    },
+    "es": {
+     "t": "La regla del margen",
+     "g": "Deja tiempo libre cada día para desvíos, descanso y sorpresas agradables por el camino.",
+     "p": [
+      "Un plan apretado convierte cada retraso en estrés; el tiempo libre lo vuelve una ocasión para explorar.",
+      "Planea uno o dos puntos fijos al día y deja el resto abierto.",
+      "Algunos de los mejores momentos llegan en paradas imprevistas: una playa, un café, una fiesta en la plaza."
+     ],
+     "q": "¿Cuál fue el mejor momento imprevisto que viviste en un viaje o una excursión?",
+     "c": "Mira tu plan provisional y quita una parada para tener una hora libre cada día."
+    },
+    "fr": {
+     "t": "La règle de la marge",
+     "g": "Garde du temps libre chaque jour pour les détours, le repos et les belles surprises en route.",
+     "p": [
+      "Un planning serré transforme chaque retard en stress ; du temps libre en fait une occasion d'explorer.",
+      "Prévois un ou deux temps forts fixes par jour et laisse le reste ouvert.",
+      "Les meilleurs moments viennent souvent d'arrêts imprévus : une plage, un café, une fête sur une place."
+     ],
+     "q": "Quel a été le plus beau moment imprévu de l'un de tes voyages ou sorties ?",
+     "c": "Regarde ton plan provisoire et retire un arrêt pour libérer une heure chaque jour."
+    },
+    "it": {
+     "t": "La regola del respiro",
+     "g": "Lascia ogni giorno tempo libero per deviazioni, riposo e belle sorprese lungo la strada.",
+     "p": [
+      "Un programma fitto trasforma ogni ritardo in stress; il tempo libero lo rende un'occasione per esplorare.",
+      "Pianifica una o due tappe fisse al giorno e lascia il resto aperto.",
+      "I momenti migliori nascono spesso da soste impreviste: una spiaggia, un bar, una festa in piazza."
+     ],
+     "q": "Qual è stato il più bel momento imprevisto che hai vissuto in un viaggio o una gita?",
+     "c": "Guarda il tuo piano provvisorio e togli una sosta per avere un'ora libera ogni giorno."
+    },
+    "pt": {
+     "t": "A regra da folga",
+     "g": "Deixa tempo livre todos os dias para desvios, descanso e boas surpresas pelo caminho.",
+     "p": [
+      "Um plano apertado transforma cada atraso em stress; o tempo livre torna-o numa oportunidade.",
+      "Planeia um ou dois pontos fixos por dia e deixa o resto em aberto.",
+      "Alguns dos melhores momentos vêm de paragens imprevistas: uma praia, um café, uma festa na praça."
+     ],
+     "q": "Qual foi o melhor momento imprevisto que viveste numa viagem ou num passeio?",
+     "c": "Olha para o teu plano provisório e tira uma paragem para teres uma hora livre por dia."
+    },
+    "pt_BR": {
+     "t": "A regra da folga",
+     "g": "Deixe tempo livre todo dia para desvios, descanso e surpresas boas pelo caminho.",
+     "p": [
+      "Uma agenda lotada transforma cada atraso em estresse; o tempo livre vira chance de explorar.",
+      "Planeje um ou dois destaques fixos por dia e deixe o resto em aberto.",
+      "Alguns dos melhores momentos vêm de paradas não planejadas: uma praia, um café, uma festa na praça."
+     ],
+     "q": "Qual foi o melhor momento não planejado que você já viveu numa viagem ou passeio?",
+     "c": "Olhe seu plano provisório e tire uma parada para ganhar uma hora livre por dia."
+    }
+   }
+  }
+ ]
+}

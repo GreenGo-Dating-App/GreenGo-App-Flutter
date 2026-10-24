@@ -1,0 +1,835 @@
+{
+ "topic": "solo_travel",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What to share and what not",
+     "g": "Chat freely with new people, while keeping a few personal details to yourself.",
+     "p": [
+      "Sharing stories, hobbies and travel tips is a great way to connect.",
+      "Keep details like your exact address, room number and full plans private.",
+      "A friendly, vague answer works well: «I am staying near the centre.»"
+     ],
+     "q": "What do you enjoy telling new people about yourself when you travel?",
+     "c": "Prepare two friendly but vague answers to «Where are you staying?»"
+    },
+    "de": {
+     "t": "Was du teilst und was nicht",
+     "g": "Plaudere locker mit neuen Leuten und behalte ein paar persönliche Details für dich.",
+     "p": [
+      "Geschichten, Hobbys und Reisetipps zu teilen verbindet wunderbar.",
+      "Behalte Details wie genaue Adresse, Zimmernummer und deine kompletten Pläne für dich.",
+      "Eine freundliche, vage Antwort passt gut: «Ich wohne in der Nähe des Zentrums.»"
+     ],
+     "q": "Was erzählst du neuen Leuten auf Reisen gern über dich?",
+     "c": "Überleg dir zwei freundliche, vage Antworten auf «Wo wohnst du?»"
+    },
+    "es": {
+     "t": "Qué compartir y qué no",
+     "g": "Charla con libertad con gente nueva, guardando algunos datos personales para ti.",
+     "p": [
+      "Compartir historias, aficiones y consejos de viaje es una forma genial de conectar.",
+      "Guarda en privado datos como tu dirección exacta, el número de habitación y todos tus planes.",
+      "Una respuesta amable y vaga funciona bien: «Me alojo cerca del centro»."
+     ],
+     "q": "¿Qué te gusta contar de ti a la gente nueva cuando viajas?",
+     "c": "Prepara dos respuestas amables pero vagas a «¿Dónde te alojas?»."
+    },
+    "fr": {
+     "t": "Ce qu’on partage, ce qu’on garde",
+     "g": "Discute librement avec de nouvelles personnes tout en gardant quelques détails pour toi.",
+     "p": [
+      "Partager histoires, passions et bons plans est une super façon de créer du lien.",
+      "Garde pour toi ton adresse exacte, ton numéro de chambre et tous tes plans.",
+      "Une réponse sympa et vague marche bien : « Je loge près du centre. »"
+     ],
+     "q": "Qu’aimes-tu raconter de toi aux gens que tu rencontres en voyage ?",
+     "c": "Prépare deux réponses sympas mais vagues à « Tu loges où ? »"
+    },
+    "it": {
+     "t": "Cosa condividere e cosa no",
+     "g": "Chiacchiera liberamente con persone nuove, tenendo per te qualche dettaglio personale.",
+     "p": [
+      "Condividere storie, passioni e consigli di viaggio è un ottimo modo per legare.",
+      "Tieni riservati indirizzo esatto, numero di camera e tutti i tuoi piani.",
+      "Una risposta gentile e vaga funziona bene: «Alloggio vicino al centro.»"
+     ],
+     "q": "Cosa ti piace raccontare di te alle persone nuove in viaggio?",
+     "c": "Prepara due risposte gentili ma vaghe a «Dove alloggi?»"
+    },
+    "pt": {
+     "t": "O que partilhar e o que não",
+     "g": "Conversa à vontade com pessoas novas, guardando alguns dados pessoais para ti.",
+     "p": [
+      "Partilhar histórias, passatempos e dicas de viagem é uma ótima forma de criar ligação.",
+      "Guarda para ti a morada exata, o número do quarto e todos os teus planos.",
+      "Uma resposta simpática e vaga funciona bem: «Estou a ficar perto do centro.»"
+     ],
+     "q": "O que gostas de contar sobre ti às pessoas novas em viagem?",
+     "c": "Prepara duas respostas simpáticas mas vagas para «Onde estás a ficar?»"
+    },
+    "pt_BR": {
+     "t": "O que compartilhar e o que não",
+     "g": "Converse à vontade com gente nova, mas guarde alguns dados pessoais para você.",
+     "p": [
+      "Compartilhar histórias, hobbies e dicas de viagem é ótimo para criar conexão.",
+      "Guarde para você o endereço exato, o número do quarto e todos os seus planos.",
+      "Uma resposta simpática e vaga funciona bem: «Estou ficando perto do centro.»"
+     ],
+     "q": "O que você gosta de contar sobre si para gente nova em viagem?",
+     "c": "Prepare duas respostas simpáticas mas vagas para «Onde você está hospedado?»"
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Social media and location",
+     "g": "Share your adventures online in a way that keeps your real-time location private.",
+     "p": [
+      "Post photos after you leave a place rather than while you are there.",
+      "Turn off automatic location tags on photos and posts.",
+      "Share live updates only with close people, through private messages or close-friend lists."
+     ],
+     "q": "How do you like to share your travel moments with others?",
+     "c": "Check your phone camera and social apps and switch off automatic location tagging."
+    },
+    "de": {
+     "t": "Social Media und Standort",
+     "g": "Teile deine Abenteuer online so, dass dein Echtzeit-Standort privat bleibt.",
+     "p": [
+      "Poste Fotos, nachdem du einen Ort verlassen hast, statt währenddessen.",
+      "Schalte automatische Standort-Tags für Fotos und Beiträge aus.",
+      "Teile Live-Updates nur mit engen Menschen, per Privatnachricht oder Enge-Freunde-Liste."
+     ],
+     "q": "Wie teilst du deine Reisemomente am liebsten mit anderen?",
+     "c": "Prüfe Kamera und Social-Apps und schalte das automatische Standort-Tagging aus."
+    },
+    "es": {
+     "t": "Redes sociales y ubicación",
+     "g": "Comparte tus aventuras en redes de forma que tu ubicación en tiempo real siga siendo privada.",
+     "p": [
+      "Publica las fotos después de irte de un sitio, no mientras estás allí.",
+      "Desactiva el etiquetado automático de ubicación en fotos y publicaciones.",
+      "Comparte actualizaciones en directo solo con personas cercanas, por mensaje privado o lista de amigos íntimos."
+     ],
+     "q": "¿Cómo te gusta compartir tus momentos de viaje con los demás?",
+     "c": "Revisa la cámara y tus redes y desactiva el etiquetado automático de ubicación."
+    },
+    "fr": {
+     "t": "Réseaux sociaux et localisation",
+     "g": "Partage tes aventures en ligne tout en gardant ta position en temps réel privée.",
+     "p": [
+      "Publie tes photos après avoir quitté un lieu plutôt que sur le moment.",
+      "Désactive la géolocalisation automatique des photos et des publications.",
+      "Réserve les nouvelles en direct à tes proches, par message privé ou liste d’amis proches."
+     ],
+     "q": "Comment aimes-tu partager tes moments de voyage ?",
+     "c": "Vérifie l’appareil photo et tes applis sociales et coupe la géolocalisation automatique."
+    },
+    "it": {
+     "t": "Social e posizione",
+     "g": "Condividi le tue avventure online mantenendo privata la tua posizione in tempo reale.",
+     "p": [
+      "Pubblica le foto dopo aver lasciato un posto, non mentre ci sei.",
+      "Disattiva i tag automatici di posizione su foto e post.",
+      "Condividi aggiornamenti in diretta solo con persone vicine, in privato o con la lista amici stretti."
+     ],
+     "q": "Come ti piace condividere i tuoi momenti di viaggio?",
+     "c": "Controlla fotocamera e app social e disattiva il tag automatico della posizione."
+    },
+    "pt": {
+     "t": "Redes sociais e localização",
+     "g": "Partilha as tuas aventuras online de forma a manter privada a tua localização em tempo real.",
+     "p": [
+      "Publica as fotos depois de saíres de um sítio, não enquanto lá estás.",
+      "Desliga a localização automática em fotos e publicações.",
+      "Partilha novidades ao vivo só com pessoas próximas, por mensagem privada ou lista de amigos chegados."
+     ],
+     "q": "Como gostas de partilhar os teus momentos de viagem?",
+     "c": "Verifica a câmara e as redes sociais e desliga a localização automática."
+    },
+    "pt_BR": {
+     "t": "Redes sociais e localização",
+     "g": "Compartilhe suas aventuras online mantendo privada sua localização em tempo real.",
+     "p": [
+      "Poste as fotos depois de sair do lugar, não enquanto está lá.",
+      "Desative a marcação automática de localização em fotos e posts.",
+      "Compartilhe atualizações ao vivo só com pessoas próximas, por mensagem privada ou lista de amigos próximos."
+     ],
+     "q": "Como você gosta de compartilhar seus momentos de viagem?",
+     "c": "Confira a câmera e as redes sociais e desative a marcação automática de localização."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Handling money abroad",
+     "g": "Mix cards and cash smartly, and tell your bank before you travel.",
+     "p": [
+      "Carry two cards from different accounts, in case one is blocked or lost.",
+      "Keep a little local cash for small shops, markets and transport.",
+      "Tell your bank your travel dates or check its app, so payments are not blocked."
+     ],
+     "q": "Do you usually pay by card or cash when you travel?",
+     "c": "Check your bank app for travel settings, card limits and foreign fees."
+    },
+    "de": {
+     "t": "Mit Geld im Ausland umgehen",
+     "g": "Kombiniere Karten und Bargeld klug und informiere deine Bank vor der Reise.",
+     "p": [
+      "Nimm zwei Karten von verschiedenen Konten mit, falls eine gesperrt wird oder verloren geht.",
+      "Hab etwas Bargeld in Landeswährung für kleine Läden, Märkte und Verkehr.",
+      "Teile deiner Bank die Reisedaten mit oder prüfe ihre App, damit nichts gesperrt wird."
+     ],
+     "q": "Zahlst du auf Reisen meist mit Karte oder bar?",
+     "c": "Prüfe in deiner Bank-App Reiseeinstellungen, Kartenlimits und Auslandsgebühren."
+    },
+    "es": {
+     "t": "Manejar el dinero en el extranjero",
+     "g": "Combina tarjetas y efectivo con cabeza, y avisa a tu banco antes de viajar.",
+     "p": [
+      "Lleva dos tarjetas de cuentas distintas por si una se bloquea o se pierde.",
+      "Ten algo de efectivo local para tiendas pequeñas, mercados y transporte.",
+      "Avisa al banco de tus fechas o revisa su app para que no bloqueen los pagos."
+     ],
+     "q": "¿Sueles pagar con tarjeta o en efectivo cuando viajas?",
+     "c": "Revisa en la app del banco los ajustes de viaje, los límites y las comisiones en el extranjero."
+    },
+    "fr": {
+     "t": "Gérer l’argent à l’étranger",
+     "g": "Combine cartes et espèces intelligemment, et préviens ta banque avant de partir.",
+     "p": [
+      "Emporte deux cartes de comptes différents, au cas où l’une serait bloquée ou perdue.",
+      "Garde un peu d’espèces locales pour les petits commerces, marchés et transports.",
+      "Préviens ta banque de tes dates ou vérifie son appli pour éviter un blocage."
+     ],
+     "q": "Paies-tu plutôt par carte ou en espèces en voyage ?",
+     "c": "Vérifie dans ton appli bancaire les réglages voyage, les plafonds et les frais à l’étranger."
+    },
+    "it": {
+     "t": "Gestire i soldi all’estero",
+     "g": "Combina carte e contanti con intelligenza e avvisa la banca prima di partire.",
+     "p": [
+      "Porta due carte di conti diversi, nel caso una venga bloccata o persa.",
+      "Tieni un po’ di contanti locali per negozietti, mercati e trasporti.",
+      "Comunica alla banca le date del viaggio o controlla la sua app, così i pagamenti non si bloccano."
+     ],
+     "q": "In viaggio paghi di solito con carta o in contanti?",
+     "c": "Controlla nell’app della banca impostazioni di viaggio, limiti e commissioni estere."
+    },
+    "pt": {
+     "t": "Gerir o dinheiro no estrangeiro",
+     "g": "Combina cartões e dinheiro com cabeça e avisa o banco antes de viajar.",
+     "p": [
+      "Leva dois cartões de contas diferentes, caso um seja bloqueado ou perdido.",
+      "Tem algum dinheiro local para lojas pequenas, mercados e transportes.",
+      "Avisa o banco das datas da viagem ou vê a app, para os pagamentos não serem bloqueados."
+     ],
+     "q": "Costumas pagar com cartão ou em dinheiro quando viajas?",
+     "c": "Vê na app do banco as definições de viagem, limites e comissões no estrangeiro."
+    },
+    "pt_BR": {
+     "t": "Lidando com dinheiro no exterior",
+     "g": "Combine cartões e dinheiro com inteligência e avise o banco antes de viajar.",
+     "p": [
+      "Leve dois cartões de contas diferentes, caso um seja bloqueado ou perdido.",
+      "Tenha um pouco de dinheiro local para lojinhas, feiras e transporte.",
+      "Avise o banco das datas da viagem ou confira o app, para os pagamentos não serem bloqueados."
+     ],
+     "q": "Você costuma pagar com cartão ou em dinheiro quando viaja?",
+     "c": "Confira no app do banco as opções de viagem, limites e tarifas no exterior."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using ATMs safely",
+     "g": "Withdraw cash with confidence by choosing the right machine and shielding your PIN.",
+     "p": [
+      "Choose ATMs inside banks, shopping centres or busy, well-lit places.",
+      "Cover the keypad with your hand and check the card slot looks normal.",
+      "If the machine offers to convert into your home currency, choosing the local currency is usually cheaper."
+     ],
+     "q": "Have you ever used an ATM abroad? How did it go?",
+     "c": "Next time you use an ATM, practise shielding your PIN with your hand."
+    },
+    "de": {
+     "t": "Geldautomaten sicher nutzen",
+     "g": "Heb mit Sicherheit Geld ab, indem du den richtigen Automaten wählst und deine PIN verdeckst.",
+     "p": [
+      "Wähle Automaten in Banken, Einkaufszentren oder an belebten, hellen Orten.",
+      "Verdecke das Tastenfeld mit der Hand und prüfe, ob der Kartenschlitz normal aussieht.",
+      "Bietet der Automat Umrechnung in deine Heimatwährung an, ist die Landeswährung meist günstiger."
+     ],
+     "q": "Hast du schon einmal im Ausland Geld abgehoben? Wie lief es?",
+     "c": "Übe beim nächsten Abheben, deine PIN mit der Hand zu verdecken."
+    },
+    "es": {
+     "t": "Usar cajeros con seguridad",
+     "g": "Saca dinero con confianza eligiendo bien el cajero y tapando tu PIN.",
+     "p": [
+      "Elige cajeros dentro de bancos, centros comerciales o lugares concurridos e iluminados.",
+      "Tapa el teclado con la mano y comprueba que la ranura de la tarjeta parezca normal.",
+      "Si el cajero ofrece convertir a tu moneda, elegir la moneda local suele salir más barato."
+     ],
+     "q": "¿Alguna vez usaste un cajero en el extranjero? ¿Qué tal fue?",
+     "c": "La próxima vez que uses un cajero, practica tapar el PIN con la mano."
+    },
+    "fr": {
+     "t": "Utiliser un distributeur en sécurité",
+     "g": "Retire de l’argent sereinement en choisissant le bon distributeur et en cachant ton code.",
+     "p": [
+      "Choisis des distributeurs dans les banques, les centres commerciaux ou des lieux animés et éclairés.",
+      "Cache le clavier avec ta main et vérifie que la fente de la carte a l’air normale.",
+      "Si l’appareil propose de convertir dans ta devise, choisir la monnaie locale est souvent moins cher."
+     ],
+     "q": "As-tu déjà retiré de l’argent à l’étranger ? Comment ça s’est passé ?",
+     "c": "La prochaine fois, entraîne-toi à cacher ton code avec ta main."
+    },
+    "it": {
+     "t": "Usare il bancomat in sicurezza",
+     "g": "Preleva con fiducia scegliendo lo sportello giusto e coprendo il PIN.",
+     "p": [
+      "Scegli sportelli dentro banche, centri commerciali o luoghi frequentati e illuminati.",
+      "Copri la tastiera con la mano e controlla che la fessura della carta sembri normale.",
+      "Se lo sportello propone la conversione nella tua valuta, scegliere quella locale di solito costa meno."
+     ],
+     "q": "Hai mai prelevato all’estero? Com’è andata?",
+     "c": "La prossima volta che prelevi, esercitati a coprire il PIN con la mano."
+    },
+    "pt": {
+     "t": "Usar o multibanco com segurança",
+     "g": "Levanta dinheiro com confiança escolhendo a máquina certa e tapando o PIN.",
+     "p": [
+      "Escolhe caixas dentro de bancos, centros comerciais ou sítios movimentados e iluminados.",
+      "Tapa o teclado com a mão e confirma que a ranhura do cartão parece normal.",
+      "Se a máquina propuser converter para a tua moeda, escolher a moeda local costuma sair mais barato."
+     ],
+     "q": "Já levantaste dinheiro no estrangeiro? Como correu?",
+     "c": "Da próxima vez que usares uma caixa, pratica tapar o PIN com a mão."
+    },
+    "pt_BR": {
+     "t": "Usando caixas eletrônicos com segurança",
+     "g": "Saque dinheiro com confiança escolhendo bem o caixa e escondendo sua senha.",
+     "p": [
+      "Escolha caixas dentro de bancos, shoppings ou lugares movimentados e iluminados.",
+      "Cubra o teclado com a mão e confira se a entrada do cartão parece normal.",
+      "Se o caixa oferecer converter para sua moeda, escolher a moeda local costuma sair mais barato."
+     ],
+     "q": "Você já sacou dinheiro no exterior? Como foi?",
+     "c": "Da próxima vez que usar um caixa, pratique cobrir a senha com a mão."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tipping customs",
+     "g": "Learn local tipping habits before you go, because they vary a lot around the world.",
+     "p": [
+      "In some countries tips are expected; in others service is included or tipping is unusual.",
+      "Check whether a service charge is already on the bill.",
+      "When unsure, look up a short guide or ask your accommodation staff."
+     ],
+     "q": "What are the tipping habits where you live?",
+     "c": "Look up the tipping customs for restaurants and taxis in a country you want to visit."
+    },
+    "de": {
+     "t": "Trinkgeldbräuche",
+     "g": "Lerne die Trinkgeldgewohnheiten vor der Reise, denn sie sind weltweit sehr unterschiedlich.",
+     "p": [
+      "In manchen Ländern wird Trinkgeld erwartet, in anderen ist es inklusive oder unüblich.",
+      "Prüfe, ob eine Servicegebühr schon auf der Rechnung steht.",
+      "Bist du unsicher, lies einen kurzen Ratgeber oder frag das Personal deiner Unterkunft."
+     ],
+     "q": "Wie ist es mit dem Trinkgeld dort, wo du lebst?",
+     "c": "Finde heraus, wie man in einem Wunschland in Restaurants und Taxis Trinkgeld gibt."
+    },
+    "es": {
+     "t": "Costumbres de propina",
+     "g": "Aprende las costumbres locales de propina antes de ir, porque cambian mucho de un país a otro.",
+     "p": [
+      "En algunos países se espera propina; en otros el servicio está incluido o no es habitual.",
+      "Revisa si la cuenta ya incluye un cargo por servicio.",
+      "Si dudas, consulta una guía breve o pregunta en tu alojamiento."
+     ],
+     "q": "¿Cómo son las costumbres de propina donde vives?",
+     "c": "Busca cómo se da propina en restaurantes y taxis de un país que quieras visitar."
+    },
+    "fr": {
+     "t": "Les usages du pourboire",
+     "g": "Renseigne-toi sur le pourboire avant de partir, car les habitudes varient beaucoup selon les pays.",
+     "p": [
+      "Dans certains pays il est attendu ; ailleurs le service est compris ou le pourboire rare.",
+      "Vérifie si des frais de service figurent déjà sur l’addition.",
+      "En cas de doute, consulte un petit guide ou demande à ton hébergement."
+     ],
+     "q": "Quelles sont les habitudes de pourboire là où tu vis ?",
+     "c": "Cherche les usages du pourboire au restaurant et en taxi dans un pays qui te tente."
+    },
+    "it": {
+     "t": "Le usanze della mancia",
+     "g": "Scopri le abitudini locali sulla mancia prima di partire, perché cambiano molto nel mondo.",
+     "p": [
+      "In alcuni paesi la mancia è attesa; in altri il servizio è incluso o è poco comune.",
+      "Controlla se sul conto c’è già un costo di servizio.",
+      "Se hai dubbi, consulta una breve guida o chiedi al personale dell’alloggio."
+     ],
+     "q": "Quali sono le abitudini sulla mancia dove vivi?",
+     "c": "Cerca le usanze della mancia per ristoranti e taxi in un paese che vuoi visitare."
+    },
+    "pt": {
+     "t": "Hábitos de gorjeta",
+     "g": "Aprende os hábitos de gorjeta locais antes de ir, porque variam muito no mundo.",
+     "p": [
+      "Nalguns países espera-se gorjeta; noutros o serviço está incluído ou não é habitual.",
+      "Confirma se a conta já inclui taxa de serviço.",
+      "Na dúvida, consulta um pequeno guia ou pergunta no alojamento."
+     ],
+     "q": "Como são os hábitos de gorjeta onde vives?",
+     "c": "Procura como se dá gorjeta em restaurantes e táxis num país que queres visitar."
+    },
+    "pt_BR": {
+     "t": "Costumes de gorjeta",
+     "g": "Aprenda os costumes locais de gorjeta antes de ir, porque eles mudam muito pelo mundo.",
+     "p": [
+      "Em alguns países a gorjeta é esperada; em outros o serviço já está incluído ou não é comum.",
+      "Confira se a conta já tem taxa de serviço.",
+      "Na dúvida, consulte um guia rápido ou pergunte na hospedagem."
+     ],
+     "q": "Como são os costumes de gorjeta onde você mora?",
+     "c": "Pesquise como se dá gorjeta em restaurantes e táxis num país que quer visitar."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking locals for help",
+     "g": "Learn who to ask when you need directions or help, and how to ask with a smile.",
+     "p": [
+      "Shop staff, café workers, families and officials are usually great people to ask.",
+      "Start with a greeting in the local language, then ask a short, clear question.",
+      "Show the address or map on your phone to make it easy for both of you."
+     ],
+     "q": "Do you find it easy to ask strangers for help?",
+     "c": "Learn how to say «Excuse me, where is…?» in a language you would like to use."
+    },
+    "de": {
+     "t": "Einheimische um Hilfe bitten",
+     "g": "Lerne, wen du nach dem Weg oder um Hilfe fragst und wie du mit einem Lächeln fragst.",
+     "p": [
+      "Verkaufspersonal, Café-Mitarbeiter, Familien und Beamte sind meist gute Ansprechpartner.",
+      "Beginne mit einem Gruß in der Landessprache und stell dann eine kurze, klare Frage.",
+      "Zeig Adresse oder Karte auf dem Handy, das macht es für beide leichter."
+     ],
+     "q": "Fällt es dir leicht, Fremde um Hilfe zu bitten?",
+     "c": "Lerne «Entschuldigung, wo ist…?» in einer Sprache, die du gern nutzen würdest."
+    },
+    "es": {
+     "t": "Pedir ayuda a la gente local",
+     "g": "Aprende a quién preguntar cuando necesites indicaciones o ayuda, y cómo hacerlo con una sonrisa.",
+     "p": [
+      "Dependientes, camareros, familias y funcionarios suelen ser buenas personas a quienes preguntar.",
+      "Empieza con un saludo en el idioma local y haz una pregunta corta y clara.",
+      "Enseña la dirección o el mapa en el móvil para facilitarlo a ambos."
+     ],
+     "q": "¿Te resulta fácil pedir ayuda a desconocidos?",
+     "c": "Aprende a decir «Perdone, ¿dónde está…?» en un idioma que te gustaría usar."
+    },
+    "fr": {
+     "t": "Demander de l’aide aux habitants",
+     "g": "Apprends à qui demander ton chemin ou de l’aide, et comment le faire avec le sourire.",
+     "p": [
+      "Commerçants, serveurs, familles et agents officiels sont souvent les meilleures personnes à qui demander.",
+      "Commence par saluer dans la langue locale, puis pose une question courte et claire.",
+      "Montre l’adresse ou la carte sur ton téléphone pour simplifier les choses."
+     ],
+     "q": "Est-ce facile pour toi de demander de l’aide à des inconnus ?",
+     "c": "Apprends à dire « Excusez-moi, où est… ? » dans une langue que tu aimerais utiliser."
+    },
+    "it": {
+     "t": "Chiedere aiuto alla gente del posto",
+     "g": "Impara a chi chiedere indicazioni o aiuto, e come farlo con un sorriso.",
+     "p": [
+      "Commessi, baristi, famiglie e personale ufficiale di solito sono ottime persone a cui chiedere.",
+      "Inizia con un saluto nella lingua locale, poi fai una domanda breve e chiara.",
+      "Mostra l’indirizzo o la mappa sul telefono per rendere tutto più facile."
+     ],
+     "q": "Per te è facile chiedere aiuto agli sconosciuti?",
+     "c": "Impara a dire «Mi scusi, dov’è…?» in una lingua che ti piacerebbe usare."
+    },
+    "pt": {
+     "t": "Pedir ajuda aos locais",
+     "g": "Aprende a quem perguntar quando precisas de indicações ou ajuda, e como pedir com um sorriso.",
+     "p": [
+      "Funcionários de lojas e cafés, famílias e agentes oficiais costumam ser ótimas pessoas a quem perguntar.",
+      "Começa com um cumprimento na língua local e faz uma pergunta curta e clara.",
+      "Mostra a morada ou o mapa no telemóvel para facilitar a ambos."
+     ],
+     "q": "Achas fácil pedir ajuda a desconhecidos?",
+     "c": "Aprende a dizer «Com licença, onde fica…?» numa língua que gostavas de usar."
+    },
+    "pt_BR": {
+     "t": "Pedindo ajuda aos moradores",
+     "g": "Aprenda a quem perguntar quando precisar de informação ou ajuda, e como pedir com um sorriso.",
+     "p": [
+      "Atendentes de lojas e cafés, famílias e funcionários oficiais costumam ser ótimas pessoas para perguntar.",
+      "Comece com um cumprimento no idioma local e faça uma pergunta curta e clara.",
+      "Mostre o endereço ou o mapa no celular para facilitar para os dois."
+     ],
+     "q": "Você acha fácil pedir ajuda a desconhecidos?",
+     "c": "Aprenda a dizer «Com licença, onde fica…?» num idioma que gostaria de usar."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "If you get lost",
+     "g": "Know exactly what to do if you get lost, so it becomes a small adventure, not a stress.",
+     "p": [
+      "Stop, breathe and stay calm; getting lost happens to every traveller.",
+      "Step into a café or shop, then check your offline map and your saved accommodation.",
+      "Ask staff for directions or show them the address you saved."
+     ],
+     "q": "Have you ever got lost somewhere and found something wonderful?",
+     "c": "Practise finding your way back to a saved point using only your offline map."
+    },
+    "de": {
+     "t": "Wenn du dich verläufst",
+     "g": "Wisse genau, was zu tun ist, wenn du dich verläufst, damit es ein kleines Abenteuer wird.",
+     "p": [
+      "Bleib stehen, atme durch und bleib ruhig; Verlaufen passiert allen Reisenden.",
+      "Geh in ein Café oder einen Laden und prüfe die Offline-Karte und deine gespeicherte Unterkunft.",
+      "Frag das Personal nach dem Weg oder zeig die gespeicherte Adresse."
+     ],
+     "q": "Hast du dich schon einmal verlaufen und dabei etwas Schönes entdeckt?",
+     "c": "Übe, nur mit der Offline-Karte zu einem gespeicherten Punkt zurückzufinden."
+    },
+    "es": {
+     "t": "Si te pierdes",
+     "g": "Ten claro qué hacer si te pierdes, para que sea una pequeña aventura y no un agobio.",
+     "p": [
+      "Para, respira y mantén la calma: perderse le pasa a todo viajero.",
+      "Entra en un café o una tienda y revisa tu mapa sin conexión y el alojamiento guardado.",
+      "Pide indicaciones al personal o enséñale la dirección guardada."
+     ],
+     "q": "¿Alguna vez te perdiste y encontraste algo maravilloso?",
+     "c": "Practica volver a un punto guardado usando solo tu mapa sin conexión."
+    },
+    "fr": {
+     "t": "Si tu te perds",
+     "g": "Sache exactement quoi faire si tu te perds, pour que ce soit une petite aventure et non un stress.",
+     "p": [
+      "Arrête-toi, respire et reste calme : se perdre arrive à tous les voyageurs.",
+      "Entre dans un café ou une boutique, puis consulte ta carte hors ligne et ton logement enregistré.",
+      "Demande ton chemin au personnel ou montre l’adresse enregistrée."
+     ],
+     "q": "T’es-tu déjà perdu quelque part en découvrant quelque chose de merveilleux ?",
+     "c": "Entraîne-toi à retrouver un lieu enregistré avec ta seule carte hors ligne."
+    },
+    "it": {
+     "t": "Se ti perdi",
+     "g": "Sappi esattamente cosa fare se ti perdi, così diventa una piccola avventura e non uno stress.",
+     "p": [
+      "Fermati, respira e resta calmo: perdersi capita a ogni viaggiatore.",
+      "Entra in un bar o in un negozio, poi controlla la mappa offline e l’alloggio salvato.",
+      "Chiedi indicazioni al personale o mostra l’indirizzo salvato."
+     ],
+     "q": "Ti sei mai perso da qualche parte scoprendo qualcosa di meraviglioso?",
+     "c": "Esercitati a tornare a un punto salvato usando solo la mappa offline."
+    },
+    "pt": {
+     "t": "Se te perderes",
+     "g": "Sabe exatamente o que fazer se te perderes, para ser uma pequena aventura e não um stress.",
+     "p": [
+      "Para, respira e mantém a calma: perder-se acontece a qualquer viajante.",
+      "Entra num café ou numa loja e vê o mapa offline e o alojamento guardado.",
+      "Pede indicações ao pessoal ou mostra a morada guardada."
+     ],
+     "q": "Já te perdeste num sítio e encontraste algo maravilhoso?",
+     "c": "Pratica voltar a um ponto guardado usando só o mapa offline."
+    },
+    "pt_BR": {
+     "t": "Se você se perder",
+     "g": "Saiba exatamente o que fazer se se perder, para virar uma pequena aventura e não um estresse.",
+     "p": [
+      "Pare, respire e fique calmo: se perder acontece com todo viajante.",
+      "Entre num café ou loja e confira o mapa offline e a hospedagem salva.",
+      "Peça informação aos atendentes ou mostre o endereço salvo."
+     ],
+     "q": "Você já se perdeu num lugar e encontrou algo maravilhoso?",
+     "c": "Pratique voltar a um ponto salvo usando só o mapa offline."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "If you lose something",
+     "g": "Know the steps to take if your phone, card or passport goes missing, so you can act calmly.",
+     "p": [
+      "Card: block it right away in your bank app or by phone, then use your backup card.",
+      "Phone: use another device to locate or lock it, and tell your trusted person.",
+      "Passport: report it to the local police and contact your embassy with your copies."
+     ],
+     "q": "Which item would you find hardest to lose on a trip?",
+     "c": "Write down how to block your cards and save it somewhere outside your phone."
+    },
+    "de": {
+     "t": "Wenn du etwas verlierst",
+     "g": "Kenne die Schritte, wenn Handy, Karte oder Pass fehlen, damit du ruhig handeln kannst.",
+     "p": [
+      "Karte: sofort in der Bank-App oder per Telefon sperren, dann die Ersatzkarte nutzen.",
+      "Handy: über ein anderes Gerät orten oder sperren und deiner Vertrauensperson Bescheid geben.",
+      "Pass: bei der örtlichen Polizei melden und mit deinen Kopien die Botschaft kontaktieren."
+     ],
+     "q": "Welchen Gegenstand würdest du auf Reisen am ungernsten verlieren?",
+     "c": "Notiere, wie du deine Karten sperrst, und bewahre es außerhalb des Handys auf."
+    },
+    "es": {
+     "t": "Si pierdes algo",
+     "g": "Conoce los pasos si pierdes el móvil, una tarjeta o el pasaporte, para actuar con calma.",
+     "p": [
+      "Tarjeta: bloquéala enseguida en la app del banco o por teléfono y usa la de reserva.",
+      "Móvil: localízalo o bloquéalo desde otro dispositivo y avisa a tu persona de confianza.",
+      "Pasaporte: denúncialo a la policía local y contacta con tu embajada con tus copias."
+     ],
+     "q": "¿Qué objeto te costaría más perder en un viaje?",
+     "c": "Apunta cómo bloquear tus tarjetas y guárdalo en algún sitio fuera del móvil."
+    },
+    "fr": {
+     "t": "Si tu perds quelque chose",
+     "g": "Connais les étapes si ton téléphone, ta carte ou ton passeport disparaît, pour agir calmement.",
+     "p": [
+      "Carte : fais-la opposer tout de suite via l’appli ou par téléphone, puis utilise ta carte de secours.",
+      "Téléphone : localise-le ou verrouille-le depuis un autre appareil et préviens ta personne de confiance.",
+      "Passeport : déclare la perte à la police locale et contacte ton ambassade avec tes copies."
+     ],
+     "q": "Quel objet serait le plus difficile à perdre pour toi en voyage ?",
+     "c": "Note comment faire opposition sur tes cartes et garde-le ailleurs que dans ton téléphone."
+    },
+    "it": {
+     "t": "Se perdi qualcosa",
+     "g": "Conosci i passi da fare se perdi telefono, carta o passaporto, per agire con calma.",
+     "p": [
+      "Carta: bloccala subito dall’app della banca o per telefono, poi usa quella di riserva.",
+      "Telefono: localizzalo o bloccalo da un altro dispositivo e avvisa la tua persona di fiducia.",
+      "Passaporto: denuncia lo smarrimento alla polizia locale e contatta l’ambasciata con le copie."
+     ],
+     "q": "Quale oggetto ti dispiacerebbe di più perdere in viaggio?",
+     "c": "Annota come bloccare le tue carte e conservalo in un posto diverso dal telefono."
+    },
+    "pt": {
+     "t": "Se perderes alguma coisa",
+     "g": "Conhece os passos se perderes o telemóvel, um cartão ou o passaporte, para agires com calma.",
+     "p": [
+      "Cartão: bloqueia-o logo na app do banco ou por telefone e usa o de reserva.",
+      "Telemóvel: localiza-o ou bloqueia-o a partir de outro aparelho e avisa a tua pessoa de confiança.",
+      "Passaporte: participa à polícia local e contacta a embaixada com as tuas cópias."
+     ],
+     "q": "Que objeto te custaria mais perder numa viagem?",
+     "c": "Escreve como bloquear os teus cartões e guarda isso fora do telemóvel."
+    },
+    "pt_BR": {
+     "t": "Se você perder algo",
+     "g": "Conheça os passos se perder o celular, um cartão ou o passaporte, para agir com calma.",
+     "p": [
+      "Cartão: bloqueie na hora pelo app do banco ou por telefone e use o reserva.",
+      "Celular: localize ou bloqueie por outro aparelho e avise sua pessoa de confiança.",
+      "Passaporte: registre na polícia local e procure sua embaixada com as cópias."
+     ],
+     "q": "Que objeto você mais sentiria perder numa viagem?",
+     "c": "Anote como bloquear seus cartões e guarde isso fora do celular."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feeling confident by day three",
+     "g": "Understand why the first days feel strange and how your confidence grows each day.",
+     "p": [
+      "Day one is about arriving: new sounds, new streets and a bit of tiredness are normal.",
+      "By day two or three, you know your area, your café and how to get around.",
+      "Celebrate small wins, like ordering food or taking the metro alone."
+     ],
+     "q": "What small win would make you proud on a solo trip?",
+     "c": "Write down one small thing you did alone recently that made you feel proud."
+    },
+    "de": {
+     "t": "Am dritten Tag selbstbewusst",
+     "g": "Verstehe, warum sich die ersten Tage fremd anfühlen und wie dein Selbstvertrauen täglich wächst.",
+     "p": [
+      "Am ersten Tag kommst du an: neue Geräusche, neue Straßen und etwas Müdigkeit sind normal.",
+      "Am zweiten oder dritten Tag kennst du dein Viertel, dein Café und den Weg durch die Stadt.",
+      "Feiere kleine Erfolge, wie allein Essen bestellen oder U-Bahn fahren."
+     ],
+     "q": "Welcher kleine Erfolg würde dich auf einer Solo-Reise stolz machen?",
+     "c": "Notiere etwas Kleines, das du kürzlich allein gemacht hast und auf das du stolz bist."
+    },
+    "es": {
+     "t": "Seguridad al tercer día",
+     "g": "Entiende por qué los primeros días se sienten raros y cómo tu confianza crece cada día.",
+     "p": [
+      "El primer día es para llegar: sonidos nuevos, calles nuevas y algo de cansancio son normales.",
+      "Al segundo o tercer día ya conoces tu zona, tu café y cómo moverte.",
+      "Celebra los pequeños logros, como pedir comida o coger el metro solo."
+     ],
+     "q": "¿Qué pequeño logro te haría sentir orgullo en un viaje en solitario?",
+     "c": "Apunta algo pequeño que hayas hecho solo hace poco y que te hizo sentir orgullo."
+    },
+    "fr": {
+     "t": "Confiant dès le troisième jour",
+     "g": "Comprends pourquoi les premiers jours semblent étranges et comment ta confiance grandit chaque jour.",
+     "p": [
+      "Le premier jour, tu arrives : nouveaux bruits, nouvelles rues et un peu de fatigue, c’est normal.",
+      "Dès le deuxième ou troisième jour, tu connais ton quartier, ton café et comment circuler.",
+      "Célèbre les petites victoires, comme commander à manger ou prendre le métro seul."
+     ],
+     "q": "Quelle petite victoire te rendrait fier en voyage solo ?",
+     "c": "Note une petite chose que tu as faite seul récemment et qui t’a rendu fier."
+    },
+    "it": {
+     "t": "Sicuri già dal terzo giorno",
+     "g": "Capisci perché i primi giorni sembrano strani e come la fiducia cresce ogni giorno.",
+     "p": [
+      "Il primo giorno è per arrivare: suoni nuovi, strade nuove e un po’ di stanchezza sono normali.",
+      "Al secondo o terzo giorno conosci la tua zona, il tuo bar e come muoverti.",
+      "Festeggia le piccole vittorie, come ordinare da mangiare o prendere la metro da solo."
+     ],
+     "q": "Quale piccola vittoria ti renderebbe orgoglioso in un viaggio da solo?",
+     "c": "Scrivi una piccola cosa che hai fatto da solo di recente e che ti ha reso orgoglioso."
+    },
+    "pt": {
+     "t": "Confiante ao terceiro dia",
+     "g": "Percebe porque os primeiros dias parecem estranhos e como a tua confiança cresce todos os dias.",
+     "p": [
+      "O primeiro dia é para chegar: sons novos, ruas novas e algum cansaço são normais.",
+      "Ao segundo ou terceiro dia já conheces a tua zona, o teu café e como te deslocares.",
+      "Celebra as pequenas vitórias, como pedir comida ou apanhar o metro sozinho."
+     ],
+     "q": "Que pequena vitória te deixaria orgulhoso numa viagem a solo?",
+     "c": "Escreve uma pequena coisa que fizeste sozinho há pouco e que te deixou orgulhoso."
+    },
+    "pt_BR": {
+     "t": "Confiante no terceiro dia",
+     "g": "Entenda por que os primeiros dias parecem estranhos e como sua confiança cresce a cada dia.",
+     "p": [
+      "O primeiro dia é para chegar: sons novos, ruas novas e um pouco de cansaço são normais.",
+      "No segundo ou terceiro dia você já conhece seu bairro, seu café e como circular.",
+      "Comemore as pequenas vitórias, como pedir comida ou pegar o metrô sozinho."
+     ],
+     "q": "Que pequena vitória deixaria você orgulhoso numa viagem solo?",
+     "c": "Anote uma coisinha que você fez sozinho recentemente e que te deixou orgulhoso."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: arriving and staying safe",
+     "g": "Recap your arrival routines, transport skills and everyday safety habits.",
+     "p": [
+      "Arrival: daylight if possible, official transport, a calm check-in and a first neighbourhood walk.",
+      "Getting around: public transport, offline maps, smart taxi habits and asking locals for help.",
+      "Everyday safety: intuition, secure valuables, polite no, room habits and a plan for losses."
+     ],
+     "q": "Which habit from this month do you think you will use the most?",
+     "c": "Make a one-page arrival and safety cheat sheet with your five favourite tips."
+    },
+    "de": {
+     "t": "Rückblick: ankommen und sicher bleiben",
+     "g": "Fasse deine Ankunftsroutinen, Verkehrskenntnisse und Sicherheitsgewohnheiten zusammen.",
+     "p": [
+      "Ankunft: möglichst bei Tag, offizielle Verkehrsmittel, ruhiges Einchecken und ein erster Rundgang.",
+      "Unterwegs: Nahverkehr, Offline-Karten, kluge Taxi-Gewohnheiten und Einheimische fragen.",
+      "Alltagssicherheit: Intuition, sichere Wertsachen, höfliches Nein, Zimmerroutinen und ein Verlustplan."
+     ],
+     "q": "Welche Gewohnheit aus diesem Monat wirst du wohl am meisten nutzen?",
+     "c": "Erstelle einen Spickzettel für Ankunft und Sicherheit mit deinen fünf Lieblingstipps."
+    },
+    "es": {
+     "t": "Repaso: llegar y viajar seguro",
+     "g": "Repasa tus rutinas de llegada, tu manejo del transporte y tus hábitos de seguridad diarios.",
+     "p": [
+      "Llegada: de día si puedes, transporte oficial, check-in tranquilo y un primer paseo por el barrio.",
+      "Moverte: transporte público, mapas sin conexión, taxis con cabeza y pedir ayuda a la gente local.",
+      "Seguridad diaria: intuición, objetos de valor a salvo, un no amable, hábitos en la habitación y un plan si pierdes algo."
+     ],
+     "q": "¿Qué hábito de este mes crees que usarás más?",
+     "c": "Haz una chuleta de una página sobre llegada y seguridad con tus cinco consejos favoritos."
+    },
+    "fr": {
+     "t": "Révision : arriver et rester serein",
+     "g": "Récapitule tes routines d’arrivée, tes réflexes de transport et tes habitudes de sécurité.",
+     "p": [
+      "Arrivée : de jour si possible, transport officiel, accueil serein et première balade dans le quartier.",
+      "Se déplacer : transports en commun, cartes hors ligne, bons réflexes en taxi et aide des habitants.",
+      "Sécurité au quotidien : intuition, objets protégés, non poli, réflexes en chambre et plan en cas de perte."
+     ],
+     "q": "Quelle habitude de ce mois-ci penses-tu utiliser le plus ?",
+     "c": "Fais une fiche d’une page sur l’arrivée et la sécurité avec tes cinq conseils préférés."
+    },
+    "it": {
+     "t": "Ripasso: arrivare e stare sicuri",
+     "g": "Ripassa le routine di arrivo, l’uso dei trasporti e le abitudini di sicurezza quotidiane.",
+     "p": [
+      "Arrivo: di giorno se puoi, trasporti ufficiali, check-in tranquillo e una prima passeggiata nel quartiere.",
+      "Spostarsi: mezzi pubblici, mappe offline, taxi con giudizio e chiedere aiuto alla gente del posto.",
+      "Sicurezza quotidiana: intuito, valori protetti, un no gentile, abitudini in camera e un piano per le perdite."
+     ],
+     "q": "Quale abitudine di questo mese pensi che userai di più?",
+     "c": "Prepara un promemoria di una pagina su arrivo e sicurezza con i tuoi cinque consigli preferiti."
+    },
+    "pt": {
+     "t": "Revisão: chegar e manter-se seguro",
+     "g": "Revê as tuas rotinas de chegada, o uso dos transportes e os hábitos de segurança do dia a dia.",
+     "p": [
+      "Chegada: de dia se possível, transporte oficial, check-in tranquilo e um primeiro passeio pelo bairro.",
+      "Deslocar-se: transportes públicos, mapas offline, táxis com cabeça e pedir ajuda aos locais.",
+      "Segurança diária: intuição, valores protegidos, um não simpático, hábitos no quarto e um plano para perdas."
+     ],
+     "q": "Que hábito deste mês achas que vais usar mais?",
+     "c": "Faz uma cábula de uma página sobre chegada e segurança com as tuas cinco dicas favoritas."
+    },
+    "pt_BR": {
+     "t": "Revisão: chegando e ficando seguro",
+     "g": "Revise suas rotinas de chegada, o uso do transporte e os hábitos de segurança do dia a dia.",
+     "p": [
+      "Chegada: de dia se possível, transporte oficial, check-in tranquilo e uma primeira volta no bairro.",
+      "Circulando: transporte público, mapas offline, táxi com cuidado e pedir ajuda aos moradores.",
+      "Segurança diária: intuição, objetos protegidos, um não gentil, hábitos no quarto e um plano para perdas."
+     ],
+     "q": "Que hábito deste mês você acha que vai usar mais?",
+     "c": "Faça uma cola de uma página sobre chegada e segurança com suas cinco dicas favoritas."
+    }
+   }
+  }
+ ]
+}

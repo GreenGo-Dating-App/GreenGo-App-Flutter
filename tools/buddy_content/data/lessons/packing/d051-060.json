@@ -1,0 +1,835 @@
+{
+ "topic": "packing",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A reusable water bottle",
+     "g": "Stay hydrated, cut plastic waste and refill your bottle after security.",
+     "p": [
+      "Travel days are often dry and long, and having water at hand keeps you fresher and more alert.",
+      "Airport security usually asks for bottles to be empty, so pass through empty and refill at a fountain after.",
+      "A collapsible or slim bottle fits a side pocket; in places where tap water is not safe, use filtered or bottled water."
+     ],
+     "q": "Do you usually carry a water bottle when you travel?",
+     "c": "Check your own bottle: does it close tightly, and does it fit in the side pocket of your daily bag?"
+    },
+    "de": {
+     "t": "Eine wiederverwendbare Trinkflasche",
+     "g": "Bleib hydriert, spar Plastikmüll und füll deine Flasche nach der Kontrolle auf.",
+     "p": [
+      "Reisetage sind oft lang und trocken; Wasser in Reichweite hält dich frischer und wacher.",
+      "An der Sicherheitskontrolle muss die Flasche meist leer sein; geh leer durch und füll sie danach am Brunnen auf.",
+      "Eine faltbare oder schmale Flasche passt in die Seitentasche; wo Leitungswasser nicht sicher ist, nimm gefiltertes Wasser."
+     ],
+     "q": "Hast du auf Reisen normalerweise eine Trinkflasche dabei?",
+     "c": "Prüf deine Flasche: Schließt sie dicht, und passt sie in die Seitentasche deiner Alltagstasche?"
+    },
+    "es": {
+     "t": "Una botella reutilizable",
+     "g": "Mantente hidratado, reduce el plástico y rellena tu botella tras el control de seguridad.",
+     "p": [
+      "Los días de viaje suelen ser largos y secos, y tener agua a mano te mantiene fresco y despierto.",
+      "En el control suelen pedir la botella vacía: pásala vacía y rellénala en una fuente después.",
+      "Una botella plegable o estrecha cabe en el bolsillo lateral; donde el agua del grifo no sea segura, usa agua filtrada o embotellada."
+     ],
+     "q": "¿Sueles llevar una botella de agua cuando viajas?",
+     "c": "Revisa tu botella: ¿cierra bien y cabe en el bolsillo lateral de tu bolso de diario?"
+    },
+    "fr": {
+     "t": "Une gourde réutilisable",
+     "g": "Reste hydraté, réduis le plastique et remplis ta gourde après le contrôle de sécurité.",
+     "p": [
+      "Les jours de voyage sont souvent longs et secs : avoir de l'eau à portée de main te garde frais et alerte.",
+      "Au contrôle, la gourde doit en général être vide : passe-la vide et remplis-la à une fontaine ensuite.",
+      "Une gourde pliable ou fine tient dans une poche latérale ; là où l'eau du robinet n'est pas sûre, prends de l'eau filtrée."
+     ],
+     "q": "As-tu l'habitude d'emporter une gourde en voyage ?",
+     "c": "Vérifie ta gourde : ferme-t-elle bien, et tient-elle dans la poche latérale de ton sac du quotidien ?"
+    },
+    "it": {
+     "t": "Una borraccia riutilizzabile",
+     "g": "Resta idratato, riduci la plastica e riempi la borraccia dopo i controlli di sicurezza.",
+     "p": [
+      "I giorni di viaggio sono spesso lunghi e secchi, e avere acqua a portata di mano ti tiene fresco e lucido.",
+      "Ai controlli di solito la borraccia deve essere vuota: passala vuota e riempila poi a una fontanella.",
+      "Una borraccia pieghevole o sottile entra nella tasca laterale; dove l'acqua del rubinetto non è sicura, usa acqua filtrata."
+     ],
+     "q": "Di solito porti una borraccia quando viaggi?",
+     "c": "Controlla la tua borraccia: chiude bene e sta nella tasca laterale della borsa di tutti i giorni?"
+    },
+    "pt": {
+     "t": "Uma garrafa reutilizável",
+     "g": "Mantém-te hidratado, reduz o plástico e enche a garrafa depois do controlo de segurança.",
+     "p": [
+      "Os dias de viagem são muitas vezes longos e secos, e ter água à mão mantém-te fresco e atento.",
+      "No controlo costumam pedir a garrafa vazia: passa com ela vazia e enche-a depois num bebedouro.",
+      "Uma garrafa dobrável ou estreita cabe no bolso lateral; onde a água da torneira não for segura, usa água filtrada ou engarrafada."
+     ],
+     "q": "Costumas levar uma garrafa de água quando viajas?",
+     "c": "Vê a tua garrafa: fecha bem e cabe no bolso lateral do saco que usas todos os dias?"
+    },
+    "pt_BR": {
+     "t": "Uma garrafinha reutilizável",
+     "g": "Mantenha-se hidratado, reduza o plástico e encha a garrafinha depois da inspeção.",
+     "p": [
+      "Dias de viagem costumam ser longos e secos, e ter água por perto deixa você mais disposto e atento.",
+      "Na inspeção geralmente pedem a garrafa vazia: passe com ela vazia e encha depois num bebedouro.",
+      "Uma garrafa dobrável ou fina cabe no bolso lateral; onde a água da torneira não for segura, use água filtrada ou mineral."
+     ],
+     "q": "Você costuma levar uma garrafinha de água quando viaja?",
+     "c": "Confira sua garrafinha: ela fecha bem e cabe no bolso lateral da bolsa que você usa todo dia?"
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The day bag",
+     "g": "Bring a small foldable bag for daily outings once you arrive.",
+     "p": [
+      "Once you drop your luggage, a light day bag carries water, a layer, snacks and your phone around town.",
+      "Packable bags fold into their own pocket and weigh almost nothing, so they barely use space on the way.",
+      "Pick one with a zip that closes fully, and wear it in front in crowded places like markets and metros."
+     ],
+     "q": "What do you usually carry with you on a day of exploring?",
+     "c": "Pack a pretend day bag with what you would need for six hours of sightseeing, and see if anything is missing."
+    },
+    "de": {
+     "t": "Der Tagesrucksack",
+     "g": "Nimm eine kleine faltbare Tasche für Tagesausflüge vor Ort mit.",
+     "p": [
+      "Sobald das Gepäck abgestellt ist, trägt ein leichter Tagesrucksack Wasser, eine Schicht, Snacks und Handy.",
+      "Verstaubare Taschen falten sich in ihre eigene Tasche und wiegen fast nichts, also kaum Platzverlust.",
+      "Wähle eine mit durchgehendem Reißverschluss und trag sie in vollen Märkten und U-Bahnen vorne."
+     ],
+     "q": "Was hast du an einem Entdeckertag normalerweise dabei?",
+     "c": "Pack probeweise eine Tagestasche für sechs Stunden Sightseeing und schau, ob etwas fehlt."
+    },
+    "es": {
+     "t": "La mochila de día",
+     "g": "Lleva una bolsa pequeña plegable para las salidas diarias una vez en destino.",
+     "p": [
+      "Cuando dejas el equipaje, una mochila ligera lleva agua, una capa, tentempiés y el móvil por la ciudad.",
+      "Las bolsas plegables se guardan en su propio bolsillo y casi no pesan, así que apenas ocupan sitio.",
+      "Elige una con cremallera que cierre del todo y llévala delante en lugares concurridos como mercados y metros."
+     ],
+     "q": "¿Qué sueles llevar contigo en un día de exploración?",
+     "c": "Prepara una mochila de día imaginaria para seis horas de turismo y mira si falta algo."
+    },
+    "fr": {
+     "t": "Le sac de la journée",
+     "g": "Emporte un petit sac pliable pour les sorties quotidiennes une fois arrivé.",
+     "p": [
+      "Une fois les bagages posés, un sac léger transporte eau, couche chaude, en-cas et téléphone en ville.",
+      "Les sacs pliables se rangent dans leur propre poche et ne pèsent presque rien : ils prennent peu de place.",
+      "Choisis-en un qui ferme entièrement par une fermeture éclair, et porte-le devant dans les marchés et métros bondés."
+     ],
+     "q": "Que prends-tu d'habitude avec toi pour une journée d'exploration ?",
+     "c": "Prépare un sac de journée fictif pour six heures de visite et vois s'il manque quelque chose."
+    },
+    "it": {
+     "t": "Lo zainetto da giorno",
+     "g": "Porta una borsa piccola e pieghevole per le uscite quotidiane una volta arrivato.",
+     "p": [
+      "Lasciati i bagagli, uno zainetto leggero porta acqua, uno strato, snack e telefono in giro per la città.",
+      "Le borse ripiegabili si chiudono nella propria tasca e non pesano quasi nulla, quindi occupano pochissimo.",
+      "Scegline una con cerniera che chiude del tutto e portala davanti nei luoghi affollati come mercati e metro."
+     ],
+     "q": "Cosa porti di solito con te in una giornata di esplorazione?",
+     "c": "Prepara uno zainetto immaginario per sei ore di visite e controlla se manca qualcosa."
+    },
+    "pt": {
+     "t": "A mochila do dia",
+     "g": "Leva um saco pequeno e dobrável para os passeios diários depois de chegares.",
+     "p": [
+      "Depois de deixares a bagagem, uma mochila leve leva água, um agasalho, lanches e o telemóvel pela cidade.",
+      "Os sacos dobráveis guardam-se no próprio bolso e quase não pesam, por isso ocupam pouco espaço.",
+      "Escolhe um com fecho que feche por completo e leva-o à frente em sítios cheios como mercados e metros."
+     ],
+     "q": "O que costumas levar contigo num dia a explorar?",
+     "c": "Prepara uma mochila do dia imaginária para seis horas de passeio e vê se falta alguma coisa."
+    },
+    "pt_BR": {
+     "t": "A mochila do dia",
+     "g": "Leve uma bolsa pequena dobrável para os passeios diários depois de chegar.",
+     "p": [
+      "Depois de deixar a bagagem, uma mochila leve carrega água, um agasalho, lanches e o celular pela cidade.",
+      "Bolsas dobráveis se guardam no próprio bolso e quase não pesam, então ocupam pouco espaço.",
+      "Escolha uma com zíper que feche por completo e use na frente em lugares cheios como feiras e metrô."
+     ],
+     "q": "O que você costuma levar num dia de passeio?",
+     "c": "Monte uma mochila do dia imaginária para seis horas de passeio e veja se falta alguma coisa."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Laundry bag and worn clothes",
+     "g": "Keep worn clothes separate and your bag fresh until wash day.",
+     "p": [
+      "A light laundry bag, or any cloth bag, keeps worn clothes away from clean ones and stops smells spreading.",
+      "Air worn clothes overnight before bagging them, so damp items do not make the whole bag musty.",
+      "A few clothes pegs or a stretchy travel line help you dry a quick sink wash in your room."
+     ],
+     "q": "How do you usually handle dirty clothes while you are on a trip?",
+     "c": "Find a bag at home that could become your laundry bag and add it to your packing list."
+    },
+    "de": {
+     "t": "Wäschebeutel und getragene Kleidung",
+     "g": "Halte getragene Kleidung getrennt und dein Gepäck frisch bis zum Waschtag.",
+     "p": [
+      "Ein leichter Wäschebeutel oder irgendein Stoffbeutel trennt Getragenes von Sauberem und hält Gerüche fern.",
+      "Lüfte getragene Kleidung über Nacht, bevor sie in den Beutel kommt, damit Feuchtes nicht alles muffig macht.",
+      "Ein paar Wäscheklammern oder eine dehnbare Reiseleine helfen, eine schnelle Handwäsche im Zimmer zu trocknen."
+     ],
+     "q": "Wie gehst du auf Reisen normalerweise mit schmutziger Kleidung um?",
+     "c": "Such zu Hause einen Beutel, der dein Wäschebeutel werden kann, und setz ihn auf deine Packliste."
+    },
+    "es": {
+     "t": "Bolsa de ropa sucia",
+     "g": "Separa la ropa usada y mantén la maleta fresca hasta el día de colada.",
+     "p": [
+      "Una bolsa ligera para la ropa sucia, o cualquier bolsa de tela, separa lo usado de lo limpio y evita olores.",
+      "Airea la ropa usada por la noche antes de guardarla, para que lo húmedo no deje la maleta oliendo a cerrado.",
+      "Unas pinzas o un tendedero elástico de viaje te ayudan a secar un lavado rápido en el lavabo."
+     ],
+     "q": "¿Qué haces normalmente con la ropa sucia cuando estás de viaje?",
+     "c": "Busca en casa una bolsa que pueda ser tu bolsa de ropa sucia y añádela a tu lista."
+    },
+    "fr": {
+     "t": "Sac à linge et vêtements portés",
+     "g": "Sépare les vêtements portés et garde ton sac frais jusqu'au jour de lessive.",
+     "p": [
+      "Un sac à linge léger, ou n'importe quel sac en tissu, isole le porté du propre et limite les odeurs.",
+      "Aère les vêtements portés pendant la nuit avant de les ranger, pour que l'humidité n'imprègne pas tout le sac.",
+      "Quelques pinces à linge ou un fil à linge élastique de voyage aident à sécher une lessive express dans la chambre."
+     ],
+     "q": "Comment gères-tu d'habitude le linge sale en voyage ?",
+     "c": "Trouve chez toi un sac qui pourrait devenir ton sac à linge et ajoute-le à ta liste."
+    },
+    "it": {
+     "t": "Sacca per il bucato e capi usati",
+     "g": "Tieni separati i capi usati e la valigia fresca fino al giorno del bucato.",
+     "p": [
+      "Una sacca leggera per il bucato, o una qualsiasi borsa di stoffa, separa l'usato dal pulito ed evita odori.",
+      "Arieggia i capi usati durante la notte prima di riporli, così l'umido non rende tutta la valigia stantia.",
+      "Qualche molletta o uno stendino elastico da viaggio ti aiutano ad asciugare un bucato veloce in camera."
+     ],
+     "q": "Come gestisci di solito i vestiti sporchi durante un viaggio?",
+     "c": "Trova in casa una borsa che possa diventare la tua sacca per il bucato e aggiungila alla lista."
+    },
+    "pt": {
+     "t": "Saco da roupa suja",
+     "g": "Separa a roupa usada e mantém a mala fresca até ao dia de lavar.",
+     "p": [
+      "Um saco leve para a roupa suja, ou qualquer saco de pano, separa o usado do limpo e evita cheiros.",
+      "Areja a roupa usada durante a noite antes de a guardar, para que o que está húmido não deixe a mala a mofo.",
+      "Umas molas ou um estendal elástico de viagem ajudam a secar uma lavagem rápida no quarto."
+     ],
+     "q": "Como costumas lidar com a roupa suja quando estás em viagem?",
+     "c": "Procura em casa um saco que possa ser o teu saco da roupa suja e junta-o à tua lista."
+    },
+    "pt_BR": {
+     "t": "Saco de roupa suja",
+     "g": "Separe a roupa usada e mantenha a mala cheirosa até o dia de lavar.",
+     "p": [
+      "Um saco leve de roupa suja, ou qualquer sacola de pano, separa o usado do limpo e evita cheiros.",
+      "Deixe a roupa usada arejar à noite antes de guardar, para o que está úmido não deixar a mala com cheiro de mofo.",
+      "Alguns prendedores ou um varal elástico de viagem ajudam a secar uma lavagem rápida no quarto."
+     ],
+     "q": "Como você costuma lidar com a roupa suja durante uma viagem?",
+     "c": "Ache em casa uma sacola que possa virar seu saco de roupa suja e coloque na sua lista."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Zip bags and organisers",
+     "g": "Use simple bags that sort small items and protect against spills.",
+     "p": [
+      "Resealable bags in a few sizes sort chargers, snacks, receipts and small toiletries at almost no weight.",
+      "They protect electronics and papers from spills and rain, and see-through ones show what is inside.",
+      "Reuse them trip after trip, and keep a couple of spares for wet swimwear or a surprise leak."
+     ],
+     "q": "What small items always seem to scatter around the bottom of your bag?",
+     "c": "Sort the loose small items in your everyday bag into two or three small bags today."
+    },
+    "de": {
+     "t": "Zipbeutel und Organizer",
+     "g": "Nutze einfache Beutel, die Kleinkram sortieren und vor Auslaufen schützen.",
+     "p": [
+      "Wiederverschließbare Beutel in ein paar Größen sortieren Ladegeräte, Snacks, Belege und Hygieneartikel fast ohne Gewicht.",
+      "Sie schützen Elektronik und Papiere vor Flüssigkeiten und Regen, und durchsichtige zeigen, was drin ist.",
+      "Nutze sie Reise für Reise wieder und halte ein paar als Reserve für nasse Badesachen oder ein Leck bereit."
+     ],
+     "q": "Welche Kleinigkeiten verteilen sich bei dir immer am Taschenboden?",
+     "c": "Sortiere heute den losen Kleinkram aus deiner Alltagstasche in zwei oder drei kleine Beutel."
+    },
+    "es": {
+     "t": "Bolsas con cierre y organizadores",
+     "g": "Usa bolsas sencillas que ordenan cosas pequeñas y protegen de derrames.",
+     "p": [
+      "Las bolsas con cierre de varios tamaños ordenan cargadores, tentempiés, recibos y aseo casi sin peso.",
+      "Protegen la electrónica y los papeles de derrames y lluvia, y las transparentes dejan ver qué hay dentro.",
+      "Reutilízalas viaje tras viaje y guarda un par de repuesto para el bañador mojado o una fuga inesperada."
+     ],
+     "q": "¿Qué cosas pequeñas acaban siempre esparcidas por el fondo de tu bolso?",
+     "c": "Ordena hoy las cosas sueltas de tu bolso de diario en dos o tres bolsitas."
+    },
+    "fr": {
+     "t": "Sachets zippés et organisateurs",
+     "g": "Utilise des sachets simples qui trient les petits objets et protègent des fuites.",
+     "p": [
+      "Des sachets refermables de quelques tailles trient chargeurs, en-cas, reçus et petits produits presque sans poids.",
+      "Ils protègent électronique et papiers des fuites et de la pluie, et les transparents montrent leur contenu.",
+      "Réutilise-les à chaque voyage et garde-en deux de secours pour un maillot mouillé ou une fuite surprise."
+     ],
+     "q": "Quels petits objets finissent toujours éparpillés au fond de ton sac ?",
+     "c": "Trie aujourd'hui les petits objets en vrac de ton sac du quotidien dans deux ou trois sachets."
+    },
+    "it": {
+     "t": "Bustine con zip e organizer",
+     "g": "Usa buste semplici che ordinano le piccole cose e proteggono dalle perdite.",
+     "p": [
+      "Le buste richiudibili di varie misure ordinano caricatori, snack, scontrini e piccoli prodotti quasi senza peso.",
+      "Proteggono elettronica e documenti da perdite e pioggia, e quelle trasparenti mostrano cosa c'è dentro.",
+      "Riusale a ogni viaggio e tienine un paio di scorta per il costume bagnato o una perdita a sorpresa."
+     ],
+     "q": "Quali piccoli oggetti finiscono sempre sparsi sul fondo della tua borsa?",
+     "c": "Sistema oggi gli oggetti sparsi della borsa di tutti i giorni in due o tre bustine."
+    },
+    "pt": {
+     "t": "Sacos com fecho e organizadores",
+     "g": "Usa sacos simples que arrumam coisas pequenas e protegem de derrames.",
+     "p": [
+      "Sacos com fecho de vários tamanhos arrumam carregadores, lanches, recibos e higiene quase sem peso.",
+      "Protegem a eletrónica e os papéis de derrames e chuva, e os transparentes mostram o que têm dentro.",
+      "Reutiliza-os viagem após viagem e guarda um par de reserva para o fato de banho molhado ou uma fuga."
+     ],
+     "q": "Que coisas pequenas acabam sempre espalhadas no fundo do teu saco?",
+     "c": "Arruma hoje as coisas soltas do teu saco do dia a dia em dois ou três saquinhos."
+    },
+    "pt_BR": {
+     "t": "Saquinhos com zíper e organizadores",
+     "g": "Use saquinhos simples que organizam itens pequenos e protegem contra vazamentos.",
+     "p": [
+      "Saquinhos com fecho de vários tamanhos organizam carregadores, lanches, recibos e higiene quase sem peso.",
+      "Protegem eletrônicos e papéis de vazamentos e chuva, e os transparentes mostram o que tem dentro.",
+      "Reaproveite viagem após viagem e guarde alguns reserva para o biquíni ou sunga molhados ou um vazamento."
+     ],
+     "q": "Quais coisinhas sempre acabam espalhadas no fundo da sua bolsa?",
+     "c": "Organize hoje os itens soltos da sua bolsa do dia a dia em dois ou três saquinhos."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Labelling your luggage",
+     "g": "Use name tags, contact details inside and a distinctive look for easy spotting.",
+     "p": [
+      "An outside tag with your name, phone and email helps a lost bag find its way back to you.",
+      "Also put your contact details inside the bag, in case the outside tag is torn off on the way.",
+      "A bright strap, ribbon or patch makes your bag easy to spot among many similar ones on a belt."
+     ],
+     "q": "Has anyone ever mistaken your bag for theirs, or have you grabbed the wrong one?",
+     "c": "Make an inside label with your name and contact details and slip it into your main bag."
+    },
+    "de": {
+     "t": "Gepäck kennzeichnen",
+     "g": "Nutze Namensschilder, Kontaktdaten innen und ein auffälliges Merkmal zum schnellen Erkennen.",
+     "p": [
+      "Ein Anhänger außen mit Name, Telefon und E-Mail hilft verlorenem Gepäck, den Weg zu dir zurückzufinden.",
+      "Leg deine Kontaktdaten auch innen in die Tasche, falls der Anhänger unterwegs abreißt.",
+      "Ein knalliger Gurt, ein Band oder ein Aufnäher macht deinen Koffer am Band unter vielen ähnlichen leicht erkennbar."
+     ],
+     "q": "Hat schon einmal jemand deinen Koffer verwechselt, oder hast du den falschen genommen?",
+     "c": "Mach ein Innenetikett mit Name und Kontaktdaten und steck es in dein Hauptgepäck."
+    },
+    "es": {
+     "t": "Identifica tu equipaje",
+     "g": "Usa etiquetas con tu nombre, datos de contacto dentro y un detalle llamativo para reconocerlo.",
+     "p": [
+      "Una etiqueta exterior con nombre, teléfono y correo ayuda a que una maleta perdida vuelva a ti.",
+      "Pon también tus datos dentro de la maleta, por si la etiqueta exterior se arranca por el camino.",
+      "Una correa, cinta o parche de color hace que tu maleta destaque entre muchas parecidas en la cinta."
+     ],
+     "q": "¿Alguien confundió alguna vez tu maleta con la suya, o cogiste tú la equivocada?",
+     "c": "Haz una etiqueta interior con tu nombre y contacto y métela en tu maleta principal."
+    },
+    "fr": {
+     "t": "Identifier ses bagages",
+     "g": "Utilise étiquettes nominatives, coordonnées à l'intérieur et un signe distinctif pour repérer ton sac.",
+     "p": [
+      "Une étiquette extérieure avec nom, téléphone et e-mail aide un bagage perdu à te revenir.",
+      "Mets aussi tes coordonnées à l'intérieur, au cas où l'étiquette extérieure serait arrachée en route.",
+      "Une sangle, un ruban ou un écusson coloré rend ta valise facile à repérer parmi d'autres sur le tapis."
+     ],
+     "q": "Quelqu'un a-t-il déjà confondu ta valise avec la sienne, ou as-tu pris la mauvaise ?",
+     "c": "Prépare une étiquette intérieure avec ton nom et tes coordonnées et glisse-la dans ton bagage principal."
+    },
+    "it": {
+     "t": "Riconoscere il bagaglio",
+     "g": "Usa etichette con il nome, contatti all'interno e un tocco distintivo per individuarlo subito.",
+     "p": [
+      "Un'etichetta esterna con nome, telefono ed email aiuta un bagaglio smarrito a tornare da te.",
+      "Metti i tuoi contatti anche dentro la valigia, nel caso l'etichetta esterna si strappi durante il viaggio.",
+      "Una cinghia, un nastro o una toppa colorata rende la valigia facile da riconoscere tra tante simili sul nastro."
+     ],
+     "q": "Qualcuno ha mai scambiato la tua valigia per la sua, o hai preso tu quella sbagliata?",
+     "c": "Prepara un'etichetta interna con nome e contatti e infilala nel bagaglio principale."
+    },
+    "pt": {
+     "t": "Identificar a bagagem",
+     "g": "Usa etiquetas com o nome, contactos lá dentro e um toque diferente para a reconheceres.",
+     "p": [
+      "Uma etiqueta exterior com nome, telefone e e-mail ajuda uma mala perdida a voltar para ti.",
+      "Põe também os teus contactos dentro da mala, caso a etiqueta de fora se solte pelo caminho.",
+      "Uma correia, fita ou emblema colorido faz a tua mala destacar-se entre muitas parecidas no tapete."
+     ],
+     "q": "Já alguém confundiu a tua mala com a sua, ou pegaste tu na errada?",
+     "c": "Faz uma etiqueta interior com o teu nome e contactos e põe-na na mala principal."
+    },
+    "pt_BR": {
+     "t": "Identificando a bagagem",
+     "g": "Use etiquetas com nome, contato dentro da mala e um detalhe chamativo para achá-la fácil.",
+     "p": [
+      "Uma etiqueta externa com nome, telefone e e-mail ajuda uma mala extraviada a voltar para você.",
+      "Coloque também seus contatos dentro da mala, caso a etiqueta de fora arrebente no caminho.",
+      "Uma alça, fita ou patch colorido faz sua mala se destacar entre muitas parecidas na esteira."
+     ],
+     "q": "Alguém já confundiu a sua mala com a dele, ou você pegou a errada?",
+     "c": "Faça uma etiqueta interna com seu nome e contato e coloque na sua mala principal."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Locks and bag security",
+     "g": "Use simple locks and zip tricks that deter quick hands.",
+     "p": [
+      "A small lock on your bag's zips stops casual opening; for checked bags, many travellers use locks security staff can open.",
+      "Clip zip pulls together or tuck them under a flap, so quick hands cannot open your bag unnoticed.",
+      "Keep valuables in inner pockets close to your body, and never leave bags unattended in busy places."
+     ],
+     "q": "Do you lock your bags when you travel, or not usually?",
+     "c": "Check the zips of your main bag: could you clip or lock the pulls together?"
+    },
+    "de": {
+     "t": "Schlösser und Gepäcksicherheit",
+     "g": "Nutze einfache Schlösser und Reißverschluss-Tricks gegen flinke Finger.",
+     "p": [
+      "Ein kleines Schloss an den Reißverschlüssen verhindert schnelles Öffnen; für Koffer nutzen viele Schlösser, die Kontrollen öffnen können.",
+      "Verbinde die Zipper mit einem Clip oder steck sie unter eine Lasche, damit niemand unbemerkt öffnet.",
+      "Bewahre Wertsachen in Innentaschen nah am Körper auf und lass Taschen an belebten Orten nie unbeaufsichtigt."
+     ],
+     "q": "Schließt du dein Gepäck auf Reisen ab, oder eher nicht?",
+     "c": "Prüf die Reißverschlüsse deiner Haupttasche: Könntest du die Zipper verbinden oder abschließen?"
+    },
+    "es": {
+     "t": "Candados y seguridad del equipaje",
+     "g": "Usa candados sencillos y trucos con las cremalleras que disuadan a las manos rápidas.",
+     "p": [
+      "Un candado pequeño en las cremalleras evita aperturas fáciles; para facturar, muchos usan candados que seguridad puede abrir.",
+      "Une los tiradores con un clip o escóndelos bajo una solapa para que nadie abra tu bolsa sin que lo notes.",
+      "Lleva lo valioso en bolsillos interiores pegados al cuerpo y nunca dejes bolsas solas en sitios concurridos."
+     ],
+     "q": "¿Cierras con candado tu equipaje cuando viajas o no sueles hacerlo?",
+     "c": "Revisa las cremalleras de tu bolsa principal: ¿podrías unir o cerrar los tiradores?"
+    },
+    "fr": {
+     "t": "Cadenas et sécurité des bagages",
+     "g": "Utilise des cadenas simples et des astuces de fermeture qui découragent les mains rapides.",
+     "p": [
+      "Un petit cadenas sur les fermetures évite les ouvertures faciles ; en soute, beaucoup prennent des cadenas que la sécurité peut ouvrir.",
+      "Attache les tirettes ensemble ou glisse-les sous un rabat pour que personne n'ouvre ton sac à ton insu.",
+      "Garde tes objets de valeur dans des poches intérieures près du corps et ne laisse jamais ton sac seul dans la foule."
+     ],
+     "q": "Fermes-tu tes bagages à clé en voyage, ou pas d'habitude ?",
+     "c": "Vérifie les fermetures de ton sac principal : pourrais-tu attacher ou cadenasser les tirettes ensemble ?"
+    },
+    "it": {
+     "t": "Lucchetti e sicurezza del bagaglio",
+     "g": "Usa lucchetti semplici e trucchi con le cerniere che scoraggiano le mani svelte.",
+     "p": [
+      "Un piccolo lucchetto sulle cerniere evita aperture facili; per la stiva molti usano lucchetti apribili dai controlli.",
+      "Unisci i cursori con una clip o nascondili sotto una patta, così nessuno apre la borsa senza che te ne accorga.",
+      "Tieni gli oggetti di valore in tasche interne vicino al corpo e non lasciare mai le borse incustodite nella folla."
+     ],
+     "q": "Chiudi a chiave i bagagli quando viaggi, o di solito no?",
+     "c": "Controlla le cerniere della borsa principale: potresti unire o chiudere con un lucchetto i cursori?"
+    },
+    "pt": {
+     "t": "Cadeados e segurança da bagagem",
+     "g": "Usa cadeados simples e truques com os fechos que afastam mãos rápidas.",
+     "p": [
+      "Um cadeado pequeno nos fechos evita aberturas fáceis; para despachar, muitos usam cadeados que a segurança consegue abrir.",
+      "Prende os puxadores com um clipe ou esconde-os sob uma aba, para ninguém abrir a mala sem dares conta.",
+      "Guarda o que é valioso em bolsos interiores junto ao corpo e nunca deixes malas sozinhas em sítios movimentados."
+     ],
+     "q": "Fechas a bagagem com cadeado quando viajas, ou não costumas?",
+     "c": "Vê os fechos da tua mala principal: conseguias prender ou trancar os puxadores juntos?"
+    },
+    "pt_BR": {
+     "t": "Cadeados e segurança da bagagem",
+     "g": "Use cadeados simples e truques com zíper que afastam mãos rápidas.",
+     "p": [
+      "Um cadeado pequeno no zíper evita aberturas fáceis; para despachar, muita gente usa cadeados que a segurança consegue abrir.",
+      "Prenda os puxadores com um clipe ou esconda sob uma aba, para ninguém abrir a bolsa sem você notar.",
+      "Guarde o que é valioso em bolsos internos junto ao corpo e nunca deixe bolsas sozinhas em lugares movimentados."
+     ],
+     "q": "Você costuma trancar a bagagem quando viaja?",
+     "c": "Confira o zíper da sua mala principal: daria para prender ou trancar os puxadores juntos?"
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weighing your bag at home",
+     "g": "Use a small luggage scale to avoid surprises at the check-in desk.",
+     "p": [
+      "A handheld luggage scale hooks onto the handle, and you lift the bag until the reading settles.",
+      "No scale? Weigh yourself on a bathroom scale, then again holding the bag, and subtract.",
+      "Weigh again before the flight home, since souvenirs add up, and compare with your airline's current limit."
+     ],
+     "q": "Have you ever had to repack your bag at the airport to move weight around?",
+     "c": "Weigh your main travel bag today, empty and then packed for a weekend, and note both numbers."
+    },
+    "de": {
+     "t": "Den Koffer zu Hause wiegen",
+     "g": "Nutze eine kleine Kofferwaage, um Überraschungen am Check-in zu vermeiden.",
+     "p": [
+      "Eine Handkofferwaage hakt man am Griff ein und hebt den Koffer an, bis die Anzeige stillsteht.",
+      "Keine Waage? Stell dich auf die Personenwaage, dann noch einmal mit Koffer, und zieh ab.",
+      "Wieg vor dem Rückflug noch einmal, denn Souvenirs summieren sich, und vergleiche mit der aktuellen Grenze deiner Airline."
+     ],
+     "q": "Musstest du am Flughafen schon einmal umpacken, um Gewicht zu verteilen?",
+     "c": "Wieg heute deine Reisetasche leer und dann für ein Wochenende gepackt, und notiere beide Werte."
+    },
+    "es": {
+     "t": "Pesa la maleta en casa",
+     "g": "Usa una pequeña báscula de equipaje para evitar sorpresas en el mostrador.",
+     "p": [
+      "Una báscula de mano se engancha al asa y levantas la maleta hasta que la cifra se estabiliza.",
+      "¿Sin báscula? Pésate en la báscula del baño, luego otra vez sujetando la maleta, y resta.",
+      "Vuelve a pesarla antes del regreso, porque los recuerdos suman, y compárala con el límite actual de tu aerolínea."
+     ],
+     "q": "¿Alguna vez tuviste que rehacer la maleta en el aeropuerto para repartir peso?",
+     "c": "Pesa hoy tu maleta principal vacía y luego hecha para un fin de semana, y apunta ambas cifras."
+    },
+    "fr": {
+     "t": "Peser sa valise à la maison",
+     "g": "Utilise un petit pèse-bagage pour éviter les surprises au comptoir d'enregistrement.",
+     "p": [
+      "Un pèse-bagage à main s'accroche à la poignée : soulève la valise jusqu'à ce que l'affichage se stabilise.",
+      "Pas de pèse-bagage ? Pèse-toi sur la balance, puis à nouveau en tenant la valise, et fais la différence.",
+      "Repèse avant le retour, car les souvenirs s'accumulent, et compare avec la limite actuelle de ta compagnie."
+     ],
+     "q": "As-tu déjà dû refaire ta valise à l'aéroport pour répartir le poids ?",
+     "c": "Pèse aujourd'hui ton bagage principal vide, puis rempli pour un week-end, et note les deux chiffres."
+    },
+    "it": {
+     "t": "Pesare la valigia a casa",
+     "g": "Usa una piccola bilancia pesabagagli per evitare sorprese al check-in.",
+     "p": [
+      "Una bilancia da mano si aggancia alla maniglia: sollevi la valigia finché il valore si stabilizza.",
+      "Niente bilancia? Pesati sulla bilancia del bagno, poi di nuovo tenendo la valigia, e fai la differenza.",
+      "Ripesala prima del ritorno, perché i souvenir si sommano, e confrontala con il limite attuale della compagnia."
+     ],
+     "q": "Ti è mai capitato di dover rifare la valigia in aeroporto per spostare il peso?",
+     "c": "Pesa oggi la tua valigia principale vuota e poi pronta per un weekend, e annota entrambi i numeri."
+    },
+    "pt": {
+     "t": "Pesar a mala em casa",
+     "g": "Usa uma pequena balança de bagagem para evitar surpresas no balcão do check-in.",
+     "p": [
+      "Uma balança de mão prende-se à pega e levantas a mala até o valor estabilizar.",
+      "Sem balança? Pesa-te na balança da casa de banho, depois outra vez a segurar a mala, e subtrai.",
+      "Volta a pesar antes do regresso, porque as lembranças somam, e compara com o limite atual da companhia."
+     ],
+     "q": "Já tiveste de refazer a mala no aeroporto para mudar o peso de sítio?",
+     "c": "Pesa hoje a tua mala principal vazia e depois feita para um fim de semana, e aponta os dois valores."
+    },
+    "pt_BR": {
+     "t": "Pesando a mala em casa",
+     "g": "Use uma balancinha de bagagem para evitar surpresas no check-in.",
+     "p": [
+      "A balança de mão engancha na alça e você levanta a mala até o número estabilizar.",
+      "Sem balança? Suba na balança do banheiro, depois de novo segurando a mala, e subtraia.",
+      "Pese de novo antes da volta, porque as lembrancinhas somam, e compare com o limite atual da companhia."
+     ],
+     "q": "Você já precisou refazer a mala no aeroporto para redistribuir o peso?",
+     "c": "Pese hoje sua mala principal vazia e depois arrumada para um fim de semana, e anote os dois números."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The night-before checklist",
+     "g": "Do a final check of documents, chargers, medicines and keys.",
+     "p": [
+      "Run through the essentials out loud: passport or ID, tickets, cards, phone, chargers, medicines, keys.",
+      "Charge everything overnight and lay out tomorrow's travel outfit with the jacket and shoes you will wear.",
+      "Put the items you cannot pack yet, like your phone and charger, on top of your bag so you cannot miss them."
+     ],
+     "q": "What is something you have forgotten at home at least once?",
+     "c": "Write your own five-item night-before checklist and save it next to your packing list."
+    },
+    "de": {
+     "t": "Die Checkliste am Vorabend",
+     "g": "Mach einen letzten Check von Dokumenten, Ladegeräten, Medikamenten und Schlüsseln.",
+     "p": [
+      "Geh das Wichtigste laut durch: Pass oder Ausweis, Tickets, Karten, Handy, Ladegeräte, Medikamente, Schlüssel.",
+      "Lade alles über Nacht und leg das Reiseoutfit für morgen bereit, mit Jacke und Schuhen, die du trägst.",
+      "Leg Dinge, die du noch nicht einpacken kannst, wie Handy und Ladegerät, oben auf die Tasche, damit du sie siehst."
+     ],
+     "q": "Was hast du schon mindestens einmal zu Hause vergessen?",
+     "c": "Schreib deine eigene Vorabend-Checkliste mit fünf Punkten und speichere sie neben deiner Packliste."
+    },
+    "es": {
+     "t": "La lista de la noche anterior",
+     "g": "Haz una última revisión de documentos, cargadores, medicamentos y llaves.",
+     "p": [
+      "Repasa lo esencial en voz alta: pasaporte o documento, billetes, tarjetas, móvil, cargadores, medicinas, llaves.",
+      "Carga todo por la noche y deja preparada la ropa del viaje con la chaqueta y los zapatos que llevarás.",
+      "Pon sobre la maleta lo que aún no puedes guardar, como el móvil y el cargador, para no olvidarlo."
+     ],
+     "q": "¿Qué te has dejado en casa al menos una vez?",
+     "c": "Escribe tu propia lista de cinco cosas para la noche anterior y guárdala junto a tu lista de equipaje."
+    },
+    "fr": {
+     "t": "La check-list de la veille",
+     "g": "Fais un dernier contrôle des papiers, chargeurs, médicaments et clés.",
+     "p": [
+      "Passe l'essentiel en revue à voix haute : passeport ou carte, billets, cartes, téléphone, chargeurs, médicaments, clés.",
+      "Recharge tout pendant la nuit et prépare la tenue du voyage avec la veste et les chaussures que tu porteras.",
+      "Pose sur ton sac ce que tu ne peux pas encore ranger, comme le téléphone et son chargeur, pour ne pas l'oublier."
+     ],
+     "q": "Qu'as-tu déjà oublié chez toi au moins une fois ?",
+     "c": "Écris ta propre check-list de la veille en cinq points et range-la à côté de ta liste de bagages."
+    },
+    "it": {
+     "t": "La checklist della sera prima",
+     "g": "Fai un ultimo controllo di documenti, caricatori, farmaci e chiavi.",
+     "p": [
+      "Ripassa l'essenziale ad alta voce: passaporto o documento, biglietti, carte, telefono, caricatori, farmaci, chiavi.",
+      "Ricarica tutto durante la notte e prepara l'outfit del viaggio con la giacca e le scarpe che indosserai.",
+      "Metti sopra la borsa ciò che non puoi ancora riporre, come telefono e caricatore, così non lo dimentichi."
+     ],
+     "q": "Cosa hai dimenticato a casa almeno una volta?",
+     "c": "Scrivi la tua checklist della sera prima con cinque voci e salvala accanto alla lista per la valigia."
+    },
+    "pt": {
+     "t": "A lista da véspera",
+     "g": "Faz uma última verificação de documentos, carregadores, medicamentos e chaves.",
+     "p": [
+      "Revê o essencial em voz alta: passaporte ou documento, bilhetes, cartões, telemóvel, carregadores, medicamentos, chaves.",
+      "Carrega tudo durante a noite e deixa preparada a roupa da viagem com o casaco e os sapatos que vais usar.",
+      "Põe em cima da mala o que ainda não podes arrumar, como o telemóvel e o carregador, para não te esqueceres."
+     ],
+     "q": "O que já te esqueceste em casa pelo menos uma vez?",
+     "c": "Escreve a tua própria lista da véspera com cinco itens e guarda-a junto à tua lista de mala."
+    },
+    "pt_BR": {
+     "t": "O checklist da véspera",
+     "g": "Faça uma última conferida em documentos, carregadores, remédios e chaves.",
+     "p": [
+      "Repasse o essencial em voz alta: passaporte ou documento, passagens, cartões, celular, carregadores, remédios, chaves.",
+      "Carregue tudo durante a noite e deixe separada a roupa da viagem com o casaco e os sapatos que vai usar.",
+      "Deixe em cima da mala o que ainda não dá para guardar, como celular e carregador, para não esquecer."
+     ],
+     "q": "O que você já esqueceu em casa pelo menos uma vez?",
+     "c": "Escreva o seu checklist da véspera com cinco itens e salve junto da sua lista de mala."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing for the way home",
+     "g": "Leave space for souvenirs and plan how you will repack.",
+     "p": [
+      "Leave about a fifth of your bag empty on the way out, or pack a light foldable bag for extra things.",
+      "Souvenirs that are flat, light and unbreakable travel best; wrap fragile ones in worn clothes.",
+      "Repack using the same system as on day one, with heavy items low and worn clothes in the laundry bag."
+     ],
+     "q": "What is the best souvenir you have ever brought home?",
+     "c": "Look at your bag for your next trip and decide where the souvenir space will be."
+    },
+    "de": {
+     "t": "Packen für den Heimweg",
+     "g": "Lass Platz für Souvenirs und plane, wie du wieder packst.",
+     "p": [
+      "Lass auf dem Hinweg etwa ein Fünftel frei oder nimm eine leichte Falttasche für Extras mit.",
+      "Flache, leichte und unzerbrechliche Souvenirs reisen am besten; wickle Zerbrechliches in getragene Kleidung.",
+      "Pack mit demselben System wie am ersten Tag: Schweres nach unten, Getragenes in den Wäschebeutel."
+     ],
+     "q": "Was ist das schönste Souvenir, das du je mitgebracht hast?",
+     "c": "Schau dir dein Gepäck für die nächste Reise an und entscheide, wo der Platz für Souvenirs sein wird."
+    },
+    "es": {
+     "t": "La maleta de vuelta",
+     "g": "Deja espacio para recuerdos y planea cómo volverás a hacer la maleta.",
+     "p": [
+      "Deja a la ida casi una quinta parte libre o lleva una bolsa plegable ligera para lo extra.",
+      "Los recuerdos planos, ligeros e irrompibles viajan mejor; envuelve lo frágil en ropa usada.",
+      "Rehaz la maleta con el mismo sistema del primer día: lo pesado abajo y la ropa usada en su bolsa."
+     ],
+     "q": "¿Cuál es el mejor recuerdo que has traído a casa?",
+     "c": "Mira el equipaje de tu próximo viaje y decide dónde estará el hueco para los recuerdos."
+    },
+    "fr": {
+     "t": "La valise du retour",
+     "g": "Garde de la place pour les souvenirs et prévois comment refaire ton sac.",
+     "p": [
+      "À l'aller, laisse environ un cinquième du sac vide, ou emporte un sac pliable léger pour les extras.",
+      "Les souvenirs plats, légers et incassables voyagent le mieux ; enveloppe le fragile dans des vêtements portés.",
+      "Refais ton sac avec le même système qu'au premier jour : le lourd en bas, le linge porté dans son sac."
+     ],
+     "q": "Quel est le plus beau souvenir que tu aies jamais rapporté ?",
+     "c": "Regarde ton bagage pour le prochain voyage et décide où sera la place des souvenirs."
+    },
+    "it": {
+     "t": "La valigia del ritorno",
+     "g": "Lascia spazio per i souvenir e pianifica come rifarai la valigia.",
+     "p": [
+      "All'andata lascia libero circa un quinto della valigia o porta una borsa pieghevole leggera per gli extra.",
+      "I souvenir piatti, leggeri e infrangibili viaggiano meglio; avvolgi quelli fragili nei vestiti usati.",
+      "Rifai la valigia con lo stesso sistema del primo giorno: il peso in basso e i capi usati nella sacca."
+     ],
+     "q": "Qual è il souvenir più bello che hai mai portato a casa?",
+     "c": "Guarda il bagaglio del prossimo viaggio e decidi dove sarà lo spazio per i souvenir."
+    },
+    "pt": {
+     "t": "A mala do regresso",
+     "g": "Deixa espaço para lembranças e planeia como vais refazer a mala.",
+     "p": [
+      "Na ida, deixa cerca de um quinto da mala livre ou leva um saco dobrável leve para o que é extra.",
+      "As lembranças planas, leves e inquebráveis viajam melhor; embrulha as frágeis em roupa usada.",
+      "Refaz a mala com o mesmo sistema do primeiro dia: o pesado em baixo e a roupa usada no saco dela."
+     ],
+     "q": "Qual foi a melhor lembrança que já trouxeste para casa?",
+     "c": "Olha para a bagagem da próxima viagem e decide onde vai ficar o espaço para lembranças."
+    },
+    "pt_BR": {
+     "t": "A mala da volta",
+     "g": "Deixe espaço para lembrancinhas e planeje como vai refazer a mala.",
+     "p": [
+      "Na ida, deixe cerca de um quinto da mala livre ou leve uma bolsa dobrável leve para os extras.",
+      "Lembrancinhas planas, leves e inquebráveis viajam melhor; embrulhe as frágeis em roupa usada.",
+      "Refaça a mala com o mesmo sistema do primeiro dia: peso embaixo e roupa usada no saco de roupa suja."
+     ],
+     "q": "Qual foi a melhor lembrancinha que você já trouxe para casa?",
+     "c": "Olhe a bagagem da próxima viagem e decida onde vai ficar o espaço para as lembrancinhas."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: toiletries, tech and extras",
+     "g": "Practise packing a complete kit with toiletries, tech and comfort items.",
+     "p": [
+      "Toiletries: a compact kit, liquids in a clear bag within the rules, solids where possible, leak-proofed bottles.",
+      "Tech: one pouch with a multi-port charger, cables, adapter, a power bank in hand luggage and offline downloads.",
+      "Comfort and extras: pillow, eye mask, earplugs, snacks, a refillable bottle, day bag, labels and a night-before check."
+     ],
+     "q": "Which small extra from this month will you never travel without again?",
+     "c": "Pack your toiletry kit, tech pouch and comfort items for a real or dream trip, then remove one thing."
+    },
+    "de": {
+     "t": "Rückblick: Hygiene, Technik und Extras",
+     "g": "Übe, ein komplettes Set aus Hygieneartikeln, Technik und Komfortteilen zu packen.",
+     "p": [
+      "Hygiene: ein kompaktes Set, Flüssigkeiten regelkonform im klaren Beutel, Festes wo möglich, auslaufsichere Flaschen.",
+      "Technik: ein Etui mit Mehrfach-Ladegerät, Kabeln, Adapter, Powerbank im Handgepäck und Offline-Downloads.",
+      "Komfort und Extras: Kissen, Schlafmaske, Ohrstöpsel, Snacks, Trinkflasche, Tagestasche, Etiketten, Vorabend-Check."
+     ],
+     "q": "Welches kleine Extra aus diesem Monat lässt du nie wieder zu Hause?",
+     "c": "Pack Kulturbeutel, Technik-Etui und Komfortteile für eine echte oder erträumte Reise und nimm dann ein Teil heraus."
+    },
+    "es": {
+     "t": "Repaso: aseo, tecnología y extras",
+     "g": "Practica preparando un kit completo de aseo, tecnología y comodidad.",
+     "p": [
+      "Aseo: un neceser compacto, líquidos en bolsa transparente según las normas, sólidos si se puede y botes sin fugas.",
+      "Tecnología: un estuche con cargador múltiple, cables, adaptador, batería externa en cabina y descargas sin conexión.",
+      "Confort y extras: almohada, antifaz, tapones, tentempiés, botella, mochila de día, etiquetas y la revisión final."
+     ],
+     "q": "¿Qué pequeño extra de este mes ya nunca dejarás en casa?",
+     "c": "Prepara tu neceser, tu estuche tecnológico y tus cosas de confort para un viaje real o soñado, y quita una cosa."
+    },
+    "fr": {
+     "t": "Révision : toilette, électronique et extras",
+     "g": "Entraîne-toi à préparer un kit complet de toilette, d'électronique et de confort.",
+     "p": [
+      "Toilette : une trousse compacte, liquides en sac transparent selon les règles, solides si possible, flacons étanches.",
+      "Électronique : une pochette avec chargeur multiport, câbles, adaptateur, batterie en cabine et téléchargements hors ligne.",
+      "Confort et extras : coussin, masque, bouchons, en-cas, gourde, sac de journée, étiquettes et contrôle de la veille."
+     ],
+     "q": "Quel petit extra de ce mois ne quittera plus jamais tes voyages ?",
+     "c": "Prépare trousse de toilette, pochette tech et confort pour un voyage réel ou rêvé, puis retire un objet."
+    },
+    "it": {
+     "t": "Ripasso: igiene, tecnologia ed extra",
+     "g": "Esercitati a preparare un kit completo di igiene, tecnologia e comfort.",
+     "p": [
+      "Igiene: un beauty compatto, liquidi nella busta trasparente secondo le regole, solidi se possibile, flaconi sigillati.",
+      "Tecnologia: una pochette con caricatore multiporta, cavi, adattatore, power bank a mano e download offline.",
+      "Comfort ed extra: cuscino, mascherina, tappi, snack, borraccia, zainetto, etichette e controllo della sera prima."
+     ],
+     "q": "Quale piccolo extra di questo mese non lascerai mai più a casa?",
+     "c": "Prepara beauty, pochette tech e accessori comfort per un viaggio vero o sognato, poi togli una cosa."
+    },
+    "pt": {
+     "t": "Revisão: higiene, tecnologia e extras",
+     "g": "Pratica a preparar um kit completo de higiene, tecnologia e conforto.",
+     "p": [
+      "Higiene: uma bolsa compacta, líquidos no saco transparente dentro das regras, sólidos sempre que possível, frascos sem fugas.",
+      "Tecnologia: uma bolsa com carregador múltiplo, cabos, adaptador, bateria externa na cabine e downloads offline.",
+      "Conforto e extras: almofada, máscara, tampões, lanches, garrafa, mochila do dia, etiquetas e a lista da véspera."
+     ],
+     "q": "Que pequeno extra deste mês nunca mais vais deixar em casa?",
+     "c": "Prepara a bolsa de higiene, a bolsa tech e o conforto para uma viagem real ou sonhada, e tira uma coisa."
+    },
+    "pt_BR": {
+     "t": "Revisão: higiene, eletrônicos e extras",
+     "g": "Pratique montando um kit completo de higiene, eletrônicos e conforto.",
+     "p": [
+      "Higiene: nécessaire compacta, líquidos no saquinho transparente dentro das regras, sólidos se der, frascos sem vazamento.",
+      "Eletrônicos: um estojo com carregador de várias portas, cabos, adaptador, power bank na cabine e downloads offline.",
+      "Conforto e extras: travesseiro, máscara, protetores de ouvido, lanches, garrafinha, mochila do dia, etiquetas e checklist."
+     ],
+     "q": "Qual pequeno extra deste mês você nunca mais vai deixar em casa?",
+     "c": "Monte nécessaire, estojo de eletrônicos e itens de conforto para uma viagem real ou sonhada, e tire um item."
+    }
+   }
+  }
+ ]
+}

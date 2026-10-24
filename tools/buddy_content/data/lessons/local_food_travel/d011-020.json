@@ -1,0 +1,835 @@
+{
+ "topic": "local_food_travel",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Vegetarian travel",
+     "g": "Discover how to find tasty plant-based dishes in very different cuisines.",
+     "p": [
+      "India has a long vegetarian tradition, with dals, curries and dosas found almost everywhere.",
+      "The Levant offers falafel, hummus and salads, and Italy many pastas and pizzas without meat.",
+      "Watch for hidden ingredients like fish sauce, meat stock or lard, and ask kindly when unsure."
+     ],
+     "q": "Which cuisine do you think is the easiest for vegetarians, and why?",
+     "c": "Find one traditionally vegetarian dish from a cuisine you have never tried."
+    },
+    "de": {
+     "t": "Vegetarisch reisen",
+     "g": "Entdecke, wie du in sehr unterschiedlichen Küchen leckere pflanzliche Gerichte findest.",
+     "p": [
+      "Indien hat eine lange vegetarische Tradition, mit Dals, Currys und Dosas fast überall.",
+      "Die Levante bietet Falafel, Hummus und Salate, Italien viele Pasta- und Pizzasorten ohne Fleisch.",
+      "Achte auf versteckte Zutaten wie Fischsauce, Fleischbrühe oder Schmalz und frag freundlich nach."
+     ],
+     "q": "Welche Küche ist deiner Meinung nach am einfachsten für Vegetarier, und warum?",
+     "c": "Finde ein traditionell vegetarisches Gericht aus einer Küche, die du noch nie probiert hast."
+    },
+    "es": {
+     "t": "Viajar siendo vegetariano",
+     "g": "Descubre cómo encontrar platos vegetales sabrosos en cocinas muy distintas.",
+     "p": [
+      "La India tiene una larga tradición vegetariana, con dal, curris y dosas casi en todas partes.",
+      "El Levante ofrece falafel, hummus y ensaladas, e Italia muchas pastas y pizzas sin carne.",
+      "Ojo con ingredientes ocultos como salsa de pescado, caldo de carne o manteca, y pregunta con amabilidad."
+     ],
+     "q": "¿Qué cocina crees que es la más fácil para vegetarianos, y por qué?",
+     "c": "Encuentra un plato tradicionalmente vegetariano de una cocina que nunca has probado."
+    },
+    "fr": {
+     "t": "Voyager en végétarien",
+     "g": "Découvre comment trouver de bons plats végétaux dans des cuisines très différentes.",
+     "p": [
+      "L'Inde a une longue tradition végétarienne, avec dals, currys et dosas presque partout.",
+      "Le Levant offre falafels, houmous et salades, et l'Italie beaucoup de pâtes et pizzas sans viande.",
+      "Attention aux ingrédients cachés comme la sauce de poisson, le bouillon de viande ou le saindoux : demande gentiment."
+     ],
+     "q": "Selon toi, quelle cuisine est la plus facile pour les végétariens, et pourquoi ?",
+     "c": "Trouve un plat traditionnellement végétarien d'une cuisine que tu n'as jamais goûtée."
+    },
+    "it": {
+     "t": "Viaggiare da vegetariani",
+     "g": "Scopri come trovare gustosi piatti vegetali in cucine molto diverse.",
+     "p": [
+      "L'India ha una lunga tradizione vegetariana, con dal, curry e dosa quasi ovunque.",
+      "Il Levante offre falafel, hummus e insalate, l'Italia tante paste e pizze senza carne.",
+      "Attenzione agli ingredienti nascosti come salsa di pesce, brodo di carne o strutto: chiedi con gentilezza."
+     ],
+     "q": "Secondo te quale cucina è la più facile per i vegetariani, e perché?",
+     "c": "Trova un piatto tradizionalmente vegetariano di una cucina che non hai mai provato."
+    },
+    "pt": {
+     "t": "Viajar sendo vegetariano",
+     "g": "Descobre como encontrar pratos vegetais saborosos em cozinhas muito diferentes.",
+     "p": [
+      "A Índia tem uma longa tradição vegetariana, com dal, caris e dosas em quase todo o lado.",
+      "O Levante oferece falafel, húmus e saladas, e a Itália muitas massas e pizzas sem carne.",
+      "Atenção a ingredientes escondidos como molho de peixe, caldo de carne ou banha, e pergunta com simpatia."
+     ],
+     "q": "Que cozinha achas mais fácil para vegetarianos, e porquê?",
+     "c": "Encontra um prato tradicionalmente vegetariano de uma cozinha que nunca provaste."
+    },
+    "pt_BR": {
+     "t": "Viajar sendo vegetariano",
+     "g": "Descubra como encontrar pratos vegetais gostosos em cozinhas bem diferentes.",
+     "p": [
+      "A Índia tem uma longa tradição vegetariana, com dal, curries e dosas em quase todo lugar.",
+      "O Levante oferece falafel, homus e saladas, e a Itália muitas massas e pizzas sem carne.",
+      "Fique de olho em ingredientes escondidos como molho de peixe, caldo de carne ou banha, e pergunte com gentileza."
+     ],
+     "q": "Qual cozinha você acha mais fácil para vegetarianos, e por quê?",
+     "c": "Encontre um prato tradicionalmente vegetariano de uma cozinha que você nunca provou."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tipping customs in general",
+     "g": "Understand how tipping expectations vary from one country to another.",
+     "p": [
+      "In the United States tipping in restaurants is expected and forms a big part of servers' income.",
+      "In Japan tipping is not customary, and excellent service is simply part of the culture.",
+      "Many European countries include service in the bill, and rounding up is a friendly extra."
+     ],
+     "q": "How does tipping work where you live, and what do you think of it?",
+     "c": "Pick two countries you would like to visit and find out their usual tipping habits."
+    },
+    "de": {
+     "t": "Trinkgeld im Überblick",
+     "g": "Verstehe, wie unterschiedlich die Erwartungen ans Trinkgeld von Land zu Land sind.",
+     "p": [
+      "In den USA wird im Restaurant Trinkgeld erwartet, es ist ein großer Teil des Einkommens des Personals.",
+      "In Japan ist Trinkgeld nicht üblich, sehr guter Service gehört einfach zur Kultur.",
+      "In vielen europäischen Ländern ist der Service im Preis enthalten, Aufrunden ist eine nette Geste."
+     ],
+     "q": "Wie funktioniert Trinkgeld bei dir, und was hältst du davon?",
+     "c": "Wähle zwei Länder, die du besuchen möchtest, und finde ihre üblichen Trinkgeldregeln heraus."
+    },
+    "es": {
+     "t": "Costumbres sobre la propina",
+     "g": "Entiende cómo cambian las expectativas de propina de un país a otro.",
+     "p": [
+      "En Estados Unidos la propina en restaurantes se da por hecha y es una gran parte del sueldo de los camareros.",
+      "En Japón no se acostumbra a dejar propina: el servicio excelente forma parte de la cultura.",
+      "En muchos países europeos el servicio va incluido y redondear la cuenta es un detalle amable."
+     ],
+     "q": "¿Cómo funciona la propina donde vives y qué opinas de ella?",
+     "c": "Elige dos países que te gustaría visitar y averigua sus costumbres de propina."
+    },
+    "fr": {
+     "t": "Les pourboires en général",
+     "g": "Comprends comment les usages du pourboire varient d'un pays à l'autre.",
+     "p": [
+      "Aux États-Unis, le pourboire au restaurant est attendu et représente une grande part du revenu des serveurs.",
+      "Au Japon, le pourboire n'est pas d'usage : un service excellent fait simplement partie de la culture.",
+      "Dans beaucoup de pays européens, le service est compris, et arrondir l'addition est un geste sympa."
+     ],
+     "q": "Comment fonctionne le pourboire chez toi, et qu'en penses-tu ?",
+     "c": "Choisis deux pays que tu aimerais visiter et renseigne-toi sur leurs habitudes de pourboire."
+    },
+    "it": {
+     "t": "Le mance in generale",
+     "g": "Capisci come cambiano le aspettative sulla mancia da un paese all'altro.",
+     "p": [
+      "Negli Stati Uniti la mancia al ristorante è attesa ed è una parte importante del reddito dei camerieri.",
+      "In Giappone la mancia non si usa: un servizio eccellente fa semplicemente parte della cultura.",
+      "In molti paesi europei il servizio è incluso nel conto e arrotondare è un gesto gentile in più."
+     ],
+     "q": "Come funziona la mancia dove vivi, e cosa ne pensi?",
+     "c": "Scegli due paesi che vorresti visitare e scopri le loro abitudini sulla mancia."
+    },
+    "pt": {
+     "t": "Costumes de gorjeta em geral",
+     "g": "Percebe como as expectativas de gorjeta mudam de país para país.",
+     "p": [
+      "Nos Estados Unidos a gorjeta nos restaurantes é esperada e é uma grande parte do rendimento dos empregados.",
+      "No Japão a gorjeta não é costume: um serviço excelente faz simplesmente parte da cultura.",
+      "Em muitos países europeus o serviço está incluído e arredondar a conta é um gesto simpático."
+     ],
+     "q": "Como funciona a gorjeta onde vives, e o que achas dela?",
+     "c": "Escolhe dois países que gostavas de visitar e descobre os hábitos de gorjeta de cada um."
+    },
+    "pt_BR": {
+     "t": "Costumes de gorjeta em geral",
+     "g": "Entenda como as expectativas de gorjeta mudam de um país para outro.",
+     "p": [
+      "Nos Estados Unidos a gorjeta em restaurantes é esperada e é uma grande parte da renda dos garçons.",
+      "No Japão a gorjeta não é costume: um atendimento excelente simplesmente faz parte da cultura.",
+      "Em muitos países europeus o serviço já vem incluído e arredondar a conta é um gesto simpático."
+     ],
+     "q": "Como funciona a gorjeta onde você mora, e o que você acha disso?",
+     "c": "Escolha dois países que você gostaria de visitar e descubra os hábitos de gorjeta de cada um."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paying the bill",
+     "g": "Learn how to ask for the bill, split it and follow local table service habits.",
+     "p": [
+      "In much of Europe the bill only comes when you ask, because rushing guests is seen as impolite.",
+      "In some places you pay at the counter or at the till, often taking a ticket or ordering slip with you.",
+      "Splitting can be simple or awkward, so agree with friends beforehand and ask if separate bills are possible."
+     ],
+     "q": "Do you usually split the bill with friends, or take turns paying?",
+     "c": "Learn how to say the bill, please in the language of a country you dream of visiting."
+    },
+    "de": {
+     "t": "Die Rechnung bezahlen",
+     "g": "Lerne, nach der Rechnung zu fragen, sie zu teilen und die lokalen Gepflogenheiten zu beachten.",
+     "p": [
+      "In weiten Teilen Europas kommt die Rechnung erst, wenn du fragst, denn Gäste zu drängen gilt als unhöflich.",
+      "Mancherorts zahlt man an der Theke oder Kasse und nimmt dafür einen Bon oder Zettel mit.",
+      "Teilen kann einfach oder knifflig sein: Sprecht euch vorher ab und fragt, ob getrennte Rechnungen gehen."
+     ],
+     "q": "Teilst du die Rechnung meist mit Freunden, oder zahlt ihr abwechselnd?",
+     "c": "Lerne, wie man die Rechnung, bitte in der Sprache eines Traumreiselandes sagt."
+    },
+    "es": {
+     "t": "Pagar la cuenta",
+     "g": "Aprende a pedir la cuenta, dividirla y seguir las costumbres locales del servicio.",
+     "p": [
+      "En gran parte de Europa la cuenta solo llega cuando la pides, porque meter prisa al cliente se ve descortés.",
+      "En algunos sitios se paga en la barra o en caja, a menudo llevando un ticket o una comanda.",
+      "Dividir puede ser fácil o incómodo: acordadlo antes y pregunta si es posible pagar por separado."
+     ],
+     "q": "¿Sueles dividir la cuenta con amigos o pagáis por turnos?",
+     "c": "Aprende a decir la cuenta, por favor en el idioma de un país que sueñas visitar."
+    },
+    "fr": {
+     "t": "Payer l'addition",
+     "g": "Apprends à demander l'addition, à la partager et à suivre les habitudes locales.",
+     "p": [
+      "Dans une grande partie de l'Europe, l'addition n'arrive que si tu la demandes : presser les clients serait impoli.",
+      "Ailleurs, on paie au comptoir ou en caisse, souvent avec un ticket ou un bon de commande.",
+      "Partager peut être simple ou gênant : mettez-vous d'accord avant et demande si des notes séparées sont possibles."
+     ],
+     "q": "Partages-tu souvent l'addition entre amis, ou payez-vous chacun votre tour ?",
+     "c": "Apprends à dire l'addition, s'il vous plaît dans la langue d'un pays qui te fait rêver."
+    },
+    "it": {
+     "t": "Pagare il conto",
+     "g": "Impara a chiedere il conto, dividerlo e seguire le abitudini locali del servizio.",
+     "p": [
+      "In gran parte d'Europa il conto arriva solo se lo chiedi, perché mettere fretta ai clienti è scortese.",
+      "In alcuni posti si paga al banco o alla cassa, spesso portando con sé uno scontrino o un foglietto.",
+      "Dividere può essere facile o imbarazzante: mettetevi d'accordo prima e chiedi se si può pagare separatamente."
+     ],
+     "q": "Di solito dividi il conto con gli amici o pagate a turno?",
+     "c": "Impara a dire il conto, per favore nella lingua di un paese che sogni di visitare."
+    },
+    "pt": {
+     "t": "Pagar a conta",
+     "g": "Aprende a pedir a conta, dividi-la e seguir os hábitos locais de serviço.",
+     "p": [
+      "Em grande parte da Europa a conta só chega quando a pedes, porque apressar os clientes é falta de educação.",
+      "Nalguns sítios paga-se ao balcão ou na caixa, muitas vezes levando um talão ou papel do pedido.",
+      "Dividir pode ser simples ou constrangedor: combinem antes e pergunta se é possível pagar em separado."
+     ],
+     "q": "Costumas dividir a conta com amigos, ou pagam à vez?",
+     "c": "Aprende a dizer a conta, por favor na língua de um país que sonhas visitar."
+    },
+    "pt_BR": {
+     "t": "Pagar a conta",
+     "g": "Aprenda a pedir a conta, dividir e seguir os costumes locais de atendimento.",
+     "p": [
+      "Em boa parte da Europa a conta só vem quando você pede, porque apressar o cliente é visto como falta de educação.",
+      "Em alguns lugares se paga no balcão ou no caixa, muitas vezes levando uma comanda ou um tíquete.",
+      "Dividir pode ser fácil ou constrangedor: combinem antes e pergunte se dá para pagar separado."
+     ],
+     "q": "Você costuma dividir a conta com os amigos ou vocês revezam quem paga?",
+     "c": "Aprenda a dizer a conta, por favor no idioma de um país que você sonha visitar."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Table manners around the world",
+     "g": "Discover small table habits that show respect wherever you eat.",
+     "p": [
+      "In Japan saying itadakimasu before eating and gochisosama after thanks everyone who made the meal.",
+      "In many countries of the Middle East, Africa and South Asia, food is eaten or passed with the right hand.",
+      "In France and Italy bread often rests beside the plate, and hands stay visible on the table."
+     ],
+     "q": "Which table manner from your culture would surprise a visitor?",
+     "c": "Learn one table custom from a country you would like to visit and try it at your next meal."
+    },
+    "de": {
+     "t": "Tischmanieren weltweit",
+     "g": "Entdecke kleine Gewohnheiten bei Tisch, die überall Respekt zeigen.",
+     "p": [
+      "In Japan dankt man mit itadakimasu vor dem Essen und gochisosama danach allen, die das Mahl möglich machten.",
+      "In vielen Ländern Nahost, Afrikas und Südasiens isst und reicht man Speisen mit der rechten Hand.",
+      "In Frankreich und Italien liegt das Brot oft neben dem Teller, und die Hände bleiben sichtbar auf dem Tisch."
+     ],
+     "q": "Welche Tischsitte deiner Kultur würde Besucher überraschen?",
+     "c": "Lerne eine Tischsitte aus einem Wunschreiseland und probiere sie bei deiner nächsten Mahlzeit."
+    },
+    "es": {
+     "t": "Modales en la mesa por el mundo",
+     "g": "Descubre pequeños hábitos en la mesa que muestran respeto allá donde comas.",
+     "p": [
+      "En Japón se dice itadakimasu antes de comer y gochisosama después, para agradecer a quien hizo posible la comida.",
+      "En muchos países de Oriente Medio, África y el sur de Asia se come o se pasa la comida con la mano derecha.",
+      "En Francia e Italia el pan suele reposar junto al plato y las manos se mantienen visibles sobre la mesa."
+     ],
+     "q": "¿Qué costumbre en la mesa de tu cultura sorprendería a un visitante?",
+     "c": "Aprende una costumbre en la mesa de un país que te gustaría visitar y pruébala en tu próxima comida."
+    },
+    "fr": {
+     "t": "Les bonnes manières à table dans le monde",
+     "g": "Découvre de petites habitudes à table qui montrent du respect partout.",
+     "p": [
+      "Au Japon, on dit itadakimasu avant de manger et gochisosama après pour remercier ceux qui ont fait le repas.",
+      "Dans bien des pays du Moyen-Orient, d'Afrique et d'Asie du Sud, on mange ou passe les plats de la main droite.",
+      "En France et en Italie, le pain se pose souvent à côté de l'assiette et les mains restent visibles sur la table."
+     ],
+     "q": "Quelle habitude à table de ta culture surprendrait un visiteur ?",
+     "c": "Apprends une coutume de table d'un pays qui t'attire et essaie-la à ton prochain repas."
+    },
+    "it": {
+     "t": "Le buone maniere a tavola nel mondo",
+     "g": "Scopri piccole abitudini a tavola che mostrano rispetto ovunque tu mangi.",
+     "p": [
+      "In Giappone si dice itadakimasu prima di mangiare e gochisosama dopo, per ringraziare chi ha reso possibile il pasto.",
+      "In molti paesi del Medio Oriente, dell'Africa e dell'Asia meridionale si mangia o si passa il cibo con la mano destra.",
+      "In Francia e in Italia il pane resta spesso accanto al piatto e le mani stanno in vista sul tavolo."
+     ],
+     "q": "Quale abitudine a tavola della tua cultura sorprenderebbe un visitatore?",
+     "c": "Impara un'usanza a tavola di un paese che vorresti visitare e provala al prossimo pasto."
+    },
+    "pt": {
+     "t": "Boas maneiras à mesa pelo mundo",
+     "g": "Descobre pequenos hábitos à mesa que mostram respeito onde quer que comas.",
+     "p": [
+      "No Japão diz-se itadakimasu antes de comer e gochisosama depois, para agradecer a quem tornou a refeição possível.",
+      "Em muitos países do Médio Oriente, de África e do sul da Ásia come-se ou passa-se a comida com a mão direita.",
+      "Em França e Itália o pão fica muitas vezes ao lado do prato e as mãos ficam visíveis em cima da mesa."
+     ],
+     "q": "Que costume à mesa da tua cultura surpreenderia um visitante?",
+     "c": "Aprende um costume à mesa de um país que gostavas de visitar e experimenta-o na próxima refeição."
+    },
+    "pt_BR": {
+     "t": "Boas maneiras à mesa pelo mundo",
+     "g": "Descubra pequenos hábitos à mesa que mostram respeito onde quer que você coma.",
+     "p": [
+      "No Japão se diz itadakimasu antes de comer e gochisosama depois, para agradecer a quem fez a refeição possível.",
+      "Em muitos países do Oriente Médio, da África e do sul da Ásia se come ou se passa a comida com a mão direita.",
+      "Na França e na Itália o pão costuma ficar ao lado do prato e as mãos ficam visíveis sobre a mesa."
+     ],
+     "q": "Qual costume à mesa da sua cultura surpreenderia um visitante?",
+     "c": "Aprenda um costume à mesa de um país que você gostaria de visitar e teste na próxima refeição."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating with chopsticks",
+     "g": "Learn the basic technique and good manners for eating with chopsticks.",
+     "p": [
+      "Hold the lower stick still against your ring finger and move only the upper one, like a pencil.",
+      "Never stand chopsticks upright in rice or pass food from chopstick to chopstick: both are seen as very impolite.",
+      "Rest them on the holder or across your bowl, and lift a rice bowl closer to your mouth where that is normal."
+     ],
+     "q": "Are you comfortable with chopsticks, or still practising?",
+     "c": "Practise picking up five small items like peanuts or beans with chopsticks today."
+    },
+    "de": {
+     "t": "Mit Stäbchen essen",
+     "g": "Lerne die Grundtechnik und die guten Manieren beim Essen mit Stäbchen.",
+     "p": [
+      "Halte das untere Stäbchen ruhig am Ringfinger und bewege nur das obere, wie einen Stift.",
+      "Stecke Stäbchen nie senkrecht in Reis und reiche kein Essen von Stäbchen zu Stäbchen: beides gilt als sehr unhöflich.",
+      "Leg sie auf die Ablage oder quer über die Schale; die Reisschale darf man dort, wo es üblich ist, anheben."
+     ],
+     "q": "Kommst du mit Stäbchen gut zurecht, oder übst du noch?",
+     "c": "Übe heute, fünf kleine Dinge wie Erdnüsse oder Bohnen mit Stäbchen aufzunehmen."
+    },
+    "es": {
+     "t": "Comer con palillos",
+     "g": "Aprende la técnica básica y los buenos modales para comer con palillos.",
+     "p": [
+      "Mantén quieto el palillo de abajo apoyado en el anular y mueve solo el de arriba, como un lápiz.",
+      "No claves los palillos de pie en el arroz ni pases comida de palillo a palillo: ambas cosas se ven muy descorteses.",
+      "Apóyalos en el soporte o sobre el cuenco, y acerca el cuenco de arroz a la boca donde sea lo normal."
+     ],
+     "q": "¿Te manejas bien con los palillos o todavía estás practicando?",
+     "c": "Practica hoy a coger cinco cosas pequeñas, como cacahuetes o judías, con palillos."
+    },
+    "fr": {
+     "t": "Manger avec des baguettes",
+     "g": "Apprends la technique de base et les bonnes manières avec des baguettes.",
+     "p": [
+      "Garde la baguette du bas immobile contre l'annulaire et bouge seulement celle du haut, comme un crayon.",
+      "Ne plante jamais les baguettes dans le riz et ne passe pas d'aliment de baguette à baguette : c'est très impoli.",
+      "Pose-les sur le repose-baguettes ou sur le bol, et rapproche le bol de riz de ta bouche là où c'est l'usage."
+     ],
+     "q": "Es-tu à l'aise avec les baguettes, ou encore en train d'apprendre ?",
+     "c": "Entraîne-toi aujourd'hui à attraper cinq petits objets, comme des cacahuètes, avec des baguettes."
+    },
+    "it": {
+     "t": "Mangiare con le bacchette",
+     "g": "Impara la tecnica di base e le buone maniere per mangiare con le bacchette.",
+     "p": [
+      "Tieni ferma la bacchetta inferiore contro l'anulare e muovi solo quella superiore, come una matita.",
+      "Non piantare mai le bacchette nel riso e non passare cibo da bacchetta a bacchetta: è considerato molto scortese.",
+      "Appoggiale sul poggia-bacchette o sulla ciotola, e avvicina la ciotola di riso alla bocca dove si usa."
+     ],
+     "q": "Te la cavi con le bacchette, o ti stai ancora esercitando?",
+     "c": "Esercitati oggi a prendere cinque piccoli oggetti, come arachidi o fagioli, con le bacchette."
+    },
+    "pt": {
+     "t": "Comer com pauzinhos",
+     "g": "Aprende a técnica básica e as boas maneiras para comer com pauzinhos.",
+     "p": [
+      "Mantém o pauzinho de baixo parado, apoiado no anelar, e mexe só o de cima, como um lápis.",
+      "Nunca espetes os pauzinhos na vertical no arroz nem passes comida de pauzinho para pauzinho: é muito indelicado.",
+      "Pousa-os no suporte ou sobre a tigela, e aproxima a tigela de arroz da boca onde isso é normal."
+     ],
+     "q": "Dás-te bem com pauzinhos, ou ainda estás a praticar?",
+     "c": "Pratica hoje apanhar cinco coisas pequenas, como amendoins ou feijões, com pauzinhos."
+    },
+    "pt_BR": {
+     "t": "Comer com hashi",
+     "g": "Aprenda a técnica básica e as boas maneiras para comer com hashi.",
+     "p": [
+      "Deixe a vareta de baixo parada, apoiada no dedo anelar, e mexa só a de cima, como um lápis.",
+      "Nunca finque o hashi em pé no arroz nem passe comida de hashi para hashi: as duas coisas são muito mal vistas.",
+      "Apoie no suporte ou sobre a tigela, e aproxime a tigela de arroz da boca onde isso é normal."
+     ],
+     "q": "Você se vira bem com hashi ou ainda está praticando?",
+     "c": "Pratique hoje pegar cinco coisinhas, como amendoins ou feijões, com hashi."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating with your hands",
+     "g": "Learn where hands are the main utensil and how to eat that way gracefully.",
+     "p": [
+      "In India, Sri Lanka, Ethiopia, much of the Middle East and West Africa, eating by hand is common and valued.",
+      "Wash your hands before and after, and use your right hand, keeping the left for other tasks.",
+      "Use your fingertips, not the whole palm, and a piece of bread or a ball of rice to scoop food neatly."
+     ],
+     "q": "Which dishes do you already eat with your hands without thinking about it?",
+     "c": "Try eating one meal or snack today with your right hand only, using fingertips."
+    },
+    "de": {
+     "t": "Mit den Händen essen",
+     "g": "Lerne, wo die Hände das wichtigste Besteck sind und wie man so elegant isst.",
+     "p": [
+      "In Indien, Sri Lanka, Äthiopien, großen Teilen Nahosts und Westafrika ist Essen mit der Hand üblich und geschätzt.",
+      "Wasch dir vorher und nachher die Hände und nimm die rechte Hand, die linke bleibt für anderes.",
+      "Nutze die Fingerspitzen statt der ganzen Hand und ein Stück Brot oder ein Reisbällchen zum Aufnehmen."
+     ],
+     "q": "Welche Gerichte isst du schon ganz selbstverständlich mit den Händen?",
+     "c": "Iss heute eine Mahlzeit oder einen Snack nur mit den Fingerspitzen der rechten Hand."
+    },
+    "es": {
+     "t": "Comer con las manos",
+     "g": "Aprende dónde las manos son el cubierto principal y cómo comer así con elegancia.",
+     "p": [
+      "En la India, Sri Lanka, Etiopía, gran parte de Oriente Medio y África occidental comer con la mano es habitual y apreciado.",
+      "Lávate las manos antes y después, y usa la derecha, dejando la izquierda para otras tareas.",
+      "Usa las yemas de los dedos, no toda la palma, y un trozo de pan o una bolita de arroz para recoger la comida."
+     ],
+     "q": "¿Qué platos ya comes con las manos sin pensarlo?",
+     "c": "Prueba hoy a comer algo solo con la mano derecha, usando las yemas de los dedos."
+    },
+    "fr": {
+     "t": "Manger avec les mains",
+     "g": "Apprends où les mains sont le principal couvert et comment manger ainsi avec élégance.",
+     "p": [
+      "En Inde, au Sri Lanka, en Éthiopie, dans une grande partie du Moyen-Orient et en Afrique de l'Ouest, c'est courant et apprécié.",
+      "Lave-toi les mains avant et après, et utilise la main droite, la gauche étant réservée à d'autres usages.",
+      "Utilise le bout des doigts, pas toute la paume, et un morceau de pain ou une boulette de riz pour saisir."
+     ],
+     "q": "Quels plats manges-tu déjà avec les mains sans y penser ?",
+     "c": "Essaie aujourd'hui de manger un repas ou un en-cas uniquement du bout des doigts de la main droite."
+    },
+    "it": {
+     "t": "Mangiare con le mani",
+     "g": "Impara dove le mani sono la posata principale e come mangiare così con eleganza.",
+     "p": [
+      "In India, Sri Lanka, Etiopia, gran parte del Medio Oriente e Africa occidentale mangiare con le mani è comune e apprezzato.",
+      "Lavati le mani prima e dopo e usa la destra, lasciando la sinistra per altri compiti.",
+      "Usa la punta delle dita, non tutto il palmo, e un pezzo di pane o una pallina di riso per raccogliere il cibo."
+     ],
+     "q": "Quali piatti mangi già con le mani senza pensarci?",
+     "c": "Prova oggi a mangiare un pasto o uno spuntino solo con la punta delle dita della mano destra."
+    },
+    "pt": {
+     "t": "Comer com as mãos",
+     "g": "Aprende onde as mãos são o talher principal e como comer assim com elegância.",
+     "p": [
+      "Na Índia, Sri Lanka, Etiópia, grande parte do Médio Oriente e África Ocidental comer à mão é comum e apreciado.",
+      "Lava as mãos antes e depois, e usa a mão direita, deixando a esquerda para outras tarefas.",
+      "Usa as pontas dos dedos, não a palma toda, e um pedaço de pão ou uma bolinha de arroz para apanhar a comida."
+     ],
+     "q": "Que pratos já comes com as mãos sem pensar nisso?",
+     "c": "Experimenta hoje comer uma refeição ou lanche só com as pontas dos dedos da mão direita."
+    },
+    "pt_BR": {
+     "t": "Comer com as mãos",
+     "g": "Aprenda onde as mãos são o talher principal e como comer assim com elegância.",
+     "p": [
+      "Na Índia, Sri Lanka, Etiópia, boa parte do Oriente Médio e na África Ocidental comer com a mão é comum e valorizado.",
+      "Lave as mãos antes e depois, e use a mão direita, deixando a esquerda para outras tarefas.",
+      "Use as pontas dos dedos, não a palma inteira, e um pedaço de pão ou um bolinho de arroz para pegar a comida."
+     ],
+     "q": "Quais pratos você já come com as mãos sem nem pensar?",
+     "c": "Tente hoje comer uma refeição ou lanche só com as pontas dos dedos da mão direita."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing plates and family style",
+     "g": "Learn how tables where everything is shared work and how to join in gracefully.",
+     "p": [
+      "In China, Korea, Spain, Ethiopia and many other places, dishes go in the middle for everyone to enjoy.",
+      "Take a modest portion first, try a bit of everything and leave some for others before taking more.",
+      "Use serving spoons when provided, and let hosts or elders begin, as that is a kind sign of respect."
+     ],
+     "q": "Do you prefer your own plate or sharing everything at the table?",
+     "c": "At your next meal with others, suggest sharing two dishes and notice how the conversation changes."
+    },
+    "de": {
+     "t": "Teilen und Essen in Familienart",
+     "g": "Lerne, wie Tische funktionieren, an denen alles geteilt wird, und wie du dich einfügst.",
+     "p": [
+      "In China, Korea, Spanien, Äthiopien und vielen anderen Orten stehen die Gerichte für alle in der Mitte.",
+      "Nimm zuerst eine kleine Portion, probiere von allem und lass anderen etwas übrig, bevor du nachnimmst.",
+      "Benutze Vorlegelöffel, wenn es sie gibt, und lass Gastgeber oder Ältere beginnen: ein schönes Zeichen von Respekt."
+     ],
+     "q": "Hast du lieber deinen eigenen Teller, oder teilst du gern alles am Tisch?",
+     "c": "Schlag beim nächsten gemeinsamen Essen vor, zwei Gerichte zu teilen, und achte auf das Gespräch."
+    },
+    "es": {
+     "t": "Compartir platos al estilo familiar",
+     "g": "Aprende cómo funcionan las mesas donde todo se comparte y cómo unirte con gracia.",
+     "p": [
+      "En China, Corea, España, Etiopía y muchos otros lugares los platos van al centro para todos.",
+      "Sírvete primero una porción modesta, prueba un poco de todo y deja para los demás antes de repetir.",
+      "Usa los cubiertos de servir si los hay y deja que empiecen los anfitriones o los mayores: es un gesto de respeto."
+     ],
+     "q": "¿Prefieres tu propio plato o compartirlo todo en la mesa?",
+     "c": "En tu próxima comida con otros, propón compartir dos platos y fíjate en cómo cambia la charla."
+    },
+    "fr": {
+     "t": "Partager les plats en famille",
+     "g": "Apprends comment fonctionnent les tables où tout se partage et comment t'y joindre avec aisance.",
+     "p": [
+      "En Chine, en Corée, en Espagne, en Éthiopie et ailleurs, les plats sont posés au centre pour tous.",
+      "Sers-toi d'abord une petite portion, goûte un peu de tout et laisse-en aux autres avant de te resservir.",
+      "Utilise les couverts de service s'il y en a et laisse commencer les hôtes ou les aînés : un joli signe de respect."
+     ],
+     "q": "Tu préfères ton assiette à toi ou tout partager à table ?",
+     "c": "Lors de ton prochain repas à plusieurs, propose de partager deux plats et observe la conversation."
+    },
+    "it": {
+     "t": "Piatti condivisi in stile familiare",
+     "g": "Impara come funzionano le tavole dove si condivide tutto e come unirti con garbo.",
+     "p": [
+      "In Cina, Corea, Spagna, Etiopia e tanti altri luoghi i piatti stanno al centro per tutti.",
+      "Prendi prima una porzione modesta, assaggia un po' di tutto e lascia qualcosa agli altri prima di fare il bis.",
+      "Usa le posate di servizio se ci sono e lascia iniziare padroni di casa o anziani: è un bel segno di rispetto."
+     ],
+     "q": "Preferisci il tuo piatto o condividere tutto a tavola?",
+     "c": "Al prossimo pasto in compagnia, proponi di condividere due piatti e osserva come cambia la conversazione."
+    },
+    "pt": {
+     "t": "Partilhar pratos à moda de família",
+     "g": "Aprende como funcionam as mesas onde tudo se partilha e como participar com à-vontade.",
+     "p": [
+      "Na China, Coreia, Espanha, Etiópia e em muitos outros lugares os pratos vão para o centro, para todos.",
+      "Serve-te primeiro de uma porção modesta, prova um pouco de tudo e deixa para os outros antes de repetir.",
+      "Usa os talheres de servir quando os houver e deixa os anfitriões ou os mais velhos começar: é sinal de respeito."
+     ],
+     "q": "Preferes o teu próprio prato ou partilhar tudo à mesa?",
+     "c": "Na próxima refeição com outras pessoas, sugere partilhar dois pratos e repara como muda a conversa."
+    },
+    "pt_BR": {
+     "t": "Compartilhar pratos no estilo família",
+     "g": "Aprenda como funcionam as mesas em que tudo é compartilhado e como participar numa boa.",
+     "p": [
+      "Na China, Coreia, Espanha, Etiópia e em muitos outros lugares os pratos vão para o centro, para todos.",
+      "Sirva primeiro uma porção modesta, prove um pouco de tudo e deixe para os outros antes de repetir.",
+      "Use os talheres de servir quando houver e deixe os anfitriões ou os mais velhos começarem: é sinal de respeito."
+     ],
+     "q": "Você prefere seu próprio prato ou compartilhar tudo na mesa?",
+     "c": "Na próxima refeição com outras pessoas, sugira dividir dois pratos e repare como a conversa muda."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Street food basics",
+     "g": "Discover why street food is a travel highlight and how to choose good stalls.",
+     "p": [
+      "Street food is often where a city's daily flavours live, cooked fast, fresh and with decades of practice.",
+      "Choose busy stalls with a quick turnover, food cooked in front of you and a queue of locals.",
+      "Carry small change, eat where the vendor suggests and enjoy the chance to chat while you wait."
+     ],
+     "q": "What is the best street food you have ever eaten, at home or abroad?",
+     "c": "Name three street foods from three different countries that you would love to taste."
+    },
+    "de": {
+     "t": "Streetfood-Grundlagen",
+     "g": "Entdecke, warum Streetfood ein Reise-Highlight ist und wie du gute Stände wählst.",
+     "p": [
+      "Streetfood zeigt oft den Alltagsgeschmack einer Stadt: schnell, frisch und mit jahrzehntelanger Übung gekocht.",
+      "Wähle belebte Stände mit hohem Umsatz, frisch vor dir Gekochtem und einer Schlange von Einheimischen.",
+      "Hab Kleingeld dabei, iss dort, wo der Verkäufer es vorschlägt, und plaudere beim Warten ein wenig."
+     ],
+     "q": "Was war das beste Streetfood, das du je gegessen hast, zu Hause oder unterwegs?",
+     "c": "Nenne drei Streetfoods aus drei Ländern, die du unbedingt probieren möchtest."
+    },
+    "es": {
+     "t": "Lo básico de la comida callejera",
+     "g": "Descubre por qué la comida callejera es lo mejor de un viaje y cómo elegir buenos puestos.",
+     "p": [
+      "En la calle suele vivir el sabor diario de una ciudad: cocina rápida, fresca y con décadas de práctica.",
+      "Elige puestos concurridos, con mucha rotación, comida hecha delante de ti y cola de gente local.",
+      "Lleva monedas, come donde te indique el vendedor y aprovecha la espera para charlar."
+     ],
+     "q": "¿Cuál es la mejor comida callejera que has probado, en casa o fuera?",
+     "c": "Nombra tres comidas callejeras de tres países distintos que te encantaría probar."
+    },
+    "fr": {
+     "t": "Les bases de la street food",
+     "g": "Découvre pourquoi la cuisine de rue est un temps fort du voyage et comment choisir un bon stand.",
+     "p": [
+      "C'est souvent dans la rue que vivent les saveurs du quotidien : cuisine rapide, fraîche, maîtrisée depuis des décennies.",
+      "Choisis les stands animés, où ça tourne vite, où l'on cuisine devant toi et où les habitants font la queue.",
+      "Prévois de la monnaie, mange là où le vendeur te l'indique et profite de l'attente pour discuter."
+     ],
+     "q": "Quelle est la meilleure street food que tu aies mangée, chez toi ou ailleurs ?",
+     "c": "Cite trois spécialités de rue de trois pays différents que tu rêves de goûter."
+    },
+    "it": {
+     "t": "Le basi dello street food",
+     "g": "Scopri perché il cibo di strada è un momento clou del viaggio e come scegliere i chioschi giusti.",
+     "p": [
+      "Lo street food è spesso dove vivono i sapori quotidiani di una città: veloce, fresco e frutto di decenni di pratica.",
+      "Scegli chioschi affollati, con ricambio rapido, cibo cucinato davanti a te e una fila di gente del posto.",
+      "Porta spiccioli, mangia dove ti indica il venditore e approfitta dell'attesa per fare due chiacchiere."
+     ],
+     "q": "Qual è il miglior cibo di strada che tu abbia mai mangiato, a casa o all'estero?",
+     "c": "Nomina tre cibi di strada di tre paesi diversi che ti piacerebbe assaggiare."
+    },
+    "pt": {
+     "t": "O básico da comida de rua",
+     "g": "Descobre porque é que a comida de rua é um ponto alto da viagem e como escolher boas bancas.",
+     "p": [
+      "É muitas vezes na rua que vivem os sabores do dia a dia: comida rápida, fresca e feita com décadas de prática.",
+      "Escolhe bancas movimentadas, com muita saída, comida feita à tua frente e fila de locais.",
+      "Leva trocos, come onde o vendedor sugerir e aproveita a espera para conversar."
+     ],
+     "q": "Qual foi a melhor comida de rua que já comeste, cá ou lá fora?",
+     "c": "Diz três comidas de rua de três países diferentes que adorarias provar."
+    },
+    "pt_BR": {
+     "t": "O básico da comida de rua",
+     "g": "Descubra por que a comida de rua é um ponto alto da viagem e como escolher boas barracas.",
+     "p": [
+      "É muitas vezes na rua que vive o sabor do dia a dia de uma cidade: comida rápida, fresca e feita há décadas.",
+      "Escolha barracas movimentadas, com muita saída, comida feita na sua frente e fila de moradores.",
+      "Leve trocado, coma onde o vendedor indicar e aproveite a espera para bater papo."
+     ],
+     "q": "Qual foi a melhor comida de rua que você já comeu, aqui ou fora?",
+     "c": "Cite três comidas de rua de três países diferentes que você adoraria provar."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food hygiene for travellers",
+     "g": "Learn simple habits for enjoying food and water safely on the road.",
+     "p": [
+      "Wash or sanitise your hands before eating, especially after markets, buses and handling money.",
+      "Where tap water is not drinkable, choose sealed or filtered water and ask whether ice is made from it.",
+      "Hot, freshly cooked food and fruit you peel yourself are usually great, worry-free choices."
+     ],
+     "q": "Do you have a habit that keeps you feeling good when you eat on trips?",
+     "c": "Find out whether tap water is safe to drink in one country you would like to visit."
+    },
+    "de": {
+     "t": "Lebensmittelhygiene auf Reisen",
+     "g": "Lerne einfache Gewohnheiten, um Essen und Wasser unterwegs sicher zu genießen.",
+     "p": [
+      "Wasch oder desinfiziere die Hände vor dem Essen, vor allem nach Märkten, Bussen und Bargeld.",
+      "Wo Leitungswasser nicht trinkbar ist, nimm verschlossenes oder gefiltertes Wasser und frag, woraus das Eis ist.",
+      "Heißes, frisch gekochtes Essen und Obst, das du selbst schälst, sind meist tolle, sorgenfreie Optionen."
+     ],
+     "q": "Hast du eine Gewohnheit, mit der du dich beim Essen auf Reisen wohlfühlst?",
+     "c": "Finde heraus, ob man in einem deiner Wunschreiseländer Leitungswasser trinken kann."
+    },
+    "es": {
+     "t": "Higiene alimentaria para viajeros",
+     "g": "Aprende hábitos sencillos para disfrutar de la comida y el agua con tranquilidad en el camino.",
+     "p": [
+      "Lávate o desinfecta las manos antes de comer, sobre todo tras mercados, autobuses y manejar dinero.",
+      "Donde el agua del grifo no es potable, elige agua embotellada o filtrada y pregunta de qué es el hielo.",
+      "La comida caliente y recién hecha y la fruta que pelas tú suelen ser opciones estupendas y tranquilas."
+     ],
+     "q": "¿Tienes algún hábito que te ayude a sentirte bien comiendo de viaje?",
+     "c": "Averigua si el agua del grifo es potable en un país que te gustaría visitar."
+    },
+    "fr": {
+     "t": "L'hygiène alimentaire en voyage",
+     "g": "Apprends des habitudes simples pour profiter de la nourriture et de l'eau en toute sérénité.",
+     "p": [
+      "Lave ou désinfecte tes mains avant de manger, surtout après les marchés, les bus et l'argent liquide.",
+      "Là où l'eau du robinet n'est pas potable, choisis de l'eau scellée ou filtrée et demande d'où vient la glace.",
+      "Les plats chauds et fraîchement cuits et les fruits que tu épluches toi-même sont souvent des choix parfaits."
+     ],
+     "q": "As-tu une habitude qui t'aide à te sentir bien quand tu manges en voyage ?",
+     "c": "Vérifie si l'eau du robinet est potable dans un pays que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Igiene alimentare per chi viaggia",
+     "g": "Impara abitudini semplici per gustare cibo e acqua in tranquillità durante il viaggio.",
+     "p": [
+      "Lava o igienizza le mani prima di mangiare, soprattutto dopo mercati, autobus e contanti.",
+      "Dove l'acqua del rubinetto non è potabile, scegli acqua sigillata o filtrata e chiedi con cosa è fatto il ghiaccio.",
+      "Cibi caldi appena cotti e frutta che sbucci tu sono di solito scelte ottime e senza pensieri."
+     ],
+     "q": "Hai un'abitudine che ti fa stare bene quando mangi in viaggio?",
+     "c": "Scopri se l'acqua del rubinetto è potabile in un paese che vorresti visitare."
+    },
+    "pt": {
+     "t": "Higiene alimentar para viajantes",
+     "g": "Aprende hábitos simples para aproveitar a comida e a água em segurança na viagem.",
+     "p": [
+      "Lava ou desinfeta as mãos antes de comer, sobretudo depois de mercados, autocarros e de mexer em dinheiro.",
+      "Onde a água da torneira não é potável, escolhe água selada ou filtrada e pergunta de que é feito o gelo.",
+      "Comida quente acabada de fazer e fruta que descascas tu são normalmente ótimas escolhas, sem preocupações."
+     ],
+     "q": "Tens algum hábito que te ajuda a sentires-te bem quando comes em viagem?",
+     "c": "Descobre se a água da torneira é potável num país que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Higiene alimentar para viajantes",
+     "g": "Aprenda hábitos simples para curtir comida e água com segurança na estrada.",
+     "p": [
+      "Lave ou higienize as mãos antes de comer, principalmente depois de feiras, ônibus e de mexer em dinheiro.",
+      "Onde a água da torneira não é potável, escolha água lacrada ou filtrada e pergunte de que é feito o gelo.",
+      "Comida quente feita na hora e fruta que você mesmo descasca costumam ser ótimas escolhas, sem preocupação."
+     ],
+     "q": "Você tem algum hábito que te ajuda a se sentir bem comendo em viagem?",
+     "c": "Descubra se a água da torneira é potável em um país que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding where locals eat",
+     "g": "Learn the signs of a good local spot and how to avoid tourist traps.",
+     "p": [
+      "Good signs: a short menu in the local language, regulars chatting with staff and tables full at local meal times.",
+      "Warning signs: photo menus in many languages, staff calling you in from the street and prime views over the main square.",
+      "Walk two or three streets away from the big sights and ask shopkeepers or your host where they like to eat."
+     ],
+     "q": "How do you usually choose a place to eat in a new city?",
+     "c": "Write down three questions you could ask a local to find their favourite place to eat."
+    },
+    "de": {
+     "t": "Finden, wo Einheimische essen",
+     "g": "Lerne die Zeichen eines guten lokalen Lokals und wie du Touristenfallen meidest.",
+     "p": [
+      "Gute Zeichen: kurze Karte in der Landessprache, Stammgäste im Gespräch mit dem Personal, volle Tische zur Essenszeit.",
+      "Warnzeichen: Fotokarten in vielen Sprachen, Anwerber auf der Straße und Plätze mit Blick auf den Hauptplatz.",
+      "Geh zwei, drei Straßen weg von den Sehenswürdigkeiten und frag Ladenbesitzer oder Gastgeber nach ihrem Lieblingsort."
+     ],
+     "q": "Wie wählst du in einer neuen Stadt normalerweise ein Lokal aus?",
+     "c": "Schreib drei Fragen auf, mit denen du Einheimische nach ihrem Lieblingslokal fragen kannst."
+    },
+    "es": {
+     "t": "Encontrar dónde comen los locales",
+     "g": "Aprende las señales de un buen sitio local y cómo evitar las trampas para turistas.",
+     "p": [
+      "Buenas señales: carta corta en el idioma local, clientes habituales charlando con el personal y mesas llenas a la hora local.",
+      "Señales de alerta: cartas con fotos en muchos idiomas, alguien llamándote desde la calle y vistas a la plaza principal.",
+      "Aléjate dos o tres calles de los monumentos y pregunta a tenderos o a tu anfitrión dónde les gusta comer."
+     ],
+     "q": "¿Cómo sueles elegir dónde comer en una ciudad nueva?",
+     "c": "Escribe tres preguntas que podrías hacer a alguien local para descubrir su sitio favorito."
+    },
+    "fr": {
+     "t": "Trouver où mangent les habitants",
+     "g": "Apprends les signes d'une bonne adresse locale et comment éviter les pièges à touristes.",
+     "p": [
+      "Bons signes : carte courte dans la langue locale, habitués qui discutent avec le personnel, salle pleine aux heures locales.",
+      "Signaux d'alerte : menus photos en plusieurs langues, rabatteurs dans la rue, vue sur la grande place.",
+      "Éloigne-toi de deux ou trois rues des monuments et demande aux commerçants ou à ton hôte où ils aiment manger."
+     ],
+     "q": "Comment choisis-tu d'habitude où manger dans une ville nouvelle ?",
+     "c": "Note trois questions à poser à un habitant pour découvrir son adresse préférée."
+    },
+    "it": {
+     "t": "Trovare dove mangia la gente del posto",
+     "g": "Impara i segnali di un buon locale e come evitare le trappole per turisti.",
+     "p": [
+      "Buoni segnali: menu breve nella lingua locale, clienti abituali che chiacchierano col personale, tavoli pieni all'ora locale.",
+      "Segnali d'allarme: menu con foto in tante lingue, qualcuno che ti chiama dalla strada e vista sulla piazza principale.",
+      "Allontanati di due o tre vie dai monumenti e chiedi a negozianti o al tuo host dove amano mangiare."
+     ],
+     "q": "Come scegli di solito dove mangiare in una città nuova?",
+     "c": "Scrivi tre domande da fare a una persona del posto per scoprire il suo locale preferito."
+    },
+    "pt": {
+     "t": "Descobrir onde comem os locais",
+     "g": "Aprende os sinais de um bom sítio local e como evitar as armadilhas para turistas.",
+     "p": [
+      "Bons sinais: ementa curta na língua local, clientes habituais a conversar com o pessoal e mesas cheias à hora local.",
+      "Sinais de alerta: ementas com fotos em muitas línguas, alguém a chamar-te da rua e vista para a praça principal.",
+      "Afasta-te duas ou três ruas dos monumentos e pergunta aos comerciantes ou ao teu anfitrião onde gostam de comer."
+     ],
+     "q": "Como costumas escolher onde comer numa cidade nova?",
+     "c": "Escreve três perguntas que podias fazer a um local para descobrir o sítio preferido dele."
+    },
+    "pt_BR": {
+     "t": "Descobrir onde os locais comem",
+     "g": "Aprenda os sinais de um bom lugar local e como fugir das armadilhas para turistas.",
+     "p": [
+      "Bons sinais: cardápio curto no idioma local, clientes fiéis conversando com a equipe e mesas cheias no horário local.",
+      "Sinais de alerta: cardápio com fotos em vários idiomas, alguém te chamando na calçada e vista para a praça principal.",
+      "Afaste-se duas ou três ruas dos pontos turísticos e pergunte a lojistas ou ao seu anfitrião onde eles gostam de comer."
+     ],
+     "q": "Como você costuma escolher onde comer em uma cidade nova?",
+     "c": "Escreva três perguntas que você poderia fazer a um morador para descobrir o lugar favorito dele."
+    }
+   }
+  }
+ ]
+}

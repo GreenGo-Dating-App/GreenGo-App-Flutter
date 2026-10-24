@@ -1,0 +1,835 @@
+{
+ "topic": "packing",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to smart packing",
+     "g": "See why packing well makes every trip lighter, calmer and more fun.",
+     "p": [
+      "A well-packed bag means less to carry, less to search for and more energy for the trip itself.",
+      "Good packing is a skill, not a talent: small habits, practised a little each day, add up fast.",
+      "Over the next days we will build your own system, from the first list to the last zip."
+     ],
+     "q": "What is the trip you are dreaming of packing for right now?",
+     "c": "Open your usual travel bag and simply look inside: is anything still in there from your last trip?"
+    },
+    "de": {
+     "t": "Willkommen beim cleveren Packen",
+     "g": "Erkenne, warum gutes Packen jede Reise leichter, ruhiger und schöner macht.",
+     "p": [
+      "Ein gut gepackter Koffer heißt: weniger tragen, weniger suchen und mehr Energie für die Reise.",
+      "Gutes Packen ist kein Talent, sondern Übung: kleine Gewohnheiten bringen schnell viel.",
+      "In den nächsten Tagen bauen wir dein eigenes System, von der ersten Liste bis zum letzten Reißverschluss."
+     ],
+     "q": "Für welche Reise würdest du gerade am liebsten packen?",
+     "c": "Öffne deine übliche Reisetasche und schau nur hinein: Liegt da noch etwas von der letzten Reise?"
+    },
+    "es": {
+     "t": "Bienvenido al equipaje inteligente",
+     "g": "Descubre por qué hacer bien la maleta vuelve cada viaje más ligero, tranquilo y divertido.",
+     "p": [
+      "Una maleta bien hecha significa cargar menos, buscar menos y tener más energía para el viaje.",
+      "Hacer la maleta es una habilidad, no un don: pequeños hábitos diarios dan grandes resultados.",
+      "En los próximos días crearemos tu propio sistema, desde la primera lista hasta la última cremallera."
+     ],
+     "q": "¿Para qué viaje te encantaría hacer la maleta ahora mismo?",
+     "c": "Abre tu bolsa de viaje habitual y mira dentro: ¿queda algo de tu último viaje?"
+    },
+    "fr": {
+     "t": "Bienvenue dans l'art de bien faire sa valise",
+     "g": "Découvre pourquoi bien faire sa valise rend chaque voyage plus léger, plus serein et plus amusant.",
+     "p": [
+      "Un sac bien fait, c'est moins à porter, moins à chercher et plus d'énergie pour le voyage.",
+      "Bien faire sa valise s'apprend : de petites habitudes, un peu chaque jour, changent tout.",
+      "Dans les prochains jours, on construit ton propre système, de la première liste à la dernière fermeture."
+     ],
+     "q": "Pour quel voyage rêverais-tu de faire ta valise en ce moment ?",
+     "c": "Ouvre ton sac de voyage habituel et regarde dedans : reste-t-il quelque chose du dernier voyage ?"
+    },
+    "it": {
+     "t": "Benvenuto nell'arte della valigia",
+     "g": "Scopri perché fare bene la valigia rende ogni viaggio più leggero, sereno e divertente.",
+     "p": [
+      "Una valigia ben fatta significa meno peso, meno ricerche e più energia per il viaggio.",
+      "Fare la valigia è un'abilità, non un dono: piccole abitudini quotidiane fanno la differenza.",
+      "Nei prossimi giorni costruiremo il tuo sistema, dalla prima lista all'ultima cerniera."
+     ],
+     "q": "Per quale viaggio ti piacerebbe fare la valigia proprio adesso?",
+     "c": "Apri la tua solita borsa da viaggio e guarda dentro: c'è ancora qualcosa dell'ultimo viaggio?"
+    },
+    "pt": {
+     "t": "Bem-vindo à arte de fazer a mala",
+     "g": "Percebe porque fazer bem a mala torna cada viagem mais leve, calma e divertida.",
+     "p": [
+      "Uma mala bem feita significa menos peso, menos procura e mais energia para a viagem.",
+      "Fazer a mala é uma competência, não um dom: pequenos hábitos diários fazem a diferença.",
+      "Nos próximos dias vamos criar o teu próprio sistema, da primeira lista ao último fecho."
+     ],
+     "q": "Para que viagem gostavas de fazer a mala neste momento?",
+     "c": "Abre a tua mala de viagem habitual e olha lá para dentro: ainda há algo da última viagem?"
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à arte de fazer a mala",
+     "g": "Entenda por que fazer bem a mala deixa cada viagem mais leve, tranquila e divertida.",
+     "p": [
+      "Uma mala bem feita significa menos peso, menos procura e mais energia para a viagem.",
+      "Fazer a mala é uma habilidade, não um dom: pequenos hábitos diários fazem a diferença.",
+      "Nos próximos dias vamos montar o seu próprio sistema, da primeira lista ao último zíper."
+     ],
+     "q": "Para qual viagem você adoraria fazer a mala agora mesmo?",
+     "c": "Abra a sua mala de viagem de sempre e olhe dentro: ainda tem algo da última viagem?"
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your packing personality",
+     "g": "Spot whether you overpack, underpack or pack at the last minute, and start improving.",
+     "p": [
+      "Overpackers bring outfits for every what-if; underpackers often end up buying basics on the road.",
+      "Last-minute packers rush, forget essentials and carry random extras they never use.",
+      "Knowing your type helps you choose one small fix, like a list or a packing day set in advance."
+     ],
+     "q": "Which packing personality sounds most like you, and why?",
+     "c": "Think of your last trip and name one item you never used and one you wished you had."
+    },
+    "de": {
+     "t": "Dein Packtyp",
+     "g": "Finde heraus, ob du zu viel, zu wenig oder in letzter Minute packst, und fang an, es zu verbessern.",
+     "p": [
+      "Vielpacker nehmen Outfits für jedes Was-wäre-wenn mit; Wenigpacker kaufen unterwegs oft Basics nach.",
+      "Last-Minute-Packer hetzen, vergessen Wichtiges und schleppen zufällige Extras mit.",
+      "Wer seinen Typ kennt, wählt eine kleine Lösung, etwa eine Liste oder einen festen Packtag."
+     ],
+     "q": "Welcher Packtyp passt am besten zu dir, und warum?",
+     "c": "Denk an deine letzte Reise: Nenne ein Teil, das du nie benutzt hast, und eins, das dir gefehlt hat."
+    },
+    "es": {
+     "t": "Tu personalidad al hacer la maleta",
+     "g": "Descubre si llevas de más, de menos o lo haces a última hora, y empieza a mejorar.",
+     "p": [
+      "Quien lleva de más mete ropa para cada «por si acaso»; quien lleva de menos acaba comprando básicos.",
+      "Quien lo deja para el final va con prisas, olvida lo esencial y carga extras que no usa.",
+      "Conocer tu tipo te ayuda a elegir un pequeño cambio, como una lista o un día fijo para la maleta."
+     ],
+     "q": "¿Qué personalidad se parece más a ti y por qué?",
+     "c": "Piensa en tu último viaje: nombra algo que no usaste y algo que echaste de menos."
+    },
+    "fr": {
+     "t": "Ta personnalité de voyageur",
+     "g": "Repère si tu emportes trop, pas assez ou si tu fais tout à la dernière minute, et progresse.",
+     "p": [
+      "Ceux qui emportent trop prévoient une tenue pour chaque « au cas où » ; les autres rachètent sur place.",
+      "Ceux qui s'y prennent au dernier moment se pressent, oublient l'essentiel et portent du superflu.",
+      "Connaître ton profil t'aide à choisir une petite astuce, comme une liste ou un jour fixé pour la valise."
+     ],
+     "q": "Quelle personnalité te ressemble le plus, et pourquoi ?",
+     "c": "Pense à ton dernier voyage : cite un objet jamais utilisé et un autre qui t'a manqué."
+    },
+    "it": {
+     "t": "Che tipo di viaggiatore sei",
+     "g": "Scopri se porti troppo, troppo poco o fai tutto all'ultimo minuto, e inizia a migliorare.",
+     "p": [
+      "Chi porta troppo prevede un vestito per ogni «e se»; chi porta poco finisce per comprare l'essenziale.",
+      "Chi fa la valigia all'ultimo corre, dimentica l'essenziale e porta extra mai usati.",
+      "Conoscere il tuo tipo ti aiuta a scegliere un piccolo rimedio, come una lista o un giorno fisso."
+     ],
+     "q": "Quale tipo ti somiglia di più, e perché?",
+     "c": "Pensa all'ultimo viaggio: indica una cosa mai usata e una che ti è mancata."
+    },
+    "pt": {
+     "t": "A tua personalidade a fazer a mala",
+     "g": "Descobre se levas demais, de menos ou fazes tudo à última hora, e começa a melhorar.",
+     "p": [
+      "Quem leva demais junta roupa para cada «e se»; quem leva de menos acaba a comprar o básico.",
+      "Quem deixa para a última hora corre, esquece o essencial e carrega extras que nunca usa.",
+      "Conhecer o teu tipo ajuda-te a escolher uma pequena mudança, como uma lista ou um dia fixo."
+     ],
+     "q": "Que personalidade se parece mais contigo, e porquê?",
+     "c": "Pensa na última viagem: diz uma coisa que nunca usaste e outra que te fez falta."
+    },
+    "pt_BR": {
+     "t": "Sua personalidade na hora da mala",
+     "g": "Descubra se você leva demais, de menos ou faz tudo em cima da hora, e comece a melhorar.",
+     "p": [
+      "Quem leva demais põe roupa para cada «e se»; quem leva de menos acaba comprando o básico.",
+      "Quem deixa para a última hora corre, esquece o essencial e carrega coisas que nunca usa.",
+      "Conhecer o seu tipo ajuda a escolher uma pequena mudança, como uma lista ou um dia fixo."
+     ],
+     "q": "Qual personalidade combina mais com você, e por quê?",
+     "c": "Pense na última viagem: diga uma coisa que você nunca usou e outra que fez falta."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The golden rule: pack less",
+     "g": "Learn why most travellers use only part of what they bring, and how to aim for less.",
+     "p": [
+      "Many people come home with clothes they never wore, so every extra item is weight carried for nothing.",
+      "A lighter bag is easier on stairs, trains and cobblestones, and faster to pack each morning.",
+      "Lay out everything you want to take, then put back a third: you will rarely miss it."
+     ],
+     "q": "What is the one item you always pack but almost never use?",
+     "c": "Pick one category, like tops, and decide today how many you really need for a week."
+    },
+    "de": {
+     "t": "Die goldene Regel: weniger packen",
+     "g": "Erfahre, warum Reisende nur einen Teil ihres Gepäcks nutzen, und wie du weniger einpackst.",
+     "p": [
+      "Viele kommen mit ungetragener Kleidung heim; jedes Extra ist Gewicht, das man umsonst trägt.",
+      "Ein leichter Koffer ist leichter auf Treppen, in Zügen und auf Kopfsteinpflaster, und schneller gepackt.",
+      "Leg alles raus, was du mitnehmen willst, und räume ein Drittel zurück: Du wirst es selten vermissen."
+     ],
+     "q": "Welches Teil packst du immer ein, benutzt es aber fast nie?",
+     "c": "Nimm eine Kategorie, etwa Oberteile, und entscheide heute, wie viele du für eine Woche brauchst."
+    },
+    "es": {
+     "t": "La regla de oro: lleva menos",
+     "g": "Aprende por qué solemos usar solo parte de lo que llevamos y cómo viajar con menos.",
+     "p": [
+      "Mucha gente vuelve con ropa sin estrenar: cada extra es peso que cargas para nada.",
+      "Una maleta ligera se lleva mejor por escaleras, trenes y adoquines, y se cierra más rápido.",
+      "Saca todo lo que quieres llevar y devuelve un tercio al armario: casi nunca lo echarás de menos."
+     ],
+     "q": "¿Qué cosa metes siempre en la maleta pero casi nunca usas?",
+     "c": "Elige una categoría, como camisetas, y decide hoy cuántas necesitas de verdad para una semana."
+    },
+    "fr": {
+     "t": "La règle d'or : emporter moins",
+     "g": "Comprends pourquoi on n'utilise qu'une partie de ce qu'on emporte, et comment viser moins.",
+     "p": [
+      "Beaucoup rentrent avec des vêtements jamais portés : chaque extra est un poids porté pour rien.",
+      "Un sac léger passe mieux dans les escaliers, les trains et sur les pavés, et se boucle plus vite.",
+      "Étale tout ce que tu veux prendre, puis range un tiers : tu ne le regretteras presque jamais."
+     ],
+     "q": "Quel objet emportes-tu toujours sans presque jamais t'en servir ?",
+     "c": "Choisis une catégorie, comme les hauts, et décide combien il t'en faut vraiment pour une semaine."
+    },
+    "it": {
+     "t": "La regola d'oro: porta meno",
+     "g": "Scopri perché usiamo solo una parte di ciò che portiamo e come puntare a meno.",
+     "p": [
+      "Molti tornano con vestiti mai indossati: ogni extra è peso portato per niente.",
+      "Una valigia leggera si gestisce meglio su scale, treni e sampietrini, e si chiude prima.",
+      "Stendi tutto quello che vuoi portare, poi rimetti a posto un terzo: raramente ti mancherà."
+     ],
+     "q": "Qual è l'oggetto che metti sempre in valigia ma non usi quasi mai?",
+     "c": "Scegli una categoria, come le magliette, e decidi oggi quante te ne servono davvero per una settimana."
+    },
+    "pt": {
+     "t": "A regra de ouro: levar menos",
+     "g": "Aprende porque usamos só parte do que levamos e como viajar com menos.",
+     "p": [
+      "Muita gente volta com roupa que nunca vestiu: cada extra é peso carregado para nada.",
+      "Uma mala leve é mais fácil em escadas, comboios e calçada, e fecha-se mais depressa.",
+      "Espalha tudo o que queres levar e devolve um terço ao armário: raramente vais sentir falta."
+     ],
+     "q": "Que objeto levas sempre mas quase nunca usas?",
+     "c": "Escolhe uma categoria, como as t-shirts, e decide hoje quantas precisas mesmo para uma semana."
+    },
+    "pt_BR": {
+     "t": "A regra de ouro: leve menos",
+     "g": "Aprenda por que usamos só parte do que levamos e como viajar com menos.",
+     "p": [
+      "Muita gente volta com roupa que nem usou: cada extra é peso carregado à toa.",
+      "Uma mala leve é mais fácil em escadas, trens e calçadas de pedra, e fecha mais rápido.",
+      "Espalhe tudo o que quer levar e devolva um terço ao armário: raramente você vai sentir falta."
+     ],
+     "q": "Qual item você sempre leva mas quase nunca usa?",
+     "c": "Escolha uma categoria, como camisetas, e decida hoje quantas você precisa mesmo para uma semana."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a suitcase or a backpack",
+     "g": "Match your bag to the kind of trip you take: wheels, straps, hard or soft shell.",
+     "p": [
+      "Wheeled suitcases shine on smooth floors and city breaks; backpacks win on stairs, sand and rough streets.",
+      "Hard shells protect fragile things; soft bags flex into tight spaces and often have handy outer pockets.",
+      "Whatever you choose, test it full: can you lift it, roll it and carry it for ten minutes?"
+     ],
+     "q": "Are you more of a suitcase person or a backpack person?",
+     "c": "Picture your next trip and list three surfaces your bag will meet, like stairs or gravel."
+    },
+    "de": {
+     "t": "Koffer oder Rucksack?",
+     "g": "Wähle das Gepäck passend zur Reise: Rollen, Gurte, Hartschale oder weiches Material.",
+     "p": [
+      "Rollkoffer glänzen auf glatten Böden und bei Städtereisen; Rucksäcke gewinnen auf Treppen und Sand.",
+      "Hartschalen schützen Zerbrechliches; weiche Taschen passen in enge Ecken und haben oft Außentaschen.",
+      "Egal was du wählst: Teste es voll gepackt. Kannst du es heben, rollen und zehn Minuten tragen?"
+     ],
+     "q": "Bist du eher Koffer- oder eher Rucksack-Mensch?",
+     "c": "Stell dir deine nächste Reise vor und nenne drei Untergründe, etwa Treppen oder Kies."
+    },
+    "es": {
+     "t": "¿Maleta o mochila?",
+     "g": "Elige la bolsa según el tipo de viaje: ruedas, correas, rígida o blanda.",
+     "p": [
+      "Las maletas con ruedas brillan en suelos lisos y escapadas urbanas; la mochila gana en escaleras y arena.",
+      "Las rígidas protegen lo frágil; las blandas se adaptan a huecos estrechos y suelen tener bolsillos.",
+      "Elijas lo que elijas, pruébala llena: ¿puedes levantarla, rodarla y llevarla diez minutos?"
+     ],
+     "q": "¿Eres más de maleta o de mochila?",
+     "c": "Imagina tu próximo viaje y apunta tres superficies que pisará tu equipaje, como escaleras o grava."
+    },
+    "fr": {
+     "t": "Valise ou sac à dos ?",
+     "g": "Adapte ton bagage au type de voyage : roulettes, bretelles, coque rigide ou souple.",
+     "p": [
+      "La valise à roulettes brille sur sol lisse et en ville ; le sac à dos gagne dans les escaliers et le sable.",
+      "Les coques rigides protègent le fragile ; les sacs souples se glissent partout et ont souvent des poches.",
+      "Quel que soit ton choix, teste-le plein : peux-tu le soulever, le rouler et le porter dix minutes ?"
+     ],
+     "q": "Es-tu plutôt valise ou plutôt sac à dos ?",
+     "c": "Imagine ton prochain voyage et note trois surfaces que ton bagage rencontrera, comme des marches."
+    },
+    "it": {
+     "t": "Valigia o zaino?",
+     "g": "Scegli il bagaglio in base al viaggio: ruote, spallacci, guscio rigido o morbido.",
+     "p": [
+      "Il trolley dà il meglio su pavimenti lisci e in città; lo zaino vince su scale, sabbia e strade sconnesse.",
+      "I gusci rigidi proteggono il fragile; le borse morbide entrano negli spazi stretti e hanno tasche comode.",
+      "Qualunque scelta, provala piena: riesci a sollevarla, trascinarla e portarla per dieci minuti?"
+     ],
+     "q": "Sei più tipo da valigia o da zaino?",
+     "c": "Immagina il prossimo viaggio ed elenca tre superfici che incontrerà il bagaglio, come scale o ghiaia."
+    },
+    "pt": {
+     "t": "Mala ou mochila?",
+     "g": "Escolhe a bagagem conforme a viagem: rodas, alças, rígida ou macia.",
+     "p": [
+      "A mala de rodas brilha em pisos lisos e escapadinhas urbanas; a mochila ganha em escadas e areia.",
+      "As rígidas protegem o que é frágil; as macias cabem em espaços apertados e têm bolsos práticos.",
+      "Escolhas o que escolheres, testa-a cheia: consegues levantá-la, rolá-la e levá-la dez minutos?"
+     ],
+     "q": "És mais de mala ou de mochila?",
+     "c": "Imagina a próxima viagem e aponta três superfícies que a bagagem vai enfrentar, como escadas."
+    },
+    "pt_BR": {
+     "t": "Mala ou mochila?",
+     "g": "Escolha a bagagem de acordo com a viagem: rodinhas, alças, rígida ou macia.",
+     "p": [
+      "A mala de rodinhas brilha em piso liso e viagens urbanas; a mochila ganha em escadas e areia.",
+      "As rígidas protegem o que é frágil; as macias cabem em espaços apertados e têm bolsos práticos.",
+      "Seja qual for a escolha, teste cheia: dá para levantar, puxar e carregar por dez minutos?"
+     ],
+     "q": "Você é mais de mala ou de mochila?",
+     "c": "Imagine a próxima viagem e anote três superfícies que a bagagem vai encarar, como escadas ou cascalho."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Carry-on versus checked luggage",
+     "g": "Weigh the benefits and trade-offs of hand luggage only versus checking a bag.",
+     "p": [
+      "Carry-on only means no waiting at the belt, no lost bags and easy changes of plan.",
+      "A checked bag gives room for bulky gear, more liquids and long trips with many climates.",
+      "Many travellers start with carry-on only for short trips and check a bag only when truly needed."
+     ],
+     "q": "Have you ever travelled with hand luggage only? How did it feel?",
+     "c": "Imagine your next weekend away and decide: could it fit in one small bag?"
+    },
+    "de": {
+     "t": "Handgepäck oder Aufgabegepäck?",
+     "g": "Wäge Vorteile und Nachteile ab: nur Handgepäck oder ein aufgegebener Koffer.",
+     "p": [
+      "Nur Handgepäck heißt: kein Warten am Band, kein verlorener Koffer, flexible Planänderungen.",
+      "Ein aufgegebener Koffer bietet Platz für sperrige Ausrüstung, mehr Flüssigkeiten und lange Reisen.",
+      "Viele reisen bei kurzen Trips nur mit Handgepäck und geben nur auf, wenn es wirklich nötig ist."
+     ],
+     "q": "Bist du schon einmal nur mit Handgepäck gereist? Wie war das?",
+     "c": "Stell dir dein nächstes Wochenende weg vor: Würde alles in eine kleine Tasche passen?"
+    },
+    "es": {
+     "t": "Equipaje de mano o facturado",
+     "g": "Compara ventajas e inconvenientes de viajar solo con equipaje de mano o facturar una maleta.",
+     "p": [
+      "Solo equipaje de mano: sin esperas en la cinta, sin maletas perdidas y con cambios de plan fáciles.",
+      "Facturar da espacio para equipo voluminoso, más líquidos y viajes largos con varios climas.",
+      "Muchos empiezan con solo equipaje de mano en viajes cortos y facturan solo cuando hace falta."
+     ],
+     "q": "¿Has viajado alguna vez solo con equipaje de mano? ¿Qué tal fue?",
+     "c": "Imagina tu próxima escapada de fin de semana: ¿cabría todo en una bolsa pequeña?"
+    },
+    "fr": {
+     "t": "Bagage cabine ou en soute ?",
+     "g": "Pèse le pour et le contre : voyager en cabine seulement ou enregistrer un bagage.",
+     "p": [
+      "Cabine seulement : pas d'attente au tapis, pas de valise perdue et des plans faciles à changer.",
+      "Un bagage en soute laisse de la place pour l'équipement encombrant, plus de liquides et les longs voyages.",
+      "Beaucoup commencent en cabine seulement pour les courts séjours et n'enregistrent qu'en cas de besoin."
+     ],
+     "q": "As-tu déjà voyagé avec seulement un bagage cabine ? C'était comment ?",
+     "c": "Imagine ton prochain week-end : tout tiendrait-il dans un petit sac ?"
+    },
+    "it": {
+     "t": "Bagaglio a mano o da stiva?",
+     "g": "Valuta pro e contro del viaggiare solo con bagaglio a mano o imbarcare una valigia.",
+     "p": [
+      "Solo bagaglio a mano: niente attesa al nastro, niente valigie perse e cambi di programma facili.",
+      "La valigia in stiva dà spazio ad attrezzatura ingombrante, più liquidi e viaggi lunghi.",
+      "Molti partono con il solo bagaglio a mano per i viaggi brevi e imbarcano solo quando serve davvero."
+     ],
+     "q": "Hai mai viaggiato solo con il bagaglio a mano? Com'è andata?",
+     "c": "Immagina il prossimo weekend fuori: ci starebbe tutto in una borsa piccola?"
+    },
+    "pt": {
+     "t": "Bagagem de mão ou de porão?",
+     "g": "Pesa as vantagens e desvantagens de viajar só com bagagem de mão ou despachar uma mala.",
+     "p": [
+      "Só bagagem de mão: sem espera no tapete, sem malas perdidas e mudanças de plano fáceis.",
+      "Despachar dá espaço para equipamento volumoso, mais líquidos e viagens longas com vários climas.",
+      "Muitos começam só com bagagem de mão em viagens curtas e despacham apenas quando é preciso."
+     ],
+     "q": "Já viajaste só com bagagem de mão? Como correu?",
+     "c": "Imagina o teu próximo fim de semana fora: caberia tudo num saco pequeno?"
+    },
+    "pt_BR": {
+     "t": "Bagagem de mão ou despachada?",
+     "g": "Compare vantagens e desvantagens de viajar só com bagagem de mão ou despachar uma mala.",
+     "p": [
+      "Só bagagem de mão: sem espera na esteira, sem mala extraviada e mudanças de plano fáceis.",
+      "Despachar dá espaço para equipamento volumoso, mais líquidos e viagens longas com vários climas.",
+      "Muita gente começa só com bagagem de mão em viagens curtas e despacha só quando precisa."
+     ],
+     "q": "Você já viajou só com bagagem de mão? Como foi?",
+     "c": "Imagine o seu próximo fim de semana fora: caberia tudo numa bolsa pequena?"
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking your airline's bag rules",
+     "g": "Always check your airline's bag rules before packing, since limits vary by airline and fare.",
+     "p": [
+      "Size, weight and number of bags can differ between airlines, routes and even fare types.",
+      "Look up the rules on the booking or the airline's own site shortly before you travel; they can change.",
+      "Note your limits on your packing list so you pack to them from the start, not at the airport."
+     ],
+     "q": "Have you ever had a surprise at the check-in desk about your bag?",
+     "c": "Find your next booking, or any airline, and write down its hand luggage size and weight limits."
+    },
+    "de": {
+     "t": "Gepäckregeln der Airline prüfen",
+     "g": "Prüfe vor dem Packen immer die Gepäckregeln, denn sie unterscheiden sich je nach Airline und Tarif.",
+     "p": [
+      "Größe, Gewicht und Anzahl der Gepäckstücke variieren je nach Airline, Strecke und sogar Tarif.",
+      "Schau kurz vor der Reise in deine Buchung oder auf die Seite der Airline; Regeln können sich ändern.",
+      "Notiere deine Grenzen auf der Packliste, damit du von Anfang an passend packst, nicht erst am Flughafen."
+     ],
+     "q": "Hattest du am Check-in schon einmal eine Überraschung mit deinem Gepäck?",
+     "c": "Nimm deine nächste Buchung oder eine beliebige Airline und notiere Maße und Gewicht fürs Handgepäck."
+    },
+    "es": {
+     "t": "Consulta las normas de tu aerolínea",
+     "g": "Revisa siempre las normas de equipaje antes de hacer la maleta: cambian según aerolínea y tarifa.",
+     "p": [
+      "El tamaño, el peso y el número de bultos varían entre aerolíneas, rutas e incluso tarifas.",
+      "Consulta tu reserva o la web de la aerolínea poco antes del viaje; las normas pueden cambiar.",
+      "Apunta tus límites en la lista para hacer la maleta ajustada a ellos desde el principio."
+     ],
+     "q": "¿Alguna vez te llevaste una sorpresa con tu maleta en el mostrador?",
+     "c": "Busca tu próxima reserva, o cualquier aerolínea, y anota medidas y peso del equipaje de mano."
+    },
+    "fr": {
+     "t": "Vérifier les règles de ta compagnie",
+     "g": "Vérifie toujours les règles bagages avant de partir : elles varient selon la compagnie et le tarif.",
+     "p": [
+      "Taille, poids et nombre de bagages diffèrent selon les compagnies, les trajets et même les tarifs.",
+      "Consulte ta réservation ou le site de la compagnie peu avant le départ ; les règles peuvent changer.",
+      "Note tes limites sur ta liste pour faire ta valise en conséquence dès le début, pas à l'aéroport."
+     ],
+     "q": "As-tu déjà eu une mauvaise surprise au comptoir avec ton bagage ?",
+     "c": "Prends ta prochaine réservation, ou une compagnie au choix, et note dimensions et poids en cabine."
+    },
+    "it": {
+     "t": "Controlla le regole della compagnia",
+     "g": "Controlla sempre le regole sul bagaglio prima di partire: cambiano per compagnia e tariffa.",
+     "p": [
+      "Dimensioni, peso e numero di bagagli variano tra compagnie, tratte e perfino tariffe.",
+      "Guarda la prenotazione o il sito della compagnia poco prima di partire; le regole possono cambiare.",
+      "Annota i tuoi limiti sulla lista, così prepari la valigia giusta fin dall'inizio, non in aeroporto."
+     ],
+     "q": "Ti è mai capitata una sorpresa al banco del check-in con il bagaglio?",
+     "c": "Prendi la tua prossima prenotazione, o una compagnia qualsiasi, e annota misure e peso a mano."
+    },
+    "pt": {
+     "t": "Confirma as regras da companhia",
+     "g": "Verifica sempre as regras de bagagem antes de fazer a mala: mudam conforme a companhia e a tarifa.",
+     "p": [
+      "Tamanho, peso e número de volumes variam entre companhias, rotas e até tarifas.",
+      "Consulta a reserva ou o site da companhia pouco antes da viagem; as regras podem mudar.",
+      "Aponta os teus limites na lista para fazer a mala à medida desde o início, não no aeroporto."
+     ],
+     "q": "Já tiveste alguma surpresa com a mala no balcão do check-in?",
+     "c": "Pega na tua próxima reserva, ou numa companhia qualquer, e anota medidas e peso da bagagem de mão."
+    },
+    "pt_BR": {
+     "t": "Confira as regras da companhia aérea",
+     "g": "Sempre confira as regras de bagagem antes de arrumar a mala: elas mudam por companhia e tarifa.",
+     "p": [
+      "Tamanho, peso e quantidade de volumes variam entre companhias, rotas e até tarifas.",
+      "Consulte a reserva ou o site da companhia pouco antes da viagem; as regras podem mudar.",
+      "Anote seus limites na lista para montar a mala dentro deles desde o início, não no aeroporto."
+     ],
+     "q": "Você já teve alguma surpresa com a mala no balcão do check-in?",
+     "c": "Pegue sua próxima reserva, ou qualquer companhia, e anote medidas e peso da bagagem de mão."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first packing list",
+     "g": "Build a simple packing list by category: clothes, toiletries, documents, tech and extras.",
+     "p": [
+      "Categories make a list easy to scan and stop you from forgetting whole groups of things.",
+      "Start with five headings, then add items under each as you think of them during the week.",
+      "Keep the list on your phone or on paper, and reuse it for every trip instead of starting over."
+     ],
+     "q": "Do you already use a packing list, or do you pack from memory?",
+     "c": "Write the five category headings today and add at least three items under each."
+    },
+    "de": {
+     "t": "Deine erste Packliste",
+     "g": "Erstelle eine einfache Packliste nach Kategorien: Kleidung, Hygiene, Dokumente, Technik, Extras.",
+     "p": [
+      "Kategorien machen die Liste übersichtlich und verhindern, dass du ganze Gruppen vergisst.",
+      "Beginne mit fünf Überschriften und ergänze unter jeder Dinge, sobald sie dir einfallen.",
+      "Bewahre die Liste im Handy oder auf Papier auf und nutze sie für jede Reise wieder."
+     ],
+     "q": "Nutzt du schon eine Packliste, oder packst du aus dem Kopf?",
+     "c": "Schreib heute die fünf Überschriften auf und ergänze unter jeder mindestens drei Dinge."
+    },
+    "es": {
+     "t": "Tu primera lista de equipaje",
+     "g": "Crea una lista sencilla por categorías: ropa, aseo, documentos, tecnología y extras.",
+     "p": [
+      "Las categorías hacen la lista fácil de repasar y evitan que olvides grupos enteros de cosas.",
+      "Empieza con cinco títulos y añade cosas debajo según se te ocurran durante la semana.",
+      "Guarda la lista en el móvil o en papel y reutilízala en cada viaje en vez de empezar de cero."
+     ],
+     "q": "¿Ya usas una lista para la maleta o lo haces de memoria?",
+     "c": "Escribe hoy los cinco títulos y añade al menos tres cosas en cada uno."
+    },
+    "fr": {
+     "t": "Ta première liste de bagages",
+     "g": "Crée une liste simple par catégories : vêtements, toilette, papiers, électronique et extras.",
+     "p": [
+      "Les catégories rendent la liste facile à parcourir et évitent d'oublier des groupes entiers.",
+      "Commence par cinq titres, puis ajoute des objets sous chacun au fil de la semaine.",
+      "Garde la liste sur ton téléphone ou sur papier et réutilise-la à chaque voyage."
+     ],
+     "q": "Utilises-tu déjà une liste, ou fais-tu ta valise de mémoire ?",
+     "c": "Écris aujourd'hui les cinq titres et ajoute au moins trois objets sous chacun."
+    },
+    "it": {
+     "t": "La tua prima lista per la valigia",
+     "g": "Crea una lista semplice per categorie: vestiti, igiene, documenti, tecnologia ed extra.",
+     "p": [
+      "Le categorie rendono la lista facile da scorrere ed evitano di dimenticare interi gruppi di cose.",
+      "Parti da cinque titoli e aggiungi oggetti sotto ciascuno man mano che ti vengono in mente.",
+      "Tieni la lista sul telefono o su carta e riusala a ogni viaggio invece di ricominciare."
+     ],
+     "q": "Usi già una lista per la valigia o vai a memoria?",
+     "c": "Scrivi oggi i cinque titoli e aggiungi almeno tre oggetti sotto ciascuno."
+    },
+    "pt": {
+     "t": "A tua primeira lista de mala",
+     "g": "Cria uma lista simples por categorias: roupa, higiene, documentos, tecnologia e extras.",
+     "p": [
+      "As categorias tornam a lista fácil de rever e evitam que te esqueças de grupos inteiros.",
+      "Começa com cinco títulos e acrescenta coisas em cada um à medida que te lembras.",
+      "Guarda a lista no telemóvel ou em papel e reutiliza-a em cada viagem."
+     ],
+     "q": "Já usas uma lista para fazer a mala ou fazes de memória?",
+     "c": "Escreve hoje os cinco títulos e acrescenta pelo menos três coisas em cada um."
+    },
+    "pt_BR": {
+     "t": "Sua primeira lista de mala",
+     "g": "Monte uma lista simples por categorias: roupas, higiene, documentos, eletrônicos e extras.",
+     "p": [
+      "As categorias deixam a lista fácil de conferir e evitam esquecer grupos inteiros de coisas.",
+      "Comece com cinco títulos e vá acrescentando itens em cada um conforme lembrar.",
+      "Guarde a lista no celular ou no papel e reutilize em toda viagem, sem começar do zero."
+     ],
+     "q": "Você já usa uma lista para fazer a mala ou faz de cabeça?",
+     "c": "Escreva hoje os cinco títulos e acrescente pelo menos três itens em cada um."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing lists by trip length",
+     "g": "See how 3, 7 and 14-day lists differ, and why longer trips need not mean heavier bags.",
+     "p": [
+      "For 3 days you pack almost one outfit per day; for a week you start repeating pieces.",
+      "Beyond about a week, the list barely grows: you plan a laundry stop instead of more clothes.",
+      "Toiletries, documents and tech stay the same size whatever the length of the trip."
+     ],
+     "q": "What is the longest trip you have taken, and how big was your bag?",
+     "c": "Take yesterday's list and mark which items would change for a 3-day trip versus a 14-day trip."
+    },
+    "de": {
+     "t": "Packlisten nach Reisedauer",
+     "g": "Sieh, wie sich Listen für 3, 7 und 14 Tage unterscheiden und warum lang nicht schwer heißen muss.",
+     "p": [
+      "Für 3 Tage packst du fast ein Outfit pro Tag; für eine Woche kombinierst du Teile mehrfach.",
+      "Ab etwa einer Woche wächst die Liste kaum noch: Du planst Wäsche statt mehr Kleidung.",
+      "Hygieneartikel, Dokumente und Technik bleiben gleich, egal wie lang die Reise ist."
+     ],
+     "q": "Was war deine längste Reise, und wie groß war dein Gepäck?",
+     "c": "Nimm die Liste von gestern und markiere, was sich für 3 statt 14 Tage ändern würde."
+    },
+    "es": {
+     "t": "Listas según la duración del viaje",
+     "g": "Mira cómo cambian las listas de 3, 7 y 14 días, y por qué un viaje largo no exige más peso.",
+     "p": [
+      "Para 3 días llevas casi un conjunto por día; para una semana empiezas a repetir prendas.",
+      "A partir de una semana la lista apenas crece: planeas una colada en lugar de más ropa.",
+      "El aseo, los documentos y la tecnología ocupan lo mismo sea cual sea la duración."
+     ],
+     "q": "¿Cuál ha sido tu viaje más largo y qué tamaño tenía tu equipaje?",
+     "c": "Toma la lista de ayer y marca qué cambiaría para un viaje de 3 días frente a uno de 14."
+    },
+    "fr": {
+     "t": "Listes selon la durée du voyage",
+     "g": "Vois comment diffèrent les listes de 3, 7 et 14 jours, et pourquoi long ne veut pas dire lourd.",
+     "p": [
+      "Pour 3 jours, tu prends presque une tenue par jour ; pour une semaine, tu combines les pièces.",
+      "Au-delà d'une semaine, la liste grossit à peine : tu prévois une lessive plutôt que plus d'habits.",
+      "Trousse de toilette, papiers et électronique gardent la même taille quelle que soit la durée."
+     ],
+     "q": "Quel est ton plus long voyage, et quelle taille faisait ton bagage ?",
+     "c": "Reprends ta liste d'hier et marque ce qui changerait entre un séjour de 3 jours et un de 14."
+    },
+    "it": {
+     "t": "Liste in base alla durata",
+     "g": "Scopri come cambiano le liste per 3, 7 e 14 giorni e perché un viaggio lungo non vuol dire più peso.",
+     "p": [
+      "Per 3 giorni porti quasi un outfit al giorno; per una settimana inizi a ripetere i capi.",
+      "Oltre una settimana circa la lista cresce poco: programmi un bucato invece di più vestiti.",
+      "Igiene, documenti e tecnologia restano uguali qualunque sia la durata del viaggio."
+     ],
+     "q": "Qual è stato il tuo viaggio più lungo e quanto era grande il bagaglio?",
+     "c": "Prendi la lista di ieri e segna cosa cambierebbe tra un viaggio di 3 giorni e uno di 14."
+    },
+    "pt": {
+     "t": "Listas conforme a duração",
+     "g": "Vê como mudam as listas de 3, 7 e 14 dias e porque uma viagem longa não pede mais peso.",
+     "p": [
+      "Para 3 dias levas quase uma roupa por dia; para uma semana começas a repetir peças.",
+      "A partir de uma semana a lista quase não cresce: planeias lavar roupa em vez de levar mais.",
+      "Higiene, documentos e tecnologia ocupam o mesmo, seja qual for a duração."
+     ],
+     "q": "Qual foi a tua viagem mais longa e que tamanho tinha a tua bagagem?",
+     "c": "Pega na lista de ontem e marca o que mudaria entre uma viagem de 3 dias e uma de 14."
+    },
+    "pt_BR": {
+     "t": "Listas de acordo com a duração",
+     "g": "Veja como mudam as listas de 3, 7 e 14 dias e por que viagem longa não exige mala pesada.",
+     "p": [
+      "Para 3 dias você leva quase uma roupa por dia; para uma semana já começa a repetir peças.",
+      "Passando de uma semana, a lista quase não cresce: você planeja lavar roupa em vez de levar mais.",
+      "Higiene, documentos e eletrônicos ocupam o mesmo, seja qual for a duração."
+     ],
+     "q": "Qual foi a sua viagem mais longa e de que tamanho era a sua bagagem?",
+     "c": "Pegue a lista de ontem e marque o que mudaria entre uma viagem de 3 dias e uma de 14."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travel documents first",
+     "g": "Pack the things you truly cannot forget first: passport, ID, tickets and bookings.",
+     "p": [
+      "Clothes can be bought almost anywhere, but a missing passport or ID can stop a trip at the door.",
+      "Check that your passport or ID is valid for the whole trip; some countries ask for extra validity.",
+      "Keep all documents together in one zipped pocket or wallet that never leaves your personal bag."
+     ],
+     "q": "Where do you usually keep your passport and tickets while travelling?",
+     "c": "Find your passport or ID now and check its expiry date against your next planned trip."
+    },
+    "de": {
+     "t": "Zuerst die Reisedokumente",
+     "g": "Pack zuerst, was du wirklich nicht vergessen darfst: Pass, Ausweis, Tickets und Buchungen.",
+     "p": [
+      "Kleidung bekommt man fast überall, aber ohne Pass oder Ausweis endet die Reise oft schon an der Tür.",
+      "Prüfe, ob Pass oder Ausweis für die ganze Reise gültig sind; manche Länder verlangen mehr Gültigkeit.",
+      "Bewahre alle Dokumente zusammen in einem Fach mit Reißverschluss auf, das in deiner Tasche bleibt."
+     ],
+     "q": "Wo bewahrst du unterwegs normalerweise Pass und Tickets auf?",
+     "c": "Hol jetzt deinen Pass oder Ausweis und vergleiche das Ablaufdatum mit deiner nächsten Reise."
+    },
+    "es": {
+     "t": "Primero, los documentos",
+     "g": "Mete primero lo que de verdad no puedes olvidar: pasaporte, documento de identidad, billetes y reservas.",
+     "p": [
+      "La ropa se compra casi en cualquier sitio, pero sin pasaporte o documento el viaje puede acabar en casa.",
+      "Comprueba que tu pasaporte o documento sea válido todo el viaje; algunos países piden vigencia extra.",
+      "Guarda todos los documentos juntos en un bolsillo con cremallera que nunca salga de tu bolso."
+     ],
+     "q": "¿Dónde sueles guardar el pasaporte y los billetes cuando viajas?",
+     "c": "Busca ahora tu pasaporte o documento y compara su fecha de caducidad con tu próximo viaje."
+    },
+    "fr": {
+     "t": "Les papiers d'abord",
+     "g": "Prépare d'abord ce que tu ne peux vraiment pas oublier : passeport, carte d'identité, billets, réservations.",
+     "p": [
+      "Les vêtements s'achètent presque partout, mais sans passeport ni pièce d'identité le voyage peut s'arrêter net.",
+      "Vérifie que ton passeport ou ta carte est valable tout le séjour ; certains pays exigent une marge.",
+      "Range tous tes papiers ensemble dans une poche zippée qui ne quitte jamais ton sac."
+     ],
+     "q": "Où ranges-tu d'habitude ton passeport et tes billets en voyage ?",
+     "c": "Prends ton passeport ou ta carte maintenant et compare sa date d'expiration avec ton prochain voyage."
+    },
+    "it": {
+     "t": "Prima i documenti",
+     "g": "Prepara prima ciò che non puoi proprio dimenticare: passaporto, carta d'identità, biglietti e prenotazioni.",
+     "p": [
+      "I vestiti si comprano quasi ovunque, ma senza passaporto o documento il viaggio può finire sulla porta.",
+      "Controlla che passaporto o carta siano validi per tutto il viaggio; alcuni Paesi chiedono validità extra.",
+      "Tieni tutti i documenti insieme in una tasca con cerniera che non lascia mai la tua borsa."
+     ],
+     "q": "Dove tieni di solito passaporto e biglietti quando viaggi?",
+     "c": "Prendi adesso passaporto o carta d'identità e confronta la scadenza con il tuo prossimo viaggio."
+    },
+    "pt": {
+     "t": "Primeiro, os documentos",
+     "g": "Arruma primeiro o que não podes mesmo esquecer: passaporte, cartão de cidadão, bilhetes e reservas.",
+     "p": [
+      "A roupa compra-se quase em todo o lado, mas sem passaporte ou documento a viagem pode acabar à porta.",
+      "Confirma que o passaporte ou documento é válido para toda a viagem; alguns países pedem validade extra.",
+      "Guarda todos os documentos juntos num bolso com fecho que nunca sai da tua mala de mão."
+     ],
+     "q": "Onde costumas guardar o passaporte e os bilhetes quando viajas?",
+     "c": "Vai buscar agora o passaporte ou documento e compara a validade com a tua próxima viagem."
+    },
+    "pt_BR": {
+     "t": "Primeiro, os documentos",
+     "g": "Separe primeiro o que você não pode esquecer de jeito nenhum: passaporte, RG, passagens e reservas.",
+     "p": [
+      "Roupa se compra em quase todo lugar, mas sem passaporte ou documento a viagem pode acabar na porta.",
+      "Confira se o passaporte ou documento vale para a viagem toda; alguns países exigem validade extra.",
+      "Guarde todos os documentos juntos num bolso com zíper que nunca sai da sua bolsa."
+     ],
+     "q": "Onde você costuma guardar o passaporte e as passagens quando viaja?",
+     "c": "Pegue agora o seu passaporte ou documento e compare a validade com a sua próxima viagem."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making document backups",
+     "g": "Keep digital and paper copies of key documents, stored apart from the originals.",
+     "p": [
+      "Photograph or scan your passport, ID, bookings and insurance details before you leave.",
+      "Save the copies somewhere you can reach offline and share them with someone you trust at home.",
+      "Carry one paper copy in a different bag from the originals, in case your wallet goes missing."
+     ],
+     "q": "Do you have copies of your documents somewhere right now?",
+     "c": "Take a clear photo of your ID or passport today and save it in a safe offline folder."
+    },
+    "de": {
+     "t": "Sicherungskopien deiner Dokumente",
+     "g": "Bewahre digitale und Papierkopien wichtiger Dokumente getrennt von den Originalen auf.",
+     "p": [
+      "Fotografiere oder scanne Pass, Ausweis, Buchungen und Versicherungsdaten vor der Abreise.",
+      "Speichere die Kopien offline erreichbar und teile sie mit einer Vertrauensperson zu Hause.",
+      "Trag eine Papierkopie in einer anderen Tasche als die Originale, falls dein Geldbeutel verloren geht."
+     ],
+     "q": "Hast du gerade irgendwo Kopien deiner Dokumente?",
+     "c": "Mach heute ein scharfes Foto von Ausweis oder Pass und speichere es in einem sicheren Offline-Ordner."
+    },
+    "es": {
+     "t": "Copias de tus documentos",
+     "g": "Ten copias digitales y en papel de los documentos clave, guardadas aparte de los originales.",
+     "p": [
+      "Fotografía o escanea pasaporte, documento, reservas y datos del seguro antes de salir.",
+      "Guarda las copias donde puedas verlas sin conexión y compártelas con alguien de confianza en casa.",
+      "Lleva una copia en papel en otra bolsa distinta a los originales, por si pierdes la cartera."
+     ],
+     "q": "¿Tienes ahora mismo copias de tus documentos en algún sitio?",
+     "c": "Haz hoy una foto nítida de tu documento o pasaporte y guárdala en una carpeta segura sin conexión."
+    },
+    "fr": {
+     "t": "Sauvegarder tes papiers",
+     "g": "Garde des copies numériques et papier de tes documents clés, séparées des originaux.",
+     "p": [
+      "Photographie ou scanne passeport, carte d'identité, réservations et assurance avant de partir.",
+      "Garde les copies accessibles hors ligne et partage-les avec une personne de confiance restée chez toi.",
+      "Mets une copie papier dans un autre sac que les originaux, au cas où ton portefeuille disparaîtrait."
+     ],
+     "q": "As-tu des copies de tes papiers quelque part en ce moment ?",
+     "c": "Prends aujourd'hui une photo nette de ta carte ou de ton passeport et range-la hors ligne."
+    },
+    "it": {
+     "t": "Copie dei documenti",
+     "g": "Tieni copie digitali e cartacee dei documenti importanti, separate dagli originali.",
+     "p": [
+      "Fotografa o scansiona passaporto, carta d'identità, prenotazioni e dati dell'assicurazione prima di partire.",
+      "Salva le copie dove puoi vederle offline e condividile con una persona di fiducia a casa.",
+      "Porta una copia cartacea in una borsa diversa dagli originali, nel caso perdessi il portafoglio."
+     ],
+     "q": "Hai già delle copie dei tuoi documenti da qualche parte?",
+     "c": "Scatta oggi una foto nitida del documento o del passaporto e salvala in una cartella offline sicura."
+    },
+    "pt": {
+     "t": "Cópias dos documentos",
+     "g": "Guarda cópias digitais e em papel dos documentos principais, separadas dos originais.",
+     "p": [
+      "Fotografa ou digitaliza passaporte, documento, reservas e dados do seguro antes de partir.",
+      "Guarda as cópias num sítio acessível sem internet e partilha-as com alguém de confiança em casa.",
+      "Leva uma cópia em papel noutra mala, longe dos originais, caso percas a carteira."
+     ],
+     "q": "Tens neste momento cópias dos teus documentos em algum lado?",
+     "c": "Tira hoje uma foto nítida do documento ou passaporte e guarda-a numa pasta segura offline."
+    },
+    "pt_BR": {
+     "t": "Cópias dos documentos",
+     "g": "Tenha cópias digitais e em papel dos documentos principais, guardadas longe dos originais.",
+     "p": [
+      "Fotografe ou escaneie passaporte, documento, reservas e dados do seguro antes de sair.",
+      "Salve as cópias num lugar acessível offline e compartilhe com alguém de confiança em casa.",
+      "Leve uma cópia em papel em outra bolsa, longe dos originais, caso perca a carteira."
+     ],
+     "q": "Você tem agora cópias dos seus documentos em algum lugar?",
+     "c": "Tire hoje uma foto nítida do documento ou passaporte e salve numa pasta segura offline."
+    }
+   }
+  }
+ ]
+}

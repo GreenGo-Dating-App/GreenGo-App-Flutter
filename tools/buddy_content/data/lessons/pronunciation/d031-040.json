@@ -1,0 +1,835 @@
+{
+ "topic": "pronunciation",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light l and dark l",
+     "g": "Hear the light l in English 'leaf' and the dark l in 'feel', and the always-clear l of Spanish and Italian.",
+     "p": [
+      "For every l, the tongue tip touches the ridge behind your upper teeth and air flows around its sides.",
+      "Light l, as in 'leaf', keeps the back of the tongue low and sounds bright, close to ee.",
+      "Dark l, as in 'feel', raises the back of the tongue toward oo; Spanish and Italian keep l light everywhere."
+     ],
+     "q": "Can you hear the difference between the l in 'leaf' and the l in 'feel'?",
+     "c": "Say 'leaf' and 'feel', then Spanish 'sol' and Italian 'sale', keeping the Spanish and Italian l bright."
+    },
+    "de": {
+     "t": "Helles l und dunkles l",
+     "g": "Hör das helle l in englisch 'leaf' und das dunkle in 'feel', und das immer helle l im Deutschen und Spanischen.",
+     "p": [
+      "Bei jedem l berührt die Zungenspitze den Zahndamm und die Luft strömt seitlich an der Zunge vorbei.",
+      "Das helle l wie in „Licht“ hält den Zungenrücken tief und klingt hell, nah am i.",
+      "Das dunkle l im englischen 'feel' hebt den Zungenrücken Richtung u; Deutsch, Spanisch und Italienisch bleiben hell."
+     ],
+     "q": "Hörst du den Unterschied zwischen dem l in 'leaf' und dem l in 'feel'?",
+     "c": "Sag „Ball“ und „hell“ mit hellem l und danach englisch 'ball' und 'feel' mit dunklem l; vergleiche."
+    },
+    "es": {
+     "t": "L clara y l oscura",
+     "g": "Escucha la l clara del inglés 'leaf', la l oscura de 'feel' y la l siempre clara del español y el italiano.",
+     "p": [
+      "En toda l, la punta de la lengua toca los alvéolos y el aire sale por los lados de la lengua.",
+      "La l clara, como en 'leaf' o 'luna', deja baja la parte de atrás de la lengua y suena brillante.",
+      "La l oscura, como en 'feel', sube el dorso hacia la u; el español mantiene la l clara también al final: 'sol'."
+     ],
+     "q": "¿Notas la diferencia entre la l de 'leaf' y la de 'feel'?",
+     "c": "Di 'sol', 'papel' y 'final' con una l clara y brillante, y luego el inglés 'feel' con la l oscura."
+    },
+    "fr": {
+     "t": "L clair et l sombre",
+     "g": "Entends le l clair de l'anglais 'leaf', le l sombre de 'feel', et le l toujours clair du français.",
+     "p": [
+      "Pour tout l, le bout de la langue touche les alvéoles et l'air passe sur les côtés de la langue.",
+      "Le l clair, comme dans « lune » ou 'leaf', garde l'arrière de la langue bas et sonne brillant.",
+      "Le l sombre de 'feel' remonte l'arrière de la langue vers ou ; le français garde le l clair même en finale : « sel »."
+     ],
+     "q": "Entends-tu la différence entre le l de 'leaf' et celui de 'feel' ?",
+     "c": "Dis « sel », « ville » et « bol » avec un l bien clair, puis l'anglais 'feel' avec un l sombre, et compare."
+    },
+    "it": {
+     "t": "L chiara e l scura",
+     "g": "Ascolta la l chiara dell'inglese 'leaf', la l scura di 'feel' e la l sempre chiara dell'italiano.",
+     "p": [
+      "In ogni l la punta della lingua tocca gli alveoli e l'aria passa ai lati della lingua.",
+      "La l chiara, come in 'luna' o 'leaf', tiene bassa la parte posteriore della lingua e suona luminosa.",
+      "La l scura di 'feel' alza il dorso verso la u; l'italiano tiene la l chiara anche a fine sillaba: 'alto', 'sol'."
+     ],
+     "q": "Senti la differenza tra la l di 'leaf' e quella di 'feel'?",
+     "c": "Di' 'sale', 'altro' e 'mal' con una l chiara e luminosa, poi l'inglese 'feel' con la l scura, e confronta."
+    },
+    "pt": {
+     "t": "L claro e l escuro",
+     "g": "Ouve o l claro do inglês 'leaf', o l escuro de 'feel' e o l sempre claro do espanhol e do italiano.",
+     "p": [
+      "Em qualquer l, a ponta da língua toca os alvéolos e o ar passa pelos lados da língua.",
+      "O l claro, como em 'lua' ou 'leaf', mantém baixa a parte de trás da língua e soa brilhante.",
+      "O l escuro de 'feel' sobe o dorso para o u; em português europeu o l final também é escuro, como em 'sal'."
+     ],
+     "q": "Consegues ouvir a diferença entre o l de 'leaf' e o de 'feel'?",
+     "c": "Diz 'lua' e 'sal' e repara na diferença; depois diz o espanhol 'sol' com um l claro e brilhante."
+    },
+    "pt_BR": {
+     "t": "L claro e l escuro",
+     "g": "Ouça o l claro do inglês 'leaf', o l escuro de 'feel' e o l sempre claro do espanhol e do italiano.",
+     "p": [
+      "Em qualquer l, a ponta da língua toca os alvéolos e o ar passa pelos lados da língua.",
+      "O l claro, como em 'lua' ou 'leaf', mantém baixa a parte de trás da língua e soa brilhante.",
+      "O l escuro de 'feel' sobe o dorso para o u; no Brasil, o l final costuma virar u: 'Brasil' soa 'Brasiu'."
+     ],
+     "q": "Você consegue ouvir a diferença entre o l de 'leaf' e o de 'feel'?",
+     "c": "Diga o espanhol 'sol' e o italiano 'sale' com a ponta da língua tocando os alvéolos no l, sem virar u."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ly sound",
+     "g": "Make the ly sound of Italian 'gli' and Portuguese 'lh' with the middle of your tongue on the roof of the mouth.",
+     "p": [
+      "Keep the tongue tip down behind your lower teeth and press the middle of the tongue against the hard palate.",
+      "Let the air flow out around the sides of the tongue: Italian 'figlio', 'famiglia'; Portuguese 'filho', 'olho'.",
+      "It sounds like a soft l and y said at once, close to the 'lli' in English 'million', but as one sound."
+     ],
+     "q": "Can you find this sound in a word you already know, like 'tagliatelle' or 'mulher'?",
+     "c": "Say 'li' slowly, then press the middle of your tongue up to blend it into 'gli'; try 'figlio' and 'filho'."
+    },
+    "de": {
+     "t": "Der lj-Laut",
+     "g": "Bilde den lj-Laut von italienisch 'gli' und portugiesisch 'lh' mit der Zungenmitte am harten Gaumen.",
+     "p": [
+      "Die Zungenspitze bleibt unten hinter den Schneidezähnen, die Zungenmitte drückt gegen den harten Gaumen.",
+      "Die Luft strömt seitlich an der Zunge vorbei: italienisch 'figlio', 'famiglia'; portugiesisch 'filho', 'olho'.",
+      "Er klingt wie l und j gleichzeitig, aber als ein einziger weicher Laut, nicht als l plus j."
+     ],
+     "q": "Findest du diesen Laut in einem Wort, das du schon kennst, etwa 'tagliatelle'?",
+     "c": "Sag langsam „li“, drück dann die Zungenmitte hoch, bis daraus 'gli' wird; probier 'figlio' und 'filho'."
+    },
+    "es": {
+     "t": "El sonido ly",
+     "g": "Haz el sonido de 'gli' italiano y 'lh' portugués con el centro de la lengua en el paladar.",
+     "p": [
+      "Deja la punta de la lengua abajo, detrás de los dientes inferiores, y aprieta el centro contra el paladar duro.",
+      "El aire sale por los lados de la lengua: italiano 'figlio', 'famiglia'; portugués 'filho', 'olho'.",
+      "Es como una l y una y a la vez; en zonas andinas y del norte de España, la 'll' de 'calle' aún suena así."
+     ],
+     "q": "¿Encuentras este sonido en alguna palabra que ya conoces, como 'tagliatelle'?",
+     "c": "Di 'li' despacio y luego sube el centro de la lengua para fundirlo en 'gli'; prueba 'figlio' y 'filho'."
+    },
+    "fr": {
+     "t": "Le son ly",
+     "g": "Fais le son de l'italien 'gli' et du portugais 'lh', avec le milieu de la langue contre le palais.",
+     "p": [
+      "Garde la pointe de la langue en bas derrière les dents inférieures et appuie le milieu contre le palais dur.",
+      "L'air passe sur les côtés de la langue : italien 'figlio', 'famiglia' ; portugais 'filho', 'olho'.",
+      "On dirait un l et un y en même temps, proche du « lli » dans « million », mais en un seul son."
+     ],
+     "q": "Trouves-tu ce son dans un mot que tu connais déjà, comme 'tagliatelle' ?",
+     "c": "Dis « li » lentement, puis remonte le milieu de la langue pour le fondre en 'gli' ; essaie 'figlio' et 'filho'."
+    },
+    "it": {
+     "t": "Il suono gli",
+     "g": "Fai il suono di 'gli' e del portoghese 'lh' con la parte centrale della lingua contro il palato.",
+     "p": [
+      "Tieni la punta della lingua in basso dietro gli incisivi inferiori e premi il centro contro il palato duro.",
+      "L'aria esce ai lati della lingua: 'figlio', 'famiglia', 'aglio'; in portoghese 'filho', 'olho'.",
+      "Suona come una l e una i insieme, ma è un suono unico, e tra vocali in italiano è sempre un po' lungo."
+     ],
+     "q": "Quale parola con gli usi più spesso nella vita di tutti i giorni?",
+     "c": "Di' 'li' lentamente, poi alza il centro della lingua per fonderlo in 'gli'; prova 'figlio' e 'filho'."
+    },
+    "pt": {
+     "t": "O som lh",
+     "g": "Faz o som do 'lh' português e do 'gli' italiano com o meio da língua no céu da boca.",
+     "p": [
+      "Deixa a ponta da língua em baixo, atrás dos dentes inferiores, e encosta o meio ao palato duro.",
+      "O ar sai pelos lados da língua: 'filho', 'olho', 'mulher'; em italiano 'figlio', 'famiglia'.",
+      "Soa como um l e um i ao mesmo tempo, mas é um só som, por isso 'olho' não soa como 'óleo'."
+     ],
+     "q": "Que palavra com lh usas mais no dia a dia?",
+     "c": "Diz 'li' devagar e depois sobe o meio da língua para o fundir em 'lh'; experimenta 'filho' e 'figlio'."
+    },
+    "pt_BR": {
+     "t": "O som lh",
+     "g": "Faça o som do 'lh' do português e do 'gli' do italiano com o meio da língua no céu da boca.",
+     "p": [
+      "Deixe a ponta da língua embaixo, atrás dos dentes inferiores, e encoste o meio no palato duro.",
+      "O ar sai pelos lados da língua: 'filho', 'olho', 'mulher'; em italiano 'figlio', 'famiglia'.",
+      "Soa como um l e um i ao mesmo tempo, mas é um som só, por isso 'olho' não soa como 'óleo'."
+     ],
+     "q": "Qual palavra com lh você usa mais no dia a dia?",
+     "c": "Diga 'li' devagar e depois suba o meio da língua para fundir em 'lh'; experimente 'filho' e 'figlio'."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "R sounds around the world",
+     "g": "Discover that one letter r has many sounds: tapped, rolled, throaty and the English r.",
+     "p": [
+      "Tapped r: one quick flick of the tongue tip, as in Spanish 'pero' or Italian 'caro'.",
+      "Rolled r: the tongue tip flutters several times, as in Spanish 'perro'; throaty r is made at the back, as in French 'Paris'.",
+      "English r touches nothing at all: the tongue curls or bunches up, as in 'red'."
+     ],
+     "q": "Which r sound do you use in your own language?",
+     "c": "Say 'red', French 'rouge' and Spanish 'pero' and describe to yourself where each r happens in your mouth."
+    },
+    "de": {
+     "t": "R-Laute rund um die Welt",
+     "g": "Entdecke, dass der Buchstabe r viele Laute hat: getippt, gerollt, kehlig und das englische r.",
+     "p": [
+      "Getipptes r: ein schneller Schlag der Zungenspitze, wie in spanisch 'pero' oder italienisch 'caro'.",
+      "Gerolltes r: die Zungenspitze flattert mehrmals, wie in spanisch 'perro'; das kehlige r entsteht hinten, wie in „rot“.",
+      "Das englische r berührt gar nichts: Die Zunge biegt oder wölbt sich zurück, wie in 'red'."
+     ],
+     "q": "Welches r benutzt du in deiner Muttersprache?",
+     "c": "Sag „rot“, englisch 'red' und spanisch 'pero' und beschreibe dir, wo im Mund jedes r entsteht."
+    },
+    "es": {
+     "t": "Las erres del mundo",
+     "g": "Descubre que una sola letra r tiene muchos sonidos: simple, múltiple, gutural y la r inglesa.",
+     "p": [
+      "R simple: un toque rápido de la punta de la lengua, como en 'pero' o en italiano 'caro'.",
+      "R múltiple: la punta vibra varias veces, como en 'perro'; la r gutural se hace atrás, como en francés 'Paris'.",
+      "La r inglesa no toca nada: la lengua se curva o se recoge hacia atrás, como en 'red'."
+     ],
+     "q": "¿Qué r usas en tu idioma, y cuál te resulta más difícil en otros?",
+     "c": "Di el inglés 'red', el francés 'rouge' y 'pero', y describe dónde se forma cada r en tu boca."
+    },
+    "fr": {
+     "t": "Les r du monde",
+     "g": "Découvre qu'une seule lettre r cache plusieurs sons : battu, roulé, de gorge et le r anglais.",
+     "p": [
+      "R battu : un seul coup rapide du bout de la langue, comme dans l'espagnol 'pero' ou l'italien 'caro'.",
+      "R roulé : la pointe vibre plusieurs fois, comme dans l'espagnol 'perro' ; le r de gorge se fait au fond, comme dans « Paris ».",
+      "Le r anglais ne touche rien : la langue se recourbe ou se ramasse vers l'arrière, comme dans 'red'."
+     ],
+     "q": "Quel r utilises-tu dans ta langue maternelle ?",
+     "c": "Dis « rouge », l'anglais 'red' et l'espagnol 'pero', et décris où chaque r se forme dans ta bouche."
+    },
+    "it": {
+     "t": "Le erre del mondo",
+     "g": "Scopri che una sola lettera r ha tanti suoni: battuta, vibrata, di gola e la r inglese.",
+     "p": [
+      "R battuta: un solo colpo veloce della punta della lingua, come in 'caro' o nello spagnolo 'pero'.",
+      "R vibrata: la punta vibra più volte, come in 'carro' o 'terra'; la r di gola si fa in fondo, come nel francese 'Paris'.",
+      "La r inglese non tocca niente: la lingua si piega o si raccoglie all'indietro, come in 'red'."
+     ],
+     "q": "Quale r usi nella tua lingua, e quale trovi più difficile nelle altre?",
+     "c": "Di' l'inglese 'red', il francese 'rouge' e 'caro', e descrivi dove nasce ogni r nella bocca."
+    },
+    "pt": {
+     "t": "Os erres do mundo",
+     "g": "Descobre que uma só letra r tem muitos sons: vibrante simples, múltipla, da garganta e o r inglês.",
+     "p": [
+      "R simples: um toque rápido da ponta da língua, como em 'caro' ou no espanhol 'pero'.",
+      "R forte: em Portugal pode vibrar várias vezes ou soar na garganta, como em 'carro' e 'rato', e no francês 'Paris'.",
+      "O r inglês não toca em nada: a língua curva-se ou recolhe-se para trás, como em 'red'."
+     ],
+     "q": "Que r usas no teu dia a dia, e qual achas mais difícil noutras línguas?",
+     "c": "Diz o inglês 'red', o francês 'rouge' e 'caro', e descreve onde se forma cada r na tua boca."
+    },
+    "pt_BR": {
+     "t": "Os erres do mundo",
+     "g": "Descubra que uma só letra r tem muitos sons: tepe, vibrante, da garganta e o r inglês.",
+     "p": [
+      "R fraco: um toque rápido da ponta da língua, como em 'caro' ou no espanhol 'pero'.",
+      "R vibrante: a ponta vibra várias vezes, como no espanhol 'perro'; no Brasil o r de 'rato' e 'carro' soa na garganta, quase como h.",
+      "O r inglês não toca em nada: a língua se curva ou se recolhe para trás, como em 'red' e no r caipira."
+     ],
+     "q": "Qual r você usa no dia a dia, e qual acha mais difícil em outros idiomas?",
+     "c": "Diga o inglês 'red', o francês 'rouge' e 'caro', e descreva onde cada r se forma na sua boca."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The tapped r",
+     "g": "Master the tapped r: one quick tap of the tongue, like the 'tt' in American English 'butter'.",
+     "p": [
+      "The tongue tip flicks once against the ridge behind your upper teeth, very fast and very light.",
+      "Americans make this exact move in 'butter', 'water' and 'city', so you may already know it.",
+      "It is the single r of Spanish 'pero', 'cara', Italian 'caro' and Portuguese 'caro'."
+     ],
+     "q": "Did you know you might already make a tapped r without realising it?",
+     "c": "Say 'butter' the American way ten times fast, then switch to Spanish 'para' with the same quick tap."
+    },
+    "de": {
+     "t": "Das getippte r",
+     "g": "Meistere das getippte r: ein schneller Zungenschlag wie das 'tt' im amerikanischen 'butter'.",
+     "p": [
+      "Die Zungenspitze schlägt einmal gegen den Zahndamm, sehr schnell und sehr leicht.",
+      "Amerikaner machen genau diese Bewegung in 'butter', 'water' und 'city', vielleicht kennst du sie also schon.",
+      "Es ist das einfache r in spanisch 'pero', 'cara', italienisch 'caro' und portugiesisch 'caro'."
+     ],
+     "q": "Hättest du gedacht, dass du ein getipptes r vielleicht schon machst, ohne es zu merken?",
+     "c": "Sag zehnmal schnell 'butter' auf Amerikanisch und wechsle dann zu spanisch 'para' mit demselben Tipp."
+    },
+    "es": {
+     "t": "La r simple",
+     "g": "Domina la r simple: un solo toque rápido de la lengua, como la 'tt' del inglés americano 'butter'.",
+     "p": [
+      "La punta de la lengua golpea una vez los alvéolos, muy rápido y muy suave.",
+      "Los estadounidenses hacen este mismo gesto en 'butter', 'water' y 'city', y tú lo haces en 'pero' y 'cara'.",
+      "Es la r de 'pero', 'cara' y 'oro', y también la del italiano 'caro' y el portugués 'caro'."
+     ],
+     "q": "¿Sabías que la 'tt' de 'butter' en inglés americano suena casi como tu r de 'pero'?",
+     "c": "Di 'para, pero, oro' diez veces rápido, con un solo toque ligero y sin vibrar en cada r."
+    },
+    "fr": {
+     "t": "Le r battu",
+     "g": "Maîtrise le r battu : un seul coup rapide de la langue, comme le 'tt' de l'anglais américain 'butter'.",
+     "p": [
+      "Le bout de la langue tape une fois contre les alvéoles, très vite et très légèrement.",
+      "Les Américains font ce geste dans 'butter', 'water' et 'city' : tu le connais peut-être déjà.",
+      "C'est le r simple de l'espagnol 'pero', 'cara', de l'italien 'caro' et du portugais 'caro'."
+     ],
+     "q": "Savais-tu que tu fais peut-être déjà un r battu sans t'en rendre compte ?",
+     "c": "Dis 'butter' à l'américaine dix fois vite, puis passe à l'espagnol 'para' avec le même petit coup."
+    },
+    "it": {
+     "t": "La r battuta",
+     "g": "Padroneggia la r battuta: un solo colpo veloce della lingua, come la 'tt' dell'inglese americano 'butter'.",
+     "p": [
+      "La punta della lingua batte una volta sugli alveoli, molto veloce e molto leggera.",
+      "Gli americani fanno proprio questo gesto in 'butter', 'water' e 'city', e tu lo fai in 'caro' e 'ora'.",
+      "È la r singola di 'caro', 'ora', 'mare', e anche dello spagnolo 'pero' e del portoghese 'caro'."
+     ],
+     "q": "Sapevi che la 'tt' americana di 'butter' suona quasi come la tua r di 'caro'?",
+     "c": "Di' 'caro, ora, mare' dieci volte veloce, con un solo colpo leggero e senza vibrare su ogni r."
+    },
+    "pt": {
+     "t": "O r simples",
+     "g": "Domina o r simples: um só toque rápido da língua, como o 'tt' do inglês americano 'butter'.",
+     "p": [
+      "A ponta da língua bate uma vez nos alvéolos, muito depressa e muito leve.",
+      "Os americanos fazem este gesto em 'butter', 'water' e 'city', e tu fazes o mesmo em 'caro' e 'hora'.",
+      "É o r de 'caro', 'hora' e 'mar', e também o do espanhol 'pero' e do italiano 'caro'."
+     ],
+     "q": "Sabias que o 'tt' americano de 'butter' soa quase como o teu r de 'caro'?",
+     "c": "Diz 'caro, hora, para' dez vezes depressa, com um só toque leve em cada r."
+    },
+    "pt_BR": {
+     "t": "O r fraco",
+     "g": "Domine o r fraco: um só toque rápido da língua, como o 'tt' do inglês americano 'butter'.",
+     "p": [
+      "A ponta da língua bate uma vez nos alvéolos, muito rápido e muito de leve.",
+      "Os americanos fazem esse gesto em 'butter', 'water' e 'city', e você faz o mesmo em 'caro' e 'hora'.",
+      "É o r de 'caro', 'hora' e 'para', e também o do espanhol 'pero' e do italiano 'caro'."
+     ],
+     "q": "Você sabia que o 'tt' americano de 'butter' soa quase como o seu r de 'caro'?",
+     "c": "Diga 'caro, hora, para' dez vezes rápido, com um só toque leve em cada r."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The rolled r",
+     "g": "Practise the Spanish and Italian rolled r step by step, without strain.",
+     "p": [
+      "The rolled r is a relaxed tongue tip fluttering against the ridge, like a flag in the wind, as in Spanish 'perro'.",
+      "Start from 'd' or a fast 'tdtdtd', then blow more air with a loose tongue until it starts to buzz.",
+      "It may take days or weeks, and that is normal; many native speakers learned it late as children too."
+     ],
+     "q": "Have you ever tried to roll your r? How did it go?",
+     "c": "Practise 'tr' and 'dr' words like Spanish 'tres' and Italian 'treno' for two minutes, relaxed and playful."
+    },
+    "de": {
+     "t": "Das gerollte r",
+     "g": "Übe das gerollte r des Spanischen und Italienischen Schritt für Schritt und ohne Anstrengung.",
+     "p": [
+      "Beim gerollten r flattert die lockere Zungenspitze am Zahndamm, wie eine Fahne im Wind: spanisch 'perro'.",
+      "Beginne mit „d“ oder schnellem „tdtdtd“ und blase dann mit lockerer Zunge mehr Luft, bis es surrt.",
+      "Das kann Tage oder Wochen dauern, und das ist normal; auch viele Muttersprachler lernen es als Kind spät."
+     ],
+     "q": "Hast du schon einmal versucht, das r zu rollen? Wie ist es gelaufen?",
+     "c": "Übe zwei Minuten Wörter mit tr und dr wie spanisch 'tres' und italienisch 'treno', locker und spielerisch."
+    },
+    "es": {
+     "t": "La r múltiple",
+     "g": "Practica paso a paso la erre vibrante del español y el italiano, sin forzar.",
+     "p": [
+      "En la r múltiple, la punta de la lengua relajada vibra contra los alvéolos como una bandera al viento: 'perro'.",
+      "Empieza con 'd' o un 'tdtdtd' rápido y luego sopla más aire con la lengua suelta hasta que vibre.",
+      "Puede llevar días o semanas, y es normal; muchos nativos también la aprendieron tarde de pequeños."
+     ],
+     "q": "¿Te sale la r de 'perro' con facilidad o conoces a alguien a quien le cueste?",
+     "c": "Practica dos minutos palabras con tr y dr como 'tres', 'dragón' y 'tren', relajado y jugando."
+    },
+    "fr": {
+     "t": "Le r roulé",
+     "g": "Entraîne-toi pas à pas au r roulé de l'espagnol et de l'italien, sans forcer.",
+     "p": [
+      "Le r roulé, c'est le bout de la langue détendu qui vibre contre les alvéoles comme un drapeau : espagnol 'perro'.",
+      "Pars d'un « d » ou d'un « tdtdtd » rapide, puis souffle plus d'air, langue souple, jusqu'à ce que ça vibre.",
+      "Cela peut prendre des jours ou des semaines, c'est normal ; beaucoup de natifs l'ont appris tard enfants."
+     ],
+     "q": "As-tu déjà essayé de rouler les r ? Comment ça s'est passé ?",
+     "c": "Entraîne-toi deux minutes sur des mots en tr et dr comme l'espagnol 'tres' et l'italien 'treno', en jouant."
+    },
+    "it": {
+     "t": "La r vibrata",
+     "g": "Esercitati passo dopo passo con la r vibrata dell'italiano e dello spagnolo, senza sforzo.",
+     "p": [
+      "Nella r vibrata la punta della lingua rilassata vibra contro gli alveoli come una bandiera al vento: 'terra'.",
+      "Parti da una 'd' o da un 'tdtdtd' veloce, poi soffia più aria con la lingua morbida finché vibra.",
+      "Possono servire giorni o settimane, ed è normale; anche molti madrelingua l'hanno imparata tardi da bambini."
+     ],
+     "q": "Ti viene facile la r di 'terra' o conosci qualcuno che fa fatica?",
+     "c": "Esercitati due minuti con parole in tr e dr come 'treno', 'tre' e 'drago', in modo rilassato e giocoso."
+    },
+    "pt": {
+     "t": "O r vibrante",
+     "g": "Pratica passo a passo o r vibrante do espanhol e do italiano, sem esforço.",
+     "p": [
+      "No r vibrante, a ponta da língua relaxada vibra contra os alvéolos como uma bandeira ao vento: espanhol 'perro'.",
+      "Começa com 'd' ou um 'tdtdtd' rápido e depois sopra mais ar com a língua solta até vibrar.",
+      "Pode levar dias ou semanas, e é normal; muitos falantes nativos também o aprenderam tarde, em crianças."
+     ],
+     "q": "Já tentaste fazer o r vibrante? Como correu?",
+     "c": "Pratica dois minutos palavras com tr e dr como o espanhol 'tres' e o italiano 'treno', descontraído e a brincar."
+    },
+    "pt_BR": {
+     "t": "O r vibrante",
+     "g": "Pratique passo a passo o r vibrante do espanhol e do italiano, sem esforço.",
+     "p": [
+      "No r vibrante, a ponta da língua relaxada vibra contra os alvéolos como uma bandeira ao vento: espanhol 'perro'.",
+      "Comece com 'd' ou um 'tdtdtd' rápido e depois sopre mais ar com a língua solta até vibrar.",
+      "Pode levar dias ou semanas, e é normal; muitos falantes nativos também aprenderam tarde, quando crianças."
+     ],
+     "q": "Você já tentou fazer o r vibrante? Como foi?",
+     "c": "Pratique dois minutos palavras com tr e dr como o espanhol 'tres' e o italiano 'treno', relaxado e brincando."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The throaty r",
+     "g": "Make the French and German r at the back of the mouth, soft like a gentle gargle.",
+     "p": [
+      "Keep your tongue tip resting behind your lower teeth; the action happens at the very back of your mouth.",
+      "Raise the back of your tongue toward the soft palate and let air rub through gently, like a soft gargle.",
+      "It is lighter than many learners think: French 'Paris', 'rouge' and German 'rot', 'Reise' need no force."
+     ],
+     "q": "Does the throaty r feel strange to you, or does your language already have a similar sound?",
+     "c": "Gargle a little water, notice where it vibrates, then say French 'rare' and German 'Rad' softly."
+    },
+    "de": {
+     "t": "Das Rachen-r",
+     "g": "Bilde das französische und deutsche r hinten im Mund, weich wie ein leichtes Gurgeln.",
+     "p": [
+      "Die Zungenspitze ruht hinter den unteren Zähnen; die Arbeit passiert ganz hinten im Mund.",
+      "Heb den Zungenrücken zum Gaumensegel und lass die Luft sanft reiben, wie ein leises Gurgeln.",
+      "Es ist leichter, als viele denken: „rot“, „Reise“ und französisch 'Paris', 'rouge' brauchen keine Kraft."
+     ],
+     "q": "Kommt dir das Rachen-r selbstverständlich vor, oder hast du es bei Lernenden schon schwierig erlebt?",
+     "c": "Gurgle etwas Wasser, merk dir, wo es vibriert, und sag dann sanft „Rad“ und französisch 'rare'."
+    },
+    "es": {
+     "t": "La r gutural",
+     "g": "Haz la r francesa y alemana al fondo de la boca, suave como una gárgara ligera.",
+     "p": [
+      "Deja la punta de la lengua apoyada detrás de los dientes de abajo; todo ocurre al fondo de la boca.",
+      "Sube el dorso de la lengua hacia el velo del paladar y deja que el aire roce suave, como una gárgara.",
+      "Es más ligera de lo que se cree: el francés 'Paris', 'rouge' o el alemán 'rot' no necesitan fuerza."
+     ],
+     "q": "¿La r gutural te resulta extraña o tu idioma tiene algún sonido parecido?",
+     "c": "Haz gárgaras con un poco de agua, nota dónde vibra y luego di suavemente el francés 'rare' y el alemán 'Rad'."
+    },
+    "fr": {
+     "t": "Le r de gorge",
+     "g": "Fais le r français et allemand au fond de la bouche, doux comme un léger gargarisme.",
+     "p": [
+      "Garde le bout de la langue posé derrière les dents du bas : tout se passe au fond de la bouche.",
+      "Remonte l'arrière de la langue vers le voile du palais et laisse l'air frotter doucement, comme en se gargarisant.",
+      "Il est plus léger qu'on ne croit : « Paris », « rouge » et l'allemand 'rot' n'ont besoin d'aucune force."
+     ],
+     "q": "Ce r te semble-t-il naturel, ou as-tu déjà vu des apprenants avoir du mal avec lui ?",
+     "c": "Gargarise-toi avec un peu d'eau, repère où ça vibre, puis dis doucement « rare » et l'allemand 'Rad'."
+    },
+    "it": {
+     "t": "La r di gola",
+     "g": "Fai la r francese e tedesca in fondo alla bocca, morbida come un leggero gargarismo.",
+     "p": [
+      "Tieni la punta della lingua appoggiata dietro i denti inferiori: tutto succede in fondo alla bocca.",
+      "Alza il dorso della lingua verso il palato molle e lascia che l'aria sfreghi piano, come un gargarismo.",
+      "È più leggera di quanto si pensi: il francese 'Paris', 'rouge' e il tedesco 'rot' non richiedono forza."
+     ],
+     "q": "La r di gola ti sembra strana o conosci qualcuno che la usa anche in italiano?",
+     "c": "Fai un gargarismo con un po' d'acqua, nota dove vibra, poi di' piano il francese 'rare' e il tedesco 'Rad'."
+    },
+    "pt": {
+     "t": "O r da garganta",
+     "g": "Faz o r francês e alemão no fundo da boca, suave como um gargarejo leve.",
+     "p": [
+      "Deixa a ponta da língua apoiada atrás dos dentes de baixo; tudo acontece no fundo da boca.",
+      "Sobe o dorso da língua em direção ao véu palatino e deixa o ar roçar suavemente, como num gargarejo.",
+      "É mais leve do que parece: o francês 'Paris', 'rouge' e o alemão 'rot' não precisam de força, como o 'rr' de Lisboa."
+     ],
+     "q": "Usas um r da garganta no teu português, por exemplo em 'carro' ou 'rua'?",
+     "c": "Gargareja com um pouco de água, repara onde vibra e depois diz suavemente o francês 'rare' e o alemão 'Rad'."
+    },
+    "pt_BR": {
+     "t": "O r da garganta",
+     "g": "Faça o r francês e alemão no fundo da boca, suave como um gargarejo leve.",
+     "p": [
+      "Deixe a ponta da língua apoiada atrás dos dentes de baixo; tudo acontece no fundo da boca.",
+      "Suba o dorso da língua em direção ao palato mole e deixe o ar roçar suavemente, como num gargarejo.",
+      "É mais leve do que parece e parente do r carioca de 'carro'; o francês 'Paris' e o alemão 'rot' não pedem força."
+     ],
+     "q": "Você usa um r de garganta no seu português, como em 'carro' ou 'rua'?",
+     "c": "Gargareje com um pouco de água, repare onde vibra e depois diga suavemente o francês 'rare' e o alemão 'Rad'."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The English r",
+     "g": "Make the English r with the tongue pulled back, touching nothing, and the lips slightly rounded.",
+     "p": [
+      "Pull your tongue back and up, curling the tip a little or bunching the body; it must not touch the roof.",
+      "Round your lips slightly, as if about to say 'oo', then let the voice flow: 'red', 'right', 'room'.",
+      "In British English an r after a vowel is often silent ('car', 'park'); in American English it is heard."
+     ],
+     "q": "Is the English r easy for you, or do you tend to tap or roll it?",
+     "c": "Say 'grrr' like a friendly dog with your tongue floating, then 'red, rice, really' with rounded lips."
+    },
+    "de": {
+     "t": "Das englische r",
+     "g": "Bilde das englische r mit zurückgezogener Zunge, die nichts berührt, und leicht gerundeten Lippen.",
+     "p": [
+      "Zieh die Zunge zurück und nach oben, biege die Spitze leicht oder wölbe den Körper; sie darf nichts berühren.",
+      "Runde die Lippen leicht wie für ein u und lass die Stimme fließen: 'red', 'right', 'room'.",
+      "Im britischen Englisch ist ein r nach Vokal oft stumm ('car', 'park'), im amerikanischen hört man es."
+     ],
+     "q": "Fällt dir das englische r leicht, oder rutschst du ins Rachen-r?",
+     "c": "Knurre wie ein freundlicher Hund mit schwebender Zunge, dann sag 'red, rice, really' mit runden Lippen."
+    },
+    "es": {
+     "t": "La r inglesa",
+     "g": "Haz la r inglesa con la lengua recogida hacia atrás, sin tocar nada, y los labios un poco redondeados.",
+     "p": [
+      "Lleva la lengua hacia atrás y arriba, curvando un poco la punta o recogiéndola; no debe tocar el paladar.",
+      "Redondea un poco los labios, como para decir 'u', y deja fluir la voz: 'red', 'right', 'room'.",
+      "En inglés británico la r tras vocal suele ser muda ('car', 'park'); en inglés americano sí se oye."
+     ],
+     "q": "¿La r inglesa te resulta fácil o tiendes a hacerla como la r de 'pero'?",
+     "c": "Gruñe como un perro simpático con la lengua flotando, y luego di 'red, rice, really' con labios redondos."
+    },
+    "fr": {
+     "t": "Le r anglais",
+     "g": "Fais le r anglais avec la langue tirée en arrière, sans rien toucher, et les lèvres un peu arrondies.",
+     "p": [
+      "Recule et lève la langue, en recourbant un peu la pointe ou en la ramassant ; elle ne touche pas le palais.",
+      "Arrondis légèrement les lèvres, comme pour « ou », et laisse couler la voix : 'red', 'right', 'room'.",
+      "En anglais britannique, le r après une voyelle est souvent muet ('car', 'park') ; en américain, on l'entend."
+     ],
+     "q": "Le r anglais est-il facile pour toi, ou as-tu tendance à le faire avec la gorge ?",
+     "c": "Grogne comme un chien gentil, langue flottante, puis dis 'red, rice, really' avec les lèvres arrondies."
+    },
+    "it": {
+     "t": "La r inglese",
+     "g": "Fai la r inglese con la lingua tirata indietro, senza toccare niente, e le labbra un po' arrotondate.",
+     "p": [
+      "Porta la lingua indietro e in alto, piegando un po' la punta o raccogliendola; non deve toccare il palato.",
+      "Arrotonda leggermente le labbra, come per dire 'u', e lascia scorrere la voce: 'red', 'right', 'room'.",
+      "Nell'inglese britannico la r dopo vocale spesso è muta ('car', 'park'); in quello americano si sente."
+     ],
+     "q": "La r inglese ti viene facile o tendi a farla battuta come in 'caro'?",
+     "c": "Ringhia come un cane simpatico con la lingua sospesa, poi di' 'red, rice, really' con le labbra tonde."
+    },
+    "pt": {
+     "t": "O r inglês",
+     "g": "Faz o r inglês com a língua puxada para trás, sem tocar em nada, e os lábios um pouco arredondados.",
+     "p": [
+      "Leva a língua para trás e para cima, curvando um pouco a ponta ou recolhendo-a; não deve tocar no palato.",
+      "Arredonda um pouco os lábios, como para dizer 'u', e deixa a voz fluir: 'red', 'right', 'room'.",
+      "No inglês britânico o r depois de vogal costuma ser mudo ('car', 'park'); no americano ouve-se."
+     ],
+     "q": "O r inglês é fácil para ti ou tendes a fazê-lo como o r de 'caro'?",
+     "c": "Rosna como um cão simpático com a língua a flutuar e depois diz 'red, rice, really' com lábios redondos."
+    },
+    "pt_BR": {
+     "t": "O r inglês",
+     "g": "Faça o r inglês com a língua puxada para trás, sem tocar em nada, e os lábios um pouco arredondados.",
+     "p": [
+      "Leve a língua para trás e para cima, curvando um pouco a ponta ou recolhendo; ela não deve tocar o palato.",
+      "Arredonde um pouco os lábios, como para dizer 'u', e deixe a voz fluir: 'red', 'right', 'room'.",
+      "É parecido com o r caipira de 'porta'; no inglês britânico o r depois de vogal costuma ser mudo: 'car'."
+     ],
+     "q": "O r inglês é fácil para você ou você tende a falar como o r de 'rato'?",
+     "c": "Rosne como um cachorro simpático com a língua flutuando e depois diga 'red, rice, really' com lábios redondos."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathy h or silent h",
+     "g": "Learn when h is a breathy sound, as in English and German, and when it is silent, as in French, Spanish, Italian and Portuguese.",
+     "p": [
+      "In English and German, h is a soft breath with an open mouth, like fogging up a mirror: 'house', 'Haus'.",
+      "In French, Spanish, Italian and Portuguese, a written h is usually silent: 'hôtel', 'hola', 'ho', 'hoje'.",
+      "Learners often drop the English h ('ouse') or add one where it does not belong; practise both ways."
+     ],
+     "q": "Is the h silent or breathy in your own language?",
+     "c": "Breathe on your hand for 'hat, hope, hello', then say Spanish 'hola' and French 'homme' with no breath at all."
+    },
+    "de": {
+     "t": "Gehauchtes h oder stummes h",
+     "g": "Lerne, wann h ein Hauch ist, wie im Deutschen und Englischen, und wann es stumm bleibt, wie im Französischen.",
+     "p": [
+      "Im Deutschen und Englischen ist h ein sanfter Hauch mit offenem Mund, wie beim Anhauchen eines Spiegels: „Haus“.",
+      "Im Französischen, Spanischen, Italienischen und Portugiesischen ist ein geschriebenes h meist stumm: 'hôtel', 'hola'.",
+      "Lernende lassen das h oft weg oder setzen es, wo es nicht hingehört; übe beide Richtungen."
+     ],
+     "q": "Hast du schon gehört, wie Lernende „Hund“ ohne h sagen? Wie klang das für dich?",
+     "c": "Hauch für „Hut, Hose, hallo“ auf deine Hand, dann sag spanisch 'hola' und französisch 'homme' ganz ohne Hauch."
+    },
+    "es": {
+     "t": "H aspirada o h muda",
+     "g": "Aprende cuándo la h es un soplo, como en inglés y alemán, y cuándo es muda, como en español.",
+     "p": [
+      "En inglés y alemán, la h es un soplo suave con la boca abierta, como empañar un espejo: 'house', 'Haus'.",
+      "En español, francés, italiano y portugués, la h escrita suele ser muda: 'hola', 'hôtel', 'ho', 'hoje'.",
+      "Quien habla español suele convertir la h inglesa en j; la h es más suave: solo aire, sin roce en la garganta."
+     ],
+     "q": "¿Te cuesta hacer una h suave en inglés sin que suene como una j?",
+     "c": "Echa el aliento en tu mano para 'hat, hope, hello' y luego di 'hola' y 'hacer' sin nada de aire."
+    },
+    "fr": {
+     "t": "H soufflé ou h muet",
+     "g": "Apprends quand le h est un souffle, comme en anglais et en allemand, et quand il est muet, comme en français.",
+     "p": [
+      "En anglais et en allemand, h est un souffle doux bouche ouverte, comme pour embuer un miroir : 'house', 'Haus'.",
+      "En français, espagnol, italien et portugais, le h écrit est en général muet : « hôtel », 'hola', 'ho', 'hoje'.",
+      "Les francophones oublient souvent le h anglais : 'house' devient 'ouse' ; entraîne-toi à souffler doucement."
+     ],
+     "q": "As-tu déjà eu du mal à prononcer le h dans des mots anglais comme 'happy' ?",
+     "c": "Souffle sur ta main pour 'hat, hope, hello', puis dis « homme » et « hôtel » sans aucun souffle."
+    },
+    "it": {
+     "t": "H aspirata o h muta",
+     "g": "Impara quando la h è un soffio, come in inglese e tedesco, e quando è muta, come in italiano.",
+     "p": [
+      "In inglese e tedesco la h è un soffio leggero a bocca aperta, come quando appanni uno specchio: 'house', 'Haus'.",
+      "In italiano, spagnolo, francese e portoghese la h scritta di solito è muta: 'ho', 'hotel', 'hola', 'hoje'.",
+      "Chi parla italiano spesso perde la h inglese ('ouse') o la aggiunge dove non c'è; allena entrambe le cose."
+     ],
+     "q": "Ti capita di dimenticare la h in parole inglesi come 'happy' o 'hotel'?",
+     "c": "Soffia sulla mano per 'hat, hope, hello', poi di' 'ho', 'hanno' e lo spagnolo 'hola' senza nessun soffio."
+    },
+    "pt": {
+     "t": "H aspirado ou h mudo",
+     "g": "Aprende quando o h é um sopro, como em inglês e alemão, e quando é mudo, como em português.",
+     "p": [
+      "Em inglês e alemão, o h é um sopro suave de boca aberta, como embaciar um espelho: 'house', 'Haus'.",
+      "Em português, espanhol, francês e italiano, o h escrito costuma ser mudo: 'hoje', 'hora', 'hola', 'hôtel'.",
+      "Quem fala português tende a esquecer o h inglês ou a trocá-lo por um r de garganta; o h é só ar."
+     ],
+     "q": "Achas difícil fazer o h do inglês em palavras como 'happy' ou 'house'?",
+     "c": "Sopra na mão para 'hat, hope, hello' e depois diz 'hoje' e 'homem' sem ar nenhum."
+    },
+    "pt_BR": {
+     "t": "H aspirado ou h mudo",
+     "g": "Aprenda quando o h é um sopro, como em inglês e alemão, e quando é mudo, como em português.",
+     "p": [
+      "Em inglês e alemão, o h é um sopro suave de boca aberta, como embaçar um espelho: 'house', 'Haus'.",
+      "Em português, espanhol, francês e italiano, o h escrito costuma ser mudo: 'hoje', 'hora', 'hola', 'hôtel'.",
+      "O r de 'rato' no Brasil já soa parecido com o h inglês, então use esse som em 'house' e 'happy'."
+     ],
+     "q": "Você já percebeu que o r de 'rua' parece o h do inglês 'who'?",
+     "c": "Sopre na mão para 'hat, hope, hello' e depois diga 'hoje' e 'homem' sem ar nenhum."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The rough back sound",
+     "g": "Make the rough sound of Spanish 'j' and German 'ach': air rubbing at the back of the mouth.",
+     "p": [
+      "Raise the back of your tongue close to the soft palate, leaving a narrow gap, without closing it.",
+      "Push air through the gap so it rubs and scratches a little: Spanish 'jamón', 'ajo'; German 'Bach', 'acht'.",
+      "It is like a k that never closes, or the sound of 'loch' in Scottish English."
+     ],
+     "q": "Does your language have this rough back sound, or is it new for you?",
+     "c": "Say 'k', then loosen the tongue so air rushes through: 'k-hhh'; then try 'jota', 'Juan' and 'Buch'."
+    },
+    "de": {
+     "t": "Der raue Hinterlaut",
+     "g": "Bilde den rauen Laut von spanisch 'j' und deutsch „ach“: Luft, die hinten im Mund reibt.",
+     "p": [
+      "Heb den Zungenrücken nah an das Gaumensegel, lass aber einen schmalen Spalt offen.",
+      "Drück Luft durch den Spalt, sodass sie leicht kratzt: „Bach“, „acht“, „Buch“; spanisch 'jamón', 'ajo'.",
+      "Er ist wie ein k, das sich nie schließt, und wie das 'ch' im schottischen 'loch'."
+     ],
+     "q": "Fiel dir der ach-Laut leicht, oder kennst du Lernende, die ihn als k sprechen?",
+     "c": "Sag „k“, lockere dann die Zunge, damit Luft durchrauscht: „k-chhh“; probier dann 'jota', „Dach“, „Koch“."
+    },
+    "es": {
+     "t": "El sonido áspero del fondo",
+     "g": "Haz el sonido áspero de la j española y del alemán 'ach': aire que roza al fondo de la boca.",
+     "p": [
+      "Sube el dorso de la lengua cerca del velo del paladar, dejando un paso estrecho, sin cerrarlo.",
+      "Empuja el aire por ese paso para que roce: 'jamón', 'ajo', 'gente'; en alemán 'Bach' y 'acht'.",
+      "Es como una k que nunca se cierra; en el Caribe y otras zonas suena más suave, casi como una h."
+     ],
+     "q": "¿Tu j es fuerte y áspera o suave como un soplo?",
+     "c": "Di 'k', luego afloja la lengua para que pase el aire: 'k-jjj'; prueba después 'jota', 'Juan' y el alemán 'Buch'."
+    },
+    "fr": {
+     "t": "Le son râpeux du fond",
+     "g": "Fais le son râpeux de la j espagnole et de l'allemand 'ach' : de l'air qui frotte au fond de la bouche.",
+     "p": [
+      "Remonte l'arrière de la langue près du voile du palais en laissant un passage étroit, sans fermer.",
+      "Pousse l'air dans ce passage pour qu'il frotte : espagnol 'jamón', 'ajo' ; allemand 'Bach', 'acht'.",
+      "C'est comme un k qui ne se ferme jamais, proche aussi du r de gorge français, mais sans voix."
+     ],
+     "q": "Ce son râpeux te semble-t-il familier ou complètement nouveau ?",
+     "c": "Dis « k », puis relâche la langue pour laisser passer l'air : « k-hhh » ; essaie ensuite 'jota', 'Juan' et 'Buch'."
+    },
+    "it": {
+     "t": "Il suono ruvido in fondo",
+     "g": "Fai il suono ruvido della j spagnola e del tedesco 'ach': aria che sfrega in fondo alla bocca.",
+     "p": [
+      "Alza il dorso della lingua vicino al palato molle, lasciando un passaggio stretto, senza chiuderlo.",
+      "Spingi l'aria nel passaggio perché sfreghi un po': spagnolo 'jamón', 'ajo'; tedesco 'Bach', 'acht'.",
+      "È come una k che non si chiude mai; in Toscana si sente qualcosa di simile in 'la casa', detta 'la hasa'."
+     ],
+     "q": "Questo suono ruvido per te è nuovo o ti ricorda qualcosa di familiare?",
+     "c": "Di' 'k', poi allenta la lingua per far passare l'aria: 'k-hhh'; prova poi 'jota', 'Juan' e 'Buch'."
+    },
+    "pt": {
+     "t": "O som áspero do fundo",
+     "g": "Faz o som áspero do j espanhol e do alemão 'ach': ar a roçar no fundo da boca.",
+     "p": [
+      "Sobe o dorso da língua perto do véu palatino, deixando uma passagem estreita, sem a fechar.",
+      "Empurra o ar por essa passagem para que roce: espanhol 'jamón', 'ajo'; alemão 'Bach', 'acht'.",
+      "É como um k que nunca fecha, e parecido com alguns r fortes de 'carro' ditos de forma mais áspera."
+     ],
+     "q": "Este som áspero é novo para ti ou lembra-te algum som do português?",
+     "c": "Diz 'k' e depois solta a língua para o ar passar: 'k-hhh'; experimenta 'jota', 'Juan' e 'Buch'."
+    },
+    "pt_BR": {
+     "t": "O som áspero do fundo",
+     "g": "Faça o som áspero do j espanhol e do alemão 'ach': ar roçando no fundo da boca.",
+     "p": [
+      "Suba o dorso da língua perto do palato mole, deixando uma passagem estreita, sem fechar.",
+      "Empurre o ar por essa passagem para ele roçar: espanhol 'jamón', 'ajo'; alemão 'Bach', 'acht'.",
+      "É como um k que nunca fecha, parecido com um r de 'carro' carioca dito de um jeito mais áspero."
+     ],
+     "q": "Esse som áspero é novo para você ou lembra algum som do português?",
+     "c": "Diga 'k' e depois solte a língua para o ar passar: 'k-hhh'; experimente 'jota', 'Juan' e 'Buch'."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The German ich sound",
+     "g": "Make the soft German 'ich' hiss after e and i, like a cat's gentle hiss.",
+     "p": [
+      "After e, i, ä, ö, ü and consonants, German 'ch' is made at the front, not the back: 'ich', 'Milch', 'leicht'.",
+      "Trick: say the y of 'yes', then switch your voice off and push air: that soft hiss is the ich sound.",
+      "Keep the tongue tip down and the middle of the tongue high; do not slide into sh or k."
+     ],
+     "q": "Did the 'yes' trick work for you, or did it come out more like sh?",
+     "c": "Whisper 'yyyes' until it hisses, then say 'ich, mich, dich, nicht' and 'Küche' five times each."
+    },
+    "de": {
+     "t": "Der ich-Laut",
+     "g": "Bilde den weichen ich-Laut nach e und i, wie das sanfte Fauchen einer Katze.",
+     "p": [
+      "Nach e, i, ä, ö, ü und Konsonanten bildet man ch vorn, nicht hinten: „ich“, „Milch“, „leicht“.",
+      "Trick: Sag das j in „ja“, schalte die Stimme aus und drück Luft: Dieses weiche Zischen ist der ich-Laut.",
+      "Die Zungenspitze bleibt unten, die Zungenmitte hoch; rutsch nicht ins sch oder ins k."
+     ],
+     "q": "Merkst du bei dir selbst den Unterschied zwischen „ich“ und „ach“?",
+     "c": "Flüstere „jjja“, bis es zischt, dann sag je fünfmal „ich, mich, dich, nicht“ und „Küche“."
+    },
+    "es": {
+     "t": "El sonido alemán de ich",
+     "g": "Haz el siseo suave del alemán 'ich' tras e e i, como el bufido suave de un gato.",
+     "p": [
+      "Tras e, i, ä, ö, ü y consonantes, la 'ch' alemana se hace delante, no al fondo: 'ich', 'Milch', 'leicht'.",
+      "Truco: di la y de 'yo' a la manera de 'yes', apaga la voz y empuja aire: ese siseo suave es el sonido.",
+      "Deja la punta de la lengua abajo y el centro alto; no lo conviertas en sh ni en j española."
+     ],
+     "q": "¿Te funcionó el truco de la y o te salió más parecido a una sh?",
+     "c": "Susurra 'yyy' hasta que sisee y luego di 'ich, mich, dich, nicht' y 'Küche' cinco veces cada una."
+    },
+    "fr": {
+     "t": "Le son allemand ich",
+     "g": "Fais le doux sifflement du 'ich' allemand après e et i, comme le léger feulement d'un chat.",
+     "p": [
+      "Après e, i, ä, ö, ü et les consonnes, le 'ch' allemand se fait devant, pas au fond : 'ich', 'Milch', 'leicht'.",
+      "Astuce : dis le y de « yeux », coupe la voix et pousse l'air : ce doux sifflement, c'est le son ich.",
+      "Garde la pointe de la langue en bas et le milieu haut ; ne glisse ni vers ch français ni vers k."
+     ],
+     "q": "L'astuce du y a-t-elle marché pour toi, ou est-ce sorti plutôt comme un ch français ?",
+     "c": "Chuchote « yyy » jusqu'à ce que ça siffle, puis dis 'ich, mich, dich, nicht' et 'Küche' cinq fois chacun."
+    },
+    "it": {
+     "t": "Il suono tedesco ich",
+     "g": "Fai il soffio morbido del tedesco 'ich' dopo e e i, come il soffio leggero di un gatto.",
+     "p": [
+      "Dopo e, i, ä, ö, ü e consonanti, la 'ch' tedesca si fa davanti, non in fondo: 'ich', 'Milch', 'leicht'.",
+      "Trucco: di' la i di 'ieri', spegni la voce e spingi aria: quel soffio morbido è il suono di ich.",
+      "Tieni la punta della lingua in basso e il centro alto; non scivolare verso sc né verso k."
+     ],
+     "q": "Il trucco di 'ieri' ha funzionato o è uscito più simile a sc?",
+     "c": "Sussurra 'iii' finché soffia, poi di' 'ich, mich, dich, nicht' e 'Küche' cinque volte ciascuna."
+    },
+    "pt": {
+     "t": "O som alemão ich",
+     "g": "Faz o sopro suave do alemão 'ich' depois de e e i, como o bufar leve de um gato.",
+     "p": [
+      "Depois de e, i, ä, ö, ü e consoantes, o 'ch' alemão faz-se à frente, não ao fundo: 'ich', 'Milch', 'leicht'.",
+      "Truque: diz o i de 'iate', desliga a voz e empurra ar: esse sopro suave é o som de ich.",
+      "Mantém a ponta da língua em baixo e o meio alto; não escorregues para ch português nem para k."
+     ],
+     "q": "O truque do 'iate' resultou contigo ou saiu mais parecido com um ch?",
+     "c": "Sussurra 'iii' até soprar e depois diz 'ich, mich, dich, nicht' e 'Küche' cinco vezes cada."
+    },
+    "pt_BR": {
+     "t": "O som alemão ich",
+     "g": "Faça o sopro suave do alemão 'ich' depois de e e i, como o bufar leve de um gato.",
+     "p": [
+      "Depois de e, i, ä, ö, ü e consoantes, o 'ch' alemão é feito na frente, não no fundo: 'ich', 'Milch', 'leicht'.",
+      "Truque: diga o i de 'iate', desligue a voz e empurre ar: esse sopro suave é o som de ich.",
+      "Mantenha a ponta da língua embaixo e o meio alto; não escorregue para o ch de 'chá' nem para k."
+     ],
+     "q": "O truque do 'iate' funcionou para você ou saiu mais parecido com um ch?",
+     "c": "Sussurre 'iii' até soprar e depois diga 'ich, mich, dich, nicht' e 'Küche' cinco vezes cada."
+    }
+   }
+  }
+ ]
+}

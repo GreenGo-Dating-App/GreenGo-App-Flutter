@@ -1,0 +1,835 @@
+{
+ "topic": "gym",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening to your body",
+     "g": "Tell normal training effort apart from pain.",
+     "p": [
+      "Muscle burn and heavy breathing are normal parts of effort.",
+      "Sharp, sudden or joint pain is a signal to stop the exercise.",
+      "Dizziness or feeling unwell means pause and seek help if needed."
+     ],
+     "q": "How would you describe a good, challenging effort?",
+     "c": "After each set today, rate your effort from 1 to 10."
+    },
+    "de": {
+     "t": "Auf den Körper hören",
+     "g": "Unterscheide normale Anstrengung von Schmerz.",
+     "p": [
+      "Muskelbrennen und schnelle Atmung gehören zur Anstrengung dazu.",
+      "Stechender, plötzlicher oder Gelenkschmerz heißt: Übung abbrechen.",
+      "Bei Schwindel oder Unwohlsein pausieren und bei Bedarf Hilfe holen."
+     ],
+     "q": "Wie würdest du eine gute, fordernde Anstrengung beschreiben?",
+     "c": "Bewerte heute nach jedem Satz deine Anstrengung von 1 bis 10."
+    },
+    "es": {
+     "t": "Escuchar a tu cuerpo",
+     "g": "Distingue el esfuerzo normal del dolor.",
+     "p": [
+      "El ardor muscular y respirar fuerte son parte normal del esfuerzo.",
+      "Un dolor agudo, repentino o en una articulación es señal para parar.",
+      "Si te mareas o te encuentras mal, para y pide ayuda si hace falta."
+     ],
+     "q": "¿Cómo describirías un esfuerzo bueno y exigente?",
+     "c": "Hoy, tras cada serie, puntúa tu esfuerzo del 1 al 10."
+    },
+    "fr": {
+     "t": "Écouter son corps",
+     "g": "Distingue l’effort normal de la douleur.",
+     "p": [
+      "Brûlure musculaire et souffle court font partie de l’effort.",
+      "Une douleur vive, soudaine ou articulaire signale qu’il faut arrêter.",
+      "En cas de vertige ou de malaise, fais une pause et demande de l’aide si besoin."
+     ],
+     "q": "Comment décrirais-tu un bon effort exigeant ?",
+     "c": "Aujourd’hui, note ton effort de 1 à 10 après chaque série."
+    },
+    "it": {
+     "t": "Ascoltare il corpo",
+     "g": "Distingui la normale fatica dal dolore.",
+     "p": [
+      "Bruciore muscolare e fiato corto fanno parte dello sforzo.",
+      "Un dolore acuto, improvviso o articolare è il segnale per fermarsi.",
+      "Se hai capogiri o ti senti male, fermati e chiedi aiuto se serve."
+     ],
+     "q": "Come descriveresti uno sforzo buono e impegnativo?",
+     "c": "Oggi, dopo ogni serie, valuta lo sforzo da 1 a 10."
+    },
+    "pt": {
+     "t": "Ouvir o corpo",
+     "g": "Distingue o esforço normal da dor.",
+     "p": [
+      "Ardor muscular e respiração ofegante fazem parte do esforço.",
+      "Dor aguda, súbita ou nas articulações é sinal para parar.",
+      "Tonturas ou mal-estar pedem pausa e, se preciso, ajuda."
+     ],
+     "q": "Como descreverias um esforço bom e exigente?",
+     "c": "Hoje, depois de cada série, dá uma nota de 1 a 10 ao teu esforço."
+    },
+    "pt_BR": {
+     "t": "Ouvindo o seu corpo",
+     "g": "Diferencie o esforço normal da dor.",
+     "p": [
+      "Queimação muscular e respiração ofegante fazem parte do esforço.",
+      "Dor aguda, repentina ou na articulação é sinal para parar.",
+      "Tontura ou mal-estar pedem pausa e, se precisar, ajuda."
+     ],
+     "q": "Como você descreveria um esforço bom e desafiador?",
+     "c": "Hoje, depois de cada série, dê uma nota de 1 a 10 ao seu esforço."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking in with a professional",
+     "g": "Know when it is wise to ask a doctor or qualified trainer first.",
+     "p": [
+      "A check-up is a good idea if you have a health condition or injury.",
+      "It also helps if you are returning after a long break.",
+      "A qualified trainer can show you safe technique in person."
+     ],
+     "q": "Who could you ask for advice when you have questions?",
+     "c": "Write down one question you would like to ask a trainer."
+    },
+    "de": {
+     "t": "Rat bei Fachleuten holen",
+     "g": "Erkenne, wann du zuerst ärztlichen Rat oder eine Trainerin fragen solltest.",
+     "p": [
+      "Bei Vorerkrankungen oder Verletzungen ist ein Check-up sinnvoll.",
+      "Auch nach einer langen Pause ist das eine gute Idee.",
+      "Qualifizierte Trainer zeigen dir vor Ort eine sichere Technik."
+     ],
+     "q": "Wen könntest du um Rat fragen, wenn du Fragen hast?",
+     "c": "Schreib eine Frage auf, die du einem Trainer stellen möchtest."
+    },
+    "es": {
+     "t": "Consultar a un profesional",
+     "g": "Sabe cuándo conviene preguntar antes a un médico o a un entrenador cualificado.",
+     "p": [
+      "Una revisión es buena idea si tienes una condición de salud o una lesión.",
+      "También si vuelves tras un largo descanso.",
+      "Un entrenador cualificado puede enseñarte la técnica segura en persona."
+     ],
+     "q": "¿A quién podrías pedir consejo cuando tengas dudas?",
+     "c": "Apunta una pregunta que te gustaría hacerle a un entrenador."
+    },
+    "fr": {
+     "t": "Demander l’avis d’un professionnel",
+     "g": "Savoir quand il vaut mieux consulter un médecin ou un coach qualifié.",
+     "p": [
+      "Un bilan est utile si tu as un problème de santé ou une blessure.",
+      "C’est aussi conseillé après une longue pause.",
+      "Un coach qualifié peut te montrer une technique sûre en personne."
+     ],
+     "q": "À qui pourrais-tu demander conseil quand tu as des questions ?",
+     "c": "Note une question que tu aimerais poser à un coach."
+    },
+    "it": {
+     "t": "Chiedere a un professionista",
+     "g": "Sapere quando è meglio sentire prima il medico o un istruttore qualificato.",
+     "p": [
+      "Un controllo è utile se hai un problema di salute o un infortunio.",
+      "Lo è anche se riprendi dopo una lunga pausa.",
+      "Un istruttore qualificato può mostrarti dal vivo la tecnica sicura."
+     ],
+     "q": "A chi potresti chiedere consiglio quando hai dei dubbi?",
+     "c": "Scrivi una domanda che vorresti fare a un istruttore."
+    },
+    "pt": {
+     "t": "Falar com um profissional",
+     "g": "Saber quando convém perguntar primeiro a um médico ou a um treinador qualificado.",
+     "p": [
+      "Uma consulta faz sentido se tens um problema de saúde ou uma lesão.",
+      "Também é boa ideia se voltas depois de uma longa pausa.",
+      "Um treinador qualificado pode mostrar-te a técnica segura ao vivo."
+     ],
+     "q": "A quem poderias pedir conselho quando tens dúvidas?",
+     "c": "Escreve uma pergunta que gostavas de fazer a um treinador."
+    },
+    "pt_BR": {
+     "t": "Consultando um profissional",
+     "g": "Saiba quando vale perguntar antes a um médico ou a um personal qualificado.",
+     "p": [
+      "Um check-up é uma boa ideia se você tem alguma condição de saúde ou lesão.",
+      "Também ajuda se você está voltando depois de muito tempo parado.",
+      "Um profissional qualificado pode mostrar a técnica segura pessoalmente."
+     ],
+     "q": "A quem você poderia pedir conselho quando tiver dúvidas?",
+     "c": "Anote uma pergunta que você gostaria de fazer a um professor da academia."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding reps and sets",
+     "g": "Learn the basic language of a workout plan.",
+     "p": [
+      "A rep is one full movement, like one squat down and up.",
+      "A set is a group of reps done in a row, then a rest.",
+      "3 x 10 means three sets of ten reps each."
+     ],
+     "q": "Have you seen a plan written like 3 x 10 before?",
+     "c": "Write your own mini plan using sets and reps for one exercise."
+    },
+    "de": {
+     "t": "Wiederholungen und Sätze verstehen",
+     "g": "Lerne die Grundsprache eines Trainingsplans.",
+     "p": [
+      "Eine Wiederholung ist eine ganze Bewegung, etwa einmal runter und hoch.",
+      "Ein Satz ist eine Gruppe von Wiederholungen am Stück, dann Pause.",
+      "3 x 10 heißt drei Sätze mit je zehn Wiederholungen."
+     ],
+     "q": "Hast du schon einen Plan mit Angaben wie 3 x 10 gesehen?",
+     "c": "Schreib einen Mini-Plan mit Sätzen und Wiederholungen für eine Übung."
+    },
+    "es": {
+     "t": "Entender repeticiones y series",
+     "g": "Aprende el lenguaje básico de un plan de entrenamiento.",
+     "p": [
+      "Una repetición es un movimiento completo, como bajar y subir en una sentadilla.",
+      "Una serie es un grupo de repeticiones seguidas y luego un descanso.",
+      "3 x 10 significa tres series de diez repeticiones."
+     ],
+     "q": "¿Has visto alguna vez un plan escrito como 3 x 10?",
+     "c": "Escribe tu propio mini plan con series y repeticiones para un ejercicio."
+    },
+    "fr": {
+     "t": "Comprendre répétitions et séries",
+     "g": "Apprends le vocabulaire de base d’un programme.",
+     "p": [
+      "Une répétition, c’est un mouvement complet, comme descendre et remonter.",
+      "Une série est un groupe de répétitions enchaînées, suivi d’une pause.",
+      "3 x 10 veut dire trois séries de dix répétitions."
+     ],
+     "q": "As-tu déjà vu un programme noté 3 x 10 ?",
+     "c": "Écris ton mini programme avec séries et répétitions pour un exercice."
+    },
+    "it": {
+     "t": "Capire ripetizioni e serie",
+     "g": "Impara il linguaggio base di una scheda di allenamento.",
+     "p": [
+      "Una ripetizione è un movimento completo, come scendere e risalire.",
+      "Una serie è un gruppo di ripetizioni di fila, poi una pausa.",
+      "3 x 10 significa tre serie da dieci ripetizioni."
+     ],
+     "q": "Hai mai visto una scheda scritta come 3 x 10?",
+     "c": "Scrivi una mini scheda con serie e ripetizioni per un esercizio."
+    },
+    "pt": {
+     "t": "Perceber repetições e séries",
+     "g": "Aprende a linguagem básica de um plano de treino.",
+     "p": [
+      "Uma repetição é um movimento completo, como descer e subir num agachamento.",
+      "Uma série é um grupo de repetições seguidas, depois uma pausa.",
+      "3 x 10 quer dizer três séries de dez repetições."
+     ],
+     "q": "Já viste um plano escrito como 3 x 10?",
+     "c": "Escreve o teu mini plano com séries e repetições para um exercício."
+    },
+    "pt_BR": {
+     "t": "Entendendo repetições e séries",
+     "g": "Aprenda a linguagem básica de uma ficha de treino.",
+     "p": [
+      "Uma repetição é um movimento completo, como descer e subir no agachamento.",
+      "Uma série é um grupo de repetições seguidas e depois um descanso.",
+      "3 x 10 significa três séries de dez repetições."
+     ],
+     "q": "Você já viu uma ficha escrita como 3 x 10?",
+     "c": "Escreva sua mini ficha com séries e repetições para um exercício."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rest between sets",
+     "g": "See why short breaks help you keep good form.",
+     "p": [
+      "Rest lets you recover enough to do the next set well.",
+      "For beginners, around one to two minutes is a common range.",
+      "Use rest time to breathe, sip water and review your form."
+     ],
+     "q": "What do you usually do during your rest breaks?",
+     "c": "Use a timer for your rests in your next workout."
+    },
+    "de": {
+     "t": "Pausen zwischen den Sätzen",
+     "g": "Sieh, warum kurze Pausen dir helfen, sauber zu trainieren.",
+     "p": [
+      "Die Pause gibt dir genug Erholung für einen guten nächsten Satz.",
+      "Für Einsteiger sind etwa ein bis zwei Minuten üblich.",
+      "Nutze die Pause zum Atmen, Trinken und Nachdenken über die Technik."
+     ],
+     "q": "Was machst du normalerweise in deinen Pausen?",
+     "c": "Stopp in deinem nächsten Training die Pausen mit einem Timer."
+    },
+    "es": {
+     "t": "Descanso entre series",
+     "g": "Descubre por qué las pausas cortas te ayudan a mantener la técnica.",
+     "p": [
+      "El descanso te deja recuperarte para hacer bien la siguiente serie.",
+      "Para principiantes, entre uno y dos minutos es un rango habitual.",
+      "Aprovecha para respirar, beber agua y repasar la técnica."
+     ],
+     "q": "¿Qué sueles hacer durante tus descansos?",
+     "c": "Usa un temporizador para tus descansos en el próximo entrenamiento."
+    },
+    "fr": {
+     "t": "Le repos entre les séries",
+     "g": "Comprends pourquoi de courtes pauses aident à garder une bonne technique.",
+     "p": [
+      "Le repos te permet de récupérer pour bien réussir la série suivante.",
+      "Pour débuter, une à deux minutes est une durée courante.",
+      "Profite de la pause pour respirer, boire et repenser à ta technique."
+     ],
+     "q": "Que fais-tu d’habitude pendant tes pauses ?",
+     "c": "Chronomètre tes pauses lors de ta prochaine séance."
+    },
+    "it": {
+     "t": "Il recupero tra le serie",
+     "g": "Capire perché brevi pause aiutano a mantenere una buona tecnica.",
+     "p": [
+      "Il recupero ti permette di fare bene la serie successiva.",
+      "Per i principianti, uno-due minuti sono un intervallo comune.",
+      "Usa la pausa per respirare, bere e ripassare la tecnica."
+     ],
+     "q": "Cosa fai di solito durante i recuperi?",
+     "c": "Usa un timer per i recuperi nel prossimo allenamento."
+    },
+    "pt": {
+     "t": "Descanso entre séries",
+     "g": "Perceber porque pausas curtas ajudam a manter a boa técnica.",
+     "p": [
+      "O descanso deixa-te recuperar para fazer bem a série seguinte.",
+      "Para quem começa, um a dois minutos é um intervalo comum.",
+      "Usa o descanso para respirar, beber água e rever a técnica."
+     ],
+     "q": "O que costumas fazer nos descansos?",
+     "c": "Usa um temporizador nos descansos do próximo treino."
+    },
+    "pt_BR": {
+     "t": "Descanso entre as séries",
+     "g": "Entenda por que pausas curtas ajudam a manter a boa técnica.",
+     "p": [
+      "O descanso deixa você se recuperar para fazer bem a próxima série.",
+      "Para iniciantes, de um a dois minutos é um intervalo comum.",
+      "Use o descanso para respirar, beber água e revisar a técnica."
+     ],
+     "q": "O que você costuma fazer nos intervalos?",
+     "c": "Use um timer nos descansos do próximo treino."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a starting weight",
+     "g": "Start light so you can learn each movement well.",
+     "p": [
+      "Pick a weight you can lift with clean form for all reps.",
+      "Finishing with two or three reps left in the tank is a good sign.",
+      "Too heavy means form breaks down; go lighter without shame."
+     ],
+     "q": "How do you feel about starting with light weights?",
+     "c": "Find a weight today that lets you do 10 smooth reps."
+    },
+    "de": {
+     "t": "Das Startgewicht wählen",
+     "g": "Fang leicht an, damit du jede Bewegung gut lernst.",
+     "p": [
+      "Wähl ein Gewicht, das du in allen Wiederholungen sauber bewegst.",
+      "Zwei bis drei Wiederholungen Reserve am Ende sind ein gutes Zeichen.",
+      "Wird die Technik unsauber, nimm ohne schlechtes Gewissen weniger."
+     ],
+     "q": "Wie stehst du dazu, mit leichten Gewichten anzufangen?",
+     "c": "Finde heute ein Gewicht, mit dem dir 10 saubere Wiederholungen gelingen."
+    },
+    "es": {
+     "t": "Elegir el peso inicial",
+     "g": "Empieza ligero para aprender bien cada movimiento.",
+     "p": [
+      "Elige un peso que puedas mover con buena técnica en todas las repeticiones.",
+      "Acabar con dos o tres repeticiones de reserva es buena señal.",
+      "Si la técnica se rompe, baja el peso sin ningún complejo."
+     ],
+     "q": "¿Qué te parece empezar con pesos ligeros?",
+     "c": "Encuentra hoy un peso que te permita 10 repeticiones fluidas."
+    },
+    "fr": {
+     "t": "Choisir sa charge de départ",
+     "g": "Commence léger pour bien apprendre chaque mouvement.",
+     "p": [
+      "Choisis une charge que tu soulèves proprement sur toutes les répétitions.",
+      "Finir avec deux ou trois répétitions en réserve est bon signe.",
+      "Si la technique se dégrade, allège sans aucune gêne."
+     ],
+     "q": "Que penses-tu de commencer avec des charges légères ?",
+     "c": "Trouve aujourd’hui une charge qui te permet 10 répétitions fluides."
+    },
+    "it": {
+     "t": "Scegliere il peso iniziale",
+     "g": "Parti leggero per imparare bene ogni movimento.",
+     "p": [
+      "Scegli un peso che sollevi con tecnica pulita in tutte le ripetizioni.",
+      "Finire con due o tre ripetizioni di riserva è un buon segno.",
+      "Se la tecnica cede, alleggerisci senza problemi."
+     ],
+     "q": "Cosa pensi di iniziare con pesi leggeri?",
+     "c": "Trova oggi un peso che ti permetta 10 ripetizioni fluide."
+    },
+    "pt": {
+     "t": "Escolher o peso inicial",
+     "g": "Começa leve para aprenderes bem cada movimento.",
+     "p": [
+      "Escolhe um peso que levantes com boa técnica em todas as repetições.",
+      "Acabar com duas ou três repetições de reserva é bom sinal.",
+      "Se a técnica falhar, baixa o peso sem vergonha."
+     ],
+     "q": "O que achas de começar com pesos leves?",
+     "c": "Encontra hoje um peso que te deixe fazer 10 repetições fluidas."
+    },
+    "pt_BR": {
+     "t": "Escolhendo a carga inicial",
+     "g": "Comece leve para aprender bem cada movimento.",
+     "p": [
+      "Escolha uma carga que você levante com boa técnica em todas as repetições.",
+      "Terminar com duas ou três repetições de sobra é um bom sinal.",
+      "Se a técnica desandar, diminua a carga sem vergonha nenhuma."
+     ],
+     "q": "O que você acha de começar com cargas leves?",
+     "c": "Encontre hoje uma carga que permita 10 repetições tranquilas."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The idea of good form",
+     "g": "Understand the three foundations of good technique.",
+     "p": [
+      "Control: move the weight smoothly, never let it swing you.",
+      "Range of motion: use the full, comfortable path of the movement.",
+      "Posture: keep a stable body position from start to finish."
+     ],
+     "q": "Which of these three feels hardest for you right now?",
+     "c": "Do one exercise today slowly, focusing only on control."
+    },
+    "de": {
+     "t": "Was gute Technik ausmacht",
+     "g": "Verstehe die drei Grundlagen sauberer Technik.",
+     "p": [
+      "Kontrolle: Bewege das Gewicht gleichmäßig, lass dich nicht schwingen.",
+      "Bewegungsumfang: Nutze den vollen, angenehmen Weg der Bewegung.",
+      "Haltung: Bleib von Anfang bis Ende stabil."
+     ],
+     "q": "Welche dieser drei Grundlagen fällt dir gerade am schwersten?",
+     "c": "Mach heute eine Übung langsam und achte nur auf Kontrolle."
+    },
+    "es": {
+     "t": "La idea de la buena técnica",
+     "g": "Comprende las tres bases de una buena técnica.",
+     "p": [
+      "Control: mueve el peso con suavidad, sin balancearte.",
+      "Rango de movimiento: usa todo el recorrido cómodo del ejercicio.",
+      "Postura: mantén el cuerpo estable de principio a fin."
+     ],
+     "q": "¿Cuál de las tres te cuesta más ahora mismo?",
+     "c": "Haz hoy un ejercicio despacio, centrándote solo en el control."
+    },
+    "fr": {
+     "t": "L’idée d’une bonne technique",
+     "g": "Comprends les trois piliers d’une bonne exécution.",
+     "p": [
+      "Contrôle : déplace la charge en douceur, sans élan.",
+      "Amplitude : utilise toute la trajectoire confortable du mouvement.",
+      "Posture : garde le corps stable du début à la fin."
+     ],
+     "q": "Lequel de ces trois points te semble le plus difficile ?",
+     "c": "Fais aujourd’hui un exercice lentement, en pensant seulement au contrôle."
+    },
+    "it": {
+     "t": "L’idea di buona tecnica",
+     "g": "Capire le tre basi di una buona esecuzione.",
+     "p": [
+      "Controllo: muovi il peso in modo fluido, senza slanci.",
+      "Ampiezza: usa tutto il percorso comodo del movimento.",
+      "Postura: resta stabile dall’inizio alla fine."
+     ],
+     "q": "Quale di queste tre ti sembra più difficile ora?",
+     "c": "Fai oggi un esercizio lentamente, pensando solo al controllo."
+    },
+    "pt": {
+     "t": "A ideia de boa técnica",
+     "g": "Perceber as três bases de uma boa execução.",
+     "p": [
+      "Controlo: move o peso com suavidade, sem balanço.",
+      "Amplitude: usa todo o percurso confortável do movimento.",
+      "Postura: mantém o corpo estável do início ao fim."
+     ],
+     "q": "Qual destas três te parece mais difícil agora?",
+     "c": "Faz hoje um exercício devagar, focado apenas no controlo."
+    },
+    "pt_BR": {
+     "t": "A ideia de boa técnica",
+     "g": "Entenda as três bases de uma boa execução.",
+     "p": [
+      "Controle: mova o peso com suavidade, sem embalo.",
+      "Amplitude: use todo o percurso confortável do movimento.",
+      "Postura: mantenha o corpo estável do começo ao fim."
+     ],
+     "q": "Qual dessas três parece mais difícil para você agora?",
+     "c": "Faça hoje um exercício devagar, focando só no controle."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Neutral spine basics",
+     "g": "Learn what a neutral back position means in general terms.",
+     "p": [
+      "Neutral spine keeps your natural curves, not rounded or overarched.",
+      "Head, upper back and hips stay roughly in one line.",
+      "A mirror or a trainer can help you check your position."
+     ],
+     "q": "Have you ever noticed your posture while lifting something?",
+     "c": "Stand sideways to a mirror and find your neutral spine."
+    },
+    "de": {
+     "t": "Grundlagen der neutralen Wirbelsäule",
+     "g": "Lerne, was eine neutrale Rückenhaltung allgemein bedeutet.",
+     "p": [
+      "Neutral heißt: natürliche Krümmungen bleiben, weder rund noch überstreckt.",
+      "Kopf, oberer Rücken und Hüfte bilden ungefähr eine Linie.",
+      "Ein Spiegel oder ein Trainer hilft dir, die Haltung zu prüfen."
+     ],
+     "q": "Hast du beim Heben schon einmal auf deine Haltung geachtet?",
+     "c": "Stell dich seitlich zum Spiegel und finde deine neutrale Haltung."
+    },
+    "es": {
+     "t": "Bases de la columna neutra",
+     "g": "Aprende qué significa en general una espalda neutra.",
+     "p": [
+      "Columna neutra es mantener sus curvas naturales, sin redondear ni arquear de más.",
+      "Cabeza, espalda alta y cadera quedan más o menos alineadas.",
+      "Un espejo o un entrenador te ayudan a revisar la postura."
+     ],
+     "q": "¿Alguna vez te has fijado en tu postura al levantar algo?",
+     "c": "Ponte de lado frente a un espejo y busca tu columna neutra."
+    },
+    "fr": {
+     "t": "Les bases du dos neutre",
+     "g": "Apprends ce que signifie un dos neutre en termes généraux.",
+     "p": [
+      "Le dos neutre garde ses courbes naturelles, ni rond ni trop cambré.",
+      "Tête, haut du dos et bassin restent à peu près alignés.",
+      "Un miroir ou un coach peut t’aider à vérifier ta position."
+     ],
+     "q": "As-tu déjà observé ta posture en soulevant quelque chose ?",
+     "c": "Mets-toi de profil devant un miroir et trouve ton dos neutre."
+    },
+    "it": {
+     "t": "Basi della schiena neutra",
+     "g": "Impara cosa significa in generale una schiena neutra.",
+     "p": [
+      "Schiena neutra significa mantenere le curve naturali, né curva né inarcata.",
+      "Testa, parte alta della schiena e bacino restano circa in linea.",
+      "Uno specchio o un istruttore ti aiutano a controllare la posizione."
+     ],
+     "q": "Hai mai fatto caso alla tua postura mentre sollevi qualcosa?",
+     "c": "Mettiti di lato allo specchio e trova la tua schiena neutra."
+    },
+    "pt": {
+     "t": "Bases da coluna neutra",
+     "g": "Aprende o que significa, em geral, uma coluna neutra.",
+     "p": [
+      "Coluna neutra mantém as curvas naturais, sem arredondar nem arquear demais.",
+      "Cabeça, parte alta das costas e anca ficam mais ou menos alinhadas.",
+      "Um espelho ou um treinador ajudam-te a verificar a posição."
+     ],
+     "q": "Já reparaste na tua postura ao levantar alguma coisa?",
+     "c": "Põe-te de lado em frente ao espelho e encontra a tua coluna neutra."
+    },
+    "pt_BR": {
+     "t": "Noções de coluna neutra",
+     "g": "Aprenda o que significa, em geral, manter a coluna neutra.",
+     "p": [
+      "Coluna neutra mantém as curvas naturais, sem arredondar nem arquear demais.",
+      "Cabeça, parte alta das costas e quadril ficam mais ou menos alinhados.",
+      "Um espelho ou um professor ajudam você a conferir a posição."
+     ],
+     "q": "Você já reparou na sua postura ao levantar alguma coisa?",
+     "c": "Fique de lado em frente ao espelho e encontre sua coluna neutra."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bracing your core",
+     "g": "Understand the general idea of creating stability before you lift.",
+     "p": [
+      "Bracing means gently tightening your midsection all around.",
+      "Think of making your torso firm, as if ready for a light push.",
+      "A braced core helps keep your spine steady during movement."
+     ],
+     "q": "Where in daily life do you naturally tighten your core?",
+     "c": "Practise bracing for 5 seconds, then relax; repeat five times."
+    },
+    "de": {
+     "t": "Die Körpermitte anspannen",
+     "g": "Verstehe die Idee, vor dem Heben Stabilität aufzubauen.",
+     "p": [
+      "Anspannen heißt, die Körpermitte rundherum sanft fest zu machen.",
+      "Stell dir vor, dein Rumpf wird fest, als käme ein leichter Stoß.",
+      "Eine stabile Mitte hält die Wirbelsäule während der Bewegung ruhig."
+     ],
+     "q": "Wo spannst du im Alltag ganz natürlich deine Mitte an?",
+     "c": "Übe 5 Sekunden anspannen, dann lösen; wiederhole es fünfmal."
+    },
+    "es": {
+     "t": "Activar el core",
+     "g": "Entiende la idea general de crear estabilidad antes de levantar.",
+     "p": [
+      "Activar el core es tensar suavemente toda la zona media.",
+      "Imagina que tu tronco se vuelve firme, listo para un empujón suave.",
+      "Un core activo ayuda a mantener la columna estable al moverte."
+     ],
+     "q": "¿En qué momento del día tensas el abdomen de forma natural?",
+     "c": "Practica activar el core 5 segundos y soltar; repítelo cinco veces."
+    },
+    "fr": {
+     "t": "Gainer son tronc",
+     "g": "Comprends l’idée de créer de la stabilité avant de soulever.",
+     "p": [
+      "Se gainer, c’est contracter doucement toute la sangle abdominale.",
+      "Imagine ton tronc devenir ferme, prêt à recevoir une légère poussée.",
+      "Un tronc gainé aide à garder la colonne stable pendant le mouvement."
+     ],
+     "q": "Dans quelle situation du quotidien te gaines-tu naturellement ?",
+     "c": "Entraîne-toi : gaine 5 secondes puis relâche, cinq fois."
+    },
+    "it": {
+     "t": "Attivare il core",
+     "g": "Capire l’idea di creare stabilità prima di sollevare.",
+     "p": [
+      "Attivare il core significa contrarre dolcemente tutta la zona centrale.",
+      "Immagina il busto che diventa solido, pronto a una leggera spinta.",
+      "Un core attivo aiuta a tenere la colonna stabile durante il movimento."
+     ],
+     "q": "In quale momento della giornata contrai il core in modo naturale?",
+     "c": "Allenati ad attivare il core per 5 secondi e rilassa; ripeti cinque volte."
+    },
+    "pt": {
+     "t": "Ativar o core",
+     "g": "Perceber a ideia de criar estabilidade antes de levantar.",
+     "p": [
+      "Ativar o core é contrair suavemente toda a zona média.",
+      "Imagina o tronco a ficar firme, pronto para um empurrão leve.",
+      "Um core ativo ajuda a manter a coluna estável durante o movimento."
+     ],
+     "q": "Em que situação do dia a dia contrais o abdómen naturalmente?",
+     "c": "Pratica ativar o core 5 segundos e relaxar; repete cinco vezes."
+    },
+    "pt_BR": {
+     "t": "Ativando o core",
+     "g": "Entenda a ideia de criar estabilidade antes de levantar peso.",
+     "p": [
+      "Ativar o core é contrair de leve toda a região do meio do corpo.",
+      "Imagine o tronco ficando firme, pronto para um empurrão leve.",
+      "Um core ativo ajuda a manter a coluna estável durante o movimento."
+     ],
+     "q": "Em que momento do dia você contrai o abdômen naturalmente?",
+     "c": "Pratique ativar o core por 5 segundos e soltar; repita cinco vezes."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing while lifting",
+     "g": "Learn common breathing patterns that keep movements smooth.",
+     "p": [
+      "A common pattern: breathe in on the easier part, out on the effort.",
+      "Never hold your breath for long; keep breathing rhythmically.",
+      "Calm breathing between reps helps you stay focused."
+     ],
+     "q": "Do you tend to hold your breath when you concentrate?",
+     "c": "Do one set today breathing in on the way down, out on the way up."
+    },
+    "de": {
+     "t": "Atmen beim Heben",
+     "g": "Lerne gängige Atemmuster für flüssige Bewegungen.",
+     "p": [
+      "Üblich ist: einatmen im leichten Teil, ausatmen bei der Anstrengung.",
+      "Halte den Atem nie lange an; atme gleichmäßig weiter.",
+      "Ruhiges Atmen zwischen den Wiederholungen hilft dir, fokussiert zu bleiben."
+     ],
+     "q": "Hältst du beim Konzentrieren gern die Luft an?",
+     "c": "Mach heute einen Satz: beim Absenken ein-, beim Hochdrücken ausatmen."
+    },
+    "es": {
+     "t": "Respirar al levantar",
+     "g": "Aprende patrones de respiración habituales para moverte con fluidez.",
+     "p": [
+      "Uno común: inspira en la fase fácil y espira en el esfuerzo.",
+      "No aguantes la respiración mucho rato; respira con ritmo.",
+      "Respirar con calma entre repeticiones te ayuda a concentrarte."
+     ],
+     "q": "¿Sueles aguantar la respiración cuando te concentras?",
+     "c": "Haz hoy una serie inspirando al bajar y espirando al subir."
+    },
+    "fr": {
+     "t": "Respirer pendant l’effort",
+     "g": "Apprends des schémas de respiration courants pour des gestes fluides.",
+     "p": [
+      "Un schéma courant : inspirer sur la phase facile, expirer sur l’effort.",
+      "Ne bloque pas ta respiration longtemps ; respire en rythme.",
+      "Respirer calmement entre les répétitions aide à rester concentré."
+     ],
+     "q": "As-tu tendance à bloquer ta respiration quand tu te concentres ?",
+     "c": "Fais une série aujourd’hui : inspire en descendant, expire en remontant."
+    },
+    "it": {
+     "t": "Respirare mentre sollevi",
+     "g": "Impara gli schemi di respirazione comuni per movimenti fluidi.",
+     "p": [
+      "Uno schema comune: inspira nella fase facile, espira nello sforzo.",
+      "Non trattenere il respiro a lungo; respira con ritmo.",
+      "Respirare con calma tra le ripetizioni ti aiuta a restare concentrato."
+     ],
+     "q": "Ti capita di trattenere il respiro quando sei concentrato?",
+     "c": "Fai oggi una serie inspirando in discesa ed espirando in salita."
+    },
+    "pt": {
+     "t": "Respirar ao levantar",
+     "g": "Aprende padrões de respiração comuns para movimentos fluidos.",
+     "p": [
+      "Um padrão comum: inspirar na fase fácil, expirar no esforço.",
+      "Não suspendas a respiração muito tempo; respira com ritmo.",
+      "Respirar com calma entre repetições ajuda-te a manter o foco."
+     ],
+     "q": "Costumas suster a respiração quando te concentras?",
+     "c": "Faz hoje uma série a inspirar na descida e a expirar na subida."
+    },
+    "pt_BR": {
+     "t": "Respirando durante o exercício",
+     "g": "Aprenda padrões de respiração comuns para movimentos fluidos.",
+     "p": [
+      "Um padrão comum: inspire na fase fácil e solte o ar no esforço.",
+      "Não prenda a respiração por muito tempo; respire com ritmo.",
+      "Respirar com calma entre as repetições ajuda a manter o foco."
+     ],
+     "q": "Você costuma prender a respiração quando se concentra?",
+     "c": "Faça hoje uma série inspirando na descida e soltando o ar na subida."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The bodyweight squat",
+     "g": "Learn the squat pattern without any extra weight.",
+     "p": [
+      "Feet about shoulder width apart, toes slightly turned out.",
+      "Sit back and down as if onto a chair, chest proud, knees tracking over toes.",
+      "Go as low as feels comfortable, then stand up tall."
+     ],
+     "q": "Where in daily life do you already squat without noticing?",
+     "c": "Do 2 sets of 8 slow bodyweight squats with a chair behind you."
+    },
+    "de": {
+     "t": "Die Kniebeuge ohne Gewicht",
+     "g": "Lerne das Kniebeugemuster ganz ohne Zusatzgewicht.",
+     "p": [
+      "Füße etwa schulterbreit, Zehen leicht nach außen.",
+      "Setz dich nach hinten unten wie auf einen Stuhl, Brust aufrecht, Knie über den Zehen.",
+      "Geh so tief, wie es angenehm ist, dann richte dich auf."
+     ],
+     "q": "Wo machst du im Alltag schon Kniebeugen, ohne es zu merken?",
+     "c": "Mach 2 Sätze mit 8 langsamen Kniebeugen, einen Stuhl hinter dir."
+    },
+    "es": {
+     "t": "La sentadilla sin peso",
+     "g": "Aprende el patrón de sentadilla sin peso extra.",
+     "p": [
+      "Pies a la anchura de los hombros, puntas un poco hacia fuera.",
+      "Baja hacia atrás como si te sentaras en una silla, pecho arriba, rodillas en línea con los pies.",
+      "Baja hasta donde estés cómodo y vuelve a subir erguido."
+     ],
+     "q": "¿Dónde haces sentadillas en tu día sin darte cuenta?",
+     "c": "Haz 2 series de 8 sentadillas lentas con una silla detrás."
+    },
+    "fr": {
+     "t": "Le squat au poids du corps",
+     "g": "Apprends le mouvement du squat sans charge.",
+     "p": [
+      "Pieds environ largeur d’épaules, pointes légèrement ouvertes.",
+      "Descends vers l’arrière comme pour t’asseoir, buste fier, genoux dans l’axe des pieds.",
+      "Descends aussi bas que c’est confortable, puis remonte bien droit."
+     ],
+     "q": "Où fais-tu déjà des squats au quotidien sans t’en rendre compte ?",
+     "c": "Fais 2 séries de 8 squats lents avec une chaise derrière toi."
+    },
+    "it": {
+     "t": "Lo squat a corpo libero",
+     "g": "Impara lo schema dello squat senza pesi.",
+     "p": [
+      "Piedi circa alla larghezza delle spalle, punte leggermente aperte.",
+      "Scendi indietro come per sederti, petto in fuori, ginocchia in linea con i piedi.",
+      "Scendi fin dove è comodo, poi risali ben dritto."
+     ],
+     "q": "Dove fai già squat nella vita di tutti i giorni senza accorgertene?",
+     "c": "Fai 2 serie da 8 squat lenti con una sedia dietro di te."
+    },
+    "pt": {
+     "t": "O agachamento sem peso",
+     "g": "Aprende o padrão do agachamento sem peso extra.",
+     "p": [
+      "Pés à largura dos ombros, pontas ligeiramente para fora.",
+      "Desce para trás como se te sentasses numa cadeira, peito aberto, joelhos alinhados com os pés.",
+      "Desce até onde for confortável e sobe bem direito."
+     ],
+     "q": "Onde é que já te agachas no dia a dia sem reparar?",
+     "c": "Faz 2 séries de 8 agachamentos lentos com uma cadeira atrás de ti."
+    },
+    "pt_BR": {
+     "t": "O agachamento livre",
+     "g": "Aprenda o padrão do agachamento sem peso extra.",
+     "p": [
+      "Pés na largura dos ombros, pontas levemente para fora.",
+      "Desça para trás como se fosse sentar numa cadeira, peito aberto, joelhos alinhados com os pés.",
+      "Desça até onde for confortável e suba bem ereto."
+     ],
+     "q": "Onde você já se agacha no dia a dia sem perceber?",
+     "c": "Faça 2 séries de 8 agachamentos lentos com uma cadeira atrás de você."
+    }
+   }
+  }
+ ]
+}

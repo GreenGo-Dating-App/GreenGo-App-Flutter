@@ -1,0 +1,835 @@
+{
+ "topic": "road_trips",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gravel roads for beginners",
+     "g": "Learn how speed, steering and dust work on unpaved roads.",
+     "p": [
+      "Gravel gives less grip, so drive slower, brake earlier and steer smoothly without sudden moves.",
+      "Keep a long gap behind other cars to avoid dust and flying stones, and slow down when someone passes.",
+      "Check that your rental contract allows unpaved roads; some contracts do not cover them."
+     ],
+     "q": "Have you ever driven or ridden on a gravel road? What did it feel like?",
+     "c": "Read the conditions of any rental company and find what it says about unpaved roads."
+    },
+    "de": {
+     "t": "Schotterstraßen für Anfänger",
+     "g": "Lerne, wie Tempo, Lenkung und Staub auf unbefestigten Straßen funktionieren.",
+     "p": [
+      "Schotter bietet weniger Grip: langsamer fahren, früher bremsen und ohne plötzliche Bewegungen lenken.",
+      "Halte großen Abstand zu anderen Autos wegen Staub und Steinschlag und fahr langsamer, wenn jemand vorbeifährt.",
+      "Prüf, ob dein Mietvertrag unbefestigte Straßen erlaubt; manche Verträge decken sie nicht ab."
+     ],
+     "q": "Bist du schon einmal auf einer Schotterstraße gefahren? Wie hat es sich angefühlt?",
+     "c": "Lies die Bedingungen eines Autovermieters und finde, was dort zu unbefestigten Straßen steht."
+    },
+    "es": {
+     "t": "Pistas de grava para principiantes",
+     "g": "Aprende cómo funcionan la velocidad, la dirección y el polvo en caminos sin asfaltar.",
+     "p": [
+      "La grava agarra menos: conduce más despacio, frena antes y gira con suavidad sin movimientos bruscos.",
+      "Deja mucha distancia con otros coches por el polvo y las piedras, y reduce cuando alguien te cruza.",
+      "Comprueba si tu contrato de alquiler permite caminos sin asfaltar; algunos no los cubren."
+     ],
+     "q": "¿Has conducido o ido alguna vez por una pista de grava? ¿Qué se sentía?",
+     "c": "Lee las condiciones de una empresa de alquiler y busca qué dice sobre caminos sin asfaltar."
+    },
+    "fr": {
+     "t": "Pistes de gravier pour débutants",
+     "g": "Découvre comment gérer vitesse, direction et poussière sur les routes non goudronnées.",
+     "p": [
+      "Le gravier accroche moins : roule plus lentement, freine plus tôt et braque en douceur, sans geste brusque.",
+      "Garde une grande distance pour éviter poussière et projections, et ralentis quand quelqu'un te croise.",
+      "Vérifie que ton contrat de location autorise les pistes ; certains contrats ne les couvrent pas."
+     ],
+     "q": "As-tu déjà roulé sur une piste de gravier ? Quelle sensation c'était ?",
+     "c": "Lis les conditions d'un loueur et trouve ce qu'elles disent sur les routes non goudronnées."
+    },
+    "it": {
+     "t": "Sterrati per principianti",
+     "g": "Scopri come gestire velocità, sterzo e polvere sulle strade non asfaltate.",
+     "p": [
+      "La ghiaia ha meno aderenza: guida più piano, frena prima e sterza dolcemente, senza movimenti bruschi.",
+      "Tieni molta distanza dagli altri per polvere e sassi, e rallenta quando qualcuno ti incrocia.",
+      "Verifica che il contratto di noleggio permetta le strade sterrate: alcuni non le coprono."
+     ],
+     "q": "Hai mai guidato o viaggiato su una strada sterrata? Che sensazione era?",
+     "c": "Leggi le condizioni di una società di noleggio e trova cosa dicono sulle strade sterrate."
+    },
+    "pt": {
+     "t": "Estradas de terra para principiantes",
+     "g": "Aprende como funcionam a velocidade, a direção e o pó em estradas sem alcatrão.",
+     "p": [
+      "A gravilha agarra menos: conduz mais devagar, trava mais cedo e vira com suavidade, sem gestos bruscos.",
+      "Deixa muita distância para os outros carros por causa do pó e das pedras, e abranda quando alguém passa.",
+      "Confirma se o teu contrato de aluguer permite estradas de terra; alguns não as cobrem."
+     ],
+     "q": "Já conduziste ou andaste numa estrada de terra batida? Como foi a sensação?",
+     "c": "Lê as condições de uma empresa de aluguer e encontra o que dizem sobre estradas sem alcatrão."
+    },
+    "pt_BR": {
+     "t": "Estradas de terra para iniciantes",
+     "g": "Aprenda como funcionam velocidade, direção e poeira em estradas sem asfalto.",
+     "p": [
+      "O cascalho tem menos aderência: dirija mais devagar, freie antes e vire com suavidade, sem trancos.",
+      "Deixe bastante distância dos outros carros por causa da poeira e das pedras, e reduza quando alguém cruzar.",
+      "Confira se o contrato da locadora permite estradas de terra; alguns não cobrem."
+     ],
+     "q": "Você já dirigiu ou andou numa estrada de terra? Como foi a sensação?",
+     "c": "Leia as condições de uma locadora e encontre o que dizem sobre estradas sem asfalto."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Level crossings and narrow bridges",
+     "g": "Handle railway crossings and single-lane bridges, and know who goes first.",
+     "p": [
+      "At level crossings, slow down, look both ways and never start crossing unless the exit is clear.",
+      "If barriers start to lower or lights flash, stop; never zigzag around barriers.",
+      "On single-lane bridges, signs usually show who has priority; when unsure, wait and let the other car pass."
+     ],
+     "q": "Is there a level crossing or narrow bridge near where you live?",
+     "c": "Look up the sign used for single-lane bridges or level crossings in one country you would visit."
+    },
+    "de": {
+     "t": "Bahnübergänge und enge Brücken",
+     "g": "Meistere Bahnübergänge und einspurige Brücken und wisse, wer zuerst fährt.",
+     "p": [
+      "An Bahnübergängen langsam fahren, in beide Richtungen schauen und nur losfahren, wenn die Ausfahrt frei ist.",
+      "Senken sich Schranken oder blinken Lichter, halte an; umfahre Schranken niemals im Zickzack.",
+      "Auf einspurigen Brücken zeigen Schilder meist den Vorrang; im Zweifel warten und das andere Auto vorlassen."
+     ],
+     "q": "Gibt es in deiner Nähe einen Bahnübergang oder eine enge Brücke?",
+     "c": "Such das Schild für einspurige Brücken oder Bahnübergänge in einem Land, das du besuchen würdest."
+    },
+    "es": {
+     "t": "Pasos a nivel y puentes estrechos",
+     "g": "Afronta pasos a nivel y puentes de un carril, y sabe quién pasa primero.",
+     "p": [
+      "En los pasos a nivel, reduce, mira a ambos lados y no cruces si la salida no está despejada.",
+      "Si las barreras bajan o las luces parpadean, detente; nunca rodees las barreras en zigzag.",
+      "En puentes de un carril, las señales suelen indicar la prioridad; si dudas, espera y deja pasar."
+     ],
+     "q": "¿Hay algún paso a nivel o puente estrecho cerca de donde vives?",
+     "c": "Busca la señal de puentes de un carril o pasos a nivel de un país que visitarías."
+    },
+    "fr": {
+     "t": "Passages à niveau et ponts étroits",
+     "g": "Gère passages à niveau et ponts à voie unique, et sache qui passe en premier.",
+     "p": [
+      "Aux passages à niveau, ralentis, regarde des deux côtés et ne t'engage que si la sortie est libre.",
+      "Si les barrières descendent ou les feux clignotent, arrête-toi ; ne contourne jamais les barrières.",
+      "Sur les ponts à voie unique, des panneaux indiquent souvent la priorité ; dans le doute, attends et laisse passer."
+     ],
+     "q": "Y a-t-il un passage à niveau ou un pont étroit près de chez toi ?",
+     "c": "Cherche le panneau des ponts à voie unique ou des passages à niveau d'un pays que tu visiterais."
+    },
+    "it": {
+     "t": "Passaggi a livello e ponti stretti",
+     "g": "Affronta passaggi a livello e ponti a una corsia, e sappi chi passa per primo.",
+     "p": [
+      "Ai passaggi a livello rallenta, guarda da entrambi i lati e non impegnare il binario se l'uscita non è libera.",
+      "Se le sbarre si abbassano o le luci lampeggiano, fermati; non aggirare mai le sbarre a zigzag.",
+      "Sui ponti a una corsia i cartelli indicano di solito la precedenza; nel dubbio, aspetta e lascia passare."
+     ],
+     "q": "C'è un passaggio a livello o un ponte stretto vicino a dove vivi?",
+     "c": "Cerca il cartello dei ponti a una corsia o dei passaggi a livello di un paese che visiteresti."
+    },
+    "pt": {
+     "t": "Passagens de nível e pontes estreitas",
+     "g": "Lida com passagens de nível e pontes de uma via, e sabe quem passa primeiro.",
+     "p": [
+      "Nas passagens de nível, abranda, olha para os dois lados e só avança se a saída estiver livre.",
+      "Se as cancelas descerem ou as luzes piscarem, para; nunca contornes as cancelas em ziguezague.",
+      "Em pontes de uma só via, os sinais costumam indicar a prioridade; na dúvida, espera e deixa passar."
+     ],
+     "q": "Há alguma passagem de nível ou ponte estreita perto de onde vives?",
+     "c": "Procura o sinal de pontes de uma via ou passagens de nível de um país que visitarias."
+    },
+    "pt_BR": {
+     "t": "Passagens de nível e pontes estreitas",
+     "g": "Encare cruzamentos com ferrovia e pontes de mão única, e saiba quem passa primeiro.",
+     "p": [
+      "Na passagem de nível, reduza, olhe para os dois lados e só atravesse se a saída estiver livre.",
+      "Se as cancelas baixarem ou as luzes piscarem, pare; nunca contorne cancelas em zigue-zague.",
+      "Em pontes de pista única, placas costumam indicar a preferência; na dúvida, espere e deixe passar."
+     ],
+     "q": "Existe alguma passagem de nível ou ponte estreita perto de onde você mora?",
+     "c": "Pesquise a placa de ponte estreita ou passagem de nível de um país que você visitaria."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing the road with cyclists",
+     "g": "Give space, stay patient and pass cyclists and walkers safely.",
+     "p": [
+      "Pass cyclists slowly and with plenty of space; many countries set a minimum passing distance by law.",
+      "If there is not enough room, wait behind calmly until the road ahead is clear.",
+      "Before opening your door, check mirrors and look back for bikes: a simple habit that prevents accidents."
+     ],
+     "q": "Do you also ride a bike? How does that change the way you see drivers?",
+     "c": "Practise the far-hand door opening: use the hand farthest from the door so you turn and look back."
+    },
+    "de": {
+     "t": "Die Straße mit Radfahrern teilen",
+     "g": "Gib Raum, bleib geduldig und überhol Radfahrer und Fußgänger sicher.",
+     "p": [
+      "Überhol Radfahrer langsam und mit viel Abstand; viele Länder legen einen Mindestabstand gesetzlich fest.",
+      "Reicht der Platz nicht, warte ruhig dahinter, bis die Straße vor dir frei ist.",
+      "Schau vor dem Türöffnen in Spiegel und nach hinten auf Räder: eine einfache Gewohnheit gegen Unfälle."
+     ],
+     "q": "Fährst du selbst Rad? Wie verändert das deinen Blick auf Autofahrer?",
+     "c": "Üb den holländischen Griff: Öffne die Tür mit der entfernten Hand, damit du dich umdrehst und schaust."
+    },
+    "es": {
+     "t": "Compartir la vía con ciclistas",
+     "g": "Deja espacio, ten paciencia y adelanta a ciclistas y peatones con seguridad.",
+     "p": [
+      "Adelanta a los ciclistas despacio y con mucho espacio; muchos países fijan por ley una distancia mínima.",
+      "Si no hay sitio suficiente, espera detrás con calma hasta que la vía esté despejada.",
+      "Antes de abrir la puerta, mira los espejos y atrás por si viene una bici: un hábito que evita accidentes."
+     ],
+     "q": "¿También montas en bici? ¿Cómo cambia eso tu forma de ver a los conductores?",
+     "c": "Practica abrir la puerta con la mano más lejana: así giras el cuerpo y miras atrás."
+    },
+    "fr": {
+     "t": "Partager la route avec les cyclistes",
+     "g": "Laisse de l'espace, sois patient et dépasse cyclistes et piétons en toute sécurité.",
+     "p": [
+      "Dépasse les cyclistes lentement et avec beaucoup d'espace ; de nombreux pays fixent une distance minimale.",
+      "S'il n'y a pas assez de place, attends calmement derrière jusqu'à ce que la voie soit libre.",
+      "Avant d'ouvrir ta portière, regarde rétros et derrière toi pour les vélos : une habitude qui évite des accidents."
+     ],
+     "q": "Tu fais aussi du vélo ? Comment cela change-t-il ta façon de voir les conducteurs ?",
+     "c": "Entraîne-toi à ouvrir la portière avec la main la plus éloignée : tu te tournes et regardes derrière."
+    },
+    "it": {
+     "t": "Condividere la strada con i ciclisti",
+     "g": "Lascia spazio, abbi pazienza e sorpassa ciclisti e pedoni in sicurezza.",
+     "p": [
+      "Sorpassa i ciclisti piano e con molto spazio; molti paesi fissano per legge una distanza minima.",
+      "Se lo spazio non basta, aspetta dietro con calma finché la strada davanti è libera.",
+      "Prima di aprire la portiera guarda negli specchi e dietro per le bici: un'abitudine che evita incidenti."
+     ],
+     "q": "Vai anche in bici? Come cambia il tuo modo di vedere chi guida?",
+     "c": "Esercitati ad aprire la portiera con la mano più lontana: così ti giri e guardi indietro."
+    },
+    "pt": {
+     "t": "Partilhar a estrada com ciclistas",
+     "g": "Dá espaço, tem paciência e ultrapassa ciclistas e peões em segurança.",
+     "p": [
+      "Ultrapassa ciclistas devagar e com muito espaço; muitos países fixam por lei uma distância mínima.",
+      "Se não houver espaço suficiente, espera atrás com calma até a estrada estar livre.",
+      "Antes de abrires a porta, vê os espelhos e olha para trás por causa das bicicletas: um hábito que evita acidentes."
+     ],
+     "q": "Também andas de bicicleta? Como é que isso muda a forma como vês os condutores?",
+     "c": "Treina abrir a porta com a mão mais afastada: assim rodas o corpo e olhas para trás."
+    },
+    "pt_BR": {
+     "t": "Dividindo a via com ciclistas",
+     "g": "Dê espaço, tenha paciência e ultrapasse ciclistas e pedestres com segurança.",
+     "p": [
+      "Ultrapasse ciclistas devagar e com bastante espaço; muitos países definem por lei uma distância mínima.",
+      "Se não houver espaço, espere atrás com calma até a pista à frente ficar livre.",
+      "Antes de abrir a porta, olhe os retrovisores e para trás por causa das bikes: um hábito que evita acidentes."
+     ],
+     "q": "Você também anda de bike? Como isso muda o jeito que você vê os motoristas?",
+     "c": "Treine abrir a porta com a mão mais distante: assim você gira o corpo e olha para trás."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animals on the road",
+     "g": "Know where livestock, deer and other animals appear and how to react calmly.",
+     "p": [
+      "Animal warning signs are there for a reason: slow down, especially at dawn, dusk and near forests or farms.",
+      "If you see one deer, expect more to follow; brake firmly in a straight line rather than swerving wildly.",
+      "For herds of cows or sheep, stop or crawl past slowly, stay quiet and enjoy the moment."
+     ],
+     "q": "What is the most surprising animal you have seen on or near a road?",
+     "c": "Find a wildlife warning sign used in a country you would like to visit."
+    },
+    "de": {
+     "t": "Tiere auf der Straße",
+     "g": "Wisse, wo Weidetiere, Rehe und andere Tiere auftauchen und wie du ruhig reagierst.",
+     "p": [
+      "Wildwechsel-Schilder stehen nicht ohne Grund: langsamer fahren, besonders morgens, abends und an Wald oder Weiden.",
+      "Siehst du ein Reh, rechne mit weiteren; brems kräftig geradeaus statt wild auszuweichen.",
+      "Bei Kuh- oder Schafherden anhalten oder langsam vorbeirollen, leise bleiben und den Moment genießen."
+     ],
+     "q": "Welches Tier auf oder an der Straße hat dich am meisten überrascht?",
+     "c": "Finde ein Wildwarnschild aus einem Land, das du gern besuchen würdest."
+    },
+    "es": {
+     "t": "Animales en la carretera",
+     "g": "Conoce dónde aparecen ganado, ciervos y otros animales y cómo reaccionar con calma.",
+     "p": [
+      "Las señales de animales tienen su razón: reduce, sobre todo al amanecer, al anochecer y cerca de bosques o granjas.",
+      "Si ves un ciervo, espera que vengan más; frena con firmeza en línea recta en vez de dar volantazos.",
+      "Ante rebaños de vacas u ovejas, detente o pasa muy despacio, sin ruido, y disfruta del momento."
+     ],
+     "q": "¿Cuál es el animal más sorprendente que has visto en o cerca de una carretera?",
+     "c": "Busca una señal de fauna de un país que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Animaux sur la route",
+     "g": "Sache où apparaissent bétail, cerfs et autres animaux et comment réagir calmement.",
+     "p": [
+      "Les panneaux d'animaux ont une raison : ralentis, surtout à l'aube, au crépuscule et près des forêts ou fermes.",
+      "Si tu vois un chevreuil, attends-toi à d'autres ; freine fort en ligne droite plutôt que de donner un coup de volant.",
+      "Face à un troupeau de vaches ou de moutons, arrête-toi ou passe au pas, en silence, et savoure le moment."
+     ],
+     "q": "Quel est l'animal le plus surprenant que tu aies vu sur ou près d'une route ?",
+     "c": "Trouve un panneau d'animaux sauvages utilisé dans un pays que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Animali sulla strada",
+     "g": "Sappi dove compaiono bestiame, cervi e altri animali e come reagire con calma.",
+     "p": [
+      "I cartelli di animali vaganti hanno un motivo: rallenta, soprattutto all'alba, al tramonto e vicino a boschi o fattorie.",
+      "Se vedi un capriolo, aspettatene altri; frena deciso in linea retta invece di sterzare bruscamente.",
+      "Davanti a mandrie di mucche o greggi, fermati o passa a passo d'uomo, in silenzio, e goditi il momento."
+     ],
+     "q": "Qual è l'animale più sorprendente che hai visto su o vicino a una strada?",
+     "c": "Trova un cartello di animali selvatici usato in un paese che vorresti visitare."
+    },
+    "pt": {
+     "t": "Animais na estrada",
+     "g": "Sabe onde aparecem gado, veados e outros animais e como reagir com calma.",
+     "p": [
+      "Os sinais de animais existem por uma razão: abranda, sobretudo ao amanhecer, ao anoitecer e perto de matas ou quintas.",
+      "Se vires um veado, conta com mais; trava com firmeza a direito em vez de dar uma guinada.",
+      "Perante rebanhos de vacas ou ovelhas, para ou passa muito devagar, em silêncio, e aproveita o momento."
+     ],
+     "q": "Qual foi o animal mais surpreendente que viste na estrada ou perto dela?",
+     "c": "Encontra um sinal de animais selvagens usado num país que gostarias de visitar."
+    },
+    "pt_BR": {
+     "t": "Animais na pista",
+     "g": "Saiba onde aparecem gado, veados e outros animais e como reagir com calma.",
+     "p": [
+      "Placas de animais existem por um motivo: reduza, ainda mais ao amanhecer, ao anoitecer e perto de matas ou fazendas.",
+      "Se aparecer um animal, espere outros atrás; freie firme em linha reta em vez de jogar o carro para o lado.",
+      "Diante de boiadas ou rebanhos, pare ou passe bem devagar, em silêncio, e curta o momento."
+     ],
+     "q": "Qual foi o animal mais surpreendente que você já viu na estrada ou perto dela?",
+     "c": "Encontre uma placa de animais silvestres usada num país que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Traffic jams with a smile",
+     "g": "Stay patient in jams, use the time well and find smart alternatives.",
+     "p": [
+      "Keep a steady gap and avoid constant lane changes; they rarely save time and add stress.",
+      "Use the time: an audiobook, a good conversation or planning tonight's dinner.",
+      "Check traffic before setting off and consider leaving early or at off-peak hours on busy days."
+     ],
+     "q": "What helps you stay calm when you are stuck in traffic?",
+     "c": "Prepare a jam kit: one podcast, one conversation question and a snack for your next long drive."
+    },
+    "de": {
+     "t": "Stau mit einem Lächeln",
+     "g": "Bleib im Stau geduldig, nutze die Zeit gut und finde clevere Alternativen.",
+     "p": [
+      "Halte gleichmäßigen Abstand und wechsle nicht ständig die Spur; das spart selten Zeit und stresst.",
+      "Nutze die Zeit: ein Hörbuch, ein gutes Gespräch oder die Planung des Abendessens.",
+      "Prüf vor der Abfahrt den Verkehr und fahr an vollen Tagen lieber früh oder außerhalb der Stoßzeiten."
+     ],
+     "q": "Was hilft dir, im Stau ruhig zu bleiben?",
+     "c": "Pack ein Stau-Set: ein Podcast, eine Gesprächsfrage und ein Snack für deine nächste lange Fahrt."
+    },
+    "es": {
+     "t": "Atascos con una sonrisa",
+     "g": "Mantén la paciencia en los atascos, aprovecha el tiempo y busca alternativas inteligentes.",
+     "p": [
+      "Guarda una distancia constante y evita cambiar de carril sin parar; rara vez ahorra tiempo y estresa.",
+      "Aprovecha el rato: un audiolibro, una buena charla o planear la cena de esta noche.",
+      "Mira el tráfico antes de salir y piensa en salir temprano o fuera de las horas punta en días de mucho tráfico."
+     ],
+     "q": "¿Qué te ayuda a mantener la calma cuando estás en un atasco?",
+     "c": "Prepara un kit de atasco: un pódcast, una pregunta para charlar y un tentempié para tu próximo viaje."
+    },
+    "fr": {
+     "t": "Les bouchons avec le sourire",
+     "g": "Reste patient dans les bouchons, profite du temps et trouve des alternatives malines.",
+     "p": [
+      "Garde une distance régulière et évite de changer sans cesse de voie ; on y gagne rarement et ça stresse.",
+      "Profite du moment : un livre audio, une bonne conversation ou l'organisation du dîner.",
+      "Vérifie le trafic avant de partir et pense à partir tôt ou hors des heures de pointe les jours chargés."
+     ],
+     "q": "Qu'est-ce qui t'aide à rester calme dans un bouchon ?",
+     "c": "Prépare un kit bouchon : un podcast, une question de conversation et un en-cas pour ton prochain trajet."
+    },
+    "it": {
+     "t": "Code con il sorriso",
+     "g": "Resta paziente in coda, usa bene il tempo e trova alternative furbe.",
+     "p": [
+      "Mantieni una distanza costante ed evita di cambiare continuamente corsia: raramente fa guadagnare tempo.",
+      "Sfrutta il tempo: un audiolibro, una bella chiacchierata o organizzare la cena di stasera.",
+      "Controlla il traffico prima di partire e valuta di partire presto o fuori dagli orari di punta nei giorni affollati."
+     ],
+     "q": "Cosa ti aiuta a restare calmo quando sei bloccato nel traffico?",
+     "c": "Prepara un kit da coda: un podcast, una domanda per chiacchierare e uno spuntino per il prossimo viaggio."
+    },
+    "pt": {
+     "t": "Filas de trânsito com um sorriso",
+     "g": "Mantém a paciência nas filas, aproveita o tempo e encontra alternativas inteligentes.",
+     "p": [
+      "Mantém uma distância constante e evita mudar de via a toda a hora; raramente poupa tempo e cansa.",
+      "Aproveita o tempo: um audiolivro, uma boa conversa ou planear o jantar desta noite.",
+      "Vê o trânsito antes de sair e pondera partir cedo ou fora das horas de ponta em dias movimentados."
+     ],
+     "q": "O que te ajuda a manter a calma quando estás parado no trânsito?",
+     "c": "Prepara um kit de fila: um podcast, uma pergunta para conversar e um lanche para a próxima viagem."
+    },
+    "pt_BR": {
+     "t": "Congestionamento com um sorriso",
+     "g": "Tenha paciência no trânsito parado, aproveite o tempo e encontre alternativas espertas.",
+     "p": [
+      "Mantenha distância constante e evite trocar de faixa toda hora; isso raramente poupa tempo e estressa.",
+      "Aproveite o tempo: um audiolivro, uma boa conversa ou planejar o jantar de hoje.",
+      "Confira o trânsito antes de sair e pense em sair cedo ou fora do horário de pico em dias cheios."
+     ],
+     "q": "O que ajuda você a manter a calma quando está preso no trânsito?",
+     "c": "Monte um kit de trânsito: um podcast, uma pergunta para conversar e um lanche para a próxima viagem."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What to do after a minor bump",
+     "g": "Stay calm, stay safe, exchange details and take photos after a small knock.",
+     "p": [
+      "First check that everyone is fine, switch on hazard lights and move to a safe place if you can.",
+      "Exchange names, contact, insurance and plate details, and photograph the cars, the scene and any damage.",
+      "Rules on reporting differ by country, so note your insurer's or rental company's number and call them."
+     ],
+     "q": "Do you know where your insurance or rental contact number is right now?",
+     "c": "Save your insurer's or rental company's emergency number in your phone contacts today."
+    },
+    "de": {
+     "t": "Nach einem kleinen Blechschaden",
+     "g": "Bleib ruhig und sicher, tausch Daten aus und mach Fotos nach einem kleinen Rempler.",
+     "p": [
+      "Prüf zuerst, ob alle okay sind, schalte den Warnblinker ein und fahr wenn möglich an einen sicheren Ort.",
+      "Tauscht Namen, Kontakt, Versicherung und Kennzeichen aus und fotografiere Autos, Unfallort und Schäden.",
+      "Meldepflichten sind je nach Land verschieden; notier die Nummer deiner Versicherung oder Mietfirma und ruf an."
+     ],
+     "q": "Weißt du gerade, wo die Nummer deiner Versicherung oder Mietfirma ist?",
+     "c": "Speichere heute die Notfallnummer deiner Versicherung oder Mietfirma in deinen Kontakten."
+    },
+    "es": {
+     "t": "Qué hacer tras un golpe leve",
+     "g": "Mantén la calma y la seguridad, intercambia datos y haz fotos tras un pequeño golpe.",
+     "p": [
+      "Comprueba primero que todos están bien, pon las luces de emergencia y apártate a un sitio seguro si puedes.",
+      "Intercambiad nombres, contacto, seguro y matrículas, y fotografía los coches, el lugar y los daños.",
+      "Las normas para declarar varían según el país: ten a mano el número de tu aseguradora o de la empresa de alquiler."
+     ],
+     "q": "¿Sabes ahora mismo dónde está el número de tu seguro o de la empresa de alquiler?",
+     "c": "Guarda hoy en tus contactos el número de emergencia de tu aseguradora o empresa de alquiler."
+    },
+    "fr": {
+     "t": "Après un petit accrochage",
+     "g": "Reste calme et en sécurité, échange les coordonnées et prends des photos après un petit choc.",
+     "p": [
+      "Vérifie d'abord que tout le monde va bien, allume les feux de détresse et mets-toi en sécurité si possible.",
+      "Échangez noms, contacts, assurances et plaques, et photographie les voitures, les lieux et les dégâts.",
+      "Les règles de déclaration varient selon le pays : garde le numéro de ton assureur ou du loueur et appelle-le."
+     ],
+     "q": "Sais-tu en ce moment où se trouve le numéro de ton assurance ou de ton loueur ?",
+     "c": "Enregistre aujourd'hui le numéro d'urgence de ton assureur ou de ton loueur dans tes contacts."
+    },
+    "it": {
+     "t": "Dopo un piccolo urto",
+     "g": "Mantieni calma e sicurezza, scambia i dati e fai foto dopo un piccolo incidente.",
+     "p": [
+      "Prima verifica che tutti stiano bene, accendi le quattro frecce e spostati in un posto sicuro se puoi.",
+      "Scambiatevi nomi, contatti, assicurazione e targhe, e fotografa auto, luogo e danni.",
+      "Le regole per la denuncia cambiano da paese a paese: tieni il numero dell'assicurazione o del noleggio e chiamali."
+     ],
+     "q": "Sai adesso dov'è il numero della tua assicurazione o del noleggio?",
+     "c": "Salva oggi in rubrica il numero d'emergenza della tua assicurazione o del noleggio."
+    },
+    "pt": {
+     "t": "Depois de um pequeno toque",
+     "g": "Mantém a calma e a segurança, troca dados e tira fotos depois de um pequeno toque.",
+     "p": [
+      "Primeiro confirma que todos estão bem, liga os quatro piscas e vai para um sítio seguro se puderes.",
+      "Troquem nomes, contactos, seguro e matrículas, e fotografa os carros, o local e os danos.",
+      "As regras de participação variam por país: tem à mão o número da seguradora ou da rent-a-car e liga-lhes."
+     ],
+     "q": "Sabes neste momento onde está o número do teu seguro ou da rent-a-car?",
+     "c": "Guarda hoje nos contactos o número de emergência da tua seguradora ou empresa de aluguer."
+    },
+    "pt_BR": {
+     "t": "Depois de uma batidinha",
+     "g": "Mantenha a calma e a segurança, troque dados e tire fotos depois de uma batida leve.",
+     "p": [
+      "Primeiro confira se todos estão bem, ligue o pisca-alerta e vá para um lugar seguro se puder.",
+      "Troquem nomes, contatos, seguro e placas, e fotografe os carros, o local e os danos.",
+      "As regras para registrar variam por país: tenha à mão o número da seguradora ou da locadora e ligue."
+     ],
+     "q": "Você sabe agora onde está o número do seu seguro ou da locadora?",
+     "c": "Salve hoje nos contatos o número de emergência da sua seguradora ou locadora."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Calling for roadside help",
+     "g": "Know your breakdown service, the rental hotline and the information they will ask for.",
+     "p": [
+      "For injuries or danger, call the local emergency number first; for breakdowns, call roadside assistance.",
+      "They will ask where you are: share your GPS position, the road number, direction and a nearby landmark.",
+      "Wait in a safe spot away from traffic, wear your vest and place the warning triangle if it is safe."
+     ],
+     "q": "Do you have a roadside assistance number saved, through insurance, rental or a club?",
+     "c": "Learn how to share your exact location from your phone's map app in two taps."
+    },
+    "de": {
+     "t": "Pannenhilfe rufen",
+     "g": "Kenne deinen Pannendienst, die Hotline der Mietfirma und die Infos, nach denen sie fragen.",
+     "p": [
+      "Bei Verletzten oder Gefahr zuerst die örtliche Notrufnummer wählen; bei Pannen den Pannendienst.",
+      "Man fragt, wo du bist: Teile GPS-Position, Straßennummer, Fahrtrichtung und einen Orientierungspunkt mit.",
+      "Warte an einem sicheren Ort abseits des Verkehrs, trag die Warnweste und stell das Dreieck auf, wenn es sicher ist."
+     ],
+     "q": "Hast du eine Pannenhilfe-Nummer gespeichert, über Versicherung, Mietfirma oder einen Club?",
+     "c": "Lerne, wie du deinen genauen Standort mit zwei Tipps aus der Karten-App teilst."
+    },
+    "es": {
+     "t": "Pedir asistencia en carretera",
+     "g": "Conoce tu servicio de asistencia, la línea de la empresa de alquiler y los datos que te pedirán.",
+     "p": [
+      "Si hay heridos o peligro, llama primero al número de emergencias local; si es una avería, a la asistencia.",
+      "Te preguntarán dónde estás: da tu posición GPS, el número de carretera, el sentido y una referencia cercana.",
+      "Espera en un lugar seguro lejos del tráfico, con el chaleco puesto, y coloca los triángulos si es seguro."
+     ],
+     "q": "¿Tienes guardado un número de asistencia en carretera, por tu seguro, el alquiler o un club?",
+     "c": "Aprende a compartir tu ubicación exacta desde la app de mapas en dos toques."
+    },
+    "fr": {
+     "t": "Appeler l'assistance routière",
+     "g": "Connais ton service de dépannage, la ligne du loueur et les informations qu'on te demandera.",
+     "p": [
+      "En cas de blessés ou de danger, appelle d'abord le numéro d'urgence local ; pour une panne, l'assistance.",
+      "On te demandera où tu es : donne ta position GPS, le numéro de route, le sens et un repère proche.",
+      "Attends en lieu sûr, loin de la circulation, avec ton gilet, et place le triangle si c'est sans danger."
+     ],
+     "q": "As-tu un numéro d'assistance enregistré, via ton assurance, ton loueur ou un club ?",
+     "c": "Apprends à partager ta position exacte depuis ton appli de cartes en deux gestes."
+    },
+    "it": {
+     "t": "Chiamare il soccorso stradale",
+     "g": "Conosci il tuo soccorso stradale, il numero del noleggio e le informazioni che ti chiederanno.",
+     "p": [
+      "Con feriti o pericolo chiama prima il numero d'emergenza locale; per un guasto, il soccorso stradale.",
+      "Ti chiederanno dove sei: dai la posizione GPS, il numero della strada, la direzione e un punto di riferimento.",
+      "Aspetta in un posto sicuro lontano dal traffico, con il giubbotto, e posiziona il triangolo se è sicuro."
+     ],
+     "q": "Hai salvato un numero di soccorso stradale, tramite assicurazione, noleggio o un club?",
+     "c": "Impara a condividere la tua posizione esatta dall'app di mappe in due tocchi."
+    },
+    "pt": {
+     "t": "Pedir assistência em viagem",
+     "g": "Conhece o teu serviço de assistência, a linha da rent-a-car e os dados que te vão pedir.",
+     "p": [
+      "Se houver feridos ou perigo, liga primeiro para o número de emergência local; numa avaria, para a assistência.",
+      "Vão perguntar onde estás: dá a posição GPS, o número da estrada, o sentido e uma referência próxima.",
+      "Espera num sítio seguro longe do trânsito, com o colete vestido, e coloca o triângulo se for seguro."
+     ],
+     "q": "Tens guardado um número de assistência em viagem, pelo seguro, pelo aluguer ou por um clube?",
+     "c": "Aprende a partilhar a tua localização exata na app de mapas com dois toques."
+    },
+    "pt_BR": {
+     "t": "Chamando o socorro na estrada",
+     "g": "Conheça seu serviço de guincho, o telefone da locadora e as informações que eles vão pedir.",
+     "p": [
+      "Com feridos ou perigo, ligue primeiro para o número de emergência local; numa pane, para a assistência.",
+      "Vão perguntar onde você está: passe a posição GPS, o número da rodovia, o sentido e uma referência próxima.",
+      "Espere num lugar seguro longe do trânsito, de colete, e coloque o triângulo se for seguro."
+     ],
+     "q": "Você tem salvo um número de assistência 24 horas, pelo seguro, pela locadora ou por um clube?",
+     "c": "Aprenda a compartilhar sua localização exata pelo app de mapa em dois toques."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Driving with bikes or a trailer",
+     "g": "Use racks and trailers safely and see how extra length and weight change braking and turning.",
+     "p": [
+      "Fix bikes firmly and check that lights and the number plate stay visible; some places require a repeat plate.",
+      "Extra length means wider turns, more careful reversing and longer gaps when overtaking.",
+      "Extra weight means longer braking distances; drive more gently and check the load at every stop."
+     ],
+     "q": "Would you bring bikes, a kayak or something else big on your dream road trip?",
+     "c": "Look up the maximum roof or towbar load in the manual of a car you use."
+    },
+    "de": {
+     "t": "Mit Fahrrädern oder Anhänger",
+     "g": "Nutze Träger und Anhänger sicher und sieh, wie Länge und Gewicht Bremsen und Lenken verändern.",
+     "p": [
+      "Befestige Räder fest und prüf, ob Lichter und Kennzeichen sichtbar bleiben; manchmal braucht es ein Zusatzkennzeichen.",
+      "Mehr Länge heißt weitere Kurven, vorsichtigeres Rückwärtsfahren und mehr Platz beim Überholen.",
+      "Mehr Gewicht heißt längerer Bremsweg; fahr sanfter und prüf die Ladung bei jedem Stopp."
+     ],
+     "q": "Würdest du auf deinen Traum-Roadtrip Räder, ein Kajak oder etwas anderes Großes mitnehmen?",
+     "c": "Such im Handbuch eines Autos, das du nutzt, die maximale Dach- oder Stützlast."
+    },
+    "es": {
+     "t": "Conducir con bicis o remolque",
+     "g": "Usa portabicis y remolques con seguridad y descubre cómo cambian frenada y giros.",
+     "p": [
+      "Sujeta bien las bicis y comprueba que luces y matrícula se ven; en algunos lugares hace falta una matrícula extra.",
+      "Más longitud implica giros más abiertos, marcha atrás con cuidado y más espacio al adelantar.",
+      "Más peso implica más distancia de frenado; conduce con suavidad y revisa la carga en cada parada."
+     ],
+     "q": "¿Llevarías bicis, un kayak u otra cosa grande en tu road trip soñado?",
+     "c": "Busca en el manual de un coche que uses la carga máxima en el techo o en el enganche."
+    },
+    "fr": {
+     "t": "Rouler avec vélos ou remorque",
+     "g": "Utilise porte-vélos et remorques en sécurité et vois comment longueur et poids changent freinage et virages.",
+     "p": [
+      "Fixe bien les vélos et vérifie que feux et plaque restent visibles ; certains pays exigent une plaque en plus.",
+      "Plus de longueur, c'est des virages plus larges, des marches arrière prudentes et plus d'espace pour doubler.",
+      "Plus de poids, c'est un freinage plus long ; conduis en douceur et vérifie le chargement à chaque arrêt."
+     ],
+     "q": "Emporterais-tu des vélos, un kayak ou autre chose de grand pour ton road trip rêvé ?",
+     "c": "Cherche dans le manuel d'une voiture que tu utilises la charge maximale sur le toit ou l'attelage."
+    },
+    "it": {
+     "t": "Guidare con bici o rimorchio",
+     "g": "Usa portabici e rimorchi in sicurezza e scopri come lunghezza e peso cambiano frenata e curve.",
+     "p": [
+      "Fissa bene le bici e controlla che luci e targa restino visibili; in alcuni paesi serve una targa ripetitrice.",
+      "Più lunghezza significa curve più larghe, retromarce più attente e più spazio per sorpassare.",
+      "Più peso significa frenate più lunghe: guida con dolcezza e controlla il carico a ogni sosta."
+     ],
+     "q": "Porteresti bici, un kayak o qualcos'altro di grande nel tuo road trip dei sogni?",
+     "c": "Cerca nel manuale di un'auto che usi il carico massimo sul tetto o sul gancio traino."
+    },
+    "pt": {
+     "t": "Conduzir com bicicletas ou reboque",
+     "g": "Usa suportes e reboques em segurança e vê como comprimento e peso mudam travagem e curvas.",
+     "p": [
+      "Prende bem as bicicletas e confirma que luzes e matrícula ficam visíveis; nalguns países é preciso matrícula extra.",
+      "Mais comprimento significa curvas mais abertas, marcha-atrás com cuidado e mais espaço para ultrapassar.",
+      "Mais peso significa travagens mais longas; conduz com suavidade e verifica a carga em cada paragem."
+     ],
+     "q": "Levarias bicicletas, um caiaque ou outra coisa grande na tua road trip de sonho?",
+     "c": "Procura no manual de um carro que uses a carga máxima no tejadilho ou no engate."
+    },
+    "pt_BR": {
+     "t": "Dirigindo com bikes ou reboque",
+     "g": "Use transbikes e reboques com segurança e veja como comprimento e peso mudam frenagem e curvas.",
+     "p": [
+      "Prenda bem as bikes e confira se lanternas e placa ficam visíveis; em alguns lugares é exigida placa extra.",
+      "Mais comprimento significa curvas mais abertas, ré com cuidado e mais espaço para ultrapassar.",
+      "Mais peso significa frenagem mais longa; dirija com suavidade e confira a carga em cada parada."
+     ],
+     "q": "Você levaria bikes, um caiaque ou outra coisa grande na sua road trip dos sonhos?",
+     "c": "Procure no manual de um carro que você usa a carga máxima no teto ou no engate."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eco-driving habits",
+     "g": "Use smooth speed, correct tyre pressure and light loads for lower fuel use.",
+     "p": [
+      "Accelerate gently, look far ahead and roll towards red lights instead of braking late.",
+      "A steady, moderate speed on highways often uses noticeably less fuel than driving fast.",
+      "Correct tyre pressure, an empty roof box and no extra weight all help your car use less energy."
+     ],
+     "q": "Which eco-driving habit do you already have, and which would you like to start?",
+     "c": "On your next drive, try to brake as little as possible by looking further ahead."
+    },
+    "de": {
+     "t": "Spritsparend fahren",
+     "g": "Nutze gleichmäßiges Tempo, richtigen Reifendruck und wenig Ballast für weniger Verbrauch.",
+     "p": [
+      "Beschleunige sanft, schau weit voraus und roll auf rote Ampeln zu, statt spät zu bremsen.",
+      "Ein gleichmäßiges, moderates Tempo auf der Autobahn spart oft spürbar Kraftstoff gegenüber schnellem Fahren.",
+      "Richtiger Reifendruck, eine leere Dachbox und kein unnötiges Gewicht senken den Energiebedarf."
+     ],
+     "q": "Welche Spritspar-Gewohnheit hast du schon, und welche möchtest du anfangen?",
+     "c": "Versuch bei deiner nächsten Fahrt, durch weiteres Vorausschauen so wenig wie möglich zu bremsen."
+    },
+    "es": {
+     "t": "Hábitos de conducción eficiente",
+     "g": "Usa una velocidad suave, la presión correcta y poca carga para gastar menos combustible.",
+     "p": [
+      "Acelera con suavidad, mira lejos y deja rodar el coche hacia los semáforos en rojo en vez de frenar tarde.",
+      "Una velocidad constante y moderada en autopista suele gastar bastante menos que ir rápido.",
+      "La presión correcta, un cofre de techo vacío y no llevar peso extra ayudan a gastar menos energía."
+     ],
+     "q": "¿Qué hábito de conducción eficiente ya tienes y cuál te gustaría empezar?",
+     "c": "En tu próximo trayecto, intenta frenar lo menos posible mirando más lejos."
+    },
+    "fr": {
+     "t": "Les gestes de l'écoconduite",
+     "g": "Adopte une vitesse souple, la bonne pression des pneus et une charge légère pour consommer moins.",
+     "p": [
+      "Accélère en douceur, regarde loin et laisse rouler vers les feux rouges au lieu de freiner tard.",
+      "Une vitesse régulière et modérée sur autoroute consomme souvent nettement moins que rouler vite.",
+      "Bonne pression, coffre de toit vide et pas de poids inutile aident ta voiture à consommer moins."
+     ],
+     "q": "Quel geste d'écoconduite as-tu déjà, et lequel aimerais-tu adopter ?",
+     "c": "Lors de ton prochain trajet, essaie de freiner le moins possible en regardant plus loin."
+    },
+    "it": {
+     "t": "Abitudini di guida ecologica",
+     "g": "Usa velocità regolare, pressione giusta delle gomme e carichi leggeri per consumare meno.",
+     "p": [
+      "Accelera dolcemente, guarda lontano e lascia scorrere l'auto verso i semafori rossi invece di frenare tardi.",
+      "Una velocità costante e moderata in autostrada consuma spesso molto meno che andare forte.",
+      "Pressione corretta, box da tetto vuoto e niente peso inutile aiutano l'auto a usare meno energia."
+     ],
+     "q": "Quale abitudine di guida ecologica hai già e quale vorresti iniziare?",
+     "c": "Nel prossimo viaggio prova a frenare il meno possibile guardando più lontano."
+    },
+    "pt": {
+     "t": "Hábitos de condução ecológica",
+     "g": "Usa velocidade suave, pressão certa dos pneus e pouca carga para gastar menos combustível.",
+     "p": [
+      "Acelera com suavidade, olha ao longe e deixa o carro rolar até aos semáforos vermelhos em vez de travar tarde.",
+      "Uma velocidade constante e moderada em autoestrada gasta muitas vezes bem menos do que andar depressa.",
+      "Pressão correta, caixa de tejadilho vazia e nada de peso extra ajudam o carro a gastar menos."
+     ],
+     "q": "Que hábito de condução ecológica já tens e qual gostarias de começar?",
+     "c": "Na próxima viagem, tenta travar o menos possível olhando mais à frente."
+    },
+    "pt_BR": {
+     "t": "Hábitos de direção econômica",
+     "g": "Use velocidade suave, calibragem certa e pouca carga para gastar menos combustível.",
+     "p": [
+      "Acelere com suavidade, olhe longe e deixe o carro rolar até o sinal vermelho em vez de frear em cima.",
+      "Uma velocidade constante e moderada na rodovia costuma gastar bem menos do que andar rápido.",
+      "Calibragem certa, bagageiro de teto vazio e nada de peso extra ajudam o carro a gastar menos."
+     ],
+     "q": "Qual hábito de direção econômica você já tem e qual gostaria de começar?",
+     "c": "Na próxima vez que dirigir, tente frear o mínimo possível olhando mais à frente."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: on-the-road skills",
+     "g": "Revisit signs, breaks, weather and etiquette, then plan a short practice drive.",
+     "p": [
+      "Navigation: smart GPS settings, sign shapes, roundabouts, limits and road fees checked at official sources.",
+      "Safety: a break every two hours, stop when tired, adapt to rain, fog, night, animals and narrow roads.",
+      "Courtesy and calm: give cyclists space, wave thanks, smile through jams and know who to call for help."
+     ],
+     "q": "Which road skill from this month do you feel most confident about now?",
+     "c": "Plan a one-hour practice drive with a scenic road, a roundabout and a pleasant break stop."
+    },
+    "de": {
+     "t": "Rückblick: Fahrkönnen unterwegs",
+     "g": "Wiederhole Schilder, Pausen, Wetter und Verkehrsknigge und plane eine kurze Übungsfahrt.",
+     "p": [
+      "Navigation: kluge Navi-Einstellungen, Schilderformen, Kreisverkehre, Limits und Gebühren aus offiziellen Quellen.",
+      "Sicherheit: alle zwei Stunden Pause, bei Müdigkeit anhalten, an Regen, Nebel, Nacht, Tiere und enge Straßen anpassen.",
+      "Höflichkeit und Ruhe: Radfahrern Platz geben, dankend grüßen, Stau gelassen nehmen und wissen, wen man ruft."
+     ],
+     "q": "Bei welcher Fahrfähigkeit aus diesem Monat fühlst du dich jetzt am sichersten?",
+     "c": "Plane eine einstündige Übungsfahrt mit Panoramastraße, Kreisverkehr und einem schönen Pausenstopp."
+    },
+    "es": {
+     "t": "Repaso: habilidades en carretera",
+     "g": "Repasa señales, pausas, clima y cortesía, y planea un breve trayecto de práctica.",
+     "p": [
+      "Orientación: GPS bien configurado, formas de señales, rotondas, límites y tasas consultadas en fuentes oficiales.",
+      "Seguridad: pausa cada dos horas, parar si hay cansancio, adaptarse a lluvia, niebla, noche, animales y caminos estrechos.",
+      "Cortesía y calma: espacio a los ciclistas, un saludo de gracias, paciencia en atascos y saber a quién llamar."
+     ],
+     "q": "¿En qué habilidad de este mes te sientes ahora más seguro?",
+     "c": "Planea un trayecto de práctica de una hora con una carretera bonita, una rotonda y una buena parada."
+    },
+    "fr": {
+     "t": "Bilan : savoir-faire sur la route",
+     "g": "Revois panneaux, pauses, météo et courtoisie, puis prépare un court trajet d'entraînement.",
+     "p": [
+      "Orientation : GPS bien réglé, formes des panneaux, ronds-points, limites et péages vérifiés aux sources officielles.",
+      "Sécurité : pause toutes les deux heures, arrêt si fatigue, s'adapter à pluie, brouillard, nuit, animaux et routes étroites.",
+      "Courtoisie et calme : laisser de l'espace aux cyclistes, remercier d'un signe, rester zen et savoir qui appeler."
+     ],
+     "q": "Dans quelle compétence de ce mois te sens-tu le plus à l'aise maintenant ?",
+     "c": "Prépare un trajet d'entraînement d'une heure avec une jolie route, un rond-point et une pause agréable."
+    },
+    "it": {
+     "t": "Ripasso: abilità su strada",
+     "g": "Ripassa cartelli, pause, meteo e buone maniere, poi pianifica un breve giro di prova.",
+     "p": [
+      "Orientamento: navigatore ben impostato, forme dei cartelli, rotatorie, limiti e pedaggi verificati su fonti ufficiali.",
+      "Sicurezza: pausa ogni due ore, fermarsi se stanchi, adattarsi a pioggia, nebbia, notte, animali e stradine.",
+      "Cortesia e calma: spazio ai ciclisti, un cenno di grazie, sorriso in coda e sapere chi chiamare."
+     ],
+     "q": "In quale abilità di questo mese ti senti più sicuro adesso?",
+     "c": "Pianifica un giro di prova di un'ora con una strada panoramica, una rotatoria e una bella sosta."
+    },
+    "pt": {
+     "t": "Revisão: competências na estrada",
+     "g": "Revê sinais, pausas, tempo e cortesia, e depois planeia uma curta viagem de treino.",
+     "p": [
+      "Orientação: GPS bem configurado, formas dos sinais, rotundas, limites e taxas confirmados em fontes oficiais.",
+      "Segurança: pausa a cada duas horas, parar com cansaço, adaptar-se a chuva, nevoeiro, noite, animais e estradas estreitas.",
+      "Cortesia e calma: dar espaço aos ciclistas, agradecer com um aceno, paciência nas filas e saber a quem ligar."
+     ],
+     "q": "Em que competência deste mês te sentes agora mais seguro?",
+     "c": "Planeia uma viagem de treino de uma hora com uma estrada bonita, uma rotunda e uma boa paragem."
+    },
+    "pt_BR": {
+     "t": "Revisão: habilidades na estrada",
+     "g": "Revise placas, pausas, clima e boas maneiras, e depois planeje um trajeto curto de treino.",
+     "p": [
+      "Orientação: GPS bem configurado, formas das placas, rotatórias, limites e taxas checados em fontes oficiais.",
+      "Segurança: pausa a cada duas horas, parar com cansaço, adaptar-se a chuva, neblina, noite, animais e estradas estreitas.",
+      "Gentileza e calma: espaço para ciclistas, aceno de agradecimento, paciência no trânsito e saber para quem ligar."
+     ],
+     "q": "Em qual habilidade deste mês você se sente mais seguro agora?",
+     "c": "Planeje um trajeto de treino de uma hora com uma estrada bonita, uma rotatória e uma boa parada."
+    }
+   }
+  }
+ ]
+}

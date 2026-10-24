@@ -1,0 +1,835 @@
+{
+ "topic": "packing",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Toiletry bag essentials",
+     "g": "Build a compact kit with the basics you use every day, and nothing more.",
+     "p": [
+      "Start with your daily routine: toothbrush, toothpaste, deodorant, a cleanser and whatever you truly use.",
+      "Many hotels provide soap and shampoo, so check your booking and skip what you can get there.",
+      "Choose a small bag that opens wide or hangs on a hook, so everything is easy to see and reach."
+     ],
+     "q": "What is the one toiletry item you could never travel without?",
+     "c": "Write down every product you use on a normal morning: that is the core of your travel kit."
+    },
+    "de": {
+     "t": "Das Wichtigste im Kulturbeutel",
+     "g": "Stell ein kompaktes Set mit den täglichen Basics zusammen, und nicht mehr.",
+     "p": [
+      "Geh von deiner Routine aus: Zahnbürste, Zahnpasta, Deo, Reinigung und was du wirklich benutzt.",
+      "Viele Hotels stellen Seife und Shampoo; prüf deine Buchung und lass weg, was du dort bekommst.",
+      "Wähle einen kleinen Beutel, der weit aufgeht oder an einem Haken hängt, damit alles griffbereit ist."
+     ],
+     "q": "Ohne welchen Hygieneartikel würdest du nie verreisen?",
+     "c": "Schreib jedes Produkt auf, das du an einem normalen Morgen benutzt: Das ist der Kern deines Sets."
+    },
+    "es": {
+     "t": "Lo esencial del neceser",
+     "g": "Prepara un neceser compacto con lo básico que usas cada día, y nada más.",
+     "p": [
+      "Parte de tu rutina diaria: cepillo, pasta de dientes, desodorante, limpiador y lo que de verdad usas.",
+      "Muchos hoteles ofrecen jabón y champú; revisa tu reserva y no lleves lo que tendrás allí.",
+      "Elige un neceser pequeño que se abra bien o se cuelgue de un gancho, para verlo todo de un vistazo."
+     ],
+     "q": "¿Qué producto de aseo no dejarías nunca en casa?",
+     "c": "Apunta cada producto que usas en una mañana normal: ese es el núcleo de tu neceser de viaje."
+    },
+    "fr": {
+     "t": "L'essentiel de la trousse de toilette",
+     "g": "Compose une trousse compacte avec les basiques de tous les jours, et rien de plus.",
+     "p": [
+      "Pars de ta routine : brosse à dents, dentifrice, déodorant, nettoyant et ce que tu utilises vraiment.",
+      "Beaucoup d'hôtels fournissent savon et shampooing ; vérifie ta réservation et laisse ce que tu y trouveras.",
+      "Choisis une petite trousse qui s'ouvre grand ou se suspend à un crochet, pour tout voir d'un coup d'œil."
+     ],
+     "q": "Sans quel produit de toilette ne partirais-tu jamais ?",
+     "c": "Note chaque produit utilisé lors d'un matin normal : c'est le cœur de ta trousse de voyage."
+    },
+    "it": {
+     "t": "L'essenziale nel beauty case",
+     "g": "Prepara un kit compatto con le basi che usi ogni giorno, e niente di più.",
+     "p": [
+      "Parti dalla tua routine: spazzolino, dentifricio, deodorante, detergente e ciò che usi davvero.",
+      "Molti hotel offrono sapone e shampoo: controlla la prenotazione e lascia a casa ciò che troverai lì.",
+      "Scegli un beauty piccolo che si apra bene o si appenda a un gancio, così vedi tutto a colpo d'occhio."
+     ],
+     "q": "Senza quale prodotto per l'igiene non partiresti mai?",
+     "c": "Scrivi ogni prodotto che usi in una mattina normale: è il cuore del tuo kit da viaggio."
+    },
+    "pt": {
+     "t": "O essencial da bolsa de higiene",
+     "g": "Monta uma bolsa compacta com o básico que usas todos os dias, e nada mais.",
+     "p": [
+      "Parte da tua rotina: escova, pasta de dentes, desodorizante, um produto de limpeza e o que usas mesmo.",
+      "Muitos hotéis têm sabonete e champô; vê a reserva e não leves o que lá vais ter.",
+      "Escolhe uma bolsa pequena que abra bem ou se pendure num gancho, para veres tudo de relance."
+     ],
+     "q": "Que produto de higiene nunca deixarias em casa?",
+     "c": "Aponta cada produto que usas numa manhã normal: esse é o centro da tua bolsa de viagem."
+    },
+    "pt_BR": {
+     "t": "O essencial da nécessaire",
+     "g": "Monte uma nécessaire compacta com o básico que você usa todo dia, e nada mais.",
+     "p": [
+      "Parta da sua rotina: escova, pasta de dente, desodorante, sabonete facial e o que você usa de verdade.",
+      "Muitos hotéis oferecem sabonete e xampu; confira a reserva e não leve o que vai ter lá.",
+      "Escolha uma nécessaire pequena que abra bem ou pendure num gancho, para ver tudo de uma vez."
+     ],
+     "q": "Qual item de higiene você nunca deixaria em casa?",
+     "c": "Anote cada produto que usa numa manhã normal: esse é o núcleo da sua nécessaire de viagem."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Liquids in hand luggage",
+     "g": "Learn that many airports limit carry-on liquids, so check the rules and use a clear bag.",
+     "p": [
+      "Many airports cap the size of each liquid container in hand luggage and ask for one clear resealable bag.",
+      "Liquids include gels, creams, pastes, sprays and lotions, so toothpaste and sunscreen count too.",
+      "Rules differ between airports and can change, so check the current ones for every airport on your trip."
+     ],
+     "q": "Have you ever had a liquid taken away at a security check?",
+     "c": "Gather the liquids you would take on a short flight and see if they fit in one small clear bag."
+    },
+    "de": {
+     "t": "Flüssigkeiten im Handgepäck",
+     "g": "Viele Flughäfen begrenzen Flüssigkeiten im Handgepäck: Prüf die Regeln und nutze einen durchsichtigen Beutel.",
+     "p": [
+      "Viele Flughäfen begrenzen die Größe jedes Behälters im Handgepäck und verlangen einen klaren Zipbeutel.",
+      "Als Flüssigkeit gelten auch Gele, Cremes, Pasten, Sprays und Lotionen, also auch Zahnpasta und Sonnencreme.",
+      "Die Regeln unterscheiden sich je nach Flughafen und können sich ändern; prüf sie für jeden Flughafen."
+     ],
+     "q": "Wurde dir an der Sicherheitskontrolle schon einmal eine Flüssigkeit abgenommen?",
+     "c": "Sammle die Flüssigkeiten für einen kurzen Flug und schau, ob sie in einen kleinen klaren Beutel passen."
+    },
+    "es": {
+     "t": "Líquidos en el equipaje de mano",
+     "g": "Muchos aeropuertos limitan los líquidos en cabina: consulta las normas y usa una bolsa transparente.",
+     "p": [
+      "Muchos aeropuertos limitan el tamaño de cada envase en cabina y piden una bolsa transparente con cierre.",
+      "Cuentan como líquidos los geles, cremas, pastas, sprays y lociones: también la pasta de dientes y el protector solar.",
+      "Las normas varían entre aeropuertos y pueden cambiar; consulta las vigentes en cada aeropuerto del viaje."
+     ],
+     "q": "¿Alguna vez te quitaron un líquido en el control de seguridad?",
+     "c": "Reúne los líquidos que llevarías en un vuelo corto y mira si caben en una bolsa transparente pequeña."
+    },
+    "fr": {
+     "t": "Les liquides en cabine",
+     "g": "Beaucoup d'aéroports limitent les liquides en cabine : vérifie les règles et utilise un sac transparent.",
+     "p": [
+      "Beaucoup d'aéroports limitent la taille de chaque contenant en cabine et demandent un sac transparent refermable.",
+      "Gels, crèmes, pâtes, sprays et lotions comptent comme liquides : dentifrice et crème solaire aussi.",
+      "Les règles varient selon les aéroports et peuvent changer : vérifie-les pour chaque aéroport du voyage."
+     ],
+     "q": "T'a-t-on déjà confisqué un liquide au contrôle de sécurité ?",
+     "c": "Rassemble les liquides que tu prendrais pour un vol court et vois s'ils tiennent dans un petit sac transparent."
+    },
+    "it": {
+     "t": "I liquidi nel bagaglio a mano",
+     "g": "Molti aeroporti limitano i liquidi a mano: controlla le regole e usa una busta trasparente.",
+     "p": [
+      "Molti aeroporti limitano la capacità di ogni contenitore a mano e chiedono una busta trasparente richiudibile.",
+      "Contano come liquidi anche gel, creme, paste, spray e lozioni: quindi dentifricio e crema solare.",
+      "Le regole variano tra aeroporti e possono cambiare: controlla quelle attuali per ogni scalo del viaggio."
+     ],
+     "q": "Ti è mai stato tolto un liquido al controllo di sicurezza?",
+     "c": "Raccogli i liquidi che porteresti su un volo breve e vedi se stanno in una piccola busta trasparente."
+    },
+    "pt": {
+     "t": "Líquidos na bagagem de mão",
+     "g": "Muitos aeroportos limitam os líquidos na bagagem de mão: confirma as regras e usa um saco transparente.",
+     "p": [
+      "Muitos aeroportos limitam o tamanho de cada embalagem na cabine e pedem um saco transparente com fecho.",
+      "Contam como líquidos os géis, cremes, pastas, sprays e loções: a pasta de dentes e o protetor solar também.",
+      "As regras variam entre aeroportos e podem mudar; confirma as atuais para cada aeroporto da viagem."
+     ],
+     "q": "Já te tiraram algum líquido no controlo de segurança?",
+     "c": "Junta os líquidos que levarias num voo curto e vê se cabem num saco transparente pequeno."
+    },
+    "pt_BR": {
+     "t": "Líquidos na bagagem de mão",
+     "g": "Muitos aeroportos limitam líquidos na bagagem de mão: confira as regras e use um saquinho transparente.",
+     "p": [
+      "Muitos aeroportos limitam o tamanho de cada frasco na cabine e pedem um saquinho transparente com fecho.",
+      "Contam como líquidos géis, cremes, pastas, sprays e loções: pasta de dente e protetor solar também.",
+      "As regras variam entre aeroportos e podem mudar; confira as atuais para cada aeroporto da viagem."
+     ],
+     "q": "Já tiraram algum líquido seu no raio-x?",
+     "c": "Junte os líquidos que levaria num voo curto e veja se cabem num saquinho transparente pequeno."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travel-size containers",
+     "g": "Use refillable bottles and jars that save space and reduce waste.",
+     "p": [
+      "Decant your favourite products into small refillable bottles instead of buying mini versions each trip.",
+      "Soft silicone bottles are easy to squeeze; tiny jars suit creams; label each one so you never mix them up.",
+      "Fill bottles only as much as the trip needs, and leave a little air space at the top."
+     ],
+     "q": "Do you prefer bringing your own products or using what you find at your destination?",
+     "c": "Find three products you use daily and work out how much of each you need for one week."
+    },
+    "de": {
+     "t": "Reisegroße Behälter",
+     "g": "Nutze nachfüllbare Fläschchen und Döschen, die Platz sparen und Müll vermeiden.",
+     "p": [
+      "Füll deine Lieblingsprodukte in kleine nachfüllbare Flaschen um, statt jedes Mal Minis zu kaufen.",
+      "Weiche Silikonflaschen lassen sich gut drücken; kleine Döschen passen für Cremes; beschrifte alles.",
+      "Füll nur so viel ein, wie die Reise braucht, und lass oben etwas Luft."
+     ],
+     "q": "Nimmst du lieber deine eigenen Produkte mit oder nutzt du, was du vor Ort findest?",
+     "c": "Wähle drei Produkte, die du täglich nutzt, und rechne aus, wie viel du davon für eine Woche brauchst."
+    },
+    "es": {
+     "t": "Envases de viaje",
+     "g": "Usa botes y tarros rellenables que ahorran espacio y reducen residuos.",
+     "p": [
+      "Pasa tus productos favoritos a botes pequeños rellenables en vez de comprar minis en cada viaje.",
+      "Los botes de silicona se aprietan fácil; los tarritos van bien para cremas; etiqueta cada uno.",
+      "Llena solo lo que el viaje necesita y deja un poco de aire arriba."
+     ],
+     "q": "¿Prefieres llevar tus propios productos o usar los que encuentres en destino?",
+     "c": "Elige tres productos de uso diario y calcula cuánto necesitas de cada uno para una semana."
+    },
+    "fr": {
+     "t": "Les flacons de voyage",
+     "g": "Utilise des flacons et pots rechargeables qui gagnent de la place et réduisent les déchets.",
+     "p": [
+      "Transvase tes produits préférés dans de petits flacons rechargeables au lieu d'acheter des minis à chaque voyage.",
+      "Les flacons en silicone se pressent facilement ; les petits pots vont aux crèmes ; étiquette chacun.",
+      "Remplis seulement ce dont le voyage a besoin et laisse un peu d'air en haut."
+     ],
+     "q": "Préfères-tu emporter tes produits ou utiliser ceux que tu trouves sur place ?",
+     "c": "Choisis trois produits du quotidien et calcule la quantité nécessaire de chacun pour une semaine."
+    },
+    "it": {
+     "t": "Contenitori da viaggio",
+     "g": "Usa flaconi e vasetti ricaricabili che fanno risparmiare spazio e riducono i rifiuti.",
+     "p": [
+      "Travasa i tuoi prodotti preferiti in piccoli flaconi ricaricabili invece di comprare mini formati ogni volta.",
+      "I flaconi in silicone si spremono facilmente; i vasetti sono adatti alle creme; etichetta ognuno.",
+      "Riempi solo quanto serve per il viaggio e lascia un po' d'aria in alto."
+     ],
+     "q": "Preferisci portare i tuoi prodotti o usare quelli che trovi a destinazione?",
+     "c": "Scegli tre prodotti che usi ogni giorno e calcola quanto te ne serve per una settimana."
+    },
+    "pt": {
+     "t": "Embalagens de viagem",
+     "g": "Usa frascos e boiões recarregáveis que poupam espaço e reduzem o desperdício.",
+     "p": [
+      "Passa os teus produtos favoritos para frascos pequenos recarregáveis em vez de comprar minis em cada viagem.",
+      "Os frascos de silicone espremem-se bem; os boiões pequenos servem para cremes; põe etiqueta em cada um.",
+      "Enche só o que a viagem pede e deixa um pouco de ar no topo."
+     ],
+     "q": "Preferes levar os teus produtos ou usar os que encontras no destino?",
+     "c": "Escolhe três produtos de uso diário e calcula quanto precisas de cada um para uma semana."
+    },
+    "pt_BR": {
+     "t": "Frascos de viagem",
+     "g": "Use frascos e potinhos recarregáveis que economizam espaço e reduzem lixo.",
+     "p": [
+      "Passe seus produtos favoritos para frascos pequenos recarregáveis em vez de comprar minis a cada viagem.",
+      "Frascos de silicone são fáceis de apertar; potinhos servem para cremes; coloque etiqueta em cada um.",
+      "Encha só o que a viagem pede e deixe um pouco de ar no topo."
+     ],
+     "q": "Você prefere levar seus produtos ou usar o que encontrar no destino?",
+     "c": "Escolha três produtos de uso diário e calcule quanto precisa de cada um para uma semana."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Solid toiletries",
+     "g": "Discover shampoo bars, solid soap and toothpaste tablets that avoid liquid limits.",
+     "p": [
+      "Solid products are usually not treated as liquids at security, which frees up your clear bag.",
+      "Shampoo bars, conditioner bars, soap and solid deodorant last a long time and cannot leak.",
+      "Carry them in a small tin or container with drainage, and let bars dry between uses so they last."
+     ],
+     "q": "Have you ever tried a shampoo bar or another solid toiletry?",
+     "c": "Pick one liquid in your kit and look for a solid version you could test at home first."
+    },
+    "de": {
+     "t": "Feste Pflegeprodukte",
+     "g": "Entdecke Haarseife, feste Seife und Zahnputztabletten, die Flüssigkeitsgrenzen umgehen.",
+     "p": [
+      "Feste Produkte zählen an der Kontrolle meist nicht als Flüssigkeit und entlasten deinen Zipbeutel.",
+      "Haarseife, feste Spülung, Seife und festes Deo halten lange und können nicht auslaufen.",
+      "Trag sie in einer kleinen Dose mit Abtropfmöglichkeit und lass sie zwischen den Anwendungen trocknen."
+     ],
+     "q": "Hast du schon einmal Haarseife oder ein anderes festes Pflegeprodukt ausprobiert?",
+     "c": "Wähle eine Flüssigkeit aus deinem Set und such eine feste Variante, die du erst zu Hause testest."
+    },
+    "es": {
+     "t": "Productos de aseo sólidos",
+     "g": "Descubre el champú sólido, el jabón en pastilla y la pasta de dientes en tabletas, sin límite de líquidos.",
+     "p": [
+      "En el control, los sólidos no suelen contar como líquidos, así liberas espacio en la bolsa transparente.",
+      "El champú sólido, el acondicionador sólido, el jabón y el desodorante en barra duran mucho y no se derraman.",
+      "Llévalos en una latita o envase con drenaje y deja secar las pastillas entre usos para que duren."
+     ],
+     "q": "¿Has probado alguna vez un champú sólido u otro producto de aseo sólido?",
+     "c": "Elige un líquido de tu neceser y busca una versión sólida para probarla primero en casa."
+    },
+    "fr": {
+     "t": "Les produits de toilette solides",
+     "g": "Découvre shampooing solide, savon et dentifrice en pastilles, qui échappent aux limites de liquides.",
+     "p": [
+      "Au contrôle, les produits solides ne comptent généralement pas comme liquides : ton sac transparent respire.",
+      "Shampooing, après-shampooing, savon et déodorant solides durent longtemps et ne fuient jamais.",
+      "Range-les dans une petite boîte avec égouttoir et laisse-les sécher entre deux usages pour qu'ils durent."
+     ],
+     "q": "As-tu déjà essayé un shampooing solide ou un autre produit de toilette solide ?",
+     "c": "Choisis un liquide de ta trousse et cherche une version solide à tester d'abord chez toi."
+    },
+    "it": {
+     "t": "Prodotti per l'igiene solidi",
+     "g": "Scopri shampoo solido, saponetta e dentifricio in pastiglie, che evitano i limiti sui liquidi.",
+     "p": [
+      "Ai controlli i prodotti solidi di solito non contano come liquidi, così la busta trasparente si libera.",
+      "Shampoo, balsamo, sapone e deodorante solidi durano a lungo e non possono perdere.",
+      "Portali in una scatolina con drenaggio e lasciali asciugare tra un uso e l'altro così durano di più."
+     ],
+     "q": "Hai mai provato uno shampoo solido o un altro prodotto solido per l'igiene?",
+     "c": "Scegli un liquido del tuo kit e cerca una versione solida da provare prima a casa."
+    },
+    "pt": {
+     "t": "Produtos de higiene sólidos",
+     "g": "Descobre o champô sólido, o sabonete e a pasta de dentes em pastilhas, que fogem aos limites de líquidos.",
+     "p": [
+      "No controlo, os sólidos normalmente não contam como líquidos, o que liberta o saco transparente.",
+      "Champô, amaciador, sabonete e desodorizante sólidos duram muito e não podem verter.",
+      "Leva-os numa latinha ou caixa com escoamento e deixa-os secar entre usos para durarem mais."
+     ],
+     "q": "Já experimentaste um champô sólido ou outro produto de higiene sólido?",
+     "c": "Escolhe um líquido da tua bolsa e procura uma versão sólida para experimentar primeiro em casa."
+    },
+    "pt_BR": {
+     "t": "Produtos de higiene sólidos",
+     "g": "Conheça xampu em barra, sabonete e pasta de dente em pastilhas, que escapam do limite de líquidos.",
+     "p": [
+      "Na inspeção, sólidos geralmente não contam como líquidos, o que libera o saquinho transparente.",
+      "Xampu, condicionador, sabonete e desodorante em barra duram muito e não vazam.",
+      "Leve num potinho ou latinha com drenagem e deixe secar entre os usos para durarem mais."
+     ],
+     "q": "Você já experimentou xampu em barra ou outro produto de higiene sólido?",
+     "c": "Escolha um líquido da sua nécessaire e procure uma versão sólida para testar primeiro em casa."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Preventing leaks",
+     "g": "Use tape, plastic wrap and pressure tricks to keep bottles from spilling.",
+     "p": [
+      "Air pressure changes during flights can push liquid out, so squeeze a little air out before closing.",
+      "Put a small square of plastic wrap under the cap, then screw it on, or tape flip-top lids shut.",
+      "Keep all liquids together in one sealed bag, so a leak stays in the bag and not on your clothes."
+     ],
+     "q": "Have you ever opened your bag to find something had leaked everywhere?",
+     "c": "Take one bottle from your kit and leak-proof it with plastic wrap or tape right now."
+    },
+    "de": {
+     "t": "Auslaufen verhindern",
+     "g": "Nutze Klebeband, Frischhaltefolie und Drucktricks, damit nichts ausläuft.",
+     "p": [
+      "Druckänderungen im Flug können Flüssigkeit herausdrücken; drück vor dem Schließen etwas Luft heraus.",
+      "Leg ein Stück Frischhaltefolie unter den Deckel und schraub ihn zu, oder kleb Klappdeckel zu.",
+      "Halte alle Flüssigkeiten in einem verschlossenen Beutel, damit ein Leck im Beutel bleibt."
+     ],
+     "q": "Hast du schon einmal deinen Koffer geöffnet und alles war ausgelaufen?",
+     "c": "Nimm eine Flasche aus deinem Set und mach sie jetzt mit Folie oder Klebeband auslaufsicher."
+    },
+    "es": {
+     "t": "Evitar derrames",
+     "g": "Usa cinta, film transparente y trucos de presión para que los botes no se derramen.",
+     "p": [
+      "Los cambios de presión en vuelo pueden empujar el líquido; aprieta un poco el bote para sacar aire antes de cerrar.",
+      "Pon un cuadradito de film bajo el tapón y enróscalo, o sella con cinta las tapas abatibles.",
+      "Guarda todos los líquidos juntos en una bolsa cerrada: si algo gotea, se queda en la bolsa."
+     ],
+     "q": "¿Alguna vez abriste la maleta y algo se había derramado por todas partes?",
+     "c": "Toma un bote de tu neceser y hazlo a prueba de fugas ahora con film o cinta."
+    },
+    "fr": {
+     "t": "Éviter les fuites",
+     "g": "Utilise ruban adhésif, film alimentaire et astuces de pression pour que rien ne coule.",
+     "p": [
+      "En vol, les changements de pression peuvent pousser le liquide dehors : chasse un peu d'air avant de fermer.",
+      "Place un petit carré de film alimentaire sous le bouchon avant de visser, ou scotche les bouchons à clapet.",
+      "Garde tous les liquides dans un même sac fermé : une fuite reste dans le sac, pas sur tes habits."
+     ],
+     "q": "As-tu déjà ouvert ta valise pour découvrir qu'un flacon avait coulé partout ?",
+     "c": "Prends un flacon de ta trousse et rends-le étanche maintenant avec du film ou du ruban."
+    },
+    "it": {
+     "t": "Evitare le perdite",
+     "g": "Usa nastro adesivo, pellicola e trucchi di pressione per non far fuoriuscire nulla.",
+     "p": [
+      "In volo i cambi di pressione possono spingere fuori il liquido: spremi un po' d'aria prima di chiudere.",
+      "Metti un quadratino di pellicola sotto il tappo prima di avvitarlo, o fissa con nastro i tappi a scatto.",
+      "Tieni tutti i liquidi in una busta chiusa: se qualcosa perde, resta nella busta e non sui vestiti."
+     ],
+     "q": "Ti è mai capitato di aprire la valigia e trovare tutto sporco per una perdita?",
+     "c": "Prendi un flacone del tuo kit e rendilo a prova di perdite adesso con pellicola o nastro."
+    },
+    "pt": {
+     "t": "Evitar derrames",
+     "g": "Usa fita-cola, película aderente e truques de pressão para os frascos não verterem.",
+     "p": [
+      "As mudanças de pressão no voo podem empurrar o líquido; aperta o frasco para tirar ar antes de fechar.",
+      "Põe um quadradinho de película debaixo da tampa e enrosca, ou fecha as tampas de abrir com fita-cola.",
+      "Guarda todos os líquidos juntos num saco fechado: se algo verter, fica no saco e não na roupa."
+     ],
+     "q": "Já abriste a mala e descobriste que algo tinha vertido por todo o lado?",
+     "c": "Pega num frasco da tua bolsa e protege-o já contra fugas com película ou fita-cola."
+    },
+    "pt_BR": {
+     "t": "Evitando vazamentos",
+     "g": "Use fita, filme plástico e truques de pressão para os frascos não vazarem.",
+     "p": [
+      "A mudança de pressão no voo pode empurrar o líquido para fora; aperte o frasco para tirar ar antes de fechar.",
+      "Coloque um quadradinho de filme plástico sob a tampa e rosqueie, ou passe fita nas tampas de abrir.",
+      "Guarde todos os líquidos juntos num saquinho fechado: se algo vazar, fica no saquinho e não na roupa."
+     ],
+     "q": "Você já abriu a mala e encontrou algo vazado por todo lado?",
+     "c": "Pegue um frasco da sua nécessaire e deixe à prova de vazamento agora com filme ou fita."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Skin care on the move",
+     "g": "Pack sunscreen, moisturiser and lip balm for planes, sun and dry air.",
+     "p": [
+      "Cabin air is often very dry, so a small moisturiser and lip balm in your personal item help a lot.",
+      "Sun can be strong in mountains, on water and in snow, so bring sunscreen even when it feels cool.",
+      "Keep your routine simple on the road: cleanse, moisturise, protect from the sun."
+     ],
+     "q": "How does your skin usually feel after a long flight or a day in the sun?",
+     "c": "Put a lip balm and a tiny moisturiser into the bag you carry every day this week."
+    },
+    "de": {
+     "t": "Hautpflege unterwegs",
+     "g": "Pack Sonnencreme, Feuchtigkeitscreme und Lippenpflege für Flugzeug, Sonne und trockene Luft.",
+     "p": [
+      "Kabinenluft ist oft sehr trocken; eine kleine Creme und ein Lippenbalsam in der Tasche helfen viel.",
+      "In Bergen, auf dem Wasser und im Schnee ist die Sonne oft stark; nimm Sonnencreme auch bei Kühle mit.",
+      "Halte die Routine unterwegs einfach: reinigen, eincremen, vor Sonne schützen."
+     ],
+     "q": "Wie fühlt sich deine Haut nach einem langen Flug oder einem Tag in der Sonne meist an?",
+     "c": "Steck diese Woche einen Lippenbalsam und eine kleine Creme in die Tasche, die du täglich trägst."
+    },
+    "es": {
+     "t": "Cuidado de la piel en ruta",
+     "g": "Lleva protector solar, crema hidratante y bálsamo labial para aviones, sol y aire seco.",
+     "p": [
+      "El aire de cabina suele ser muy seco: una crema pequeña y un bálsamo labial en tu bolso ayudan mucho.",
+      "El sol puede ser fuerte en la montaña, en el agua y en la nieve: lleva protector aunque haga fresco.",
+      "Mantén una rutina sencilla en el viaje: limpiar, hidratar y proteger del sol."
+     ],
+     "q": "¿Cómo suele sentirse tu piel tras un vuelo largo o un día al sol?",
+     "c": "Mete esta semana un bálsamo labial y una crema pequeña en el bolso que llevas a diario."
+    },
+    "fr": {
+     "t": "Prendre soin de sa peau en voyage",
+     "g": "Emporte crème solaire, hydratant et baume à lèvres pour l'avion, le soleil et l'air sec.",
+     "p": [
+      "L'air en cabine est souvent très sec : une petite crème et un baume à lèvres dans ton sac aident beaucoup.",
+      "Le soleil peut être fort en montagne, sur l'eau et sur la neige : prends de la crème même s'il fait frais.",
+      "Garde une routine simple en voyage : nettoyer, hydrater, protéger du soleil."
+     ],
+     "q": "Comment se sent ta peau après un long vol ou une journée au soleil ?",
+     "c": "Glisse cette semaine un baume à lèvres et une petite crème dans le sac que tu portes chaque jour."
+    },
+    "it": {
+     "t": "Cura della pelle in viaggio",
+     "g": "Porta crema solare, idratante e burrocacao per aerei, sole e aria secca.",
+     "p": [
+      "L'aria in cabina è spesso molto secca: una piccola crema e un burrocacao in borsa aiutano tanto.",
+      "Il sole può essere forte in montagna, sull'acqua e sulla neve: porta la crema solare anche se fa fresco.",
+      "Tieni una routine semplice in viaggio: detergere, idratare, proteggere dal sole."
+     ],
+     "q": "Come si sente di solito la tua pelle dopo un volo lungo o una giornata al sole?",
+     "c": "Metti questa settimana un burrocacao e una piccola crema nella borsa che porti ogni giorno."
+    },
+    "pt": {
+     "t": "Cuidar da pele em viagem",
+     "g": "Leva protetor solar, hidratante e protetor labial para aviões, sol e ar seco.",
+     "p": [
+      "O ar da cabine costuma ser muito seco: um creme pequeno e um protetor labial no saco ajudam muito.",
+      "O sol pode ser forte na montanha, na água e na neve: leva protetor mesmo que esteja fresco.",
+      "Mantém uma rotina simples em viagem: limpar, hidratar e proteger do sol."
+     ],
+     "q": "Como costuma ficar a tua pele depois de um voo longo ou de um dia ao sol?",
+     "c": "Põe esta semana um protetor labial e um creme pequeno no saco que levas todos os dias."
+    },
+    "pt_BR": {
+     "t": "Cuidando da pele na estrada",
+     "g": "Leve protetor solar, hidratante e protetor labial para avião, sol e ar seco.",
+     "p": [
+      "O ar da cabine costuma ser bem seco: um hidratante pequeno e um protetor labial na bolsa ajudam muito.",
+      "O sol pode ser forte na montanha, na água e na neve: leve protetor mesmo se estiver fresco.",
+      "Mantenha uma rotina simples na viagem: limpar, hidratar e proteger do sol."
+     ],
+     "q": "Como a sua pele costuma ficar depois de um voo longo ou de um dia no sol?",
+     "c": "Coloque esta semana um protetor labial e um hidratante pequeno na bolsa que você usa todo dia."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hair care while travelling",
+     "g": "Choose compact tools and products, and check plug and voltage needs.",
+     "p": [
+      "A small brush or comb, a few hair ties and travel-size products cover most hair routines on the road.",
+      "Many hotels have a hairdryer; check your booking before packing one, since it is bulky.",
+      "If you bring a hair tool, look for dual-voltage models and check the plug type at your destination."
+     ],
+     "q": "What is the hardest part of your hair routine to keep up while travelling?",
+     "c": "Check the label on your hairdryer or straightener and see which voltages it accepts."
+    },
+    "de": {
+     "t": "Haarpflege auf Reisen",
+     "g": "Wähle kompakte Geräte und Produkte und prüfe Stecker und Spannung.",
+     "p": [
+      "Eine kleine Bürste oder ein Kamm, ein paar Haargummis und Reisegrößen decken die meisten Routinen ab.",
+      "Viele Hotels haben einen Föhn; prüf deine Buchung, bevor du einen einpackst, denn er ist sperrig.",
+      "Nimmst du ein Haargerät mit, achte auf Modelle für zwei Spannungen und prüf den Steckertyp am Ziel."
+     ],
+     "q": "Welcher Teil deiner Haarroutine ist auf Reisen am schwierigsten?",
+     "c": "Schau aufs Etikett deines Föhns oder Glätteisens und prüfe, welche Spannungen er verträgt."
+    },
+    "es": {
+     "t": "El cuidado del pelo de viaje",
+     "g": "Elige herramientas y productos compactos, y revisa enchufe y voltaje.",
+     "p": [
+      "Un cepillo o peine pequeño, unas gomas y productos de viaje cubren casi cualquier rutina capilar.",
+      "Muchos hoteles tienen secador; revisa tu reserva antes de llevar uno, porque abulta.",
+      "Si llevas una herramienta para el pelo, busca modelos de doble voltaje y revisa el tipo de enchufe del destino."
+     ],
+     "q": "¿Qué parte de tu rutina de pelo te cuesta más mantener de viaje?",
+     "c": "Mira la etiqueta de tu secador o plancha y comprueba qué voltajes acepta."
+    },
+    "fr": {
+     "t": "Les cheveux en voyage",
+     "g": "Choisis des outils et produits compacts, et vérifie prise et tension.",
+     "p": [
+      "Une petite brosse ou un peigne, quelques élastiques et des formats voyage couvrent la plupart des routines.",
+      "Beaucoup d'hôtels ont un sèche-cheveux ; vérifie ta réservation avant d'en emporter un, c'est encombrant.",
+      "Si tu prends un appareil, choisis un modèle bitension et vérifie le type de prise à destination."
+     ],
+     "q": "Quelle partie de ta routine capillaire est la plus difficile à garder en voyage ?",
+     "c": "Regarde l'étiquette de ton sèche-cheveux ou lisseur et vérifie quelles tensions il accepte."
+    },
+    "it": {
+     "t": "Capelli in viaggio",
+     "g": "Scegli strumenti e prodotti compatti e controlla spina e voltaggio.",
+     "p": [
+      "Una spazzola piccola o un pettine, qualche elastico e formati da viaggio coprono quasi ogni routine.",
+      "Molti hotel hanno l'asciugacapelli: controlla la prenotazione prima di portarne uno, perché ingombra.",
+      "Se porti uno strumento per capelli, scegli un modello a doppio voltaggio e controlla la spina a destinazione."
+     ],
+     "q": "Quale parte della tua routine per i capelli è più difficile da mantenere in viaggio?",
+     "c": "Leggi l'etichetta del tuo phon o della piastra e controlla quali voltaggi accetta."
+    },
+    "pt": {
+     "t": "O cabelo em viagem",
+     "g": "Escolhe utensílios e produtos compactos e confirma a ficha e a voltagem.",
+     "p": [
+      "Uma escova pequena ou pente, uns elásticos e produtos de viagem cobrem quase todas as rotinas.",
+      "Muitos hotéis têm secador; vê a reserva antes de levar um, porque ocupa espaço.",
+      "Se levares um aparelho para o cabelo, procura modelos de dupla voltagem e confirma a ficha no destino."
+     ],
+     "q": "Que parte da tua rotina de cabelo é mais difícil de manter em viagem?",
+     "c": "Vê a etiqueta do teu secador ou alisador e confirma que voltagens aceita."
+    },
+    "pt_BR": {
+     "t": "O cabelo na viagem",
+     "g": "Escolha acessórios e produtos compactos e confira tomada e voltagem.",
+     "p": [
+      "Uma escova pequena ou pente, alguns elásticos e produtos de viagem resolvem quase qualquer rotina.",
+      "Muitos hotéis têm secador; confira a reserva antes de levar um, porque ocupa espaço.",
+      "Se levar um aparelho para o cabelo, prefira modelos bivolt e confira o tipo de tomada no destino."
+     ],
+     "q": "Qual parte da sua rotina de cabelo é mais difícil de manter na viagem?",
+     "c": "Olhe a etiqueta do seu secador ou chapinha e veja quais voltagens ele aceita."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grooming kits",
+     "g": "Pack compact grooming options and know the rules for blades in hand luggage.",
+     "p": [
+      "A small kit might hold nail clippers, tweezers, a razor and a mini mirror, all in one pouch.",
+      "Rules on blades, scissors and razors in hand luggage vary, so check before you fly and pack sharp tools in checked bags if needed.",
+      "A rechargeable or battery shaver avoids blade questions, but check its voltage and charger first."
+     ],
+     "q": "What is in your grooming kit that you would never leave behind?",
+     "c": "Gather your grooming items in one pouch and remove anything you have not used in months."
+    },
+    "de": {
+     "t": "Pflege-Sets",
+     "g": "Pack kompakte Pflegeutensilien und kenne die Regeln für Klingen im Handgepäck.",
+     "p": [
+      "Ein kleines Set kann Nagelknipser, Pinzette, Rasierer und Mini-Spiegel enthalten, alles in einem Etui.",
+      "Regeln zu Klingen, Scheren und Rasierern im Handgepäck variieren; prüf sie und pack Scharfes notfalls in den Koffer.",
+      "Ein Akku- oder Batterierasierer umgeht Klingenfragen, aber prüf vorher Spannung und Ladegerät."
+     ],
+     "q": "Was ist in deinem Pflege-Set, das du nie zurücklassen würdest?",
+     "c": "Sammle deine Pflegeutensilien in einem Etui und sortiere aus, was du seit Monaten nicht benutzt hast."
+    },
+    "es": {
+     "t": "Kits de cuidado personal",
+     "g": "Lleva opciones compactas de cuidado personal y conoce las normas sobre cuchillas en cabina.",
+     "p": [
+      "Un kit pequeño puede llevar cortaúñas, pinzas, maquinilla y un minispejo, todo en un estuche.",
+      "Las normas sobre cuchillas, tijeras y maquinillas en cabina varían: consúltalas y factura lo afilado si hace falta.",
+      "Una afeitadora recargable o a pilas evita dudas con las cuchillas, pero revisa su voltaje y cargador."
+     ],
+     "q": "¿Qué llevas en tu kit de cuidado personal que nunca dejarías atrás?",
+     "c": "Junta tus cosas de cuidado personal en un estuche y saca lo que no hayas usado en meses."
+    },
+    "fr": {
+     "t": "La trousse de soins",
+     "g": "Prends une trousse de soins compacte et connais les règles sur les lames en cabine.",
+     "p": [
+      "Une petite trousse peut contenir coupe-ongles, pince à épiler, rasoir et mini-miroir, dans une seule pochette.",
+      "Les règles sur lames, ciseaux et rasoirs en cabine varient : vérifie-les et mets l'objet tranchant en soute si besoin.",
+      "Un rasoir rechargeable ou à piles évite la question des lames, mais vérifie sa tension et son chargeur."
+     ],
+     "q": "Qu'y a-t-il dans ta trousse de soins que tu ne laisserais jamais derrière toi ?",
+     "c": "Rassemble tes accessoires de soin dans une pochette et retire ce que tu n'as pas utilisé depuis des mois."
+    },
+    "it": {
+     "t": "Il kit per la cura personale",
+     "g": "Porta un kit compatto per la cura personale e conosci le regole sulle lame nel bagaglio a mano.",
+     "p": [
+      "Un piccolo kit può contenere tagliaunghie, pinzette, rasoio e mini specchio, tutto in una pochette.",
+      "Le regole su lame, forbici e rasoi a mano variano: controllale e metti gli oggetti taglienti in stiva se serve.",
+      "Un rasoio ricaricabile o a batterie evita dubbi sulle lame, ma controlla voltaggio e caricatore."
+     ],
+     "q": "Cosa c'è nel tuo kit che non lasceresti mai a casa?",
+     "c": "Raccogli i tuoi accessori in una pochette ed elimina ciò che non usi da mesi."
+    },
+    "pt": {
+     "t": "Kits de cuidado pessoal",
+     "g": "Leva opções compactas de cuidado pessoal e conhece as regras sobre lâminas na bagagem de mão.",
+     "p": [
+      "Um kit pequeno pode levar corta-unhas, pinça, lâmina de barbear e um minispelho, tudo numa bolsinha.",
+      "As regras sobre lâminas, tesouras e lâminas de barbear na cabine variam: confirma e despacha o que corta se preciso.",
+      "Uma máquina recarregável ou a pilhas evita dúvidas com lâminas, mas confirma a voltagem e o carregador."
+     ],
+     "q": "O que tens no teu kit de cuidado pessoal que nunca deixarias para trás?",
+     "c": "Junta os teus artigos de cuidado pessoal numa bolsinha e tira o que não usas há meses."
+    },
+    "pt_BR": {
+     "t": "Kits de cuidados pessoais",
+     "g": "Leve opções compactas de cuidados pessoais e conheça as regras para lâminas na bagagem de mão.",
+     "p": [
+      "Um kit pequeno pode ter cortador de unha, pinça, aparelho de barbear e um espelhinho, tudo num estojo.",
+      "As regras para lâminas, tesouras e aparelhos de barbear na cabine variam: confira e despache o que corta se preciso.",
+      "Um barbeador recarregável ou a pilha evita dúvidas com lâminas, mas confira a voltagem e o carregador."
+     ],
+     "q": "O que tem no seu kit de cuidados pessoais que você nunca deixaria para trás?",
+     "c": "Junte seus itens de cuidados pessoais num estojo e tire o que não usa há meses."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A small first-aid kit",
+     "g": "Put plasters, blister care and basic personal items in a tiny pouch.",
+     "p": [
+      "A mini kit can hold plasters, blister plasters, antiseptic wipes, a few gauze pads and tape.",
+      "New walking routes and shoes often mean blisters, so blister care is one of the most used items.",
+      "Add personal basics you already know work for you, and keep the kit where you can grab it fast."
+     ],
+     "q": "Have you ever needed a plaster or blister care on a trip and not had one?",
+     "c": "Check your home for plasters and blister care and put a small set aside in a travel pouch."
+    },
+    "de": {
+     "t": "Eine kleine Reiseapotheke",
+     "g": "Pack Pflaster, Blasenpflaster und persönliche Basics in ein winziges Etui.",
+     "p": [
+      "Ein Mini-Set kann Pflaster, Blasenpflaster, Desinfektionstücher, ein paar Kompressen und Tape enthalten.",
+      "Neue Wege und Schuhe bringen oft Blasen; Blasenpflaster gehören zu den meistgenutzten Dingen.",
+      "Ergänze persönliche Basics, die sich bei dir bewährt haben, und bewahre das Set griffbereit auf."
+     ],
+     "q": "Hast du auf einer Reise schon einmal ein Pflaster gebraucht und keins gehabt?",
+     "c": "Such zu Hause Pflaster und Blasenpflaster und leg ein kleines Set in ein Reiseetui."
+    },
+    "es": {
+     "t": "Un pequeño botiquín",
+     "g": "Mete tiritas, apósitos para ampollas y lo básico personal en un estuche diminuto.",
+     "p": [
+      "Un minibotiquín puede llevar tiritas, apósitos para ampollas, toallitas antisépticas, gasas y esparadrapo.",
+      "Caminos y zapatos nuevos suelen traer ampollas: los apósitos para ampollas son de lo más usado.",
+      "Añade lo básico personal que ya sabes que te funciona y guarda el botiquín donde lo cojas rápido."
+     ],
+     "q": "¿Alguna vez necesitaste una tirita en un viaje y no tenías?",
+     "c": "Busca en casa tiritas y apósitos para ampollas y aparta un pequeño juego en un estuche de viaje."
+    },
+    "fr": {
+     "t": "Une petite trousse de secours",
+     "g": "Glisse pansements, soins des ampoules et basiques personnels dans une mini pochette.",
+     "p": [
+      "Une mini trousse peut contenir pansements, pansements pour ampoules, lingettes antiseptiques, compresses et sparadrap.",
+      "Nouveaux chemins et nouvelles chaussures donnent souvent des ampoules : ces pansements servent beaucoup.",
+      "Ajoute les basiques personnels qui te conviennent déjà et garde la trousse à portée de main."
+     ],
+     "q": "As-tu déjà eu besoin d'un pansement en voyage sans en avoir ?",
+     "c": "Cherche chez toi des pansements et soins pour ampoules et mets-en un petit lot dans une pochette."
+    },
+    "it": {
+     "t": "Un piccolo kit di pronto soccorso",
+     "g": "Metti cerotti, cerotti per vesciche e le basi personali in una pochette minuscola.",
+     "p": [
+      "Un mini kit può contenere cerotti, cerotti per vesciche, salviette disinfettanti, garze e nastro.",
+      "Percorsi e scarpe nuove portano spesso vesciche: i cerotti per vesciche sono tra le cose più usate.",
+      "Aggiungi le basi personali che sai già funzionare per te e tieni il kit a portata di mano."
+     ],
+     "q": "Ti è mai servito un cerotto in viaggio senza averlo?",
+     "c": "Cerca in casa cerotti e cerotti per vesciche e metti da parte un piccolo set in una pochette."
+    },
+    "pt": {
+     "t": "Um pequeno kit de primeiros socorros",
+     "g": "Põe pensos, pensos para bolhas e o básico pessoal numa bolsinha minúscula.",
+     "p": [
+      "Um mini kit pode ter pensos, pensos para bolhas, toalhitas antissépticas, compressas e adesivo.",
+      "Caminhos e sapatos novos trazem muitas vezes bolhas: os pensos para bolhas são dos mais usados.",
+      "Junta o básico pessoal que já sabes que resulta contigo e guarda o kit sempre à mão."
+     ],
+     "q": "Já precisaste de um penso numa viagem e não tinhas?",
+     "c": "Procura em casa pensos e pensos para bolhas e separa um pequeno conjunto numa bolsinha."
+    },
+    "pt_BR": {
+     "t": "Um pequeno kit de primeiros socorros",
+     "g": "Coloque curativos, protetores para bolhas e o básico pessoal num estojinho.",
+     "p": [
+      "Um mini kit pode ter curativos, protetores para bolhas, lenços antissépticos, gazes e esparadrapo.",
+      "Caminhos e sapatos novos costumam trazer bolhas: protetor para bolhas é dos itens mais usados.",
+      "Inclua o básico pessoal que você já sabe que funciona e deixe o kit sempre à mão."
+     ],
+     "q": "Você já precisou de um curativo numa viagem e não tinha?",
+     "c": "Procure em casa curativos e protetores para bolhas e separe um kit pequeno num estojinho."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personal medicines",
+     "g": "Carry medicines in your carry-on, in original packaging, with enough for the whole trip.",
+     "p": [
+      "Keep medicines in hand luggage so a delayed or lost bag never leaves you without them.",
+      "Original packaging with the label helps at security and borders; some travellers also carry a prescription copy.",
+      "Pack enough for the whole trip plus a few extra days, and check any rules for your destination in advance."
+     ],
+     "q": "How do you usually keep track of things you need every day while travelling?",
+     "c": "Make a note of the personal items you need daily and where they will go in your carry-on."
+    },
+    "de": {
+     "t": "Persönliche Medikamente",
+     "g": "Trag Medikamente im Handgepäck, in der Originalverpackung und in ausreichender Menge.",
+     "p": [
+      "Medikamente gehören ins Handgepäck, damit dich ein verspäteter oder verlorener Koffer nie ohne lässt.",
+      "Die Originalverpackung mit Etikett hilft an Kontrollen und Grenzen; manche haben auch eine Rezeptkopie dabei.",
+      "Pack genug für die ganze Reise plus ein paar Tage extra und prüf vorab eventuelle Regeln am Zielort."
+     ],
+     "q": "Wie behältst du auf Reisen den Überblick über Dinge, die du täglich brauchst?",
+     "c": "Notiere die persönlichen Dinge, die du täglich brauchst, und wo sie im Handgepäck hinkommen."
+    },
+    "es": {
+     "t": "Medicamentos personales",
+     "g": "Lleva los medicamentos en cabina, en su envase original y en cantidad suficiente para todo el viaje.",
+     "p": [
+      "Llévalos en el equipaje de mano para que una maleta retrasada o perdida nunca te deje sin ellos.",
+      "El envase original con etiqueta ayuda en controles y fronteras; hay quien lleva también copia de la receta.",
+      "Lleva para todo el viaje y unos días más, y consulta con antelación las normas del destino."
+     ],
+     "q": "¿Cómo controlas en los viajes las cosas que necesitas cada día?",
+     "c": "Apunta lo personal que necesitas a diario y dónde irá en tu equipaje de mano."
+    },
+    "fr": {
+     "t": "Les médicaments personnels",
+     "g": "Garde tes médicaments en cabine, dans leur emballage d'origine, en quantité suffisante pour tout le séjour.",
+     "p": [
+      "Mets-les en cabine pour qu'un bagage retardé ou perdu ne te laisse jamais sans eux.",
+      "L'emballage d'origine étiqueté aide aux contrôles et frontières ; certains gardent aussi une copie d'ordonnance.",
+      "Prévois assez pour tout le voyage plus quelques jours, et renseigne-toi à l'avance sur les règles du pays."
+     ],
+     "q": "Comment gardes-tu le fil des choses dont tu as besoin chaque jour en voyage ?",
+     "c": "Note les objets personnels dont tu as besoin chaque jour et où ils iront dans ton bagage cabine."
+    },
+    "it": {
+     "t": "I farmaci personali",
+     "g": "Porta i farmaci nel bagaglio a mano, nella confezione originale e in quantità sufficiente.",
+     "p": [
+      "Tienili nel bagaglio a mano, così una valigia in ritardo o persa non ti lascerà mai senza.",
+      "La confezione originale con etichetta aiuta ai controlli e alle frontiere; alcuni portano anche copia della ricetta.",
+      "Portane per tutto il viaggio più qualche giorno extra e informati in anticipo sulle regole della destinazione."
+     ],
+     "q": "Come tieni traccia in viaggio delle cose che ti servono ogni giorno?",
+     "c": "Annota le cose personali che ti servono ogni giorno e dove andranno nel bagaglio a mano."
+    },
+    "pt": {
+     "t": "Medicamentos pessoais",
+     "g": "Leva os medicamentos na bagagem de mão, na embalagem original e em quantidade para toda a viagem.",
+     "p": [
+      "Guarda-os na bagagem de mão para que uma mala atrasada ou perdida nunca te deixe sem eles.",
+      "A embalagem original com rótulo ajuda nos controlos e fronteiras; há quem leve também cópia da receita.",
+      "Leva para toda a viagem e mais uns dias, e informa-te com antecedência sobre as regras do destino."
+     ],
+     "q": "Como controlas em viagem as coisas de que precisas todos os dias?",
+     "c": "Aponta os artigos pessoais de que precisas diariamente e onde vão ficar na bagagem de mão."
+    },
+    "pt_BR": {
+     "t": "Remédios de uso pessoal",
+     "g": "Leve os remédios na bagagem de mão, na embalagem original e na quantidade para a viagem toda.",
+     "p": [
+      "Mantenha na bagagem de mão para que uma mala atrasada ou extraviada nunca deixe você sem eles.",
+      "A embalagem original com rótulo ajuda na inspeção e na fronteira; há quem leve também cópia da receita.",
+      "Leve para a viagem toda e mais alguns dias, e confira com antecedência as regras do destino."
+     ],
+     "q": "Como você controla na viagem as coisas de que precisa todos os dias?",
+     "c": "Anote os itens pessoais de uso diário e onde eles vão ficar na sua bagagem de mão."
+    }
+   }
+  }
+ ]
+}

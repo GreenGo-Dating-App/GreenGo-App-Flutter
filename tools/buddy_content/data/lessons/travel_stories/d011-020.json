@@ -1,0 +1,835 @@
+{
+ "topic": "travel_stories",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weekend getaways count too",
+     "g": "See how small nearby trips can make great, relatable stories.",
+     "p": [
+      "A short trip is easy for listeners to picture and maybe repeat.",
+      "Nearby places can surprise you because you expect nothing.",
+      "Use the same ingredients: place, person, surprise, feeling."
+     ],
+     "q": "What is the best weekend trip you have taken close to home?",
+     "c": "Name one nearby place you have never visited and imagine its story."
+    },
+    "de": {
+     "t": "Auch Wochenendausflüge zählen",
+     "g": "Sieh, wie kleine Ausflüge in der Nähe tolle, nachvollziehbare Geschichten liefern.",
+     "p": [
+      "Einen kurzen Ausflug kann man sich leicht vorstellen und vielleicht nachmachen.",
+      "Orte in der Nähe überraschen oft, weil man nichts erwartet.",
+      "Nutze dieselben Zutaten: Ort, Person, Überraschung, Gefühl."
+     ],
+     "q": "Was war dein schönster Wochenendausflug in der Nähe?",
+     "c": "Nenne einen nahen Ort, an dem du noch nie warst, und stell dir seine Geschichte vor."
+    },
+    "es": {
+     "t": "Las escapadas de fin de semana también cuentan",
+     "g": "Descubre cómo los viajes cortos y cercanos dan historias geniales y fáciles de compartir.",
+     "p": [
+      "Un viaje corto es fácil de imaginar y quizá de repetir.",
+      "Los lugares cercanos sorprenden porque no esperas nada.",
+      "Usa los mismos ingredientes: lugar, persona, sorpresa, emoción."
+     ],
+     "q": "¿Cuál es la mejor escapada de fin de semana que has hecho cerca de casa?",
+     "c": "Nombra un lugar cercano que nunca has visitado e imagina su historia."
+    },
+    "fr": {
+     "t": "Les week-ends comptent aussi",
+     "g": "Vois comment de petites escapades proches donnent des récits savoureux et parlants.",
+     "p": [
+      "Un court voyage est facile à imaginer, et même à refaire.",
+      "Les endroits proches surprennent parce qu'on n'en attend rien.",
+      "Garde les mêmes ingrédients : lieu, personne, surprise, émotion."
+     ],
+     "q": "Quelle est la meilleure escapade de week-end que tu aies faite près de chez toi ?",
+     "c": "Nomme un endroit proche que tu n'as jamais visité et imagine son histoire."
+    },
+    "it": {
+     "t": "Anche i weekend fuori porta contano",
+     "g": "Scopri come piccole gite vicine diventano storie belle e in cui tutti si ritrovano.",
+     "p": [
+      "Una gita breve è facile da immaginare e magari da rifare.",
+      "I posti vicini sorprendono perché non ti aspetti niente.",
+      "Usa gli stessi ingredienti: luogo, persona, sorpresa, emozione."
+     ],
+     "q": "Qual è la gita del weekend più bella che hai fatto vicino a casa?",
+     "c": "Nomina un posto vicino dove non sei mai stato e immagina la sua storia."
+    },
+    "pt": {
+     "t": "As escapadinhas de fim de semana também contam",
+     "g": "Vê como pequenas viagens perto de casa dão histórias ótimas e fáceis de partilhar.",
+     "p": [
+      "Uma viagem curta é fácil de imaginar e talvez de repetir.",
+      "Os sítios perto surpreendem porque não esperas nada.",
+      "Usa os mesmos ingredientes: lugar, pessoa, surpresa, emoção."
+     ],
+     "q": "Qual foi a melhor escapadinha de fim de semana que fizeste perto de casa?",
+     "c": "Diz um sítio perto onde nunca foste e imagina a história dele."
+    },
+    "pt_BR": {
+     "t": "Viagens de fim de semana também contam",
+     "g": "Veja como passeios curtos e perto de casa rendem histórias ótimas e fáceis de compartilhar.",
+     "p": [
+      "Uma viagem curta é fácil de imaginar e talvez de repetir.",
+      "Lugares próximos surpreendem porque você não espera nada.",
+      "Use os mesmos ingredientes: lugar, pessoa, surpresa, emoção."
+     ],
+     "q": "Qual foi a melhor viagem de fim de semana que você fez perto de casa?",
+     "c": "Diga um lugar perto onde você nunca foi e imagine a história dele."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trips from childhood",
+     "g": "Revisit family holidays and school trips and the details children notice.",
+     "p": [
+      "Children notice odd things: a hotel lift, an ice cream flavour, a big dog.",
+      "Retell it through young eyes, then add what you understand now.",
+      "Ask family members what they remember; versions often differ in funny ways."
+     ],
+     "q": "What is a holiday or school trip from childhood that still makes you smile?",
+     "c": "Recall one detail only a child would notice from a childhood trip."
+    },
+    "de": {
+     "t": "Reisen aus der Kindheit",
+     "g": "Denk an Familienurlaube und Klassenfahrten und an die Details, die Kinder bemerken.",
+     "p": [
+      "Kinder bemerken seltsame Dinge: einen Hotelaufzug, eine Eissorte, einen großen Hund.",
+      "Erzähl es mit Kinderaugen und füge hinzu, was du heute verstehst.",
+      "Frag die Familie, woran sie sich erinnert; die Versionen weichen oft lustig ab."
+     ],
+     "q": "Welcher Urlaub oder Schulausflug aus der Kindheit bringt dich heute noch zum Lächeln?",
+     "c": "Erinnere dich an ein Detail einer Kindheitsreise, das nur ein Kind bemerken würde."
+    },
+    "es": {
+     "t": "Viajes de la infancia",
+     "g": "Vuelve a las vacaciones en familia y excursiones escolares y a los detalles que ven los niños.",
+     "p": [
+      "Los niños se fijan en cosas curiosas: el ascensor del hotel, un sabor de helado, un perro grande.",
+      "Cuéntalo con ojos de niño y luego añade lo que entiendes ahora.",
+      "Pregunta a tu familia qué recuerda; las versiones suelen diferir de forma divertida."
+     ],
+     "q": "¿Qué vacaciones o excursión de tu infancia aún te hacen sonreír?",
+     "c": "Recuerda un detalle de un viaje de infancia que solo un niño notaría."
+    },
+    "fr": {
+     "t": "Voyages d'enfance",
+     "g": "Retrouve les vacances en famille et les sorties scolaires, et les détails que voient les enfants.",
+     "p": [
+      "Les enfants remarquent des choses étranges : l'ascenseur de l'hôtel, un parfum de glace, un gros chien.",
+      "Raconte avec des yeux d'enfant, puis ajoute ce que tu comprends aujourd'hui.",
+      "Demande à ta famille ce qu'elle en garde ; les versions diffèrent souvent de façon drôle."
+     ],
+     "q": "Quelles vacances ou quelle sortie scolaire d'enfance te font encore sourire ?",
+     "c": "Retrouve un détail d'un voyage d'enfance que seul un enfant remarquerait."
+    },
+    "it": {
+     "t": "Viaggi dell'infanzia",
+     "g": "Ripensa alle vacanze in famiglia, alle gite scolastiche e ai dettagli che notano i bambini.",
+     "p": [
+      "I bambini notano cose buffe: l'ascensore dell'albergo, un gusto di gelato, un cane enorme.",
+      "Raccontalo con gli occhi di un bambino, poi aggiungi ciò che capisci oggi.",
+      "Chiedi ai familiari cosa ricordano; le versioni spesso differiscono in modo divertente."
+     ],
+     "q": "Quale vacanza o gita scolastica dell'infanzia ti fa ancora sorridere?",
+     "c": "Ricorda un dettaglio di un viaggio d'infanzia che solo un bambino noterebbe."
+    },
+    "pt": {
+     "t": "Viagens de infância",
+     "g": "Revisita as férias em família e as visitas de estudo e os pormenores que as crianças notam.",
+     "p": [
+      "As crianças reparam em coisas curiosas: o elevador do hotel, um sabor de gelado, um cão enorme.",
+      "Conta com olhos de criança e depois junta o que percebes agora.",
+      "Pergunta à família do que se lembra; as versões diferem muitas vezes de forma engraçada."
+     ],
+     "q": "Que férias ou visita de estudo da infância ainda te fazem sorrir?",
+     "c": "Lembra-te de um pormenor de uma viagem de infância que só uma criança notaria."
+    },
+    "pt_BR": {
+     "t": "Viagens da infância",
+     "g": "Relembre as férias em família, as excursões da escola e os detalhes que as crianças percebem.",
+     "p": [
+      "Crianças reparam em coisas curiosas: o elevador do hotel, um sabor de sorvete, um cachorro enorme.",
+      "Conte com olhos de criança e depois acrescente o que você entende hoje.",
+      "Pergunte à família do que ela lembra; as versões costumam ser diferentes de um jeito engraçado."
+     ],
+     "q": "Que férias ou excursão da infância ainda fazem você sorrir?",
+     "c": "Lembre um detalhe de uma viagem da infância que só uma criança perceberia."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting there: transport tales",
+     "g": "Use trains, buses, ferries and flights as the setting of a story.",
+     "p": [
+      "The journey itself often holds the best scenes: delays, views, neighbours.",
+      "Each transport has its own mood: the rocking ferry, the quiet night train.",
+      "Mention one detail of the vehicle to place the listener inside it."
+     ],
+     "q": "Which journey to a destination was more memorable than the destination?",
+     "c": "Describe one trip by its transport only: seat, window, sounds."
+    },
+    "de": {
+     "t": "Die Anreise: Geschichten unterwegs",
+     "g": "Nutze Züge, Busse, Fähren und Flüge als Schauplatz einer Geschichte.",
+     "p": [
+      "Die Fahrt selbst hat oft die besten Szenen: Verspätungen, Aussichten, Sitznachbarn.",
+      "Jedes Verkehrsmittel hat seine Stimmung: die schaukelnde Fähre, der stille Nachtzug.",
+      "Nenne ein Detail des Fahrzeugs, damit der Zuhörer mittendrin sitzt."
+     ],
+     "q": "Welche Anreise war spannender als das Reiseziel selbst?",
+     "c": "Beschreibe eine Reise nur über ihr Verkehrsmittel: Sitz, Fenster, Geräusche."
+    },
+    "es": {
+     "t": "Llegar allí: historias de transporte",
+     "g": "Usa trenes, autobuses, ferris y vuelos como escenario de una historia.",
+     "p": [
+      "El trayecto suele tener las mejores escenas: retrasos, vistas, compañeros de asiento.",
+      "Cada transporte tiene su ambiente: el ferri que se balancea, el tren nocturno silencioso.",
+      "Menciona un detalle del vehículo para meter al oyente dentro."
+     ],
+     "q": "¿Qué trayecto fue más memorable que el propio destino?",
+     "c": "Describe un viaje solo por su transporte: asiento, ventanilla, sonidos."
+    },
+    "fr": {
+     "t": "Le trajet : histoires de transport",
+     "g": "Utilise trains, bus, ferries et avions comme décor d'une histoire.",
+     "p": [
+      "Le trajet contient souvent les meilleures scènes : retards, paysages, voisins de siège.",
+      "Chaque transport a son ambiance : le ferry qui tangue, le train de nuit silencieux.",
+      "Cite un détail du véhicule pour installer l'auditeur à l'intérieur."
+     ],
+     "q": "Quel trajet a été plus mémorable que la destination elle-même ?",
+     "c": "Décris un voyage uniquement par son transport : siège, fenêtre, bruits."
+    },
+    "it": {
+     "t": "Arrivarci: storie di trasporti",
+     "g": "Usa treni, autobus, traghetti e voli come ambientazione di una storia.",
+     "p": [
+      "Il viaggio stesso ha spesso le scene migliori: ritardi, panorami, vicini di posto.",
+      "Ogni mezzo ha la sua atmosfera: il traghetto che dondola, il treno notturno silenzioso.",
+      "Cita un dettaglio del mezzo per far sedere chi ascolta lì dentro."
+     ],
+     "q": "Quale tragitto è stato più memorabile della meta stessa?",
+     "c": "Descrivi un viaggio solo attraverso il mezzo: posto, finestrino, suoni."
+    },
+    "pt": {
+     "t": "Chegar lá: histórias de transportes",
+     "g": "Usa comboios, autocarros, ferries e voos como cenário de uma história.",
+     "p": [
+      "O caminho tem muitas vezes as melhores cenas: atrasos, vistas, vizinhos de lugar.",
+      "Cada transporte tem o seu ambiente: o ferry a balançar, o comboio noturno silencioso.",
+      "Refere um pormenor do veículo para pôr quem ouve lá dentro."
+     ],
+     "q": "Que viagem até um destino foi mais memorável do que o próprio destino?",
+     "c": "Descreve uma viagem só pelo transporte: lugar, janela, sons."
+    },
+    "pt_BR": {
+     "t": "Chegando lá: histórias de transporte",
+     "g": "Use trens, ônibus, balsas e voos como cenário de uma história.",
+     "p": [
+      "O trajeto costuma ter as melhores cenas: atrasos, paisagens, vizinhos de poltrona.",
+      "Cada transporte tem seu clima: a balsa balançando, o trem noturno silencioso.",
+      "Cite um detalhe do veículo para colocar quem ouve lá dentro."
+     ],
+     "q": "Qual trajeto foi mais marcante do que o próprio destino?",
+     "c": "Descreva uma viagem só pelo transporte: poltrona, janela, sons."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first night somewhere new",
+     "g": "Capture arrival feelings, unfamiliar rooms and the first walk around the block.",
+     "p": [
+      "The first night mixes tiredness, excitement and a little confusion.",
+      "Strange details stand out: a new light switch, street noises, the view.",
+      "The first short walk often gives you the first real image of a place."
+     ],
+     "q": "What do you usually do on your first evening in a new place?",
+     "c": "Recall your first night somewhere new and name the first thing you noticed."
+    },
+    "de": {
+     "t": "Die erste Nacht an einem neuen Ort",
+     "g": "Halte Ankunftsgefühle, fremde Zimmer und den ersten Spaziergang um den Block fest.",
+     "p": [
+      "Die erste Nacht mischt Müdigkeit, Aufregung und ein bisschen Verwirrung.",
+      "Fremde Details fallen auf: ein neuer Lichtschalter, Straßengeräusche, die Aussicht.",
+      "Der erste kleine Spaziergang liefert oft das erste echte Bild eines Ortes."
+     ],
+     "q": "Was machst du meist an deinem ersten Abend an einem neuen Ort?",
+     "c": "Erinnere dich an eine erste Nacht an einem neuen Ort und nenne, was dir zuerst auffiel."
+    },
+    "es": {
+     "t": "La primera noche en un lugar nuevo",
+     "g": "Captura las emociones de la llegada, las habitaciones extrañas y el primer paseo por la zona.",
+     "p": [
+      "La primera noche mezcla cansancio, ilusión y un poco de despiste.",
+      "Los detalles raros destacan: un interruptor distinto, ruidos de la calle, las vistas.",
+      "El primer paseo corto suele darte la primera imagen real del lugar."
+     ],
+     "q": "¿Qué sueles hacer tu primera noche en un sitio nuevo?",
+     "c": "Recuerda tu primera noche en un lugar nuevo y di lo primero que notaste."
+    },
+    "fr": {
+     "t": "La première nuit dans un nouvel endroit",
+     "g": "Capte les émotions de l'arrivée, les chambres inconnues et le premier tour du quartier.",
+     "p": [
+      "La première nuit mêle fatigue, excitation et un peu de désorientation.",
+      "Les détails étranges ressortent : un interrupteur différent, les bruits de la rue, la vue.",
+      "La première petite balade donne souvent la première vraie image d'un lieu."
+     ],
+     "q": "Que fais-tu d'habitude le premier soir dans un nouvel endroit ?",
+     "c": "Repense à une première nuit ailleurs et nomme la première chose que tu as remarquée."
+    },
+    "it": {
+     "t": "La prima notte in un posto nuovo",
+     "g": "Cattura le emozioni dell'arrivo, le stanze sconosciute e il primo giro dell'isolato.",
+     "p": [
+      "La prima notte mescola stanchezza, entusiasmo e un po' di confusione.",
+      "I dettagli strani saltano all'occhio: un interruttore diverso, i rumori della strada, la vista.",
+      "La prima breve passeggiata spesso ti regala la prima vera immagine di un luogo."
+     ],
+     "q": "Cosa fai di solito la prima sera in un posto nuovo?",
+     "c": "Ripensa a una prima notte in un posto nuovo e di' la prima cosa che hai notato."
+    },
+    "pt": {
+     "t": "A primeira noite num sítio novo",
+     "g": "Capta as emoções da chegada, os quartos desconhecidos e a primeira volta ao quarteirão.",
+     "p": [
+      "A primeira noite mistura cansaço, entusiasmo e alguma confusão.",
+      "Os pormenores estranhos destacam-se: um interruptor diferente, os ruídos da rua, a vista.",
+      "O primeiro passeio curto costuma dar-te a primeira imagem real do lugar."
+     ],
+     "q": "O que costumas fazer na primeira noite num sítio novo?",
+     "c": "Lembra-te de uma primeira noite num sítio novo e diz a primeira coisa que notaste."
+    },
+    "pt_BR": {
+     "t": "A primeira noite em um lugar novo",
+     "g": "Capture as emoções da chegada, os quartos desconhecidos e a primeira volta no quarteirão.",
+     "p": [
+      "A primeira noite mistura cansaço, empolgação e um pouco de confusão.",
+      "Detalhes estranhos chamam atenção: um interruptor diferente, os barulhos da rua, a vista.",
+      "A primeira caminhada curta costuma dar a primeira imagem real do lugar."
+     ],
+     "q": "O que você costuma fazer na primeira noite em um lugar novo?",
+     "c": "Lembre uma primeira noite em um lugar novo e diga a primeira coisa que você notou."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food you tried for the first time",
+     "g": "Tell a story around a dish: its taste, the place and who served it.",
+     "p": [
+      "Describe the taste with simple contrasts: sweet and spicy, crunchy and soft.",
+      "The person who served it often makes the story: a smiling cook, a proud host.",
+      "Include your reaction honestly, even if you were unsure at first."
+     ],
+     "q": "What is a dish you tried for the first time on a trip?",
+     "c": "Describe a new food you once tried using one taste word and one texture word."
+    },
+    "de": {
+     "t": "Essen, das du zum ersten Mal probiert hast",
+     "g": "Erzähl eine Geschichte rund um ein Gericht: Geschmack, Ort und wer es serviert hat.",
+     "p": [
+      "Beschreibe den Geschmack mit einfachen Gegensätzen: süß und scharf, knusprig und weich.",
+      "Die Person, die es serviert hat, macht oft die Geschichte: ein lächelnder Koch, ein stolzer Gastgeber.",
+      "Erzähl ehrlich von deiner Reaktion, auch wenn du anfangs unsicher warst."
+     ],
+     "q": "Welches Gericht hast du auf einer Reise zum ersten Mal probiert?",
+     "c": "Beschreibe ein neues Essen mit einem Geschmackswort und einem Wort für die Textur."
+    },
+    "es": {
+     "t": "Comida que probaste por primera vez",
+     "g": "Cuenta una historia alrededor de un plato: su sabor, el lugar y quién te lo sirvió.",
+     "p": [
+      "Describe el sabor con contrastes simples: dulce y picante, crujiente y suave.",
+      "Quien lo sirvió suele hacer la historia: una cocinera sonriente, un anfitrión orgulloso.",
+      "Cuenta tu reacción con sinceridad, aunque al principio dudaras."
+     ],
+     "q": "¿Qué plato probaste por primera vez en un viaje?",
+     "c": "Describe una comida nueva que probaste con una palabra de sabor y otra de textura."
+    },
+    "fr": {
+     "t": "Un plat goûté pour la première fois",
+     "g": "Raconte une histoire autour d'un plat : son goût, le lieu et qui te l'a servi.",
+     "p": [
+      "Décris le goût avec des contrastes simples : sucré et épicé, croquant et fondant.",
+      "La personne qui l'a servi fait souvent l'histoire : une cuisinière souriante, un hôte fier.",
+      "Raconte ta réaction honnêtement, même si tu hésitais au début."
+     ],
+     "q": "Quel plat as-tu goûté pour la première fois en voyage ?",
+     "c": "Décris un nouveau plat goûté un jour avec un mot de goût et un mot de texture."
+    },
+    "it": {
+     "t": "Cibo assaggiato per la prima volta",
+     "g": "Racconta una storia intorno a un piatto: il sapore, il luogo e chi te l'ha servito.",
+     "p": [
+      "Descrivi il sapore con contrasti semplici: dolce e piccante, croccante e morbido.",
+      "Chi l'ha servito spesso fa la storia: una cuoca sorridente, un padrone di casa orgoglioso.",
+      "Racconta la tua reazione con sincerità, anche se all'inizio eri incerto."
+     ],
+     "q": "Quale piatto hai assaggiato per la prima volta in viaggio?",
+     "c": "Descrivi un cibo nuovo che hai provato con una parola di sapore e una di consistenza."
+    },
+    "pt": {
+     "t": "Comida que provaste pela primeira vez",
+     "g": "Conta uma história à volta de um prato: o sabor, o lugar e quem o serviu.",
+     "p": [
+      "Descreve o sabor com contrastes simples: doce e picante, estaladiço e macio.",
+      "Quem o serviu costuma fazer a história: uma cozinheira sorridente, um anfitrião orgulhoso.",
+      "Conta a tua reação com sinceridade, mesmo que no início tivesses dúvidas."
+     ],
+     "q": "Que prato provaste pela primeira vez numa viagem?",
+     "c": "Descreve uma comida nova que provaste com uma palavra de sabor e outra de textura."
+    },
+    "pt_BR": {
+     "t": "Comida que você provou pela primeira vez",
+     "g": "Conte uma história em torno de um prato: o sabor, o lugar e quem serviu.",
+     "p": [
+      "Descreva o sabor com contrastes simples: doce e picante, crocante e macio.",
+      "Quem serviu costuma fazer a história: uma cozinheira sorridente, um anfitrião orgulhoso.",
+      "Conte sua reação com sinceridade, mesmo que no começo você tenha ficado em dúvida."
+     ],
+     "q": "Que prato você provou pela primeira vez em uma viagem?",
+     "c": "Descreva uma comida nova que você provou com uma palavra de sabor e outra de textura."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lost and found moments",
+     "g": "Turn getting a little lost into a story about what you discovered along the way.",
+     "p": [
+      "Getting lost gives a story natural tension: where am I?",
+      "The reward is the discovery: a hidden café, a quiet square, a kind local.",
+      "Describe how you found your way back; that is your ending."
+     ],
+     "q": "Have you ever got lost somewhere and found something wonderful?",
+     "c": "Recall one time you took a wrong turn and name what you found because of it."
+    },
+    "de": {
+     "t": "Verirrt und gefunden",
+     "g": "Mach aus dem kleinen Verlaufen eine Geschichte über das, was du dabei entdeckt hast.",
+     "p": [
+      "Sich verlaufen gibt einer Geschichte natürliche Spannung: Wo bin ich?",
+      "Die Belohnung ist die Entdeckung: ein verstecktes Café, ein stiller Platz, ein freundlicher Einheimischer.",
+      "Erzähl, wie du zurückgefunden hast; das ist dein Schluss."
+     ],
+     "q": "Hast du dich schon einmal verlaufen und dabei etwas Wunderbares gefunden?",
+     "c": "Denk an einen falschen Abzweig und nenne, was du dadurch entdeckt hast."
+    },
+    "es": {
+     "t": "Momentos de perderse y encontrar",
+     "g": "Convierte el perderte un poco en una historia sobre lo que descubriste por el camino.",
+     "p": [
+      "Perderse da tensión natural a una historia: ¿dónde estoy?",
+      "La recompensa es el hallazgo: un café escondido, una plaza tranquila, alguien amable.",
+      "Cuenta cómo encontraste el camino de vuelta; ese es tu final."
+     ],
+     "q": "¿Alguna vez te perdiste y encontraste algo maravilloso?",
+     "c": "Recuerda una vez que giraste mal y di qué encontraste gracias a eso."
+    },
+    "fr": {
+     "t": "Perdu, puis trouvé",
+     "g": "Transforme le fait de te perdre un peu en récit de ce que tu as découvert en chemin.",
+     "p": [
+      "Se perdre donne une tension naturelle à l'histoire : où suis-je ?",
+      "La récompense, c'est la découverte : un café caché, une place calme, un habitant gentil.",
+      "Raconte comment tu as retrouvé ton chemin : c'est ta fin."
+     ],
+     "q": "T'es-tu déjà perdu quelque part en trouvant quelque chose de merveilleux ?",
+     "c": "Repense à une mauvaise direction prise et nomme ce que tu as trouvé grâce à elle."
+    },
+    "it": {
+     "t": "Momenti persi e ritrovati",
+     "g": "Trasforma il perderti un po' in una storia su ciò che hai scoperto lungo la strada.",
+     "p": [
+      "Perdersi dà alla storia una tensione naturale: dove sono?",
+      "La ricompensa è la scoperta: un bar nascosto, una piazzetta tranquilla, un abitante gentile.",
+      "Racconta come hai ritrovato la strada: è il tuo finale."
+     ],
+     "q": "Ti sei mai perso da qualche parte trovando qualcosa di meraviglioso?",
+     "c": "Ricorda una volta che hai sbagliato strada e di' cosa hai trovato grazie a quello."
+    },
+    "pt": {
+     "t": "Momentos de perder e encontrar",
+     "g": "Transforma o perderes-te um pouco numa história sobre o que descobriste pelo caminho.",
+     "p": [
+      "Perder-se dá tensão natural à história: onde é que eu estou?",
+      "A recompensa é a descoberta: um café escondido, uma praça sossegada, alguém simpático.",
+      "Conta como encontraste o caminho de volta; esse é o teu final."
+     ],
+     "q": "Já te perdeste algures e encontraste algo maravilhoso?",
+     "c": "Lembra-te de uma vez que viraste mal e diz o que encontraste por causa disso."
+    },
+    "pt_BR": {
+     "t": "Momentos de se perder e achar",
+     "g": "Transforme o se perder um pouco em uma história sobre o que você descobriu pelo caminho.",
+     "p": [
+      "Se perder dá tensão natural à história: onde eu estou?",
+      "A recompensa é a descoberta: um café escondido, uma praça tranquila, alguém gentil.",
+      "Conte como você achou o caminho de volta; esse é o seu final."
+     ],
+     "q": "Você já se perdeu em algum lugar e encontrou algo maravilhoso?",
+     "c": "Lembre uma vez que você virou errado e diga o que encontrou por causa disso."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A kind stranger",
+     "g": "Remember someone who helped you on a trip and tell their part well.",
+     "p": [
+      "Give the stranger a small description: their hat, their smile, their bike.",
+      "Say exactly what they did; small acts make big stories.",
+      "Share how it felt and what it taught you about the place."
+     ],
+     "q": "Who is a stranger that helped you on a trip, and what did they do?",
+     "c": "Tell the story of one kind stranger in four sentences."
+    },
+    "de": {
+     "t": "Ein freundlicher Fremder",
+     "g": "Erinnere dich an jemanden, der dir auf einer Reise geholfen hat, und erzähl seinen Teil gut.",
+     "p": [
+      "Beschreib die Person kurz: ihr Hut, ihr Lächeln, ihr Fahrrad.",
+      "Sag genau, was sie getan hat; kleine Gesten ergeben große Geschichten.",
+      "Erzähl, wie es sich anfühlte und was es dir über den Ort gezeigt hat."
+     ],
+     "q": "Welcher Fremde hat dir auf einer Reise geholfen, und was hat er getan?",
+     "c": "Erzähl die Geschichte eines freundlichen Fremden in vier Sätzen."
+    },
+    "es": {
+     "t": "Un desconocido amable",
+     "g": "Recuerda a alguien que te ayudó en un viaje y cuenta bien su parte.",
+     "p": [
+      "Describe un poco a esa persona: su sombrero, su sonrisa, su bici.",
+      "Di exactamente qué hizo; los gestos pequeños dan grandes historias.",
+      "Comparte cómo te sentiste y qué te enseñó del lugar."
+     ],
+     "q": "¿Qué desconocido te ayudó en un viaje y qué hizo?",
+     "c": "Cuenta la historia de un desconocido amable en cuatro frases."
+    },
+    "fr": {
+     "t": "Un inconnu bienveillant",
+     "g": "Souviens-toi de quelqu'un qui t'a aidé en voyage et raconte bien son rôle.",
+     "p": [
+      "Décris un peu cette personne : son chapeau, son sourire, son vélo.",
+      "Dis exactement ce qu'elle a fait ; les petits gestes font les grandes histoires.",
+      "Partage ce que tu as ressenti et ce que cela t'a appris sur le lieu."
+     ],
+     "q": "Quel inconnu t'a aidé en voyage, et qu'a-t-il fait ?",
+     "c": "Raconte l'histoire d'un inconnu bienveillant en quatre phrases."
+    },
+    "it": {
+     "t": "Uno sconosciuto gentile",
+     "g": "Ricorda qualcuno che ti ha aiutato in viaggio e racconta bene la sua parte.",
+     "p": [
+      "Descrivi un po' la persona: il cappello, il sorriso, la bici.",
+      "Di' esattamente cosa ha fatto; i piccoli gesti fanno grandi storie.",
+      "Racconta come ti sei sentito e cosa ti ha insegnato del luogo."
+     ],
+     "q": "Quale sconosciuto ti ha aiutato in viaggio e cosa ha fatto?",
+     "c": "Racconta la storia di uno sconosciuto gentile in quattro frasi."
+    },
+    "pt": {
+     "t": "Um desconhecido simpático",
+     "g": "Lembra-te de alguém que te ajudou numa viagem e conta bem o papel dessa pessoa.",
+     "p": [
+      "Descreve um pouco a pessoa: o chapéu, o sorriso, a bicicleta.",
+      "Diz exatamente o que fez; pequenos gestos dão grandes histórias.",
+      "Partilha o que sentiste e o que isso te ensinou sobre o lugar."
+     ],
+     "q": "Que desconhecido te ajudou numa viagem e o que fez?",
+     "c": "Conta a história de um desconhecido simpático em quatro frases."
+    },
+    "pt_BR": {
+     "t": "Um desconhecido gentil",
+     "g": "Lembre alguém que ajudou você em uma viagem e conte bem a parte dessa pessoa.",
+     "p": [
+      "Descreva um pouco a pessoa: o chapéu, o sorriso, a bicicleta.",
+      "Diga exatamente o que ela fez; pequenos gestos rendem grandes histórias.",
+      "Conte como você se sentiu e o que isso ensinou sobre o lugar."
+     ],
+     "q": "Qual desconhecido ajudou você em uma viagem e o que ele fez?",
+     "c": "Conte a história de um desconhecido gentil em quatro frases."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weather that changed the plan",
+     "g": "Tell how rain, heat or snow turned an ordinary day into a story.",
+     "p": [
+      "Weather is a free plot twist: the plan breaks, something new begins.",
+      "Describe the weather with the body: soaked shoes, sunburnt nose, cold fingers.",
+      "Focus on what you did instead; that is usually the best part."
+     ],
+     "q": "When did the weather completely change your plans on a trip?",
+     "c": "Recall one weather surprise and say what you ended up doing instead."
+    },
+    "de": {
+     "t": "Wetter, das den Plan änderte",
+     "g": "Erzähl, wie Regen, Hitze oder Schnee einen normalen Tag in eine Geschichte verwandelt haben.",
+     "p": [
+      "Wetter ist eine kostenlose Wendung: Der Plan platzt, etwas Neues beginnt.",
+      "Beschreib das Wetter mit dem Körper: nasse Schuhe, Sonnenbrand auf der Nase, kalte Finger.",
+      "Konzentrier dich darauf, was du stattdessen gemacht hast; das ist meist das Beste."
+     ],
+     "q": "Wann hat das Wetter deine Reisepläne komplett geändert?",
+     "c": "Denk an eine Wetterüberraschung und sag, was du stattdessen gemacht hast."
+    },
+    "es": {
+     "t": "El tiempo que cambió los planes",
+     "g": "Cuenta cómo la lluvia, el calor o la nieve convirtieron un día normal en una historia.",
+     "p": [
+      "El tiempo es un giro gratis: el plan se rompe y empieza algo nuevo.",
+      "Describe el tiempo con el cuerpo: zapatos empapados, nariz quemada, dedos helados.",
+      "Céntrate en lo que hiciste en su lugar; suele ser lo mejor."
+     ],
+     "q": "¿Cuándo cambió el tiempo por completo tus planes de viaje?",
+     "c": "Recuerda una sorpresa del tiempo y di qué acabaste haciendo en su lugar."
+    },
+    "fr": {
+     "t": "La météo qui a changé le programme",
+     "g": "Raconte comment la pluie, la chaleur ou la neige ont fait d'une journée ordinaire une histoire.",
+     "p": [
+      "La météo est un rebondissement gratuit : le plan tombe à l'eau, autre chose commence.",
+      "Décris le temps avec le corps : chaussures trempées, nez brûlé, doigts gelés.",
+      "Concentre-toi sur ce que tu as fait à la place ; c'est souvent le meilleur."
+     ],
+     "q": "Quand la météo a-t-elle complètement changé tes plans en voyage ?",
+     "c": "Repense à une surprise météo et dis ce que tu as fini par faire à la place."
+    },
+    "it": {
+     "t": "Il tempo che ha cambiato i piani",
+     "g": "Racconta come pioggia, caldo o neve hanno trasformato un giorno normale in una storia.",
+     "p": [
+      "Il meteo è un colpo di scena gratis: il piano salta, comincia qualcosa di nuovo.",
+      "Descrivi il tempo con il corpo: scarpe fradice, naso scottato, dita gelate.",
+      "Concentrati su cosa hai fatto invece; di solito è la parte migliore."
+     ],
+     "q": "Quando il tempo ha cambiato del tutto i tuoi piani di viaggio?",
+     "c": "Ricorda una sorpresa del meteo e di' cosa hai finito per fare al suo posto."
+    },
+    "pt": {
+     "t": "O tempo que mudou os planos",
+     "g": "Conta como a chuva, o calor ou a neve transformaram um dia normal numa história.",
+     "p": [
+      "O tempo é uma reviravolta grátis: o plano cai e começa algo novo.",
+      "Descreve o tempo com o corpo: sapatos encharcados, nariz queimado, dedos gelados.",
+      "Concentra-te no que fizeste em vez disso; costuma ser a melhor parte."
+     ],
+     "q": "Quando é que o tempo mudou completamente os teus planos numa viagem?",
+     "c": "Lembra-te de uma surpresa do tempo e diz o que acabaste por fazer em vez disso."
+    },
+    "pt_BR": {
+     "t": "O clima que mudou os planos",
+     "g": "Conte como chuva, calor ou neve transformaram um dia comum em uma história.",
+     "p": [
+      "O clima é uma reviravolta grátis: o plano cai e algo novo começa.",
+      "Descreva o clima com o corpo: tênis encharcado, nariz queimado, dedos gelados.",
+      "Foque no que você fez no lugar; costuma ser a melhor parte."
+     ],
+     "q": "Quando o clima mudou completamente seus planos em uma viagem?",
+     "c": "Lembre uma surpresa do clima e diga o que você acabou fazendo no lugar."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Souvenirs and their stories",
+     "g": "Use objects you brought home as doorways to the memories attached to them.",
+     "p": [
+      "A souvenir is a story in your pocket: where, from whom, why that one.",
+      "The cheapest objects often hold the richest stories: a ticket, a pebble.",
+      "Start with the object, then travel back to the moment you got it."
+     ],
+     "q": "Which souvenir in your home has the best story behind it?",
+     "c": "Pick up one souvenir today and tell its story in three sentences."
+    },
+    "de": {
+     "t": "Souvenirs und ihre Geschichten",
+     "g": "Nutze mitgebrachte Gegenstände als Türen zu den Erinnerungen, die an ihnen hängen.",
+     "p": [
+      "Ein Souvenir ist eine Geschichte für die Tasche: wo, von wem, warum genau das.",
+      "Die billigsten Dinge haben oft die reichsten Geschichten: ein Ticket, ein Kieselstein.",
+      "Fang beim Gegenstand an und reise zurück zum Moment, als du ihn bekamst."
+     ],
+     "q": "Welches Souvenir bei dir zu Hause hat die beste Geschichte?",
+     "c": "Nimm heute ein Souvenir in die Hand und erzähl seine Geschichte in drei Sätzen."
+    },
+    "es": {
+     "t": "Recuerdos y sus historias",
+     "g": "Usa los objetos que trajiste a casa como puertas a los recuerdos que guardan.",
+     "p": [
+      "Un recuerdo es una historia de bolsillo: dónde, de quién, por qué ese.",
+      "Los objetos más baratos suelen guardar las mejores historias: un billete, una piedrita.",
+      "Empieza por el objeto y viaja atrás hasta el momento en que lo conseguiste."
+     ],
+     "q": "¿Qué recuerdo de viaje en tu casa tiene la mejor historia?",
+     "c": "Coge hoy un recuerdo de viaje y cuenta su historia en tres frases."
+    },
+    "fr": {
+     "t": "Les souvenirs et leurs histoires",
+     "g": "Fais des objets rapportés des portes vers les souvenirs qu'ils contiennent.",
+     "p": [
+      "Un souvenir, c'est une histoire de poche : où, de qui, pourquoi celui-là.",
+      "Les objets les moins chers cachent souvent les plus belles histoires : un ticket, un galet.",
+      "Pars de l'objet, puis remonte jusqu'au moment où tu l'as eu."
+     ],
+     "q": "Quel souvenir chez toi a la plus belle histoire ?",
+     "c": "Prends un souvenir aujourd'hui et raconte son histoire en trois phrases."
+    },
+    "it": {
+     "t": "I souvenir e le loro storie",
+     "g": "Usa gli oggetti portati a casa come porte verso i ricordi legati a loro.",
+     "p": [
+      "Un souvenir è una storia tascabile: dove, da chi, perché proprio quello.",
+      "Gli oggetti più economici hanno spesso le storie più ricche: un biglietto, un sassolino.",
+      "Parti dall'oggetto e torna indietro al momento in cui l'hai preso."
+     ],
+     "q": "Quale souvenir a casa tua ha la storia più bella?",
+     "c": "Prendi oggi un souvenir e racconta la sua storia in tre frasi."
+    },
+    "pt": {
+     "t": "As recordações e as suas histórias",
+     "g": "Usa os objetos que trouxeste para casa como portas para as memórias que guardam.",
+     "p": [
+      "Uma recordação é uma história de bolso: onde, de quem, porquê aquela.",
+      "Os objetos mais baratos guardam muitas vezes as melhores histórias: um bilhete, uma pedrinha.",
+      "Começa pelo objeto e viaja até ao momento em que o conseguiste."
+     ],
+     "q": "Que recordação lá em casa tem a melhor história?",
+     "c": "Pega hoje numa recordação e conta a história dela em três frases."
+    },
+    "pt_BR": {
+     "t": "Lembrancinhas e suas histórias",
+     "g": "Use objetos que você trouxe para casa como portas para as lembranças ligadas a eles.",
+     "p": [
+      "Uma lembrancinha é uma história de bolso: onde, de quem, por que aquela.",
+      "Os objetos mais baratos costumam ter as melhores histórias: um ingresso, uma pedrinha.",
+      "Comece pelo objeto e volte até o momento em que você o conseguiu."
+     ],
+     "q": "Qual lembrancinha na sua casa tem a melhor história?",
+     "c": "Pegue hoje uma lembrancinha e conte a história dela em três frases."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Photos as story starters",
+     "g": "Choose one picture and tell what happened just outside the frame.",
+     "p": [
+      "A photo shows one second; your story adds before and after.",
+      "Talk about what the camera missed: the noise, the wind, the person laughing.",
+      "One great photo plus thirty seconds of story beats a slideshow of fifty."
+     ],
+     "q": "Which travel photo on your phone has the funniest story behind it?",
+     "c": "Open your photos, pick one trip picture and tell what happened just before it."
+    },
+    "de": {
+     "t": "Fotos als Erzählanfang",
+     "g": "Wähle ein Bild und erzähl, was knapp außerhalb des Rahmens passiert ist.",
+     "p": [
+      "Ein Foto zeigt eine Sekunde; deine Geschichte ergänzt das Davor und Danach.",
+      "Erzähl, was die Kamera verpasst hat: den Lärm, den Wind, die lachende Person.",
+      "Ein tolles Foto mit dreißig Sekunden Geschichte schlägt eine Diashow mit fünfzig."
+     ],
+     "q": "Welches Reisefoto auf deinem Handy hat die lustigste Geschichte?",
+     "c": "Öffne deine Fotos, wähle ein Reisebild und erzähl, was kurz davor passiert ist."
+    },
+    "es": {
+     "t": "Fotos para empezar historias",
+     "g": "Elige una foto y cuenta lo que pasó justo fuera del encuadre.",
+     "p": [
+      "Una foto muestra un segundo; tu historia añade el antes y el después.",
+      "Habla de lo que la cámara no captó: el ruido, el viento, alguien riéndose.",
+      "Una buena foto con treinta segundos de historia gana a un pase de cincuenta."
+     ],
+     "q": "¿Qué foto de viaje de tu móvil tiene la historia más divertida?",
+     "c": "Abre tus fotos, elige una de un viaje y cuenta lo que pasó justo antes."
+    },
+    "fr": {
+     "t": "Les photos pour lancer une histoire",
+     "g": "Choisis une photo et raconte ce qui se passait juste hors du cadre.",
+     "p": [
+      "Une photo montre une seconde ; ton récit ajoute l'avant et l'après.",
+      "Parle de ce que l'appareil a manqué : le bruit, le vent, quelqu'un qui riait.",
+      "Une belle photo et trente secondes de récit valent mieux qu'un diaporama de cinquante."
+     ],
+     "q": "Quelle photo de voyage sur ton téléphone cache l'histoire la plus drôle ?",
+     "c": "Ouvre tes photos, choisis une image de voyage et raconte ce qui s'est passé juste avant."
+    },
+    "it": {
+     "t": "Le foto per iniziare una storia",
+     "g": "Scegli una foto e racconta cosa succedeva appena fuori dall'inquadratura.",
+     "p": [
+      "Una foto mostra un secondo; la tua storia aggiunge il prima e il dopo.",
+      "Parla di ciò che la fotocamera non ha colto: il rumore, il vento, qualcuno che rideva.",
+      "Una bella foto con trenta secondi di storia batte una carrellata di cinquanta."
+     ],
+     "q": "Quale foto di viaggio sul tuo telefono ha la storia più divertente?",
+     "c": "Apri le tue foto, scegline una di viaggio e racconta cosa è successo subito prima."
+    },
+    "pt": {
+     "t": "Fotografias para começar histórias",
+     "g": "Escolhe uma fotografia e conta o que aconteceu mesmo fora do enquadramento.",
+     "p": [
+      "Uma fotografia mostra um segundo; a tua história junta o antes e o depois.",
+      "Fala do que a câmara não apanhou: o barulho, o vento, alguém a rir.",
+      "Uma boa fotografia com trinta segundos de história vale mais do que cinquenta seguidas."
+     ],
+     "q": "Que fotografia de viagem no teu telemóvel tem a história mais engraçada?",
+     "c": "Abre as tuas fotografias, escolhe uma de viagem e conta o que aconteceu logo antes."
+    },
+    "pt_BR": {
+     "t": "Fotos para começar histórias",
+     "g": "Escolha uma foto e conte o que aconteceu bem fora do enquadramento.",
+     "p": [
+      "Uma foto mostra um segundo; sua história acrescenta o antes e o depois.",
+      "Fale do que a câmera não pegou: o barulho, o vento, alguém rindo.",
+      "Uma boa foto com trinta segundos de história vale mais do que cinquenta em sequência."
+     ],
+     "q": "Qual foto de viagem no seu celular tem a história mais engraçada?",
+     "c": "Abra suas fotos, escolha uma de viagem e conte o que aconteceu logo antes."
+    }
+   }
+  }
+ ]
+}

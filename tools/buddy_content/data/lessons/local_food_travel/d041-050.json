@@ -1,0 +1,835 @@
+{
+ "topic": "local_food_travel",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Italy beyond pizza and pasta",
+     "g": "Discover how Italian food changes from the Alps down to Sicily.",
+     "p": [
+      "The north often cooks with butter, rice and polenta, and loves dishes like risotto and hearty mountain cheeses.",
+      "Central Italy is known for simple, bold flavours: Tuscan beans, Roman cacio e pepe and good olive oil.",
+      "The south shines with tomatoes, citrus, seafood and vegetables, and each region guards its own recipes proudly."
+     ],
+     "q": "Which part of Italy would you explore first for its food?",
+     "c": "Pick one Italian region and find a dish from there that is not pizza or pasta."
+    },
+    "de": {
+     "t": "Italien jenseits von Pizza und Pasta",
+     "g": "Entdecke, wie sich die italienische Küche von den Alpen bis Sizilien verändert.",
+     "p": [
+      "Der Norden kocht oft mit Butter, Reis und Polenta und liebt Risotto und kräftige Bergkäse.",
+      "Mittelitalien steht für schlichte, kräftige Aromen: toskanische Bohnen, römisches Cacio e Pepe und gutes Olivenöl.",
+      "Der Süden glänzt mit Tomaten, Zitrusfrüchten, Meeresfrüchten und Gemüse, jede Region hütet stolz ihre Rezepte."
+     ],
+     "q": "Welchen Teil Italiens würdest du zuerst kulinarisch erkunden?",
+     "c": "Wähle eine italienische Region und finde ein Gericht von dort, das weder Pizza noch Pasta ist."
+    },
+    "es": {
+     "t": "Italia más allá de la pizza y la pasta",
+     "g": "Descubre cómo cambia la comida italiana desde los Alpes hasta Sicilia.",
+     "p": [
+      "El norte cocina a menudo con mantequilla, arroz y polenta, y adora el risotto y los quesos de montaña.",
+      "El centro de Italia destaca por sabores sencillos y potentes: alubias toscanas, cacio e pepe romano y buen aceite.",
+      "El sur brilla con tomate, cítricos, marisco y verduras, y cada región guarda sus recetas con orgullo."
+     ],
+     "q": "¿Qué parte de Italia explorarías primero por su comida?",
+     "c": "Elige una región italiana y busca un plato de allí que no sea pizza ni pasta."
+    },
+    "fr": {
+     "t": "L'Italie au-delà des pizzas et des pâtes",
+     "g": "Découvre comment la cuisine italienne change des Alpes jusqu'à la Sicile.",
+     "p": [
+      "Le nord cuisine souvent au beurre, avec du riz et de la polenta, et adore le risotto et les fromages de montagne.",
+      "Le centre est connu pour ses saveurs simples et franches : haricots toscans, cacio e pepe romain et bonne huile d'olive.",
+      "Le sud brille par ses tomates, agrumes, fruits de mer et légumes, et chaque région garde fièrement ses recettes."
+     ],
+     "q": "Quelle partie de l'Italie explorerais-tu d'abord pour sa cuisine ?",
+     "c": "Choisis une région italienne et trouve un plat de là-bas qui n'est ni une pizza ni des pâtes."
+    },
+    "it": {
+     "t": "L'Italia oltre pizza e pasta",
+     "g": "Scopri come cambia la cucina italiana dalle Alpi alla Sicilia.",
+     "p": [
+      "Il nord cucina spesso con burro, riso e polenta, e ama il risotto e i formaggi di montagna.",
+      "Il centro è noto per sapori semplici e decisi: fagioli toscani, cacio e pepe romana e buon olio d'oliva.",
+      "Il sud brilla con pomodori, agrumi, pesce e verdure, e ogni regione custodisce con orgoglio le sue ricette."
+     ],
+     "q": "Quale parte d'Italia esploreresti per prima per il cibo?",
+     "c": "Scegli una regione italiana e trova un suo piatto che non sia pizza né pasta."
+    },
+    "pt": {
+     "t": "Itália para além da pizza e da massa",
+     "g": "Descobre como a comida italiana muda dos Alpes até à Sicília.",
+     "p": [
+      "O norte cozinha muitas vezes com manteiga, arroz e polenta, e adora risotto e queijos de montanha.",
+      "O centro é conhecido por sabores simples e marcantes: feijão toscano, cacio e pepe romano e bom azeite.",
+      "O sul brilha com tomate, citrinos, marisco e legumes, e cada região guarda com orgulho as suas receitas."
+     ],
+     "q": "Que parte de Itália explorarias primeiro pela comida?",
+     "c": "Escolhe uma região italiana e encontra um prato de lá que não seja pizza nem massa."
+    },
+    "pt_BR": {
+     "t": "Itália além da pizza e da massa",
+     "g": "Descubra como a comida italiana muda dos Alpes até a Sicília.",
+     "p": [
+      "O norte cozinha muito com manteiga, arroz e polenta, e adora risoto e queijos de montanha.",
+      "O centro é conhecido por sabores simples e marcantes: feijão toscano, cacio e pepe romano e bom azeite.",
+      "O sul brilha com tomate, frutas cítricas, frutos do mar e legumes, e cada região guarda com orgulho suas receitas."
+     ],
+     "q": "Qual parte da Itália você exploraria primeiro pela comida?",
+     "c": "Escolha uma região italiana e encontre um prato de lá que não seja pizza nem massa."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Naples and its pizza",
+     "g": "Learn the story of Neapolitan pizza and how locals enjoy it.",
+     "p": [
+      "Neapolitan pizza has a soft, puffy crust baked very fast in a wood-fired oven, and the pizzaiolo's art is UNESCO-listed.",
+      "The classics are the margherita with tomato, mozzarella and basil, and the marinara with tomato, garlic and oregano.",
+      "Locals often eat a whole pizza each, with knife and fork or folded in four as a pizza a portafoglio on the street."
+     ],
+     "q": "What toppings make your perfect pizza?",
+     "c": "Find out what makes a pizza officially Neapolitan and name two of the rules."
+    },
+    "de": {
+     "t": "Neapel und seine Pizza",
+     "g": "Lerne die Geschichte der neapolitanischen Pizza und wie Einheimische sie genießen.",
+     "p": [
+      "Neapolitanische Pizza hat einen weichen, luftigen Rand, wird sehr schnell im Holzofen gebacken, die Kunst der Pizzaioli ist UNESCO-Erbe.",
+      "Klassiker sind die Margherita mit Tomate, Mozzarella und Basilikum und die Marinara mit Tomate, Knoblauch und Oregano.",
+      "Einheimische essen oft eine ganze Pizza pro Person, mit Messer und Gabel oder gefaltet als Pizza a portafoglio."
+     ],
+     "q": "Welcher Belag macht deine perfekte Pizza aus?",
+     "c": "Finde heraus, was eine Pizza offiziell neapolitanisch macht, und nenne zwei Regeln."
+    },
+    "es": {
+     "t": "Nápoles y su pizza",
+     "g": "Aprende la historia de la pizza napolitana y cómo la disfrutan los locales.",
+     "p": [
+      "La pizza napolitana tiene un borde blando y esponjoso, se hornea muy rápido en horno de leña y el arte del pizzaiolo es patrimonio UNESCO.",
+      "Las clásicas son la margherita, con tomate, mozzarella y albahaca, y la marinara, con tomate, ajo y orégano.",
+      "Los napolitanos suelen comer una pizza entera cada uno, con cuchillo y tenedor o doblada en cuatro, a portafoglio, por la calle."
+     ],
+     "q": "¿Qué ingredientes tiene tu pizza perfecta?",
+     "c": "Averigua qué hace que una pizza sea oficialmente napolitana y nombra dos de las reglas."
+    },
+    "fr": {
+     "t": "Naples et sa pizza",
+     "g": "Découvre l'histoire de la pizza napolitaine et comment les habitants la dégustent.",
+     "p": [
+      "La pizza napolitaine a une bordure moelleuse et gonflée, cuite très vite au feu de bois, et l'art du pizzaiolo est inscrit à l'UNESCO.",
+      "Les classiques sont la margherita, tomate, mozzarella et basilic, et la marinara, tomate, ail et origan.",
+      "Les Napolitains mangent souvent une pizza entière chacun, à la fourchette ou pliée en quatre, a portafoglio, dans la rue."
+     ],
+     "q": "Quelle garniture compose ta pizza idéale ?",
+     "c": "Découvre ce qui rend une pizza officiellement napolitaine et cite deux des règles."
+    },
+    "it": {
+     "t": "Napoli e la sua pizza",
+     "g": "Scopri la storia della pizza napoletana e come la gustano i napoletani.",
+     "p": [
+      "La pizza napoletana ha un cornicione morbido e alto, cuoce velocissima nel forno a legna e l'arte del pizzaiuolo è patrimonio UNESCO.",
+      "Le classiche sono la margherita con pomodoro, mozzarella e basilico, e la marinara con pomodoro, aglio e origano.",
+      "I napoletani mangiano spesso una pizza intera a testa, con coltello e forchetta o piegata in quattro, a portafoglio, per strada."
+     ],
+     "q": "Quali ingredienti ha la tua pizza perfetta?",
+     "c": "Scopri cosa rende una pizza ufficialmente napoletana e indica due delle regole."
+    },
+    "pt": {
+     "t": "Nápoles e a sua pizza",
+     "g": "Aprende a história da pizza napolitana e como os locais a apreciam.",
+     "p": [
+      "A pizza napolitana tem uma borda macia e alta, coze muito depressa em forno a lenha e a arte do pizzaiolo é património da UNESCO.",
+      "As clássicas são a margherita, com tomate, mozzarella e manjericão, e a marinara, com tomate, alho e orégãos.",
+      "Os napolitanos comem muitas vezes uma pizza inteira cada um, com faca e garfo ou dobrada em quatro, a portafoglio, na rua."
+     ],
+     "q": "Que ingredientes tem a tua pizza perfeita?",
+     "c": "Descobre o que torna uma pizza oficialmente napolitana e diz duas das regras."
+    },
+    "pt_BR": {
+     "t": "Nápoles e sua pizza",
+     "g": "Aprenda a história da pizza napolitana e como os moradores curtem cada fatia.",
+     "p": [
+      "A pizza napolitana tem borda macia e alta, assa muito rápido em forno a lenha e a arte do pizzaiolo é patrimônio da UNESCO.",
+      "As clássicas são a margherita, com tomate, muçarela e manjericão, e a marinara, com tomate, alho e orégano.",
+      "Os napolitanos costumam comer uma pizza inteira cada um, com garfo e faca ou dobrada em quatro, a portafoglio, na rua."
+     ],
+     "q": "Quais ingredientes tem sua pizza perfeita?",
+     "c": "Descubra o que faz uma pizza ser oficialmente napolitana e cite duas das regras."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bologna and Emilia-Romagna",
+     "g": "Explore the land of fresh egg pasta, aged cheese and cured meats.",
+     "p": [
+      "In Bologna ragù is served with fresh tagliatelle, not spaghetti, and tortellini are often enjoyed in a clear broth.",
+      "The region is home to Parmigiano Reggiano, Prosciutto di Parma, mortadella and traditional balsamic vinegar of Modena.",
+      "Look for a sfoglina rolling pasta by hand, or join a market tour to taste cheeses at different ages."
+     ],
+     "q": "Have you ever made fresh pasta, or would you like to learn?",
+     "c": "Find the difference between traditional balsamic vinegar of Modena and everyday balsamic."
+    },
+    "de": {
+     "t": "Bologna und die Emilia-Romagna",
+     "g": "Erkunde das Land der frischen Eiernudeln, des gereiften Käses und der Wurstwaren.",
+     "p": [
+      "In Bologna serviert man Ragù mit frischen Tagliatelle, nicht mit Spaghetti, Tortellini oft in klarer Brühe.",
+      "Die Region ist Heimat von Parmigiano Reggiano, Prosciutto di Parma, Mortadella und traditionellem Balsamico aus Modena.",
+      "Achte auf eine Sfoglina, die Pasta von Hand ausrollt, oder mach eine Marktführung mit Käse verschiedener Reifegrade."
+     ],
+     "q": "Hast du schon mal frische Pasta gemacht, oder würdest du es gern lernen?",
+     "c": "Finde den Unterschied zwischen traditionellem Balsamico aus Modena und gewöhnlichem Balsamico."
+    },
+    "es": {
+     "t": "Bolonia y Emilia-Romaña",
+     "g": "Explora la tierra de la pasta fresca al huevo, los quesos curados y los embutidos.",
+     "p": [
+      "En Bolonia el ragú se sirve con tagliatelle frescos, no con espaguetis, y los tortellini suelen tomarse en caldo.",
+      "La región es cuna del Parmigiano Reggiano, el Prosciutto di Parma, la mortadela y el vinagre balsámico tradicional de Módena.",
+      "Busca a una sfoglina estirando pasta a mano, o apúntate a una visita al mercado para probar quesos de distintas curaciones."
+     ],
+     "q": "¿Has hecho alguna vez pasta fresca o te gustaría aprender?",
+     "c": "Averigua la diferencia entre el balsámico tradicional de Módena y el balsámico corriente."
+    },
+    "fr": {
+     "t": "Bologne et l'Émilie-Romagne",
+     "g": "Explore la terre des pâtes fraîches aux œufs, des fromages affinés et de la charcuterie.",
+     "p": [
+      "À Bologne, le ragù se sert avec des tagliatelles fraîches, pas des spaghettis, et les tortellinis souvent dans un bouillon clair.",
+      "La région est le berceau du Parmigiano Reggiano, du jambon de Parme, de la mortadelle et du vinaigre balsamique traditionnel de Modène.",
+      "Cherche une sfoglina qui étale la pâte à la main, ou suis une visite du marché pour goûter des fromages de différents âges."
+     ],
+     "q": "As-tu déjà fait des pâtes fraîches, ou aimerais-tu apprendre ?",
+     "c": "Trouve la différence entre le balsamique traditionnel de Modène et le balsamique courant."
+    },
+    "it": {
+     "t": "Bologna e l'Emilia-Romagna",
+     "g": "Esplora la terra della pasta fresca all'uovo, dei formaggi stagionati e dei salumi.",
+     "p": [
+      "A Bologna il ragù si serve con le tagliatelle fresche, non con gli spaghetti, e i tortellini spesso in brodo.",
+      "La regione è la patria di Parmigiano Reggiano, Prosciutto di Parma, mortadella e aceto balsamico tradizionale di Modena.",
+      "Cerca una sfoglina che tira la pasta a mano, o fai un giro al mercato per assaggiare formaggi di diverse stagionature."
+     ],
+     "q": "Hai mai fatto la pasta fresca, o ti piacerebbe imparare?",
+     "c": "Scopri la differenza tra l'aceto balsamico tradizionale di Modena e quello comune."
+    },
+    "pt": {
+     "t": "Bolonha e a Emília-Romanha",
+     "g": "Explora a terra da massa fresca com ovo, dos queijos curados e dos enchidos.",
+     "p": [
+      "Em Bolonha o ragù serve-se com tagliatelle frescos, não com esparguete, e os tortellini muitas vezes em caldo.",
+      "A região é berço do Parmigiano Reggiano, do Prosciutto di Parma, da mortadela e do vinagre balsâmico tradicional de Módena.",
+      "Procura uma sfoglina a esticar massa à mão, ou faz uma visita ao mercado para provar queijos com diferentes curas."
+     ],
+     "q": "Já fizeste massa fresca, ou gostavas de aprender?",
+     "c": "Descobre a diferença entre o balsâmico tradicional de Módena e o balsâmico comum."
+    },
+    "pt_BR": {
+     "t": "Bolonha e a Emília-Romanha",
+     "g": "Explore a terra da massa fresca com ovos, dos queijos curados e dos embutidos.",
+     "p": [
+      "Em Bolonha o ragù é servido com tagliatelle fresco, não com espaguete, e o tortellini muitas vezes em caldo.",
+      "A região é berço do Parmigiano Reggiano, do Prosciutto di Parma, da mortadela e do vinagre balsâmico tradicional de Modena.",
+      "Procure uma sfoglina abrindo massa à mão, ou faça um passeio no mercado para provar queijos com curas diferentes."
+     ],
+     "q": "Você já fez massa fresca, ou gostaria de aprender?",
+     "c": "Descubra a diferença entre o balsâmico tradicional de Modena e o balsâmico comum."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sicily's flavours",
+     "g": "Taste arancini, cannoli and the Arab-Norman influences of Sicily.",
+     "p": [
+      "Arancini are fried rice balls, often filled with ragù or cheese; in Palermo they are usually called arancine.",
+      "Cannoli are crisp pastry tubes filled with sweet sheep's milk ricotta, sometimes with candied fruit or pistachio.",
+      "Centuries of Arab presence brought citrus, almonds and sugar cane, and in Trapani fish couscous is a local classic."
+     ],
+     "q": "Which Sicilian treat would you try first?",
+     "c": "Find one Sicilian dish that shows Arab influence and note its key ingredient."
+    },
+    "de": {
+     "t": "Siziliens Aromen",
+     "g": "Koste Arancini, Cannoli und die arabisch-normannischen Einflüsse Siziliens.",
+     "p": [
+      "Arancini sind frittierte Reisbällchen, oft mit Ragù oder Käse gefüllt; in Palermo nennt man sie meist Arancine.",
+      "Cannoli sind knusprige Teigröllchen mit süßer Schafsricotta, manchmal mit kandierten Früchten oder Pistazien.",
+      "Jahrhunderte arabischer Präsenz brachten Zitrusfrüchte, Mandeln und Zuckerrohr, in Trapani ist Fisch-Couscous ein Klassiker."
+     ],
+     "q": "Welche sizilianische Leckerei würdest du zuerst probieren?",
+     "c": "Finde ein sizilianisches Gericht mit arabischem Einfluss und notiere seine wichtigste Zutat."
+    },
+    "es": {
+     "t": "Los sabores de Sicilia",
+     "g": "Prueba los arancini, los cannoli y las influencias árabe-normandas de Sicilia.",
+     "p": [
+      "Los arancini son bolas de arroz fritas, a menudo rellenas de ragú o queso; en Palermo se suelen llamar arancine.",
+      "Los cannoli son tubos crujientes de masa rellenos de ricotta dulce de oveja, a veces con fruta confitada o pistacho.",
+      "Siglos de presencia árabe trajeron cítricos, almendras y caña de azúcar, y en Trapani el cuscús de pescado es un clásico."
+     ],
+     "q": "¿Qué delicia siciliana probarías primero?",
+     "c": "Busca un plato siciliano con influencia árabe y anota su ingrediente clave."
+    },
+    "fr": {
+     "t": "Les saveurs de la Sicile",
+     "g": "Goûte les arancini, les cannoli et les influences arabo-normandes de la Sicile.",
+     "p": [
+      "Les arancini sont des boulettes de riz frites, souvent farcies de ragù ou de fromage ; à Palerme, on dit plutôt arancine.",
+      "Les cannoli sont des tubes de pâte croustillants garnis de ricotta de brebis sucrée, parfois avec fruits confits ou pistache.",
+      "Des siècles de présence arabe ont apporté agrumes, amandes et canne à sucre, et à Trapani le couscous de poisson est un classique."
+     ],
+     "q": "Quelle douceur sicilienne goûterais-tu en premier ?",
+     "c": "Trouve un plat sicilien d'influence arabe et note son ingrédient clé."
+    },
+    "it": {
+     "t": "I sapori della Sicilia",
+     "g": "Assaggia arancini, cannoli e le influenze arabo-normanne della Sicilia.",
+     "p": [
+      "Gli arancini sono palle di riso fritte, spesso ripiene di ragù o formaggio; a Palermo si chiamano di solito arancine.",
+      "I cannoli sono cialde croccanti ripiene di ricotta di pecora zuccherata, a volte con canditi o pistacchio.",
+      "Secoli di presenza araba hanno portato agrumi, mandorle e canna da zucchero, e a Trapani il cuscus di pesce è un classico."
+     ],
+     "q": "Quale delizia siciliana proveresti per prima?",
+     "c": "Trova un piatto siciliano di influenza araba e annota il suo ingrediente chiave."
+    },
+    "pt": {
+     "t": "Os sabores da Sicília",
+     "g": "Prova os arancini, os cannoli e as influências árabes e normandas da Sicília.",
+     "p": [
+      "Os arancini são bolinhas de arroz fritas, muitas vezes recheadas com ragù ou queijo; em Palermo chamam-se arancine.",
+      "Os cannoli são canudos estaladiços de massa recheados com ricota doce de ovelha, às vezes com fruta cristalizada ou pistácio.",
+      "Séculos de presença árabe trouxeram citrinos, amêndoas e cana-de-açúcar, e em Trapani o cuscuz de peixe é um clássico."
+     ],
+     "q": "Que delícia siciliana provarias primeiro?",
+     "c": "Encontra um prato siciliano com influência árabe e anota o ingrediente principal."
+    },
+    "pt_BR": {
+     "t": "Os sabores da Sicília",
+     "g": "Prove os arancini, os cannoli e as influências árabes e normandas da Sicília.",
+     "p": [
+      "Os arancini são bolinhos de arroz fritos, muitas vezes recheados com ragù ou queijo; em Palermo se chamam arancine.",
+      "Os cannoli são canudos crocantes de massa recheados com ricota doce de ovelha, às vezes com frutas cristalizadas ou pistache.",
+      "Séculos de presença árabe trouxeram frutas cítricas, amêndoas e cana-de-açúcar, e em Trapani o cuscuz de peixe é um clássico."
+     ],
+     "q": "Qual delícia siciliana você provaria primeiro?",
+     "c": "Encontre um prato siciliano com influência árabe e anote o ingrediente principal."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "France's regional cuisine",
+     "g": "Travel from Normandy butter to Provençal herbs through France's regional dishes.",
+     "p": [
+      "Normandy is known for butter, cream, apples and cheeses like Camembert, while Brittany is the land of crêpes and galettes.",
+      "Provence cooks with olive oil, garlic and herbs in dishes like ratatouille, and Marseille is famous for bouillabaisse.",
+      "Alsace serves choucroute and tarte flambée, and Burgundy slow-cooks boeuf bourguignon, each region with its own pride."
+     ],
+     "q": "Which French region's food sounds most tempting to you?",
+     "c": "Choose one French region and list three of its signature foods."
+    },
+    "de": {
+     "t": "Frankreichs regionale Küche",
+     "g": "Reise von normannischer Butter bis zu provenzalischen Kräutern durch Frankreichs Regionalgerichte.",
+     "p": [
+      "Die Normandie ist bekannt für Butter, Sahne, Äpfel und Käse wie Camembert, die Bretagne für Crêpes und Galettes.",
+      "Die Provence kocht mit Olivenöl, Knoblauch und Kräutern, etwa Ratatouille, und Marseille ist für Bouillabaisse berühmt.",
+      "Das Elsass serviert Choucroute und Flammkuchen, Burgund schmort Boeuf Bourguignon, jede Region mit eigenem Stolz."
+     ],
+     "q": "Welche französische Regionalküche klingt für dich am verlockendsten?",
+     "c": "Wähle eine französische Region und nenne drei ihrer typischen Spezialitäten."
+    },
+    "es": {
+     "t": "La cocina regional de Francia",
+     "g": "Viaja de la mantequilla de Normandía a las hierbas de Provenza a través de sus platos regionales.",
+     "p": [
+      "Normandía es famosa por la mantequilla, la nata, las manzanas y quesos como el Camembert, y Bretaña por crepes y galettes.",
+      "Provenza cocina con aceite de oliva, ajo y hierbas, como en el ratatouille, y Marsella es famosa por la bouillabaisse.",
+      "Alsacia sirve choucroute y tarte flambée, y Borgoña guisa despacio el boeuf bourguignon: cada región con su orgullo."
+     ],
+     "q": "¿La comida de qué región francesa te tienta más?",
+     "c": "Elige una región francesa y nombra tres de sus especialidades."
+    },
+    "fr": {
+     "t": "La cuisine régionale française",
+     "g": "Voyage du beurre normand aux herbes de Provence à travers les plats régionaux.",
+     "p": [
+      "La Normandie est réputée pour son beurre, sa crème, ses pommes et ses fromages comme le camembert, la Bretagne pour ses crêpes et galettes.",
+      "La Provence cuisine à l'huile d'olive, à l'ail et aux herbes, comme la ratatouille, et Marseille est célèbre pour sa bouillabaisse.",
+      "L'Alsace sert choucroute et tarte flambée, la Bourgogne mijote le bœuf bourguignon : chaque région a sa fierté."
+     ],
+     "q": "La cuisine de quelle région française te tente le plus ?",
+     "c": "Choisis une région française et cite trois de ses spécialités."
+    },
+    "it": {
+     "t": "La cucina regionale francese",
+     "g": "Viaggia dal burro della Normandia alle erbe della Provenza attraverso i piatti regionali.",
+     "p": [
+      "La Normandia è nota per burro, panna, mele e formaggi come il Camembert, la Bretagna per crêpes e galettes.",
+      "La Provenza cucina con olio d'oliva, aglio ed erbe, come nella ratatouille, e Marsiglia è famosa per la bouillabaisse.",
+      "L'Alsazia serve choucroute e tarte flambée, la Borgogna cuoce piano il boeuf bourguignon: ogni regione ha il suo orgoglio."
+     ],
+     "q": "La cucina di quale regione francese ti tenta di più?",
+     "c": "Scegli una regione francese ed elenca tre sue specialità."
+    },
+    "pt": {
+     "t": "A cozinha regional francesa",
+     "g": "Viaja da manteiga da Normandia às ervas da Provença através dos pratos regionais.",
+     "p": [
+      "A Normandia é conhecida pela manteiga, natas, maçãs e queijos como o Camembert, e a Bretanha pelos crepes e galettes.",
+      "A Provença cozinha com azeite, alho e ervas, como no ratatouille, e Marselha é famosa pela bouillabaisse.",
+      "A Alsácia serve choucroute e tarte flambée, e a Borgonha cozinha devagar o boeuf bourguignon: cada região tem o seu orgulho."
+     ],
+     "q": "A comida de que região francesa te tenta mais?",
+     "c": "Escolhe uma região francesa e diz três das suas especialidades."
+    },
+    "pt_BR": {
+     "t": "A cozinha regional francesa",
+     "g": "Viaje da manteiga da Normandia às ervas da Provença pelos pratos regionais.",
+     "p": [
+      "A Normandia é conhecida pela manteiga, creme, maçãs e queijos como o Camembert, e a Bretanha pelos crepes e galettes.",
+      "A Provença cozinha com azeite, alho e ervas, como no ratatouille, e Marselha é famosa pela bouillabaisse.",
+      "A Alsácia serve choucroute e tarte flambée, e a Borgonha cozinha devagar o boeuf bourguignon: cada região com seu orgulho."
+     ],
+     "q": "A comida de qual região francesa mais te tenta?",
+     "c": "Escolha uma região francesa e cite três especialidades dela."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The French bakery",
+     "g": "Get to know croissants, baguettes and everyday boulangerie habits.",
+     "p": [
+      "Many French people buy bread daily, and a baguette de tradition is made only from flour, water, salt and yeast.",
+      "Croissants and pains au chocolat are morning treats; in the southwest many people call the latter chocolatine.",
+      "Always greet with bonjour as you enter, and ask for a baguette bien cuite if you like it extra crusty."
+     ],
+     "q": "What would you order first in a French bakery?",
+     "c": "Practise ordering at a bakery in French: bonjour, une baguette, s'il vous plaît, merci."
+    },
+    "de": {
+     "t": "Die französische Bäckerei",
+     "g": "Lerne Croissants, Baguettes und den Alltag in der Boulangerie kennen.",
+     "p": [
+      "Viele Franzosen kaufen täglich Brot, und eine Baguette de tradition besteht nur aus Mehl, Wasser, Salz und Hefe.",
+      "Croissants und Pains au Chocolat sind Morgenfreuden; im Südwesten sagt man zu Letzterem oft Chocolatine.",
+      "Grüß beim Eintreten immer mit bonjour und bitte um eine Baguette bien cuite, wenn du sie extra knusprig magst."
+     ],
+     "q": "Was würdest du in einer französischen Bäckerei zuerst bestellen?",
+     "c": "Übe eine Bestellung auf Französisch: bonjour, une baguette, s'il vous plaît, merci."
+    },
+    "es": {
+     "t": "La panadería francesa",
+     "g": "Conoce los cruasanes, las baguettes y las costumbres diarias de la boulangerie.",
+     "p": [
+      "Muchos franceses compran pan a diario, y la baguette de tradition se hace solo con harina, agua, sal y levadura.",
+      "Cruasanes y pains au chocolat son caprichos de la mañana; en el suroeste muchos llaman chocolatine a este último.",
+      "Saluda siempre con un bonjour al entrar, y pide una baguette bien cuite si te gusta muy crujiente."
+     ],
+     "q": "¿Qué pedirías primero en una panadería francesa?",
+     "c": "Practica cómo pedir en francés: bonjour, une baguette, s'il vous plaît, merci."
+    },
+    "fr": {
+     "t": "La boulangerie française",
+     "g": "Découvre croissants, baguettes et habitudes du quotidien à la boulangerie.",
+     "p": [
+      "Beaucoup de Français achètent leur pain chaque jour, et la baguette de tradition ne contient que farine, eau, sel et levure.",
+      "Croissants et pains au chocolat sont des plaisirs du matin ; dans le Sud-Ouest, on dit souvent chocolatine.",
+      "Dis toujours bonjour en entrant, et demande une baguette bien cuite si tu l'aimes très croustillante."
+     ],
+     "q": "Que commanderais-tu en premier dans une boulangerie française ?",
+     "c": "Entraîne-toi à commander : bonjour, une baguette, s'il vous plaît, merci, avec un grand sourire."
+    },
+    "it": {
+     "t": "La boulangerie francese",
+     "g": "Conosci croissant, baguette e le abitudini quotidiane della boulangerie.",
+     "p": [
+      "Molti francesi comprano il pane ogni giorno, e la baguette de tradition contiene solo farina, acqua, sale e lievito.",
+      "Croissant e pain au chocolat sono piaceri del mattino; nel sud-ovest molti chiamano quest'ultimo chocolatine.",
+      "Saluta sempre con bonjour entrando, e chiedi una baguette bien cuite se la ami molto croccante."
+     ],
+     "q": "Cosa ordineresti per primo in una boulangerie francese?",
+     "c": "Esercitati a ordinare in francese: bonjour, une baguette, s'il vous plaît, merci."
+    },
+    "pt": {
+     "t": "A padaria francesa",
+     "g": "Conhece os croissants, as baguetes e os hábitos diários da boulangerie.",
+     "p": [
+      "Muitos franceses compram pão todos os dias, e a baguette de tradition leva só farinha, água, sal e fermento.",
+      "Croissants e pains au chocolat são mimos da manhã; no sudoeste muitos chamam chocolatine a estes últimos.",
+      "Cumprimenta sempre com bonjour ao entrar, e pede uma baguette bien cuite se gostares dela bem estaladiça."
+     ],
+     "q": "O que pedirias primeiro numa padaria francesa?",
+     "c": "Pratica um pedido em francês: bonjour, une baguette, s'il vous plaît, merci."
+    },
+    "pt_BR": {
+     "t": "A padaria francesa",
+     "g": "Conheça os croissants, as baguetes e os hábitos diários da boulangerie.",
+     "p": [
+      "Muitos franceses compram pão todo dia, e a baguette de tradition leva só farinha, água, sal e fermento.",
+      "Croissants e pains au chocolat são mimos da manhã; no sudoeste muita gente chama o segundo de chocolatine.",
+      "Cumprimente sempre com bonjour ao entrar, e peça uma baguette bien cuite se gostar dela bem crocante."
+     ],
+     "q": "O que você pediria primeiro em uma padaria francesa?",
+     "c": "Pratique um pedido em francês: bonjour, une baguette, s'il vous plaît, merci."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lyon, a food capital",
+     "g": "Discover Lyon's bouchons, local specialities and covered market halls.",
+     "p": [
+      "A bouchon is a cosy traditional Lyon bistro with checked tablecloths, generous portions and a friendly mood.",
+      "Try quenelles in a creamy sauce, salade lyonnaise with a poached egg, and the bright pink praline tart.",
+      "Les Halles de Lyon Paul Bocuse is a covered market where locals buy cheeses, charcuterie and pastries."
+     ],
+     "q": "Would you rather eat in a cosy bistro or graze through a market hall?",
+     "c": "Find one Lyon speciality not mentioned today and learn what it is made of."
+    },
+    "de": {
+     "t": "Lyon, eine Hauptstadt des Genusses",
+     "g": "Entdecke Lyons Bouchons, lokale Spezialitäten und Markthallen.",
+     "p": [
+      "Ein Bouchon ist ein gemütliches traditionelles Lyoner Bistro mit karierten Tischdecken, großen Portionen und guter Laune.",
+      "Probiere Quenelles in cremiger Soße, Salade Lyonnaise mit pochiertem Ei und die leuchtend rosa Pralinentarte.",
+      "Les Halles de Lyon Paul Bocuse ist eine Markthalle, in der Einheimische Käse, Wurstwaren und Gebäck kaufen."
+     ],
+     "q": "Isst du lieber in einem gemütlichen Bistro oder probierst dich durch eine Markthalle?",
+     "c": "Finde eine Lyoner Spezialität, die heute nicht vorkam, und lerne, woraus sie besteht."
+    },
+    "es": {
+     "t": "Lyon, una capital gastronómica",
+     "g": "Descubre los bouchons de Lyon, sus especialidades y sus mercados cubiertos.",
+     "p": [
+      "Un bouchon es un bistró tradicional lionés acogedor, con manteles de cuadros, raciones generosas y buen ambiente.",
+      "Prueba las quenelles en salsa cremosa, la salade lyonnaise con huevo escalfado y la tarta de praliné rosa intenso.",
+      "Les Halles de Lyon Paul Bocuse es un mercado cubierto donde los locales compran quesos, embutidos y pasteles."
+     ],
+     "q": "¿Prefieres comer en un bistró acogedor o picar por un mercado cubierto?",
+     "c": "Busca una especialidad de Lyon que no hayamos visto hoy y averigua de qué está hecha."
+    },
+    "fr": {
+     "t": "Lyon, capitale gastronomique",
+     "g": "Découvre les bouchons lyonnais, les spécialités locales et les halles.",
+     "p": [
+      "Un bouchon est un bistrot lyonnais traditionnel et chaleureux, nappes à carreaux, portions généreuses et bonne humeur.",
+      "Goûte les quenelles en sauce crémeuse, la salade lyonnaise à l'œuf poché et la tarte aux pralines rose vif.",
+      "Les Halles de Lyon Paul Bocuse sont un marché couvert où les Lyonnais achètent fromages, charcuterie et pâtisseries."
+     ],
+     "q": "Préfères-tu un bistrot chaleureux ou grignoter dans des halles ?",
+     "c": "Trouve une spécialité lyonnaise non citée aujourd'hui et découvre sa composition."
+    },
+    "it": {
+     "t": "Lione, una capitale del gusto",
+     "g": "Scopri i bouchon di Lione, le specialità locali e i mercati coperti.",
+     "p": [
+      "Un bouchon è un accogliente bistrot tradizionale lionese, con tovaglie a quadri, porzioni generose e un clima allegro.",
+      "Prova le quenelle in salsa cremosa, la salade lyonnaise con uovo in camicia e la torta alle praline rosa acceso.",
+      "Les Halles de Lyon Paul Bocuse è un mercato coperto dove i lionesi comprano formaggi, salumi e dolci."
+     ],
+     "q": "Preferisci un bistrot accogliente o spiluccare in un mercato coperto?",
+     "c": "Trova una specialità di Lione non citata oggi e scopri di cosa è fatta."
+    },
+    "pt": {
+     "t": "Lyon, uma capital gastronómica",
+     "g": "Descobre os bouchons de Lyon, as especialidades locais e os mercados cobertos.",
+     "p": [
+      "Um bouchon é um bistrô tradicional de Lyon, acolhedor, com toalhas aos quadrados, doses generosas e bom ambiente.",
+      "Prova as quenelles em molho cremoso, a salade lyonnaise com ovo escalfado e a tarte de pralinés cor-de-rosa vivo.",
+      "Les Halles de Lyon Paul Bocuse é um mercado coberto onde os locais compram queijos, charcutaria e pastelaria."
+     ],
+     "q": "Preferes comer num bistrô acolhedor ou petiscar num mercado coberto?",
+     "c": "Encontra uma especialidade de Lyon que não falámos hoje e descobre do que é feita."
+    },
+    "pt_BR": {
+     "t": "Lyon, uma capital gastronômica",
+     "g": "Descubra os bouchons de Lyon, as especialidades locais e os mercados cobertos.",
+     "p": [
+      "Um bouchon é um bistrô tradicional de Lyon, aconchegante, com toalha xadrez, porções generosas e clima animado.",
+      "Prove as quenelles em molho cremoso, a salade lyonnaise com ovo pochê e a torta de pralinê rosa vivo.",
+      "Les Halles de Lyon Paul Bocuse é um mercado coberto onde os moradores compram queijos, frios e doces."
+     ],
+     "q": "Você prefere comer num bistrô aconchegante ou beliscar num mercado coberto?",
+     "c": "Encontre uma especialidade de Lyon que não vimos hoje e descubra do que ela é feita."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spain's tapas culture",
+     "g": "Learn about bar hopping, sharing small plates and regional tapas in Spain.",
+     "p": [
+      "Ir de tapas means moving from bar to bar with friends, sharing a few small plates at each stop.",
+      "Classics include patatas bravas, tortilla de patatas, croquetas and gambas al ajillo, with many local twists.",
+      "In the Basque Country pintxos sit on bread at the bar, and in Granada a small tapa often comes free with a drink."
+     ],
+     "q": "Which tapa would you order first, and who would you share it with?",
+     "c": "Plan a three-stop tapas route in a Spanish city, with one tapa at each stop."
+    },
+    "de": {
+     "t": "Spaniens Tapas-Kultur",
+     "g": "Lerne Barhopping, das Teilen kleiner Teller und regionale Tapas in Spanien kennen.",
+     "p": [
+      "Ir de tapas heißt, mit Freunden von Bar zu Bar zu ziehen und überall ein paar kleine Teller zu teilen.",
+      "Klassiker sind Patatas Bravas, Tortilla de Patatas, Croquetas und Gambas al Ajillo, mit vielen lokalen Varianten.",
+      "Im Baskenland liegen Pintxos auf Brot an der Theke, und in Granada gibt es zum Getränk oft eine kleine Tapa gratis."
+     ],
+     "q": "Welche Tapa würdest du zuerst bestellen, und mit wem würdest du sie teilen?",
+     "c": "Plane eine Tapas-Route mit drei Stationen in einer spanischen Stadt, je eine Tapa pro Station."
+    },
+    "es": {
+     "t": "La cultura de las tapas",
+     "g": "Aprende a ir de bar en bar, compartir platillos y conocer las tapas regionales de España.",
+     "p": [
+      "Ir de tapas es pasar de bar en bar con amigos y compartir unas cuantas raciones pequeñas en cada parada.",
+      "Clásicos como las patatas bravas, la tortilla de patatas, las croquetas y las gambas al ajillo tienen mil versiones locales.",
+      "En el País Vasco los pintxos esperan sobre pan en la barra, y en Granada la tapa suele venir gratis con la bebida."
+     ],
+     "q": "¿Qué tapa pedirías primero y con quién la compartirías?",
+     "c": "Planea una ruta de tapas de tres paradas en una ciudad española, con una tapa en cada una."
+    },
+    "fr": {
+     "t": "La culture des tapas en Espagne",
+     "g": "Découvre la tournée des bars, le partage de petites assiettes et les tapas régionales.",
+     "p": [
+      "Ir de tapas, c'est passer de bar en bar entre amis en partageant quelques petites assiettes à chaque arrêt.",
+      "Les classiques : patatas bravas, tortilla de patatas, croquetas et gambas al ajillo, avec mille variantes locales.",
+      "Au Pays basque, les pintxos attendent sur du pain au comptoir, et à Grenade une petite tapa est souvent offerte avec la boisson."
+     ],
+     "q": "Quelle tapa commanderais-tu en premier, et avec qui la partagerais-tu ?",
+     "c": "Prévois une tournée de tapas en trois arrêts dans une ville espagnole, une tapa par arrêt."
+    },
+    "it": {
+     "t": "La cultura delle tapas in Spagna",
+     "g": "Scopri il giro dei bar, la condivisione di piattini e le tapas regionali spagnole.",
+     "p": [
+      "Ir de tapas significa passare da un bar all'altro con gli amici, condividendo qualche piattino a ogni tappa.",
+      "I classici sono patatas bravas, tortilla de patatas, croquetas e gambas al ajillo, con tante varianti locali.",
+      "Nei Paesi Baschi i pintxos aspettano sul pane al bancone, e a Granada una piccola tapa arriva spesso gratis con la bevanda."
+     ],
+     "q": "Quale tapa ordineresti per prima, e con chi la divideresti?",
+     "c": "Pianifica un giro di tapas in tre tappe in una città spagnola, con una tapa per tappa."
+    },
+    "pt": {
+     "t": "A cultura das tapas em Espanha",
+     "g": "Aprende a andar de bar em bar, partilhar pratinhos e conhecer as tapas regionais espanholas.",
+     "p": [
+      "Ir de tapas é passar de bar em bar com amigos, partilhando alguns pratinhos em cada paragem.",
+      "Os clássicos são patatas bravas, tortilla de patatas, croquetas e gambas al ajillo, com muitas versões locais.",
+      "No País Basco os pintxos estão sobre pão no balcão, e em Granada uma pequena tapa vem muitas vezes grátis com a bebida."
+     ],
+     "q": "Que tapa pedirias primeiro, e com quem a partilharias?",
+     "c": "Planeia uma rota de tapas com três paragens numa cidade espanhola, uma tapa em cada uma."
+    },
+    "pt_BR": {
+     "t": "A cultura das tapas na Espanha",
+     "g": "Aprenda a ir de bar em bar, dividir porções pequenas e conhecer as tapas regionais.",
+     "p": [
+      "Ir de tapas é passar de bar em bar com os amigos, dividindo algumas porções pequenas em cada parada.",
+      "Os clássicos são patatas bravas, tortilla de patatas, croquetas e gambas al ajillo, com muitas versões locais.",
+      "No País Basco os pintxos ficam sobre pão no balcão, e em Granada uma pequena tapa muitas vezes vem grátis com a bebida."
+     ],
+     "q": "Qual tapa você pediria primeiro, e com quem dividiria?",
+     "c": "Planeje uma rota de tapas com três paradas em uma cidade espanhola, uma tapa em cada uma."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spain's paella and rice dishes",
+     "g": "Meet Valencian paella and its many delicious cousins.",
+     "p": [
+      "Traditional Valencian paella uses rice, chicken, rabbit, green beans and large white beans, flavoured with saffron.",
+      "Its cousins include seafood paella, arroz negro coloured with squid ink, and fideuà made with short noodles.",
+      "In Spain paella is usually a lunchtime dish, often shared at weekends straight from the wide pan."
+     ],
+     "q": "Would you choose the traditional Valencian paella or a seafood version?",
+     "c": "Look up what socarrat is and why many locals think it is the best part of a paella."
+    },
+    "de": {
+     "t": "Paella und Reisgerichte in Spanien",
+     "g": "Lerne die valencianische Paella und ihre vielen leckeren Verwandten kennen.",
+     "p": [
+      "Die traditionelle Paella Valenciana enthält Reis, Huhn, Kaninchen, grüne Bohnen und große weiße Bohnen, mit Safran gewürzt.",
+      "Zu ihren Verwandten zählen Meeresfrüchte-Paella, Arroz Negro mit Tintenfischtinte und Fideuà mit kurzen Nudeln.",
+      "In Spanien isst man Paella meist mittags, oft am Wochenende gemeinsam direkt aus der flachen Pfanne."
+     ],
+     "q": "Würdest du die traditionelle Paella Valenciana oder eine Meeresfrüchte-Variante wählen?",
+     "c": "Finde heraus, was Socarrat ist und warum viele Einheimische ihn für das Beste an der Paella halten."
+    },
+    "es": {
+     "t": "La paella y los arroces de España",
+     "g": "Conoce la paella valenciana y a sus muchos primos deliciosos.",
+     "p": [
+      "La paella valenciana tradicional lleva arroz, pollo, conejo, judía verde y garrofó, con azafrán.",
+      "Sus primos incluyen la paella de marisco, el arroz negro con tinta de calamar y la fideuà, hecha con fideos cortos.",
+      "En España la paella suele ser un plato de mediodía, a menudo compartido el fin de semana directamente de la paellera."
+     ],
+     "q": "¿Elegirías la paella valenciana tradicional o una de marisco?",
+     "c": "Investiga qué es el socarrat y por qué muchos locales creen que es lo mejor de la paella."
+    },
+    "fr": {
+     "t": "La paella et les plats de riz espagnols",
+     "g": "Découvre la paella valencienne et ses nombreuses cousines.",
+     "p": [
+      "La paella valencienne traditionnelle réunit riz, poulet, lapin, haricots verts et gros haricots blancs, parfumés au safran.",
+      "Ses cousines : la paella aux fruits de mer, l'arroz negro coloré à l'encre de seiche et la fideuà aux petites nouilles.",
+      "En Espagne, la paella se mange plutôt le midi, souvent partagée le week-end directement dans la grande poêle."
+     ],
+     "q": "Choisirais-tu la paella valencienne traditionnelle ou une version aux fruits de mer ?",
+     "c": "Cherche ce qu'est le socarrat et pourquoi beaucoup d'habitants le trouvent meilleur que tout."
+    },
+    "it": {
+     "t": "La paella e i piatti di riso spagnoli",
+     "g": "Conosci la paella valenciana e i suoi tanti cugini deliziosi.",
+     "p": [
+      "La paella valenciana tradizionale ha riso, pollo, coniglio, fagiolini e grandi fagioli bianchi, insaporiti con zafferano.",
+      "Tra i suoi cugini ci sono la paella di mare, l'arroz negro col nero di seppia e la fideuà con spaghettini corti.",
+      "In Spagna la paella è di solito un piatto da pranzo, spesso condiviso nel weekend direttamente dalla padella larga."
+     ],
+     "q": "Sceglieresti la paella valenciana tradizionale o quella di mare?",
+     "c": "Scopri cos'è il socarrat e perché molti spagnoli pensano sia la parte migliore della paella."
+    },
+    "pt": {
+     "t": "A paella e os arrozes de Espanha",
+     "g": "Conhece a paella valenciana e os seus muitos primos deliciosos.",
+     "p": [
+      "A paella valenciana tradicional leva arroz, frango, coelho, feijão-verde e feijão branco graúdo, com açafrão.",
+      "Os primos incluem a paella de marisco, o arroz negro com tinta de choco e a fideuà, feita com massa curta.",
+      "Em Espanha a paella é sobretudo um prato de almoço, muitas vezes partilhado ao fim de semana diretamente da panela larga."
+     ],
+     "q": "Escolherias a paella valenciana tradicional ou uma de marisco?",
+     "c": "Pesquisa o que é o socarrat e porque muitos locais acham que é a melhor parte da paella."
+    },
+    "pt_BR": {
+     "t": "A paella e os arrozes da Espanha",
+     "g": "Conheça a paella valenciana e seus muitos primos deliciosos.",
+     "p": [
+      "A paella valenciana tradicional leva arroz, frango, coelho, vagem e feijão-branco graúdo, com açafrão.",
+      "Os primos incluem a paella de frutos do mar, o arroz negro com tinta de lula e a fideuà, feita com macarrão curtinho.",
+      "Na Espanha a paella costuma ser prato de almoço, muitas vezes dividido no fim de semana direto da panela larga."
+     ],
+     "q": "Você escolheria a paella valenciana tradicional ou uma de frutos do mar?",
+     "c": "Pesquise o que é o socarrat e por que muitos locais acham que é a melhor parte da paella."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Portugal: comfort and the sea",
+     "g": "Discover bacalhau, grilled sardines and custard tarts in Portugal.",
+     "p": [
+      "Bacalhau, dried salted cod, is a national passion, and people say there is a recipe for every day of the year.",
+      "In summer grilled sardines fill streets with smoky aromas, often eaten on a slice of bread during June festivals.",
+      "Pastéis de nata, the custard tarts you met earlier, are best warm, with a dusting of cinnamon and icing sugar."
+     ],
+     "q": "Which Portuguese dish would you try first: bacalhau, sardines or a pastel de nata?",
+     "c": "Find one bacalhau dish by name and learn how it is prepared."
+    },
+    "de": {
+     "t": "Portugal: Hausmannskost und Meer",
+     "g": "Entdecke Bacalhau, gegrillte Sardinen und Puddingtörtchen in Portugal.",
+     "p": [
+      "Bacalhau, getrockneter Salzkabeljau, ist eine Nationalleidenschaft, man sagt, es gebe ein Rezept für jeden Tag des Jahres.",
+      "Im Sommer duften die Straßen nach gegrillten Sardinen, die man bei den Junifesten oft auf einer Scheibe Brot isst.",
+      "Pastéis de Nata, die Puddingtörtchen von neulich, schmecken warm am besten, mit Zimt und Puderzucker bestäubt."
+     ],
+     "q": "Was würdest du in Portugal zuerst probieren: Bacalhau, Sardinen oder ein Pastel de Nata?",
+     "c": "Finde ein Bacalhau-Gericht mit Namen und lerne, wie es zubereitet wird."
+    },
+    "es": {
+     "t": "Portugal: cocina reconfortante y mar",
+     "g": "Descubre el bacalhau, las sardinas asadas y los pastelitos de nata de Portugal.",
+     "p": [
+      "El bacalhau, bacalao seco y salado, es una pasión nacional, y se dice que hay una receta para cada día del año.",
+      "En verano las sardinas asadas llenan las calles de aroma, y en las fiestas de junio se comen sobre una rebanada de pan.",
+      "Los pastéis de nata, que ya conociste, están mejor templados, con un toque de canela y azúcar glas."
+     ],
+     "q": "¿Qué plato portugués probarías primero: bacalhau, sardinas o un pastel de nata?",
+     "c": "Busca el nombre de un plato de bacalhau y aprende cómo se prepara."
+    },
+    "fr": {
+     "t": "Le Portugal : réconfort et océan",
+     "g": "Découvre la morue, les sardines grillées et les pastéis de nata au Portugal.",
+     "p": [
+      "Le bacalhau, morue séchée et salée, est une passion nationale : on dit qu'il existe une recette pour chaque jour de l'année.",
+      "L'été, les sardines grillées parfument les rues, souvent dégustées sur une tranche de pain lors des fêtes de juin.",
+      "Les pastéis de nata, déjà rencontrés, sont meilleurs tièdes, avec un voile de cannelle et de sucre glace."
+     ],
+     "q": "Quel plat portugais goûterais-tu en premier : morue, sardines ou pastel de nata ?",
+     "c": "Trouve le nom d'un plat de bacalhau et découvre comment on le prépare."
+    },
+    "it": {
+     "t": "Portogallo: comfort food e mare",
+     "g": "Scopri il bacalhau, le sardine alla griglia e le tortine alla crema del Portogallo.",
+     "p": [
+      "Il bacalhau, merluzzo essiccato e salato, è una passione nazionale: si dice che esista una ricetta per ogni giorno dell'anno.",
+      "D'estate le sardine alla griglia profumano le strade, spesso mangiate su una fetta di pane durante le feste di giugno.",
+      "I pastéis de nata, che hai già incontrato, sono migliori tiepidi, con una spolverata di cannella e zucchero a velo."
+     ],
+     "q": "Quale piatto portoghese proveresti per primo: bacalhau, sardine o un pastel de nata?",
+     "c": "Trova il nome di un piatto di bacalhau e scopri come si prepara."
+    },
+    "pt": {
+     "t": "Portugal: conforto e mar",
+     "g": "Descobre o bacalhau, as sardinhas assadas e os pastéis de nata.",
+     "p": [
+      "O bacalhau é uma paixão nacional, e diz-se que há uma receita para cada dia do ano.",
+      "No verão as sardinhas assadas enchem as ruas de cheiro a brasa, muitas vezes comidas numa fatia de pão nos santos populares.",
+      "Os pastéis de nata, que já conheceste, sabem melhor mornos, polvilhados com canela e açúcar em pó."
+     ],
+     "q": "Que prato português provarias primeiro: bacalhau, sardinhas ou um pastel de nata?",
+     "c": "Encontra o nome de um prato de bacalhau e aprende como se prepara."
+    },
+    "pt_BR": {
+     "t": "Portugal: conforto e mar",
+     "g": "Descubra o bacalhau, a sardinha assada e os pastéis de nata de Portugal.",
+     "p": [
+      "O bacalhau, seco e salgado, é uma paixão nacional, e dizem que existe uma receita para cada dia do ano.",
+      "No verão a sardinha assada enche as ruas de cheiro de brasa, muitas vezes comida sobre uma fatia de pão nas festas de junho.",
+      "Os pastéis de nata, que você já conheceu, ficam melhores mornos, polvilhados com canela e açúcar de confeiteiro."
+     ],
+     "q": "Qual prato português você provaria primeiro: bacalhau, sardinha ou um pastel de nata?",
+     "c": "Encontre o nome de um prato de bacalhau e aprenda como ele é preparado."
+    }
+   }
+  }
+ ]
+}

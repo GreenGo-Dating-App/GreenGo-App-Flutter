@@ -1,0 +1,835 @@
+{
+ "topic": "running",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Motivation on lazy days",
+     "g": "Learn simple tricks to get out the door when you do not feel like it.",
+     "p": [
+      "Lay out your clothes the night before so starting takes no decisions.",
+      "Remind yourself how good you usually feel after a run, not before.",
+      "On low days, a shorter or slower run still keeps the habit alive."
+     ],
+     "q": "What usually stops you from going out when you planned to exercise?",
+     "c": "Write a short note to your future lazy self explaining why today's run is worth it."
+    },
+    "de": {
+     "t": "Motivation an faulen Tagen",
+     "g": "Lerne einfache Tricks, um rauszugehen, wenn du keine Lust hast.",
+     "p": [
+      "Leg die Kleidung am Vorabend bereit, dann musst du nichts mehr entscheiden.",
+      "Erinner dich daran, wie gut du dich meist nach einem Lauf fühlst, nicht davor.",
+      "An schwachen Tagen hält auch ein kürzerer oder langsamerer Lauf die Gewohnheit am Leben."
+     ],
+     "q": "Was hält dich meistens davon ab, rauszugehen, wenn du Sport geplant hast?",
+     "c": "Schreib deinem zukünftigen faulen Ich eine kurze Notiz, warum sich der heutige Lauf lohnt."
+    },
+    "es": {
+     "t": "Motivación en días de pereza",
+     "g": "Aprende trucos sencillos para salir aunque no te apetezca.",
+     "p": [
+      "Deja la ropa preparada la noche anterior para no tener que decidir nada.",
+      "Recuerda lo bien que sueles sentirte después de correr, no antes.",
+      "En días flojos, una salida más corta o lenta mantiene vivo el hábito."
+     ],
+     "q": "¿Qué suele impedirte salir cuando habías planeado hacer ejercicio?",
+     "c": "Escribe una nota a tu yo perezoso del futuro explicando por qué merece la pena correr hoy."
+    },
+    "fr": {
+     "t": "La motivation les jours sans",
+     "g": "Apprends des astuces simples pour sortir quand tu n'en as pas envie.",
+     "p": [
+      "Prépare tes affaires la veille pour ne plus avoir de décision à prendre.",
+      "Rappelle-toi à quel point tu te sens bien après une sortie, pas avant.",
+      "Les jours sans, une sortie plus courte ou plus lente entretient l'habitude."
+     ],
+     "q": "Qu'est-ce qui t'empêche le plus souvent de sortir quand tu avais prévu du sport ?",
+     "c": "Écris un petit mot à ton futur toi sans motivation pour expliquer pourquoi la sortie du jour vaut le coup."
+    },
+    "it": {
+     "t": "Motivazione nei giorni pigri",
+     "g": "Impara trucchi semplici per uscire anche quando non ne hai voglia.",
+     "p": [
+      "Prepara i vestiti la sera prima, così non devi decidere nulla.",
+      "Ricorda quanto ti senti bene di solito dopo una corsa, non prima.",
+      "Nei giorni no, una corsa più breve o lenta tiene viva l'abitudine."
+     ],
+     "q": "Cosa ti impedisce di solito di uscire quando avevi programmato di allenarti?",
+     "c": "Scrivi un biglietto al te stesso pigro del futuro spiegando perché la corsa di oggi vale la pena."
+    },
+    "pt": {
+     "t": "Motivação nos dias de preguiça",
+     "g": "Aprende truques simples para sair de casa quando não te apetece.",
+     "p": [
+      "Deixa a roupa preparada na véspera para não teres de decidir nada.",
+      "Lembra-te de como te costumas sentir bem depois de correr, não antes.",
+      "Nos dias fracos, uma corrida mais curta ou lenta mantém o hábito vivo."
+     ],
+     "q": "O que costuma impedir-te de sair quando tinhas planeado fazer exercício?",
+     "c": "Escreve uma nota ao teu eu preguiçoso do futuro a explicar porque vale a pena correr hoje."
+    },
+    "pt_BR": {
+     "t": "Motivação nos dias de preguiça",
+     "g": "Aprenda truques simples para sair de casa quando bate a preguiça.",
+     "p": [
+      "Deixe a roupa separada na noite anterior para não precisar decidir nada.",
+      "Lembre como você costuma se sentir bem depois de correr, e não antes.",
+      "Em dias fracos, uma corrida mais curta ou lenta mantém o hábito vivo."
+     ],
+     "q": "O que costuma impedir você de sair quando tinha planejado se exercitar?",
+     "c": "Escreva um bilhete para o seu eu preguiçoso do futuro explicando por que vale correr hoje."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The five-minute rule",
+     "g": "Learn a simple promise that beats procrastination.",
+     "p": [
+      "Tell yourself you will run for just five minutes, then decide if you continue.",
+      "Starting is often the hardest part; once moving, most people keep going.",
+      "If you still want to stop after five minutes, that is fine and still counts."
+     ],
+     "q": "Is there anything else in your life where just starting is the hardest part?",
+     "c": "Use the five-minute rule for your next run and note whether you kept going."
+    },
+    "de": {
+     "t": "Die Fünf-Minuten-Regel",
+     "g": "Lerne ein einfaches Versprechen, das gegen Aufschieben hilft.",
+     "p": [
+      "Nimm dir vor, nur fünf Minuten zu laufen, und entscheide dann, ob du weitermachst.",
+      "Der Anfang ist oft das Schwerste; einmal in Bewegung, bleiben die meisten dabei.",
+      "Willst du nach fünf Minuten immer noch aufhören, ist das okay und zählt trotzdem."
+     ],
+     "q": "Gibt es noch etwas in deinem Leben, wo das Anfangen das Schwerste ist?",
+     "c": "Nutze die Fünf-Minuten-Regel beim nächsten Lauf und notiere, ob du weitergelaufen bist."
+    },
+    "es": {
+     "t": "La regla de los cinco minutos",
+     "g": "Aprende una promesa sencilla que vence a la pereza de empezar.",
+     "p": [
+      "Dite que correrás solo cinco minutos y luego decide si sigues.",
+      "Empezar suele ser lo más difícil; una vez en marcha, casi todos continúan.",
+      "Si tras cinco minutos aún quieres parar, no pasa nada y también cuenta."
+     ],
+     "q": "¿Hay algo más en tu vida en lo que empezar sea lo más difícil?",
+     "c": "Usa la regla de los cinco minutos en tu próxima salida y anota si seguiste corriendo."
+    },
+    "fr": {
+     "t": "La règle des cinq minutes",
+     "g": "Apprends une promesse simple qui bat la procrastination.",
+     "p": [
+      "Dis-toi que tu cours juste cinq minutes, puis décide si tu continues.",
+      "Démarrer est souvent le plus dur ; une fois lancé, on continue généralement.",
+      "Si tu veux encore t'arrêter après cinq minutes, c'est très bien et ça compte quand même."
+     ],
+     "q": "Y a-t-il autre chose dans ta vie où commencer est le plus difficile ?",
+     "c": "Applique la règle des cinq minutes à ta prochaine sortie et note si tu as continué."
+    },
+    "it": {
+     "t": "La regola dei cinque minuti",
+     "g": "Impara una promessa semplice che batte la procrastinazione.",
+     "p": [
+      "Dì a te stesso che correrai solo cinque minuti, poi decidi se continuare.",
+      "Iniziare è spesso la parte più dura; una volta partiti, quasi tutti proseguono.",
+      "Se dopo cinque minuti vuoi ancora fermarti, va bene e conta comunque."
+     ],
+     "q": "C'è altro nella tua vita in cui iniziare è la parte più difficile?",
+     "c": "Usa la regola dei cinque minuti nella prossima corsa e annota se hai continuato."
+    },
+    "pt": {
+     "t": "A regra dos cinco minutos",
+     "g": "Aprende uma promessa simples que vence a procrastinação.",
+     "p": [
+      "Diz a ti próprio que vais correr só cinco minutos e depois decides se continuas.",
+      "Começar é muitas vezes o mais difícil; depois de arrancar, a maioria continua.",
+      "Se ao fim de cinco minutos ainda quiseres parar, não faz mal e conta na mesma."
+     ],
+     "q": "Há mais alguma coisa na tua vida em que começar seja o mais difícil?",
+     "c": "Usa a regra dos cinco minutos na próxima corrida e anota se continuaste."
+    },
+    "pt_BR": {
+     "t": "A regra dos cinco minutos",
+     "g": "Aprenda uma promessa simples que vence a procrastinação.",
+     "p": [
+      "Diga a si mesmo que vai correr só cinco minutos e depois decida se continua.",
+      "Começar costuma ser a parte mais difícil; depois que engata, quase todo mundo continua.",
+      "Se depois de cinco minutos você ainda quiser parar, tudo bem, e conta do mesmo jeito."
+     ],
+     "q": "Tem mais alguma coisa na sua vida em que começar é a parte mais difícil?",
+     "c": "Use a regra dos cinco minutos na próxima corrida e anote se você continuou."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running with music",
+     "g": "Learn how music can lift your runs while you stay aware of your surroundings.",
+     "p": [
+      "Upbeat songs can make easy runs feel lighter and more fun.",
+      "Songs with a steady beat can help you keep a relaxed rhythm.",
+      "Keep the volume low or use one earbud so you can hear traffic and people."
+     ],
+     "q": "Which song always gives you energy when you hear it?",
+     "c": "Build a 20-minute running playlist with songs that make you smile."
+    },
+    "de": {
+     "t": "Laufen mit Musik",
+     "g": "Lerne, wie Musik deine Läufe beflügelt, während du deine Umgebung im Blick behältst.",
+     "p": [
+      "Fröhliche Songs lassen lockere Läufe leichter und lustiger wirken.",
+      "Lieder mit gleichmäßigem Beat helfen, einen entspannten Rhythmus zu halten.",
+      "Hör leise oder nur mit einem Ohrstöpsel, damit du Verkehr und Menschen hörst."
+     ],
+     "q": "Welcher Song gibt dir jedes Mal Energie, wenn du ihn hörst?",
+     "c": "Stell eine 20-minütige Lauf-Playlist mit Liedern zusammen, die dich zum Lächeln bringen."
+    },
+    "es": {
+     "t": "Correr con música",
+     "g": "Aprende cómo la música anima tus carreras sin perder la atención al entorno.",
+     "p": [
+      "Las canciones alegres hacen que las salidas suaves parezcan más ligeras y divertidas.",
+      "Un ritmo constante en la música ayuda a mantener una zancada relajada.",
+      "Baja el volumen o usa un solo auricular para oír el tráfico y a la gente."
+     ],
+     "q": "¿Qué canción te da energía cada vez que la escuchas?",
+     "c": "Crea una lista de 20 minutos para correr con canciones que te hagan sonreír."
+    },
+    "fr": {
+     "t": "Courir en musique",
+     "g": "Apprends comment la musique dynamise tes sorties tout en restant attentif à ton environnement.",
+     "p": [
+      "Des morceaux entraînants rendent les sorties faciles plus légères et plus fun.",
+      "Un rythme régulier aide à garder une foulée détendue.",
+      "Garde le volume bas ou une seule oreillette pour entendre la circulation et les gens."
+     ],
+     "q": "Quelle chanson te donne de l'énergie à chaque écoute ?",
+     "c": "Crée une playlist de course de 20 minutes avec des morceaux qui te font sourire."
+    },
+    "it": {
+     "t": "Correre con la musica",
+     "g": "Scopri come la musica rende più belle le corse restando attento a ciò che ti circonda.",
+     "p": [
+      "Canzoni allegre rendono le corse leggere più facili e divertenti.",
+      "Un ritmo costante nella musica aiuta a mantenere una falcata rilassata.",
+      "Tieni il volume basso o usa un solo auricolare per sentire traffico e persone."
+     ],
+     "q": "Quale canzone ti dà energia ogni volta che la ascolti?",
+     "c": "Crea una playlist di corsa da 20 minuti con canzoni che ti fanno sorridere."
+    },
+    "pt": {
+     "t": "Correr com música",
+     "g": "Aprende como a música anima as corridas sem deixares de estar atento ao que te rodeia.",
+     "p": [
+      "Músicas animadas tornam as corridas leves mais fáceis e divertidas.",
+      "Um ritmo constante na música ajuda a manter uma passada descontraída.",
+      "Mantém o volume baixo ou usa só um auricular para ouvires o trânsito e as pessoas."
+     ],
+     "q": "Que música te dá energia sempre que a ouves?",
+     "c": "Cria uma playlist de corrida de 20 minutos com músicas que te façam sorrir."
+    },
+    "pt_BR": {
+     "t": "Correndo com música",
+     "g": "Aprenda como a música anima a corrida sem você perder a atenção ao redor.",
+     "p": [
+      "Músicas animadas deixam as corridas leves mais fáceis e divertidas.",
+      "Uma batida constante ajuda a manter uma passada relaxada.",
+      "Deixe o volume baixo ou use um fone só para ouvir o trânsito e as pessoas."
+     ],
+     "q": "Qual música sempre te dá energia quando você ouve?",
+     "c": "Monte uma playlist de corrida de 20 minutos com músicas que te façam sorrir."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Podcasts and audiobooks",
+     "g": "Turn easy runs into learning time or story time.",
+     "p": [
+      "Podcasts and audiobooks suit slow, relaxed runs where you can follow along.",
+      "A gripping story can make you look forward to your next run.",
+      "Keep the volume moderate and pause it at busy crossings."
+     ],
+     "q": "What topic or story would you love to listen to while running?",
+     "c": "Pick one podcast episode or audiobook chapter to save just for your next easy run."
+    },
+    "de": {
+     "t": "Podcasts und Hörbücher",
+     "g": "Mach lockere Läufe zur Lern- oder Geschichtenzeit.",
+     "p": [
+      "Podcasts und Hörbücher passen zu langsamen, entspannten Läufen, bei denen du zuhören kannst.",
+      "Eine spannende Geschichte lässt dich auf den nächsten Lauf freuen.",
+      "Halte die Lautstärke moderat und pausiere an belebten Kreuzungen."
+     ],
+     "q": "Welches Thema oder welche Geschichte würdest du beim Laufen gern hören?",
+     "c": "Such dir eine Podcastfolge oder ein Hörbuchkapitel aus, das du nur für den nächsten lockeren Lauf aufhebst."
+    },
+    "es": {
+     "t": "Pódcasts y audiolibros",
+     "g": "Convierte tus carreras suaves en ratos de aprendizaje o de historias.",
+     "p": [
+      "Pódcasts y audiolibros encajan con salidas lentas y relajadas en las que puedes seguir el hilo.",
+      "Una historia que engancha hace que tengas ganas de la siguiente salida.",
+      "Mantén un volumen moderado y pausa en cruces concurridos."
+     ],
+     "q": "¿Qué tema o historia te encantaría escuchar mientras corres?",
+     "c": "Elige un episodio o capítulo y guárdalo solo para tu próxima salida suave."
+    },
+    "fr": {
+     "t": "Podcasts et livres audio",
+     "g": "Transforme tes sorties faciles en moments d'apprentissage ou d'histoires.",
+     "p": [
+      "Podcasts et livres audio vont bien avec les sorties lentes où tu peux suivre.",
+      "Une histoire captivante donne envie de repartir courir.",
+      "Garde un volume modéré et mets en pause aux carrefours animés."
+     ],
+     "q": "Quel sujet ou quelle histoire aimerais-tu écouter en courant ?",
+     "c": "Choisis un épisode ou un chapitre à garder uniquement pour ta prochaine sortie facile."
+    },
+    "it": {
+     "t": "Podcast e audiolibri",
+     "g": "Trasforma le corse leggere in momenti per imparare o ascoltare storie.",
+     "p": [
+      "Podcast e audiolibri sono perfetti per corse lente e rilassate in cui puoi seguire.",
+      "Una storia avvincente ti fa aspettare con gioia la prossima corsa.",
+      "Tieni un volume moderato e metti in pausa agli incroci trafficati."
+     ],
+     "q": "Quale argomento o storia ti piacerebbe ascoltare mentre corri?",
+     "c": "Scegli un episodio o un capitolo da tenere solo per la prossima corsa leggera."
+    },
+    "pt": {
+     "t": "Podcasts e audiolivros",
+     "g": "Transforma as corridas leves em tempo de aprender ou de ouvir histórias.",
+     "p": [
+      "Podcasts e audiolivros combinam com corridas lentas e calmas em que consegues acompanhar.",
+      "Uma história envolvente dá vontade de ir à próxima corrida.",
+      "Mantém o volume moderado e faz pausa em cruzamentos movimentados."
+     ],
+     "q": "Que tema ou história adorarias ouvir enquanto corres?",
+     "c": "Escolhe um episódio ou capítulo para guardares só para a próxima corrida leve."
+    },
+    "pt_BR": {
+     "t": "Podcasts e audiolivros",
+     "g": "Transforme as corridas leves em momentos de aprender ou ouvir histórias.",
+     "p": [
+      "Podcasts e audiolivros combinam com corridas lentas e tranquilas em que dá para acompanhar.",
+      "Uma história envolvente deixa você ansioso pela próxima corrida.",
+      "Mantenha o volume moderado e pause em cruzamentos movimentados."
+     ],
+     "q": "Que assunto ou história você adoraria ouvir enquanto corre?",
+     "c": "Escolha um episódio ou capítulo para guardar só para a próxima corrida leve."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running without devices",
+     "g": "Discover the calm and focus of running completely unplugged.",
+     "p": [
+      "Without screens or sound, you notice your breathing, steps and surroundings.",
+      "Running by feel teaches you what easy effort really is.",
+      "Many runners find unplugged runs relaxing, almost like moving meditation."
+     ],
+     "q": "When was the last time you spent half an hour without any screen?",
+     "c": "Do your next easy run with no music and no tracking, and notice three things around you."
+    },
+    "de": {
+     "t": "Laufen ohne Geräte",
+     "g": "Entdecke die Ruhe und Konzentration beim Laufen ganz ohne Technik.",
+     "p": [
+      "Ohne Bildschirm und Ton bemerkst du Atmung, Schritte und Umgebung.",
+      "Laufen nach Gefühl lehrt dich, was lockere Anstrengung wirklich ist.",
+      "Viele empfinden Läufe ohne Technik als entspannend, fast wie Meditation in Bewegung."
+     ],
+     "q": "Wann hast du zuletzt eine halbe Stunde ganz ohne Bildschirm verbracht?",
+     "c": "Lauf deine nächste lockere Runde ohne Musik und Aufzeichnung und achte auf drei Dinge um dich herum."
+    },
+    "es": {
+     "t": "Correr sin dispositivos",
+     "g": "Descubre la calma y la concentración de correr totalmente desconectado.",
+     "p": [
+      "Sin pantallas ni sonido notas tu respiración, tus pasos y lo que te rodea.",
+      "Correr por sensaciones te enseña qué es de verdad un esfuerzo suave.",
+      "Mucha gente encuentra relajante correr desconectada, casi como meditar en movimiento."
+     ],
+     "q": "¿Cuándo fue la última vez que pasaste media hora sin ninguna pantalla?",
+     "c": "Haz tu próxima salida suave sin música ni registro y fíjate en tres cosas a tu alrededor."
+    },
+    "fr": {
+     "t": "Courir sans appareils",
+     "g": "Découvre le calme et la concentration d'une course totalement déconnectée.",
+     "p": [
+      "Sans écran ni son, tu remarques ta respiration, tes pas et ce qui t'entoure.",
+      "Courir aux sensations t'apprend ce qu'est vraiment un effort facile.",
+      "Beaucoup trouvent ces sorties apaisantes, presque comme une méditation en mouvement."
+     ],
+     "q": "À quand remonte la dernière demi-heure que tu as passée sans aucun écran ?",
+     "c": "Fais ta prochaine sortie facile sans musique ni suivi et remarque trois choses autour de toi."
+    },
+    "it": {
+     "t": "Correre senza dispositivi",
+     "g": "Scopri la calma e la concentrazione di una corsa completamente scollegata.",
+     "p": [
+      "Senza schermi né suoni noti il respiro, i passi e ciò che ti circonda.",
+      "Correre a sensazione ti insegna cos'è davvero uno sforzo leggero.",
+      "Molti trovano rilassanti queste corse, quasi una meditazione in movimento."
+     ],
+     "q": "Quando hai passato l'ultima volta mezz'ora senza alcuno schermo?",
+     "c": "Fai la prossima corsa leggera senza musica né registrazione e nota tre cose intorno a te."
+    },
+    "pt": {
+     "t": "Correr sem aparelhos",
+     "g": "Descobre a calma e a concentração de correr totalmente desligado.",
+     "p": [
+      "Sem ecrãs nem som, reparas na respiração, nos passos e no que te rodeia.",
+      "Correr por sensações ensina-te o que é de facto um esforço leve.",
+      "Muitos corredores acham estas corridas relaxantes, quase uma meditação em movimento."
+     ],
+     "q": "Quando foi a última vez que passaste meia hora sem nenhum ecrã?",
+     "c": "Faz a próxima corrida leve sem música nem registo e repara em três coisas à tua volta."
+    },
+    "pt_BR": {
+     "t": "Correndo sem aparelhos",
+     "g": "Descubra a calma e o foco de correr totalmente desconectado.",
+     "p": [
+      "Sem telas nem som, você percebe sua respiração, seus passos e o que está ao redor.",
+      "Correr pela sensação ensina o que é de verdade um esforço leve.",
+      "Muitos corredores acham isso relaxante, quase uma meditação em movimento."
+     ],
+     "q": "Quando foi a última vez que você passou meia hora sem nenhuma tela?",
+     "c": "Faça a próxima corrida leve sem música nem registro e repare em três coisas ao seu redor."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running with a friend",
+     "g": "See how a running buddy helps consistency and makes runs social.",
+     "p": [
+      "A fixed plan with a friend makes it much harder to skip a session.",
+      "Chatting at an easy pace makes time pass quickly and keeps the effort gentle.",
+      "Choose someone at a similar level, or agree that the faster one adapts."
+     ],
+     "q": "Who in your life might enjoy a relaxed run or walk with you?",
+     "c": "Send a message to one friend today inviting them to a short, easy run or walk."
+    },
+    "de": {
+     "t": "Laufen mit Freunden",
+     "g": "Erfahre, wie ein Laufpartner für Regelmäßigkeit sorgt und Läufe gesellig macht.",
+     "p": [
+      "Eine feste Verabredung macht es viel schwerer, eine Einheit ausfallen zu lassen.",
+      "Plaudern im lockeren Tempo lässt die Zeit verfliegen und hält die Anstrengung sanft.",
+      "Wähl jemanden auf ähnlichem Niveau oder vereinbart, dass sich der Schnellere anpasst."
+     ],
+     "q": "Wer in deinem Umfeld hätte Lust auf einen entspannten Lauf oder Spaziergang mit dir?",
+     "c": "Schreib heute einer Person und lade sie zu einem kurzen, lockeren Lauf oder Spaziergang ein."
+    },
+    "es": {
+     "t": "Correr con un amigo",
+     "g": "Descubre cómo un compañero de carrera ayuda a la constancia y hace las salidas más sociales.",
+     "p": [
+      "Un plan fijo con alguien hace mucho más difícil saltarse una sesión.",
+      "Charlar a ritmo suave hace que el tiempo vuele y mantiene el esfuerzo tranquilo.",
+      "Elige a alguien de nivel parecido o acordad que el más rápido se adapte."
+     ],
+     "q": "¿Quién de tu entorno podría disfrutar de una carrera o un paseo tranquilo contigo?",
+     "c": "Escribe hoy a alguien para invitarle a una carrera o paseo corto y suave."
+    },
+    "fr": {
+     "t": "Courir avec un ami",
+     "g": "Découvre comment un partenaire de course aide la régularité et rend les sorties conviviales.",
+     "p": [
+      "Un rendez-vous fixe avec quelqu'un rend beaucoup plus difficile de sauter une séance.",
+      "Discuter à allure facile fait passer le temps vite et garde l'effort doux.",
+      "Choisis quelqu'un de niveau proche, ou convenez que le plus rapide s'adapte."
+     ],
+     "q": "Qui dans ton entourage aimerait une course ou une marche tranquille avec toi ?",
+     "c": "Envoie aujourd'hui un message à quelqu'un pour l'inviter à une courte sortie facile."
+    },
+    "it": {
+     "t": "Correre con un amico",
+     "g": "Scopri come un compagno di corsa aiuta la costanza e rende le uscite più sociali.",
+     "p": [
+      "Un appuntamento fisso con qualcuno rende molto più difficile saltare una sessione.",
+      "Chiacchierare a ritmo leggero fa volare il tempo e mantiene lo sforzo dolce.",
+      "Scegli qualcuno di livello simile, o accordatevi che il più veloce si adatti."
+     ],
+     "q": "Chi nella tua vita potrebbe apprezzare una corsa o una camminata tranquilla con te?",
+     "c": "Scrivi oggi a qualcuno per invitarlo a una corsa o camminata breve e leggera."
+    },
+    "pt": {
+     "t": "Correr com um amigo",
+     "g": "Percebe como um parceiro de corrida ajuda a regularidade e torna as corridas sociais.",
+     "p": [
+      "Um combinado fixo com alguém torna muito mais difícil faltar a uma sessão.",
+      "Conversar a um ritmo leve faz o tempo voar e mantém o esforço suave.",
+      "Escolhe alguém com um nível parecido ou combinem que o mais rápido se adapta."
+     ],
+     "q": "Quem na tua vida poderia gostar de uma corrida ou caminhada calma contigo?",
+     "c": "Envia hoje uma mensagem a alguém a convidar para uma corrida ou caminhada curta e leve."
+    },
+    "pt_BR": {
+     "t": "Correndo com um amigo",
+     "g": "Veja como um parceiro de corrida ajuda na constância e deixa os treinos mais sociais.",
+     "p": [
+      "Um compromisso fixo com alguém torna muito mais difícil faltar a um treino.",
+      "Bater papo num ritmo leve faz o tempo voar e mantém o esforço suave.",
+      "Escolha alguém de nível parecido ou combinem que o mais rápido se adapta."
+     ],
+     "q": "Quem na sua vida poderia curtir uma corrida ou caminhada tranquila com você?",
+     "c": "Mande hoje uma mensagem convidando alguém para uma corrida ou caminhada curta e leve."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Joining a running club",
+     "g": "Find out what running clubs offer and what to expect on a first group run.",
+     "p": [
+      "Many clubs welcome beginners and have groups for different paces.",
+      "Group runs bring structure, tips from experienced runners and new friends.",
+      "On your first visit, tell the leader you are new; they will help you find your group."
+     ],
+     "q": "Would you feel more excited or nervous about running with a group?",
+     "c": "Look up one running club or group run near you and note its day and meeting point."
+    },
+    "de": {
+     "t": "Einem Lauftreff beitreten",
+     "g": "Finde heraus, was Lauftreffs bieten und was dich beim ersten Gruppenlauf erwartet.",
+     "p": [
+      "Viele Lauftreffs heißen Anfänger willkommen und haben Gruppen für verschiedene Tempi.",
+      "Gruppenläufe bringen Struktur, Tipps von Erfahrenen und neue Freundschaften.",
+      "Sag beim ersten Mal der Leitung, dass du neu bist; sie hilft dir, deine Gruppe zu finden."
+     ],
+     "q": "Wärst du eher aufgeregt oder nervös, mit einer Gruppe zu laufen?",
+     "c": "Such einen Lauftreff in deiner Nähe und notiere Tag und Treffpunkt."
+    },
+    "es": {
+     "t": "Unirse a un club de running",
+     "g": "Descubre qué ofrecen los clubes y qué esperar en tu primera salida en grupo.",
+     "p": [
+      "Muchos clubes reciben a principiantes y tienen grupos para distintos ritmos.",
+      "Correr en grupo aporta estructura, consejos de gente con experiencia y nuevas amistades.",
+      "El primer día, di al responsable que eres nuevo; te ayudará a encontrar tu grupo."
+     ],
+     "q": "¿Te sentirías más ilusionado o nervioso al correr con un grupo?",
+     "c": "Busca un club o grupo de running cerca de ti y anota el día y el punto de encuentro."
+    },
+    "fr": {
+     "t": "Rejoindre un club de course",
+     "g": "Découvre ce qu'offrent les clubs et à quoi t'attendre lors d'une première sortie en groupe.",
+     "p": [
+      "Beaucoup de clubs accueillent les débutants et ont des groupes pour différentes allures.",
+      "Courir en groupe apporte une structure, des conseils de coureurs expérimentés et de nouveaux amis.",
+      "La première fois, dis à l'encadrant que tu es nouveau ; il t'aidera à trouver ton groupe."
+     ],
+     "q": "Serais-tu plutôt enthousiaste ou nerveux à l'idée de courir en groupe ?",
+     "c": "Cherche un club ou une sortie collective près de chez toi et note le jour et le lieu de rendez-vous."
+    },
+    "it": {
+     "t": "Unirsi a un gruppo di corsa",
+     "g": "Scopri cosa offrono i gruppi di corsa e cosa aspettarti alla prima uscita insieme.",
+     "p": [
+      "Molti gruppi accolgono i principianti e hanno gruppi per ritmi diversi.",
+      "Correre in gruppo porta struttura, consigli da chi ha esperienza e nuove amicizie.",
+      "La prima volta, di' al responsabile che sei nuovo: ti aiuterà a trovare il tuo gruppo."
+     ],
+     "q": "Saresti più entusiasta o nervoso all'idea di correre in gruppo?",
+     "c": "Cerca un gruppo di corsa vicino a te e annota giorno e punto di ritrovo."
+    },
+    "pt": {
+     "t": "Juntar-se a um clube de corrida",
+     "g": "Descobre o que os clubes oferecem e o que esperar na primeira corrida em grupo.",
+     "p": [
+      "Muitos clubes recebem principiantes e têm grupos para ritmos diferentes.",
+      "Correr em grupo traz estrutura, dicas de corredores experientes e novos amigos.",
+      "Na primeira vez, diz ao responsável que és novo; ele ajuda-te a encontrar o teu grupo."
+     ],
+     "q": "Sentirias mais entusiasmo ou nervosismo ao correr em grupo?",
+     "c": "Procura um clube ou grupo de corrida perto de ti e anota o dia e o ponto de encontro."
+    },
+    "pt_BR": {
+     "t": "Entrando num grupo de corrida",
+     "g": "Descubra o que as assessorias e grupos oferecem e o que esperar no primeiro treino em grupo.",
+     "p": [
+      "Muitos grupos recebem iniciantes e têm turmas para ritmos diferentes.",
+      "Correr em grupo traz estrutura, dicas de corredores experientes e novas amizades.",
+      "Na primeira vez, avise o responsável que você é novo; ele ajuda a achar sua turma."
+     ],
+     "q": "Você ficaria mais animado ou nervoso de correr em grupo?",
+     "c": "Procure um grupo de corrida perto de você e anote o dia e o ponto de encontro."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Free weekly community runs",
+     "g": "Discover free, timed community runs held in parks around the world.",
+     "p": [
+      "In many countries, volunteers organise free, timed weekly runs in local parks.",
+      "Everyone is welcome: runners, joggers, walkers, families and even dogs on a lead.",
+      "The friendly culture celebrates taking part, not finishing first."
+     ],
+     "q": "Would you enjoy a weekend morning run with a crowd of friendly strangers?",
+     "c": "Search whether a free weekly community run happens in a park near you."
+    },
+    "de": {
+     "t": "Kostenlose wöchentliche Parkläufe",
+     "g": "Entdecke kostenlose, zeitgemessene Gemeinschaftsläufe in Parks auf der ganzen Welt.",
+     "p": [
+      "In vielen Ländern organisieren Freiwillige kostenlose, wöchentliche Läufe mit Zeitmessung in Parks.",
+      "Alle sind willkommen: Läufer, Jogger, Spaziergänger, Familien und sogar Hunde an der Leine.",
+      "Die freundliche Kultur feiert das Mitmachen, nicht den ersten Platz."
+     ],
+     "q": "Hättest du Spaß an einem Lauf am Wochenendmorgen mit vielen freundlichen Fremden?",
+     "c": "Such heraus, ob in einem Park in deiner Nähe ein kostenloser wöchentlicher Gemeinschaftslauf stattfindet."
+    },
+    "es": {
+     "t": "Carreras populares semanales gratuitas",
+     "g": "Descubre las carreras comunitarias gratuitas y cronometradas que se hacen en parques de todo el mundo.",
+     "p": [
+      "En muchos países, voluntarios organizan carreras semanales gratis y cronometradas en parques.",
+      "Todos son bienvenidos: corredores, gente que trota o camina, familias e incluso perros con correa.",
+      "Su ambiente amable celebra participar, no llegar primero."
+     ],
+     "q": "¿Disfrutarías de una carrera un fin de semana por la mañana con mucha gente simpática?",
+     "c": "Busca si cerca de ti hay una carrera comunitaria semanal gratuita en algún parque."
+    },
+    "fr": {
+     "t": "Les courses communautaires gratuites",
+     "g": "Découvre les courses gratuites et chronométrées organisées chaque semaine dans des parcs du monde entier.",
+     "p": [
+      "Dans de nombreux pays, des bénévoles organisent des courses hebdomadaires gratuites dans les parcs.",
+      "Tout le monde est bienvenu : coureurs, marcheurs, familles et même chiens en laisse.",
+      "L'ambiance conviviale célèbre la participation, pas la première place."
+     ],
+     "q": "Aimerais-tu une course le week-end matin avec plein d'inconnus sympathiques ?",
+     "c": "Cherche s'il existe une course communautaire hebdomadaire gratuite dans un parc près de chez toi."
+    },
+    "it": {
+     "t": "Corse settimanali gratuite nei parchi",
+     "g": "Scopri le corse comunitarie gratuite e cronometrate che si svolgono nei parchi di tutto il mondo.",
+     "p": [
+      "In molti paesi, volontari organizzano corse settimanali gratuite e cronometrate nei parchi.",
+      "Tutti sono benvenuti: chi corre, chi cammina, famiglie e perfino cani al guinzaglio.",
+      "L'atmosfera amichevole celebra la partecipazione, non l'arrivare primi."
+     ],
+     "q": "Ti piacerebbe una corsa nel weekend mattina insieme a tanti sconosciuti simpatici?",
+     "c": "Cerca se in un parco vicino a te si tiene una corsa comunitaria settimanale gratuita."
+    },
+    "pt": {
+     "t": "Corridas comunitárias semanais gratuitas",
+     "g": "Descobre as corridas comunitárias gratuitas e cronometradas que se fazem em parques pelo mundo.",
+     "p": [
+      "Em muitos países, voluntários organizam corridas semanais gratuitas e cronometradas em parques.",
+      "Todos são bem-vindos: quem corre, quem caminha, famílias e até cães pela trela.",
+      "O ambiente simpático celebra a participação, não chegar em primeiro."
+     ],
+     "q": "Gostavas de uma corrida num sábado de manhã com muitos desconhecidos simpáticos?",
+     "c": "Pesquisa se há uma corrida comunitária semanal gratuita num parque perto de ti."
+    },
+    "pt_BR": {
+     "t": "Corridas comunitárias semanais gratuitas",
+     "g": "Conheça as corridas comunitárias gratuitas e cronometradas que acontecem em parques pelo mundo.",
+     "p": [
+      "Em muitos países, voluntários organizam corridas semanais gratuitas e cronometradas em parques.",
+      "Todo mundo é bem-vindo: quem corre, quem caminha, famílias e até cachorros na guia.",
+      "O clima acolhedor celebra participar, e não chegar em primeiro."
+     ],
+     "q": "Você curtiria uma corrida de fim de semana de manhã com muita gente simpática?",
+     "c": "Pesquise se existe uma corrida comunitária semanal gratuita num parque perto de você."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stretching: what and when",
+     "g": "Learn general ideas about gentle mobility and stretching after runs.",
+     "p": [
+      "Gentle movement before a run and calm stretching after tend to feel best.",
+      "Stretch only to mild tension, never to pain, and breathe slowly.",
+      "Hold easy stretches for calves, thighs and hips for around 20 to 30 seconds."
+     ],
+     "q": "Do you enjoy stretching, or is it something you tend to skip?",
+     "c": "After your next run, spend five minutes on gentle stretches for calves and thighs."
+    },
+    "de": {
+     "t": "Dehnen: was und wann",
+     "g": "Lerne allgemeine Ideen zu sanfter Mobilität und Dehnen nach dem Laufen.",
+     "p": [
+      "Lockere Bewegung vor dem Lauf und ruhiges Dehnen danach fühlen sich meist am besten an.",
+      "Dehne nur bis zu einer leichten Spannung, nie bis zum Schmerz, und atme ruhig.",
+      "Halte sanfte Dehnungen für Waden, Oberschenkel und Hüfte etwa 20 bis 30 Sekunden."
+     ],
+     "q": "Dehnst du gern, oder lässt du es eher weg?",
+     "c": "Nimm dir nach dem nächsten Lauf fünf Minuten für sanfte Dehnungen von Waden und Oberschenkeln."
+    },
+    "es": {
+     "t": "Estiramientos: qué y cuándo",
+     "g": "Conoce ideas generales sobre movilidad suave y estiramientos después de correr.",
+     "p": [
+      "Movimiento suave antes de correr y estiramientos tranquilos después suelen sentar mejor.",
+      "Estira solo hasta notar una tensión leve, nunca dolor, y respira despacio.",
+      "Mantén estiramientos suaves de gemelos, muslos y cadera unos 20 a 30 segundos."
+     ],
+     "q": "¿Disfrutas estirando o es algo que sueles saltarte?",
+     "c": "Después de tu próxima salida, dedica cinco minutos a estirar suavemente gemelos y muslos."
+    },
+    "fr": {
+     "t": "S'étirer : quoi et quand",
+     "g": "Découvre des idées générales sur la mobilité douce et les étirements après la course.",
+     "p": [
+      "Des mouvements doux avant et des étirements calmes après conviennent souvent le mieux.",
+      "Étire-toi jusqu'à une légère tension, jamais jusqu'à la douleur, en respirant lentement.",
+      "Tiens des étirements doux des mollets, des cuisses et des hanches 20 à 30 secondes."
+     ],
+     "q": "Aimes-tu t'étirer, ou as-tu tendance à zapper ce moment ?",
+     "c": "Après ta prochaine sortie, consacre cinq minutes à des étirements doux des mollets et des cuisses."
+    },
+    "it": {
+     "t": "Stretching: cosa e quando",
+     "g": "Scopri idee generali su mobilità dolce e stretching dopo la corsa.",
+     "p": [
+      "Movimenti leggeri prima e stretching tranquillo dopo sono di solito i più piacevoli.",
+      "Allunga solo fino a una leggera tensione, mai fino al dolore, respirando piano.",
+      "Tieni allungamenti dolci per polpacci, cosce e fianchi per circa 20-30 secondi."
+     ],
+     "q": "Ti piace fare stretching o tendi a saltarlo?",
+     "c": "Dopo la prossima corsa, dedica cinque minuti ad allungare con dolcezza polpacci e cosce."
+    },
+    "pt": {
+     "t": "Alongamentos: o quê e quando",
+     "g": "Conhece ideias gerais sobre mobilidade suave e alongamentos depois de correr.",
+     "p": [
+      "Movimento leve antes de correr e alongamentos calmos depois costumam saber melhor.",
+      "Alonga só até sentires uma tensão ligeira, nunca dor, e respira devagar.",
+      "Mantém alongamentos suaves de gémeos, coxas e anca durante 20 a 30 segundos."
+     ],
+     "q": "Gostas de alongar ou é algo que costumas saltar?",
+     "c": "Depois da próxima corrida, dedica cinco minutos a alongar suavemente os gémeos e as coxas."
+    },
+    "pt_BR": {
+     "t": "Alongamento: o quê e quando",
+     "g": "Conheça ideias gerais sobre mobilidade leve e alongamento depois da corrida.",
+     "p": [
+      "Movimento leve antes de correr e alongamento tranquilo depois costumam funcionar melhor.",
+      "Alongue só até sentir uma tensão leve, nunca dor, e respire devagar.",
+      "Segure alongamentos suaves de panturrilha, coxa e quadril por 20 a 30 segundos."
+     ],
+     "q": "Você gosta de alongar ou costuma pular essa parte?",
+     "c": "Depois da próxima corrida, reserve cinco minutos para alongar com calma panturrilhas e coxas."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple mobility routine",
+     "g": "Learn easy moves for hips, ankles and calves you can do at home.",
+     "p": [
+      "Hip circles and gentle leg swings loosen up stiff hips.",
+      "Ankle circles and slow calf raises keep your lower legs supple.",
+      "Five relaxed minutes a few times a week is plenty to start."
+     ],
+     "q": "When during your day could you fit in five minutes of easy movement?",
+     "c": "Do five minutes today: hip circles, leg swings, ankle circles and ten slow calf raises."
+    },
+    "de": {
+     "t": "Eine einfache Mobilitätsroutine",
+     "g": "Lerne leichte Übungen für Hüfte, Fußgelenke und Waden für zu Hause.",
+     "p": [
+      "Hüftkreisen und sanftes Beinschwingen lockern steife Hüften.",
+      "Fußkreisen und langsame Wadenheben halten die Unterschenkel geschmeidig.",
+      "Fünf entspannte Minuten ein paar Mal pro Woche reichen für den Anfang."
+     ],
+     "q": "Wann an deinem Tag passen fünf Minuten lockere Bewegung hinein?",
+     "c": "Mach heute fünf Minuten: Hüftkreisen, Beinschwingen, Fußkreisen und zehn langsame Wadenheben."
+    },
+    "es": {
+     "t": "Una rutina de movilidad sencilla",
+     "g": "Aprende movimientos fáciles para caderas, tobillos y gemelos que puedes hacer en casa.",
+     "p": [
+      "Los círculos de cadera y los balanceos suaves de pierna sueltan las caderas rígidas.",
+      "Los círculos de tobillo y las elevaciones lentas de talones mantienen ágiles las piernas.",
+      "Cinco minutos relajados unas cuantas veces por semana bastan para empezar."
+     ],
+     "q": "¿En qué momento del día podrías hacer cinco minutos de movimiento suave?",
+     "c": "Haz hoy cinco minutos: círculos de cadera, balanceos, círculos de tobillo y diez elevaciones lentas de talones."
+    },
+    "fr": {
+     "t": "Une routine de mobilité simple",
+     "g": "Apprends des mouvements faciles pour hanches, chevilles et mollets à faire chez toi.",
+     "p": [
+      "Les cercles de hanches et les balancés de jambes doux dénouent les hanches raides.",
+      "Les cercles de chevilles et les montées sur pointes lentes gardent le bas des jambes souple.",
+      "Cinq minutes détendues quelques fois par semaine suffisent pour commencer."
+     ],
+     "q": "À quel moment de ta journée pourrais-tu glisser cinq minutes de mouvement doux ?",
+     "c": "Fais cinq minutes aujourd'hui : cercles de hanches, balancés, cercles de chevilles et dix montées sur pointes lentes."
+    },
+    "it": {
+     "t": "Una semplice routine di mobilità",
+     "g": "Impara movimenti facili per fianchi, caviglie e polpacci da fare a casa.",
+     "p": [
+      "Cerchi con il bacino e slanci leggeri delle gambe sciolgono i fianchi rigidi.",
+      "Cerchi con le caviglie e sollevamenti lenti sulle punte mantengono agili le gambe.",
+      "Cinque minuti rilassati qualche volta a settimana bastano per iniziare."
+     ],
+     "q": "In quale momento della giornata potresti inserire cinque minuti di movimento leggero?",
+     "c": "Fai oggi cinque minuti: cerchi con il bacino, slanci, cerchi con le caviglie e dieci sollevamenti lenti sulle punte."
+    },
+    "pt": {
+     "t": "Uma rotina de mobilidade simples",
+     "g": "Aprende movimentos fáceis para ancas, tornozelos e gémeos para fazer em casa.",
+     "p": [
+      "Círculos com a anca e balanços suaves de pernas soltam as ancas rígidas.",
+      "Círculos com os tornozelos e elevações lentas dos calcanhares mantêm as pernas ágeis.",
+      "Cinco minutos descontraídos algumas vezes por semana chegam para começar."
+     ],
+     "q": "Em que momento do teu dia cabem cinco minutos de movimento leve?",
+     "c": "Faz hoje cinco minutos: círculos de anca, balanços, círculos de tornozelos e dez elevações lentas."
+    },
+    "pt_BR": {
+     "t": "Uma rotina simples de mobilidade",
+     "g": "Aprenda movimentos fáceis para quadril, tornozelos e panturrilhas para fazer em casa.",
+     "p": [
+      "Círculos com o quadril e balanços leves de perna soltam o quadril travado.",
+      "Círculos com os tornozelos e elevações lentas de calcanhar mantêm as pernas soltas.",
+      "Cinco minutos tranquilos algumas vezes por semana bastam para começar."
+     ],
+     "q": "Em que momento do seu dia cabem cinco minutos de movimento leve?",
+     "c": "Faça hoje cinco minutos: círculos de quadril, balanços, círculos de tornozelo e dez elevações lentas."
+    }
+   }
+  }
+ ]
+}

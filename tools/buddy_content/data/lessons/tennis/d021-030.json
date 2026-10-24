@@ -1,0 +1,835 @@
+{
+ "topic": "tennis",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The let",
+     "g": "Learn when a point is replayed, including serves that clip the net.",
+     "p": [
+      "A serve that touches the net and then lands in the correct box is a let: you simply serve that ball again.",
+      "A let is also called when something interferes, like a ball rolling onto the court from next door.",
+      "During a rally, a ball that clips the net and drops over is in play, so stay alert!"
+     ],
+     "q": "Have you ever seen a lucky net cord win a big point? How did the players react?",
+     "c": "Explain to a friend the difference between a let on a serve and a net cord during a rally."
+    },
+    "de": {
+     "t": "Der Let",
+     "g": "Lerne, wann ein Punkt wiederholt wird, auch bei Aufschlägen, die das Netz berühren.",
+     "p": [
+      "Berührt ein Aufschlag das Netz und landet im richtigen Feld, ist es ein Let: Du wiederholst diesen Aufschlag.",
+      "Ein Let gibt es auch bei Störungen, etwa wenn ein Ball vom Nachbarplatz ins Feld rollt.",
+      "Im Ballwechsel bleibt ein Ball, der die Netzkante streift und rüberfällt, im Spiel, also wach bleiben!"
+     ],
+     "q": "Hast du schon gesehen, wie eine glückliche Netzkante einen wichtigen Punkt entschied? Wie reagierten die Spieler?",
+     "c": "Erkläre einem Freund den Unterschied zwischen Let beim Aufschlag und Netzroller im Ballwechsel."
+    },
+    "es": {
+     "t": "El let",
+     "g": "Aprende cuándo se repite un punto, incluidos los saques que tocan la red.",
+     "p": [
+      "Un saque que toca la red y cae en el cuadro correcto es let: simplemente repites ese saque.",
+      "También se canta let si algo interfiere, como una pelota que entra rodando desde la pista vecina.",
+      "Durante el peloteo, una bola que roza la red y pasa sigue en juego, ¡así que atento!"
+     ],
+     "q": "¿Has visto alguna vez una bola en la cinta decidir un punto importante? ¿Cómo reaccionaron?",
+     "c": "Explícale a un amigo la diferencia entre un let en el saque y una cinta durante el peloteo."
+    },
+    "fr": {
+     "t": "Le let",
+     "g": "Apprends quand un point est rejoué, y compris les services qui touchent le filet.",
+     "p": [
+      "Un service qui touche le filet puis tombe dans le bon carré est un let : tu rejoues simplement ce service.",
+      "On annonce aussi un let en cas de gêne, comme une balle qui roule depuis le court voisin.",
+      "Pendant l'échange, une balle qui touche le filet et passe reste en jeu, alors reste attentif !"
+     ],
+     "q": "As-tu déjà vu une balle chanceuse sur la bande décider d'un gros point ? Comment ont réagi les joueurs ?",
+     "c": "Explique à un ami la différence entre un let au service et une bande pendant l'échange."
+    },
+    "it": {
+     "t": "Il let",
+     "g": "Impara quando un punto si ripete, compresi i servizi che toccano la rete.",
+     "p": [
+      "Un servizio che tocca la rete e cade nel riquadro giusto è un let: ripeti semplicemente quel servizio.",
+      "Si chiama let anche in caso di disturbo, come una palla che rotola dal campo accanto.",
+      "Durante lo scambio, una palla che tocca il nastro e passa è buona, quindi resta attento!"
+     ],
+     "q": "Hai mai visto un nastro fortunato decidere un punto importante? Come hanno reagito i giocatori?",
+     "c": "Spiega a un amico la differenza tra un let al servizio e un nastro durante lo scambio."
+    },
+    "pt": {
+     "t": "O let",
+     "g": "Aprende quando um ponto se repete, incluindo serviços que tocam na rede.",
+     "p": [
+      "Um serviço que toca na rede e cai no quadrado certo é let: repetes simplesmente esse serviço.",
+      "Também há let quando algo interfere, como uma bola que entra a rolar do campo ao lado.",
+      "Durante a troca de bolas, uma bola que toca na fita e passa continua em jogo, por isso atenção!"
+     ],
+     "q": "Já viste uma bola na fita decidir um ponto importante? Como reagiram os jogadores?",
+     "c": "Explica a um amigo a diferença entre um let no serviço e uma bola na fita durante a troca."
+    },
+    "pt_BR": {
+     "t": "O let",
+     "g": "Aprenda quando um ponto é repetido, incluindo saques que tocam na rede.",
+     "p": [
+      "Um saque que toca na rede e cai na área certa é let: você simplesmente repete aquele saque.",
+      "Também se marca let quando algo atrapalha, como uma bola rolando da quadra vizinha.",
+      "Durante o rali, uma bola que bate na fita e passa continua valendo, então fique esperto!"
+     ],
+     "q": "Você já viu uma bola na fita decidir um ponto importante? Como os jogadores reagiram?",
+     "c": "Explique para um amigo a diferença entre um let no saque e uma bola na fita durante o rali."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Return of serve basics",
+     "g": "Learn to get ready, use a short backswing and block the serve back.",
+     "p": [
+      "Stand around the baseline, in line with the server's likely targets, and split step as they hit.",
+      "Serves arrive fast, so keep the backswing short and turn your shoulders rather than your arm.",
+      "Against a big serve, simply block it deep down the middle; getting it back is already a win."
+     ],
+     "q": "Would you rather face a fast flat serve or a slow, spinning one?",
+     "c": "While watching a match, notice where the returner stands for first and for second serves."
+    },
+    "de": {
+     "t": "Grundlagen des Returns",
+     "g": "Lerne, dich bereit zu machen, kurz auszuholen und den Aufschlag zurückzublocken.",
+     "p": [
+      "Stell dich etwa an die Grundlinie, passend zu den Zielen des Aufschlägers, und mach den Split-Step beim Treffen.",
+      "Aufschläge kommen schnell, also kurz ausholen und die Schultern drehen statt nur den Arm.",
+      "Gegen einen harten Aufschlag einfach tief durch die Mitte blocken; zurückspielen ist schon ein Erfolg."
+     ],
+     "q": "Lieber einen schnellen, flachen Aufschlag returnieren oder einen langsamen mit viel Spin?",
+     "c": "Achte beim Zuschauen darauf, wo der Rückschläger beim ersten und beim zweiten Aufschlag steht."
+    },
+    "es": {
+     "t": "Fundamentos del resto",
+     "g": "Aprende a prepararte, acortar el armado y bloquear el saque de vuelta.",
+     "p": [
+      "Colócate cerca de la línea de fondo, alineado con los objetivos del sacador, y haz split step al golpe.",
+      "El saque llega rápido: acorta el armado y gira los hombros en lugar de mover solo el brazo.",
+      "Ante un saque potente, bloquéalo profundo por el centro; devolverlo ya es un éxito."
+     ],
+     "q": "¿Prefieres restar un saque rápido y plano o uno lento con mucho efecto?",
+     "c": "Mientras ves un partido, fíjate dónde se coloca el restador en el primer y en el segundo saque."
+    },
+    "fr": {
+     "t": "Les bases du retour",
+     "g": "Apprends à te préparer, à raccourcir ton armé et à bloquer le service.",
+     "p": [
+      "Place-toi autour de la ligne de fond, face aux cibles probables du serveur, et fais ton pas d'allègement à sa frappe.",
+      "Le service arrive vite : armé court, et rotation des épaules plutôt que du bras.",
+      "Face à un gros service, bloque simplement en profondeur au centre ; le remettre est déjà une victoire."
+     ],
+     "q": "Tu préfères retourner un service rapide et plat ou un service lent et lifté ?",
+     "c": "En regardant un match, observe où se place le relanceur sur première et sur seconde balle."
+    },
+    "it": {
+     "t": "Basi della risposta",
+     "g": "Impara a prepararti, accorciare l'apertura e bloccare il servizio.",
+     "p": [
+      "Mettiti vicino alla linea di fondo, in linea con i bersagli probabili di chi serve, e fai lo split step al colpo.",
+      "Il servizio arriva veloce: apertura corta e rotazione delle spalle, non solo del braccio.",
+      "Contro un servizio potente, bloccalo profondo al centro; rimetterlo in campo è già un successo."
+     ],
+     "q": "Preferiresti rispondere a un servizio veloce e piatto o a uno lento e carico?",
+     "c": "Guardando una partita, nota dove si posiziona chi risponde sulla prima e sulla seconda."
+    },
+    "pt": {
+     "t": "Bases da resposta",
+     "g": "Aprende a preparar-te, encurtar a preparação e bloquear o serviço.",
+     "p": [
+      "Coloca-te perto da linha de fundo, alinhado com os alvos prováveis de quem serve, e faz split step na pancada.",
+      "O serviço chega depressa: preparação curta e rotação dos ombros, não só do braço.",
+      "Contra um serviço forte, bloqueia fundo pelo meio; devolver a bola já é uma vitória."
+     ],
+     "q": "Preferes responder a um serviço rápido e plano ou a um lento com muito efeito?",
+     "c": "Ao ver uma partida, repara onde se coloca quem responde no primeiro e no segundo serviço."
+    },
+    "pt_BR": {
+     "t": "Fundamentos da devolução",
+     "g": "Aprenda a se preparar, encurtar o movimento e bloquear o saque de volta.",
+     "p": [
+      "Fique perto da linha de base, alinhado aos alvos prováveis do sacador, e faça o split step na batida.",
+      "O saque chega rápido: preparação curta e giro dos ombros, não só do braço.",
+      "Contra um saque forte, bloqueie fundo pelo meio; devolver a bola já é uma vitória."
+     ],
+     "q": "Você prefere devolver um saque rápido e chapado ou um lento com muito efeito?",
+     "c": "Assistindo a uma partida, repare onde o devolvedor fica no primeiro e no segundo saque."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Volley basics",
+     "g": "Learn the volley: a short punch with a firm wrist and no big swing.",
+     "p": [
+      "At the net you hit the ball before it bounces, so there is no time for a big backswing.",
+      "Keep the racket head up and in front, and punch forward with a firm wrist, like catching the ball.",
+      "Step toward the ball with the opposite foot as you hit, using your body weight for power."
+     ],
+     "q": "Does playing close to the net sound exciting or a bit scary to you?",
+     "c": "Stand near a wall and volley a soft ball against it 20 times without letting it bounce."
+    },
+    "de": {
+     "t": "Volley-Grundlagen",
+     "g": "Lerne den Volley: ein kurzer Stoß mit festem Handgelenk ohne großen Schwung.",
+     "p": [
+      "Am Netz triffst du den Ball, bevor er aufspringt, für eine große Ausholbewegung bleibt keine Zeit.",
+      "Schlägerkopf oben und vor dem Körper, mit festem Handgelenk nach vorn stoßen, als würdest du den Ball fangen.",
+      "Mach beim Treffen einen Schritt mit dem anderen Fuß zum Ball und nutze dein Körpergewicht."
+     ],
+     "q": "Klingt Spielen direkt am Netz für dich spannend oder ein bisschen beängstigend?",
+     "c": "Stell dich nah an eine Wand und spiele einen weichen Ball 20-mal volley, ohne dass er aufspringt."
+    },
+    "es": {
+     "t": "Fundamentos de la volea",
+     "g": "Aprende la volea: un golpe corto, muñeca firme y sin gran swing.",
+     "p": [
+      "En la red golpeas antes del bote, así que no hay tiempo para un gran armado.",
+      "Cabeza de la raqueta arriba y delante; empuja con la muñeca firme, como si atraparas la pelota.",
+      "Da un paso hacia la bola con el pie contrario al golpear y usa el peso del cuerpo."
+     ],
+     "q": "¿Jugar cerca de la red te parece emocionante o te da un poco de miedo?",
+     "c": "Ponte cerca de una pared y volea una pelota blanda 20 veces sin dejarla botar."
+    },
+    "fr": {
+     "t": "Les bases de la volée",
+     "g": "Apprends la volée : un geste court, poignet ferme, sans grand mouvement.",
+     "p": [
+      "Au filet, tu frappes avant le rebond, donc pas le temps d'un grand armé.",
+      "Tête de raquette haute et devant toi, pousse vers l'avant poignet ferme, comme pour attraper la balle.",
+      "Avance vers la balle avec le pied opposé au moment de frapper pour utiliser ton poids."
+     ],
+     "q": "Jouer près du filet, ça te paraît excitant ou un peu effrayant ?",
+     "c": "Place-toi près d'un mur et fais 20 volées avec une balle souple sans la laisser rebondir."
+    },
+    "it": {
+     "t": "Basi della volée",
+     "g": "Impara la volée: un colpo corto, polso fermo e niente grande swing.",
+     "p": [
+      "A rete colpisci prima del rimbalzo, quindi non c'è tempo per una grande apertura.",
+      "Testa della racchetta alta e davanti, spingi avanti con polso fermo, come se afferrassi la palla.",
+      "Mentre colpisci fai un passo verso la palla con il piede opposto, usando il peso del corpo."
+     ],
+     "q": "Giocare vicino alla rete ti sembra emozionante o un po' spaventoso?",
+     "c": "Mettiti vicino a un muro e fai 20 volée con una palla morbida senza farla rimbalzare."
+    },
+    "pt": {
+     "t": "Bases do vólei",
+     "g": "Aprende o vólei: um golpe curto, pulso firme e sem grande balanço.",
+     "p": [
+      "Na rede bates antes de a bola ressaltar, por isso não há tempo para uma grande preparação.",
+      "Cabeça da raqueta para cima e à frente; empurra com o pulso firme, como se apanhasses a bola.",
+      "Ao bater, dá um passo em direção à bola com o pé oposto e usa o peso do corpo."
+     ],
+     "q": "Jogar perto da rede parece-te emocionante ou um pouco assustador?",
+     "c": "Põe-te perto de uma parede e faz 20 vóleis com uma bola macia sem a deixar ressaltar."
+    },
+    "pt_BR": {
+     "t": "Fundamentos do voleio",
+     "g": "Aprenda o voleio: um golpe curto, pulso firme e sem grande balanço.",
+     "p": [
+      "Na rede você bate antes de a bola quicar, então não há tempo para uma grande preparação.",
+      "Cabeça da raquete para cima e à frente; empurre com o pulso firme, como se pegasse a bola.",
+      "Ao bater, dê um passo em direção à bola com o pé oposto e use o peso do corpo."
+     ],
+     "q": "Jogar perto da rede parece emocionante ou meio assustador para você?",
+     "c": "Fique perto de um paredão e voleie uma bola macia 20 vezes sem deixar quicar."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The continental grip",
+     "g": "Learn the continental grip, the all-purpose grip for serves, volleys and slices.",
+     "p": [
+      "Hold the racket as if it were a hammer; the index knuckle sits on the second bevel, just above the edge.",
+      "It lets you hit forehand and backhand volleys without changing grip, a lifesaver at the net.",
+      "Most good serves and overheads use it too, because it allows natural wrist snap and spin."
+     ],
+     "q": "Which shots do you think you would play with a hammer grip?",
+     "c": "Practise switching between Eastern and continental grips 20 times without looking at your hand."
+    },
+    "de": {
+     "t": "Der Kontinentalgriff",
+     "g": "Lerne den Kontinentalgriff, den Allround-Griff für Aufschlag, Volley und Slice.",
+     "p": [
+      "Halte den Schläger wie einen Hammer; der Zeigefingerknöchel liegt auf der zweiten Kante, knapp über dem Rahmen.",
+      "Damit spielst du Vorhand- und Rückhandvolleys ohne Griffwechsel, ein Segen am Netz.",
+      "Auch die meisten guten Aufschläge und Schmetterbälle nutzen ihn, weil er natürliche Handgelenksarbeit und Spin erlaubt."
+     ],
+     "q": "Welche Schläge würdest du mit einem Hammergriff spielen?",
+     "c": "Wechsle 20-mal zwischen Eastern- und Kontinentalgriff, ohne auf deine Hand zu schauen."
+    },
+    "es": {
+     "t": "La empuñadura continental",
+     "g": "Aprende la continental, la empuñadura comodín para saque, volea y cortado.",
+     "p": [
+      "Coge la raqueta como un martillo; el nudillo del índice va en el segundo bisel, justo sobre el canto.",
+      "Te permite volear de derecha y de revés sin cambiar de empuñadura, una salvación en la red.",
+      "También la usan casi todos los buenos saques y remates, porque permite el golpe de muñeca y el efecto."
+     ],
+     "q": "¿Qué golpes crees que jugarías con una empuñadura de martillo?",
+     "c": "Cambia 20 veces entre la Eastern y la continental sin mirarte la mano."
+    },
+    "fr": {
+     "t": "La prise continentale",
+     "g": "Apprends la prise continentale, la prise passe-partout pour service, volée et slice.",
+     "p": [
+      "Tiens la raquette comme un marteau ; l'index repose sur le deuxième pan, juste au-dessus de la tranche.",
+      "Elle permet les volées coup droit et revers sans changer de prise, un vrai atout au filet.",
+      "La plupart des bons services et smashs l'utilisent aussi, car elle libère le poignet et l'effet."
+     ],
+     "q": "Quels coups jouerais-tu avec une prise marteau, à ton avis ?",
+     "c": "Passe 20 fois de la prise eastern à la continentale sans regarder ta main."
+    },
+    "it": {
+     "t": "L'impugnatura continentale",
+     "g": "Impara la continentale, l'impugnatura jolly per servizio, volée e slice.",
+     "p": [
+      "Impugna la racchetta come un martello; la nocca dell'indice sta sulla seconda faccetta, appena sopra il bordo.",
+      "Ti permette volée di dritto e di rovescio senza cambiare presa, una salvezza a rete.",
+      "La usano anche quasi tutti i buoni servizi e smash, perché lascia lavorare il polso e dà effetto."
+     ],
+     "q": "Quali colpi giocheresti con una presa a martello?",
+     "c": "Passa 20 volte dall'eastern alla continentale senza guardarti la mano."
+    },
+    "pt": {
+     "t": "A pega continental",
+     "g": "Aprende a pega continental, a pega para tudo no serviço, vólei e batida cortada.",
+     "p": [
+      "Segura a raqueta como um martelo; o nó do indicador fica no segundo bisel, logo acima da aresta.",
+      "Permite vóleis de direita e de esquerda sem mudar de pega, uma salvação na rede.",
+      "Também é usada na maioria dos bons serviços e smashes, porque solta o pulso e dá efeito."
+     ],
+     "q": "Que pancadas achas que jogarias com uma pega de martelo?",
+     "c": "Troca 20 vezes entre a pega Eastern e a continental sem olhar para a mão."
+    },
+    "pt_BR": {
+     "t": "A empunhadura continental",
+     "g": "Aprenda a continental, a empunhadura coringa para saque, voleio e slice.",
+     "p": [
+      "Segure a raquete como um martelo; o nó do indicador fica no segundo chanfro, logo acima da quina.",
+      "Ela permite voleios de forehand e de backhand sem trocar de empunhadura, uma salvação na rede.",
+      "A maioria dos bons saques e smashes também usa, porque solta o pulso e gera efeito."
+     ],
+     "q": "Que golpes você acha que jogaria com uma pegada de martelo?",
+     "c": "Troque 20 vezes entre a Eastern e a continental sem olhar para a mão."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The overhead smash",
+     "g": "Learn the overhead: turn sideways, point at the ball and hit down.",
+     "p": [
+      "As soon as you see a lob, turn sideways and move back with side steps or crossover steps.",
+      "Point your free hand at the ball; it helps you track it and keeps your shoulders turned.",
+      "Use a serve-like swing with the continental grip and hit the ball in front, aiming down and deep."
+     ],
+     "q": "Why do you think players point at the ball before smashing?",
+     "c": "Shadow 10 overheads: turn, point, swing, and finish with your racket across your body."
+    },
+    "de": {
+     "t": "Der Schmetterball",
+     "g": "Lerne den Schmetterball: seitlich drehen, auf den Ball zeigen, nach unten schlagen.",
+     "p": [
+      "Sobald du einen Lob siehst, dreh dich seitlich und lauf mit Seit- oder Kreuzschritten zurück.",
+      "Zeig mit der freien Hand auf den Ball; so verfolgst du ihn besser und hältst die Schultern gedreht.",
+      "Schwinge wie beim Aufschlag mit Kontinentalgriff, triff den Ball vor dir und ziele nach unten und tief."
+     ],
+     "q": "Warum zeigen Spieler wohl vor dem Schmetterball auf den Ball?",
+     "c": "Mach 10 Schatten-Schmetterbälle: drehen, zeigen, schwingen, und ende mit dem Schläger vor dem Körper."
+    },
+    "es": {
+     "t": "El remate",
+     "g": "Aprende el remate: ponte de lado, señala la pelota y golpea hacia abajo.",
+     "p": [
+      "En cuanto veas un globo, gírate de lado y retrocede con pasos laterales o cruzados.",
+      "Señala la pelota con la mano libre: te ayuda a seguirla y mantiene los hombros girados.",
+      "Usa un movimiento de saque con empuñadura continental y golpea delante, hacia abajo y profundo."
+     ],
+     "q": "¿Por qué crees que los jugadores señalan la pelota antes de rematar?",
+     "c": "Haz 10 remates en sombra: girar, señalar, golpear y terminar con la raqueta cruzando el cuerpo."
+    },
+    "fr": {
+     "t": "Le smash",
+     "g": "Apprends le smash : se mettre de profil, pointer la balle et frapper vers le bas.",
+     "p": [
+      "Dès que tu vois un lob, mets-toi de profil et recule en pas chassés ou croisés.",
+      "Pointe la balle avec ta main libre : cela t'aide à la suivre et garde tes épaules tournées.",
+      "Utilise un geste de service en prise continentale et frappe devant toi, vers le bas et en profondeur."
+     ],
+     "q": "Pourquoi les joueurs pointent-ils la balle avant de smasher, selon toi ?",
+     "c": "Fais 10 smashs à vide : tourner, pointer, frapper, et finir la raquette devant le corps."
+    },
+    "it": {
+     "t": "Lo smash",
+     "g": "Impara lo smash: girati di lato, indica la palla e colpisci verso il basso.",
+     "p": [
+      "Appena vedi un pallonetto, girati di lato e arretra con passi laterali o incrociati.",
+      "Indica la palla con la mano libera: ti aiuta a seguirla e tiene le spalle girate.",
+      "Usa un movimento da servizio con presa continentale e colpisci davanti, verso il basso e in profondità."
+     ],
+     "q": "Perché secondo te i giocatori indicano la palla prima dello smash?",
+     "c": "Fai 10 smash a vuoto: girati, indica, colpisci e finisci con la racchetta davanti al corpo."
+    },
+    "pt": {
+     "t": "O smash",
+     "g": "Aprende o smash: pôr-te de lado, apontar para a bola e bater para baixo.",
+     "p": [
+      "Assim que vês um balão, vira-te de lado e recua com passos laterais ou cruzados.",
+      "Aponta para a bola com a mão livre: ajuda-te a segui-la e mantém os ombros rodados.",
+      "Usa um gesto de serviço com pega continental e bate à frente, para baixo e fundo."
+     ],
+     "q": "Porque achas que os jogadores apontam para a bola antes do smash?",
+     "c": "Faz 10 smashes no ar: rodar, apontar, bater e terminar com a raqueta à frente do corpo."
+    },
+    "pt_BR": {
+     "t": "O smash",
+     "g": "Aprenda o smash: ficar de lado, apontar para a bola e bater para baixo.",
+     "p": [
+      "Assim que vir um lob, vire de lado e recue com passos laterais ou cruzados.",
+      "Aponte para a bola com a mão livre: isso ajuda a acompanhá-la e mantém os ombros girados.",
+      "Use um movimento de saque com empunhadura continental e bata à frente, para baixo e fundo."
+     ],
+     "q": "Por que você acha que os jogadores apontam para a bola antes do smash?",
+     "c": "Faça 10 smashes no ar: girar, apontar, bater e terminar com a raquete à frente do corpo."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "In or out?",
+     "g": "Learn that a ball touching the line is in, and how line calls work.",
+     "p": [
+      "The lines belong to the court: if any part of the ball touches a line, the ball is in.",
+      "In casual matches you call the lines on your own side, and the opponent calls theirs.",
+      "If you are not sure, the point goes to your opponent; giving the benefit of the doubt is good sportsmanship."
+     ],
+     "q": "Have you ever had to make a close line call? How did you decide?",
+     "c": "In your next game or rally, call only the lines on your side, clearly and quickly."
+    },
+    "de": {
+     "t": "Drin oder aus?",
+     "g": "Lerne, dass ein Ball auf der Linie gut ist, und wie Linienentscheidungen funktionieren.",
+     "p": [
+      "Die Linien gehören zum Feld: Berührt irgendein Teil des Balls die Linie, ist er drin.",
+      "In Freizeitmatches entscheidest du die Linien auf deiner Seite, dein Gegner die auf seiner.",
+      "Bist du dir unsicher, geht der Punkt an den Gegner; im Zweifel für ihn zu entscheiden ist fair."
+     ],
+     "q": "Musstest du schon einmal einen knappen Ball entscheiden? Wie hast du entschieden?",
+     "c": "Entscheide im nächsten Spiel nur die Linien auf deiner Seite, klar und schnell."
+    },
+    "es": {
+     "t": "¿Dentro o fuera?",
+     "g": "Aprende que una bola que toca la línea es buena y cómo se cantan las líneas.",
+     "p": [
+      "Las líneas son parte de la pista: si cualquier parte de la pelota toca la línea, es buena.",
+      "En partidos informales cada uno canta las líneas de su lado de la pista.",
+      "Si dudas, el punto es para el rival; darle el beneficio de la duda es deportividad."
+     ],
+     "q": "¿Alguna vez tuviste que cantar una bola muy justa? ¿Cómo lo decidiste?",
+     "c": "En tu próximo partido o peloteo, canta solo las líneas de tu lado, claro y rápido."
+    },
+    "fr": {
+     "t": "Dedans ou dehors ?",
+     "g": "Apprends qu'une balle qui touche la ligne est bonne, et comment se font les annonces.",
+     "p": [
+      "Les lignes font partie du court : si une partie de la balle touche la ligne, elle est bonne.",
+      "En match amical, chacun annonce les lignes de son propre côté.",
+      "En cas de doute, le point va à l'adversaire ; lui laisser le bénéfice du doute, c'est le fair-play."
+     ],
+     "q": "As-tu déjà dû juger une balle très serrée ? Comment as-tu décidé ?",
+     "c": "Lors de ton prochain match ou échange, annonce seulement les lignes de ton côté, clairement et vite."
+    },
+    "it": {
+     "t": "Dentro o fuori?",
+     "g": "Impara che una palla che tocca la riga è buona e come funzionano le chiamate.",
+     "p": [
+      "Le righe fanno parte del campo: se una parte della palla tocca la riga, è buona.",
+      "Nelle partite amichevoli ognuno chiama le righe della propria metà campo.",
+      "Nel dubbio il punto va all'avversario; concedere il beneficio del dubbio è sportività."
+     ],
+     "q": "Ti è mai capitato di chiamare una palla molto vicina alla riga? Come hai deciso?",
+     "c": "Nella prossima partita o palleggio, chiama solo le righe della tua metà, in modo chiaro e rapido."
+    },
+    "pt": {
+     "t": "Dentro ou fora?",
+     "g": "Aprende que uma bola que toca na linha é boa e como funcionam as decisões de linha.",
+     "p": [
+      "As linhas fazem parte do campo: se qualquer parte da bola toca na linha, a bola é boa.",
+      "Em jogos informais, cada um decide as linhas do seu lado do campo.",
+      "Na dúvida, o ponto é do adversário; dar o benefício da dúvida é desportivismo."
+     ],
+     "q": "Já tiveste de decidir uma bola muito justa? Como decidiste?",
+     "c": "No próximo jogo ou troca de bolas, decide só as linhas do teu lado, de forma clara e rápida."
+    },
+    "pt_BR": {
+     "t": "Dentro ou fora?",
+     "g": "Aprenda que uma bola que toca a linha é boa e como funcionam as marcações.",
+     "p": [
+      "As linhas fazem parte da quadra: se qualquer parte da bola tocar a linha, ela é boa.",
+      "Em jogos informais, cada um marca as linhas do próprio lado da quadra.",
+      "Na dúvida, o ponto é do adversário; dar o benefício da dúvida é espírito esportivo."
+     ],
+     "q": "Você já teve de marcar uma bola bem no limite? Como decidiu?",
+     "c": "No seu próximo jogo ou rali, marque só as linhas do seu lado, de forma clara e rápida."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Etiquette on court",
+     "g": "Learn the friendly habits that make tennis enjoyable for everyone.",
+     "p": [
+      "The server calls the score clearly before each point, especially in matches without an umpire.",
+      "Return balls to the server directly or gently, and never walk behind a court while a point is being played.",
+      "If your ball rolls onto a neighbouring court, wait until their point ends, then politely ask for it."
+     ],
+     "q": "Which tennis manners do you think matter most?",
+     "c": "Next time you play or watch, notice three small acts of good etiquette."
+    },
+    "de": {
+     "t": "Etikette auf dem Platz",
+     "g": "Lerne die freundlichen Gewohnheiten, die Tennis für alle angenehm machen.",
+     "p": [
+      "Der Aufschläger sagt vor jedem Punkt deutlich den Stand an, besonders ohne Schiedsrichter.",
+      "Spiel Bälle direkt oder sanft zum Aufschläger zurück und geh nie hinter einem Platz entlang, während gespielt wird.",
+      "Rollt dein Ball auf den Nachbarplatz, warte bis zum Ende ihres Punkts und frag dann höflich."
+     ],
+     "q": "Welche Tennis-Manieren findest du am wichtigsten?",
+     "c": "Achte beim nächsten Spielen oder Zuschauen auf drei kleine Gesten guter Etikette."
+    },
+    "es": {
+     "t": "Etiqueta en la pista",
+     "g": "Aprende los buenos hábitos que hacen el tenis agradable para todos.",
+     "p": [
+      "Quien saca canta el marcador con claridad antes de cada punto, sobre todo sin juez de silla.",
+      "Devuelve las pelotas al sacador directamente o con suavidad, y nunca pases por detrás de una pista en pleno punto.",
+      "Si tu pelota entra en la pista vecina, espera a que acabe su punto y pídela con amabilidad."
+     ],
+     "q": "¿Qué modales de tenis te parecen más importantes?",
+     "c": "La próxima vez que juegues o veas tenis, fíjate en tres pequeños gestos de buena educación."
+    },
+    "fr": {
+     "t": "L'étiquette sur le court",
+     "g": "Apprends les bonnes habitudes qui rendent le tennis agréable pour tous.",
+     "p": [
+      "Le serveur annonce clairement le score avant chaque point, surtout sans arbitre.",
+      "Renvoie les balles au serveur directement ou en douceur, et ne passe jamais derrière un court pendant un point.",
+      "Si ta balle roule sur le court voisin, attends la fin de leur point puis demande-la poliment."
+     ],
+     "q": "Quelles bonnes manières au tennis te semblent les plus importantes ?",
+     "c": "La prochaine fois que tu joues ou regardes, repère trois petits gestes de bonne étiquette."
+    },
+    "it": {
+     "t": "Galateo in campo",
+     "g": "Impara le buone abitudini che rendono il tennis piacevole per tutti.",
+     "p": [
+      "Chi serve annuncia chiaramente il punteggio prima di ogni punto, soprattutto senza arbitro.",
+      "Restituisci le palle a chi serve in modo diretto o morbido e non passare mai dietro un campo durante un punto.",
+      "Se la tua palla finisce nel campo accanto, aspetta la fine del loro punto e chiedila gentilmente."
+     ],
+     "q": "Quali buone maniere del tennis ti sembrano più importanti?",
+     "c": "La prossima volta che giochi o guardi, nota tre piccoli gesti di buon galateo."
+    },
+    "pt": {
+     "t": "Etiqueta no campo",
+     "g": "Aprende os bons hábitos que tornam o ténis agradável para todos.",
+     "p": [
+      "Quem serve anuncia o resultado com clareza antes de cada ponto, sobretudo sem árbitro.",
+      "Devolve as bolas a quem serve de forma direta ou suave e nunca passes atrás de um campo durante um ponto.",
+      "Se a tua bola for para o campo ao lado, espera que acabem o ponto e pede-a com educação."
+     ],
+     "q": "Que boas maneiras do ténis te parecem mais importantes?",
+     "c": "Da próxima vez que jogares ou vires ténis, repara em três pequenos gestos de boa etiqueta."
+    },
+    "pt_BR": {
+     "t": "Etiqueta na quadra",
+     "g": "Aprenda os bons hábitos que deixam o tênis agradável para todos.",
+     "p": [
+      "Quem saca anuncia o placar com clareza antes de cada ponto, principalmente sem árbitro.",
+      "Devolva as bolas ao sacador de forma direta ou suave e nunca passe atrás de uma quadra durante um ponto.",
+      "Se sua bola for para a quadra vizinha, espere o ponto deles acabar e peça com educação."
+     ],
+     "q": "Quais boas maneiras do tênis parecem mais importantes para você?",
+     "c": "Da próxima vez que jogar ou assistir, repare em três pequenos gestos de boa etiqueta."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Doubles basics",
+     "g": "Learn the basics of doubles: alleys, partners, positions and who covers what.",
+     "p": [
+      "In doubles the alleys are in, so the court is wider, but serves must still land in the normal service box.",
+      "A common setup has the server's partner at the net and the server at the baseline.",
+      "Generally each partner covers their own half, and balls down the middle go to whoever has the forehand."
+     ],
+     "q": "Would you rather play at the net or stay back at the baseline in doubles?",
+     "c": "Watch a doubles point and note where all four players stand at the start."
+    },
+    "de": {
+     "t": "Doppel-Grundlagen",
+     "g": "Lerne die Basics im Doppel: Gassen, Partner, Positionen und wer was abdeckt.",
+     "p": [
+      "Im Doppel zählen die Seitengassen, das Feld ist breiter, Aufschläge müssen aber ins normale Aufschlagfeld.",
+      "Häufig steht der Partner des Aufschlägers am Netz und der Aufschläger an der Grundlinie.",
+      "Meist deckt jeder seine Hälfte ab, Bälle durch die Mitte nimmt oft, wer dort die Vorhand hat."
+     ],
+     "q": "Würdest du im Doppel lieber am Netz oder an der Grundlinie spielen?",
+     "c": "Schau dir einen Doppelpunkt an und notiere, wo alle vier Spieler zu Beginn stehen."
+    },
+    "es": {
+     "t": "Fundamentos del dobles",
+     "g": "Aprende lo básico del dobles: pasillos, pareja, posiciones y quién cubre qué.",
+     "p": [
+      "En dobles los pasillos cuentan y la pista es más ancha, pero el saque debe caer en el cuadro normal.",
+      "Una formación habitual: el compañero del sacador en la red y el sacador en el fondo.",
+      "Por lo general cada uno cubre su mitad, y las bolas por el centro suelen ser de quien tiene la derecha."
+     ],
+     "q": "En dobles, ¿preferirías jugar en la red o quedarte en el fondo?",
+     "c": "Mira un punto de dobles y anota dónde están los cuatro jugadores al empezar."
+    },
+    "fr": {
+     "t": "Les bases du double",
+     "g": "Apprends les bases du double : couloirs, partenaire, positions et qui couvre quoi.",
+     "p": [
+      "En double, les couloirs sont bons et le court est plus large, mais le service tombe toujours dans le carré normal.",
+      "Une formation courante : le partenaire du serveur au filet et le serveur au fond.",
+      "En général chacun couvre sa moitié, et les balles au centre vont souvent à celui qui a le coup droit."
+     ],
+     "q": "En double, tu préférerais jouer au filet ou rester au fond ?",
+     "c": "Regarde un point de double et note où se placent les quatre joueurs au départ."
+    },
+    "it": {
+     "t": "Basi del doppio",
+     "g": "Impara le basi del doppio: corridoi, compagno, posizioni e chi copre cosa.",
+     "p": [
+      "In doppio i corridoi sono buoni e il campo è più largo, ma il servizio deve entrare nel riquadro normale.",
+      "Uno schieramento comune: il compagno di chi serve a rete e chi serve a fondo campo.",
+      "Di solito ognuno copre la sua metà, e le palle al centro le prende spesso chi ha il dritto."
+     ],
+     "q": "In doppio preferiresti giocare a rete o restare a fondo campo?",
+     "c": "Guarda un punto di doppio e annota dove sono i quattro giocatori all'inizio."
+    },
+    "pt": {
+     "t": "Bases de pares",
+     "g": "Aprende o básico de pares: corredores, parceiro, posições e quem cobre o quê.",
+     "p": [
+      "Em pares os corredores contam e o campo é mais largo, mas o serviço tem de cair no quadrado normal.",
+      "Uma formação comum: o parceiro de quem serve na rede e quem serve no fundo.",
+      "Em geral cada um cobre a sua metade, e as bolas pelo meio costumam ser de quem tem a direita."
+     ],
+     "q": "Em pares, preferias jogar na rede ou ficar no fundo do campo?",
+     "c": "Vê um ponto de pares e anota onde estão os quatro jogadores no início."
+    },
+    "pt_BR": {
+     "t": "Fundamentos das duplas",
+     "g": "Aprenda o básico das duplas: corredores, parceiro, posições e quem cobre o quê.",
+     "p": [
+      "Nas duplas os corredores valem e a quadra fica mais larga, mas o saque precisa cair na área normal.",
+      "Uma formação comum: o parceiro de quem saca na rede e o sacador no fundo.",
+      "Em geral cada um cobre sua metade, e bolas pelo meio costumam ficar com quem tem o forehand."
+     ],
+     "q": "Nas duplas, você prefere jogar na rede ou ficar no fundo?",
+     "c": "Assista a um ponto de duplas e anote onde os quatro jogadores estão no início."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warming up for tennis",
+     "g": "Learn a simple warm-up of mini-tennis, light rallies and dynamic stretches.",
+     "p": [
+      "Start with a few minutes of light jogging, side shuffles and arm circles to raise your body temperature.",
+      "Dynamic stretches like leg swings and walking lunges prepare muscles better than long static holds before play.",
+      "Then play mini-tennis inside the service boxes before moving back to rally from the baseline."
+     ],
+     "q": "What do you usually do to warm up before any sport?",
+     "c": "Try a 5-minute warm-up today: jog, shuffle, arm circles, leg swings and lunges."
+    },
+    "de": {
+     "t": "Aufwärmen fürs Tennis",
+     "g": "Lerne ein einfaches Aufwärmen mit Kleinfeld, lockeren Ballwechseln und dynamischem Dehnen.",
+     "p": [
+      "Beginne mit ein paar Minuten lockerem Joggen, Seitschritten und Armkreisen, um warm zu werden.",
+      "Dynamisches Dehnen wie Beinschwingen und Ausfallschritte bereitet die Muskeln vor dem Spiel besser vor als langes Halten.",
+      "Spiel dann im Kleinfeld zwischen den Aufschlagfeldern, bevor du dich zur Grundlinie zurückziehst."
+     ],
+     "q": "Was machst du normalerweise zum Aufwärmen vor einem Sport?",
+     "c": "Probier heute 5 Minuten Aufwärmen: joggen, Seitschritte, Armkreise, Beinschwingen und Ausfallschritte."
+    },
+    "es": {
+     "t": "Calentar para el tenis",
+     "g": "Aprende un calentamiento sencillo con minitenis, peloteo suave y estiramientos dinámicos.",
+     "p": [
+      "Empieza con unos minutos de trote suave, desplazamientos laterales y círculos de brazos.",
+      "Los estiramientos dinámicos, como balanceos de pierna y zancadas, preparan mejor que los estáticos largos antes de jugar.",
+      "Luego juega minitenis dentro de los cuadros de saque antes de pelotear desde el fondo."
+     ],
+     "q": "¿Qué sueles hacer para calentar antes de hacer deporte?",
+     "c": "Prueba hoy un calentamiento de 5 minutos: trote, laterales, círculos de brazos, balanceos y zancadas."
+    },
+    "fr": {
+     "t": "S'échauffer pour le tennis",
+     "g": "Apprends un échauffement simple : mini-tennis, échanges légers et étirements dynamiques.",
+     "p": [
+      "Commence par quelques minutes de footing léger, de pas chassés et de moulinets de bras.",
+      "Les étirements dynamiques, comme les balancements de jambes et les fentes, préparent mieux que de longs étirements statiques.",
+      "Joue ensuite au mini-tennis dans les carrés de service avant de reculer pour échanger du fond."
+     ],
+     "q": "Que fais-tu d'habitude pour t'échauffer avant un sport ?",
+     "c": "Essaie aujourd'hui 5 minutes d'échauffement : footing, pas chassés, moulinets, balancements et fentes."
+    },
+    "it": {
+     "t": "Riscaldamento per il tennis",
+     "g": "Impara un riscaldamento semplice con mini-tennis, palleggi leggeri e stretching dinamico.",
+     "p": [
+      "Inizia con qualche minuto di corsetta, passi laterali e circonduzioni delle braccia.",
+      "Lo stretching dinamico, come slanci delle gambe e affondi, prepara i muscoli meglio delle lunghe tenute statiche.",
+      "Poi gioca a mini-tennis dentro i riquadri del servizio prima di arretrare a fondo campo."
+     ],
+     "q": "Cosa fai di solito per scaldarti prima di uno sport?",
+     "c": "Prova oggi 5 minuti di riscaldamento: corsetta, passi laterali, circonduzioni, slanci e affondi."
+    },
+    "pt": {
+     "t": "Aquecer para o ténis",
+     "g": "Aprende um aquecimento simples com mini-ténis, trocas leves e alongamentos dinâmicos.",
+     "p": [
+      "Começa com alguns minutos de corrida leve, deslocamentos laterais e rotações de braços.",
+      "Os alongamentos dinâmicos, como balanços de perna e afundos, preparam melhor do que longos alongamentos estáticos.",
+      "Depois joga mini-ténis dentro dos quadrados de serviço antes de recuar para a linha de fundo."
+     ],
+     "q": "O que costumas fazer para aquecer antes de praticar desporto?",
+     "c": "Experimenta hoje 5 minutos de aquecimento: corrida, laterais, rotações de braços, balanços e afundos."
+    },
+    "pt_BR": {
+     "t": "Aquecimento para o tênis",
+     "g": "Aprenda um aquecimento simples com minitênis, ralis leves e alongamentos dinâmicos.",
+     "p": [
+      "Comece com alguns minutos de corrida leve, deslocamentos laterais e giros de braço.",
+      "Alongamentos dinâmicos, como balanço de pernas e avanços, preparam melhor que longos alongamentos estáticos.",
+      "Depois jogue minitênis dentro das áreas de saque antes de recuar para a linha de base."
+     ],
+     "q": "O que você costuma fazer para aquecer antes de um esporte?",
+     "c": "Experimente hoje 5 minutos de aquecimento: corrida, laterais, giros de braço, balanços e avanços."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first month",
+     "g": "Celebrate your first month with a friendly recap of court, scoring, grips and strokes.",
+     "p": [
+      "Court and scoring: baselines, service boxes and alleys; love, 15, 30, 40, deuce and the 7-point tiebreak.",
+      "Grips: Eastern for a classic forehand, continental for serves, volleys and overheads.",
+      "Strokes: forehand, backhand, serve, return, volley and smash, all starting from the ready position and split step."
+     ],
+     "q": "Which lesson from this month was your favourite, and which felt hardest?",
+     "c": "Without notes, say aloud the score sequence of a game that goes to deuce twice."
+    },
+    "de": {
+     "t": "Rückblick: erster Monat",
+     "g": "Feiere deinen ersten Monat mit einem Rückblick auf Platz, Zählweise, Griffe und Schläge.",
+     "p": [
+      "Platz und Zählen: Grundlinien, Aufschlagfelder und Gassen; 0, 15, 30, 40, Einstand und der Tiebreak bis 7.",
+      "Griffe: Eastern für die klassische Vorhand, Kontinental für Aufschlag, Volley und Schmetterball.",
+      "Schläge: Vorhand, Rückhand, Aufschlag, Return, Volley und Schmetterball, alle aus Grundstellung und Split-Step."
+     ],
+     "q": "Welche Lektion dieses Monats war dein Favorit und welche fiel dir am schwersten?",
+     "c": "Sag ohne Notizen laut die Zählfolge eines Spiels auf, das zweimal zum Einstand geht."
+    },
+    "es": {
+     "t": "Repaso: primer mes",
+     "g": "Celebra tu primer mes con un repaso de la pista, el tanteo, las empuñaduras y los golpes.",
+     "p": [
+      "Pista y tanteo: fondo, cuadros de saque y pasillos; 0, 15, 30, 40, iguales y el tie-break a 7.",
+      "Empuñaduras: Eastern para una derecha clásica, continental para saque, volea y remate.",
+      "Golpes: derecha, revés, saque, resto, volea y remate, todos desde la posición de espera y el split step."
+     ],
+     "q": "¿Qué lección de este mes fue tu favorita y cuál te costó más?",
+     "c": "Sin apuntes, di en voz alta el tanteo de un juego que llega dos veces a iguales."
+    },
+    "fr": {
+     "t": "Bilan : premier mois",
+     "g": "Fête ton premier mois avec un récapitulatif du court, du score, des prises et des coups.",
+     "p": [
+      "Court et score : ligne de fond, carrés de service et couloirs ; 0, 15, 30, 40, égalité et tie-break en 7 points.",
+      "Prises : eastern pour un coup droit classique, continentale pour service, volée et smash.",
+      "Coups : coup droit, revers, service, retour, volée et smash, tous depuis la position d'attente et le split step."
+     ],
+     "q": "Quelle leçon du mois as-tu préférée, et laquelle t'a semblé la plus dure ?",
+     "c": "Sans notes, annonce à voix haute le score d'un jeu qui passe deux fois par égalité."
+    },
+    "it": {
+     "t": "Ripasso: primo mese",
+     "g": "Festeggia il primo mese con un ripasso di campo, punteggio, impugnature e colpi.",
+     "p": [
+      "Campo e punteggio: fondo, riquadri del servizio e corridoi; 0, 15, 30, 40, parità e tie-break a 7.",
+      "Impugnature: eastern per un dritto classico, continentale per servizio, volée e smash.",
+      "Colpi: dritto, rovescio, servizio, risposta, volée e smash, tutti dalla posizione di attesa e dallo split step."
+     ],
+     "q": "Quale lezione di questo mese ti è piaciuta di più e quale è stata più difficile?",
+     "c": "Senza appunti, di' ad alta voce il punteggio di un game che va due volte in parità."
+    },
+    "pt": {
+     "t": "Revisão: primeiro mês",
+     "g": "Celebra o teu primeiro mês com uma revisão do campo, pontuação, pegas e pancadas.",
+     "p": [
+      "Campo e pontuação: fundo, quadrados de serviço e corredores; 0, 15, 30, 40, iguais e o tie-break a 7.",
+      "Pegas: Eastern para uma direita clássica, continental para serviço, vólei e smash.",
+      "Pancadas: direita, esquerda, serviço, resposta, vólei e smash, todas a partir da posição de espera e do split step."
+     ],
+     "q": "Que lição deste mês foi a tua favorita e qual te custou mais?",
+     "c": "Sem apontamentos, diz em voz alta a pontuação de um jogo que vai duas vezes a iguais."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiro mês",
+     "g": "Comemore seu primeiro mês com uma revisão de quadra, placar, empunhaduras e golpes.",
+     "p": [
+      "Quadra e placar: linha de base, áreas de saque e corredores; 0, 15, 30, 40, iguais e o tie-break de 7.",
+      "Empunhaduras: Eastern para um forehand clássico, continental para saque, voleio e smash.",
+      "Golpes: forehand, backhand, saque, devolução, voleio e smash, todos a partir da posição de espera e do split step."
+     ],
+     "q": "Qual lição deste mês foi sua favorita e qual foi a mais difícil?",
+     "c": "Sem anotações, diga em voz alta o placar de um game que vai duas vezes para iguais."
+    }
+   }
+  }
+ ]
+}

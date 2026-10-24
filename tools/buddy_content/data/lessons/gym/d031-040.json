@@ -1,0 +1,835 @@
+{
+ "topic": "gym",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Full-body workouts explained",
+     "g": "See why training the whole body works well for beginners.",
+     "p": [
+      "Each session trains legs, pushing, pulling and core together.",
+      "You practise every movement more often, so you learn faster.",
+      "Missing a day is no problem, since nothing gets skipped for a week."
+     ],
+     "q": "Does training everything in one session sound good to you?",
+     "c": "List one leg, one push, one pull and one core exercise you know."
+    },
+    "de": {
+     "t": "Ganzkörpertraining erklärt",
+     "g": "Sieh, warum Ganzkörpertraining für Einsteiger so gut funktioniert.",
+     "p": [
+      "Jede Einheit trainiert Beine, Drücken, Ziehen und Rumpf zusammen.",
+      "Du übst jede Bewegung öfter und lernst dadurch schneller.",
+      "Fällt ein Tag aus, ist das kein Problem, nichts bleibt eine Woche liegen."
+     ],
+     "q": "Klingt es gut für dich, alles in einer Einheit zu trainieren?",
+     "c": "Notiere je eine Übung für Beine, Drücken, Ziehen und Rumpf."
+    },
+    "es": {
+     "t": "Entrenamiento de cuerpo completo",
+     "g": "Descubre por qué entrenar todo el cuerpo funciona bien al empezar.",
+     "p": [
+      "Cada sesión trabaja piernas, empuje, tracción y core a la vez.",
+      "Practicas cada movimiento más a menudo, así aprendes más rápido.",
+      "Si fallas un día no pasa nada: nada se queda sin entrenar una semana."
+     ],
+     "q": "¿Te gusta la idea de entrenar todo en una sola sesión?",
+     "c": "Apunta un ejercicio de piernas, uno de empuje, uno de tracción y uno de core."
+    },
+    "fr": {
+     "t": "Le full body expliqué",
+     "g": "Comprends pourquoi travailler tout le corps convient bien aux débutants.",
+     "p": [
+      "Chaque séance combine jambes, poussée, tirage et tronc.",
+      "Tu pratiques chaque mouvement plus souvent, donc tu progresses plus vite.",
+      "Rater un jour n’est pas grave : rien n’est oublié pendant une semaine."
+     ],
+     "q": "Entraîner tout le corps en une séance, ça te plaît ?",
+     "c": "Note un exercice de jambes, de poussée, de tirage et de tronc que tu connais."
+    },
+    "it": {
+     "t": "Il full body spiegato",
+     "g": "Capire perché allenare tutto il corpo funziona bene per chi inizia.",
+     "p": [
+      "Ogni seduta allena gambe, spinta, trazione e core insieme.",
+      "Ripeti ogni movimento più spesso e così impari più in fretta.",
+      "Saltare un giorno non è un problema: nulla resta fermo per una settimana."
+     ],
+     "q": "Ti piace l’idea di allenare tutto in una seduta?",
+     "c": "Elenca un esercizio per gambe, spinta, trazione e core che conosci."
+    },
+    "pt": {
+     "t": "O treino de corpo inteiro",
+     "g": "Perceber porque treinar o corpo todo funciona bem para quem começa.",
+     "p": [
+      "Cada treino trabalha pernas, empurrar, puxar e core em conjunto.",
+      "Praticas cada movimento mais vezes e aprendes mais depressa.",
+      "Falhar um dia não é problema: nada fica uma semana sem treino."
+     ],
+     "q": "Treinar tudo numa só sessão parece-te bem?",
+     "c": "Escreve um exercício de pernas, de empurrar, de puxar e de core que conheças."
+    },
+    "pt_BR": {
+     "t": "Treino de corpo inteiro",
+     "g": "Entenda por que treinar o corpo todo funciona bem para iniciantes.",
+     "p": [
+      "Cada treino trabalha pernas, empurrar, puxar e core juntos.",
+      "Você pratica cada movimento mais vezes e aprende mais rápido.",
+      "Faltar um dia não é problema: nada fica uma semana sem treino."
+     ],
+     "q": "Treinar tudo em uma sessão parece bom para você?",
+     "c": "Anote um exercício de pernas, de empurrar, de puxar e de core que você conhece."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building your first routine",
+     "g": "Put together a simple two or three day full-body plan.",
+     "p": [
+      "Example: goblet squat, chest press, cable row, glute bridge, plank.",
+      "Two or three sets of each, with a warm-up first and cool-down last.",
+      "Keep the same plan for a few weeks so you can see progress."
+     ],
+     "q": "Which days of the week could you train?",
+     "c": "Write your first routine with five exercises, sets and reps."
+    },
+    "de": {
+     "t": "Deine erste Trainingsroutine",
+     "g": "Stell einen einfachen Ganzkörperplan für zwei oder drei Tage zusammen.",
+     "p": [
+      "Beispiel: Goblet-Kniebeuge, Brustpresse, Kabelrudern, Glute Bridge, Stütz.",
+      "Je zwei bis drei Sätze, vorher Aufwärmen, am Ende Cool-down.",
+      "Behalte den Plan einige Wochen, damit du Fortschritte siehst."
+     ],
+     "q": "An welchen Wochentagen könntest du trainieren?",
+     "c": "Schreib deine erste Routine mit fünf Übungen, Sätzen und Wiederholungen."
+    },
+    "es": {
+     "t": "Tu primera rutina",
+     "g": "Monta un plan sencillo de cuerpo completo de dos o tres días.",
+     "p": [
+      "Ejemplo: sentadilla goblet, press de pecho, remo en polea, puente y plancha.",
+      "Dos o tres series de cada uno, con calentamiento antes y vuelta a la calma al final.",
+      "Mantén el mismo plan unas semanas para ver tu progreso."
+     ],
+     "q": "¿Qué días de la semana podrías entrenar?",
+     "c": "Escribe tu primera rutina con cinco ejercicios, series y repeticiones."
+    },
+    "fr": {
+     "t": "Construire ta première routine",
+     "g": "Crée un programme full body simple sur deux ou trois jours.",
+     "p": [
+      "Exemple : goblet squat, développé machine, tirage horizontal, pont, planche.",
+      "Deux ou trois séries de chaque, échauffement avant et retour au calme après.",
+      "Garde le même programme quelques semaines pour voir tes progrès."
+     ],
+     "q": "Quels jours de la semaine pourrais-tu t’entraîner ?",
+     "c": "Écris ta première routine avec cinq exercices, séries et répétitions."
+    },
+    "it": {
+     "t": "La tua prima scheda",
+     "g": "Crea una semplice scheda full body su due o tre giorni.",
+     "p": [
+      "Esempio: goblet squat, chest press, pulley, ponte glutei, plank.",
+      "Due o tre serie per esercizio, riscaldamento prima e defaticamento alla fine.",
+      "Mantieni la stessa scheda per qualche settimana per vedere i progressi."
+     ],
+     "q": "In quali giorni della settimana potresti allenarti?",
+     "c": "Scrivi la tua prima scheda con cinque esercizi, serie e ripetizioni."
+    },
+    "pt": {
+     "t": "A tua primeira rotina",
+     "g": "Monta um plano simples de corpo inteiro com dois ou três dias.",
+     "p": [
+      "Exemplo: agachamento goblet, supino na máquina, remada, ponte e prancha.",
+      "Duas ou três séries de cada, com aquecimento antes e retorno à calma no fim.",
+      "Mantém o mesmo plano algumas semanas para veres o progresso."
+     ],
+     "q": "Em que dias da semana poderias treinar?",
+     "c": "Escreve a tua primeira rotina com cinco exercícios, séries e repetições."
+    },
+    "pt_BR": {
+     "t": "Montando sua primeira rotina",
+     "g": "Monte uma ficha simples de corpo inteiro para dois ou três dias.",
+     "p": [
+      "Exemplo: agachamento goblet, supino máquina, remada no cabo, elevação pélvica e prancha.",
+      "Duas ou três séries de cada, com aquecimento antes e desaquecimento no fim.",
+      "Mantenha a mesma ficha por algumas semanas para ver o progresso."
+     ],
+     "q": "Em quais dias da semana você poderia treinar?",
+     "c": "Escreva sua primeira rotina com cinco exercícios, séries e repetições."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How often to train as a beginner",
+     "g": "Learn general ideas about training frequency and rest days.",
+     "p": [
+      "Two or three full-body sessions a week is a common beginner plan.",
+      "Leave a rest day between sessions so your body can recover.",
+      "Light activity like walking on rest days is usually welcome."
+     ],
+     "q": "How many days a week feels realistic for you right now?",
+     "c": "Mark your training days and rest days for this week on a calendar."
+    },
+    "de": {
+     "t": "Wie oft als Einsteiger trainieren",
+     "g": "Lerne allgemeine Ideen zu Trainingshäufigkeit und Ruhetagen.",
+     "p": [
+      "Zwei bis drei Ganzkörpereinheiten pro Woche sind für Einsteiger üblich.",
+      "Lass einen Ruhetag zwischen den Einheiten, damit sich der Körper erholt.",
+      "Leichte Aktivität wie Spazierengehen an Ruhetagen tut meist gut."
+     ],
+     "q": "Wie viele Tage pro Woche sind für dich gerade realistisch?",
+     "c": "Trag diese Woche deine Trainings- und Ruhetage in einen Kalender ein."
+    },
+    "es": {
+     "t": "Con qué frecuencia entrenar al empezar",
+     "g": "Conoce ideas generales sobre frecuencia y días de descanso.",
+     "p": [
+      "Dos o tres sesiones de cuerpo completo por semana es un plan habitual al empezar.",
+      "Deja un día de descanso entre sesiones para que el cuerpo se recupere.",
+      "Una actividad suave como caminar en días de descanso suele venir bien."
+     ],
+     "q": "¿Cuántos días por semana te parecen realistas ahora?",
+     "c": "Marca en un calendario tus días de entreno y descanso de esta semana."
+    },
+    "fr": {
+     "t": "À quelle fréquence s’entraîner",
+     "g": "Découvre des repères généraux sur la fréquence et les jours de repos.",
+     "p": [
+      "Deux ou trois séances full body par semaine, c’est un plan courant pour débuter.",
+      "Laisse un jour de repos entre les séances pour que le corps récupère.",
+      "Une activité douce comme la marche les jours de repos est souvent bienvenue."
+     ],
+     "q": "Combien de jours par semaine te semblent réalistes en ce moment ?",
+     "c": "Note sur un calendrier tes jours d’entraînement et de repos cette semaine."
+    },
+    "it": {
+     "t": "Quanto spesso allenarsi all’inizio",
+     "g": "Scopri idee generali su frequenza e giorni di riposo.",
+     "p": [
+      "Due o tre sedute full body a settimana sono un piano comune per chi inizia.",
+      "Lascia un giorno di riposo tra le sedute per far recuperare il corpo.",
+      "Un’attività leggera come camminare nei giorni di riposo di solito fa bene."
+     ],
+     "q": "Quanti giorni a settimana ti sembrano realistici ora?",
+     "c": "Segna sul calendario i giorni di allenamento e di riposo di questa settimana."
+    },
+    "pt": {
+     "t": "Com que frequência treinar no início",
+     "g": "Conhece ideias gerais sobre frequência e dias de descanso.",
+     "p": [
+      "Dois ou três treinos de corpo inteiro por semana é um plano comum no início.",
+      "Deixa um dia de descanso entre treinos para o corpo recuperar.",
+      "Atividade leve como caminhar nos dias de descanso costuma fazer bem."
+     ],
+     "q": "Quantos dias por semana te parecem realistas agora?",
+     "c": "Marca num calendário os teus dias de treino e de descanso desta semana."
+    },
+    "pt_BR": {
+     "t": "Com que frequência treinar no começo",
+     "g": "Conheça ideias gerais sobre frequência e dias de descanso.",
+     "p": [
+      "Dois ou três treinos de corpo inteiro por semana é um plano comum para iniciantes.",
+      "Deixe um dia de descanso entre os treinos para o corpo se recuperar.",
+      "Atividade leve, como caminhar nos dias de descanso, costuma fazer bem."
+     ],
+     "q": "Quantos dias por semana parecem realistas para você agora?",
+     "c": "Marque num calendário seus dias de treino e de descanso desta semana."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tracking your workouts",
+     "g": "Record exercises and weights in a notebook or an app.",
+     "p": [
+      "Write the date, exercise, weight, sets and reps.",
+      "A short note on how it felt helps you plan next time.",
+      "Looking back at old entries is a great motivation boost."
+     ],
+     "q": "Do you prefer paper notes or an app for tracking?",
+     "c": "Start a training log today and record your last workout."
+    },
+    "de": {
+     "t": "Training aufzeichnen",
+     "g": "Halte Übungen und Gewichte in einem Notizbuch oder einer App fest.",
+     "p": [
+      "Notiere Datum, Übung, Gewicht, Sätze und Wiederholungen.",
+      "Eine kurze Notiz zum Gefühl hilft bei der Planung fürs nächste Mal.",
+      "Alte Einträge anzuschauen motiviert enorm."
+     ],
+     "q": "Magst du lieber Notizen auf Papier oder eine App?",
+     "c": "Beginne heute ein Trainingstagebuch und trag dein letztes Training ein."
+    },
+    "es": {
+     "t": "Registrar tus entrenamientos",
+     "g": "Apunta ejercicios y pesos en una libreta o una app.",
+     "p": [
+      "Anota la fecha, el ejercicio, el peso, las series y las repeticiones.",
+      "Una nota breve sobre cómo te sentiste ayuda a planificar la próxima vez.",
+      "Mirar registros antiguos es un gran impulso de motivación."
+     ],
+     "q": "¿Prefieres apuntar en papel o en una app?",
+     "c": "Empieza hoy un diario de entreno y registra tu última sesión."
+    },
+    "fr": {
+     "t": "Suivre ses séances",
+     "g": "Note exercices et charges dans un carnet ou une appli.",
+     "p": [
+      "Inscris la date, l’exercice, la charge, les séries et les répétitions.",
+      "Une courte note sur tes sensations aide à préparer la prochaine fois.",
+      "Relire d’anciennes notes est un super coup de motivation."
+     ],
+     "q": "Préfères-tu un carnet papier ou une appli ?",
+     "c": "Commence aujourd’hui un carnet d’entraînement avec ta dernière séance."
+    },
+    "it": {
+     "t": "Tenere traccia degli allenamenti",
+     "g": "Annota esercizi e pesi su un quaderno o in un’app.",
+     "p": [
+      "Scrivi data, esercizio, peso, serie e ripetizioni.",
+      "Una breve nota su come ti sei sentito aiuta a pianificare la volta dopo.",
+      "Rileggere vecchie note dà una bella spinta di motivazione."
+     ],
+     "q": "Preferisci appunti su carta o un’app?",
+     "c": "Inizia oggi un diario di allenamento e registra l’ultima seduta."
+    },
+    "pt": {
+     "t": "Registar os treinos",
+     "g": "Aponta exercícios e pesos num caderno ou numa aplicação.",
+     "p": [
+      "Escreve a data, o exercício, o peso, as séries e as repetições.",
+      "Uma nota curta sobre como te sentiste ajuda a planear a próxima vez.",
+      "Rever registos antigos dá um ótimo impulso de motivação."
+     ],
+     "q": "Preferes registar em papel ou numa aplicação?",
+     "c": "Começa hoje um diário de treino e regista o teu último treino."
+    },
+    "pt_BR": {
+     "t": "Registrando seus treinos",
+     "g": "Anote exercícios e cargas em um caderno ou aplicativo.",
+     "p": [
+      "Escreva a data, o exercício, a carga, as séries e as repetições.",
+      "Uma nota curta sobre como se sentiu ajuda a planejar a próxima vez.",
+      "Olhar registros antigos dá um ótimo gás de motivação."
+     ],
+     "q": "Você prefere anotar no papel ou num app?",
+     "c": "Comece hoje um diário de treino e registre seu último treino."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Progressive overload explained",
+     "g": "Understand the idea of gradually doing a little more over time.",
+     "p": [
+      "Your body adapts to what you ask of it regularly.",
+      "Small, steady increases keep that adaptation going.",
+      "Progress should be gradual, never at the cost of good form."
+     ],
+     "q": "What small step forward could you take next week?",
+     "c": "Look at your log and pick one exercise to progress slightly next time."
+    },
+    "de": {
+     "t": "Progressive Überlastung erklärt",
+     "g": "Verstehe die Idee, mit der Zeit nach und nach etwas mehr zu machen.",
+     "p": [
+      "Dein Körper passt sich an das an, was du regelmäßig von ihm verlangst.",
+      "Kleine, stetige Steigerungen halten diese Anpassung in Gang.",
+      "Fortschritt sollte schrittweise kommen, nie auf Kosten der Technik."
+     ],
+     "q": "Welchen kleinen Schritt nach vorn könntest du nächste Woche machen?",
+     "c": "Wähl in deinem Tagebuch eine Übung, die du nächstes Mal leicht steigerst."
+    },
+    "es": {
+     "t": "La sobrecarga progresiva",
+     "g": "Entiende la idea de hacer un poco más de forma gradual.",
+     "p": [
+      "Tu cuerpo se adapta a lo que le pides con regularidad.",
+      "Aumentos pequeños y constantes mantienen esa adaptación.",
+      "El progreso debe ser gradual, nunca a costa de la buena técnica."
+     ],
+     "q": "¿Qué pequeño paso adelante podrías dar la próxima semana?",
+     "c": "Mira tu registro y elige un ejercicio para progresar un poco la próxima vez."
+    },
+    "fr": {
+     "t": "La surcharge progressive",
+     "g": "Comprends l’idée d’en faire un peu plus, progressivement.",
+     "p": [
+      "Ton corps s’adapte à ce que tu lui demandes régulièrement.",
+      "De petites hausses régulières entretiennent cette adaptation.",
+      "Le progrès doit être graduel, jamais au détriment de la technique."
+     ],
+     "q": "Quel petit pas en avant pourrais-tu faire la semaine prochaine ?",
+     "c": "Dans ton carnet, choisis un exercice à faire progresser un peu la prochaine fois."
+    },
+    "it": {
+     "t": "Il sovraccarico progressivo",
+     "g": "Capire l’idea di fare un po’ di più in modo graduale.",
+     "p": [
+      "Il corpo si adatta a ciò che gli chiedi con regolarità.",
+      "Piccoli aumenti costanti mantengono attivo questo adattamento.",
+      "Il progresso deve essere graduale, mai a scapito della tecnica."
+     ],
+     "q": "Quale piccolo passo avanti potresti fare la prossima settimana?",
+     "c": "Guarda il diario e scegli un esercizio da far progredire un po’ la prossima volta."
+    },
+    "pt": {
+     "t": "A sobrecarga progressiva",
+     "g": "Perceber a ideia de fazer um pouco mais de forma gradual.",
+     "p": [
+      "O corpo adapta-se ao que lhe pedes com regularidade.",
+      "Aumentos pequenos e constantes mantêm essa adaptação.",
+      "O progresso deve ser gradual, nunca à custa da boa técnica."
+     ],
+     "q": "Que pequeno passo em frente podias dar na próxima semana?",
+     "c": "Vê o teu registo e escolhe um exercício para progredir um pouco da próxima vez."
+    },
+    "pt_BR": {
+     "t": "Sobrecarga progressiva",
+     "g": "Entenda a ideia de fazer um pouco mais aos poucos.",
+     "p": [
+      "Seu corpo se adapta ao que você pede dele com regularidade.",
+      "Aumentos pequenos e constantes mantêm essa adaptação.",
+      "O progresso deve ser gradual, nunca à custa da boa técnica."
+     ],
+     "q": "Que pequeno passo à frente você poderia dar na semana que vem?",
+     "c": "Olhe seu registro e escolha um exercício para progredir um pouco na próxima vez."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ways to progress",
+     "g": "Discover the different ways to do a little more.",
+     "p": [
+      "Add a rep or two before adding weight.",
+      "Add a set, or take a small step up in weight when reps feel easy.",
+      "Better form, control and range of motion are progress too."
+     ],
+     "q": "Which way of progressing appeals to you most?",
+     "c": "Next session, add one rep to every set of one exercise."
+    },
+    "de": {
+     "t": "Wege zum Fortschritt",
+     "g": "Entdecke verschiedene Möglichkeiten, etwas mehr zu machen.",
+     "p": [
+      "Füg ein, zwei Wiederholungen hinzu, bevor du das Gewicht erhöhst.",
+      "Mach einen Satz mehr oder steigere das Gewicht leicht, wenn es sich leicht anfühlt.",
+      "Bessere Technik, Kontrolle und Bewegungsumfang sind auch Fortschritt."
+     ],
+     "q": "Welcher Weg zum Fortschritt gefällt dir am besten?",
+     "c": "Mach in der nächsten Einheit bei einer Übung in jedem Satz eine Wiederholung mehr."
+    },
+    "es": {
+     "t": "Formas de progresar",
+     "g": "Descubre las distintas formas de hacer un poco más.",
+     "p": [
+      "Suma una o dos repeticiones antes de subir peso.",
+      "Añade una serie, o sube un poco el peso cuando las repeticiones sean fáciles.",
+      "Mejor técnica, control y recorrido también son progreso."
+     ],
+     "q": "¿Qué forma de progresar te atrae más?",
+     "c": "En la próxima sesión, suma una repetición a cada serie de un ejercicio."
+    },
+    "fr": {
+     "t": "Les façons de progresser",
+     "g": "Découvre les différentes manières d’en faire un peu plus.",
+     "p": [
+      "Ajoute une ou deux répétitions avant d’ajouter du poids.",
+      "Ajoute une série, ou monte un peu la charge quand c’est facile.",
+      "Une meilleure technique, plus de contrôle et d’amplitude, c’est aussi progresser."
+     ],
+     "q": "Quelle façon de progresser te plaît le plus ?",
+     "c": "À la prochaine séance, ajoute une répétition à chaque série d’un exercice."
+    },
+    "it": {
+     "t": "Modi per progredire",
+     "g": "Scopri i diversi modi di fare un po’ di più.",
+     "p": [
+      "Aggiungi una o due ripetizioni prima di aumentare il peso.",
+      "Aggiungi una serie o alza un po’ il peso quando le ripetizioni sono facili.",
+      "Tecnica migliore, più controllo e ampiezza sono anche progresso."
+     ],
+     "q": "Quale modo di progredire ti piace di più?",
+     "c": "Nella prossima seduta aggiungi una ripetizione a ogni serie di un esercizio."
+    },
+    "pt": {
+     "t": "Formas de progredir",
+     "g": "Descobre as diferentes formas de fazer um pouco mais.",
+     "p": [
+      "Junta uma ou duas repetições antes de aumentar o peso.",
+      "Junta uma série, ou sobe um pouco o peso quando as repetições ficam fáceis.",
+      "Melhor técnica, controlo e amplitude também são progresso."
+     ],
+     "q": "Que forma de progredir te agrada mais?",
+     "c": "No próximo treino, junta uma repetição a cada série de um exercício."
+    },
+    "pt_BR": {
+     "t": "Formas de progredir",
+     "g": "Descubra as diferentes formas de fazer um pouco mais.",
+     "p": [
+      "Acrescente uma ou duas repetições antes de aumentar a carga.",
+      "Acrescente uma série, ou suba um pouco a carga quando ficar fácil.",
+      "Melhor técnica, controle e amplitude também são progresso."
+     ],
+     "q": "Qual forma de progredir mais agrada a você?",
+     "c": "No próximo treino, acrescente uma repetição em cada série de um exercício."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dumbbell basics",
+     "g": "Learn to pick up, lift and put down dumbbells safely.",
+     "p": [
+      "Lift dumbbells from the rack with a neutral back, close to your body.",
+      "Keep a firm grip and move them under control at all times.",
+      "Lower them gently to the floor or rack, never drop them."
+     ],
+     "q": "Have you worked with dumbbells before?",
+     "c": "Practise picking up and setting down a light pair 5 times with good form."
+    },
+    "de": {
+     "t": "Grundlagen der Kurzhanteln",
+     "g": "Lerne, Kurzhanteln sicher aufzunehmen, zu bewegen und abzulegen.",
+     "p": [
+      "Nimm sie mit neutralem Rücken und nah am Körper aus der Ablage.",
+      "Halte sie fest und bewege sie jederzeit kontrolliert.",
+      "Leg sie sanft auf Boden oder Ablage, lass sie nie fallen."
+     ],
+     "q": "Hast du schon mit Kurzhanteln trainiert?",
+     "c": "Übe fünfmal, ein leichtes Paar sauber aufzunehmen und abzulegen."
+    },
+    "es": {
+     "t": "Bases de las mancuernas",
+     "g": "Aprende a coger, levantar y dejar las mancuernas con seguridad.",
+     "p": [
+      "Cógelas del soporte con la espalda neutra y pegadas al cuerpo.",
+      "Agárralas con firmeza y muévelas siempre con control.",
+      "Déjalas con suavidad en el suelo o el soporte, nunca las sueltes de golpe."
+     ],
+     "q": "¿Has trabajado antes con mancuernas?",
+     "c": "Practica 5 veces coger y dejar un par ligero con buena técnica."
+    },
+    "fr": {
+     "t": "Les bases des haltères",
+     "g": "Apprends à prendre, soulever et reposer les haltères en sécurité.",
+     "p": [
+      "Prends-les sur le rack dos neutre, près du corps.",
+      "Garde une prise ferme et contrôle-les en permanence.",
+      "Repose-les doucement au sol ou sur le rack, ne les lâche jamais."
+     ],
+     "q": "As-tu déjà travaillé avec des haltères ?",
+     "c": "Entraîne-toi 5 fois à prendre et reposer une paire légère proprement."
+    },
+    "it": {
+     "t": "Basi dei manubri",
+     "g": "Impara a prendere, sollevare e posare i manubri in sicurezza.",
+     "p": [
+      "Prendili dalla rastrelliera con la schiena neutra, vicino al corpo.",
+      "Mantieni una presa salda e muovili sempre con controllo.",
+      "Posali dolcemente a terra o sulla rastrelliera, non lasciarli mai cadere."
+     ],
+     "q": "Hai già lavorato con i manubri?",
+     "c": "Esercitati 5 volte a prendere e posare una coppia leggera con buona tecnica."
+    },
+    "pt": {
+     "t": "Bases dos halteres",
+     "g": "Aprende a pegar, levantar e pousar halteres com segurança.",
+     "p": [
+      "Tira-os do suporte com as costas neutras e junto ao corpo.",
+      "Segura-os com firmeza e move-os sempre com controlo.",
+      "Pousa-os com suavidade no chão ou no suporte, nunca os deixes cair."
+     ],
+     "q": "Já trabalhaste com halteres?",
+     "c": "Pratica 5 vezes pegar e pousar um par leve com boa técnica."
+    },
+    "pt_BR": {
+     "t": "Noções de halteres",
+     "g": "Aprenda a pegar, levantar e soltar halteres com segurança.",
+     "p": [
+      "Tire do suporte com as costas neutras e perto do corpo.",
+      "Segure com firmeza e movimente sempre com controle.",
+      "Coloque no chão ou no suporte com suavidade, nunca deixe cair."
+     ],
+     "q": "Você já treinou com halteres antes?",
+     "c": "Pratique 5 vezes pegar e apoiar um par leve com boa técnica."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dumbbell bench press",
+     "g": "Learn to press two dumbbells on a flat bench.",
+     "p": [
+      "Sit with dumbbells on your thighs, then lie back carefully together.",
+      "Press up over your chest, wrists straight, feet planted.",
+      "Lower slowly to chest level with elbows at a comfortable angle."
+     ],
+     "q": "How did the machine chest press feel compared with free weights?",
+     "c": "Do 2 sets of 10 with light dumbbells, focusing on a slow lowering."
+    },
+    "de": {
+     "t": "Bankdrücken mit Kurzhanteln",
+     "g": "Lerne, zwei Kurzhanteln auf der Flachbank zu drücken.",
+     "p": [
+      "Setz dich mit den Hanteln auf den Oberschenkeln und leg dich gemeinsam mit ihnen zurück.",
+      "Drück sie über der Brust hoch, Handgelenke gerade, Füße fest am Boden.",
+      "Senk sie langsam auf Brusthöhe, Ellbogen in angenehmem Winkel."
+     ],
+     "q": "Wie fühlte sich die Brustpresse im Vergleich zu freien Gewichten an?",
+     "c": "Mach 2 Sätze mit 10 Wiederholungen mit leichten Hanteln, langsam absenken."
+    },
+    "es": {
+     "t": "Press de banca con mancuernas",
+     "g": "Aprende a empujar dos mancuernas en un banco plano.",
+     "p": [
+      "Siéntate con las mancuernas en los muslos y túmbate con cuidado junto a ellas.",
+      "Empuja hacia arriba sobre el pecho, muñecas rectas y pies firmes.",
+      "Baja despacio hasta el pecho con los codos en un ángulo cómodo."
+     ],
+     "q": "¿Qué diferencia notaste entre la máquina y el peso libre?",
+     "c": "Haz 2 series de 10 con mancuernas ligeras, bajando despacio."
+    },
+    "fr": {
+     "t": "Le développé couché aux haltères",
+     "g": "Apprends à pousser deux haltères sur un banc plat.",
+     "p": [
+      "Assieds-toi haltères sur les cuisses, puis allonge-toi doucement avec eux.",
+      "Pousse au-dessus de la poitrine, poignets droits, pieds ancrés.",
+      "Redescends lentement au niveau de la poitrine, coudes à un angle confortable."
+     ],
+     "q": "Quelle différence sens-tu entre la machine et les poids libres ?",
+     "c": "Fais 2 séries de 10 avec des haltères légers, en descendant lentement."
+    },
+    "it": {
+     "t": "Panca piana con manubri",
+     "g": "Impara a spingere due manubri su una panca piana.",
+     "p": [
+      "Siediti con i manubri sulle cosce, poi sdraiati con calma insieme a loro.",
+      "Spingi sopra il petto, polsi dritti e piedi ben piantati.",
+      "Scendi lentamente all’altezza del petto con i gomiti in un angolo comodo."
+     ],
+     "q": "Che differenza hai notato tra la macchina e i pesi liberi?",
+     "c": "Fai 2 serie da 10 con manubri leggeri, scendendo lentamente."
+    },
+    "pt": {
+     "t": "Supino com halteres",
+     "g": "Aprende a empurrar dois halteres num banco plano.",
+     "p": [
+      "Senta-te com os halteres nas coxas e deita-te com cuidado junto com eles.",
+      "Empurra por cima do peito, pulsos direitos e pés bem apoiados.",
+      "Desce devagar até à altura do peito, cotovelos num ângulo confortável."
+     ],
+     "q": "Que diferença sentiste entre a máquina e os pesos livres?",
+     "c": "Faz 2 séries de 10 com halteres leves, a descer devagar."
+    },
+    "pt_BR": {
+     "t": "Supino reto com halteres",
+     "g": "Aprenda a empurrar dois halteres em um banco reto.",
+     "p": [
+      "Sente com os halteres nas coxas e deite com cuidado junto com eles.",
+      "Empurre acima do peito, punhos retos e pés firmes no chão.",
+      "Desça devagar até a altura do peito, cotovelos num ângulo confortável."
+     ],
+     "q": "Que diferença você sentiu entre a máquina e o peso livre?",
+     "c": "Faça 2 séries de 10 com halteres leves, descendo devagar."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dumbbell row",
+     "g": "Learn one-arm rowing with support on a bench.",
+     "p": [
+      "Place one hand and knee on a bench, back flat and neutral.",
+      "Pull the dumbbell towards your hip, elbow close to your body.",
+      "Lower it with control until your arm is long."
+     ],
+     "q": "Which side of your body feels stronger?",
+     "c": "Do 2 sets of 10 rows per arm, starting with your weaker side."
+    },
+    "de": {
+     "t": "Einarmiges Kurzhantelrudern",
+     "g": "Lerne einarmiges Rudern mit Abstützen auf der Bank.",
+     "p": [
+      "Stütz eine Hand und ein Knie auf der Bank ab, Rücken gerade und neutral.",
+      "Zieh die Hantel zur Hüfte, Ellbogen nah am Körper.",
+      "Senk sie kontrolliert, bis der Arm lang ist."
+     ],
+     "q": "Welche Körperseite fühlt sich stärker an?",
+     "c": "Mach 2 Sätze mit 10 Zügen pro Arm, beginne mit der schwächeren Seite."
+    },
+    "es": {
+     "t": "Remo con mancuerna",
+     "g": "Aprende el remo a una mano con apoyo en un banco.",
+     "p": [
+      "Apoya una mano y una rodilla en el banco, espalda plana y neutra.",
+      "Tira de la mancuerna hacia la cadera con el codo pegado al cuerpo.",
+      "Bájala con control hasta estirar el brazo."
+     ],
+     "q": "¿Qué lado de tu cuerpo notas más fuerte?",
+     "c": "Haz 2 series de 10 remos por brazo, empezando por el lado más débil."
+    },
+    "fr": {
+     "t": "Le rowing haltère",
+     "g": "Apprends le rowing à un bras avec appui sur un banc.",
+     "p": [
+      "Pose une main et un genou sur le banc, dos plat et neutre.",
+      "Tire l’haltère vers la hanche, coude près du corps.",
+      "Redescends-le avec contrôle jusqu’à bras tendu."
+     ],
+     "q": "Quel côté de ton corps te semble le plus fort ?",
+     "c": "Fais 2 séries de 10 par bras, en commençant par ton côté le plus faible."
+    },
+    "it": {
+     "t": "Rematore con manubrio",
+     "g": "Impara il rematore a un braccio con appoggio sulla panca.",
+     "p": [
+      "Appoggia una mano e un ginocchio sulla panca, schiena piatta e neutra.",
+      "Tira il manubrio verso l’anca, gomito vicino al corpo.",
+      "Abbassalo con controllo fino a distendere il braccio."
+     ],
+     "q": "Quale lato del corpo senti più forte?",
+     "c": "Fai 2 serie da 10 per braccio, iniziando dal lato più debole."
+    },
+    "pt": {
+     "t": "Remada com halter",
+     "g": "Aprende a remada a um braço com apoio num banco.",
+     "p": [
+      "Apoia uma mão e um joelho no banco, costas planas e neutras.",
+      "Puxa o halter em direção à anca, cotovelo junto ao corpo.",
+      "Desce-o com controlo até esticar o braço."
+     ],
+     "q": "Que lado do teu corpo sentes mais forte?",
+     "c": "Faz 2 séries de 10 remadas por braço, a começar pelo lado mais fraco."
+    },
+    "pt_BR": {
+     "t": "Remada unilateral com halter",
+     "g": "Aprenda a remada com um braço, apoiado no banco.",
+     "p": [
+      "Apoie uma mão e um joelho no banco, costas retas e neutras.",
+      "Puxe o halter em direção ao quadril, cotovelo perto do corpo.",
+      "Desça com controle até estender o braço."
+     ],
+     "q": "Qual lado do seu corpo parece mais forte?",
+     "c": "Faça 2 séries de 10 remadas por braço, começando pelo lado mais fraco."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dumbbell shoulder press",
+     "g": "Press overhead while staying stable.",
+     "p": [
+      "Sit or stand tall with dumbbells at shoulder height.",
+      "Brace your core and press up without arching your lower back.",
+      "Lower slowly back to shoulder height."
+     ],
+     "q": "Do you often reach overhead in your daily life?",
+     "c": "Do 2 sets of 8 seated shoulder presses with light dumbbells."
+    },
+    "de": {
+     "t": "Schulterdrücken mit Kurzhanteln",
+     "g": "Drück über Kopf und bleib dabei stabil.",
+     "p": [
+      "Sitz oder steh aufrecht, Hanteln auf Schulterhöhe.",
+      "Spann die Mitte an und drück hoch, ohne ins Hohlkreuz zu gehen.",
+      "Senk die Hanteln langsam zurück auf Schulterhöhe."
+     ],
+     "q": "Greifst du im Alltag oft über Kopf?",
+     "c": "Mach 2 Sätze mit 8 Wiederholungen Schulterdrücken im Sitzen, leicht."
+    },
+    "es": {
+     "t": "Press de hombros con mancuernas",
+     "g": "Empuja por encima de la cabeza manteniéndote estable.",
+     "p": [
+      "Siéntate o ponte de pie erguido con las mancuernas a la altura de los hombros.",
+      "Activa el core y empuja sin arquear la zona lumbar.",
+      "Baja despacio hasta la altura de los hombros."
+     ],
+     "q": "¿Sueles estirar los brazos por encima de la cabeza en tu día?",
+     "c": "Haz 2 series de 8 press de hombros sentado con mancuernas ligeras."
+    },
+    "fr": {
+     "t": "Le développé épaules aux haltères",
+     "g": "Pousse au-dessus de la tête tout en restant stable.",
+     "p": [
+      "Assis ou debout bien droit, haltères à hauteur d’épaules.",
+      "Gaine ton tronc et pousse sans cambrer le bas du dos.",
+      "Redescends lentement à hauteur d’épaules."
+     ],
+     "q": "Lèves-tu souvent les bras au-dessus de la tête au quotidien ?",
+     "c": "Fais 2 séries de 8 développés épaules assis avec des haltères légers."
+    },
+    "it": {
+     "t": "Lento avanti con manubri",
+     "g": "Spingi sopra la testa restando stabile.",
+     "p": [
+      "Seduto o in piedi ben dritto, manubri all’altezza delle spalle.",
+      "Attiva il core e spingi senza inarcare la zona lombare.",
+      "Scendi lentamente fino all’altezza delle spalle."
+     ],
+     "q": "Ti capita spesso di allungarti sopra la testa durante il giorno?",
+     "c": "Fai 2 serie da 8 lento avanti da seduto con manubri leggeri."
+    },
+    "pt": {
+     "t": "Press de ombros com halteres",
+     "g": "Empurra acima da cabeça mantendo a estabilidade.",
+     "p": [
+      "Sentado ou de pé, bem direito, halteres à altura dos ombros.",
+      "Ativa o core e empurra sem arquear a zona lombar.",
+      "Desce devagar até à altura dos ombros."
+     ],
+     "q": "Costumas esticar os braços acima da cabeça no dia a dia?",
+     "c": "Faz 2 séries de 8 press de ombros sentado com halteres leves."
+    },
+    "pt_BR": {
+     "t": "Desenvolvimento com halteres",
+     "g": "Empurre acima da cabeça mantendo a estabilidade.",
+     "p": [
+      "Sentado ou em pé, bem ereto, halteres na altura dos ombros.",
+      "Ative o core e empurre sem arquear a lombar.",
+      "Desça devagar até a altura dos ombros."
+     ],
+     "q": "Você costuma esticar os braços acima da cabeça no dia a dia?",
+     "c": "Faça 2 séries de 8 desenvolvimentos sentado com halteres leves."
+    }
+   }
+  }
+ ]
+}

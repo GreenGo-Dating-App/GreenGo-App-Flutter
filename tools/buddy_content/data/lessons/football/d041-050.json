@@ -1,0 +1,835 @@
+{
+ "topic": "football",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Street football",
+     "g": "Celebrate football played in parks, courts and streets around the world.",
+     "p": [
+      "Street games need no referee: players agree the rules, the goals and the teams on the spot.",
+      "Tight spaces and uneven ground sharpen close control, tricks and creativity.",
+      "Many legends, such as Zinedine Zidane in Marseille, first learned the game outdoors with friends."
+     ],
+     "q": "Where did you or people you know play football as kids?",
+     "c": "Mark two goals with bags or bottles and play a quick game, or imagine where you would."
+    },
+    "de": {
+     "t": "Straßenfußball",
+     "g": "Feiere den Fußball in Parks, auf Bolzplätzen und Straßen weltweit.",
+     "p": [
+      "Auf der Straße gibt es keinen Schiri: Regeln, Tore und Teams werden spontan abgemacht.",
+      "Enge Räume und holpriger Boden schulen Ballkontrolle, Tricks und Kreativität.",
+      "Viele Legenden, etwa Zinedine Zidane in Marseille, lernten das Spiel draußen mit Freunden."
+     ],
+     "q": "Wo haben du oder Leute, die du kennst, als Kinder gekickt?",
+     "c": "Markiere zwei Tore mit Taschen oder Flaschen und spiel eine Runde, oder stell dir vor, wo."
+    },
+    "es": {
+     "t": "Fútbol callejero",
+     "g": "Celebra el fútbol de parques, canchas y calles de todo el mundo.",
+     "p": [
+      "En la calle no hay árbitro: los jugadores pactan reglas, porterías y equipos al momento.",
+      "Los espacios pequeños y el suelo irregular afinan el control, los trucos y la creatividad.",
+      "Muchas leyendas, como Zinedine Zidane en Marsella, aprendieron jugando al aire libre con amigos."
+     ],
+     "q": "¿Dónde jugabais al fútbol tú o tus conocidos de pequeños?",
+     "c": "Marca dos porterías con mochilas o botellas y juega un rato, o imagina dónde lo harías."
+    },
+    "fr": {
+     "t": "Le foot de rue",
+     "g": "Célèbre le foot joué dans les parcs, sur les city-stades et dans les rues du monde entier.",
+     "p": [
+      "Dans la rue, pas d'arbitre : on fixe les règles, les buts et les équipes sur place.",
+      "Les petits espaces et le sol irrégulier affûtent le contrôle, les gestes techniques et la créativité.",
+      "Beaucoup de légendes, comme Zinedine Zidane à Marseille, ont appris dehors avec leurs amis."
+     ],
+     "q": "Où jouais-tu au foot enfant, toi ou des gens que tu connais ?",
+     "c": "Marque deux buts avec des sacs ou des bouteilles et joue un peu, ou imagine où tu le ferais."
+    },
+    "it": {
+     "t": "Il calcio di strada",
+     "g": "Celebra il calcio giocato in parchi, campetti e strade di tutto il mondo.",
+     "p": [
+      "In strada non c'è arbitro: regole, porte e squadre si decidono sul momento.",
+      "Spazi stretti e terreno irregolare affinano controllo, numeri e creatività.",
+      "Molte leggende, come Zinedine Zidane a Marsiglia, hanno imparato all'aperto con gli amici."
+     ],
+     "q": "Dove giocavi a calcio da bambino, tu o le persone che conosci?",
+     "c": "Segna due porte con zaini o bottiglie e gioca un po', o immagina dove lo faresti."
+    },
+    "pt": {
+     "t": "Futebol de rua",
+     "g": "Celebra o futebol jogado em parques, ringues e ruas de todo o mundo.",
+     "p": [
+      "Na rua não há árbitro: os jogadores combinam regras, balizas e equipas na hora.",
+      "Espaços apertados e piso irregular afinam o controlo, as fintas e a criatividade.",
+      "Muitas lendas, como Zinedine Zidane em Marselha, aprenderam na rua com os amigos."
+     ],
+     "q": "Onde jogavas à bola em criança, tu ou pessoas que conheces?",
+     "c": "Marca duas balizas com mochilas ou garrafas e joga um pouco, ou imagina onde o farias."
+    },
+    "pt_BR": {
+     "t": "Futebol de rua",
+     "g": "Celebre o futebol jogado em praças, quadras e ruas do mundo todo.",
+     "p": [
+      "Na rua não tem árbitro: os jogadores combinam regras, gols e times na hora.",
+      "Espaço apertado e chão irregular afiam o domínio, os dribles e a criatividade.",
+      "Muitas lendas, como Zinedine Zidane em Marselha, aprenderam jogando na rua com os amigos."
+     ],
+     "q": "Onde você ou pessoas que conhece jogavam bola na infância?",
+     "c": "Marque dois gols com mochilas ou garrafas e jogue um pouco, ou imagine onde jogaria."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Football boots",
+     "g": "Choose the right footwear for grass, artificial turf and indoor courts.",
+     "p": [
+      "Firm-ground boots have moulded studs for dry natural grass; soft-ground boots have longer studs for mud.",
+      "Artificial grass suits boots with many short studs, and turf shoes have small rubber pimples.",
+      "Indoor shoes have flat, non-marking soles for sports halls and futsal courts."
+     ],
+     "q": "What surface do you play on most, or would like to play on?",
+     "c": "Look at any football boot and work out which surface it was made for."
+    },
+    "de": {
+     "t": "Fußballschuhe",
+     "g": "Wähle das richtige Schuhwerk für Rasen, Kunstrasen und Halle.",
+     "p": [
+      "Nockenschuhe sind für festen Naturrasen, Stollenschuhe mit längeren Stollen für matschigen Boden.",
+      "Für Kunstrasen gibt es Schuhe mit vielen kurzen Noppen, Multinocken haben kleine Gumminoppen.",
+      "Hallenschuhe haben flache, abriebfeste Sohlen für Turnhallen und Futsal."
+     ],
+     "q": "Auf welchem Untergrund spielst du am meisten, oder würdest gern spielen?",
+     "c": "Schau dir einen Fußballschuh an und finde heraus, für welchen Boden er gemacht ist."
+    },
+    "es": {
+     "t": "Las botas de fútbol",
+     "g": "Elige el calzado adecuado para césped natural, artificial y pista cubierta.",
+     "p": [
+      "Las botas FG tienen tacos moldeados para hierba seca; las SG llevan tacos más largos para el barro.",
+      "El césped artificial pide botas con muchos tacos cortos, y las de turf llevan pequeños tetones de goma.",
+      "Las zapatillas de sala tienen suela plana que no marca, para pabellones y fútbol sala."
+     ],
+     "q": "¿En qué superficie juegas más, o te gustaría jugar?",
+     "c": "Mira unas botas de fútbol y adivina para qué superficie están hechas."
+    },
+    "fr": {
+     "t": "Les chaussures de foot",
+     "g": "Choisis les bonnes chaussures pour l'herbe, le synthétique et la salle.",
+     "p": [
+      "Les crampons moulés conviennent à l'herbe sèche, les crampons vissés plus longs aux terrains gras.",
+      "Le synthétique demande de nombreux petits crampons, et les stabilisés de petits picots en caoutchouc.",
+      "Les chaussures de salle ont une semelle plate qui ne marque pas, pour les gymnases et le futsal."
+     ],
+     "q": "Sur quelle surface joues-tu le plus, ou aimerais-tu jouer ?",
+     "c": "Regarde une chaussure de foot et devine pour quelle surface elle a été conçue."
+    },
+    "it": {
+     "t": "Le scarpe da calcio",
+     "g": "Scegli le scarpe giuste per erba naturale, sintetico e campi indoor.",
+     "p": [
+      "Le scarpe FG hanno tacchetti in gomma per erba asciutta; le SG tacchetti più lunghi per il fango.",
+      "Il sintetico richiede tanti tacchetti corti, e le scarpe da calcetto hanno piccoli rilievi in gomma.",
+      "Le scarpe indoor hanno suola piatta che non segna, per palestre e futsal."
+     ],
+     "q": "Su che superficie giochi di più, o ti piacerebbe giocare?",
+     "c": "Guarda una scarpa da calcio e capisci per quale superficie è fatta."
+    },
+    "pt": {
+     "t": "As chuteiras",
+     "g": "Escolhe o calçado certo para relva natural, relva sintética e pavilhão.",
+     "p": [
+      "As chuteiras FG têm pitões moldados para relva seca; as SG têm pitões mais longos para lama.",
+      "A relva sintética pede muitos pitões curtos, e as sapatilhas de turf têm pequenos pitons de borracha.",
+      "Os ténis de pavilhão têm sola lisa que não marca, para pavilhões e futsal."
+     ],
+     "q": "Em que piso jogas mais, ou gostavas de jogar?",
+     "c": "Olha para uma chuteira e descobre para que piso foi feita."
+    },
+    "pt_BR": {
+     "t": "As chuteiras",
+     "g": "Escolha o calçado certo para grama natural, sintético e quadra.",
+     "p": [
+      "Chuteiras de campo têm travas moldadas para grama seca; as de trava longa são para gramado molhado.",
+      "O sintético pede muitas travas curtas, e a chuteira society tem pequenos cravos de borracha.",
+      "A chuteira de futsal tem sola lisa que não marca o piso da quadra."
+     ],
+     "q": "Em que piso você mais joga, ou gostaria de jogar?",
+     "c": "Olhe para uma chuteira e descubra para qual piso ela foi feita."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ball itself",
+     "g": "Follow how the football evolved from laced leather to modern designs.",
+     "p": [
+      "Early balls were often inflated animal bladders wrapped in leather, heavy when wet.",
+      "The 1970 World Cup ball, the Telstar, had 32 black and white panels to show up on TV.",
+      "A modern adult ball is size 5, with a circumference of 68 to 70 cm."
+     ],
+     "q": "What ball did you play with as a kid: leather, plastic or something homemade?",
+     "c": "Look closely at a ball and count its panels, or find a photo of one and count them."
+    },
+    "de": {
+     "t": "Der Ball selbst",
+     "g": "Verfolge, wie sich der Ball vom geschnürten Leder zum modernen Design entwickelte.",
+     "p": [
+      "Frühe Bälle waren oft aufgeblasene Tierblasen in Leder, die bei Nässe schwer wurden.",
+      "Der WM-Ball von 1970, der Telstar, hatte 32 schwarze und weiße Felder für bessere TV-Sicht.",
+      "Ein moderner Erwachsenenball hat Größe 5 und einen Umfang von 68 bis 70 cm."
+     ],
+     "q": "Mit welchem Ball hast du als Kind gespielt: Leder, Plastik oder selbst gemacht?",
+     "c": "Zähl die Felder eines Balls oder eines Ballfotos."
+    },
+    "es": {
+     "t": "El balón",
+     "g": "Descubre cómo evolucionó el balón del cuero con cordones a los diseños modernos.",
+     "p": [
+      "Los primeros balones solían ser vejigas de animal infladas y forradas de cuero, pesadas al mojarse.",
+      "El balón del Mundial de 1970, el Telstar, tenía 32 paneles blancos y negros para verse bien en la tele.",
+      "Un balón moderno de adulto es talla 5, con una circunferencia de 68 a 70 cm."
+     ],
+     "q": "¿Con qué balón jugabas de niño: cuero, plástico o algo casero?",
+     "c": "Mira de cerca un balón, o una foto de uno, y cuenta sus paneles."
+    },
+    "fr": {
+     "t": "Le ballon",
+     "g": "Suis l'évolution du ballon, du cuir lacé aux modèles modernes.",
+     "p": [
+      "Les premiers ballons étaient souvent des vessies d'animaux gonflées et entourées de cuir, lourdes sous la pluie.",
+      "Le ballon de la Coupe du monde 1970, le Telstar, avait 32 panneaux noirs et blancs pour la télévision.",
+      "Un ballon adulte moderne est de taille 5, avec une circonférence de 68 à 70 cm."
+     ],
+     "q": "Avec quel ballon jouais-tu enfant : cuir, plastique ou fait maison ?",
+     "c": "Regarde un ballon de près, ou une photo, et compte ses panneaux."
+    },
+    "it": {
+     "t": "Il pallone",
+     "g": "Segui l'evoluzione del pallone, dal cuoio con le stringhe ai modelli moderni.",
+     "p": [
+      "I primi palloni erano spesso vesciche animali gonfiate e rivestite di cuoio, pesanti con la pioggia.",
+      "Il pallone dei Mondiali 1970, il Telstar, aveva 32 pannelli bianchi e neri per vedersi bene in TV.",
+      "Un pallone moderno per adulti è misura 5, con una circonferenza da 68 a 70 cm."
+     ],
+     "q": "Con che pallone giocavi da bambino: cuoio, plastica o fatto in casa?",
+     "c": "Guarda da vicino un pallone, o una sua foto, e conta i pannelli."
+    },
+    "pt": {
+     "t": "A bola",
+     "g": "Acompanha a evolução da bola, do couro com atacadores aos modelos modernos.",
+     "p": [
+      "As primeiras bolas eram muitas vezes bexigas de animais cheias de ar e forradas a couro, pesadas à chuva.",
+      "A bola do Mundial de 1970, a Telstar, tinha 32 gomos pretos e brancos para se ver bem na televisão.",
+      "Uma bola moderna de adulto é de tamanho 5, com 68 a 70 cm de perímetro."
+     ],
+     "q": "Com que bola jogavas em criança: couro, plástico ou feita em casa?",
+     "c": "Olha bem para uma bola, ou uma foto, e conta os gomos."
+    },
+    "pt_BR": {
+     "t": "A bola",
+     "g": "Acompanhe a evolução da bola, do couro com cadarço aos modelos modernos.",
+     "p": [
+      "As primeiras bolas eram muitas vezes bexigas de animais infladas e cobertas de couro, pesadas na chuva.",
+      "A bola da Copa de 1970, a Telstar, tinha 32 gomos pretos e brancos para aparecer bem na TV.",
+      "Uma bola moderna de adulto é tamanho 5, com 68 a 70 cm de circunferência."
+     ],
+     "q": "Com que bola você jogava na infância: couro, plástico ou feita em casa?",
+     "c": "Olhe bem para uma bola, ou uma foto, e conte os gomos."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warming up for a game",
+     "g": "Get your body ready to play, in general terms.",
+     "p": [
+      "A warm-up gradually raises your heart rate and body temperature before playing.",
+      "Start with light jogging, then dynamic moves like leg swings, skips and side steps.",
+      "Finish with a few passes and short sprints so your body feels ready for match speed."
+     ],
+     "q": "What do you usually do before exercise, if anything?",
+     "c": "Try a gentle 10-minute warm-up before your next walk, run or game."
+    },
+    "de": {
+     "t": "Aufwärmen vor dem Spiel",
+     "g": "Bereite deinen Körper allgemein auf das Spielen vor.",
+     "p": [
+      "Aufwärmen erhöht Puls und Körpertemperatur schrittweise vor dem Spiel.",
+      "Beginne mit lockerem Laufen, dann dynamische Übungen wie Beinschwingen, Hopserlauf und Sidesteps.",
+      "Zum Schluss ein paar Pässe und kurze Sprints, damit der Körper fürs Spieltempo bereit ist."
+     ],
+     "q": "Was machst du normalerweise vor dem Sport, wenn überhaupt?",
+     "c": "Probier vor deinem nächsten Spaziergang, Lauf oder Spiel 10 Minuten sanftes Aufwärmen."
+    },
+    "es": {
+     "t": "Calentar antes de jugar",
+     "g": "Prepara tu cuerpo para jugar, en términos generales.",
+     "p": [
+      "Calentar sube poco a poco las pulsaciones y la temperatura del cuerpo antes de jugar.",
+      "Empieza trotando suave y sigue con movimientos dinámicos: balanceos, skipping y pasos laterales.",
+      "Termina con unos pases y sprints cortos para sentirte listo para el ritmo del partido."
+     ],
+     "q": "¿Qué sueles hacer antes de hacer ejercicio, si haces algo?",
+     "c": "Prueba un calentamiento suave de 10 minutos antes de tu próximo paseo, carrera o partido."
+    },
+    "fr": {
+     "t": "S'échauffer avant de jouer",
+     "g": "Prépare ton corps à jouer, de façon générale.",
+     "p": [
+      "L'échauffement fait monter progressivement le rythme cardiaque et la température du corps.",
+      "Commence par un footing léger, puis des mouvements dynamiques : balancés de jambes, montées de genoux, pas chassés.",
+      "Termine par quelques passes et des sprints courts pour être prêt au rythme du match."
+     ],
+     "q": "Que fais-tu d'habitude avant le sport, si tu fais quelque chose ?",
+     "c": "Essaie un échauffement doux de 10 minutes avant ta prochaine marche, course ou partie."
+    },
+    "it": {
+     "t": "Il riscaldamento",
+     "g": "Prepara il corpo a giocare, in termini generali.",
+     "p": [
+      "Il riscaldamento alza gradualmente battito e temperatura corporea prima di giocare.",
+      "Inizia con una corsetta leggera, poi movimenti dinamici: slanci, skip e passi laterali.",
+      "Chiudi con qualche passaggio e brevi scatti, così il corpo è pronto al ritmo della partita."
+     ],
+     "q": "Cosa fai di solito prima di fare sport, se fai qualcosa?",
+     "c": "Prova un riscaldamento leggero di 10 minuti prima della prossima camminata, corsa o partita."
+    },
+    "pt": {
+     "t": "Aquecer antes de jogar",
+     "g": "Prepara o corpo para jogar, em termos gerais.",
+     "p": [
+      "O aquecimento sobe aos poucos o ritmo cardíaco e a temperatura do corpo antes do jogo.",
+      "Começa com uma corrida leve e depois movimentos dinâmicos: balanços de perna, skipping e passos laterais.",
+      "Acaba com alguns passes e sprints curtos para o corpo estar pronto para o ritmo do jogo."
+     ],
+     "q": "O que costumas fazer antes de fazer exercício, se fazes alguma coisa?",
+     "c": "Experimenta um aquecimento suave de 10 minutos antes da próxima caminhada, corrida ou jogo."
+    },
+    "pt_BR": {
+     "t": "Aquecimento antes do jogo",
+     "g": "Prepare o corpo para jogar, em termos gerais.",
+     "p": [
+      "O aquecimento sobe aos poucos os batimentos e a temperatura do corpo antes do jogo.",
+      "Comece com um trote leve e depois movimentos dinâmicos: balanço de pernas, skipping e passos laterais.",
+      "Termine com alguns passes e piques curtos para o corpo ficar pronto para o ritmo do jogo."
+     ],
+     "q": "O que você costuma fazer antes de se exercitar, se faz algo?",
+     "c": "Experimente um aquecimento leve de 10 minutos antes da próxima caminhada, corrida ou pelada."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fitness for football",
+     "g": "Understand the running, sprinting and stamina football asks for, in general terms.",
+     "p": [
+      "Professional outfield players often cover around 10 km or more in a 90-minute match.",
+      "Much of that is walking and jogging, mixed with many short, sharp sprints.",
+      "Stamina, speed and quick recovery between efforts all matter, at any level."
+     ],
+     "q": "Which do you think is harder: lasting 90 minutes or sprinting at full speed?",
+     "c": "Go for a relaxed walk or jog today and add a few short bursts of faster pace."
+    },
+    "de": {
+     "t": "Fitness für Fußball",
+     "g": "Verstehe allgemein, wie viel Laufen, Sprinten und Ausdauer Fußball verlangt.",
+     "p": [
+      "Profi-Feldspieler legen in 90 Minuten oft rund 10 km oder mehr zurück.",
+      "Vieles davon ist Gehen und Traben, gemischt mit vielen kurzen, schnellen Sprints.",
+      "Ausdauer, Tempo und schnelle Erholung zwischen den Aktionen zählen auf jedem Niveau."
+     ],
+     "q": "Was ist wohl schwerer: 90 Minuten durchhalten oder voll sprinten?",
+     "c": "Geh heute locker spazieren oder joggen und bau ein paar kurze schnellere Abschnitte ein."
+    },
+    "es": {
+     "t": "La forma física en el fútbol",
+     "g": "Entiende, en términos generales, cuánto correr, esprintar y resistir exige el fútbol.",
+     "p": [
+      "Un jugador de campo profesional suele recorrer unos 10 km o más en un partido de 90 minutos.",
+      "Gran parte es andar y trotar, mezclado con muchos esprints cortos e intensos.",
+      "La resistencia, la velocidad y recuperarse rápido entre esfuerzos importan a cualquier nivel."
+     ],
+     "q": "¿Qué crees que es más difícil: aguantar 90 minutos o esprintar a tope?",
+     "c": "Sal a caminar o trotar tranquilo hoy y añade unos tramos cortos más rápidos."
+    },
+    "fr": {
+     "t": "La condition physique au foot",
+     "g": "Comprends en gros ce que le foot demande en course, sprints et endurance.",
+     "p": [
+      "Un joueur de champ professionnel parcourt souvent environ 10 km ou plus en 90 minutes.",
+      "Une grande partie se fait en marchant et trottinant, entre de nombreux sprints courts et intenses.",
+      "Endurance, vitesse et récupération rapide entre les efforts comptent à tous les niveaux."
+     ],
+     "q": "Qu'est-ce qui est le plus dur selon toi : tenir 90 minutes ou sprinter à fond ?",
+     "c": "Fais aujourd'hui une marche ou un footing tranquille avec quelques courtes accélérations."
+    },
+    "it": {
+     "t": "La preparazione fisica",
+     "g": "Capisci, in generale, quanta corsa, scatti e resistenza richiede il calcio.",
+     "p": [
+      "Un giocatore di movimento professionista percorre spesso circa 10 km o più in 90 minuti.",
+      "Gran parte è camminata e corsa lenta, alternata a tanti scatti brevi e intensi.",
+      "Resistenza, velocità e recupero rapido tra gli sforzi contano a ogni livello."
+     ],
+     "q": "Cosa pensi sia più difficile: durare 90 minuti o scattare al massimo?",
+     "c": "Fai oggi una camminata o una corsetta tranquilla con qualche breve allungo."
+    },
+    "pt": {
+     "t": "A condição física no futebol",
+     "g": "Percebe, em termos gerais, quanta corrida, sprints e resistência o futebol exige.",
+     "p": [
+      "Um jogador de campo profissional percorre muitas vezes cerca de 10 km ou mais em 90 minutos.",
+      "Grande parte é andar e trotar, misturado com muitos sprints curtos e intensos.",
+      "Resistência, velocidade e recuperação rápida entre esforços contam a qualquer nível."
+     ],
+     "q": "O que achas mais difícil: aguentar 90 minutos ou fazer sprints no máximo?",
+     "c": "Faz hoje uma caminhada ou corrida leve e junta alguns troços curtos mais rápidos."
+    },
+    "pt_BR": {
+     "t": "Preparo físico no futebol",
+     "g": "Entenda, em termos gerais, quanta corrida, piques e resistência o futebol exige.",
+     "p": [
+      "Um jogador de linha profissional costuma correr cerca de 10 km ou mais em 90 minutos.",
+      "Boa parte é caminhar e trotar, misturado com muitos piques curtos e intensos.",
+      "Resistência, velocidade e recuperação rápida entre os esforços contam em qualquer nível."
+     ],
+     "q": "O que você acha mais difícil: aguentar 90 minutos ou dar piques no máximo?",
+     "c": "Faça hoje uma caminhada ou corrida leve e inclua alguns trechos curtos mais rápidos."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fair play",
+     "g": "Discover the respect, handshakes and sportsmanship that make football beautiful.",
+     "p": [
+      "Teams often shake hands before and after a match as a sign of respect.",
+      "When a player is hurt, a team may kick the ball out, and opponents give it back afterwards.",
+      "Respecting referees, opponents and fans makes the game better for everyone."
+     ],
+     "q": "What is the most sporting gesture you have ever seen in football?",
+     "c": "Next time you play or watch, notice one act of fair play and tell someone about it."
+    },
+    "de": {
+     "t": "Fairplay",
+     "g": "Entdecke Respekt, Handschlag und Sportsgeist, die Fußball so schön machen.",
+     "p": [
+      "Teams geben sich vor und nach dem Spiel oft die Hand, als Zeichen von Respekt.",
+      "Liegt ein Spieler verletzt am Boden, spielt ein Team den Ball oft ins Aus, der Gegner gibt ihn zurück.",
+      "Respekt vor Schiris, Gegnern und Fans macht das Spiel für alle besser."
+     ],
+     "q": "Was ist die fairste Geste, die du je im Fußball gesehen hast?",
+     "c": "Achte beim nächsten Spiel auf eine Fairplay-Geste und erzähl jemandem davon."
+    },
+    "es": {
+     "t": "Juego limpio",
+     "g": "Descubre el respeto, los apretones de manos y la deportividad que hacen bello el fútbol.",
+     "p": [
+      "Los equipos suelen darse la mano antes y después del partido en señal de respeto.",
+      "Si un jugador cae lesionado, un equipo puede echar el balón fuera y el rival lo devuelve después.",
+      "Respetar a árbitros, rivales y aficionados mejora el juego para todos."
+     ],
+     "q": "¿Cuál es el gesto más deportivo que has visto en el fútbol?",
+     "c": "La próxima vez que juegues o veas un partido, fíjate en un gesto de juego limpio y cuéntalo."
+    },
+    "fr": {
+     "t": "Le fair-play",
+     "g": "Découvre le respect, les poignées de main et l'esprit sportif qui rendent le foot si beau.",
+     "p": [
+      "Les équipes se serrent souvent la main avant et après le match, par respect.",
+      "Si un joueur est blessé, une équipe peut mettre le ballon dehors, et l'adversaire le rend ensuite.",
+      "Respecter arbitres, adversaires et supporters rend le jeu meilleur pour tous."
+     ],
+     "q": "Quel est le geste le plus fair-play que tu aies vu au foot ?",
+     "c": "La prochaine fois que tu joues ou regardes, repère un geste de fair-play et raconte-le."
+    },
+    "it": {
+     "t": "Il fair play",
+     "g": "Scopri rispetto, strette di mano e sportività che rendono bello il calcio.",
+     "p": [
+      "Le squadre spesso si stringono la mano prima e dopo la partita in segno di rispetto.",
+      "Se un giocatore si fa male, una squadra può buttare fuori la palla e gli avversari poi la restituiscono.",
+      "Rispettare arbitri, avversari e tifosi rende il gioco migliore per tutti."
+     ],
+     "q": "Qual è il gesto più sportivo che hai mai visto nel calcio?",
+     "c": "La prossima volta che giochi o guardi, nota un gesto di fair play e raccontalo a qualcuno."
+    },
+    "pt": {
+     "t": "Fair play",
+     "g": "Descobre o respeito, os apertos de mão e o desportivismo que tornam o futebol bonito.",
+     "p": [
+      "As equipas costumam cumprimentar-se antes e depois do jogo em sinal de respeito.",
+      "Se um jogador se magoa, uma equipa pode pôr a bola fora e o adversário devolve-a depois.",
+      "Respeitar árbitros, adversários e adeptos torna o jogo melhor para todos."
+     ],
+     "q": "Qual foi o gesto mais desportivo que já viste no futebol?",
+     "c": "Da próxima vez que jogares ou vires um jogo, repara num gesto de fair play e conta a alguém."
+    },
+    "pt_BR": {
+     "t": "Fair play",
+     "g": "Descubra o respeito, os apertos de mão e o espírito esportivo que deixam o futebol bonito.",
+     "p": [
+      "Os times costumam se cumprimentar antes e depois do jogo em sinal de respeito.",
+      "Se um jogador se machuca, um time pode jogar a bola para fora, e o adversário devolve depois.",
+      "Respeitar árbitros, adversários e torcedores deixa o jogo melhor para todos."
+     ],
+     "q": "Qual foi o gesto mais esportivo que você já viu no futebol?",
+     "c": "Da próxima vez que jogar ou assistir, repare num gesto de fair play e conte para alguém."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The captain",
+     "g": "Learn what the armband means and what a captain does.",
+     "p": [
+      "The captain wears an armband and takes part in the coin toss before kick-off.",
+      "Captains are expected to help the referee keep their team calm and fair.",
+      "A good captain leads by example: encouraging teammates, staying focused and setting the tone."
+     ],
+     "q": "What quality do you think matters most in a captain?",
+     "c": "Think of someone you know who would make a great captain and say why."
+    },
+    "de": {
+     "t": "Der Kapitän",
+     "g": "Lerne, was die Binde bedeutet und was ein Kapitän tut.",
+     "p": [
+      "Der Kapitän trägt eine Binde und nimmt vor dem Anpfiff an der Seitenwahl teil.",
+      "Kapitäne sollen dem Schiri helfen, das eigene Team ruhig und fair zu halten.",
+      "Ein guter Kapitän geht voran: ermutigt Mitspieler, bleibt konzentriert und gibt den Ton an."
+     ],
+     "q": "Welche Eigenschaft ist bei einem Kapitän wohl am wichtigsten?",
+     "c": "Denk an jemanden, der ein toller Kapitän wäre, und sag, warum."
+    },
+    "es": {
+     "t": "El capitán",
+     "g": "Aprende qué significa el brazalete y qué hace un capitán.",
+     "p": [
+      "El capitán lleva el brazalete y participa en el sorteo antes del saque inicial.",
+      "Se espera que ayude al árbitro a mantener a su equipo tranquilo y deportivo.",
+      "Un buen capitán predica con el ejemplo: anima, se mantiene centrado y marca el tono."
+     ],
+     "q": "¿Qué cualidad crees que es la más importante en un capitán?",
+     "c": "Piensa en alguien que sería un gran capitán y di por qué."
+    },
+    "fr": {
+     "t": "Le capitaine",
+     "g": "Découvre ce que signifie le brassard et le rôle du capitaine.",
+     "p": [
+      "Le capitaine porte le brassard et participe au tirage au sort avant le coup d'envoi.",
+      "On attend de lui qu'il aide l'arbitre à garder son équipe calme et correcte.",
+      "Un bon capitaine montre l'exemple : il encourage, reste concentré et donne le ton."
+     ],
+     "q": "Quelle qualité compte le plus chez un capitaine, selon toi ?",
+     "c": "Pense à quelqu'un qui ferait un super capitaine et explique pourquoi."
+    },
+    "it": {
+     "t": "Il capitano",
+     "g": "Scopri cosa significa la fascia e cosa fa un capitano.",
+     "p": [
+      "Il capitano porta la fascia e partecipa al sorteggio prima del calcio d'inizio.",
+      "Ci si aspetta che aiuti l'arbitro a tenere la squadra calma e corretta.",
+      "Un buon capitano dà l'esempio: incoraggia i compagni, resta concentrato e detta il tono."
+     ],
+     "q": "Quale qualità conta di più in un capitano, secondo te?",
+     "c": "Pensa a qualcuno che sarebbe un ottimo capitano e spiega perché."
+    },
+    "pt": {
+     "t": "O capitão",
+     "g": "Aprende o que significa a braçadeira e o que faz um capitão.",
+     "p": [
+      "O capitão usa a braçadeira e participa no sorteio antes do pontapé de saída.",
+      "Espera-se que ajude o árbitro a manter a equipa calma e correta.",
+      "Um bom capitão dá o exemplo: incentiva os colegas, mantém o foco e define o tom."
+     ],
+     "q": "Que qualidade achas mais importante num capitão?",
+     "c": "Pensa em alguém que seria um ótimo capitão e diz porquê."
+    },
+    "pt_BR": {
+     "t": "O capitão",
+     "g": "Aprenda o que significa a braçadeira e o que faz um capitão.",
+     "p": [
+      "O capitão usa a braçadeira e participa do sorteio antes da saída de bola.",
+      "Espera-se que ele ajude o árbitro a manter o time calmo e disciplinado.",
+      "Um bom capitão dá o exemplo: incentiva os companheiros, mantém o foco e dita o tom."
+     ],
+     "q": "Qual qualidade você acha mais importante num capitão?",
+     "c": "Pense em alguém que seria um ótimo capitão e diga por quê."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shirt numbers",
+     "g": "Decode the traditional shirt numbers and the roles they suggest.",
+     "p": [
+      "Traditionally, 1 is the goalkeeper, 2 to 5 are defenders and 6 to 8 are midfielders.",
+      "The 9 is the classic striker, 7 and 11 are wingers and 10 is the creative playmaker.",
+      "Numbers became compulsory in the English league in 1939; today many players choose their own."
+     ],
+     "q": "What number would you wear, and why?",
+     "c": "Look up the number a favourite player wears and guess what it says about their role."
+    },
+    "de": {
+     "t": "Rückennummern",
+     "g": "Entschlüssle die klassischen Rückennummern und ihre Rollen.",
+     "p": [
+      "Klassisch ist die 1 der Torwart, 2 bis 5 sind Verteidiger, 6 bis 8 Mittelfeldspieler.",
+      "Die 9 ist der Mittelstürmer, 7 und 11 die Flügel, die 10 der kreative Spielmacher.",
+      "In Englands Liga wurden Nummern 1939 Pflicht, heute wählen viele Spieler ihre eigene."
+     ],
+     "q": "Welche Nummer würdest du tragen, und warum?",
+     "c": "Schau nach, welche Nummer ein Lieblingsspieler trägt, und rate, was sie über seine Rolle sagt."
+    },
+    "es": {
+     "t": "Los dorsales",
+     "g": "Descifra los dorsales tradicionales y los puestos que sugieren.",
+     "p": [
+      "Tradicionalmente, el 1 es el portero, del 2 al 5 los defensas y del 6 al 8 los centrocampistas.",
+      "El 9 es el delantero centro clásico, el 7 y el 11 los extremos y el 10 el creador de juego.",
+      "Los dorsales fueron obligatorios en la liga inglesa en 1939; hoy muchos eligen el suyo."
+     ],
+     "q": "¿Qué dorsal llevarías tú y por qué?",
+     "c": "Busca el dorsal de un jugador favorito y adivina qué dice de su puesto."
+    },
+    "fr": {
+     "t": "Les numéros de maillot",
+     "g": "Décode les numéros traditionnels et les postes qu'ils évoquent.",
+     "p": [
+      "Traditionnellement, le 1 est le gardien, du 2 au 5 les défenseurs et du 6 au 8 les milieux.",
+      "Le 9 est l'avant-centre classique, le 7 et le 11 les ailiers, le 10 le meneur de jeu.",
+      "Les numéros sont devenus obligatoires en championnat anglais en 1939 ; aujourd'hui beaucoup choisissent le leur."
+     ],
+     "q": "Quel numéro porterais-tu, et pourquoi ?",
+     "c": "Cherche le numéro d'un joueur que tu aimes et devine ce qu'il dit de son poste."
+    },
+    "it": {
+     "t": "I numeri di maglia",
+     "g": "Decifra i numeri di maglia tradizionali e i ruoli che suggeriscono.",
+     "p": [
+      "Tradizionalmente l'1 è il portiere, dal 2 al 5 i difensori, dal 6 all'8 i centrocampisti.",
+      "Il 9 è il centravanti classico, il 7 e l'11 le ali, il 10 il fantasista.",
+      "I numeri diventarono obbligatori nel campionato inglese nel 1939; oggi molti scelgono il proprio."
+     ],
+     "q": "Che numero indosseresti, e perché?",
+     "c": "Cerca il numero di un tuo giocatore preferito e indovina cosa dice del suo ruolo."
+    },
+    "pt": {
+     "t": "Os números das camisolas",
+     "g": "Decifra os números tradicionais e as posições que sugerem.",
+     "p": [
+      "Tradicionalmente, o 1 é o guarda-redes, do 2 ao 5 os defesas e do 6 ao 8 os médios.",
+      "O 9 é o ponta de lança clássico, o 7 e o 11 os extremos e o 10 o criativo.",
+      "Os números tornaram-se obrigatórios na liga inglesa em 1939; hoje muitos escolhem o seu."
+     ],
+     "q": "Que número usarias, e porquê?",
+     "c": "Procura o número de um jogador de que gostes e adivinha o que diz da posição dele."
+    },
+    "pt_BR": {
+     "t": "Os números das camisas",
+     "g": "Decifre os números tradicionais e as posições que eles sugerem.",
+     "p": [
+      "Tradicionalmente, a 1 é do goleiro, da 2 à 5 dos defensores e da 6 à 8 dos meio-campistas.",
+      "A 9 é do centroavante clássico, a 7 e a 11 dos pontas e a 10 do craque armador.",
+      "Os números viraram obrigatórios na liga inglesa em 1939; hoje muitos escolhem o seu."
+     ],
+     "q": "Que número você usaria, e por quê?",
+     "c": "Procure o número de um jogador favorito e adivinhe o que ele diz sobre a posição."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Club colours and kits",
+     "g": "Learn why teams have home, away and third kits.",
+     "p": [
+      "Each club has home colours, and an away kit avoids a colour clash with the hosts.",
+      "A third kit is used when both main kits clash with the opponent's colours.",
+      "Goalkeepers and referees must wear colours that stand out from both teams."
+     ],
+     "q": "Which football kit, of any team, do you find the most beautiful?",
+     "c": "Design your dream kit in your head or on paper: colours, pattern and badge."
+    },
+    "de": {
+     "t": "Vereinsfarben und Trikots",
+     "g": "Lerne, warum Teams Heim-, Auswärts- und Ausweichtrikots haben.",
+     "p": [
+      "Jeder Verein hat Heimfarben, das Auswärtstrikot verhindert eine Farbgleichheit mit dem Gastgeber.",
+      "Ein drittes Trikot kommt, wenn beide Haupttrikots mit dem Gegner kollidieren.",
+      "Torhüter und Schiedsrichter müssen sich farblich von beiden Teams abheben."
+     ],
+     "q": "Welches Fußballtrikot, egal von welchem Team, findest du am schönsten?",
+     "c": "Entwirf im Kopf oder auf Papier dein Traumtrikot: Farben, Muster und Wappen."
+    },
+    "es": {
+     "t": "Colores y equipaciones",
+     "g": "Aprende por qué los equipos tienen primera, segunda y tercera equipación.",
+     "p": [
+      "Cada club tiene sus colores de casa, y la segunda equipación evita coincidir con el local.",
+      "La tercera se usa cuando las dos principales chocan con los colores del rival.",
+      "Porteros y árbitros deben vestir colores que se distingan de ambos equipos."
+     ],
+     "q": "¿Qué camiseta de fútbol, de cualquier equipo, te parece la más bonita?",
+     "c": "Diseña tu camiseta soñada, en la cabeza o en papel: colores, dibujo y escudo."
+    },
+    "fr": {
+     "t": "Couleurs et maillots",
+     "g": "Découvre pourquoi les équipes ont des maillots domicile, extérieur et third.",
+     "p": [
+      "Chaque club a ses couleurs à domicile, et le maillot extérieur évite de ressembler à l'hôte.",
+      "Un troisième maillot sert quand les deux principaux se confondent avec ceux de l'adversaire.",
+      "Gardiens et arbitres doivent porter des couleurs distinctes des deux équipes."
+     ],
+     "q": "Quel maillot de foot, de n'importe quelle équipe, trouves-tu le plus beau ?",
+     "c": "Imagine ton maillot de rêve, de tête ou sur papier : couleurs, motif et écusson."
+    },
+    "it": {
+     "t": "Colori e maglie",
+     "g": "Scopri perché le squadre hanno prima, seconda e terza maglia.",
+     "p": [
+      "Ogni club ha i colori di casa, e la maglia da trasferta evita confusioni con chi ospita.",
+      "La terza maglia si usa quando le prime due si confondono con i colori avversari.",
+      "Portieri e arbitri devono indossare colori ben distinti da entrambe le squadre."
+     ],
+     "q": "Quale maglia da calcio, di qualsiasi squadra, trovi la più bella?",
+     "c": "Disegna la tua maglia dei sogni, in testa o su carta: colori, motivo e stemma."
+    },
+    "pt": {
+     "t": "Cores e equipamentos",
+     "g": "Aprende porque é que as equipas têm equipamento principal, alternativo e terceiro.",
+     "p": [
+      "Cada clube tem as cores de casa, e o equipamento alternativo evita confusão com o anfitrião.",
+      "O terceiro equipamento usa-se quando os dois principais se confundem com os do adversário.",
+      "Guarda-redes e árbitros têm de usar cores que se distingam das duas equipas."
+     ],
+     "q": "Que camisola de futebol, de qualquer equipa, achas a mais bonita?",
+     "c": "Desenha a tua camisola de sonho, de cabeça ou em papel: cores, padrão e emblema."
+    },
+    "pt_BR": {
+     "t": "Cores e uniformes",
+     "g": "Aprenda por que os times têm uniforme 1, uniforme 2 e terceiro uniforme.",
+     "p": [
+      "Cada clube tem as cores de casa, e o uniforme 2 evita confusão com o time mandante.",
+      "O terceiro uniforme entra quando os dois principais se confundem com os do adversário.",
+      "Goleiros e árbitros precisam usar cores diferentes das dos dois times."
+     ],
+     "q": "Qual camisa de futebol, de qualquer time, você acha a mais bonita?",
+     "c": "Desenhe sua camisa dos sonhos, de cabeça ou no papel: cores, padrão e escudo."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Club badges and nicknames",
+     "g": "Explore the symbols and stories behind famous clubs.",
+     "p": [
+      "Arsenal are the Gunners because the club was founded by workers at the Royal Arsenal in London.",
+      "Juventus is known as the Old Lady, and Barcelona as Blaugrana, after its blue and deep red colours.",
+      "Boca Juniors took its blue and gold from the flag of a Swedish ship in Buenos Aires harbour."
+     ],
+     "q": "Which club nickname or badge do you find the most interesting?",
+     "c": "Find out the story behind the badge or nickname of a club near you."
+    },
+    "de": {
+     "t": "Wappen und Spitznamen",
+     "g": "Entdecke die Symbole und Geschichten hinter berühmten Vereinen.",
+     "p": [
+      "Arsenal heißt The Gunners, weil Arbeiter des Royal Arsenal in London den Club gründeten.",
+      "Juventus ist die Alte Dame, Barcelona heißt Blaugrana nach seinen blau-dunkelroten Farben.",
+      "Boca Juniors übernahm Blau und Gold von der Flagge eines schwedischen Schiffs im Hafen von Buenos Aires."
+     ],
+     "q": "Welcher Spitzname oder welches Wappen gefällt dir am besten?",
+     "c": "Finde die Geschichte hinter dem Wappen oder Spitznamen eines Vereins in deiner Nähe heraus."
+    },
+    "es": {
+     "t": "Escudos y apodos",
+     "g": "Explora los símbolos y las historias detrás de clubes famosos.",
+     "p": [
+      "Al Arsenal lo llaman los Gunners porque lo fundaron trabajadores del Royal Arsenal de Londres.",
+      "La Juventus es la Vecchia Signora, y el Barcelona el Blaugrana, por sus colores azul y grana.",
+      "Boca Juniors tomó el azul y oro de la bandera de un barco sueco en el puerto de Buenos Aires."
+     ],
+     "q": "¿Qué apodo o escudo de club te parece más interesante?",
+     "c": "Averigua la historia del escudo o el apodo de un club cercano."
+    },
+    "fr": {
+     "t": "Écussons et surnoms",
+     "g": "Explore les symboles et les histoires derrière les grands clubs.",
+     "p": [
+      "Arsenal, ce sont les Gunners, car le club a été fondé par des ouvriers du Royal Arsenal de Londres.",
+      "La Juventus est la Vieille Dame, et Barcelone le Blaugrana, pour ses couleurs bleu et grenat.",
+      "Boca Juniors a pris son bleu et or du drapeau d'un navire suédois dans le port de Buenos Aires."
+     ],
+     "q": "Quel surnom ou écusson de club trouves-tu le plus intéressant ?",
+     "c": "Découvre l'histoire de l'écusson ou du surnom d'un club près de chez toi."
+    },
+    "it": {
+     "t": "Stemmi e soprannomi",
+     "g": "Esplora i simboli e le storie dietro i club famosi.",
+     "p": [
+      "L'Arsenal sono i Gunners perché il club fu fondato da operai del Royal Arsenal di Londra.",
+      "La Juventus è la Vecchia Signora, il Barcellona i Blaugrana, dai colori blu e granata.",
+      "Il Boca Juniors prese il blu e oro dalla bandiera di una nave svedese nel porto di Buenos Aires."
+     ],
+     "q": "Quale soprannome o stemma di un club trovi più interessante?",
+     "c": "Scopri la storia dello stemma o del soprannome di un club vicino a te."
+    },
+    "pt": {
+     "t": "Emblemas e alcunhas",
+     "g": "Explora os símbolos e as histórias por trás de clubes famosos.",
+     "p": [
+      "O Arsenal são os Gunners porque o clube foi fundado por operários do Royal Arsenal, em Londres.",
+      "A Juventus é a Velha Senhora e o Barcelona o Blaugrana, pelas cores azul e grená.",
+      "O Boca Juniors tirou o azul e amarelo da bandeira de um navio sueco no porto de Buenos Aires."
+     ],
+     "q": "Que alcunha ou emblema de clube achas mais interessante?",
+     "c": "Descobre a história do emblema ou da alcunha de um clube perto de ti."
+    },
+    "pt_BR": {
+     "t": "Escudos e apelidos",
+     "g": "Explore os símbolos e as histórias por trás de clubes famosos.",
+     "p": [
+      "O Arsenal é o Gunners porque foi fundado por operários do Royal Arsenal, em Londres.",
+      "A Juventus é a Velha Senhora e o Barcelona o Blaugrana, pelas cores azul e grená.",
+      "O Boca Juniors tirou o azul e amarelo da bandeira de um navio sueco no porto de Buenos Aires."
+     ],
+     "q": "Qual apelido ou escudo de clube você acha mais interessante?",
+     "c": "Descubra a história do escudo ou do apelido de um clube perto de você."
+    }
+   }
+  }
+ ]
+}

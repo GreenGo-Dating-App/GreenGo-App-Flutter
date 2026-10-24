@@ -1,0 +1,835 @@
+{
+ "topic": "travel_stories",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to travel stories",
+     "g": "Discover why swapping travel stories is one of the easiest ways to connect with people from anywhere.",
+     "p": [
+      "Everyone has a trip to tell, even a short bus ride to a new neighbourhood.",
+      "Stories show how you see the world, not just where you went.",
+      "When you share a story, people usually answer with one of their own."
+     ],
+     "q": "Where is one place you have visited that you would love to tell me about?",
+     "c": "Think of one trip and say its name out loud: that is your first story seed."
+    },
+    "de": {
+     "t": "Willkommen bei den Reisegeschichten",
+     "g": "Entdecke, warum Reisegeschichten einer der einfachsten Wege sind, mit Menschen aus aller Welt in Kontakt zu kommen.",
+     "p": [
+      "Jeder hat eine Reise zu erzählen, sogar eine kurze Busfahrt in ein neues Viertel.",
+      "Geschichten zeigen, wie du die Welt siehst, nicht nur, wo du warst.",
+      "Wer eine Geschichte teilt, bekommt meist eine eigene zurück."
+     ],
+     "q": "Von welchem Ort, an dem du warst, würdest du mir gern erzählen?",
+     "c": "Denk an eine Reise und sag ihren Namen laut: Das ist dein erster Geschichtensamen."
+    },
+    "es": {
+     "t": "Bienvenido a las historias de viaje",
+     "g": "Descubre por qué contar historias de viaje es una de las formas más fáciles de conectar con gente de cualquier lugar.",
+     "p": [
+      "Todo el mundo tiene un viaje que contar, aunque sea un trayecto corto a otro barrio.",
+      "Las historias muestran cómo ves el mundo, no solo adónde fuiste.",
+      "Cuando compartes una historia, la otra persona suele responder con la suya."
+     ],
+     "q": "¿De qué lugar que has visitado te encantaría contarme algo?",
+     "c": "Piensa en un viaje y di su nombre en voz alta: es la semilla de tu primera historia."
+    },
+    "fr": {
+     "t": "Bienvenue dans les récits de voyage",
+     "g": "Découvre pourquoi échanger des récits de voyage est l'un des moyens les plus simples de créer des liens partout.",
+     "p": [
+      "Tout le monde a un voyage à raconter, même un court trajet vers un autre quartier.",
+      "Une histoire montre ta façon de voir le monde, pas seulement où tu es allé.",
+      "Quand tu partages un récit, l'autre répond souvent avec le sien."
+     ],
+     "q": "De quel endroit visité aimerais-tu me parler ?",
+     "c": "Pense à un voyage et dis son nom à voix haute : c'est la graine de ta première histoire."
+    },
+    "it": {
+     "t": "Benvenuto nelle storie di viaggio",
+     "g": "Scopri perché scambiarsi storie di viaggio è uno dei modi più semplici per entrare in contatto con persone di ogni luogo.",
+     "p": [
+      "Tutti hanno un viaggio da raccontare, anche un breve tragitto verso un nuovo quartiere.",
+      "Le storie mostrano come vedi il mondo, non solo dove sei stato.",
+      "Quando condividi una storia, di solito l'altro risponde con la sua."
+     ],
+     "q": "Di quale posto che hai visitato ti piacerebbe raccontarmi?",
+     "c": "Pensa a un viaggio e pronuncia il suo nome ad alta voce: è il seme della tua prima storia."
+    },
+    "pt": {
+     "t": "Bem-vindo às histórias de viagem",
+     "g": "Descobre porque trocar histórias de viagem é uma das formas mais fáceis de criar laços com pessoas de qualquer lugar.",
+     "p": [
+      "Toda a gente tem uma viagem para contar, mesmo uma curta ida de autocarro a outro bairro.",
+      "As histórias mostram como vês o mundo, não só onde estiveste.",
+      "Quando partilhas uma história, a outra pessoa costuma responder com a sua."
+     ],
+     "q": "De que lugar que visitaste gostavas de me falar?",
+     "c": "Pensa numa viagem e diz o nome dela em voz alta: é a semente da tua primeira história."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas às histórias de viagem",
+     "g": "Descubra por que trocar histórias de viagem é um dos jeitos mais fáceis de se conectar com pessoas de qualquer lugar.",
+     "p": [
+      "Todo mundo tem uma viagem para contar, mesmo um passeio curto de ônibus até outro bairro.",
+      "Histórias mostram como você vê o mundo, não só aonde você foi.",
+      "Quando você conta uma história, a outra pessoa costuma responder com a dela."
+     ],
+     "q": "De qual lugar que você visitou você adoraria me contar?",
+     "c": "Pense em uma viagem e fale o nome dela em voz alta: é a semente da sua primeira história."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first trip memory",
+     "g": "Recall the earliest journey you remember and find out why it stuck with you.",
+     "p": [
+      "Early memories are often small: a smell, a song in the car, a window seat.",
+      "Ask yourself what made it feel different from a normal day.",
+      "You do not need perfect details; the feeling is the heart of the story."
+     ],
+     "q": "What is the very first trip you can remember, and how old were you?",
+     "c": "Write down three tiny details from your first trip memory, however small."
+    },
+    "de": {
+     "t": "Deine erste Reiseerinnerung",
+     "g": "Erinnere dich an die früheste Reise, die du noch weißt, und finde heraus, warum sie hängen geblieben ist.",
+     "p": [
+      "Frühe Erinnerungen sind oft klein: ein Duft, ein Lied im Auto, ein Fensterplatz.",
+      "Frag dich, was sie anders gemacht hat als einen normalen Tag.",
+      "Perfekte Details brauchst du nicht; das Gefühl ist das Herz der Geschichte."
+     ],
+     "q": "Was ist die allererste Reise, an die du dich erinnerst, und wie alt warst du?",
+     "c": "Schreib drei winzige Details deiner ersten Reiseerinnerung auf, egal wie klein."
+    },
+    "es": {
+     "t": "Tu primer recuerdo de viaje",
+     "g": "Recuerda el viaje más antiguo que tengas en la memoria y descubre por qué se te quedó grabado.",
+     "p": [
+      "Los primeros recuerdos suelen ser pequeños: un olor, una canción en el coche, la ventanilla.",
+      "Pregúntate qué lo hizo distinto de un día normal.",
+      "No necesitas detalles perfectos; la emoción es el corazón de la historia."
+     ],
+     "q": "¿Cuál es el primer viaje que recuerdas y cuántos años tenías?",
+     "c": "Apunta tres detalles diminutos de tu primer recuerdo de viaje, por pequeños que sean."
+    },
+    "fr": {
+     "t": "Ton premier souvenir de voyage",
+     "g": "Retrouve le plus ancien voyage dont tu te souviens et comprends pourquoi il t'a marqué.",
+     "p": [
+      "Les premiers souvenirs sont souvent petits : une odeur, une chanson en voiture, une place côté fenêtre.",
+      "Demande-toi ce qui le rendait différent d'une journée ordinaire.",
+      "Pas besoin de détails parfaits : l'émotion est le cœur du récit."
+     ],
+     "q": "Quel est le tout premier voyage dont tu te souviens, et quel âge avais-tu ?",
+     "c": "Note trois minuscules détails de ton premier souvenir de voyage, même tout petits."
+    },
+    "it": {
+     "t": "Il tuo primo ricordo di viaggio",
+     "g": "Ripensa al viaggio più lontano che ricordi e scopri perché ti è rimasto impresso.",
+     "p": [
+      "I primi ricordi sono spesso piccoli: un profumo, una canzone in macchina, il posto al finestrino.",
+      "Chiediti che cosa lo rendeva diverso da un giorno qualunque.",
+      "Non servono dettagli perfetti: l'emozione è il cuore della storia."
+     ],
+     "q": "Qual è il primissimo viaggio che ricordi e quanti anni avevi?",
+     "c": "Scrivi tre minuscoli dettagli del tuo primo ricordo di viaggio, anche piccolissimi."
+    },
+    "pt": {
+     "t": "A tua primeira memória de viagem",
+     "g": "Recorda a viagem mais antiga de que te lembras e descobre porque ficou contigo.",
+     "p": [
+      "As primeiras memórias costumam ser pequenas: um cheiro, uma música no carro, o lugar à janela.",
+      "Pergunta a ti mesmo o que a tornou diferente de um dia normal.",
+      "Não precisas de pormenores perfeitos; a emoção é o coração da história."
+     ],
+     "q": "Qual é a primeira viagem de que te lembras e que idade tinhas?",
+     "c": "Escreve três pormenores minúsculos da tua primeira memória de viagem, por mais pequenos que sejam."
+    },
+    "pt_BR": {
+     "t": "Sua primeira lembrança de viagem",
+     "g": "Relembre a viagem mais antiga de que você se lembra e descubra por que ela ficou marcada.",
+     "p": [
+      "As primeiras lembranças costumam ser pequenas: um cheiro, uma música no carro, a janelinha.",
+      "Pergunte a si mesmo o que deixou aquele dia diferente de um dia comum.",
+      "Você não precisa de detalhes perfeitos; a emoção é o coração da história."
+     ],
+     "q": "Qual é a primeira viagem de que você se lembra e quantos anos você tinha?",
+     "c": "Anote três detalhes bem pequenos da sua primeira lembrança de viagem."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a good travel story",
+     "g": "Learn the four basic ingredients of a travel story: a place, a person, a surprise and a feeling.",
+     "p": [
+      "The place sets the stage, so name it and add one detail.",
+      "A person, even a stranger, gives the story a face and a voice.",
+      "A surprise plus a feeling turns a simple report into a real story."
+     ],
+     "q": "Can you think of a trip moment that had a place, a person and a surprise?",
+     "c": "Pick one memory and name its four ingredients in one short sentence each."
+    },
+    "de": {
+     "t": "Was eine gute Reisegeschichte ausmacht",
+     "g": "Lerne die vier Grundzutaten einer Reisegeschichte kennen: ein Ort, eine Person, eine Überraschung und ein Gefühl.",
+     "p": [
+      "Der Ort ist die Bühne: Nenne ihn und füge ein Detail hinzu.",
+      "Eine Person, auch eine fremde, gibt der Geschichte ein Gesicht und eine Stimme.",
+      "Überraschung plus Gefühl machen aus einem Bericht eine echte Geschichte."
+     ],
+     "q": "Fällt dir ein Reisemoment mit Ort, Person und Überraschung ein?",
+     "c": "Wähle eine Erinnerung und nenne ihre vier Zutaten in je einem kurzen Satz."
+    },
+    "es": {
+     "t": "Qué hace buena una historia de viaje",
+     "g": "Aprende los cuatro ingredientes básicos de una historia de viaje: un lugar, una persona, una sorpresa y una emoción.",
+     "p": [
+      "El lugar es el escenario: nómbralo y añade un detalle.",
+      "Una persona, aunque sea desconocida, le da cara y voz a la historia.",
+      "Una sorpresa y una emoción convierten un simple relato en una historia de verdad."
+     ],
+     "q": "¿Se te ocurre un momento de viaje con un lugar, una persona y una sorpresa?",
+     "c": "Elige un recuerdo y nombra sus cuatro ingredientes con una frase corta cada uno."
+    },
+    "fr": {
+     "t": "Ce qui fait un bon récit de voyage",
+     "g": "Découvre les quatre ingrédients de base d'un récit de voyage : un lieu, une personne, une surprise et une émotion.",
+     "p": [
+      "Le lieu plante le décor : nomme-le et ajoute un détail.",
+      "Une personne, même inconnue, donne un visage et une voix à l'histoire.",
+      "Une surprise et une émotion transforment un simple compte rendu en vrai récit."
+     ],
+     "q": "Te vient-il un moment de voyage avec un lieu, une personne et une surprise ?",
+     "c": "Choisis un souvenir et nomme ses quatre ingrédients en une courte phrase chacun."
+    },
+    "it": {
+     "t": "Cosa rende bella una storia di viaggio",
+     "g": "Impara i quattro ingredienti base di una storia di viaggio: un luogo, una persona, una sorpresa e un'emozione.",
+     "p": [
+      "Il luogo è il palcoscenico: nominalo e aggiungi un dettaglio.",
+      "Una persona, anche sconosciuta, dà alla storia un volto e una voce.",
+      "Sorpresa ed emozione trasformano un semplice resoconto in una vera storia."
+     ],
+     "q": "Ti viene in mente un momento di viaggio con un luogo, una persona e una sorpresa?",
+     "c": "Scegli un ricordo e indica i suoi quattro ingredienti con una frase breve ciascuno."
+    },
+    "pt": {
+     "t": "O que faz uma boa história de viagem",
+     "g": "Aprende os quatro ingredientes básicos de uma história de viagem: um lugar, uma pessoa, uma surpresa e uma emoção.",
+     "p": [
+      "O lugar é o palco: diz o nome e junta um pormenor.",
+      "Uma pessoa, mesmo desconhecida, dá à história um rosto e uma voz.",
+      "Uma surpresa e uma emoção transformam um simples relato numa história a sério."
+     ],
+     "q": "Lembras-te de um momento de viagem com um lugar, uma pessoa e uma surpresa?",
+     "c": "Escolhe uma memória e diz os seus quatro ingredientes numa frase curta cada."
+    },
+    "pt_BR": {
+     "t": "O que faz uma boa história de viagem",
+     "g": "Aprenda os quatro ingredientes básicos de uma história de viagem: um lugar, uma pessoa, uma surpresa e uma emoção.",
+     "p": [
+      "O lugar é o palco: diga o nome e acrescente um detalhe.",
+      "Uma pessoa, mesmo desconhecida, dá à história um rosto e uma voz.",
+      "Surpresa e emoção transformam um simples relato em uma história de verdade."
+     ],
+     "q": "Você lembra de um momento de viagem com um lugar, uma pessoa e uma surpresa?",
+     "c": "Escolha uma lembrança e diga seus quatro ingredientes em uma frase curta cada."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Better answers to 'How was your trip?'",
+     "g": "Turn a one-word reply like 'good' into a vivid two-sentence highlight.",
+     "p": [
+      "Start with a short verdict, then add one specific moment.",
+      "Swap general words like 'nice' for a concrete image or detail.",
+      "End with a hook that invites a follow-up question."
+     ],
+     "q": "If I ask 'How was your last trip?', what is your two-sentence answer?",
+     "c": "Prepare a two-sentence answer about your latest trip and say it once aloud."
+    },
+    "de": {
+     "t": "Bessere Antworten auf ‚Wie war die Reise?‘",
+     "g": "Mach aus einer Ein-Wort-Antwort wie ‚gut‘ ein lebendiges Highlight in zwei Sätzen.",
+     "p": [
+      "Beginne mit einem kurzen Urteil und füge dann einen konkreten Moment hinzu.",
+      "Ersetze allgemeine Wörter wie ‚schön‘ durch ein konkretes Bild oder Detail.",
+      "Ende mit einem Haken, der zu einer Nachfrage einlädt."
+     ],
+     "q": "Wenn ich frage ‚Wie war deine letzte Reise?‘, was ist deine Antwort in zwei Sätzen?",
+     "c": "Bereite zwei Sätze über deine letzte Reise vor und sag sie einmal laut."
+    },
+    "es": {
+     "t": "Mejores respuestas a ‘¿Qué tal el viaje?’",
+     "g": "Convierte una respuesta de una palabra como ‘bien’ en un momento vivo contado en dos frases.",
+     "p": [
+      "Empieza con un veredicto breve y añade un momento concreto.",
+      "Cambia palabras generales como ‘bonito’ por una imagen o un detalle concreto.",
+      "Termina con un gancho que invite a hacerte otra pregunta."
+     ],
+     "q": "Si te pregunto ‘¿Qué tal tu último viaje?’, ¿cuál es tu respuesta en dos frases?",
+     "c": "Prepara dos frases sobre tu último viaje y dilas una vez en voz alta."
+    },
+    "fr": {
+     "t": "Mieux répondre à « C'était comment ? »",
+     "g": "Transforme une réponse d'un mot comme « bien » en un moment fort et vivant en deux phrases.",
+     "p": [
+      "Commence par un avis court, puis ajoute un moment précis.",
+      "Remplace les mots vagues comme « sympa » par une image ou un détail concret.",
+      "Termine par une accroche qui donne envie de poser une question."
+     ],
+     "q": "Si je te demande « C'était comment, ton dernier voyage ? », que réponds-tu en deux phrases ?",
+     "c": "Prépare deux phrases sur ton dernier voyage et dis-les une fois à voix haute."
+    },
+    "it": {
+     "t": "Risposte migliori a ‘Com'è andato il viaggio?’",
+     "g": "Trasforma una risposta di una parola come ‘bene’ in un momento vivace raccontato in due frasi.",
+     "p": [
+      "Comincia con un giudizio breve, poi aggiungi un momento preciso.",
+      "Sostituisci parole generiche come ‘bello’ con un'immagine o un dettaglio concreto.",
+      "Chiudi con un gancio che inviti a farti un'altra domanda."
+     ],
+     "q": "Se ti chiedo ‘Com'è andato il tuo ultimo viaggio?’, qual è la tua risposta in due frasi?",
+     "c": "Prepara due frasi sul tuo ultimo viaggio e dille una volta ad alta voce."
+    },
+    "pt": {
+     "t": "Melhores respostas a ‘Como foi a viagem?’",
+     "g": "Transforma uma resposta de uma palavra como ‘bem’ num momento vivo contado em duas frases.",
+     "p": [
+      "Começa com uma opinião curta e acrescenta um momento concreto.",
+      "Troca palavras vagas como ‘giro’ por uma imagem ou um pormenor concreto.",
+      "Acaba com um gancho que convide a outra pergunta."
+     ],
+     "q": "Se eu perguntar ‘Como foi a tua última viagem?’, qual é a tua resposta em duas frases?",
+     "c": "Prepara duas frases sobre a tua última viagem e diz-as uma vez em voz alta."
+    },
+    "pt_BR": {
+     "t": "Respostas melhores para ‘Como foi a viagem?’",
+     "g": "Transforme uma resposta de uma palavra como ‘legal’ em um momento vivo contado em duas frases.",
+     "p": [
+      "Comece com uma opinião curta e acrescente um momento concreto.",
+      "Troque palavras vagas como ‘bonito’ por uma imagem ou um detalhe concreto.",
+      "Termine com um gancho que convide a outra pergunta."
+     ],
+     "q": "Se eu perguntar ‘Como foi sua última viagem?’, qual é sua resposta em duas frases?",
+     "c": "Prepare duas frases sobre sua última viagem e fale uma vez em voz alta."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The best moment of a trip",
+     "g": "Pick one golden moment instead of listing everything you did.",
+     "p": [
+      "A list of sights is a schedule; one moment is a story.",
+      "Look for the instant you smiled, gasped or wanted time to stop.",
+      "Zoom in: where you stood, what you saw, who was next to you."
+     ],
+     "q": "What was the single best moment of a trip you loved?",
+     "c": "Choose your golden moment from one trip and describe it in three sentences."
+    },
+    "de": {
+     "t": "Der schönste Moment einer Reise",
+     "g": "Wähle einen goldenen Moment, statt alles aufzuzählen, was du gemacht hast.",
+     "p": [
+      "Eine Liste von Sehenswürdigkeiten ist ein Plan; ein Moment ist eine Geschichte.",
+      "Such den Augenblick, in dem du gelächelt, gestaunt oder die Zeit anhalten wolltest.",
+      "Zoom hinein: wo du standest, was du sahst, wer neben dir war."
+     ],
+     "q": "Was war der eine schönste Moment einer Reise, die du geliebt hast?",
+     "c": "Wähle deinen goldenen Moment einer Reise und beschreibe ihn in drei Sätzen."
+    },
+    "es": {
+     "t": "El mejor momento de un viaje",
+     "g": "Elige un momento de oro en lugar de enumerar todo lo que hiciste.",
+     "p": [
+      "Una lista de lugares es una agenda; un momento es una historia.",
+      "Busca el instante en que sonreíste, te quedaste sin aliento o quisiste parar el tiempo.",
+      "Acércate: dónde estabas, qué veías, quién estaba a tu lado."
+     ],
+     "q": "¿Cuál fue el mejor momento de un viaje que te encantó?",
+     "c": "Elige tu momento de oro de un viaje y descríbelo en tres frases."
+    },
+    "fr": {
+     "t": "Le meilleur moment d'un voyage",
+     "g": "Choisis un moment en or au lieu d'énumérer tout ce que tu as fait.",
+     "p": [
+      "Une liste de visites, c'est un emploi du temps ; un moment, c'est une histoire.",
+      "Cherche l'instant où tu as souri, été ébloui ou voulu arrêter le temps.",
+      "Fais un zoom : où tu étais, ce que tu voyais, qui était à côté de toi."
+     ],
+     "q": "Quel a été le meilleur moment d'un voyage que tu as adoré ?",
+     "c": "Choisis ton moment en or d'un voyage et décris-le en trois phrases."
+    },
+    "it": {
+     "t": "Il momento più bello di un viaggio",
+     "g": "Scegli un momento d'oro invece di elencare tutto quello che hai fatto.",
+     "p": [
+      "Un elenco di luoghi è un programma; un momento è una storia.",
+      "Cerca l'istante in cui hai sorriso, sei rimasto a bocca aperta o volevi fermare il tempo.",
+      "Fai uno zoom: dove eri, cosa vedevi, chi avevi accanto."
+     ],
+     "q": "Qual è stato il momento più bello di un viaggio che hai amato?",
+     "c": "Scegli il tuo momento d'oro di un viaggio e descrivilo in tre frasi."
+    },
+    "pt": {
+     "t": "O melhor momento de uma viagem",
+     "g": "Escolhe um momento de ouro em vez de enumerares tudo o que fizeste.",
+     "p": [
+      "Uma lista de sítios é uma agenda; um momento é uma história.",
+      "Procura o instante em que sorriste, ficaste de boca aberta ou quiseste parar o tempo.",
+      "Aproxima-te: onde estavas, o que vias, quem estava ao teu lado."
+     ],
+     "q": "Qual foi o melhor momento de uma viagem de que gostaste muito?",
+     "c": "Escolhe o teu momento de ouro de uma viagem e descreve-o em três frases."
+    },
+    "pt_BR": {
+     "t": "O melhor momento de uma viagem",
+     "g": "Escolha um momento de ouro em vez de listar tudo o que você fez.",
+     "p": [
+      "Uma lista de lugares é uma agenda; um momento é uma história.",
+      "Procure o instante em que você sorriu, ficou de boca aberta ou quis parar o tempo.",
+      "Chegue mais perto: onde você estava, o que via, quem estava ao seu lado."
+     ],
+     "q": "Qual foi o melhor momento de uma viagem que você amou?",
+     "c": "Escolha seu momento de ouro de uma viagem e descreva em três frases."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Describing a place in three senses",
+     "g": "Use sight, sound and smell to bring a destination to life.",
+     "p": [
+      "Sight: pick one colour or shape that defines the place.",
+      "Sound: waves, church bells, traffic, a street musician.",
+      "Smell: fresh bread, rain on stone, sea salt; smell brings memories back fast."
+     ],
+     "q": "What did your favourite destination smell like?",
+     "c": "Describe one place you know with one sight, one sound and one smell."
+    },
+    "de": {
+     "t": "Einen Ort mit drei Sinnen beschreiben",
+     "g": "Nutze Sehen, Hören und Riechen, um ein Reiseziel lebendig zu machen.",
+     "p": [
+      "Sehen: Wähle eine Farbe oder Form, die den Ort ausmacht.",
+      "Hören: Wellen, Kirchenglocken, Verkehr, ein Straßenmusiker.",
+      "Riechen: frisches Brot, Regen auf Stein, Meersalz; Gerüche wecken schnell Erinnerungen."
+     ],
+     "q": "Wie hat dein Lieblingsreiseziel gerochen?",
+     "c": "Beschreibe einen Ort, den du kennst, mit einem Bild, einem Geräusch und einem Geruch."
+    },
+    "es": {
+     "t": "Describir un lugar con tres sentidos",
+     "g": "Usa la vista, el oído y el olfato para dar vida a un destino.",
+     "p": [
+      "Vista: elige un color o una forma que defina el lugar.",
+      "Oído: olas, campanas, tráfico, un músico callejero.",
+      "Olfato: pan recién hecho, lluvia sobre piedra, sal marina; los olores traen recuerdos enseguida."
+     ],
+     "q": "¿A qué olía tu destino favorito?",
+     "c": "Describe un lugar que conozcas con una imagen, un sonido y un olor."
+    },
+    "fr": {
+     "t": "Décrire un lieu avec trois sens",
+     "g": "Utilise la vue, l'ouïe et l'odorat pour faire vivre une destination.",
+     "p": [
+      "La vue : choisis une couleur ou une forme qui résume le lieu.",
+      "L'ouïe : les vagues, des cloches, la circulation, un musicien de rue.",
+      "L'odorat : pain chaud, pluie sur la pierre, sel marin ; les odeurs ravivent vite les souvenirs."
+     ],
+     "q": "Quelle odeur avait ta destination préférée ?",
+     "c": "Décris un lieu que tu connais avec une image, un son et une odeur."
+    },
+    "it": {
+     "t": "Descrivere un luogo con tre sensi",
+     "g": "Usa vista, udito e olfatto per dare vita a una destinazione.",
+     "p": [
+      "Vista: scegli un colore o una forma che rappresenta il luogo.",
+      "Udito: onde, campane, traffico, un musicista di strada.",
+      "Olfatto: pane appena sfornato, pioggia sulla pietra, salsedine; gli odori riportano subito i ricordi."
+     ],
+     "q": "Che profumo aveva la tua destinazione preferita?",
+     "c": "Descrivi un luogo che conosci con un'immagine, un suono e un odore."
+    },
+    "pt": {
+     "t": "Descrever um lugar com três sentidos",
+     "g": "Usa a visão, a audição e o olfato para dar vida a um destino.",
+     "p": [
+      "Visão: escolhe uma cor ou forma que defina o lugar.",
+      "Audição: ondas, sinos, trânsito, um músico de rua.",
+      "Olfato: pão acabado de fazer, chuva na pedra, maresia; os cheiros trazem memórias num instante."
+     ],
+     "q": "A que cheirava o teu destino preferido?",
+     "c": "Descreve um lugar que conheces com uma imagem, um som e um cheiro."
+    },
+    "pt_BR": {
+     "t": "Descrever um lugar com três sentidos",
+     "g": "Use a visão, a audição e o olfato para dar vida a um destino.",
+     "p": [
+      "Visão: escolha uma cor ou forma que defina o lugar.",
+      "Audição: ondas, sinos, trânsito, um músico de rua.",
+      "Olfato: pão quentinho, chuva na pedra, cheiro de mar; os cheiros trazem lembranças na hora."
+     ],
+     "q": "Qual era o cheiro do seu destino favorito?",
+     "c": "Descreva um lugar que você conhece com uma imagem, um som e um cheiro."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking about where you went",
+     "g": "Learn simple ways to name places, regions and routes so listeners can follow.",
+     "p": [
+      "Go from big to small: country, region, then town.",
+      "Give a quick anchor: near the coast, two hours from the capital.",
+      "For routes, use a simple line: from A, by train to B, then by boat to C."
+     ],
+     "q": "Can you describe the route of one trip using from, to and then?",
+     "c": "Explain where one trip took you in two sentences, big place to small place."
+    },
+    "de": {
+     "t": "Erzählen, wo du warst",
+     "g": "Lerne einfache Wege, Orte, Regionen und Routen zu nennen, damit man dir folgen kann.",
+     "p": [
+      "Vom Großen zum Kleinen: Land, Region, dann Ort.",
+      "Gib einen schnellen Anker: an der Küste, zwei Stunden von der Hauptstadt.",
+      "Für Routen eine einfache Linie: von A mit dem Zug nach B, dann mit dem Boot nach C."
+     ],
+     "q": "Kannst du die Route einer Reise mit von, nach und dann beschreiben?",
+     "c": "Erkläre in zwei Sätzen, wohin dich eine Reise geführt hat, vom Großen zum Kleinen."
+    },
+    "es": {
+     "t": "Contar adónde fuiste",
+     "g": "Aprende formas sencillas de nombrar lugares, regiones y rutas para que te sigan.",
+     "p": [
+      "Ve de lo grande a lo pequeño: país, región y luego pueblo.",
+      "Da una referencia rápida: cerca de la costa, a dos horas de la capital.",
+      "Para las rutas, una línea simple: desde A, en tren hasta B y luego en barco hasta C."
+     ],
+     "q": "¿Puedes describir la ruta de un viaje usando desde, hasta y luego?",
+     "c": "Explica adónde te llevó un viaje en dos frases, de lo grande a lo pequeño."
+    },
+    "fr": {
+     "t": "Raconter où tu es allé",
+     "g": "Apprends des façons simples de nommer lieux, régions et itinéraires pour qu'on te suive.",
+     "p": [
+      "Va du grand au petit : pays, région, puis ville.",
+      "Donne un repère rapide : près de la côte, à deux heures de la capitale.",
+      "Pour un itinéraire, une ligne simple : de A en train jusqu'à B, puis en bateau jusqu'à C."
+     ],
+     "q": "Peux-tu décrire l'itinéraire d'un voyage avec de, jusqu'à et puis ?",
+     "c": "Explique en deux phrases où un voyage t'a mené, du plus grand au plus petit."
+    },
+    "it": {
+     "t": "Raccontare dove sei andato",
+     "g": "Impara modi semplici per nominare luoghi, regioni e percorsi così chi ascolta ti segue.",
+     "p": [
+      "Vai dal grande al piccolo: paese, regione, poi città.",
+      "Dai un riferimento veloce: vicino alla costa, a due ore dalla capitale.",
+      "Per i percorsi, una linea semplice: da A in treno fino a B, poi in barca fino a C."
+     ],
+     "q": "Sai descrivere il percorso di un viaggio usando da, fino a e poi?",
+     "c": "Spiega in due frasi dove ti ha portato un viaggio, dal luogo grande a quello piccolo."
+    },
+    "pt": {
+     "t": "Contar onde foste",
+     "g": "Aprende formas simples de dizer lugares, regiões e percursos para que te consigam seguir.",
+     "p": [
+      "Vai do grande para o pequeno: país, região e depois localidade.",
+      "Dá uma referência rápida: perto da costa, a duas horas da capital.",
+      "Para percursos, uma linha simples: de A, de comboio até B e depois de barco até C."
+     ],
+     "q": "Consegues descrever o percurso de uma viagem com de, até e depois?",
+     "c": "Explica em duas frases onde uma viagem te levou, do lugar grande para o pequeno."
+    },
+    "pt_BR": {
+     "t": "Contar aonde você foi",
+     "g": "Aprenda jeitos simples de dizer lugares, regiões e trajetos para que as pessoas acompanhem.",
+     "p": [
+      "Vá do grande para o pequeno: país, região e depois cidade.",
+      "Dê uma referência rápida: perto do litoral, a duas horas da capital.",
+      "Para trajetos, uma linha simples: de A, de trem até B e depois de barco até C."
+     ],
+     "q": "Você consegue descrever o trajeto de uma viagem usando de, até e depois?",
+     "c": "Explique em duas frases aonde uma viagem levou você, do lugar grande para o pequeno."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who you travelled with",
+     "g": "Introduce your travel companions and show how they shaped the trip.",
+     "p": [
+      "Give each companion one quick trait: the planner, the snacker, the photographer.",
+      "Show how they changed the trip: a detour, a joke, a brave idea.",
+      "Travelling alone counts too: you were the main character."
+     ],
+     "q": "Who was your best travel companion ever, and what was their role on the trip?",
+     "c": "Describe one travel companion in one sentence with their typical habit."
+    },
+    "de": {
+     "t": "Mit wem du gereist bist",
+     "g": "Stell deine Reisebegleitung vor und zeig, wie sie die Reise geprägt hat.",
+     "p": [
+      "Gib jeder Person eine schnelle Eigenschaft: die Planerin, der Snack-Fan, die Fotografin.",
+      "Zeig, wie sie die Reise verändert hat: ein Umweg, ein Witz, eine mutige Idee.",
+      "Allein reisen zählt auch: Dann warst du die Hauptfigur."
+     ],
+     "q": "Wer war deine beste Reisebegleitung und welche Rolle hatte sie?",
+     "c": "Beschreibe eine Reisebegleitung in einem Satz mit ihrer typischen Angewohnheit."
+    },
+    "es": {
+     "t": "Con quién viajaste",
+     "g": "Presenta a tus compañeros de viaje y muestra cómo dieron forma al viaje.",
+     "p": [
+      "Dale a cada uno un rasgo rápido: la organizadora, el de los snacks, la fotógrafa.",
+      "Muestra cómo cambiaron el viaje: un desvío, una broma, una idea valiente.",
+      "Viajar solo también cuenta: el protagonista eras tú."
+     ],
+     "q": "¿Quién ha sido tu mejor compañero de viaje y qué papel tenía?",
+     "c": "Describe a un compañero de viaje en una frase con su costumbre típica."
+    },
+    "fr": {
+     "t": "Avec qui tu as voyagé",
+     "g": "Présente tes compagnons de voyage et montre comment ils ont façonné le voyage.",
+     "p": [
+      "Donne à chacun un trait rapide : l'organisatrice, le gourmand, la photographe.",
+      "Montre comment ils ont changé le voyage : un détour, une blague, une idée audacieuse.",
+      "Voyager seul compte aussi : le personnage principal, c'était toi."
+     ],
+     "q": "Qui a été ton meilleur compagnon de voyage, et quel était son rôle ?",
+     "c": "Décris un compagnon de voyage en une phrase avec son habitude typique."
+    },
+    "it": {
+     "t": "Con chi hai viaggiato",
+     "g": "Presenta i tuoi compagni di viaggio e mostra come hanno dato forma al viaggio.",
+     "p": [
+      "Dai a ognuno un tratto veloce: l'organizzatrice, il goloso, la fotografa.",
+      "Mostra come hanno cambiato il viaggio: una deviazione, una battuta, un'idea coraggiosa.",
+      "Anche viaggiare da soli conta: il protagonista eri tu."
+     ],
+     "q": "Chi è stato il tuo miglior compagno di viaggio e che ruolo aveva?",
+     "c": "Descrivi un compagno di viaggio in una frase con la sua abitudine tipica."
+    },
+    "pt": {
+     "t": "Com quem viajaste",
+     "g": "Apresenta os teus companheiros de viagem e mostra como marcaram a viagem.",
+     "p": [
+      "Dá a cada um um traço rápido: a organizadora, o dos lanches, a fotógrafa.",
+      "Mostra como mudaram a viagem: um desvio, uma piada, uma ideia corajosa.",
+      "Viajar sozinho também conta: a personagem principal eras tu."
+     ],
+     "q": "Quem foi o teu melhor companheiro de viagem e qual era o papel dele?",
+     "c": "Descreve um companheiro de viagem numa frase com o seu hábito típico."
+    },
+    "pt_BR": {
+     "t": "Com quem você viajou",
+     "g": "Apresente seus companheiros de viagem e mostre como eles marcaram a viagem.",
+     "p": [
+      "Dê a cada um um traço rápido: a organizadora, o do lanche, a fotógrafa.",
+      "Mostre como mudaram a viagem: um desvio, uma piada, uma ideia corajosa.",
+      "Viajar sozinho também vale: o personagem principal era você."
+     ],
+     "q": "Quem foi seu melhor companheiro de viagem e qual era o papel dele?",
+     "c": "Descreva um companheiro de viagem em uma frase com o hábito típico dele."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking others about their trips",
+     "g": "Use open questions that invite people to share their own adventures.",
+     "p": [
+      "Open questions start with what, how or which, not yes or no.",
+      "Ask about moments, not facts: What surprised you most there?",
+      "Short and curious beats long and complicated."
+     ],
+     "q": "What question do you love being asked about your own travels?",
+     "c": "Ask someone today one open question about a trip they took."
+    },
+    "de": {
+     "t": "Andere nach ihren Reisen fragen",
+     "g": "Nutze offene Fragen, die Menschen einladen, ihre eigenen Abenteuer zu teilen.",
+     "p": [
+      "Offene Fragen beginnen mit was, wie oder welche, nicht mit ja oder nein.",
+      "Frag nach Momenten, nicht nach Fakten: Was hat dich dort am meisten überrascht?",
+      "Kurz und neugierig schlägt lang und kompliziert."
+     ],
+     "q": "Welche Frage zu deinen Reisen beantwortest du am liebsten?",
+     "c": "Stell heute jemandem eine offene Frage zu einer Reise, die er gemacht hat."
+    },
+    "es": {
+     "t": "Preguntar a otros por sus viajes",
+     "g": "Usa preguntas abiertas que inviten a la gente a contar sus propias aventuras.",
+     "p": [
+      "Las preguntas abiertas empiezan por qué, cómo o cuál, no se responden con sí o no.",
+      "Pregunta por momentos, no por datos: ¿Qué fue lo que más te sorprendió allí?",
+      "Corto y curioso funciona mejor que largo y complicado."
+     ],
+     "q": "¿Qué pregunta sobre tus viajes te encanta que te hagan?",
+     "c": "Hazle hoy a alguien una pregunta abierta sobre un viaje que hizo."
+    },
+    "fr": {
+     "t": "Interroger les autres sur leurs voyages",
+     "g": "Pose des questions ouvertes qui invitent les gens à raconter leurs aventures.",
+     "p": [
+      "Les questions ouvertes commencent par quoi, comment ou quel, pas par oui ou non.",
+      "Interroge sur des moments, pas des faits : Qu'est-ce qui t'a le plus surpris là-bas ?",
+      "Court et curieux vaut mieux que long et compliqué."
+     ],
+     "q": "Quelle question sur tes voyages adores-tu qu'on te pose ?",
+     "c": "Pose aujourd'hui à quelqu'un une question ouverte sur un de ses voyages."
+    },
+    "it": {
+     "t": "Chiedere agli altri dei loro viaggi",
+     "g": "Usa domande aperte che invitano le persone a raccontare le loro avventure.",
+     "p": [
+      "Le domande aperte iniziano con cosa, come o quale, non si risponde sì o no.",
+      "Chiedi di momenti, non di fatti: Cosa ti ha sorpreso di più lì?",
+      "Breve e curioso funziona meglio di lungo e complicato."
+     ],
+     "q": "Quale domanda sui tuoi viaggi ami sentirti fare?",
+     "c": "Fai oggi a qualcuno una domanda aperta su un viaggio che ha fatto."
+    },
+    "pt": {
+     "t": "Perguntar aos outros pelas viagens deles",
+     "g": "Usa perguntas abertas que convidem as pessoas a partilhar as suas aventuras.",
+     "p": [
+      "Perguntas abertas começam com o quê, como ou qual, sem resposta de sim ou não.",
+      "Pergunta por momentos, não por factos: O que te surpreendeu mais lá?",
+      "Curto e curioso resulta melhor do que longo e complicado."
+     ],
+     "q": "Que pergunta sobre as tuas viagens adoras que te façam?",
+     "c": "Faz hoje a alguém uma pergunta aberta sobre uma viagem que fez."
+    },
+    "pt_BR": {
+     "t": "Perguntar aos outros sobre as viagens deles",
+     "g": "Use perguntas abertas que convidem as pessoas a contar suas próprias aventuras.",
+     "p": [
+      "Perguntas abertas começam com o que, como ou qual, sem resposta de sim ou não.",
+      "Pergunte sobre momentos, não fatos: O que mais te surpreendeu lá?",
+      "Curto e curioso funciona melhor do que longo e complicado."
+     ],
+     "q": "Qual pergunta sobre suas viagens você adora que façam?",
+     "c": "Faça hoje a alguém uma pergunta aberta sobre uma viagem que a pessoa fez."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening like a good travel buddy",
+     "g": "Show interest, ask follow-ups and resist jumping in with your own story.",
+     "p": [
+      "Small signals matter: nod, smile, say 'really?' or 'and then?'.",
+      "Follow up on a detail they mentioned to show you were listening.",
+      "Save your own story for later; let theirs reach its ending first."
+     ],
+     "q": "When someone tells you a story, what do you usually do to show you care?",
+     "c": "In your next chat, ask one follow-up question before sharing anything of yours."
+    },
+    "de": {
+     "t": "Zuhören wie ein guter Reisebuddy",
+     "g": "Zeig Interesse, stell Nachfragen und spring nicht gleich mit deiner eigenen Geschichte dazwischen.",
+     "p": [
+      "Kleine Signale zählen: nicken, lächeln, ‚wirklich?‘ oder ‚und dann?‘ sagen.",
+      "Greif ein erwähntes Detail auf, um zu zeigen, dass du zugehört hast.",
+      "Heb dir deine Geschichte auf; lass ihre zuerst zu Ende kommen."
+     ],
+     "q": "Was tust du meist, um zu zeigen, dass dich eine Geschichte interessiert?",
+     "c": "Stell in deinem nächsten Gespräch eine Nachfrage, bevor du von dir erzählst."
+    },
+    "es": {
+     "t": "Escuchar como un buen compañero de viaje",
+     "g": "Muestra interés, haz preguntas de seguimiento y no saltes con tu propia historia.",
+     "p": [
+      "Las pequeñas señales importan: asentir, sonreír, decir ‘¿en serio?’ o ‘¿y luego?’.",
+      "Retoma un detalle que mencionaron para demostrar que escuchabas.",
+      "Guarda tu historia para después; deja que la suya llegue al final."
+     ],
+     "q": "Cuando alguien te cuenta una historia, ¿qué haces para mostrar interés?",
+     "c": "En tu próxima charla, haz una pregunta de seguimiento antes de contar algo tuyo."
+    },
+    "fr": {
+     "t": "Écouter comme un bon compagnon de voyage",
+     "g": "Montre ton intérêt, pose des questions de relance et ne saute pas sur ta propre histoire.",
+     "p": [
+      "Les petits signaux comptent : hocher la tête, sourire, dire « ah bon ? » ou « et après ? ».",
+      "Reprends un détail mentionné pour montrer que tu écoutais.",
+      "Garde ton histoire pour plus tard ; laisse la sienne arriver au bout."
+     ],
+     "q": "Quand quelqu'un te raconte une histoire, que fais-tu pour montrer ton intérêt ?",
+     "c": "Lors de ta prochaine discussion, pose une question de relance avant de parler de toi."
+    },
+    "it": {
+     "t": "Ascoltare da buon compagno di viaggio",
+     "g": "Mostra interesse, fai domande di approfondimento e non saltare subito alla tua storia.",
+     "p": [
+      "I piccoli segnali contano: annuire, sorridere, dire ‘davvero?’ o ‘e poi?’.",
+      "Riprendi un dettaglio che hanno nominato per mostrare che ascoltavi.",
+      "Tieni la tua storia per dopo; lascia che la loro arrivi alla fine."
+     ],
+     "q": "Quando qualcuno ti racconta una storia, cosa fai di solito per mostrare interesse?",
+     "c": "Nella prossima chiacchierata, fai una domanda di approfondimento prima di parlare di te."
+    },
+    "pt": {
+     "t": "Ouvir como um bom companheiro de viagem",
+     "g": "Mostra interesse, faz perguntas de seguimento e não saltes logo para a tua história.",
+     "p": [
+      "Os pequenos sinais contam: acenar, sorrir, dizer ‘a sério?’ ou ‘e depois?’.",
+      "Retoma um pormenor que mencionaram para mostrar que estavas a ouvir.",
+      "Guarda a tua história para depois; deixa a deles chegar ao fim."
+     ],
+     "q": "Quando alguém te conta uma história, o que costumas fazer para mostrar interesse?",
+     "c": "Na tua próxima conversa, faz uma pergunta de seguimento antes de falares de ti."
+    },
+    "pt_BR": {
+     "t": "Ouvir como um bom parceiro de viagem",
+     "g": "Mostre interesse, faça perguntas de continuação e não pule logo para a sua história.",
+     "p": [
+      "Pequenos sinais contam: acenar, sorrir, dizer ‘sério?’ ou ‘e aí?’.",
+      "Retome um detalhe que a pessoa mencionou para mostrar que estava ouvindo.",
+      "Guarde sua história para depois; deixe a dela chegar ao fim."
+     ],
+     "q": "Quando alguém te conta uma história, o que você faz para mostrar interesse?",
+     "c": "Na sua próxima conversa, faça uma pergunta de continuação antes de falar de você."
+    }
+   }
+  }
+ ]
+}

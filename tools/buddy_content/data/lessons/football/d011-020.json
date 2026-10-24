@@ -1,0 +1,835 @@
+{
+ "topic": "football",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kick-off and restarts",
+     "g": "Learn how play starts at the beginning, after goals and after stoppages.",
+     "p": [
+      "A kick-off from the centre mark starts each half, and opponents must stay outside the centre circle.",
+      "After a goal, the team that conceded restarts with a kick-off.",
+      "If the referee stops play for an injury, a dropped ball often restarts the game."
+     ],
+     "q": "Have you ever noticed which team kicks off the second half?",
+     "c": "At the next match you watch, check who kicks off each half and after each goal."
+    },
+    "de": {
+     "t": "Anstoß und Spielfortsetzungen",
+     "g": "Lerne, wie das Spiel zu Beginn, nach Toren und nach Unterbrechungen startet.",
+     "p": [
+      "Jede Halbzeit beginnt mit Anstoß vom Mittelpunkt, Gegner bleiben außerhalb des Mittelkreises.",
+      "Nach einem Tor stößt das Team an, das den Treffer kassiert hat.",
+      "Unterbricht der Schiri wegen einer Verletzung, geht es oft mit einem Schiedsrichterball weiter."
+     ],
+     "q": "Hast du schon bemerkt, welches Team die zweite Halbzeit anstößt?",
+     "c": "Achte beim nächsten Spiel darauf, wer jede Halbzeit und nach jedem Tor anstößt."
+    },
+    "es": {
+     "t": "Saque inicial y reanudaciones",
+     "g": "Aprende cómo se pone el balón en juego al inicio, tras un gol y tras una parada.",
+     "p": [
+      "Cada parte empieza con un saque desde el centro, y los rivales esperan fuera del círculo central.",
+      "Tras un gol, saca de centro el equipo que lo ha recibido.",
+      "Si el árbitro para el juego por una lesión, suele reanudarlo con un balón a tierra."
+     ],
+     "q": "¿Te has fijado en qué equipo saca en la segunda parte?",
+     "c": "En el próximo partido, mira quién saca en cada parte y después de cada gol."
+    },
+    "fr": {
+     "t": "Coup d'envoi et reprises",
+     "g": "Apprends comment le jeu démarre au début, après un but et après un arrêt.",
+     "p": [
+      "Chaque mi-temps commence par un coup d'envoi au centre, adversaires hors du rond central.",
+      "Après un but, c'est l'équipe qui l'a encaissé qui remet en jeu au centre.",
+      "Si l'arbitre arrête le jeu pour une blessure, il reprend souvent par une balle à terre."
+     ],
+     "q": "As-tu déjà remarqué quelle équipe donne le coup d'envoi de la seconde période ?",
+     "c": "Au prochain match, note qui engage à chaque mi-temps et après chaque but."
+    },
+    "it": {
+     "t": "Calcio d'inizio e riprese",
+     "g": "Impara come riparte il gioco all'inizio, dopo un gol e dopo un'interruzione.",
+     "p": [
+      "Ogni tempo inizia con il calcio d'inizio dal centro, con gli avversari fuori dal cerchio.",
+      "Dopo un gol, batte il calcio d'inizio la squadra che lo ha subito.",
+      "Se l'arbitro ferma il gioco per un infortunio, spesso riprende con una rimessa da parte dell'arbitro."
+     ],
+     "q": "Hai mai notato quale squadra batte il calcio d'inizio del secondo tempo?",
+     "c": "Alla prossima partita, controlla chi batte il calcio d'inizio in ogni tempo e dopo ogni gol."
+    },
+    "pt": {
+     "t": "Pontapé de saída e recomeços",
+     "g": "Aprende como o jogo começa no início, depois de um golo e depois de uma paragem.",
+     "p": [
+      "Cada parte começa com o pontapé de saída no centro, com os adversários fora do círculo central.",
+      "Depois de um golo, recomeça a equipa que o sofreu.",
+      "Se o árbitro para o jogo por lesão, muitas vezes recomeça com uma bola ao solo."
+     ],
+     "q": "Já reparaste qual equipa dá o pontapé de saída na segunda parte?",
+     "c": "No próximo jogo, vê quem dá o pontapé de saída em cada parte e após cada golo."
+    },
+    "pt_BR": {
+     "t": "Saída de bola e reinícios",
+     "g": "Aprenda como o jogo começa no início, depois de um gol e depois de uma parada.",
+     "p": [
+      "Cada tempo começa com a saída no centro, com os adversários fora do círculo central.",
+      "Depois de um gol, quem sofreu o gol dá a nova saída.",
+      "Se o árbitro para o jogo por lesão, muitas vezes reinicia com bola ao chão."
+     ],
+     "q": "Você já reparou qual time dá a saída no segundo tempo?",
+     "c": "No próximo jogo, veja quem dá a saída em cada tempo e depois de cada gol."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Throw-ins",
+     "g": "Master the rules of the throw-in, the most common restart in football.",
+     "p": [
+      "When the whole ball crosses a touchline, the other team throws it back in.",
+      "The thrower uses both hands, brings the ball from behind and over the head, and keeps both feet on the ground.",
+      "You cannot score directly from a throw-in, and there is no offside from one."
+     ],
+     "q": "Did you know a long throw can be as dangerous as a corner?",
+     "c": "Practise a correct throw-in with a ball or even a pillow: both feet down, both hands."
+    },
+    "de": {
+     "t": "Einwürfe",
+     "g": "Meistere die Regeln des Einwurfs, der häufigsten Spielfortsetzung im Fußball.",
+     "p": [
+      "Überquert der Ball ganz die Seitenlinie, wirft das andere Team ein.",
+      "Mit beiden Händen, von hinten über den Kopf, und beide Füße bleiben auf dem Boden.",
+      "Aus einem Einwurf kann man kein direktes Tor erzielen, und es gibt kein Abseits."
+     ],
+     "q": "Wusstest du, dass ein weiter Einwurf so gefährlich sein kann wie eine Ecke?",
+     "c": "Übe einen korrekten Einwurf mit Ball oder Kissen: beide Füße unten, beide Hände."
+    },
+    "es": {
+     "t": "El saque de banda",
+     "g": "Domina las reglas del saque de banda, la reanudación más frecuente del fútbol.",
+     "p": [
+      "Cuando el balón sale entero por la banda, saca el equipo contrario.",
+      "Se saca con las dos manos, desde detrás y por encima de la cabeza, con ambos pies en el suelo.",
+      "No se puede marcar directamente de saque de banda y no hay fuera de juego en él."
+     ],
+     "q": "¿Sabías que un saque de banda largo puede ser tan peligroso como un córner?",
+     "c": "Practica un saque correcto con un balón o un cojín: pies en el suelo y dos manos."
+    },
+    "fr": {
+     "t": "La touche",
+     "g": "Maîtrise les règles de la rentrée de touche, la reprise la plus fréquente du foot.",
+     "p": [
+      "Quand le ballon franchit entièrement la ligne de touche, l'autre équipe remet en jeu.",
+      "On lance à deux mains, de derrière et au-dessus de la tête, les deux pieds au sol.",
+      "On ne peut pas marquer directement sur une touche, et il n'y a pas de hors-jeu."
+     ],
+     "q": "Savais-tu qu'une longue touche peut être aussi dangereuse qu'un corner ?",
+     "c": "Entraîne-toi à une touche correcte avec un ballon ou un coussin : pieds au sol, deux mains."
+    },
+    "it": {
+     "t": "La rimessa laterale",
+     "g": "Impara le regole della rimessa laterale, la ripresa più frequente nel calcio.",
+     "p": [
+      "Quando il pallone supera interamente la linea laterale, batte la squadra avversaria.",
+      "Si lancia con due mani, da dietro e sopra la testa, con entrambi i piedi a terra.",
+      "Non si può segnare direttamente su rimessa laterale e non c'è fuorigioco."
+     ],
+     "q": "Sapevi che una rimessa lunga può essere pericolosa quanto un calcio d'angolo?",
+     "c": "Prova una rimessa corretta con un pallone o un cuscino: piedi a terra, due mani."
+    },
+    "pt": {
+     "t": "O lançamento lateral",
+     "g": "Domina as regras do lançamento lateral, o recomeço mais frequente do futebol.",
+     "p": [
+      "Quando a bola sai toda pela linha lateral, lança a equipa adversária.",
+      "Lança-se com as duas mãos, por trás e por cima da cabeça, com os dois pés no chão.",
+      "Não se pode marcar golo diretamente de lançamento e não há fora de jogo."
+     ],
+     "q": "Sabias que um lançamento longo pode ser tão perigoso como um canto?",
+     "c": "Pratica um lançamento correto com uma bola ou uma almofada: pés no chão, duas mãos."
+    },
+    "pt_BR": {
+     "t": "O arremesso lateral",
+     "g": "Domine as regras do lateral, o reinício mais comum do futebol.",
+     "p": [
+      "Quando a bola sai inteira pela linha lateral, cobra o time adversário.",
+      "Cobra-se com as duas mãos, por trás e por cima da cabeça, com os dois pés no chão.",
+      "Não vale gol direto de lateral e não existe impedimento nele."
+     ],
+     "q": "Sabia que um lateral longo pode ser tão perigoso quanto um escanteio?",
+     "c": "Treine um lateral correto com uma bola ou uma almofada: pés no chão, duas mãos."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Goal kicks and corner kicks",
+     "g": "Learn the two restarts used when the ball crosses the goal line.",
+     "p": [
+      "If an attacker last touched the ball, the defending team takes a goal kick from its goal area.",
+      "If a defender last touched it, the attackers take a corner kick from the corner arc.",
+      "A goal scored straight from a corner is called an olympic goal, after a famous 1924 goal."
+     ],
+     "q": "Do you find corners exciting or nerve-wracking to watch?",
+     "c": "In your next match, count the corners each team wins and how many lead to a shot."
+    },
+    "de": {
+     "t": "Abstoß und Eckstoß",
+     "g": "Lerne die zwei Fortsetzungen kennen, wenn der Ball über die Torlinie geht.",
+     "p": [
+      "Hat zuletzt ein Angreifer den Ball berührt, gibt es Abstoß für die verteidigende Mannschaft.",
+      "Hat zuletzt ein Verteidiger ihn berührt, gibt es Eckstoß für die Angreifer.",
+      "Ein direkt verwandelter Eckstoß heißt olympisches Tor, nach einem berühmten Treffer von 1924."
+     ],
+     "q": "Sind Ecken für dich spannend oder eher nervenaufreibend?",
+     "c": "Zähl im nächsten Spiel die Ecken jedes Teams und wie viele zu einem Schuss führen."
+    },
+    "es": {
+     "t": "Saque de puerta y saque de esquina",
+     "g": "Aprende las dos reanudaciones cuando el balón cruza la línea de meta.",
+     "p": [
+      "Si lo tocó por última vez un atacante, el equipo que defiende saca de puerta.",
+      "Si lo tocó un defensor, los atacantes sacan de esquina desde el arco del córner.",
+      "Un gol directo de córner se llama gol olímpico, por un famoso tanto de 1924."
+     ],
+     "q": "¿Los córners te emocionan o te ponen nervioso?",
+     "c": "En el próximo partido, cuenta los córners de cada equipo y cuántos acaban en tiro."
+    },
+    "fr": {
+     "t": "Six mètres et corners",
+     "g": "Découvre les deux reprises quand le ballon franchit la ligne de but.",
+     "p": [
+      "Si un attaquant l'a touché en dernier, la défense joue un coup de pied de but.",
+      "Si un défenseur l'a touché en dernier, les attaquants tirent un corner depuis l'arc de coin.",
+      "Un but marqué directement sur corner s'appelle un but olympique, d'après un but célèbre de 1924."
+     ],
+     "q": "Les corners, c'est excitant ou stressant pour toi ?",
+     "c": "Au prochain match, compte les corners de chaque équipe et ceux qui finissent en tir."
+    },
+    "it": {
+     "t": "Rinvio dal fondo e calcio d'angolo",
+     "g": "Impara le due riprese quando il pallone supera la linea di porta.",
+     "p": [
+      "Se l'ultimo a toccare è un attaccante, la squadra in difesa batte il rinvio dal fondo.",
+      "Se è un difensore, gli attaccanti battono il calcio d'angolo dalla lunetta.",
+      "Un gol direttamente da corner si chiama gol olimpico, da una famosa rete del 1924."
+     ],
+     "q": "I calci d'angolo ti emozionano o ti mettono ansia?",
+     "c": "Alla prossima partita, conta i corner di ogni squadra e quanti finiscono con un tiro."
+    },
+    "pt": {
+     "t": "Pontapé de baliza e pontapé de canto",
+     "g": "Aprende os dois recomeços quando a bola passa a linha de baliza.",
+     "p": [
+      "Se o último toque foi de um atacante, a equipa que defende marca um pontapé de baliza.",
+      "Se foi de um defesa, os atacantes marcam um canto a partir do arco de canto.",
+      "Um golo direto de canto chama-se golo olímpico, por causa de um famoso golo de 1924."
+     ],
+     "q": "Os cantos deixam-te entusiasmado ou nervoso?",
+     "c": "No próximo jogo, conta os cantos de cada equipa e quantos acabam em remate."
+    },
+    "pt_BR": {
+     "t": "Tiro de meta e escanteio",
+     "g": "Aprenda os dois reinícios quando a bola cruza a linha de fundo.",
+     "p": [
+      "Se o último toque foi de um atacante, o time que defende cobra tiro de meta.",
+      "Se foi de um defensor, os atacantes cobram escanteio do arco de canto.",
+      "Gol direto de escanteio se chama gol olímpico, por causa de um gol famoso de 1924."
+     ],
+     "q": "Os escanteios deixam você empolgado ou nervoso?",
+     "c": "No próximo jogo, conte os escanteios de cada time e quantos viram chute."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Direct and indirect free kicks",
+     "g": "Understand the two types of free kick and when each one is given.",
+     "p": [
+      "A direct free kick follows fouls like tripping, pushing, holding or handball, and can go straight in.",
+      "An indirect free kick, for offside or dangerous play, must touch another player before a goal counts.",
+      "For an indirect free kick, the referee raises one arm until the ball touches someone else."
+     ],
+     "q": "Have you ever seen a stunning free-kick goal you still remember?",
+     "c": "Watch the referee at the next free kick and check: arm up or not?"
+    },
+    "de": {
+     "t": "Direkte und indirekte Freistöße",
+     "g": "Verstehe die zwei Freistoßarten und wann es welche gibt.",
+     "p": [
+      "Direkte Freistöße gibt es nach Fouls wie Beinstellen, Stoßen, Halten oder Handspiel.",
+      "Beim indirekten, etwa nach Abseits oder gefährlichem Spiel, muss noch ein Spieler den Ball berühren.",
+      "Beim indirekten Freistoß hebt der Schiri einen Arm, bis ein anderer Spieler den Ball berührt."
+     ],
+     "q": "Erinnerst du dich an ein traumhaftes Freistoßtor?",
+     "c": "Achte beim nächsten Freistoß auf den Schiedsrichter: Arm oben oder nicht?"
+    },
+    "es": {
+     "t": "Tiros libres directos e indirectos",
+     "g": "Entiende los dos tipos de tiro libre y cuándo se pita cada uno.",
+     "p": [
+      "El directo se pita por faltas como zancadillas, empujones, agarrones o manos, y puede ir a gol.",
+      "El indirecto, por fuera de juego o juego peligroso, debe tocar a otro jugador antes de ser gol.",
+      "En el indirecto, el árbitro levanta un brazo hasta que otro jugador toca el balón."
+     ],
+     "q": "¿Recuerdas algún golazo de falta que no puedas olvidar?",
+     "c": "En la próxima falta, mira al árbitro: ¿brazo arriba o no?"
+    },
+    "fr": {
+     "t": "Coups francs directs et indirects",
+     "g": "Comprends les deux types de coup franc et quand chacun est sifflé.",
+     "p": [
+      "Le direct sanctionne les fautes comme croc-en-jambe, poussée, tirage de maillot ou main.",
+      "L'indirect, pour hors-jeu ou jeu dangereux, doit toucher un autre joueur avant d'entrer.",
+      "Sur un coup franc indirect, l'arbitre lève le bras jusqu'à ce qu'un autre joueur touche le ballon."
+     ],
+     "q": "Te souviens-tu d'un coup franc magnifique que tu n'as jamais oublié ?",
+     "c": "Au prochain coup franc, regarde l'arbitre : bras levé ou non ?"
+    },
+    "it": {
+     "t": "Punizioni dirette e indirette",
+     "g": "Capisci i due tipi di calcio di punizione e quando viene dato ciascuno.",
+     "p": [
+      "La diretta punisce falli come sgambetti, spinte, trattenute o fallo di mano, e può finire in rete.",
+      "L'indiretta, per fuorigioco o gioco pericoloso, deve toccare un altro giocatore prima del gol.",
+      "Sull'indiretta l'arbitro alza un braccio finché un altro giocatore non tocca il pallone."
+     ],
+     "q": "Ricordi una punizione spettacolare che non hai mai dimenticato?",
+     "c": "Alla prossima punizione, guarda l'arbitro: braccio alzato o no?"
+    },
+    "pt": {
+     "t": "Livres diretos e indiretos",
+     "g": "Percebe os dois tipos de livre e quando se assinala cada um.",
+     "p": [
+      "O livre direto castiga faltas como rasteiras, empurrões, agarrões ou mão na bola, e pode dar golo.",
+      "O indireto, por fora de jogo ou jogo perigoso, tem de tocar noutro jogador antes de ser golo.",
+      "No livre indireto, o árbitro levanta um braço até a bola tocar noutro jogador."
+     ],
+     "q": "Lembras-te de um golo de livre fantástico que nunca esqueceste?",
+     "c": "No próximo livre, olha para o árbitro: braço no ar ou não?"
+    },
+    "pt_BR": {
+     "t": "Faltas diretas e indiretas",
+     "g": "Entenda os dois tipos de tiro livre e quando cada um é marcado.",
+     "p": [
+      "O tiro livre direto pune faltas como rasteira, empurrão, agarrão ou mão na bola, e pode virar gol.",
+      "O indireto, por impedimento ou jogo perigoso, precisa tocar em outro jogador antes de valer gol.",
+      "No tiro livre indireto, o árbitro levanta um braço até a bola tocar em outro jogador."
+     ],
+     "q": "Você lembra de um golaço de falta que nunca esqueceu?",
+     "c": "Na próxima falta, olhe para o árbitro: braço levantado ou não?"
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The penalty kick",
+     "g": "Learn when a penalty is awarded and how it is taken.",
+     "p": [
+      "A penalty is given for a direct free kick offence by defenders inside their own penalty area.",
+      "The ball sits on the spot 11 m from goal, and only the kicker and the goalkeeper face off.",
+      "The keeper must have at least part of one foot on the goal line as the kick is taken."
+     ],
+     "q": "If you took a penalty, would you aim for a corner or blast it down the middle?",
+     "c": "Ask a friend where they would aim a penalty, then compare with your own choice."
+    },
+    "de": {
+     "t": "Der Elfmeter",
+     "g": "Lerne, wann es Elfmeter gibt und wie er ausgeführt wird.",
+     "p": [
+      "Elfmeter gibt es, wenn Verteidiger im eigenen Strafraum ein Foul für einen direkten Freistoß begehen.",
+      "Der Ball liegt 11 m vor dem Tor, und nur Schütze und Torwart stehen sich gegenüber.",
+      "Beim Schuss muss der Torwart mit mindestens einem Fuß teilweise auf der Torlinie stehen."
+     ],
+     "q": "Würdest du beim Elfmeter in eine Ecke zielen oder voll in die Mitte schießen?",
+     "c": "Frag jemanden, wohin er einen Elfmeter schießen würde, und vergleiche mit dir."
+    },
+    "es": {
+     "t": "El penalti",
+     "g": "Aprende cuándo se pita un penalti y cómo se lanza.",
+     "p": [
+      "Se pita cuando un defensor comete en su propia área una falta de tiro libre directo.",
+      "El balón se coloca en el punto, a 11 m, y solo se enfrentan el lanzador y el portero.",
+      "Al lanzarse, el portero debe tener al menos parte de un pie sobre la línea de meta."
+     ],
+     "q": "Si tiraras un penalti, ¿apuntarías a una esquina o por el centro?",
+     "c": "Pregunta a alguien dónde tiraría un penalti y compáralo con tu elección."
+    },
+    "fr": {
+     "t": "Le penalty",
+     "g": "Apprends quand un penalty est accordé et comment il se tire.",
+     "p": [
+      "Il est sifflé quand un défenseur commet dans sa surface une faute passible de coup franc direct.",
+      "Le ballon est posé sur le point à 11 m, et seuls le tireur et le gardien s'affrontent.",
+      "Au moment du tir, le gardien doit avoir au moins une partie d'un pied sur la ligne de but."
+     ],
+     "q": "Si tu tirais un penalty, viserais-tu un coin ou plein centre ?",
+     "c": "Demande à un proche où il tirerait un penalty et compare avec ton choix."
+    },
+    "it": {
+     "t": "Il calcio di rigore",
+     "g": "Impara quando viene dato un rigore e come si batte.",
+     "p": [
+      "Si assegna quando un difensore commette nella propria area un fallo da punizione diretta.",
+      "Il pallone va sul dischetto a 11 m dalla porta: di fronte solo il tiratore e il portiere.",
+      "Al tiro, il portiere deve avere almeno parte di un piede sulla linea di porta."
+     ],
+     "q": "Se tirassi un rigore, mireresti all'angolo o centrale?",
+     "c": "Chiedi a qualcuno dove tirerebbe un rigore e confronta con la tua scelta."
+    },
+    "pt": {
+     "t": "O penálti",
+     "g": "Aprende quando se marca um penálti e como se cobra.",
+     "p": [
+      "Marca-se quando um defesa comete na própria grande área uma falta de livre direto.",
+      "A bola fica na marca a 11 m da baliza e só o marcador e o guarda-redes se defrontam.",
+      "No remate, o guarda-redes tem de ter pelo menos parte de um pé sobre a linha de baliza."
+     ],
+     "q": "Se marcasses um penálti, apontavas a um canto ou ao meio?",
+     "c": "Pergunta a alguém para onde marcaria um penálti e compara com a tua escolha."
+    },
+    "pt_BR": {
+     "t": "O pênalti",
+     "g": "Aprenda quando o pênalti é marcado e como é cobrado.",
+     "p": [
+      "É marcado quando um defensor comete, na própria área, uma falta de tiro livre direto.",
+      "A bola fica na marca a 11 m do gol, e só o cobrador e o goleiro se enfrentam.",
+      "Na cobrança, o goleiro precisa ter pelo menos parte de um pé sobre a linha do gol."
+     ],
+     "q": "Se você batesse um pênalti, mirava no canto ou no meio?",
+     "c": "Pergunte a alguém onde bateria um pênalti e compare com a sua escolha."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fouls and misconduct",
+     "g": "Recognise the most common offences referees punish.",
+     "p": [
+      "Tripping, pushing, kicking, holding and charging an opponent carelessly are fouls.",
+      "Deliberately handling the ball with the hand or arm is also an offence.",
+      "Misconduct covers bad behaviour like dissent, time-wasting or unsporting acts."
+     ],
+     "q": "Which foul annoys you most when you see it in a match?",
+     "c": "In a match clip, try to call each foul before the referee does."
+    },
+    "de": {
+     "t": "Fouls und unsportliches Verhalten",
+     "g": "Erkenne die häufigsten Vergehen, die Schiedsrichter bestrafen.",
+     "p": [
+      "Beinstellen, Stoßen, Treten, Halten und rücksichtsloses Anrempeln sind Fouls.",
+      "Absichtliches Handspiel mit Hand oder Arm ist ebenfalls ein Vergehen.",
+      "Unsportliches Verhalten umfasst Meckern, Zeitspiel oder unfaire Aktionen."
+     ],
+     "q": "Welches Foul ärgert dich beim Zuschauen am meisten?",
+     "c": "Versuch in einem Spielausschnitt, jedes Foul vor dem Schiri zu erkennen."
+    },
+    "es": {
+     "t": "Faltas e infracciones",
+     "g": "Reconoce las infracciones más comunes que castiga el árbitro.",
+     "p": [
+      "Poner la zancadilla, empujar, dar una patada, agarrar o cargar sin cuidado son faltas.",
+      "Tocar el balón con la mano o el brazo de forma deliberada también es infracción.",
+      "La conducta incorrecta incluye protestar, perder tiempo o actos antideportivos."
+     ],
+     "q": "¿Qué falta te molesta más cuando la ves en un partido?",
+     "c": "En un vídeo de un partido, intenta pitar cada falta antes que el árbitro."
+    },
+    "fr": {
+     "t": "Fautes et comportements",
+     "g": "Reconnais les fautes les plus courantes que l'arbitre sanctionne.",
+     "p": [
+      "Croc-en-jambe, poussée, coup de pied, tirage de maillot et charge imprudente sont des fautes.",
+      "Toucher volontairement le ballon de la main ou du bras est aussi une faute.",
+      "Les comportements antisportifs incluent contestation, perte de temps ou gestes déloyaux."
+     ],
+     "q": "Quelle faute t'agace le plus quand tu regardes un match ?",
+     "c": "Dans un extrait de match, essaie de siffler chaque faute avant l'arbitre."
+    },
+    "it": {
+     "t": "Falli e scorrettezze",
+     "g": "Riconosci le infrazioni più comuni punite dall'arbitro.",
+     "p": [
+      "Sgambettare, spingere, calciare, trattenere o caricare in modo imprudente sono falli.",
+      "Toccare volontariamente il pallone con mano o braccio è un'infrazione.",
+      "Le scorrettezze comprendono proteste, perdite di tempo o gesti antisportivi."
+     ],
+     "q": "Quale fallo ti dà più fastidio quando guardi una partita?",
+     "c": "In un video di una partita, prova a fischiare ogni fallo prima dell'arbitro."
+    },
+    "pt": {
+     "t": "Faltas e conduta incorreta",
+     "g": "Reconhece as infrações mais comuns que o árbitro castiga.",
+     "p": [
+      "Rasteiras, empurrões, pontapés, agarrões e cargas imprudentes são faltas.",
+      "Tocar deliberadamente a bola com a mão ou o braço também é infração.",
+      "A conduta incorreta inclui protestos, perdas de tempo ou atos antidesportivos."
+     ],
+     "q": "Que falta te irrita mais quando vês um jogo?",
+     "c": "Num vídeo de um jogo, tenta assinalar cada falta antes do árbitro."
+    },
+    "pt_BR": {
+     "t": "Faltas e conduta antidesportiva",
+     "g": "Reconheça as infrações mais comuns que o árbitro pune.",
+     "p": [
+      "Rasteira, empurrão, chute no adversário, agarrão e carga imprudente são faltas.",
+      "Tocar de propósito na bola com a mão ou o braço também é infração.",
+      "A conduta antidesportiva inclui reclamação, cera ou atitudes desleais."
+     ],
+     "q": "Qual falta mais irrita você quando assiste a um jogo?",
+     "c": "Num vídeo de jogo, tente apitar cada falta antes do árbitro."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yellow and red cards",
+     "g": "Learn what cautions and sending-offs mean for a player and a team.",
+     "p": [
+      "A yellow card is a caution; two yellows in one match turn into a red.",
+      "A red card sends a player off, and the team must play on with one player fewer.",
+      "Cards first appeared at the 1970 World Cup, inspired by traffic lights."
+     ],
+     "q": "Do you think a red card can change the whole story of a match?",
+     "c": "In the next match you watch, note every card and the reason for it."
+    },
+    "de": {
+     "t": "Gelbe und Rote Karten",
+     "g": "Lerne, was Verwarnung und Platzverweis für Spieler und Team bedeuten.",
+     "p": [
+      "Gelb ist eine Verwarnung, zwei Gelbe in einem Spiel ergeben Gelb-Rot.",
+      "Rot bedeutet Platzverweis, und das Team spielt mit einem Spieler weniger weiter.",
+      "Karten gab es erstmals bei der WM 1970, inspiriert von Verkehrsampeln."
+     ],
+     "q": "Kann eine Rote Karte deiner Meinung nach ein ganzes Spiel drehen?",
+     "c": "Notiere beim nächsten Spiel jede Karte und den Grund dafür."
+    },
+    "es": {
+     "t": "Tarjetas amarillas y rojas",
+     "g": "Aprende qué significan las amonestaciones y expulsiones para un jugador y su equipo.",
+     "p": [
+      "La amarilla es una amonestación; dos amarillas en un partido se convierten en roja.",
+      "La roja expulsa al jugador, y su equipo sigue con uno menos.",
+      "Las tarjetas aparecieron en el Mundial de 1970, inspiradas en los semáforos."
+     ],
+     "q": "¿Crees que una roja puede cambiar toda la historia de un partido?",
+     "c": "En el próximo partido, apunta cada tarjeta y su motivo."
+    },
+    "fr": {
+     "t": "Cartons jaunes et rouges",
+     "g": "Découvre ce que signifient avertissement et exclusion pour un joueur et son équipe.",
+     "p": [
+      "Le jaune est un avertissement ; deux jaunes dans un match donnent un rouge.",
+      "Le rouge exclut le joueur, et l'équipe continue avec un joueur de moins.",
+      "Les cartons sont apparus à la Coupe du monde 1970, inspirés des feux de circulation."
+     ],
+     "q": "Penses-tu qu'un carton rouge peut changer toute l'histoire d'un match ?",
+     "c": "Au prochain match, note chaque carton et sa raison."
+    },
+    "it": {
+     "t": "Cartellini gialli e rossi",
+     "g": "Scopri cosa significano ammonizione ed espulsione per un giocatore e la squadra.",
+     "p": [
+      "Il giallo è un'ammonizione; due gialli nella stessa partita diventano rosso.",
+      "Il rosso espelle il giocatore e la squadra continua con un uomo in meno.",
+      "I cartellini sono comparsi ai Mondiali del 1970, ispirati ai semafori."
+     ],
+     "q": "Pensi che un cartellino rosso possa cambiare tutta la partita?",
+     "c": "Alla prossima partita, annota ogni cartellino e il motivo."
+    },
+    "pt": {
+     "t": "Cartões amarelos e vermelhos",
+     "g": "Aprende o que significam advertência e expulsão para um jogador e a equipa.",
+     "p": [
+      "O amarelo é uma advertência; dois amarelos no mesmo jogo dão vermelho.",
+      "O vermelho expulsa o jogador e a equipa continua com menos um.",
+      "Os cartões surgiram no Mundial de 1970, inspirados nos semáforos."
+     ],
+     "q": "Achas que um vermelho pode mudar toda a história de um jogo?",
+     "c": "No próximo jogo, aponta cada cartão e o motivo."
+    },
+    "pt_BR": {
+     "t": "Cartões amarelo e vermelho",
+     "g": "Aprenda o que significam advertência e expulsão para o jogador e o time.",
+     "p": [
+      "O amarelo é uma advertência; dois amarelos na mesma partida viram vermelho.",
+      "O vermelho expulsa o jogador, e o time segue com um a menos.",
+      "Os cartões surgiram na Copa de 1970, inspirados nos semáforos."
+     ],
+     "q": "Você acha que um vermelho pode mudar toda a história de um jogo?",
+     "c": "No próximo jogo, anote cada cartão e o motivo."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Offside made simple",
+     "g": "Understand the basic offside rule step by step.",
+     "p": [
+      "A player is offside if, when a teammate plays the ball, they are nearer the goal line than the ball and the second-last defender.",
+      "Being level with the second-last defender is onside, and you can never be offside in your own half.",
+      "It is only punished if the player then gets involved in play."
+     ],
+     "q": "Was offside confusing for you at first, or did it click quickly?",
+     "c": "Use cups or coins on a table to set up one offside and one onside position."
+    },
+    "de": {
+     "t": "Abseits einfach erklärt",
+     "g": "Verstehe die Abseitsregel Schritt für Schritt.",
+     "p": [
+      "Abseits ist, wer beim Pass näher zur Torlinie ist als Ball und vorletzter Gegenspieler.",
+      "Auf gleicher Höhe ist kein Abseits, und in der eigenen Hälfte gibt es nie Abseits.",
+      "Bestraft wird es nur, wenn der Spieler danach ins Spiel eingreift."
+     ],
+     "q": "War Abseits für dich anfangs verwirrend oder hast du es schnell verstanden?",
+     "c": "Stell mit Bechern oder Münzen eine Abseits- und eine Nicht-Abseits-Situation nach."
+    },
+    "es": {
+     "t": "El fuera de juego, fácil",
+     "g": "Entiende la regla del fuera de juego paso a paso.",
+     "p": [
+      "Hay fuera de juego si, al pase de un compañero, estás más cerca de la meta que el balón y el penúltimo defensor.",
+      "Estar en línea con el penúltimo defensor es legal, y en tu propio campo nunca hay fuera de juego.",
+      "Solo se sanciona si el jugador participa después en la jugada."
+     ],
+     "q": "¿El fuera de juego te costó al principio o lo entendiste rápido?",
+     "c": "Con vasos o monedas, monta en una mesa un fuera de juego y una posición legal."
+    },
+    "fr": {
+     "t": "Le hors-jeu en simple",
+     "g": "Comprends la règle du hors-jeu étape par étape.",
+     "p": [
+      "On est hors-jeu si, à la passe, on est plus près de la ligne de but que le ballon et l'avant-dernier adversaire.",
+      "Être à la même hauteur que l'avant-dernier défenseur est permis, et jamais hors-jeu dans son camp.",
+      "La faute n'est sifflée que si le joueur participe ensuite au jeu."
+     ],
+     "q": "Le hors-jeu t'a-t-il paru compliqué au début, ou c'était clair vite ?",
+     "c": "Avec des tasses ou des pièces, recrée une position de hors-jeu et une position valable."
+    },
+    "it": {
+     "t": "Il fuorigioco semplice",
+     "g": "Capisci la regola del fuorigioco passo dopo passo.",
+     "p": [
+      "Sei in fuorigioco se, al passaggio, sei più vicino alla linea di porta del pallone e del penultimo difendente.",
+      "In linea con il penultimo difendente è regolare, e nella propria metà campo non c'è mai fuorigioco.",
+      "Viene punito solo se il giocatore poi partecipa all'azione."
+     ],
+     "q": "Il fuorigioco all'inizio ti confondeva o l'hai capito subito?",
+     "c": "Con bicchieri o monete, ricrea sul tavolo un fuorigioco e una posizione regolare."
+    },
+    "pt": {
+     "t": "O fora de jogo, simples",
+     "g": "Percebe a regra do fora de jogo passo a passo.",
+     "p": [
+      "Há fora de jogo se, no passe, estás mais perto da linha de baliza do que a bola e o penúltimo defensor.",
+      "Estar em linha com o penúltimo defensor é legal, e no teu meio-campo nunca há fora de jogo.",
+      "Só é assinalado se o jogador depois participar na jogada."
+     ],
+     "q": "O fora de jogo foi confuso no início ou percebeste logo?",
+     "c": "Com copos ou moedas, monta numa mesa um fora de jogo e uma posição legal."
+    },
+    "pt_BR": {
+     "t": "Impedimento sem mistério",
+     "g": "Entenda a regra do impedimento passo a passo.",
+     "p": [
+      "Há impedimento se, no passe, você está mais perto da linha de fundo que a bola e o penúltimo defensor.",
+      "Na mesma linha do penúltimo defensor é legal, e no seu campo nunca há impedimento.",
+      "Só é marcado se o jogador participar do lance depois."
+     ],
+     "q": "O impedimento confundiu você no começo ou entendeu rápido?",
+     "c": "Com copos ou moedas, monte numa mesa um impedimento e uma posição legal."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Offside examples",
+     "g": "Test your offside knowledge with common situations.",
+     "p": [
+      "A striker behind the last defender when the pass is played, then scoring: offside.",
+      "A striker level with the defender at the pass, then sprinting clear: onside, play on.",
+      "Receiving the ball straight from a throw-in, corner or goal kick: never offside."
+     ],
+     "q": "Which offside situation still seems tricky to you?",
+     "c": "Watch a goal replay and freeze it at the pass to judge offside yourself."
+    },
+    "de": {
+     "t": "Abseits-Beispiele",
+     "g": "Teste dein Abseitswissen an typischen Situationen.",
+     "p": [
+      "Stürmer beim Pass hinter dem letzten Verteidiger, dann Tor: Abseits.",
+      "Stürmer beim Pass auf gleicher Höhe, dann sprintet er davon: kein Abseits, weiterspielen.",
+      "Ball direkt aus Einwurf, Eckstoß oder Abstoß: niemals Abseits."
+     ],
+     "q": "Welche Abseitssituation findest du noch knifflig?",
+     "c": "Halte eine Torwiederholung beim Pass an und entscheide selbst über Abseits."
+    },
+    "es": {
+     "t": "Ejemplos de fuera de juego",
+     "g": "Pon a prueba lo que sabes con situaciones habituales.",
+     "p": [
+      "Delantero por detrás del último defensor en el pase y luego marca: fuera de juego.",
+      "Delantero en línea con el defensor en el pase y luego se escapa: posición legal, sigue el juego.",
+      "Recibir directamente de saque de banda, córner o saque de puerta: nunca es fuera de juego."
+     ],
+     "q": "¿Qué situación de fuera de juego te sigue pareciendo difícil?",
+     "c": "Congela la repetición de un gol en el pase y decide tú si hay fuera de juego."
+    },
+    "fr": {
+     "t": "Exemples de hors-jeu",
+     "g": "Teste tes connaissances avec des situations courantes.",
+     "p": [
+      "Attaquant derrière le dernier défenseur au moment de la passe, puis but : hors-jeu.",
+      "Attaquant à hauteur du défenseur à la passe, puis il s'échappe : position valable, on joue.",
+      "Recevoir directement d'une touche, d'un corner ou d'un six mètres : jamais hors-jeu."
+     ],
+     "q": "Quelle situation de hors-jeu te paraît encore difficile ?",
+     "c": "Mets sur pause le ralenti d'un but au moment de la passe et juge toi-même."
+    },
+    "it": {
+     "t": "Esempi di fuorigioco",
+     "g": "Metti alla prova la tua conoscenza con situazioni comuni.",
+     "p": [
+      "Attaccante oltre l'ultimo difensore al momento del passaggio, poi segna: fuorigioco.",
+      "Attaccante in linea con il difensore al passaggio, poi scatta via: regolare, si gioca.",
+      "Ricevere direttamente da rimessa laterale, corner o rinvio dal fondo: mai fuorigioco."
+     ],
+     "q": "Quale situazione di fuorigioco ti sembra ancora difficile?",
+     "c": "Metti in pausa il replay di un gol al momento del passaggio e giudica tu."
+    },
+    "pt": {
+     "t": "Exemplos de fora de jogo",
+     "g": "Testa o que sabes com situações frequentes.",
+     "p": [
+      "Avançado atrás do último defesa no momento do passe e depois marca: fora de jogo.",
+      "Avançado em linha com o defesa no passe e depois foge: posição legal, segue o jogo.",
+      "Receber diretamente de lançamento, canto ou pontapé de baliza: nunca é fora de jogo."
+     ],
+     "q": "Que situação de fora de jogo ainda te parece difícil?",
+     "c": "Para a repetição de um golo no momento do passe e decide tu se há fora de jogo."
+    },
+    "pt_BR": {
+     "t": "Exemplos de impedimento",
+     "g": "Teste o que você sabe com situações comuns.",
+     "p": [
+      "Atacante atrás do último defensor na hora do passe e depois faz o gol: impedimento.",
+      "Atacante na linha do defensor no passe e depois dispara: posição legal, segue o jogo.",
+      "Receber direto de lateral, escanteio ou tiro de meta: nunca é impedimento."
+     ],
+     "q": "Qual situação de impedimento ainda parece difícil para você?",
+     "c": "Pause o replay de um gol na hora do passe e decida você se houve impedimento."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The refereeing team",
+     "g": "Meet the officials who keep a football match fair.",
+     "p": [
+      "The referee has the final say on the pitch and controls the match with a whistle.",
+      "Two assistant referees run along the touchlines and flag for offside, throw-ins and fouls.",
+      "The fourth official manages substitutions, shows added time and helps the team."
+     ],
+     "q": "Would you ever like to try refereeing a match?",
+     "c": "At the next match, watch an assistant referee for a few minutes and see what they signal."
+    },
+    "de": {
+     "t": "Das Schiedsrichterteam",
+     "g": "Lerne die Offiziellen kennen, die für ein faires Spiel sorgen.",
+     "p": [
+      "Der Schiedsrichter hat auf dem Platz das letzte Wort und leitet das Spiel mit der Pfeife.",
+      "Zwei Assistenten laufen an den Seitenlinien und zeigen Abseits, Einwürfe und Fouls an.",
+      "Der vierte Offizielle regelt Wechsel, zeigt die Nachspielzeit und unterstützt das Team."
+     ],
+     "q": "Würdest du gern einmal selbst ein Spiel pfeifen?",
+     "c": "Beobachte beim nächsten Spiel ein paar Minuten lang einen Assistenten und seine Zeichen."
+    },
+    "es": {
+     "t": "El equipo arbitral",
+     "g": "Conoce a los árbitros que hacen que un partido sea justo.",
+     "p": [
+      "El árbitro tiene la última palabra en el campo y dirige el partido con el silbato.",
+      "Dos asistentes recorren las bandas y señalan con la bandera fueras de juego, saques y faltas.",
+      "El cuarto árbitro gestiona los cambios, muestra el tiempo añadido y ayuda al equipo."
+     ],
+     "q": "¿Te gustaría probar a arbitrar un partido alguna vez?",
+     "c": "En el próximo partido, observa a un asistente unos minutos y fíjate en sus señales."
+    },
+    "fr": {
+     "t": "L'équipe d'arbitrage",
+     "g": "Découvre les officiels qui veillent à un match équitable.",
+     "p": [
+      "L'arbitre a le dernier mot sur le terrain et dirige le match au sifflet.",
+      "Deux arbitres assistants longent les touches et signalent hors-jeu, touches et fautes au drapeau.",
+      "Le quatrième arbitre gère les remplacements, affiche le temps additionnel et aide l'équipe."
+     ],
+     "q": "Aimerais-tu un jour essayer d'arbitrer un match ?",
+     "c": "Au prochain match, observe un arbitre assistant quelques minutes et ses signaux."
+    },
+    "it": {
+     "t": "La squadra arbitrale",
+     "g": "Conosci gli ufficiali di gara che rendono giusta una partita.",
+     "p": [
+      "L'arbitro ha l'ultima parola in campo e dirige la gara con il fischietto.",
+      "Due assistenti corrono lungo le linee laterali e segnalano fuorigioco, rimesse e falli.",
+      "Il quarto ufficiale gestisce le sostituzioni, mostra il recupero e aiuta la squadra."
+     ],
+     "q": "Ti piacerebbe provare ad arbitrare una partita?",
+     "c": "Alla prossima partita, osserva un assistente per qualche minuto e nota i suoi segnali."
+    },
+    "pt": {
+     "t": "A equipa de arbitragem",
+     "g": "Conhece os árbitros que tornam um jogo justo.",
+     "p": [
+      "O árbitro tem a última palavra em campo e dirige o jogo com o apito.",
+      "Dois árbitros assistentes percorrem as linhas laterais e assinalam foras de jogo, lançamentos e faltas.",
+      "O quarto árbitro gere as substituições, mostra o tempo de compensação e ajuda a equipa."
+     ],
+     "q": "Gostavas de experimentar arbitrar um jogo um dia?",
+     "c": "No próximo jogo, observa um árbitro assistente durante uns minutos e os seus sinais."
+    },
+    "pt_BR": {
+     "t": "A equipe de arbitragem",
+     "g": "Conheça os árbitros que tornam a partida justa.",
+     "p": [
+      "O árbitro tem a palavra final em campo e comanda o jogo com o apito.",
+      "Dois assistentes correm pelas laterais e sinalizam impedimentos, laterais e faltas com a bandeira.",
+      "O quarto árbitro cuida das substituições, mostra os acréscimos e ajuda a equipe."
+     ],
+     "q": "Você gostaria de experimentar apitar uma partida um dia?",
+     "c": "No próximo jogo, observe um assistente por alguns minutos e repare nos sinais dele."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "road_trips",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using GPS wisely",
+     "g": "Set your navigation preferences, double-check routes and know when to trust your own eyes.",
+     "p": [
+      "Set options like avoiding tolls, ferries or unpaved roads before you start, not while driving.",
+      "Glance at the whole route on the map first; if it looks strange, compare it with a second source.",
+      "Road signs and closures beat the GPS: if a sign says a road is closed, follow the sign."
+     ],
+     "q": "Have you ever had a funny or strange moment following a GPS?",
+     "c": "Open your map app and find the setting to avoid tolls or unpaved roads."
+    },
+    "de": {
+     "t": "Navi klug nutzen",
+     "g": "Stell deine Navi-Optionen ein, prüf Routen gegen und wisse, wann du deinen Augen trauen solltest.",
+     "p": [
+      "Leg Optionen wie Maut, Fähren oder unbefestigte Wege meiden vor der Fahrt fest, nicht währenddessen.",
+      "Sieh dir zuerst die ganze Route auf der Karte an; wirkt sie seltsam, vergleiche mit einer zweiten Quelle.",
+      "Schilder und Sperrungen gehen vor: Steht auf einem Schild, die Straße ist gesperrt, folge dem Schild."
+     ],
+     "q": "Hast du schon einmal einen lustigen oder seltsamen Moment mit dem Navi erlebt?",
+     "c": "Öffne deine Karten-App und finde die Einstellung, um Maut oder unbefestigte Straßen zu meiden."
+    },
+    "es": {
+     "t": "Usar el GPS con cabeza",
+     "g": "Configura el navegador, revisa las rutas y sabe cuándo fiarte de tus propios ojos.",
+     "p": [
+      "Ajusta opciones como evitar peajes, ferris o pistas sin asfaltar antes de salir, no mientras conduces.",
+      "Mira primero la ruta completa en el mapa; si parece rara, compárala con otra fuente.",
+      "Las señales y los cortes mandan: si una señal dice que la carretera está cortada, síguela."
+     ],
+     "q": "¿Has tenido alguna vez un momento gracioso o extraño siguiendo un GPS?",
+     "c": "Abre tu app de mapas y busca la opción para evitar peajes o caminos sin asfaltar."
+    },
+    "fr": {
+     "t": "Bien utiliser le GPS",
+     "g": "Règle tes préférences de navigation, vérifie les trajets et sache quand faire confiance à tes yeux.",
+     "p": [
+      "Choisis d'éviter péages, ferries ou routes non goudronnées avant de partir, pas en conduisant.",
+      "Regarde d'abord tout le trajet sur la carte ; s'il paraît bizarre, compare avec une autre source.",
+      "Panneaux et fermetures priment : si un panneau indique une route fermée, suis le panneau."
+     ],
+     "q": "As-tu déjà vécu un moment drôle ou étrange en suivant un GPS ?",
+     "c": "Ouvre ton appli de cartes et trouve le réglage pour éviter les péages ou les routes non goudronnées."
+    },
+    "it": {
+     "t": "Usare il navigatore con giudizio",
+     "g": "Imposta le preferenze del navigatore, verifica i percorsi e sappi quando fidarti dei tuoi occhi.",
+     "p": [
+      "Imposta opzioni come evitare pedaggi, traghetti o strade sterrate prima di partire, non mentre guidi.",
+      "Guarda prima tutto il percorso sulla mappa; se sembra strano, confrontalo con un'altra fonte.",
+      "Cartelli e chiusure vincono sul navigatore: se un cartello dice strada chiusa, segui il cartello."
+     ],
+     "q": "Ti è mai capitato un momento buffo o strano seguendo un navigatore?",
+     "c": "Apri la tua app di mappe e trova l'opzione per evitare pedaggi o strade sterrate."
+    },
+    "pt": {
+     "t": "Usar o GPS com cabeça",
+     "g": "Configura a navegação, confirma os percursos e sabe quando confiar nos teus próprios olhos.",
+     "p": [
+      "Define opções como evitar portagens, ferries ou estradas de terra antes de partir, não a conduzir.",
+      "Vê primeiro o percurso todo no mapa; se parecer estranho, compara com outra fonte.",
+      "Sinais e cortes mandam: se um sinal diz que a estrada está cortada, segue o sinal."
+     ],
+     "q": "Já tiveste um momento engraçado ou estranho a seguir um GPS?",
+     "c": "Abre a tua app de mapas e encontra a opção para evitar portagens ou estradas de terra."
+    },
+    "pt_BR": {
+     "t": "Usando o GPS com sabedoria",
+     "g": "Ajuste as preferências do GPS, confira as rotas e saiba quando confiar nos próprios olhos.",
+     "p": [
+      "Defina opções como evitar pedágios, balsas ou estradas de terra antes de sair, não dirigindo.",
+      "Veja primeiro a rota inteira no mapa; se parecer estranha, compare com outra fonte.",
+      "Placas e bloqueios valem mais que o GPS: se a placa diz que a estrada está fechada, siga a placa."
+     ],
+     "q": "Você já teve um momento engraçado ou estranho seguindo um GPS?",
+     "c": "Abra seu app de mapa e encontre a opção para evitar pedágios ou estradas de terra."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Road signs around the world",
+     "g": "Recognise the shapes and colours of warning, priority and information signs in many countries.",
+     "p": [
+      "In many countries triangles warn of hazards, circles give orders and rectangles give information.",
+      "Colours carry meaning too, but they vary: motorway signs are blue in some places and green in others.",
+      "Before driving abroad, look at an official guide to that country's signs for a few minutes."
+     ],
+     "q": "Have you ever seen a road sign abroad that made you smile or puzzled you?",
+     "c": "Look up one warning sign from another country that does not exist where you live."
+    },
+    "de": {
+     "t": "Verkehrsschilder weltweit",
+     "g": "Erkenne Formen und Farben von Warn-, Vorfahrts- und Hinweisschildern in vielen Ländern.",
+     "p": [
+      "In vielen Ländern warnen Dreiecke vor Gefahren, Kreise geben Gebote oder Verbote, Rechtecke informieren.",
+      "Auch Farben haben Bedeutung, aber sie variieren: Autobahnschilder sind mal blau, mal grün.",
+      "Wirf vor einer Fahrt im Ausland ein paar Minuten einen Blick in eine offizielle Übersicht der Schilder."
+     ],
+     "q": "Hast du im Ausland schon ein Schild gesehen, das dich zum Lächeln gebracht oder verwirrt hat?",
+     "c": "Such ein Warnschild aus einem anderen Land, das es bei dir zu Hause nicht gibt."
+    },
+    "es": {
+     "t": "Señales de tráfico del mundo",
+     "g": "Reconoce formas y colores de señales de peligro, prioridad e información en muchos países.",
+     "p": [
+      "En muchos países los triángulos avisan de peligros, los círculos dan órdenes y los rectángulos informan.",
+      "Los colores también significan algo, pero varían: las señales de autopista son azules en unos sitios y verdes en otros.",
+      "Antes de conducir en otro país, mira unos minutos una guía oficial de sus señales."
+     ],
+     "q": "¿Has visto alguna señal en el extranjero que te hiciera sonreír o te dejara pensando?",
+     "c": "Busca una señal de peligro de otro país que no exista donde vives."
+    },
+    "fr": {
+     "t": "Les panneaux du monde",
+     "g": "Reconnais formes et couleurs des panneaux de danger, de priorité et d'indication dans de nombreux pays.",
+     "p": [
+      "Dans beaucoup de pays, les triangles signalent un danger, les ronds donnent des ordres, les rectangles informent.",
+      "Les couleurs comptent aussi, mais varient : les panneaux d'autoroute sont bleus ici, verts ailleurs.",
+      "Avant de conduire à l'étranger, consulte quelques minutes un guide officiel des panneaux du pays."
+     ],
+     "q": "As-tu déjà vu un panneau à l'étranger qui t'a fait sourire ou t'a intrigué ?",
+     "c": "Cherche un panneau de danger d'un autre pays qui n'existe pas chez toi."
+    },
+    "it": {
+     "t": "Cartelli stradali nel mondo",
+     "g": "Riconosci forme e colori dei cartelli di pericolo, precedenza e indicazione in molti paesi.",
+     "p": [
+      "In molti paesi i triangoli segnalano pericoli, i cerchi danno obblighi o divieti, i rettangoli informano.",
+      "Anche i colori contano, ma cambiano: i cartelli autostradali sono blu in alcuni posti e verdi in altri.",
+      "Prima di guidare all'estero, guarda per qualche minuto una guida ufficiale ai cartelli del paese."
+     ],
+     "q": "Hai mai visto all'estero un cartello che ti ha fatto sorridere o ti ha incuriosito?",
+     "c": "Cerca un cartello di pericolo di un altro paese che dove vivi non esiste."
+    },
+    "pt": {
+     "t": "Sinais de trânsito pelo mundo",
+     "g": "Reconhece as formas e cores dos sinais de perigo, prioridade e informação em muitos países.",
+     "p": [
+      "Em muitos países os triângulos avisam de perigos, os círculos dão ordens e os retângulos informam.",
+      "As cores também contam, mas variam: os sinais de autoestrada são azuis nuns sítios e verdes noutros.",
+      "Antes de conduzires noutro país, vê durante uns minutos um guia oficial dos sinais de lá."
+     ],
+     "q": "Já viste no estrangeiro um sinal que te fez sorrir ou te deixou a pensar?",
+     "c": "Procura um sinal de perigo de outro país que não exista onde vives."
+    },
+    "pt_BR": {
+     "t": "Placas de trânsito pelo mundo",
+     "g": "Reconheça formas e cores de placas de advertência, preferência e indicação em vários países.",
+     "p": [
+      "Em muitos países, triângulos ou losangos alertam perigos, círculos dão ordens e retângulos informam.",
+      "As cores também têm sentido, mas variam: placas de rodovia são azuis em alguns lugares e verdes em outros.",
+      "Antes de dirigir em outro país, veja por alguns minutos um guia oficial das placas de lá."
+     ],
+     "q": "Você já viu uma placa no exterior que fez você sorrir ou ficar intrigado?",
+     "c": "Pesquise uma placa de advertência de outro país que não existe onde você mora."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mastering roundabouts",
+     "g": "Learn to enter, give way, choose a lane and exit roundabouts calmly.",
+     "p": [
+      "In most countries you give way to traffic already on the roundabout; signs tell you if it differs.",
+      "Pick your lane early: often the outer lane for near exits and the inner lane for later ones.",
+      "Signal before your exit, watch for cyclists and pedestrians, and go round again if you miss it."
+     ],
+     "q": "How do you feel about roundabouts: relaxed, or a little nervous?",
+     "c": "On a map, find a roundabout near you and plan which lane you would use for each exit."
+    },
+    "de": {
+     "t": "Kreisverkehre meistern",
+     "g": "Lerne, ruhig in Kreisverkehre einzufahren, Vorfahrt zu gewähren, die Spur zu wählen und auszufahren.",
+     "p": [
+      "In den meisten Ländern hat der Verkehr im Kreisel Vorfahrt; Schilder zeigen, wenn es anders ist.",
+      "Wähl die Spur früh: oft außen für nahe Ausfahrten, innen für spätere.",
+      "Blinke vor deiner Ausfahrt, achte auf Rad und Fußverkehr und dreh lieber noch eine Runde."
+     ],
+     "q": "Wie fühlst du dich in Kreisverkehren: entspannt oder etwas nervös?",
+     "c": "Such auf einer Karte einen Kreisverkehr in deiner Nähe und plane die Spur für jede Ausfahrt."
+    },
+    "es": {
+     "t": "Dominar las rotondas",
+     "g": "Aprende a entrar, ceder el paso, elegir carril y salir de las rotondas con calma.",
+     "p": [
+      "En la mayoría de países cedes el paso a quien ya circula por la rotonda; las señales indican si cambia.",
+      "Elige carril pronto: a menudo el exterior para salidas cercanas y el interior para las siguientes.",
+      "Señaliza antes de tu salida, atento a ciclistas y peatones, y da otra vuelta si te la pasas."
+     ],
+     "q": "¿Cómo te sientes en las rotondas: tranquilo o un poco nervioso?",
+     "c": "Busca en un mapa una rotonda cerca de ti y planea qué carril usarías para cada salida."
+    },
+    "fr": {
+     "t": "Maîtriser les ronds-points",
+     "g": "Apprends à entrer, céder le passage, choisir ta voie et sortir des ronds-points sereinement.",
+     "p": [
+      "Dans la plupart des pays, on cède le passage à ceux déjà dans l'anneau ; les panneaux signalent les exceptions.",
+      "Choisis ta voie tôt : souvent l'extérieur pour les sorties proches, l'intérieur pour les suivantes.",
+      "Mets ton clignotant avant ta sortie, surveille cyclistes et piétons, et refais un tour si tu la rates."
+     ],
+     "q": "Comment te sens-tu dans les ronds-points : détendu ou un peu tendu ?",
+     "c": "Trouve un rond-point près de chez toi sur une carte et prévois ta voie pour chaque sortie."
+    },
+    "it": {
+     "t": "Padroneggiare le rotatorie",
+     "g": "Impara a entrare, dare la precedenza, scegliere la corsia e uscire dalle rotatorie con calma.",
+     "p": [
+      "Nella maggior parte dei paesi si dà precedenza a chi è già nella rotatoria; i cartelli indicano le eccezioni.",
+      "Scegli presto la corsia: spesso quella esterna per le uscite vicine e quella interna per le successive.",
+      "Metti la freccia prima dell'uscita, attento a ciclisti e pedoni, e fai un altro giro se la perdi."
+     ],
+     "q": "Come ti senti nelle rotatorie: tranquillo o un po' nervoso?",
+     "c": "Trova su una mappa una rotatoria vicino a te e pianifica la corsia per ogni uscita."
+    },
+    "pt": {
+     "t": "Dominar as rotundas",
+     "g": "Aprende a entrar, ceder a passagem, escolher a via e sair das rotundas com calma.",
+     "p": [
+      "Na maioria dos países cedes a passagem a quem já circula na rotunda; os sinais indicam exceções.",
+      "Escolhe a via cedo: muitas vezes a exterior para saídas próximas e a interior para as seguintes.",
+      "Sinaliza antes da tua saída, atenção a ciclistas e peões, e dá outra volta se a falhares."
+     ],
+     "q": "Como te sentes nas rotundas: descontraído ou um pouco nervoso?",
+     "c": "Encontra num mapa uma rotunda perto de ti e planeia que via usarias para cada saída."
+    },
+    "pt_BR": {
+     "t": "Dominando as rotatórias",
+     "g": "Aprenda a entrar, dar a preferência, escolher a faixa e sair das rotatórias com calma.",
+     "p": [
+      "Na maioria dos países, quem já está na rotatória tem a preferência; as placas indicam exceções.",
+      "Escolha a faixa cedo: muitas vezes a externa para saídas próximas e a interna para as seguintes.",
+      "Dê seta antes da sua saída, atenção a ciclistas e pedestres, e dê outra volta se passar dela."
+     ],
+     "q": "Como você se sente nas rotatórias: tranquilo ou um pouco nervoso?",
+     "c": "Ache no mapa uma rotatória perto de você e planeje qual faixa usaria para cada saída."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Motorways versus scenic roads",
+     "g": "Decide when fast highways or slow back roads make the trip better.",
+     "p": [
+      "Motorways are quick and predictable, great for covering distance to reach the beautiful part.",
+      "Scenic roads are slower but bring villages, viewpoints and the real character of a region.",
+      "Mix both: use the fast road to get there, then switch to small roads where the views begin."
+     ],
+     "q": "Are you more of a get-there-fast traveller or a take-the-long-way traveller?",
+     "c": "Compare two routes between the same towns: the fastest and the most scenic, and note the time gap."
+    },
+    "de": {
+     "t": "Autobahn oder Panoramastraße?",
+     "g": "Entscheide, wann schnelle Autobahnen oder langsame Nebenstraßen die Reise schöner machen.",
+     "p": [
+      "Autobahnen sind schnell und berechenbar, ideal, um Strecke bis zum schönen Teil zu machen.",
+      "Panoramastraßen sind langsamer, bringen aber Dörfer, Aussichten und den echten Charakter einer Region.",
+      "Kombiniere beides: schnell hinfahren, dann auf kleine Straßen wechseln, wo die Aussichten beginnen."
+     ],
+     "q": "Bist du eher der Typ schnell ankommen oder der Typ lieber den langen Weg?",
+     "c": "Vergleiche zwei Routen zwischen denselben Orten, die schnellste und die schönste, und notiere den Zeitunterschied."
+    },
+    "es": {
+     "t": "Autopista o carretera panorámica",
+     "g": "Decide cuándo las autopistas rápidas o las carreteras secundarias hacen mejor el viaje.",
+     "p": [
+      "Las autopistas son rápidas y previsibles, ideales para recorrer distancia hasta la parte bonita.",
+      "Las carreteras panorámicas son lentas, pero traen pueblos, miradores y el carácter real de la región.",
+      "Combina ambas: llega por la vía rápida y cambia a carreteras pequeñas donde empiezan las vistas."
+     ],
+     "q": "¿Eres más de llegar rápido o de ir por el camino largo?",
+     "c": "Compara dos rutas entre los mismos pueblos, la más rápida y la más bonita, y anota la diferencia de tiempo."
+    },
+    "fr": {
+     "t": "Autoroute ou route panoramique ?",
+     "g": "Décide quand l'autoroute rapide ou les petites routes rendent le voyage meilleur.",
+     "p": [
+      "L'autoroute est rapide et prévisible, parfaite pour avaler la distance jusqu'à la belle partie.",
+      "Les routes panoramiques sont lentes, mais offrent villages, points de vue et le vrai caractère d'une région.",
+      "Combine les deux : l'autoroute pour arriver, puis les petites routes là où les paysages commencent."
+     ],
+     "q": "Tu es plutôt du genre à arriver vite ou à prendre le chemin des écoliers ?",
+     "c": "Compare deux trajets entre les mêmes villes, le plus rapide et le plus beau, et note l'écart de temps."
+    },
+    "it": {
+     "t": "Autostrada o strada panoramica?",
+     "g": "Decidi quando le autostrade veloci o le strade secondarie rendono il viaggio migliore.",
+     "p": [
+      "Le autostrade sono veloci e prevedibili, perfette per macinare chilometri fino alla parte bella.",
+      "Le strade panoramiche sono lente, ma regalano borghi, belvedere e il vero carattere di una regione.",
+      "Unisci le due: arriva con la strada veloce e passa alle stradine dove iniziano i panorami."
+     ],
+     "q": "Sei più il tipo che vuole arrivare in fretta o quello che sceglie la strada lunga?",
+     "c": "Confronta due percorsi tra le stesse città, il più veloce e il più bello, e annota la differenza di tempo."
+    },
+    "pt": {
+     "t": "Autoestrada ou estrada panorâmica?",
+     "g": "Decide quando as autoestradas rápidas ou as estradas secundárias tornam a viagem melhor.",
+     "p": [
+      "As autoestradas são rápidas e previsíveis, ótimas para fazer distância até à parte bonita.",
+      "As estradas panorâmicas são lentas, mas trazem aldeias, miradouros e o verdadeiro carácter da região.",
+      "Junta as duas: chega pela via rápida e muda para estradas pequenas onde começam as vistas."
+     ],
+     "q": "És mais de chegar depressa ou de ir pelo caminho mais longo?",
+     "c": "Compara dois percursos entre as mesmas localidades, o mais rápido e o mais bonito, e anota a diferença de tempo."
+    },
+    "pt_BR": {
+     "t": "Rodovia ou estrada cênica?",
+     "g": "Decida quando rodovias rápidas ou estradas vicinais deixam a viagem melhor.",
+     "p": [
+      "Rodovias são rápidas e previsíveis, ótimas para vencer distância até a parte bonita.",
+      "Estradas cênicas são mais lentas, mas trazem cidadezinhas, mirantes e o jeito real da região.",
+      "Misture as duas: chegue pela via rápida e troque para estradas menores onde começam as vistas."
+     ],
+     "q": "Você é mais de chegar rápido ou de ir pelo caminho mais longo?",
+     "c": "Compare duas rotas entre as mesmas cidades, a mais rápida e a mais bonita, e anote a diferença de tempo."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tolls, vignettes and road fees",
+     "g": "Learn the different ways countries charge for roads and how to prepare for them.",
+     "p": [
+      "Toll booths charge per stretch; some take cards or cash, others use electronic tags or plate cameras.",
+      "A vignette is a pass for a set period, bought before you use certain roads, often online.",
+      "Rules and payment systems change, so check official sources for each country on your route."
+     ],
+     "q": "Have you ever driven a road where you had to pay? How did it work?",
+     "c": "Pick one country you would like to drive in and find out on an official site how its road fees work."
+    },
+    "de": {
+     "t": "Maut, Vignetten und Gebühren",
+     "g": "Lerne die verschiedenen Arten kennen, wie Länder Straßengebühren erheben, und wie du dich vorbereitest.",
+     "p": [
+      "Mautstellen kassieren pro Abschnitt; manche nehmen Karte oder Bargeld, andere nutzen Boxen oder Kennzeichenkameras.",
+      "Eine Vignette gilt für einen festen Zeitraum und wird vor der Nutzung bestimmter Straßen gekauft, oft online.",
+      "Regeln und Zahlsysteme ändern sich, prüf also für jedes Land auf deiner Route offizielle Quellen."
+     ],
+     "q": "Bist du schon einmal eine gebührenpflichtige Straße gefahren? Wie lief das ab?",
+     "c": "Wähle ein Land, in dem du gern fahren würdest, und finde auf einer offiziellen Seite heraus, wie dort die Gebühren funktionieren."
+    },
+    "es": {
+     "t": "Peajes, viñetas y tasas",
+     "g": "Conoce las formas en que los países cobran por usar carreteras y cómo prepararte.",
+     "p": [
+      "Los peajes cobran por tramo; unos aceptan tarjeta o efectivo, otros usan dispositivos electrónicos o cámaras de matrícula.",
+      "Una viñeta es un pase para un periodo fijo que se compra antes de usar ciertas carreteras, a menudo en línea.",
+      "Las normas y los sistemas de pago cambian: consulta fuentes oficiales de cada país de tu ruta."
+     ],
+     "q": "¿Has conducido alguna vez por una carretera de pago? ¿Cómo funcionaba?",
+     "c": "Elige un país donde te gustaría conducir y averigua en una web oficial cómo funcionan sus tasas."
+    },
+    "fr": {
+     "t": "Péages, vignettes et redevances",
+     "g": "Découvre les façons dont les pays font payer les routes et comment t'y préparer.",
+     "p": [
+      "Les péages font payer par tronçon ; certains prennent carte ou espèces, d'autres un badge ou des caméras.",
+      "Une vignette est un droit de passage pour une durée fixe, acheté avant d'emprunter certaines routes, souvent en ligne.",
+      "Règles et modes de paiement changent : vérifie les sources officielles de chaque pays de ton trajet."
+     ],
+     "q": "As-tu déjà roulé sur une route payante ? Comment ça marchait ?",
+     "c": "Choisis un pays où tu aimerais conduire et cherche sur un site officiel comment fonctionnent ses péages."
+    },
+    "it": {
+     "t": "Pedaggi, vignette e tasse stradali",
+     "g": "Scopri i diversi modi in cui i paesi fanno pagare le strade e come prepararti.",
+     "p": [
+      "I caselli fanno pagare per tratta; alcuni accettano carta o contanti, altri dispositivi elettronici o telecamere.",
+      "La vignetta è un permesso per un periodo fisso, da comprare prima di usare certe strade, spesso online.",
+      "Regole e sistemi di pagamento cambiano: controlla le fonti ufficiali di ogni paese del percorso."
+     ],
+     "q": "Hai mai guidato su una strada a pagamento? Come funzionava?",
+     "c": "Scegli un paese dove vorresti guidare e scopri su un sito ufficiale come funzionano i suoi pedaggi."
+    },
+    "pt": {
+     "t": "Portagens, vinhetas e taxas",
+     "g": "Conhece as formas como os países cobram pelas estradas e como te preparares.",
+     "p": [
+      "As portagens cobram por troço; umas aceitam cartão ou dinheiro, outras usam dispositivos eletrónicos ou câmaras.",
+      "Uma vinheta é um passe por um período fixo, comprado antes de usares certas estradas, muitas vezes online.",
+      "As regras e formas de pagamento mudam: consulta fontes oficiais de cada país do teu percurso."
+     ],
+     "q": "Já conduziste numa estrada com portagem? Como funcionava?",
+     "c": "Escolhe um país onde gostarias de conduzir e descobre num site oficial como funcionam as taxas de lá."
+    },
+    "pt_BR": {
+     "t": "Pedágios, vinhetas e taxas",
+     "g": "Conheça as formas como os países cobram pelo uso das estradas e como se preparar.",
+     "p": [
+      "Pedágios cobram por trecho; alguns aceitam cartão ou dinheiro, outros usam tag eletrônica ou câmeras de placa.",
+      "Uma vinheta é um passe por um período fixo, comprado antes de usar certas estradas, muitas vezes online.",
+      "Regras e formas de pagamento mudam: confira fontes oficiais de cada país do seu roteiro."
+     ],
+     "q": "Você já dirigiu numa estrada com pedágio? Como funcionava?",
+     "c": "Escolha um país onde gostaria de dirigir e descubra num site oficial como funcionam as taxas de lá."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning fuel stops",
+     "g": "Use your range and a reserve to spot areas where fuel stations are far apart.",
+     "p": [
+      "Know your car's real range: how far it goes on a full tank or charge in normal driving.",
+      "Treat the last quarter of the tank as a reserve and refuel before it, not on the warning light.",
+      "In remote areas, villages and nights, stations can be rare or closed, so fill up when you can."
+     ],
+     "q": "Are you a fill-up-early person or a wait-for-the-warning-light person?",
+     "c": "Find the longest gap between fuel stations on a route you would like to drive."
+    },
+    "de": {
+     "t": "Tankstopps planen",
+     "g": "Nutze Reichweite und Reserve, um Gegenden mit weit auseinanderliegenden Tankstellen zu erkennen.",
+     "p": [
+      "Kenne die echte Reichweite deines Autos: wie weit es mit vollem Tank oder Akku normal fährt.",
+      "Betrachte das letzte Viertel als Reserve und tanke vorher, nicht erst bei der Warnleuchte.",
+      "In abgelegenen Gegenden, Dörfern und nachts sind Tankstellen selten oder zu, also tanke, wenn du kannst."
+     ],
+     "q": "Tankst du lieber früh, oder wartest du auf die Warnleuchte?",
+     "c": "Finde die größte Lücke zwischen Tankstellen auf einer Route, die du gern fahren würdest."
+    },
+    "es": {
+     "t": "Planificar repostajes",
+     "g": "Usa tu autonomía y una reserva para detectar zonas donde las gasolineras quedan lejos.",
+     "p": [
+      "Conoce la autonomía real de tu coche: cuánto recorre con el depósito o la batería llenos.",
+      "Trata el último cuarto del depósito como reserva y reposta antes, no al encenderse el testigo.",
+      "En zonas remotas, pueblos y de noche las gasolineras escasean o cierran: llena cuando puedas."
+     ],
+     "q": "¿Eres de repostar pronto o de esperar al testigo de reserva?",
+     "c": "Busca el tramo más largo sin gasolineras en una ruta que te gustaría hacer."
+    },
+    "fr": {
+     "t": "Prévoir les pleins",
+     "g": "Utilise ton autonomie et une réserve pour repérer les zones où les stations sont rares.",
+     "p": [
+      "Connais l'autonomie réelle de ta voiture : la distance avec un plein ou une charge complète.",
+      "Considère le dernier quart du réservoir comme réserve et fais le plein avant, pas au voyant.",
+      "Dans les zones isolées, les villages et la nuit, les stations sont rares ou fermées : remplis quand tu peux."
+     ],
+     "q": "Tu fais le plein tôt, ou tu attends que le voyant s'allume ?",
+     "c": "Trouve le plus long écart entre deux stations sur un trajet que tu aimerais faire."
+    },
+    "it": {
+     "t": "Pianificare i rifornimenti",
+     "g": "Usa autonomia e riserva per individuare le zone dove i distributori sono lontani.",
+     "p": [
+      "Conosci l'autonomia reale dell'auto: quanta strada fa con pieno o batteria carica guidando normalmente.",
+      "Considera l'ultimo quarto del serbatoio come riserva e fai il pieno prima, non alla spia.",
+      "In zone isolate, paesi e di notte i distributori sono rari o chiusi: fai il pieno quando puoi."
+     ],
+     "q": "Sei uno che fa il pieno presto o che aspetta la spia della riserva?",
+     "c": "Trova il tratto più lungo senza distributori su un percorso che vorresti fare."
+    },
+    "pt": {
+     "t": "Planear o abastecimento",
+     "g": "Usa a autonomia e uma reserva para identificar zonas onde as bombas ficam longe.",
+     "p": [
+      "Conhece a autonomia real do teu carro: quanto faz com o depósito ou a bateria cheios.",
+      "Trata o último quarto do depósito como reserva e abastece antes, não quando acende a luz.",
+      "Em zonas remotas, aldeias e à noite as bombas são raras ou fecham: abastece quando puderes."
+     ],
+     "q": "És de abastecer cedo ou de esperar pela luz da reserva?",
+     "c": "Encontra o maior troço sem bombas de combustível num percurso que gostarias de fazer."
+    },
+    "pt_BR": {
+     "t": "Planejando paradas para abastecer",
+     "g": "Use a autonomia e uma reserva para identificar regiões onde os postos ficam longe.",
+     "p": [
+      "Conheça a autonomia real do seu carro: quanto ele roda com tanque cheio ou bateria carregada.",
+      "Trate o último quarto do tanque como reserva e abasteça antes, não quando a luz acender.",
+      "Em regiões remotas, cidadezinhas e à noite os postos são raros ou fecham: abasteça quando puder."
+     ],
+     "q": "Você é de abastecer cedo ou de esperar a luz da reserva?",
+     "c": "Ache o maior trecho sem postos numa rota que você gostaria de fazer."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The two-hour break habit",
+     "g": "See why regular stops keep you alert and how to make them pleasant.",
+     "p": [
+      "Many road safety organisations suggest a break of around 15 minutes at least every two hours.",
+      "Get out of the car: walk, stretch, drink water and look into the distance to rest your eyes.",
+      "Turn breaks into treats: a café, a viewpoint, a picnic table or a short walk in a village."
+     ],
+     "q": "What would be your perfect quick break stop on a long drive?",
+     "c": "On a route you like, mark a nice break spot about every two hours of driving."
+    },
+    "de": {
+     "t": "Alle zwei Stunden Pause",
+     "g": "Sieh, warum regelmäßige Stopps dich wach halten und wie du sie angenehm gestaltest.",
+     "p": [
+      "Viele Verkehrssicherheitsorganisationen empfehlen spätestens alle zwei Stunden etwa 15 Minuten Pause.",
+      "Steig aus: geh ein paar Schritte, dehne dich, trink Wasser und schau in die Ferne, um die Augen zu entspannen.",
+      "Mach Pausen zum Genuss: ein Café, ein Aussichtspunkt, ein Picknicktisch oder ein kurzer Dorfspaziergang."
+     ],
+     "q": "Wie sähe dein perfekter kurzer Pausenstopp auf einer langen Fahrt aus?",
+     "c": "Markiere auf einer Lieblingsroute etwa alle zwei Fahrstunden einen schönen Pausenort."
+    },
+    "es": {
+     "t": "Una pausa cada dos horas",
+     "g": "Descubre por qué las paradas regulares te mantienen alerta y cómo hacerlas agradables.",
+     "p": [
+      "Muchas organizaciones de seguridad vial aconsejan parar unos 15 minutos al menos cada dos horas.",
+      "Sal del coche: camina, estírate, bebe agua y mira a lo lejos para descansar la vista.",
+      "Convierte las pausas en premios: un café, un mirador, una mesa de picnic o un paseo por un pueblo."
+     ],
+     "q": "¿Cómo sería tu parada rápida perfecta en un viaje largo?",
+     "c": "En una ruta que te guste, marca un buen sitio para parar cada dos horas de conducción."
+    },
+    "fr": {
+     "t": "Une pause toutes les deux heures",
+     "g": "Comprends pourquoi des arrêts réguliers te gardent alerte et comment les rendre agréables.",
+     "p": [
+      "Beaucoup d'organismes de sécurité routière conseillent une pause d'environ 15 minutes au moins toutes les deux heures.",
+      "Sors de la voiture : marche, étire-toi, bois de l'eau et regarde au loin pour reposer tes yeux.",
+      "Fais des pauses un plaisir : un café, un belvédère, une table de pique-nique ou un tour dans un village."
+     ],
+     "q": "À quoi ressemblerait ta pause idéale sur un long trajet ?",
+     "c": "Sur un trajet que tu aimes, repère un bel endroit pour une pause toutes les deux heures de route."
+    },
+    "it": {
+     "t": "Una pausa ogni due ore",
+     "g": "Scopri perché le soste regolari ti tengono vigile e come renderle piacevoli.",
+     "p": [
+      "Molte organizzazioni per la sicurezza stradale consigliano una pausa di circa 15 minuti almeno ogni due ore.",
+      "Scendi dall'auto: cammina, fai stretching, bevi acqua e guarda lontano per riposare gli occhi.",
+      "Trasforma le pause in premi: un bar, un belvedere, un tavolo da picnic o due passi in un borgo."
+     ],
+     "q": "Come sarebbe la tua sosta veloce perfetta in un lungo viaggio?",
+     "c": "Su un percorso che ti piace, segna un bel posto per una pausa circa ogni due ore di guida."
+    },
+    "pt": {
+     "t": "Uma pausa a cada duas horas",
+     "g": "Vê porque paragens regulares te mantêm atento e como torná-las agradáveis.",
+     "p": [
+      "Muitas organizações de segurança rodoviária aconselham uma pausa de cerca de 15 minutos pelo menos a cada duas horas.",
+      "Sai do carro: caminha, alonga, bebe água e olha ao longe para descansar os olhos.",
+      "Torna as pausas num mimo: um café, um miradouro, uma mesa de piquenique ou uma volta numa aldeia."
+     ],
+     "q": "Como seria a tua paragem rápida perfeita numa viagem longa?",
+     "c": "Num percurso de que gostes, marca um bom sítio para parar a cada duas horas de condução."
+    },
+    "pt_BR": {
+     "t": "Uma pausa a cada duas horas",
+     "g": "Veja por que paradas regulares mantêm você alerta e como deixá-las gostosas.",
+     "p": [
+      "Muitas organizações de segurança viária sugerem uma pausa de uns 15 minutos pelo menos a cada duas horas.",
+      "Saia do carro: caminhe, alongue, beba água e olhe para longe para descansar os olhos.",
+      "Transforme as pausas em prêmio: um café, um mirante, uma mesa de piquenique ou uma volta numa cidadezinha."
+     ],
+     "q": "Como seria sua parada rápida perfeita numa viagem longa?",
+     "c": "Numa rota que você curte, marque um lugar legal para parar a cada duas horas de estrada."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recognising tiredness",
+     "g": "Spot the early signs of fatigue and know simple ways to stay fresh behind the wheel.",
+     "p": [
+      "Warning signs: yawning, heavy eyes, drifting in the lane, missing signs or not remembering the last kilometres.",
+      "Open windows and loud music do not fix tiredness; the only real cure is to stop and rest.",
+      "Start the day rested, avoid heavy meals before driving and plan to arrive before you are exhausted."
+     ],
+     "q": "What do you usually notice first when you start to feel tired?",
+     "c": "Write your personal stop rule, for example: if I yawn twice, I take a break at the next safe place."
+    },
+    "de": {
+     "t": "Müdigkeit erkennen",
+     "g": "Erkenne frühe Anzeichen von Müdigkeit und kenne einfache Wege, am Steuer frisch zu bleiben.",
+     "p": [
+      "Warnzeichen: Gähnen, schwere Lider, Schlingern in der Spur, übersehene Schilder oder Erinnerungslücken.",
+      "Offene Fenster und laute Musik helfen nicht gegen Müdigkeit; nur Anhalten und Ausruhen hilft wirklich.",
+      "Starte ausgeruht, meide schwere Mahlzeiten vor der Fahrt und plane, anzukommen, bevor du erschöpft bist."
+     ],
+     "q": "Was bemerkst du meist als Erstes, wenn du müde wirst?",
+     "c": "Schreib deine persönliche Stopp-Regel, etwa: Wenn ich zweimal gähne, halte ich am nächsten sicheren Ort."
+    },
+    "es": {
+     "t": "Reconocer el cansancio",
+     "g": "Detecta las primeras señales de fatiga y conoce formas sencillas de mantenerte fresco al volante.",
+     "p": [
+      "Señales de alerta: bostezos, ojos pesados, salirte del carril, no ver señales u olvidar los últimos kilómetros.",
+      "Abrir la ventanilla o subir la música no quita el cansancio; la única solución real es parar y descansar.",
+      "Empieza el día descansado, evita comidas pesadas antes de conducir y planea llegar antes de agotarte."
+     ],
+     "q": "¿Qué notas normalmente primero cuando empiezas a estar cansado?",
+     "c": "Escribe tu regla personal de parada, por ejemplo: si bostezo dos veces, paro en el siguiente lugar seguro."
+    },
+    "fr": {
+     "t": "Reconnaître la fatigue",
+     "g": "Repère les premiers signes de fatigue et connais des moyens simples de rester frais au volant.",
+     "p": [
+      "Signaux d'alerte : bâillements, paupières lourdes, écarts dans la voie, panneaux ratés, kilomètres oubliés.",
+      "Fenêtre ouverte et musique forte ne chassent pas la fatigue ; seuls l'arrêt et le repos la soignent vraiment.",
+      "Pars reposé, évite les repas lourds avant de conduire et prévois d'arriver avant d'être épuisé."
+     ],
+     "q": "Que remarques-tu en premier quand la fatigue arrive ?",
+     "c": "Écris ta règle d'arrêt personnelle, par exemple : si je bâille deux fois, je m'arrête au prochain endroit sûr."
+    },
+    "it": {
+     "t": "Riconoscere la stanchezza",
+     "g": "Individua i primi segnali di stanchezza e scopri modi semplici per restare lucido alla guida.",
+     "p": [
+      "Segnali d'allarme: sbadigli, occhi pesanti, sbandare nella corsia, cartelli persi o chilometri dimenticati.",
+      "Finestrino aperto e musica alta non curano la stanchezza: l'unico rimedio vero è fermarsi e riposare.",
+      "Parti riposato, evita pasti pesanti prima di guidare e pianifica di arrivare prima di essere esausto."
+     ],
+     "q": "Cosa noti di solito per primo quando inizi a sentirti stanco?",
+     "c": "Scrivi la tua regola di sosta, per esempio: se sbadiglio due volte, mi fermo nel primo posto sicuro."
+    },
+    "pt": {
+     "t": "Reconhecer o cansaço",
+     "g": "Identifica os primeiros sinais de fadiga e conhece formas simples de te manteres fresco ao volante.",
+     "p": [
+      "Sinais de alerta: bocejos, olhos pesados, sair da faixa, falhar sinais ou não lembrar os últimos quilómetros.",
+      "Abrir a janela ou pôr a música alta não resolve o cansaço; a única solução real é parar e descansar.",
+      "Começa o dia descansado, evita refeições pesadas antes de conduzir e planeia chegar antes de estares exausto."
+     ],
+     "q": "O que notas normalmente primeiro quando começas a ficar cansado?",
+     "c": "Escreve a tua regra de paragem, por exemplo: se bocejar duas vezes, paro no próximo sítio seguro."
+    },
+    "pt_BR": {
+     "t": "Reconhecendo o cansaço",
+     "g": "Perceba os primeiros sinais de fadiga e conheça jeitos simples de se manter alerta ao volante.",
+     "p": [
+      "Sinais de alerta: bocejos, olhos pesados, sair da faixa, perder placas ou não lembrar os últimos quilômetros.",
+      "Abrir a janela ou aumentar a música não resolve o cansaço; a única solução real é parar e descansar.",
+      "Comece o dia descansado, evite refeições pesadas antes de dirigir e planeje chegar antes de ficar exausto."
+     ],
+     "q": "O que você costuma notar primeiro quando começa a ficar cansado?",
+     "c": "Escreva sua regra pessoal de parada, por exemplo: se eu bocejar duas vezes, paro no próximo lugar seguro."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing the driving",
+     "g": "Rotate drivers, check insurance rules and keep everyone rested on the trip.",
+     "p": [
+      "Swapping drivers at each break keeps both fresh and lets everyone enjoy the views.",
+      "Every driver must be allowed by the insurance or rental contract; extra drivers often need registering.",
+      "The passenger has a job too: navigate, spot signs, pass snacks and help the driver stay alert."
+     ],
+     "q": "Do you prefer to be the driver or the co-pilot, and why?",
+     "c": "Write a simple driving rota for a six-hour day shared by two people."
+    },
+    "de": {
+     "t": "Das Fahren teilen",
+     "g": "Wechselt euch beim Fahren ab, prüft die Versicherungsregeln und haltet alle ausgeruht.",
+     "p": [
+      "Ein Fahrerwechsel bei jeder Pause hält beide frisch und lässt alle die Landschaft genießen.",
+      "Jeder Fahrer muss laut Versicherung oder Mietvertrag erlaubt sein; Zusatzfahrer muss man oft eintragen.",
+      "Auch Beifahrer haben einen Job: navigieren, Schilder sehen, Snacks reichen und den Fahrer wach halten."
+     ],
+     "q": "Bist du lieber Fahrer oder Co-Pilot, und warum?",
+     "c": "Schreib einen einfachen Fahrplan für einen Sechs-Stunden-Tag, den sich zwei Personen teilen."
+    },
+    "es": {
+     "t": "Compartir la conducción",
+     "g": "Turnaos al volante, revisa las normas del seguro y mantened a todos descansados.",
+     "p": [
+      "Cambiar de conductor en cada pausa mantiene frescos a ambos y deja que todos disfruten del paisaje.",
+      "Cada conductor debe estar cubierto por el seguro o el contrato de alquiler; los adicionales suelen registrarse.",
+      "El copiloto también trabaja: navega, ve señales, pasa tentempiés y ayuda al conductor a seguir alerta."
+     ],
+     "q": "¿Prefieres conducir o ser el copiloto, y por qué?",
+     "c": "Escribe un turno sencillo de conducción para un día de seis horas entre dos personas."
+    },
+    "fr": {
+     "t": "Partager la conduite",
+     "g": "Alternez au volant, vérifie les règles d'assurance et gardez tout le monde reposé.",
+     "p": [
+      "Changer de conducteur à chaque pause garde les deux en forme et permet à chacun de profiter du paysage.",
+      "Chaque conducteur doit être autorisé par l'assurance ou le contrat ; les conducteurs en plus doivent souvent être déclarés.",
+      "Le passager a aussi un rôle : guider, repérer les panneaux, passer les en-cas et aider à rester vigilant."
+     ],
+     "q": "Tu préfères conduire ou être copilote, et pourquoi ?",
+     "c": "Écris un planning de conduite simple pour une journée de six heures à deux."
+    },
+    "it": {
+     "t": "Dividersi la guida",
+     "g": "Alternatevi alla guida, controlla le regole dell'assicurazione e restate tutti riposati.",
+     "p": [
+      "Cambiare guidatore a ogni pausa mantiene freschi entrambi e fa godere il paesaggio a tutti.",
+      "Ogni guidatore deve essere coperto da assicurazione o contratto; i guidatori aggiuntivi vanno spesso registrati.",
+      "Anche il passeggero ha un ruolo: navigare, notare i cartelli, passare spuntini e tenere sveglio chi guida."
+     ],
+     "q": "Preferisci guidare o fare il copilota, e perché?",
+     "c": "Scrivi un semplice turno di guida per una giornata di sei ore divisa tra due persone."
+    },
+    "pt": {
+     "t": "Partilhar a condução",
+     "g": "Revezem-se ao volante, confirma as regras do seguro e mantenham todos descansados.",
+     "p": [
+      "Trocar de condutor em cada pausa mantém ambos frescos e deixa todos aproveitar a paisagem.",
+      "Cada condutor tem de estar coberto pelo seguro ou contrato de aluguer; condutores extra costumam ter de ser registados.",
+      "O pendura também trabalha: navega, vê sinais, passa lanches e ajuda o condutor a manter-se atento."
+     ],
+     "q": "Preferes conduzir ou ir ao lado, e porquê?",
+     "c": "Escreve uma escala simples de condução para um dia de seis horas a dois."
+    },
+    "pt_BR": {
+     "t": "Revezando a direção",
+     "g": "Revezem ao volante, confira as regras do seguro e mantenham todo mundo descansado.",
+     "p": [
+      "Trocar de motorista em cada pausa mantém os dois descansados e deixa todos curtirem a paisagem.",
+      "Cada motorista precisa estar coberto pelo seguro ou contrato; motorista adicional geralmente precisa ser registrado.",
+      "O carona também trabalha: navega, vê placas, passa lanches e ajuda o motorista a ficar alerta."
+     ],
+     "q": "Você prefere dirigir ou ir de copiloto, e por quê?",
+     "c": "Escreva uma escala simples de direção para um dia de seis horas dividido entre duas pessoas."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Driving in the rain",
+     "g": "Adjust speed, distance, lights and visibility when the road gets wet.",
+     "p": [
+      "Slow down and double your following distance, since stopping takes much longer on wet roads.",
+      "Turn on dipped headlights so others see you, and keep wipers and windows clean.",
+      "If water builds up and steering feels light, ease off the accelerator gently and do not brake hard."
+     ],
+     "q": "How do you feel driving in the rain: calm, cautious or nervous?",
+     "c": "Check the wiper blades of a car you use for cracks or streaks."
+    },
+    "de": {
+     "t": "Fahren bei Regen",
+     "g": "Pass Tempo, Abstand, Licht und Sicht an, wenn die Straße nass wird.",
+     "p": [
+      "Fahr langsamer und verdopple den Abstand, denn der Bremsweg wird auf nasser Straße viel länger.",
+      "Schalte das Abblendlicht ein, damit andere dich sehen, und halte Wischer und Scheiben sauber.",
+      "Sammelt sich Wasser und die Lenkung wird leicht, geh sanft vom Gas und bremse nicht abrupt."
+     ],
+     "q": "Wie fühlst du dich beim Fahren im Regen: ruhig, vorsichtig oder nervös?",
+     "c": "Prüf die Wischerblätter eines Autos, das du nutzt, auf Risse oder Schlieren."
+    },
+    "es": {
+     "t": "Conducir con lluvia",
+     "g": "Ajusta velocidad, distancia, luces y visibilidad cuando la carretera se moja.",
+     "p": [
+      "Reduce la velocidad y duplica la distancia de seguridad: frenar en mojado cuesta mucho más.",
+      "Enciende las luces de cruce para que te vean y mantén limpios limpiaparabrisas y cristales.",
+      "Si se acumula agua y la dirección se nota ligera, levanta el pie suavemente y no frenes de golpe."
+     ],
+     "q": "¿Cómo te sientes conduciendo con lluvia: tranquilo, prudente o nervioso?",
+     "c": "Revisa las escobillas del limpiaparabrisas de un coche que uses en busca de grietas o marcas."
+    },
+    "fr": {
+     "t": "Conduire sous la pluie",
+     "g": "Adapte vitesse, distance, feux et visibilité quand la route devient mouillée.",
+     "p": [
+      "Ralentis et double ta distance de sécurité : freiner sur route mouillée prend bien plus de temps.",
+      "Allume les feux de croisement pour être vu, et garde essuie-glaces et vitres propres.",
+      "Si l'eau s'accumule et que la direction devient légère, lève doucement le pied sans freiner fort."
+     ],
+     "q": "Comment te sens-tu sous la pluie au volant : calme, prudent ou tendu ?",
+     "c": "Vérifie les balais d'essuie-glace d'une voiture que tu utilises : fissures ou traces ?"
+    },
+    "it": {
+     "t": "Guidare sotto la pioggia",
+     "g": "Adatta velocità, distanza, luci e visibilità quando la strada si bagna.",
+     "p": [
+      "Rallenta e raddoppia la distanza di sicurezza: sul bagnato frenare richiede molto più spazio.",
+      "Accendi gli anabbaglianti per farti vedere e tieni puliti tergicristalli e vetri.",
+      "Se si accumula acqua e lo sterzo diventa leggero, rilascia dolcemente l'acceleratore senza frenare forte."
+     ],
+     "q": "Come ti senti a guidare sotto la pioggia: tranquillo, prudente o nervoso?",
+     "c": "Controlla le spazzole dei tergicristalli di un'auto che usi: crepe o righe?"
+    },
+    "pt": {
+     "t": "Conduzir à chuva",
+     "g": "Ajusta a velocidade, a distância, as luzes e a visibilidade quando a estrada fica molhada.",
+     "p": [
+      "Abranda e duplica a distância de segurança: travar em piso molhado demora muito mais.",
+      "Liga os médios para te verem e mantém as escovas e os vidros limpos.",
+      "Se a água se acumular e a direção ficar leve, tira o pé do acelerador com suavidade e não traves a fundo."
+     ],
+     "q": "Como te sentes a conduzir à chuva: calmo, cauteloso ou nervoso?",
+     "c": "Verifica as escovas do limpa-vidros de um carro que uses: fissuras ou riscos?"
+    },
+    "pt_BR": {
+     "t": "Dirigindo na chuva",
+     "g": "Ajuste velocidade, distância, faróis e visibilidade quando a pista fica molhada.",
+     "p": [
+      "Reduza a velocidade e dobre a distância do carro da frente: frear no molhado leva muito mais tempo.",
+      "Acenda o farol baixo para ser visto e mantenha palhetas e vidros limpos.",
+      "Se a água acumular e o volante ficar leve, tire o pé do acelerador com suavidade e não freie bruscamente."
+     ],
+     "q": "Como você se sente dirigindo na chuva: calmo, cauteloso ou nervoso?",
+     "c": "Confira as palhetas do limpador de um carro que você usa: rachaduras ou marcas?"
+    }
+   }
+  }
+ ]
+}

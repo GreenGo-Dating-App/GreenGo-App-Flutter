@@ -1,0 +1,835 @@
+{
+ "topic": "local_food_travel",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Visiting a food market",
+     "g": "Learn how food markets work, when to go and how to explore them.",
+     "p": [
+      "Morning is usually best: produce is freshest, vendors are lively and many stalls close by early afternoon.",
+      "Walk one full lap before buying, to see what is in season and where the locals queue.",
+      "Many markets have small counters cooking food on the spot, perfect for an early lunch among residents."
+     ],
+     "q": "Is there a market in your town that you love, and what do you buy there?",
+     "c": "Find the most famous food market of a city you would like to visit and note one thing it is known for."
+    },
+    "de": {
+     "t": "Einen Lebensmittelmarkt besuchen",
+     "g": "Lerne, wie Märkte funktionieren, wann du hingehst und wie du sie erkundest.",
+     "p": [
+      "Der Morgen ist meist ideal: Die Ware ist am frischesten, die Händler munter, viele Stände schließen früh.",
+      "Dreh erst eine ganze Runde, bevor du kaufst, um zu sehen, was Saison hat und wo Einheimische anstehen.",
+      "Viele Märkte haben kleine Theken, die frisch kochen: perfekt für ein frühes Mittagessen unter Einheimischen."
+     ],
+     "q": "Gibt es in deiner Stadt einen Markt, den du liebst, und was kaufst du dort?",
+     "c": "Finde den bekanntesten Markt einer Wunschstadt und notiere, wofür er berühmt ist."
+    },
+    "es": {
+     "t": "Visitar un mercado de abastos",
+     "g": "Aprende cómo funcionan los mercados, cuándo ir y cómo recorrerlos.",
+     "p": [
+      "La mañana suele ser lo mejor: el producto está más fresco, hay ambiente y muchos puestos cierran pronto.",
+      "Da una vuelta completa antes de comprar para ver qué es de temporada y dónde hace cola la gente local.",
+      "Muchos mercados tienen barras que cocinan al momento, perfectas para un almuerzo temprano entre vecinos."
+     ],
+     "q": "¿Hay algún mercado en tu ciudad que te encante? ¿Qué compras allí?",
+     "c": "Busca el mercado más famoso de una ciudad que quieras visitar y anota algo por lo que es conocido."
+    },
+    "fr": {
+     "t": "Visiter un marché alimentaire",
+     "g": "Apprends comment fonctionnent les marchés, quand y aller et comment les explorer.",
+     "p": [
+      "Le matin est souvent idéal : produits plus frais, marchands en forme, et beaucoup d'étals ferment tôt.",
+      "Fais un tour complet avant d'acheter pour voir ce qui est de saison et où les habitants font la queue.",
+      "Beaucoup de marchés ont de petits comptoirs qui cuisinent sur place, parfaits pour un déjeuner parmi les habitants."
+     ],
+     "q": "Y a-t-il un marché que tu adores près de chez toi, et qu'y achètes-tu ?",
+     "c": "Trouve le marché le plus célèbre d'une ville qui te tente et note sa spécialité."
+    },
+    "it": {
+     "t": "Visitare un mercato alimentare",
+     "g": "Impara come funzionano i mercati, quando andarci e come esplorarli.",
+     "p": [
+      "La mattina è di solito l'ideale: prodotti più freschi, venditori vivaci e molti banchi chiudono presto.",
+      "Fai un giro completo prima di comprare, per vedere cosa è di stagione e dove fa la fila la gente del posto.",
+      "Molti mercati hanno banconi che cucinano al momento, perfetti per un pranzo presto tra i residenti."
+     ],
+     "q": "C'è un mercato nella tua città che ami? Cosa ci compri?",
+     "c": "Trova il mercato più famoso di una città che vorresti visitare e annota per cosa è noto."
+    },
+    "pt": {
+     "t": "Visitar um mercado de comida",
+     "g": "Aprende como funcionam os mercados, quando ir e como explorá-los.",
+     "p": [
+      "De manhã costuma ser melhor: produtos mais frescos, vendedores animados e muitas bancas fecham cedo.",
+      "Dá uma volta completa antes de comprar para ver o que é da época e onde os locais fazem fila.",
+      "Muitos mercados têm balcões que cozinham na hora, perfeitos para um almoço cedo entre os residentes."
+     ],
+     "q": "Há algum mercado na tua cidade de que gostes muito? O que compras lá?",
+     "c": "Descobre o mercado mais famoso de uma cidade que queres visitar e anota pelo que é conhecido."
+    },
+    "pt_BR": {
+     "t": "Visitar um mercado de comida",
+     "g": "Aprenda como funcionam os mercados, quando ir e como explorar cada um.",
+     "p": [
+      "De manhã costuma ser melhor: produtos mais frescos, feirantes animados e muitas bancas fecham cedo.",
+      "Dê uma volta inteira antes de comprar para ver o que é da estação e onde os moradores fazem fila.",
+      "Muitos mercados têm balcões que cozinham na hora, perfeitos para um almoço cedo no meio dos moradores."
+     ],
+     "q": "Tem algum mercado na sua cidade que você ama? O que você compra lá?",
+     "c": "Descubra o mercado mais famoso de uma cidade que você quer visitar e anote pelo que ele é conhecido."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Market etiquette",
+     "g": "Learn the polite way to touch, taste and buy at a market.",
+     "p": [
+      "Ask before touching produce: in many markets the vendor picks the fruit for you, and that is part of the service.",
+      "Accept a tasting with thanks when offered, but avoid helping yourself without a nod from the seller.",
+      "Buying small amounts is welcome, and asking how a fruit is eaten often starts a lovely chat."
+     ],
+     "q": "Have you ever had a nice conversation with a market vendor?",
+     "c": "Learn how to say may I taste? and just a little, please in one language today."
+    },
+    "de": {
+     "t": "Benimm auf dem Markt",
+     "g": "Lerne, wie man auf dem Markt höflich anfasst, probiert und kauft.",
+     "p": [
+      "Frag, bevor du Ware anfasst: Auf vielen Märkten sucht der Händler das Obst für dich aus, das gehört zum Service.",
+      "Nimm angebotene Kostproben dankend an, bedien dich aber nicht ohne ein Nicken des Verkäufers.",
+      "Kleine Mengen sind willkommen, und die Frage, wie man eine Frucht isst, beginnt oft ein schönes Gespräch."
+     ],
+     "q": "Hattest du schon mal ein nettes Gespräch mit einem Markthändler?",
+     "c": "Lerne heute, wie man darf ich probieren? und nur ein bisschen, bitte in einer Sprache sagt."
+    },
+    "es": {
+     "t": "Etiqueta en el mercado",
+     "g": "Aprende la forma amable de tocar, probar y comprar en un mercado.",
+     "p": [
+      "Pregunta antes de tocar el producto: en muchos mercados el vendedor elige la fruta por ti y es parte del servicio.",
+      "Acepta con gracias una degustación cuando te la ofrezcan, pero no te sirvas sin una señal del vendedor.",
+      "Comprar poca cantidad es bienvenido, y preguntar cómo se come una fruta suele abrir una charla preciosa."
+     ],
+     "q": "¿Alguna vez tuviste una conversación bonita con alguien en un puesto del mercado?",
+     "c": "Aprende hoy a decir ¿puedo probar? y solo un poquito, por favor en un idioma."
+    },
+    "fr": {
+     "t": "Le savoir-vivre au marché",
+     "g": "Apprends la manière polie de toucher, goûter et acheter au marché.",
+     "p": [
+      "Demande avant de toucher : sur bien des marchés, c'est le marchand qui choisit les fruits pour toi, ça fait partie du service.",
+      "Accepte une dégustation avec un merci quand on te l'offre, mais ne te sers pas sans l'accord du vendeur.",
+      "Acheter de petites quantités est bienvenu, et demander comment se mange un fruit lance souvent une belle discussion."
+     ],
+     "q": "As-tu déjà eu une conversation sympa avec un marchand ?",
+     "c": "Apprends aujourd'hui à dire je peux goûter ? et juste un peu, s'il vous plaît dans une langue."
+    },
+    "it": {
+     "t": "Il galateo al mercato",
+     "g": "Impara il modo cortese di toccare, assaggiare e comprare al mercato.",
+     "p": [
+      "Chiedi prima di toccare: in molti mercati è il venditore a scegliere la frutta per te, fa parte del servizio.",
+      "Accetta con un grazie un assaggio quando te lo offrono, ma non servirti senza un cenno del venditore.",
+      "Comprare piccole quantità è ben accetto, e chiedere come si mangia un frutto spesso apre una bella chiacchierata."
+     ],
+     "q": "Ti è mai capitato di fare una bella chiacchierata con un venditore al mercato?",
+     "c": "Impara oggi a dire posso assaggiare? e solo un pochino, per favore in una lingua."
+    },
+    "pt": {
+     "t": "Etiqueta no mercado",
+     "g": "Aprende a forma educada de tocar, provar e comprar num mercado.",
+     "p": [
+      "Pergunta antes de tocar nos produtos: em muitos mercados é o vendedor que escolhe a fruta por ti, faz parte do serviço.",
+      "Aceita uma prova com um obrigado quando ta oferecem, mas não te sirvas sem um sinal do vendedor.",
+      "Comprar pouca quantidade é bem-vindo, e perguntar como se come uma fruta começa muitas vezes uma conversa ótima."
+     ],
+     "q": "Já tiveste uma conversa simpática com um vendedor no mercado?",
+     "c": "Aprende hoje a dizer posso provar? e só um bocadinho, por favor numa língua."
+    },
+    "pt_BR": {
+     "t": "Etiqueta no mercado",
+     "g": "Aprenda o jeito educado de tocar, provar e comprar em um mercado.",
+     "p": [
+      "Pergunte antes de tocar nos produtos: em muitos mercados o próprio vendedor escolhe a fruta para você, faz parte.",
+      "Aceite uma provinha com um obrigado quando oferecerem, mas não se sirva sem um sinal do vendedor.",
+      "Comprar pouquinho é bem-vindo, e perguntar como se come uma fruta muitas vezes começa uma ótima conversa."
+     ],
+     "q": "Você já teve uma conversa gostosa com um feirante?",
+     "c": "Aprenda hoje a dizer posso provar? e só um pouquinho, por favor em um idioma."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bargaining with a smile",
+     "g": "Learn where haggling is normal and how to do it respectfully.",
+     "p": [
+      "Haggling is part of the fun in many souks, bazaars and street markets, but not in supermarkets or fixed-price shops.",
+      "Start with a warm greeting, show real interest, offer a fair counter-price and stay relaxed and friendly.",
+      "Food often has a fair set price already, so bargain lightly and remember a small amount means more to the vendor."
+     ],
+     "q": "Do you enjoy bargaining, or does it make you uncomfortable?",
+     "c": "Practise a friendly bargaining line in English or another language, like could you do a little better?"
+    },
+    "de": {
+     "t": "Feilschen mit einem Lächeln",
+     "g": "Lerne, wo Handeln üblich ist und wie du es respektvoll machst.",
+     "p": [
+      "Auf vielen Souks, Basaren und Straßenmärkten gehört Handeln zum Spaß, im Supermarkt oder Laden mit Festpreisen nicht.",
+      "Beginne mit einem herzlichen Gruß, zeige echtes Interesse, nenne einen fairen Gegenpreis und bleib locker.",
+      "Lebensmittel haben oft schon faire Preise: Handle nur sanft, denn eine Kleinigkeit bedeutet dem Händler mehr."
+     ],
+     "q": "Feilschst du gern, oder ist es dir eher unangenehm?",
+     "c": "Übe einen freundlichen Satz zum Handeln in einer Sprache, etwa geht da noch ein bisschen was?"
+    },
+    "es": {
+     "t": "Regatear con una sonrisa",
+     "g": "Aprende dónde es normal regatear y cómo hacerlo con respeto.",
+     "p": [
+      "Regatear es parte de la diversión en muchos zocos, bazares y mercadillos, pero no en supermercados ni tiendas de precio fijo.",
+      "Empieza con un saludo cálido, muestra interés real, ofrece un precio justo y mantente relajado y amable.",
+      "La comida suele tener ya un precio justo: regatea poco y recuerda que una pequeña cantidad significa más para el vendedor."
+     ],
+     "q": "¿Disfrutas regateando o te resulta incómodo?",
+     "c": "Practica una frase amable para regatear en algún idioma, como ¿me lo deja un poco mejor?"
+    },
+    "fr": {
+     "t": "Marchander avec le sourire",
+     "g": "Apprends où le marchandage est normal et comment le pratiquer avec respect.",
+     "p": [
+      "Marchander fait partie du jeu dans bien des souks, bazars et marchés, mais pas au supermarché ni en boutique à prix fixe.",
+      "Commence par un salut chaleureux, montre un vrai intérêt, propose un prix juste et reste détendu et aimable.",
+      "La nourriture a souvent déjà un prix juste : marchande peu, car une petite somme compte davantage pour le vendeur."
+     ],
+     "q": "Aimes-tu marchander, ou cela te met-il mal à l'aise ?",
+     "c": "Entraîne-toi à une phrase aimable pour marchander, comme vous pouvez faire un petit effort ?"
+    },
+    "it": {
+     "t": "Contrattare con il sorriso",
+     "g": "Impara dove è normale contrattare e come farlo con rispetto.",
+     "p": [
+      "Contrattare fa parte del divertimento in molti suk, bazar e mercati, ma non al supermercato o nei negozi a prezzo fisso.",
+      "Inizia con un saluto caloroso, mostra vero interesse, proponi un prezzo giusto e resta rilassato e cordiale.",
+      "Il cibo spesso ha già un prezzo onesto: contratta poco e ricorda che una piccola cifra conta di più per il venditore."
+     ],
+     "q": "Ti piace contrattare, o ti mette a disagio?",
+     "c": "Esercitati con una frase gentile per contrattare, come può farmi un piccolo sconto?"
+    },
+    "pt": {
+     "t": "Regatear com um sorriso",
+     "g": "Aprende onde regatear é normal e como fazê-lo com respeito.",
+     "p": [
+      "Regatear faz parte da diversão em muitos souks, bazares e mercados de rua, mas não em supermercados nem lojas de preço fixo.",
+      "Começa com um cumprimento caloroso, mostra interesse verdadeiro, propõe um preço justo e mantém-te descontraído.",
+      "A comida costuma já ter um preço justo: regateia pouco e lembra-te de que um valor pequeno conta mais para o vendedor."
+     ],
+     "q": "Gostas de regatear, ou deixa-te pouco à vontade?",
+     "c": "Pratica uma frase simpática para regatear, como consegue fazer um preço um pouco melhor?"
+    },
+    "pt_BR": {
+     "t": "Pechinchar com um sorriso",
+     "g": "Aprenda onde pechinchar é normal e como fazer isso com respeito.",
+     "p": [
+      "Pechinchar faz parte da diversão em muitos souks, bazares e feiras, mas não em supermercados nem lojas de preço fixo.",
+      "Comece com um cumprimento caloroso, mostre interesse de verdade, ofereça um preço justo e fique tranquilo e simpático.",
+      "Comida muitas vezes já tem preço justo: pechinche pouco e lembre que um valor pequeno vale mais para o vendedor."
+     ],
+     "q": "Você gosta de pechinchar ou fica sem graça?",
+     "c": "Pratique uma frase simpática para pechinchar, como dá para fazer um precinho melhor?"
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seasonal eating while travelling",
+     "g": "Understand why local food changes with the seasons and how to follow it on your trip.",
+     "p": [
+      "Seasonal produce is at its tastiest and is what local cooks celebrate, from spring asparagus to autumn mushrooms.",
+      "Many places have seasonal specialities, like white truffles in Piedmont's autumn or mango season in South Asia.",
+      "Ask what is in season now at markets and restaurants, and look for handwritten specials of the day."
+     ],
+     "q": "What is your favourite seasonal food where you live?",
+     "c": "Pick a destination and find one dish or ingredient that is best in a specific season there."
+    },
+    "de": {
+     "t": "Saisonal essen auf Reisen",
+     "g": "Verstehe, warum sich lokales Essen mit den Jahreszeiten ändert und wie du ihm folgst.",
+     "p": [
+      "Saisonale Produkte schmecken am besten und werden von lokalen Köchen gefeiert, vom Frühlingsspargel bis zu Herbstpilzen.",
+      "Viele Orte haben Saisonspezialitäten, etwa weiße Trüffel im Herbst im Piemont oder die Mangosaison in Südasien.",
+      "Frag auf Märkten und in Lokalen, was gerade Saison hat, und achte auf handgeschriebene Tagesgerichte."
+     ],
+     "q": "Was ist dein liebstes saisonales Essen dort, wo du lebst?",
+     "c": "Wähle ein Reiseziel und finde ein Gericht oder eine Zutat, die dort in einer bestimmten Jahreszeit am besten ist."
+    },
+    "es": {
+     "t": "Comer de temporada al viajar",
+     "g": "Entiende por qué la comida local cambia con las estaciones y cómo seguirla en tu viaje.",
+     "p": [
+      "El producto de temporada sabe mejor y es lo que celebran los cocineros locales, del espárrago en primavera a las setas en otoño.",
+      "Muchos lugares tienen especialidades de temporada, como la trufa blanca del Piamonte en otoño o la temporada de mango en el sur de Asia.",
+      "Pregunta qué es de temporada en mercados y restaurantes, y busca los platos del día escritos a mano."
+     ],
+     "q": "¿Cuál es tu comida de temporada favorita donde vives?",
+     "c": "Elige un destino y busca un plato o ingrediente que allí sea mejor en una estación concreta."
+    },
+    "fr": {
+     "t": "Manger de saison en voyage",
+     "g": "Comprends pourquoi la cuisine locale change avec les saisons et comment la suivre en voyage.",
+     "p": [
+      "Les produits de saison sont les plus savoureux et ce que les cuisiniers célèbrent, des asperges du printemps aux champignons d'automne.",
+      "Beaucoup de lieux ont leurs spécialités de saison, comme la truffe blanche du Piémont en automne ou la saison des mangues en Asie du Sud.",
+      "Demande ce qui est de saison au marché et au restaurant, et repère les suggestions du jour écrites à la main."
+     ],
+     "q": "Quel est ton aliment de saison préféré là où tu vis ?",
+     "c": "Choisis une destination et trouve un plat ou un produit qui y est meilleur à une saison précise."
+    },
+    "it": {
+     "t": "Mangiare di stagione in viaggio",
+     "g": "Capisci perché il cibo locale cambia con le stagioni e come seguirlo durante il viaggio.",
+     "p": [
+      "I prodotti di stagione sono i più gustosi e quelli che i cuochi locali celebrano, dagli asparagi in primavera ai funghi in autunno.",
+      "Molti luoghi hanno specialità stagionali, come il tartufo bianco del Piemonte in autunno o la stagione del mango nell'Asia meridionale.",
+      "Chiedi cosa è di stagione al mercato e al ristorante, e cerca i piatti del giorno scritti a mano."
+     ],
+     "q": "Qual è il tuo cibo di stagione preferito dove vivi?",
+     "c": "Scegli una meta e trova un piatto o un ingrediente che lì è migliore in una stagione precisa."
+    },
+    "pt": {
+     "t": "Comer da época em viagem",
+     "g": "Percebe porque é que a comida local muda com as estações e como segui-la na viagem.",
+     "p": [
+      "Os produtos da época sabem melhor e são o que os cozinheiros locais celebram, dos espargos na primavera aos cogumelos no outono.",
+      "Muitos lugares têm especialidades da época, como a trufa branca do Piemonte no outono ou a época da manga no sul da Ásia.",
+      "Pergunta o que é da época nos mercados e restaurantes, e procura os pratos do dia escritos à mão."
+     ],
+     "q": "Qual é a tua comida da época preferida onde vives?",
+     "c": "Escolhe um destino e encontra um prato ou ingrediente que lá é melhor numa estação específica."
+    },
+    "pt_BR": {
+     "t": "Comer da estação em viagem",
+     "g": "Entenda por que a comida local muda com as estações e como acompanhar isso na viagem.",
+     "p": [
+      "Produtos da estação são os mais saborosos e o que os cozinheiros locais celebram, do aspargo na primavera aos cogumelos no outono.",
+      "Muitos lugares têm especialidades da estação, como a trufa branca do Piemonte no outono ou a época da manga no sul da Ásia.",
+      "Pergunte o que é da estação nos mercados e restaurantes, e procure os pratos do dia escritos à mão."
+     ],
+     "q": "Qual é sua comida da estação favorita onde você mora?",
+     "c": "Escolha um destino e encontre um prato ou ingrediente que lá fica melhor em uma estação específica."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bread around the world",
+     "g": "Discover the daily breads that define kitchens from Paris to Addis Ababa.",
+     "p": [
+      "The French baguette is bought fresh daily, while Indian naan is baked against the hot wall of a tandoor oven.",
+      "Ethiopian injera is a soft, tangy flatbread made from teff that serves as plate, spoon and side dish at once.",
+      "Brazilian pão de queijo is a chewy cheese bread made with cassava starch, naturally free of wheat."
+     ],
+     "q": "Which bread is part of your everyday life?",
+     "c": "Taste or look up one bread from another country and describe its texture in three words."
+    },
+    "de": {
+     "t": "Brot rund um die Welt",
+     "g": "Entdecke die Alltagsbrote, die Küchen von Paris bis Addis Abeba prägen.",
+     "p": [
+      "Das französische Baguette kauft man täglich frisch, indisches Naan wird an der heißen Wand des Tandoor-Ofens gebacken.",
+      "Äthiopisches Injera ist ein weiches, säuerliches Fladenbrot aus Teff: Teller, Löffel und Beilage zugleich.",
+      "Brasilianisches Pão de Queijo ist ein elastisches Käsebrot aus Maniokstärke, von Natur aus ohne Weizen."
+     ],
+     "q": "Welches Brot gehört zu deinem Alltag?",
+     "c": "Probiere oder recherchiere ein Brot aus einem anderen Land und beschreibe seine Textur in drei Wörtern."
+    },
+    "es": {
+     "t": "El pan alrededor del mundo",
+     "g": "Descubre los panes diarios que definen cocinas desde París hasta Adís Abeba.",
+     "p": [
+      "La baguette francesa se compra fresca cada día, y el naan indio se hornea pegado a la pared caliente del horno tandoor.",
+      "La injera etíope es un pan plano suave y algo ácido de teff que hace a la vez de plato, cuchara y guarnición.",
+      "El pão de queijo brasileño es un pan de queso elástico hecho con almidón de yuca, sin trigo por naturaleza."
+     ],
+     "q": "¿Qué pan forma parte de tu día a día?",
+     "c": "Prueba o busca un pan de otro país y describe su textura en tres palabras."
+    },
+    "fr": {
+     "t": "Le pain autour du monde",
+     "g": "Découvre les pains du quotidien qui définissent les cuisines de Paris à Addis-Abeba.",
+     "p": [
+      "La baguette française s'achète fraîche chaque jour, et le naan indien cuit collé à la paroi brûlante du four tandoor.",
+      "L'injera éthiopienne est une galette souple et acidulée de teff qui sert à la fois d'assiette, de cuillère et d'accompagnement.",
+      "Le pão de queijo brésilien est un petit pain au fromage moelleux à base de fécule de manioc, naturellement sans blé."
+     ],
+     "q": "Quel pain fait partie de ton quotidien ?",
+     "c": "Goûte ou cherche un pain d'un autre pays et décris sa texture en trois mots."
+    },
+    "it": {
+     "t": "Il pane nel mondo",
+     "g": "Scopri i pani quotidiani che definiscono le cucine da Parigi ad Addis Abeba.",
+     "p": [
+      "La baguette francese si compra fresca ogni giorno, il naan indiano si cuoce attaccato alla parete rovente del forno tandoor.",
+      "L'injera etiope è un pane piatto morbido e leggermente acido di teff che fa da piatto, cucchiaio e contorno insieme.",
+      "Il pão de queijo brasiliano è un panino al formaggio elastico fatto con amido di manioca, naturalmente senza grano."
+     ],
+     "q": "Quale pane fa parte della tua vita di tutti i giorni?",
+     "c": "Assaggia o cerca un pane di un altro paese e descrivi la sua consistenza in tre parole."
+    },
+    "pt": {
+     "t": "O pão pelo mundo",
+     "g": "Descobre os pães do dia a dia que definem cozinhas de Paris a Adis Abeba.",
+     "p": [
+      "A baguete francesa compra-se fresca todos os dias, e o naan indiano coze colado à parede quente do forno tandoor.",
+      "A injera etíope é um pão achatado, macio e ligeiramente ácido de teff que serve de prato, colher e acompanhamento.",
+      "O pão de queijo brasileiro é um pão elástico de queijo feito com polvilho de mandioca, naturalmente sem trigo."
+     ],
+     "q": "Que pão faz parte do teu dia a dia?",
+     "c": "Prova ou pesquisa um pão de outro país e descreve a textura dele em três palavras."
+    },
+    "pt_BR": {
+     "t": "O pão pelo mundo",
+     "g": "Descubra os pães do dia a dia que definem cozinhas de Paris a Adis Abeba.",
+     "p": [
+      "A baguete francesa é comprada fresca todo dia, e o naan indiano assa grudado na parede quente do forno tandoor.",
+      "A injera etíope é um pão achatado, macio e azedinho de teff que serve de prato, colher e acompanhamento ao mesmo tempo.",
+      "O pão de queijo brasileiro é um pão elástico de queijo feito com polvilho, naturalmente sem trigo."
+     ],
+     "q": "Qual pão faz parte do seu dia a dia?",
+     "c": "Prove ou pesquise um pão de outro país e descreva a textura dele em três palavras."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rice cultures",
+     "g": "Explore famous rice dishes from paella and risotto to biryani and sushi.",
+     "p": [
+      "Paella from Valencia is cooked wide and shallow so a crispy layer called socarrat forms at the bottom.",
+      "Italian risotto uses short-grain rice stirred with broth until creamy, while biryani layers spiced rice and meat or vegetables.",
+      "Sushi is really about the rice, seasoned with vinegar, and in much of Asia rice is the heart of every meal."
+     ],
+     "q": "How is rice usually cooked in your home or country?",
+     "c": "Name three rice dishes from three countries and say which one you would order first."
+    },
+    "de": {
+     "t": "Reiskulturen",
+     "g": "Entdecke berühmte Reisgerichte von Paella und Risotto bis Biryani und Sushi.",
+     "p": [
+      "Paella aus Valencia wird flach und breit gegart, damit sich am Boden eine knusprige Schicht namens Socarrat bildet.",
+      "Risotto entsteht aus Rundkornreis, der mit Brühe cremig gerührt wird; Biryani schichtet Gewürzreis mit Fleisch oder Gemüse.",
+      "Bei Sushi geht es eigentlich um den mit Essig gewürzten Reis, und in weiten Teilen Asiens ist Reis das Herz jeder Mahlzeit."
+     ],
+     "q": "Wie wird Reis bei dir zu Hause oder in deinem Land meist zubereitet?",
+     "c": "Nenne drei Reisgerichte aus drei Ländern und sag, welches du zuerst bestellen würdest."
+    },
+    "es": {
+     "t": "Culturas del arroz",
+     "g": "Explora platos de arroz famosos, de la paella y el risotto al biryani y el sushi.",
+     "p": [
+      "La paella valenciana se cocina en un recipiente ancho y bajo para que se forme abajo el socarrat, una capa tostada.",
+      "El risotto italiano usa arroz de grano corto removido con caldo hasta quedar cremoso; el biryani alterna arroz especiado y carne o verduras.",
+      "El sushi gira en torno al arroz aliñado con vinagre, y en gran parte de Asia el arroz es el corazón de cada comida."
+     ],
+     "q": "¿Cómo se suele cocinar el arroz en tu casa o en tu país?",
+     "c": "Nombra tres platos de arroz de tres países y di cuál pedirías primero."
+    },
+    "fr": {
+     "t": "Les cultures du riz",
+     "g": "Explore des plats de riz célèbres, de la paella et du risotto au biryani et aux sushis.",
+     "p": [
+      "La paella de Valence cuit dans un plat large et plat pour que se forme au fond une croûte dorée, le socarrat.",
+      "Le risotto utilise un riz rond remué avec du bouillon jusqu'à être crémeux ; le biryani superpose riz épicé et viande ou légumes.",
+      "Le sushi, c'est d'abord le riz assaisonné au vinaigre, et dans une grande partie de l'Asie le riz est au cœur de chaque repas."
+     ],
+     "q": "Comment cuisine-t-on le riz chez toi ou dans ton pays ?",
+     "c": "Cite trois plats de riz de trois pays et dis lequel tu commanderais en premier."
+    },
+    "it": {
+     "t": "Le culture del riso",
+     "g": "Esplora piatti di riso famosi, dalla paella e dal risotto al biryani e al sushi.",
+     "p": [
+      "La paella valenciana si cuoce in una padella larga e bassa perché sul fondo si formi il socarrat, uno strato croccante.",
+      "Il risotto usa riso a chicco tondo mescolato col brodo fino a diventare cremoso; il biryani alterna riso speziato e carne o verdure.",
+      "Nel sushi il vero protagonista è il riso condito con aceto, e in gran parte dell'Asia il riso è il cuore di ogni pasto."
+     ],
+     "q": "Come si cucina di solito il riso a casa tua o nel tuo paese?",
+     "c": "Nomina tre piatti di riso di tre paesi e di' quale ordineresti per primo."
+    },
+    "pt": {
+     "t": "Culturas do arroz",
+     "g": "Explora pratos de arroz famosos, da paella e do risotto ao biryani e ao sushi.",
+     "p": [
+      "A paella valenciana coze numa panela larga e baixa para se formar no fundo o socarrat, uma camada tostada.",
+      "O risotto usa arroz de grão curto mexido com caldo até ficar cremoso; o biryani alterna arroz especiado com carne ou legumes.",
+      "No sushi o essencial é o arroz temperado com vinagre, e em grande parte da Ásia o arroz é o coração de cada refeição."
+     ],
+     "q": "Como se costuma cozinhar o arroz em tua casa ou no teu país?",
+     "c": "Diz três pratos de arroz de três países e qual pedirias primeiro."
+    },
+    "pt_BR": {
+     "t": "Culturas do arroz",
+     "g": "Explore pratos de arroz famosos, da paella e do risoto ao biryani e ao sushi.",
+     "p": [
+      "A paella valenciana é feita numa panela larga e rasa para formar no fundo o socarrat, uma casquinha tostada.",
+      "O risoto usa arroz de grão curto mexido com caldo até ficar cremoso; o biryani intercala arroz temperado e carne ou legumes.",
+      "No sushi o principal é o arroz temperado com vinagre, e em boa parte da Ásia o arroz é o coração de cada refeição."
+     ],
+     "q": "Como o arroz costuma ser feito na sua casa ou no seu país?",
+     "c": "Cite três pratos de arroz de três países e diga qual você pediria primeiro."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noodles of the world",
+     "g": "Discover ramen, pho, pasta, udon and other noodle traditions.",
+     "p": [
+      "Japanese ramen has many regional styles, and slurping noodles there is normal and shows you enjoy them.",
+      "Vietnamese pho is a fragrant broth with rice noodles, served with fresh herbs, lime and chilli to add yourself.",
+      "Italian pasta comes in hundreds of shapes, each chosen to hold a particular sauce, while thick udon is soft and chewy."
+     ],
+     "q": "Which noodle dish could you eat every week?",
+     "c": "Find one noodle dish you have never heard of and learn which country it comes from."
+    },
+    "de": {
+     "t": "Nudeln der Welt",
+     "g": "Entdecke Ramen, Pho, Pasta, Udon und weitere Nudeltraditionen.",
+     "p": [
+      "Japanisches Ramen hat viele regionale Stile, und Schlürfen ist dort normal und zeigt, dass es dir schmeckt.",
+      "Vietnamesisches Pho ist eine duftende Brühe mit Reisnudeln, dazu frische Kräuter, Limette und Chili zum Selbstwürzen.",
+      "Italienische Pasta gibt es in Hunderten Formen, jede passend zu einer Soße; dicke Udon sind weich und bissfest."
+     ],
+     "q": "Welches Nudelgericht könntest du jede Woche essen?",
+     "c": "Finde ein Nudelgericht, von dem du nie gehört hast, und lerne, woher es stammt."
+    },
+    "es": {
+     "t": "Fideos del mundo",
+     "g": "Descubre el ramen, el pho, la pasta, el udon y otras tradiciones de fideos.",
+     "p": [
+      "El ramen japonés tiene muchos estilos regionales, y sorber los fideos allí es normal y muestra que te gustan.",
+      "El pho vietnamita es un caldo aromático con fideos de arroz, servido con hierbas frescas, lima y chile al gusto.",
+      "La pasta italiana tiene cientos de formas, cada una pensada para una salsa, y el grueso udon es suave y elástico."
+     ],
+     "q": "¿Qué plato de fideos podrías comer cada semana?",
+     "c": "Encuentra un plato de fideos que no conocías y averigua de qué país viene."
+    },
+    "fr": {
+     "t": "Les nouilles du monde",
+     "g": "Découvre les ramen, le pho, les pâtes, les udon et d'autres traditions de nouilles.",
+     "p": [
+      "Les ramen japonais ont de nombreux styles régionaux, et aspirer bruyamment ses nouilles y est normal : ça montre qu'on aime.",
+      "Le pho vietnamien est un bouillon parfumé aux nouilles de riz, servi avec herbes fraîches, citron vert et piment à ajouter.",
+      "Les pâtes italiennes existent en centaines de formes, chacune pour une sauce, et les épaisses udon sont tendres et élastiques."
+     ],
+     "q": "Quel plat de nouilles pourrais-tu manger chaque semaine ?",
+     "c": "Trouve un plat de nouilles que tu ne connaissais pas et découvre son pays d'origine."
+    },
+    "it": {
+     "t": "Gli spaghetti e i noodles del mondo",
+     "g": "Scopri ramen, pho, pasta, udon e altre tradizioni di noodles.",
+     "p": [
+      "Il ramen giapponese ha tanti stili regionali, e lì risucchiare i noodles è normale e mostra che ti piacciono.",
+      "Il pho vietnamita è un brodo profumato con noodles di riso, servito con erbe fresche, lime e peperoncino a piacere.",
+      "La pasta italiana ha centinaia di formati, ognuno pensato per un sugo, mentre gli spessi udon sono morbidi ed elastici."
+     ],
+     "q": "Quale piatto di pasta o noodles potresti mangiare ogni settimana?",
+     "c": "Trova un piatto di noodles che non conoscevi e scopri da quale paese viene."
+    },
+    "pt": {
+     "t": "Massas e noodles do mundo",
+     "g": "Descobre o ramen, o pho, a massa italiana, o udon e outras tradições de noodles.",
+     "p": [
+      "O ramen japonês tem muitos estilos regionais, e lá sorver os noodles com ruído é normal e mostra que estás a gostar.",
+      "O pho vietnamita é um caldo aromático com noodles de arroz, servido com ervas frescas, lima e malagueta a gosto.",
+      "A massa italiana tem centenas de formatos, cada um pensado para um molho, e o grosso udon é macio e elástico."
+     ],
+     "q": "Que prato de noodles ou massa conseguias comer todas as semanas?",
+     "c": "Encontra um prato de noodles que não conhecias e descobre de que país vem."
+    },
+    "pt_BR": {
+     "t": "Massas e lámens do mundo",
+     "g": "Descubra o lámen, o pho, a massa italiana, o udon e outras tradições de macarrão.",
+     "p": [
+      "O lámen japonês tem muitos estilos regionais, e lá sugar o macarrão fazendo barulho é normal e mostra que você está gostando.",
+      "O pho vietnamita é um caldo perfumado com macarrão de arroz, servido com ervas frescas, limão e pimenta a gosto.",
+      "A massa italiana tem centenas de formatos, cada um pensado para um molho, e o grosso udon é macio e elástico."
+     ],
+     "q": "Qual prato de macarrão você comeria toda semana?",
+     "c": "Encontre um prato de macarrão que você não conhecia e descubra de que país ele vem."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dumplings everywhere",
+     "g": "Discover gyoza, pierogi, momos, empanadas and other stuffed doughs.",
+     "p": [
+      "Almost every cuisine wraps a filling in dough: Japanese gyoza, Polish pierogi, Nepali momos, Chinese jiaozi.",
+      "Empanadas are baked or fried turnovers found across Latin America, with fillings that change from country to country.",
+      "Dumplings are often made together by families for celebrations, so ask about their story when you try them."
+     ],
+     "q": "What is your favourite dumpling, or which one would you like to try?",
+     "c": "Compare two dumplings from different countries: dough, filling and how they are cooked."
+    },
+    "de": {
+     "t": "Teigtaschen überall",
+     "g": "Entdecke Gyoza, Piroggen, Momos, Empanadas und andere gefüllte Teige.",
+     "p": [
+      "Fast jede Küche wickelt Füllung in Teig: japanische Gyoza, polnische Pierogi, nepalesische Momos, chinesische Jiaozi.",
+      "Empanadas sind gebackene oder frittierte Teigtaschen aus ganz Lateinamerika, mit Füllungen, die je nach Land wechseln.",
+      "Teigtaschen werden oft gemeinsam in der Familie für Feste gemacht, frag also nach ihrer Geschichte."
+     ],
+     "q": "Was ist deine liebste Teigtasche, oder welche würdest du gern probieren?",
+     "c": "Vergleiche zwei Teigtaschen aus verschiedenen Ländern: Teig, Füllung und Zubereitung."
+    },
+    "es": {
+     "t": "Empanadillas por todas partes",
+     "g": "Descubre gyozas, pierogi, momos, empanadas y otras masas rellenas.",
+     "p": [
+      "Casi todas las cocinas envuelven un relleno en masa: gyozas japonesas, pierogi polacos, momos nepalíes, jiaozi chinos.",
+      "Las empanadas, horneadas o fritas, se encuentran por toda Latinoamérica, con rellenos que cambian de un país a otro.",
+      "Las empanadillas a menudo se preparan en familia para celebraciones, así que pregunta por su historia al probarlas."
+     ],
+     "q": "¿Cuál es tu masa rellena favorita, o cuál te gustaría probar?",
+     "c": "Compara dos masas rellenas de países distintos: masa, relleno y forma de cocinarlas."
+    },
+    "fr": {
+     "t": "Des raviolis partout",
+     "g": "Découvre gyozas, pierogis, momos, empanadas et autres pâtes farcies.",
+     "p": [
+      "Presque chaque cuisine enveloppe une farce dans une pâte : gyozas japonais, pierogis polonais, momos népalais, jiaozi chinois.",
+      "Les empanadas, cuites au four ou frites, se trouvent dans toute l'Amérique latine, avec des farces qui changent selon le pays.",
+      "Les raviolis se préparent souvent en famille pour les fêtes : demande leur histoire quand tu les goûtes."
+     ],
+     "q": "Quel est ton ravioli préféré, ou lequel aimerais-tu goûter ?",
+     "c": "Compare deux pâtes farcies de pays différents : pâte, farce et cuisson."
+    },
+    "it": {
+     "t": "Ravioli e fagottini ovunque",
+     "g": "Scopri gyoza, pierogi, momo, empanadas e altre paste ripiene.",
+     "p": [
+      "Quasi ogni cucina avvolge un ripieno nella pasta: gyoza giapponesi, pierogi polacchi, momo nepalesi, jiaozi cinesi.",
+      "Le empanadas, al forno o fritte, si trovano in tutta l'America Latina, con ripieni che cambiano da paese a paese.",
+      "Spesso si preparano in famiglia per le feste, quindi chiedi la loro storia quando li assaggi."
+     ],
+     "q": "Qual è la tua pasta ripiena preferita, o quale vorresti provare?",
+     "c": "Confronta due paste ripiene di paesi diversi: impasto, ripieno e cottura."
+    },
+    "pt": {
+     "t": "Pastéis e dumplings por todo o lado",
+     "g": "Descobre gyozas, pierogi, momos, empanadas e outras massas recheadas.",
+     "p": [
+      "Quase todas as cozinhas embrulham um recheio em massa: gyozas japonesas, pierogi polacos, momos nepaleses, jiaozi chineses.",
+      "As empanadas, no forno ou fritas, existem por toda a América Latina, com recheios que mudam de país para país.",
+      "Muitas vezes fazem-se em família para celebrações, por isso pergunta pela história delas quando as provares."
+     ],
+     "q": "Qual é a tua massa recheada preferida, ou qual gostavas de provar?",
+     "c": "Compara duas massas recheadas de países diferentes: massa, recheio e forma de cozinhar."
+    },
+    "pt_BR": {
+     "t": "Pastéis e dumplings por toda parte",
+     "g": "Descubra guiozas, pierogi, momos, empanadas e outras massas recheadas.",
+     "p": [
+      "Quase toda cozinha embrulha um recheio na massa: guioza japonesa, pierogi polonês, momo nepalês, jiaozi chinês.",
+      "As empanadas, assadas ou fritas, existem em toda a América Latina, com recheios que mudam de país para país.",
+      "Muitas vezes são feitas em família para festas, então pergunte a história delas quando provar."
+     ],
+     "q": "Qual é sua massa recheada favorita, ou qual você gostaria de provar?",
+     "c": "Compare duas massas recheadas de países diferentes: massa, recheio e modo de preparo."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Soups that define places",
+     "g": "Meet gazpacho, borscht, miso soup and other soups that say a lot about home.",
+     "p": [
+      "Andalusian gazpacho is a cold tomato soup perfect for hot summers, made with vegetables, olive oil and bread.",
+      "Borscht, a deep red beetroot soup, is loved across Eastern Europe, and each family has its own version.",
+      "Japanese miso soup is a daily comfort, while Mexican pozole and Thai tom yum show how soups carry regional pride."
+     ],
+     "q": "Which soup feels like home to you?",
+     "c": "Choose one iconic soup from another country and find out its three main ingredients."
+    },
+    "de": {
+     "t": "Suppen, die Orte prägen",
+     "g": "Lerne Gazpacho, Borschtsch, Misosuppe und andere Suppen kennen, die viel über Heimat verraten.",
+     "p": [
+      "Andalusischer Gazpacho ist eine kalte Tomatensuppe für heiße Sommer, mit Gemüse, Olivenöl und Brot.",
+      "Borschtsch, eine tiefrote Rote-Bete-Suppe, ist in ganz Osteuropa beliebt, und jede Familie hat ihre Version.",
+      "Misosuppe ist in Japan Alltagsgenuss, mexikanisches Pozole und thailändisches Tom Yum zeigen regionalen Stolz."
+     ],
+     "q": "Welche Suppe fühlt sich für dich nach Zuhause an?",
+     "c": "Wähle eine berühmte Suppe aus einem anderen Land und finde ihre drei Hauptzutaten heraus."
+    },
+    "es": {
+     "t": "Sopas que definen lugares",
+     "g": "Conoce el gazpacho, el borsch, la sopa de miso y otras sopas que hablan de hogar.",
+     "p": [
+      "El gazpacho andaluz es una sopa fría de tomate ideal para el verano, con verduras, aceite de oliva y pan.",
+      "El borsch, una sopa de remolacha de un rojo intenso, se adora en Europa del Este y cada familia tiene su versión.",
+      "La sopa de miso es un consuelo diario en Japón, y el pozole mexicano o el tom yum tailandés muestran orgullo regional."
+     ],
+     "q": "¿Qué sopa te sabe a hogar?",
+     "c": "Elige una sopa emblemática de otro país y descubre sus tres ingredientes principales."
+    },
+    "fr": {
+     "t": "Des soupes qui racontent un lieu",
+     "g": "Découvre le gaspacho, le bortsch, la soupe miso et d'autres soupes qui parlent de chez soi.",
+     "p": [
+      "Le gaspacho andalou est une soupe froide de tomates idéale l'été, avec légumes, huile d'olive et pain.",
+      "Le bortsch, soupe de betterave d'un rouge profond, est aimé dans toute l'Europe de l'Est, et chaque famille a sa version.",
+      "La soupe miso est un réconfort quotidien au Japon, et le pozole mexicain ou le tom yum thaï montrent la fierté régionale."
+     ],
+     "q": "Quelle soupe a pour toi le goût de la maison ?",
+     "c": "Choisis une soupe emblématique d'un autre pays et trouve ses trois ingrédients principaux."
+    },
+    "it": {
+     "t": "Zuppe che raccontano un luogo",
+     "g": "Conosci il gazpacho, il borscht, la zuppa di miso e altre zuppe che sanno di casa.",
+     "p": [
+      "Il gazpacho andaluso è una zuppa fredda di pomodoro perfetta d'estate, con verdure, olio d'oliva e pane.",
+      "Il borscht, zuppa di barbabietola di un rosso intenso, è amato in tutta l'Europa orientale e ogni famiglia ha la sua versione.",
+      "La zuppa di miso è un conforto quotidiano in Giappone, mentre il pozole messicano e il tom yum thailandese esprimono orgoglio regionale."
+     ],
+     "q": "Quale zuppa per te sa di casa?",
+     "c": "Scegli una zuppa simbolo di un altro paese e scopri i suoi tre ingredienti principali."
+    },
+    "pt": {
+     "t": "Sopas que definem lugares",
+     "g": "Conhece o gaspacho, o borsch, a sopa de miso e outras sopas que falam de casa.",
+     "p": [
+      "O gaspacho andaluz é uma sopa fria de tomate perfeita para o verão, com legumes, azeite e pão.",
+      "O borsch, uma sopa de beterraba de um vermelho intenso, é adorado em toda a Europa de Leste e cada família tem a sua versão.",
+      "A sopa de miso é um conforto diário no Japão, e o pozole mexicano ou o tom yum tailandês mostram orgulho regional."
+     ],
+     "q": "Que sopa te sabe a casa?",
+     "c": "Escolhe uma sopa emblemática de outro país e descobre os seus três ingredientes principais."
+    },
+    "pt_BR": {
+     "t": "Sopas que definem lugares",
+     "g": "Conheça o gaspacho, o borsch, a sopa de missô e outras sopas que lembram casa.",
+     "p": [
+      "O gaspacho andaluz é uma sopa fria de tomate perfeita para o verão, com legumes, azeite e pão.",
+      "O borsch, uma sopa de beterraba de um vermelho intenso, é amado em todo o Leste Europeu e cada família tem sua versão.",
+      "A sopa de missô é um conforto diário no Japão, e o pozole mexicano ou o tom yum tailandês mostram orgulho regional."
+     ],
+     "q": "Qual sopa tem gosto de casa para você?",
+     "c": "Escolha uma sopa famosa de outro país e descubra seus três ingredientes principais."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: food travel basics",
+     "g": "Recap ordering, etiquette and markets by walking through an imaginary market visit.",
+     "p": [
+      "Picture arriving in the morning, doing a full lap and asking a vendor what is in season, with a smile and a hello.",
+      "You ask before touching, accept a tasting with thanks, buy a little and maybe bargain lightly where it is the custom.",
+      "Then you sit at a busy food counter, point at what locals eat, mention any allergy and ask for the bill politely."
+     ],
+     "q": "Which tip from this first month do you think you will use most?",
+     "c": "Describe your dream market morning in three sentences: what you see, taste and buy."
+    },
+    "de": {
+     "t": "Rückblick: Grundlagen des kulinarischen Reisens",
+     "g": "Wiederhole Bestellen, Benimm und Märkte mit einem ausgedachten Marktbesuch.",
+     "p": [
+      "Stell dir vor: Du kommst morgens an, drehst eine Runde und fragst lächelnd einen Händler, was gerade Saison hat.",
+      "Du fragst, bevor du etwas anfasst, nimmst dankend eine Kostprobe, kaufst wenig und handelst sanft, wo es üblich ist.",
+      "Dann setzt du dich an eine belebte Theke, zeigst auf das, was Einheimische essen, nennst Allergien und bittest höflich um die Rechnung."
+     ],
+     "q": "Welchen Tipp aus diesem ersten Monat wirst du wohl am meisten nutzen?",
+     "c": "Beschreibe deinen Traum-Marktmorgen in drei Sätzen: was du siehst, probierst und kaufst."
+    },
+    "es": {
+     "t": "Repaso: lo básico del viaje gastronómico",
+     "g": "Repasa cómo pedir, la etiqueta y los mercados con una visita imaginaria a un mercado.",
+     "p": [
+      "Imagina que llegas por la mañana, das una vuelta completa y preguntas sonriendo a un vendedor qué es de temporada.",
+      "Preguntas antes de tocar, aceptas una degustación con gracias, compras poco y regateas un poco donde es costumbre.",
+      "Luego te sientas en una barra animada, señalas lo que comen los locales, mencionas tus alergias y pides la cuenta con educación."
+     ],
+     "q": "¿Qué consejo de este primer mes crees que usarás más?",
+     "c": "Describe en tres frases tu mañana de mercado ideal: qué ves, qué pruebas y qué compras."
+    },
+    "fr": {
+     "t": "Révision : les bases du voyage gourmand",
+     "g": "Révise la commande, le savoir-vivre et les marchés grâce à une visite de marché imaginaire.",
+     "p": [
+      "Imagine : tu arrives le matin, fais un tour complet et demandes en souriant à un marchand ce qui est de saison.",
+      "Tu demandes avant de toucher, acceptes une dégustation avec un merci, achètes un peu et marchandes doucement si c'est l'usage.",
+      "Puis tu t'assois à un comptoir animé, montres ce que mangent les habitants, signales tes allergies et demandes poliment l'addition."
+     ],
+     "q": "Quel conseil de ce premier mois penses-tu utiliser le plus ?",
+     "c": "Décris ta matinée de marché idéale en trois phrases : ce que tu vois, goûtes et achètes."
+    },
+    "it": {
+     "t": "Ripasso: le basi del viaggio gastronomico",
+     "g": "Ripassa come ordinare, il galateo e i mercati con una visita immaginaria al mercato.",
+     "p": [
+      "Immagina di arrivare la mattina, fare un giro completo e chiedere sorridendo a un venditore cosa è di stagione.",
+      "Chiedi prima di toccare, accetti un assaggio con un grazie, compri poco e contratti appena dove è d'uso.",
+      "Poi ti siedi a un bancone affollato, indichi ciò che mangia la gente del posto, segnali le allergie e chiedi il conto con garbo."
+     ],
+     "q": "Quale consiglio di questo primo mese pensi che userai di più?",
+     "c": "Descrivi in tre frasi la tua mattina ideale al mercato: cosa vedi, assaggi e compri."
+    },
+    "pt": {
+     "t": "Revisão: o básico da viagem gastronómica",
+     "g": "Revê como pedir, a etiqueta e os mercados com uma visita imaginária a um mercado.",
+     "p": [
+      "Imagina que chegas de manhã, dás uma volta completa e perguntas a sorrir a um vendedor o que é da época.",
+      "Perguntas antes de tocar, aceitas uma prova com um obrigado, compras pouco e regateias levemente onde é costume.",
+      "Depois sentas-te num balcão movimentado, apontas o que os locais comem, falas das tuas alergias e pedes a conta com educação."
+     ],
+     "q": "Que dica deste primeiro mês achas que vais usar mais?",
+     "c": "Descreve em três frases a tua manhã de mercado ideal: o que vês, provas e compras."
+    },
+    "pt_BR": {
+     "t": "Revisão: o básico da viagem gastronômica",
+     "g": "Revise como pedir, a etiqueta e os mercados com uma visita imaginária a um mercado.",
+     "p": [
+      "Imagine chegar de manhã, dar uma volta inteira e perguntar sorrindo a um feirante o que é da estação.",
+      "Você pergunta antes de tocar, aceita uma provinha com um obrigado, compra pouco e pechincha de leve onde é costume.",
+      "Depois senta num balcão movimentado, aponta o que os moradores comem, avisa suas alergias e pede a conta com educação."
+     ],
+     "q": "Qual dica deste primeiro mês você acha que vai usar mais?",
+     "c": "Descreva em três frases sua manhã de mercado ideal: o que você vê, prova e compra."
+    }
+   }
+  }
+ ]
+}

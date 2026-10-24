@@ -1,0 +1,835 @@
+{
+ "topic": "backpacking",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common rooms and new friends",
+     "g": "Learn easy ways to start conversations in hostel common rooms and shared spaces.",
+     "p": [
+      "Simple openers work best: Where have you just come from? or Where are you heading next?",
+      "Join in with what is already happening, like a card game, a shared meal or a planning session.",
+      "Remember that many people are travelling alone and are just as happy to chat as you are."
+     ],
+     "q": "What is your favourite way to start a conversation with someone new?",
+     "c": "Say hello to one new person today and ask them one open question."
+    },
+    "de": {
+     "t": "Gemeinschaftsräume und neue Freunde",
+     "g": "Lerne einfache Wege, im Aufenthaltsraum und in Gemeinschaftsbereichen ins Gespräch zu kommen.",
+     "p": [
+      "Einfache Einstiege wirken am besten: Wo kommst du gerade her? oder Wohin geht es als Nächstes?",
+      "Mach bei dem mit, was schon läuft, etwa einem Kartenspiel, einem gemeinsamen Essen oder einer Routenplanung.",
+      "Denk daran, dass viele allein reisen und sich genauso über ein Gespräch freuen wie du."
+     ],
+     "q": "Wie beginnst du am liebsten ein Gespräch mit jemand Neuem?",
+     "c": "Grüß heute eine neue Person und stell ihr eine offene Frage."
+    },
+    "es": {
+     "t": "Zonas comunes y nuevos amigos",
+     "g": "Aprende formas fáciles de empezar conversaciones en las zonas comunes del albergue.",
+     "p": [
+      "Lo sencillo funciona mejor: ¿De dónde vienes ahora? o ¿Adónde vas después?",
+      "Súmate a lo que ya está pasando, como una partida de cartas, una comida compartida o planear rutas.",
+      "Recuerda que mucha gente viaja sola y le apetece charlar tanto como a ti."
+     ],
+     "q": "¿Cuál es tu forma favorita de empezar una conversación con alguien nuevo?",
+     "c": "Saluda hoy a una persona nueva y hazle una pregunta abierta."
+    },
+    "fr": {
+     "t": "Espaces communs et nouveaux amis",
+     "g": "Découvre des façons simples d'engager la conversation dans les espaces communs de l'auberge.",
+     "p": [
+      "Les phrases simples marchent le mieux : Tu viens d'où, là ? ou Tu vas où ensuite ?",
+      "Joins-toi à ce qui se passe déjà, comme une partie de cartes, un repas partagé ou un itinéraire à préparer.",
+      "Rappelle-toi que beaucoup voyagent seuls et ont autant envie de discuter que toi."
+     ],
+     "q": "Quelle est ta façon préférée d'engager la conversation avec quelqu'un de nouveau ?",
+     "c": "Dis bonjour à une nouvelle personne aujourd'hui et pose-lui une question ouverte."
+    },
+    "it": {
+     "t": "Sale comuni e nuovi amici",
+     "g": "Impara modi semplici per iniziare una conversazione nelle sale comuni dell'ostello.",
+     "p": [
+      "Le domande semplici funzionano meglio: Da dove arrivi? oppure Dove vai dopo?",
+      "Unisciti a ciò che sta già succedendo, come una partita a carte, una cena condivisa o la pianificazione di un giro.",
+      "Ricorda che tanti viaggiano da soli e hanno voglia di chiacchierare quanto te."
+     ],
+     "q": "Qual è il tuo modo preferito per iniziare a parlare con qualcuno di nuovo?",
+     "c": "Saluta oggi una persona nuova e falle una domanda aperta."
+    },
+    "pt": {
+     "t": "Salas comuns e novos amigos",
+     "g": "Aprende formas fáceis de começar conversas nas salas comuns e espaços partilhados do hostel.",
+     "p": [
+      "O simples resulta melhor: De onde vens agora? ou Para onde vais a seguir?",
+      "Junta-te ao que já está a acontecer, como um jogo de cartas, um jantar partilhado ou planear percursos.",
+      "Lembra-te de que muita gente viaja sozinha e quer conversar tanto como tu."
+     ],
+     "q": "Qual é a tua forma preferida de começar uma conversa com alguém novo?",
+     "c": "Cumprimenta hoje uma pessoa nova e faz-lhe uma pergunta aberta."
+    },
+    "pt_BR": {
+     "t": "Áreas comuns e novos amigos",
+     "g": "Aprenda jeitos fáceis de puxar conversa nas áreas comuns e espaços compartilhados do hostel.",
+     "p": [
+      "O simples funciona melhor: De onde você está vindo? ou Para onde vai depois?",
+      "Entre no que já está rolando, como um jogo de cartas, um jantar coletivo ou um planejamento de roteiro.",
+      "Lembre que muita gente viaja sozinha e está tão a fim de conversar quanto você."
+     ],
+     "q": "Qual é o seu jeito favorito de puxar conversa com alguém novo?",
+     "c": "Cumprimente hoje uma pessoa nova e faça a ela uma pergunta aberta."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hostel activities",
+     "g": "Discover how walking tours, shared dinners and game nights make it easy to explore and connect.",
+     "p": [
+      "Many hostels run or recommend walking tours, a great first-day way to learn the city's layout.",
+      "Family-style dinners and cooking nights turn strangers into a table of new friends.",
+      "Game nights, quizzes and movie evenings are relaxed options if you prefer a calm night in."
+     ],
+     "q": "Which hostel activity would you join first: a walking tour, a dinner or a game night?",
+     "c": "Check what activities one hostel lists and pick the one you would try."
+    },
+    "de": {
+     "t": "Hostel-Aktivitäten",
+     "g": "Entdecke, wie Stadtführungen, gemeinsame Abendessen und Spieleabende das Erkunden und Kennenlernen leicht machen.",
+     "p": [
+      "Viele Hostels bieten oder empfehlen Stadtführungen, ideal am ersten Tag, um die Stadt zu verstehen.",
+      "Gemeinsame Abendessen und Kochabende machen aus Fremden eine Tischrunde neuer Freunde.",
+      "Spiele-, Quiz- und Filmabende sind entspannte Optionen, wenn du lieber einen ruhigen Abend willst."
+     ],
+     "q": "Bei welcher Hostel-Aktivität würdest du zuerst mitmachen: Führung, Abendessen oder Spieleabend?",
+     "c": "Schau, welche Aktivitäten ein Hostel anbietet, und wähl die, die du ausprobieren würdest."
+    },
+    "es": {
+     "t": "Actividades en el albergue",
+     "g": "Descubre cómo los free tours, las cenas compartidas y las noches de juegos facilitan explorar y conectar.",
+     "p": [
+      "Muchos albergues organizan o recomiendan tours a pie, ideales el primer día para entender la ciudad.",
+      "Las cenas en grupo y noches de cocina convierten a desconocidos en una mesa de nuevos amigos.",
+      "Las noches de juegos, trivial o películas son buenas opciones si prefieres una noche tranquila."
+     ],
+     "q": "¿A qué actividad te apuntarías primero: un tour a pie, una cena o una noche de juegos?",
+     "c": "Mira qué actividades ofrece un albergue y elige la que probarías."
+    },
+    "fr": {
+     "t": "Les activités de l'auberge",
+     "g": "Découvre comment visites à pied, dîners partagés et soirées jeux aident à explorer et à créer des liens.",
+     "p": [
+      "Beaucoup d'auberges proposent ou conseillent des visites à pied, idéales le premier jour pour s'orienter.",
+      "Les dîners partagés et soirées cuisine transforment des inconnus en tablée de nouveaux amis.",
+      "Soirées jeux, quiz ou films sont parfaites si tu préfères une soirée tranquille."
+     ],
+     "q": "À quelle activité participerais-tu en premier : visite à pied, dîner ou soirée jeux ?",
+     "c": "Regarde les activités proposées par une auberge et choisis celle que tu testerais."
+    },
+    "it": {
+     "t": "Le attività dell'ostello",
+     "g": "Scopri come tour a piedi, cene condivise e serate giochi rendono facile esplorare e fare amicizia.",
+     "p": [
+      "Molti ostelli organizzano o consigliano tour a piedi, perfetti il primo giorno per orientarsi in città.",
+      "Cene di gruppo e serate di cucina trasformano sconosciuti in una tavolata di nuovi amici.",
+      "Serate giochi, quiz o film sono ottime se preferisci una serata tranquilla."
+     ],
+     "q": "A quale attività parteciperesti per prima: tour a piedi, cena o serata giochi?",
+     "c": "Guarda quali attività propone un ostello e scegli quella che proveresti."
+    },
+    "pt": {
+     "t": "Atividades no hostel",
+     "g": "Descobre como visitas a pé, jantares partilhados e noites de jogos facilitam explorar e conhecer gente.",
+     "p": [
+      "Muitos hostels organizam ou recomendam visitas a pé, ótimas no primeiro dia para perceber a cidade.",
+      "Jantares em grupo e noites de cozinha transformam desconhecidos numa mesa de novos amigos.",
+      "Noites de jogos, quizzes ou filmes são boas opções se preferires uma noite calma."
+     ],
+     "q": "A que atividade aderias primeiro: visita a pé, jantar ou noite de jogos?",
+     "c": "Vê que atividades um hostel oferece e escolhe a que experimentarias."
+    },
+    "pt_BR": {
+     "t": "Atividades no hostel",
+     "g": "Descubra como walking tours, jantares coletivos e noites de jogos facilitam explorar e fazer amigos.",
+     "p": [
+      "Muitos hostels organizam ou indicam walking tours, ótimos no primeiro dia para entender a cidade.",
+      "Jantares coletivos e noites de cozinha transformam desconhecidos numa mesa de novos amigos.",
+      "Noites de jogos, quiz ou filmes são boas opções se você preferir uma noite tranquila."
+     ],
+     "q": "De qual atividade você participaria primeiro: walking tour, jantar ou noite de jogos?",
+     "c": "Veja quais atividades um hostel oferece e escolha a que você experimentaria."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Working at a hostel",
+     "g": "Learn how volunteering at reception or cleaning in exchange for a bed works.",
+     "p": [
+      "Many hostels offer a free bed, and sometimes meals, for a few hours of work a day.",
+      "Typical tasks include reception shifts, cleaning, making beds or helping with events.",
+      "Check visa rules first, since some countries treat volunteering as work, and agree on hours clearly."
+     ],
+     "q": "Would you enjoy staying somewhere longer and helping out in exchange for a bed?",
+     "c": "Write down two skills you have that could be useful at a hostel."
+    },
+    "de": {
+     "t": "Im Hostel arbeiten",
+     "g": "Erfahre, wie Freiwilligenarbeit an der Rezeption oder beim Putzen gegen ein Bett funktioniert.",
+     "p": [
+      "Viele Hostels bieten ein kostenloses Bett und manchmal Essen für ein paar Stunden Arbeit am Tag.",
+      "Typische Aufgaben sind Rezeptionsschichten, Putzen, Betten machen oder Hilfe bei Events.",
+      "Prüf zuerst die Visaregeln, denn manche Länder zählen Freiwilligenarbeit als Arbeit, und vereinbart klare Stunden."
+     ],
+     "q": "Würde es dir gefallen, irgendwo länger zu bleiben und gegen ein Bett mitzuhelfen?",
+     "c": "Notier zwei Fähigkeiten, die in einem Hostel nützlich sein könnten."
+    },
+    "es": {
+     "t": "Trabajar en un albergue",
+     "g": "Aprende cómo funciona hacer voluntariado en recepción o limpieza a cambio de una cama.",
+     "p": [
+      "Muchos albergues ofrecen cama gratis, y a veces comida, a cambio de unas horas de trabajo al día.",
+      "Las tareas típicas son turnos de recepción, limpieza, hacer camas o ayudar en eventos.",
+      "Revisa antes el visado, porque algunos países consideran trabajo el voluntariado, y acuerda bien las horas."
+     ],
+     "q": "¿Te gustaría quedarte más tiempo en un sitio y ayudar a cambio de una cama?",
+     "c": "Apunta dos habilidades tuyas que podrían ser útiles en un albergue."
+    },
+    "fr": {
+     "t": "Travailler dans une auberge",
+     "g": "Découvre comment fonctionne le bénévolat à la réception ou au ménage en échange d'un lit.",
+     "p": [
+      "Beaucoup d'auberges offrent un lit, et parfois les repas, contre quelques heures de travail par jour.",
+      "Les tâches typiques : accueil, ménage, faire les lits ou aider lors des soirées.",
+      "Vérifie d'abord les visas, car certains pays considèrent le bénévolat comme du travail, et fixe des horaires clairs."
+     ],
+     "q": "Aimerais-tu rester plus longtemps quelque part en aidant en échange d'un lit ?",
+     "c": "Note deux compétences que tu as et qui pourraient servir dans une auberge."
+    },
+    "it": {
+     "t": "Lavorare in ostello",
+     "g": "Scopri come funziona fare volontariato alla reception o nelle pulizie in cambio di un letto.",
+     "p": [
+      "Molti ostelli offrono un letto gratis, e a volte i pasti, per qualche ora di lavoro al giorno.",
+      "I compiti tipici sono turni alla reception, pulizie, rifare i letti o aiutare negli eventi.",
+      "Controlla prima le regole sui visti, perché alcuni paesi considerano lavoro il volontariato, e concorda orari chiari."
+     ],
+     "q": "Ti piacerebbe fermarti più a lungo in un posto e aiutare in cambio di un letto?",
+     "c": "Annota due tue abilità che potrebbero essere utili in un ostello."
+    },
+    "pt": {
+     "t": "Trabalhar num hostel",
+     "g": "Aprende como funciona fazer voluntariado na receção ou na limpeza em troca de uma cama.",
+     "p": [
+      "Muitos hostels oferecem cama grátis, e às vezes refeições, em troca de algumas horas de trabalho por dia.",
+      "As tarefas típicas são turnos na receção, limpeza, fazer camas ou ajudar em eventos.",
+      "Verifica primeiro as regras de visto, porque alguns países tratam o voluntariado como trabalho, e combina bem os horários."
+     ],
+     "q": "Gostavas de ficar mais tempo num sítio e ajudar em troca de uma cama?",
+     "c": "Aponta duas competências tuas que podiam ser úteis num hostel."
+    },
+    "pt_BR": {
+     "t": "Trabalhando num hostel",
+     "g": "Aprenda como funciona fazer voluntariado na recepção ou na limpeza em troca de hospedagem.",
+     "p": [
+      "Muitos hostels oferecem cama grátis, e às vezes refeições, em troca de algumas horas de trabalho por dia.",
+      "As tarefas típicas são turnos na recepção, limpeza, arrumar camas ou ajudar em eventos.",
+      "Confira antes as regras do visto, porque alguns países tratam voluntariado como trabalho, e combine bem os horários."
+     ],
+     "q": "Você gostaria de ficar mais tempo num lugar e ajudar em troca de hospedagem?",
+     "c": "Anote duas habilidades suas que poderiam ser úteis num hostel."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beyond hostels",
+     "g": "Explore guesthouses, homestays and campsites as great alternatives to hostels.",
+     "p": [
+      "Guesthouses are small, often family-run places with private rooms and a personal touch.",
+      "Homestays let you live with a local family, which is perfect for culture and language.",
+      "Campsites suit nature lovers; some rent tents or cabins, so you do not have to carry gear."
+     ],
+     "q": "Which type of stay sounds most exciting to you after hostels?",
+     "c": "Look up one guesthouse and one campsite in a place you would love to visit."
+    },
+    "de": {
+     "t": "Mehr als Hostels",
+     "g": "Entdecke Pensionen, Gastfamilien und Campingplätze als tolle Alternativen zu Hostels.",
+     "p": [
+      "Pensionen sind kleine, oft familiengeführte Unterkünfte mit Privatzimmern und persönlicher Note.",
+      "Bei einer Gastfamilie lebst du mit Einheimischen, ideal für Kultur und Sprache.",
+      "Campingplätze passen zu Naturfans; manche vermieten Zelte oder Hütten, du musst also nichts schleppen."
+     ],
+     "q": "Welche Unterkunftsart neben Hostels klingt für dich am spannendsten?",
+     "c": "Such eine Pension und einen Campingplatz an einem Ort, den du gern besuchen würdest."
+    },
+    "es": {
+     "t": "Más allá de los albergues",
+     "g": "Descubre las pensiones, las casas de familia y los campings como buenas alternativas al albergue.",
+     "p": [
+      "Las pensiones o guesthouses son lugares pequeños, a menudo familiares, con habitaciones privadas y trato cercano.",
+      "En una casa de familia vives con gente local, perfecto para la cultura y el idioma.",
+      "Los campings son para amantes de la naturaleza; algunos alquilan tiendas o cabañas y no cargas equipo."
+     ],
+     "q": "Después de los albergues, ¿qué tipo de alojamiento te parece más emocionante?",
+     "c": "Busca una pensión y un camping en un lugar que te encantaría visitar."
+    },
+    "fr": {
+     "t": "Au-delà des auberges",
+     "g": "Explore les maisons d'hôtes, les séjours chez l'habitant et les campings comme alternatives aux auberges.",
+     "p": [
+      "Les maisons d'hôtes sont de petits lieux, souvent familiaux, avec chambres privées et accueil personnel.",
+      "Chez l'habitant, tu vis avec une famille locale : parfait pour la culture et la langue.",
+      "Les campings plaisent aux amoureux de nature ; certains louent tentes ou bungalows, pas besoin de matériel."
+     ],
+     "q": "Après les auberges, quel type d'hébergement te tente le plus ?",
+     "c": "Cherche une maison d'hôtes et un camping dans un lieu que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Oltre gli ostelli",
+     "g": "Scopri guesthouse, soggiorni in famiglia e campeggi come ottime alternative agli ostelli.",
+     "p": [
+      "Le guesthouse sono strutture piccole, spesso a gestione familiare, con camere private e un tocco personale.",
+      "Nei soggiorni in famiglia vivi con gente del posto: perfetto per cultura e lingua.",
+      "I campeggi sono per chi ama la natura; alcuni affittano tende o bungalow, così non porti attrezzatura."
+     ],
+     "q": "Dopo gli ostelli, quale tipo di alloggio ti sembra più emozionante?",
+     "c": "Cerca una guesthouse e un campeggio in un posto che vorresti visitare."
+    },
+    "pt": {
+     "t": "Para além dos hostels",
+     "g": "Descobre as guesthouses, as estadias com famílias e os parques de campismo como alternativas aos hostels.",
+     "p": [
+      "As guesthouses são sítios pequenos, muitas vezes familiares, com quartos privados e um toque pessoal.",
+      "Numa estadia com família vives com pessoas locais, o que é perfeito para a cultura e a língua.",
+      "Os parques de campismo são para quem ama a natureza; alguns alugam tendas ou bungalows."
+     ],
+     "q": "Depois dos hostels, que tipo de alojamento te parece mais entusiasmante?",
+     "c": "Procura uma guesthouse e um parque de campismo num lugar que adorarias visitar."
+    },
+    "pt_BR": {
+     "t": "Além dos hostels",
+     "g": "Conheça pousadas, casas de família e campings como ótimas alternativas aos hostels.",
+     "p": [
+      "Pousadas são lugares pequenos, muitas vezes familiares, com quartos privativos e atendimento próximo.",
+      "Numa casa de família você mora com gente local, perfeito para cultura e idioma.",
+      "Campings são para quem ama natureza; alguns alugam barracas ou chalés, então você não carrega equipamento."
+     ],
+     "q": "Depois dos hostels, que tipo de hospedagem parece mais empolgante para você?",
+     "c": "Procure uma pousada e um camping num lugar que você adoraria conhecer."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Homestays",
+     "g": "Learn what living with a local family is like and how to be a great guest.",
+     "p": [
+      "Expect home life, not a hotel: shared meals, family routines and house rules to follow.",
+      "A small gift from your home region and offering to help with dishes are warm gestures.",
+      "Learn a few words of the local language; even hello and thank you open many doors."
+     ],
+     "q": "What would you most like to learn from a local family?",
+     "c": "Learn how to say hello, thank you and delicious in a language you would like to use."
+    },
+    "de": {
+     "t": "Bei Gastfamilien wohnen",
+     "g": "Erfahre, wie das Leben bei einer Gastfamilie ist und wie du ein toller Gast wirst.",
+     "p": [
+      "Erwarte Familienleben, kein Hotel: gemeinsame Mahlzeiten, Familienrituale und Hausregeln.",
+      "Ein kleines Geschenk aus deiner Heimat und das Angebot, beim Abwasch zu helfen, kommen gut an.",
+      "Lerne ein paar Wörter der Landessprache; schon Hallo und Danke öffnen viele Türen."
+     ],
+     "q": "Was würdest du am liebsten von einer Gastfamilie lernen?",
+     "c": "Lerne Hallo, Danke und lecker in einer Sprache, die du gern benutzen würdest."
+    },
+    "es": {
+     "t": "Casas de familia",
+     "g": "Aprende cómo es vivir con una familia local y cómo ser un gran huésped.",
+     "p": [
+      "Espera vida de hogar, no un hotel: comidas compartidas, rutinas familiares y normas de la casa.",
+      "Un pequeño regalo de tu tierra y ofrecerte a fregar los platos son gestos muy apreciados.",
+      "Aprende unas palabras del idioma local; solo hola y gracias ya abren muchas puertas."
+     ],
+     "q": "¿Qué te gustaría aprender más de una familia local?",
+     "c": "Aprende a decir hola, gracias y delicioso en un idioma que te gustaría usar."
+    },
+    "fr": {
+     "t": "Loger chez l'habitant",
+     "g": "Découvre la vie au sein d'une famille locale et comment être un invité apprécié.",
+     "p": [
+      "Attends-toi à une vie de famille, pas à un hôtel : repas partagés, habitudes et règles de la maison.",
+      "Un petit cadeau de ta région et proposer d'aider à la vaisselle sont des gestes chaleureux.",
+      "Apprends quelques mots de la langue locale ; bonjour et merci ouvrent déjà beaucoup de portes."
+     ],
+     "q": "Qu'aimerais-tu le plus apprendre d'une famille locale ?",
+     "c": "Apprends à dire bonjour, merci et délicieux dans une langue que tu aimerais utiliser."
+    },
+    "it": {
+     "t": "Soggiorni in famiglia",
+     "g": "Scopri com'è vivere con una famiglia del posto e come essere un ospite gradito.",
+     "p": [
+      "Aspettati vita di casa, non un hotel: pasti insieme, abitudini di famiglia e regole da seguire.",
+      "Un piccolo regalo dalla tua regione e offrirti di lavare i piatti sono gesti molto apprezzati.",
+      "Impara qualche parola della lingua locale: già ciao e grazie aprono tante porte."
+     ],
+     "q": "Cosa ti piacerebbe imparare di più da una famiglia del posto?",
+     "c": "Impara a dire ciao, grazie e delizioso in una lingua che vorresti usare."
+    },
+    "pt": {
+     "t": "Estadias com famílias",
+     "g": "Aprende como é viver com uma família local e como ser um ótimo hóspede.",
+     "p": [
+      "Espera vida de casa, não um hotel: refeições partilhadas, rotinas da família e regras da casa.",
+      "Uma pequena lembrança da tua terra e oferecer ajuda a lavar a loiça são gestos muito apreciados.",
+      "Aprende algumas palavras da língua local; só olá e obrigado já abrem muitas portas."
+     ],
+     "q": "O que mais gostarias de aprender com uma família local?",
+     "c": "Aprende a dizer olá, obrigado e delicioso numa língua que gostarias de usar."
+    },
+    "pt_BR": {
+     "t": "Casas de família",
+     "g": "Aprenda como é morar com uma família local e como ser um ótimo hóspede.",
+     "p": [
+      "Espere vida de casa, não um hotel: refeições juntos, rotina da família e regras da casa.",
+      "Uma lembrancinha da sua região e se oferecer para lavar a louça são gestos muito queridos.",
+      "Aprenda algumas palavras do idioma local; só olá e obrigado já abrem muitas portas."
+     ],
+     "q": "O que você mais gostaria de aprender com uma família local?",
+     "c": "Aprenda a dizer olá, obrigado e delicioso num idioma que você gostaria de usar."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning a route",
+     "g": "Draw a loose route that connects the places you most want to see.",
+     "p": [
+      "Start by marking your must-see places on a map, then look at how they naturally connect.",
+      "Check rough travel times between stops, not just distances; mountains and ferries slow things down.",
+      "Keep it loose: a line with a few dots and room for detours, not a minute-by-minute plan."
+     ],
+     "q": "If you could connect any three places in one trip, which would they be?",
+     "c": "Mark three dream places on a map and draw the simplest line connecting them."
+    },
+    "de": {
+     "t": "Eine Route planen",
+     "g": "Zeichne eine lockere Route, die die Orte verbindet, die du am liebsten sehen willst.",
+     "p": [
+      "Markier zuerst deine Must-see-Orte auf einer Karte und schau, wie sie sich natürlich verbinden.",
+      "Prüf ungefähre Fahrzeiten zwischen den Stopps, nicht nur Entfernungen; Berge und Fähren bremsen.",
+      "Bleib locker: eine Linie mit ein paar Punkten und Raum für Umwege, kein Plan im Minutentakt."
+     ],
+     "q": "Welche drei Orte würdest du gern auf einer Reise verbinden?",
+     "c": "Markier drei Traumorte auf einer Karte und zeichne die einfachste Linie zwischen ihnen."
+    },
+    "es": {
+     "t": "Planear una ruta",
+     "g": "Dibuja una ruta flexible que una los lugares que más quieres ver.",
+     "p": [
+      "Empieza marcando en un mapa los lugares imprescindibles y mira cómo se conectan de forma natural.",
+      "Revisa los tiempos de viaje aproximados, no solo las distancias; montañas y ferris lo hacen todo más lento.",
+      "Mantenla flexible: una línea con unos puntos y espacio para desvíos, no un plan al minuto."
+     ],
+     "q": "Si pudieras unir tres lugares en un mismo viaje, ¿cuáles serían?",
+     "c": "Marca tres lugares soñados en un mapa y traza la línea más sencilla que los una."
+    },
+    "fr": {
+     "t": "Tracer un itinéraire",
+     "g": "Dessine un itinéraire souple qui relie les lieux que tu veux le plus voir.",
+     "p": [
+      "Commence par marquer sur une carte tes lieux incontournables, puis regarde comment ils se relient.",
+      "Vérifie les temps de trajet approximatifs, pas seulement les distances ; montagnes et ferries ralentissent.",
+      "Reste souple : une ligne avec quelques points et de la place pour les détours, pas un plan minuté."
+     ],
+     "q": "Si tu pouvais relier trois lieux en un seul voyage, lesquels choisirais-tu ?",
+     "c": "Marque trois lieux de rêve sur une carte et trace la ligne la plus simple pour les relier."
+    },
+    "it": {
+     "t": "Pianificare un percorso",
+     "g": "Disegna un percorso flessibile che colleghi i posti che vuoi vedere di più.",
+     "p": [
+      "Inizia segnando su una mappa i posti imperdibili, poi guarda come si collegano in modo naturale.",
+      "Controlla i tempi di viaggio indicativi, non solo le distanze: montagne e traghetti rallentano.",
+      "Resta flessibile: una linea con qualche punto e spazio per deviazioni, non un piano al minuto."
+     ],
+     "q": "Se potessi collegare tre posti in un solo viaggio, quali sarebbero?",
+     "c": "Segna tre posti dei sogni su una mappa e traccia la linea più semplice che li unisce."
+    },
+    "pt": {
+     "t": "Planear um percurso",
+     "g": "Desenha um percurso flexível que ligue os lugares que mais queres ver.",
+     "p": [
+      "Começa por marcar num mapa os lugares imperdíveis e vê como se ligam naturalmente.",
+      "Verifica os tempos de viagem aproximados, não só as distâncias; montanhas e ferries atrasam tudo.",
+      "Mantém-no flexível: uma linha com alguns pontos e espaço para desvios, não um plano ao minuto."
+     ],
+     "q": "Se pudesses ligar três lugares numa só viagem, quais seriam?",
+     "c": "Marca três lugares de sonho num mapa e traça a linha mais simples que os une."
+    },
+    "pt_BR": {
+     "t": "Planejando um roteiro",
+     "g": "Desenhe um roteiro flexível que ligue os lugares que você mais quer conhecer.",
+     "p": [
+      "Comece marcando num mapa os lugares imperdíveis e veja como eles se conectam naturalmente.",
+      "Confira os tempos de viagem aproximados, não só as distâncias; serras e balsas deixam tudo mais lento.",
+      "Deixe flexível: uma linha com alguns pontos e espaço para desvios, não um plano minuto a minuto."
+     ],
+     "q": "Se você pudesse ligar três lugares numa só viagem, quais seriam?",
+     "c": "Marque três lugares dos sonhos num mapa e trace a linha mais simples que os liga."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Linear vs loop routes",
+     "g": "Choose between one-way journeys and circular routes that bring you back to the start.",
+     "p": [
+      "Linear routes go from A to B, so you never backtrack, but you may need an open-jaw flight home.",
+      "Loop routes return to your starting point, which often makes return flights simpler.",
+      "Look at the map: coastlines and valleys often suit linear trips, clusters of towns suit loops."
+     ],
+     "q": "Do you like the idea of ending a trip somewhere new, or coming full circle?",
+     "c": "Turn yesterday's three-place line into both a linear route and a loop."
+    },
+    "de": {
+     "t": "Strecke oder Rundreise",
+     "g": "Entscheide zwischen Reisen in eine Richtung und Rundreisen, die dich zum Start zurückbringen.",
+     "p": [
+      "Lineare Routen führen von A nach B ohne Umkehr, aber du brauchst vielleicht einen Gabelflug nach Hause.",
+      "Rundreisen enden am Ausgangspunkt, was Rückflüge oft einfacher macht.",
+      "Schau auf die Karte: Küsten und Täler passen zu linearen Reisen, Städtegruppen zu Rundreisen."
+     ],
+     "q": "Gefällt dir die Idee, eine Reise an einem neuen Ort zu beenden, oder lieber im Kreis?",
+     "c": "Mach aus deiner Drei-Orte-Linie von gestern eine lineare Route und eine Rundreise."
+    },
+    "es": {
+     "t": "Ruta lineal o circular",
+     "g": "Elige entre viajes de ida en una sola dirección y rutas circulares que vuelven al punto de partida.",
+     "p": [
+      "Las rutas lineales van de A a B sin retroceder, pero quizá necesites volar de vuelta desde otra ciudad.",
+      "Las circulares vuelven al punto de inicio, lo que suele simplificar el vuelo de regreso.",
+      "Mira el mapa: costas y valles suelen ir bien en línea; grupos de pueblos, en círculo."
+     ],
+     "q": "¿Te gusta la idea de terminar un viaje en un lugar nuevo o prefieres cerrar el círculo?",
+     "c": "Convierte la línea de tres lugares de ayer en una ruta lineal y en una circular."
+    },
+    "fr": {
+     "t": "Itinéraire linéaire ou boucle",
+     "g": "Choisis entre voyage aller simple et circuit en boucle qui te ramène au départ.",
+     "p": [
+      "L'itinéraire linéaire va de A à B sans revenir en arrière, mais il faut parfois rentrer d'une autre ville.",
+      "La boucle te ramène au point de départ, ce qui simplifie souvent le vol retour.",
+      "Regarde la carte : côtes et vallées se prêtent au linéaire, groupes de villes à la boucle."
+     ],
+     "q": "Aimes-tu l'idée de finir un voyage dans un lieu nouveau, ou de boucler la boucle ?",
+     "c": "Transforme ta ligne de trois lieux d'hier en itinéraire linéaire, puis en boucle."
+    },
+    "it": {
+     "t": "Percorso lineare o ad anello",
+     "g": "Scegli tra viaggi di sola andata e percorsi ad anello che ti riportano al punto di partenza.",
+     "p": [
+      "I percorsi lineari vanno da A a B senza tornare indietro, ma forse dovrai rientrare da un'altra città.",
+      "Quelli ad anello tornano al punto di partenza, cosa che spesso semplifica il volo di ritorno.",
+      "Guarda la mappa: coste e valli si prestano al lineare, gruppi di città all'anello."
+     ],
+     "q": "Ti piace l'idea di finire un viaggio in un posto nuovo o preferisci chiudere il cerchio?",
+     "c": "Trasforma la linea dei tre posti di ieri in un percorso lineare e in uno ad anello."
+    },
+    "pt": {
+     "t": "Percurso linear ou circular",
+     "g": "Escolhe entre viagens só de ida num sentido e percursos circulares que te trazem ao início.",
+     "p": [
+      "Os percursos lineares vão de A a B sem voltar atrás, mas talvez precises de regressar de outra cidade.",
+      "Os circulares voltam ao ponto de partida, o que costuma simplificar o voo de regresso.",
+      "Olha para o mapa: costas e vales dão para linear, grupos de vilas e cidades dão para circular."
+     ],
+     "q": "Gostas da ideia de acabar uma viagem num sítio novo, ou de fechar o círculo?",
+     "c": "Transforma a linha de três lugares de ontem num percurso linear e num circular."
+    },
+    "pt_BR": {
+     "t": "Roteiro linear ou circular",
+     "g": "Escolha entre viagens só de ida num sentido e roteiros circulares que voltam ao ponto de partida.",
+     "p": [
+      "Roteiros lineares vão de A a B sem voltar, mas talvez você precise voltar para casa de outra cidade.",
+      "Os circulares terminam no ponto de partida, o que costuma facilitar o voo de volta.",
+      "Olhe o mapa: litorais e vales combinam com linear, grupos de cidades com circular."
+     ],
+     "q": "Você gosta da ideia de terminar a viagem num lugar novo ou prefere fechar o círculo?",
+     "c": "Transforme a linha de três lugares de ontem num roteiro linear e num circular."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pacing your route",
+     "g": "Decide how many nights to spend in each place so you can enjoy it without rushing.",
+     "p": [
+      "A good rule of thumb: at least two or three nights per stop, so you get one full free day.",
+      "Every move costs time and energy; fewer places, seen well, usually beat many places seen in a blur.",
+      "Add a slow day every week or so for laundry, rest and simply wandering around."
+     ],
+     "q": "Would you rather see many places quickly or a few places deeply?",
+     "c": "Give each place on your route a number of nights and add one rest day."
+    },
+    "de": {
+     "t": "Das richtige Tempo",
+     "g": "Leg fest, wie viele Nächte du an jedem Ort bleibst, um ihn ohne Hetze zu genießen.",
+     "p": [
+      "Faustregel: mindestens zwei oder drei Nächte pro Stopp, damit du einen ganzen freien Tag hast.",
+      "Jeder Ortswechsel kostet Zeit und Kraft; wenige Orte gut gesehen schlagen viele im Schnelldurchlauf.",
+      "Plan etwa jede Woche einen ruhigen Tag für Wäsche, Erholung und einfach Herumschlendern ein."
+     ],
+     "q": "Siehst du lieber viele Orte schnell oder wenige Orte intensiv?",
+     "c": "Gib jedem Ort deiner Route eine Anzahl Nächte und füge einen Ruhetag hinzu."
+    },
+    "es": {
+     "t": "El ritmo de tu ruta",
+     "g": "Decide cuántas noches pasar en cada lugar para disfrutarlo sin prisas.",
+     "p": [
+      "Una buena regla: al menos dos o tres noches por parada, para tener un día completo libre.",
+      "Cada traslado cuesta tiempo y energía; pocos lugares bien vistos suelen ganar a muchos vistos deprisa.",
+      "Añade un día tranquilo más o menos cada semana para lavar ropa, descansar y pasear sin rumbo."
+     ],
+     "q": "¿Prefieres ver muchos lugares rápido o pocos lugares a fondo?",
+     "c": "Asigna a cada lugar de tu ruta un número de noches y añade un día de descanso."
+    },
+    "fr": {
+     "t": "Le rythme de ton itinéraire",
+     "g": "Décide combien de nuits passer à chaque étape pour en profiter sans courir.",
+     "p": [
+      "Règle simple : au moins deux ou trois nuits par étape, pour avoir une journée entière de libre.",
+      "Chaque déplacement coûte temps et énergie ; peu de lieux bien vus valent mieux que beaucoup survolés.",
+      "Ajoute une journée tranquille environ chaque semaine pour la lessive, le repos et la flânerie."
+     ],
+     "q": "Préfères-tu voir beaucoup de lieux vite, ou peu de lieux en profondeur ?",
+     "c": "Attribue un nombre de nuits à chaque étape de ton itinéraire et ajoute un jour de repos."
+    },
+    "it": {
+     "t": "Il ritmo del viaggio",
+     "g": "Decidi quante notti passare in ogni posto per goderlo senza correre.",
+     "p": [
+      "Una buona regola: almeno due o tre notti per tappa, così hai un giorno intero libero.",
+      "Ogni spostamento costa tempo ed energia: pochi posti visti bene battono tanti posti visti di corsa.",
+      "Aggiungi una giornata lenta circa ogni settimana per bucato, riposo e passeggiate senza meta."
+     ],
+     "q": "Preferisci vedere tanti posti in fretta o pochi posti a fondo?",
+     "c": "Assegna a ogni tappa del tuo percorso un numero di notti e aggiungi un giorno di riposo."
+    },
+    "pt": {
+     "t": "O ritmo do percurso",
+     "g": "Decide quantas noites passar em cada lugar para o aproveitar sem pressas.",
+     "p": [
+      "Uma boa regra: pelo menos duas ou três noites por paragem, para teres um dia inteiro livre.",
+      "Cada mudança custa tempo e energia; poucos lugares bem vistos costumam ganhar a muitos vistos à pressa.",
+      "Junta um dia calmo mais ou menos todas as semanas para lavar roupa, descansar e passear sem destino."
+     ],
+     "q": "Preferes ver muitos lugares depressa ou poucos lugares a fundo?",
+     "c": "Dá a cada lugar do teu percurso um número de noites e junta um dia de descanso."
+    },
+    "pt_BR": {
+     "t": "O ritmo do roteiro",
+     "g": "Decida quantas noites passar em cada lugar para aproveitar sem correria.",
+     "p": [
+      "Uma boa regra: pelo menos duas ou três noites por parada, para ter um dia inteiro livre.",
+      "Cada deslocamento custa tempo e energia; poucos lugares bem vistos costumam valer mais que muitos às pressas.",
+      "Coloque um dia tranquilo mais ou menos toda semana para lavar roupa, descansar e passear sem rumo."
+     ],
+     "q": "Você prefere ver muitos lugares rápido ou poucos lugares a fundo?",
+     "c": "Dê a cada lugar do seu roteiro um número de noites e acrescente um dia de descanso."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Overland travel basics",
+     "g": "See why buses, trains and boats are the backbone of backpacking and how to start using them.",
+     "p": [
+      "Travelling overland lets you watch landscapes change and stop in places flights skip.",
+      "Buses usually reach the most places; trains are often more comfortable; boats link islands and rivers.",
+      "Ask hostel staff and other travellers which companies are reliable on a given route."
+     ],
+     "q": "What is the most memorable bus, train or boat ride you have ever taken?",
+     "c": "Find out how you could travel overland between two cities you would like to visit."
+    },
+    "de": {
+     "t": "Grundlagen des Reisens über Land",
+     "g": "Erfahre, warum Busse, Züge und Boote das Rückgrat des Backpackings sind und wie du anfängst.",
+     "p": [
+      "Über Land siehst du Landschaften sich verändern und hältst an Orten, die Flüge auslassen.",
+      "Busse erreichen meist die meisten Orte, Züge sind oft bequemer, Boote verbinden Inseln und Flüsse.",
+      "Frag Hostelpersonal und andere Reisende, welche Anbieter auf einer Strecke zuverlässig sind."
+     ],
+     "q": "Was war die denkwürdigste Bus-, Zug- oder Bootsfahrt, die du je gemacht hast?",
+     "c": "Finde heraus, wie du über Land zwischen zwei Städten reisen könntest, die du besuchen möchtest."
+    },
+    "es": {
+     "t": "Viajar por tierra",
+     "g": "Descubre por qué autobuses, trenes y barcos son la columna del mochilero y cómo empezar a usarlos.",
+     "p": [
+      "Viajar por tierra te deja ver cómo cambia el paisaje y parar en lugares que los vuelos se saltan.",
+      "El autobús suele llegar a más sitios; el tren es más cómodo; los barcos unen islas y ríos.",
+      "Pregunta al personal del albergue y a otros viajeros qué compañías son fiables en cada ruta."
+     ],
+     "q": "¿Cuál es el viaje en autobús, tren o barco más memorable que has hecho?",
+     "c": "Averigua cómo viajar por tierra entre dos ciudades que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Voyager par voie terrestre",
+     "g": "Découvre pourquoi bus, trains et bateaux sont la colonne vertébrale du backpacking et comment t'y mettre.",
+     "p": [
+      "Voyager par la route permet de voir les paysages changer et de s'arrêter là où l'avion ne va pas.",
+      "Les bus desservent le plus d'endroits ; les trains sont souvent plus confortables ; les bateaux relient îles et fleuves.",
+      "Demande au personnel de l'auberge et aux voyageurs quelles compagnies sont fiables sur un trajet."
+     ],
+     "q": "Quel est le trajet en bus, train ou bateau le plus mémorable que tu aies fait ?",
+     "c": "Cherche comment voyager par voie terrestre entre deux villes que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Viaggiare via terra",
+     "g": "Scopri perché autobus, treni e barche sono la spina dorsale del backpacking e come iniziare a usarli.",
+     "p": [
+      "Viaggiare via terra ti fa vedere i paesaggi cambiare e fermarti in posti che i voli saltano.",
+      "Gli autobus arrivano quasi ovunque, i treni sono spesso più comodi, le barche collegano isole e fiumi.",
+      "Chiedi allo staff dell'ostello e ad altri viaggiatori quali compagnie sono affidabili su una tratta."
+     ],
+     "q": "Qual è il viaggio in autobus, treno o barca più memorabile che hai fatto?",
+     "c": "Scopri come viaggiare via terra tra due città che vorresti visitare."
+    },
+    "pt": {
+     "t": "Viajar por terra",
+     "g": "Descobre porque autocarros, comboios e barcos são a espinha dorsal do mochileiro e como começar.",
+     "p": [
+      "Viajar por terra deixa-te ver a paisagem mudar e parar em sítios que os voos ignoram.",
+      "Os autocarros chegam a mais sítios, os comboios são muitas vezes mais confortáveis, os barcos ligam ilhas e rios.",
+      "Pergunta ao staff do hostel e a outros viajantes que empresas são fiáveis em cada percurso."
+     ],
+     "q": "Qual foi a viagem de autocarro, comboio ou barco mais memorável que já fizeste?",
+     "c": "Descobre como viajar por terra entre duas cidades que gostarias de visitar."
+    },
+    "pt_BR": {
+     "t": "Viajando por terra",
+     "g": "Descubra por que ônibus, trens e barcos são a base do mochilão e como começar a usá-los.",
+     "p": [
+      "Viajar por terra deixa você ver a paisagem mudar e parar em lugares que os voos pulam.",
+      "O ônibus chega a mais lugares, o trem costuma ser mais confortável e barcos ligam ilhas e rios.",
+      "Pergunte à equipe do hostel e a outros viajantes quais empresas são confiáveis em cada trecho."
+     ],
+     "q": "Qual foi a viagem de ônibus, trem ou barco mais marcante que você já fez?",
+     "c": "Descubra como viajar por terra entre duas cidades que você gostaria de conhecer."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading timetables",
+     "g": "Understand schedules, platforms and connections so you catch the right ride every time.",
+     "p": [
+      "Many countries use the 24-hour clock, so 18:40 means 6:40 in the evening.",
+      "Check the final destination shown on the train or bus, not just the number, and confirm the platform.",
+      "Leave a buffer between connections; a 15-minute change can vanish with a small delay."
+     ],
+     "q": "Have you ever missed or nearly missed a connection? What happened?",
+     "c": "Look up a real timetable and find a journey with one change and a safe buffer."
+    },
+    "de": {
+     "t": "Fahrpläne lesen",
+     "g": "Verstehe Fahrpläne, Gleise und Anschlüsse, damit du immer das richtige Verkehrsmittel erwischst.",
+     "p": [
+      "Viele Länder nutzen die 24-Stunden-Uhr, 18:40 heißt also 6:40 Uhr abends.",
+      "Prüf das Endziel am Zug oder Bus, nicht nur die Nummer, und bestätige das Gleis.",
+      "Plan Puffer zwischen Anschlüssen ein; 15 Minuten Umstieg sind bei kleiner Verspätung schnell weg."
+     ],
+     "q": "Hast du schon mal einen Anschluss verpasst oder fast verpasst? Was ist passiert?",
+     "c": "Such einen echten Fahrplan und finde eine Verbindung mit einem Umstieg und sicherem Puffer."
+    },
+    "es": {
+     "t": "Leer horarios",
+     "g": "Entiende horarios, andenes y conexiones para tomar siempre el transporte correcto.",
+     "p": [
+      "Muchos países usan el formato de 24 horas, así que 18:40 son las siete menos veinte de la tarde.",
+      "Comprueba el destino final que indica el tren o autobús, no solo el número, y confirma el andén.",
+      "Deja margen entre conexiones; un transbordo de 15 minutos desaparece con un pequeño retraso."
+     ],
+     "q": "¿Alguna vez perdiste o casi perdiste una conexión? ¿Qué pasó?",
+     "c": "Busca un horario real y encuentra un trayecto con un transbordo y un margen seguro."
+    },
+    "fr": {
+     "t": "Lire les horaires",
+     "g": "Comprends horaires, quais et correspondances pour prendre le bon transport à chaque fois.",
+     "p": [
+      "Beaucoup de pays utilisent l'heure sur 24 heures : 18:40, c'est sept heures moins vingt du soir.",
+      "Vérifie la destination finale affichée sur le train ou le bus, pas seulement le numéro, et confirme le quai.",
+      "Prévois une marge entre correspondances ; 15 minutes disparaissent vite au moindre retard."
+     ],
+     "q": "As-tu déjà raté ou presque raté une correspondance ? Que s'est-il passé ?",
+     "c": "Consulte un vrai horaire et trouve un trajet avec une correspondance et une marge sûre."
+    },
+    "it": {
+     "t": "Leggere gli orari",
+     "g": "Capisci orari, binari e coincidenze per prendere sempre il mezzo giusto.",
+     "p": [
+      "In molti paesi si usa il formato 24 ore, quindi 18:40 significa le sette meno venti di sera.",
+      "Controlla la destinazione finale indicata su treno o autobus, non solo il numero, e conferma il binario.",
+      "Lascia margine tra le coincidenze: un cambio di 15 minuti sparisce con un piccolo ritardo."
+     ],
+     "q": "Ti è mai capitato di perdere o quasi perdere una coincidenza? Cosa è successo?",
+     "c": "Cerca un orario vero e trova un viaggio con un cambio e un margine sicuro."
+    },
+    "pt": {
+     "t": "Ler horários",
+     "g": "Percebe horários, linhas e ligações para apanhares sempre o transporte certo.",
+     "p": [
+      "Muitos países usam o formato de 24 horas, por isso 18:40 são vinte para as sete da tarde.",
+      "Confirma o destino final indicado no comboio ou autocarro, não só o número, e confirma a linha.",
+      "Deixa margem entre ligações; um transbordo de 15 minutos desaparece com um pequeno atraso."
+     ],
+     "q": "Já perdeste ou quase perdeste uma ligação? O que aconteceu?",
+     "c": "Procura um horário real e encontra uma viagem com um transbordo e uma margem segura."
+    },
+    "pt_BR": {
+     "t": "Lendo horários",
+     "g": "Entenda horários, plataformas e conexões para pegar sempre o transporte certo.",
+     "p": [
+      "Muitos países usam o formato de 24 horas, então 18:40 são vinte para as sete da noite.",
+      "Confira o destino final mostrado no trem ou ônibus, não só o número, e confirme a plataforma.",
+      "Deixe uma folga entre conexões; uma baldeação de 15 minutos some com um pequeno atraso."
+     ],
+     "q": "Você já perdeu ou quase perdeu uma conexão? O que aconteceu?",
+     "c": "Procure um horário real e encontre uma viagem com uma baldeação e uma folga segura."
+    }
+   }
+  }
+ ]
+}

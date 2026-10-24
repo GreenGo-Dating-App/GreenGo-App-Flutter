@@ -1,0 +1,835 @@
+{
+ "topic": "packing",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hygiene extras",
+     "g": "Pack tissues, hand gel and wet wipes for long journeys and public places.",
+     "p": [
+      "A small pack of tissues doubles as napkins, toilet paper backup and a quick clean-up for spills.",
+      "Hand gel helps before snacks on buses and trains when there is no sink nearby; check its size for liquid rules.",
+      "Wet wipes freshen you up after a long flight and clean tray tables, armrests and sticky hands."
+     ],
+     "q": "Which of these extras has saved you most often on a trip?",
+     "c": "Put a pack of tissues and a small hand gel in the bag you carry every day."
+    },
+    "de": {
+     "t": "Hygiene-Extras",
+     "g": "Pack Taschentücher, Handgel und Feuchttücher für lange Fahrten und öffentliche Orte ein.",
+     "p": [
+      "Ein Päckchen Taschentücher dient auch als Serviette, Klopapier-Reserve und schnelle Hilfe bei Flecken.",
+      "Handgel hilft vor Snacks in Bus und Zug, wenn kein Waschbecken in der Nähe ist; achte auf die Größe.",
+      "Feuchttücher erfrischen nach langen Flügen und reinigen Klapptische, Armlehnen und klebrige Hände."
+     ],
+     "q": "Welches dieser Extras hat dich auf Reisen am häufigsten gerettet?",
+     "c": "Steck ein Päckchen Taschentücher und ein kleines Handgel in die Tasche, die du täglich trägst."
+    },
+    "es": {
+     "t": "Extras de higiene",
+     "g": "Lleva pañuelos, gel de manos y toallitas húmedas para trayectos largos y lugares públicos.",
+     "p": [
+      "Un paquete de pañuelos sirve de servilleta, de papel higiénico de reserva y para limpiar derrames.",
+      "El gel de manos ayuda antes de comer en autobuses y trenes sin lavabo cerca; revisa su tamaño por los líquidos.",
+      "Las toallitas te refrescan tras un vuelo largo y limpian bandejas, reposabrazos y manos pegajosas."
+     ],
+     "q": "¿Cuál de estos extras te ha salvado más veces de viaje?",
+     "c": "Mete un paquete de pañuelos y un gel de manos pequeño en el bolso que llevas a diario."
+    },
+    "fr": {
+     "t": "Les extras d'hygiène",
+     "g": "Emporte mouchoirs, gel hydroalcoolique et lingettes pour les longs trajets et lieux publics.",
+     "p": [
+      "Un paquet de mouchoirs sert aussi de serviette, de papier toilette de secours et d'essuie-tout express.",
+      "Le gel pour les mains aide avant un en-cas dans le bus ou le train sans lavabo ; vérifie sa taille pour les liquides.",
+      "Les lingettes rafraîchissent après un long vol et nettoient tablettes, accoudoirs et mains collantes."
+     ],
+     "q": "Lequel de ces extras t'a le plus souvent sauvé en voyage ?",
+     "c": "Glisse un paquet de mouchoirs et un petit gel pour les mains dans le sac que tu portes chaque jour."
+    },
+    "it": {
+     "t": "Extra per l'igiene",
+     "g": "Porta fazzoletti, gel igienizzante e salviette umide per viaggi lunghi e luoghi pubblici.",
+     "p": [
+      "Un pacchetto di fazzoletti fa anche da tovagliolo, da carta igienica di riserva e pulisce le piccole macchie.",
+      "Il gel per le mani aiuta prima di uno spuntino su bus e treni senza lavandino; controlla la misura per i liquidi.",
+      "Le salviette rinfrescano dopo un volo lungo e puliscono tavolini, braccioli e mani appiccicose."
+     ],
+     "q": "Quale di questi extra ti ha salvato più spesso in viaggio?",
+     "c": "Metti un pacchetto di fazzoletti e un piccolo gel per le mani nella borsa che porti ogni giorno."
+    },
+    "pt": {
+     "t": "Extras de higiene",
+     "g": "Leva lenços, gel desinfetante e toalhitas húmidas para viagens longas e locais públicos.",
+     "p": [
+      "Um pacote de lenços serve de guardanapo, papel higiénico de reserva e para limpar derrames.",
+      "O gel para as mãos ajuda antes de comer no autocarro ou comboio sem lavatório; vê o tamanho por causa dos líquidos.",
+      "As toalhitas refrescam depois de um voo longo e limpam mesas, apoios de braço e mãos pegajosas."
+     ],
+     "q": "Qual destes extras te salvou mais vezes em viagem?",
+     "c": "Põe um pacote de lenços e um gel pequeno para as mãos no saco que levas todos os dias."
+    },
+    "pt_BR": {
+     "t": "Extras de higiene",
+     "g": "Leve lenços, álcool em gel e lenços umedecidos para viagens longas e lugares públicos.",
+     "p": [
+      "Um pacotinho de lenços vira guardanapo, papel higiênico reserva e ajuda a limpar respingos.",
+      "O álcool em gel ajuda antes do lanche no ônibus ou trem sem pia por perto; veja o tamanho por causa dos líquidos.",
+      "Lenços umedecidos refrescam depois de um voo longo e limpam mesinhas, braços de poltrona e mãos melecadas."
+     ],
+     "q": "Qual desses extras já salvou você mais vezes numa viagem?",
+     "c": "Coloque um pacotinho de lenços e um álcool em gel pequeno na bolsa que você usa todo dia."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone and chargers",
+     "g": "Pack cables, a compact charger and a simple way to keep them tangle-free.",
+     "p": [
+      "One charger with two or more ports can replace several plugs and charge phone and earphones together.",
+      "Bring one cable per device type, plus one spare: cables are small, cheap to carry and easy to lose.",
+      "Wrap each cable loosely and secure it with a tie or clip so it never knots in your bag."
+     ],
+     "q": "How many chargers and cables do you usually travel with?",
+     "c": "Gather every cable and charger you would take, then see which ones a single multi-port charger could replace."
+    },
+    "de": {
+     "t": "Handy und Ladegeräte",
+     "g": "Pack Kabel, ein kompaktes Ladegerät und eine einfache Lösung gegen Kabelsalat ein.",
+     "p": [
+      "Ein Ladegerät mit zwei oder mehr Anschlüssen ersetzt mehrere Stecker und lädt Handy und Kopfhörer gleichzeitig.",
+      "Nimm ein Kabel pro Gerätetyp plus eins als Reserve mit: Kabel sind klein und gehen leicht verloren.",
+      "Wickle jedes Kabel locker auf und sichere es mit einem Band oder Clip, damit es sich nie verknotet."
+     ],
+     "q": "Mit wie vielen Ladegeräten und Kabeln reist du normalerweise?",
+     "c": "Leg alle Kabel und Ladegeräte raus und schau, welche ein einziges Mehrfach-Ladegerät ersetzen könnte."
+    },
+    "es": {
+     "t": "Móvil y cargadores",
+     "g": "Lleva cables, un cargador compacto y una forma sencilla de evitar enredos.",
+     "p": [
+      "Un cargador con dos o más puertos sustituye varios enchufes y carga móvil y auriculares a la vez.",
+      "Lleva un cable por tipo de aparato y uno de repuesto: son pequeños y fáciles de perder.",
+      "Enrolla cada cable sin apretar y sujétalo con una brida o clip para que nunca se anude."
+     ],
+     "q": "¿Con cuántos cargadores y cables sueles viajar?",
+     "c": "Reúne todos los cables y cargadores que llevarías y mira cuáles podría sustituir un cargador múltiple."
+    },
+    "fr": {
+     "t": "Téléphone et chargeurs",
+     "g": "Emporte câbles, chargeur compact et une méthode simple pour éviter les nœuds.",
+     "p": [
+      "Un chargeur à deux ports ou plus remplace plusieurs prises et charge téléphone et écouteurs en même temps.",
+      "Prends un câble par type d'appareil, plus un de secours : les câbles sont petits et se perdent facilement.",
+      "Enroule chaque câble sans serrer et fixe-le avec une attache ou un clip pour qu'il ne s'emmêle jamais."
+     ],
+     "q": "Avec combien de chargeurs et de câbles voyages-tu d'habitude ?",
+     "c": "Rassemble tous tes câbles et chargeurs, puis vois lesquels un seul chargeur multiport pourrait remplacer."
+    },
+    "it": {
+     "t": "Telefono e caricatori",
+     "g": "Porta cavi, un caricatore compatto e un modo semplice per non farli aggrovigliare.",
+     "p": [
+      "Un caricatore con due o più porte sostituisce varie spine e carica insieme telefono e auricolari.",
+      "Porta un cavo per tipo di dispositivo più uno di scorta: i cavi sono piccoli e si perdono facilmente.",
+      "Arrotola ogni cavo senza stringere e fermalo con una fascetta o una clip così non si annoda mai."
+     ],
+     "q": "Con quanti caricatori e cavi viaggi di solito?",
+     "c": "Raccogli tutti i cavi e caricatori che porteresti e vedi quali potrebbe sostituire un caricatore multiporta."
+    },
+    "pt": {
+     "t": "Telemóvel e carregadores",
+     "g": "Leva cabos, um carregador compacto e uma forma simples de evitar nós.",
+     "p": [
+      "Um carregador com duas ou mais portas substitui várias fichas e carrega telemóvel e auriculares ao mesmo tempo.",
+      "Leva um cabo por tipo de aparelho e um de reserva: os cabos são pequenos e perdem-se com facilidade.",
+      "Enrola cada cabo sem apertar e prende-o com uma braçadeira ou mola para nunca se enrolar na mala."
+     ],
+     "q": "Com quantos carregadores e cabos costumas viajar?",
+     "c": "Junta todos os cabos e carregadores que levarias e vê quais um único carregador múltiplo substituiria."
+    },
+    "pt_BR": {
+     "t": "Celular e carregadores",
+     "g": "Leve cabos, um carregador compacto e um jeito simples de evitar nós.",
+     "p": [
+      "Um carregador com duas ou mais portas substitui várias tomadas e carrega celular e fone ao mesmo tempo.",
+      "Leve um cabo por tipo de aparelho e um reserva: cabos são pequenos e somem com facilidade.",
+      "Enrole cada cabo sem apertar e prenda com uma presilha ou clipe para nunca embolar na mala."
+     ],
+     "q": "Com quantos carregadores e cabos você costuma viajar?",
+     "c": "Junte todos os cabos e carregadores que levaria e veja quais um único carregador com várias portas substituiria."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Power banks",
+     "g": "Learn why power banks travel in hand luggage and how to choose a useful capacity.",
+     "p": [
+      "Power banks contain lithium batteries, and airlines usually require them in hand luggage, not in checked bags.",
+      "Airlines also set capacity limits, often shown in watt-hours on the label, so check your airline's rules.",
+      "A bank that can fully charge your phone once or twice is enough for most travel days and stays light."
+     ],
+     "q": "When does your phone battery usually run out on a travel day?",
+     "c": "Find your power bank, read the capacity on its label and charge it so it is ready for your next trip."
+    },
+    "de": {
+     "t": "Powerbanks",
+     "g": "Erfahre, warum Powerbanks ins Handgepäck gehören und wie du eine sinnvolle Kapazität wählst.",
+     "p": [
+      "Powerbanks enthalten Lithium-Akkus; Airlines verlangen sie meist im Handgepäck, nicht im Koffer.",
+      "Airlines setzen auch Kapazitätsgrenzen, oft in Wattstunden auf dem Etikett angegeben; prüf die Regeln.",
+      "Eine Powerbank, die dein Handy ein- bis zweimal voll lädt, reicht für die meisten Reisetage und bleibt leicht."
+     ],
+     "q": "Wann ist dein Handyakku an Reisetagen meistens leer?",
+     "c": "Such deine Powerbank, lies die Kapazität auf dem Etikett und lade sie für die nächste Reise auf."
+    },
+    "es": {
+     "t": "Baterías externas",
+     "g": "Descubre por qué las baterías externas van en cabina y cómo elegir una capacidad útil.",
+     "p": [
+      "Llevan baterías de litio y las aerolíneas suelen exigirlas en el equipaje de mano, no en el facturado.",
+      "Las aerolíneas también fijan límites de capacidad, a menudo en vatios hora en la etiqueta: consulta sus normas.",
+      "Una batería que cargue tu móvil una o dos veces basta para casi cualquier día de viaje y pesa poco."
+     ],
+     "q": "¿Cuándo se te suele acabar la batería del móvil en un día de viaje?",
+     "c": "Busca tu batería externa, lee la capacidad en la etiqueta y cárgala para tu próximo viaje."
+    },
+    "fr": {
+     "t": "Les batteries externes",
+     "g": "Comprends pourquoi les batteries externes voyagent en cabine et comment choisir une capacité utile.",
+     "p": [
+      "Elles contiennent des batteries au lithium, que les compagnies exigent en général en cabine, pas en soute.",
+      "Les compagnies fixent aussi des limites de capacité, souvent en wattheures sur l'étiquette : vérifie leurs règles.",
+      "Une batterie qui recharge ton téléphone une ou deux fois suffit pour la plupart des trajets et reste légère."
+     ],
+     "q": "À quel moment ta batterie de téléphone lâche-t-elle d'habitude un jour de voyage ?",
+     "c": "Trouve ta batterie externe, lis sa capacité sur l'étiquette et recharge-la pour le prochain voyage."
+    },
+    "it": {
+     "t": "I power bank",
+     "g": "Scopri perché i power bank viaggiano nel bagaglio a mano e come scegliere una capacità utile.",
+     "p": [
+      "Contengono batterie al litio e le compagnie di solito li vogliono nel bagaglio a mano, non in stiva.",
+      "Le compagnie fissano anche limiti di capacità, spesso indicati in wattora sull'etichetta: controlla le regole.",
+      "Un power bank che ricarica il telefono una o due volte basta per la maggior parte dei giorni di viaggio."
+     ],
+     "q": "Quando si scarica di solito il telefono in un giorno di viaggio?",
+     "c": "Trova il tuo power bank, leggi la capacità sull'etichetta e caricalo per il prossimo viaggio."
+    },
+    "pt": {
+     "t": "Baterias externas",
+     "g": "Percebe porque as baterias externas viajam na bagagem de mão e como escolher uma capacidade útil.",
+     "p": [
+      "Têm baterias de lítio e as companhias costumam exigi-las na bagagem de mão, não no porão.",
+      "As companhias também fixam limites de capacidade, muitas vezes em watts-hora no rótulo: confirma as regras.",
+      "Uma bateria que carregue o telemóvel uma ou duas vezes chega para quase todos os dias de viagem e é leve."
+     ],
+     "q": "Quando costuma acabar a bateria do teu telemóvel num dia de viagem?",
+     "c": "Procura a tua bateria externa, lê a capacidade no rótulo e carrega-a para a próxima viagem."
+    },
+    "pt_BR": {
+     "t": "Power banks",
+     "g": "Entenda por que o power bank vai na bagagem de mão e como escolher uma capacidade útil.",
+     "p": [
+      "Eles têm baterias de lítio, e as companhias costumam exigir que fiquem na bagagem de mão, não na despachada.",
+      "As companhias também limitam a capacidade, muitas vezes em watt-hora no rótulo: confira as regras.",
+      "Um power bank que carregue o celular uma ou duas vezes resolve quase todo dia de viagem e é leve."
+     ],
+     "q": "Em que momento a bateria do seu celular costuma acabar num dia de viagem?",
+     "c": "Ache o seu power bank, leia a capacidade no rótulo e carregue para a próxima viagem."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plug adapters",
+     "g": "Check the socket type at your destination, since countries use different ones.",
+     "p": [
+      "Plug and socket shapes differ around the world, and a few countries even use more than one type.",
+      "Look up the socket type for each country on your route before you leave, not at the hotel at night.",
+      "A universal adapter covers many countries; one with built-in USB ports can also replace a charger."
+     ],
+     "q": "Have you ever arrived somewhere and found your plug did not fit?",
+     "c": "Pick a country you would love to visit and look up which plug type it uses."
+    },
+    "de": {
+     "t": "Reisestecker",
+     "g": "Prüf den Steckdosentyp am Reiseziel, denn Länder nutzen unterschiedliche.",
+     "p": [
+      "Stecker und Steckdosen sehen weltweit verschieden aus, und manche Länder nutzen sogar mehrere Typen.",
+      "Schlag den Steckdosentyp für jedes Land deiner Route vor der Abreise nach, nicht erst nachts im Hotel.",
+      "Ein Universaladapter deckt viele Länder ab; einer mit USB-Anschlüssen kann auch ein Ladegerät ersetzen."
+     ],
+     "q": "Bist du schon einmal angekommen und dein Stecker passte nicht?",
+     "c": "Wähle ein Land, das du gern besuchen würdest, und finde heraus, welchen Steckertyp es nutzt."
+    },
+    "es": {
+     "t": "Adaptadores de enchufe",
+     "g": "Consulta el tipo de enchufe de tu destino, porque cada país usa el suyo.",
+     "p": [
+      "La forma de enchufes y tomas cambia en el mundo, y algunos países incluso usan más de un tipo.",
+      "Busca el tipo de enchufe de cada país de tu ruta antes de salir, no de noche en el hotel.",
+      "Un adaptador universal sirve en muchos países; uno con puertos USB puede sustituir también un cargador."
+     ],
+     "q": "¿Alguna vez llegaste a un sitio y tu enchufe no encajaba?",
+     "c": "Elige un país que te encantaría visitar y averigua qué tipo de enchufe usa."
+    },
+    "fr": {
+     "t": "Les adaptateurs de prise",
+     "g": "Vérifie le type de prise à destination, car chaque pays a le sien.",
+     "p": [
+      "La forme des prises varie dans le monde, et quelques pays utilisent même plusieurs types.",
+      "Cherche le type de prise de chaque pays de ton itinéraire avant de partir, pas le soir à l'hôtel.",
+      "Un adaptateur universel couvre de nombreux pays ; avec des ports USB, il peut aussi remplacer un chargeur."
+     ],
+     "q": "Es-tu déjà arrivé quelque part sans pouvoir brancher ta prise ?",
+     "c": "Choisis un pays que tu rêves de visiter et cherche quel type de prise il utilise."
+    },
+    "it": {
+     "t": "Gli adattatori per le prese",
+     "g": "Controlla il tipo di presa a destinazione, perché ogni Paese ha il suo.",
+     "p": [
+      "Spine e prese cambiano forma nel mondo, e alcuni Paesi usano perfino più di un tipo.",
+      "Cerca il tipo di presa di ogni Paese del tuo itinerario prima di partire, non la sera in hotel.",
+      "Un adattatore universale copre molti Paesi; uno con porte USB può sostituire anche un caricatore."
+     ],
+     "q": "Ti è mai capitato di arrivare in un posto e trovare che la spina non entrava?",
+     "c": "Scegli un Paese che ti piacerebbe visitare e scopri che tipo di presa usa."
+    },
+    "pt": {
+     "t": "Adaptadores de tomada",
+     "g": "Confirma o tipo de tomada no destino, porque cada país usa o seu.",
+     "p": [
+      "A forma das fichas e tomadas muda pelo mundo, e alguns países usam até mais do que um tipo.",
+      "Procura o tipo de tomada de cada país do percurso antes de partir, não à noite no hotel.",
+      "Um adaptador universal serve em muitos países; um com portas USB pode substituir também um carregador."
+     ],
+     "q": "Já chegaste a algum lado e a tua ficha não encaixava?",
+     "c": "Escolhe um país que adorarias visitar e descobre que tipo de tomada usa."
+    },
+    "pt_BR": {
+     "t": "Adaptadores de tomada",
+     "g": "Confira o tipo de tomada no destino, porque cada país usa o seu.",
+     "p": [
+      "O formato de plugues e tomadas muda pelo mundo, e alguns países usam até mais de um tipo.",
+      "Pesquise o tipo de tomada de cada país do roteiro antes de sair, não de noite no hotel.",
+      "Um adaptador universal serve em muitos países; um com portas USB pode substituir até um carregador."
+     ],
+     "q": "Você já chegou num lugar e o seu plugue não encaixou?",
+     "c": "Escolha um país que adoraria visitar e descubra qual tipo de tomada ele usa."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Voltage and your devices",
+     "g": "Read the label to see if a device works on both 110-120 and 220-240 volts.",
+     "p": [
+      "Countries supply electricity at around 110-120 volts or 220-240 volts, and an adapter does not change that.",
+      "Look for something like 100-240V on the charger label: that device works almost anywhere with just an adapter.",
+      "Many phone and laptop chargers are dual-voltage, but some hair tools and kettles are not, so check first."
+     ],
+     "q": "Have you ever checked the small print on your chargers before?",
+     "c": "Read the labels on three of your chargers today and note which ones say 100-240V."
+    },
+    "de": {
+     "t": "Spannung und deine Geräte",
+     "g": "Lies das Etikett: Funktioniert das Gerät mit 110-120 und 220-240 Volt?",
+     "p": [
+      "Länder liefern Strom mit etwa 110-120 oder 220-240 Volt, und ein Adapter ändert daran nichts.",
+      "Steht auf dem Ladegerät etwa 100-240V, funktioniert es mit einem Adapter fast überall.",
+      "Viele Handy- und Laptop-Ladegeräte vertragen beide Spannungen, manche Haargeräte und Wasserkocher nicht."
+     ],
+     "q": "Hast du schon einmal das Kleingedruckte auf deinen Ladegeräten gelesen?",
+     "c": "Lies heute die Etiketten von drei Ladegeräten und notiere, welche 100-240V angeben."
+    },
+    "es": {
+     "t": "El voltaje y tus aparatos",
+     "g": "Lee la etiqueta para ver si un aparato funciona a 110-120 y a 220-240 voltios.",
+     "p": [
+      "Los países suministran electricidad a unos 110-120 o 220-240 voltios, y un adaptador no cambia eso.",
+      "Si la etiqueta del cargador dice algo como 100-240V, funciona casi en cualquier sitio solo con un adaptador.",
+      "Muchos cargadores de móvil y portátil son de doble voltaje, pero algunos secadores y hervidores no: compruébalo."
+     ],
+     "q": "¿Alguna vez habías leído la letra pequeña de tus cargadores?",
+     "c": "Lee hoy la etiqueta de tres cargadores y apunta cuáles dicen 100-240V."
+    },
+    "fr": {
+     "t": "La tension et tes appareils",
+     "g": "Lis l'étiquette pour savoir si un appareil fonctionne en 110-120 et en 220-240 volts.",
+     "p": [
+      "Les pays fournissent du courant à environ 110-120 ou 220-240 volts, et un adaptateur ne change rien à cela.",
+      "Si l'étiquette du chargeur indique par exemple 100-240V, il marche presque partout avec un simple adaptateur.",
+      "Beaucoup de chargeurs de téléphone et d'ordinateur sont bitension, mais certains sèche-cheveux non : vérifie."
+     ],
+     "q": "As-tu déjà lu les petites lignes sur tes chargeurs ?",
+     "c": "Lis aujourd'hui l'étiquette de trois chargeurs et note lesquels indiquent 100-240V."
+    },
+    "it": {
+     "t": "Il voltaggio e i tuoi dispositivi",
+     "g": "Leggi l'etichetta per sapere se un dispositivo funziona sia a 110-120 sia a 220-240 volt.",
+     "p": [
+      "I Paesi forniscono corrente a circa 110-120 o 220-240 volt, e un adattatore non cambia questo.",
+      "Se l'etichetta del caricatore riporta qualcosa come 100-240V, funziona quasi ovunque con un semplice adattatore.",
+      "Molti caricatori di telefono e portatile sono a doppio voltaggio, ma alcuni phon e bollitori no: controlla."
+     ],
+     "q": "Avevi mai letto le scritte piccole sui tuoi caricatori?",
+     "c": "Leggi oggi le etichette di tre caricatori e annota quali riportano 100-240V."
+    },
+    "pt": {
+     "t": "A voltagem e os teus aparelhos",
+     "g": "Lê o rótulo para saber se um aparelho funciona a 110-120 e a 220-240 volts.",
+     "p": [
+      "Os países fornecem eletricidade a cerca de 110-120 ou 220-240 volts, e um adaptador não muda isso.",
+      "Se o rótulo do carregador disser algo como 100-240V, funciona quase em todo o lado só com um adaptador.",
+      "Muitos carregadores de telemóvel e portátil são de dupla voltagem, mas alguns secadores e chaleiras não."
+     ],
+     "q": "Alguma vez leste as letras pequenas dos teus carregadores?",
+     "c": "Lê hoje o rótulo de três carregadores e aponta quais dizem 100-240V."
+    },
+    "pt_BR": {
+     "t": "A voltagem e seus aparelhos",
+     "g": "Leia a etiqueta para ver se o aparelho funciona em 110-120 e em 220-240 volts.",
+     "p": [
+      "Os países fornecem energia em cerca de 110-120 ou 220-240 volts, e um adaptador não muda isso.",
+      "Se a etiqueta do carregador disser algo como 100-240V, ele funciona quase em qualquer lugar só com adaptador.",
+      "Muitos carregadores de celular e notebook são bivolt, mas alguns secadores e chaleiras não: confira."
+     ],
+     "q": "Você já tinha lido as letrinhas dos seus carregadores?",
+     "c": "Leia hoje a etiqueta de três carregadores e anote quais dizem 100-240V."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Headphones and entertainment",
+     "g": "Prepare downloads, an e-reader and earphones for long journeys.",
+     "p": [
+      "Download music, podcasts, films, maps and books before you leave: Wi-Fi on the road can be patchy.",
+      "An e-reader holds hundreds of books in the space of one; a slim paperback is a lovely low-tech option.",
+      "Earphones with a case, plus a short wired backup or adapter, keep long rides peaceful."
+     ],
+     "q": "What do you love to listen to, watch or read on a long journey?",
+     "c": "Download one album, podcast or book today that you would save for your next long trip."
+    },
+    "de": {
+     "t": "Kopfhörer und Unterhaltung",
+     "g": "Bereite Downloads, E-Reader und Kopfhörer für lange Fahrten vor.",
+     "p": [
+      "Lade Musik, Podcasts, Filme, Karten und Bücher vorher herunter: WLAN unterwegs ist oft lückenhaft.",
+      "Ein E-Reader fasst Hunderte Bücher im Format von einem; ein dünnes Taschenbuch ist die schöne Alternative.",
+      "Kopfhörer mit Etui plus ein kurzes Kabel oder Adapter als Reserve machen lange Fahrten entspannt."
+     ],
+     "q": "Was hörst, schaust oder liest du am liebsten auf einer langen Reise?",
+     "c": "Lade heute ein Album, einen Podcast oder ein Buch für deine nächste lange Reise herunter."
+    },
+    "es": {
+     "t": "Auriculares y entretenimiento",
+     "g": "Prepara descargas, un lector electrónico y auriculares para trayectos largos.",
+     "p": [
+      "Descarga música, pódcasts, películas, mapas y libros antes de salir: el wifi en ruta puede fallar.",
+      "Un lector electrónico guarda cientos de libros en el espacio de uno; un libro de bolsillo es un bonito plan B.",
+      "Unos auriculares con estuche y un cable corto o adaptador de reserva hacen los trayectos tranquilos."
+     ],
+     "q": "¿Qué te encanta escuchar, ver o leer en un viaje largo?",
+     "c": "Descarga hoy un álbum, pódcast o libro para guardarlo para tu próximo viaje largo."
+    },
+    "fr": {
+     "t": "Écouteurs et divertissement",
+     "g": "Prépare téléchargements, liseuse et écouteurs pour les longs trajets.",
+     "p": [
+      "Télécharge musique, podcasts, films, cartes et livres avant de partir : le wifi en route est souvent capricieux.",
+      "Une liseuse contient des centaines de livres dans le volume d'un seul ; un poche fin reste une jolie option.",
+      "Des écouteurs avec étui, plus un petit câble ou adaptateur de secours, rendent les longs trajets paisibles."
+     ],
+     "q": "Qu'aimes-tu écouter, regarder ou lire pendant un long trajet ?",
+     "c": "Télécharge aujourd'hui un album, un podcast ou un livre à garder pour ton prochain long voyage."
+    },
+    "it": {
+     "t": "Cuffie e intrattenimento",
+     "g": "Prepara download, e-reader e auricolari per i viaggi lunghi.",
+     "p": [
+      "Scarica musica, podcast, film, mappe e libri prima di partire: il wifi in viaggio può essere instabile.",
+      "Un e-reader contiene centinaia di libri nello spazio di uno; un tascabile sottile è una bella alternativa.",
+      "Auricolari con custodia, più un cavetto o adattatore di riserva, rendono sereni i lunghi tragitti."
+     ],
+     "q": "Cosa ami ascoltare, guardare o leggere in un viaggio lungo?",
+     "c": "Scarica oggi un album, un podcast o un libro da tenere per il prossimo viaggio lungo."
+    },
+    "pt": {
+     "t": "Auscultadores e entretenimento",
+     "g": "Prepara downloads, um leitor de livros digitais e auriculares para viagens longas.",
+     "p": [
+      "Descarrega música, podcasts, filmes, mapas e livros antes de partir: o wi-fi pelo caminho pode falhar.",
+      "Um leitor digital guarda centenas de livros no espaço de um; um livro de bolso fino é um belo plano B.",
+      "Auriculares com estojo, mais um cabo curto ou adaptador de reserva, tornam as viagens longas tranquilas."
+     ],
+     "q": "O que adoras ouvir, ver ou ler numa viagem longa?",
+     "c": "Descarrega hoje um álbum, podcast ou livro para guardares para a próxima viagem longa."
+    },
+    "pt_BR": {
+     "t": "Fones e entretenimento",
+     "g": "Prepare downloads, um leitor digital e fones de ouvido para viagens longas.",
+     "p": [
+      "Baixe músicas, podcasts, filmes, mapas e livros antes de sair: o wi-fi no caminho pode falhar.",
+      "Um leitor digital guarda centenas de livros no espaço de um; um livro de bolso fino é um ótimo plano B.",
+      "Fones com estojo, mais um cabo curto ou adaptador reserva, deixam as viagens longas tranquilas."
+     ],
+     "q": "O que você adora ouvir, assistir ou ler numa viagem longa?",
+     "c": "Baixe hoje um álbum, podcast ou livro para guardar para a sua próxima viagem longa."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tech pouch",
+     "g": "Keep all small electronics in one pouch for quick security checks.",
+     "p": [
+      "One pouch for chargers, cables, adapter, earphones and power bank means nothing gets lost in the bag.",
+      "At security you may be asked to take out electronics, and one pouch makes that quick and calm.",
+      "Choose a pouch with small inner pockets or elastic loops so each item has its own place."
+     ],
+     "q": "Where do your cables and chargers usually end up in your bag?",
+     "c": "Put all your small tech in one pouch or zip bag today and see how much space it really takes."
+    },
+    "de": {
+     "t": "Eine Technik-Tasche",
+     "g": "Bewahre alle kleinen Elektronikteile in einer Tasche auf, für schnelle Sicherheitskontrollen.",
+     "p": [
+      "Eine Tasche für Ladegeräte, Kabel, Adapter, Kopfhörer und Powerbank heißt: Nichts geht im Gepäck verloren.",
+      "An der Kontrolle musst du Elektronik eventuell herausnehmen; mit einer Tasche geht das schnell und ruhig.",
+      "Wähle eine Tasche mit kleinen Innenfächern oder Gummischlaufen, damit jedes Teil seinen Platz hat."
+     ],
+     "q": "Wo landen deine Kabel und Ladegeräte im Gepäck meistens?",
+     "c": "Pack heute deine ganze kleine Technik in eine Tasche oder einen Zipbeutel und schau, wie viel Platz sie braucht."
+    },
+    "es": {
+     "t": "Un estuche para la tecnología",
+     "g": "Guarda toda la electrónica pequeña en un estuche para pasar rápido los controles.",
+     "p": [
+      "Un estuche para cargadores, cables, adaptador, auriculares y batería hace que nada se pierda en la maleta.",
+      "En el control pueden pedirte sacar la electrónica, y con un estuche es rápido y sin estrés.",
+      "Elige un estuche con bolsillos interiores o cintas elásticas para que cada cosa tenga su sitio."
+     ],
+     "q": "¿Dónde suelen acabar tus cables y cargadores dentro de la maleta?",
+     "c": "Mete hoy toda tu tecnología pequeña en un estuche o bolsa con cierre y mira cuánto ocupa de verdad."
+    },
+    "fr": {
+     "t": "Une pochette tech",
+     "g": "Range toute la petite électronique dans une pochette pour passer vite les contrôles.",
+     "p": [
+      "Une pochette pour chargeurs, câbles, adaptateur, écouteurs et batterie, et plus rien ne se perd dans le sac.",
+      "Au contrôle, on peut te demander de sortir l'électronique : avec une pochette, c'est rapide et serein.",
+      "Choisis une pochette avec petites poches ou élastiques intérieurs pour que chaque objet ait sa place."
+     ],
+     "q": "Où finissent d'habitude tes câbles et chargeurs dans ton sac ?",
+     "c": "Mets aujourd'hui toute ta petite électronique dans une pochette ou un sac zippé et regarde la place prise."
+    },
+    "it": {
+     "t": "Una pochette per la tecnologia",
+     "g": "Tieni tutta l'elettronica piccola in una pochette per controlli di sicurezza veloci.",
+     "p": [
+      "Una pochette per caricatori, cavi, adattatore, auricolari e power bank: niente si perde più in valigia.",
+      "Ai controlli potrebbero chiederti di estrarre l'elettronica, e con una pochette è rapido e tranquillo.",
+      "Scegli una pochette con taschine interne o elastici, così ogni oggetto ha il suo posto."
+     ],
+     "q": "Dove finiscono di solito cavi e caricatori nella tua borsa?",
+     "c": "Metti oggi tutta la tua piccola tecnologia in una pochette o busta con zip e guarda quanto spazio occupa."
+    },
+    "pt": {
+     "t": "Uma bolsa para a tecnologia",
+     "g": "Guarda toda a eletrónica pequena numa bolsa para passar depressa nos controlos.",
+     "p": [
+      "Uma bolsa para carregadores, cabos, adaptador, auriculares e bateria faz com que nada se perca na mala.",
+      "No controlo podem pedir-te para tirar a eletrónica, e com uma bolsa isso é rápido e tranquilo.",
+      "Escolhe uma bolsa com bolsinhos interiores ou elásticos para cada coisa ter o seu lugar."
+     ],
+     "q": "Onde costumam ir parar os teus cabos e carregadores dentro da mala?",
+     "c": "Põe hoje toda a tua tecnologia pequena numa bolsa ou saco com fecho e vê quanto espaço ocupa mesmo."
+    },
+    "pt_BR": {
+     "t": "Um estojo para eletrônicos",
+     "g": "Guarde todos os eletrônicos pequenos num estojo para passar rápido pela inspeção.",
+     "p": [
+      "Um estojo para carregadores, cabos, adaptador, fones e power bank faz com que nada se perca na mala.",
+      "Na inspeção podem pedir para tirar os eletrônicos, e com um estojo isso fica rápido e tranquilo.",
+      "Escolha um estojo com bolsinhos internos ou elásticos para cada item ter o seu lugar."
+     ],
+     "q": "Onde seus cabos e carregadores costumam ir parar dentro da mala?",
+     "c": "Coloque hoje todos os seus eletrônicos pequenos num estojo ou saquinho com zíper e veja quanto espaço ocupam."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travel pillow and eye mask",
+     "g": "Use small comfort items that make overnight journeys more restful.",
+     "p": [
+      "A neck pillow keeps your head from dropping when you sleep upright; inflatable ones pack almost flat.",
+      "An eye mask blocks cabin lights, screens and early sunrises, helping your body settle into rest.",
+      "Clip the pillow to the outside of your bag, or choose one that squashes into a tiny pouch."
+     ],
+     "q": "Can you sleep easily on planes, trains or buses?",
+     "c": "Try sleeping upright in a chair for ten minutes with a rolled scarf as a pillow and notice what helps."
+    },
+    "de": {
+     "t": "Reisekissen und Schlafmaske",
+     "g": "Nutze kleine Komfortteile, die Nachtfahrten erholsamer machen.",
+     "p": [
+      "Ein Nackenkissen verhindert, dass dir im Sitzen der Kopf wegkippt; aufblasbare sind fast flach verstaut.",
+      "Eine Schlafmaske blockt Kabinenlicht, Bildschirme und frühe Sonne und hilft dem Körper, zur Ruhe zu kommen.",
+      "Befestige das Kissen außen an der Tasche oder wähle eins, das sich in ein winziges Säckchen drücken lässt."
+     ],
+     "q": "Kannst du in Flugzeug, Zug oder Bus gut schlafen?",
+     "c": "Versuch zehn Minuten aufrecht im Stuhl zu dösen, mit gerolltem Schal als Kissen, und merk dir, was hilft."
+    },
+    "es": {
+     "t": "Almohada de viaje y antifaz",
+     "g": "Usa pequeños accesorios de confort que hacen más reparadores los viajes nocturnos.",
+     "p": [
+      "Una almohada cervical evita que la cabeza caiga al dormir sentado; las hinchables se guardan casi planas.",
+      "Un antifaz bloquea luces de cabina, pantallas y amaneceres, y ayuda a tu cuerpo a descansar.",
+      "Engancha la almohada por fuera de la mochila o elige una que se comprima en una bolsita."
+     ],
+     "q": "¿Duermes con facilidad en aviones, trenes o autobuses?",
+     "c": "Prueba a dormitar diez minutos sentado con un pañuelo enrollado como almohada y nota qué te ayuda."
+    },
+    "fr": {
+     "t": "Coussin de voyage et masque",
+     "g": "Utilise de petits accessoires de confort pour des trajets de nuit plus reposants.",
+     "p": [
+      "Un coussin de nuque empêche ta tête de tomber quand tu dors assis ; les gonflables se rangent presque à plat.",
+      "Un masque de nuit bloque lumières de cabine, écrans et lever du soleil, et aide ton corps à se reposer.",
+      "Accroche le coussin à l'extérieur du sac ou choisis-en un qui se comprime dans une petite housse."
+     ],
+     "q": "Arrives-tu à dormir facilement en avion, en train ou en bus ?",
+     "c": "Essaie de somnoler dix minutes assis avec un foulard roulé en guise de coussin et note ce qui aide."
+    },
+    "it": {
+     "t": "Cuscino da viaggio e mascherina",
+     "g": "Usa piccoli accessori di comfort che rendono più riposanti i viaggi notturni.",
+     "p": [
+      "Un cuscino da collo evita che la testa cada quando dormi seduto; quelli gonfiabili si ripongono quasi piatti.",
+      "Una mascherina blocca luci di cabina, schermi e albe, e aiuta il corpo a riposare.",
+      "Aggancia il cuscino all'esterno della borsa o scegline uno che si comprime in una piccola sacca."
+     ],
+     "q": "Riesci a dormire facilmente in aereo, treno o autobus?",
+     "c": "Prova a sonnecchiare dieci minuti seduto con una sciarpa arrotolata come cuscino e nota cosa aiuta."
+    },
+    "pt": {
+     "t": "Almofada de viagem e máscara",
+     "g": "Usa pequenos acessórios de conforto que tornam as viagens noturnas mais repousantes.",
+     "p": [
+      "Uma almofada de pescoço evita que a cabeça caia quando dormes sentado; as insufláveis ficam quase planas.",
+      "Uma máscara de dormir bloqueia luzes da cabine, ecrãs e o nascer do sol, e ajuda o corpo a descansar.",
+      "Prende a almofada por fora da mala ou escolhe uma que se comprima numa bolsinha."
+     ],
+     "q": "Consegues dormir com facilidade em aviões, comboios ou autocarros?",
+     "c": "Experimenta dormitar dez minutos sentado com um lenço enrolado como almofada e repara no que ajuda."
+    },
+    "pt_BR": {
+     "t": "Travesseiro de viagem e máscara",
+     "g": "Use pequenos itens de conforto que deixam as viagens noturnas mais descansadas.",
+     "p": [
+      "Um travesseiro de pescoço evita que a cabeça caia quando você dorme sentado; os infláveis ficam quase planos.",
+      "Uma máscara de dormir bloqueia luzes da cabine, telas e o nascer do sol, e ajuda o corpo a descansar.",
+      "Prenda o travesseiro por fora da bolsa ou escolha um que se comprima num saquinho."
+     ],
+     "q": "Você consegue dormir fácil em avião, trem ou ônibus?",
+     "c": "Experimente cochilar dez minutos sentado com um lenço enrolado como travesseiro e note o que ajuda."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Earplugs for better sleep",
+     "g": "See why a tiny pair of earplugs can save your nights in noisy places.",
+     "p": [
+      "Hostels, city hotels, night trains and flights can be noisy, and earplugs cut snoring, traffic and chatter.",
+      "Foam earplugs are light and cheap to carry; reusable silicone or flanged ones last longer and wash easily.",
+      "Keep them in a small case in your personal item, so they are clean and ready whenever you need them."
+     ],
+     "q": "What is the noisiest place you have ever tried to sleep?",
+     "c": "Put a pair of earplugs in a small case and add it to your travel pouch today."
+    },
+    "de": {
+     "t": "Ohrstöpsel für besseren Schlaf",
+     "g": "Sieh, warum ein winziges Paar Ohrstöpsel deine Nächte an lauten Orten retten kann.",
+     "p": [
+      "Hostels, Stadthotels, Nachtzüge und Flüge können laut sein; Ohrstöpsel dämpfen Schnarchen, Verkehr und Gerede.",
+      "Schaumstöpsel sind leicht und günstig; wiederverwendbare aus Silikon halten länger und lassen sich waschen.",
+      "Bewahre sie in einem kleinen Döschen in deiner Tasche auf, damit sie sauber und jederzeit bereit sind."
+     ],
+     "q": "Was war der lauteste Ort, an dem du je versucht hast zu schlafen?",
+     "c": "Leg heute ein Paar Ohrstöpsel in ein kleines Döschen und steck es in dein Reiseetui."
+    },
+    "es": {
+     "t": "Tapones para dormir mejor",
+     "g": "Descubre por qué unos tapones diminutos pueden salvar tus noches en lugares ruidosos.",
+     "p": [
+      "Albergues, hoteles céntricos, trenes nocturnos y vuelos pueden ser ruidosos; los tapones frenan ronquidos y tráfico.",
+      "Los de espuma son ligeros y baratos; los reutilizables de silicona duran más y se lavan fácilmente.",
+      "Guárdalos en un estuche pequeño en tu bolso personal para tenerlos limpios y listos siempre."
+     ],
+     "q": "¿Cuál es el sitio más ruidoso en el que has intentado dormir?",
+     "c": "Mete hoy unos tapones en un estuche pequeño y añádelo a tu neceser de viaje."
+    },
+    "fr": {
+     "t": "Des bouchons pour mieux dormir",
+     "g": "Découvre pourquoi une minuscule paire de bouchons peut sauver tes nuits dans les lieux bruyants.",
+     "p": [
+      "Auberges, hôtels en ville, trains de nuit et vols peuvent être bruyants ; les bouchons atténuent ronflements et trafic.",
+      "Les bouchons en mousse sont légers et bon marché ; ceux en silicone réutilisables durent plus et se lavent.",
+      "Garde-les dans un petit étui dans ton sac personnel pour qu'ils soient propres et prêts à tout moment."
+     ],
+     "q": "Quel est l'endroit le plus bruyant où tu as essayé de dormir ?",
+     "c": "Mets aujourd'hui une paire de bouchons dans un petit étui et ajoute-le à ta pochette de voyage."
+    },
+    "it": {
+     "t": "Tappi per dormire meglio",
+     "g": "Scopri perché un minuscolo paio di tappi può salvare le tue notti nei posti rumorosi.",
+     "p": [
+      "Ostelli, hotel in centro, treni notturni e voli possono essere rumorosi: i tappi attutiscono russare e traffico.",
+      "I tappi in schiuma sono leggeri ed economici; quelli riutilizzabili in silicone durano di più e si lavano.",
+      "Tienili in un astuccio piccolo nella borsa personale, così sono puliti e pronti quando servono."
+     ],
+     "q": "Qual è il posto più rumoroso in cui hai provato a dormire?",
+     "c": "Metti oggi un paio di tappi in un astuccio piccolo e aggiungilo alla tua pochette da viaggio."
+    },
+    "pt": {
+     "t": "Tampões para dormir melhor",
+     "g": "Percebe porque um par minúsculo de tampões pode salvar as tuas noites em sítios barulhentos.",
+     "p": [
+      "Hostels, hotéis no centro, comboios noturnos e voos podem ser barulhentos; os tampões abafam roncos e trânsito.",
+      "Os de espuma são leves e baratos; os reutilizáveis de silicone duram mais e lavam-se facilmente.",
+      "Guarda-os numa caixinha no saco pessoal para estarem limpos e prontos sempre que precisares."
+     ],
+     "q": "Qual foi o sítio mais barulhento onde já tentaste dormir?",
+     "c": "Põe hoje um par de tampões numa caixinha e junta-a à tua bolsa de viagem."
+    },
+    "pt_BR": {
+     "t": "Protetores de ouvido para dormir melhor",
+     "g": "Entenda por que um par minúsculo de protetores de ouvido pode salvar suas noites em lugares barulhentos.",
+     "p": [
+      "Hostels, hotéis no centro, trens noturnos e voos podem ser barulhentos; o protetor abafa ronco e trânsito.",
+      "Os de espuma são leves e baratos; os reutilizáveis de silicone duram mais e são fáceis de lavar.",
+      "Guarde num estojinho na bolsa pessoal para estarem limpos e prontos sempre que precisar."
+     ],
+     "q": "Qual foi o lugar mais barulhento onde você já tentou dormir?",
+     "c": "Coloque hoje um par de protetores de ouvido num estojinho e junte ao seu kit de viagem."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snacks for the journey",
+     "g": "Pack snacks that travel well, and check food rules when crossing borders.",
+     "p": [
+      "Good travel snacks are sturdy, not messy and fine without a fridge: nuts, crackers, dried fruit, cereal bars.",
+      "Pack them in a small box or bag so they do not get crushed, and bring a napkin or two.",
+      "Many countries restrict bringing fresh food, meat or dairy across borders, so eat it first or check the rules."
+     ],
+     "q": "What is your favourite snack to bring on a long trip?",
+     "c": "Plan a snack kit for a six-hour journey using only things you already have at home."
+    },
+    "de": {
+     "t": "Snacks für unterwegs",
+     "g": "Pack reisetaugliche Snacks ein und prüf Lebensmittelregeln beim Grenzübertritt.",
+     "p": [
+      "Gute Reisesnacks sind robust, krümeln wenig und brauchen keinen Kühlschrank: Nüsse, Cracker, Trockenobst, Riegel.",
+      "Pack sie in eine kleine Dose oder Tüte, damit sie nicht zerdrückt werden, und nimm eine Serviette mit.",
+      "Viele Länder beschränken die Einfuhr von frischem Essen, Fleisch oder Milchprodukten; iss es vorher oder prüf die Regeln."
+     ],
+     "q": "Was ist dein Lieblingssnack für lange Reisen?",
+     "c": "Plane ein Snack-Set für eine sechsstündige Fahrt nur mit Dingen, die du schon zu Hause hast."
+    },
+    "es": {
+     "t": "Tentempiés para el trayecto",
+     "g": "Lleva tentempiés que viajen bien y consulta las normas sobre comida al cruzar fronteras.",
+     "p": [
+      "Un buen tentempié de viaje es resistente, no mancha y no necesita nevera: frutos secos, galletas, fruta deshidratada, barritas.",
+      "Llévalos en una cajita o bolsa para que no se aplasten y añade una o dos servilletas.",
+      "Muchos países limitan entrar con comida fresca, carne o lácteos: cómetela antes o consulta las normas."
+     ],
+     "q": "¿Cuál es tu tentempié favorito para un viaje largo?",
+     "c": "Planea un kit de tentempiés para un trayecto de seis horas solo con lo que ya tienes en casa."
+    },
+    "fr": {
+     "t": "Des en-cas pour le trajet",
+     "g": "Emporte des en-cas qui voyagent bien, et vérifie les règles alimentaires aux frontières.",
+     "p": [
+      "Un bon en-cas de voyage est solide, peu salissant et se passe de frigo : noix, crackers, fruits secs, barres.",
+      "Range-les dans une petite boîte ou un sachet pour qu'ils ne s'écrasent pas, avec une ou deux serviettes.",
+      "Beaucoup de pays limitent l'entrée de produits frais, viande ou laitages : mange-les avant ou vérifie les règles."
+     ],
+     "q": "Quel est ton en-cas préféré pour un long voyage ?",
+     "c": "Prépare un kit d'en-cas pour un trajet de six heures avec uniquement ce que tu as déjà chez toi."
+    },
+    "it": {
+     "t": "Snack per il viaggio",
+     "g": "Porta snack che viaggiano bene e controlla le regole sul cibo quando attraversi i confini.",
+     "p": [
+      "Un buon snack da viaggio è resistente, non sporca e non ha bisogno di frigo: frutta secca, cracker, barrette.",
+      "Mettili in una scatolina o un sacchetto così non si schiacciano, e porta un paio di tovaglioli.",
+      "Molti Paesi limitano l'ingresso di cibo fresco, carne o latticini: mangiali prima o controlla le regole."
+     ],
+     "q": "Qual è il tuo snack preferito per un viaggio lungo?",
+     "c": "Prepara un kit di snack per un viaggio di sei ore usando solo cose che hai già in casa."
+    },
+    "pt": {
+     "t": "Lanches para a viagem",
+     "g": "Leva lanches que viajam bem e confirma as regras sobre comida ao atravessar fronteiras.",
+     "p": [
+      "Um bom lanche de viagem é resistente, não suja e dispensa frigorífico: frutos secos, bolachas, barras de cereais.",
+      "Leva-os numa caixinha ou saco para não se esmagarem, e junta um ou dois guardanapos.",
+      "Muitos países limitam a entrada de comida fresca, carne ou laticínios: come antes ou confirma as regras."
+     ],
+     "q": "Qual é o teu lanche favorito para uma viagem longa?",
+     "c": "Planeia um kit de lanches para uma viagem de seis horas só com o que já tens em casa."
+    },
+    "pt_BR": {
+     "t": "Lanches para a viagem",
+     "g": "Leve lanches que viajam bem e confira as regras sobre comida ao cruzar fronteiras.",
+     "p": [
+      "Um bom lanche de viagem é resistente, não faz sujeira e dispensa geladeira: castanhas, biscoitos, frutas secas, barrinhas.",
+      "Leve numa caixinha ou saquinho para não amassar, e inclua um ou dois guardanapos.",
+      "Muitos países limitam a entrada de comida fresca, carne ou laticínios: coma antes ou confira as regras."
+     ],
+     "q": "Qual é o seu lanche favorito para uma viagem longa?",
+     "c": "Monte um kit de lanches para uma viagem de seis horas só com o que você já tem em casa."
+    }
+   }
+  }
+ ]
+}

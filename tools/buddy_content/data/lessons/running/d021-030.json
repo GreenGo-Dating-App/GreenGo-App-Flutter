@@ -1,0 +1,835 @@
+{
+ "topic": "running",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a first goal",
+     "g": "Learn to set a small, realistic first running goal.",
+     "p": [
+      "A good first goal is specific, like running ten minutes without stopping.",
+      "Give it a gentle time frame of a few weeks so there is no rush.",
+      "Small goals you can reach build confidence for bigger ones later."
+     ],
+     "q": "What small running goal would make you proud in a month?",
+     "c": "Write your first goal in one sentence, with a date, and share it with someone."
+    },
+    "de": {
+     "t": "Ein erstes Ziel setzen",
+     "g": "Lerne, dir ein kleines, realistisches erstes Laufziel zu setzen.",
+     "p": [
+      "Ein gutes erstes Ziel ist konkret, etwa zehn Minuten ohne Pause laufen.",
+      "Gib dir einen entspannten Zeitraum von ein paar Wochen, ohne Eile.",
+      "Erreichbare kleine Ziele geben Selbstvertrauen für größere später."
+     ],
+     "q": "Welches kleine Laufziel würde dich in einem Monat stolz machen?",
+     "c": "Schreib dein erstes Ziel in einem Satz mit Datum auf und erzähl jemandem davon."
+    },
+    "es": {
+     "t": "Fijar un primer objetivo",
+     "g": "Aprende a ponerte un primer objetivo de carrera pequeño y realista.",
+     "p": [
+      "Un buen primer objetivo es concreto, como correr diez minutos sin parar.",
+      "Date un plazo tranquilo de unas semanas para no ir con prisas.",
+      "Las metas pequeñas que alcanzas dan confianza para otras más grandes."
+     ],
+     "q": "¿Qué pequeño objetivo de carrera te haría sentir orgulloso dentro de un mes?",
+     "c": "Escribe tu primer objetivo en una frase, con fecha, y compártelo con alguien."
+    },
+    "fr": {
+     "t": "Se fixer un premier objectif",
+     "g": "Apprends à te fixer un premier objectif de course petit et réaliste.",
+     "p": [
+      "Un bon premier objectif est précis, comme courir dix minutes sans t'arrêter.",
+      "Donne-toi quelques semaines, sans te presser.",
+      "Les petits objectifs atteints donnent confiance pour les plus grands."
+     ],
+     "q": "Quel petit objectif de course te rendrait fier dans un mois ?",
+     "c": "Écris ton premier objectif en une phrase, avec une date, et partage-le avec quelqu'un."
+    },
+    "it": {
+     "t": "Fissare un primo obiettivo",
+     "g": "Impara a darti un primo obiettivo di corsa piccolo e realistico.",
+     "p": [
+      "Un buon primo obiettivo è concreto, come correre dieci minuti senza fermarti.",
+      "Concediti qualche settimana di tempo, senza fretta.",
+      "Piccoli obiettivi raggiunti danno fiducia per quelli più grandi."
+     ],
+     "q": "Quale piccolo obiettivo di corsa ti renderebbe fiero tra un mese?",
+     "c": "Scrivi il tuo primo obiettivo in una frase, con una data, e condividilo con qualcuno."
+    },
+    "pt": {
+     "t": "Definir um primeiro objetivo",
+     "g": "Aprende a definir um primeiro objetivo de corrida pequeno e realista.",
+     "p": [
+      "Um bom primeiro objetivo é concreto, como correr dez minutos sem parar.",
+      "Dá-te um prazo tranquilo de algumas semanas, sem pressas.",
+      "Objetivos pequenos que alcanças dão confiança para outros maiores."
+     ],
+     "q": "Que pequeno objetivo de corrida te deixaria orgulhoso daqui a um mês?",
+     "c": "Escreve o teu primeiro objetivo numa frase, com data, e partilha-o com alguém."
+    },
+    "pt_BR": {
+     "t": "Definindo a primeira meta",
+     "g": "Aprenda a definir uma primeira meta de corrida pequena e realista.",
+     "p": [
+      "Uma boa primeira meta é concreta, como correr dez minutos sem parar.",
+      "Dê a você um prazo tranquilo de algumas semanas, sem pressa.",
+      "Metas pequenas alcançadas dão confiança para metas maiores depois."
+     ],
+     "q": "Que pequena meta de corrida deixaria você orgulhoso daqui a um mês?",
+     "c": "Escreva sua primeira meta numa frase, com data, e conte para alguém."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a weekly routine",
+     "g": "Learn how to fit three short runs into a normal week.",
+     "p": [
+      "Spread runs out, for example Monday, Wednesday and Saturday, with rest between.",
+      "Pick fixed times so running becomes part of your schedule, not an extra.",
+      "Keep sessions short at first; consistency beats long, rare efforts."
+     ],
+     "q": "Which three days of your week have a free half hour?",
+     "c": "Put three running slots in your calendar for next week, like real appointments."
+    },
+    "de": {
+     "t": "Eine Wochenroutine aufbauen",
+     "g": "Lerne, drei kurze Läufe in eine normale Woche einzubauen.",
+     "p": [
+      "Verteil die Läufe, zum Beispiel Montag, Mittwoch und Samstag, mit Pausen dazwischen.",
+      "Wähl feste Zeiten, damit Laufen Teil deines Plans wird und kein Extra.",
+      "Halte die Einheiten anfangs kurz; Regelmäßigkeit schlägt seltene lange Läufe."
+     ],
+     "q": "An welchen drei Tagen deiner Woche hast du eine freie halbe Stunde?",
+     "c": "Trag drei Lauftermine für nächste Woche in den Kalender ein, wie echte Verabredungen."
+    },
+    "es": {
+     "t": "Crear una rutina semanal",
+     "g": "Aprende a encajar tres carreras cortas en una semana normal.",
+     "p": [
+      "Repártelas, por ejemplo lunes, miércoles y sábado, con descanso entre medias.",
+      "Elige horas fijas para que correr forme parte de tu agenda y no sea un extra.",
+      "Al principio, sesiones cortas: la constancia gana a esfuerzos largos y raros."
+     ],
+     "q": "¿Qué tres días de tu semana tienen media hora libre?",
+     "c": "Apunta tres huecos para correr la próxima semana en el calendario, como citas reales."
+    },
+    "fr": {
+     "t": "Construire une routine hebdomadaire",
+     "g": "Apprends à caser trois courtes sorties dans une semaine normale.",
+     "p": [
+      "Répartis-les, par exemple lundi, mercredi et samedi, avec du repos entre deux.",
+      "Choisis des horaires fixes pour que la course fasse partie de ton planning.",
+      "Garde des séances courtes au début : la régularité vaut mieux que de rares longues sorties."
+     ],
+     "q": "Quels trois jours de ta semaine ont une demi-heure libre ?",
+     "c": "Inscris trois créneaux de course pour la semaine prochaine, comme de vrais rendez-vous."
+    },
+    "it": {
+     "t": "Costruire una routine settimanale",
+     "g": "Impara a inserire tre brevi corse in una settimana normale.",
+     "p": [
+      "Distribuiscile, per esempio lunedì, mercoledì e sabato, con riposo nel mezzo.",
+      "Scegli orari fissi così la corsa diventa parte della tua agenda, non un extra.",
+      "All'inizio sessioni brevi: la costanza batte sforzi lunghi e rari."
+     ],
+     "q": "Quali tre giorni della tua settimana hanno una mezz'ora libera?",
+     "c": "Segna in agenda tre appuntamenti di corsa per la prossima settimana, come impegni veri."
+    },
+    "pt": {
+     "t": "Criar uma rotina semanal",
+     "g": "Aprende a encaixar três corridas curtas numa semana normal.",
+     "p": [
+      "Distribui-as, por exemplo segunda, quarta e sábado, com descanso pelo meio.",
+      "Escolhe horários fixos para que a corrida faça parte da agenda e não seja um extra.",
+      "No início, sessões curtas: a regularidade vale mais do que esforços longos e raros."
+     ],
+     "q": "Que três dias da tua semana têm meia hora livre?",
+     "c": "Marca na agenda três horários de corrida para a próxima semana, como compromissos a sério."
+    },
+    "pt_BR": {
+     "t": "Montando uma rotina semanal",
+     "g": "Aprenda a encaixar três corridas curtas numa semana normal.",
+     "p": [
+      "Distribua as corridas, por exemplo segunda, quarta e sábado, com descanso entre elas.",
+      "Escolha horários fixos para a corrida fazer parte da agenda, e não ser um extra.",
+      "No começo, treinos curtos: constância vale mais que esforços longos e raros."
+     ],
+     "q": "Quais três dias da sua semana têm meia hora livre?",
+     "c": "Marque na agenda três horários de corrida para a próxima semana, como compromissos de verdade."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morning or evening runs",
+     "g": "Compare running at different times of day to find what suits you.",
+     "p": [
+      "Morning runs can start the day with energy and get done before plans change.",
+      "Evening runs often feel looser, since your body has been moving all day.",
+      "The best time is simply the one you can repeat most often."
+     ],
+     "q": "Are you more of a morning person or an evening person?",
+     "c": "Try a run at a different time of day than usual this week and compare how it felt."
+    },
+    "de": {
+     "t": "Morgens oder abends laufen",
+     "g": "Vergleiche Läufe zu verschiedenen Tageszeiten und finde, was zu dir passt.",
+     "p": [
+      "Morgenläufe geben Energie für den Tag und sind erledigt, bevor Pläne sich ändern.",
+      "Abendläufe fühlen sich oft lockerer an, weil der Körper schon den ganzen Tag in Bewegung war.",
+      "Die beste Zeit ist einfach die, die du am häufigsten wiederholen kannst."
+     ],
+     "q": "Bist du eher ein Morgen- oder ein Abendmensch?",
+     "c": "Lauf diese Woche einmal zu einer anderen Tageszeit als sonst und vergleiche das Gefühl."
+    },
+    "es": {
+     "t": "Correr por la mañana o por la tarde",
+     "g": "Compara correr a distintas horas del día para ver qué te va mejor.",
+     "p": [
+      "Correr por la mañana da energía y queda hecho antes de que cambien los planes.",
+      "Por la tarde el cuerpo suele estar más suelto porque lleva todo el día en movimiento.",
+      "La mejor hora es sencillamente la que puedes repetir más a menudo."
+     ],
+     "q": "¿Eres más de mañanas o de tardes?",
+     "c": "Esta semana corre a una hora distinta de la habitual y compara cómo te sentiste."
+    },
+    "fr": {
+     "t": "Courir le matin ou le soir",
+     "g": "Compare la course à différents moments de la journée pour trouver ce qui te va.",
+     "p": [
+      "Courir le matin donne de l'énergie et c'est fait avant que les plans changent.",
+      "Le soir, le corps est souvent plus délié après une journée de mouvement.",
+      "Le meilleur moment est tout simplement celui que tu peux répéter le plus souvent."
+     ],
+     "q": "Es-tu plutôt du matin ou du soir ?",
+     "c": "Cette semaine, cours à un autre moment que d'habitude et compare tes sensations."
+    },
+    "it": {
+     "t": "Correre di mattina o di sera",
+     "g": "Confronta la corsa in diversi momenti della giornata per capire cosa ti si addice.",
+     "p": [
+      "Correre al mattino dà energia e lo fai prima che i piani cambino.",
+      "La sera il corpo è spesso più sciolto, dopo una giornata in movimento.",
+      "L'orario migliore è semplicemente quello che riesci a ripetere più spesso."
+     ],
+     "q": "Sei più una persona del mattino o della sera?",
+     "c": "Questa settimana corri in un orario diverso dal solito e confronta le sensazioni."
+    },
+    "pt": {
+     "t": "Correr de manhã ou à noite",
+     "g": "Compara correr a diferentes horas do dia para descobrires o que te serve.",
+     "p": [
+      "De manhã, a corrida dá energia e fica feita antes de os planos mudarem.",
+      "Ao fim do dia, o corpo costuma estar mais solto depois de um dia em movimento.",
+      "A melhor hora é simplesmente aquela que consegues repetir mais vezes."
+     ],
+     "q": "És mais uma pessoa da manhã ou da noite?",
+     "c": "Esta semana corre a uma hora diferente do costume e compara como te sentiste."
+    },
+    "pt_BR": {
+     "t": "Correr de manhã ou à noite",
+     "g": "Compare correr em horários diferentes para descobrir o que combina com você.",
+     "p": [
+      "De manhã, a corrida dá energia e já fica feita antes de os planos mudarem.",
+      "À noite, o corpo costuma estar mais solto depois de um dia inteiro em movimento.",
+      "O melhor horário é simplesmente aquele que você consegue repetir com mais frequência."
+     ],
+     "q": "Você é mais do tipo matutino ou noturno?",
+     "c": "Nesta semana, corra num horário diferente do normal e compare como se sentiu."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running in the heat",
+     "g": "Learn general tips for running comfortably on warm days.",
+     "p": [
+      "Run early in the morning or later in the evening when it is cooler.",
+      "Wear light, loose, light-coloured clothing and a cap or sunscreen.",
+      "Slow your pace and take walk breaks; heat makes every pace feel harder."
+     ],
+     "q": "What is your favourite way to cool off after being out in the heat?",
+     "c": "Check tomorrow's forecast and pick the coolest hour for your next run."
+    },
+    "de": {
+     "t": "Laufen bei Hitze",
+     "g": "Lerne allgemeine Tipps, um an warmen Tagen angenehm zu laufen.",
+     "p": [
+      "Lauf früh am Morgen oder am späten Abend, wenn es kühler ist.",
+      "Trag leichte, weite, helle Kleidung und eine Kappe oder Sonnencreme.",
+      "Lauf langsamer und mach Gehpausen; Hitze lässt jedes Tempo härter wirken."
+     ],
+     "q": "Wie kühlst du dich am liebsten ab, wenn du in der Hitze unterwegs warst?",
+     "c": "Schau dir die Wettervorhersage an und wähl die kühlste Stunde für deinen nächsten Lauf."
+    },
+    "es": {
+     "t": "Correr con calor",
+     "g": "Conoce consejos generales para correr a gusto en días calurosos.",
+     "p": [
+      "Corre temprano por la mañana o al final de la tarde, cuando hace más fresco.",
+      "Lleva ropa ligera, holgada y de colores claros, además de gorra o protector solar.",
+      "Baja el ritmo y haz pausas caminando; con calor todo cuesta más."
+     ],
+     "q": "¿Cuál es tu forma favorita de refrescarte después de estar al sol?",
+     "c": "Mira la previsión de mañana y elige la hora más fresca para tu próxima salida."
+    },
+    "fr": {
+     "t": "Courir par temps chaud",
+     "g": "Découvre des conseils généraux pour courir à l'aise quand il fait chaud.",
+     "p": [
+      "Cours tôt le matin ou en fin de soirée, quand il fait plus frais.",
+      "Porte des vêtements légers, amples et clairs, et une casquette ou de la crème solaire.",
+      "Ralentis et fais des pauses marchées ; la chaleur rend chaque allure plus difficile."
+     ],
+     "q": "Quelle est ta façon préférée de te rafraîchir après avoir été au soleil ?",
+     "c": "Regarde la météo de demain et choisis l'heure la plus fraîche pour ta prochaine sortie."
+    },
+    "it": {
+     "t": "Correre con il caldo",
+     "g": "Scopri consigli generali per correre bene nelle giornate calde.",
+     "p": [
+      "Corri presto al mattino o in tarda serata, quando fa più fresco.",
+      "Indossa abiti leggeri, larghi e chiari, un cappellino o la crema solare.",
+      "Rallenta e fai pause camminando; il caldo rende ogni ritmo più faticoso."
+     ],
+     "q": "Qual è il tuo modo preferito per rinfrescarti dopo essere stato al caldo?",
+     "c": "Guarda le previsioni di domani e scegli l'ora più fresca per la prossima corsa."
+    },
+    "pt": {
+     "t": "Correr com calor",
+     "g": "Conhece dicas gerais para correr confortavelmente em dias quentes.",
+     "p": [
+      "Corre cedo de manhã ou ao fim da tarde, quando está mais fresco.",
+      "Usa roupa leve, larga e de cor clara, e um boné ou protetor solar.",
+      "Abranda e faz pausas a caminhar; o calor torna qualquer ritmo mais difícil."
+     ],
+     "q": "Qual é a tua forma preferida de te refrescares depois de estar ao calor?",
+     "c": "Vê a previsão de amanhã e escolhe a hora mais fresca para a próxima corrida."
+    },
+    "pt_BR": {
+     "t": "Correndo no calor",
+     "g": "Conheça dicas gerais para correr com conforto em dias quentes.",
+     "p": [
+      "Corra cedo de manhã ou no fim da tarde, quando está mais fresco.",
+      "Use roupa leve, folgada e clara, além de boné ou protetor solar.",
+      "Diminua o ritmo e faça pausas caminhando; o calor deixa qualquer ritmo mais pesado."
+     ],
+     "q": "Qual é seu jeito favorito de se refrescar depois de ficar no calor?",
+     "c": "Veja a previsão de amanhã e escolha o horário mais fresco para a próxima corrida."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running in the cold",
+     "g": "Learn how to stay warm and comfortable on cold-weather runs.",
+     "p": [
+      "Dress in thin layers; you should feel slightly cool when you step outside.",
+      "Warm up indoors for a few minutes before you head out.",
+      "Hats, gloves and a neck warmer keep hands and ears happy."
+     ],
+     "q": "What part of your body always feels cold first in winter?",
+     "c": "Prepare a cold-weather kit today: a light hat, gloves and one extra thin layer."
+    },
+    "de": {
+     "t": "Laufen bei Kälte",
+     "g": "Lerne, wie du bei kaltem Wetter warm und angenehm läufst.",
+     "p": [
+      "Zieh dünne Schichten an; beim Rausgehen darf dir ruhig etwas kühl sein.",
+      "Wärm dich ein paar Minuten drinnen auf, bevor du losgehst.",
+      "Mütze, Handschuhe und ein Schlauchschal halten Hände und Ohren warm."
+     ],
+     "q": "Welcher Körperteil wird bei dir im Winter immer zuerst kalt?",
+     "c": "Stell dir heute ein Kälte-Set zusammen: leichte Mütze, Handschuhe und eine zusätzliche dünne Schicht."
+    },
+    "es": {
+     "t": "Correr con frío",
+     "g": "Aprende a mantenerte caliente y cómodo al correr con frío.",
+     "p": [
+      "Vístete con capas finas; al salir deberías notar un poco de fresco.",
+      "Calienta unos minutos dentro de casa antes de salir.",
+      "Gorro, guantes y braga de cuello mantienen calientes manos y orejas."
+     ],
+     "q": "¿Qué parte de tu cuerpo se enfría siempre primero en invierno?",
+     "c": "Prepara hoy un kit para el frío: gorro ligero, guantes y una capa fina extra."
+    },
+    "fr": {
+     "t": "Courir par temps froid",
+     "g": "Apprends à rester au chaud et à l'aise pendant les sorties par temps froid.",
+     "p": [
+      "Habille-toi en couches fines ; tu dois avoir un peu frais en sortant.",
+      "Échauffe-toi quelques minutes à l'intérieur avant de partir.",
+      "Bonnet, gants et tour de cou gardent les mains et les oreilles au chaud."
+     ],
+     "q": "Quelle partie de ton corps a toujours froid en premier en hiver ?",
+     "c": "Prépare aujourd'hui ton kit grand froid : bonnet léger, gants et une couche fine en plus."
+    },
+    "it": {
+     "t": "Correre con il freddo",
+     "g": "Impara a stare caldo e comodo quando corri con il freddo.",
+     "p": [
+      "Vestiti a strati sottili; uscendo dovresti sentire un po' di fresco.",
+      "Riscaldati qualche minuto in casa prima di uscire.",
+      "Berretto, guanti e scaldacollo tengono al caldo mani e orecchie."
+     ],
+     "q": "Quale parte del corpo ti si raffredda sempre per prima d'inverno?",
+     "c": "Prepara oggi un kit per il freddo: berretto leggero, guanti e uno strato sottile in più."
+    },
+    "pt": {
+     "t": "Correr com frio",
+     "g": "Aprende a manter-te quente e confortável a correr com frio.",
+     "p": [
+      "Veste camadas finas; ao sair deves sentir um pouco de fresco.",
+      "Aquece uns minutos dentro de casa antes de saíres.",
+      "Gorro, luvas e gola mantêm as mãos e as orelhas quentes."
+     ],
+     "q": "Que parte do teu corpo fica sempre fria primeiro no inverno?",
+     "c": "Prepara hoje um kit para o frio: gorro leve, luvas e uma camada fina extra."
+    },
+    "pt_BR": {
+     "t": "Correndo no frio",
+     "g": "Aprenda a ficar aquecido e confortável ao correr no frio.",
+     "p": [
+      "Vista camadas finas; ao sair, você deve sentir um pouco de frio.",
+      "Aqueça alguns minutos dentro de casa antes de sair.",
+      "Gorro, luvas e gola mantêm mãos e orelhas quentinhas."
+     ],
+     "q": "Que parte do seu corpo sempre esfria primeiro no inverno?",
+     "c": "Monte hoje um kit para o frio: gorro leve, luvas e uma camada fina a mais."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running in the rain",
+     "g": "Discover how to actually enjoy a run in the rain.",
+     "p": [
+      "A light water-resistant jacket and a cap with a brim keep rain off your face.",
+      "Choose routes with good grip and take corners and puddles calmly.",
+      "Have dry clothes and a warm drink ready for when you get home."
+     ],
+     "q": "What do you think: is running in the rain fun or a challenge?",
+     "c": "Get your rainy-day kit ready now so a wet forecast does not cancel your run."
+    },
+    "de": {
+     "t": "Laufen im Regen",
+     "g": "Entdecke, wie ein Lauf im Regen richtig Spaß machen kann.",
+     "p": [
+      "Eine leichte, wasserabweisende Jacke und eine Schirmkappe halten Regen aus dem Gesicht.",
+      "Wähl Strecken mit gutem Grip und nimm Kurven und Pfützen gelassen.",
+      "Leg trockene Kleidung und ein warmes Getränk für danach bereit."
+     ],
+     "q": "Was meinst du: Ist Laufen im Regen Spaß oder eine Herausforderung?",
+     "c": "Pack jetzt dein Regen-Set, damit eine nasse Vorhersage deinen Lauf nicht absagt."
+    },
+    "es": {
+     "t": "Correr bajo la lluvia",
+     "g": "Descubre cómo disfrutar de verdad de una carrera bajo la lluvia.",
+     "p": [
+      "Una chaqueta ligera impermeable y una gorra con visera evitan la lluvia en la cara.",
+      "Elige rutas con buen agarre y toma curvas y charcos con calma.",
+      "Ten ropa seca y una bebida caliente preparadas para cuando vuelvas."
+     ],
+     "q": "¿Qué opinas: correr bajo la lluvia es divertido o un reto?",
+     "c": "Prepara ya tu kit de lluvia para que un pronóstico mojado no cancele tu salida."
+    },
+    "fr": {
+     "t": "Courir sous la pluie",
+     "g": "Découvre comment vraiment apprécier une sortie sous la pluie.",
+     "p": [
+      "Une veste légère déperlante et une casquette à visière protègent ton visage.",
+      "Choisis des parcours qui accrochent bien et prends virages et flaques calmement.",
+      "Prépare des vêtements secs et une boisson chaude pour ton retour."
+     ],
+     "q": "Qu'en penses-tu : courir sous la pluie, c'est amusant ou un défi ?",
+     "c": "Prépare dès maintenant ton kit pluie pour qu'une météo humide n'annule pas ta sortie."
+    },
+    "it": {
+     "t": "Correre sotto la pioggia",
+     "g": "Scopri come goderti davvero una corsa sotto la pioggia.",
+     "p": [
+      "Una giacca leggera idrorepellente e un cappellino con visiera riparano il viso.",
+      "Scegli percorsi con buona aderenza e affronta curve e pozzanghere con calma.",
+      "Prepara vestiti asciutti e una bevanda calda per il ritorno."
+     ],
+     "q": "Che ne pensi: correre sotto la pioggia è divertente o una sfida?",
+     "c": "Prepara ora il tuo kit da pioggia, così un meteo bagnato non cancellerà la corsa."
+    },
+    "pt": {
+     "t": "Correr à chuva",
+     "g": "Descobre como gostar mesmo de uma corrida à chuva.",
+     "p": [
+      "Um casaco leve impermeável e um boné com pala protegem a cara da chuva.",
+      "Escolhe percursos com boa aderência e faz curvas e poças com calma.",
+      "Deixa roupa seca e uma bebida quente prontas para quando chegares."
+     ],
+     "q": "O que achas: correr à chuva é divertido ou um desafio?",
+     "c": "Prepara já o teu kit de chuva para que uma previsão molhada não cancele a corrida."
+    },
+    "pt_BR": {
+     "t": "Correndo na chuva",
+     "g": "Descubra como curtir de verdade uma corrida na chuva.",
+     "p": [
+      "Uma jaqueta leve impermeável e um boné com aba protegem o rosto da chuva.",
+      "Escolha trajetos com boa aderência e faça curvas e poças com calma.",
+      "Deixe roupa seca e uma bebida quente prontas para a volta."
+     ],
+     "q": "O que você acha: correr na chuva é divertido ou um desafio?",
+     "c": "Monte agora seu kit de chuva para que uma previsão molhada não cancele a corrida."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Staying visible at night",
+     "g": "Learn how to stay safe and visible on dark runs.",
+     "p": [
+      "Wear bright or reflective clothing so drivers and cyclists see you early.",
+      "A small headlamp or clip-on light helps you see and be seen.",
+      "Choose well-lit, familiar routes and run facing oncoming traffic where there is no path."
+     ],
+     "q": "Do you have any reflective or bright gear at home already?",
+     "c": "Check your running gear tonight and add one light or reflective item for dark runs."
+    },
+    "de": {
+     "t": "Sichtbar bleiben im Dunkeln",
+     "g": "Lerne, wie du bei Läufen im Dunkeln sicher und sichtbar bleibst.",
+     "p": [
+      "Trag helle oder reflektierende Kleidung, damit Auto- und Radfahrer dich früh sehen.",
+      "Eine kleine Stirnlampe oder ein Clip-Licht hilft beim Sehen und Gesehenwerden.",
+      "Wähl beleuchtete, bekannte Strecken und lauf ohne Gehweg dem Verkehr entgegen."
+     ],
+     "q": "Hast du schon reflektierende oder helle Ausrüstung zu Hause?",
+     "c": "Prüf heute Abend deine Laufsachen und ergänze ein Licht oder reflektierendes Teil."
+    },
+    "es": {
+     "t": "Hacerte visible de noche",
+     "g": "Aprende a correr seguro y visible cuando está oscuro.",
+     "p": [
+      "Lleva ropa llamativa o reflectante para que conductores y ciclistas te vean pronto.",
+      "Una linterna frontal o una luz de clip te ayuda a ver y a que te vean.",
+      "Elige rutas iluminadas y conocidas y, sin acera, corre de frente al tráfico."
+     ],
+     "q": "¿Ya tienes en casa alguna prenda reflectante o de color llamativo?",
+     "c": "Revisa esta noche tu equipo y añade una luz o un elemento reflectante para salir de noche."
+    },
+    "fr": {
+     "t": "Rester visible la nuit",
+     "g": "Apprends à rester en sécurité et visible lors des sorties dans le noir.",
+     "p": [
+      "Porte des vêtements clairs ou réfléchissants pour que conducteurs et cyclistes te voient tôt.",
+      "Une petite frontale ou une lumière à clipser aide à voir et à être vu.",
+      "Choisis des parcours éclairés et connus, et sans trottoir, cours face à la circulation."
+     ],
+     "q": "As-tu déjà chez toi un équipement réfléchissant ou de couleur vive ?",
+     "c": "Vérifie ce soir ton équipement et ajoute une lumière ou un élément réfléchissant."
+    },
+    "it": {
+     "t": "Essere visibili di notte",
+     "g": "Impara a restare sicuro e visibile quando corri al buio.",
+     "p": [
+      "Indossa abiti chiari o riflettenti perché automobilisti e ciclisti ti vedano presto.",
+      "Una piccola frontale o una luce a clip ti aiuta a vedere e a farti vedere.",
+      "Scegli percorsi illuminati e conosciuti e, senza marciapiede, corri contro il senso di marcia."
+     ],
+     "q": "Hai già in casa qualche capo riflettente o dai colori vivaci?",
+     "c": "Controlla stasera la tua attrezzatura e aggiungi una luce o un elemento riflettente."
+    },
+    "pt": {
+     "t": "Ficar visível à noite",
+     "g": "Aprende a correr em segurança e visível quando está escuro.",
+     "p": [
+      "Usa roupa clara ou refletora para que condutores e ciclistas te vejam cedo.",
+      "Uma pequena lanterna frontal ou luz de mola ajuda a ver e a ser visto.",
+      "Escolhe percursos iluminados e conhecidos e, sem passeio, corre de frente para o trânsito."
+     ],
+     "q": "Já tens em casa algum equipamento refletor ou de cor viva?",
+     "c": "Revê esta noite o teu equipamento e junta uma luz ou um elemento refletor."
+    },
+    "pt_BR": {
+     "t": "Ficando visível à noite",
+     "g": "Aprenda a correr com segurança e bem visível quando está escuro.",
+     "p": [
+      "Use roupa clara ou refletiva para motoristas e ciclistas te verem cedo.",
+      "Uma lanterna de cabeça ou luz de clipe ajuda a enxergar e a ser visto.",
+      "Escolha trajetos iluminados e conhecidos e, sem calçada, corra de frente para o trânsito."
+     ],
+     "q": "Você já tem em casa algum item refletivo ou de cor chamativa?",
+     "c": "Confira hoje à noite seu equipamento e inclua uma luz ou um item refletivo."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tracking your runs",
+     "g": "Learn simple ways to log your runs and see your progress.",
+     "p": [
+      "A notebook, a watch or a phone app all work; pick what you will actually use.",
+      "Write down time, rough distance and how the run felt.",
+      "Looking back after a few weeks shows progress you might not notice day to day."
+     ],
+     "q": "Would you rather track runs on paper or with a device?",
+     "c": "Start a simple running log today and fill in your last two sessions from memory."
+    },
+    "de": {
+     "t": "Läufe aufzeichnen",
+     "g": "Lerne einfache Wege, deine Läufe zu notieren und Fortschritte zu sehen.",
+     "p": [
+      "Notizbuch, Uhr oder Handy-App: Nimm das, was du wirklich benutzen wirst.",
+      "Notiere Dauer, ungefähre Strecke und wie sich der Lauf angefühlt hat.",
+      "Ein Rückblick nach ein paar Wochen zeigt Fortschritte, die du im Alltag übersiehst."
+     ],
+     "q": "Notierst du Läufe lieber auf Papier oder mit einem Gerät?",
+     "c": "Leg heute ein einfaches Lauftagebuch an und trag deine letzten zwei Einheiten aus dem Gedächtnis ein."
+    },
+    "es": {
+     "t": "Registrar tus carreras",
+     "g": "Aprende formas sencillas de anotar tus carreras y ver tu progreso.",
+     "p": [
+      "Un cuaderno, un reloj o una app sirven; elige lo que de verdad vayas a usar.",
+      "Anota el tiempo, la distancia aproximada y cómo te sentiste.",
+      "Mirar atrás tras unas semanas muestra avances que el día a día esconde."
+     ],
+     "q": "¿Prefieres registrar tus carreras en papel o con un dispositivo?",
+     "c": "Empieza hoy un registro sencillo y apunta de memoria tus dos últimas sesiones."
+    },
+    "fr": {
+     "t": "Suivre ses sorties",
+     "g": "Apprends des façons simples de noter tes sorties et de voir tes progrès.",
+     "p": [
+      "Un carnet, une montre ou une appli : choisis ce que tu utiliseras vraiment.",
+      "Note la durée, la distance approximative et tes sensations.",
+      "Un regard en arrière après quelques semaines révèle des progrès invisibles au quotidien."
+     ],
+     "q": "Préfères-tu suivre tes sorties sur papier ou avec un appareil ?",
+     "c": "Commence aujourd'hui un carnet simple et note de mémoire tes deux dernières séances."
+    },
+    "it": {
+     "t": "Tenere traccia delle corse",
+     "g": "Impara modi semplici per annotare le tue corse e vedere i progressi.",
+     "p": [
+      "Un quaderno, un orologio o un'app vanno bene: scegli ciò che userai davvero.",
+      "Annota durata, distanza approssimativa e come ti sei sentito.",
+      "Guardare indietro dopo qualche settimana mostra progressi che ogni giorno non noti."
+     ],
+     "q": "Preferisci tenere traccia delle corse su carta o con un dispositivo?",
+     "c": "Inizia oggi un diario semplice e annota a memoria le tue ultime due sessioni."
+    },
+    "pt": {
+     "t": "Registar as corridas",
+     "g": "Aprende formas simples de registar as tuas corridas e ver o progresso.",
+     "p": [
+      "Um caderno, um relógio ou uma app servem; escolhe o que vais mesmo usar.",
+      "Anota o tempo, a distância aproximada e como te sentiste.",
+      "Olhar para trás ao fim de algumas semanas mostra progressos que o dia a dia esconde."
+     ],
+     "q": "Preferes registar as corridas em papel ou com um aparelho?",
+     "c": "Começa hoje um registo simples e anota de memória as tuas duas últimas sessões."
+    },
+    "pt_BR": {
+     "t": "Registrando suas corridas",
+     "g": "Aprenda jeitos simples de anotar suas corridas e ver sua evolução.",
+     "p": [
+      "Caderno, relógio ou aplicativo funcionam; escolha o que você vai usar de verdade.",
+      "Anote o tempo, a distância aproximada e como foi a sensação.",
+      "Olhar para trás depois de algumas semanas mostra avanços que o dia a dia esconde."
+     ],
+     "q": "Você prefere registrar corridas no papel ou com algum aparelho?",
+     "c": "Comece hoje um registro simples e anote de memória seus dois últimos treinos."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Celebrating small wins",
+     "g": "Learn to notice your progress and reward your consistency.",
+     "p": [
+      "Every finished session counts, even a short or slow one.",
+      "Small rewards, like a favourite breakfast or a new playlist, keep motivation high.",
+      "Celebrating effort rather than speed keeps running enjoyable."
+     ],
+     "q": "What small win from your recent runs or walks are you proud of?",
+     "c": "Write down three small running wins from the past weeks and pick a little treat."
+    },
+    "de": {
+     "t": "Kleine Erfolge feiern",
+     "g": "Lerne, deine Fortschritte zu bemerken und deine Beständigkeit zu belohnen.",
+     "p": [
+      "Jede absolvierte Einheit zählt, auch eine kurze oder langsame.",
+      "Kleine Belohnungen, wie ein Lieblingsfrühstück oder eine neue Playlist, halten die Motivation hoch.",
+      "Wer Einsatz statt Tempo feiert, behält die Freude am Laufen."
+     ],
+     "q": "Auf welchen kleinen Erfolg deiner letzten Läufe oder Spaziergänge bist du stolz?",
+     "c": "Schreib drei kleine Lauferfolge der letzten Wochen auf und gönn dir eine kleine Belohnung."
+    },
+    "es": {
+     "t": "Celebrar las pequeñas victorias",
+     "g": "Aprende a notar tu progreso y a premiar tu constancia.",
+     "p": [
+      "Cada sesión terminada cuenta, aunque sea corta o lenta.",
+      "Pequeños premios, como un desayuno favorito o una lista nueva, mantienen la motivación.",
+      "Celebrar el esfuerzo y no la velocidad hace que correr siga siendo un placer."
+     ],
+     "q": "¿De qué pequeña victoria de tus últimas salidas te sientes orgulloso?",
+     "c": "Escribe tres pequeñas victorias corriendo de las últimas semanas y elige un pequeño capricho."
+    },
+    "fr": {
+     "t": "Fêter les petites victoires",
+     "g": "Apprends à remarquer tes progrès et à récompenser ta régularité.",
+     "p": [
+      "Chaque séance terminée compte, même courte ou lente.",
+      "De petites récompenses, comme un petit-déjeuner préféré ou une nouvelle playlist, entretiennent la motivation.",
+      "Fêter l'effort plutôt que la vitesse garde le plaisir de courir."
+     ],
+     "q": "De quelle petite victoire de tes dernières sorties es-tu fier ?",
+     "c": "Écris trois petites victoires de course des dernières semaines et choisis une petite récompense."
+    },
+    "it": {
+     "t": "Festeggiare le piccole vittorie",
+     "g": "Impara a notare i tuoi progressi e a premiare la costanza.",
+     "p": [
+      "Ogni sessione completata conta, anche se breve o lenta.",
+      "Piccoli premi, come una colazione preferita o una nuova playlist, tengono alta la motivazione.",
+      "Festeggiare l'impegno e non la velocità mantiene la corsa piacevole."
+     ],
+     "q": "Di quale piccola vittoria delle ultime uscite sei orgoglioso?",
+     "c": "Scrivi tre piccole vittorie di corsa delle ultime settimane e scegli un piccolo premio."
+    },
+    "pt": {
+     "t": "Celebrar pequenas vitórias",
+     "g": "Aprende a reparar no teu progresso e a recompensar a tua regularidade.",
+     "p": [
+      "Cada sessão terminada conta, mesmo curta ou lenta.",
+      "Pequenas recompensas, como um pequeno-almoço favorito ou uma playlist nova, mantêm a motivação.",
+      "Celebrar o esforço e não a velocidade mantém a corrida prazerosa."
+     ],
+     "q": "De que pequena vitória das últimas corridas ou caminhadas te orgulhas?",
+     "c": "Escreve três pequenas vitórias de corrida das últimas semanas e escolhe um pequeno mimo."
+    },
+    "pt_BR": {
+     "t": "Comemorando pequenas vitórias",
+     "g": "Aprenda a perceber sua evolução e a recompensar sua constância.",
+     "p": [
+      "Cada treino concluído conta, mesmo que curto ou lento.",
+      "Pequenos prêmios, como um café da manhã favorito ou uma playlist nova, mantêm a motivação.",
+      "Comemorar o esforço, e não a velocidade, deixa a corrida mais gostosa."
+     ],
+     "q": "De qual pequena vitória das últimas corridas ou caminhadas você se orgulha?",
+     "c": "Escreva três pequenas vitórias de corrida das últimas semanas e escolha um mimo."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back on the habits, gear and pacing from your first weeks.",
+     "p": [
+      "You learned walk-run, conversational pace, warm-ups and cool-downs.",
+      "You explored shoes, clothing, routes and running in any weather.",
+      "Rest days, listening to your body and small goals keep progress steady and safe."
+     ],
+     "q": "What has been your favourite lesson or moment from this first month?",
+     "c": "Reread your running log or notes and write one thing to keep and one to improve."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Blick auf Gewohnheiten, Ausrüstung und Tempo deiner ersten Wochen zurück.",
+     "p": [
+      "Du hast Geh-Lauf, Plaudertempo, Aufwärmen und Abwärmen kennengelernt.",
+      "Du hast Schuhe, Kleidung, Strecken und Laufen bei jedem Wetter erkundet.",
+      "Ruhetage, auf den Körper hören und kleine Ziele halten den Fortschritt stetig und sicher."
+     ],
+     "q": "Was war deine liebste Lektion oder dein schönster Moment in diesem ersten Monat?",
+     "c": "Lies dein Lauftagebuch durch und notiere eine Sache zum Beibehalten und eine zum Verbessern."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasa los hábitos, el equipo y el ritmo de tus primeras semanas.",
+     "p": [
+      "Aprendiste el correr-caminar, el ritmo de conversación, el calentamiento y la vuelta a la calma.",
+      "Exploraste zapatillas, ropa, rutas y correr con cualquier tiempo.",
+      "El descanso, escuchar al cuerpo y las metas pequeñas mantienen un progreso seguro."
+     ],
+     "q": "¿Cuál ha sido tu lección o momento favorito de este primer mes?",
+     "c": "Relee tu registro o tus notas y escribe una cosa para mantener y otra para mejorar."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Repense aux habitudes, à l'équipement et aux allures de tes premières semaines.",
+     "p": [
+      "Tu as appris la course-marche, l'allure conversation, l'échauffement et le retour au calme.",
+      "Tu as exploré chaussures, vêtements, parcours et course par tous les temps.",
+      "Le repos, l'écoute du corps et les petits objectifs gardent des progrès réguliers et sûrs."
+     ],
+     "q": "Quelle a été ta leçon ou ton moment préféré de ce premier mois ?",
+     "c": "Relis ton carnet ou tes notes et écris une chose à garder et une à améliorer."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripensa ad abitudini, attrezzatura e ritmo delle prime settimane.",
+     "p": [
+      "Hai imparato corsa-camminata, ritmo da chiacchiera, riscaldamento e defaticamento.",
+      "Hai esplorato scarpe, abbigliamento, percorsi e la corsa con ogni tempo.",
+      "Riposo, ascolto del corpo e piccoli obiettivi mantengono progressi costanti e sicuri."
+     ],
+     "q": "Qual è stata la tua lezione o il tuo momento preferito di questo primo mese?",
+     "c": "Rileggi il tuo diario o gli appunti e scrivi una cosa da tenere e una da migliorare."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Recorda os hábitos, o equipamento e o ritmo das tuas primeiras semanas.",
+     "p": [
+      "Aprendeste o correr-caminhar, o ritmo de conversa, o aquecimento e o retorno à calma.",
+      "Exploraste sapatilhas, roupa, percursos e corrida com qualquer tempo.",
+      "O descanso, ouvir o corpo e objetivos pequenos mantêm um progresso regular e seguro."
+     ],
+     "q": "Qual foi a tua lição ou momento preferido deste primeiro mês?",
+     "c": "Relê o teu registo ou notas e escreve uma coisa a manter e outra a melhorar."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Relembre os hábitos, o equipamento e o ritmo das suas primeiras semanas.",
+     "p": [
+      "Você aprendeu o corre-caminha, o ritmo de conversa, o aquecimento e o desaquecimento.",
+      "Você explorou tênis, roupas, trajetos e corrida com qualquer clima.",
+      "Descanso, ouvir o corpo e metas pequenas mantêm uma evolução constante e segura."
+     ],
+     "q": "Qual foi sua lição ou momento favorito deste primeiro mês?",
+     "c": "Releia seu registro ou anotações e escreva uma coisa para manter e outra para melhorar."
+    }
+   }
+  }
+ ]
+}

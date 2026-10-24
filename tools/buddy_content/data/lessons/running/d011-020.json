@@ -1,0 +1,835 @@
+{
+ "topic": "running",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Good running posture",
+     "g": "Learn how to run tall and relaxed for a smoother stride.",
+     "p": [
+      "Imagine a string gently pulling the top of your head up toward the sky.",
+      "Keep shoulders low and loose, away from your ears.",
+      "Lean slightly forward from the ankles, not by bending at the waist."
+     ],
+     "q": "Do you tend to tense your shoulders or jaw when you concentrate?",
+     "c": "During your next run, check your posture three times: tall, loose shoulders, soft hands."
+    },
+    "de": {
+     "t": "Gute Laufhaltung",
+     "g": "Lerne, aufrecht und entspannt zu laufen, für einen runderen Schritt.",
+     "p": [
+      "Stell dir vor, ein Faden zieht deinen Kopf sanft nach oben.",
+      "Halte die Schultern tief und locker, weg von den Ohren.",
+      "Neig dich leicht aus den Fußgelenken nach vorn, nicht aus der Hüfte."
+     ],
+     "q": "Spannst du die Schultern oder den Kiefer an, wenn du dich konzentrierst?",
+     "c": "Prüf beim nächsten Lauf dreimal deine Haltung: aufrecht, lockere Schultern, weiche Hände."
+    },
+    "es": {
+     "t": "Buena postura al correr",
+     "g": "Aprende a correr erguido y relajado para una zancada más fluida.",
+     "p": [
+      "Imagina que un hilo tira suavemente de tu cabeza hacia el cielo.",
+      "Mantén los hombros bajos y sueltos, lejos de las orejas.",
+      "Inclínate un poco hacia delante desde los tobillos, no doblando la cintura."
+     ],
+     "q": "¿Sueles tensar los hombros o la mandíbula cuando te concentras?",
+     "c": "En tu próxima salida revisa tu postura tres veces: erguido, hombros sueltos, manos suaves."
+    },
+    "fr": {
+     "t": "Une bonne posture de course",
+     "g": "Apprends à courir grand et détendu pour une foulée plus fluide.",
+     "p": [
+      "Imagine un fil qui tire doucement le sommet de ta tête vers le ciel.",
+      "Garde les épaules basses et relâchées, loin des oreilles.",
+      "Penche-toi légèrement vers l'avant depuis les chevilles, pas en pliant la taille."
+     ],
+     "q": "As-tu tendance à crisper les épaules ou la mâchoire quand tu te concentres ?",
+     "c": "Pendant ta prochaine sortie, vérifie ta posture trois fois : grand, épaules relâchées, mains souples."
+    },
+    "it": {
+     "t": "Una buona postura di corsa",
+     "g": "Impara a correre alto e rilassato per una falcata più fluida.",
+     "p": [
+      "Immagina un filo che tira dolcemente la testa verso il cielo.",
+      "Tieni le spalle basse e morbide, lontane dalle orecchie.",
+      "Inclinati appena in avanti dalle caviglie, non piegandoti in vita."
+     ],
+     "q": "Tendi a irrigidire spalle o mascella quando sei concentrato?",
+     "c": "Nella prossima corsa controlla la postura tre volte: alto, spalle morbide, mani rilassate."
+    },
+    "pt": {
+     "t": "Uma boa postura de corrida",
+     "g": "Aprende a correr direito e descontraído para uma passada mais fluida.",
+     "p": [
+      "Imagina um fio a puxar suavemente o topo da cabeça para o céu.",
+      "Mantém os ombros baixos e soltos, longe das orelhas.",
+      "Inclina-te ligeiramente para a frente a partir dos tornozelos, não da cintura."
+     ],
+     "q": "Costumas contrair os ombros ou o maxilar quando te concentras?",
+     "c": "Na próxima corrida verifica a postura três vezes: direito, ombros soltos, mãos leves."
+    },
+    "pt_BR": {
+     "t": "Boa postura na corrida",
+     "g": "Aprenda a correr ereto e relaxado para uma passada mais fluida.",
+     "p": [
+      "Imagine um fio puxando suavemente o topo da sua cabeça para o céu.",
+      "Mantenha os ombros baixos e soltos, longe das orelhas.",
+      "Incline-se um pouco para a frente a partir dos tornozelos, não dobrando a cintura."
+     ],
+     "q": "Você costuma tensionar os ombros ou a mandíbula quando se concentra?",
+     "c": "Na próxima corrida, confira a postura três vezes: ereto, ombros soltos, mãos leves."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arm swing basics",
+     "g": "See how relaxed arms help your balance and rhythm.",
+     "p": [
+      "Swing your arms forward and back, not across your body.",
+      "Keep elbows bent around 90 degrees and hands loosely cupped.",
+      "Your legs tend to follow your arms, so a calm swing keeps a calm stride."
+     ],
+     "q": "What do your hands usually do when you run: clench, flap or stay relaxed?",
+     "c": "Practise 30 seconds of arm swings in front of a mirror, then try the same on your run."
+    },
+    "de": {
+     "t": "Armschwung-Grundlagen",
+     "g": "Erfahre, wie lockere Arme Gleichgewicht und Rhythmus unterstützen.",
+     "p": [
+      "Schwing die Arme vor und zurück, nicht quer vor dem Körper.",
+      "Halte die Ellbogen etwa im rechten Winkel und die Hände locker geschlossen.",
+      "Die Beine folgen meist den Armen: ruhiger Armschwung, ruhiger Schritt."
+     ],
+     "q": "Was machen deine Hände normalerweise beim Laufen: verkrampfen, flattern oder locker bleiben?",
+     "c": "Übe 30 Sekunden Armschwung vor dem Spiegel und probier es dann beim Laufen."
+    },
+    "es": {
+     "t": "Lo básico del braceo",
+     "g": "Descubre cómo unos brazos relajados ayudan al equilibrio y al ritmo.",
+     "p": [
+      "Mueve los brazos hacia delante y atrás, no cruzando el cuerpo.",
+      "Mantén los codos doblados a unos 90 grados y las manos sueltas.",
+      "Las piernas suelen seguir a los brazos: un braceo tranquilo da una zancada tranquila."
+     ],
+     "q": "¿Qué hacen tus manos al correr: se cierran fuerte, se agitan o van relajadas?",
+     "c": "Practica 30 segundos de braceo frente al espejo y luego pruébalo al correr."
+    },
+    "fr": {
+     "t": "Les bases du mouvement des bras",
+     "g": "Découvre comment des bras détendus aident l'équilibre et le rythme.",
+     "p": [
+      "Balance les bras d'avant en arrière, sans croiser devant le corps.",
+      "Garde les coudes pliés à environ 90 degrés et les mains légèrement fermées.",
+      "Les jambes suivent souvent les bras : un balancier calme donne une foulée calme."
+     ],
+     "q": "Que font tes mains quand tu cours : elles se crispent, s'agitent ou restent détendues ?",
+     "c": "Entraîne-toi 30 secondes devant un miroir, puis reproduis le geste en courant."
+    },
+    "it": {
+     "t": "Le basi del movimento delle braccia",
+     "g": "Scopri come braccia rilassate aiutano equilibrio e ritmo.",
+     "p": [
+      "Muovi le braccia avanti e indietro, non di traverso davanti al corpo.",
+      "Tieni i gomiti piegati a circa 90 gradi e le mani morbide.",
+      "Le gambe tendono a seguire le braccia: braccia calme, falcata calma."
+     ],
+     "q": "Cosa fanno di solito le tue mani quando corri: si stringono, si agitano o restano rilassate?",
+     "c": "Esercitati 30 secondi davanti allo specchio, poi prova lo stesso movimento correndo."
+    },
+    "pt": {
+     "t": "O básico do movimento dos braços",
+     "g": "Percebe como braços descontraídos ajudam o equilíbrio e o ritmo.",
+     "p": [
+      "Movimenta os braços para a frente e para trás, sem os cruzar à frente do corpo.",
+      "Mantém os cotovelos dobrados a cerca de 90 graus e as mãos soltas.",
+      "As pernas tendem a seguir os braços: braços calmos, passada calma."
+     ],
+     "q": "O que fazem as tuas mãos a correr: apertam, abanam ou ficam descontraídas?",
+     "c": "Pratica 30 segundos de movimento dos braços ao espelho e depois experimenta a correr."
+    },
+    "pt_BR": {
+     "t": "Noções do balanço dos braços",
+     "g": "Veja como braços relaxados ajudam no equilíbrio e no ritmo.",
+     "p": [
+      "Balance os braços para a frente e para trás, sem cruzar na frente do corpo.",
+      "Mantenha os cotovelos dobrados em uns 90 graus e as mãos soltas.",
+      "As pernas costumam seguir os braços: braços calmos, passada calma."
+     ],
+     "q": "O que suas mãos costumam fazer na corrida: apertam, balançam ou ficam relaxadas?",
+     "c": "Pratique 30 segundos de balanço dos braços na frente do espelho e depois teste correndo."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Footstrike without fuss",
+     "g": "Learn to land softly under your body without overthinking your feet.",
+     "p": [
+      "Aim for your foot to land roughly under your hips, not far out in front.",
+      "Light, quiet steps usually matter more than heel or forefoot landing.",
+      "Most runners find their natural footstrike; small changes should be gradual."
+     ],
+     "q": "Are your steps loud or quiet when you jog on a hard path?",
+     "c": "Jog for one minute trying to make your steps as quiet as possible."
+    },
+    "de": {
+     "t": "Fußaufsatz ohne Stress",
+     "g": "Lerne, weich unter dem Körper zu landen, ohne über deine Füße zu grübeln.",
+     "p": [
+      "Lass den Fuß ungefähr unter der Hüfte aufsetzen, nicht weit vor dem Körper.",
+      "Leichte, leise Schritte zählen meist mehr als Ferse oder Vorfuß.",
+      "Die meisten finden ihren natürlichen Fußaufsatz; Änderungen nur schrittweise."
+     ],
+     "q": "Sind deine Schritte auf hartem Boden laut oder leise?",
+     "c": "Trab eine Minute lang und versuch, so leise wie möglich aufzutreten."
+    },
+    "es": {
+     "t": "La pisada sin complicaciones",
+     "g": "Aprende a aterrizar suave bajo tu cuerpo sin obsesionarte con los pies.",
+     "p": [
+      "Intenta que el pie caiga más o menos bajo la cadera, no muy por delante.",
+      "Pasos ligeros y silenciosos suelen importar más que pisar de talón o de antepié.",
+      "Casi todos encuentran su pisada natural; cualquier cambio, poco a poco."
+     ],
+     "q": "¿Tus pasos suenan fuerte o suave cuando trotas sobre suelo duro?",
+     "c": "Trota un minuto intentando que tus pasos sean lo más silenciosos posible."
+    },
+    "fr": {
+     "t": "La pose du pied sans prise de tête",
+     "g": "Apprends à atterrir en douceur sous ton corps sans trop penser à tes pieds.",
+     "p": [
+      "Vise un appui à peu près sous les hanches, pas loin devant toi.",
+      "Des pas légers et silencieux comptent souvent plus que talon ou avant-pied.",
+      "La plupart trouvent leur appui naturel ; tout changement doit être progressif."
+     ],
+     "q": "Tes pas sont-ils bruyants ou discrets quand tu trottines sur un sol dur ?",
+     "c": "Trottine une minute en essayant de rendre tes pas aussi silencieux que possible."
+    },
+    "it": {
+     "t": "L'appoggio del piede senza stress",
+     "g": "Impara ad atterrare morbido sotto il corpo senza pensare troppo ai piedi.",
+     "p": [
+      "Cerca di appoggiare il piede circa sotto i fianchi, non molto davanti.",
+      "Passi leggeri e silenziosi contano di solito più di tallone o avampiede.",
+      "Quasi tutti trovano il loro appoggio naturale; ogni cambiamento va fatto piano."
+     ],
+     "q": "I tuoi passi sono rumorosi o silenziosi quando corricchi su un fondo duro?",
+     "c": "Corricchia per un minuto cercando di rendere i passi più silenziosi possibile."
+    },
+    "pt": {
+     "t": "A pisada sem complicações",
+     "g": "Aprende a aterrar suavemente debaixo do corpo sem pensar demais nos pés.",
+     "p": [
+      "Tenta que o pé assente mais ou menos debaixo da anca, não muito à frente.",
+      "Passos leves e silenciosos costumam importar mais do que calcanhar ou antepé.",
+      "A maioria encontra a sua pisada natural; qualquer mudança deve ser gradual."
+     ],
+     "q": "Os teus passos são barulhentos ou silenciosos quando trotas em piso duro?",
+     "c": "Trota um minuto a tentar que os passos sejam o mais silenciosos possível."
+    },
+    "pt_BR": {
+     "t": "Pisada sem complicação",
+     "g": "Aprenda a aterrissar suave embaixo do corpo sem pensar demais nos pés.",
+     "p": [
+      "Tente fazer o pé tocar o chão mais ou menos embaixo do quadril, não muito à frente.",
+      "Passos leves e silenciosos costumam importar mais que pisar de calcanhar ou de antepé.",
+      "A maioria encontra a pisada natural; qualquer mudança deve ser gradual."
+     ],
+     "q": "Seus passos fazem barulho ou são silenciosos quando você trota em piso duro?",
+     "c": "Trote por um minuto tentando deixar os passos o mais silenciosos possível."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Picking a safe route",
+     "g": "Learn how to choose routes that feel safe and pleasant.",
+     "p": [
+      "Look for even footing, good lighting and paths away from heavy traffic.",
+      "Fewer busy crossings mean fewer stops and less stress.",
+      "Tell someone your route or pick popular paths where other people are around."
+     ],
+     "q": "What is the nicest place to walk or run near where you live?",
+     "c": "Plan one 20-minute route on a map today and note any crossings or tricky spots."
+    },
+    "de": {
+     "t": "Eine sichere Strecke wählen",
+     "g": "Lerne, Strecken zu wählen, die sich sicher und angenehm anfühlen.",
+     "p": [
+      "Achte auf ebenen Untergrund, gute Beleuchtung und Wege abseits von dichtem Verkehr.",
+      "Weniger belebte Kreuzungen bedeuten weniger Stopps und weniger Stress.",
+      "Sag jemandem Bescheid oder nimm beliebte Wege, auf denen andere unterwegs sind."
+     ],
+     "q": "Was ist der schönste Ort zum Gehen oder Laufen in deiner Nähe?",
+     "c": "Plane heute auf einer Karte eine 20-Minuten-Runde und notiere Kreuzungen oder knifflige Stellen."
+    },
+    "es": {
+     "t": "Elegir una ruta segura",
+     "g": "Aprende a elegir rutas que resulten seguras y agradables.",
+     "p": [
+      "Busca suelo regular, buena iluminación y caminos lejos del tráfico intenso.",
+      "Menos cruces concurridos significan menos paradas y menos estrés.",
+      "Avisa a alguien de tu ruta o elige caminos populares donde haya más gente."
+     ],
+     "q": "¿Cuál es el lugar más bonito para caminar o correr cerca de tu casa?",
+     "c": "Planifica hoy en un mapa una ruta de 20 minutos y anota los cruces o puntos complicados."
+    },
+    "fr": {
+     "t": "Choisir un parcours sûr",
+     "g": "Apprends à choisir des parcours sûrs et agréables.",
+     "p": [
+      "Cherche un sol régulier, un bon éclairage et des chemins loin de la circulation dense.",
+      "Moins de carrefours animés, c'est moins d'arrêts et moins de stress.",
+      "Préviens quelqu'un de ton parcours ou choisis des chemins fréquentés."
+     ],
+     "q": "Quel est le plus bel endroit pour marcher ou courir près de chez toi ?",
+     "c": "Prépare aujourd'hui sur une carte un parcours de 20 minutes et note les traversées délicates."
+    },
+    "it": {
+     "t": "Scegliere un percorso sicuro",
+     "g": "Impara a scegliere percorsi sicuri e piacevoli.",
+     "p": [
+      "Cerca un fondo regolare, buona illuminazione e strade lontane dal traffico intenso.",
+      "Meno incroci trafficati significano meno soste e meno stress.",
+      "Avvisa qualcuno del percorso o scegli strade frequentate da altre persone."
+     ],
+     "q": "Qual è il posto più bello per camminare o correre vicino a casa tua?",
+     "c": "Pianifica oggi su una mappa un giro di 20 minuti e segna incroci o punti difficili."
+    },
+    "pt": {
+     "t": "Escolher um percurso seguro",
+     "g": "Aprende a escolher percursos seguros e agradáveis.",
+     "p": [
+      "Procura piso regular, boa iluminação e caminhos longe do trânsito intenso.",
+      "Menos cruzamentos movimentados significam menos paragens e menos stress.",
+      "Avisa alguém do teu percurso ou escolhe caminhos frequentados por outras pessoas."
+     ],
+     "q": "Qual é o sítio mais bonito para caminhar ou correr perto de tua casa?",
+     "c": "Planeia hoje num mapa um percurso de 20 minutos e anota cruzamentos ou pontos difíceis."
+    },
+    "pt_BR": {
+     "t": "Escolhendo um trajeto seguro",
+     "g": "Aprenda a escolher trajetos seguros e agradáveis.",
+     "p": [
+      "Procure piso regular, boa iluminação e caminhos longe do trânsito pesado.",
+      "Menos cruzamentos movimentados significam menos paradas e menos estresse.",
+      "Avise alguém sobre seu trajeto ou escolha lugares movimentados, com outras pessoas."
+     ],
+     "q": "Qual é o lugar mais gostoso para caminhar ou correr perto da sua casa?",
+     "c": "Planeje hoje num mapa um trajeto de 20 minutos e anote cruzamentos ou trechos difíceis."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running surfaces compared",
+     "g": "Get to know how different surfaces feel under your feet.",
+     "p": [
+      "Pavement is even and everywhere; a track is flat and easy to measure.",
+      "Grass and trails feel softer but ask your ankles to work a little more.",
+      "A treadmill is handy in bad weather and lets you control the pace."
+     ],
+     "q": "Which surface do you have closest to home, and how does it feel to you?",
+     "c": "Try a few minutes on a different surface this week and notice how your legs react."
+    },
+    "de": {
+     "t": "Laufuntergründe im Vergleich",
+     "g": "Lerne, wie sich verschiedene Untergründe unter deinen Füßen anfühlen.",
+     "p": [
+      "Asphalt ist eben und überall; eine Bahn ist flach und leicht zu messen.",
+      "Gras und Trails sind weicher, fordern aber deine Fußgelenke etwas mehr.",
+      "Ein Laufband ist bei schlechtem Wetter praktisch und du steuerst das Tempo."
+     ],
+     "q": "Welchen Untergrund hast du am nächsten, und wie fühlt er sich an?",
+     "c": "Lauf diese Woche ein paar Minuten auf einem anderen Untergrund und achte auf deine Beine."
+    },
+    "es": {
+     "t": "Superficies para correr",
+     "g": "Conoce cómo se sienten las distintas superficies bajo tus pies.",
+     "p": [
+      "El asfalto es regular y está en todas partes; la pista es llana y fácil de medir.",
+      "La hierba y los senderos son más blandos, pero hacen trabajar más a los tobillos.",
+      "La cinta es práctica con mal tiempo y te deja controlar el ritmo."
+     ],
+     "q": "¿Qué superficie tienes más cerca de casa y qué sensación te da?",
+     "c": "Esta semana corre unos minutos en otra superficie y fíjate en cómo responden tus piernas."
+    },
+    "fr": {
+     "t": "Les surfaces de course comparées",
+     "g": "Découvre les sensations des différentes surfaces sous tes pieds.",
+     "p": [
+      "Le bitume est régulier et partout ; la piste est plate et facile à mesurer.",
+      "L'herbe et les sentiers sont plus doux mais sollicitent un peu plus les chevilles.",
+      "Le tapis est pratique par mauvais temps et te laisse contrôler l'allure."
+     ],
+     "q": "Quelle surface as-tu le plus près de chez toi, et quelles sensations te donne-t-elle ?",
+     "c": "Cette semaine, cours quelques minutes sur une autre surface et observe tes jambes."
+    },
+    "it": {
+     "t": "Superfici di corsa a confronto",
+     "g": "Scopri come si sentono le diverse superfici sotto i piedi.",
+     "p": [
+      "L'asfalto è regolare e ovunque; la pista è piatta e facile da misurare.",
+      "Erba e sentieri sono più morbidi ma fanno lavorare un po' di più le caviglie.",
+      "Il tapis roulant è comodo col brutto tempo e ti fa controllare il ritmo."
+     ],
+     "q": "Quale superficie hai più vicino a casa e che sensazione ti dà?",
+     "c": "Questa settimana corri qualche minuto su una superficie diversa e osserva le gambe."
+    },
+    "pt": {
+     "t": "Superfícies de corrida comparadas",
+     "g": "Conhece a sensação das diferentes superfícies debaixo dos pés.",
+     "p": [
+      "O alcatrão é regular e está em todo o lado; a pista é plana e fácil de medir.",
+      "A relva e os trilhos são mais macios, mas puxam um pouco mais pelos tornozelos.",
+      "A passadeira dá jeito com mau tempo e deixa-te controlar o ritmo."
+     ],
+     "q": "Que superfície tens mais perto de casa e que sensação te dá?",
+     "c": "Esta semana corre uns minutos noutra superfície e repara como reagem as pernas."
+    },
+    "pt_BR": {
+     "t": "Comparando pisos de corrida",
+     "g": "Conheça a sensação dos diferentes pisos embaixo dos pés.",
+     "p": [
+      "O asfalto é regular e está em todo lugar; a pista é plana e fácil de medir.",
+      "Grama e trilhas são mais macias, mas exigem um pouco mais dos tornozelos.",
+      "A esteira ajuda com tempo ruim e deixa você controlar o ritmo."
+     ],
+     "q": "Que piso você tem mais perto de casa e que sensação ele te dá?",
+     "c": "Nesta semana, corra uns minutos em outro piso e repare como as pernas reagem."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Treadmill running tips",
+     "g": "Learn simple ways to make treadmill runs comfortable and less boring.",
+     "p": [
+      "Start slowly and stand tall, looking ahead instead of down at your feet.",
+      "A small incline of about one percent can feel closer to running outside.",
+      "Change speed every few minutes or watch a show to make time fly."
+     ],
+     "q": "Have you ever run on a treadmill, and what did you think of it?",
+     "c": "Plan a 15-minute treadmill or indoor session with a small change every three minutes."
+    },
+    "de": {
+     "t": "Tipps fürs Laufband",
+     "g": "Lerne einfache Wege, damit Laufbandläufe angenehm und weniger langweilig sind.",
+     "p": [
+      "Starte langsam, bleib aufrecht und schau nach vorn statt auf die Füße.",
+      "Eine leichte Steigung von etwa einem Prozent fühlt sich mehr wie draußen an.",
+      "Wechsle alle paar Minuten das Tempo oder schau eine Serie, dann vergeht die Zeit."
+     ],
+     "q": "Bist du schon mal auf einem Laufband gelaufen, und wie fandest du es?",
+     "c": "Plane 15 Minuten Laufband oder Indoor-Training mit einer kleinen Änderung alle drei Minuten."
+    },
+    "es": {
+     "t": "Consejos para la cinta",
+     "g": "Aprende formas sencillas de que correr en cinta sea cómodo y menos aburrido.",
+     "p": [
+      "Empieza despacio y mantente erguido, mirando al frente y no a los pies.",
+      "Una inclinación pequeña, de un uno por ciento, se parece más a correr fuera.",
+      "Cambia la velocidad cada pocos minutos o mira una serie para que el tiempo vuele."
+     ],
+     "q": "¿Has corrido alguna vez en cinta y qué te pareció?",
+     "c": "Planea 15 minutos en cinta o en interior con un pequeño cambio cada tres minutos."
+    },
+    "fr": {
+     "t": "Conseils pour le tapis de course",
+     "g": "Apprends des astuces simples pour rendre le tapis agréable et moins ennuyeux.",
+     "p": [
+      "Commence lentement et reste droit, le regard devant toi plutôt que sur tes pieds.",
+      "Une légère pente d'environ un pour cent ressemble davantage à la course dehors.",
+      "Change de vitesse toutes les quelques minutes ou regarde une série pour voir le temps filer."
+     ],
+     "q": "As-tu déjà couru sur un tapis, et qu'en as-tu pensé ?",
+     "c": "Prévois 15 minutes sur tapis ou en intérieur avec un petit changement toutes les trois minutes."
+    },
+    "it": {
+     "t": "Consigli per il tapis roulant",
+     "g": "Impara modi semplici per rendere il tapis roulant comodo e meno noioso.",
+     "p": [
+      "Parti piano e stai dritto, guardando avanti e non i piedi.",
+      "Una leggera pendenza di circa l'uno per cento somiglia di più alla corsa all'aperto.",
+      "Cambia velocità ogni pochi minuti o guarda una serie per far volare il tempo."
+     ],
+     "q": "Hai mai corso sul tapis roulant e cosa ne pensi?",
+     "c": "Pianifica 15 minuti di tapis roulant o al chiuso con un piccolo cambio ogni tre minuti."
+    },
+    "pt": {
+     "t": "Dicas para a passadeira",
+     "g": "Aprende formas simples de tornar a corrida na passadeira confortável e menos aborrecida.",
+     "p": [
+      "Começa devagar e mantém-te direito, a olhar em frente e não para os pés.",
+      "Uma inclinação pequena, de cerca de um por cento, parece-se mais com correr na rua.",
+      "Muda a velocidade de poucos em poucos minutos ou vê uma série para o tempo voar."
+     ],
+     "q": "Já correste numa passadeira e o que achaste?",
+     "c": "Planeia 15 minutos de passadeira ou treino em casa com uma pequena mudança a cada três minutos."
+    },
+    "pt_BR": {
+     "t": "Dicas para a esteira",
+     "g": "Aprenda jeitos simples de deixar a corrida na esteira confortável e menos chata.",
+     "p": [
+      "Comece devagar e fique ereto, olhando para a frente e não para os pés.",
+      "Uma inclinação pequena, de cerca de um por cento, lembra mais a corrida na rua.",
+      "Mude a velocidade a cada poucos minutos ou assista a uma série para o tempo voar."
+     ],
+     "q": "Você já correu na esteira e o que achou?",
+     "c": "Planeje 15 minutos de esteira ou treino em casa com uma pequena mudança a cada três minutos."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rest days matter",
+     "g": "Understand why rest days help you get stronger and enjoy running.",
+     "p": [
+      "Your body adapts and gets fitter during recovery, not only during the run.",
+      "Rest days lower the chance of feeling worn out or losing motivation.",
+      "Rest can be active: a gentle walk, stretching or simply a calm day."
+     ],
+     "q": "What do you like to do on a day off from exercise?",
+     "c": "Mark your rest days for this week in your calendar and plan something relaxing for one."
+    },
+    "de": {
+     "t": "Ruhetage sind wichtig",
+     "g": "Verstehe, warum Ruhetage dich stärker machen und den Spaß am Laufen erhalten.",
+     "p": [
+      "Dein Körper passt sich in der Erholung an und wird fitter, nicht nur beim Laufen.",
+      "Ruhetage senken die Gefahr, ausgelaugt zu sein oder die Lust zu verlieren.",
+      "Ruhe darf aktiv sein: ein sanfter Spaziergang, Dehnen oder einfach ein ruhiger Tag."
+     ],
+     "q": "Was machst du gern an einem sportfreien Tag?",
+     "c": "Trag deine Ruhetage dieser Woche in den Kalender ein und plane für einen etwas Entspannendes."
+    },
+    "es": {
+     "t": "Los días de descanso importan",
+     "g": "Entiende por qué descansar te hace más fuerte y mantiene el gusto por correr.",
+     "p": [
+      "El cuerpo se adapta y mejora durante la recuperación, no solo mientras corres.",
+      "Los días de descanso reducen el riesgo de agotarte o perder la motivación.",
+      "El descanso puede ser activo: un paseo tranquilo, estiramientos o un día sereno."
+     ],
+     "q": "¿Qué te gusta hacer en un día libre de ejercicio?",
+     "c": "Marca en el calendario tus días de descanso de esta semana y planea algo relajante para uno."
+    },
+    "fr": {
+     "t": "Les jours de repos comptent",
+     "g": "Comprends pourquoi le repos te rend plus fort et préserve le plaisir de courir.",
+     "p": [
+      "Ton corps s'adapte et progresse pendant la récupération, pas seulement en courant.",
+      "Les jours de repos limitent la fatigue accumulée et la perte de motivation.",
+      "Le repos peut être actif : une balade tranquille, des étirements ou une journée calme."
+     ],
+     "q": "Qu'aimes-tu faire un jour sans sport ?",
+     "c": "Note tes jours de repos de la semaine dans ton agenda et prévois quelque chose de relaxant pour l'un d'eux."
+    },
+    "it": {
+     "t": "I giorni di riposo contano",
+     "g": "Capisci perché il riposo ti rende più forte e mantiene il piacere di correre.",
+     "p": [
+      "Il corpo si adatta e migliora durante il recupero, non solo mentre corri.",
+      "I giorni di riposo riducono il rischio di sentirti sfinito o perdere motivazione.",
+      "Il riposo può essere attivo: una passeggiata, un po' di stretching o una giornata tranquilla."
+     ],
+     "q": "Cosa ti piace fare in un giorno senza allenamento?",
+     "c": "Segna sul calendario i giorni di riposo di questa settimana e programma qualcosa di rilassante per uno."
+    },
+    "pt": {
+     "t": "Os dias de descanso contam",
+     "g": "Percebe porque é que descansar te torna mais forte e mantém o gosto pela corrida.",
+     "p": [
+      "O corpo adapta-se e melhora durante a recuperação, não só enquanto corres.",
+      "Os dias de descanso reduzem o risco de ficares esgotado ou perderes a motivação.",
+      "O descanso pode ser ativo: um passeio calmo, alongamentos ou um dia tranquilo."
+     ],
+     "q": "O que gostas de fazer num dia sem exercício?",
+     "c": "Marca no calendário os dias de descanso desta semana e planeia algo relaxante para um deles."
+    },
+    "pt_BR": {
+     "t": "Dias de descanso importam",
+     "g": "Entenda por que descansar deixa você mais forte e mantém o prazer de correr.",
+     "p": [
+      "O corpo se adapta e melhora na recuperação, não só durante a corrida.",
+      "Dias de descanso diminuem a chance de ficar esgotado ou perder a motivação.",
+      "O descanso pode ser ativo: uma caminhada leve, alongamento ou um dia tranquilo."
+     ],
+     "q": "O que você gosta de fazer num dia sem exercício?",
+     "c": "Marque no calendário os dias de descanso desta semana e planeje algo relaxante para um deles."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening to your body",
+     "g": "Learn to tell normal effort apart from signs that you need a break.",
+     "p": [
+      "Heavy breathing and tired legs during a run are normal parts of effort.",
+      "Sharp, sudden or growing pain is a signal to stop and rest.",
+      "If something keeps hurting, a doctor or physiotherapist can take a look."
+     ],
+     "q": "How do you usually know when you have done enough exercise for the day?",
+     "c": "After your next run, rate your energy from 1 to 10 and write one word for how your body feels."
+    },
+    "de": {
+     "t": "Auf den Körper hören",
+     "g": "Lerne, normale Anstrengung von Zeichen zu unterscheiden, dass du eine Pause brauchst.",
+     "p": [
+      "Schweres Atmen und müde Beine beim Laufen gehören zur normalen Anstrengung.",
+      "Stechender, plötzlicher oder zunehmender Schmerz ist ein Signal zum Aufhören.",
+      "Tut etwas länger weh, kann ein Arzt oder Physiotherapeut es sich ansehen."
+     ],
+     "q": "Woran merkst du normalerweise, dass du für heute genug Sport gemacht hast?",
+     "c": "Bewerte nach dem nächsten Lauf deine Energie von 1 bis 10 und notiere ein Wort zu deinem Körpergefühl."
+    },
+    "es": {
+     "t": "Escuchar a tu cuerpo",
+     "g": "Aprende a distinguir el esfuerzo normal de las señales de que necesitas parar.",
+     "p": [
+      "Respirar fuerte y notar las piernas cansadas al correr es parte normal del esfuerzo.",
+      "Un dolor agudo, repentino o que va a más es una señal para parar y descansar.",
+      "Si algo sigue doliendo, un médico o fisioterapeuta puede revisarlo."
+     ],
+     "q": "¿Cómo sueles saber que ya has hecho suficiente ejercicio por hoy?",
+     "c": "Tras tu próxima salida, puntúa tu energía del 1 al 10 y escribe una palabra sobre cómo sientes el cuerpo."
+    },
+    "fr": {
+     "t": "Écouter son corps",
+     "g": "Apprends à distinguer l'effort normal des signaux qui demandent une pause.",
+     "p": [
+      "Respirer fort et avoir les jambes fatiguées font partie de l'effort normal.",
+      "Une douleur vive, soudaine ou qui s'aggrave est un signal pour s'arrêter.",
+      "Si une douleur persiste, un médecin ou un kiné peut y jeter un œil."
+     ],
+     "q": "Comment sais-tu d'habitude que tu as fait assez d'exercice pour la journée ?",
+     "c": "Après ta prochaine sortie, note ton énergie de 1 à 10 et écris un mot sur ce que ressent ton corps."
+    },
+    "it": {
+     "t": "Ascoltare il proprio corpo",
+     "g": "Impara a distinguere lo sforzo normale dai segnali che chiedono una pausa.",
+     "p": [
+      "Respiro affannoso e gambe stanche durante la corsa fanno parte dello sforzo normale.",
+      "Un dolore acuto, improvviso o crescente è un segnale per fermarti e riposare.",
+      "Se qualcosa continua a far male, un medico o un fisioterapista può dare un'occhiata."
+     ],
+     "q": "Come capisci di solito di aver fatto abbastanza attività per oggi?",
+     "c": "Dopo la prossima corsa, dai un voto da 1 a 10 alla tua energia e scrivi una parola su come senti il corpo."
+    },
+    "pt": {
+     "t": "Ouvir o corpo",
+     "g": "Aprende a distinguir o esforço normal dos sinais de que precisas de uma pausa.",
+     "p": [
+      "Respirar com força e ter as pernas cansadas fazem parte do esforço normal.",
+      "Uma dor aguda, súbita ou que aumenta é sinal para parar e descansar.",
+      "Se alguma coisa continuar a doer, um médico ou fisioterapeuta pode avaliar."
+     ],
+     "q": "Como costumas saber que já fizeste exercício suficiente por hoje?",
+     "c": "Depois da próxima corrida, dá uma nota de 1 a 10 à tua energia e escreve uma palavra sobre o corpo."
+    },
+    "pt_BR": {
+     "t": "Ouvindo o corpo",
+     "g": "Aprenda a diferenciar o esforço normal dos sinais de que você precisa de uma pausa.",
+     "p": [
+      "Respiração forte e pernas cansadas fazem parte do esforço normal da corrida.",
+      "Dor aguda, repentina ou que piora é sinal para parar e descansar.",
+      "Se algo continuar doendo, um médico ou fisioterapeuta pode avaliar."
+     ],
+     "q": "Como você costuma saber que já se exercitou o suficiente no dia?",
+     "c": "Depois da próxima corrida, dê uma nota de 1 a 10 para sua energia e escreva uma palavra sobre o corpo."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hydration basics",
+     "g": "Learn general, simple ideas about drinking water around easy runs.",
+     "p": [
+      "Drinking regularly through the day matters more than gulping just before a run.",
+      "For short, easy runs many people need nothing extra on the way.",
+      "Afterwards, sip water and notice thirst; needs vary from person to person."
+     ],
+     "q": "How do you usually remember to drink water during a busy day?",
+     "c": "Keep a water bottle visible today and refill it at least twice."
+    },
+    "de": {
+     "t": "Grundlagen zum Trinken",
+     "g": "Lerne allgemeine, einfache Ideen zum Trinken rund um lockere Läufe.",
+     "p": [
+      "Regelmäßig über den Tag zu trinken zählt mehr als kurz vor dem Lauf viel zu trinken.",
+      "Bei kurzen, lockeren Läufen brauchen viele unterwegs nichts extra.",
+      "Trink danach in kleinen Schlucken und achte auf Durst; der Bedarf ist individuell."
+     ],
+     "q": "Wie denkst du an einem vollen Tag ans Wassertrinken?",
+     "c": "Stell heute eine Wasserflasche gut sichtbar hin und füll sie mindestens zweimal nach."
+    },
+    "es": {
+     "t": "Lo básico de la hidratación",
+     "g": "Conoce ideas generales y sencillas sobre beber agua en carreras suaves.",
+     "p": [
+      "Beber con regularidad durante el día importa más que beber mucho justo antes.",
+      "En salidas cortas y suaves, mucha gente no necesita beber nada por el camino.",
+      "Después, bebe a sorbos y atiende a la sed; cada persona es distinta."
+     ],
+     "q": "¿Cómo te acuerdas de beber agua en un día ajetreado?",
+     "c": "Deja hoy una botella de agua a la vista y rellénala al menos dos veces."
+    },
+    "fr": {
+     "t": "Les bases de l'hydratation",
+     "g": "Découvre des idées générales et simples sur l'eau autour des sorties faciles.",
+     "p": [
+      "Boire régulièrement dans la journée compte plus que boire beaucoup juste avant.",
+      "Pour une sortie courte et facile, beaucoup n'ont besoin de rien en route.",
+      "Après, bois par petites gorgées et écoute ta soif ; les besoins varient."
+     ],
+     "q": "Comment penses-tu à boire de l'eau pendant une journée chargée ?",
+     "c": "Garde une bouteille d'eau bien en vue aujourd'hui et remplis-la au moins deux fois."
+    },
+    "it": {
+     "t": "Le basi dell'idratazione",
+     "g": "Scopri idee generali e semplici sul bere acqua intorno alle corse leggere.",
+     "p": [
+      "Bere regolarmente durante il giorno conta più che bere tanto subito prima.",
+      "Per corse brevi e leggere, molte persone non hanno bisogno di bere durante.",
+      "Dopo, bevi a piccoli sorsi e ascolta la sete; le esigenze variano da persona a persona."
+     ],
+     "q": "Come ti ricordi di bere acqua in una giornata piena?",
+     "c": "Tieni oggi una borraccia in vista e riempila almeno due volte."
+    },
+    "pt": {
+     "t": "O básico da hidratação",
+     "g": "Conhece ideias gerais e simples sobre beber água à volta de corridas leves.",
+     "p": [
+      "Beber com regularidade ao longo do dia conta mais do que beber muito mesmo antes.",
+      "Em corridas curtas e leves, muitas pessoas não precisam de beber nada pelo caminho.",
+      "Depois, bebe aos goles e atenta na sede; as necessidades variam de pessoa para pessoa."
+     ],
+     "q": "Como te lembras de beber água num dia cheio?",
+     "c": "Deixa hoje uma garrafa de água à vista e enche-a pelo menos duas vezes."
+    },
+    "pt_BR": {
+     "t": "Noções de hidratação",
+     "g": "Conheça ideias gerais e simples sobre beber água em corridas leves.",
+     "p": [
+      "Beber água regularmente ao longo do dia importa mais do que beber muito logo antes.",
+      "Em corridas curtas e leves, muita gente não precisa beber nada no caminho.",
+      "Depois, beba aos goles e preste atenção na sede; cada pessoa é diferente."
+     ],
+     "q": "Como você se lembra de beber água num dia corrido?",
+     "c": "Deixe hoje uma garrafinha de água à vista e encha pelo menos duas vezes."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating around runs",
+     "g": "Learn simple, general timing ideas for meals and snacks before running.",
+     "p": [
+      "A big meal right before a run can feel heavy; many wait a couple of hours.",
+      "A small, light snack can help if you feel hungry before going out.",
+      "Try different timings on easy days to learn what feels good for you."
+     ],
+     "q": "Do you prefer to run on an empty stomach or after a little snack?",
+     "c": "Note what and when you ate before your next run, and how your stomach felt."
+    },
+    "de": {
+     "t": "Essen rund ums Laufen",
+     "g": "Lerne einfache, allgemeine Ideen zum Timing von Mahlzeiten und Snacks vor dem Laufen.",
+     "p": [
+      "Eine große Mahlzeit direkt davor kann schwer liegen; viele warten ein paar Stunden.",
+      "Ein kleiner, leichter Snack hilft, wenn du vor dem Start Hunger hast.",
+      "Probier an lockeren Tagen verschiedene Zeitpunkte aus, um zu sehen, was dir guttut."
+     ],
+     "q": "Läufst du lieber mit leerem Magen oder nach einem kleinen Snack?",
+     "c": "Notiere vor dem nächsten Lauf, was und wann du gegessen hast, und wie sich dein Magen anfühlte."
+    },
+    "es": {
+     "t": "Comer alrededor de la carrera",
+     "g": "Conoce ideas generales y sencillas sobre cuándo comer antes de correr.",
+     "p": [
+      "Una comida grande justo antes puede sentar pesada; mucha gente espera un par de horas.",
+      "Un tentempié pequeño y ligero puede ayudar si tienes hambre antes de salir.",
+      "Prueba distintos horarios en días suaves para ver qué te sienta bien."
+     ],
+     "q": "¿Prefieres correr en ayunas o después de un pequeño tentempié?",
+     "c": "Anota qué y cuándo comiste antes de tu próxima salida y cómo se sintió tu estómago."
+    },
+    "fr": {
+     "t": "Manger autour de la course",
+     "g": "Découvre des idées générales et simples sur le moment des repas avant de courir.",
+     "p": [
+      "Un gros repas juste avant peut peser ; beaucoup attendent quelques heures.",
+      "Une petite collation légère peut aider si tu as faim avant de partir.",
+      "Teste différents moments lors des sorties faciles pour voir ce qui te convient."
+     ],
+     "q": "Préfères-tu courir le ventre vide ou après une petite collation ?",
+     "c": "Note ce que tu as mangé et quand avant ta prochaine sortie, et comment allait ton estomac."
+    },
+    "it": {
+     "t": "Mangiare prima della corsa",
+     "g": "Scopri idee generali e semplici su quando mangiare prima di correre.",
+     "p": [
+      "Un pasto abbondante subito prima può pesare; molti aspettano un paio d'ore.",
+      "Uno spuntino piccolo e leggero può aiutare se hai fame prima di uscire.",
+      "Prova orari diversi nei giorni facili per capire cosa ti fa stare bene."
+     ],
+     "q": "Preferisci correre a stomaco vuoto o dopo un piccolo spuntino?",
+     "c": "Annota cosa e quando hai mangiato prima della prossima corsa e come stava lo stomaco."
+    },
+    "pt": {
+     "t": "Comer à volta da corrida",
+     "g": "Conhece ideias gerais e simples sobre quando comer antes de correr.",
+     "p": [
+      "Uma refeição grande mesmo antes pode pesar; muitas pessoas esperam umas duas horas.",
+      "Um lanche pequeno e leve pode ajudar se tiveres fome antes de sair.",
+      "Experimenta horários diferentes em dias leves para perceberes o que te cai bem."
+     ],
+     "q": "Preferes correr em jejum ou depois de um pequeno lanche?",
+     "c": "Anota o que comeste e quando antes da próxima corrida, e como se sentiu o estômago."
+    },
+    "pt_BR": {
+     "t": "Comendo antes de correr",
+     "g": "Conheça ideias gerais e simples sobre o horário das refeições antes de correr.",
+     "p": [
+      "Uma refeição grande logo antes pode pesar; muita gente espera umas duas horas.",
+      "Um lanchinho leve pode ajudar se você estiver com fome antes de sair.",
+      "Teste horários diferentes em dias leves para descobrir o que funciona para você."
+     ],
+     "q": "Você prefere correr em jejum ou depois de um lanchinho?",
+     "c": "Anote o que e quando você comeu antes da próxima corrida e como o estômago reagiu."
+    }
+   }
+  }
+ ]
+}

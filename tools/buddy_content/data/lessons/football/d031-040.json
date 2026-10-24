@@ -1,0 +1,835 @@
+{
+ "topic": "football",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic skills: passing",
+     "g": "Learn the inside-foot pass, the most used skill in football.",
+     "p": [
+      "Place your standing foot beside the ball, pointing at your target.",
+      "Strike the middle of the ball with the inside of your foot, ankle firm.",
+      "Follow through towards your target for accuracy, and look up before you pass."
+     ],
+     "q": "Who do you think is one of the best passers football has seen?",
+     "c": "Pass a ball against a wall 20 times with each foot, aiming at one spot."
+    },
+    "de": {
+     "t": "Grundtechnik: Passen",
+     "g": "Lerne den Innenseitpass, die meistgenutzte Technik im Fußball.",
+     "p": [
+      "Stell das Standbein neben den Ball, die Fußspitze zeigt aufs Ziel.",
+      "Triff die Ballmitte mit der Innenseite, das Fußgelenk bleibt fest.",
+      "Schwing in Richtung Ziel durch und schau vor dem Pass hoch."
+     ],
+     "q": "Wer ist für dich einer der besten Passgeber der Fußballgeschichte?",
+     "c": "Spiel 20 Pässe pro Fuß gegen eine Wand und ziele immer auf denselben Punkt."
+    },
+    "es": {
+     "t": "Técnica básica: el pase",
+     "g": "Aprende el pase con el interior, el gesto más usado del fútbol.",
+     "p": [
+      "Coloca el pie de apoyo junto al balón, apuntando hacia tu objetivo.",
+      "Golpea el centro del balón con el interior del pie y el tobillo firme.",
+      "Acompaña el golpeo hacia el objetivo para ser preciso, y levanta la cabeza antes de pasar."
+     ],
+     "q": "¿Quién crees que es uno de los mejores pasadores de la historia?",
+     "c": "Pasa el balón contra una pared 20 veces con cada pie, apuntando a un punto."
+    },
+    "fr": {
+     "t": "Geste de base : la passe",
+     "g": "Apprends la passe intérieur du pied, le geste le plus utilisé du foot.",
+     "p": [
+      "Place ton pied d'appui à côté du ballon, pointé vers ta cible.",
+      "Frappe le milieu du ballon avec l'intérieur du pied, cheville verrouillée.",
+      "Accompagne le geste vers la cible pour être précis, et lève la tête avant de passer."
+     ],
+     "q": "Selon toi, qui est l'un des meilleurs passeurs de l'histoire du foot ?",
+     "c": "Fais 20 passes contre un mur avec chaque pied en visant un seul point."
+    },
+    "it": {
+     "t": "Fondamentali: il passaggio",
+     "g": "Impara il passaggio di piatto, il gesto più usato nel calcio.",
+     "p": [
+      "Metti il piede d'appoggio accanto al pallone, rivolto verso il bersaglio.",
+      "Colpisci il centro del pallone con l'interno del piede, caviglia ferma.",
+      "Accompagna il movimento verso il bersaglio per essere preciso, e alza la testa prima."
+     ],
+     "q": "Chi è secondo te uno dei migliori passatori della storia del calcio?",
+     "c": "Fai 20 passaggi contro un muro con ogni piede mirando a un punto."
+    },
+    "pt": {
+     "t": "Técnica básica: o passe",
+     "g": "Aprende o passe com a parte interior do pé, o gesto mais usado no futebol.",
+     "p": [
+      "Coloca o pé de apoio ao lado da bola, a apontar para o alvo.",
+      "Bate no centro da bola com a parte interior do pé, tornozelo firme.",
+      "Acompanha o movimento em direção ao alvo e levanta a cabeça antes de passar."
+     ],
+     "q": "Quem achas que é um dos melhores passadores da história do futebol?",
+     "c": "Faz 20 passes contra uma parede com cada pé, sempre para o mesmo ponto."
+    },
+    "pt_BR": {
+     "t": "Fundamento: o passe",
+     "g": "Aprenda o passe de chapa, o gesto mais usado no futebol.",
+     "p": [
+      "Coloque o pé de apoio ao lado da bola, apontando para o alvo.",
+      "Bata no meio da bola com a parte de dentro do pé, tornozelo firme.",
+      "Acompanhe o movimento na direção do alvo e levante a cabeça antes de passar."
+     ],
+     "q": "Quem você acha que é um dos melhores passadores da história do futebol?",
+     "c": "Faça 20 passes contra uma parede com cada pé, mirando sempre no mesmo ponto."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic skills: receiving",
+     "g": "Learn to control the ball with your foot, thigh and chest.",
+     "p": [
+      "A good first touch cushions the ball by relaxing the body part as it arrives.",
+      "Use the inside of the foot for ground passes, the thigh or chest for higher balls.",
+      "Check over your shoulder before the ball comes so you know where to take your first touch."
+     ],
+     "q": "Is your first touch your strength, or something you want to improve?",
+     "c": "Throw a ball up and control it with your thigh, then your chest, five times each."
+    },
+    "de": {
+     "t": "Grundtechnik: Ballannahme",
+     "g": "Lerne, den Ball mit Fuß, Oberschenkel und Brust zu kontrollieren.",
+     "p": [
+      "Ein guter erster Kontakt federt den Ball ab, indem du den Körperteil beim Aufprall lockerst.",
+      "Flache Pässe mit der Innenseite, hohe Bälle mit Oberschenkel oder Brust annehmen.",
+      "Schau vor dem Pass über die Schulter, damit du weißt, wohin du den Ball mitnimmst."
+     ],
+     "q": "Ist deine Ballannahme eine Stärke oder willst du sie verbessern?",
+     "c": "Wirf einen Ball hoch und nimm ihn je fünfmal mit Oberschenkel und Brust an."
+    },
+    "es": {
+     "t": "Técnica básica: el control",
+     "g": "Aprende a controlar el balón con el pie, el muslo y el pecho.",
+     "p": [
+      "Un buen control amortigua el balón relajando la parte del cuerpo cuando llega.",
+      "Usa el interior del pie para pases rasos y el muslo o el pecho para balones altos.",
+      "Mira por encima del hombro antes de recibir para saber hacia dónde orientar el control."
+     ],
+     "q": "¿El control es tu punto fuerte o algo que quieres mejorar?",
+     "c": "Lanza un balón al aire y contrólalo cinco veces con el muslo y cinco con el pecho."
+    },
+    "fr": {
+     "t": "Geste de base : le contrôle",
+     "g": "Apprends à contrôler le ballon du pied, de la cuisse et de la poitrine.",
+     "p": [
+      "Un bon contrôle amortit le ballon en relâchant la partie du corps au contact.",
+      "Intérieur du pied pour les passes au sol, cuisse ou poitrine pour les ballons aériens.",
+      "Regarde par-dessus l'épaule avant de recevoir pour savoir où orienter ton contrôle."
+     ],
+     "q": "Ton premier contrôle, c'est un point fort ou un point à travailler ?",
+     "c": "Lance un ballon en l'air et contrôle-le cinq fois de la cuisse puis cinq fois de la poitrine."
+    },
+    "it": {
+     "t": "Fondamentali: lo stop",
+     "g": "Impara a controllare il pallone con piede, coscia e petto.",
+     "p": [
+      "Un buono stop ammortizza la palla rilassando la parte del corpo al contatto.",
+      "Usa l'interno del piede per i passaggi rasoterra, coscia o petto per i palloni alti.",
+      "Guardati alle spalle prima di ricevere, così sai dove orientare il primo controllo."
+     ],
+     "q": "Lo stop è un tuo punto di forza o qualcosa da migliorare?",
+     "c": "Lancia in aria un pallone e controllalo cinque volte di coscia e cinque di petto."
+    },
+    "pt": {
+     "t": "Técnica básica: a receção",
+     "g": "Aprende a controlar a bola com o pé, a coxa e o peito.",
+     "p": [
+      "Uma boa receção amortece a bola, relaxando a parte do corpo quando ela chega.",
+      "Usa a parte interior do pé nos passes rasteiros e a coxa ou o peito nas bolas altas.",
+      "Olha por cima do ombro antes de receber para saberes para onde orientar a receção."
+     ],
+     "q": "A receção é um ponto forte teu ou algo que queres melhorar?",
+     "c": "Atira uma bola ao ar e controla-a cinco vezes com a coxa e cinco com o peito."
+    },
+    "pt_BR": {
+     "t": "Fundamento: o domínio",
+     "g": "Aprenda a dominar a bola com o pé, a coxa e o peito.",
+     "p": [
+      "Um bom domínio amortece a bola relaxando a parte do corpo quando ela chega.",
+      "Use a parte de dentro do pé nos passes rasteiros e a coxa ou o peito nas bolas altas.",
+      "Olhe por cima do ombro antes de receber para saber para onde levar a bola."
+     ],
+     "q": "O domínio é um ponto forte seu ou algo que você quer melhorar?",
+     "c": "Jogue uma bola para cima e domine cinco vezes com a coxa e cinco com o peito."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic skills: dribbling",
+     "g": "Learn to keep the ball close while moving with it.",
+     "p": [
+      "Use small, soft touches with both feet so the ball stays within reach.",
+      "Keep your head up as often as you can to see space and teammates.",
+      "Change speed and direction suddenly: that is what beats defenders."
+     ],
+     "q": "Which famous dribbler would you love to play like?",
+     "c": "Dribble around five objects in a slalom and back, using only small touches."
+    },
+    "de": {
+     "t": "Grundtechnik: Dribbeln",
+     "g": "Lerne, den Ball beim Laufen eng am Fuß zu führen.",
+     "p": [
+      "Nutze kleine, weiche Kontakte mit beiden Füßen, damit der Ball nah bleibt.",
+      "Halte den Kopf so oft wie möglich oben, um Räume und Mitspieler zu sehen.",
+      "Wechsle plötzlich Tempo und Richtung, so lässt du Verteidiger stehen."
+     ],
+     "q": "Wie welcher berühmte Dribbler würdest du gern spielen?",
+     "c": "Dribble einen Slalom um fünf Gegenstände und zurück, nur mit kleinen Kontakten."
+    },
+    "es": {
+     "t": "Técnica básica: la conducción y el regate",
+     "g": "Aprende a llevar el balón pegado al pie mientras te mueves.",
+     "p": [
+      "Da toques pequeños y suaves con los dos pies para que el balón no se aleje.",
+      "Levanta la cabeza siempre que puedas para ver espacios y compañeros.",
+      "Cambia de ritmo y de dirección de golpe: así se supera a los defensas."
+     ],
+     "q": "¿Como qué gran regateador te encantaría jugar?",
+     "c": "Haz un eslalon entre cinco objetos, ida y vuelta, solo con toques cortos."
+    },
+    "fr": {
+     "t": "Geste de base : le dribble",
+     "g": "Apprends à garder le ballon près de toi en te déplaçant.",
+     "p": [
+      "Fais de petites touches douces des deux pieds pour garder le ballon à portée.",
+      "Lève la tête le plus souvent possible pour voir les espaces et tes partenaires.",
+      "Change brusquement de rythme et de direction : c'est ce qui élimine un défenseur."
+     ],
+     "q": "Comme quel grand dribbleur aimerais-tu jouer ?",
+     "c": "Fais un slalom entre cinq objets, aller-retour, uniquement avec de petites touches."
+    },
+    "it": {
+     "t": "Fondamentali: il dribbling",
+     "g": "Impara a tenere il pallone vicino mentre ti muovi.",
+     "p": [
+      "Usa tocchi piccoli e morbidi con entrambi i piedi per tenere la palla a portata.",
+      "Alza la testa il più spesso possibile per vedere spazi e compagni.",
+      "Cambia improvvisamente ritmo e direzione: è così che si salta l'uomo."
+     ],
+     "q": "Come quale grande dribblatore ti piacerebbe giocare?",
+     "c": "Fai uno slalom tra cinque oggetti, andata e ritorno, solo con piccoli tocchi."
+    },
+    "pt": {
+     "t": "Técnica básica: a condução e o drible",
+     "g": "Aprende a manter a bola perto do pé enquanto te moves.",
+     "p": [
+      "Dá toques pequenos e suaves com os dois pés para a bola não fugir.",
+      "Levanta a cabeça sempre que puderes para veres espaços e colegas.",
+      "Muda de ritmo e de direção de repente: é assim que se ultrapassa um defesa."
+     ],
+     "q": "Como que grande driblador gostavas de jogar?",
+     "c": "Faz um slalom entre cinco objetos, ida e volta, só com toques curtos."
+    },
+    "pt_BR": {
+     "t": "Fundamento: condução e drible",
+     "g": "Aprenda a manter a bola colada no pé enquanto se movimenta.",
+     "p": [
+      "Dê toques pequenos e suaves com os dois pés para a bola não escapar.",
+      "Levante a cabeça sempre que puder para ver espaços e companheiros.",
+      "Mude de ritmo e de direção de repente: é assim que se passa pelo marcador."
+     ],
+     "q": "Como qual grande driblador você adoraria jogar?",
+     "c": "Faça um zigue-zague entre cinco objetos, ida e volta, só com toques curtos."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic skills: shooting",
+     "g": "Learn the technique for power and placement when shooting.",
+     "p": [
+      "For power, strike the ball with your laces, toes pointed down and ankle locked.",
+      "For placement, use the inside of your foot and pick a corner before you shoot.",
+      "Keep your body over the ball to keep the shot low and on target."
+     ],
+     "q": "Do you prefer a powerful strike or a calm, placed finish?",
+     "c": "Shoot ten balls at a wall target: five with your laces, five with the inside."
+    },
+    "de": {
+     "t": "Grundtechnik: Torschuss",
+     "g": "Lerne die Technik für Wucht und Genauigkeit beim Schuss.",
+     "p": [
+      "Für Wucht triffst du mit dem Spann, Fußspitze nach unten, Gelenk fest.",
+      "Für Genauigkeit nimm die Innenseite und such dir vorher eine Ecke aus.",
+      "Bleib mit dem Oberkörper über dem Ball, dann bleibt der Schuss flach und aufs Tor."
+     ],
+     "q": "Magst du lieber einen Hammer oder einen ruhig platzierten Abschluss?",
+     "c": "Schieß zehn Bälle auf ein Ziel an der Wand: fünf mit Spann, fünf mit Innenseite."
+    },
+    "es": {
+     "t": "Técnica básica: el disparo",
+     "g": "Aprende la técnica para chutar con potencia y colocación.",
+     "p": [
+      "Para la potencia, golpea con el empeine, la punta hacia abajo y el tobillo firme.",
+      "Para colocarla, usa el interior del pie y elige la esquina antes de chutar.",
+      "Mantén el cuerpo encima del balón para que el tiro salga raso y a puerta."
+     ],
+     "q": "¿Prefieres un zapatazo potente o una definición tranquila y colocada?",
+     "c": "Lanza diez balones a una diana en la pared: cinco con el empeine y cinco con el interior."
+    },
+    "fr": {
+     "t": "Geste de base : la frappe",
+     "g": "Apprends la technique pour frapper fort et précis.",
+     "p": [
+      "Pour la puissance, frappe du cou-de-pied, pointe vers le bas et cheville verrouillée.",
+      "Pour la précision, utilise l'intérieur du pied et choisis un coin avant de tirer.",
+      "Garde le buste au-dessus du ballon pour une frappe basse et cadrée."
+     ],
+     "q": "Tu préfères une frappe puissante ou une finition calme et placée ?",
+     "c": "Tire dix ballons sur une cible au mur : cinq du cou-de-pied, cinq de l'intérieur."
+    },
+    "it": {
+     "t": "Fondamentali: il tiro",
+     "g": "Impara la tecnica per tirare con potenza e precisione.",
+     "p": [
+      "Per la potenza, colpisci di collo pieno, punta verso il basso e caviglia bloccata.",
+      "Per la precisione, usa l'interno del piede e scegli l'angolo prima di tirare.",
+      "Tieni il busto sopra il pallone per un tiro basso e nello specchio."
+     ],
+     "q": "Preferisci una botta potente o una conclusione calma e piazzata?",
+     "c": "Tira dieci palloni a un bersaglio sul muro: cinque di collo, cinque di piatto."
+    },
+    "pt": {
+     "t": "Técnica básica: o remate",
+     "g": "Aprende a técnica para rematar com força e colocação.",
+     "p": [
+      "Para a força, bate com o peito do pé, ponta para baixo e tornozelo firme.",
+      "Para colocar, usa a parte interior do pé e escolhe o canto antes de rematar.",
+      "Mantém o corpo por cima da bola para o remate sair rasteiro e enquadrado."
+     ],
+     "q": "Preferes um remate forte ou uma finalização calma e colocada?",
+     "c": "Remata dez bolas para um alvo na parede: cinco com o peito do pé e cinco com o interior."
+    },
+    "pt_BR": {
+     "t": "Fundamento: o chute",
+     "g": "Aprenda a técnica para chutar com força e colocação.",
+     "p": [
+      "Para força, bata com o peito do pé, ponta para baixo e tornozelo firme.",
+      "Para colocar, use a parte de dentro do pé e escolha o canto antes de chutar.",
+      "Mantenha o corpo sobre a bola para o chute sair baixo e no gol."
+     ],
+     "q": "Você prefere uma bomba ou uma finalização tranquila e colocada?",
+     "c": "Chute dez bolas num alvo na parede: cinco com o peito do pé e cinco de chapa."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Heading the ball",
+     "g": "Learn how headers work and why youth football often limits heading.",
+     "p": [
+      "Use your forehead, not the top of your head, and keep your eyes on the ball.",
+      "Your neck and body give the power, while your arms help with balance and space.",
+      "Many football associations limit heading practice for children as a precaution."
+     ],
+     "q": "Do you remember a famous headed goal?",
+     "c": "Watch a set piece in a match and see who attacks the ball with their head."
+    },
+    "de": {
+     "t": "Kopfball",
+     "g": "Lerne, wie Kopfbälle funktionieren und warum der Jugendfußball sie oft begrenzt.",
+     "p": [
+      "Triff mit der Stirn, nicht mit dem Scheitel, und behalte den Ball im Blick.",
+      "Kraft kommt aus Nacken und Körper, die Arme helfen bei Balance und Platz.",
+      "Viele Verbände begrenzen Kopfballtraining für Kinder aus Vorsicht."
+     ],
+     "q": "Erinnerst du dich an ein berühmtes Kopfballtor?",
+     "c": "Beobachte bei einer Standardsituation, wer zum Kopfball geht."
+    },
+    "es": {
+     "t": "El juego de cabeza",
+     "g": "Aprende cómo se cabecea y por qué el fútbol base suele limitar los cabezazos.",
+     "p": [
+      "Golpea con la frente, no con la coronilla, y no pierdas de vista el balón.",
+      "El cuello y el cuerpo dan la fuerza; los brazos ayudan al equilibrio y a ganar espacio.",
+      "Muchas federaciones limitan los cabezazos en los entrenamientos infantiles por precaución."
+     ],
+     "q": "¿Recuerdas algún gol de cabeza famoso?",
+     "c": "En una jugada a balón parado, fíjate en quién va a rematar de cabeza."
+    },
+    "fr": {
+     "t": "Le jeu de tête",
+     "g": "Découvre comment se fait une tête et pourquoi le foot des jeunes la limite souvent.",
+     "p": [
+      "Frappe avec le front, pas le sommet du crâne, et garde les yeux sur le ballon.",
+      "La puissance vient du cou et du corps ; les bras aident à l'équilibre et à l'espace.",
+      "Beaucoup de fédérations limitent les têtes à l'entraînement des enfants par précaution."
+     ],
+     "q": "Te souviens-tu d'un but de la tête célèbre ?",
+     "c": "Sur un coup de pied arrêté, observe qui attaque le ballon de la tête."
+    },
+    "it": {
+     "t": "Il colpo di testa",
+     "g": "Scopri come si colpisce di testa e perché il calcio giovanile spesso lo limita.",
+     "p": [
+      "Colpisci con la fronte, non con la sommità del capo, e tieni gli occhi sul pallone.",
+      "La forza arriva da collo e corpo; le braccia aiutano equilibrio e spazio.",
+      "Molte federazioni limitano i colpi di testa negli allenamenti dei bambini per prudenza."
+     ],
+     "q": "Ricordi un famoso gol di testa?",
+     "c": "Su un calcio piazzato, osserva chi attacca il pallone di testa."
+    },
+    "pt": {
+     "t": "O jogo de cabeça",
+     "g": "Aprende como se cabeceia e porque o futebol de formação costuma limitar os cabeceamentos.",
+     "p": [
+      "Bate com a testa, não com o topo da cabeça, e não tires os olhos da bola.",
+      "O pescoço e o corpo dão a força; os braços ajudam no equilíbrio e no espaço.",
+      "Muitas federações limitam os cabeceamentos nos treinos de crianças por precaução."
+     ],
+     "q": "Lembras-te de um golo de cabeça famoso?",
+     "c": "Num lance de bola parada, repara em quem ataca a bola de cabeça."
+    },
+    "pt_BR": {
+     "t": "O cabeceio",
+     "g": "Aprenda como se cabeceia e por que o futebol de base costuma limitar os cabeceios.",
+     "p": [
+      "Bata com a testa, não com o topo da cabeça, e não tire os olhos da bola.",
+      "O pescoço e o corpo dão a força; os braços ajudam no equilíbrio e no espaço.",
+      "Muitas federações limitam o cabeceio nos treinos de crianças por precaução."
+     ],
+     "q": "Você lembra de um gol de cabeça famoso?",
+     "c": "Numa bola parada, repare em quem ataca a bola de cabeça."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic goalkeeping",
+     "g": "Learn catching, positioning and diving in simple terms.",
+     "p": [
+      "For shots at chest height, make a W shape with your thumbs and fingers behind the ball.",
+      "Stand on the line between the ball and the middle of the goal to cut the angle.",
+      "Dive sideways, landing on your side, never on your elbows or stomach."
+     ],
+     "q": "Have you ever tried playing in goal? How did it feel?",
+     "c": "Ask someone to roll or throw a ball to you and practise the W catch ten times."
+    },
+    "de": {
+     "t": "Torwart-Grundlagen",
+     "g": "Lerne Fangen, Stellungsspiel und Hechten in einfachen Worten.",
+     "p": [
+      "Bei Schüssen auf Brusthöhe bilden Daumen und Finger hinter dem Ball ein W.",
+      "Stell dich auf die Linie zwischen Ball und Tormitte, um den Winkel zu verkürzen.",
+      "Hechte zur Seite und lande auf der Seite, nie auf Ellbogen oder Bauch."
+     ],
+     "q": "Hast du schon mal im Tor gestanden? Wie war es?",
+     "c": "Lass dir einen Ball zuwerfen und übe zehnmal das Fangen mit der W-Hand."
+    },
+    "es": {
+     "t": "Portería básica",
+     "g": "Aprende a blocar, colocarte y lanzarte de forma sencilla.",
+     "p": [
+      "Para tiros a la altura del pecho, forma una W con pulgares y dedos detrás del balón.",
+      "Colócate en la línea entre el balón y el centro de la portería para cerrar el ángulo.",
+      "Lánzate de lado y cae sobre el costado, nunca sobre los codos ni el estómago."
+     ],
+     "q": "¿Alguna vez has jugado de portero? ¿Qué sentiste?",
+     "c": "Pide a alguien que te lance un balón y practica diez veces el blocaje en W."
+    },
+    "fr": {
+     "t": "Les bases du gardien",
+     "g": "Apprends la prise de balle, le placement et le plongeon simplement.",
+     "p": [
+      "Pour une frappe à hauteur de poitrine, forme un W avec pouces et doigts derrière le ballon.",
+      "Place-toi sur la ligne entre le ballon et le milieu du but pour fermer l'angle.",
+      "Plonge sur le côté et retombe sur le flanc, jamais sur les coudes ou le ventre."
+     ],
+     "q": "As-tu déjà essayé de jouer dans les buts ? Qu'as-tu ressenti ?",
+     "c": "Demande à quelqu'un de te lancer un ballon et entraîne-toi dix fois à la prise en W."
+    },
+    "it": {
+     "t": "Le basi del portiere",
+     "g": "Impara presa, posizione e tuffo in modo semplice.",
+     "p": [
+      "Per i tiri all'altezza del petto, forma una W con pollici e dita dietro il pallone.",
+      "Mettiti sulla linea tra il pallone e il centro della porta per chiudere lo specchio.",
+      "Tuffati di lato e atterra sul fianco, mai sui gomiti o sulla pancia."
+     ],
+     "q": "Hai mai provato a giocare in porta? Com'è stato?",
+     "c": "Fatti lanciare un pallone e prova dieci volte la presa a W."
+    },
+    "pt": {
+     "t": "Guarda-redes: o básico",
+     "g": "Aprende a agarrar, a posicionar-te e a mergulhar de forma simples.",
+     "p": [
+      "Para remates à altura do peito, forma um W com os polegares e os dedos atrás da bola.",
+      "Coloca-te na linha entre a bola e o centro da baliza para fechar o ângulo.",
+      "Mergulha de lado e cai sobre o flanco, nunca sobre os cotovelos ou a barriga."
+     ],
+     "q": "Já experimentaste jogar à baliza? Como foi?",
+     "c": "Pede a alguém que te atire uma bola e treina dez vezes a pega em W."
+    },
+    "pt_BR": {
+     "t": "Goleiro: o básico",
+     "g": "Aprenda a encaixar, se posicionar e pular de forma simples.",
+     "p": [
+      "Para chutes na altura do peito, forme um W com os polegares e os dedos atrás da bola.",
+      "Fique na linha entre a bola e o meio do gol para fechar o ângulo.",
+      "Pule de lado e caia sobre a lateral do corpo, nunca sobre os cotovelos ou a barriga."
+     ],
+     "q": "Você já experimentou jogar no gol? Como foi?",
+     "c": "Peça para alguém jogar uma bola para você e treine dez vezes a pegada em W."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ball control at home",
+     "g": "Practise juggling and touch exercises you can do alone.",
+     "p": [
+      "Juggling with feet, thighs and head builds a soft, confident touch.",
+      "Start by letting the ball bounce once between touches, then try without.",
+      "Tapping the ball between your feet or rolling it with your sole improves close control."
+     ],
+     "q": "What is your juggling record, or what would you like it to be?",
+     "c": "Try juggling today and write down your best score to beat next week."
+    },
+    "de": {
+     "t": "Ballgefühl zu Hause",
+     "g": "Übe Jonglieren und Ballkontakte, die du allein machen kannst.",
+     "p": [
+      "Jonglieren mit Füßen, Oberschenkeln und Kopf schult ein weiches, sicheres Ballgefühl.",
+      "Lass den Ball anfangs zwischen den Kontakten einmal aufspringen, später ohne.",
+      "Ball zwischen den Füßen hin und her tippen oder mit der Sohle ziehen verbessert die Ballkontrolle."
+     ],
+     "q": "Was ist dein Jonglierrekord, oder welcher wäre dein Ziel?",
+     "c": "Jongliere heute und notiere deinen Bestwert, den du nächste Woche knackst."
+    },
+    "es": {
+     "t": "Control del balón en casa",
+     "g": "Practica toques y ejercicios de técnica que puedes hacer solo.",
+     "p": [
+      "Hacer toques con pies, muslos y cabeza da un tacto suave y seguro.",
+      "Empieza dejando botar el balón una vez entre toques y luego prueba sin bote.",
+      "Tocar el balón entre los pies o arrastrarlo con la suela mejora el control corto."
+     ],
+     "q": "¿Cuál es tu récord de toques, o cuál te gustaría que fuera?",
+     "c": "Haz toques hoy y apunta tu mejor marca para superarla la semana que viene."
+    },
+    "fr": {
+     "t": "Maîtrise du ballon à la maison",
+     "g": "Entraîne-toi aux jongles et exercices de toucher, seul.",
+     "p": [
+      "Jongler du pied, de la cuisse et de la tête développe un toucher doux et sûr.",
+      "Commence en laissant rebondir le ballon une fois entre deux touches, puis sans rebond.",
+      "Faire passer le ballon d'un pied à l'autre ou le tirer de la semelle affine le contrôle."
+     ],
+     "q": "Quel est ton record de jongles, ou quel serait ton objectif ?",
+     "c": "Jongle aujourd'hui et note ton meilleur score pour le battre la semaine prochaine."
+    },
+    "it": {
+     "t": "Controllo palla a casa",
+     "g": "Allenati con palleggi ed esercizi di tocco da fare da solo.",
+     "p": [
+      "Palleggiare con piedi, cosce e testa sviluppa un tocco morbido e sicuro.",
+      "Inizia lasciando rimbalzare la palla una volta tra i tocchi, poi prova senza.",
+      "Toccare la palla tra i piedi o tirarla con la suola migliora il controllo stretto."
+     ],
+     "q": "Qual è il tuo record di palleggi, o quale vorresti raggiungere?",
+     "c": "Palleggia oggi e annota il tuo record da battere la prossima settimana."
+    },
+    "pt": {
+     "t": "Controlo de bola em casa",
+     "g": "Pratica toques e exercícios de técnica que podes fazer sozinho.",
+     "p": [
+      "Fazer toques com os pés, as coxas e a cabeça dá um toque suave e seguro.",
+      "Começa por deixar a bola bater uma vez no chão entre toques e depois tenta sem.",
+      "Tocar a bola entre os pés ou puxá-la com a sola melhora o controlo curto."
+     ],
+     "q": "Qual é o teu recorde de toques, ou qual gostavas que fosse?",
+     "c": "Faz toques hoje e aponta a tua melhor marca para bater na próxima semana."
+    },
+    "pt_BR": {
+     "t": "Controle de bola em casa",
+     "g": "Pratique embaixadinhas e exercícios de toque que dá para fazer sozinho.",
+     "p": [
+      "Fazer embaixadinhas com pés, coxas e cabeça deixa o toque suave e seguro.",
+      "Comece deixando a bola quicar uma vez entre os toques e depois tente sem quicar.",
+      "Tocar a bola entre os pés ou puxá-la com a sola melhora o controle curto."
+     ],
+     "q": "Qual é o seu recorde de embaixadinhas, ou qual gostaria que fosse?",
+     "c": "Faça embaixadinhas hoje e anote sua melhor marca para bater na semana que vem."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small-sided games",
+     "g": "Discover five-a-side and why small games build skills fast.",
+     "p": [
+      "Fewer players means more touches, more decisions and more goals for everyone.",
+      "Small pitches force quick passing, sharp control and constant movement.",
+      "Many youth programmes start children in small-sided games for these reasons."
+     ],
+     "q": "Have you ever played five-a-side with friends or colleagues?",
+     "c": "Suggest a small-sided game to friends and pick a time and place for it."
+    },
+    "de": {
+     "t": "Spiele in kleinen Teams",
+     "g": "Entdecke Fünf-gegen-fünf und warum kleine Spiele schnell besser machen.",
+     "p": [
+      "Weniger Spieler heißt mehr Ballkontakte, mehr Entscheidungen und mehr Tore für alle.",
+      "Kleine Felder verlangen schnelle Pässe, saubere Ballkontrolle und ständige Bewegung.",
+      "Viele Jugendprogramme lassen Kinder deshalb zuerst in kleinen Teams spielen."
+     ],
+     "q": "Hast du schon mal Fünf-gegen-fünf mit Freunden oder Kollegen gespielt?",
+     "c": "Schlag Freunden ein Kleinfeldspiel vor und legt Zeit und Ort fest."
+    },
+    "es": {
+     "t": "Partidos reducidos",
+     "g": "Descubre el fútbol cinco y por qué los partidos pequeños hacen mejorar rápido.",
+     "p": [
+      "Menos jugadores significa más toques, más decisiones y más goles para todos.",
+      "Un campo pequeño obliga a pasar rápido, controlar bien y moverse sin parar.",
+      "Por eso muchos programas de fútbol base empiezan con partidos reducidos."
+     ],
+     "q": "¿Has jugado alguna vez un partido de fútbol cinco con amigos o compañeros?",
+     "c": "Propón a tus amigos un partido reducido y fijad día y lugar."
+    },
+    "fr": {
+     "t": "Les petits matchs",
+     "g": "Découvre le foot à cinq et pourquoi les petits matchs font progresser vite.",
+     "p": [
+      "Moins de joueurs, c'est plus de ballons touchés, plus de décisions et plus de buts.",
+      "Un petit terrain oblige à passer vite, contrôler proprement et bouger sans cesse.",
+      "C'est pourquoi de nombreuses écoles de foot commencent par des petits matchs."
+     ],
+     "q": "As-tu déjà joué au foot à cinq avec des amis ou des collègues ?",
+     "c": "Propose un petit match à tes amis et fixez un jour et un lieu."
+    },
+    "it": {
+     "t": "Le partite a ranghi ridotti",
+     "g": "Scopri il calcetto e perché le partite piccole fanno migliorare in fretta.",
+     "p": [
+      "Meno giocatori significa più palloni toccati, più decisioni e più gol per tutti.",
+      "Un campo piccolo obbliga a passare veloce, controllare bene e muoversi sempre.",
+      "Per questo molte scuole calcio iniziano con partite a ranghi ridotti."
+     ],
+     "q": "Hai mai giocato a calcetto con amici o colleghi?",
+     "c": "Proponi una partita di calcetto agli amici e fissate giorno e luogo."
+    },
+    "pt": {
+     "t": "Jogos reduzidos",
+     "g": "Descobre o futebol de cinco e porque os jogos pequenos fazem evoluir depressa.",
+     "p": [
+      "Menos jogadores significa mais toques, mais decisões e mais golos para todos.",
+      "Um campo pequeno obriga a passar rápido, controlar bem e mexer-se sempre.",
+      "Por isso muitas escolas de futebol começam com jogos reduzidos."
+     ],
+     "q": "Já jogaste futebol de cinco com amigos ou colegas?",
+     "c": "Propõe um jogo reduzido aos teus amigos e marquem dia e local."
+    },
+    "pt_BR": {
+     "t": "Jogos reduzidos",
+     "g": "Descubra o futebol society e o fut de cinco e por que jogos pequenos fazem evoluir rápido.",
+     "p": [
+      "Menos jogadores significa mais toques, mais decisões e mais gols para todo mundo.",
+      "Um campo pequeno obriga a passar rápido, dominar bem e se movimentar sempre.",
+      "Por isso muitas escolinhas de futebol começam com jogos reduzidos."
+     ],
+     "q": "Você já jogou uma pelada de cinco com amigos ou colegas?",
+     "c": "Proponha um jogo reduzido aos amigos e combinem dia e lugar."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Futsal",
+     "g": "Meet the fast indoor game played with a smaller, heavier ball.",
+     "p": [
+      "Futsal is played five against five, goalkeepers included, on a hard court.",
+      "Its ball is smaller and bounces less, which rewards sole control and quick passing.",
+      "It began in Montevideo, Uruguay, in the 1930s, and many great footballers grew up playing it."
+     ],
+     "q": "Would you rather play futsal indoors or football on grass?",
+     "c": "Watch a short futsal clip and notice how players use the sole of the foot."
+    },
+    "de": {
+     "t": "Futsal",
+     "g": "Lerne das schnelle Hallenspiel mit kleinerem, schwererem Ball kennen.",
+     "p": [
+      "Futsal wird fünf gegen fünf gespielt, Torhüter eingeschlossen, auf hartem Hallenboden.",
+      "Der Ball ist kleiner und springt weniger, das belohnt Sohlenkontrolle und schnelle Pässe.",
+      "Futsal entstand in den 1930ern in Montevideo, Uruguay; viele Stars sind damit aufgewachsen."
+     ],
+     "q": "Würdest du lieber Futsal in der Halle oder Fußball auf Rasen spielen?",
+     "c": "Schau dir einen kurzen Futsal-Clip an und achte darauf, wie die Sohle eingesetzt wird."
+    },
+    "es": {
+     "t": "Fútbol sala",
+     "g": "Conoce el rápido juego bajo techo con un balón más pequeño y pesado.",
+     "p": [
+      "El fútbol sala se juega cinco contra cinco, porteros incluidos, en pista dura.",
+      "Su balón es más pequeño y bota menos, lo que premia el control con la suela y el pase rápido.",
+      "Nació en Montevideo, Uruguay, en los años 30, y muchos cracks crecieron jugándolo."
+     ],
+     "q": "¿Prefieres jugar al fútbol sala bajo techo o al fútbol en césped?",
+     "c": "Mira un vídeo corto de fútbol sala y fíjate en cómo usan la suela."
+    },
+    "fr": {
+     "t": "Le futsal",
+     "g": "Découvre le jeu rapide en salle, avec un ballon plus petit et plus lourd.",
+     "p": [
+      "Le futsal se joue à cinq contre cinq, gardiens compris, sur un sol dur.",
+      "Son ballon est plus petit et rebondit moins, ce qui favorise le jeu de semelle et les passes rapides.",
+      "Il est né à Montevideo, en Uruguay, dans les années 1930, et beaucoup de stars y ont grandi."
+     ],
+     "q": "Tu préfères le futsal en salle ou le foot sur gazon ?",
+     "c": "Regarde un court extrait de futsal et observe l'usage de la semelle."
+    },
+    "it": {
+     "t": "Il futsal",
+     "g": "Conosci il gioco veloce al coperto, con un pallone più piccolo e pesante.",
+     "p": [
+      "Il futsal si gioca cinque contro cinque, portieri compresi, su campo duro.",
+      "Il pallone è più piccolo e rimbalza meno: premia il controllo con la suola e i passaggi rapidi.",
+      "È nato a Montevideo, in Uruguay, negli anni Trenta, e tanti campioni sono cresciuti giocandolo."
+     ],
+     "q": "Preferisci giocare a futsal al coperto o a calcio sull'erba?",
+     "c": "Guarda un breve video di futsal e nota come i giocatori usano la suola."
+    },
+    "pt": {
+     "t": "Futsal",
+     "g": "Conhece o jogo rápido de pavilhão, com uma bola mais pequena e pesada.",
+     "p": [
+      "O futsal joga-se cinco contra cinco, guarda-redes incluídos, num piso duro.",
+      "A bola é mais pequena e salta menos, o que premeia o controlo com a sola e o passe rápido.",
+      "Nasceu em Montevideu, no Uruguai, nos anos 30, e muitos craques cresceram a jogá-lo."
+     ],
+     "q": "Preferes jogar futsal num pavilhão ou futebol na relva?",
+     "c": "Vê um pequeno vídeo de futsal e repara em como os jogadores usam a sola."
+    },
+    "pt_BR": {
+     "t": "Futsal",
+     "g": "Conheça o jogo rápido de quadra, com uma bola menor e mais pesada.",
+     "p": [
+      "O futsal é jogado cinco contra cinco, goleiros incluídos, em quadra de piso duro.",
+      "A bola é menor e quica menos, o que valoriza o domínio de sola e o passe rápido.",
+      "Nasceu em Montevidéu, no Uruguai, nos anos 1930, e muitos craques cresceram jogando futsal."
+     ],
+     "q": "Você prefere jogar futsal na quadra ou futebol na grama?",
+     "c": "Veja um vídeo curto de futsal e repare como os jogadores usam a sola."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beach soccer",
+     "g": "Enjoy a game of sand, bicycle kicks and festival atmosphere.",
+     "p": [
+      "Beach soccer is played barefoot, five against five, goalkeepers included.",
+      "Matches have three periods of 12 minutes, and goals come thick and fast.",
+      "The uneven sand makes lofted passes, volleys and overhead kicks part of everyday play."
+     ],
+     "q": "Have you ever kicked a ball around on a beach?",
+     "c": "Watch a beach soccer highlight and count the overhead kicks you see."
+    },
+    "de": {
+     "t": "Beachsoccer",
+     "g": "Erlebe Sand, Fallrückzieher und Festivalstimmung.",
+     "p": [
+      "Beachsoccer wird barfuß gespielt, fünf gegen fünf, Torhüter eingeschlossen.",
+      "Ein Spiel hat drei Drittel zu je 12 Minuten, und Tore fallen am laufenden Band.",
+      "Auf dem unebenen Sand gehören Lupfer, Volleys und Fallrückzieher zum Alltag."
+     ],
+     "q": "Hast du schon mal am Strand gekickt?",
+     "c": "Schau dir Beachsoccer-Highlights an und zähle die Fallrückzieher."
+    },
+    "es": {
+     "t": "Fútbol playa",
+     "g": "Disfruta de arena, chilenas y ambiente de fiesta.",
+     "p": [
+      "El fútbol playa se juega descalzo, cinco contra cinco, porteros incluidos.",
+      "Los partidos tienen tres tiempos de 12 minutos y los goles llegan sin parar.",
+      "La arena irregular hace que los pases elevados, las voleas y las chilenas sean lo habitual."
+     ],
+     "q": "¿Alguna vez has jugado con un balón en la playa?",
+     "c": "Mira un resumen de fútbol playa y cuenta cuántas chilenas ves."
+    },
+    "fr": {
+     "t": "Le beach soccer",
+     "g": "Profite du sable, des retournés acrobatiques et d'une ambiance de fête.",
+     "p": [
+      "Le beach soccer se joue pieds nus, à cinq contre cinq, gardiens compris.",
+      "Un match compte trois périodes de 12 minutes, et les buts pleuvent.",
+      "Le sable irrégulier rend les passes lobées, les volées et les retournés presque quotidiens."
+     ],
+     "q": "As-tu déjà tapé dans un ballon sur une plage ?",
+     "c": "Regarde un résumé de beach soccer et compte les retournés acrobatiques."
+    },
+    "it": {
+     "t": "Il beach soccer",
+     "g": "Goditi sabbia, rovesciate e atmosfera di festa.",
+     "p": [
+      "Il beach soccer si gioca a piedi nudi, cinque contro cinque, portieri compresi.",
+      "Le partite hanno tre tempi da 12 minuti e i gol arrivano a raffica.",
+      "La sabbia irregolare rende pallonetti, volée e rovesciate parte del gioco di ogni giorno."
+     ],
+     "q": "Hai mai giocato a pallone in spiaggia?",
+     "c": "Guarda gli highlights di una partita di beach soccer e conta le rovesciate."
+    },
+    "pt": {
+     "t": "Futebol de praia",
+     "g": "Desfruta da areia, dos pontapés de bicicleta e do ambiente de festa.",
+     "p": [
+      "O futebol de praia joga-se descalço, cinco contra cinco, guarda-redes incluídos.",
+      "Os jogos têm três partes de 12 minutos e os golos sucedem-se.",
+      "A areia irregular torna os passes pelo ar, os remates de primeira e as bicicletas parte do dia a dia."
+     ],
+     "q": "Já jogaste à bola na praia?",
+     "c": "Vê um resumo de futebol de praia e conta quantas bicicletas aparecem."
+    },
+    "pt_BR": {
+     "t": "Futebol de areia",
+     "g": "Curta areia, bicicletas e clima de festa.",
+     "p": [
+      "O beach soccer é jogado descalço, cinco contra cinco, goleiros incluídos.",
+      "As partidas têm três tempos de 12 minutos, e os gols saem um atrás do outro.",
+      "A areia irregular faz dos passes pelo alto, dos voleios e das bicicletas algo comum."
+     ],
+     "q": "Você já jogou bola na praia?",
+     "c": "Veja os melhores momentos de um jogo de beach soccer e conte as bicicletas."
+    }
+   }
+  }
+ ]
+}

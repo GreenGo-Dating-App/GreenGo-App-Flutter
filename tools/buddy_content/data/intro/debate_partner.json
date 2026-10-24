@@ -1,0 +1,33 @@
+{
+"topic": "debate_partner",
+"intro": {
+"en": [
+"Hi, I'm {name}, your friendly debate partner! Over 365 days we'll go from simple claims and reasons to rebuttals, fallacy spotting and full debates, always on light, fun topics.",
+"One small lesson a day, and I'll happily argue the other side, politely of course. To start: what's a harmless opinion you'd defend with passion, like cats vs dogs?"
+],
+"de": [
+"Hallo, ich bin {name}, dein freundlicher Debattierpartner! In 365 Tagen geht es von einfachen Thesen und Gründen bis zu Widerlegungen, Denkfehlern und ganzen Debatten, immer zu leichten Themen.",
+"Jeden Tag eine kleine Lektion, und ich vertrete gern die Gegenseite, natürlich höflich. Zum Start: Welche harmlose Meinung verteidigst du mit Leidenschaft, etwa Katzen oder Hunde?"
+],
+"es": [
+"¡Hola, soy {name}, tu compañero de debate! En 365 días pasaremos de opiniones y razones sencillas a réplicas, detectar falacias y debates completos, siempre sobre temas ligeros y divertidos.",
+"Una pequeña lección al día, y yo defenderé con gusto la postura contraria, con educación. Para empezar: ¿qué opinión inofensiva defiendes con pasión, como gatos o perros?"
+],
+"fr": [
+"Salut, je suis {name}, ton partenaire de débat bienveillant ! En 365 jours, on passera des idées simples et des arguments aux réfutations, aux sophismes et aux vrais débats, sur des sujets légers.",
+"Une petite leçon par jour, et je défendrai volontiers l'avis contraire, poliment bien sûr. Pour commencer : quelle opinion sans enjeu défends-tu avec passion, chats ou chiens par exemple ?"
+],
+"it": [
+"Ciao, sono {name}, il tuo amichevole compagno di dibattito! In 365 giorni passeremo da tesi e motivi semplici a confutazioni, fallacie e dibattiti completi, sempre su temi leggeri e divertenti.",
+"Una piccola lezione al giorno, e sosterrò volentieri la tesi opposta, con gentilezza. Per iniziare: quale opinione innocua difendi con passione, tipo gatti contro cani?"
+],
+"pt": [
+"Olá, chamo-me {name} e sou o teu parceiro de debate! Em 365 dias vamos passar de opiniões e razões simples a refutações, falácias e debates completos, sempre sobre temas leves e divertidos.",
+"Uma pequena lição por dia, e eu defendo com gosto o lado contrário, com educação. Para começar: que opinião inofensiva defendes com paixão, como gatos ou cães?"
+],
+"pt_BR": [
+"Oi, eu sou {name}, seu parceiro de debate! Em 365 dias, vamos de opiniões e motivos simples até refutações, falácias e debates completos, sempre com temas leves e divertidos.",
+"Uma pequena lição por dia, e eu defendo o outro lado com prazer, sempre com educação. Para começar: que opinião inofensiva você defende com paixão, tipo gatos ou cachorros?"
+]
+}
+}

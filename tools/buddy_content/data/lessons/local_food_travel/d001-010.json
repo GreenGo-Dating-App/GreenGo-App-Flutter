@@ -1,0 +1,835 @@
+{
+ "topic": "local_food_travel",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why eat like a local?",
+     "g": "Discover how local food turns a trip into a real connection with a place and its people.",
+     "p": [
+      "A dish carries a place's history, its farms and its family recipes, so every bite tells a story.",
+      "Asking about food is one of the easiest ways to start a friendly chat with locals anywhere.",
+      "Eating where residents eat often means fresher food, fairer value and memories that last."
+     ],
+     "q": "Which meal from a trip or a visit to another region do you still remember, and why?",
+     "c": "Name one dish from a place you would love to visit and say what you think it tastes like."
+    },
+    "de": {
+     "t": "Warum wie die Einheimischen essen?",
+     "g": "Entdecke, wie lokales Essen eine Reise in eine echte Verbindung zu Ort und Menschen verwandelt.",
+     "p": [
+      "Ein Gericht trägt Geschichte, Landwirtschaft und Familienrezepte in sich, jeder Bissen erzählt etwas.",
+      "Fragen zum Essen sind überall einer der leichtesten Wege, mit Einheimischen ins Gespräch zu kommen.",
+      "Wo Einheimische essen, ist das Essen oft frischer, fair im Preis und bleibt lange in Erinnerung."
+     ],
+     "q": "An welches Essen von einer Reise erinnerst du dich bis heute, und warum?",
+     "c": "Nenne ein Gericht aus einem Ort, den du gern besuchen würdest, und beschreibe, wie es wohl schmeckt."
+    },
+    "es": {
+     "t": "¿Por qué comer como un local?",
+     "g": "Descubre cómo la comida local convierte un viaje en una conexión real con un lugar y su gente.",
+     "p": [
+      "Un plato lleva la historia, el campo y las recetas familiares de un lugar: cada bocado cuenta algo.",
+      "Preguntar por la comida es una de las formas más fáciles de charlar con la gente local en cualquier sitio.",
+      "Comer donde comen los vecinos suele significar comida más fresca, precios justos y recuerdos duraderos."
+     ],
+     "q": "¿Qué comida de un viaje o de otra región todavía recuerdas, y por qué?",
+     "c": "Nombra un plato de un lugar que te encantaría visitar y di a qué crees que sabe."
+    },
+    "fr": {
+     "t": "Pourquoi manger comme les locaux ?",
+     "g": "Découvre comment la cuisine locale transforme un voyage en vrai lien avec un lieu et ses habitants.",
+     "p": [
+      "Un plat porte l'histoire d'un lieu, ses terroirs et ses recettes de famille : chaque bouchée raconte.",
+      "Parler de nourriture est l'un des moyens les plus simples d'engager la conversation avec les gens du coin.",
+      "Manger là où mangent les habitants, c'est souvent plus frais, plus juste et plus mémorable."
+     ],
+     "q": "Quel repas d'un voyage ou d'une autre région te reste en mémoire, et pourquoi ?",
+     "c": "Cite un plat d'un endroit que tu rêves de visiter et imagine son goût."
+    },
+    "it": {
+     "t": "Perché mangiare come la gente del posto?",
+     "g": "Scopri come il cibo locale trasforma un viaggio in un legame vero con un luogo e la sua gente.",
+     "p": [
+      "Un piatto racchiude la storia di un luogo, le sue campagne e le ricette di famiglia: ogni boccone racconta.",
+      "Chiedere del cibo è uno dei modi più semplici per iniziare una chiacchierata con la gente del posto.",
+      "Mangiare dove mangiano i residenti spesso significa cibo più fresco, prezzi onesti e ricordi che restano."
+     ],
+     "q": "Quale pasto di un viaggio o di un'altra regione ricordi ancora, e perché?",
+     "c": "Nomina un piatto di un posto che vorresti visitare e immagina che sapore abbia."
+    },
+    "pt": {
+     "t": "Porquê comer como os locais?",
+     "g": "Descobre como a comida local transforma uma viagem numa ligação verdadeira com um lugar e a sua gente.",
+     "p": [
+      "Um prato guarda a história de um lugar, os seus campos e as receitas de família: cada garfada conta algo.",
+      "Perguntar sobre comida é uma das formas mais fáceis de começar uma conversa simpática com os locais.",
+      "Comer onde os residentes comem costuma significar comida mais fresca, preços justos e memórias duradouras."
+     ],
+     "q": "De que refeição de uma viagem ou de outra região ainda te lembras, e porquê?",
+     "c": "Diz um prato de um lugar que adorarias visitar e imagina o seu sabor."
+    },
+    "pt_BR": {
+     "t": "Por que comer como os locais?",
+     "g": "Descubra como a comida local transforma uma viagem em uma conexão de verdade com um lugar e seu povo.",
+     "p": [
+      "Um prato guarda a história de um lugar, sua roça e as receitas de família: cada garfada conta algo.",
+      "Perguntar sobre comida é um dos jeitos mais fáceis de puxar conversa com os moradores em qualquer lugar.",
+      "Comer onde os moradores comem costuma significar comida mais fresca, preço justo e lembranças marcantes."
+     ],
+     "q": "Qual refeição de uma viagem ou de outra região você ainda lembra, e por quê?",
+     "c": "Diga um prato de um lugar que você adoraria visitar e imagine o sabor dele."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food as a window into culture",
+     "g": "See how dishes reveal a place's climate, geography and traditions.",
+     "p": [
+      "Hot climates often favour spices, sour notes and fresh herbs, while cold ones favour hearty stews and preserved foods.",
+      "Coasts cook with fish and seafood, mountains with cheese and cured meats, plains with grains and bread.",
+      "Trade routes and migrations leave traces too, like chillies from the Americas now loved across Asia."
+     ],
+     "q": "What does a typical dish from your home region say about its climate or history?",
+     "c": "Pick one dish and guess one thing about the land it comes from, then check if you were right."
+    },
+    "de": {
+     "t": "Essen als Fenster zur Kultur",
+     "g": "Erkenne, wie Gerichte Klima, Geografie und Traditionen eines Ortes verraten.",
+     "p": [
+      "Heiße Regionen lieben oft Gewürze, Säure und frische Kräuter, kalte eher deftige Eintöpfe und Eingemachtes.",
+      "An Küsten kocht man mit Fisch, in Bergen mit Käse und Schinken, in Ebenen mit Getreide und Brot.",
+      "Handelswege und Migration hinterlassen Spuren, etwa Chilis aus Amerika, die heute in Asien beliebt sind."
+     ],
+     "q": "Was verrät ein typisches Gericht deiner Heimat über ihr Klima oder ihre Geschichte?",
+     "c": "Wähle ein Gericht, rate etwas über seine Herkunftsregion und prüfe dann, ob du recht hattest."
+    },
+    "es": {
+     "t": "La comida, una ventana a la cultura",
+     "g": "Mira cómo los platos revelan el clima, la geografía y las tradiciones de un lugar.",
+     "p": [
+      "Los climas cálidos suelen preferir especias, sabores ácidos y hierbas frescas; los fríos, guisos y conservas.",
+      "En la costa se cocina con pescado, en la montaña con queso y embutidos, en las llanuras con cereales y pan.",
+      "Las rutas comerciales también dejan huella, como los chiles de América que hoy encantan en toda Asia."
+     ],
+     "q": "¿Qué dice un plato típico de tu región sobre su clima o su historia?",
+     "c": "Elige un plato, adivina algo sobre la tierra de donde viene y luego comprueba si acertaste."
+    },
+    "fr": {
+     "t": "La cuisine, fenêtre sur la culture",
+     "g": "Vois comment les plats révèlent le climat, la géographie et les traditions d'un lieu.",
+     "p": [
+      "Les pays chauds aiment souvent épices, acidité et herbes fraîches ; les pays froids, plats mijotés et conserves.",
+      "Sur les côtes on cuisine le poisson, en montagne le fromage et la charcuterie, dans les plaines céréales et pain.",
+      "Le commerce et les migrations laissent aussi leur trace, comme le piment venu d'Amérique, adoré en Asie."
+     ],
+     "q": "Que dit un plat typique de ta région sur son climat ou son histoire ?",
+     "c": "Choisis un plat, devine une chose sur sa terre d'origine, puis vérifie si tu avais raison."
+    },
+    "it": {
+     "t": "Il cibo, una finestra sulla cultura",
+     "g": "Scopri come i piatti rivelano clima, geografia e tradizioni di un luogo.",
+     "p": [
+      "I climi caldi amano spesso spezie, note acide ed erbe fresche; quelli freddi stufati e conserve.",
+      "Sulle coste si cucina pesce, in montagna formaggi e salumi, in pianura cereali e pane.",
+      "Anche commerci e migrazioni lasciano tracce, come il peperoncino arrivato dalle Americhe e oggi amato in Asia."
+     ],
+     "q": "Cosa racconta un piatto tipico della tua regione sul suo clima o sulla sua storia?",
+     "c": "Scegli un piatto, indovina qualcosa sulla terra da cui viene e poi verifica se avevi ragione."
+    },
+    "pt": {
+     "t": "A comida como janela para a cultura",
+     "g": "Vê como os pratos revelam o clima, a geografia e as tradições de um lugar.",
+     "p": [
+      "Climas quentes preferem muitas vezes especiarias, sabores ácidos e ervas frescas; os frios, guisados e conservas.",
+      "Na costa cozinha-se peixe, na montanha queijo e enchidos, nas planícies cereais e pão.",
+      "As rotas comerciais também deixam marca, como a malagueta vinda das Américas, hoje adorada na Ásia."
+     ],
+     "q": "O que diz um prato típico da tua região sobre o clima ou a história dela?",
+     "c": "Escolhe um prato, adivinha algo sobre a terra de onde vem e depois confirma se acertaste."
+    },
+    "pt_BR": {
+     "t": "A comida como janela para a cultura",
+     "g": "Veja como os pratos revelam o clima, a geografia e as tradições de um lugar.",
+     "p": [
+      "Climas quentes costumam preferir temperos, sabores ácidos e ervas frescas; os frios, ensopados e conservas.",
+      "No litoral se cozinha peixe, na montanha queijo e embutidos, nas planícies grãos e pão.",
+      "As rotas de comércio também deixam marca, como a pimenta vinda das Américas, hoje amada em toda a Ásia."
+     ],
+     "q": "O que um prato típico da sua região diz sobre o clima ou a história dela?",
+     "c": "Escolha um prato, chute algo sobre a terra de onde ele vem e depois confira se acertou."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your food travel personality",
+     "g": "Find out whether you are adventurous, cautious or curious when exploring food.",
+     "p": [
+      "Adventurous eaters try everything at once, cautious ones prefer familiar flavours, curious ones ask first and then taste.",
+      "Every style is fine: the goal is to enjoy food in a way that feels good and respectful to you.",
+      "A simple rule helps everyone grow: try one small new thing each day alongside something you already like."
+     ],
+     "q": "Which of the three styles sounds most like you at the table?",
+     "c": "Write down one food you have never tried and would be brave enough to taste soon."
+    },
+    "de": {
+     "t": "Dein Food-Reise-Typ",
+     "g": "Finde heraus, ob du beim Essen auf Reisen abenteuerlustig, vorsichtig oder neugierig bist.",
+     "p": [
+      "Abenteurer probieren alles, Vorsichtige bleiben bei Vertrautem, Neugierige fragen zuerst und kosten dann.",
+      "Jeder Stil ist in Ordnung: Ziel ist, Essen so zu genießen, wie es sich für dich gut und respektvoll anfühlt.",
+      "Eine einfache Regel hilft allen: Probiere täglich eine kleine neue Sache neben etwas, das du schon magst."
+     ],
+     "q": "Welcher der drei Typen beschreibt dich am Tisch am besten?",
+     "c": "Schreib ein Essen auf, das du nie probiert hast und bald mutig kosten würdest."
+    },
+    "es": {
+     "t": "Tu personalidad viajera en la mesa",
+     "g": "Descubre si eres aventurero, prudente o curioso cuando exploras la comida.",
+     "p": [
+      "Los aventureros lo prueban todo, los prudentes prefieren lo conocido y los curiosos preguntan antes de probar.",
+      "Todos los estilos valen: la idea es disfrutar de la comida de una forma cómoda y respetuosa para ti.",
+      "Una regla sencilla ayuda a todos: prueba cada día algo nuevo y pequeño junto a algo que ya te gusta."
+     ],
+     "q": "¿Cuál de los tres estilos se parece más a ti en la mesa?",
+     "c": "Apunta una comida que nunca has probado y que te atreverías a probar pronto."
+    },
+    "fr": {
+     "t": "Ton profil de voyageur gourmand",
+     "g": "Découvre si tu es aventurier, prudent ou curieux quand tu explores la cuisine.",
+     "p": [
+      "L'aventurier goûte tout, le prudent préfère le connu, le curieux pose des questions puis goûte.",
+      "Chaque style est bon : l'idée est de profiter de la cuisine d'une façon agréable et respectueuse pour toi.",
+      "Une règle simple aide tout le monde : goûte chaque jour une petite nouveauté à côté d'un plat que tu aimes."
+     ],
+     "q": "Lequel de ces trois profils te ressemble le plus à table ?",
+     "c": "Note un aliment que tu n'as jamais goûté et que tu oserais essayer bientôt."
+    },
+    "it": {
+     "t": "Il tuo stile da viaggiatore goloso",
+     "g": "Scopri se a tavola in viaggio sei avventuroso, prudente o curioso.",
+     "p": [
+      "L'avventuroso assaggia tutto, il prudente preferisce sapori noti, il curioso chiede prima e poi assaggia.",
+      "Ogni stile va bene: l'obiettivo è godersi il cibo in un modo piacevole e rispettoso per te.",
+      "Una regola semplice aiuta tutti: prova ogni giorno una piccola novità accanto a qualcosa che già ami."
+     ],
+     "q": "Quale dei tre stili ti somiglia di più a tavola?",
+     "c": "Scrivi un cibo che non hai mai provato e che avresti il coraggio di assaggiare presto."
+    },
+    "pt": {
+     "t": "O teu perfil de viajante à mesa",
+     "g": "Descobre se és aventureiro, cauteloso ou curioso quando exploras comida.",
+     "p": [
+      "O aventureiro prova tudo, o cauteloso prefere o que conhece e o curioso pergunta primeiro e depois prova.",
+      "Todos os estilos são válidos: o objetivo é aproveitar a comida de uma forma confortável e respeitosa para ti.",
+      "Uma regra simples ajuda toda a gente: prova uma pequena novidade por dia ao lado de algo de que já gostas."
+     ],
+     "q": "Qual dos três perfis se parece mais contigo à mesa?",
+     "c": "Escreve uma comida que nunca provaste e que terias coragem de provar em breve."
+    },
+    "pt_BR": {
+     "t": "Seu perfil de viajante à mesa",
+     "g": "Descubra se você é aventureiro, cauteloso ou curioso quando explora comida.",
+     "p": [
+      "O aventureiro prova tudo, o cauteloso prefere o conhecido e o curioso pergunta antes de provar.",
+      "Todo estilo vale: a ideia é curtir a comida de um jeito confortável e respeitoso para você.",
+      "Uma regra simples ajuda todo mundo: prove uma pequena novidade por dia junto com algo que você já gosta."
+     ],
+     "q": "Qual dos três perfis tem mais a ver com você à mesa?",
+     "c": "Anote uma comida que você nunca provou e que teria coragem de provar em breve."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Researching food before a trip",
+     "g": "Learn how to find the signature dishes and specialities of a destination before you go.",
+     "p": [
+      "Start with three questions: what is the dish everyone knows, what do locals eat daily, and what is seasonal?",
+      "Food blogs, cookbooks, documentaries and friends from that place are great sources of tips.",
+      "Make a short wish list of five dishes with their local names, so you can recognise them on menus."
+     ],
+     "q": "If you could research one destination's food tonight, which would it be?",
+     "c": "Choose a destination and find the local name of one signature dish."
+    },
+    "de": {
+     "t": "Essen vor der Reise recherchieren",
+     "g": "Lerne, wie du die typischen Gerichte und Spezialitäten eines Reiseziels schon vorher findest.",
+     "p": [
+      "Starte mit drei Fragen: Welches Gericht kennt jeder, was essen Einheimische täglich, was gibt es saisonal?",
+      "Food-Blogs, Kochbücher, Dokus und Freunde von dort sind tolle Quellen für Tipps.",
+      "Erstelle eine Wunschliste mit fünf Gerichten samt lokalem Namen, damit du sie auf Speisekarten erkennst."
+     ],
+     "q": "Wenn du heute Abend die Küche eines Ortes recherchieren könntest, welcher wäre es?",
+     "c": "Wähle ein Reiseziel und finde den lokalen Namen eines typischen Gerichts."
+    },
+    "es": {
+     "t": "Investigar la comida antes del viaje",
+     "g": "Aprende a encontrar los platos emblemáticos y las especialidades de un destino antes de ir.",
+     "p": [
+      "Empieza con tres preguntas: ¿qué plato conoce todo el mundo, qué comen los locales a diario y qué es de temporada?",
+      "Blogs de cocina, recetarios, documentales y amigos de ese lugar son grandes fuentes de ideas.",
+      "Haz una lista de cinco platos con su nombre local para reconocerlos en las cartas."
+     ],
+     "q": "Si esta noche pudieras investigar la comida de un destino, ¿cuál sería?",
+     "c": "Elige un destino y busca el nombre local de uno de sus platos emblemáticos."
+    },
+    "fr": {
+     "t": "Se renseigner sur la cuisine avant de partir",
+     "g": "Apprends à repérer les plats emblématiques et les spécialités d'une destination avant le départ.",
+     "p": [
+      "Pars de trois questions : quel plat tout le monde connaît, que mangent les habitants au quotidien, qu'est-ce qui est de saison ?",
+      "Blogs culinaires, livres de cuisine, documentaires et amis de là-bas sont d'excellentes sources.",
+      "Fais une liste de cinq plats avec leur nom local pour les reconnaître sur les cartes."
+     ],
+     "q": "Si tu pouvais étudier la cuisine d'une destination ce soir, laquelle choisirais-tu ?",
+     "c": "Choisis une destination et trouve le nom local d'un de ses plats emblématiques."
+    },
+    "it": {
+     "t": "Informarsi sul cibo prima di partire",
+     "g": "Impara a trovare i piatti simbolo e le specialità di una meta prima di partire.",
+     "p": [
+      "Parti da tre domande: qual è il piatto che tutti conoscono, cosa mangiano ogni giorno i locali, cosa è di stagione?",
+      "Blog di cucina, ricettari, documentari e amici del posto sono ottime fonti di consigli.",
+      "Prepara una lista di cinque piatti con il nome locale, così li riconosci nei menu."
+     ],
+     "q": "Se stasera potessi studiare la cucina di una meta, quale sceglieresti?",
+     "c": "Scegli una meta e cerca il nome locale di un suo piatto simbolo."
+    },
+    "pt": {
+     "t": "Pesquisar a comida antes da viagem",
+     "g": "Aprende a descobrir os pratos emblemáticos e as especialidades de um destino antes de partir.",
+     "p": [
+      "Começa com três perguntas: que prato toda a gente conhece, o que comem os locais no dia a dia e o que é da época?",
+      "Blogues de cozinha, livros de receitas, documentários e amigos de lá são ótimas fontes de dicas.",
+      "Faz uma lista de cinco pratos com o nome local para os reconheceres nas ementas."
+     ],
+     "q": "Se pudesses pesquisar a comida de um destino esta noite, qual seria?",
+     "c": "Escolhe um destino e descobre o nome local de um prato emblemático."
+    },
+    "pt_BR": {
+     "t": "Pesquisar a comida antes da viagem",
+     "g": "Aprenda a descobrir os pratos típicos e as especialidades de um destino antes de ir.",
+     "p": [
+      "Comece com três perguntas: que prato todo mundo conhece, o que os locais comem no dia a dia e o que é da estação?",
+      "Blogs de culinária, livros de receitas, documentários e amigos de lá são ótimas fontes de dicas.",
+      "Faça uma lista de cinco pratos com o nome local para reconhecê-los nos cardápios."
+     ],
+     "q": "Se você pudesse pesquisar a comida de um destino hoje à noite, qual seria?",
+     "c": "Escolha um destino e descubra o nome local de um prato típico."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Regional versus national dishes",
+     "g": "Understand why one country can have dozens of distinct food regions.",
+     "p": [
+      "National dishes are famous abroad, but daily food changes from valley to valley and from coast to inland.",
+      "In Italy, Mexico, China or India, each region has its own ingredients, techniques and proud specialities.",
+      "Ask locals 'what is typical here, in this town?' and you will often discover dishes unknown elsewhere."
+     ],
+     "q": "Does your country have dishes that only one region really makes well?",
+     "c": "Find two regions of the same country and compare one signature dish from each."
+    },
+    "de": {
+     "t": "Regionale und nationale Gerichte",
+     "g": "Verstehe, warum ein Land Dutzende eigene Küchenregionen haben kann.",
+     "p": [
+      "Nationalgerichte sind im Ausland berühmt, doch das Alltagsessen ändert sich von Tal zu Tal und Küste zu Inland.",
+      "In Italien, Mexiko, China oder Indien hat jede Region eigene Zutaten, Techniken und stolze Spezialitäten.",
+      "Frag Einheimische: Was ist hier, in dieser Stadt, typisch? So entdeckst du oft Gerichte, die anderswo keiner kennt."
+     ],
+     "q": "Gibt es in deinem Land Gerichte, die nur eine Region richtig gut macht?",
+     "c": "Suche zwei Regionen eines Landes und vergleiche je ein typisches Gericht."
+    },
+    "es": {
+     "t": "Platos regionales y nacionales",
+     "g": "Entiende por qué un mismo país puede tener decenas de regiones gastronómicas distintas.",
+     "p": [
+      "Los platos nacionales son famosos fuera, pero la comida diaria cambia de valle en valle y de la costa al interior.",
+      "En Italia, México, China o la India cada región tiene ingredientes, técnicas y especialidades propias.",
+      "Pregunta a los locales qué es típico aquí, en este pueblo, y descubrirás platos que nadie conoce fuera."
+     ],
+     "q": "¿Tu país tiene platos que solo una región sabe hacer de verdad?",
+     "c": "Busca dos regiones de un mismo país y compara un plato típico de cada una."
+    },
+    "fr": {
+     "t": "Plats régionaux et plats nationaux",
+     "g": "Comprends pourquoi un seul pays peut compter des dizaines de régions culinaires.",
+     "p": [
+      "Les plats nationaux sont connus à l'étranger, mais la cuisine du quotidien change d'une vallée à l'autre.",
+      "En Italie, au Mexique, en Chine ou en Inde, chaque région a ses produits, ses techniques et ses fiertés.",
+      "Demande aux habitants ce qui est typique ici, dans cette ville : tu découvriras des plats inconnus ailleurs."
+     ],
+     "q": "Ton pays a-t-il des plats qu'une seule région réussit vraiment ?",
+     "c": "Trouve deux régions d'un même pays et compare un plat typique de chacune."
+    },
+    "it": {
+     "t": "Piatti regionali e nazionali",
+     "g": "Capisci perché un solo paese può avere decine di regioni gastronomiche diverse.",
+     "p": [
+      "I piatti nazionali sono famosi all'estero, ma il cibo di ogni giorno cambia da valle a valle e dalla costa all'entroterra.",
+      "In Italia, Messico, Cina o India ogni regione ha ingredienti, tecniche e specialità di cui va fiera.",
+      "Chiedi ai locali cosa è tipico qui, in questo paese: scoprirai piatti sconosciuti altrove."
+     ],
+     "q": "Il tuo paese ha piatti che solo una regione sa fare davvero bene?",
+     "c": "Trova due regioni dello stesso paese e confronta un piatto tipico di ciascuna."
+    },
+    "pt": {
+     "t": "Pratos regionais e nacionais",
+     "g": "Percebe porque é que um só país pode ter dezenas de regiões gastronómicas diferentes.",
+     "p": [
+      "Os pratos nacionais são famosos lá fora, mas a comida do dia a dia muda de vale para vale e da costa para o interior.",
+      "Em Itália, no México, na China ou na Índia, cada região tem ingredientes, técnicas e especialidades próprias.",
+      "Pergunta aos locais o que é típico aqui, nesta terra, e vais descobrir pratos desconhecidos noutros sítios."
+     ],
+     "q": "O teu país tem pratos que só uma região faz mesmo bem?",
+     "c": "Encontra duas regiões do mesmo país e compara um prato típico de cada uma."
+    },
+    "pt_BR": {
+     "t": "Pratos regionais e nacionais",
+     "g": "Entenda por que um só país pode ter dezenas de regiões gastronômicas diferentes.",
+     "p": [
+      "Os pratos nacionais são famosos lá fora, mas a comida do dia a dia muda de região para região, do litoral ao interior.",
+      "Na Itália, no México, na China ou na Índia, cada região tem ingredientes, técnicas e especialidades próprias.",
+      "Pergunte aos moradores o que é típico aqui, nesta cidade, e você vai descobrir pratos desconhecidos fora dali."
+     ],
+     "q": "Seu país tem pratos que só uma região faz bem de verdade?",
+     "c": "Encontre duas regiões do mesmo país e compare um prato típico de cada uma."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meal times around the world",
+     "g": "Learn how daily eating rhythms differ so you arrive hungry at the right moment.",
+     "p": [
+      "In Spain lunch often starts around two and dinner after nine, while in Germany or the UK dinner can begin at six.",
+      "Many places close their kitchens between lunch and dinner, so check opening hours before setting out.",
+      "Following the local rhythm puts you at the table when food is freshest and the atmosphere is liveliest."
+     ],
+     "q": "At what time do people usually have dinner where you live?",
+     "c": "Look up the usual lunch and dinner times in a country you would like to visit."
+    },
+    "de": {
+     "t": "Essenszeiten weltweit",
+     "g": "Lerne, wie sich Essensrhythmen unterscheiden, damit du zur richtigen Zeit hungrig ankommst.",
+     "p": [
+      "In Spanien beginnt das Mittagessen oft gegen zwei und das Abendessen nach neun, in Deutschland eher um sechs.",
+      "Viele Lokale schließen die Küche zwischen Mittag und Abend, prüfe also vorher die Öffnungszeiten.",
+      "Wer dem lokalen Rhythmus folgt, sitzt am Tisch, wenn das Essen am frischesten und die Stimmung am besten ist."
+     ],
+     "q": "Um wie viel Uhr isst man bei dir normalerweise zu Abend?",
+     "c": "Finde die üblichen Mittags- und Abendessenszeiten eines Landes heraus, das du gern besuchen würdest."
+    },
+    "es": {
+     "t": "Horarios de comida en el mundo",
+     "g": "Aprende cómo cambian los ritmos diarios para llegar con hambre en el momento justo.",
+     "p": [
+      "En España se suele comer hacia las dos y cenar después de las nueve; en Alemania o Reino Unido se cena a las seis.",
+      "Muchos sitios cierran la cocina entre la comida y la cena, así que revisa los horarios antes de salir.",
+      "Seguir el ritmo local te sienta a la mesa cuando la comida está más fresca y el ambiente más animado."
+     ],
+     "q": "¿A qué hora se suele cenar donde vives?",
+     "c": "Busca los horarios habituales de comida y cena de un país que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Les heures des repas dans le monde",
+     "g": "Apprends comment les rythmes changent pour arriver affamé au bon moment.",
+     "p": [
+      "En Espagne, on déjeune souvent vers 14 h et on dîne après 21 h ; en Allemagne ou au Royaume-Uni, dès 18 h.",
+      "Beaucoup de restaurants ferment la cuisine entre midi et le soir : vérifie les horaires avant de partir.",
+      "Suivre le rythme local, c'est être à table quand tout est le plus frais et l'ambiance la plus vivante."
+     ],
+     "q": "À quelle heure dîne-t-on habituellement chez toi ?",
+     "c": "Cherche les heures habituelles du déjeuner et du dîner dans un pays que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Gli orari dei pasti nel mondo",
+     "g": "Scopri come cambiano i ritmi quotidiani per arrivare affamato al momento giusto.",
+     "p": [
+      "In Spagna si pranza spesso verso le due e si cena dopo le nove; in Germania o nel Regno Unito si cena alle sei.",
+      "Molti locali chiudono la cucina tra pranzo e cena, quindi controlla gli orari prima di uscire.",
+      "Seguire il ritmo locale ti porta a tavola quando il cibo è più fresco e l'atmosfera più vivace."
+     ],
+     "q": "A che ora si cena di solito dove vivi?",
+     "c": "Cerca gli orari tipici di pranzo e cena di un paese che vorresti visitare."
+    },
+    "pt": {
+     "t": "Horários das refeições no mundo",
+     "g": "Aprende como os ritmos diários mudam para chegares com fome no momento certo.",
+     "p": [
+      "Em Espanha almoça-se muitas vezes por volta das duas e janta-se depois das nove; na Alemanha janta-se às seis.",
+      "Muitos restaurantes fecham a cozinha entre o almoço e o jantar, por isso confirma os horários antes de sair.",
+      "Seguir o ritmo local põe-te à mesa quando a comida está mais fresca e o ambiente mais animado."
+     ],
+     "q": "A que horas se costuma jantar onde vives?",
+     "c": "Pesquisa os horários habituais de almoço e jantar de um país que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Horários das refeições pelo mundo",
+     "g": "Aprenda como os ritmos diários mudam para chegar com fome na hora certa.",
+     "p": [
+      "Na Espanha o almoço costuma ser lá pelas duas e o jantar depois das nove; na Alemanha se janta às seis.",
+      "Muitos restaurantes fecham a cozinha entre o almoço e o jantar, então confira os horários antes de sair.",
+      "Seguir o ritmo local coloca você à mesa quando a comida está mais fresca e o clima mais animado."
+     ],
+     "q": "A que horas as pessoas costumam jantar onde você mora?",
+     "c": "Pesquise os horários comuns de almoço e jantar de um país que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breakfast across cultures",
+     "g": "Explore the sweet, savoury, rice-based and bread-based ways the world starts the day.",
+     "p": [
+      "Italy often keeps it light with a pastry and coffee, while Turkey sets out cheeses, olives, eggs, bread and tea.",
+      "In Japan a traditional breakfast can include rice, miso soup and grilled fish; in Vietnam, a bowl of pho.",
+      "Mexico offers chilaquiles, Brazil pão de queijo and fruit, and Britain the hearty full breakfast."
+     ],
+     "q": "What does a typical breakfast look like in your home?",
+     "c": "Choose one breakfast from another culture that you would like to try and describe it in one sentence."
+    },
+    "de": {
+     "t": "Frühstück in aller Welt",
+     "g": "Entdecke, wie die Welt den Tag beginnt: süß, herzhaft, mit Reis oder mit Brot.",
+     "p": [
+      "In Italien ist es oft leicht mit Gebäck und Kaffee, in der Türkei gibt es Käse, Oliven, Eier, Brot und Tee.",
+      "In Japan gehören zum traditionellen Frühstück Reis, Misosuppe und Fisch, in Vietnam oft eine Schüssel Pho.",
+      "Mexiko bietet Chilaquiles, Brasilien Pão de Queijo und Obst, Großbritannien das deftige Full Breakfast."
+     ],
+     "q": "Wie sieht ein typisches Frühstück bei dir zu Hause aus?",
+     "c": "Wähle ein Frühstück aus einer anderen Kultur, das du probieren möchtest, und beschreibe es in einem Satz."
+    },
+    "es": {
+     "t": "Desayunos de distintas culturas",
+     "g": "Explora las formas dulces, saladas, con arroz o con pan de empezar el día en el mundo.",
+     "p": [
+      "En Italia suele ser ligero, con bollo y café; en Turquía se sirven quesos, aceitunas, huevos, pan y té.",
+      "En Japón un desayuno tradicional puede llevar arroz, sopa de miso y pescado a la plancha; en Vietnam, un pho.",
+      "México ofrece chilaquiles, Brasil pão de queijo y fruta, y el Reino Unido su contundente full breakfast."
+     ],
+     "q": "¿Cómo es un desayuno típico en tu casa?",
+     "c": "Elige un desayuno de otra cultura que te gustaría probar y descríbelo en una frase."
+    },
+    "fr": {
+     "t": "Le petit-déjeuner dans le monde",
+     "g": "Explore les façons sucrées, salées, au riz ou au pain de commencer la journée.",
+     "p": [
+      "En Italie, on reste léger avec viennoiserie et café ; en Turquie, fromages, olives, œufs, pain et thé.",
+      "Au Japon, un petit-déjeuner traditionnel peut réunir riz, soupe miso et poisson grillé ; au Vietnam, un pho.",
+      "Le Mexique propose les chilaquiles, le Brésil le pão de queijo et des fruits, la Grande-Bretagne le full breakfast."
+     ],
+     "q": "À quoi ressemble un petit-déjeuner typique chez toi ?",
+     "c": "Choisis un petit-déjeuner d'une autre culture que tu aimerais goûter et décris-le en une phrase."
+    },
+    "it": {
+     "t": "La colazione nelle culture del mondo",
+     "g": "Esplora i modi dolci, salati, a base di riso o di pane con cui il mondo inizia la giornata.",
+     "p": [
+      "In Italia spesso è leggera, con cornetto e caffè; in Turchia arrivano formaggi, olive, uova, pane e tè.",
+      "In Giappone una colazione tradizionale può avere riso, zuppa di miso e pesce alla griglia; in Vietnam, il pho.",
+      "Il Messico offre i chilaquiles, il Brasile il pão de queijo e frutta, la Gran Bretagna il ricco full breakfast."
+     ],
+     "q": "Com'è una colazione tipica a casa tua?",
+     "c": "Scegli una colazione di un'altra cultura che vorresti provare e descrivila in una frase."
+    },
+    "pt": {
+     "t": "O pequeno-almoço em várias culturas",
+     "g": "Explora as formas doces, salgadas, com arroz ou com pão de começar o dia pelo mundo.",
+     "p": [
+      "Em Itália costuma ser leve, com bolo e café; na Turquia servem-se queijos, azeitonas, ovos, pão e chá.",
+      "No Japão um pequeno-almoço tradicional pode ter arroz, sopa de miso e peixe grelhado; no Vietname, um pho.",
+      "O México oferece chilaquiles, o Brasil pão de queijo e fruta, e o Reino Unido o farto full breakfast."
+     ],
+     "q": "Como é um pequeno-almoço típico em tua casa?",
+     "c": "Escolhe um pequeno-almoço de outra cultura que gostavas de provar e descreve-o numa frase."
+    },
+    "pt_BR": {
+     "t": "O café da manhã em várias culturas",
+     "g": "Explore os jeitos doces, salgados, com arroz ou com pão de começar o dia pelo mundo.",
+     "p": [
+      "Na Itália costuma ser leve, com doce e café; na Turquia vêm queijos, azeitonas, ovos, pão e chá.",
+      "No Japão um café da manhã tradicional pode ter arroz, sopa de missô e peixe grelhado; no Vietnã, um pho.",
+      "O México oferece chilaquiles, o Brasil pão de queijo e frutas, e o Reino Unido o farto full breakfast."
+     ],
+     "q": "Como é um café da manhã típico na sua casa?",
+     "c": "Escolha um café da manhã de outra cultura que você gostaria de provar e descreva em uma frase."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a foreign menu",
+     "g": "Learn the common menu structures and clues that help you decode unfamiliar dishes.",
+     "p": [
+      "Many menus follow an order: starters, mains, sides, desserts, drinks, so position already tells you a lot.",
+      "Look for words for cooking methods like grilled, fried or stewed, and for main ingredients like fish or beef.",
+      "A translation app's camera mode and a glance at other tables are both handy helpers."
+     ],
+     "q": "What is the most confusing menu you have ever seen?",
+     "c": "Learn the words for grilled, fried and baked in the language of a place you want to visit."
+    },
+    "de": {
+     "t": "Eine fremde Speisekarte lesen",
+     "g": "Lerne typische Aufbauten und Hinweise, die dir helfen, unbekannte Gerichte zu entschlüsseln.",
+     "p": [
+      "Viele Karten folgen einer Ordnung: Vorspeisen, Hauptgerichte, Beilagen, Desserts, Getränke.",
+      "Achte auf Wörter für Zubereitungen wie gegrillt, frittiert oder geschmort und für Zutaten wie Fisch oder Rind.",
+      "Der Kameramodus einer Übersetzungs-App und ein Blick auf die Nachbartische helfen enorm."
+     ],
+     "q": "Was war die verwirrendste Speisekarte, die du je gesehen hast?",
+     "c": "Lerne die Wörter für gegrillt, frittiert und gebacken in der Sprache eines Wunschreiseziels."
+    },
+    "es": {
+     "t": "Leer una carta extranjera",
+     "g": "Aprende las estructuras habituales de las cartas y las pistas para descifrar platos desconocidos.",
+     "p": [
+      "Muchas cartas siguen un orden: entrantes, principales, guarniciones, postres y bebidas.",
+      "Busca palabras de cocción como a la plancha, frito o guisado, y de ingredientes como pescado o ternera.",
+      "El modo cámara de una app de traducción y mirar las otras mesas son grandes aliados."
+     ],
+     "q": "¿Cuál es la carta más confusa que has visto?",
+     "c": "Aprende cómo se dice a la plancha, frito y al horno en el idioma de un lugar que quieres visitar."
+    },
+    "fr": {
+     "t": "Lire un menu étranger",
+     "g": "Apprends les structures courantes des menus et les indices pour décoder les plats inconnus.",
+     "p": [
+      "Beaucoup de cartes suivent un ordre : entrées, plats, accompagnements, desserts, boissons.",
+      "Repère les mots de cuisson comme grillé, frit ou mijoté, et d'ingrédients comme poisson ou bœuf.",
+      "Le mode caméra d'une appli de traduction et un coup d'œil aux tables voisines aident beaucoup."
+     ],
+     "q": "Quel est le menu le plus déroutant que tu aies jamais vu ?",
+     "c": "Apprends les mots grillé, frit et cuit au four dans la langue d'un pays que tu veux visiter."
+    },
+    "it": {
+     "t": "Leggere un menu straniero",
+     "g": "Impara le strutture comuni dei menu e gli indizi per decifrare i piatti sconosciuti.",
+     "p": [
+      "Molti menu seguono un ordine: antipasti, piatti principali, contorni, dolci, bevande.",
+      "Cerca parole di cottura come alla griglia, fritto o in umido, e ingredienti come pesce o manzo.",
+      "La modalità fotocamera di un'app di traduzione e un'occhiata ai tavoli vicini aiutano molto."
+     ],
+     "q": "Qual è il menu più confuso che tu abbia mai visto?",
+     "c": "Impara come si dice alla griglia, fritto e al forno nella lingua di un posto che vuoi visitare."
+    },
+    "pt": {
+     "t": "Ler uma ementa estrangeira",
+     "g": "Aprende as estruturas habituais das ementas e as pistas para decifrar pratos desconhecidos.",
+     "p": [
+      "Muitas ementas seguem uma ordem: entradas, pratos principais, acompanhamentos, sobremesas e bebidas.",
+      "Procura palavras de confeção como grelhado, frito ou estufado, e ingredientes como peixe ou vaca.",
+      "O modo câmara de uma app de tradução e espreitar as outras mesas ajudam imenso."
+     ],
+     "q": "Qual foi a ementa mais confusa que já viste?",
+     "c": "Aprende como se diz grelhado, frito e no forno na língua de um lugar que queres visitar."
+    },
+    "pt_BR": {
+     "t": "Ler um cardápio estrangeiro",
+     "g": "Aprenda as estruturas comuns dos cardápios e as pistas para decifrar pratos desconhecidos.",
+     "p": [
+      "Muitos cardápios seguem uma ordem: entradas, pratos principais, acompanhamentos, sobremesas e bebidas.",
+      "Procure palavras de preparo como grelhado, frito ou ensopado, e ingredientes como peixe ou carne bovina.",
+      "O modo câmera de um app de tradução e uma olhada nas outras mesas ajudam muito."
+     ],
+     "q": "Qual foi o cardápio mais confuso que você já viu?",
+     "c": "Aprenda como se diz grelhado, frito e assado no idioma de um lugar que você quer visitar."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ordering with confidence",
+     "g": "Practise polite phrases, pointing and asking what the house recommends.",
+     "p": [
+      "Learn four phrases in the local language: hello, please, thank you and what do you recommend?",
+      "Pointing at a dish on the menu or on another table, with a smile, works almost everywhere.",
+      "Asking for the house speciality shows trust and often leads to the best dish in the place."
+     ],
+     "q": "Have you ever ordered something without knowing what it was? How did it go?",
+     "c": "Learn how to say what do you recommend? in one new language today."
+    },
+    "de": {
+     "t": "Selbstbewusst bestellen",
+     "g": "Übe höfliche Sätze, das Zeigen und die Frage nach der Empfehlung des Hauses.",
+     "p": [
+      "Lerne vier Sätze in der Landessprache: Hallo, bitte, danke und was empfehlen Sie?",
+      "Mit einem Lächeln auf ein Gericht in der Karte oder am Nebentisch zu zeigen, klappt fast überall.",
+      "Nach der Spezialität des Hauses zu fragen zeigt Vertrauen und führt oft zum besten Gericht."
+     ],
+     "q": "Hast du schon mal etwas bestellt, ohne zu wissen, was es ist? Wie war es?",
+     "c": "Lerne heute, wie man was empfehlen Sie? in einer neuen Sprache sagt."
+    },
+    "es": {
+     "t": "Pedir con seguridad",
+     "g": "Practica frases amables, señalar y preguntar qué recomienda la casa.",
+     "p": [
+      "Aprende cuatro frases en el idioma local: hola, por favor, gracias y ¿qué me recomienda?",
+      "Señalar un plato en la carta o en otra mesa, con una sonrisa, funciona casi en todas partes.",
+      "Pedir la especialidad de la casa demuestra confianza y suele llevarte al mejor plato del lugar."
+     ],
+     "q": "¿Alguna vez pediste algo sin saber qué era? ¿Qué tal salió?",
+     "c": "Aprende hoy a decir ¿qué me recomienda? en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Commander avec assurance",
+     "g": "Entraîne-toi aux formules polies, à montrer du doigt et à demander la suggestion de la maison.",
+     "p": [
+      "Apprends quatre phrases dans la langue locale : bonjour, s'il vous plaît, merci et que me conseillez-vous ?",
+      "Montrer un plat sur la carte ou à une table voisine, avec le sourire, marche presque partout.",
+      "Demander la spécialité de la maison montre ta confiance et mène souvent au meilleur plat."
+     ],
+     "q": "As-tu déjà commandé un plat sans savoir ce que c'était ? Comment ça s'est passé ?",
+     "c": "Apprends aujourd'hui à dire que me conseillez-vous ? dans une nouvelle langue."
+    },
+    "it": {
+     "t": "Ordinare con sicurezza",
+     "g": "Esercitati con frasi gentili, indicando e chiedendo cosa consiglia la casa.",
+     "p": [
+      "Impara quattro frasi nella lingua locale: ciao, per favore, grazie e cosa mi consiglia?",
+      "Indicare un piatto sul menu o su un altro tavolo, con un sorriso, funziona quasi ovunque.",
+      "Chiedere la specialità della casa mostra fiducia e spesso porta al piatto migliore del locale."
+     ],
+     "q": "Ti è mai capitato di ordinare qualcosa senza sapere cosa fosse? Com'è andata?",
+     "c": "Impara oggi a dire cosa mi consiglia? in una nuova lingua."
+    },
+    "pt": {
+     "t": "Pedir com confiança",
+     "g": "Pratica frases simpáticas, apontar e perguntar o que a casa recomenda.",
+     "p": [
+      "Aprende quatro frases na língua local: olá, por favor, obrigado e o que me recomenda?",
+      "Apontar para um prato na ementa ou noutra mesa, com um sorriso, funciona quase em todo o lado.",
+      "Pedir a especialidade da casa mostra confiança e muitas vezes leva ao melhor prato do sítio."
+     ],
+     "q": "Já pediste alguma coisa sem saber o que era? Como correu?",
+     "c": "Aprende hoje a dizer o que me recomenda? numa língua nova."
+    },
+    "pt_BR": {
+     "t": "Pedir com confiança",
+     "g": "Pratique frases educadas, apontar e perguntar o que a casa recomenda.",
+     "p": [
+      "Aprenda quatro frases no idioma local: olá, por favor, obrigado e o que você recomenda?",
+      "Apontar um prato no cardápio ou em outra mesa, com um sorriso, funciona em quase todo lugar.",
+      "Pedir a especialidade da casa mostra confiança e muitas vezes leva ao melhor prato do lugar."
+     ],
+     "q": "Você já pediu algo sem saber o que era? Como foi?",
+     "c": "Aprenda hoje a dizer o que você recomenda? em um idioma novo."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Communicating allergies and diets",
+     "g": "Learn how to make allergies and dietary needs clear, kindly and safely, anywhere.",
+     "p": [
+      "Carry a small card in the local language listing what you cannot eat, with a clear and polite sentence.",
+      "Learn the key words for your needs, such as nuts, gluten, milk, shellfish, meat or pork.",
+      "Ask staff to confirm with the kitchen and thank them warmly: clarity is a sign of respect for both sides."
+     ],
+     "q": "Do you or someone you travel with have a food allergy or diet to plan around?",
+     "c": "Write one polite sentence explaining a food need, real or imagined, and translate it into one language."
+    },
+    "de": {
+     "t": "Allergien und Ernährung mitteilen",
+     "g": "Lerne, Allergien und Ernährungsbedürfnisse überall klar, freundlich und sicher zu erklären.",
+     "p": [
+      "Trag eine kleine Karte in der Landessprache bei dir, die höflich nennt, was du nicht essen darfst.",
+      "Lerne die Schlüsselwörter, etwa Nüsse, Gluten, Milch, Meeresfrüchte, Fleisch oder Schwein.",
+      "Bitte das Personal, in der Küche nachzufragen, und bedanke dich herzlich: Klarheit ist Respekt für beide Seiten."
+     ],
+     "q": "Hast du oder jemand, mit dem du reist, eine Allergie oder besondere Ernährung?",
+     "c": "Schreib einen höflichen Satz zu einem Ernährungsbedürfnis, echt oder ausgedacht, und übersetze ihn."
+    },
+    "es": {
+     "t": "Comunicar alergias y dietas",
+     "g": "Aprende a explicar alergias y necesidades alimentarias de forma clara, amable y segura en cualquier lugar.",
+     "p": [
+      "Lleva una tarjeta en el idioma local con lo que no puedes comer y una frase clara y educada.",
+      "Aprende las palabras clave de tu caso, como frutos secos, gluten, leche, marisco, carne o cerdo.",
+      "Pide que lo confirmen con la cocina y da las gracias con cariño: la claridad es respeto para ambas partes."
+     ],
+     "q": "¿Tú o alguien con quien viajas tiene una alergia o dieta que haya que tener en cuenta?",
+     "c": "Escribe una frase educada que explique una necesidad alimentaria, real o inventada, y tradúcela."
+    },
+    "fr": {
+     "t": "Parler d'allergies et de régimes",
+     "g": "Apprends à exprimer allergies et besoins alimentaires clairement, gentiment et en sécurité.",
+     "p": [
+      "Garde une petite carte dans la langue locale indiquant poliment ce que tu ne peux pas manger.",
+      "Apprends les mots clés de ton cas : fruits à coque, gluten, lait, fruits de mer, viande ou porc.",
+      "Demande de vérifier en cuisine et remercie chaleureusement : la clarté est une forme de respect mutuel."
+     ],
+     "q": "Toi ou un compagnon de voyage avez-vous une allergie ou un régime à prévoir ?",
+     "c": "Écris une phrase polie sur un besoin alimentaire, réel ou imaginaire, et traduis-la dans une langue."
+    },
+    "it": {
+     "t": "Comunicare allergie e diete",
+     "g": "Impara a spiegare allergie ed esigenze alimentari in modo chiaro, gentile e sicuro ovunque.",
+     "p": [
+      "Porta un bigliettino nella lingua locale con ciò che non puoi mangiare e una frase chiara e cortese.",
+      "Impara le parole chiave per te, come frutta a guscio, glutine, latte, crostacei, carne o maiale.",
+      "Chiedi di verificare in cucina e ringrazia di cuore: la chiarezza è rispetto per entrambe le parti."
+     ],
+     "q": "Tu o qualcuno con cui viaggi avete un'allergia o una dieta da considerare?",
+     "c": "Scrivi una frase cortese su un'esigenza alimentare, vera o inventata, e traducila in una lingua."
+    },
+    "pt": {
+     "t": "Comunicar alergias e dietas",
+     "g": "Aprende a explicar alergias e necessidades alimentares de forma clara, simpática e segura em qualquer lado.",
+     "p": [
+      "Leva um cartão na língua local com o que não podes comer e uma frase clara e educada.",
+      "Aprende as palavras-chave do teu caso, como frutos secos, glúten, leite, marisco, carne ou porco.",
+      "Pede que confirmem com a cozinha e agradece com simpatia: a clareza é respeito para ambos os lados."
+     ],
+     "q": "Tu ou alguém com quem viajas tem uma alergia ou dieta a ter em conta?",
+     "c": "Escreve uma frase educada sobre uma necessidade alimentar, real ou imaginada, e traduz para uma língua."
+    },
+    "pt_BR": {
+     "t": "Comunicar alergias e dietas",
+     "g": "Aprenda a explicar alergias e restrições alimentares de forma clara, gentil e segura em qualquer lugar.",
+     "p": [
+      "Leve um cartão no idioma local com o que você não pode comer e uma frase clara e educada.",
+      "Aprenda as palavras-chave do seu caso, como castanhas, glúten, leite, frutos do mar, carne ou porco.",
+      "Peça que confirmem com a cozinha e agradeça com carinho: clareza é respeito para os dois lados."
+     ],
+     "q": "Você ou alguém com quem viaja tem uma alergia ou dieta a considerar?",
+     "c": "Escreva uma frase educada sobre uma restrição alimentar, real ou imaginária, e traduza para um idioma."
+    }
+   }
+  }
+ ]
+}

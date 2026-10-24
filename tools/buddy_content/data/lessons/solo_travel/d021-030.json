@@ -1,0 +1,835 @@
+{
+ "topic": "solo_travel",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing your plans with someone",
+     "g": "Leave your itinerary with someone you trust, so a friendly person always knows where you are.",
+     "p": [
+      "Share your flights or trains, where you are staying and your rough daily plans.",
+      "Update them when plans change, like a new town or an extra night.",
+      "It gives loved ones peace of mind and gives you a safety net."
+     ],
+     "q": "Who would be your trusted person to share your travel plans with?",
+     "c": "Make a simple one-page itinerary you could send to a friend."
+    },
+    "de": {
+     "t": "Deine Pläne mit jemandem teilen",
+     "g": "Gib deine Reiseroute einer Vertrauensperson, damit immer jemand weiß, wo du bist.",
+     "p": [
+      "Teile Flüge oder Züge, Unterkünfte und deine groben Tagespläne.",
+      "Gib Bescheid, wenn sich etwas ändert, etwa ein neuer Ort oder eine Nacht mehr.",
+      "Das beruhigt deine Lieben und gibt dir ein Sicherheitsnetz."
+     ],
+     "q": "Wer wäre deine Vertrauensperson für deine Reisepläne?",
+     "c": "Erstelle eine einfache Reiseübersicht auf einer Seite, die du teilen könntest."
+    },
+    "es": {
+     "t": "Compartir tus planes con alguien",
+     "g": "Deja tu itinerario a alguien de confianza para que una persona querida sepa siempre dónde estás.",
+     "p": [
+      "Comparte vuelos o trenes, alojamientos y tus planes aproximados de cada día.",
+      "Avísale si algo cambia, como una ciudad nueva o una noche más.",
+      "Da tranquilidad a tus seres queridos y a ti una red de seguridad."
+     ],
+     "q": "¿Quién sería tu persona de confianza para compartir tus planes?",
+     "c": "Haz un itinerario sencillo de una página que podrías enviar a alguien."
+    },
+    "fr": {
+     "t": "Partager tes plans avec quelqu’un",
+     "g": "Confie ton itinéraire à une personne de confiance, pour que quelqu’un sache toujours où tu es.",
+     "p": [
+      "Partage tes vols ou trains, tes hébergements et tes grandes lignes de chaque jour.",
+      "Préviens-la quand ça change : une nouvelle ville, une nuit de plus.",
+      "Tes proches sont rassurés, et toi, tu as un filet de sécurité."
+     ],
+     "q": "Qui serait ta personne de confiance pour partager tes plans de voyage ?",
+     "c": "Prépare un itinéraire simple sur une page que tu pourrais envoyer à un proche."
+    },
+    "it": {
+     "t": "Condividere i piani con qualcuno",
+     "g": "Lascia il tuo itinerario a una persona di fiducia, così qualcuno sa sempre dove sei.",
+     "p": [
+      "Condividi voli o treni, alloggi e i tuoi piani di massima per ogni giorno.",
+      "Aggiornala quando cambi programma, come una nuova città o una notte in più.",
+      "Dà serenità ai tuoi cari e a te una rete di sicurezza."
+     ],
+     "q": "Chi sarebbe la tua persona di fiducia con cui condividere i piani?",
+     "c": "Prepara un itinerario semplice di una pagina da mandare a un amico."
+    },
+    "pt": {
+     "t": "Partilhar os planos com alguém",
+     "g": "Deixa o teu itinerário com alguém de confiança, para que alguém saiba sempre onde estás.",
+     "p": [
+      "Partilha voos ou comboios, alojamentos e os teus planos gerais para cada dia.",
+      "Avisa quando algo mudar, como uma cidade nova ou uma noite extra.",
+      "Dá tranquilidade a quem gosta de ti e a ti uma rede de segurança."
+     ],
+     "q": "Quem seria a tua pessoa de confiança para partilhar os planos?",
+     "c": "Faz um itinerário simples de uma página que pudesses enviar a alguém."
+    },
+    "pt_BR": {
+     "t": "Compartilhando seus planos",
+     "g": "Deixe seu roteiro com alguém de confiança, para que sempre alguém saiba onde você está.",
+     "p": [
+      "Compartilhe voos ou trens, hospedagens e seus planos gerais de cada dia.",
+      "Avise quando algo mudar, como uma cidade nova ou uma noite a mais.",
+      "Isso tranquiliza quem gosta de você e te dá uma rede de segurança."
+     ],
+     "q": "Quem seria sua pessoa de confiança para compartilhar os planos?",
+     "c": "Faça um roteiro simples de uma página que você poderia enviar a alguém."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Regular check-ins",
+     "g": "Agree on simple messages so your loved ones know you are fine.",
+     "p": [
+      "Pick a rhythm, like a short message each evening or after each travel day.",
+      "Keep it light: a photo and «All good, heading to dinner!» is enough.",
+      "Agree in advance what they should do if they do not hear from you."
+     ],
+     "q": "How often would you like to check in with family or friends while travelling?",
+     "c": "Choose your check-in time and a short message you could send each day."
+    },
+    "de": {
+     "t": "Regelmäßig Bescheid geben",
+     "g": "Vereinbare einfache Nachrichten, damit deine Lieben wissen, dass alles gut ist.",
+     "p": [
+      "Wähle einen Rhythmus, etwa eine kurze Nachricht jeden Abend oder nach jedem Reisetag.",
+      "Halte es locker: ein Foto und «Alles gut, gehe jetzt essen!» reicht.",
+      "Besprecht vorher, was sie tun sollen, wenn sie nichts von dir hören."
+     ],
+     "q": "Wie oft möchtest du dich unterwegs bei Familie oder Freunden melden?",
+     "c": "Leg deine Uhrzeit und eine kurze tägliche Nachricht fest."
+    },
+    "es": {
+     "t": "Mensajes regulares",
+     "g": "Acordad mensajes sencillos para que tus seres queridos sepan que estás bien.",
+     "p": [
+      "Elige un ritmo, como un mensaje corto cada noche o tras cada día de viaje.",
+      "Que sea ligero: una foto y «¡Todo bien, me voy a cenar!» es suficiente.",
+      "Acordad antes qué deben hacer si no tienen noticias tuyas."
+     ],
+     "q": "¿Con qué frecuencia te gustaría escribir a tu familia o amigos de viaje?",
+     "c": "Elige tu hora de aviso y un mensaje corto que podrías enviar cada día."
+    },
+    "fr": {
+     "t": "Donner des nouvelles régulièrement",
+     "g": "Convenez de messages simples pour que tes proches sachent que tout va bien.",
+     "p": [
+      "Choisis un rythme : un petit message chaque soir ou après chaque journée de trajet.",
+      "Reste léger : une photo et « Tout va bien, je vais dîner ! » suffit.",
+      "Décidez à l’avance ce qu’ils feront s’ils n’ont pas de nouvelles."
+     ],
+     "q": "À quelle fréquence aimerais-tu donner des nouvelles en voyage ?",
+     "c": "Choisis ton heure de message et une petite phrase à envoyer chaque jour."
+    },
+    "it": {
+     "t": "Farsi sentire regolarmente",
+     "g": "Accordatevi su messaggi semplici, così i tuoi cari sanno che stai bene.",
+     "p": [
+      "Scegli un ritmo, come un breve messaggio ogni sera o dopo ogni giorno di viaggio.",
+      "Resta leggero: una foto e «Tutto bene, vado a cena!» bastano.",
+      "Decidete prima cosa fare se non hanno tue notizie."
+     ],
+     "q": "Ogni quanto ti piacerebbe farti sentire da famiglia o amici in viaggio?",
+     "c": "Scegli l’orario e un breve messaggio da mandare ogni giorno."
+    },
+    "pt": {
+     "t": "Dar notícias com regularidade",
+     "g": "Combina mensagens simples para quem gosta de ti saber que estás bem.",
+     "p": [
+      "Escolhe um ritmo, como uma mensagem curta todas as noites ou após cada dia de viagem.",
+      "Mantém leve: uma foto e «Tudo bem, vou jantar!» chega.",
+      "Combinem antes o que devem fazer se não tiverem notícias tuas."
+     ],
+     "q": "Com que frequência gostavas de dar notícias à família ou amigos em viagem?",
+     "c": "Escolhe a hora e uma mensagem curta para enviar todos os dias."
+    },
+    "pt_BR": {
+     "t": "Dando notícias com frequência",
+     "g": "Combine mensagens simples para quem gosta de você saber que está tudo bem.",
+     "p": [
+      "Escolha um ritmo, como uma mensagem curta toda noite ou após cada dia de viagem.",
+      "Seja leve: uma foto e «Tudo certo, indo jantar!» já basta.",
+      "Combinem antes o que fazer se não tiverem notícias suas."
+     ],
+     "q": "Com que frequência você gostaria de dar notícias à família ou aos amigos?",
+     "c": "Escolha o horário e uma mensagem curta para mandar todo dia."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Copies of important documents",
+     "g": "Keep digital and paper copies of your key documents so a lost paper is never a disaster.",
+     "p": [
+      "Copy your passport photo page, visas, insurance and main bookings.",
+      "Store digital copies in a secure cloud folder and send them to your trusted person.",
+      "Keep a paper copy in a different bag from the originals."
+     ],
+     "q": "Where do you usually keep your important travel documents?",
+     "c": "Photograph your passport or ID page and save it in a secure folder."
+    },
+    "de": {
+     "t": "Kopien wichtiger Dokumente",
+     "g": "Bewahre digitale und Papierkopien deiner wichtigsten Dokumente auf, damit Verlust kein Drama wird.",
+     "p": [
+      "Kopiere die Passseite mit Foto, Visa, Versicherung und wichtige Buchungen.",
+      "Lege digitale Kopien in einen sicheren Cloud-Ordner und schick sie deiner Vertrauensperson.",
+      "Bewahre eine Papierkopie in einer anderen Tasche als die Originale auf."
+     ],
+     "q": "Wo bewahrst du deine wichtigen Reisedokumente normalerweise auf?",
+     "c": "Fotografiere die Seite deines Passes oder Ausweises und speichere sie sicher."
+    },
+    "es": {
+     "t": "Copias de documentos importantes",
+     "g": "Guarda copias digitales y en papel de tus documentos clave para que perder uno no sea un drama.",
+     "p": [
+      "Copia la página de la foto del pasaporte, visados, seguro y reservas principales.",
+      "Guarda las copias digitales en una nube segura y envíalas a tu persona de confianza.",
+      "Lleva una copia en papel en una bolsa distinta de los originales."
+     ],
+     "q": "¿Dónde sueles guardar tus documentos de viaje importantes?",
+     "c": "Fotografía la página de tu pasaporte o DNI y guárdala en una carpeta segura."
+    },
+    "fr": {
+     "t": "Copies des documents importants",
+     "g": "Garde des copies numériques et papier de tes documents clés pour qu’une perte ne soit jamais un drame.",
+     "p": [
+      "Copie la page photo du passeport, les visas, l’assurance et les réservations principales.",
+      "Range les copies numériques dans un cloud sécurisé et envoie-les à ta personne de confiance.",
+      "Garde une copie papier dans un autre sac que les originaux."
+     ],
+     "q": "Où ranges-tu d’habitude tes documents de voyage importants ?",
+     "c": "Photographie la page de ton passeport ou de ta carte d’identité et range-la en lieu sûr."
+    },
+    "it": {
+     "t": "Copie dei documenti importanti",
+     "g": "Tieni copie digitali e cartacee dei documenti chiave, così perderne uno non sarà mai un dramma.",
+     "p": [
+      "Copia la pagina con la foto del passaporto, i visti, l’assicurazione e le prenotazioni principali.",
+      "Salva le copie digitali in un cloud sicuro e mandale alla tua persona di fiducia.",
+      "Tieni una copia cartacea in una borsa diversa dagli originali."
+     ],
+     "q": "Dove tieni di solito i tuoi documenti di viaggio importanti?",
+     "c": "Fotografa la pagina del passaporto o della carta d’identità e salvala in un posto sicuro."
+    },
+    "pt": {
+     "t": "Cópias dos documentos importantes",
+     "g": "Guarda cópias digitais e em papel dos documentos principais, para que uma perda nunca seja um drama.",
+     "p": [
+      "Copia a página da foto do passaporte, vistos, seguro e reservas principais.",
+      "Guarda as cópias digitais numa nuvem segura e envia-as à tua pessoa de confiança.",
+      "Leva uma cópia em papel num saco diferente dos originais."
+     ],
+     "q": "Onde costumas guardar os teus documentos de viagem importantes?",
+     "c": "Fotografa a página do passaporte ou do cartão de cidadão e guarda-a num sítio seguro."
+    },
+    "pt_BR": {
+     "t": "Cópias dos documentos importantes",
+     "g": "Guarde cópias digitais e em papel dos documentos principais, para que perder um nunca vire drama.",
+     "p": [
+      "Copie a página da foto do passaporte, vistos, seguro e reservas principais.",
+      "Salve as cópias digitais numa nuvem segura e envie para sua pessoa de confiança.",
+      "Leve uma cópia em papel numa bolsa diferente dos originais."
+     ],
+     "q": "Onde você costuma guardar seus documentos de viagem importantes?",
+     "c": "Fotografe a página do passaporte ou do RG e salve numa pasta segura."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travel insurance basics",
+     "g": "Understand why travel insurance matters even more alone, and what to check in a policy.",
+     "p": [
+      "Alone, there is no companion to cover costs or help if you fall ill or lose your bag.",
+      "Check medical cover, trip cancellation, lost luggage and any activities you plan.",
+      "Save the emergency phone number and policy number where you can find them quickly."
+     ],
+     "q": "Have you ever had to use travel insurance, or known someone who did?",
+     "c": "Read the summary of one travel insurance policy and note what it covers."
+    },
+    "de": {
+     "t": "Grundlagen der Reiseversicherung",
+     "g": "Verstehe, warum eine Reiseversicherung allein noch wichtiger ist und worauf du achten solltest.",
+     "p": [
+      "Allein hilft dir niemand mit Kosten oder Organisation, wenn du krank wirst oder Gepäck verlierst.",
+      "Prüfe Krankenschutz, Reiserücktritt, Gepäckverlust und geplante Aktivitäten.",
+      "Speichere Notrufnummer und Policennummer so, dass du sie schnell findest."
+     ],
+     "q": "Hast du schon einmal eine Reiseversicherung gebraucht oder kennst jemanden?",
+     "c": "Lies die Zusammenfassung einer Reiseversicherung und notiere, was sie abdeckt."
+    },
+    "es": {
+     "t": "Lo básico del seguro de viaje",
+     "g": "Entiende por qué el seguro de viaje importa aún más si vas solo y qué revisar en la póliza.",
+     "p": [
+      "Solo, no hay acompañante que te ayude con gastos o gestiones si enfermas o pierdes la maleta.",
+      "Revisa la cobertura médica, la cancelación, el equipaje y las actividades que planeas.",
+      "Guarda el teléfono de emergencias y el número de póliza donde los encuentres rápido."
+     ],
+     "q": "¿Alguna vez usaste un seguro de viaje o conoces a alguien que lo hizo?",
+     "c": "Lee el resumen de una póliza de viaje y anota qué cubre."
+    },
+    "fr": {
+     "t": "Les bases de l’assurance voyage",
+     "g": "Comprends pourquoi l’assurance voyage compte encore plus en solo, et quoi vérifier.",
+     "p": [
+      "Seul, personne pour t’aider à gérer les frais si tu tombes malade ou perds ton bagage.",
+      "Vérifie les frais médicaux, l’annulation, la perte de bagages et tes activités prévues.",
+      "Garde le numéro d’assistance et le numéro de contrat à portée de main."
+     ],
+     "q": "As-tu déjà eu besoin d’une assurance voyage, ou connais-tu quelqu’un ?",
+     "c": "Lis le résumé d’un contrat d’assurance voyage et note ce qu’il couvre."
+    },
+    "it": {
+     "t": "Le basi dell’assicurazione di viaggio",
+     "g": "Capisci perché l’assicurazione conta ancora di più da soli e cosa controllare nella polizza.",
+     "p": [
+      "Da solo non hai un compagno che ti aiuti con spese e pratiche se ti ammali o perdi il bagaglio.",
+      "Controlla copertura medica, annullamento, smarrimento bagagli e attività previste.",
+      "Salva il numero di assistenza e il numero di polizza dove li trovi subito."
+     ],
+     "q": "Ti è mai servita un’assicurazione di viaggio, o conosci qualcuno a cui è servita?",
+     "c": "Leggi il riepilogo di una polizza di viaggio e annota cosa copre."
+    },
+    "pt": {
+     "t": "O básico do seguro de viagem",
+     "g": "Percebe porque o seguro de viagem conta ainda mais a solo e o que verificar na apólice.",
+     "p": [
+      "Sozinho, não tens companhia que ajude com custos ou burocracia se adoeceres ou perderes a mala.",
+      "Verifica a cobertura médica, cancelamento, perda de bagagem e atividades planeadas.",
+      "Guarda o número de assistência e o da apólice onde os encontres depressa."
+     ],
+     "q": "Já precisaste de usar um seguro de viagem, ou conheces alguém que precisou?",
+     "c": "Lê o resumo de uma apólice de viagem e aponta o que cobre."
+    },
+    "pt_BR": {
+     "t": "O básico do seguro viagem",
+     "g": "Entenda por que o seguro viagem importa ainda mais sozinho e o que conferir na apólice.",
+     "p": [
+      "Sozinho, não há companhia para ajudar com custos ou burocracia se adoecer ou perder a mala.",
+      "Confira cobertura médica, cancelamento, extravio de bagagem e as atividades planejadas.",
+      "Salve o telefone de assistência e o número da apólice onde ache rápido."
+     ],
+     "q": "Você já precisou usar um seguro viagem, ou conhece alguém que precisou?",
+     "c": "Leia o resumo de uma apólice de seguro viagem e anote o que ela cobre."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Health preparation",
+     "g": "Prepare your health before you go, so you can enjoy every day of your trip.",
+     "p": [
+      "Check official travel health advice for your destination several weeks ahead.",
+      "Ask a doctor or travel clinic about recommended vaccinations and personal needs.",
+      "Pack personal medicines in your hand luggage, with a copy of prescriptions."
+     ],
+     "q": "What small health habits help you feel good when you travel?",
+     "c": "Make a short list of personal medicines and basics for a travel health kit."
+    },
+    "de": {
+     "t": "Gesundheitlich vorbereiten",
+     "g": "Bereite deine Gesundheit vor, damit du jeden Reisetag genießen kannst.",
+     "p": [
+      "Lies einige Wochen vorher die offiziellen Gesundheitshinweise für dein Reiseziel.",
+      "Frag eine Ärztin oder eine reisemedizinische Beratung nach empfohlenen Impfungen.",
+      "Pack persönliche Medikamente ins Handgepäck, mit einer Kopie der Rezepte."
+     ],
+     "q": "Welche kleinen Gewohnheiten helfen dir, dich auf Reisen wohlzufühlen?",
+     "c": "Schreib eine kurze Liste für deine Reiseapotheke mit deinen persönlichen Medikamenten."
+    },
+    "es": {
+     "t": "Preparar tu salud",
+     "g": "Prepara tu salud antes de salir para disfrutar cada día del viaje.",
+     "p": [
+      "Consulta las recomendaciones oficiales de salud para tu destino con varias semanas de antelación.",
+      "Pregunta a tu médico o a un centro de vacunación internacional qué vacunas se recomiendan.",
+      "Lleva tus medicamentos personales en el equipaje de mano, con copia de las recetas."
+     ],
+     "q": "¿Qué pequeños hábitos te ayudan a sentirte bien cuando viajas?",
+     "c": "Haz una lista corta para tu botiquín de viaje con tus medicamentos personales."
+    },
+    "fr": {
+     "t": "Préparer sa santé",
+     "g": "Prépare ta santé avant le départ pour profiter de chaque jour de ton voyage.",
+     "p": [
+      "Consulte les conseils santé officiels pour ta destination plusieurs semaines avant.",
+      "Demande à un médecin ou un centre de vaccinations internationales quels vaccins sont conseillés.",
+      "Mets tes médicaments personnels en bagage cabine, avec une copie des ordonnances."
+     ],
+     "q": "Quelles petites habitudes t’aident à te sentir bien en voyage ?",
+     "c": "Fais une courte liste pour ta trousse santé avec tes médicaments personnels."
+    },
+    "it": {
+     "t": "Prepararsi per la salute",
+     "g": "Prepara la tua salute prima di partire, per goderti ogni giorno del viaggio.",
+     "p": [
+      "Consulta le indicazioni sanitarie ufficiali per la tua meta qualche settimana prima.",
+      "Chiedi al medico o a un ambulatorio di medicina dei viaggi quali vaccini sono consigliati.",
+      "Metti i farmaci personali nel bagaglio a mano, con una copia delle ricette."
+     ],
+     "q": "Quali piccole abitudini ti aiutano a stare bene quando viaggi?",
+     "c": "Scrivi una breve lista per il tuo kit salute con i tuoi farmaci personali."
+    },
+    "pt": {
+     "t": "Preparar a saúde",
+     "g": "Prepara a tua saúde antes de partir para aproveitares todos os dias da viagem.",
+     "p": [
+      "Consulta os conselhos oficiais de saúde para o destino com algumas semanas de antecedência.",
+      "Pergunta ao médico ou a uma consulta do viajante que vacinas são recomendadas.",
+      "Leva os medicamentos pessoais na bagagem de mão, com cópia das receitas."
+     ],
+     "q": "Que pequenos hábitos te ajudam a sentir-te bem em viagem?",
+     "c": "Faz uma lista curta para o teu kit de saúde com os teus medicamentos pessoais."
+    },
+    "pt_BR": {
+     "t": "Preparando a saúde",
+     "g": "Prepare sua saúde antes de viajar para aproveitar cada dia da viagem.",
+     "p": [
+      "Consulte as orientações oficiais de saúde para o destino com algumas semanas de antecedência.",
+      "Pergunte a um médico ou centro de medicina do viajante quais vacinas são recomendadas.",
+      "Leve seus remédios pessoais na bagagem de mão, com cópia das receitas."
+     ],
+     "q": "Que pequenos hábitos ajudam você a se sentir bem viajando?",
+     "c": "Faça uma lista curta para seu kit de saúde com seus remédios pessoais."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Emergency contacts",
+     "g": "Save local emergency numbers and your embassy’s details before you need them.",
+     "p": [
+      "Look up the local emergency number; in the EU, 112 works in every country.",
+      "Save the address and phone of your embassy or consulate at your destination.",
+      "Add your accommodation, insurance helpline and trusted person as favourites."
+     ],
+     "q": "Do you know the emergency number in the last country you visited?",
+     "c": "Create a phone contact called «Trip emergency» with three key numbers."
+    },
+    "de": {
+     "t": "Notfallkontakte",
+     "g": "Speichere lokale Notrufnummern und die Daten deiner Botschaft, bevor du sie brauchst.",
+     "p": [
+      "Finde die örtliche Notrufnummer heraus; in der EU gilt die 112 in jedem Land.",
+      "Speichere Adresse und Telefon deiner Botschaft oder deines Konsulats am Reiseziel.",
+      "Leg Unterkunft, Versicherungshotline und Vertrauensperson als Favoriten an."
+     ],
+     "q": "Kennst du die Notrufnummer des letzten Landes, das du besucht hast?",
+     "c": "Leg einen Kontakt «Notfall Reise» mit drei wichtigen Nummern an."
+    },
+    "es": {
+     "t": "Contactos de emergencia",
+     "g": "Guarda los números de emergencia locales y los datos de tu embajada antes de necesitarlos.",
+     "p": [
+      "Busca el número de emergencias local; en la UE, el 112 funciona en todos los países.",
+      "Guarda la dirección y el teléfono de tu embajada o consulado en el destino.",
+      "Añade tu alojamiento, el teléfono del seguro y tu persona de confianza como favoritos."
+     ],
+     "q": "¿Sabes el número de emergencias del último país que visitaste?",
+     "c": "Crea un contacto llamado «Emergencia viaje» con tres números clave."
+    },
+    "fr": {
+     "t": "Contacts d’urgence",
+     "g": "Enregistre les numéros d’urgence locaux et les coordonnées de ton ambassade avant d’en avoir besoin.",
+     "p": [
+      "Cherche le numéro d’urgence local ; dans l’UE, le 112 fonctionne dans tous les pays.",
+      "Enregistre l’adresse et le téléphone de ton ambassade ou consulat sur place.",
+      "Mets ton hébergement, l’assistance et ta personne de confiance en favoris."
+     ],
+     "q": "Connais-tu le numéro d’urgence du dernier pays que tu as visité ?",
+     "c": "Crée un contact « Urgence voyage » avec trois numéros clés."
+    },
+    "it": {
+     "t": "Contatti di emergenza",
+     "g": "Salva i numeri di emergenza locali e i dati della tua ambasciata prima che servano.",
+     "p": [
+      "Cerca il numero di emergenza locale; nell’UE il 112 funziona in tutti i paesi.",
+      "Salva indirizzo e telefono della tua ambasciata o del consolato nella meta.",
+      "Aggiungi alloggio, assistenza assicurativa e persona di fiducia ai preferiti."
+     ],
+     "q": "Conosci il numero di emergenza dell’ultimo paese che hai visitato?",
+     "c": "Crea un contatto «Emergenza viaggio» con tre numeri chiave."
+    },
+    "pt": {
+     "t": "Contactos de emergência",
+     "g": "Guarda os números de emergência locais e os dados da tua embaixada antes de precisares.",
+     "p": [
+      "Procura o número de emergência local; na UE, o 112 funciona em todos os países.",
+      "Guarda a morada e o telefone da tua embaixada ou consulado no destino.",
+      "Junta o alojamento, a assistência do seguro e a tua pessoa de confiança aos favoritos."
+     ],
+     "q": "Sabes o número de emergência do último país que visitaste?",
+     "c": "Cria um contacto chamado «Emergência viagem» com três números importantes."
+    },
+    "pt_BR": {
+     "t": "Contatos de emergência",
+     "g": "Salve os números de emergência locais e os dados da sua embaixada antes de precisar.",
+     "p": [
+      "Pesquise o número de emergência local; na UE, o 112 funciona em todos os países.",
+      "Salve o endereço e o telefone da sua embaixada ou consulado no destino.",
+      "Adicione a hospedagem, a assistência do seguro e sua pessoa de confiança aos favoritos."
+     ],
+     "q": "Você sabe o número de emergência do último país que visitou?",
+     "c": "Crie um contato chamado «Emergência viagem» com três números importantes."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing light when solo",
+     "g": "Pack light, because when you travel alone you carry everything yourself.",
+     "p": [
+      "A small bag makes stairs, buses and narrow streets easy and fun.",
+      "Choose clothes that mix and match, and plan to wash a few items on the way.",
+      "If you are unsure about an item, you can probably buy it there if needed."
+     ],
+     "q": "What is one thing you always pack but rarely use?",
+     "c": "Lay out what you would take for a week and remove three items."
+    },
+    "de": {
+     "t": "Leicht packen, wenn du allein reist",
+     "g": "Pack leicht, denn allein trägst du alles selbst.",
+     "p": [
+      "Eine kleine Tasche macht Treppen, Busse und enge Gassen leicht.",
+      "Wähle kombinierbare Kleidung und plane, unterwegs ein paar Sachen zu waschen.",
+      "Bist du bei etwas unsicher, kannst du es vor Ort meist kaufen."
+     ],
+     "q": "Was packst du immer ein, benutzt es aber fast nie?",
+     "c": "Leg aus, was du für eine Woche mitnehmen würdest, und streich drei Dinge."
+    },
+    "es": {
+     "t": "Viajar ligero cuando vas solo",
+     "g": "Viaja ligero, porque cuando vas solo lo cargas todo tú.",
+     "p": [
+      "Una mochila pequeña hace fáciles las escaleras, los autobuses y las calles estrechas.",
+      "Elige ropa combinable y planea lavar algunas prendas por el camino.",
+      "Si dudas con algo, probablemente puedas comprarlo allí si lo necesitas."
+     ],
+     "q": "¿Qué es algo que siempre metes en la maleta pero casi nunca usas?",
+     "c": "Prepara lo que llevarías una semana y quita tres cosas."
+    },
+    "fr": {
+     "t": "Voyager léger en solo",
+     "g": "Voyage léger, car en solo tu portes tout toi-même.",
+     "p": [
+      "Un petit sac rend les escaliers, les bus et les ruelles faciles.",
+      "Choisis des vêtements qui se combinent et prévois de laver quelques pièces en route.",
+      "Si tu hésites pour un objet, tu pourras sans doute l’acheter sur place."
+     ],
+     "q": "Quel objet emportes-tu toujours sans presque jamais t’en servir ?",
+     "c": "Étale ce que tu prendrais pour une semaine et retire trois choses."
+    },
+    "it": {
+     "t": "Viaggiare leggeri da soli",
+     "g": "Viaggia leggero, perché da solo porti tutto tu.",
+     "p": [
+      "Uno zaino piccolo rende facili scale, autobus e vicoli stretti.",
+      "Scegli capi abbinabili e prevedi di lavare qualcosa durante il viaggio.",
+      "Se sei in dubbio su un oggetto, probabilmente puoi comprarlo sul posto."
+     ],
+     "q": "Qual è una cosa che metti sempre in valigia ma usi raramente?",
+     "c": "Prepara ciò che porteresti per una settimana e togli tre cose."
+    },
+    "pt": {
+     "t": "Viajar leve a solo",
+     "g": "Viaja leve, porque a solo és tu quem carrega tudo.",
+     "p": [
+      "Uma mochila pequena torna fáceis as escadas, os autocarros e as ruas estreitas.",
+      "Escolhe roupa que combine entre si e conta lavar algumas peças pelo caminho.",
+      "Se tiveres dúvidas sobre um objeto, provavelmente podes comprá-lo lá."
+     ],
+     "q": "Que coisa levas sempre mas quase nunca usas?",
+     "c": "Separa o que levarias para uma semana e tira três coisas."
+    },
+    "pt_BR": {
+     "t": "Viajando leve sozinho",
+     "g": "Viaje leve, porque sozinho é você quem carrega tudo.",
+     "p": [
+      "Uma mochila pequena deixa escadas, ônibus e ruas estreitas fáceis.",
+      "Escolha roupas que combinem entre si e planeje lavar algumas peças no caminho.",
+      "Se estiver em dúvida sobre um item, provavelmente dá para comprar lá."
+     ],
+     "q": "O que você sempre leva mas quase nunca usa?",
+     "c": "Separe o que levaria para uma semana e tire três itens."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your solo travel kit",
+     "g": "Build a small kit of helpful items that give you extra peace of mind.",
+     "p": [
+      "A rubber door wedge and a small padlock add security to rooms and lockers.",
+      "A power bank keeps your phone, maps and tickets alive all day.",
+      "Offline maps and a small torch help you find your way, even without signal."
+     ],
+     "q": "Which small item has saved the day for you on a trip?",
+     "c": "Check which of these items you already own and note what is missing."
+    },
+    "de": {
+     "t": "Dein Solo-Reiseset",
+     "g": "Stell ein kleines Set nützlicher Dinge zusammen, die dir zusätzliche Ruhe geben.",
+     "p": [
+      "Ein Türstopper aus Gummi und ein kleines Schloss sichern Zimmer und Schließfächer.",
+      "Eine Powerbank hält Handy, Karten und Tickets den ganzen Tag am Laufen.",
+      "Offline-Karten und eine kleine Taschenlampe helfen dir auch ohne Netz weiter."
+     ],
+     "q": "Welcher kleine Gegenstand hat dich auf einer Reise schon gerettet?",
+     "c": "Prüfe, welche dieser Dinge du schon hast, und notiere, was fehlt."
+    },
+    "es": {
+     "t": "Tu kit de viaje en solitario",
+     "g": "Arma un pequeño kit de objetos útiles que te den más tranquilidad.",
+     "p": [
+      "Una cuña de goma para la puerta y un candado pequeño refuerzan habitaciones y taquillas.",
+      "Una batería externa mantiene vivos el móvil, los mapas y los billetes todo el día.",
+      "Los mapas sin conexión y una linterna pequeña te orientan aunque no haya cobertura."
+     ],
+     "q": "¿Qué objeto pequeño te salvó el día en algún viaje?",
+     "c": "Revisa cuáles de estos objetos ya tienes y apunta lo que falta."
+    },
+    "fr": {
+     "t": "Ton kit de voyage solo",
+     "g": "Constitue un petit kit d’objets utiles qui te donnent plus de sérénité.",
+     "p": [
+      "Une cale de porte en caoutchouc et un petit cadenas sécurisent chambre et casier.",
+      "Une batterie externe garde ton téléphone, tes cartes et tes billets actifs toute la journée.",
+      "Des cartes hors ligne et une petite lampe t’orientent même sans réseau."
+     ],
+     "q": "Quel petit objet t’a déjà sauvé la mise en voyage ?",
+     "c": "Vérifie lesquels de ces objets tu as déjà et note ce qui manque."
+    },
+    "it": {
+     "t": "Il tuo kit da viaggio in solitaria",
+     "g": "Prepara un piccolo kit di oggetti utili che ti danno più tranquillità.",
+     "p": [
+      "Un fermaporta in gomma e un piccolo lucchetto rendono più sicuri camera e armadietti.",
+      "Un power bank tiene attivi telefono, mappe e biglietti per tutto il giorno.",
+      "Mappe offline e una piccola torcia ti orientano anche senza segnale."
+     ],
+     "q": "Quale piccolo oggetto ti ha salvato la giornata in viaggio?",
+     "c": "Controlla quali di questi oggetti hai già e annota cosa manca."
+    },
+    "pt": {
+     "t": "O teu kit de viagem a solo",
+     "g": "Monta um pequeno kit de objetos úteis que te dão mais tranquilidade.",
+     "p": [
+      "Um calço de porta em borracha e um cadeado pequeno reforçam o quarto e os cacifos.",
+      "Uma powerbank mantém o telemóvel, os mapas e os bilhetes ativos o dia todo.",
+      "Mapas offline e uma pequena lanterna orientam-te mesmo sem rede."
+     ],
+     "q": "Que pequeno objeto já te salvou numa viagem?",
+     "c": "Vê quais destes objetos já tens e aponta o que falta."
+    },
+    "pt_BR": {
+     "t": "Seu kit de viagem solo",
+     "g": "Monte um pequeno kit de itens úteis que trazem mais tranquilidade.",
+     "p": [
+      "Um calço de porta de borracha e um cadeado pequeno reforçam o quarto e os armários.",
+      "Um carregador portátil mantém celular, mapas e passagens funcionando o dia todo.",
+      "Mapas offline e uma lanterna pequena orientam você mesmo sem sinal."
+     ],
+     "q": "Que pequeno item já salvou você numa viagem?",
+     "c": "Veja quais desses itens você já tem e anote o que falta."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Staying connected",
+     "g": "Choose the easiest way to keep mobile data on the road: local SIM, eSIM or roaming.",
+     "p": [
+      "Roaming is simple but check your provider’s rules and limits before you leave.",
+      "A local SIM or an eSIM often gives plenty of data; make sure your phone is unlocked.",
+      "Free Wi-Fi is handy, but avoid banking on public networks."
+     ],
+     "q": "How do you usually stay online when you travel abroad?",
+     "c": "Check if your phone supports eSIM and what roaming your plan includes."
+    },
+    "de": {
+     "t": "Verbunden bleiben",
+     "g": "Wähle den einfachsten Weg zu mobilen Daten unterwegs: lokale SIM, eSIM oder Roaming.",
+     "p": [
+      "Roaming ist bequem, aber prüfe vorher die Regeln und Limits deines Anbieters.",
+      "Eine lokale SIM oder eSIM bietet oft viele Daten; dein Handy muss entsperrt sein.",
+      "Gratis-WLAN ist praktisch, aber erledige Bankgeschäfte nicht in öffentlichen Netzen."
+     ],
+     "q": "Wie bleibst du im Ausland normalerweise online?",
+     "c": "Prüfe, ob dein Handy eSIM kann und welches Roaming dein Tarif enthält."
+    },
+    "es": {
+     "t": "Mantenerte conectado",
+     "g": "Elige la forma más fácil de tener datos en el viaje: SIM local, eSIM o roaming.",
+     "p": [
+      "El roaming es cómodo, pero revisa antes las condiciones y límites de tu compañía.",
+      "Una SIM local o una eSIM suele dar muchos datos; comprueba que tu móvil esté libre.",
+      "El wifi gratis es práctico, pero evita usar el banco en redes públicas."
+     ],
+     "q": "¿Cómo sueles conectarte cuando viajas al extranjero?",
+     "c": "Comprueba si tu móvil admite eSIM y qué roaming incluye tu tarifa."
+    },
+    "fr": {
+     "t": "Rester connecté",
+     "g": "Choisis le moyen le plus simple d’avoir des données en voyage : SIM locale, eSIM ou itinérance.",
+     "p": [
+      "L’itinérance est simple, mais vérifie avant les conditions et limites de ton opérateur.",
+      "Une SIM locale ou une eSIM offre souvent beaucoup de données ; ton téléphone doit être débloqué.",
+      "Le Wi-Fi gratuit est pratique, mais évite les opérations bancaires sur un réseau public."
+     ],
+     "q": "Comment restes-tu connecté d’habitude à l’étranger ?",
+     "c": "Vérifie si ton téléphone accepte l’eSIM et ce que ton forfait inclut à l’étranger."
+    },
+    "it": {
+     "t": "Restare connessi",
+     "g": "Scegli il modo più semplice per avere dati in viaggio: SIM locale, eSIM o roaming.",
+     "p": [
+      "Il roaming è comodo, ma controlla prima regole e limiti del tuo operatore.",
+      "Una SIM locale o una eSIM spesso offre molti dati; il telefono deve essere sbloccato.",
+      "Il Wi-Fi gratuito è utile, ma evita operazioni bancarie su reti pubbliche."
+     ],
+     "q": "Di solito come resti online quando viaggi all’estero?",
+     "c": "Controlla se il tuo telefono supporta l’eSIM e quale roaming include il tuo piano."
+    },
+    "pt": {
+     "t": "Manter-se ligado",
+     "g": "Escolhe a forma mais simples de ter dados em viagem: SIM local, eSIM ou roaming.",
+     "p": [
+      "O roaming é prático, mas confirma antes as regras e limites do teu operador.",
+      "Um SIM local ou eSIM costuma dar muitos dados; confirma que o telemóvel está desbloqueado.",
+      "O Wi-Fi grátis dá jeito, mas evita usar o banco em redes públicas."
+     ],
+     "q": "Como costumas ficar online quando viajas para fora?",
+     "c": "Vê se o teu telemóvel aceita eSIM e que roaming inclui o teu tarifário."
+    },
+    "pt_BR": {
+     "t": "Ficando conectado",
+     "g": "Escolha o jeito mais fácil de ter internet na viagem: chip local, eSIM ou roaming.",
+     "p": [
+      "O roaming é prático, mas confira antes as regras e limites da sua operadora.",
+      "Um chip local ou eSIM costuma dar bastante internet; confira se o celular é desbloqueado.",
+      "Wi-Fi grátis ajuda, mas evite acessar o banco em redes públicas."
+     ],
+     "q": "Como você costuma ficar online viajando para fora?",
+     "c": "Veja se seu celular aceita eSIM e que roaming seu plano inclui."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: getting ready",
+     "g": "Recap your plan, budget, bookings and safety basics so you feel ready for a first solo trip.",
+     "p": [
+      "Plan: a solo-friendly destination, a good season and a flexible itinerary.",
+      "Money and sleep: a simple budget, first nights booked in a central, well-lit area.",
+      "Safety net: plans shared, documents copied, insurance, health prep and emergency contacts."
+     ],
+     "q": "Which part of your preparation feels strongest, and which needs a little more work?",
+     "c": "Tick off a checklist of everything from this month and pick one gap to fill."
+    },
+    "de": {
+     "t": "Rückblick: gut vorbereitet",
+     "g": "Fasse Plan, Budget, Buchungen und Sicherheitsbasics zusammen, damit du dich bereit fühlst.",
+     "p": [
+      "Plan: ein solo-freundliches Ziel, eine gute Reisezeit und eine flexible Route.",
+      "Geld und Schlaf: ein einfaches Budget und erste Nächte zentral und gut beleuchtet.",
+      "Sicherheitsnetz: Pläne geteilt, Kopien, Versicherung, Gesundheit und Notfallkontakte."
+     ],
+     "q": "Welcher Teil deiner Vorbereitung ist am stärksten und wo fehlt noch etwas?",
+     "c": "Hake eine Checkliste mit allem aus diesem Monat ab und schließe eine Lücke."
+    },
+    "es": {
+     "t": "Repaso: preparándote",
+     "g": "Repasa tu plan, presupuesto, reservas y seguridad básica para sentirte listo para tu primer viaje solo.",
+     "p": [
+      "Plan: un destino amable para ir solo, una buena época y un itinerario flexible.",
+      "Dinero y descanso: un presupuesto sencillo y las primeras noches en una zona céntrica e iluminada.",
+      "Red de seguridad: planes compartidos, copias, seguro, salud y contactos de emergencia."
+     ],
+     "q": "¿Qué parte de tu preparación es la más sólida y cuál necesita algo más?",
+     "c": "Repasa una lista con todo lo de este mes y elige un punto pendiente."
+    },
+    "fr": {
+     "t": "Révision : se préparer",
+     "g": "Récapitule plan, budget, réservations et sécurité de base pour te sentir prêt pour un premier voyage solo.",
+     "p": [
+      "Plan : une destination facile en solo, une bonne saison et un itinéraire souple.",
+      "Argent et sommeil : un budget simple et des premières nuits dans un quartier central et éclairé.",
+      "Filet de sécurité : plans partagés, copies, assurance, santé et contacts d’urgence."
+     ],
+     "q": "Quelle partie de ta préparation est la plus solide, et laquelle demande un peu de travail ?",
+     "c": "Coche une liste de tout ce que tu as vu ce mois-ci et comble un manque."
+    },
+    "it": {
+     "t": "Ripasso: prepararsi",
+     "g": "Ripassa piano, budget, prenotazioni e sicurezza di base per sentirti pronto al primo viaggio da solo.",
+     "p": [
+      "Piano: una meta adatta a chi è solo, una buona stagione e un itinerario flessibile.",
+      "Soldi e riposo: un budget semplice e le prime notti in una zona centrale e illuminata.",
+      "Rete di sicurezza: piani condivisi, copie, assicurazione, salute e contatti di emergenza."
+     ],
+     "q": "Quale parte della preparazione è più solida e quale richiede ancora un po’ di lavoro?",
+     "c": "Spunta una lista con tutto ciò che hai visto questo mese e colma una lacuna."
+    },
+    "pt": {
+     "t": "Revisão: preparar a viagem",
+     "g": "Revê o plano, orçamento, reservas e segurança básica para te sentires pronto para a primeira viagem a solo.",
+     "p": [
+      "Plano: um destino bom para ir sozinho, uma boa época e um itinerário flexível.",
+      "Dinheiro e descanso: um orçamento simples e as primeiras noites numa zona central e iluminada.",
+      "Rede de segurança: planos partilhados, cópias, seguro, saúde e contactos de emergência."
+     ],
+     "q": "Que parte da tua preparação está mais forte, e qual precisa de mais trabalho?",
+     "c": "Percorre uma lista com tudo deste mês e escolhe uma falha para resolver."
+    },
+    "pt_BR": {
+     "t": "Revisão: se preparando",
+     "g": "Revise plano, orçamento, reservas e segurança básica para se sentir pronto para a primeira viagem solo.",
+     "p": [
+      "Plano: um destino bom para viajar sozinho, uma boa época e um roteiro flexível.",
+      "Dinheiro e descanso: um orçamento simples e as primeiras noites numa região central e iluminada.",
+      "Rede de segurança: planos compartilhados, cópias, seguro, saúde e contatos de emergência."
+     ],
+     "q": "Que parte da sua preparação está mais forte, e qual precisa de mais atenção?",
+     "c": "Confira uma lista com tudo deste mês e escolha um ponto para resolver."
+    }
+   }
+  }
+ ]
+}

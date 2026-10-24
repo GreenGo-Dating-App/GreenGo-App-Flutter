@@ -1,0 +1,835 @@
+{
+ "topic": "pronunciation",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The five basic vowel shapes",
+     "g": "See how mouth opening, tongue height and lip shape create the five basic vowels a, e, i, o and u.",
+     "p": [
+      "For a, as in Spanish 'casa', open your jaw wide and let your tongue rest low and flat.",
+      "For e and i, as in 'mesa' and 'sí', the jaw closes a little and the tongue rises toward the front.",
+      "For o and u, as in 'solo' and 'luna', the lips round and the tongue pulls back; u is the tightest."
+     ],
+     "q": "Which of the five vowels feels the most natural for you to say?",
+     "c": "Say a, e, i, o, u slowly in a mirror and watch how your jaw and lips change for each one."
+    },
+    "de": {
+     "t": "Die fünf Grundvokale",
+     "g": "Sieh, wie Mundöffnung, Zungenhöhe und Lippenform die fünf Grundvokale a, e, i, o und u bilden.",
+     "p": [
+      "Für a wie in „Vater“ öffnest du den Kiefer weit, die Zunge liegt tief und flach.",
+      "Für e und i wie in „See“ und „Biene“ schließt sich der Kiefer etwas, die Zunge hebt sich vorne.",
+      "Für o und u wie in „Mond“ und „gut“ runden sich die Lippen und die Zunge geht zurück; u ist am engsten."
+     ],
+     "q": "Welcher der fünf Vokale fühlt sich für dich am natürlichsten an?",
+     "c": "Sag langsam a, e, i, o, u vor dem Spiegel und beobachte, wie sich Kiefer und Lippen jeweils verändern."
+    },
+    "es": {
+     "t": "Las cinco vocales básicas",
+     "g": "Mira cómo la apertura de la boca, la altura de la lengua y los labios crean a, e, i, o y u.",
+     "p": [
+      "Para la a, como en 'casa', abre bien la mandíbula y deja la lengua baja y plana.",
+      "Para la e y la i, como en 'mesa' y 'sí', la mandíbula se cierra un poco y la lengua sube por delante.",
+      "Para la o y la u, como en 'solo' y 'luna', los labios se redondean y la lengua va atrás; la u es la más cerrada."
+     ],
+     "q": "¿Cuál de las cinco vocales te resulta más natural?",
+     "c": "Di a, e, i, o, u despacio frente a un espejo y observa cómo cambian la mandíbula y los labios."
+    },
+    "fr": {
+     "t": "Les cinq voyelles de base",
+     "g": "Vois comment l'ouverture de la bouche, la hauteur de la langue et les lèvres créent a, é, i, o et ou.",
+     "p": [
+      "Pour a, comme dans « papa », ouvre bien la mâchoire et laisse la langue basse et plate.",
+      "Pour é et i, comme dans « été » et « midi », la mâchoire se ferme un peu et la langue monte vers l'avant.",
+      "Pour o et ou, comme dans « dos » et « loup », les lèvres s'arrondissent et la langue recule ; ou est le plus fermé."
+     ],
+     "q": "Laquelle de ces cinq voyelles te semble la plus naturelle ?",
+     "c": "Dis a, é, i, o, ou lentement devant un miroir et observe ta mâchoire et tes lèvres changer."
+    },
+    "it": {
+     "t": "Le cinque vocali di base",
+     "g": "Guarda come apertura della bocca, altezza della lingua e forma delle labbra creano a, e, i, o e u.",
+     "p": [
+      "Per la a, come in 'casa', apri bene la mandibola e lascia la lingua bassa e piatta.",
+      "Per la e e la i, come in 'sera' e 'vino', la mandibola si chiude un po' e la lingua sale in avanti.",
+      "Per la o e la u, come in 'sole' e 'luna', le labbra si arrotondano e la lingua va indietro; la u è la più chiusa."
+     ],
+     "q": "Quale delle cinque vocali ti viene più naturale?",
+     "c": "Di' a, e, i, o, u lentamente allo specchio e osserva come cambiano mandibola e labbra."
+    },
+    "pt": {
+     "t": "As cinco vogais básicas",
+     "g": "Vê como a abertura da boca, a altura da língua e os lábios criam a, e, i, o e u.",
+     "p": [
+      "Para o a, como em 'casa', abre bem o maxilar e deixa a língua baixa e plana.",
+      "Para o e e o i, como em 'mesa' e 'vi', o maxilar fecha um pouco e a língua sobe à frente.",
+      "Para o o e o u, como em 'bolo' e 'lua', os lábios arredondam e a língua recua; o u é o mais fechado."
+     ],
+     "q": "Qual das cinco vogais te parece mais natural?",
+     "c": "Diz a, e, i, o, u devagar ao espelho e observa como o maxilar e os lábios mudam em cada uma."
+    },
+    "pt_BR": {
+     "t": "As cinco vogais básicas",
+     "g": "Veja como a abertura da boca, a altura da língua e os lábios criam a, e, i, o e u.",
+     "p": [
+      "Para o a, como em 'casa', abra bem a mandíbula e deixe a língua baixa e plana.",
+      "Para o e e o i, como em 'mesa' e 'vi', a mandíbula fecha um pouco e a língua sobe na frente.",
+      "Para o o e o u, como em 'bolo' e 'lua', os lábios arredondam e a língua recua; o u é o mais fechado."
+     ],
+     "q": "Qual das cinco vogais parece mais natural para você?",
+     "c": "Diga a, e, i, o, u devagar na frente do espelho e observe como a mandíbula e os lábios mudam."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smiling lips, round lips",
+     "g": "Discover how lip shape changes a vowel: smile for ee, pout for oo.",
+     "p": [
+      "For 'ee', as in 'see', spread your lips into a small smile; the corners move outward.",
+      "For 'oo', as in 'too', push your lips forward into a small circle, as if blowing out a candle.",
+      "Keeping your lips in the right shape is one of the easiest ways to make a vowel clearer."
+     ],
+     "q": "Do your lips move a lot when you speak, or do you tend to keep them still?",
+     "c": "Glide slowly from 'ee' to 'oo' and back five times, exaggerating the smile and the pout."
+    },
+    "de": {
+     "t": "Breite Lippen, runde Lippen",
+     "g": "Entdecke, wie die Lippenform einen Vokal verändert: lächeln für i, spitzen für u.",
+     "p": [
+      "Für das i in „Biene“ ziehst du die Lippen zu einem kleinen Lächeln, die Mundwinkel gehen nach außen.",
+      "Für das u in „Schuh“ schiebst du die Lippen rund nach vorn, als würdest du eine Kerze auspusten.",
+      "Die richtige Lippenform zu halten ist einer der einfachsten Wege zu klareren Vokalen."
+     ],
+     "q": "Bewegst du beim Sprechen die Lippen viel, oder hältst du sie eher ruhig?",
+     "c": "Gleite fünfmal langsam von i zu u und zurück und übertreibe dabei Lächeln und Kussmund."
+    },
+    "es": {
+     "t": "Labios que sonríen, labios redondos",
+     "g": "Descubre cómo la forma de los labios cambia una vocal: sonríe para la i, redondea para la u.",
+     "p": [
+      "Para la i, como en 'sí', estira los labios en una pequeña sonrisa; las comisuras van hacia fuera.",
+      "Para la u, como en 'tú', adelanta los labios en un círculo pequeño, como para apagar una vela.",
+      "Mantener bien la forma de los labios es una de las formas más fáciles de aclarar una vocal."
+     ],
+     "q": "¿Mueves mucho los labios al hablar o sueles dejarlos quietos?",
+     "c": "Pasa despacio de i a u y vuelve cinco veces, exagerando la sonrisa y el círculo."
+    },
+    "fr": {
+     "t": "Lèvres souriantes, lèvres rondes",
+     "g": "Découvre comment la forme des lèvres change une voyelle : souris pour i, arrondis pour ou.",
+     "p": [
+      "Pour i, comme dans « lit », étire les lèvres en petit sourire ; les coins de la bouche s'écartent.",
+      "Pour ou, comme dans « loup », avance les lèvres en petit rond, comme pour souffler une bougie.",
+      "Garder la bonne forme de lèvres est l'un des moyens les plus simples de rendre une voyelle nette."
+     ],
+     "q": "Bouges-tu beaucoup les lèvres quand tu parles, ou les gardes-tu plutôt immobiles ?",
+     "c": "Passe lentement de i à ou et retour cinq fois, en exagérant le sourire et la moue."
+    },
+    "it": {
+     "t": "Labbra che sorridono, labbra tonde",
+     "g": "Scopri come la forma delle labbra cambia una vocale: sorridi per la i, arrotonda per la u.",
+     "p": [
+      "Per la i, come in 'sì', distendi le labbra in un piccolo sorriso; gli angoli vanno verso l'esterno.",
+      "Per la u, come in 'tu', spingi le labbra in avanti in un piccolo cerchio, come per spegnere una candela.",
+      "Tenere la forma giusta delle labbra è uno dei modi più semplici per rendere chiara una vocale."
+     ],
+     "q": "Muovi molto le labbra quando parli o tendi a tenerle ferme?",
+     "c": "Passa lentamente da i a u e ritorno cinque volte, esagerando il sorriso e il broncio."
+    },
+    "pt": {
+     "t": "Lábios a sorrir, lábios redondos",
+     "g": "Descobre como a forma dos lábios muda uma vogal: sorri para o i, arredonda para o u.",
+     "p": [
+      "Para o i, como em 'sim', estica os lábios num pequeno sorriso; os cantos da boca vão para fora.",
+      "Para o u, como em 'tu', projeta os lábios num pequeno círculo, como para apagar uma vela.",
+      "Manter a forma certa dos lábios é uma das maneiras mais fáceis de tornar uma vogal clara."
+     ],
+     "q": "Mexes muito os lábios quando falas ou costumas mantê-los parados?",
+     "c": "Passa devagar de i para u e volta cinco vezes, exagerando o sorriso e o biquinho."
+    },
+    "pt_BR": {
+     "t": "Lábios sorrindo, lábios redondos",
+     "g": "Descubra como a forma dos lábios muda uma vogal: sorria para o i, arredonde para o u.",
+     "p": [
+      "Para o i, como em 'sim', estique os lábios num pequeno sorriso; os cantos da boca vão para fora.",
+      "Para o u, como em 'tu', projete os lábios num pequeno círculo, como para apagar uma vela.",
+      "Manter a forma certa dos lábios é um dos jeitos mais fáceis de deixar uma vogal clara."
+     ],
+     "q": "Você mexe muito os lábios quando fala ou costuma deixá-los parados?",
+     "c": "Passe devagar do i para o u e volte cinco vezes, exagerando o sorriso e o biquinho."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tongue high, tongue low",
+     "g": "Feel how your tongue rises for ee and drops for ah.",
+     "p": [
+      "Say 'ee' as in 'see': the middle of your tongue rises high, close to the roof of your mouth.",
+      "Now say 'ah' as in 'father': your tongue drops low and flat, and your jaw opens wider.",
+      "Between them sit middle vowels like 'e' in 'bed', with the tongue halfway up."
+     ],
+     "q": "Could you feel your tongue moving, or did only your jaw seem to move?",
+     "c": "Put a fingertip on your chin and slide from 'ee' to 'eh' to 'ah', feeling the jaw and tongue drop step by step."
+    },
+    "de": {
+     "t": "Zunge hoch, Zunge tief",
+     "g": "Spüre, wie die Zunge sich beim i hebt und beim a senkt.",
+     "p": [
+      "Sag i wie in „Biene“: Die Zungenmitte hebt sich hoch, nah an den Gaumen.",
+      "Sag nun a wie in „Vater“: Die Zunge sinkt tief und flach, der Kiefer öffnet sich weiter.",
+      "Dazwischen liegen mittlere Vokale wie das e in „Bett“, mit der Zunge auf halber Höhe."
+     ],
+     "q": "Konntest du die Zunge spüren, oder schien sich nur der Kiefer zu bewegen?",
+     "c": "Leg einen Finger ans Kinn und gleite von i über e zu a; spür, wie Kiefer und Zunge Stufe für Stufe sinken."
+    },
+    "es": {
+     "t": "Lengua alta, lengua baja",
+     "g": "Siente cómo la lengua sube para la i y baja para la a.",
+     "p": [
+      "Di 'i' como en 'sí': el centro de la lengua sube mucho, cerca del techo de la boca.",
+      "Ahora di 'a' como en 'casa': la lengua baja y queda plana, y la mandíbula se abre más.",
+      "En medio están vocales como la 'e' de 'mesa', con la lengua a media altura."
+     ],
+     "q": "¿Pudiste sentir cómo se movía la lengua o solo notaste la mandíbula?",
+     "c": "Pon un dedo en la barbilla y pasa de i a e y a a, notando cómo bajan la mandíbula y la lengua."
+    },
+    "fr": {
+     "t": "Langue haute, langue basse",
+     "g": "Sens ta langue monter pour i et descendre pour a.",
+     "p": [
+      "Dis i comme dans « lit » : le milieu de la langue monte haut, tout près du palais.",
+      "Dis maintenant a comme dans « chat » : la langue descend, bien à plat, et la mâchoire s'ouvre davantage.",
+      "Entre les deux se trouvent des voyelles moyennes comme è dans « mère », langue à mi-hauteur."
+     ],
+     "q": "As-tu senti ta langue bouger, ou seulement ta mâchoire ?",
+     "c": "Pose un doigt sur ton menton et glisse de i à è puis à a en sentant la mâchoire et la langue descendre."
+    },
+    "it": {
+     "t": "Lingua alta, lingua bassa",
+     "g": "Senti come la lingua sale per la i e scende per la a.",
+     "p": [
+      "Di' i come in 'vino': il centro della lingua sale in alto, vicino al palato.",
+      "Ora di' a come in 'casa': la lingua scende bassa e piatta e la mandibola si apre di più.",
+      "In mezzo ci sono vocali come la e di 'bello', con la lingua a metà altezza."
+     ],
+     "q": "Sei riuscito a sentire la lingua muoversi o solo la mandibola?",
+     "c": "Metti un dito sul mento e passa da i a e ad a, sentendo mandibola e lingua scendere passo dopo passo."
+    },
+    "pt": {
+     "t": "Língua alta, língua baixa",
+     "g": "Sente como a língua sobe para o i e desce para o a.",
+     "p": [
+      "Diz i como em 'vi': o meio da língua sobe bastante, perto do céu da boca.",
+      "Agora diz a como em 'pá': a língua desce, fica plana, e o maxilar abre mais.",
+      "No meio ficam vogais como o é de 'pé', com a língua a meia altura."
+     ],
+     "q": "Conseguiste sentir a língua a mexer ou só notaste o maxilar?",
+     "c": "Põe um dedo no queixo e passa de i para é e para a, sentindo o maxilar e a língua a descer."
+    },
+    "pt_BR": {
+     "t": "Língua alta, língua baixa",
+     "g": "Sinta como a língua sobe para o i e desce para o a.",
+     "p": [
+      "Diga i como em 'vi': o meio da língua sobe bastante, perto do céu da boca.",
+      "Agora diga a como em 'pá': a língua desce, fica plana, e a mandíbula abre mais.",
+      "No meio ficam vogais como o é de 'pé', com a língua na metade da altura."
+     ],
+     "q": "Você conseguiu sentir a língua se mexendo ou só notou a mandíbula?",
+     "c": "Coloque um dedo no queixo e passe de i para é e para a, sentindo a mandíbula e a língua descerem."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Front and back vowels",
+     "g": "Notice how the tongue pushes forward for ee and pulls back for oo.",
+     "p": [
+      "For 'ee' the highest part of your tongue is near the front of the mouth, just behind the teeth.",
+      "For 'oo' the tongue bunches up at the back, near the soft palate, and the lips round.",
+      "Say 'ee-oo' slowly and you can feel the tongue slide back and forth like a small drawer."
+     ],
+     "q": "Did you notice the tongue sliding, or was the lip movement easier to feel?",
+     "c": "Whisper 'ee-oo-ee-oo' ten times and try to feel the tongue move, not only the lips."
+    },
+    "de": {
+     "t": "Vordere und hintere Vokale",
+     "g": "Bemerke, wie die Zunge beim i nach vorn und beim u nach hinten geht.",
+     "p": [
+      "Beim i liegt der höchste Punkt der Zunge vorn im Mund, kurz hinter den Zähnen.",
+      "Beim u wölbt sich die Zunge hinten, nahe am Gaumensegel, und die Lippen runden sich.",
+      "Sag langsam „i-u“, dann spürst du die Zunge vor und zurück gleiten wie eine kleine Schublade."
+     ],
+     "q": "Hast du das Gleiten der Zunge bemerkt, oder war die Lippenbewegung leichter zu spüren?",
+     "c": "Flüstere zehnmal „i-u-i-u“ und versuch, die Zunge zu spüren, nicht nur die Lippen."
+    },
+    "es": {
+     "t": "Vocales anteriores y posteriores",
+     "g": "Nota cómo la lengua avanza para la i y retrocede para la u.",
+     "p": [
+      "Para la i, la parte más alta de la lengua está delante, justo detrás de los dientes.",
+      "Para la u, la lengua se recoge atrás, cerca del velo del paladar, y los labios se redondean.",
+      "Di 'i-u' despacio y sentirás la lengua deslizarse adelante y atrás como un cajón pequeño."
+     ],
+     "q": "¿Notaste cómo se deslizaba la lengua o te resultó más fácil sentir los labios?",
+     "c": "Susurra 'i-u-i-u' diez veces e intenta sentir la lengua, no solo los labios."
+    },
+    "fr": {
+     "t": "Voyelles avant et arrière",
+     "g": "Remarque comme la langue avance pour i et recule pour ou.",
+     "p": [
+      "Pour i, le point le plus haut de la langue est à l'avant de la bouche, juste derrière les dents.",
+      "Pour ou, la langue se bombe à l'arrière, près du voile du palais, et les lèvres s'arrondissent.",
+      "Dis « i-ou » lentement : tu sens la langue glisser d'avant en arrière comme un petit tiroir."
+     ],
+     "q": "As-tu senti la langue glisser, ou le mouvement des lèvres était-il plus facile à percevoir ?",
+     "c": "Chuchote « i-ou-i-ou » dix fois en essayant de sentir la langue, pas seulement les lèvres."
+    },
+    "it": {
+     "t": "Vocali anteriori e posteriori",
+     "g": "Nota come la lingua va avanti per la i e indietro per la u.",
+     "p": [
+      "Per la i, il punto più alto della lingua è davanti, subito dietro i denti.",
+      "Per la u, la lingua si raccoglie dietro, vicino al palato molle, e le labbra si arrotondano.",
+      "Di' 'i-u' lentamente e sentirai la lingua scorrere avanti e indietro come un cassettino."
+     ],
+     "q": "Hai notato la lingua scorrere o era più facile sentire le labbra?",
+     "c": "Sussurra 'i-u-i-u' dieci volte e prova a sentire la lingua, non solo le labbra."
+    },
+    "pt": {
+     "t": "Vogais anteriores e posteriores",
+     "g": "Repara como a língua avança para o i e recua para o u.",
+     "p": [
+      "Para o i, a parte mais alta da língua fica à frente, logo atrás dos dentes.",
+      "Para o u, a língua junta-se atrás, perto do véu palatino, e os lábios arredondam.",
+      "Diz 'i-u' devagar e vais sentir a língua deslizar para a frente e para trás como uma gaveta."
+     ],
+     "q": "Notaste a língua a deslizar ou foi mais fácil sentir os lábios?",
+     "c": "Sussurra 'i-u-i-u' dez vezes e tenta sentir a língua, não só os lábios."
+    },
+    "pt_BR": {
+     "t": "Vogais anteriores e posteriores",
+     "g": "Repare como a língua avança para o i e recua para o u.",
+     "p": [
+      "Para o i, a parte mais alta da língua fica na frente, logo atrás dos dentes.",
+      "Para o u, a língua se junta atrás, perto do palato mole, e os lábios arredondam.",
+      "Diga 'i-u' devagar e você vai sentir a língua deslizar para frente e para trás como uma gaveta."
+     ],
+     "q": "Você notou a língua deslizando ou foi mais fácil sentir os lábios?",
+     "c": "Sussurre 'i-u-i-u' dez vezes e tente sentir a língua, não só os lábios."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Short and long vowels",
+     "g": "Learn when vowel length changes meaning, as in English 'ship' and 'sheep' or German 'Stadt' and 'Staat'.",
+     "p": [
+      "In some languages holding a vowel longer creates a new word: German 'Stadt' (city) and 'Staat' (state).",
+      "In English, 'sheep' has a long, tense 'ee', while 'ship' is shorter and more relaxed.",
+      "Spanish and Italian vowels do not change meaning by length, so learners from there need extra practice."
+     ],
+     "q": "Does vowel length change meaning in your own language?",
+     "c": "Say 'ship' and 'sheep' five times each, keeping 'sheep' long and smiling, 'ship' short and loose."
+    },
+    "de": {
+     "t": "Kurze und lange Vokale",
+     "g": "Lerne, wann die Vokallänge die Bedeutung ändert, wie bei „Stadt“ und „Staat“ oder englisch 'ship' und 'sheep'.",
+     "p": [
+      "Im Deutschen entsteht durch einen längeren Vokal oft ein neues Wort: „Stadt“ und „Staat“, „Bett“ und „Beet“.",
+      "Im Englischen hat 'sheep' (Schaf) ein langes, gespanntes i, 'ship' (Schiff) ein kurzes, lockeres.",
+      "Im Spanischen und Italienischen ändert die Länge keine Bedeutung, daher brauchen Lernende dort mehr Übung."
+     ],
+     "q": "Ändert die Vokallänge in deiner Muttersprache die Bedeutung?",
+     "c": "Sag je fünfmal „Stadt“ und „Staat“: „Staat“ lang und ruhig, „Stadt“ kurz und knackig."
+    },
+    "es": {
+     "t": "Vocales cortas y largas",
+     "g": "Aprende cuándo la duración de la vocal cambia el significado, como en inglés 'ship' y 'sheep'.",
+     "p": [
+      "En algunos idiomas alargar una vocal crea otra palabra: en alemán 'Stadt' (ciudad) y 'Staat' (Estado).",
+      "En inglés, 'sheep' (oveja) tiene una 'i' larga y tensa, y 'ship' (barco) una más corta y relajada.",
+      "En español la duración no cambia el significado, por eso conviene practicar este contraste con calma."
+     ],
+     "q": "¿En tu idioma la duración de una vocal puede cambiar el significado?",
+     "c": "Di 'ship' y 'sheep' cinco veces cada una: 'sheep' larga y sonriendo, 'ship' corta y suelta."
+    },
+    "fr": {
+     "t": "Voyelles courtes et longues",
+     "g": "Apprends quand la durée d'une voyelle change le sens, comme en anglais 'ship' et 'sheep'.",
+     "p": [
+      "Dans certaines langues, allonger une voyelle crée un autre mot : en allemand 'Stadt' (ville) et 'Staat' (État).",
+      "En anglais, 'sheep' (mouton) a un i long et tendu, 'ship' (bateau) un i plus court et relâché.",
+      "En français, la durée ne change presque jamais le sens, d'où l'intérêt de bien travailler ce contraste."
+     ],
+     "q": "Dans ta langue, la durée d'une voyelle peut-elle changer le sens d'un mot ?",
+     "c": "Dis 'ship' et 'sheep' cinq fois chacun : 'sheep' long et souriant, 'ship' court et détendu."
+    },
+    "it": {
+     "t": "Vocali brevi e lunghe",
+     "g": "Impara quando la durata della vocale cambia il significato, come in inglese 'ship' e 'sheep'.",
+     "p": [
+      "In alcune lingue allungare una vocale crea un'altra parola: in tedesco 'Stadt' (città) e 'Staat' (Stato).",
+      "In inglese 'sheep' (pecora) ha una i lunga e tesa, 'ship' (nave) una i più breve e rilassata.",
+      "In italiano la durata della vocale non cambia il significato, quindi questo contrasto va allenato con cura."
+     ],
+     "q": "Nella tua lingua la durata di una vocale può cambiare il significato?",
+     "c": "Di' 'ship' e 'sheep' cinque volte ciascuna: 'sheep' lunga e sorridente, 'ship' breve e rilassata."
+    },
+    "pt": {
+     "t": "Vogais curtas e longas",
+     "g": "Aprende quando a duração da vogal muda o significado, como em inglês 'ship' e 'sheep'.",
+     "p": [
+      "Em algumas línguas alongar uma vogal cria outra palavra: em alemão 'Stadt' (cidade) e 'Staat' (Estado).",
+      "Em inglês, 'sheep' (ovelha) tem um i longo e tenso, e 'ship' (navio) um i mais curto e relaxado.",
+      "Em português a duração não muda o significado, por isso este contraste merece treino com calma."
+     ],
+     "q": "Na tua língua, a duração de uma vogal pode mudar o significado?",
+     "c": "Diz 'ship' e 'sheep' cinco vezes cada: 'sheep' longo e a sorrir, 'ship' curto e solto."
+    },
+    "pt_BR": {
+     "t": "Vogais curtas e longas",
+     "g": "Aprenda quando a duração da vogal muda o significado, como em inglês 'ship' e 'sheep'.",
+     "p": [
+      "Em algumas línguas alongar uma vogal cria outra palavra: em alemão 'Stadt' (cidade) e 'Staat' (Estado).",
+      "Em inglês, 'sheep' (ovelha) tem um i longo e tenso, e 'ship' (navio) um i mais curto e relaxado.",
+      "Em português a duração não muda o significado, então vale treinar esse contraste com calma."
+     ],
+     "q": "No seu idioma, a duração de uma vogal pode mudar o significado?",
+     "c": "Diga 'ship' e 'sheep' cinco vezes cada: 'sheep' longo e sorrindo, 'ship' curto e solto."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pure, steady vowels",
+     "g": "Learn to hold one clean vowel shape without gliding, as Spanish and Italian speakers do.",
+     "p": [
+      "In Spanish and Italian each vowel keeps one shape from start to finish: Spanish 'no' is a pure, short 'o'.",
+      "English speakers often add a glide, so English 'no' slides toward 'oo'; avoid that in 'sì' or 'casa'.",
+      "To stay pure, freeze your jaw, lips and tongue for the whole vowel, like holding a photo pose."
+     ],
+     "q": "Do vowels in your language stay steady, or do they tend to slide?",
+     "c": "Say Spanish 'no', 'sé' and 'yo' while watching a mirror: your lips should not move during the vowel."
+    },
+    "de": {
+     "t": "Reine, stabile Vokale",
+     "g": "Lerne, eine klare Vokalform ohne Gleiten zu halten, wie im Spanischen und Italienischen.",
+     "p": [
+      "Im Spanischen und Italienischen bleibt jeder Vokal von Anfang bis Ende gleich: spanisch 'no' ist ein reines o.",
+      "Englisch Sprechende hängen oft ein Gleiten an, ihr 'no' rutscht Richtung u; vermeide das bei 'sì' oder 'casa'.",
+      "Damit der Vokal rein bleibt, halte Kiefer, Lippen und Zunge still, wie bei einem Foto."
+     ],
+     "q": "Bleiben die Vokale in deiner Sprache stabil, oder gleiten sie eher?",
+     "c": "Sag spanisch 'no', 'sé' und 'yo' vor dem Spiegel: Während des Vokals dürfen sich die Lippen nicht bewegen."
+    },
+    "es": {
+     "t": "Vocales puras y estables",
+     "g": "Aprende a mantener una vocal limpia sin deslizarte, como se hace en español e italiano.",
+     "p": [
+      "En español e italiano cada vocal mantiene una sola forma de principio a fin: 'no' es una o pura y corta.",
+      "Los anglohablantes suelen deslizar la vocal, y su 'no' acaba en 'u'; por eso suena extranjero.",
+      "Para mantenerla pura, deja quietos mandíbula, labios y lengua durante toda la vocal, como en una foto."
+     ],
+     "q": "¿Conoces a alguien que alargue o deslice las vocales al hablar español?",
+     "c": "Di 'no', 'sé' y 'yo' frente al espejo: los labios no deben moverse mientras suena la vocal."
+    },
+    "fr": {
+     "t": "Des voyelles pures et stables",
+     "g": "Apprends à tenir une voyelle nette sans glisser, comme en espagnol, en italien et en français.",
+     "p": [
+      "En espagnol et en italien, chaque voyelle garde une seule forme du début à la fin : 'no' est un o pur.",
+      "Les anglophones ajoutent souvent un glissement : leur 'no' finit vers ou, comme dans un « beau » qui traîne.",
+      "Pour rester pur, fige mâchoire, lèvres et langue pendant toute la voyelle, comme pour une photo."
+     ],
+     "q": "Les voyelles de ta langue restent-elles stables ou ont-elles tendance à glisser ?",
+     "c": "Dis l'espagnol 'no', 'sé' et 'yo' devant un miroir : tes lèvres ne doivent pas bouger pendant la voyelle."
+    },
+    "it": {
+     "t": "Vocali pure e stabili",
+     "g": "Impara a tenere una vocale pulita senza scivolare, come in italiano e in spagnolo.",
+     "p": [
+      "In italiano e spagnolo ogni vocale mantiene una sola forma dall'inizio alla fine: 'no' è una o pura.",
+      "Chi parla inglese spesso aggiunge uno scivolamento e il suo 'no' finisce verso la u; per questo suona straniero.",
+      "Per restare pura, tieni fermi mandibola, labbra e lingua per tutta la vocale, come in posa per una foto."
+     ],
+     "q": "Conosci qualcuno che fa scivolare le vocali quando parla italiano?",
+     "c": "Di' 'no', 'sì' e 'tre' allo specchio: le labbra non devono muoversi mentre suona la vocale."
+    },
+    "pt": {
+     "t": "Vogais puras e estáveis",
+     "g": "Aprende a manter uma vogal limpa sem deslizar, como se faz em espanhol e italiano.",
+     "p": [
+      "Em espanhol e italiano cada vogal mantém uma só forma do início ao fim: 'no' é um o puro e curto.",
+      "Quem fala inglês costuma deslizar a vogal, e o seu 'no' acaba em 'u'; por isso soa estrangeiro.",
+      "Para a manter pura, deixa o maxilar, os lábios e a língua parados durante toda a vogal, como numa foto."
+     ],
+     "q": "As vogais da tua língua ficam estáveis ou tendem a deslizar?",
+     "c": "Diz o espanhol 'no', 'sé' e 'yo' ao espelho: os lábios não se devem mexer durante a vogal."
+    },
+    "pt_BR": {
+     "t": "Vogais puras e estáveis",
+     "g": "Aprenda a manter uma vogal limpa sem deslizar, como se faz em espanhol e italiano.",
+     "p": [
+      "Em espanhol e italiano cada vogal mantém uma só forma do começo ao fim: 'no' é um o puro e curto.",
+      "Quem fala inglês costuma deslizar a vogal, e o 'no' termina em 'u'; por isso soa estrangeiro.",
+      "Para manter a vogal pura, deixe a mandíbula, os lábios e a língua parados durante toda ela, como numa foto."
+     ],
+     "q": "As vogais do seu idioma ficam estáveis ou tendem a deslizar?",
+     "c": "Diga o espanhol 'no', 'sé' e 'yo' no espelho: os lábios não devem se mexer durante a vogal."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gliding vowels",
+     "g": "Practise moving smoothly from one vowel to another, as in English 'my', German 'Haus' or Portuguese 'pai'.",
+     "p": [
+      "A gliding vowel starts in one mouth shape and slides into another within the same syllable.",
+      "English 'my' slides from 'ah' to 'ee'; German 'Haus' and Portuguese 'mau' slide from 'ah' to 'oo'.",
+      "The first part is usually stronger and longer, and the second part is a quick, light finish."
+     ],
+     "q": "Can you think of a word in your language where the vowel slides like this?",
+     "c": "Say 'ah... ee' slowly, then faster and faster until it becomes 'my'; then do the same with 'ah... oo'."
+    },
+    "de": {
+     "t": "Gleitende Vokale",
+     "g": "Übe, weich von einem Vokal in einen anderen zu gleiten, wie in „Haus“, englisch 'my' oder portugiesisch 'pai'.",
+     "p": [
+      "Ein Doppellaut beginnt in einer Mundform und gleitet innerhalb derselben Silbe in eine andere.",
+      "„Haus“ gleitet von a zu u, „mein“ von a zu i, „heute“ von o zu ü; englisch 'my' klingt wie „mei“.",
+      "Der erste Teil ist meist stärker und länger, der zweite ein kurzer, leichter Abschluss."
+     ],
+     "q": "Fällt dir ein Wort in deiner Sprache ein, in dem der Vokal so gleitet?",
+     "c": "Sag langsam „a... u“, dann immer schneller, bis „Haus“ daraus wird; mach dasselbe mit „a... i“ zu „mein“."
+    },
+    "es": {
+     "t": "Vocales que se deslizan",
+     "g": "Practica pasar suavemente de una vocal a otra, como en inglés 'my', alemán 'Haus' o español 'aire'.",
+     "p": [
+      "Un diptongo empieza con una forma de boca y se desliza a otra dentro de la misma sílaba.",
+      "'Aire' y 'hay' van de a a i; 'causa' y el alemán 'Haus' van de a a u; el inglés 'my' suena como 'mai'.",
+      "La primera parte suele ser más fuerte y larga, y la segunda un final rápido y ligero."
+     ],
+     "q": "¿Qué palabras con diptongo usas a menudo en tu día a día?",
+     "c": "Di 'a... i' despacio y luego cada vez más rápido hasta que suene 'hay'; haz lo mismo con 'a... u'."
+    },
+    "fr": {
+     "t": "Les voyelles glissées",
+     "g": "Entraîne-toi à passer en douceur d'une voyelle à une autre, comme en anglais 'my' ou en allemand 'Haus'.",
+     "p": [
+      "Une diphtongue commence avec une forme de bouche et glisse vers une autre dans la même syllabe.",
+      "L'anglais 'my' va de a vers i, l'allemand 'Haus' et le portugais 'mau' vont de a vers ou.",
+      "Le français standard n'a pas de vraies diphtongues, c'est pourquoi ce mouvement demande un peu d'entraînement."
+     ],
+     "q": "Connais-tu un mot d'une autre langue où la voyelle glisse ainsi ?",
+     "c": "Dis « a... i » lentement, puis de plus en plus vite jusqu'à obtenir 'my' ; fais pareil avec « a... ou »."
+    },
+    "it": {
+     "t": "Vocali che scivolano",
+     "g": "Esercitati a passare in modo fluido da una vocale all'altra, come nell'inglese 'my' o nel tedesco 'Haus'.",
+     "p": [
+      "Un dittongo parte da una forma della bocca e scivola in un'altra nella stessa sillaba.",
+      "'Mai' e 'sei' scivolano verso la i, 'causa' verso la u; l'inglese 'my' suona quasi come 'mai'.",
+      "La prima parte di solito è più forte e lunga, la seconda è una chiusura rapida e leggera."
+     ],
+     "q": "Quali parole con dittongo usi spesso ogni giorno?",
+     "c": "Di' 'a... i' lentamente, poi sempre più veloce finché diventa 'mai'; fai lo stesso con 'a... u'."
+    },
+    "pt": {
+     "t": "Vogais que deslizam",
+     "g": "Pratica passar suavemente de uma vogal para outra, como em 'pai', no alemão 'Haus' ou no inglês 'my'.",
+     "p": [
+      "Um ditongo começa numa forma de boca e desliza para outra dentro da mesma sílaba.",
+      "'Pai' desliza de a para i, 'mau' de a para u; o inglês 'my' soa quase como 'mai'.",
+      "A primeira parte costuma ser mais forte e longa, e a segunda um final rápido e leve."
+     ],
+     "q": "Que palavras com ditongo usas muitas vezes no dia a dia?",
+     "c": "Diz 'a... i' devagar e depois cada vez mais depressa até soar 'pai'; faz o mesmo com 'a... u'."
+    },
+    "pt_BR": {
+     "t": "Vogais que deslizam",
+     "g": "Pratique passar suavemente de uma vogal para outra, como em 'pai', no alemão 'Haus' ou no inglês 'my'.",
+     "p": [
+      "Um ditongo começa numa forma de boca e desliza para outra dentro da mesma sílaba.",
+      "'Pai' desliza de a para i, 'mau' de a para u; o inglês 'my' soa quase como 'mai'.",
+      "A primeira parte costuma ser mais forte e longa, e a segunda é um final rápido e leve."
+     ],
+     "q": "Quais palavras com ditongo você usa bastante no dia a dia?",
+     "c": "Diga 'a... i' devagar e depois cada vez mais rápido até soar 'pai'; faça o mesmo com 'a... u'."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The relaxed uh sound",
+     "g": "Meet the lazy, neutral vowel called schwa, as in English 'about' and German 'bitte'.",
+     "p": [
+      "Schwa is the most common vowel in English: the 'a' in 'about' and the 'e' in 'taken'.",
+      "To make it, relax everything: jaw slightly open, tongue resting in the middle, lips neutral.",
+      "It appears in unstressed syllables, as in German 'bitte' and 'Name' or French 'le' and 'petit'."
+     ],
+     "q": "Did you know that such a small, relaxed sound is so common in many languages?",
+     "c": "Say 'about', 'banana' and 'sofa', keeping the unstressed vowels short and lazy like a sigh."
+    },
+    "de": {
+     "t": "Das entspannte Schwa",
+     "g": "Lerne den schwachen, neutralen Vokal Schwa kennen, wie in „bitte“ und englisch 'about'.",
+     "p": [
+      "Das Schwa ist das unbetonte e am Wortende: „bitte“, „Name“, „Blume“, auch in „gesagt“.",
+      "Dafür entspannst du alles: Kiefer leicht offen, Zunge ruht in der Mitte, Lippen neutral.",
+      "Es kommt nur in unbetonten Silben vor, auch im Englischen 'about' und im Französischen 'le'."
+     ],
+     "q": "Hättest du gedacht, dass so ein kleiner, lockerer Laut in vielen Sprachen so häufig ist?",
+     "c": "Sag „bitte“, „Tasche“ und „Sonne“ und halte das letzte e kurz und locker wie ein Seufzer."
+    },
+    "es": {
+     "t": "El sonido relajado schwa",
+     "g": "Conoce la vocal neutra y relajada llamada schwa, como en inglés 'about' y alemán 'bitte'.",
+     "p": [
+      "La schwa es la vocal más frecuente del inglés: la 'a' de 'about' y la 'e' de 'taken'.",
+      "Para hacerla, relájalo todo: mandíbula un poco abierta, lengua en reposo en el centro, labios neutros.",
+      "Aparece en sílabas átonas, como en alemán 'bitte' o francés 'le'; el español no la tiene, así que nota la diferencia."
+     ],
+     "q": "¿Sabías que un sonido tan pequeño y relajado es tan común en otros idiomas?",
+     "c": "Di 'about', 'banana' en inglés y 'sofa', dejando las vocales átonas cortas y perezosas, como un suspiro."
+    },
+    "fr": {
+     "t": "Le son relâché « e »",
+     "g": "Découvre la voyelle neutre et relâchée appelée schwa, comme dans l'anglais 'about' ou « le ».",
+     "p": [
+      "En français, c'est le « e » de « le », « petit » et « demain », souvent très léger ou même avalé.",
+      "Pour le faire, relâche tout : mâchoire un peu ouverte, langue au repos au milieu, lèvres neutres.",
+      "On le trouve aussi en anglais, la 'a' de 'about', et en allemand, le e final de 'bitte'."
+     ],
+     "q": "Savais-tu qu'un son aussi petit et détendu est si courant dans beaucoup de langues ?",
+     "c": "Dis « petit », « demain » et l'anglais 'about' en gardant la voyelle faible courte et paresseuse."
+    },
+    "it": {
+     "t": "Il suono rilassato schwa",
+     "g": "Conosci la vocale neutra e rilassata chiamata schwa, come nell'inglese 'about' e nel tedesco 'bitte'.",
+     "p": [
+      "Lo schwa è la vocale più frequente dell'inglese: la 'a' di 'about' e la 'e' di 'taken'.",
+      "Per farlo rilassa tutto: mandibola un po' aperta, lingua a riposo al centro, labbra neutre.",
+      "Compare nelle sillabe non accentate; in italiano standard non c'è, ma molti dialetti del Sud lo usano."
+     ],
+     "q": "Sapevi che un suono così piccolo e rilassato è tanto comune in molte lingue?",
+     "c": "Di' 'about', 'banana' all'inglese e 'sofa', lasciando le vocali deboli brevi e pigre come un sospiro."
+    },
+    "pt": {
+     "t": "O som relaxado schwa",
+     "g": "Conhece a vogal neutra e relaxada chamada schwa, como no inglês 'about' e no alemão 'bitte'.",
+     "p": [
+      "O schwa é a vogal mais frequente do inglês: o 'a' de 'about' e o 'e' de 'taken'.",
+      "Para o fazer, relaxa tudo: maxilar um pouco aberto, língua em repouso ao centro, lábios neutros.",
+      "Em português europeu há vogais átonas parecidas, como o 'e' muito leve de 'pequeno' ou 'de'."
+     ],
+     "q": "Sabias que um som tão pequeno e relaxado é tão comum em muitas línguas?",
+     "c": "Diz o inglês 'about', 'banana' e 'sofa', deixando as vogais átonas curtas e preguiçosas, como um suspiro."
+    },
+    "pt_BR": {
+     "t": "O som relaxado schwa",
+     "g": "Conheça a vogal neutra e relaxada chamada schwa, como no inglês 'about' e no alemão 'bitte'.",
+     "p": [
+      "O schwa é a vogal mais frequente do inglês: o 'a' de 'about' e o 'e' de 'taken'.",
+      "Para fazer, relaxe tudo: mandíbula um pouco aberta, língua em repouso no centro, lábios neutros.",
+      "Ele aparece em sílabas átonas, como no alemão 'bitte' e no francês 'le'; repare como é leve."
+     ],
+     "q": "Você sabia que um som tão pequeno e relaxado é tão comum em muitas línguas?",
+     "c": "Diga o inglês 'about', 'banana' e 'sofa', deixando as vogais átonas curtas e preguiçosas, como um suspiro."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lip sounds: p, b, m",
+     "g": "Learn to close both lips for p, b and m, and feel the difference between the three.",
+     "p": [
+      "All three start with the same move: both lips press together and block the air completely.",
+      "For p the voice is off and the lips pop open; for b the voice buzzes as they open.",
+      "For m the lips stay closed and the air flows out through your nose, with a gentle hum."
+     ],
+     "q": "Which of these three sounds do you think babies say first, and why?",
+     "c": "Say 'pa, ba, ma' ten times with a fingertip on your throat, feeling where the buzz starts."
+    },
+    "de": {
+     "t": "Lippenlaute: p, b, m",
+     "g": "Lerne, für p, b und m beide Lippen zu schließen, und spüre den Unterschied zwischen den dreien.",
+     "p": [
+      "Alle drei beginnen gleich: Beide Lippen pressen sich zusammen und stoppen die Luft vollständig.",
+      "Beim p ist die Stimme aus und die Lippen springen auf; beim b summt die Stimme beim Öffnen mit.",
+      "Beim m bleiben die Lippen zu und die Luft strömt durch die Nase, mit einem sanften Summen."
+     ],
+     "q": "Welchen dieser drei Laute sagen Babys wohl zuerst, und warum?",
+     "c": "Sag zehnmal „pa, ba, ma“ mit einem Finger am Hals und spür, wo das Summen beginnt."
+    },
+    "es": {
+     "t": "Sonidos de labios: p, b, m",
+     "g": "Aprende a cerrar los dos labios para p, b y m, y siente la diferencia entre los tres.",
+     "p": [
+      "Los tres empiezan igual: los dos labios se juntan y bloquean el aire por completo.",
+      "En la p la voz está apagada y los labios se abren de golpe; en la b la voz vibra al abrirse.",
+      "En la m los labios siguen cerrados y el aire sale por la nariz, con un zumbido suave."
+     ],
+     "q": "¿Cuál de estos tres sonidos crees que dicen primero los bebés, y por qué?",
+     "c": "Di 'pa, ba, ma' diez veces con un dedo en la garganta, notando dónde empieza la vibración."
+    },
+    "fr": {
+     "t": "Les sons des lèvres : p, b, m",
+     "g": "Apprends à fermer les deux lèvres pour p, b et m, et sens la différence entre les trois.",
+     "p": [
+      "Les trois commencent pareil : les lèvres se serrent et bloquent complètement l'air.",
+      "Pour p, la voix est éteinte et les lèvres s'ouvrent d'un coup ; pour b, la voix vibre à l'ouverture.",
+      "Pour m, les lèvres restent fermées et l'air sort par le nez, avec un léger bourdonnement."
+     ],
+     "q": "Lequel de ces trois sons les bébés disent-ils en premier, à ton avis, et pourquoi ?",
+     "c": "Dis « pa, ba, ma » dix fois, un doigt sur la gorge, en sentant où commence la vibration."
+    },
+    "it": {
+     "t": "Suoni delle labbra: p, b, m",
+     "g": "Impara a chiudere le labbra per p, b e m e senti la differenza tra i tre.",
+     "p": [
+      "Tutti e tre iniziano allo stesso modo: le labbra si chiudono e bloccano del tutto l'aria.",
+      "Nella p la voce è spenta e le labbra si aprono di scatto; nella b la voce vibra mentre si aprono.",
+      "Nella m le labbra restano chiuse e l'aria esce dal naso, con un leggero ronzio."
+     ],
+     "q": "Secondo te quale di questi tre suoni dicono per primo i bambini piccoli, e perché?",
+     "c": "Di' 'pa, ba, ma' dieci volte con un dito sulla gola, sentendo dove comincia la vibrazione."
+    },
+    "pt": {
+     "t": "Sons dos lábios: p, b, m",
+     "g": "Aprende a fechar os dois lábios para p, b e m, e sente a diferença entre os três.",
+     "p": [
+      "Os três começam igual: os lábios juntam-se e bloqueiam o ar por completo.",
+      "No p a voz está desligada e os lábios abrem de repente; no b a voz vibra quando abrem.",
+      "No m os lábios ficam fechados e o ar sai pelo nariz, com um zumbido suave."
+     ],
+     "q": "Qual destes três sons achas que os bebés dizem primeiro, e porquê?",
+     "c": "Diz 'pa, ba, ma' dez vezes com um dedo na garganta, sentindo onde começa a vibração."
+    },
+    "pt_BR": {
+     "t": "Sons dos lábios: p, b, m",
+     "g": "Aprenda a fechar os dois lábios para p, b e m, e sinta a diferença entre os três.",
+     "p": [
+      "Os três começam igual: os lábios se juntam e bloqueiam o ar por completo.",
+      "No p a voz está desligada e os lábios abrem de repente; no b a voz vibra quando eles abrem.",
+      "No m os lábios ficam fechados e o ar sai pelo nariz, com um zumbido suave."
+     ],
+     "q": "Qual desses três sons você acha que os bebês falam primeiro, e por quê?",
+     "c": "Diga 'pa, ba, ma' dez vezes com um dedo na garganta, sentindo onde começa a vibração."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The little puff of air",
+     "g": "Discover the puff of air after p, t and k in English and German, missing in Spanish, French and Italian.",
+     "p": [
+      "In English and German, p, t and k at the start of a stressed syllable come with a small puff: 'pen', 'Tag'.",
+      "In Spanish, French, Italian and Portuguese the same letters have no puff, so they sound softer and crisper.",
+      "Without the puff, an English 'pin' can sound like 'bin' to native ears, so the puff matters."
+     ],
+     "q": "Which languages do you speak, and do their p, t and k have a puff or not?",
+     "c": "Hold your palm close to your mouth and say 'pie, tie, kite'; then Spanish 'pan, tan, can' without a puff."
+    },
+    "de": {
+     "t": "Der kleine Lufthauch",
+     "g": "Entdecke den Hauch nach p, t, k im Deutschen und Englischen, der im Spanischen und Italienischen fehlt.",
+     "p": [
+      "Im Deutschen und Englischen kommen p, t, k am Anfang betonter Silben mit Hauch: „Pass“, „Tag“, 'pen'.",
+      "Im Spanischen, Französischen, Italienischen und Portugiesischen fehlt der Hauch, das klingt weicher und knapper.",
+      "Ohne Hauch kann ein deutsches „Tank“ fast wie „Dank“ klingen, darum ist der Hauch wichtig."
+     ],
+     "q": "Welche Sprachen sprichst du, und haben ihre p, t und k einen Hauch oder nicht?",
+     "c": "Halte die Handfläche vor den Mund und sag „Post, Tee, Kuh“; dann spanisch 'pan, tan, can' ohne Hauch."
+    },
+    "es": {
+     "t": "El pequeño soplo de aire",
+     "g": "Descubre el soplo tras p, t y k en inglés y alemán, que no existe en español, francés ni italiano.",
+     "p": [
+      "En inglés y alemán, p, t y k al inicio de sílaba tónica llevan un soplito: 'pen', 'Tag'.",
+      "En español, francés, italiano y portugués esas letras no llevan soplo, y suenan más suaves y secas.",
+      "Sin el soplo, un 'pin' inglés puede sonarle a un nativo como 'bin', así que el soplo importa."
+     ],
+     "q": "¿Qué idiomas hablas y sus p, t y k llevan soplo o no?",
+     "c": "Pon la palma cerca de la boca y di en inglés 'pie, tie, kite'; luego 'pan, tan, can' sin soplo."
+    },
+    "fr": {
+     "t": "Le petit souffle d'air",
+     "g": "Découvre le souffle après p, t et k en anglais et en allemand, absent en français, espagnol et italien.",
+     "p": [
+      "En anglais et en allemand, p, t et k en début de syllabe accentuée ont un petit souffle : 'pen', 'Tag'.",
+      "En français, espagnol, italien et portugais, ces lettres n'ont pas de souffle et sonnent plus nettes.",
+      "Sans ce souffle, un 'pin' anglais peut sonner comme 'bin' pour une oreille native : il compte vraiment."
+     ],
+     "q": "Quelles langues parles-tu, et leurs p, t, k ont-ils un souffle ou non ?",
+     "c": "Mets ta paume devant ta bouche et dis 'pie, tie, kite' en anglais, puis « pain, temps, quand » sans souffle."
+    },
+    "it": {
+     "t": "Il piccolo soffio d'aria",
+     "g": "Scopri il soffio dopo p, t e k in inglese e tedesco, che manca in italiano, spagnolo e francese.",
+     "p": [
+      "In inglese e tedesco p, t e k all'inizio di sillaba accentata hanno un piccolo soffio: 'pen', 'Tag'.",
+      "In italiano, spagnolo, francese e portoghese queste lettere non hanno soffio e suonano più asciutte.",
+      "Senza soffio, un 'pin' inglese può sembrare 'bin' a un madrelingua, quindi il soffio conta."
+     ],
+     "q": "Quali lingue parli, e le loro p, t e k hanno il soffio oppure no?",
+     "c": "Tieni il palmo vicino alla bocca e di' in inglese 'pie, tie, kite'; poi 'pane, tana, cane' senza soffio."
+    },
+    "pt": {
+     "t": "O pequeno sopro de ar",
+     "g": "Descobre o sopro depois de p, t e k em inglês e alemão, que não existe em português, espanhol ou francês.",
+     "p": [
+      "Em inglês e alemão, p, t e k no início de sílaba tónica levam um pequeno sopro: 'pen', 'Tag'.",
+      "Em português, espanhol, francês e italiano estas letras não têm sopro e soam mais secas.",
+      "Sem o sopro, um 'pin' inglês pode soar como 'bin' a um nativo, por isso o sopro importa."
+     ],
+     "q": "Que línguas falas, e os seus p, t e k têm sopro ou não?",
+     "c": "Põe a palma perto da boca e diz em inglês 'pie, tie, kite'; depois 'pão, tão, cão' sem sopro."
+    },
+    "pt_BR": {
+     "t": "O pequeno sopro de ar",
+     "g": "Descubra o sopro depois de p, t e k em inglês e alemão, que não existe em português, espanhol ou francês.",
+     "p": [
+      "Em inglês e alemão, p, t e k no início de sílaba tônica levam um pequeno sopro: 'pen', 'Tag'.",
+      "Em português, espanhol, francês e italiano essas letras não têm sopro e soam mais secas.",
+      "Sem o sopro, um 'pin' em inglês pode soar como 'bin' para um nativo, por isso o sopro importa."
+     ],
+     "q": "Quais idiomas você fala, e os p, t e k deles têm sopro ou não?",
+     "c": "Coloque a palma perto da boca e diga em inglês 'pie, tie, kite'; depois 'pão, tão, cão' sem sopro."
+    }
+   }
+  }
+ ]
+}

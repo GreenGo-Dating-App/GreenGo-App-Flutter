@@ -1,0 +1,835 @@
+{
+ "topic": "running",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people love running",
+     "g": "Discover the many reasons people around the world enjoy running.",
+     "p": [
+      "Running boosts fitness and energy with nothing more than a pair of shoes.",
+      "Fresh air and a steady rhythm help many people clear their heads.",
+      "Runners often find friendly communities and a simple joy in moving."
+     ],
+     "q": "What draws you to running: fitness, fresh air, calm or something else?",
+     "c": "Write down three reasons you would like to run, then keep the note somewhere visible."
+    },
+    "de": {
+     "t": "Warum Menschen das Laufen lieben",
+     "g": "Entdecke die vielen Gründe, warum Menschen weltweit gern laufen.",
+     "p": [
+      "Laufen stärkt Fitness und Energie, und du brauchst dafür nur ein Paar Schuhe.",
+      "Frische Luft und ein gleichmäßiger Rhythmus helfen vielen, den Kopf freizubekommen.",
+      "Läufer finden oft eine freundliche Gemeinschaft und pure Freude an der Bewegung."
+     ],
+     "q": "Was reizt dich am Laufen: Fitness, frische Luft, Ruhe oder etwas anderes?",
+     "c": "Schreib drei Gründe auf, warum du laufen möchtest, und leg den Zettel gut sichtbar hin."
+    },
+    "es": {
+     "t": "Por qué a la gente le encanta correr",
+     "g": "Descubre las muchas razones por las que la gente de todo el mundo disfruta corriendo.",
+     "p": [
+      "Correr mejora la forma física y la energía, y solo necesitas unas zapatillas.",
+      "El aire libre y un ritmo constante ayudan a muchas personas a despejar la mente.",
+      "Quien corre suele encontrar comunidades amables y una alegría sencilla al moverse."
+     ],
+     "q": "¿Qué te atrae de correr: la forma física, el aire libre, la calma u otra cosa?",
+     "c": "Escribe tres razones por las que te gustaría correr y deja la nota en un lugar visible."
+    },
+    "fr": {
+     "t": "Pourquoi on aime tant courir",
+     "g": "Découvre les nombreuses raisons pour lesquelles on aime courir partout dans le monde.",
+     "p": [
+      "La course améliore la forme et l'énergie, avec juste une paire de chaussures.",
+      "Le grand air et un rythme régulier aident beaucoup de gens à se vider la tête.",
+      "Les coureurs trouvent souvent une communauté chaleureuse et une joie simple à bouger."
+     ],
+     "q": "Qu'est-ce qui t'attire dans la course : la forme, le grand air, le calme ou autre chose ?",
+     "c": "Note trois raisons pour lesquelles tu aimerais courir et garde ce mot bien en vue."
+    },
+    "it": {
+     "t": "Perché la gente ama correre",
+     "g": "Scopri i tanti motivi per cui le persone in tutto il mondo amano correre.",
+     "p": [
+      "Correre migliora forma ed energia, e basta un paio di scarpe.",
+      "L'aria aperta e un ritmo costante aiutano molti a schiarirsi le idee.",
+      "Chi corre trova spesso comunità accoglienti e una gioia semplice nel muoversi."
+     ],
+     "q": "Cosa ti attira della corsa: la forma fisica, l'aria aperta, la calma o altro?",
+     "c": "Scrivi tre motivi per cui vorresti correre e tieni il foglietto in vista."
+    },
+    "pt": {
+     "t": "Porque é que as pessoas adoram correr",
+     "g": "Descobre as muitas razões pelas quais as pessoas em todo o mundo gostam de correr.",
+     "p": [
+      "Correr melhora a forma física e a energia, e basta um par de sapatilhas.",
+      "O ar livre e um ritmo regular ajudam muitas pessoas a arejar a cabeça.",
+      "Quem corre encontra muitas vezes comunidades simpáticas e uma alegria simples em mexer-se."
+     ],
+     "q": "O que te atrai na corrida: a forma física, o ar livre, a calma ou outra coisa?",
+     "c": "Escreve três razões pelas quais gostavas de correr e deixa o papel num sítio visível."
+    },
+    "pt_BR": {
+     "t": "Por que as pessoas amam correr",
+     "g": "Descubra os muitos motivos pelos quais as pessoas no mundo todo gostam de correr.",
+     "p": [
+      "Correr melhora o condicionamento e a energia, e você só precisa de um tênis.",
+      "O ar livre e um ritmo constante ajudam muita gente a esvaziar a cabeça.",
+      "Corredores costumam encontrar comunidades acolhedoras e uma alegria simples em se mexer."
+     ],
+     "q": "O que te atrai na corrida: condicionamento, ar livre, tranquilidade ou outra coisa?",
+     "c": "Anote três motivos pelos quais você gostaria de correr e deixe o papel num lugar visível."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your running story so far",
+     "g": "Look back at your past running experiences and decide what you want now.",
+     "p": [
+      "Many people remember running at school, in sports or chasing a bus.",
+      "Old experiences, good or bad, do not decide what running can be for you today.",
+      "A clear personal reason makes it easier to keep going later."
+     ],
+     "q": "What is your earliest memory of running, and how did it feel?",
+     "c": "Write one sentence that starts with: This time, I want running to be..."
+    },
+    "de": {
+     "t": "Deine bisherige Laufgeschichte",
+     "g": "Blick auf deine Lauferfahrungen zurück und entscheide, was du dir jetzt wünschst.",
+     "p": [
+      "Viele erinnern sich ans Laufen in der Schule, im Sportverein oder hinter dem Bus her.",
+      "Alte Erfahrungen, ob gut oder schlecht, bestimmen nicht, was Laufen heute für dich sein kann.",
+      "Ein klarer persönlicher Grund macht es später leichter, dranzubleiben."
+     ],
+     "q": "Was ist deine früheste Erinnerung ans Laufen, und wie hat sie sich angefühlt?",
+     "c": "Schreib einen Satz, der so beginnt: Diesmal soll Laufen für mich ... sein."
+    },
+    "es": {
+     "t": "Tu historia con el running",
+     "g": "Repasa tus experiencias corriendo y decide qué quieres de ello ahora.",
+     "p": [
+      "Mucha gente recuerda correr en el colegio, en algún deporte o detrás del autobús.",
+      "Las experiencias pasadas, buenas o malas, no deciden lo que correr puede ser para ti hoy.",
+      "Tener un motivo personal claro hace más fácil seguir adelante más tarde."
+     ],
+     "q": "¿Cuál es tu primer recuerdo corriendo y cómo te sentiste?",
+     "c": "Escribe una frase que empiece así: Esta vez quiero que correr sea..."
+    },
+    "fr": {
+     "t": "Ton histoire avec la course",
+     "g": "Repense à tes expériences de course et décide ce que tu en attends aujourd'hui.",
+     "p": [
+      "Beaucoup se souviennent de courir à l'école, au sport ou derrière un bus.",
+      "Les souvenirs, bons ou mauvais, ne décident pas de ce que la course peut être pour toi aujourd'hui.",
+      "Une raison personnelle claire aide à persévérer plus tard."
+     ],
+     "q": "Quel est ton plus ancien souvenir de course, et qu'as-tu ressenti ?",
+     "c": "Écris une phrase qui commence par : Cette fois, je veux que courir soit..."
+    },
+    "it": {
+     "t": "La tua storia con la corsa",
+     "g": "Ripensa alle tue esperienze di corsa e decidi cosa vuoi adesso.",
+     "p": [
+      "Molti ricordano di aver corso a scuola, in uno sport o dietro all'autobus.",
+      "Le esperienze passate, belle o brutte, non decidono cosa può essere la corsa per te oggi.",
+      "Un motivo personale chiaro rende più facile continuare in futuro."
+     ],
+     "q": "Qual è il tuo primo ricordo legato alla corsa e come ti sei sentito?",
+     "c": "Scrivi una frase che inizi così: Questa volta voglio che correre sia..."
+    },
+    "pt": {
+     "t": "A tua história com a corrida",
+     "g": "Recorda as tuas experiências a correr e decide o que queres agora.",
+     "p": [
+      "Muita gente lembra-se de correr na escola, num desporto ou atrás do autocarro.",
+      "As experiências antigas, boas ou más, não decidem o que a corrida pode ser para ti hoje.",
+      "Um motivo pessoal claro torna mais fácil continuar mais tarde."
+     ],
+     "q": "Qual é a tua memória mais antiga de correr e como te sentiste?",
+     "c": "Escreve uma frase que comece assim: Desta vez, quero que correr seja..."
+    },
+    "pt_BR": {
+     "t": "Sua história com a corrida",
+     "g": "Relembre suas experiências correndo e decida o que você quer agora.",
+     "p": [
+      "Muita gente se lembra de correr na escola, em algum esporte ou atrás do ônibus.",
+      "Experiências antigas, boas ou ruins, não decidem o que a corrida pode ser para você hoje.",
+      "Um motivo pessoal claro facilita continuar mais para frente."
+     ],
+     "q": "Qual é sua lembrança mais antiga de correr e como você se sentiu?",
+     "c": "Escreva uma frase que comece assim: Desta vez, quero que correr seja..."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Walking before running",
+     "g": "See why brisk walking is a great first step toward running.",
+     "p": [
+      "Brisk walking gets your legs, heart and lungs used to regular movement.",
+      "It is gentle on joints and easy to fit into any day.",
+      "A short daily walk builds the habit before you add running."
+     ],
+     "q": "Where could you take a brisk 20-minute walk near your home?",
+     "c": "Take a brisk walk today, fast enough to feel warm but still able to talk."
+    },
+    "de": {
+     "t": "Erst gehen, dann laufen",
+     "g": "Erfahre, warum zügiges Gehen ein idealer erster Schritt zum Laufen ist.",
+     "p": [
+      "Zügiges Gehen gewöhnt Beine, Herz und Lunge an regelmäßige Bewegung.",
+      "Es schont die Gelenke und passt in jeden Tag.",
+      "Ein kurzer täglicher Spaziergang baut die Gewohnheit auf, bevor du laufen gehst."
+     ],
+     "q": "Wo könntest du in deiner Nähe 20 Minuten zügig gehen?",
+     "c": "Geh heute zügig spazieren: so schnell, dass dir warm wird, du aber noch reden kannst."
+    },
+    "es": {
+     "t": "Caminar antes de correr",
+     "g": "Descubre por qué caminar a paso ligero es un gran primer paso para correr.",
+     "p": [
+      "Caminar rápido acostumbra a piernas, corazón y pulmones al movimiento regular.",
+      "Es suave con las articulaciones y fácil de encajar en cualquier día.",
+      "Un paseo diario corto crea el hábito antes de empezar a correr."
+     ],
+     "q": "¿Dónde podrías dar un paseo rápido de 20 minutos cerca de casa?",
+     "c": "Da hoy un paseo rápido: que entres en calor pero aún puedas hablar."
+    },
+    "fr": {
+     "t": "Marcher avant de courir",
+     "g": "Découvre pourquoi la marche rapide est une excellente première étape vers la course.",
+     "p": [
+      "La marche rapide habitue tes jambes, ton cœur et tes poumons à bouger régulièrement.",
+      "Elle ménage les articulations et se glisse facilement dans n'importe quelle journée.",
+      "Une courte marche quotidienne installe l'habitude avant d'ajouter la course."
+     ],
+     "q": "Où pourrais-tu faire une marche rapide de 20 minutes près de chez toi ?",
+     "c": "Fais une marche rapide aujourd'hui : assez vite pour avoir chaud, tout en pouvant parler."
+    },
+    "it": {
+     "t": "Camminare prima di correre",
+     "g": "Scopri perché la camminata veloce è un ottimo primo passo verso la corsa.",
+     "p": [
+      "Camminare a passo svelto abitua gambe, cuore e polmoni al movimento regolare.",
+      "È delicata con le articolazioni e facile da inserire in ogni giornata.",
+      "Una breve camminata quotidiana crea l'abitudine prima di iniziare a correre."
+     ],
+     "q": "Dove potresti fare una camminata veloce di 20 minuti vicino a casa?",
+     "c": "Fai oggi una camminata veloce: abbastanza da scaldarti, ma riuscendo ancora a parlare."
+    },
+    "pt": {
+     "t": "Caminhar antes de correr",
+     "g": "Percebe porque é que caminhar a passo rápido é um ótimo primeiro passo para correr.",
+     "p": [
+      "Caminhar depressa habitua as pernas, o coração e os pulmões ao movimento regular.",
+      "É suave para as articulações e fácil de encaixar em qualquer dia.",
+      "Uma caminhada curta diária cria o hábito antes de começares a correr."
+     ],
+     "q": "Onde poderias fazer uma caminhada rápida de 20 minutos perto de casa?",
+     "c": "Faz hoje uma caminhada rápida: o suficiente para aquecer, mas conseguindo falar."
+    },
+    "pt_BR": {
+     "t": "Caminhar antes de correr",
+     "g": "Entenda por que a caminhada rápida é um ótimo primeiro passo para correr.",
+     "p": [
+      "Caminhar rápido acostuma pernas, coração e pulmões ao movimento regular.",
+      "É suave para as articulações e fácil de encaixar em qualquer dia.",
+      "Uma caminhada curta diária cria o hábito antes de você começar a correr."
+     ],
+     "q": "Onde você poderia fazer uma caminhada rápida de 20 minutos perto de casa?",
+     "c": "Faça hoje uma caminhada rápida: o bastante para esquentar, mas ainda conseguindo conversar."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The walk-run method",
+     "g": "Learn how mixing short runs with walking breaks makes starting easy.",
+     "p": [
+      "You alternate, for example, one minute of easy running with two minutes of walking.",
+      "Walking breaks let you recover, so the whole session feels comfortable.",
+      "Over the weeks the running parts grow and the walks shrink."
+     ],
+     "q": "Which mix sounds right for you to start: 30 seconds, one minute or two minutes of running?",
+     "c": "Try 20 minutes of walk-run today, using a gentle ratio that leaves you smiling."
+    },
+    "de": {
+     "t": "Die Geh-Lauf-Methode",
+     "g": "Lerne, wie kurze Laufabschnitte mit Gehpausen den Einstieg leicht machen.",
+     "p": [
+      "Du wechselst zum Beispiel eine Minute lockeres Laufen mit zwei Minuten Gehen ab.",
+      "Die Gehpausen geben dir Erholung, so bleibt die ganze Einheit angenehm.",
+      "Mit den Wochen werden die Laufphasen länger und die Gehpausen kürzer."
+     ],
+     "q": "Welche Mischung passt für deinen Start: 30 Sekunden, eine oder zwei Minuten Laufen?",
+     "c": "Probier heute 20 Minuten Geh-Lauf in einem sanften Verhältnis, bei dem du noch lächelst."
+    },
+    "es": {
+     "t": "El método correr-caminar",
+     "g": "Aprende cómo combinar tramos cortos de carrera con pausas caminando facilita empezar.",
+     "p": [
+      "Alternas, por ejemplo, un minuto de carrera suave con dos minutos caminando.",
+      "Las pausas caminando te dejan recuperar y toda la sesión resulta cómoda.",
+      "Con las semanas, los tramos corriendo crecen y los de caminar se acortan."
+     ],
+     "q": "¿Qué combinación te parece buena para empezar: 30 segundos, uno o dos minutos corriendo?",
+     "c": "Prueba hoy 20 minutos de correr-caminar con una proporción suave que te deje sonriendo."
+    },
+    "fr": {
+     "t": "La méthode course-marche",
+     "g": "Apprends comment alterner course courte et marche rend le démarrage facile.",
+     "p": [
+      "Tu alternes par exemple une minute de course tranquille et deux minutes de marche.",
+      "Les pauses marchées te laissent récupérer, et toute la séance reste agréable.",
+      "Au fil des semaines, la course s'allonge et la marche raccourcit."
+     ],
+     "q": "Quel mélange te semble bon pour commencer : 30 secondes, une ou deux minutes de course ?",
+     "c": "Essaie 20 minutes de course-marche aujourd'hui, avec un rapport doux qui te laisse le sourire."
+    },
+    "it": {
+     "t": "Il metodo corsa-camminata",
+     "g": "Impara come alternare brevi tratti di corsa e pause camminando rende facile iniziare.",
+     "p": [
+      "Alterni, per esempio, un minuto di corsa leggera e due minuti di camminata.",
+      "Le pause camminando ti fanno recuperare e l'allenamento resta piacevole.",
+      "Con le settimane i tratti di corsa si allungano e le camminate si accorciano."
+     ],
+     "q": "Quale combinazione ti sembra giusta per iniziare: 30 secondi, uno o due minuti di corsa?",
+     "c": "Prova oggi 20 minuti di corsa-camminata con un rapporto leggero che ti lasci il sorriso."
+    },
+    "pt": {
+     "t": "O método correr-caminhar",
+     "g": "Aprende como alternar corridas curtas com pausas a caminhar torna o início fácil.",
+     "p": [
+      "Alternas, por exemplo, um minuto de corrida leve com dois minutos a caminhar.",
+      "As pausas a caminhar deixam-te recuperar e a sessão toda fica confortável.",
+      "Com as semanas, os períodos a correr crescem e os de caminhada encurtam."
+     ],
+     "q": "Que combinação te parece boa para começar: 30 segundos, um ou dois minutos a correr?",
+     "c": "Experimenta hoje 20 minutos de correr-caminhar com uma proporção suave que te deixe a sorrir."
+    },
+    "pt_BR": {
+     "t": "O método corre-caminha",
+     "g": "Aprenda como alternar corridas curtas e pausas caminhando deixa o começo fácil.",
+     "p": [
+      "Você alterna, por exemplo, um minuto de corrida leve com dois minutos de caminhada.",
+      "As pausas caminhando deixam você se recuperar e o treino todo fica confortável.",
+      "Com as semanas, os trechos correndo aumentam e as caminhadas diminuem."
+     ],
+     "q": "Que combinação parece boa para você começar: 30 segundos, um ou dois minutos correndo?",
+     "c": "Experimente hoje 20 minutos de corre-caminha numa proporção leve que te deixe sorrindo."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing running shoes",
+     "g": "Learn what matters most when you pick a pair of running shoes.",
+     "p": [
+      "Comfort comes first: the shoe should feel good from the very first steps.",
+      "Leave about a thumb's width of space in front of your longest toe.",
+      "Try shoes later in the day, with your running socks, and jog a few steps."
+     ],
+     "q": "What do you notice first when you try on a shoe: fit, cushioning or weight?",
+     "c": "Check the shoes you own: do they feel comfortable for a short jog around the room?"
+    },
+    "de": {
+     "t": "Laufschuhe auswählen",
+     "g": "Erfahre, worauf es beim Kauf von Laufschuhen wirklich ankommt.",
+     "p": [
+      "Komfort zuerst: Der Schuh sollte sich vom ersten Schritt an gut anfühlen.",
+      "Lass vor dem längsten Zeh etwa eine Daumenbreite Platz.",
+      "Probier Schuhe eher nachmittags, mit deinen Laufsocken, und trab ein paar Schritte."
+     ],
+     "q": "Worauf achtest du beim Anprobieren zuerst: Passform, Dämpfung oder Gewicht?",
+     "c": "Teste deine vorhandenen Schuhe: Fühlen sie sich bei ein paar Trabschritten bequem an?"
+    },
+    "es": {
+     "t": "Elegir zapatillas para correr",
+     "g": "Aprende qué es lo más importante al elegir unas zapatillas de running.",
+     "p": [
+      "La comodidad es lo primero: deben sentarte bien desde los primeros pasos.",
+      "Deja más o menos el ancho de un pulgar delante del dedo más largo.",
+      "Pruébatelas por la tarde, con tus calcetines de correr, y trota unos pasos."
+     ],
+     "q": "¿En qué te fijas primero al probarte unas zapatillas: ajuste, amortiguación o peso?",
+     "c": "Revisa las zapatillas que tienes: ¿son cómodas al trotar un poco por la habitación?"
+    },
+    "fr": {
+     "t": "Choisir ses chaussures de course",
+     "g": "Apprends ce qui compte vraiment quand tu choisis des chaussures de course.",
+     "p": [
+      "Le confort d'abord : la chaussure doit être agréable dès les premiers pas.",
+      "Laisse environ la largeur d'un pouce devant ton orteil le plus long.",
+      "Essaie-les plutôt en fin de journée, avec tes chaussettes de course, et trottine un peu."
+     ],
+     "q": "Que remarques-tu en premier en essayant une chaussure : le maintien, l'amorti ou le poids ?",
+     "c": "Teste les chaussures que tu as : sont-elles confortables en trottinant dans la pièce ?"
+    },
+    "it": {
+     "t": "Scegliere le scarpe da corsa",
+     "g": "Scopri cosa conta davvero quando scegli un paio di scarpe da running.",
+     "p": [
+      "Prima di tutto il comfort: la scarpa deve stare bene fin dai primi passi.",
+      "Lascia circa la larghezza di un pollice davanti al dito più lungo.",
+      "Provale nel pomeriggio, con i calzini da corsa, e fai qualche passo di corsa."
+     ],
+     "q": "Cosa noti per primo quando provi una scarpa: calzata, ammortizzazione o peso?",
+     "c": "Controlla le scarpe che hai: sono comode se corricchi un po' per la stanza?"
+    },
+    "pt": {
+     "t": "Escolher sapatilhas de corrida",
+     "g": "Aprende o que mais importa quando escolhes um par de sapatilhas de corrida.",
+     "p": [
+      "O conforto vem primeiro: a sapatilha deve sentir-se bem desde os primeiros passos.",
+      "Deixa mais ou menos a largura de um polegar à frente do dedo mais comprido.",
+      "Experimenta ao fim do dia, com as meias de corrida, e dá uns passos a trotar."
+     ],
+     "q": "O que reparas primeiro ao experimentar uma sapatilha: o ajuste, o amortecimento ou o peso?",
+     "c": "Verifica as sapatilhas que tens: são confortáveis a trotar um pouco pela sala?"
+    },
+    "pt_BR": {
+     "t": "Escolhendo tênis de corrida",
+     "g": "Aprenda o que mais importa na hora de escolher um tênis de corrida.",
+     "p": [
+      "Conforto em primeiro lugar: o tênis deve ficar bom desde os primeiros passos.",
+      "Deixe mais ou menos a largura de um polegar na frente do dedo mais comprido.",
+      "Experimente no fim do dia, com a meia de corrida, e dê uns passos trotando."
+     ],
+     "q": "O que você nota primeiro ao experimentar um tênis: ajuste, amortecimento ou peso?",
+     "c": "Confira os tênis que você tem: eles ficam confortáveis trotando um pouco pela sala?"
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comfortable running clothes",
+     "g": "Find out which simple clothes keep you comfortable on a run.",
+     "p": [
+      "Breathable, quick-drying fabrics move sweat away from your skin.",
+      "Cotton soaks up sweat and stays wet, which can feel heavy and rub.",
+      "Light layers you can remove are easier than one thick top."
+     ],
+     "q": "Which of your clothes already feel good to move and sweat in?",
+     "c": "Lay out a full running outfit tonight so it is ready for your next session."
+    },
+    "de": {
+     "t": "Bequeme Laufkleidung",
+     "g": "Finde heraus, mit welcher einfachen Kleidung du dich beim Laufen wohlfühlst.",
+     "p": [
+      "Atmungsaktive, schnell trocknende Stoffe leiten Schweiß von der Haut weg.",
+      "Baumwolle saugt Schweiß auf und bleibt nass, das fühlt sich schwer an und kann scheuern.",
+      "Dünne Schichten zum Ausziehen sind praktischer als ein dickes Oberteil."
+     ],
+     "q": "Welche deiner Kleidungsstücke fühlen sich beim Bewegen und Schwitzen schon gut an?",
+     "c": "Leg dir heute Abend ein komplettes Laufoutfit bereit, fertig für die nächste Einheit."
+    },
+    "es": {
+     "t": "Ropa cómoda para correr",
+     "g": "Descubre qué ropa sencilla te mantiene cómodo mientras corres.",
+     "p": [
+      "Los tejidos transpirables y de secado rápido alejan el sudor de la piel.",
+      "El algodón absorbe el sudor y sigue mojado, pesa y puede rozar.",
+      "Varias capas finas que puedas quitarte son mejores que una prenda gruesa."
+     ],
+     "q": "¿Qué prendas tuyas ya resultan cómodas para moverte y sudar?",
+     "c": "Prepara esta noche un conjunto completo para correr, listo para tu próxima salida."
+    },
+    "fr": {
+     "t": "Des vêtements de course confortables",
+     "g": "Découvre quels vêtements simples te gardent à l'aise pendant la course.",
+     "p": [
+      "Les tissus respirants à séchage rapide éloignent la transpiration de la peau.",
+      "Le coton absorbe la sueur et reste mouillé, il devient lourd et peut frotter.",
+      "Plusieurs couches fines qu'on retire sont plus pratiques qu'un haut épais."
+     ],
+     "q": "Lesquels de tes vêtements sont déjà agréables pour bouger et transpirer ?",
+     "c": "Prépare ce soir une tenue de course complète, prête pour ta prochaine sortie."
+    },
+    "it": {
+     "t": "Abbigliamento comodo per correre",
+     "g": "Scopri quali vestiti semplici ti fanno stare comodo quando corri.",
+     "p": [
+      "I tessuti traspiranti e ad asciugatura rapida allontanano il sudore dalla pelle.",
+      "Il cotone assorbe il sudore e resta bagnato, diventa pesante e può irritare.",
+      "Strati leggeri da togliere sono più pratici di una maglia pesante."
+     ],
+     "q": "Quali dei tuoi vestiti sono già comodi per muoverti e sudare?",
+     "c": "Prepara stasera un completo da corsa, pronto per la prossima uscita."
+    },
+    "pt": {
+     "t": "Roupa confortável para correr",
+     "g": "Descobre que roupa simples te mantém confortável a correr.",
+     "p": [
+      "Tecidos respiráveis e de secagem rápida afastam o suor da pele.",
+      "O algodão absorve o suor e fica molhado, pesa e pode causar atrito.",
+      "Camadas leves que podes tirar são mais práticas do que uma peça grossa."
+     ],
+     "q": "Que peças tuas já são confortáveis para te mexeres e transpirares?",
+     "c": "Prepara esta noite um conjunto completo de corrida, pronto para a próxima saída."
+    },
+    "pt_BR": {
+     "t": "Roupas confortáveis para correr",
+     "g": "Descubra quais roupas simples deixam você confortável na corrida.",
+     "p": [
+      "Tecidos respiráveis e de secagem rápida afastam o suor da pele.",
+      "O algodão absorve o suor e fica molhado, pesa e pode assar a pele.",
+      "Camadas leves que você pode tirar são mais práticas que uma peça grossa."
+     ],
+     "q": "Quais roupas suas já são confortáveis para se mexer e suar?",
+     "c": "Separe hoje à noite uma roupa completa de corrida, pronta para o próximo treino."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding your conversational pace",
+     "g": "Learn to run easy enough to hold a conversation.",
+     "p": [
+      "At conversational pace you can speak full sentences without gasping.",
+      "Most beginner running happens at this relaxed, sustainable effort.",
+      "Going slower than you think often helps you run longer and enjoy it more."
+     ],
+     "q": "How would you describe your usual running effort: easy, medium or hard?",
+     "c": "On your next run, say a full sentence out loud; if you cannot, slow down or walk."
+    },
+    "de": {
+     "t": "Dein Plaudertempo finden",
+     "g": "Lerne, so locker zu laufen, dass du dich dabei unterhalten kannst.",
+     "p": [
+      "Im Plaudertempo sprichst du ganze Sätze, ohne nach Luft zu schnappen.",
+      "Der Großteil des Anfängertrainings findet bei diesem entspannten Tempo statt.",
+      "Langsamer als gedacht hilft oft, länger zu laufen und mehr Spaß zu haben."
+     ],
+     "q": "Wie würdest du deine übliche Laufanstrengung beschreiben: leicht, mittel oder hart?",
+     "c": "Sag beim nächsten Lauf einen ganzen Satz laut; klappt das nicht, werde langsamer oder geh."
+    },
+    "es": {
+     "t": "Encuentra tu ritmo de conversación",
+     "g": "Aprende a correr tan suave que puedas mantener una conversación.",
+     "p": [
+      "A ritmo de conversación puedes decir frases completas sin jadear.",
+      "La mayor parte del entrenamiento de principiante se hace a este esfuerzo relajado.",
+      "Ir más lento de lo que crees suele ayudarte a correr más tiempo y disfrutarlo."
+     ],
+     "q": "¿Cómo describirías tu esfuerzo habitual al correr: suave, medio o fuerte?",
+     "c": "En tu próxima salida di una frase completa en voz alta; si no puedes, baja el ritmo o camina."
+    },
+    "fr": {
+     "t": "Trouver ton allure conversation",
+     "g": "Apprends à courir assez doucement pour pouvoir discuter.",
+     "p": [
+      "À allure conversation, tu peux dire des phrases entières sans être essoufflé.",
+      "L'essentiel de l'entraînement débutant se fait à cet effort détendu.",
+      "Aller plus lentement que tu ne le penses aide souvent à courir plus longtemps avec plaisir."
+     ],
+     "q": "Comment décrirais-tu ton effort habituel en courant : facile, moyen ou dur ?",
+     "c": "À ta prochaine sortie, dis une phrase entière à voix haute ; sinon, ralentis ou marche."
+    },
+    "it": {
+     "t": "Trova il ritmo da chiacchiera",
+     "g": "Impara a correre così piano da riuscire a fare conversazione.",
+     "p": [
+      "A ritmo da chiacchiera riesci a dire frasi intere senza ansimare.",
+      "Gran parte dell'allenamento da principiante si fa a questo sforzo rilassato.",
+      "Andare più piano di quanto pensi spesso aiuta a correre più a lungo e con piacere."
+     ],
+     "q": "Come descriveresti il tuo sforzo abituale di corsa: facile, medio o duro?",
+     "c": "Nella prossima corsa di' una frase intera ad alta voce; se non ci riesci, rallenta o cammina."
+    },
+    "pt": {
+     "t": "Encontrar o ritmo de conversa",
+     "g": "Aprende a correr devagar o suficiente para conseguires conversar.",
+     "p": [
+      "No ritmo de conversa consegues dizer frases completas sem ficar ofegante.",
+      "A maior parte do treino de principiante faz-se neste esforço descontraído.",
+      "Ir mais devagar do que pensas ajuda muitas vezes a correr mais tempo e com mais prazer."
+     ],
+     "q": "Como descreverias o teu esforço habitual a correr: leve, médio ou forte?",
+     "c": "Na próxima corrida diz uma frase completa em voz alta; se não conseguires, abranda ou caminha."
+    },
+    "pt_BR": {
+     "t": "Encontrando o ritmo de conversa",
+     "g": "Aprenda a correr leve o bastante para conseguir bater papo.",
+     "p": [
+      "No ritmo de conversa você fala frases inteiras sem ficar ofegante.",
+      "A maior parte do treino de iniciante acontece nesse esforço tranquilo.",
+      "Ir mais devagar do que você imagina costuma ajudar a correr mais tempo e curtir mais."
+     ],
+     "q": "Como você descreveria seu esforço normal correndo: leve, médio ou forte?",
+     "c": "Na próxima corrida, fale uma frase inteira em voz alta; se não der, diminua ou caminhe."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warming up gently",
+     "g": "Learn a simple warm-up that eases your body into a run.",
+     "p": [
+      "Start with five minutes of brisk walking to raise your temperature.",
+      "Add a few easy moves like leg swings, ankle circles and arm circles.",
+      "Begin running slowly and let your pace find you over the first minutes."
+     ],
+     "q": "What do you usually do right before you start moving fast?",
+     "c": "Before your next run, walk briskly for five minutes and do ten gentle leg swings per side."
+    },
+    "de": {
+     "t": "Sanft aufwärmen",
+     "g": "Lerne ein einfaches Aufwärmen, das deinen Körper behutsam auf den Lauf vorbereitet.",
+     "p": [
+      "Beginne mit fünf Minuten zügigem Gehen, um warm zu werden.",
+      "Füge ein paar lockere Bewegungen hinzu: Beinschwingen, Fußkreisen, Armkreisen.",
+      "Lauf langsam los und lass dein Tempo in den ersten Minuten von selbst kommen."
+     ],
+     "q": "Was machst du normalerweise, bevor du dich schnell bewegst?",
+     "c": "Geh vor deinem nächsten Lauf fünf Minuten zügig und schwing jedes Bein zehnmal locker."
+    },
+    "es": {
+     "t": "Calentar con suavidad",
+     "g": "Aprende un calentamiento sencillo que prepara tu cuerpo para correr.",
+     "p": [
+      "Empieza con cinco minutos de caminata rápida para subir la temperatura.",
+      "Añade movimientos suaves como balanceos de piernas y círculos de tobillos y brazos.",
+      "Empieza a correr despacio y deja que el ritmo llegue solo en los primeros minutos."
+     ],
+     "q": "¿Qué sueles hacer justo antes de empezar a moverte rápido?",
+     "c": "Antes de tu próxima salida, camina rápido cinco minutos y haz diez balanceos suaves por pierna."
+    },
+    "fr": {
+     "t": "S'échauffer en douceur",
+     "g": "Apprends un échauffement simple qui prépare ton corps à courir.",
+     "p": [
+      "Commence par cinq minutes de marche rapide pour monter en température.",
+      "Ajoute quelques mouvements doux : balancés de jambes, cercles de chevilles et de bras.",
+      "Pars lentement et laisse ton allure venir d'elle-même pendant les premières minutes."
+     ],
+     "q": "Que fais-tu d'habitude juste avant de te mettre à bouger vite ?",
+     "c": "Avant ta prochaine sortie, marche vite cinq minutes et fais dix balancés doux par jambe."
+    },
+    "it": {
+     "t": "Riscaldarsi con calma",
+     "g": "Impara un riscaldamento semplice che prepara il corpo alla corsa.",
+     "p": [
+      "Inizia con cinque minuti di camminata veloce per alzare la temperatura.",
+      "Aggiungi qualche movimento leggero: slanci delle gambe, cerchi con caviglie e braccia.",
+      "Parti piano e lascia che il ritmo arrivi da solo nei primi minuti."
+     ],
+     "q": "Cosa fai di solito subito prima di iniziare a muoverti veloce?",
+     "c": "Prima della prossima corsa, cammina veloce per cinque minuti e fai dieci slanci leggeri per gamba."
+    },
+    "pt": {
+     "t": "Aquecer com calma",
+     "g": "Aprende um aquecimento simples que prepara o corpo para a corrida.",
+     "p": [
+      "Começa com cinco minutos de caminhada rápida para subir a temperatura.",
+      "Junta alguns movimentos leves: balanços de pernas, círculos com tornozelos e braços.",
+      "Começa a correr devagar e deixa o ritmo surgir nos primeiros minutos."
+     ],
+     "q": "O que costumas fazer logo antes de começares a mexer-te depressa?",
+     "c": "Antes da próxima corrida, caminha depressa cinco minutos e faz dez balanços leves por perna."
+    },
+    "pt_BR": {
+     "t": "Aquecendo com calma",
+     "g": "Aprenda um aquecimento simples que prepara o corpo para correr.",
+     "p": [
+      "Comece com cinco minutos de caminhada rápida para elevar a temperatura.",
+      "Inclua movimentos leves: balanço de pernas, círculos com tornozelos e braços.",
+      "Comece a correr devagar e deixe o ritmo aparecer nos primeiros minutos."
+     ],
+     "q": "O que você costuma fazer logo antes de começar a se mexer rápido?",
+     "c": "Antes da próxima corrida, caminhe rápido cinco minutos e faça dez balanços leves por perna."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooling down after a run",
+     "g": "Learn how to finish a run calmly instead of stopping suddenly.",
+     "p": [
+      "Slow to an easy jog, then a walk, for the last few minutes.",
+      "Let your breathing settle and your heart rate come down gradually.",
+      "A calm finish is a nice moment to notice how the run felt."
+     ],
+     "q": "How do you usually feel in the minutes right after exercise?",
+     "c": "End your next run with five minutes of walking and three slow, deep breaths."
+    },
+    "de": {
+     "t": "Abwärmen nach dem Lauf",
+     "g": "Lerne, deinen Lauf ruhig zu beenden, statt abrupt stehen zu bleiben.",
+     "p": [
+      "Werde in den letzten Minuten langsamer, erst lockeres Traben, dann Gehen.",
+      "Lass Atmung und Puls allmählich zur Ruhe kommen.",
+      "Ein ruhiger Abschluss ist ein schöner Moment, um zu spüren, wie der Lauf war."
+     ],
+     "q": "Wie fühlst du dich meist in den Minuten direkt nach dem Sport?",
+     "c": "Beende deinen nächsten Lauf mit fünf Minuten Gehen und drei langsamen, tiefen Atemzügen."
+    },
+    "es": {
+     "t": "Enfriar después de correr",
+     "g": "Aprende a terminar la carrera con calma en lugar de parar de golpe.",
+     "p": [
+      "Baja a un trote suave y luego camina durante los últimos minutos.",
+      "Deja que la respiración y el pulso bajen poco a poco.",
+      "Un final tranquilo es un buen momento para notar cómo te ha ido."
+     ],
+     "q": "¿Cómo te sueles sentir en los minutos justo después de hacer ejercicio?",
+     "c": "Termina tu próxima salida con cinco minutos caminando y tres respiraciones lentas y profundas."
+    },
+    "fr": {
+     "t": "Récupérer après la course",
+     "g": "Apprends à finir ta course en douceur plutôt que de t'arrêter net.",
+     "p": [
+      "Ralentis en petite foulée, puis marche pendant les dernières minutes.",
+      "Laisse ta respiration et ton cœur se calmer progressivement.",
+      "Une fin tranquille est un bon moment pour sentir comment s'est passée la sortie."
+     ],
+     "q": "Comment te sens-tu d'habitude dans les minutes qui suivent l'effort ?",
+     "c": "Termine ta prochaine sortie par cinq minutes de marche et trois respirations lentes et profondes."
+    },
+    "it": {
+     "t": "Defaticamento dopo la corsa",
+     "g": "Impara a concludere la corsa con calma invece di fermarti di colpo.",
+     "p": [
+      "Rallenta in una corsetta leggera e poi cammina negli ultimi minuti.",
+      "Lascia che respiro e battito tornino giù gradualmente.",
+      "Un finale tranquillo è il momento giusto per notare come è andata."
+     ],
+     "q": "Come ti senti di solito nei minuti subito dopo l'attività fisica?",
+     "c": "Chiudi la prossima corsa con cinque minuti di camminata e tre respiri lenti e profondi."
+    },
+    "pt": {
+     "t": "Retorno à calma depois de correr",
+     "g": "Aprende a terminar a corrida com calma em vez de parar de repente.",
+     "p": [
+      "Abranda para um trote leve e depois caminha nos últimos minutos.",
+      "Deixa a respiração e o ritmo cardíaco descerem aos poucos.",
+      "Um final tranquilo é um bom momento para notar como correu o treino."
+     ],
+     "q": "Como te costumas sentir nos minutos logo a seguir ao exercício?",
+     "c": "Termina a próxima corrida com cinco minutos a caminhar e três respirações lentas e profundas."
+    },
+    "pt_BR": {
+     "t": "Desaquecendo depois da corrida",
+     "g": "Aprenda a terminar a corrida com calma em vez de parar de repente.",
+     "p": [
+      "Diminua para um trote leve e depois caminhe nos últimos minutos.",
+      "Deixe a respiração e os batimentos baixarem aos poucos.",
+      "Um final tranquilo é um bom momento para perceber como foi o treino."
+     ],
+     "q": "Como você costuma se sentir nos minutos logo depois de se exercitar?",
+     "c": "Termine a próxima corrida com cinco minutos de caminhada e três respirações lentas e profundas."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing while running",
+     "g": "Learn to breathe in a relaxed, rhythmic way while you run.",
+     "p": [
+      "There is no single perfect pattern; breathe through mouth and nose as feels natural.",
+      "Belly breathing, letting your stomach expand, often feels calmer than shallow chest breaths.",
+      "If you are out of breath, it simply means slow down or take a walk break."
+     ],
+     "q": "Have you ever noticed a rhythm in your breathing during exercise?",
+     "c": "On your next walk or run, count your steps for one breath in and one breath out."
+    },
+    "de": {
+     "t": "Atmen beim Laufen",
+     "g": "Lerne, beim Laufen entspannt und rhythmisch zu atmen.",
+     "p": [
+      "Es gibt kein perfektes Muster; atme durch Mund und Nase, wie es sich natürlich anfühlt.",
+      "Bauchatmung, bei der sich der Bauch weitet, fühlt sich oft ruhiger an als flaches Brustatmen.",
+      "Bist du außer Atem, heißt das einfach: langsamer werden oder kurz gehen."
+     ],
+     "q": "Hast du beim Sport schon mal einen Rhythmus in deiner Atmung bemerkt?",
+     "c": "Zähl beim nächsten Gehen oder Laufen die Schritte für einen Atemzug ein und einen aus."
+    },
+    "es": {
+     "t": "Respirar al correr",
+     "g": "Aprende a respirar de forma relajada y rítmica mientras corres.",
+     "p": [
+      "No existe un patrón perfecto; respira por boca y nariz como te resulte natural.",
+      "Respirar con el abdomen, dejando que se expanda, suele calmar más que respirar con el pecho.",
+      "Si te falta el aire, simplemente baja el ritmo o camina un poco."
+     ],
+     "q": "¿Alguna vez has notado un ritmo en tu respiración al hacer ejercicio?",
+     "c": "En tu próximo paseo o carrera, cuenta los pasos de una inspiración y una espiración."
+    },
+    "fr": {
+     "t": "Respirer en courant",
+     "g": "Apprends à respirer de façon détendue et rythmée en courant.",
+     "p": [
+      "Il n'existe pas de schéma parfait ; respire par la bouche et le nez comme c'est naturel.",
+      "Respirer par le ventre, en le laissant se gonfler, apaise souvent plus qu'une respiration haute.",
+      "Si tu es essoufflé, c'est juste le signe de ralentir ou de marcher un peu."
+     ],
+     "q": "As-tu déjà remarqué un rythme dans ta respiration pendant l'effort ?",
+     "c": "Lors de ta prochaine marche ou course, compte tes pas sur une inspiration et une expiration."
+    },
+    "it": {
+     "t": "Respirare mentre corri",
+     "g": "Impara a respirare in modo rilassato e ritmico mentre corri.",
+     "p": [
+      "Non esiste uno schema perfetto; respira con bocca e naso come ti viene naturale.",
+      "La respirazione addominale, lasciando espandere la pancia, spesso calma più di quella alta.",
+      "Se resti senza fiato, è solo il segnale per rallentare o camminare un po'."
+     ],
+     "q": "Hai mai notato un ritmo nel tuo respiro durante l'attività fisica?",
+     "c": "Nella prossima camminata o corsa, conta i passi di un'inspirazione e di un'espirazione."
+    },
+    "pt": {
+     "t": "Respirar a correr",
+     "g": "Aprende a respirar de forma descontraída e ritmada enquanto corres.",
+     "p": [
+      "Não há um padrão perfeito; respira pela boca e pelo nariz como te for natural.",
+      "Respirar com a barriga, deixando-a expandir, costuma acalmar mais do que respirar com o peito.",
+      "Se ficares sem fôlego, é só sinal para abrandar ou caminhar um pouco."
+     ],
+     "q": "Já reparaste num ritmo na tua respiração durante o exercício?",
+     "c": "Na próxima caminhada ou corrida, conta os passos de uma inspiração e de uma expiração."
+    },
+    "pt_BR": {
+     "t": "Respirando na corrida",
+     "g": "Aprenda a respirar de forma relaxada e ritmada enquanto corre.",
+     "p": [
+      "Não existe um padrão perfeito; respire pela boca e pelo nariz do jeito que for natural.",
+      "Respirar com a barriga, deixando ela expandir, costuma acalmar mais do que respirar com o peito.",
+      "Se faltar fôlego, é só sinal para diminuir o ritmo ou caminhar um pouco."
+     ],
+     "q": "Você já percebeu um ritmo na sua respiração durante o exercício?",
+     "c": "Na próxima caminhada ou corrida, conte os passos de uma inspiração e de uma expiração."
+    }
+   }
+  }
+ ]
+}

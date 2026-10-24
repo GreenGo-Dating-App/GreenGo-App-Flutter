@@ -1,0 +1,1305 @@
+{
+"topic": "self_confidence",
+"questions": [
+{
+"id": "self_confidence-001",
+"lv": "any",
+"i18n": {
+"en": "When do you feel most like yourself?",
+"de": "Wann fühlst du dich am meisten wie du selbst?",
+"es": "¿En qué momentos te sientes más tú?",
+"fr": "À quels moments te sens-tu le plus toi-même ?",
+"it": "In quali momenti ti senti più te stesso o te stessa?",
+"pt": "Em que momentos te sentes mais tu próprio ou tu própria?",
+"pt_BR": "Em que momentos você se sente mais você mesmo?"
+}
+},
+{
+"id": "self_confidence-002",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you did recently that you're proud of?",
+"de": "Worauf bist du in letzter Zeit stolz, was du geschafft hast?",
+"es": "¿Qué has hecho últimamente de lo que te sientas orgulloso u orgullosa?",
+"fr": "Qu'as-tu fait récemment dont tu es fier ou fière ?",
+"it": "Cosa hai fatto di recente di cui vai fiero o fiera?",
+"pt": "Que coisa fizeste recentemente de que te orgulhas?",
+"pt_BR": "O que você fez recentemente que te deixou com orgulho?"
+}
+},
+{
+"id": "self_confidence-003",
+"lv": "any",
+"i18n": {
+"en": "Which of your qualities do your friends appreciate most?",
+"de": "Welche deiner Eigenschaften schätzen deine Freunde am meisten?",
+"es": "¿Qué cualidad tuya valoran más tus amigos?",
+"fr": "Quelle qualité tes amis apprécient-ils le plus chez toi ?",
+"it": "Quale tua qualità apprezzano di più i tuoi amici?",
+"pt": "Que qualidade tua os teus amigos mais valorizam?",
+"pt_BR": "Qual qualidade sua os seus amigos mais valorizam?"
+}
+},
+{
+"id": "self_confidence-004",
+"lv": "any",
+"i18n": {
+"en": "What does confidence look like to you in everyday life?",
+"de": "Wie sieht Selbstvertrauen für dich im Alltag aus?",
+"es": "¿Cómo se ve la confianza en ti mismo en la vida diaria, para ti?",
+"fr": "À quoi ressemble la confiance en soi pour toi au quotidien ?",
+"it": "Che aspetto ha per te la fiducia in sé stessi nella vita di tutti i giorni?",
+"pt": "Como é, para ti, a autoconfiança no dia a dia?",
+"pt_BR": "Como é a autoconfiança no dia a dia, para você?"
+}
+},
+{
+"id": "self_confidence-005",
+"lv": "any",
+"i18n": {
+"en": "Who is someone you admire for their quiet confidence, and why?",
+"de": "Wen bewunderst du für seine ruhige Selbstsicherheit, und warum?",
+"es": "¿A quién admiras por su confianza tranquila y por qué?",
+"fr": "Qui admires-tu pour sa confiance tranquille, et pourquoi ?",
+"it": "Chi ammiri per la sua sicurezza tranquilla, e perché?",
+"pt": "Quem admiras pela sua confiança tranquila, e porquê?",
+"pt_BR": "Quem você admira pela confiança tranquila, e por quê?"
+}
+},
+{
+"id": "self_confidence-006",
+"lv": "any",
+"i18n": {
+"en": "What small habit helps you start the day in a good mood?",
+"de": "Welche kleine Gewohnheit hilft dir, gut gelaunt in den Tag zu starten?",
+"es": "¿Qué pequeño hábito te ayuda a empezar el día de buen humor?",
+"fr": "Quelle petite habitude t'aide à commencer la journée de bonne humeur ?",
+"it": "Quale piccola abitudine ti aiuta a iniziare la giornata di buon umore?",
+"pt": "Que pequeno hábito te ajuda a começar o dia bem-disposto?",
+"pt_BR": "Que pequeno hábito te ajuda a começar o dia de bom humor?"
+}
+},
+{
+"id": "self_confidence-007",
+"lv": "any",
+"i18n": {
+"en": "What is a skill you have that you sometimes forget to value?",
+"de": "Welche Fähigkeit hast du, die du manchmal zu wenig wertschätzt?",
+"es": "¿Qué habilidad tienes que a veces olvidas valorar?",
+"fr": "Quelle compétence as-tu que tu oublies parfois de valoriser ?",
+"it": "Quale tua abilità a volte dimentichi di apprezzare?",
+"pt": "Que capacidade tens que às vezes te esqueces de valorizar?",
+"pt_BR": "Que habilidade você tem e às vezes esquece de valorizar?"
+}
+},
+{
+"id": "self_confidence-008",
+"lv": "any",
+"i18n": {
+"en": "When was the last time you tried something new? How did it go?",
+"de": "Wann hast du zuletzt etwas Neues ausprobiert? Wie lief es?",
+"es": "¿Cuándo fue la última vez que probaste algo nuevo? ¿Qué tal te fue?",
+"fr": "Quand as-tu essayé quelque chose de nouveau pour la dernière fois ? Comment ça s'est passé ?",
+"it": "Quando hai provato qualcosa di nuovo l'ultima volta? Com'è andata?",
+"pt": "Quando foi a última vez que experimentaste algo novo? Como correu?",
+"pt_BR": "Quando foi a última vez que você experimentou algo novo? Como foi?"
+}
+},
+{
+"id": "self_confidence-009",
+"lv": "any",
+"i18n": {
+"en": "What kind words would you like to hear more often?",
+"de": "Welche freundlichen Worte würdest du gern öfter hören?",
+"es": "¿Qué palabras amables te gustaría oír más a menudo?",
+"fr": "Quels mots gentils aimerais-tu entendre plus souvent ?",
+"it": "Quali parole gentili ti piacerebbe sentire più spesso?",
+"pt": "Que palavras simpáticas gostavas de ouvir mais vezes?",
+"pt_BR": "Que palavras gentis você gostaria de ouvir com mais frequência?"
+}
+},
+{
+"id": "self_confidence-010",
+"lv": "any",
+"i18n": {
+"en": "Which place makes you feel calm and at ease?",
+"de": "An welchem Ort fühlst du dich ruhig und wohl?",
+"es": "¿Qué lugar te hace sentir en calma y a gusto?",
+"fr": "Quel endroit te fait te sentir calme et à l'aise ?",
+"it": "Quale posto ti fa sentire calmo e a tuo agio?",
+"pt": "Que lugar te faz sentir calma e à vontade?",
+"pt_BR": "Que lugar faz você se sentir calmo e à vontade?"
+}
+},
+{
+"id": "self_confidence-011",
+"lv": "any",
+"i18n": {
+"en": "What song gives you energy before a challenge?",
+"de": "Welcher Song gibt dir Energie vor einer Herausforderung?",
+"es": "¿Qué canción te da energía antes de un reto?",
+"fr": "Quelle chanson te donne de l'énergie avant un défi ?",
+"it": "Quale canzone ti dà energia prima di una sfida?",
+"pt": "Que música te dá energia antes de um desafio?",
+"pt_BR": "Que música te dá energia antes de um desafio?"
+}
+},
+{
+"id": "self_confidence-012",
+"lv": "any",
+"i18n": {
+"en": "What would you try if you knew you couldn't fail?",
+"de": "Was würdest du ausprobieren, wenn du wüsstest, dass du nicht scheitern kannst?",
+"es": "¿Qué intentarías si supieras que no puedes fallar?",
+"fr": "Qu'essaierais-tu si tu savais que tu ne pouvais pas échouer ?",
+"it": "Cosa proveresti se sapessi di non poter fallire?",
+"pt": "O que experimentavas se soubesses que não podias falhar?",
+"pt_BR": "O que você tentaria se soubesse que não tem como dar errado?"
+}
+},
+{
+"id": "self_confidence-013",
+"lv": "any",
+"i18n": {
+"en": "How do you usually celebrate a small success?",
+"de": "Wie feierst du normalerweise einen kleinen Erfolg?",
+"es": "¿Cómo sueles celebrar un pequeño logro?",
+"fr": "Comment fêtes-tu d'habitude une petite réussite ?",
+"it": "Come festeggi di solito un piccolo successo?",
+"pt": "Como costumas celebrar uma pequena vitória?",
+"pt_BR": "Como você costuma comemorar uma pequena conquista?"
+}
+},
+{
+"id": "self_confidence-014",
+"lv": "any",
+"i18n": {
+"en": "What is a compliment you received that stayed with you?",
+"de": "Welches Kompliment ist dir besonders in Erinnerung geblieben?",
+"es": "¿Qué cumplido que te hicieron se te quedó grabado?",
+"fr": "Quel compliment reçu t'est resté en mémoire ?",
+"it": "Quale complimento ricevuto ti è rimasto nel cuore?",
+"pt": "Que elogio recebeste que nunca esqueceste?",
+"pt_BR": "Qual elogio que você recebeu ficou marcado na sua memória?"
+}
+},
+{
+"id": "self_confidence-015",
+"lv": "any",
+"i18n": {
+"en": "Which activity makes you lose track of time?",
+"de": "Bei welcher Beschäftigung vergisst du die Zeit?",
+"es": "¿Con qué actividad pierdes la noción del tiempo?",
+"fr": "Quelle activité te fait perdre la notion du temps ?",
+"it": "Quale attività ti fa perdere la cognizione del tempo?",
+"pt": "Que atividade te faz perder a noção do tempo?",
+"pt_BR": "Qual atividade faz você perder a noção do tempo?"
+}
+},
+{
+"id": "self_confidence-016",
+"lv": "any",
+"i18n": {
+"en": "What does a good day look like for you?",
+"de": "Wie sieht ein guter Tag für dich aus?",
+"es": "¿Cómo es un buen día para ti?",
+"fr": "À quoi ressemble une bonne journée pour toi ?",
+"it": "Com'è per te una bella giornata?",
+"pt": "Como é, para ti, um bom dia?",
+"pt_BR": "Como é um dia bom para você?"
+}
+},
+{
+"id": "self_confidence-017",
+"lv": "any",
+"i18n": {
+"en": "What is something you've learned about yourself recently?",
+"de": "Was hast du in letzter Zeit über dich selbst gelernt?",
+"es": "¿Qué has aprendido sobre ti últimamente?",
+"fr": "Qu'as-tu appris sur toi récemment ?",
+"it": "Cosa hai imparato su di te ultimamente?",
+"pt": "O que aprendeste sobre ti ultimamente?",
+"pt_BR": "O que você aprendeu sobre si mesmo ultimamente?"
+}
+},
+{
+"id": "self_confidence-018",
+"lv": "any",
+"i18n": {
+"en": "Who in your life always encourages you?",
+"de": "Wer in deinem Leben ermutigt dich immer?",
+"es": "¿Quién en tu vida siempre te anima?",
+"fr": "Qui, dans ta vie, t'encourage toujours ?",
+"it": "Chi nella tua vita ti incoraggia sempre?",
+"pt": "Quem, na tua vida, te encoraja sempre?",
+"pt_BR": "Quem na sua vida sempre te dá força?"
+}
+},
+{
+"id": "self_confidence-019",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you like about the way you treat other people?",
+"de": "Was magst du an der Art, wie du mit anderen Menschen umgehst?",
+"es": "¿Qué te gusta de la forma en que tratas a los demás?",
+"fr": "Qu'est-ce que tu aimes dans ta façon de traiter les autres ?",
+"it": "Cosa ti piace del modo in cui tratti gli altri?",
+"pt": "O que gostas na forma como tratas as outras pessoas?",
+"pt_BR": "O que você gosta no jeito como trata as outras pessoas?"
+}
+},
+{
+"id": "self_confidence-020",
+"lv": "any",
+"i18n": {
+"en": "What helps you relax after a busy day?",
+"de": "Was hilft dir, nach einem vollen Tag zu entspannen?",
+"es": "¿Qué te ayuda a relajarte después de un día ajetreado?",
+"fr": "Qu'est-ce qui t'aide à te détendre après une journée chargée ?",
+"it": "Cosa ti aiuta a rilassarti dopo una giornata piena?",
+"pt": "O que te ajuda a relaxar depois de um dia cheio?",
+"pt_BR": "O que te ajuda a relaxar depois de um dia corrido?"
+}
+},
+{
+"id": "self_confidence-021",
+"lv": "any",
+"i18n": {
+"en": "Which challenge from the past are you glad you faced?",
+"de": "Welcher Herausforderung aus der Vergangenheit bist du froh, dich gestellt zu haben?",
+"es": "¿Qué reto del pasado te alegra haber afrontado?",
+"fr": "Quel défi du passé es-tu content ou contente d'avoir relevé ?",
+"it": "Quale sfida del passato sei felice di aver affrontato?",
+"pt": "Que desafio do passado ainda bem que enfrentaste?",
+"pt_BR": "Qual desafio do passado você fica feliz de ter encarado?"
+}
+},
+{
+"id": "self_confidence-022",
+"lv": "any",
+"i18n": {
+"en": "What would you like to become better at, just for fun?",
+"de": "Worin würdest du gern besser werden, einfach so zum Spaß?",
+"es": "¿En qué te gustaría mejorar, solo por diversión?",
+"fr": "Dans quoi aimerais-tu progresser, juste pour le plaisir ?",
+"it": "In cosa ti piacerebbe migliorare, solo per divertimento?",
+"pt": "Em que gostavas de ficar melhor, só por diversão?",
+"pt_BR": "Em que você gostaria de ficar melhor, só por diversão?"
+}
+},
+{
+"id": "self_confidence-023",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when you help someone else?",
+"de": "Wie fühlst du dich, wenn du jemand anderem hilfst?",
+"es": "¿Cómo te sientes cuando ayudas a otra persona?",
+"fr": "Comment te sens-tu quand tu aides quelqu'un ?",
+"it": "Come ti senti quando aiuti qualcuno?",
+"pt": "Como te sentes quando ajudas outra pessoa?",
+"pt_BR": "Como você se sente quando ajuda outra pessoa?"
+}
+},
+{
+"id": "self_confidence-024",
+"lv": "any",
+"i18n": {
+"en": "What is a value that guides your choices?",
+"de": "Welcher Wert leitet deine Entscheidungen?",
+"es": "¿Qué valor guía tus decisiones?",
+"fr": "Quelle valeur guide tes choix ?",
+"it": "Quale valore guida le tue scelte?",
+"pt": "Que valor orienta as tuas escolhas?",
+"pt_BR": "Que valor guia as suas escolhas?"
+}
+},
+{
+"id": "self_confidence-025",
+"lv": "any",
+"i18n": {
+"en": "Which small win could you aim for today?",
+"de": "Welchen kleinen Erfolg könntest du dir heute vornehmen?",
+"es": "¿Qué pequeño logro podrías proponerte hoy?",
+"fr": "Quelle petite victoire pourrais-tu viser aujourd'hui ?",
+"it": "Quale piccola vittoria potresti puntare a ottenere oggi?",
+"pt": "Que pequena vitória podias procurar hoje?",
+"pt_BR": "Que pequena vitória você poderia buscar hoje?"
+}
+},
+{
+"id": "self_confidence-026",
+"lv": "any",
+"i18n": {
+"en": "What advice would you give a friend who doubts themselves?",
+"de": "Welchen Rat würdest du einem Freund geben, der an sich zweifelt?",
+"es": "¿Qué consejo le darías a un amigo que duda de sí mismo?",
+"fr": "Quel conseil donnerais-tu à un ami qui doute de lui ?",
+"it": "Che consiglio daresti a un amico che dubita di sé?",
+"pt": "Que conselho darias a um amigo que duvida de si próprio?",
+"pt_BR": "Que conselho você daria a um amigo que duvida de si mesmo?"
+}
+},
+{
+"id": "self_confidence-027",
+"lv": "any",
+"i18n": {
+"en": "When do you feel most creative?",
+"de": "Wann fühlst du dich am kreativsten?",
+"es": "¿Cuándo te sientes más creativo o creativa?",
+"fr": "Quand te sens-tu le plus créatif ou créative ?",
+"it": "Quando ti senti più creativo o creativa?",
+"pt": "Quando te sentes mais criativo ou criativa?",
+"pt_BR": "Quando você se sente mais criativo?"
+}
+},
+{
+"id": "self_confidence-028",
+"lv": "any",
+"i18n": {
+"en": "What makes you laugh even on a hard day?",
+"de": "Was bringt dich auch an einem schweren Tag zum Lachen?",
+"es": "¿Qué te hace reír incluso en un día difícil?",
+"fr": "Qu'est-ce qui te fait rire même lors d'une journée difficile ?",
+"it": "Cosa ti fa ridere anche in una giornata difficile?",
+"pt": "O que te faz rir mesmo num dia difícil?",
+"pt_BR": "O que te faz rir mesmo num dia difícil?"
+}
+},
+{
+"id": "self_confidence-029",
+"lv": "any",
+"i18n": {
+"en": "Which of your habits would you like to keep forever?",
+"de": "Welche deiner Gewohnheiten möchtest du für immer behalten?",
+"es": "¿Qué hábito tuyo te gustaría mantener para siempre?",
+"fr": "Laquelle de tes habitudes aimerais-tu garder pour toujours ?",
+"it": "Quale tua abitudine vorresti mantenere per sempre?",
+"pt": "Que hábito teu gostavas de manter para sempre?",
+"pt_BR": "Qual hábito seu você gostaria de manter para sempre?"
+}
+},
+{
+"id": "self_confidence-030",
+"lv": "any",
+"i18n": {
+"en": "What is something kind you could say to yourself right now?",
+"de": "Was Freundliches könntest du dir gerade jetzt selbst sagen?",
+"es": "¿Qué cosa amable podrías decirte ahora mismo?",
+"fr": "Que pourrais-tu te dire de gentil, là, maintenant ?",
+"it": "Cosa di gentile potresti dirti proprio adesso?",
+"pt": "Que coisa simpática podias dizer a ti próprio agora mesmo?",
+"pt_BR": "Que coisa gentil você poderia dizer a si mesmo agora?"
+}
+},
+{
+"id": "self_confidence-031",
+"lv": "any",
+"i18n": {
+"en": "What moment from your childhood makes you smile?",
+"de": "Welcher Moment aus deiner Kindheit bringt dich zum Lächeln?",
+"es": "¿Qué momento de tu infancia te hace sonreír?",
+"fr": "Quel moment de ton enfance te fait sourire ?",
+"it": "Quale momento della tua infanzia ti fa sorridere?",
+"pt": "Que momento da tua infância te faz sorrir?",
+"pt_BR": "Qual momento da sua infância te faz sorrir?"
+}
+},
+{
+"id": "self_confidence-032",
+"lv": "any",
+"i18n": {
+"en": "Which new place would you love to explore one day?",
+"de": "Welchen neuen Ort würdest du eines Tages gern erkunden?",
+"es": "¿Qué lugar nuevo te encantaría explorar algún día?",
+"fr": "Quel nouvel endroit aimerais-tu explorer un jour ?",
+"it": "Quale posto nuovo ti piacerebbe esplorare un giorno?",
+"pt": "Que lugar novo adoravas explorar um dia?",
+"pt_BR": "Que lugar novo você adoraria explorar um dia?"
+}
+},
+{
+"id": "self_confidence-033",
+"lv": "any",
+"i18n": {
+"en": "What do you enjoy teaching or explaining to others?",
+"de": "Was bringst du anderen gern bei oder erklärst es ihnen?",
+"es": "¿Qué te gusta enseñar o explicar a los demás?",
+"fr": "Qu'aimes-tu apprendre ou expliquer aux autres ?",
+"it": "Cosa ti piace insegnare o spiegare agli altri?",
+"pt": "O que gostas de ensinar ou explicar aos outros?",
+"pt_BR": "O que você gosta de ensinar ou explicar para os outros?"
+}
+},
+{
+"id": "self_confidence-034",
+"lv": "any",
+"i18n": {
+"en": "How do you like to recharge your energy?",
+"de": "Wie lädst du deine Energie am liebsten wieder auf?",
+"es": "¿Cómo te gusta recargar energías?",
+"fr": "Comment aimes-tu recharger tes batteries ?",
+"it": "Come ti piace ricaricare le energie?",
+"pt": "Como gostas de recarregar energias?",
+"pt_BR": "Como você gosta de recarregar as energias?"
+}
+},
+{
+"id": "self_confidence-035",
+"lv": "any",
+"i18n": {
+"en": "What does being brave mean to you?",
+"de": "Was bedeutet Mut für dich?",
+"es": "¿Qué significa para ti ser valiente?",
+"fr": "Que signifie être courageux pour toi ?",
+"it": "Cosa significa per te essere coraggiosi?",
+"pt": "O que significa para ti ter coragem?",
+"pt_BR": "O que significa ter coragem para você?"
+}
+},
+{
+"id": "self_confidence-036",
+"lv": "any",
+"i18n": {
+"en": "What is one strength you see in yourself today?",
+"de": "Welche Stärke siehst du heute an dir?",
+"es": "¿Qué fortaleza ves hoy en ti?",
+"fr": "Quelle force vois-tu en toi aujourd'hui ?",
+"it": "Quale punto di forza vedi oggi in te?",
+"pt": "Que ponto forte vês hoje em ti?",
+"pt_BR": "Que ponto forte você enxerga em si hoje?"
+}
+},
+{
+"id": "self_confidence-037",
+"lv": "any",
+"i18n": {
+"en": "Which person would you love to thank for helping you grow?",
+"de": "Wem würdest du gern dafür danken, dass er oder sie dir beim Wachsen geholfen hat?",
+"es": "¿A qué persona te encantaría agradecerle que te ayudara a crecer?",
+"fr": "Quelle personne aimerais-tu remercier de t'avoir aidé à grandir ?",
+"it": "Quale persona vorresti ringraziare per averti aiutato a crescere?",
+"pt": "A que pessoa gostavas de agradecer por te ter ajudado a crescer?",
+"pt_BR": "Para qual pessoa você adoraria agradecer por ter te ajudado a crescer?"
+}
+},
+{
+"id": "self_confidence-038",
+"lv": "any",
+"i18n": {
+"en": "What helps you feel prepared for something important?",
+"de": "Was hilft dir, dich auf etwas Wichtiges vorbereitet zu fühlen?",
+"es": "¿Qué te ayuda a sentirte preparado o preparada para algo importante?",
+"fr": "Qu'est-ce qui t'aide à te sentir prêt ou prête pour quelque chose d'important ?",
+"it": "Cosa ti aiuta a sentirti pronto o pronta per qualcosa di importante?",
+"pt": "O que te ajuda a sentir-te preparado para algo importante?",
+"pt_BR": "O que te ajuda a se sentir preparado para algo importante?"
+}
+},
+{
+"id": "self_confidence-039",
+"lv": "any",
+"i18n": {
+"en": "What is a goal that excites you right now?",
+"de": "Welches Ziel begeistert dich gerade?",
+"es": "¿Qué meta te ilusiona ahora mismo?",
+"fr": "Quel objectif te motive en ce moment ?",
+"it": "Quale obiettivo ti entusiasma in questo momento?",
+"pt": "Que objetivo te entusiasma neste momento?",
+"pt_BR": "Qual meta te empolga neste momento?"
+}
+},
+{
+"id": "self_confidence-040",
+"lv": "any",
+"i18n": {
+"en": "How would you describe yourself in three positive words?",
+"de": "Wie würdest du dich mit drei positiven Wörtern beschreiben?",
+"es": "¿Cómo te describirías con tres palabras positivas?",
+"fr": "Comment te décrirais-tu en trois mots positifs ?",
+"it": "Come ti descriveresti con tre parole positive?",
+"pt": "Como te descreverias em três palavras positivas?",
+"pt_BR": "Como você se descreveria em três palavras positivas?"
+}
+},
+{
+"id": "self_confidence-041",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually say to yourself when you make a small mistake?",
+"de": "Was sagst du dir normalerweise, wenn dir ein kleiner Fehler passiert?",
+"es": "¿Qué te sueles decir cuando cometes un pequeño error?",
+"fr": "Que te dis-tu d'habitude quand tu fais une petite erreur ?",
+"it": "Cosa ti dici di solito quando fai un piccolo errore?",
+"pt": "O que costumas dizer a ti próprio quando cometes um pequeno erro?",
+"pt_BR": "O que você costuma dizer para si mesmo quando comete um pequeno erro?"
+}
+},
+{
+"id": "self_confidence-042",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about starting conversations with new people?",
+"de": "Wie geht es dir damit, Gespräche mit neuen Leuten anzufangen?",
+"es": "¿Cómo te sientes al empezar una conversación con gente nueva?",
+"fr": "Comment te sens-tu quand il s'agit d'engager la conversation avec de nouvelles personnes ?",
+"it": "Come ti senti quando inizi una conversazione con persone nuove?",
+"pt": "Como te sentes a começar conversas com pessoas novas?",
+"pt_BR": "Como você se sente ao puxar conversa com pessoas novas?"
+}
+},
+{
+"id": "self_confidence-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which situations make you feel a little nervous?",
+"de": "In welchen Situationen wirst du ein bisschen nervös?",
+"es": "¿Qué situaciones te ponen un poco nervioso o nerviosa?",
+"fr": "Quelles situations te rendent un peu nerveux ou nerveuse ?",
+"it": "Quali situazioni ti rendono un po' nervoso o nervosa?",
+"pt": "Que situações te deixam um pouco nervoso?",
+"pt_BR": "Que situações te deixam um pouco nervoso?"
+}
+},
+{
+"id": "self_confidence-044",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you feel calmer before something new?",
+"de": "Was hilft dir, vor etwas Neuem ruhiger zu werden?",
+"es": "¿Qué te ayuda a sentirte más tranquilo antes de algo nuevo?",
+"fr": "Qu'est-ce qui t'aide à te sentir plus calme avant quelque chose de nouveau ?",
+"it": "Cosa ti aiuta a sentirti più tranquillo prima di qualcosa di nuovo?",
+"pt": "O que te ajuda a ficar mais calmo antes de algo novo?",
+"pt_BR": "O que te ajuda a ficar mais tranquilo antes de algo novo?"
+}
+},
+{
+"id": "self_confidence-045",
+"lv": "beginner",
+"i18n": {
+"en": "How do you react when someone gives you a compliment?",
+"de": "Wie reagierst du, wenn dir jemand ein Kompliment macht?",
+"es": "¿Cómo reaccionas cuando alguien te hace un cumplido?",
+"fr": "Comment réagis-tu quand quelqu'un te fait un compliment ?",
+"it": "Come reagisci quando qualcuno ti fa un complimento?",
+"pt": "Como reages quando alguém te faz um elogio?",
+"pt_BR": "Como você reage quando alguém te faz um elogio?"
+}
+},
+{
+"id": "self_confidence-046",
+"lv": "beginner",
+"i18n": {
+"en": "What is a tiny goal you could reach this week?",
+"de": "Welches winzige Ziel könntest du diese Woche erreichen?",
+"es": "¿Qué meta pequeñita podrías alcanzar esta semana?",
+"fr": "Quel tout petit objectif pourrais-tu atteindre cette semaine ?",
+"it": "Quale piccolissimo obiettivo potresti raggiungere questa settimana?",
+"pt": "Que objetivo pequenino podias alcançar esta semana?",
+"pt_BR": "Que meta bem pequena você poderia alcançar esta semana?"
+}
+},
+{
+"id": "self_confidence-047",
+"lv": "beginner",
+"i18n": {
+"en": "Which three things went well for you today?",
+"de": "Welche drei Dinge sind dir heute gut gelungen?",
+"es": "¿Qué tres cosas te han salido bien hoy?",
+"fr": "Quelles sont les trois choses qui se sont bien passées pour toi aujourd'hui ?",
+"it": "Quali tre cose ti sono andate bene oggi?",
+"pt": "Que três coisas te correram bem hoje?",
+"pt_BR": "Quais três coisas deram certo para você hoje?"
+}
+},
+{
+"id": "self_confidence-048",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually introduce yourself to someone new?",
+"de": "Wie stellst du dich normalerweise jemand Neuem vor?",
+"es": "¿Cómo te sueles presentar a alguien nuevo?",
+"fr": "Comment te présentes-tu d'habitude à quelqu'un de nouveau ?",
+"it": "Come ti presenti di solito a qualcuno di nuovo?",
+"pt": "Como costumas apresentar-te a alguém novo?",
+"pt_BR": "Como você costuma se apresentar para alguém novo?"
+}
+},
+{
+"id": "self_confidence-049",
+"lv": "beginner",
+"i18n": {
+"en": "When do you find it easy to say hello first?",
+"de": "Wann fällt es dir leicht, als Erste oder Erster Hallo zu sagen?",
+"es": "¿Cuándo te resulta fácil saludar primero?",
+"fr": "Quand est-ce facile pour toi de dire bonjour en premier ?",
+"it": "Quando ti viene facile salutare per primo o per prima?",
+"pt": "Quando é que te é fácil cumprimentar primeiro?",
+"pt_BR": "Quando é fácil para você cumprimentar primeiro?"
+}
+},
+{
+"id": "self_confidence-050",
+"lv": "beginner",
+"i18n": {
+"en": "How does your posture feel when you're happy?",
+"de": "Wie fühlt sich deine Haltung an, wenn du glücklich bist?",
+"es": "¿Cómo es tu postura cuando estás feliz?",
+"fr": "Comment est ta posture quand tu es heureux ou heureuse ?",
+"it": "Com'è la tua postura quando sei felice?",
+"pt": "Como é a tua postura quando estás feliz?",
+"pt_BR": "Como fica a sua postura quando você está feliz?"
+}
+},
+{
+"id": "self_confidence-051",
+"lv": "beginner",
+"i18n": {
+"en": "Which small promise to yourself could you keep tomorrow?",
+"de": "Welches kleine Versprechen an dich selbst könntest du morgen halten?",
+"es": "¿Qué pequeña promesa a ti mismo podrías cumplir mañana?",
+"fr": "Quelle petite promesse envers toi-même pourrais-tu tenir demain ?",
+"it": "Quale piccola promessa a te stesso potresti mantenere domani?",
+"pt": "Que pequena promessa a ti próprio podias cumprir amanhã?",
+"pt_BR": "Que pequena promessa para si mesmo você poderia cumprir amanhã?"
+}
+},
+{
+"id": "self_confidence-052",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about asking for help?",
+"de": "Wie geht es dir damit, um Hilfe zu bitten?",
+"es": "¿Cómo te sientes cuando tienes que pedir ayuda?",
+"fr": "Comment vis-tu le fait de demander de l'aide ?",
+"it": "Come ti senti quando devi chiedere aiuto?",
+"pt": "Como te sentes quando precisas de pedir ajuda?",
+"pt_BR": "Como você se sente quando precisa pedir ajuda?"
+}
+},
+{
+"id": "self_confidence-053",
+"lv": "beginner",
+"i18n": {
+"en": "What is something you're learning at the moment?",
+"de": "Was lernst du gerade?",
+"es": "¿Qué estás aprendiendo en este momento?",
+"fr": "Qu'es-tu en train d'apprendre en ce moment ?",
+"it": "Cosa stai imparando in questo periodo?",
+"pt": "O que estás a aprender neste momento?",
+"pt_BR": "O que você está aprendendo no momento?"
+}
+},
+{
+"id": "self_confidence-054",
+"lv": "beginner",
+"i18n": {
+"en": "Do you compare yourself to others sometimes? When does it happen most?",
+"de": "Vergleichst du dich manchmal mit anderen? Wann passiert das am häufigsten?",
+"es": "¿A veces te comparas con los demás? ¿Cuándo te pasa más?",
+"fr": "T'arrive-t-il de te comparer aux autres ? Quand est-ce que ça arrive le plus ?",
+"it": "Ti capita di confrontarti con gli altri? Quando succede di più?",
+"pt": "Às vezes comparas-te com os outros? Quando é que isso acontece mais?",
+"pt_BR": "Você às vezes se compara com os outros? Quando isso acontece mais?"
+}
+},
+{
+"id": "self_confidence-055",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of clothes make you feel comfortable and like yourself?",
+"de": "In welcher Kleidung fühlst du dich wohl und ganz wie du selbst?",
+"es": "¿Con qué ropa te sientes cómodo y tú mismo?",
+"fr": "Dans quels vêtements te sens-tu à l'aise et toi-même ?",
+"it": "Con quali vestiti ti senti a tuo agio e te stesso?",
+"pt": "Com que roupa te sentes confortável e tu próprio?",
+"pt_BR": "Com que tipo de roupa você se sente confortável e você mesmo?"
+}
+},
+{
+"id": "self_confidence-056",
+"lv": "beginner",
+"i18n": {
+"en": "Which part of your day gives you the most energy?",
+"de": "Welcher Teil deines Tages gibt dir am meisten Energie?",
+"es": "¿Qué parte del día te da más energía?",
+"fr": "Quel moment de ta journée te donne le plus d'énergie ?",
+"it": "Quale momento della giornata ti dà più energia?",
+"pt": "Que parte do teu dia te dá mais energia?",
+"pt_BR": "Qual parte do seu dia te dá mais energia?"
+}
+},
+{
+"id": "self_confidence-057",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do when you feel unsure about a decision?",
+"de": "Was machst du, wenn du dir bei einer Entscheidung unsicher bist?",
+"es": "¿Qué haces cuando dudas sobre una decisión?",
+"fr": "Que fais-tu quand tu hésites face à une décision ?",
+"it": "Cosa fai quando sei incerto su una decisione?",
+"pt": "O que fazes quando tens dúvidas sobre uma decisão?",
+"pt_BR": "O que você faz quando fica em dúvida sobre uma decisão?"
+}
+},
+{
+"id": "self_confidence-058",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about speaking up in a group?",
+"de": "Wie fühlst du dich dabei, in einer Gruppe deine Meinung zu sagen?",
+"es": "¿Cómo te sientes al dar tu opinión en un grupo?",
+"fr": "Comment te sens-tu quand il faut prendre la parole en groupe ?",
+"it": "Come ti senti quando prendi la parola in un gruppo?",
+"pt": "Como te sentes quando falas num grupo?",
+"pt_BR": "Como você se sente ao falar em grupo?"
+}
+},
+{
+"id": "self_confidence-059",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of feedback do you find most helpful?",
+"de": "Welche Art von Feedback findest du am hilfreichsten?",
+"es": "¿Qué tipo de comentarios te resultan más útiles?",
+"fr": "Quel genre de retour trouves-tu le plus utile ?",
+"it": "Che tipo di feedback trovi più utile?",
+"pt": "Que tipo de feedback achas mais útil?",
+"pt_BR": "Que tipo de feedback você acha mais útil?"
+}
+},
+{
+"id": "self_confidence-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which brave little step have you taken recently?",
+"de": "Welchen mutigen kleinen Schritt hast du kürzlich gemacht?",
+"es": "¿Qué pequeño paso valiente has dado últimamente?",
+"fr": "Quel petit pas courageux as-tu fait récemment ?",
+"it": "Quale piccolo passo coraggioso hai fatto di recente?",
+"pt": "Que pequeno passo corajoso deste recentemente?",
+"pt_BR": "Que pequeno passo corajoso você deu recentemente?"
+}
+},
+{
+"id": "self_confidence-061",
+"lv": "beginner",
+"i18n": {
+"en": "How do you like to prepare for a phone call or meeting?",
+"de": "Wie bereitest du dich gern auf ein Telefonat oder ein Treffen vor?",
+"es": "¿Cómo te gusta prepararte para una llamada o una reunión?",
+"fr": "Comment aimes-tu te préparer à un appel ou à une réunion ?",
+"it": "Come ti piace prepararti a una telefonata o a una riunione?",
+"pt": "Como gostas de te preparar para uma chamada ou reunião?",
+"pt_BR": "Como você gosta de se preparar para uma ligação ou reunião?"
+}
+},
+{
+"id": "self_confidence-062",
+"lv": "beginner",
+"i18n": {
+"en": "What is one thing you'd like to stop apologising for?",
+"de": "Wofür würdest du dich gern nicht mehr ständig entschuldigen?",
+"es": "¿Por qué cosa te gustaría dejar de pedir perdón?",
+"fr": "Pour quoi aimerais-tu arrêter de t'excuser ?",
+"it": "Per cosa vorresti smettere di chiedere scusa?",
+"pt": "Por que coisa gostavas de deixar de pedir desculpa?",
+"pt_BR": "Por qual coisa você gostaria de parar de pedir desculpas?"
+}
+},
+{
+"id": "self_confidence-063",
+"lv": "beginner",
+"i18n": {
+"en": "Which fear would you like to make a bit smaller?",
+"de": "Welche Angst würdest du gern ein bisschen kleiner machen?",
+"es": "¿Qué miedo te gustaría hacer un poco más pequeño?",
+"fr": "Quelle peur aimerais-tu rendre un peu plus petite ?",
+"it": "Quale paura vorresti rendere un po' più piccola?",
+"pt": "Que medo gostavas de tornar um pouco mais pequeno?",
+"pt_BR": "Que medo você gostaria de diminuir um pouco?"
+}
+},
+{
+"id": "self_confidence-064",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you bounce back after a disappointing day?",
+"de": "Was hilft dir, nach einem enttäuschenden Tag wieder aufzustehen?",
+"es": "¿Qué te ayuda a recuperarte después de un día decepcionante?",
+"fr": "Qu'est-ce qui t'aide à rebondir après une journée décevante ?",
+"it": "Cosa ti aiuta a riprenderti dopo una giornata deludente?",
+"pt": "O que te ajuda a recuperar depois de um dia dececionante?",
+"pt_BR": "O que te ajuda a se recuperar depois de um dia decepcionante?"
+}
+},
+{
+"id": "self_confidence-065",
+"lv": "beginner",
+"i18n": {
+"en": "How does your favourite person make you feel more confident?",
+"de": "Wie gibt dir dein Lieblingsmensch mehr Selbstvertrauen?",
+"es": "¿Cómo te ayuda tu persona favorita a sentirte con más confianza?",
+"fr": "Comment ta personne préférée t'aide-t-elle à avoir plus confiance en toi ?",
+"it": "In che modo la tua persona preferita ti fa sentire più sicuro di te?",
+"pt": "De que forma a tua pessoa preferida te dá mais confiança?",
+"pt_BR": "De que jeito a sua pessoa favorita faz você se sentir mais confiante?"
+}
+},
+{
+"id": "self_confidence-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you say no when you don't want to do something?",
+"de": "Wie sagst du Nein, wenn du etwas nicht machen möchtest?",
+"es": "¿Cómo dices que no cuando no quieres hacer algo?",
+"fr": "Comment dis-tu non quand tu ne veux pas faire quelque chose ?",
+"it": "Come dici di no quando non vuoi fare qualcosa?",
+"pt": "Como dizes que não quando não queres fazer alguma coisa?",
+"pt_BR": "Como você diz não quando não quer fazer alguma coisa?"
+}
+},
+{
+"id": "self_confidence-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you do when someone criticises your work?",
+"de": "Was machst du, wenn jemand deine Arbeit kritisiert?",
+"es": "¿Qué haces cuando alguien critica tu trabajo?",
+"fr": "Que fais-tu quand quelqu'un critique ton travail ?",
+"it": "Cosa fai quando qualcuno critica il tuo lavoro?",
+"pt": "O que fazes quando alguém critica o teu trabalho?",
+"pt_BR": "O que você faz quando alguém critica o seu trabalho?"
+}
+},
+{
+"id": "self_confidence-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Which thought tends to hold you back, and how could you answer it?",
+"de": "Welcher Gedanke bremst dich oft, und wie könntest du ihm antworten?",
+"es": "¿Qué pensamiento suele frenarte y cómo podrías responderle?",
+"fr": "Quelle pensée a tendance à te freiner, et comment pourrais-tu lui répondre ?",
+"it": "Quale pensiero tende a frenarti, e come potresti rispondergli?",
+"pt": "Que pensamento costuma travar-te, e como lhe podias responder?",
+"pt_BR": "Que pensamento costuma te travar, e como você poderia responder a ele?"
+}
+},
+{
+"id": "self_confidence-069",
+"lv": "intermediate",
+"i18n": {
+"en": "When did you last share an opinion that was different from others'?",
+"de": "Wann hast du zuletzt eine Meinung geäußert, die anders war als die der anderen?",
+"es": "¿Cuándo fue la última vez que diste una opinión distinta a la de los demás?",
+"fr": "Quand as-tu partagé pour la dernière fois un avis différent de celui des autres ?",
+"it": "Quando hai espresso l'ultima volta un'opinione diversa da quella degli altri?",
+"pt": "Quando foi a última vez que deste uma opinião diferente da dos outros?",
+"pt_BR": "Quando foi a última vez que você deu uma opinião diferente da dos outros?"
+}
+},
+{
+"id": "self_confidence-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle moments when your mind goes blank?",
+"de": "Wie gehst du mit Momenten um, in denen du einen Blackout hast?",
+"es": "¿Cómo manejas los momentos en que te quedas en blanco?",
+"fr": "Comment gères-tu les moments où tu as un trou de mémoire ?",
+"it": "Come gestisci i momenti in cui hai un vuoto?",
+"pt": "Como lidas com os momentos em que te dá uma branca?",
+"pt_BR": "Como você lida com os momentos em que dá um branco?"
+}
+},
+{
+"id": "self_confidence-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What boundary would make your days feel lighter?",
+"de": "Welche Grenze würde deine Tage leichter machen?",
+"es": "¿Qué límite haría que tus días fueran más ligeros?",
+"fr": "Quelle limite rendrait tes journées plus légères ?",
+"it": "Quale limite renderebbe le tue giornate più leggere?",
+"pt": "Que limite tornaria os teus dias mais leves?",
+"pt_BR": "Que limite deixaria os seus dias mais leves?"
+}
+},
+{
+"id": "self_confidence-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel when someone interrupts you, and what do you do?",
+"de": "Wie fühlst du dich, wenn dich jemand unterbricht, und was machst du dann?",
+"es": "¿Cómo te sientes cuando alguien te interrumpe y qué haces?",
+"fr": "Comment te sens-tu quand quelqu'un te coupe la parole, et que fais-tu ?",
+"it": "Come ti senti quando qualcuno ti interrompe, e cosa fai?",
+"pt": "Como te sentes quando alguém te interrompe, e o que fazes?",
+"pt_BR": "Como você se sente quando alguém te interrompe, e o que você faz?"
+}
+},
+{
+"id": "self_confidence-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which success do you tend to give yourself too little credit for?",
+"de": "Für welchen Erfolg gibst du dir selbst oft zu wenig Anerkennung?",
+"es": "¿Qué logro tiendes a reconocerte demasiado poco?",
+"fr": "Quelle réussite as-tu tendance à trop peu reconnaître ?",
+"it": "Quale successo tendi a riconoscerti troppo poco?",
+"pt": "Que conquista tendes a valorizar pouco demais?",
+"pt_BR": "Qual conquista você costuma valorizar menos do que deveria?"
+}
+},
+{
+"id": "self_confidence-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you like to ask for at work or in your studies?",
+"de": "Worum würdest du bei der Arbeit oder im Studium gern bitten?",
+"es": "¿Qué te gustaría pedir en el trabajo o en tus estudios?",
+"fr": "Que voudrais-tu demander au travail ou dans tes études ?",
+"it": "Cosa vorresti chiedere al lavoro o nei tuoi studi?",
+"pt": "O que gostavas de pedir no trabalho ou nos estudos?",
+"pt_BR": "O que você gostaria de pedir no trabalho ou nos estudos?"
+}
+},
+{
+"id": "self_confidence-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you stay motivated when progress feels slow?",
+"de": "Wie bleibst du motiviert, wenn Fortschritte langsam kommen?",
+"es": "¿Cómo mantienes la motivación cuando el progreso es lento?",
+"fr": "Comment restes-tu motivé ou motivée quand les progrès sont lents ?",
+"it": "Come resti motivato quando i progressi sono lenti?",
+"pt": "Como te manténs motivado quando o progresso parece lento?",
+"pt_BR": "Como você se mantém motivado quando o progresso parece lento?"
+}
+},
+{
+"id": "self_confidence-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which situation used to scare you but feels easier now?",
+"de": "Welche Situation hat dir früher Angst gemacht und fällt dir heute leichter?",
+"es": "¿Qué situación antes te asustaba y ahora te resulta más fácil?",
+"fr": "Quelle situation te faisait peur avant et te semble plus facile aujourd'hui ?",
+"it": "Quale situazione prima ti spaventava e ora ti sembra più facile?",
+"pt": "Que situação te assustava antes e agora parece mais fácil?",
+"pt_BR": "Que situação te dava medo antes e agora parece mais fácil?"
+}
+},
+{
+"id": "self_confidence-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about speaking in front of a few people?",
+"de": "Wie geht es dir damit, vor ein paar Leuten zu sprechen?",
+"es": "¿Cómo te sientes al hablar delante de unas cuantas personas?",
+"fr": "Comment te sens-tu quand tu dois parler devant quelques personnes ?",
+"it": "Come ti senti a parlare davanti a qualche persona?",
+"pt": "Como te sentes a falar à frente de algumas pessoas?",
+"pt_BR": "Como você se sente falando na frente de algumas pessoas?"
+}
+},
+{
+"id": "self_confidence-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What does a fair, balanced view of yourself sound like?",
+"de": "Wie klingt ein fairer, ausgewogener Blick auf dich selbst?",
+"es": "¿Cómo suena una visión justa y equilibrada de ti?",
+"fr": "À quoi ressemble un regard juste et équilibré sur toi-même ?",
+"it": "Come suona uno sguardo giusto ed equilibrato su te stesso?",
+"pt": "Como soa uma visão justa e equilibrada de ti próprio?",
+"pt_BR": "Como seria uma visão justa e equilibrada de si mesmo?"
+}
+},
+{
+"id": "self_confidence-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you respond when a plan doesn't work out?",
+"de": "Wie reagierst du, wenn ein Plan nicht aufgeht?",
+"es": "¿Cómo reaccionas cuando un plan no sale bien?",
+"fr": "Comment réagis-tu quand un projet ne se passe pas comme prévu ?",
+"it": "Come reagisci quando un piano non va in porto?",
+"pt": "Como reages quando um plano não corre bem?",
+"pt_BR": "Como você reage quando um plano não dá certo?"
+}
+},
+{
+"id": "self_confidence-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Who could be a good mentor or role model for you?",
+"de": "Wer könnte ein gutes Vorbild oder ein guter Mentor für dich sein?",
+"es": "¿Quién podría ser un buen mentor o referente para ti?",
+"fr": "Qui pourrait être un bon mentor ou un modèle pour toi ?",
+"it": "Chi potrebbe essere un buon mentore o un modello per te?",
+"pt": "Quem podia ser um bom mentor ou uma boa referência para ti?",
+"pt_BR": "Quem poderia ser um bom mentor ou uma boa referência para você?"
+}
+},
+{
+"id": "self_confidence-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you do to feel at ease in a new culture or place?",
+"de": "Was tust du, um dich in einer neuen Kultur oder an einem neuen Ort wohlzufühlen?",
+"es": "¿Qué haces para sentirte a gusto en una cultura o un lugar nuevo?",
+"fr": "Que fais-tu pour te sentir à l'aise dans une nouvelle culture ou un nouvel endroit ?",
+"it": "Cosa fai per sentirti a tuo agio in una nuova cultura o in un posto nuovo?",
+"pt": "O que fazes para te sentires à vontade numa cultura ou num lugar novo?",
+"pt_BR": "O que você faz para se sentir à vontade numa cultura ou num lugar novo?"
+}
+},
+{
+"id": "self_confidence-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you show your real personality in a group?",
+"de": "Wie zeigst du in einer Gruppe deine echte Persönlichkeit?",
+"es": "¿Cómo muestras tu verdadera personalidad en un grupo?",
+"fr": "Comment montres-tu ta vraie personnalité dans un groupe ?",
+"it": "Come mostri la tua vera personalità in un gruppo?",
+"pt": "Como mostras a tua verdadeira personalidade num grupo?",
+"pt_BR": "Como você mostra sua verdadeira personalidade num grupo?"
+}
+},
+{
+"id": "self_confidence-083",
+"lv": "intermediate",
+"i18n": {
+"en": "Which stretch goal would make you proud a month from now?",
+"de": "Welches ehrgeizige Ziel würde dich in einem Monat stolz machen?",
+"es": "¿Qué meta ambiciosa te haría sentir orgullo dentro de un mes?",
+"fr": "Quel objectif ambitieux te rendrait fier ou fière dans un mois ?",
+"it": "Quale obiettivo ambizioso ti renderebbe orgoglioso tra un mese?",
+"pt": "Que objetivo ambicioso te deixaria orgulhoso daqui a um mês?",
+"pt_BR": "Que meta ousada te deixaria orgulhoso daqui a um mês?"
+}
+},
+{
+"id": "self_confidence-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about doing things alone, like going to a café or an event?",
+"de": "Wie geht es dir damit, Dinge allein zu machen, etwa ins Café oder zu einer Veranstaltung zu gehen?",
+"es": "¿Qué tal llevas hacer cosas solo, como ir a un café o a un evento?",
+"fr": "Comment vis-tu le fait de sortir seul ou seule, au café ou à un événement ?",
+"it": "Come ti trovi a fare cose da solo, come andare al bar o a un evento?",
+"pt": "Como te sentes a fazer coisas sozinho, como ir a um café ou a um evento?",
+"pt_BR": "Como você se sente fazendo coisas sozinho, como ir a um café ou a um evento?"
+}
+},
+{
+"id": "self_confidence-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a story about yourself you love telling?",
+"de": "Welche Geschichte über dich erzählst du besonders gern?",
+"es": "¿Qué historia sobre ti te encanta contar?",
+"fr": "Quelle anecdote sur toi adores-tu raconter ?",
+"it": "Quale storia su di te ami raccontare?",
+"pt": "Que história sobre ti adoras contar?",
+"pt_BR": "Qual história sua você adora contar?"
+}
+},
+{
+"id": "self_confidence-086",
+"lv": "advanced",
+"i18n": {
+"en": "How do you stay calm when the stakes feel high?",
+"de": "Wie bleibst du ruhig, wenn viel auf dem Spiel steht?",
+"es": "¿Cómo mantienes la calma cuando hay mucho en juego?",
+"fr": "Comment restes-tu calme quand l'enjeu est important ?",
+"it": "Come resti calmo quando la posta in gioco è alta?",
+"pt": "Como manténs a calma quando há muito em jogo?",
+"pt_BR": "Como você mantém a calma quando tem muita coisa em jogo?"
+}
+},
+{
+"id": "self_confidence-087",
+"lv": "advanced",
+"i18n": {
+"en": "What kind of leader would you like to be, even in small groups?",
+"de": "Was für eine Führungsperson möchtest du sein, auch in kleinen Gruppen?",
+"es": "¿Qué tipo de líder te gustaría ser, incluso en grupos pequeños?",
+"fr": "Quel genre de leader aimerais-tu être, même dans de petits groupes ?",
+"it": "Che tipo di leader vorresti essere, anche in piccoli gruppi?",
+"pt": "Que tipo de líder gostavas de ser, mesmo em grupos pequenos?",
+"pt_BR": "Que tipo de líder você gostaria de ser, mesmo em grupos pequenos?"
+}
+},
+{
+"id": "self_confidence-088",
+"lv": "advanced",
+"i18n": {
+"en": "How do you handle disagreement while staying kind and firm?",
+"de": "Wie gehst du mit Meinungsverschiedenheiten um und bleibst dabei freundlich und klar?",
+"es": "¿Cómo manejas un desacuerdo sin dejar de ser amable y firme?",
+"fr": "Comment gères-tu un désaccord tout en restant aimable et ferme ?",
+"it": "Come gestisci un disaccordo restando gentile e deciso?",
+"pt": "Como lidas com um desacordo mantendo-te simpático e firme?",
+"pt_BR": "Como você lida com um desacordo sendo gentil e firme ao mesmo tempo?"
+}
+},
+{
+"id": "self_confidence-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which big decision would you like to approach with more courage?",
+"de": "Welche große Entscheidung würdest du gern mutiger angehen?",
+"es": "¿Qué gran decisión te gustaría afrontar con más valentía?",
+"fr": "Quelle grande décision aimerais-tu aborder avec plus de courage ?",
+"it": "Quale grande decisione vorresti affrontare con più coraggio?",
+"pt": "Que grande decisão gostavas de enfrentar com mais coragem?",
+"pt_BR": "Que grande decisão você gostaria de encarar com mais coragem?"
+}
+},
+{
+"id": "self_confidence-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep going when others doubt your plans?",
+"de": "Wie bleibst du dran, wenn andere an deinen Plänen zweifeln?",
+"es": "¿Cómo sigues adelante cuando otros dudan de tus planes?",
+"fr": "Comment continues-tu quand les autres doutent de tes projets ?",
+"it": "Come vai avanti quando gli altri dubitano dei tuoi piani?",
+"pt": "Como continuas quando os outros duvidam dos teus planos?",
+"pt_BR": "Como você segue em frente quando os outros duvidam dos seus planos?"
+}
+},
+{
+"id": "self_confidence-091",
+"lv": "advanced",
+"i18n": {
+"en": "What does success mean to you, in your own words?",
+"de": "Was bedeutet Erfolg für dich, in deinen eigenen Worten?",
+"es": "¿Qué significa el éxito para ti, con tus propias palabras?",
+"fr": "Que signifie la réussite pour toi, avec tes propres mots ?",
+"it": "Cosa significa per te il successo, con parole tue?",
+"pt": "O que significa sucesso para ti, por palavras tuas?",
+"pt_BR": "O que significa sucesso para você, com suas próprias palavras?"
+}
+},
+{
+"id": "self_confidence-092",
+"lv": "advanced",
+"i18n": {
+"en": "How has your inner critic changed over time?",
+"de": "Wie hat sich deine innere kritische Stimme mit der Zeit verändert?",
+"es": "¿Cómo ha cambiado tu crítico interior con el tiempo?",
+"fr": "Comment ta petite voix critique a-t-elle changé avec le temps ?",
+"it": "Come è cambiata nel tempo la tua voce critica interiore?",
+"pt": "Como mudou o teu crítico interior ao longo do tempo?",
+"pt_BR": "Como o seu crítico interior mudou com o tempo?"
+}
+},
+{
+"id": "self_confidence-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which setback turned out to be a turning point for you?",
+"de": "Welcher Rückschlag hat sich für dich als Wendepunkt herausgestellt?",
+"es": "¿Qué tropiezo acabó siendo un punto de inflexión para ti?",
+"fr": "Quel revers s'est finalement révélé être un tournant pour toi ?",
+"it": "Quale battuta d'arresto si è rivelata per te una svolta?",
+"pt": "Que contratempo acabou por ser um ponto de viragem para ti?",
+"pt_BR": "Qual tropeço acabou sendo uma virada na sua vida?"
+}
+},
+{
+"id": "self_confidence-094",
+"lv": "advanced",
+"i18n": {
+"en": "How do you help quieter people feel included?",
+"de": "Wie hilfst du ruhigeren Menschen, sich einbezogen zu fühlen?",
+"es": "¿Cómo ayudas a las personas más calladas a sentirse incluidas?",
+"fr": "Comment aides-tu les personnes plus discrètes à se sentir incluses ?",
+"it": "Come aiuti le persone più riservate a sentirsi incluse?",
+"pt": "Como ajudas as pessoas mais caladas a sentirem-se incluídas?",
+"pt_BR": "Como você ajuda as pessoas mais quietas a se sentirem incluídas?"
+}
+},
+{
+"id": "self_confidence-095",
+"lv": "advanced",
+"i18n": {
+"en": "What would you like people to feel after spending time with you?",
+"de": "Was sollen Menschen fühlen, nachdem sie Zeit mit dir verbracht haben?",
+"es": "¿Qué te gustaría que la gente sintiera después de pasar tiempo contigo?",
+"fr": "Que voudrais-tu que les gens ressentent après avoir passé du temps avec toi ?",
+"it": "Cosa vorresti che le persone provassero dopo aver passato del tempo con te?",
+"pt": "O que gostavas que as pessoas sentissem depois de passarem tempo contigo?",
+"pt_BR": "O que você gostaria que as pessoas sentissem depois de passar um tempo com você?"
+}
+},
+{
+"id": "self_confidence-096",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance humility and confidence?",
+"de": "Wie bringst du Bescheidenheit und Selbstvertrauen in Einklang?",
+"es": "¿Cómo equilibras la humildad y la confianza en ti?",
+"fr": "Comment trouves-tu l'équilibre entre humilité et confiance en toi ?",
+"it": "Come trovi l'equilibrio tra umiltà e fiducia in te stesso?",
+"pt": "Como equilibras a humildade e a autoconfiança?",
+"pt_BR": "Como você equilibra humildade e autoconfiança?"
+}
+},
+{
+"id": "self_confidence-097",
+"lv": "advanced",
+"i18n": {
+"en": "What brave step could you plan for the coming months?",
+"de": "Welchen mutigen Schritt könntest du für die kommenden Monate planen?",
+"es": "¿Qué paso valiente podrías planear para los próximos meses?",
+"fr": "Quel pas courageux pourrais-tu prévoir pour les mois à venir ?",
+"it": "Quale passo coraggioso potresti pianificare per i prossimi mesi?",
+"pt": "Que passo corajoso podias planear para os próximos meses?",
+"pt_BR": "Que passo corajoso você poderia planejar para os próximos meses?"
+}
+},
+{
+"id": "self_confidence-098",
+"lv": "advanced",
+"i18n": {
+"en": "How do you encourage someone who is losing faith in themselves?",
+"de": "Wie ermutigst du jemanden, der den Glauben an sich selbst verliert?",
+"es": "¿Cómo animas a alguien que está perdiendo la confianza en sí mismo?",
+"fr": "Comment encourages-tu quelqu'un qui perd confiance en lui ?",
+"it": "Come incoraggi qualcuno che sta perdendo fiducia in sé stesso?",
+"pt": "Como encorajas alguém que está a perder a confiança em si próprio?",
+"pt_BR": "Como você encoraja alguém que está perdendo a confiança em si mesmo?"
+}
+},
+{
+"id": "self_confidence-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which confidence tools would you teach a younger person?",
+"de": "Welche Werkzeuge für mehr Selbstvertrauen würdest du einem jüngeren Menschen beibringen?",
+"es": "¿Qué herramientas de confianza le enseñarías a una persona más joven?",
+"fr": "Quels outils de confiance en soi transmettrais-tu à une personne plus jeune ?",
+"it": "Quali strumenti per la fiducia in sé insegneresti a una persona più giovane?",
+"pt": "Que ferramentas de autoconfiança ensinarias a alguém mais novo?",
+"pt_BR": "Quais ferramentas de autoconfiança você ensinaria para alguém mais novo?"
+}
+},
+{
+"id": "self_confidence-100",
+"lv": "advanced",
+"i18n": {
+"en": "Looking back, how has your confidence grown, and what comes next?",
+"de": "Wenn du zurückblickst: Wie ist dein Selbstvertrauen gewachsen, und was kommt als Nächstes?",
+"es": "Mirando atrás, ¿cómo ha crecido tu confianza y qué viene ahora?",
+"fr": "Avec du recul, comment ta confiance a-t-elle grandi, et quelle est la suite ?",
+"it": "Guardando indietro, come è cresciuta la tua fiducia in te, e cosa viene dopo?",
+"pt": "Olhando para trás, como cresceu a tua confiança, e o que vem a seguir?",
+"pt_BR": "Olhando para trás, como sua confiança cresceu, e o que vem agora?"
+}
+}
+]
+}

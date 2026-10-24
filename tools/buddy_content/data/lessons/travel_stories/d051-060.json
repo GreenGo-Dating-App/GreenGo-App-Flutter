@@ -1,0 +1,835 @@
+{
+ "topic": "travel_stories",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Night-time adventures",
+     "g": "Tell stories of evening markets, starry skies and city lights.",
+     "p": [
+      "Night changes a place: new sounds, new smells, different people outside.",
+      "Light words help: glowing lanterns, neon signs, a sky full of stars.",
+      "Keep night stories cosy and safe: a late snack, a slow walk, a quiet beach."
+     ],
+     "q": "What is the most magical evening you have spent on a trip?",
+     "c": "Describe a night-time scene from a trip with one light and one sound."
+    },
+    "de": {
+     "t": "Abenteuer bei Nacht",
+     "g": "Erzähl von Abendmärkten, Sternenhimmeln und Lichtern der Stadt.",
+     "p": [
+      "Die Nacht verändert einen Ort: neue Geräusche, neue Gerüche, andere Menschen draußen.",
+      "Lichtwörter helfen: leuchtende Laternen, Neonschilder, ein Himmel voller Sterne.",
+      "Halte Nachtgeschichten gemütlich: ein später Snack, ein langsamer Spaziergang, ein stiller Strand."
+     ],
+     "q": "Was war der magischste Abend auf einer deiner Reisen?",
+     "c": "Beschreib eine nächtliche Reiseszene mit einem Licht und einem Geräusch."
+    },
+    "es": {
+     "t": "Aventuras nocturnas",
+     "g": "Cuenta historias de mercados al anochecer, cielos estrellados y luces de la ciudad.",
+     "p": [
+      "La noche cambia un lugar: nuevos sonidos, nuevos olores, otra gente en la calle.",
+      "Las palabras de luz ayudan: farolillos encendidos, letreros de neón, un cielo lleno de estrellas.",
+      "Mantén las historias nocturnas acogedoras: un tentempié tardío, un paseo lento, una playa tranquila."
+     ],
+     "q": "¿Cuál es la noche más mágica que has pasado en un viaje?",
+     "c": "Describe una escena nocturna de un viaje con una luz y un sonido."
+    },
+    "fr": {
+     "t": "Aventures nocturnes",
+     "g": "Raconte les marchés du soir, les ciels étoilés et les lumières de la ville.",
+     "p": [
+      "La nuit transforme un lieu : nouveaux sons, nouvelles odeurs, d'autres gens dehors.",
+      "Les mots de lumière aident : lanternes allumées, enseignes au néon, ciel rempli d'étoiles.",
+      "Garde des récits nocturnes douillets : un en-cas tardif, une balade lente, une plage calme."
+     ],
+     "q": "Quelle est la soirée la plus magique que tu aies passée en voyage ?",
+     "c": "Décris une scène nocturne de voyage avec une lumière et un son."
+    },
+    "it": {
+     "t": "Avventure notturne",
+     "g": "Racconta mercati serali, cieli stellati e luci della città.",
+     "p": [
+      "La notte cambia un luogo: nuovi suoni, nuovi profumi, altre persone in giro.",
+      "Le parole di luce aiutano: lanterne accese, insegne al neon, un cielo pieno di stelle.",
+      "Mantieni le storie notturne accoglienti: uno spuntino tardivo, una passeggiata lenta, una spiaggia tranquilla."
+     ],
+     "q": "Qual è la serata più magica che hai passato in viaggio?",
+     "c": "Descrivi una scena notturna di un viaggio con una luce e un suono."
+    },
+    "pt": {
+     "t": "Aventuras noturnas",
+     "g": "Conta histórias de mercados ao anoitecer, céus estrelados e luzes da cidade.",
+     "p": [
+      "A noite muda um lugar: novos sons, novos cheiros, outras pessoas na rua.",
+      "As palavras de luz ajudam: lanternas acesas, letreiros de néon, um céu cheio de estrelas.",
+      "Mantém as histórias noturnas aconchegantes: um petisco tardio, um passeio lento, uma praia sossegada."
+     ],
+     "q": "Qual foi a noite mais mágica que passaste numa viagem?",
+     "c": "Descreve uma cena noturna de uma viagem com uma luz e um som."
+    },
+    "pt_BR": {
+     "t": "Aventuras noturnas",
+     "g": "Conte histórias de feiras à noite, céus estrelados e luzes da cidade.",
+     "p": [
+      "A noite muda um lugar: novos sons, novos cheiros, outras pessoas na rua.",
+      "Palavras de luz ajudam: lanternas acesas, letreiros de neon, um céu cheio de estrelas.",
+      "Mantenha as histórias noturnas aconchegantes: um lanche tarde, uma caminhada lenta, uma praia tranquila."
+     ],
+     "q": "Qual foi a noite mais mágica que você passou em uma viagem?",
+     "c": "Descreva uma cena noturna de uma viagem com uma luz e um som."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Museums that surprised you",
+     "g": "Focus on a single object or room that stayed with you after a museum visit.",
+     "p": [
+      "Do not list the whole museum; pick one object and zoom in.",
+      "Say why it moved you: its age, its story, its tiny details.",
+      "Museum stories work best with your reaction: you stopped, you came back to look again."
+     ],
+     "q": "Which object in a museum has stayed in your memory, and why?",
+     "c": "Recall one museum visit and describe a single object in three sentences."
+    },
+    "de": {
+     "t": "Museen, die dich überrascht haben",
+     "g": "Konzentrier dich auf ein einziges Objekt oder einen Raum, der dir nach einem Museumsbesuch geblieben ist.",
+     "p": [
+      "Zähl nicht das ganze Museum auf; wähle ein Objekt und zoom hinein.",
+      "Sag, warum es dich berührt hat: sein Alter, seine Geschichte, seine winzigen Details.",
+      "Museumsgeschichten wirken am besten mit deiner Reaktion: Du bliebst stehen, kamst zurück."
+     ],
+     "q": "Welches Museumsobjekt ist dir im Gedächtnis geblieben, und warum?",
+     "c": "Denk an einen Museumsbesuch und beschreib ein einziges Objekt in drei Sätzen."
+    },
+    "es": {
+     "t": "Museos que te sorprendieron",
+     "g": "Céntrate en un solo objeto o sala que se te quedó grabado tras visitar un museo.",
+     "p": [
+      "No enumeres todo el museo; elige un objeto y acércate.",
+      "Di por qué te emocionó: su antigüedad, su historia, sus pequeños detalles.",
+      "Las historias de museo funcionan mejor con tu reacción: te paraste, volviste a mirarlo."
+     ],
+     "q": "¿Qué objeto de un museo se te ha quedado en la memoria y por qué?",
+     "c": "Recuerda una visita a un museo y describe un solo objeto en tres frases."
+    },
+    "fr": {
+     "t": "Les musées qui t'ont surpris",
+     "g": "Concentre-toi sur un seul objet ou une seule salle qui t'est resté après une visite.",
+     "p": [
+      "N'énumère pas tout le musée : choisis un objet et fais un zoom.",
+      "Dis pourquoi il t'a touché : son âge, son histoire, ses minuscules détails.",
+      "Les récits de musée marchent mieux avec ta réaction : tu t'es arrêté, tu es revenu le voir."
+     ],
+     "q": "Quel objet de musée est resté dans ta mémoire, et pourquoi ?",
+     "c": "Repense à une visite de musée et décris un seul objet en trois phrases."
+    },
+    "it": {
+     "t": "Musei che ti hanno sorpreso",
+     "g": "Concentrati su un solo oggetto o una sala che ti è rimasta dopo una visita al museo.",
+     "p": [
+      "Non elencare tutto il museo; scegli un oggetto e fai uno zoom.",
+      "Di' perché ti ha colpito: la sua età, la sua storia, i suoi minuscoli dettagli.",
+      "Le storie di museo funzionano meglio con la tua reazione: ti sei fermato, sei tornato a guardarlo."
+     ],
+     "q": "Quale oggetto di un museo ti è rimasto in mente, e perché?",
+     "c": "Ripensa a una visita al museo e descrivi un solo oggetto in tre frasi."
+    },
+    "pt": {
+     "t": "Museus que te surpreenderam",
+     "g": "Concentra-te num só objeto ou sala que te ficou na memória depois de visitares um museu.",
+     "p": [
+      "Não enumeres o museu todo; escolhe um objeto e aproxima-te.",
+      "Diz porque te tocou: a idade, a história, os pormenores minúsculos.",
+      "As histórias de museu resultam melhor com a tua reação: paraste, voltaste para ver outra vez."
+     ],
+     "q": "Que objeto de um museu te ficou na memória e porquê?",
+     "c": "Lembra-te de uma visita a um museu e descreve um só objeto em três frases."
+    },
+    "pt_BR": {
+     "t": "Museus que surpreenderam você",
+     "g": "Foque em um único objeto ou sala que ficou com você depois de visitar um museu.",
+     "p": [
+      "Não liste o museu inteiro; escolha um objeto e chegue mais perto.",
+      "Diga por que ele tocou você: a idade, a história, os detalhes minúsculos.",
+      "Histórias de museu funcionam melhor com sua reação: você parou, voltou para olhar de novo."
+     ],
+     "q": "Qual objeto de um museu ficou na sua memória e por quê?",
+     "c": "Lembre uma visita a um museu e descreva um único objeto em três frases."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Buildings that amazed you",
+     "g": "Describe towers, bridges and old towns with simple, vivid words.",
+     "p": [
+      "Use comparisons: as tall as ten houses, thin as a pencil, like a giant cake.",
+      "Mention materials and colours: red brick, white stone, shining glass.",
+      "Add your position: standing below, looking down from the top, crossing it."
+     ],
+     "q": "Which building or bridge has amazed you most, in person or in a photo?",
+     "c": "Describe a building you love using one comparison and one colour."
+    },
+    "de": {
+     "t": "Bauwerke, die dich beeindruckt haben",
+     "g": "Beschreib Türme, Brücken und Altstädte mit einfachen, lebendigen Worten.",
+     "p": [
+      "Nutze Vergleiche: so hoch wie zehn Häuser, dünn wie ein Bleistift, wie eine riesige Torte.",
+      "Nenne Materialien und Farben: roter Backstein, weißer Stein, glänzendes Glas.",
+      "Füg deinen Standort hinzu: unten stehend, von oben herabblickend, beim Überqueren."
+     ],
+     "q": "Welches Gebäude oder welche Brücke hat dich am meisten beeindruckt, live oder auf Fotos?",
+     "c": "Beschreib ein Gebäude, das du magst, mit einem Vergleich und einer Farbe."
+    },
+    "es": {
+     "t": "Edificios que te asombraron",
+     "g": "Describe torres, puentes y cascos antiguos con palabras sencillas y vivas.",
+     "p": [
+      "Usa comparaciones: alto como diez casas, fino como un lápiz, como una tarta gigante.",
+      "Menciona materiales y colores: ladrillo rojo, piedra blanca, cristal brillante.",
+      "Añade tu posición: de pie abajo, mirando desde arriba, cruzándolo."
+     ],
+     "q": "¿Qué edificio o puente te ha asombrado más, en persona o en foto?",
+     "c": "Describe un edificio que te guste con una comparación y un color."
+    },
+    "fr": {
+     "t": "Les bâtiments qui t'ont ébloui",
+     "g": "Décris tours, ponts et vieilles villes avec des mots simples et vivants.",
+     "p": [
+      "Utilise des comparaisons : haut comme dix maisons, fin comme un crayon, comme un gâteau géant.",
+      "Mentionne matériaux et couleurs : brique rouge, pierre blanche, verre brillant.",
+      "Ajoute ta position : debout en bas, regardant d'en haut, en le traversant."
+     ],
+     "q": "Quel bâtiment ou quel pont t'a le plus ébloui, en vrai ou en photo ?",
+     "c": "Décris un bâtiment que tu aimes avec une comparaison et une couleur."
+    },
+    "it": {
+     "t": "Edifici che ti hanno stupito",
+     "g": "Descrivi torri, ponti e centri storici con parole semplici e vivaci.",
+     "p": [
+      "Usa paragoni: alto come dieci case, sottile come una matita, come una torta gigante.",
+      "Cita materiali e colori: mattone rosso, pietra bianca, vetro luccicante.",
+      "Aggiungi la tua posizione: in piedi sotto, guardando dall'alto, attraversandolo."
+     ],
+     "q": "Quale edificio o ponte ti ha stupito di più, dal vivo o in foto?",
+     "c": "Descrivi un edificio che ami con un paragone e un colore."
+    },
+    "pt": {
+     "t": "Edifícios que te impressionaram",
+     "g": "Descreve torres, pontes e centros históricos com palavras simples e vivas.",
+     "p": [
+      "Usa comparações: alto como dez casas, fino como um lápis, como um bolo gigante.",
+      "Refere materiais e cores: tijolo vermelho, pedra branca, vidro a brilhar.",
+      "Junta a tua posição: cá em baixo, a olhar lá de cima, a atravessá-lo."
+     ],
+     "q": "Que edifício ou ponte te impressionou mais, ao vivo ou em fotografia?",
+     "c": "Descreve um edifício de que gostas com uma comparação e uma cor."
+    },
+    "pt_BR": {
+     "t": "Construções que impressionaram você",
+     "g": "Descreva torres, pontes e centros históricos com palavras simples e vivas.",
+     "p": [
+      "Use comparações: alto como dez casas, fino como um lápis, como um bolo gigante.",
+      "Cite materiais e cores: tijolo vermelho, pedra branca, vidro brilhando.",
+      "Inclua sua posição: lá embaixo, olhando lá de cima, atravessando."
+     ],
+     "q": "Qual construção ou ponte mais impressionou você, ao vivo ou em foto?",
+     "c": "Descreva uma construção que você ama com uma comparação e uma cor."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small towns and villages",
+     "g": "Capture the charm of quiet places and their daily routines.",
+     "p": [
+      "In small towns, routines are the story: the bell at noon, the evening walk.",
+      "Locals notice visitors, which often leads to warm little chats.",
+      "Describe the pace: shops closing for lunch, chairs outside doors."
+     ],
+     "q": "What small town or village have you visited that you still think about?",
+     "c": "Describe the daily rhythm of a small place you know in three sentences."
+    },
+    "de": {
+     "t": "Kleinstädte und Dörfer",
+     "g": "Halte den Charme ruhiger Orte und ihrer Alltagsroutinen fest.",
+     "p": [
+      "In Kleinstädten sind Routinen die Geschichte: die Glocke am Mittag, der Abendspaziergang.",
+      "Einheimische bemerken Besucher, was oft zu herzlichen kleinen Gesprächen führt.",
+      "Beschreib das Tempo: Läden, die mittags schließen, Stühle vor den Türen."
+     ],
+     "q": "An welche Kleinstadt oder welches Dorf denkst du heute noch?",
+     "c": "Beschreib den Tagesrhythmus eines kleinen Ortes, den du kennst, in drei Sätzen."
+    },
+    "es": {
+     "t": "Pueblos y aldeas",
+     "g": "Captura el encanto de los lugares tranquilos y sus rutinas diarias.",
+     "p": [
+      "En los pueblos, las rutinas son la historia: la campana del mediodía, el paseo de la tarde.",
+      "La gente local se fija en los visitantes, y eso suele traer charlas cálidas.",
+      "Describe el ritmo: tiendas que cierran a mediodía, sillas en la puerta de casa."
+     ],
+     "q": "¿Qué pueblo que visitaste todavía te viene a la cabeza?",
+     "c": "Describe en tres frases el ritmo diario de un lugar pequeño que conozcas."
+    },
+    "fr": {
+     "t": "Petites villes et villages",
+     "g": "Capte le charme des endroits calmes et de leurs habitudes quotidiennes.",
+     "p": [
+      "Dans les petites villes, la routine est l'histoire : la cloche de midi, la promenade du soir.",
+      "Les habitants remarquent les visiteurs, ce qui mène souvent à de chaleureuses discussions.",
+      "Décris le rythme : boutiques fermées à midi, chaises devant les portes."
+     ],
+     "q": "Quel village ou quelle petite ville visité te revient encore en tête ?",
+     "c": "Décris en trois phrases le rythme quotidien d'un petit endroit que tu connais."
+    },
+    "it": {
+     "t": "Piccoli paesi e borghi",
+     "g": "Cattura il fascino dei luoghi tranquilli e delle loro abitudini quotidiane.",
+     "p": [
+      "Nei piccoli paesi, le abitudini sono la storia: la campana di mezzogiorno, la passeggiata serale.",
+      "Gli abitanti notano i visitatori, e questo porta spesso a chiacchiere calorose.",
+      "Descrivi il ritmo: negozi che chiudono a pranzo, sedie fuori dalle porte."
+     ],
+     "q": "Quale paese o borgo che hai visitato ti torna ancora in mente?",
+     "c": "Descrivi in tre frasi il ritmo quotidiano di un piccolo posto che conosci."
+    },
+    "pt": {
+     "t": "Vilas e aldeias",
+     "g": "Capta o encanto dos lugares sossegados e das suas rotinas diárias.",
+     "p": [
+      "Nas vilas, as rotinas são a história: o sino ao meio-dia, o passeio ao fim da tarde.",
+      "As pessoas locais reparam nos visitantes, o que leva muitas vezes a conversas calorosas.",
+      "Descreve o ritmo: lojas que fecham para almoço, cadeiras à porta de casa."
+     ],
+     "q": "Que vila ou aldeia que visitaste ainda te vem à cabeça?",
+     "c": "Descreve em três frases o ritmo diário de um lugar pequeno que conheces."
+    },
+    "pt_BR": {
+     "t": "Cidadezinhas e vilarejos",
+     "g": "Capture o charme dos lugares tranquilos e de suas rotinas diárias.",
+     "p": [
+      "Nas cidadezinhas, a rotina é a história: o sino ao meio-dia, a volta no fim da tarde.",
+      "Os moradores reparam nos visitantes, o que costuma render conversas calorosas.",
+      "Descreva o ritmo: lojas fechando no almoço, cadeiras na calçada."
+     ],
+     "q": "Qual cidadezinha ou vilarejo que você visitou ainda vem à sua cabeça?",
+     "c": "Descreva em três frases o ritmo diário de um lugar pequeno que você conhece."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beach day stories",
+     "g": "Tell beach stories with sand, waves, snacks and the people around you.",
+     "p": [
+      "Beaches are full of small scenes: a sandcastle, a volleyball game, a snack seller.",
+      "Use the senses: hot sand, cold first wave, sunscreen smell.",
+      "A beach day has a natural arc: arriving, the best hour, the sunset walk home."
+     ],
+     "q": "What is your favourite beach memory?",
+     "c": "Tell a beach day story using its natural arc: arrival, best moment, going home."
+    },
+    "de": {
+     "t": "Geschichten vom Strandtag",
+     "g": "Erzähl Strandgeschichten mit Sand, Wellen, Snacks und den Menschen um dich herum.",
+     "p": [
+      "Strände sind voller kleiner Szenen: eine Sandburg, ein Volleyballspiel, ein Snackverkäufer.",
+      "Nutze die Sinne: heißer Sand, die erste kalte Welle, der Duft von Sonnencreme.",
+      "Ein Strandtag hat einen natürlichen Bogen: Ankunft, die schönste Stunde, der Heimweg im Sonnenuntergang."
+     ],
+     "q": "Was ist deine liebste Stranderinnerung?",
+     "c": "Erzähl einen Strandtag mit seinem natürlichen Bogen: Ankunft, schönster Moment, Heimweg."
+    },
+    "es": {
+     "t": "Historias de un día de playa",
+     "g": "Cuenta historias de playa con arena, olas, picoteo y la gente a tu alrededor.",
+     "p": [
+      "Las playas están llenas de pequeñas escenas: un castillo de arena, un partido de vóley, un vendedor.",
+      "Usa los sentidos: arena caliente, la primera ola fría, olor a crema solar.",
+      "Un día de playa tiene un arco natural: la llegada, la mejor hora, la vuelta al atardecer."
+     ],
+     "q": "¿Cuál es tu recuerdo de playa favorito?",
+     "c": "Cuenta un día de playa con su arco natural: llegada, mejor momento, vuelta a casa."
+    },
+    "fr": {
+     "t": "Histoires de journée à la plage",
+     "g": "Raconte la plage avec le sable, les vagues, les en-cas et les gens autour de toi.",
+     "p": [
+      "La plage regorge de petites scènes : un château de sable, un match de volley, un vendeur de beignets.",
+      "Utilise les sens : sable brûlant, première vague froide, odeur de crème solaire.",
+      "Une journée à la plage a un arc naturel : l'arrivée, la meilleure heure, le retour au coucher du soleil."
+     ],
+     "q": "Quel est ton souvenir de plage préféré ?",
+     "c": "Raconte une journée à la plage avec son arc naturel : arrivée, meilleur moment, retour."
+    },
+    "it": {
+     "t": "Storie di una giornata al mare",
+     "g": "Racconta il mare con sabbia, onde, spuntini e le persone intorno a te.",
+     "p": [
+      "La spiaggia è piena di piccole scene: un castello di sabbia, una partita di pallavolo, un venditore ambulante.",
+      "Usa i sensi: sabbia che scotta, la prima onda fredda, profumo di crema solare.",
+      "Una giornata al mare ha un arco naturale: l'arrivo, l'ora più bella, il ritorno al tramonto."
+     ],
+     "q": "Qual è il tuo ricordo di mare preferito?",
+     "c": "Racconta una giornata al mare con il suo arco naturale: arrivo, momento migliore, ritorno."
+    },
+    "pt": {
+     "t": "Histórias de um dia de praia",
+     "g": "Conta histórias de praia com areia, ondas, petiscos e as pessoas à tua volta.",
+     "p": [
+      "As praias estão cheias de pequenas cenas: um castelo de areia, um jogo de vólei, um vendedor de bolas de Berlim.",
+      "Usa os sentidos: areia a escaldar, a primeira onda fria, cheiro a protetor solar.",
+      "Um dia de praia tem um arco natural: a chegada, a melhor hora, o regresso ao pôr do sol."
+     ],
+     "q": "Qual é a tua memória de praia preferida?",
+     "c": "Conta um dia de praia com o seu arco natural: chegada, melhor momento, regresso a casa."
+    },
+    "pt_BR": {
+     "t": "Histórias de um dia de praia",
+     "g": "Conte histórias de praia com areia, ondas, petiscos e as pessoas ao seu redor.",
+     "p": [
+      "A praia é cheia de pequenas cenas: um castelo de areia, um vôlei, um vendedor de milho.",
+      "Use os sentidos: areia quente, a primeira onda gelada, cheiro de protetor solar.",
+      "Um dia de praia tem um arco natural: a chegada, a melhor hora, a volta no pôr do sol."
+     ],
+     "q": "Qual é sua lembrança de praia favorita?",
+     "c": "Conte um dia de praia com seu arco natural: chegada, melhor momento, volta para casa."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travelling with family",
+     "g": "Show different generations on one trip and their points of view.",
+     "p": [
+      "Each generation sees the trip differently: grandparents, parents, kids.",
+      "Small conflicts, like choosing lunch, make warm and funny scenes.",
+      "Include a moment when everyone enjoyed the same thing together."
+     ],
+     "q": "What is a family trip you remember fondly, and who made it special?",
+     "c": "Describe one family trip moment from the point of view of another family member."
+    },
+    "de": {
+     "t": "Reisen mit der Familie",
+     "g": "Zeig verschiedene Generationen auf einer Reise und ihre Sichtweisen.",
+     "p": [
+      "Jede Generation erlebt die Reise anders: Großeltern, Eltern, Kinder.",
+      "Kleine Konflikte, etwa beim Mittagessen-Aussuchen, ergeben warme, lustige Szenen.",
+      "Nimm einen Moment auf, in dem alle zusammen dasselbe genossen haben."
+     ],
+     "q": "An welche Familienreise denkst du gern zurück, und wer hat sie besonders gemacht?",
+     "c": "Beschreib einen Moment einer Familienreise aus der Sicht eines anderen Familienmitglieds."
+    },
+    "es": {
+     "t": "Viajar en familia",
+     "g": "Muestra distintas generaciones en un mismo viaje y sus puntos de vista.",
+     "p": [
+      "Cada generación vive el viaje a su manera: abuelos, padres, niños.",
+      "Los pequeños conflictos, como elegir dónde comer, dan escenas cálidas y divertidas.",
+      "Incluye un momento en que todos disfrutaron juntos de lo mismo."
+     ],
+     "q": "¿Qué viaje en familia recuerdas con cariño y quién lo hizo especial?",
+     "c": "Describe un momento de un viaje en familia desde el punto de vista de otro familiar."
+    },
+    "fr": {
+     "t": "Voyager en famille",
+     "g": "Montre plusieurs générations sur un même voyage et leurs points de vue.",
+     "p": [
+      "Chaque génération vit le voyage autrement : grands-parents, parents, enfants.",
+      "Les petits désaccords, comme choisir où déjeuner, font des scènes tendres et drôles.",
+      "Inclus un moment où tout le monde a apprécié la même chose ensemble."
+     ],
+     "q": "Quel voyage en famille te laisse un bon souvenir, et qui l'a rendu spécial ?",
+     "c": "Décris un moment d'un voyage en famille du point de vue d'un autre membre de la famille."
+    },
+    "it": {
+     "t": "Viaggiare in famiglia",
+     "g": "Mostra generazioni diverse in uno stesso viaggio e i loro punti di vista.",
+     "p": [
+      "Ogni generazione vive il viaggio a modo suo: nonni, genitori, bambini.",
+      "Piccoli contrasti, come scegliere dove pranzare, creano scene tenere e buffe.",
+      "Includi un momento in cui tutti si sono goduti la stessa cosa insieme."
+     ],
+     "q": "Quale viaggio in famiglia ricordi con affetto e chi l'ha reso speciale?",
+     "c": "Descrivi un momento di un viaggio in famiglia dal punto di vista di un altro familiare."
+    },
+    "pt": {
+     "t": "Viajar em família",
+     "g": "Mostra várias gerações numa mesma viagem e os seus pontos de vista.",
+     "p": [
+      "Cada geração vive a viagem à sua maneira: avós, pais, crianças.",
+      "Os pequenos conflitos, como escolher onde almoçar, dão cenas ternas e engraçadas.",
+      "Inclui um momento em que todos gostaram da mesma coisa juntos."
+     ],
+     "q": "De que viagem em família te lembras com carinho e quem a tornou especial?",
+     "c": "Descreve um momento de uma viagem em família do ponto de vista de outro familiar."
+    },
+    "pt_BR": {
+     "t": "Viajando em família",
+     "g": "Mostre gerações diferentes em uma mesma viagem e seus pontos de vista.",
+     "p": [
+      "Cada geração vive a viagem do seu jeito: avós, pais, crianças.",
+      "Pequenos conflitos, como escolher onde almoçar, rendem cenas carinhosas e engraçadas.",
+      "Inclua um momento em que todos curtiram a mesma coisa juntos."
+     ],
+     "q": "De qual viagem em família você lembra com carinho e quem a tornou especial?",
+     "c": "Descreva um momento de uma viagem em família do ponto de vista de outro parente."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travelling with friends",
+     "g": "Tell stories about group dynamics, inside jokes and shared plans.",
+     "p": [
+      "Every group has roles: the planner, the late one, the one who finds food.",
+      "Inside jokes need a quick explanation so outsiders can laugh too.",
+      "Show how the group decided things; that is often where the fun is."
+     ],
+     "q": "What is the best trip you have taken with friends, and what made it fun?",
+     "c": "Explain one inside joke from a trip with friends in two simple sentences."
+    },
+    "de": {
+     "t": "Reisen mit Freunden",
+     "g": "Erzähl von Gruppendynamik, Insiderwitzen und gemeinsamen Plänen.",
+     "p": [
+      "Jede Gruppe hat Rollen: die Planerin, der Zuspätkommer, die, die immer Essen findet.",
+      "Insiderwitze brauchen eine kurze Erklärung, damit andere mitlachen können.",
+      "Zeig, wie die Gruppe entschieden hat; genau da liegt oft der Spaß."
+     ],
+     "q": "Was war die schönste Reise mit Freunden, und was hat sie so lustig gemacht?",
+     "c": "Erklär einen Insiderwitz von einer Reise mit Freunden in zwei einfachen Sätzen."
+    },
+    "es": {
+     "t": "Viajar con amigos",
+     "g": "Cuenta historias de la dinámica del grupo, bromas internas y planes compartidos.",
+     "p": [
+      "Todo grupo tiene papeles: la que organiza, el que llega tarde, la que encuentra comida.",
+      "Las bromas internas necesitan una explicación rápida para que otros también se rían.",
+      "Muestra cómo decidía el grupo; ahí suele estar la gracia."
+     ],
+     "q": "¿Cuál es el mejor viaje que has hecho con amigos y qué lo hizo divertido?",
+     "c": "Explica una broma interna de un viaje con amigos en dos frases sencillas."
+    },
+    "fr": {
+     "t": "Voyager entre amis",
+     "g": "Raconte la dynamique du groupe, les blagues entre vous et les plans partagés.",
+     "p": [
+      "Chaque groupe a ses rôles : l'organisatrice, le retardataire, celle qui trouve à manger.",
+      "Une blague entre amis demande une courte explication pour que les autres rient aussi.",
+      "Montre comment le groupe décidait : c'est souvent là que se trouve le plus drôle."
+     ],
+     "q": "Quel est le meilleur voyage que tu aies fait entre amis, et qu'est-ce qui l'a rendu si drôle ?",
+     "c": "Explique une blague née d'un voyage entre amis en deux phrases simples."
+    },
+    "it": {
+     "t": "Viaggiare con gli amici",
+     "g": "Racconta le dinamiche di gruppo, le battute tra voi e i piani condivisi.",
+     "p": [
+      "Ogni gruppo ha i suoi ruoli: l'organizzatrice, il ritardatario, quella che trova da mangiare.",
+      "Le battute interne hanno bisogno di una breve spiegazione per far ridere anche gli altri.",
+      "Mostra come decideva il gruppo; spesso è lì il divertimento."
+     ],
+     "q": "Qual è il viaggio più bello che hai fatto con gli amici e cosa l'ha reso divertente?",
+     "c": "Spiega in due frasi semplici una battuta nata in un viaggio con gli amici."
+    },
+    "pt": {
+     "t": "Viajar com amigos",
+     "g": "Conta histórias da dinâmica do grupo, das piadas internas e dos planos partilhados.",
+     "p": [
+      "Todos os grupos têm papéis: a que organiza, o que se atrasa, a que encontra comida.",
+      "As piadas internas precisam de uma explicação rápida para os outros também se rirem.",
+      "Mostra como o grupo decidia; é muitas vezes aí que está a graça."
+     ],
+     "q": "Qual foi a melhor viagem que fizeste com amigos e o que a tornou divertida?",
+     "c": "Explica uma piada interna de uma viagem com amigos em duas frases simples."
+    },
+    "pt_BR": {
+     "t": "Viajando com amigos",
+     "g": "Conte histórias da dinâmica do grupo, das piadas internas e dos planos em comum.",
+     "p": [
+      "Todo grupo tem papéis: a que organiza, o atrasado, a que sempre acha comida.",
+      "Piadas internas precisam de uma explicação rápida para os outros rirem também.",
+      "Mostre como o grupo decidia as coisas; muitas vezes é aí que está a graça."
+     ],
+     "q": "Qual foi a melhor viagem que você fez com amigos e o que a deixou divertida?",
+     "c": "Explique uma piada interna de uma viagem com amigos em duas frases simples."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trips on a tight budget",
+     "g": "Share creative savings that became part of the adventure.",
+     "p": [
+      "Budget choices create stories: night buses, picnic dinners, free walking routes.",
+      "Show the creativity, not the stress: the clever trick that worked.",
+      "Simple pleasures often become the best memories."
+     ],
+     "q": "What is a clever money-saving trick that made a trip more fun?",
+     "c": "Recall one budget choice from a trip and tell how it turned into a good memory."
+    },
+    "de": {
+     "t": "Reisen mit kleinem Budget",
+     "g": "Erzähl von kreativen Sparideen, die Teil des Abenteuers wurden.",
+     "p": [
+      "Sparentscheidungen schaffen Geschichten: Nachtbusse, Picknick zum Abendessen, kostenlose Spaziergänge.",
+      "Zeig die Kreativität, nicht den Stress: den cleveren Trick, der funktionierte.",
+      "Einfache Freuden werden oft zu den schönsten Erinnerungen."
+     ],
+     "q": "Welcher clevere Spartrick hat eine Reise lustiger gemacht?",
+     "c": "Erinnere dich an eine Sparentscheidung und erzähl, wie sie zu einer schönen Erinnerung wurde."
+    },
+    "es": {
+     "t": "Viajes con poco presupuesto",
+     "g": "Comparte ahorros creativos que se convirtieron en parte de la aventura.",
+     "p": [
+      "Las decisiones de presupuesto crean historias: autobuses nocturnos, cenas de pícnic, rutas a pie gratis.",
+      "Muestra la creatividad, no el estrés: el truco ingenioso que funcionó.",
+      "Los placeres sencillos suelen convertirse en los mejores recuerdos."
+     ],
+     "q": "¿Qué truco ingenioso para ahorrar hizo más divertido un viaje?",
+     "c": "Recuerda una decisión de ahorro en un viaje y cuenta cómo se volvió un buen recuerdo."
+    },
+    "fr": {
+     "t": "Voyager avec un petit budget",
+     "g": "Partage des économies créatives devenues une part de l'aventure.",
+     "p": [
+      "Les choix d'économie créent des histoires : bus de nuit, dîners pique-nique, balades gratuites.",
+      "Montre la créativité, pas le stress : l'astuce maligne qui a marché.",
+      "Les plaisirs simples deviennent souvent les meilleurs souvenirs."
+     ],
+     "q": "Quelle astuce pour économiser a rendu un voyage plus amusant ?",
+     "c": "Repense à un choix d'économie en voyage et raconte comment il est devenu un beau souvenir."
+    },
+    "it": {
+     "t": "Viaggi con un budget ridotto",
+     "g": "Racconta risparmi creativi diventati parte dell'avventura.",
+     "p": [
+      "Le scelte di risparmio creano storie: autobus notturni, cene al sacco, percorsi a piedi gratuiti.",
+      "Mostra la creatività, non lo stress: il trucco furbo che ha funzionato.",
+      "I piaceri semplici diventano spesso i ricordi migliori."
+     ],
+     "q": "Quale trucco furbo per risparmiare ha reso un viaggio più divertente?",
+     "c": "Ripensa a una scelta di risparmio in viaggio e racconta come è diventata un bel ricordo."
+    },
+    "pt": {
+     "t": "Viagens com pouco orçamento",
+     "g": "Partilha poupanças criativas que passaram a fazer parte da aventura.",
+     "p": [
+      "As escolhas de orçamento criam histórias: autocarros noturnos, jantares de piquenique, percursos a pé gratuitos.",
+      "Mostra a criatividade, não o stress: o truque esperto que resultou.",
+      "Os prazeres simples tornam-se muitas vezes as melhores memórias."
+     ],
+     "q": "Que truque esperto para poupar tornou uma viagem mais divertida?",
+     "c": "Lembra-te de uma escolha de poupança numa viagem e conta como virou uma boa memória."
+    },
+    "pt_BR": {
+     "t": "Viagens com orçamento apertado",
+     "g": "Compartilhe economias criativas que viraram parte da aventura.",
+     "p": [
+      "Escolhas de orçamento criam histórias: ônibus noturnos, jantares de piquenique, passeios a pé gratuitos.",
+      "Mostre a criatividade, não o estresse: o truque esperto que deu certo.",
+      "Prazeres simples costumam virar as melhores lembranças."
+     ],
+     "q": "Qual truque esperto para economizar deixou uma viagem mais divertida?",
+     "c": "Lembre uma escolha de economia em uma viagem e conte como ela virou uma boa lembrança."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your packing story",
+     "g": "Laugh about the thing you forgot and the thing you overpacked.",
+     "p": [
+      "Packing stories are universal: everyone has forgotten something.",
+      "The forgotten item often leads to a scene: borrowing, buying, improvising.",
+      "Overpacking is funny too: five books, zero time to read."
+     ],
+     "q": "What is the funniest thing you have ever forgotten or overpacked on a trip?",
+     "c": "List one item you always overpack and one you often forget, then tell a story about one."
+    },
+    "de": {
+     "t": "Deine Packgeschichte",
+     "g": "Lach über das, was du vergessen, und das, was du zu viel eingepackt hast.",
+     "p": [
+      "Packgeschichten kennt jeder: Alle haben schon etwas vergessen.",
+      "Der vergessene Gegenstand führt oft zu einer Szene: ausleihen, kaufen, improvisieren.",
+      "Zu viel einpacken ist auch lustig: fünf Bücher, null Zeit zum Lesen."
+     ],
+     "q": "Was ist das Lustigste, das du je auf einer Reise vergessen oder zu viel eingepackt hast?",
+     "c": "Nenne etwas, das du immer zu viel einpackst, und etwas, das du oft vergisst, und erzähl zu einem eine Geschichte."
+    },
+    "es": {
+     "t": "Tu historia de la maleta",
+     "g": "Ríete de lo que olvidaste y de lo que metiste de más.",
+     "p": [
+      "Las historias de maleta son universales: todo el mundo ha olvidado algo.",
+      "Lo olvidado suele llevar a una escena: pedir prestado, comprar, improvisar.",
+      "Llevar de más también tiene gracia: cinco libros y cero tiempo para leer."
+     ],
+     "q": "¿Qué es lo más gracioso que has olvidado o llevado de más en un viaje?",
+     "c": "Di algo que siempre llevas de más y algo que sueles olvidar, y cuenta una historia de uno."
+    },
+    "fr": {
+     "t": "Ton histoire de valise",
+     "g": "Ris de ce que tu as oublié et de ce que tu as emporté en trop.",
+     "p": [
+      "Les histoires de valise sont universelles : tout le monde a déjà oublié quelque chose.",
+      "L'objet oublié mène souvent à une scène : emprunter, acheter, improviser.",
+      "Trop emporter, c'est drôle aussi : cinq livres, zéro minute pour lire."
+     ],
+     "q": "Quelle est la chose la plus drôle que tu aies oubliée ou emportée en trop en voyage ?",
+     "c": "Cite un objet que tu emportes toujours en trop et un que tu oublies souvent, puis raconte une histoire sur l'un."
+    },
+    "it": {
+     "t": "La tua storia della valigia",
+     "g": "Ridi di ciò che hai dimenticato e di ciò che hai portato in eccesso.",
+     "p": [
+      "Le storie di valigia sono universali: tutti hanno dimenticato qualcosa.",
+      "L'oggetto dimenticato porta spesso a una scena: chiedere in prestito, comprare, improvvisare.",
+      "Portare troppo è divertente: cinque libri, zero tempo per leggere."
+     ],
+     "q": "Qual è la cosa più buffa che hai dimenticato o portato di troppo in viaggio?",
+     "c": "Indica una cosa che porti sempre di troppo e una che dimentichi spesso, poi racconta una storia su una."
+    },
+    "pt": {
+     "t": "A tua história da mala",
+     "g": "Ri-te do que te esqueceste e do que levaste a mais.",
+     "p": [
+      "As histórias de mala são universais: toda a gente já se esqueceu de alguma coisa.",
+      "O objeto esquecido costuma levar a uma cena: pedir emprestado, comprar, improvisar.",
+      "Levar a mais também tem graça: cinco livros e zero tempo para ler."
+     ],
+     "q": "Qual foi a coisa mais engraçada que esqueceste ou levaste a mais numa viagem?",
+     "c": "Diz algo que levas sempre a mais e algo que esqueces muitas vezes, e conta uma história sobre um."
+    },
+    "pt_BR": {
+     "t": "Sua história da mala",
+     "g": "Ria do que você esqueceu e do que levou demais.",
+     "p": [
+      "Histórias de mala são universais: todo mundo já esqueceu alguma coisa.",
+      "O item esquecido costuma levar a uma cena: pedir emprestado, comprar, improvisar.",
+      "Levar demais também é engraçado: cinco livros e zero tempo para ler."
+     ],
+     "q": "Qual foi a coisa mais engraçada que você esqueceu ou levou demais em uma viagem?",
+     "c": "Diga algo que você sempre leva demais e algo que costuma esquecer, e conte uma história sobre um."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: building a story",
+     "g": "Look back at hooks, scenes, characters and endings from this month.",
+     "p": [
+      "Hook and scene: start in the action, then give time, place and mood fast.",
+      "Characters and dialogue: one detail, one action, one short line.",
+      "Turning point and ending: a clear 'but then' and a closing smile or image."
+     ],
+     "q": "Which storytelling skill from this month feels most natural to you now?",
+     "c": "Tell one complete travel story using a hook, a turning point and a strong ending."
+    },
+    "de": {
+     "t": "Rückblick: eine Geschichte bauen",
+     "g": "Schau zurück auf Einstiege, Szenen, Figuren und Schlüsse aus diesem Monat.",
+     "p": [
+      "Einstieg und Szene: mitten im Geschehen beginnen, dann schnell Zeit, Ort und Stimmung.",
+      "Figuren und Dialog: ein Detail, eine Handlung, ein kurzer Satz.",
+      "Wendepunkt und Schluss: ein klares ‚Aber dann‘ und ein Lächeln oder Bild am Ende."
+     ],
+     "q": "Welche Erzählfähigkeit aus diesem Monat fällt dir jetzt am leichtesten?",
+     "c": "Erzähl eine vollständige Reisegeschichte mit Einstieg, Wendepunkt und starkem Schluss."
+    },
+    "es": {
+     "t": "Repaso: construir una historia",
+     "g": "Repasa los ganchos, escenas, personajes y finales de este mes.",
+     "p": [
+      "Gancho y escena: empieza en plena acción y luego da momento, lugar y ambiente rápido.",
+      "Personajes y diálogo: un detalle, una acción, una frase corta.",
+      "Giro y final: un ‘pero entonces’ claro y un cierre con sonrisa o imagen."
+     ],
+     "q": "¿Qué habilidad para contar historias de este mes te sale ahora más natural?",
+     "c": "Cuenta una historia de viaje completa con gancho, punto de giro y un final potente."
+    },
+    "fr": {
+     "t": "Révision : construire une histoire",
+     "g": "Reviens sur les accroches, scènes, personnages et fins de ce mois.",
+     "p": [
+      "Accroche et décor : commence dans l'action, puis donne vite moment, lieu et ambiance.",
+      "Personnages et dialogue : un détail, une action, une courte réplique.",
+      "Tournant et fin : un « mais alors » clair et une fin souriante ou une image."
+     ],
+     "q": "Quelle compétence de récit de ce mois te semble la plus naturelle maintenant ?",
+     "c": "Raconte une histoire de voyage complète avec une accroche, un tournant et une fin forte."
+    },
+    "it": {
+     "t": "Ripasso: costruire una storia",
+     "g": "Ripassa agganci, scene, personaggi e finali di questo mese.",
+     "p": [
+      "Aggancio e scena: parti dall'azione, poi dai in fretta momento, luogo e atmosfera.",
+      "Personaggi e dialogo: un dettaglio, un'azione, una battuta breve.",
+      "Svolta e finale: un ‘ma poi’ chiaro e una chiusura con un sorriso o un'immagine."
+     ],
+     "q": "Quale abilità narrativa di questo mese ti viene più naturale adesso?",
+     "c": "Racconta una storia di viaggio completa con aggancio, svolta e un finale forte."
+    },
+    "pt": {
+     "t": "Revisão: construir uma história",
+     "g": "Revê os ganchos, cenas, personagens e finais deste mês.",
+     "p": [
+      "Gancho e cena: começa na ação e depois dá depressa o momento, o lugar e o ambiente.",
+      "Personagens e diálogo: um pormenor, uma ação, uma frase curta.",
+      "Viragem e final: um ‘mas depois’ claro e um fecho com sorriso ou imagem."
+     ],
+     "q": "Que capacidade de contar histórias deste mês te sai agora mais natural?",
+     "c": "Conta uma história de viagem completa com gancho, ponto de viragem e um final forte."
+    },
+    "pt_BR": {
+     "t": "Revisão: construindo uma história",
+     "g": "Revise os ganchos, cenas, personagens e finais deste mês.",
+     "p": [
+      "Gancho e cena: comece na ação e depois mostre rápido o momento, o lugar e o clima.",
+      "Personagens e diálogo: um detalhe, uma ação, uma fala curta.",
+      "Virada e final: um ‘mas aí’ claro e um fechamento com sorriso ou imagem."
+     ],
+     "q": "Qual habilidade de contar histórias deste mês sai mais natural para você agora?",
+     "c": "Conte uma história de viagem completa com gancho, virada e um final forte."
+    }
+   }
+  }
+ ]
+}

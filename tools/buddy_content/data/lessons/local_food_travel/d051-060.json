@@ -1,0 +1,835 @@
+{
+ "topic": "local_food_travel",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Portugal's petiscos and tascas",
+     "g": "Discover Portuguese small plates and simple neighbourhood taverns.",
+     "p": [
+      "Petiscos are small plates to share, like peixinhos da horta (fried green beans), pica-pau beef bites or grilled chouriço.",
+      "A tasca is a simple, often family-run tavern with a handwritten prato do dia, the dish of the day.",
+      "Bread, olives or butter brought at the start are the couvert: they are charged if you eat them, so send back what you do not want."
+     ],
+     "q": "Do you prefer one big main course or several small plates to share?",
+     "c": "Choose three petiscos you would order in a Lisbon or Porto tasca."
+    },
+    "de": {
+     "t": "Portugals Petiscos und Tascas",
+     "g": "Entdecke portugiesische kleine Teller und einfache Nachbarschaftskneipen.",
+     "p": [
+      "Petiscos sind kleine Teller zum Teilen, etwa Peixinhos da Horta (frittierte Bohnen), Pica-Pau-Rindfleisch oder gegrillte Chouriço.",
+      "Eine Tasca ist eine einfache, oft familiengeführte Kneipe mit handgeschriebenem Prato do Dia, dem Tagesgericht.",
+      "Brot, Oliven oder Butter zu Beginn sind das Couvert: Sie kosten extra, wenn du sie isst, also gib zurück, was du nicht willst."
+     ],
+     "q": "Magst du lieber ein großes Hauptgericht oder mehrere kleine Teller zum Teilen?",
+     "c": "Wähle drei Petiscos, die du in einer Tasca in Lissabon oder Porto bestellen würdest."
+    },
+    "es": {
+     "t": "Petiscos y tascas de Portugal",
+     "g": "Descubre los platillos portugueses y las sencillas tabernas de barrio.",
+     "p": [
+      "Los petiscos son platitos para compartir, como peixinhos da horta (judías verdes fritas), pica-pau de ternera o chouriço asado.",
+      "Una tasca es una taberna sencilla, a menudo familiar, con un prato do dia, el plato del día, escrito a mano.",
+      "El pan, las aceitunas o la mantequilla del principio son el couvert: se cobran si los comes, así que devuelve lo que no quieras."
+     ],
+     "q": "¿Prefieres un gran plato principal o varios platillos para compartir?",
+     "c": "Elige tres petiscos que pedirías en una tasca de Lisboa u Oporto."
+    },
+    "fr": {
+     "t": "Les petiscos et les tascas du Portugal",
+     "g": "Découvre les petites assiettes portugaises et les tavernes de quartier.",
+     "p": [
+      "Les petiscos sont de petites assiettes à partager, comme les peixinhos da horta (haricots frits), le pica-pau ou le chouriço grillé.",
+      "Une tasca est une taverne simple, souvent familiale, avec un prato do dia, le plat du jour, écrit à la main.",
+      "Le pain, les olives ou le beurre servis d'emblée forment le couvert : payants si tu les manges, renvoie donc ce que tu ne veux pas."
+     ],
+     "q": "Préfères-tu un grand plat ou plusieurs petites assiettes à partager ?",
+     "c": "Choisis trois petiscos que tu commanderais dans une tasca de Lisbonne ou de Porto."
+    },
+    "it": {
+     "t": "Petiscos e tascas del Portogallo",
+     "g": "Scopri i piattini portoghesi e le semplici taverne di quartiere.",
+     "p": [
+      "I petiscos sono piattini da condividere, come i peixinhos da horta (fagiolini fritti), il pica-pau di manzo o il chouriço alla griglia.",
+      "Una tasca è una taverna semplice, spesso a gestione familiare, con il prato do dia, il piatto del giorno, scritto a mano.",
+      "Pane, olive o burro serviti all'inizio sono il couvert: si pagano se li mangi, quindi rimanda indietro ciò che non vuoi."
+     ],
+     "q": "Preferisci un grande piatto principale o tanti piattini da condividere?",
+     "c": "Scegli tre petiscos che ordineresti in una tasca di Lisbona o Porto."
+    },
+    "pt": {
+     "t": "Os petiscos e as tascas de Portugal",
+     "g": "Descobre os petiscos portugueses e as tascas simples de bairro.",
+     "p": [
+      "Os petiscos são pratinhos para partilhar, como peixinhos da horta, pica-pau ou chouriço assado.",
+      "Uma tasca é uma casa simples, muitas vezes familiar, com o prato do dia escrito à mão.",
+      "O pão, as azeitonas ou a manteiga que chegam no início são o couvert: pagam-se se os comeres, por isso devolve o que não quiseres."
+     ],
+     "q": "Preferes um prato principal grande ou vários petiscos para partilhar?",
+     "c": "Escolhe três petiscos que pedirias numa tasca de Lisboa ou do Porto."
+    },
+    "pt_BR": {
+     "t": "Os petiscos e as tascas de Portugal",
+     "g": "Descubra os petiscos portugueses e as tascas simples de bairro.",
+     "p": [
+      "Os petiscos são pratinhos para dividir, como peixinhos da horta (vagem empanada), pica-pau de carne ou linguiça assada.",
+      "Uma tasca é um botequim simples, muitas vezes de família, com o prato do dia escrito à mão.",
+      "Pão, azeitonas ou manteiga que chegam no início são o couvert: são cobrados se você comer, então devolva o que não quiser."
+     ],
+     "q": "Você prefere um prato principal grande ou vários petiscos para dividir?",
+     "c": "Escolha três petiscos que você pediria numa tasca de Lisboa ou do Porto."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greece: meze and tavernas",
+     "g": "Learn the joy of sharing small dishes in a relaxed Greek taverna.",
+     "p": [
+      "Meze are small dishes for the table, like tzatziki, dolmades, grilled octopus, saganaki cheese and fava purée.",
+      "A horiatiki, the village salad, combines tomato, cucumber, onion, olives and a block of feta with olive oil.",
+      "Taverna meals are long and unhurried, and a little fruit or sweet on the house often arrives at the end."
+     ],
+     "q": "Which meze would you put on the table first?",
+     "c": "Build an imaginary taverna table with four meze and one main dish to share."
+    },
+    "de": {
+     "t": "Griechenland: Meze und Tavernen",
+     "g": "Lerne die Freude am Teilen kleiner Gerichte in einer entspannten griechischen Taverne.",
+     "p": [
+      "Meze sind kleine Gerichte für den Tisch, etwa Tzatziki, Dolmades, gegrillter Oktopus, Saganaki-Käse und Fava-Püree.",
+      "Die Horiatiki, der Bauernsalat, verbindet Tomate, Gurke, Zwiebel, Oliven und ein Stück Feta mit Olivenöl.",
+      "Tavernenessen sind lang und gemütlich, und am Ende kommt oft etwas Obst oder Süßes aufs Haus."
+     ],
+     "q": "Welche Meze würdest du zuerst auf den Tisch stellen?",
+     "c": "Stell dir einen Tavernentisch mit vier Meze und einem Hauptgericht zum Teilen zusammen."
+    },
+    "es": {
+     "t": "Grecia: mezes y tabernas",
+     "g": "Aprende el placer de compartir platitos en una relajada taberna griega.",
+     "p": [
+      "Los mezes son platitos para la mesa, como tzatziki, dolmades, pulpo a la parrilla, queso saganaki y puré de fava.",
+      "La horiatiki, la ensalada de pueblo, une tomate, pepino, cebolla, aceitunas y un bloque de feta con aceite de oliva.",
+      "Las comidas en la taberna son largas y sin prisa, y al final suele llegar algo de fruta o dulce por cuenta de la casa."
+     ],
+     "q": "¿Qué meze pondrías primero en la mesa?",
+     "c": "Monta una mesa de taberna imaginaria con cuatro mezes y un plato principal para compartir."
+    },
+    "fr": {
+     "t": "La Grèce : mezzés et tavernes",
+     "g": "Découvre le plaisir de partager de petits plats dans une taverne grecque détendue.",
+     "p": [
+      "Les mezzés sont de petits plats pour la table : tzatziki, dolmades, poulpe grillé, fromage saganaki et purée de fava.",
+      "La horiatiki, salade villageoise, réunit tomate, concombre, oignon, olives et un bloc de feta à l'huile d'olive.",
+      "Les repas en taverne sont longs et sans hâte, et un peu de fruit ou une douceur offerte arrive souvent à la fin."
+     ],
+     "q": "Quel mezzé poserais-tu en premier sur la table ?",
+     "c": "Compose une table de taverne imaginaire avec quatre mezzés et un plat principal à partager."
+    },
+    "it": {
+     "t": "Grecia: meze e taverne",
+     "g": "Scopri il piacere di condividere piattini in una rilassata taverna greca.",
+     "p": [
+      "I meze sono piattini per la tavola, come tzatziki, dolmades, polpo alla griglia, formaggio saganaki e purè di fava.",
+      "La horiatiki, l'insalata di campagna, unisce pomodoro, cetriolo, cipolla, olive e un blocco di feta con olio d'oliva.",
+      "I pasti in taverna sono lunghi e senza fretta, e alla fine arriva spesso un po' di frutta o un dolce offerto dalla casa."
+     ],
+     "q": "Quale meze metteresti per primo in tavola?",
+     "c": "Componi una tavola da taverna immaginaria con quattro meze e un piatto principale da condividere."
+    },
+    "pt": {
+     "t": "Grécia: mezes e tabernas",
+     "g": "Aprende o prazer de partilhar pratinhos numa taberna grega descontraída.",
+     "p": [
+      "Os mezes são pratinhos para a mesa, como tzatziki, dolmades, polvo grelhado, queijo saganaki e puré de fava.",
+      "A horiatiki, a salada de aldeia, junta tomate, pepino, cebola, azeitonas e um bloco de feta com azeite.",
+      "As refeições na taberna são longas e sem pressa, e no fim chega muitas vezes fruta ou um doce oferecido pela casa."
+     ],
+     "q": "Que meze punhas primeiro na mesa?",
+     "c": "Monta uma mesa de taberna imaginária com quatro mezes e um prato principal para partilhar."
+    },
+    "pt_BR": {
+     "t": "Grécia: mezes e tavernas",
+     "g": "Aprenda o prazer de dividir pratinhos numa taverna grega descontraída.",
+     "p": [
+      "Os mezes são pratinhos para a mesa, como tzatziki, dolmades, polvo grelhado, queijo saganaki e purê de fava.",
+      "A horiatiki, a salada da roça, junta tomate, pepino, cebola, azeitonas e um bloco de feta com azeite.",
+      "As refeições na taverna são longas e sem pressa, e no fim muitas vezes chega uma fruta ou doce por conta da casa."
+     ],
+     "q": "Qual meze você colocaria primeiro na mesa?",
+     "c": "Monte uma mesa de taverna imaginária com quatro mezes e um prato principal para dividir."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Turkey: kebabs and beyond",
+     "g": "Discover meze, pide, simit and the regional variety of Turkish food.",
+     "p": [
+      "Simit, a sesame-crusted bread ring, is sold from street carts and loved at breakfast with tea.",
+      "Pide is a boat-shaped flatbread with toppings, and lahmacun a thin flatbread with spiced minced meat, rolled with herbs.",
+      "Kebabs are regional too: spicy Adana kebab, Bursa's İskender with yoghurt and butter, and Gaziantep is famed for baklava."
+     ],
+     "q": "Which Turkish street food would you grab first?",
+     "c": "Find one Turkish regional dish and the city it is linked to."
+    },
+    "de": {
+     "t": "Türkei: Kebab und vieles mehr",
+     "g": "Entdecke Meze, Pide, Simit und die regionale Vielfalt der türkischen Küche.",
+     "p": [
+      "Simit, ein Sesamkringel, wird an Straßenwagen verkauft und zum Frühstück mit Tee geliebt.",
+      "Pide ist ein belegtes, bootsförmiges Fladenbrot, Lahmacun ein dünnes Fladenbrot mit gewürztem Hackfleisch, mit Kräutern gerollt.",
+      "Auch Kebab ist regional: scharfer Adana-Kebab, İskender aus Bursa mit Joghurt und Butter, und Gaziantep ist für Baklava berühmt."
+     ],
+     "q": "Welches türkische Streetfood würdest du dir zuerst schnappen?",
+     "c": "Finde ein türkisches Regionalgericht und die Stadt, mit der es verbunden ist."
+    },
+    "es": {
+     "t": "Turquía: kebabs y mucho más",
+     "g": "Descubre los mezes, el pide, el simit y la variedad regional de la cocina turca.",
+     "p": [
+      "El simit, un aro de pan cubierto de sésamo, se vende en carritos callejeros y se adora en el desayuno con té.",
+      "El pide es un pan plano en forma de barca con relleno, y el lahmacun un pan fino con carne picada especiada, enrollado con hierbas.",
+      "Los kebabs también son regionales: el picante Adana, el İskender de Bursa con yogur y mantequilla, y Gaziantep es famosa por su baklava."
+     ],
+     "q": "¿Qué comida callejera turca probarías primero?",
+     "c": "Busca un plato regional turco y la ciudad a la que está ligado."
+    },
+    "fr": {
+     "t": "La Turquie : kebabs et bien plus",
+     "g": "Découvre les mezzés, la pide, le simit et la variété régionale de la cuisine turque.",
+     "p": [
+      "Le simit, anneau de pain au sésame, se vend dans des charrettes de rue et s'adore au petit-déjeuner avec du thé.",
+      "La pide est un pain plat en forme de barque garni, et le lahmacun une galette fine à la viande hachée épicée, roulée avec des herbes.",
+      "Les kebabs sont régionaux aussi : l'Adana épicé, l'İskender de Bursa au yaourt et au beurre, et Gaziantep est réputée pour son baklava."
+     ],
+     "q": "Quelle street food turque attraperais-tu en premier ?",
+     "c": "Trouve un plat régional turc et la ville à laquelle il est associé."
+    },
+    "it": {
+     "t": "Turchia: kebab e molto altro",
+     "g": "Scopri meze, pide, simit e la varietà regionale della cucina turca.",
+     "p": [
+      "Il simit, un anello di pane ricoperto di sesamo, si vende nei carretti di strada ed è amato a colazione con il tè.",
+      "La pide è un pane piatto a forma di barca farcito, il lahmacun un pane sottile con carne macinata speziata, arrotolato con erbe.",
+      "Anche i kebab sono regionali: il piccante Adana, l'İskender di Bursa con yogurt e burro, e Gaziantep è famosa per il baklava."
+     ],
+     "q": "Quale cibo di strada turco prenderesti per primo?",
+     "c": "Trova un piatto regionale turco e la città a cui è legato."
+    },
+    "pt": {
+     "t": "Turquia: kebabs e muito mais",
+     "g": "Descobre os mezes, o pide, o simit e a variedade regional da cozinha turca.",
+     "p": [
+      "O simit, uma rosca de pão coberta de sésamo, vende-se em carrinhos de rua e é adorado ao pequeno-almoço com chá.",
+      "O pide é um pão achatado em forma de barco com cobertura, e o lahmacun um pão fino com carne picada temperada, enrolado com ervas.",
+      "Os kebabs também são regionais: o picante Adana, o İskender de Bursa com iogurte e manteiga, e Gaziantep é famosa pela baklava."
+     ],
+     "q": "Que comida de rua turca experimentarias primeiro?",
+     "c": "Encontra um prato regional turco e a cidade a que está ligado."
+    },
+    "pt_BR": {
+     "t": "Turquia: kebabs e muito mais",
+     "g": "Descubra os mezes, o pide, o simit e a variedade regional da cozinha turca.",
+     "p": [
+      "O simit, uma rosca de pão coberta de gergelim, é vendido em carrinhos de rua e amado no café da manhã com chá.",
+      "O pide é um pão achatado em forma de barco com cobertura, e o lahmacun um pão fino com carne moída temperada, enrolado com ervas.",
+      "Os kebabs também são regionais: o picante Adana, o İskender de Bursa com iogurte e manteiga, e Gaziantep é famosa pela baklava."
+     ],
+     "q": "Qual comida de rua turca você provaria primeiro?",
+     "c": "Encontre um prato regional turco e a cidade ligada a ele."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lebanon and the Levant",
+     "g": "Enjoy hummus, tabbouleh, manakish and the famously generous meze of the Levant.",
+     "p": [
+      "Tabbouleh is mostly chopped parsley with a little bulgur, tomato, lemon and olive oil, fresh and bright.",
+      "Manakish is a flatbread topped with za'atar and olive oil, a much-loved breakfast from bakeries in the morning.",
+      "A Levantine meze spread can cover the whole table: hummus, moutabal, fattoush, falafel and warm bread to scoop."
+     ],
+     "q": "Which Levantine dish do you already know, and which would you like to discover?",
+     "c": "Learn what za'atar is made of and think of one dish you could sprinkle it on."
+    },
+    "de": {
+     "t": "Libanon und die Levante",
+     "g": "Genieße Hummus, Taboulé, Manakisch und die berühmt großzügigen Meze der Levante.",
+     "p": [
+      "Taboulé besteht vor allem aus gehackter Petersilie mit etwas Bulgur, Tomate, Zitrone und Olivenöl, frisch und lebendig.",
+      "Manakisch ist ein Fladenbrot mit Za'atar und Olivenöl, ein beliebtes Frühstück frisch aus der Bäckerei.",
+      "Ein levantinisches Meze-Buffet füllt den ganzen Tisch: Hummus, Moutabal, Fattoush, Falafel und warmes Brot zum Tunken."
+     ],
+     "q": "Welches levantinische Gericht kennst du schon, und welches möchtest du entdecken?",
+     "c": "Finde heraus, woraus Za'atar besteht, und überleg dir ein Gericht, über das du es streuen könntest."
+    },
+    "es": {
+     "t": "Líbano y el Levante",
+     "g": "Disfruta del hummus, el tabulé, el manakish y los generosos mezes del Levante.",
+     "p": [
+      "El tabulé es sobre todo perejil picado con un poco de bulgur, tomate, limón y aceite de oliva: fresco y vivo.",
+      "El manakish es un pan plano con za'atar y aceite de oliva, un desayuno muy querido recién salido de la panadería.",
+      "Una mesa de mezes levantinos puede cubrirlo todo: hummus, mutabal, fattoush, falafel y pan caliente para mojar."
+     ],
+     "q": "¿Qué plato levantino ya conoces y cuál te gustaría descubrir?",
+     "c": "Averigua de qué está hecho el za'atar y piensa en un plato donde podrías espolvorearlo."
+    },
+    "fr": {
+     "t": "Le Liban et le Levant",
+     "g": "Savoure houmous, taboulé, manakish et les mezzés généreux du Levant.",
+     "p": [
+      "Le taboulé libanais, c'est surtout du persil haché avec un peu de boulgour, tomate, citron et huile d'olive : frais et vif.",
+      "La manakish est une galette au za'atar et à l'huile d'olive, un petit-déjeuner adoré, tout juste sorti de la boulangerie.",
+      "Une table de mezzés levantins peut couvrir toute la table : houmous, moutabal, fattouche, falafels et pain chaud."
+     ],
+     "q": "Quel plat levantin connais-tu déjà, et lequel aimerais-tu découvrir ?",
+     "c": "Découvre de quoi est fait le za'atar et imagine un plat sur lequel en saupoudrer."
+    },
+    "it": {
+     "t": "Libano e Levante",
+     "g": "Gusta hummus, tabbouleh, manakish e i generosi meze del Levante.",
+     "p": [
+      "Il tabbouleh è soprattutto prezzemolo tritato con un po' di bulgur, pomodoro, limone e olio d'oliva: fresco e vivace.",
+      "La manakish è un pane piatto con za'atar e olio d'oliva, una colazione amatissima appena sfornata dal panificio.",
+      "Una tavola di meze levantini può coprire tutto il tavolo: hummus, moutabal, fattoush, falafel e pane caldo per intingere."
+     ],
+     "q": "Quale piatto levantino conosci già, e quale vorresti scoprire?",
+     "c": "Scopri di cosa è fatto lo za'atar e pensa a un piatto su cui potresti spolverarlo."
+    },
+    "pt": {
+     "t": "O Líbano e o Levante",
+     "g": "Saboreia o húmus, o tabule, a manakish e os mezes generosos do Levante.",
+     "p": [
+      "O tabule é sobretudo salsa picada com um pouco de bulgur, tomate, limão e azeite: fresco e vivo.",
+      "A manakish é um pão achatado com za'atar e azeite, um pequeno-almoço muito querido acabado de sair da padaria.",
+      "Uma mesa de mezes levantinos pode cobrir tudo: húmus, mutabal, fattoush, falafel e pão quente para molhar."
+     ],
+     "q": "Que prato levantino já conheces, e qual gostavas de descobrir?",
+     "c": "Descobre de que é feito o za'atar e pensa num prato onde o podias polvilhar."
+    },
+    "pt_BR": {
+     "t": "O Líbano e o Levante",
+     "g": "Saboreie o homus, o tabule, a manakish e os mezes generosos do Levante.",
+     "p": [
+      "O tabule é principalmente salsinha picada com um pouco de trigo para quibe, tomate, limão e azeite: fresco e vibrante.",
+      "A manakish é um pão achatado com za'atar e azeite, um café da manhã muito amado saído na hora da padaria.",
+      "Uma mesa de mezes levantinos pode cobrir tudo: homus, mutabal, fattoush, falafel e pão quentinho para molhar."
+     ],
+     "q": "Qual prato levantino você já conhece, e qual gostaria de descobrir?",
+     "c": "Descubra do que é feito o za'atar e pense em um prato onde você poderia polvilhar."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morocco: tagines and souks",
+     "g": "Discover tagines, couscous and the lively food of Moroccan markets.",
+     "p": [
+      "A tagine is both a slow-cooked stew and the cone-shaped clay pot it is cooked in, often pairing meat with fruit and spices.",
+      "Couscous, steamed semolina topped with vegetables and meat, is often a big family meal shared on Fridays.",
+      "At dusk Marrakech's Jemaa el-Fnaa square fills with food stalls serving harira soup, grilled meats and snail broth."
+     ],
+     "q": "Would you rather try a sweet-savoury tagine or a vegetable couscous?",
+     "c": "Find two classic tagine combinations and note their main ingredients."
+    },
+    "de": {
+     "t": "Marokko: Tajines und Souks",
+     "g": "Entdecke Tajines, Couscous und das lebendige Essen marokkanischer Märkte.",
+     "p": [
+      "Eine Tajine ist zugleich ein langsam geschmortes Gericht und der kegelförmige Tontopf, oft mit Fleisch, Obst und Gewürzen.",
+      "Couscous, gedämpfter Grieß mit Gemüse und Fleisch, ist oft ein großes Familienessen, das freitags geteilt wird.",
+      "In der Abenddämmerung füllt sich der Platz Jemaa el-Fna in Marrakesch mit Ständen voller Harira, Grillfleisch und Schneckensud."
+     ],
+     "q": "Würdest du lieber eine süß-herzhafte Tajine oder einen Gemüse-Couscous probieren?",
+     "c": "Finde zwei klassische Tajine-Kombinationen und notiere ihre Hauptzutaten."
+    },
+    "es": {
+     "t": "Marruecos: tajines y zocos",
+     "g": "Descubre los tajines, el cuscús y la animada comida de los mercados marroquíes.",
+     "p": [
+      "El tajín es a la vez un guiso lento y la olla de barro cónica donde se cocina, a menudo con carne, fruta y especias.",
+      "El cuscús, sémola al vapor con verduras y carne, es a menudo una gran comida familiar que se comparte los viernes.",
+      "Al atardecer la plaza Jemaa el-Fna de Marrakech se llena de puestos con sopa harira, carnes a la brasa y caldo de caracoles."
+     ],
+     "q": "¿Probarías antes un tajín dulce y salado o un cuscús de verduras?",
+     "c": "Busca dos combinaciones clásicas de tajín y apunta sus ingredientes principales."
+    },
+    "fr": {
+     "t": "Le Maroc : tajines et souks",
+     "g": "Découvre les tajines, le couscous et la cuisine animée des marchés marocains.",
+     "p": [
+      "Le tajine est à la fois un plat mijoté et le pot en terre conique où il cuit, mêlant souvent viande, fruits et épices.",
+      "Le couscous, semoule vapeur garnie de légumes et de viande, est souvent un grand repas familial partagé le vendredi.",
+      "Au crépuscule, la place Jemaa el-Fna de Marrakech se remplit d'étals de harira, de grillades et de bouillon d'escargots."
+     ],
+     "q": "Goûterais-tu plutôt un tajine sucré-salé ou un couscous aux légumes ?",
+     "c": "Trouve deux associations classiques de tajine et note leurs ingrédients principaux."
+    },
+    "it": {
+     "t": "Marocco: tajine e suk",
+     "g": "Scopri tajine, cuscus e il vivace cibo dei mercati marocchini.",
+     "p": [
+      "La tajine è sia uno stufato cotto a lungo sia la pentola di terracotta conica in cui cuoce, spesso con carne, frutta e spezie.",
+      "Il cuscus, semola al vapore con verdure e carne, è spesso un grande pasto di famiglia condiviso il venerdì.",
+      "Al tramonto la piazza Jemaa el-Fna di Marrakech si riempie di banchi con zuppa harira, carni alla griglia e brodo di lumache."
+     ],
+     "q": "Proveresti prima una tajine dolce e salata o un cuscus di verdure?",
+     "c": "Trova due abbinamenti classici di tajine e annota gli ingredienti principali."
+    },
+    "pt": {
+     "t": "Marrocos: tagines e souks",
+     "g": "Descobre as tagines, o cuscuz e a comida animada dos mercados marroquinos.",
+     "p": [
+      "A tagine é ao mesmo tempo um guisado lento e o tacho de barro cónico onde coze, juntando muitas vezes carne, fruta e especiarias.",
+      "O cuscuz, sêmola ao vapor com legumes e carne, é muitas vezes uma grande refeição de família partilhada à sexta-feira.",
+      "Ao entardecer a praça Jemaa el-Fna, em Marraquexe, enche-se de bancas com sopa harira, grelhados e caldo de caracóis."
+     ],
+     "q": "Provarias primeiro uma tagine agridoce ou um cuscuz de legumes?",
+     "c": "Encontra duas combinações clássicas de tagine e anota os ingredientes principais."
+    },
+    "pt_BR": {
+     "t": "Marrocos: tajines e souks",
+     "g": "Descubra os tajines, o cuscuz e a comida animada dos mercados marroquinos.",
+     "p": [
+      "O tajine é ao mesmo tempo um ensopado cozido devagar e a panela de barro cônica onde é feito, muitas vezes com carne, fruta e especiarias.",
+      "O cuscuz marroquino, sêmola no vapor com legumes e carne, costuma ser uma grande refeição de família às sextas-feiras.",
+      "Ao entardecer a praça Jemaa el-Fna, em Marrakech, se enche de barracas com sopa harira, carnes grelhadas e caldo de caracol."
+     ],
+     "q": "Você provaria primeiro um tajine agridoce ou um cuscuz de legumes?",
+     "c": "Encontre duas combinações clássicas de tajine e anote os ingredientes principais."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Egypt's everyday dishes",
+     "g": "Discover koshari, ful medames and Egypt's hearty street breakfasts.",
+     "p": [
+      "Koshari layers rice, lentils, pasta and chickpeas with a tangy tomato sauce and crispy fried onions.",
+      "Ful medames, slow-cooked fava beans with oil, lemon and cumin, is a classic breakfast scooped up with baladi bread.",
+      "Egyptian ta'ameya is falafel made from fava beans instead of chickpeas, green inside and crisp outside."
+     ],
+     "q": "Which Egyptian dish sounds most comforting to you?",
+     "c": "Compare Egyptian ta'ameya with chickpea falafel: what is different and what is the same?"
+    },
+    "de": {
+     "t": "Ägyptens Alltagsgerichte",
+     "g": "Entdecke Koshari, Ful Medames und Ägyptens herzhafte Straßenfrühstücke.",
+     "p": [
+      "Koshari schichtet Reis, Linsen, Nudeln und Kichererbsen mit würziger Tomatensoße und knusprigen Röstzwiebeln.",
+      "Ful Medames, lange gekochte Ackerbohnen mit Öl, Zitrone und Kreuzkümmel, ist ein klassisches Frühstück mit Baladi-Brot.",
+      "Ägyptische Ta'ameya ist Falafel aus Ackerbohnen statt Kichererbsen, innen grün und außen knusprig."
+     ],
+     "q": "Welches ägyptische Gericht klingt für dich am gemütlichsten?",
+     "c": "Vergleiche ägyptische Ta'ameya mit Kichererbsen-Falafel: Was ist anders, was gleich?"
+    },
+    "es": {
+     "t": "Los platos diarios de Egipto",
+     "g": "Descubre el koshari, el ful medames y los contundentes desayunos callejeros de Egipto.",
+     "p": [
+      "El koshari combina arroz, lentejas, pasta y garbanzos con una salsa de tomate ácida y cebolla frita crujiente.",
+      "El ful medames, habas cocidas a fuego lento con aceite, limón y comino, es un desayuno clásico que se come con pan baladi.",
+      "La ta'ameya egipcia es un falafel de habas en lugar de garbanzos, verde por dentro y crujiente por fuera."
+     ],
+     "q": "¿Qué plato egipcio te parece más reconfortante?",
+     "c": "Compara la ta'ameya egipcia con el falafel de garbanzos: ¿qué cambia y qué se parece?"
+    },
+    "fr": {
+     "t": "Les plats du quotidien en Égypte",
+     "g": "Découvre le koshari, le ful medames et les copieux petits-déjeuners de rue égyptiens.",
+     "p": [
+      "Le koshari superpose riz, lentilles, pâtes et pois chiches avec une sauce tomate acidulée et des oignons frits croustillants.",
+      "Le ful medames, fèves mijotées à l'huile, au citron et au cumin, est un petit-déjeuner classique à saucer avec du pain baladi.",
+      "La ta'ameya égyptienne est un falafel à base de fèves plutôt que de pois chiches, vert dedans et croustillant dehors."
+     ],
+     "q": "Quel plat égyptien te semble le plus réconfortant ?",
+     "c": "Compare la ta'ameya égyptienne au falafel de pois chiches : qu'est-ce qui change, qu'est-ce qui se ressemble ?"
+    },
+    "it": {
+     "t": "I piatti quotidiani dell'Egitto",
+     "g": "Scopri il koshari, il ful medames e le sostanziose colazioni di strada egiziane.",
+     "p": [
+      "Il koshari unisce riso, lenticchie, pasta e ceci con una salsa di pomodoro acidula e cipolle fritte croccanti.",
+      "Il ful medames, fave cotte a lungo con olio, limone e cumino, è una colazione classica da raccogliere con il pane baladi.",
+      "La ta'ameya egiziana è un falafel di fave invece che di ceci, verde dentro e croccante fuori."
+     ],
+     "q": "Quale piatto egiziano ti sembra più confortante?",
+     "c": "Confronta la ta'ameya egiziana con il falafel di ceci: cosa cambia e cosa è simile?"
+    },
+    "pt": {
+     "t": "Os pratos do dia a dia no Egito",
+     "g": "Descobre o koshari, o ful medames e os fartos pequenos-almoços de rua do Egito.",
+     "p": [
+      "O koshari junta arroz, lentilhas, massa e grão-de-bico com um molho de tomate ácido e cebola frita estaladiça.",
+      "O ful medames, favas cozidas devagar com azeite, limão e cominhos, é um pequeno-almoço clássico comido com pão baladi.",
+      "A ta'ameya egípcia é um falafel feito de favas em vez de grão-de-bico, verde por dentro e estaladiço por fora."
+     ],
+     "q": "Que prato egípcio te parece mais reconfortante?",
+     "c": "Compara a ta'ameya egípcia com o falafel de grão-de-bico: o que muda e o que é igual?"
+    },
+    "pt_BR": {
+     "t": "Os pratos do dia a dia no Egito",
+     "g": "Descubra o koshari, o ful medames e os cafés da manhã de rua bem servidos do Egito.",
+     "p": [
+      "O koshari junta arroz, lentilha, macarrão e grão-de-bico com molho de tomate azedinho e cebola frita crocante.",
+      "O ful medames, favas cozidas devagar com azeite, limão e cominho, é um café da manhã clássico comido com pão baladi.",
+      "A ta'ameya egípcia é um falafel feito de fava em vez de grão-de-bico, verde por dentro e crocante por fora."
+     ],
+     "q": "Qual prato egípcio parece mais reconfortante para você?",
+     "c": "Compare a ta'ameya egípcia com o falafel de grão-de-bico: o que muda e o que é igual?"
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ethiopia: injera and sharing",
+     "g": "Learn how to eat from one shared platter with injera, the teff bread you met earlier.",
+     "p": [
+      "Stews called wat, lentils and vegetables are served on a large injera, and everyone eats together from the same platter.",
+      "Tear a piece of injera with your right hand, pinch up some stew and eat; the injera underneath soaks up the flavours.",
+      "Gursha, placing a bite in a friend's mouth, is a warm sign of affection, and a colourful vegetarian platter is common."
+     ],
+     "q": "How would you feel about eating from one shared platter with new friends?",
+     "c": "Find the names of two Ethiopian dishes you would want on your shared platter."
+    },
+    "de": {
+     "t": "Äthiopien: Injera und Teilen",
+     "g": "Lerne, mit Injera, dem Teff-Brot von neulich, von einer gemeinsamen Platte zu essen.",
+     "p": [
+      "Eintöpfe namens Wat, Linsen und Gemüse liegen auf einer großen Injera, und alle essen gemeinsam von derselben Platte.",
+      "Reiß mit der rechten Hand ein Stück Injera ab, greif damit etwas Eintopf und iss; die Injera darunter saugt die Aromen auf.",
+      "Gursha, einem Freund einen Bissen in den Mund zu geben, ist ein herzliches Zeichen der Zuneigung; bunte vegetarische Platten sind üblich."
+     ],
+     "q": "Wie fändest du es, mit neuen Freunden von einer gemeinsamen Platte zu essen?",
+     "c": "Finde die Namen von zwei äthiopischen Gerichten, die du auf deiner Platte haben möchtest."
+    },
+    "es": {
+     "t": "Etiopía: injera y compartir",
+     "g": "Aprende a comer de una bandeja compartida con injera, el pan de teff que ya conociste.",
+     "p": [
+      "Guisos llamados wat, lentejas y verduras se sirven sobre una gran injera, y todos comen juntos de la misma bandeja.",
+      "Arranca un trozo de injera con la mano derecha, pellizca algo de guiso y come; la injera de abajo absorbe los sabores.",
+      "El gursha, poner un bocado en la boca de un amigo, es un cálido gesto de cariño, y las bandejas vegetarianas de colores son habituales."
+     ],
+     "q": "¿Cómo te sentirías comiendo de una bandeja compartida con amigos nuevos?",
+     "c": "Busca los nombres de dos platos etíopes que querrías en tu bandeja compartida."
+    },
+    "fr": {
+     "t": "L'Éthiopie : injera et partage",
+     "g": "Apprends à manger dans un plateau commun avec l'injera, la galette de teff déjà rencontrée.",
+     "p": [
+      "Des ragoûts appelés wat, des lentilles et des légumes sont servis sur une grande injera, et tout le monde mange dans le même plateau.",
+      "Déchire un morceau d'injera de la main droite, pince un peu de ragoût et mange ; l'injera du dessous absorbe les saveurs.",
+      "Le gursha, mettre une bouchée dans la bouche d'un ami, est un geste d'affection, et les plateaux végétariens colorés sont courants."
+     ],
+     "q": "Que penserais-tu de manger dans un plateau commun avec de nouveaux amis ?",
+     "c": "Trouve le nom de deux plats éthiopiens que tu voudrais sur ton plateau commun."
+    },
+    "it": {
+     "t": "Etiopia: injera e condivisione",
+     "g": "Impara a mangiare da un unico vassoio condiviso con l'injera, il pane di teff che hai già incontrato.",
+     "p": [
+      "Stufati chiamati wat, lenticchie e verdure si servono su una grande injera, e tutti mangiano insieme dallo stesso vassoio.",
+      "Strappa un pezzo di injera con la mano destra, prendi un po' di stufato e mangia; l'injera sotto assorbe i sapori.",
+      "Il gursha, mettere un boccone in bocca a un amico, è un caldo segno di affetto, e i vassoi vegetariani colorati sono comuni."
+     ],
+     "q": "Come ti sentiresti a mangiare da un vassoio condiviso con nuovi amici?",
+     "c": "Trova i nomi di due piatti etiopi che vorresti sul tuo vassoio condiviso."
+    },
+    "pt": {
+     "t": "Etiópia: injera e partilha",
+     "g": "Aprende a comer de um tabuleiro partilhado com injera, o pão de teff que já conheceste.",
+     "p": [
+      "Guisados chamados wat, lentilhas e legumes são servidos sobre uma grande injera, e todos comem juntos do mesmo tabuleiro.",
+      "Rasga um pedaço de injera com a mão direita, apanha um pouco de guisado e come; a injera por baixo absorve os sabores.",
+      "O gursha, pôr uma garfada na boca de um amigo, é um gesto caloroso de afeto, e os tabuleiros vegetarianos coloridos são comuns."
+     ],
+     "q": "Como te sentirias a comer de um tabuleiro partilhado com amigos novos?",
+     "c": "Encontra os nomes de dois pratos etíopes que querias no teu tabuleiro partilhado."
+    },
+    "pt_BR": {
+     "t": "Etiópia: injera e partilha",
+     "g": "Aprenda a comer de uma bandeja compartilhada com injera, o pão de teff que você já conheceu.",
+     "p": [
+      "Ensopados chamados wat, lentilhas e legumes são servidos sobre uma grande injera, e todos comem juntos da mesma bandeja.",
+      "Rasgue um pedaço de injera com a mão direita, pegue um pouco do ensopado e coma; a injera embaixo absorve os sabores.",
+      "O gursha, colocar um bocado na boca de um amigo, é um gesto carinhoso, e bandejas vegetarianas coloridas são comuns."
+     ],
+     "q": "Como você se sentiria comendo de uma bandeja compartilhada com amigos novos?",
+     "c": "Encontre os nomes de dois pratos etíopes que você gostaria na sua bandeja compartilhada."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "West Africa: jollof and more",
+     "g": "Discover jollof rice, suya and the bold flavours of West Africa.",
+     "p": [
+      "Jollof rice is cooked in a rich tomato, pepper and onion sauce, and Ghana and Nigeria share a friendly rivalry over the best version.",
+      "Suya is thinly sliced beef grilled on skewers with a spicy peanut seasoning called yaji, a favourite evening street food in Nigeria.",
+      "Senegal's thieboudienne pairs fish, rice and vegetables, and fried ripe plantain appears on tables all over the region."
+     ],
+     "q": "Whose jollof would you like to taste first, Ghana's or Nigeria's?",
+     "c": "Find one West African dish beyond jollof and note which country it comes from."
+    },
+    "de": {
+     "t": "Westafrika: Jollof und mehr",
+     "g": "Entdecke Jollof-Reis, Suya und die kräftigen Aromen Westafrikas.",
+     "p": [
+      "Jollof-Reis gart in einer Soße aus Tomaten, Paprika und Zwiebeln, und Ghana und Nigeria streiten freundschaftlich um die beste Version.",
+      "Suya ist dünn geschnittenes Rindfleisch vom Spieß mit scharfer Erdnusswürzung namens Yaji, ein beliebtes Abend-Streetfood in Nigeria.",
+      "Senegals Thieboudienne verbindet Fisch, Reis und Gemüse, und frittierte reife Kochbananen gibt es in der ganzen Region."
+     ],
+     "q": "Wessen Jollof würdest du zuerst probieren, das aus Ghana oder aus Nigeria?",
+     "c": "Finde ein westafrikanisches Gericht jenseits von Jollof und notiere sein Herkunftsland."
+    },
+    "es": {
+     "t": "África occidental: jollof y más",
+     "g": "Descubre el arroz jollof, el suya y los intensos sabores de África occidental.",
+     "p": [
+      "El arroz jollof se cocina en salsa de tomate, pimiento y cebolla, y Ghana y Nigeria compiten amistosamente por la mejor versión.",
+      "El suya es ternera en tiras finas asada en brochetas con un aliño picante de cacahuete llamado yaji, comida callejera nocturna en Nigeria.",
+      "El thieboudienne de Senegal une pescado, arroz y verduras, y el plátano maduro frito aparece en mesas de toda la región."
+     ],
+     "q": "¿Qué jollof probarías primero, el de Ghana o el de Nigeria?",
+     "c": "Busca un plato de África occidental además del jollof y anota de qué país es."
+    },
+    "fr": {
+     "t": "L'Afrique de l'Ouest : jollof et plus",
+     "g": "Découvre le riz jollof, le suya et les saveurs franches de l'Afrique de l'Ouest.",
+     "p": [
+      "Le riz jollof cuit dans une riche sauce tomate, poivron et oignon, et le Ghana et le Nigeria se disputent amicalement la meilleure version.",
+      "Le suya : de fines tranches de bœuf grillées en brochettes avec un mélange pimenté à l'arachide, le yaji, star des soirées au Nigeria.",
+      "Le thiéboudiène sénégalais associe poisson, riz et légumes, et la banane plantain mûre frite est partout dans la région."
+     ],
+     "q": "Quel jollof goûterais-tu en premier, celui du Ghana ou du Nigeria ?",
+     "c": "Trouve un plat ouest-africain autre que le jollof et note son pays d'origine."
+    },
+    "it": {
+     "t": "Africa occidentale: jollof e non solo",
+     "g": "Scopri il riso jollof, il suya e i sapori decisi dell'Africa occidentale.",
+     "p": [
+      "Il riso jollof cuoce in una salsa di pomodoro, peperoni e cipolla, e Ghana e Nigeria si contendono amichevolmente la versione migliore.",
+      "Il suya è manzo a fettine sottili grigliato su spiedini con un condimento piccante di arachidi, lo yaji, cibo di strada serale in Nigeria.",
+      "Il thieboudienne del Senegal unisce pesce, riso e verdure, e il platano maturo fritto compare sulle tavole di tutta la regione."
+     ],
+     "q": "Quale jollof assaggeresti per primo, quello del Ghana o della Nigeria?",
+     "c": "Trova un piatto dell'Africa occidentale oltre al jollof e annota da quale paese viene."
+    },
+    "pt": {
+     "t": "África Ocidental: jollof e mais",
+     "g": "Descobre o arroz jollof, o suya e os sabores intensos da África Ocidental.",
+     "p": [
+      "O arroz jollof coze num molho rico de tomate, pimento e cebola, e o Gana e a Nigéria mantêm uma rivalidade amigável pela melhor versão.",
+      "O suya é carne de vaca em fatias finas grelhada em espetos com um tempero picante de amendoim, o yaji, comida de rua noturna na Nigéria.",
+      "O thieboudienne do Senegal junta peixe, arroz e legumes, e a banana-pão madura frita aparece em mesas de toda a região."
+     ],
+     "q": "Que jollof provarias primeiro, o do Gana ou o da Nigéria?",
+     "c": "Encontra um prato da África Ocidental além do jollof e anota de que país vem."
+    },
+    "pt_BR": {
+     "t": "África Ocidental: jollof e mais",
+     "g": "Descubra o arroz jollof, o suya e os sabores marcantes da África Ocidental.",
+     "p": [
+      "O arroz jollof é feito num molho rico de tomate, pimentão e cebola, e Gana e Nigéria têm uma rivalidade amigável pela melhor versão.",
+      "O suya é carne bovina em fatias finas grelhada no espeto com um tempero picante de amendoim chamado yaji, comida de rua noturna na Nigéria.",
+      "O thieboudienne do Senegal junta peixe, arroz e legumes, e a banana-da-terra madura frita aparece nas mesas de toda a região."
+     ],
+     "q": "Qual jollof você provaria primeiro, o de Gana ou o da Nigéria?",
+     "c": "Encontre um prato da África Ocidental além do jollof e anote de que país ele vem."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "South Africa: braai and bobotie",
+     "g": "Discover South Africa's barbecue culture and Cape Malay dishes.",
+     "p": [
+      "A braai is much more than a barbecue: friends gather around the fire for hours, often grilling boerewors, a coiled spiced sausage.",
+      "Bobotie, a Cape Malay classic, is gently spiced minced meat with dried fruit, baked under a golden egg topping.",
+      "Cape Malay cooking, with roots in Southeast Asia, adds warm spices, and Durban is famous for bunny chow, curry in a hollowed loaf."
+     ],
+     "q": "What is a typical gathering around food like where you live?",
+     "c": "Learn what bunny chow is and where its name may come from, then share the story with a friend."
+    },
+    "de": {
+     "t": "Südafrika: Braai und Bobotie",
+     "g": "Entdecke Südafrikas Grillkultur und kapmalaiische Gerichte.",
+     "p": [
+      "Ein Braai ist mehr als Grillen: Freunde sitzen stundenlang ums Feuer, oft mit Boerewors, einer gewürzten Wurstschnecke.",
+      "Bobotie, ein kapmalaiischer Klassiker, ist mild gewürztes Hackfleisch mit Trockenobst, überbacken mit goldener Eierschicht.",
+      "Die kapmalaiische Küche mit Wurzeln in Südostasien bringt warme Gewürze, und Durban ist für Bunny Chow berühmt: Curry im ausgehöhlten Brot."
+     ],
+     "q": "Wie sieht bei dir ein typisches Beisammensein rund ums Essen aus?",
+     "c": "Finde heraus, was Bunny Chow ist und woher der Name kommen könnte, und erzähl es einem Freund."
+    },
+    "es": {
+     "t": "Sudáfrica: braai y bobotie",
+     "g": "Descubre la cultura de la barbacoa sudafricana y los platos malayos del Cabo.",
+     "p": [
+      "Un braai es mucho más que una barbacoa: los amigos pasan horas junto al fuego, a menudo asando boerewors, una salchicha en espiral.",
+      "El bobotie, clásico malayo del Cabo, es carne picada suavemente especiada con fruta seca, horneada bajo una capa dorada de huevo.",
+      "La cocina malaya del Cabo, con raíces en el sudeste asiático, usa especias cálidas; en Durban triunfa el bunny chow, curry en un pan hueco."
+     ],
+     "q": "¿Cómo es una reunión típica en torno a la comida donde vives?",
+     "c": "Averigua qué es el bunny chow y de dónde podría venir su nombre, y cuéntaselo a un amigo."
+    },
+    "fr": {
+     "t": "L'Afrique du Sud : braai et bobotie",
+     "g": "Découvre la culture du barbecue sud-africain et les plats malais du Cap.",
+     "p": [
+      "Un braai, c'est plus qu'un barbecue : on passe des heures entre amis autour du feu, souvent avec la boerewors, une saucisse en spirale.",
+      "Le bobotie, classique malais du Cap, est une viande hachée doucement épicée aux fruits secs, gratinée sous une couche dorée d'œuf.",
+      "La cuisine malaise du Cap, née en Asie du Sud-Est, a des épices chaudes ; Durban est célèbre pour le bunny chow, curry dans un pain évidé."
+     ],
+     "q": "À quoi ressemble un repas convivial typique là où tu vis ?",
+     "c": "Découvre ce qu'est le bunny chow et d'où pourrait venir son nom, puis raconte-le à un ami."
+    },
+    "it": {
+     "t": "Sudafrica: braai e bobotie",
+     "g": "Scopri la cultura del barbecue sudafricano e i piatti malesi del Capo.",
+     "p": [
+      "Un braai è molto più di un barbecue: gli amici passano ore attorno al fuoco, spesso grigliando la boerewors, una salsiccia a spirale.",
+      "Il bobotie, classico malese del Capo, è carne macinata delicatamente speziata con frutta secca, cotta sotto uno strato dorato d'uovo.",
+      "La cucina malese del Capo, nata nel Sud-est asiatico, usa spezie calde; Durban è famosa per il bunny chow, curry in una pagnotta vuota."
+     ],
+     "q": "Com'è un tipico ritrovo intorno al cibo dove vivi?",
+     "c": "Scopri cos'è il bunny chow e da dove potrebbe venire il nome, poi raccontalo a un amico."
+    },
+    "pt": {
+     "t": "África do Sul: braai e bobotie",
+     "g": "Descobre a cultura do churrasco sul-africano e os pratos malaios do Cabo.",
+     "p": [
+      "Um braai é mais do que um churrasco: os amigos passam horas à volta do lume, muitas vezes a grelhar boerewors, uma salsicha em espiral.",
+      "O bobotie, clássico malaio do Cabo, é carne picada suavemente especiada com fruta seca, gratinada sob uma camada dourada de ovo.",
+      "A cozinha malaia do Cabo, com raízes no Sudeste Asiático, usa especiarias quentes; Durban é famosa pelo bunny chow, caril num pão escavado."
+     ],
+     "q": "Como é um encontro típico à volta da comida onde vives?",
+     "c": "Descobre o que é o bunny chow e de onde pode vir o nome, e conta a história a um amigo."
+    },
+    "pt_BR": {
+     "t": "África do Sul: braai e bobotie",
+     "g": "Descubra a cultura do churrasco sul-africano e os pratos malaios do Cabo.",
+     "p": [
+      "Um braai é mais que um churrasco: os amigos passam horas em volta do fogo, muitas vezes assando boerewors, uma linguiça em espiral.",
+      "O bobotie, clássico malaio do Cabo, é carne moída suavemente temperada com frutas secas, assada sob uma camada dourada de ovo.",
+      "A cozinha malaia do Cabo, com raízes no Sudeste Asiático, usa especiarias quentes; Durban é famosa pelo bunny chow, curry num pão escavado."
+     ],
+     "q": "Como é um encontro típico em volta da comida onde você mora?",
+     "c": "Descubra o que é o bunny chow e de onde o nome pode ter vindo, e conte a história a um amigo."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: Europe, Middle East, Africa",
+     "g": "Compare your favourite dishes from the last month and plan an imaginary tasting day.",
+     "p": [
+      "Remember the journey: Italian regions, French bakeries, Spanish tapas, Portuguese tascas, Greek and Turkish meze.",
+      "Then the Levant, Morocco and Egypt, Ethiopia's shared injera, West Africa's jollof and South Africa's braai.",
+      "Plan a tasting day: a breakfast, a street snack, a long shared lunch and a market dinner, each from a different place."
+     ],
+     "q": "If you could eat only one dish from this month again tomorrow, which would it be?",
+     "c": "Write your imaginary tasting day menu with four dishes from four different countries."
+    },
+    "de": {
+     "t": "Rückblick: Europa, Nahost, Afrika",
+     "g": "Vergleiche deine Lieblingsgerichte des letzten Monats und plane einen ausgedachten Genusstag.",
+     "p": [
+      "Erinnere dich an die Reise: Italiens Regionen, Frankreichs Bäckereien, Spaniens Tapas, Portugals Tascas, griechische und türkische Meze.",
+      "Dann die Levante, Marokko und Ägypten, Äthiopiens geteilte Injera, Westafrikas Jollof und Südafrikas Braai.",
+      "Plane einen Genusstag: ein Frühstück, einen Straßensnack, ein langes gemeinsames Mittagessen und ein Marktabendessen aus je einem Land."
+     ],
+     "q": "Wenn du morgen nur ein Gericht aus diesem Monat noch einmal essen dürftest, welches wäre es?",
+     "c": "Schreib dein Menü für den Genusstag mit vier Gerichten aus vier verschiedenen Ländern."
+    },
+    "es": {
+     "t": "Repaso: Europa, Oriente Medio, África",
+     "g": "Compara tus platos favoritos del último mes y planea un día de degustación imaginario.",
+     "p": [
+      "Recuerda el viaje: regiones de Italia, panaderías francesas, tapas españolas, tascas portuguesas, mezes griegos y turcos.",
+      "Luego el Levante, Marruecos y Egipto, la injera compartida de Etiopía, el jollof de África occidental y el braai sudafricano.",
+      "Planea un día de degustación: un desayuno, un tentempié callejero, una larga comida compartida y una cena de mercado, cada uno de un lugar."
+     ],
+     "q": "Si mañana solo pudieras repetir un plato de este mes, ¿cuál sería?",
+     "c": "Escribe el menú de tu día de degustación imaginario con cuatro platos de cuatro países distintos."
+    },
+    "fr": {
+     "t": "Révision : Europe, Moyen-Orient, Afrique",
+     "g": "Compare tes plats préférés du dernier mois et prévois une journée de dégustation imaginaire.",
+     "p": [
+      "Souviens-toi du voyage : régions d'Italie, boulangeries françaises, tapas espagnoles, tascas portugaises, mezzés grecs et turcs.",
+      "Puis le Levant, le Maroc et l'Égypte, l'injera partagée d'Éthiopie, le jollof ouest-africain et le braai sud-africain.",
+      "Prévois ta journée : un petit-déjeuner, un en-cas de rue, un long déjeuner partagé et un dîner au marché, chacun d'un pays différent."
+     ],
+     "q": "Si tu ne pouvais remanger qu'un seul plat de ce mois demain, lequel serait-ce ?",
+     "c": "Écris le menu de ta journée de dégustation imaginaire avec quatre plats de quatre pays différents."
+    },
+    "it": {
+     "t": "Ripasso: Europa, Medio Oriente, Africa",
+     "g": "Confronta i tuoi piatti preferiti dell'ultimo mese e pianifica una giornata di assaggi immaginaria.",
+     "p": [
+      "Ricorda il viaggio: regioni italiane, boulangerie francesi, tapas spagnole, tascas portoghesi, meze greci e turchi.",
+      "Poi il Levante, il Marocco e l'Egitto, l'injera condivisa dell'Etiopia, il jollof dell'Africa occidentale e il braai sudafricano.",
+      "Pianifica una giornata di assaggi: colazione, spuntino di strada, lungo pranzo condiviso e cena al mercato, ognuno da un paese diverso."
+     ],
+     "q": "Se domani potessi rimangiare un solo piatto di questo mese, quale sarebbe?",
+     "c": "Scrivi il menu della tua giornata di assaggi immaginaria con quattro piatti di quattro paesi diversi."
+    },
+    "pt": {
+     "t": "Revisão: Europa, Médio Oriente, África",
+     "g": "Compara os teus pratos preferidos do último mês e planeia um dia de provas imaginário.",
+     "p": [
+      "Lembra-te da viagem: regiões de Itália, padarias francesas, tapas espanholas, tascas portuguesas, mezes gregos e turcos.",
+      "Depois o Levante, Marrocos e o Egito, a injera partilhada da Etiópia, o jollof da África Ocidental e o braai sul-africano.",
+      "Planeia um dia de provas: um pequeno-almoço, um petisco de rua, um longo almoço partilhado e um jantar no mercado, cada um de um país."
+     ],
+     "q": "Se amanhã só pudesses repetir um prato deste mês, qual seria?",
+     "c": "Escreve a ementa do teu dia de provas imaginário com quatro pratos de quatro países diferentes."
+    },
+    "pt_BR": {
+     "t": "Revisão: Europa, Oriente Médio, África",
+     "g": "Compare seus pratos favoritos do último mês e planeje um dia de degustação imaginário.",
+     "p": [
+      "Lembre a viagem: regiões da Itália, padarias francesas, tapas espanholas, tascas portuguesas, mezes gregos e turcos.",
+      "Depois o Levante, Marrocos e o Egito, a injera compartilhada da Etiópia, o jollof da África Ocidental e o braai sul-africano.",
+      "Planeje um dia de degustação: um café da manhã, um lanche de rua, um longo almoço compartilhado e um jantar no mercado, cada um de um país."
+     ],
+     "q": "Se amanhã você só pudesse repetir um prato deste mês, qual seria?",
+     "c": "Escreva o cardápio do seu dia de degustação imaginário com quatro pratos de quatro países diferentes."
+    }
+   }
+  }
+ ]
+}

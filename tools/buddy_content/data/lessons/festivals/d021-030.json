@@ -1,0 +1,835 @@
+{
+ "topic": "festivals",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Winter solstice celebrations",
+     "g": "See how Yule, Dongzhi dumplings and other customs welcome the return of longer days after the longest night.",
+     "p": [
+      "In the northern hemisphere the winter solstice falls around 21 or 22 December; from then on the days grow longer.",
+      "Yule was an old northern European midwinter feast; words like Yule log and Yuletide still live on today.",
+      "In China families mark Dongzhi with sweet rice balls called tangyuan in the south and dumplings in the north."
+     ],
+     "q": "Do you notice the short days of winter, and what helps you enjoy them?",
+     "c": "Check the time of sunset where you live today and again in two weeks to see the change."
+    },
+    "de": {
+     "t": "Feste zur Wintersonnenwende",
+     "g": "Erfahre, wie Jul, Dongzhi-Teigtaschen und andere Bräuche nach der längsten Nacht die längeren Tage begrüßen.",
+     "p": [
+      "Auf der Nordhalbkugel fällt die Wintersonnenwende auf den 21. oder 22. Dezember; danach werden die Tage länger.",
+      "Jul war ein altes nordeuropäisches Mittwinterfest; in Skandinavien heißt Weihnachten bis heute Jul.",
+      "In China feiern Familien Dongzhi mit süßen Reisbällchen namens Tangyuan im Süden und Teigtaschen im Norden."
+     ],
+     "q": "Merkst du die kurzen Wintertage, und was hilft dir, sie zu genießen?",
+     "c": "Schau heute nach, wann bei dir die Sonne untergeht, und vergleiche es in zwei Wochen."
+    },
+    "es": {
+     "t": "Fiestas del solsticio de invierno",
+     "g": "Descubre cómo el Yule, las empanadillas de Dongzhi y otras costumbres celebran la vuelta de los días largos.",
+     "p": [
+      "En el hemisferio norte el solsticio de invierno cae hacia el 21 o 22 de diciembre; desde entonces los días se alargan.",
+      "El Yule era una antigua fiesta de pleno invierno del norte de Europa; en Escandinavia la Navidad aún se llama Jul.",
+      "En China las familias celebran Dongzhi con bolitas dulces de arroz llamadas tangyuan en el sur y empanadillas en el norte."
+     ],
+     "q": "¿Notas los días cortos del invierno? ¿Qué te ayuda a disfrutarlos?",
+     "c": "Mira hoy a qué hora se pone el sol donde vives y vuelve a mirarlo dentro de dos semanas."
+    },
+    "fr": {
+     "t": "Les fêtes du solstice d'hiver",
+     "g": "Découvre comment Yule, les raviolis de Dongzhi et d'autres coutumes saluent le retour des jours plus longs.",
+     "p": [
+      "Dans l'hémisphère nord, le solstice d'hiver tombe vers le 21 ou 22 décembre ; ensuite, les jours rallongent.",
+      "Yule était une ancienne fête du cœur de l'hiver en Europe du Nord ; en Scandinavie, Noël s'appelle encore Jul.",
+      "En Chine, les familles fêtent Dongzhi avec des boulettes de riz sucrées, les tangyuan, au sud et des raviolis au nord."
+     ],
+     "q": "Remarques-tu les jours courts de l'hiver, et qu'est-ce qui t'aide à les apprécier ?",
+     "c": "Regarde aujourd'hui l'heure du coucher du soleil chez toi, puis compare dans deux semaines."
+    },
+    "it": {
+     "t": "Feste del solstizio d'inverno",
+     "g": "Scopri come Yule, i ravioli di Dongzhi e altre usanze salutano il ritorno delle giornate più lunghe.",
+     "p": [
+      "Nell'emisfero nord il solstizio d'inverno cade verso il 21 o 22 dicembre; da allora le giornate si allungano.",
+      "Yule era un'antica festa di mezzo inverno del Nord Europa; in Scandinavia il Natale si chiama ancora Jul.",
+      "In Cina le famiglie celebrano Dongzhi con palline dolci di riso, i tangyuan, al sud e con i ravioli al nord."
+     ],
+     "q": "Noti le giornate corte dell'inverno? Cosa ti aiuta a goderle?",
+     "c": "Controlla oggi a che ora tramonta il sole dove vivi e ricontrolla tra due settimane."
+    },
+    "pt": {
+     "t": "Festas do solstício de inverno",
+     "g": "Descobre como o Yule, os pastéis do Dongzhi e outros costumes celebram o regresso dos dias mais longos.",
+     "p": [
+      "No hemisfério norte o solstício de inverno calha por volta de 21 ou 22 de dezembro; a partir daí os dias crescem.",
+      "O Yule era uma antiga festa do pino do inverno no norte da Europa; na Escandinávia o Natal ainda se chama Jul.",
+      "Na China as famílias celebram o Dongzhi com bolinhas doces de arroz, as tangyuan, no sul, e pastéis cozidos no norte."
+     ],
+     "q": "Notas os dias curtos do inverno? O que te ajuda a aproveitá-los?",
+     "c": "Vê hoje a que horas o sol se põe onde vives e volta a ver daqui a duas semanas."
+    },
+    "pt_BR": {
+     "t": "Festas do solstício de inverno",
+     "g": "Descubra como o Yule, os bolinhos do Dongzhi e outros costumes celebram a volta dos dias mais longos.",
+     "p": [
+      "No hemisfério norte o solstício de inverno cai por volta de 21 ou 22 de dezembro; no Brasil, ele acontece em junho.",
+      "O Yule era uma antiga festa do auge do inverno no norte da Europa; na Escandinávia o Natal ainda se chama Jul.",
+      "Na China as famílias celebram o Dongzhi com bolinhas doces de arroz, as tangyuan, no sul, e guiozas no norte."
+     ],
+     "q": "Você percebe os dias curtos do inverno? O que ajuda você a aproveitá-los?",
+     "c": "Veja hoje a que horas o sol se põe onde você mora e confira de novo daqui a duas semanas."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yalda Night",
+     "g": "Discover Yalda, the Persian gathering on the longest night with pomegranates, watermelon, nuts and poetry.",
+     "p": [
+      "Yalda is celebrated on the longest night of the year, around 20 or 21 December, in Iran and nearby regions.",
+      "Families stay up late together, sharing red fruits like pomegranates and watermelon, plus nuts and dried fruit.",
+      "Many read poems by Hafez; some open his book at random and read the verse as a playful wish for the future."
+     ],
+     "q": "Who would you love to spend a long, cosy night of stories and snacks with?",
+     "c": "Read one short poem tonight, aloud if you can, and share it with someone."
+    },
+    "de": {
+     "t": "Yalda-Nacht",
+     "g": "Entdecke Yalda, das persische Treffen in der längsten Nacht mit Granatäpfeln, Wassermelone, Nüssen und Gedichten.",
+     "p": [
+      "Yalda wird in der längsten Nacht des Jahres gefeiert, um den 20. oder 21. Dezember, im Iran und in Nachbarregionen.",
+      "Familien bleiben lange zusammen auf und teilen rote Früchte wie Granatäpfel und Wassermelone, dazu Nüsse und Trockenobst.",
+      "Viele lesen Gedichte von Hafis; manche schlagen sein Buch zufällig auf und lesen den Vers als spielerischen Wunsch."
+     ],
+     "q": "Mit wem würdest du gern eine lange, gemütliche Nacht mit Geschichten und Snacks verbringen?",
+     "c": "Lies heute Abend ein kurzes Gedicht, wenn möglich laut, und teile es mit jemandem."
+    },
+    "es": {
+     "t": "La noche de Yalda",
+     "g": "Descubre Yalda, la reunión persa de la noche más larga con granadas, sandía, frutos secos y poesía.",
+     "p": [
+      "Yalda se celebra la noche más larga del año, hacia el 20 o 21 de diciembre, en Irán y regiones cercanas.",
+      "Las familias trasnochan juntas compartiendo frutas rojas como granadas y sandía, además de frutos secos.",
+      "Muchos leen poemas de Hafez; algunos abren su libro al azar y leen el verso como un deseo divertido para el futuro."
+     ],
+     "q": "¿Con quién te encantaría pasar una noche larga y acogedora de historias y picoteo?",
+     "c": "Lee esta noche un poema corto, en voz alta si puedes, y compártelo con alguien."
+    },
+    "fr": {
+     "t": "La nuit de Yalda",
+     "g": "Découvre Yalda, la veillée persane de la plus longue nuit avec grenades, pastèque, fruits secs et poésie.",
+     "p": [
+      "Yalda se fête la nuit la plus longue de l'année, vers le 20 ou 21 décembre, en Iran et dans les régions voisines.",
+      "Les familles veillent tard ensemble et partagent des fruits rouges comme la grenade et la pastèque, avec des fruits secs.",
+      "Beaucoup lisent des poèmes de Hafez ; certains ouvrent son livre au hasard et lisent le vers comme un vœu ludique."
+     ],
+     "q": "Avec qui aimerais-tu passer une longue nuit douillette d'histoires et de grignotages ?",
+     "c": "Lis ce soir un court poème, à voix haute si tu peux, et partage-le avec quelqu'un."
+    },
+    "it": {
+     "t": "La notte di Yalda",
+     "g": "Scopri Yalda, la veglia persiana della notte più lunga con melograni, anguria, frutta secca e poesia.",
+     "p": [
+      "Yalda si celebra nella notte più lunga dell'anno, verso il 20 o 21 dicembre, in Iran e nelle regioni vicine.",
+      "Le famiglie restano sveglie insieme fino a tardi e condividono frutti rossi come melograni e anguria, e frutta secca.",
+      "Molti leggono poesie di Hafez; alcuni aprono il suo libro a caso e leggono il verso come un augurio giocoso."
+     ],
+     "q": "Con chi ti piacerebbe passare una lunga notte accogliente di storie e stuzzichini?",
+     "c": "Leggi stasera una breve poesia, ad alta voce se puoi, e condividila con qualcuno."
+    },
+    "pt": {
+     "t": "A noite de Yalda",
+     "g": "Descobre o Yalda, o serão persa da noite mais longa com romãs, melancia, frutos secos e poesia.",
+     "p": [
+      "O Yalda celebra-se na noite mais longa do ano, por volta de 20 ou 21 de dezembro, no Irão e em regiões vizinhas.",
+      "As famílias ficam acordadas até tarde a partilhar frutos vermelhos como romãs e melancia, além de frutos secos.",
+      "Muitos leem poemas de Hafez; alguns abrem o livro ao acaso e leem o verso como um desejo divertido para o futuro."
+     ],
+     "q": "Com quem gostavas de passar uma noite longa e aconchegante de histórias e petiscos?",
+     "c": "Lê esta noite um poema curto, em voz alta se puderes, e partilha-o com alguém."
+    },
+    "pt_BR": {
+     "t": "A noite de Yalda",
+     "g": "Descubra o Yalda, a reunião persa da noite mais longa com romãs, melancia, castanhas e poesia.",
+     "p": [
+      "O Yalda é celebrado na noite mais longa do ano, por volta de 20 ou 21 de dezembro, no Irã e em regiões vizinhas.",
+      "As famílias ficam acordadas até tarde dividindo frutas vermelhas como romã e melancia, além de castanhas e frutas secas.",
+      "Muitos leem poemas de Hafez; alguns abrem o livro ao acaso e leem o verso como um desejo divertido para o futuro."
+     ],
+     "q": "Com quem você adoraria passar uma noite longa e aconchegante de histórias e petiscos?",
+     "c": "Leia hoje à noite um poema curto, em voz alta se puder, e compartilhe com alguém."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Carnival basics",
+     "g": "Learn about Carnival, the festive season before Lent with masks, parades, music and dancing in many countries.",
+     "p": [
+      "Carnival takes place in the days before Lent, the 40-day period before Easter, so its date moves every year.",
+      "Rio de Janeiro is famous for samba school parades, Venice for elegant masks and Cologne for its street parties.",
+      "Its last day is Shrove Tuesday, called Mardi Gras in French, a day of feasting before a quieter season."
+     ],
+     "q": "Which carnival in the world would you most like to experience?",
+     "c": "Listen to one carnival song, like a samba or a calypso, and try to move to the rhythm."
+    },
+    "de": {
+     "t": "Karneval: die Grundlagen",
+     "g": "Lerne den Karneval kennen, die Festzeit vor der Fastenzeit mit Masken, Umzügen, Musik und Tanz in vielen Ländern.",
+     "p": [
+      "Karneval findet in den Tagen vor der Fastenzeit statt, den 40 Tagen vor Ostern, daher wandert sein Datum jedes Jahr.",
+      "Rio de Janeiro ist für seine Sambaschulen berühmt, Venedig für elegante Masken und Köln für seine Straßenfeste.",
+      "Der letzte Tag ist Fastnachtsdienstag, auf Französisch Mardi Gras, ein Tag zum Schlemmen vor einer ruhigeren Zeit."
+     ],
+     "q": "Welchen Karneval der Welt würdest du am liebsten erleben?",
+     "c": "Hör dir ein Karnevalslied an, etwa einen Samba oder Calypso, und versuche, dich im Rhythmus zu bewegen."
+    },
+    "es": {
+     "t": "Lo básico del Carnaval",
+     "g": "Aprende sobre el Carnaval, la temporada festiva antes de la Cuaresma con máscaras, desfiles, música y baile.",
+     "p": [
+      "El Carnaval se celebra en los días previos a la Cuaresma, los 40 días antes de Pascua, por eso cambia de fecha cada año.",
+      "Río de Janeiro es famoso por los desfiles de las escuelas de samba, Venecia por sus máscaras y Cádiz por sus coplas.",
+      "Su último día es el martes de Carnaval, Mardi Gras en francés, un día de banquete antes de una época más tranquila."
+     ],
+     "q": "¿Qué carnaval del mundo te gustaría vivir más?",
+     "c": "Escucha una canción de carnaval, como una samba o un calipso, e intenta moverte al ritmo."
+    },
+    "fr": {
+     "t": "Les bases du Carnaval",
+     "g": "Découvre le Carnaval, la période de fête avant le Carême avec masques, défilés, musique et danse.",
+     "p": [
+      "Le Carnaval a lieu les jours qui précèdent le Carême, les 40 jours avant Pâques, donc sa date change chaque année.",
+      "Rio de Janeiro est célèbre pour ses écoles de samba, Venise pour ses masques élégants et Nice pour ses corsos fleuris.",
+      "Son dernier jour est le Mardi gras, une journée de festin avant une période plus calme."
+     ],
+     "q": "Quel carnaval du monde aimerais-tu le plus vivre ?",
+     "c": "Écoute une chanson de carnaval, une samba ou un calypso, et essaie de bouger en rythme."
+    },
+    "it": {
+     "t": "Le basi del Carnevale",
+     "g": "Scopri il Carnevale, il periodo di festa prima della Quaresima con maschere, sfilate, musica e balli.",
+     "p": [
+      "Il Carnevale si festeggia nei giorni prima della Quaresima, i 40 giorni prima di Pasqua, quindi cambia data ogni anno.",
+      "Rio de Janeiro è famosa per le scuole di samba, Venezia per le maschere eleganti e Viareggio per i carri allegorici.",
+      "L'ultimo giorno è il Martedì grasso, Mardi Gras in francese, un giorno di festa a tavola prima di un periodo più tranquillo."
+     ],
+     "q": "Quale carnevale del mondo ti piacerebbe vivere di più?",
+     "c": "Ascolta una canzone di carnevale, come una samba o un calypso, e prova a muoverti a ritmo."
+    },
+    "pt": {
+     "t": "O essencial do Carnaval",
+     "g": "Aprende sobre o Carnaval, a época de festa antes da Quaresma com máscaras, desfiles, música e dança.",
+     "p": [
+      "O Carnaval acontece nos dias antes da Quaresma, os 40 dias antes da Páscoa, por isso muda de data todos os anos.",
+      "O Rio de Janeiro é famoso pelos desfiles das escolas de samba, Veneza pelas máscaras e Torres Vedras pelos seus corsos.",
+      "O último dia é a terça-feira de Carnaval, Mardi Gras em francês, um dia de festa antes de uma época mais calma."
+     ],
+     "q": "Que carnaval do mundo gostavas mais de viver?",
+     "c": "Ouve uma música de carnaval, como um samba ou um calipso, e tenta mexer-te ao ritmo."
+    },
+    "pt_BR": {
+     "t": "O básico do Carnaval",
+     "g": "Aprenda sobre o Carnaval, a época de festa antes da Quaresma com máscaras, desfiles, música e dança.",
+     "p": [
+      "O Carnaval acontece nos dias antes da Quaresma, os 40 dias antes da Páscoa, por isso muda de data todo ano.",
+      "O Rio é famoso pelos desfiles das escolas de samba, Salvador pelos trios elétricos e Veneza pelas máscaras elegantes.",
+      "O último dia é a terça-feira de Carnaval, Mardi Gras em francês, um dia de festa antes de uma época mais calma."
+     ],
+     "q": "Qual carnaval do mundo você mais gostaria de viver?",
+     "c": "Ouça uma música de carnaval, como um samba, um frevo ou um calipso, e tente se mexer no ritmo."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Masks and costumes",
+     "g": "Find out why people dress up at festivals and what masks can mean in different traditions.",
+     "p": [
+      "A mask lets people step out of their everyday role for a while, so rich and poor, young and old can mix freely.",
+      "In Venice classic masks like the bauta once hid the wearer's identity during the whole carnival season.",
+      "In many traditions costumes show animals, spirits or heroes, and dressing up can tell a story or chase away winter."
+     ],
+     "q": "If you could wear any festival costume for a day, what would it be?",
+     "c": "Make a simple paper mask today and decorate it with colours that express your mood."
+    },
+    "de": {
+     "t": "Masken und Kostüme",
+     "g": "Erfahre, warum Menschen sich bei Festen verkleiden und was Masken in verschiedenen Traditionen bedeuten können.",
+     "p": [
+      "Eine Maske lässt Menschen für eine Weile aus ihrer Alltagsrolle schlüpfen, sodass sich alle frei mischen können.",
+      "In Venedig verbargen klassische Masken wie die Bauta früher die Identität ihrer Träger während der Karnevalszeit.",
+      "In vielen Traditionen zeigen Kostüme Tiere, Geister oder Helden; Verkleidung erzählt Geschichten oder vertreibt den Winter."
+     ],
+     "q": "Welches Festkostüm würdest du gern einen Tag lang tragen?",
+     "c": "Bastle heute eine einfache Papiermaske und gestalte sie in Farben, die deine Stimmung ausdrücken."
+    },
+    "es": {
+     "t": "Máscaras y disfraces",
+     "g": "Descubre por qué la gente se disfraza en las fiestas y qué pueden significar las máscaras en distintas tradiciones.",
+     "p": [
+      "Una máscara permite salir un rato del papel de cada día, para que ricos y pobres, jóvenes y mayores se mezclen.",
+      "En Venecia, máscaras clásicas como la bauta ocultaban la identidad de quien la llevaba durante el carnaval.",
+      "En muchas tradiciones los disfraces representan animales, espíritus o héroes, cuentan historias o ahuyentan el invierno."
+     ],
+     "q": "Si pudieras llevar cualquier disfraz festivo durante un día, ¿cuál sería?",
+     "c": "Haz hoy una máscara sencilla de papel y decórala con colores que expresen tu estado de ánimo."
+    },
+    "fr": {
+     "t": "Masques et costumes",
+     "g": "Découvre pourquoi on se déguise pendant les fêtes et ce que les masques peuvent signifier selon les traditions.",
+     "p": [
+      "Un masque permet de sortir un moment de son rôle quotidien : riches et pauvres, jeunes et vieux se mêlent librement.",
+      "À Venise, des masques classiques comme la bauta cachaient autrefois l'identité de leur porteur pendant le carnaval.",
+      "Dans bien des traditions, les costumes figurent animaux, esprits ou héros ; se déguiser raconte une histoire ou chasse l'hiver."
+     ],
+     "q": "Si tu pouvais porter n'importe quel costume de fête pendant une journée, lequel choisirais-tu ?",
+     "c": "Fabrique aujourd'hui un masque simple en papier et décore-le avec des couleurs qui reflètent ton humeur."
+    },
+    "it": {
+     "t": "Maschere e costumi",
+     "g": "Scopri perché ci si traveste alle feste e cosa possono significare le maschere nelle diverse tradizioni.",
+     "p": [
+      "Una maschera permette di uscire per un po' dal proprio ruolo quotidiano, così ricchi e poveri, giovani e anziani si mescolano.",
+      "A Venezia maschere classiche come la bauta un tempo nascondevano l'identità di chi le indossava durante il carnevale.",
+      "In molte tradizioni i costumi rappresentano animali, spiriti o eroi, raccontano storie o scacciano l'inverno."
+     ],
+     "q": "Se potessi indossare qualsiasi costume di festa per un giorno, quale sceglieresti?",
+     "c": "Crea oggi una semplice maschera di carta e decorala con colori che esprimono il tuo umore."
+    },
+    "pt": {
+     "t": "Máscaras e trajes",
+     "g": "Descobre porque é que as pessoas se mascaram nas festas e o que as máscaras podem significar em várias tradições.",
+     "p": [
+      "Uma máscara permite sair por um tempo do papel de todos os dias, para que ricos e pobres, novos e velhos se misturem.",
+      "Em Veneza, máscaras clássicas como a bauta escondiam antigamente a identidade de quem as usava durante o carnaval.",
+      "Em muitas tradições os trajes mostram animais, espíritos ou heróis; mascarar-se conta histórias ou afasta o inverno."
+     ],
+     "q": "Se pudesses usar qualquer traje de festa durante um dia, qual seria?",
+     "c": "Faz hoje uma máscara simples de papel e decora-a com cores que mostrem o teu estado de espírito."
+    },
+    "pt_BR": {
+     "t": "Máscaras e fantasias",
+     "g": "Descubra por que as pessoas se fantasiam nas festas e o que as máscaras podem significar em várias tradições.",
+     "p": [
+      "Uma máscara permite sair por um tempo do papel de todo dia, para que ricos e pobres, jovens e idosos se misturem.",
+      "Em Veneza, máscaras clássicas como a bauta escondiam antigamente a identidade de quem as usava durante o carnaval.",
+      "Em muitas tradições as fantasias mostram animais, espíritos ou heróis; fantasiar-se conta histórias ou espanta o inverno."
+     ],
+     "q": "Se você pudesse usar qualquer fantasia de festa por um dia, qual seria?",
+     "c": "Faça hoje uma máscara simples de papel e decore com cores que mostrem o seu humor."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holi, the festival of colours",
+     "g": "Meet Holi, when people in India and Nepal throw coloured powder and water to welcome spring.",
+     "p": [
+      "Holi falls on the full moon of the Hindu month of Phalguna, usually in March, at the end of winter.",
+      "On the night before, many communities light bonfires; the next morning the joyful colour play begins.",
+      "Friends, neighbours and strangers smear bright powder called gulal on each other, and everyone says Happy Holi."
+     ],
+     "q": "Which colour would you choose to throw at Holi, and what does it mean to you?",
+     "c": "Add one bright colour to your day: wear it, cook with it or put it on your desk."
+    },
+    "de": {
+     "t": "Holi, das Fest der Farben",
+     "g": "Lerne Holi kennen, bei dem Menschen in Indien und Nepal mit Farbpulver und Wasser den Frühling begrüßen.",
+     "p": [
+      "Holi fällt auf den Vollmond des Hindu-Monats Phalguna, meist im März, am Ende des Winters.",
+      "Am Abend davor zünden viele Gemeinden Feuer an; am nächsten Morgen beginnt das fröhliche Farbenspiel.",
+      "Freunde, Nachbarn und Fremde bestreuen sich mit buntem Pulver namens Gulal, und alle rufen Happy Holi."
+     ],
+     "q": "Welche Farbe würdest du an Holi werfen, und was bedeutet sie für dich?",
+     "c": "Bring heute eine kräftige Farbe in deinen Tag: Trag sie, koch mit ihr oder stell sie auf deinen Tisch."
+    },
+    "es": {
+     "t": "Holi, la fiesta de los colores",
+     "g": "Conoce Holi, cuando en India y Nepal se lanzan polvos de colores y agua para dar la bienvenida a la primavera.",
+     "p": [
+      "Holi cae en la luna llena del mes hindú de Phalguna, normalmente en marzo, al final del invierno.",
+      "La noche anterior muchas comunidades encienden hogueras; a la mañana siguiente empieza el alegre juego de colores.",
+      "Amigos, vecinos y desconocidos se untan con polvo de colores llamado gulal, y todos se desean Happy Holi."
+     ],
+     "q": "¿Qué color elegirías lanzar en Holi y qué significa para ti?",
+     "c": "Añade hoy un color vivo a tu día: vístelo, cocina con él o ponlo en tu mesa."
+    },
+    "fr": {
+     "t": "Holi, la fête des couleurs",
+     "g": "Découvre Holi, quand en Inde et au Népal on se lance poudres colorées et eau pour accueillir le printemps.",
+     "p": [
+      "Holi tombe à la pleine lune du mois hindou de Phalguna, généralement en mars, à la fin de l'hiver.",
+      "La veille au soir, beaucoup de communautés allument des feux ; le lendemain matin commence le joyeux jeu des couleurs.",
+      "Amis, voisins et inconnus s'enduisent de poudre colorée appelée gulal, et tout le monde se souhaite Happy Holi."
+     ],
+     "q": "Quelle couleur choisirais-tu de lancer à Holi, et que signifie-t-elle pour toi ?",
+     "c": "Ajoute une couleur vive à ta journée : porte-la, cuisine avec ou pose-la sur ton bureau."
+    },
+    "it": {
+     "t": "Holi, la festa dei colori",
+     "g": "Scopri Holi, quando in India e Nepal ci si lanciano polveri colorate e acqua per accogliere la primavera.",
+     "p": [
+      "Holi cade con la luna piena del mese indù di Phalguna, di solito a marzo, alla fine dell'inverno.",
+      "La sera prima molte comunità accendono falò; la mattina dopo inizia l'allegro gioco dei colori.",
+      "Amici, vicini e sconosciuti si cospargono di polvere colorata chiamata gulal, e tutti si augurano Happy Holi."
+     ],
+     "q": "Quale colore sceglieresti di lanciare a Holi, e cosa significa per te?",
+     "c": "Aggiungi un colore vivace alla tua giornata: indossalo, cucinaci o mettilo sulla scrivania."
+    },
+    "pt": {
+     "t": "Holi, a festa das cores",
+     "g": "Conhece o Holi, quando na Índia e no Nepal se atiram pós coloridos e água para dar as boas-vindas à primavera.",
+     "p": [
+      "O Holi calha na lua cheia do mês hindu de Phalguna, normalmente em março, no fim do inverno.",
+      "Na noite anterior muitas comunidades acendem fogueiras; na manhã seguinte começa a alegre brincadeira das cores.",
+      "Amigos, vizinhos e desconhecidos cobrem-se de pó colorido chamado gulal, e todos desejam Happy Holi."
+     ],
+     "q": "Que cor escolherias atirar no Holi e o que significa para ti?",
+     "c": "Junta uma cor viva ao teu dia: veste-a, cozinha com ela ou põe-na na tua secretária."
+    },
+    "pt_BR": {
+     "t": "Holi, a festa das cores",
+     "g": "Conheça o Holi, quando na Índia e no Nepal as pessoas jogam pó colorido e água para receber a primavera.",
+     "p": [
+      "O Holi cai na lua cheia do mês hindu de Phalguna, geralmente em março, no fim do inverno.",
+      "Na noite anterior muitas comunidades acendem fogueiras; na manhã seguinte começa a alegre brincadeira das cores.",
+      "Amigos, vizinhos e desconhecidos se cobrem de pó colorido chamado gulal, e todos desejam Happy Holi."
+     ],
+     "q": "Qual cor você escolheria jogar no Holi e o que ela significa para você?",
+     "c": "Coloque uma cor viva no seu dia: vista, cozinhe com ela ou ponha na sua mesa."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spring flower festivals",
+     "g": "Explore cherry blossoms, tulips and flower parades that celebrate the arrival of the new season.",
+     "p": [
+      "In Washington DC a cherry blossom festival honours the trees Tokyo gave the city as a gift of friendship in 1912.",
+      "In the Netherlands millions of tulips bloom at Keukenhof gardens, open for only a few weeks each spring.",
+      "Dutch flower parades, called bloemencorso, send huge floats covered in flowers through the streets."
+     ],
+     "q": "Which flower makes you think of spring?",
+     "c": "Buy, pick or simply photograph one flower today and find out its name."
+    },
+    "de": {
+     "t": "Frühlingsblumenfeste",
+     "g": "Entdecke Kirschblüten, Tulpen und Blumenkorsos, die die Ankunft der neuen Jahreszeit feiern.",
+     "p": [
+      "In Washington D.C. ehrt ein Kirschblütenfest die Bäume, die Tokio der Stadt 1912 als Freundschaftsgeschenk gab.",
+      "In den Niederlanden blühen Millionen Tulpen im Keukenhof, der jedes Frühjahr nur wenige Wochen geöffnet ist.",
+      "Niederländische Blumenkorsos, Bloemencorso genannt, schicken riesige blumenbedeckte Wagen durch die Straßen."
+     ],
+     "q": "Welche Blume lässt dich an den Frühling denken?",
+     "c": "Kauf, pflück oder fotografiere heute eine Blume und finde ihren Namen heraus."
+    },
+    "es": {
+     "t": "Fiestas de las flores de primavera",
+     "g": "Explora los cerezos en flor, los tulipanes y los desfiles florales que celebran la llegada de la nueva estación.",
+     "p": [
+      "En Washington D. C. una fiesta de los cerezos honra los árboles que Tokio regaló a la ciudad como gesto de amistad en 1912.",
+      "En los Países Bajos florecen millones de tulipanes en los jardines de Keukenhof, abiertos solo unas semanas cada primavera.",
+      "Los desfiles florales neerlandeses, llamados bloemencorso, llevan por las calles enormes carrozas cubiertas de flores."
+     ],
+     "q": "¿Qué flor te hace pensar en la primavera?",
+     "c": "Compra, recoge o simplemente fotografía una flor hoy y averigua su nombre."
+    },
+    "fr": {
+     "t": "Les fêtes des fleurs du printemps",
+     "g": "Découvre cerisiers en fleurs, tulipes et corsos fleuris qui célèbrent l'arrivée de la nouvelle saison.",
+     "p": [
+      "À Washington, un festival des cerisiers honore les arbres offerts par Tokyo à la ville en signe d'amitié en 1912.",
+      "Aux Pays-Bas, des millions de tulipes fleurissent aux jardins de Keukenhof, ouverts quelques semaines chaque printemps.",
+      "Les corsos fleuris néerlandais, appelés bloemencorso, font défiler d'énormes chars couverts de fleurs."
+     ],
+     "q": "Quelle fleur te fait penser au printemps ?",
+     "c": "Achète, cueille ou photographie simplement une fleur aujourd'hui et découvre son nom."
+    },
+    "it": {
+     "t": "Feste dei fiori di primavera",
+     "g": "Esplora ciliegi in fiore, tulipani e sfilate di fiori che celebrano l'arrivo della nuova stagione.",
+     "p": [
+      "A Washington una festa dei ciliegi onora gli alberi che Tokyo regalò alla città come dono di amicizia nel 1912.",
+      "Nei Paesi Bassi milioni di tulipani fioriscono nei giardini di Keukenhof, aperti solo poche settimane ogni primavera.",
+      "Le sfilate di fiori olandesi, chiamate bloemencorso, portano per le strade enormi carri ricoperti di fiori."
+     ],
+     "q": "Quale fiore ti fa pensare alla primavera?",
+     "c": "Compra, raccogli o semplicemente fotografa un fiore oggi e scopri il suo nome."
+    },
+    "pt": {
+     "t": "Festas das flores da primavera",
+     "g": "Explora as cerejeiras em flor, as túlipas e os cortejos de flores que celebram a chegada da nova estação.",
+     "p": [
+      "Em Washington, um festival das cerejeiras homenageia as árvores que Tóquio ofereceu à cidade em sinal de amizade em 1912.",
+      "Nos Países Baixos florescem milhões de túlipas nos jardins de Keukenhof, abertos apenas algumas semanas por primavera.",
+      "Os cortejos de flores neerlandeses, chamados bloemencorso, levam pelas ruas enormes carros cobertos de flores."
+     ],
+     "q": "Que flor te faz pensar na primavera?",
+     "c": "Compra, apanha ou simplesmente fotografa uma flor hoje e descobre o nome dela."
+    },
+    "pt_BR": {
+     "t": "Festas das flores da primavera",
+     "g": "Explore as cerejeiras em flor, as tulipas e os desfiles de flores que celebram a chegada da nova estação.",
+     "p": [
+      "Em Washington, um festival das cerejeiras homenageia as árvores que Tóquio deu à cidade como presente de amizade em 1912.",
+      "Na Holanda florescem milhões de tulipas nos jardins de Keukenhof, abertos só por algumas semanas a cada primavera.",
+      "Os desfiles de flores holandeses, chamados bloemencorso, levam pelas ruas enormes carros cobertos de flores."
+     ],
+     "q": "Qual flor faz você pensar na primavera?",
+     "c": "Compre, colha ou apenas fotografe uma flor hoje e descubra o nome dela."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hanami in Japan",
+     "g": "Discover hanami, picnics under the cherry blossoms, and the Japanese idea of enjoying beauty while it lasts.",
+     "p": [
+      "Hanami means flower viewing; friends, families and coworkers gather for picnics under the blooming sakura trees.",
+      "The blossoms last only about a week or two, a reminder to enjoy beautiful moments before they pass.",
+      "Japan follows a cherry blossom forecast as the bloom moves north, and some parks light up the trees at night."
+     ],
+     "q": "What beautiful thing in your life do you try to enjoy because it does not last long?",
+     "c": "Spend five minutes outside today simply looking at a tree, a flower or the sky."
+    },
+    "de": {
+     "t": "Hanami in Japan",
+     "g": "Entdecke Hanami, Picknicks unter Kirschblüten, und die japanische Idee, Schönes zu genießen, solange es währt.",
+     "p": [
+      "Hanami bedeutet Blüten betrachten; Freunde, Familien und Kollegen picknicken unter den blühenden Sakura-Bäumen.",
+      "Die Blüten halten nur etwa ein bis zwei Wochen, eine Erinnerung daran, schöne Momente zu genießen, bevor sie vergehen.",
+      "Japan verfolgt eine Kirschblütenvorhersage, während die Blüte nach Norden wandert; manche Parks beleuchten nachts die Bäume."
+     ],
+     "q": "Welches Schöne in deinem Leben versuchst du zu genießen, weil es nicht lange währt?",
+     "c": "Verbring heute fünf Minuten draußen und betrachte einfach einen Baum, eine Blume oder den Himmel."
+    },
+    "es": {
+     "t": "Hanami en Japón",
+     "g": "Descubre el hanami, los pícnics bajo los cerezos en flor, y la idea japonesa de disfrutar la belleza mientras dura.",
+     "p": [
+      "Hanami significa contemplar las flores; amigos, familias y compañeros de trabajo hacen pícnics bajo los sakura en flor.",
+      "Las flores duran solo una o dos semanas, un recordatorio para disfrutar los momentos bonitos antes de que pasen.",
+      "Japón sigue un pronóstico de floración mientras esta avanza hacia el norte, y algunos parques iluminan los árboles de noche."
+     ],
+     "q": "¿Qué cosa bonita de tu vida intentas disfrutar porque no dura mucho?",
+     "c": "Pasa hoy cinco minutos al aire libre simplemente mirando un árbol, una flor o el cielo."
+    },
+    "fr": {
+     "t": "Le hanami au Japon",
+     "g": "Découvre le hanami, les pique-niques sous les cerisiers en fleurs, et l'idée japonaise de savourer la beauté éphémère.",
+     "p": [
+      "Hanami signifie contempler les fleurs ; amis, familles et collègues pique-niquent sous les sakura en fleurs.",
+      "Les fleurs ne durent qu'une à deux semaines environ, un rappel de profiter des beaux moments avant qu'ils passent.",
+      "Le Japon suit des prévisions de floraison à mesure qu'elle remonte vers le nord, et certains parcs illuminent les arbres la nuit."
+     ],
+     "q": "Quelle belle chose de ta vie essaies-tu de savourer parce qu'elle ne dure pas ?",
+     "c": "Passe cinq minutes dehors aujourd'hui à simplement regarder un arbre, une fleur ou le ciel."
+    },
+    "it": {
+     "t": "Hanami in Giappone",
+     "g": "Scopri l'hanami, i picnic sotto i ciliegi in fiore, e l'idea giapponese di godersi la bellezza finché dura.",
+     "p": [
+      "Hanami significa ammirare i fiori; amici, famiglie e colleghi fanno picnic sotto i sakura in fiore.",
+      "I fiori durano solo una o due settimane, un invito a godersi i momenti belli prima che passino.",
+      "Il Giappone segue una previsione della fioritura che sale verso nord, e alcuni parchi illuminano gli alberi di notte."
+     ],
+     "q": "Quale cosa bella della tua vita cerchi di goderti perché non dura a lungo?",
+     "c": "Passa oggi cinque minuti all'aperto semplicemente guardando un albero, un fiore o il cielo."
+    },
+    "pt": {
+     "t": "O hanami no Japão",
+     "g": "Descobre o hanami, os piqueniques debaixo das cerejeiras em flor, e a ideia japonesa de aproveitar a beleza enquanto dura.",
+     "p": [
+      "Hanami significa contemplar as flores; amigos, famílias e colegas fazem piqueniques debaixo das sakura em flor.",
+      "As flores duram só uma ou duas semanas, um lembrete para aproveitar os momentos bonitos antes que passem.",
+      "O Japão segue uma previsão da floração à medida que sobe para norte, e alguns parques iluminam as árvores à noite."
+     ],
+     "q": "Que coisa bonita da tua vida tentas aproveitar porque não dura muito?",
+     "c": "Passa hoje cinco minutos ao ar livre só a olhar para uma árvore, uma flor ou o céu."
+    },
+    "pt_BR": {
+     "t": "O hanami no Japão",
+     "g": "Descubra o hanami, os piqueniques sob as cerejeiras em flor, e a ideia japonesa de curtir a beleza enquanto ela dura.",
+     "p": [
+      "Hanami significa contemplar as flores; amigos, famílias e colegas de trabalho fazem piqueniques sob as sakura em flor.",
+      "As flores duram só uma ou duas semanas, um lembrete para aproveitar os momentos bonitos antes que passem.",
+      "O Japão acompanha uma previsão da floração enquanto ela sobe para o norte, e alguns parques iluminam as árvores à noite."
+     ],
+     "q": "Que coisa bonita da sua vida você tenta aproveitar porque ela não dura muito?",
+     "c": "Passe hoje cinco minutos ao ar livre só olhando para uma árvore, uma flor ou o céu."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Easter traditions around the world",
+     "g": "See how painted eggs, egg hunts, special breads and spring markets mark Easter in many countries.",
+     "p": [
+      "Easter is a major Christian feast in spring; its date moves each year, between late March and late April.",
+      "Children hunt for hidden eggs, often said to be brought by the Easter Bunny, a tradition with German roots.",
+      "Special breads include Italy's dove-shaped colomba, Greece's braided tsoureki and Portugal's folar."
+     ],
+     "q": "What does spring look and taste like where you live?",
+     "c": "Bake or buy a sweet bread today, or decorate one egg with simple patterns."
+    },
+    "de": {
+     "t": "Osterbräuche rund um die Welt",
+     "g": "Erfahre, wie bemalte Eier, Eiersuche, besondere Brote und Frühlingsmärkte Ostern in vielen Ländern prägen.",
+     "p": [
+      "Ostern ist ein großes christliches Fest im Frühling; sein Datum wandert jedes Jahr zwischen Ende März und Ende April.",
+      "Kinder suchen versteckte Eier, die angeblich der Osterhase bringt, ein Brauch mit deutschen Wurzeln.",
+      "Zu den besonderen Broten gehören die italienische Colomba in Taubenform, der griechische Tsoureki-Zopf und der portugiesische Folar."
+     ],
+     "q": "Wie sieht und schmeckt der Frühling dort, wo du lebst?",
+     "c": "Back oder kauf heute ein süßes Brot, oder verziere ein Ei mit einfachen Mustern."
+    },
+    "es": {
+     "t": "Tradiciones de Pascua en el mundo",
+     "g": "Descubre cómo los huevos pintados, la búsqueda de huevos, los panes especiales y los mercados celebran la Pascua.",
+     "p": [
+      "La Pascua es una gran fiesta cristiana de primavera; su fecha cambia cada año, entre finales de marzo y finales de abril.",
+      "Los niños buscan huevos escondidos que, según se dice, trae el conejo de Pascua, una tradición de origen alemán.",
+      "Entre los panes especiales están la colomba italiana con forma de paloma, el tsoureki griego trenzado y el folar portugués."
+     ],
+     "q": "¿Cómo se ve y a qué sabe la primavera donde vives?",
+     "c": "Hornea o compra hoy un pan dulce, o decora un huevo con dibujos sencillos."
+    },
+    "fr": {
+     "t": "Les traditions de Pâques dans le monde",
+     "g": "Découvre comment œufs peints, chasses aux œufs, pains spéciaux et marchés de printemps marquent Pâques.",
+     "p": [
+      "Pâques est une grande fête chrétienne du printemps ; sa date change chaque année, entre fin mars et fin avril.",
+      "Les enfants cherchent des œufs cachés, apportés par le lapin de Pâques, une tradition allemande, ou par les cloches en France.",
+      "Parmi les pains spéciaux : la colomba italienne en forme de colombe, le tsoureki grec tressé et le folar portugais."
+     ],
+     "q": "À quoi ressemble le printemps chez toi, et quel goût a-t-il ?",
+     "c": "Prépare ou achète une brioche aujourd'hui, ou décore un œuf avec des motifs simples."
+    },
+    "it": {
+     "t": "Tradizioni di Pasqua nel mondo",
+     "g": "Scopri come uova dipinte, cacce alle uova, pani speciali e mercatini di primavera segnano la Pasqua.",
+     "p": [
+      "La Pasqua è una grande festa cristiana di primavera; la sua data cambia ogni anno, tra fine marzo e fine aprile.",
+      "I bambini cercano uova nascoste, portate secondo la tradizione dal coniglio pasquale, un'usanza di origine tedesca.",
+      "Tra i pani speciali ci sono la colomba italiana, lo tsoureki greco intrecciato e il folar portoghese."
+     ],
+     "q": "Che aspetto e che sapore ha la primavera dove vivi?",
+     "c": "Prepara o compra oggi un pane dolce, oppure decora un uovo con motivi semplici."
+    },
+    "pt": {
+     "t": "Tradições da Páscoa pelo mundo",
+     "g": "Descobre como ovos pintados, caças aos ovos, pães especiais e mercados de primavera marcam a Páscoa.",
+     "p": [
+      "A Páscoa é uma grande festa cristã da primavera; a data muda todos os anos, entre o fim de março e o fim de abril.",
+      "As crianças procuram ovos escondidos, trazidos, diz-se, pelo coelho da Páscoa, uma tradição de origem alemã.",
+      "Entre os pães especiais estão a colomba italiana em forma de pomba, o tsoureki grego entrançado e o folar português."
+     ],
+     "q": "Como é o aspeto e o sabor da primavera onde vives?",
+     "c": "Faz ou compra hoje um pão doce, ou decora um ovo com padrões simples."
+    },
+    "pt_BR": {
+     "t": "Tradições da Páscoa pelo mundo",
+     "g": "Descubra como ovos pintados, caças aos ovos, pães especiais e feiras de primavera marcam a Páscoa.",
+     "p": [
+      "A Páscoa é uma grande festa cristã; a data muda todo ano, entre o fim de março e o fim de abril, no outono do Brasil.",
+      "As crianças procuram ovos escondidos, trazidos, dizem, pelo coelhinho da Páscoa, uma tradição de origem alemã.",
+      "Entre os pães especiais estão a colomba italiana em forma de pomba, o tsoureki grego trançado e o folar português."
+     ],
+     "q": "Quais sabores e cores marcam a Páscoa onde você mora?",
+     "c": "Faça ou compre hoje um pão doce, ou decore um ovo com desenhos simples."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The art of decorated eggs",
+     "g": "Explore Ukrainian pysanky, egg rolling, egg tapping and other customs built around the humble egg.",
+     "p": [
+      "Pysanky are Ukrainian eggs decorated with wax and layers of dye, creating detailed patterns full of symbols.",
+      "In egg rolling, children roll eggs down a slope or across a lawn; the egg that goes farthest or survives wins.",
+      "In egg tapping, two people knock their eggs together; whoever's egg stays uncracked is the winner, popular in Greece."
+     ],
+     "q": "Have you ever decorated eggs or played an egg game?",
+     "c": "Hard-boil an egg and decorate it with a pen, stickers or paint using one simple symbol you like."
+    },
+    "de": {
+     "t": "Die Kunst der verzierten Eier",
+     "g": "Entdecke ukrainische Pysanky, Eierrollen, Eierpecken und andere Bräuche rund um das einfache Ei.",
+     "p": [
+      "Pysanky sind ukrainische Eier, die mit Wachs und mehreren Farbschichten zu detailreichen, symbolischen Mustern werden.",
+      "Beim Eierrollen lassen Kinder Eier einen Hang hinunter oder über den Rasen rollen; das weiteste oder heile Ei gewinnt.",
+      "Beim Eierpecken schlagen zwei Personen ihre Eier aneinander; wessen Ei heil bleibt, gewinnt. In Griechenland sehr beliebt."
+     ],
+     "q": "Hast du schon einmal Eier verziert oder ein Eierspiel gespielt?",
+     "c": "Koch ein Ei hart und verziere es mit Stift, Stickern oder Farbe mit einem einfachen Symbol, das du magst."
+    },
+    "es": {
+     "t": "El arte de los huevos decorados",
+     "g": "Explora las pysanky ucranianas, las carreras de huevos, el choque de huevos y otras costumbres en torno al huevo.",
+     "p": [
+      "Las pysanky son huevos ucranianos decorados con cera y capas de tinte, que crean dibujos detallados llenos de símbolos.",
+      "En las carreras de huevos, los niños los hacen rodar por una cuesta o un césped; gana el que llega más lejos o no se rompe.",
+      "En el choque de huevos, dos personas golpean sus huevos; gana aquel cuyo huevo no se rompe, algo muy popular en Grecia."
+     ],
+     "q": "¿Has decorado alguna vez huevos o jugado a algún juego con huevos?",
+     "c": "Cuece un huevo y decóralo con rotulador, pegatinas o pintura usando un símbolo sencillo que te guste."
+    },
+    "fr": {
+     "t": "L'art des œufs décorés",
+     "g": "Découvre les pyssanky ukrainiennes, la course aux œufs roulés, le toquage d'œufs et d'autres coutumes autour de l'œuf.",
+     "p": [
+      "Les pyssanky sont des œufs ukrainiens décorés à la cire et en couches de teinture, aux motifs détaillés pleins de symboles.",
+      "Pour les œufs roulés, les enfants les font rouler sur une pente ou une pelouse ; le plus lointain ou l'intact gagne.",
+      "Pour le toquage, deux personnes cognent leurs œufs ; celui dont l'œuf reste intact gagne, un jeu très populaire en Grèce."
+     ],
+     "q": "As-tu déjà décoré des œufs ou joué à un jeu avec des œufs ?",
+     "c": "Fais cuire un œuf dur et décore-le au feutre, avec des autocollants ou de la peinture, avec un symbole simple."
+    },
+    "it": {
+     "t": "L'arte delle uova decorate",
+     "g": "Esplora le pysanky ucraine, la corsa delle uova, lo scontro delle uova e altre usanze legate all'uovo.",
+     "p": [
+      "Le pysanky sono uova ucraine decorate con cera e strati di colore, con motivi dettagliati pieni di simboli.",
+      "Nella corsa delle uova i bambini le fanno rotolare giù da un pendio o su un prato; vince quello che va più lontano o resta intero.",
+      "Nello scontro delle uova due persone battono le uova tra loro; vince chi ha l'uovo intatto, un gioco molto amato in Grecia."
+     ],
+     "q": "Hai mai decorato uova o fatto un gioco con le uova?",
+     "c": "Fai bollire un uovo e decoralo con un pennarello, adesivi o colori usando un simbolo semplice che ti piace."
+    },
+    "pt": {
+     "t": "A arte dos ovos decorados",
+     "g": "Explora as pysanky ucranianas, as corridas de ovos, o jogo de bater ovos e outros costumes à volta do ovo.",
+     "p": [
+      "As pysanky são ovos ucranianos decorados com cera e camadas de tinta, com padrões detalhados cheios de símbolos.",
+      "Nas corridas de ovos, as crianças fazem-nos rolar por uma encosta ou relva; ganha o que vai mais longe ou fica inteiro.",
+      "No jogo de bater ovos, duas pessoas batem os ovos um no outro; ganha quem fica com o ovo inteiro, muito popular na Grécia."
+     ],
+     "q": "Já alguma vez decoraste ovos ou jogaste um jogo com ovos?",
+     "c": "Coze um ovo e decora-o com caneta, autocolantes ou tinta usando um símbolo simples de que gostes."
+    },
+    "pt_BR": {
+     "t": "A arte dos ovos decorados",
+     "g": "Explore as pysanky ucranianas, as corridas de ovos, o jogo de bater ovos e outros costumes em torno do ovo.",
+     "p": [
+      "As pysanky são ovos ucranianos decorados com cera e camadas de tinta, com desenhos detalhados cheios de símbolos.",
+      "Nas corridas de ovos, as crianças fazem os ovos rolar por uma ladeira ou gramado; ganha o que vai mais longe ou fica inteiro.",
+      "No jogo de bater ovos, duas pessoas batem os ovos um no outro; ganha quem fica com o ovo inteiro, muito popular na Grécia."
+     ],
+     "q": "Você já decorou ovos ou brincou de algum jogo com ovos?",
+     "c": "Cozinhe um ovo e decore com caneta, adesivos ou tinta usando um símbolo simples de que você goste."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first festival month",
+     "g": "Look back on calendars, new years, festivals of light and spring, and pick your favourite festival so far.",
+     "p": [
+      "Calendars: solar dates stay fixed, lunar dates move through the year, and lunisolar ones shift within a season.",
+      "New years: 1 January, Lunar New Year, Nowruz and Songkran each welcome a fresh start in their own way.",
+      "Light and spring: Diwali, Hanukkah and the solstice bring light; Holi, hanami and Easter celebrate new life."
+     ],
+     "q": "Which festival from this first month would you most like to experience in person, and why?",
+     "c": "Write a three-line postcard to a friend describing your favourite festival so far."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Festmonat",
+     "g": "Schau zurück auf Kalender, Neujahrsfeste, Lichterfeste und Frühling, und wähle dein bisheriges Lieblingsfest.",
+     "p": [
+      "Kalender: Sonnendaten bleiben fest, Monddaten wandern durchs Jahr, lunisolare verschieben sich innerhalb einer Jahreszeit.",
+      "Neujahr: Der 1. Januar, das Mondneujahr, Nouruz und Songkran begrüßen jeweils auf ihre Art einen Neuanfang.",
+      "Licht und Frühling: Diwali, Chanukka und die Sonnenwende bringen Licht; Holi, Hanami und Ostern feiern neues Leben."
+     ],
+     "q": "Welches Fest aus diesem ersten Monat würdest du am liebsten selbst erleben, und warum?",
+     "c": "Schreib einer Freundin oder einem Freund eine Postkarte in drei Zeilen über dein bisheriges Lieblingsfest."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes de fiestas",
+     "g": "Repasa los calendarios, los años nuevos, las fiestas de la luz y la primavera, y elige tu fiesta favorita hasta ahora.",
+     "p": [
+      "Calendarios: las fechas solares son fijas, las lunares recorren el año y las lunisolares se mueven dentro de una estación.",
+      "Años nuevos: el 1 de enero, el Año Nuevo Lunar, Nowruz y Songkran celebran cada uno a su manera un nuevo comienzo.",
+      "Luz y primavera: Diwali, Janucá y el solsticio traen luz; Holi, el hanami y la Pascua celebran la vida nueva."
+     ],
+     "q": "¿Qué fiesta de este primer mes te gustaría vivir en persona y por qué?",
+     "c": "Escribe a un amigo una postal de tres líneas describiendo tu fiesta favorita hasta ahora."
+    },
+    "fr": {
+     "t": "Révision : ton premier mois de fêtes",
+     "g": "Revois calendriers, nouvels ans, fêtes de la lumière et printemps, et choisis ta fête préférée jusqu'ici.",
+     "p": [
+      "Calendriers : les dates solaires sont fixes, les lunaires parcourent l'année, les luni-solaires bougent dans une saison.",
+      "Nouvels ans : le 1er janvier, le Nouvel An lunaire, Norouz et Songkran fêtent chacun à leur façon un nouveau départ.",
+      "Lumière et printemps : Diwali, Hanoukka et le solstice apportent la lumière ; Holi, le hanami et Pâques fêtent la vie nouvelle."
+     ],
+     "q": "Quelle fête de ce premier mois aimerais-tu vivre en vrai, et pourquoi ?",
+     "c": "Écris à un ami une carte postale de trois lignes sur ta fête préférée jusqu'ici."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese di feste",
+     "g": "Ripassa calendari, capodanni, feste della luce e primavera, e scegli la tua festa preferita finora.",
+     "p": [
+      "Calendari: le date solari restano fisse, quelle lunari attraversano l'anno e le lunisolari si spostano in una stagione.",
+      "Capodanni: il 1° gennaio, il Capodanno lunare, Nowruz e Songkran celebrano ciascuno a modo suo un nuovo inizio.",
+      "Luce e primavera: Diwali, Hanukkah e il solstizio portano luce; Holi, l'hanami e la Pasqua celebrano la vita nuova."
+     ],
+     "q": "Quale festa di questo primo mese ti piacerebbe vivere di persona, e perché?",
+     "c": "Scrivi a un amico una cartolina di tre righe sulla tua festa preferita finora."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês de festas",
+     "g": "Revê os calendários, os anos novos, as festas da luz e da primavera, e escolhe a tua festa preferida até agora.",
+     "p": [
+      "Calendários: as datas solares são fixas, as lunares percorrem o ano e as lunissolares mudam dentro de uma estação.",
+      "Anos novos: o 1 de janeiro, o Ano Novo Lunar, o Nowruz e o Songkran celebram cada um à sua maneira um recomeço.",
+      "Luz e primavera: o Diwali, o Hanukkah e o solstício trazem luz; o Holi, o hanami e a Páscoa celebram a vida nova."
+     ],
+     "q": "Que festa deste primeiro mês gostavas mais de viver ao vivo e porquê?",
+     "c": "Escreve a um amigo um postal de três linhas sobre a tua festa preferida até agora."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês de festas",
+     "g": "Relembre os calendários, os anos-novos, as festas da luz e da primavera, e escolha a sua festa favorita até agora.",
+     "p": [
+      "Calendários: as datas solares são fixas, as lunares percorrem o ano e as lunissolares mudam dentro de uma estação.",
+      "Anos-novos: o 1º de janeiro, o Ano-Novo Lunar, o Nowruz e o Songkran celebram cada um do seu jeito um recomeço.",
+      "Luz e primavera: o Diwali, o Hanukkah e o solstício trazem luz; o Holi, o hanami e a Páscoa celebram a vida nova."
+     ],
+     "q": "Qual festa deste primeiro mês você mais gostaria de viver pessoalmente e por quê?",
+     "c": "Escreva a um amigo um cartão-postal de três linhas sobre a sua festa favorita até agora."
+    }
+   }
+  }
+ ]
+}

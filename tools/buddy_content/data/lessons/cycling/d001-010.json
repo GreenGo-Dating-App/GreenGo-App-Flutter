@@ -1,0 +1,835 @@
+{
+ "topic": "cycling",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people love cycling",
+     "g": "Discover the many reasons people around the world fall in love with riding a bike.",
+     "p": [
+      "A bike gives you freedom: you can explore at your own pace and stop wherever something catches your eye.",
+      "Cycling is gentle on the joints and keeps heart, lungs and legs active while you enjoy fresh air.",
+      "For short trips a bike is often quick, quiet and easy to park, which makes everyday errands more fun."
+     ],
+     "q": "What first comes to mind when you think about riding a bike?",
+     "c": "Write down three places near you that you would love to reach by bike."
+    },
+    "de": {
+     "t": "Warum Menschen das Radfahren lieben",
+     "g": "Entdecke, warum so viele Menschen weltweit das Radfahren lieben.",
+     "p": [
+      "Ein Fahrrad schenkt Freiheit: Du erkundest in deinem Tempo und hältst an, wo es dir gefällt.",
+      "Radfahren schont die Gelenke und hält Herz, Lunge und Beine aktiv, und das an der frischen Luft.",
+      "Auf kurzen Wegen ist das Rad oft schnell, leise und leicht zu parken, so macht auch der Alltag Spaß."
+     ],
+     "q": "Was fällt dir als Erstes ein, wenn du ans Radfahren denkst?",
+     "c": "Notiere drei Orte in deiner Nähe, die du gern mit dem Rad erreichen würdest."
+    },
+    "es": {
+     "t": "Por qué a la gente le encanta la bici",
+     "g": "Descubre por qué tanta gente en el mundo se enamora de montar en bicicleta.",
+     "p": [
+      "La bici te da libertad: exploras a tu ritmo y paras donde algo te llama la atención.",
+      "Pedalear cuida las articulaciones y activa corazón, pulmones y piernas mientras respiras aire fresco.",
+      "En trayectos cortos la bici suele ser rápida, silenciosa y fácil de aparcar, y los recados se vuelven divertidos."
+     ],
+     "q": "¿Qué es lo primero que te viene a la mente al pensar en montar en bici?",
+     "c": "Apunta tres lugares cercanos a los que te encantaría ir en bici."
+    },
+    "fr": {
+     "t": "Pourquoi on aime tant le vélo",
+     "g": "Découvre pourquoi tant de gens dans le monde adorent rouler à vélo.",
+     "p": [
+      "Le vélo, c'est la liberté : tu explores à ton rythme et tu t'arrêtes où tu veux.",
+      "Pédaler ménage les articulations et fait travailler cœur, poumons et jambes au grand air.",
+      "Sur de courts trajets, le vélo est souvent rapide, silencieux et facile à garer : les courses deviennent un plaisir."
+     ],
+     "q": "Qu'est-ce qui te vient en premier à l'esprit quand tu penses au vélo ?",
+     "c": "Note trois endroits près de chez toi que tu aimerais rejoindre à vélo."
+    },
+    "it": {
+     "t": "Perché la gente ama andare in bici",
+     "g": "Scopri perché così tante persone nel mondo si innamorano della bicicletta.",
+     "p": [
+      "La bici ti dà libertà: esplori al tuo ritmo e ti fermi dove qualcosa ti incuriosisce.",
+      "Pedalare è delicato con le articolazioni e tiene attivi cuore, polmoni e gambe all'aria aperta.",
+      "Per i tragitti brevi la bici è spesso veloce, silenziosa e facile da parcheggiare: anche le commissioni diventano piacevoli."
+     ],
+     "q": "Qual è la prima cosa che ti viene in mente pensando alla bici?",
+     "c": "Scrivi tre posti vicino a te che ti piacerebbe raggiungere in bici."
+    },
+    "pt": {
+     "t": "Porque é que as pessoas adoram pedalar",
+     "g": "Descobre porque é que tanta gente no mundo se apaixona por andar de bicicleta.",
+     "p": [
+      "A bicicleta dá liberdade: exploras ao teu ritmo e paras onde algo te chama a atenção.",
+      "Pedalar é suave para as articulações e mantém coração, pulmões e pernas ativos ao ar livre.",
+      "Em trajetos curtos, a bicicleta é muitas vezes rápida, silenciosa e fácil de estacionar."
+     ],
+     "q": "Qual é a primeira coisa que te vem à cabeça quando pensas em andar de bicicleta?",
+     "c": "Escreve três sítios perto de ti onde adorarias ir de bicicleta."
+    },
+    "pt_BR": {
+     "t": "Por que as pessoas amam pedalar",
+     "g": "Descubra por que tanta gente no mundo se apaixona por andar de bicicleta.",
+     "p": [
+      "A bike dá liberdade: você explora no seu ritmo e para onde algo chama sua atenção.",
+      "Pedalar é suave para as articulações e mantém coração, pulmões e pernas ativos ao ar livre.",
+      "Em trajetos curtos, a bike costuma ser rápida, silenciosa e fácil de estacionar."
+     ],
+     "q": "Qual é a primeira coisa que vem à sua cabeça quando pensa em pedalar?",
+     "c": "Anote três lugares perto de você aonde adoraria ir de bike."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A short history of the bicycle",
+     "g": "Travel from the first wooden running machine to the bikes we ride today.",
+     "p": [
+      "In 1817 Karl Drais in Germany built a running machine with no pedals: riders pushed it along with their feet.",
+      "In the 1860s pedals were fixed to the front wheel, and in the 1870s the tall penny-farthing became fashionable.",
+      "The chain-driven safety bicycle of 1885 and air-filled tyres from 1888 shaped the bike we know today."
+     ],
+     "q": "Which period of bike history would you most like to see with your own eyes?",
+     "c": "Look at your bike, or one nearby, and spot one feature the 1817 machine did not have."
+    },
+    "de": {
+     "t": "Kurze Geschichte des Fahrrads",
+     "g": "Reise von der ersten hölzernen Laufmaschine bis zu den Rädern von heute.",
+     "p": [
+      "1817 baute Karl Drais in Deutschland eine Laufmaschine ohne Pedale: Man stieß sich mit den Füßen ab.",
+      "In den 1860ern kamen Pedale ans Vorderrad, in den 1870ern wurde das hohe Hochrad modern.",
+      "Das Sicherheitsrad mit Kette von 1885 und Luftreifen ab 1888 prägten das Fahrrad, wie wir es kennen."
+     ],
+     "q": "Welche Epoche der Fahrradgeschichte würdest du gern mit eigenen Augen sehen?",
+     "c": "Schau dir ein Rad an und finde ein Detail, das die Laufmaschine von 1817 nicht hatte."
+    },
+    "es": {
+     "t": "Breve historia de la bicicleta",
+     "g": "Viaja desde la primera máquina de correr de madera hasta las bicis de hoy.",
+     "p": [
+      "En 1817 Karl Drais, en Alemania, creó una máquina sin pedales: se avanzaba empujando con los pies.",
+      "Hacia 1860 los pedales se fijaron a la rueda delantera y en los años 1870 se puso de moda el alto biciclo.",
+      "La bicicleta de seguridad con cadena de 1885 y los neumáticos de aire de 1888 dieron forma a la bici actual."
+     ],
+     "q": "¿Qué época de la historia de la bici te gustaría ver con tus propios ojos?",
+     "c": "Mira una bici y busca un detalle que la máquina de 1817 no tenía."
+    },
+    "fr": {
+     "t": "Petite histoire du vélo",
+     "g": "Voyage de la première draisienne en bois jusqu'aux vélos d'aujourd'hui.",
+     "p": [
+      "En 1817, Karl Drais invente en Allemagne une draisienne sans pédales : on avance en poussant avec les pieds.",
+      "Dans les années 1860, on fixe des pédales sur la roue avant, puis le grand bicycle devient à la mode vers 1870.",
+      "La bicyclette de sécurité à chaîne de 1885 et les pneus à air de 1888 donnent naissance au vélo moderne."
+     ],
+     "q": "Quelle époque de l'histoire du vélo aimerais-tu voir de tes propres yeux ?",
+     "c": "Observe un vélo et trouve un détail que la draisienne de 1817 n'avait pas."
+    },
+    "it": {
+     "t": "Breve storia della bicicletta",
+     "g": "Viaggia dalla prima macchina da corsa in legno fino alle bici di oggi.",
+     "p": [
+      "Nel 1817 Karl Drais, in Germania, creò una draisina senza pedali: si avanzava spingendo con i piedi.",
+      "Negli anni 1860 i pedali vennero fissati alla ruota anteriore e negli anni 1870 andò di moda l'alto biciclo.",
+      "La bicicletta di sicurezza a catena del 1885 e gli pneumatici ad aria del 1888 diedero forma alla bici moderna."
+     ],
+     "q": "Quale epoca della storia della bici ti piacerebbe vedere con i tuoi occhi?",
+     "c": "Osserva una bici e trova un dettaglio che la draisina del 1817 non aveva."
+    },
+    "pt": {
+     "t": "Uma breve história da bicicleta",
+     "g": "Viaja desde a primeira máquina de correr em madeira até às bicicletas de hoje.",
+     "p": [
+      "Em 1817, Karl Drais criou na Alemanha uma máquina sem pedais: avançava-se a empurrar com os pés.",
+      "Nos anos 1860 os pedais foram presos à roda da frente e, nos anos 1870, o alto biciclo ficou na moda.",
+      "A bicicleta de segurança com corrente de 1885 e os pneus de ar de 1888 deram forma à bicicleta atual."
+     ],
+     "q": "Que época da história da bicicleta gostarias de ver com os teus próprios olhos?",
+     "c": "Observa uma bicicleta e encontra um detalhe que a máquina de 1817 não tinha."
+    },
+    "pt_BR": {
+     "t": "Uma breve história da bicicleta",
+     "g": "Viaje da primeira máquina de correr de madeira até as bikes de hoje.",
+     "p": [
+      "Em 1817, Karl Drais criou na Alemanha uma máquina sem pedais: a pessoa avançava empurrando com os pés.",
+      "Nos anos 1860 os pedais foram presos à roda dianteira e, nos anos 1870, o alto biciclo virou moda.",
+      "A bicicleta de segurança com corrente de 1885 e os pneus com ar de 1888 deram forma à bike atual."
+     ],
+     "q": "Que época da história da bicicleta você gostaria de ver com os próprios olhos?",
+     "c": "Observe uma bike e encontre um detalhe que a máquina de 1817 não tinha."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Types of bikes at a glance",
+     "g": "Get a quick tour of the main bike families so you can tell them apart.",
+     "p": [
+      "Road and gravel bikes usually have drop handlebars; road bikes love tarmac, gravel bikes love mixed surfaces.",
+      "Mountain bikes have wide knobbly tyres for trails, while hybrid and city bikes keep you upright for daily trips.",
+      "Folding bikes pack small for trains and flats, and e-bikes add a motor that helps while you pedal."
+     ],
+     "q": "Which type of bike matches the riding you dream about?",
+     "c": "Next time you are outside, try to name the type of three bikes you see."
+    },
+    "de": {
+     "t": "Fahrradtypen im Überblick",
+     "g": "Mach eine kurze Tour durch die wichtigsten Fahrradfamilien und lerne sie zu unterscheiden.",
+     "p": [
+      "Renn- und Gravelräder haben meist einen Rennlenker; das Rennrad liebt Asphalt, das Gravelrad gemischte Wege.",
+      "Mountainbikes haben breite Stollenreifen fürs Gelände, Trekking- und Stadträder lassen dich aufrecht sitzen.",
+      "Falträder werden klein für Zug und Wohnung, E-Bikes haben einen Motor, der beim Treten hilft."
+     ],
+     "q": "Welcher Radtyp passt zu den Touren, von denen du träumst?",
+     "c": "Bestimme draußen bei drei Rädern, zu welchem Typ sie gehören."
+    },
+    "es": {
+     "t": "Tipos de bicis de un vistazo",
+     "g": "Haz un recorrido rápido por las grandes familias de bicis para distinguirlas.",
+     "p": [
+      "Las de carretera y las gravel suelen llevar manillar curvo; unas aman el asfalto y las otras los caminos mixtos.",
+      "Las de montaña tienen ruedas anchas con tacos para senderos; las híbridas y urbanas te llevan erguido a diario.",
+      "Las plegables caben en trenes y pisos pequeños, y las eléctricas tienen un motor que ayuda al pedalear."
+     ],
+     "q": "¿Qué tipo de bici encaja con las rutas que sueñas hacer?",
+     "c": "La próxima vez que salgas, intenta identificar el tipo de tres bicis que veas."
+    },
+    "fr": {
+     "t": "Les types de vélos en un coup d'œil",
+     "g": "Fais un petit tour des grandes familles de vélos pour savoir les reconnaître.",
+     "p": [
+      "Vélos de route et gravel ont souvent un guidon recourbé ; l'un aime le bitume, l'autre les chemins variés.",
+      "Le VTT a de gros pneus à crampons pour les sentiers ; le vélo hybride ou de ville te garde bien droit au quotidien.",
+      "Le vélo pliant se range dans le train et les petits logements, le VAE a un moteur qui aide quand tu pédales."
+     ],
+     "q": "Quel type de vélo correspond aux sorties dont tu rêves ?",
+     "c": "Dehors, essaie de reconnaître le type de trois vélos que tu croises."
+    },
+    "it": {
+     "t": "I tipi di bici in un colpo d'occhio",
+     "g": "Fai un giro veloce tra le grandi famiglie di bici per saperle riconoscere.",
+     "p": [
+      "Bici da corsa e gravel hanno spesso il manubrio curvo; la prima ama l'asfalto, la seconda i fondi misti.",
+      "La mountain bike ha gomme larghe e tassellate per i sentieri; ibride e city bike ti tengono dritto ogni giorno.",
+      "Le pieghevoli si chiudono per treni e case piccole, le e-bike hanno un motore che aiuta mentre pedali."
+     ],
+     "q": "Quale tipo di bici si adatta alle uscite che sogni?",
+     "c": "Quando esci, prova a riconoscere il tipo di tre bici che vedi."
+    },
+    "pt": {
+     "t": "Tipos de bicicleta num relance",
+     "g": "Faz uma viagem rápida pelas grandes famílias de bicicletas para as distinguir.",
+     "p": [
+      "As de estrada e gravel costumam ter guiador curvo; umas gostam de asfalto, as outras de pisos mistos.",
+      "As de montanha têm pneus largos com pitons para trilhos; híbridas e citadinas deixam-te direito no dia a dia.",
+      "As dobráveis cabem no comboio e em casas pequenas, e as elétricas têm um motor que ajuda quando pedalas."
+     ],
+     "q": "Que tipo de bicicleta combina com os passeios com que sonhas?",
+     "c": "Quando saíres, tenta identificar o tipo de três bicicletas que vires."
+    },
+    "pt_BR": {
+     "t": "Tipos de bike num relance",
+     "g": "Faça um tour rápido pelas grandes famílias de bicicletas para diferenciá-las.",
+     "p": [
+      "As speed e as gravel costumam ter guidão curvo; uma ama o asfalto, a outra os pisos mistos.",
+      "As mountain bikes têm pneus largos com cravos para trilhas; híbridas e urbanas deixam você ereto no dia a dia.",
+      "As dobráveis cabem no trem e em apartamentos pequenos, e as elétricas têm um motor que ajuda quando você pedala."
+     ],
+     "q": "Que tipo de bike combina com os passeios que você sonha fazer?",
+     "c": "Quando sair, tente identificar o tipo de três bikes que você vir."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Road bikes",
+     "g": "Learn what makes road bikes fast and when they are the right choice.",
+     "p": [
+      "Drop handlebars give several hand positions, including a lower one that cuts through the wind.",
+      "Narrow, smooth tyres and light frames help you roll quickly and climb with less effort on tarmac.",
+      "They feel lively and efficient, but they suit smooth roads better than rough tracks or heavy loads."
+     ],
+     "q": "Would you enjoy the speed of a road bike, or do you prefer a relaxed ride?",
+     "c": "Watch a road cyclist pass by or look at a photo and notice where their hands rest."
+    },
+    "de": {
+     "t": "Rennräder",
+     "g": "Erfahre, was Rennräder schnell macht und wann sie die richtige Wahl sind.",
+     "p": [
+      "Der Rennlenker bietet mehrere Griffpositionen, auch eine tiefe, die weniger Wind abbekommt.",
+      "Schmale, glatte Reifen und leichte Rahmen rollen flott und machen Anstiege auf Asphalt leichter.",
+      "Sie fühlen sich lebendig und effizient an, passen aber besser zu glatten Straßen als zu groben Wegen."
+     ],
+     "q": "Würde dir das Tempo eines Rennrads gefallen, oder fährst du lieber gemütlich?",
+     "c": "Beobachte einen Rennradfahrer oder ein Foto und achte darauf, wo die Hände liegen."
+    },
+    "es": {
+     "t": "Bicis de carretera",
+     "g": "Aprende qué hace rápidas a las bicis de carretera y cuándo son la mejor opción.",
+     "p": [
+      "El manillar curvo ofrece varias posiciones de manos, incluida una baja que corta mejor el viento.",
+      "Ruedas estrechas y lisas y cuadros ligeros ayudan a rodar rápido y a subir con menos esfuerzo en asfalto.",
+      "Son ágiles y eficientes, pero van mejor en carreteras lisas que en caminos rotos o con mucha carga."
+     ],
+     "q": "¿Disfrutarías la velocidad de una bici de carretera o prefieres pedalear tranquilo?",
+     "c": "Fíjate en un ciclista de carretera o en una foto y observa dónde apoya las manos."
+    },
+    "fr": {
+     "t": "Les vélos de route",
+     "g": "Découvre ce qui rend le vélo de route rapide et quand il est le bon choix.",
+     "p": [
+      "Le guidon recourbé offre plusieurs positions de mains, dont une plus basse qui fend mieux le vent.",
+      "Pneus fins et lisses et cadre léger aident à rouler vite et à grimper avec moins d'effort sur le bitume.",
+      "Il est vif et efficace, mais préfère les routes lisses aux chemins abîmés ou aux grosses charges."
+     ],
+     "q": "Aimerais-tu la vitesse d'un vélo de route, ou préfères-tu rouler tranquille ?",
+     "c": "Observe un cycliste sur route ou une photo et regarde où il pose les mains."
+    },
+    "it": {
+     "t": "Le bici da corsa",
+     "g": "Scopri cosa rende veloce una bici da corsa e quando è la scelta giusta.",
+     "p": [
+      "Il manubrio curvo offre più posizioni per le mani, compresa una bassa che taglia meglio il vento.",
+      "Gomme strette e lisce e telai leggeri aiutano a scorrere veloce e a salire con meno fatica sull'asfalto.",
+      "Sono vivaci ed efficienti, ma preferiscono strade lisce a sterrati sconnessi o carichi pesanti."
+     ],
+     "q": "Ti piacerebbe la velocità di una bici da corsa o preferisci pedalare con calma?",
+     "c": "Osserva un ciclista su strada o una foto e nota dove appoggia le mani."
+    },
+    "pt": {
+     "t": "Bicicletas de estrada",
+     "g": "Aprende o que torna as bicicletas de estrada rápidas e quando são a escolha certa.",
+     "p": [
+      "O guiador curvo oferece várias posições para as mãos, incluindo uma mais baixa que corta melhor o vento.",
+      "Pneus estreitos e lisos e quadros leves ajudam a rolar depressa e a subir com menos esforço no asfalto.",
+      "São ágeis e eficientes, mas preferem estradas lisas a caminhos irregulares ou cargas pesadas."
+     ],
+     "q": "Gostarias da velocidade de uma bicicleta de estrada ou preferes pedalar com calma?",
+     "c": "Observa um ciclista de estrada ou uma foto e repara onde apoia as mãos."
+    },
+    "pt_BR": {
+     "t": "Bikes speed",
+     "g": "Aprenda o que torna as bikes de estrada rápidas e quando elas são a escolha certa.",
+     "p": [
+      "O guidão curvo oferece várias posições para as mãos, inclusive uma mais baixa que corta melhor o vento.",
+      "Pneus finos e lisos e quadros leves ajudam a rodar rápido e a subir com menos esforço no asfalto.",
+      "São ágeis e eficientes, mas preferem ruas lisas a caminhos esburacados ou cargas pesadas."
+     ],
+     "q": "Você curtiria a velocidade de uma speed ou prefere pedalar com calma?",
+     "c": "Observe um ciclista de estrada ou uma foto e repare onde ele apoia as mãos."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mountain bikes",
+     "g": "Find out how mountain bikes are built to handle dirt, roots and rocks.",
+     "p": [
+      "Wide, knobbly tyres grip loose ground and soften bumps, especially at lower tyre pressures.",
+      "Suspension forks, and on some bikes a rear shock, help keep the wheels on the ground over rough terrain.",
+      "Flat, wide handlebars and very low gears give control and make steep, slow climbs possible."
+     ],
+     "q": "Is there a park, forest or hill near you where a mountain bike would be fun?",
+     "c": "Find a photo of a mountain bike and spot its suspension and tyre tread."
+    },
+    "de": {
+     "t": "Mountainbikes",
+     "g": "Erfahre, wie Mountainbikes gebaut sind, um Erde, Wurzeln und Steine zu meistern.",
+     "p": [
+      "Breite Stollenreifen greifen auf losem Boden und dämpfen Stöße, besonders mit weniger Luftdruck.",
+      "Federgabeln und bei manchen Rädern ein Hinterbaudämpfer halten die Räder im Gelände am Boden.",
+      "Breite, gerade Lenker und sehr leichte Gänge geben Kontrolle und machen steile Anstiege möglich."
+     ],
+     "q": "Gibt es bei dir einen Park, Wald oder Hügel, wo ein Mountainbike Spaß machen würde?",
+     "c": "Such ein Foto eines Mountainbikes und finde Federung und Reifenprofil."
+    },
+    "es": {
+     "t": "Bicis de montaña",
+     "g": "Descubre cómo están hechas las bicis de montaña para tierra, raíces y piedras.",
+     "p": [
+      "Las ruedas anchas con tacos agarran en terreno suelto y absorben golpes, sobre todo con menos presión.",
+      "La horquilla de suspensión, y en algunas un amortiguador trasero, mantienen las ruedas pegadas al suelo.",
+      "El manillar ancho y recto y los desarrollos muy cortos dan control y permiten subir rampas empinadas."
+     ],
+     "q": "¿Hay algún parque, bosque o colina cerca donde una bici de montaña sería divertida?",
+     "c": "Busca una foto de una bici de montaña y localiza la suspensión y el dibujo de la rueda."
+    },
+    "fr": {
+     "t": "Les VTT",
+     "g": "Découvre comment un VTT est conçu pour la terre, les racines et les cailloux.",
+     "p": [
+      "Les gros pneus à crampons accrochent sur sol meuble et absorbent les chocs, surtout avec moins de pression.",
+      "La fourche suspendue, et sur certains un amortisseur arrière, gardent les roues au sol sur terrain cassant.",
+      "Un guidon large et plat et des braquets très courts donnent du contrôle et permettent de grimper raide."
+     ],
+     "q": "Y a-t-il un parc, une forêt ou une colline près de chez toi où un VTT serait amusant ?",
+     "c": "Trouve une photo de VTT et repère la suspension et les crampons des pneus."
+    },
+    "it": {
+     "t": "Le mountain bike",
+     "g": "Scopri come sono costruite le mountain bike per terra, radici e sassi.",
+     "p": [
+      "Gomme larghe e tassellate fanno presa sul terreno smosso e assorbono i colpi, soprattutto con meno pressione.",
+      "La forcella ammortizzata, e su alcune un ammortizzatore posteriore, tengono le ruote a terra sullo sconnesso.",
+      "Manubrio largo e piatto e rapporti molto agili danno controllo e permettono salite ripide e lente."
+     ],
+     "q": "C'è un parco, un bosco o una collina vicino a te dove una mountain bike sarebbe divertente?",
+     "c": "Trova la foto di una mountain bike e individua sospensioni e tasselli delle gomme."
+    },
+    "pt": {
+     "t": "Bicicletas de montanha",
+     "g": "Descobre como as bicicletas de montanha são feitas para terra, raízes e pedras.",
+     "p": [
+      "Pneus largos com pitons agarram em piso solto e amortecem pancadas, sobretudo com menos pressão.",
+      "A suspensão dianteira, e em algumas um amortecedor traseiro, mantêm as rodas no chão em terreno irregular.",
+      "Guiador largo e plano e mudanças muito leves dão controlo e tornam possíveis subidas íngremes."
+     ],
+     "q": "Há algum parque, floresta ou colina perto de ti onde uma bicicleta de montanha seria divertida?",
+     "c": "Procura uma foto de uma bicicleta de montanha e encontra a suspensão e os pitons."
+    },
+    "pt_BR": {
+     "t": "Mountain bikes",
+     "g": "Descubra como as mountain bikes são feitas para terra, raízes e pedras.",
+     "p": [
+      "Pneus largos com cravos seguram no chão solto e amortecem impactos, principalmente com menos pressão.",
+      "A suspensão dianteira, e em algumas um amortecedor traseiro, mantém as rodas no chão em terreno irregular.",
+      "Guidão largo e reto e marchas bem leves dão controle e permitem subir rampas íngremes devagar."
+     ],
+     "q": "Tem algum parque, mata ou morro perto de você onde uma mountain bike seria divertida?",
+     "c": "Procure a foto de uma mountain bike e encontre a suspensão e os cravos do pneu."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gravel bikes",
+     "g": "Meet the versatile bike that happily mixes roads, dirt tracks and adventure.",
+     "p": [
+      "Gravel bikes look like road bikes but have wider tyres, often with a light tread for grip on loose surfaces.",
+      "A relaxed, stable frame and mounts for bags and bottles make them great for long days and bikepacking.",
+      "They are a good all-rounder: quick enough on tarmac and comfortable on forest roads and farm tracks."
+     ],
+     "q": "Would you rather ride smooth roads or explore unpaved paths?",
+     "c": "Look at a local map and find one unpaved track that could be a gravel adventure."
+    },
+    "de": {
+     "t": "Gravelbikes",
+     "g": "Lerne das vielseitige Rad kennen, das Straße, Schotter und Abenteuer verbindet.",
+     "p": [
+      "Gravelbikes ähneln Rennrädern, haben aber breitere Reifen, oft mit leichtem Profil für losen Untergrund.",
+      "Ein ruhiger, stabiler Rahmen und Ösen für Taschen und Flaschen machen sie ideal für lange Touren.",
+      "Sie sind echte Allrounder: flott auf Asphalt und bequem auf Wald- und Feldwegen."
+     ],
+     "q": "Fährst du lieber auf glatten Straßen oder erkundest du unbefestigte Wege?",
+     "c": "Such auf einer Karte einen unbefestigten Weg, der ein Gravel-Abenteuer sein könnte."
+    },
+    "es": {
+     "t": "Bicis gravel",
+     "g": "Conoce la bici versátil que mezcla carretera, caminos de tierra y aventura.",
+     "p": [
+      "Parecen bicis de carretera, pero con ruedas más anchas, a menudo con un taco suave para terreno suelto.",
+      "Un cuadro estable y anclajes para bolsas y bidones las hacen ideales para jornadas largas y bikepacking.",
+      "Son muy polivalentes: bastante rápidas en asfalto y cómodas en pistas forestales y caminos rurales."
+     ],
+     "q": "¿Prefieres carreteras lisas o explorar caminos sin asfaltar?",
+     "c": "Mira un mapa local y busca un camino de tierra que pueda ser una aventura gravel."
+    },
+    "fr": {
+     "t": "Les vélos gravel",
+     "g": "Découvre le vélo polyvalent qui mélange route, chemins et aventure.",
+     "p": [
+      "Le gravel ressemble au vélo de route, avec des pneus plus larges, souvent à petits crampons pour le sol meuble.",
+      "Un cadre stable et des fixations pour sacoches et bidons en font un allié des longues sorties et du bikepacking.",
+      "C'est un bon vélo à tout faire : assez rapide sur bitume et confortable sur pistes forestières et chemins."
+     ],
+     "q": "Tu préfères les routes lisses ou explorer les chemins non goudronnés ?",
+     "c": "Sur une carte locale, trouve un chemin non goudronné qui ferait une belle sortie gravel."
+    },
+    "it": {
+     "t": "Le bici gravel",
+     "g": "Conosci la bici versatile che unisce strada, sterrato e avventura.",
+     "p": [
+      "Somigliano alle bici da corsa ma hanno gomme più larghe, spesso con una tassellatura leggera per i fondi smossi.",
+      "Un telaio stabile e attacchi per borse e borracce le rendono ideali per uscite lunghe e bikepacking.",
+      "Sono ottime tuttofare: abbastanza veloci sull'asfalto e comode su strade forestali e sterrati di campagna."
+     ],
+     "q": "Preferisci strade lisce o esplorare percorsi sterrati?",
+     "c": "Guarda una mappa locale e trova uno sterrato che potrebbe diventare un'avventura gravel."
+    },
+    "pt": {
+     "t": "Bicicletas gravel",
+     "g": "Conhece a bicicleta versátil que mistura estrada, terra batida e aventura.",
+     "p": [
+      "Parecem bicicletas de estrada, mas têm pneus mais largos, muitas vezes com pitons leves para piso solto.",
+      "Um quadro estável e suportes para sacos e bidões tornam-nas ótimas para dias longos e bikepacking.",
+      "São muito versáteis: rápidas o suficiente no asfalto e confortáveis em estradões e caminhos rurais."
+     ],
+     "q": "Preferes estradas lisas ou explorar caminhos de terra?",
+     "c": "Olha para um mapa local e encontra um caminho de terra que daria uma aventura gravel."
+    },
+    "pt_BR": {
+     "t": "Bikes gravel",
+     "g": "Conheça a bike versátil que mistura asfalto, estrada de terra e aventura.",
+     "p": [
+      "Parecem speeds, mas têm pneus mais largos, muitas vezes com cravos leves para chão solto.",
+      "Um quadro estável e suportes para bolsas e caramanholas as tornam ótimas para dias longos e bikepacking.",
+      "São bem versáteis: rápidas o bastante no asfalto e confortáveis em estradas de terra e trilhas rurais."
+     ],
+     "q": "Você prefere ruas lisas ou explorar caminhos de terra?",
+     "c": "Olhe um mapa da sua região e encontre uma estrada de terra que daria uma aventura gravel."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hybrid and city bikes",
+     "g": "See why upright, comfortable bikes are the everyday heroes of cycling.",
+     "p": [
+      "An upright position lets you see traffic well and keeps your back and wrists relaxed.",
+      "Many city bikes come with mudguards, a rack, a chain guard and built-in lights for daily practicality.",
+      "Hybrids mix the light feel of a road bike with the flat bars and comfort of a city bike."
+     ],
+     "q": "What everyday trip could you swap for a ride on a comfortable city bike?",
+     "c": "Think of one errand this week that you could do by bike, and plan how."
+    },
+    "de": {
+     "t": "Trekking- und Stadträder",
+     "g": "Sieh, warum aufrechte, bequeme Räder die Alltagshelden des Radfahrens sind.",
+     "p": [
+      "Aufrecht sitzend siehst du den Verkehr gut, und Rücken und Handgelenke bleiben entspannt.",
+      "Viele Stadträder haben Schutzbleche, Gepäckträger, Kettenschutz und fest eingebautes Licht.",
+      "Trekkingräder verbinden das leichte Fahrgefühl eines Rennrads mit geradem Lenker und Komfort."
+     ],
+     "q": "Welchen Alltagsweg könntest du mit einem bequemen Stadtrad fahren?",
+     "c": "Such dir eine Besorgung dieser Woche aus, die du mit dem Rad erledigen könntest."
+    },
+    "es": {
+     "t": "Bicis híbridas y urbanas",
+     "g": "Descubre por qué las bicis cómodas y erguidas son las heroínas del día a día.",
+     "p": [
+      "Ir erguido te deja ver bien el tráfico y mantiene relajadas la espalda y las muñecas.",
+      "Muchas urbanas traen guardabarros, portabultos, cubrecadena y luces integradas para el uso diario.",
+      "Las híbridas combinan la ligereza de una bici de carretera con el manillar recto y la comodidad urbana."
+     ],
+     "q": "¿Qué trayecto diario podrías cambiar por un paseo en una bici urbana cómoda?",
+     "c": "Elige un recado de esta semana que podrías hacer en bici y planea cómo."
+    },
+    "fr": {
+     "t": "Vélos hybrides et de ville",
+     "g": "Découvre pourquoi les vélos droits et confortables sont les héros du quotidien.",
+     "p": [
+      "Assis bien droit, tu vois mieux la circulation et ton dos et tes poignets restent détendus.",
+      "Beaucoup de vélos de ville ont garde-boue, porte-bagages, carter de chaîne et éclairage intégré.",
+      "L'hybride mélange la légèreté d'un vélo de route avec le guidon droit et le confort d'un vélo de ville."
+     ],
+     "q": "Quel trajet du quotidien pourrais-tu faire sur un vélo de ville confortable ?",
+     "c": "Choisis une course de la semaine que tu pourrais faire à vélo et prévois comment."
+    },
+    "it": {
+     "t": "Bici ibride e da città",
+     "g": "Scopri perché le bici comode e dritte sono le eroine di tutti i giorni.",
+     "p": [
+      "La posizione eretta ti fa vedere bene il traffico e tiene rilassati schiena e polsi.",
+      "Molte city bike hanno parafanghi, portapacchi, copricatena e luci integrate per l'uso quotidiano.",
+      "Le ibride uniscono la leggerezza di una bici da corsa al manubrio dritto e al comfort di una city bike."
+     ],
+     "q": "Quale tragitto quotidiano potresti fare con una comoda city bike?",
+     "c": "Scegli una commissione di questa settimana da fare in bici e pianifica come."
+    },
+    "pt": {
+     "t": "Bicicletas híbridas e citadinas",
+     "g": "Vê porque é que as bicicletas direitas e confortáveis são as heroínas do dia a dia.",
+     "p": [
+      "A posição direita deixa-te ver bem o trânsito e mantém as costas e os pulsos relaxados.",
+      "Muitas citadinas trazem guarda-lamas, porta-bagagens, proteção da corrente e luzes integradas.",
+      "As híbridas juntam a leveza de uma bicicleta de estrada ao guiador reto e ao conforto da citadina."
+     ],
+     "q": "Que trajeto do dia a dia poderias trocar por um passeio numa citadina confortável?",
+     "c": "Escolhe um recado desta semana que poderias fazer de bicicleta e planeia como."
+    },
+    "pt_BR": {
+     "t": "Bikes híbridas e urbanas",
+     "g": "Veja por que as bikes confortáveis e eretas são as heroínas do dia a dia.",
+     "p": [
+      "A posição ereta deixa você ver bem o trânsito e mantém costas e punhos relaxados.",
+      "Muitas urbanas vêm com para-lamas, bagageiro, protetor de corrente e luzes integradas.",
+      "As híbridas juntam a leveza de uma speed com o guidão reto e o conforto de uma urbana."
+     ],
+     "q": "Que trajeto do dia a dia você poderia trocar por um passeio numa bike urbana confortável?",
+     "c": "Escolha um compromisso desta semana que você poderia fazer de bike e planeje como."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Folding bikes",
+     "g": "Learn how folding bikes make cycling easy to combine with trains, buses and small homes.",
+     "p": [
+      "Small wheels and a hinged frame let the bike fold in seconds into a compact package.",
+      "You can often take a folded bike on public transport and store it under a desk or in a cupboard.",
+      "Small wheels accelerate quickly in town, though they feel bumps more than large wheels do."
+     ],
+     "q": "Where would a folding bike make your daily life easier?",
+     "c": "Check whether your local trains or buses allow folded bikes on board."
+    },
+    "de": {
+     "t": "Falträder",
+     "g": "Erfahre, wie Falträder Radfahren mit Zug, Bus und kleiner Wohnung verbinden.",
+     "p": [
+      "Kleine Räder und ein Rahmen mit Gelenk lassen das Rad in Sekunden zu einem kompakten Paket schrumpfen.",
+      "Gefaltet darf es oft in öffentliche Verkehrsmittel und passt unter den Schreibtisch oder in einen Schrank.",
+      "Kleine Räder beschleunigen in der Stadt flink, spüren Unebenheiten aber stärker als große."
+     ],
+     "q": "Wo würde dir ein Faltrad den Alltag erleichtern?",
+     "c": "Prüf, ob dein Zug oder Bus gefaltete Räder mitnimmt."
+    },
+    "es": {
+     "t": "Bicis plegables",
+     "g": "Aprende cómo las plegables combinan la bici con trenes, autobuses y casas pequeñas.",
+     "p": [
+      "Ruedas pequeñas y un cuadro con bisagra permiten plegarla en segundos en un paquete compacto.",
+      "A menudo puedes subirla plegada al transporte público y guardarla bajo una mesa o en un armario.",
+      "Las ruedas pequeñas aceleran rápido en ciudad, aunque notan más los baches que las grandes."
+     ],
+     "q": "¿Dónde te haría la vida más fácil una bici plegable?",
+     "c": "Comprueba si tus trenes o autobuses admiten bicis plegadas a bordo."
+    },
+    "fr": {
+     "t": "Les vélos pliants",
+     "g": "Découvre comment le vélo pliant se combine avec le train, le bus et les petits logements.",
+     "p": [
+      "Petites roues et cadre à charnière permettent de le plier en quelques secondes en un paquet compact.",
+      "Plié, il monte souvent dans les transports en commun et se range sous un bureau ou dans un placard.",
+      "Les petites roues accélèrent vite en ville, mais ressentent plus les bosses que les grandes."
+     ],
+     "q": "Où un vélo pliant te faciliterait-il la vie ?",
+     "c": "Vérifie si tes trains ou bus acceptent les vélos pliés à bord."
+    },
+    "it": {
+     "t": "Le bici pieghevoli",
+     "g": "Scopri come le pieghevoli uniscono la bici a treni, autobus e case piccole.",
+     "p": [
+      "Ruote piccole e un telaio con cerniera permettono di piegarla in pochi secondi in un pacco compatto.",
+      "Spesso puoi portarla piegata sui mezzi pubblici e riporla sotto una scrivania o in un armadio.",
+      "Le ruote piccole accelerano in fretta in città, ma sentono le buche più di quelle grandi."
+     ],
+     "q": "Dove una bici pieghevole ti semplificherebbe la vita?",
+     "c": "Controlla se i tuoi treni o autobus accettano bici piegate a bordo."
+    },
+    "pt": {
+     "t": "Bicicletas dobráveis",
+     "g": "Aprende como as dobráveis combinam a bicicleta com comboios, autocarros e casas pequenas.",
+     "p": [
+      "Rodas pequenas e um quadro com dobradiça permitem dobrá-la em segundos num pacote compacto.",
+      "Muitas vezes podes levá-la dobrada nos transportes públicos e guardá-la debaixo de uma secretária.",
+      "As rodas pequenas aceleram depressa na cidade, mas sentem mais os buracos do que as grandes."
+     ],
+     "q": "Onde é que uma bicicleta dobrável te facilitaria a vida?",
+     "c": "Verifica se os teus comboios ou autocarros aceitam bicicletas dobradas."
+    },
+    "pt_BR": {
+     "t": "Bikes dobráveis",
+     "g": "Aprenda como as dobráveis combinam a bike com trem, ônibus e apartamentos pequenos.",
+     "p": [
+      "Rodas pequenas e um quadro com dobradiça permitem dobrá-la em segundos num pacote compacto.",
+      "Muitas vezes dá para levá-la dobrada no transporte público e guardá-la embaixo da mesa.",
+      "Rodas pequenas aceleram rápido na cidade, mas sentem mais os buracos do que as grandes."
+     ],
+     "q": "Onde uma bike dobrável deixaria sua vida mais fácil?",
+     "c": "Confira se o trem, metrô ou ônibus da sua cidade aceita bikes dobradas."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "E-bikes basics",
+     "g": "Understand how pedal assist works and why e-bikes open cycling to more people.",
+     "p": [
+      "A pedal-assist e-bike has a motor that only helps while you pedal; you choose the level of support.",
+      "Many countries limit assisted speed, for example to 25 km/h in the EU, so check the rules where you live.",
+      "E-bikes flatten hills, extend range and let riders of different fitness enjoy rides together."
+     ],
+     "q": "Who do you know that might enjoy cycling more with a little electric help?",
+     "c": "Find out the e-bike speed and age rules in your country or region."
+    },
+    "de": {
+     "t": "E-Bike-Grundlagen",
+     "g": "Verstehe, wie Tretunterstützung funktioniert und warum E-Bikes mehr Menschen aufs Rad bringen.",
+     "p": [
+      "Ein Pedelec hat einen Motor, der nur beim Treten hilft; die Stärke der Unterstützung wählst du selbst.",
+      "Viele Länder begrenzen die Unterstützung, in der EU zum Beispiel auf 25 km/h; prüf die Regeln vor Ort.",
+      "E-Bikes machen Hügel flacher, Touren länger und lassen Menschen mit unterschiedlicher Fitness zusammen fahren."
+     ],
+     "q": "Wen kennst du, dem Radfahren mit etwas elektrischer Hilfe mehr Spaß machen könnte?",
+     "c": "Finde heraus, welche Tempo- und Altersregeln für E-Bikes in deinem Land gelten."
+    },
+    "es": {
+     "t": "Lo básico de las e-bikes",
+     "g": "Entiende cómo funciona la asistencia al pedaleo y por qué las e-bikes acercan la bici a más gente.",
+     "p": [
+      "Una bici de pedaleo asistido tiene un motor que solo ayuda mientras pedaleas; tú eliges el nivel de ayuda.",
+      "Muchos países limitan la velocidad asistida, por ejemplo a 25 km/h en la UE; consulta las normas de tu zona.",
+      "Las e-bikes suavizan cuestas, alargan rutas y permiten que personas con distinta forma física salgan juntas."
+     ],
+     "q": "¿A quién conoces que disfrutaría más de la bici con un poco de ayuda eléctrica?",
+     "c": "Averigua las normas de velocidad y edad para e-bikes en tu país o región."
+    },
+    "fr": {
+     "t": "Les bases du vélo électrique",
+     "g": "Comprends l'assistance au pédalage et pourquoi le VAE ouvre le vélo à plus de monde.",
+     "p": [
+      "Un vélo à assistance électrique a un moteur qui n'aide que si tu pédales ; tu choisis le niveau d'aide.",
+      "Beaucoup de pays limitent la vitesse assistée, par exemple à 25 km/h dans l'UE : vérifie les règles chez toi.",
+      "Le VAE aplatit les côtes, allonge les sorties et permet à des cyclistes de forme différente de rouler ensemble."
+     ],
+     "q": "Qui, autour de toi, aimerait davantage le vélo avec un peu d'aide électrique ?",
+     "c": "Renseigne-toi sur les règles de vitesse et d'âge pour les VAE dans ton pays."
+    },
+    "it": {
+     "t": "Le basi delle e-bike",
+     "g": "Capisci come funziona la pedalata assistita e perché le e-bike avvicinano più persone alla bici.",
+     "p": [
+      "Una bici a pedalata assistita ha un motore che aiuta solo mentre pedali; scegli tu il livello di aiuto.",
+      "Molti paesi limitano la velocità assistita, ad esempio a 25 km/h nell'UE: verifica le regole dove vivi.",
+      "Le e-bike addolciscono le salite, allungano le uscite e fanno pedalare insieme persone con allenamenti diversi."
+     ],
+     "q": "Chi conosci che si godrebbe di più la bici con un piccolo aiuto elettrico?",
+     "c": "Informati sulle regole di velocità ed età per le e-bike nel tuo paese."
+    },
+    "pt": {
+     "t": "O básico das bicicletas elétricas",
+     "g": "Percebe como funciona a assistência ao pedal e porque é que as elétricas aproximam mais gente da bicicleta.",
+     "p": [
+      "Uma bicicleta de pedalada assistida tem um motor que só ajuda enquanto pedalas; tu escolhes o nível de ajuda.",
+      "Muitos países limitam a velocidade assistida, por exemplo a 25 km/h na UE; confirma as regras onde vives.",
+      "As elétricas suavizam subidas, alargam o alcance e deixam pessoas com formas físicas diferentes pedalar juntas."
+     ],
+     "q": "Quem conheces que gostaria mais de pedalar com uma pequena ajuda elétrica?",
+     "c": "Descobre as regras de velocidade e idade para bicicletas elétricas no teu país."
+    },
+    "pt_BR": {
+     "t": "O básico das bikes elétricas",
+     "g": "Entenda como funciona a pedalada assistida e por que as e-bikes trazem mais gente para a bike.",
+     "p": [
+      "Uma bike de pedalada assistida tem um motor que só ajuda enquanto você pedala; você escolhe o nível de ajuda.",
+      "Muitos países limitam a velocidade assistida, por exemplo a 25 km/h na UE; confira as regras onde você mora.",
+      "As e-bikes suavizam subidas, aumentam o alcance e deixam pessoas com preparo diferente pedalarem juntas."
+     ],
+     "q": "Quem você conhece que curtiria mais pedalar com uma ajudinha elétrica?",
+     "c": "Descubra as regras de velocidade e idade para bikes elétricas no seu país ou estado."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Parts of a bike",
+     "g": "Learn the names of the main bike parts so every future lesson feels easy.",
+     "p": [
+      "The frame and fork are the skeleton; the wheels, with hubs, spokes, rims and tyres, carry you along.",
+      "The drivetrain is pedals, cranks, chain, chainrings, cassette and derailleurs that turn effort into motion.",
+      "Brakes, saddle and handlebars are your contact and control points, so they must fit and work well."
+     ],
+     "q": "Which bike part were you most curious about before today?",
+     "c": "Point at five parts on a bike and say their names out loud."
+    },
+    "de": {
+     "t": "Die Teile eines Fahrrads",
+     "g": "Lerne die Namen der wichtigsten Teile, damit dir jede weitere Lektion leichtfällt.",
+     "p": [
+      "Rahmen und Gabel sind das Skelett; die Laufräder mit Nabe, Speichen, Felge und Reifen tragen dich.",
+      "Der Antrieb besteht aus Pedalen, Kurbeln, Kette, Kettenblättern, Kassette und Schaltwerk.",
+      "Bremsen, Sattel und Lenker sind deine Kontakt- und Kontrollpunkte, sie müssen passen und funktionieren."
+     ],
+     "q": "Auf welches Fahrradteil warst du vor heute am meisten neugierig?",
+     "c": "Zeig auf fünf Teile eines Rads und sag laut ihre Namen."
+    },
+    "es": {
+     "t": "Las partes de una bici",
+     "g": "Aprende los nombres de las piezas principales para que las próximas lecciones sean fáciles.",
+     "p": [
+      "El cuadro y la horquilla son el esqueleto; las ruedas, con buje, radios, llanta y cubierta, te llevan.",
+      "La transmisión son pedales, bielas, cadena, platos, casete y cambios, que convierten tu esfuerzo en avance.",
+      "Frenos, sillín y manillar son tus puntos de contacto y control, así que deben ajustarse y funcionar bien."
+     ],
+     "q": "¿Qué pieza de la bici te despertaba más curiosidad antes de hoy?",
+     "c": "Señala cinco piezas de una bici y di sus nombres en voz alta."
+    },
+    "fr": {
+     "t": "Les pièces d'un vélo",
+     "g": "Apprends le nom des principales pièces pour que les prochaines leçons soient faciles.",
+     "p": [
+      "Le cadre et la fourche sont le squelette ; les roues, avec moyeu, rayons, jante et pneu, te portent.",
+      "La transmission, ce sont pédales, manivelles, chaîne, plateaux, cassette et dérailleurs qui transforment ton effort.",
+      "Freins, selle et guidon sont tes points de contact et de contrôle : ils doivent être bien réglés."
+     ],
+     "q": "Quelle pièce du vélo t'intriguait le plus avant aujourd'hui ?",
+     "c": "Montre cinq pièces sur un vélo et dis leur nom à voix haute."
+    },
+    "it": {
+     "t": "Le parti di una bici",
+     "g": "Impara i nomi delle parti principali, così le prossime lezioni saranno facili.",
+     "p": [
+      "Telaio e forcella sono lo scheletro; le ruote, con mozzo, raggi, cerchio e copertone, ti portano avanti.",
+      "La trasmissione è fatta di pedali, pedivelle, catena, corone, cassetta e deragliatori che trasformano lo sforzo in moto.",
+      "Freni, sella e manubrio sono i tuoi punti di contatto e controllo: devono adattarsi e funzionare bene."
+     ],
+     "q": "Quale parte della bici ti incuriosiva di più prima di oggi?",
+     "c": "Indica cinque parti di una bici e di' ad alta voce il loro nome."
+    },
+    "pt": {
+     "t": "As peças de uma bicicleta",
+     "g": "Aprende os nomes das peças principais para que as próximas lições sejam fáceis.",
+     "p": [
+      "O quadro e a forqueta são o esqueleto; as rodas, com cubo, raios, aro e pneu, levam-te para a frente.",
+      "A transmissão são pedais, pedaleiro, corrente, pratos, cassete e desviadores, que transformam esforço em movimento.",
+      "Travões, selim e guiador são os teus pontos de contacto e controlo, por isso têm de estar bem afinados."
+     ],
+     "q": "Que peça da bicicleta te despertava mais curiosidade antes de hoje?",
+     "c": "Aponta para cinco peças de uma bicicleta e diz os nomes em voz alta."
+    },
+    "pt_BR": {
+     "t": "As peças de uma bike",
+     "g": "Aprenda os nomes das peças principais para que as próximas lições fiquem fáceis.",
+     "p": [
+      "O quadro e o garfo são o esqueleto; as rodas, com cubo, raios, aro e pneu, levam você adiante.",
+      "A transmissão são pedais, pedivelas, corrente, coroas, cassete e câmbios, que transformam esforço em movimento.",
+      "Freios, selim e guidão são seus pontos de contato e controle, por isso precisam estar bem ajustados."
+     ],
+     "q": "Qual peça da bike mais despertava sua curiosidade antes de hoje?",
+     "c": "Aponte para cinco peças de uma bike e fale os nomes em voz alta."
+    }
+   }
+  }
+ ]
+}

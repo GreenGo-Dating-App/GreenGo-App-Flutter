@@ -1,0 +1,33 @@
+{
+"topic": "daily_checkin",
+"intro": {
+"en": [
+"Hi, I'm {name}! I'll be your daily check-in friend on a 365-day path, from sharing highlights and small wins to building habits and planning bigger goals.",
+"Each day brings one small, friendly theme to chat about. To get to know you a little: how has your day been so far?"
+],
+"de": [
+"Hallo, ich bin {name}! Ich bin 365 Tage lang dein Freund für den täglichen Check-in: von Highlights und kleinen Erfolgen bis zu neuen Gewohnheiten und größeren Zielen.",
+"Jeden Tag gibt es ein kleines, freundliches Thema zum Plaudern. Damit ich dich ein bisschen kennenlerne: Wie war dein Tag bisher?"
+],
+"es": [
+"¡Hola, soy {name}! Seré tu amigo del día a día en un camino de 365 días: de compartir los mejores momentos y pequeños logros a crear hábitos y planear metas más grandes.",
+"Cada día trae un tema pequeño y amable para charlar. Para conocerte un poco: ¿qué tal va tu día hasta ahora?"
+],
+"fr": [
+"Salut, je suis {name} ! Je serai ton ami du point quotidien pendant 365 jours : partager les bons moments et les petites victoires, puis créer des habitudes et viser plus grand.",
+"Chaque jour, un petit thème sympa pour discuter. Pour faire un peu connaissance : comment se passe ta journée jusqu'ici ?"
+],
+"it": [
+"Ciao, sono {name}! Sarò il tuo amico del check-in quotidiano per 365 giorni: dai momenti migliori e dalle piccole vittorie fino alle nuove abitudini e agli obiettivi più grandi.",
+"Ogni giorno un piccolo tema amichevole di cui chiacchierare. Per conoscerti un po': com'è andata la tua giornata finora?"
+],
+"pt": [
+"Olá, chamo-me {name}! Vou ser o teu amigo do balanço diário num percurso de 365 dias: de partilhar os melhores momentos e pequenas vitórias a criar hábitos e planear objetivos maiores.",
+"Todos os dias há um tema pequeno e simpático para conversarmos. Para te conhecer um pouco: como está a correr o teu dia até agora?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vou ser seu amigo do papo diário numa jornada de 365 dias: de contar os melhores momentos e pequenas vitórias a criar hábitos e planejar metas maiores.",
+"Todo dia tem um tema pequeno e gostoso para a gente conversar. Para eu te conhecer um pouco: como está sendo o seu dia até agora?"
+]
+}
+}

@@ -1,0 +1,2195 @@
+{
+"topic": "storytelling",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to our story path",
+"f": "How we will create stories together, one small lesson and one turn at a time"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "What makes a story",
+"f": "A character, a place, a problem and a change: the four basic ingredients"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Stories are everywhere",
+"f": "Spotting stories in jokes, songs, ads, chats and family memories"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Taking turns in a story",
+"f": "How we build a tale together, each of us adding one or two sentences"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Once upon a time",
+"f": "Classic story openings in many languages and why they work so well"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Meet your main character",
+"f": "Inventing a hero with a name, a wish and one special quirk"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Giving a character a wish",
+"f": "Why so many good stories start with someone wanting something"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Choosing a setting",
+"f": "Picking a time and place that make a story feel alive"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Using the five senses",
+"f": "Adding what characters see, hear, smell, taste and touch"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "The problem that starts it all",
+"f": "Creating a challenge that gets the story moving"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Beginning, middle and end",
+"f": "The simple three-part shape that most stories follow"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Happy and surprise endings",
+"f": "Different ways to close a story in a satisfying way"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "The one-word story game",
+"f": "Building a story together one word at a time"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Yes, and: building on ideas",
+"f": "Accepting a partner's idea and adding something new to it"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Who, what, where, when, why",
+"f": "Using the five Ws to plan a tiny story fast"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "A story in six words",
+"f": "Fitting a whole story into very few words"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Your first personal anecdote",
+"f": "Turning a small moment from your day into a short story"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "A funny thing happened",
+"f": "Sharing a light, funny moment in a story shape"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Fables: tiny stories with a lesson",
+"f": "What fables are and why they travel across cultures"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "The Tortoise and the Hare",
+"f": "Aesop's classic about steady effort and what it teaches storytellers"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "The Lion and the Mouse",
+"f": "How a tiny character can save the day in a fable"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Stone Soup",
+"f": "A European folk tale about sharing and how a clever idea brings people together"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Retelling a tale in your words",
+"f": "Keeping the heart of a story while using your own voice"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Story objects",
+"f": "Using a single object, like a key or a hat, to spark a story"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Picture prompts",
+"f": "Finding a story hidden inside a photo or a painting"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "What if...?",
+"f": "Using 'what if' questions to invent fresh story ideas"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Animals as characters",
+"f": "Why talking animals are so popular in tales worldwide"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Mini story, big feeling",
+"f": "Showing one clear emotion in a short story"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Story time traditions",
+"f": "How families and communities share stories, from bedtime to festivals"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: story building blocks",
+"f": "Looking back at characters, settings, problems and our first shared stories"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Characters with personality",
+"f": "Giving characters traits, habits and their own ways of talking"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Heroes with small flaws",
+"f": "Why a little imperfection makes characters lovable"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Helpers and friends",
+"f": "Adding a sidekick who supports the hero"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "The rival",
+"f": "A friendly opponent who adds challenge to a story"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Wants and needs",
+"f": "The difference between what a character wishes for and what they truly need"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "A character in three lines",
+"f": "Quick, vivid descriptions that stick in the mind"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Names that tell a story",
+"f": "Choosing character names that hint at personality or culture"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Character voices on the page",
+"f": "How a way of speaking shows who someone is"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Writing simple dialogue",
+"f": "Using short lines of talk to move a story along"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Said and its friends",
+"f": "Choosing speech verbs and knowing when 'said' is best"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Stories in conversation",
+"f": "Telling a short story naturally when chatting with friends"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "The hook",
+"f": "Starting a spoken story with a line that makes people curious"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Keeping it short in chats",
+"f": "Trimming details so a spoken story stays lively"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Reading your listener",
+"f": "Noticing interest and adjusting your story as you go"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Inviting others into your story",
+"f": "Asking questions that let listeners join in"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "The point of the story",
+"f": "Ending a spoken story with a clear reason for telling it"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Stories about first times",
+"f": "Telling stories of first tries, first trips or first days somewhere new"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Travel tales",
+"f": "Turning a trip moment into an engaging short story"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Food stories",
+"f": "Stories about meals, recipes and kitchen adventures"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "The story of an object you own",
+"f": "Telling the story behind something meaningful to you"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Aesop and his fables",
+"f": "Who Aesop is said to have been and why his tales are still told"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "The Fox and the Crow",
+"f": "A fable about flattery and how to tell it with humor"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "The Ant and the Grasshopper",
+"f": "Planning ahead, and how different cultures retell the ending kindly"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "The North Wind and the Sun",
+"f": "A fable about gentleness winning over force"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "La Fontaine's fables",
+"f": "How a French poet turned old fables into elegant verse"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Tales of the Panchatantra",
+"f": "Ancient Indian animal tales about wisdom and friendship"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "The Monkey and the Crocodile",
+"f": "A clever monkey keeps calm and thinks fast in an Indian fable"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Write your own fable",
+"f": "Creating a short animal tale with a gentle lesson"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "A fable together",
+"f": "Building a new fable with your buddy, one line each"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: characters and talk",
+"f": "Reviewing characters, dialogue and storytelling in conversation"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Settings that set the mood",
+"f": "How weather, light and place shape the feeling of a story"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "A place in five details",
+"f": "Choosing the details that make a place come alive"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Real and imaginary places",
+"f": "Mixing real cities with invented worlds"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Time as a setting",
+"f": "Placing stories in the past, the present or the future"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Show, don't tell: first steps",
+"f": "Showing a feeling through actions instead of naming it"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Strong verbs",
+"f": "Choosing lively verbs that paint a picture"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Fresh comparisons",
+"f": "Using similes and metaphors that surprise the listener"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Small details, big effect",
+"f": "How one specific detail can make a whole scene real"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Cutting extra words",
+"f": "Making sentences clean and clear"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "The plot: a chain of events",
+"f": "How one event leads to the next in a story"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Cause and effect",
+"f": "Connecting events with 'because' and 'so'"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Rising action",
+"f": "Making the problem grow step by step"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "The turning point",
+"f": "The moment when everything changes"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Solving the problem",
+"f": "Letting the hero solve things through their own choices"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "After the ending",
+"f": "Showing how the character has changed"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "The rule of three",
+"f": "Why three tries, three wishes or three siblings appear in so many tales"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Repetition in folk tales",
+"f": "How repeated lines make stories easy to remember and retell"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "The Giant Turnip",
+"f": "A Russian tale in which everyone pulls together, one helper at a time"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "The Elves and the Shoemaker",
+"f": "A Grimm tale about kindness returned"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "The Bremen Town Musicians",
+"f": "Four animal friends find a new home in a German tale"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "The Magic Paintbrush",
+"f": "Ma Liang and his magic brush from a Chinese folk tale"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Anansi the spider",
+"f": "Meet the clever trickster from West African and Caribbean tales"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Anansi and the pot of wisdom",
+"f": "A tale from Ghana about why wisdom is found everywhere"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Tiddalik the thirsty frog",
+"f": "An Aboriginal Australian tale about a frog and the power of laughter"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Story chains with a buddy",
+"f": "Taking turns adding events with 'and then' and 'but suddenly'"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Story dice",
+"f": "Rolling picture dice or picking random words to build a tale"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Fortunately, unfortunately",
+"f": "A playful game of swapping good luck and bad luck"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Ending in one sentence",
+"f": "Writing a strong final line for a story"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Telling a folk tale aloud",
+"f": "Practicing a tale with pauses and expression"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: plot and folk tales",
+"f": "Reviewing plot shape and the first folk tales from around the world"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Personal stories that connect",
+"f": "How sharing small life stories builds friendships across cultures"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Everyday story moments",
+"f": "Noticing story-worthy moments in ordinary days"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Memory maps",
+"f": "Drawing a place from childhood to unlock stories"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Childhood game stories",
+"f": "Sharing stories about games you played as a child"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Family sayings and stories",
+"f": "The stories behind sayings or traditions in your family"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "A day I will never forget",
+"f": "Telling a happy, memorable day in story form"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Lessons learned stories",
+"f": "A short story about learning something in a funny or surprising way"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Stories of kindness",
+"f": "Telling about a time someone was kind to you"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "The small-moment story",
+"f": "Zooming in on a few minutes instead of a whole day"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Day 100: our story collection",
+"f": "Celebrating 100 days by choosing our favorite stories so far"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Writing versus telling",
+"f": "How written stories differ from spoken ones"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Your first written mini story",
+"f": "Writing a short story of about 100 words"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Paragraphs and rhythm",
+"f": "Using short and long paragraphs to guide readers"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Punctuation for storytellers",
+"f": "Commas, dashes and ellipses that shape the reading voice"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "First person stories",
+"f": "Writing as 'I' to bring the reader close"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Third person stories",
+"f": "Writing as 'he', 'she' or 'they' to see more of the world"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Present or past tense",
+"f": "Choosing a tense and keeping it steady"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Titles that invite",
+"f": "Creating titles that make people want to read"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Reading your story aloud",
+"f": "Catching awkward bits by listening to your own words"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Gentle self-editing",
+"f": "Simple checks to improve a first draft"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Sharing and feedback",
+"f": "Giving and receiving kind feedback on stories"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Story journals",
+"f": "Keeping a notebook of ideas, lines and overheard phrases"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Daily story sparks",
+"f": "Collecting one idea a day to build your story bank"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Story openings around the world",
+"f": "Openings like 'Érase una vez', 'C'era una volta' and 'Era uma vez'"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Story endings around the world",
+"f": "Traditional closing lines from different cultures"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "A story in five sentences",
+"f": "Practicing the full story arc in just five sentences"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "A turn-taking story marathon",
+"f": "Writing a longer tale together over several turns"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Polishing our shared story",
+"f": "Improving our shared tale with small edits"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Your storyteller strengths",
+"f": "Noticing what you already do well as a storyteller"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner stage complete",
+"f": "Celebrating the beginner stage and the stories we created"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to the intermediate stage",
+"f": "What comes next: structure, suspense, humor and tales from many lands"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "The three-act structure",
+"f": "Setup, confrontation and resolution explained simply"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "The inciting incident",
+"f": "The event that pushes the hero into the story"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Stakes: why it matters",
+"f": "Showing what the hero can win or lose"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Obstacles that grow",
+"f": "Making each challenge a little harder than the last"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "The low point, told gently",
+"f": "The moment hope seems far away just before things turn around"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "The climax",
+"f": "Bringing the main problem to its biggest moment"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Resolution and new balance",
+"f": "Wrapping up the threads and showing a new normal"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "The hero's journey, simply",
+"f": "Call, journey, trials and return in a friendly overview"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "The call to adventure",
+"f": "Inventing invitations that pull characters out of their routine"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Mentors in stories",
+"f": "Wise guides who help heroes grow"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Crossing the threshold",
+"f": "The moment the hero steps into a new world"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Trials and tests",
+"f": "Challenges that teach the hero something important"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "The return home",
+"f": "Coming back changed and sharing what was learned"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Story circles",
+"f": "The circular shape in which a hero leaves home and returns"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Kishotenketsu",
+"f": "The four-part East Asian story structure that needs no conflict"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Writing a kishotenketsu story",
+"f": "Introduction, development, twist and conclusion in practice"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Episodic stories",
+"f": "Tales made of linked adventures, one after another"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "The Voyages of Sinbad",
+"f": "Adventure episodes from the Thousand and One Nights"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Frame stories",
+"f": "A story that holds other stories inside it"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Cliffhangers",
+"f": "Ending a part at a moment that makes people want more"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Scheherazade's art",
+"f": "How a legendary storyteller kept her listener curious night after night"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Planning a story on one page",
+"f": "Outlining a tale before writing it"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Planners and discoverers",
+"f": "Writing from a plan or by discovery, and mixing both"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Story beats",
+"f": "Breaking a story into small, clear moments"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Scenes and summaries",
+"f": "When to slow down and when to skip ahead in time"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Flashbacks",
+"f": "Stepping back in time without confusing listeners"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Starting in the middle",
+"f": "Opening in the action and explaining later"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "A three-act tale together",
+"f": "Taking turns with your buddy to build a story in three acts"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: story structure",
+"f": "Reviewing acts, journeys, frames and cliffhangers"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Curiosity drives stories",
+"f": "Raising questions the listener wants answered"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Gentle suspense",
+"f": "Building tension without fear or scary content"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Foreshadowing",
+"f": "Planting small hints of what will come"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Mysteries for everyone",
+"f": "Lost objects, secret notes and puzzles to solve"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "A cozy mystery together",
+"f": "Taking turns to solve a gentle mystery tale"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Red herrings",
+"f": "Harmless false clues that keep readers guessing"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Surprise twists",
+"f": "Twists that surprise yet make sense afterward"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Humor in stories",
+"f": "How exaggeration, surprise and timing create laughs"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Comic timing",
+"f": "Pauses and rhythm that make funny moments land"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Tall tales",
+"f": "Larger-than-life stories like those of Paul Bunyan and Baron Munchausen"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Funny characters",
+"f": "Lovable fools and clever jokers in folk tales"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Nasreddin Hodja",
+"f": "The wise fool of Turkish and Middle Eastern stories"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Eat, my coat!",
+"f": "The Nasreddin tale about a coat at a feast and what it says about appearances"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Birbal's wit",
+"f": "Clever answers from the tales of Emperor Akbar and Birbal in India"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Tenali Raman",
+"f": "The witty poet of South Indian folk stories"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Giufà and Pedro Malasartes",
+"f": "Funny folk heroes from Sicily, Portugal and Brazil"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Juan Bobo",
+"f": "The lovable fool from Puerto Rican folk tales"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Till Eulenspiegel",
+"f": "The German prankster and his playful tricks"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Point of view",
+"f": "Who tells the story and how that changes everything"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Through the sidekick's eyes",
+"f": "Retelling a tale from the view of a minor character"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Switching narrators",
+"f": "Telling the same scene from two different viewpoints"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "The fox's side of the fable",
+"f": "Retelling a fable kindly from the point of view of the trickster"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Inner thoughts",
+"f": "Showing what characters think and feel"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Different memories",
+"f": "Characters who remember the same event in different ways"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Pacing: fast and slow",
+"f": "Speeding up action and slowing down key moments"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Sentence length and speed",
+"f": "Using short lines for speed and long ones for calm"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Silence and pauses",
+"f": "Leaving space for the listener in spoken stories"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "A humor round together",
+"f": "Taking turns adding funny twists to a story"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "A tall tale contest",
+"f": "Inventing wildly exaggerated stories together"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: suspense, humor and voice",
+"f": "Reviewing curiosity, laughter and points of view"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Why stories",
+"f": "Folk tales that explain why things are the way they are"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Why the sky is far away",
+"f": "A Nigerian tale about the sky and not wasting what you are given"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "How Raven brought light",
+"f": "A tale from the Pacific Northwest about light coming into the world"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "How the zebra got its stripes",
+"f": "An African folk tale about how animals got their looks"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Maui and the sun",
+"f": "A Polynesian tale about slowing down the sun's journey"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Maui fishing up islands",
+"f": "How Maui is said to have pulled islands up from the sea"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "The rabbit in the moon",
+"f": "Moon rabbit stories from China, Japan, Korea and Mexico"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Chang'e and the Moon Festival",
+"f": "The Chinese moon legend told at the Mid-Autumn Festival"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Write your own why story",
+"f": "Inventing a tale that explains something in nature"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Tricksters around the world",
+"f": "Clever characters who outwit the big and strong"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Coyote tales",
+"f": "The trickster of many Native American stories"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Br'er Rabbit",
+"f": "The quick-thinking rabbit of African American folk tales"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Bouki and Malice",
+"f": "A trickster pair from Haitian storytelling"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Reynard the fox",
+"f": "The clever fox of medieval European tales and his schemes"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "The Party in the Sky",
+"f": "A Brazilian tale of a tortoise who sneaks to a party in the clouds"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Saci Pererê",
+"f": "The playful one-legged prankster of Brazilian folklore"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "The Curupira",
+"f": "The Brazilian forest guardian whose feet point backwards"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "The hummingbird and the fire",
+"f": "An Andean tale about doing your part, however small"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Heungbu and Nolbu",
+"f": "A Korean tale of a kind brother, a greedy brother and a swallow"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Day 200: favorite tales so far",
+"f": "Celebrating 200 days by choosing your favorite folk tales"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "The Crane Wife",
+"f": "A Japanese tale about a gift, a secret and trust"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Urashima Taro",
+"f": "A Japanese tale about a visit under the sea and the passing of time"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "The Bamboo Cutter's daughter",
+"f": "Japan's oldest tale, about a girl who came from the moon"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Finn McCool and the giant",
+"f": "An Irish tale of quick wits at the Giant's Causeway"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "The almond blossoms of the Algarve",
+"f": "A Portuguese legend about a northern princess who missed the snow"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "El Ratoncito Pérez",
+"f": "The Spanish tooth mouse and his little adventures"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Rip Van Winkle",
+"f": "An American tale about a very, very long nap"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "The Ugly Duckling",
+"f": "Andersen's Danish tale about growing into yourself"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "The Emperor's New Clothes",
+"f": "Andersen's tale about honesty and the courage to speak up"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: tales from many lands",
+"f": "Reviewing why stories, tricksters and favorite folk tales"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Your storytelling voice",
+"f": "Using volume, pitch and speed to bring stories to life"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Pauses that hold attention",
+"f": "Well-placed silences that build anticipation"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Gestures and facial expressions",
+"f": "Using your body to help tell the story"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Doing character voices aloud",
+"f": "Giving each character a recognizable voice when you speak"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Eye contact and connection",
+"f": "Connecting with listeners while you tell"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Telling without notes",
+"f": "Remembering a story through its key images"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Story maps for memory",
+"f": "Drawing a tale as a path of pictures"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Telling stories to children",
+"f": "Simple language, repetition and inviting participation"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Telling stories to friends",
+"f": "Relaxed, conversational storytelling"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Stories on video calls",
+"f": "Keeping the energy up on a screen"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Voice messages that tell a story",
+"f": "Short audio stories for friends far away"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Toasts and speeches with stories",
+"f": "Using a short story to open a speech"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Stories at work",
+"f": "Using examples and anecdotes to explain ideas"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Telling stories across cultures",
+"f": "Choosing stories that travel well across languages"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Stories in a second language",
+"f": "Simple strategies for telling stories in a language you are learning"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Explaining cultural details",
+"f": "Adding small explanations for listeners from other cultures"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Humor that travels",
+"f": "Which jokes work across cultures and which get lost"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Listening as a storyteller",
+"f": "Being a good audience for other people's stories"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Responding to a story",
+"f": "Asking questions and sharing a related story"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Story swap",
+"f": "Trading stories from your culture with your buddy"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Griots of West Africa",
+"f": "Storytellers who keep history alive through music and words"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Rakugo",
+"f": "The Japanese art of seated storytelling with a fan and a cloth"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Bards and minstrels",
+"f": "Traveling storytellers and singers of medieval Europe"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Cordel literature",
+"f": "Brazilian folk poetry printed in booklets hung on strings"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Puppet and shadow stories",
+"f": "Telling tales with shadows and puppets, from Asia to Europe"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Kamishibai",
+"f": "Japanese paper theater storytelling with picture cards"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Storytelling festivals",
+"f": "Gatherings around the world that celebrate the spoken word"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Preparing a performance tale",
+"f": "Getting one tale ready to tell with voice and gesture"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "A performance for your buddy",
+"f": "Telling your tale and receiving gentle feedback"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: telling out loud",
+"f": "Reviewing voice, presence and storytelling traditions"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Fairy tale collectors",
+"f": "How the Brothers Grimm and others gathered folk tales"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Charles Perrault",
+"f": "The French writer behind Puss in Boots and Cinderella"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Puss in Boots",
+"f": "A clever cat helps his master in Perrault's tale"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Many Cinderellas",
+"f": "Cinderella-like stories from China, Egypt, France and beyond"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Comparing versions",
+"f": "How one tale changes from culture to culture"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Hans Christian Andersen",
+"f": "The Danish storyteller and his gift for feeling"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Pinocchio",
+"f": "Collodi's Italian tale of a puppet who learns honesty"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Modern folklore",
+"f": "Funny family legends and gentle urban tales of today"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your culture's tale",
+"f": "Retelling a folk tale from your own country"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Intermediate stage complete",
+"f": "Celebrating your progress and getting ready for advanced storytelling"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to the advanced stage",
+"f": "What comes next: deeper craft, retellings, worlds and our own story collection"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Flash fiction",
+"f": "Writing complete stories in under 500 words"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Microfiction",
+"f": "Telling a whole story in just a few lines"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Drabbles",
+"f": "Writing exactly 100 words that tell a full tale"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Theme: what your story means",
+"f": "Finding the idea beneath the events"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Symbols and motifs",
+"f": "Repeating images that carry meaning"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Subtext",
+"f": "What characters do not say out loud"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Dialogue with subtext",
+"f": "Writing conversations where meaning hides between the lines"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Character arcs",
+"f": "How characters change from beginning to end"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Complex characters",
+"f": "Mixed motives that make characters feel real"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Character interviews",
+"f": "Asking your character questions to know them better"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Tension within a scene",
+"f": "Wants, obstacles and stakes inside a single scene"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Openings that pull readers in",
+"f": "Studying great first lines"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Endings that resonate",
+"f": "Open, closed and circular endings"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Atmosphere and tone",
+"f": "Choosing words to create a mood"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Your voice on the page",
+"f": "Developing a recognizable storytelling style"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Imitating to learn",
+"f": "Writing in the style of a favorite author as practice"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Second person stories",
+"f": "Writing as 'you' for an unusual effect"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Stories in letters",
+"f": "Tales told through letters, notes or postcards"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Stories in chat messages",
+"f": "Telling a tale through a text conversation"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Diary stories",
+"f": "A story told through diary entries"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Nonlinear stories",
+"f": "Telling events out of order with a purpose"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Multiple storylines",
+"f": "Weaving two plots together"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Ensemble casts",
+"f": "Telling a story with several main characters"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Editing in layers",
+"f": "Big picture first, then scenes, then sentences"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Cutting your favorite lines",
+"f": "Removing parts you love that do not serve the story"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Strong revisions",
+"f": "Rewriting a scene to make it better"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Reading like a writer",
+"f": "Studying how the stories you love actually work"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "A writing prompt sprint",
+"f": "Writing five tiny stories from five prompts"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: advanced craft",
+"f": "Reviewing flash fiction, theme, voice and revision"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Retelling classic tales",
+"f": "Making an old tale new while keeping its heart"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Old tales, modern settings",
+"f": "Moving a folk tale to a city of today"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Role swaps in classic tales",
+"f": "Changing who does what in a well-known story"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Sequels to fables",
+"f": "What happened after the tortoise won the race?"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Mash-ups",
+"f": "Mixing two folk tales into one new story"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Worldbuilding basics",
+"f": "Creating places with their own rules and customs"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Maps for imaginary worlds",
+"f": "Drawing a world to inspire stories"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Customs of an invented world",
+"f": "Inventing festivals and traditions for your imaginary culture"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Names in invented worlds",
+"f": "Creating names and words that sound consistent"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Magic with rules",
+"f": "Why limits make story magic more interesting"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "The fairy tale genre",
+"f": "The common features of fairy tales"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Adventure stories",
+"f": "Journeys, maps and quests"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Science fiction ideas",
+"f": "Asking 'what if' about technology and the future"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Gentle fantasy",
+"f": "Dragons, talking trees and friendly magic"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Slice of life",
+"f": "Small, quiet stories about everyday moments"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Comedy stories",
+"f": "Building a story around a funny situation"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Myths, legends and folk tales",
+"f": "The differences between myths, legends and folk tales"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Legendary places",
+"f": "Tales of Atlantis, El Dorado and other legendary lands"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Heroes of legend",
+"f": "Legendary figures like King Arthur and Mulan, told gently"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Day 300: story celebration",
+"f": "Celebrating 300 days with your favorite creation"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Writing for children",
+"f": "Simple language and big imagination for young readers"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Picture book thinking",
+"f": "Telling a story through words and images together"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Stories in songs",
+"f": "How songs and ballads tell stories"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Story poems",
+"f": "Narrative poetry and rhyme in storytelling"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Comics and panels",
+"f": "Telling stories with pictures and speech bubbles"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Stories in games",
+"f": "How games use choices to tell stories"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Choose-your-path stories",
+"f": "Writing branching tales with choices"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "A branching tale together",
+"f": "Building a choose-your-path story with your buddy"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Stories without words",
+"f": "Telling a tale through images or actions only"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Review: retellings and worlds",
+"f": "Reviewing retellings, invented worlds and genres"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Stories in presentations",
+"f": "Using a story to make a talk memorable"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Stories that explain ideas",
+"f": "Explaining an idea through a short example story"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Your personal origin story",
+"f": "How you became who you are, told in a few minutes"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Telling your culture's story",
+"f": "Introducing your home culture through stories"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Stories that build bridges",
+"f": "Using stories to connect people across differences"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Interviewing for stories",
+"f": "Collecting stories from family and friends"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Oral history",
+"f": "Recording memories from older relatives with care"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "A family story book",
+"f": "Gathering family tales into a small collection"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Place stories",
+"f": "The stories behind streets, buildings and local legends"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Museum object stories",
+"f": "Finding the tales behind historical objects"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Travel writing",
+"f": "Describing journeys vividly and respectfully"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Food writing",
+"f": "Writing about dishes and the people behind them"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Nature stories",
+"f": "Writing about animals, seasons and landscapes"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Stories of inventors",
+"f": "True stories of curiosity and discovery told as tales"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Explorer stories",
+"f": "Telling the true journeys of famous explorers as stories"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "True events, story shape",
+"f": "Using story techniques to tell real events"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Accuracy and respect",
+"f": "Being fair and respectful when telling true stories"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Sharing stories with care",
+"f": "Telling other people's stories with permission and care"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Stories that inspire",
+"f": "Choosing stories that lift listeners up"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: stories in real life",
+"f": "Reviewing true, personal and cultural storytelling"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Planning our story collection",
+"f": "Choosing a theme for our final anthology of shared stories"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Picking the stories",
+"f": "Selecting the best tales we created together"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "A new opening tale",
+"f": "Creating a fresh story to open the collection"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "A folk tale, retold by you",
+"f": "Retelling a favorite folk tale in your own style for the collection"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "A personal story, polished",
+"f": "Writing a true moment in polished form for the collection"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "A why story for the collection",
+"f": "Inventing an origin tale for the anthology"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "A funny story for the collection",
+"f": "Writing a light, comic tale"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "One last tale in turns",
+"f": "Building one final tale together, turn by turn"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Editing the collection",
+"f": "Polishing each story for flow and clarity"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "A title for every story",
+"f": "Giving each story the perfect title"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Ordering the stories",
+"f": "Arranging the tales so the collection flows"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Writing an introduction",
+"f": "A short opening note for the collection"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Illustration ideas",
+"f": "Imagining a picture for each story"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "A cover and a name",
+"f": "Choosing a name and a cover idea for the anthology"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Sharing the collection",
+"f": "Ways to share the stories with friends and family"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Your best story, aloud",
+"f": "Performing your favorite piece from the collection"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Story night",
+"f": "Hosting a small story evening with friends"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Inviting others to tell",
+"f": "Encouraging friends to share their own tales"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Storytelling clubs",
+"f": "Joining or starting a group that shares stories"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Your storyteller identity",
+"f": "Describing yourself as a storyteller"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Revisiting your first story",
+"f": "Looking back at the first tale you told on this path"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "How your stories have grown",
+"f": "Comparing your early and recent stories"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your favorite folk tale of all",
+"f": "Choosing and explaining your favorite tale of the year"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Your favorite technique",
+"f": "The storytelling tool you use the most"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Stories you still want to tell",
+"f": "Listing ideas for future stories"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "A daily story habit",
+"f": "Keeping storytelling alive every day"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "A storyteller's reading list",
+"f": "Building a reading list of tales from many cultures"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Passing stories on",
+"f": "Teaching a tale to someone else"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "A story as a gift",
+"f": "Writing a tale as a present for a friend or family member"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: the whole journey",
+"f": "Looking back over a year of stories and storytelling"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "The story of your year",
+"f": "Telling the story of your own 365-day path"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "A sequel to our first story",
+"f": "Returning to the characters from our very first tale"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "The never-ending story game",
+"f": "Starting a tale that can go on forever"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your storyteller's promise",
+"f": "Choosing how you will keep telling stories"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "The end and a new beginning",
+"f": "Celebrating 365 days and all the stories still to come"
+}
+]
+}

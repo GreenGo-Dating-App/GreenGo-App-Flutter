@@ -1,0 +1,835 @@
+{
+ "topic": "football",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why football is the world's game",
+     "g": "Discover how a simple ball game became the most popular sport on Earth.",
+     "p": [
+      "All you really need is a ball and some space, so football can be played almost anywhere.",
+      "The modern rules were written in London in 1863, when the Football Association was founded.",
+      "FIFA was founded in Paris in 1904, and the first World Cup was held in Uruguay in 1930."
+     ],
+     "q": "What do you think makes football so loved around the world?",
+     "c": "Count how many places near you where people could play a quick game of football."
+    },
+    "de": {
+     "t": "Warum Fußball das Spiel der Welt ist",
+     "g": "Entdecke, wie ein einfaches Ballspiel zum beliebtesten Sport der Erde wurde.",
+     "p": [
+      "Man braucht nur einen Ball und etwas Platz, darum wird Fußball fast überall gespielt.",
+      "Die modernen Regeln entstanden 1863 in London, als die Football Association gegründet wurde.",
+      "Die FIFA wurde 1904 in Paris gegründet, die erste WM fand 1930 in Uruguay statt."
+     ],
+     "q": "Was macht Fußball deiner Meinung nach weltweit so beliebt?",
+     "c": "Zähl, an wie vielen Orten in deiner Nähe man spontan kicken könnte."
+    },
+    "es": {
+     "t": "Por qué el fútbol es el juego del mundo",
+     "g": "Descubre cómo un sencillo juego de pelota se convirtió en el deporte más popular del planeta.",
+     "p": [
+      "Solo hace falta un balón y un poco de espacio, por eso se juega casi en cualquier parte.",
+      "Las reglas modernas se escribieron en Londres en 1863, al fundarse la Football Association.",
+      "La FIFA nació en París en 1904 y el primer Mundial se jugó en Uruguay en 1930."
+     ],
+     "q": "¿Qué crees que hace que el fútbol sea tan querido en todo el mundo?",
+     "c": "Cuenta cuántos lugares cerca de ti sirven para jugar un partidillo."
+    },
+    "fr": {
+     "t": "Pourquoi le foot est le jeu du monde",
+     "g": "Découvre comment un simple jeu de ballon est devenu le sport le plus populaire de la planète.",
+     "p": [
+      "Il suffit d'un ballon et d'un peu d'espace : on peut jouer presque partout.",
+      "Les règles modernes ont été écrites à Londres en 1863, à la création de la Football Association.",
+      "La FIFA est née à Paris en 1904 et la première Coupe du monde a eu lieu en Uruguay en 1930."
+     ],
+     "q": "Selon toi, qu'est-ce qui rend le foot si aimé dans le monde entier ?",
+     "c": "Compte combien d'endroits près de chez toi permettent de faire un petit match."
+    },
+    "it": {
+     "t": "Perché il calcio è il gioco del mondo",
+     "g": "Scopri come un semplice gioco con la palla è diventato lo sport più amato del pianeta.",
+     "p": [
+      "Bastano un pallone e un po' di spazio: per questo si gioca quasi ovunque.",
+      "Le regole moderne nacquero a Londra nel 1863, con la fondazione della Football Association.",
+      "La FIFA fu fondata a Parigi nel 1904 e il primo Mondiale si giocò in Uruguay nel 1930."
+     ],
+     "q": "Secondo te, cosa rende il calcio così amato in tutto il mondo?",
+     "c": "Conta quanti posti vicino a te sarebbero perfetti per una partitella."
+    },
+    "pt": {
+     "t": "Porque é que o futebol é o jogo do mundo",
+     "g": "Descobre como um simples jogo de bola se tornou o desporto mais popular do planeta.",
+     "p": [
+      "Basta uma bola e algum espaço, por isso joga-se futebol em quase todo o lado.",
+      "As regras modernas foram escritas em Londres em 1863, quando nasceu a Football Association.",
+      "A FIFA foi fundada em Paris em 1904 e o primeiro Mundial jogou-se no Uruguai em 1930."
+     ],
+     "q": "Na tua opinião, o que torna o futebol tão amado em todo o mundo?",
+     "c": "Conta quantos sítios perto de ti dariam para uma jogatana rápida."
+    },
+    "pt_BR": {
+     "t": "Por que o futebol é o jogo do mundo",
+     "g": "Descubra como um simples jogo de bola virou o esporte mais popular do planeta.",
+     "p": [
+      "Basta uma bola e um pouco de espaço, por isso se joga futebol em quase todo lugar.",
+      "As regras modernas foram escritas em Londres em 1863, quando nasceu a Football Association.",
+      "A FIFA foi fundada em Paris em 1904 e a primeira Copa do Mundo foi no Uruguai em 1930."
+     ],
+     "q": "Na sua opinião, o que faz o futebol ser tão amado no mundo todo?",
+     "c": "Conte quantos lugares perto de você dariam para uma pelada rápida."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your football story",
+     "g": "Look back at your first memories of playing or watching football.",
+     "p": [
+      "Many people first meet football in a schoolyard, a park or in front of the TV with family.",
+      "Some memories stick forever: a first goal, a first stadium visit or a famous match.",
+      "There is no wrong way to start: players, fans and curious beginners are all welcome here."
+     ],
+     "q": "What is your very first football memory?",
+     "c": "Tell a friend or write down one football moment you will never forget."
+    },
+    "de": {
+     "t": "Deine Fußballgeschichte",
+     "g": "Erinnere dich an deine ersten Erlebnisse beim Spielen oder Zuschauen.",
+     "p": [
+      "Viele lernen Fußball auf dem Schulhof, im Park oder mit der Familie vor dem Fernseher kennen.",
+      "Manche Momente bleiben für immer: das erste Tor, der erste Stadionbesuch, ein großes Spiel.",
+      "Es gibt keinen falschen Start: Spieler, Fans und Neugierige sind hier alle willkommen."
+     ],
+     "q": "Was ist deine allererste Erinnerung an Fußball?",
+     "c": "Erzähl jemandem von einem Fußballmoment, den du nie vergessen wirst."
+    },
+    "es": {
+     "t": "Tu historia con el fútbol",
+     "g": "Recuerda tus primeras experiencias jugando o viendo fútbol.",
+     "p": [
+      "Muchos descubren el fútbol en el patio del colegio, en un parque o viendo la tele en familia.",
+      "Algunos recuerdos duran siempre: el primer gol, la primera visita al estadio, un gran partido.",
+      "No hay una forma equivocada de empezar: jugadores, aficionados y curiosos son bienvenidos."
+     ],
+     "q": "¿Cuál es tu primer recuerdo relacionado con el fútbol?",
+     "c": "Cuéntale a alguien un momento futbolero que nunca olvidarás."
+    },
+    "fr": {
+     "t": "Ton histoire avec le foot",
+     "g": "Repense à tes premiers souvenirs de foot, sur le terrain ou devant un match.",
+     "p": [
+      "Beaucoup découvrent le foot dans la cour d'école, au parc ou devant la télé en famille.",
+      "Certains souvenirs restent à vie : un premier but, un premier stade, un match mythique.",
+      "Il n'y a pas de mauvais départ : joueurs, supporters et curieux sont tous les bienvenus."
+     ],
+     "q": "Quel est ton tout premier souvenir de foot ?",
+     "c": "Raconte à quelqu'un un moment de foot que tu n'oublieras jamais."
+    },
+    "it": {
+     "t": "La tua storia con il calcio",
+     "g": "Ripensa ai tuoi primi ricordi giocando o guardando una partita.",
+     "p": [
+      "Molti scoprono il calcio in cortile, al parco o davanti alla TV con la famiglia.",
+      "Certi ricordi restano per sempre: il primo gol, il primo stadio, una partita storica.",
+      "Non esiste un modo sbagliato di iniziare: giocatori, tifosi e curiosi sono tutti benvenuti."
+     ],
+     "q": "Qual è il tuo primissimo ricordo legato al calcio?",
+     "c": "Racconta a qualcuno un momento di calcio che non dimenticherai mai."
+    },
+    "pt": {
+     "t": "A tua história com o futebol",
+     "g": "Recorda as tuas primeiras memórias a jogar ou a ver futebol.",
+     "p": [
+      "Muita gente conhece o futebol no recreio da escola, no parque ou a ver televisão em família.",
+      "Há memórias que ficam para sempre: o primeiro golo, o primeiro estádio, um grande jogo.",
+      "Não há forma errada de começar: jogadores, adeptos e curiosos são todos bem-vindos."
+     ],
+     "q": "Qual é a tua primeira memória ligada ao futebol?",
+     "c": "Conta a alguém um momento de futebol que nunca vais esquecer."
+    },
+    "pt_BR": {
+     "t": "Sua história com o futebol",
+     "g": "Relembre suas primeiras memórias jogando ou assistindo futebol.",
+     "p": [
+      "Muita gente conhece o futebol no recreio da escola, na praça ou vendo TV com a família.",
+      "Algumas lembranças ficam para sempre: o primeiro gol, o primeiro estádio, um jogão.",
+      "Não existe jeito errado de começar: jogadores, torcedores e curiosos são todos bem-vindos."
+     ],
+     "q": "Qual é a sua primeira lembrança de futebol?",
+     "c": "Conte para alguém um momento de futebol que você nunca vai esquecer."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The basic rules",
+     "g": "Learn the core idea: two teams, one ball and more goals than the opponent.",
+     "p": [
+      "Each team has eleven players on the pitch, and one of them is the goalkeeper.",
+      "A goal counts when the whole ball crosses the goal line between the posts and under the bar.",
+      "Outfield players may use any part of the body except their hands and arms."
+     ],
+     "q": "If you had to explain football in one sentence, what would you say?",
+     "c": "Explain the aim of football to someone in under 20 words."
+    },
+    "de": {
+     "t": "Die Grundregeln",
+     "g": "Lerne die Kernidee: zwei Teams, ein Ball und mehr Tore als der Gegner.",
+     "p": [
+      "Jedes Team hat elf Spieler auf dem Platz, einer davon ist der Torwart.",
+      "Ein Tor zählt, wenn der Ball ganz die Torlinie zwischen den Pfosten und unter der Latte überquert.",
+      "Feldspieler dürfen jeden Körperteil benutzen, nur nicht Hände und Arme."
+     ],
+     "q": "Wie würdest du Fußball in einem Satz erklären?",
+     "c": "Erklär jemandem das Ziel des Fußballs in weniger als 20 Wörtern."
+    },
+    "es": {
+     "t": "Las reglas básicas",
+     "g": "Aprende la idea central: dos equipos, un balón y marcar más goles que el rival.",
+     "p": [
+      "Cada equipo tiene once jugadores en el campo, y uno de ellos es el portero.",
+      "Es gol cuando el balón cruza entero la línea de meta entre los postes y bajo el larguero.",
+      "Los jugadores de campo pueden usar cualquier parte del cuerpo salvo manos y brazos."
+     ],
+     "q": "Si tuvieras que explicar el fútbol en una frase, ¿qué dirías?",
+     "c": "Explica a alguien el objetivo del fútbol en menos de 20 palabras."
+    },
+    "fr": {
+     "t": "Les règles de base",
+     "g": "Retiens l'idée centrale : deux équipes, un ballon et plus de buts que l'adversaire.",
+     "p": [
+      "Chaque équipe aligne onze joueurs sur le terrain, dont un gardien de but.",
+      "Il y a but quand le ballon franchit entièrement la ligne entre les poteaux et sous la barre.",
+      "Les joueurs de champ peuvent utiliser tout le corps, sauf les mains et les bras."
+     ],
+     "q": "Si tu devais expliquer le foot en une phrase, que dirais-tu ?",
+     "c": "Explique le but du foot à quelqu'un en moins de 20 mots."
+    },
+    "it": {
+     "t": "Le regole di base",
+     "g": "Impara l'idea centrale: due squadre, un pallone e più gol dell'avversario.",
+     "p": [
+      "Ogni squadra ha undici giocatori in campo, e uno di loro è il portiere.",
+      "È gol quando il pallone supera interamente la linea di porta tra i pali e sotto la traversa.",
+      "I giocatori di movimento possono usare tutto il corpo tranne mani e braccia."
+     ],
+     "q": "Se dovessi spiegare il calcio in una frase, cosa diresti?",
+     "c": "Spiega a qualcuno lo scopo del calcio in meno di 20 parole."
+    },
+    "pt": {
+     "t": "As regras básicas",
+     "g": "Aprende a ideia central: duas equipas, uma bola e marcar mais golos do que o adversário.",
+     "p": [
+      "Cada equipa tem onze jogadores em campo, e um deles é o guarda-redes.",
+      "É golo quando a bola passa toda a linha de baliza entre os postes e por baixo da barra.",
+      "Os jogadores de campo podem usar qualquer parte do corpo, exceto mãos e braços."
+     ],
+     "q": "Se tivesses de explicar o futebol numa frase, o que dirias?",
+     "c": "Explica a alguém o objetivo do futebol em menos de 20 palavras."
+    },
+    "pt_BR": {
+     "t": "As regras básicas",
+     "g": "Aprenda a ideia central: dois times, uma bola e fazer mais gols que o adversário.",
+     "p": [
+      "Cada time tem onze jogadores em campo, e um deles é o goleiro.",
+      "É gol quando a bola cruza inteira a linha do gol entre as traves e embaixo do travessão.",
+      "Os jogadores de linha podem usar qualquer parte do corpo, menos mãos e braços."
+     ],
+     "q": "Se você tivesse que explicar o futebol em uma frase, o que diria?",
+     "c": "Explique a alguém o objetivo do futebol em menos de 20 palavras."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The pitch explained",
+     "g": "Get to know the lines and areas that shape every football pitch.",
+     "p": [
+      "The long side lines are touchlines; the short end lines with the goals are goal lines.",
+      "The penalty area reaches 16.5 m out from the goal line, and the penalty spot sits 11 m out.",
+      "The centre circle has a radius of 9.15 m, and the goal is 7.32 m wide and 2.44 m high."
+     ],
+     "q": "Which part of the pitch would you most like to play in, and why?",
+     "c": "Next time you see a pitch, try to name every line and area on it."
+    },
+    "de": {
+     "t": "Das Spielfeld erklärt",
+     "g": "Lerne die Linien und Bereiche kennen, die jedes Fußballfeld prägen.",
+     "p": [
+      "Die langen Seiten heißen Seitenlinien, die kurzen mit den Toren Torlinien.",
+      "Der Strafraum reicht 16,5 m ins Feld, der Elfmeterpunkt liegt 11 m vor dem Tor.",
+      "Der Mittelkreis hat 9,15 m Radius, das Tor ist 7,32 m breit und 2,44 m hoch."
+     ],
+     "q": "In welchem Bereich des Feldes würdest du am liebsten spielen und warum?",
+     "c": "Benenne beim nächsten Fußballplatz jede Linie und jeden Bereich."
+    },
+    "es": {
+     "t": "El campo explicado",
+     "g": "Conoce las líneas y zonas que forman cualquier campo de fútbol.",
+     "p": [
+      "Los lados largos son las líneas de banda y los cortos, con las porterías, las líneas de meta.",
+      "El área de penalti llega a 16,5 m de la línea de meta y el punto de penalti está a 11 m.",
+      "El círculo central tiene 9,15 m de radio y la portería mide 7,32 m de ancho y 2,44 m de alto."
+     ],
+     "q": "¿En qué zona del campo te gustaría más jugar y por qué?",
+     "c": "La próxima vez que veas un campo, nombra cada línea y cada zona."
+    },
+    "fr": {
+     "t": "Le terrain expliqué",
+     "g": "Découvre les lignes et les zones qui dessinent chaque terrain de foot.",
+     "p": [
+      "Les grands côtés sont les lignes de touche, les petits côtés avec les buts les lignes de but.",
+      "La surface de réparation s'étend à 16,5 m de la ligne de but, le point de penalty est à 11 m.",
+      "Le rond central a 9,15 m de rayon et le but mesure 7,32 m de large sur 2,44 m de haut."
+     ],
+     "q": "Dans quelle zone du terrain aimerais-tu le plus jouer, et pourquoi ?",
+     "c": "La prochaine fois que tu vois un terrain, nomme chaque ligne et chaque zone."
+    },
+    "it": {
+     "t": "Il campo spiegato",
+     "g": "Conosci le linee e le zone che disegnano ogni campo da calcio.",
+     "p": [
+      "I lati lunghi sono le linee laterali, quelli corti con le porte sono le linee di porta.",
+      "L'area di rigore arriva a 16,5 m dalla linea di porta, il dischetto è a 11 m.",
+      "Il cerchio di centrocampo ha 9,15 m di raggio, la porta è larga 7,32 m e alta 2,44 m."
+     ],
+     "q": "In quale zona del campo ti piacerebbe di più giocare, e perché?",
+     "c": "La prossima volta che vedi un campo, prova a nominare ogni linea e zona."
+    },
+    "pt": {
+     "t": "O campo explicado",
+     "g": "Conhece as linhas e zonas que desenham qualquer campo de futebol.",
+     "p": [
+      "Os lados compridos são as linhas laterais; os curtos, com as balizas, são as linhas de baliza.",
+      "A grande área vai até 16,5 m da linha de baliza e a marca de penálti fica a 11 m.",
+      "O círculo central tem 9,15 m de raio e a baliza mede 7,32 m de largura e 2,44 m de altura."
+     ],
+     "q": "Em que zona do campo gostavas mais de jogar, e porquê?",
+     "c": "Da próxima vez que vires um campo, tenta dizer o nome de cada linha e zona."
+    },
+    "pt_BR": {
+     "t": "O campo explicado",
+     "g": "Conheça as linhas e áreas que desenham qualquer campo de futebol.",
+     "p": [
+      "Os lados compridos são as linhas laterais; os curtos, com os gols, são as linhas de fundo.",
+      "A grande área vai até 16,5 m da linha de fundo e a marca do pênalti fica a 11 m.",
+      "O círculo central tem 9,15 m de raio e o gol mede 7,32 m de largura e 2,44 m de altura."
+     ],
+     "q": "Em que parte do campo você mais gostaria de jogar, e por quê?",
+     "c": "Da próxima vez que vir um campo, tente dizer o nome de cada linha e área."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Match length and halves",
+     "g": "Understand how long a match lasts and where the extra minutes come from.",
+     "p": [
+      "A match has two halves of 45 minutes, so 90 minutes of play in total.",
+      "The half-time break may last up to 15 minutes, and the teams swap ends afterwards.",
+      "The referee adds time at the end of each half for goals, injuries, substitutions and delays."
+     ],
+     "q": "Do you prefer watching a full match or just the highlights?",
+     "c": "Watch the end of any half and note how much added time is shown."
+    },
+    "de": {
+     "t": "Spieldauer und Halbzeiten",
+     "g": "Verstehe, wie lange ein Spiel dauert und woher die Nachspielzeit kommt.",
+     "p": [
+      "Ein Spiel hat zwei Halbzeiten zu je 45 Minuten, also insgesamt 90 Minuten.",
+      "Die Halbzeitpause dauert höchstens 15 Minuten, danach wechseln die Teams die Seiten.",
+      "Für Tore, Verletzungen, Wechsel und Verzögerungen gibt es Nachspielzeit."
+     ],
+     "q": "Schaust du lieber ein ganzes Spiel oder nur die Highlights?",
+     "c": "Achte am Ende einer Halbzeit darauf, wie viel Nachspielzeit angezeigt wird."
+    },
+    "es": {
+     "t": "Duración y tiempos del partido",
+     "g": "Entiende cuánto dura un partido y de dónde salen los minutos de más.",
+     "p": [
+      "Un partido tiene dos tiempos de 45 minutos, es decir, 90 minutos de juego.",
+      "El descanso puede durar hasta 15 minutos y después los equipos cambian de campo.",
+      "El árbitro añade tiempo al final de cada parte por goles, lesiones, cambios y pérdidas de tiempo."
+     ],
+     "q": "¿Prefieres ver un partido completo o solo el resumen?",
+     "c": "Mira el final de una parte y apunta cuánto tiempo añadido se anuncia."
+    },
+    "fr": {
+     "t": "Durée du match et mi-temps",
+     "g": "Comprends combien de temps dure un match et d'où viennent les minutes en plus.",
+     "p": [
+      "Un match compte deux mi-temps de 45 minutes, soit 90 minutes de jeu.",
+      "La pause de la mi-temps dure 15 minutes au maximum, puis les équipes changent de côté.",
+      "L'arbitre ajoute du temps additionnel pour les buts, blessures, remplacements et pertes de temps."
+     ],
+     "q": "Tu préfères regarder un match entier ou juste les résumés ?",
+     "c": "Regarde la fin d'une mi-temps et note le temps additionnel annoncé."
+    },
+    "it": {
+     "t": "Durata e tempi della partita",
+     "g": "Capisci quanto dura una partita e da dove arrivano i minuti in più.",
+     "p": [
+      "Una partita ha due tempi da 45 minuti, cioè 90 minuti di gioco.",
+      "L'intervallo dura al massimo 15 minuti, poi le squadre cambiano metà campo.",
+      "L'arbitro concede recupero per gol, infortuni, sostituzioni e perdite di tempo."
+     ],
+     "q": "Preferisci guardare una partita intera o solo gli highlights?",
+     "c": "Guarda la fine di un tempo e annota quanti minuti di recupero vengono dati."
+    },
+    "pt": {
+     "t": "Duração e partes do jogo",
+     "g": "Percebe quanto tempo dura um jogo e de onde vêm os minutos extra.",
+     "p": [
+      "Um jogo tem duas partes de 45 minutos, ou seja, 90 minutos de jogo.",
+      "O intervalo pode durar até 15 minutos e depois as equipas trocam de campo.",
+      "O árbitro dá tempo de compensação por golos, lesões, substituições e atrasos."
+     ],
+     "q": "Preferes ver um jogo inteiro ou só o resumo?",
+     "c": "Vê o fim de uma parte e repara em quanto tempo de compensação é dado."
+    },
+    "pt_BR": {
+     "t": "Duração e tempos da partida",
+     "g": "Entenda quanto tempo dura uma partida e de onde vêm os minutos a mais.",
+     "p": [
+      "Uma partida tem dois tempos de 45 minutos, ou seja, 90 minutos de jogo.",
+      "O intervalo pode durar até 15 minutos, e depois os times trocam de lado.",
+      "O árbitro dá acréscimos no fim de cada tempo por gols, lesões, substituições e cera."
+     ],
+     "q": "Você prefere assistir ao jogo inteiro ou só aos melhores momentos?",
+     "c": "Veja o fim de um tempo e anote quantos minutos de acréscimo foram dados."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Positions overview",
+     "g": "Meet the four main groups of players and what each one does.",
+     "p": [
+      "Goalkeepers protect the goal and are the last line of defence.",
+      "Defenders stop attacks, midfielders link the team and forwards try to score.",
+      "Teams arrange these groups in formations such as 4-4-2 or 4-3-3, counted from the back."
+     ],
+     "q": "Which position do you think suits your personality best?",
+     "c": "Pick one position and spot what that player does during a match clip."
+    },
+    "de": {
+     "t": "Die Positionen im Überblick",
+     "g": "Lerne die vier Spielergruppen kennen und was jede von ihnen macht.",
+     "p": [
+      "Torhüter schützen das Tor und sind die letzte Verteidigungslinie.",
+      "Verteidiger stoppen Angriffe, Mittelfeldspieler verbinden das Team, Stürmer schießen Tore.",
+      "Teams ordnen sie in Formationen wie 4-4-2 oder 4-3-3, gezählt von hinten nach vorn."
+     ],
+     "q": "Welche Position passt wohl am besten zu deiner Persönlichkeit?",
+     "c": "Wähle eine Position und beobachte in einem Spielausschnitt, was dieser Spieler tut."
+    },
+    "es": {
+     "t": "Las posiciones en resumen",
+     "g": "Conoce los cuatro grupos de jugadores y qué hace cada uno.",
+     "p": [
+      "Los porteros protegen la portería y son la última barrera de la defensa.",
+      "Los defensas frenan ataques, los centrocampistas unen al equipo y los delanteros buscan el gol.",
+      "Los equipos los ordenan en sistemas como 4-4-2 o 4-3-3, contados de atrás hacia delante."
+     ],
+     "q": "¿Qué posición crees que encaja mejor con tu personalidad?",
+     "c": "Elige una posición y observa qué hace ese jugador en un vídeo de un partido."
+    },
+    "fr": {
+     "t": "Les postes en bref",
+     "g": "Découvre les quatre grands groupes de joueurs et le rôle de chacun.",
+     "p": [
+      "Les gardiens protègent le but et sont le dernier rempart.",
+      "Les défenseurs stoppent les attaques, les milieux relient l'équipe et les attaquants marquent.",
+      "Les équipes les organisent en systèmes comme le 4-4-2 ou le 4-3-3, comptés de l'arrière."
+     ],
+     "q": "Quel poste correspond le mieux à ta personnalité, selon toi ?",
+     "c": "Choisis un poste et observe ce que fait ce joueur dans un extrait de match."
+    },
+    "it": {
+     "t": "I ruoli in breve",
+     "g": "Conosci i quattro gruppi di giocatori e cosa fa ciascuno.",
+     "p": [
+      "I portieri difendono la porta e sono l'ultimo baluardo della difesa.",
+      "I difensori fermano gli attacchi, i centrocampisti collegano la squadra, gli attaccanti segnano.",
+      "Le squadre li dispongono in moduli come 4-4-2 o 4-3-3, contati dalla difesa in avanti."
+     ],
+     "q": "Quale ruolo secondo te si adatta meglio al tuo carattere?",
+     "c": "Scegli un ruolo e osserva cosa fa quel giocatore in un video di una partita."
+    },
+    "pt": {
+     "t": "As posições em resumo",
+     "g": "Conhece os quatro grupos de jogadores e o que cada um faz.",
+     "p": [
+      "Os guarda-redes protegem a baliza e são a última barreira da defesa.",
+      "Os defesas travam ataques, os médios ligam a equipa e os avançados procuram o golo.",
+      "As equipas organizam-se em sistemas como 4-4-2 ou 4-3-3, contados de trás para a frente."
+     ],
+     "q": "Que posição achas que combina mais com a tua personalidade?",
+     "c": "Escolhe uma posição e observa o que esse jogador faz num vídeo de um jogo."
+    },
+    "pt_BR": {
+     "t": "As posições em resumo",
+     "g": "Conheça os quatro grupos de jogadores e o que cada um faz.",
+     "p": [
+      "Os goleiros protegem o gol e são a última barreira da defesa.",
+      "Os zagueiros e laterais seguram ataques, os meias ligam o time e os atacantes buscam o gol.",
+      "Os times se organizam em esquemas como 4-4-2 ou 4-3-3, contados de trás para frente."
+     ],
+     "q": "Qual posição você acha que combina mais com a sua personalidade?",
+     "c": "Escolha uma posição e observe o que esse jogador faz num vídeo de partida."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The goalkeeper",
+     "g": "Learn why the goalkeeper is the most special player on the pitch.",
+     "p": [
+      "The goalkeeper is the only player who may handle the ball, but only inside their own penalty area.",
+      "They may not pick up a deliberate pass kicked to them by a teammate, nor a teammate's throw-in.",
+      "Keepers wear different colours so the referee can tell them apart from everyone else."
+     ],
+     "q": "Would you enjoy the pressure of being the last line of defence?",
+     "c": "Watch a save in a match clip and notice where the keeper stood before it."
+    },
+    "de": {
+     "t": "Der Torwart",
+     "g": "Erfahre, warum der Torwart der besondere Spieler auf dem Platz ist.",
+     "p": [
+      "Nur der Torwart darf den Ball mit der Hand spielen, und nur im eigenen Strafraum.",
+      "Einen absichtlich zugespielten Rückpass mit dem Fuß oder einen Einwurf darf er nicht aufnehmen.",
+      "Torhüter tragen andere Farben, damit der Schiedsrichter sie klar unterscheiden kann."
+     ],
+     "q": "Würde dir der Druck gefallen, die letzte Linie der Abwehr zu sein?",
+     "c": "Schau dir eine Parade an und achte darauf, wo der Torwart vorher stand."
+    },
+    "es": {
+     "t": "El portero",
+     "g": "Descubre por qué el portero es el jugador más especial del campo.",
+     "p": [
+      "Es el único que puede tocar el balón con las manos, y solo dentro de su propia área.",
+      "No puede coger con las manos una cesión con el pie de un compañero ni un saque de banda suyo.",
+      "Los porteros visten de otro color para que el árbitro los distinga del resto."
+     ],
+     "q": "¿Te gustaría sentir la presión de ser la última barrera?",
+     "c": "Mira una parada en un vídeo y fíjate dónde estaba colocado el portero antes."
+    },
+    "fr": {
+     "t": "Le gardien de but",
+     "g": "Découvre pourquoi le gardien est le joueur le plus à part sur le terrain.",
+     "p": [
+      "C'est le seul qui peut jouer le ballon à la main, et seulement dans sa surface de réparation.",
+      "Il ne peut pas prendre à la main une passe en retrait du pied d'un coéquipier ni sa touche.",
+      "Les gardiens portent une couleur différente pour que l'arbitre les distingue des autres."
+     ],
+     "q": "Aimerais-tu la pression d'être le dernier rempart ?",
+     "c": "Regarde un arrêt en vidéo et observe où se trouvait le gardien juste avant."
+    },
+    "it": {
+     "t": "Il portiere",
+     "g": "Scopri perché il portiere è il giocatore più speciale in campo.",
+     "p": [
+      "È l'unico che può toccare il pallone con le mani, e solo nella propria area di rigore.",
+      "Non può prendere con le mani un retropassaggio di piede di un compagno né una sua rimessa.",
+      "I portieri vestono colori diversi così l'arbitro li distingue da tutti gli altri."
+     ],
+     "q": "Ti piacerebbe la pressione di essere l'ultimo baluardo?",
+     "c": "Guarda una parata in un video e nota dove si trovava il portiere prima del tiro."
+    },
+    "pt": {
+     "t": "O guarda-redes",
+     "g": "Descobre porque é que o guarda-redes é o jogador mais especial em campo.",
+     "p": [
+      "É o único que pode jogar a bola com as mãos, e só dentro da sua grande área.",
+      "Não pode agarrar um atraso feito com o pé por um colega, nem um lançamento lateral de um colega.",
+      "Os guarda-redes usam cores diferentes para o árbitro os distinguir de todos os outros."
+     ],
+     "q": "Gostavas da pressão de ser a última barreira da equipa?",
+     "c": "Vê uma defesa num vídeo e repara onde estava o guarda-redes antes do remate."
+    },
+    "pt_BR": {
+     "t": "O goleiro",
+     "g": "Descubra por que o goleiro é o jogador mais especial em campo.",
+     "p": [
+      "É o único que pode pegar a bola com as mãos, e só dentro da própria grande área.",
+      "Ele não pode pegar com as mãos um recuo com o pé de um companheiro nem um lateral dele.",
+      "Os goleiros usam cores diferentes para o árbitro distingui-los de todos os outros."
+     ],
+     "q": "Você gostaria da pressão de ser a última barreira do time?",
+     "c": "Veja uma defesa num vídeo e repare onde o goleiro estava antes do chute."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The defenders",
+     "g": "See what centre-backs and full-backs do to protect their team.",
+     "p": [
+      "Centre-backs play in the middle, block shots, win headers and stop the opposing striker.",
+      "Full-backs play on the sides, defend against wingers and often run forward to cross.",
+      "Good defenders read the game early, so they win the ball before danger appears."
+     ],
+     "q": "Do you think a great tackle can be as exciting as a goal?",
+     "c": "In a match clip, follow one defender for two minutes and see how they move."
+    },
+    "de": {
+     "t": "Die Verteidiger",
+     "g": "Sieh, was Innenverteidiger und Außenverteidiger für ihr Team leisten.",
+     "p": [
+      "Innenverteidiger spielen zentral, blocken Schüsse, gewinnen Kopfbälle und stoppen den Stürmer.",
+      "Außenverteidiger spielen am Flügel, verteidigen gegen Flügelspieler und flanken oft selbst.",
+      "Gute Verteidiger lesen das Spiel früh und erobern den Ball, bevor es gefährlich wird."
+     ],
+     "q": "Kann ein starkes Tackling für dich so spannend sein wie ein Tor?",
+     "c": "Verfolge in einem Spielausschnitt zwei Minuten lang nur einen Verteidiger."
+    },
+    "es": {
+     "t": "Los defensas",
+     "g": "Descubre qué hacen los centrales y los laterales para proteger a su equipo.",
+     "p": [
+      "Los centrales juegan por el medio, bloquean tiros, ganan balones aéreos y frenan al delantero.",
+      "Los laterales juegan por las bandas, defienden a los extremos y suben a menudo a centrar.",
+      "Un buen defensa lee el juego antes y recupera el balón antes de que llegue el peligro."
+     ],
+     "q": "¿Crees que una gran entrada puede emocionar tanto como un gol?",
+     "c": "En un vídeo de un partido, sigue a un defensa durante dos minutos."
+    },
+    "fr": {
+     "t": "Les défenseurs",
+     "g": "Découvre ce que font les défenseurs centraux et les latéraux pour protéger l'équipe.",
+     "p": [
+      "Les centraux jouent dans l'axe, contrent les tirs, gagnent les duels aériens et gênent l'avant-centre.",
+      "Les latéraux jouent sur les côtés, défendent face aux ailiers et montent souvent centrer.",
+      "Un bon défenseur lit le jeu tôt et récupère le ballon avant que le danger n'arrive."
+     ],
+     "q": "Penses-tu qu'un beau tacle peut être aussi excitant qu'un but ?",
+     "c": "Dans un extrait de match, suis un seul défenseur pendant deux minutes."
+    },
+    "it": {
+     "t": "I difensori",
+     "g": "Scopri cosa fanno centrali e terzini per proteggere la squadra.",
+     "p": [
+      "I centrali giocano al centro, respingono tiri, vincono i colpi di testa e fermano il centravanti.",
+      "I terzini giocano sulle fasce, marcano le ali e spesso salgono per crossare.",
+      "Un buon difensore legge il gioco in anticipo e recupera palla prima del pericolo."
+     ],
+     "q": "Secondo te un grande intervento può emozionare quanto un gol?",
+     "c": "In un video di una partita, segui un solo difensore per due minuti."
+    },
+    "pt": {
+     "t": "Os defesas",
+     "g": "Descobre o que fazem os centrais e os laterais para proteger a equipa.",
+     "p": [
+      "Os centrais jogam no meio, cortam remates, ganham bolas de cabeça e travam o ponta de lança.",
+      "Os laterais jogam nas alas, defendem os extremos e sobem muitas vezes para cruzar.",
+      "Um bom defesa lê o jogo cedo e recupera a bola antes de surgir o perigo."
+     ],
+     "q": "Achas que um grande corte pode ser tão empolgante como um golo?",
+     "c": "Num vídeo de um jogo, segue só um defesa durante dois minutos."
+    },
+    "pt_BR": {
+     "t": "Os defensores",
+     "g": "Descubra o que zagueiros e laterais fazem para proteger o time.",
+     "p": [
+      "Os zagueiros jogam pelo meio, bloqueiam chutes, ganham bolas aéreas e marcam o centroavante.",
+      "Os laterais jogam pelos lados, marcam os pontas e sobem muitas vezes para cruzar.",
+      "Um bom defensor lê o jogo cedo e rouba a bola antes de o perigo aparecer."
+     ],
+     "q": "Você acha que um belo desarme pode empolgar tanto quanto um gol?",
+     "c": "Num vídeo de jogo, acompanhe só um defensor durante dois minutos."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The midfielders",
+     "g": "Discover how midfielders link defence and attack.",
+     "p": [
+      "Defensive midfielders shield the back line and win the ball back.",
+      "Central midfielders keep possession moving with short and long passes.",
+      "Attacking midfielders, often wearing number 10, create chances for the forwards."
+     ],
+     "q": "What kind of midfielder would you be: ball winner, passer or creator?",
+     "c": "Count how many passes one midfielder makes in five minutes of a match."
+    },
+    "de": {
+     "t": "Die Mittelfeldspieler",
+     "g": "Entdecke, wie das Mittelfeld Abwehr und Angriff verbindet.",
+     "p": [
+      "Defensive Mittelfeldspieler schirmen die Abwehr ab und erobern den Ball zurück.",
+      "Zentrale Mittelfeldspieler halten den Ball mit kurzen und langen Pässen in Bewegung.",
+      "Offensive Mittelfeldspieler, oft mit der Nummer 10, bereiten Chancen für die Stürmer vor."
+     ],
+     "q": "Welcher Typ wärst du: Balleroberer, Passgeber oder Spielmacher?",
+     "c": "Zähl, wie viele Pässe ein Mittelfeldspieler in fünf Spielminuten spielt."
+    },
+    "es": {
+     "t": "Los centrocampistas",
+     "g": "Descubre cómo el centro del campo une defensa y ataque.",
+     "p": [
+      "El mediocentro defensivo protege a la defensa y recupera balones.",
+      "Los interiores mueven la posesión con pases cortos y largos.",
+      "El mediapunta, a menudo con el 10, crea ocasiones para los delanteros."
+     ],
+     "q": "¿Qué tipo de centrocampista serías: recuperador, pasador o creativo?",
+     "c": "Cuenta cuántos pases da un centrocampista en cinco minutos de partido."
+    },
+    "fr": {
+     "t": "Les milieux de terrain",
+     "g": "Découvre comment les milieux relient la défense et l'attaque.",
+     "p": [
+      "Le milieu défensif protège la défense et récupère des ballons.",
+      "Les milieux centraux font circuler le ballon avec des passes courtes et longues.",
+      "Le meneur de jeu, souvent numéro 10, crée des occasions pour les attaquants."
+     ],
+     "q": "Quel milieu serais-tu : récupérateur, passeur ou créateur ?",
+     "c": "Compte combien de passes fait un milieu en cinq minutes de match."
+    },
+    "it": {
+     "t": "I centrocampisti",
+     "g": "Scopri come il centrocampo collega difesa e attacco.",
+     "p": [
+      "Il mediano protegge la difesa e recupera palloni.",
+      "Le mezzali e i registi fanno girare palla con passaggi corti e lunghi.",
+      "Il trequartista, spesso con il 10, crea occasioni per gli attaccanti."
+     ],
+     "q": "Che centrocampista saresti: incontrista, regista o fantasista?",
+     "c": "Conta quanti passaggi fa un centrocampista in cinque minuti di partita."
+    },
+    "pt": {
+     "t": "Os médios",
+     "g": "Descobre como o meio-campo liga a defesa ao ataque.",
+     "p": [
+      "O médio defensivo protege a defesa e recupera bolas.",
+      "Os médios centro fazem circular a bola com passes curtos e longos.",
+      "O médio ofensivo, muitas vezes com o 10, cria oportunidades para os avançados."
+     ],
+     "q": "Que tipo de médio serias: recuperador, passador ou criativo?",
+     "c": "Conta quantos passes um médio faz em cinco minutos de jogo."
+    },
+    "pt_BR": {
+     "t": "Os meio-campistas",
+     "g": "Descubra como o meio-campo liga a defesa ao ataque.",
+     "p": [
+      "O volante protege a defesa e recupera bolas.",
+      "Os meias centrais fazem a bola girar com passes curtos e longos.",
+      "O meia-armador, muitas vezes camisa 10, cria chances para os atacantes."
+     ],
+     "q": "Que tipo de meio-campista você seria: marcador, passador ou criativo?",
+     "c": "Conte quantos passes um meio-campista dá em cinco minutos de jogo."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The forwards",
+     "g": "Meet the strikers and wingers whose main job is to create chances and score.",
+     "p": [
+      "A striker, often wearing number 9, plays closest to goal and finishes chances.",
+      "Wingers attack down the sides, beat defenders and cross or cut inside to shoot.",
+      "Great forwards make clever runs without the ball to find space."
+     ],
+     "q": "Who is a forward, past or present, you love to watch?",
+     "c": "Watch a goal replay and notice the run the scorer made before the shot."
+    },
+    "de": {
+     "t": "Die Stürmer",
+     "g": "Lerne Mittelstürmer und Flügelspieler kennen, die Chancen kreieren und Tore schießen.",
+     "p": [
+      "Der Mittelstürmer, oft mit der Nummer 9, spielt am nächsten zum Tor und verwertet Chancen.",
+      "Flügelspieler greifen außen an, umspielen Gegner und flanken oder ziehen nach innen.",
+      "Gute Stürmer laufen sich ohne Ball clever frei und finden Räume."
+     ],
+     "q": "Welchen Stürmer, früher oder heute, schaust du besonders gern?",
+     "c": "Schau dir eine Torwiederholung an und achte auf den Laufweg des Torschützen."
+    },
+    "es": {
+     "t": "Los delanteros",
+     "g": "Conoce a los delanteros y extremos, cuyo trabajo es crear ocasiones y marcar.",
+     "p": [
+      "El delantero centro, a menudo con el 9, juega más cerca del gol y remata las ocasiones.",
+      "Los extremos atacan por las bandas, regatean y centran o se van hacia dentro a tirar.",
+      "Los grandes delanteros hacen desmarques inteligentes sin balón para encontrar espacio."
+     ],
+     "q": "¿Qué delantero, de antes o de ahora, te encanta ver jugar?",
+     "c": "Mira la repetición de un gol y fíjate en el desmarque del goleador."
+    },
+    "fr": {
+     "t": "Les attaquants",
+     "g": "Découvre les avant-centres et les ailiers, chargés de créer des occasions et de marquer.",
+     "p": [
+      "L'avant-centre, souvent numéro 9, joue près du but et conclut les actions.",
+      "Les ailiers attaquent sur les côtés, dribblent puis centrent ou repiquent pour frapper.",
+      "Les grands attaquants font des appels malins sans ballon pour trouver de l'espace."
+     ],
+     "q": "Quel attaquant, d'hier ou d'aujourd'hui, adores-tu regarder ?",
+     "c": "Regarde le ralenti d'un but et observe l'appel du buteur avant la frappe."
+    },
+    "it": {
+     "t": "Gli attaccanti",
+     "g": "Conosci centravanti e ali, il cui compito è creare occasioni e segnare.",
+     "p": [
+      "Il centravanti, spesso con il 9, gioca vicino alla porta e finalizza le azioni.",
+      "Le ali attaccano sulle fasce, saltano l'uomo e crossano o rientrano per tirare.",
+      "I grandi attaccanti fanno movimenti intelligenti senza palla per trovare spazio."
+     ],
+     "q": "Quale attaccante, di ieri o di oggi, ami guardare?",
+     "c": "Guarda il replay di un gol e nota il movimento del marcatore prima del tiro."
+    },
+    "pt": {
+     "t": "Os avançados",
+     "g": "Conhece os pontas de lança e os extremos, que criam oportunidades e marcam golos.",
+     "p": [
+      "O ponta de lança, muitas vezes com o 9, joga mais perto da baliza e finaliza.",
+      "Os extremos atacam pelas alas, fintam e cruzam ou flectem para dentro para rematar.",
+      "Os grandes avançados fazem desmarcações inteligentes sem bola para ganhar espaço."
+     ],
+     "q": "Que avançado, de antes ou de agora, adoras ver jogar?",
+     "c": "Vê a repetição de um golo e repara na desmarcação do marcador antes do remate."
+    },
+    "pt_BR": {
+     "t": "Os atacantes",
+     "g": "Conheça os centroavantes e pontas, que criam chances e fazem gols.",
+     "p": [
+      "O centroavante, muitas vezes camisa 9, joga mais perto do gol e finaliza as jogadas.",
+      "Os pontas atacam pelos lados, driblam e cruzam ou cortam para dentro para chutar.",
+      "Os grandes atacantes se movimentam sem a bola de forma inteligente para achar espaço."
+     ],
+     "q": "Qual atacante, de antes ou de agora, você adora ver jogar?",
+     "c": "Veja o replay de um gol e repare na movimentação do artilheiro antes do chute."
+    }
+   }
+  }
+ ]
+}

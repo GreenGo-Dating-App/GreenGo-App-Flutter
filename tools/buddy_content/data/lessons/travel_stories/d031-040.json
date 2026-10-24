@@ -1,0 +1,835 @@
+{
+ "topic": "travel_stories",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The hook: starting strong",
+     "g": "Learn opening lines that make people want to hear more.",
+     "p": [
+      "Start in the middle of the action: The bus stopped in the middle of nowhere.",
+      "Or open with a surprise or a question: Have you ever eaten breakfast with a goat?",
+      "Skip long warm-ups like dates and flight numbers."
+     ],
+     "q": "What could be a strong opening line for your favourite travel story?",
+     "c": "Write three different hooks for the same travel story and pick the best one."
+    },
+    "de": {
+     "t": "Der Haken: stark anfangen",
+     "g": "Lerne Einstiegssätze, bei denen man unbedingt mehr hören will.",
+     "p": [
+      "Beginn mitten im Geschehen: Der Bus hielt mitten im Nirgendwo.",
+      "Oder mit einer Überraschung oder Frage: Hast du schon mal mit einer Ziege gefrühstückt?",
+      "Lass lange Vorreden wie Daten und Flugnummern weg."
+     ],
+     "q": "Was wäre ein starker erster Satz für deine Lieblingsreisegeschichte?",
+     "c": "Schreib drei verschiedene Einstiege für dieselbe Geschichte und wähle den besten."
+    },
+    "es": {
+     "t": "El gancho: empezar fuerte",
+     "g": "Aprende frases iniciales que den ganas de escuchar más.",
+     "p": [
+      "Empieza en plena acción: El autobús se paró en medio de la nada.",
+      "O abre con una sorpresa o una pregunta: ¿Alguna vez has desayunado con una cabra?",
+      "Evita introducciones largas con fechas y números de vuelo."
+     ],
+     "q": "¿Cuál podría ser una buena primera frase para tu historia de viaje favorita?",
+     "c": "Escribe tres ganchos distintos para la misma historia y elige el mejor."
+    },
+    "fr": {
+     "t": "L'accroche : bien commencer",
+     "g": "Apprends des premières phrases qui donnent envie d'en savoir plus.",
+     "p": [
+      "Commence en pleine action : Le bus s'est arrêté au milieu de nulle part.",
+      "Ou ouvre sur une surprise ou une question : As-tu déjà pris ton petit-déjeuner avec une chèvre ?",
+      "Évite les longues introductions avec dates et numéros de vol."
+     ],
+     "q": "Quelle pourrait être une première phrase forte pour ton récit de voyage préféré ?",
+     "c": "Écris trois accroches différentes pour la même histoire et choisis la meilleure."
+    },
+    "it": {
+     "t": "L'aggancio: partire forte",
+     "g": "Impara frasi d'apertura che fanno venire voglia di ascoltare il resto.",
+     "p": [
+      "Comincia nel mezzo dell'azione: L'autobus si fermò in mezzo al nulla.",
+      "Oppure apri con una sorpresa o una domanda: Hai mai fatto colazione con una capra?",
+      "Evita lunghi preamboli con date e numeri di volo."
+     ],
+     "q": "Quale potrebbe essere una frase d'apertura forte per la tua storia di viaggio preferita?",
+     "c": "Scrivi tre agganci diversi per la stessa storia e scegli il migliore."
+    },
+    "pt": {
+     "t": "O gancho: começar em força",
+     "g": "Aprende frases de abertura que dão vontade de ouvir mais.",
+     "p": [
+      "Começa a meio da ação: O autocarro parou no meio do nada.",
+      "Ou abre com uma surpresa ou uma pergunta: Já tomaste o pequeno-almoço com uma cabra?",
+      "Evita introduções longas com datas e números de voo."
+     ],
+     "q": "Qual podia ser uma boa frase de abertura para a tua história de viagem preferida?",
+     "c": "Escreve três ganchos diferentes para a mesma história e escolhe o melhor."
+    },
+    "pt_BR": {
+     "t": "O gancho: começando com força",
+     "g": "Aprenda frases de abertura que dão vontade de ouvir mais.",
+     "p": [
+      "Comece no meio da ação: O ônibus parou no meio do nada.",
+      "Ou abra com uma surpresa ou pergunta: Você já tomou café da manhã com uma cabra?",
+      "Evite introduções longas com datas e números de voo."
+     ],
+     "q": "Qual poderia ser uma boa frase de abertura para sua história de viagem favorita?",
+     "c": "Escreva três ganchos diferentes para a mesma história e escolha o melhor."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting the scene quickly",
+     "g": "Give time, place and mood in just one or two sentences.",
+     "p": [
+      "Time: early morning, the last day, a rainy Sunday.",
+      "Place: one strong image instead of a full description.",
+      "Mood: one word or detail tells it all: sleepy, buzzing, tense."
+     ],
+     "q": "How would you set the scene of a trip memory in one sentence?",
+     "c": "Write one sentence that gives the time, place and mood of a travel moment."
+    },
+    "de": {
+     "t": "Die Szene schnell aufbauen",
+     "g": "Gib Zeit, Ort und Stimmung in nur ein oder zwei Sätzen wieder.",
+     "p": [
+      "Zeit: früher Morgen, der letzte Tag, ein verregneter Sonntag.",
+      "Ort: ein starkes Bild statt einer ganzen Beschreibung.",
+      "Stimmung: Ein Wort oder Detail sagt alles: verschlafen, quirlig, angespannt."
+     ],
+     "q": "Wie würdest du die Szene einer Reiseerinnerung in einem Satz aufbauen?",
+     "c": "Schreib einen Satz mit Zeit, Ort und Stimmung eines Reisemoments."
+    },
+    "es": {
+     "t": "Situar la escena rápido",
+     "g": "Da el momento, el lugar y el ambiente en solo una o dos frases.",
+     "p": [
+      "Momento: de madrugada, el último día, un domingo lluvioso.",
+      "Lugar: una imagen potente en vez de una descripción completa.",
+      "Ambiente: una palabra o un detalle lo dice todo: adormilado, animado, tenso."
+     ],
+     "q": "¿Cómo situarías la escena de un recuerdo de viaje en una frase?",
+     "c": "Escribe una frase que dé el momento, el lugar y el ambiente de un viaje."
+    },
+    "fr": {
+     "t": "Planter le décor rapidement",
+     "g": "Donne le moment, le lieu et l'ambiance en une ou deux phrases.",
+     "p": [
+      "Le moment : tôt le matin, le dernier jour, un dimanche pluvieux.",
+      "Le lieu : une image forte plutôt qu'une description complète.",
+      "L'ambiance : un mot ou un détail suffit : endormi, animé, tendu."
+     ],
+     "q": "Comment planterais-tu le décor d'un souvenir de voyage en une phrase ?",
+     "c": "Écris une phrase qui donne le moment, le lieu et l'ambiance d'un moment de voyage."
+    },
+    "it": {
+     "t": "Creare la scena in fretta",
+     "g": "Dai momento, luogo e atmosfera in una o due frasi.",
+     "p": [
+      "Momento: all'alba, l'ultimo giorno, una domenica piovosa.",
+      "Luogo: un'immagine forte invece di una descrizione completa.",
+      "Atmosfera: una parola o un dettaglio dice tutto: assonnato, vivace, teso."
+     ],
+     "q": "Come creeresti la scena di un ricordo di viaggio in una frase?",
+     "c": "Scrivi una frase che dia momento, luogo e atmosfera di un momento di viaggio."
+    },
+    "pt": {
+     "t": "Montar a cena depressa",
+     "g": "Dá o momento, o lugar e o ambiente em apenas uma ou duas frases.",
+     "p": [
+      "Momento: de madrugada, o último dia, um domingo de chuva.",
+      "Lugar: uma imagem forte em vez de uma descrição completa.",
+      "Ambiente: uma palavra ou pormenor diz tudo: sonolento, animado, tenso."
+     ],
+     "q": "Como montarias a cena de uma memória de viagem numa frase?",
+     "c": "Escreve uma frase com o momento, o lugar e o ambiente de um momento de viagem."
+    },
+    "pt_BR": {
+     "t": "Montando a cena rápido",
+     "g": "Mostre o momento, o lugar e o clima em apenas uma ou duas frases.",
+     "p": [
+      "Momento: de madrugada, o último dia, um domingo chuvoso.",
+      "Lugar: uma imagem forte em vez de uma descrição completa.",
+      "Clima: uma palavra ou detalhe diz tudo: sonolento, agitado, tenso."
+     ],
+     "q": "Como você montaria a cena de uma lembrança de viagem em uma frase?",
+     "c": "Escreva uma frase com o momento, o lugar e o clima de um momento de viagem."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Characters on the road",
+     "g": "Describe people you met so they feel real to the listener.",
+     "p": [
+      "Choose one visible detail and one habit: a red scarf, always humming.",
+      "Let them do something rather than listing adjectives.",
+      "Kind, respectful descriptions make listeners like your characters."
+     ],
+     "q": "Who is the most memorable person you met while travelling?",
+     "c": "Describe someone you met on a trip using one detail and one action."
+    },
+    "de": {
+     "t": "Figuren unterwegs",
+     "g": "Beschreib Menschen, die du getroffen hast, so, dass sie für Zuhörer echt wirken.",
+     "p": [
+      "Wähle ein sichtbares Detail und eine Angewohnheit: ein roter Schal, summt ständig.",
+      "Lass sie etwas tun, statt Adjektive aufzuzählen.",
+      "Freundliche, respektvolle Beschreibungen machen deine Figuren sympathisch."
+     ],
+     "q": "Wer ist der denkwürdigste Mensch, den du auf Reisen getroffen hast?",
+     "c": "Beschreib jemanden von einer Reise mit einem Detail und einer Handlung."
+    },
+    "es": {
+     "t": "Personajes en el camino",
+     "g": "Describe a la gente que conociste para que parezca real a quien escucha.",
+     "p": [
+      "Elige un detalle visible y una costumbre: un pañuelo rojo, siempre tarareando.",
+      "Haz que hagan algo en vez de enumerar adjetivos.",
+      "Las descripciones amables y respetuosas hacen que tus personajes caigan bien."
+     ],
+     "q": "¿Quién es la persona más memorable que conociste viajando?",
+     "c": "Describe a alguien de un viaje con un detalle y una acción."
+    },
+    "fr": {
+     "t": "Les personnages de la route",
+     "g": "Décris les gens rencontrés pour qu'ils paraissent réels à ton auditoire.",
+     "p": [
+      "Choisis un détail visible et une habitude : une écharpe rouge, fredonne sans arrêt.",
+      "Fais-les agir plutôt que d'aligner des adjectifs.",
+      "Des descriptions gentilles et respectueuses rendent tes personnages attachants."
+     ],
+     "q": "Qui est la personne la plus mémorable rencontrée en voyage ?",
+     "c": "Décris quelqu'un rencontré en voyage avec un détail et une action."
+    },
+    "it": {
+     "t": "Personaggi lungo la strada",
+     "g": "Descrivi le persone incontrate in modo che sembrino reali a chi ascolta.",
+     "p": [
+      "Scegli un dettaglio visibile e un'abitudine: una sciarpa rossa, canticchia sempre.",
+      "Falle agire invece di elencare aggettivi.",
+      "Descrizioni gentili e rispettose rendono simpatici i tuoi personaggi."
+     ],
+     "q": "Chi è la persona più memorabile che hai incontrato viaggiando?",
+     "c": "Descrivi qualcuno incontrato in viaggio con un dettaglio e un'azione."
+    },
+    "pt": {
+     "t": "Personagens pelo caminho",
+     "g": "Descreve as pessoas que conheceste para que pareçam reais a quem ouve.",
+     "p": [
+      "Escolhe um pormenor visível e um hábito: um lenço vermelho, sempre a cantarolar.",
+      "Põe-nas a fazer algo em vez de enumerar adjetivos.",
+      "Descrições simpáticas e respeitosas fazem gostar das tuas personagens."
+     ],
+     "q": "Quem é a pessoa mais memorável que conheceste a viajar?",
+     "c": "Descreve alguém de uma viagem com um pormenor e uma ação."
+    },
+    "pt_BR": {
+     "t": "Personagens pelo caminho",
+     "g": "Descreva as pessoas que você conheceu para que pareçam reais para quem ouve.",
+     "p": [
+      "Escolha um detalhe visível e um hábito: um lenço vermelho, sempre cantarolando.",
+      "Coloque a pessoa fazendo algo em vez de listar adjetivos.",
+      "Descrições gentis e respeitosas fazem as pessoas gostarem dos seus personagens."
+     ],
+     "q": "Quem é a pessoa mais marcante que você conheceu viajando?",
+     "c": "Descreva alguém de uma viagem com um detalhe e uma ação."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adding a little dialogue",
+     "g": "Quote one short line someone said to make the moment vivid.",
+     "p": [
+      "One real line beats a long summary: He just said, 'Follow me.'",
+      "Keep quotes short and natural, like people really speak.",
+      "You can say a phrase in the local language, then translate it."
+     ],
+     "q": "What is something a person said to you on a trip that you still remember?",
+     "c": "Retell a travel moment and include one short quoted line."
+    },
+    "de": {
+     "t": "Ein bisschen Dialog einbauen",
+     "g": "Zitier einen kurzen Satz, den jemand gesagt hat, um den Moment lebendig zu machen.",
+     "p": [
+      "Ein echter Satz schlägt eine lange Zusammenfassung: Er sagte nur: ‚Komm mit.‘",
+      "Halte Zitate kurz und natürlich, so wie Menschen wirklich sprechen.",
+      "Du kannst einen Satz in der Landessprache sagen und ihn dann übersetzen."
+     ],
+     "q": "Was hat dir jemand auf einer Reise gesagt, das du bis heute weißt?",
+     "c": "Erzähl einen Reisemoment mit einem kurzen wörtlichen Zitat."
+    },
+    "es": {
+     "t": "Añadir un poco de diálogo",
+     "g": "Cita una frase corta que alguien dijo para dar vida al momento.",
+     "p": [
+      "Una frase real gana a un largo resumen: Solo dijo: ‘Sígueme’.",
+      "Mantén las citas cortas y naturales, como habla la gente de verdad.",
+      "Puedes decir una frase en el idioma local y luego traducirla."
+     ],
+     "q": "¿Qué te dijo alguien en un viaje que todavía recuerdas?",
+     "c": "Vuelve a contar un momento de viaje e incluye una frase corta citada."
+    },
+    "fr": {
+     "t": "Ajouter un peu de dialogue",
+     "g": "Cite une courte phrase prononcée par quelqu'un pour rendre le moment vivant.",
+     "p": [
+      "Une vraie réplique vaut mieux qu'un long résumé : Il a juste dit : « Suivez-moi. »",
+      "Garde des citations courtes et naturelles, comme on parle vraiment.",
+      "Tu peux dire une phrase dans la langue locale, puis la traduire."
+     ],
+     "q": "Qu'est-ce que quelqu'un t'a dit en voyage et dont tu te souviens encore ?",
+     "c": "Raconte un moment de voyage en y glissant une courte réplique."
+    },
+    "it": {
+     "t": "Aggiungere un po' di dialogo",
+     "g": "Cita una breve frase detta da qualcuno per rendere vivo il momento.",
+     "p": [
+      "Una battuta vera batte un lungo riassunto: Disse solo: ‘Seguimi.’",
+      "Tieni le citazioni brevi e naturali, come parla davvero la gente.",
+      "Puoi dire una frase nella lingua del posto e poi tradurla."
+     ],
+     "q": "Cosa ti ha detto qualcuno in viaggio che ricordi ancora?",
+     "c": "Racconta un momento di viaggio inserendo una breve battuta citata."
+    },
+    "pt": {
+     "t": "Juntar um pouco de diálogo",
+     "g": "Cita uma frase curta que alguém disse para dar vida ao momento.",
+     "p": [
+      "Uma frase real vale mais do que um longo resumo: Ele só disse: ‘Venha comigo.’",
+      "Mantém as citações curtas e naturais, como as pessoas falam a sério.",
+      "Podes dizer uma frase na língua local e depois traduzi-la."
+     ],
+     "q": "O que te disse alguém numa viagem de que ainda te lembras?",
+     "c": "Volta a contar um momento de viagem e inclui uma frase curta citada."
+    },
+    "pt_BR": {
+     "t": "Colocando um pouco de diálogo",
+     "g": "Cite uma frase curta que alguém disse para dar vida ao momento.",
+     "p": [
+      "Uma fala real vale mais do que um longo resumo: Ele só disse: ‘Vem comigo.’",
+      "Mantenha as falas curtas e naturais, como as pessoas falam de verdade.",
+      "Você pode dizer uma frase no idioma local e depois traduzir."
+     ],
+     "q": "O que alguém disse para você em uma viagem que você ainda lembra?",
+     "c": "Conte de novo um momento de viagem e inclua uma fala curta citada."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Showing feelings, not naming them",
+     "g": "Let actions and details reveal how you felt instead of just saying it.",
+     "p": [
+      "Instead of 'I was nervous', try 'I checked my ticket five times'.",
+      "Instead of 'it was beautiful', try 'nobody on the boat said a word'.",
+      "Listeners enjoy guessing the feeling; it pulls them into the story."
+     ],
+     "q": "How would you show, not tell, that you were excited on a trip?",
+     "c": "Rewrite one sentence from your story so the feeling is shown through an action."
+    },
+    "de": {
+     "t": "Gefühle zeigen statt benennen",
+     "g": "Lass Handlungen und Details zeigen, wie du dich gefühlt hast, statt es nur zu sagen.",
+     "p": [
+      "Statt ‚Ich war nervös‘ lieber ‚Ich habe mein Ticket fünfmal kontrolliert‘.",
+      "Statt ‚Es war wunderschön‘ lieber ‚Auf dem Boot sagte niemand ein Wort‘.",
+      "Zuhörer erraten das Gefühl gern; das zieht sie in die Geschichte."
+     ],
+     "q": "Wie würdest du zeigen, statt zu sagen, dass du auf einer Reise aufgeregt warst?",
+     "c": "Schreib einen Satz deiner Geschichte um, damit das Gefühl durch eine Handlung sichtbar wird."
+    },
+    "es": {
+     "t": "Mostrar emociones sin nombrarlas",
+     "g": "Deja que las acciones y los detalles revelen cómo te sentías en vez de decirlo.",
+     "p": [
+      "En lugar de ‘estaba nervioso’, prueba ‘miré el billete cinco veces’.",
+      "En lugar de ‘era precioso’, prueba ‘nadie en el barco dijo ni una palabra’.",
+      "A quien escucha le gusta adivinar la emoción; eso lo mete en la historia."
+     ],
+     "q": "¿Cómo mostrarías, sin decirlo, que estabas emocionado en un viaje?",
+     "c": "Reescribe una frase de tu historia para que la emoción se vea en una acción."
+    },
+    "fr": {
+     "t": "Montrer les émotions sans les nommer",
+     "g": "Laisse les actions et les détails révéler ce que tu ressentais au lieu de le dire.",
+     "p": [
+      "Au lieu de « j'étais nerveux », essaie « j'ai vérifié mon billet cinq fois ».",
+      "Au lieu de « c'était magnifique », essaie « personne sur le bateau ne parlait ».",
+      "L'auditeur aime deviner l'émotion : cela l'attire dans le récit."
+     ],
+     "q": "Comment montrerais-tu, sans le dire, que tu étais excité en voyage ?",
+     "c": "Réécris une phrase de ton histoire pour que l'émotion passe par une action."
+    },
+    "it": {
+     "t": "Mostrare le emozioni senza nominarle",
+     "g": "Lascia che azioni e dettagli rivelino come ti sentivi invece di dirlo.",
+     "p": [
+      "Invece di ‘ero nervoso’, prova ‘ho controllato il biglietto cinque volte’.",
+      "Invece di ‘era bellissimo’, prova ‘sulla barca nessuno diceva una parola’.",
+      "Chi ascolta ama indovinare l'emozione; così entra nella storia."
+     ],
+     "q": "Come mostreresti, senza dirlo, che eri emozionato in un viaggio?",
+     "c": "Riscrivi una frase della tua storia in modo che l'emozione emerga da un'azione."
+    },
+    "pt": {
+     "t": "Mostrar emoções sem as nomear",
+     "g": "Deixa as ações e os pormenores revelarem o que sentias em vez de o dizeres.",
+     "p": [
+      "Em vez de ‘estava nervoso’, experimenta ‘verifiquei o bilhete cinco vezes’.",
+      "Em vez de ‘era lindo’, experimenta ‘ninguém no barco disse uma palavra’.",
+      "Quem ouve gosta de adivinhar a emoção; isso puxa-o para dentro da história."
+     ],
+     "q": "Como mostrarias, sem dizer, que estavas entusiasmado numa viagem?",
+     "c": "Reescreve uma frase da tua história para que a emoção apareça numa ação."
+    },
+    "pt_BR": {
+     "t": "Mostrar emoções sem dar nome a elas",
+     "g": "Deixe ações e detalhes revelarem o que você sentia em vez de só dizer.",
+     "p": [
+      "Em vez de ‘eu estava nervoso’, tente ‘conferi a passagem cinco vezes’.",
+      "Em vez de ‘era lindo’, tente ‘ninguém no barco disse uma palavra’.",
+      "Quem ouve gosta de adivinhar a emoção; isso puxa a pessoa para dentro da história."
+     ],
+     "q": "Como você mostraria, sem dizer, que estava empolgado em uma viagem?",
+     "c": "Reescreva uma frase da sua história para que a emoção apareça em uma ação."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The turning point",
+     "g": "Find the moment where your story changes direction.",
+     "p": [
+      "Every good story has a 'but then': the plan, then the change.",
+      "The turning point can be small: a wrong train, a sudden invitation.",
+      "Slow down at the turning point; it is the moment listeners lean in."
+     ],
+     "q": "What was the turning point in one of your favourite trip stories?",
+     "c": "Find the 'but then' moment in one of your stories and say it in one sentence."
+    },
+    "de": {
+     "t": "Der Wendepunkt",
+     "g": "Finde den Moment, in dem deine Geschichte die Richtung ändert.",
+     "p": [
+      "Jede gute Geschichte hat ein ‚Aber dann‘: erst der Plan, dann die Wende.",
+      "Der Wendepunkt kann klein sein: ein falscher Zug, eine plötzliche Einladung.",
+      "Werde am Wendepunkt langsamer; da beugen sich Zuhörer vor."
+     ],
+     "q": "Was war der Wendepunkt in einer deiner liebsten Reisegeschichten?",
+     "c": "Finde den ‚Aber dann‘-Moment in einer deiner Geschichten und sag ihn in einem Satz."
+    },
+    "es": {
+     "t": "El punto de giro",
+     "g": "Encuentra el momento en que tu historia cambia de dirección.",
+     "p": [
+      "Toda buena historia tiene un ‘pero entonces’: primero el plan, luego el cambio.",
+      "El giro puede ser pequeño: un tren equivocado, una invitación repentina.",
+      "Ve más despacio en el giro; es cuando quien escucha se inclina hacia ti."
+     ],
+     "q": "¿Cuál fue el punto de giro de una de tus historias de viaje favoritas?",
+     "c": "Encuentra el ‘pero entonces’ de una de tus historias y dilo en una frase."
+    },
+    "fr": {
+     "t": "Le tournant",
+     "g": "Trouve le moment où ton histoire change de direction.",
+     "p": [
+      "Toute bonne histoire a son « mais alors » : d'abord le plan, puis le changement.",
+      "Le tournant peut être petit : un mauvais train, une invitation soudaine.",
+      "Ralentis au tournant : c'est là que l'auditeur se penche vers toi."
+     ],
+     "q": "Quel a été le tournant d'une de tes histoires de voyage préférées ?",
+     "c": "Trouve le « mais alors » d'une de tes histoires et dis-le en une phrase."
+    },
+    "it": {
+     "t": "La svolta",
+     "g": "Trova il momento in cui la tua storia cambia direzione.",
+     "p": [
+      "Ogni bella storia ha un ‘ma poi’: prima il piano, poi il cambiamento.",
+      "La svolta può essere piccola: un treno sbagliato, un invito improvviso.",
+      "Rallenta sulla svolta; è il momento in cui chi ascolta si sporge in avanti."
+     ],
+     "q": "Qual è stata la svolta in una delle tue storie di viaggio preferite?",
+     "c": "Trova il ‘ma poi’ di una tua storia e dillo in una frase."
+    },
+    "pt": {
+     "t": "O ponto de viragem",
+     "g": "Encontra o momento em que a tua história muda de direção.",
+     "p": [
+      "Toda a boa história tem um ‘mas depois’: primeiro o plano, depois a mudança.",
+      "A viragem pode ser pequena: um comboio errado, um convite inesperado.",
+      "Abranda no ponto de viragem; é quando quem ouve se inclina para a frente."
+     ],
+     "q": "Qual foi o ponto de viragem numa das tuas histórias de viagem preferidas?",
+     "c": "Encontra o ‘mas depois’ numa das tuas histórias e diz-o numa frase."
+    },
+    "pt_BR": {
+     "t": "A virada",
+     "g": "Encontre o momento em que sua história muda de direção.",
+     "p": [
+      "Toda boa história tem um ‘mas aí’: primeiro o plano, depois a mudança.",
+      "A virada pode ser pequena: um trem errado, um convite inesperado.",
+      "Desacelere na virada; é quando quem ouve se inclina para a frente."
+     ],
+     "q": "Qual foi a virada em uma das suas histórias de viagem favoritas?",
+     "c": "Encontre o ‘mas aí’ em uma das suas histórias e diga em uma frase."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Endings that land",
+     "g": "Close your story with a smile, a small lesson or a quiet image.",
+     "p": [
+      "A smile ending: a funny last line or a callback to the start.",
+      "A lesson ending: what you now do differently, said lightly.",
+      "An image ending: the last thing you saw, like the town shrinking from the train."
+     ],
+     "q": "How does your favourite travel story end, and could the ending be stronger?",
+     "c": "Write two possible endings for one story: one funny, one quiet."
+    },
+    "de": {
+     "t": "Schlüsse, die sitzen",
+     "g": "Beende deine Geschichte mit einem Lächeln, einer kleinen Lehre oder einem stillen Bild.",
+     "p": [
+      "Lächeln: ein witziger letzter Satz oder ein Rückgriff auf den Anfang.",
+      "Lehre: was du heute anders machst, leicht erzählt.",
+      "Bild: das Letzte, was du sahst, etwa wie die Stadt vom Zug aus kleiner wurde."
+     ],
+     "q": "Wie endet deine liebste Reisegeschichte, und könnte der Schluss stärker sein?",
+     "c": "Schreib zwei mögliche Schlüsse für eine Geschichte: einen witzigen, einen stillen."
+    },
+    "es": {
+     "t": "Finales que funcionan",
+     "g": "Cierra tu historia con una sonrisa, una pequeña lección o una imagen tranquila.",
+     "p": [
+      "Final con sonrisa: una última frase graciosa o un guiño al principio.",
+      "Final con lección: lo que ahora haces distinto, dicho con ligereza.",
+      "Final con imagen: lo último que viste, como el pueblo encogiéndose desde el tren."
+     ],
+     "q": "¿Cómo termina tu historia de viaje favorita y podría tener un final más fuerte?",
+     "c": "Escribe dos finales posibles para una historia: uno gracioso y otro tranquilo."
+    },
+    "fr": {
+     "t": "Des fins qui marquent",
+     "g": "Termine ton histoire sur un sourire, une petite leçon ou une image paisible.",
+     "p": [
+      "Fin souriante : une dernière phrase drôle ou un clin d'œil au début.",
+      "Fin leçon : ce que tu fais autrement maintenant, dit avec légèreté.",
+      "Fin image : la dernière chose vue, comme la ville qui rapetisse depuis le train."
+     ],
+     "q": "Comment se termine ton récit de voyage préféré, et la fin pourrait-elle être plus forte ?",
+     "c": "Écris deux fins possibles pour une histoire : une drôle, une paisible."
+    },
+    "it": {
+     "t": "Finali che lasciano il segno",
+     "g": "Chiudi la storia con un sorriso, una piccola lezione o un'immagine tranquilla.",
+     "p": [
+      "Finale col sorriso: un'ultima battuta divertente o un richiamo all'inizio.",
+      "Finale con lezione: cosa fai ora in modo diverso, detto con leggerezza.",
+      "Finale per immagine: l'ultima cosa vista, come il paese che si rimpicciolisce dal treno."
+     ],
+     "q": "Come finisce la tua storia di viaggio preferita, e il finale potrebbe essere più forte?",
+     "c": "Scrivi due finali possibili per una storia: uno divertente e uno tranquillo."
+    },
+    "pt": {
+     "t": "Finais que ficam",
+     "g": "Fecha a tua história com um sorriso, uma pequena lição ou uma imagem tranquila.",
+     "p": [
+      "Final com sorriso: uma última frase engraçada ou uma ligação ao início.",
+      "Final com lição: o que fazes agora de forma diferente, dito com leveza.",
+      "Final com imagem: a última coisa que viste, como a vila a ficar pequena vista do comboio."
+     ],
+     "q": "Como acaba a tua história de viagem preferida e o final podia ser mais forte?",
+     "c": "Escreve dois finais possíveis para uma história: um engraçado e um tranquilo."
+    },
+    "pt_BR": {
+     "t": "Finais que marcam",
+     "g": "Feche sua história com um sorriso, uma pequena lição ou uma imagem tranquila.",
+     "p": [
+      "Final com sorriso: uma última frase engraçada ou uma volta ao começo.",
+      "Final com lição: o que você faz diferente agora, dito com leveza.",
+      "Final com imagem: a última coisa que você viu, como a cidade ficando pequena vista do trem."
+     ],
+     "q": "Como termina sua história de viagem favorita e o final poderia ser mais forte?",
+     "c": "Escreva dois finais possíveis para uma história: um engraçado e um tranquilo."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping it short and sweet",
+     "g": "Cut extra details so your story flows and keeps attention.",
+     "p": [
+      "Ask of every detail: does it help the surprise or the feeling?",
+      "Drop exact times, prices and long lists of places.",
+      "A shorter story leaves room for questions, which keeps the chat alive."
+     ],
+     "q": "Which details do you usually include that listeners might not need?",
+     "c": "Take a story you told before and cut it down to five sentences."
+    },
+    "de": {
+     "t": "Kurz und knackig",
+     "g": "Streich überflüssige Details, damit deine Geschichte fließt und fesselt.",
+     "p": [
+      "Frag bei jedem Detail: Hilft es der Überraschung oder dem Gefühl?",
+      "Lass genaue Uhrzeiten, Preise und lange Ortslisten weg.",
+      "Eine kürzere Geschichte lässt Raum für Fragen und hält das Gespräch lebendig."
+     ],
+     "q": "Welche Details erzählst du oft, die Zuhörer vielleicht nicht brauchen?",
+     "c": "Nimm eine Geschichte, die du schon erzählt hast, und kürz sie auf fünf Sätze."
+    },
+    "es": {
+     "t": "Breve y con gracia",
+     "g": "Recorta detalles de más para que tu historia fluya y mantenga la atención.",
+     "p": [
+      "Pregunta a cada detalle: ¿ayuda a la sorpresa o a la emoción?",
+      "Quita horas exactas, precios y listas largas de lugares.",
+      "Una historia más corta deja espacio a preguntas, y eso mantiene viva la charla."
+     ],
+     "q": "¿Qué detalles sueles incluir que quizá quien escucha no necesita?",
+     "c": "Coge una historia que ya contaste y redúcela a cinco frases."
+    },
+    "fr": {
+     "t": "Court et efficace",
+     "g": "Coupe les détails superflus pour que ton récit coule et retienne l'attention.",
+     "p": [
+      "Demande à chaque détail : aide-t-il la surprise ou l'émotion ?",
+      "Supprime les heures exactes, les prix et les longues listes de lieux.",
+      "Une histoire plus courte laisse place aux questions, et la conversation reste vivante."
+     ],
+     "q": "Quels détails ajoutes-tu souvent dont l'auditeur n'a peut-être pas besoin ?",
+     "c": "Prends une histoire déjà racontée et réduis-la à cinq phrases."
+    },
+    "it": {
+     "t": "Breve e incisivo",
+     "g": "Taglia i dettagli superflui perché la storia scorra e tenga l'attenzione.",
+     "p": [
+      "Chiedi a ogni dettaglio: aiuta la sorpresa o l'emozione?",
+      "Elimina orari precisi, prezzi e lunghi elenchi di luoghi.",
+      "Una storia più breve lascia spazio alle domande e tiene viva la conversazione."
+     ],
+     "q": "Quali dettagli inserisci spesso di cui chi ascolta forse non ha bisogno?",
+     "c": "Prendi una storia già raccontata e riducila a cinque frasi."
+    },
+    "pt": {
+     "t": "Curto e com sabor",
+     "g": "Corta pormenores a mais para que a tua história flua e prenda a atenção.",
+     "p": [
+      "Pergunta a cada pormenor: ajuda a surpresa ou a emoção?",
+      "Tira horas exatas, preços e listas longas de lugares.",
+      "Uma história mais curta deixa espaço para perguntas, o que mantém a conversa viva."
+     ],
+     "q": "Que pormenores costumas incluir de que quem ouve talvez não precise?",
+     "c": "Pega numa história que já contaste e reduz para cinco frases."
+    },
+    "pt_BR": {
+     "t": "Curto e gostoso",
+     "g": "Corte detalhes demais para que sua história flua e prenda a atenção.",
+     "p": [
+      "Pergunte a cada detalhe: ele ajuda a surpresa ou a emoção?",
+      "Tire horários exatos, preços e listas longas de lugares.",
+      "Uma história mais curta deixa espaço para perguntas, o que mantém a conversa viva."
+     ],
+     "q": "Quais detalhes você costuma incluir que talvez quem ouve não precise?",
+     "c": "Pegue uma história que você já contou e reduza para cinco frases."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Funny travel stories",
+     "g": "Use timing, self-irony and gentle humour that travels well across cultures.",
+     "p": [
+      "Pause just before the funny part; timing is half the joke.",
+      "Laugh at yourself, not at the locals or their customs.",
+      "Physical comedy travels best: the umbrella that flew away, the door that would not open."
+     ],
+     "q": "What is the funniest thing that ever happened to you on a trip?",
+     "c": "Tell a funny travel moment aloud and add one short pause before the punchline."
+    },
+    "de": {
+     "t": "Lustige Reisegeschichten",
+     "g": "Nutze Timing, Selbstironie und sanften Humor, der über Kulturen hinweg funktioniert.",
+     "p": [
+      "Mach kurz vor der Pointe eine Pause; Timing ist der halbe Witz.",
+      "Lach über dich selbst, nicht über Einheimische oder ihre Bräuche.",
+      "Situationskomik reist am besten: der davonfliegende Schirm, die Tür, die nicht aufging."
+     ],
+     "q": "Was ist das Lustigste, das dir je auf einer Reise passiert ist?",
+     "c": "Erzähl einen lustigen Reisemoment laut und mach vor der Pointe eine kurze Pause."
+    },
+    "es": {
+     "t": "Historias de viaje divertidas",
+     "g": "Usa el ritmo, la autoironía y un humor amable que funcione en todas las culturas.",
+     "p": [
+      "Haz una pausa justo antes de la parte graciosa; el ritmo es medio chiste.",
+      "Ríete de ti, no de la gente local ni de sus costumbres.",
+      "El humor físico viaja mejor: el paraguas que salió volando, la puerta que no abría."
+     ],
+     "q": "¿Qué es lo más gracioso que te ha pasado en un viaje?",
+     "c": "Cuenta en voz alta un momento divertido de viaje con una pausa antes del remate."
+    },
+    "fr": {
+     "t": "Les récits de voyage drôles",
+     "g": "Utilise le rythme, l'autodérision et un humour doux qui passe dans toutes les cultures.",
+     "p": [
+      "Fais une pause juste avant la chute : le rythme, c'est la moitié de la blague.",
+      "Moque-toi de toi, pas des habitants ni de leurs coutumes.",
+      "Le comique de situation voyage le mieux : le parapluie envolé, la porte qui refusait de s'ouvrir."
+     ],
+     "q": "Quelle est la chose la plus drôle qui te soit arrivée en voyage ?",
+     "c": "Raconte à voix haute un moment drôle de voyage avec une petite pause avant la chute."
+    },
+    "it": {
+     "t": "Storie di viaggio divertenti",
+     "g": "Usa il ritmo, l'autoironia e un umorismo gentile che funziona in ogni cultura.",
+     "p": [
+      "Fai una pausa subito prima della battuta; il ritmo è metà della comicità.",
+      "Ridi di te stesso, non della gente del posto o delle sue usanze.",
+      "La comicità fisica viaggia meglio: l'ombrello volato via, la porta che non si apriva."
+     ],
+     "q": "Qual è la cosa più divertente che ti è successa in viaggio?",
+     "c": "Racconta ad alta voce un momento buffo di viaggio con una breve pausa prima della battuta."
+    },
+    "pt": {
+     "t": "Histórias de viagem engraçadas",
+     "g": "Usa o ritmo, a autoironia e um humor gentil que funcione em qualquer cultura.",
+     "p": [
+      "Faz uma pausa mesmo antes da parte engraçada; o ritmo é meia piada.",
+      "Ri-te de ti, não das pessoas locais nem dos seus costumes.",
+      "O humor físico viaja melhor: o guarda-chuva que voou, a porta que não abria."
+     ],
+     "q": "Qual foi a coisa mais engraçada que te aconteceu numa viagem?",
+     "c": "Conta em voz alta um momento engraçado de viagem com uma pausa antes do remate."
+    },
+    "pt_BR": {
+     "t": "Histórias de viagem engraçadas",
+     "g": "Use ritmo, autoironia e um humor gentil que funcione em qualquer cultura.",
+     "p": [
+      "Faça uma pausa logo antes da parte engraçada; o ritmo é metade da piada.",
+      "Ria de si mesmo, não das pessoas locais nem dos costumes delas.",
+      "Humor físico viaja melhor: o guarda-chuva que voou, a porta que não abria."
+     ],
+     "q": "Qual foi a coisa mais engraçada que já aconteceu com você em uma viagem?",
+     "c": "Conte em voz alta um momento engraçado de viagem com uma pausa antes do desfecho."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mishaps with happy endings",
+     "g": "Tell stories of missed buses and lost bags with a positive twist.",
+     "p": [
+      "Start with the problem clearly, then build to the solution.",
+      "Highlight who helped or what you learned.",
+      "Even if it was stressful then, tell it now with a lighter voice."
+     ],
+     "q": "What travel mishap turned out better than you expected?",
+     "c": "Pick one small travel mishap and find its happy ending in one sentence."
+    },
+    "de": {
+     "t": "Missgeschicke mit Happy End",
+     "g": "Erzähl von verpassten Bussen und verlorenen Taschen mit positiver Wendung.",
+     "p": [
+      "Beginn klar mit dem Problem und steuere dann auf die Lösung zu.",
+      "Heb hervor, wer geholfen hat oder was du gelernt hast.",
+      "Auch wenn es damals stressig war, erzähl es heute mit leichterer Stimme."
+     ],
+     "q": "Welches Reisemissgeschick ging besser aus als erwartet?",
+     "c": "Wähle ein kleines Missgeschick und finde sein Happy End in einem Satz."
+    },
+    "es": {
+     "t": "Percances con final feliz",
+     "g": "Cuenta historias de autobuses perdidos y maletas extraviadas con un giro positivo.",
+     "p": [
+      "Empieza dejando claro el problema y luego avanza hacia la solución.",
+      "Destaca quién te ayudó o qué aprendiste.",
+      "Aunque entonces fuera estresante, cuéntalo ahora con un tono más ligero."
+     ],
+     "q": "¿Qué percance de viaje salió mejor de lo que esperabas?",
+     "c": "Elige un pequeño percance de viaje y encuentra su final feliz en una frase."
+    },
+    "fr": {
+     "t": "Des mésaventures qui finissent bien",
+     "g": "Raconte des bus ratés et des bagages perdus avec une touche positive.",
+     "p": [
+      "Pose clairement le problème, puis avance vers la solution.",
+      "Mets en avant qui t'a aidé ou ce que tu as appris.",
+      "Même si c'était stressant sur le moment, raconte-le aujourd'hui avec légèreté."
+     ],
+     "q": "Quelle mésaventure de voyage s'est mieux terminée que prévu ?",
+     "c": "Choisis une petite mésaventure et trouve sa fin heureuse en une phrase."
+    },
+    "it": {
+     "t": "Disavventure a lieto fine",
+     "g": "Racconta autobus persi e bagagli smarriti con un risvolto positivo.",
+     "p": [
+      "Inizia chiarendo il problema, poi arriva alla soluzione.",
+      "Metti in luce chi ti ha aiutato o cosa hai imparato.",
+      "Anche se allora era stressante, raccontalo oggi con un tono più leggero."
+     ],
+     "q": "Quale disavventura di viaggio è finita meglio del previsto?",
+     "c": "Scegli una piccola disavventura di viaggio e trova il suo lieto fine in una frase."
+    },
+    "pt": {
+     "t": "Percalços com final feliz",
+     "g": "Conta histórias de autocarros perdidos e malas extraviadas com uma reviravolta positiva.",
+     "p": [
+      "Começa por deixar claro o problema e depois avança para a solução.",
+      "Destaca quem ajudou ou o que aprendeste.",
+      "Mesmo que na altura tenha sido stressante, conta-o agora num tom mais leve."
+     ],
+     "q": "Que percalço de viagem acabou melhor do que esperavas?",
+     "c": "Escolhe um pequeno percalço de viagem e encontra o seu final feliz numa frase."
+    },
+    "pt_BR": {
+     "t": "Perrengues com final feliz",
+     "g": "Conte histórias de ônibus perdidos e malas extraviadas com uma virada positiva.",
+     "p": [
+      "Comece deixando claro o problema e depois avance para a solução.",
+      "Destaque quem ajudou ou o que você aprendeu.",
+      "Mesmo que tenha sido estressante na hora, conte agora com um tom mais leve."
+     ],
+     "q": "Qual perrengue de viagem terminou melhor do que você esperava?",
+     "c": "Escolha um pequeno perrengue de viagem e encontre o final feliz dele em uma frase."
+    }
+   }
+  }
+ ]
+}

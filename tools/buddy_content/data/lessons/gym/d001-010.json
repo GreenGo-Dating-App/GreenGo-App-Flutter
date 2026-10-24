@@ -1,0 +1,835 @@
+{
+ "topic": "gym",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the gym path",
+     "g": "See what a year of steady, safe training can look like for you.",
+     "p": [
+      "One small lesson a day adds up to real skills over a year.",
+      "We start with basics: etiquette, warm-ups and simple movements.",
+      "Progress comes from consistency and good form, not from rushing."
+     ],
+     "q": "What made you curious about training at the gym?",
+     "c": "Write down one reason you want to train this year."
+    },
+    "de": {
+     "t": "Willkommen auf dem Gym-Pfad",
+     "g": "Sieh, wie ein Jahr mit ruhigem, sicherem Training für dich aussehen kann.",
+     "p": [
+      "Eine kleine Lektion pro Tag wird über ein Jahr zu echtem Können.",
+      "Wir beginnen mit den Basics: Etikette, Aufwärmen und einfache Übungen.",
+      "Fortschritt kommt durch Beständigkeit und saubere Technik, nicht durch Eile."
+     ],
+     "q": "Was hat dich neugierig auf das Training im Fitnessstudio gemacht?",
+     "c": "Schreib einen Grund auf, warum du dieses Jahr trainieren möchtest."
+    },
+    "es": {
+     "t": "Bienvenido al camino del gimnasio",
+     "g": "Descubre cómo puede ser un año de entrenamiento constante y seguro.",
+     "p": [
+      "Una pequeña lección al día se convierte en habilidades reales en un año.",
+      "Empezamos por lo básico: normas, calentamiento y movimientos sencillos.",
+      "El progreso llega con constancia y buena técnica, no con prisas."
+     ],
+     "q": "¿Qué te despertó la curiosidad por entrenar en el gimnasio?",
+     "c": "Escribe una razón por la que quieres entrenar este año."
+    },
+    "fr": {
+     "t": "Bienvenue sur le parcours salle de sport",
+     "g": "Découvre à quoi peut ressembler une année d’entraînement régulier et sûr.",
+     "p": [
+      "Une petite leçon par jour devient de vraies compétences en un an.",
+      "On commence par les bases : savoir-vivre, échauffement et gestes simples.",
+      "Le progrès vient de la régularité et d’une bonne technique, pas de la hâte."
+     ],
+     "q": "Qu’est-ce qui t’a donné envie de t’entraîner en salle ?",
+     "c": "Note une raison pour laquelle tu veux t’entraîner cette année."
+    },
+    "it": {
+     "t": "Benvenuto nel percorso palestra",
+     "g": "Scopri come può essere un anno di allenamento costante e sicuro.",
+     "p": [
+      "Una piccola lezione al giorno diventa vera abilità in un anno.",
+      "Partiamo dalle basi: galateo, riscaldamento e movimenti semplici.",
+      "Il progresso nasce da costanza e buona tecnica, non dalla fretta."
+     ],
+     "q": "Cosa ti ha incuriosito dell’allenamento in palestra?",
+     "c": "Scrivi un motivo per cui vuoi allenarti quest’anno."
+    },
+    "pt": {
+     "t": "Bem-vindo ao percurso do ginásio",
+     "g": "Descobre como pode ser um ano de treino constante e seguro.",
+     "p": [
+      "Uma pequena lição por dia transforma-se em competências reais num ano.",
+      "Começamos pelo básico: regras, aquecimento e movimentos simples.",
+      "O progresso vem da constância e da boa técnica, não da pressa."
+     ],
+     "q": "O que te despertou a curiosidade para treinar no ginásio?",
+     "c": "Escreve uma razão pela qual queres treinar este ano."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à trilha da academia",
+     "g": "Descubra como pode ser um ano de treino constante e seguro.",
+     "p": [
+      "Uma pequena lição por dia vira habilidade de verdade em um ano.",
+      "Começamos pelo básico: regras, aquecimento e movimentos simples.",
+      "O progresso vem da constância e da boa técnica, não da pressa."
+     ],
+     "q": "O que despertou sua curiosidade para treinar na academia?",
+     "c": "Anote um motivo pelo qual você quer treinar este ano."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why strength training matters",
+     "g": "Understand the everyday benefits of resistance training.",
+     "p": [
+      "Stronger muscles make carrying, climbing stairs and lifting easier.",
+      "Regular training is widely linked to better energy and mood.",
+      "It supports balance and posture as part of an active lifestyle."
+     ],
+     "q": "Which daily task would you love to find easier?",
+     "c": "Notice one moment today where you use your strength."
+    },
+    "de": {
+     "t": "Warum Krafttraining wichtig ist",
+     "g": "Verstehe die Vorteile von Krafttraining für den Alltag.",
+     "p": [
+      "Kräftigere Muskeln erleichtern Tragen, Treppensteigen und Heben.",
+      "Regelmäßiges Training wird oft mit mehr Energie und guter Laune verbunden.",
+      "Es unterstützt Gleichgewicht und Haltung als Teil eines aktiven Lebens."
+     ],
+     "q": "Welche Alltagsaufgabe würdest du gern leichter erledigen?",
+     "c": "Achte heute auf einen Moment, in dem du deine Kraft nutzt."
+    },
+    "es": {
+     "t": "Por qué importa la fuerza",
+     "g": "Entiende los beneficios cotidianos del entrenamiento de fuerza.",
+     "p": [
+      "Unos músculos más fuertes facilitan cargar bolsas, subir escaleras y levantar cosas.",
+      "Entrenar con regularidad se asocia a más energía y mejor ánimo.",
+      "Ayuda al equilibrio y la postura como parte de una vida activa."
+     ],
+     "q": "¿Qué tarea diaria te gustaría que te resultara más fácil?",
+     "c": "Fíjate hoy en un momento en el que usas tu fuerza."
+    },
+    "fr": {
+     "t": "Pourquoi la musculation compte",
+     "g": "Comprendre les bienfaits quotidiens du renforcement musculaire.",
+     "p": [
+      "Des muscles plus forts facilitent porter, monter les escaliers et soulever.",
+      "L’entraînement régulier est souvent associé à plus d’énergie et de bonne humeur.",
+      "Il soutient l’équilibre et la posture dans une vie active."
+     ],
+     "q": "Quelle tâche du quotidien aimerais-tu trouver plus facile ?",
+     "c": "Remarque aujourd’hui un moment où tu utilises ta force."
+    },
+    "it": {
+     "t": "Perché la forza è importante",
+     "g": "Capire i benefici quotidiani dell’allenamento con i pesi.",
+     "p": [
+      "Muscoli più forti rendono più facile portare borse, salire le scale e sollevare.",
+      "Allenarsi con regolarità è spesso legato a più energia e buonumore.",
+      "Aiuta equilibrio e postura come parte di uno stile di vita attivo."
+     ],
+     "q": "Quale attività quotidiana vorresti trovare più facile?",
+     "c": "Nota oggi un momento in cui usi la tua forza."
+    },
+    "pt": {
+     "t": "Porque é que a força importa",
+     "g": "Perceber os benefícios do treino de força no dia a dia.",
+     "p": [
+      "Músculos mais fortes facilitam carregar sacos, subir escadas e levantar coisas.",
+      "Treinar com regularidade é associado a mais energia e melhor humor.",
+      "Ajuda o equilíbrio e a postura como parte de uma vida ativa."
+     ],
+     "q": "Que tarefa do dia a dia gostavas de achar mais fácil?",
+     "c": "Repara hoje num momento em que usas a tua força."
+    },
+    "pt_BR": {
+     "t": "Por que a musculação importa",
+     "g": "Entender os benefícios do treino de força no dia a dia.",
+     "p": [
+      "Músculos mais fortes facilitam carregar sacolas, subir escadas e levantar coisas.",
+      "Treinar com regularidade é associado a mais energia e melhor humor.",
+      "Ajuda no equilíbrio e na postura como parte de uma vida ativa."
+     ],
+     "q": "Qual tarefa do dia a dia você gostaria de achar mais fácil?",
+     "c": "Repare hoje em um momento em que você usa sua força."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a realistic goal",
+     "g": "Choose one clear, friendly goal to guide your first weeks.",
+     "p": [
+      "Process goals like training twice a week are easy to control.",
+      "A good goal is specific, small and fits your real schedule.",
+      "You can adjust your goal anytime as you learn more."
+     ],
+     "q": "What would a great first month at the gym look like for you?",
+     "c": "Write one goal for the next four weeks in a single sentence."
+    },
+    "de": {
+     "t": "Ein realistisches Ziel setzen",
+     "g": "Wähle ein klares, freundliches Ziel für deine ersten Wochen.",
+     "p": [
+      "Prozessziele wie zweimal pro Woche trainieren hast du selbst in der Hand.",
+      "Ein gutes Ziel ist konkret, klein und passt in deinen Alltag.",
+      "Du kannst dein Ziel jederzeit anpassen, wenn du mehr lernst."
+     ],
+     "q": "Wie würde für dich ein toller erster Monat im Studio aussehen?",
+     "c": "Schreib ein Ziel für die nächsten vier Wochen in einem Satz auf."
+    },
+    "es": {
+     "t": "Fijar un objetivo realista",
+     "g": "Elige un objetivo claro y amable que guíe tus primeras semanas.",
+     "p": [
+      "Las metas de proceso, como entrenar dos veces por semana, dependen de ti.",
+      "Un buen objetivo es concreto, pequeño y encaja en tu agenda real.",
+      "Puedes ajustarlo cuando quieras a medida que aprendes."
+     ],
+     "q": "¿Cómo sería para ti un primer mes genial en el gimnasio?",
+     "c": "Escribe en una frase un objetivo para las próximas cuatro semanas."
+    },
+    "fr": {
+     "t": "Se fixer un objectif réaliste",
+     "g": "Choisis un objectif clair et bienveillant pour tes premières semaines.",
+     "p": [
+      "Les objectifs de processus, comme deux séances par semaine, dépendent de toi.",
+      "Un bon objectif est précis, modeste et s’adapte à ton emploi du temps.",
+      "Tu peux l’ajuster à tout moment en apprenant."
+     ],
+     "q": "À quoi ressemblerait un super premier mois en salle pour toi ?",
+     "c": "Écris en une phrase un objectif pour les quatre prochaines semaines."
+    },
+    "it": {
+     "t": "Fissare un obiettivo realistico",
+     "g": "Scegli un obiettivo chiaro e gentile per le prime settimane.",
+     "p": [
+      "Gli obiettivi di processo, come allenarsi due volte a settimana, dipendono da te.",
+      "Un buon obiettivo è concreto, piccolo e adatto ai tuoi impegni reali.",
+      "Puoi modificarlo quando vuoi man mano che impari."
+     ],
+     "q": "Come sarebbe per te un primo mese fantastico in palestra?",
+     "c": "Scrivi in una frase un obiettivo per le prossime quattro settimane."
+    },
+    "pt": {
+     "t": "Definir um objetivo realista",
+     "g": "Escolhe um objetivo claro e simpático para as primeiras semanas.",
+     "p": [
+      "Metas de processo, como treinar duas vezes por semana, dependem de ti.",
+      "Um bom objetivo é concreto, pequeno e cabe na tua agenda real.",
+      "Podes ajustá-lo sempre que quiseres à medida que aprendes."
+     ],
+     "q": "Como seria para ti um primeiro mês fantástico no ginásio?",
+     "c": "Escreve numa frase um objetivo para as próximas quatro semanas."
+    },
+    "pt_BR": {
+     "t": "Definindo uma meta realista",
+     "g": "Escolha uma meta clara e gentil para guiar suas primeiras semanas.",
+     "p": [
+      "Metas de processo, como treinar duas vezes por semana, dependem de você.",
+      "Uma boa meta é concreta, pequena e cabe na sua rotina real.",
+      "Você pode ajustar a meta quando quiser, conforme aprende."
+     ],
+     "q": "Como seria para você um primeiro mês incrível na academia?",
+     "c": "Escreva em uma frase uma meta para as próximas quatro semanas."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gym etiquette basics",
+     "g": "Learn the simple habits that make the gym pleasant for everyone.",
+     "p": [
+      "Wipe down benches and machines after you use them.",
+      "Put weights and equipment back where you found them.",
+      "Share equipment kindly and ask if you can work in between sets."
+     ],
+     "q": "Have you noticed any unwritten gym rules so far?",
+     "c": "Today, re-rack every weight you use and wipe your bench."
+    },
+    "de": {
+     "t": "Grundregeln im Fitnessstudio",
+     "g": "Lerne einfache Gewohnheiten, die das Studio für alle angenehm machen.",
+     "p": [
+      "Wisch Bänke und Geräte nach der Benutzung ab.",
+      "Leg Gewichte und Zubehör dorthin zurück, wo du sie gefunden hast.",
+      "Teile Geräte freundlich und frag, ob du zwischen den Sätzen mittrainieren darfst."
+     ],
+     "q": "Sind dir schon ungeschriebene Regeln im Studio aufgefallen?",
+     "c": "Räum heute jedes Gewicht weg und wisch deine Bank ab."
+    },
+    "es": {
+     "t": "Normas básicas del gimnasio",
+     "g": "Aprende hábitos sencillos que hacen el gimnasio agradable para todos.",
+     "p": [
+      "Limpia bancos y máquinas después de usarlos.",
+      "Devuelve pesas y material a su sitio.",
+      "Comparte el material con amabilidad y pregunta si puedes alternar series."
+     ],
+     "q": "¿Has notado alguna norma no escrita en el gimnasio?",
+     "c": "Hoy, guarda cada peso que uses y limpia tu banco."
+    },
+    "fr": {
+     "t": "Les bases du savoir-vivre en salle",
+     "g": "Apprends les habitudes simples qui rendent la salle agréable pour tous.",
+     "p": [
+      "Essuie les bancs et les machines après utilisation.",
+      "Range les poids et le matériel là où tu les as trouvés.",
+      "Partage le matériel avec gentillesse et propose d’alterner les séries."
+     ],
+     "q": "As-tu déjà remarqué des règles non écrites en salle ?",
+     "c": "Aujourd’hui, range chaque poids utilisé et essuie ton banc."
+    },
+    "it": {
+     "t": "Il galateo della palestra",
+     "g": "Impara le abitudini semplici che rendono la palestra piacevole per tutti.",
+     "p": [
+      "Pulisci panche e macchinari dopo averli usati.",
+      "Rimetti pesi e attrezzi dove li hai trovati.",
+      "Condividi gli attrezzi con gentilezza e chiedi di alternarti tra le serie."
+     ],
+     "q": "Hai già notato qualche regola non scritta in palestra?",
+     "c": "Oggi rimetti a posto ogni peso che usi e pulisci la panca."
+    },
+    "pt": {
+     "t": "Regras básicas do ginásio",
+     "g": "Aprende hábitos simples que tornam o ginásio agradável para todos.",
+     "p": [
+      "Limpa bancos e máquinas depois de os usares.",
+      "Arruma pesos e material no sítio onde os encontraste.",
+      "Partilha o material com simpatia e pergunta se podes alternar séries."
+     ],
+     "q": "Já reparaste em alguma regra não escrita no ginásio?",
+     "c": "Hoje, arruma cada peso que usares e limpa o teu banco."
+    },
+    "pt_BR": {
+     "t": "Etiqueta básica na academia",
+     "g": "Aprenda hábitos simples que deixam a academia agradável para todos.",
+     "p": [
+      "Limpe bancos e aparelhos depois de usar.",
+      "Guarde pesos e acessórios no lugar onde encontrou.",
+      "Divida os aparelhos com gentileza e pergunte se pode revezar entre as séries."
+     ],
+     "q": "Você já percebeu alguma regra não escrita na academia?",
+     "c": "Hoje, guarde cada peso que usar e limpe o seu banco."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of the gym floor",
+     "g": "Get to know the main areas of a typical gym.",
+     "p": [
+      "Free weights: dumbbells, barbells, benches and racks.",
+      "Machines guide your movement and are friendly for beginners.",
+      "The cardio area and stretching zone complete the picture."
+     ],
+     "q": "Which area of the gym feels most inviting to you?",
+     "c": "Walk through each area once and note one item you want to try."
+    },
+    "de": {
+     "t": "Ein Rundgang durchs Studio",
+     "g": "Lerne die wichtigsten Bereiche eines typischen Studios kennen.",
+     "p": [
+      "Freihantelbereich: Kurzhanteln, Langhanteln, Bänke und Racks.",
+      "Geräte führen die Bewegung und sind ideal für Einsteiger.",
+      "Cardiobereich und Dehnzone runden das Bild ab."
+     ],
+     "q": "Welcher Bereich des Studios spricht dich am meisten an?",
+     "c": "Geh einmal durch jeden Bereich und notiere ein Gerät, das du testen willst."
+    },
+    "es": {
+     "t": "Un recorrido por el gimnasio",
+     "g": "Conoce las zonas principales de un gimnasio típico.",
+     "p": [
+      "Peso libre: mancuernas, barras, bancos y racks.",
+      "Las máquinas guían el movimiento y son ideales para empezar.",
+      "La zona de cardio y la de estiramientos completan el espacio."
+     ],
+     "q": "¿Qué zona del gimnasio te resulta más atractiva?",
+     "c": "Recorre cada zona una vez y apunta un aparato que quieras probar."
+    },
+    "fr": {
+     "t": "Visite de la salle",
+     "g": "Découvre les principales zones d’une salle de sport classique.",
+     "p": [
+      "Poids libres : haltères, barres, bancs et racks.",
+      "Les machines guident le mouvement et conviennent bien aux débutants.",
+      "L’espace cardio et la zone d’étirements complètent le tout."
+     ],
+     "q": "Quelle zone de la salle t’attire le plus ?",
+     "c": "Fais le tour de chaque zone et note un appareil que tu veux essayer."
+    },
+    "it": {
+     "t": "Un giro in sala pesi",
+     "g": "Conosci le aree principali di una palestra tipica.",
+     "p": [
+      "Pesi liberi: manubri, bilancieri, panche e rack.",
+      "Le macchine guidano il movimento e sono adatte ai principianti.",
+      "L’area cardio e la zona stretching completano il quadro."
+     ],
+     "q": "Quale area della palestra ti attira di più?",
+     "c": "Fai un giro in ogni area e annota un attrezzo che vuoi provare."
+    },
+    "pt": {
+     "t": "Uma visita ao ginásio",
+     "g": "Conhece as principais zonas de um ginásio típico.",
+     "p": [
+      "Pesos livres: halteres, barras, bancos e racks.",
+      "As máquinas guiam o movimento e são ótimas para quem começa.",
+      "A zona de cardio e a de alongamentos completam o espaço."
+     ],
+     "q": "Que zona do ginásio te parece mais convidativa?",
+     "c": "Percorre cada zona uma vez e aponta um aparelho que queiras experimentar."
+    },
+    "pt_BR": {
+     "t": "Um tour pela academia",
+     "g": "Conheça as principais áreas de uma academia típica.",
+     "p": [
+      "Peso livre: halteres, barras, bancos e racks.",
+      "Os aparelhos guiam o movimento e são ótimos para iniciantes.",
+      "A área de cardio e o espaço de alongamento completam o ambiente."
+     ],
+     "q": "Qual área da academia parece mais convidativa para você?",
+     "c": "Passe uma vez por cada área e anote um aparelho que quer experimentar."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What to wear and bring",
+     "g": "Pack a simple, comfortable gym bag.",
+     "p": [
+      "Wear clothes that let you move freely and breathe.",
+      "Choose stable, closed shoes suited to training.",
+      "Bring a towel and a water bottle every time."
+     ],
+     "q": "What does your ideal gym outfit look like?",
+     "c": "Pack your gym bag tonight so it is ready to go."
+    },
+    "de": {
+     "t": "Was anziehen und mitbringen",
+     "g": "Pack eine einfache, bequeme Sporttasche.",
+     "p": [
+      "Trag Kleidung, in der du dich frei bewegen kannst und die atmet.",
+      "Wähle stabile, geschlossene Schuhe, die zum Training passen.",
+      "Nimm jedes Mal ein Handtuch und eine Trinkflasche mit."
+     ],
+     "q": "Wie sieht dein ideales Trainingsoutfit aus?",
+     "c": "Pack heute Abend deine Sporttasche, damit sie bereitsteht."
+    },
+    "es": {
+     "t": "Qué ponerte y qué llevar",
+     "g": "Prepara una bolsa de gimnasio sencilla y cómoda.",
+     "p": [
+      "Usa ropa que te deje moverte con libertad y transpire.",
+      "Elige calzado cerrado y estable, adecuado para entrenar.",
+      "Lleva siempre una toalla y una botella de agua."
+     ],
+     "q": "¿Cómo es tu ropa ideal para entrenar?",
+     "c": "Prepara esta noche tu bolsa para que esté lista."
+    },
+    "fr": {
+     "t": "Quoi porter et emporter",
+     "g": "Prépare un sac de sport simple et pratique.",
+     "p": [
+      "Porte des vêtements qui laissent bouger librement et respirent.",
+      "Choisis des chaussures fermées et stables, adaptées à l’entraînement.",
+      "Emporte toujours une serviette et une gourde."
+     ],
+     "q": "À quoi ressemble ta tenue de sport idéale ?",
+     "c": "Prépare ton sac ce soir pour qu’il soit prêt."
+    },
+    "it": {
+     "t": "Cosa indossare e portare",
+     "g": "Prepara una borsa da palestra semplice e comoda.",
+     "p": [
+      "Indossa abiti che ti lascino muovere liberamente e traspiranti.",
+      "Scegli scarpe chiuse e stabili, adatte all’allenamento.",
+      "Porta sempre un asciugamano e una borraccia."
+     ],
+     "q": "Com’è il tuo abbigliamento ideale per allenarti?",
+     "c": "Prepara stasera la borsa così sarà già pronta."
+    },
+    "pt": {
+     "t": "O que vestir e levar",
+     "g": "Prepara um saco de ginásio simples e prático.",
+     "p": [
+      "Usa roupa que te deixe mexer à vontade e que respire.",
+      "Escolhe calçado fechado e estável, adequado ao treino.",
+      "Leva sempre uma toalha e uma garrafa de água."
+     ],
+     "q": "Como é a tua roupa ideal para treinar?",
+     "c": "Prepara hoje à noite o teu saco para estar pronto."
+    },
+    "pt_BR": {
+     "t": "O que vestir e levar",
+     "g": "Monte uma mochila de academia simples e prática.",
+     "p": [
+      "Use roupas que deixem você se mexer à vontade e que respirem.",
+      "Escolha um tênis fechado e estável, adequado para treinar.",
+      "Leve sempre uma toalha e uma garrafinha de água."
+     ],
+     "q": "Como é a sua roupa ideal para treinar?",
+     "c": "Arrume sua mochila hoje à noite para deixá-la pronta."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hydration in general terms",
+     "g": "See why drinking water around training is a simple good habit.",
+     "p": [
+      "Having water nearby makes it easy to sip during breaks.",
+      "Thirst is a useful signal, so drink when you feel it.",
+      "Needs differ by person and climate; a doctor can advise if unsure."
+     ],
+     "q": "How do you usually remember to drink water during the day?",
+     "c": "Fill your bottle before training and sip between exercises."
+    },
+    "de": {
+     "t": "Trinken ganz allgemein",
+     "g": "Sieh, warum Wasser rund ums Training eine einfache gute Gewohnheit ist.",
+     "p": [
+      "Mit Wasser in Reichweite trinkst du leicht in den Pausen.",
+      "Durst ist ein nützliches Signal, also trink, wenn du ihn spürst.",
+      "Der Bedarf ist individuell; bei Unsicherheit berät dich eine Ärztin oder ein Arzt."
+     ],
+     "q": "Wie denkst du im Alltag ans Trinken?",
+     "c": "Füll vor dem Training deine Flasche und trink zwischen den Übungen."
+    },
+    "es": {
+     "t": "La hidratación en general",
+     "g": "Descubre por qué beber agua al entrenar es un hábito sencillo y bueno.",
+     "p": [
+      "Tener agua cerca facilita beber en los descansos.",
+      "La sed es una señal útil: bebe cuando la notes.",
+      "Cada persona y clima es distinto; si dudas, consulta a un médico."
+     ],
+     "q": "¿Cómo te acuerdas de beber agua durante el día?",
+     "c": "Llena tu botella antes de entrenar y bebe entre ejercicios."
+    },
+    "fr": {
+     "t": "L’hydratation en général",
+     "g": "Voir pourquoi boire de l’eau autour de l’entraînement est une bonne habitude.",
+     "p": [
+      "Avoir de l’eau à portée de main aide à boire pendant les pauses.",
+      "La soif est un signal utile : bois quand tu la ressens.",
+      "Les besoins varient selon la personne et le climat ; un médecin peut te conseiller."
+     ],
+     "q": "Comment penses-tu à boire de l’eau dans la journée ?",
+     "c": "Remplis ta gourde avant la séance et bois entre les exercices."
+    },
+    "it": {
+     "t": "L’idratazione in generale",
+     "g": "Capire perché bere acqua intorno all’allenamento è una buona abitudine.",
+     "p": [
+      "Avere l’acqua vicino rende facile bere nelle pause.",
+      "La sete è un segnale utile: bevi quando la senti.",
+      "I bisogni variano per persona e clima; in caso di dubbi chiedi al medico."
+     ],
+     "q": "Come ti ricordi di bere acqua durante la giornata?",
+     "c": "Riempi la borraccia prima di allenarti e bevi tra un esercizio e l’altro."
+    },
+    "pt": {
+     "t": "A hidratação em geral",
+     "g": "Perceber porque beber água à volta do treino é um bom hábito simples.",
+     "p": [
+      "Ter água por perto facilita beber nas pausas.",
+      "A sede é um sinal útil, por isso bebe quando a sentires.",
+      "As necessidades variam com a pessoa e o clima; em dúvida, fala com um médico."
+     ],
+     "q": "Como te lembras de beber água ao longo do dia?",
+     "c": "Enche a garrafa antes do treino e bebe entre os exercícios."
+    },
+    "pt_BR": {
+     "t": "Hidratação em termos gerais",
+     "g": "Entender por que beber água no treino é um hábito simples e bom.",
+     "p": [
+      "Ter água por perto facilita beber nos intervalos.",
+      "A sede é um sinal útil, então beba quando sentir.",
+      "A necessidade varia com a pessoa e o clima; na dúvida, fale com um médico."
+     ],
+     "q": "Como você se lembra de beber água durante o dia?",
+     "c": "Encha sua garrafinha antes do treino e beba entre os exercícios."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why the warm-up matters",
+     "g": "Learn how a warm-up prepares your body for training.",
+     "p": [
+      "It gently raises body temperature and heart rate.",
+      "Joints and muscles move more smoothly once they are warm.",
+      "It also helps your mind switch into training mode."
+     ],
+     "q": "How do you feel at the start of a workout without warming up?",
+     "c": "Before your next session, spend five minutes warming up first."
+    },
+    "de": {
+     "t": "Warum Aufwärmen wichtig ist",
+     "g": "Lerne, wie das Aufwärmen deinen Körper aufs Training vorbereitet.",
+     "p": [
+      "Es erhöht sanft Körpertemperatur und Puls.",
+      "Gelenke und Muskeln bewegen sich warm geschmeidiger.",
+      "Auch dein Kopf schaltet so in den Trainingsmodus."
+     ],
+     "q": "Wie fühlst du dich, wenn du ohne Aufwärmen loslegst?",
+     "c": "Nimm dir vor der nächsten Einheit zuerst fünf Minuten zum Aufwärmen."
+    },
+    "es": {
+     "t": "Por qué calentar",
+     "g": "Aprende cómo el calentamiento prepara tu cuerpo para entrenar.",
+     "p": [
+      "Sube poco a poco la temperatura corporal y el pulso.",
+      "Articulaciones y músculos se mueven mejor cuando están calientes.",
+      "También ayuda a tu mente a entrar en modo entrenamiento."
+     ],
+     "q": "¿Cómo te sientes si empiezas a entrenar sin calentar?",
+     "c": "Antes de tu próxima sesión, dedica cinco minutos a calentar."
+    },
+    "fr": {
+     "t": "Pourquoi s’échauffer",
+     "g": "Comprends comment l’échauffement prépare ton corps.",
+     "p": [
+      "Il augmente doucement la température du corps et le rythme cardiaque.",
+      "Articulations et muscles bougent plus facilement une fois chauds.",
+      "Il aide aussi ton esprit à passer en mode entraînement."
+     ],
+     "q": "Comment te sens-tu quand tu commences sans t’échauffer ?",
+     "c": "Avant ta prochaine séance, consacre cinq minutes à l’échauffement."
+    },
+    "it": {
+     "t": "Perché scaldarsi",
+     "g": "Scopri come il riscaldamento prepara il corpo all’allenamento.",
+     "p": [
+      "Alza gradualmente la temperatura corporea e il battito.",
+      "Articolazioni e muscoli si muovono meglio quando sono caldi.",
+      "Aiuta anche la mente a entrare in modalità allenamento."
+     ],
+     "q": "Come ti senti quando inizi ad allenarti senza scaldarti?",
+     "c": "Prima della prossima seduta, dedica cinque minuti al riscaldamento."
+    },
+    "pt": {
+     "t": "Porque aquecer",
+     "g": "Aprende como o aquecimento prepara o corpo para o treino.",
+     "p": [
+      "Aumenta suavemente a temperatura do corpo e o ritmo cardíaco.",
+      "Articulações e músculos mexem-se melhor quando estão quentes.",
+      "Também ajuda a mente a entrar em modo de treino."
+     ],
+     "q": "Como te sentes quando começas a treinar sem aquecer?",
+     "c": "Antes do próximo treino, dedica cinco minutos ao aquecimento."
+    },
+    "pt_BR": {
+     "t": "Por que aquecer",
+     "g": "Aprenda como o aquecimento prepara o corpo para o treino.",
+     "p": [
+      "Aumenta aos poucos a temperatura do corpo e os batimentos.",
+      "Articulações e músculos se movem melhor quando estão aquecidos.",
+      "Também ajuda a cabeça a entrar no clima do treino."
+     ],
+     "q": "Como você se sente quando começa a treinar sem aquecer?",
+     "c": "Antes do próximo treino, reserve cinco minutos para aquecer."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple general warm-up",
+     "g": "Build a short warm-up you can use before every session.",
+     "p": [
+      "Start with three to five minutes of easy cardio.",
+      "Add dynamic moves like arm circles, leg swings and hip circles.",
+      "Finish with a few light reps of your first exercise."
+     ],
+     "q": "Which warm-up moves feel best for you?",
+     "c": "Try this warm-up today: 4 minutes cardio plus 10 arm and leg swings."
+    },
+    "de": {
+     "t": "Ein einfaches Aufwärmprogramm",
+     "g": "Stell dir ein kurzes Aufwärmen für jede Einheit zusammen.",
+     "p": [
+      "Beginne mit drei bis fünf Minuten lockerem Cardio.",
+      "Ergänze dynamische Bewegungen wie Armkreisen, Beinschwingen und Hüftkreisen.",
+      "Schließe mit ein paar leichten Wiederholungen der ersten Übung ab."
+     ],
+     "q": "Welche Aufwärmbewegungen tun dir am besten?",
+     "c": "Probier es heute: 4 Minuten Cardio plus je 10 Arm- und Beinschwünge."
+    },
+    "es": {
+     "t": "Un calentamiento general sencillo",
+     "g": "Crea un calentamiento corto para usar antes de cada sesión.",
+     "p": [
+      "Empieza con tres a cinco minutos de cardio suave.",
+      "Añade movimientos dinámicos: círculos de brazos, balanceos de piernas y de cadera.",
+      "Termina con unas repeticiones ligeras de tu primer ejercicio."
+     ],
+     "q": "¿Qué movimientos de calentamiento te sientan mejor?",
+     "c": "Prueba hoy: 4 minutos de cardio y 10 balanceos de brazos y piernas."
+    },
+    "fr": {
+     "t": "Un échauffement général simple",
+     "g": "Crée un court échauffement à faire avant chaque séance.",
+     "p": [
+      "Commence par trois à cinq minutes de cardio léger.",
+      "Ajoute des mouvements dynamiques : moulinets de bras, balancés de jambes, cercles de hanches.",
+      "Termine par quelques répétitions légères de ton premier exercice."
+     ],
+     "q": "Quels mouvements d’échauffement te conviennent le mieux ?",
+     "c": "Essaie aujourd’hui : 4 minutes de cardio et 10 balancés de bras et de jambes."
+    },
+    "it": {
+     "t": "Un riscaldamento generale semplice",
+     "g": "Crea un breve riscaldamento da usare prima di ogni seduta.",
+     "p": [
+      "Inizia con tre-cinque minuti di cardio leggero.",
+      "Aggiungi movimenti dinamici come cerchi con le braccia, slanci delle gambe e rotazioni del bacino.",
+      "Finisci con qualche ripetizione leggera del primo esercizio."
+     ],
+     "q": "Quali movimenti di riscaldamento ti piacciono di più?",
+     "c": "Prova oggi: 4 minuti di cardio e 10 slanci di braccia e gambe."
+    },
+    "pt": {
+     "t": "Um aquecimento geral simples",
+     "g": "Cria um aquecimento curto para usar antes de cada treino.",
+     "p": [
+      "Começa com três a cinco minutos de cardio leve.",
+      "Junta movimentos dinâmicos: círculos de braços, balanços de pernas e de anca.",
+      "Termina com algumas repetições leves do primeiro exercício."
+     ],
+     "q": "Que movimentos de aquecimento te sabem melhor?",
+     "c": "Experimenta hoje: 4 minutos de cardio e 10 balanços de braços e pernas."
+    },
+    "pt_BR": {
+     "t": "Um aquecimento geral simples",
+     "g": "Monte um aquecimento curto para usar antes de cada treino.",
+     "p": [
+      "Comece com três a cinco minutos de cardio leve.",
+      "Inclua movimentos dinâmicos: círculos de braço, balanço de pernas e de quadril.",
+      "Termine com algumas repetições leves do primeiro exercício."
+     ],
+     "q": "Quais movimentos de aquecimento combinam mais com você?",
+     "c": "Teste hoje: 4 minutos de cardio e 10 balanços de braços e pernas."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooling down",
+     "g": "Learn to ease off calmly at the end of a session.",
+     "p": [
+      "Slow down with a few minutes of light walking or cycling.",
+      "Let your breathing and heart rate settle gradually.",
+      "Finish with gentle, relaxed stretches you enjoy."
+     ],
+     "q": "How do you usually feel right after a workout?",
+     "c": "End your next session with 5 minutes of easy movement and stretching."
+    },
+    "de": {
+     "t": "Das Cool-down",
+     "g": "Lerne, eine Einheit ruhig ausklingen zu lassen.",
+     "p": [
+      "Fahr mit ein paar Minuten lockerem Gehen oder Radeln herunter.",
+      "Lass Atmung und Puls allmählich zur Ruhe kommen.",
+      "Schließe mit sanften, entspannten Dehnungen ab, die dir guttun."
+     ],
+     "q": "Wie fühlst du dich normalerweise direkt nach dem Training?",
+     "c": "Beende deine nächste Einheit mit 5 Minuten lockerer Bewegung und Dehnen."
+    },
+    "es": {
+     "t": "La vuelta a la calma",
+     "g": "Aprende a terminar la sesión con tranquilidad.",
+     "p": [
+      "Baja el ritmo con unos minutos de caminar o pedalear suave.",
+      "Deja que la respiración y el pulso se calmen poco a poco.",
+      "Acaba con estiramientos suaves y relajados que disfrutes."
+     ],
+     "q": "¿Cómo te sueles sentir justo después de entrenar?",
+     "c": "Termina tu próxima sesión con 5 minutos de movimiento suave y estiramientos."
+    },
+    "fr": {
+     "t": "Le retour au calme",
+     "g": "Apprends à terminer une séance en douceur.",
+     "p": [
+      "Ralentis avec quelques minutes de marche ou de vélo léger.",
+      "Laisse ta respiration et ton cœur se calmer progressivement.",
+      "Termine par des étirements doux et détendus que tu apprécies."
+     ],
+     "q": "Comment te sens-tu en général juste après une séance ?",
+     "c": "Termine ta prochaine séance par 5 minutes de mouvement léger et d’étirements."
+    },
+    "it": {
+     "t": "Il defaticamento",
+     "g": "Impara a chiudere la seduta con calma.",
+     "p": [
+      "Rallenta con qualche minuto di camminata o bici leggera.",
+      "Lascia che respiro e battito si calmino gradualmente.",
+      "Concludi con allungamenti dolci e rilassati che ti piacciono."
+     ],
+     "q": "Come ti senti di solito subito dopo l’allenamento?",
+     "c": "Chiudi la prossima seduta con 5 minuti di movimento leggero e stretching."
+    },
+    "pt": {
+     "t": "O retorno à calma",
+     "g": "Aprende a terminar o treino com tranquilidade.",
+     "p": [
+      "Abranda com alguns minutos de caminhada ou bicicleta leve.",
+      "Deixa a respiração e o ritmo cardíaco acalmarem aos poucos.",
+      "Termina com alongamentos suaves e relaxados de que gostes."
+     ],
+     "q": "Como te costumas sentir logo a seguir ao treino?",
+     "c": "Acaba o próximo treino com 5 minutos de movimento leve e alongamentos."
+    },
+    "pt_BR": {
+     "t": "Desaquecimento",
+     "g": "Aprenda a encerrar o treino com calma.",
+     "p": [
+      "Diminua o ritmo com alguns minutos de caminhada ou bike leve.",
+      "Deixe a respiração e os batimentos se acalmarem aos poucos.",
+      "Termine com alongamentos suaves e relaxados de que você goste."
+     ],
+     "q": "Como você costuma se sentir logo depois do treino?",
+     "c": "Termine o próximo treino com 5 minutos de movimento leve e alongamento."
+    }
+   }
+  }
+ ]
+}

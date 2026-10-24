@@ -1,0 +1,835 @@
+{
+ "topic": "budget_travel",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Free breakfast and kitchen access",
+     "g": "See how small included extras add up to real savings over a whole trip.",
+     "p": [
+      "A filling free breakfast can carry you through the morning and replace one paid meal a day.",
+      "A guest kitchen lets you make coffee, pack lunches and cook simple dinners.",
+      "Over a week, these extras can save as much as a night or two of accommodation."
+     ],
+     "q": "Which included extra would you value most: breakfast, a kitchen, free laundry or something else?",
+     "c": "Compare two similar stays, one with breakfast and one without, and work out which is better value."
+    },
+    "de": {
+     "t": "Gratisfrühstück und Küchennutzung",
+     "g": "Erkenne, wie kleine inklusive Extras über eine ganze Reise echte Ersparnisse bringen.",
+     "p": [
+      "Ein sättigendes Gratisfrühstück trägt dich durch den Vormittag und ersetzt eine bezahlte Mahlzeit pro Tag.",
+      "Mit einer Gästeküche machst du Kaffee, packst Mittagessen ein und kochst einfache Abendessen.",
+      "Über eine Woche sparen diese Extras oft so viel wie eine oder zwei Übernachtungen."
+     ],
+     "q": "Welches inklusive Extra wäre dir am meisten wert: Frühstück, Küche, Gratiswäsche oder etwas anderes?",
+     "c": "Vergleiche zwei ähnliche Unterkünfte, eine mit und eine ohne Frühstück, und rechne aus, welche sich mehr lohnt."
+    },
+    "es": {
+     "t": "Desayuno gratis y uso de cocina",
+     "g": "Descubre cómo pequeños extras incluidos se convierten en un ahorro real a lo largo del viaje.",
+     "p": [
+      "Un buen desayuno gratis te sostiene toda la mañana y sustituye una comida pagada al día.",
+      "Una cocina para huéspedes te permite hacer café, preparar el almuerzo y cocinar cenas sencillas.",
+      "En una semana, estos extras pueden ahorrar tanto como una o dos noches de alojamiento."
+     ],
+     "q": "¿Qué extra incluido valorarías más: desayuno, cocina, lavandería gratis u otra cosa?",
+     "c": "Compara dos alojamientos parecidos, uno con desayuno y otro sin él, y calcula cuál sale mejor."
+    },
+    "fr": {
+     "t": "Petit-déjeuner offert et cuisine",
+     "g": "Vois comment de petits extras inclus deviennent de vraies économies sur tout un voyage.",
+     "p": [
+      "Un petit-déjeuner copieux offert te tient toute la matinée et remplace un repas payant par jour.",
+      "Une cuisine pour les hôtes permet de faire du café, préparer un pique-nique et cuisiner des dîners simples.",
+      "Sur une semaine, ces extras peuvent faire économiser l'équivalent d'une ou deux nuits."
+     ],
+     "q": "Quel extra inclus apprécierais-tu le plus : petit-déjeuner, cuisine, lessive gratuite ou autre chose ?",
+     "c": "Compare deux logements semblables, l'un avec petit-déjeuner et l'autre sans, et calcule le plus avantageux."
+    },
+    "it": {
+     "t": "Colazione gratis e uso cucina",
+     "g": "Scopri come piccoli extra inclusi diventano un vero risparmio nel corso del viaggio.",
+     "p": [
+      "Una colazione abbondante inclusa ti accompagna per tutta la mattina e sostituisce un pasto a pagamento al giorno.",
+      "Una cucina per gli ospiti ti permette di fare il caffè, preparare il pranzo e cucinare cene semplici.",
+      "In una settimana, questi extra possono far risparmiare quanto una o due notti di alloggio."
+     ],
+     "q": "Quale extra incluso apprezzeresti di più: colazione, cucina, lavanderia gratuita o altro?",
+     "c": "Confronta due alloggi simili, uno con colazione e uno senza, e calcola quale conviene di più."
+    },
+    "pt": {
+     "t": "Pequeno-almoço grátis e cozinha",
+     "g": "Percebe como pequenos extras incluídos se tornam uma poupança real ao longo da viagem.",
+     "p": [
+      "Um pequeno-almoço reforçado e grátis aguenta-te a manhã toda e substitui uma refeição paga por dia.",
+      "Uma cozinha para hóspedes deixa-te fazer café, preparar o almoço e cozinhar jantares simples.",
+      "Numa semana, estes extras podem poupar tanto como uma ou duas noites de alojamento."
+     ],
+     "q": "Que extra incluído valorizarias mais: pequeno-almoço, cozinha, lavandaria grátis ou outra coisa?",
+     "c": "Compara dois alojamentos parecidos, um com pequeno-almoço e outro sem, e calcula qual compensa mais."
+    },
+    "pt_BR": {
+     "t": "Café da manhã grátis e cozinha",
+     "g": "Veja como pequenos extras incluídos viram economia de verdade ao longo da viagem.",
+     "p": [
+      "Um café da manhã reforçado e grátis segura você a manhã toda e substitui uma refeição paga por dia.",
+      "Uma cozinha para hóspedes deixa você fazer café, preparar marmita e cozinhar jantares simples.",
+      "Em uma semana, esses extras podem economizar o equivalente a uma ou duas diárias."
+     ],
+     "q": "Que extra incluído você mais valorizaria: café da manhã, cozinha, lavanderia grátis ou outra coisa?",
+     "c": "Compare duas hospedagens parecidas, uma com café da manhã e outra sem, e calcule qual compensa mais."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Camping basics",
+     "g": "Discover campsites as a cheap way to sleep close to nature.",
+     "p": [
+      "Campsites usually charge per tent or per person, often far less than a room.",
+      "Many offer showers, toilets and sometimes a kitchen, shop or even rental tents.",
+      "Start with a well-equipped campsite near a town, and always check local rules on where camping is allowed."
+     ],
+     "q": "Have you ever slept in a tent? What do you remember most about it?",
+     "c": "Find one campsite near a place you love and note its facilities and what you would need to bring."
+    },
+    "de": {
+     "t": "Camping-Grundlagen",
+     "g": "Entdecke Campingplätze als günstige Art, nah an der Natur zu schlafen.",
+     "p": [
+      "Campingplätze berechnen meist pro Zelt oder Person, oft viel weniger als ein Zimmer.",
+      "Viele bieten Duschen, Toiletten und manchmal Küche, Laden oder sogar Mietzelte.",
+      "Fang mit einem gut ausgestatteten Platz nahe einem Ort an und prüf immer, wo Zelten erlaubt ist."
+     ],
+     "q": "Hast du schon mal im Zelt geschlafen? Woran erinnerst du dich am meisten?",
+     "c": "Finde einen Campingplatz in der Nähe eines Lieblingsorts und notiere Ausstattung und was du mitbringen müsstest."
+    },
+    "es": {
+     "t": "Lo básico del camping",
+     "g": "Descubre los campings como una forma barata de dormir cerca de la naturaleza.",
+     "p": [
+      "Los campings suelen cobrar por tienda o por persona, a menudo mucho menos que una habitación.",
+      "Muchos tienen duchas, baños y a veces cocina, tienda o incluso tiendas de alquiler.",
+      "Empieza por un camping bien equipado cerca de un pueblo y revisa siempre dónde está permitido acampar."
+     ],
+     "q": "¿Has dormido alguna vez en una tienda de campaña? ¿Qué es lo que más recuerdas?",
+     "c": "Busca un camping cerca de un lugar que te encante y apunta sus servicios y lo que tendrías que llevar."
+    },
+    "fr": {
+     "t": "Les bases du camping",
+     "g": "Découvre les campings, une façon économique de dormir près de la nature.",
+     "p": [
+      "Les campings facturent souvent par tente ou par personne, souvent bien moins qu'une chambre.",
+      "Beaucoup ont douches, sanitaires et parfois cuisine, épicerie ou même tentes à louer.",
+      "Commence par un camping bien équipé près d'une ville, et vérifie toujours où le camping est autorisé."
+     ],
+     "q": "As-tu déjà dormi sous une tente ? Qu'est-ce qui t'a le plus marqué ?",
+     "c": "Trouve un camping près d'un lieu que tu aimes et note ses équipements et ce que tu devrais emporter."
+    },
+    "it": {
+     "t": "Le basi del campeggio",
+     "g": "Scopri i campeggi come un modo economico per dormire vicino alla natura.",
+     "p": [
+      "I campeggi di solito si pagano a tenda o a persona, spesso molto meno di una camera.",
+      "Molti hanno docce, bagni e a volte cucina, negozio o persino tende a noleggio.",
+      "Inizia da un campeggio ben attrezzato vicino a un paese e controlla sempre dove è permesso campeggiare."
+     ],
+     "q": "Hai mai dormito in tenda? Cosa ricordi di più?",
+     "c": "Trova un campeggio vicino a un posto che ami e annota i servizi e cosa dovresti portare."
+    },
+    "pt": {
+     "t": "O básico do campismo",
+     "g": "Descobre os parques de campismo como forma barata de dormir perto da natureza.",
+     "p": [
+      "Os parques de campismo cobram normalmente por tenda ou por pessoa, muitas vezes bem menos do que um quarto.",
+      "Muitos têm duches, casas de banho e às vezes cozinha, loja ou até tendas para alugar.",
+      "Começa por um parque bem equipado perto de uma vila e confirma sempre onde é permitido acampar."
+     ],
+     "q": "Já dormiste numa tenda? Do que te lembras mais?",
+     "c": "Encontra um parque de campismo perto de um sítio de que gostes e anota os serviços e o que terias de levar."
+    },
+    "pt_BR": {
+     "t": "O básico do camping",
+     "g": "Descubra o camping como um jeito barato de dormir perto da natureza.",
+     "p": [
+      "Os campings costumam cobrar por barraca ou por pessoa, muitas vezes bem menos que um quarto.",
+      "Muitos têm chuveiro, banheiro e às vezes cozinha, mercadinho ou até barracas para alugar.",
+      "Comece por um camping bem estruturado perto de uma cidade e confira sempre onde é permitido acampar."
+     ],
+     "q": "Você já dormiu numa barraca? Do que você mais se lembra?",
+     "c": "Ache um camping perto de um lugar que você ama e anote a estrutura e o que você precisaria levar."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hospitality exchange networks",
+     "g": "Learn about staying with locals for free and the etiquette of being a good guest.",
+     "p": [
+      "Hospitality networks connect travellers with locals who offer a sofa or spare room for free.",
+      "It is about cultural exchange, not just a free bed: share stories, a meal or a skill.",
+      "Read profiles and reviews carefully, communicate clearly, respect house rules and leave a thank-you."
+     ],
+     "q": "What could you share with a local host: a recipe from home, a song, a story or a game?",
+     "c": "Write a short, friendly message you could send a potential host, saying who you are and why you travel."
+    },
+    "de": {
+     "t": "Gastfreundschaftsnetzwerke",
+     "g": "Lerne, wie du kostenlos bei Einheimischen wohnst und wie du ein guter Gast bist.",
+     "p": [
+      "Gastfreundschaftsnetzwerke verbinden Reisende mit Einheimischen, die gratis ein Sofa oder Gästezimmer anbieten.",
+      "Es geht um kulturellen Austausch, nicht nur ums Gratisbett: Teile Geschichten, ein Essen oder ein Talent.",
+      "Lies Profile und Bewertungen genau, kommuniziere klar, achte die Hausregeln und bedank dich zum Abschied."
+     ],
+     "q": "Was könntest du mit Gastgebern teilen: ein Rezept von zu Hause, ein Lied, eine Geschichte oder ein Spiel?",
+     "c": "Schreib eine kurze, freundliche Nachricht an mögliche Gastgeber: wer du bist und warum du reist."
+    },
+    "es": {
+     "t": "Redes de hospitalidad",
+     "g": "Aprende a alojarte gratis con gente local y la etiqueta de ser un buen invitado.",
+     "p": [
+      "Las redes de hospitalidad conectan viajeros con locales que ofrecen un sofá o una habitación gratis.",
+      "Se trata de intercambio cultural, no solo de una cama gratis: comparte historias, una comida o una habilidad.",
+      "Lee bien perfiles y opiniones, comunícate con claridad, respeta las normas de la casa y da las gracias al irte."
+     ],
+     "q": "¿Qué podrías compartir con un anfitrión local: una receta de casa, una canción, una historia o un juego?",
+     "c": "Escribe un mensaje breve y amable para un posible anfitrión diciendo quién eres y por qué viajas."
+    },
+    "fr": {
+     "t": "Réseaux d'hospitalité",
+     "g": "Découvre comment loger gratuitement chez l'habitant et les règles pour être un bon invité.",
+     "p": [
+      "Les réseaux d'hospitalité relient des voyageurs à des habitants qui offrent gratuitement un canapé ou une chambre.",
+      "C'est un échange culturel, pas seulement un lit gratuit : partage des histoires, un repas ou un talent.",
+      "Lis bien profils et avis, communique clairement, respecte les règles de la maison et laisse un mot de merci."
+     ],
+     "q": "Que pourrais-tu partager avec un hôte : une recette de chez toi, une chanson, une histoire ou un jeu ?",
+     "c": "Écris un court message chaleureux à un hôte potentiel, en disant qui tu es et pourquoi tu voyages."
+    },
+    "it": {
+     "t": "Reti di ospitalità",
+     "g": "Scopri come dormire gratis da gente del posto e il galateo per essere un buon ospite.",
+     "p": [
+      "Le reti di ospitalità mettono in contatto viaggiatori e gente del posto che offre gratis un divano o una stanza.",
+      "È uno scambio culturale, non solo un letto gratis: condividi storie, un pasto o una tua abilità.",
+      "Leggi bene profili e recensioni, comunica con chiarezza, rispetta le regole di casa e lascia un grazie."
+     ],
+     "q": "Cosa potresti condividere con chi ti ospita: una ricetta di casa, una canzone, una storia o un gioco?",
+     "c": "Scrivi un breve messaggio cordiale per un possibile host, dicendo chi sei e perché viaggi."
+    },
+    "pt": {
+     "t": "Redes de hospitalidade",
+     "g": "Aprende a ficar de graça em casa de locais e as regras para seres um bom hóspede.",
+     "p": [
+      "As redes de hospitalidade ligam viajantes a locais que oferecem um sofá ou um quarto de graça.",
+      "Trata-se de troca cultural, não só de uma cama grátis: partilha histórias, uma refeição ou um talento.",
+      "Lê bem perfis e avaliações, comunica com clareza, respeita as regras da casa e deixa um agradecimento."
+     ],
+     "q": "O que podias partilhar com um anfitrião local: uma receita de casa, uma canção, uma história ou um jogo?",
+     "c": "Escreve uma mensagem curta e simpática para um possível anfitrião a dizer quem és e porque viajas."
+    },
+    "pt_BR": {
+     "t": "Redes de hospitalidade",
+     "g": "Aprenda a se hospedar de graça na casa de locais e a etiqueta de ser um bom hóspede.",
+     "p": [
+      "Redes de hospitalidade conectam viajantes a moradores que oferecem um sofá ou quarto de graça.",
+      "É troca cultural, não só uma cama grátis: compartilhe histórias, uma refeição ou uma habilidade.",
+      "Leia bem perfis e avaliações, comunique-se com clareza, respeite as regras da casa e deixe um agradecimento."
+     ],
+     "q": "O que você poderia compartilhar com um anfitrião local: uma receita de casa, uma música, uma história ou um jogo?",
+     "c": "Escreva uma mensagem curta e simpática para um possível anfitrião dizendo quem você é e por que viaja."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating well for less",
+     "g": "Use local food, markets and simple habits to cut food costs without losing flavour.",
+     "p": [
+      "Eat what locals eat: regional dishes are usually cheaper and fresher than imported favourites.",
+      "Make your main meal at lunchtime and keep dinner light, simple or picnic-style.",
+      "Carry snacks and water so hunger never pushes you into the nearest overpriced café."
+     ],
+     "q": "What local dish from any country would you happily eat every day on a trip?",
+     "c": "Plan one day of meals in a destination: one local breakfast, one market lunch and one simple dinner."
+    },
+    "de": {
+     "t": "Gut essen für weniger",
+     "g": "Senke die Essenskosten mit regionaler Küche, Märkten und einfachen Gewohnheiten, ohne auf Geschmack zu verzichten.",
+     "p": [
+      "Iss, was Einheimische essen: Regionale Gerichte sind meist günstiger und frischer als importierte Favoriten.",
+      "Mach das Mittagessen zur Hauptmahlzeit und halte das Abendessen leicht oder als Picknick.",
+      "Hab Snacks und Wasser dabei, damit dich der Hunger nie ins nächste überteuerte Café treibt."
+     ],
+     "q": "Welches regionale Gericht aus irgendeinem Land würdest du auf Reisen gern jeden Tag essen?",
+     "c": "Plane einen Esstag an einem Reiseziel: ein lokales Frühstück, ein Mittagessen vom Markt und ein einfaches Abendessen."
+    },
+    "es": {
+     "t": "Comer bien gastando menos",
+     "g": "Usa la comida local, los mercados y hábitos sencillos para gastar menos en comida sin perder sabor.",
+     "p": [
+      "Come lo que comen los locales: los platos regionales suelen ser más baratos y frescos que lo importado.",
+      "Haz la comida principal al mediodía y deja la cena ligera, sencilla o tipo pícnic.",
+      "Lleva tentempiés y agua para que el hambre no te empuje al café caro más cercano."
+     ],
+     "q": "¿Qué plato local de cualquier país comerías encantado todos los días en un viaje?",
+     "c": "Planea un día de comidas en un destino: un desayuno local, un almuerzo de mercado y una cena sencilla."
+    },
+    "fr": {
+     "t": "Bien manger pour moins cher",
+     "g": "Utilise la cuisine locale, les marchés et des habitudes simples pour réduire le budget repas sans perdre en saveur.",
+     "p": [
+      "Mange comme les habitants : les plats régionaux sont souvent moins chers et plus frais que les produits importés.",
+      "Fais du déjeuner ton repas principal et garde un dîner léger, simple ou en pique-nique.",
+      "Garde des en-cas et de l'eau sur toi pour que la faim ne te pousse jamais dans le premier café hors de prix."
+     ],
+     "q": "Quel plat local, de n'importe quel pays, mangerais-tu volontiers tous les jours en voyage ?",
+     "c": "Planifie une journée de repas dans une destination : petit-déjeuner local, déjeuner au marché et dîner simple."
+    },
+    "it": {
+     "t": "Mangiare bene spendendo meno",
+     "g": "Usa cibo locale, mercati e abitudini semplici per tagliare la spesa per il cibo senza perdere gusto.",
+     "p": [
+      "Mangia ciò che mangia la gente del posto: i piatti regionali costano meno e sono più freschi dei prodotti importati.",
+      "Fai del pranzo il pasto principale e tieni la cena leggera, semplice o in stile picnic.",
+      "Porta snack e acqua, così la fame non ti spinge mai nel primo bar troppo caro."
+     ],
+     "q": "Quale piatto locale di qualsiasi paese mangeresti volentieri ogni giorno in viaggio?",
+     "c": "Pianifica una giornata di pasti in una meta: una colazione locale, un pranzo dal mercato e una cena semplice."
+    },
+    "pt": {
+     "t": "Comer bem gastando menos",
+     "g": "Usa a comida local, os mercados e hábitos simples para gastar menos em comida sem perder sabor.",
+     "p": [
+      "Come o que os locais comem: os pratos regionais costumam ser mais baratos e frescos do que o importado.",
+      "Faz a refeição principal ao almoço e deixa o jantar leve, simples ou em modo piquenique.",
+      "Leva snacks e água para que a fome nunca te empurre para o café caro mais próximo."
+     ],
+     "q": "Que prato local de qualquer país comerias com gosto todos os dias numa viagem?",
+     "c": "Planeia um dia de refeições num destino: um pequeno-almoço local, um almoço de mercado e um jantar simples."
+    },
+    "pt_BR": {
+     "t": "Comer bem gastando menos",
+     "g": "Use comida local, mercados e hábitos simples para gastar menos com comida sem perder o sabor.",
+     "p": [
+      "Coma o que os locais comem: pratos regionais costumam ser mais baratos e frescos que os importados.",
+      "Faça a refeição principal no almoço e deixe o jantar leve, simples ou estilo piquenique.",
+      "Leve lanche e água para a fome nunca empurrar você para o café caro mais próximo."
+     ],
+     "q": "Que prato típico de qualquer país você comeria feliz todos os dias numa viagem?",
+     "c": "Planeje um dia de refeições num destino: um café da manhã local, um almoço de mercado e um jantar simples."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Street food smarts",
+     "g": "Enjoy street food wisely by choosing busy stalls, fresh cooking and local favourites.",
+     "p": [
+      "A long queue of locals is the best sign that food is tasty, fresh and fairly priced.",
+      "Pick stalls that cook in front of you, so your food comes hot and freshly made.",
+      "Watch what locals order and point or ask; it is a fun way to try the real speciality."
+     ],
+     "q": "What street food have you tried, or would you love to try, somewhere in the world?",
+     "c": "Next time you see a food stall or market, watch what locals order most and give it a try."
+    },
+    "de": {
+     "t": "Clever Streetfood genießen",
+     "g": "Genieß Streetfood klug: an belebten Ständen, frisch gekocht und mit lokalen Lieblingen.",
+     "p": [
+      "Eine lange Schlange Einheimischer ist das beste Zeichen für leckeres, frisches und fair bepreistes Essen.",
+      "Wähle Stände, die vor deinen Augen kochen, dann kommt dein Essen heiß und frisch zubereitet.",
+      "Schau, was Einheimische bestellen, und zeig darauf oder frag: So probierst du die echte Spezialität."
+     ],
+     "q": "Welches Streetfood hast du schon probiert oder würdest du gern irgendwo auf der Welt probieren?",
+     "c": "Wenn du das nächste Mal einen Essensstand siehst, schau, was Einheimische am meisten bestellen, und probier es."
+    },
+    "es": {
+     "t": "Comida callejera con cabeza",
+     "g": "Disfruta de la comida callejera con sentido: puestos concurridos, cocina al momento y favoritos locales.",
+     "p": [
+      "Una cola larga de gente local es la mejor señal de comida rica, fresca y a buen precio.",
+      "Elige puestos que cocinen delante de ti, así la comida llega caliente y recién hecha.",
+      "Fíjate en lo que piden los locales y señálalo o pregunta: es una forma divertida de probar la especialidad."
+     ],
+     "q": "¿Qué comida callejera has probado o te encantaría probar en algún lugar del mundo?",
+     "c": "La próxima vez que veas un puesto de comida, mira qué piden más los locales y pruébalo."
+    },
+    "fr": {
+     "t": "La street food, mode malin",
+     "g": "Profite de la cuisine de rue avec bon sens : stands animés, cuisson minute et spécialités locales.",
+     "p": [
+      "Une longue file d'habitants est le meilleur signe d'une cuisine savoureuse, fraîche et à prix honnête.",
+      "Choisis les stands qui cuisinent devant toi : ton plat arrive chaud et fraîchement préparé.",
+      "Regarde ce que commandent les habitants et montre du doigt ou demande : c'est amusant et authentique."
+     ],
+     "q": "Quelle street food as-tu goûtée, ou rêverais-tu de goûter, quelque part dans le monde ?",
+     "c": "La prochaine fois que tu vois un stand de nourriture, observe ce que les habitants commandent le plus et goûte-le."
+    },
+    "it": {
+     "t": "Street food con furbizia",
+     "g": "Goditi il cibo di strada con giudizio: banchi affollati, cottura al momento e specialità locali.",
+     "p": [
+      "Una lunga fila di gente del posto è il segnale migliore di cibo buono, fresco e a prezzo onesto.",
+      "Scegli i banchi che cucinano davanti a te, così il cibo arriva caldo e appena fatto.",
+      "Guarda cosa ordina la gente del posto e indica o chiedi: è un modo divertente per assaggiare la vera specialità."
+     ],
+     "q": "Quale cibo di strada hai assaggiato o ti piacerebbe assaggiare da qualche parte nel mondo?",
+     "c": "La prossima volta che vedi un banco di cibo, osserva cosa ordina di più la gente del posto e assaggialo."
+    },
+    "pt": {
+     "t": "Comida de rua com cabeça",
+     "g": "Aproveita a comida de rua com bom senso: bancas movimentadas, cozinha na hora e favoritos locais.",
+     "p": [
+      "Uma fila longa de locais é o melhor sinal de comida saborosa, fresca e a bom preço.",
+      "Escolhe bancas que cozinham à tua frente, para a comida chegar quente e acabada de fazer.",
+      "Repara no que os locais pedem e aponta ou pergunta: é uma forma divertida de provar a especialidade."
+     ],
+     "q": "Que comida de rua já provaste ou adorarias provar em algum sítio do mundo?",
+     "c": "Da próxima vez que vires uma banca de comida, repara no que os locais pedem mais e prova."
+    },
+    "pt_BR": {
+     "t": "Comida de rua com esperteza",
+     "g": "Curta comida de rua com bom senso: barracas movimentadas, comida feita na hora e favoritos locais.",
+     "p": [
+      "Uma fila grande de moradores é o melhor sinal de comida gostosa, fresca e com preço justo.",
+      "Escolha barracas que cozinham na sua frente, assim a comida chega quente e feita na hora.",
+      "Observe o que os locais pedem e aponte ou pergunte: é um jeito divertido de provar a especialidade."
+     ],
+     "q": "Que comida de rua você já provou ou adoraria provar em algum lugar do mundo?",
+     "c": "Da próxima vez que vir uma barraca de comida, repare no que os locais mais pedem e prove."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lunch menus and set meals",
+     "g": "Discover the cheaper fixed lunch with several courses that many places offer.",
+     "p": [
+      "In many countries, restaurants offer a set lunch on weekdays at a much lower price than dinner.",
+      "It often includes a starter, a main course and a dessert or drink, so it is filling and great value.",
+      "Look for boards outside with the day's menu, and eat your big meal at midday."
+     ],
+     "q": "Would you rather have a big lunch and a light dinner, or the other way around?",
+     "c": "Find out what a set lunch is called in one country you would like to visit."
+    },
+    "de": {
+     "t": "Mittagsmenüs und Tagesgerichte",
+     "g": "Entdecke das günstigere Mittagsmenü mit mehreren Gängen, das viele Lokale anbieten.",
+     "p": [
+      "In vielen Ländern bieten Restaurants werktags ein Mittagsmenü, das viel günstiger ist als abends.",
+      "Es umfasst oft Vorspeise, Hauptgang und Nachtisch oder Getränk, ist also sättigend und preiswert.",
+      "Achte auf Tafeln vor dem Lokal mit dem Tagesmenü und iss deine große Mahlzeit mittags."
+     ],
+     "q": "Isst du lieber mittags groß und abends leicht oder umgekehrt?",
+     "c": "Finde heraus, wie das Mittagsmenü in einem Land heißt, das du gern besuchen würdest."
+    },
+    "es": {
+     "t": "Menús del día y comidas fijas",
+     "g": "Descubre el almuerzo de precio fijo con varios platos, más barato, que ofrecen muchos sitios.",
+     "p": [
+      "En muchos países los restaurantes ofrecen entre semana un menú de mediodía mucho más barato que la cena.",
+      "Suele incluir primero, segundo y postre o bebida, así que llena y sale a muy buen precio.",
+      "Busca las pizarras en la puerta con el menú del día y haz tu comida fuerte al mediodía."
+     ],
+     "q": "¿Prefieres una comida grande al mediodía y una cena ligera, o al revés?",
+     "c": "Averigua cómo se llama el menú del mediodía en un país que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Formules du midi et menus",
+     "g": "Découvre la formule déjeuner moins chère, avec plusieurs plats, que proposent beaucoup d'endroits.",
+     "p": [
+      "Dans de nombreux pays, les restaurants proposent en semaine un menu du midi bien moins cher que le soir.",
+      "Il comprend souvent entrée, plat et dessert ou boisson : c'est copieux et très avantageux.",
+      "Repère les ardoises devant les restaurants avec le menu du jour, et prends ton vrai repas à midi."
+     ],
+     "q": "Préfères-tu un gros déjeuner et un dîner léger, ou l'inverse ?",
+     "c": "Découvre comment s'appelle la formule du midi dans un pays que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Menù pranzo e piatti del giorno",
+     "g": "Scopri il pranzo a prezzo fisso con più portate, più economico, che offrono tanti locali.",
+     "p": [
+      "In molti paesi i ristoranti offrono nei giorni feriali un menù pranzo molto più economico della cena.",
+      "Spesso include primo, secondo e dolce o bevanda, quindi sazia e conviene molto.",
+      "Cerca le lavagne fuori dai locali con il menù del giorno e fai il pasto principale a mezzogiorno."
+     ],
+     "q": "Preferisci un pranzo abbondante e una cena leggera, o il contrario?",
+     "c": "Scopri come si chiama il menù pranzo in un paese che ti piacerebbe visitare."
+    },
+    "pt": {
+     "t": "Menus de almoço e pratos do dia",
+     "g": "Descobre o almoço a preço fixo com vários pratos, mais barato, que muitos sítios oferecem.",
+     "p": [
+      "Em muitos países, os restaurantes têm durante a semana um menu de almoço bem mais barato do que o jantar.",
+      "Costuma incluir entrada, prato principal e sobremesa ou bebida, por isso enche e compensa muito.",
+      "Procura os quadros à porta com o menu do dia e faz a refeição principal ao almoço."
+     ],
+     "q": "Preferes um almoço grande e um jantar leve, ou ao contrário?",
+     "c": "Descobre como se chama o menu de almoço num país que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Menu executivo e prato feito",
+     "g": "Descubra o almoço de preço fixo com vários pratos, mais barato, que muitos lugares oferecem.",
+     "p": [
+      "Em muitos países, restaurantes oferecem durante a semana um menu de almoço bem mais barato que o jantar.",
+      "Costuma incluir entrada, prato principal e sobremesa ou bebida, então enche e compensa muito.",
+      "Procure as lousas na porta com o menu do dia e faça a refeição principal no almoço."
+     ],
+     "q": "Você prefere um almoço caprichado e um jantar leve, ou o contrário?",
+     "c": "Descubra como se chama o almoço de preço fixo num país que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shopping at local markets",
+     "g": "Enjoy fresh produce, local snacks and the chance to practise a few words with vendors.",
+     "p": [
+      "Markets sell seasonal fruit, bread, cheese and snacks, often cheaper and fresher than shops.",
+      "Walk the whole market first to compare, then buy; going near closing time can bring bargains.",
+      "Learn hello, thank you and how much in the local language; vendors usually love the effort."
+     ],
+     "q": "What would be the first thing you would buy at a market in a new country?",
+     "c": "Learn how to say hello, thank you and how much in the language of a place you want to visit."
+    },
+    "de": {
+     "t": "Einkaufen auf lokalen Märkten",
+     "g": "Genieße frische Produkte, lokale Snacks und die Chance, ein paar Worte mit Händlern zu üben.",
+     "p": [
+      "Märkte verkaufen saisonales Obst, Brot, Käse und Snacks, oft günstiger und frischer als Geschäfte.",
+      "Geh erst einmal über den ganzen Markt, vergleiche und kauf dann; kurz vor Schluss gibt es oft Schnäppchen.",
+      "Lerne Hallo, Danke und Wie viel kostet das in der Landessprache; Händler freuen sich meist über die Mühe."
+     ],
+     "q": "Was würdest du auf einem Markt in einem neuen Land als Erstes kaufen?",
+     "c": "Lerne, wie man Hallo, Danke und Wie viel kostet das in der Sprache eines Wunschziels sagt."
+    },
+    "es": {
+     "t": "Comprar en mercados locales",
+     "g": "Disfruta de productos frescos, tentempiés locales y la ocasión de practicar unas palabras con los vendedores.",
+     "p": [
+      "Los mercados venden fruta de temporada, pan, queso y picoteo, a menudo más baratos y frescos que las tiendas.",
+      "Recorre todo el mercado antes de comprar para comparar; cerca del cierre suele haber gangas.",
+      "Aprende hola, gracias y cuánto cuesta en el idioma local: a los vendedores les encanta el esfuerzo."
+     ],
+     "q": "¿Qué sería lo primero que comprarías en un mercado de un país nuevo?",
+     "c": "Aprende a decir hola, gracias y cuánto cuesta en el idioma de un lugar que quieras visitar."
+    },
+    "fr": {
+     "t": "Faire son marché",
+     "g": "Profite des produits frais, des spécialités locales et de l'occasion de pratiquer quelques mots avec les marchands.",
+     "p": [
+      "Les marchés vendent fruits de saison, pain, fromage et en-cas, souvent moins chers et plus frais qu'en magasin.",
+      "Fais d'abord le tour complet pour comparer, puis achète ; en fin de marché, il y a souvent de bonnes affaires.",
+      "Apprends bonjour, merci et combien dans la langue locale : les marchands apprécient en général l'effort."
+     ],
+     "q": "Quelle serait la première chose que tu achèterais sur un marché dans un nouveau pays ?",
+     "c": "Apprends à dire bonjour, merci et combien dans la langue d'un endroit que tu veux visiter."
+    },
+    "it": {
+     "t": "Fare la spesa ai mercati",
+     "g": "Goditi prodotti freschi, snack locali e l'occasione di provare qualche parola con i venditori.",
+     "p": [
+      "I mercati vendono frutta di stagione, pane, formaggi e stuzzichini, spesso più freschi ed economici dei negozi.",
+      "Fai prima il giro di tutto il mercato per confrontare, poi compra; verso la chiusura ci sono spesso occasioni.",
+      "Impara ciao, grazie e quanto costa nella lingua locale: di solito i venditori apprezzano molto lo sforzo."
+     ],
+     "q": "Quale sarebbe la prima cosa che compreresti al mercato in un paese nuovo?",
+     "c": "Impara a dire ciao, grazie e quanto costa nella lingua di un posto che vuoi visitare."
+    },
+    "pt": {
+     "t": "Comprar em mercados locais",
+     "g": "Aproveita produtos frescos, petiscos locais e a oportunidade de praticar umas palavras com os vendedores.",
+     "p": [
+      "Os mercados vendem fruta da época, pão, queijo e petiscos, muitas vezes mais baratos e frescos do que as lojas.",
+      "Dá primeiro a volta ao mercado todo para comparar e só depois compra; perto do fecho há muitas vezes pechinchas.",
+      "Aprende olá, obrigado e quanto custa na língua local: os vendedores costumam adorar o esforço."
+     ],
+     "q": "Qual seria a primeira coisa que comprarias num mercado de um país novo?",
+     "c": "Aprende a dizer olá, obrigado e quanto custa na língua de um sítio que queres visitar."
+    },
+    "pt_BR": {
+     "t": "Comprando em feiras e mercados",
+     "g": "Curta produtos frescos, petiscos locais e a chance de praticar algumas palavras com os vendedores.",
+     "p": [
+      "Feiras e mercados vendem frutas da estação, pão, queijo e petiscos, muitas vezes mais baratos e frescos que lojas.",
+      "Percorra a feira toda antes de comprar para comparar; perto do fim costuma ter pechinchas.",
+      "Aprenda olá, obrigado e quanto custa na língua local: os vendedores costumam adorar o esforço."
+     ],
+     "q": "Qual seria a primeira coisa que você compraria numa feira de um país novo?",
+     "c": "Aprenda a dizer olá, obrigado e quanto custa na língua de um lugar que você quer visitar."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Supermarket picnics",
+     "g": "Build a tasty picnic and eat with a view for a fraction of a restaurant bill.",
+     "p": [
+      "Bread, cheese, fruit, vegetables and a local treat make an easy, delicious picnic.",
+      "Supermarkets often sell ready salads and snacks, and some have cheaper deals in the evening.",
+      "Pick a park bench, a riverside, a beach or a viewpoint, and the view comes free."
+     ],
+     "q": "What would be in your dream picnic basket, and where would you eat it?",
+     "c": "Plan a picnic menu with five items you could buy in any supermarket and choose a scenic spot."
+    },
+    "de": {
+     "t": "Picknick aus dem Supermarkt",
+     "g": "Stell ein leckeres Picknick zusammen und iss mit Aussicht für einen Bruchteil einer Restaurantrechnung.",
+     "p": [
+      "Brot, Käse, Obst, Gemüse und eine regionale Leckerei ergeben ein einfaches, köstliches Picknick.",
+      "Supermärkte verkaufen oft fertige Salate und Snacks, manche haben abends günstigere Angebote.",
+      "Such dir eine Parkbank, ein Flussufer, einen Strand oder Aussichtspunkt, die Aussicht gibt es gratis."
+     ],
+     "q": "Was wäre in deinem Traum-Picknickkorb, und wo würdest du ihn auspacken?",
+     "c": "Plane ein Picknick mit fünf Dingen aus jedem Supermarkt und wähle einen schönen Ort dafür."
+    },
+    "es": {
+     "t": "Pícnics de supermercado",
+     "g": "Prepara un pícnic sabroso y come con vistas por una fracción de lo que cuesta un restaurante.",
+     "p": [
+      "Pan, queso, fruta, verdura y algún capricho local forman un pícnic fácil y delicioso.",
+      "Los supermercados suelen vender ensaladas y tentempiés listos, y algunos tienen ofertas por la tarde.",
+      "Elige un banco en el parque, la orilla de un río, una playa o un mirador: las vistas son gratis."
+     ],
+     "q": "¿Qué llevaría tu cesta de pícnic soñada y dónde te la comerías?",
+     "c": "Planea un pícnic con cinco cosas que podrías comprar en cualquier supermercado y elige un sitio con vistas."
+    },
+    "fr": {
+     "t": "Pique-niques du supermarché",
+     "g": "Compose un pique-nique savoureux et mange avec vue pour une fraction de l'addition au restaurant.",
+     "p": [
+      "Pain, fromage, fruits, légumes et une douceur locale font un pique-nique simple et délicieux.",
+      "Les supermarchés vendent souvent salades et en-cas prêts à manger, avec parfois des remises le soir.",
+      "Choisis un banc dans un parc, une berge, une plage ou un belvédère : la vue est offerte."
+     ],
+     "q": "Que mettrais-tu dans ton panier de pique-nique idéal, et où le déguster ?",
+     "c": "Prévois un pique-nique avec cinq articles trouvables dans n'importe quel supermarché et choisis un joli coin."
+    },
+    "it": {
+     "t": "Picnic dal supermercato",
+     "g": "Prepara un picnic gustoso e mangia con vista per una frazione del conto di un ristorante.",
+     "p": [
+      "Pane, formaggio, frutta, verdura e una specialità locale fanno un picnic facile e delizioso.",
+      "I supermercati vendono spesso insalate e snack pronti, e alcuni hanno sconti la sera.",
+      "Scegli una panchina al parco, la riva di un fiume, una spiaggia o un belvedere: il panorama è gratis."
+     ],
+     "q": "Cosa ci sarebbe nel tuo cestino da picnic dei sogni, e dove lo apriresti?",
+     "c": "Pianifica un picnic con cinque cose che potresti comprare in qualsiasi supermercato e scegli un posto panoramico."
+    },
+    "pt": {
+     "t": "Piqueniques de supermercado",
+     "g": "Monta um piquenique saboroso e come com vista por uma fração da conta de um restaurante.",
+     "p": [
+      "Pão, queijo, fruta, legumes e uma gulodice local fazem um piquenique fácil e delicioso.",
+      "Os supermercados vendem muitas vezes saladas e snacks prontos, e alguns têm descontos ao fim do dia.",
+      "Escolhe um banco de jardim, a margem de um rio, uma praia ou um miradouro: a vista é grátis."
+     ],
+     "q": "O que levaria o teu cesto de piquenique de sonho e onde o comerias?",
+     "c": "Planeia um piquenique com cinco coisas que comprarias em qualquer supermercado e escolhe um sítio com vista."
+    },
+    "pt_BR": {
+     "t": "Piquenique de supermercado",
+     "g": "Monte um piquenique gostoso e coma com vista por uma fração da conta de um restaurante.",
+     "p": [
+      "Pão, queijo, frutas, legumes e uma guloseima local formam um piquenique fácil e delicioso.",
+      "Supermercados costumam vender saladas e lanches prontos, e alguns têm descontos no fim do dia.",
+      "Escolha um banco de praça, a beira de um rio, uma praia ou um mirante: a vista é de graça."
+     ],
+     "q": "O que teria na sua cesta de piquenique dos sonhos e onde você comeria?",
+     "c": "Planeje um piquenique com cinco itens que você compraria em qualquer supermercado e escolha um lugar com vista."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking in hostels",
+     "g": "Learn simple one-pot recipes and the joy of sharing meals with fellow travellers.",
+     "p": [
+      "One-pot dishes like pasta, rice with vegetables or a hearty soup need few tools and little time.",
+      "Check the free food shelf, label your groceries and always wash up right after cooking.",
+      "Cooking together and splitting ingredients is cheaper and a great way to make friends."
+     ],
+     "q": "What simple dish could you cook for a group of new friends in a hostel kitchen?",
+     "c": "Write a one-pot recipe with five ingredients that you could cook in any shared kitchen."
+    },
+    "de": {
+     "t": "Kochen im Hostel",
+     "g": "Lerne einfache Eintopfrezepte und die Freude, Mahlzeiten mit anderen Reisenden zu teilen.",
+     "p": [
+      "Gerichte aus einem Topf wie Pasta, Reis mit Gemüse oder eine kräftige Suppe brauchen wenig Werkzeug und Zeit.",
+      "Schau ins Gratis-Essensregal, beschrifte deine Lebensmittel und spül immer gleich nach dem Kochen.",
+      "Gemeinsam kochen und Zutaten teilen ist günstiger und eine tolle Art, Freunde zu finden."
+     ],
+     "q": "Welches einfache Gericht könntest du in einer Hostelküche für neue Freunde kochen?",
+     "c": "Schreib ein Ein-Topf-Rezept mit fünf Zutaten, das du in jeder Gemeinschaftsküche kochen könntest."
+    },
+    "es": {
+     "t": "Cocinar en el albergue",
+     "g": "Aprende recetas sencillas de una sola olla y el placer de compartir comidas con otros viajeros.",
+     "p": [
+      "Platos de una olla como pasta, arroz con verduras o una buena sopa piden pocos utensilios y poco tiempo.",
+      "Mira la estantería de comida gratis, etiqueta tu compra y friega siempre justo después de cocinar.",
+      "Cocinar juntos y repartir ingredientes sale más barato y es una forma genial de hacer amigos."
+     ],
+     "q": "¿Qué plato sencillo podrías cocinar para un grupo de nuevos amigos en la cocina de un albergue?",
+     "c": "Escribe una receta de una sola olla con cinco ingredientes que podrías cocinar en cualquier cocina compartida."
+    },
+    "fr": {
+     "t": "Cuisiner en auberge",
+     "g": "Apprends des recettes simples en une seule casserole et le plaisir de partager les repas entre voyageurs.",
+     "p": [
+      "Les plats en une casserole, comme des pâtes, du riz aux légumes ou une bonne soupe, demandent peu d'outils et de temps.",
+      "Regarde l'étagère de nourriture gratuite, étiquette tes courses et fais toujours la vaisselle tout de suite.",
+      "Cuisiner ensemble et partager les ingrédients coûte moins cher et crée de belles amitiés."
+     ],
+     "q": "Quel plat simple pourrais-tu cuisiner pour de nouveaux amis dans la cuisine d'une auberge ?",
+     "c": "Écris une recette en une casserole avec cinq ingrédients, faisable dans n'importe quelle cuisine partagée."
+    },
+    "it": {
+     "t": "Cucinare in ostello",
+     "g": "Impara ricette semplici in una sola pentola e il piacere di condividere i pasti con altri viaggiatori.",
+     "p": [
+      "Piatti unici come pasta, riso con verdure o una zuppa sostanziosa richiedono pochi attrezzi e poco tempo.",
+      "Guarda lo scaffale del cibo gratuito, etichetta la tua spesa e lava sempre i piatti subito dopo.",
+      "Cucinare insieme e dividere gli ingredienti costa meno ed è un modo fantastico per fare amicizia."
+     ],
+     "q": "Quale piatto semplice potresti cucinare per un gruppo di nuovi amici nella cucina di un ostello?",
+     "c": "Scrivi una ricetta in una sola pentola con cinque ingredienti da cucinare in qualsiasi cucina condivisa."
+    },
+    "pt": {
+     "t": "Cozinhar no hostel",
+     "g": "Aprende receitas simples de uma só panela e o prazer de partilhar refeições com outros viajantes.",
+     "p": [
+      "Pratos de uma panela, como massa, arroz com legumes ou uma boa sopa, pedem poucos utensílios e pouco tempo.",
+      "Vê a prateleira de comida grátis, identifica as tuas compras e lava sempre a loiça logo a seguir.",
+      "Cozinhar em conjunto e dividir ingredientes sai mais barato e é ótimo para fazer amigos."
+     ],
+     "q": "Que prato simples podias cozinhar para um grupo de novos amigos na cozinha de um hostel?",
+     "c": "Escreve uma receita de uma só panela com cinco ingredientes que podias fazer em qualquer cozinha partilhada."
+    },
+    "pt_BR": {
+     "t": "Cozinhando no hostel",
+     "g": "Aprenda receitas simples de uma panela só e o prazer de dividir refeições com outros viajantes.",
+     "p": [
+      "Pratos de uma panela, como macarrão, arroz com legumes ou uma boa sopa, pedem poucos utensílios e pouco tempo.",
+      "Confira a prateleira de comida grátis, identifique suas compras e lave a louça logo depois de cozinhar.",
+      "Cozinhar junto e dividir ingredientes sai mais barato e é ótimo para fazer amigos."
+     ],
+     "q": "Que prato simples você poderia cozinhar para uma turma de novos amigos na cozinha de um hostel?",
+     "c": "Escreva uma receita de panela única com cinco ingredientes que daria para fazer em qualquer cozinha compartilhada."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water and drinks on a budget",
+     "g": "Save with a refillable bottle, tap water where it is safe and fewer pricey drinks.",
+     "p": [
+      "A refillable bottle saves money and plastic; many cities have public fountains or refill points.",
+      "Check whether tap water is safe to drink where you are going; if not, use filters or buy large bottles.",
+      "Drinks in cafés and bars add up fast, so enjoy them as a treat rather than a habit."
+     ],
+     "q": "How much do you think you spend on drinks during a typical travel day?",
+     "c": "Find out whether tap water is safe to drink in one place you would like to visit."
+    },
+    "de": {
+     "t": "Wasser und Getränke mit kleinem Budget",
+     "g": "Spare mit einer Nachfüllflasche, Leitungswasser, wo es sicher ist, und weniger teuren Getränken.",
+     "p": [
+      "Eine Nachfüllflasche spart Geld und Plastik; viele Städte haben öffentliche Brunnen oder Nachfüllstationen.",
+      "Prüf, ob das Leitungswasser an deinem Ziel trinkbar ist; wenn nicht, nutz Filter oder kauf große Flaschen.",
+      "Getränke in Cafés und Bars summieren sich schnell, genieß sie lieber als Highlight statt aus Gewohnheit."
+     ],
+     "q": "Was schätzt du, wie viel du an einem typischen Reisetag für Getränke ausgibst?",
+     "c": "Finde heraus, ob man das Leitungswasser an einem Ort, den du besuchen möchtest, trinken kann."
+    },
+    "es": {
+     "t": "Agua y bebidas con poco dinero",
+     "g": "Ahorra con una botella reutilizable, agua del grifo donde sea segura y menos bebidas caras.",
+     "p": [
+      "Una botella reutilizable ahorra dinero y plástico; muchas ciudades tienen fuentes públicas o puntos de recarga.",
+      "Comprueba si el agua del grifo es potable en tu destino; si no, usa filtros o compra botellas grandes.",
+      "Las bebidas en cafés y bares suman rápido, así que disfrútalas como un capricho y no como costumbre."
+     ],
+     "q": "¿Cuánto crees que gastas en bebidas en un día de viaje normal?",
+     "c": "Averigua si el agua del grifo es potable en un lugar que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Eau et boissons à petit prix",
+     "g": "Économise avec une gourde, l'eau du robinet là où elle est sûre et moins de boissons coûteuses.",
+     "p": [
+      "Une gourde fait économiser argent et plastique ; beaucoup de villes ont des fontaines publiques ou des points de remplissage.",
+      "Vérifie si l'eau du robinet est potable à destination ; sinon, utilise un filtre ou achète de grandes bouteilles.",
+      "Les boissons au café ou au bar s'additionnent vite : savoure-les comme un plaisir, pas comme une habitude."
+     ],
+     "q": "Combien penses-tu dépenser en boissons pendant une journée de voyage typique ?",
+     "c": "Découvre si l'eau du robinet est potable dans un endroit que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Acqua e bevande a basso costo",
+     "g": "Risparmia con una borraccia, l'acqua del rubinetto dove è sicura e meno bevande care.",
+     "p": [
+      "Una borraccia fa risparmiare soldi e plastica; molte città hanno fontanelle pubbliche o punti di ricarica.",
+      "Verifica se l'acqua del rubinetto è potabile nella tua meta; se no, usa filtri o compra bottiglie grandi.",
+      "Le bevande al bar si sommano in fretta, quindi goditele come uno sfizio e non come un'abitudine."
+     ],
+     "q": "Quanto pensi di spendere in bevande in una normale giornata di viaggio?",
+     "c": "Scopri se l'acqua del rubinetto è potabile in un posto che ti piacerebbe visitare."
+    },
+    "pt": {
+     "t": "Água e bebidas com pouco dinheiro",
+     "g": "Poupa com uma garrafa reutilizável, água da torneira onde for segura e menos bebidas caras.",
+     "p": [
+      "Uma garrafa reutilizável poupa dinheiro e plástico; muitas cidades têm bebedouros públicos ou pontos de enchimento.",
+      "Confirma se a água da torneira é potável no teu destino; se não for, usa filtros ou compra garrafões.",
+      "As bebidas em cafés e bares somam depressa, por isso aproveita-as como um mimo e não como hábito."
+     ],
+     "q": "Quanto achas que gastas em bebidas num dia de viagem normal?",
+     "c": "Descobre se a água da torneira é potável num sítio que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Água e bebidas gastando pouco",
+     "g": "Economize com uma garrafinha reutilizável, água da torneira onde for segura e menos bebidas caras.",
+     "p": [
+      "Uma garrafinha reutilizável economiza dinheiro e plástico; muitas cidades têm bebedouros públicos.",
+      "Confira se a água da torneira é potável no seu destino; se não for, use filtro ou compre garrafões.",
+      "Bebidas em cafés e bares somam rápido, então curta como um mimo e não como hábito."
+     ],
+     "q": "Quanto você acha que gasta com bebidas num dia de viagem comum?",
+     "c": "Descubra se a água da torneira é potável num lugar que você gostaria de visitar."
+    }
+   }
+  }
+ ]
+}

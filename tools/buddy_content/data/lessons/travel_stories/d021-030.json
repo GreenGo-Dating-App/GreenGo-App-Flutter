@@ -1,0 +1,835 @@
+{
+ "topic": "travel_stories",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Language mix-ups",
+     "g": "Share funny misunderstandings when words did not mean what you thought.",
+     "p": [
+      "Mix-ups are great stories because everyone has had one.",
+      "Explain the word you used and what it really meant, simply.",
+      "Laugh at yourself kindly; never make fun of the local language."
+     ],
+     "q": "Have you ever said a word abroad that meant something totally different?",
+     "c": "Recall one language mix-up, yours or a friend's, and tell it in three lines."
+    },
+    "de": {
+     "t": "Sprachliche Verwechslungen",
+     "g": "Erzähl von lustigen Missverständnissen, bei denen Wörter etwas anderes bedeuteten als gedacht.",
+     "p": [
+      "Verwechslungen sind tolle Geschichten, weil jeder schon eine erlebt hat.",
+      "Erklär einfach, welches Wort du benutzt hast und was es wirklich hieß.",
+      "Lach freundlich über dich selbst; mach dich nie über die Landessprache lustig."
+     ],
+     "q": "Hast du im Ausland schon mal ein Wort gesagt, das etwas völlig anderes bedeutete?",
+     "c": "Erinnere dich an eine Verwechslung, deine oder die eines Freundes, und erzähl sie in drei Zeilen."
+    },
+    "es": {
+     "t": "Líos con el idioma",
+     "g": "Comparte malentendidos divertidos cuando las palabras no significaban lo que creías.",
+     "p": [
+      "Los líos de idioma son geniales porque todo el mundo ha tenido alguno.",
+      "Explica de forma sencilla la palabra que usaste y lo que significaba de verdad.",
+      "Ríete de ti con cariño; nunca te burles del idioma local."
+     ],
+     "q": "¿Alguna vez dijiste una palabra en el extranjero que significaba algo totalmente distinto?",
+     "c": "Recuerda un lío de idioma, tuyo o de un amigo, y cuéntalo en tres líneas."
+    },
+    "fr": {
+     "t": "Les quiproquos de langue",
+     "g": "Partage des malentendus drôles quand les mots ne voulaient pas dire ce que tu croyais.",
+     "p": [
+      "Les quiproquos font de bonnes histoires, car tout le monde en a vécu.",
+      "Explique simplement le mot utilisé et ce qu'il voulait vraiment dire.",
+      "Ris de toi avec gentillesse ; ne te moque jamais de la langue locale."
+     ],
+     "q": "As-tu déjà dit à l'étranger un mot qui voulait dire tout autre chose ?",
+     "c": "Repense à un quiproquo, le tien ou celui d'un ami, et raconte-le en trois lignes."
+    },
+    "it": {
+     "t": "Pasticci con le lingue",
+     "g": "Racconta equivoci divertenti quando le parole non significavano ciò che pensavi.",
+     "p": [
+      "Gli equivoci sono ottime storie perché tutti ne hanno vissuto uno.",
+      "Spiega in modo semplice la parola usata e cosa significava davvero.",
+      "Ridi di te con gentilezza; non prendere mai in giro la lingua locale."
+     ],
+     "q": "Ti è mai capitato di dire all'estero una parola che significava tutt'altro?",
+     "c": "Ricorda un equivoco linguistico, tuo o di un amico, e raccontalo in tre righe."
+    },
+    "pt": {
+     "t": "Confusões com a língua",
+     "g": "Partilha mal-entendidos engraçados em que as palavras não queriam dizer o que pensavas.",
+     "p": [
+      "As confusões de língua são ótimas histórias porque toda a gente já teve uma.",
+      "Explica de forma simples a palavra que usaste e o que ela queria mesmo dizer.",
+      "Ri-te de ti com carinho; nunca gozes com a língua local."
+     ],
+     "q": "Já disseste no estrangeiro uma palavra que queria dizer algo completamente diferente?",
+     "c": "Lembra-te de uma confusão de língua, tua ou de um amigo, e conta-a em três linhas."
+    },
+    "pt_BR": {
+     "t": "Confusões com o idioma",
+     "g": "Compartilhe mal-entendidos engraçados em que as palavras não significavam o que você pensava.",
+     "p": [
+      "Confusões de idioma rendem ótimas histórias porque todo mundo já teve uma.",
+      "Explique de forma simples a palavra que você usou e o que ela significava de verdade.",
+      "Ria de si mesmo com carinho; nunca zombe do idioma local."
+     ],
+     "q": "Você já falou no exterior uma palavra que significava algo totalmente diferente?",
+     "c": "Lembre uma confusão de idioma, sua ou de um amigo, e conte em três linhas."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Markets and shopping scenes",
+     "g": "Paint markets around the world with their haggling, colours and characters.",
+     "p": [
+      "Markets are full of story material: piles of fruit, shouting sellers, music.",
+      "Haggling, where it is the custom, is a friendly little dialogue worth retelling.",
+      "Pick one seller and describe them; they become your main character."
+     ],
+     "q": "What is the most colourful market you have ever walked through?",
+     "c": "Describe a market you know with one colour, one sound and one seller."
+    },
+    "de": {
+     "t": "Märkte und Einkaufsszenen",
+     "g": "Male Märkte rund um die Welt mit ihrem Feilschen, ihren Farben und Figuren aus.",
+     "p": [
+      "Märkte stecken voller Erzählstoff: Obstberge, rufende Händler, Musik.",
+      "Feilschen ist dort, wo es üblich ist, ein freundlicher kleiner Dialog zum Nacherzählen.",
+      "Wähle einen Händler und beschreib ihn; er wird deine Hauptfigur."
+     ],
+     "q": "Was ist der bunteste Markt, über den du je gelaufen bist?",
+     "c": "Beschreib einen Markt, den du kennst, mit einer Farbe, einem Geräusch und einem Händler."
+    },
+    "es": {
+     "t": "Mercados y escenas de compras",
+     "g": "Pinta mercados de todo el mundo con su regateo, sus colores y sus personajes.",
+     "p": [
+      "Los mercados están llenos de material: montañas de fruta, vendedores que gritan, música.",
+      "Regatear, donde es costumbre, es un pequeño diálogo amistoso que vale la pena contar.",
+      "Elige a un vendedor y descríbelo; será tu personaje principal."
+     ],
+     "q": "¿Cuál es el mercado más colorido que has recorrido?",
+     "c": "Describe un mercado que conozcas con un color, un sonido y un vendedor."
+    },
+    "fr": {
+     "t": "Marchés et scènes de shopping",
+     "g": "Peins les marchés du monde avec leur marchandage, leurs couleurs et leurs personnages.",
+     "p": [
+      "Les marchés regorgent de matière : piles de fruits, vendeurs qui crient, musique.",
+      "Marchander, là où c'est la coutume, est un petit dialogue amical à raconter.",
+      "Choisis un vendeur et décris-le : il devient ton personnage principal."
+     ],
+     "q": "Quel est le marché le plus coloré que tu aies traversé ?",
+     "c": "Décris un marché que tu connais avec une couleur, un son et un vendeur."
+    },
+    "it": {
+     "t": "Mercati e scene di shopping",
+     "g": "Dipingi i mercati del mondo con le loro contrattazioni, i colori e i personaggi.",
+     "p": [
+      "I mercati sono pieni di materiale: montagne di frutta, venditori che gridano, musica.",
+      "Contrattare, dove è l'usanza, è un piccolo dialogo amichevole da raccontare.",
+      "Scegli un venditore e descrivilo; diventa il tuo protagonista."
+     ],
+     "q": "Qual è il mercato più colorato che hai mai attraversato?",
+     "c": "Descrivi un mercato che conosci con un colore, un suono e un venditore."
+    },
+    "pt": {
+     "t": "Mercados e cenas de compras",
+     "g": "Pinta mercados do mundo com o seu regatear, as suas cores e personagens.",
+     "p": [
+      "Os mercados estão cheios de material: montes de fruta, vendedores a apregoar, música.",
+      "Regatear, onde é costume, é um pequeno diálogo simpático que vale a pena contar.",
+      "Escolhe um vendedor e descreve-o; passa a ser a tua personagem principal."
+     ],
+     "q": "Qual é o mercado mais colorido por onde já passeaste?",
+     "c": "Descreve um mercado que conheces com uma cor, um som e um vendedor."
+    },
+    "pt_BR": {
+     "t": "Feiras, mercados e compras",
+     "g": "Pinte mercados do mundo com a pechincha, as cores e os personagens.",
+     "p": [
+      "Mercados são cheios de material: montanhas de frutas, vendedores gritando, música.",
+      "Pechinchar, onde é costume, é um pequeno diálogo simpático que vale a pena contar.",
+      "Escolha um vendedor e descreva; ele vira seu personagem principal."
+     ],
+     "q": "Qual é o mercado ou feira mais colorido por onde você já passou?",
+     "c": "Descreva um mercado que você conhece com uma cor, um som e um vendedor."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your favourite city so far",
+     "g": "Explain why one city feels special to you, beyond the famous sights.",
+     "p": [
+      "Choose a reason that is personal: a street, a habit, a feeling.",
+      "Compare it gently with home to show what makes it different.",
+      "One small ritual, like your morning coffee spot, makes it real."
+     ],
+     "q": "Which city is your favourite so far, and what makes it feel special?",
+     "c": "Finish this sentence three ways: My favourite city feels special because..."
+    },
+    "de": {
+     "t": "Deine bisherige Lieblingsstadt",
+     "g": "Erklär, warum sich eine Stadt für dich besonders anfühlt, jenseits der berühmten Sehenswürdigkeiten.",
+     "p": [
+      "Wähle einen persönlichen Grund: eine Straße, eine Gewohnheit, ein Gefühl.",
+      "Vergleich sie sanft mit zu Hause, um zu zeigen, was anders ist.",
+      "Ein kleines Ritual, etwa dein Kaffeeplatz am Morgen, macht sie greifbar."
+     ],
+     "q": "Welche Stadt ist bisher deine liebste, und warum fühlt sie sich besonders an?",
+     "c": "Vollende den Satz auf drei Arten: Meine Lieblingsstadt ist besonders, weil..."
+    },
+    "es": {
+     "t": "Tu ciudad favorita hasta ahora",
+     "g": "Explica por qué una ciudad te parece especial, más allá de los lugares famosos.",
+     "p": [
+      "Elige una razón personal: una calle, una costumbre, una sensación.",
+      "Compárala con tu casa con suavidad para mostrar qué la hace distinta.",
+      "Un pequeño ritual, como tu café de cada mañana, la hace real."
+     ],
+     "q": "¿Cuál es tu ciudad favorita hasta ahora y qué la hace especial?",
+     "c": "Termina esta frase de tres maneras: Mi ciudad favorita es especial porque..."
+    },
+    "fr": {
+     "t": "Ta ville préférée jusqu'ici",
+     "g": "Explique pourquoi une ville te paraît spéciale, au-delà des sites célèbres.",
+     "p": [
+      "Choisis une raison personnelle : une rue, une habitude, une sensation.",
+      "Compare-la doucement avec chez toi pour montrer ce qui la rend différente.",
+      "Un petit rituel, comme ton café du matin, la rend réelle."
+     ],
+     "q": "Quelle est ta ville préférée jusqu'ici, et qu'est-ce qui la rend spéciale ?",
+     "c": "Termine cette phrase de trois façons : Ma ville préférée est spéciale parce que..."
+    },
+    "it": {
+     "t": "La tua città preferita finora",
+     "g": "Spiega perché una città ti sembra speciale, oltre ai luoghi famosi.",
+     "p": [
+      "Scegli un motivo personale: una via, un'abitudine, una sensazione.",
+      "Confrontala con delicatezza con casa tua per mostrare cosa la rende diversa.",
+      "Un piccolo rito, come il tuo bar del mattino, la rende reale."
+     ],
+     "q": "Qual è la tua città preferita finora e cosa la rende speciale?",
+     "c": "Completa la frase in tre modi: La mia città preferita è speciale perché..."
+    },
+    "pt": {
+     "t": "A tua cidade preferida até agora",
+     "g": "Explica porque uma cidade te parece especial, para além dos sítios famosos.",
+     "p": [
+      "Escolhe uma razão pessoal: uma rua, um hábito, uma sensação.",
+      "Compara-a com casa, com suavidade, para mostrar o que a torna diferente.",
+      "Um pequeno ritual, como o teu café da manhã, torna-a real."
+     ],
+     "q": "Qual é a tua cidade preferida até agora e o que a torna especial?",
+     "c": "Termina esta frase de três maneiras: A minha cidade preferida é especial porque..."
+    },
+    "pt_BR": {
+     "t": "Sua cidade favorita até agora",
+     "g": "Explique por que uma cidade parece especial para você, além dos pontos famosos.",
+     "p": [
+      "Escolha um motivo pessoal: uma rua, um hábito, uma sensação.",
+      "Compare com a sua cidade, com leveza, para mostrar o que a torna diferente.",
+      "Um pequeno ritual, como seu café da manhã de sempre, a torna real."
+     ],
+     "q": "Qual é sua cidade favorita até agora e o que a torna especial?",
+     "c": "Termine esta frase de três jeitos: Minha cidade favorita é especial porque..."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nature trips",
+     "g": "Learn to describe beaches, forests, mountains and other open landscapes.",
+     "p": [
+      "Use size and distance words: endless, tiny on the horizon, towering above us.",
+      "Light changes everything: golden evening, misty morning, bright noon.",
+      "Add your body: tired legs, cool breeze, the silence in your ears."
+     ],
+     "q": "What is the most beautiful natural place you have ever seen?",
+     "c": "Describe one landscape you love using one word for light and one for size."
+    },
+    "de": {
+     "t": "Naturreisen",
+     "g": "Lerne, Strände, Wälder, Berge und andere weite Landschaften zu beschreiben.",
+     "p": [
+      "Nutze Wörter für Größe und Entfernung: endlos, winzig am Horizont, hoch über uns.",
+      "Licht verändert alles: goldener Abend, nebliger Morgen, gleißender Mittag.",
+      "Nimm den Körper dazu: müde Beine, kühle Brise, Stille in den Ohren."
+     ],
+     "q": "Was ist der schönste Naturort, den du je gesehen hast?",
+     "c": "Beschreib eine Landschaft, die du liebst, mit einem Wort für Licht und einem für Größe."
+    },
+    "es": {
+     "t": "Viajes a la naturaleza",
+     "g": "Aprende a describir playas, bosques, montañas y otros paisajes abiertos.",
+     "p": [
+      "Usa palabras de tamaño y distancia: infinito, diminuto en el horizonte, elevándose sobre nosotros.",
+      "La luz lo cambia todo: tarde dorada, mañana con niebla, mediodía brillante.",
+      "Añade tu cuerpo: piernas cansadas, brisa fresca, silencio en los oídos."
+     ],
+     "q": "¿Cuál es el lugar natural más bonito que has visto?",
+     "c": "Describe un paisaje que te encante con una palabra de luz y otra de tamaño."
+    },
+    "fr": {
+     "t": "Voyages nature",
+     "g": "Apprends à décrire plages, forêts, montagnes et autres grands paysages.",
+     "p": [
+      "Utilise des mots de taille et de distance : infini, minuscule à l'horizon, dressé au-dessus de nous.",
+      "La lumière change tout : soir doré, matin brumeux, midi éclatant.",
+      "Ajoute ton corps : jambes fatiguées, brise fraîche, silence dans les oreilles."
+     ],
+     "q": "Quel est le plus beau lieu naturel que tu aies vu ?",
+     "c": "Décris un paysage que tu aimes avec un mot pour la lumière et un pour la taille."
+    },
+    "it": {
+     "t": "Viaggi nella natura",
+     "g": "Impara a descrivere spiagge, boschi, montagne e altri paesaggi aperti.",
+     "p": [
+      "Usa parole di dimensione e distanza: infinito, minuscolo all'orizzonte, altissimo sopra di noi.",
+      "La luce cambia tutto: sera dorata, mattina nebbiosa, mezzogiorno abbagliante.",
+      "Aggiungi il corpo: gambe stanche, brezza fresca, silenzio nelle orecchie."
+     ],
+     "q": "Qual è il luogo naturale più bello che hai mai visto?",
+     "c": "Descrivi un paesaggio che ami con una parola per la luce e una per la dimensione."
+    },
+    "pt": {
+     "t": "Viagens na natureza",
+     "g": "Aprende a descrever praias, florestas, montanhas e outras paisagens abertas.",
+     "p": [
+      "Usa palavras de tamanho e distância: sem fim, minúsculo no horizonte, a elevar-se sobre nós.",
+      "A luz muda tudo: fim de tarde dourado, manhã de nevoeiro, meio-dia brilhante.",
+      "Junta o corpo: pernas cansadas, brisa fresca, silêncio nos ouvidos."
+     ],
+     "q": "Qual é o lugar natural mais bonito que já viste?",
+     "c": "Descreve uma paisagem de que gostas com uma palavra para a luz e outra para o tamanho."
+    },
+    "pt_BR": {
+     "t": "Viagens na natureza",
+     "g": "Aprenda a descrever praias, florestas, montanhas e outras paisagens abertas.",
+     "p": [
+      "Use palavras de tamanho e distância: sem fim, minúsculo no horizonte, enorme acima de nós.",
+      "A luz muda tudo: fim de tarde dourado, manhã de neblina, meio-dia brilhante.",
+      "Inclua o corpo: pernas cansadas, brisa fresca, silêncio nos ouvidos."
+     ],
+     "q": "Qual é o lugar natural mais bonito que você já viu?",
+     "c": "Descreva uma paisagem que você ama com uma palavra para a luz e outra para o tamanho."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Local festivals you stumbled into",
+     "g": "Describe the atmosphere of unplanned celebrations you found by chance.",
+     "p": [
+      "Chance festivals are magic because you did not plan them.",
+      "Atmosphere words: drums, costumes, crowds singing, smells of street food.",
+      "Say how you joined in, even just by clapping or tasting something."
+     ],
+     "q": "Have you ever walked into a local festival or celebration by surprise?",
+     "c": "Describe a celebration you once saw with three atmosphere words."
+    },
+    "de": {
+     "t": "Lokale Feste, in die du hineingeraten bist",
+     "g": "Beschreib die Stimmung ungeplanter Feiern, auf die du zufällig gestoßen bist.",
+     "p": [
+      "Zufällige Feste sind magisch, weil du sie nicht geplant hast.",
+      "Stimmungswörter: Trommeln, Kostüme, singende Menschen, Duft von Straßenessen.",
+      "Erzähl, wie du mitgemacht hast, und sei es nur mit Klatschen oder Probieren."
+     ],
+     "q": "Bist du schon einmal überraschend in ein lokales Fest geraten?",
+     "c": "Beschreib ein Fest, das du einmal gesehen hast, mit drei Stimmungswörtern."
+    },
+    "es": {
+     "t": "Fiestas locales con las que te topaste",
+     "g": "Describe el ambiente de celebraciones que encontraste por casualidad.",
+     "p": [
+      "Las fiestas por sorpresa son mágicas porque no las planeaste.",
+      "Palabras de ambiente: tambores, disfraces, gente cantando, olor a comida callejera.",
+      "Cuenta cómo te uniste, aunque fuera aplaudiendo o probando algo."
+     ],
+     "q": "¿Alguna vez te encontraste por sorpresa con una fiesta local?",
+     "c": "Describe una celebración que viste con tres palabras de ambiente."
+    },
+    "fr": {
+     "t": "Les fêtes locales découvertes par hasard",
+     "g": "Décris l'ambiance de célébrations imprévues trouvées par hasard.",
+     "p": [
+      "Les fêtes imprévues sont magiques, justement parce qu'on ne les a pas prévues.",
+      "Mots d'ambiance : tambours, costumes, foule qui chante, odeurs de cuisine de rue.",
+      "Dis comment tu t'es joint à la fête, même juste en applaudissant ou en goûtant."
+     ],
+     "q": "Es-tu déjà tombé par surprise sur une fête locale ?",
+     "c": "Décris une fête que tu as vue avec trois mots d'ambiance."
+    },
+    "it": {
+     "t": "Feste locali trovate per caso",
+     "g": "Descrivi l'atmosfera di feste non programmate in cui sei capitato per caso.",
+     "p": [
+      "Le feste trovate per caso sono magiche proprio perché non le avevi previste.",
+      "Parole d'atmosfera: tamburi, costumi, folla che canta, profumo di cibo di strada.",
+      "Racconta come ti sei unito, anche solo battendo le mani o assaggiando qualcosa."
+     ],
+     "q": "Ti è mai capitato di finire per caso in una festa locale?",
+     "c": "Descrivi una festa che hai visto con tre parole d'atmosfera."
+    },
+    "pt": {
+     "t": "Festas locais que encontraste por acaso",
+     "g": "Descreve o ambiente de festas que não planeaste e encontraste por acaso.",
+     "p": [
+      "As festas por acaso são mágicas precisamente porque não as planeaste.",
+      "Palavras de ambiente: tambores, trajes, gente a cantar, cheiro a comida de rua.",
+      "Conta como te juntaste, nem que fosse a bater palmas ou a provar algo."
+     ],
+     "q": "Já deste por acaso com uma festa local?",
+     "c": "Descreve uma festa que viste com três palavras de ambiente."
+    },
+    "pt_BR": {
+     "t": "Festas locais que você achou por acaso",
+     "g": "Descreva o clima de festas que você não planejou e encontrou por acaso.",
+     "p": [
+      "Festas por acaso são mágicas justamente porque você não planejou.",
+      "Palavras de clima: tambores, fantasias, gente cantando, cheiro de comida de rua.",
+      "Conte como você entrou na festa, nem que fosse batendo palmas ou provando algo."
+     ],
+     "q": "Você já deu de cara por acaso com uma festa local?",
+     "c": "Descreva uma festa que você viu com três palavras de clima."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where you stayed",
+     "g": "Use hotels, hostels, guesthouses and friends' sofas as story settings.",
+     "p": [
+      "Where you sleep shapes the trip: shared kitchens, quiet rooms, noisy streets.",
+      "Hosts and roommates are ready-made characters.",
+      "One odd detail makes a place memorable: a squeaky door, a rooftop view."
+     ],
+     "q": "What is the most memorable place you have ever stayed on a trip?",
+     "c": "Describe one place you stayed in two sentences with one funny detail."
+    },
+    "de": {
+     "t": "Wo du übernachtet hast",
+     "g": "Nutze Hotels, Hostels, Pensionen und Sofas von Freunden als Schauplätze.",
+     "p": [
+      "Wo du schläfst, prägt die Reise: Gemeinschaftsküchen, ruhige Zimmer, laute Straßen.",
+      "Gastgeber und Mitbewohner sind fertige Figuren.",
+      "Ein schräges Detail macht einen Ort unvergesslich: eine quietschende Tür, ein Dachblick."
+     ],
+     "q": "Was war die denkwürdigste Unterkunft auf einer deiner Reisen?",
+     "c": "Beschreib eine Unterkunft in zwei Sätzen mit einem lustigen Detail."
+    },
+    "es": {
+     "t": "Dónde te alojaste",
+     "g": "Usa hoteles, albergues, casas de huéspedes y sofás de amigos como escenarios.",
+     "p": [
+      "Donde duermes da forma al viaje: cocinas compartidas, cuartos tranquilos, calles ruidosas.",
+      "Anfitriones y compañeros de cuarto son personajes listos para usar.",
+      "Un detalle raro hace inolvidable un lugar: una puerta que chirría, una azotea con vistas."
+     ],
+     "q": "¿Cuál es el alojamiento más memorable que has tenido en un viaje?",
+     "c": "Describe un sitio donde te alojaste en dos frases con un detalle gracioso."
+    },
+    "fr": {
+     "t": "Où tu as dormi",
+     "g": "Fais des hôtels, auberges, chambres d'hôtes et canapés d'amis des décors d'histoire.",
+     "p": [
+      "L'endroit où tu dors façonne le voyage : cuisines partagées, chambres calmes, rues bruyantes.",
+      "Hôtes et colocataires sont des personnages tout trouvés.",
+      "Un détail insolite rend un lieu mémorable : une porte qui grince, une vue sur les toits."
+     ],
+     "q": "Quel est le logement le plus mémorable de tes voyages ?",
+     "c": "Décris un logement en deux phrases avec un détail amusant."
+    },
+    "it": {
+     "t": "Dove hai dormito",
+     "g": "Usa hotel, ostelli, B&B e divani di amici come ambientazioni.",
+     "p": [
+      "Dove dormi dà forma al viaggio: cucine condivise, stanze tranquille, strade rumorose.",
+      "Padroni di casa e compagni di stanza sono personaggi già pronti.",
+      "Un dettaglio strano rende un posto memorabile: una porta che cigola, una terrazza panoramica."
+     ],
+     "q": "Qual è l'alloggio più memorabile che hai avuto in viaggio?",
+     "c": "Descrivi un posto dove hai dormito in due frasi con un dettaglio buffo."
+    },
+    "pt": {
+     "t": "Onde ficaste",
+     "g": "Usa hotéis, hostels, casas de hóspedes e sofás de amigos como cenários.",
+     "p": [
+      "O sítio onde dormes molda a viagem: cozinhas partilhadas, quartos sossegados, ruas barulhentas.",
+      "Anfitriões e colegas de quarto são personagens já prontas.",
+      "Um pormenor estranho torna um sítio memorável: uma porta que range, um terraço com vista."
+     ],
+     "q": "Qual foi o alojamento mais memorável que tiveste numa viagem?",
+     "c": "Descreve um sítio onde ficaste em duas frases com um pormenor engraçado."
+    },
+    "pt_BR": {
+     "t": "Onde você ficou",
+     "g": "Use hotéis, hostels, pousadas e sofás de amigos como cenários.",
+     "p": [
+      "O lugar onde você dorme molda a viagem: cozinhas compartilhadas, quartos tranquilos, ruas barulhentas.",
+      "Anfitriões e colegas de quarto são personagens prontos.",
+      "Um detalhe estranho torna um lugar marcante: uma porta que range, um terraço com vista."
+     ],
+     "q": "Qual foi a hospedagem mais marcante que você teve em uma viagem?",
+     "c": "Descreva um lugar onde você ficou em duas frases com um detalhe engraçado."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Travel firsts",
+     "g": "Tell stories about your first flight, first passport stamp or first trip alone.",
+     "p": [
+      "Firsts are powerful because everything feels new and a bit scary.",
+      "Contrast before and after: how you felt at the start versus the end.",
+      "Small firsts count too: first night train, first time ordering in another language."
+     ],
+     "q": "What is a travel first you will never forget?",
+     "c": "List three travel firsts you have had and pick the one with the best story."
+    },
+    "de": {
+     "t": "Erste Male auf Reisen",
+     "g": "Erzähl vom ersten Flug, vom ersten Passstempel oder von der ersten Reise allein.",
+     "p": [
+      "Erste Male wirken stark, weil alles neu und ein bisschen aufregend ist.",
+      "Vergleich Vorher und Nachher: wie du dich am Anfang und am Ende gefühlt hast.",
+      "Kleine erste Male zählen auch: erster Nachtzug, erste Bestellung in einer anderen Sprache."
+     ],
+     "q": "Welches erste Mal auf Reisen wirst du nie vergessen?",
+     "c": "Nenne drei erste Male auf Reisen und wähle das mit der besten Geschichte."
+    },
+    "es": {
+     "t": "Primeras veces viajando",
+     "g": "Cuenta historias de tu primer vuelo, tu primer sello en el pasaporte o tu primer viaje solo.",
+     "p": [
+      "Las primeras veces impactan porque todo es nuevo y da un poco de vértigo.",
+      "Contrasta el antes y el después: cómo te sentías al principio y al final.",
+      "Las pequeñas primeras veces también cuentan: primer tren nocturno, primer pedido en otro idioma."
+     ],
+     "q": "¿Qué primera vez viajando nunca olvidarás?",
+     "c": "Enumera tres primeras veces viajando y elige la que tenga mejor historia."
+    },
+    "fr": {
+     "t": "Les premières fois en voyage",
+     "g": "Raconte ton premier vol, ton premier tampon sur le passeport ou ton premier voyage seul.",
+     "p": [
+      "Les premières fois marquent, car tout est nouveau et un peu intimidant.",
+      "Oppose l'avant et l'après : ce que tu ressentais au début et à la fin.",
+      "Les petites premières fois comptent aussi : premier train de nuit, première commande dans une autre langue."
+     ],
+     "q": "Quelle première fois en voyage n'oublieras-tu jamais ?",
+     "c": "Liste trois premières fois en voyage et choisis celle qui a la meilleure histoire."
+    },
+    "it": {
+     "t": "Le prime volte in viaggio",
+     "g": "Racconta il tuo primo volo, il primo timbro sul passaporto o il primo viaggio da solo.",
+     "p": [
+      "Le prime volte colpiscono perché tutto è nuovo e un po' emozionante.",
+      "Metti a confronto prima e dopo: come ti sentivi all'inizio e alla fine.",
+      "Contano anche le piccole prime volte: primo treno notturno, prima ordinazione in un'altra lingua."
+     ],
+     "q": "Quale prima volta in viaggio non dimenticherai mai?",
+     "c": "Elenca tre prime volte in viaggio e scegli quella con la storia migliore."
+    },
+    "pt": {
+     "t": "Primeiras vezes em viagem",
+     "g": "Conta histórias do teu primeiro voo, do primeiro carimbo no passaporte ou da primeira viagem sozinho.",
+     "p": [
+      "As primeiras vezes marcam porque tudo é novo e um pouco assustador.",
+      "Contrasta o antes e o depois: como te sentias no início e no fim.",
+      "As pequenas primeiras vezes também contam: primeiro comboio noturno, primeiro pedido noutra língua."
+     ],
+     "q": "Que primeira vez em viagem nunca vais esquecer?",
+     "c": "Faz uma lista de três primeiras vezes em viagem e escolhe a que tem melhor história."
+    },
+    "pt_BR": {
+     "t": "Primeiras vezes viajando",
+     "g": "Conte histórias do seu primeiro voo, do primeiro carimbo no passaporte ou da primeira viagem sozinho.",
+     "p": [
+      "Primeiras vezes marcam porque tudo é novo e dá um friozinho na barriga.",
+      "Compare o antes e o depois: como você se sentia no começo e no fim.",
+      "Pequenas primeiras vezes também valem: primeiro trem noturno, primeiro pedido em outro idioma."
+     ],
+     "q": "Qual primeira vez viajando você nunca vai esquecer?",
+     "c": "Liste três primeiras vezes viajando e escolha a que tem a melhor história."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small surprises",
+     "g": "Notice little unexpected things, like a friendly street cat or a secret view.",
+     "p": [
+      "Big sights are in every guidebook; small surprises are only yours.",
+      "Surprises often come when you slow down or look up.",
+      "A tiny surprise can be the whole story if you tell it with care."
+     ],
+     "q": "What small, unexpected thing made you smile on a trip?",
+     "c": "Today, look for one small surprise in your own neighbourhood and describe it."
+    },
+    "de": {
+     "t": "Kleine Überraschungen",
+     "g": "Achte auf kleine unerwartete Dinge, wie eine freundliche Straßenkatze oder einen geheimen Ausblick.",
+     "p": [
+      "Große Sehenswürdigkeiten stehen in jedem Reiseführer; kleine Überraschungen gehören nur dir.",
+      "Überraschungen kommen oft, wenn du langsamer wirst oder nach oben schaust.",
+      "Eine winzige Überraschung kann die ganze Geschichte sein, wenn du sie liebevoll erzählst."
+     ],
+     "q": "Welche kleine, unerwartete Sache hat dich auf einer Reise zum Lächeln gebracht?",
+     "c": "Such heute in deinem Viertel eine kleine Überraschung und beschreib sie."
+    },
+    "es": {
+     "t": "Pequeñas sorpresas",
+     "g": "Fíjate en las cosas pequeñas e inesperadas, como un gato callejero simpático o un mirador secreto.",
+     "p": [
+      "Los grandes monumentos salen en todas las guías; las pequeñas sorpresas son solo tuyas.",
+      "Las sorpresas suelen llegar cuando vas despacio o miras hacia arriba.",
+      "Una sorpresa diminuta puede ser toda la historia si la cuentas con cariño."
+     ],
+     "q": "¿Qué cosa pequeña e inesperada te hizo sonreír en un viaje?",
+     "c": "Hoy busca una pequeña sorpresa en tu propio barrio y descríbela."
+    },
+    "fr": {
+     "t": "Petites surprises",
+     "g": "Remarque les petites choses inattendues, comme un chat des rues amical ou une vue secrète.",
+     "p": [
+      "Les grands sites sont dans tous les guides ; les petites surprises n'appartiennent qu'à toi.",
+      "Les surprises arrivent souvent quand tu ralentis ou lèves les yeux.",
+      "Une minuscule surprise peut faire toute l'histoire si tu la racontes avec soin."
+     ],
+     "q": "Quelle petite chose inattendue t'a fait sourire en voyage ?",
+     "c": "Aujourd'hui, cherche une petite surprise dans ton quartier et décris-la."
+    },
+    "it": {
+     "t": "Piccole sorprese",
+     "g": "Nota le piccole cose inattese, come un gatto di strada socievole o un panorama segreto.",
+     "p": [
+      "I grandi monumenti sono in ogni guida; le piccole sorprese sono solo tue.",
+      "Le sorprese arrivano spesso quando rallenti o alzi lo sguardo.",
+      "Una sorpresa minuscola può essere tutta la storia, se la racconti con cura."
+     ],
+     "q": "Quale piccola cosa inaspettata ti ha fatto sorridere in viaggio?",
+     "c": "Oggi cerca una piccola sorpresa nel tuo quartiere e descrivila."
+    },
+    "pt": {
+     "t": "Pequenas surpresas",
+     "g": "Repara nas pequenas coisas inesperadas, como um gato de rua simpático ou um miradouro secreto.",
+     "p": [
+      "Os grandes monumentos estão em todos os guias; as pequenas surpresas são só tuas.",
+      "As surpresas costumam aparecer quando abrandas ou olhas para cima.",
+      "Uma surpresa minúscula pode ser a história toda se a contares com cuidado."
+     ],
+     "q": "Que coisa pequena e inesperada te fez sorrir numa viagem?",
+     "c": "Hoje, procura uma pequena surpresa no teu bairro e descreve-a."
+    },
+    "pt_BR": {
+     "t": "Pequenas surpresas",
+     "g": "Repare nas pequenas coisas inesperadas, como um gato de rua simpático ou um mirante secreto.",
+     "p": [
+      "Os grandes pontos turísticos estão em todo guia; as pequenas surpresas são só suas.",
+      "As surpresas costumam aparecer quando você desacelera ou olha para cima.",
+      "Uma surpresa minúscula pode ser a história inteira se você contar com carinho."
+     ],
+     "q": "Que coisa pequena e inesperada fez você sorrir em uma viagem?",
+     "c": "Hoje, procure uma pequena surpresa no seu bairro e descreva."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing a story in one minute",
+     "g": "Practise telling a complete short story with a beginning, middle and end.",
+     "p": [
+      "Beginning: where and who, in one sentence.",
+      "Middle: the surprise or problem; end: how it turned out and how you felt.",
+      "One minute is about 120 to 150 spoken words, so choose details carefully."
+     ],
+     "q": "Can you tell me one travel story right now in about one minute?",
+     "c": "Time yourself telling a travel story and aim for one minute."
+    },
+    "de": {
+     "t": "Eine Geschichte in einer Minute",
+     "g": "Übe, eine vollständige kurze Geschichte mit Anfang, Mitte und Ende zu erzählen.",
+     "p": [
+      "Anfang: wo und wer, in einem Satz.",
+      "Mitte: die Überraschung oder das Problem; Ende: wie es ausging und wie du dich fühltest.",
+      "Eine Minute sind etwa 120 bis 150 gesprochene Wörter, also wähle Details mit Bedacht."
+     ],
+     "q": "Kannst du mir jetzt eine Reisegeschichte in etwa einer Minute erzählen?",
+     "c": "Stopp die Zeit, während du eine Reisegeschichte erzählst, und ziele auf eine Minute."
+    },
+    "es": {
+     "t": "Contar una historia en un minuto",
+     "g": "Practica contar una historia corta completa, con principio, nudo y final.",
+     "p": [
+      "Principio: dónde y quién, en una frase.",
+      "Nudo: la sorpresa o el problema; final: cómo acabó y cómo te sentiste.",
+      "Un minuto son unas 120 a 150 palabras habladas, así que elige bien los detalles."
+     ],
+     "q": "¿Me cuentas ahora una historia de viaje en más o menos un minuto?",
+     "c": "Cronométrate contando una historia de viaje y apunta a un minuto."
+    },
+    "fr": {
+     "t": "Raconter une histoire en une minute",
+     "g": "Entraîne-toi à raconter une histoire courte et complète, avec un début, un milieu et une fin.",
+     "p": [
+      "Début : où et qui, en une phrase.",
+      "Milieu : la surprise ou le problème ; fin : comment ça s'est terminé et ce que tu as ressenti.",
+      "Une minute, c'est environ 120 à 150 mots à l'oral : choisis bien tes détails."
+     ],
+     "q": "Peux-tu me raconter maintenant une histoire de voyage en une minute environ ?",
+     "c": "Chronomètre-toi en racontant une histoire de voyage et vise une minute."
+    },
+    "it": {
+     "t": "Raccontare una storia in un minuto",
+     "g": "Esercitati a raccontare una storia breve e completa, con inizio, svolgimento e fine.",
+     "p": [
+      "Inizio: dove e chi, in una frase.",
+      "Svolgimento: la sorpresa o il problema; fine: com'è andata e come ti sei sentito.",
+      "Un minuto sono circa 120-150 parole parlate, quindi scegli bene i dettagli."
+     ],
+     "q": "Riesci a raccontarmi adesso una storia di viaggio in circa un minuto?",
+     "c": "Cronometrati mentre racconti una storia di viaggio e punta a un minuto."
+    },
+    "pt": {
+     "t": "Contar uma história num minuto",
+     "g": "Pratica contar uma história curta e completa, com início, meio e fim.",
+     "p": [
+      "Início: onde e quem, numa frase.",
+      "Meio: a surpresa ou o problema; fim: como acabou e o que sentiste.",
+      "Um minuto são cerca de 120 a 150 palavras faladas, por isso escolhe bem os pormenores."
+     ],
+     "q": "Consegues contar-me agora uma história de viagem em cerca de um minuto?",
+     "c": "Cronometra-te a contar uma história de viagem e aponta para um minuto."
+    },
+    "pt_BR": {
+     "t": "Contar uma história em um minuto",
+     "g": "Pratique contar uma história curta e completa, com começo, meio e fim.",
+     "p": [
+      "Começo: onde e quem, em uma frase.",
+      "Meio: a surpresa ou o problema; fim: como terminou e como você se sentiu.",
+      "Um minuto tem cerca de 120 a 150 palavras faladas, então escolha bem os detalhes."
+     ],
+     "q": "Você consegue me contar agora uma história de viagem em mais ou menos um minuto?",
+     "c": "Cronometre-se contando uma história de viagem e mire em um minuto."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your story toolkit",
+     "g": "Look back at the ingredients and questions you collected in your first month.",
+     "p": [
+      "Ingredients: place, person, surprise, feeling, plus three senses.",
+      "Tools: one golden moment, a clear route, a two-sentence highlight.",
+      "Listening: open questions and follow-ups keep the conversation flowing."
+     ],
+     "q": "Which tool from this month do you think helps your stories the most?",
+     "c": "Tell one favourite story again using at least three tools from this month."
+    },
+    "de": {
+     "t": "Rückblick: dein Erzählwerkzeugkasten",
+     "g": "Schau zurück auf die Zutaten und Fragen, die du im ersten Monat gesammelt hast.",
+     "p": [
+      "Zutaten: Ort, Person, Überraschung, Gefühl, dazu drei Sinne.",
+      "Werkzeuge: ein goldener Moment, eine klare Route, ein Highlight in zwei Sätzen.",
+      "Zuhören: Offene Fragen und Nachfragen halten das Gespräch am Laufen."
+     ],
+     "q": "Welches Werkzeug aus diesem Monat hilft deinen Geschichten wohl am meisten?",
+     "c": "Erzähl eine Lieblingsgeschichte noch einmal mit mindestens drei Werkzeugen dieses Monats."
+    },
+    "es": {
+     "t": "Repaso: tu caja de herramientas",
+     "g": "Repasa los ingredientes y preguntas que reuniste en tu primer mes.",
+     "p": [
+      "Ingredientes: lugar, persona, sorpresa, emoción y tres sentidos.",
+      "Herramientas: un momento de oro, una ruta clara, un resumen en dos frases.",
+      "Escuchar: las preguntas abiertas y de seguimiento mantienen viva la charla."
+     ],
+     "q": "¿Qué herramienta de este mes crees que más ayuda a tus historias?",
+     "c": "Vuelve a contar una historia favorita usando al menos tres herramientas de este mes."
+    },
+    "fr": {
+     "t": "Révision : ta boîte à outils",
+     "g": "Reviens sur les ingrédients et les questions rassemblés pendant ton premier mois.",
+     "p": [
+      "Ingrédients : lieu, personne, surprise, émotion, plus trois sens.",
+      "Outils : un moment en or, un itinéraire clair, un résumé en deux phrases.",
+      "Écoute : questions ouvertes et relances font vivre la conversation."
+     ],
+     "q": "Quel outil de ce mois aide le plus tes histoires, selon toi ?",
+     "c": "Raconte à nouveau une histoire préférée avec au moins trois outils de ce mois."
+    },
+    "it": {
+     "t": "Ripasso: la tua cassetta degli attrezzi",
+     "g": "Ripassa gli ingredienti e le domande raccolti nel tuo primo mese.",
+     "p": [
+      "Ingredienti: luogo, persona, sorpresa, emozione, più tre sensi.",
+      "Strumenti: un momento d'oro, un percorso chiaro, un riassunto in due frasi.",
+      "Ascolto: domande aperte e di approfondimento tengono viva la conversazione."
+     ],
+     "q": "Quale strumento di questo mese aiuta di più le tue storie, secondo te?",
+     "c": "Racconta di nuovo una storia preferita usando almeno tre strumenti di questo mese."
+    },
+    "pt": {
+     "t": "Revisão: a tua caixa de ferramentas",
+     "g": "Revê os ingredientes e as perguntas que juntaste no teu primeiro mês.",
+     "p": [
+      "Ingredientes: lugar, pessoa, surpresa, emoção e três sentidos.",
+      "Ferramentas: um momento de ouro, um percurso claro, um destaque em duas frases.",
+      "Ouvir: perguntas abertas e de seguimento mantêm a conversa viva."
+     ],
+     "q": "Que ferramenta deste mês achas que mais ajuda as tuas histórias?",
+     "c": "Volta a contar uma história preferida usando pelo menos três ferramentas deste mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: sua caixa de ferramentas",
+     "g": "Revise os ingredientes e as perguntas que você juntou no primeiro mês.",
+     "p": [
+      "Ingredientes: lugar, pessoa, surpresa, emoção e três sentidos.",
+      "Ferramentas: um momento de ouro, um trajeto claro, um destaque em duas frases.",
+      "Ouvir: perguntas abertas e de continuação mantêm a conversa viva."
+     ],
+     "q": "Qual ferramenta deste mês você acha que mais ajuda suas histórias?",
+     "c": "Conte de novo uma história favorita usando pelo menos três ferramentas deste mês."
+    }
+   }
+  }
+ ]
+}

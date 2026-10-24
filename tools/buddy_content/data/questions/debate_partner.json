@@ -1,0 +1,1305 @@
+{
+"topic": "debate_partner",
+"questions": [
+{
+"id": "debate_partner-001",
+"lv": "any",
+"i18n": {
+"en": "What harmless opinion would you defend with real passion?",
+"de": "Welche harmlose Meinung würdest du mit echter Leidenschaft verteidigen?",
+"es": "¿Qué opinión inofensiva defenderías con verdadera pasión?",
+"fr": "Quelle opinion sans enjeu défendrais-tu avec une vraie passion ?",
+"it": "Quale opinione innocua difenderesti con vera passione?",
+"pt": "Que opinião inofensiva defenderias com verdadeira paixão?",
+"pt_BR": "Que opinião inofensiva você defenderia com muita paixão?"
+}
+},
+{
+"id": "debate_partner-002",
+"lv": "any",
+"i18n": {
+"en": "Cats or dogs: which side are you on, and why?",
+"de": "Katzen oder Hunde: Auf welcher Seite stehst du, und warum?",
+"es": "Gatos o perros: ¿de qué lado estás y por qué?",
+"fr": "Chats ou chiens : dans quel camp es-tu, et pourquoi ?",
+"it": "Gatti o cani: da che parte stai, e perché?",
+"pt": "Gatos ou cães: de que lado estás, e porquê?",
+"pt_BR": "Gatos ou cachorros: de que lado você está, e por quê?"
+}
+},
+{
+"id": "debate_partner-003",
+"lv": "any",
+"i18n": {
+"en": "Are you a morning person or a night owl? Convince me your way is better!",
+"de": "Bist du Frühaufsteher oder Nachteule? Überzeug mich, dass dein Rhythmus besser ist!",
+"es": "¿Eres madrugador o noctámbulo? ¡Convénceme de que tu forma es mejor!",
+"fr": "Plutôt lève-tôt ou couche-tard ? Convaincs-moi que ton rythme est le meilleur !",
+"it": "Sei mattiniero o nottambulo? Convincimi che il tuo ritmo è migliore!",
+"pt": "És pessoa da manhã ou da noite? Convence-me de que o teu ritmo é melhor!",
+"pt_BR": "Você é da manhã ou da noite? Me convença de que o seu jeito é melhor!"
+}
+},
+{
+"id": "debate_partner-004",
+"lv": "any",
+"i18n": {
+"en": "What food combination do people find weird but you absolutely love?",
+"de": "Welche Essenskombination finden andere seltsam, aber du liebst sie?",
+"es": "¿Qué combinación de comida le parece rara a la gente pero a ti te encanta?",
+"fr": "Quel mélange culinaire les gens trouvent bizarre alors que tu l'adores ?",
+"it": "Quale abbinamento di cibi sembra strano agli altri ma tu adori?",
+"pt": "Que combinação de comida as pessoas acham estranha, mas tu adoras?",
+"pt_BR": "Que combinação de comida as pessoas acham estranha, mas você adora?"
+}
+},
+{
+"id": "debate_partner-005",
+"lv": "any",
+"i18n": {
+"en": "Which season is the best, and how would you convince me?",
+"de": "Welche Jahreszeit ist die beste, und wie würdest du mich überzeugen?",
+"es": "¿Cuál es la mejor estación del año y cómo me convencerías?",
+"fr": "Quelle est la meilleure saison, et comment me convaincrais-tu ?",
+"it": "Qual è la stagione migliore, e come mi convinceresti?",
+"pt": "Qual é a melhor estação do ano, e como me convencerias?",
+"pt_BR": "Qual é a melhor estação do ano, e como você me convenceria?"
+}
+},
+{
+"id": "debate_partner-006",
+"lv": "any",
+"i18n": {
+"en": "Book or film: which version of a story did you prefer recently, and why?",
+"de": "Buch oder Film: Welche Version einer Geschichte hat dir zuletzt besser gefallen, und warum?",
+"es": "Libro o película: ¿qué versión de una historia preferiste últimamente y por qué?",
+"fr": "Livre ou film : quelle version d'une histoire as-tu préférée récemment, et pourquoi ?",
+"it": "Libro o film: quale versione di una storia hai preferito di recente, e perché?",
+"pt": "Livro ou filme: que versão de uma história preferiste recentemente, e porquê?",
+"pt_BR": "Livro ou filme: qual versão de uma história você preferiu recentemente, e por quê?"
+}
+},
+{
+"id": "debate_partner-007",
+"lv": "any",
+"i18n": {
+"en": "What's the best way to spend a free Sunday, in your opinion?",
+"de": "Wie verbringt man deiner Meinung nach einen freien Sonntag am besten?",
+"es": "En tu opinión, ¿cuál es la mejor forma de pasar un domingo libre?",
+"fr": "Selon toi, quelle est la meilleure façon de passer un dimanche libre ?",
+"it": "Secondo te, qual è il modo migliore di passare una domenica libera?",
+"pt": "Na tua opinião, qual é a melhor forma de passar um domingo livre?",
+"pt_BR": "Na sua opinião, qual é o melhor jeito de passar um domingo livre?"
+}
+},
+{
+"id": "debate_partner-008",
+"lv": "any",
+"i18n": {
+"en": "Tea or coffee? Make your case in three sentences.",
+"de": "Tee oder Kaffee? Begründe deine Wahl in drei Sätzen.",
+"es": "¿Té o café? Defiende tu postura en tres frases.",
+"fr": "Thé ou café ? Défends ton choix en trois phrases.",
+"it": "Tè o caffè? Difendi la tua scelta in tre frasi.",
+"pt": "Chá ou café? Defende a tua escolha em três frases.",
+"pt_BR": "Chá ou café? Defenda sua escolha em três frases."
+}
+},
+{
+"id": "debate_partner-009",
+"lv": "any",
+"i18n": {
+"en": "Which everyday invention do you think is the most underrated?",
+"de": "Welche Alltagserfindung wird deiner Meinung nach am meisten unterschätzt?",
+"es": "¿Qué invento cotidiano crees que está más infravalorado?",
+"fr": "Quelle invention du quotidien est la plus sous-estimée, selon toi ?",
+"it": "Quale invenzione di tutti i giorni secondo te è la più sottovalutata?",
+"pt": "Que invenção do dia a dia achas que é a mais subestimada?",
+"pt_BR": "Qual invenção do dia a dia você acha a mais subestimada?"
+}
+},
+{
+"id": "debate_partner-010",
+"lv": "any",
+"i18n": {
+"en": "Beach holiday or mountain holiday: where would you go, and why?",
+"de": "Strandurlaub oder Bergurlaub: Wohin würdest du fahren, und warum?",
+"es": "Vacaciones en la playa o en la montaña: ¿adónde irías y por qué?",
+"fr": "Vacances à la plage ou à la montagne : où irais-tu, et pourquoi ?",
+"it": "Vacanza al mare o in montagna: dove andresti, e perché?",
+"pt": "Férias na praia ou na montanha: para onde irias, e porquê?",
+"pt_BR": "Férias na praia ou na montanha: para onde você iria, e por quê?"
+}
+},
+{
+"id": "debate_partner-011",
+"lv": "any",
+"i18n": {
+"en": "What's a popular trend you just don't understand?",
+"de": "Welchen beliebten Trend verstehst du einfach nicht?",
+"es": "¿Qué moda popular simplemente no entiendes?",
+"fr": "Quelle tendance à la mode ne comprends-tu pas du tout ?",
+"it": "Quale tendenza popolare proprio non capisci?",
+"pt": "Que moda popular simplesmente não entendes?",
+"pt_BR": "Que moda popular você simplesmente não entende?"
+}
+},
+{
+"id": "debate_partner-012",
+"lv": "any",
+"i18n": {
+"en": "What's something you changed your mind about over the years?",
+"de": "Worüber hast du im Lauf der Jahre deine Meinung geändert?",
+"es": "¿Sobre qué has cambiado de opinión con los años?",
+"fr": "Sur quoi as-tu changé d'avis au fil des années ?",
+"it": "Su cosa hai cambiato idea nel corso degli anni?",
+"pt": "Sobre o que mudaste de opinião ao longo dos anos?",
+"pt_BR": "Sobre o que você mudou de opinião ao longo dos anos?"
+}
+},
+{
+"id": "debate_partner-013",
+"lv": "any",
+"i18n": {
+"en": "Is pineapple on pizza delicious or a crime? Defend your view!",
+"de": "Ist Ananas auf Pizza lecker oder ein Verbrechen? Verteidige deine Meinung!",
+"es": "¿La piña en la pizza es deliciosa o un crimen? ¡Defiende tu opinión!",
+"fr": "L'ananas sur la pizza : délice ou crime ? Défends ton point de vue !",
+"it": "L'ananas sulla pizza è delizioso o un crimine? Difendi la tua idea!",
+"pt": "Ananás na pizza é delicioso ou um crime? Defende a tua opinião!",
+"pt_BR": "Abacaxi na pizza é delicioso ou um crime? Defenda sua opinião!"
+}
+},
+{
+"id": "debate_partner-014",
+"lv": "any",
+"i18n": {
+"en": "What's the best snack for a long trip, and why?",
+"de": "Was ist der beste Snack für eine lange Reise, und warum?",
+"es": "¿Cuál es el mejor tentempié para un viaje largo y por qué?",
+"fr": "Quel est le meilleur en-cas pour un long trajet, et pourquoi ?",
+"it": "Qual è lo snack migliore per un lungo viaggio, e perché?",
+"pt": "Qual é o melhor petisco para uma viagem longa, e porquê?",
+"pt_BR": "Qual é o melhor lanche para uma viagem longa, e por quê?"
+}
+},
+{
+"id": "debate_partner-015",
+"lv": "any",
+"i18n": {
+"en": "Would you rather be able to fly or be invisible? Why?",
+"de": "Würdest du lieber fliegen können oder unsichtbar sein? Warum?",
+"es": "¿Preferirías poder volar o ser invisible? ¿Por qué?",
+"fr": "Tu préférerais pouvoir voler ou être invisible ? Pourquoi ?",
+"it": "Preferiresti saper volare o essere invisibile? Perché?",
+"pt": "Preferias poder voar ou ser invisível? Porquê?",
+"pt_BR": "Você preferiria poder voar ou ficar invisível? Por quê?"
+}
+},
+{
+"id": "debate_partner-016",
+"lv": "any",
+"i18n": {
+"en": "What's a small rule of etiquette you think everyone should follow?",
+"de": "Welche kleine Benimmregel sollte deiner Meinung nach jeder befolgen?",
+"es": "¿Qué pequeña norma de cortesía crees que todo el mundo debería seguir?",
+"fr": "Quelle petite règle de politesse tout le monde devrait suivre, selon toi ?",
+"it": "Quale piccola regola di galateo dovrebbero seguire tutti, secondo te?",
+"pt": "Que pequena regra de etiqueta achas que toda a gente devia seguir?",
+"pt_BR": "Que pequena regra de etiqueta você acha que todo mundo deveria seguir?"
+}
+},
+{
+"id": "debate_partner-017",
+"lv": "any",
+"i18n": {
+"en": "City or countryside: where would you rather live, and why?",
+"de": "Stadt oder Land: Wo würdest du lieber leben, und warum?",
+"es": "Ciudad o campo: ¿dónde preferirías vivir y por qué?",
+"fr": "Ville ou campagne : où préférerais-tu vivre, et pourquoi ?",
+"it": "Città o campagna: dove preferiresti vivere, e perché?",
+"pt": "Cidade ou campo: onde preferias viver, e porquê?",
+"pt_BR": "Cidade ou interior: onde você preferiria morar, e por quê?"
+}
+},
+{
+"id": "debate_partner-018",
+"lv": "any",
+"i18n": {
+"en": "Who in your life is great at friendly arguments, and what makes them good?",
+"de": "Wer in deinem Leben kann gut freundlich diskutieren, und was macht diese Person so gut?",
+"es": "¿Quién en tu vida discute de forma amistosa genial, y qué lo hace tan bueno?",
+"fr": "Qui dans ton entourage débat avec bienveillance, et qu'est-ce qui le rend si doué ?",
+"it": "Chi nella tua vita sa discutere in modo amichevole, e cosa lo rende così bravo?",
+"pt": "Quem na tua vida discute de forma simpática e muito bem, e o que a torna tão boa nisso?",
+"pt_BR": "Quem na sua vida é ótimo em discussões amigáveis, e o que faz essa pessoa ser tão boa?"
+}
+},
+{
+"id": "debate_partner-019",
+"lv": "any",
+"i18n": {
+"en": "What's the most fun debate you've ever had with friends or family?",
+"de": "Was war die lustigste Diskussion, die du je mit Freunden oder Familie hattest?",
+"es": "¿Cuál ha sido el debate más divertido que has tenido con amigos o familia?",
+"fr": "Quel est le débat le plus drôle que tu aies eu avec des amis ou ta famille ?",
+"it": "Qual è il dibattito più divertente che hai avuto con amici o famiglia?",
+"pt": "Qual foi o debate mais divertido que já tiveste com amigos ou família?",
+"pt_BR": "Qual foi o debate mais divertido que você já teve com amigos ou família?"
+}
+},
+{
+"id": "debate_partner-020",
+"lv": "any",
+"i18n": {
+"en": "Which superpower would be the most useful in everyday life?",
+"de": "Welche Superkraft wäre im Alltag am nützlichsten?",
+"es": "¿Qué superpoder sería el más útil en la vida diaria?",
+"fr": "Quel superpouvoir serait le plus utile au quotidien ?",
+"it": "Quale superpotere sarebbe il più utile nella vita di tutti i giorni?",
+"pt": "Que superpoder seria o mais útil no dia a dia?",
+"pt_BR": "Qual superpoder seria o mais útil no dia a dia?"
+}
+},
+{
+"id": "debate_partner-021",
+"lv": "any",
+"i18n": {
+"en": "Is a hot dog a sandwich? Give me your best argument.",
+"de": "Ist ein Hotdog ein Sandwich? Nenn mir dein bestes Argument.",
+"es": "¿Un perrito caliente es un sándwich? Dame tu mejor argumento.",
+"fr": "Un hot-dog, est-ce un sandwich ? Donne-moi ton meilleur argument.",
+"it": "Un hot dog è un panino? Dammi il tuo argomento migliore.",
+"pt": "Um cachorro-quente é uma sanduíche? Dá-me o teu melhor argumento.",
+"pt_BR": "Cachorro-quente é sanduíche? Me dê seu melhor argumento."
+}
+},
+{
+"id": "debate_partner-022",
+"lv": "any",
+"i18n": {
+"en": "Which food is overrated, in your opinion?",
+"de": "Welches Essen ist deiner Meinung nach überbewertet?",
+"es": "En tu opinión, ¿qué comida está sobrevalorada?",
+"fr": "Selon toi, quel plat est surcoté ?",
+"it": "Secondo te, quale cibo è sopravvalutato?",
+"pt": "Na tua opinião, que comida é sobrevalorizada?",
+"pt_BR": "Na sua opinião, qual comida é superestimada?"
+}
+},
+{
+"id": "debate_partner-023",
+"lv": "any",
+"i18n": {
+"en": "Texting or calling: which do you prefer for staying in touch, and why?",
+"de": "Schreiben oder anrufen: Was ist dir lieber, um in Kontakt zu bleiben, und warum?",
+"es": "Mensajes o llamadas: ¿qué prefieres para mantener el contacto y por qué?",
+"fr": "Messages ou appels : que préfères-tu pour garder le contact, et pourquoi ?",
+"it": "Messaggi o chiamate: cosa preferisci per restare in contatto, e perché?",
+"pt": "Mensagens ou chamadas: o que preferes para manter o contacto, e porquê?",
+"pt_BR": "Mensagem ou ligação: o que você prefere para manter contato, e por quê?"
+}
+},
+{
+"id": "debate_partner-024",
+"lv": "any",
+"i18n": {
+"en": "Which hobby do you think everyone should try at least once?",
+"de": "Welches Hobby sollte deiner Meinung nach jeder einmal ausprobieren?",
+"es": "¿Qué afición crees que todo el mundo debería probar al menos una vez?",
+"fr": "Quel loisir tout le monde devrait essayer au moins une fois, selon toi ?",
+"it": "Quale hobby dovrebbero provare tutti almeno una volta, secondo te?",
+"pt": "Que passatempo achas que toda a gente devia experimentar pelo menos uma vez?",
+"pt_BR": "Qual hobby você acha que todo mundo deveria experimentar pelo menos uma vez?"
+}
+},
+{
+"id": "debate_partner-025",
+"lv": "any",
+"i18n": {
+"en": "Paper books or e-readers: which side are you on?",
+"de": "Gedruckte Bücher oder E-Reader: Auf welcher Seite stehst du?",
+"es": "Libros de papel o lectores electrónicos: ¿de qué lado estás?",
+"fr": "Livres papier ou liseuses : dans quel camp es-tu ?",
+"it": "Libri di carta o e-reader: da che parte stai?",
+"pt": "Livros em papel ou leitores digitais: de que lado estás?",
+"pt_BR": "Livro de papel ou leitor digital: de que lado você está?"
+}
+},
+{
+"id": "debate_partner-026",
+"lv": "any",
+"i18n": {
+"en": "What's the perfect number of people for a dinner with friends?",
+"de": "Wie viele Leute sind perfekt für ein Abendessen mit Freunden?",
+"es": "¿Cuál es el número perfecto de personas para una cena con amigos?",
+"fr": "Quel est le nombre idéal de personnes pour un dîner entre amis ?",
+"it": "Qual è il numero perfetto di persone per una cena tra amici?",
+"pt": "Qual é o número perfeito de pessoas para um jantar com amigos?",
+"pt_BR": "Qual é o número perfeito de pessoas para um jantar com amigos?"
+}
+},
+{
+"id": "debate_partner-027",
+"lv": "any",
+"i18n": {
+"en": "Which is better: a carefully planned trip or a spontaneous one?",
+"de": "Was ist besser: eine genau geplante Reise oder eine spontane?",
+"es": "¿Qué es mejor: un viaje bien planeado o uno improvisado?",
+"fr": "Qu'est-ce qui est mieux : un voyage bien préparé ou un voyage improvisé ?",
+"it": "Cos'è meglio: un viaggio pianificato o uno improvvisato?",
+"pt": "O que é melhor: uma viagem bem planeada ou uma espontânea?",
+"pt_BR": "O que é melhor: uma viagem bem planejada ou uma espontânea?"
+}
+},
+{
+"id": "debate_partner-028",
+"lv": "any",
+"i18n": {
+"en": "What film does everyone love that you could happily argue against?",
+"de": "Welchen Film lieben alle, gegen den du gern argumentieren würdest?",
+"es": "¿Qué película adora todo el mundo y tú podrías criticar con gusto?",
+"fr": "Quel film tout le monde adore alors que tu pourrais volontiers le critiquer ?",
+"it": "Quale film amano tutti ma tu potresti criticare volentieri?",
+"pt": "Que filme toda a gente adora, mas tu podias criticar com gosto?",
+"pt_BR": "Que filme todo mundo ama, mas você criticaria com prazer?"
+}
+},
+{
+"id": "debate_partner-029",
+"lv": "any",
+"i18n": {
+"en": "Which sport is the most fun to watch, and why?",
+"de": "Welcher Sport macht beim Zuschauen am meisten Spaß, und warum?",
+"es": "¿Qué deporte es el más divertido de ver y por qué?",
+"fr": "Quel sport est le plus amusant à regarder, et pourquoi ?",
+"it": "Quale sport è il più divertente da guardare, e perché?",
+"pt": "Que desporto é o mais divertido de ver, e porquê?",
+"pt_BR": "Qual esporte é o mais divertido de assistir, e por quê?"
+}
+},
+{
+"id": "debate_partner-030",
+"lv": "any",
+"i18n": {
+"en": "Breakfast: sweet or savoury? Defend your choice!",
+"de": "Frühstück: süß oder herzhaft? Verteidige deine Wahl!",
+"es": "Desayuno: ¿dulce o salado? ¡Defiende tu elección!",
+"fr": "Petit-déjeuner : sucré ou salé ? Défends ton choix !",
+"it": "Colazione: dolce o salata? Difendi la tua scelta!",
+"pt": "Pequeno-almoço: doce ou salgado? Defende a tua escolha!",
+"pt_BR": "Café da manhã: doce ou salgado? Defenda sua escolha!"
+}
+},
+{
+"id": "debate_partner-031",
+"lv": "any",
+"i18n": {
+"en": "What habit would you argue makes life better?",
+"de": "Für welche Gewohnheit würdest du argumentieren, dass sie das Leben verbessert?",
+"es": "¿Qué hábito defenderías como algo que mejora la vida?",
+"fr": "Quelle habitude, selon toi, rend la vie meilleure ?",
+"it": "Quale abitudine sosterresti che rende la vita migliore?",
+"pt": "Que hábito defenderias como algo que torna a vida melhor?",
+"pt_BR": "Que hábito você defenderia como algo que deixa a vida melhor?"
+}
+},
+{
+"id": "debate_partner-032",
+"lv": "any",
+"i18n": {
+"en": "Window seat or aisle seat, and what's your best reason?",
+"de": "Fensterplatz oder Gangplatz, und was ist dein bester Grund?",
+"es": "¿Ventanilla o pasillo? ¿Cuál es tu mejor razón?",
+"fr": "Côté hublot ou côté couloir, et quelle est ta meilleure raison ?",
+"it": "Finestrino o corridoio, e qual è il tuo motivo migliore?",
+"pt": "Janela ou corredor, e qual é a tua melhor razão?",
+"pt_BR": "Janela ou corredor, e qual é o seu melhor motivo?"
+}
+},
+{
+"id": "debate_partner-033",
+"lv": "any",
+"i18n": {
+"en": "Which decade had the best music, in your opinion?",
+"de": "Welches Jahrzehnt hatte deiner Meinung nach die beste Musik?",
+"es": "En tu opinión, ¿qué década tuvo la mejor música?",
+"fr": "Selon toi, quelle décennie a eu la meilleure musique ?",
+"it": "Secondo te, quale decennio ha avuto la musica migliore?",
+"pt": "Na tua opinião, que década teve a melhor música?",
+"pt_BR": "Na sua opinião, qual década teve a melhor música?"
+}
+},
+{
+"id": "debate_partner-034",
+"lv": "any",
+"i18n": {
+"en": "Is it better to arrive early or exactly on time?",
+"de": "Ist es besser, zu früh oder genau pünktlich zu kommen?",
+"es": "¿Es mejor llegar temprano o justo a la hora?",
+"fr": "Vaut-il mieux arriver en avance ou pile à l'heure ?",
+"it": "È meglio arrivare in anticipo o esattamente puntuali?",
+"pt": "É melhor chegar cedo ou mesmo à hora certa?",
+"pt_BR": "É melhor chegar adiantado ou bem na hora?"
+}
+},
+{
+"id": "debate_partner-035",
+"lv": "any",
+"i18n": {
+"en": "What light topic do you love debating just for fun?",
+"de": "Über welches leichte Thema diskutierst du einfach aus Spaß gern?",
+"es": "¿Sobre qué tema ligero te encanta debatir solo por diversión?",
+"fr": "Sur quel sujet léger adores-tu débattre juste pour le plaisir ?",
+"it": "Su quale tema leggero ami discutere solo per divertimento?",
+"pt": "Sobre que tema leve adoras debater só por diversão?",
+"pt_BR": "Sobre que tema leve você adora debater só por diversão?"
+}
+},
+{
+"id": "debate_partner-036",
+"lv": "any",
+"i18n": {
+"en": "What's the best board game ever made, and why?",
+"de": "Was ist das beste Brettspiel aller Zeiten, und warum?",
+"es": "¿Cuál es el mejor juego de mesa de la historia y por qué?",
+"fr": "Quel est le meilleur jeu de société jamais créé, et pourquoi ?",
+"it": "Qual è il miglior gioco da tavolo mai creato, e perché?",
+"pt": "Qual é o melhor jogo de tabuleiro de sempre, e porquê?",
+"pt_BR": "Qual é o melhor jogo de tabuleiro de todos os tempos, e por quê?"
+}
+},
+{
+"id": "debate_partner-037",
+"lv": "any",
+"i18n": {
+"en": "Should dessert ever come before the main course? Why or why not?",
+"de": "Darf der Nachtisch je vor dem Hauptgericht kommen? Warum oder warum nicht?",
+"es": "¿Debería el postre ir alguna vez antes del plato principal? ¿Por qué?",
+"fr": "Le dessert peut-il passer avant le plat principal ? Pourquoi ?",
+"it": "Il dolce dovrebbe mai venire prima del piatto principale? Perché?",
+"pt": "A sobremesa devia alguma vez vir antes do prato principal? Porquê?",
+"pt_BR": "A sobremesa deveria vir antes do prato principal às vezes? Por quê?"
+}
+},
+{
+"id": "debate_partner-038",
+"lv": "any",
+"i18n": {
+"en": "Which is cosier, a rainy day or a snowy day? Convince me!",
+"de": "Was ist gemütlicher, ein Regentag oder ein Schneetag? Überzeug mich!",
+"es": "¿Qué es más acogedor, un día de lluvia o uno de nieve? ¡Convénceme!",
+"fr": "Qu'est-ce qui est plus douillet, un jour de pluie ou de neige ? Convaincs-moi !",
+"it": "Cos'è più accogliente, un giorno di pioggia o di neve? Convincimi!",
+"pt": "O que é mais aconchegante, um dia de chuva ou de neve? Convence-me!",
+"pt_BR": "O que é mais aconchegante, um dia de chuva ou de neve? Me convença!"
+}
+},
+{
+"id": "debate_partner-039",
+"lv": "any",
+"i18n": {
+"en": "What's one thing you'd love to convince the whole world to try?",
+"de": "Was würdest du gern die ganze Welt überzeugen auszuprobieren?",
+"es": "¿Qué te encantaría convencer al mundo entero de probar?",
+"fr": "Qu'aimerais-tu convaincre le monde entier d'essayer ?",
+"it": "Cosa ti piacerebbe convincere il mondo intero a provare?",
+"pt": "O que gostavas de convencer o mundo inteiro a experimentar?",
+"pt_BR": "O que você adoraria convencer o mundo inteiro a experimentar?"
+}
+},
+{
+"id": "debate_partner-040",
+"lv": "any",
+"i18n": {
+"en": "Would you rather explore the deep sea or outer space? Why?",
+"de": "Würdest du lieber die Tiefsee oder das Weltall erkunden? Warum?",
+"es": "¿Preferirías explorar las profundidades del mar o el espacio? ¿Por qué?",
+"fr": "Tu préférerais explorer les fonds marins ou l'espace ? Pourquoi ?",
+"it": "Preferiresti esplorare gli abissi marini o lo spazio? Perché?",
+"pt": "Preferias explorar o fundo do mar ou o espaço? Porquê?",
+"pt_BR": "Você preferiria explorar o fundo do mar ou o espaço? Por quê?"
+}
+},
+{
+"id": "debate_partner-041",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually react when someone disagrees with you?",
+"de": "Wie reagierst du normalerweise, wenn jemand anderer Meinung ist?",
+"es": "¿Cómo sueles reaccionar cuando alguien no está de acuerdo contigo?",
+"fr": "Comment réagis-tu d'habitude quand quelqu'un n'est pas d'accord avec toi ?",
+"it": "Come reagisci di solito quando qualcuno non è d'accordo con te?",
+"pt": "Como costumas reagir quando alguém discorda de ti?",
+"pt_BR": "Como você costuma reagir quando alguém discorda de você?"
+}
+},
+{
+"id": "debate_partner-042",
+"lv": "beginner",
+"i18n": {
+"en": "What phrase do you like to use when you disagree politely?",
+"de": "Welche Formulierung benutzt du gern, um höflich zu widersprechen?",
+"es": "¿Qué frase te gusta usar para discrepar con educación?",
+"fr": "Quelle formule aimes-tu utiliser pour exprimer poliment ton désaccord ?",
+"it": "Quale frase ti piace usare per dissentire con gentilezza?",
+"pt": "Que frase gostas de usar para discordar com educação?",
+"pt_BR": "Que frase você gosta de usar para discordar com educação?"
+}
+},
+{
+"id": "debate_partner-043",
+"lv": "beginner",
+"i18n": {
+"en": "Can you give me one claim and one reason about your favourite food?",
+"de": "Kannst du mir eine These und einen Grund zu deinem Lieblingsessen nennen?",
+"es": "¿Me das una afirmación y una razón sobre tu comida favorita?",
+"fr": "Peux-tu me donner une affirmation et une raison sur ton plat préféré ?",
+"it": "Mi dai una tesi e un motivo sul tuo cibo preferito?",
+"pt": "Consegues dar-me uma afirmação e uma razão sobre a tua comida preferida?",
+"pt_BR": "Você consegue me dar uma afirmação e um motivo sobre sua comida favorita?"
+}
+},
+{
+"id": "debate_partner-044",
+"lv": "beginner",
+"i18n": {
+"en": "When did a good example help you understand someone's point?",
+"de": "Wann hat dir ein gutes Beispiel geholfen, jemanden zu verstehen?",
+"es": "¿Cuándo te ayudó un buen ejemplo a entender el punto de vista de alguien?",
+"fr": "Quand un bon exemple t'a-t-il aidé à comprendre l'avis de quelqu'un ?",
+"it": "Quando un buon esempio ti ha aiutato a capire il punto di vista di qualcuno?",
+"pt": "Quando é que um bom exemplo te ajudou a perceber o ponto de vista de alguém?",
+"pt_BR": "Quando um bom exemplo ajudou você a entender o ponto de vista de alguém?"
+}
+},
+{
+"id": "debate_partner-045",
+"lv": "beginner",
+"i18n": {
+"en": "Which of your opinions is really just a matter of taste?",
+"de": "Welche deiner Meinungen ist eigentlich reine Geschmackssache?",
+"es": "¿Qué opinión tuya es en realidad solo cuestión de gustos?",
+"fr": "Laquelle de tes opinions est en fait une simple question de goût ?",
+"it": "Quale tua opinione è in realtà solo una questione di gusti?",
+"pt": "Que opinião tua é, na verdade, só uma questão de gosto?",
+"pt_BR": "Qual opinião sua é, na verdade, só questão de gosto?"
+}
+},
+{
+"id": "debate_partner-046",
+"lv": "beginner",
+"i18n": {
+"en": "What's a fact you once believed that turned out to be wrong?",
+"de": "Welche Tatsache hast du einmal geglaubt, die sich als falsch herausstellte?",
+"es": "¿Qué dato creías cierto y resultó ser falso?",
+"fr": "Quel fait as-tu cru un jour avant de découvrir qu'il était faux ?",
+"it": "Quale fatto credevi vero e poi si è rivelato sbagliato?",
+"pt": "Que facto já acreditaste ser verdade e afinal estava errado?",
+"pt_BR": "Que fato você já acreditou ser verdade e depois descobriu que estava errado?"
+}
+},
+{
+"id": "debate_partner-047",
+"lv": "beginner",
+"i18n": {
+"en": "How do you show someone that you're really listening?",
+"de": "Wie zeigst du jemandem, dass du wirklich zuhörst?",
+"es": "¿Cómo le demuestras a alguien que de verdad lo escuchas?",
+"fr": "Comment montres-tu à quelqu'un que tu l'écoutes vraiment ?",
+"it": "Come mostri a qualcuno che lo stai davvero ascoltando?",
+"pt": "Como mostras a alguém que estás mesmo a ouvir?",
+"pt_BR": "Como você mostra a alguém que está realmente ouvindo?"
+}
+},
+{
+"id": "debate_partner-048",
+"lv": "beginner",
+"i18n": {
+"en": "When was the last time you told someone 'you might be right'?",
+"de": "Wann hast du zuletzt zu jemandem gesagt: „Du könntest recht haben“?",
+"es": "¿Cuándo fue la última vez que le dijiste a alguien «puede que tengas razón»?",
+"fr": "Quand as-tu dit pour la dernière fois à quelqu'un « tu as peut-être raison » ?",
+"it": "Quand'è stata l'ultima volta che hai detto a qualcuno «forse hai ragione»?",
+"pt": "Quando foi a última vez que disseste a alguém «se calhar tens razão»?",
+"pt_BR": "Quando foi a última vez que você disse a alguém «talvez você tenha razão»?"
+}
+},
+{
+"id": "debate_partner-049",
+"lv": "beginner",
+"i18n": {
+"en": "Do you catch yourself saying 'always' or 'never' in arguments?",
+"de": "Ertappst du dich in Diskussionen dabei, „immer“ oder „nie“ zu sagen?",
+"es": "¿Te pillas diciendo «siempre» o «nunca» cuando discutes?",
+"fr": "T'arrive-t-il de dire « toujours » ou « jamais » quand tu débats ?",
+"it": "Ti capita di dire «sempre» o «mai» quando discuti?",
+"pt": "Dás por ti a dizer «sempre» ou «nunca» quando discutes?",
+"pt_BR": "Você se pega dizendo «sempre» ou «nunca» nas discussões?"
+}
+},
+{
+"id": "debate_partner-050",
+"lv": "beginner",
+"i18n": {
+"en": "What makes you trust someone's opinion on a topic?",
+"de": "Was bringt dich dazu, der Meinung von jemandem zu einem Thema zu vertrauen?",
+"es": "¿Qué hace que confíes en la opinión de alguien sobre un tema?",
+"fr": "Qu'est-ce qui te donne confiance dans l'avis de quelqu'un sur un sujet ?",
+"it": "Cosa ti fa fidare dell'opinione di qualcuno su un argomento?",
+"pt": "O que te faz confiar na opinião de alguém sobre um tema?",
+"pt_BR": "O que faz você confiar na opinião de alguém sobre um assunto?"
+}
+},
+{
+"id": "debate_partner-051",
+"lv": "beginner",
+"i18n": {
+"en": "How do you stay calm when a discussion gets heated?",
+"de": "Wie bleibst du ruhig, wenn eine Diskussion hitzig wird?",
+"es": "¿Cómo mantienes la calma cuando una conversación se calienta?",
+"fr": "Comment restes-tu calme quand une discussion s'échauffe ?",
+"it": "Come resti calmo quando una discussione si accende?",
+"pt": "Como manténs a calma quando uma discussão aquece?",
+"pt_BR": "Como você mantém a calma quando uma discussão esquenta?"
+}
+},
+{
+"id": "debate_partner-052",
+"lv": "beginner",
+"i18n": {
+"en": "Tell me about a debate where you agreed on more than you expected.",
+"de": "Erzähl mir von einer Diskussion, in der ihr euch mehr einig wart als gedacht.",
+"es": "Cuéntame un debate en el que estuvisteis más de acuerdo de lo que esperabas.",
+"fr": "Raconte-moi un débat où vous étiez plus d'accord que prévu.",
+"it": "Raccontami un dibattito in cui eravate più d'accordo del previsto.",
+"pt": "Fala-me de um debate em que concordaram mais do que esperavas.",
+"pt_BR": "Me conte sobre um debate em que vocês concordaram mais do que você esperava."
+}
+},
+{
+"id": "debate_partner-053",
+"lv": "beginner",
+"i18n": {
+"en": "Could you argue for your least favourite season? Give it a try!",
+"de": "Könntest du für deine unbeliebteste Jahreszeit argumentieren? Versuch es mal!",
+"es": "¿Podrías defender tu estación menos favorita? ¡Inténtalo!",
+"fr": "Pourrais-tu défendre la saison que tu aimes le moins ? Essaie !",
+"it": "Sapresti difendere la tua stagione meno preferita? Prova!",
+"pt": "Conseguias defender a tua estação menos preferida? Experimenta!",
+"pt_BR": "Você conseguiria defender sua estação menos favorita? Tente!"
+}
+},
+{
+"id": "debate_partner-054",
+"lv": "beginner",
+"i18n": {
+"en": "What question do you ask when you don't understand someone's view?",
+"de": "Welche Frage stellst du, wenn du die Sicht von jemandem nicht verstehst?",
+"es": "¿Qué pregunta haces cuando no entiendes el punto de vista de alguien?",
+"fr": "Quelle question poses-tu quand tu ne comprends pas l'avis de quelqu'un ?",
+"it": "Che domanda fai quando non capisci il punto di vista di qualcuno?",
+"pt": "Que pergunta fazes quando não percebes o ponto de vista de alguém?",
+"pt_BR": "Que pergunta você faz quando não entende o ponto de vista de alguém?"
+}
+},
+{
+"id": "debate_partner-055",
+"lv": "beginner",
+"i18n": {
+"en": "What's the best reason you've heard for liking a food you dislike?",
+"de": "Was ist der beste Grund, den du je für ein Essen gehört hast, das du nicht magst?",
+"es": "¿Cuál es la mejor razón que has oído para que guste una comida que no te gusta?",
+"fr": "Quelle est la meilleure raison entendue pour aimer un plat que tu n'aimes pas ?",
+"it": "Qual è il motivo migliore che hai sentito per amare un cibo che non ti piace?",
+"pt": "Qual é a melhor razão que já ouviste para gostar de uma comida de que não gostas?",
+"pt_BR": "Qual o melhor motivo que você já ouviu para gostar de uma comida que você não curte?"
+}
+},
+{
+"id": "debate_partner-056",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer to speak first or last in a discussion? Why?",
+"de": "Sprichst du in einer Diskussion lieber als Erster oder als Letzter? Warum?",
+"es": "¿Prefieres hablar primero o último en una conversación? ¿Por qué?",
+"fr": "Préfères-tu parler en premier ou en dernier dans une discussion ? Pourquoi ?",
+"it": "Preferisci parlare per primo o per ultimo in una discussione? Perché?",
+"pt": "Preferes falar primeiro ou por último numa discussão? Porquê?",
+"pt_BR": "Você prefere falar primeiro ou por último numa discussão? Por quê?"
+}
+},
+{
+"id": "debate_partner-057",
+"lv": "beginner",
+"i18n": {
+"en": "When did someone change your mind with a good story?",
+"de": "Wann hat dich jemand mit einer guten Geschichte umgestimmt?",
+"es": "¿Cuándo te hizo alguien cambiar de opinión con una buena historia?",
+"fr": "Quand quelqu'un t'a-t-il fait changer d'avis avec une bonne histoire ?",
+"it": "Quando qualcuno ti ha fatto cambiare idea con una bella storia?",
+"pt": "Quando é que alguém te fez mudar de opinião com uma boa história?",
+"pt_BR": "Quando alguém fez você mudar de ideia com uma boa história?"
+}
+},
+{
+"id": "debate_partner-058",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about arguing for the side you don't agree with?",
+"de": "Wie findest du es, für die Seite zu argumentieren, der du nicht zustimmst?",
+"es": "¿Qué te parece defender la postura con la que no estás de acuerdo?",
+"fr": "Que penses-tu du fait de défendre le camp avec lequel tu n'es pas d'accord ?",
+"it": "Cosa ne pensi di difendere la posizione con cui non sei d'accordo?",
+"pt": "O que achas de defender o lado com que não concordas?",
+"pt_BR": "O que você acha de defender o lado com o qual não concorda?"
+}
+},
+{
+"id": "debate_partner-059",
+"lv": "beginner",
+"i18n": {
+"en": "Which word do people often define differently, causing confusion?",
+"de": "Welches Wort verstehen Menschen oft unterschiedlich, sodass es Missverständnisse gibt?",
+"es": "¿Qué palabra suele entender cada uno a su manera y causa confusión?",
+"fr": "Quel mot les gens définissent-ils souvent différemment, au point de créer des malentendus ?",
+"it": "Quale parola le persone intendono spesso in modo diverso, creando confusione?",
+"pt": "Que palavra as pessoas costumam entender de forma diferente, criando confusão?",
+"pt_BR": "Que palavra as pessoas costumam entender de jeitos diferentes, gerando confusão?"
+}
+},
+{
+"id": "debate_partner-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which of your light opinions are you most sure about, and why?",
+"de": "Bei welcher deiner harmlosen Meinungen bist du dir am sichersten, und warum?",
+"es": "¿De cuál de tus opiniones ligeras estás más seguro y por qué?",
+"fr": "De laquelle de tes opinions légères es-tu le plus sûr, et pourquoi ?",
+"it": "Di quale tua opinione leggera sei più sicuro, e perché?",
+"pt": "De qual das tuas opiniões leves tens mais certeza, e porquê?",
+"pt_BR": "De qual das suas opiniões leves você tem mais certeza, e por quê?"
+}
+},
+{
+"id": "debate_partner-061",
+"lv": "beginner",
+"i18n": {
+"en": "How do you like to end a friendly argument on a good note?",
+"de": "Wie beendest du eine freundliche Diskussion gern positiv?",
+"es": "¿Cómo te gusta terminar una discusión amistosa con buen sabor de boca?",
+"fr": "Comment aimes-tu terminer un débat amical sur une note positive ?",
+"it": "Come ti piace chiudere una discussione amichevole in modo positivo?",
+"pt": "Como gostas de terminar uma discussão amigável num tom positivo?",
+"pt_BR": "Como você gosta de encerrar uma discussão amigável num clima bom?"
+}
+},
+{
+"id": "debate_partner-062",
+"lv": "beginner",
+"i18n": {
+"en": "What light topic would you like us to debate this week?",
+"de": "Über welches leichte Thema möchtest du diese Woche mit mir diskutieren?",
+"es": "¿Sobre qué tema ligero te gustaría que debatiéramos esta semana?",
+"fr": "Sur quel sujet léger aimerais-tu qu'on débatte cette semaine ?",
+"it": "Su quale tema leggero ti piacerebbe discutere questa settimana?",
+"pt": "Sobre que tema leve gostavas que debatêssemos esta semana?",
+"pt_BR": "Sobre que tema leve você gostaria que a gente debatesse esta semana?"
+}
+},
+{
+"id": "debate_partner-063",
+"lv": "beginner",
+"i18n": {
+"en": "Do you think humour helps or hurts a discussion? Why?",
+"de": "Hilft Humor einer Diskussion oder schadet er ihr? Warum?",
+"es": "¿Crees que el humor ayuda o perjudica una conversación? ¿Por qué?",
+"fr": "Selon toi, l'humour aide-t-il ou nuit-il à une discussion ? Pourquoi ?",
+"it": "Secondo te l'umorismo aiuta o danneggia una discussione? Perché?",
+"pt": "Achas que o humor ajuda ou prejudica uma discussão? Porquê?",
+"pt_BR": "Você acha que o humor ajuda ou atrapalha uma discussão? Por quê?"
+}
+},
+{
+"id": "debate_partner-064",
+"lv": "beginner",
+"i18n": {
+"en": "How do friends where you live usually disagree: directly or gently?",
+"de": "Wie widersprechen sich Freunde bei dir meistens: direkt oder sanft?",
+"es": "¿Cómo suelen discrepar los amigos donde vives: de forma directa o suave?",
+"fr": "Où tu vis, comment les amis expriment-ils un désaccord : directement ou en douceur ?",
+"it": "Dove vivi, come esprimono di solito il disaccordo gli amici: in modo diretto o delicato?",
+"pt": "Onde vives, como é que os amigos costumam discordar: de forma direta ou suave?",
+"pt_BR": "Onde você mora, como os amigos costumam discordar: de forma direta ou suave?"
+}
+},
+{
+"id": "debate_partner-065",
+"lv": "beginner",
+"i18n": {
+"en": "What would make you an even better listener?",
+"de": "Was würde dich zu einem noch besseren Zuhörer machen?",
+"es": "¿Qué te haría escuchar todavía mejor?",
+"fr": "Qu'est-ce qui ferait de toi quelqu'un d'encore plus à l'écoute ?",
+"it": "Cosa ti renderebbe un ascoltatore ancora migliore?",
+"pt": "O que te tornaria alguém que ouve ainda melhor?",
+"pt_BR": "O que faria de você alguém que escuta ainda melhor?"
+}
+},
+{
+"id": "debate_partner-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which argument trick annoys you most when people use it?",
+"de": "Welcher Argumentationstrick nervt dich am meisten?",
+"es": "¿Qué truco al argumentar te molesta más cuando la gente lo usa?",
+"fr": "Quelle astuce argumentative t'agace le plus chez les autres ?",
+"it": "Quale trucco argomentativo ti dà più fastidio quando qualcuno lo usa?",
+"pt": "Que truque de argumentação te irrita mais quando as pessoas o usam?",
+"pt_BR": "Qual truque de argumentação mais te irrita quando as pessoas usam?"
+}
+},
+{
+"id": "debate_partner-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever caught yourself drawing a big conclusion from one example?",
+"de": "Hast du dich schon mal dabei ertappt, aus einem Beispiel einen großen Schluss zu ziehen?",
+"es": "¿Te has pillado alguna vez sacando una gran conclusión de un solo ejemplo?",
+"fr": "T'es-tu déjà surpris à tirer une grande conclusion d'un seul exemple ?",
+"it": "Ti sei mai sorpreso a trarre una grande conclusione da un solo esempio?",
+"pt": "Já deste por ti a tirar uma grande conclusão de um só exemplo?",
+"pt_BR": "Você já se pegou tirando uma grande conclusão de um único exemplo?"
+}
+},
+{
+"id": "debate_partner-068",
+"lv": "intermediate",
+"i18n": {
+"en": "When is 'we've always done it this way' actually a good reason?",
+"de": "Wann ist „Das haben wir schon immer so gemacht“ tatsächlich ein guter Grund?",
+"es": "¿Cuándo es «siempre se ha hecho así» una buena razón de verdad?",
+"fr": "Quand « on a toujours fait comme ça » est-il vraiment une bonne raison ?",
+"it": "Quando «si è sempre fatto così» è davvero un buon motivo?",
+"pt": "Quando é que «sempre se fez assim» é mesmo uma boa razão?",
+"pt_BR": "Quando «sempre foi feito assim» é realmente um bom motivo?"
+}
+},
+{
+"id": "debate_partner-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What expert advice convinced you to change one of your habits?",
+"de": "Welcher Expertenrat hat dich überzeugt, eine Gewohnheit zu ändern?",
+"es": "¿Qué consejo de un experto te convenció para cambiar algún hábito?",
+"fr": "Quel conseil d'expert t'a convaincu de changer une de tes habitudes ?",
+"it": "Quale consiglio di un esperto ti ha convinto a cambiare un'abitudine?",
+"pt": "Que conselho de um especialista te convenceu a mudar um hábito?",
+"pt_BR": "Qual conselho de especialista convenceu você a mudar um hábito?"
+}
+},
+{
+"id": "debate_partner-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide which reason is the strongest in an argument?",
+"de": "Wie entscheidest du, welcher Grund in einer Argumentation der stärkste ist?",
+"es": "¿Cómo decides qué razón es la más fuerte en un argumento?",
+"fr": "Comment décides-tu quelle raison est la plus forte dans un argument ?",
+"it": "Come decidi quale motivo è il più forte in un'argomentazione?",
+"pt": "Como decides qual é a razão mais forte num argumento?",
+"pt_BR": "Como você decide qual é o motivo mais forte num argumento?"
+}
+},
+{
+"id": "debate_partner-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What trade-off did you make recently, and how did you weigh it?",
+"de": "Welchen Kompromiss bist du kürzlich eingegangen, und wie hast du abgewogen?",
+"es": "¿Qué renuncia hiciste hace poco al elegir y cómo lo sopesaste?",
+"fr": "Quel compromis as-tu fait récemment, et comment as-tu pesé le pour et le contre ?",
+"it": "Quale compromesso hai fatto di recente, e come hai valutato i pro e i contro?",
+"pt": "Que compromisso fizeste recentemente, e como pesaste os prós e contras?",
+"pt_BR": "Que escolha difícil você fez recentemente, e como pesou os prós e contras?"
+}
+},
+{
+"id": "debate_partner-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which do you find more persuasive: stories or statistics?",
+"de": "Was überzeugt dich mehr: Geschichten oder Statistiken?",
+"es": "¿Qué te convence más: las historias o las estadísticas?",
+"fr": "Qu'est-ce qui te convainc le plus : les histoires ou les statistiques ?",
+"it": "Cosa trovi più convincente: le storie o le statistiche?",
+"pt": "O que achas mais convincente: histórias ou estatísticas?",
+"pt_BR": "O que você acha mais convincente: histórias ou estatísticas?"
+}
+},
+{
+"id": "debate_partner-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you answer someone's point without sounding rude?",
+"de": "Wie antwortest du auf ein Argument, ohne unhöflich zu wirken?",
+"es": "¿Cómo rebates un argumento sin sonar maleducado?",
+"fr": "Comment réponds-tu à un argument sans paraître impoli ?",
+"it": "Come rispondi a un argomento senza sembrare scortese?",
+"pt": "Como respondes a um argumento sem pareceres mal-educado?",
+"pt_BR": "Como você rebate um argumento sem parecer grosseiro?"
+}
+},
+{
+"id": "debate_partner-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What's an analogy you love using to explain something?",
+"de": "Welche Analogie benutzt du gern, um etwas zu erklären?",
+"es": "¿Qué analogía te encanta usar para explicar algo?",
+"fr": "Quelle analogie adores-tu utiliser pour expliquer quelque chose ?",
+"it": "Quale analogia ami usare per spiegare qualcosa?",
+"pt": "Que analogia adoras usar para explicar alguma coisa?",
+"pt_BR": "Qual analogia você adora usar para explicar algo?"
+}
+},
+{
+"id": "debate_partner-075",
+"lv": "intermediate",
+"i18n": {
+"en": "When have you conceded a point and still made your case stronger?",
+"de": "Wann hast du einen Punkt zugegeben und dein Argument trotzdem gestärkt?",
+"es": "¿Cuándo has concedido un punto y aun así reforzaste tu postura?",
+"fr": "Quand as-tu concédé un point tout en renforçant ta position ?",
+"it": "Quando hai concesso un punto rendendo comunque più forte la tua tesi?",
+"pt": "Quando é que cedeste num ponto e mesmo assim reforçaste a tua posição?",
+"pt_BR": "Quando você cedeu em um ponto e ainda assim fortaleceu sua posição?"
+}
+},
+{
+"id": "debate_partner-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which values guide your everyday choices most, like fun or fairness?",
+"de": "Welche Werte leiten deine Alltagsentscheidungen am meisten, etwa Spaß oder Fairness?",
+"es": "¿Qué valores guían más tus decisiones diarias, como la diversión o la justicia?",
+"fr": "Quelles valeurs guident le plus tes choix du quotidien, comme le plaisir ou l'équité ?",
+"it": "Quali valori guidano di più le tue scelte quotidiane, come il divertimento o l'equità?",
+"pt": "Que valores guiam mais as tuas escolhas do dia a dia, como a diversão ou a justiça?",
+"pt_BR": "Quais valores mais guiam suas escolhas do dia a dia, como diversão ou justiça?"
+}
+},
+{
+"id": "debate_partner-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you check whether a surprising fact is really true?",
+"de": "Wie prüfst du, ob eine überraschende Tatsache wirklich stimmt?",
+"es": "¿Cómo compruebas si un dato sorprendente es realmente cierto?",
+"fr": "Comment vérifies-tu si un fait surprenant est vraiment exact ?",
+"it": "Come verifichi se un fatto sorprendente è davvero vero?",
+"pt": "Como verificas se um facto surpreendente é mesmo verdade?",
+"pt_BR": "Como você verifica se um fato surpreendente é mesmo verdade?"
+}
+},
+{
+"id": "debate_partner-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What objection do you always expect when you share your opinions?",
+"de": "Welchen Einwand erwartest du immer, wenn du deine Meinung sagst?",
+"es": "¿Qué objeción esperas siempre cuando compartes tus opiniones?",
+"fr": "Quelle objection attends-tu toujours quand tu partages tes opinions ?",
+"it": "Quale obiezione ti aspetti sempre quando condividi le tue opinioni?",
+"pt": "Que objeção esperas sempre quando partilhas as tuas opiniões?",
+"pt_BR": "Que objeção você sempre espera quando compartilha suas opiniões?"
+}
+},
+{
+"id": "debate_partner-079",
+"lv": "intermediate",
+"i18n": {
+"en": "In daily decisions, do short-term or long-term effects matter more to you?",
+"de": "Was zählt bei Alltagsentscheidungen mehr für dich: kurzfristige oder langfristige Folgen?",
+"es": "En tus decisiones diarias, ¿te importan más los efectos a corto o a largo plazo?",
+"fr": "Dans tes décisions du quotidien, qu'est-ce qui compte le plus : le court ou le long terme ?",
+"it": "Nelle decisioni quotidiane, contano di più gli effetti a breve o a lungo termine?",
+"pt": "Nas decisões do dia a dia, importam-te mais os efeitos a curto ou a longo prazo?",
+"pt_BR": "Nas decisões do dia a dia, o que importa mais para você: efeitos a curto ou longo prazo?"
+}
+},
+{
+"id": "debate_partner-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you weigh comfort against style when choosing clothes?",
+"de": "Wie wägst du bei der Kleiderwahl Bequemlichkeit gegen Stil ab?",
+"es": "¿Cómo equilibras comodidad y estilo al elegir la ropa?",
+"fr": "Comment arbitres-tu entre confort et style quand tu choisis tes vêtements ?",
+"it": "Come bilanci comodità e stile quando scegli i vestiti?",
+"pt": "Como equilibras conforto e estilo quando escolhes a roupa?",
+"pt_BR": "Como você equilibra conforto e estilo na hora de escolher roupa?"
+}
+},
+{
+"id": "debate_partner-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What question would you ask to test one of my favourite opinions?",
+"de": "Welche Frage würdest du stellen, um eine meiner Lieblingsmeinungen zu prüfen?",
+"es": "¿Qué pregunta harías para poner a prueba una de mis opiniones favoritas?",
+"fr": "Quelle question poserais-tu pour tester une de mes opinions préférées ?",
+"it": "Che domanda faresti per mettere alla prova una mia opinione preferita?",
+"pt": "Que pergunta farias para pôr à prova uma das minhas opiniões preferidas?",
+"pt_BR": "Que pergunta você faria para testar uma das minhas opiniões favoritas?"
+}
+},
+{
+"id": "debate_partner-082",
+"lv": "intermediate",
+"i18n": {
+"en": "When did finding common ground solve a disagreement for you?",
+"de": "Wann hat das Finden von Gemeinsamkeiten bei dir einen Streitpunkt gelöst?",
+"es": "¿Cuándo resolvió un desacuerdo el hecho de encontrar puntos en común?",
+"fr": "Quand le fait de trouver un terrain d'entente a-t-il réglé un désaccord pour toi ?",
+"it": "Quando trovare un terreno comune ha risolto un disaccordo per te?",
+"pt": "Quando é que encontrar pontos em comum resolveu um desacordo para ti?",
+"pt_BR": "Quando encontrar pontos em comum resolveu uma divergência para você?"
+}
+},
+{
+"id": "debate_partner-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you prepare when you know an important discussion is coming?",
+"de": "Wie bereitest du dich vor, wenn ein wichtiges Gespräch ansteht?",
+"es": "¿Cómo te preparas cuando sabes que se acerca una conversación importante?",
+"fr": "Comment te prépares-tu quand tu sais qu'une discussion importante arrive ?",
+"it": "Come ti prepari quando sai che arriva una discussione importante?",
+"pt": "Como te preparas quando sabes que vem aí uma conversa importante?",
+"pt_BR": "Como você se prepara quando sabe que vem uma conversa importante?"
+}
+},
+{
+"id": "debate_partner-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What everyday principle would you defend even when it's inconvenient?",
+"de": "Welchen Alltagsgrundsatz würdest du verteidigen, auch wenn es unbequem ist?",
+"es": "¿Qué principio cotidiano defenderías aunque resulte incómodo?",
+"fr": "Quel principe du quotidien défendrais-tu même quand ce n'est pas pratique ?",
+"it": "Quale principio quotidiano difenderesti anche quando è scomodo?",
+"pt": "Que princípio do dia a dia defenderias mesmo quando é inconveniente?",
+"pt_BR": "Que princípio do dia a dia você defenderia mesmo quando é inconveniente?"
+}
+},
+{
+"id": "debate_partner-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle someone who keeps interrupting you?",
+"de": "Wie gehst du mit jemandem um, der dich ständig unterbricht?",
+"es": "¿Cómo manejas a alguien que no deja de interrumpirte?",
+"fr": "Comment réagis-tu face à quelqu'un qui te coupe sans arrêt la parole ?",
+"it": "Come gestisci qualcuno che continua a interromperti?",
+"pt": "Como lidas com alguém que te interrompe constantemente?",
+"pt_BR": "Como você lida com alguém que vive te interrompendo?"
+}
+},
+{
+"id": "debate_partner-086",
+"lv": "advanced",
+"i18n": {
+"en": "What's a light debate where you think both sides are completely right?",
+"de": "Bei welcher leichten Debatte haben deiner Meinung nach beide Seiten völlig recht?",
+"es": "¿En qué debate ligero crees que ambas partes tienen toda la razón?",
+"fr": "Dans quel débat léger penses-tu que les deux camps ont entièrement raison ?",
+"it": "In quale dibattito leggero pensi che entrambe le parti abbiano ragione?",
+"pt": "Em que debate leve achas que os dois lados têm toda a razão?",
+"pt_BR": "Em qual debate leve você acha que os dois lados têm toda a razão?"
+}
+},
+{
+"id": "debate_partner-087",
+"lv": "advanced",
+"i18n": {
+"en": "How do you argue well about something nobody can know for sure?",
+"de": "Wie argumentierst du gut über etwas, das niemand sicher wissen kann?",
+"es": "¿Cómo argumentas bien sobre algo que nadie puede saber con certeza?",
+"fr": "Comment bien argumenter sur un sujet dont personne ne peut être sûr ?",
+"it": "Come argomenti bene su qualcosa che nessuno può sapere con certezza?",
+"pt": "Como argumentas bem sobre algo que ninguém pode saber ao certo?",
+"pt_BR": "Como você argumenta bem sobre algo que ninguém pode saber com certeza?"
+}
+},
+{
+"id": "debate_partner-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which thinking bias do you notice most often in yourself?",
+"de": "Welche Denkverzerrung bemerkst du am häufigsten bei dir selbst?",
+"es": "¿Qué sesgo de pensamiento notas más a menudo en ti?",
+"fr": "Quel biais de pensée remarques-tu le plus souvent chez toi ?",
+"it": "Quale distorsione di pensiero noti più spesso in te stesso?",
+"pt": "Que enviesamento de pensamento notas mais vezes em ti?",
+"pt_BR": "Qual viés de pensamento você nota com mais frequência em si mesmo?"
+}
+},
+{
+"id": "debate_partner-089",
+"lv": "advanced",
+"i18n": {
+"en": "What thought experiment changed how you see something?",
+"de": "Welches Gedankenexperiment hat deinen Blick auf etwas verändert?",
+"es": "¿Qué experimento mental cambió tu forma de ver algo?",
+"fr": "Quelle expérience de pensée a changé ta façon de voir quelque chose ?",
+"it": "Quale esperimento mentale ha cambiato il tuo modo di vedere qualcosa?",
+"pt": "Que experiência mental mudou a forma como vês alguma coisa?",
+"pt_BR": "Qual experimento mental mudou o jeito como você vê algo?"
+}
+},
+{
+"id": "debate_partner-090",
+"lv": "advanced",
+"i18n": {
+"en": "How would you moderate a debate between two very stubborn friends?",
+"de": "Wie würdest du eine Debatte zwischen zwei sehr sturen Freunden moderieren?",
+"es": "¿Cómo moderarías un debate entre dos amigos muy testarudos?",
+"fr": "Comment animerais-tu un débat entre deux amis très têtus ?",
+"it": "Come modereresti un dibattito tra due amici molto testardi?",
+"pt": "Como moderarias um debate entre dois amigos muito teimosos?",
+"pt_BR": "Como você mediaria um debate entre dois amigos muito teimosos?"
+}
+},
+{
+"id": "debate_partner-091",
+"lv": "advanced",
+"i18n": {
+"en": "Where is the line between persuasion and manipulation, in your view?",
+"de": "Wo liegt für dich die Grenze zwischen Überzeugen und Manipulieren?",
+"es": "Para ti, ¿dónde está el límite entre persuadir y manipular?",
+"fr": "Selon toi, où est la limite entre persuasion et manipulation ?",
+"it": "Secondo te, dov'è il confine tra persuasione e manipolazione?",
+"pt": "Para ti, onde fica a linha entre persuadir e manipular?",
+"pt_BR": "Para você, onde fica a linha entre persuadir e manipular?"
+}
+},
+{
+"id": "debate_partner-092",
+"lv": "advanced",
+"i18n": {
+"en": "What's the best middle-ground solution you've found to a disagreement?",
+"de": "Was ist die beste Kompromisslösung, die du je für eine Meinungsverschiedenheit gefunden hast?",
+"es": "¿Cuál es la mejor solución intermedia que has encontrado a un desacuerdo?",
+"fr": "Quelle est la meilleure solution de compromis que tu aies trouvée à un désaccord ?",
+"it": "Qual è la migliore soluzione di compromesso che hai trovato a un disaccordo?",
+"pt": "Qual foi a melhor solução de meio-termo que encontraste para um desacordo?",
+"pt_BR": "Qual foi a melhor solução de meio-termo que você já encontrou para uma divergência?"
+}
+},
+{
+"id": "debate_partner-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do the cultures you know handle disagreement differently?",
+"de": "Wie unterschiedlich gehen die Kulturen, die du kennst, mit Meinungsverschiedenheiten um?",
+"es": "¿Cómo gestionan el desacuerdo de forma distinta las culturas que conoces?",
+"fr": "Comment les cultures que tu connais gèrent-elles différemment les désaccords ?",
+"it": "Come gestiscono il disaccordo in modo diverso le culture che conosci?",
+"pt": "Como lidam as culturas que conheces com o desacordo de formas diferentes?",
+"pt_BR": "Como as culturas que você conhece lidam de formas diferentes com a discordância?"
+}
+},
+{
+"id": "debate_partner-094",
+"lv": "advanced",
+"i18n": {
+"en": "What makes someone a truly fair judge of an argument?",
+"de": "Was macht jemanden zu einem wirklich fairen Richter über ein Argument?",
+"es": "¿Qué hace que alguien juzgue un argumento de forma realmente justa?",
+"fr": "Qu'est-ce qui fait de quelqu'un un juge vraiment juste d'un argument ?",
+"it": "Cosa rende qualcuno un giudice davvero imparziale di un'argomentazione?",
+"pt": "O que torna alguém um juiz verdadeiramente justo de um argumento?",
+"pt_BR": "O que torna alguém um juiz realmente justo de um argumento?"
+}
+},
+{
+"id": "debate_partner-095",
+"lv": "advanced",
+"i18n": {
+"en": "How has learning to argue well changed the way you listen?",
+"de": "Wie hat gutes Argumentieren deine Art zuzuhören verändert?",
+"es": "¿Cómo ha cambiado tu forma de escuchar el aprender a argumentar bien?",
+"fr": "En quoi apprendre à bien argumenter a-t-il changé ta façon d'écouter ?",
+"it": "In che modo imparare ad argomentare bene ha cambiato il tuo modo di ascoltare?",
+"pt": "Como é que aprender a argumentar bem mudou a tua forma de ouvir?",
+"pt_BR": "Como aprender a argumentar bem mudou o seu jeito de ouvir?"
+}
+},
+{
+"id": "debate_partner-096",
+"lv": "advanced",
+"i18n": {
+"en": "Which light motion would you love to debate in a formal Oxford-style round?",
+"de": "Über welchen leichten Antrag würdest du gern in einer formellen Oxford-Debatte streiten?",
+"es": "¿Qué moción ligera te encantaría debatir en un formato formal estilo Oxford?",
+"fr": "Quelle motion légère aimerais-tu débattre dans un format formel à l'oxfordienne ?",
+"it": "Quale mozione leggera ti piacerebbe discutere in un dibattito formale in stile Oxford?",
+"pt": "Que moção leve gostavas de debater num formato formal estilo Oxford?",
+"pt_BR": "Qual moção leve você adoraria debater num formato formal estilo Oxford?"
+}
+},
+{
+"id": "debate_partner-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you stay humble when you're confident you're right?",
+"de": "Wie bleibst du bescheiden, wenn du sicher bist, dass du recht hast?",
+"es": "¿Cómo te mantienes humilde cuando estás seguro de tener razón?",
+"fr": "Comment restes-tu humble quand tu es sûr d'avoir raison ?",
+"it": "Come resti umile quando sei sicuro di avere ragione?",
+"pt": "Como te manténs humilde quando tens a certeza de que tens razão?",
+"pt_BR": "Como você se mantém humilde quando tem certeza de que está certo?"
+}
+},
+{
+"id": "debate_partner-098",
+"lv": "advanced",
+"i18n": {
+"en": "What advice would you give someone who is afraid to disagree?",
+"de": "Welchen Rat würdest du jemandem geben, der Angst hat zu widersprechen?",
+"es": "¿Qué consejo darías a alguien a quien le da miedo discrepar?",
+"fr": "Quel conseil donnerais-tu à quelqu'un qui a peur d'exprimer son désaccord ?",
+"it": "Che consiglio daresti a chi ha paura di non essere d'accordo?",
+"pt": "Que conselho darias a alguém que tem medo de discordar?",
+"pt_BR": "Que conselho você daria a alguém que tem medo de discordar?"
+}
+},
+{
+"id": "debate_partner-099",
+"lv": "advanced",
+"i18n": {
+"en": "How do you know when it's time to stop debating and just listen?",
+"de": "Woran merkst du, dass es Zeit ist, mit dem Diskutieren aufzuhören und einfach zuzuhören?",
+"es": "¿Cómo sabes cuándo es momento de dejar de debatir y simplemente escuchar?",
+"fr": "Comment sais-tu qu'il est temps d'arrêter de débattre et simplement d'écouter ?",
+"it": "Come capisci quando è il momento di smettere di discutere e ascoltare e basta?",
+"pt": "Como sabes quando é altura de parar de debater e simplesmente ouvir?",
+"pt_BR": "Como você sabe quando é hora de parar de debater e só ouvir?"
+}
+},
+{
+"id": "debate_partner-100",
+"lv": "advanced",
+"i18n": {
+"en": "What's the most valuable thing a friendly disagreement has taught you?",
+"de": "Was ist das Wertvollste, das dir eine freundliche Meinungsverschiedenheit beigebracht hat?",
+"es": "¿Qué es lo más valioso que te ha enseñado un desacuerdo amistoso?",
+"fr": "Quelle est la leçon la plus précieuse qu'un désaccord amical t'ait apprise ?",
+"it": "Qual è la cosa più preziosa che ti ha insegnato un disaccordo amichevole?",
+"pt": "Qual foi a coisa mais valiosa que um desacordo amigável te ensinou?",
+"pt_BR": "Qual foi a coisa mais valiosa que uma discordância amigável já te ensinou?"
+}
+}
+]
+}

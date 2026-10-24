@@ -1,0 +1,835 @@
+{
+ "topic": "pronunciation",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "English th sounds",
+     "g": "Place your tongue tip between your teeth for the soft th in 'think' and the buzzing th in 'this'.",
+     "p": [
+      "Put the tip of your tongue lightly between your upper and lower front teeth, just peeking out.",
+      "Blow air gently over it for the voiceless th of 'think', 'three', 'bath'.",
+      "Add voice for the buzzing th of 'this', 'mother', 'the'; do not replace them with t, d, s, z or f."
+     ],
+     "q": "Which word with th do you find hardest: 'three', 'months' or 'clothes'?",
+     "c": "In a mirror, say 'think, thank, thumb' then 'this, that, those', checking that your tongue tip shows."
+    },
+    "de": {
+     "t": "Die englischen th-Laute",
+     "g": "Leg die Zungenspitze zwischen die Zähne für das stimmlose th in 'think' und das stimmhafte in 'this'.",
+     "p": [
+      "Leg die Zungenspitze leicht zwischen obere und untere Schneidezähne, sie schaut nur ein wenig hervor.",
+      "Blas sanft Luft darüber für das stimmlose th in 'think', 'three', 'bath'.",
+      "Mit Stimme entsteht das summende th in 'this', 'mother', 'the'; ersetze es nicht durch s, z, t, d oder f."
+     ],
+     "q": "Welches Wort mit th findest du am schwierigsten: 'three', 'months' oder 'clothes'?",
+     "c": "Sag vor dem Spiegel 'think, thank, thumb' und dann 'this, that, those' und prüfe, ob die Zungenspitze sichtbar ist."
+    },
+    "es": {
+     "t": "Los sonidos th del inglés",
+     "g": "Coloca la punta de la lengua entre los dientes para la th suave de 'think' y la th sonora de 'this'.",
+     "p": [
+      "Pon la punta de la lengua suavemente entre los dientes de arriba y de abajo, asomando un poquito.",
+      "Sopla aire suave sobre ella para la th sorda de 'think', 'three', 'bath', como la z de España.",
+      "Añade voz para la th sonora de 'this', 'mother', 'the', parecida a la d suave de 'nada'."
+     ],
+     "q": "¿Qué palabra con th te cuesta más: 'three', 'months' o 'clothes'?",
+     "c": "Frente al espejo, di 'think, thank, thumb' y luego 'this, that, those', comprobando que asome la lengua."
+    },
+    "fr": {
+     "t": "Les sons th de l'anglais",
+     "g": "Place le bout de la langue entre les dents pour le th doux de 'think' et le th sonore de 'this'.",
+     "p": [
+      "Pose légèrement le bout de la langue entre les incisives du haut et du bas, qui dépasse à peine.",
+      "Souffle doucement dessus pour le th sourd de 'think', 'three', 'bath'.",
+      "Ajoute la voix pour le th sonore de 'this', 'mother', 'the' ; ne le remplace pas par s, z, t, d ou f."
+     ],
+     "q": "Quel mot avec th te semble le plus difficile : 'three', 'months' ou 'clothes' ?",
+     "c": "Devant un miroir, dis 'think, thank, thumb' puis 'this, that, those', en vérifiant que ta langue se voit."
+    },
+    "it": {
+     "t": "I suoni th dell'inglese",
+     "g": "Metti la punta della lingua tra i denti per il th sordo di 'think' e quello sonoro di 'this'.",
+     "p": [
+      "Appoggia la punta della lingua leggermente tra gli incisivi superiori e inferiori, che spunta appena.",
+      "Soffia aria piano sopra la lingua per il th sordo di 'think', 'three', 'bath'.",
+      "Aggiungi la voce per il th sonoro di 'this', 'mother', 'the'; non sostituirli con t, d, s, z o f."
+     ],
+     "q": "Quale parola con th trovi più difficile: 'three', 'months' o 'clothes'?",
+     "c": "Allo specchio di' 'think, thank, thumb' e poi 'this, that, those', controllando che la lingua si veda."
+    },
+    "pt": {
+     "t": "Os sons th do inglês",
+     "g": "Põe a ponta da língua entre os dentes para o th suave de 'think' e o th sonoro de 'this'.",
+     "p": [
+      "Coloca a ponta da língua levemente entre os dentes de cima e de baixo, a espreitar um pouco.",
+      "Sopra ar suave por cima dela para o th surdo de 'think', 'three', 'bath'.",
+      "Liga a voz para o th sonoro de 'this', 'mother', 'the'; não o troques por t, d, s, z ou f."
+     ],
+     "q": "Que palavra com th achas mais difícil: 'three', 'months' ou 'clothes'?",
+     "c": "Ao espelho, diz 'think, thank, thumb' e depois 'this, that, those', confirmando que a língua aparece."
+    },
+    "pt_BR": {
+     "t": "Os sons th do inglês",
+     "g": "Coloque a ponta da língua entre os dentes para o th suave de 'think' e o th sonoro de 'this'.",
+     "p": [
+      "Coloque a ponta da língua de leve entre os dentes de cima e de baixo, aparecendo um pouquinho.",
+      "Sopre ar suave por cima dela para o th surdo de 'think', 'three', 'bath'.",
+      "Ligue a voz para o th sonoro de 'this', 'mother', 'the'; não troque por t, d, s, z ou f."
+     ],
+     "q": "Qual palavra com th você acha mais difícil: 'three', 'months' ou 'clothes'?",
+     "c": "No espelho, diga 'think, thank, thumb' e depois 'this, that, those', conferindo se a língua aparece."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Th in Spanish",
+     "g": "Learn the Castilian z and ce, ci that sound like English 'think', and the s used in Latin America.",
+     "p": [
+      "In most of Spain, z and c before e or i sound like the th in 'think': 'zapato', 'cena', 'cielo'.",
+      "In Latin America and parts of southern Spain, the same letters sound like s: 'zapato' with an s.",
+      "Both are correct; pick one model and stay consistent so your Spanish sounds natural."
+     ],
+     "q": "Which kind of Spanish do you hear most, from Spain or from Latin America?",
+     "c": "Say 'gracias', 'cerveza' and 'Zaragoza' twice: once with the th of Spain, once with the s of Latin America."
+    },
+    "de": {
+     "t": "Das th im Spanischen",
+     "g": "Lerne das kastilische z und ce, ci wie englisch 'think' und das s Lateinamerikas.",
+     "p": [
+      "In den meisten Teilen Spaniens klingen z und c vor e oder i wie das th in 'think': 'zapato', 'cena', 'cielo'.",
+      "In Lateinamerika und Teilen Südspaniens klingen dieselben Buchstaben wie ein scharfes s: 'zapato' mit s.",
+      "Beides ist richtig; wähle ein Vorbild und bleib dabei, damit dein Spanisch natürlich klingt."
+     ],
+     "q": "Welches Spanisch hörst du am meisten, aus Spanien oder aus Lateinamerika?",
+     "c": "Sag 'gracias', 'cerveza' und 'Zaragoza' zweimal: einmal mit dem th Spaniens, einmal mit dem s Lateinamerikas."
+    },
+    "es": {
+     "t": "La z y la c en español",
+     "g": "Conoce la z y la ce, ci de España, como el inglés 'think', y el seseo de América Latina.",
+     "p": [
+      "En casi toda España, la z y la c ante e o i suenan como la th de 'think': 'zapato', 'cena', 'cielo'.",
+      "En América Latina, Canarias y parte de Andalucía, esas letras suenan como s: es el seseo.",
+      "Las dos formas son correctas; lo importante es ser constante con la variedad que elijas."
+     ],
+     "q": "¿Tú distingues 'casa' y 'caza' al hablar, o suenan igual?",
+     "c": "Di 'gracias', 'cerveza' y 'Zaragoza' dos veces: una con la z de España y otra con el seseo."
+    },
+    "fr": {
+     "t": "Le th en espagnol",
+     "g": "Découvre le z et le ce, ci castillans qui sonnent comme l'anglais 'think', et le s d'Amérique latine.",
+     "p": [
+      "Dans la plupart de l'Espagne, z et c devant e ou i se disent comme le th de 'think' : 'zapato', 'cena'.",
+      "En Amérique latine et dans une partie du sud de l'Espagne, ces lettres se disent s : 'zapato' avec un s.",
+      "Les deux sont corrects ; choisis un modèle et garde-le pour que ton espagnol sonne naturel."
+     ],
+     "q": "Quel espagnol entends-tu le plus, celui d'Espagne ou celui d'Amérique latine ?",
+     "c": "Dis 'gracias', 'cerveza' et 'Zaragoza' deux fois : avec le th d'Espagne, puis avec le s d'Amérique latine."
+    },
+    "it": {
+     "t": "Il th in spagnolo",
+     "g": "Scopri la z e il ce, ci castigliani che suonano come l'inglese 'think', e la s dell'America Latina.",
+     "p": [
+      "In quasi tutta la Spagna z e c davanti a e o i suonano come il th di 'think': 'zapato', 'cena', 'cielo'.",
+      "In America Latina e in parte del sud della Spagna le stesse lettere suonano come s: 'zapato' con la s.",
+      "Entrambe sono corrette; scegli un modello e restaci fedele, così il tuo spagnolo suona naturale."
+     ],
+     "q": "Quale spagnolo ascolti di più, quello di Spagna o quello dell'America Latina?",
+     "c": "Di' 'gracias', 'cerveza' e 'Zaragoza' due volte: una con il th spagnolo, una con la s latinoamericana."
+    },
+    "pt": {
+     "t": "O th em espanhol",
+     "g": "Conhece o z e o ce, ci castelhanos que soam como o inglês 'think', e o s da América Latina.",
+     "p": [
+      "Na maior parte de Espanha, z e c antes de e ou i soam como o th de 'think': 'zapato', 'cena', 'cielo'.",
+      "Na América Latina e em parte do sul de Espanha, as mesmas letras soam como s: 'zapato' com s.",
+      "As duas formas estão certas; escolhe um modelo e mantém-te fiel a ele para soares natural."
+     ],
+     "q": "Que espanhol ouves mais, o de Espanha ou o da América Latina?",
+     "c": "Diz 'gracias', 'cerveza' e 'Zaragoza' duas vezes: uma com o th de Espanha e outra com o s latino-americano."
+    },
+    "pt_BR": {
+     "t": "O th no espanhol",
+     "g": "Conheça o z e o ce, ci castelhanos que soam como o inglês 'think', e o s da América Latina.",
+     "p": [
+      "Na maior parte da Espanha, z e c antes de e ou i soam como o th de 'think': 'zapato', 'cena', 'cielo'.",
+      "Na América Latina e em parte do sul da Espanha, as mesmas letras soam como s: 'zapato' com s.",
+      "As duas formas estão certas; escolha um modelo e mantenha para soar natural."
+     ],
+     "q": "Qual espanhol você ouve mais, o da Espanha ou o da América Latina?",
+     "c": "Diga 'gracias', 'cerveza' e 'Zaragoza' duas vezes: uma com o th da Espanha e outra com o s latino-americano."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Quick glides: w and y",
+     "g": "Make w and y by starting from oo and ee and sliding quickly into the next vowel.",
+     "p": [
+      "W is a very short 'oo' with rounded lips that slides straight into the next vowel: 'oo-ater' becomes 'water'.",
+      "Y is a very short 'ee' that slides into the next vowel: 'ee-es' becomes 'yes'.",
+      "The same glides appear in Spanish 'huevo' and 'hielo', French 'oui' and Italian 'uomo' and 'ieri'."
+     ],
+     "q": "Did you notice that w and y are really tiny vowels in disguise?",
+     "c": "Say 'oo-ee' faster and faster until it becomes 'we', then 'ee-oo' until it becomes 'you'."
+    },
+    "de": {
+     "t": "Schnelle Gleitlaute: w und j",
+     "g": "Bilde das englische w und das j, indem du von u und i aus schnell in den nächsten Vokal gleitest.",
+     "p": [
+      "Das englische w ist ein sehr kurzes u mit runden Lippen, das direkt in den nächsten Vokal gleitet: 'water'.",
+      "Das j ist ein sehr kurzes i, das in den nächsten Vokal gleitet: „i-a“ wird zu „ja“.",
+      "Dieselben Gleitlaute gibt es in spanisch 'huevo' und 'hielo', französisch 'oui' und italienisch 'uomo'."
+     ],
+     "q": "Ist dir aufgefallen, dass w und j eigentlich winzige verkleidete Vokale sind?",
+     "c": "Sag „u-i“ immer schneller, bis englisch 'we' daraus wird, dann „i-u“, bis 'you' daraus wird."
+    },
+    "es": {
+     "t": "Deslizamientos rápidos: w y y",
+     "g": "Forma los sonidos w y y empezando en u e i y deslizándote rápido a la vocal siguiente.",
+     "p": [
+      "La w es una 'u' muy corta con labios redondos que pasa directo a la vocal siguiente: 'huevo', inglés 'water'.",
+      "La y semivocal es una 'i' muy corta que pasa a la vocal siguiente: 'hielo', 'tiene', inglés 'yes'.",
+      "Lo mismo ocurre en el francés 'oui' y el italiano 'uomo' e 'ieri': son vocales disfrazadas."
+     ],
+     "q": "¿Te habías dado cuenta de que la u de 'huevo' es casi una consonante?",
+     "c": "Di 'u-i' cada vez más rápido hasta que suene 'güi', y luego 'i-u' hasta que suene como el inglés 'you'."
+    },
+    "fr": {
+     "t": "Les glissements rapides : w et y",
+     "g": "Forme w et y en partant de ou et de i, puis en glissant vite vers la voyelle suivante.",
+     "p": [
+      "Le w est un « ou » très bref, lèvres rondes, qui glisse vers la voyelle suivante : « oui », « ouest ».",
+      "Le y est un « i » très bref qui glisse vers la voyelle suivante : « yeux », « pied », l'anglais 'yes'.",
+      "On retrouve ces glissements en espagnol 'huevo', 'hielo' et en italien 'uomo', 'ieri'."
+     ],
+     "q": "Avais-tu remarqué que w et y sont en fait de minuscules voyelles déguisées ?",
+     "c": "Dis « ou-i » de plus en plus vite jusqu'à obtenir « oui », puis « i-ou » jusqu'à l'anglais 'you'."
+    },
+    "it": {
+     "t": "Scivolamenti rapidi: w e j",
+     "g": "Forma i suoni w e j partendo da u e i e scivolando veloce nella vocale successiva.",
+     "p": [
+      "La w è una 'u' brevissima a labbra tonde che passa subito alla vocale dopo: 'uomo', 'quando', inglese 'water'.",
+      "La j è una 'i' brevissima che scivola nella vocale dopo: 'ieri', 'piede', inglese 'yes'.",
+      "Gli stessi scivolamenti ci sono nello spagnolo 'huevo' e 'hielo' e nel francese 'oui'."
+     ],
+     "q": "Avevi notato che la u di 'uomo' è quasi una consonante?",
+     "c": "Di' 'u-i' sempre più veloce finché diventa 'ui', poi 'i-u' finché suona come l'inglese 'you'."
+    },
+    "pt": {
+     "t": "Deslizes rápidos: w e y",
+     "g": "Forma os sons w e y começando em u e i e deslizando depressa para a vogal seguinte.",
+     "p": [
+      "O w é um 'u' muito curto de lábios redondos que passa logo à vogal seguinte: 'quase', 'água', inglês 'water'.",
+      "O y é um 'i' muito curto que desliza para a vogal seguinte: 'Iara', 'série', inglês 'yes'.",
+      "Os mesmos deslizes aparecem no espanhol 'huevo', no francês 'oui' e no italiano 'uomo' e 'ieri'."
+     ],
+     "q": "Tinhas reparado que o u de 'água' é quase uma consoante?",
+     "c": "Diz 'u-i' cada vez mais depressa até soar 'ui', e depois 'i-u' até soar como o inglês 'you'."
+    },
+    "pt_BR": {
+     "t": "Deslizes rápidos: w e y",
+     "g": "Forme os sons w e y começando em u e i e deslizando rápido para a vogal seguinte.",
+     "p": [
+      "O w é um 'u' bem curto de lábios redondos que passa logo para a vogal seguinte: 'quase', 'água', inglês 'water'.",
+      "O y é um 'i' bem curto que desliza para a vogal seguinte: 'Iara', 'série', inglês 'yes'.",
+      "Os mesmos deslizes aparecem no espanhol 'huevo', no francês 'oui' e no italiano 'uomo' e 'ieri'."
+     ],
+     "q": "Você já tinha reparado que o u de 'água' é quase uma consoante?",
+     "c": "Diga 'u-i' cada vez mais rápido até soar 'ui', e depois 'i-u' até soar como o inglês 'you'."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "English ch and j",
+     "g": "Make the ch in 'church' and the j in 'judge': a t or d melting into sh or zh.",
+     "p": [
+      "Ch starts as a t with the tongue on the ridge, then releases straight into sh: 't-sh' becomes 'church'.",
+      "J is the voiced partner: a d melting into zh, as in 'judge', 'jam' and the g of 'giant'.",
+      "Keep the lips slightly rounded and forward, like for sh, and make it one quick sound, not two."
+     ],
+     "q": "Which do you find trickier: 'cheese' and 'chair', or 'jeans' and 'juice'?",
+     "c": "Say 'sh' then put a t in front: 't-sh, tsh, ch'; then do 'd-zh, dj, j' and say 'chips' and 'jeans'."
+    },
+    "de": {
+     "t": "Englisches ch und j",
+     "g": "Bilde das ch in 'church' und das j in 'judge': ein t oder d, das in sch übergeht.",
+     "p": [
+      "Ch beginnt als t mit der Zunge am Zahndamm und löst sich direkt in sch: wie „tsch“ in „Matsch“.",
+      "J ist der stimmhafte Partner: ein d, das in ein stimmhaftes sch übergeht, wie in 'judge', 'jam', „Dschungel“.",
+      "Halte die Lippen leicht gerundet und vorgeschoben wie beim sch und mach daraus einen schnellen Laut."
+     ],
+     "q": "Was ist kniffliger für dich: 'cheese' und 'chair' oder 'jeans' und 'juice'?",
+     "c": "Sag „sch“ und setz ein t davor: „t-sch, tsch“; dann „d-sch, dsch“ und sag 'chips' und 'jeans'."
+    },
+    "es": {
+     "t": "La ch y la j inglesas",
+     "g": "Haz la ch de 'church' y la j de 'judge': una t o una d que se funden en sh o zh.",
+     "p": [
+      "La ch empieza como una t con la lengua en los alvéolos y se suelta en sh, muy parecida a la ch de 'chico'.",
+      "La j inglesa es su pareja sonora: una d que se funde en zh, como en 'judge', 'jam' y la g de 'giant'.",
+      "No la cambies por la j española ni por una y: es un solo sonido rápido, con los labios algo adelantados."
+     ],
+     "q": "¿Qué te cuesta más: 'cheese' y 'chair' o 'jeans' y 'juice'?",
+     "c": "Di 'ch' de 'chico' y luego ponle voz para 'dj'; di después 'chips' y 'jeans' cinco veces cada una."
+    },
+    "fr": {
+     "t": "Le ch et le j anglais",
+     "g": "Fais le ch de 'church' et le j de 'judge' : un t ou un d qui fond dans ch ou j.",
+     "p": [
+      "Le ch anglais commence par un t, langue sur les alvéoles, puis se relâche en ch : comme « tch » dans « tchao ».",
+      "Le j anglais est son partenaire sonore : un d qui fond dans un j, comme dans 'judge', 'jam', « djembé ».",
+      "Garde les lèvres un peu arrondies et avancées, comme pour ch, et fais-en un seul son rapide."
+     ],
+     "q": "Qu'est-ce qui est le plus délicat pour toi : 'cheese' et 'chair', ou 'jeans' et 'juice' ?",
+     "c": "Dis « ch », puis mets un t devant : « t-ch, tch » ; puis « d-j, dj » et dis 'chips' et 'jeans'."
+    },
+    "it": {
+     "t": "La ch e la j inglesi",
+     "g": "Fai la ch di 'church' e la j di 'judge': una t o una d che si fondono in sc.",
+     "p": [
+      "La ch inglese è quasi uguale alla c dolce italiana di 'ciao' e 'cena': lingua sugli alveoli e poi sc.",
+      "La j inglese è la sua compagna sonora, come la g dolce di 'gelato' e 'giro': 'judge', 'jam', 'giant'.",
+      "Tieni le labbra un po' arrotondate e in avanti e fai un unico suono rapido, non due."
+     ],
+     "q": "Cosa trovi più difficile: 'cheese' e 'chair', o 'jeans' e 'juice'?",
+     "c": "Di' 'ciao, cena' e poi 'chips, cheese'; poi 'gelato, giro' e 'jeans, juice', notando quanto si somigliano."
+    },
+    "pt": {
+     "t": "O ch e o j ingleses",
+     "g": "Faz o ch de 'church' e o j de 'judge': um t ou um d que se fundem em ch ou j.",
+     "p": [
+      "O ch inglês começa como um t com a língua nos alvéolos e solta-se logo em ch: 't-ch' vira 'church'.",
+      "O j inglês é o par sonoro: um d que se funde em j, como em 'judge', 'jam' e o g de 'giant'.",
+      "Não o troques pelo ch ou pelo j portugueses sozinhos: o t ou o d no início fazem toda a diferença."
+     ],
+     "q": "O que achas mais difícil: 'cheese' e 'chair', ou 'jeans' e 'juice'?",
+     "c": "Diz 'ch' e põe um t à frente: 't-ch, tch'; depois 'd-j, dj' e diz 'chips' e 'jeans' cinco vezes."
+    },
+    "pt_BR": {
+     "t": "O ch e o j do inglês",
+     "g": "Faça o ch de 'church' e o j de 'judge': um t ou um d que se fundem em ch ou j.",
+     "p": [
+      "O ch inglês é quase igual ao t de 'tia' no Brasil: 'tchia'; é esse som em 'church' e 'chair'.",
+      "O j inglês é o par sonoro, como o d de 'dia' no Brasil: 'djia'; é esse som em 'judge', 'jam' e 'giant'.",
+      "Mantenha os lábios um pouco arredondados e para frente, como no ch, num único som rápido."
+     ],
+     "q": "O que você acha mais difícil: 'cheese' e 'chair', ou 'jeans' e 'juice'?",
+     "c": "Diga 'tia' e 'dia' do jeito brasileiro e depois 'cheese' e 'jeans', sentindo o mesmo som no começo."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Italian c and g",
+     "g": "Learn the Italian e and i rule: 'ciao' and 'gelato' versus 'casa' and 'gatto'.",
+     "p": [
+      "Before a, o and u, Italian c and g are hard, like k and g: 'casa', 'cosa', 'gatto', 'gusto'.",
+      "Before e and i they turn soft, like English ch and j: 'cena', 'ciao', 'gelato', 'giorno'.",
+      "To keep them hard before e and i, Italian adds h: 'che', 'chiesa', 'spaghetti', 'funghi'."
+     ],
+     "q": "Which Italian food word do you say most often, and is its c or g hard or soft?",
+     "c": "Read 'cane, cena, chiave, ciao, gatto, gelato, ghiro, giro' aloud, choosing hard or soft for each."
+    },
+    "de": {
+     "t": "Italienisches c und g",
+     "g": "Lerne die italienische e-und-i-Regel: 'ciao' und 'gelato' gegenüber 'casa' und 'gatto'.",
+     "p": [
+      "Vor a, o und u sind c und g im Italienischen hart, wie k und g: 'casa', 'cosa', 'gatto', 'gusto'.",
+      "Vor e und i werden sie weich, wie „tsch“ und „dsch“: 'cena', 'ciao', 'gelato', 'giorno'.",
+      "Damit sie vor e und i hart bleiben, fügt man ein h ein: 'che', 'chiesa', 'spaghetti', 'funghi'."
+     ],
+     "q": "Welches italienische Essenswort sagst du am häufigsten, und ist sein c oder g hart oder weich?",
+     "c": "Lies 'cane, cena, chiave, ciao, gatto, gelato, ghiro, giro' laut und entscheide jeweils: hart oder weich."
+    },
+    "es": {
+     "t": "La c y la g italianas",
+     "g": "Aprende la regla italiana de la e y la i: 'ciao' y 'gelato' frente a 'casa' y 'gatto'.",
+     "p": [
+      "Ante a, o y u, la c y la g italianas son duras, como en español: 'casa', 'cosa', 'gatto', 'gusto'.",
+      "Ante e e i se suavizan, como la ch de 'chico' y una 'dy' sonora: 'cena', 'ciao', 'gelato', 'giorno'.",
+      "Para mantenerlas duras ante e e i, el italiano añade h: 'che', 'chiesa', 'spaghetti', 'funghi'."
+     ],
+     "q": "¿Qué palabra de comida italiana dices más, y su c o g es dura o suave?",
+     "c": "Lee en voz alta 'cane, cena, chiave, ciao, gatto, gelato, ghiro, giro' decidiendo si es dura o suave."
+    },
+    "fr": {
+     "t": "Le c et le g italiens",
+     "g": "Apprends la règle italienne du e et du i : 'ciao' et 'gelato' face à 'casa' et 'gatto'.",
+     "p": [
+      "Devant a, o et u, le c et le g italiens sont durs, comme k et g : 'casa', 'cosa', 'gatto', 'gusto'.",
+      "Devant e et i, ils deviennent « tch » et « dj » : 'cena', 'ciao', 'gelato', 'giorno'.",
+      "Pour les garder durs devant e et i, l'italien ajoute un h : 'che', 'chiesa', 'spaghetti', 'funghi'."
+     ],
+     "q": "Quel mot de cuisine italienne dis-tu le plus souvent, et son c ou son g est-il dur ou doux ?",
+     "c": "Lis à voix haute 'cane, cena, chiave, ciao, gatto, gelato, ghiro, giro' en choisissant dur ou doux."
+    },
+    "it": {
+     "t": "La c e la g italiane",
+     "g": "Ripassa la regola della e e della i: 'ciao' e 'gelato' contro 'casa' e 'gatto'.",
+     "p": [
+      "Davanti ad a, o e u la c e la g sono dure: 'casa', 'cosa', 'gatto', 'gusto'.",
+      "Davanti a e e i diventano dolci: 'cena', 'ciao', 'gelato', 'giorno'; la i di 'ciao' serve solo a addolcire.",
+      "Per tenerle dure davanti a e e i si aggiunge la h: 'che', 'chiesa', 'spaghetti', 'funghi'."
+     ],
+     "q": "Quale parola italiana trovi più difficile da spiegare a uno straniero: 'cielo', 'chiave' o 'giallo'?",
+     "c": "Leggi ad alta voce 'cane, cena, chiave, ciao, gatto, gelato, ghiro, giro', sentendo la differenza."
+    },
+    "pt": {
+     "t": "O c e o g italianos",
+     "g": "Aprende a regra italiana do e e do i: 'ciao' e 'gelato' contra 'casa' e 'gatto'.",
+     "p": [
+      "Antes de a, o e u, o c e o g italianos são duros, como em português: 'casa', 'cosa', 'gatto', 'gusto'.",
+      "Antes de e e i ficam suaves, como 'tch' e 'dj': 'cena', 'ciao', 'gelato', 'giorno'.",
+      "Para os manter duros antes de e e i, o italiano junta um h: 'che', 'chiesa', 'spaghetti', 'funghi'."
+     ],
+     "q": "Que palavra de comida italiana dizes mais vezes, e o seu c ou g é duro ou suave?",
+     "c": "Lê em voz alta 'cane, cena, chiave, ciao, gatto, gelato, ghiro, giro', escolhendo duro ou suave."
+    },
+    "pt_BR": {
+     "t": "O c e o g italianos",
+     "g": "Aprenda a regra italiana do e e do i: 'ciao' e 'gelato' contra 'casa' e 'gatto'.",
+     "p": [
+      "Antes de a, o e u, o c e o g italianos são duros, como em português: 'casa', 'cosa', 'gatto', 'gusto'.",
+      "Antes de e e i ficam suaves, como o 'tch' de 'tia' e o 'dj' de 'dia': 'cena', 'ciao', 'gelato', 'giorno'.",
+      "Para mantê-los duros antes de e e i, o italiano coloca um h: 'che', 'chiesa', 'spaghetti', 'funghi'."
+     ],
+     "q": "Qual palavra de comida italiana você fala mais, e o c ou g dela é duro ou suave?",
+     "c": "Leia em voz alta 'cane, cena, chiave, ciao, gatto, gelato, ghiro, giro', escolhendo duro ou suave."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Italian double consonants",
+     "g": "Hold Italian double consonants a moment longer: 'pala' versus 'palla'.",
+     "p": [
+      "In Italian a double consonant is held longer, and this changes meaning: 'pala' (shovel), 'palla' (ball).",
+      "For pp, tt or cc, close the mouth and pause for a tiny beat before releasing: 'tutto', 'pizza', 'bocca'.",
+      "For ll, mm, nn or ss, simply stretch the sound: 'nonno' (grandpa) versus 'nono' (ninth)."
+     ],
+     "q": "Did you know a tiny pause can turn 'caro' (dear) into 'carro' (cart)?",
+     "c": "Say 'pala-palla, nono-nonno, caro-carro, sete-sette', making each double twice as long."
+    },
+    "de": {
+     "t": "Italienische Doppelkonsonanten",
+     "g": "Halte italienische Doppelkonsonanten einen Moment länger: 'pala' gegenüber 'palla'.",
+     "p": [
+      "Im Italienischen wird ein doppelter Konsonant länger gehalten, das ändert die Bedeutung: 'pala' (Schaufel), 'palla' (Ball).",
+      "Bei pp, tt oder cc schließt du den Mund und wartest einen winzigen Moment: 'tutto', 'pizza', 'bocca'.",
+      "Bei ll, mm, nn oder ss dehnst du den Laut einfach: 'nonno' (Opa) gegenüber 'nono' (neunter)."
+     ],
+     "q": "Wusstest du, dass eine winzige Pause aus 'caro' (lieb) ein 'carro' (Karren) macht?",
+     "c": "Sag 'pala-palla, nono-nonno, caro-carro, sete-sette' und mach jeden Doppelkonsonanten doppelt so lang."
+    },
+    "es": {
+     "t": "Las consonantes dobles italianas",
+     "g": "Mantén las consonantes dobles italianas un instante más: 'pala' frente a 'palla'.",
+     "p": [
+      "En italiano una consonante doble se alarga y cambia el significado: 'pala' (pala), 'palla' (pelota).",
+      "En pp, tt o cc, cierra la boca y haz una pausa mínima antes de soltar: 'tutto', 'pizza', 'bocca'.",
+      "En ll, mm, nn o ss, simplemente estira el sonido: 'nonno' (abuelo) frente a 'nono' (noveno)."
+     ],
+     "q": "¿Sabías que una pausa mínima convierte 'caro' (querido) en 'carro' (carro)?",
+     "c": "Di 'pala-palla, nono-nonno, caro-carro, sete-sette', haciendo cada doble el doble de larga."
+    },
+    "fr": {
+     "t": "Les consonnes doubles italiennes",
+     "g": "Tiens les consonnes doubles italiennes un instant de plus : 'pala' face à 'palla'.",
+     "p": [
+      "En italien, une consonne double est tenue plus longtemps et change le sens : 'pala' (pelle), 'palla' (balle).",
+      "Pour pp, tt ou cc, ferme la bouche et marque une mini-pause avant de relâcher : 'tutto', 'pizza', 'bocca'.",
+      "Pour ll, mm, nn ou ss, étire simplement le son : 'nonno' (grand-père) face à 'nono' (neuvième)."
+     ],
+     "q": "Savais-tu qu'une toute petite pause transforme 'caro' (cher) en 'carro' (chariot) ?",
+     "c": "Dis 'pala-palla, nono-nonno, caro-carro, sete-sette' en rendant chaque double deux fois plus long."
+    },
+    "it": {
+     "t": "Le doppie italiane",
+     "g": "Tieni le consonanti doppie un attimo in più: 'pala' contro 'palla'.",
+     "p": [
+      "In italiano una doppia si tiene più a lungo e cambia il significato: 'pala' e 'palla', 'sete' e 'sette'.",
+      "Con pp, tt o cc chiudi la bocca e fai una minima pausa prima di staccare: 'tutto', 'pizza', 'bocca'.",
+      "Con ll, mm, nn o ss allunga semplicemente il suono: 'nonno' contro 'nono'."
+     ],
+     "q": "Quale coppia ti sembra più divertente da spiegare a un amico straniero: 'caro' e 'carro' o 'pena' e 'penna'?",
+     "c": "Di' 'pala-palla, nono-nonno, caro-carro, sete-sette', rendendo ogni doppia lunga il doppio."
+    },
+    "pt": {
+     "t": "As consoantes duplas italianas",
+     "g": "Segura as consoantes duplas italianas um instante mais: 'pala' contra 'palla'.",
+     "p": [
+      "Em italiano uma consoante dupla dura mais e muda o significado: 'pala' (pá), 'palla' (bola).",
+      "Em pp, tt ou cc, fecha a boca e faz uma pausa mínima antes de soltar: 'tutto', 'pizza', 'bocca'.",
+      "Em ll, mm, nn ou ss, estica simplesmente o som: 'nonno' (avô) contra 'nono' (nono)."
+     ],
+     "q": "Sabias que uma pausa mínima transforma 'caro' (querido) em 'carro' (carroça)?",
+     "c": "Diz 'pala-palla, nono-nonno, caro-carro, sete-sette', tornando cada dupla duas vezes mais longa."
+    },
+    "pt_BR": {
+     "t": "As consoantes duplas italianas",
+     "g": "Segure as consoantes duplas italianas um instante a mais: 'pala' contra 'palla'.",
+     "p": [
+      "Em italiano uma consoante dupla dura mais e muda o significado: 'pala' (pá), 'palla' (bola).",
+      "Em pp, tt ou cc, feche a boca e faça uma pausa mínima antes de soltar: 'tutto', 'pizza', 'bocca'.",
+      "Em ll, mm, nn ou ss, apenas estique o som: 'nonno' (vovô) contra 'nono' (nono)."
+     ],
+     "q": "Você sabia que uma pausa mínima transforma 'caro' (querido) em 'carro' (carroça)?",
+     "c": "Diga 'pala-palla, nono-nonno, caro-carro, sete-sette', deixando cada dupla duas vezes mais longa."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Silent letters",
+     "g": "Spot letters you see but do not say, as in 'knight', French 'hôtel' and Spanish 'hombre'.",
+     "p": [
+      "English is full of them: the k and gh in 'knight', the b in 'lamb', the w in 'write', the p in 'psychology'.",
+      "French, Spanish, Italian and Portuguese leave the h silent: 'hôtel', 'hombre', 'hanno', 'hora'.",
+      "Careful: German says almost every letter, so the p in 'Psychologie' is heard, but the h in 'Sohn' only lengthens the o."
+     ],
+     "q": "Which silent letter has surprised you the most?",
+     "c": "Write five words with silent letters from a language you know, then read them aloud without the silent ones."
+    },
+    "de": {
+     "t": "Stumme Buchstaben",
+     "g": "Erkenne Buchstaben, die man sieht, aber nicht spricht, wie in englisch 'knight', 'hôtel' und 'hombre'.",
+     "p": [
+      "Englisch steckt voller stummer Buchstaben: k und gh in 'knight', b in 'lamb', w in 'write', p in 'psychology'.",
+      "Französisch, Spanisch, Italienisch und Portugiesisch lassen das h stumm: 'hôtel', 'hombre', 'hanno', 'hora'.",
+      "Im Deutschen spricht man fast alles, auch das p in „Psychologie“; das h in „Sohn“ macht nur das o lang."
+     ],
+     "q": "Welcher stumme Buchstabe hat dich am meisten überrascht?",
+     "c": "Schreib fünf Wörter mit stummen Buchstaben aus einer Sprache, die du kennst, und lies sie richtig vor."
+    },
+    "es": {
+     "t": "Letras mudas",
+     "g": "Descubre letras que se ven pero no se dicen, como en el inglés 'knight', el francés 'hôtel' y 'hombre'.",
+     "p": [
+      "El inglés está lleno de ellas: la k y la gh de 'knight', la b de 'lamb', la w de 'write', la p de 'psychology'.",
+      "El español, el francés, el italiano y el portugués dejan muda la h: 'hombre', 'hôtel', 'hanno', 'hora'.",
+      "Ojo: el alemán pronuncia casi todo, y la p de 'Psychologie' sí suena; la u de 'queso' y 'guitarra' tampoco se dice."
+     ],
+     "q": "¿Qué letra muda te ha sorprendido más?",
+     "c": "Escribe cinco palabras con letras mudas de un idioma que conozcas y léelas en voz alta sin ellas."
+    },
+    "fr": {
+     "t": "Les lettres muettes",
+     "g": "Repère les lettres qu'on voit sans les dire, comme dans l'anglais 'knight', « hôtel » et l'espagnol 'hombre'.",
+     "p": [
+      "L'anglais en est plein : k et gh dans 'knight', b dans 'lamb', w dans 'write', p dans 'psychology'.",
+      "Le français, l'espagnol, l'italien et le portugais laissent le h muet : « hôtel », 'hombre', 'hanno', 'hora'.",
+      "Attention : l'allemand prononce presque tout, le p de 'Psychologie' s'entend, comme en français."
+     ],
+     "q": "Quelle lettre muette t'a le plus surpris ?",
+     "c": "Écris cinq mots à lettres muettes dans une langue que tu connais, puis lis-les à voix haute correctement."
+    },
+    "it": {
+     "t": "Le lettere mute",
+     "g": "Scopri le lettere che si vedono ma non si dicono, come nell'inglese 'knight', nel francese 'hôtel' e in 'hombre'.",
+     "p": [
+      "L'inglese ne è pieno: k e gh in 'knight', b in 'lamb', w in 'write', p in 'psychology'.",
+      "Italiano, spagnolo, francese e portoghese lasciano muta la h: 'hanno', 'hombre', 'hôtel', 'hora'.",
+      "Attenzione: il tedesco pronuncia quasi tutto, e la p di 'Psychologie' si sente; la h di 'Sohn' allunga solo la o."
+     ],
+     "q": "Quale lettera muta ti ha sorpreso di più?",
+     "c": "Scrivi cinque parole con lettere mute di una lingua che conosci e leggile ad alta voce senza pronunciarle."
+    },
+    "pt": {
+     "t": "Letras mudas",
+     "g": "Descobre letras que se veem mas não se dizem, como no inglês 'knight', no francês 'hôtel' e em 'hombre'.",
+     "p": [
+      "O inglês está cheio delas: o k e o gh de 'knight', o b de 'lamb', o w de 'write', o p de 'psychology'.",
+      "O português, o espanhol, o francês e o italiano deixam o h mudo: 'hora', 'hombre', 'hôtel', 'hanno'.",
+      "Atenção: o alemão pronuncia quase tudo, e o p de 'Psychologie' ouve-se; o u de 'queijo' também não se diz."
+     ],
+     "q": "Que letra muda te surpreendeu mais?",
+     "c": "Escreve cinco palavras com letras mudas de uma língua que conheças e lê-as em voz alta sem as dizer."
+    },
+    "pt_BR": {
+     "t": "Letras mudas",
+     "g": "Descubra letras que a gente vê mas não fala, como no inglês 'knight', no francês 'hôtel' e em 'hombre'.",
+     "p": [
+      "O inglês está cheio delas: o k e o gh de 'knight', o b de 'lamb', o w de 'write', o p de 'psychology'.",
+      "O português, o espanhol, o francês e o italiano deixam o h mudo: 'hora', 'hombre', 'hôtel', 'hanno'.",
+      "Atenção: o alemão pronuncia quase tudo, e o p de 'Psychologie' é ouvido; o u de 'queijo' também não se fala."
+     ],
+     "q": "Qual letra muda mais te surpreendeu?",
+     "c": "Escreva cinco palavras com letras mudas de um idioma que você conhece e leia em voz alta sem falar essas letras."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "French final consonants",
+     "g": "Learn why many French endings are silent, and a simple trick to remember which ones are spoken.",
+     "p": [
+      "Most final consonants in French are silent: 'petit', 'grand', 'trop', 'vous', 'nez'.",
+      "The trick is the word CaReFuL: final c, r, f and l are often pronounced: 'parc', 'mer', 'chef', 'sel'.",
+      "Watch out for exceptions: the r of verbs in -er is silent ('parler'), and the final e is usually silent too."
+     ],
+     "q": "Which French word surprised you most when you heard how it is really said?",
+     "c": "Read 'chat, lac, nez, bus, mer, parler, neuf, sel, trop' aloud, using CaReFuL to decide each ending."
+    },
+    "de": {
+     "t": "Französische Endkonsonanten",
+     "g": "Lerne, warum viele französische Endungen stumm sind, und einen Trick, welche man doch spricht.",
+     "p": [
+      "Die meisten Endkonsonanten im Französischen sind stumm: 'petit', 'grand', 'trop', 'vous', 'nez'.",
+      "Der Trick heißt CaReFuL: Am Ende werden c, r, f und l oft gesprochen: 'parc', 'mer', 'chef', 'sel'.",
+      "Achtung, Ausnahmen: Das r der Verben auf -er ist stumm ('parler'), und das End-e meist auch."
+     ],
+     "q": "Welches französische Wort hat dich am meisten überrascht, als du seine echte Aussprache gehört hast?",
+     "c": "Lies 'chat, lac, nez, bus, mer, parler, neuf, sel, trop' laut und entscheide jede Endung mit CaReFuL."
+    },
+    "es": {
+     "t": "Las consonantes finales en francés",
+     "g": "Aprende por qué muchas terminaciones francesas son mudas y un truco para saber cuáles sí suenan.",
+     "p": [
+      "La mayoría de las consonantes finales en francés no se pronuncian: 'petit', 'grand', 'trop', 'vous', 'nez'.",
+      "El truco es la palabra inglesa CaReFuL: c, r, f y l finales suelen sonar: 'parc', 'mer', 'chef', 'sel'.",
+      "Ojo con las excepciones: la r de los verbos en -er es muda ('parler'), y la e final casi siempre también."
+     ],
+     "q": "¿Qué palabra francesa te sorprendió más al oír cómo se pronuncia de verdad?",
+     "c": "Lee 'chat, lac, nez, bus, mer, parler, neuf, sel, trop' en voz alta usando CaReFuL para cada final."
+    },
+    "fr": {
+     "t": "Les consonnes finales en français",
+     "g": "Comprends pourquoi beaucoup de finales françaises sont muettes, avec une astuce pour savoir lesquelles se disent.",
+     "p": [
+      "La plupart des consonnes finales sont muettes : « petit », « grand », « trop », « vous », « nez ».",
+      "L'astuce, c'est le mot anglais CaReFuL : c, r, f et l finaux se prononcent souvent : « parc », « mer », « chef », « sel ».",
+      "Attention aux exceptions : le r des verbes en -er est muet (« parler »), et le e final l'est souvent aussi."
+     ],
+     "q": "Quel mot français pose le plus de problèmes aux étrangers, selon toi ?",
+     "c": "Lis « chat, lac, nez, bus, mer, parler, neuf, sel, trop » à voix haute en vérifiant chaque finale avec CaReFuL."
+    },
+    "it": {
+     "t": "Le consonanti finali in francese",
+     "g": "Scopri perché molte finali francesi sono mute e un trucco per ricordare quali si pronunciano.",
+     "p": [
+      "La maggior parte delle consonanti finali in francese è muta: 'petit', 'grand', 'trop', 'vous', 'nez'.",
+      "Il trucco è la parola inglese CaReFuL: c, r, f e l finali spesso si sentono: 'parc', 'mer', 'chef', 'sel'.",
+      "Attenzione alle eccezioni: la r dei verbi in -er è muta ('parler'), e anche la e finale di solito lo è."
+     ],
+     "q": "Quale parola francese ti ha sorpreso di più quando hai sentito come si dice davvero?",
+     "c": "Leggi 'chat, lac, nez, bus, mer, parler, neuf, sel, trop' ad alta voce usando CaReFuL per ogni finale."
+    },
+    "pt": {
+     "t": "As consoantes finais em francês",
+     "g": "Percebe porque muitas terminações francesas são mudas e um truque para saber quais se dizem.",
+     "p": [
+      "A maioria das consoantes finais em francês não se pronuncia: 'petit', 'grand', 'trop', 'vous', 'nez'.",
+      "O truque é a palavra inglesa CaReFuL: c, r, f e l finais costumam ouvir-se: 'parc', 'mer', 'chef', 'sel'.",
+      "Atenção às exceções: o r dos verbos em -er é mudo ('parler'), e o e final quase sempre também."
+     ],
+     "q": "Que palavra francesa te surpreendeu mais quando ouviste como se diz de verdade?",
+     "c": "Lê 'chat, lac, nez, bus, mer, parler, neuf, sel, trop' em voz alta, usando CaReFuL para cada final."
+    },
+    "pt_BR": {
+     "t": "As consoantes finais em francês",
+     "g": "Entenda por que muitas terminações francesas são mudas e um truque para saber quais são faladas.",
+     "p": [
+      "A maioria das consoantes finais em francês não é pronunciada: 'petit', 'grand', 'trop', 'vous', 'nez'.",
+      "O truque é a palavra inglesa CaReFuL: c, r, f e l finais costumam soar: 'parc', 'mer', 'chef', 'sel'.",
+      "Atenção às exceções: o r dos verbos em -er é mudo ('parler'), e o e final quase sempre também."
+     ],
+     "q": "Qual palavra francesa mais te surpreendeu quando você ouviu como ela é falada de verdade?",
+     "c": "Leia 'chat, lac, nez, bus, mer, parler, neuf, sel, trop' em voz alta usando CaReFuL para cada final."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spelling patterns that help",
+     "g": "Use a few simple spelling rules to read new words aloud with confidence.",
+     "p": [
+      "Spanish and Italian are very regular: once you know the letters, you can read almost any word correctly.",
+      "German has handy pairs: 'ie' is a long ee ('Wien'), 'ei' sounds like 'eye' ('Wein'); 'eu' is 'oy' ('neu').",
+      "English has the magic e that makes a vowel say its name: 'hat-hate', 'kit-kite'; French 'eau' is o ('beau')."
+     ],
+     "q": "Which spelling rule would have helped you most when you started a new language?",
+     "c": "Read 'Wien, Wein, neu', 'hat, hate, kit, kite' and 'beau, chapeau' aloud, using today's patterns."
+    },
+    "de": {
+     "t": "Hilfreiche Schreibmuster",
+     "g": "Nutze ein paar einfache Schreibregeln, um neue Wörter sicher vorzulesen.",
+     "p": [
+      "Spanisch und Italienisch sind sehr regelmäßig: Kennst du die Buchstaben, liest du fast jedes Wort richtig.",
+      "Im Deutschen helfen Paare: „ie“ ist ein langes i („Wien“), „ei“ klingt wie „ai“ („Wein“), „eu“ wie „oi“ („neu“).",
+      "Englisch hat das magische e, das den Vokal lang macht: 'hat-hate', 'kit-kite'; französisch 'eau' ist o ('beau')."
+     ],
+     "q": "Welche Schreibregel hätte dir am Anfang einer neuen Sprache am meisten geholfen?",
+     "c": "Lies „Wien, Wein, neu“, 'hat, hate, kit, kite' und 'beau, chapeau' laut und nutze die Muster von heute."
+    },
+    "es": {
+     "t": "Patrones de escritura que ayudan",
+     "g": "Usa unas pocas reglas de escritura para leer palabras nuevas en voz alta con seguridad.",
+     "p": [
+      "El español y el italiano son muy regulares: si conoces las letras, puedes leer casi cualquier palabra bien.",
+      "El alemán tiene pares útiles: 'ie' es una i larga ('Wien'), 'ei' suena 'ai' ('Wein'), 'eu' suena 'oi' ('neu').",
+      "El inglés tiene la e mágica que alarga la vocal: 'hat-hate', 'kit-kite'; en francés 'eau' es o ('beau')."
+     ],
+     "q": "¿Qué regla de escritura te habría ayudado más al empezar un idioma nuevo?",
+     "c": "Lee 'Wien, Wein, neu', 'hat, hate, kit, kite' y 'beau, chapeau' en voz alta usando los patrones de hoy."
+    },
+    "fr": {
+     "t": "Des règles d'orthographe utiles",
+     "g": "Utilise quelques règles simples pour lire à voix haute des mots nouveaux avec assurance.",
+     "p": [
+      "L'espagnol et l'italien sont très réguliers : si tu connais les lettres, tu lis presque tout correctement.",
+      "L'allemand a des paires pratiques : 'ie' est un i long ('Wien'), 'ei' se dit « aï » ('Wein'), 'eu' se dit « oï » ('neu').",
+      "L'anglais a le e magique qui allonge la voyelle : 'hat-hate', 'kit-kite' ; en français, « eau » se dit o."
+     ],
+     "q": "Quelle règle d'orthographe t'aurait le plus aidé au début d'une nouvelle langue ?",
+     "c": "Lis 'Wien, Wein, neu', 'hat, hate, kit, kite' et « beau, chapeau » à voix haute avec les règles du jour."
+    },
+    "it": {
+     "t": "Regole di scrittura che aiutano",
+     "g": "Usa poche regole semplici di scrittura per leggere ad alta voce parole nuove con sicurezza.",
+     "p": [
+      "Italiano e spagnolo sono molto regolari: se conosci le lettere, leggi bene quasi ogni parola.",
+      "Il tedesco ha coppie utili: 'ie' è una i lunga ('Wien'), 'ei' suona 'ai' ('Wein'), 'eu' suona 'oi' ('neu').",
+      "L'inglese ha la e magica che allunga la vocale: 'hat-hate', 'kit-kite'; in francese 'eau' si dice o ('beau')."
+     ],
+     "q": "Quale regola di scrittura ti avrebbe aiutato di più all'inizio di una nuova lingua?",
+     "c": "Leggi 'Wien, Wein, neu', 'hat, hate, kit, kite' e 'beau, chapeau' ad alta voce usando le regole di oggi."
+    },
+    "pt": {
+     "t": "Padrões de escrita que ajudam",
+     "g": "Usa algumas regras simples de escrita para ler palavras novas em voz alta com confiança.",
+     "p": [
+      "O espanhol e o italiano são muito regulares: se conheces as letras, lês quase qualquer palavra bem.",
+      "O alemão tem pares úteis: 'ie' é um i longo ('Wien'), 'ei' soa 'ai' ('Wein'), 'eu' soa 'oi' ('neu').",
+      "O inglês tem o e mágico que alonga a vogal: 'hat-hate', 'kit-kite'; em francês 'eau' diz-se o ('beau')."
+     ],
+     "q": "Que regra de escrita te teria ajudado mais quando começaste uma língua nova?",
+     "c": "Lê 'Wien, Wein, neu', 'hat, hate, kit, kite' e 'beau, chapeau' em voz alta usando os padrões de hoje."
+    },
+    "pt_BR": {
+     "t": "Padrões de escrita que ajudam",
+     "g": "Use algumas regras simples de escrita para ler palavras novas em voz alta com confiança.",
+     "p": [
+      "O espanhol e o italiano são muito regulares: se você conhece as letras, lê quase qualquer palavra bem.",
+      "O alemão tem pares úteis: 'ie' é um i longo ('Wien'), 'ei' soa 'ai' ('Wein'), 'eu' soa 'oi' ('neu').",
+      "O inglês tem o e mágico que alonga a vogal: 'hat-hate', 'kit-kite'; em francês 'eau' se fala o ('beau')."
+     ],
+     "q": "Qual regra de escrita teria te ajudado mais quando você começou um idioma novo?",
+     "c": "Leia 'Wien, Wein, neu', 'hat, hate, kit, kite' e 'beau, chapeau' em voz alta usando os padrões de hoje."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Counting syllables",
+     "g": "Clap out syllables and see why they matter for rhythm.",
+     "p": [
+      "A syllable is a beat built around one vowel sound: 'ba-na-na' has three, 'cat' has one.",
+      "Clapping once per syllable helps you avoid adding or dropping beats, like saying 'es-pe-cial' for 'special'.",
+      "Languages count differently: Spanish 'cho-co-la-te' has four beats, English 'choc-late' often just two."
+     ],
+     "q": "How many syllables are in your name, and in your favourite food?",
+     "c": "Clap the syllables of ten words around you, then say each word again while tapping the beats."
+    },
+    "de": {
+     "t": "Silben zählen",
+     "g": "Klatsch Silben und erfahre, warum sie für den Rhythmus wichtig sind.",
+     "p": [
+      "Eine Silbe ist ein Schlag rund um einen Vokal: „Ba-na-ne“ hat drei, „Hund“ hat eine.",
+      "Ein Klatschen pro Silbe hilft dir, keine Schläge hinzuzufügen oder zu verschlucken, etwa „es-pe-cial“ für 'special'.",
+      "Sprachen zählen verschieden: spanisch 'cho-co-la-te' hat vier Schläge, englisch 'choc-late' oft nur zwei."
+     ],
+     "q": "Wie viele Silben hat dein Name, und wie viele dein Lieblingsessen?",
+     "c": "Klatsch die Silben von zehn Wörtern um dich herum und sprich jedes Wort noch einmal im Takt."
+    },
+    "es": {
+     "t": "Contar sílabas",
+     "g": "Da palmadas en cada sílaba y descubre por qué importan para el ritmo.",
+     "p": [
+      "Una sílaba es un golpe construido alrededor de una vocal: 'ba-na-na' tiene tres, 'sol' tiene una.",
+      "Dar una palmada por sílaba te ayuda a no añadir golpes, como decir 'es-pe-cial' por el inglés 'special'.",
+      "Cada idioma cuenta distinto: 'cho-co-la-te' tiene cuatro golpes, el inglés 'choc-late' a menudo solo dos."
+     ],
+     "q": "¿Cuántas sílabas tiene tu nombre, y tu comida favorita?",
+     "c": "Da palmadas con las sílabas de diez palabras de tu alrededor y repite cada una marcando el ritmo."
+    },
+    "fr": {
+     "t": "Compter les syllabes",
+     "g": "Tape les syllabes dans tes mains et découvre pourquoi elles comptent pour le rythme.",
+     "p": [
+      "Une syllabe est un battement autour d'un son voyelle : « ba-na-ne » en a trois, « chat » une seule.",
+      "Taper une fois par syllabe évite d'en ajouter ou d'en avaler, comme dire « es-pé-cial » pour l'anglais 'special'.",
+      "Les langues comptent différemment : l'espagnol 'cho-co-la-te' a quatre temps, l'anglais 'choc-late' souvent deux."
+     ],
+     "q": "Combien de syllabes a ton prénom, et ton plat préféré ?",
+     "c": "Tape les syllabes de dix mots autour de toi, puis redis chaque mot en marquant les temps."
+    },
+    "it": {
+     "t": "Contare le sillabe",
+     "g": "Batti le mani su ogni sillaba e scopri perché contano per il ritmo.",
+     "p": [
+      "Una sillaba è un battito costruito intorno a una vocale: 'ba-na-na' ne ha tre, 're' ne ha una.",
+      "Battere le mani una volta per sillaba ti evita di aggiungerne o perderne, come dire 'es-pe-cial' per 'special'.",
+      "Le lingue contano in modo diverso: lo spagnolo 'cho-co-la-te' ha quattro battiti, l'inglese 'choc-late' spesso due."
+     ],
+     "q": "Quante sillabe ha il tuo nome, e il tuo piatto preferito?",
+     "c": "Batti le sillabe di dieci parole intorno a te, poi ripeti ogni parola tenendo il ritmo."
+    },
+    "pt": {
+     "t": "Contar sílabas",
+     "g": "Bate palmas em cada sílaba e descobre porque são importantes para o ritmo.",
+     "p": [
+      "Uma sílaba é uma batida construída à volta de uma vogal: 'ba-na-na' tem três, 'sol' tem uma.",
+      "Bater uma palma por sílaba ajuda a não acrescentar batidas, como dizer 'es-pe-cial' para o inglês 'special'.",
+      "Cada língua conta de forma diferente: o espanhol 'cho-co-la-te' tem quatro batidas, o inglês 'choc-late' muitas vezes duas."
+     ],
+     "q": "Quantas sílabas tem o teu nome, e a tua comida favorita?",
+     "c": "Bate palmas com as sílabas de dez palavras à tua volta e repete cada uma marcando o ritmo."
+    },
+    "pt_BR": {
+     "t": "Contando sílabas",
+     "g": "Bata palmas em cada sílaba e descubra por que elas importam para o ritmo.",
+     "p": [
+      "Uma sílaba é uma batida construída em torno de uma vogal: 'ba-na-na' tem três, 'sol' tem uma.",
+      "Bater uma palma por sílaba ajuda a não colocar batidas extras, como falar 'ês-pe-cial' para o inglês 'special'.",
+      "Cada língua conta diferente: o espanhol 'cho-co-la-te' tem quatro batidas, o inglês 'choc-late' muitas vezes duas."
+     ],
+     "q": "Quantas sílabas tem o seu nome, e a sua comida favorita?",
+     "c": "Bata palmas com as sílabas de dez palavras ao seu redor e repita cada uma marcando o ritmo."
+    }
+   }
+  }
+ ]
+}

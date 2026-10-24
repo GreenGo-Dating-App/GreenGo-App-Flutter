@@ -1,0 +1,1305 @@
+{
+"topic": "daily_checkin",
+"questions": [
+{
+"id": "daily_checkin-001",
+"lv": "any",
+"i18n": {
+"en": "How has your day been so far?",
+"de": "Wie war dein Tag bisher?",
+"es": "¿Qué tal va tu día hasta ahora?",
+"fr": "Comment se passe ta journée jusqu'ici ?",
+"it": "Com'è andata la tua giornata finora?",
+"pt": "Como está a correr o teu dia até agora?",
+"pt_BR": "Como está sendo o seu dia até agora?"
+}
+},
+{
+"id": "daily_checkin-002",
+"lv": "any",
+"i18n": {
+"en": "What was the best moment of your day?",
+"de": "Was war der schönste Moment deines Tages?",
+"es": "¿Cuál fue el mejor momento de tu día?",
+"fr": "Quel a été le meilleur moment de ta journée ?",
+"it": "Qual è stato il momento più bello della tua giornata?",
+"pt": "Qual foi o melhor momento do teu dia?",
+"pt_BR": "Qual foi o melhor momento do seu dia?"
+}
+},
+{
+"id": "daily_checkin-003",
+"lv": "any",
+"i18n": {
+"en": "What's one small win you had today?",
+"de": "Welchen kleinen Erfolg hattest du heute?",
+"es": "¿Qué pequeño logro has tenido hoy?",
+"fr": "Quelle petite victoire as-tu remportée aujourd'hui ?",
+"it": "Qual è una piccola vittoria che hai ottenuto oggi?",
+"pt": "Que pequena vitória tiveste hoje?",
+"pt_BR": "Qual foi uma pequena vitória que você teve hoje?"
+}
+},
+{
+"id": "daily_checkin-004",
+"lv": "any",
+"i18n": {
+"en": "What are you looking forward to tomorrow?",
+"de": "Worauf freust du dich morgen?",
+"es": "¿Qué te hace ilusión de mañana?",
+"fr": "Qu'est-ce qui te réjouit pour demain ?",
+"it": "Cosa non vedi l'ora di fare domani?",
+"pt": "O que é que te entusiasma para amanhã?",
+"pt_BR": "O que você está esperando com vontade para amanhã?"
+}
+},
+{
+"id": "daily_checkin-005",
+"lv": "any",
+"i18n": {
+"en": "How would you describe today in three words?",
+"de": "Wie würdest du den heutigen Tag in drei Worten beschreiben?",
+"es": "¿Cómo describirías el día de hoy en tres palabras?",
+"fr": "Comment décrirais-tu ta journée en trois mots ?",
+"it": "Come descriveresti la giornata di oggi in tre parole?",
+"pt": "Como descreverias o dia de hoje em três palavras?",
+"pt_BR": "Como você descreveria o dia de hoje em três palavras?"
+}
+},
+{
+"id": "daily_checkin-006",
+"lv": "any",
+"i18n": {
+"en": "What did you eat today that you really enjoyed?",
+"de": "Was hast du heute gegessen, das dir richtig geschmeckt hat?",
+"es": "¿Qué comiste hoy que te gustó de verdad?",
+"fr": "Qu'as-tu mangé aujourd'hui que tu as vraiment apprécié ?",
+"it": "Cosa hai mangiato oggi che ti è piaciuto davvero?",
+"pt": "O que comeste hoje de que gostaste mesmo?",
+"pt_BR": "O que você comeu hoje que curtiu de verdade?"
+}
+},
+{
+"id": "daily_checkin-007",
+"lv": "any",
+"i18n": {
+"en": "Who made you smile today?",
+"de": "Wer hat dich heute zum Lächeln gebracht?",
+"es": "¿Quién te hizo sonreír hoy?",
+"fr": "Qui t'a fait sourire aujourd'hui ?",
+"it": "Chi ti ha fatto sorridere oggi?",
+"pt": "Quem te fez sorrir hoje?",
+"pt_BR": "Quem fez você sorrir hoje?"
+}
+},
+{
+"id": "daily_checkin-008",
+"lv": "any",
+"i18n": {
+"en": "What's one thing you'd love to do this weekend?",
+"de": "Was würdest du am Wochenende total gern machen?",
+"es": "¿Qué te encantaría hacer este fin de semana?",
+"fr": "Qu'aimerais-tu vraiment faire ce week-end ?",
+"it": "Cosa ti piacerebbe tanto fare questo fine settimana?",
+"pt": "O que adoravas fazer este fim de semana?",
+"pt_BR": "O que você adoraria fazer neste fim de semana?"
+}
+},
+{
+"id": "daily_checkin-009",
+"lv": "any",
+"i18n": {
+"en": "How did you start your morning today?",
+"de": "Wie hast du heute deinen Morgen begonnen?",
+"es": "¿Cómo empezaste la mañana hoy?",
+"fr": "Comment as-tu commencé ta matinée aujourd'hui ?",
+"it": "Come hai iniziato la mattinata oggi?",
+"pt": "Como começaste a tua manhã hoje?",
+"pt_BR": "Como você começou sua manhã hoje?"
+}
+},
+{
+"id": "daily_checkin-010",
+"lv": "any",
+"i18n": {
+"en": "What surprised you today?",
+"de": "Was hat dich heute überrascht?",
+"es": "¿Qué te sorprendió hoy?",
+"fr": "Qu'est-ce qui t'a surpris aujourd'hui ?",
+"it": "Cosa ti ha sorpreso oggi?",
+"pt": "O que te surpreendeu hoje?",
+"pt_BR": "O que te surpreendeu hoje?"
+}
+},
+{
+"id": "daily_checkin-011",
+"lv": "any",
+"i18n": {
+"en": "Which song matches your mood today?",
+"de": "Welcher Song passt heute zu deiner Stimmung?",
+"es": "¿Qué canción va con tu estado de ánimo hoy?",
+"fr": "Quelle chanson correspond à ton humeur aujourd'hui ?",
+"it": "Quale canzone rispecchia il tuo umore di oggi?",
+"pt": "Que música combina com o teu humor de hoje?",
+"pt_BR": "Qual música combina com seu humor hoje?"
+}
+},
+{
+"id": "daily_checkin-012",
+"lv": "any",
+"i18n": {
+"en": "Where did you spend most of your day?",
+"de": "Wo hast du den größten Teil deines Tages verbracht?",
+"es": "¿Dónde pasaste la mayor parte del día?",
+"fr": "Où as-tu passé la plus grande partie de ta journée ?",
+"it": "Dove hai passato la maggior parte della giornata?",
+"pt": "Onde passaste a maior parte do teu dia?",
+"pt_BR": "Onde você passou a maior parte do seu dia?"
+}
+},
+{
+"id": "daily_checkin-013",
+"lv": "any",
+"i18n": {
+"en": "What kind thing has someone done for you recently?",
+"de": "Was hat jemand in letzter Zeit Nettes für dich getan?",
+"es": "¿Qué detalle amable ha tenido alguien contigo últimamente?",
+"fr": "Quelle gentillesse quelqu'un a-t-il eue pour toi récemment ?",
+"it": "Quale gentilezza ha fatto qualcuno per te di recente?",
+"pt": "Que gesto simpático teve alguém contigo recentemente?",
+"pt_BR": "Que gentileza alguém fez por você recentemente?"
+}
+},
+{
+"id": "daily_checkin-014",
+"lv": "any",
+"i18n": {
+"en": "What did you learn today, even something tiny?",
+"de": "Was hast du heute gelernt, und sei es nur eine Kleinigkeit?",
+"es": "¿Qué aprendiste hoy, aunque sea algo pequeñito?",
+"fr": "Qu'as-tu appris aujourd'hui, même un tout petit détail ?",
+"it": "Cosa hai imparato oggi, anche una piccolezza?",
+"pt": "O que aprendeste hoje, mesmo que seja uma coisa pequenina?",
+"pt_BR": "O que você aprendeu hoje, mesmo que seja algo bem pequeno?"
+}
+},
+{
+"id": "daily_checkin-015",
+"lv": "any",
+"i18n": {
+"en": "How do you like to relax at the end of the day?",
+"de": "Wie entspannst du dich am liebsten am Ende des Tages?",
+"es": "¿Cómo te gusta relajarte al final del día?",
+"fr": "Comment aimes-tu te détendre en fin de journée ?",
+"it": "Come ti piace rilassarti a fine giornata?",
+"pt": "Como gostas de relaxar ao fim do dia?",
+"pt_BR": "Como você gosta de relaxar no fim do dia?"
+}
+},
+{
+"id": "daily_checkin-016",
+"lv": "any",
+"i18n": {
+"en": "What's on your to-do list that you're actually excited about?",
+"de": "Was steht auf deiner To-do-Liste, worauf du dich wirklich freust?",
+"es": "¿Qué tienes en tu lista de pendientes que de verdad te ilusiona?",
+"fr": "Qu'y a-t-il sur ta liste de choses à faire qui te motive vraiment ?",
+"it": "Cosa c'è nella tua lista di cose da fare che ti entusiasma davvero?",
+"pt": "O que tens na tua lista de tarefas que te entusiasma mesmo?",
+"pt_BR": "O que tem na sua lista de tarefas que te anima de verdade?"
+}
+},
+{
+"id": "daily_checkin-017",
+"lv": "any",
+"i18n": {
+"en": "If today were a colour, which one would it be?",
+"de": "Wenn der heutige Tag eine Farbe wäre, welche wäre es?",
+"es": "Si hoy fuera un color, ¿cuál sería?",
+"fr": "Si aujourd'hui était une couleur, laquelle serait-ce ?",
+"it": "Se oggi fosse un colore, quale sarebbe?",
+"pt": "Se hoje fosse uma cor, qual seria?",
+"pt_BR": "Se hoje fosse uma cor, qual seria?"
+}
+},
+{
+"id": "daily_checkin-018",
+"lv": "any",
+"i18n": {
+"en": "What's the nicest thing you saw while out and about today?",
+"de": "Was war das Schönste, das du heute unterwegs gesehen hast?",
+"es": "¿Qué es lo más bonito que viste hoy por la calle?",
+"fr": "Quelle est la plus jolie chose que tu as vue dehors aujourd'hui ?",
+"it": "Qual è la cosa più bella che hai visto in giro oggi?",
+"pt": "Qual foi a coisa mais bonita que viste hoje na rua?",
+"pt_BR": "Qual foi a coisa mais bonita que você viu na rua hoje?"
+}
+},
+{
+"id": "daily_checkin-019",
+"lv": "any",
+"i18n": {
+"en": "How are you feeling about the week ahead?",
+"de": "Wie fühlst du dich mit Blick auf die kommende Woche?",
+"es": "¿Cómo te sientes ante la semana que viene?",
+"fr": "Comment abordes-tu la semaine qui arrive ?",
+"it": "Come ti senti pensando alla settimana che arriva?",
+"pt": "Como te sentes em relação à semana que aí vem?",
+"pt_BR": "Como você está se sentindo sobre a semana que vem?"
+}
+},
+{
+"id": "daily_checkin-020",
+"lv": "any",
+"i18n": {
+"en": "What made today different from yesterday?",
+"de": "Was war heute anders als gestern?",
+"es": "¿Qué hizo que hoy fuera distinto de ayer?",
+"fr": "Qu'est-ce qui a rendu aujourd'hui différent d'hier ?",
+"it": "Cosa ha reso oggi diverso da ieri?",
+"pt": "O que tornou hoje diferente de ontem?",
+"pt_BR": "O que fez hoje ser diferente de ontem?"
+}
+},
+{
+"id": "daily_checkin-021",
+"lv": "any",
+"i18n": {
+"en": "What little treat did you give yourself recently?",
+"de": "Welche kleine Belohnung hast du dir in letzter Zeit gegönnt?",
+"es": "¿Qué pequeño capricho te has dado últimamente?",
+"fr": "Quel petit plaisir t'es-tu offert récemment ?",
+"it": "Quale piccolo sfizio ti sei concesso di recente?",
+"pt": "Que pequeno mimo te deste recentemente?",
+"pt_BR": "Que pequeno mimo você se deu recentemente?"
+}
+},
+{
+"id": "daily_checkin-022",
+"lv": "any",
+"i18n": {
+"en": "What's one thing you're proud of this week?",
+"de": "Worauf bist du diese Woche stolz?",
+"es": "¿De qué estás orgulloso esta semana?",
+"fr": "De quoi es-tu fier cette semaine ?",
+"it": "Di cosa sei orgoglioso questa settimana?",
+"pt": "De que é que te orgulhas esta semana?",
+"pt_BR": "Do que você se orgulha nesta semana?"
+}
+},
+{
+"id": "daily_checkin-023",
+"lv": "any",
+"i18n": {
+"en": "What does your perfect evening look like?",
+"de": "Wie sieht dein perfekter Abend aus?",
+"es": "¿Cómo sería tu tarde-noche perfecta?",
+"fr": "À quoi ressemble ta soirée parfaite ?",
+"it": "Com'è la tua serata perfetta?",
+"pt": "Como é a tua noite perfeita?",
+"pt_BR": "Como é a sua noite perfeita?"
+}
+},
+{
+"id": "daily_checkin-024",
+"lv": "any",
+"i18n": {
+"en": "What was the funniest moment of your day?",
+"de": "Was war der lustigste Moment deines Tages?",
+"es": "¿Cuál fue el momento más divertido de tu día?",
+"fr": "Quel a été le moment le plus drôle de ta journée ?",
+"it": "Qual è stato il momento più divertente della tua giornata?",
+"pt": "Qual foi o momento mais engraçado do teu dia?",
+"pt_BR": "Qual foi o momento mais engraçado do seu dia?"
+}
+},
+{
+"id": "daily_checkin-025",
+"lv": "any",
+"i18n": {
+"en": "Who would you like to catch up with soon?",
+"de": "Mit wem würdest du dich gern bald mal wieder austauschen?",
+"es": "¿Con quién te gustaría ponerte al día pronto?",
+"fr": "Avec qui aimerais-tu prendre des nouvelles bientôt ?",
+"it": "Con chi ti piacerebbe rimetterti in contatto presto?",
+"pt": "Com quem gostavas de pôr a conversa em dia em breve?",
+"pt_BR": "Com quem você gostaria de colocar o papo em dia em breve?"
+}
+},
+{
+"id": "daily_checkin-026",
+"lv": "any",
+"i18n": {
+"en": "What small thing made your day easier?",
+"de": "Welche Kleinigkeit hat dir den Tag erleichtert?",
+"es": "¿Qué pequeña cosa te hizo el día más fácil?",
+"fr": "Quelle petite chose t'a simplifié la journée ?",
+"it": "Quale piccola cosa ti ha reso la giornata più facile?",
+"pt": "Que pequena coisa te facilitou o dia?",
+"pt_BR": "Que coisinha deixou o seu dia mais fácil?"
+}
+},
+{
+"id": "daily_checkin-027",
+"lv": "any",
+"i18n": {
+"en": "What are three good things that happened today?",
+"de": "Welche drei schönen Dinge sind heute passiert?",
+"es": "¿Qué tres cosas buenas te han pasado hoy?",
+"fr": "Quelles sont trois bonnes choses qui te sont arrivées aujourd'hui ?",
+"it": "Quali sono tre cose belle che ti sono successe oggi?",
+"pt": "Que três coisas boas te aconteceram hoje?",
+"pt_BR": "Quais três coisas boas aconteceram com você hoje?"
+}
+},
+{
+"id": "daily_checkin-028",
+"lv": "any",
+"i18n": {
+"en": "How did you spend your free time today?",
+"de": "Wie hast du heute deine Freizeit verbracht?",
+"es": "¿Cómo pasaste tu tiempo libre hoy?",
+"fr": "Comment as-tu occupé ton temps libre aujourd'hui ?",
+"it": "Come hai passato il tuo tempo libero oggi?",
+"pt": "Como passaste o teu tempo livre hoje?",
+"pt_BR": "Como você passou seu tempo livre hoje?"
+}
+},
+{
+"id": "daily_checkin-029",
+"lv": "any",
+"i18n": {
+"en": "What are you curious about right now?",
+"de": "Worauf bist du gerade neugierig?",
+"es": "¿Qué te despierta curiosidad ahora mismo?",
+"fr": "Qu'est-ce qui éveille ta curiosité en ce moment ?",
+"it": "Cosa ti incuriosisce in questo momento?",
+"pt": "O que é que te desperta curiosidade neste momento?",
+"pt_BR": "O que está despertando sua curiosidade agora?"
+}
+},
+{
+"id": "daily_checkin-030",
+"lv": "any",
+"i18n": {
+"en": "What plan are you excited about this month?",
+"de": "Auf welchen Plan freust du dich diesen Monat?",
+"es": "¿Qué plan te hace ilusión este mes?",
+"fr": "Quel projet te réjouit ce mois-ci ?",
+"it": "Quale programma ti entusiasma questo mese?",
+"pt": "Que plano te entusiasma este mês?",
+"pt_BR": "Qual plano está te animando este mês?"
+}
+},
+{
+"id": "daily_checkin-031",
+"lv": "any",
+"i18n": {
+"en": "Which part of today would you happily live again?",
+"de": "Welchen Teil des heutigen Tages würdest du gern noch einmal erleben?",
+"es": "¿Qué parte de hoy volverías a vivir con gusto?",
+"fr": "Quel moment d'aujourd'hui revivrais-tu avec plaisir ?",
+"it": "Quale parte di oggi rivivresti volentieri?",
+"pt": "Que parte de hoje voltarias a viver com gosto?",
+"pt_BR": "Que parte de hoje você viveria de novo com prazer?"
+}
+},
+{
+"id": "daily_checkin-032",
+"lv": "any",
+"i18n": {
+"en": "How's the weather where you are, and did it suit your mood?",
+"de": "Wie ist das Wetter bei dir, und hat es zu deiner Stimmung gepasst?",
+"es": "¿Qué tiempo hace donde estás y encajó con tu ánimo?",
+"fr": "Quel temps fait-il chez toi, et allait-il avec ton humeur ?",
+"it": "Che tempo fa da te, e si intonava al tuo umore?",
+"pt": "Como está o tempo onde estás, e combinou com o teu humor?",
+"pt_BR": "Como está o tempo aí, e ele combinou com o seu humor?"
+}
+},
+{
+"id": "daily_checkin-033",
+"lv": "any",
+"i18n": {
+"en": "What's the best thing you read or watched today?",
+"de": "Was war das Beste, das du heute gelesen oder gesehen hast?",
+"es": "¿Qué es lo mejor que leíste o viste hoy?",
+"fr": "Quelle est la meilleure chose que tu as lue ou regardée aujourd'hui ?",
+"it": "Qual è la cosa migliore che hai letto o guardato oggi?",
+"pt": "Qual foi a melhor coisa que leste ou viste hoje?",
+"pt_BR": "Qual foi a melhor coisa que você leu ou assistiu hoje?"
+}
+},
+{
+"id": "daily_checkin-034",
+"lv": "any",
+"i18n": {
+"en": "What did you do today just for yourself?",
+"de": "Was hast du heute nur für dich gemacht?",
+"es": "¿Qué hiciste hoy solo para ti?",
+"fr": "Qu'as-tu fait aujourd'hui rien que pour toi ?",
+"it": "Cosa hai fatto oggi solo per te?",
+"pt": "O que fizeste hoje só para ti?",
+"pt_BR": "O que você fez hoje só para você?"
+}
+},
+{
+"id": "daily_checkin-035",
+"lv": "any",
+"i18n": {
+"en": "Which place made you feel good today?",
+"de": "An welchem Ort hast du dich heute wohlgefühlt?",
+"es": "¿Qué lugar te hizo sentir bien hoy?",
+"fr": "Quel endroit t'a fait du bien aujourd'hui ?",
+"it": "Quale posto ti ha fatto stare bene oggi?",
+"pt": "Que sítio te fez sentir bem hoje?",
+"pt_BR": "Que lugar fez você se sentir bem hoje?"
+}
+},
+{
+"id": "daily_checkin-036",
+"lv": "any",
+"i18n": {
+"en": "How did you move your body today?",
+"de": "Wie hast du dich heute bewegt?",
+"es": "¿Cómo te moviste hoy?",
+"fr": "Comment as-tu bougé aujourd'hui ?",
+"it": "Come ti sei mosso oggi?",
+"pt": "Como mexeste o corpo hoje?",
+"pt_BR": "Como você movimentou o corpo hoje?"
+}
+},
+{
+"id": "daily_checkin-037",
+"lv": "any",
+"i18n": {
+"en": "What's one thing you'd like to do a bit better tomorrow?",
+"de": "Was möchtest du morgen ein bisschen besser machen?",
+"es": "¿Qué te gustaría hacer un poco mejor mañana?",
+"fr": "Qu'aimerais-tu faire un peu mieux demain ?",
+"it": "Cosa ti piacerebbe fare un po' meglio domani?",
+"pt": "O que gostavas de fazer um pouco melhor amanhã?",
+"pt_BR": "O que você gostaria de fazer um pouco melhor amanhã?"
+}
+},
+{
+"id": "daily_checkin-038",
+"lv": "any",
+"i18n": {
+"en": "What's the nicest message you received today?",
+"de": "Was war die schönste Nachricht, die du heute bekommen hast?",
+"es": "¿Cuál es el mensaje más bonito que recibiste hoy?",
+"fr": "Quel est le plus gentil message que tu as reçu aujourd'hui ?",
+"it": "Qual è il messaggio più bello che hai ricevuto oggi?",
+"pt": "Qual foi a mensagem mais simpática que recebeste hoje?",
+"pt_BR": "Qual foi a mensagem mais legal que você recebeu hoje?"
+}
+},
+{
+"id": "daily_checkin-039",
+"lv": "any",
+"i18n": {
+"en": "What good decision did you make today?",
+"de": "Welche gute Entscheidung hast du heute getroffen?",
+"es": "¿Qué buena decisión tomaste hoy?",
+"fr": "Quelle bonne décision as-tu prise aujourd'hui ?",
+"it": "Quale buona decisione hai preso oggi?",
+"pt": "Que boa decisão tomaste hoje?",
+"pt_BR": "Que boa decisão você tomou hoje?"
+}
+},
+{
+"id": "daily_checkin-040",
+"lv": "any",
+"i18n": {
+"en": "How would you rate today out of ten, and why?",
+"de": "Wie viele von zehn Punkten gibst du dem heutigen Tag, und warum?",
+"es": "¿Qué nota del uno al diez le darías a hoy y por qué?",
+"fr": "Quelle note sur dix donnerais-tu à ta journée, et pourquoi ?",
+"it": "Che voto da uno a dieci daresti a oggi, e perché?",
+"pt": "Que nota de zero a dez darias ao dia de hoje, e porquê?",
+"pt_BR": "Que nota de zero a dez você daria para hoje, e por quê?"
+}
+},
+{
+"id": "daily_checkin-041",
+"lv": "beginner",
+"i18n": {
+"en": "What does a normal morning look like for you?",
+"de": "Wie sieht ein normaler Morgen bei dir aus?",
+"es": "¿Cómo es una mañana normal para ti?",
+"fr": "À quoi ressemble une matinée normale pour toi ?",
+"it": "Com'è una tua mattina normale?",
+"pt": "Como é uma manhã normal para ti?",
+"pt_BR": "Como é uma manhã normal para você?"
+}
+},
+{
+"id": "daily_checkin-042",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite time of the day, and why?",
+"de": "Was ist deine liebste Tageszeit, und warum?",
+"es": "¿Cuál es tu momento favorito del día y por qué?",
+"fr": "Quel est ton moment préféré de la journée, et pourquoi ?",
+"it": "Qual è il tuo momento preferito della giornata, e perché?",
+"pt": "Qual é a tua altura preferida do dia, e porquê?",
+"pt_BR": "Qual é o seu horário favorito do dia, e por quê?"
+}
+},
+{
+"id": "daily_checkin-043",
+"lv": "beginner",
+"i18n": {
+"en": "What tiny goal could you set for tomorrow?",
+"de": "Welches winzige Ziel könntest du dir für morgen setzen?",
+"es": "¿Qué meta pequeñita podrías ponerte para mañana?",
+"fr": "Quel tout petit objectif pourrais-tu te fixer pour demain ?",
+"it": "Quale piccolissimo obiettivo potresti darti per domani?",
+"pt": "Que objetivo pequenino podias definir para amanhã?",
+"pt_BR": "Que metinha você poderia definir para amanhã?"
+}
+},
+{
+"id": "daily_checkin-044",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually spend your lunch break?",
+"de": "Wie verbringst du normalerweise deine Mittagspause?",
+"es": "¿Cómo sueles pasar tu pausa para comer?",
+"fr": "Comment passes-tu d'habitude ta pause déjeuner ?",
+"it": "Come passi di solito la pausa pranzo?",
+"pt": "Como costumas passar a tua hora de almoço?",
+"pt_BR": "Como você costuma passar seu horário de almoço?"
+}
+},
+{
+"id": "daily_checkin-045",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite comfort food after a long day?",
+"de": "Was ist dein liebstes Wohlfühlessen nach einem langen Tag?",
+"es": "¿Cuál es tu comida reconfortante favorita después de un día largo?",
+"fr": "Quel est ton plat réconfortant préféré après une longue journée ?",
+"it": "Qual è il tuo cibo consolatorio preferito dopo una lunga giornata?",
+"pt": "Qual é a tua comida de conforto preferida depois de um dia longo?",
+"pt_BR": "Qual é a sua comida afetiva favorita depois de um dia longo?"
+}
+},
+{
+"id": "daily_checkin-046",
+"lv": "beginner",
+"i18n": {
+"en": "What's a routine you never skip?",
+"de": "Welche Routine lässt du nie ausfallen?",
+"es": "¿Qué rutina no te saltas nunca?",
+"fr": "Quelle routine ne sautes-tu jamais ?",
+"it": "Quale routine non salti mai?",
+"pt": "Que rotina nunca dispensas?",
+"pt_BR": "Qual rotina você nunca pula?"
+}
+},
+{
+"id": "daily_checkin-047",
+"lv": "beginner",
+"i18n": {
+"en": "How did you sleep last night?",
+"de": "Wie hast du letzte Nacht geschlafen?",
+"es": "¿Qué tal dormiste anoche?",
+"fr": "Comment as-tu dormi cette nuit ?",
+"it": "Come hai dormito stanotte?",
+"pt": "Como dormiste esta noite?",
+"pt_BR": "Como você dormiu esta noite?"
+}
+},
+{
+"id": "daily_checkin-048",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you wake up with good energy?",
+"de": "Was hilft dir, mit guter Energie aufzuwachen?",
+"es": "¿Qué te ayuda a despertarte con buena energía?",
+"fr": "Qu'est-ce qui t'aide à te réveiller plein d'énergie ?",
+"it": "Cosa ti aiuta a svegliarti con una bella energia?",
+"pt": "O que te ajuda a acordar com boa energia?",
+"pt_BR": "O que ajuda você a acordar com energia?"
+}
+},
+{
+"id": "daily_checkin-049",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite way to spend a weekend morning?",
+"de": "Wie verbringst du am liebsten einen Wochenendmorgen?",
+"es": "¿Cuál es tu forma favorita de pasar una mañana de fin de semana?",
+"fr": "Quelle est ta façon préférée de passer un matin de week-end ?",
+"it": "Qual è il tuo modo preferito di passare una mattina nel weekend?",
+"pt": "Qual é a tua forma preferida de passar uma manhã de fim de semana?",
+"pt_BR": "Qual é o seu jeito favorito de passar uma manhã de fim de semana?"
+}
+},
+{
+"id": "daily_checkin-050",
+"lv": "beginner",
+"i18n": {
+"en": "Which chore do you actually not mind doing?",
+"de": "Welche Hausarbeit machst du eigentlich ganz gern?",
+"es": "¿Qué tarea de casa no te importa nada hacer?",
+"fr": "Quelle tâche ménagère ne te dérange pas du tout ?",
+"it": "Quale faccenda di casa in fondo non ti dispiace fare?",
+"pt": "Que tarefa doméstica não te importas nada de fazer?",
+"pt_BR": "Qual tarefa de casa você não se importa nem um pouco de fazer?"
+}
+},
+{
+"id": "daily_checkin-051",
+"lv": "beginner",
+"i18n": {
+"en": "Which day of the week do you like most, and why?",
+"de": "Welchen Wochentag magst du am liebsten, und warum?",
+"es": "¿Qué día de la semana te gusta más y por qué?",
+"fr": "Quel jour de la semaine préfères-tu, et pourquoi ?",
+"it": "Quale giorno della settimana ti piace di più, e perché?",
+"pt": "De que dia da semana gostas mais, e porquê?",
+"pt_BR": "De qual dia da semana você mais gosta, e por quê?"
+}
+},
+{
+"id": "daily_checkin-052",
+"lv": "beginner",
+"i18n": {
+"en": "What's a place nearby that you love to visit?",
+"de": "Welchen Ort in deiner Nähe besuchst du besonders gern?",
+"es": "¿Qué lugar cercano te encanta visitar?",
+"fr": "Quel endroit près de chez toi adores-tu visiter ?",
+"it": "Quale posto vicino a te ami visitare?",
+"pt": "Que sítio perto de ti adoras visitar?",
+"pt_BR": "Que lugar perto de você você adora visitar?"
+}
+},
+{
+"id": "daily_checkin-053",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually do right after work or school?",
+"de": "Was machst du normalerweise direkt nach der Arbeit oder Schule?",
+"es": "¿Qué sueles hacer justo después del trabajo o las clases?",
+"fr": "Que fais-tu d'habitude juste après le travail ou les cours ?",
+"it": "Cosa fai di solito subito dopo il lavoro o la scuola?",
+"pt": "O que costumas fazer logo depois do trabalho ou das aulas?",
+"pt_BR": "O que você costuma fazer logo depois do trabalho ou da aula?"
+}
+},
+{
+"id": "daily_checkin-054",
+"lv": "beginner",
+"i18n": {
+"en": "What small habit makes your day better?",
+"de": "Welche kleine Gewohnheit macht deinen Tag besser?",
+"es": "¿Qué pequeño hábito mejora tu día?",
+"fr": "Quelle petite habitude rend ta journée meilleure ?",
+"it": "Quale piccola abitudine rende migliore la tua giornata?",
+"pt": "Que pequeno hábito torna o teu dia melhor?",
+"pt_BR": "Que pequeno hábito deixa seu dia melhor?"
+}
+},
+{
+"id": "daily_checkin-055",
+"lv": "beginner",
+"i18n": {
+"en": "Who do you usually talk to every day?",
+"de": "Mit wem sprichst du normalerweise jeden Tag?",
+"es": "¿Con quién sueles hablar todos los días?",
+"fr": "À qui parles-tu d'habitude tous les jours ?",
+"it": "Con chi parli di solito ogni giorno?",
+"pt": "Com quem costumas falar todos os dias?",
+"pt_BR": "Com quem você costuma conversar todo dia?"
+}
+},
+{
+"id": "daily_checkin-056",
+"lv": "beginner",
+"i18n": {
+"en": "What did you have for breakfast today?",
+"de": "Was hast du heute gefrühstückt?",
+"es": "¿Qué desayunaste hoy?",
+"fr": "Qu'as-tu mangé au petit-déjeuner aujourd'hui ?",
+"it": "Cosa hai mangiato a colazione oggi?",
+"pt": "O que comeste ao pequeno-almoço hoje?",
+"pt_BR": "O que você tomou de café da manhã hoje?"
+}
+},
+{
+"id": "daily_checkin-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which hobby would you like more time for?",
+"de": "Für welches Hobby hättest du gern mehr Zeit?",
+"es": "¿Para qué afición te gustaría tener más tiempo?",
+"fr": "Pour quel loisir aimerais-tu avoir plus de temps ?",
+"it": "Per quale hobby vorresti avere più tempo?",
+"pt": "Para que passatempo gostavas de ter mais tempo?",
+"pt_BR": "Para qual hobby você gostaria de ter mais tempo?"
+}
+},
+{
+"id": "daily_checkin-058",
+"lv": "beginner",
+"i18n": {
+"en": "How do you like to celebrate small wins?",
+"de": "Wie feierst du gern kleine Erfolge?",
+"es": "¿Cómo te gusta celebrar los pequeños logros?",
+"fr": "Comment aimes-tu fêter les petites victoires ?",
+"it": "Come ti piace festeggiare le piccole vittorie?",
+"pt": "Como gostas de celebrar as pequenas vitórias?",
+"pt_BR": "Como você gosta de comemorar as pequenas vitórias?"
+}
+},
+{
+"id": "daily_checkin-059",
+"lv": "beginner",
+"i18n": {
+"en": "What's something cosy that you love having at home?",
+"de": "Was Gemütliches hast du zu Hause besonders gern?",
+"es": "¿Qué cosa acogedora te encanta tener en casa?",
+"fr": "Quel objet douillet adores-tu avoir chez toi ?",
+"it": "Quale cosa accogliente ami avere in casa?",
+"pt": "Que coisa aconchegante adoras ter em casa?",
+"pt_BR": "Que coisa aconchegante você adora ter em casa?"
+}
+},
+{
+"id": "daily_checkin-060",
+"lv": "beginner",
+"i18n": {
+"en": "What's your go-to way to take a short break?",
+"de": "Wie machst du am liebsten eine kurze Pause?",
+"es": "¿Cuál es tu forma habitual de hacer una pausa corta?",
+"fr": "Quelle est ta façon préférée de faire une petite pause ?",
+"it": "Qual è il tuo modo preferito di fare una breve pausa?",
+"pt": "Qual é a tua forma preferida de fazer uma pequena pausa?",
+"pt_BR": "Qual é o seu jeito preferido de fazer uma pausa rápida?"
+}
+},
+{
+"id": "daily_checkin-061",
+"lv": "beginner",
+"i18n": {
+"en": "What's one thing you always carry with you?",
+"de": "Was hast du immer dabei?",
+"es": "¿Qué llevas siempre contigo?",
+"fr": "Qu'est-ce que tu as toujours sur toi ?",
+"it": "Cosa porti sempre con te?",
+"pt": "O que levas sempre contigo?",
+"pt_BR": "O que você sempre leva com você?"
+}
+},
+{
+"id": "daily_checkin-062",
+"lv": "beginner",
+"i18n": {
+"en": "What's the last fun thing you did with friends?",
+"de": "Was war das Letzte, was du mit Freunden unternommen hast und Spaß gemacht hat?",
+"es": "¿Qué fue lo último divertido que hiciste con amigos?",
+"fr": "Quelle est la dernière chose amusante que tu as faite avec des amis ?",
+"it": "Qual è l'ultima cosa divertente che hai fatto con gli amici?",
+"pt": "Qual foi a última coisa divertida que fizeste com amigos?",
+"pt_BR": "Qual foi a última coisa divertida que você fez com amigos?"
+}
+},
+{
+"id": "daily_checkin-063",
+"lv": "beginner",
+"i18n": {
+"en": "How do you plan your day: lists, apps or just in your head?",
+"de": "Wie planst du deinen Tag: mit Listen, Apps oder einfach im Kopf?",
+"es": "¿Cómo planeas tu día: con listas, apps o de memoria?",
+"fr": "Comment organises-tu ta journée : listes, applis ou simplement de tête ?",
+"it": "Come organizzi la tua giornata: liste, app o a mente?",
+"pt": "Como planeias o teu dia: listas, aplicações ou só de cabeça?",
+"pt_BR": "Como você planeja seu dia: listas, aplicativos ou só de cabeça?"
+}
+},
+{
+"id": "daily_checkin-064",
+"lv": "beginner",
+"i18n": {
+"en": "What simple pleasure did you enjoy this week?",
+"de": "Welches einfache Vergnügen hast du diese Woche genossen?",
+"es": "¿Qué placer sencillo disfrutaste esta semana?",
+"fr": "Quel plaisir simple as-tu savouré cette semaine ?",
+"it": "Quale piacere semplice ti sei goduto questa settimana?",
+"pt": "Que prazer simples aproveitaste esta semana?",
+"pt_BR": "Que prazer simples você curtiu nesta semana?"
+}
+},
+{
+"id": "daily_checkin-065",
+"lv": "beginner",
+"i18n": {
+"en": "What does a good day look like for you?",
+"de": "Wie sieht für dich ein guter Tag aus?",
+"es": "¿Cómo es para ti un buen día?",
+"fr": "À quoi ressemble une bonne journée pour toi ?",
+"it": "Com'è per te una bella giornata?",
+"pt": "Como é um bom dia para ti?",
+"pt_BR": "Como é um dia bom para você?"
+}
+},
+{
+"id": "daily_checkin-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which habit would you like to build this month?",
+"de": "Welche Gewohnheit möchtest du diesen Monat aufbauen?",
+"es": "¿Qué hábito te gustaría crear este mes?",
+"fr": "Quelle habitude aimerais-tu prendre ce mois-ci ?",
+"it": "Quale abitudine ti piacerebbe costruire questo mese?",
+"pt": "Que hábito gostavas de criar este mês?",
+"pt_BR": "Que hábito você gostaria de criar este mês?"
+}
+},
+{
+"id": "daily_checkin-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you get back on track after an off day?",
+"de": "Wie kommst du nach einem schwächeren Tag wieder in Schwung?",
+"es": "¿Cómo vuelves al buen camino después de un día flojo?",
+"fr": "Comment reprends-tu le rythme après une journée sans ?",
+"it": "Come ti rimetti in carreggiata dopo una giornata storta?",
+"pt": "Como voltas ao ritmo depois de um dia menos bom?",
+"pt_BR": "Como você volta ao ritmo depois de um dia mais fraco?"
+}
+},
+{
+"id": "daily_checkin-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What are your top three priorities this week?",
+"de": "Was sind deine drei wichtigsten Prioritäten diese Woche?",
+"es": "¿Cuáles son tus tres prioridades principales esta semana?",
+"fr": "Quelles sont tes trois priorités cette semaine ?",
+"it": "Quali sono le tue tre priorità principali questa settimana?",
+"pt": "Quais são as tuas três prioridades desta semana?",
+"pt_BR": "Quais são suas três prioridades desta semana?"
+}
+},
+{
+"id": "daily_checkin-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What gives you the most energy during the week?",
+"de": "Was gibt dir unter der Woche die meiste Energie?",
+"es": "¿Qué te da más energía durante la semana?",
+"fr": "Qu'est-ce qui te donne le plus d'énergie pendant la semaine ?",
+"it": "Cosa ti dà più energia durante la settimana?",
+"pt": "O que te dá mais energia durante a semana?",
+"pt_BR": "O que te dá mais energia durante a semana?"
+}
+},
+{
+"id": "daily_checkin-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What tends to tire you out, and how do you recharge?",
+"de": "Was ermüdet dich meistens, und wie tankst du wieder auf?",
+"es": "¿Qué suele cansarte y cómo recargas las pilas?",
+"fr": "Qu'est-ce qui te fatigue souvent, et comment recharges-tu tes batteries ?",
+"it": "Cosa tende a stancarti, e come ricarichi le energie?",
+"pt": "O que costuma cansar-te, e como recarregas as baterias?",
+"pt_BR": "O que costuma te cansar, e como você recarrega as energias?"
+}
+},
+{
+"id": "daily_checkin-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Which goal have you been putting off, and what's a tiny first step?",
+"de": "Welches Ziel schiebst du vor dir her, und was wäre ein winziger erster Schritt?",
+"es": "¿Qué meta llevas tiempo aplazando y cuál sería un primer paso pequeñito?",
+"fr": "Quel objectif repousses-tu depuis un moment, et quel serait un tout premier petit pas ?",
+"it": "Quale obiettivo continui a rimandare, e quale sarebbe un piccolo primo passo?",
+"pt": "Que objetivo andas a adiar, e qual seria um primeiro passo pequenino?",
+"pt_BR": "Que meta você vem adiando, e qual seria um primeiro passo bem pequeno?"
+}
+},
+{
+"id": "daily_checkin-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance work or study with free time?",
+"de": "Wie bringst du Arbeit oder Studium und Freizeit in Balance?",
+"es": "¿Cómo equilibras el trabajo o los estudios con el tiempo libre?",
+"fr": "Comment équilibres-tu travail ou études et temps libre ?",
+"it": "Come bilanci lavoro o studio e tempo libero?",
+"pt": "Como equilibras o trabalho ou os estudos com o tempo livre?",
+"pt_BR": "Como você equilibra trabalho ou estudo com o tempo livre?"
+}
+},
+{
+"id": "daily_checkin-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What helps you focus when you have a lot to do?",
+"de": "Was hilft dir, dich zu konzentrieren, wenn du viel zu tun hast?",
+"es": "¿Qué te ayuda a concentrarte cuando tienes mucho que hacer?",
+"fr": "Qu'est-ce qui t'aide à te concentrer quand tu as beaucoup à faire ?",
+"it": "Cosa ti aiuta a concentrarti quando hai molto da fare?",
+"pt": "O que te ajuda a concentrar-te quando tens muito para fazer?",
+"pt_BR": "O que ajuda você a se concentrar quando tem muita coisa para fazer?"
+}
+},
+{
+"id": "daily_checkin-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which skill have you improved in the last few months?",
+"de": "Welche Fähigkeit hast du in den letzten Monaten verbessert?",
+"es": "¿Qué habilidad has mejorado en los últimos meses?",
+"fr": "Quelle compétence as-tu améliorée ces derniers mois ?",
+"it": "Quale abilità hai migliorato negli ultimi mesi?",
+"pt": "Que competência melhoraste nos últimos meses?",
+"pt_BR": "Que habilidade você melhorou nos últimos meses?"
+}
+},
+{
+"id": "daily_checkin-075",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you like to organise or tidy this week?",
+"de": "Was möchtest du diese Woche ordnen oder aufräumen?",
+"es": "¿Qué te gustaría organizar u ordenar esta semana?",
+"fr": "Qu'aimerais-tu ranger ou organiser cette semaine ?",
+"it": "Cosa ti piacerebbe sistemare o riordinare questa settimana?",
+"pt": "O que gostavas de organizar ou arrumar esta semana?",
+"pt_BR": "O que você gostaria de organizar ou arrumar nesta semana?"
+}
+},
+{
+"id": "daily_checkin-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you plan your week, if you plan it at all?",
+"de": "Wie planst du deine Woche, falls du sie überhaupt planst?",
+"es": "¿Cómo planificas tu semana, si es que la planificas?",
+"fr": "Comment planifies-tu ta semaine, si tu la planifies ?",
+"it": "Come pianifichi la tua settimana, se la pianifichi?",
+"pt": "Como planeias a tua semana, se é que a planeias?",
+"pt_BR": "Como você planeja sua semana, se é que planeja?"
+}
+},
+{
+"id": "daily_checkin-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Who inspires you with their daily habits?",
+"de": "Wer inspiriert dich mit seinen täglichen Gewohnheiten?",
+"es": "¿Quién te inspira con sus hábitos diarios?",
+"fr": "Qui t'inspire par ses habitudes quotidiennes ?",
+"it": "Chi ti ispira con le sue abitudini quotidiane?",
+"pt": "Quem te inspira com os seus hábitos diários?",
+"pt_BR": "Quem inspira você com seus hábitos diários?"
+}
+},
+{
+"id": "daily_checkin-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What small change made a big difference in your days?",
+"de": "Welche kleine Veränderung hat in deinem Alltag viel bewirkt?",
+"es": "¿Qué pequeño cambio marcó una gran diferencia en tus días?",
+"fr": "Quel petit changement a fait une grande différence dans tes journées ?",
+"it": "Quale piccolo cambiamento ha fatto una grande differenza nelle tue giornate?",
+"pt": "Que pequena mudança fez uma grande diferença nos teus dias?",
+"pt_BR": "Que pequena mudança fez uma grande diferença nos seus dias?"
+}
+},
+{
+"id": "daily_checkin-079",
+"lv": "intermediate",
+"i18n": {
+"en": "What did this week teach you?",
+"de": "Was hat dir diese Woche beigebracht?",
+"es": "¿Qué te ha enseñado esta semana?",
+"fr": "Qu'est-ce que cette semaine t'a appris ?",
+"it": "Cosa ti ha insegnato questa settimana?",
+"pt": "O que te ensinou esta semana?",
+"pt_BR": "O que esta semana te ensinou?"
+}
+},
+{
+"id": "daily_checkin-080",
+"lv": "intermediate",
+"i18n": {
+"en": "What's something a bit outside your comfort zone you'd like to try?",
+"de": "Was etwas außerhalb deiner Komfortzone würdest du gern ausprobieren?",
+"es": "¿Qué te gustaría probar que esté un poco fuera de tu zona de confort?",
+"fr": "Qu'aimerais-tu essayer qui sort un peu de ta zone de confort ?",
+"it": "Cosa ti piacerebbe provare che sia un po' fuori dalla tua zona di comfort?",
+"pt": "O que gostavas de experimentar que esteja um pouco fora da tua zona de conforto?",
+"pt_BR": "O que você gostaria de experimentar que esteja um pouco fora da sua zona de conforto?"
+}
+},
+{
+"id": "daily_checkin-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you stay motivated on a long project?",
+"de": "Wie bleibst du bei einem langen Projekt motiviert?",
+"es": "¿Cómo mantienes la motivación en un proyecto largo?",
+"fr": "Comment restes-tu motivé sur un long projet ?",
+"it": "Come resti motivato in un progetto lungo?",
+"pt": "Como te manténs motivado num projeto longo?",
+"pt_BR": "Como você se mantém motivado num projeto longo?"
+}
+},
+{
+"id": "daily_checkin-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which item on your bucket list could you do soon?",
+"de": "Welchen Punkt auf deiner Wunschliste fürs Leben könntest du bald umsetzen?",
+"es": "¿Qué cosa de tu lista de sueños podrías hacer pronto?",
+"fr": "Quel rêve de ta liste de choses à faire dans la vie pourrais-tu réaliser bientôt ?",
+"it": "Quale desiderio della tua lista delle cose da fare nella vita potresti realizzare presto?",
+"pt": "Que item da tua lista de sonhos podias concretizar em breve?",
+"pt_BR": "Que item da sua lista de sonhos você poderia realizar em breve?"
+}
+},
+{
+"id": "daily_checkin-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you make time for friends during busy weeks?",
+"de": "Wie nimmst du dir in vollen Wochen Zeit für Freunde?",
+"es": "¿Cómo sacas tiempo para tus amigos en semanas ajetreadas?",
+"fr": "Comment trouves-tu du temps pour tes amis pendant les semaines chargées ?",
+"it": "Come trovi tempo per gli amici nelle settimane piene?",
+"pt": "Como arranjas tempo para os amigos nas semanas mais ocupadas?",
+"pt_BR": "Como você arruma tempo para os amigos nas semanas corridas?"
+}
+},
+{
+"id": "daily_checkin-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which routine would you like to change, and why?",
+"de": "Welche Routine würdest du gern ändern, und warum?",
+"es": "¿Qué rutina te gustaría cambiar y por qué?",
+"fr": "Quelle routine aimerais-tu changer, et pourquoi ?",
+"it": "Quale routine ti piacerebbe cambiare, e perché?",
+"pt": "Que rotina gostavas de mudar, e porquê?",
+"pt_BR": "Qual rotina você gostaria de mudar, e por quê?"
+}
+},
+{
+"id": "daily_checkin-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What's the best advice you've received about everyday life?",
+"de": "Was ist der beste Rat, den du je für den Alltag bekommen hast?",
+"es": "¿Cuál es el mejor consejo que te han dado sobre la vida diaria?",
+"fr": "Quel est le meilleur conseil qu'on t'ait donné pour la vie de tous les jours ?",
+"it": "Qual è il miglior consiglio che hai ricevuto sulla vita quotidiana?",
+"pt": "Qual foi o melhor conselho que já recebeste sobre o dia a dia?",
+"pt_BR": "Qual foi o melhor conselho que você já recebeu sobre o dia a dia?"
+}
+},
+{
+"id": "daily_checkin-086",
+"lv": "advanced",
+"i18n": {
+"en": "What matters most to you in how you spend your days?",
+"de": "Was ist dir am wichtigsten bei der Art, wie du deine Tage verbringst?",
+"es": "¿Qué es lo que más te importa en cómo pasas tus días?",
+"fr": "Qu'est-ce qui compte le plus pour toi dans la façon dont tu passes tes journées ?",
+"it": "Cosa conta di più per te nel modo in cui passi le tue giornate?",
+"pt": "O que mais importa para ti na forma como passas os teus dias?",
+"pt_BR": "O que mais importa para você no jeito como passa seus dias?"
+}
+},
+{
+"id": "daily_checkin-087",
+"lv": "advanced",
+"i18n": {
+"en": "Where would you like to be one year from now?",
+"de": "Wo möchtest du in einem Jahr stehen?",
+"es": "¿Dónde te gustaría estar dentro de un año?",
+"fr": "Où aimerais-tu en être dans un an ?",
+"it": "Dove ti piacerebbe essere tra un anno?",
+"pt": "Onde gostavas de estar daqui a um ano?",
+"pt_BR": "Onde você gostaria de estar daqui a um ano?"
+}
+},
+{
+"id": "daily_checkin-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which long-term goal are you working toward, step by step?",
+"de": "Auf welches langfristige Ziel arbeitest du Schritt für Schritt hin?",
+"es": "¿Hacia qué meta a largo plazo avanzas paso a paso?",
+"fr": "Vers quel objectif à long terme avances-tu pas à pas ?",
+"it": "Verso quale obiettivo a lungo termine stai lavorando passo dopo passo?",
+"pt": "Para que objetivo a longo prazo estás a trabalhar, passo a passo?",
+"pt_BR": "Em direção a qual meta de longo prazo você está caminhando, passo a passo?"
+}
+},
+{
+"id": "daily_checkin-089",
+"lv": "advanced",
+"i18n": {
+"en": "How have your daily habits changed over the past year?",
+"de": "Wie haben sich deine täglichen Gewohnheiten im letzten Jahr verändert?",
+"es": "¿Cómo han cambiado tus hábitos diarios en el último año?",
+"fr": "Comment tes habitudes quotidiennes ont-elles changé au cours de l'année passée ?",
+"it": "Come sono cambiate le tue abitudini quotidiane nell'ultimo anno?",
+"pt": "Como mudaram os teus hábitos diários no último ano?",
+"pt_BR": "Como seus hábitos diários mudaram no último ano?"
+}
+},
+{
+"id": "daily_checkin-090",
+"lv": "advanced",
+"i18n": {
+"en": "What would you tell your future self about today?",
+"de": "Was würdest du deinem zukünftigen Ich über den heutigen Tag erzählen?",
+"es": "¿Qué le contarías a tu yo del futuro sobre el día de hoy?",
+"fr": "Que dirais-tu à ton futur toi à propos d'aujourd'hui ?",
+"it": "Cosa racconteresti di oggi al te stesso del futuro?",
+"pt": "O que contarias ao teu eu do futuro sobre o dia de hoje?",
+"pt_BR": "O que você contaria para o seu eu do futuro sobre o dia de hoje?"
+}
+},
+{
+"id": "daily_checkin-091",
+"lv": "advanced",
+"i18n": {
+"en": "What does a well-balanced week look like for you?",
+"de": "Wie sieht für dich eine ausgewogene Woche aus?",
+"es": "¿Cómo es para ti una semana equilibrada?",
+"fr": "À quoi ressemble une semaine équilibrée pour toi ?",
+"it": "Com'è per te una settimana equilibrata?",
+"pt": "Como é para ti uma semana equilibrada?",
+"pt_BR": "Como é para você uma semana equilibrada?"
+}
+},
+{
+"id": "daily_checkin-092",
+"lv": "advanced",
+"i18n": {
+"en": "What value do you try to live by every day?",
+"de": "Nach welchem Wert versuchst du jeden Tag zu leben?",
+"es": "¿Qué valor intentas vivir cada día?",
+"fr": "Selon quelle valeur essaies-tu de vivre chaque jour ?",
+"it": "Quale valore cerchi di mettere in pratica ogni giorno?",
+"pt": "Que valor tentas viver todos os dias?",
+"pt_BR": "Qual valor você tenta viver todos os dias?"
+}
+},
+{
+"id": "daily_checkin-093",
+"lv": "advanced",
+"i18n": {
+"en": "If this period of your life were a book chapter, what would it be called?",
+"de": "Wenn diese Phase deines Lebens ein Buchkapitel wäre, wie würde es heißen?",
+"es": "Si esta etapa de tu vida fuera un capítulo de un libro, ¿cómo se llamaría?",
+"fr": "Si cette période de ta vie était un chapitre de livre, quel serait son titre ?",
+"it": "Se questo periodo della tua vita fosse un capitolo di un libro, come si intitolerebbe?",
+"pt": "Se esta fase da tua vida fosse um capítulo de um livro, como se chamaria?",
+"pt_BR": "Se esta fase da sua vida fosse um capítulo de livro, qual seria o título?"
+}
+},
+{
+"id": "daily_checkin-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which milestone would you love to celebrate next year?",
+"de": "Welchen Meilenstein würdest du nächstes Jahr gern feiern?",
+"es": "¿Qué hito te encantaría celebrar el año que viene?",
+"fr": "Quelle étape aimerais-tu fêter l'année prochaine ?",
+"it": "Quale traguardo ti piacerebbe festeggiare l'anno prossimo?",
+"pt": "Que marco gostavas de celebrar no próximo ano?",
+"pt_BR": "Que conquista você adoraria comemorar no ano que vem?"
+}
+},
+{
+"id": "daily_checkin-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which daily ritual keeps you feeling grounded?",
+"de": "Welches tägliche Ritual gibt dir Halt?",
+"es": "¿Qué ritual diario te ayuda a sentirte con los pies en la tierra?",
+"fr": "Quel rituel quotidien t'aide à rester ancré ?",
+"it": "Quale rituale quotidiano ti aiuta a sentirti con i piedi per terra?",
+"pt": "Que ritual diário te ajuda a sentir-te com os pés no chão?",
+"pt_BR": "Qual ritual diário ajuda você a se sentir com os pés no chão?"
+}
+},
+{
+"id": "daily_checkin-096",
+"lv": "advanced",
+"i18n": {
+"en": "What have you learned about yourself by paying attention to your days?",
+"de": "Was hast du über dich gelernt, seit du bewusster auf deine Tage achtest?",
+"es": "¿Qué has aprendido de ti prestando atención a tus días?",
+"fr": "Qu'as-tu appris sur toi en prêtant attention à tes journées ?",
+"it": "Cosa hai imparato su di te facendo attenzione alle tue giornate?",
+"pt": "O que aprendeste sobre ti ao prestar atenção aos teus dias?",
+"pt_BR": "O que você aprendeu sobre si mesmo prestando atenção aos seus dias?"
+}
+},
+{
+"id": "daily_checkin-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which word would you choose as a theme for the year ahead?",
+"de": "Welches Wort würdest du als Motto für das kommende Jahr wählen?",
+"es": "¿Qué palabra elegirías como lema para el año que viene?",
+"fr": "Quel mot choisirais-tu comme thème pour l'année à venir ?",
+"it": "Quale parola sceglieresti come tema per l'anno che verrà?",
+"pt": "Que palavra escolherias como tema para o próximo ano?",
+"pt_BR": "Que palavra você escolheria como tema para o próximo ano?"
+}
+},
+{
+"id": "daily_checkin-098",
+"lv": "advanced",
+"i18n": {
+"en": "How do you know when you need rest rather than more effort?",
+"de": "Woran merkst du, dass du Ruhe brauchst statt noch mehr Einsatz?",
+"es": "¿Cómo sabes cuándo necesitas descansar en lugar de esforzarte más?",
+"fr": "Comment sais-tu que tu as besoin de repos plutôt que de plus d'efforts ?",
+"it": "Come capisci quando hai bisogno di riposo invece di altro impegno?",
+"pt": "Como sabes quando precisas de descansar em vez de te esforçares mais?",
+"pt_BR": "Como você sabe quando precisa descansar em vez de se esforçar mais?"
+}
+},
+{
+"id": "daily_checkin-099",
+"lv": "advanced",
+"i18n": {
+"en": "What's your biggest win this year, and how did you get there?",
+"de": "Was war dein größter Erfolg in diesem Jahr, und wie hast du ihn erreicht?",
+"es": "¿Cuál ha sido tu mayor logro de este año y cómo llegaste a él?",
+"fr": "Quelle est ta plus grande victoire de l'année, et comment y es-tu arrivé ?",
+"it": "Qual è stata la tua vittoria più grande quest'anno, e come ci sei arrivato?",
+"pt": "Qual foi a tua maior vitória deste ano, e como lá chegaste?",
+"pt_BR": "Qual foi sua maior vitória deste ano, e como você chegou lá?"
+}
+},
+{
+"id": "daily_checkin-100",
+"lv": "advanced",
+"i18n": {
+"en": "What advice would you give someone starting a daily check-in habit?",
+"de": "Welchen Rat würdest du jemandem geben, der mit einem täglichen Check-in beginnt?",
+"es": "¿Qué consejo darías a alguien que empieza el hábito de repasar su día?",
+"fr": "Quel conseil donnerais-tu à quelqu'un qui commence à faire le point chaque jour ?",
+"it": "Che consiglio daresti a chi inizia l'abitudine di fare il punto ogni giorno?",
+"pt": "Que conselho darias a alguém que está a começar o hábito de fazer um balanço diário?",
+"pt_BR": "Que conselho você daria a alguém que está começando o hábito de fazer um balanço diário?"
+}
+}
+]
+}

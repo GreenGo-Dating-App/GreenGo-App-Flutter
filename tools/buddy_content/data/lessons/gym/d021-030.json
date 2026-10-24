@@ -1,0 +1,835 @@
+{
+ "topic": "gym",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The goblet squat",
+     "g": "Practise squatting while holding a light weight in front of you.",
+     "p": [
+      "Hold one dumbbell or kettlebell close to your chest with both hands.",
+      "The weight in front helps you stay upright as you sit down.",
+      "Use the same squat pattern you learned yesterday, slow and controlled."
+     ],
+     "q": "How did your bodyweight squats feel yesterday?",
+     "c": "Try 2 sets of 8 goblet squats with a light weight."
+    },
+    "de": {
+     "t": "Die Goblet-Kniebeuge",
+     "g": "Übe die Kniebeuge mit einem leichten Gewicht vor dem Körper.",
+     "p": [
+      "Halte eine Kurzhantel oder Kettlebell mit beiden Händen nah an der Brust.",
+      "Das Gewicht vorne hilft dir, beim Absenken aufrecht zu bleiben.",
+      "Nutze dasselbe Muster wie bei der Kniebeuge ohne Gewicht, langsam und kontrolliert."
+     ],
+     "q": "Wie haben sich deine Kniebeugen ohne Gewicht angefühlt?",
+     "c": "Probier 2 Sätze mit 8 Goblet-Kniebeugen mit leichtem Gewicht."
+    },
+    "es": {
+     "t": "La sentadilla goblet",
+     "g": "Practica la sentadilla sujetando un peso ligero delante de ti.",
+     "p": [
+      "Sujeta una mancuerna o pesa rusa pegada al pecho con las dos manos.",
+      "El peso delante te ayuda a mantenerte erguido al bajar.",
+      "Usa el mismo patrón de sentadilla que aprendiste, lento y controlado."
+     ],
+     "q": "¿Cómo te fueron las sentadillas sin peso?",
+     "c": "Prueba 2 series de 8 sentadillas goblet con un peso ligero."
+    },
+    "fr": {
+     "t": "Le goblet squat",
+     "g": "Entraîne-toi au squat avec une charge légère tenue devant toi.",
+     "p": [
+      "Tiens un haltère ou une kettlebell contre la poitrine à deux mains.",
+      "La charge devant t’aide à rester droit en descendant.",
+      "Reprends le même schéma que le squat au poids du corps, lent et contrôlé."
+     ],
+     "q": "Comment se sont passés tes squats au poids du corps ?",
+     "c": "Essaie 2 séries de 8 goblet squats avec une charge légère."
+    },
+    "it": {
+     "t": "Il goblet squat",
+     "g": "Allenati allo squat tenendo un peso leggero davanti a te.",
+     "p": [
+      "Tieni un manubrio o un kettlebell vicino al petto con entrambe le mani.",
+      "Il peso davanti ti aiuta a restare dritto mentre scendi.",
+      "Usa lo stesso schema dello squat a corpo libero, lento e controllato."
+     ],
+     "q": "Come sono andati gli squat a corpo libero?",
+     "c": "Prova 2 serie da 8 goblet squat con un peso leggero."
+    },
+    "pt": {
+     "t": "O agachamento goblet",
+     "g": "Pratica o agachamento a segurar um peso leve à frente.",
+     "p": [
+      "Segura um halter ou kettlebell junto ao peito com as duas mãos.",
+      "O peso à frente ajuda-te a manter o tronco direito ao descer.",
+      "Usa o mesmo padrão de agachamento, devagar e com controlo."
+     ],
+     "q": "Como correram os agachamentos sem peso?",
+     "c": "Experimenta 2 séries de 8 agachamentos goblet com um peso leve."
+    },
+    "pt_BR": {
+     "t": "O agachamento goblet",
+     "g": "Pratique o agachamento segurando um peso leve à frente do corpo.",
+     "p": [
+      "Segure um halter ou kettlebell junto ao peito com as duas mãos.",
+      "O peso à frente ajuda a manter o tronco ereto na descida.",
+      "Use o mesmo padrão do agachamento livre, devagar e com controle."
+     ],
+     "q": "Como foram seus agachamentos sem peso?",
+     "c": "Experimente 2 séries de 8 agachamentos goblet com um peso leve."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The hip hinge pattern",
+     "g": "Learn to bend at the hips, the basis of deadlifts and swings.",
+     "p": [
+      "Push your hips back while your back stays neutral.",
+      "Knees bend softly, but the movement comes mainly from the hips.",
+      "Feel a gentle stretch at the back of your thighs, then stand tall."
+     ],
+     "q": "Where do you bend down to pick things up during your day?",
+     "c": "Stand near a wall and practise 10 hip hinges touching it with your hips."
+    },
+    "de": {
+     "t": "Das Hüftbeugemuster",
+     "g": "Lerne, aus der Hüfte zu beugen, die Basis für Kreuzheben und Swings.",
+     "p": [
+      "Schieb die Hüfte nach hinten, der Rücken bleibt neutral.",
+      "Die Knie beugen leicht, die Bewegung kommt vor allem aus der Hüfte.",
+      "Spür eine sanfte Dehnung hinten am Oberschenkel, dann richte dich auf."
+     ],
+     "q": "Wo bückst du dich im Alltag, um etwas aufzuheben?",
+     "c": "Stell dich vor eine Wand und übe 10 Hüftbeugen, bis die Hüfte sie berührt."
+    },
+    "es": {
+     "t": "La bisagra de cadera",
+     "g": "Aprende a flexionar desde la cadera, base del peso muerto y los swings.",
+     "p": [
+      "Lleva la cadera hacia atrás mientras la espalda se mantiene neutra.",
+      "Las rodillas se doblan un poco, pero el movimiento sale de la cadera.",
+      "Nota un estiramiento suave detrás de los muslos y vuelve a subir."
+     ],
+     "q": "¿Cuándo te agachas a recoger cosas durante el día?",
+     "c": "Ponte cerca de una pared y haz 10 bisagras tocándola con la cadera."
+    },
+    "fr": {
+     "t": "La charnière de hanche",
+     "g": "Apprends à fléchir depuis les hanches, base du soulevé de terre et du swing.",
+     "p": [
+      "Pousse les hanches vers l’arrière en gardant le dos neutre.",
+      "Les genoux fléchissent un peu, mais le mouvement vient surtout des hanches.",
+      "Sens un léger étirement à l’arrière des cuisses, puis redresse-toi."
+     ],
+     "q": "Quand te penches-tu pour ramasser quelque chose dans ta journée ?",
+     "c": "Devant un mur, fais 10 charnières en le touchant avec les fesses."
+    },
+    "it": {
+     "t": "Il movimento a cerniera dell’anca",
+     "g": "Impara a piegarti dalle anche, base di stacchi e swing.",
+     "p": [
+      "Spingi il bacino indietro mantenendo la schiena neutra.",
+      "Le ginocchia si piegano un po’, ma il movimento parte dalle anche.",
+      "Senti un leggero allungamento dietro le cosce, poi torna dritto."
+     ],
+     "q": "Quando ti pieghi per raccogliere qualcosa durante la giornata?",
+     "c": "Vicino a un muro, fai 10 cerniere toccandolo con i glutei."
+    },
+    "pt": {
+     "t": "A dobradiça da anca",
+     "g": "Aprende a dobrar a partir da anca, base do peso morto e do swing.",
+     "p": [
+      "Leva a anca para trás com as costas neutras.",
+      "Os joelhos dobram ligeiramente, mas o movimento vem sobretudo da anca.",
+      "Sente um alongamento suave atrás das coxas e volta a subir."
+     ],
+     "q": "Quando te baixas para apanhar coisas ao longo do dia?",
+     "c": "Perto de uma parede, faz 10 dobradiças a tocá-la com a anca."
+    },
+    "pt_BR": {
+     "t": "A dobradiça de quadril",
+     "g": "Aprenda a flexionar a partir do quadril, base do levantamento terra e do swing.",
+     "p": [
+      "Leve o quadril para trás mantendo as costas neutras.",
+      "Os joelhos dobram levemente, mas o movimento vem principalmente do quadril.",
+      "Sinta um alongamento suave atrás das coxas e volte a subir."
+     ],
+     "q": "Quando você se abaixa para pegar coisas no dia a dia?",
+     "c": "Perto de uma parede, faça 10 dobradiças encostando o quadril nela."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Glute bridges",
+     "g": "Feel your hip muscles working with a simple floor move.",
+     "p": [
+      "Lie on your back, knees bent, feet flat and hip width apart.",
+      "Press through your heels to lift your hips into a straight line.",
+      "Pause briefly at the top, then lower slowly."
+     ],
+     "q": "Do you spend a lot of your day sitting?",
+     "c": "Do 2 sets of 12 glute bridges with a one-second pause at the top."
+    },
+    "de": {
+     "t": "Glute Bridges",
+     "g": "Spür deine Hüftmuskeln mit einer einfachen Bodenübung.",
+     "p": [
+      "Leg dich auf den Rücken, Knie gebeugt, Füße hüftbreit flach am Boden.",
+      "Drück über die Fersen die Hüfte hoch, bis eine gerade Linie entsteht.",
+      "Halte oben kurz inne und senk dann langsam ab."
+     ],
+     "q": "Verbringst du einen großen Teil des Tages im Sitzen?",
+     "c": "Mach 2 Sätze mit 12 Glute Bridges und einer Sekunde Pause oben."
+    },
+    "es": {
+     "t": "El puente de glúteos",
+     "g": "Siente trabajar los músculos de la cadera con un ejercicio sencillo en el suelo.",
+     "p": [
+      "Túmbate boca arriba, rodillas dobladas, pies apoyados a la anchura de la cadera.",
+      "Empuja con los talones y sube la cadera hasta formar una línea recta.",
+      "Haz una breve pausa arriba y baja despacio."
+     ],
+     "q": "¿Pasas gran parte del día sentado?",
+     "c": "Haz 2 series de 12 puentes con una pausa de un segundo arriba."
+    },
+    "fr": {
+     "t": "Le pont fessier",
+     "g": "Sens tes muscles des hanches travailler avec un exercice simple au sol.",
+     "p": [
+      "Allonge-toi sur le dos, genoux fléchis, pieds à plat largeur de hanches.",
+      "Pousse dans les talons pour monter le bassin en ligne droite.",
+      "Marque une courte pause en haut, puis redescends lentement."
+     ],
+     "q": "Passes-tu une grande partie de ta journée assis ?",
+     "c": "Fais 2 séries de 12 ponts avec une seconde de pause en haut."
+    },
+    "it": {
+     "t": "Il ponte glutei",
+     "g": "Senti lavorare i muscoli delle anche con un semplice esercizio a terra.",
+     "p": [
+      "Sdraiati sulla schiena, ginocchia piegate, piedi a terra alla larghezza delle anche.",
+      "Spingi con i talloni e solleva il bacino fino a formare una linea dritta.",
+      "Fai una breve pausa in alto, poi scendi lentamente."
+     ],
+     "q": "Passi gran parte della giornata seduto?",
+     "c": "Fai 2 serie da 12 ponti con un secondo di pausa in alto."
+    },
+    "pt": {
+     "t": "A ponte de glúteos",
+     "g": "Sente os músculos da anca a trabalhar com um exercício simples no chão.",
+     "p": [
+      "Deita-te de costas, joelhos dobrados, pés apoiados à largura da anca.",
+      "Empurra com os calcanhares e sobe a anca até ficar em linha reta.",
+      "Faz uma pausa breve em cima e desce devagar."
+     ],
+     "q": "Passas grande parte do dia sentado?",
+     "c": "Faz 2 séries de 12 pontes com um segundo de pausa em cima."
+    },
+    "pt_BR": {
+     "t": "Elevação pélvica no chão",
+     "g": "Sinta os músculos do quadril trabalhando com um exercício simples no chão.",
+     "p": [
+      "Deite de costas, joelhos dobrados, pés apoiados na largura do quadril.",
+      "Empurre pelos calcanhares e suba o quadril até formar uma linha reta.",
+      "Faça uma pausa breve em cima e desça devagar."
+     ],
+     "q": "Você passa boa parte do dia sentado?",
+     "c": "Faça 2 séries de 12 elevações com um segundo de pausa no alto."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Push-ups and their variations",
+     "g": "Find a push-up version that fits your level today.",
+     "p": [
+      "Incline push-ups use a bench or wall and are the gentlest start.",
+      "Knee push-ups are a step up; full push-ups come later.",
+      "Keep a straight line from head to knees or feet, core braced."
+     ],
+     "q": "Which push-up version do you think suits you now?",
+     "c": "Do 2 sets of push-ups at the version where you can do 6 to 10 clean reps."
+    },
+    "de": {
+     "t": "Liegestütze und Varianten",
+     "g": "Finde die Liegestütz-Variante, die heute zu dir passt.",
+     "p": [
+      "Erhöhte Liegestütze an Bank oder Wand sind der sanfteste Einstieg.",
+      "Liegestütze auf den Knien sind der nächste Schritt, volle kommen später.",
+      "Halte eine gerade Linie von Kopf bis Knie oder Füße, Mitte angespannt."
+     ],
+     "q": "Welche Variante passt deiner Meinung nach gerade zu dir?",
+     "c": "Mach 2 Sätze in der Variante, bei der 6 bis 10 saubere Wiederholungen gehen."
+    },
+    "es": {
+     "t": "Flexiones y sus variantes",
+     "g": "Encuentra la versión de flexión que encaja con tu nivel hoy.",
+     "p": [
+      "Las flexiones inclinadas en banco o pared son el inicio más suave.",
+      "Las flexiones de rodillas son el siguiente paso; las completas llegan después.",
+      "Mantén una línea recta de la cabeza a rodillas o pies, con el core activo."
+     ],
+     "q": "¿Qué versión de flexión crees que te va ahora?",
+     "c": "Haz 2 series en la versión que te permita 6 a 10 repeticiones limpias."
+    },
+    "fr": {
+     "t": "Les pompes et leurs variantes",
+     "g": "Trouve la version de pompe adaptée à ton niveau aujourd’hui.",
+     "p": [
+      "Les pompes inclinées contre un banc ou un mur sont le départ le plus doux.",
+      "Les pompes sur les genoux sont l’étape suivante ; les complètes viendront ensuite.",
+      "Garde une ligne droite de la tête aux genoux ou aux pieds, tronc gainé."
+     ],
+     "q": "Quelle version de pompe te semble adaptée en ce moment ?",
+     "c": "Fais 2 séries dans la version où tu réussis 6 à 10 répétitions propres."
+    },
+    "it": {
+     "t": "Piegamenti e varianti",
+     "g": "Trova la versione di piegamento adatta al tuo livello oggi.",
+     "p": [
+      "I piegamenti inclinati su panca o muro sono l’inizio più dolce.",
+      "Quelli sulle ginocchia sono il passo successivo; quelli completi arrivano dopo.",
+      "Mantieni una linea dritta dalla testa alle ginocchia o ai piedi, core attivo."
+     ],
+     "q": "Quale versione pensi sia adatta a te ora?",
+     "c": "Fai 2 serie nella versione in cui riesci a fare 6-10 ripetizioni pulite."
+    },
+    "pt": {
+     "t": "Flexões e variantes",
+     "g": "Encontra a versão de flexão que se ajusta ao teu nível hoje.",
+     "p": [
+      "As flexões inclinadas num banco ou parede são o início mais suave.",
+      "As flexões de joelhos são o passo seguinte; as completas vêm depois.",
+      "Mantém uma linha reta da cabeça aos joelhos ou pés, com o core ativo."
+     ],
+     "q": "Que versão de flexão achas que te serve agora?",
+     "c": "Faz 2 séries na versão em que consegues 6 a 10 repetições limpas."
+    },
+    "pt_BR": {
+     "t": "Flexões e suas variações",
+     "g": "Encontre a versão de flexão que combina com seu nível hoje.",
+     "p": [
+      "Flexões inclinadas no banco ou na parede são o começo mais suave.",
+      "Flexões com joelhos apoiados são o passo seguinte; as completas vêm depois.",
+      "Mantenha uma linha reta da cabeça aos joelhos ou pés, com o core ativo."
+     ],
+     "q": "Qual versão de flexão você acha que combina com você agora?",
+     "c": "Faça 2 séries na versão em que você consegue 6 a 10 repetições limpas."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The plank",
+     "g": "Build core endurance by holding a steady line.",
+     "p": [
+      "Forearms under shoulders, body straight from head to heels.",
+      "Brace your core and squeeze your glutes gently.",
+      "Short, quality holds beat long, sagging ones."
+     ],
+     "q": "How long do you think you can hold a good plank?",
+     "c": "Do 3 planks of 15 to 20 seconds with perfect form."
+    },
+    "de": {
+     "t": "Der Unterarmstütz",
+     "g": "Bau Rumpfausdauer auf, indem du eine stabile Linie hältst.",
+     "p": [
+      "Unterarme unter den Schultern, Körper gerade von Kopf bis Ferse.",
+      "Spann die Mitte an und drück den Po leicht zusammen.",
+      "Kurze, saubere Halte schlagen lange mit durchhängender Hüfte."
+     ],
+     "q": "Wie lange kannst du wohl einen sauberen Stütz halten?",
+     "c": "Mach 3 Stütze von 15 bis 20 Sekunden mit perfekter Haltung."
+    },
+    "es": {
+     "t": "La plancha",
+     "g": "Gana resistencia en el core manteniendo una línea firme.",
+     "p": [
+      "Antebrazos bajo los hombros, cuerpo recto de la cabeza a los talones.",
+      "Activa el core y aprieta suavemente los glúteos.",
+      "Mejor aguantes cortos y de calidad que largos y hundidos."
+     ],
+     "q": "¿Cuánto tiempo crees que aguantas una buena plancha?",
+     "c": "Haz 3 planchas de 15 a 20 segundos con técnica perfecta."
+    },
+    "fr": {
+     "t": "La planche",
+     "g": "Développe l’endurance du tronc en tenant une ligne stable.",
+     "p": [
+      "Avant-bras sous les épaules, corps droit de la tête aux talons.",
+      "Gaine ton tronc et serre légèrement les fessiers.",
+      "Des maintiens courts et propres valent mieux que longs et affaissés."
+     ],
+     "q": "Combien de temps penses-tu tenir une bonne planche ?",
+     "c": "Fais 3 planches de 15 à 20 secondes avec une forme parfaite."
+    },
+    "it": {
+     "t": "Il plank",
+     "g": "Costruisci resistenza nel core mantenendo una linea stabile.",
+     "p": [
+      "Avambracci sotto le spalle, corpo dritto dalla testa ai talloni.",
+      "Attiva il core e stringi leggermente i glutei.",
+      "Tenute brevi e pulite valgono più di quelle lunghe e cedute."
+     ],
+     "q": "Quanto pensi di riuscire a tenere un buon plank?",
+     "c": "Fai 3 plank da 15-20 secondi con forma perfetta."
+    },
+    "pt": {
+     "t": "A prancha",
+     "g": "Ganha resistência no core ao manter uma linha estável.",
+     "p": [
+      "Antebraços por baixo dos ombros, corpo reto da cabeça aos calcanhares.",
+      "Ativa o core e contrai ligeiramente os glúteos.",
+      "Mais vale aguentar pouco e bem do que muito e com a anca a cair."
+     ],
+     "q": "Quanto tempo achas que aguentas uma boa prancha?",
+     "c": "Faz 3 pranchas de 15 a 20 segundos com técnica perfeita."
+    },
+    "pt_BR": {
+     "t": "A prancha",
+     "g": "Ganhe resistência no core mantendo uma linha estável.",
+     "p": [
+      "Antebraços embaixo dos ombros, corpo reto da cabeça aos calcanhares.",
+      "Ative o core e contraia levemente os glúteos.",
+      "Melhor segurar pouco tempo e bem do que muito com o quadril caindo."
+     ],
+     "q": "Quanto tempo você acha que segura uma boa prancha?",
+     "c": "Faça 3 pranchas de 15 a 20 segundos com técnica perfeita."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Machine chest press",
+     "g": "Learn a guided pressing movement on a machine.",
+     "p": [
+      "Adjust the seat so the handles line up with the middle of your chest.",
+      "Press forward smoothly without locking your elbows hard.",
+      "Return slowly, keeping your shoulders down and back."
+     ],
+     "q": "Have you tried any machines at the gym yet?",
+     "c": "Do 2 sets of 10 on the chest press with a light setting."
+    },
+    "de": {
+     "t": "Brustpresse am Gerät",
+     "g": "Lerne eine geführte Druckbewegung an der Maschine.",
+     "p": [
+      "Stell den Sitz so ein, dass die Griffe auf Höhe der Brustmitte sind.",
+      "Drück gleichmäßig nach vorn, ohne die Ellbogen hart durchzustrecken.",
+      "Geh langsam zurück, Schultern unten und hinten."
+     ],
+     "q": "Hast du im Studio schon Geräte ausprobiert?",
+     "c": "Mach 2 Sätze mit 10 Wiederholungen an der Brustpresse, leicht eingestellt."
+    },
+    "es": {
+     "t": "Press de pecho en máquina",
+     "g": "Aprende un movimiento de empuje guiado en máquina.",
+     "p": [
+      "Ajusta el asiento para que las asas queden a la altura del centro del pecho.",
+      "Empuja con suavidad sin bloquear con fuerza los codos.",
+      "Vuelve despacio, con los hombros bajos y hacia atrás."
+     ],
+     "q": "¿Ya has probado alguna máquina en el gimnasio?",
+     "c": "Haz 2 series de 10 en el press de pecho con un peso ligero."
+    },
+    "fr": {
+     "t": "Le développé à la machine",
+     "g": "Apprends un mouvement de poussée guidé sur machine.",
+     "p": [
+      "Règle le siège pour que les poignées soient au milieu de ta poitrine.",
+      "Pousse en douceur sans verrouiller brutalement les coudes.",
+      "Reviens lentement, épaules basses et en arrière."
+     ],
+     "q": "As-tu déjà essayé des machines en salle ?",
+     "c": "Fais 2 séries de 10 au développé machine avec une charge légère."
+    },
+    "it": {
+     "t": "Chest press alla macchina",
+     "g": "Impara un movimento di spinta guidato alla macchina.",
+     "p": [
+      "Regola il sedile in modo che le maniglie siano a metà petto.",
+      "Spingi in modo fluido senza bloccare con forza i gomiti.",
+      "Torna lentamente, spalle basse e indietro."
+     ],
+     "q": "Hai già provato qualche macchina in palestra?",
+     "c": "Fai 2 serie da 10 alla chest press con un carico leggero."
+    },
+    "pt": {
+     "t": "Supino na máquina",
+     "g": "Aprende um movimento de empurrar guiado na máquina.",
+     "p": [
+      "Ajusta o banco para as pegas ficarem a meio do peito.",
+      "Empurra com suavidade sem trancar os cotovelos com força.",
+      "Volta devagar, ombros baixos e para trás."
+     ],
+     "q": "Já experimentaste alguma máquina no ginásio?",
+     "c": "Faz 2 séries de 10 no supino na máquina com um peso leve."
+    },
+    "pt_BR": {
+     "t": "Supino na máquina",
+     "g": "Aprenda um movimento de empurrar guiado no aparelho.",
+     "p": [
+      "Ajuste o banco para as pegadas ficarem na altura do meio do peito.",
+      "Empurre com suavidade sem travar os cotovelos com força.",
+      "Volte devagar, com os ombros baixos e para trás."
+     ],
+     "q": "Você já experimentou algum aparelho na academia?",
+     "c": "Faça 2 séries de 10 no supino máquina com carga leve."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lat pulldown",
+     "g": "Work your upper back by pulling a bar down with control.",
+     "p": [
+      "Sit with thighs secured under the pads, grip a bit wider than shoulders.",
+      "Pull the bar towards your upper chest, leading with your elbows.",
+      "Let it rise slowly until your arms are long again."
+     ],
+     "q": "Do you feel your upper back working in daily tasks?",
+     "c": "Do 2 sets of 10 lat pulldowns, slow on the way up."
+    },
+    "de": {
+     "t": "Latzug",
+     "g": "Trainiere den oberen Rücken, indem du eine Stange kontrolliert herunterziehst.",
+     "p": [
+      "Setz dich mit den Oberschenkeln unter die Polster, Griff etwas breiter als die Schultern.",
+      "Zieh die Stange zur oberen Brust, die Ellbogen führen.",
+      "Lass sie langsam hoch, bis die Arme wieder lang sind."
+     ],
+     "q": "Spürst du deinen oberen Rücken bei Alltagsaufgaben?",
+     "c": "Mach 2 Sätze mit 10 Latzügen, langsam nach oben."
+    },
+    "es": {
+     "t": "Jalón al pecho",
+     "g": "Trabaja la espalda alta tirando de una barra hacia abajo con control.",
+     "p": [
+      "Siéntate con los muslos sujetos bajo los rodillos y agarre algo más ancho que los hombros.",
+      "Lleva la barra hacia la parte alta del pecho guiando con los codos.",
+      "Deja que suba despacio hasta estirar los brazos."
+     ],
+     "q": "¿Notas trabajar la espalda alta en tareas cotidianas?",
+     "c": "Haz 2 series de 10 jalones, despacio al subir."
+    },
+    "fr": {
+     "t": "Le tirage vertical",
+     "g": "Travaille le haut du dos en tirant une barre vers le bas avec contrôle.",
+     "p": [
+      "Assieds-toi cuisses calées sous les boudins, prise un peu plus large que les épaules.",
+      "Tire la barre vers le haut de la poitrine en menant avec les coudes.",
+      "Laisse-la remonter lentement jusqu’à bras tendus."
+     ],
+     "q": "Sens-tu ton haut du dos travailler au quotidien ?",
+     "c": "Fais 2 séries de 10 tirages, lentement à la remontée."
+    },
+    "it": {
+     "t": "Lat machine",
+     "g": "Allena la parte alta della schiena tirando una barra verso il basso con controllo.",
+     "p": [
+      "Siediti con le cosce bloccate sotto i cuscinetti, presa poco più larga delle spalle.",
+      "Porta la barra verso la parte alta del petto guidando con i gomiti.",
+      "Lasciala risalire lentamente finché le braccia sono distese."
+     ],
+     "q": "Senti lavorare la parte alta della schiena nelle attività quotidiane?",
+     "c": "Fai 2 serie da 10 alla lat machine, lenti in risalita."
+    },
+    "pt": {
+     "t": "Puxada na polia",
+     "g": "Trabalha a parte alta das costas ao puxar uma barra para baixo com controlo.",
+     "p": [
+      "Senta-te com as coxas presas sob os rolos e pega um pouco mais larga que os ombros.",
+      "Puxa a barra até à parte alta do peito, a guiar com os cotovelos.",
+      "Deixa-a subir devagar até os braços ficarem esticados."
+     ],
+     "q": "Sentes as costas a trabalhar em tarefas do dia a dia?",
+     "c": "Faz 2 séries de 10 puxadas, devagar na subida."
+    },
+    "pt_BR": {
+     "t": "Puxada alta",
+     "g": "Trabalhe a parte alta das costas puxando uma barra para baixo com controle.",
+     "p": [
+      "Sente com as coxas presas sob os apoios e pegada um pouco mais larga que os ombros.",
+      "Puxe a barra em direção à parte alta do peito, guiando com os cotovelos.",
+      "Deixe a barra subir devagar até os braços ficarem estendidos."
+     ],
+     "q": "Você sente as costas trabalhando nas tarefas do dia a dia?",
+     "c": "Faça 2 séries de 10 puxadas, devagar na subida."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seated cable row",
+     "g": "Train your posture muscles with a guided rowing movement.",
+     "p": [
+      "Sit tall with a slight bend in the knees and a neutral back.",
+      "Pull the handle to your lower ribs, squeezing your shoulder blades.",
+      "Reach forward slowly without rounding your back."
+     ],
+     "q": "How is your posture after a long day of sitting?",
+     "c": "Do 2 sets of 10 cable rows, pausing one second at your ribs."
+    },
+    "de": {
+     "t": "Rudern am Kabelzug",
+     "g": "Trainiere deine Haltungsmuskeln mit einer geführten Ruderbewegung.",
+     "p": [
+      "Sitz aufrecht, Knie leicht gebeugt, Rücken neutral.",
+      "Zieh den Griff zu den unteren Rippen und führ die Schulterblätter zusammen.",
+      "Geh langsam nach vorn, ohne den Rücken zu runden."
+     ],
+     "q": "Wie ist deine Haltung nach einem langen Tag im Sitzen?",
+     "c": "Mach 2 Sätze mit 10 Ruderzügen, eine Sekunde Pause an den Rippen."
+    },
+    "es": {
+     "t": "Remo sentado en polea",
+     "g": "Entrena los músculos de la postura con un remo guiado.",
+     "p": [
+      "Siéntate erguido, rodillas algo flexionadas y espalda neutra.",
+      "Lleva el agarre a las costillas bajas juntando las escápulas.",
+      "Vuelve adelante despacio sin redondear la espalda."
+     ],
+     "q": "¿Cómo está tu postura tras un largo día sentado?",
+     "c": "Haz 2 series de 10 remos con una pausa de un segundo en las costillas."
+    },
+    "fr": {
+     "t": "Le tirage horizontal assis",
+     "g": "Renforce tes muscles posturaux avec un rowing guidé.",
+     "p": [
+      "Assieds-toi droit, genoux légèrement fléchis, dos neutre.",
+      "Tire la poignée vers le bas des côtes en serrant les omoplates.",
+      "Reviens lentement vers l’avant sans arrondir le dos."
+     ],
+     "q": "Comment est ta posture après une longue journée assis ?",
+     "c": "Fais 2 séries de 10 tirages avec une seconde de pause aux côtes."
+    },
+    "it": {
+     "t": "Pulley basso",
+     "g": "Allena i muscoli della postura con un rematore guidato.",
+     "p": [
+      "Siediti dritto, ginocchia leggermente piegate e schiena neutra.",
+      "Porta la maniglia verso le costole basse stringendo le scapole.",
+      "Torna avanti lentamente senza curvare la schiena."
+     ],
+     "q": "Com’è la tua postura dopo una lunga giornata seduto?",
+     "c": "Fai 2 serie da 10 al pulley con un secondo di pausa alle costole."
+    },
+    "pt": {
+     "t": "Remada sentada na polia",
+     "g": "Treina os músculos da postura com uma remada guiada.",
+     "p": [
+      "Senta-te direito, joelhos ligeiramente dobrados e costas neutras.",
+      "Puxa a pega até às costelas baixas, a juntar as omoplatas.",
+      "Volta à frente devagar sem arredondar as costas."
+     ],
+     "q": "Como está a tua postura depois de um longo dia sentado?",
+     "c": "Faz 2 séries de 10 remadas com um segundo de pausa nas costelas."
+    },
+    "pt_BR": {
+     "t": "Remada sentada no cabo",
+     "g": "Treine os músculos da postura com uma remada guiada.",
+     "p": [
+      "Sente-se ereto, joelhos levemente dobrados e costas neutras.",
+      "Puxe o puxador até as costelas baixas, aproximando as escápulas.",
+      "Volte à frente devagar sem arredondar as costas."
+     ],
+     "q": "Como fica sua postura depois de um longo dia sentado?",
+     "c": "Faça 2 séries de 10 remadas com um segundo de pausa nas costelas."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leg press basics",
+     "g": "Train your legs on a machine that supports your back.",
+     "p": [
+      "Feet hip width on the platform, back and hips pressed into the seat.",
+      "Lower with control until knees are comfortably bent, not pulling hips up.",
+      "Press back up without snapping your knees straight."
+     ],
+     "q": "How do your legs feel after a day on your feet?",
+     "c": "Do 2 sets of 10 leg presses with a light, comfortable load."
+    },
+    "de": {
+     "t": "Grundlagen der Beinpresse",
+     "g": "Trainiere die Beine an einem Gerät, das den Rücken stützt.",
+     "p": [
+      "Füße hüftbreit auf der Platte, Rücken und Hüfte fest im Sitz.",
+      "Kontrolliert absenken, bis die Knie angenehm gebeugt sind, ohne dass die Hüfte abhebt.",
+      "Drück zurück, ohne die Knie ruckartig durchzustrecken."
+     ],
+     "q": "Wie fühlen sich deine Beine nach einem Tag auf den Füßen an?",
+     "c": "Mach 2 Sätze mit 10 Wiederholungen an der Beinpresse, leicht und angenehm."
+    },
+    "es": {
+     "t": "Prensa de piernas básica",
+     "g": "Entrena las piernas en una máquina que apoya tu espalda.",
+     "p": [
+      "Pies a la anchura de la cadera en la plataforma, espalda y cadera pegadas al asiento.",
+      "Baja con control hasta doblar cómodamente las rodillas, sin despegar la cadera.",
+      "Empuja de nuevo sin bloquear de golpe las rodillas."
+     ],
+     "q": "¿Cómo sientes las piernas tras un día de pie?",
+     "c": "Haz 2 series de 10 en la prensa con un peso ligero y cómodo."
+    },
+    "fr": {
+     "t": "Les bases de la presse à cuisses",
+     "g": "Travaille les jambes sur une machine qui soutient ton dos.",
+     "p": [
+      "Pieds largeur de hanches sur la plateforme, dos et bassin collés au siège.",
+      "Descends avec contrôle jusqu’à une flexion confortable, sans décoller le bassin.",
+      "Repousse sans verrouiller brusquement les genoux."
+     ],
+     "q": "Comment se sentent tes jambes après une journée debout ?",
+     "c": "Fais 2 séries de 10 à la presse avec une charge légère et confortable."
+    },
+    "it": {
+     "t": "Basi della leg press",
+     "g": "Allena le gambe su una macchina che sostiene la schiena.",
+     "p": [
+      "Piedi alla larghezza delle anche sulla pedana, schiena e bacino ben appoggiati.",
+      "Scendi con controllo finché le ginocchia sono comodamente piegate, senza staccare il bacino.",
+      "Spingi di nuovo senza bloccare di colpo le ginocchia."
+     ],
+     "q": "Come senti le gambe dopo una giornata in piedi?",
+     "c": "Fai 2 serie da 10 alla leg press con un carico leggero e comodo."
+    },
+    "pt": {
+     "t": "Bases da prensa de pernas",
+     "g": "Treina as pernas numa máquina que apoia as costas.",
+     "p": [
+      "Pés à largura da anca na plataforma, costas e anca encostadas ao banco.",
+      "Desce com controlo até dobrar os joelhos confortavelmente, sem levantar a anca.",
+      "Empurra de volta sem trancar os joelhos de repente."
+     ],
+     "q": "Como sentes as pernas depois de um dia de pé?",
+     "c": "Faz 2 séries de 10 na prensa com um peso leve e confortável."
+    },
+    "pt_BR": {
+     "t": "Noções de leg press",
+     "g": "Treine as pernas em um aparelho que apoia as costas.",
+     "p": [
+      "Pés na largura do quadril na plataforma, costas e quadril colados no banco.",
+      "Desça com controle até dobrar os joelhos confortavelmente, sem tirar o quadril do banco.",
+      "Empurre de volta sem travar os joelhos de repente."
+     ],
+     "q": "Como ficam suas pernas depois de um dia em pé?",
+     "c": "Faça 2 séries de 10 no leg press com carga leve e confortável."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back at etiquette, warm-ups and your first movements.",
+     "p": [
+      "You know the gym areas, the basic rules and how to warm up.",
+      "You learned form basics: neutral spine, bracing and breathing.",
+      "You tried squats, hinges, push-ups, planks and key machines."
+     ],
+     "q": "Which movement from this month did you enjoy most?",
+     "c": "Do a mini session: warm-up, squats, push-ups, rows and a cool-down."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Schau zurück auf Etikette, Aufwärmen und deine ersten Übungen.",
+     "p": [
+      "Du kennst die Bereiche des Studios, die Grundregeln und das Aufwärmen.",
+      "Du hast Technik-Basics gelernt: neutraler Rücken, Anspannen und Atmen.",
+      "Du hast Kniebeugen, Hüftbeugen, Liegestütze, Stütz und wichtige Geräte probiert."
+     ],
+     "q": "Welche Übung aus diesem Monat hat dir am meisten Spaß gemacht?",
+     "c": "Mach eine Mini-Einheit: Aufwärmen, Kniebeugen, Liegestütze, Rudern und Cool-down."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasa las normas, el calentamiento y tus primeros movimientos.",
+     "p": [
+      "Ya conoces las zonas del gimnasio, las normas básicas y cómo calentar.",
+      "Aprendiste bases de técnica: columna neutra, activar el core y respirar.",
+      "Probaste sentadillas, bisagras, flexiones, planchas y máquinas clave."
+     ],
+     "q": "¿Qué movimiento de este mes has disfrutado más?",
+     "c": "Haz una mini sesión: calentamiento, sentadillas, flexiones, remo y vuelta a la calma."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Reviens sur le savoir-vivre, l’échauffement et tes premiers mouvements.",
+     "p": [
+      "Tu connais les zones de la salle, les règles de base et l’échauffement.",
+      "Tu as appris les bases techniques : dos neutre, gainage et respiration.",
+      "Tu as essayé squats, charnières, pompes, planches et machines clés."
+     ],
+     "q": "Quel mouvement de ce mois as-tu préféré ?",
+     "c": "Fais une mini séance : échauffement, squats, pompes, tirage et retour au calme."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripassa galateo, riscaldamento e i tuoi primi movimenti.",
+     "p": [
+      "Conosci le aree della palestra, le regole base e come scaldarti.",
+      "Hai imparato le basi della tecnica: schiena neutra, core attivo e respiro.",
+      "Hai provato squat, cerniere, piegamenti, plank e macchine principali."
+     ],
+     "q": "Quale movimento di questo mese ti è piaciuto di più?",
+     "c": "Fai una mini seduta: riscaldamento, squat, piegamenti, rematore e defaticamento."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Revê as regras, o aquecimento e os teus primeiros movimentos.",
+     "p": [
+      "Já conheces as zonas do ginásio, as regras básicas e como aquecer.",
+      "Aprendeste bases de técnica: coluna neutra, ativar o core e respirar.",
+      "Experimentaste agachamentos, dobradiças, flexões, pranchas e máquinas chave."
+     ],
+     "q": "Que movimento deste mês gostaste mais de fazer?",
+     "c": "Faz um mini treino: aquecimento, agachamentos, flexões, remada e retorno à calma."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Relembre a etiqueta, o aquecimento e seus primeiros movimentos.",
+     "p": [
+      "Você já conhece as áreas da academia, as regras básicas e como aquecer.",
+      "Aprendeu bases de técnica: coluna neutra, core ativo e respiração.",
+      "Testou agachamentos, dobradiças, flexões, pranchas e aparelhos principais."
+     ],
+     "q": "Qual movimento deste mês você mais curtiu?",
+     "c": "Faça um mini treino: aquecimento, agachamento, flexão, remada e desaquecimento."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1305 @@
+{
+ "topic": "joke_buddy",
+ "questions": [
+  {
+   "id": "joke_buddy-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a joke that always makes you laugh, no matter how often you hear it?",
+    "de": "Welcher Witz bringt dich immer zum Lachen, egal wie oft du ihn hörst?",
+    "es": "¿Qué chiste siempre te hace reír, por muchas veces que lo oigas?",
+    "fr": "Quelle blague te fait toujours rire, même après l'avoir entendue cent fois ?",
+    "it": "Qual è una barzelletta che ti fa sempre ridere, anche se l'hai sentita mille volte?",
+    "pt": "Que piada te faz sempre rir, por mais vezes que a ouças?",
+    "pt_BR": "Qual piada sempre faz você rir, não importa quantas vezes ouça?"
+   }
+  },
+  {
+   "id": "joke_buddy-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Who is the funniest person you know, and what makes them funny?",
+    "de": "Wer ist der lustigste Mensch, den du kennst, und was macht ihn so witzig?",
+    "es": "¿Quién es la persona más graciosa que conoces y qué la hace tan divertida?",
+    "fr": "Qui est la personne la plus drôle que tu connais, et qu'est-ce qui la rend drôle ?",
+    "it": "Chi è la persona più spiritosa che conosci, e cosa la rende così divertente?",
+    "pt": "Quem é a pessoa mais engraçada que conheces, e o que a torna tão divertida?",
+    "pt_BR": "Quem é a pessoa mais engraçada que você conhece, e o que a torna tão divertida?"
+   }
+  },
+  {
+   "id": "joke_buddy-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer puns, riddles or funny stories?",
+    "de": "Magst du lieber Wortspiele, Rätsel oder lustige Geschichten?",
+    "es": "¿Prefieres los juegos de palabras, las adivinanzas o las historias divertidas?",
+    "fr": "Tu préfères les jeux de mots, les devinettes ou les histoires drôles ?",
+    "it": "Preferisci i giochi di parole, gli indovinelli o le storie divertenti?",
+    "pt": "Preferes trocadilhos, adivinhas ou histórias engraçadas?",
+    "pt_BR": "Você prefere trocadilhos, charadas ou histórias engraçadas?"
+   }
+  },
+  {
+   "id": "joke_buddy-004",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you describe your laugh?",
+    "de": "Wie würdest du dein Lachen beschreiben?",
+    "es": "¿Cómo describirías tu risa?",
+    "fr": "Comment décrirais-tu ton rire ?",
+    "it": "Come descriveresti la tua risata?",
+    "pt": "Como descreverias o teu riso?",
+    "pt_BR": "Como você descreveria a sua risada?"
+   }
+  },
+  {
+   "id": "joke_buddy-005",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the funniest thing that happened to you recently?",
+    "de": "Was ist dir in letzter Zeit Lustiges passiert?",
+    "es": "¿Qué es lo más gracioso que te ha pasado últimamente?",
+    "fr": "Quelle est la chose la plus drôle qui te soit arrivée récemment ?",
+    "it": "Qual è la cosa più buffa che ti è successa di recente?",
+    "pt": "Qual foi a coisa mais engraçada que te aconteceu nos últimos tempos?",
+    "pt_BR": "Qual foi a coisa mais engraçada que aconteceu com você recentemente?"
+   }
+  },
+  {
+   "id": "joke_buddy-006",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a comedy film or series you love?",
+    "de": "Welche Komödie oder lustige Serie liebst du?",
+    "es": "¿Qué película o serie de comedia te encanta?",
+    "fr": "Quel film ou quelle série comique adores-tu ?",
+    "it": "Qual è un film o una serie comica che ami?",
+    "pt": "Que filme ou série de comédia adoras?",
+    "pt_BR": "Qual filme ou série de comédia você adora?"
+   }
+  },
+  {
+   "id": "joke_buddy-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a joke from your language that is hard to translate?",
+    "de": "Gibt es einen Witz aus deiner Sprache, der sich kaum übersetzen lässt?",
+    "es": "¿Hay algún chiste de tu idioma que sea difícil de traducir?",
+    "fr": "Y a-t-il une blague dans ta langue qui est difficile à traduire ?",
+    "it": "C'è una barzelletta della tua lingua difficile da tradurre?",
+    "pt": "Há alguma piada da tua língua que seja difícil de traduzir?",
+    "pt_BR": "Existe alguma piada da sua língua que seja difícil de traduzir?"
+   }
+  },
+  {
+   "id": "joke_buddy-008",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you remember the first joke you ever learned?",
+    "de": "Erinnerst du dich an den ersten Witz, den du je gelernt hast?",
+    "es": "¿Recuerdas el primer chiste que aprendiste?",
+    "fr": "Te souviens-tu de la première blague que tu as apprise ?",
+    "it": "Ti ricordi la prima barzelletta che hai imparato?",
+    "pt": "Lembras-te da primeira piada que aprendeste?",
+    "pt_BR": "Você se lembra da primeira piada que aprendeu?"
+   }
+  },
+  {
+   "id": "joke_buddy-009",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of humour do people in your family enjoy?",
+    "de": "Welche Art von Humor mag man in deiner Familie?",
+    "es": "¿Qué tipo de humor le gusta a tu familia?",
+    "fr": "Quel genre d'humour plaît dans ta famille ?",
+    "it": "Che tipo di umorismo piace nella tua famiglia?",
+    "pt": "Que tipo de humor se aprecia na tua família?",
+    "pt_BR": "Que tipo de humor sua família curte?"
+   }
+  },
+  {
+   "id": "joke_buddy-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite riddle?",
+    "de": "Was ist dein Lieblingsrätsel?",
+    "es": "¿Cuál es tu adivinanza favorita?",
+    "fr": "Quelle est ta devinette préférée ?",
+    "it": "Qual è il tuo indovinello preferito?",
+    "pt": "Qual é a tua adivinha preferida?",
+    "pt_BR": "Qual é a sua charada favorita?"
+   }
+  },
+  {
+   "id": "joke_buddy-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Are you better at telling jokes or laughing at them?",
+    "de": "Bist du besser im Witze-Erzählen oder im Lachen darüber?",
+    "es": "¿Se te da mejor contar chistes o reírte de ellos?",
+    "fr": "Es-tu plus doué pour raconter des blagues ou pour en rire ?",
+    "it": "Sei più bravo a raccontare barzellette o a riderci sopra?",
+    "pt": "És melhor a contar piadas ou a rir-te delas?",
+    "pt_BR": "Você é melhor contando piadas ou rindo delas?"
+   }
+  },
+  {
+   "id": "joke_buddy-012",
+   "lv": "any",
+   "i18n": {
+    "en": "What always cheers you up when you feel a bit down?",
+    "de": "Was muntert dich immer auf, wenn du ein bisschen niedergeschlagen bist?",
+    "es": "¿Qué siempre te anima cuando estás un poco bajo de ánimo?",
+    "fr": "Qu'est-ce qui te remonte toujours le moral quand tu es un peu triste ?",
+    "it": "Cosa ti tira sempre su il morale quando sei un po' giù?",
+    "pt": "O que te anima sempre quando estás um pouco em baixo?",
+    "pt_BR": "O que sempre anima você quando está meio para baixo?"
+   }
+  },
+  {
+   "id": "joke_buddy-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Which cartoon or comic made you laugh as a child?",
+    "de": "Welcher Zeichentrickfilm oder Comic hat dich als Kind zum Lachen gebracht?",
+    "es": "¿Qué dibujo animado o cómic te hacía reír de niño?",
+    "fr": "Quel dessin animé ou quelle BD te faisait rire quand tu étais enfant ?",
+    "it": "Quale cartone animato o fumetto ti faceva ridere da bambino?",
+    "pt": "Que desenho animado ou banda desenhada te fazia rir em criança?",
+    "pt_BR": "Qual desenho animado ou gibi fazia você rir quando era criança?"
+   }
+  },
+  {
+   "id": "joke_buddy-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a funny word in your language that you love saying?",
+    "de": "Welches lustige Wort in deiner Sprache sagst du besonders gern?",
+    "es": "¿Qué palabra graciosa de tu idioma te encanta decir?",
+    "fr": "Quel mot amusant de ta langue adores-tu prononcer ?",
+    "it": "Qual è una parola buffa della tua lingua che ami pronunciare?",
+    "pt": "Que palavra engraçada da tua língua adoras dizer?",
+    "pt_BR": "Qual palavra engraçada da sua língua você adora falar?"
+   }
+  },
+  {
+   "id": "joke_buddy-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy silly humour, clever wordplay or both?",
+    "de": "Magst du albernen Humor, cleveren Wortwitz oder beides?",
+    "es": "¿Te gusta el humor absurdo, los juegos de palabras ingeniosos o ambos?",
+    "fr": "Tu aimes l'humour loufoque, les jeux de mots astucieux ou les deux ?",
+    "it": "Ti piace l'umorismo sciocco, i giochi di parole intelligenti o entrambi?",
+    "pt": "Gostas de humor parvo, de jogos de palavras inteligentes ou de ambos?",
+    "pt_BR": "Você curte humor bobo, jogos de palavras inteligentes ou os dois?"
+   }
+  },
+  {
+   "id": "joke_buddy-016",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a funny moment from a trip you will never forget?",
+    "de": "Welchen lustigen Moment von einer Reise wirst du nie vergessen?",
+    "es": "¿Qué momento gracioso de un viaje nunca olvidarás?",
+    "fr": "Quel moment drôle d'un voyage n'oublieras-tu jamais ?",
+    "it": "Qual è un momento divertente di un viaggio che non dimenticherai mai?",
+    "pt": "Que momento engraçado de uma viagem nunca vais esquecer?",
+    "pt_BR": "Qual momento engraçado de uma viagem você nunca vai esquecer?"
+   }
+  },
+  {
+   "id": "joke_buddy-017",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animal do you think is the funniest, and why?",
+    "de": "Welches Tier findest du am lustigsten, und warum?",
+    "es": "¿Qué animal te parece el más gracioso, y por qué?",
+    "fr": "Quel animal trouves-tu le plus drôle, et pourquoi ?",
+    "it": "Quale animale trovi più buffo, e perché?",
+    "pt": "Que animal achas mais engraçado, e porquê?",
+    "pt_BR": "Qual animal você acha mais engraçado, e por quê?"
+   }
+  },
+  {
+   "id": "joke_buddy-018",
+   "lv": "any",
+   "i18n": {
+    "en": "What makes a joke kind instead of hurtful, in your opinion?",
+    "de": "Was macht einen Witz deiner Meinung nach freundlich statt verletzend?",
+    "es": "En tu opinión, ¿qué hace que un chiste sea amable y no hiriente?",
+    "fr": "Selon toi, qu'est-ce qui rend une blague gentille plutôt que blessante ?",
+    "it": "Secondo te, cosa rende una battuta gentile invece che offensiva?",
+    "pt": "Na tua opinião, o que torna uma piada simpática em vez de ofensiva?",
+    "pt_BR": "Na sua opinião, o que torna uma piada gentil em vez de ofensiva?"
+   }
+  },
+  {
+   "id": "joke_buddy-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you have a tongue twister you can say perfectly?",
+    "de": "Kennst du einen Zungenbrecher, den du perfekt aufsagen kannst?",
+    "es": "¿Tienes un trabalenguas que sepas decir perfectamente?",
+    "fr": "As-tu un virelangue que tu sais dire parfaitement ?",
+    "it": "Hai uno scioglilingua che sai dire alla perfezione?",
+    "pt": "Tens algum trava-línguas que consigas dizer na perfeição?",
+    "pt_BR": "Você tem algum trava-língua que consegue falar perfeitamente?"
+   }
+  },
+  {
+   "id": "joke_buddy-020",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the silliest thing you have done just to make someone laugh?",
+    "de": "Was ist das Albernste, das du je getan hast, nur um jemanden zum Lachen zu bringen?",
+    "es": "¿Qué es lo más tonto que has hecho solo para hacer reír a alguien?",
+    "fr": "Quelle est la chose la plus loufoque que tu as faite juste pour faire rire quelqu'un ?",
+    "it": "Qual è la cosa più sciocca che hai fatto solo per far ridere qualcuno?",
+    "pt": "Qual foi a coisa mais tonta que fizeste só para fazer alguém rir?",
+    "pt_BR": "Qual foi a coisa mais boba que você fez só para fazer alguém rir?"
+   }
+  },
+  {
+   "id": "joke_buddy-021",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a comedian or funny writer you really like?",
+    "de": "Gibt es einen Komiker oder eine witzige Autorin, die du besonders magst?",
+    "es": "¿Hay algún cómico o escritor con humor que te guste mucho?",
+    "fr": "Y a-t-il un humoriste ou un auteur drôle que tu apprécies particulièrement ?",
+    "it": "C'è un comico o uno scrittore divertente che ti piace molto?",
+    "pt": "Há algum humorista ou escritor divertido de que gostes muito?",
+    "pt_BR": "Existe algum comediante ou escritor engraçado de que você goste muito?"
+   }
+  },
+  {
+   "id": "joke_buddy-022",
+   "lv": "any",
+   "i18n": {
+    "en": "What funny habit do you have that makes your friends smile?",
+    "de": "Welche lustige Angewohnheit hast du, über die deine Freunde schmunzeln?",
+    "es": "¿Qué costumbre graciosa tienes que hace sonreír a tus amigos?",
+    "fr": "Quelle habitude amusante as-tu qui fait sourire tes amis ?",
+    "it": "Quale buffa abitudine hai che fa sorridere i tuoi amici?",
+    "pt": "Que hábito engraçado tens que faz sorrir os teus amigos?",
+    "pt_BR": "Que mania engraçada você tem que faz seus amigos sorrirem?"
+   }
+  },
+  {
+   "id": "joke_buddy-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather tell a joke on stage or write one for a friend?",
+    "de": "Würdest du lieber einen Witz auf der Bühne erzählen oder einen für einen Freund aufschreiben?",
+    "es": "¿Preferirías contar un chiste en un escenario o escribir uno para un amigo?",
+    "fr": "Préférerais-tu raconter une blague sur scène ou en écrire une pour un ami ?",
+    "it": "Preferiresti raccontare una battuta sul palco o scriverne una per un amico?",
+    "pt": "Preferias contar uma piada num palco ou escrever uma para um amigo?",
+    "pt_BR": "Você preferiria contar uma piada num palco ou escrever uma para um amigo?"
+   }
+  },
+  {
+   "id": "joke_buddy-024",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a funny misunderstanding you have experienced?",
+    "de": "Welches lustige Missverständnis hast du schon erlebt?",
+    "es": "¿Qué malentendido gracioso has vivido?",
+    "fr": "Quel malentendu amusant as-tu déjà vécu ?",
+    "it": "Quale divertente malinteso ti è capitato?",
+    "pt": "Que mal-entendido engraçado já viveste?",
+    "pt_BR": "Que mal-entendido engraçado você já viveu?"
+   }
+  },
+  {
+   "id": "joke_buddy-025",
+   "lv": "any",
+   "i18n": {
+    "en": "When do you laugh the most: with friends, family or alone?",
+    "de": "Wann lachst du am meisten: mit Freunden, mit der Familie oder allein?",
+    "es": "¿Cuándo te ríes más: con amigos, con la familia o a solas?",
+    "fr": "Quand ris-tu le plus : avec tes amis, ta famille ou tout seul ?",
+    "it": "Quando ridi di più: con gli amici, in famiglia o da solo?",
+    "pt": "Quando te ris mais: com amigos, com a família ou sozinho?",
+    "pt_BR": "Quando você ri mais: com amigos, com a família ou sozinho?"
+   }
+  },
+  {
+   "id": "joke_buddy-026",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the best pun you have ever heard?",
+    "de": "Was ist das beste Wortspiel, das du je gehört hast?",
+    "es": "¿Cuál es el mejor juego de palabras que has oído?",
+    "fr": "Quel est le meilleur jeu de mots que tu aies jamais entendu ?",
+    "it": "Qual è il gioco di parole più bello che tu abbia mai sentito?",
+    "pt": "Qual é o melhor trocadilho que já ouviste?",
+    "pt_BR": "Qual é o melhor trocadilho que você já ouviu?"
+   }
+  },
+  {
+   "id": "joke_buddy-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like playing harmless pranks, or do you prefer to watch?",
+    "de": "Spielst du gern harmlose Streiche, oder schaust du lieber zu?",
+    "es": "¿Te gusta gastar bromas inofensivas o prefieres mirar?",
+    "fr": "Aimes-tu faire des farces sans méchanceté, ou préfères-tu regarder ?",
+    "it": "Ti piace fare scherzi innocui, o preferisci guardare?",
+    "pt": "Gostas de pregar partidas inofensivas, ou preferes ver?",
+    "pt_BR": "Você gosta de pregar peças inofensivas ou prefere assistir?"
+   }
+  },
+  {
+   "id": "joke_buddy-028",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a funny saying your grandparents or parents used to say?",
+    "de": "Welchen lustigen Spruch haben deine Großeltern oder Eltern immer gesagt?",
+    "es": "¿Qué dicho gracioso solían decir tus abuelos o tus padres?",
+    "fr": "Quelle expression drôle tes grands-parents ou tes parents disaient-ils souvent ?",
+    "it": "Qual è un detto buffo che dicevano spesso i tuoi nonni o genitori?",
+    "pt": "Que expressão engraçada os teus avós ou pais costumavam dizer?",
+    "pt_BR": "Qual ditado engraçado seus avós ou pais costumavam falar?"
+   }
+  },
+  {
+   "id": "joke_buddy-029",
+   "lv": "any",
+   "i18n": {
+    "en": "Which day of the week do you think needs the most jokes?",
+    "de": "Welcher Wochentag braucht deiner Meinung nach die meisten Witze?",
+    "es": "¿Qué día de la semana crees que necesita más chistes?",
+    "fr": "Quel jour de la semaine a le plus besoin de blagues, selon toi ?",
+    "it": "Quale giorno della settimana secondo te ha più bisogno di battute?",
+    "pt": "Que dia da semana achas que precisa de mais piadas?",
+    "pt_BR": "Qual dia da semana você acha que mais precisa de piadas?"
+   }
+  },
+  {
+   "id": "joke_buddy-030",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could have a funny, useless superpower, what would it be?",
+    "de": "Wenn du eine lustige, nutzlose Superkraft haben könntest, welche wäre es?",
+    "es": "Si pudieras tener un superpoder gracioso e inútil, ¿cuál sería?",
+    "fr": "Si tu pouvais avoir un super-pouvoir drôle et inutile, lequel serait-ce ?",
+    "it": "Se potessi avere un superpotere buffo e inutile, quale sarebbe?",
+    "pt": "Se pudesses ter um superpoder engraçado e inútil, qual seria?",
+    "pt_BR": "Se você pudesse ter um superpoder engraçado e inútil, qual seria?"
+   }
+  },
+  {
+   "id": "joke_buddy-031",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a funny food name you have come across?",
+    "de": "Welchen lustigen Namen für ein Essen hast du schon entdeckt?",
+    "es": "¿Qué nombre de comida gracioso has descubierto?",
+    "fr": "Quel nom de plat amusant as-tu déjà découvert ?",
+    "it": "Qual è un nome buffo di un cibo che hai scoperto?",
+    "pt": "Que nome engraçado de comida já descobriste?",
+    "pt_BR": "Qual nome engraçado de comida você já descobriu?"
+   }
+  },
+  {
+   "id": "joke_buddy-032",
+   "lv": "any",
+   "i18n": {
+    "en": "What makes you laugh out loud even when you try not to?",
+    "de": "Worüber musst du laut lachen, selbst wenn du es zu vermeiden versuchst?",
+    "es": "¿Qué te hace reír a carcajadas aunque intentes no hacerlo?",
+    "fr": "Qu'est-ce qui te fait éclater de rire même quand tu essaies de te retenir ?",
+    "it": "Cosa ti fa ridere a crepapelle anche quando cerchi di trattenerti?",
+    "pt": "O que te faz rir às gargalhadas mesmo quando tentas não rir?",
+    "pt_BR": "O que faz você gargalhar mesmo quando tenta segurar?"
+   }
+  },
+  {
+   "id": "joke_buddy-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy word games like crosswords or anagrams?",
+    "de": "Magst du Wortspiele wie Kreuzworträtsel oder Anagramme?",
+    "es": "¿Te gustan los juegos de palabras como los crucigramas o los anagramas?",
+    "fr": "Aimes-tu les jeux de lettres comme les mots croisés ou les anagrammes ?",
+    "it": "Ti piacciono i giochi di parole come i cruciverba o gli anagrammi?",
+    "pt": "Gostas de jogos de palavras como palavras cruzadas ou anagramas?",
+    "pt_BR": "Você gosta de jogos de palavras como palavras cruzadas ou anagramas?"
+   }
+  },
+  {
+   "id": "joke_buddy-034",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a funny story from your school days?",
+    "de": "Was ist eine lustige Geschichte aus deiner Schulzeit?",
+    "es": "¿Qué historia graciosa recuerdas de tus años de colegio?",
+    "fr": "Quelle histoire drôle te rappelles-tu de tes années d'école ?",
+    "it": "Qual è una storia divertente dei tuoi anni di scuola?",
+    "pt": "Que história engraçada te lembras dos tempos da escola?",
+    "pt_BR": "Qual história engraçada você lembra da época da escola?"
+   }
+  },
+  {
+   "id": "joke_buddy-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Which friend do you send funny things to most often?",
+    "de": "Welchem Freund schickst du am häufigsten lustige Sachen?",
+    "es": "¿A qué amigo le mandas cosas graciosas más a menudo?",
+    "fr": "À quel ami envoies-tu le plus souvent des trucs drôles ?",
+    "it": "A quale amico mandi più spesso cose divertenti?",
+    "pt": "A que amigo envias coisas engraçadas mais vezes?",
+    "pt_BR": "Para qual amigo você mais manda coisas engraçadas?"
+   }
+  },
+  {
+   "id": "joke_buddy-036",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a funny tradition from your country or region?",
+    "de": "Welche lustige Tradition gibt es in deinem Land oder deiner Region?",
+    "es": "¿Qué tradición divertida hay en tu país o región?",
+    "fr": "Quelle tradition amusante existe dans ton pays ou ta région ?",
+    "it": "Qual è una tradizione divertente del tuo paese o della tua regione?",
+    "pt": "Que tradição divertida existe no teu país ou na tua região?",
+    "pt_BR": "Qual tradição divertida existe no seu país ou na sua região?"
+   }
+  },
+  {
+   "id": "joke_buddy-037",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you react when a joke does not get a laugh?",
+    "de": "Wie reagierst du, wenn über einen Witz niemand lacht?",
+    "es": "¿Cómo reaccionas cuando un chiste no hace reír a nadie?",
+    "fr": "Comment réagis-tu quand une blague ne fait rire personne ?",
+    "it": "Come reagisci quando una battuta non fa ridere nessuno?",
+    "pt": "Como reages quando uma piada não faz ninguém rir?",
+    "pt_BR": "Como você reage quando uma piada não faz ninguém rir?"
+   }
+  },
+  {
+   "id": "joke_buddy-038",
+   "lv": "any",
+   "i18n": {
+    "en": "What everyday situation do you find secretly funny?",
+    "de": "Welche Alltagssituation findest du heimlich lustig?",
+    "es": "¿Qué situación cotidiana te parece graciosa en secreto?",
+    "fr": "Quelle situation du quotidien trouves-tu secrètement drôle ?",
+    "it": "Quale situazione quotidiana trovi segretamente divertente?",
+    "pt": "Que situação do dia a dia achas secretamente engraçada?",
+    "pt_BR": "Qual situação do dia a dia você acha engraçada em segredo?"
+   }
+  },
+  {
+   "id": "joke_buddy-039",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like jokes that are short and quick, or long and surprising?",
+    "de": "Magst du lieber kurze, schnelle Witze oder lange mit Überraschung?",
+    "es": "¿Te gustan más los chistes cortos y rápidos o los largos con sorpresa?",
+    "fr": "Tu préfères les blagues courtes et rapides ou les longues pleines de surprises ?",
+    "it": "Preferisci le battute brevi e veloci o quelle lunghe con sorpresa?",
+    "pt": "Preferes piadas curtas e rápidas ou longas e surpreendentes?",
+    "pt_BR": "Você prefere piadas curtas e rápidas ou longas e surpreendentes?"
+   }
+  },
+  {
+   "id": "joke_buddy-040",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a joke you would happily tell a child?",
+    "de": "Welchen Witz würdest du gern einem Kind erzählen?",
+    "es": "¿Qué chiste le contarías encantado a un niño?",
+    "fr": "Quelle blague raconterais-tu volontiers à un enfant ?",
+    "it": "Quale barzelletta racconteresti volentieri a un bambino?",
+    "pt": "Que piada contarias com gosto a uma criança?",
+    "pt_BR": "Qual piada você contaria com prazer para uma criança?"
+   }
+  },
+  {
+   "id": "joke_buddy-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you know a good knock-knock joke? Tell me one.",
+    "de": "Kennst du einen guten Klopf-klopf-Witz? Erzähl mir einen.",
+    "es": "¿Conoces algún buen chiste de toc, toc? Cuéntame uno.",
+    "fr": "Tu connais une bonne blague toc-toc ? Raconte-m'en une.",
+    "it": "Conosci una bella barzelletta toc toc? Raccontamene una.",
+    "pt": "Conheces uma boa piada de toc-toc? Conta-me uma.",
+    "pt_BR": "Você conhece uma boa piada de toc-toc? Me conta uma."
+   }
+  },
+  {
+   "id": "joke_buddy-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a food that you think sounds funny?",
+    "de": "Welches Essen klingt für dich lustig?",
+    "es": "¿Qué comida te parece que tiene un nombre gracioso?",
+    "fr": "Quel aliment a un nom qui te semble drôle ?",
+    "it": "Quale cibo secondo te ha un nome buffo?",
+    "pt": "Que comida achas que tem um nome engraçado?",
+    "pt_BR": "Qual comida você acha que tem um nome engraçado?"
+   }
+  },
+  {
+   "id": "joke_buddy-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Can you think of a word that has two different meanings?",
+    "de": "Fällt dir ein Wort mit zwei verschiedenen Bedeutungen ein?",
+    "es": "¿Se te ocurre una palabra que tenga dos significados distintos?",
+    "fr": "Peux-tu trouver un mot qui a deux sens différents ?",
+    "it": "Ti viene in mente una parola con due significati diversi?",
+    "pt": "Consegues pensar numa palavra com dois significados diferentes?",
+    "pt_BR": "Você consegue pensar numa palavra com dois significados diferentes?"
+   }
+  },
+  {
+   "id": "joke_buddy-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What made you smile this morning?",
+    "de": "Was hat dich heute Morgen zum Lächeln gebracht?",
+    "es": "¿Qué te hizo sonreír esta mañana?",
+    "fr": "Qu'est-ce qui t'a fait sourire ce matin ?",
+    "it": "Cosa ti ha fatto sorridere stamattina?",
+    "pt": "O que te fez sorrir esta manhã?",
+    "pt_BR": "O que fez você sorrir hoje de manhã?"
+   }
+  },
+  {
+   "id": "joke_buddy-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer animal jokes or food jokes?",
+    "de": "Magst du lieber Tierwitze oder Witze über Essen?",
+    "es": "¿Prefieres los chistes de animales o los de comida?",
+    "fr": "Tu préfères les blagues sur les animaux ou sur la nourriture ?",
+    "it": "Preferisci le barzellette sugli animali o sul cibo?",
+    "pt": "Preferes piadas de animais ou de comida?",
+    "pt_BR": "Você prefere piadas de animais ou de comida?"
+   }
+  },
+  {
+   "id": "joke_buddy-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is the easiest riddle you know?",
+    "de": "Was ist das einfachste Rätsel, das du kennst?",
+    "es": "¿Cuál es la adivinanza más fácil que conoces?",
+    "fr": "Quelle est la devinette la plus facile que tu connais ?",
+    "it": "Qual è l'indovinello più facile che conosci?",
+    "pt": "Qual é a adivinha mais fácil que conheces?",
+    "pt_BR": "Qual é a charada mais fácil que você conhece?"
+   }
+  },
+  {
+   "id": "joke_buddy-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Who in your life laughs the loudest?",
+    "de": "Wer in deinem Leben lacht am lautesten?",
+    "es": "¿Quién de tu entorno se ríe más fuerte?",
+    "fr": "Qui, dans ton entourage, rit le plus fort ?",
+    "it": "Chi, tra le persone che conosci, ride più forte?",
+    "pt": "Quem, na tua vida, ri mais alto?",
+    "pt_BR": "Quem, na sua vida, ri mais alto?"
+   }
+  },
+  {
+   "id": "joke_buddy-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a funny sound that makes you giggle?",
+    "de": "Welches lustige Geräusch bringt dich zum Kichern?",
+    "es": "¿Qué sonido gracioso te da la risa?",
+    "fr": "Quel bruit rigolo te donne le fou rire ?",
+    "it": "Quale suono buffo ti fa ridacchiare?",
+    "pt": "Que som engraçado te dá vontade de rir?",
+    "pt_BR": "Qual som engraçado faz você dar risada?"
+   }
+  },
+  {
+   "id": "joke_buddy-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you like dad jokes, even the ones that make you groan?",
+    "de": "Magst du Flachwitze, auch die, bei denen man stöhnen muss?",
+    "es": "¿Te gustan los chistes malos, incluso los que te hacen resoplar?",
+    "fr": "Tu aimes les blagues de papa, même celles qui font soupirer ?",
+    "it": "Ti piacciono le battute da papà, anche quelle che fanno sbuffare?",
+    "pt": "Gostas de piadas secas, mesmo das que te fazem revirar os olhos?",
+    "pt_BR": "Você curte piadas de tiozão, mesmo as que fazem você revirar os olhos?"
+   }
+  },
+  {
+   "id": "joke_buddy-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a funny thing a pet or animal did that you saw?",
+    "de": "Welche lustige Sache hast du ein Haustier oder Tier machen sehen?",
+    "es": "¿Qué cosa graciosa has visto hacer a una mascota o a un animal?",
+    "fr": "Quelle chose drôle as-tu vu faire à un animal ?",
+    "it": "Qual è una cosa buffa che hai visto fare a un animale?",
+    "pt": "Que coisa engraçada viste um animal fazer?",
+    "pt_BR": "Que coisa engraçada você já viu um bicho fazer?"
+   }
+  },
+  {
+   "id": "joke_buddy-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which tongue twister in your language do you know?",
+    "de": "Welchen Zungenbrecher in deiner Sprache kennst du?",
+    "es": "¿Qué trabalenguas de tu idioma conoces?",
+    "fr": "Quel virelangue de ta langue connais-tu ?",
+    "it": "Quale scioglilingua della tua lingua conosci?",
+    "pt": "Que trava-línguas da tua língua conheces?",
+    "pt_BR": "Qual trava-língua da sua língua você conhece?"
+   }
+  },
+  {
+   "id": "joke_buddy-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What emoji do you use most when something is funny?",
+    "de": "Welches Emoji benutzt du am häufigsten, wenn etwas lustig ist?",
+    "es": "¿Qué emoji usas más cuando algo te hace gracia?",
+    "fr": "Quel émoji utilises-tu le plus quand quelque chose est drôle ?",
+    "it": "Quale emoji usi di più quando qualcosa ti fa ridere?",
+    "pt": "Que emoji usas mais quando algo tem graça?",
+    "pt_BR": "Qual emoji você mais usa quando algo é engraçado?"
+   }
+  },
+  {
+   "id": "joke_buddy-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a funny face or expression you can make?",
+    "de": "Welche lustige Grimasse oder welchen Gesichtsausdruck kannst du machen?",
+    "es": "¿Qué cara graciosa o mueca sabes hacer?",
+    "fr": "Quelle grimace rigolote sais-tu faire ?",
+    "it": "Quale faccia buffa o smorfia sai fare?",
+    "pt": "Que careta engraçada sabes fazer?",
+    "pt_BR": "Que careta engraçada você sabe fazer?"
+   }
+  },
+  {
+   "id": "joke_buddy-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is the funniest thing you saw today?",
+    "de": "Was war das Lustigste, das du heute gesehen hast?",
+    "es": "¿Qué es lo más gracioso que viste hoy?",
+    "fr": "Quelle est la chose la plus drôle que tu as vue aujourd'hui ?",
+    "it": "Qual è la cosa più divertente che hai visto oggi?",
+    "pt": "Qual foi a coisa mais engraçada que viste hoje?",
+    "pt_BR": "Qual foi a coisa mais engraçada que você viu hoje?"
+   }
+  },
+  {
+   "id": "joke_buddy-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a favourite funny video you like to rewatch?",
+    "de": "Hast du ein lustiges Lieblingsvideo, das du dir immer wieder ansiehst?",
+    "es": "¿Tienes un vídeo gracioso favorito que te guste volver a ver?",
+    "fr": "As-tu une vidéo drôle préférée que tu aimes revoir ?",
+    "it": "Hai un video divertente preferito che ti piace riguardare?",
+    "pt": "Tens um vídeo engraçado preferido que gostas de rever?",
+    "pt_BR": "Você tem um vídeo engraçado favorito que gosta de rever?"
+   }
+  },
+  {
+   "id": "joke_buddy-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a game that always makes you and your friends laugh?",
+    "de": "Bei welchem Spiel lachst du mit deinen Freunden immer?",
+    "es": "¿Qué juego siempre os hace reír a ti y a tus amigos?",
+    "fr": "Quel jeu vous fait toujours rire, toi et tes amis ?",
+    "it": "Quale gioco fa sempre ridere te e i tuoi amici?",
+    "pt": "Que jogo vos faz sempre rir, a ti e aos teus amigos?",
+    "pt_BR": "Qual jogo sempre faz você e seus amigos rirem?"
+   }
+  },
+  {
+   "id": "joke_buddy-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What makes a joke funny to you: the surprise or the silliness?",
+    "de": "Was macht einen Witz für dich lustig: die Überraschung oder das Alberne?",
+    "es": "¿Qué hace gracioso un chiste para ti: la sorpresa o lo absurdo?",
+    "fr": "Qu'est-ce qui rend une blague drôle pour toi : la surprise ou le côté loufoque ?",
+    "it": "Cosa rende divertente una battuta per te: la sorpresa o l'assurdità?",
+    "pt": "O que torna uma piada engraçada para ti: a surpresa ou o disparate?",
+    "pt_BR": "O que torna uma piada engraçada para você: a surpresa ou a bobeira?"
+   }
+  },
+  {
+   "id": "joke_buddy-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever laughed so much that you could not stop? What happened?",
+    "de": "Hast du schon einmal so gelacht, dass du nicht mehr aufhören konntest? Was war los?",
+    "es": "¿Alguna vez te has reído tanto que no podías parar? ¿Qué pasó?",
+    "fr": "As-tu déjà ri au point de ne plus pouvoir t'arrêter ? Que s'est-il passé ?",
+    "it": "Ti è mai capitato di ridere così tanto da non riuscire a smettere? Cos'è successo?",
+    "pt": "Já te riste tanto que não conseguias parar? O que aconteceu?",
+    "pt_BR": "Você já riu tanto que não conseguia parar? O que aconteceu?"
+   }
+  },
+  {
+   "id": "joke_buddy-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a funny nickname you or a friend once had?",
+    "de": "Welchen lustigen Spitznamen hattest du oder ein Freund einmal?",
+    "es": "¿Qué apodo gracioso tuviste tú o algún amigo?",
+    "fr": "Quel surnom amusant as-tu eu, toi ou un de tes amis ?",
+    "it": "Qual è un soprannome buffo che hai avuto tu o un tuo amico?",
+    "pt": "Que alcunha engraçada tiveste tu ou um amigo teu?",
+    "pt_BR": "Qual apelido engraçado você ou um amigo já teve?"
+   }
+  },
+  {
+   "id": "joke_buddy-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which do you find funnier: cats or dogs?",
+    "de": "Was findest du lustiger: Katzen oder Hunde?",
+    "es": "¿Qué te parecen más graciosos: los gatos o los perros?",
+    "fr": "Qu'est-ce que tu trouves le plus drôle : les chats ou les chiens ?",
+    "it": "Chi trovi più buffi: i gatti o i cani?",
+    "pt": "O que achas mais engraçado: gatos ou cães?",
+    "pt_BR": "O que você acha mais engraçado: gatos ou cachorros?"
+   }
+  },
+  {
+   "id": "joke_buddy-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a joke about the weather you could tell today?",
+    "de": "Welchen Witz über das Wetter könntest du heute erzählen?",
+    "es": "¿Qué chiste sobre el tiempo podrías contar hoy?",
+    "fr": "Quelle blague sur la météo pourrais-tu raconter aujourd'hui ?",
+    "it": "Quale battuta sul tempo potresti raccontare oggi?",
+    "pt": "Que piada sobre o tempo podias contar hoje?",
+    "pt_BR": "Qual piada sobre o tempo você poderia contar hoje?"
+   }
+  },
+  {
+   "id": "joke_buddy-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Who told you jokes when you were little?",
+    "de": "Wer hat dir Witze erzählt, als du klein warst?",
+    "es": "¿Quién te contaba chistes cuando eras pequeño?",
+    "fr": "Qui te racontait des blagues quand tu étais petit ?",
+    "it": "Chi ti raccontava barzellette quando eri piccolo?",
+    "pt": "Quem te contava piadas quando eras pequeno?",
+    "pt_BR": "Quem contava piadas para você quando era pequeno?"
+   }
+  },
+  {
+   "id": "joke_buddy-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is the funniest word you know in another language?",
+    "de": "Was ist das lustigste Wort, das du in einer anderen Sprache kennst?",
+    "es": "¿Cuál es la palabra más graciosa que conoces en otro idioma?",
+    "fr": "Quel est le mot le plus drôle que tu connais dans une autre langue ?",
+    "it": "Qual è la parola più buffa che conosci in un'altra lingua?",
+    "pt": "Qual é a palavra mais engraçada que conheces noutra língua?",
+    "pt_BR": "Qual é a palavra mais engraçada que você conhece em outra língua?"
+   }
+  },
+  {
+   "id": "joke_buddy-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you laugh easily, or does it take a really good joke?",
+    "de": "Lachst du schnell, oder braucht es einen richtig guten Witz?",
+    "es": "¿Te ríes con facilidad o hace falta un chiste muy bueno?",
+    "fr": "Ris-tu facilement, ou faut-il une très bonne blague ?",
+    "it": "Ridi facilmente, o ci vuole una battuta davvero buona?",
+    "pt": "Ris-te com facilidade, ou é preciso uma piada mesmo boa?",
+    "pt_BR": "Você ri fácil ou precisa de uma piada muito boa?"
+   }
+  },
+  {
+   "id": "joke_buddy-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is a funny thing that happened during a meal?",
+    "de": "Was ist beim Essen einmal Lustiges passiert?",
+    "es": "¿Qué cosa graciosa pasó alguna vez durante una comida?",
+    "fr": "Quelle chose drôle s'est déjà passée pendant un repas ?",
+    "it": "Qual è una cosa buffa successa durante un pasto?",
+    "pt": "Que coisa engraçada já aconteceu durante uma refeição?",
+    "pt_BR": "Que coisa engraçada já aconteceu durante uma refeição?"
+   }
+  },
+  {
+   "id": "joke_buddy-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Can you make up a pun about something on your desk or table right now?",
+    "de": "Kannst du dir ein Wortspiel über etwas ausdenken, das gerade auf deinem Tisch liegt?",
+    "es": "¿Puedes inventar un juego de palabras sobre algo que tengas ahora en la mesa?",
+    "fr": "Peux-tu inventer un jeu de mots sur un objet posé sur ta table en ce moment ?",
+    "it": "Riesci a inventare un gioco di parole su qualcosa che hai sul tavolo adesso?",
+    "pt": "Consegues inventar um trocadilho sobre algo que tens agora em cima da mesa?",
+    "pt_BR": "Você consegue inventar um trocadilho sobre algo que está na sua mesa agora?"
+   }
+  },
+  {
+   "id": "joke_buddy-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a folk tale or trickster story from your culture that makes people laugh?",
+    "de": "Welches Volksmärchen oder welche Schelmengeschichte aus deiner Kultur bringt Menschen zum Lachen?",
+    "es": "¿Qué cuento popular o historia de pícaros de tu cultura hace reír a la gente?",
+    "fr": "Quel conte populaire ou quelle histoire de farceur de ta culture fait rire les gens ?",
+    "it": "Quale fiaba popolare o storia di furbacchioni della tua cultura fa ridere la gente?",
+    "pt": "Que conto popular ou história de espertalhões da tua cultura faz as pessoas rir?",
+    "pt_BR": "Qual conto popular ou história de espertalhão da sua cultura faz as pessoas rirem?"
+   }
+  },
+  {
+   "id": "joke_buddy-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you think humour in your country differs from humour elsewhere?",
+    "de": "Wie unterscheidet sich der Humor in deinem Land deiner Meinung nach von anderswo?",
+    "es": "¿En qué crees que se diferencia el humor de tu país del de otros lugares?",
+    "fr": "En quoi l'humour de ton pays est-il différent d'ailleurs, selon toi ?",
+    "it": "In cosa pensi che l'umorismo del tuo paese sia diverso da quello di altri posti?",
+    "pt": "Em que achas que o humor do teu país é diferente do de outros sítios?",
+    "pt_BR": "Em que você acha que o humor do seu país é diferente do de outros lugares?"
+   }
+  },
+  {
+   "id": "joke_buddy-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a riddle that once took you a long time to solve?",
+    "de": "Für welches Rätsel hast du einmal lange gebraucht?",
+    "es": "¿Qué adivinanza te costó mucho tiempo resolver?",
+    "fr": "Quelle devinette t'a demandé beaucoup de temps à résoudre ?",
+    "it": "Quale indovinello ti ha fatto penare a lungo prima di risolverlo?",
+    "pt": "Que adivinha demoraste muito tempo a resolver?",
+    "pt_BR": "Qual charada você demorou muito tempo para resolver?"
+   }
+  },
+  {
+   "id": "joke_buddy-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "When does a little humour help a tense moment, in your experience?",
+    "de": "Wann hilft ein wenig Humor deiner Erfahrung nach in einem angespannten Moment?",
+    "es": "Según tu experiencia, ¿cuándo ayuda un poco de humor en un momento tenso?",
+    "fr": "D'après ton expérience, quand un peu d'humour aide-t-il dans un moment tendu ?",
+    "it": "Secondo la tua esperienza, quando un po' di umorismo aiuta in un momento teso?",
+    "pt": "Pela tua experiência, quando é que um pouco de humor ajuda num momento tenso?",
+    "pt_BR": "Pela sua experiência, quando um pouco de humor ajuda num momento tenso?"
+   }
+  },
+  {
+   "id": "joke_buddy-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a word that sounds the same as another word in your language?",
+    "de": "Welches Wort klingt in deiner Sprache genauso wie ein anderes?",
+    "es": "¿Qué palabra suena igual que otra en tu idioma?",
+    "fr": "Quel mot se prononce comme un autre dans ta langue ?",
+    "it": "Quale parola suona uguale a un'altra nella tua lingua?",
+    "pt": "Que palavra soa igual a outra na tua língua?",
+    "pt_BR": "Qual palavra soa igual a outra na sua língua?"
+   }
+  },
+  {
+   "id": "joke_buddy-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever made a funny mistake while speaking another language?",
+    "de": "Ist dir beim Sprechen einer anderen Sprache schon einmal ein lustiger Fehler passiert?",
+    "es": "¿Alguna vez has cometido un error gracioso hablando otro idioma?",
+    "fr": "As-tu déjà fait une erreur amusante en parlant une autre langue ?",
+    "it": "Ti è mai capitato di fare un errore buffo parlando un'altra lingua?",
+    "pt": "Já cometeste um erro engraçado ao falar outra língua?",
+    "pt_BR": "Você já cometeu um erro engraçado falando outra língua?"
+   }
+  },
+  {
+   "id": "joke_buddy-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is the secret to telling a story that makes people laugh?",
+    "de": "Was ist das Geheimnis einer Geschichte, die Menschen zum Lachen bringt?",
+    "es": "¿Cuál es el secreto para contar una historia que haga reír?",
+    "fr": "Quel est le secret pour raconter une histoire qui fait rire ?",
+    "it": "Qual è il segreto per raccontare una storia che fa ridere?",
+    "pt": "Qual é o segredo para contar uma história que faça rir?",
+    "pt_BR": "Qual é o segredo para contar uma história que faça as pessoas rirem?"
+   }
+  },
+  {
+   "id": "joke_buddy-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which comedy character from TV, film or books do you relate to?",
+    "de": "Mit welcher komischen Figur aus Fernsehen, Film oder Büchern kannst du dich identifizieren?",
+    "es": "¿Con qué personaje cómico de la tele, el cine o los libros te identificas?",
+    "fr": "À quel personnage comique de télé, de cinéma ou de livre t'identifies-tu ?",
+    "it": "In quale personaggio comico della tv, del cinema o dei libri ti rivedi?",
+    "pt": "Com que personagem cómica da televisão, do cinema ou dos livros te identificas?",
+    "pt_BR": "Com qual personagem cômico da TV, do cinema ou dos livros você se identifica?"
+   }
+  },
+  {
+   "id": "joke_buddy-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you think timing or the words matter more in a joke?",
+    "de": "Ist bei einem Witz deiner Meinung nach das Timing oder die Wortwahl wichtiger?",
+    "es": "¿Crees que en un chiste importa más el ritmo o las palabras?",
+    "fr": "Selon toi, dans une blague, le timing compte-t-il plus que les mots ?",
+    "it": "Secondo te, in una battuta contano di più i tempi o le parole?",
+    "pt": "Achas que numa piada conta mais o tempo certo ou as palavras?",
+    "pt_BR": "Você acha que numa piada importa mais o timing ou as palavras?"
+   }
+  },
+  {
+   "id": "joke_buddy-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is the best harmless prank you have seen or heard about?",
+    "de": "Was ist der beste harmlose Streich, den du gesehen oder von dem du gehört hast?",
+    "es": "¿Cuál es la mejor broma inofensiva que has visto o de la que has oído hablar?",
+    "fr": "Quelle est la meilleure farce inoffensive que tu as vue ou dont tu as entendu parler ?",
+    "it": "Qual è il miglior scherzo innocuo che hai visto o di cui hai sentito parlare?",
+    "pt": "Qual é a melhor partida inofensiva que já viste ou de que ouviste falar?",
+    "pt_BR": "Qual é a melhor pegadinha inofensiva que você já viu ou de que ouviu falar?"
+   }
+  },
+  {
+   "id": "joke_buddy-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do people celebrate April Fools or a similar prank day where you live?",
+    "de": "Wie feiert man bei dir den 1. April oder einen ähnlichen Tag der Streiche?",
+    "es": "¿Cómo se celebra donde vives el día de los Inocentes o un día de bromas parecido?",
+    "fr": "Comment fête-t-on le 1er avril ou une journée de farces similaire chez toi ?",
+    "it": "Come si festeggia il pesce d'aprile o una giornata di scherzi simile dove vivi?",
+    "pt": "Como se celebra o Dia das Mentiras ou um dia de partidas parecido onde vives?",
+    "pt_BR": "Como se comemora o Dia da Mentira ou um dia de pegadinhas parecido onde você mora?"
+   }
+  },
+  {
+   "id": "joke_buddy-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Can you invent a riddle about something in your kitchen?",
+    "de": "Kannst du dir ein Rätsel über etwas in deiner Küche ausdenken?",
+    "es": "¿Puedes inventar una adivinanza sobre algo de tu cocina?",
+    "fr": "Peux-tu inventer une devinette sur un objet de ta cuisine ?",
+    "it": "Riesci a inventare un indovinello su qualcosa della tua cucina?",
+    "pt": "Consegues inventar uma adivinha sobre algo da tua cozinha?",
+    "pt_BR": "Você consegue inventar uma charada sobre algo da sua cozinha?"
+   }
+  },
+  {
+   "id": "joke_buddy-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What kind of jokes do you avoid, and why?",
+    "de": "Welche Art von Witzen vermeidest du, und warum?",
+    "es": "¿Qué tipo de chistes evitas, y por qué?",
+    "fr": "Quel genre de blagues évites-tu, et pourquoi ?",
+    "it": "Che tipo di battute eviti, e perché?",
+    "pt": "Que tipo de piadas evitas, e porquê?",
+    "pt_BR": "Que tipo de piada você evita, e por quê?"
+   }
+  },
+  {
+   "id": "joke_buddy-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Is there a funny scene from a film you can quote by heart?",
+    "de": "Gibt es eine lustige Filmszene, die du auswendig zitieren kannst?",
+    "es": "¿Hay alguna escena graciosa de una película que puedas citar de memoria?",
+    "fr": "Y a-t-il une scène drôle d'un film que tu connais par cœur ?",
+    "it": "C'è una scena divertente di un film che sai citare a memoria?",
+    "pt": "Há alguma cena engraçada de um filme que saibas de cor?",
+    "pt_BR": "Existe alguma cena engraçada de filme que você sabe de cor?"
+   }
+  },
+  {
+   "id": "joke_buddy-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you make a new friend laugh when you do not know them well yet?",
+    "de": "Wie bringst du einen neuen Bekannten zum Lachen, wenn du ihn noch nicht gut kennst?",
+    "es": "¿Cómo haces reír a alguien nuevo cuando todavía no lo conoces bien?",
+    "fr": "Comment fais-tu rire quelqu'un que tu ne connais pas encore bien ?",
+    "it": "Come fai ridere una persona nuova che non conosci ancora bene?",
+    "pt": "Como fazes rir alguém novo que ainda não conheces bem?",
+    "pt_BR": "Como você faz alguém novo rir quando ainda não o conhece bem?"
+   }
+  },
+  {
+   "id": "joke_buddy-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a funny idiom from your language if you take it literally?",
+    "de": "Welche Redewendung aus deiner Sprache ist wörtlich genommen lustig?",
+    "es": "¿Qué expresión de tu idioma resulta graciosa si la tomas al pie de la letra?",
+    "fr": "Quelle expression de ta langue devient drôle si on la prend au pied de la lettre ?",
+    "it": "Quale modo di dire della tua lingua diventa buffo se preso alla lettera?",
+    "pt": "Que expressão da tua língua fica engraçada se a levares à letra?",
+    "pt_BR": "Qual expressão da sua língua fica engraçada se levada ao pé da letra?"
+   }
+  },
+  {
+   "id": "joke_buddy-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather solve riddles or invent them?",
+    "de": "Würdest du lieber Rätsel lösen oder dir welche ausdenken?",
+    "es": "¿Preferirías resolver adivinanzas o inventarlas?",
+    "fr": "Préférerais-tu résoudre des devinettes ou en inventer ?",
+    "it": "Preferiresti risolvere indovinelli o inventarli?",
+    "pt": "Preferias resolver adivinhas ou inventá-las?",
+    "pt_BR": "Você preferiria resolver charadas ou inventá-las?"
+   }
+  },
+  {
+   "id": "joke_buddy-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What funny habit of yours could become a good joke?",
+    "de": "Welche lustige Angewohnheit von dir könnte ein guter Witz werden?",
+    "es": "¿Qué costumbre tuya graciosa podría convertirse en un buen chiste?",
+    "fr": "Quelle de tes habitudes amusantes pourrait devenir une bonne blague ?",
+    "it": "Quale tua buffa abitudine potrebbe diventare una bella battuta?",
+    "pt": "Que hábito engraçado teu podia tornar-se uma boa piada?",
+    "pt_BR": "Qual mania engraçada sua poderia virar uma boa piada?"
+   }
+  },
+  {
+   "id": "joke_buddy-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a joke that works even when translated into another language?",
+    "de": "Welcher Witz funktioniert auch, wenn man ihn in eine andere Sprache übersetzt?",
+    "es": "¿Qué chiste funciona incluso traducido a otro idioma?",
+    "fr": "Quelle blague fonctionne même une fois traduite dans une autre langue ?",
+    "it": "Quale barzelletta funziona anche tradotta in un'altra lingua?",
+    "pt": "Que piada resulta mesmo traduzida para outra língua?",
+    "pt_BR": "Qual piada funciona mesmo traduzida para outra língua?"
+   }
+  },
+  {
+   "id": "joke_buddy-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you wrote a three-minute clean comedy set, what would it be about?",
+    "de": "Wenn du ein dreiminütiges, harmloses Comedy-Programm schreiben würdest, worum ginge es?",
+    "es": "Si escribieras un monólogo cómico limpio de tres minutos, ¿de qué trataría?",
+    "fr": "Si tu écrivais un petit spectacle comique de trois minutes, de quoi parlerait-il ?",
+    "it": "Se scrivessi un pezzo comico pulito di tre minuti, di cosa parlerebbe?",
+    "pt": "Se escrevesses um número de comédia de três minutos, sobre o que seria?",
+    "pt_BR": "Se você escrevesse um número de comédia leve de três minutos, sobre o que seria?"
+   }
+  },
+  {
+   "id": "joke_buddy-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you explain a pun from your language to someone from another culture?",
+    "de": "Wie würdest du ein Wortspiel aus deiner Sprache jemandem aus einer anderen Kultur erklären?",
+    "es": "¿Cómo explicarías un juego de palabras de tu idioma a alguien de otra cultura?",
+    "fr": "Comment expliquerais-tu un jeu de mots de ta langue à quelqu'un d'une autre culture ?",
+    "it": "Come spiegheresti un gioco di parole della tua lingua a qualcuno di un'altra cultura?",
+    "pt": "Como explicarias um trocadilho da tua língua a alguém de outra cultura?",
+    "pt_BR": "Como você explicaria um trocadilho da sua língua para alguém de outra cultura?"
+   }
+  },
+  {
+   "id": "joke_buddy-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you think makes some jokes stay funny for hundreds of years?",
+    "de": "Was sorgt deiner Meinung nach dafür, dass manche Witze jahrhundertelang lustig bleiben?",
+    "es": "¿Qué crees que hace que algunos chistes sigan siendo graciosos durante siglos?",
+    "fr": "Selon toi, qu'est-ce qui fait que certaines blagues restent drôles pendant des siècles ?",
+    "it": "Secondo te, cosa fa sì che alcune battute restino divertenti per secoli?",
+    "pt": "O que achas que faz algumas piadas continuarem engraçadas durante séculos?",
+    "pt_BR": "O que você acha que faz algumas piadas continuarem engraçadas por séculos?"
+   }
+  },
+  {
+   "id": "joke_buddy-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you describe your own comic style in a few words?",
+    "de": "Wie würdest du deinen eigenen Humorstil in wenigen Worten beschreiben?",
+    "es": "¿Cómo describirías tu propio estilo de humor en pocas palabras?",
+    "fr": "Comment décrirais-tu ton propre style d'humour en quelques mots ?",
+    "it": "Come descriveresti il tuo stile comico in poche parole?",
+    "pt": "Como descreverias o teu próprio estilo de humor em poucas palavras?",
+    "pt_BR": "Como você descreveria o seu próprio estilo de humor em poucas palavras?"
+   }
+  },
+  {
+   "id": "joke_buddy-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "When is it better to stay serious instead of making a joke?",
+    "de": "Wann ist es besser, ernst zu bleiben, statt einen Witz zu machen?",
+    "es": "¿Cuándo es mejor ponerse serio en lugar de hacer un chiste?",
+    "fr": "Quand vaut-il mieux rester sérieux plutôt que de faire une blague ?",
+    "it": "Quando è meglio restare seri invece di fare una battuta?",
+    "pt": "Quando é melhor ficar sério em vez de fazer uma piada?",
+    "pt_BR": "Quando é melhor ficar sério em vez de fazer uma piada?"
+   }
+  },
+  {
+   "id": "joke_buddy-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has your sense of humour changed as you have grown older?",
+    "de": "Wie hat sich dein Humor verändert, seit du älter geworden bist?",
+    "es": "¿Cómo ha cambiado tu sentido del humor con los años?",
+    "fr": "Comment ton sens de l'humour a-t-il évolué avec l'âge ?",
+    "it": "Com'è cambiato il tuo senso dell'umorismo crescendo?",
+    "pt": "Como mudou o teu sentido de humor à medida que foste crescendo?",
+    "pt_BR": "Como o seu senso de humor mudou com o passar dos anos?"
+   }
+  },
+  {
+   "id": "joke_buddy-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What is the cleverest piece of wordplay you have ever invented?",
+    "de": "Was ist das cleverste Wortspiel, das du dir je ausgedacht hast?",
+    "es": "¿Cuál es el juego de palabras más ingenioso que has inventado?",
+    "fr": "Quel est le jeu de mots le plus astucieux que tu aies jamais inventé ?",
+    "it": "Qual è il gioco di parole più geniale che tu abbia mai inventato?",
+    "pt": "Qual é o trocadilho mais engenhoso que já inventaste?",
+    "pt_BR": "Qual é o trocadilho mais engenhoso que você já inventou?"
+   }
+  },
+  {
+   "id": "joke_buddy-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How can humour help people from different cultures become friends?",
+    "de": "Wie kann Humor Menschen aus verschiedenen Kulturen helfen, Freunde zu werden?",
+    "es": "¿Cómo puede el humor ayudar a que personas de distintas culturas se hagan amigas?",
+    "fr": "Comment l'humour peut-il aider des personnes de cultures différentes à devenir amies ?",
+    "it": "Come può l'umorismo aiutare persone di culture diverse a diventare amiche?",
+    "pt": "Como pode o humor ajudar pessoas de culturas diferentes a tornarem-se amigas?",
+    "pt_BR": "Como o humor pode ajudar pessoas de culturas diferentes a virarem amigas?"
+   }
+  },
+  {
+   "id": "joke_buddy-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you put in a toast that is both funny and kind?",
+    "de": "Was würdest du in eine Rede zum Anstoßen packen, die lustig und zugleich herzlich ist?",
+    "es": "¿Qué pondrías en un brindis que sea a la vez divertido y cariñoso?",
+    "fr": "Que mettrais-tu dans un toast à la fois drôle et bienveillant ?",
+    "it": "Cosa metteresti in un brindisi che sia divertente e affettuoso allo stesso tempo?",
+    "pt": "O que porias num brinde que fosse ao mesmo tempo engraçado e carinhoso?",
+    "pt_BR": "O que você colocaria num brinde que fosse ao mesmo tempo engraçado e carinhoso?"
+   }
+  },
+  {
+   "id": "joke_buddy-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you made a personal joke book, which three jokes would open it?",
+    "de": "Wenn du ein eigenes Witzebuch machen würdest, mit welchen drei Witzen würde es beginnen?",
+    "es": "Si hicieras tu propio libro de chistes, ¿con qué tres chistes empezaría?",
+    "fr": "Si tu créais ton propre livre de blagues, par quelles trois blagues commencerait-il ?",
+    "it": "Se creassi un tuo libro di barzellette, con quali tre battute si aprirebbe?",
+    "pt": "Se fizesses o teu próprio livro de piadas, com que três piadas começaria?",
+    "pt_BR": "Se você fizesse seu próprio livro de piadas, com quais três piadas ele começaria?"
+   }
+  },
+  {
+   "id": "joke_buddy-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you recover with style when a joke falls flat?",
+    "de": "Wie rettest du die Situation mit Stil, wenn ein Witz nicht ankommt?",
+    "es": "¿Cómo te recuperas con estilo cuando un chiste no funciona?",
+    "fr": "Comment te rattrapes-tu avec style quand une blague tombe à plat ?",
+    "it": "Come ti riprendi con stile quando una battuta cade nel vuoto?",
+    "pt": "Como dás a volta com estilo quando uma piada não resulta?",
+    "pt_BR": "Como você se recupera com estilo quando uma piada não funciona?"
+   }
+  },
+  {
+   "id": "joke_buddy-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which famous comic writer or performer would you love to have dinner with?",
+    "de": "Mit welchem berühmten Komiker oder humorvollen Autor würdest du gern einmal essen gehen?",
+    "es": "¿Con qué escritor o artista cómico famoso te encantaría cenar?",
+    "fr": "Avec quel auteur ou artiste comique célèbre aimerais-tu dîner ?",
+    "it": "Con quale famoso scrittore o artista comico ti piacerebbe cenare?",
+    "pt": "Com que escritor ou artista cómico famoso gostavas de jantar?",
+    "pt_BR": "Com qual escritor ou artista cômico famoso você adoraria jantar?"
+   }
+  },
+  {
+   "id": "joke_buddy-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What everyday topic do you think has the most untapped comic potential?",
+    "de": "Welches Alltagsthema hat deiner Meinung nach das meiste ungenutzte komische Potenzial?",
+    "es": "¿Qué tema cotidiano crees que tiene más potencial cómico sin explotar?",
+    "fr": "Quel sujet du quotidien a, selon toi, le plus grand potentiel comique inexploité ?",
+    "it": "Quale tema quotidiano secondo te ha il più grande potenziale comico inesplorato?",
+    "pt": "Que tema do dia a dia achas que tem mais potencial cómico por explorar?",
+    "pt_BR": "Qual tema do dia a dia você acha que tem mais potencial cômico inexplorado?"
+   }
+  },
+  {
+   "id": "joke_buddy-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you teach a friend to tell a joke with great timing?",
+    "de": "Wie würdest du einem Freund beibringen, einen Witz mit perfektem Timing zu erzählen?",
+    "es": "¿Cómo enseñarías a un amigo a contar un chiste con un ritmo perfecto?",
+    "fr": "Comment apprendrais-tu à un ami à raconter une blague avec un timing parfait ?",
+    "it": "Come insegneresti a un amico a raccontare una battuta con i tempi giusti?",
+    "pt": "Como ensinarias um amigo a contar uma piada com o tempo certo?",
+    "pt_BR": "Como você ensinaria um amigo a contar uma piada com o timing perfeito?"
+   }
+  },
+  {
+   "id": "joke_buddy-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What role does laughter play in your friendships?",
+    "de": "Welche Rolle spielt Lachen in deinen Freundschaften?",
+    "es": "¿Qué papel tiene la risa en tus amistades?",
+    "fr": "Quelle place le rire occupe-t-il dans tes amitiés ?",
+    "it": "Che ruolo ha la risata nelle tue amicizie?",
+    "pt": "Que papel tem o riso nas tuas amizades?",
+    "pt_BR": "Qual é o papel do riso nas suas amizades?"
+   }
+  }
+ ]
+}

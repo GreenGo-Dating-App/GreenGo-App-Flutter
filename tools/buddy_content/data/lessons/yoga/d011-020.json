@@ -1,0 +1,835 @@
+{
+ "topic": "yoga",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Belly breathing",
+     "g": "Learn to let the belly rise and fall for slow, relaxed breaths.",
+     "p": [
+      "Lie on your back or sit tall and rest one hand on your belly, just below the ribs.",
+      "As you breathe in through the nose, let the belly gently rise; as you breathe out, let it fall.",
+      "Keep it soft and easy: there is no need to push the belly out or force long breaths."
+     ],
+     "q": "How did your breath feel yesterday when you simply watched it? Was it fast, slow or changing?",
+     "c": "Try five rounds of belly breathing with a hand on your belly before you go to sleep tonight."
+    },
+    "de": {
+     "t": "Bauchatmung",
+     "g": "Lerne, den Bauch sanft heben und senken zu lassen, für langsame, entspannte Atemzüge.",
+     "p": [
+      "Leg dich auf den Rücken oder sitz aufrecht und leg eine Hand auf den Bauch, knapp unter den Rippen.",
+      "Beim Einatmen durch die Nase hebt sich der Bauch sanft, beim Ausatmen sinkt er wieder.",
+      "Bleib weich und locker: Du musst den Bauch nicht herausdrücken oder lange Atemzüge erzwingen."
+     ],
+     "q": "Wie hat sich dein Atem gestern angefühlt, als du ihn nur beobachtet hast: schnell, langsam, wechselnd?",
+     "c": "Mach heute vor dem Schlafen fünf Runden Bauchatmung mit einer Hand auf dem Bauch."
+    },
+    "es": {
+     "t": "Respiración abdominal",
+     "g": "Aprende a dejar que el abdomen suba y baje para respirar de forma lenta y relajada.",
+     "p": [
+      "Túmbate boca arriba o siéntate erguido y apoya una mano en el abdomen, justo debajo de las costillas.",
+      "Al inhalar por la nariz, deja que el abdomen suba suavemente; al exhalar, deja que baje.",
+      "Hazlo suave y fácil: no hace falta sacar la barriga ni forzar respiraciones largas."
+     ],
+     "q": "¿Cómo era ayer tu respiración cuando solo la observabas? ¿Rápida, lenta o cambiante?",
+     "c": "Haz cinco rondas de respiración abdominal con una mano en el abdomen antes de dormir esta noche."
+    },
+    "fr": {
+     "t": "La respiration abdominale",
+     "g": "Apprendre à laisser le ventre se soulever et redescendre pour respirer lentement et calmement.",
+     "p": [
+      "Allonge-toi sur le dos ou assieds-toi droit, une main posée sur le ventre, juste sous les côtes.",
+      "À l'inspiration par le nez, laisse le ventre se gonfler doucement ; à l'expiration, laisse-le redescendre.",
+      "Reste doux et détendu : inutile de pousser le ventre ou de forcer de longues respirations."
+     ],
+     "q": "Comment était ta respiration hier quand tu l'observais simplement : rapide, lente ou changeante ?",
+     "c": "Ce soir avant de dormir, fais cinq cycles de respiration abdominale, une main sur le ventre."
+    },
+    "it": {
+     "t": "Respirazione addominale",
+     "g": "Imparare a lasciar salire e scendere la pancia per respiri lenti e rilassati.",
+     "p": [
+      "Sdraiati sulla schiena o siediti dritto e appoggia una mano sulla pancia, appena sotto le costole.",
+      "Inspirando dal naso lascia che la pancia salga dolcemente; espirando lasciala scendere.",
+      "Resta morbido e tranquillo: non serve spingere fuori la pancia né forzare respiri lunghi."
+     ],
+     "q": "Com'era ieri il tuo respiro quando lo osservavi soltanto? Veloce, lento o variabile?",
+     "c": "Stasera prima di dormire fai cinque cicli di respirazione addominale con una mano sulla pancia."
+    },
+    "pt": {
+     "t": "Respiração abdominal",
+     "g": "Aprender a deixar a barriga subir e descer para respirar de forma lenta e descontraída.",
+     "p": [
+      "Deita-te de costas ou senta-te direito e pousa uma mão na barriga, logo abaixo das costelas.",
+      "Ao inspirar pelo nariz, deixa a barriga subir suavemente; ao expirar, deixa-a descer.",
+      "Mantém tudo suave e fácil: não é preciso empurrar a barriga nem forçar respirações longas."
+     ],
+     "q": "Como era ontem a tua respiração quando só a observavas? Rápida, lenta ou a mudar?",
+     "c": "Faz cinco ciclos de respiração abdominal com uma mão na barriga antes de dormir esta noite."
+    },
+    "pt_BR": {
+     "t": "Respiração abdominal",
+     "g": "Aprender a deixar a barriga subir e descer para respirar de forma lenta e relaxada.",
+     "p": [
+      "Deite de costas ou sente bem ereto e apoie uma mão na barriga, logo abaixo das costelas.",
+      "Ao inspirar pelo nariz, deixe a barriga subir suavemente; ao expirar, deixe ela descer.",
+      "Mantenha tudo leve: não precisa empurrar a barriga nem forçar respirações longas."
+     ],
+     "q": "Como estava sua respiração ontem quando você só observava? Rápida, lenta ou mudando?",
+     "c": "Faça cinco ciclos de respiração abdominal com uma mão na barriga antes de dormir hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Three-part breath",
+     "g": "Practise filling the belly, ribs and chest in one smooth wave.",
+     "p": [
+      "Breathe in first into the belly, then let the ribs widen, and finally feel the upper chest lift.",
+      "Breathe out in reverse: chest softens, ribs draw in, and belly gently falls.",
+      "If it feels complicated, start with belly and ribs only and add the chest later."
+     ],
+     "q": "Which part of the breath felt easiest to fill: belly, ribs or chest?",
+     "c": "Practise six slow rounds of three-part breath today, with one hand on the belly and one on the chest."
+    },
+    "de": {
+     "t": "Dreiteilige Atmung",
+     "g": "Übe, Bauch, Rippen und Brust in einer fließenden Welle zu füllen.",
+     "p": [
+      "Atme zuerst in den Bauch, lass dann die Rippen weit werden und spür zuletzt, wie sich die obere Brust hebt.",
+      "Atme in umgekehrter Reihenfolge aus: Brust wird weich, Rippen ziehen sich zusammen, Bauch sinkt.",
+      "Wenn es kompliziert wirkt, beginne nur mit Bauch und Rippen und nimm die Brust später dazu."
+     ],
+     "q": "Welcher Teil ließ sich am leichtesten füllen: Bauch, Rippen oder Brust?",
+     "c": "Übe heute sechs langsame Runden dreiteilige Atmung, eine Hand auf dem Bauch, eine auf der Brust."
+    },
+    "es": {
+     "t": "Respiración en tres partes",
+     "g": "Practica llenar abdomen, costillas y pecho en una sola ola suave.",
+     "p": [
+      "Inhala primero hacia el abdomen, luego deja que se abran las costillas y por último siente subir el pecho.",
+      "Exhala al revés: el pecho se suaviza, las costillas se recogen y el abdomen baja con calma.",
+      "Si te resulta complicado, empieza solo con abdomen y costillas y añade el pecho más adelante."
+     ],
+     "q": "¿Qué parte te resultó más fácil de llenar: abdomen, costillas o pecho?",
+     "c": "Practica hoy seis rondas lentas de respiración en tres partes, una mano en el abdomen y otra en el pecho."
+    },
+    "fr": {
+     "t": "La respiration en trois temps",
+     "g": "S'entraîner à remplir ventre, côtes et poitrine en une seule vague fluide.",
+     "p": [
+      "Inspire d'abord dans le ventre, laisse ensuite les côtes s'ouvrir, puis sens le haut de la poitrine se soulever.",
+      "Expire dans l'ordre inverse : la poitrine se relâche, les côtes se resserrent, le ventre redescend.",
+      "Si c'est compliqué, commence par le ventre et les côtes seulement, et ajoute la poitrine plus tard."
+     ],
+     "q": "Quelle partie était la plus facile à remplir : le ventre, les côtes ou la poitrine ?",
+     "c": "Fais aujourd'hui six cycles lents de respiration en trois temps, une main sur le ventre, l'autre sur la poitrine."
+    },
+    "it": {
+     "t": "Respiro in tre parti",
+     "g": "Esercitarsi a riempire pancia, costole e petto in un'unica onda fluida.",
+     "p": [
+      "Inspira prima nella pancia, poi lascia allargare le costole e infine senti sollevarsi la parte alta del petto.",
+      "Espira al contrario: il petto si ammorbidisce, le costole rientrano e la pancia scende.",
+      "Se ti sembra complicato, inizia solo con pancia e costole e aggiungi il petto più avanti."
+     ],
+     "q": "Quale parte è stata più facile da riempire: pancia, costole o petto?",
+     "c": "Pratica oggi sei cicli lenti di respiro in tre parti, una mano sulla pancia e una sul petto."
+    },
+    "pt": {
+     "t": "Respiração em três partes",
+     "g": "Praticar encher barriga, costelas e peito numa só onda suave.",
+     "p": [
+      "Inspira primeiro para a barriga, depois deixa as costelas alargarem e por fim sente o peito subir.",
+      "Expira ao contrário: o peito relaxa, as costelas recolhem e a barriga desce.",
+      "Se parecer complicado, começa só com barriga e costelas e junta o peito mais tarde."
+     ],
+     "q": "Que parte foi mais fácil de encher: barriga, costelas ou peito?",
+     "c": "Pratica hoje seis ciclos lentos de respiração em três partes, uma mão na barriga e outra no peito."
+    },
+    "pt_BR": {
+     "t": "Respiração em três partes",
+     "g": "Praticar encher barriga, costelas e peito numa única onda suave.",
+     "p": [
+      "Inspire primeiro para a barriga, depois deixe as costelas se abrirem e por fim sinta o peito subir.",
+      "Expire ao contrário: o peito relaxa, as costelas se recolhem e a barriga desce.",
+      "Se parecer complicado, comece só com barriga e costelas e acrescente o peito depois."
+     ],
+     "q": "Qual parte foi mais fácil de encher: barriga, costelas ou peito?",
+     "c": "Pratique hoje seis ciclos lentos de respiração em três partes, uma mão na barriga e outra no peito."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mountain pose",
+     "g": "Learn mountain pose, the steady standing base of many poses.",
+     "p": [
+      "Stand with feet hip-width apart, weight spread evenly through heels and the balls of the feet.",
+      "Keep the legs gently active, let the shoulders relax down and lift the crown of the head.",
+      "Arms rest by your sides; breathe calmly with the belly breath you practised earlier."
+     ],
+     "q": "When do you usually stand still during the day, and how do you tend to stand?",
+     "c": "While waiting somewhere today, quietly practise mountain pose for five slow breaths."
+    },
+    "de": {
+     "t": "Berghaltung",
+     "g": "Lerne die Berghaltung, die stabile Basis vieler Haltungen im Stehen.",
+     "p": [
+      "Stell die Füße hüftbreit auf und verteile das Gewicht gleichmäßig auf Fersen und Fußballen.",
+      "Halte die Beine sanft aktiv, lass die Schultern sinken und richte den Scheitel nach oben aus.",
+      "Die Arme hängen locker, und du atmest ruhig mit der Bauchatmung, die du schon kennst."
+     ],
+     "q": "Wann stehst du im Alltag meist still, und wie stehst du dabei normalerweise?",
+     "c": "Wenn du heute irgendwo wartest, übe still die Berghaltung für fünf langsame Atemzüge."
+    },
+    "es": {
+     "t": "La postura de la montaña",
+     "g": "Aprende la postura de la montaña, la base estable de muchas posturas de pie.",
+     "p": [
+      "Coloca los pies a la anchura de las caderas, con el peso repartido entre talones y metatarsos.",
+      "Mantén las piernas suavemente activas, relaja los hombros hacia abajo y eleva la coronilla.",
+      "Los brazos descansan a los lados; respira con calma con la respiración abdominal que ya conoces."
+     ],
+     "q": "¿En qué momentos del día sueles estar de pie y quieto, y cómo te colocas normalmente?",
+     "c": "Hoy, mientras esperes en algún sitio, practica en silencio la montaña durante cinco respiraciones lentas."
+    },
+    "fr": {
+     "t": "La posture de la montagne",
+     "g": "Apprendre la montagne, la base stable de nombreuses postures debout.",
+     "p": [
+      "Pieds écartés de la largeur des hanches, répartis le poids entre les talons et l'avant des pieds.",
+      "Garde les jambes légèrement actives, relâche les épaules et étire le sommet du crâne vers le haut.",
+      "Les bras reposent le long du corps ; respire calmement avec la respiration abdominale déjà apprise."
+     ],
+     "q": "À quels moments de la journée restes-tu debout sans bouger, et comment te tiens-tu en général ?",
+     "c": "Aujourd'hui, pendant une attente, pratique discrètement la montagne pendant cinq respirations lentes."
+    },
+    "it": {
+     "t": "La posizione della montagna",
+     "g": "Imparare la montagna, la base stabile di molte posizioni in piedi.",
+     "p": [
+      "Piedi alla larghezza delle anche, peso distribuito in modo uniforme tra talloni e avampiedi.",
+      "Gambe leggermente attive, spalle rilassate verso il basso e la sommità del capo che sale.",
+      "Le braccia riposano lungo i fianchi; respira con calma usando la respirazione addominale."
+     ],
+     "q": "In quali momenti della giornata stai fermo in piedi, e come ti posizioni di solito?",
+     "c": "Oggi, mentre aspetti da qualche parte, pratica in silenzio la montagna per cinque respiri lenti."
+    },
+    "pt": {
+     "t": "A postura da montanha",
+     "g": "Aprender a postura da montanha, a base estável de muitas posturas de pé.",
+     "p": [
+      "Pés à largura das ancas, com o peso distribuído pelos calcanhares e pela parte da frente dos pés.",
+      "Mantém as pernas ligeiramente ativas, deixa os ombros descer e eleva o topo da cabeça.",
+      "Os braços descansam ao lado do corpo; respira com calma, usando a respiração abdominal."
+     ],
+     "q": "Em que momentos do dia costumas estar parado de pé, e como te posicionas normalmente?",
+     "c": "Hoje, enquanto esperas em algum lado, pratica discretamente a montanha durante cinco respirações lentas."
+    },
+    "pt_BR": {
+     "t": "Postura da montanha",
+     "g": "Aprender a postura da montanha, a base firme de muitas posturas em pé.",
+     "p": [
+      "Pés na largura do quadril, com o peso distribuído entre calcanhares e a parte da frente dos pés.",
+      "Mantenha as pernas levemente ativas, deixe os ombros descerem e eleve o topo da cabeça.",
+      "Os braços descansam ao lado do corpo; respire com calma, usando a respiração abdominal."
+     ],
+     "q": "Em que momentos do dia você costuma ficar parado em pé, e como você se posiciona?",
+     "c": "Hoje, enquanto espera em algum lugar, pratique discretamente a montanha por cinco respirações lentas."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Easy seated pose",
+     "g": "Find a comfortable cross-legged seat with a tall spine.",
+     "p": [
+      "Sit cross-legged and let the knees relax down without forcing them toward the floor.",
+      "Sitting on a folded blanket or cushion tilts the hips and makes a tall spine much easier.",
+      "If your knees are higher than your hips or feel uncomfortable, add more height or sit on a chair."
+     ],
+     "q": "Is sitting on the floor comfortable for you, or do you prefer a chair or cushion?",
+     "c": "Try easy seated pose on a cushion for three minutes while doing belly breathing."
+    },
+    "de": {
+     "t": "Einfacher Sitz",
+     "g": "Finde einen bequemen Schneidersitz mit aufgerichteter Wirbelsäule.",
+     "p": [
+      "Setz dich im Schneidersitz hin und lass die Knie locker sinken, ohne sie zum Boden zu drücken.",
+      "Ein gefaltetes Kissen oder eine Decke unter dem Gesäß kippt das Becken und erleichtert das Aufrichten.",
+      "Sind die Knie höher als die Hüften oder unangenehm, erhöhe den Sitz oder nimm einen Stuhl."
+     ],
+     "q": "Ist Sitzen auf dem Boden für dich bequem, oder sitzt du lieber auf einem Stuhl oder Kissen?",
+     "c": "Probier heute drei Minuten den einfachen Sitz auf einem Kissen und atme dabei in den Bauch."
+    },
+    "es": {
+     "t": "Postura fácil sentada",
+     "g": "Encuentra un asiento cómodo con las piernas cruzadas y la espalda erguida.",
+     "p": [
+      "Siéntate con las piernas cruzadas y deja que las rodillas bajen sin forzarlas hacia el suelo.",
+      "Sentarte sobre una manta doblada o un cojín inclina la pelvis y facilita mucho mantener la espalda larga.",
+      "Si las rodillas quedan más altas que las caderas o molestan, añade altura o siéntate en una silla."
+     ],
+     "q": "¿Te resulta cómodo sentarte en el suelo o prefieres una silla o un cojín?",
+     "c": "Prueba la postura fácil sobre un cojín durante tres minutos con respiración abdominal."
+    },
+    "fr": {
+     "t": "La posture facile assise",
+     "g": "Trouver une assise confortable en tailleur, le dos bien droit.",
+     "p": [
+      "Assieds-toi en tailleur et laisse les genoux descendre sans les forcer vers le sol.",
+      "S'asseoir sur une couverture pliée ou un coussin bascule le bassin et facilite beaucoup le dos droit.",
+      "Si les genoux sont plus hauts que les hanches ou gênent, rehausse l'assise ou prends une chaise."
+     ],
+     "q": "Est-ce confortable pour toi de t'asseoir au sol, ou préfères-tu une chaise ou un coussin ?",
+     "c": "Essaie la posture facile sur un coussin pendant trois minutes en respirant par le ventre."
+    },
+    "it": {
+     "t": "Posizione facile seduta",
+     "g": "Trovare una seduta comoda a gambe incrociate con la schiena lunga.",
+     "p": [
+      "Siediti a gambe incrociate e lascia scendere le ginocchia senza spingerle verso il pavimento.",
+      "Sedersi su una coperta piegata o un cuscino inclina il bacino e rende più facile la schiena dritta.",
+      "Se le ginocchia sono più alte delle anche o danno fastidio, alza la seduta o usa una sedia."
+     ],
+     "q": "Per te è comodo sederti a terra, o preferisci una sedia o un cuscino?",
+     "c": "Prova la posizione facile su un cuscino per tre minuti con la respirazione addominale."
+    },
+    "pt": {
+     "t": "Postura fácil sentada",
+     "g": "Encontrar uma posição sentada confortável, de pernas cruzadas e coluna direita.",
+     "p": [
+      "Senta-te de pernas cruzadas e deixa os joelhos descer sem os forçar em direção ao chão.",
+      "Sentar numa manta dobrada ou almofada inclina a bacia e torna muito mais fácil ter a coluna direita.",
+      "Se os joelhos ficarem mais altos que as ancas ou incomodarem, sobe a altura ou usa uma cadeira."
+     ],
+     "q": "Sentar-te no chão é confortável para ti, ou preferes uma cadeira ou almofada?",
+     "c": "Experimenta a postura fácil numa almofada durante três minutos com respiração abdominal."
+    },
+    "pt_BR": {
+     "t": "Postura fácil sentada",
+     "g": "Encontrar um jeito confortável de sentar de pernas cruzadas e coluna alongada.",
+     "p": [
+      "Sente de pernas cruzadas e deixe os joelhos descerem sem forçar em direção ao chão.",
+      "Sentar numa manta dobrada ou almofada inclina o quadril e deixa muito mais fácil manter a coluna ereta.",
+      "Se os joelhos ficarem mais altos que o quadril ou incomodarem, aumente a altura ou use uma cadeira."
+     ],
+     "q": "Sentar no chão é confortável para você, ou prefere uma cadeira ou almofada?",
+     "c": "Experimente a postura fácil numa almofada por três minutos com respiração abdominal."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Child's pose",
+     "g": "Learn child's pose, a restful position you can return to anytime.",
+     "p": [
+      "Kneel, bring the big toes together, sit back toward the heels and fold the chest forward.",
+      "Rest your forehead on the mat, a block or your stacked hands, arms forward or by your sides.",
+      "Knees can be wide or together; a cushion between hips and heels helps if it feels tight."
+     ],
+     "q": "What helps you pause and recharge during a busy day?",
+     "c": "Rest in child's pose for one minute today and feel your back gently widen with each breath."
+    },
+    "de": {
+     "t": "Kindhaltung",
+     "g": "Lerne die Kindhaltung, eine erholsame Position, zu der du jederzeit zurückkehren kannst.",
+     "p": [
+      "Knie dich hin, bring die großen Zehen zusammen, setz dich Richtung Fersen und beug den Oberkörper nach vorn.",
+      "Leg die Stirn auf die Matte, einen Block oder deine Hände, die Arme nach vorn oder neben den Körper.",
+      "Die Knie können weit oder geschlossen sein; ein Kissen zwischen Gesäß und Fersen hilft, wenn es zieht."
+     ],
+     "q": "Was hilft dir, an einem vollen Tag kurz innezuhalten und Kraft zu tanken?",
+     "c": "Ruh heute eine Minute in der Kindhaltung und spür, wie dein Rücken bei jedem Atemzug weit wird."
+    },
+    "es": {
+     "t": "La postura del niño",
+     "g": "Aprende la postura del niño, una posición de descanso a la que puedes volver cuando quieras.",
+     "p": [
+      "Arrodíllate, junta los dedos gordos de los pies, siéntate hacia los talones e inclina el pecho hacia delante.",
+      "Apoya la frente en la esterilla, un bloque o tus manos, con los brazos delante o a los lados.",
+      "Las rodillas pueden ir separadas o juntas; un cojín entre caderas y talones ayuda si notas tensión."
+     ],
+     "q": "¿Qué te ayuda a hacer una pausa y recargar energía en un día ajetreado?",
+     "c": "Descansa hoy un minuto en la postura del niño y siente cómo tu espalda se ensancha al respirar."
+    },
+    "fr": {
+     "t": "La posture de l'enfant",
+     "g": "Apprendre la posture de l'enfant, une position de repos à retrouver à tout moment.",
+     "p": [
+      "À genoux, gros orteils joints, assieds-toi vers les talons et penche la poitrine vers l'avant.",
+      "Pose le front sur le tapis, une brique ou tes mains, les bras devant toi ou le long du corps.",
+      "Genoux écartés ou serrés ; un coussin entre fesses et talons aide si ça tire."
+     ],
+     "q": "Qu'est-ce qui t'aide à faire une pause et à te ressourcer pendant une journée chargée ?",
+     "c": "Repose-toi une minute dans la posture de l'enfant et sens ton dos s'élargir à chaque respiration."
+    },
+    "it": {
+     "t": "La posizione del bambino",
+     "g": "Imparare la posizione del bambino, un riposo a cui tornare in qualsiasi momento.",
+     "p": [
+      "In ginocchio, alluci uniti, siediti verso i talloni e porta il petto in avanti verso il basso.",
+      "Appoggia la fronte sul tappetino, su un mattoncino o sulle mani, braccia avanti o lungo i fianchi.",
+      "Ginocchia larghe o unite; un cuscino tra glutei e talloni aiuta se senti tirare."
+     ],
+     "q": "Cosa ti aiuta a fare una pausa e ricaricarti in una giornata piena?",
+     "c": "Riposa oggi un minuto nella posizione del bambino e senti la schiena allargarsi a ogni respiro."
+    },
+    "pt": {
+     "t": "A postura da criança",
+     "g": "Aprender a postura da criança, uma posição de descanso à qual podes voltar sempre que quiseres.",
+     "p": [
+      "Ajoelha-te, junta os dedos grandes dos pés, senta-te em direção aos calcanhares e inclina o peito para a frente.",
+      "Apoia a testa no tapete, num bloco ou nas mãos, com os braços à frente ou ao lado do corpo.",
+      "Os joelhos podem ficar afastados ou juntos; uma almofada entre ancas e calcanhares ajuda se puxar."
+     ],
+     "q": "O que te ajuda a fazer uma pausa e recarregar energias num dia agitado?",
+     "c": "Descansa hoje um minuto na postura da criança e sente as costas a alargar a cada respiração."
+    },
+    "pt_BR": {
+     "t": "Postura da criança",
+     "g": "Aprender a postura da criança, uma posição de descanso para voltar sempre que quiser.",
+     "p": [
+      "Ajoelhe, junte os dedões dos pés, sente em direção aos calcanhares e incline o peito para a frente.",
+      "Apoie a testa no tapetinho, num bloco ou nas mãos, com os braços à frente ou ao lado do corpo.",
+      "Os joelhos podem ficar afastados ou juntos; uma almofada entre quadril e calcanhares ajuda se puxar."
+     ],
+     "q": "O que ajuda você a fazer uma pausa e recarregar num dia corrido?",
+     "c": "Descanse hoje um minuto na postura da criança e sinta as costas se abrirem a cada respiração."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cat and cow",
+     "g": "Wake up your back by flowing between rounding and arching with the breath.",
+     "p": [
+      "Start on hands and knees; as you breathe in, let the belly drop and lift the chest for cow.",
+      "As you breathe out, round the back, tuck the chin and press the floor away for cat.",
+      "Move slowly and keep the range small and comfortable, especially in the neck."
+     ],
+     "q": "How does your back usually feel when you wake up in the morning?",
+     "c": "Do eight slow rounds of cat and cow today, letting each breath lead each movement."
+    },
+    "de": {
+     "t": "Katze und Kuh",
+     "g": "Weck deinen Rücken, indem du im Atemrhythmus zwischen Rundrücken und Hohlkreuz fließt.",
+     "p": [
+      "Beginne im Vierfüßlerstand; beim Einatmen sinkt der Bauch und die Brust hebt sich zur Kuh.",
+      "Beim Ausatmen rundest du den Rücken, ziehst das Kinn ein und drückst den Boden weg zur Katze.",
+      "Beweg dich langsam und halte den Bewegungsumfang klein und angenehm, besonders im Nacken."
+     ],
+     "q": "Wie fühlt sich dein Rücken normalerweise an, wenn du morgens aufwachst?",
+     "c": "Mach heute acht langsame Runden Katze und Kuh und lass jeden Atemzug die Bewegung führen."
+    },
+    "es": {
+     "t": "El gato y la vaca",
+     "g": "Despierta tu espalda fluyendo entre redondearla y arquearla al ritmo de la respiración.",
+     "p": [
+      "Empieza a cuatro patas; al inhalar, deja caer el abdomen y eleva el pecho para la vaca.",
+      "Al exhalar, redondea la espalda, recoge la barbilla y empuja el suelo para el gato.",
+      "Muévete despacio y mantén un rango pequeño y cómodo, sobre todo en el cuello."
+     ],
+     "q": "¿Cómo suele sentirse tu espalda cuando te despiertas por la mañana?",
+     "c": "Haz hoy ocho rondas lentas de gato y vaca, dejando que cada respiración guíe cada movimiento."
+    },
+    "fr": {
+     "t": "Le chat et la vache",
+     "g": "Réveiller ton dos en alternant dos rond et dos creusé au rythme du souffle.",
+     "p": [
+      "À quatre pattes, à l'inspiration, laisse le ventre descendre et soulève la poitrine : c'est la vache.",
+      "À l'expiration, arrondis le dos, rentre le menton et repousse le sol : c'est le chat.",
+      "Bouge lentement avec une amplitude petite et confortable, surtout au niveau de la nuque."
+     ],
+     "q": "Comment se sent ton dos d'habitude quand tu te réveilles le matin ?",
+     "c": "Fais aujourd'hui huit cycles lents de chat-vache en laissant chaque respiration guider le mouvement."
+    },
+    "it": {
+     "t": "Gatto e mucca",
+     "g": "Risvegliare la schiena alternando curva e inarcamento seguendo il respiro.",
+     "p": [
+      "Parti a quattro zampe; inspirando lascia scendere la pancia e solleva il petto per la mucca.",
+      "Espirando arrotonda la schiena, porta il mento verso il petto e spingi via il pavimento per il gatto.",
+      "Muoviti lentamente con un'ampiezza piccola e comoda, soprattutto nel collo."
+     ],
+     "q": "Come si sente di solito la tua schiena quando ti svegli al mattino?",
+     "c": "Fai oggi otto cicli lenti di gatto e mucca, lasciando che ogni respiro guidi il movimento."
+    },
+    "pt": {
+     "t": "O gato e a vaca",
+     "g": "Despertar as costas fluindo entre arredondar e arquear ao ritmo da respiração.",
+     "p": [
+      "Começa de gatas; ao inspirar, deixa a barriga descer e levanta o peito para a vaca.",
+      "Ao expirar, arredonda as costas, recolhe o queixo e empurra o chão para o gato.",
+      "Mexe-te devagar e mantém a amplitude pequena e confortável, sobretudo no pescoço."
+     ],
+     "q": "Como costumam estar as tuas costas quando acordas de manhã?",
+     "c": "Faz hoje oito ciclos lentos de gato e vaca, deixando cada respiração guiar cada movimento."
+    },
+    "pt_BR": {
+     "t": "Gato e vaca",
+     "g": "Despertar as costas fluindo entre arredondar e arquear no ritmo da respiração.",
+     "p": [
+      "Comece de quatro apoios; ao inspirar, deixe a barriga descer e erga o peito para a vaca.",
+      "Ao expirar, arredonde as costas, recolha o queixo e empurre o chão para o gato.",
+      "Mova-se devagar e mantenha a amplitude pequena e confortável, principalmente no pescoço."
+     ],
+     "q": "Como suas costas costumam estar quando você acorda de manhã?",
+     "c": "Faça hoje oito ciclos lentos de gato e vaca, deixando cada respiração guiar cada movimento."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Downward-facing dog",
+     "g": "Learn the classic inverted V shape, with bent knees as a fine option.",
+     "p": [
+      "From hands and knees, tuck the toes and lift the hips up and back into an upside-down V.",
+      "Bend the knees generously so the back can stay long; heels do not need to touch the floor.",
+      "Spread the fingers wide, press through the hands and let the head hang relaxed between the arms."
+     ],
+     "q": "Which feels more natural for you right now: a long back with bent knees, or straight legs?",
+     "c": "Hold downward dog for three breaths, rest in child's pose, then try it once more."
+    },
+    "de": {
+     "t": "Herabschauender Hund",
+     "g": "Lerne das klassische umgedrehte V, mit gebeugten Knien als völlig gute Variante.",
+     "p": [
+      "Stell aus dem Vierfüßlerstand die Zehen auf und schieb das Becken nach oben und hinten in ein umgedrehtes V.",
+      "Beug die Knie großzügig, damit der Rücken lang bleibt; die Fersen müssen den Boden nicht berühren.",
+      "Spreiz die Finger, drück dich aus den Händen und lass den Kopf locker zwischen den Armen hängen."
+     ],
+     "q": "Was fühlt sich gerade natürlicher an: langer Rücken mit gebeugten Knien oder gestreckte Beine?",
+     "c": "Halte den Hund drei Atemzüge, ruh dich in der Kindhaltung aus und probier ihn dann noch einmal."
+    },
+    "es": {
+     "t": "El perro boca abajo",
+     "g": "Aprende la clásica V invertida, con las rodillas flexionadas como opción perfectamente válida.",
+     "p": [
+      "Desde cuatro patas, apoya los dedos de los pies y eleva la cadera hacia arriba y atrás formando una V invertida.",
+      "Flexiona bien las rodillas para mantener la espalda larga; los talones no tienen que tocar el suelo.",
+      "Abre bien los dedos, empuja desde las manos y deja la cabeza relajada entre los brazos."
+     ],
+     "q": "¿Qué te resulta más natural ahora: espalda larga con rodillas flexionadas o piernas estiradas?",
+     "c": "Mantén el perro boca abajo tres respiraciones, descansa en la postura del niño y vuelve a probar."
+    },
+    "fr": {
+     "t": "Le chien tête en bas",
+     "g": "Apprendre le classique V inversé, genoux fléchis étant une très bonne option.",
+     "p": [
+      "À quatre pattes, retourne les orteils et monte les hanches vers le haut et l'arrière en V inversé.",
+      "Plie franchement les genoux pour garder le dos long ; les talons n'ont pas besoin de toucher le sol.",
+      "Écarte les doigts, pousse dans les mains et laisse la tête pendre, détendue, entre les bras."
+     ],
+     "q": "Qu'est-ce qui te semble plus naturel : dos long avec genoux fléchis, ou jambes tendues ?",
+     "c": "Tiens le chien trois respirations, repose-toi dans la posture de l'enfant, puis essaie encore une fois."
+    },
+    "it": {
+     "t": "Il cane a testa in giù",
+     "g": "Imparare la classica V capovolta, con le ginocchia piegate come ottima opzione.",
+     "p": [
+      "Da quattro zampe, punta le dita dei piedi e solleva il bacino in alto e indietro a formare una V capovolta.",
+      "Piega bene le ginocchia così la schiena resta lunga; i talloni non devono toccare terra.",
+      "Apri bene le dita, spingi con le mani e lascia la testa rilassata tra le braccia."
+     ],
+     "q": "Cosa ti viene più naturale ora: schiena lunga con ginocchia piegate o gambe tese?",
+     "c": "Resta nel cane tre respiri, riposa nella posizione del bambino e poi riprova una volta."
+    },
+    "pt": {
+     "t": "O cão olhando para baixo",
+     "g": "Aprender o clássico V invertido, com os joelhos fletidos como ótima opção.",
+     "p": [
+      "De gatas, apoia os dedos dos pés e leva as ancas para cima e para trás num V invertido.",
+      "Dobra bem os joelhos para manter as costas longas; os calcanhares não precisam de tocar no chão.",
+      "Afasta bem os dedos, empurra o chão com as mãos e deixa a cabeça solta entre os braços."
+     ],
+     "q": "O que te parece mais natural agora: costas longas com joelhos fletidos ou pernas esticadas?",
+     "c": "Fica no cão três respirações, descansa na postura da criança e depois tenta outra vez."
+    },
+    "pt_BR": {
+     "t": "Cachorro olhando para baixo",
+     "g": "Aprender o clássico V invertido, com os joelhos dobrados como ótima opção.",
+     "p": [
+      "De quatro apoios, apoie os dedos dos pés e leve o quadril para cima e para trás num V invertido.",
+      "Dobre bem os joelhos para manter as costas longas; os calcanhares não precisam tocar o chão.",
+      "Abra bem os dedos, empurre o chão com as mãos e deixe a cabeça solta entre os braços."
+     ],
+     "q": "O que parece mais natural agora: costas longas com joelhos dobrados ou pernas esticadas?",
+     "c": "Fique no cachorro por três respirações, descanse na postura da criança e tente mais uma vez."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tabletop position",
+     "g": "Build a stable hands-and-knees base for many poses.",
+     "p": [
+      "Place your hands under your shoulders and your knees under your hips, with the back flat.",
+      "Spread the fingers and press evenly through the whole hand to protect the wrists.",
+      "Fold a blanket under the knees if the floor feels hard: comfort helps you stay steady."
+     ],
+     "q": "You have already used tabletop for cat and cow: how did your wrists and knees feel?",
+     "c": "Hold tabletop for five breaths, then slowly reach one arm forward and switch sides."
+    },
+    "de": {
+     "t": "Vierfüßlerstand",
+     "g": "Bau eine stabile Basis auf Händen und Knien für viele Haltungen auf.",
+     "p": [
+      "Setz die Hände unter die Schultern und die Knie unter die Hüften, der Rücken ist gerade.",
+      "Spreiz die Finger und drück die ganze Hand gleichmäßig in den Boden, um die Handgelenke zu schonen.",
+      "Leg eine Decke unter die Knie, wenn der Boden hart ist: Komfort hilft dir, stabil zu bleiben."
+     ],
+     "q": "Du hast den Vierfüßlerstand schon bei Katze und Kuh genutzt: Wie haben sich Handgelenke und Knie angefühlt?",
+     "c": "Halte den Vierfüßlerstand fünf Atemzüge, streck dann langsam einen Arm nach vorn und wechsle die Seite."
+    },
+    "es": {
+     "t": "La posición de mesa",
+     "g": "Construye una base estable sobre manos y rodillas para muchas posturas.",
+     "p": [
+      "Coloca las manos bajo los hombros y las rodillas bajo las caderas, con la espalda plana.",
+      "Abre los dedos y apoya toda la mano por igual para cuidar las muñecas.",
+      "Dobla una manta bajo las rodillas si el suelo está duro: la comodidad te ayuda a estar estable."
+     ],
+     "q": "Ya usaste la mesa para el gato y la vaca: ¿cómo sentiste las muñecas y las rodillas?",
+     "c": "Mantén la mesa cinco respiraciones y luego estira despacio un brazo hacia delante; cambia de lado."
+    },
+    "fr": {
+     "t": "La position de la table",
+     "g": "Construire une base stable sur les mains et les genoux pour de nombreuses postures.",
+     "p": [
+      "Place les mains sous les épaules et les genoux sous les hanches, le dos à plat.",
+      "Écarte les doigts et appuie toute la main de façon égale pour protéger les poignets.",
+      "Plie une couverture sous les genoux si le sol est dur : le confort aide à rester stable."
+     ],
+     "q": "Tu as déjà utilisé la table pour le chat-vache : comment se sentaient tes poignets et tes genoux ?",
+     "c": "Tiens la table cinq respirations, puis tends lentement un bras vers l'avant et change de côté."
+    },
+    "it": {
+     "t": "La posizione del tavolo",
+     "g": "Costruire una base stabile su mani e ginocchia per molte posizioni.",
+     "p": [
+      "Mani sotto le spalle e ginocchia sotto le anche, con la schiena piatta.",
+      "Apri le dita e appoggia tutta la mano in modo uniforme per proteggere i polsi.",
+      "Piega una coperta sotto le ginocchia se il pavimento è duro: la comodità aiuta a restare stabili."
+     ],
+     "q": "Hai già usato il tavolo per gatto e mucca: come si sentivano polsi e ginocchia?",
+     "c": "Resta nel tavolo cinque respiri, poi allunga lentamente un braccio in avanti e cambia lato."
+    },
+    "pt": {
+     "t": "A posição de mesa",
+     "g": "Construir uma base estável sobre mãos e joelhos para muitas posturas.",
+     "p": [
+      "Coloca as mãos debaixo dos ombros e os joelhos debaixo das ancas, com as costas direitas.",
+      "Afasta os dedos e apoia a mão toda por igual para proteger os pulsos.",
+      "Dobra uma manta debaixo dos joelhos se o chão for duro: o conforto ajuda-te a ficar estável."
+     ],
+     "q": "Já usaste a mesa no gato e vaca: como sentiste os pulsos e os joelhos?",
+     "c": "Fica na mesa cinco respirações, depois estica devagar um braço para a frente e troca de lado."
+    },
+    "pt_BR": {
+     "t": "Posição de mesa",
+     "g": "Construir uma base estável sobre mãos e joelhos para muitas posturas.",
+     "p": [
+      "Coloque as mãos embaixo dos ombros e os joelhos embaixo do quadril, com as costas retas.",
+      "Abra os dedos e apoie a mão inteira por igual para proteger os punhos.",
+      "Dobre uma manta embaixo dos joelhos se o chão for duro: o conforto ajuda você a ficar estável."
+     ],
+     "q": "Você já usou a mesa no gato e vaca: como sentiu os punhos e os joelhos?",
+     "c": "Fique na mesa por cinco respirações, depois estique devagar um braço à frente e troque de lado."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Low lunge",
+     "g": "Open the front of the hip with a gentle kneeling lunge.",
+     "p": [
+      "From tabletop or downward dog, step one foot forward between the hands and lower the back knee.",
+      "Keep the front knee above the ankle and let the hips sink forward gently.",
+      "Hands can rest on the front thigh, on blocks or on the floor; pad the back knee if needed."
+     ],
+     "q": "After sitting for a long time, where do you feel stiff: hips, back or legs?",
+     "c": "Hold a low lunge for five breaths on each side, with a blanket under your back knee."
+    },
+    "de": {
+     "t": "Tiefer Ausfallschritt",
+     "g": "Öffne die Vorderseite der Hüfte mit einem sanften knienden Ausfallschritt.",
+     "p": [
+      "Stell aus dem Vierfüßlerstand oder dem Hund einen Fuß zwischen die Hände und setz das hintere Knie ab.",
+      "Halte das vordere Knie über dem Knöchel und lass die Hüfte sanft nach vorn sinken.",
+      "Die Hände liegen auf dem Oberschenkel, auf Blöcken oder am Boden; polstere das hintere Knie bei Bedarf."
+     ],
+     "q": "Wo fühlst du dich nach langem Sitzen steif: Hüfte, Rücken oder Beine?",
+     "c": "Halte den tiefen Ausfallschritt fünf Atemzüge pro Seite, mit einer Decke unter dem hinteren Knie."
+    },
+    "es": {
+     "t": "La zancada baja",
+     "g": "Abre la parte delantera de la cadera con una zancada suave con la rodilla apoyada.",
+     "p": [
+      "Desde la mesa o el perro, adelanta un pie entre las manos y baja la rodilla de atrás al suelo.",
+      "Mantén la rodilla delantera sobre el tobillo y deja que la cadera descienda suavemente hacia delante.",
+      "Las manos pueden ir en el muslo, en bloques o en el suelo; acolcha la rodilla de atrás si hace falta."
+     ],
+     "q": "Después de estar mucho tiempo sentado, ¿dónde notas rigidez: caderas, espalda o piernas?",
+     "c": "Mantén la zancada baja cinco respiraciones por lado, con una manta bajo la rodilla de atrás."
+    },
+    "fr": {
+     "t": "La fente basse",
+     "g": "Ouvrir l'avant de la hanche avec une fente douce, genou arrière au sol.",
+     "p": [
+      "Depuis la table ou le chien, avance un pied entre les mains et pose le genou arrière au sol.",
+      "Garde le genou avant au-dessus de la cheville et laisse les hanches descendre doucement vers l'avant.",
+      "Mains sur la cuisse, sur des briques ou au sol ; protège le genou arrière si besoin."
+     ],
+     "q": "Après être resté longtemps assis, où te sens-tu raide : hanches, dos ou jambes ?",
+     "c": "Tiens la fente basse cinq respirations de chaque côté, une couverture sous le genou arrière."
+    },
+    "it": {
+     "t": "L'affondo basso",
+     "g": "Aprire la parte anteriore dell'anca con un dolce affondo con il ginocchio a terra.",
+     "p": [
+      "Dal tavolo o dal cane porta un piede avanti tra le mani e appoggia il ginocchio dietro a terra.",
+      "Tieni il ginocchio davanti sopra la caviglia e lascia scendere dolcemente il bacino in avanti.",
+      "Mani sulla coscia, su mattoncini o a terra; proteggi il ginocchio dietro se serve."
+     ],
+     "q": "Dopo essere stato seduto a lungo, dove ti senti rigido: anche, schiena o gambe?",
+     "c": "Resta nell'affondo basso cinque respiri per lato, con una coperta sotto il ginocchio dietro."
+    },
+    "pt": {
+     "t": "O afundo baixo",
+     "g": "Abrir a parte da frente da anca com um afundo suave, com o joelho de trás apoiado.",
+     "p": [
+      "A partir da mesa ou do cão, leva um pé à frente entre as mãos e apoia o joelho de trás no chão.",
+      "Mantém o joelho da frente por cima do tornozelo e deixa as ancas descer suavemente para a frente.",
+      "As mãos podem ir na coxa, em blocos ou no chão; protege o joelho de trás se for preciso."
+     ],
+     "q": "Depois de muito tempo sentado, onde sentes rigidez: ancas, costas ou pernas?",
+     "c": "Fica no afundo baixo cinco respirações de cada lado, com uma manta debaixo do joelho de trás."
+    },
+    "pt_BR": {
+     "t": "Avanço baixo",
+     "g": "Abrir a parte da frente do quadril com um avanço suave, com o joelho de trás apoiado.",
+     "p": [
+      "Da mesa ou do cachorro, leve um pé à frente entre as mãos e apoie o joelho de trás no chão.",
+      "Mantenha o joelho da frente sobre o tornozelo e deixe o quadril descer suavemente para a frente.",
+      "As mãos podem ficar na coxa, em blocos ou no chão; proteja o joelho de trás se precisar."
+     ],
+     "q": "Depois de muito tempo sentado, onde você sente rigidez: quadril, costas ou pernas?",
+     "c": "Fique no avanço baixo por cinco respirações de cada lado, com uma manta embaixo do joelho de trás."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Standing forward fold",
+     "g": "Fold forward from the hips with soft knees and a heavy, relaxed head.",
+     "p": [
+      "From mountain pose, hinge at the hips and fold forward, bending the knees as much as you like.",
+      "Let the head and neck hang heavy; hands can hold opposite elbows, rest on shins or on blocks.",
+      "Roll up slowly, one vertebra at a time, to avoid feeling dizzy when you stand."
+     ],
+     "q": "Do you tend to rush or move slowly when you get up from bending down?",
+     "c": "Hang in a soft-knee forward fold for five breaths, then roll up very slowly."
+    },
+    "de": {
+     "t": "Stehende Vorbeuge",
+     "g": "Beug dich aus der Hüfte nach vorn, mit weichen Knien und schwerem, entspanntem Kopf.",
+     "p": [
+      "Kipp aus der Berghaltung im Hüftgelenk nach vorn und beug die Knie so viel du möchtest.",
+      "Lass Kopf und Nacken schwer hängen; die Hände fassen die Ellbogen oder ruhen auf Schienbeinen oder Blöcken.",
+      "Roll dich langsam Wirbel für Wirbel auf, damit dir beim Aufrichten nicht schwindelig wird."
+     ],
+     "q": "Richtest du dich nach dem Bücken eher schnell oder langsam wieder auf?",
+     "c": "Häng fünf Atemzüge in einer Vorbeuge mit weichen Knien und roll dich dann ganz langsam auf."
+    },
+    "es": {
+     "t": "Flexión de pie hacia delante",
+     "g": "Inclínate desde las caderas con las rodillas suaves y la cabeza pesada y relajada.",
+     "p": [
+      "Desde la montaña, bisagra en las caderas y desciende hacia delante, flexionando las rodillas lo que quieras.",
+      "Deja que cabeza y cuello cuelguen; las manos pueden sujetar los codos o apoyarse en espinillas o bloques.",
+      "Sube despacio, vértebra a vértebra, para no marearte al ponerte de pie."
+     ],
+     "q": "¿Sueles levantarte rápido o despacio después de agacharte?",
+     "c": "Cuelga en una flexión con rodillas suaves cinco respiraciones y luego sube muy despacio."
+    },
+    "fr": {
+     "t": "La flexion avant debout",
+     "g": "Se pencher depuis les hanches, genoux souples et tête lourde et détendue.",
+     "p": [
+      "Depuis la montagne, bascule depuis les hanches vers l'avant en pliant les genoux autant que tu veux.",
+      "Laisse tête et nuque pendre ; les mains tiennent les coudes ou reposent sur les tibias ou des briques.",
+      "Remonte lentement, vertèbre par vertèbre, pour éviter d'avoir la tête qui tourne."
+     ],
+     "q": "Te relèves-tu plutôt vite ou lentement après t'être penché ?",
+     "c": "Reste cinq respirations dans une flexion avant genoux souples, puis déroule-toi très lentement."
+    },
+    "it": {
+     "t": "Piegamento in avanti in piedi",
+     "g": "Piegarsi in avanti dalle anche con ginocchia morbide e testa pesante e rilassata.",
+     "p": [
+      "Dalla montagna piegati in avanti partendo dalle anche, flettendo le ginocchia quanto vuoi.",
+      "Lascia testa e collo pesanti; le mani tengono i gomiti o si appoggiano su tibie o mattoncini.",
+      "Risali lentamente, una vertebra alla volta, per evitare giramenti di testa."
+     ],
+     "q": "Quando ti rialzi dopo esserti chinato, tendi ad andare veloce o piano?",
+     "c": "Resta cinque respiri in un piegamento in avanti a ginocchia morbide, poi risali molto lentamente."
+    },
+    "pt": {
+     "t": "Flexão à frente em pé",
+     "g": "Dobrar-te a partir das ancas, com os joelhos soltos e a cabeça pesada e relaxada.",
+     "p": [
+      "A partir da montanha, dobra-te à frente a partir das ancas, fletindo os joelhos o quanto quiseres.",
+      "Deixa a cabeça e o pescoço pesados; as mãos seguram os cotovelos ou apoiam-se nas canelas ou em blocos.",
+      "Sobe devagar, vértebra a vértebra, para evitar tonturas ao ficar de pé."
+     ],
+     "q": "Costumas levantar-te depressa ou devagar depois de te baixares?",
+     "c": "Fica cinco respirações numa flexão à frente com joelhos soltos e depois sobe muito devagar."
+    },
+    "pt_BR": {
+     "t": "Flexão à frente em pé",
+     "g": "Dobrar o corpo a partir do quadril, com joelhos soltos e cabeça pesada e relaxada.",
+     "p": [
+      "Da montanha, incline-se para a frente a partir do quadril, dobrando os joelhos o quanto quiser.",
+      "Deixe cabeça e pescoço pesados; as mãos seguram os cotovelos ou apoiam nas canelas ou em blocos.",
+      "Suba devagar, vértebra por vértebra, para evitar tontura ao ficar em pé."
+     ],
+     "q": "Você costuma levantar rápido ou devagar depois de se abaixar?",
+     "c": "Fique cinco respirações numa flexão à frente com joelhos soltos e depois suba bem devagar."
+    }
+   }
+  }
+ ]
+}

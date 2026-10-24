@@ -1,0 +1,835 @@
+{
+ "topic": "basketball",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shooting form: BEEF",
+     "g": "Use a simple four-step checklist for a cleaner shot.",
+     "p": [
+      "Balance: feet shoulder-width apart, knees bent, shooting foot slightly forward.",
+      "Eyes on the rim and elbow tucked under the ball, pointing at the basket.",
+      "Follow-through: snap your wrist and hold it, like reaching into a cookie jar on a high shelf."
+     ],
+     "q": "Which letter of BEEF do you think beginners forget most?",
+     "c": "Shoot 20 slow shots at any target and freeze your follow-through each time."
+    },
+    "de": {
+     "t": "Wurftechnik: BEEF",
+     "g": "Nutze eine einfache Checkliste mit vier Punkten für einen saubereren Wurf.",
+     "p": [
+      "Balance: Füße schulterbreit, Knie gebeugt, Wurffuß leicht vorn.",
+      "Eyes, die Augen am Ring, und Elbow, der Ellbogen unter dem Ball, zeigt zum Korb.",
+      "Follow-through: Handgelenk abklappen und halten, als greifst du in eine hohe Keksdose."
+     ],
+     "q": "Welchen Buchstaben von BEEF vergessen Anfänger wohl am häufigsten?",
+     "c": "Wirf 20 langsame Würfe auf ein Ziel und friere jedes Mal die Wurfhand ein."
+    },
+    "es": {
+     "t": "Mecánica de tiro: BEEF",
+     "g": "Usa una lista sencilla de cuatro pasos para un tiro más limpio.",
+     "p": [
+      "Balance, equilibrio: pies a la anchura de los hombros, rodillas flexionadas, pie de tiro algo adelantado.",
+      "Eyes, ojos en el aro, y Elbow, codo bajo el balón apuntando a la canasta.",
+      "Follow-through, acompañar: suelta la muñeca y mantenla, como metiendo la mano en un tarro alto."
+     ],
+     "q": "¿Qué letra de BEEF crees que olvidan más los principiantes?",
+     "c": "Haz 20 tiros lentos a cualquier objetivo y congela la muñeca al final de cada uno."
+    },
+    "fr": {
+     "t": "Gestuelle de tir : BEEF",
+     "g": "Utiliser une check-list simple en quatre points pour un tir plus propre.",
+     "p": [
+      "Balance, l'équilibre : pieds écartés à largeur d'épaules, genoux fléchis, pied de tir un peu devant.",
+      "Eyes, les yeux sur le cercle, et Elbow, le coude sous le ballon, pointé vers le panier.",
+      "Follow-through : casse le poignet et garde la position, comme pour plonger la main dans un bocal."
+     ],
+     "q": "Quelle lettre de BEEF les débutants oublient-ils le plus, selon toi ?",
+     "c": "Fais 20 tirs lents sur une cible et fige ton poignet à la fin de chacun."
+    },
+    "it": {
+     "t": "Tecnica di tiro: BEEF",
+     "g": "Usa una semplice lista in quattro punti per un tiro più pulito.",
+     "p": [
+      "Balance, equilibrio: piedi alla larghezza delle spalle, ginocchia piegate, piede di tiro un po' avanti.",
+      "Eyes, occhi sul ferro, ed Elbow, gomito sotto la palla che punta al canestro.",
+      "Follow-through: chiudi il polso e tienilo, come se infilassi la mano in un barattolo in alto."
+     ],
+     "q": "Quale lettera di BEEF dimenticano di più i principianti, secondo te?",
+     "c": "Fai 20 tiri lenti verso un bersaglio e blocca il polso alla fine di ognuno."
+    },
+    "pt": {
+     "t": "Mecânica de lançamento: BEEF",
+     "g": "Usa uma lista simples de quatro pontos para um lançamento mais limpo.",
+     "p": [
+      "Balance, equilíbrio: pés à largura dos ombros, joelhos fletidos, pé do lançamento ligeiramente à frente.",
+      "Eyes, olhos no aro, e Elbow, cotovelo por baixo da bola, apontado ao cesto.",
+      "Follow-through: dobra o pulso no fim e mantém, como se metesses a mão num frasco numa prateleira alta."
+     ],
+     "q": "Que letra de BEEF achas que os principiantes mais esquecem?",
+     "c": "Faz 20 lançamentos lentos para um alvo e congela o pulso no fim de cada um."
+    },
+    "pt_BR": {
+     "t": "Mecânica de arremesso: BEEF",
+     "g": "Use uma lista simples de quatro pontos para um arremesso mais limpo.",
+     "p": [
+      "Balance, equilíbrio: pés na largura dos ombros, joelhos dobrados, pé do arremesso um pouco à frente.",
+      "Eyes, olhos no aro, e Elbow, cotovelo embaixo da bola, apontando para a cesta.",
+      "Follow-through: quebre o punho no final e segure, como se pegasse um pote numa prateleira alta."
+     ],
+     "q": "Qual letra de BEEF você acha que os iniciantes mais esquecem?",
+     "c": "Faça 20 arremessos lentos num alvo e congele o punho no final de cada um."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The layup",
+     "g": "Learn the most reliable shot close to the basket.",
+     "p": [
+      "From the right side, step right foot then left foot, jump off the left and shoot with your right hand.",
+      "From the left side, mirror it: left then right, jump off the right and shoot with your left hand.",
+      "Aim for the top corner of the small square on the backboard and let the ball kiss off the glass."
+     ],
+     "q": "Which side do you think will feel more natural for you, and why?",
+     "c": "Walk through ten slow right-side layup steps without a ball, saying right, left, up."
+    },
+    "de": {
+     "t": "Der Korbleger",
+     "g": "Lerne den sichersten Wurf nah am Korb.",
+     "p": [
+      "Von rechts: Schritt rechts, dann links, vom linken Fuß abspringen und mit rechts werfen.",
+      "Von links genau gespiegelt: links, rechts, vom rechten Fuß abspringen und mit links werfen.",
+      "Ziele auf die obere Ecke des kleinen Quadrats am Brett und lass den Ball sanft abprallen."
+     ],
+     "q": "Welche Seite wird sich für dich natürlicher anfühlen, und warum?",
+     "c": "Geh zehnmal langsam die Schritte des rechten Korblegers ohne Ball: rechts, links, hoch."
+    },
+    "es": {
+     "t": "La bandeja",
+     "g": "Aprende el tiro más fiable cerca del aro.",
+     "p": [
+      "Por la derecha: paso derecho, luego izquierdo, salta con el izquierdo y tira con la mano derecha.",
+      "Por la izquierda, al revés: izquierdo, derecho, salta con el derecho y tira con la izquierda.",
+      "Apunta a la esquina superior del cuadrado del tablero y deja que el balón toque suave el cristal."
+     ],
+     "q": "¿Qué lado crees que te resultará más natural y por qué?",
+     "c": "Repite diez veces despacio, sin balón, los pasos de la bandeja derecha: derecho, izquierdo, arriba."
+    },
+    "fr": {
+     "t": "Le double pas",
+     "g": "Apprendre le tir le plus sûr près du panier.",
+     "p": [
+      "À droite : pas du pied droit, puis du gauche, saut sur le gauche et tir de la main droite.",
+      "À gauche, c'est l'inverse : gauche, droite, saut sur le droit et tir de la main gauche.",
+      "Vise le coin supérieur du petit carré de la planche et laisse le ballon l'effleurer."
+     ],
+     "q": "Quel côté te semblera le plus naturel, et pourquoi ?",
+     "c": "Répète dix fois lentement, sans ballon, les pas du double pas à droite : droite, gauche, haut."
+    },
+    "it": {
+     "t": "Il terzo tempo",
+     "g": "Impara il tiro più sicuro vicino al canestro.",
+     "p": [
+      "Da destra: passo col destro, poi col sinistro, stacco sul sinistro e tiro con la mano destra.",
+      "Da sinistra è speculare: sinistro, destro, stacco sul destro e tiro con la sinistra.",
+      "Mira all'angolo alto del quadratino sul tabellone e lascia che la palla lo baci piano."
+     ],
+     "q": "Quale lato pensi ti verrà più naturale, e perché?",
+     "c": "Ripeti dieci volte piano, senza palla, i passi del terzo tempo da destra: destro, sinistro, su."
+    },
+    "pt": {
+     "t": "O lançamento na passada",
+     "g": "Aprende o lançamento mais seguro junto ao cesto.",
+     "p": [
+      "Pela direita: passo com o pé direito, depois o esquerdo, salta no esquerdo e lança com a direita.",
+      "Pela esquerda é ao contrário: esquerdo, direito, salta no direito e lança com a esquerda.",
+      "Aponta ao canto superior do pequeno quadrado da tabela e deixa a bola tocá-la suavemente."
+     ],
+     "q": "Que lado achas que vai ser mais natural para ti, e porquê?",
+     "c": "Repete dez vezes devagar, sem bola, os passos da passada pela direita: direito, esquerdo, cima."
+    },
+    "pt_BR": {
+     "t": "A bandeja",
+     "g": "Aprenda o arremesso mais seguro perto da cesta.",
+     "p": [
+      "Pela direita: passo com o pé direito, depois o esquerdo, salte com o esquerdo e arremesse com a direita.",
+      "Pela esquerda é o espelho: esquerdo, direito, salte com o direito e arremesse com a esquerda.",
+      "Mire no canto de cima do quadradinho da tabela e deixe a bola encostar de leve."
+     ],
+     "q": "Qual lado você acha que vai ser mais natural, e por quê?",
+     "c": "Repita dez vezes devagar, sem bola, os passos da bandeja pela direita: direito, esquerdo, sobe."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rebounding basics",
+     "g": "Learn how teams win back missed shots.",
+     "p": [
+      "A defensive rebound ends the opponent's attack; an offensive rebound gives your team another try.",
+      "Box out first: turn, find your opponent and use your body to keep them behind you.",
+      "Time your jump: most missed shots bounce off the rim to the opposite side."
+     ],
+     "q": "Would you rather grab rebounds or score points? Why?",
+     "c": "Toss a ball against a wall and catch it at the highest point of your jump."
+    },
+    "de": {
+     "t": "Rebound-Grundlagen",
+     "g": "Lerne, wie Teams verfehlte Würfe zurückgewinnen.",
+     "p": [
+      "Ein Defensivrebound beendet den gegnerischen Angriff, ein Offensivrebound bringt eine neue Chance.",
+      "Erst ausboxen: drehen, Gegner finden und ihn mit dem Körper hinter dir halten.",
+      "Timing beim Sprung: Viele Fehlwürfe springen zur gegenüberliegenden Seite vom Ring."
+     ],
+     "q": "Würdest du lieber Rebounds holen oder Punkte machen? Warum?",
+     "c": "Wirf einen Ball gegen eine Wand und fang ihn am höchsten Punkt deines Sprungs."
+    },
+    "es": {
+     "t": "Rebote: lo básico",
+     "g": "Aprende cómo los equipos recuperan los tiros fallados.",
+     "p": [
+      "El rebote defensivo acaba el ataque rival; el ofensivo da a tu equipo otra oportunidad.",
+      "Primero bloquea el rebote: gira, busca a tu rival y déjalo detrás con tu cuerpo.",
+      "Calcula el salto: muchos tiros fallados rebotan hacia el lado contrario del aro."
+     ],
+     "q": "¿Preferirías coger rebotes o anotar puntos? ¿Por qué?",
+     "c": "Lanza un balón contra una pared y atrápalo en lo más alto de tu salto."
+    },
+    "fr": {
+     "t": "Les bases du rebond",
+     "g": "Apprendre comment une équipe récupère les tirs manqués.",
+     "p": [
+      "Le rebond défensif met fin à l'attaque adverse, le rebond offensif offre une nouvelle chance.",
+      "D'abord le box-out : pivote, trouve ton adversaire et garde-le derrière toi avec ton corps.",
+      "Le timing du saut compte : beaucoup de tirs ratés rebondissent du côté opposé."
+     ],
+     "q": "Tu préfères prendre des rebonds ou marquer des points ? Pourquoi ?",
+     "c": "Lance un ballon contre un mur et attrape-le au point le plus haut de ton saut."
+    },
+    "it": {
+     "t": "Il rimbalzo: le basi",
+     "g": "Impara come le squadre recuperano i tiri sbagliati.",
+     "p": [
+      "Il rimbalzo difensivo chiude l'attacco avversario, quello offensivo dà un'altra chance.",
+      "Prima tagliafuori: girati, trova l'avversario e tienilo dietro di te col corpo.",
+      "Cura il tempo del salto: molti tiri sbagliati rimbalzano verso il lato opposto."
+     ],
+     "q": "Preferiresti prendere rimbalzi o segnare punti? Perché?",
+     "c": "Lancia una palla contro un muro e prendila nel punto più alto del tuo salto."
+    },
+    "pt": {
+     "t": "Ressalto: o básico",
+     "g": "Aprende como as equipas recuperam lançamentos falhados.",
+     "p": [
+      "O ressalto defensivo acaba o ataque adversário; o ofensivo dá nova oportunidade à tua equipa.",
+      "Primeiro faz bloqueio de ressalto: roda, encontra o adversário e mantém-no atrás de ti.",
+      "Acerta o tempo do salto: muitos lançamentos falhados saltam para o lado oposto do aro."
+     ],
+     "q": "Preferias apanhar ressaltos ou marcar pontos? Porquê?",
+     "c": "Atira uma bola contra a parede e apanha-a no ponto mais alto do teu salto."
+    },
+    "pt_BR": {
+     "t": "Rebote: o básico",
+     "g": "Aprenda como os times recuperam arremessos errados.",
+     "p": [
+      "O rebote defensivo encerra o ataque rival; o ofensivo dá outra chance ao seu time.",
+      "Primeiro faça o bloqueio de rebote: gire, ache o adversário e mantenha-o atrás de você.",
+      "Acerte o tempo do salto: muitos arremessos errados quicam para o lado oposto do aro."
+     ],
+     "q": "Você prefere pegar rebotes ou fazer pontos? Por quê?",
+     "c": "Jogue uma bola na parede e pegue no ponto mais alto do seu salto."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personal fouls",
+     "g": "Understand what a foul is and what follows.",
+     "p": [
+      "A personal foul is illegal contact: pushing, holding, hitting arms or blocking a moving path.",
+      "A non-shooting foul usually means the other team gets the ball out of bounds.",
+      "Players foul out after six fouls in the NBA and five under FIBA rules."
+     ],
+     "q": "Why do you think the foul-out limit is different in the NBA?",
+     "c": "Watch a short clip and try to spot the moment of contact on a foul."
+    },
+    "de": {
+     "t": "Persönliche Fouls",
+     "g": "Verstehe, was ein Foul ist und was danach passiert.",
+     "p": [
+      "Ein persönliches Foul ist unerlaubter Kontakt: Stoßen, Halten, auf den Arm schlagen oder Blocken.",
+      "Bei einem Foul ohne Wurf bekommt das andere Team meist Einwurf.",
+      "In der NBA scheidet man nach sechs Fouls aus, nach FIBA-Regeln schon nach fünf."
+     ],
+     "q": "Warum ist die Foulgrenze in der NBA wohl anders?",
+     "c": "Schau einen kurzen Clip und finde den Moment des Kontakts bei einem Foul."
+    },
+    "es": {
+     "t": "Faltas personales",
+     "g": "Entiende qué es una falta y qué pasa después.",
+     "p": [
+      "Una falta personal es un contacto ilegal: empujar, agarrar, golpear el brazo o cortar el paso.",
+      "Si no hay tiro, el otro equipo suele sacar de banda o de fondo.",
+      "En la NBA te eliminan con seis faltas y con reglas FIBA con cinco."
+     ],
+     "q": "¿Por qué crees que el límite de faltas es distinto en la NBA?",
+     "c": "Mira un vídeo corto e intenta ver el momento exacto del contacto en una falta."
+    },
+    "fr": {
+     "t": "Les fautes personnelles",
+     "g": "Comprendre ce qu'est une faute et ce qui suit.",
+     "p": [
+      "Une faute personnelle est un contact illégal : pousser, tenir, taper le bras ou bloquer un trajet.",
+      "Sans tir, l'autre équipe récupère en général le ballon en remise en jeu.",
+      "Un joueur est exclu après six fautes en NBA et cinq selon les règles FIBA."
+     ],
+     "q": "Pourquoi la limite de fautes est-elle différente en NBA, à ton avis ?",
+     "c": "Regarde un court extrait et repère le moment exact du contact sur une faute."
+    },
+    "it": {
+     "t": "Falli personali",
+     "g": "Capisci cos'è un fallo e cosa succede dopo.",
+     "p": [
+      "Un fallo personale è un contatto irregolare: spingere, trattenere, colpire il braccio o ostacolare.",
+      "Senza tiro, di solito l'altra squadra rimette la palla da fuori.",
+      "In NBA si esce dopo sei falli, con le regole FIBA dopo cinque."
+     ],
+     "q": "Perché secondo te in NBA il limite di falli è diverso?",
+     "c": "Guarda una breve clip e cerca il momento del contatto in un fallo."
+    },
+    "pt": {
+     "t": "Faltas pessoais",
+     "g": "Percebe o que é uma falta e o que acontece a seguir.",
+     "p": [
+      "Uma falta pessoal é um contacto ilegal: empurrar, agarrar, bater no braço ou cortar o caminho.",
+      "Sem lançamento, a outra equipa costuma repor a bola de fora.",
+      "Na NBA um jogador é excluído à sexta falta, com regras FIBA à quinta."
+     ],
+     "q": "Porque achas que o limite de faltas é diferente na NBA?",
+     "c": "Vê um vídeo curto e tenta apanhar o momento exato do contacto numa falta."
+    },
+    "pt_BR": {
+     "t": "Faltas pessoais",
+     "g": "Entenda o que é uma falta e o que acontece depois.",
+     "p": [
+      "Falta pessoal é um contato ilegal: empurrar, segurar, bater no braço ou fechar o caminho.",
+      "Sem arremesso, o outro time costuma repor a bola pela lateral ou fundo.",
+      "Na NBA o jogador é eliminado com seis faltas, nas regras FIBA com cinco."
+     ],
+     "q": "Por que você acha que o limite de faltas é diferente na NBA?",
+     "c": "Assista a um vídeo curto e tente ver o momento exato do contato numa falta."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Free throws",
+     "g": "Learn when free throws happen and why they matter.",
+     "p": [
+      "Fouled while shooting a two, you get two free throws; on a three, you get three.",
+      "Once a team commits too many fouls in a quarter, every further foul sends the other side to the line.",
+      "Close games are often decided at the line, since free throws are unguarded points."
+     ],
+     "q": "Do you think you would feel calm or nervous at the free-throw line?",
+     "c": "Shoot ten free throws or ten paper balls into a bin and count your score."
+    },
+    "de": {
+     "t": "Freiwürfe",
+     "g": "Lerne, wann es Freiwürfe gibt und warum sie wichtig sind.",
+     "p": [
+      "Wer beim Zweierwurf gefoult wird, bekommt zwei Freiwürfe, beim Dreier drei.",
+      "Hat ein Team zu viele Fouls im Viertel, führt jedes weitere Foul zu Freiwürfen.",
+      "Knappe Spiele entscheiden sich oft an der Linie, denn Freiwürfe sind Punkte ohne Verteidiger."
+     ],
+     "q": "Wärst du an der Freiwurflinie eher ruhig oder nervös?",
+     "c": "Wirf zehn Freiwürfe oder zehn Papierkugeln in einen Korb und zähl die Treffer."
+    },
+    "es": {
+     "t": "Tiros libres",
+     "g": "Aprende cuándo hay tiros libres y por qué importan.",
+     "p": [
+      "Si te hacen falta en un tiro de dos, lanzas dos libres; en uno de tres, lanzas tres.",
+      "Cuando un equipo suma demasiadas faltas en un cuarto, cada falta extra manda al rival a la línea.",
+      "Los partidos ajustados se deciden a menudo en la línea: son puntos sin defensa."
+     ],
+     "q": "¿Crees que estarías tranquilo o nervioso en la línea de tiros libres?",
+     "c": "Lanza diez tiros libres o diez bolas de papel a una papelera y cuenta los aciertos."
+    },
+    "fr": {
+     "t": "Les lancers francs",
+     "g": "Apprendre quand on tire des lancers francs et pourquoi ils comptent.",
+     "p": [
+      "Fauté sur un tir à deux points, tu obtiens deux lancers francs ; sur un tir à trois, trois.",
+      "Quand une équipe accumule trop de fautes dans un quart-temps, chaque faute suivante donne des lancers.",
+      "Les matchs serrés se jouent souvent sur la ligne, car ce sont des points sans défenseur."
+     ],
+     "q": "Serais-tu calme ou nerveux sur la ligne des lancers francs ?",
+     "c": "Tire dix lancers francs ou dix boulettes de papier dans une corbeille et compte tes réussites."
+    },
+    "it": {
+     "t": "Tiri liberi",
+     "g": "Impara quando si tirano i liberi e perché contano.",
+     "p": [
+      "Se subisci fallo su un tiro da due hai due liberi, su un tiro da tre ne hai tre.",
+      "Quando una squadra fa troppi falli in un quarto, ogni fallo in più manda gli avversari in lunetta.",
+      "Le partite punto a punto si decidono spesso in lunetta: sono punti senza difesa."
+     ],
+     "q": "Saresti tranquillo o nervoso in lunetta?",
+     "c": "Tira dieci liberi o dieci palline di carta in un cestino e conta i canestri."
+    },
+    "pt": {
+     "t": "Lances livres",
+     "g": "Aprende quando há lances livres e porque importam.",
+     "p": [
+      "Se sofres falta num lançamento de dois, tens dois lances livres; num de três, tens três.",
+      "Quando uma equipa faz faltas a mais num período, cada falta seguinte manda o adversário à linha.",
+      "Jogos renhidos decidem-se muitas vezes na linha, porque são pontos sem defesa."
+     ],
+     "q": "Achas que ficarias calmo ou nervoso na linha de lance livre?",
+     "c": "Lança dez lances livres ou dez bolas de papel para um cesto e conta os acertos."
+    },
+    "pt_BR": {
+     "t": "Lances livres",
+     "g": "Aprenda quando há lances livres e por que eles importam.",
+     "p": [
+      "Se você sofre falta num arremesso de dois, cobra dois lances livres; num de três, cobra três.",
+      "Quando um time estoura o limite de faltas no quarto, cada falta seguinte vale lances livres.",
+      "Jogos apertados costumam ser decididos na linha, pois são pontos sem marcação."
+     ],
+     "q": "Você acha que ficaria calmo ou nervoso na linha de lance livre?",
+     "c": "Arremesse dez lances livres ou dez bolinhas de papel num cesto e conte os acertos."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Point guard role",
+     "g": "Meet the player who runs the team on the floor.",
+     "p": [
+      "The point guard brings the ball up court and starts the offense.",
+      "They call plays, set the pace and look for the best pass, like Magic Johnson or Steve Nash.",
+      "Great point guards see the whole floor and keep turnovers low."
+     ],
+     "q": "Do you know a point guard whose passing you admire?",
+     "c": "Watch one possession and follow only the player bringing the ball up."
+    },
+    "de": {
+     "t": "Die Rolle des Point Guards",
+     "g": "Lerne den Spieler kennen, der das Team auf dem Feld lenkt.",
+     "p": [
+      "Der Point Guard, der Aufbauspieler, bringt den Ball nach vorn und eröffnet den Angriff.",
+      "Er sagt Spielzüge an, bestimmt das Tempo und sucht den besten Pass, wie Magic Johnson oder Steve Nash.",
+      "Gute Aufbauspieler sehen das ganze Feld und verlieren selten den Ball."
+     ],
+     "q": "Kennst du einen Point Guard, dessen Pässe du bewunderst?",
+     "c": "Verfolge in einem Angriff nur den Spieler, der den Ball nach vorn bringt."
+    },
+    "es": {
+     "t": "El papel del base",
+     "g": "Conoce al jugador que dirige al equipo en la pista.",
+     "p": [
+      "El base sube el balón y pone en marcha el ataque.",
+      "Canta las jugadas, marca el ritmo y busca el mejor pase, como Magic Johnson o Steve Nash.",
+      "Los grandes bases ven toda la cancha y pierden pocos balones."
+     ],
+     "q": "¿Conoces algún base cuyos pases admires?",
+     "c": "Mira una posesión y sigue solo al jugador que sube el balón."
+    },
+    "fr": {
+     "t": "Le rôle du meneur",
+     "g": "Découvrir le joueur qui dirige l'équipe sur le terrain.",
+     "p": [
+      "Le meneur remonte le ballon et lance l'attaque.",
+      "Il annonce les systèmes, gère le rythme et cherche la meilleure passe, comme Magic Johnson ou Steve Nash.",
+      "Les grands meneurs voient tout le terrain et perdent peu de ballons."
+     ],
+     "q": "Connais-tu un meneur dont tu admires les passes ?",
+     "c": "Regarde une possession en suivant seulement le joueur qui remonte le ballon."
+    },
+    "it": {
+     "t": "Il ruolo del playmaker",
+     "g": "Conosci il giocatore che guida la squadra in campo.",
+     "p": [
+      "Il playmaker porta palla in avanti e avvia l'attacco.",
+      "Chiama gli schemi, detta il ritmo e cerca il passaggio migliore, come Magic Johnson o Steve Nash.",
+      "I grandi playmaker vedono tutto il campo e perdono pochi palloni."
+     ],
+     "q": "Conosci un playmaker di cui ammiri i passaggi?",
+     "c": "Guarda un'azione seguendo solo chi porta palla."
+    },
+    "pt": {
+     "t": "O papel do base",
+     "g": "Conhece o jogador que dirige a equipa em campo.",
+     "p": [
+      "O base leva a bola para o meio-campo ofensivo e inicia o ataque.",
+      "Chama as jogadas, dita o ritmo e procura o melhor passe, como Magic Johnson ou Steve Nash.",
+      "Os grandes bases veem o campo todo e perdem poucas bolas."
+     ],
+     "q": "Conheces algum base cujos passes admiras?",
+     "c": "Vê uma posse de bola e segue só o jogador que conduz a bola."
+    },
+    "pt_BR": {
+     "t": "O papel do armador",
+     "g": "Conheça o jogador que comanda o time em quadra.",
+     "p": [
+      "O armador leva a bola para o ataque e começa a jogada.",
+      "Ele chama as jogadas, dita o ritmo e busca o melhor passe, como Magic Johnson ou Steve Nash.",
+      "Grandes armadores enxergam a quadra toda e perdem poucas bolas."
+     ],
+     "q": "Você conhece algum armador cujos passes admira?",
+     "c": "Assista a uma posse e siga só o jogador que leva a bola."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shooting guard role",
+     "g": "Discover the perimeter scorer of the team.",
+     "p": [
+      "The shooting guard is often the team's best outside shooter, like Ray Allen or Reggie Miller.",
+      "They keep moving without the ball, using screens to get open for a catch-and-shoot.",
+      "By standing wide, they spread the defense and open driving lanes for teammates."
+     ],
+     "q": "Would you rather score from far away or drive to the rim?",
+     "c": "Watch a shooting guard for two minutes and count how often they run without the ball."
+    },
+    "de": {
+     "t": "Die Rolle des Shooting Guards",
+     "g": "Lerne den Distanzschützen des Teams kennen.",
+     "p": [
+      "Der Shooting Guard ist oft der beste Distanzschütze, wie Ray Allen oder Reggie Miller.",
+      "Er bewegt sich ständig ohne Ball und nutzt Blöcke, um für einen schnellen Wurf frei zu werden.",
+      "Weil er weit außen steht, zieht er die Abwehr auseinander und öffnet Wege zum Korb."
+     ],
+     "q": "Würdest du lieber von weit weg punkten oder zum Korb ziehen?",
+     "c": "Beobachte zwei Minuten einen Shooting Guard und zähl, wie oft er ohne Ball läuft."
+    },
+    "es": {
+     "t": "El papel del escolta",
+     "g": "Descubre al anotador exterior del equipo.",
+     "p": [
+      "El escolta suele ser el mejor tirador exterior, como Ray Allen o Reggie Miller.",
+      "Se mueve sin balón y usa bloqueos para quedarse libre y tirar tras recibir.",
+      "Al abrirse, separa a la defensa y crea caminos al aro para sus compañeros."
+     ],
+     "q": "¿Preferirías anotar desde lejos o penetrar hasta el aro?",
+     "c": "Observa a un escolta dos minutos y cuenta cuántas veces corre sin balón."
+    },
+    "fr": {
+     "t": "Le rôle de l'arrière",
+     "g": "Découvrir le scoreur extérieur de l'équipe.",
+     "p": [
+      "L'arrière est souvent le meilleur tireur extérieur, comme Ray Allen ou Reggie Miller.",
+      "Il bouge sans arrêt sans ballon et utilise les écrans pour se démarquer et tirer après réception.",
+      "En restant écarté, il étire la défense et ouvre des lignes de pénétration."
+     ],
+     "q": "Tu préfères marquer de loin ou attaquer le cercle ?",
+     "c": "Observe un arrière pendant deux minutes et compte combien de fois il court sans ballon."
+    },
+    "it": {
+     "t": "Il ruolo della guardia",
+     "g": "Scopri il tiratore perimetrale della squadra.",
+     "p": [
+      "La guardia è spesso il miglior tiratore da fuori, come Ray Allen o Reggie Miller.",
+      "Si muove sempre senza palla e sfrutta i blocchi per liberarsi e tirare in ricezione.",
+      "Restando larga, allarga la difesa e apre linee di penetrazione ai compagni."
+     ],
+     "q": "Preferiresti segnare da lontano o attaccare il ferro?",
+     "c": "Osserva una guardia per due minuti e conta quante volte corre senza palla."
+    },
+    "pt": {
+     "t": "O papel do base-lançador",
+     "g": "Descobre o marcador exterior da equipa.",
+     "p": [
+      "O base-lançador, ou shooting guard, é muitas vezes o melhor atirador exterior, como Ray Allen.",
+      "Mexe-se sem bola e usa bloqueios para ficar livre e lançar após receber.",
+      "Ao abrir para fora, afasta a defesa e abre caminhos para o cesto aos colegas."
+     ],
+     "q": "Preferias marcar de longe ou atacar o cesto?",
+     "c": "Observa um base-lançador dois minutos e conta quantas vezes corre sem bola."
+    },
+    "pt_BR": {
+     "t": "O papel do ala-armador",
+     "g": "Descubra o pontuador de perímetro do time.",
+     "p": [
+      "O ala-armador costuma ser o melhor arremessador de fora, como Ray Allen ou Reggie Miller.",
+      "Ele se movimenta sem bola e usa corta-luzes para ficar livre e arremessar após receber.",
+      "Ao abrir na quadra, espalha a defesa e abre caminhos para a cesta."
+     ],
+     "q": "Você prefere pontuar de longe ou infiltrar até o aro?",
+     "c": "Observe um ala-armador por dois minutos e conte quantas vezes ele corre sem bola."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small forward role",
+     "g": "Meet the versatile wing who links the team together.",
+     "p": [
+      "The small forward can score inside and outside, like Larry Bird or Scottie Pippen.",
+      "They often guard the opponent's best wing scorer, so defense matters as much as offense.",
+      "Rebounding, passing and running the fast break make them the team's connector."
+     ],
+     "q": "Which skill would you add first if you played small forward?",
+     "c": "Name three different things you saw a wing player do in one game."
+    },
+    "de": {
+     "t": "Die Rolle des Small Forwards",
+     "g": "Lerne den vielseitigen Flügelspieler kennen, der das Team verbindet.",
+     "p": [
+      "Der Small Forward punktet innen und außen, wie Larry Bird oder Scottie Pippen.",
+      "Er verteidigt oft den besten gegnerischen Flügelspieler, Abwehr zählt also genauso viel.",
+      "Rebounds, Pässe und Schnellangriffe machen ihn zum Bindeglied des Teams."
+     ],
+     "q": "Welche Fähigkeit würdest du als Small Forward zuerst lernen?",
+     "c": "Nenne drei verschiedene Aktionen, die ein Flügelspieler in einem Spiel macht."
+    },
+    "es": {
+     "t": "El papel del alero",
+     "g": "Conoce al jugador versátil que conecta al equipo.",
+     "p": [
+      "El alero anota dentro y fuera, como Larry Bird o Scottie Pippen.",
+      "Suele defender al mejor anotador exterior rival, así que defender pesa tanto como atacar.",
+      "Rebotear, pasar y correr el contraataque lo convierten en el nexo del equipo."
+     ],
+     "q": "¿Qué habilidad añadirías primero si jugaras de alero?",
+     "c": "Nombra tres cosas distintas que hace un alero en un partido."
+    },
+    "fr": {
+     "t": "Le rôle de l'ailier",
+     "g": "Découvrir le joueur polyvalent qui relie l'équipe.",
+     "p": [
+      "L'ailier marque à l'intérieur comme à l'extérieur, comme Larry Bird ou Scottie Pippen.",
+      "Il défend souvent sur le meilleur scoreur extérieur adverse, la défense compte autant que l'attaque.",
+      "Rebonds, passes et contre-attaques font de lui le lien de l'équipe."
+     ],
+     "q": "Quelle compétence ajouterais-tu en premier si tu jouais ailier ?",
+     "c": "Cite trois actions différentes qu'un ailier réalise pendant un match."
+    },
+    "it": {
+     "t": "Il ruolo dell'ala piccola",
+     "g": "Conosci il giocatore versatile che unisce la squadra.",
+     "p": [
+      "L'ala piccola segna dentro e fuori, come Larry Bird o Scottie Pippen.",
+      "Spesso marca il miglior esterno avversario, quindi la difesa conta quanto l'attacco.",
+      "Rimbalzi, passaggi e contropiede la rendono il collante della squadra."
+     ],
+     "q": "Quale abilità aggiungeresti per prima se giocassi da ala piccola?",
+     "c": "Nomina tre azioni diverse che un'ala fa in una partita."
+    },
+    "pt": {
+     "t": "O papel do extremo",
+     "g": "Conhece o jogador versátil que liga a equipa.",
+     "p": [
+      "O extremo marca por dentro e por fora, como Larry Bird ou Scottie Pippen.",
+      "Muitas vezes defende o melhor atacante exterior rival, por isso defender conta tanto como atacar.",
+      "Ressaltos, passes e contra-ataques fazem dele a ligação da equipa."
+     ],
+     "q": "Que habilidade juntavas primeiro se jogasses a extremo?",
+     "c": "Diz três ações diferentes que um extremo faz num jogo."
+    },
+    "pt_BR": {
+     "t": "O papel do ala",
+     "g": "Conheça o jogador versátil que conecta o time.",
+     "p": [
+      "O ala pontua por dentro e por fora, como Larry Bird ou Scottie Pippen.",
+      "Ele costuma marcar o melhor atacante de perímetro rival, então defesa vale tanto quanto ataque.",
+      "Rebotes, passes e contra-ataques fazem dele o elo do time."
+     ],
+     "q": "Que habilidade você aprenderia primeiro se jogasse de ala?",
+     "c": "Cite três ações diferentes que um ala faz num jogo."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Power forward role",
+     "g": "Discover the strong forward who works near the basket.",
+     "p": [
+      "The power forward battles for rebounds and scores close to the rim, like Tim Duncan.",
+      "They set screens and defend bigger players in the paint.",
+      "The modern stretch four, like Dirk Nowitzki, also shoots threes to pull defenders outside."
+     ],
+     "q": "Do you prefer a classic power forward or a stretch four?",
+     "c": "Look up one famous move of Dirk Nowitzki or Tim Duncan and try to describe it."
+    },
+    "de": {
+     "t": "Die Rolle des Power Forwards",
+     "g": "Lerne den kräftigen Forward kennen, der nah am Korb arbeitet.",
+     "p": [
+      "Der Power Forward kämpft um Rebounds und punktet nah am Ring, wie Tim Duncan.",
+      "Er stellt Blöcke und verteidigt größere Spieler in der Zone.",
+      "Der moderne Stretch Four wie Dirk Nowitzki wirft auch Dreier und zieht Verteidiger nach außen."
+     ],
+     "q": "Magst du lieber den klassischen Power Forward oder den Stretch Four?",
+     "c": "Such einen berühmten Move von Dirk Nowitzki oder Tim Duncan und beschreib ihn."
+    },
+    "es": {
+     "t": "El papel del ala-pívot",
+     "g": "Descubre al jugador fuerte que trabaja cerca del aro.",
+     "p": [
+      "El ala-pívot pelea rebotes y anota cerca del aro, como Tim Duncan.",
+      "Pone bloqueos y defiende a jugadores grandes en la zona.",
+      "El ala-pívot moderno abierto, como Dirk Nowitzki, también tira triples y saca a los defensores."
+     ],
+     "q": "¿Prefieres un ala-pívot clásico o uno tirador?",
+     "c": "Busca un movimiento famoso de Dirk Nowitzki o Tim Duncan e intenta describirlo."
+    },
+    "fr": {
+     "t": "Le rôle de l'ailier fort",
+     "g": "Découvrir l'ailier puissant qui travaille près du panier.",
+     "p": [
+      "L'ailier fort se bat au rebond et marque près du cercle, comme Tim Duncan.",
+      "Il pose des écrans et défend sur les grands dans la raquette.",
+      "Le stretch four moderne, comme Dirk Nowitzki, tire aussi à trois points pour écarter les défenseurs."
+     ],
+     "q": "Tu préfères l'ailier fort classique ou le stretch four ?",
+     "c": "Cherche un geste célèbre de Dirk Nowitzki ou Tim Duncan et essaie de le décrire."
+    },
+    "it": {
+     "t": "Il ruolo dell'ala grande",
+     "g": "Scopri l'ala forte che lavora vicino al canestro.",
+     "p": [
+      "L'ala grande lotta a rimbalzo e segna vicino al ferro, come Tim Duncan.",
+      "Porta blocchi e difende sui lunghi in area.",
+      "L'ala grande moderna tiratrice, come Dirk Nowitzki, tira anche da tre e porta fuori i difensori."
+     ],
+     "q": "Preferisci l'ala grande classica o quella tiratrice?",
+     "c": "Cerca un movimento famoso di Dirk Nowitzki o Tim Duncan e prova a descriverlo."
+    },
+    "pt": {
+     "t": "O papel do extremo-poste",
+     "g": "Descobre o jogador forte que trabalha junto ao cesto.",
+     "p": [
+      "O extremo-poste luta pelos ressaltos e marca perto do aro, como Tim Duncan.",
+      "Faz bloqueios e defende jogadores grandes na área restritiva.",
+      "O extremo-poste moderno atirador, como Dirk Nowitzki, também lança de três e puxa os defensores."
+     ],
+     "q": "Preferes o extremo-poste clássico ou o atirador?",
+     "c": "Procura um movimento famoso de Dirk Nowitzki ou Tim Duncan e tenta descrevê-lo."
+    },
+    "pt_BR": {
+     "t": "O papel do ala-pivô",
+     "g": "Descubra o jogador forte que atua perto da cesta.",
+     "p": [
+      "O ala-pivô briga pelos rebotes e pontua perto do aro, como Tim Duncan.",
+      "Ele faz corta-luz e marca jogadores grandes no garrafão.",
+      "O ala-pivô moderno arremessador, como Dirk Nowitzki, também chuta de três e puxa os marcadores."
+     ],
+     "q": "Você prefere o ala-pivô clássico ou o arremessador?",
+     "c": "Procure um movimento famoso de Dirk Nowitzki ou Tim Duncan e tente descrevê-lo."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Center role",
+     "g": "Meet the anchor in the middle of the team.",
+     "p": [
+      "The center protects the rim, blocking and changing shots near the basket.",
+      "In the post they score with hooks and footwork, like Kareem Abdul-Jabbar's skyhook.",
+      "They set strong screens and control the paint on both ends of the floor."
+     ],
+     "q": "Which famous center would you love to have seen play live?",
+     "c": "Try a slow hook shot motion with a pillow or soft ball."
+    },
+    "de": {
+     "t": "Die Rolle des Centers",
+     "g": "Lerne den Anker in der Mitte des Teams kennen.",
+     "p": [
+      "Der Center schützt den Korb, blockt Würfe und erschwert Abschlüsse.",
+      "Am Post punktet er mit Hakenwürfen und Beinarbeit, wie mit dem Skyhook von Kareem Abdul-Jabbar.",
+      "Er stellt harte Blöcke und kontrolliert die Zone in Angriff und Abwehr."
+     ],
+     "q": "Welchen berühmten Center hättest du gern live spielen sehen?",
+     "c": "Übe langsam die Bewegung eines Hakenwurfs mit einem Kissen oder weichen Ball."
+    },
+    "es": {
+     "t": "El papel del pívot",
+     "g": "Conoce al ancla en el centro del equipo.",
+     "p": [
+      "El pívot protege el aro, taponando y dificultando tiros cerca de la canasta.",
+      "En el poste anota con ganchos y juego de pies, como el skyhook de Kareem Abdul-Jabbar.",
+      "Pone bloqueos sólidos y domina la zona en ataque y en defensa."
+     ],
+     "q": "¿Qué pívot famoso te habría encantado ver jugar en directo?",
+     "c": "Prueba despacio el gesto de un gancho con un cojín o una pelota blanda."
+    },
+    "fr": {
+     "t": "Le rôle du pivot",
+     "g": "Découvrir le point d'ancrage au centre de l'équipe.",
+     "p": [
+      "Le pivot protège le cercle, contre et gêne les tirs près du panier.",
+      "Au poste, il marque avec des bras roulés et du jeu de jambes, comme le skyhook de Kareem Abdul-Jabbar.",
+      "Il pose des écrans solides et contrôle la raquette en attaque comme en défense."
+     ],
+     "q": "Quel pivot célèbre aurais-tu aimé voir jouer en vrai ?",
+     "c": "Essaie lentement le geste d'un bras roulé avec un coussin ou un ballon mou."
+    },
+    "it": {
+     "t": "Il ruolo del centro",
+     "g": "Conosci il perno al centro della squadra.",
+     "p": [
+      "Il centro protegge il ferro, stoppando e disturbando i tiri vicino al canestro.",
+      "In post segna con ganci e lavoro di piedi, come lo skyhook di Kareem Abdul-Jabbar.",
+      "Porta blocchi solidi e controlla l'area in attacco e in difesa."
+     ],
+     "q": "Quale centro famoso ti sarebbe piaciuto vedere dal vivo?",
+     "c": "Prova piano il gesto del gancio con un cuscino o una palla morbida."
+    },
+    "pt": {
+     "t": "O papel do poste",
+     "g": "Conhece a âncora no meio da equipa.",
+     "p": [
+      "O poste protege o cesto, desarmando e dificultando lançamentos junto ao aro.",
+      "Junto ao cesto marca com ganchos e trabalho de pés, como o skyhook de Kareem Abdul-Jabbar.",
+      "Faz bloqueios fortes e controla a área restritiva no ataque e na defesa."
+     ],
+     "q": "Que poste famoso gostavas de ter visto jogar ao vivo?",
+     "c": "Experimenta devagar o gesto de um gancho com uma almofada ou bola macia."
+    },
+    "pt_BR": {
+     "t": "O papel do pivô",
+     "g": "Conheça a âncora no meio do time.",
+     "p": [
+      "O pivô protege o aro, dando tocos e dificultando arremessos perto da cesta.",
+      "No garrafão pontua com ganchos e trabalho de pés, como o skyhook de Kareem Abdul-Jabbar.",
+      "Ele faz corta-luzes fortes e domina o garrafão no ataque e na defesa."
+     ],
+     "q": "Que pivô famoso você adoraria ter visto jogar ao vivo?",
+     "c": "Tente devagar o movimento de um gancho com uma almofada ou bola macia."
+    }
+   }
+  }
+ ]
+}

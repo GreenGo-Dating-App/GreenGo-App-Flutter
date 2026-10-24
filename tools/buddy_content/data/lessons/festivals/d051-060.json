@@ -1,0 +1,835 @@
+{
+ "topic": "festivals",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Name days",
+     "g": "Learn how people celebrate their name day in Greece, Poland, Sweden, Hungary and other countries.",
+     "p": [
+      "A name day is the day linked to your first name in a calendar, often based on saints' days or a traditional list.",
+      "In Greece many people celebrate their name day as much as their birthday, with visitors, wishes and sweets.",
+      "In Poland and Hungary friends bring flowers or small gifts, and Sweden prints names for each day in its calendar."
+     ],
+     "q": "Does your name have a name day? Would you like to celebrate it?",
+     "c": "Look up whether your first name, or a friend's, has a name day and on which date."
+    },
+    "de": {
+     "t": "Namenstage",
+     "g": "Erfahre, wie man in Griechenland, Polen, Schweden, Ungarn und anderen Ländern den Namenstag feiert.",
+     "p": [
+      "Der Namenstag ist der Tag, der in einem Kalender mit deinem Vornamen verbunden ist, oft nach Heiligentagen oder einer alten Liste.",
+      "In Griechenland feiern viele ihren Namenstag ebenso wie den Geburtstag, mit Besuch, Glückwünschen und Süßem.",
+      "In Polen und Ungarn bringen Freunde Blumen oder kleine Geschenke, und Schweden druckt für jeden Tag Namen in den Kalender."
+     ],
+     "q": "Hat dein Name einen Namenstag? Würdest du ihn gern feiern?",
+     "c": "Schau nach, ob dein Vorname oder der einer Freundin einen Namenstag hat, und an welchem Datum."
+    },
+    "es": {
+     "t": "El día del santo",
+     "g": "Aprende cómo se celebra el día del santo, u onomástica, en Grecia, Polonia, Suecia, Hungría y otros países.",
+     "p": [
+      "La onomástica es el día unido a tu nombre en un calendario, a menudo según los días de los santos o una lista tradicional.",
+      "En Grecia muchos celebran su onomástica tanto como su cumpleaños, con visitas, felicitaciones y dulces.",
+      "En Polonia y Hungría los amigos traen flores o pequeños regalos, y en Suecia el calendario indica nombres para cada día."
+     ],
+     "q": "¿Tu nombre tiene santo? ¿Te gustaría celebrarlo?",
+     "c": "Busca si tu nombre, o el de un amigo, tiene onomástica y en qué fecha cae."
+    },
+    "fr": {
+     "t": "La fête du prénom",
+     "g": "Découvre comment on fête son prénom en Grèce, en Pologne, en Suède, en Hongrie et ailleurs.",
+     "p": [
+      "La fête du prénom est le jour lié à ton prénom dans un calendrier, souvent selon les saints ou une liste traditionnelle.",
+      "En Grèce, beaucoup fêtent leur prénom autant que leur anniversaire, avec visites, vœux et douceurs.",
+      "En Pologne et en Hongrie, les amis apportent des fleurs ou de petits cadeaux, et la Suède imprime des prénoms pour chaque jour."
+     ],
+     "q": "Ton prénom a-t-il une fête ? Aimerais-tu la célébrer ?",
+     "c": "Cherche si ton prénom, ou celui d'un ami, a une fête et à quelle date."
+    },
+    "it": {
+     "t": "L'onomastico",
+     "g": "Scopri come si festeggia l'onomastico in Grecia, Polonia, Svezia, Ungheria e in altri Paesi.",
+     "p": [
+      "L'onomastico è il giorno legato al tuo nome in un calendario, spesso secondo i santi o una lista tradizionale.",
+      "In Grecia molti festeggiano l'onomastico quanto il compleanno, con visite, auguri e dolci.",
+      "In Polonia e Ungheria gli amici portano fiori o piccoli regali, e in Svezia il calendario riporta nomi per ogni giorno."
+     ],
+     "q": "Il tuo nome ha un onomastico? Ti piacerebbe festeggiarlo?",
+     "c": "Cerca se il tuo nome, o quello di un amico, ha un onomastico e in quale data."
+    },
+    "pt": {
+     "t": "O dia do nome",
+     "g": "Aprende como se celebra o dia do nome na Grécia, na Polónia, na Suécia, na Hungria e noutros países.",
+     "p": [
+      "O dia do nome é o dia ligado ao teu nome próprio num calendário, muitas vezes segundo os dias dos santos ou uma lista tradicional.",
+      "Na Grécia muitas pessoas celebram o dia do nome tanto como o aniversário, com visitas, votos e doces.",
+      "Na Polónia e na Hungria os amigos levam flores ou pequenos presentes, e na Suécia o calendário traz nomes para cada dia."
+     ],
+     "q": "O teu nome tem um dia? Gostavas de o celebrar?",
+     "c": "Procura se o teu nome, ou o de um amigo, tem um dia do nome e em que data."
+    },
+    "pt_BR": {
+     "t": "O dia do nome",
+     "g": "Aprenda como se comemora o dia do nome na Grécia, na Polônia, na Suécia, na Hungria e em outros países.",
+     "p": [
+      "O dia do nome é o dia ligado ao seu primeiro nome num calendário, muitas vezes segundo os dias dos santos ou uma lista tradicional.",
+      "Na Grécia muita gente comemora o dia do nome tanto quanto o aniversário, com visitas, votos e doces.",
+      "Na Polônia e na Hungria os amigos levam flores ou pequenos presentes, e na Suécia o calendário traz nomes para cada dia."
+     ],
+     "q": "O seu nome tem um dia? Você gostaria de comemorá-lo?",
+     "c": "Pesquise se o seu nome, ou o de um amigo, tem um dia do nome e em que data."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Children's festivals",
+     "g": "Explore Children's Day and other celebrations made especially for kids around the world.",
+     "p": [
+      "Many countries celebrate Children's Day on 1 June, while others choose their own date, like 12 October in Brazil.",
+      "In Japan, Children's Day on 5 May is marked by colourful carp-shaped streamers that fly above homes.",
+      "Turkey celebrates children on 23 April, and India on 14 November, with school shows, games and treats."
+     ],
+     "q": "What was your favourite way to celebrate as a child?",
+     "c": "Do one playful thing today that you loved as a child, like drawing, a game or a treat."
+    },
+    "de": {
+     "t": "Kinderfeste",
+     "g": "Entdecke den Kindertag und andere Feste, die speziell für Kinder auf der ganzen Welt gemacht sind.",
+     "p": [
+      "Viele Länder feiern den Kindertag am 1. Juni, andere wählen ein eigenes Datum, etwa den 12. Oktober in Brasilien.",
+      "In Japan wehen am Kindertag, dem 5. Mai, bunte Wimpel in Karpfenform über den Häusern.",
+      "Die Türkei feiert ihre Kinder am 23. April, Indien am 14. November, mit Schulaufführungen, Spielen und Leckereien."
+     ],
+     "q": "Wie hast du als Kind am liebsten gefeiert?",
+     "c": "Mach heute etwas Verspieltes, das du als Kind geliebt hast, etwa malen, ein Spiel oder eine Leckerei."
+    },
+    "es": {
+     "t": "Fiestas infantiles",
+     "g": "Explora el Día del Niño y otras celebraciones pensadas especialmente para los niños del mundo.",
+     "p": [
+      "Muchos países celebran el Día del Niño el 1 de junio, y otros eligen su propia fecha, como el 12 de octubre en Brasil.",
+      "En Japón, el Día de los Niños, el 5 de mayo, se celebra con banderines de colores en forma de carpa sobre las casas.",
+      "Turquía celebra a los niños el 23 de abril y la India el 14 de noviembre, con funciones escolares, juegos y dulces."
+     ],
+     "q": "¿Cuál era tu forma favorita de celebrar cuando eras niño?",
+     "c": "Haz hoy algo divertido que te encantaba de niño, como dibujar, un juego o un dulce."
+    },
+    "fr": {
+     "t": "Les fêtes des enfants",
+     "g": "Découvre la Journée des enfants et d'autres fêtes pensées spécialement pour les enfants du monde.",
+     "p": [
+      "Beaucoup de pays fêtent les enfants le 1er juin, d'autres choisissent leur propre date, comme le 12 octobre au Brésil.",
+      "Au Japon, la fête des enfants, le 5 mai, se reconnaît aux banderoles colorées en forme de carpe au-dessus des maisons.",
+      "La Turquie fête les enfants le 23 avril et l'Inde le 14 novembre, avec spectacles d'école, jeux et friandises."
+     ],
+     "q": "Quelle était ta façon préférée de faire la fête quand tu étais enfant ?",
+     "c": "Fais aujourd'hui une chose ludique que tu adorais enfant : dessiner, un jeu ou une friandise."
+    },
+    "it": {
+     "t": "Feste dei bambini",
+     "g": "Esplora la Giornata dei bambini e altre feste pensate apposta per i bambini di tutto il mondo.",
+     "p": [
+      "Molti Paesi festeggiano i bambini il 1° giugno, altri scelgono una data propria, come il 12 ottobre in Brasile.",
+      "In Giappone la Festa dei bambini, il 5 maggio, si riconosce dalle bandiere colorate a forma di carpa sopra le case.",
+      "La Turchia festeggia i bambini il 23 aprile e l'India il 14 novembre, con spettacoli scolastici, giochi e dolcetti."
+     ],
+     "q": "Qual era il tuo modo preferito di festeggiare da bambino?",
+     "c": "Fai oggi una cosa giocosa che amavi da piccolo, come disegnare, un gioco o un dolcetto."
+    },
+    "pt": {
+     "t": "Festas das crianças",
+     "g": "Explora o Dia da Criança e outras celebrações feitas especialmente para as crianças do mundo.",
+     "p": [
+      "Muitos países, como Portugal, celebram o Dia da Criança a 1 de junho, e outros escolhem outra data, como o Brasil a 12 de outubro.",
+      "No Japão, o Dia das Crianças, a 5 de maio, é marcado por bandeirolas coloridas em forma de carpa por cima das casas.",
+      "A Turquia celebra as crianças a 23 de abril e a Índia a 14 de novembro, com espetáculos nas escolas, jogos e guloseimas."
+     ],
+     "q": "Qual era a tua forma preferida de festejar quando eras criança?",
+     "c": "Faz hoje uma coisa divertida de que gostavas em criança, como desenhar, um jogo ou uma guloseima."
+    },
+    "pt_BR": {
+     "t": "Festas das crianças",
+     "g": "Explore o Dia das Crianças e outras celebrações feitas especialmente para a criançada do mundo.",
+     "p": [
+      "Muitos países celebram o Dia das Crianças em 1º de junho, e outros escolhem outra data, como o Brasil, em 12 de outubro.",
+      "No Japão, o Dia das Crianças, em 5 de maio, é marcado por bandeirolas coloridas em forma de carpa sobre as casas.",
+      "A Turquia celebra as crianças em 23 de abril e a Índia em 14 de novembro, com apresentações na escola, jogos e guloseimas."
+     ],
+     "q": "Qual era o seu jeito favorito de comemorar quando você era criança?",
+     "c": "Faça hoje algo divertido que você amava na infância, como desenhar, um jogo ou uma guloseima."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hinamatsuri, the doll festival",
+     "g": "Discover Hinamatsuri, Japan's girls' day on 3 March, with its beautiful tiered doll displays.",
+     "p": [
+      "On 3 March families with daughters display dolls of an emperor, an empress and their court on steps covered in red cloth.",
+      "The dolls wear elegant clothes from Japan's old imperial court, and the display is a wish for girls' health and happiness.",
+      "Special foods include diamond-shaped pink, white and green rice cakes, colourful rice crackers and chirashi sushi."
+     ],
+     "q": "Is there a festival in your culture that celebrates children or a special stage of life?",
+     "c": "Look at photos of a hina doll display and count how many tiers and figures it has."
+    },
+    "de": {
+     "t": "Hinamatsuri, das Puppenfest",
+     "g": "Entdecke Hinamatsuri, Japans Mädchentag am 3. März, mit seinen prächtigen Puppen auf Stufen.",
+     "p": [
+      "Am 3. März stellen Familien mit Töchtern Puppen eines Kaisers, einer Kaiserin und ihres Hofstaats auf rot bezogenen Stufen auf.",
+      "Die Puppen tragen elegante Gewänder des alten japanischen Kaiserhofs; die Aufstellung ist ein Wunsch für Gesundheit und Glück der Mädchen.",
+      "Zum Fest gibt es rautenförmige Reiskuchen in Rosa, Weiß und Grün, bunte Reiscracker und Chirashi-Sushi."
+     ],
+     "q": "Gibt es in deiner Kultur ein Fest, das Kinder oder einen besonderen Lebensabschnitt feiert?",
+     "c": "Sieh dir Fotos einer Hina-Puppenaufstellung an und zähle, wie viele Stufen und Figuren sie hat."
+    },
+    "es": {
+     "t": "Hinamatsuri, la fiesta de las muñecas",
+     "g": "Descubre Hinamatsuri, el día de las niñas en Japón, el 3 de marzo, con sus preciosas muñecas en escalones.",
+     "p": [
+      "El 3 de marzo las familias con hijas exponen muñecas de un emperador, una emperatriz y su corte sobre escalones cubiertos de tela roja.",
+      "Las muñecas visten ropa elegante de la antigua corte imperial japonesa, y la exposición desea salud y felicidad a las niñas.",
+      "Se comen pasteles de arroz en forma de rombo rosa, blanco y verde, galletitas de arroz de colores y chirashi sushi."
+     ],
+     "q": "¿Hay alguna fiesta en tu cultura que celebre a los niños o una etapa especial de la vida?",
+     "c": "Mira fotos de una exposición de muñecas hina y cuenta cuántos escalones y figuras tiene."
+    },
+    "fr": {
+     "t": "Hinamatsuri, la fête des poupées",
+     "g": "Découvre Hinamatsuri, la fête des filles au Japon le 3 mars, avec ses magnifiques poupées disposées en gradins.",
+     "p": [
+      "Le 3 mars, les familles avec des filles exposent les poupées d'un empereur, d'une impératrice et de leur cour sur des gradins rouges.",
+      "Les poupées portent les habits élégants de l'ancienne cour impériale ; l'ensemble souhaite santé et bonheur aux filles.",
+      "On mange des gâteaux de riz en losange rose, blanc et vert, des petits crackers de riz colorés et du chirashi sushi."
+     ],
+     "q": "Existe-t-il dans ta culture une fête qui célèbre les enfants ou une étape particulière de la vie ?",
+     "c": "Regarde des photos d'un présentoir de poupées hina et compte combien de gradins et de figurines il compte."
+    },
+    "it": {
+     "t": "Hinamatsuri, la festa delle bambole",
+     "g": "Scopri Hinamatsuri, la festa delle bambine in Giappone il 3 marzo, con le sue splendide bambole disposte su gradini.",
+     "p": [
+      "Il 3 marzo le famiglie con figlie espongono le bambole di un imperatore, un'imperatrice e la loro corte su gradini coperti di rosso.",
+      "Le bambole indossano abiti eleganti dell'antica corte imperiale giapponese; l'esposizione augura salute e felicità alle bambine.",
+      "Si mangiano dolci di riso a rombo rosa, bianchi e verdi, crackers di riso colorati e chirashi sushi."
+     ],
+     "q": "C'è una festa nella tua cultura che celebra i bambini o una tappa speciale della vita?",
+     "c": "Guarda le foto di un'esposizione di bambole hina e conta quanti gradini e personaggi ha."
+    },
+    "pt": {
+     "t": "Hinamatsuri, a festa das bonecas",
+     "g": "Descobre o Hinamatsuri, o dia das meninas no Japão a 3 de março, com as suas belas bonecas em degraus.",
+     "p": [
+      "A 3 de março as famílias com filhas expõem bonecas de um imperador, uma imperatriz e a sua corte em degraus cobertos de pano vermelho.",
+      "As bonecas usam roupas elegantes da antiga corte imperial japonesa, e a exposição deseja saúde e felicidade às meninas.",
+      "Comem-se bolos de arroz em losango cor-de-rosa, brancos e verdes, bolachinhas de arroz coloridas e chirashi sushi."
+     ],
+     "q": "Há alguma festa na tua cultura que celebre as crianças ou uma fase especial da vida?",
+     "c": "Vê fotografias de uma exposição de bonecas hina e conta quantos degraus e figuras tem."
+    },
+    "pt_BR": {
+     "t": "Hinamatsuri, a festa das bonecas",
+     "g": "Descubra o Hinamatsuri, o dia das meninas no Japão em 3 de março, com suas lindas bonecas em degraus.",
+     "p": [
+      "Em 3 de março as famílias com filhas expõem bonecas de um imperador, uma imperatriz e sua corte em degraus cobertos de pano vermelho.",
+      "As bonecas usam roupas elegantes da antiga corte imperial japonesa, e a exposição deseja saúde e felicidade às meninas.",
+      "Comem-se bolinhos de arroz em losango rosa, branco e verde, biscoitinhos de arroz coloridos e chirashi sushi."
+     ],
+     "q": "Existe alguma festa na sua cultura que celebre as crianças ou uma fase especial da vida?",
+     "c": "Veja fotos de uma exposição de bonecas hina e conte quantos degraus e figuras ela tem."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mother's and Father's Day",
+     "g": "Compare the different dates and customs for honouring parents in countries around the world.",
+     "p": [
+      "Mother's Day is the second Sunday of May in the US, Brazil and Italy, but in the UK it falls in March or early April.",
+      "Father's Day is the third Sunday of June in the US and UK, while Italy, Spain and Portugal celebrate on 19 March.",
+      "Common gestures include breakfast in bed, handmade cards, flowers and a family meal."
+     ],
+     "q": "How do you like to thank the people who raised or guided you?",
+     "c": "Write a short thank-you note to a parent or someone who cared for you like one."
+    },
+    "de": {
+     "t": "Mutter- und Vatertag",
+     "g": "Vergleiche die verschiedenen Termine und Bräuche, mit denen Länder in aller Welt Eltern ehren.",
+     "p": [
+      "Muttertag ist in Deutschland, den USA und Brasilien der zweite Sonntag im Mai, in Großbritannien aber im März oder Anfang April.",
+      "Vatertag ist in den USA und Großbritannien der dritte Sonntag im Juni; Deutschland feiert an Christi Himmelfahrt, Italien am 19. März.",
+      "Typische Gesten sind Frühstück im Bett, selbst gemachte Karten, Blumen und ein gemeinsames Essen."
+     ],
+     "q": "Wie dankst du am liebsten den Menschen, die dich großgezogen oder begleitet haben?",
+     "c": "Schreib eine kurze Dankeskarte an ein Elternteil oder jemanden, der sich wie eines um dich gekümmert hat."
+    },
+    "es": {
+     "t": "El Día de la Madre y del Padre",
+     "g": "Compara las distintas fechas y costumbres para homenajear a los padres en países de todo el mundo.",
+     "p": [
+      "El Día de la Madre es el primer domingo de mayo en España, el 10 de mayo en México y en marzo o abril en el Reino Unido.",
+      "El Día del Padre es el 19 de marzo en España, Italia y Portugal, y el tercer domingo de junio en México, EE. UU. y Reino Unido.",
+      "Los gestos habituales son el desayuno en la cama, tarjetas hechas a mano, flores y una comida en familia."
+     ],
+     "q": "¿Cómo te gusta dar las gracias a quienes te criaron o te guiaron?",
+     "c": "Escribe una nota breve de agradecimiento a tu madre, tu padre o alguien que te cuidó como tal."
+    },
+    "fr": {
+     "t": "La fête des mères et des pères",
+     "g": "Compare les dates et les coutumes pour honorer les parents dans les pays du monde entier.",
+     "p": [
+      "En France, la fête des mères a lieu le plus souvent le dernier dimanche de mai ; aux États-Unis, le deuxième dimanche de mai.",
+      "La fête des pères est le troisième dimanche de juin en France, aux États-Unis et au Royaume-Uni, mais le 19 mars en Italie et en Espagne.",
+      "Les gestes courants : petit-déjeuner au lit, cartes faites main, fleurs et repas en famille."
+     ],
+     "q": "Comment aimes-tu remercier les personnes qui t'ont élevé ou guidé ?",
+     "c": "Écris un petit mot de remerciement à un parent ou à quelqu'un qui a pris soin de toi comme tel."
+    },
+    "it": {
+     "t": "Festa della mamma e del papà",
+     "g": "Confronta le diverse date e usanze per onorare i genitori nei Paesi di tutto il mondo.",
+     "p": [
+      "La Festa della mamma è la seconda domenica di maggio in Italia, negli USA e in Brasile, ma nel Regno Unito cade a marzo o inizio aprile.",
+      "La Festa del papà in Italia, Spagna e Portogallo è il 19 marzo, mentre negli USA e nel Regno Unito è la terza domenica di giugno.",
+      "I gesti più comuni sono la colazione a letto, biglietti fatti a mano, fiori e un pranzo in famiglia."
+     ],
+     "q": "Come ti piace ringraziare le persone che ti hanno cresciuto o guidato?",
+     "c": "Scrivi un breve biglietto di ringraziamento a un genitore o a qualcuno che si è preso cura di te come tale."
+    },
+    "pt": {
+     "t": "Dia da Mãe e Dia do Pai",
+     "g": "Compara as diferentes datas e costumes para homenagear os pais em países de todo o mundo.",
+     "p": [
+      "Em Portugal o Dia da Mãe é no primeiro domingo de maio; no Brasil e nos EUA é no segundo, e no Reino Unido em março ou abril.",
+      "O Dia do Pai é a 19 de março em Portugal, Espanha e Itália, e no terceiro domingo de junho nos EUA e no Reino Unido.",
+      "Os gestos habituais são o pequeno-almoço na cama, postais feitos à mão, flores e uma refeição em família."
+     ],
+     "q": "Como gostas de agradecer a quem te criou ou te guiou?",
+     "c": "Escreve um pequeno bilhete de agradecimento à tua mãe, ao teu pai ou a alguém que cuidou de ti como tal."
+    },
+    "pt_BR": {
+     "t": "Dia das Mães e Dia dos Pais",
+     "g": "Compare as diferentes datas e costumes para homenagear os pais em países do mundo todo.",
+     "p": [
+      "No Brasil o Dia das Mães é no segundo domingo de maio, como nos EUA e na Itália; no Reino Unido cai em março ou abril.",
+      "O Dia dos Pais no Brasil é no segundo domingo de agosto; nos EUA é em junho, e na Itália, Espanha e Portugal em 19 de março.",
+      "Os gestos comuns são café da manhã na cama, cartões feitos à mão, flores e um almoço em família."
+     ],
+     "q": "Como você gosta de agradecer às pessoas que criaram ou guiaram você?",
+     "c": "Escreva um bilhete curto de agradecimento para sua mãe, seu pai ou alguém que cuidou de você assim."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Teachers' Day around the world",
+     "g": "See how countries thank their teachers with cards, flowers, songs and school events.",
+     "p": [
+      "World Teachers' Day is on 5 October, and many countries also have their own national date.",
+      "India celebrates on 5 September, China on 10 September and Brazil on 15 October; in Korea students give carnations in May.",
+      "Students often prepare cards, songs, small gifts or a special assembly, and sometimes older pupils teach a lesson."
+     ],
+     "q": "Which teacher made a real difference in your life, and how?",
+     "c": "Send a thank-you message to a teacher, coach or mentor who helped you, or write it in your notes."
+    },
+    "de": {
+     "t": "Lehrertag rund um die Welt",
+     "g": "Erfahre, wie Länder ihren Lehrkräften mit Karten, Blumen, Liedern und Schulfeiern danken.",
+     "p": [
+      "Der Weltlehrertag ist am 5. Oktober, und viele Länder haben zusätzlich ein eigenes nationales Datum.",
+      "Indien feiert am 5. September, China am 10. September und Brasilien am 15. Oktober; in Korea schenken Schüler im Mai Nelken.",
+      "Schüler bereiten oft Karten, Lieder, kleine Geschenke oder eine besondere Feier vor, manchmal unterrichten ältere Schüler selbst."
+     ],
+     "q": "Welche Lehrkraft hat in deinem Leben wirklich etwas bewegt, und wie?",
+     "c": "Schick einer Lehrerin, einem Trainer oder Mentor eine Dankesnachricht, oder schreib sie in deine Notizen."
+    },
+    "es": {
+     "t": "El Día del Maestro en el mundo",
+     "g": "Descubre cómo los países agradecen a sus docentes con tarjetas, flores, canciones y actos escolares.",
+     "p": [
+      "El Día Mundial de los Docentes es el 5 de octubre, y muchos países tienen además su propia fecha nacional.",
+      "La India lo celebra el 5 de septiembre, China el 10 de septiembre y Brasil el 15 de octubre; en Corea se regalan claveles en mayo.",
+      "Los alumnos suelen preparar tarjetas, canciones, pequeños regalos o un acto especial, y a veces los mayores dan una clase."
+     ],
+     "q": "¿Qué profesor marcó de verdad tu vida y cómo?",
+     "c": "Envía un mensaje de agradecimiento a un profesor, entrenador o mentor que te ayudó, o escríbelo en tus notas."
+    },
+    "fr": {
+     "t": "La fête des enseignants dans le monde",
+     "g": "Découvre comment les pays remercient leurs enseignants avec cartes, fleurs, chansons et fêtes à l'école.",
+     "p": [
+      "La Journée mondiale des enseignants a lieu le 5 octobre, et beaucoup de pays ont aussi leur propre date.",
+      "L'Inde la fête le 5 septembre, la Chine le 10 septembre et le Brésil le 15 octobre ; en Corée, on offre des œillets en mai.",
+      "Les élèves préparent souvent cartes, chansons, petits cadeaux ou une cérémonie, et parfois les grands donnent un cours."
+     ],
+     "q": "Quel enseignant a vraiment compté dans ta vie, et comment ?",
+     "c": "Envoie un message de remerciement à un enseignant, un coach ou un mentor qui t'a aidé, ou écris-le dans tes notes."
+    },
+    "it": {
+     "t": "La Giornata degli insegnanti nel mondo",
+     "g": "Scopri come i Paesi ringraziano i loro insegnanti con biglietti, fiori, canzoni ed eventi scolastici.",
+     "p": [
+      "La Giornata mondiale degli insegnanti è il 5 ottobre, e molti Paesi hanno anche una propria data nazionale.",
+      "L'India festeggia il 5 settembre, la Cina il 10 settembre e il Brasile il 15 ottobre; in Corea gli studenti regalano garofani a maggio.",
+      "Gli studenti preparano spesso biglietti, canzoni, piccoli regali o una cerimonia, e a volte i più grandi tengono una lezione."
+     ],
+     "q": "Quale insegnante ha fatto davvero la differenza nella tua vita, e come?",
+     "c": "Manda un messaggio di ringraziamento a un insegnante, allenatore o mentore che ti ha aiutato, o scrivilo nelle tue note."
+    },
+    "pt": {
+     "t": "O Dia do Professor pelo mundo",
+     "g": "Descobre como os países agradecem aos professores com postais, flores, canções e eventos na escola.",
+     "p": [
+      "O Dia Mundial do Professor é a 5 de outubro, e muitos países têm também a sua própria data nacional.",
+      "A Índia celebra a 5 de setembro, a China a 10 de setembro e o Brasil a 15 de outubro; na Coreia oferecem-se cravos em maio.",
+      "Os alunos preparam muitas vezes postais, canções, pequenos presentes ou uma sessão especial, e às vezes os mais velhos dão uma aula."
+     ],
+     "q": "Que professor fez mesmo a diferença na tua vida e como?",
+     "c": "Envia uma mensagem de agradecimento a um professor, treinador ou mentor que te ajudou, ou escreve-a nas tuas notas."
+    },
+    "pt_BR": {
+     "t": "O Dia do Professor pelo mundo",
+     "g": "Descubra como os países agradecem aos professores com cartões, flores, músicas e eventos na escola.",
+     "p": [
+      "O Dia Mundial dos Professores é em 5 de outubro, e muitos países também têm sua própria data nacional.",
+      "A Índia comemora em 5 de setembro, a China em 10 de setembro e o Brasil em 15 de outubro; na Coreia os alunos dão cravos em maio.",
+      "Os alunos costumam preparar cartões, músicas, pequenos presentes ou uma homenagem, e às vezes os mais velhos dão uma aula."
+     ],
+     "q": "Qual professor fez de verdade a diferença na sua vida, e como?",
+     "c": "Mande uma mensagem de agradecimento a um professor, treinador ou mentor que ajudou você, ou escreva nas suas notas."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Midsummer in Sweden",
+     "g": "Discover Midsommar, with maypoles, flower crowns, strawberries and the long bright night of a Swedish summer.",
+     "p": [
+      "Midsummer Eve falls on a Friday between 19 and 25 June, close to the summer solstice, when it barely gets dark in Sweden.",
+      "People raise a leafy pole decorated with flowers and dance around it, including a playful song about little frogs.",
+      "Flower crowns, pickled herring, new potatoes and fresh strawberries with cream are classic parts of the day."
+     ],
+     "q": "Would you enjoy a night when the sun hardly sets? What would you do with it?",
+     "c": "Make a small crown or bunch of wild or garden flowers, or simply place a few flowers on your table."
+    },
+    "de": {
+     "t": "Mittsommer in Schweden",
+     "g": "Entdecke Midsommar mit Mittsommerbaum, Blumenkränzen, Erdbeeren und der langen hellen Nacht des schwedischen Sommers.",
+     "p": [
+      "Mittsommerabend fällt auf einen Freitag zwischen dem 19. und 25. Juni, nahe der Sonnenwende, wenn es in Schweden kaum dunkel wird.",
+      "Man stellt eine mit Laub und Blumen geschmückte Stange auf und tanzt darum, auch zu einem lustigen Lied über kleine Frösche.",
+      "Blumenkränze, eingelegter Hering, neue Kartoffeln und frische Erdbeeren mit Sahne gehören klassisch dazu."
+     ],
+     "q": "Würdest du eine Nacht mögen, in der die Sonne kaum untergeht? Was würdest du damit anfangen?",
+     "c": "Binde einen kleinen Kranz oder Strauß aus Wiesen- oder Gartenblumen, oder stell einfach ein paar Blumen auf den Tisch."
+    },
+    "es": {
+     "t": "El solsticio de verano en Suecia",
+     "g": "Descubre Midsommar, con palos de mayo, coronas de flores, fresas y la larga noche clara del verano sueco.",
+     "p": [
+      "La víspera de Midsommar cae un viernes entre el 19 y el 25 de junio, cerca del solsticio, cuando en Suecia apenas oscurece.",
+      "Se levanta un poste adornado con hojas y flores y se baila a su alrededor, incluida una canción divertida sobre ranitas.",
+      "Las coronas de flores, el arenque en escabeche, las patatas nuevas y las fresas con nata son clásicos del día."
+     ],
+     "q": "¿Te gustaría una noche en la que el sol casi no se pone? ¿Qué harías?",
+     "c": "Haz una pequeña corona o un ramillete de flores silvestres o del jardín, o pon unas flores en tu mesa."
+    },
+    "fr": {
+     "t": "La Saint-Jean en Suède",
+     "g": "Découvre Midsommar : mât fleuri, couronnes de fleurs, fraises et longue nuit claire de l'été suédois.",
+     "p": [
+      "La veille de Midsommar tombe un vendredi entre le 19 et le 25 juin, près du solstice, quand il fait à peine nuit en Suède.",
+      "On dresse un mât orné de feuillage et de fleurs et on danse autour, notamment sur une chanson amusante sur les petites grenouilles.",
+      "Couronnes de fleurs, hareng mariné, pommes de terre nouvelles et fraises à la crème sont les classiques du jour."
+     ],
+     "q": "Aimerais-tu vivre une nuit où le soleil se couche à peine ? Qu'en ferais-tu ?",
+     "c": "Fais une petite couronne ou un bouquet de fleurs des champs ou du jardin, ou pose simplement quelques fleurs sur ta table."
+    },
+    "it": {
+     "t": "Il solstizio d'estate in Svezia",
+     "g": "Scopri Midsommar, con il palo fiorito, le corone di fiori, le fragole e la lunga notte chiara dell'estate svedese.",
+     "p": [
+      "La vigilia di Midsommar cade di venerdì tra il 19 e il 25 giugno, vicino al solstizio, quando in Svezia quasi non fa buio.",
+      "Si innalza un palo decorato con foglie e fiori e ci si balla intorno, anche con una canzone buffa sulle piccole rane.",
+      "Corone di fiori, aringhe marinate, patate novelle e fragole fresche con panna sono i classici della giornata."
+     ],
+     "q": "Ti piacerebbe una notte in cui il sole tramonta appena? Cosa faresti?",
+     "c": "Fai una piccola corona o un mazzolino di fiori di campo o del giardino, o metti semplicemente qualche fiore sul tavolo."
+    },
+    "pt": {
+     "t": "O Midsommar na Suécia",
+     "g": "Descobre o Midsommar, com o mastro florido, coroas de flores, morangos e a longa noite clara do verão sueco.",
+     "p": [
+      "A véspera do Midsommar calha numa sexta-feira entre 19 e 25 de junho, perto do solstício, quando na Suécia quase não escurece.",
+      "Ergue-se um mastro enfeitado com folhas e flores e dança-se à volta dele, incluindo uma canção divertida sobre rãzinhas.",
+      "Coroas de flores, arenque em conserva, batatas novas e morangos frescos com natas são os clássicos do dia."
+     ],
+     "q": "Gostavas de uma noite em que o sol quase não se põe? O que farias?",
+     "c": "Faz uma pequena coroa ou um raminho de flores do campo ou do jardim, ou põe simplesmente umas flores na mesa."
+    },
+    "pt_BR": {
+     "t": "O Midsommar na Suécia",
+     "g": "Descubra o Midsommar, com o mastro florido, coroas de flores, morangos e a longa noite clara do verão sueco.",
+     "p": [
+      "A véspera do Midsommar cai numa sexta-feira entre 19 e 25 de junho, perto do solstício, quando na Suécia quase não escurece.",
+      "As pessoas erguem um mastro enfeitado com folhas e flores e dançam em volta dele, incluindo uma música engraçada sobre sapinhos.",
+      "Coroas de flores, arenque em conserva, batatas novas e morangos frescos com creme são os clássicos do dia."
+     ],
+     "q": "Você gostaria de uma noite em que o sol quase não se põe? O que você faria?",
+     "c": "Faça uma pequena coroa ou um raminho de flores do campo ou do jardim, ou apenas coloque algumas flores na mesa."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saint John's Eve",
+     "g": "Discover the midsummer bonfires, music and night-time gatherings by the sea of Saint John's Eve in Southern Europe.",
+     "p": [
+      "Saint John's Eve is the night of 23 June, close to the summer solstice, and it is one of the liveliest nights of the year.",
+      "In Spain, people gather on beaches around bonfires; some jump over small flames or step into the sea at midnight for luck.",
+      "In Catalonia it is a night of fireworks and coca, a sweet flatbread topped with fruit and pine nuts."
+     ],
+     "q": "Have you ever spent a summer night outdoors with friends, around a fire or by the water?",
+     "c": "Spend a few minutes outside this evening and notice the sounds, light and smells of the night."
+    },
+    "de": {
+     "t": "Johannisnacht",
+     "g": "Entdecke die Johannisnacht in Südeuropa mit Mittsommerfeuern, Musik und nächtlichen Treffen am Meer.",
+     "p": [
+      "Die Johannisnacht ist die Nacht zum 24. Juni, nahe der Sommersonnenwende, und eine der lebhaftesten Nächte des Jahres.",
+      "In Spanien versammelt man sich an Stränden um Feuer; manche springen über kleine Flammen oder gehen um Mitternacht ins Meer.",
+      "In Katalonien ist es eine Nacht der Feuerwerke und der Coca, eines süßen Fladens mit Früchten und Pinienkernen."
+     ],
+     "q": "Hast du schon einmal eine Sommernacht mit Freunden draußen verbracht, am Feuer oder am Wasser?",
+     "c": "Verbring heute Abend ein paar Minuten draußen und achte auf die Geräusche, das Licht und die Gerüche der Nacht."
+    },
+    "es": {
+     "t": "La noche de San Juan",
+     "g": "Descubre las hogueras, la música y las reuniones nocturnas junto al mar de la noche de San Juan en el sur de Europa.",
+     "p": [
+      "La noche de San Juan es la del 23 de junio, cerca del solsticio de verano, y es una de las más animadas del año.",
+      "En España la gente se reúne en las playas alrededor de hogueras; algunos saltan pequeñas llamas o se meten en el mar a medianoche.",
+      "En Cataluña es una noche de petardos, fuegos artificiales y coca, una torta dulce con fruta confitada y piñones."
+     ],
+     "q": "¿Has pasado alguna vez una noche de verano al aire libre con amigos, junto a un fuego o al lado del agua?",
+     "c": "Pasa unos minutos fuera esta noche y fíjate en los sonidos, la luz y los olores de la noche."
+    },
+    "fr": {
+     "t": "La nuit de la Saint-Jean",
+     "g": "Découvre les feux, la musique et les veillées au bord de la mer de la nuit de la Saint-Jean en Europe du Sud.",
+     "p": [
+      "La nuit de la Saint-Jean est celle du 23 juin, près du solstice d'été, et c'est l'une des plus animées de l'année.",
+      "En Espagne, on se retrouve sur les plages autour de feux ; certains sautent par-dessus de petites flammes ou entrent dans la mer à minuit.",
+      "En Catalogne, c'est une nuit de feux d'artifice et de coca, une galette sucrée garnie de fruits confits et de pignons."
+     ],
+     "q": "As-tu déjà passé une nuit d'été dehors avec des amis, autour d'un feu ou au bord de l'eau ?",
+     "c": "Passe quelques minutes dehors ce soir et remarque les sons, la lumière et les odeurs de la nuit."
+    },
+    "it": {
+     "t": "La notte di San Giovanni",
+     "g": "Scopri i falò, la musica e i ritrovi notturni in riva al mare della notte di San Giovanni nel Sud Europa.",
+     "p": [
+      "La notte di San Giovanni è quella del 23 giugno, vicino al solstizio d'estate, ed è una delle più vivaci dell'anno.",
+      "In Spagna ci si riunisce sulle spiagge attorno ai falò; alcuni saltano piccole fiamme o entrano in mare a mezzanotte.",
+      "In Catalogna è una notte di fuochi d'artificio e di coca, una focaccia dolce con frutta candita e pinoli."
+     ],
+     "q": "Hai mai passato una notte d'estate all'aperto con amici, attorno a un fuoco o in riva all'acqua?",
+     "c": "Passa qualche minuto fuori stasera e nota i suoni, la luce e i profumi della notte."
+    },
+    "pt": {
+     "t": "A noite de São João",
+     "g": "Descobre as fogueiras, a música e os encontros noturnos junto ao mar da noite de São João no sul da Europa.",
+     "p": [
+      "A noite de São João é a de 23 de junho, perto do solstício de verão, e é uma das mais animadas do ano.",
+      "Em Espanha as pessoas juntam-se nas praias à volta de fogueiras; alguns saltam pequenas chamas ou entram no mar à meia-noite.",
+      "Na Catalunha é uma noite de fogo de artifício e de coca, um bolo achatado doce com fruta cristalizada e pinhões."
+     ],
+     "q": "Já passaste uma noite de verão ao ar livre com amigos, à volta de uma fogueira ou junto à água?",
+     "c": "Passa uns minutos lá fora esta noite e repara nos sons, na luz e nos cheiros da noite."
+    },
+    "pt_BR": {
+     "t": "A noite de São João",
+     "g": "Descubra as fogueiras, a música e os encontros noturnos à beira-mar da noite de São João no sul da Europa.",
+     "p": [
+      "A noite de São João é a de 23 de junho, perto do solstício de verão na Europa, e é uma das mais animadas do ano.",
+      "Na Espanha as pessoas se reúnem nas praias em volta de fogueiras; alguns pulam pequenas chamas ou entram no mar à meia-noite.",
+      "Na Catalunha é uma noite de fogos de artifício e de coca, uma torta doce achatada com frutas cristalizadas e pinhões."
+     ],
+     "q": "Você já passou uma noite de verão ao ar livre com amigos, em volta de uma fogueira ou perto da água?",
+     "c": "Passe alguns minutos lá fora hoje à noite e repare nos sons, na luz e nos cheiros da noite."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Festa Junina in Brazil",
+     "g": "Join Brazil's country-style June parties with quadrilha dancing, corn dishes, bonfires and plaid shirts.",
+     "p": [
+      "Festas Juninas take place in June and honour Saint Anthony, Saint John and Saint Peter, with a big bonfire at the centre.",
+      "People dress in a playful country style with plaid shirts and straw hats and dance the quadrilha, a lively group dance.",
+      "Corn rules the menu: corn on the cob, pamonha, canjica and cakes, plus peanut sweets like paçoca and pé-de-moleque."
+     ],
+     "q": "Which would you enjoy most at a June party: the dancing, the games or the food?",
+     "c": "Cook or taste one simple corn dish today, like corn on the cob or popcorn."
+    },
+    "de": {
+     "t": "Festa Junina in Brasilien",
+     "g": "Feiere Brasiliens ländliche Junifeste mit Quadrilha-Tanz, Maisgerichten, Lagerfeuern und karierten Hemden.",
+     "p": [
+      "Die Festas Juninas finden im Juni zu Ehren der Heiligen Antonius, Johannes und Petrus statt, mit einem großen Feuer in der Mitte.",
+      "Man kleidet sich verspielt ländlich mit karierten Hemden und Strohhüten und tanzt die Quadrilha, einen fröhlichen Gruppentanz.",
+      "Mais regiert die Speisekarte: Maiskolben, Pamonha, Canjica und Kuchen, dazu Erdnusssüßes wie Paçoca und Pé-de-moleque."
+     ],
+     "q": "Was würde dir auf einem Junifest am meisten gefallen: das Tanzen, die Spiele oder das Essen?",
+     "c": "Koch oder probier heute ein einfaches Maisgericht, etwa einen Maiskolben oder Popcorn."
+    },
+    "es": {
+     "t": "La Festa Junina en Brasil",
+     "g": "Únete a las fiestas campestres de junio en Brasil con baile de quadrilha, platos de maíz, hogueras y camisas de cuadros.",
+     "p": [
+      "Las Festas Juninas se celebran en junio en honor a San Antonio, San Juan y San Pedro, con una gran hoguera en el centro.",
+      "La gente se viste con un estilo campestre divertido, con camisas de cuadros y sombreros de paja, y baila la quadrilha en grupo.",
+      "El maíz manda en el menú: mazorcas, pamonha, canjica y bizcochos, además de dulces de cacahuete como la paçoca."
+     ],
+     "q": "¿Qué disfrutarías más en una fiesta de junio: el baile, los juegos o la comida?",
+     "c": "Cocina o prueba hoy un plato sencillo de maíz, como una mazorca o palomitas."
+    },
+    "fr": {
+     "t": "La Festa Junina au Brésil",
+     "g": "Rejoins les fêtes campagnardes de juin au Brésil : danse quadrilha, plats de maïs, feux de joie et chemises à carreaux.",
+     "p": [
+      "Les Festas Juninas ont lieu en juin en l'honneur de saint Antoine, saint Jean et saint Pierre, autour d'un grand feu.",
+      "On s'habille en style campagnard amusant, chemise à carreaux et chapeau de paille, et on danse la quadrilha, une danse de groupe.",
+      "Le maïs règne au menu : épis grillés, pamonha, canjica et gâteaux, avec des douceurs à la cacahuète comme la paçoca."
+     ],
+     "q": "Qu'aimerais-tu le plus dans une fête de juin : la danse, les jeux ou la nourriture ?",
+     "c": "Cuisine ou goûte aujourd'hui un plat simple à base de maïs, comme un épi grillé ou du pop-corn."
+    },
+    "it": {
+     "t": "La Festa Junina in Brasile",
+     "g": "Partecipa alle feste campestri di giugno in Brasile con la danza quadrilha, piatti di mais, falò e camicie a quadri.",
+     "p": [
+      "Le Festas Juninas si tengono a giugno in onore di Sant'Antonio, San Giovanni e San Pietro, con un grande falò al centro.",
+      "Ci si veste in stile campagnolo scherzoso, con camicie a quadri e cappelli di paglia, e si balla la quadrilha, una danza di gruppo.",
+      "Il mais domina il menù: pannocchie, pamonha, canjica e torte, più dolci di arachidi come la paçoca."
+     ],
+     "q": "Cosa ti piacerebbe di più a una festa di giugno: il ballo, i giochi o il cibo?",
+     "c": "Cucina o assaggia oggi un piatto semplice a base di mais, come una pannocchia o i popcorn."
+    },
+    "pt": {
+     "t": "A Festa Junina no Brasil",
+     "g": "Junta-te às festas de junho do Brasil, ao estilo do campo, com quadrilha, pratos de milho, fogueiras e camisas aos quadrados.",
+     "p": [
+      "As Festas Juninas acontecem em junho em honra de Santo António, São João e São Pedro, com uma grande fogueira ao centro.",
+      "As pessoas vestem-se ao estilo caipira com camisas aos quadrados e chapéus de palha e dançam a quadrilha, uma dança de grupo.",
+      "O milho manda na ementa: maçarocas, pamonha, canjica e bolos, além de doces de amendoim como a paçoca e o pé-de-moleque."
+     ],
+     "q": "O que mais gostavas numa festa de junho: a dança, os jogos ou a comida?",
+     "c": "Cozinha ou prova hoje um prato simples de milho, como uma maçaroca ou pipocas."
+    },
+    "pt_BR": {
+     "t": "A Festa Junina no Brasil",
+     "g": "Entre no clima das festas caipiras de junho, com quadrilha, comidas de milho, fogueira e camisa xadrez.",
+     "p": [
+      "As Festas Juninas acontecem em junho em homenagem a Santo Antônio, São João e São Pedro, com uma grande fogueira no centro.",
+      "O pessoal se veste de caipira com camisa xadrez e chapéu de palha e dança a quadrilha, uma animada dança em grupo.",
+      "O milho manda no cardápio: milho cozido, pamonha, canjica e bolos, além de doces de amendoim como paçoca e pé-de-moleque."
+     ],
+     "q": "O que você mais curtiria numa festa junina: a quadrilha, as brincadeiras ou as comidas?",
+     "c": "Prepare ou prove hoje uma comida simples de milho, como milho cozido ou pipoca."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Santos Populares in Portugal",
+     "g": "Explore Lisbon's Saint Anthony and Porto's Saint John festivals, with grilled sardines and little basil pots.",
+     "p": [
+      "In June Portugal celebrates its popular saints; Lisbon's big night is 12 to 13 June, for Saint Anthony.",
+      "Neighbourhoods march down the main avenue in colourful costumes, and streets fill with grilled sardines on bread.",
+      "People give small pots of basil with a paper flower and a short verse; in Porto, on 23 June, friends tap heads with toy hammers."
+     ],
+     "q": "Which would you enjoy more: Lisbon's neighbourhood marches or Porto's playful night by the river?",
+     "c": "Write a four-line popular verse, like the ones on basil pots, about your town or a friend."
+    },
+    "de": {
+     "t": "Santos Populares in Portugal",
+     "g": "Entdecke Lissabons Antoniusfest und Portos Johannisfest mit gegrillten Sardinen und kleinen Basilikumtöpfen.",
+     "p": [
+      "Im Juni feiert Portugal seine Volksheiligen; Lissabons große Nacht ist vom 12. auf den 13. Juni, für den heiligen Antonius.",
+      "Die Stadtviertel ziehen in bunten Kostümen über die Hauptallee, und die Straßen duften nach gegrillten Sardinen auf Brot.",
+      "Man verschenkt Basilikumtöpfe mit Papierblume und kurzem Vers; in Porto klopft man sich am 23. Juni mit Spielzeughämmern auf den Kopf."
+     ],
+     "q": "Was würde dir mehr gefallen: Lissabons Viertelumzüge oder Portos verspielte Nacht am Fluss?",
+     "c": "Schreib einen Vierzeiler wie auf den Basilikumtöpfen, über deine Stadt oder einen Freund."
+    },
+    "es": {
+     "t": "Los Santos Populares en Portugal",
+     "g": "Explora las fiestas de San Antonio en Lisboa y de San Juan en Oporto, con sardinas asadas y macetas de albahaca.",
+     "p": [
+      "En junio Portugal celebra a sus santos populares; la gran noche de Lisboa es la del 12 al 13 de junio, por San Antonio.",
+      "Los barrios desfilan por la avenida principal con trajes de colores, y las calles se llenan de sardinas asadas sobre pan.",
+      "Se regalan macetas de albahaca con flor de papel y un verso; en Oporto, el 23 de junio, la gente se da golpecitos con martillos de juguete."
+     ],
+     "q": "¿Qué disfrutarías más: los desfiles de barrio de Lisboa o la noche divertida junto al río en Oporto?",
+     "c": "Escribe un verso popular de cuatro líneas, como los de las macetas de albahaca, sobre tu ciudad o un amigo."
+    },
+    "fr": {
+     "t": "Les Santos Populares au Portugal",
+     "g": "Découvre la Saint-Antoine à Lisbonne et la Saint-Jean à Porto, avec sardines grillées et petits pots de basilic.",
+     "p": [
+      "En juin, le Portugal fête ses saints populaires ; la grande nuit de Lisbonne est celle du 12 au 13 juin, pour saint Antoine.",
+      "Les quartiers défilent sur la grande avenue en costumes colorés, et les rues se remplissent de sardines grillées sur du pain.",
+      "On offre des pots de basilic avec une fleur en papier et un poème ; à Porto, le 23 juin, on se tape la tête avec des marteaux en plastique."
+     ],
+     "q": "Que préférerais-tu : les défilés de quartier de Lisbonne ou la nuit espiègle de Porto au bord du fleuve ?",
+     "c": "Écris un quatrain populaire, comme ceux des pots de basilic, sur ta ville ou un ami."
+    },
+    "it": {
+     "t": "I Santos Populares in Portogallo",
+     "g": "Esplora le feste di Sant'Antonio a Lisbona e di San Giovanni a Porto, con sardine alla griglia e vasetti di basilico.",
+     "p": [
+      "A giugno il Portogallo festeggia i suoi santi popolari; la grande notte di Lisbona è dal 12 al 13 giugno, per Sant'Antonio.",
+      "I quartieri sfilano sul viale principale in costumi colorati, e le strade si riempiono di sardine alla griglia sul pane.",
+      "Si regalano vasetti di basilico con fiore di carta e una strofa; a Porto, il 23 giugno, ci si picchietta la testa con martelli giocattolo."
+     ],
+     "q": "Cosa ti piacerebbe di più: le sfilate dei quartieri di Lisbona o la notte giocosa di Porto sul fiume?",
+     "c": "Scrivi una quartina popolare, come quelle dei vasetti di basilico, sulla tua città o su un amico."
+    },
+    "pt": {
+     "t": "Os Santos Populares em Portugal",
+     "g": "Explora o Santo António de Lisboa e o São João do Porto, com sardinhas assadas e manjericos.",
+     "p": [
+      "Em junho Portugal celebra os santos populares; a grande noite de Lisboa é de 12 para 13 de junho, pelo Santo António.",
+      "Os bairros desfilam nas marchas populares pela Avenida da Liberdade, e as ruas enchem-se de sardinhas assadas no pão.",
+      "Oferecem-se manjericos com um cravo de papel e uma quadra; no Porto, a 23 de junho, dão-se marteladas com martelinhos de plástico."
+     ],
+     "q": "O que te agradava mais: as marchas dos bairros de Lisboa ou a noite brincalhona do Porto junto ao rio?",
+     "c": "Escreve uma quadra popular, como as dos manjericos, sobre a tua terra ou um amigo."
+    },
+    "pt_BR": {
+     "t": "Os Santos Populares em Portugal",
+     "g": "Explore o Santo Antônio de Lisboa e o São João do Porto, com sardinhas assadas e vasinhos de manjericão.",
+     "p": [
+      "Em junho Portugal celebra os santos populares; a grande noite de Lisboa é de 12 para 13 de junho, por Santo Antônio.",
+      "Os bairros desfilam nas marchas populares pela avenida principal, e as ruas se enchem de sardinhas assadas no pão.",
+      "As pessoas dão vasinhos de manjericão com uma flor de papel e uma quadrinha; no Porto, em 23 de junho, todos batem martelinhos de plástico."
+     ],
+     "q": "O que você curtiria mais: as marchas dos bairros de Lisboa ou a noite divertida do Porto à beira do rio?",
+     "c": "Escreva uma quadrinha popular, como as dos manjericos, sobre a sua cidade ou um amigo."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: celebrations through the seasons",
+     "g": "Look back on harvests, sweets, family days and summer festivals, and share a festival memory of your own.",
+     "p": [
+      "Autumn brought harvests: Thanksgiving, the Mid-Autumn Festival, Chuseok and Pongal all say thank you for food.",
+      "People days celebrate us: birthdays, name days, Children's Day, Mother's, Father's and Teachers' Day.",
+      "Summer lights up with Midsommar, Saint John's bonfires, Brazil's June parties and Portugal's popular saints."
+     ],
+     "q": "What is your happiest festival memory, and who was with you?",
+     "c": "Tell someone about one festival from this month that you would love to experience together."
+    },
+    "de": {
+     "t": "Rückblick: Feste durch die Jahreszeiten",
+     "g": "Schau zurück auf Erntefeste, Süßes, Familientage und Sommerfeste, und teile eine eigene Festerinnerung.",
+     "p": [
+      "Der Herbst brachte die Ernte: Thanksgiving, das Mondfest, Chuseok und Pongal sagen alle Danke für das Essen.",
+      "Tage für Menschen feiern uns: Geburtstage, Namenstage, Kindertag, Mutter-, Vater- und Lehrertag.",
+      "Der Sommer leuchtet mit Midsommar, Johannisfeuern, Brasiliens Junifesten und Portugals Volksheiligen."
+     ],
+     "q": "Was ist deine schönste Festerinnerung, und wer war dabei?",
+     "c": "Erzähl jemandem von einem Fest aus diesem Monat, das du gern gemeinsam erleben würdest."
+    },
+    "es": {
+     "t": "Repaso: celebraciones a lo largo de las estaciones",
+     "g": "Repasa las cosechas, los dulces, los días de la familia y las fiestas de verano, y comparte un recuerdo festivo tuyo.",
+     "p": [
+      "El otoño trajo las cosechas: Acción de Gracias, el Medio Otoño, Chuseok y Pongal dan gracias por los alimentos.",
+      "Los días de las personas nos celebran: cumpleaños, santos, Día del Niño, de la Madre, del Padre y del Maestro.",
+      "El verano se ilumina con Midsommar, las hogueras de San Juan, las fiestas juninas de Brasil y los santos populares de Portugal."
+     ],
+     "q": "¿Cuál es tu recuerdo festivo más feliz y quién estaba contigo?",
+     "c": "Cuéntale a alguien una fiesta de este mes que te encantaría vivir juntos."
+    },
+    "fr": {
+     "t": "Révision : les fêtes au fil des saisons",
+     "g": "Revois les récoltes, les douceurs, les fêtes de famille et les fêtes d'été, et partage un souvenir de fête.",
+     "p": [
+      "L'automne a apporté les récoltes : Thanksgiving, la Mi-Automne, Chuseok et Pongal remercient pour la nourriture.",
+      "Les fêtes des personnes nous célèbrent : anniversaires, fêtes du prénom, des enfants, des mères, des pères et des enseignants.",
+      "L'été s'illumine avec Midsommar, les feux de la Saint-Jean, les fêtes de juin au Brésil et les saints populaires du Portugal."
+     ],
+     "q": "Quel est ton plus beau souvenir de fête, et qui était avec toi ?",
+     "c": "Parle à quelqu'un d'une fête de ce mois que tu aimerais vivre avec lui."
+    },
+    "it": {
+     "t": "Ripasso: feste attraverso le stagioni",
+     "g": "Ripassa raccolti, dolci, feste di famiglia e feste d'estate, e condividi un tuo ricordo di festa.",
+     "p": [
+      "L'autunno ha portato i raccolti: il Ringraziamento, la Festa di metà autunno, Chuseok e Pongal ringraziano per il cibo.",
+      "Le feste delle persone celebrano noi: compleanni, onomastici, Festa dei bambini, della mamma, del papà e degli insegnanti.",
+      "L'estate si illumina con Midsommar, i falò di San Giovanni, le feste di giugno in Brasile e i santi popolari del Portogallo."
+     ],
+     "q": "Qual è il tuo ricordo di festa più felice, e chi era con te?",
+     "c": "Racconta a qualcuno una festa di questo mese che ti piacerebbe vivere insieme."
+    },
+    "pt": {
+     "t": "Revisão: celebrações ao longo das estações",
+     "g": "Revê as colheitas, os doces, os dias da família e as festas de verão, e partilha uma memória de festa tua.",
+     "p": [
+      "O outono trouxe as colheitas: o Thanksgiving, o Meio do Outono, o Chuseok e o Pongal agradecem pela comida.",
+      "Os dias das pessoas celebram-nos: aniversários, dias do nome, Dia da Criança, da Mãe, do Pai e do Professor.",
+      "O verão ilumina-se com o Midsommar, as fogueiras de São João, as festas juninas do Brasil e os santos populares."
+     ],
+     "q": "Qual é a tua memória de festa mais feliz e quem estava contigo?",
+     "c": "Conta a alguém uma festa deste mês que gostavas muito de viver em conjunto."
+    },
+    "pt_BR": {
+     "t": "Revisão: celebrações ao longo das estações",
+     "g": "Relembre as colheitas, os doces, os dias da família e as festas de verão, e compartilhe uma lembrança de festa sua.",
+     "p": [
+      "O outono trouxe as colheitas: o Thanksgiving, o Meio do Outono, o Chuseok e o Pongal agradecem pela comida.",
+      "Os dias das pessoas celebram a gente: aniversários, dias do nome, Dia das Crianças, das Mães, dos Pais e do Professor.",
+      "Junho se ilumina com o Midsommar, as fogueiras de São João, as festas juninas e os santos populares de Portugal."
+     ],
+     "q": "Qual é a sua lembrança de festa mais feliz e quem estava com você?",
+     "c": "Conte a alguém sobre uma festa deste mês que você adoraria viver junto com essa pessoa."
+    }
+   }
+  }
+ ]
+}

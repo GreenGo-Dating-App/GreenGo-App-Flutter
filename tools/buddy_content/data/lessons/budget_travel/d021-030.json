@@ -1,0 +1,835 @@
+{
+ "topic": "budget_travel",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Alternative airports",
+     "g": "Learn that secondary airports can be cheaper, as long as you count the transfer time and cost.",
+     "p": [
+      "Many big cities have a second, smaller airport where low-cost flights often land.",
+      "Some are far from the centre, so add the bus or train ticket and the extra time to the fare.",
+      "A cheap flight plus a pricey late-night taxi can end up costing more than the main airport."
+     ],
+     "q": "Would you take a cheaper flight to a farther airport, or do you prefer landing close to town?",
+     "c": "For one city, find its alternative airport and check how you would get from it to the centre."
+    },
+    "de": {
+     "t": "Alternative Flughäfen",
+     "g": "Lerne, dass Nebenflughäfen günstiger sein können, wenn du Transferzeit und -kosten mitrechnest.",
+     "p": [
+      "Viele Großstädte haben einen zweiten, kleineren Flughafen, wo oft Billigflüge landen.",
+      "Manche liegen weit vom Zentrum, also rechne Bus- oder Zugticket und die Zusatzzeit zum Flugpreis dazu.",
+      "Ein günstiger Flug plus ein teures Taxi spätnachts kann am Ende mehr kosten als der Hauptflughafen."
+     ],
+     "q": "Würdest du für einen günstigeren Flug zu einem entfernteren Flughafen fliegen oder lieber nah an der Stadt landen?",
+     "c": "Finde für eine Stadt ihren alternativen Flughafen und prüfe, wie du von dort ins Zentrum kommst."
+    },
+    "es": {
+     "t": "Aeropuertos alternativos",
+     "g": "Aprende que los aeropuertos secundarios pueden ser más baratos si cuentas el tiempo y el coste del traslado.",
+     "p": [
+      "Muchas grandes ciudades tienen un segundo aeropuerto más pequeño donde suelen aterrizar vuelos low cost.",
+      "Algunos están lejos del centro: suma al vuelo el billete de autobús o tren y el tiempo extra.",
+      "Un vuelo barato más un taxi caro de madrugada puede salir más caro que el aeropuerto principal."
+     ],
+     "q": "¿Tomarías un vuelo más barato a un aeropuerto lejano o prefieres aterrizar cerca de la ciudad?",
+     "c": "Para una ciudad, busca su aeropuerto alternativo y mira cómo llegarías desde allí al centro."
+    },
+    "fr": {
+     "t": "Les aéroports secondaires",
+     "g": "Apprends que les aéroports secondaires peuvent coûter moins cher, à condition de compter le temps et le prix du trajet.",
+     "p": [
+      "Beaucoup de grandes villes ont un second aéroport plus petit où atterrissent souvent les vols low cost.",
+      "Certains sont loin du centre : ajoute au billet le bus ou le train et le temps en plus.",
+      "Un vol pas cher plus un taxi coûteux tard le soir peut finir par coûter plus que l'aéroport principal."
+     ],
+     "q": "Prendrais-tu un vol moins cher vers un aéroport éloigné, ou préfères-tu atterrir près de la ville ?",
+     "c": "Pour une ville, trouve son aéroport secondaire et regarde comment rejoindre le centre depuis là."
+    },
+    "it": {
+     "t": "Aeroporti alternativi",
+     "g": "Scopri che gli aeroporti secondari possono costare meno, se conti tempo e costo del trasferimento.",
+     "p": [
+      "Molte grandi città hanno un secondo aeroporto più piccolo dove atterrano spesso i voli low cost.",
+      "Alcuni sono lontani dal centro: aggiungi al biglietto il bus o il treno e il tempo in più.",
+      "Un volo economico più un taxi caro a tarda notte può finire per costare più dell'aeroporto principale."
+     ],
+     "q": "Prenderesti un volo più economico verso un aeroporto lontano o preferisci atterrare vicino alla città?",
+     "c": "Per una città, trova il suo aeroporto alternativo e verifica come arriveresti da lì al centro."
+    },
+    "pt": {
+     "t": "Aeroportos alternativos",
+     "g": "Aprende que os aeroportos secundários podem ser mais baratos, desde que contes o tempo e o custo do transfer.",
+     "p": [
+      "Muitas grandes cidades têm um segundo aeroporto, mais pequeno, onde costumam aterrar voos low cost.",
+      "Alguns ficam longe do centro: soma ao voo o bilhete de autocarro ou comboio e o tempo extra.",
+      "Um voo barato mais um táxi caro de madrugada pode acabar por custar mais do que o aeroporto principal."
+     ],
+     "q": "Apanharias um voo mais barato para um aeroporto mais longe ou preferes aterrar perto da cidade?",
+     "c": "Para uma cidade, encontra o aeroporto alternativo e vê como chegarias dali ao centro."
+    },
+    "pt_BR": {
+     "t": "Aeroportos alternativos",
+     "g": "Aprenda que aeroportos secundários podem sair mais baratos, desde que você conte o tempo e o custo do traslado.",
+     "p": [
+      "Muitas cidades grandes têm um segundo aeroporto, menor, onde costumam pousar voos low cost.",
+      "Alguns ficam longe do centro: some ao voo a passagem de ônibus ou trem e o tempo extra.",
+      "Um voo barato mais um táxi caro de madrugada pode acabar custando mais que o aeroporto principal."
+     ],
+     "q": "Você pegaria um voo mais barato para um aeroporto mais longe ou prefere pousar perto da cidade?",
+     "c": "Para uma cidade, ache o aeroporto alternativo e veja como você chegaria de lá até o centro."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting price alerts",
+     "g": "Let fare changes come to you instead of checking prices every single day.",
+     "p": [
+      "Most flight search tools let you save a route and get a message when the price changes.",
+      "Set alerts early, with flexible dates if possible, so you learn the normal price range.",
+      "When an alert shows a price clearly below the usual range, you can book with confidence."
+     ],
+     "q": "Do you enjoy hunting for deals, or would you rather have the deals come to you?",
+     "c": "Set one price alert today for a route you would really love to travel one day."
+    },
+    "de": {
+     "t": "Preisalarme einrichten",
+     "g": "Lass Preisänderungen zu dir kommen, statt jeden Tag selbst nachzuschauen.",
+     "p": [
+      "Die meisten Flugsuchportale lassen dich eine Strecke speichern und melden dir Preisänderungen.",
+      "Stell Alarme früh und möglichst mit flexiblen Daten ein, dann lernst du die normale Preisspanne kennen.",
+      "Zeigt ein Alarm einen Preis klar unter dem Üblichen, kannst du beruhigt buchen."
+     ],
+     "q": "Jagst du gern Schnäppchen, oder sollen die Angebote lieber zu dir kommen?",
+     "c": "Richte heute einen Preisalarm für eine Strecke ein, die du eines Tages wirklich gern reisen würdest."
+    },
+    "es": {
+     "t": "Crear alertas de precio",
+     "g": "Deja que los cambios de tarifa te lleguen solos en vez de mirar precios todos los días.",
+     "p": [
+      "Casi todos los buscadores de vuelos te dejan guardar una ruta y avisarte cuando cambia el precio.",
+      "Crea alertas pronto, con fechas flexibles si puedes, y aprenderás cuál es el precio normal.",
+      "Cuando una alerta muestre un precio claramente por debajo de lo habitual, podrás reservar con confianza."
+     ],
+     "q": "¿Te divierte cazar ofertas o prefieres que las ofertas vengan a ti?",
+     "c": "Crea hoy una alerta de precio para una ruta que te encantaría hacer algún día."
+    },
+    "fr": {
+     "t": "Créer des alertes de prix",
+     "g": "Laisse les variations de prix venir à toi au lieu de vérifier les tarifs tous les jours.",
+     "p": [
+      "La plupart des comparateurs de vols te laissent enregistrer un trajet et t'alertent quand le prix change.",
+      "Crée tes alertes tôt, avec des dates souples si possible, pour connaître la fourchette de prix habituelle.",
+      "Quand une alerte affiche un prix nettement sous la normale, tu peux réserver en confiance."
+     ],
+     "q": "Aimes-tu chasser les bonnes affaires, ou préfères-tu qu'elles viennent à toi ?",
+     "c": "Crée aujourd'hui une alerte de prix pour un trajet que tu rêverais de faire un jour."
+    },
+    "it": {
+     "t": "Impostare avvisi di prezzo",
+     "g": "Lascia che le variazioni di prezzo arrivino a te invece di controllare le tariffe ogni giorno.",
+     "p": [
+      "Quasi tutti i motori di ricerca voli ti permettono di salvare una tratta e avvisarti quando il prezzo cambia.",
+      "Imposta gli avvisi presto, con date flessibili se puoi, così impari qual è la fascia di prezzo normale.",
+      "Quando un avviso mostra un prezzo chiaramente sotto la media, puoi prenotare con fiducia."
+     ],
+     "q": "Ti diverte cacciare offerte o preferisci che siano le offerte ad arrivare a te?",
+     "c": "Imposta oggi un avviso di prezzo per una tratta che ti piacerebbe davvero fare un giorno."
+    },
+    "pt": {
+     "t": "Criar alertas de preço",
+     "g": "Deixa que as mudanças de tarifa venham ter contigo em vez de veres os preços todos os dias.",
+     "p": [
+      "Quase todos os motores de busca de voos deixam guardar uma rota e avisam quando o preço muda.",
+      "Cria alertas cedo, com datas flexíveis se possível, para conheceres o intervalo de preço normal.",
+      "Quando um alerta mostrar um preço claramente abaixo do habitual, podes reservar com confiança."
+     ],
+     "q": "Gostas de caçar promoções ou preferes que as promoções venham ter contigo?",
+     "c": "Cria hoje um alerta de preço para uma rota que adorarias fazer um dia."
+    },
+    "pt_BR": {
+     "t": "Criando alertas de preço",
+     "g": "Deixe que as mudanças de tarifa cheguem até você em vez de checar preços todo santo dia.",
+     "p": [
+      "Quase todo buscador de passagens deixa salvar uma rota e avisa quando o preço muda.",
+      "Crie alertas cedo, com datas flexíveis se puder, para conhecer a faixa de preço normal.",
+      "Quando um alerta mostrar um preço bem abaixo do comum, você pode reservar com segurança."
+     ],
+     "q": "Você curte caçar promoções ou prefere que as promoções venham até você?",
+     "c": "Crie hoje um alerta de preço para uma rota que você adoraria fazer um dia."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One-way and open-jaw tickets",
+     "g": "Fly into one city and out of another to avoid expensive backtracking.",
+     "p": [
+      "An open-jaw trip means arriving in one city and leaving from another, then travelling overland in between.",
+      "It saves the time and money of returning to your starting point at the end.",
+      "Compare two one-way tickets with a multi-city search, as either can be cheaper."
+     ],
+     "q": "Which two cities would you love to link on one trip, flying into one and out of the other?",
+     "c": "Plan a route that flies into one city, travels overland to a second and flies home from there."
+    },
+    "de": {
+     "t": "Einweg- und Gabelflüge",
+     "g": "Flieg in eine Stadt hinein und aus einer anderen zurück, um teure Rückwege zu vermeiden.",
+     "p": [
+      "Bei einem Gabelflug kommst du in einer Stadt an, fliegst aus einer anderen ab und reist dazwischen über Land.",
+      "Das spart Zeit und Geld für die Rückkehr zum Startpunkt am Ende der Reise.",
+      "Vergleiche zwei Einzelflüge mit einer Gabelflug-Suche, denn beides kann günstiger sein."
+     ],
+     "q": "Welche zwei Städte würdest du gern auf einer Reise verbinden, hin zur einen und zurück von der anderen?",
+     "c": "Plane eine Route: in eine Stadt fliegen, über Land zur zweiten reisen und von dort heimfliegen."
+    },
+    "es": {
+     "t": "Billetes de ida y multidestino",
+     "g": "Vuela a una ciudad y regresa desde otra para evitar volver sobre tus pasos y pagar de más.",
+     "p": [
+      "Un viaje multidestino consiste en llegar a una ciudad, salir desde otra y moverte por tierra entre ambas.",
+      "Te ahorra el tiempo y el dinero de volver al punto de partida al final.",
+      "Compara dos billetes de ida con una búsqueda multidestino: cualquiera de las dos puede salir más barata."
+     ],
+     "q": "¿Qué dos ciudades te encantaría unir en un viaje, llegando a una y volviendo desde la otra?",
+     "c": "Planea una ruta: vuela a una ciudad, viaja por tierra a otra y vuelve a casa desde allí."
+    },
+    "fr": {
+     "t": "Allers simples et open-jaw",
+     "g": "Arrive dans une ville et repars d'une autre pour éviter des retours en arrière coûteux.",
+     "p": [
+      "Un voyage open-jaw, c'est arriver dans une ville, repartir d'une autre et circuler par voie terrestre entre les deux.",
+      "Tu économises le temps et l'argent d'un retour au point de départ à la fin.",
+      "Compare deux allers simples et une recherche multi-destinations : l'une ou l'autre peut être moins chère."
+     ],
+     "q": "Quelles deux villes aimerais-tu relier en un voyage, en arrivant dans l'une et en repartant de l'autre ?",
+     "c": "Planifie un trajet : arrivée en avion dans une ville, route vers une deuxième et retour en avion depuis celle-ci."
+    },
+    "it": {
+     "t": "Biglietti di sola andata e open jaw",
+     "g": "Arriva in una città e riparti da un'altra per evitare costosi ritorni sui tuoi passi.",
+     "p": [
+      "Un viaggio open jaw significa arrivare in una città, ripartire da un'altra e spostarsi via terra tra le due.",
+      "Risparmi il tempo e i soldi necessari per tornare al punto di partenza alla fine.",
+      "Confronta due sole andate con una ricerca multitratta: entrambe possono risultare più economiche."
+     ],
+     "q": "Quali due città ti piacerebbe collegare in un viaggio, arrivando in una e ripartendo dall'altra?",
+     "c": "Pianifica un percorso: volo verso una città, viaggio via terra fino a una seconda e volo di ritorno da lì."
+    },
+    "pt": {
+     "t": "Bilhetes só de ida e multidestino",
+     "g": "Chega a uma cidade e parte de outra para evitar voltar para trás e gastar mais.",
+     "p": [
+      "Uma viagem multidestino é chegar a uma cidade, partir de outra e viajar por terra entre as duas.",
+      "Poupas o tempo e o dinheiro de regressar ao ponto de partida no fim.",
+      "Compara dois bilhetes só de ida com uma pesquisa multidestino: qualquer um pode sair mais barato."
+     ],
+     "q": "Que duas cidades adorarias ligar numa viagem, chegando a uma e partindo da outra?",
+     "c": "Planeia uma rota: voa para uma cidade, segue por terra até outra e volta de avião a partir daí."
+    },
+    "pt_BR": {
+     "t": "Passagens só de ida e multidestino",
+     "g": "Chegue por uma cidade e volte por outra para evitar refazer o caminho e gastar mais.",
+     "p": [
+      "Uma viagem multidestino é chegar por uma cidade, sair por outra e viajar por terra entre as duas.",
+      "Você economiza o tempo e o dinheiro de voltar ao ponto de partida no fim.",
+      "Compare duas passagens só de ida com uma busca multidestino: qualquer uma pode sair mais barata."
+     ],
+     "q": "Que duas cidades você adoraria ligar numa viagem, chegando por uma e saindo pela outra?",
+     "c": "Planeje uma rota: voe para uma cidade, siga por terra até outra e volte de avião de lá."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hidden costs of cheap flights",
+     "g": "Spot seat selection, check-in fees and awkward hours that can eat up your savings.",
+     "p": [
+      "Add up bags, seat choice and payment or check-in fees before deciding a fare is truly cheap.",
+      "Very early or very late flights may need a taxi or an extra night, which adds real cost.",
+      "Compare the full door-to-door price, not just the number on the first search screen."
+     ],
+     "q": "Have you ever booked a cheap flight that turned out more expensive than expected?",
+     "c": "Take one cheap fare and calculate its real total with bags, transfers and timing included."
+    },
+    "de": {
+     "t": "Versteckte Kosten billiger Flüge",
+     "g": "Erkenne Sitzplatzwahl, Check-in-Gebühren und ungünstige Uhrzeiten, die deine Ersparnis auffressen.",
+     "p": [
+      "Rechne Gepäck, Sitzwahl und Zahlungs- oder Check-in-Gebühren zusammen, bevor du einen Preis wirklich günstig nennst.",
+      "Sehr frühe oder späte Flüge brauchen oft ein Taxi oder eine Extranacht, das kostet richtig.",
+      "Vergleiche den Gesamtpreis von Tür zu Tür, nicht nur die Zahl auf dem ersten Suchbildschirm."
+     ],
+     "q": "Hast du schon mal einen billigen Flug gebucht, der am Ende teurer war als gedacht?",
+     "c": "Nimm einen günstigen Tarif und berechne den echten Gesamtpreis mit Gepäck, Transfers und Uhrzeit."
+    },
+    "es": {
+     "t": "Costes ocultos de los vuelos baratos",
+     "g": "Detecta la elección de asiento, las tasas de facturación y los horarios incómodos que se comen tu ahorro.",
+     "p": [
+      "Suma maletas, asiento y tasas de pago o facturación antes de decidir que una tarifa es barata de verdad.",
+      "Los vuelos muy temprano o muy tarde pueden exigir un taxi o una noche extra, y eso cuesta.",
+      "Compara el precio total de puerta a puerta, no solo la cifra de la primera pantalla de búsqueda."
+     ],
+     "q": "¿Alguna vez reservaste un vuelo barato que acabó saliendo más caro de lo esperado?",
+     "c": "Toma una tarifa barata y calcula su total real con maletas, traslados y horario incluidos."
+    },
+    "fr": {
+     "t": "Les coûts cachés des vols pas chers",
+     "g": "Repère le choix du siège, les frais d'enregistrement et les horaires difficiles qui grignotent tes économies.",
+     "p": [
+      "Additionne bagages, siège et frais de paiement ou d'enregistrement avant de juger un tarif vraiment bon marché.",
+      "Les vols très tôt ou très tard peuvent exiger un taxi ou une nuit en plus, ce qui coûte vraiment.",
+      "Compare le prix total de porte à porte, pas seulement le chiffre du premier écran de recherche."
+     ],
+     "q": "As-tu déjà réservé un vol pas cher qui s'est révélé plus coûteux que prévu ?",
+     "c": "Prends un tarif bas et calcule son vrai total avec bagages, transferts et horaires compris."
+    },
+    "it": {
+     "t": "I costi nascosti dei voli economici",
+     "g": "Individua scelta del posto, costi di check-in e orari scomodi che possono mangiarsi il risparmio.",
+     "p": [
+      "Somma bagagli, scelta del posto e costi di pagamento o check-in prima di dire che una tariffa è davvero economica.",
+      "Voli molto presto o molto tardi possono richiedere un taxi o una notte in più, e questo costa.",
+      "Confronta il prezzo totale porta a porta, non solo la cifra della prima schermata di ricerca."
+     ],
+     "q": "Ti è mai capitato di prenotare un volo economico che alla fine è costato più del previsto?",
+     "c": "Prendi una tariffa bassa e calcola il suo totale reale con bagagli, trasferimenti e orari inclusi."
+    },
+    "pt": {
+     "t": "Custos escondidos dos voos baratos",
+     "g": "Deteta a escolha de lugar, as taxas de check-in e os horários incómodos que comem a tua poupança.",
+     "p": [
+      "Soma bagagem, lugar e taxas de pagamento ou check-in antes de decidir que uma tarifa é mesmo barata.",
+      "Voos muito cedo ou muito tarde podem obrigar a um táxi ou a uma noite extra, e isso custa.",
+      "Compara o preço total de porta a porta, não só o número do primeiro ecrã de pesquisa."
+     ],
+     "q": "Já reservaste um voo barato que acabou por sair mais caro do que esperavas?",
+     "c": "Pega numa tarifa barata e calcula o total real com bagagem, transfers e horário incluídos."
+    },
+    "pt_BR": {
+     "t": "Custos escondidos das passagens baratas",
+     "g": "Identifique escolha de assento, taxas de check-in e horários ruins que comem a sua economia.",
+     "p": [
+      "Some bagagem, assento e taxas de pagamento ou check-in antes de decidir que a tarifa é barata mesmo.",
+      "Voos muito cedo ou muito tarde podem exigir táxi ou uma noite extra, e isso custa.",
+      "Compare o preço total de porta a porta, não só o número da primeira tela de busca."
+     ],
+     "q": "Você já reservou uma passagem barata que acabou saindo mais cara do que esperava?",
+     "c": "Pegue uma tarifa barata e calcule o total real com bagagem, traslados e horário incluídos."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trains on a budget",
+     "g": "Save on rail with advance fares, slower regional trains and off-peak tickets.",
+     "p": [
+      "Many rail companies sell cheaper advance tickets that are released weeks or months ahead.",
+      "Slower regional trains are often much cheaper than high-speed ones, and the views are a bonus.",
+      "Off-peak times avoid commuter rush hours and often come with lower fares."
+     ],
+     "q": "Do you enjoy train journeys? What is the most beautiful one you have taken or dream of?",
+     "c": "Compare a fast train and a regional train on one route: note price, time and number of changes."
+    },
+    "de": {
+     "t": "Günstig Bahn fahren",
+     "g": "Spare bei der Bahn mit Frühbucherpreisen, langsameren Regionalzügen und Tickets außerhalb der Stoßzeiten.",
+     "p": [
+      "Viele Bahnen verkaufen günstigere Frühbuchertickets, die Wochen oder Monate vorher erscheinen.",
+      "Langsamere Regionalzüge sind oft viel billiger als Schnellzüge, und die Aussicht gibt es gratis dazu.",
+      "Fahrten außerhalb der Stoßzeiten meiden den Pendlerverkehr und sind oft günstiger."
+     ],
+     "q": "Fährst du gern Zug? Was ist die schönste Strecke, die du gefahren bist oder von der du träumst?",
+     "c": "Vergleiche auf einer Strecke Schnellzug und Regionalzug: Preis, Fahrzeit und Umstiege."
+    },
+    "es": {
+     "t": "Trenes con poco presupuesto",
+     "g": "Ahorra en tren con billetes anticipados, trenes regionales más lentos y horas valle.",
+     "p": [
+      "Muchas compañías ferroviarias venden billetes anticipados más baratos que salen semanas o meses antes.",
+      "Los trenes regionales, más lentos, suelen ser mucho más baratos que los de alta velocidad, y el paisaje es un regalo.",
+      "Viajar en horas valle evita la hora punta y a menudo tiene tarifas más bajas."
+     ],
+     "q": "¿Te gustan los viajes en tren? ¿Cuál es el más bonito que has hecho o con el que sueñas?",
+     "c": "Compara un tren rápido y uno regional en una ruta: anota precio, duración y transbordos."
+    },
+    "fr": {
+     "t": "Le train petit budget",
+     "g": "Économise sur le rail avec les tarifs anticipés, les trains régionaux plus lents et les heures creuses.",
+     "p": [
+      "Beaucoup de compagnies ferroviaires vendent des billets anticipés moins chers, mis en vente des semaines ou des mois avant.",
+      "Les trains régionaux, plus lents, sont souvent bien moins chers que la grande vitesse, et les paysages sont offerts.",
+      "Les heures creuses évitent l'affluence des trajets domicile-travail et coûtent souvent moins cher."
+     ],
+     "q": "Aimes-tu les voyages en train ? Quel est le plus beau trajet que tu as fait ou dont tu rêves ?",
+     "c": "Compare un train rapide et un train régional sur un trajet : prix, durée et nombre de correspondances."
+    },
+    "it": {
+     "t": "Treni a basso costo",
+     "g": "Risparmia sul treno con tariffe anticipate, regionali più lenti e biglietti fuori dalle ore di punta.",
+     "p": [
+      "Molte compagnie ferroviarie vendono biglietti anticipati più economici, disponibili settimane o mesi prima.",
+      "I regionali, più lenti, costano spesso molto meno dell'alta velocità, e il panorama è un regalo.",
+      "Gli orari fuori punta evitano la folla dei pendolari e spesso hanno tariffe più basse."
+     ],
+     "q": "Ti piacciono i viaggi in treno? Qual è il più bello che hai fatto o che sogni?",
+     "c": "Confronta un treno veloce e un regionale su una tratta: prezzo, durata e numero di cambi."
+    },
+    "pt": {
+     "t": "Comboios com pouco dinheiro",
+     "g": "Poupa no comboio com bilhetes antecipados, comboios regionais mais lentos e horários fora de ponta.",
+     "p": [
+      "Muitas companhias ferroviárias vendem bilhetes antecipados mais baratos, lançados semanas ou meses antes.",
+      "Os comboios regionais, mais lentos, são muitas vezes bem mais baratos do que os rápidos, e a paisagem é bónus.",
+      "Fora das horas de ponta evitas a confusão de quem vai trabalhar e as tarifas costumam ser mais baixas."
+     ],
+     "q": "Gostas de viagens de comboio? Qual é a mais bonita que fizeste ou com que sonhas?",
+     "c": "Compara um comboio rápido e um regional numa rota: preço, duração e número de transbordos."
+    },
+    "pt_BR": {
+     "t": "Trem com pouco dinheiro",
+     "g": "Economize no trem com passagens antecipadas, trens regionais mais lentos e horários fora do pico.",
+     "p": [
+      "Muitas companhias ferroviárias vendem passagens antecipadas mais baratas, liberadas semanas ou meses antes.",
+      "Trens regionais, mais lentos, costumam ser bem mais baratos que os rápidos, e a paisagem vem de brinde.",
+      "Fora do horário de pico você foge do sufoco de quem vai trabalhar e paga menos."
+     ],
+     "q": "Você gosta de viajar de trem? Qual a viagem mais bonita que fez ou com a qual sonha?",
+     "c": "Compare um trem rápido e um regional numa rota: preço, duração e número de baldeações."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Night trains and night buses",
+     "g": "Travel while you sleep and save the cost of one night's accommodation.",
+     "p": [
+      "An overnight journey covers distance and replaces a night's stay in one go.",
+      "You arrive in the morning with a full day ahead, instead of losing daylight to travel.",
+      "Bring earplugs, an eye mask, water and a small bag with valuables you keep close."
+     ],
+     "q": "Could you sleep on a train or bus, or do you need a proper bed to rest?",
+     "c": "Find one overnight train or bus route between two cities you would like to visit."
+    },
+    "de": {
+     "t": "Nachtzüge und Nachtbusse",
+     "g": "Reise, während du schläfst, und spar dir die Kosten für eine Übernachtung.",
+     "p": [
+      "Eine Nachtfahrt überbrückt die Strecke und ersetzt gleichzeitig eine Übernachtung.",
+      "Du kommst morgens an und hast den ganzen Tag vor dir, statt Tageslicht im Verkehrsmittel zu verbringen.",
+      "Nimm Ohrstöpsel, Schlafmaske, Wasser und eine kleine Tasche mit Wertsachen nah bei dir mit."
+     ],
+     "q": "Könntest du im Zug oder Bus schlafen, oder brauchst du ein richtiges Bett?",
+     "c": "Finde eine Nachtzug- oder Nachtbusverbindung zwischen zwei Städten, die du besuchen möchtest."
+    },
+    "es": {
+     "t": "Trenes y autobuses nocturnos",
+     "g": "Viaja mientras duermes y ahórrate el coste de una noche de alojamiento.",
+     "p": [
+      "Un trayecto nocturno recorre la distancia y sustituye una noche de hotel a la vez.",
+      "Llegas por la mañana con todo el día por delante, sin perder horas de luz viajando.",
+      "Lleva tapones, antifaz, agua y una bolsa pequeña con tus objetos de valor siempre cerca."
+     ],
+     "q": "¿Podrías dormir en un tren o autobús, o necesitas una cama de verdad para descansar?",
+     "c": "Busca una ruta de tren o autobús nocturno entre dos ciudades que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Trains et bus de nuit",
+     "g": "Voyage en dormant et économise le prix d'une nuit d'hébergement.",
+     "p": [
+      "Un trajet de nuit couvre la distance et remplace une nuit d'hôtel d'un seul coup.",
+      "Tu arrives le matin avec toute la journée devant toi, sans perdre la lumière du jour à voyager.",
+      "Prends des bouchons d'oreilles, un masque, de l'eau et un petit sac avec tes objets de valeur près de toi."
+     ],
+     "q": "Pourrais-tu dormir dans un train ou un bus, ou as-tu besoin d'un vrai lit pour te reposer ?",
+     "c": "Trouve un trajet en train ou bus de nuit entre deux villes que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Treni e bus notturni",
+     "g": "Viaggia mentre dormi e risparmia il costo di una notte di alloggio.",
+     "p": [
+      "Un viaggio notturno copre la distanza e sostituisce una notte in albergo in un colpo solo.",
+      "Arrivi al mattino con tutta la giornata davanti, senza perdere ore di luce in viaggio.",
+      "Porta tappi per le orecchie, mascherina, acqua e una borsetta con gli oggetti di valore sempre vicina."
+     ],
+     "q": "Riusciresti a dormire su un treno o un bus, o ti serve un vero letto per riposare?",
+     "c": "Trova una tratta in treno o bus notturno tra due città che vorresti visitare."
+    },
+    "pt": {
+     "t": "Comboios e autocarros noturnos",
+     "g": "Viaja enquanto dormes e poupa o custo de uma noite de alojamento.",
+     "p": [
+      "Uma viagem noturna percorre a distância e substitui uma noite de alojamento de uma só vez.",
+      "Chegas de manhã com o dia todo pela frente, em vez de perderes horas de luz a viajar.",
+      "Leva tampões para os ouvidos, máscara, água e uma bolsa pequena com os valores sempre perto."
+     ],
+     "q": "Conseguias dormir num comboio ou autocarro, ou precisas de uma cama a sério para descansar?",
+     "c": "Encontra uma ligação noturna de comboio ou autocarro entre duas cidades que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Trens e ônibus noturnos",
+     "g": "Viaje enquanto dorme e economize o custo de uma noite de hospedagem.",
+     "p": [
+      "Uma viagem noturna cobre a distância e substitui uma diária de uma vez só.",
+      "Você chega de manhã com o dia inteiro pela frente, sem perder horas de luz viajando.",
+      "Leve protetor de ouvido, máscara de dormir, água e uma bolsinha com os objetos de valor sempre perto."
+     ],
+     "q": "Você conseguiria dormir num trem ou ônibus, ou precisa de uma cama de verdade para descansar?",
+     "c": "Encontre uma rota de trem ou ônibus noturno entre duas cidades que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Long-distance buses",
+     "g": "Discover comfortable, cheap coaches and how to pick a reliable company.",
+     "p": [
+      "Long-distance coaches are often the cheapest way between cities, with many daily departures.",
+      "Modern coaches may offer reclining seats, power sockets and toilets on board.",
+      "Pick companies with good recent reviews, clear luggage rules and central stations."
+     ],
+     "q": "What would make a long bus ride enjoyable for you: music, a book, the views or a good nap?",
+     "c": "Compare two bus companies on one route and note price, duration, reviews and station location."
+    },
+    "de": {
+     "t": "Fernbusse",
+     "g": "Entdecke bequeme, günstige Fernbusse und wie du ein zuverlässiges Unternehmen auswählst.",
+     "p": [
+      "Fernbusse sind oft die günstigste Verbindung zwischen Städten und fahren mehrmals täglich.",
+      "Moderne Busse bieten oft verstellbare Sitze, Steckdosen und eine Toilette an Bord.",
+      "Wähle Anbieter mit guten aktuellen Bewertungen, klaren Gepäckregeln und zentralen Haltestellen."
+     ],
+     "q": "Was würde eine lange Busfahrt für dich angenehm machen: Musik, ein Buch, die Aussicht oder ein Nickerchen?",
+     "c": "Vergleiche zwei Busunternehmen auf einer Strecke: Preis, Dauer, Bewertungen und Lage der Haltestelle."
+    },
+    "es": {
+     "t": "Autobuses de larga distancia",
+     "g": "Descubre autocares cómodos y baratos, y cómo elegir una compañía fiable.",
+     "p": [
+      "Los autocares de larga distancia suelen ser la forma más barata de ir entre ciudades, con muchas salidas al día.",
+      "Los autocares modernos pueden tener asientos reclinables, enchufes y baño a bordo.",
+      "Elige compañías con buenas opiniones recientes, normas de equipaje claras y estaciones céntricas."
+     ],
+     "q": "¿Qué haría agradable para ti un viaje largo en autobús: música, un libro, el paisaje o una buena siesta?",
+     "c": "Compara dos compañías de autobús en una ruta: precio, duración, opiniones y ubicación de la estación."
+    },
+    "fr": {
+     "t": "Les bus longue distance",
+     "g": "Découvre les autocars confortables et bon marché, et comment choisir une compagnie fiable.",
+     "p": [
+      "Les autocars longue distance sont souvent le moyen le moins cher d'aller d'une ville à l'autre, avec de nombreux départs.",
+      "Les cars modernes proposent souvent des sièges inclinables, des prises électriques et des toilettes.",
+      "Choisis des compagnies avec de bons avis récents, des règles bagages claires et des arrêts centraux."
+     ],
+     "q": "Qu'est-ce qui rendrait un long trajet en bus agréable pour toi : musique, livre, paysages ou une bonne sieste ?",
+     "c": "Compare deux compagnies de bus sur un trajet : prix, durée, avis et emplacement de la gare."
+    },
+    "it": {
+     "t": "Autobus a lunga percorrenza",
+     "g": "Scopri pullman comodi ed economici e come scegliere una compagnia affidabile.",
+     "p": [
+      "I pullman a lunga percorrenza sono spesso il modo più economico per spostarsi tra città, con molte corse al giorno.",
+      "I pullman moderni possono avere sedili reclinabili, prese elettriche e bagno a bordo.",
+      "Scegli compagnie con buone recensioni recenti, regole chiare sui bagagli e fermate centrali."
+     ],
+     "q": "Cosa renderebbe piacevole per te un lungo viaggio in bus: musica, un libro, il panorama o un bel pisolino?",
+     "c": "Confronta due compagnie di bus su una tratta: prezzo, durata, recensioni e posizione della fermata."
+    },
+    "pt": {
+     "t": "Autocarros de longa distância",
+     "g": "Descobre autocarros confortáveis e baratos e como escolher uma empresa de confiança.",
+     "p": [
+      "Os autocarros de longa distância são muitas vezes a forma mais barata de ir entre cidades, com muitas partidas por dia.",
+      "Os autocarros modernos podem ter bancos reclináveis, tomadas e casa de banho a bordo.",
+      "Escolhe empresas com boas avaliações recentes, regras de bagagem claras e terminais centrais."
+     ],
+     "q": "O que tornaria agradável para ti uma longa viagem de autocarro: música, um livro, a paisagem ou uma boa sesta?",
+     "c": "Compara duas empresas de autocarros numa rota: preço, duração, avaliações e localização do terminal."
+    },
+    "pt_BR": {
+     "t": "Ônibus de longa distância",
+     "g": "Descubra ônibus confortáveis e baratos e como escolher uma empresa confiável.",
+     "p": [
+      "Os ônibus de longa distância costumam ser o jeito mais barato de ir de uma cidade a outra, com muitos horários por dia.",
+      "Ônibus modernos podem ter poltronas reclináveis, tomadas e banheiro a bordo.",
+      "Escolha empresas com boas avaliações recentes, regras de bagagem claras e rodoviárias centrais."
+     ],
+     "q": "O que deixaria uma longa viagem de ônibus agradável para você: música, um livro, a paisagem ou um bom cochilo?",
+     "c": "Compare duas empresas de ônibus numa rota: preço, duração, avaliações e localização da rodoviária."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ridesharing and carpooling",
+     "g": "Share a car ride and its costs with other people heading the same way.",
+     "p": [
+      "Carpooling platforms connect drivers with empty seats to passengers going the same direction.",
+      "Costs for fuel and tolls are shared, so it can be cheaper than the bus and more social.",
+      "Check driver profiles and reviews, agree on the meeting point and share your trip details with someone."
+     ],
+     "q": "Would you enjoy chatting with strangers on a shared ride, or do you prefer quiet journeys?",
+     "c": "Look up a carpool option for a route you know and compare it with the train or bus price."
+    },
+    "de": {
+     "t": "Mitfahrgelegenheiten",
+     "g": "Teile eine Autofahrt und ihre Kosten mit anderen, die in dieselbe Richtung wollen.",
+     "p": [
+      "Mitfahrplattformen verbinden Fahrer mit freien Plätzen und Mitreisende mit gleichem Ziel.",
+      "Sprit und Maut werden geteilt, das kann günstiger als der Bus sein und ist geselliger.",
+      "Prüfe Profile und Bewertungen, vereinbare den Treffpunkt und teile deine Reisedaten mit jemandem."
+     ],
+     "q": "Würdest du gern mit Fremden plaudern, oder sind dir ruhige Fahrten lieber?",
+     "c": "Such eine Mitfahrgelegenheit für eine bekannte Strecke und vergleiche sie mit Zug oder Bus."
+    },
+    "es": {
+     "t": "Compartir coche",
+     "g": "Comparte un viaje en coche y sus gastos con otras personas que van en la misma dirección.",
+     "p": [
+      "Las plataformas de coche compartido conectan a conductores con plazas libres y pasajeros que van al mismo sitio.",
+      "Combustible y peajes se reparten, así que puede salir más barato que el autobús y es más social.",
+      "Revisa perfiles y opiniones, acuerda el punto de encuentro y comparte los datos del viaje con alguien."
+     ],
+     "q": "¿Te gustaría charlar con desconocidos en un coche compartido o prefieres viajes tranquilos?",
+     "c": "Busca una opción de coche compartido para una ruta que conozcas y compárala con el tren o el autobús."
+    },
+    "fr": {
+     "t": "Covoiturage",
+     "g": "Partage un trajet en voiture et ses frais avec d'autres personnes qui vont dans la même direction.",
+     "p": [
+      "Les plateformes de covoiturage relient des conducteurs avec des places libres à des passagers qui vont au même endroit.",
+      "Carburant et péages sont partagés, donc c'est parfois moins cher que le bus, et plus convivial.",
+      "Vérifie profils et avis, mets-vous d'accord sur le lieu de rendez-vous et partage ton trajet avec un proche."
+     ],
+     "q": "Aimerais-tu discuter avec des inconnus en covoiturage, ou préfères-tu les trajets au calme ?",
+     "c": "Cherche un covoiturage pour un trajet que tu connais et compare-le au prix du train ou du bus."
+    },
+    "it": {
+     "t": "Passaggi e car pooling",
+     "g": "Condividi un viaggio in auto e i suoi costi con altre persone che vanno nella stessa direzione.",
+     "p": [
+      "Le piattaforme di car pooling mettono in contatto chi guida con posti liberi e chi va nella stessa direzione.",
+      "Carburante e pedaggi si dividono, quindi può costare meno del bus ed è più socievole.",
+      "Controlla profili e recensioni, concorda il punto d'incontro e condividi i dettagli del viaggio con qualcuno."
+     ],
+     "q": "Ti piacerebbe chiacchierare con sconosciuti durante un passaggio o preferisci viaggi silenziosi?",
+     "c": "Cerca un passaggio in car pooling per una tratta che conosci e confrontalo con il prezzo di treno o bus."
+    },
+    "pt": {
+     "t": "Partilha de boleias",
+     "g": "Partilha uma viagem de carro e os custos com outras pessoas que vão no mesmo sentido.",
+     "p": [
+      "As plataformas de boleias ligam condutores com lugares livres a passageiros que vão para o mesmo lado.",
+      "Combustível e portagens dividem-se, por isso pode sair mais barato do que o autocarro e é mais social.",
+      "Vê perfis e avaliações, combina o ponto de encontro e partilha os dados da viagem com alguém."
+     ],
+     "q": "Gostavas de conversar com desconhecidos numa boleia ou preferes viagens sossegadas?",
+     "c": "Procura uma boleia partilhada para uma rota que conheças e compara com o preço do comboio ou autocarro."
+    },
+    "pt_BR": {
+     "t": "Carona compartilhada",
+     "g": "Divida uma viagem de carro e os custos com outras pessoas que vão para o mesmo lado.",
+     "p": [
+      "Plataformas de carona ligam motoristas com lugares vagos a passageiros que vão na mesma direção.",
+      "Combustível e pedágios são divididos, então pode sair mais barato que o ônibus e é mais social.",
+      "Confira perfis e avaliações, combine o ponto de encontro e compartilhe os dados da viagem com alguém."
+     ],
+     "q": "Você curtiria conversar com desconhecidos numa carona ou prefere viagens mais quietas?",
+     "c": "Procure uma carona para uma rota que você conhece e compare com o preço do ônibus ou trem."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comparing transport options",
+     "g": "Weigh price, time, comfort and carbon footprint for each route.",
+     "p": [
+      "List every option for a route: plane, train, bus, carpool, even a ferry, side by side.",
+      "Count door-to-door time, including getting to stations or airports and waiting.",
+      "Trains and buses usually have a smaller carbon footprint than flying, which is a nice bonus."
+     ],
+     "q": "When choosing transport, what usually wins for you: price, speed, comfort or the planet?",
+     "c": "Make a small table for one trip comparing two or three options by price, time and comfort."
+    },
+    "de": {
+     "t": "Verkehrsmittel vergleichen",
+     "g": "Wäge für jede Strecke Preis, Zeit, Komfort und CO2-Fußabdruck ab.",
+     "p": [
+      "Liste alle Optionen einer Strecke nebeneinander auf: Flugzeug, Zug, Bus, Mitfahrt, sogar Fähre.",
+      "Zähle die Zeit von Tür zu Tür, inklusive Weg zu Bahnhof oder Flughafen und Wartezeit.",
+      "Zug und Bus haben meist einen kleineren CO2-Fußabdruck als das Fliegen, ein schöner Bonus."
+     ],
+     "q": "Was gewinnt bei dir meistens: Preis, Tempo, Komfort oder der Planet?",
+     "c": "Mach für eine Reise eine kleine Tabelle mit zwei oder drei Optionen nach Preis, Zeit und Komfort."
+    },
+    "es": {
+     "t": "Comparar medios de transporte",
+     "g": "Sopesa precio, tiempo, comodidad y huella de carbono en cada ruta.",
+     "p": [
+      "Pon todas las opciones de una ruta lado a lado: avión, tren, autobús, coche compartido e incluso ferri.",
+      "Cuenta el tiempo de puerta a puerta, incluido llegar a estaciones o aeropuertos y esperar.",
+      "El tren y el autobús suelen tener menos huella de carbono que el avión, un buen extra."
+     ],
+     "q": "Al elegir transporte, ¿qué suele ganar para ti: precio, rapidez, comodidad o el planeta?",
+     "c": "Haz una tabla pequeña para un viaje comparando dos o tres opciones por precio, tiempo y comodidad."
+    },
+    "fr": {
+     "t": "Comparer les transports",
+     "g": "Pèse le prix, le temps, le confort et l'empreinte carbone de chaque trajet.",
+     "p": [
+      "Liste toutes les options d'un trajet côte à côte : avion, train, bus, covoiturage, voire ferry.",
+      "Compte le temps de porte à porte, y compris l'accès aux gares ou aéroports et l'attente.",
+      "Le train et le bus ont souvent une empreinte carbone plus faible que l'avion, un joli bonus."
+     ],
+     "q": "Pour choisir un transport, qu'est-ce qui l'emporte chez toi : le prix, la vitesse, le confort ou la planète ?",
+     "c": "Fais un petit tableau pour un voyage comparant deux ou trois options par prix, durée et confort."
+    },
+    "it": {
+     "t": "Confrontare i mezzi di trasporto",
+     "g": "Valuta prezzo, tempo, comodità e impronta di carbonio per ogni tratta.",
+     "p": [
+      "Metti tutte le opzioni di una tratta una accanto all'altra: aereo, treno, bus, car pooling, perfino traghetto.",
+      "Conta il tempo porta a porta, compresi il tragitto verso stazioni o aeroporti e le attese.",
+      "Treno e bus hanno di solito un'impronta di carbonio minore dell'aereo, un bel vantaggio in più."
+     ],
+     "q": "Quando scegli un mezzo, cosa vince di solito per te: prezzo, velocità, comodità o il pianeta?",
+     "c": "Fai una piccola tabella per un viaggio confrontando due o tre opzioni per prezzo, tempo e comodità."
+    },
+    "pt": {
+     "t": "Comparar meios de transporte",
+     "g": "Pesa o preço, o tempo, o conforto e a pegada de carbono de cada rota.",
+     "p": [
+      "Põe lado a lado todas as opções de uma rota: avião, comboio, autocarro, boleia e até ferry.",
+      "Conta o tempo de porta a porta, incluindo chegar a estações ou aeroportos e esperar.",
+      "Comboio e autocarro costumam ter menos pegada de carbono do que o avião, um bom bónus."
+     ],
+     "q": "Ao escolher transporte, o que costuma ganhar para ti: preço, rapidez, conforto ou o planeta?",
+     "c": "Faz uma pequena tabela para uma viagem comparando duas ou três opções por preço, tempo e conforto."
+    },
+    "pt_BR": {
+     "t": "Comparando meios de transporte",
+     "g": "Pese preço, tempo, conforto e pegada de carbono em cada rota.",
+     "p": [
+      "Coloque lado a lado todas as opções de uma rota: avião, trem, ônibus, carona e até balsa.",
+      "Conte o tempo de porta a porta, incluindo chegar a rodoviárias ou aeroportos e esperar.",
+      "Trem e ônibus costumam ter pegada de carbono menor que o avião, um ótimo bônus."
+     ],
+     "q": "Na hora de escolher o transporte, o que costuma ganhar para você: preço, rapidez, conforto ou o planeta?",
+     "c": "Faça uma tabelinha para uma viagem comparando duas ou três opções por preço, tempo e conforto."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: planning and transport",
+     "g": "Look back on budgets, timing and getting there, then plan a mini trip on paper.",
+     "p": [
+      "You can now set a trip goal, build a budget with a buffer and track spending day by day.",
+      "You know how seasons, flexible dates and midweek travel bring prices down.",
+      "You can compare flights, trains, buses and shared rides by their full door-to-door cost."
+     ],
+     "q": "Which tip from this first month surprised you most or will you use first?",
+     "c": "Plan a two-day mini trip on paper: goal, dates, transport choice and a simple daily budget."
+    },
+    "de": {
+     "t": "Rückblick: Planung und Anreise",
+     "g": "Blick zurück auf Budget, Timing und Anreise und plane dann eine Mini-Reise auf Papier.",
+     "p": [
+      "Du kannst jetzt ein Reiseziel festlegen, ein Budget mit Puffer erstellen und Ausgaben täglich festhalten.",
+      "Du weißt, wie Saisons, flexible Daten und Reisen unter der Woche die Preise senken.",
+      "Du kannst Flug, Zug, Bus und Mitfahrt nach den echten Kosten von Tür zu Tür vergleichen."
+     ],
+     "q": "Welcher Tipp aus diesem ersten Monat hat dich am meisten überrascht oder kommt zuerst zum Einsatz?",
+     "c": "Plane eine zweitägige Mini-Reise auf Papier: Ziel, Daten, Verkehrsmittel und ein einfaches Tagesbudget."
+    },
+    "es": {
+     "t": "Repaso: planificación y transporte",
+     "g": "Repasa presupuestos, fechas y cómo llegar, y planea un miniviaje sobre el papel.",
+     "p": [
+      "Ya sabes fijar un objetivo, hacer un presupuesto con colchón y controlar el gasto día a día.",
+      "Sabes cómo la temporada, las fechas flexibles y viajar entre semana bajan los precios.",
+      "Puedes comparar avión, tren, autobús y coche compartido por su coste real de puerta a puerta."
+     ],
+     "q": "¿Qué consejo de este primer mes te sorprendió más o vas a usar primero?",
+     "c": "Planea un miniviaje de dos días en papel: objetivo, fechas, transporte y un presupuesto diario sencillo."
+    },
+    "fr": {
+     "t": "Bilan : planification et transport",
+     "g": "Reviens sur les budgets, le bon moment et les trajets, puis planifie un mini-voyage sur papier.",
+     "p": [
+      "Tu sais fixer un objectif, bâtir un budget avec marge et suivre tes dépenses jour après jour.",
+      "Tu sais comment les saisons, les dates souples et la semaine font baisser les prix.",
+      "Tu peux comparer avion, train, bus et covoiturage selon leur vrai coût de porte à porte."
+     ],
+     "q": "Quel conseil de ce premier mois t'a le plus surpris ou vas-tu utiliser en premier ?",
+     "c": "Planifie un mini-voyage de deux jours sur papier : objectif, dates, transport et budget quotidien simple."
+    },
+    "it": {
+     "t": "Ripasso: pianificazione e trasporti",
+     "g": "Ripercorri budget, tempi e spostamenti, poi pianifica un mini viaggio su carta.",
+     "p": [
+      "Ora sai fissare un obiettivo, creare un budget con margine e tenere traccia delle spese giorno per giorno.",
+      "Sai come stagioni, date flessibili e viaggi a metà settimana abbassano i prezzi.",
+      "Puoi confrontare aereo, treno, bus e car pooling in base al costo reale porta a porta."
+     ],
+     "q": "Quale consiglio di questo primo mese ti ha sorpreso di più o userai per primo?",
+     "c": "Pianifica su carta un mini viaggio di due giorni: obiettivo, date, mezzo di trasporto e un semplice budget giornaliero."
+    },
+    "pt": {
+     "t": "Revisão: planeamento e transporte",
+     "g": "Revê orçamentos, datas e deslocações, e depois planeia uma miniviagem no papel.",
+     "p": [
+      "Já sabes definir um objetivo, criar um orçamento com margem e registar os gastos dia a dia.",
+      "Sabes como as épocas, as datas flexíveis e viajar a meio da semana baixam os preços.",
+      "Consegues comparar avião, comboio, autocarro e boleia pelo custo real de porta a porta."
+     ],
+     "q": "Que dica deste primeiro mês te surpreendeu mais ou vais usar primeiro?",
+     "c": "Planeia uma miniviagem de dois dias no papel: objetivo, datas, transporte e um orçamento diário simples."
+    },
+    "pt_BR": {
+     "t": "Revisão: planejamento e transporte",
+     "g": "Relembre orçamento, datas e deslocamento, e planeje uma miniviagem no papel.",
+     "p": [
+      "Agora você sabe definir um objetivo, montar um orçamento com reserva e anotar os gastos dia a dia.",
+      "Você sabe como temporadas, datas flexíveis e viajar no meio da semana baixam os preços.",
+      "Você consegue comparar avião, trem, ônibus e carona pelo custo real de porta a porta."
+     ],
+     "q": "Qual dica deste primeiro mês mais surpreendeu você ou vai ser usada primeiro?",
+     "c": "Planeje uma miniviagem de dois dias no papel: objetivo, datas, transporte e um orçamento diário simples."
+    }
+   }
+  }
+ ]
+}

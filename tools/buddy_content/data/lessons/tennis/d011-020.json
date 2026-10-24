@@ -1,0 +1,835 @@
+{
+ "topic": "tennis",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Eastern forehand grip",
+     "g": "Learn the Eastern forehand grip, a classic and easy way to start hitting forehands.",
+     "p": [
+      "Hold the racket as if shaking hands with it; the palm sits roughly behind the handle.",
+      "The base knuckle of your index finger rests on the third bevel, on the right side for right-handers.",
+      "It gives a flat-to-medium topspin forehand and handles both high and low balls fairly well."
+     ],
+     "q": "Does shaking hands with the racket feel natural to you, or a bit strange?",
+     "c": "Pick up a racket, a pan or a book and practise finding the handshake grip ten times."
+    },
+    "de": {
+     "t": "Der Eastern-Vorhandgriff",
+     "g": "Lerne den Eastern-Vorhandgriff, einen klassischen, leichten Einstieg in die Vorhand.",
+     "p": [
+      "Halte den Schläger, als würdest du ihm die Hand geben; die Handfläche liegt etwa hinter dem Griff.",
+      "Der Knöchel des Zeigefingers liegt auf der dritten Griffkante, bei Rechtshändern rechts.",
+      "Er ergibt eine flache bis leicht angeschnittene Vorhand und kommt mit hohen und tiefen Bällen gut zurecht."
+     ],
+     "q": "Fühlt sich der Händedruck mit dem Schläger natürlich an oder eher seltsam?",
+     "c": "Nimm einen Schläger, eine Pfanne oder ein Buch und finde den Händedruck-Griff zehnmal."
+    },
+    "es": {
+     "t": "La empuñadura Eastern de derecha",
+     "g": "Aprende la empuñadura Eastern de derecha, una forma clásica y sencilla de empezar.",
+     "p": [
+      "Coge la raqueta como si le dieras la mano; la palma queda más o menos detrás del mango.",
+      "El nudillo del índice se apoya en el tercer bisel, a la derecha para los diestros.",
+      "Da una derecha plana o con algo de liftado y funciona bien con bolas altas y bajas."
+     ],
+     "q": "¿Darle la mano a la raqueta te resulta natural o un poco raro?",
+     "c": "Coge una raqueta, una sartén o un libro y busca la empuñadura de saludo diez veces."
+    },
+    "fr": {
+     "t": "La prise eastern de coup droit",
+     "g": "Apprends la prise eastern, une façon classique et facile de débuter le coup droit.",
+     "p": [
+      "Tiens la raquette comme pour lui serrer la main ; la paume est à peu près derrière le manche.",
+      "L'articulation de l'index repose sur le troisième pan, côté droit pour un droitier.",
+      "Elle donne un coup droit à plat ou légèrement lifté, à l'aise sur les balles hautes comme basses."
+     ],
+     "q": "Serrer la main de ta raquette, ça te paraît naturel ou un peu bizarre ?",
+     "c": "Prends une raquette, une poêle ou un livre et retrouve la prise « poignée de main » dix fois."
+    },
+    "it": {
+     "t": "L'impugnatura eastern di dritto",
+     "g": "Impara l'impugnatura eastern, un modo classico e semplice di iniziare il dritto.",
+     "p": [
+      "Impugna la racchetta come se le stringessi la mano; il palmo sta più o meno dietro il manico.",
+      "La nocca dell'indice poggia sulla terza faccetta, a destra per i destrimani.",
+      "Dà un dritto piatto o con un po' di top e si adatta bene a palle alte e basse."
+     ],
+     "q": "Stringere la mano alla racchetta ti sembra naturale o un po' strano?",
+     "c": "Prendi una racchetta, una padella o un libro e trova la presa a stretta di mano dieci volte."
+    },
+    "pt": {
+     "t": "A pega Eastern de direita",
+     "g": "Aprende a pega Eastern de direita, uma forma clássica e simples de começar.",
+     "p": [
+      "Segura a raqueta como se lhe desses um aperto de mão; a palma fica mais ou menos atrás do punho.",
+      "O nó do indicador apoia-se no terceiro bisel, do lado direito para os destros.",
+      "Dá uma direita plana ou com algum efeito e funciona bem com bolas altas e baixas."
+     ],
+     "q": "Dar um aperto de mão à raqueta parece-te natural ou um pouco estranho?",
+     "c": "Pega numa raqueta, numa frigideira ou num livro e encontra a pega de aperto de mão dez vezes."
+    },
+    "pt_BR": {
+     "t": "A empunhadura Eastern de forehand",
+     "g": "Aprenda a empunhadura Eastern de forehand, um jeito clássico e fácil de começar.",
+     "p": [
+      "Segure a raquete como se fosse apertar a mão dela; a palma fica mais ou menos atrás do cabo.",
+      "O nó do indicador fica no terceiro chanfro, do lado direito para destros.",
+      "Ela gera um forehand chapado ou com pouco topspin e lida bem com bolas altas e baixas."
+     ],
+     "q": "Apertar a mão da raquete parece natural para você ou meio estranho?",
+     "c": "Pegue uma raquete, uma frigideira ou um livro e encontre a pegada de aperto de mão dez vezes."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Forehand basics",
+     "g": "Put together the unit turn, swing path and follow-through of your most natural shot.",
+     "p": [
+      "Start with a unit turn: shoulders and racket rotate together as soon as you see the ball coming.",
+      "Swing from low to high, letting the racket meet the ball in front and travel up and across.",
+      "Finish over your opposite shoulder, chest facing the net, like a relaxed wave goodbye."
+     ],
+     "q": "What part of the forehand do you think is hardest: turning, swinging or finishing?",
+     "c": "Do 20 slow shadow forehands without a ball, saying turn, swing, finish each time."
+    },
+    "de": {
+     "t": "Vorhand-Grundlagen",
+     "g": "Setze Körperdrehung, Schwungbahn und Ausschwung deines natürlichsten Schlags zusammen.",
+     "p": [
+      "Beginne mit der Körperdrehung: Schultern und Schläger drehen sich gemeinsam, sobald der Ball kommt.",
+      "Schwinge von unten nach oben, treffe den Ball vor dem Körper und führe den Schläger nach oben und quer.",
+      "Der Ausschwung endet über der anderen Schulter, die Brust zeigt zum Netz, wie ein lockeres Winken."
+     ],
+     "q": "Was ist für dich der schwierigste Teil: Drehen, Schwingen oder Ausschwingen?",
+     "c": "Mach 20 langsame Schattenvorhände ohne Ball und sag dabei jedes Mal: Drehen, Schwingen, Ende."
+    },
+    "es": {
+     "t": "Fundamentos de la derecha",
+     "g": "Une el giro de hombros, el recorrido y el final de tu golpe más natural.",
+     "p": [
+      "Empieza con el giro: hombros y raqueta rotan juntos en cuanto ves venir la pelota.",
+      "Golpea de abajo arriba, contactando la pelota delante y llevando la raqueta hacia arriba y a través.",
+      "Termina por encima del hombro contrario, con el pecho hacia la red, como un saludo relajado."
+     ],
+     "q": "¿Qué parte de la derecha te parece más difícil: girar, golpear o terminar?",
+     "c": "Haz 20 derechas lentas en sombra, sin pelota, diciendo girar, golpear, terminar cada vez."
+    },
+    "fr": {
+     "t": "Les bases du coup droit",
+     "g": "Assemble la rotation, la trajectoire de frappe et l'accompagnement de ton coup le plus naturel.",
+     "p": [
+      "Commence par la rotation : épaules et raquette tournent ensemble dès que la balle arrive.",
+      "Frappe de bas en haut, en touchant la balle devant toi, puis la raquette monte et traverse.",
+      "Termine au-dessus de l'épaule opposée, poitrine face au filet, comme un au revoir détendu."
+     ],
+     "q": "Quelle partie du coup droit te semble la plus difficile : tourner, frapper ou finir ?",
+     "c": "Fais 20 coups droits lents à vide en disant à chaque fois : tourner, frapper, finir."
+    },
+    "it": {
+     "t": "Basi del dritto",
+     "g": "Metti insieme rotazione, traiettoria e finale del tuo colpo più naturale.",
+     "p": [
+      "Parti con la rotazione: spalle e racchetta girano insieme appena vedi arrivare la palla.",
+      "Colpisci dal basso verso l'alto, incontra la palla davanti e porta la racchetta in alto e attraverso.",
+      "Finisci sopra la spalla opposta, petto verso la rete, come un saluto rilassato."
+     ],
+     "q": "Quale parte del dritto ti sembra più difficile: girare, colpire o finire?",
+     "c": "Fai 20 dritti lenti a vuoto, senza palla, dicendo ogni volta: giro, colpo, finale."
+    },
+    "pt": {
+     "t": "Bases da direita",
+     "g": "Junta a rotação, a trajetória e o acompanhamento da tua pancada mais natural.",
+     "p": [
+      "Começa pela rotação: ombros e raqueta rodam juntos assim que vês a bola a vir.",
+      "Bate de baixo para cima, contactando a bola à frente e levando a raqueta para cima e para o lado.",
+      "Termina por cima do ombro oposto, peito virado para a rede, como um adeus descontraído."
+     ],
+     "q": "Que parte da direita te parece mais difícil: rodar, bater ou terminar?",
+     "c": "Faz 20 direitas lentas no ar, sem bola, dizendo rodar, bater, terminar de cada vez."
+    },
+    "pt_BR": {
+     "t": "Fundamentos do forehand",
+     "g": "Junte a rotação, a trajetória e a terminação do seu golpe mais natural.",
+     "p": [
+      "Comece com a rotação: ombros e raquete giram juntos assim que você vê a bola vindo.",
+      "Bata de baixo para cima, encontrando a bola à frente e levando a raquete para cima e para o lado.",
+      "Termine por cima do ombro oposto, peito virado para a rede, como um tchau relaxado."
+     ],
+     "q": "Qual parte do forehand parece mais difícil: girar, bater ou terminar?",
+     "c": "Faça 20 forehands lentos no ar, sem bola, dizendo girar, bater, terminar a cada vez."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backhand basics",
+     "g": "Compare the one-handed and two-handed backhand and pick a starting point.",
+     "p": [
+      "Most beginners start two-handed: the extra hand adds stability and power on high balls.",
+      "The one-handed backhand offers more reach and elegance, but needs strong timing and a firm wrist.",
+      "Either way, turn your shoulders early so your back almost faces the net before you swing."
+     ],
+     "q": "Which backhand style do you like watching more, one-handed or two-handed?",
+     "c": "Shadow ten one-handed and ten two-handed backhands and notice which feels more natural."
+    },
+    "de": {
+     "t": "Rückhand-Grundlagen",
+     "g": "Vergleiche ein- und beidhändige Rückhand und finde deinen Einstieg.",
+     "p": [
+      "Die meisten Anfänger spielen beidhändig: Die zweite Hand bringt Stabilität und Kraft bei hohen Bällen.",
+      "Die einhändige Rückhand hat mehr Reichweite und Eleganz, braucht aber gutes Timing und ein festes Handgelenk.",
+      "In beiden Fällen früh die Schultern drehen, sodass dein Rücken vor dem Schlag fast zum Netz zeigt."
+     ],
+     "q": "Welche Rückhand schaust du lieber zu, ein- oder beidhändig?",
+     "c": "Mach je zehn Schattenschläge mit ein- und beidhändiger Rückhand und spür, was natürlicher ist."
+    },
+    "es": {
+     "t": "Fundamentos del revés",
+     "g": "Compara el revés a una y a dos manos y elige por dónde empezar.",
+     "p": [
+      "La mayoría empieza a dos manos: la segunda mano da estabilidad y fuerza en las bolas altas.",
+      "El revés a una mano ofrece más alcance y elegancia, pero exige buen timing y muñeca firme.",
+      "En ambos casos, gira los hombros pronto, casi dando la espalda a la red antes de golpear."
+     ],
+     "q": "¿Qué revés te gusta más ver, a una mano o a dos?",
+     "c": "Haz en sombra diez reveses a una mano y diez a dos y nota cuál te sale más natural."
+    },
+    "fr": {
+     "t": "Les bases du revers",
+     "g": "Compare le revers à une main et à deux mains et choisis ton point de départ.",
+     "p": [
+      "La plupart des débutants jouent à deux mains : la seconde main stabilise et aide sur les balles hautes.",
+      "Le revers à une main offre plus d'allonge et d'élégance, mais demande du timing et un poignet ferme.",
+      "Dans les deux cas, tourne tôt les épaules, presque dos au filet avant de frapper."
+     ],
+     "q": "Quel revers préfères-tu regarder, à une main ou à deux mains ?",
+     "c": "Fais à vide dix revers à une main et dix à deux mains, et sens lequel est le plus naturel."
+    },
+    "it": {
+     "t": "Basi del rovescio",
+     "g": "Confronta rovescio a una e a due mani e scegli da dove partire.",
+     "p": [
+      "Quasi tutti i principianti iniziano a due mani: la seconda mano dà stabilità e forza sulle palle alte.",
+      "Il rovescio a una mano offre più allungo ed eleganza, ma richiede tempismo e polso fermo.",
+      "In entrambi i casi gira presto le spalle, quasi dando la schiena alla rete prima di colpire."
+     ],
+     "q": "Quale rovescio ti piace di più guardare, a una o a due mani?",
+     "c": "Fai dieci rovesci a vuoto a una mano e dieci a due mani e senti quale ti viene più naturale."
+    },
+    "pt": {
+     "t": "Bases da esquerda",
+     "g": "Compara a esquerda a uma e a duas mãos e escolhe por onde começar.",
+     "p": [
+      "A maioria começa a duas mãos: a segunda mão dá estabilidade e força nas bolas altas.",
+      "A esquerda a uma mão tem mais alcance e elegância, mas exige bom timing e pulso firme.",
+      "Em ambos os casos, roda os ombros cedo, quase de costas para a rede antes de bater."
+     ],
+     "q": "Que esquerda gostas mais de ver, a uma mão ou a duas?",
+     "c": "Faz no ar dez esquerdas a uma mão e dez a duas e repara qual te sai mais natural."
+    },
+    "pt_BR": {
+     "t": "Fundamentos do backhand",
+     "g": "Compare o backhand de uma e de duas mãos e escolha por onde começar.",
+     "p": [
+      "A maioria começa com duas mãos: a segunda mão dá estabilidade e força nas bolas altas.",
+      "O backhand de uma mão tem mais alcance e elegância, mas exige bom tempo de bola e pulso firme.",
+      "Nos dois casos, gire os ombros cedo, quase de costas para a rede antes de bater."
+     ],
+     "q": "Qual backhand você gosta mais de assistir, de uma mão ou de duas?",
+     "c": "Faça no ar dez backhands de uma mão e dez de duas e veja qual sai mais natural."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The contact point",
+     "g": "Learn why hitting the ball in front of your body gives you both control and power.",
+     "p": [
+      "The ideal contact point is slightly in front of your front hip, at a comfortable distance from your body.",
+      "Hit late, beside or behind you, and the ball sprays wide and feels heavy on your arm.",
+      "Watch the ball onto the strings; many great players keep their head still at contact."
+     ],
+     "q": "Do you think you usually hit the ball too early, too late or just right?",
+     "c": "Drop a ball in front of your front foot and tap it gently over and over, keeping your head still."
+    },
+    "de": {
+     "t": "Der Treffpunkt",
+     "g": "Lerne, warum der Treffpunkt vor dem Körper dir Kontrolle und Kraft gibt.",
+     "p": [
+      "Der ideale Treffpunkt liegt etwas vor der vorderen Hüfte, mit angenehmem Abstand zum Körper.",
+      "Triffst du zu spät, neben oder hinter dir, fliegt der Ball weg und belastet deinen Arm.",
+      "Verfolge den Ball bis auf die Saiten; viele große Spieler halten den Kopf beim Treffen ruhig."
+     ],
+     "q": "Triffst du den Ball deiner Meinung nach eher zu früh, zu spät oder genau richtig?",
+     "c": "Lass einen Ball vor deinem vorderen Fuß fallen und tippe ihn immer wieder sanft an, Kopf ruhig."
+    },
+    "es": {
+     "t": "El punto de impacto",
+     "g": "Aprende por qué golpear delante del cuerpo te da control y potencia.",
+     "p": [
+      "El punto ideal está un poco por delante de la cadera adelantada, a una distancia cómoda del cuerpo.",
+      "Si golpeas tarde, al lado o detrás, la pelota se va desviada y el brazo sufre.",
+      "Sigue la pelota hasta las cuerdas; muchos grandes jugadores mantienen la cabeza quieta al impactar."
+     ],
+     "q": "¿Crees que sueles golpear demasiado pronto, demasiado tarde o justo a tiempo?",
+     "c": "Deja caer una pelota delante del pie adelantado y tócala suavemente una y otra vez, con la cabeza quieta."
+    },
+    "fr": {
+     "t": "Le point d'impact",
+     "g": "Apprends pourquoi frapper devant toi te donne contrôle et puissance.",
+     "p": [
+      "Le point idéal est un peu devant la hanche avant, à une distance confortable du corps.",
+      "Si tu frappes en retard, à côté ou derrière toi, la balle part de travers et ton bras force.",
+      "Suis la balle jusqu'au cordage ; beaucoup de grands joueurs gardent la tête immobile à l'impact."
+     ],
+     "q": "Penses-tu frapper plutôt trop tôt, trop tard ou juste au bon moment ?",
+     "c": "Lâche une balle devant ton pied avant et tapote-la doucement plusieurs fois, tête immobile."
+    },
+    "it": {
+     "t": "Il punto d'impatto",
+     "g": "Impara perché colpire davanti al corpo ti dà controllo e potenza.",
+     "p": [
+      "Il punto ideale è poco davanti all'anca avanzata, a una distanza comoda dal corpo.",
+      "Se colpisci in ritardo, di fianco o dietro, la palla scappa via e il braccio fatica.",
+      "Segui la palla fino alle corde; molti grandi giocatori tengono la testa ferma all'impatto."
+     ],
+     "q": "Pensi di colpire di solito troppo presto, troppo tardi o al momento giusto?",
+     "c": "Lascia cadere una palla davanti al piede avanzato e colpiscila piano più volte, testa ferma."
+    },
+    "pt": {
+     "t": "O ponto de impacto",
+     "g": "Aprende porque bater à frente do corpo te dá controlo e potência.",
+     "p": [
+      "O ponto ideal fica um pouco à frente da anca da frente, a uma distância confortável do corpo.",
+      "Se bates atrasado, ao lado ou atrás, a bola sai torta e o braço sofre.",
+      "Segue a bola até às cordas; muitos grandes jogadores mantêm a cabeça quieta no impacto."
+     ],
+     "q": "Achas que costumas bater cedo demais, tarde demais ou no momento certo?",
+     "c": "Deixa cair uma bola à frente do pé da frente e toca-lhe suavemente várias vezes, de cabeça quieta."
+    },
+    "pt_BR": {
+     "t": "O ponto de contato",
+     "g": "Aprenda por que bater à frente do corpo dá controle e potência.",
+     "p": [
+      "O ponto ideal fica um pouco à frente do quadril da frente, a uma distância confortável do corpo.",
+      "Se você bate atrasado, do lado ou atrás, a bola sai torta e o braço sofre.",
+      "Acompanhe a bola até as cordas; muitos grandes jogadores mantêm a cabeça parada no contato."
+     ],
+     "q": "Você acha que costuma bater cedo demais, tarde demais ou na hora certa?",
+     "c": "Solte uma bola à frente do pé da frente e toque nela de leve várias vezes, com a cabeça parada."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Footwork basics",
+     "g": "Learn small adjustment steps and the habit of recovering to the middle after each shot.",
+     "p": [
+      "Big steps get you to the ball; small, quick steps fine-tune your distance just before you hit.",
+      "Good players rarely stand still: light feet make it easier to react and stay balanced.",
+      "After hitting, move back toward the middle of the baseline so the next ball is never too far."
+     ],
+     "q": "Do you think tennis is more about arms or legs? Why?",
+     "c": "Do 3 rounds of 20 seconds of quick small steps on the spot, like your feet are on hot sand."
+    },
+    "de": {
+     "t": "Grundlagen der Beinarbeit",
+     "g": "Lerne kleine Anpassungsschritte und die Gewohnheit, nach jedem Schlag zur Mitte zurückzukehren.",
+     "p": [
+      "Große Schritte bringen dich zum Ball; kleine, schnelle Schritte justieren kurz vor dem Schlag den Abstand.",
+      "Gute Spieler stehen selten still: Leichte Füße helfen, schnell zu reagieren und im Gleichgewicht zu bleiben.",
+      "Nach dem Schlag gehst du Richtung Mitte der Grundlinie, damit der nächste Ball nie zu weit weg ist."
+     ],
+     "q": "Ist Tennis für dich eher eine Sache der Arme oder der Beine? Warum?",
+     "c": "Mach 3 Runden à 20 Sekunden schnelle Trippelschritte auf der Stelle, als stündest du auf heißem Sand."
+    },
+    "es": {
+     "t": "Juego de pies básico",
+     "g": "Aprende los pasos de ajuste y el hábito de volver al centro tras cada golpe.",
+     "p": [
+      "Los pasos largos te llevan a la pelota; los cortos y rápidos ajustan la distancia justo antes de golpear.",
+      "Los buenos jugadores casi nunca están quietos: pies ligeros para reaccionar y mantener el equilibrio.",
+      "Tras golpear, vuelve hacia el centro de la línea de fondo para que la siguiente bola no quede lejos."
+     ],
+     "q": "¿Crees que el tenis es más cosa de brazos o de piernas? ¿Por qué?",
+     "c": "Haz 3 series de 20 segundos de pasitos rápidos en el sitio, como si pisaras arena caliente."
+    },
+    "fr": {
+     "t": "Les bases du jeu de jambes",
+     "g": "Apprends les petits pas d'ajustement et l'habitude de revenir au centre après chaque coup.",
+     "p": [
+      "Les grands pas t'amènent à la balle ; les petits pas rapides règlent la distance juste avant la frappe.",
+      "Les bons joueurs sont rarement immobiles : des pieds légers aident à réagir et à rester équilibré.",
+      "Après la frappe, reviens vers le milieu de la ligne de fond pour que la balle suivante ne soit jamais trop loin."
+     ],
+     "q": "Pour toi, le tennis, c'est plutôt les bras ou les jambes ? Pourquoi ?",
+     "c": "Fais 3 séries de 20 secondes de petits pas rapides sur place, comme sur du sable brûlant."
+    },
+    "it": {
+     "t": "Basi del gioco di gambe",
+     "g": "Impara i piccoli passi di aggiustamento e l'abitudine di tornare al centro dopo ogni colpo.",
+     "p": [
+      "I passi lunghi ti portano alla palla; quelli piccoli e rapidi regolano la distanza subito prima del colpo.",
+      "I bravi giocatori stanno raramente fermi: piedi leggeri aiutano a reagire e restare in equilibrio.",
+      "Dopo il colpo torna verso il centro della linea di fondo, così la palla successiva non sarà mai troppo lontana."
+     ],
+     "q": "Secondo te il tennis è più una questione di braccia o di gambe? Perché?",
+     "c": "Fai 3 serie da 20 secondi di passetti rapidi sul posto, come se fossi sulla sabbia bollente."
+    },
+    "pt": {
+     "t": "Bases do trabalho de pés",
+     "g": "Aprende os passos de ajuste e o hábito de voltar ao centro depois de cada pancada.",
+     "p": [
+      "Os passos largos levam-te à bola; os curtos e rápidos acertam a distância mesmo antes de bater.",
+      "Os bons jogadores raramente estão parados: pés leves ajudam a reagir e a manter o equilíbrio.",
+      "Depois de bater, volta para o meio da linha de fundo para que a bola seguinte nunca fique longe."
+     ],
+     "q": "Achas que o ténis é mais coisa de braços ou de pernas? Porquê?",
+     "c": "Faz 3 séries de 20 segundos de passinhos rápidos no lugar, como se pisasses areia quente."
+    },
+    "pt_BR": {
+     "t": "Fundamentos do trabalho de pés",
+     "g": "Aprenda os passos de ajuste e o hábito de voltar ao centro depois de cada golpe.",
+     "p": [
+      "Passos largos levam você até a bola; passos curtos e rápidos acertam a distância logo antes de bater.",
+      "Bons jogadores quase nunca ficam parados: pés leves ajudam a reagir e manter o equilíbrio.",
+      "Depois de bater, volte para o meio da linha de base para que a próxima bola nunca fique longe."
+     ],
+     "q": "Você acha que o tênis é mais braço ou mais perna? Por quê?",
+     "c": "Faça 3 séries de 20 segundos de passinhos rápidos no lugar, como se pisasse em areia quente."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The split step",
+     "g": "Add the split step, a small hop that makes you quicker to every ball.",
+     "p": [
+      "Just as your opponent hits, do a small hop and land on the balls of both feet, slightly wide.",
+      "Landing loaded like a spring lets you push off instantly in any direction.",
+      "Watch the pros: almost every shot they react to starts with a split step."
+     ],
+     "q": "Have you noticed players doing a little jump before moving? What did you think it was?",
+     "c": "Watch one point and say split each time a player hops as the other one hits."
+    },
+    "de": {
+     "t": "Der Split-Step",
+     "g": "Füge den Split-Step hinzu, einen kleinen Hüpfer, der dich bei jedem Ball schneller macht.",
+     "p": [
+      "Genau wenn dein Gegner trifft, machst du einen kleinen Hüpfer und landest leicht breit auf beiden Fußballen.",
+      "Wie eine gespannte Feder landen heißt: Du kannst sofort in jede Richtung starten.",
+      "Schau den Profis zu: Fast jede Reaktion auf einen Ball beginnt mit einem Split-Step."
+     ],
+     "q": "Ist dir schon aufgefallen, dass Spieler vor dem Loslaufen kurz hüpfen? Was dachtest du, warum?",
+     "c": "Schau einen Punkt an und sag jedes Mal Split, wenn ein Spieler hüpft, während der andere trifft."
+    },
+    "es": {
+     "t": "El split step",
+     "g": "Añade el split step, un pequeño salto que te hace más rápido en cada bola.",
+     "p": [
+      "Justo cuando el rival golpea, da un saltito y cae sobre la parte delantera de ambos pies, algo separados.",
+      "Caer cargado como un muelle te permite arrancar al instante en cualquier dirección.",
+      "Fíjate en los profesionales: casi cada reacción empieza con un split step."
+     ],
+     "q": "¿Has visto a jugadores dar un saltito antes de moverse? ¿Qué pensabas que era?",
+     "c": "Mira un punto y di split cada vez que un jugador salta mientras el otro golpea."
+    },
+    "fr": {
+     "t": "Le pas d'allègement",
+     "g": "Ajoute le split step, un petit saut qui te rend plus rapide sur chaque balle.",
+     "p": [
+      "Au moment où l'adversaire frappe, fais un petit saut et retombe sur l'avant des deux pieds, un peu écartés.",
+      "Retomber chargé comme un ressort te permet de partir aussitôt dans n'importe quelle direction.",
+      "Regarde les pros : presque chaque réaction commence par un pas d'allègement."
+     ],
+     "q": "As-tu déjà remarqué ce petit saut des joueurs avant de bouger ? Tu pensais que c'était quoi ?",
+     "c": "Regarde un point et dis « split » chaque fois qu'un joueur sautille pendant que l'autre frappe."
+    },
+    "it": {
+     "t": "Lo split step",
+     "g": "Aggiungi lo split step, un piccolo saltello che ti rende più rapido su ogni palla.",
+     "p": [
+      "Proprio mentre l'avversario colpisce, fai un saltello e atterra sugli avampiedi, leggermente divaricati.",
+      "Atterrare carico come una molla ti permette di partire subito in qualsiasi direzione.",
+      "Guarda i professionisti: quasi ogni reazione inizia con uno split step."
+     ],
+     "q": "Hai notato quel saltello dei giocatori prima di muoversi? Cosa pensavi che fosse?",
+     "c": "Guarda un punto e di' split ogni volta che un giocatore saltella mentre l'altro colpisce."
+    },
+    "pt": {
+     "t": "O split step",
+     "g": "Junta o split step, um pequeno salto que te torna mais rápido em cada bola.",
+     "p": [
+      "Mesmo quando o adversário bate, dá um saltinho e cai na parte da frente dos dois pés, um pouco afastados.",
+      "Cair carregado como uma mola permite-te arrancar logo para qualquer lado.",
+      "Repara nos profissionais: quase todas as reações começam com um split step."
+     ],
+     "q": "Já reparaste nos jogadores a dar um saltinho antes de se mexerem? O que achavas que era?",
+     "c": "Vê um ponto e diz split sempre que um jogador saltita enquanto o outro bate."
+    },
+    "pt_BR": {
+     "t": "O split step",
+     "g": "Inclua o split step, um pulinho que deixa você mais rápido em cada bola.",
+     "p": [
+      "Bem na hora em que o adversário bate, dê um pulinho e caia na ponta dos dois pés, um pouco afastados.",
+      "Cair carregado como uma mola permite sair na hora para qualquer lado.",
+      "Repare nos profissionais: quase toda reação começa com um split step."
+     ],
+     "q": "Você já reparou nos jogadores dando um pulinho antes de se mexer? O que achava que era?",
+     "c": "Assista a um ponto e diga split toda vez que um jogador pula enquanto o outro bate."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rallying cooperatively",
+     "g": "Learn to keep the ball in play with a partner to build rhythm and confidence.",
+     "p": [
+      "In a cooperative rally the goal is many shots in a row, not winning the point.",
+      "Aim for the middle of the court, at a comfortable height and pace your partner can return.",
+      "Count your rally out loud together; beating your record is surprisingly motivating."
+     ],
+     "q": "What would be a fun rally record to aim for with a friend?",
+     "c": "Set a target with a partner, or against a wall, of 10 shots in a row and count them aloud."
+    },
+    "de": {
+     "t": "Kooperatives Spielen",
+     "g": "Lerne, mit einem Partner den Ball im Spiel zu halten, um Rhythmus und Sicherheit aufzubauen.",
+     "p": [
+      "Beim kooperativen Ballwechsel geht es um viele Schläge am Stück, nicht ums Punktgewinnen.",
+      "Ziele in die Platzmitte, in angenehmer Höhe und Tempo, damit dein Partner gut zurückspielen kann.",
+      "Zählt den Ballwechsel gemeinsam laut; den eigenen Rekord zu brechen motiviert erstaunlich."
+     ],
+     "q": "Welcher Ballwechsel-Rekord wäre mit einem Freund ein lustiges Ziel?",
+     "c": "Setz dir mit einem Partner oder an einer Wand 10 Schläge am Stück als Ziel und zähl laut mit."
+    },
+    "es": {
+     "t": "Pelotear en cooperación",
+     "g": "Aprende a mantener la pelota en juego con un compañero para ganar ritmo y confianza.",
+     "p": [
+      "En un peloteo cooperativo el objetivo es dar muchos golpes seguidos, no ganar el punto.",
+      "Apunta al centro de la pista, con altura y ritmo cómodos para que tu compañero devuelva.",
+      "Contad el peloteo en voz alta; batir vuestro récord motiva muchísimo."
+     ],
+     "q": "¿Qué récord de peloteo sería divertido intentar con un amigo?",
+     "c": "Ponte con un compañero, o contra una pared, el objetivo de 10 golpes seguidos y cuéntalos en voz alta."
+    },
+    "fr": {
+     "t": "Échanger en coopération",
+     "g": "Apprends à garder la balle en jeu avec un partenaire pour trouver rythme et confiance.",
+     "p": [
+      "Dans un échange coopératif, le but est d'enchaîner les frappes, pas de gagner le point.",
+      "Vise le milieu du court, à une hauteur et une vitesse que ton partenaire peut renvoyer.",
+      "Comptez l'échange à voix haute ; battre votre record motive étonnamment."
+     ],
+     "q": "Quel record d'échange serait amusant à viser avec un ami ?",
+     "c": "Fixe-toi avec un partenaire, ou contre un mur, l'objectif de 10 frappes d'affilée en comptant à voix haute."
+    },
+    "it": {
+     "t": "Palleggiare in collaborazione",
+     "g": "Impara a tenere la palla in gioco con un compagno per costruire ritmo e fiducia.",
+     "p": [
+      "In un palleggio collaborativo l'obiettivo è fare tanti colpi di fila, non vincere il punto.",
+      "Mira al centro del campo, con altezza e ritmo comodi per il tuo compagno.",
+      "Contate il palleggio ad alta voce; battere il vostro record è sorprendentemente motivante."
+     ],
+     "q": "Quale record di palleggio sarebbe divertente provare con un amico?",
+     "c": "Con un compagno o contro un muro, punta a 10 colpi di fila contandoli ad alta voce."
+    },
+    "pt": {
+     "t": "Trocar bolas em cooperação",
+     "g": "Aprende a manter a bola em jogo com um parceiro para ganhar ritmo e confiança.",
+     "p": [
+      "Numa troca cooperativa o objetivo é fazer muitas pancadas seguidas, não ganhar o ponto.",
+      "Aponta ao meio do campo, com altura e ritmo confortáveis para o teu parceiro devolver.",
+      "Contem a troca em voz alta; bater o vosso recorde motiva imenso."
+     ],
+     "q": "Que recorde de trocas seria divertido tentar com um amigo?",
+     "c": "Com um parceiro ou contra uma parede, tenta chegar a 10 pancadas seguidas, a contar em voz alta."
+    },
+    "pt_BR": {
+     "t": "Bater bola em cooperação",
+     "g": "Aprenda a manter a bola em jogo com um parceiro para ganhar ritmo e confiança.",
+     "p": [
+      "Num rali cooperativo o objetivo é dar muitos golpes seguidos, não ganhar o ponto.",
+      "Mire no meio da quadra, com altura e ritmo confortáveis para seu parceiro devolver.",
+      "Contem o rali em voz alta; bater o próprio recorde motiva muito."
+     ],
+     "q": "Que recorde de rali seria divertido tentar com um amigo?",
+     "c": "Com um parceiro ou contra um paredão, tente chegar a 10 golpes seguidos contando em voz alta."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Serve basics",
+     "g": "Build a simple, reliable serve from stance, toss and swing.",
+     "p": [
+      "Stand sideways behind the baseline, front foot pointing toward the opposite net post.",
+      "Toss the ball up and slightly in front, then reach up and hit it at the highest comfortable point.",
+      "Start with a smooth, relaxed motion; a serve that lands in beats a fast one that misses."
+     ],
+     "q": "What do you imagine is the trickiest part of serving?",
+     "c": "Shadow 15 slow serves in front of a mirror, checking that your stance is sideways."
+    },
+    "de": {
+     "t": "Aufschlag-Grundlagen",
+     "g": "Baue aus Stand, Ballwurf und Schwung einen einfachen, zuverlässigen Aufschlag.",
+     "p": [
+      "Stell dich seitlich hinter die Grundlinie, der vordere Fuß zeigt zum gegenüberliegenden Netzpfosten.",
+      "Wirf den Ball hoch und leicht nach vorn, streck dich und triff ihn am höchsten bequemen Punkt.",
+      "Beginne mit einer ruhigen, lockeren Bewegung; ein Aufschlag, der reingeht, schlägt einen schnellen ins Aus."
+     ],
+     "q": "Was stellst du dir beim Aufschlag am kniffligsten vor?",
+     "c": "Mach 15 langsame Schattenaufschläge vor einem Spiegel und prüfe, ob du seitlich stehst."
+    },
+    "es": {
+     "t": "Fundamentos del saque",
+     "g": "Construye un saque sencillo y fiable a partir de la posición, el lanzamiento y el golpe.",
+     "p": [
+      "Colócate de lado tras la línea de fondo, con el pie delantero apuntando al poste contrario de la red.",
+      "Lanza la pelota hacia arriba y algo adelante, estírate y golpéala en el punto más alto cómodo.",
+      "Empieza con un movimiento suave y relajado; un saque que entra vale más que uno rápido que falla."
+     ],
+     "q": "¿Qué crees que es lo más difícil del saque?",
+     "c": "Haz 15 saques lentos en sombra frente a un espejo, comprobando que estás de lado."
+    },
+    "fr": {
+     "t": "Les bases du service",
+     "g": "Construis un service simple et fiable : placement, lancer et frappe.",
+     "p": [
+      "Place-toi de profil derrière la ligne de fond, pied avant orienté vers le poteau opposé du filet.",
+      "Lance la balle vers le haut et un peu devant, puis va la chercher au point le plus haut confortable.",
+      "Commence avec un geste fluide et relâché ; un service qui rentre vaut mieux qu'un service rapide qui sort."
+     ],
+     "q": "Qu'est-ce qui te semble le plus délicat dans le service ?",
+     "c": "Fais 15 services lents à vide devant un miroir en vérifiant que tu es bien de profil."
+    },
+    "it": {
+     "t": "Basi del servizio",
+     "g": "Costruisci un servizio semplice e affidabile partendo da posizione, lancio e colpo.",
+     "p": [
+      "Mettiti di lato dietro la linea di fondo, piede avanti rivolto verso il paletto opposto della rete.",
+      "Lancia la palla in alto e un po' avanti, poi allungati e colpiscila nel punto più alto comodo.",
+      "Parti con un gesto fluido e rilassato; un servizio che entra vale più di uno veloce che sbaglia."
+     ],
+     "q": "Cosa immagini sia la parte più difficile del servizio?",
+     "c": "Fai 15 servizi lenti a vuoto davanti a uno specchio, controllando di essere di lato."
+    },
+    "pt": {
+     "t": "Bases do serviço",
+     "g": "Constrói um serviço simples e fiável a partir da posição, do lançamento e da pancada.",
+     "p": [
+      "Coloca-te de lado atrás da linha de fundo, com o pé da frente apontado para o poste oposto da rede.",
+      "Lança a bola para cima e um pouco à frente, estica-te e bate-lhe no ponto mais alto confortável.",
+      "Começa com um gesto suave e descontraído; um serviço que entra vale mais do que um rápido que falha."
+     ],
+     "q": "O que imaginas ser o mais difícil no serviço?",
+     "c": "Faz 15 serviços lentos no ar em frente a um espelho, confirmando que estás de lado."
+    },
+    "pt_BR": {
+     "t": "Fundamentos do saque",
+     "g": "Monte um saque simples e confiável a partir da posição, do lançamento e do golpe.",
+     "p": [
+      "Fique de lado atrás da linha de base, com o pé da frente apontando para o poste oposto da rede.",
+      "Lance a bola para cima e um pouco à frente, estique-se e bata no ponto mais alto confortável.",
+      "Comece com um movimento suave e solto; um saque que entra vale mais que um rápido que erra."
+     ],
+     "q": "O que você imagina ser a parte mais difícil do saque?",
+     "c": "Faça 15 saques lentos no ar na frente de um espelho, conferindo se está de lado."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ball toss",
+     "g": "See why a consistent toss is the secret behind a good serve.",
+     "p": [
+      "Release the ball from your fingertips with a straight arm, lifting it rather than throwing it.",
+      "Toss slightly higher than you can reach with the racket, so you hit it as it peaks or starts to drop.",
+      "If the toss is bad, catch it and start again; that is allowed and smart."
+     ],
+     "q": "Do you think a wobbly toss or a weak swing ruins more serves?",
+     "c": "Toss 20 balls and let them fall; try to make each one land on a racket placed in front of your front foot."
+    },
+    "de": {
+     "t": "Der Ballwurf",
+     "g": "Erfahre, warum ein gleichmäßiger Ballwurf das Geheimnis eines guten Aufschlags ist.",
+     "p": [
+      "Lass den Ball mit gestrecktem Arm aus den Fingerspitzen los, eher hochheben als werfen.",
+      "Wirf etwas höher, als du mit dem Schläger reichst, und triff ihn am Scheitelpunkt oder kurz danach.",
+      "Ist der Wurf schlecht, fang den Ball und beginne neu; das ist erlaubt und klug."
+     ],
+     "q": "Was verdirbt mehr Aufschläge: ein wackliger Wurf oder ein schwacher Schwung?",
+     "c": "Wirf 20 Bälle hoch und lass sie fallen; sie sollen auf einem Schläger vor deinem vorderen Fuß landen."
+    },
+    "es": {
+     "t": "El lanzamiento de bola",
+     "g": "Descubre por qué un lanzamiento constante es el secreto de un buen saque.",
+     "p": [
+      "Suelta la pelota desde las yemas con el brazo estirado, elevándola más que lanzándola.",
+      "Lánzala un poco más alto de lo que alcanzas con la raqueta y golpéala en lo más alto o al empezar a caer.",
+      "Si el lanzamiento sale mal, cógelo y vuelve a empezar; está permitido y es inteligente."
+     ],
+     "q": "¿Qué crees que estropea más saques: un lanzamiento torcido o un golpe flojo?",
+     "c": "Lanza 20 pelotas y déjalas caer; intenta que caigan sobre una raqueta puesta delante de tu pie adelantado."
+    },
+    "fr": {
+     "t": "Le lancer de balle",
+     "g": "Vois pourquoi un lancer régulier est le secret d'un bon service.",
+     "p": [
+      "Lâche la balle du bout des doigts, bras tendu, en la soulevant plutôt qu'en la jetant.",
+      "Lance un peu plus haut que ce que tu atteins avec la raquette, et frappe au sommet ou juste après.",
+      "Si le lancer est raté, rattrape la balle et recommence : c'est permis et malin."
+     ],
+     "q": "Qu'est-ce qui gâche le plus de services : un lancer bancal ou une frappe molle ?",
+     "c": "Lance 20 balles et laisse-les tomber ; vise une raquette posée devant ton pied avant."
+    },
+    "it": {
+     "t": "Il lancio di palla",
+     "g": "Scopri perché un lancio costante è il segreto di un buon servizio.",
+     "p": [
+      "Lascia la palla dalla punta delle dita con il braccio teso, sollevandola più che lanciandola.",
+      "Lancia un po' più in alto di dove arrivi con la racchetta e colpisci al culmine o appena scende.",
+      "Se il lancio è sbagliato, riprendi la palla e ricomincia: è permesso ed è furbo."
+     ],
+     "q": "Secondo te rovina più servizi un lancio storto o un colpo debole?",
+     "c": "Lancia 20 palle e lasciale cadere; prova a farle atterrare su una racchetta davanti al piede avanzato."
+    },
+    "pt": {
+     "t": "O lançamento da bola",
+     "g": "Vê porque um lançamento consistente é o segredo de um bom serviço.",
+     "p": [
+      "Solta a bola das pontas dos dedos com o braço esticado, elevando-a mais do que atirando.",
+      "Lança um pouco acima do que alcanças com a raqueta e bate no ponto mais alto ou quando começa a descer.",
+      "Se o lançamento sair mal, apanha a bola e recomeça; é permitido e inteligente."
+     ],
+     "q": "O que achas que estraga mais serviços: um lançamento torto ou uma pancada fraca?",
+     "c": "Lança 20 bolas e deixa-as cair; tenta que caiam numa raqueta pousada à frente do pé da frente."
+    },
+    "pt_BR": {
+     "t": "O lançamento da bola",
+     "g": "Veja por que um lançamento consistente é o segredo de um bom saque.",
+     "p": [
+      "Solte a bola pelas pontas dos dedos com o braço esticado, mais levantando do que jogando.",
+      "Lance um pouco acima do alcance da raquete e bata no ponto mais alto ou quando a bola começa a cair.",
+      "Se o lançamento sair ruim, pegue a bola e recomece; é permitido e inteligente."
+     ],
+     "q": "O que você acha que estraga mais saques: um lançamento torto ou um golpe fraco?",
+     "c": "Lance 20 bolas e deixe cair; tente fazer cada uma cair numa raquete colocada à frente do pé da frente."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Serve rules",
+     "g": "Learn the key serve rules: two attempts, faults, foot faults and serving diagonally.",
+     "p": [
+      "You serve diagonally into the opposite service box, starting each game from the right side.",
+      "A serve that misses the box is a fault; you get a second try, and two faults in a row is a double fault.",
+      "Stepping on or over the baseline before hitting the ball is a foot fault and counts as a fault."
+     ],
+     "q": "Why do you think players start every game serving from the right side?",
+     "c": "Explain the difference between a fault and a double fault to someone in one sentence."
+    },
+    "de": {
+     "t": "Aufschlagregeln",
+     "g": "Lerne die wichtigsten Aufschlagregeln: zwei Versuche, Fehler, Fußfehler und diagonal aufschlagen.",
+     "p": [
+      "Du schlägst diagonal ins gegenüberliegende Aufschlagfeld auf und beginnst jedes Spiel von rechts.",
+      "Landet der Aufschlag außerhalb, ist es ein Fehler; du hast einen zweiten Versuch, zwei Fehler sind ein Doppelfehler.",
+      "Wer vor dem Treffen auf oder über die Grundlinie tritt, begeht einen Fußfehler, der als Fehler zählt."
+     ],
+     "q": "Warum beginnen Spieler wohl jedes Spiel mit dem Aufschlag von rechts?",
+     "c": "Erkläre jemandem in einem Satz den Unterschied zwischen Fehler und Doppelfehler."
+    },
+    "es": {
+     "t": "Reglas del saque",
+     "g": "Aprende las reglas clave del saque: dos intentos, faltas, falta de pie y saque en diagonal.",
+     "p": [
+      "Se saca en diagonal al cuadro de servicio contrario, empezando cada juego desde el lado derecho.",
+      "Un saque fuera del cuadro es falta; tienes un segundo intento, y dos faltas seguidas son doble falta.",
+      "Pisar o cruzar la línea de fondo antes de golpear es falta de pie y cuenta como falta."
+     ],
+     "q": "¿Por qué crees que cada juego empieza sacando desde la derecha?",
+     "c": "Explícale a alguien en una frase la diferencia entre falta y doble falta."
+    },
+    "fr": {
+     "t": "Les règles du service",
+     "g": "Apprends les règles clés : deux essais, fautes, fautes de pied et service en diagonale.",
+     "p": [
+      "On sert en diagonale dans le carré de service opposé, en commençant chaque jeu du côté droit.",
+      "Un service hors du carré est une faute ; tu as un second essai, et deux fautes d'affilée font une double faute.",
+      "Mordre ou franchir la ligne de fond avant la frappe est une faute de pied, comptée comme faute."
+     ],
+     "q": "Pourquoi, selon toi, chaque jeu commence-t-il par un service côté droit ?",
+     "c": "Explique à quelqu'un en une phrase la différence entre faute et double faute."
+    },
+    "it": {
+     "t": "Regole del servizio",
+     "g": "Impara le regole chiave: due tentativi, falli, fallo di piede e servizio in diagonale.",
+     "p": [
+      "Si serve in diagonale nel riquadro opposto, iniziando ogni game dal lato destro.",
+      "Un servizio fuori dal riquadro è fallo; hai un secondo tentativo, e due falli di fila sono un doppio fallo.",
+      "Calpestare o superare la linea di fondo prima di colpire è fallo di piede e vale come fallo."
+     ],
+     "q": "Secondo te perché ogni game inizia servendo da destra?",
+     "c": "Spiega a qualcuno in una frase la differenza tra fallo e doppio fallo."
+    },
+    "pt": {
+     "t": "Regras do serviço",
+     "g": "Aprende as regras-chave do serviço: duas tentativas, faltas, falta de pé e serviço na diagonal.",
+     "p": [
+      "Serve-se na diagonal para o quadrado de serviço oposto, começando cada jogo do lado direito.",
+      "Um serviço fora do quadrado é falta; tens segunda tentativa, e duas faltas seguidas são dupla falta.",
+      "Pisar ou passar a linha de fundo antes de bater é falta de pé e conta como falta."
+     ],
+     "q": "Porque achas que cada jogo começa com o serviço do lado direito?",
+     "c": "Explica a alguém numa frase a diferença entre falta e dupla falta."
+    },
+    "pt_BR": {
+     "t": "Regras do saque",
+     "g": "Aprenda as regras principais do saque: duas tentativas, faltas, foot fault e saque na diagonal.",
+     "p": [
+      "O saque vai na diagonal para a área de saque oposta, começando cada game pelo lado direito.",
+      "Um saque fora da área é falta; você tem segunda chance, e duas faltas seguidas são dupla falta.",
+      "Pisar ou passar a linha de base antes de bater na bola é foot fault e conta como falta."
+     ],
+     "q": "Por que você acha que cada game começa com o saque do lado direito?",
+     "c": "Explique para alguém numa frase a diferença entre falta e dupla falta."
+    }
+   }
+  }
+ ]
+}

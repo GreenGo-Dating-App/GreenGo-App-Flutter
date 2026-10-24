@@ -1,0 +1,835 @@
+{
+ "topic": "budget_travel",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Avoiding tourist-trap restaurants",
+     "g": "Walk a few streets away from big sights and look for places full of locals.",
+     "p": [
+      "Restaurants right next to famous sights often charge more for less, since visitors rarely return.",
+      "Warning signs: menus in many languages with photos, staff calling you in, no prices shown.",
+      "Two or three streets away, look for short local menus and tables full of people chatting in the local language."
+     ],
+     "q": "What makes you trust a restaurant when you walk past it for the first time?",
+     "c": "Next time you eat out, walk at least three streets away from the busiest area before choosing."
+    },
+    "de": {
+     "t": "Touristenfallen meiden",
+     "g": "Geh ein paar Straßen weg von großen Sehenswürdigkeiten und such Lokale voller Einheimischer.",
+     "p": [
+      "Restaurants direkt neben berühmten Orten verlangen oft mehr für weniger, weil Besucher selten wiederkommen.",
+      "Warnzeichen: Speisekarten in vielen Sprachen mit Fotos, Personal, das dich hereinruft, keine Preise.",
+      "Zwei, drei Straßen weiter achte auf kurze lokale Karten und Tische voller Leute, die die Landessprache sprechen."
+     ],
+     "q": "Woran erkennst du, dass du einem Restaurant trauen kannst, wenn du zum ersten Mal vorbeigehst?",
+     "c": "Geh beim nächsten Essen auswärts mindestens drei Straßen vom belebtesten Bereich weg, bevor du wählst."
+    },
+    "es": {
+     "t": "Evitar restaurantes trampa",
+     "g": "Aléjate unas calles de los grandes monumentos y busca sitios llenos de gente local.",
+     "p": [
+      "Los restaurantes junto a lugares famosos suelen cobrar más por menos, porque los turistas rara vez vuelven.",
+      "Señales de alerta: cartas en muchos idiomas con fotos, camareros que te llaman desde la puerta y precios ocultos.",
+      "A dos o tres calles, busca cartas cortas y locales, y mesas llenas de gente charlando en el idioma del lugar."
+     ],
+     "q": "¿Qué hace que confíes en un restaurante cuando pasas por delante por primera vez?",
+     "c": "La próxima vez que comas fuera, aléjate al menos tres calles de la zona más concurrida antes de elegir."
+    },
+    "fr": {
+     "t": "Éviter les attrape-touristes",
+     "g": "Éloigne-toi de quelques rues des grands sites et cherche des adresses pleines d'habitants.",
+     "p": [
+      "Les restaurants collés aux sites célèbres font souvent payer plus pour moins, car les visiteurs reviennent rarement.",
+      "Signaux d'alerte : menus en plein de langues avec photos, rabatteurs à l'entrée, prix non affichés.",
+      "À deux ou trois rues, cherche des cartes courtes et locales et des tables pleines de gens parlant la langue du pays."
+     ],
+     "q": "Qu'est-ce qui te donne confiance dans un restaurant quand tu passes devant pour la première fois ?",
+     "c": "La prochaine fois que tu manges dehors, éloigne-toi d'au moins trois rues du coin le plus fréquenté avant de choisir."
+    },
+    "it": {
+     "t": "Evitare i ristoranti acchiappaturisti",
+     "g": "Allontanati di qualche via dalle grandi attrazioni e cerca locali pieni di gente del posto.",
+     "p": [
+      "I ristoranti accanto ai luoghi famosi spesso fanno pagare di più per meno, perché i turisti raramente tornano.",
+      "Segnali d'allarme: menù in tante lingue con foto, personale che ti chiama dentro, prezzi non esposti.",
+      "A due o tre vie di distanza, cerca menù brevi e locali e tavoli pieni di gente che parla la lingua del posto."
+     ],
+     "q": "Cosa ti fa fidare di un ristorante quando ci passi davanti per la prima volta?",
+     "c": "La prossima volta che mangi fuori, allontanati di almeno tre vie dalla zona più affollata prima di scegliere."
+    },
+    "pt": {
+     "t": "Evitar restaurantes armadilha",
+     "g": "Afasta-te umas ruas dos grandes monumentos e procura sítios cheios de locais.",
+     "p": [
+      "Os restaurantes colados a locais famosos cobram muitas vezes mais por menos, porque os turistas raramente voltam.",
+      "Sinais de alerta: ementas em muitas línguas com fotos, empregados a chamar-te à porta, preços escondidos.",
+      "A duas ou três ruas, procura ementas curtas e locais e mesas cheias de gente a falar a língua do sítio."
+     ],
+     "q": "O que te faz confiar num restaurante quando passas à porta pela primeira vez?",
+     "c": "Da próxima vez que comeres fora, afasta-te pelo menos três ruas da zona mais movimentada antes de escolher."
+    },
+    "pt_BR": {
+     "t": "Fugindo de pega-turista",
+     "g": "Afaste-se algumas ruas dos grandes pontos turísticos e procure lugares cheios de moradores.",
+     "p": [
+      "Restaurantes colados a atrações famosas costumam cobrar mais por menos, já que turistas raramente voltam.",
+      "Sinais de alerta: cardápio em muitas línguas com fotos, gente chamando você na porta, preços escondidos.",
+      "A duas ou três ruas, procure cardápios curtos e locais e mesas cheias de gente falando a língua do lugar."
+     ],
+     "q": "O que faz você confiar num restaurante quando passa na frente pela primeira vez?",
+     "c": "Da próxima vez que comer fora, afaste-se pelo menos três ruas da área mais movimentada antes de escolher."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tipping customs around the world",
+     "g": "Know local tipping norms so you are polite and still on budget.",
+     "p": [
+      "Tipping varies a lot: in some countries it is expected, in others service is included or tipping is unusual.",
+      "In places like the United States, restaurant tips are a big part of staff income and are expected.",
+      "In Japan, tipping is generally not customary, and a warm thank-you is the best way to show appreciation."
+     ],
+     "q": "How does tipping work where you live, and has it ever confused you abroad?",
+     "c": "Look up the tipping norms for restaurants, taxis and hotels in one country you would like to visit."
+    },
+    "de": {
+     "t": "Trinkgeldregeln weltweit",
+     "g": "Kenne die örtlichen Trinkgeldregeln, damit du höflich bist und im Budget bleibst.",
+     "p": [
+      "Trinkgeld ist sehr unterschiedlich: Mal wird es erwartet, mal ist der Service inklusive oder Trinkgeld unüblich.",
+      "In Ländern wie den USA sind Trinkgelder im Restaurant ein großer Teil des Einkommens und werden erwartet.",
+      "In Japan ist Trinkgeld meist nicht üblich, ein herzliches Dankeschön zeigt deine Wertschätzung am besten."
+     ],
+     "q": "Wie funktioniert Trinkgeld bei dir zu Hause, und hat es dich im Ausland schon mal verwirrt?",
+     "c": "Recherchiere die Trinkgeldregeln für Restaurant, Taxi und Hotel in einem Land, das du besuchen möchtest."
+    },
+    "es": {
+     "t": "Propinas en el mundo",
+     "g": "Conoce las costumbres locales sobre propinas para ser educado sin salirte del presupuesto.",
+     "p": [
+      "La propina cambia mucho: en algunos países se espera, en otros el servicio va incluido o no es habitual.",
+      "En lugares como Estados Unidos, la propina en restaurantes es una parte importante del sueldo y se espera.",
+      "En Japón, por lo general no se deja propina, y un agradecimiento sincero es la mejor forma de mostrar aprecio."
+     ],
+     "q": "¿Cómo funcionan las propinas donde vives? ¿Alguna vez te han confundido en el extranjero?",
+     "c": "Busca las costumbres de propina en restaurantes, taxis y hoteles de un país que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Le pourboire dans le monde",
+     "g": "Connais les usages locaux du pourboire pour rester poli et dans ton budget.",
+     "p": [
+      "Le pourboire varie beaucoup : attendu dans certains pays, inclus dans le service ou inhabituel ailleurs.",
+      "Dans des pays comme les États-Unis, le pourboire au restaurant représente une grande part du revenu et il est attendu.",
+      "Au Japon, le pourboire n'est généralement pas d'usage : un merci chaleureux est la meilleure marque de gratitude."
+     ],
+     "q": "Comment fonctionne le pourboire chez toi, et t'a-t-il déjà semé le doute à l'étranger ?",
+     "c": "Renseigne-toi sur les usages du pourboire au restaurant, en taxi et à l'hôtel dans un pays que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Le mance nel mondo",
+     "g": "Conosci le usanze locali sulle mance per essere educato restando nel budget.",
+     "p": [
+      "Le mance cambiano molto: in alcuni paesi sono attese, in altri il servizio è incluso o la mancia è insolita.",
+      "In paesi come gli Stati Uniti, le mance al ristorante sono una parte importante dello stipendio e sono attese.",
+      "In Giappone la mancia in genere non si usa, e un grazie sincero è il modo migliore per mostrare apprezzamento."
+     ],
+     "q": "Come funzionano le mance dove vivi, e ti hanno mai confuso all'estero?",
+     "c": "Cerca le usanze sulle mance per ristoranti, taxi e hotel in un paese che ti piacerebbe visitare."
+    },
+    "pt": {
+     "t": "Gorjetas pelo mundo",
+     "g": "Conhece os hábitos locais de gorjeta para seres educado sem saíres do orçamento.",
+     "p": [
+      "As gorjetas variam muito: em alguns países esperam-se, noutros o serviço está incluído ou não é costume.",
+      "Em países como os Estados Unidos, as gorjetas nos restaurantes são uma parte importante do salário e esperam-se.",
+      "No Japão, em geral não se dá gorjeta, e um obrigado sincero é a melhor forma de mostrar apreço."
+     ],
+     "q": "Como funcionam as gorjetas onde vives? Já te confundiram no estrangeiro?",
+     "c": "Pesquisa os hábitos de gorjeta em restaurantes, táxis e hotéis num país que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Gorjetas pelo mundo",
+     "g": "Conheça os costumes locais de gorjeta para ser educado sem estourar o orçamento.",
+     "p": [
+      "A gorjeta varia muito: em alguns países é esperada, em outros o serviço já está incluído ou não é costume.",
+      "Em países como os Estados Unidos, a gorjeta em restaurantes é parte importante da renda e é esperada.",
+      "No Japão, em geral não se dá gorjeta, e um agradecimento sincero é o melhor jeito de mostrar apreço."
+     ],
+     "q": "Como funciona a gorjeta onde você mora? Ela já confundiu você no exterior?",
+     "c": "Pesquise os costumes de gorjeta em restaurantes, táxis e hotéis num país que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Free walking tours",
+     "g": "Learn how tip-based tours work and how to get the most out of them.",
+     "p": [
+      "Free walking tours are led by local guides; you join for free and tip at the end what you feel it was worth.",
+      "They are a great first-day activity to get your bearings and hear stories behind the sights.",
+      "Ask your guide for tips on cheap food and hidden spots, and plan a fair tip into your daily budget."
+     ],
+     "q": "Would you rather explore with a guide's stories or wander on your own and discover things?",
+     "c": "Find a free walking tour in a city you would like to visit and note where it starts and how long it lasts."
+    },
+    "de": {
+     "t": "Kostenlose Stadtführungen",
+     "g": "Lerne, wie trinkgeldbasierte Führungen funktionieren und wie du das Beste daraus machst.",
+     "p": [
+      "Kostenlose Stadtführungen leiten lokale Guides; die Teilnahme ist gratis, am Ende gibst du so viel Trinkgeld, wie es dir wert war.",
+      "Sie sind ideal am ersten Tag, um dich zu orientieren und Geschichten hinter den Sehenswürdigkeiten zu hören.",
+      "Frag deinen Guide nach günstigem Essen und versteckten Orten und plane ein faires Trinkgeld ins Tagesbudget ein."
+     ],
+     "q": "Erkundest du lieber mit den Geschichten eines Guides oder streifst du allein umher und entdeckst selbst?",
+     "c": "Finde eine kostenlose Führung in einer Wunschstadt und notiere Treffpunkt und Dauer."
+    },
+    "es": {
+     "t": "Free tours a pie",
+     "g": "Aprende cómo funcionan las visitas guiadas a cambio de propina y cómo aprovecharlas al máximo.",
+     "p": [
+      "Los free tours los dirigen guías locales: te apuntas gratis y al final das la propina que creas que vale.",
+      "Son ideales el primer día para orientarte y conocer las historias detrás de cada monumento.",
+      "Pide al guía consejos de comida barata y rincones escondidos, y reserva una propina justa en tu presupuesto."
+     ],
+     "q": "¿Prefieres explorar con las historias de un guía o pasear por tu cuenta e ir descubriendo?",
+     "c": "Busca un free tour en una ciudad que quieras visitar y anota dónde empieza y cuánto dura."
+    },
+    "fr": {
+     "t": "Les visites guidées gratuites",
+     "g": "Découvre comment fonctionnent les visites au pourboire et comment en profiter au maximum.",
+     "p": [
+      "Les visites gratuites sont menées par des guides locaux : tu participes gratuitement et donnes à la fin ce que tu estimes juste.",
+      "C'est l'activité idéale du premier jour pour se repérer et entendre les histoires derrière les sites.",
+      "Demande au guide ses bonnes adresses pas chères et ses coins cachés, et prévois un pourboire juste dans ton budget."
+     ],
+     "q": "Préfères-tu explorer avec les histoires d'un guide ou flâner seul et découvrir par toi-même ?",
+     "c": "Trouve une visite gratuite dans une ville que tu veux visiter et note son point de départ et sa durée."
+    },
+    "it": {
+     "t": "Free walking tour",
+     "g": "Scopri come funzionano i tour a offerta libera e come sfruttarli al meglio.",
+     "p": [
+      "I free walking tour sono guidati da guide locali: partecipi gratis e alla fine lasci la mancia che ritieni giusta.",
+      "Sono perfetti il primo giorno per orientarti e scoprire le storie dietro le attrazioni.",
+      "Chiedi alla guida consigli su cibo economico e angoli nascosti, e metti nel budget una mancia giusta."
+     ],
+     "q": "Preferisci esplorare con i racconti di una guida o girare da solo e scoprire le cose per conto tuo?",
+     "c": "Trova un free walking tour in una città che vorresti visitare e annota punto di partenza e durata."
+    },
+    "pt": {
+     "t": "Free walking tours",
+     "g": "Aprende como funcionam as visitas guiadas a troco de gorjeta e como tirar o máximo partido delas.",
+     "p": [
+      "Os free walking tours são guiados por locais: participas de graça e no fim dás a gorjeta que achares justa.",
+      "São ótimos no primeiro dia para te orientares e ouvires as histórias por trás dos monumentos.",
+      "Pede ao guia dicas de comida barata e cantos escondidos, e reserva no orçamento uma gorjeta justa."
+     ],
+     "q": "Preferes explorar com as histórias de um guia ou passear sozinho e ir descobrindo?",
+     "c": "Encontra um free walking tour numa cidade que queres visitar e anota onde começa e quanto tempo dura."
+    },
+    "pt_BR": {
+     "t": "Free walking tours",
+     "g": "Aprenda como funcionam os passeios guiados pagos com gorjeta e como aproveitar ao máximo.",
+     "p": [
+      "Os free walking tours são guiados por moradores: você participa de graça e no fim dá a gorjeta que achar justa.",
+      "São ótimos no primeiro dia para se localizar e ouvir as histórias por trás das atrações.",
+      "Peça ao guia dicas de comida barata e cantinhos escondidos, e reserve no orçamento uma gorjeta justa."
+     ],
+     "q": "Você prefere explorar com as histórias de um guia ou passear sozinho descobrindo as coisas?",
+     "c": "Ache um free walking tour numa cidade que você quer visitar e anote onde começa e quanto tempo dura."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Free museum days",
+     "g": "Plan your visits around the free days or hours that many museums offer.",
+     "p": [
+      "Many museums have free entry on certain days, evenings or for permanent collections only.",
+      "Some offer free or reduced entry for students, young people or residents, so always ask.",
+      "Free days can be busy, so arrive early and pick the rooms you most want to see."
+     ],
+     "q": "Which museum in the world would you most love to visit, and what would you see first?",
+     "c": "Check one museum you would like to visit and find out whether it has free days, hours or discounts."
+    },
+    "de": {
+     "t": "Kostenlose Museumstage",
+     "g": "Plane deine Besuche rund um die Gratistage oder -stunden, die viele Museen anbieten.",
+     "p": [
+      "Viele Museen haben an bestimmten Tagen, Abenden oder für ihre Dauerausstellung freien Eintritt.",
+      "Manche bieten freien oder ermäßigten Eintritt für Studierende, junge Leute oder Anwohner, frag immer nach.",
+      "Gratistage können voll sein, also komm früh und wähle die Räume, die du am liebsten sehen willst."
+     ],
+     "q": "Welches Museum der Welt würdest du am liebsten besuchen, und was würdest du dir zuerst ansehen?",
+     "c": "Prüfe ein Museum, das du besuchen möchtest, auf Gratistage, freie Stunden oder Ermäßigungen."
+    },
+    "es": {
+     "t": "Días gratis en museos",
+     "g": "Planea tus visitas según los días u horas gratuitos que ofrecen muchos museos.",
+     "p": [
+      "Muchos museos son gratis ciertos días, por la tarde-noche o solo en la colección permanente.",
+      "Algunos tienen entrada gratis o reducida para estudiantes, jóvenes o residentes, así que pregunta siempre.",
+      "Los días gratis puede haber mucha gente: llega pronto y elige las salas que más te interesan."
+     ],
+     "q": "¿Qué museo del mundo te encantaría visitar y qué verías primero?",
+     "c": "Mira un museo que quieras visitar y averigua si tiene días u horas gratis o descuentos."
+    },
+    "fr": {
+     "t": "Les jours de musée gratuits",
+     "g": "Organise tes visites autour des jours ou horaires gratuits que proposent beaucoup de musées.",
+     "p": [
+      "Beaucoup de musées sont gratuits certains jours, certains soirs ou pour leurs collections permanentes.",
+      "Certains offrent l'entrée gratuite ou réduite aux étudiants, aux jeunes ou aux résidents : demande toujours.",
+      "Les jours gratuits peuvent être bondés : arrive tôt et choisis les salles que tu veux voir en priorité."
+     ],
+     "q": "Quel musée au monde rêverais-tu de visiter, et que verrais-tu en premier ?",
+     "c": "Choisis un musée que tu aimerais visiter et vérifie s'il propose des jours, horaires gratuits ou réductions."
+    },
+    "it": {
+     "t": "Giornate gratuite nei musei",
+     "g": "Organizza le visite intorno ai giorni o agli orari gratuiti che offrono molti musei.",
+     "p": [
+      "Molti musei sono gratuiti in certi giorni, in certe sere o solo per le collezioni permanenti.",
+      "Alcuni offrono ingresso gratuito o ridotto a studenti, giovani o residenti, quindi chiedi sempre.",
+      "Le giornate gratuite possono essere affollate: arriva presto e scegli le sale che vuoi vedere di più."
+     ],
+     "q": "Quale museo al mondo ti piacerebbe di più visitare, e cosa vedresti per primo?",
+     "c": "Controlla un museo che vorresti visitare e scopri se ha giorni, orari gratuiti o sconti."
+    },
+    "pt": {
+     "t": "Dias grátis nos museus",
+     "g": "Planeia as visitas em função dos dias ou horas gratuitos que muitos museus oferecem.",
+     "p": [
+      "Muitos museus têm entrada grátis em certos dias, ao fim da tarde ou só nas coleções permanentes.",
+      "Alguns têm entrada grátis ou reduzida para estudantes, jovens ou residentes, por isso pergunta sempre.",
+      "Os dias grátis podem estar cheios: chega cedo e escolhe as salas que mais queres ver."
+     ],
+     "q": "Que museu do mundo adorarias visitar e o que verias primeiro?",
+     "c": "Vê um museu que queres visitar e descobre se tem dias ou horas grátis ou descontos."
+    },
+    "pt_BR": {
+     "t": "Dias grátis em museus",
+     "g": "Planeje as visitas pelos dias ou horários gratuitos que muitos museus oferecem.",
+     "p": [
+      "Muitos museus têm entrada grátis em certos dias, à noite ou só no acervo permanente.",
+      "Alguns dão entrada grátis ou meia-entrada para estudantes, jovens ou moradores, então pergunte sempre.",
+      "Dias grátis podem lotar: chegue cedo e escolha as salas que você mais quer ver."
+     ],
+     "q": "Que museu do mundo você mais adoraria visitar e o que veria primeiro?",
+     "c": "Confira um museu que você quer visitar e descubra se tem dias ou horários grátis ou descontos."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Parks, gardens and viewpoints",
+     "g": "Find out why some of the best experiences in any city cost nothing at all.",
+     "p": [
+      "City parks are perfect for people-watching, picnics, a nap in the shade or a free outdoor concert.",
+      "Botanical and public gardens are often free or very cheap and full of peaceful corners.",
+      "Hills, bridges and public terraces can give you the same view as a paid tower, for free."
+     ],
+     "q": "What is your favourite free spot in your own town or city to relax or enjoy a view?",
+     "c": "Find a free viewpoint in a city you love and plan to be there at sunset."
+    },
+    "de": {
+     "t": "Parks, Gärten und Aussichtspunkte",
+     "g": "Erfahre, warum einige der schönsten Erlebnisse in jeder Stadt gar nichts kosten.",
+     "p": [
+      "Stadtparks sind perfekt zum Leutebeobachten, Picknicken, Dösen im Schatten oder für ein Gratiskonzert.",
+      "Botanische und öffentliche Gärten sind oft gratis oder sehr günstig und voller ruhiger Ecken.",
+      "Hügel, Brücken und öffentliche Terrassen bieten oft denselben Blick wie ein bezahlter Turm, nur gratis."
+     ],
+     "q": "Was ist dein liebster kostenloser Ort in deiner Stadt, um zu entspannen oder die Aussicht zu genießen?",
+     "c": "Finde einen kostenlosen Aussichtspunkt in einer Lieblingsstadt und plane, bei Sonnenuntergang dort zu sein."
+    },
+    "es": {
+     "t": "Parques, jardines y miradores",
+     "g": "Descubre por qué algunas de las mejores experiencias de cualquier ciudad no cuestan nada.",
+     "p": [
+      "Los parques urbanos son perfectos para mirar a la gente, hacer un pícnic, echar la siesta a la sombra o ver un concierto gratis.",
+      "Los jardines botánicos y públicos suelen ser gratis o muy baratos y están llenos de rincones tranquilos.",
+      "Colinas, puentes y terrazas públicas pueden darte la misma vista que una torre de pago, gratis."
+     ],
+     "q": "¿Cuál es tu lugar gratuito favorito en tu ciudad para relajarte o disfrutar de una vista?",
+     "c": "Busca un mirador gratuito en una ciudad que te encante y planea estar allí al atardecer."
+    },
+    "fr": {
+     "t": "Parcs, jardins et points de vue",
+     "g": "Découvre pourquoi certaines des plus belles expériences, dans n'importe quelle ville, ne coûtent rien.",
+     "p": [
+      "Les parcs urbains sont parfaits pour observer les passants, pique-niquer, faire la sieste à l'ombre ou écouter un concert gratuit.",
+      "Jardins botaniques et jardins publics sont souvent gratuits ou très peu chers, avec plein de coins paisibles.",
+      "Collines, ponts et terrasses publiques offrent souvent la même vue qu'une tour payante, gratuitement."
+     ],
+     "q": "Quel est ton endroit gratuit préféré dans ta ville pour te détendre ou profiter d'une vue ?",
+     "c": "Trouve un point de vue gratuit dans une ville que tu aimes et prévois d'y être au coucher du soleil."
+    },
+    "it": {
+     "t": "Parchi, giardini e belvederi",
+     "g": "Scopri perché alcune delle esperienze più belle in qualsiasi città non costano nulla.",
+     "p": [
+      "I parchi cittadini sono perfetti per guardare la gente, fare un picnic, un pisolino all'ombra o un concerto gratuito.",
+      "Orti botanici e giardini pubblici sono spesso gratuiti o molto economici e pieni di angoli tranquilli.",
+      "Colline, ponti e terrazze pubbliche possono offrirti la stessa vista di una torre a pagamento, gratis."
+     ],
+     "q": "Qual è il tuo posto gratuito preferito nella tua città per rilassarti o goderti una vista?",
+     "c": "Trova un belvedere gratuito in una città che ami e programma di esserci al tramonto."
+    },
+    "pt": {
+     "t": "Parques, jardins e miradouros",
+     "g": "Descobre porque algumas das melhores experiências de qualquer cidade não custam nada.",
+     "p": [
+      "Os parques urbanos são perfeitos para ver gente, fazer piquenique, dormir uma sesta à sombra ou ouvir um concerto grátis.",
+      "Jardins botânicos e públicos são muitas vezes grátis ou muito baratos e cheios de cantos sossegados.",
+      "Colinas, pontes e terraços públicos podem dar-te a mesma vista que uma torre paga, de graça."
+     ],
+     "q": "Qual é o teu sítio grátis preferido na tua cidade para relaxar ou apreciar uma vista?",
+     "c": "Encontra um miradouro grátis numa cidade de que gostes e planeia estar lá ao pôr do sol."
+    },
+    "pt_BR": {
+     "t": "Parques, jardins e mirantes",
+     "g": "Descubra por que algumas das melhores experiências de qualquer cidade não custam nada.",
+     "p": [
+      "Parques urbanos são perfeitos para observar gente, fazer piquenique, cochilar na sombra ou curtir um show grátis.",
+      "Jardins botânicos e públicos costumam ser grátis ou bem baratos e cheios de cantinhos tranquilos.",
+      "Morros, pontes e terraços públicos podem dar a mesma vista de uma torre paga, de graça."
+     ],
+     "q": "Qual é seu lugar grátis favorito na sua cidade para relaxar ou curtir uma vista?",
+     "c": "Ache um mirante grátis numa cidade que você ama e planeje estar lá no pôr do sol."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Free festivals and events",
+     "g": "Find public concerts, markets and celebrations in local listings.",
+     "p": [
+      "Many cities host free open-air concerts, street parades, film nights and seasonal markets.",
+      "Check the tourist office, local news sites, posters and community boards for what is on.",
+      "Free events are a wonderful way to see local life and celebrate alongside residents."
+     ],
+     "q": "What kind of free event would you love to stumble upon: music, food, dance or a parade?",
+     "c": "Look up the events listings of one city and find two free events happening in a typical month."
+    },
+    "de": {
+     "t": "Kostenlose Feste und Events",
+     "g": "Finde öffentliche Konzerte, Märkte und Feiern in lokalen Veranstaltungskalendern.",
+     "p": [
+      "Viele Städte bieten kostenlose Open-Air-Konzerte, Umzüge, Filmabende und saisonale Märkte.",
+      "Schau bei der Touristeninfo, auf lokalen Nachrichtenseiten, Plakaten und Aushängen, was los ist.",
+      "Kostenlose Events sind eine wunderbare Art, das lokale Leben zu sehen und mit Einheimischen zu feiern."
+     ],
+     "q": "Über welche Art von Gratis-Event würdest du gern stolpern: Musik, Essen, Tanz oder ein Umzug?",
+     "c": "Schau in den Veranstaltungskalender einer Stadt und finde zwei kostenlose Events in einem typischen Monat."
+    },
+    "es": {
+     "t": "Festivales y eventos gratis",
+     "g": "Encuentra conciertos públicos, mercadillos y celebraciones en la agenda local.",
+     "p": [
+      "Muchas ciudades organizan conciertos al aire libre, desfiles, cine de verano y mercados de temporada gratis.",
+      "Consulta la oficina de turismo, webs de noticias locales, carteles y tablones para ver qué hay.",
+      "Los eventos gratis son una forma maravillosa de ver la vida local y celebrar junto a los vecinos."
+     ],
+     "q": "¿Con qué tipo de evento gratis te encantaría toparte: música, comida, baile o un desfile?",
+     "c": "Mira la agenda de una ciudad y encuentra dos eventos gratis que se celebren en un mes normal."
+    },
+    "fr": {
+     "t": "Festivals et événements gratuits",
+     "g": "Trouve concerts publics, marchés et fêtes dans les agendas locaux.",
+     "p": [
+      "Beaucoup de villes proposent concerts en plein air, défilés, cinéma en plein air et marchés saisonniers gratuits.",
+      "Consulte l'office de tourisme, les sites d'info locaux, les affiches et les panneaux pour savoir ce qui se passe.",
+      "Les événements gratuits sont un merveilleux moyen de voir la vie locale et de faire la fête avec les habitants."
+     ],
+     "q": "Sur quel genre d'événement gratuit aimerais-tu tomber : musique, cuisine, danse ou défilé ?",
+     "c": "Regarde l'agenda d'une ville et trouve deux événements gratuits qui ont lieu un mois ordinaire."
+    },
+    "it": {
+     "t": "Feste ed eventi gratuiti",
+     "g": "Trova concerti pubblici, mercatini e celebrazioni negli eventi in programma della città.",
+     "p": [
+      "Molte città organizzano concerti all'aperto, sfilate, cinema all'aperto e mercatini stagionali gratuiti.",
+      "Consulta l'ufficio turistico, i siti di notizie locali, i manifesti e le bacheche per sapere cosa succede.",
+      "Gli eventi gratuiti sono un modo meraviglioso per vedere la vita locale e festeggiare con chi ci vive."
+     ],
+     "q": "In quale tipo di evento gratuito ti piacerebbe imbatterti: musica, cibo, danza o una sfilata?",
+     "c": "Guarda il calendario eventi di una città e trova due eventi gratuiti in un mese qualunque."
+    },
+    "pt": {
+     "t": "Festivais e eventos grátis",
+     "g": "Encontra concertos públicos, feiras e festas na agenda local.",
+     "p": [
+      "Muitas cidades têm concertos ao ar livre, desfiles, cinema ao ar livre e mercados sazonais grátis.",
+      "Consulta o posto de turismo, sites de notícias locais, cartazes e quadros de avisos para saber o que há.",
+      "Os eventos grátis são uma forma maravilhosa de ver a vida local e celebrar com os moradores."
+     ],
+     "q": "Com que tipo de evento grátis adorarias cruzar-te: música, comida, dança ou um desfile?",
+     "c": "Vê a agenda de uma cidade e encontra dois eventos grátis que acontecem num mês normal."
+    },
+    "pt_BR": {
+     "t": "Festivais e eventos grátis",
+     "g": "Encontre shows públicos, feiras e festas na agenda local.",
+     "p": [
+      "Muitas cidades têm shows ao ar livre, desfiles, cinema ao ar livre e feiras sazonais de graça.",
+      "Consulte o centro de informações turísticas, sites de notícias locais, cartazes e murais para saber o que rola.",
+      "Eventos grátis são um jeito maravilhoso de ver a vida local e comemorar junto com os moradores."
+     ],
+     "q": "Com que tipo de evento grátis você adoraria esbarrar: música, comida, dança ou desfile?",
+     "c": "Veja a agenda de uma cidade e encontre dois eventos grátis que acontecem num mês comum."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Self-guided city walks",
+     "g": "Create your own walking route through interesting neighbourhoods.",
+     "p": [
+      "Pick three or four places you want to see and connect them with a route through new streets.",
+      "Add a market, a park or a café stop along the way, and leave time to wander off the plan.",
+      "Free audio guides, library books and local blogs can add stories to your walk at no cost."
+     ],
+     "q": "Which neighbourhood in any city would you most like to explore on foot?",
+     "c": "Draw a walking route on a map linking four interesting spots in a city you know or want to visit."
+    },
+    "de": {
+     "t": "Stadtspaziergänge auf eigene Faust",
+     "g": "Gestalte deine eigene Route durch spannende Viertel.",
+     "p": [
+      "Wähle drei oder vier Orte, die du sehen willst, und verbinde sie mit einer Route durch neue Straßen.",
+      "Plane unterwegs einen Markt, einen Park oder ein Café ein und lass Zeit zum Abschweifen.",
+      "Kostenlose Audioguides, Bücher aus der Bibliothek und lokale Blogs bringen gratis Geschichten in deinen Spaziergang."
+     ],
+     "q": "Welches Viertel in irgendeiner Stadt würdest du am liebsten zu Fuß erkunden?",
+     "c": "Zeichne auf einer Karte eine Route, die vier spannende Orte einer bekannten oder Wunschstadt verbindet."
+    },
+    "es": {
+     "t": "Paseos por libre en la ciudad",
+     "g": "Crea tu propia ruta a pie por barrios interesantes.",
+     "p": [
+      "Elige tres o cuatro lugares que quieras ver y únelos con una ruta por calles nuevas.",
+      "Añade un mercado, un parque o un café por el camino, y deja tiempo para salirte del plan.",
+      "Audioguías gratis, libros de la biblioteca y blogs locales pueden poner historia a tu paseo sin coste."
+     ],
+     "q": "¿Qué barrio de cualquier ciudad te gustaría más explorar a pie?",
+     "c": "Dibuja en un mapa una ruta a pie que una cuatro lugares interesantes de una ciudad que conozcas o quieras visitar."
+    },
+    "fr": {
+     "t": "Balades urbaines en solo",
+     "g": "Crée ton propre itinéraire à pied à travers des quartiers intéressants.",
+     "p": [
+      "Choisis trois ou quatre lieux à voir et relie-les par un itinéraire passant par des rues nouvelles.",
+      "Ajoute un marché, un parc ou une pause café en route, et garde du temps pour sortir du plan.",
+      "Audioguides gratuits, livres de bibliothèque et blogs locaux ajoutent des histoires à ta balade sans rien coûter."
+     ],
+     "q": "Quel quartier, dans n'importe quelle ville, aimerais-tu le plus explorer à pied ?",
+     "c": "Trace sur une carte un itinéraire à pied reliant quatre lieux intéressants d'une ville que tu connais ou veux visiter."
+    },
+    "it": {
+     "t": "Passeggiate in città fai da te",
+     "g": "Crea il tuo percorso a piedi attraverso quartieri interessanti.",
+     "p": [
+      "Scegli tre o quattro luoghi da vedere e collegali con un percorso attraverso strade nuove.",
+      "Aggiungi un mercato, un parco o una sosta al bar lungo la strada, e lascia tempo per uscire dal programma.",
+      "Audioguide gratuite, libri della biblioteca e blog locali arricchiscono la passeggiata di storie senza costi."
+     ],
+     "q": "Quale quartiere di qualsiasi città ti piacerebbe di più esplorare a piedi?",
+     "c": "Disegna su una mappa un percorso a piedi che colleghi quattro luoghi interessanti di una città che conosci o vuoi visitare."
+    },
+    "pt": {
+     "t": "Passeios a pé por conta própria",
+     "g": "Cria o teu próprio percurso a pé por bairros interessantes.",
+     "p": [
+      "Escolhe três ou quatro sítios que queres ver e liga-os com um percurso por ruas novas.",
+      "Junta um mercado, um jardim ou uma pausa para café pelo caminho, e deixa tempo para fugir ao plano.",
+      "Audioguias grátis, livros da biblioteca e blogues locais dão histórias ao teu passeio sem custo."
+     ],
+     "q": "Que bairro de qualquer cidade mais gostavas de explorar a pé?",
+     "c": "Desenha num mapa um percurso a pé que ligue quatro sítios interessantes de uma cidade que conheças ou queiras visitar."
+    },
+    "pt_BR": {
+     "t": "Passeios a pé por conta própria",
+     "g": "Crie seu próprio roteiro a pé por bairros interessantes.",
+     "p": [
+      "Escolha três ou quatro lugares que você quer ver e ligue-os com um roteiro por ruas novas.",
+      "Inclua uma feira, uma praça ou uma parada para café no caminho, e deixe tempo para sair do plano.",
+      "Audioguias grátis, livros da biblioteca e blogs locais dão histórias ao seu passeio sem custo."
+     ],
+     "q": "Que bairro de qualquer cidade você mais gostaria de explorar a pé?",
+     "c": "Desenhe num mapa um roteiro a pé ligando quatro lugares interessantes de uma cidade que você conhece ou quer visitar."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beaches, hikes and nature",
+     "g": "Enjoy outdoor adventures that need only good shoes and curiosity.",
+     "p": [
+      "Public beaches, lakes and riversides are often free and perfect for a full day out.",
+      "Many national parks and trails are free or cheap; check maps, weather and difficulty before you go.",
+      "Pack water, snacks, sun protection and a light layer, and let someone know your route."
+     ],
+     "q": "Would you rather spend a free day on a beach, a mountain trail or in a forest?",
+     "c": "Find one free hike or beach reachable by public transport from a city you would like to visit."
+    },
+    "de": {
+     "t": "Strände, Wanderungen und Natur",
+     "g": "Genieße Abenteuer draußen, für die du nur gute Schuhe und Neugier brauchst.",
+     "p": [
+      "Öffentliche Strände, Seen und Flussufer sind oft gratis und perfekt für einen ganzen Tag.",
+      "Viele Nationalparks und Wege sind gratis oder günstig; prüf vorher Karte, Wetter und Schwierigkeit.",
+      "Pack Wasser, Snacks, Sonnenschutz und eine leichte Jacke ein und sag jemandem deine Route."
+     ],
+     "q": "Würdest du einen freien Tag lieber am Strand, auf einem Bergweg oder im Wald verbringen?",
+     "c": "Finde eine kostenlose Wanderung oder einen Strand, der von einer Wunschstadt aus mit Öffis erreichbar ist."
+    },
+    "es": {
+     "t": "Playas, rutas y naturaleza",
+     "g": "Disfruta de aventuras al aire libre que solo piden buen calzado y curiosidad.",
+     "p": [
+      "Las playas públicas, los lagos y las orillas de los ríos suelen ser gratis y perfectos para un día entero.",
+      "Muchos parques naturales y senderos son gratis o baratos; mira mapas, tiempo y dificultad antes de ir.",
+      "Lleva agua, tentempiés, protección solar y una capa ligera, y avisa a alguien de tu ruta."
+     ],
+     "q": "¿Preferirías pasar un día gratis en la playa, en un sendero de montaña o en un bosque?",
+     "c": "Busca una ruta o una playa gratis a la que se llegue en transporte público desde una ciudad que quieras visitar."
+    },
+    "fr": {
+     "t": "Plages, randonnées et nature",
+     "g": "Profite d'aventures en plein air qui ne demandent que de bonnes chaussures et de la curiosité.",
+     "p": [
+      "Plages publiques, lacs et berges sont souvent gratuits et parfaits pour une journée entière.",
+      "Beaucoup de parcs naturels et de sentiers sont gratuits ou peu chers ; vérifie carte, météo et difficulté avant.",
+      "Emporte eau, en-cas, protection solaire et une petite veste, et préviens quelqu'un de ton itinéraire."
+     ],
+     "q": "Préférerais-tu passer une journée gratuite à la plage, sur un sentier de montagne ou en forêt ?",
+     "c": "Trouve une randonnée ou une plage gratuite accessible en transports en commun depuis une ville que tu veux visiter."
+    },
+    "it": {
+     "t": "Spiagge, escursioni e natura",
+     "g": "Goditi avventure all'aria aperta che richiedono solo buone scarpe e curiosità.",
+     "p": [
+      "Spiagge libere, laghi e rive dei fiumi sono spesso gratuiti e perfetti per una giornata intera.",
+      "Molti parchi e sentieri sono gratuiti o economici; controlla mappe, meteo e difficoltà prima di partire.",
+      "Porta acqua, snack, protezione solare e uno strato leggero, e avvisa qualcuno del tuo percorso."
+     ],
+     "q": "Preferiresti passare una giornata gratis in spiaggia, su un sentiero di montagna o in un bosco?",
+     "c": "Trova un'escursione o una spiaggia gratuita raggiungibile coi mezzi pubblici da una città che vorresti visitare."
+    },
+    "pt": {
+     "t": "Praias, trilhos e natureza",
+     "g": "Aproveita aventuras ao ar livre que só pedem bom calçado e curiosidade.",
+     "p": [
+      "Praias públicas, lagos e margens de rios costumam ser grátis e perfeitos para um dia inteiro.",
+      "Muitos parques naturais e trilhos são grátis ou baratos; vê mapas, tempo e dificuldade antes de ir.",
+      "Leva água, snacks, proteção solar e um casaco leve, e avisa alguém do teu percurso."
+     ],
+     "q": "Preferias passar um dia grátis na praia, num trilho de montanha ou numa floresta?",
+     "c": "Encontra um trilho ou uma praia grátis a que se chegue de transportes públicos a partir de uma cidade que queres visitar."
+    },
+    "pt_BR": {
+     "t": "Praias, trilhas e natureza",
+     "g": "Curta aventuras ao ar livre que só pedem um bom tênis e curiosidade.",
+     "p": [
+      "Praias públicas, lagos e beiras de rio costumam ser de graça e perfeitos para um dia inteiro.",
+      "Muitos parques e trilhas são grátis ou baratos; veja mapa, previsão do tempo e dificuldade antes de ir.",
+      "Leve água, lanche, protetor solar e um casaco leve, e avise alguém sobre o seu roteiro."
+     ],
+     "q": "Você preferiria passar um dia grátis na praia, numa trilha de montanha ou numa floresta?",
+     "c": "Ache uma trilha ou praia grátis que dê para alcançar de transporte público a partir de uma cidade que você quer visitar."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Libraries and public buildings",
+     "g": "Visit beautiful architecture and quiet spaces you can often enter for free.",
+     "p": [
+      "Many grand public libraries welcome visitors and have stunning reading rooms, free wifi and toilets.",
+      "Town halls, historic markets, train stations and university courtyards are often open to the public.",
+      "Be respectful: keep quiet, follow photo rules and visit during opening hours."
+     ],
+     "q": "Have you ever discovered a beautiful building by chance while travelling?",
+     "c": "Find one public library or historic building in a city you like and check whether visitors can enter for free."
+    },
+    "de": {
+     "t": "Bibliotheken und öffentliche Gebäude",
+     "g": "Besuche schöne Architektur und ruhige Orte, die du oft kostenlos betreten kannst.",
+     "p": [
+      "Viele prächtige öffentliche Bibliotheken empfangen Besucher und haben tolle Lesesäle, Gratis-WLAN und Toiletten.",
+      "Rathäuser, historische Markthallen, Bahnhöfe und Universitätshöfe sind oft öffentlich zugänglich.",
+      "Sei respektvoll: Bleib leise, beachte Fotoregeln und komm zu den Öffnungszeiten."
+     ],
+     "q": "Hast du auf Reisen schon mal zufällig ein wunderschönes Gebäude entdeckt?",
+     "c": "Finde eine öffentliche Bibliothek oder ein historisches Gebäude in einer Lieblingsstadt und prüf, ob der Eintritt frei ist."
+    },
+    "es": {
+     "t": "Bibliotecas y edificios públicos",
+     "g": "Visita arquitectura preciosa y espacios tranquilos donde a menudo puedes entrar gratis.",
+     "p": [
+      "Muchas grandes bibliotecas públicas reciben visitantes y tienen salas de lectura impresionantes, wifi gratis y baños.",
+      "Ayuntamientos, mercados históricos, estaciones de tren y patios universitarios suelen estar abiertos al público.",
+      "Sé respetuoso: guarda silencio, sigue las normas de fotos y ve en horario de apertura."
+     ],
+     "q": "¿Alguna vez descubriste por casualidad un edificio precioso mientras viajabas?",
+     "c": "Busca una biblioteca pública o un edificio histórico en una ciudad que te guste y mira si se puede entrar gratis."
+    },
+    "fr": {
+     "t": "Bibliothèques et bâtiments publics",
+     "g": "Visite de belles architectures et des lieux calmes où l'on entre souvent gratuitement.",
+     "p": [
+      "Beaucoup de grandes bibliothèques publiques accueillent les visiteurs, avec de superbes salles de lecture, wifi et toilettes gratuits.",
+      "Hôtels de ville, halles historiques, gares et cours d'université sont souvent ouverts au public.",
+      "Sois respectueux : reste discret, suis les règles photo et viens aux heures d'ouverture."
+     ],
+     "q": "As-tu déjà découvert par hasard un magnifique bâtiment en voyage ?",
+     "c": "Trouve une bibliothèque publique ou un bâtiment historique dans une ville que tu aimes et vérifie si l'entrée est libre."
+    },
+    "it": {
+     "t": "Biblioteche ed edifici pubblici",
+     "g": "Visita architetture splendide e spazi tranquilli in cui spesso puoi entrare gratis.",
+     "p": [
+      "Molte grandi biblioteche pubbliche accolgono i visitatori e hanno sale di lettura stupende, wifi gratuito e bagni.",
+      "Municipi, mercati storici, stazioni e cortili universitari sono spesso aperti al pubblico.",
+      "Sii rispettoso: fai silenzio, segui le regole sulle foto e vai negli orari di apertura."
+     ],
+     "q": "Ti è mai capitato di scoprire per caso un edificio bellissimo durante un viaggio?",
+     "c": "Trova una biblioteca pubblica o un edificio storico in una città che ti piace e verifica se l'ingresso è gratuito."
+    },
+    "pt": {
+     "t": "Bibliotecas e edifícios públicos",
+     "g": "Visita arquitetura bonita e espaços tranquilos onde muitas vezes podes entrar de graça.",
+     "p": [
+      "Muitas grandes bibliotecas públicas recebem visitantes e têm salas de leitura incríveis, wifi grátis e casas de banho.",
+      "Câmaras municipais, mercados históricos, estações de comboio e pátios universitários estão muitas vezes abertos ao público.",
+      "Sê respeitoso: fala baixo, segue as regras de fotografia e vai no horário de abertura."
+     ],
+     "q": "Já descobriste por acaso um edifício lindíssimo numa viagem?",
+     "c": "Encontra uma biblioteca pública ou edifício histórico numa cidade de que gostes e vê se a entrada é grátis."
+    },
+    "pt_BR": {
+     "t": "Bibliotecas e prédios públicos",
+     "g": "Visite arquitetura bonita e espaços tranquilos onde muitas vezes dá para entrar de graça.",
+     "p": [
+      "Muitas grandes bibliotecas públicas recebem visitantes e têm salas de leitura incríveis, wi-fi grátis e banheiros.",
+      "Prefeituras, mercados históricos, estações de trem e pátios de universidades costumam ser abertos ao público.",
+      "Seja respeitoso: fale baixo, siga as regras de fotos e vá no horário de funcionamento."
+     ],
+     "q": "Você já descobriu por acaso um prédio lindo durante uma viagem?",
+     "c": "Ache uma biblioteca pública ou prédio histórico numa cidade de que você gosta e veja se a entrada é grátis."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: stays, food and free fun",
+     "g": "Recap how to sleep, eat and explore for less, then plan a completely free day.",
+     "p": [
+      "You can now compare hostels, guesthouses, hotels, rentals and camping by value, location and reviews.",
+      "You know how markets, set lunches, picnics and shared kitchens cut food costs without losing flavour.",
+      "You have a toolbox of free fun: walking tours, museum days, parks, events, nature and public buildings."
+     ],
+     "q": "Of everything from this month, which money-saving idea are you most excited to try?",
+     "c": "Plan a completely free day in a city you love: a walk, a picnic spot, a free sight and a sunset viewpoint."
+    },
+    "de": {
+     "t": "Rückblick: Unterkunft, Essen, Gratisspaß",
+     "g": "Fass zusammen, wie du günstiger schläfst, isst und entdeckst, und plane einen komplett kostenlosen Tag.",
+     "p": [
+      "Du kannst jetzt Hostels, Pensionen, Hotels, Ferienwohnungen und Camping nach Wert, Lage und Bewertungen vergleichen.",
+      "Du weißt, wie Märkte, Mittagsmenüs, Picknicks und Gemeinschaftsküchen Essenskosten senken, ohne Geschmack zu verlieren.",
+      "Du hast einen Werkzeugkasten voller Gratisspaß: Führungen, Museumstage, Parks, Events, Natur und öffentliche Gebäude."
+     ],
+     "q": "Welche Sparidee aus diesem Monat möchtest du am liebsten ausprobieren?",
+     "c": "Plane einen komplett kostenlosen Tag in einer Lieblingsstadt: Spaziergang, Picknickplatz, Gratis-Sehenswürdigkeit und Sonnenuntergang."
+    },
+    "es": {
+     "t": "Repaso: alojamiento, comida y planes gratis",
+     "g": "Repasa cómo dormir, comer y explorar por menos, y planea un día totalmente gratis.",
+     "p": [
+      "Ya puedes comparar albergues, pensiones, hoteles, apartamentos y campings por valor, ubicación y opiniones.",
+      "Sabes cómo mercados, menús del día, pícnics y cocinas compartidas bajan el gasto en comida sin perder sabor.",
+      "Tienes una caja de herramientas de planes gratis: free tours, días de museo, parques, eventos, naturaleza y edificios públicos."
+     ],
+     "q": "De todo lo de este mes, ¿qué idea para ahorrar te hace más ilusión probar?",
+     "c": "Planea un día totalmente gratis en una ciudad que te encante: un paseo, un sitio de pícnic, una visita gratis y un mirador al atardecer."
+    },
+    "fr": {
+     "t": "Bilan : logement, repas et loisirs gratuits",
+     "g": "Récapitule comment dormir, manger et explorer pour moins cher, puis planifie une journée entièrement gratuite.",
+     "p": [
+      "Tu sais comparer auberges, maisons d'hôtes, hôtels, locations et campings selon la valeur, l'emplacement et les avis.",
+      "Tu sais comment marchés, formules du midi, pique-niques et cuisines partagées réduisent le budget repas sans perdre en goût.",
+      "Tu as une boîte à outils de loisirs gratuits : visites guidées, musées, parcs, événements, nature et bâtiments publics."
+     ],
+     "q": "De tout ce mois, quelle idée d'économie as-tu le plus envie d'essayer ?",
+     "c": "Planifie une journée 100 % gratuite dans une ville que tu aimes : une balade, un pique-nique, un site gratuit et un coucher de soleil."
+    },
+    "it": {
+     "t": "Ripasso: alloggi, cibo e svago gratis",
+     "g": "Riassumi come dormire, mangiare ed esplorare spendendo meno, poi pianifica una giornata completamente gratuita.",
+     "p": [
+      "Ora sai confrontare ostelli, pensioni, hotel, case vacanza e campeggi per valore, posizione e recensioni.",
+      "Sai come mercati, menù pranzo, picnic e cucine condivise tagliano la spesa per il cibo senza perdere gusto.",
+      "Hai una cassetta degli attrezzi di svago gratis: tour a piedi, musei, parchi, eventi, natura ed edifici pubblici."
+     ],
+     "q": "Di tutto ciò che hai visto questo mese, quale idea per risparmiare non vedi l'ora di provare?",
+     "c": "Pianifica una giornata del tutto gratuita in una città che ami: una passeggiata, un picnic, un'attrazione gratis e un tramonto."
+    },
+    "pt": {
+     "t": "Revisão: alojamento, comida e diversão grátis",
+     "g": "Recorda como dormir, comer e explorar gastando menos, e planeia um dia totalmente grátis.",
+     "p": [
+      "Já consegues comparar hostels, pensões, hotéis, apartamentos e campismo por valor, localização e avaliações.",
+      "Sabes como mercados, menus de almoço, piqueniques e cozinhas partilhadas baixam o gasto em comida sem perder sabor.",
+      "Tens uma caixa de ferramentas de diversão grátis: visitas a pé, dias de museu, parques, eventos, natureza e edifícios públicos."
+     ],
+     "q": "De tudo deste mês, que ideia para poupar estás mais entusiasmado por experimentar?",
+     "c": "Planeia um dia totalmente grátis numa cidade de que gostes: um passeio, um piquenique, uma visita grátis e um pôr do sol."
+    },
+    "pt_BR": {
+     "t": "Revisão: hospedagem, comida e diversão grátis",
+     "g": "Relembre como dormir, comer e explorar gastando menos, e planeje um dia totalmente de graça.",
+     "p": [
+      "Agora você compara hostels, pousadas, hotéis, aluguéis por temporada e camping por valor, localização e avaliações.",
+      "Você sabe como feiras, menus de almoço, piqueniques e cozinhas compartilhadas cortam o gasto com comida sem perder sabor.",
+      "Você tem uma caixa de ferramentas de diversão grátis: tours a pé, museus, parques, eventos, natureza e prédios públicos."
+     ],
+     "q": "De tudo deste mês, qual ideia para economizar você está mais animado para testar?",
+     "c": "Planeje um dia totalmente grátis numa cidade que você ama: um passeio, um piquenique, uma atração grátis e um pôr do sol."
+    }
+   }
+  }
+ ]
+}

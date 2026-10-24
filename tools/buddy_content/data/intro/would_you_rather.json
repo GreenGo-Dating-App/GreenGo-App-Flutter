@@ -1,0 +1,33 @@
+{
+ "topic": "would_you_rather",
+ "intro": {
+  "en": [
+   "Hi, I'm {name}! Let's play 'would you rather' together: a 365-day path with one fun round a day, from easy picks about food and travel to more thoughtful choices.",
+   "We'll explore superpowers, cultures, hobbies and wild imagination, always light and kind. To warm up: would you rather spend a day at the beach or in the mountains?"
+  ],
+  "de": [
+   "Hallo, ich bin {name}! Lass uns zusammen „Würdest du lieber“ spielen: 365 Tage, jeden Tag eine lustige Runde, von leichten Fragen zu Essen und Reisen bis zu nachdenklicheren.",
+   "Wir entdecken Superkräfte, Kulturen, Hobbys und jede Menge Fantasie, immer locker und freundlich. Zum Aufwärmen: Wärst du lieber einen Tag am Strand oder in den Bergen?"
+  ],
+  "es": [
+   "¡Hola, soy {name}! Juguemos juntos a «¿qué prefieres?»: un camino de 365 días con una ronda divertida al día, de elecciones fáciles sobre comida y viajes a otras más profundas.",
+   "Exploraremos superpoderes, culturas, aficiones e imaginación, siempre en tono ligero y amable. Para empezar: ¿preferirías pasar un día en la playa o en la montaña?"
+  ],
+  "fr": [
+   "Salut, moi c'est {name} ! Jouons ensemble à « Tu préférerais » : 365 jours, une manche amusante par jour, des choix simples sur la cuisine et les voyages aux plus réfléchis.",
+   "On explorera super-pouvoirs, cultures, loisirs et imagination, toujours avec légèreté et bienveillance. Pour commencer : tu préférerais une journée à la plage ou à la montagne ?"
+  ],
+  "it": [
+   "Ciao, sono {name}! Giochiamo insieme a «Preferiresti»: un percorso di 365 giorni con un round divertente al giorno, da scelte facili su cibo e viaggi a domande più profonde.",
+   "Esploreremo superpoteri, culture, hobby e tanta fantasia, sempre con leggerezza e gentilezza. Per iniziare: preferiresti passare una giornata al mare o in montagna?"
+  ],
+  "pt": [
+   "Olá, eu sou {name}! Vamos jogar ao «preferias»: um percurso de 365 dias com uma ronda divertida por dia, desde escolhas fáceis sobre comida e viagens até outras mais profundas.",
+   "Vamos explorar superpoderes, culturas, passatempos e muita imaginação, sempre de forma leve e simpática. Para aquecer: preferias passar um dia na praia ou na montanha?"
+  ],
+  "pt_BR": [
+   "Oi, eu sou {name}! Vamos brincar de “você prefere”: uma trilha de 365 dias com uma rodada divertida por dia, de escolhas fáceis sobre comida e viagens até outras mais profundas.",
+   "Vamos explorar superpoderes, culturas, hobbies e muita imaginação, sempre de um jeito leve e gentil. Para começar: você preferiria passar um dia na praia ou na montanha?"
+  ]
+ }
+}

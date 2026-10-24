@@ -1,0 +1,835 @@
+{
+ "topic": "nature_trips",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Forests of the world",
+     "g": "Meet rainforests, temperate forests and the northern boreal forests.",
+     "p": [
+      "Tropical rainforests grow near the equator, where it is warm and wet all year.",
+      "Temperate forests have four seasons; many trees, like oak and beech, drop their leaves in autumn.",
+      "Boreal forest, or taiga, circles the far north with conifers and is the largest forest type on land."
+     ],
+     "q": "Which forest type grows closest to where you live?",
+     "c": "On your next walk, find one tree and learn its name."
+    },
+    "de": {
+     "t": "Wälder der Welt",
+     "g": "Lerne Regenwälder, gemäßigte Wälder und die nördlichen borealen Wälder kennen.",
+     "p": [
+      "Tropische Regenwälder wachsen nahe dem Äquator, wo es das ganze Jahr warm und feucht ist.",
+      "Gemäßigte Wälder haben vier Jahreszeiten; viele Bäume wie Eiche und Buche verlieren im Herbst ihr Laub.",
+      "Der boreale Wald, die Taiga, umspannt den hohen Norden mit Nadelbäumen und ist der größte Waldtyp an Land."
+     ],
+     "q": "Welcher Waldtyp wächst dort, wo du lebst?",
+     "c": "Such dir beim nächsten Spaziergang einen Baum aus und lerne seinen Namen."
+    },
+    "es": {
+     "t": "Bosques del mundo",
+     "g": "Conoce las selvas tropicales, los bosques templados y los bosques boreales del norte.",
+     "p": [
+      "Las selvas tropicales crecen cerca del ecuador, donde hace calor y llueve todo el año.",
+      "Los bosques templados tienen cuatro estaciones; muchos árboles, como robles y hayas, pierden la hoja en otoño.",
+      "El bosque boreal, o taiga, rodea el extremo norte con coníferas y es el mayor tipo de bosque en tierra."
+     ],
+     "q": "¿Qué tipo de bosque crece más cerca de donde vives?",
+     "c": "En tu próximo paseo, elige un árbol y aprende su nombre."
+    },
+    "fr": {
+     "t": "Les forêts du monde",
+     "g": "Découvre les forêts tropicales, les forêts tempérées et les forêts boréales du Nord.",
+     "p": [
+      "Les forêts tropicales humides poussent près de l'équateur, où il fait chaud et humide toute l'année.",
+      "Les forêts tempérées vivent quatre saisons ; beaucoup d'arbres, comme le chêne et le hêtre, perdent leurs feuilles en automne.",
+      "La forêt boréale, ou taïga, entoure le Grand Nord de conifères et forme le plus vaste type de forêt sur terre."
+     ],
+     "q": "Quel type de forêt pousse le plus près de chez toi ?",
+     "c": "Lors de ta prochaine balade, choisis un arbre et apprends son nom."
+    },
+    "it": {
+     "t": "Foreste del mondo",
+     "g": "Conosci le foreste pluviali, le foreste temperate e le foreste boreali del nord.",
+     "p": [
+      "Le foreste pluviali tropicali crescono vicino all'equatore, dove fa caldo e piove tutto l'anno.",
+      "Le foreste temperate hanno quattro stagioni; molti alberi, come querce e faggi, perdono le foglie in autunno.",
+      "La foresta boreale, o taiga, circonda il grande nord con conifere ed è il tipo di foresta più esteso sulla terraferma."
+     ],
+     "q": "Quale tipo di foresta cresce più vicino a dove vivi?",
+     "c": "Nella prossima passeggiata scegli un albero e impara il suo nome."
+    },
+    "pt": {
+     "t": "Florestas do mundo",
+     "g": "Conhece as florestas tropicais, as florestas temperadas e as florestas boreais do norte.",
+     "p": [
+      "As florestas tropicais crescem perto do equador, onde está quente e húmido todo o ano.",
+      "As florestas temperadas têm quatro estações; muitas árvores, como carvalhos e faias, perdem as folhas no outono.",
+      "A floresta boreal, ou taiga, rodeia o extremo norte com coníferas e é o maior tipo de floresta em terra."
+     ],
+     "q": "Que tipo de floresta cresce mais perto de onde vives?",
+     "c": "Na tua próxima caminhada, escolhe uma árvore e aprende o nome dela."
+    },
+    "pt_BR": {
+     "t": "Florestas do mundo",
+     "g": "Conheça as florestas tropicais, as temperadas e as florestas boreais do norte.",
+     "p": [
+      "As florestas tropicais crescem perto da linha do equador, onde é quente e úmido o ano todo.",
+      "As florestas temperadas têm quatro estações; muitas árvores, como carvalhos e faias, perdem as folhas no outono.",
+      "A floresta boreal, ou taiga, cerca o extremo norte com coníferas e é o maior tipo de floresta em terra."
+     ],
+     "q": "Que tipo de floresta cresce mais perto de onde você mora?",
+     "c": "Na sua próxima caminhada, escolha uma árvore e aprenda o nome dela."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rainforest wonders",
+     "g": "Explore the layers of the rainforest and its amazing biodiversity.",
+     "p": [
+      "Rainforests have layers: tall emergent trees, the leafy canopy, the shady understorey and the forest floor.",
+      "Tropical rainforests cover a small part of Earth's land yet are home to more than half of its plant and animal species.",
+      "The Amazon is the largest rainforest; guided walks and canopy walkways are great ways to explore it safely."
+     ],
+     "q": "Which rainforest animal would you love to spot: toucan, sloth or poison dart frog?",
+     "c": "Pick one rainforest layer and find two animals that live there."
+    },
+    "de": {
+     "t": "Wunder des Regenwalds",
+     "g": "Entdecke die Stockwerke des Regenwalds und seine erstaunliche Artenvielfalt.",
+     "p": [
+      "Regenwälder haben Stockwerke: hohe Überständer, das dichte Kronendach, das schattige Unterholz und den Waldboden.",
+      "Tropische Regenwälder bedecken nur einen kleinen Teil der Landfläche, beherbergen aber mehr als die Hälfte aller Tier- und Pflanzenarten.",
+      "Der Amazonas ist der größte Regenwald; geführte Touren und Baumkronenpfade sind sichere Wege, ihn zu erkunden."
+     ],
+     "q": "Welches Regenwaldtier würdest du gern entdecken: Tukan, Faultier oder Pfeilgiftfrosch?",
+     "c": "Wähle ein Stockwerk des Regenwalds und finde zwei Tiere, die dort leben."
+    },
+    "es": {
+     "t": "Maravillas de la selva",
+     "g": "Explora los estratos de la selva tropical y su asombrosa biodiversidad.",
+     "p": [
+      "La selva tiene estratos: árboles emergentes muy altos, el dosel frondoso, el sotobosque sombrío y el suelo.",
+      "Las selvas tropicales cubren una pequeña parte de la tierra, pero albergan más de la mitad de las especies de plantas y animales.",
+      "La Amazonía es la mayor selva; las rutas guiadas y las pasarelas en el dosel son formas seguras de explorarla."
+     ],
+     "q": "¿Qué animal de la selva te encantaría ver: tucán, perezoso o rana dardo venenosa?",
+     "c": "Elige un estrato de la selva y busca dos animales que vivan allí."
+    },
+    "fr": {
+     "t": "Les merveilles de la forêt tropicale",
+     "g": "Explore les étages de la forêt tropicale et son incroyable biodiversité.",
+     "p": [
+      "La forêt tropicale a des étages : les grands arbres émergents, la canopée feuillue, le sous-bois ombragé et le sol.",
+      "Les forêts tropicales couvrent une petite partie des terres mais abritent plus de la moitié des espèces de plantes et d'animaux.",
+      "L'Amazonie est la plus grande forêt tropicale ; visites guidées et passerelles dans la canopée permettent de l'explorer en sécurité."
+     ],
+     "q": "Quel animal de la forêt tropicale aimerais-tu voir : toucan, paresseux ou grenouille dendrobate ?",
+     "c": "Choisis un étage de la forêt tropicale et trouve deux animaux qui y vivent."
+    },
+    "it": {
+     "t": "Le meraviglie della foresta pluviale",
+     "g": "Esplora gli strati della foresta pluviale e la sua incredibile biodiversità.",
+     "p": [
+      "La foresta pluviale ha strati: alberi emergenti altissimi, la volta frondosa, il sottobosco ombroso e il suolo.",
+      "Le foreste pluviali tropicali coprono una piccola parte delle terre emerse ma ospitano più della metà delle specie di piante e animali.",
+      "L'Amazzonia è la foresta pluviale più grande; visite guidate e passerelle tra le chiome sono modi sicuri per esplorarla."
+     ],
+     "q": "Quale animale della foresta vorresti avvistare: tucano, bradipo o rana freccia?",
+     "c": "Scegli uno strato della foresta pluviale e trova due animali che ci vivono."
+    },
+    "pt": {
+     "t": "Maravilhas da floresta tropical",
+     "g": "Explora os estratos da floresta tropical e a sua incrível biodiversidade.",
+     "p": [
+      "A floresta tropical tem estratos: árvores emergentes altíssimas, a copa frondosa, o sub-bosque sombrio e o solo.",
+      "As florestas tropicais cobrem uma pequena parte da terra, mas abrigam mais de metade das espécies de plantas e animais.",
+      "A Amazónia é a maior floresta tropical; visitas guiadas e passadiços nas copas são formas seguras de a explorar."
+     ],
+     "q": "Que animal da floresta tropical adorarias ver: tucano, preguiça ou rã-venenosa?",
+     "c": "Escolhe um estrato da floresta tropical e encontra dois animais que vivam lá."
+    },
+    "pt_BR": {
+     "t": "Maravilhas da floresta tropical",
+     "g": "Explore as camadas da floresta tropical e sua biodiversidade incrível.",
+     "p": [
+      "A floresta tem camadas: árvores emergentes altíssimas, o dossel cheio de folhas, o sub-bosque sombreado e o chão.",
+      "As florestas tropicais cobrem uma pequena parte da terra, mas abrigam mais da metade das espécies de plantas e animais.",
+      "A Amazônia é a maior floresta tropical; trilhas guiadas e passarelas nas copas são jeitos seguros de explorá-la."
+     ],
+     "q": "Que bicho da floresta você adoraria ver: tucano, bicho-preguiça ou sapinho venenoso?",
+     "c": "Escolha uma camada da floresta e descubra dois animais que vivem nela."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: peaks and forests",
+     "g": "Recap mountains, lakes, waterfalls, caves and forests.",
+     "p": [
+      "Mountains rise as plates collide; go up slowly, start early and respect the afternoon weather.",
+      "Glacial lakes shine turquoise, waterfalls cut back into soft rock and cave formations grow incredibly slowly.",
+      "Forests change from rainforest to temperate to boreal, and rainforests hold more than half of all species."
+     ],
+     "q": "Which landscape from these lessons would you choose for your next trip?",
+     "c": "Draw a quick sketch of your dream landscape with a mountain, a lake and a forest."
+    },
+    "de": {
+     "t": "Rückblick: Gipfel und Wälder",
+     "g": "Wiederhole Berge, Seen, Wasserfälle, Höhlen und Wälder.",
+     "p": [
+      "Berge heben sich, wenn Platten kollidieren; langsam aufsteigen, früh starten und das Nachmittagswetter respektieren.",
+      "Gletscherseen leuchten türkis, Wasserfälle graben sich in weiches Gestein, und Tropfsteine wachsen unglaublich langsam.",
+      "Wälder reichen vom Regenwald über gemäßigte bis zu borealen, und Regenwälder beherbergen über die Hälfte aller Arten."
+     ],
+     "q": "Welche Landschaft aus diesen Lektionen würdest du für deinen nächsten Ausflug wählen?",
+     "c": "Zeichne eine schnelle Skizze deiner Traumlandschaft mit Berg, See und Wald."
+    },
+    "es": {
+     "t": "Repaso: cumbres y bosques",
+     "g": "Repasa montañas, lagos, cascadas, cuevas y bosques.",
+     "p": [
+      "Las montañas se alzan cuando chocan las placas; sube despacio, sal temprano y respeta el tiempo de la tarde.",
+      "Los lagos glaciares brillan turquesa, las cascadas excavan la roca blanda y las formaciones de las cuevas crecen lentísimo.",
+      "Los bosques van de la selva al templado y al boreal, y las selvas albergan más de la mitad de las especies."
+     ],
+     "q": "¿Qué paisaje de estas lecciones elegirías para tu próxima salida?",
+     "c": "Dibuja un boceto rápido de tu paisaje soñado con una montaña, un lago y un bosque."
+    },
+    "fr": {
+     "t": "Révision : sommets et forêts",
+     "g": "Révise montagnes, lacs, cascades, grottes et forêts.",
+     "p": [
+      "Les montagnes naissent de la collision des plaques ; monte lentement, pars tôt et respecte la météo de l'après-midi.",
+      "Les lacs glaciaires brillent turquoise, les cascades creusent la roche tendre et les concrétions poussent très lentement.",
+      "Les forêts vont de la forêt tropicale à la tempérée puis à la boréale, et les tropicales abritent plus de la moitié des espèces."
+     ],
+     "q": "Quel paysage de ces leçons choisirais-tu pour ta prochaine sortie ?",
+     "c": "Dessine vite ton paysage de rêve avec une montagne, un lac et une forêt."
+    },
+    "it": {
+     "t": "Ripasso: vette e foreste",
+     "g": "Ripassa montagne, laghi, cascate, grotte e foreste.",
+     "p": [
+      "Le montagne nascono dallo scontro delle placche; sali piano, parti presto e rispetta il meteo del pomeriggio.",
+      "I laghi glaciali brillano turchesi, le cascate scavano la roccia tenera e le concrezioni crescono lentissime.",
+      "Le foreste vanno da quella pluviale a quella temperata e boreale, e le pluviali ospitano più di metà delle specie."
+     ],
+     "q": "Quale paesaggio di queste lezioni sceglieresti per la tua prossima gita?",
+     "c": "Disegna uno schizzo veloce del tuo paesaggio dei sogni con una montagna, un lago e un bosco."
+    },
+    "pt": {
+     "t": "Revisão: cumes e florestas",
+     "g": "Revê montanhas, lagos, cascatas, grutas e florestas.",
+     "p": [
+      "As montanhas erguem-se quando as placas chocam; sobe devagar, começa cedo e respeita o tempo da tarde.",
+      "Os lagos glaciares brilham turquesa, as cascatas escavam a rocha mole e as formações das grutas crescem muito devagar.",
+      "As florestas vão da tropical à temperada e à boreal, e as tropicais abrigam mais de metade das espécies."
+     ],
+     "q": "Que paisagem destas lições escolherias para a tua próxima saída?",
+     "c": "Faz um esboço rápido da tua paisagem de sonho com uma montanha, um lago e uma floresta."
+    },
+    "pt_BR": {
+     "t": "Revisão: picos e florestas",
+     "g": "Revise montanhas, lagos, cachoeiras, cavernas e florestas.",
+     "p": [
+      "As montanhas se erguem quando as placas se chocam; suba devagar, saia cedo e respeite o tempo da tarde.",
+      "Lagos glaciais brilham turquesa, cachoeiras escavam a rocha mole e as formações das cavernas crescem bem devagar.",
+      "As florestas vão da tropical à temperada e à boreal, e as tropicais abrigam mais da metade das espécies."
+     ],
+     "q": "Qual paisagem dessas lições você escolheria para o próximo passeio?",
+     "c": "Faça um desenho rápido da sua paisagem dos sonhos com uma montanha, um lago e uma floresta."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Deserts are alive",
+     "g": "Discover plants and animals adapted to life in dry places.",
+     "p": [
+      "Deserts get very little rain, often less than 250 mm a year, yet they are full of clever life.",
+      "Cacti store water in thick stems, and many desert plants bloom quickly after rare rains.",
+      "Many animals rest by day and come out at night; the fennec fox's big ears help it lose heat."
+     ],
+     "q": "What desert animal or plant do you find most fascinating?",
+     "c": "Look up one desert plant and find out how it survives without much water."
+    },
+    "de": {
+     "t": "Wüsten leben",
+     "g": "Entdecke Pflanzen und Tiere, die an das Leben im Trockenen angepasst sind.",
+     "p": [
+      "Wüsten bekommen sehr wenig Regen, oft weniger als 250 mm im Jahr, und sind doch voller cleverer Lebewesen.",
+      "Kakteen speichern Wasser in dicken Stämmen, und viele Wüstenpflanzen blühen nach seltenem Regen blitzschnell.",
+      "Viele Tiere ruhen tagsüber und werden nachts aktiv; die großen Ohren des Fenneks geben Wärme ab."
+     ],
+     "q": "Welches Wüstentier oder welche Wüstenpflanze findest du am faszinierendsten?",
+     "c": "Such dir eine Wüstenpflanze aus und finde heraus, wie sie mit wenig Wasser überlebt."
+    },
+    "es": {
+     "t": "Los desiertos están vivos",
+     "g": "Descubre plantas y animales adaptados a la vida en lugares secos.",
+     "p": [
+      "Los desiertos reciben muy poca lluvia, a menudo menos de 250 mm al año, y aun así están llenos de vida ingeniosa.",
+      "Los cactus guardan agua en sus tallos gruesos, y muchas plantas del desierto florecen rápido tras las raras lluvias.",
+      "Muchos animales descansan de día y salen de noche; las grandes orejas del fénec le ayudan a perder calor."
+     ],
+     "q": "¿Qué animal o planta del desierto te parece más fascinante?",
+     "c": "Busca una planta del desierto y averigua cómo sobrevive con tan poca agua."
+    },
+    "fr": {
+     "t": "Les déserts sont vivants",
+     "g": "Découvre les plantes et les animaux adaptés à la vie en milieu sec.",
+     "p": [
+      "Les déserts reçoivent très peu de pluie, souvent moins de 250 mm par an, et pourtant la vie y est pleine d'astuces.",
+      "Les cactus stockent l'eau dans leurs tiges épaisses, et beaucoup de plantes du désert fleurissent vite après les rares pluies.",
+      "Beaucoup d'animaux se reposent le jour et sortent la nuit ; les grandes oreilles du fennec l'aident à évacuer la chaleur."
+     ],
+     "q": "Quel animal ou quelle plante du désert te fascine le plus ?",
+     "c": "Choisis une plante du désert et découvre comment elle survit avec si peu d'eau."
+    },
+    "it": {
+     "t": "I deserti sono vivi",
+     "g": "Scopri piante e animali adattati alla vita nei luoghi aridi.",
+     "p": [
+      "I deserti ricevono pochissima pioggia, spesso meno di 250 mm all'anno, eppure sono pieni di vita ingegnosa.",
+      "I cactus immagazzinano acqua nei fusti spessi, e molte piante del deserto fioriscono in fretta dopo le rare piogge.",
+      "Molti animali riposano di giorno ed escono di notte; le grandi orecchie del fennec lo aiutano a disperdere il calore."
+     ],
+     "q": "Quale animale o pianta del deserto ti affascina di più?",
+     "c": "Cerca una pianta del deserto e scopri come sopravvive con così poca acqua."
+    },
+    "pt": {
+     "t": "Os desertos estão vivos",
+     "g": "Descobre plantas e animais adaptados à vida em lugares secos.",
+     "p": [
+      "Os desertos recebem muito pouca chuva, muitas vezes menos de 250 mm por ano, e mesmo assim estão cheios de vida engenhosa.",
+      "Os catos guardam água nos caules grossos, e muitas plantas do deserto florescem depressa depois das raras chuvas.",
+      "Muitos animais descansam de dia e saem à noite; as grandes orelhas do feneco ajudam-no a perder calor."
+     ],
+     "q": "Que animal ou planta do deserto achas mais fascinante?",
+     "c": "Procura uma planta do deserto e descobre como sobrevive com tão pouca água."
+    },
+    "pt_BR": {
+     "t": "Os desertos são cheios de vida",
+     "g": "Descubra plantas e animais adaptados à vida em lugares secos.",
+     "p": [
+      "Os desertos recebem pouquíssima chuva, muitas vezes menos de 250 mm por ano, e mesmo assim são cheios de vida engenhosa.",
+      "Os cactos guardam água nos caules grossos, e muitas plantas do deserto florescem rápido depois das chuvas raras.",
+      "Muitos animais descansam de dia e saem à noite; as orelhas enormes da raposa-do-deserto ajudam a perder calor."
+     ],
+     "q": "Qual animal ou planta do deserto você acha mais fascinante?",
+     "c": "Pesquise uma planta do deserto e descubra como ela sobrevive com tão pouca água."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Desert trip safety",
+     "g": "Learn how to handle heat, water, sun and the best times of day to explore.",
+     "p": [
+      "Carry much more water than you think you need, and turn back when half of it is gone.",
+      "Explore in the early morning or late afternoon, and rest in the shade during the hottest hours.",
+      "Nights can be cold, so pack a warm layer, and never camp in dry riverbeds, where flash floods can arrive suddenly."
+     ],
+     "q": "Would you rather explore a desert at sunrise or at sunset?",
+     "c": "Plan the water you would need for a three-hour desert walk and write the amount down."
+    },
+    "de": {
+     "t": "Sicher in der Wüste",
+     "g": "Lerne, mit Hitze, Wasser und Sonne umzugehen und die besten Tageszeiten zu nutzen.",
+     "p": [
+      "Nimm viel mehr Wasser mit, als du glaubst zu brauchen, und kehr um, wenn die Hälfte weg ist.",
+      "Sei früh morgens oder am späten Nachmittag unterwegs und ruh dich in den heißesten Stunden im Schatten aus.",
+      "Nächte können kalt sein, also eine warme Schicht einpacken, und nie in trockenen Flussbetten zelten: Sturzfluten kommen plötzlich."
+     ],
+     "q": "Würdest du eine Wüste lieber bei Sonnenaufgang oder bei Sonnenuntergang erkunden?",
+     "c": "Plane, wie viel Wasser du für drei Stunden Wüstenwanderung bräuchtest, und schreib es auf."
+    },
+    "es": {
+     "t": "Seguridad en el desierto",
+     "g": "Aprende a manejar el calor, el agua, el sol y las mejores horas para explorar.",
+     "p": [
+      "Lleva mucha más agua de la que crees necesitar y da la vuelta cuando hayas gastado la mitad.",
+      "Explora a primera hora de la mañana o al final de la tarde y descansa a la sombra en las horas de más calor.",
+      "Las noches pueden ser frías, lleva abrigo, y nunca acampes en cauces secos, donde las riadas llegan de repente."
+     ],
+     "q": "¿Preferirías explorar un desierto al amanecer o al atardecer?",
+     "c": "Calcula el agua que necesitarías para tres horas de caminata por el desierto y anótala."
+    },
+    "fr": {
+     "t": "Sécurité dans le désert",
+     "g": "Apprends à gérer chaleur, eau et soleil, et les meilleurs moments pour explorer.",
+     "p": [
+      "Emporte bien plus d'eau que tu ne le penses et fais demi-tour quand la moitié est bue.",
+      "Explore tôt le matin ou en fin d'après-midi, et repose-toi à l'ombre aux heures les plus chaudes.",
+      "Les nuits peuvent être froides, prends une couche chaude, et ne campe jamais dans un lit de rivière sec : les crues y arrivent vite."
+     ],
+     "q": "Préférerais-tu explorer un désert au lever ou au coucher du soleil ?",
+     "c": "Calcule l'eau nécessaire pour trois heures de marche dans le désert et note la quantité."
+    },
+    "it": {
+     "t": "Sicurezza nel deserto",
+     "g": "Impara a gestire caldo, acqua, sole e i momenti migliori della giornata per esplorare.",
+     "p": [
+      "Porta molta più acqua di quanto pensi e torna indietro quando ne hai finita metà.",
+      "Esplora al mattino presto o nel tardo pomeriggio e riposa all'ombra nelle ore più calde.",
+      "Le notti possono essere fredde, porta uno strato caldo, e non accamparti mai nei letti di fiumi asciutti: le piene arrivano all'improvviso."
+     ],
+     "q": "Preferiresti esplorare un deserto all'alba o al tramonto?",
+     "c": "Calcola quanta acqua ti servirebbe per tre ore di cammino nel deserto e annotala."
+    },
+    "pt": {
+     "t": "Segurança no deserto",
+     "g": "Aprende a lidar com calor, água, sol e as melhores horas do dia para explorar.",
+     "p": [
+      "Leva muito mais água do que achas que precisas e volta para trás quando tiveres gasto metade.",
+      "Explora de manhã cedo ou ao fim da tarde e descansa à sombra nas horas de mais calor.",
+      "As noites podem ser frias, leva uma camada quente, e nunca acampes em leitos secos de rios, onde as cheias súbitas chegam de repente."
+     ],
+     "q": "Preferias explorar um deserto ao nascer ou ao pôr do sol?",
+     "c": "Calcula a água de que precisarias para três horas de caminhada no deserto e anota a quantidade."
+    },
+    "pt_BR": {
+     "t": "Segurança no deserto",
+     "g": "Aprenda a lidar com calor, água, sol e os melhores horários para explorar.",
+     "p": [
+      "Leve muito mais água do que acha que precisa e dê meia-volta quando tiver usado metade.",
+      "Explore de manhã cedo ou no fim da tarde e descanse na sombra nas horas mais quentes.",
+      "As noites podem ser frias, leve uma camada quente, e nunca acampe em leitos secos de rio, onde enxurradas chegam de repente."
+     ],
+     "q": "Você preferiria explorar um deserto ao nascer ou ao pôr do sol?",
+     "c": "Calcule quanta água você precisaria para três horas de caminhada no deserto e anote."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sand dunes",
+     "g": "Learn how dunes move and fun ways to enjoy them.",
+     "p": [
+      "Wind pushes sand up the gentle side of a dune, and it slides down the steeper side, so dunes slowly travel.",
+      "The Namib Desert in southern Africa has some of the tallest dunes on Earth, glowing orange at sunrise.",
+      "Try sandboarding or a sunrise climb, walk along ridges carefully and stay off fenced dunes that protect plants."
+     ],
+     "q": "Would you rather slide down a dune on a board or watch the sunrise from the top?",
+     "c": "Look at photos of a famous dune field and guess which way the wind usually blows."
+    },
+    "de": {
+     "t": "Sanddünen",
+     "g": "Lerne, wie Dünen wandern und wie man sie mit Spaß erlebt.",
+     "p": [
+      "Wind treibt Sand die flache Seite hinauf, der auf der steilen Seite wieder hinabrutscht, so wandern Dünen langsam.",
+      "Die Namib im südlichen Afrika hat einige der höchsten Dünen der Erde, die bei Sonnenaufgang orange leuchten.",
+      "Probier Sandboarding oder einen Aufstieg zum Sonnenaufgang, geh vorsichtig auf Kämmen und meide abgesperrte Dünen."
+     ],
+     "q": "Würdest du lieber mit einem Board eine Düne hinunterrutschen oder oben den Sonnenaufgang ansehen?",
+     "c": "Sieh dir Fotos eines berühmten Dünenfelds an und rate, aus welcher Richtung der Wind meist weht."
+    },
+    "es": {
+     "t": "Dunas de arena",
+     "g": "Aprende cómo se mueven las dunas y formas divertidas de disfrutarlas.",
+     "p": [
+      "El viento sube la arena por la ladera suave de la duna y esta cae por la más empinada, así las dunas viajan poco a poco.",
+      "El desierto del Namib, en el sur de África, tiene algunas de las dunas más altas del planeta, naranjas al amanecer.",
+      "Prueba el sandboard o subir al amanecer, camina con cuidado por las crestas y respeta las dunas valladas que protegen plantas."
+     ],
+     "q": "¿Preferirías bajar una duna en tabla o ver el amanecer desde arriba?",
+     "c": "Mira fotos de un campo de dunas famoso y adivina de dónde suele soplar el viento."
+    },
+    "fr": {
+     "t": "Les dunes de sable",
+     "g": "Apprends comment les dunes se déplacent et des façons amusantes d'en profiter.",
+     "p": [
+      "Le vent pousse le sable sur la pente douce de la dune, qui retombe sur la pente raide : ainsi, les dunes avancent lentement.",
+      "Le désert du Namib, en Afrique australe, compte certaines des plus hautes dunes du monde, orangées au lever du soleil.",
+      "Essaie le sandboard ou une montée au lever du jour, marche prudemment sur les crêtes et évite les dunes protégées."
+     ],
+     "q": "Préférerais-tu dévaler une dune sur une planche ou admirer le lever du soleil depuis le sommet ?",
+     "c": "Regarde des photos d'un champ de dunes célèbre et devine d'où souffle le plus souvent le vent."
+    },
+    "it": {
+     "t": "Dune di sabbia",
+     "g": "Scopri come si muovono le dune e modi divertenti per goderle.",
+     "p": [
+      "Il vento spinge la sabbia su per il lato dolce della duna, che poi scivola giù da quello ripido: così le dune viaggiano lente.",
+      "Il deserto del Namib, nell'Africa australe, ha alcune delle dune più alte della Terra, arancioni all'alba.",
+      "Prova il sandboard o una salita all'alba, cammina con attenzione sulle creste e resta fuori dalle dune recintate."
+     ],
+     "q": "Preferiresti scendere una duna su una tavola o guardare l'alba dalla cima?",
+     "c": "Guarda foto di un famoso campo di dune e indovina da dove soffia di solito il vento."
+    },
+    "pt": {
+     "t": "Dunas de areia",
+     "g": "Aprende como as dunas se movem e formas divertidas de as aproveitar.",
+     "p": [
+      "O vento empurra a areia pela encosta suave da duna e ela escorrega pela mais íngreme: assim as dunas viajam devagar.",
+      "O deserto do Namibe, no sul de África, tem algumas das dunas mais altas da Terra, cor de laranja ao nascer do sol.",
+      "Experimenta sandboard ou uma subida ao nascer do sol, anda com cuidado nas cristas e respeita as dunas vedadas."
+     ],
+     "q": "Preferias descer uma duna numa prancha ou ver o nascer do sol lá de cima?",
+     "c": "Vê fotos de um campo de dunas famoso e adivinha de onde costuma soprar o vento."
+    },
+    "pt_BR": {
+     "t": "Dunas de areia",
+     "g": "Aprenda como as dunas se movem e jeitos divertidos de curti-las.",
+     "p": [
+      "O vento empurra a areia pela encosta suave da duna, e ela desliza pelo lado mais íngreme: assim as dunas andam devagar.",
+      "O deserto do Namibe, no sul da África, tem algumas das dunas mais altas da Terra, alaranjadas ao nascer do sol.",
+      "Experimente o sandboard ou subir para ver o nascer do sol, ande com cuidado nas cristas e respeite as dunas cercadas."
+     ],
+     "q": "Você preferiria descer uma duna de prancha ou ver o nascer do sol lá de cima?",
+     "c": "Veja fotos de um campo de dunas famoso e adivinhe de onde o vento costuma soprar."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Night skies",
+     "g": "Find out why remote places have such bright, starry skies.",
+     "p": [
+      "Far from cities there is little artificial light, so faint stars and the Milky Way become visible.",
+      "Dry air and high places, like deserts and mountains, make the sky especially clear.",
+      "Your eyes need about 20 to 30 minutes to adjust to the dark; a red torch keeps your night vision."
+     ],
+     "q": "When did you last see a truly starry sky?",
+     "c": "Tonight, step outside, turn away from lights and count how many stars you can see."
+    },
+    "de": {
+     "t": "Nachthimmel",
+     "g": "Erfahre, warum abgelegene Orte einen so hellen Sternenhimmel haben.",
+     "p": [
+      "Fern der Städte gibt es kaum Kunstlicht, deshalb werden schwache Sterne und die Milchstraße sichtbar.",
+      "Trockene Luft und hohe Lagen wie Wüsten und Berge machen den Himmel besonders klar.",
+      "Deine Augen brauchen etwa 20 bis 30 Minuten, um sich an die Dunkelheit zu gewöhnen; Rotlicht schont die Nachtsicht."
+     ],
+     "q": "Wann hast du zuletzt einen richtig sternenklaren Himmel gesehen?",
+     "c": "Geh heute Abend raus, wende dich vom Licht ab und zähl, wie viele Sterne du siehst."
+    },
+    "es": {
+     "t": "Cielos nocturnos",
+     "g": "Descubre por qué los lugares remotos tienen cielos tan brillantes y estrellados.",
+     "p": [
+      "Lejos de las ciudades hay poca luz artificial, así que se ven estrellas débiles y la Vía Láctea.",
+      "El aire seco y los lugares altos, como desiertos y montañas, hacen el cielo especialmente claro.",
+      "Tus ojos necesitan unos 20 a 30 minutos para adaptarse a la oscuridad; una linterna roja conserva tu visión nocturna."
+     ],
+     "q": "¿Cuándo fue la última vez que viste un cielo de verdad estrellado?",
+     "c": "Esta noche sal, aléjate de las luces y cuenta cuántas estrellas ves."
+    },
+    "fr": {
+     "t": "Les ciels nocturnes",
+     "g": "Découvre pourquoi les lieux isolés ont des ciels si lumineux et étoilés.",
+     "p": [
+      "Loin des villes, il y a peu de lumière artificielle : les étoiles faibles et la Voie lactée apparaissent.",
+      "L'air sec et les lieux en altitude, comme les déserts et les montagnes, rendent le ciel particulièrement clair.",
+      "Tes yeux ont besoin d'environ 20 à 30 minutes pour s'habituer au noir ; une lampe rouge préserve ta vision nocturne."
+     ],
+     "q": "Quand as-tu vu pour la dernière fois un ciel vraiment étoilé ?",
+     "c": "Ce soir, sors, tourne le dos aux lumières et compte combien d'étoiles tu vois."
+    },
+    "it": {
+     "t": "Cieli notturni",
+     "g": "Scopri perché i luoghi remoti hanno cieli così luminosi e stellati.",
+     "p": [
+      "Lontano dalle città c'è poca luce artificiale, così si vedono le stelle deboli e la Via Lattea.",
+      "L'aria secca e i luoghi in quota, come deserti e montagne, rendono il cielo particolarmente limpido.",
+      "Gli occhi hanno bisogno di circa 20-30 minuti per abituarsi al buio; una torcia rossa protegge la visione notturna."
+     ],
+     "q": "Quando hai visto l'ultima volta un cielo davvero stellato?",
+     "c": "Stasera esci, voltati lontano dalle luci e conta quante stelle riesci a vedere."
+    },
+    "pt": {
+     "t": "Céus noturnos",
+     "g": "Descobre porque os lugares remotos têm céus tão brilhantes e estrelados.",
+     "p": [
+      "Longe das cidades há pouca luz artificial, por isso vês estrelas ténues e a Via Láctea.",
+      "O ar seco e os lugares altos, como desertos e montanhas, deixam o céu especialmente limpo.",
+      "Os olhos precisam de cerca de 20 a 30 minutos para se adaptarem ao escuro; uma lanterna vermelha preserva a visão noturna."
+     ],
+     "q": "Quando foi a última vez que viste um céu mesmo estrelado?",
+     "c": "Esta noite, sai, vira as costas às luzes e conta quantas estrelas consegues ver."
+    },
+    "pt_BR": {
+     "t": "Céus noturnos",
+     "g": "Descubra por que lugares isolados têm céus tão brilhantes e estrelados.",
+     "p": [
+      "Longe das cidades há pouca luz artificial, então dá para ver estrelas fracas e a Via Láctea.",
+      "Ar seco e lugares altos, como desertos e montanhas, deixam o céu especialmente limpo.",
+      "Seus olhos levam uns 20 a 30 minutos para se acostumar ao escuro; uma lanterna vermelha preserva a visão noturna."
+     ],
+     "q": "Quando foi a última vez que você viu um céu realmente estrelado?",
+     "c": "Hoje à noite, saia, fique de costas para as luzes e conte quantas estrelas consegue ver."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stargazing basics",
+     "g": "Learn to find the Moon, planets and bright constellations.",
+     "p": [
+      "The Moon is easiest to explore with binoculars, especially along the line between its light and dark parts.",
+      "Planets shine with a steady light and usually twinkle less than stars; Venus is the brightest after the Moon.",
+      "In the north, the Big Dipper points to the North Star; in the south, look for the Southern Cross; Orion is seen from both."
+     ],
+     "q": "Do you know any constellation already, and where did you learn it?",
+     "c": "Find Orion or the Big Dipper tonight, or use a free sky map app to help."
+    },
+    "de": {
+     "t": "Sterne beobachten für Einsteiger",
+     "g": "Lerne, Mond, Planeten und helle Sternbilder zu finden.",
+     "p": [
+      "Den Mond erkundest du am besten mit dem Fernglas, vor allem entlang der Grenze zwischen hellem und dunklem Teil.",
+      "Planeten leuchten ruhig und funkeln meist weniger als Sterne; die Venus ist nach dem Mond am hellsten.",
+      "Im Norden zeigt der Große Wagen zum Polarstern, im Süden suchst du das Kreuz des Südens; Orion sieht man von beiden."
+     ],
+     "q": "Kennst du schon ein Sternbild, und wo hast du es gelernt?",
+     "c": "Finde heute Abend Orion oder den Großen Wagen, gern mit einer kostenlosen Sternkarten-App."
+    },
+    "es": {
+     "t": "Lo básico para mirar estrellas",
+     "g": "Aprende a encontrar la Luna, los planetas y las constelaciones brillantes.",
+     "p": [
+      "La Luna se explora fácil con prismáticos, sobre todo en la línea entre su parte iluminada y la oscura.",
+      "Los planetas brillan con luz fija y suelen titilar menos que las estrellas; Venus es el más brillante tras la Luna.",
+      "En el norte, la Osa Mayor señala la Estrella Polar; en el sur, busca la Cruz del Sur; Orión se ve desde ambos."
+     ],
+     "q": "¿Ya conoces alguna constelación? ¿Dónde la aprendiste?",
+     "c": "Busca esta noche Orión o la Osa Mayor, o usa una app gratuita de mapa del cielo."
+    },
+    "fr": {
+     "t": "Les bases de l'observation du ciel",
+     "g": "Apprends à repérer la Lune, les planètes et les constellations brillantes.",
+     "p": [
+      "La Lune s'observe facilement aux jumelles, surtout le long de la limite entre sa partie éclairée et sa partie sombre.",
+      "Les planètes brillent d'une lumière stable et scintillent moins que les étoiles ; Vénus est la plus brillante après la Lune.",
+      "Au nord, la Grande Ourse montre l'étoile Polaire ; au sud, cherche la Croix du Sud ; Orion se voit des deux hémisphères."
+     ],
+     "q": "Connais-tu déjà une constellation, et où l'as-tu apprise ?",
+     "c": "Trouve Orion ou la Grande Ourse ce soir, avec l'aide d'une appli de carte du ciel gratuite si besoin."
+    },
+    "it": {
+     "t": "Basi per osservare le stelle",
+     "g": "Impara a trovare la Luna, i pianeti e le costellazioni luminose.",
+     "p": [
+      "La Luna si esplora facilmente con un binocolo, soprattutto lungo il confine tra la parte illuminata e quella in ombra.",
+      "I pianeti brillano di luce ferma e di solito scintillano meno delle stelle; Venere è il più luminoso dopo la Luna.",
+      "Al nord il Grande Carro indica la Stella Polare; al sud cerca la Croce del Sud; Orione si vede da entrambi."
+     ],
+     "q": "Conosci già una costellazione, e dove l'hai imparata?",
+     "c": "Stasera trova Orione o il Grande Carro, magari con un'app gratuita di mappa del cielo."
+    },
+    "pt": {
+     "t": "O básico de observar estrelas",
+     "g": "Aprende a encontrar a Lua, os planetas e as constelações brilhantes.",
+     "p": [
+      "A Lua explora-se facilmente com binóculos, sobretudo na linha entre a parte iluminada e a escura.",
+      "Os planetas brilham com luz fixa e cintilam menos do que as estrelas; Vénus é o mais brilhante a seguir à Lua.",
+      "No norte, a Ursa Maior aponta para a Estrela Polar; no sul, procura o Cruzeiro do Sul; Orionte vê-se dos dois."
+     ],
+     "q": "Já conheces alguma constelação? Onde a aprendeste?",
+     "c": "Encontra Orionte ou a Ursa Maior esta noite, com a ajuda de uma app gratuita de mapa do céu."
+    },
+    "pt_BR": {
+     "t": "O básico de observar estrelas",
+     "g": "Aprenda a encontrar a Lua, os planetas e as constelações brilhantes.",
+     "p": [
+      "A Lua é fácil de explorar com binóculos, principalmente na linha entre a parte iluminada e a escura.",
+      "Os planetas brilham com luz firme e piscam menos que as estrelas; Vênus é o mais brilhante depois da Lua.",
+      "No norte, a Ursa Maior aponta para a Estrela Polar; no sul, procure o Cruzeiro do Sul; Órion aparece nos dois."
+     ],
+     "q": "Você já conhece alguma constelação? Onde aprendeu?",
+     "c": "Encontre Órion ou o Cruzeiro do Sul hoje à noite, se quiser com um app gratuito de mapa do céu."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dark sky places",
+     "g": "Learn about protected stargazing areas and how they limit light pollution.",
+     "p": [
+      "Dark sky parks and reserves are places recognised for their exceptionally dark, protected night skies.",
+      "They use shielded lights that point down, warmer light colours and switch lights off when not needed.",
+      "Darkness also helps wildlife: many birds, insects and baby sea turtles are confused by bright lights."
+     ],
+     "q": "Would you travel somewhere just to see a perfectly dark, starry sky?",
+     "c": "Look up the dark sky place closest to you and find when the Moon is new this month."
+    },
+    "de": {
+     "t": "Sternenparks",
+     "g": "Erfahre mehr über geschützte Gebiete zum Sternegucken und wie sie Lichtverschmutzung begrenzen.",
+     "p": [
+      "Sternenparks und -reservate sind Orte, die für ihren besonders dunklen, geschützten Nachthimmel anerkannt sind.",
+      "Sie nutzen abgeschirmte, nach unten gerichtete Lampen, wärmeres Licht und schalten Licht ab, wenn es nicht gebraucht wird.",
+      "Dunkelheit hilft auch Tieren: Viele Vögel, Insekten und junge Meeresschildkröten werden von hellem Licht verwirrt."
+     ],
+     "q": "Würdest du nur für einen perfekt dunklen Sternenhimmel verreisen?",
+     "c": "Finde den Sternenpark, der dir am nächsten liegt, und wann in diesem Monat Neumond ist."
+    },
+    "es": {
+     "t": "Lugares de cielo oscuro",
+     "g": "Conoce las áreas protegidas para mirar estrellas y cómo limitan la contaminación lumínica.",
+     "p": [
+      "Los parques y reservas de cielo oscuro son lugares reconocidos por sus cielos nocturnos muy oscuros y protegidos.",
+      "Usan luces apantalladas que apuntan hacia abajo, tonos de luz más cálidos y apagan las luces cuando no hacen falta.",
+      "La oscuridad también ayuda a la fauna: muchas aves, insectos y crías de tortuga marina se desorientan con luces fuertes."
+     ],
+     "q": "¿Viajarías a un sitio solo para ver un cielo perfectamente oscuro y estrellado?",
+     "c": "Busca el lugar de cielo oscuro más cercano y averigua cuándo hay luna nueva este mes."
+    },
+    "fr": {
+     "t": "Les réserves de ciel étoilé",
+     "g": "Découvre les espaces protégés pour observer les étoiles et comment ils limitent la pollution lumineuse.",
+     "p": [
+      "Les parcs et réserves de ciel étoilé sont reconnus pour leurs nuits exceptionnellement noires et protégées.",
+      "Ils utilisent des éclairages orientés vers le bas, des teintes plus chaudes et éteignent les lumières inutiles.",
+      "L'obscurité aide aussi la faune : beaucoup d'oiseaux, d'insectes et de bébés tortues marines sont désorientés par les lumières vives."
+     ],
+     "q": "Voyagerais-tu juste pour voir un ciel parfaitement noir et étoilé ?",
+     "c": "Cherche la réserve de ciel étoilé la plus proche et la date de la prochaine nouvelle lune."
+    },
+    "it": {
+     "t": "Luoghi di cielo buio",
+     "g": "Scopri le aree protette per osservare le stelle e come limitano l'inquinamento luminoso.",
+     "p": [
+      "Parchi e riserve di cielo buio sono luoghi riconosciuti per i loro cieli notturni eccezionalmente bui e protetti.",
+      "Usano luci schermate rivolte verso il basso, colori più caldi e spengono le luci quando non servono.",
+      "Il buio aiuta anche la fauna: molti uccelli, insetti e piccole tartarughe marine si confondono con le luci forti."
+     ],
+     "q": "Viaggeresti solo per vedere un cielo perfettamente buio e stellato?",
+     "c": "Cerca il luogo di cielo buio più vicino a te e scopri quando c'è la luna nuova questo mese."
+    },
+    "pt": {
+     "t": "Locais de céu escuro",
+     "g": "Conhece as áreas protegidas para observar estrelas e como limitam a poluição luminosa.",
+     "p": [
+      "Os parques e reservas de céu escuro são lugares reconhecidos pelos seus céus noturnos muito escuros e protegidos.",
+      "Usam luzes protegidas viradas para baixo, cores de luz mais quentes e desligam as luzes quando não são precisas.",
+      "A escuridão também ajuda a fauna: muitas aves, insetos e tartarugas bebés ficam desorientados com luzes fortes."
+     ],
+     "q": "Viajarias só para ver um céu perfeitamente escuro e estrelado?",
+     "c": "Procura o local de céu escuro mais perto de ti e descobre quando é a lua nova este mês."
+    },
+    "pt_BR": {
+     "t": "Lugares de céu escuro",
+     "g": "Conheça as áreas protegidas para observar estrelas e como elas limitam a poluição luminosa.",
+     "p": [
+      "Parques e reservas de céu escuro são lugares reconhecidos pelo céu noturno muito escuro e protegido.",
+      "Eles usam luminárias que apontam para baixo, luz de tom mais quente e apagam as luzes quando não precisam.",
+      "O escuro também ajuda a fauna: muitas aves, insetos e filhotes de tartaruga marinha se confundem com luzes fortes."
+     ],
+     "q": "Você viajaria só para ver um céu perfeitamente escuro e estrelado?",
+     "c": "Pesquise o lugar de céu escuro mais perto de você e descubra quando é a lua nova neste mês."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rivers and canyons",
+     "g": "Learn how rivers carve canyons over very long periods of time.",
+     "p": [
+      "A river cuts down into rock grain by grain, using the sand and stones it carries like sandpaper.",
+      "The Colorado River carved the Grand Canyon over millions of years, exposing colourful rock layers.",
+      "Each layer is a page of Earth's history; in narrow slot canyons, always check for flash flood warnings first."
+     ],
+     "q": "Have you ever looked down into a canyon or deep river gorge?",
+     "c": "Find a canyon or gorge in your country and learn which river made it."
+    },
+    "de": {
+     "t": "Flüsse und Schluchten",
+     "g": "Lerne, wie Flüsse über sehr lange Zeit Schluchten graben.",
+     "p": [
+      "Ein Fluss schneidet sich Korn für Korn ins Gestein und nutzt mitgeführten Sand und Kies wie Schleifpapier.",
+      "Der Colorado River hat den Grand Canyon über Millionen Jahre geformt und bunte Gesteinsschichten freigelegt.",
+      "Jede Schicht ist eine Seite der Erdgeschichte; in engen Slot Canyons immer zuerst auf Sturzflutwarnungen achten."
+     ],
+     "q": "Hast du schon einmal in einen Canyon oder eine tiefe Flussschlucht hinabgeschaut?",
+     "c": "Finde eine Schlucht in deinem Land und finde heraus, welcher Fluss sie geformt hat."
+    },
+    "es": {
+     "t": "Ríos y cañones",
+     "g": "Aprende cómo los ríos excavan cañones durante periodos larguísimos.",
+     "p": [
+      "Un río corta la roca grano a grano, usando la arena y las piedras que arrastra como papel de lija.",
+      "El río Colorado excavó el Gran Cañón durante millones de años y dejó a la vista capas de roca de colores.",
+      "Cada capa es una página de la historia de la Tierra; en los cañones estrechos, mira siempre antes los avisos de riadas."
+     ],
+     "q": "¿Has mirado alguna vez hacia abajo desde un cañón o una garganta profunda?",
+     "c": "Busca un cañón o garganta de tu país y averigua qué río lo formó."
+    },
+    "fr": {
+     "t": "Rivières et canyons",
+     "g": "Découvre comment les rivières creusent des canyons sur de très longues périodes.",
+     "p": [
+      "Une rivière entaille la roche grain par grain, en se servant du sable et des cailloux qu'elle charrie comme d'un papier de verre.",
+      "Le fleuve Colorado a creusé le Grand Canyon en des millions d'années, révélant des couches de roche colorées.",
+      "Chaque couche est une page de l'histoire de la Terre ; dans les canyons étroits, vérifie toujours les alertes de crue."
+     ],
+     "q": "As-tu déjà contemplé un canyon ou une gorge profonde d'en haut ?",
+     "c": "Trouve un canyon ou des gorges dans ton pays et cherche quelle rivière les a creusés."
+    },
+    "it": {
+     "t": "Fiumi e canyon",
+     "g": "Scopri come i fiumi scavano i canyon in tempi lunghissimi.",
+     "p": [
+      "Un fiume incide la roccia granello dopo granello, usando sabbia e sassi che trasporta come carta vetrata.",
+      "Il fiume Colorado ha scavato il Grand Canyon in milioni di anni, mettendo a nudo strati di roccia colorati.",
+      "Ogni strato è una pagina della storia della Terra; nei canyon stretti controlla sempre prima le allerte per piene improvvise."
+     ],
+     "q": "Hai mai guardato giù in un canyon o in una gola profonda?",
+     "c": "Trova un canyon o una gola nel tuo paese e scopri quale fiume l'ha scavata."
+    },
+    "pt": {
+     "t": "Rios e desfiladeiros",
+     "g": "Aprende como os rios escavam desfiladeiros ao longo de períodos muito longos.",
+     "p": [
+      "Um rio corta a rocha grão a grão, usando a areia e as pedras que arrasta como lixa.",
+      "O rio Colorado escavou o Grand Canyon ao longo de milhões de anos, revelando camadas de rocha coloridas.",
+      "Cada camada é uma página da história da Terra; em desfiladeiros estreitos, vê sempre antes os avisos de cheias súbitas."
+     ],
+     "q": "Já olhaste para baixo de um desfiladeiro ou de um vale de rio profundo?",
+     "c": "Encontra um desfiladeiro no teu país e descobre que rio o formou."
+    },
+    "pt_BR": {
+     "t": "Rios e cânions",
+     "g": "Aprenda como os rios escavam cânions ao longo de períodos enormes.",
+     "p": [
+      "Um rio corta a rocha grão por grão, usando a areia e as pedras que carrega como uma lixa.",
+      "O rio Colorado escavou o Grand Canyon ao longo de milhões de anos, revelando camadas de rocha coloridas.",
+      "Cada camada é uma página da história da Terra; em cânions estreitos, sempre confira antes os alertas de cabeça d'água."
+     ],
+     "q": "Você já olhou lá de cima para um cânion ou uma garganta funda?",
+     "c": "Encontre um cânion no seu país e descubra qual rio o formou."
+    }
+   }
+  }
+ ]
+}

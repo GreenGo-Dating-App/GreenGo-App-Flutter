@@ -1,0 +1,835 @@
+{
+ "topic": "solo_travel",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to solo travel",
+     "g": "Discover why travelling alone can become one of the most rewarding experiences of your life.",
+     "p": [
+      "You choose every step: where to go, what to eat and when to rest.",
+      "Being on your own makes you more open to new people and places.",
+      "Small solo adventures build a calm confidence you take back home."
+     ],
+     "q": "What is one place you have always dreamed of seeing on your own?",
+     "c": "Write down three things you would love to do on a solo trip."
+    },
+    "de": {
+     "t": "Willkommen beim Alleinreisen",
+     "g": "Entdecke, warum Alleinreisen zu den schönsten Erfahrungen deines Lebens gehören kann.",
+     "p": [
+      "Du entscheidest alles selbst: wohin, was du isst und wann du Pause machst.",
+      "Allein bist du offener für neue Menschen und Orte.",
+      "Kleine Solo-Abenteuer schenken dir eine ruhige Selbstsicherheit."
+     ],
+     "q": "Welchen Ort wolltest du schon immer einmal allein sehen?",
+     "c": "Schreib drei Dinge auf, die du auf einer Solo-Reise gern machen würdest."
+    },
+    "es": {
+     "t": "Bienvenido a viajar solo",
+     "g": "Descubre por qué viajar solo puede ser una de las experiencias más gratificantes de tu vida.",
+     "p": [
+      "Tú eliges cada paso: adónde ir, qué comer y cuándo descansar.",
+      "Estar solo te abre más a gente y lugares nuevos.",
+      "Las pequeñas aventuras en solitario te dan una confianza tranquila."
+     ],
+     "q": "¿Qué lugar has soñado siempre con conocer por tu cuenta?",
+     "c": "Anota tres cosas que te encantaría hacer en un viaje en solitario."
+    },
+    "fr": {
+     "t": "Bienvenue dans le voyage en solo",
+     "g": "Découvre pourquoi voyager seul peut devenir l’une des plus belles expériences de ta vie.",
+     "p": [
+      "Tu choisis tout : où aller, quoi manger et quand te reposer.",
+      "Seul, tu deviens plus ouvert aux rencontres et aux lieux nouveaux.",
+      "Les petites aventures en solo construisent une confiance sereine."
+     ],
+     "q": "Quel endroit rêves-tu depuis toujours de découvrir seul ?",
+     "c": "Note trois choses que tu adorerais faire lors d’un voyage en solo."
+    },
+    "it": {
+     "t": "Benvenuto nel viaggio in solitaria",
+     "g": "Scopri perché viaggiare da solo può diventare una delle esperienze più belle della tua vita.",
+     "p": [
+      "Scegli tu ogni passo: dove andare, cosa mangiare e quando riposare.",
+      "Da solo sei più aperto verso persone e luoghi nuovi.",
+      "Le piccole avventure in solitaria creano una fiducia serena."
+     ],
+     "q": "Qual è un posto che sogni da sempre di vedere da solo?",
+     "c": "Scrivi tre cose che ti piacerebbe fare in un viaggio da solo."
+    },
+    "pt": {
+     "t": "Bem-vindo às viagens a solo",
+     "g": "Descobre porque viajar sozinho pode ser uma das experiências mais gratificantes da tua vida.",
+     "p": [
+      "Escolhes cada passo: para onde ir, o que comer e quando descansar.",
+      "Sozinho ficas mais aberto a pessoas e lugares novos.",
+      "Pequenas aventuras a solo dão-te uma confiança tranquila."
+     ],
+     "q": "Que lugar sempre sonhaste conhecer sozinho?",
+     "c": "Escreve três coisas que adorarias fazer numa viagem a solo."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo às viagens solo",
+     "g": "Descubra por que viajar sozinho pode ser uma das experiências mais gratificantes da sua vida.",
+     "p": [
+      "Você escolhe cada passo: para onde ir, o que comer e quando descansar.",
+      "Sozinho, você fica mais aberto a pessoas e lugares novos.",
+      "Pequenas aventuras solo trazem uma confiança tranquila."
+     ],
+     "q": "Qual lugar você sempre sonhou conhecer sozinho?",
+     "c": "Anote três coisas que você adoraria fazer numa viagem solo."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people travel solo",
+     "g": "Understand the main reasons people love travelling on their own terms.",
+     "p": [
+      "Freedom: no compromises, you follow your own rhythm and interests.",
+      "Growth: solving small problems alone builds skills and self-trust.",
+      "Connection: solo travellers often meet more locals and fellow travellers."
+     ],
+     "q": "Which of these reasons speaks to you the most, and why?",
+     "c": "Ask a friend who has travelled alone what they enjoyed most."
+    },
+    "de": {
+     "t": "Warum Menschen allein reisen",
+     "g": "Verstehe die wichtigsten Gründe, warum Menschen gern nach eigenen Regeln reisen.",
+     "p": [
+      "Freiheit: keine Kompromisse, du folgst deinem eigenen Rhythmus.",
+      "Wachstum: Kleine Probleme allein zu lösen stärkt Können und Selbstvertrauen.",
+      "Kontakte: Alleinreisende lernen oft mehr Einheimische und Reisende kennen."
+     ],
+     "q": "Welcher dieser Gründe spricht dich am meisten an und warum?",
+     "c": "Frag jemanden, der allein gereist ist, was ihm am besten gefallen hat."
+    },
+    "es": {
+     "t": "Por qué la gente viaja sola",
+     "g": "Entiende las razones principales por las que a muchos les encanta viajar a su manera.",
+     "p": [
+      "Libertad: sin concesiones, sigues tu propio ritmo e intereses.",
+      "Crecimiento: resolver pequeños problemas solo te da habilidades y confianza.",
+      "Conexión: quien viaja solo suele conocer a más locales y viajeros."
+     ],
+     "q": "¿Cuál de estas razones te atrae más y por qué?",
+     "c": "Pregunta a alguien que haya viajado solo qué fue lo que más disfrutó."
+    },
+    "fr": {
+     "t": "Pourquoi voyager en solo",
+     "g": "Comprends les principales raisons pour lesquelles on aime voyager à sa façon.",
+     "p": [
+      "Liberté : aucun compromis, tu suis ton rythme et tes envies.",
+      "Évolution : résoudre seul de petits soucis renforce tes compétences.",
+      "Rencontres : en solo, on croise souvent plus d’habitants et de voyageurs."
+     ],
+     "q": "Laquelle de ces raisons te parle le plus, et pourquoi ?",
+     "c": "Demande à quelqu’un qui a voyagé seul ce qu’il a le plus aimé."
+    },
+    "it": {
+     "t": "Perché si viaggia da soli",
+     "g": "Capisci i motivi principali per cui tante persone amano viaggiare a modo loro.",
+     "p": [
+      "Libertà: nessun compromesso, segui il tuo ritmo e i tuoi interessi.",
+      "Crescita: risolvere da soli piccoli problemi rafforza abilità e fiducia.",
+      "Incontri: chi viaggia da solo conosce spesso più gente del posto e viaggiatori."
+     ],
+     "q": "Quale di questi motivi ti parla di più, e perché?",
+     "c": "Chiedi a chi ha viaggiato da solo cosa gli è piaciuto di più."
+    },
+    "pt": {
+     "t": "Porque se viaja a solo",
+     "g": "Percebe as principais razões pelas quais tantas pessoas adoram viajar à sua maneira.",
+     "p": [
+      "Liberdade: sem cedências, segues o teu ritmo e os teus interesses.",
+      "Crescimento: resolver pequenos problemas sozinho dá-te competências e confiança.",
+      "Ligação: quem viaja a solo costuma conhecer mais locais e viajantes."
+     ],
+     "q": "Qual destas razões te diz mais, e porquê?",
+     "c": "Pergunta a alguém que já viajou sozinho do que gostou mais."
+    },
+    "pt_BR": {
+     "t": "Por que as pessoas viajam sozinhas",
+     "g": "Entenda os principais motivos pelos quais tanta gente adora viajar do seu jeito.",
+     "p": [
+      "Liberdade: sem concessões, você segue seu ritmo e seus interesses.",
+      "Crescimento: resolver pequenos problemas sozinho traz habilidades e confiança.",
+      "Conexão: quem viaja sozinho costuma conhecer mais moradores e viajantes."
+     ],
+     "q": "Qual desses motivos fala mais com você, e por quê?",
+     "c": "Pergunte a alguém que já viajou sozinho do que mais gostou."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common solo travel worries",
+     "g": "Name your worries about travelling alone, because naming them is the first step to easing them.",
+     "p": [
+      "Loneliness: many solo travellers find company easily when they want it.",
+      "Safety: simple habits and good planning reduce most everyday risks.",
+      "Confidence: it grows with each small step, not all at once."
+     ],
+     "q": "What is your biggest worry about travelling alone?",
+     "c": "Write your top worry and one small idea that could make it lighter."
+    },
+    "de": {
+     "t": "Typische Sorgen beim Alleinreisen",
+     "g": "Benenne deine Sorgen, denn sie auszusprechen ist der erste Schritt, sie zu verkleinern.",
+     "p": [
+      "Einsamkeit: Viele Alleinreisende finden leicht Gesellschaft, wenn sie wollen.",
+      "Sicherheit: Einfache Gewohnheiten und gute Planung senken die meisten Risiken.",
+      "Selbstvertrauen: Es wächst mit jedem kleinen Schritt, nicht auf einmal."
+     ],
+     "q": "Was ist deine größte Sorge beim Alleinreisen?",
+     "c": "Notiere deine größte Sorge und eine kleine Idee, die sie leichter macht."
+    },
+    "es": {
+     "t": "Preocupaciones comunes al viajar solo",
+     "g": "Pon nombre a tus miedos, porque nombrarlos es el primer paso para aliviarlos.",
+     "p": [
+      "Soledad: muchos viajeros solos encuentran compañía fácilmente cuando quieren.",
+      "Seguridad: hábitos sencillos y buena planificación reducen casi todos los riesgos.",
+      "Confianza: crece con cada pequeño paso, no de golpe."
+     ],
+     "q": "¿Cuál es tu mayor preocupación al viajar solo?",
+     "c": "Escribe tu mayor miedo y una pequeña idea que lo haga más ligero."
+    },
+    "fr": {
+     "t": "Les inquiétudes du voyage en solo",
+     "g": "Nomme tes craintes, car les nommer est le premier pas pour les apaiser.",
+     "p": [
+      "Solitude : beaucoup de voyageurs trouvent facilement de la compagnie s’ils le veulent.",
+      "Sécurité : de bonnes habitudes et un peu d’organisation réduisent la plupart des risques.",
+      "Confiance : elle grandit à chaque petit pas, pas d’un coup."
+     ],
+     "q": "Quelle est ta plus grande inquiétude à l’idée de voyager seul ?",
+     "c": "Écris ta principale crainte et une petite idée pour l’alléger."
+    },
+    "it": {
+     "t": "Le paure più comuni del viaggio da soli",
+     "g": "Dai un nome alle tue paure: nominarle è il primo passo per alleggerirle.",
+     "p": [
+      "Solitudine: molti viaggiatori trovano compagnia facilmente quando lo desiderano.",
+      "Sicurezza: abitudini semplici e una buona pianificazione riducono gran parte dei rischi.",
+      "Fiducia: cresce a ogni piccolo passo, non tutta in una volta."
+     ],
+     "q": "Qual è la tua preoccupazione più grande nel viaggiare da solo?",
+     "c": "Scrivi la tua paura principale e una piccola idea per renderla più leggera."
+    },
+    "pt": {
+     "t": "Receios comuns de viajar a solo",
+     "g": "Dá nome aos teus receios, porque nomeá-los é o primeiro passo para os aliviar.",
+     "p": [
+      "Solidão: muitos viajantes encontram companhia facilmente quando querem.",
+      "Segurança: hábitos simples e bom planeamento reduzem a maioria dos riscos.",
+      "Confiança: cresce a cada pequeno passo, não de uma vez."
+     ],
+     "q": "Qual é o teu maior receio de viajar sozinho?",
+     "c": "Escreve o teu maior receio e uma pequena ideia para o tornar mais leve."
+    },
+    "pt_BR": {
+     "t": "Medos comuns de viajar sozinho",
+     "g": "Dê nome aos seus medos, porque nomeá-los é o primeiro passo para aliviá-los.",
+     "p": [
+      "Solidão: muitos viajantes solo encontram companhia fácil quando querem.",
+      "Segurança: hábitos simples e bom planejamento reduzem a maioria dos riscos.",
+      "Confiança: ela cresce a cada pequeno passo, não de uma vez."
+     ],
+     "q": "Qual é o seu maior medo de viajar sozinho?",
+     "c": "Escreva seu maior medo e uma pequena ideia para deixá-lo mais leve."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your solo travel style",
+     "g": "Discover what kind of solo traveller you are, so you can plan trips you truly enjoy.",
+     "p": [
+      "Explorer: you love walking, discovering hidden corners and saying yes to surprises.",
+      "Relaxer or social butterfly: slow days with a book, or busy hostels full of new friends.",
+      "Culture lover: museums, markets, history and food are your compass."
+     ],
+     "q": "Which style sounds most like you right now?",
+     "c": "Picture your perfect solo day and describe it in three sentences."
+    },
+    "de": {
+     "t": "Dein Solo-Reisestil",
+     "g": "Finde heraus, welcher Reisetyp du bist, damit du Reisen planst, die dir wirklich Freude machen.",
+     "p": [
+      "Entdecker: Du liebst Spaziergänge, versteckte Ecken und spontane Überraschungen.",
+      "Genießer oder Geselliger: ruhige Tage mit Buch oder volle Hostels mit neuen Freunden.",
+      "Kulturfan: Museen, Märkte, Geschichte und Essen sind dein Kompass."
+     ],
+     "q": "Welcher Stil passt im Moment am besten zu dir?",
+     "c": "Stell dir deinen perfekten Solo-Tag vor und beschreib ihn in drei Sätzen."
+    },
+    "es": {
+     "t": "Tu estilo de viaje en solitario",
+     "g": "Descubre qué tipo de viajero solo eres para planear viajes que de verdad disfrutes.",
+     "p": [
+      "Explorador: te encanta caminar, encontrar rincones escondidos y decir sí a sorpresas.",
+      "Relajado o sociable: días tranquilos con un libro o albergues llenos de amigos nuevos.",
+      "Amante de la cultura: museos, mercados, historia y comida son tu brújula."
+     ],
+     "q": "¿Qué estilo se parece más a ti ahora mismo?",
+     "c": "Imagina tu día perfecto en solitario y descríbelo en tres frases."
+    },
+    "fr": {
+     "t": "Ton style de voyage en solo",
+     "g": "Découvre quel voyageur solo tu es, pour organiser des voyages qui te plaisent vraiment.",
+     "p": [
+      "Explorateur : tu adores marcher, dénicher des coins cachés et dire oui aux surprises.",
+      "Contemplatif ou sociable : journées calmes avec un livre, ou auberges pleines d’amis.",
+      "Amoureux de culture : musées, marchés, histoire et cuisine sont ta boussole."
+     ],
+     "q": "Quel style te ressemble le plus en ce moment ?",
+     "c": "Imagine ta journée solo idéale et décris-la en trois phrases."
+    },
+    "it": {
+     "t": "Il tuo stile di viaggio da solo",
+     "g": "Scopri che tipo di viaggiatore solitario sei, per organizzare viaggi che ami davvero.",
+     "p": [
+      "Esploratore: ami camminare, scovare angoli nascosti e dire sì alle sorprese.",
+      "Rilassato o socievole: giornate lente con un libro o ostelli pieni di nuovi amici.",
+      "Amante della cultura: musei, mercati, storia e cibo sono la tua bussola."
+     ],
+     "q": "Quale stile ti somiglia di più in questo momento?",
+     "c": "Immagina la tua giornata da solo perfetta e descrivila in tre frasi."
+    },
+    "pt": {
+     "t": "O teu estilo de viagem a solo",
+     "g": "Descobre que tipo de viajante a solo és, para planear viagens de que gostes mesmo.",
+     "p": [
+      "Explorador: adoras caminhar, descobrir recantos escondidos e dizer sim a surpresas.",
+      "Descontraído ou sociável: dias calmos com um livro ou hostels cheios de amigos novos.",
+      "Amante de cultura: museus, mercados, história e comida são a tua bússola."
+     ],
+     "q": "Que estilo se parece mais contigo neste momento?",
+     "c": "Imagina o teu dia perfeito a solo e descreve-o em três frases."
+    },
+    "pt_BR": {
+     "t": "Seu estilo de viagem solo",
+     "g": "Descubra que tipo de viajante solo você é, para planejar viagens de que goste de verdade.",
+     "p": [
+      "Explorador: você adora caminhar, achar cantinhos escondidos e dizer sim a surpresas.",
+      "Tranquilo ou social: dias calmos com um livro ou hostels cheios de amigos novos.",
+      "Amante de cultura: museus, mercados, história e comida são a sua bússola."
+     ],
+     "q": "Qual estilo mais combina com você agora?",
+     "c": "Imagine seu dia solo perfeito e descreva-o em três frases."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting small: a solo day trip",
+     "g": "Practise solo travel with an easy day out in a nearby town.",
+     "p": [
+      "Pick a town reachable by train or bus in an hour or two.",
+      "Choose one or two highlights, like a market, a museum or a viewpoint.",
+      "Notice how it feels to decide everything yourself, from lunch to the way back."
+     ],
+     "q": "Which nearby town could you visit alone for a day?",
+     "c": "Look up the transport to a nearby town and pick one thing to see there."
+    },
+    "de": {
+     "t": "Klein anfangen: ein Solo-Tagesausflug",
+     "g": "Übe das Alleinreisen mit einem einfachen Tagesausflug in eine Stadt in der Nähe.",
+     "p": [
+      "Wähle einen Ort, den du in ein bis zwei Stunden mit Zug oder Bus erreichst.",
+      "Plane ein oder zwei Höhepunkte, etwa einen Markt, ein Museum oder einen Aussichtspunkt.",
+      "Achte darauf, wie es sich anfühlt, alles selbst zu entscheiden."
+     ],
+     "q": "Welche Stadt in der Nähe könntest du allein für einen Tag besuchen?",
+     "c": "Such die Verbindung in eine nahe Stadt heraus und wähle ein Ziel dort."
+    },
+    "es": {
+     "t": "Empezar poco a poco: una excursión de un día",
+     "g": "Practica viajar solo con una salida sencilla a un pueblo o ciudad cercana.",
+     "p": [
+      "Elige un lugar al que llegues en tren o autobús en una o dos horas.",
+      "Escoge uno o dos planes, como un mercado, un museo o un mirador.",
+      "Fíjate en cómo se siente decidirlo todo tú, del almuerzo a la vuelta."
+     ],
+     "q": "¿Qué ciudad cercana podrías visitar sola o solo durante un día?",
+     "c": "Busca el transporte a una ciudad cercana y elige algo que ver allí."
+    },
+    "fr": {
+     "t": "Commencer petit : une journée en solo",
+     "g": "Entraîne-toi au voyage en solo avec une sortie facile dans une ville proche.",
+     "p": [
+      "Choisis une ville accessible en train ou en bus en une ou deux heures.",
+      "Prévois un ou deux temps forts : un marché, un musée ou un point de vue.",
+      "Observe ce que l’on ressent à tout décider soi-même, du déjeuner au retour."
+     ],
+     "q": "Quelle ville proche pourrais-tu visiter seul pour une journée ?",
+     "c": "Cherche le trajet vers une ville voisine et choisis une chose à y voir."
+    },
+    "it": {
+     "t": "Iniziare in piccolo: una gita di un giorno",
+     "g": "Allenati a viaggiare da solo con una gita facile in una città vicina.",
+     "p": [
+      "Scegli un posto raggiungibile in treno o autobus in una o due ore.",
+      "Punta su una o due attrazioni, come un mercato, un museo o un belvedere.",
+      "Nota come ci si sente a decidere tutto da soli, dal pranzo al ritorno."
+     ],
+     "q": "Quale città vicina potresti visitare da solo per un giorno?",
+     "c": "Cerca come raggiungere una città vicina e scegli una cosa da vedere."
+    },
+    "pt": {
+     "t": "Começar devagar: um passeio de um dia",
+     "g": "Pratica viajar a solo com um passeio simples a uma cidade próxima.",
+     "p": [
+      "Escolhe um sítio a uma ou duas horas de comboio ou autocarro.",
+      "Escolhe um ou dois destaques, como um mercado, um museu ou um miradouro.",
+      "Repara como é decidir tudo sozinho, do almoço ao regresso."
+     ],
+     "q": "Que cidade perto de ti podias visitar sozinho durante um dia?",
+     "c": "Vê os transportes para uma cidade próxima e escolhe uma coisa para ver."
+    },
+    "pt_BR": {
+     "t": "Começando pequeno: um bate-volta solo",
+     "g": "Pratique viajar sozinho com um passeio fácil de um dia a uma cidade próxima.",
+     "p": [
+      "Escolha um lugar a uma ou duas horas de trem ou ônibus.",
+      "Escolha um ou dois destaques, como um mercado, um museu ou um mirante.",
+      "Perceba como é decidir tudo sozinho, do almoço à volta."
+     ],
+     "q": "Que cidade perto de você daria para visitar sozinho em um dia?",
+     "c": "Pesquise o transporte até uma cidade próxima e escolha algo para ver."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A solo weekend nearby",
+     "g": "Take a short trip close to home to build your confidence step by step.",
+     "p": [
+      "One or two nights is enough to practise checking in, eating out and exploring alone.",
+      "Staying close means familiar language, money and transport, so less stress.",
+      "Plan a mix of one fixed activity and plenty of free time to wander."
+     ],
+     "q": "Where could you spend a relaxed solo weekend not far from home?",
+     "c": "Make a mini plan: where to sleep, one must-see and one meal to try."
+    },
+    "de": {
+     "t": "Ein Solo-Wochenende in der Nähe",
+     "g": "Mach eine kurze Reise nah an zu Hause, um dein Selbstvertrauen Schritt für Schritt zu stärken.",
+     "p": [
+      "Ein oder zwei Nächte reichen, um Einchecken, Essengehen und Erkunden allein zu üben.",
+      "In der Nähe sind Sprache, Geld und Verkehr vertraut, also weniger Stress.",
+      "Plane eine feste Aktivität und viel freie Zeit zum Bummeln."
+     ],
+     "q": "Wo könntest du ein entspanntes Solo-Wochenende nicht weit von zu Hause verbringen?",
+     "c": "Mach einen Miniplan: Unterkunft, ein Muss und ein Gericht zum Probieren."
+    },
+    "es": {
+     "t": "Un fin de semana solo cerca de casa",
+     "g": "Haz un viaje corto cerca de casa para ganar confianza paso a paso.",
+     "p": [
+      "Una o dos noches bastan para practicar el check-in, comer fuera y explorar solo.",
+      "Cerca de casa el idioma, el dinero y el transporte son conocidos: menos estrés.",
+      "Combina una actividad fija con mucho tiempo libre para pasear."
+     ],
+     "q": "¿Dónde podrías pasar un fin de semana tranquilo en solitario cerca de casa?",
+     "c": "Haz un miniplan: dónde dormir, una visita imprescindible y un plato que probar."
+    },
+    "fr": {
+     "t": "Un week-end solo pas loin",
+     "g": "Fais un court voyage près de chez toi pour gagner confiance pas à pas.",
+     "p": [
+      "Une ou deux nuits suffisent pour t’exercer à l’arrivée, au resto et à l’exploration.",
+      "Rester proche, c’est garder langue, monnaie et transports connus : moins de stress.",
+      "Prévois une activité fixe et beaucoup de temps libre pour flâner."
+     ],
+     "q": "Où pourrais-tu passer un week-end solo tranquille pas trop loin de chez toi ?",
+     "c": "Fais un mini-plan : où dormir, un incontournable et un plat à goûter."
+    },
+    "it": {
+     "t": "Un weekend da solo vicino a casa",
+     "g": "Fai un breve viaggio vicino a casa per costruire la fiducia passo dopo passo.",
+     "p": [
+      "Una o due notti bastano per provare check-in, cene fuori ed esplorazioni da solo.",
+      "Restando vicino, lingua, soldi e trasporti sono familiari: meno stress.",
+      "Combina un’attività fissa con tanto tempo libero per passeggiare."
+     ],
+     "q": "Dove potresti passare un weekend rilassante da solo non lontano da casa?",
+     "c": "Fai un mini piano: dove dormire, una cosa da vedere e un piatto da provare."
+    },
+    "pt": {
+     "t": "Um fim de semana a solo por perto",
+     "g": "Faz uma viagem curta perto de casa para ganhar confiança passo a passo.",
+     "p": [
+      "Uma ou duas noites chegam para praticar o check-in, comer fora e explorar sozinho.",
+      "Perto de casa, a língua, o dinheiro e os transportes são conhecidos: menos stress.",
+      "Junta uma atividade fixa com muito tempo livre para passear."
+     ],
+     "q": "Onde podias passar um fim de semana descontraído a solo perto de casa?",
+     "c": "Faz um miniplano: onde dormir, um ponto obrigatório e um prato para provar."
+    },
+    "pt_BR": {
+     "t": "Um fim de semana solo por perto",
+     "g": "Faça uma viagem curta perto de casa para ganhar confiança passo a passo.",
+     "p": [
+      "Uma ou duas noites bastam para treinar o check-in, comer fora e explorar sozinho.",
+      "Perto de casa, idioma, dinheiro e transporte são conhecidos: menos estresse.",
+      "Combine uma atividade fixa com bastante tempo livre para passear."
+     ],
+     "q": "Onde você poderia passar um fim de semana solo tranquilo perto de casa?",
+     "c": "Faça um miniplano: onde dormir, um passeio imperdível e um prato para provar."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing your first destination",
+     "g": "Learn what to look for in a first solo destination so your trip starts on easy mode.",
+     "p": [
+      "Easy transport from the airport or station makes arrival much simpler.",
+      "A friendly, welcoming vibe and many visitors mean help is never far away.",
+      "Good services, like clear signs, cafés and pharmacies, make daily life smooth."
+     ],
+     "q": "What matters most to you when choosing a first solo destination?",
+     "c": "List two destinations and compare them on transport, vibe and services."
+    },
+    "de": {
+     "t": "Dein erstes Reiseziel wählen",
+     "g": "Lerne, worauf du bei deinem ersten Solo-Ziel achten solltest, damit die Reise leicht beginnt.",
+     "p": [
+      "Gute Verbindungen vom Flughafen oder Bahnhof machen die Ankunft viel einfacher.",
+      "Eine freundliche Atmosphäre und viele Besucher bedeuten, dass Hilfe nie weit ist.",
+      "Gute Infrastruktur wie klare Schilder, Cafés und Apotheken erleichtert den Alltag."
+     ],
+     "q": "Was ist dir bei deinem ersten Solo-Ziel am wichtigsten?",
+     "c": "Vergleiche zwei Ziele nach Verkehr, Atmosphäre und Infrastruktur."
+    },
+    "es": {
+     "t": "Elegir tu primer destino",
+     "g": "Aprende qué buscar en un primer destino en solitario para que el viaje empiece fácil.",
+     "p": [
+      "Un buen transporte desde el aeropuerto o la estación simplifica mucho la llegada.",
+      "Un ambiente acogedor y muchos visitantes significan que la ayuda nunca está lejos.",
+      "Buenos servicios, como señales claras, cafés y farmacias, facilitan el día a día."
+     ],
+     "q": "¿Qué es lo más importante para ti al elegir tu primer destino en solitario?",
+     "c": "Compara dos destinos según transporte, ambiente y servicios."
+    },
+    "fr": {
+     "t": "Choisir ta première destination",
+     "g": "Apprends quoi chercher dans une première destination solo pour un départ en douceur.",
+     "p": [
+      "Des transports simples depuis l’aéroport ou la gare facilitent beaucoup l’arrivée.",
+      "Une ambiance accueillante et de nombreux visiteurs : l’aide n’est jamais loin.",
+      "De bons services, panneaux clairs, cafés, pharmacies, rendent le quotidien fluide."
+     ],
+     "q": "Qu’est-ce qui compte le plus pour toi dans une première destination solo ?",
+     "c": "Compare deux destinations selon les transports, l’ambiance et les services."
+    },
+    "it": {
+     "t": "Scegliere la prima destinazione",
+     "g": "Impara cosa cercare in una prima meta da solo, così il viaggio parte in modalità facile.",
+     "p": [
+      "Trasporti semplici da aeroporto o stazione rendono l’arrivo molto più facile.",
+      "Un’atmosfera accogliente e tanti visitatori significano che l’aiuto è sempre vicino.",
+      "Buoni servizi, come cartelli chiari, bar e farmacie, rendono facile la vita quotidiana."
+     ],
+     "q": "Cosa conta di più per te nella scelta della prima meta da solo?",
+     "c": "Confronta due mete per trasporti, atmosfera e servizi."
+    },
+    "pt": {
+     "t": "Escolher o primeiro destino",
+     "g": "Aprende o que procurar num primeiro destino a solo para a viagem começar de forma fácil.",
+     "p": [
+      "Bons transportes desde o aeroporto ou a estação tornam a chegada muito mais simples.",
+      "Um ambiente acolhedor e muitos visitantes significam ajuda sempre por perto.",
+      "Bons serviços, como sinalética clara, cafés e farmácias, facilitam o dia a dia."
+     ],
+     "q": "O que é mais importante para ti ao escolher o primeiro destino a solo?",
+     "c": "Compara dois destinos em transportes, ambiente e serviços."
+    },
+    "pt_BR": {
+     "t": "Escolhendo seu primeiro destino",
+     "g": "Aprenda o que buscar num primeiro destino solo para a viagem começar no modo fácil.",
+     "p": [
+      "Um bom transporte desde o aeroporto ou a rodoviária deixa a chegada muito mais simples.",
+      "Um clima acolhedor e muitos visitantes significam ajuda sempre por perto.",
+      "Bons serviços, como placas claras, cafés e farmácias, facilitam o dia a dia."
+     ],
+     "q": "O que mais importa para você ao escolher o primeiro destino solo?",
+     "c": "Compare dois destinos em transporte, clima do lugar e serviços."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a place solo-friendly",
+     "g": "Recognise the signs of a destination where travelling alone feels easy and fun.",
+     "p": [
+      "Reliable public transport lets you move freely without needing a car or a group.",
+      "Helpful locals and common languages make asking for directions easy.",
+      "A lively traveller scene, with walking tours and social hostels, makes meeting people easy."
+     ],
+     "q": "Have you ever been somewhere that felt easy to explore alone? What made it so?",
+     "c": "Search for walking tours in a city you like and note one that appeals to you."
+    },
+    "de": {
+     "t": "Was einen Ort solo-freundlich macht",
+     "g": "Erkenne die Zeichen eines Ziels, an dem Alleinreisen leicht und schön ist.",
+     "p": [
+      "Zuverlässiger Nahverkehr lässt dich frei bewegen, ohne Auto oder Gruppe.",
+      "Hilfsbereite Einheimische und verbreitete Sprachen machen Fragen leicht.",
+      "Eine lebendige Reiseszene mit Stadtführungen und Hostels erleichtert neue Kontakte."
+     ],
+     "q": "Warst du schon an einem Ort, der sich allein leicht erkunden ließ? Warum?",
+     "c": "Such Stadtführungen in einer Stadt, die du magst, und merk dir eine."
+    },
+    "es": {
+     "t": "Qué hace a un lugar ideal para ir solo",
+     "g": "Reconoce las señales de un destino donde viajar solo resulta fácil y divertido.",
+     "p": [
+      "Un transporte público fiable te permite moverte libremente sin coche ni grupo.",
+      "Gente local amable e idiomas comunes facilitan pedir indicaciones.",
+      "Un ambiente viajero animado, con free tours y albergues sociales, facilita conocer gente."
+     ],
+     "q": "¿Has estado en algún lugar fácil de explorar solo? ¿Qué lo hacía así?",
+     "c": "Busca visitas guiadas a pie en una ciudad que te guste y apunta una."
+    },
+    "fr": {
+     "t": "Ce qui rend un lieu idéal en solo",
+     "g": "Reconnais les signes d’une destination où voyager seul est facile et agréable.",
+     "p": [
+      "Des transports publics fiables te permettent de bouger librement, sans voiture ni groupe.",
+      "Des habitants serviables et des langues répandues rendent les questions faciles.",
+      "Une scène voyageuse animée, visites à pied et auberges conviviales, aide à faire des rencontres."
+     ],
+     "q": "As-tu déjà visité un lieu facile à explorer seul ? Qu’est-ce qui le rendait ainsi ?",
+     "c": "Cherche des visites à pied dans une ville qui te plaît et notes-en une."
+    },
+    "it": {
+     "t": "Cosa rende un posto adatto a chi è solo",
+     "g": "Riconosci i segnali di una meta dove viaggiare da soli è facile e divertente.",
+     "p": [
+      "Trasporti pubblici affidabili ti fanno muovere liberamente, senza auto né gruppo.",
+      "Gente del posto disponibile e lingue diffuse rendono facile chiedere indicazioni.",
+      "Una scena viaggiatrice vivace, con tour a piedi e ostelli sociali, aiuta a conoscere gente."
+     ],
+     "q": "Sei mai stato in un posto facile da esplorare da solo? Cosa lo rendeva così?",
+     "c": "Cerca dei tour a piedi in una città che ti piace e annotane uno."
+    },
+    "pt": {
+     "t": "O que torna um lugar bom para ir a solo",
+     "g": "Reconhece os sinais de um destino onde viajar sozinho é fácil e divertido.",
+     "p": [
+      "Transportes públicos fiáveis deixam-te circular à vontade, sem carro nem grupo.",
+      "Locais prestáveis e línguas comuns tornam fácil pedir indicações.",
+      "Um ambiente viajante animado, com visitas a pé e hostels sociais, facilita conhecer gente."
+     ],
+     "q": "Já estiveste num sítio fácil de explorar sozinho? O que o tornava assim?",
+     "c": "Procura visitas a pé numa cidade de que gostes e aponta uma."
+    },
+    "pt_BR": {
+     "t": "O que torna um lugar bom para viajar solo",
+     "g": "Reconheça os sinais de um destino onde viajar sozinho é fácil e divertido.",
+     "p": [
+      "Transporte público confiável deixa você circular à vontade, sem carro nem grupo.",
+      "Moradores prestativos e idiomas comuns facilitam pedir informação.",
+      "Um clima viajante animado, com walking tours e hostels sociais, facilita conhecer gente."
+     ],
+     "q": "Você já esteve num lugar fácil de explorar sozinho? O que o tornava assim?",
+     "c": "Procure walking tours numa cidade de que goste e anote um."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When to travel",
+     "g": "See how seasons, crowds and weather shape the feel of a solo trip.",
+     "p": [
+      "High season brings buzz and company, but also crowds and fuller bookings.",
+      "Shoulder seasons, just before or after the peak, often mean mild weather and calmer streets.",
+      "Check local holidays and rainy seasons so your plans fit the place."
+     ],
+     "q": "Do you prefer lively crowds or quiet streets when you travel?",
+     "c": "Look up the best months to visit a place on your wish list."
+    },
+    "de": {
+     "t": "Wann reisen?",
+     "g": "Sieh dir an, wie Jahreszeiten, Andrang und Wetter eine Solo-Reise prägen.",
+     "p": [
+      "Die Hochsaison bringt Trubel und Gesellschaft, aber auch volle Orte und Unterkünfte.",
+      "Die Nebensaison kurz vor oder nach der Spitze bietet oft mildes Wetter und ruhigere Straßen.",
+      "Prüfe Feiertage und Regenzeiten, damit deine Pläne zum Ort passen."
+     ],
+     "q": "Magst du auf Reisen lieber Trubel oder ruhige Straßen?",
+     "c": "Finde die besten Reisemonate für ein Ziel auf deiner Wunschliste heraus."
+    },
+    "es": {
+     "t": "Cuándo viajar",
+     "g": "Mira cómo las estaciones, la afluencia y el clima marcan un viaje en solitario.",
+     "p": [
+      "La temporada alta trae ambiente y compañía, pero también multitudes y menos plazas.",
+      "La temporada media, justo antes o después del pico, suele dar buen tiempo y calles tranquilas.",
+      "Revisa las fiestas locales y la época de lluvias para que tus planes encajen."
+     ],
+     "q": "¿Prefieres el bullicio o las calles tranquilas cuando viajas?",
+     "c": "Busca los mejores meses para visitar un lugar de tu lista de deseos."
+    },
+    "fr": {
+     "t": "Quand partir",
+     "g": "Vois comment saisons, affluence et météo façonnent un voyage en solo.",
+     "p": [
+      "La haute saison apporte animation et compagnie, mais aussi foule et logements pleins.",
+      "L’intersaison, juste avant ou après le pic, offre souvent un temps doux et des rues calmes.",
+      "Vérifie les fêtes locales et les saisons des pluies pour adapter tes plans."
+     ],
+     "q": "Préfères-tu l’animation ou les rues calmes quand tu voyages ?",
+     "c": "Cherche les meilleurs mois pour visiter un lieu de ta liste d’envies."
+    },
+    "it": {
+     "t": "Quando partire",
+     "g": "Scopri come stagioni, folla e clima cambiano un viaggio da solo.",
+     "p": [
+      "L’alta stagione porta vivacità e compagnia, ma anche folla e alloggi pieni.",
+      "La mezza stagione, poco prima o dopo il picco, offre spesso clima mite e strade tranquille.",
+      "Controlla feste locali e stagioni delle piogge perché i piani si adattino al posto."
+     ],
+     "q": "In viaggio preferisci la folla vivace o le strade tranquille?",
+     "c": "Cerca i mesi migliori per visitare un posto della tua lista dei desideri."
+    },
+    "pt": {
+     "t": "Quando viajar",
+     "g": "Vê como as estações, a afluência e o tempo moldam uma viagem a solo.",
+     "p": [
+      "A época alta traz animação e companhia, mas também multidões e menos vagas.",
+      "A época intermédia, antes ou depois do pico, costuma ter tempo ameno e ruas calmas.",
+      "Confirma feriados locais e épocas de chuva para os planos se ajustarem ao lugar."
+     ],
+     "q": "Preferes animação ou ruas calmas quando viajas?",
+     "c": "Procura os melhores meses para visitar um lugar da tua lista de desejos."
+    },
+    "pt_BR": {
+     "t": "Quando viajar",
+     "g": "Veja como estações, movimento e clima moldam uma viagem solo.",
+     "p": [
+      "A alta temporada traz agito e companhia, mas também multidões e menos vagas.",
+      "A média temporada, antes ou depois do pico, costuma ter clima ameno e ruas tranquilas.",
+      "Confira feriados locais e épocas de chuva para seus planos combinarem com o lugar."
+     ],
+     "q": "Você prefere agito ou ruas tranquilas quando viaja?",
+     "c": "Pesquise os melhores meses para visitar um lugar da sua lista de desejos."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a simple budget",
+     "g": "Build a simple solo trip budget so you can enjoy your days without money worries.",
+     "p": [
+      "Split it into four parts: accommodation, food, transport and activities.",
+      "Add a small cushion for surprises, like a taxi in the rain or a museum you did not plan.",
+      "Remember that alone you pay for everything yourself, so track daily spending."
+     ],
+     "q": "Which part of a trip do you most like to spend money on?",
+     "c": "Make a four-line budget for a short trip, plus one line for surprises."
+    },
+    "de": {
+     "t": "Ein einfaches Budget planen",
+     "g": "Erstelle ein einfaches Budget, damit du deine Tage ohne Geldsorgen genießen kannst.",
+     "p": [
+      "Teile es in vier Teile: Unterkunft, Essen, Verkehr und Aktivitäten.",
+      "Plane einen kleinen Puffer für Überraschungen ein, etwa ein Taxi bei Regen.",
+      "Allein zahlst du alles selbst, also behalte deine täglichen Ausgaben im Blick."
+     ],
+     "q": "Wofür gibst du auf Reisen am liebsten Geld aus?",
+     "c": "Schreib ein Budget mit vier Zeilen für eine kurze Reise, plus eine für Überraschungen."
+    },
+    "es": {
+     "t": "Un presupuesto sencillo",
+     "g": "Crea un presupuesto sencillo para disfrutar del viaje sin preocuparte por el dinero.",
+     "p": [
+      "Divídelo en cuatro partes: alojamiento, comida, transporte y actividades.",
+      "Añade un pequeño colchón para imprevistos, como un taxi bajo la lluvia.",
+      "Viajando solo lo pagas todo tú, así que apunta lo que gastas cada día."
+     ],
+     "q": "¿En qué parte del viaje te gusta más gastar?",
+     "c": "Haz un presupuesto de cuatro líneas para un viaje corto, más una para imprevistos."
+    },
+    "fr": {
+     "t": "Fixer un budget simple",
+     "g": "Établis un budget simple pour profiter de ton voyage sans soucis d’argent.",
+     "p": [
+      "Divise-le en quatre : hébergement, repas, transports et activités.",
+      "Ajoute une petite marge pour les imprévus, comme un taxi sous la pluie.",
+      "Seul, tu paies tout toi-même : note tes dépenses chaque jour."
+     ],
+     "q": "Pour quelle partie d’un voyage aimes-tu le plus dépenser ?",
+     "c": "Fais un budget en quatre lignes pour un court voyage, plus une pour les imprévus."
+    },
+    "it": {
+     "t": "Un budget semplice",
+     "g": "Crea un budget semplice per goderti il viaggio senza pensieri sui soldi.",
+     "p": [
+      "Dividilo in quattro voci: alloggio, cibo, trasporti e attività.",
+      "Aggiungi un piccolo cuscinetto per gli imprevisti, come un taxi sotto la pioggia.",
+      "Da solo paghi tutto tu, quindi annota le spese di ogni giorno."
+     ],
+     "q": "Per quale parte del viaggio ti piace di più spendere?",
+     "c": "Scrivi un budget in quattro righe per un viaggio breve, più una per gli imprevisti."
+    },
+    "pt": {
+     "t": "Definir um orçamento simples",
+     "g": "Cria um orçamento simples para aproveitar a viagem sem preocupações com dinheiro.",
+     "p": [
+      "Divide-o em quatro partes: alojamento, comida, transportes e atividades.",
+      "Junta uma pequena margem para imprevistos, como um táxi à chuva.",
+      "Sozinho pagas tudo tu, por isso aponta os gastos de cada dia."
+     ],
+     "q": "Em que parte da viagem gostas mais de gastar?",
+     "c": "Faz um orçamento de quatro linhas para uma viagem curta, mais uma para imprevistos."
+    },
+    "pt_BR": {
+     "t": "Montando um orçamento simples",
+     "g": "Monte um orçamento simples para curtir a viagem sem se preocupar com dinheiro.",
+     "p": [
+      "Divida em quatro partes: hospedagem, comida, transporte e passeios.",
+      "Inclua uma pequena reserva para imprevistos, como um táxi na chuva.",
+      "Sozinho, você paga tudo, então anote os gastos de cada dia."
+     ],
+     "q": "Em qual parte da viagem você mais gosta de gastar?",
+     "c": "Faça um orçamento de quatro linhas para uma viagem curta, mais uma para imprevistos."
+    }
+   }
+  }
+ ]
+}

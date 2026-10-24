@@ -1,0 +1,835 @@
+{
+ "topic": "backpacking",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is backpacking?",
+     "g": "Understand what backpacking is: independent, flexible travel with everything you need carried on your back.",
+     "p": [
+      "Backpacking means travelling independently, often for longer, with one bag you can carry anywhere.",
+      "You choose your own pace, sleep in simple places like hostels and decide your route as you go.",
+      "People love it for the freedom, the low-key style and the many people they meet along the way."
+     ],
+     "q": "Have you ever travelled with just a backpack, or is this your very first step into it?",
+     "c": "Write one sentence about what freedom on the road would mean to you."
+    },
+    "de": {
+     "t": "Was ist Backpacking?",
+     "g": "Verstehe, was Backpacking ist: unabhängiges, flexibles Reisen mit allem Nötigen auf dem Rücken.",
+     "p": [
+      "Backpacking heißt, selbstständig zu reisen, oft länger, mit einem Rucksack, den du überallhin trägst.",
+      "Du bestimmst dein Tempo, schläfst in einfachen Unterkünften wie Hostels und planst die Route unterwegs.",
+      "Viele lieben die Freiheit, den lockeren Stil und die vielen Menschen, die man unterwegs trifft."
+     ],
+     "q": "Bist du schon einmal nur mit Rucksack gereist, oder ist das dein allererster Schritt?",
+     "c": "Schreib einen Satz darüber, was Freiheit unterwegs für dich bedeuten würde."
+    },
+    "es": {
+     "t": "¿Qué es viajar de mochilero?",
+     "g": "Entiende qué es el mochilerismo: viajar de forma independiente y flexible con todo lo necesario a la espalda.",
+     "p": [
+      "Ser mochilero es viajar por tu cuenta, a menudo más tiempo, con una sola mochila que llevas a todas partes.",
+      "Tú eliges el ritmo, duermes en sitios sencillos como albergues y decides la ruta sobre la marcha.",
+      "Mucha gente lo adora por la libertad, el estilo sencillo y la cantidad de personas que conoce."
+     ],
+     "q": "¿Has viajado alguna vez solo con una mochila o este es tu primer paso?",
+     "c": "Escribe una frase sobre lo que significaría para ti la libertad en el camino."
+    },
+    "fr": {
+     "t": "Le backpacking, c'est quoi ?",
+     "g": "Comprends ce qu'est le backpacking : voyager libre et en autonomie, avec tout le nécessaire sur le dos.",
+     "p": [
+      "Faire du backpacking, c'est voyager en autonomie, souvent longtemps, avec un seul sac que tu portes partout.",
+      "Tu choisis ton rythme, dors dans des lieux simples comme les auberges et décides ton itinéraire en route.",
+      "On l'adore pour la liberté, le style décontracté et toutes les rencontres faites en chemin."
+     ],
+     "q": "As-tu déjà voyagé avec seulement un sac à dos, ou est-ce ton tout premier pas ?",
+     "c": "Écris une phrase sur ce que la liberté sur la route signifierait pour toi."
+    },
+    "it": {
+     "t": "Cos'è il backpacking?",
+     "g": "Capisci cos'è il backpacking: viaggiare in modo indipendente e flessibile con tutto il necessario sulle spalle.",
+     "p": [
+      "Fare backpacking significa viaggiare da soli, spesso a lungo, con un unico zaino da portare ovunque.",
+      "Scegli tu il ritmo, dormi in posti semplici come gli ostelli e decidi il percorso strada facendo.",
+      "Piace a tanti per la libertà, lo stile informale e le tante persone che si incontrano lungo la via."
+     ],
+     "q": "Hai mai viaggiato solo con uno zaino, o questo è il tuo primissimo passo?",
+     "c": "Scrivi una frase su cosa significherebbe per te la libertà in viaggio."
+    },
+    "pt": {
+     "t": "O que é viajar de mochila?",
+     "g": "Percebe o que é o backpacking: viajar de forma independente e flexível, com tudo o que precisas às costas.",
+     "p": [
+      "Viajar de mochila é viajar por conta própria, muitas vezes mais tempo, com um só saco que levas para todo o lado.",
+      "Escolhes o teu ritmo, dormes em sítios simples como hostels e decides o percurso pelo caminho.",
+      "Muita gente adora pela liberdade, pelo estilo descontraído e pelas pessoas que conhece pelo caminho."
+     ],
+     "q": "Já viajaste só com uma mochila, ou este é o teu primeiro passo?",
+     "c": "Escreve uma frase sobre o que a liberdade na estrada significaria para ti."
+    },
+    "pt_BR": {
+     "t": "O que é ser mochileiro?",
+     "g": "Entenda o que é mochilão: viajar de forma independente e flexível, com tudo o que você precisa nas costas.",
+     "p": [
+      "Fazer mochilão é viajar por conta própria, muitas vezes por mais tempo, com uma mochila que vai a todo lugar.",
+      "Você escolhe o ritmo, dorme em lugares simples como hostels e decide o roteiro no caminho.",
+      "Muita gente ama pela liberdade, pelo estilo descontraído e pelas pessoas que conhece na estrada."
+     ],
+     "q": "Você já viajou só com uma mochila, ou este é o seu primeiro passo?",
+     "c": "Escreva uma frase sobre o que liberdade na estrada significaria para você."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The backpacker spirit",
+     "g": "Discover why curiosity, openness and flexibility matter more than any piece of gear you could buy.",
+     "p": [
+      "Curiosity turns a missed bus or a strange dish into a story instead of a problem.",
+      "Openness helps you meet locals and fellow travellers, and to accept different ways of doing things.",
+      "Flexibility keeps you relaxed when plans change, which they often will on the road."
+     ],
+     "q": "Which of the three feels most natural to you: curiosity, openness or flexibility?",
+     "c": "Today, try one small new thing: a different route home, a new food or a chat with someone new."
+    },
+    "de": {
+     "t": "Der Backpacker-Geist",
+     "g": "Entdecke, warum Neugier, Offenheit und Flexibilität wichtiger sind als jede Ausrüstung, die du kaufen kannst.",
+     "p": [
+      "Neugier macht aus einem verpassten Bus oder einem fremden Gericht eine Geschichte statt ein Problem.",
+      "Offenheit hilft dir, Einheimische und Mitreisende kennenzulernen und andere Gewohnheiten anzunehmen.",
+      "Flexibilität hält dich gelassen, wenn sich Pläne ändern, und das passiert unterwegs oft."
+     ],
+     "q": "Was liegt dir am meisten: Neugier, Offenheit oder Flexibilität?",
+     "c": "Probier heute etwas Kleines, Neues aus: einen anderen Heimweg, ein neues Essen oder ein Gespräch."
+    },
+    "es": {
+     "t": "El espíritu mochilero",
+     "g": "Descubre por qué la curiosidad, la apertura y la flexibilidad valen más que cualquier equipo que compres.",
+     "p": [
+      "La curiosidad convierte un autobús perdido o un plato raro en una historia, no en un problema.",
+      "La apertura te ayuda a conocer gente local y viajeros, y a aceptar otras formas de hacer las cosas.",
+      "La flexibilidad te mantiene tranquilo cuando cambian los planes, algo que pasa a menudo en el camino."
+     ],
+     "q": "¿Cuál te sale más natural: la curiosidad, la apertura o la flexibilidad?",
+     "c": "Hoy prueba algo pequeño y nuevo: otro camino a casa, una comida distinta o charlar con alguien."
+    },
+    "fr": {
+     "t": "L'esprit backpacker",
+     "g": "Découvre pourquoi la curiosité, l'ouverture et la souplesse comptent plus que tout l'équipement du monde.",
+     "p": [
+      "La curiosité transforme un bus raté ou un plat étrange en histoire plutôt qu'en problème.",
+      "L'ouverture t'aide à rencontrer habitants et voyageurs, et à accepter d'autres façons de faire.",
+      "La souplesse te garde serein quand les plans changent, ce qui arrive souvent en route."
+     ],
+     "q": "Laquelle te ressemble le plus : la curiosité, l'ouverture ou la souplesse ?",
+     "c": "Aujourd'hui, essaie une petite nouveauté : un autre trajet, un plat inconnu ou une discussion."
+    },
+    "it": {
+     "t": "Lo spirito del backpacker",
+     "g": "Scopri perché curiosità, apertura e flessibilità contano più di qualsiasi attrezzatura tu possa comprare.",
+     "p": [
+      "La curiosità trasforma un autobus perso o un piatto strano in una storia, non in un problema.",
+      "L'apertura ti aiuta a conoscere gente del posto e viaggiatori, e ad accettare modi diversi di fare.",
+      "La flessibilità ti mantiene sereno quando i piani cambiano, cosa che in viaggio succede spesso."
+     ],
+     "q": "Quale ti viene più naturale: curiosità, apertura o flessibilità?",
+     "c": "Oggi prova una piccola novità: una strada diversa per tornare a casa, un cibo nuovo o due chiacchiere."
+    },
+    "pt": {
+     "t": "O espírito mochileiro",
+     "g": "Descobre porque a curiosidade, a abertura e a flexibilidade valem mais do que qualquer equipamento.",
+     "p": [
+      "A curiosidade transforma um autocarro perdido ou um prato estranho numa história, não num problema.",
+      "A abertura ajuda-te a conhecer locais e viajantes, e a aceitar outras maneiras de fazer as coisas.",
+      "A flexibilidade mantém-te calmo quando os planos mudam, o que acontece muitas vezes na estrada."
+     ],
+     "q": "Qual destas te sai mais natural: curiosidade, abertura ou flexibilidade?",
+     "c": "Hoje experimenta algo pequeno e novo: outro caminho para casa, uma comida diferente ou uma conversa."
+    },
+    "pt_BR": {
+     "t": "O espírito mochileiro",
+     "g": "Descubra por que curiosidade, abertura e flexibilidade valem mais do que qualquer equipamento.",
+     "p": [
+      "A curiosidade transforma um ônibus perdido ou um prato estranho numa história, não num problema.",
+      "A abertura ajuda você a conhecer moradores e viajantes, e a aceitar outros jeitos de fazer as coisas.",
+      "A flexibilidade deixa você tranquilo quando os planos mudam, o que acontece muito na estrada."
+     ],
+     "q": "Qual delas é mais natural para você: curiosidade, abertura ou flexibilidade?",
+     "c": "Hoje experimente algo pequeno e novo: outro caminho para casa, uma comida diferente ou um papo."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Classic routes at a glance",
+     "g": "Get a first look at famous backpacker circuits and why they became so popular.",
+     "p": [
+      "The Banana Pancake Trail loops through Southeast Asia, for example Thailand, Laos, Vietnam and Cambodia.",
+      "The Gringo Trail runs through Latin America, often linking Mexico, Peru, Bolivia and more.",
+      "Classic routes are easy for beginners: good transport, many hostels and lots of fellow travellers."
+     ],
+     "q": "Which of these regions sounds more exciting to you, Southeast Asia or Latin America?",
+     "c": "Find both routes on a map and pick one place on each that you would love to see."
+    },
+    "de": {
+     "t": "Klassische Routen im Überblick",
+     "g": "Wirf einen ersten Blick auf berühmte Backpacker-Routen und finde heraus, warum sie so beliebt sind.",
+     "p": [
+      "Der Banana Pancake Trail führt durch Südostasien, zum Beispiel Thailand, Laos, Vietnam und Kambodscha.",
+      "Der Gringo Trail zieht sich durch Lateinamerika und verbindet oft Mexiko, Peru, Bolivien und mehr.",
+      "Klassiker sind ideal für Einsteiger: guter Verkehr, viele Hostels und viele andere Reisende."
+     ],
+     "q": "Welche Region reizt dich mehr, Südostasien oder Lateinamerika?",
+     "c": "Such beide Routen auf einer Karte und wähle auf jeder einen Ort, den du gern sehen würdest."
+    },
+    "es": {
+     "t": "Rutas clásicas de un vistazo",
+     "g": "Echa un primer vistazo a los circuitos mochileros más famosos y a por qué se hicieron tan populares.",
+     "p": [
+      "El Banana Pancake Trail recorre el Sudeste Asiático, por ejemplo Tailandia, Laos, Vietnam y Camboya.",
+      "El Gringo Trail atraviesa América Latina y suele unir México, Perú, Bolivia y más.",
+      "Las rutas clásicas son fáciles para empezar: buen transporte, muchos albergues y muchos viajeros."
+     ],
+     "q": "¿Qué región te emociona más, el Sudeste Asiático o América Latina?",
+     "c": "Busca las dos rutas en un mapa y elige en cada una un lugar que te encantaría ver."
+    },
+    "fr": {
+     "t": "Les itinéraires classiques",
+     "g": "Découvre les circuits backpackers les plus célèbres et pourquoi ils sont devenus si populaires.",
+     "p": [
+      "Le Banana Pancake Trail fait le tour de l'Asie du Sud-Est, par exemple Thaïlande, Laos, Vietnam, Cambodge.",
+      "Le Gringo Trail traverse l'Amérique latine et relie souvent le Mexique, le Pérou, la Bolivie et plus.",
+      "Les classiques sont parfaits pour débuter : bons transports, nombreuses auberges, plein de voyageurs."
+     ],
+     "q": "Quelle région te fait le plus rêver, l'Asie du Sud-Est ou l'Amérique latine ?",
+     "c": "Repère les deux itinéraires sur une carte et choisis sur chacun un lieu que tu aimerais voir."
+    },
+    "it": {
+     "t": "Gli itinerari classici",
+     "g": "Dai un primo sguardo ai circuiti più famosi tra i backpacker e scopri perché sono così amati.",
+     "p": [
+      "Il Banana Pancake Trail gira per il Sud-est asiatico, per esempio Thailandia, Laos, Vietnam e Cambogia.",
+      "Il Gringo Trail attraversa l'America Latina e spesso collega Messico, Perù, Bolivia e altro.",
+      "I classici sono facili per chi inizia: buoni trasporti, tanti ostelli e tanti altri viaggiatori."
+     ],
+     "q": "Quale regione ti attira di più, il Sud-est asiatico o l'America Latina?",
+     "c": "Trova entrambi i percorsi su una mappa e scegli su ciascuno un posto che vorresti vedere."
+    },
+    "pt": {
+     "t": "Rotas clássicas num relance",
+     "g": "Dá uma primeira olhadela aos circuitos mochileiros mais famosos e ao porquê de serem tão populares.",
+     "p": [
+      "O Banana Pancake Trail percorre o Sudeste Asiático, por exemplo Tailândia, Laos, Vietname e Camboja.",
+      "O Gringo Trail atravessa a América Latina e liga muitas vezes o México, o Peru, a Bolívia e mais.",
+      "As rotas clássicas são fáceis para começar: bons transportes, muitos hostels e muitos viajantes."
+     ],
+     "q": "Que região te entusiasma mais, o Sudeste Asiático ou a América Latina?",
+     "c": "Procura as duas rotas num mapa e escolhe em cada uma um lugar que adorarias ver."
+    },
+    "pt_BR": {
+     "t": "Rotas clássicas num olhar",
+     "g": "Dê uma primeira olhada nos circuitos mochileiros mais famosos e entenda por que ficaram tão populares.",
+     "p": [
+      "O Banana Pancake Trail percorre o Sudeste Asiático, por exemplo Tailândia, Laos, Vietnã e Camboja.",
+      "O Gringo Trail atravessa a América Latina e costuma ligar México, Peru, Bolívia e mais.",
+      "As rotas clássicas são fáceis para começar: bom transporte, muitos hostels e muitos viajantes."
+     ],
+     "q": "Qual região empolga mais você, o Sudeste Asiático ou a América Latina?",
+     "c": "Procure as duas rotas num mapa e escolha em cada uma um lugar que você adoraria conhecer."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing your first trip",
+     "g": "Learn how to pick a beginner-friendly region with easy transport and plenty of hostels.",
+     "p": [
+      "Look for regions with frequent buses or trains, so getting around never feels hard.",
+      "Plenty of hostels means easy booking, fair choice and other travellers to share tips with.",
+      "Check visa rules, the weather season and safety advice from official sources before you choose."
+     ],
+     "q": "Is there a country or region already on your mind for a first backpacking trip?",
+     "c": "List three possible regions and give each a score for transport, hostels and season."
+    },
+    "de": {
+     "t": "Deine erste Reise wählen",
+     "g": "Lerne, eine einsteigerfreundliche Region mit gutem Verkehr und vielen Hostels auszuwählen.",
+     "p": [
+      "Such Regionen mit häufigen Bussen oder Zügen, damit das Vorankommen nie mühsam wird.",
+      "Viele Hostels heißen einfache Buchung, gute Auswahl und Mitreisende, die Tipps teilen.",
+      "Prüf vor der Wahl Visaregeln, die Reisezeit und Sicherheitshinweise aus offiziellen Quellen."
+     ],
+     "q": "Hast du schon ein Land oder eine Region für deine erste Backpacking-Reise im Kopf?",
+     "c": "Notier drei mögliche Regionen und bewerte jede nach Verkehr, Hostels und Reisezeit."
+    },
+    "es": {
+     "t": "Elegir tu primer viaje",
+     "g": "Aprende a elegir una región fácil para principiantes, con buen transporte y muchos albergues.",
+     "p": [
+      "Busca regiones con autobuses o trenes frecuentes, para que moverte nunca sea complicado.",
+      "Muchos albergues significan reservar fácil, buena variedad y viajeros con quienes compartir consejos.",
+      "Antes de decidir, revisa visados, la temporada y los avisos de seguridad de fuentes oficiales."
+     ],
+     "q": "¿Tienes ya en mente algún país o región para tu primer viaje de mochilero?",
+     "c": "Haz una lista de tres regiones y puntúa cada una en transporte, albergues y temporada."
+    },
+    "fr": {
+     "t": "Choisir ton premier voyage",
+     "g": "Apprends à choisir une région facile pour débuter, avec de bons transports et beaucoup d'auberges.",
+     "p": [
+      "Cherche des régions avec des bus ou des trains fréquents, pour te déplacer sans difficulté.",
+      "Beaucoup d'auberges, c'est réserver facilement, avoir du choix et des voyageurs pour partager des astuces.",
+      "Avant de choisir, vérifie les visas, la saison et les conseils de sécurité des sources officielles."
+     ],
+     "q": "As-tu déjà un pays ou une région en tête pour ton premier voyage sac au dos ?",
+     "c": "Liste trois régions possibles et note chacune pour les transports, les auberges et la saison."
+    },
+    "it": {
+     "t": "Scegliere il primo viaggio",
+     "g": "Impara a scegliere una regione adatta ai principianti, con trasporti facili e tanti ostelli.",
+     "p": [
+      "Cerca regioni con autobus o treni frequenti, così spostarti non sarà mai faticoso.",
+      "Tanti ostelli vogliono dire prenotare facilmente, scelta ampia e viaggiatori con cui scambiare consigli.",
+      "Prima di scegliere controlla visti, stagione e avvisi di sicurezza da fonti ufficiali."
+     ],
+     "q": "Hai già in mente un paese o una regione per il tuo primo viaggio zaino in spalla?",
+     "c": "Elenca tre regioni possibili e dai a ciascuna un voto per trasporti, ostelli e stagione."
+    },
+    "pt": {
+     "t": "Escolher a primeira viagem",
+     "g": "Aprende a escolher uma região fácil para principiantes, com bons transportes e muitos hostels.",
+     "p": [
+      "Procura regiões com autocarros ou comboios frequentes, para que deslocar-te nunca seja difícil.",
+      "Muitos hostels significam reservar com facilidade, boa escolha e viajantes para trocar dicas.",
+      "Antes de decidir, verifica vistos, a época do ano e os avisos de segurança de fontes oficiais."
+     ],
+     "q": "Já tens em mente um país ou região para a tua primeira viagem de mochila?",
+     "c": "Faz uma lista de três regiões e dá a cada uma uma nota para transportes, hostels e época."
+    },
+    "pt_BR": {
+     "t": "Escolhendo a primeira viagem",
+     "g": "Aprenda a escolher uma região fácil para iniciantes, com bom transporte e muitos hostels.",
+     "p": [
+      "Procure regiões com ônibus ou trens frequentes, para que se locomover nunca seja difícil.",
+      "Muitos hostels significam reservar fácil, boas opções e viajantes para trocar dicas.",
+      "Antes de decidir, confira vistos, a época do ano e os alertas de segurança de fontes oficiais."
+     ],
+     "q": "Você já tem em mente um país ou região para o seu primeiro mochilão?",
+     "c": "Liste três regiões possíveis e dê a cada uma uma nota para transporte, hostels e época."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How long should a trip be?",
+     "g": "See what a long weekend, two weeks or several months of backpacking each feel like.",
+     "p": [
+      "A long weekend is a perfect test: one city or region, little planning and a small bag.",
+      "Two weeks lets you link a few places and settle into the rhythm of life on the road.",
+      "Several months becomes a lifestyle: slower travel, budgets that stretch and room for detours."
+     ],
+     "q": "How much time could you realistically take for your first trip?",
+     "c": "Sketch what one day of your ideal trip would look like, from morning to night."
+    },
+    "de": {
+     "t": "Wie lang sollte eine Reise sein?",
+     "g": "Erfahre, wie sich ein langes Wochenende, zwei Wochen oder mehrere Monate Backpacking anfühlen.",
+     "p": [
+      "Ein langes Wochenende ist der perfekte Test: eine Stadt, wenig Planung und ein kleiner Rucksack.",
+      "Zwei Wochen reichen, um ein paar Orte zu verbinden und in den Rhythmus des Reisens zu finden.",
+      "Mehrere Monate werden zum Lebensstil: langsameres Reisen, längeres Budget und Raum für Umwege."
+     ],
+     "q": "Wie viel Zeit könntest du dir realistisch für deine erste Reise nehmen?",
+     "c": "Skizziere einen Tag deiner Traumreise, vom Morgen bis zum Abend."
+    },
+    "es": {
+     "t": "¿Cuánto debe durar un viaje?",
+     "g": "Descubre cómo se siente un fin de semana largo, dos semanas o varios meses de mochilero.",
+     "p": [
+      "Un fin de semana largo es la prueba perfecta: una ciudad, poca planificación y una mochila pequeña.",
+      "Dos semanas te permiten unir varios lugares y entrar en el ritmo de la vida en el camino.",
+      "Varios meses se vuelven un estilo de vida: viajar más lento, estirar el presupuesto y dar rodeos."
+     ],
+     "q": "¿Cuánto tiempo podrías tomarte de verdad para tu primer viaje?",
+     "c": "Dibuja cómo sería un día de tu viaje ideal, de la mañana a la noche."
+    },
+    "fr": {
+     "t": "Combien de temps partir ?",
+     "g": "Découvre ce que l'on vit en un long week-end, deux semaines ou plusieurs mois sac au dos.",
+     "p": [
+      "Un long week-end est le test idéal : une ville, peu d'organisation et un petit sac.",
+      "Deux semaines permettent de relier quelques lieux et de prendre le rythme de la route.",
+      "Plusieurs mois, c'est un mode de vie : voyager lentement, étirer le budget, faire des détours."
+     ],
+     "q": "Combien de temps pourrais-tu vraiment prendre pour ton premier voyage ?",
+     "c": "Esquisse une journée de ton voyage idéal, du matin jusqu'au soir."
+    },
+    "it": {
+     "t": "Quanto deve durare un viaggio?",
+     "g": "Scopri come si vive un weekend lungo, due settimane o diversi mesi di viaggio zaino in spalla.",
+     "p": [
+      "Un weekend lungo è il test perfetto: una città, poca pianificazione e uno zaino piccolo.",
+      "Due settimane ti permettono di collegare alcuni posti e prendere il ritmo della vita in viaggio.",
+      "Diversi mesi diventano uno stile di vita: viaggio lento, budget che dura e spazio per deviazioni."
+     ],
+     "q": "Quanto tempo potresti prenderti davvero per il tuo primo viaggio?",
+     "c": "Abbozza una giornata del tuo viaggio ideale, dal mattino alla sera."
+    },
+    "pt": {
+     "t": "Quanto deve durar uma viagem?",
+     "g": "Descobre como é um fim de semana prolongado, duas semanas ou vários meses de mochila às costas.",
+     "p": [
+      "Um fim de semana prolongado é o teste perfeito: uma cidade, pouco planeamento e uma mochila pequena.",
+      "Duas semanas permitem ligar alguns lugares e entrar no ritmo da vida na estrada.",
+      "Vários meses tornam-se um estilo de vida: viajar devagar, esticar o orçamento e fazer desvios."
+     ],
+     "q": "Quanto tempo poderias realmente tirar para a tua primeira viagem?",
+     "c": "Desenha como seria um dia da tua viagem ideal, de manhã à noite."
+    },
+    "pt_BR": {
+     "t": "Quanto deve durar uma viagem?",
+     "g": "Descubra como é um feriadão, duas semanas ou vários meses de mochilão.",
+     "p": [
+      "Um feriadão é o teste perfeito: uma cidade, pouco planejamento e uma mochila pequena.",
+      "Duas semanas permitem ligar alguns lugares e entrar no ritmo da vida na estrada.",
+      "Vários meses viram um estilo de vida: viajar devagar, esticar o orçamento e fazer desvios."
+     ],
+     "q": "Quanto tempo você conseguiria tirar de verdade para a sua primeira viagem?",
+     "c": "Esboce como seria um dia da sua viagem ideal, de manhã até a noite."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning vs going with the flow",
+     "g": "Find your balance between booking ahead and leaving room for happy surprises.",
+     "p": [
+      "Book the first night or two and any long or popular transport, especially in high season.",
+      "Leave the middle of the trip open so you can stay longer where you feel happy.",
+      "Always keep a rough plan B for the end of the day, like a backup hostel nearby."
+     ],
+     "q": "Are you more of a planner or someone who loves to improvise?",
+     "c": "Decide which two things you would always book ahead and which you would leave open."
+    },
+    "de": {
+     "t": "Planen oder treiben lassen",
+     "g": "Finde deine Balance zwischen Vorausbuchen und Raum für schöne Überraschungen.",
+     "p": [
+      "Buch die ersten ein, zwei Nächte und lange oder beliebte Fahrten vor, besonders in der Hochsaison.",
+      "Lass die Mitte der Reise offen, damit du länger bleiben kannst, wo es dir gefällt.",
+      "Hab für den Abend immer einen groben Plan B, etwa ein Ersatz-Hostel in der Nähe."
+     ],
+     "q": "Bist du eher Planer oder liebst du es zu improvisieren?",
+     "c": "Leg fest, welche zwei Dinge du immer vorbuchen und welche du offen lassen würdest."
+    },
+    "es": {
+     "t": "Planificar o dejarse llevar",
+     "g": "Encuentra tu equilibrio entre reservar con antelación y dejar espacio para las sorpresas.",
+     "p": [
+      "Reserva la primera noche o dos y los trayectos largos o populares, sobre todo en temporada alta.",
+      "Deja abierta la mitad del viaje para quedarte más donde te sientas a gusto.",
+      "Ten siempre un plan B para el final del día, como un albergue de reserva cerca."
+     ],
+     "q": "¿Eres más de planificar todo o te encanta improvisar?",
+     "c": "Decide qué dos cosas reservarías siempre con antelación y cuáles dejarías abiertas."
+    },
+    "fr": {
+     "t": "Planifier ou improviser",
+     "g": "Trouve ton équilibre entre réserver à l'avance et laisser de la place aux belles surprises.",
+     "p": [
+      "Réserve la ou les deux premières nuits et les longs trajets populaires, surtout en haute saison.",
+      "Laisse le milieu du voyage ouvert pour rester plus longtemps là où tu te sens bien.",
+      "Garde toujours un plan B pour le soir, comme une auberge de secours à proximité."
+     ],
+     "q": "Es-tu plutôt du genre à tout prévoir ou à adorer improviser ?",
+     "c": "Décide quelles deux choses tu réserverais toujours et lesquelles tu laisserais ouvertes."
+    },
+    "it": {
+     "t": "Pianificare o improvvisare",
+     "g": "Trova il tuo equilibrio tra prenotare in anticipo e lasciare spazio alle belle sorprese.",
+     "p": [
+      "Prenota la prima notte o due e i trasferimenti lunghi o popolari, soprattutto in alta stagione.",
+      "Lascia libera la parte centrale del viaggio per fermarti di più dove stai bene.",
+      "Tieni sempre un piano B per la sera, come un ostello di riserva nelle vicinanze."
+     ],
+     "q": "Sei più tipo da pianificare tutto o ami improvvisare?",
+     "c": "Decidi quali due cose prenoteresti sempre e quali lasceresti aperte."
+    },
+    "pt": {
+     "t": "Planear ou deixar fluir",
+     "g": "Encontra o teu equilíbrio entre reservar antes e deixar espaço para boas surpresas.",
+     "p": [
+      "Reserva a primeira ou as duas primeiras noites e os trajetos longos ou populares, sobretudo na época alta.",
+      "Deixa o meio da viagem em aberto para ficares mais tempo onde te sentes bem.",
+      "Tem sempre um plano B para o fim do dia, como um hostel de reserva por perto."
+     ],
+     "q": "És mais de planear tudo ou adoras improvisar?",
+     "c": "Decide que duas coisas reservarias sempre com antecedência e quais deixarias em aberto."
+    },
+    "pt_BR": {
+     "t": "Planejar ou deixar rolar",
+     "g": "Encontre seu equilíbrio entre reservar antes e deixar espaço para boas surpresas.",
+     "p": [
+      "Reserve a primeira ou as duas primeiras noites e os trajetos longos ou disputados, ainda mais na alta temporada.",
+      "Deixe o meio da viagem em aberto para ficar mais onde você se sentir bem.",
+      "Tenha sempre um plano B para o fim do dia, como um hostel reserva por perto."
+     ],
+     "q": "Você é mais de planejar tudo ou adora improvisar?",
+     "c": "Decida quais duas coisas você sempre reservaria antes e quais deixaria em aberto."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a backpack",
+     "g": "Understand the difference between travel packs and hiking packs, and between front- and top-loading designs.",
+     "p": [
+      "Travel packs open like a suitcase, have lockable zips and suit cities, buses and hostels.",
+      "Hiking packs carry heavy loads well on trails but are often tall, narrow and harder to organise.",
+      "Front-loaders let you see everything at once; top-loaders make you dig from the top down."
+     ],
+     "q": "Will your trips be more about cities and buses, or trails and mountains?",
+     "c": "Look at a bag you own and decide: is it front-loading or top-loading?"
+    },
+    "de": {
+     "t": "Den richtigen Rucksack wählen",
+     "g": "Verstehe den Unterschied zwischen Reise- und Trekkingrucksack sowie Front- und Toplader.",
+     "p": [
+      "Reiserucksäcke öffnen sich wie ein Koffer, haben abschließbare Reißverschlüsse und passen zu Stadt und Bus.",
+      "Trekkingrucksäcke tragen schwere Lasten gut, sind aber oft hoch, schmal und schwerer zu sortieren.",
+      "Beim Frontlader siehst du alles auf einmal, beim Toplader wühlst du dich von oben nach unten."
+     ],
+     "q": "Geht es bei deinen Reisen eher um Städte und Busse oder um Wanderwege und Berge?",
+     "c": "Schau dir einen deiner Rucksäcke an: Ist er ein Frontlader oder ein Toplader?"
+    },
+    "es": {
+     "t": "Elegir una mochila",
+     "g": "Entiende la diferencia entre mochilas de viaje y de senderismo, y entre apertura frontal y superior.",
+     "p": [
+      "Las mochilas de viaje se abren como una maleta, tienen cremalleras con candado y van bien en ciudad.",
+      "Las de senderismo llevan bien mucho peso en rutas, pero son altas, estrechas y más difíciles de ordenar.",
+      "Con apertura frontal lo ves todo de golpe; con apertura superior tienes que buscar desde arriba."
+     ],
+     "q": "¿Tus viajes serán más de ciudades y autobuses o de senderos y montañas?",
+     "c": "Mira una mochila que tengas y decide: ¿se abre por delante o por arriba?"
+    },
+    "fr": {
+     "t": "Choisir un sac à dos",
+     "g": "Comprends la différence entre sac de voyage et sac de randonnée, et entre ouverture frontale et par le haut.",
+     "p": [
+      "Le sac de voyage s'ouvre comme une valise, a des fermetures cadenassables et convient aux villes et bus.",
+      "Le sac de rando porte bien de lourdes charges sur les sentiers, mais il est haut, étroit, moins pratique.",
+      "L'ouverture frontale montre tout d'un coup ; l'ouverture par le haut oblige à fouiller de haut en bas."
+     ],
+     "q": "Tes voyages seront-ils plutôt villes et bus, ou sentiers et montagnes ?",
+     "c": "Regarde un sac que tu possèdes : s'ouvre-t-il par l'avant ou par le haut ?"
+    },
+    "it": {
+     "t": "Scegliere lo zaino",
+     "g": "Capisci la differenza tra zaini da viaggio e da trekking, e tra apertura frontale e dall'alto.",
+     "p": [
+      "Gli zaini da viaggio si aprono come una valigia, hanno zip con lucchetto e vanno bene in città.",
+      "Quelli da trekking portano bene carichi pesanti sui sentieri, ma sono alti, stretti e meno ordinati.",
+      "Con l'apertura frontale vedi tutto subito; con quella dall'alto devi scavare dall'alto in basso."
+     ],
+     "q": "I tuoi viaggi saranno più città e autobus, o sentieri e montagne?",
+     "c": "Guarda uno zaino che hai e decidi: si apre davanti o dall'alto?"
+    },
+    "pt": {
+     "t": "Escolher uma mochila",
+     "g": "Percebe a diferença entre mochilas de viagem e de caminhada, e entre abertura frontal e superior.",
+     "p": [
+      "As mochilas de viagem abrem como uma mala, têm fechos com cadeado e servem bem cidades e autocarros.",
+      "As de caminhada levam bem muito peso em trilhos, mas são altas, estreitas e mais difíceis de organizar.",
+      "Com abertura frontal vês tudo de uma vez; com abertura superior tens de procurar de cima para baixo."
+     ],
+     "q": "As tuas viagens vão ser mais de cidades e autocarros, ou de trilhos e montanhas?",
+     "c": "Olha para uma mochila que tenhas e decide: abre à frente ou por cima?"
+    },
+    "pt_BR": {
+     "t": "Escolhendo a mochila",
+     "g": "Entenda a diferença entre mochilas de viagem e de trekking, e entre abertura frontal e por cima.",
+     "p": [
+      "Mochilas de viagem abrem como mala, têm zíperes com cadeado e combinam com cidades e ônibus.",
+      "As de trekking levam bem muito peso em trilhas, mas são altas, estreitas e mais difíceis de organizar.",
+      "Com abertura frontal você vê tudo de uma vez; com abertura por cima precisa cavar de cima para baixo."
+     ],
+     "q": "Suas viagens vão ser mais de cidades e ônibus, ou de trilhas e montanhas?",
+     "c": "Olhe uma mochila que você tem e decida: ela abre pela frente ou por cima?"
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backpack size in litres",
+     "g": "Learn why roughly 30 to 45 litres is a sweet spot for many backpackers.",
+     "p": [
+      "Backpack volume is measured in litres: the bigger the number, the more you can stuff inside.",
+      "Around 30 to 45 litres holds a week of clothes and often fits airline carry-on limits.",
+      "A bigger bag tends to get filled, so a smaller one quietly keeps your load light."
+     ],
+     "q": "What size are the bags you already own, and do you usually fill them to the top?",
+     "c": "Check the litre size of a bag at home, often printed on a label inside."
+    },
+    "de": {
+     "t": "Rucksackgröße in Litern",
+     "g": "Erfahre, warum etwa 30 bis 45 Liter für viele Backpacker die ideale Größe sind.",
+     "p": [
+      "Das Volumen wird in Litern gemessen: Je größer die Zahl, desto mehr passt hinein.",
+      "Etwa 30 bis 45 Liter reichen für Kleidung für eine Woche und passen oft als Handgepäck.",
+      "Ein großer Rucksack wird meist voll, ein kleiner hält dein Gepäck ganz von selbst leicht."
+     ],
+     "q": "Welche Größe haben deine Taschen, und füllst du sie meist bis oben?",
+     "c": "Such die Literangabe eines Rucksacks zu Hause, oft steht sie auf einem Etikett innen."
+    },
+    "es": {
+     "t": "El tamaño en litros",
+     "g": "Aprende por qué unos 30 a 45 litros son el tamaño ideal para muchos mochileros.",
+     "p": [
+      "El volumen de una mochila se mide en litros: cuanto mayor el número, más cabe dentro.",
+      "Entre 30 y 45 litros caben la ropa de una semana y a menudo encaja como equipaje de mano.",
+      "Una mochila grande suele acabar llena, así que una pequeña mantiene tu carga ligera sin esfuerzo."
+     ],
+     "q": "¿De qué tamaño son las mochilas que ya tienes y sueles llenarlas hasta arriba?",
+     "c": "Busca los litros de una mochila de casa, a menudo vienen en una etiqueta interior."
+    },
+    "fr": {
+     "t": "La taille en litres",
+     "g": "Découvre pourquoi 30 à 45 litres environ est la taille idéale pour beaucoup de voyageurs.",
+     "p": [
+      "Le volume d'un sac se mesure en litres : plus le chiffre est grand, plus tu peux y mettre.",
+      "Entre 30 et 45 litres, on emporte une semaine de vêtements et le sac passe souvent en cabine.",
+      "Un grand sac finit toujours plein, alors un petit garde naturellement ta charge légère."
+     ],
+     "q": "Quelle taille font les sacs que tu possèdes, et les remplis-tu souvent à ras bord ?",
+     "c": "Cherche le volume en litres d'un sac chez toi, souvent indiqué sur une étiquette intérieure."
+    },
+    "it": {
+     "t": "La capienza in litri",
+     "g": "Scopri perché tra 30 e 45 litri circa è la misura ideale per molti backpacker.",
+     "p": [
+      "La capienza di uno zaino si misura in litri: più alto è il numero, più cose ci stanno.",
+      "Tra 30 e 45 litri ci sta una settimana di vestiti e spesso rientra nel bagaglio a mano.",
+      "Uno zaino grande finisce per riempirsi, quindi uno piccolo tiene leggero il carico da solo."
+     ],
+     "q": "Di che misura sono gli zaini che hai già, e di solito li riempi fino in cima?",
+     "c": "Controlla i litri di uno zaino di casa, spesso scritti su un'etichetta interna."
+    },
+    "pt": {
+     "t": "O tamanho em litros",
+     "g": "Aprende porque cerca de 30 a 45 litros é o tamanho ideal para muitos mochileiros.",
+     "p": [
+      "O volume de uma mochila mede-se em litros: quanto maior o número, mais cabe lá dentro.",
+      "Entre 30 e 45 litros cabe a roupa de uma semana e muitas vezes passa como bagagem de mão.",
+      "Uma mochila grande acaba sempre cheia, por isso uma pequena mantém a carga leve sem esforço."
+     ],
+     "q": "De que tamanho são as mochilas que já tens, e costumas enchê-las até cima?",
+     "c": "Procura os litros de uma mochila de casa, muitas vezes numa etiqueta no interior."
+    },
+    "pt_BR": {
+     "t": "O tamanho em litros",
+     "g": "Aprenda por que cerca de 30 a 45 litros é o tamanho ideal para muitos mochileiros.",
+     "p": [
+      "O volume da mochila é medido em litros: quanto maior o número, mais coisa cabe dentro.",
+      "Entre 30 e 45 litros cabe a roupa de uma semana e muitas vezes passa como bagagem de mão.",
+      "Mochila grande sempre acaba cheia, então uma menor mantém sua carga leve sem esforço."
+     ],
+     "q": "De que tamanho são as mochilas que você já tem, e você costuma enchê-las até o topo?",
+     "c": "Procure a litragem de uma mochila de casa, muitas vezes numa etiqueta do lado de dentro."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fitting a backpack",
+     "g": "Learn to adjust torso length, hip belt and shoulder straps so your pack fits properly.",
+     "p": [
+      "Torso length runs from the bony bump at the base of your neck to the top of your hip bones.",
+      "The hip belt sits on your hip bones and carries most of the weight, not your shoulders.",
+      "Tighten shoulder straps so they hug without digging in, then snug the load lifters gently."
+     ],
+     "q": "Have you ever carried a bag that hurt your shoulders after a while?",
+     "c": "Put on any backpack, tighten the hip belt on your hip bones and feel the weight shift."
+    },
+    "de": {
+     "t": "Den Rucksack richtig einstellen",
+     "g": "Lerne, Rückenlänge, Hüftgurt und Schultergurte so einzustellen, dass der Rucksack richtig sitzt.",
+     "p": [
+      "Die Rückenlänge reicht vom Knochen am Nackenansatz bis zur Oberkante der Hüftknochen.",
+      "Der Hüftgurt sitzt auf den Hüftknochen und trägt den Großteil des Gewichts, nicht die Schultern.",
+      "Zieh die Schultergurte an, bis sie anliegen ohne einzuschneiden, dann die Lageverstellriemen sanft."
+     ],
+     "q": "Hattest du schon mal eine Tasche, die nach einer Weile an den Schultern wehtat?",
+     "c": "Setz einen Rucksack auf, schließ den Hüftgurt auf den Hüftknochen und spür, wie sich das Gewicht verlagert."
+    },
+    "es": {
+     "t": "Ajustar la mochila",
+     "g": "Aprende a ajustar el largo de espalda, el cinturón y las correas para que la mochila quede bien.",
+     "p": [
+      "El largo de espalda va del hueso saliente en la base del cuello hasta la parte alta de la cadera.",
+      "El cinturón se apoya sobre los huesos de la cadera y lleva la mayor parte del peso, no los hombros.",
+      "Ajusta las correas para que abracen sin clavarse y luego tensa con suavidad las de carga superior."
+     ],
+     "q": "¿Alguna vez llevaste una mochila que te hacía daño en los hombros?",
+     "c": "Ponte una mochila, ajusta el cinturón sobre la cadera y nota cómo cambia el peso."
+    },
+    "fr": {
+     "t": "Régler son sac à dos",
+     "g": "Apprends à régler longueur de dos, ceinture et bretelles pour que ton sac soit bien ajusté.",
+     "p": [
+      "La longueur de dos va de l'os saillant à la base du cou jusqu'au haut des os des hanches.",
+      "La ceinture repose sur les os des hanches et porte l'essentiel du poids, pas les épaules.",
+      "Serre les bretelles pour qu'elles épousent sans cisailler, puis les rappels de charge doucement."
+     ],
+     "q": "As-tu déjà porté un sac qui te faisait mal aux épaules au bout d'un moment ?",
+     "c": "Enfile un sac, serre la ceinture sur les hanches et sens le poids se déplacer."
+    },
+    "it": {
+     "t": "Regolare lo zaino",
+     "g": "Impara a regolare lunghezza dello schienale, cintura e spallacci perché lo zaino calzi bene.",
+     "p": [
+      "La lunghezza del busto va dall'osso sporgente alla base del collo fino alla cima delle anche.",
+      "La cintura poggia sulle ossa del bacino e porta gran parte del peso, non le spalle.",
+      "Stringi gli spallacci finché aderiscono senza segnare, poi tira piano i tiranti di carico."
+     ],
+     "q": "Ti è mai capitato uno zaino che dopo un po' ti faceva male alle spalle?",
+     "c": "Indossa uno zaino, chiudi la cintura sulle anche e senti come si sposta il peso."
+    },
+    "pt": {
+     "t": "Ajustar a mochila",
+     "g": "Aprende a ajustar o comprimento das costas, o cinto e as alças para a mochila assentar bem.",
+     "p": [
+      "O comprimento do tronco vai do osso saliente na base do pescoço até ao topo dos ossos da anca.",
+      "O cinto assenta nos ossos da anca e leva a maior parte do peso, não os ombros.",
+      "Aperta as alças até abraçarem sem magoar e depois ajusta com suavidade as fitas de carga."
+     ],
+     "q": "Já carregaste uma mochila que te magoava os ombros ao fim de algum tempo?",
+     "c": "Põe uma mochila, aperta o cinto sobre as ancas e sente o peso a mudar de sítio."
+    },
+    "pt_BR": {
+     "t": "Ajustando a mochila",
+     "g": "Aprenda a ajustar o comprimento do tronco, a barrigueira e as alças para a mochila vestir bem.",
+     "p": [
+      "O comprimento do tronco vai do ossinho saliente na base do pescoço até o topo dos ossos do quadril.",
+      "A barrigueira fica sobre os ossos do quadril e leva a maior parte do peso, não os ombros.",
+      "Aperte as alças até abraçarem sem machucar e depois ajuste com cuidado as fitas de carga."
+     ],
+     "q": "Você já carregou uma mochila que machucava os ombros depois de um tempo?",
+     "c": "Coloque uma mochila, feche a barrigueira sobre o quadril e sinta o peso mudar de lugar."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Carrying weight comfortably",
+     "g": "Learn to pack heavy items close to your back and centred, so your bag feels lighter and steadier.",
+     "p": [
+      "Put the heaviest things in the middle of the bag, right against your back.",
+      "Light, bulky items like a sleeping bag or jacket go at the bottom or outer edges.",
+      "Keep weight balanced left to right, and use compression straps to stop things shifting."
+     ],
+     "q": "When you carry a bag, do you tend to lean forward or feel pulled backwards?",
+     "c": "Pack a bag twice, heavy items far out then close in, and feel the difference."
+    },
+    "de": {
+     "t": "Gewicht bequem tragen",
+     "g": "Lerne, Schweres nah am Rücken und mittig zu packen, damit sich der Rucksack leichter und stabiler anfühlt.",
+     "p": [
+      "Pack die schwersten Sachen in die Mitte, direkt an den Rücken.",
+      "Leichte, sperrige Dinge wie Schlafsack oder Jacke gehören nach unten oder an die Außenseiten.",
+      "Verteil das Gewicht links und rechts gleich und nutz Kompressionsriemen gegen Verrutschen."
+     ],
+     "q": "Lehnst du dich beim Tragen eher nach vorne oder fühlst du dich nach hinten gezogen?",
+     "c": "Pack einen Rucksack zweimal, Schweres außen und dann innen, und spür den Unterschied."
+    },
+    "es": {
+     "t": "Llevar el peso con comodidad",
+     "g": "Aprende a colocar lo pesado cerca de la espalda y centrado, para que la mochila pese menos y sea estable.",
+     "p": [
+      "Pon lo más pesado en el centro de la mochila, pegado a tu espalda.",
+      "Lo ligero y voluminoso, como el saco de dormir o la chaqueta, va abajo o en los laterales.",
+      "Equilibra el peso entre izquierda y derecha y usa las correas de compresión para que nada se mueva."
+     ],
+     "q": "Cuando llevas una mochila, ¿tiendes a inclinarte hacia delante o sientes que tira hacia atrás?",
+     "c": "Haz la mochila dos veces, lo pesado lejos y luego cerca de la espalda, y nota la diferencia."
+    },
+    "fr": {
+     "t": "Porter le poids confortablement",
+     "g": "Apprends à placer le lourd près du dos et au centre, pour un sac plus léger et plus stable.",
+     "p": [
+      "Mets les objets les plus lourds au milieu du sac, contre ton dos.",
+      "Le léger et volumineux, comme le sac de couchage ou la veste, va au fond ou sur les côtés.",
+      "Équilibre le poids à gauche et à droite, et serre les sangles de compression pour que rien ne bouge."
+     ],
+     "q": "Quand tu portes un sac, as-tu tendance à te pencher en avant ou à être tiré en arrière ?",
+     "c": "Fais ton sac deux fois, le lourd loin puis près du dos, et sens la différence."
+    },
+    "it": {
+     "t": "Portare il peso comodamente",
+     "g": "Impara a mettere le cose pesanti vicino alla schiena e al centro, per uno zaino più leggero e stabile.",
+     "p": [
+      "Metti gli oggetti più pesanti al centro dello zaino, contro la schiena.",
+      "Le cose leggere e voluminose, come sacco a pelo o giacca, vanno in fondo o ai lati.",
+      "Bilancia il peso tra destra e sinistra e usa le cinghie di compressione perché nulla si sposti."
+     ],
+     "q": "Quando porti uno zaino, tendi a piegarti in avanti o ti senti tirare indietro?",
+     "c": "Prepara uno zaino due volte, peso lontano e poi vicino alla schiena, e senti la differenza."
+    },
+    "pt": {
+     "t": "Carregar o peso com conforto",
+     "g": "Aprende a pôr o que é pesado junto às costas e ao centro, para a mochila parecer mais leve e estável.",
+     "p": [
+      "Coloca as coisas mais pesadas no meio da mochila, encostadas às costas.",
+      "O que é leve e volumoso, como o saco-cama ou o casaco, vai no fundo ou nas laterais.",
+      "Equilibra o peso entre esquerda e direita e usa as fitas de compressão para nada se mexer."
+     ],
+     "q": "Quando carregas uma mochila, tendes a inclinar-te para a frente ou sentes que te puxa para trás?",
+     "c": "Faz a mochila duas vezes, o pesado longe e depois perto das costas, e sente a diferença."
+    },
+    "pt_BR": {
+     "t": "Carregando o peso com conforto",
+     "g": "Aprenda a colocar o que é pesado perto das costas e no centro, para a mochila ficar mais leve e firme.",
+     "p": [
+      "Coloque as coisas mais pesadas no meio da mochila, encostadas nas costas.",
+      "O que é leve e volumoso, como saco de dormir ou jaqueta, vai embaixo ou nas laterais.",
+      "Equilibre o peso entre esquerda e direita e use as fitas de compressão para nada balançar."
+     ],
+     "q": "Quando você carrega uma mochila, tende a se inclinar para a frente ou sente que ela puxa para trás?",
+     "c": "Arrume a mochila duas vezes, o peso longe e depois perto das costas, e sinta a diferença."
+    }
+   }
+  }
+ ]
+}

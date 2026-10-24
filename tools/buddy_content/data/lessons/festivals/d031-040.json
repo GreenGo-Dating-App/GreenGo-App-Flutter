@@ -1,0 +1,835 @@
+{
+ "topic": "festivals",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Harvest festivals",
+     "g": "Discover why autumn harvest celebrations, a way of thanking the land, appear in cultures all over the world.",
+     "p": [
+      "For farming communities the harvest decides whether there will be enough food for winter, so finishing it is a relief.",
+      "Many cultures say thank you with feasts, decorated fields, harvest crowns or the first bread from the new grain.",
+      "Examples include Erntedankfest in Germany, Sukkot in Jewish tradition and harvest fairs in villages everywhere."
+     ],
+     "q": "What fruit or vegetable tells you that autumn has arrived?",
+     "c": "Eat one seasonal fruit or vegetable today and find out where it was grown."
+    },
+    "de": {
+     "t": "Erntefeste",
+     "g": "Entdecke, warum Erntefeste im Herbst, ein Dank an das Land, in Kulturen auf der ganzen Welt vorkommen.",
+     "p": [
+      "Für Bauerngemeinschaften entscheidet die Ernte, ob das Essen für den Winter reicht; ihr Ende ist eine Erleichterung.",
+      "Viele Kulturen danken mit Festmahlen, geschmückten Feldern, Erntekronen oder dem ersten Brot aus dem neuen Korn.",
+      "Beispiele sind das Erntedankfest in Deutschland, Sukkot in der jüdischen Tradition und Erntemärkte in Dörfern überall."
+     ],
+     "q": "Welches Obst oder Gemüse sagt dir, dass der Herbst gekommen ist?",
+     "c": "Iss heute ein Obst oder Gemüse der Saison und finde heraus, wo es gewachsen ist."
+    },
+    "es": {
+     "t": "Fiestas de la cosecha",
+     "g": "Descubre por qué las fiestas de la cosecha en otoño, una forma de dar gracias a la tierra, existen en todo el mundo.",
+     "p": [
+      "Para las comunidades agrícolas la cosecha decide si habrá comida para el invierno, así que terminarla es un alivio.",
+      "Muchas culturas dan las gracias con banquetes, campos adornados, coronas de espigas o el primer pan del grano nuevo.",
+      "Ejemplos: el Erntedankfest en Alemania, Sucot en la tradición judía y las ferias de la vendimia en muchos pueblos."
+     ],
+     "q": "¿Qué fruta o verdura te dice que ha llegado el otoño?",
+     "c": "Come hoy una fruta o verdura de temporada y averigua dónde se cultivó."
+    },
+    "fr": {
+     "t": "Les fêtes des récoltes",
+     "g": "Découvre pourquoi les fêtes des récoltes d'automne, une façon de remercier la terre, existent partout dans le monde.",
+     "p": [
+      "Pour les communautés agricoles, la récolte décide s'il y aura assez à manger l'hiver ; la terminer est un soulagement.",
+      "Beaucoup de cultures remercient avec des festins, des champs décorés, des couronnes d'épis ou le premier pain du grain nouveau.",
+      "Exemples : l'Erntedankfest en Allemagne, Souccot dans la tradition juive et les fêtes des vendanges dans bien des villages."
+     ],
+     "q": "Quel fruit ou légume t'annonce l'arrivée de l'automne ?",
+     "c": "Mange aujourd'hui un fruit ou un légume de saison et découvre où il a poussé."
+    },
+    "it": {
+     "t": "Feste del raccolto",
+     "g": "Scopri perché le feste autunnali del raccolto, un modo di ringraziare la terra, esistono in culture di tutto il mondo.",
+     "p": [
+      "Per le comunità contadine il raccolto decide se ci sarà cibo per l'inverno, quindi concluderlo è un sollievo.",
+      "Molte culture ringraziano con banchetti, campi decorati, corone di spighe o il primo pane del grano nuovo.",
+      "Esempi: l'Erntedankfest in Germania, Sukkot nella tradizione ebraica e le sagre della vendemmia in tanti paesi."
+     ],
+     "q": "Quale frutto o ortaggio ti dice che è arrivato l'autunno?",
+     "c": "Mangia oggi un frutto o un ortaggio di stagione e scopri dove è stato coltivato."
+    },
+    "pt": {
+     "t": "Festas das colheitas",
+     "g": "Descobre porque é que as festas das colheitas no outono, uma forma de agradecer à terra, existem no mundo inteiro.",
+     "p": [
+      "Para as comunidades agrícolas, a colheita decide se haverá comida para o inverno, por isso terminá-la é um alívio.",
+      "Muitas culturas agradecem com banquetes, campos enfeitados, coroas de espigas ou o primeiro pão do cereal novo.",
+      "Exemplos: o Erntedankfest na Alemanha, o Sucot na tradição judaica e as festas das vindimas em muitas aldeias."
+     ],
+     "q": "Que fruta ou legume te diz que o outono chegou?",
+     "c": "Come hoje uma fruta ou um legume da época e descobre onde foi cultivado."
+    },
+    "pt_BR": {
+     "t": "Festas da colheita",
+     "g": "Descubra por que as festas da colheita, uma forma de agradecer à terra, existem em culturas do mundo inteiro.",
+     "p": [
+      "Para as comunidades agrícolas, a colheita decide se haverá comida para o inverno, por isso terminá-la é um alívio.",
+      "Muitas culturas agradecem com banquetes, campos enfeitados, coroas de espigas ou o primeiro pão do grão novo.",
+      "Exemplos: o Erntedankfest na Alemanha, o Sucot na tradição judaica e as festas da uva em várias cidades do Brasil."
+     ],
+     "q": "Qual fruta ou legume avisa você de que uma nova estação chegou?",
+     "c": "Coma hoje uma fruta ou um legume da época e descubra onde foi cultivado."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thanksgiving in the US and Canada",
+     "g": "Learn how Thanksgiving brings shared meals and gratitude, and why the US and Canada celebrate on different dates.",
+     "p": [
+      "The US celebrates on the fourth Thursday of November; Canada celebrates earlier, on the second Monday of October.",
+      "A classic meal includes roast turkey, stuffing, cranberry sauce, mashed potatoes and pumpkin pie.",
+      "Many families go around the table so each person can say one thing they are thankful for."
+     ],
+     "q": "What are three things you feel thankful for right now?",
+     "c": "Send a short thank-you message to someone who helped you recently."
+    },
+    "de": {
+     "t": "Thanksgiving in den USA und Kanada",
+     "g": "Erfahre, wie Thanksgiving gemeinsames Essen und Dankbarkeit verbindet und warum die USA und Kanada an verschiedenen Tagen feiern.",
+     "p": [
+      "Die USA feiern am vierten Donnerstag im November, Kanada früher, am zweiten Montag im Oktober.",
+      "Zum klassischen Essen gehören gebratener Truthahn, Füllung, Cranberrysoße, Kartoffelbrei und Kürbiskuchen.",
+      "In vielen Familien sagt reihum jede Person am Tisch, wofür sie dankbar ist."
+     ],
+     "q": "Für welche drei Dinge bist du gerade dankbar?",
+     "c": "Schick heute eine kurze Dankesnachricht an jemanden, der dir kürzlich geholfen hat."
+    },
+    "es": {
+     "t": "Acción de Gracias en EE. UU. y Canadá",
+     "g": "Aprende cómo Acción de Gracias une comidas compartidas y gratitud, y por qué EE. UU. y Canadá lo celebran en fechas distintas.",
+     "p": [
+      "Estados Unidos lo celebra el cuarto jueves de noviembre; Canadá antes, el segundo lunes de octubre.",
+      "La comida clásica incluye pavo asado, relleno, salsa de arándanos, puré de patatas y tarta de calabaza.",
+      "En muchas familias cada persona de la mesa dice, por turnos, algo por lo que está agradecida."
+     ],
+     "q": "¿Cuáles son tres cosas por las que te sientes agradecido ahora mismo?",
+     "c": "Envía hoy un breve mensaje de agradecimiento a alguien que te haya ayudado hace poco."
+    },
+    "fr": {
+     "t": "Thanksgiving aux États-Unis et au Canada",
+     "g": "Découvre comment l'Action de grâce réunit repas partagés et gratitude, et pourquoi les deux pays la fêtent à des dates différentes.",
+     "p": [
+      "Les États-Unis la fêtent le quatrième jeudi de novembre ; le Canada plus tôt, le deuxième lundi d'octobre.",
+      "Le repas classique comprend dinde rôtie, farce, sauce aux canneberges, purée et tarte à la citrouille.",
+      "Dans beaucoup de familles, chacun à table dit à tour de rôle une chose pour laquelle il est reconnaissant."
+     ],
+     "q": "Quelles sont trois choses pour lesquelles tu te sens reconnaissant en ce moment ?",
+     "c": "Envoie aujourd'hui un court message de remerciement à quelqu'un qui t'a aidé récemment."
+    },
+    "it": {
+     "t": "Il Ringraziamento negli USA e in Canada",
+     "g": "Scopri come il Thanksgiving unisce pranzi condivisi e gratitudine, e perché USA e Canada lo festeggiano in date diverse.",
+     "p": [
+      "Gli Stati Uniti lo festeggiano il quarto giovedì di novembre; il Canada prima, il secondo lunedì di ottobre.",
+      "Il pranzo classico comprende tacchino arrosto, ripieno, salsa di mirtilli rossi, purè di patate e torta di zucca.",
+      "In molte famiglie ognuno a tavola dice, a turno, una cosa per cui è grato."
+     ],
+     "q": "Quali sono tre cose per cui ti senti grato in questo momento?",
+     "c": "Manda oggi un breve messaggio di ringraziamento a qualcuno che ti ha aiutato di recente."
+    },
+    "pt": {
+     "t": "O Dia de Ação de Graças nos EUA e no Canadá",
+     "g": "Aprende como o Thanksgiving junta refeições partilhadas e gratidão, e porque os EUA e o Canadá o celebram em datas diferentes.",
+     "p": [
+      "Os Estados Unidos celebram na quarta quinta-feira de novembro; o Canadá mais cedo, na segunda segunda-feira de outubro.",
+      "A refeição clássica inclui peru assado, recheio, molho de arando, puré de batata e tarte de abóbora.",
+      "Em muitas famílias, cada pessoa à mesa diz, à vez, uma coisa pela qual está grata."
+     ],
+     "q": "Quais são três coisas pelas quais te sentes grato neste momento?",
+     "c": "Envia hoje uma mensagem curta de agradecimento a alguém que te ajudou recentemente."
+    },
+    "pt_BR": {
+     "t": "Ação de Graças nos EUA e no Canadá",
+     "g": "Aprenda como o Thanksgiving une refeições compartilhadas e gratidão, e por que EUA e Canadá comemoram em datas diferentes.",
+     "p": [
+      "Os Estados Unidos comemoram na quarta quinta-feira de novembro; o Canadá antes, na segunda segunda-feira de outubro.",
+      "A refeição clássica tem peru assado, recheio, molho de cranberry, purê de batata e torta de abóbora.",
+      "Em muitas famílias, cada pessoa da mesa diz, na sua vez, uma coisa pela qual é grata."
+     ],
+     "q": "Quais são três coisas pelas quais você se sente grato agora?",
+     "c": "Mande hoje uma mensagem curta de agradecimento para alguém que ajudou você recentemente."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Mid-Autumn Festival",
+     "g": "Enjoy mooncakes, lanterns and moon-gazing with family, as people do in China, Vietnam and beyond.",
+     "p": [
+      "It falls on the 15th day of the 8th lunar month, at a full moon in September or early October.",
+      "Families share round mooncakes, often filled with lotus seed paste, while admiring the bright full moon.",
+      "A favourite legend tells of Chang'e, who lives on the moon; in Vietnam children parade with colourful lanterns."
+     ],
+     "q": "Do you have a favourite place or memory for watching the moon?",
+     "c": "Look at the moon tonight, or find out when the next full moon will be."
+    },
+    "de": {
+     "t": "Das Mondfest",
+     "g": "Genieße Mondkuchen, Laternen und das Betrachten des Mondes mit der Familie, wie in China, Vietnam und anderswo.",
+     "p": [
+      "Es fällt auf den 15. Tag des 8. Mondmonats, auf einen Vollmond im September oder Anfang Oktober.",
+      "Familien teilen runde Mondkuchen, oft mit Lotussamenpaste gefüllt, und bewundern dabei den hellen Vollmond.",
+      "Eine beliebte Legende erzählt von Chang'e, die auf dem Mond lebt; in Vietnam ziehen Kinder mit bunten Laternen umher."
+     ],
+     "q": "Hast du einen Lieblingsort oder eine Erinnerung ans Mondbetrachten?",
+     "c": "Schau heute Abend zum Mond, oder finde heraus, wann der nächste Vollmond ist."
+    },
+    "es": {
+     "t": "La Fiesta del Medio Otoño",
+     "g": "Disfruta de pasteles de luna, farolillos y la contemplación de la luna en familia, como en China, Vietnam y más allá.",
+     "p": [
+      "Cae el día 15 del octavo mes lunar, con la luna llena de septiembre o principios de octubre.",
+      "Las familias comparten pasteles de luna redondos, a menudo rellenos de pasta de semillas de loto, mientras miran la luna.",
+      "Una leyenda muy querida habla de Chang'e, que vive en la luna; en Vietnam los niños desfilan con farolillos de colores."
+     ],
+     "q": "¿Tienes algún lugar o recuerdo favorito para mirar la luna?",
+     "c": "Mira la luna esta noche o averigua cuándo será la próxima luna llena."
+    },
+    "fr": {
+     "t": "La fête de la Mi-Automne",
+     "g": "Savoure gâteaux de lune, lanternes et contemplation de la lune en famille, comme en Chine, au Vietnam et ailleurs.",
+     "p": [
+      "Elle tombe le 15e jour du 8e mois lunaire, à la pleine lune de septembre ou du début octobre.",
+      "Les familles partagent des gâteaux de lune ronds, souvent fourrés à la pâte de graines de lotus, en admirant la lune.",
+      "Une légende aimée raconte l'histoire de Chang'e, qui vit sur la lune ; au Vietnam, les enfants défilent avec des lanternes."
+     ],
+     "q": "As-tu un lieu ou un souvenir préféré pour regarder la lune ?",
+     "c": "Regarde la lune ce soir, ou cherche quand aura lieu la prochaine pleine lune."
+    },
+    "it": {
+     "t": "La Festa di metà autunno",
+     "g": "Goditi i dolci della luna, le lanterne e la contemplazione della luna in famiglia, come in Cina, Vietnam e oltre.",
+     "p": [
+      "Cade il 15° giorno dell'8° mese lunare, con la luna piena di settembre o di inizio ottobre.",
+      "Le famiglie condividono i rotondi dolci della luna, spesso ripieni di pasta di semi di loto, ammirando la luna piena.",
+      "Una leggenda amata racconta di Chang'e, che vive sulla luna; in Vietnam i bambini sfilano con lanterne colorate."
+     ],
+     "q": "Hai un luogo o un ricordo preferito per guardare la luna?",
+     "c": "Guarda la luna stasera, oppure scopri quando sarà la prossima luna piena."
+    },
+    "pt": {
+     "t": "O Festival do Meio do Outono",
+     "g": "Aproveita os bolos lunares, as lanternas e a contemplação da lua em família, como na China, no Vietname e não só.",
+     "p": [
+      "Calha no 15.º dia do 8.º mês lunar, na lua cheia de setembro ou do início de outubro.",
+      "As famílias partilham bolos lunares redondos, muitas vezes recheados com pasta de sementes de lótus, a olhar para a lua.",
+      "Uma lenda muito querida fala de Chang'e, que vive na lua; no Vietname as crianças desfilam com lanternas coloridas."
+     ],
+     "q": "Tens algum lugar ou memória preferida para olhar a lua?",
+     "c": "Olha para a lua esta noite ou descobre quando será a próxima lua cheia."
+    },
+    "pt_BR": {
+     "t": "O Festival do Meio do Outono",
+     "g": "Aproveite os bolos lunares, as lanternas e a contemplação da lua em família, como na China, no Vietnã e além.",
+     "p": [
+      "Cai no 15º dia do 8º mês lunar, na lua cheia de setembro ou do começo de outubro.",
+      "As famílias dividem bolos lunares redondos, muitas vezes recheados com pasta de semente de lótus, olhando a lua cheia.",
+      "Uma lenda muito querida fala de Chang'e, que vive na lua; no Vietnã as crianças desfilam com lanternas coloridas."
+     ],
+     "q": "Você tem algum lugar ou lembrança favorita de olhar a lua?",
+     "c": "Olhe para a lua hoje à noite ou descubra quando será a próxima lua cheia."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chuseok in Korea",
+     "g": "Meet Chuseok, the Korean harvest holiday of songpyeon rice cakes, family visits and folk games.",
+     "p": [
+      "Chuseok falls on the 15th day of the 8th lunar month, like the Mid-Autumn Festival, and lasts about three days.",
+      "Millions travel to their hometowns; families honour their ancestors, share food and often wear hanbok.",
+      "Families make songpyeon, half-moon rice cakes filled with sesame or beans, and play games like yut nori."
+     ],
+     "q": "How do people in your culture show respect for older generations at festival time?",
+     "c": "Find out how songpyeon are shaped, and try folding a half-moon from dough or paper."
+    },
+    "de": {
+     "t": "Chuseok in Korea",
+     "g": "Lerne Chuseok kennen, das koreanische Erntefest mit Songpyeon-Reiskuchen, Familienbesuchen und Volksspielen.",
+     "p": [
+      "Chuseok fällt wie das Mondfest auf den 15. Tag des 8. Mondmonats und dauert etwa drei Tage.",
+      "Millionen reisen in ihre Heimatorte; Familien ehren ihre Vorfahren, teilen Essen und tragen oft Hanbok.",
+      "Familien formen Songpyeon, halbmondförmige Reiskuchen mit Sesam- oder Bohnenfüllung, und spielen Spiele wie Yut Nori."
+     ],
+     "q": "Wie zeigen Menschen in deiner Kultur an Festtagen Respekt vor den älteren Generationen?",
+     "c": "Finde heraus, wie Songpyeon geformt werden, und falte einen Halbmond aus Teig oder Papier."
+    },
+    "es": {
+     "t": "Chuseok en Corea",
+     "g": "Conoce Chuseok, la fiesta coreana de la cosecha con pasteles de arroz songpyeon, visitas familiares y juegos populares.",
+     "p": [
+      "Chuseok cae el día 15 del octavo mes lunar, como la Fiesta del Medio Otoño, y dura unos tres días.",
+      "Millones de personas viajan a su pueblo natal; las familias honran a sus antepasados, comparten comida y a menudo visten hanbok.",
+      "Las familias preparan songpyeon, pasteles de arroz en forma de media luna rellenos de sésamo o judías, y juegan al yut nori."
+     ],
+     "q": "¿Cómo muestran respeto a las generaciones mayores en tu cultura durante las fiestas?",
+     "c": "Averigua cómo se forman los songpyeon e intenta hacer una media luna con masa o papel."
+    },
+    "fr": {
+     "t": "Chuseok en Corée",
+     "g": "Découvre Chuseok, la fête coréenne des récoltes avec gâteaux de riz songpyeon, visites familiales et jeux traditionnels.",
+     "p": [
+      "Chuseok tombe le 15e jour du 8e mois lunaire, comme la fête de la Mi-Automne, et dure environ trois jours.",
+      "Des millions de gens rentrent au pays natal ; on honore les ancêtres, on partage un repas et on porte souvent le hanbok.",
+      "On prépare des songpyeon, gâteaux de riz en demi-lune fourrés au sésame ou aux haricots, et on joue au yut nori."
+     ],
+     "q": "Comment montre-t-on du respect aux anciennes générations pendant les fêtes dans ta culture ?",
+     "c": "Découvre comment on façonne les songpyeon et essaie de plier une demi-lune en pâte ou en papier."
+    },
+    "it": {
+     "t": "Chuseok in Corea",
+     "g": "Scopri Chuseok, la festa coreana del raccolto con i dolci di riso songpyeon, le visite in famiglia e i giochi popolari.",
+     "p": [
+      "Chuseok cade il 15° giorno dell'8° mese lunare, come la Festa di metà autunno, e dura circa tre giorni.",
+      "Milioni di persone tornano al paese d'origine; le famiglie onorano gli antenati, condividono il cibo e spesso indossano l'hanbok.",
+      "Si preparano i songpyeon, dolci di riso a mezzaluna ripieni di sesamo o fagioli, e si gioca a yut nori."
+     ],
+     "q": "Come si mostra rispetto alle generazioni più anziane durante le feste nella tua cultura?",
+     "c": "Scopri come si modellano i songpyeon e prova a creare una mezzaluna con pasta o carta."
+    },
+    "pt": {
+     "t": "O Chuseok na Coreia",
+     "g": "Conhece o Chuseok, a festa coreana das colheitas com bolos de arroz songpyeon, visitas à família e jogos tradicionais.",
+     "p": [
+      "O Chuseok calha no 15.º dia do 8.º mês lunar, como o Festival do Meio do Outono, e dura cerca de três dias.",
+      "Milhões de pessoas viajam para a terra natal; as famílias honram os antepassados, partilham comida e vestem muitas vezes o hanbok.",
+      "As famílias fazem songpyeon, bolos de arroz em meia-lua recheados com sésamo ou feijão, e jogam yut nori."
+     ],
+     "q": "Como se mostra respeito pelas gerações mais velhas nas festas da tua cultura?",
+     "c": "Descobre como se moldam os songpyeon e tenta fazer uma meia-lua com massa ou papel."
+    },
+    "pt_BR": {
+     "t": "O Chuseok na Coreia",
+     "g": "Conheça o Chuseok, a festa coreana da colheita com bolinhos de arroz songpyeon, visitas à família e jogos tradicionais.",
+     "p": [
+      "O Chuseok cai no 15º dia do 8º mês lunar, como o Festival do Meio do Outono, e dura cerca de três dias.",
+      "Milhões de pessoas viajam para a cidade natal; as famílias honram os antepassados, dividem comida e muitas vezes usam hanbok.",
+      "As famílias fazem songpyeon, bolinhos de arroz em meia-lua recheados com gergelim ou feijão, e jogam yut nori."
+     ],
+     "q": "Como as pessoas mostram respeito pelas gerações mais velhas nas festas da sua cultura?",
+     "c": "Descubra como se moldam os songpyeon e tente fazer uma meia-lua com massa ou papel."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pongal and Makar Sankranti",
+     "g": "Discover Pongal's sweet harvest rice in South India and the joyful kite flying of Makar Sankranti in January.",
+     "p": [
+      "Makar Sankranti follows the sun, not the moon, so it falls on almost the same date each year, around 14 January.",
+      "In Tamil Nadu, Pongal rice is boiled with milk and jaggery until it bubbles over, a happy sign of abundance.",
+      "In Gujarat and elsewhere, the sky fills with kites, and people share sweets made with sesame and jaggery."
+     ],
+     "q": "Which dish from your culture is a symbol of plenty or good fortune?",
+     "c": "Cook something simple with rice and a sweet ingredient, or learn the cheer Pongalo Pongal."
+    },
+    "de": {
+     "t": "Pongal und Makar Sankranti",
+     "g": "Entdecke den süßen Ernte-Reis von Pongal in Südindien und das fröhliche Drachensteigen zu Makar Sankranti im Januar.",
+     "p": [
+      "Makar Sankranti richtet sich nach der Sonne, nicht dem Mond, und fällt daher fast immer auf den 14. Januar.",
+      "In Tamil Nadu kocht man Pongal-Reis mit Milch und Jaggery, bis er überkocht, ein fröhliches Zeichen für Fülle.",
+      "In Gujarat und anderswo füllt sich der Himmel mit Drachen, und man teilt Süßigkeiten aus Sesam und Jaggery."
+     ],
+     "q": "Welches Gericht aus deiner Kultur steht für Fülle oder Glück?",
+     "c": "Koch etwas Einfaches mit Reis und einer süßen Zutat, oder lerne den Ruf Pongalo Pongal."
+    },
+    "es": {
+     "t": "Pongal y Makar Sankranti",
+     "g": "Descubre el arroz dulce de la cosecha de Pongal en el sur de la India y las cometas de Makar Sankranti en enero.",
+     "p": [
+      "Makar Sankranti sigue al sol, no a la luna, así que cae casi siempre en la misma fecha, hacia el 14 de enero.",
+      "En Tamil Nadu el arroz pongal se hierve con leche y azúcar de caña jaggery hasta que rebosa, señal feliz de abundancia.",
+      "En Guyarat y otras regiones el cielo se llena de cometas y la gente comparte dulces de sésamo y jaggery."
+     ],
+     "q": "¿Qué plato de tu cultura simboliza la abundancia o la buena suerte?",
+     "c": "Cocina algo sencillo con arroz y un ingrediente dulce, o aprende el grito Pongalo Pongal."
+    },
+    "fr": {
+     "t": "Pongal et Makar Sankranti",
+     "g": "Découvre le riz sucré des récoltes de Pongal en Inde du Sud et les cerfs-volants joyeux de Makar Sankranti en janvier.",
+     "p": [
+      "Makar Sankranti suit le soleil, pas la lune ; elle tombe donc presque toujours à la même date, vers le 14 janvier.",
+      "Au Tamil Nadu, on fait bouillir le riz pongal avec du lait et du jaggery jusqu'à ce qu'il déborde, signe d'abondance.",
+      "Au Gujarat et ailleurs, le ciel se remplit de cerfs-volants et on partage des douceurs au sésame et au jaggery."
+     ],
+     "q": "Quel plat de ta culture symbolise l'abondance ou la chance ?",
+     "c": "Cuisine un plat simple avec du riz et un ingrédient sucré, ou apprends le cri Pongalo Pongal."
+    },
+    "it": {
+     "t": "Pongal e Makar Sankranti",
+     "g": "Scopri il riso dolce del raccolto di Pongal nel sud dell'India e gli aquiloni festosi di Makar Sankranti a gennaio.",
+     "p": [
+      "Makar Sankranti segue il sole, non la luna, quindi cade quasi sempre nella stessa data, verso il 14 gennaio.",
+      "In Tamil Nadu il riso pongal si cuoce con latte e zucchero di canna jaggery finché trabocca, segno felice di abbondanza.",
+      "In Gujarat e altrove il cielo si riempie di aquiloni e si condividono dolci di sesamo e jaggery."
+     ],
+     "q": "Quale piatto della tua cultura simboleggia abbondanza o fortuna?",
+     "c": "Cucina qualcosa di semplice con riso e un ingrediente dolce, o impara il grido Pongalo Pongal."
+    },
+    "pt": {
+     "t": "Pongal e Makar Sankranti",
+     "g": "Descobre o arroz doce das colheitas do Pongal no sul da Índia e os papagaios alegres do Makar Sankranti em janeiro.",
+     "p": [
+      "O Makar Sankranti segue o sol, não a lua, por isso calha quase sempre na mesma data, por volta de 14 de janeiro.",
+      "Em Tamil Nadu, o arroz pongal é fervido com leite e açúcar de cana jaggery até transbordar, sinal feliz de abundância.",
+      "No Guzerate e noutras regiões o céu enche-se de papagaios e partilham-se doces de sésamo e jaggery."
+     ],
+     "q": "Que prato da tua cultura simboliza abundância ou boa sorte?",
+     "c": "Cozinha algo simples com arroz e um ingrediente doce, ou aprende o grito Pongalo Pongal."
+    },
+    "pt_BR": {
+     "t": "Pongal e Makar Sankranti",
+     "g": "Descubra o arroz doce da colheita do Pongal no sul da Índia e as pipas alegres do Makar Sankranti em janeiro.",
+     "p": [
+      "O Makar Sankranti segue o sol, não a lua, por isso cai quase sempre na mesma data, por volta de 14 de janeiro.",
+      "Em Tamil Nadu, o arroz pongal é fervido com leite e rapadura jaggery até transbordar, sinal feliz de fartura.",
+      "No Gujarat e em outras regiões o céu se enche de pipas e as pessoas dividem doces de gergelim e jaggery."
+     ],
+     "q": "Qual prato da sua cultura simboliza fartura ou boa sorte?",
+     "c": "Cozinhe algo simples com arroz e um ingrediente doce, ou aprenda o grito Pongalo Pongal."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kite festivals",
+     "g": "Travel from Gujarat to Bali to Guatemala and see why kites fill the sky at certain celebrations.",
+     "p": [
+      "In Gujarat, India, families fly kites from rooftops on Makar Sankranti, and friendly kite battles try to cut lines.",
+      "In Bali huge traditional kites, some many metres long, are flown by teams during the windy season.",
+      "In Guatemala the town of Santiago Sacatepéquez flies giant round, colourful kites on 1 November, All Saints' Day."
+     ],
+     "q": "Have you ever flown a kite? What do you remember about it?",
+     "c": "Fold a simple paper kite or plane today and test it in the wind or across a room."
+    },
+    "de": {
+     "t": "Drachenfeste",
+     "g": "Reise von Gujarat über Bali bis Guatemala und erfahre, warum bei manchen Festen Drachen den Himmel füllen.",
+     "p": [
+      "In Gujarat in Indien lassen Familien zu Makar Sankranti Drachen von den Dächern steigen und versuchen, fremde Schnüre zu kappen.",
+      "Auf Bali steigen in der windigen Jahreszeit riesige traditionelle Drachen auf, manche viele Meter lang, gelenkt von Teams.",
+      "In Guatemala lässt der Ort Santiago Sacatepéquez am 1. November, Allerheiligen, riesige runde, bunte Drachen steigen."
+     ],
+     "q": "Hast du schon einmal einen Drachen steigen lassen? Woran erinnerst du dich?",
+     "c": "Falte heute einen einfachen Papierdrachen oder -flieger und teste ihn im Wind oder im Zimmer."
+    },
+    "es": {
+     "t": "Fiestas de cometas",
+     "g": "Viaja de Guyarat a Bali y Guatemala y descubre por qué las cometas llenan el cielo en ciertas celebraciones.",
+     "p": [
+      "En Guyarat, India, las familias vuelan cometas desde las azoteas en Makar Sankranti, con batallas amistosas para cortar hilos.",
+      "En Bali, equipos enteros vuelan enormes cometas tradicionales, algunas de muchos metros, durante la temporada de viento.",
+      "En Guatemala, en Santiago Sacatepéquez se elevan barriletes gigantes, redondos y coloridos, el 1 de noviembre, Día de Todos los Santos."
+     ],
+     "q": "¿Has volado alguna vez una cometa? ¿Qué recuerdas de aquello?",
+     "c": "Haz hoy una cometa o un avión de papel sencillo y pruébalo al viento o en una habitación."
+    },
+    "fr": {
+     "t": "Les fêtes des cerfs-volants",
+     "g": "Voyage du Gujarat à Bali et au Guatemala et découvre pourquoi les cerfs-volants remplissent le ciel lors de certaines fêtes.",
+     "p": [
+      "Au Gujarat, en Inde, les familles font voler des cerfs-volants depuis les toits pour Makar Sankranti et tentent de couper les fils.",
+      "À Bali, des équipes font voler d'immenses cerfs-volants traditionnels, parfois longs de plusieurs mètres, à la saison des vents.",
+      "Au Guatemala, Santiago Sacatepéquez fait voler des cerfs-volants géants, ronds et colorés, le 1er novembre, à la Toussaint."
+     ],
+     "q": "As-tu déjà fait voler un cerf-volant ? Quel souvenir en gardes-tu ?",
+     "c": "Plie aujourd'hui un petit cerf-volant ou un avion en papier et teste-le au vent ou dans une pièce."
+    },
+    "it": {
+     "t": "Feste degli aquiloni",
+     "g": "Viaggia dal Gujarat a Bali al Guatemala e scopri perché gli aquiloni riempiono il cielo in certe feste.",
+     "p": [
+      "In Gujarat, in India, le famiglie fanno volare aquiloni dai tetti per Makar Sankranti, con sfide amichevoli per tagliare i fili.",
+      "A Bali squadre intere fanno volare enormi aquiloni tradizionali, alcuni lunghi molti metri, nella stagione ventosa.",
+      "In Guatemala, a Santiago Sacatepéquez, il 1° novembre, Ognissanti, volano aquiloni giganti, rotondi e coloratissimi."
+     ],
+     "q": "Hai mai fatto volare un aquilone? Cosa ricordi di quel momento?",
+     "c": "Piega oggi un semplice aquilone o aeroplano di carta e provalo al vento o in una stanza."
+    },
+    "pt": {
+     "t": "Festas dos papagaios de papel",
+     "g": "Viaja do Guzerate a Bali e à Guatemala e descobre porque é que os papagaios enchem o céu em certas celebrações.",
+     "p": [
+      "No Guzerate, na Índia, as famílias lançam papagaios dos terraços no Makar Sankranti, em duelos amigáveis para cortar linhas.",
+      "Em Bali, equipas inteiras lançam enormes papagaios tradicionais, alguns com muitos metros, na época do vento.",
+      "Na Guatemala, Santiago Sacatepéquez lança papagaios gigantes, redondos e coloridos, a 1 de novembro, Dia de Todos os Santos."
+     ],
+     "q": "Já alguma vez lançaste um papagaio de papel? De que te lembras?",
+     "c": "Faz hoje um papagaio ou avião de papel simples e testa-o ao vento ou numa sala."
+    },
+    "pt_BR": {
+     "t": "Festivais de pipas",
+     "g": "Viaje do Gujarat a Bali e à Guatemala e descubra por que as pipas enchem o céu em certas celebrações.",
+     "p": [
+      "No Gujarat, na Índia, as famílias soltam pipas das lajes no Makar Sankranti, com disputas amigáveis para cortar a linha.",
+      "Em Bali, equipes inteiras soltam enormes pipas tradicionais, algumas com muitos metros, na época dos ventos.",
+      "Na Guatemala, Santiago Sacatepéquez solta pipas gigantes, redondas e coloridas, em 1º de novembro, Dia de Todos os Santos."
+     ],
+     "q": "Você já soltou pipa? Do que você se lembra?",
+     "c": "Faça hoje uma pipa ou um aviãozinho de papel simples e teste no vento ou dentro de casa."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lantern festivals",
+     "g": "Admire paper lanterns in China, Taiwan, Vietnam and Thailand, and the wishes they carry.",
+     "p": [
+      "China's Lantern Festival closes Lunar New Year on the first full moon, with lantern displays and riddles to solve.",
+      "In Pingxi, Taiwan, people write wishes on sky lanterns before releasing them; Hoi An in Vietnam glows at every full moon.",
+      "In Thailand, Loy Krathong sees small decorated baskets floated on water, and Chiang Mai is known for its sky lanterns."
+     ],
+     "q": "If you could send one wish into the sky on a lantern, what would it say?",
+     "c": "Write one wish for the coming month on a piece of paper and keep it somewhere you will see it."
+    },
+    "de": {
+     "t": "Laternenfeste",
+     "g": "Bewundere Papierlaternen in China, Taiwan, Vietnam und Thailand und die Wünsche, die sie tragen.",
+     "p": [
+      "Das chinesische Laternenfest beendet am ersten Vollmond das Mondneujahr, mit Laternenschauen und Rätseln zum Lösen.",
+      "In Pingxi auf Taiwan schreibt man Wünsche auf Himmelslaternen; Hoi An in Vietnam leuchtet bei jedem Vollmond.",
+      "In Thailand lässt man zu Loy Krathong kleine geschmückte Körbchen auf dem Wasser treiben; Chiang Mai ist für Himmelslaternen bekannt."
+     ],
+     "q": "Wenn du einen Wunsch mit einer Laterne in den Himmel schicken könntest, wie würde er lauten?",
+     "c": "Schreib einen Wunsch für den nächsten Monat auf einen Zettel und bewahre ihn gut sichtbar auf."
+    },
+    "es": {
+     "t": "Fiestas de los farolillos",
+     "g": "Admira los farolillos de papel de China, Taiwán, Vietnam y Tailandia, y los deseos que llevan.",
+     "p": [
+      "La Fiesta de los Faroles china cierra el Año Nuevo Lunar en la primera luna llena, con farolillos y adivinanzas para resolver.",
+      "En Pingxi, Taiwán, se escriben deseos en farolillos voladores antes de soltarlos; Hoi An, en Vietnam, brilla cada luna llena.",
+      "En Tailandia, en Loy Krathong se ponen a flotar cestitas decoradas en el agua, y Chiang Mai es famosa por sus farolillos."
+     ],
+     "q": "Si pudieras enviar un deseo al cielo en un farolillo, ¿qué diría?",
+     "c": "Escribe un deseo para el próximo mes en un papel y guárdalo donde puedas verlo."
+    },
+    "fr": {
+     "t": "Les fêtes des lanternes",
+     "g": "Admire les lanternes de papier de Chine, de Taïwan, du Vietnam et de Thaïlande, et les vœux qu'elles portent.",
+     "p": [
+      "La fête des Lanternes chinoise clôt le Nouvel An lunaire à la première pleine lune, avec lanternes et devinettes.",
+      "À Pingxi, à Taïwan, on écrit des vœux sur des lanternes célestes avant de les lâcher ; Hoi An, au Vietnam, brille à chaque pleine lune.",
+      "En Thaïlande, à Loy Krathong, on fait flotter de petits paniers décorés sur l'eau ; Chiang Mai est connue pour ses lanternes célestes."
+     ],
+     "q": "Si tu pouvais envoyer un vœu dans le ciel avec une lanterne, que dirait-il ?",
+     "c": "Écris un vœu pour le mois à venir sur un papier et garde-le là où tu le verras."
+    },
+    "it": {
+     "t": "Feste delle lanterne",
+     "g": "Ammira le lanterne di carta di Cina, Taiwan, Vietnam e Thailandia, e i desideri che portano con sé.",
+     "p": [
+      "La Festa delle Lanterne cinese chiude il Capodanno lunare alla prima luna piena, con lanterne e indovinelli da risolvere.",
+      "A Pingxi, a Taiwan, si scrivono desideri sulle lanterne volanti prima di liberarle; Hoi An, in Vietnam, brilla a ogni luna piena.",
+      "In Thailandia, a Loy Krathong, si fanno galleggiare sull'acqua cestini decorati, e Chiang Mai è famosa per le lanterne volanti."
+     ],
+     "q": "Se potessi mandare un desiderio in cielo con una lanterna, cosa direbbe?",
+     "c": "Scrivi un desiderio per il prossimo mese su un foglietto e tienilo dove puoi vederlo."
+    },
+    "pt": {
+     "t": "Festas das lanternas",
+     "g": "Admira as lanternas de papel da China, de Taiwan, do Vietname e da Tailândia, e os desejos que levam.",
+     "p": [
+      "A Festa das Lanternas chinesa encerra o Ano Novo Lunar na primeira lua cheia, com lanternas e adivinhas para resolver.",
+      "Em Pingxi, Taiwan, escrevem-se desejos em lanternas voadoras antes de as soltar; Hoi An, no Vietname, brilha a cada lua cheia.",
+      "Na Tailândia, no Loy Krathong, põem-se a flutuar cestinhos enfeitados na água, e Chiang Mai é famosa pelas lanternas voadoras."
+     ],
+     "q": "Se pudesses enviar um desejo para o céu numa lanterna, o que diria?",
+     "c": "Escreve num papel um desejo para o próximo mês e guarda-o num sítio onde o vejas."
+    },
+    "pt_BR": {
+     "t": "Festas das lanternas",
+     "g": "Admire as lanternas de papel da China, de Taiwan, do Vietnã e da Tailândia, e os desejos que elas levam.",
+     "p": [
+      "A Festa das Lanternas chinesa encerra o Ano-Novo Lunar na primeira lua cheia, com lanternas e charadas para resolver.",
+      "Em Pingxi, Taiwan, as pessoas escrevem desejos em lanternas antes de soltá-las; Hoi An, no Vietnã, brilha a cada lua cheia.",
+      "Na Tailândia, no Loy Krathong, cestinhos enfeitados flutuam na água, e Chiang Mai é famosa pelas lanternas voadoras."
+     ],
+     "q": "Se você pudesse mandar um desejo para o céu numa lanterna, o que ele diria?",
+     "c": "Escreva num papel um desejo para o próximo mês e guarde num lugar onde você possa vê-lo."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fireworks: a global celebration",
+     "g": "Find out where fireworks come from and which festivals around the world are most famous for them.",
+     "p": [
+      "Fireworks began in China over a thousand years ago, after the invention of gunpowder; firecrackers came even earlier from bamboo.",
+      "Big fireworks shows mark New Year in Sydney, 4 July in the US and 14 July, Bastille Day, in France.",
+      "In Valencia, Spain, the Fallas festival in March is famous for its daytime mascletà, a thunder of rhythmic firecrackers."
+     ],
+     "q": "Do you enjoy fireworks, or do you prefer quieter celebrations?",
+     "c": "Find a video of a famous fireworks show and count how many colours you can see."
+    },
+    "de": {
+     "t": "Feuerwerk: ein weltweites Fest",
+     "g": "Erfahre, woher das Feuerwerk stammt und für welche Feste in aller Welt es besonders berühmt ist.",
+     "p": [
+      "Feuerwerk entstand vor über tausend Jahren in China nach der Erfindung des Schießpulvers; Knallkörper aus Bambus gab es schon früher.",
+      "Große Feuerwerke gibt es zu Neujahr in Sydney, am 4. Juli in den USA und am 14. Juli, dem Nationalfeiertag, in Frankreich.",
+      "In Valencia sind die Fallas im März für die Mascletà am Tag berühmt, ein Donnern rhythmischer Knallkörper."
+     ],
+     "q": "Magst du Feuerwerk, oder sind dir ruhigere Feste lieber?",
+     "c": "Such ein Video eines berühmten Feuerwerks und zähle, wie viele Farben du siehst."
+    },
+    "es": {
+     "t": "Fuegos artificiales: una fiesta global",
+     "g": "Descubre de dónde vienen los fuegos artificiales y qué fiestas del mundo son más famosas por ellos.",
+     "p": [
+      "Los fuegos artificiales nacieron en China hace más de mil años, tras la invención de la pólvora; los petardos de bambú son aún más antiguos.",
+      "Grandes espectáculos marcan el Año Nuevo en Sídney, el 4 de julio en EE. UU. y el 14 de julio, fiesta nacional, en Francia.",
+      "En Valencia, las Fallas de marzo son famosas por la mascletà de mediodía, un estruendo rítmico de petardos."
+     ],
+     "q": "¿Te gustan los fuegos artificiales o prefieres celebraciones más tranquilas?",
+     "c": "Busca un vídeo de un espectáculo de fuegos famoso y cuenta cuántos colores ves."
+    },
+    "fr": {
+     "t": "Les feux d'artifice : une fête mondiale",
+     "g": "Découvre d'où viennent les feux d'artifice et quelles fêtes du monde sont les plus célèbres pour eux.",
+     "p": [
+      "Les feux d'artifice sont nés en Chine il y a plus de mille ans, après l'invention de la poudre ; les pétards en bambou sont plus anciens.",
+      "De grands feux marquent le Nouvel An à Sydney, le 4 juillet aux États-Unis et le 14 juillet, fête nationale, en France.",
+      "À Valence, en Espagne, les Fallas de mars sont célèbres pour la mascletà de midi, un tonnerre rythmé de pétards."
+     ],
+     "q": "Aimes-tu les feux d'artifice, ou préfères-tu les fêtes plus calmes ?",
+     "c": "Trouve la vidéo d'un célèbre feu d'artifice et compte combien de couleurs tu vois."
+    },
+    "it": {
+     "t": "Fuochi d'artificio: una festa globale",
+     "g": "Scopri da dove vengono i fuochi d'artificio e quali feste del mondo sono più famose per loro.",
+     "p": [
+      "I fuochi d'artificio nacquero in Cina oltre mille anni fa, dopo l'invenzione della polvere da sparo; i petardi di bambù sono più antichi.",
+      "Grandi spettacoli segnano il Capodanno a Sydney, il 4 luglio negli USA e il 14 luglio, festa nazionale, in Francia.",
+      "A Valencia, in Spagna, le Fallas di marzo sono famose per la mascletà di mezzogiorno, un tuono ritmico di petardi."
+     ],
+     "q": "Ti piacciono i fuochi d'artificio o preferisci feste più tranquille?",
+     "c": "Cerca il video di un famoso spettacolo pirotecnico e conta quanti colori vedi."
+    },
+    "pt": {
+     "t": "Fogo de artifício: uma festa global",
+     "g": "Descobre de onde vem o fogo de artifício e que festas do mundo são mais famosas por ele.",
+     "p": [
+      "O fogo de artifício nasceu na China há mais de mil anos, depois da invenção da pólvora; os petardos de bambu são ainda mais antigos.",
+      "Grandes espetáculos marcam o Ano Novo em Sydney, o 4 de julho nos EUA e o 14 de julho, feriado nacional, em França.",
+      "Em Valência, Espanha, as Fallas de março são famosas pela mascletà do meio-dia, um trovão rítmico de petardos."
+     ],
+     "q": "Gostas de fogo de artifício ou preferes celebrações mais calmas?",
+     "c": "Procura um vídeo de um espetáculo de fogo de artifício famoso e conta quantas cores vês."
+    },
+    "pt_BR": {
+     "t": "Fogos de artifício: uma festa global",
+     "g": "Descubra de onde vêm os fogos de artifício e quais festas do mundo são mais famosas por eles.",
+     "p": [
+      "Os fogos nasceram na China há mais de mil anos, depois da invenção da pólvora; os rojões de bambu são ainda mais antigos.",
+      "Grandes shows marcam o Ano-Novo em Sydney e em Copacabana, o 4 de julho nos EUA e o 14 de julho na França.",
+      "Em Valência, na Espanha, as Fallas de março são famosas pela mascletà do meio-dia, um trovão rítmico de bombinhas."
+     ],
+     "q": "Você gosta de fogos de artifício ou prefere comemorações mais tranquilas?",
+     "c": "Procure um vídeo de um show de fogos famoso e conte quantas cores você vê."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Festival music basics",
+     "g": "Discover how drums, brass bands, bells and songs set the mood of a celebration.",
+     "p": [
+      "Drums give festivals their heartbeat: Brazil's samba percussion groups and Japan's big taiko drums are famous examples.",
+      "Brass bands march through New Orleans at Mardi Gras and play cheerful oompah music at Bavarian beer festivals.",
+      "Bells and songs mark key moments: Japanese temples ring a bell 108 times at New Year, and many sing Auld Lang Syne."
+     ],
+     "q": "Which song immediately makes you feel like celebrating?",
+     "c": "Make a short playlist of five songs you would play at your own festival."
+    },
+    "de": {
+     "t": "Festmusik: die Grundlagen",
+     "g": "Entdecke, wie Trommeln, Blaskapellen, Glocken und Lieder die Stimmung eines Festes prägen.",
+     "p": [
+      "Trommeln sind der Herzschlag der Feste: Brasiliens Samba-Trommelgruppen und Japans große Taiko-Trommeln sind berühmte Beispiele.",
+      "Blaskapellen ziehen zu Mardi Gras durch New Orleans und spielen auf bayerischen Bierfesten fröhliche Blasmusik.",
+      "Glocken und Lieder markieren wichtige Momente: Japanische Tempel läuten zu Neujahr 108-mal, viele singen Auld Lang Syne."
+     ],
+     "q": "Bei welchem Lied bekommst du sofort Lust zu feiern?",
+     "c": "Stell eine kurze Playlist mit fünf Liedern für dein eigenes Fest zusammen."
+    },
+    "es": {
+     "t": "Lo básico de la música festiva",
+     "g": "Descubre cómo tambores, bandas de metales, campanas y canciones crean el ambiente de una celebración.",
+     "p": [
+      "Los tambores son el latido de las fiestas: las baterías de samba de Brasil y los grandes tambores taiko de Japón son ejemplos famosos.",
+      "Las bandas de metales desfilan por Nueva Orleans en Mardi Gras y tocan música alegre en las fiestas de la cerveza bávaras.",
+      "Campanas y canciones marcan los momentos clave: los templos japoneses tocan una campana 108 veces en Año Nuevo."
+     ],
+     "q": "¿Qué canción te da ganas de celebrar en cuanto la oyes?",
+     "c": "Haz una lista corta de cinco canciones que pondrías en tu propia fiesta."
+    },
+    "fr": {
+     "t": "Les bases de la musique de fête",
+     "g": "Découvre comment tambours, fanfares, cloches et chansons donnent le ton d'une célébration.",
+     "p": [
+      "Les tambours sont le cœur des fêtes : les batucadas de samba du Brésil et les grands tambours taiko du Japon en sont de célèbres exemples.",
+      "Les fanfares défilent à La Nouvelle-Orléans pour Mardi gras et jouent une musique joyeuse aux fêtes de la bière bavaroises.",
+      "Cloches et chansons marquent les moments clés : au Nouvel An, les temples japonais font sonner une cloche 108 fois."
+     ],
+     "q": "Quelle chanson te donne tout de suite envie de faire la fête ?",
+     "c": "Crée une courte playlist de cinq chansons que tu passerais à ta propre fête."
+    },
+    "it": {
+     "t": "Le basi della musica di festa",
+     "g": "Scopri come tamburi, bande, campane e canzoni creano l'atmosfera di una celebrazione.",
+     "p": [
+      "I tamburi sono il battito delle feste: le batterie di samba del Brasile e i grandi tamburi taiko giapponesi sono esempi famosi.",
+      "Le bande di ottoni sfilano a New Orleans per Mardi Gras e suonano musica allegra alle feste della birra bavaresi.",
+      "Campane e canzoni segnano i momenti chiave: a Capodanno i templi giapponesi suonano una campana 108 volte."
+     ],
+     "q": "Quale canzone ti fa venire subito voglia di festeggiare?",
+     "c": "Crea una breve playlist di cinque canzoni che metteresti alla tua festa."
+    },
+    "pt": {
+     "t": "O essencial da música de festa",
+     "g": "Descobre como tambores, bandas filarmónicas, sinos e canções criam o ambiente de uma celebração.",
+     "p": [
+      "Os tambores são o coração das festas: as baterias de samba do Brasil e os grandes tambores taiko do Japão são exemplos famosos.",
+      "As bandas de metais desfilam em Nova Orleães no Mardi Gras e tocam música alegre nas festas da cerveja da Baviera.",
+      "Sinos e canções marcam os momentos-chave: no Ano Novo, os templos japoneses tocam um sino 108 vezes."
+     ],
+     "q": "Que canção te dá logo vontade de festejar?",
+     "c": "Faz uma pequena playlist de cinco músicas que porias na tua própria festa."
+    },
+    "pt_BR": {
+     "t": "O básico da música de festa",
+     "g": "Descubra como tambores, bandas de metais, sinos e canções criam o clima de uma celebração.",
+     "p": [
+      "Os tambores são o coração das festas: as baterias das escolas de samba e os grandes tambores taiko do Japão são exemplos famosos.",
+      "As bandas de metais desfilam em Nova Orleans no Mardi Gras e tocam música alegre nas festas da cerveja da Baviera.",
+      "Sinos e canções marcam os momentos-chave: no Ano-Novo, os templos japoneses tocam um sino 108 vezes."
+     ],
+     "q": "Qual música dá logo vontade de comemorar em você?",
+     "c": "Monte uma pequena playlist com cinco músicas que você tocaria na sua própria festa."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Festival dances",
+     "g": "Get to know circle dances, maypole dances, samba and street dances, explained in simple words.",
+     "p": [
+      "Circle dances, like the Greek syrtos or the hora, join everyone hand in hand, so anyone can join in.",
+      "In maypole dances, dancers hold ribbons and weave them around a tall pole, a spring and summer custom in Europe.",
+      "Samba moves to fast drums at Brazil's carnival, and bhangra brings energetic steps to harvest festivals in Punjab."
+     ],
+     "q": "Which festival dance would you most like to learn?",
+     "c": "Put on a festive song and try ten minutes of a simple dance, alone or with others."
+    },
+    "de": {
+     "t": "Festtänze",
+     "g": "Lerne Kreistänze, Maibaumtänze, Samba und Straßentänze kennen, einfach erklärt.",
+     "p": [
+      "Kreistänze wie der griechische Syrtos oder die Hora verbinden alle Hand in Hand, sodass jeder mitmachen kann.",
+      "Beim Bändertanz um den Maibaum flechten Tänzer Bänder um einen hohen Mast, ein Frühlings- und Sommerbrauch in Europa.",
+      "Samba tanzt man zu schnellen Trommeln im brasilianischen Karneval, Bhangra bringt kraftvolle Schritte zu Erntefesten im Punjab."
+     ],
+     "q": "Welchen Festtanz würdest du am liebsten lernen?",
+     "c": "Leg ein festliches Lied auf und tanz zehn Minuten einen einfachen Tanz, allein oder mit anderen."
+    },
+    "es": {
+     "t": "Bailes festivos",
+     "g": "Conoce las danzas en círculo, el baile del palo de mayo, la samba y los bailes callejeros, explicados con sencillez.",
+     "p": [
+      "Las danzas en círculo, como el syrtos griego o la hora, unen a todos de la mano para que cualquiera pueda sumarse.",
+      "En el baile del palo de mayo se trenzan cintas alrededor de un poste alto, una costumbre de primavera y verano en Europa.",
+      "La samba se baila con tambores rápidos en el carnaval de Brasil, y el bhangra llena de energía las fiestas de la cosecha del Punyab."
+     ],
+     "q": "¿Qué baile festivo te gustaría más aprender?",
+     "c": "Pon una canción festiva y prueba diez minutos un baile sencillo, solo o con otras personas."
+    },
+    "fr": {
+     "t": "Les danses de fête",
+     "g": "Découvre les rondes, la danse autour de l'arbre de mai, la samba et les danses de rue, expliquées simplement.",
+     "p": [
+      "Les rondes, comme le syrtos grec ou la hora, relient tout le monde main dans la main : chacun peut s'y joindre.",
+      "Dans la danse de l'arbre de mai, on tresse des rubans autour d'un grand mât, une coutume européenne du printemps et de l'été.",
+      "La samba se danse sur des tambours rapides au carnaval du Brésil, et le bhangra anime les fêtes des récoltes au Pendjab."
+     ],
+     "q": "Quelle danse de fête aimerais-tu le plus apprendre ?",
+     "c": "Mets une chanson festive et essaie dix minutes une danse simple, seul ou avec d'autres."
+    },
+    "it": {
+     "t": "Danze di festa",
+     "g": "Conosci le danze in cerchio, la danza dell'albero di maggio, la samba e le danze di strada, spiegate in modo semplice.",
+     "p": [
+      "Le danze in cerchio, come il syrtos greco o la hora, uniscono tutti mano nella mano, così chiunque può unirsi.",
+      "Nella danza dell'albero di maggio si intrecciano nastri attorno a un palo alto, un'usanza europea di primavera ed estate.",
+      "La samba si balla su tamburi veloci al carnevale brasiliano, e il bhangra porta passi energici alle feste del raccolto in Punjab."
+     ],
+     "q": "Quale danza di festa ti piacerebbe imparare di più?",
+     "c": "Metti una canzone di festa e prova per dieci minuti un ballo semplice, da solo o in compagnia."
+    },
+    "pt": {
+     "t": "Danças de festa",
+     "g": "Conhece as danças de roda, a dança do mastro de maio, o samba e as danças de rua, explicadas de forma simples.",
+     "p": [
+      "As danças de roda, como o syrtos grego ou a hora, juntam todos de mãos dadas, para que qualquer pessoa possa entrar.",
+      "Na dança do mastro de maio entrançam-se fitas à volta de um mastro alto, um costume europeu da primavera e do verão.",
+      "O samba dança-se ao som de tambores rápidos no carnaval do Brasil, e o bhangra anima as festas das colheitas no Punjab."
+     ],
+     "q": "Que dança de festa gostavas mais de aprender?",
+     "c": "Põe uma música festiva e experimenta dez minutos de uma dança simples, sozinho ou acompanhado."
+    },
+    "pt_BR": {
+     "t": "Danças de festa",
+     "g": "Conheça as danças de roda, a dança do mastro de maio, o samba e as danças de rua, explicadas de um jeito simples.",
+     "p": [
+      "As danças de roda, como o syrtos grego ou a hora, unem todos de mãos dadas, para que qualquer pessoa possa entrar.",
+      "Na dança do mastro de maio as fitas são trançadas em volta de um mastro alto, um costume europeu de primavera e verão.",
+      "O samba é dançado ao som de tambores rápidos no carnaval, e o bhangra anima as festas da colheita no Punjab, na Índia."
+     ],
+     "q": "Qual dança de festa você mais gostaria de aprender?",
+     "c": "Coloque uma música festiva e experimente dez minutos de uma dança simples, sozinho ou com outras pessoas."
+    }
+   }
+  }
+ ]
+}

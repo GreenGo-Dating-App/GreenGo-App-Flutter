@@ -1,0 +1,835 @@
+{
+ "topic": "festivals",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lion and dragon dances",
+     "g": "See how performers bring the lion and the dragon to life, and why these dances are said to bring good luck.",
+     "p": [
+      "A lion is usually danced by two people, one at the head and one at the tail, with jumps and playful moves.",
+      "A dragon is carried on poles by a long team of dancers who make it twist and chase a pearl.",
+      "Loud drums, cymbals and gongs drive the dance, and the bright, noisy show is meant to chase bad luck away."
+     ],
+     "q": "Would you rather be the head of the lion, the tail, or play the drums?",
+     "c": "Watch a short video of a lion or dragon dance and notice how the dancers show the animal's mood."
+    },
+    "de": {
+     "t": "Löwen- und Drachentänze",
+     "g": "Erfahre, wie Tänzer Löwe und Drache zum Leben erwecken und warum diese Tänze Glück bringen sollen.",
+     "p": [
+      "Ein Löwe wird meist von zwei Personen getanzt, eine am Kopf, eine am Schwanz, mit Sprüngen und verspielten Bewegungen.",
+      "Ein Drache wird von einer langen Reihe von Tänzern an Stangen getragen, die ihn winden und einer Perle nachjagen lassen.",
+      "Laute Trommeln, Becken und Gongs treiben den Tanz an; die bunte, laute Schau soll das Pech vertreiben."
+     ],
+     "q": "Wärst du lieber der Kopf des Löwen, der Schwanz, oder würdest du trommeln?",
+     "c": "Sieh dir ein kurzes Video eines Löwen- oder Drachentanzes an und achte darauf, wie die Stimmung des Tieres gezeigt wird."
+    },
+    "es": {
+     "t": "Danzas del león y del dragón",
+     "g": "Descubre cómo los bailarines dan vida al león y al dragón, y por qué se dice que estas danzas traen buena suerte.",
+     "p": [
+      "El león suele bailarlo una pareja, uno en la cabeza y otro en la cola, con saltos y movimientos juguetones.",
+      "El dragón lo llevan con palos un largo equipo de bailarines que lo hacen serpentear y perseguir una perla.",
+      "Tambores, platillos y gongs marcan el ritmo; el espectáculo vistoso y ruidoso sirve para ahuyentar la mala suerte."
+     ],
+     "q": "¿Preferirías ser la cabeza del león, la cola o tocar los tambores?",
+     "c": "Mira un vídeo corto de una danza del león o del dragón y fíjate en cómo muestran el ánimo del animal."
+    },
+    "fr": {
+     "t": "Les danses du lion et du dragon",
+     "g": "Découvre comment les danseurs donnent vie au lion et au dragon, et pourquoi ces danses porteraient chance.",
+     "p": [
+      "Le lion est souvent dansé par deux personnes, l'une à la tête, l'autre à la queue, avec sauts et gestes espiègles.",
+      "Le dragon est porté sur des perches par une longue équipe de danseurs qui le font onduler et poursuivre une perle.",
+      "Tambours, cymbales et gongs rythment la danse ; ce spectacle coloré et bruyant doit chasser la malchance."
+     ],
+     "q": "Préférerais-tu être la tête du lion, la queue, ou jouer du tambour ?",
+     "c": "Regarde une courte vidéo de danse du lion ou du dragon et observe comment l'humeur de l'animal est montrée."
+    },
+    "it": {
+     "t": "Danze del leone e del drago",
+     "g": "Scopri come i danzatori danno vita al leone e al drago, e perché si dice che queste danze portino fortuna.",
+     "p": [
+      "Il leone è di solito danzato da due persone, una alla testa e una alla coda, con salti e movimenti giocosi.",
+      "Il drago è portato su pali da una lunga squadra di danzatori che lo fanno serpeggiare e inseguire una perla.",
+      "Tamburi, piatti e gong scandiscono la danza; lo spettacolo colorato e rumoroso serve a scacciare la sfortuna."
+     ],
+     "q": "Preferiresti essere la testa del leone, la coda o suonare i tamburi?",
+     "c": "Guarda un breve video di una danza del leone o del drago e nota come viene mostrato l'umore dell'animale."
+    },
+    "pt": {
+     "t": "Danças do leão e do dragão",
+     "g": "Descobre como os bailarinos dão vida ao leão e ao dragão, e porque se diz que estas danças trazem sorte.",
+     "p": [
+      "O leão é normalmente dançado por duas pessoas, uma na cabeça e outra na cauda, com saltos e movimentos brincalhões.",
+      "O dragão é levado em varas por uma longa equipa de bailarinos que o fazem serpentear e perseguir uma pérola.",
+      "Tambores, pratos e gongos marcam o ritmo; o espetáculo colorido e barulhento serve para afastar o azar."
+     ],
+     "q": "Preferias ser a cabeça do leão, a cauda ou tocar os tambores?",
+     "c": "Vê um pequeno vídeo de uma dança do leão ou do dragão e repara como mostram o humor do animal."
+    },
+    "pt_BR": {
+     "t": "Danças do leão e do dragão",
+     "g": "Descubra como os dançarinos dão vida ao leão e ao dragão, e por que dizem que essas danças trazem sorte.",
+     "p": [
+      "O leão costuma ser dançado por duas pessoas, uma na cabeça e outra no rabo, com saltos e movimentos brincalhões.",
+      "O dragão é carregado em varas por uma longa equipe de dançarinos que o fazem serpentear e perseguir uma pérola.",
+      "Tambores, pratos e gongos marcam o ritmo; o espetáculo colorido e barulhento serve para espantar o azar."
+     ],
+     "q": "Você preferiria ser a cabeça do leão, o rabo ou tocar os tambores?",
+     "c": "Assista a um vídeo curto de uma dança do leão ou do dragão e repare como mostram o humor do animal."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Parades and processions",
+     "g": "Learn how floats, marching bands and street processions come together in a festive parade.",
+     "p": [
+      "Big parades need months of planning: a route, a running order, safety teams and lots of volunteers.",
+      "Floats are decorated platforms on wheels; the Rose Parade in California covers its floats entirely in flowers.",
+      "Brazil's samba schools work all year on costumes, songs and floats for just one night in the carnival parade."
+     ],
+     "q": "Have you ever watched or walked in a parade? What do you remember most?",
+     "c": "Design a float on paper for a festival you love: theme, colours and who would ride on it."
+    },
+    "de": {
+     "t": "Umzüge und Prozessionen",
+     "g": "Erfahre, wie Festwagen, Marschkapellen und Straßenprozessionen zu einem festlichen Umzug werden.",
+     "p": [
+      "Große Umzüge brauchen Monate der Planung: eine Route, eine Reihenfolge, Sicherheitsteams und viele Freiwillige.",
+      "Festwagen sind geschmückte Plattformen auf Rädern; bei der Rose Parade in Kalifornien sind sie ganz mit Blumen bedeckt.",
+      "Brasiliens Sambaschulen arbeiten das ganze Jahr an Kostümen, Liedern und Wagen für eine einzige Nacht im Karnevalsumzug."
+     ],
+     "q": "Hast du schon einmal einen Umzug gesehen oder bist mitgelaufen? Woran erinnerst du dich am meisten?",
+     "c": "Entwirf auf Papier einen Festwagen für ein Fest, das du liebst: Thema, Farben und wer mitfährt."
+    },
+    "es": {
+     "t": "Desfiles y procesiones",
+     "g": "Aprende cómo carrozas, bandas de música y procesiones callejeras se unen en un desfile festivo.",
+     "p": [
+      "Los grandes desfiles requieren meses de preparación: un recorrido, un orden de salida, equipos de seguridad y muchos voluntarios.",
+      "Las carrozas son plataformas decoradas sobre ruedas; en el Desfile de las Rosas de California van totalmente cubiertas de flores.",
+      "Las escuelas de samba de Brasil trabajan todo el año en disfraces, canciones y carrozas para una sola noche de desfile."
+     ],
+     "q": "¿Has visto o participado alguna vez en un desfile? ¿Qué recuerdas más?",
+     "c": "Diseña en papel una carroza para una fiesta que te encante: tema, colores y quién iría en ella."
+    },
+    "fr": {
+     "t": "Défilés et processions",
+     "g": "Découvre comment chars, fanfares et processions de rue se réunissent dans un défilé de fête.",
+     "p": [
+      "Les grands défilés demandent des mois de préparation : un parcours, un ordre de passage, des équipes de sécurité et des bénévoles.",
+      "Les chars sont des plateformes décorées sur roues ; à la Rose Parade, en Californie, ils sont entièrement couverts de fleurs.",
+      "Les écoles de samba du Brésil travaillent toute l'année sur costumes, chansons et chars pour une seule nuit de défilé."
+     ],
+     "q": "As-tu déjà regardé un défilé ou défilé toi-même ? Qu'est-ce qui t'a le plus marqué ?",
+     "c": "Dessine un char pour une fête que tu aimes : thème, couleurs et qui monterait dessus."
+    },
+    "it": {
+     "t": "Sfilate e processioni",
+     "g": "Scopri come carri, bande musicali e cortei di strada si uniscono in una sfilata di festa.",
+     "p": [
+      "Le grandi sfilate richiedono mesi di preparazione: un percorso, un ordine di uscita, squadre di sicurezza e tanti volontari.",
+      "I carri sono piattaforme decorate su ruote; alla Rose Parade in California sono interamente ricoperti di fiori.",
+      "Le scuole di samba brasiliane lavorano tutto l'anno a costumi, canzoni e carri per una sola notte di sfilata."
+     ],
+     "q": "Hai mai visto o partecipato a una sfilata? Cosa ricordi di più?",
+     "c": "Disegna su carta un carro per una festa che ami: tema, colori e chi ci salirebbe."
+    },
+    "pt": {
+     "t": "Desfiles e procissões",
+     "g": "Aprende como carros alegóricos, bandas e cortejos de rua se juntam num desfile de festa.",
+     "p": [
+      "Os grandes desfiles exigem meses de preparação: um percurso, uma ordem de saída, equipas de segurança e muitos voluntários.",
+      "Os carros alegóricos são plataformas enfeitadas sobre rodas; na Rose Parade, na Califórnia, vão totalmente cobertos de flores.",
+      "As escolas de samba do Brasil trabalham o ano inteiro em fatos, sambas e carros para uma só noite de desfile."
+     ],
+     "q": "Já alguma vez viste ou participaste num desfile? De que te lembras mais?",
+     "c": "Desenha um carro alegórico para uma festa de que gostes: tema, cores e quem iria nele."
+    },
+    "pt_BR": {
+     "t": "Desfiles e procissões",
+     "g": "Aprenda como carros alegóricos, bandas e cortejos de rua se juntam num desfile de festa.",
+     "p": [
+      "Os grandes desfiles exigem meses de preparação: um percurso, uma ordem de entrada, equipes de segurança e muitos voluntários.",
+      "Os carros alegóricos são plataformas decoradas sobre rodas; na Rose Parade, na Califórnia, eles são todos cobertos de flores.",
+      "As escolas de samba trabalham o ano inteiro em fantasias, samba-enredo e carros para uma única noite de desfile."
+     ],
+     "q": "Você já assistiu ou participou de um desfile? Do que você mais se lembra?",
+     "c": "Desenhe um carro alegórico para uma festa que você ama: tema, cores e quem iria nele."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Festival greetings and wishes",
+     "g": "Learn kind phrases to wish people well at some of the most common celebrations.",
+     "p": [
+      "Eid Mubarak means blessed Eid; for Diwali say Happy Diwali, and for many Jewish holidays say Chag sameach.",
+      "At Lunar New Year, Cantonese speakers say Kung hei fat choi and Mandarin speakers Gōngxǐ fācái, wishing prosperity.",
+      "If you are not sure, a simple Wishing you a happy celebration is always warm and respectful."
+     ],
+     "q": "Which festival greeting do you find the most beautiful?",
+     "c": "Wish a friend or colleague well for their next celebration, using the greeting from their culture."
+    },
+    "de": {
+     "t": "Festgrüße und Glückwünsche",
+     "g": "Lerne freundliche Wendungen, um Menschen zu den häufigsten Festen alles Gute zu wünschen.",
+     "p": [
+      "Eid Mubarak bedeutet gesegnetes Fest; zu Diwali sagt man Happy Diwali, zu vielen jüdischen Feiertagen Chag sameach.",
+      "Zum Mondneujahr sagt man auf Kantonesisch Kung hei fat choi und auf Mandarin Gōngxǐ fācái, ein Wunsch für Wohlstand.",
+      "Wenn du unsicher bist, ist ein einfaches „Ich wünsche dir ein schönes Fest“ immer herzlich und respektvoll."
+     ],
+     "q": "Welchen Festgruß findest du am schönsten?",
+     "c": "Wünsche einer Freundin oder einem Kollegen zum nächsten Fest alles Gute, mit dem Gruß aus ihrer Kultur."
+    },
+    "es": {
+     "t": "Saludos y buenos deseos festivos",
+     "g": "Aprende frases amables para felicitar a la gente en algunas de las celebraciones más comunes.",
+     "p": [
+      "Eid Mubarak significa Eid bendito; en Diwali se dice Happy Diwali y en muchas fiestas judías, Jag sameaj.",
+      "En el Año Nuevo Lunar se dice Kung hei fat choi en cantonés y Gōngxǐ fācái en mandarín, deseando prosperidad.",
+      "Si no estás seguro, un sencillo «Te deseo una feliz celebración» siempre es cálido y respetuoso."
+     ],
+     "q": "¿Qué saludo festivo te parece el más bonito?",
+     "c": "Felicita a un amigo o compañero por su próxima celebración usando el saludo de su cultura."
+    },
+    "fr": {
+     "t": "Vœux et souhaits de fête",
+     "g": "Apprends des formules aimables pour souhaiter le meilleur lors des fêtes les plus courantes.",
+     "p": [
+      "Aïd Moubarak signifie Aïd béni ; pour Diwali, on dit Happy Diwali, et pour beaucoup de fêtes juives, Hag sameah.",
+      "Au Nouvel An lunaire, on dit Kung hei fat choi en cantonais et Gōngxǐ fācái en mandarin, pour souhaiter la prospérité.",
+      "Si tu n'es pas sûr, un simple « Je te souhaite une belle fête » est toujours chaleureux et respectueux."
+     ],
+     "q": "Quel vœu de fête trouves-tu le plus beau ?",
+     "c": "Souhaite une bonne fête à un ami ou un collègue pour sa prochaine célébration, avec le vœu de sa culture."
+    },
+    "it": {
+     "t": "Auguri e saluti di festa",
+     "g": "Impara frasi gentili per fare gli auguri nelle celebrazioni più comuni.",
+     "p": [
+      "Eid Mubarak significa Eid benedetto; per Diwali si dice Happy Diwali e per molte feste ebraiche Chag sameach.",
+      "Per il Capodanno lunare si dice Kung hei fat choi in cantonese e Gōngxǐ fācái in mandarino, augurando prosperità.",
+      "Se non sei sicuro, un semplice «Ti auguro una bella festa» è sempre caloroso e rispettoso."
+     ],
+     "q": "Quale augurio di festa trovi più bello?",
+     "c": "Fai gli auguri a un amico o collega per la sua prossima festa, usando il saluto della sua cultura."
+    },
+    "pt": {
+     "t": "Saudações e votos de festa",
+     "g": "Aprende frases simpáticas para desejar o melhor às pessoas nas celebrações mais comuns.",
+     "p": [
+      "Eid Mubarak significa Eid abençoado; no Diwali diz-se Happy Diwali e em muitas festas judaicas, Chag sameach.",
+      "No Ano Novo Lunar diz-se Kung hei fat choi em cantonês e Gōngxǐ fācái em mandarim, desejando prosperidade.",
+      "Se não tiveres a certeza, um simples «Desejo-te uma boa festa» é sempre caloroso e respeitoso."
+     ],
+     "q": "Que saudação de festa achas mais bonita?",
+     "c": "Deseja boas festas a um amigo ou colega na próxima celebração dele, com a saudação da sua cultura."
+    },
+    "pt_BR": {
+     "t": "Saudações e votos de festa",
+     "g": "Aprenda frases gentis para desejar o melhor às pessoas nas celebrações mais comuns.",
+     "p": [
+      "Eid Mubarak significa Eid abençoado; no Diwali diz-se Happy Diwali e em muitas festas judaicas, Chag sameach.",
+      "No Ano-Novo Lunar diz-se Kung hei fat choi em cantonês e Gōngxǐ fācái em mandarim, desejando prosperidade.",
+      "Se você não tiver certeza, um simples «Desejo uma ótima festa para você» é sempre caloroso e respeitoso."
+     ],
+     "q": "Qual saudação de festa você acha mais bonita?",
+     "c": "Deseje boas festas a um amigo ou colega na próxima celebração dele, usando a saudação da cultura dele."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gift-giving customs",
+     "g": "Discover what to give, how to wrap it and which gifts to avoid in different cultures.",
+     "p": [
+      "In China, Japan and Korea gifts are offered and received with both hands, a simple sign of respect.",
+      "In Japan gifts are often beautifully wrapped and may be opened later; in the US they are often opened right away.",
+      "Some gifts are avoided: sets of four in parts of East Asia, clocks in China, and sharp knives in several cultures."
+     ],
+     "q": "What is the best gift you have ever received at a festival, and why did it matter?",
+     "c": "Wrap a small gift or note for someone today with extra care, even using simple paper."
+    },
+    "de": {
+     "t": "Bräuche beim Schenken",
+     "g": "Entdecke, was man schenkt, wie man es verpackt und welche Geschenke man in verschiedenen Kulturen meidet.",
+     "p": [
+      "In China, Japan und Korea überreicht und empfängt man Geschenke mit beiden Händen, ein einfaches Zeichen von Respekt.",
+      "In Japan sind Geschenke oft kunstvoll verpackt und werden später geöffnet; in den USA öffnet man sie oft sofort.",
+      "Manches meidet man: Vierersets in Teilen Ostasiens, Uhren in China und scharfe Messer in mehreren Kulturen."
+     ],
+     "q": "Was war das schönste Geschenk, das du je zu einem Fest bekommen hast, und warum war es dir wichtig?",
+     "c": "Verpacke heute ein kleines Geschenk oder eine Notiz für jemanden besonders liebevoll, auch mit einfachem Papier."
+    },
+    "es": {
+     "t": "Costumbres al hacer regalos",
+     "g": "Descubre qué regalar, cómo envolverlo y qué regalos conviene evitar en distintas culturas.",
+     "p": [
+      "En China, Japón y Corea los regalos se dan y se reciben con las dos manos, una sencilla señal de respeto.",
+      "En Japón suelen envolverse con mucho cuidado y pueden abrirse después; en EE. UU. a menudo se abren al momento.",
+      "Algunos regalos se evitan: los juegos de cuatro en partes de Asia oriental, los relojes en China y los cuchillos en varias culturas."
+     ],
+     "q": "¿Cuál es el mejor regalo que has recibido en una fiesta y por qué fue importante?",
+     "c": "Envuelve hoy un pequeño regalo o una nota para alguien con mucho cariño, aunque sea con papel sencillo."
+    },
+    "fr": {
+     "t": "Les coutumes des cadeaux",
+     "g": "Découvre quoi offrir, comment l'emballer et quels cadeaux éviter selon les cultures.",
+     "p": [
+      "En Chine, au Japon et en Corée, on offre et on reçoit un cadeau à deux mains, un simple signe de respect.",
+      "Au Japon, les cadeaux sont souvent joliment emballés et ouverts plus tard ; aux États-Unis, on les ouvre souvent tout de suite.",
+      "On évite certains cadeaux : les lots de quatre dans une partie de l'Asie de l'Est, les horloges en Chine, les couteaux ailleurs."
+     ],
+     "q": "Quel est le plus beau cadeau que tu aies reçu pour une fête, et pourquoi comptait-il pour toi ?",
+     "c": "Emballe aujourd'hui un petit cadeau ou un mot pour quelqu'un avec un soin particulier, même avec du papier simple."
+    },
+    "it": {
+     "t": "Usanze sui regali",
+     "g": "Scopri cosa regalare, come incartarlo e quali regali evitare nelle diverse culture.",
+     "p": [
+      "In Cina, Giappone e Corea i regali si offrono e si ricevono con due mani, un semplice segno di rispetto.",
+      "In Giappone i regali sono spesso incartati con cura e si aprono dopo; negli USA spesso si aprono subito.",
+      "Alcuni regali si evitano: i set da quattro in parte dell'Asia orientale, gli orologi in Cina e i coltelli in varie culture."
+     ],
+     "q": "Qual è il regalo più bello che hai ricevuto per una festa, e perché era importante?",
+     "c": "Incarta oggi un piccolo regalo o un biglietto per qualcuno con cura speciale, anche con carta semplice."
+    },
+    "pt": {
+     "t": "Costumes de oferecer presentes",
+     "g": "Descobre o que oferecer, como embrulhar e que presentes evitar em diferentes culturas.",
+     "p": [
+      "Na China, no Japão e na Coreia os presentes dão-se e recebem-se com as duas mãos, um simples sinal de respeito.",
+      "No Japão os presentes são muitas vezes embrulhados com cuidado e abertos mais tarde; nos EUA abrem-se logo.",
+      "Alguns presentes evitam-se: conjuntos de quatro em partes da Ásia Oriental, relógios na China e facas em várias culturas."
+     ],
+     "q": "Qual foi o melhor presente que recebeste numa festa e porque foi importante?",
+     "c": "Embrulha hoje um pequeno presente ou bilhete para alguém com muito carinho, mesmo com papel simples."
+    },
+    "pt_BR": {
+     "t": "Costumes de dar presentes",
+     "g": "Descubra o que dar, como embrulhar e quais presentes evitar em diferentes culturas.",
+     "p": [
+      "Na China, no Japão e na Coreia os presentes são dados e recebidos com as duas mãos, um simples sinal de respeito.",
+      "No Japão os presentes costumam ser embrulhados com capricho e abertos depois; nos EUA muitas vezes são abertos na hora.",
+      "Alguns presentes são evitados: conjuntos de quatro em partes da Ásia Oriental, relógios na China e facas em várias culturas."
+     ],
+     "q": "Qual foi o melhor presente que você já ganhou numa festa e por que ele foi importante?",
+     "c": "Embrulhe hoje um pequeno presente ou bilhete para alguém com muito carinho, mesmo com papel simples."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Festive colours and their meanings",
+     "g": "Find out what colours like red, white and gold can mean at celebrations around the world.",
+     "p": [
+      "Red stands for luck and joy in China and India, which is why it appears on envelopes, lanterns and festive clothes.",
+      "Gold suggests wealth and success, while green is linked with Ireland on Saint Patrick's Day and with spring.",
+      "The same colour can mean different things: white is a wedding colour in many Western countries but not everywhere."
+     ],
+     "q": "Which colour do you connect with your favourite celebration?",
+     "c": "Choose one colour for today and notice how many festive objects of that colour you see."
+    },
+    "de": {
+     "t": "Festfarben und ihre Bedeutung",
+     "g": "Erfahre, was Farben wie Rot, Weiß und Gold bei Festen in aller Welt bedeuten können.",
+     "p": [
+      "Rot steht in China und Indien für Glück und Freude und erscheint deshalb auf Umschlägen, Laternen und Festkleidung.",
+      "Gold steht für Reichtum und Erfolg, Grün für Irland am Saint Patrick's Day und für den Frühling.",
+      "Dieselbe Farbe kann Verschiedenes bedeuten: Weiß ist in vielen westlichen Ländern eine Hochzeitsfarbe, aber nicht überall."
+     ],
+     "q": "Welche Farbe verbindest du mit deinem Lieblingsfest?",
+     "c": "Wähle für heute eine Farbe und achte darauf, wie viele festliche Dinge in dieser Farbe du siehst."
+    },
+    "es": {
+     "t": "Los colores festivos y su significado",
+     "g": "Descubre qué pueden significar colores como el rojo, el blanco y el dorado en las celebraciones del mundo.",
+     "p": [
+      "El rojo representa la suerte y la alegría en China y la India, por eso aparece en sobres, farolillos y ropa de fiesta.",
+      "El dorado sugiere riqueza y éxito, y el verde se asocia con Irlanda el día de San Patricio y con la primavera.",
+      "Un mismo color puede significar cosas distintas: el blanco es color de boda en muchos países occidentales, pero no en todos."
+     ],
+     "q": "¿Qué color asocias con tu celebración favorita?",
+     "c": "Elige un color para hoy y fíjate en cuántos objetos festivos de ese color ves."
+    },
+    "fr": {
+     "t": "Les couleurs des fêtes et leur sens",
+     "g": "Découvre ce que des couleurs comme le rouge, le blanc et l'or peuvent signifier lors des fêtes du monde.",
+     "p": [
+      "Le rouge symbolise la chance et la joie en Chine et en Inde, d'où sa présence sur les enveloppes, lanternes et habits de fête.",
+      "L'or évoque la richesse et la réussite ; le vert est lié à l'Irlande à la Saint-Patrick et au printemps.",
+      "Une couleur peut avoir plusieurs sens : le blanc est une couleur de mariage dans beaucoup de pays occidentaux, pas partout."
+     ],
+     "q": "Quelle couleur associes-tu à ta fête préférée ?",
+     "c": "Choisis une couleur pour aujourd'hui et remarque combien d'objets festifs de cette couleur tu vois."
+    },
+    "it": {
+     "t": "I colori della festa e i loro significati",
+     "g": "Scopri cosa possono significare colori come rosso, bianco e oro nelle feste del mondo.",
+     "p": [
+      "Il rosso indica fortuna e gioia in Cina e in India, per questo compare su buste, lanterne e abiti di festa.",
+      "L'oro suggerisce ricchezza e successo, mentre il verde è legato all'Irlanda a San Patrizio e alla primavera.",
+      "Lo stesso colore può avere significati diversi: il bianco è un colore da sposa in molti Paesi occidentali, ma non ovunque."
+     ],
+     "q": "Quale colore associ alla tua festa preferita?",
+     "c": "Scegli un colore per oggi e nota quanti oggetti di festa di quel colore vedi."
+    },
+    "pt": {
+     "t": "As cores da festa e os seus significados",
+     "g": "Descobre o que cores como o vermelho, o branco e o dourado podem significar nas festas do mundo.",
+     "p": [
+      "O vermelho representa sorte e alegria na China e na Índia, por isso aparece em envelopes, lanternas e roupa de festa.",
+      "O dourado sugere riqueza e sucesso, e o verde está ligado à Irlanda no Dia de São Patrício e à primavera.",
+      "A mesma cor pode ter sentidos diferentes: o branco é cor de casamento em muitos países ocidentais, mas não em todos."
+     ],
+     "q": "Que cor associas à tua celebração preferida?",
+     "c": "Escolhe uma cor para hoje e repara em quantos objetos de festa dessa cor vês."
+    },
+    "pt_BR": {
+     "t": "As cores da festa e seus significados",
+     "g": "Descubra o que cores como o vermelho, o branco e o dourado podem significar nas festas do mundo.",
+     "p": [
+      "O vermelho representa sorte e alegria na China e na Índia, por isso aparece em envelopes, lanternas e roupas de festa.",
+      "O dourado sugere riqueza e sucesso; no Brasil, muita gente veste branco no Réveillon para atrair paz.",
+      "A mesma cor pode ter sentidos diferentes: o branco é cor de casamento em muitos países ocidentais, mas não em todos."
+     ],
+     "q": "Qual cor você associa à sua celebração favorita?",
+     "c": "Escolha uma cor para hoje e repare em quantos objetos de festa dessa cor você vê."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lucky numbers and symbols",
+     "g": "Learn why 8, 7 or 3 count as lucky in some places and how symbols of luck appear at festivals.",
+     "p": [
+      "In Chinese the word for eight sounds like the word for prosper, so 8 is a favourite number for dates and prices.",
+      "Seven is lucky in many Western cultures, and three appears again and again in fairy tales and sayings.",
+      "Symbols also carry luck: a fish for abundance at Lunar New Year, a horseshoe or a four-leaf clover in Europe."
+     ],
+     "q": "Do you have a lucky number or a lucky object? Where does it come from?",
+     "c": "Find one lucky symbol from a culture that is new to you and learn what it means."
+    },
+    "de": {
+     "t": "Glückszahlen und Glückssymbole",
+     "g": "Erfahre, warum 8, 7 oder 3 an manchen Orten als Glückszahlen gelten und wie Glückssymbole bei Festen auftauchen.",
+     "p": [
+      "Auf Chinesisch klingt das Wort für Acht ähnlich wie das Wort für gedeihen, daher ist die 8 bei Daten und Preisen beliebt.",
+      "Die Sieben gilt in vielen westlichen Kulturen als Glückszahl, und die Drei taucht in Märchen und Sprüchen immer wieder auf.",
+      "Auch Symbole bringen Glück: ein Fisch für Fülle zum Mondneujahr, ein Hufeisen oder ein vierblättriges Kleeblatt in Europa."
+     ],
+     "q": "Hast du eine Glückszahl oder einen Glücksbringer? Woher kommt er?",
+     "c": "Finde ein Glückssymbol aus einer Kultur, die neu für dich ist, und lerne seine Bedeutung."
+    },
+    "es": {
+     "t": "Números y símbolos de la suerte",
+     "g": "Aprende por qué el 8, el 7 o el 3 se consideran números de la suerte en algunos lugares y cómo aparecen sus símbolos.",
+     "p": [
+      "En chino la palabra ocho suena parecida a prosperar, por eso el 8 es un número favorito para fechas y precios.",
+      "El siete trae suerte en muchas culturas occidentales, y el tres aparece una y otra vez en cuentos y refranes.",
+      "Los símbolos también traen suerte: un pez para la abundancia en el Año Nuevo Lunar, una herradura o un trébol de cuatro hojas."
+     ],
+     "q": "¿Tienes un número o un objeto de la suerte? ¿De dónde viene?",
+     "c": "Busca un símbolo de la suerte de una cultura nueva para ti y aprende qué significa."
+    },
+    "fr": {
+     "t": "Chiffres et symboles porte-bonheur",
+     "g": "Découvre pourquoi le 8, le 7 ou le 3 portent chance dans certains pays et comment les symboles de chance s'invitent aux fêtes.",
+     "p": [
+      "En chinois, le mot huit ressemble au mot prospérer : le 8 est donc très prisé pour les dates et les prix.",
+      "Le sept porte chance dans beaucoup de cultures occidentales, et le trois revient sans cesse dans les contes et les dictons.",
+      "Les symboles aussi portent chance : un poisson pour l'abondance au Nouvel An lunaire, un fer à cheval ou un trèfle à quatre feuilles."
+     ],
+     "q": "As-tu un chiffre ou un objet porte-bonheur ? D'où vient-il ?",
+     "c": "Trouve un symbole porte-bonheur d'une culture nouvelle pour toi et apprends ce qu'il signifie."
+    },
+    "it": {
+     "t": "Numeri e simboli portafortuna",
+     "g": "Scopri perché l'8, il 7 o il 3 sono considerati fortunati in alcuni luoghi e come i simboli della fortuna compaiono alle feste.",
+     "p": [
+      "In cinese la parola otto suona simile a prosperare, per questo l'8 è amatissimo per date e prezzi.",
+      "Il sette porta fortuna in molte culture occidentali, e il tre torna di continuo in fiabe e proverbi: non c'è due senza tre.",
+      "Anche i simboli portano fortuna: un pesce per l'abbondanza al Capodanno lunare, un ferro di cavallo o un quadrifoglio in Europa."
+     ],
+     "q": "Hai un numero o un oggetto portafortuna? Da dove viene?",
+     "c": "Trova un simbolo portafortuna di una cultura nuova per te e scopri cosa significa."
+    },
+    "pt": {
+     "t": "Números e símbolos da sorte",
+     "g": "Aprende porque é que o 8, o 7 ou o 3 são considerados números da sorte em alguns lugares e como os símbolos aparecem nas festas.",
+     "p": [
+      "Em chinês a palavra oito soa parecida com prosperar, por isso o 8 é um número favorito para datas e preços.",
+      "O sete dá sorte em muitas culturas ocidentais, e o três aparece vezes sem conta em contos e provérbios.",
+      "Os símbolos também dão sorte: um peixe para a abundância no Ano Novo Lunar, uma ferradura ou um trevo de quatro folhas."
+     ],
+     "q": "Tens um número ou um objeto da sorte? De onde vem?",
+     "c": "Procura um símbolo da sorte de uma cultura nova para ti e aprende o que significa."
+    },
+    "pt_BR": {
+     "t": "Números e símbolos da sorte",
+     "g": "Aprenda por que o 8, o 7 ou o 3 são considerados números da sorte em alguns lugares e como os símbolos aparecem nas festas.",
+     "p": [
+      "Em chinês a palavra oito soa parecida com prosperar, por isso o 8 é um número queridinho para datas e preços.",
+      "O sete dá sorte em muitas culturas ocidentais; no Brasil, muitos pulam sete ondas na virada do ano.",
+      "Os símbolos também dão sorte: um peixe para a fartura no Ano-Novo Lunar, uma ferradura ou um trevo de quatro folhas."
+     ],
+     "q": "Você tem um número ou um objeto da sorte? De onde ele vem?",
+     "c": "Procure um símbolo da sorte de uma cultura nova para você e aprenda o que ele significa."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eid al-Fitr basics",
+     "g": "Learn how Eid al-Fitr marks the end of Ramadan with new clothes, sweets, family visits and generosity.",
+     "p": [
+      "Ramadan is the Islamic month of fasting from dawn to sunset; Eid al-Fitr begins when the next month's new moon is seen.",
+      "The day often starts with a special morning prayer, then families wear new clothes, visit relatives and share sweets.",
+      "Giving is central: a charity gift for people in need is made before the prayer, and children often receive money."
+     ],
+     "q": "How do people in your community share with others during festivals?",
+     "c": "Learn to say Eid Mubarak, meaning blessed Eid, and find out what Eid is called in Turkey or Indonesia."
+    },
+    "de": {
+     "t": "Das Zuckerfest: die Grundlagen",
+     "g": "Erfahre, wie Eid al-Fitr das Ende des Ramadan mit neuer Kleidung, Süßem, Familienbesuchen und Großzügigkeit feiert.",
+     "p": [
+      "Ramadan ist der islamische Fastenmonat von der Morgendämmerung bis Sonnenuntergang; das Fest beginnt mit der Sichtung des Neumonds.",
+      "Der Tag beginnt oft mit einem besonderen Morgengebet, dann trägt man neue Kleidung, besucht Verwandte und teilt Süßes.",
+      "Geben steht im Mittelpunkt: Vor dem Gebet spendet man für Bedürftige, und Kinder bekommen oft Geld geschenkt."
+     ],
+     "q": "Wie teilen die Menschen in deiner Gemeinschaft an Festtagen mit anderen?",
+     "c": "Lerne den Gruß Eid Mubarak, gesegnetes Fest, und finde heraus, wie das Fest in der Türkei oder Indonesien heißt."
+    },
+    "es": {
+     "t": "Lo básico del Eid al-Fitr",
+     "g": "Aprende cómo el Eid al-Fitr marca el fin del Ramadán con ropa nueva, dulces, visitas familiares y generosidad.",
+     "p": [
+      "El Ramadán es el mes islámico de ayuno del alba a la puesta de sol; el Eid empieza al avistarse la luna nueva del mes siguiente.",
+      "El día suele empezar con una oración especial por la mañana; luego se estrena ropa, se visita a la familia y se comparten dulces.",
+      "Dar es esencial: antes de la oración se entrega una limosna a quien lo necesita, y los niños suelen recibir dinero."
+     ],
+     "q": "¿Cómo comparte la gente de tu comunidad con los demás durante las fiestas?",
+     "c": "Aprende a decir Eid Mubarak, Eid bendito, y averigua cómo se llama el Eid en Turquía o Indonesia."
+    },
+    "fr": {
+     "t": "Les bases de l'Aïd al-Fitr",
+     "g": "Découvre comment l'Aïd al-Fitr marque la fin du ramadan avec habits neufs, douceurs, visites et générosité.",
+     "p": [
+      "Le ramadan est le mois musulman de jeûne de l'aube au coucher du soleil ; l'Aïd commence quand on aperçoit la nouvelle lune suivante.",
+      "La journée commence souvent par une prière spéciale ; puis on porte des habits neufs, on visite la famille et on partage des douceurs.",
+      "Le don est essentiel : une aumône pour les plus démunis est versée avant la prière, et les enfants reçoivent souvent de l'argent."
+     ],
+     "q": "Comment les gens de ta communauté partagent-ils avec les autres pendant les fêtes ?",
+     "c": "Apprends à dire Aïd Moubarak, Aïd béni, et découvre comment l'Aïd s'appelle en Turquie ou en Indonésie."
+    },
+    "it": {
+     "t": "Le basi di Eid al-Fitr",
+     "g": "Scopri come Eid al-Fitr segna la fine del Ramadan con abiti nuovi, dolci, visite in famiglia e generosità.",
+     "p": [
+      "Il Ramadan è il mese islamico di digiuno dall'alba al tramonto; l'Eid inizia quando si avvista la luna nuova del mese successivo.",
+      "La giornata inizia spesso con una preghiera speciale al mattino, poi si indossano abiti nuovi, si visitano i parenti e si offrono dolci.",
+      "Donare è centrale: prima della preghiera si fa un'offerta per chi è nel bisogno, e i bambini ricevono spesso del denaro."
+     ],
+     "q": "Come condividono con gli altri le persone della tua comunità durante le feste?",
+     "c": "Impara a dire Eid Mubarak, Eid benedetto, e scopri come si chiama l'Eid in Turchia o in Indonesia."
+    },
+    "pt": {
+     "t": "O essencial do Eid al-Fitr",
+     "g": "Aprende como o Eid al-Fitr marca o fim do Ramadão com roupa nova, doces, visitas à família e generosidade.",
+     "p": [
+      "O Ramadão é o mês islâmico de jejum do amanhecer ao pôr do sol; o Eid começa quando se avista a lua nova do mês seguinte.",
+      "O dia começa muitas vezes com uma oração especial de manhã; depois estreia-se roupa, visitam-se os parentes e partilham-se doces.",
+      "Dar é essencial: antes da oração faz-se uma doação a quem precisa, e as crianças recebem muitas vezes dinheiro."
+     ],
+     "q": "Como é que as pessoas da tua comunidade partilham com os outros nas festas?",
+     "c": "Aprende a dizer Eid Mubarak, Eid abençoado, e descobre como se chama o Eid na Turquia ou na Indonésia."
+    },
+    "pt_BR": {
+     "t": "O básico do Eid al-Fitr",
+     "g": "Aprenda como o Eid al-Fitr marca o fim do Ramadã com roupas novas, doces, visitas à família e generosidade.",
+     "p": [
+      "O Ramadã é o mês islâmico de jejum do amanhecer ao pôr do sol; o Eid começa quando se avista a lua nova do mês seguinte.",
+      "O dia muitas vezes começa com uma oração especial de manhã; depois as pessoas estreiam roupas, visitam parentes e dividem doces.",
+      "Doar é essencial: antes da oração faz-se uma doação a quem precisa, e as crianças muitas vezes ganham dinheiro."
+     ],
+     "q": "Como as pessoas da sua comunidade compartilham com os outros nas festas?",
+     "c": "Aprenda a dizer Eid Mubarak, Eid abençoado, e descubra como o Eid se chama na Turquia ou na Indonésia."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Festive sweets of the world",
+     "g": "Taste baklava, mochi, gulab jamun, brigadeiros and other treats made for celebrations.",
+     "p": [
+      "Baklava, thin layers of pastry with nuts and syrup, is shared at festivals from Turkey to the Middle East and the Balkans.",
+      "In Japan soft rice cakes called mochi are pounded and eaten at New Year; in India gulab jamun in syrup brighten Diwali.",
+      "In Brazil no birthday party is complete without brigadeiros, little chocolate balls made with condensed milk."
+     ],
+     "q": "Which festive sweet would you travel the furthest to taste?",
+     "c": "Make or buy one small sweet linked to a festival and share it with someone."
+    },
+    "de": {
+     "t": "Festliche Süßigkeiten der Welt",
+     "g": "Probiere Baklava, Mochi, Gulab Jamun, Brigadeiros und andere Leckereien, die für Feste gemacht werden.",
+     "p": [
+      "Baklava, dünne Teigschichten mit Nüssen und Sirup, teilt man bei Festen von der Türkei über den Nahen Osten bis zum Balkan.",
+      "In Japan stampft man zu Neujahr weiche Reiskuchen namens Mochi; in Indien versüßen Gulab Jamun in Sirup das Diwali-Fest.",
+      "In Brasilien gehören zu jedem Kindergeburtstag Brigadeiros, kleine Schokokugeln aus Kondensmilch."
+     ],
+     "q": "Für welche festliche Süßigkeit würdest du am weitesten reisen?",
+     "c": "Mach oder kauf eine kleine Süßigkeit, die zu einem Fest gehört, und teile sie mit jemandem."
+    },
+    "es": {
+     "t": "Dulces festivos del mundo",
+     "g": "Prueba el baklava, el mochi, el gulab jamun, los brigadeiros y otras delicias hechas para celebrar.",
+     "p": [
+      "El baklava, finas capas de masa con frutos secos y almíbar, se comparte en fiestas desde Turquía hasta Oriente Medio y los Balcanes.",
+      "En Japón se machacan y comen pasteles de arroz llamados mochi en Año Nuevo; en la India, el gulab jamun en almíbar alegra Diwali.",
+      "En Brasil ningún cumpleaños está completo sin brigadeiros, bolitas de chocolate hechas con leche condensada."
+     ],
+     "q": "¿Por qué dulce festivo viajarías más lejos para probarlo?",
+     "c": "Prepara o compra un dulce ligado a una fiesta y compártelo con alguien."
+    },
+    "fr": {
+     "t": "Les douceurs de fête du monde",
+     "g": "Goûte le baklava, les mochis, les gulab jamun, les brigadeiros et d'autres gourmandises de fête.",
+     "p": [
+      "Le baklava, fines couches de pâte aux fruits secs et au sirop, se partage lors des fêtes de la Turquie au Moyen-Orient et aux Balkans.",
+      "Au Japon, on pile et on mange des gâteaux de riz mochi au Nouvel An ; en Inde, les gulab jamun au sirop égaient Diwali.",
+      "Au Brésil, pas d'anniversaire sans brigadeiros, petites boules de chocolat au lait concentré."
+     ],
+     "q": "Pour quelle douceur de fête irais-tu le plus loin ?",
+     "c": "Prépare ou achète une petite douceur liée à une fête et partage-la avec quelqu'un."
+    },
+    "it": {
+     "t": "Dolci di festa del mondo",
+     "g": "Assaggia baklava, mochi, gulab jamun, brigadeiros e altre delizie preparate per le feste.",
+     "p": [
+      "La baklava, sottili strati di pasta con frutta secca e sciroppo, si condivide alle feste dalla Turchia al Medio Oriente e ai Balcani.",
+      "In Giappone i morbidi dolci di riso mochi si pestano e si mangiano a Capodanno; in India i gulab jamun allo sciroppo addolciscono Diwali.",
+      "In Brasile nessuna festa di compleanno è completa senza brigadeiros, palline di cioccolato al latte condensato."
+     ],
+     "q": "Per quale dolce di festa viaggeresti più lontano?",
+     "c": "Prepara o compra un piccolo dolce legato a una festa e condividilo con qualcuno."
+    },
+    "pt": {
+     "t": "Doces de festa do mundo",
+     "g": "Prova a baklava, os mochis, os gulab jamun, os brigadeiros e outras delícias feitas para celebrar.",
+     "p": [
+      "A baklava, finas camadas de massa com frutos secos e calda, partilha-se em festas da Turquia ao Médio Oriente e aos Balcãs.",
+      "No Japão pilam-se e comem-se bolos de arroz mochi no Ano Novo; na Índia, os gulab jamun em calda adoçam o Diwali.",
+      "No Brasil nenhuma festa de anos está completa sem brigadeiros, bolinhas de chocolate feitas com leite condensado."
+     ],
+     "q": "Por que doce de festa viajarias mais longe para provar?",
+     "c": "Faz ou compra um pequeno doce ligado a uma festa e partilha-o com alguém."
+    },
+    "pt_BR": {
+     "t": "Doces de festa do mundo",
+     "g": "Experimente baklava, mochi, gulab jamun, brigadeiro e outras delícias feitas para comemorar.",
+     "p": [
+      "A baklava, finas camadas de massa com castanhas e calda, é servida em festas da Turquia ao Oriente Médio e aos Bálcãs.",
+      "No Japão os bolinhos de arroz mochi são socados e comidos no Ano-Novo; na Índia, o gulab jamun em calda adoça o Diwali.",
+      "No Brasil nenhuma festa de aniversário está completa sem brigadeiros, docinhos de chocolate com leite condensado."
+     ],
+     "q": "Por qual doce de festa você viajaria mais longe para provar?",
+     "c": "Faça ou compre um docinho ligado a uma festa e divida com alguém."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Family traditions",
+     "g": "See how each family adds its own small rituals to the big festivals, and how new traditions begin.",
+     "p": [
+      "Many families keep small rituals: a recipe from a grandparent, a special ornament or a photo in the same spot every year.",
+      "When families mix cultures, they often blend customs, such as two festive meals or gifts on two different days.",
+      "Any tradition starts with a first time: something you enjoy and repeat can become a family custom."
+     ],
+     "q": "What is one small tradition your family or friends keep every year?",
+     "c": "Invent a tiny new tradition for your next celebration and write down how it works."
+    },
+    "de": {
+     "t": "Familientraditionen",
+     "g": "Erfahre, wie jede Familie den großen Festen eigene kleine Rituale hinzufügt und wie neue Traditionen entstehen.",
+     "p": [
+      "Viele Familien pflegen kleine Rituale: ein Rezept der Großeltern, einen besonderen Schmuck oder ein Foto jedes Jahr am selben Ort.",
+      "Wenn Familien Kulturen verbinden, mischen sie oft Bräuche, etwa zwei Festessen oder Geschenke an zwei verschiedenen Tagen.",
+      "Jede Tradition beginnt mit einem ersten Mal: Was dir Freude macht und sich wiederholt, kann ein Familienbrauch werden."
+     ],
+     "q": "Welche kleine Tradition pflegen deine Familie oder Freunde jedes Jahr?",
+     "c": "Erfinde eine kleine neue Tradition für dein nächstes Fest und schreib auf, wie sie funktioniert."
+    },
+    "es": {
+     "t": "Tradiciones familiares",
+     "g": "Descubre cómo cada familia añade sus pequeños ritos a las grandes fiestas y cómo nacen las tradiciones nuevas.",
+     "p": [
+      "Muchas familias guardan pequeños ritos: una receta de los abuelos, un adorno especial o una foto en el mismo lugar cada año.",
+      "Cuando las familias mezclan culturas, a menudo combinan costumbres, como dos cenas festivas o regalos en dos días distintos.",
+      "Toda tradición empieza con una primera vez: algo que disfrutas y repites puede convertirse en costumbre familiar."
+     ],
+     "q": "¿Qué pequeña tradición mantienen cada año tu familia o tus amigos?",
+     "c": "Inventa una pequeña tradición nueva para tu próxima celebración y escribe cómo funciona."
+    },
+    "fr": {
+     "t": "Les traditions familiales",
+     "g": "Découvre comment chaque famille ajoute ses petits rituels aux grandes fêtes, et comment naissent les nouvelles traditions.",
+     "p": [
+      "Beaucoup de familles ont de petits rituels : une recette des grands-parents, une décoration spéciale ou une photo au même endroit.",
+      "Quand les familles mêlent les cultures, elles combinent souvent les coutumes : deux repas de fête ou des cadeaux deux jours différents.",
+      "Toute tradition commence par une première fois : ce que tu aimes et répètes peut devenir une coutume familiale."
+     ],
+     "q": "Quelle petite tradition ta famille ou tes amis gardent-ils chaque année ?",
+     "c": "Invente une petite tradition nouvelle pour ta prochaine fête et écris comment elle fonctionne."
+    },
+    "it": {
+     "t": "Tradizioni di famiglia",
+     "g": "Scopri come ogni famiglia aggiunge i suoi piccoli riti alle grandi feste e come nascono nuove tradizioni.",
+     "p": [
+      "Molte famiglie mantengono piccoli riti: una ricetta dei nonni, una decorazione speciale o una foto nello stesso posto ogni anno.",
+      "Quando le famiglie uniscono culture diverse, spesso mescolano le usanze, come due cene di festa o regali in due giorni diversi.",
+      "Ogni tradizione nasce da una prima volta: qualcosa che ti piace e che ripeti può diventare un'usanza di famiglia."
+     ],
+     "q": "Quale piccola tradizione mantengono ogni anno la tua famiglia o i tuoi amici?",
+     "c": "Inventa una piccola tradizione nuova per la tua prossima festa e scrivi come funziona."
+    },
+    "pt": {
+     "t": "Tradições de família",
+     "g": "Descobre como cada família junta os seus pequenos rituais às grandes festas e como nascem tradições novas.",
+     "p": [
+      "Muitas famílias mantêm pequenos rituais: uma receita dos avós, um enfeite especial ou uma fotografia no mesmo sítio todos os anos.",
+      "Quando as famílias juntam culturas, muitas vezes misturam costumes, como duas refeições de festa ou presentes em dois dias.",
+      "Qualquer tradição começa com uma primeira vez: algo de que gostas e repetes pode tornar-se um costume de família."
+     ],
+     "q": "Que pequena tradição a tua família ou os teus amigos mantêm todos os anos?",
+     "c": "Inventa uma pequena tradição nova para a tua próxima celebração e escreve como funciona."
+    },
+    "pt_BR": {
+     "t": "Tradições de família",
+     "g": "Descubra como cada família acrescenta seus pequenos rituais às grandes festas e como nascem tradições novas.",
+     "p": [
+      "Muitas famílias mantêm pequenos rituais: uma receita da avó, um enfeite especial ou uma foto no mesmo lugar todo ano.",
+      "Quando as famílias juntam culturas, muitas vezes misturam costumes, como duas ceias de festa ou presentes em dois dias.",
+      "Toda tradição começa com uma primeira vez: algo de que você gosta e repete pode virar um costume de família."
+     ],
+     "q": "Qual pequena tradição a sua família ou os seus amigos mantêm todo ano?",
+     "c": "Invente uma pequena tradição nova para a sua próxima comemoração e escreva como ela funciona."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Birthdays around the world",
+     "g": "Discover cakes, long-life noodles, birthday songs and other ways people celebrate another year of life.",
+     "p": [
+      "In many countries people blow out candles on a cake and make a silent wish, while friends sing a birthday song.",
+      "In China long-life noodles are eaten without cutting them, and in Korea seaweed soup is a classic birthday dish.",
+      "In Mexico children often break a piñata, and in Brazil the first slice of cake goes to someone very special."
+     ],
+     "q": "How do you like to spend your birthday: a big party or a quiet day?",
+     "c": "Learn the birthday song in a language you do not speak yet and hum it once."
+    },
+    "de": {
+     "t": "Geburtstage rund um die Welt",
+     "g": "Entdecke Torten, Nudeln für ein langes Leben, Geburtstagslieder und andere Arten, ein neues Lebensjahr zu feiern.",
+     "p": [
+      "In vielen Ländern pustet man die Kerzen auf dem Kuchen aus und wünscht sich still etwas, während Freunde singen.",
+      "In China isst man Nudeln für ein langes Leben, ohne sie zu schneiden, und in Korea ist Seetangsuppe ein klassisches Geburtstagsessen.",
+      "In Mexiko schlagen Kinder oft eine Piñata auf, und in Brasilien geht das erste Stück Kuchen an einen besonderen Menschen."
+     ],
+     "q": "Wie verbringst du deinen Geburtstag am liebsten: mit großer Party oder ruhig?",
+     "c": "Lerne das Geburtstagslied in einer Sprache, die du noch nicht sprichst, und summe es einmal."
+    },
+    "es": {
+     "t": "Cumpleaños por el mundo",
+     "g": "Descubre tartas, fideos de larga vida, canciones de cumpleaños y otras formas de celebrar un año más.",
+     "p": [
+      "En muchos países se soplan las velas de una tarta pidiendo un deseo en silencio, mientras los amigos cantan.",
+      "En China se comen fideos de larga vida sin cortarlos, y en Corea la sopa de algas es un plato clásico de cumpleaños.",
+      "En México los niños suelen romper una piñata y cantar Las Mañanitas, y en Brasil la primera porción va a alguien muy especial."
+     ],
+     "q": "¿Cómo te gusta pasar tu cumpleaños: con una gran fiesta o un día tranquilo?",
+     "c": "Aprende la canción de cumpleaños en un idioma que aún no hablas y tararéala una vez."
+    },
+    "fr": {
+     "t": "Les anniversaires dans le monde",
+     "g": "Découvre gâteaux, nouilles de longévité, chansons d'anniversaire et autres façons de fêter une année de plus.",
+     "p": [
+      "Dans beaucoup de pays, on souffle les bougies d'un gâteau en faisant un vœu en silence, pendant que les amis chantent.",
+      "En Chine, on mange des nouilles de longévité sans les couper, et en Corée la soupe d'algues est un plat d'anniversaire classique.",
+      "Au Mexique, les enfants cassent souvent une piñata, et au Brésil la première part de gâteau va à une personne très chère."
+     ],
+     "q": "Comment aimes-tu passer ton anniversaire : grande fête ou journée calme ?",
+     "c": "Apprends la chanson d'anniversaire dans une langue que tu ne parles pas encore et fredonne-la une fois."
+    },
+    "it": {
+     "t": "Compleanni nel mondo",
+     "g": "Scopri torte, spaghetti di lunga vita, canzoni di compleanno e altri modi di festeggiare un anno in più.",
+     "p": [
+      "In molti Paesi si spengono le candeline sulla torta esprimendo un desiderio in silenzio, mentre gli amici cantano.",
+      "In Cina si mangiano gli spaghetti di lunga vita senza tagliarli, e in Corea la zuppa di alghe è un classico del compleanno.",
+      "In Messico i bambini rompono spesso una pignatta, e in Brasile la prima fetta di torta va a una persona molto speciale."
+     ],
+     "q": "Come ti piace passare il tuo compleanno: con una grande festa o in tranquillità?",
+     "c": "Impara la canzone di compleanno in una lingua che non parli ancora e canticchiala una volta."
+    },
+    "pt": {
+     "t": "Aniversários pelo mundo",
+     "g": "Descobre bolos, massas da longevidade, canções de parabéns e outras formas de celebrar mais um ano de vida.",
+     "p": [
+      "Em muitos países sopram-se as velas do bolo pedindo um desejo em silêncio, enquanto os amigos cantam os parabéns.",
+      "Na China comem-se massas da longevidade sem as cortar, e na Coreia a sopa de algas é um prato clássico de aniversário.",
+      "No México as crianças partem muitas vezes uma piñata, e no Brasil a primeira fatia de bolo vai para alguém muito especial."
+     ],
+     "q": "Como gostas de passar o teu aniversário: com uma grande festa ou um dia calmo?",
+     "c": "Aprende a canção dos parabéns numa língua que ainda não falas e trauteia-a uma vez."
+    },
+    "pt_BR": {
+     "t": "Aniversários pelo mundo",
+     "g": "Descubra bolos, macarrão da longevidade, canções de parabéns e outras formas de comemorar mais um ano de vida.",
+     "p": [
+      "Em muitos países as pessoas sopram as velinhas do bolo fazendo um pedido em silêncio, enquanto os amigos cantam parabéns.",
+      "Na China come-se macarrão da longevidade sem cortar, e na Coreia a sopa de algas é um prato clássico de aniversário.",
+      "No México as crianças costumam quebrar uma piñata, e no Brasil o primeiro pedaço de bolo vai para alguém muito especial."
+     ],
+     "q": "Como você gosta de passar o seu aniversário: com uma grande festa ou um dia tranquilo?",
+     "c": "Aprenda a música de parabéns em um idioma que você ainda não fala e cantarole uma vez."
+    }
+   }
+  }
+ ]
+}

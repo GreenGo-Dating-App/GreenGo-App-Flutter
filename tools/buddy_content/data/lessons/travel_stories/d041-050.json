@@ -1,0 +1,835 @@
+{
+ "topic": "travel_stories",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stories about delays",
+     "g": "Turn waiting rooms and long queues into entertaining scenes.",
+     "p": [
+      "Delays are full of characters: the snoring neighbour, the chatty child.",
+      "Describe how time felt: the clock that never moved, the tenth coffee.",
+      "Something good often happens while waiting: a talk, a snack, a new friend."
+     ],
+     "q": "What is the longest delay you have had on a trip, and how did you pass the time?",
+     "c": "Turn one boring wait you remember into a scene with one character."
+    },
+    "de": {
+     "t": "Geschichten über Verspätungen",
+     "g": "Mach aus Wartesälen und langen Schlangen unterhaltsame Szenen.",
+     "p": [
+      "Verspätungen sind voller Figuren: der schnarchende Nachbar, das gesprächige Kind.",
+      "Beschreib, wie sich die Zeit anfühlte: die Uhr, die stillstand, der zehnte Kaffee.",
+      "Beim Warten passiert oft etwas Gutes: ein Gespräch, ein Snack, eine neue Bekanntschaft."
+     ],
+     "q": "Was war die längste Verspätung auf einer Reise, und wie hast du die Zeit verbracht?",
+     "c": "Mach aus einer langweiligen Wartezeit eine Szene mit einer Figur."
+    },
+    "es": {
+     "t": "Historias de retrasos",
+     "g": "Convierte las salas de espera y las colas largas en escenas entretenidas.",
+     "p": [
+      "Los retrasos están llenos de personajes: el vecino que ronca, el niño parlanchín.",
+      "Describe cómo pasaba el tiempo: el reloj que no avanzaba, el décimo café.",
+      "Mientras esperas suele pasar algo bueno: una charla, un tentempié, un nuevo amigo."
+     ],
+     "q": "¿Cuál es el retraso más largo que has tenido en un viaje y cómo pasaste el rato?",
+     "c": "Convierte una espera aburrida que recuerdes en una escena con un personaje."
+    },
+    "fr": {
+     "t": "Histoires de retards",
+     "g": "Transforme salles d'attente et longues files en scènes divertissantes.",
+     "p": [
+      "Les retards regorgent de personnages : le voisin qui ronfle, l'enfant bavard.",
+      "Décris le temps qui passe : l'horloge immobile, le dixième café.",
+      "Pendant l'attente, il se passe souvent quelque chose de bien : une discussion, un en-cas, un nouvel ami."
+     ],
+     "q": "Quel est le plus long retard que tu aies vécu en voyage, et comment as-tu passé le temps ?",
+     "c": "Transforme une attente ennuyeuse en scène avec un personnage."
+    },
+    "it": {
+     "t": "Storie di ritardi",
+     "g": "Trasforma sale d'attesa e lunghe code in scene divertenti.",
+     "p": [
+      "I ritardi sono pieni di personaggi: il vicino che russa, il bambino chiacchierone.",
+      "Descrivi come scorreva il tempo: l'orologio fermo, il decimo caffè.",
+      "Mentre aspetti succede spesso qualcosa di bello: una chiacchierata, uno spuntino, un nuovo amico."
+     ],
+     "q": "Qual è il ritardo più lungo che hai avuto in viaggio e come hai passato il tempo?",
+     "c": "Trasforma un'attesa noiosa che ricordi in una scena con un personaggio."
+    },
+    "pt": {
+     "t": "Histórias de atrasos",
+     "g": "Transforma salas de espera e filas longas em cenas divertidas.",
+     "p": [
+      "Os atrasos estão cheios de personagens: o vizinho que ressona, a criança faladora.",
+      "Descreve como o tempo passava: o relógio que não andava, o décimo café.",
+      "Enquanto esperas, costuma acontecer algo bom: uma conversa, um lanche, um amigo novo."
+     ],
+     "q": "Qual foi o atraso mais longo que tiveste numa viagem e como passaste o tempo?",
+     "c": "Transforma uma espera aborrecida de que te lembres numa cena com uma personagem."
+    },
+    "pt_BR": {
+     "t": "Histórias de atrasos",
+     "g": "Transforme salas de espera e filas longas em cenas divertidas.",
+     "p": [
+      "Atrasos são cheios de personagens: o vizinho que ronca, a criança tagarela.",
+      "Descreva como o tempo passava: o relógio que não andava, o décimo café.",
+      "Enquanto você espera, costuma acontecer algo bom: uma conversa, um lanche, um amigo novo."
+     ],
+     "q": "Qual foi o atraso mais longo que você teve em uma viagem e como passou o tempo?",
+     "c": "Transforme uma espera chata de que você lembra em uma cena com um personagem."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking for directions",
+     "g": "Tell stories about the people who answered and the places they sent you.",
+     "p": [
+      "Asking for directions is a tiny meeting with a local, full of gestures.",
+      "Describe how they explained: drawing on a napkin, walking you there.",
+      "Sometimes the wrong directions lead to the best discoveries."
+     ],
+     "q": "What is a memorable time you asked someone for directions abroad?",
+     "c": "Recall someone who gave you directions and describe their gestures."
+    },
+    "de": {
+     "t": "Nach dem Weg fragen",
+     "g": "Erzähl von den Menschen, die dir geantwortet haben, und den Orten, zu denen sie dich schickten.",
+     "p": [
+      "Nach dem Weg fragen ist eine kleine Begegnung mit Einheimischen, voller Gesten.",
+      "Beschreib, wie sie es erklärt haben: auf eine Serviette gezeichnet, dich hingebracht.",
+      "Manchmal führen falsche Wegbeschreibungen zu den besten Entdeckungen."
+     ],
+     "q": "Wann hast du im Ausland einmal auf denkwürdige Weise nach dem Weg gefragt?",
+     "c": "Erinnere dich an jemanden, der dir den Weg erklärt hat, und beschreib seine Gesten."
+    },
+    "es": {
+     "t": "Preguntar cómo llegar",
+     "g": "Cuenta historias de la gente que te respondió y de los lugares a los que te mandó.",
+     "p": [
+      "Preguntar el camino es un pequeño encuentro con alguien local, lleno de gestos.",
+      "Describe cómo te lo explicaron: dibujando en una servilleta, acompañándote.",
+      "A veces unas indicaciones equivocadas llevan a los mejores hallazgos."
+     ],
+     "q": "¿Recuerdas una vez especial en que preguntaste el camino en el extranjero?",
+     "c": "Recuerda a alguien que te indicó el camino y describe sus gestos."
+    },
+    "fr": {
+     "t": "Demander son chemin",
+     "g": "Raconte les gens qui t'ont répondu et les endroits où ils t'ont envoyé.",
+     "p": [
+      "Demander son chemin, c'est une petite rencontre avec un habitant, pleine de gestes.",
+      "Décris comment on t'a expliqué : un dessin sur une serviette, quelqu'un qui t'accompagne.",
+      "Parfois, de mauvaises indications mènent aux plus belles découvertes."
+     ],
+     "q": "Te souviens-tu d'une fois marquante où tu as demandé ton chemin à l'étranger ?",
+     "c": "Repense à quelqu'un qui t'a indiqué le chemin et décris ses gestes."
+    },
+    "it": {
+     "t": "Chiedere indicazioni",
+     "g": "Racconta le persone che ti hanno risposto e i posti dove ti hanno mandato.",
+     "p": [
+      "Chiedere la strada è un piccolo incontro con un abitante, pieno di gesti.",
+      "Descrivi come te l'hanno spiegato: un disegno su un tovagliolo, accompagnandoti.",
+      "A volte le indicazioni sbagliate portano alle scoperte migliori."
+     ],
+     "q": "Ricordi una volta speciale in cui hai chiesto indicazioni all'estero?",
+     "c": "Ripensa a qualcuno che ti ha dato indicazioni e descrivi i suoi gesti."
+    },
+    "pt": {
+     "t": "Pedir indicações",
+     "g": "Conta histórias das pessoas que te responderam e dos sítios para onde te mandaram.",
+     "p": [
+      "Pedir indicações é um pequeno encontro com alguém local, cheio de gestos.",
+      "Descreve como explicaram: um desenho num guardanapo, acompanhar-te até lá.",
+      "Às vezes, as indicações erradas levam às melhores descobertas."
+     ],
+     "q": "Lembras-te de uma vez marcante em que pediste indicações no estrangeiro?",
+     "c": "Lembra-te de alguém que te deu indicações e descreve os seus gestos."
+    },
+    "pt_BR": {
+     "t": "Pedindo informação",
+     "g": "Conte histórias das pessoas que responderam e dos lugares para onde mandaram você.",
+     "p": [
+      "Pedir informação é um pequeno encontro com alguém local, cheio de gestos.",
+      "Descreva como explicaram: um desenho no guardanapo, levando você até lá.",
+      "Às vezes, a informação errada leva às melhores descobertas."
+     ],
+     "q": "Você lembra de uma vez marcante em que pediu informação no exterior?",
+     "c": "Lembre alguém que deu informação para você e descreva os gestos da pessoa."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Unexpected friendships",
+     "g": "Remember people you met briefly who left a lasting impression.",
+     "p": [
+      "Short meetings can feel deep because travel opens us up.",
+      "Tell how you met, what you shared and how you said goodbye.",
+      "Some of these friendships continue for years; some live on as one bright memory."
+     ],
+     "q": "Have you ever made a friend on a trip in a very unexpected way?",
+     "c": "Think of one travel friend and write the first thing you said to each other."
+    },
+    "de": {
+     "t": "Unerwartete Freundschaften",
+     "g": "Erinnere dich an Menschen, die du kurz getroffen hast und die einen bleibenden Eindruck hinterließen.",
+     "p": [
+      "Kurze Begegnungen können tief gehen, weil Reisen uns öffnet.",
+      "Erzähl, wie ihr euch getroffen habt, was ihr geteilt habt und wie ihr euch verabschiedet habt.",
+      "Manche Freundschaften halten Jahre; andere leben als eine helle Erinnerung weiter."
+     ],
+     "q": "Hast du auf einer Reise schon einmal ganz unerwartet einen Freund gefunden?",
+     "c": "Denk an eine Reisebekanntschaft und schreib die ersten Worte auf, die ihr gewechselt habt."
+    },
+    "es": {
+     "t": "Amistades inesperadas",
+     "g": "Recuerda a personas que conociste poco tiempo y que te dejaron huella.",
+     "p": [
+      "Los encuentros cortos pueden ser profundos porque viajar nos abre.",
+      "Cuenta cómo os conocisteis, qué compartisteis y cómo os despedisteis.",
+      "Algunas amistades duran años; otras viven como un recuerdo luminoso."
+     ],
+     "q": "¿Alguna vez hiciste un amigo en un viaje de forma muy inesperada?",
+     "c": "Piensa en un amigo de viaje y escribe lo primero que os dijisteis."
+    },
+    "fr": {
+     "t": "Des amitiés inattendues",
+     "g": "Souviens-toi de personnes croisées brièvement qui t'ont marqué durablement.",
+     "p": [
+      "Les rencontres courtes peuvent être profondes, car le voyage nous ouvre.",
+      "Raconte comment vous vous êtes rencontrés, ce que vous avez partagé et comment vous vous êtes quittés.",
+      "Certaines amitiés durent des années ; d'autres restent un souvenir lumineux."
+     ],
+     "q": "T'es-tu déjà fait un ami en voyage de façon très inattendue ?",
+     "c": "Pense à un ami de voyage et écris la première chose que vous vous êtes dite."
+    },
+    "it": {
+     "t": "Amicizie inaspettate",
+     "g": "Ricorda persone incontrate per poco che ti hanno lasciato il segno.",
+     "p": [
+      "Gli incontri brevi possono essere profondi perché il viaggio ci apre.",
+      "Racconta come vi siete conosciuti, cosa avete condiviso e come vi siete salutati.",
+      "Alcune amicizie durano anni; altre restano come un ricordo luminoso."
+     ],
+     "q": "Ti è mai capitato di fare amicizia in viaggio in modo davvero inaspettato?",
+     "c": "Pensa a un amico di viaggio e scrivi la prima cosa che vi siete detti."
+    },
+    "pt": {
+     "t": "Amizades inesperadas",
+     "g": "Lembra-te de pessoas que conheceste por pouco tempo e que te marcaram.",
+     "p": [
+      "Os encontros curtos podem ser profundos porque viajar abre-nos.",
+      "Conta como se conheceram, o que partilharam e como se despediram.",
+      "Algumas amizades duram anos; outras ficam como uma memória luminosa."
+     ],
+     "q": "Já fizeste um amigo numa viagem de forma muito inesperada?",
+     "c": "Pensa num amigo de viagem e escreve a primeira coisa que disseram um ao outro."
+    },
+    "pt_BR": {
+     "t": "Amizades inesperadas",
+     "g": "Lembre de pessoas que você conheceu por pouco tempo e que marcaram você.",
+     "p": [
+      "Encontros curtos podem ser profundos porque viajar abre a gente.",
+      "Conte como vocês se conheceram, o que compartilharam e como se despediram.",
+      "Algumas amizades duram anos; outras ficam como uma lembrança luminosa."
+     ],
+     "q": "Você já fez um amigo em uma viagem de um jeito bem inesperado?",
+     "c": "Pense em um amigo de viagem e escreva a primeira coisa que vocês disseram um ao outro."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A meal to remember",
+     "g": "Put long dinners, picnics and street food at the centre of a story.",
+     "p": [
+      "The setting matters as much as the food: a plastic stool, a long wooden table.",
+      "Describe who was there and what everyone talked about.",
+      "One special bite or sip can be the climax of the whole story."
+     ],
+     "q": "What is the most memorable meal you have had while travelling?",
+     "c": "Describe one memorable meal with its place, its people and its best bite."
+    },
+    "de": {
+     "t": "Ein unvergessliches Essen",
+     "g": "Stell lange Abendessen, Picknicks und Streetfood ins Zentrum einer Geschichte.",
+     "p": [
+      "Der Rahmen zählt so viel wie das Essen: ein Plastikhocker, eine lange Holztafel.",
+      "Beschreib, wer dabei war und worüber alle geredet haben.",
+      "Ein besonderer Bissen oder Schluck kann der Höhepunkt der ganzen Geschichte sein."
+     ],
+     "q": "Was war das denkwürdigste Essen auf einer deiner Reisen?",
+     "c": "Beschreib ein unvergessliches Essen mit Ort, Menschen und dem besten Bissen."
+    },
+    "es": {
+     "t": "Una comida para recordar",
+     "g": "Pon las cenas largas, los pícnics y la comida callejera en el centro de una historia.",
+     "p": [
+      "El escenario importa tanto como la comida: un taburete de plástico, una mesa larga de madera.",
+      "Describe quién estaba y de qué hablaba todo el mundo.",
+      "Un bocado o un sorbo especial puede ser el clímax de toda la historia."
+     ],
+     "q": "¿Cuál es la comida más memorable que has tenido viajando?",
+     "c": "Describe una comida memorable con su lugar, su gente y su mejor bocado."
+    },
+    "fr": {
+     "t": "Un repas inoubliable",
+     "g": "Place les longs dîners, les pique-niques et la cuisine de rue au cœur d'une histoire.",
+     "p": [
+      "Le cadre compte autant que le plat : un tabouret en plastique, une grande table en bois.",
+      "Décris qui était là et de quoi tout le monde parlait.",
+      "Une bouchée ou une gorgée spéciale peut être le sommet de toute l'histoire."
+     ],
+     "q": "Quel est le repas le plus mémorable de tes voyages ?",
+     "c": "Décris un repas inoubliable avec son lieu, ses convives et sa meilleure bouchée."
+    },
+    "it": {
+     "t": "Un pasto da ricordare",
+     "g": "Metti cene lunghe, picnic e cibo di strada al centro di una storia.",
+     "p": [
+      "L'ambiente conta quanto il cibo: uno sgabello di plastica, una lunga tavola di legno.",
+      "Descrivi chi c'era e di cosa parlavano tutti.",
+      "Un boccone o un sorso speciale può essere il culmine di tutta la storia."
+     ],
+     "q": "Qual è il pasto più memorabile che hai fatto in viaggio?",
+     "c": "Descrivi un pasto memorabile con il luogo, le persone e il boccone migliore."
+    },
+    "pt": {
+     "t": "Uma refeição para recordar",
+     "g": "Põe jantares longos, piqueniques e comida de rua no centro de uma história.",
+     "p": [
+      "O cenário conta tanto como a comida: um banco de plástico, uma mesa comprida de madeira.",
+      "Descreve quem lá estava e de que falavam todos.",
+      "Uma garfada ou um gole especial pode ser o clímax da história toda."
+     ],
+     "q": "Qual foi a refeição mais memorável que tiveste a viajar?",
+     "c": "Descreve uma refeição memorável com o lugar, as pessoas e a melhor garfada."
+    },
+    "pt_BR": {
+     "t": "Uma refeição inesquecível",
+     "g": "Coloque jantares longos, piqueniques e comida de rua no centro de uma história.",
+     "p": [
+      "O cenário importa tanto quanto a comida: um banquinho de plástico, uma mesa comprida de madeira.",
+      "Descreva quem estava lá e sobre o que todo mundo conversava.",
+      "Uma garfada ou um gole especial pode ser o clímax da história inteira."
+     ],
+     "q": "Qual foi a refeição mais marcante que você teve viajando?",
+     "c": "Descreva uma refeição marcante com o lugar, as pessoas e a melhor garfada."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breakfast around the world",
+     "g": "Compare morning meals from different trips and the stories behind them.",
+     "p": [
+      "Breakfast shows daily life: sweet pastries, rice soup, beans, fresh fruit.",
+      "Compare with your usual breakfast to make the difference clear.",
+      "Breakfast scenes are calm and relatable, perfect for a gentle story."
+     ],
+     "q": "What is the most surprising breakfast you have ever had on a trip?",
+     "c": "Compare your everyday breakfast with one you had on a trip in two sentences."
+    },
+    "de": {
+     "t": "Frühstück rund um die Welt",
+     "g": "Vergleiche Frühstücke von verschiedenen Reisen und die Geschichten dahinter.",
+     "p": [
+      "Frühstück zeigt den Alltag: süßes Gebäck, Reissuppe, Bohnen, frisches Obst.",
+      "Vergleiche mit deinem üblichen Frühstück, damit der Unterschied klar wird.",
+      "Frühstücksszenen sind ruhig und nachvollziehbar, perfekt für eine sanfte Geschichte."
+     ],
+     "q": "Was war das überraschendste Frühstück, das du je auf einer Reise hattest?",
+     "c": "Vergleiche dein Alltagsfrühstück in zwei Sätzen mit einem Reisefrühstück."
+    },
+    "es": {
+     "t": "Desayunos por el mundo",
+     "g": "Compara desayunos de distintos viajes y las historias que hay detrás.",
+     "p": [
+      "El desayuno muestra la vida diaria: bollos dulces, sopa de arroz, alubias, fruta fresca.",
+      "Compáralo con tu desayuno habitual para que la diferencia quede clara.",
+      "Las escenas de desayuno son tranquilas y cercanas, perfectas para una historia suave."
+     ],
+     "q": "¿Cuál es el desayuno más sorprendente que has tomado en un viaje?",
+     "c": "Compara en dos frases tu desayuno de siempre con uno que tomaste viajando."
+    },
+    "fr": {
+     "t": "Le petit-déjeuner autour du monde",
+     "g": "Compare les petits-déjeuners de différents voyages et les histoires qui vont avec.",
+     "p": [
+      "Le petit-déjeuner montre la vie quotidienne : viennoiseries, soupe de riz, haricots, fruits frais.",
+      "Compare avec ton petit-déjeuner habituel pour rendre la différence claire.",
+      "Les scènes de petit-déjeuner sont calmes et parlantes, parfaites pour une histoire douce."
+     ],
+     "q": "Quel est le petit-déjeuner le plus surprenant que tu aies pris en voyage ?",
+     "c": "Compare en deux phrases ton petit-déjeuner habituel avec un petit-déjeuner de voyage."
+    },
+    "it": {
+     "t": "Colazioni nel mondo",
+     "g": "Confronta le colazioni di viaggi diversi e le storie che ci stanno dietro.",
+     "p": [
+      "La colazione mostra la vita quotidiana: dolci, zuppa di riso, fagioli, frutta fresca.",
+      "Confrontala con la tua colazione abituale per rendere chiara la differenza.",
+      "Le scene di colazione sono tranquille e familiari, perfette per una storia leggera."
+     ],
+     "q": "Qual è la colazione più sorprendente che hai fatto in viaggio?",
+     "c": "Confronta in due frasi la tua colazione di tutti i giorni con una fatta in viaggio."
+    },
+    "pt": {
+     "t": "Pequenos-almoços pelo mundo",
+     "g": "Compara pequenos-almoços de várias viagens e as histórias por trás deles.",
+     "p": [
+      "O pequeno-almoço mostra o dia a dia: bolos doces, sopa de arroz, feijão, fruta fresca.",
+      "Compara com o teu pequeno-almoço habitual para a diferença ficar clara.",
+      "As cenas de pequeno-almoço são calmas e próximas, perfeitas para uma história suave."
+     ],
+     "q": "Qual foi o pequeno-almoço mais surpreendente que tomaste numa viagem?",
+     "c": "Compara em duas frases o teu pequeno-almoço habitual com um que tomaste a viajar."
+    },
+    "pt_BR": {
+     "t": "Cafés da manhã pelo mundo",
+     "g": "Compare cafés da manhã de várias viagens e as histórias por trás deles.",
+     "p": [
+      "O café da manhã mostra o dia a dia: doces, sopa de arroz, feijão, frutas frescas.",
+      "Compare com seu café da manhã de sempre para a diferença ficar clara.",
+      "Cenas de café da manhã são calmas e próximas, perfeitas para uma história leve."
+     ],
+     "q": "Qual foi o café da manhã mais surpreendente que você já tomou em uma viagem?",
+     "c": "Compare em duas frases seu café da manhã de sempre com um que você tomou viajando."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Train journey stories",
+     "g": "Use window views, compartments and fellow passengers in your stories.",
+     "p": [
+      "The window is a moving film: fields, towns, a sudden lake.",
+      "Compartments and dining cars create natural meetings with strangers.",
+      "The rhythm of the train is a lovely detail to open or close a story."
+     ],
+     "q": "What is the most beautiful view you have seen from a train window?",
+     "c": "Describe a train journey you took by naming three things you saw from the window."
+    },
+    "de": {
+     "t": "Geschichten von Zugreisen",
+     "g": "Nutze Fensterblicke, Abteile und Mitreisende in deinen Geschichten.",
+     "p": [
+      "Das Fenster ist ein bewegter Film: Felder, Städte, plötzlich ein See.",
+      "Abteile und Speisewagen schaffen natürliche Begegnungen mit Fremden.",
+      "Der Rhythmus des Zuges ist ein schönes Detail für Anfang oder Schluss."
+     ],
+     "q": "Was ist der schönste Ausblick, den du aus einem Zugfenster gesehen hast?",
+     "c": "Beschreib eine Zugfahrt, indem du drei Dinge nennst, die du aus dem Fenster gesehen hast."
+    },
+    "es": {
+     "t": "Historias de viajes en tren",
+     "g": "Usa las vistas por la ventanilla, los compartimentos y los demás pasajeros en tus historias.",
+     "p": [
+      "La ventanilla es una película en movimiento: campos, pueblos, un lago de repente.",
+      "Los compartimentos y el vagón restaurante crean encuentros naturales con desconocidos.",
+      "El ritmo del tren es un detalle precioso para abrir o cerrar una historia."
+     ],
+     "q": "¿Cuál es la vista más bonita que has visto desde la ventanilla de un tren?",
+     "c": "Describe un viaje en tren nombrando tres cosas que viste por la ventanilla."
+    },
+    "fr": {
+     "t": "Histoires de voyages en train",
+     "g": "Utilise la vue par la fenêtre, les compartiments et les autres voyageurs dans tes récits.",
+     "p": [
+      "La fenêtre est un film en mouvement : champs, villes, un lac soudain.",
+      "Compartiments et wagon-restaurant créent des rencontres naturelles avec des inconnus.",
+      "Le rythme du train est un joli détail pour ouvrir ou fermer une histoire."
+     ],
+     "q": "Quelle est la plus belle vue que tu aies eue depuis la fenêtre d'un train ?",
+     "c": "Décris un trajet en train en nommant trois choses vues par la fenêtre."
+    },
+    "it": {
+     "t": "Storie di viaggi in treno",
+     "g": "Usa i panorami dal finestrino, gli scompartimenti e i compagni di viaggio nelle tue storie.",
+     "p": [
+      "Il finestrino è un film in movimento: campi, paesi, un lago all'improvviso.",
+      "Scompartimenti e vagone ristorante creano incontri naturali con sconosciuti.",
+      "Il ritmo del treno è un bel dettaglio per aprire o chiudere una storia."
+     ],
+     "q": "Qual è il panorama più bello che hai visto dal finestrino di un treno?",
+     "c": "Descrivi un viaggio in treno nominando tre cose viste dal finestrino."
+    },
+    "pt": {
+     "t": "Histórias de viagens de comboio",
+     "g": "Usa as vistas da janela, os compartimentos e os outros passageiros nas tuas histórias.",
+     "p": [
+      "A janela é um filme em movimento: campos, vilas, um lago de repente.",
+      "Os compartimentos e a carruagem-restaurante criam encontros naturais com desconhecidos.",
+      "O ritmo do comboio é um pormenor bonito para abrir ou fechar uma história."
+     ],
+     "q": "Qual é a vista mais bonita que já viste da janela de um comboio?",
+     "c": "Descreve uma viagem de comboio dizendo três coisas que viste da janela."
+    },
+    "pt_BR": {
+     "t": "Histórias de viagens de trem",
+     "g": "Use as paisagens da janela, as cabines e os outros passageiros nas suas histórias.",
+     "p": [
+      "A janela é um filme em movimento: campos, cidades, um lago de repente.",
+      "Cabines e vagão-restaurante criam encontros naturais com desconhecidos.",
+      "O ritmo do trem é um detalhe bonito para abrir ou fechar uma história."
+     ],
+     "q": "Qual é a paisagem mais bonita que você já viu da janela de um trem?",
+     "c": "Descreva uma viagem de trem dizendo três coisas que você viu pela janela."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Road trip memories",
+     "g": "Bring back playlists, rest stops and the shape of the road.",
+     "p": [
+      "The playlist is a time machine: one song can bring back a whole trip.",
+      "Rest stops and roadside snacks are small but very relatable scenes.",
+      "Describe the road itself: long and straight, twisting along the coast."
+     ],
+     "q": "What song always reminds you of a road trip?",
+     "c": "Name the soundtrack of one road trip you took and one stop you made."
+    },
+    "de": {
+     "t": "Erinnerungen an Roadtrips",
+     "g": "Hol Playlists, Rastplätze und den Verlauf der Straße zurück.",
+     "p": [
+      "Die Playlist ist eine Zeitmaschine: Ein Lied kann eine ganze Reise zurückbringen.",
+      "Rastplätze und Snacks am Straßenrand sind kleine, sehr nachvollziehbare Szenen.",
+      "Beschreib die Straße selbst: lang und gerade, kurvig entlang der Küste."
+     ],
+     "q": "Welches Lied erinnert dich immer an einen Roadtrip?",
+     "c": "Nenne den Soundtrack eines Roadtrips und einen Halt, den ihr gemacht habt."
+    },
+    "es": {
+     "t": "Recuerdos de viajes por carretera",
+     "g": "Recupera las listas de música, las paradas y la forma de la carretera.",
+     "p": [
+      "La lista de canciones es una máquina del tiempo: una canción te devuelve todo un viaje.",
+      "Las áreas de servicio y los tentempiés de carretera son escenas pequeñas y muy cercanas.",
+      "Describe la carretera: larga y recta, con curvas junto a la costa."
+     ],
+     "q": "¿Qué canción te recuerda siempre a un viaje por carretera?",
+     "c": "Di la banda sonora de un viaje por carretera y una parada que hicisteis."
+    },
+    "fr": {
+     "t": "Souvenirs de road trip",
+     "g": "Ravive les playlists, les aires de repos et le tracé de la route.",
+     "p": [
+      "La playlist est une machine à remonter le temps : une chanson ramène tout un voyage.",
+      "Les aires de repos et les en-cas de bord de route sont de petites scènes très parlantes.",
+      "Décris la route elle-même : longue et droite, sinueuse le long de la côte."
+     ],
+     "q": "Quelle chanson te rappelle toujours un road trip ?",
+     "c": "Nomme la bande-son d'un road trip et un arrêt que vous avez fait."
+    },
+    "it": {
+     "t": "Ricordi di viaggi in auto",
+     "g": "Riporta in vita playlist, aree di sosta e la forma della strada.",
+     "p": [
+      "La playlist è una macchina del tempo: una canzone riporta indietro un intero viaggio.",
+      "Autogrill e spuntini lungo la strada sono scene piccole ma familiari a tutti.",
+      "Descrivi la strada stessa: lunga e dritta, tortuosa lungo la costa."
+     ],
+     "q": "Quale canzone ti ricorda sempre un viaggio in auto?",
+     "c": "Indica la colonna sonora di un viaggio in auto e una sosta che avete fatto."
+    },
+    "pt": {
+     "t": "Memórias de viagens de carro",
+     "g": "Recupera as playlists, as paragens e a forma da estrada.",
+     "p": [
+      "A playlist é uma máquina do tempo: uma música traz de volta uma viagem inteira.",
+      "As áreas de serviço e os lanches de estrada são cenas pequenas mas muito próximas.",
+      "Descreve a própria estrada: longa e reta, cheia de curvas junto à costa."
+     ],
+     "q": "Que música te lembra sempre uma viagem de carro?",
+     "c": "Diz a banda sonora de uma viagem de carro e uma paragem que fizeram."
+    },
+    "pt_BR": {
+     "t": "Lembranças de viagens de carro",
+     "g": "Relembre playlists, paradas na estrada e o desenho da estrada.",
+     "p": [
+      "A playlist é uma máquina do tempo: uma música traz de volta uma viagem inteira.",
+      "Postos de estrada e lanches no caminho são cenas pequenas e muito próximas.",
+      "Descreva a própria estrada: longa e reta, cheia de curvas pelo litoral."
+     ],
+     "q": "Qual música sempre lembra você de uma viagem de carro?",
+     "c": "Diga a trilha sonora de uma viagem de carro e uma parada que vocês fizeram."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Island and boat stories",
+     "g": "Tell stories of ferries, harbours and the slower rhythm of islands.",
+     "p": [
+      "Boats give strong sensations: salty wind, rocking deck, gulls overhead.",
+      "Harbours are full of life: fishing boats, cafés, people waiting.",
+      "Islands often change your pace; show how your day slowed down."
+     ],
+     "q": "Have you ever visited an island, and how did it feel different from the mainland?",
+     "c": "Describe a boat trip or harbour with one sensation and one person you saw."
+    },
+    "de": {
+     "t": "Insel- und Bootsgeschichten",
+     "g": "Erzähl von Fähren, Häfen und dem langsameren Rhythmus der Inseln.",
+     "p": [
+      "Boote geben starke Eindrücke: salziger Wind, schaukelndes Deck, Möwen über dir.",
+      "Häfen sind voller Leben: Fischerboote, Cafés, wartende Menschen.",
+      "Inseln ändern oft dein Tempo; zeig, wie dein Tag langsamer wurde."
+     ],
+     "q": "Warst du schon auf einer Insel, und was fühlte sich anders an als auf dem Festland?",
+     "c": "Beschreib eine Bootsfahrt oder einen Hafen mit einem Eindruck und einer Person."
+    },
+    "es": {
+     "t": "Historias de islas y barcos",
+     "g": "Cuenta historias de ferris, puertos y el ritmo más lento de las islas.",
+     "p": [
+      "Los barcos dan sensaciones fuertes: viento salado, cubierta que se mece, gaviotas encima.",
+      "Los puertos están llenos de vida: barcas de pesca, cafés, gente esperando.",
+      "Las islas suelen cambiar tu ritmo; muestra cómo tu día se volvió más lento."
+     ],
+     "q": "¿Has visitado alguna isla y qué sentiste distinto respecto al continente?",
+     "c": "Describe un viaje en barco o un puerto con una sensación y una persona que viste."
+    },
+    "fr": {
+     "t": "Histoires d'îles et de bateaux",
+     "g": "Raconte les ferries, les ports et le rythme plus lent des îles.",
+     "p": [
+      "Le bateau donne des sensations fortes : vent salé, pont qui tangue, mouettes au-dessus.",
+      "Les ports débordent de vie : bateaux de pêche, cafés, gens qui attendent.",
+      "Les îles changent souvent ton rythme ; montre comment ta journée a ralenti."
+     ],
+     "q": "As-tu déjà visité une île, et qu'est-ce qui y semblait différent du continent ?",
+     "c": "Décris une traversée ou un port avec une sensation et une personne aperçue."
+    },
+    "it": {
+     "t": "Storie di isole e barche",
+     "g": "Racconta traghetti, porti e il ritmo più lento delle isole.",
+     "p": [
+      "Le barche danno sensazioni forti: vento salato, ponte che dondola, gabbiani in alto.",
+      "I porti sono pieni di vita: pescherecci, bar, gente in attesa.",
+      "Le isole spesso cambiano il tuo ritmo; mostra come la tua giornata ha rallentato."
+     ],
+     "q": "Hai mai visitato un'isola e cosa ti è sembrato diverso dalla terraferma?",
+     "c": "Descrivi una traversata o un porto con una sensazione e una persona che hai visto."
+    },
+    "pt": {
+     "t": "Histórias de ilhas e barcos",
+     "g": "Conta histórias de ferries, portos e do ritmo mais lento das ilhas.",
+     "p": [
+      "Os barcos dão sensações fortes: vento salgado, convés a balançar, gaivotas por cima.",
+      "Os portos estão cheios de vida: barcos de pesca, cafés, pessoas à espera.",
+      "As ilhas costumam mudar o teu ritmo; mostra como o teu dia abrandou."
+     ],
+     "q": "Já visitaste uma ilha e o que sentiste de diferente em relação ao continente?",
+     "c": "Descreve uma viagem de barco ou um porto com uma sensação e uma pessoa que viste."
+    },
+    "pt_BR": {
+     "t": "Histórias de ilhas e barcos",
+     "g": "Conte histórias de balsas, portos e do ritmo mais lento das ilhas.",
+     "p": [
+      "Barcos dão sensações fortes: vento salgado, convés balançando, gaivotas no alto.",
+      "Portos são cheios de vida: barcos de pesca, cafés, gente esperando.",
+      "Ilhas costumam mudar seu ritmo; mostre como seu dia desacelerou."
+     ],
+     "q": "Você já visitou uma ilha e o que sentiu de diferente em relação ao continente?",
+     "c": "Descreva uma viagem de barco ou um porto com uma sensação e uma pessoa que você viu."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mountain moments",
+     "g": "Share hikes, cable cars and views, and the effort it took to get there.",
+     "p": [
+      "Effort makes the view sweeter: tell the climb before the summit.",
+      "Use body details: burning legs, thin cold air, a well-earned snack.",
+      "The view at the top is a perfect moment to slow the story down."
+     ],
+     "q": "What is the best view you ever reached after a climb or a cable car ride?",
+     "c": "Tell a mountain moment in three parts: the effort, the top, the feeling."
+    },
+    "de": {
+     "t": "Bergmomente",
+     "g": "Erzähl von Wanderungen, Seilbahnen und Ausblicken und von der Mühe, dorthin zu kommen.",
+     "p": [
+      "Mühe macht die Aussicht süßer: Erzähl den Aufstieg vor dem Gipfel.",
+      "Nutze Körperdetails: brennende Beine, dünne kalte Luft, ein verdienter Snack.",
+      "Der Blick von oben ist der perfekte Moment, die Geschichte zu verlangsamen."
+     ],
+     "q": "Was ist die schönste Aussicht, die du nach einem Aufstieg oder einer Seilbahnfahrt erreicht hast?",
+     "c": "Erzähl einen Bergmoment in drei Teilen: die Mühe, der Gipfel, das Gefühl."
+    },
+    "es": {
+     "t": "Momentos de montaña",
+     "g": "Comparte rutas, teleféricos y vistas, y el esfuerzo que costó llegar.",
+     "p": [
+      "El esfuerzo hace más dulce la vista: cuenta la subida antes de la cima.",
+      "Usa detalles del cuerpo: piernas que arden, aire frío y fino, un tentempié bien ganado.",
+      "La vista desde arriba es el momento perfecto para frenar la historia."
+     ],
+     "q": "¿Cuál es la mejor vista que alcanzaste tras una subida o un teleférico?",
+     "c": "Cuenta un momento de montaña en tres partes: el esfuerzo, la cima, la emoción."
+    },
+    "fr": {
+     "t": "Moments en montagne",
+     "g": "Partage randonnées, téléphériques et panoramas, et l'effort qu'il a fallu pour y arriver.",
+     "p": [
+      "L'effort rend la vue plus belle : raconte la montée avant le sommet.",
+      "Utilise le corps : jambes en feu, air froid et léger, un en-cas bien mérité.",
+      "La vue au sommet est le moment parfait pour ralentir le récit."
+     ],
+     "q": "Quelle est la plus belle vue atteinte après une montée ou un trajet en téléphérique ?",
+     "c": "Raconte un moment en montagne en trois parties : l'effort, le sommet, l'émotion."
+    },
+    "it": {
+     "t": "Momenti in montagna",
+     "g": "Racconta escursioni, funivie e panorami, e la fatica per arrivarci.",
+     "p": [
+      "La fatica rende il panorama più dolce: racconta la salita prima della vetta.",
+      "Usa dettagli del corpo: gambe che bruciano, aria fredda e sottile, uno spuntino meritato.",
+      "La vista dalla cima è il momento perfetto per rallentare la storia."
+     ],
+     "q": "Qual è il panorama più bello che hai raggiunto dopo una salita o una funivia?",
+     "c": "Racconta un momento in montagna in tre parti: la fatica, la cima, l'emozione."
+    },
+    "pt": {
+     "t": "Momentos na montanha",
+     "g": "Partilha caminhadas, teleféricos e vistas, e o esforço que custou lá chegar.",
+     "p": [
+      "O esforço torna a vista mais doce: conta a subida antes do cume.",
+      "Usa pormenores do corpo: pernas a arder, ar frio e rarefeito, um lanche merecido.",
+      "A vista lá de cima é o momento perfeito para abrandar a história."
+     ],
+     "q": "Qual é a melhor vista que alcançaste depois de uma subida ou de um teleférico?",
+     "c": "Conta um momento na montanha em três partes: o esforço, o topo, a emoção."
+    },
+    "pt_BR": {
+     "t": "Momentos na montanha",
+     "g": "Compartilhe trilhas, teleféricos e vistas, e o esforço para chegar lá.",
+     "p": [
+      "O esforço deixa a vista mais doce: conte a subida antes do topo.",
+      "Use detalhes do corpo: pernas ardendo, ar frio e rarefeito, um lanche merecido.",
+      "A vista lá de cima é o momento perfeito para desacelerar a história."
+     ],
+     "q": "Qual é a melhor vista que você alcançou depois de uma subida ou de um teleférico?",
+     "c": "Conte um momento na montanha em três partes: o esforço, o topo, a emoção."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "City walking stories",
+     "g": "Turn wandering streets and noticing everyday life into stories.",
+     "p": [
+      "Walking slowly shows you what cars and buses hide: doorways, gardens, chats.",
+      "Everyday scenes make great details: kids playing, a baker opening up.",
+      "Let the walk have a small goal, like finding the best view or a famous snack."
+     ],
+     "q": "What did you notice on the best city walk you have ever taken?",
+     "c": "Take a ten-minute walk today and come back with one everyday scene to describe."
+    },
+    "de": {
+     "t": "Geschichten vom Stadtspaziergang",
+     "g": "Mach aus dem Schlendern durch Straßen und dem Beobachten des Alltags Geschichten.",
+     "p": [
+      "Langsames Gehen zeigt, was Autos und Busse verbergen: Hauseingänge, Gärten, Gespräche.",
+      "Alltagsszenen sind tolle Details: spielende Kinder, ein Bäcker, der aufmacht.",
+      "Gib dem Spaziergang ein kleines Ziel, etwa die schönste Aussicht oder einen berühmten Snack."
+     ],
+     "q": "Was ist dir auf dem schönsten Stadtspaziergang aufgefallen, den du je gemacht hast?",
+     "c": "Geh heute zehn Minuten spazieren und bring eine Alltagsszene zum Beschreiben mit."
+    },
+    "es": {
+     "t": "Historias de paseos por la ciudad",
+     "g": "Convierte el callejear y fijarte en la vida diaria en historias.",
+     "p": [
+      "Caminar despacio muestra lo que esconden coches y autobuses: portales, jardines, charlas.",
+      "Las escenas cotidianas son grandes detalles: niños jugando, un panadero abriendo.",
+      "Dale al paseo un pequeño objetivo, como encontrar la mejor vista o un aperitivo famoso."
+     ],
+     "q": "¿En qué te fijaste en el mejor paseo por una ciudad que has dado?",
+     "c": "Da hoy un paseo de diez minutos y vuelve con una escena cotidiana para describir."
+    },
+    "fr": {
+     "t": "Histoires de balades en ville",
+     "g": "Transforme la flânerie et l'observation de la vie quotidienne en récits.",
+     "p": [
+      "Marcher lentement révèle ce que voitures et bus cachent : portes, jardins, conversations.",
+      "Les scènes du quotidien font de super détails : enfants qui jouent, un boulanger qui ouvre.",
+      "Donne un petit but à la balade, comme trouver la plus belle vue ou un en-cas célèbre."
+     ],
+     "q": "Qu'as-tu remarqué lors de la plus belle balade en ville que tu aies faite ?",
+     "c": "Fais une balade de dix minutes aujourd'hui et reviens avec une scène du quotidien à décrire."
+    },
+    "it": {
+     "t": "Storie di passeggiate in città",
+     "g": "Trasforma il girovagare per le strade e l'osservare la vita quotidiana in storie.",
+     "p": [
+      "Camminare piano mostra ciò che auto e autobus nascondono: portoni, giardini, chiacchiere.",
+      "Le scene quotidiane sono ottimi dettagli: bambini che giocano, un fornaio che apre.",
+      "Dai alla passeggiata un piccolo obiettivo, come trovare la vista migliore o uno spuntino famoso."
+     ],
+     "q": "Cosa hai notato nella passeggiata in città più bella che hai fatto?",
+     "c": "Fai oggi una passeggiata di dieci minuti e torna con una scena quotidiana da descrivere."
+    },
+    "pt": {
+     "t": "Histórias de passeios pela cidade",
+     "g": "Transforma o deambular pelas ruas e o reparar no dia a dia em histórias.",
+     "p": [
+      "Andar devagar mostra o que carros e autocarros escondem: portas, jardins, conversas.",
+      "As cenas do dia a dia são ótimos pormenores: crianças a brincar, um padeiro a abrir.",
+      "Dá ao passeio um pequeno objetivo, como encontrar a melhor vista ou um petisco famoso."
+     ],
+     "q": "Em que reparaste no melhor passeio pela cidade que já fizeste?",
+     "c": "Dá hoje um passeio de dez minutos e volta com uma cena do dia a dia para descrever."
+    },
+    "pt_BR": {
+     "t": "Histórias de caminhadas pela cidade",
+     "g": "Transforme o andar sem rumo pelas ruas e o olhar para o dia a dia em histórias.",
+     "p": [
+      "Andar devagar mostra o que carros e ônibus escondem: portas, jardins, conversas.",
+      "Cenas do dia a dia são ótimos detalhes: crianças brincando, um padeiro abrindo a padaria.",
+      "Dê à caminhada um pequeno objetivo, como achar a melhor vista ou um petisco famoso."
+     ],
+     "q": "O que você reparou na melhor caminhada pela cidade que já fez?",
+     "c": "Faça hoje uma caminhada de dez minutos e volte com uma cena do dia a dia para descrever."
+    }
+   }
+  }
+ ]
+}

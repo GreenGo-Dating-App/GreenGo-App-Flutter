@@ -1,0 +1,835 @@
+{
+ "topic": "tennis",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to tennis",
+     "g": "Discover what tennis is, why millions love it and how our 365-day path will unfold.",
+     "p": [
+      "Tennis is played with a racket and a ball over a net, by two players (singles) or four (doubles).",
+      "You win a point when your opponent cannot return the ball into the court before it bounces twice.",
+      "We start with the court, gear and scoring, then strokes, tactics and the great history of the game."
+     ],
+     "q": "What first made you curious about tennis: playing it, watching it, or both?",
+     "c": "Watch two minutes of any tennis rally and count how many times the ball crosses the net."
+    },
+    "de": {
+     "t": "Willkommen beim Tennis",
+     "g": "Entdecke, was Tennis ist, warum es so viele lieben und wie unser 365-Tage-Weg aufgebaut ist.",
+     "p": [
+      "Tennis spielt man mit Schläger und Ball über ein Netz, zu zweit (Einzel) oder zu viert (Doppel).",
+      "Du gewinnst einen Punkt, wenn dein Gegner den Ball nicht ins Feld zurückspielt, bevor er zweimal aufspringt.",
+      "Wir starten mit Platz, Ausrüstung und Zählweise, dann folgen Schläge, Taktik und die große Geschichte."
+     ],
+     "q": "Was hat dich am Tennis neugierig gemacht: selbst spielen, zuschauen oder beides?",
+     "c": "Schau dir zwei Minuten eines Ballwechsels an und zähle, wie oft der Ball das Netz überquert."
+    },
+    "es": {
+     "t": "Bienvenido al tenis",
+     "g": "Descubre qué es el tenis, por qué lo aman millones de personas y cómo será nuestro camino de 365 días.",
+     "p": [
+      "El tenis se juega con raqueta y pelota sobre una red, entre dos jugadores (individuales) o cuatro (dobles).",
+      "Ganas un punto cuando tu rival no devuelve la pelota dentro de la pista antes de que bote dos veces.",
+      "Empezamos con la pista, el material y el tanteo; luego golpes, táctica y la gran historia del juego."
+     ],
+     "q": "¿Qué te despertó la curiosidad por el tenis: jugarlo, verlo o ambas cosas?",
+     "c": "Mira dos minutos de un peloteo y cuenta cuántas veces la pelota cruza la red."
+    },
+    "fr": {
+     "t": "Bienvenue dans le tennis",
+     "g": "Découvre ce qu'est le tennis, pourquoi tant de gens l'adorent et comment se déroulera notre parcours de 365 jours.",
+     "p": [
+      "Le tennis se joue avec une raquette et une balle par-dessus un filet, à deux (simple) ou à quatre (double).",
+      "Tu gagnes le point quand ton adversaire ne renvoie pas la balle dans le court avant son deuxième rebond.",
+      "On commence par le court, le matériel et le score, puis les coups, la tactique et la grande histoire du jeu."
+     ],
+     "q": "Qu'est-ce qui t'a rendu curieux du tennis : y jouer, le regarder, ou les deux ?",
+     "c": "Regarde deux minutes d'un échange et compte combien de fois la balle passe le filet."
+    },
+    "it": {
+     "t": "Benvenuto nel tennis",
+     "g": "Scopri cos'è il tennis, perché piace a milioni di persone e come si svolgerà il nostro percorso di 365 giorni.",
+     "p": [
+      "Il tennis si gioca con racchetta e palla oltre una rete, in due (singolare) o in quattro (doppio).",
+      "Vinci il punto quando l'avversario non rimanda la palla in campo prima che rimbalzi due volte.",
+      "Partiamo da campo, attrezzatura e punteggio, poi colpi, tattica e la grande storia del gioco."
+     ],
+     "q": "Cosa ti ha incuriosito del tennis: giocarlo, guardarlo o entrambe le cose?",
+     "c": "Guarda due minuti di uno scambio e conta quante volte la palla supera la rete."
+    },
+    "pt": {
+     "t": "Bem-vindo ao ténis",
+     "g": "Descobre o que é o ténis, porque é que milhões o adoram e como vai ser o nosso percurso de 365 dias.",
+     "p": [
+      "O ténis joga-se com raqueta e bola por cima de uma rede, entre dois jogadores (singulares) ou quatro (pares).",
+      "Ganhas o ponto quando o adversário não devolve a bola para dentro do campo antes de ela bater duas vezes.",
+      "Começamos pelo campo, material e pontuação; depois pancadas, tática e a grande história do jogo."
+     ],
+     "q": "O que te despertou a curiosidade pelo ténis: jogar, ver ou as duas coisas?",
+     "c": "Vê dois minutos de uma troca de bolas e conta quantas vezes a bola passa a rede."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao tênis",
+     "g": "Descubra o que é o tênis, por que milhões de pessoas o amam e como será nossa trilha de 365 dias.",
+     "p": [
+      "O tênis é jogado com raquete e bola por cima de uma rede, entre dois jogadores (simples) ou quatro (duplas).",
+      "Você ganha o ponto quando o adversário não devolve a bola para dentro da quadra antes de ela quicar duas vezes.",
+      "Começamos pela quadra, equipamento e placar; depois golpes, tática e a grande história do esporte."
+     ],
+     "q": "O que despertou sua curiosidade pelo tênis: jogar, assistir ou as duas coisas?",
+     "c": "Assista a dois minutos de um rali e conte quantas vezes a bola cruza a rede."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The tennis court",
+     "g": "Learn the lines and zones of a tennis court so every rule we meet later makes sense.",
+     "p": [
+      "A full court is 23.77 m long; singles use 8.23 m of width, doubles add the side alleys for 10.97 m.",
+      "The baseline is the back line, the service line marks the service boxes, and the center mark splits the baseline.",
+      "The net is 0.914 m high in the middle and a little higher, 1.07 m, at the posts."
+     ],
+     "q": "Which line do you think players stand behind when they serve?",
+     "c": "Next time you see a court, in person or on screen, name five lines out loud."
+    },
+    "de": {
+     "t": "Der Tennisplatz",
+     "g": "Lerne die Linien und Bereiche des Platzes kennen, damit alle späteren Regeln Sinn ergeben.",
+     "p": [
+      "Ein Platz ist 23,77 m lang; im Einzel 8,23 m breit, im Doppel kommen die Seitengassen dazu: 10,97 m.",
+      "Die Grundlinie ist hinten, die Aufschlaglinie begrenzt die Aufschlagfelder, das Mittelzeichen teilt die Grundlinie.",
+      "Das Netz ist in der Mitte 0,914 m hoch und an den Pfosten etwas höher, 1,07 m."
+     ],
+     "q": "Hinter welcher Linie stehen Spieler wohl beim Aufschlag?",
+     "c": "Wenn du das nächste Mal einen Platz siehst, benenne laut fünf Linien."
+    },
+    "es": {
+     "t": "La pista de tenis",
+     "g": "Aprende las líneas y zonas de la pista para que todas las reglas futuras tengan sentido.",
+     "p": [
+      "La pista mide 23,77 m de largo; en individuales 8,23 m de ancho y en dobles, con los pasillos, 10,97 m.",
+      "La línea de fondo está atrás, la línea de saque marca los cuadros de servicio y la marca central divide el fondo.",
+      "La red mide 0,914 m en el centro y un poco más, 1,07 m, en los postes."
+     ],
+     "q": "¿Detrás de qué línea crees que se colocan los jugadores para sacar?",
+     "c": "La próxima vez que veas una pista, en persona o en pantalla, nombra cinco líneas en voz alta."
+    },
+    "fr": {
+     "t": "Le court de tennis",
+     "g": "Apprends les lignes et les zones du court pour que toutes les règles à venir soient claires.",
+     "p": [
+      "Le court mesure 23,77 m de long ; 8,23 m de large en simple, 10,97 m en double avec les couloirs.",
+      "La ligne de fond est au bout, la ligne de service délimite les carrés de service, la marque centrale coupe le fond.",
+      "Le filet mesure 0,914 m au centre et un peu plus, 1,07 m, aux poteaux."
+     ],
+     "q": "Derrière quelle ligne les joueurs se placent-ils pour servir, à ton avis ?",
+     "c": "La prochaine fois que tu vois un court, en vrai ou à l'écran, nomme cinq lignes à voix haute."
+    },
+    "it": {
+     "t": "Il campo da tennis",
+     "g": "Impara linee e zone del campo, così tutte le regole che vedremo avranno senso.",
+     "p": [
+      "Il campo è lungo 23,77 m; largo 8,23 m in singolare, 10,97 m in doppio con i corridoi laterali.",
+      "La linea di fondo è dietro, la linea del servizio delimita i riquadri di battuta, il segno centrale divide il fondo.",
+      "La rete è alta 0,914 m al centro e un po' di più, 1,07 m, ai paletti."
+     ],
+     "q": "Secondo te, dietro quale linea si mettono i giocatori per servire?",
+     "c": "La prossima volta che vedi un campo, dal vivo o in TV, nomina ad alta voce cinque linee."
+    },
+    "pt": {
+     "t": "O campo de ténis",
+     "g": "Aprende as linhas e zonas do campo para que todas as regras seguintes façam sentido.",
+     "p": [
+      "O campo tem 23,77 m de comprimento; 8,23 m de largura em singulares e 10,97 m em pares, com os corredores.",
+      "A linha de fundo fica atrás, a linha de serviço marca os quadrados de serviço e a marca central divide o fundo.",
+      "A rede tem 0,914 m de altura no centro e um pouco mais, 1,07 m, junto aos postes."
+     ],
+     "q": "Atrás de que linha achas que os jogadores se colocam para servir?",
+     "c": "Da próxima vez que vires um campo, ao vivo ou no ecrã, diz em voz alta o nome de cinco linhas."
+    },
+    "pt_BR": {
+     "t": "A quadra de tênis",
+     "g": "Aprenda as linhas e áreas da quadra para que todas as regras seguintes façam sentido.",
+     "p": [
+      "A quadra tem 23,77 m de comprimento; 8,23 m de largura nas simples e 10,97 m nas duplas, com os corredores.",
+      "A linha de base fica no fundo, a linha de saque marca as áreas de saque e a marca central divide a linha de base.",
+      "A rede tem 0,914 m de altura no centro e um pouco mais, 1,07 m, nos postes."
+     ],
+     "q": "Atrás de qual linha você acha que os jogadores ficam para sacar?",
+     "c": "Da próxima vez que vir uma quadra, ao vivo ou na tela, diga em voz alta o nome de cinco linhas."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Court surfaces",
+     "g": "See how hard, clay and grass courts change the bounce and the style of play.",
+     "p": [
+      "Hard courts (acrylic over concrete or asphalt) give a true, medium-fast bounce and are the most common.",
+      "Clay is slow with a high bounce, and players slide into shots; long rallies are typical.",
+      "Grass is fast with a low, skidding bounce, rewarding big serves and quick points at the net."
+     ],
+     "q": "Which surface sounds most fun to you, and why?",
+     "c": "Look up a photo of each surface and notice how players' shoes and movement differ."
+    },
+    "de": {
+     "t": "Platzbeläge",
+     "g": "Sieh, wie Hartplatz, Sand und Rasen den Absprung und den Spielstil verändern.",
+     "p": [
+      "Hartplätze (Acryl auf Beton oder Asphalt) springen gleichmäßig und mittelschnell ab und sind am häufigsten.",
+      "Sand ist langsam mit hohem Absprung, man rutscht in die Schläge; lange Ballwechsel sind typisch.",
+      "Rasen ist schnell mit flachem, rutschendem Absprung und belohnt starke Aufschläge und schnelle Netzpunkte."
+     ],
+     "q": "Welcher Belag klingt für dich am spannendsten und warum?",
+     "c": "Such dir je ein Foto der drei Beläge und achte auf Schuhe und Bewegung der Spieler."
+    },
+    "es": {
+     "t": "Superficies de pista",
+     "g": "Descubre cómo la pista dura, la tierra batida y la hierba cambian el bote y el estilo de juego.",
+     "p": [
+      "La pista dura (acrílico sobre hormigón o asfalto) da un bote regular y de velocidad media; es la más común.",
+      "La tierra batida es lenta y de bote alto; los jugadores se deslizan y los puntos suelen ser largos.",
+      "La hierba es rápida, con bote bajo y resbaladizo; premia el gran saque y los puntos rápidos en la red."
+     ],
+     "q": "¿Qué superficie te parece más divertida y por qué?",
+     "c": "Busca una foto de cada superficie y fíjate en el calzado y el movimiento de los jugadores."
+    },
+    "fr": {
+     "t": "Les surfaces",
+     "g": "Vois comment le dur, la terre battue et le gazon changent le rebond et le style de jeu.",
+     "p": [
+      "Le dur (résine sur béton ou asphalte) offre un rebond régulier et moyennement rapide ; c'est le plus répandu.",
+      "La terre battue est lente avec un rebond haut ; on glisse sur ses appuis et les échanges sont longs.",
+      "Le gazon est rapide avec un rebond bas et fuyant ; il récompense le gros service et le jeu au filet."
+     ],
+     "q": "Quelle surface te semble la plus amusante, et pourquoi ?",
+     "c": "Cherche une photo de chaque surface et observe les chaussures et les déplacements des joueurs."
+    },
+    "it": {
+     "t": "Le superfici",
+     "g": "Scopri come cemento, terra rossa ed erba cambiano il rimbalzo e lo stile di gioco.",
+     "p": [
+      "Il cemento (resina su calcestruzzo o asfalto) dà un rimbalzo regolare e medio-veloce ed è il più diffuso.",
+      "La terra rossa è lenta con rimbalzo alto; si scivola sui colpi e gli scambi sono lunghi.",
+      "L'erba è veloce con rimbalzo basso e radente; premia servizi potenti e punti rapidi a rete."
+     ],
+     "q": "Quale superficie ti sembra più divertente e perché?",
+     "c": "Cerca una foto di ogni superficie e osserva scarpe e movimenti dei giocatori."
+    },
+    "pt": {
+     "t": "Pisos do campo",
+     "g": "Vê como o piso rápido, a terra batida e a relva mudam o ressalto e o estilo de jogo.",
+     "p": [
+      "O piso rápido (acrílico sobre betão ou asfalto) dá um ressalto regular e médio; é o mais comum.",
+      "A terra batida é lenta e com ressalto alto; os jogadores deslizam e as trocas de bola são longas.",
+      "A relva é rápida, com ressalto baixo e escorregadio; favorece serviços fortes e pontos rápidos na rede."
+     ],
+     "q": "Que piso te parece mais divertido e porquê?",
+     "c": "Procura uma foto de cada piso e repara no calçado e na forma como os jogadores se movem."
+    },
+    "pt_BR": {
+     "t": "Pisos da quadra",
+     "g": "Veja como a quadra dura, o saibro e a grama mudam o quique e o estilo de jogo.",
+     "p": [
+      "A quadra dura (acrílico sobre concreto ou asfalto) tem quique regular e velocidade média; é a mais comum.",
+      "O saibro é lento e de quique alto; os jogadores deslizam e os ralis costumam ser longos.",
+      "A grama é rápida, com quique baixo e escorregadio; favorece saques fortes e pontos rápidos na rede."
+     ],
+     "q": "Qual piso parece mais divertido para você e por quê?",
+     "c": "Procure uma foto de cada piso e repare no calçado e no jeito como os jogadores se movem."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rackets explained",
+     "g": "Understand head size, weight, balance and grip size so you can choose a racket that suits you.",
+     "p": [
+      "A bigger head (about 100 to 110 sq in) gives a larger sweet spot; smaller heads offer more control.",
+      "Heavier rackets feel stable and powerful; lighter ones are easier to swing and kinder to beginners.",
+      "Grip size matters: you should fit a finger between your fingertips and palm when holding the handle."
+     ],
+     "q": "If you could pick any racket, would you want more power or more control?",
+     "c": "Hold a racket (or imagine one) and check the finger gap between your fingertips and palm."
+    },
+    "de": {
+     "t": "Schläger erklärt",
+     "g": "Verstehe Kopfgröße, Gewicht, Balance und Griffstärke, um einen passenden Schläger zu finden.",
+     "p": [
+      "Ein größerer Kopf (etwa 100 bis 110 sq in) hat einen größeren Sweetspot; kleinere Köpfe bieten mehr Kontrolle.",
+      "Schwere Schläger wirken stabil und kraftvoll; leichte sind leichter zu schwingen und anfängerfreundlich.",
+      "Die Griffstärke zählt: Zwischen Fingerspitzen und Handballen sollte ein Finger Platz haben."
+     ],
+     "q": "Wenn du frei wählen dürftest: lieber mehr Power oder mehr Kontrolle?",
+     "c": "Nimm einen Schläger (oder stell ihn dir vor) und prüfe den Fingerabstand zwischen Fingerspitzen und Handballen."
+    },
+    "es": {
+     "t": "Las raquetas",
+     "g": "Entiende el tamaño de cabeza, el peso, el balance y el grosor del puño para elegir tu raqueta.",
+     "p": [
+      "Una cabeza grande (unas 100 a 110 pulgadas²) tiene más punto dulce; las pequeñas dan más control.",
+      "Las raquetas pesadas son estables y potentes; las ligeras se mueven mejor y ayudan a quien empieza.",
+      "El grosor del puño importa: debe caber un dedo entre las yemas y la palma al empuñarla."
+     ],
+     "q": "Si pudieras elegir cualquier raqueta, ¿querrías más potencia o más control?",
+     "c": "Coge una raqueta (o imagínala) y comprueba el hueco de un dedo entre tus yemas y la palma."
+    },
+    "fr": {
+     "t": "Les raquettes",
+     "g": "Comprends la taille du tamis, le poids, l'équilibre et la taille du manche pour bien choisir.",
+     "p": [
+      "Un grand tamis (environ 100 à 110 pouces²) offre un grand point idéal ; un petit donne plus de contrôle.",
+      "Une raquette lourde est stable et puissante ; une légère se manie facilement, idéale pour débuter.",
+      "La taille du manche compte : un doigt doit passer entre le bout des doigts et la paume."
+     ],
+     "q": "Si tu pouvais choisir, tu voudrais plus de puissance ou plus de contrôle ?",
+     "c": "Prends une raquette (ou imagine-la) et vérifie l'espace d'un doigt entre tes doigts et ta paume."
+    },
+    "it": {
+     "t": "Le racchette",
+     "g": "Capisci piatto corde, peso, bilanciamento e misura del manico per scegliere la racchetta giusta.",
+     "p": [
+      "Un piatto grande (circa 100-110 pollici²) ha uno sweet spot ampio; uno piccolo dà più controllo.",
+      "Le racchette pesanti sono stabili e potenti; quelle leggere si muovono facilmente, ottime per iniziare.",
+      "La misura del manico conta: tra punta delle dita e palmo deve starci un dito."
+     ],
+     "q": "Se potessi scegliere qualsiasi racchetta, vorresti più potenza o più controllo?",
+     "c": "Prendi una racchetta (o immaginala) e verifica lo spazio di un dito tra dita e palmo."
+    },
+    "pt": {
+     "t": "Raquetas explicadas",
+     "g": "Percebe o tamanho da cabeça, o peso, o equilíbrio e a grossura do punho para escolher a tua raqueta.",
+     "p": [
+      "Uma cabeça grande (cerca de 100 a 110 pol²) tem mais ponto doce; as pequenas dão mais controlo.",
+      "Raquetas pesadas são estáveis e potentes; as leves são fáceis de mexer e ajudam quem começa.",
+      "A grossura do punho conta: deve caber um dedo entre as pontas dos dedos e a palma."
+     ],
+     "q": "Se pudesses escolher qualquer raqueta, querias mais potência ou mais controlo?",
+     "c": "Pega numa raqueta (ou imagina-a) e verifica o espaço de um dedo entre os dedos e a palma."
+    },
+    "pt_BR": {
+     "t": "Raquetes explicadas",
+     "g": "Entenda tamanho da cabeça, peso, equilíbrio e espessura da empunhadura para escolher sua raquete.",
+     "p": [
+      "Uma cabeça grande (cerca de 100 a 110 pol²) tem mais ponto doce; as menores dão mais controle.",
+      "Raquetes pesadas são estáveis e potentes; as leves são fáceis de girar e ajudam quem está começando.",
+      "A empunhadura importa: deve caber um dedo entre as pontas dos dedos e a palma."
+     ],
+     "q": "Se pudesse escolher qualquer raquete, você ia querer mais potência ou mais controle?",
+     "c": "Segure uma raquete (ou imagine uma) e confira o espaço de um dedo entre os dedos e a palma."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tennis balls",
+     "g": "Find out what is inside a tennis ball and why it slowly loses its bounce.",
+     "p": [
+      "Most balls are hollow rubber cores filled with pressurised air and covered in wool-nylon felt.",
+      "Once the can is opened, air slowly leaks out, so the ball gets softer and bounces lower over weeks.",
+      "The felt wears and fluffs up with play; pros get new balls every few games for this reason."
+     ],
+     "q": "Have you ever heard the hiss when a new can of balls is opened?",
+     "c": "Drop an old and a new ball from shoulder height and compare how high each one bounces."
+    },
+    "de": {
+     "t": "Tennisbälle",
+     "g": "Erfahre, was in einem Tennisball steckt und warum er mit der Zeit an Sprungkraft verliert.",
+     "p": [
+      "Die meisten Bälle haben einen hohlen Gummikern mit Überdruck und einen Filz aus Wolle und Nylon.",
+      "Nach dem Öffnen der Dose entweicht langsam Luft, der Ball wird weicher und springt mit der Zeit niedriger.",
+      "Der Filz nutzt sich ab und raut auf; deshalb bekommen Profis alle paar Spiele neue Bälle."
+     ],
+     "q": "Kennst du das Zischen, wenn man eine neue Balldose öffnet?",
+     "c": "Lass einen alten und einen neuen Ball aus Schulterhöhe fallen und vergleiche, wie hoch sie springen."
+    },
+    "es": {
+     "t": "Las pelotas de tenis",
+     "g": "Descubre qué hay dentro de una pelota de tenis y por qué pierde bote con el tiempo.",
+     "p": [
+      "La mayoría tiene un núcleo hueco de goma con aire a presión, cubierto de fieltro de lana y nailon.",
+      "Al abrir el bote, el aire se escapa poco a poco: la pelota se ablanda y bota menos con las semanas.",
+      "El fieltro se desgasta y se abre; por eso los profesionales cambian de pelotas cada pocos juegos."
+     ],
+     "q": "¿Has oído alguna vez el siseo al abrir un bote nuevo de pelotas?",
+     "c": "Deja caer una pelota vieja y una nueva desde la altura del hombro y compara cuánto bota cada una."
+    },
+    "fr": {
+     "t": "Les balles de tennis",
+     "g": "Découvre ce qu'il y a dans une balle de tennis et pourquoi elle perd peu à peu son rebond.",
+     "p": [
+      "La plupart ont un noyau creux en caoutchouc rempli d'air sous pression et un feutre laine-nylon.",
+      "Une fois le tube ouvert, l'air s'échappe lentement : la balle s'amollit et rebondit moins au fil des semaines.",
+      "Le feutre s'use et gonfle ; c'est pourquoi les pros reçoivent des balles neuves tous les quelques jeux."
+     ],
+     "q": "As-tu déjà entendu le « pschitt » à l'ouverture d'un tube neuf ?",
+     "c": "Lâche une vieille balle et une neuve à hauteur d'épaule et compare la hauteur de leur rebond."
+    },
+    "it": {
+     "t": "Le palline da tennis",
+     "g": "Scopri cosa c'è dentro una pallina da tennis e perché perde rimbalzo col tempo.",
+     "p": [
+      "Quasi tutte hanno un nucleo cavo di gomma con aria in pressione, coperto da feltro di lana e nylon.",
+      "Aperto il tubo, l'aria esce piano piano: la pallina si ammorbidisce e rimbalza meno nel giro di settimane.",
+      "Il feltro si consuma e si gonfia; per questo i professionisti ricevono palle nuove ogni pochi game."
+     ],
+     "q": "Hai mai sentito il sibilo quando si apre un tubo di palline nuove?",
+     "c": "Lascia cadere una pallina vecchia e una nuova dall'altezza della spalla e confronta i rimbalzi."
+    },
+    "pt": {
+     "t": "Bolas de ténis",
+     "g": "Descobre o que há dentro de uma bola de ténis e porque perde ressalto com o tempo.",
+     "p": [
+      "A maioria tem um núcleo oco de borracha com ar pressurizado, coberto por feltro de lã e nylon.",
+      "Depois de aberto o tubo, o ar sai devagar: a bola amolece e ressalta menos ao longo das semanas.",
+      "O feltro gasta-se e fica felpudo; por isso os profissionais recebem bolas novas a cada poucos jogos."
+     ],
+     "q": "Já ouviste o silvo ao abrir um tubo novo de bolas?",
+     "c": "Deixa cair uma bola velha e uma nova à altura do ombro e compara o ressalto de cada uma."
+    },
+    "pt_BR": {
+     "t": "Bolas de tênis",
+     "g": "Descubra o que há dentro de uma bola de tênis e por que ela perde o quique com o tempo.",
+     "p": [
+      "A maioria tem um núcleo oco de borracha com ar pressurizado, coberto por feltro de lã e náilon.",
+      "Depois que o tubo é aberto, o ar escapa aos poucos: a bola amolece e quica menos ao longo das semanas.",
+      "O feltro se desgasta e fica felpudo; por isso os profissionais recebem bolas novas a cada poucos games."
+     ],
+     "q": "Você já ouviu o chiado ao abrir um tubo novo de bolas?",
+     "c": "Solte uma bola velha e uma nova da altura do ombro e compare o quique de cada uma."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How scoring works",
+     "g": "Learn the classic tennis count from love to game.",
+     "p": [
+      "Each game goes 0 (love), 15, 30, 40, then game; the server's score is always said first.",
+      "So 30-15 means the server has won two points and the receiver one.",
+      "One popular theory says the numbers came from a clock face moved in quarters, with 45 shortened to 40."
+     ],
+     "q": "Can you say the score if the server has won three points and the receiver one?",
+     "c": "Watch one game of a match and say each score aloud before the umpire does."
+    },
+    "de": {
+     "t": "So funktioniert die Zählweise",
+     "g": "Lerne die klassische Tennis-Zählweise von null bis Spiel.",
+     "p": [
+      "Jedes Spiel geht 0 (love), 15, 30, 40, dann Spiel; der Stand des Aufschlägers wird immer zuerst genannt.",
+      "30:15 heißt also: Der Aufschläger hat zwei Punkte gewonnen, der Rückschläger einen.",
+      "Eine beliebte Theorie: Die Zahlen stammen von einem Zifferblatt in Vierteln, 45 wurde zu 40 verkürzt."
+     ],
+     "q": "Wie lautet der Stand, wenn der Aufschläger drei Punkte und der Rückschläger einen gewonnen hat?",
+     "c": "Schau ein Spiel eines Matches und sag jeden Stand laut, bevor der Schiedsrichter es tut."
+    },
+    "es": {
+     "t": "Cómo se cuenta",
+     "g": "Aprende el tanteo clásico del tenis, de cero a juego.",
+     "p": [
+      "Cada juego va 0 (nada), 15, 30, 40 y juego; el tanteo de quien saca se dice siempre primero.",
+      "Así, 30-15 significa que quien saca ha ganado dos puntos y quien resta, uno.",
+      "Una teoría popular dice que vienen de una esfera de reloj en cuartos, y que 45 se acortó a 40."
+     ],
+     "q": "¿Sabes decir el tanteo si quien saca ha ganado tres puntos y quien resta, uno?",
+     "c": "Mira un juego de un partido y di cada tanteo en voz alta antes que el juez de silla."
+    },
+    "fr": {
+     "t": "Comment on compte",
+     "g": "Apprends le décompte classique du tennis, de zéro au jeu.",
+     "p": [
+      "Chaque jeu va 0, 15, 30, 40 puis jeu ; le score du serveur est toujours annoncé en premier.",
+      "Ainsi, 30-15 veut dire que le serveur a gagné deux points et le relanceur un.",
+      "Selon une théorie populaire, les chiffres viennent d'un cadran d'horloge en quarts, 45 devenant 40."
+     ],
+     "q": "Sais-tu annoncer le score si le serveur a gagné trois points et le relanceur un ?",
+     "c": "Regarde un jeu d'un match et annonce chaque score à voix haute avant l'arbitre."
+    },
+    "it": {
+     "t": "Come si conta",
+     "g": "Impara il punteggio classico del tennis, da zero a game.",
+     "p": [
+      "Ogni game va 0, 15, 30, 40 e poi game; il punteggio di chi serve si dice sempre per primo.",
+      "Quindi 30-15 significa che chi serve ha vinto due punti e chi risponde uno.",
+      "Una teoria popolare dice che i numeri vengono da un quadrante d'orologio diviso in quarti, con 45 accorciato a 40."
+     ],
+     "q": "Sai dire il punteggio se chi serve ha vinto tre punti e chi risponde uno?",
+     "c": "Guarda un game di una partita e annuncia ogni punteggio ad alta voce prima dell'arbitro."
+    },
+    "pt": {
+     "t": "Como se conta",
+     "g": "Aprende a contagem clássica do ténis, do zero ao jogo.",
+     "p": [
+      "Cada jogo vai 0, 15, 30, 40 e jogo; a pontuação de quem serve diz-se sempre primeiro.",
+      "Assim, 30-15 quer dizer que quem serve ganhou dois pontos e quem recebe ganhou um.",
+      "Uma teoria popular diz que os números vêm de um mostrador de relógio em quartos, com 45 encurtado para 40."
+     ],
+     "q": "Sabes dizer o resultado se quem serve ganhou três pontos e quem recebe um?",
+     "c": "Vê um jogo de uma partida e diz cada resultado em voz alta antes do árbitro."
+    },
+    "pt_BR": {
+     "t": "Como funciona a contagem",
+     "g": "Aprenda a contagem clássica do tênis, do zero ao game.",
+     "p": [
+      "Cada game vai 0, 15, 30, 40 e game; o placar de quem saca é sempre falado primeiro.",
+      "Então 30-15 significa que quem saca ganhou dois pontos e quem recebe ganhou um.",
+      "Uma teoria popular diz que os números vêm de um relógio dividido em quartos, com 45 encurtado para 40."
+     ],
+     "q": "Você sabe dizer o placar se quem saca ganhou três pontos e quem recebe, um?",
+     "c": "Assista a um game de uma partida e diga cada placar em voz alta antes do árbitro."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Deuce and advantage",
+     "g": "Understand what happens at 40-40 and how to win a game from there.",
+     "p": [
+      "When both players reach 40, the score is called deuce.",
+      "The next point gives advantage; win again and you take the game, lose it and it is back to deuce.",
+      "Some formats use no-ad scoring instead: one deciding point at deuce, often with the receiver choosing the side."
+     ],
+     "q": "Have you ever watched a game go to deuce again and again? How did it feel?",
+     "c": "Explain deuce and advantage to a friend in under 30 seconds."
+    },
+    "de": {
+     "t": "Einstand und Vorteil",
+     "g": "Verstehe, was bei 40:40 passiert und wie man das Spiel von dort gewinnt.",
+     "p": [
+      "Haben beide Spieler 40, heißt der Stand Einstand (deuce).",
+      "Der nächste Punkt bringt Vorteil; gewinnst du erneut, holst du das Spiel, verlierst du, ist wieder Einstand.",
+      "Manche Formate nutzen No-Ad: Bei Einstand entscheidet ein einziger Punkt, oft wählt der Rückschläger die Seite."
+     ],
+     "q": "Hast du schon ein Spiel gesehen, das immer wieder zum Einstand ging? Wie war das?",
+     "c": "Erkläre einem Freund Einstand und Vorteil in weniger als 30 Sekunden."
+    },
+    "es": {
+     "t": "Iguales y ventaja",
+     "g": "Entiende qué pasa con 40-40 y cómo se gana el juego desde ahí.",
+     "p": [
+      "Cuando ambos llegan a 40, el marcador es «iguales» (deuce).",
+      "El siguiente punto da ventaja; si ganas otro, te llevas el juego; si lo pierdes, vuelven a iguales.",
+      "Algunos formatos usan punto de oro: un único punto decisivo en iguales, a menudo con el restador eligiendo lado."
+     ],
+     "q": "¿Has visto algún juego que volvía a iguales una y otra vez? ¿Qué sentiste?",
+     "c": "Explícale a un amigo los iguales y la ventaja en menos de 30 segundos."
+    },
+    "fr": {
+     "t": "Égalité et avantage",
+     "g": "Comprends ce qui se passe à 40-40 et comment gagner le jeu à partir de là.",
+     "p": [
+      "Quand les deux joueurs sont à 40, on annonce égalité.",
+      "Le point suivant donne l'avantage ; gagne encore et tu remportes le jeu, perds-le et c'est de nouveau égalité.",
+      "Certains formats utilisent le point décisif : un seul point à égalité, souvent avec le relanceur qui choisit le côté."
+     ],
+     "q": "As-tu déjà vu un jeu revenir à égalité encore et encore ? Qu'as-tu ressenti ?",
+     "c": "Explique l'égalité et l'avantage à un ami en moins de 30 secondes."
+    },
+    "it": {
+     "t": "Parità e vantaggio",
+     "g": "Capisci cosa succede sul 40-40 e come si vince il game da lì.",
+     "p": [
+      "Quando entrambi arrivano a 40, il punteggio è parità (deuce).",
+      "Il punto successivo dà il vantaggio; se vinci ancora prendi il game, se perdi si torna in parità.",
+      "Alcuni formati usano il killer point: un solo punto decisivo sulla parità, spesso con chi risponde che sceglie il lato."
+     ],
+     "q": "Hai mai visto un game tornare in parità più e più volte? Che effetto ti ha fatto?",
+     "c": "Spiega parità e vantaggio a un amico in meno di 30 secondi."
+    },
+    "pt": {
+     "t": "Iguais e vantagem",
+     "g": "Percebe o que acontece aos 40-40 e como se ganha o jogo a partir daí.",
+     "p": [
+      "Quando ambos chegam aos 40, o resultado é «iguais» (deuce).",
+      "O ponto seguinte dá vantagem; ganha outro e levas o jogo, perde-o e volta a iguais.",
+      "Alguns formatos usam ponto decisivo: um único ponto em iguais, muitas vezes com quem recebe a escolher o lado."
+     ],
+     "q": "Já viste um jogo voltar a iguais vezes sem conta? Como foi?",
+     "c": "Explica iguais e vantagem a um amigo em menos de 30 segundos."
+    },
+    "pt_BR": {
+     "t": "Iguais e vantagem",
+     "g": "Entenda o que acontece no 40-40 e como vencer o game a partir daí.",
+     "p": [
+      "Quando os dois chegam a 40, o placar é «iguais» (deuce).",
+      "O ponto seguinte dá vantagem; ganhe outro e o game é seu, perca e volta para iguais.",
+      "Alguns formatos usam ponto decisivo: um único ponto em iguais, muitas vezes com quem recebe escolhendo o lado."
+     ],
+     "q": "Você já viu um game voltar para iguais várias vezes? Como foi?",
+     "c": "Explique iguais e vantagem para um amigo em menos de 30 segundos."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Games, sets and matches",
+     "g": "See how points build games, games build sets, and sets build a match.",
+     "p": [
+      "A set is usually won by the first to six games with a two-game lead, such as 6-4 or 7-5.",
+      "At 6-6 most sets go to a tiebreak, which we will study tomorrow.",
+      "Most matches are best of three sets; men's Grand Slam singles are best of five."
+     ],
+     "q": "Would you rather play a short best-of-three or an epic best-of-five match?",
+     "c": "Find the final score of any famous match and work out how many games were played in total."
+    },
+    "de": {
+     "t": "Spiele, Sätze und Matches",
+     "g": "Sieh, wie Punkte Spiele, Spiele Sätze und Sätze ein Match ergeben.",
+     "p": [
+      "Einen Satz gewinnt meist, wer zuerst sechs Spiele mit zwei Spielen Vorsprung hat, etwa 6:4 oder 7:5.",
+      "Bei 6:6 folgt in den meisten Sätzen ein Tiebreak, den wir uns morgen ansehen.",
+      "Die meisten Matches gehen über zwei Gewinnsätze; Herren-Einzel bei Grand Slams über drei."
+     ],
+     "q": "Lieber ein kurzes Match über zwei Gewinnsätze oder ein episches über drei?",
+     "c": "Such das Ergebnis eines berühmten Matches und rechne aus, wie viele Spiele insgesamt gespielt wurden."
+    },
+    "es": {
+     "t": "Juegos, sets y partidos",
+     "g": "Mira cómo los puntos forman juegos, los juegos sets y los sets un partido.",
+     "p": [
+      "Un set lo gana normalmente quien llega a seis juegos con dos de ventaja, como 6-4 o 7-5.",
+      "Con 6-6, la mayoría de sets se deciden en un tie-break, que veremos mañana.",
+      "Casi todos los partidos son al mejor de tres sets; los individuales masculinos de Grand Slam, al mejor de cinco."
+     ],
+     "q": "¿Prefieres un partido corto al mejor de tres o uno épico al mejor de cinco?",
+     "c": "Busca el resultado de un partido famoso y calcula cuántos juegos se jugaron en total."
+    },
+    "fr": {
+     "t": "Jeux, sets et matchs",
+     "g": "Vois comment les points forment des jeux, les jeux des sets et les sets un match.",
+     "p": [
+      "Un set se gagne en général à six jeux avec deux d'écart, comme 6-4 ou 7-5.",
+      "À 6-6, la plupart des sets se jouent au tie-break, que l'on verra demain.",
+      "La plupart des matchs se jouent en deux sets gagnants ; le simple messieurs en Grand Chelem en trois."
+     ],
+     "q": "Tu préfères un match court en deux sets gagnants ou un match épique en trois ?",
+     "c": "Trouve le score d'un match célèbre et calcule combien de jeux ont été joués au total."
+    },
+    "it": {
+     "t": "Game, set e partite",
+     "g": "Scopri come i punti formano i game, i game i set e i set una partita.",
+     "p": [
+      "Un set si vince di solito arrivando a sei game con due di scarto, come 6-4 o 7-5.",
+      "Sul 6-6 quasi tutti i set si decidono al tie-break, che vedremo domani.",
+      "Quasi tutte le partite sono al meglio dei tre set; il singolare maschile negli Slam al meglio dei cinque."
+     ],
+     "q": "Preferiresti una partita breve al meglio dei tre o una epica al meglio dei cinque?",
+     "c": "Trova il punteggio di una partita famosa e calcola quanti game sono stati giocati in totale."
+    },
+    "pt": {
+     "t": "Jogos, sets e partidas",
+     "g": "Vê como os pontos formam jogos, os jogos sets e os sets uma partida.",
+     "p": [
+      "Um set ganha-se normalmente ao chegar a seis jogos com dois de vantagem, como 6-4 ou 7-5.",
+      "Aos 6-6, a maioria dos sets decide-se num tie-break, que vamos ver amanhã.",
+      "A maioria das partidas é à melhor de três sets; os singulares masculinos dos Grand Slams à melhor de cinco."
+     ],
+     "q": "Preferes uma partida curta à melhor de três ou uma épica à melhor de cinco?",
+     "c": "Procura o resultado de uma partida famosa e calcula quantos jogos se jogaram no total."
+    },
+    "pt_BR": {
+     "t": "Games, sets e partidas",
+     "g": "Veja como os pontos formam games, os games formam sets e os sets formam uma partida.",
+     "p": [
+      "Um set costuma ser vencido por quem chega a seis games com dois de vantagem, como 6-4 ou 7-5.",
+      "No 6-6, a maioria dos sets vai para o tie-break, que veremos amanhã.",
+      "A maioria das partidas é em melhor de três sets; as simples masculinas de Grand Slam, em melhor de cinco."
+     ],
+     "q": "Você prefere uma partida curta em melhor de três ou uma épica em melhor de cinco?",
+     "c": "Procure o placar de uma partida famosa e calcule quantos games foram jogados no total."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The tiebreak",
+     "g": "Learn how the 7-point tiebreak works and who serves when.",
+     "p": [
+      "The first player to 7 points with a two-point lead wins the tiebreak and the set, 7-6.",
+      "The player due to serve takes the first point; then serves alternate every two points.",
+      "Players change ends after every six points, and you count simply 1, 2, 3 instead of 15, 30, 40."
+     ],
+     "q": "Who do you think serves the second and third points of a tiebreak?",
+     "c": "Draw a quick table of a tiebreak to 7-5 and mark who serves each point."
+    },
+    "de": {
+     "t": "Der Tiebreak",
+     "g": "Lerne, wie der Tiebreak bis 7 funktioniert und wer wann aufschlägt.",
+     "p": [
+      "Wer zuerst 7 Punkte mit zwei Punkten Vorsprung hat, gewinnt Tiebreak und Satz mit 7:6.",
+      "Wer an der Reihe ist, schlägt den ersten Punkt auf; danach wechselt der Aufschlag alle zwei Punkte.",
+      "Nach je sechs Punkten werden die Seiten gewechselt, und man zählt einfach 1, 2, 3 statt 15, 30, 40."
+     ],
+     "q": "Was meinst du: Wer schlägt im Tiebreak den zweiten und dritten Punkt auf?",
+     "c": "Zeichne eine kleine Tabelle eines Tiebreaks bis 7:5 und markiere, wer welchen Punkt aufschlägt."
+    },
+    "es": {
+     "t": "El tie-break",
+     "g": "Aprende cómo funciona el tie-break a 7 puntos y quién saca en cada momento.",
+     "p": [
+      "Gana el tie-break, y el set por 7-6, quien llega primero a 7 puntos con dos de diferencia.",
+      "Saca el primer punto a quien le toca; después el saque cambia cada dos puntos.",
+      "Se cambia de lado cada seis puntos y se cuenta 1, 2, 3 en lugar de 15, 30, 40."
+     ],
+     "q": "¿Quién crees que saca el segundo y el tercer punto de un tie-break?",
+     "c": "Dibuja una tabla de un tie-break hasta 7-5 y marca quién saca cada punto."
+    },
+    "fr": {
+     "t": "Le tie-break",
+     "g": "Apprends comment fonctionne le jeu décisif en 7 points et qui sert quand.",
+     "p": [
+      "Le premier à 7 points avec deux points d'écart gagne le tie-break et le set, 7-6.",
+      "Le joueur dont c'est le tour sert le premier point ; ensuite le service change tous les deux points.",
+      "On change de côté tous les six points et on compte 1, 2, 3 au lieu de 15, 30, 40."
+     ],
+     "q": "À ton avis, qui sert les deuxième et troisième points d'un tie-break ?",
+     "c": "Dessine un petit tableau d'un tie-break jusqu'à 7-5 et note qui sert chaque point."
+    },
+    "it": {
+     "t": "Il tie-break",
+     "g": "Impara come funziona il tie-break a 7 punti e chi serve quando.",
+     "p": [
+      "Chi arriva per primo a 7 punti con due di scarto vince il tie-break e il set, 7-6.",
+      "Serve il primo punto chi era di turno; poi il servizio cambia ogni due punti.",
+      "Si cambia campo ogni sei punti e si conta semplicemente 1, 2, 3 invece di 15, 30, 40."
+     ],
+     "q": "Secondo te, chi serve il secondo e il terzo punto di un tie-break?",
+     "c": "Disegna una tabellina di un tie-break fino al 7-5 e segna chi serve ogni punto."
+    },
+    "pt": {
+     "t": "O tie-break",
+     "g": "Aprende como funciona o tie-break a 7 pontos e quem serve em cada momento.",
+     "p": [
+      "Quem chega primeiro aos 7 pontos com dois de vantagem ganha o tie-break e o set, 7-6.",
+      "Serve o primeiro ponto quem estava na vez; depois o serviço muda a cada dois pontos.",
+      "Troca-se de lado a cada seis pontos e conta-se 1, 2, 3 em vez de 15, 30, 40."
+     ],
+     "q": "Quem achas que serve o segundo e o terceiro ponto de um tie-break?",
+     "c": "Desenha uma tabela de um tie-break até 7-5 e marca quem serve cada ponto."
+    },
+    "pt_BR": {
+     "t": "O tie-break",
+     "g": "Aprenda como funciona o tie-break de 7 pontos e quem saca em cada momento.",
+     "p": [
+      "Quem chega primeiro a 7 pontos com dois de vantagem vence o tie-break e o set, 7-6.",
+      "Saca o primeiro ponto quem estava na vez; depois o saque muda a cada dois pontos.",
+      "Troca-se de lado a cada seis pontos e conta-se 1, 2, 3 em vez de 15, 30, 40."
+     ],
+     "q": "Quem você acha que saca o segundo e o terceiro ponto de um tie-break?",
+     "c": "Desenhe uma tabela de um tie-break até 7-5 e marque quem saca cada ponto."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ready position",
+     "g": "Build the ready position, the base you return to before every shot.",
+     "p": [
+      "Feet a little wider than your shoulders, weight on the balls of your feet, knees softly bent.",
+      "Hold the racket in front of you with both hands, head up, eyes on the ball and opponent.",
+      "From here you can turn left or right quickly, so a good ready position saves you steps."
+     ],
+     "q": "Do you tend to stand tall and stiff, or low and bouncy, when you wait for a ball?",
+     "c": "Hold the ready position for 30 seconds while bouncing lightly, three times today."
+    },
+    "de": {
+     "t": "Bereitschaftsstellung",
+     "g": "Lerne die Bereitschaftsstellung, die Basis vor jedem Schlag.",
+     "p": [
+      "Füße etwas weiter als schulterbreit, Gewicht auf den Fußballen, Knie leicht gebeugt.",
+      "Den Schläger mit beiden Händen vor dem Körper halten, Kopf hoch, Blick auf Ball und Gegner.",
+      "Von hier drehst du dich schnell nach links oder rechts, eine gute Grundstellung spart Schritte."
+     ],
+     "q": "Stehst du beim Warten eher steif und aufrecht oder tief und federnd?",
+     "c": "Halte heute dreimal 30 Sekunden die Bereitschaftsstellung und federe leicht dabei."
+    },
+    "es": {
+     "t": "Posición de espera",
+     "g": "Construye la posición de espera, la base a la que vuelves antes de cada golpe.",
+     "p": [
+      "Pies algo más abiertos que los hombros, peso en la parte delantera del pie y rodillas un poco flexionadas.",
+      "Raqueta delante con las dos manos, cabeza alta y mirada en la pelota y el rival.",
+      "Desde aquí giras rápido a izquierda o derecha; una buena posición te ahorra pasos."
+     ],
+     "q": "Cuando esperas una pelota, ¿te quedas recto y rígido o bajo y ágil?",
+     "c": "Mantén la posición de espera 30 segundos dando pequeños saltitos, tres veces hoy."
+    },
+    "fr": {
+     "t": "La position d'attente",
+     "g": "Construis la position d'attente, la base à retrouver avant chaque coup.",
+     "p": [
+      "Pieds un peu plus écartés que les épaules, poids sur l'avant des pieds, genoux légèrement fléchis.",
+      "Raquette devant toi tenue à deux mains, tête haute, regard sur la balle et l'adversaire.",
+      "De là, tu pivotes vite à gauche ou à droite : une bonne position t'épargne des pas."
+     ],
+     "q": "En attendant une balle, tu es plutôt droit et raide, ou bas et dynamique ?",
+     "c": "Tiens la position d'attente 30 secondes en sautillant légèrement, trois fois aujourd'hui."
+    },
+    "it": {
+     "t": "Posizione di attesa",
+     "g": "Costruisci la posizione di attesa, la base a cui tornare prima di ogni colpo.",
+     "p": [
+      "Piedi poco più larghi delle spalle, peso sugli avampiedi, ginocchia leggermente piegate.",
+      "Racchetta davanti a te con due mani, testa alta, occhi su palla e avversario.",
+      "Da qui ti giri in fretta a destra o a sinistra: una buona posizione ti fa risparmiare passi."
+     ],
+     "q": "Quando aspetti la palla, stai dritto e rigido o basso e reattivo?",
+     "c": "Tieni la posizione di attesa per 30 secondi saltellando leggermente, tre volte oggi."
+    },
+    "pt": {
+     "t": "Posição de espera",
+     "g": "Constrói a posição de espera, a base para onde voltas antes de cada pancada.",
+     "p": [
+      "Pés um pouco mais afastados do que os ombros, peso na parte da frente dos pés, joelhos ligeiramente fletidos.",
+      "Raqueta à frente, segura com as duas mãos, cabeça erguida e olhos na bola e no adversário.",
+      "Daqui rodas depressa para a esquerda ou para a direita; uma boa posição poupa-te passos."
+     ],
+     "q": "Quando esperas a bola, ficas direito e rígido ou baixo e ágil?",
+     "c": "Mantém a posição de espera 30 segundos com pequenos saltinhos, três vezes hoje."
+    },
+    "pt_BR": {
+     "t": "Posição de espera",
+     "g": "Monte a posição de espera, a base para onde você volta antes de cada golpe.",
+     "p": [
+      "Pés um pouco mais abertos que os ombros, peso na ponta dos pés, joelhos levemente flexionados.",
+      "Raquete à frente com as duas mãos, cabeça erguida, olhos na bola e no adversário.",
+      "Daqui você gira rápido para a esquerda ou a direita; uma boa posição economiza passos."
+     ],
+     "q": "Quando espera a bola, você fica reto e duro ou baixo e ágil?",
+     "c": "Fique na posição de espera por 30 segundos com pulinhos leves, três vezes hoje."
+    }
+   }
+  }
+ ]
+}

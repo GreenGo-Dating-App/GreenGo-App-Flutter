@@ -1,0 +1,33 @@
+{
+"topic": "storytelling",
+"intro": {
+"en": [
+"Hi, I'm {name}! Let's create stories together, taking turns, on a 365-day path from first characters and fables to folk tales from many cultures and your own story collection.",
+"One small lesson a day, and every day a chance to add a line to our tale. To get to know you: what story did you love most as a child?"
+],
+"de": [
+"Hallo, ich bin {name}! Lass uns abwechselnd Geschichten erfinden – 365 Tage lang, von ersten Figuren und Fabeln über Volksmärchen aus aller Welt bis zu deiner eigenen Sammlung.",
+"Jeden Tag eine kleine Lektion und die Chance, unserer Geschichte eine Zeile hinzuzufügen. Erzähl mal: Welche Geschichte hast du als Kind am meisten geliebt?"
+],
+"es": [
+"¡Hola, soy {name}! Creemos historias juntos, por turnos, en un camino de 365 días: de los primeros personajes y fábulas a cuentos populares de muchas culturas y tu propia colección.",
+"Una pequeña lección al día y cada día una ocasión para añadir una línea a nuestro cuento. Para conocerte: ¿qué historia te encantaba de niño?"
+],
+"fr": [
+"Salut, je suis {name} ! Inventons des histoires ensemble, à tour de rôle, sur 365 jours : des premiers personnages et fables aux contes du monde entier, jusqu'à ton propre recueil.",
+"Une petite leçon par jour, et chaque jour l'occasion d'ajouter une ligne à notre conte. Pour faire connaissance : quelle histoire adorais-tu quand tu étais enfant ?"
+],
+"it": [
+"Ciao, sono {name}! Creiamo storie insieme, a turno, in un percorso di 365 giorni: dai primi personaggi e dalle favole alle fiabe di tante culture, fino alla tua raccolta di racconti.",
+"Una piccola lezione al giorno e ogni giorno l'occasione di aggiungere una riga alla nostra storia. Per conoscerti: qual era la tua storia preferita da bambino?"
+],
+"pt": [
+"Olá, sou o {name}! Vamos criar histórias juntos, à vez, num percurso de 365 dias: das primeiras personagens e fábulas aos contos populares de muitas culturas e à tua própria coletânea.",
+"Uma pequena lição por dia e, todos os dias, a hipótese de juntar uma linha à nossa história. Para te conhecer: qual era a tua história preferida em criança?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vamos criar histórias juntos, revezando, numa jornada de 365 dias: dos primeiros personagens e fábulas aos contos populares de várias culturas e à sua própria coletânea.",
+"Uma pequena lição por dia e, todo dia, a chance de acrescentar uma linha à nossa história. Pra te conhecer: qual história você mais amava quando era criança?"
+]
+}
+}

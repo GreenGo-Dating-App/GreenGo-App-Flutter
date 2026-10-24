@@ -1,0 +1,835 @@
+{
+ "topic": "solo_travel",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The single supplement",
+     "g": "Understand why some tours and rooms cost more alone, and how to avoid paying extra.",
+     "p": [
+      "Many hotels and tours price for two people, so one guest may pay a single supplement.",
+      "Hostels, guesthouses and single rooms are usually priced per person, not per pair.",
+      "Some tour companies offer solo departures or room-share options with no extra charge."
+     ],
+     "q": "Have you ever noticed a higher price just because you were booking for one?",
+     "c": "Compare a double room and a single room or hostel private for one night somewhere."
+    },
+    "de": {
+     "t": "Der Einzelzimmerzuschlag",
+     "g": "Verstehe, warum manche Reisen und Zimmer allein mehr kosten und wie du das vermeidest.",
+     "p": [
+      "Viele Hotels und Touren rechnen mit zwei Personen, Einzelgäste zahlen dann einen Zuschlag.",
+      "Hostels, Pensionen und echte Einzelzimmer werden meist pro Person berechnet.",
+      "Manche Veranstalter bieten Solo-Termine oder Zimmerteilung ohne Aufpreis an."
+     ],
+     "q": "Hast du schon einmal mehr bezahlt, nur weil du für eine Person gebucht hast?",
+     "c": "Vergleiche für eine Nacht ein Doppelzimmer mit einem Einzelzimmer oder Hostelzimmer."
+    },
+    "es": {
+     "t": "El suplemento individual",
+     "g": "Entiende por qué algunos viajes y habitaciones cuestan más solo y cómo evitarlo.",
+     "p": [
+      "Muchos hoteles y circuitos calculan el precio para dos, y quien va solo paga un suplemento.",
+      "Albergues, pensiones y habitaciones individuales suelen cobrar por persona.",
+      "Algunas agencias ofrecen salidas para viajeros solos o compartir habitación sin recargo."
+     ],
+     "q": "¿Alguna vez pagaste más solo por reservar para una persona?",
+     "c": "Compara para una noche una doble con una individual o una privada en un albergue."
+    },
+    "fr": {
+     "t": "Le supplément single",
+     "g": "Comprends pourquoi certains circuits et chambres coûtent plus cher seul, et comment l’éviter.",
+     "p": [
+      "Beaucoup d’hôtels et de circuits sont tarifés pour deux : seul, on paie un supplément.",
+      "Auberges, maisons d’hôtes et vraies chambres simples sont souvent facturées par personne.",
+      "Certaines agences proposent des départs solo ou un partage de chambre sans supplément."
+     ],
+     "q": "As-tu déjà payé plus cher juste parce que tu réservais pour une personne ?",
+     "c": "Compare pour une nuit une chambre double avec une simple ou une privée en auberge."
+    },
+    "it": {
+     "t": "Il supplemento singola",
+     "g": "Capisci perché alcuni tour e camere costano di più da soli e come evitare di pagare extra.",
+     "p": [
+      "Molti hotel e tour calcolano il prezzo per due, così chi viaggia solo paga un supplemento.",
+      "Ostelli, guesthouse e vere camere singole di solito si pagano a persona.",
+      "Alcuni operatori offrono partenze per viaggiatori soli o camere condivise senza extra."
+     ],
+     "q": "Ti è mai capitato di pagare di più solo perché prenotavi per una persona?",
+     "c": "Confronta per una notte una doppia con una singola o una privata in ostello."
+    },
+    "pt": {
+     "t": "O suplemento individual",
+     "g": "Percebe porque alguns circuitos e quartos custam mais a solo e como evitar pagar a mais.",
+     "p": [
+      "Muitos hotéis e circuitos têm preços para duas pessoas, e quem vai sozinho paga suplemento.",
+      "Hostels, casas de hóspedes e quartos individuais costumam cobrar por pessoa.",
+      "Algumas agências têm saídas para viajantes a solo ou partilha de quarto sem custo extra."
+     ],
+     "q": "Já pagaste mais só por reservares para uma pessoa?",
+     "c": "Compara para uma noite um quarto duplo com um individual ou um privado num hostel."
+    },
+    "pt_BR": {
+     "t": "A taxa de quarto individual",
+     "g": "Entenda por que alguns pacotes e quartos custam mais para uma pessoa e como evitar isso.",
+     "p": [
+      "Muitos hotéis e pacotes cobram por duas pessoas, e quem vai sozinho paga um adicional.",
+      "Hostels, pousadas e quartos individuais costumam cobrar por pessoa.",
+      "Algumas agências têm saídas para viajantes solo ou divisão de quarto sem custo extra."
+     ],
+     "q": "Você já pagou mais só por reservar para uma pessoa?",
+     "c": "Compare por uma noite um quarto duplo com um individual ou um privativo de hostel."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Booking your first nights",
+     "g": "See why booking your first nights in advance makes arrival relaxed.",
+     "p": [
+      "Knowing where you will sleep lets you head straight there after a long journey.",
+      "Save the address, a map pin and the check-in time on your phone and on paper.",
+      "Book the rest flexibly, so you can stay longer where you feel happy."
+     ],
+     "q": "How do you usually feel when you arrive somewhere new without a plan?",
+     "c": "Find a place to stay for a first night and save its address offline."
+    },
+    "de": {
+     "t": "Die ersten Nächte buchen",
+     "g": "Erfahre, warum vorgebuchte erste Nächte die Ankunft entspannt machen.",
+     "p": [
+      "Wenn du weißt, wo du schläfst, fährst du nach langer Reise einfach direkt hin.",
+      "Speichere Adresse, Kartenpunkt und Check-in-Zeit im Handy und auf Papier.",
+      "Buche den Rest flexibel, damit du dort länger bleibst, wo es dir gefällt."
+     ],
+     "q": "Wie fühlst du dich, wenn du ohne Plan an einem neuen Ort ankommst?",
+     "c": "Such eine Unterkunft für eine erste Nacht und speichere die Adresse offline."
+    },
+    "es": {
+     "t": "Reservar las primeras noches",
+     "g": "Descubre por qué reservar las primeras noches hace que la llegada sea tranquila.",
+     "p": [
+      "Saber dónde dormirás te permite ir directo tras un viaje largo.",
+      "Guarda la dirección, la ubicación y la hora del check-in en el móvil y en papel.",
+      "Reserva el resto con flexibilidad para quedarte más donde te sientas a gusto."
+     ],
+     "q": "¿Cómo te sientes cuando llegas a un sitio nuevo sin plan?",
+     "c": "Busca alojamiento para una primera noche y guarda la dirección sin conexión."
+    },
+    "fr": {
+     "t": "Réserver les premières nuits",
+     "g": "Vois pourquoi réserver tes premières nuits rend l’arrivée détendue.",
+     "p": [
+      "Savoir où tu dors te permet d’y aller directement après un long trajet.",
+      "Garde l’adresse, le point sur la carte et l’heure d’arrivée sur ton téléphone et sur papier.",
+      "Réserve la suite avec souplesse pour rester plus longtemps là où tu te plais."
+     ],
+     "q": "Comment te sens-tu quand tu arrives quelque part sans plan ?",
+     "c": "Trouve un hébergement pour une première nuit et enregistre l’adresse hors ligne."
+    },
+    "it": {
+     "t": "Prenotare le prime notti",
+     "g": "Scopri perché prenotare le prime notti rende l’arrivo rilassato.",
+     "p": [
+      "Sapere dove dormirai ti permette di andarci subito dopo un lungo viaggio.",
+      "Salva indirizzo, posizione e orario del check-in sul telefono e su carta.",
+      "Prenota il resto in modo flessibile, così resti di più dove ti trovi bene."
+     ],
+     "q": "Come ti senti quando arrivi in un posto nuovo senza un piano?",
+     "c": "Trova un alloggio per una prima notte e salva l’indirizzo offline."
+    },
+    "pt": {
+     "t": "Reservar as primeiras noites",
+     "g": "Vê porque reservar as primeiras noites torna a chegada tranquila.",
+     "p": [
+      "Saber onde vais dormir deixa-te ir direto depois de uma viagem longa.",
+      "Guarda a morada, a localização e a hora do check-in no telemóvel e em papel.",
+      "Reserva o resto com flexibilidade para ficares mais tempo onde te sentes bem."
+     ],
+     "q": "Como te sentes quando chegas a um sítio novo sem plano?",
+     "c": "Procura alojamento para uma primeira noite e guarda a morada offline."
+    },
+    "pt_BR": {
+     "t": "Reservando as primeiras noites",
+     "g": "Veja por que reservar as primeiras noites deixa a chegada tranquila.",
+     "p": [
+      "Saber onde vai dormir permite ir direto depois de uma viagem longa.",
+      "Salve o endereço, o ponto no mapa e o horário do check-in no celular e no papel.",
+      "Reserve o resto com flexibilidade para ficar mais onde se sentir bem."
+     ],
+     "q": "Como você se sente quando chega a um lugar novo sem plano?",
+     "c": "Procure hospedagem para uma primeira noite e salve o endereço offline."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where to stay when solo",
+     "g": "Compare the main types of accommodation and their pros and cons for one person.",
+     "p": [
+      "Hotels offer privacy, a 24-hour desk and easy comfort.",
+      "Hostels are social and budget friendly, with dorms or private rooms.",
+      "Guesthouses feel personal, and rentals give space and a kitchen but less contact."
+     ],
+     "q": "Which type of stay would you choose for your first solo trip, and why?",
+     "c": "Pick one city and find one option of each type: hotel, hostel, guesthouse."
+    },
+    "de": {
+     "t": "Wo übernachten, wenn man allein reist",
+     "g": "Vergleiche die wichtigsten Unterkunftsarten mit ihren Vor- und Nachteilen für eine Person.",
+     "p": [
+      "Hotels bieten Privatsphäre, eine Rezeption rund um die Uhr und Komfort.",
+      "Hostels sind gesellig und günstig, mit Schlafsälen oder Privatzimmern.",
+      "Pensionen sind persönlich, Ferienwohnungen bieten Platz und Küche, aber weniger Kontakt."
+     ],
+     "q": "Welche Unterkunft würdest du für deine erste Solo-Reise wählen und warum?",
+     "c": "Wähl eine Stadt und finde je ein Hotel, ein Hostel und eine Pension."
+    },
+    "es": {
+     "t": "Dónde alojarte si viajas solo",
+     "g": "Compara los principales tipos de alojamiento y sus pros y contras para una persona.",
+     "p": [
+      "Los hoteles ofrecen privacidad, recepción 24 horas y comodidad.",
+      "Los albergues son sociales y económicos, con dormitorios o habitaciones privadas.",
+      "Las pensiones son cercanas; los apartamentos dan espacio y cocina, pero menos contacto."
+     ],
+     "q": "¿Qué alojamiento elegirías para tu primer viaje solo y por qué?",
+     "c": "Elige una ciudad y encuentra un hotel, un albergue y una pensión."
+    },
+    "fr": {
+     "t": "Où dormir en solo",
+     "g": "Compare les principaux types d’hébergement et leurs avantages pour une personne seule.",
+     "p": [
+      "L’hôtel offre intimité, réception 24 h sur 24 et confort facile.",
+      "L’auberge de jeunesse est conviviale et économique, en dortoir ou en chambre privée.",
+      "La maison d’hôtes est chaleureuse ; la location offre espace et cuisine, mais moins de contact."
+     ],
+     "q": "Quel hébergement choisirais-tu pour ton premier voyage solo, et pourquoi ?",
+     "c": "Choisis une ville et trouve un hôtel, une auberge et une maison d’hôtes."
+    },
+    "it": {
+     "t": "Dove dormire da soli",
+     "g": "Confronta i principali tipi di alloggio e i loro pro e contro per una persona.",
+     "p": [
+      "L’hotel offre privacy, reception 24 ore su 24 e comodità.",
+      "L’ostello è sociale ed economico, con dormitori o camere private.",
+      "La guesthouse è calorosa; l’appartamento dà spazio e cucina, ma meno contatti."
+     ],
+     "q": "Quale alloggio sceglieresti per il tuo primo viaggio da solo, e perché?",
+     "c": "Scegli una città e trova un hotel, un ostello e una guesthouse."
+    },
+    "pt": {
+     "t": "Onde ficar a solo",
+     "g": "Compara os principais tipos de alojamento e os prós e contras para uma pessoa.",
+     "p": [
+      "Os hotéis oferecem privacidade, receção 24 horas e conforto.",
+      "Os hostels são sociais e económicos, com camaratas ou quartos privados.",
+      "As casas de hóspedes são acolhedoras; os apartamentos dão espaço e cozinha, mas menos contacto."
+     ],
+     "q": "Que alojamento escolherias para a tua primeira viagem a solo, e porquê?",
+     "c": "Escolhe uma cidade e encontra um hotel, um hostel e uma casa de hóspedes."
+    },
+    "pt_BR": {
+     "t": "Onde se hospedar viajando solo",
+     "g": "Compare os principais tipos de hospedagem e seus prós e contras para uma pessoa.",
+     "p": [
+      "Hotéis oferecem privacidade, recepção 24 horas e conforto.",
+      "Hostels são sociais e econômicos, com quartos compartilhados ou privativos.",
+      "Pousadas são acolhedoras; apartamentos dão espaço e cozinha, mas menos contato."
+     ],
+     "q": "Que hospedagem você escolheria na primeira viagem solo, e por quê?",
+     "c": "Escolha uma cidade e encontre um hotel, um hostel e uma pousada."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading reviews wisely",
+     "g": "Learn to read accommodation reviews like a pro, with a solo traveller’s eye.",
+     "p": [
+      "Filter or search for reviews written by people who travelled alone.",
+      "Look for notes on location, lighting at night, noise and how helpful the staff are.",
+      "Focus on recent comments, because places change over time."
+     ],
+     "q": "What detail in a review would make you book a place, or skip it?",
+     "c": "Read five recent reviews of one place and note two pros and one con."
+    },
+    "de": {
+     "t": "Bewertungen klug lesen",
+     "g": "Lerne, Unterkunftsbewertungen wie ein Profi und mit dem Blick von Alleinreisenden zu lesen.",
+     "p": [
+      "Filtere oder suche nach Bewertungen von Menschen, die allein gereist sind.",
+      "Achte auf Hinweise zu Lage, Beleuchtung abends, Lärm und hilfsbereitem Personal.",
+      "Konzentriere dich auf aktuelle Kommentare, denn Orte verändern sich."
+     ],
+     "q": "Welches Detail in einer Bewertung lässt dich buchen oder weitersuchen?",
+     "c": "Lies fünf aktuelle Bewertungen einer Unterkunft und notiere zwei Pluspunkte und ein Minus."
+    },
+    "es": {
+     "t": "Leer reseñas con criterio",
+     "g": "Aprende a leer reseñas de alojamiento como un experto, con mirada de viajero solo.",
+     "p": [
+      "Filtra o busca opiniones de personas que viajaron solas.",
+      "Busca comentarios sobre ubicación, iluminación de noche, ruido y amabilidad del personal.",
+      "Fíjate en las opiniones recientes, porque los lugares cambian con el tiempo."
+     ],
+     "q": "¿Qué detalle de una reseña te haría reservar o descartar un sitio?",
+     "c": "Lee cinco reseñas recientes de un sitio y anota dos puntos a favor y uno en contra."
+    },
+    "fr": {
+     "t": "Lire les avis intelligemment",
+     "g": "Apprends à lire les avis d’hébergement comme un pro, avec l’œil d’un voyageur solo.",
+     "p": [
+      "Filtre ou cherche les avis laissés par des personnes ayant voyagé seules.",
+      "Repère les remarques sur l’emplacement, l’éclairage le soir, le bruit et l’accueil.",
+      "Privilégie les commentaires récents, car les lieux évoluent."
+     ],
+     "q": "Quel détail dans un avis te ferait réserver, ou passer ton chemin ?",
+     "c": "Lis cinq avis récents sur un lieu et note deux points forts et un point faible."
+    },
+    "it": {
+     "t": "Leggere le recensioni con giudizio",
+     "g": "Impara a leggere le recensioni degli alloggi come un esperto, con l’occhio di chi viaggia solo.",
+     "p": [
+      "Filtra o cerca le recensioni di persone che hanno viaggiato da sole.",
+      "Cerca note su posizione, illuminazione di sera, rumore e disponibilità dello staff.",
+      "Concentrati sui commenti recenti, perché i posti cambiano nel tempo."
+     ],
+     "q": "Quale dettaglio in una recensione ti farebbe prenotare o lasciar perdere?",
+     "c": "Leggi cinque recensioni recenti di un alloggio e annota due pro e un contro."
+    },
+    "pt": {
+     "t": "Ler avaliações com cabeça",
+     "g": "Aprende a ler avaliações de alojamento como um profissional, com olhos de viajante a solo.",
+     "p": [
+      "Filtra ou procura avaliações de pessoas que viajaram sozinhas.",
+      "Procura notas sobre localização, iluminação à noite, barulho e simpatia do pessoal.",
+      "Dá mais peso aos comentários recentes, porque os sítios mudam."
+     ],
+     "q": "Que detalhe numa avaliação te faria reservar, ou desistir?",
+     "c": "Lê cinco avaliações recentes de um sítio e aponta dois prós e um contra."
+    },
+    "pt_BR": {
+     "t": "Lendo avaliações com atenção",
+     "g": "Aprenda a ler avaliações de hospedagem como um profissional, com olhar de viajante solo.",
+     "p": [
+      "Filtre ou procure avaliações de pessoas que viajaram sozinhas.",
+      "Procure comentários sobre localização, iluminação à noite, barulho e atendimento.",
+      "Dê mais peso às avaliações recentes, porque os lugares mudam."
+     ],
+     "q": "Que detalhe numa avaliação faria você reservar, ou desistir?",
+     "c": "Leia cinco avaliações recentes de um lugar e anote dois prós e um contra."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a good location",
+     "g": "See why a central, well-lit spot near transport makes solo stays easier.",
+     "p": [
+      "Staying central saves time and lets you pop back to rest between outings.",
+      "Well-lit, lively streets make coming home in the evening feel relaxed.",
+      "Being near a metro, tram or bus stop opens up the whole city."
+     ],
+     "q": "What would you love to have within walking distance of where you stay?",
+     "c": "On a map, find an area that is central and close to a transport stop."
+    },
+    "de": {
+     "t": "Eine gute Lage wählen",
+     "g": "Sieh, warum eine zentrale, gut beleuchtete Lage nahe am Nahverkehr den Aufenthalt erleichtert.",
+     "p": [
+      "Zentral zu wohnen spart Zeit, und du kannst zwischendurch zum Ausruhen zurück.",
+      "Belebte, gut beleuchtete Straßen machen den Heimweg am Abend entspannt.",
+      "Eine Haltestelle für U-Bahn, Tram oder Bus in der Nähe öffnet dir die ganze Stadt."
+     ],
+     "q": "Was hättest du gern in Gehweite deiner Unterkunft?",
+     "c": "Such auf einer Karte ein zentrales Viertel nahe einer Haltestelle."
+    },
+    "es": {
+     "t": "Elegir una buena ubicación",
+     "g": "Mira por qué una zona céntrica, bien iluminada y cerca del transporte facilita la estancia.",
+     "p": [
+      "Alojarte en el centro ahorra tiempo y te permite volver a descansar entre salidas.",
+      "Las calles animadas y bien iluminadas hacen que volver de noche sea tranquilo.",
+      "Estar cerca del metro, el tranvía o el autobús te abre toda la ciudad."
+     ],
+     "q": "¿Qué te gustaría tener a poca distancia a pie de tu alojamiento?",
+     "c": "En un mapa, busca una zona céntrica y cerca de una parada de transporte."
+    },
+    "fr": {
+     "t": "Bien choisir l’emplacement",
+     "g": "Vois pourquoi un quartier central, bien éclairé et proche des transports simplifie le séjour.",
+     "p": [
+      "Loger au centre fait gagner du temps et permet de rentrer te reposer entre deux sorties.",
+      "Des rues animées et bien éclairées rendent le retour du soir plus serein.",
+      "Être près d’un métro, d’un tram ou d’un bus t’ouvre toute la ville."
+     ],
+     "q": "Qu’aimerais-tu avoir à distance de marche de ton logement ?",
+     "c": "Sur une carte, trouve un quartier central proche d’un arrêt de transport."
+    },
+    "it": {
+     "t": "Scegliere una buona posizione",
+     "g": "Scopri perché una zona centrale, illuminata e vicina ai trasporti rende tutto più facile.",
+     "p": [
+      "Stare in centro fa risparmiare tempo e puoi rientrare a riposare tra un giro e l’altro.",
+      "Strade vivaci e ben illuminate rendono sereno il rientro la sera.",
+      "Avere vicino metro, tram o autobus ti apre tutta la città."
+     ],
+     "q": "Cosa ti piacerebbe avere a pochi passi dal tuo alloggio?",
+     "c": "Su una mappa, trova una zona centrale vicina a una fermata dei mezzi."
+    },
+    "pt": {
+     "t": "Escolher uma boa localização",
+     "g": "Vê porque uma zona central, bem iluminada e perto de transportes facilita a estadia.",
+     "p": [
+      "Ficar no centro poupa tempo e deixa-te voltar para descansar entre passeios.",
+      "Ruas animadas e bem iluminadas tornam o regresso à noite tranquilo.",
+      "Estar perto do metro, elétrico ou autocarro abre-te a cidade inteira."
+     ],
+     "q": "O que gostavas de ter a uma curta distância a pé do alojamento?",
+     "c": "Num mapa, encontra uma zona central perto de uma paragem de transportes."
+    },
+    "pt_BR": {
+     "t": "Escolhendo uma boa localização",
+     "g": "Veja por que uma região central, iluminada e perto do transporte facilita a estadia.",
+     "p": [
+      "Ficar no centro economiza tempo e permite voltar para descansar entre os passeios.",
+      "Ruas movimentadas e bem iluminadas deixam a volta à noite tranquila.",
+      "Ficar perto do metrô, VLT ou ônibus abre a cidade inteira para você."
+     ],
+     "q": "O que você gostaria de ter a uma curta caminhada da hospedagem?",
+     "c": "Num mapa, encontre uma região central perto de uma parada de transporte."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hostels demystified",
+     "g": "Understand how hostels work and why so many solo travellers love them.",
+     "p": [
+      "Dorms share a room with bunk beds; private rooms give you your own space.",
+      "Lockers keep your things safe, so bring a small padlock.",
+      "Common areas, shared kitchens and hostel events make it easy to say hello."
+     ],
+     "q": "Would you rather try a dorm or a private room in a hostel? Why?",
+     "c": "Look at one hostel’s photos and find its common area and lockers."
+    },
+    "de": {
+     "t": "Hostels einfach erklärt",
+     "g": "Verstehe, wie Hostels funktionieren und warum so viele Alleinreisende sie lieben.",
+     "p": [
+      "Im Schlafsaal teilst du ein Zimmer mit Stockbetten, im Privatzimmer hast du deinen Raum.",
+      "Schließfächer sichern deine Sachen, also nimm ein kleines Vorhängeschloss mit.",
+      "Gemeinschaftsräume, Küchen und Hostel-Events machen das Kennenlernen leicht."
+     ],
+     "q": "Würdest du lieber einen Schlafsaal oder ein Privatzimmer ausprobieren? Warum?",
+     "c": "Sieh dir die Fotos eines Hostels an und finde Gemeinschaftsraum und Schließfächer."
+    },
+    "es": {
+     "t": "Los albergues, sin misterio",
+     "g": "Entiende cómo funcionan los albergues y por qué tantos viajeros solos los adoran.",
+     "p": [
+      "En un dormitorio compartes habitación con literas; en una privada tienes tu espacio.",
+      "Las taquillas guardan tus cosas, así que lleva un candado pequeño.",
+      "Zonas comunes, cocinas compartidas y actividades facilitan saludar a otros."
+     ],
+     "q": "¿Probarías un dormitorio compartido o una habitación privada? ¿Por qué?",
+     "c": "Mira las fotos de un albergue y localiza la zona común y las taquillas."
+    },
+    "fr": {
+     "t": "Les auberges de jeunesse expliquées",
+     "g": "Comprends comment fonctionnent les auberges et pourquoi tant de voyageurs solo les adorent.",
+     "p": [
+      "En dortoir, on partage une chambre avec lits superposés ; en privée, tu as ton espace.",
+      "Les casiers protègent tes affaires : emporte un petit cadenas.",
+      "Espaces communs, cuisines partagées et activités facilitent les premiers bonjours."
+     ],
+     "q": "Essaierais-tu plutôt un dortoir ou une chambre privée ? Pourquoi ?",
+     "c": "Regarde les photos d’une auberge et repère l’espace commun et les casiers."
+    },
+    "it": {
+     "t": "Gli ostelli spiegati",
+     "g": "Capisci come funzionano gli ostelli e perché tanti viaggiatori soli li adorano.",
+     "p": [
+      "Nel dormitorio condividi la stanza con letti a castello; in privata hai il tuo spazio.",
+      "Gli armadietti proteggono le tue cose, quindi porta un piccolo lucchetto.",
+      "Aree comuni, cucine condivise ed eventi rendono facile fare amicizia."
+     ],
+     "q": "Proveresti un dormitorio o una camera privata? Perché?",
+     "c": "Guarda le foto di un ostello e trova l’area comune e gli armadietti."
+    },
+    "pt": {
+     "t": "Hostels sem mistério",
+     "g": "Percebe como funcionam os hostels e porque tantos viajantes a solo gostam deles.",
+     "p": [
+      "Na camarata partilhas o quarto com beliches; no quarto privado tens o teu espaço.",
+      "Os cacifos guardam as tuas coisas, por isso leva um cadeado pequeno.",
+      "Zonas comuns, cozinhas partilhadas e atividades facilitam meter conversa."
+     ],
+     "q": "Experimentavas uma camarata ou um quarto privado? Porquê?",
+     "c": "Vê as fotos de um hostel e encontra a zona comum e os cacifos."
+    },
+    "pt_BR": {
+     "t": "Hostels sem mistério",
+     "g": "Entenda como funcionam os hostels e por que tantos viajantes solo adoram.",
+     "p": [
+      "No quarto compartilhado você divide o espaço com beliches; no privativo, tem seu canto.",
+      "Os armários guardam suas coisas, então leve um cadeado pequeno.",
+      "Áreas comuns, cozinhas compartilhadas e eventos facilitam puxar conversa."
+     ],
+     "q": "Você experimentaria um quarto compartilhado ou privativo? Por quê?",
+     "c": "Veja as fotos de um hostel e encontre a área comum e os armários."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Guesthouses and family-run stays",
+     "g": "Discover the charm of small, personal stays where hosts share local tips.",
+     "p": [
+      "Hosts often live on site and enjoy helping guests feel at home.",
+      "Breakfast or a chat in the kitchen can turn into the best local advice.",
+      "Small places mean fewer guests, a calm feel and someone who notices you."
+     ],
+     "q": "Have you ever stayed somewhere a host made special? What did they do?",
+     "c": "Find a family-run guesthouse in a place you like and read what guests say about the host."
+    },
+    "de": {
+     "t": "Pensionen und Familienbetriebe",
+     "g": "Entdecke den Charme kleiner, persönlicher Unterkünfte, deren Gastgeber Tipps teilen.",
+     "p": [
+      "Gastgeber wohnen oft im Haus und helfen gern, damit du dich wohlfühlst.",
+      "Ein Frühstück oder Gespräch in der Küche bringt oft die besten Insidertipps.",
+      "Kleine Häuser bedeuten wenige Gäste, Ruhe und jemanden, der dich wahrnimmt."
+     ],
+     "q": "Hat ein Gastgeber deinen Aufenthalt schon einmal besonders gemacht? Wie?",
+     "c": "Finde eine familiengeführte Pension und lies, was Gäste über die Gastgeber sagen."
+    },
+    "es": {
+     "t": "Pensiones y casas familiares",
+     "g": "Descubre el encanto de los alojamientos pequeños donde los anfitriones comparten consejos locales.",
+     "p": [
+      "Los anfitriones suelen vivir allí y disfrutan haciendo que te sientas en casa.",
+      "Un desayuno o una charla en la cocina pueden darte los mejores consejos.",
+      "Al ser pequeños, hay pocos huéspedes, calma y alguien que se fija en ti."
+     ],
+     "q": "¿Algún anfitrión hizo especial tu estancia? ¿Qué hizo?",
+     "c": "Busca una casa familiar en un lugar que te guste y lee qué dicen del anfitrión."
+    },
+    "fr": {
+     "t": "Maisons d’hôtes et accueil familial",
+     "g": "Découvre le charme des petits hébergements où les hôtes partagent leurs bons plans.",
+     "p": [
+      "Les hôtes vivent souvent sur place et aiment que tu te sentes chez toi.",
+      "Un petit-déjeuner ou une discussion en cuisine donne souvent les meilleurs conseils.",
+      "Peu de clients, une ambiance calme et quelqu’un qui fait attention à toi."
+     ],
+     "q": "Un hôte a-t-il déjà rendu ton séjour spécial ? Qu’a-t-il fait ?",
+     "c": "Trouve une maison d’hôtes familiale et lis ce que les clients disent de l’hôte."
+    },
+    "it": {
+     "t": "Guesthouse e strutture familiari",
+     "g": "Scopri il fascino degli alloggi piccoli dove i padroni di casa condividono consigli locali.",
+     "p": [
+      "Spesso i gestori vivono lì e amano farti sentire a casa.",
+      "Una colazione o due chiacchiere in cucina possono regalarti i consigli migliori.",
+      "Pochi ospiti, atmosfera tranquilla e qualcuno che si accorge di te."
+     ],
+     "q": "Un padrone di casa ha mai reso speciale il tuo soggiorno? Cosa ha fatto?",
+     "c": "Trova una struttura a gestione familiare e leggi cosa dicono gli ospiti dei gestori."
+    },
+    "pt": {
+     "t": "Casas de hóspedes e alojamento familiar",
+     "g": "Descobre o encanto dos alojamentos pequenos onde os anfitriões partilham dicas locais.",
+     "p": [
+      "Os anfitriões vivem muitas vezes lá e gostam de te fazer sentir em casa.",
+      "Um pequeno-almoço ou uma conversa na cozinha dão muitas vezes as melhores dicas.",
+      "Poucos hóspedes, ambiente calmo e alguém que repara em ti."
+     ],
+     "q": "Algum anfitrião já tornou a tua estadia especial? O que fez?",
+     "c": "Encontra uma casa familiar num sítio de que gostes e lê o que dizem do anfitrião."
+    },
+    "pt_BR": {
+     "t": "Pousadas e casas de família",
+     "g": "Descubra o charme das hospedagens pequenas onde os anfitriões dão dicas locais.",
+     "p": [
+      "Os anfitriões muitas vezes moram no local e gostam de fazer você se sentir em casa.",
+      "Um café da manhã ou um papo na cozinha rendem as melhores dicas.",
+      "Poucos hóspedes, clima tranquilo e alguém que presta atenção em você."
+     ],
+     "q": "Algum anfitrião já deixou sua estadia especial? O que ele fez?",
+     "c": "Encontre uma pousada familiar num lugar de que goste e leia o que dizem do anfitrião."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning a flexible itinerary",
+     "g": "Balance plans and free time so you can follow your curiosity on the road.",
+     "p": [
+      "Choose one or two key activities per day, not a long list.",
+      "Leave open blocks for wandering, resting or saying yes to a new idea.",
+      "Keep a short list of backup ideas for rainy days or tired moments."
+     ],
+     "q": "Do you like detailed plans or going with the flow?",
+     "c": "Plan one sample day with one key activity and two free blocks."
+    },
+    "de": {
+     "t": "Eine flexible Reiseroute planen",
+     "g": "Finde die Balance aus Plan und Freiraum, damit du unterwegs deiner Neugier folgen kannst.",
+     "p": [
+      "Wähle ein oder zwei Hauptaktivitäten pro Tag statt einer langen Liste.",
+      "Lass Lücken zum Bummeln, Ausruhen oder für spontane Ideen.",
+      "Halte eine kurze Liste mit Ideen für Regentage oder müde Momente bereit."
+     ],
+     "q": "Magst du genaue Pläne oder lässt du dich lieber treiben?",
+     "c": "Plane einen Beispieltag mit einer Hauptaktivität und zwei freien Zeitfenstern."
+    },
+    "es": {
+     "t": "Un itinerario flexible",
+     "g": "Equilibra planes y tiempo libre para seguir tu curiosidad durante el viaje.",
+     "p": [
+      "Elige una o dos actividades clave al día, no una lista larga.",
+      "Deja huecos para pasear, descansar o decir sí a una idea nueva.",
+      "Ten una lista corta de alternativas para días de lluvia o de cansancio."
+     ],
+     "q": "¿Te gustan los planes detallados o dejarte llevar?",
+     "c": "Planea un día de ejemplo con una actividad clave y dos ratos libres."
+    },
+    "fr": {
+     "t": "Un itinéraire flexible",
+     "g": "Équilibre programme et temps libre pour suivre ta curiosité en chemin.",
+     "p": [
+      "Choisis une ou deux activités clés par jour, pas une longue liste.",
+      "Garde des plages libres pour flâner, te reposer ou dire oui à une idée nouvelle.",
+      "Prévois une petite liste d’idées de secours pour la pluie ou la fatigue."
+     ],
+     "q": "Tu préfères les plans détaillés ou te laisser porter ?",
+     "c": "Prépare une journée type avec une activité clé et deux moments libres."
+    },
+    "it": {
+     "t": "Un itinerario flessibile",
+     "g": "Bilancia programmi e tempo libero per seguire la tua curiosità in viaggio.",
+     "p": [
+      "Scegli una o due attività principali al giorno, non una lunga lista.",
+      "Lascia spazi liberi per passeggiare, riposare o dire sì a un’idea nuova.",
+      "Tieni una breve lista di alternative per giorni di pioggia o di stanchezza."
+     ],
+     "q": "Ti piacciono i piani dettagliati o preferisci lasciarti andare?",
+     "c": "Pianifica una giornata tipo con un’attività principale e due momenti liberi."
+    },
+    "pt": {
+     "t": "Um itinerário flexível",
+     "g": "Equilibra planos e tempo livre para seguires a tua curiosidade na viagem.",
+     "p": [
+      "Escolhe uma ou duas atividades principais por dia, não uma lista enorme.",
+      "Deixa espaços livres para passear, descansar ou dizer sim a uma ideia nova.",
+      "Tem uma lista curta de alternativas para dias de chuva ou de cansaço."
+     ],
+     "q": "Gostas de planos detalhados ou de ir ao sabor do momento?",
+     "c": "Planeia um dia de exemplo com uma atividade principal e dois tempos livres."
+    },
+    "pt_BR": {
+     "t": "Um roteiro flexível",
+     "g": "Equilibre planos e tempo livre para seguir sua curiosidade durante a viagem.",
+     "p": [
+      "Escolha uma ou duas atividades principais por dia, não uma lista enorme.",
+      "Deixe horários livres para passear, descansar ou topar uma ideia nova.",
+      "Tenha uma lista curta de alternativas para dias de chuva ou de cansaço."
+     ],
+     "q": "Você gosta de planos detalhados ou de deixar rolar?",
+     "c": "Planeje um dia de exemplo com uma atividade principal e dois horários livres."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Researching your destination",
+     "g": "Learn what to look up before you go so you arrive informed and relaxed.",
+     "p": [
+      "Customs: greetings, dress codes in sacred sites and table manners.",
+      "Transport and neighbourhoods: how to get around and which areas suit you.",
+      "Highlights: the sights, foods and experiences you really want to try."
+     ],
+     "q": "What is one thing you always like to know before visiting a new place?",
+     "c": "Write three facts about a destination you dream of: one custom, one food, one sight."
+    },
+    "de": {
+     "t": "Dein Reiseziel recherchieren",
+     "g": "Erfahre, was du vorher nachschlagen solltest, um informiert und entspannt anzukommen.",
+     "p": [
+      "Bräuche: Begrüßungen, Kleidung an heiligen Orten und Tischmanieren.",
+      "Verkehr und Viertel: wie du dich bewegst und welche Gegenden zu dir passen.",
+      "Höhepunkte: Sehenswürdigkeiten, Gerichte und Erlebnisse, die du wirklich willst."
+     ],
+     "q": "Was möchtest du vor dem Besuch eines neuen Ortes immer wissen?",
+     "c": "Schreib drei Fakten über ein Traumziel auf: einen Brauch, ein Gericht, einen Ort."
+    },
+    "es": {
+     "t": "Investigar tu destino",
+     "g": "Aprende qué consultar antes de ir para llegar informado y tranquilo.",
+     "p": [
+      "Costumbres: saludos, ropa en lugares sagrados y modales en la mesa.",
+      "Transporte y barrios: cómo moverte y qué zonas encajan contigo.",
+      "Lo imprescindible: lugares, comidas y experiencias que de verdad quieres vivir."
+     ],
+     "q": "¿Qué te gusta saber siempre antes de visitar un lugar nuevo?",
+     "c": "Escribe tres datos de un destino soñado: una costumbre, un plato y un lugar."
+    },
+    "fr": {
+     "t": "Se renseigner sur sa destination",
+     "g": "Apprends quoi chercher avant de partir pour arriver informé et serein.",
+     "p": [
+      "Coutumes : salutations, tenue dans les lieux sacrés et manières à table.",
+      "Transports et quartiers : comment circuler et quelles zones te correspondent.",
+      "Incontournables : les sites, plats et expériences que tu veux vraiment vivre."
+     ],
+     "q": "Qu’aimes-tu toujours savoir avant de visiter un nouvel endroit ?",
+     "c": "Écris trois infos sur une destination de rêve : une coutume, un plat, un site."
+    },
+    "it": {
+     "t": "Informarsi sulla destinazione",
+     "g": "Impara cosa cercare prima di partire per arrivare informato e tranquillo.",
+     "p": [
+      "Usanze: saluti, abbigliamento nei luoghi sacri e regole a tavola.",
+      "Trasporti e quartieri: come muoverti e quali zone fanno per te.",
+      "Da non perdere: luoghi, piatti ed esperienze che vuoi davvero provare."
+     ],
+     "q": "Cosa ti piace sapere sempre prima di visitare un posto nuovo?",
+     "c": "Scrivi tre cose su una meta dei sogni: un’usanza, un piatto e un luogo."
+    },
+    "pt": {
+     "t": "Pesquisar o destino",
+     "g": "Aprende o que pesquisar antes de ir para chegares informado e tranquilo.",
+     "p": [
+      "Costumes: cumprimentos, roupa em locais sagrados e regras à mesa.",
+      "Transportes e bairros: como te deslocares e que zonas combinam contigo.",
+      "Destaques: os sítios, pratos e experiências que queres mesmo viver."
+     ],
+     "q": "O que gostas sempre de saber antes de visitar um sítio novo?",
+     "c": "Escreve três factos sobre um destino de sonho: um costume, um prato e um sítio."
+    },
+    "pt_BR": {
+     "t": "Pesquisando o destino",
+     "g": "Aprenda o que pesquisar antes de ir para chegar informado e tranquilo.",
+     "p": [
+      "Costumes: cumprimentos, roupas em locais sagrados e etiqueta à mesa.",
+      "Transporte e bairros: como circular e quais regiões combinam com você.",
+      "Destaques: os lugares, pratos e experiências que você quer muito viver."
+     ],
+     "q": "O que você sempre gosta de saber antes de visitar um lugar novo?",
+     "c": "Escreva três fatos sobre um destino dos sonhos: um costume, um prato e um lugar."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Learning a few local phrases",
+     "g": "Learn the handful of words that open doors and bring smiles anywhere.",
+     "p": [
+      "Start with hello, please, thank you and excuse me.",
+      "Add sorry, yes, no and «Do you speak English?» for daily situations.",
+      "Locals usually appreciate any effort, even with an imperfect accent."
+     ],
+     "q": "Which language would you love to try a few words of on your next trip?",
+     "c": "Learn hello, please and thank you in the language of a place you want to visit."
+    },
+    "de": {
+     "t": "Ein paar Wörter der Landessprache",
+     "g": "Lerne die wenigen Wörter, die überall Türen öffnen und ein Lächeln bringen.",
+     "p": [
+      "Beginne mit Hallo, bitte, danke und Entschuldigung.",
+      "Ergänze Ja, Nein und «Sprechen Sie Englisch?» für den Alltag.",
+      "Einheimische schätzen fast immer jede Mühe, auch mit holprigem Akzent."
+     ],
+     "q": "In welcher Sprache würdest du auf deiner nächsten Reise gern ein paar Wörter sagen?",
+     "c": "Lerne Hallo, bitte und danke in der Sprache eines Ortes, den du besuchen willst."
+    },
+    "es": {
+     "t": "Aprender algunas frases locales",
+     "g": "Aprende las pocas palabras que abren puertas y sacan sonrisas en cualquier lugar.",
+     "p": [
+      "Empieza por hola, por favor, gracias y perdone.",
+      "Añade lo siento, sí, no y «¿Habla inglés?» para el día a día.",
+      "La gente suele valorar cualquier esfuerzo, aunque el acento no sea perfecto."
+     ],
+     "q": "¿En qué idioma te gustaría probar unas palabras en tu próximo viaje?",
+     "c": "Aprende hola, por favor y gracias en el idioma de un lugar que quieras visitar."
+    },
+    "fr": {
+     "t": "Quelques mots de la langue locale",
+     "g": "Apprends la poignée de mots qui ouvre des portes et fait sourire partout.",
+     "p": [
+      "Commence par bonjour, s’il vous plaît, merci et excusez-moi.",
+      "Ajoute pardon, oui, non et « Parlez-vous anglais ? » pour le quotidien.",
+      "Les habitants apprécient presque toujours l’effort, même avec un accent imparfait."
+     ],
+     "q": "Dans quelle langue aimerais-tu essayer quelques mots lors de ton prochain voyage ?",
+     "c": "Apprends bonjour, s’il vous plaît et merci dans la langue d’un lieu qui te tente."
+    },
+    "it": {
+     "t": "Qualche frase nella lingua locale",
+     "g": "Impara le poche parole che aprono porte e strappano sorrisi ovunque.",
+     "p": [
+      "Inizia con ciao, per favore, grazie e mi scusi.",
+      "Aggiungi scusa, sì, no e «Parla inglese?» per le situazioni di ogni giorno.",
+      "Di solito la gente apprezza ogni sforzo, anche con un accento imperfetto."
+     ],
+     "q": "In quale lingua ti piacerebbe provare qualche parola nel prossimo viaggio?",
+     "c": "Impara ciao, per favore e grazie nella lingua di un posto che vuoi visitare."
+    },
+    "pt": {
+     "t": "Aprender algumas frases locais",
+     "g": "Aprende as poucas palavras que abrem portas e trazem sorrisos em qualquer lado.",
+     "p": [
+      "Começa por olá, por favor, obrigado e com licença.",
+      "Junta desculpe, sim, não e «Fala inglês?» para o dia a dia.",
+      "As pessoas costumam valorizar qualquer esforço, mesmo com sotaque imperfeito."
+     ],
+     "q": "Em que língua gostavas de experimentar umas palavras na próxima viagem?",
+     "c": "Aprende olá, por favor e obrigado na língua de um sítio que queres visitar."
+    },
+    "pt_BR": {
+     "t": "Aprendendo algumas frases locais",
+     "g": "Aprenda as poucas palavras que abrem portas e arrancam sorrisos em qualquer lugar.",
+     "p": [
+      "Comece por olá, por favor, obrigado e com licença.",
+      "Acrescente desculpe, sim, não e «Você fala inglês?» para o dia a dia.",
+      "As pessoas costumam valorizar qualquer esforço, mesmo com sotaque imperfeito."
+     ],
+     "q": "Em que idioma você gostaria de arriscar umas palavras na próxima viagem?",
+     "c": "Aprenda olá, por favor e obrigado no idioma de um lugar que você quer visitar."
+    }
+   }
+  }
+ ]
+}

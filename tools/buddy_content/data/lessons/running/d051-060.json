@@ -1,0 +1,835 @@
+{
+ "topic": "running",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common beginner aches",
+     "g": "Learn general information on normal muscle soreness versus pain worth checking.",
+     "p": [
+      "Mild, even muscle soreness a day or two after a new effort is common.",
+      "Sharp pain, swelling or pain that changes how you walk is different and worth checking.",
+      "This is general information only; if you are unsure, ask a doctor."
+     ],
+     "q": "How does your body usually feel the day after trying something new and active?",
+     "c": "After your next run, note any soreness: where it is, how strong, and whether it fades."
+    },
+    "de": {
+     "t": "Typische Anfänger-Wehwehchen",
+     "g": "Erhalte allgemeine Infos zu normalem Muskelkater im Vergleich zu Schmerzen, die man abklären sollte.",
+     "p": [
+      "Leichter, gleichmäßiger Muskelkater ein bis zwei Tage nach neuer Belastung ist häufig.",
+      "Stechender Schmerz, Schwellung oder Schmerz, der dein Gehen verändert, sollte abgeklärt werden.",
+      "Das sind nur allgemeine Infos; bist du unsicher, frag einen Arzt."
+     ],
+     "q": "Wie fühlt sich dein Körper meist am Tag nach einer neuen, aktiven Sache an?",
+     "c": "Notiere nach dem nächsten Lauf eventuellen Muskelkater: wo, wie stark und ob er nachlässt."
+    },
+    "es": {
+     "t": "Molestias típicas al empezar",
+     "g": "Conoce información general sobre las agujetas normales frente al dolor que conviene revisar.",
+     "p": [
+      "Unas agujetas leves y repartidas uno o dos días después de un esfuerzo nuevo son habituales.",
+      "Un dolor agudo, hinchazón o dolor que cambia tu forma de caminar es distinto y conviene revisarlo.",
+      "Esto es solo información general; si tienes dudas, consulta a un médico."
+     ],
+     "q": "¿Cómo sueles notar el cuerpo al día siguiente de probar algo nuevo y activo?",
+     "c": "Tras tu próxima salida, anota si hay agujetas: dónde, cuánto y si van desapareciendo."
+    },
+    "fr": {
+     "t": "Les petites douleurs du débutant",
+     "g": "Découvre des informations générales sur les courbatures normales et les douleurs à faire vérifier.",
+     "p": [
+      "Des courbatures légères et diffuses un ou deux jours après un nouvel effort sont fréquentes.",
+      "Une douleur vive, un gonflement ou une douleur qui modifie ta marche, c'est différent et à faire vérifier.",
+      "Ce sont des informations générales ; en cas de doute, demande à un médecin."
+     ],
+     "q": "Comment se sent ton corps le lendemain d'une nouvelle activité physique ?",
+     "c": "Après ta prochaine sortie, note les courbatures éventuelles : où, quelle intensité et si elles passent."
+    },
+    "it": {
+     "t": "I classici fastidi del principiante",
+     "g": "Scopri informazioni generali su normale indolenzimento muscolare e dolore da far controllare.",
+     "p": [
+      "Un indolenzimento lieve e diffuso uno o due giorni dopo uno sforzo nuovo è comune.",
+      "Dolore acuto, gonfiore o dolore che cambia il tuo modo di camminare è diverso e va controllato.",
+      "Sono solo informazioni generali; se hai dubbi, chiedi a un medico."
+     ],
+     "q": "Come senti di solito il corpo il giorno dopo aver provato un'attività nuova?",
+     "c": "Dopo la prossima corsa, annota eventuali indolenzimenti: dove, quanto e se passano."
+    },
+    "pt": {
+     "t": "Dores comuns de principiante",
+     "g": "Conhece informação geral sobre dores musculares normais versus dor que vale a pena avaliar.",
+     "p": [
+      "Uma dor muscular ligeira e espalhada um ou dois dias depois de um esforço novo é comum.",
+      "Dor aguda, inchaço ou dor que muda a tua forma de andar é diferente e vale a pena avaliar.",
+      "Isto é só informação geral; se tiveres dúvidas, fala com um médico."
+     ],
+     "q": "Como sentes normalmente o corpo no dia a seguir a experimentar algo novo e ativo?",
+     "c": "Depois da próxima corrida, anota se tens dores musculares: onde, com que intensidade e se passam."
+    },
+    "pt_BR": {
+     "t": "Dores comuns de iniciante",
+     "g": "Conheça informações gerais sobre dor muscular normal e dor que vale a pena avaliar.",
+     "p": [
+      "Uma dor muscular leve e espalhada um ou dois dias depois de um esforço novo é comum.",
+      "Dor aguda, inchaço ou dor que muda seu jeito de andar é diferente e vale a pena avaliar.",
+      "Isto é só informação geral; se tiver dúvida, procure um médico."
+     ],
+     "q": "Como você costuma sentir o corpo no dia seguinte a uma atividade nova?",
+     "c": "Depois da próxima corrida, anote se houver dor muscular: onde, com que intensidade e se ela passa."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When to ask a professional",
+     "g": "Recognise when a doctor or physiotherapist should take a look.",
+     "p": [
+      "Before starting, a check-up is a good idea, especially if you have a health condition.",
+      "Pain that lasts several days, gets worse or makes you limp deserves professional advice.",
+      "Asking early is a smart move that keeps you running happily for longer."
+     ],
+     "q": "Do you know where you could find a doctor or physiotherapist near you?",
+     "c": "Write down the contact of one local doctor or physio so it is ready if you ever need it."
+    },
+    "de": {
+     "t": "Wann du Fachleute fragen solltest",
+     "g": "Erkenne, wann ein Arzt oder Physiotherapeut sich etwas ansehen sollte.",
+     "p": [
+      "Vor dem Start ist ein Check-up sinnvoll, besonders bei bestehenden Erkrankungen.",
+      "Schmerzen, die mehrere Tage anhalten, schlimmer werden oder dich humpeln lassen, gehören in Fachhände.",
+      "Früh zu fragen ist klug und hält dich länger fröhlich am Laufen."
+     ],
+     "q": "Weißt du, wo du in deiner Nähe einen Arzt oder Physiotherapeuten findest?",
+     "c": "Notiere die Kontaktdaten eines Arztes oder Physios in deiner Nähe, damit sie bereitliegen."
+    },
+    "es": {
+     "t": "Cuándo consultar a un profesional",
+     "g": "Reconoce cuándo conviene que te vea un médico o un fisioterapeuta.",
+     "p": [
+      "Antes de empezar, una revisión es buena idea, sobre todo si tienes alguna condición de salud.",
+      "Un dolor que dura varios días, empeora o te hace cojear merece consejo profesional.",
+      "Consultar pronto es una decisión inteligente que te mantiene corriendo feliz más tiempo."
+     ],
+     "q": "¿Sabes dónde podrías encontrar un médico o fisioterapeuta cerca de ti?",
+     "c": "Apunta el contacto de un médico o fisio de tu zona para tenerlo a mano si algún día lo necesitas."
+    },
+    "fr": {
+     "t": "Quand consulter un professionnel",
+     "g": "Reconnais quand un médecin ou un kiné devrait jeter un œil.",
+     "p": [
+      "Avant de commencer, un bilan est une bonne idée, surtout si tu as un problème de santé.",
+      "Une douleur qui dure plusieurs jours, s'aggrave ou te fait boiter mérite un avis professionnel.",
+      "Consulter tôt est un choix malin qui te permet de courir heureux plus longtemps."
+     ],
+     "q": "Sais-tu où trouver un médecin ou un kiné près de chez toi ?",
+     "c": "Note les coordonnées d'un médecin ou d'un kiné proche pour les avoir sous la main si besoin."
+    },
+    "it": {
+     "t": "Quando chiedere a un professionista",
+     "g": "Riconosci quando è il caso che un medico o un fisioterapista dia un'occhiata.",
+     "p": [
+      "Prima di iniziare, un controllo è una buona idea, soprattutto con condizioni di salute particolari.",
+      "Un dolore che dura diversi giorni, peggiora o ti fa zoppicare merita un parere professionale.",
+      "Chiedere presto è una scelta furba che ti fa correre felice più a lungo."
+     ],
+     "q": "Sai dove potresti trovare un medico o un fisioterapista vicino a te?",
+     "c": "Annota il contatto di un medico o fisioterapista della tua zona, così è pronto se servirà."
+    },
+    "pt": {
+     "t": "Quando consultar um profissional",
+     "g": "Reconhece quando um médico ou fisioterapeuta deve dar uma vista de olhos.",
+     "p": [
+      "Antes de começar, um check-up é boa ideia, sobretudo se tiveres alguma condição de saúde.",
+      "Uma dor que dura vários dias, piora ou te faz coxear merece aconselhamento profissional.",
+      "Perguntar cedo é uma escolha inteligente que te mantém a correr feliz por mais tempo."
+     ],
+     "q": "Sabes onde podes encontrar um médico ou fisioterapeuta perto de ti?",
+     "c": "Anota o contacto de um médico ou fisioterapeuta da tua zona para teres à mão se precisares."
+    },
+    "pt_BR": {
+     "t": "Quando procurar um profissional",
+     "g": "Reconheça quando um médico ou fisioterapeuta deve dar uma olhada.",
+     "p": [
+      "Antes de começar, um check-up é uma boa ideia, principalmente se você tem alguma condição de saúde.",
+      "Dor que dura vários dias, piora ou faz você mancar merece orientação profissional.",
+      "Procurar ajuda cedo é uma escolha inteligente que mantém você correndo feliz por mais tempo."
+     ],
+     "q": "Você sabe onde encontrar um médico ou fisioterapeuta perto de você?",
+     "c": "Anote o contato de um médico ou fisioterapeuta da sua região para ter à mão se precisar."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The gradual progress principle",
+     "g": "Learn why increasing running time slowly gives your body time to adapt.",
+     "p": [
+      "Muscles, tendons and bones adapt more slowly than your heart and lungs.",
+      "Add only a little time each week, such as a few extra minutes per run.",
+      "Every few weeks, an easier week helps your body catch up."
+     ],
+     "q": "Have you ever done too much too soon in sport or another hobby?",
+     "c": "Look at last week and plan next week with only a small increase in total running time."
+    },
+    "de": {
+     "t": "Das Prinzip der schrittweisen Steigerung",
+     "g": "Lerne, warum langsames Steigern der Laufzeit deinem Körper Zeit zur Anpassung gibt.",
+     "p": [
+      "Muskeln, Sehnen und Knochen passen sich langsamer an als Herz und Lunge.",
+      "Steigere jede Woche nur ein wenig, etwa ein paar Minuten mehr pro Lauf.",
+      "Alle paar Wochen hilft eine leichtere Woche dem Körper, nachzuziehen."
+     ],
+     "q": "Hast du beim Sport oder einem Hobby schon mal zu viel zu schnell gemacht?",
+     "c": "Schau auf letzte Woche und plane die nächste mit nur einer kleinen Steigerung der Gesamtlaufzeit."
+    },
+    "es": {
+     "t": "El principio del progreso gradual",
+     "g": "Aprende por qué aumentar despacio el tiempo de carrera da al cuerpo tiempo para adaptarse.",
+     "p": [
+      "Músculos, tendones y huesos se adaptan más lento que el corazón y los pulmones.",
+      "Añade solo un poco cada semana, por ejemplo unos minutos más por salida.",
+      "Cada pocas semanas, una semana más suave ayuda al cuerpo a ponerse al día."
+     ],
+     "q": "¿Alguna vez has hecho demasiado y demasiado pronto en un deporte u otra afición?",
+     "c": "Mira la semana pasada y planea la próxima con solo un pequeño aumento del tiempo total."
+    },
+    "fr": {
+     "t": "Le principe de la progression douce",
+     "g": "Comprends pourquoi augmenter lentement ton temps de course laisse au corps le temps de s'adapter.",
+     "p": [
+      "Muscles, tendons et os s'adaptent plus lentement que le cœur et les poumons.",
+      "Ajoute seulement un peu chaque semaine, par exemple quelques minutes par sortie.",
+      "Toutes les quelques semaines, une semaine plus légère aide le corps à suivre."
+     ],
+     "q": "As-tu déjà voulu en faire trop, trop vite, dans un sport ou un loisir ?",
+     "c": "Regarde ta semaine passée et prévois la suivante avec une petite hausse du temps total."
+    },
+    "it": {
+     "t": "Il principio della progressione graduale",
+     "g": "Scopri perché aumentare piano il tempo di corsa dà al corpo il tempo di adattarsi.",
+     "p": [
+      "Muscoli, tendini e ossa si adattano più lentamente di cuore e polmoni.",
+      "Aggiungi solo un po' ogni settimana, ad esempio qualche minuto in più per uscita.",
+      "Ogni qualche settimana, una settimana più leggera aiuta il corpo a recuperare il passo."
+     ],
+     "q": "Ti è mai capitato di fare troppo e troppo presto in uno sport o un hobby?",
+     "c": "Guarda la settimana scorsa e pianifica la prossima con solo un piccolo aumento del tempo totale."
+    },
+    "pt": {
+     "t": "O princípio da progressão gradual",
+     "g": "Percebe porque é que aumentar devagar o tempo de corrida dá ao corpo tempo para se adaptar.",
+     "p": [
+      "Músculos, tendões e ossos adaptam-se mais devagar do que o coração e os pulmões.",
+      "Acrescenta só um pouco por semana, por exemplo uns minutos a mais por corrida.",
+      "De tantas em tantas semanas, uma semana mais leve ajuda o corpo a acompanhar."
+     ],
+     "q": "Já fizeste demasiado cedo demais num desporto ou noutro passatempo?",
+     "c": "Olha para a semana passada e planeia a próxima com só um pequeno aumento do tempo total."
+    },
+    "pt_BR": {
+     "t": "O princípio da evolução gradual",
+     "g": "Entenda por que aumentar devagar o tempo de corrida dá ao corpo tempo para se adaptar.",
+     "p": [
+      "Músculos, tendões e ossos se adaptam mais devagar que o coração e os pulmões.",
+      "Aumente só um pouquinho por semana, como alguns minutos a mais por corrida.",
+      "De tempos em tempos, uma semana mais leve ajuda o corpo a acompanhar."
+     ],
+     "q": "Você já fez demais e cedo demais em algum esporte ou hobby?",
+     "c": "Olhe a semana passada e planeje a próxima com só um pequeno aumento no tempo total de corrida."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first 20-minute run",
+     "g": "Build step by step toward twenty minutes of continuous easy running.",
+     "p": [
+      "Twenty minutes non-stop is a wonderful milestone for many new runners.",
+      "Get there through walk-run sessions where the running parts slowly grow.",
+      "Keep the pace truly easy; finishing comfortably matters more than speed."
+     ],
+     "q": "How close do you feel to running 20 minutes without stopping?",
+     "c": "Plan your next session with slightly longer running parts than last time, at chatting pace."
+    },
+    "de": {
+     "t": "Dein erster 20-Minuten-Lauf",
+     "g": "Arbeite dich Schritt für Schritt zu zwanzig Minuten lockerem Dauerlauf vor.",
+     "p": [
+      "Zwanzig Minuten am Stück sind für viele Neulinge ein wunderbarer Meilenstein.",
+      "Du kommst über Geh-Lauf-Einheiten dorthin, deren Laufphasen langsam wachsen.",
+      "Bleib wirklich locker; entspannt anzukommen zählt mehr als Tempo."
+     ],
+     "q": "Wie nah fühlst du dich an 20 Minuten Laufen ohne Pause?",
+     "c": "Plane deine nächste Einheit mit etwas längeren Laufphasen als letztes Mal, im Plaudertempo."
+    },
+    "es": {
+     "t": "Tu primera carrera de 20 minutos",
+     "g": "Avanza paso a paso hacia veinte minutos seguidos de carrera suave.",
+     "p": [
+      "Veinte minutos sin parar son un hito precioso para mucha gente que empieza.",
+      "Se llega con sesiones de correr-caminar en las que los tramos corriendo crecen poco a poco.",
+      "Mantén un ritmo realmente suave; acabar cómodo importa más que la velocidad."
+     ],
+     "q": "¿Cuánto crees que te falta para correr 20 minutos sin parar?",
+     "c": "Planea tu próxima sesión con tramos corriendo algo más largos que la última vez, a ritmo de charla."
+    },
+    "fr": {
+     "t": "Ta première course de 20 minutes",
+     "g": "Progresse pas à pas vers vingt minutes de course facile sans t'arrêter.",
+     "p": [
+      "Vingt minutes sans pause, c'est une belle étape pour beaucoup de débutants.",
+      "On y arrive par des séances course-marche où les parties courues s'allongent peu à peu.",
+      "Garde une allure vraiment facile ; finir à l'aise compte plus que la vitesse."
+     ],
+     "q": "À quel point te sens-tu proche de courir 20 minutes sans t'arrêter ?",
+     "c": "Prévois ta prochaine séance avec des parties courues un peu plus longues que la dernière fois, en papotant."
+    },
+    "it": {
+     "t": "La tua prima corsa di 20 minuti",
+     "g": "Avanza passo dopo passo verso venti minuti di corsa leggera continua.",
+     "p": [
+      "Venti minuti senza fermarsi sono un traguardo bellissimo per molti principianti.",
+      "Ci si arriva con sessioni di corsa-camminata in cui i tratti di corsa crescono piano.",
+      "Mantieni un ritmo davvero facile; finire comodo conta più della velocità."
+     ],
+     "q": "Quanto ti senti vicino a correre 20 minuti senza fermarti?",
+     "c": "Pianifica la prossima sessione con tratti di corsa un po' più lunghi dell'ultima volta, a ritmo da chiacchiera."
+    },
+    "pt": {
+     "t": "A tua primeira corrida de 20 minutos",
+     "g": "Avança passo a passo até vinte minutos seguidos de corrida leve.",
+     "p": [
+      "Vinte minutos sem parar são um marco fantástico para muitos principiantes.",
+      "Chega-se lá com sessões de correr-caminhar em que os períodos a correr crescem devagar.",
+      "Mantém um ritmo mesmo leve; terminar confortável importa mais do que a velocidade."
+     ],
+     "q": "Quão perto te sentes de correr 20 minutos sem parar?",
+     "c": "Planeia a próxima sessão com períodos a correr um pouco mais longos do que da última vez, a ritmo de conversa."
+    },
+    "pt_BR": {
+     "t": "Sua primeira corrida de 20 minutos",
+     "g": "Avance passo a passo até vinte minutos seguidos de corrida leve.",
+     "p": [
+      "Vinte minutos sem parar são um marco incrível para muitos iniciantes.",
+      "Você chega lá com treinos de corre-caminha em que os trechos correndo crescem aos poucos.",
+      "Mantenha o ritmo bem leve; terminar confortável importa mais que a velocidade."
+     ],
+     "q": "Quão perto você se sente de correr 20 minutos sem parar?",
+     "c": "Planeje o próximo treino com trechos correndo um pouco mais longos que da última vez, no ritmo de conversa."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "From run-walk to continuous running",
+     "g": "Learn how to shrink walking breaks step by step.",
+     "p": [
+      "Lengthen the running parts or shorten the walks, but change only one thing at a time.",
+      "Repeat a step until it feels comfortable before moving on.",
+      "Going back a step on a tired day is part of the process, not a failure."
+     ],
+     "q": "What is your current run-walk ratio, and what could the next small step be?",
+     "c": "Write your next three sessions, each with a slightly smaller walking share than the last."
+    },
+    "de": {
+     "t": "Vom Geh-Lauf zum Dauerlauf",
+     "g": "Lerne, die Gehpausen Schritt für Schritt zu verkürzen.",
+     "p": [
+      "Verlängere die Laufphasen oder verkürze die Gehpausen, aber ändere immer nur eine Sache.",
+      "Wiederhole eine Stufe, bis sie sich angenehm anfühlt, bevor du weitergehst.",
+      "An müden Tagen eine Stufe zurückzugehen gehört dazu und ist kein Scheitern."
+     ],
+     "q": "Wie ist dein aktuelles Geh-Lauf-Verhältnis, und was wäre der nächste kleine Schritt?",
+     "c": "Schreib deine nächsten drei Einheiten auf, jede mit etwas weniger Gehanteil als die vorige."
+    },
+    "es": {
+     "t": "Del correr-caminar a correr seguido",
+     "g": "Aprende a reducir las pausas caminando paso a paso.",
+     "p": [
+      "Alarga los tramos corriendo o acorta los de caminar, pero cambia solo una cosa cada vez.",
+      "Repite un paso hasta que te resulte cómodo antes de avanzar.",
+      "Retroceder un paso un día cansado es parte del proceso, no un fracaso."
+     ],
+     "q": "¿Cuál es tu proporción actual de correr y caminar, y cuál podría ser el siguiente pasito?",
+     "c": "Escribe tus tres próximas sesiones, cada una con un poco menos de caminata que la anterior."
+    },
+    "fr": {
+     "t": "De la course-marche à la course continue",
+     "g": "Apprends à réduire les pauses marchées étape par étape.",
+     "p": [
+      "Allonge les parties courues ou raccourcis la marche, mais ne change qu'une chose à la fois.",
+      "Répète une étape jusqu'à ce qu'elle soit confortable avant de passer à la suivante.",
+      "Revenir d'une étape un jour de fatigue fait partie du chemin, ce n'est pas un échec."
+     ],
+     "q": "Quel est ton rapport course-marche actuel, et quelle pourrait être la prochaine petite étape ?",
+     "c": "Écris tes trois prochaines séances, chacune avec un peu moins de marche que la précédente."
+    },
+    "it": {
+     "t": "Dalla corsa-camminata alla corsa continua",
+     "g": "Impara a ridurre le pause camminando un passo alla volta.",
+     "p": [
+      "Allunga i tratti di corsa o accorcia le camminate, ma cambia una sola cosa alla volta.",
+      "Ripeti un passaggio finché è comodo prima di andare avanti.",
+      "Tornare indietro di un passo in un giorno stanco fa parte del percorso, non è un fallimento."
+     ],
+     "q": "Qual è il tuo rapporto attuale corsa-camminata e quale potrebbe essere il prossimo piccolo passo?",
+     "c": "Scrivi le prossime tre sessioni, ognuna con un po' meno camminata della precedente."
+    },
+    "pt": {
+     "t": "Do correr-caminhar à corrida contínua",
+     "g": "Aprende a reduzir as pausas a caminhar passo a passo.",
+     "p": [
+      "Alonga os períodos a correr ou encurta as caminhadas, mas muda só uma coisa de cada vez.",
+      "Repete uma etapa até ficar confortável antes de avançares.",
+      "Recuar uma etapa num dia cansado faz parte do processo, não é um fracasso."
+     ],
+     "q": "Qual é a tua proporção atual de correr e caminhar, e qual poderia ser o próximo pequeno passo?",
+     "c": "Escreve as tuas próximas três sessões, cada uma com um pouco menos de caminhada que a anterior."
+    },
+    "pt_BR": {
+     "t": "Do corre-caminha à corrida contínua",
+     "g": "Aprenda a diminuir as pausas caminhando passo a passo.",
+     "p": [
+      "Aumente os trechos correndo ou diminua as caminhadas, mas mude só uma coisa por vez.",
+      "Repita uma etapa até ela ficar confortável antes de avançar.",
+      "Voltar uma etapa num dia cansado faz parte do processo, não é fracasso."
+     ],
+     "q": "Qual é sua proporção atual de corre-caminha e qual poderia ser o próximo pequeno passo?",
+     "c": "Escreva seus próximos três treinos, cada um com um pouco menos de caminhada que o anterior."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fun runs and colour runs",
+     "g": "Discover untimed events where the focus is pure fun and good vibes.",
+     "p": [
+      "Fun runs are relaxed events with no pressure about time or placing.",
+      "Colour runs, themed costumes and music along the course create a festive mood.",
+      "They are a great first event to enjoy with friends, family or colleagues."
+     ],
+     "q": "Would you rather join a colourful fun run or a quiet run in nature?",
+     "c": "Look for a fun run in your area in the coming months and share it with a friend."
+    },
+    "de": {
+     "t": "Spaßläufe und Farbläufe",
+     "g": "Entdecke Events ohne Zeitmessung, bei denen Spaß und gute Laune im Mittelpunkt stehen.",
+     "p": [
+      "Spaßläufe sind entspannte Veranstaltungen ohne Druck bei Zeit oder Platzierung.",
+      "Farbläufe, Kostüme und Musik an der Strecke sorgen für Feststimmung.",
+      "Sie sind ein tolles erstes Event mit Freunden, Familie oder Kollegen."
+     ],
+     "q": "Würdest du lieber bei einem bunten Spaßlauf oder einem ruhigen Lauf in der Natur mitmachen?",
+     "c": "Such einen Spaßlauf in deiner Gegend in den nächsten Monaten und erzähl einer Freundin oder einem Freund davon."
+    },
+    "es": {
+     "t": "Carreras divertidas y de colores",
+     "g": "Descubre eventos sin cronómetro donde lo importante es divertirse y el buen ambiente.",
+     "p": [
+      "Las carreras divertidas son eventos relajados sin presión por el tiempo ni el puesto.",
+      "Los polvos de colores, los disfraces y la música en el recorrido crean un ambiente festivo.",
+      "Son un primer evento genial para disfrutar con amigos, familia o compañeros."
+     ],
+     "q": "¿Preferirías una carrera de colores animada o una salida tranquila en la naturaleza?",
+     "c": "Busca una carrera divertida en tu zona en los próximos meses y compártela con alguien."
+    },
+    "fr": {
+     "t": "Courses fun et courses colorées",
+     "g": "Découvre des événements non chronométrés où l'on vient pour le plaisir et la bonne ambiance.",
+     "p": [
+      "Les courses fun sont détendues, sans pression de temps ni de classement.",
+      "Poudres colorées, déguisements et musique sur le parcours créent une ambiance de fête.",
+      "C'est un super premier événement à partager entre amis, en famille ou entre collègues."
+     ],
+     "q": "Préférerais-tu une course colorée et festive ou une sortie calme dans la nature ?",
+     "c": "Cherche une course fun près de chez toi dans les prochains mois et partage-la avec un ami."
+    },
+    "it": {
+     "t": "Fun run e color run",
+     "g": "Scopri eventi non cronometrati dove contano solo divertimento e buonumore.",
+     "p": [
+      "Le fun run sono eventi rilassati, senza pressione su tempo o classifica.",
+      "Polveri colorate, costumi a tema e musica lungo il percorso creano un clima di festa.",
+      "Sono un ottimo primo evento da vivere con amici, famiglia o colleghi."
+     ],
+     "q": "Preferiresti una color run allegra o una corsa tranquilla nella natura?",
+     "c": "Cerca una fun run nella tua zona nei prossimi mesi e condividila con un amico."
+    },
+    "pt": {
+     "t": "Corridas divertidas e de cores",
+     "g": "Descobre eventos sem cronómetro em que o foco é a diversão e o bom ambiente.",
+     "p": [
+      "As corridas divertidas são eventos descontraídos, sem pressão de tempo ou classificação.",
+      "Pós coloridos, fantasias e música pelo percurso criam um ambiente de festa.",
+      "São um ótimo primeiro evento para aproveitar com amigos, família ou colegas."
+     ],
+     "q": "Preferias uma corrida colorida e animada ou uma corrida calma na natureza?",
+     "c": "Procura uma corrida divertida na tua zona nos próximos meses e partilha-a com um amigo."
+    },
+    "pt_BR": {
+     "t": "Corridas divertidas e de cores",
+     "g": "Conheça eventos sem cronômetro em que o foco é diversão e alto astral.",
+     "p": [
+      "Corridas divertidas são eventos tranquilos, sem pressão de tempo ou colocação.",
+      "Pó colorido, fantasias e música pelo percurso criam um clima de festa.",
+      "São um ótimo primeiro evento para curtir com amigos, família ou colegas."
+     ],
+     "q": "Você prefere uma corrida colorida e animada ou uma corrida tranquila na natureza?",
+     "c": "Procure uma corrida divertida na sua região nos próximos meses e compartilhe com um amigo."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running journal prompts",
+     "g": "Learn to write a few lines after each run to spot patterns.",
+     "p": [
+      "Note how you felt before, during and after the run, not just time and distance.",
+      "Add details like sleep, food, weather and mood to see what helps you most.",
+      "Over weeks, these notes reveal what makes your best runs happen."
+     ],
+     "q": "What would you most like to learn about yourself from a running journal?",
+     "c": "After your next run, answer three prompts: best moment, hardest moment, one thing I learned."
+    },
+    "de": {
+     "t": "Impulse fürs Lauftagebuch",
+     "g": "Lerne, nach jedem Lauf ein paar Zeilen zu schreiben, um Muster zu erkennen.",
+     "p": [
+      "Notiere, wie du dich vor, während und nach dem Lauf gefühlt hast, nicht nur Zeit und Strecke.",
+      "Ergänze Schlaf, Essen, Wetter und Stimmung, um zu sehen, was dir am meisten hilft.",
+      "Über Wochen zeigen diese Notizen, was deine besten Läufe möglich macht."
+     ],
+     "q": "Was würdest du durch ein Lauftagebuch am liebsten über dich erfahren?",
+     "c": "Beantworte nach dem nächsten Lauf drei Fragen: schönster Moment, schwerster Moment, eine Erkenntnis."
+    },
+    "es": {
+     "t": "Ideas para tu diario de running",
+     "g": "Aprende a escribir unas líneas después de cada carrera para descubrir patrones.",
+     "p": [
+      "Anota cómo te sentiste antes, durante y después, no solo el tiempo y la distancia.",
+      "Añade detalles como sueño, comida, clima y ánimo para ver qué te ayuda más.",
+      "Con las semanas, estas notas revelan qué hace posibles tus mejores carreras."
+     ],
+     "q": "¿Qué te gustaría aprender sobre ti gracias a un diario de running?",
+     "c": "Tras tu próxima salida responde tres preguntas: mejor momento, momento más duro, algo que aprendí."
+    },
+    "fr": {
+     "t": "Des pistes pour ton carnet de course",
+     "g": "Apprends à écrire quelques lignes après chaque sortie pour repérer des tendances.",
+     "p": [
+      "Note ton ressenti avant, pendant et après la sortie, pas seulement le temps et la distance.",
+      "Ajoute sommeil, repas, météo et humeur pour voir ce qui t'aide le plus.",
+      "Au fil des semaines, ces notes révèlent ce qui fait tes meilleures sorties."
+     ],
+     "q": "Qu'aimerais-tu le plus apprendre sur toi grâce à un carnet de course ?",
+     "c": "Après ta prochaine sortie, réponds à trois questions : meilleur moment, moment le plus dur, une leçon."
+    },
+    "it": {
+     "t": "Spunti per il diario di corsa",
+     "g": "Impara a scrivere qualche riga dopo ogni corsa per notare degli schemi.",
+     "p": [
+      "Annota come ti sentivi prima, durante e dopo, non solo tempo e distanza.",
+      "Aggiungi sonno, cibo, meteo e umore per capire cosa ti aiuta di più.",
+      "Con le settimane, questi appunti rivelano cosa rende possibili le tue corse migliori."
+     ],
+     "q": "Cosa ti piacerebbe scoprire di te grazie a un diario di corsa?",
+     "c": "Dopo la prossima corsa rispondi a tre domande: momento migliore, momento più duro, una cosa imparata."
+    },
+    "pt": {
+     "t": "Sugestões para o diário de corrida",
+     "g": "Aprende a escrever umas linhas depois de cada corrida para descobrires padrões.",
+     "p": [
+      "Anota como te sentiste antes, durante e depois, não só o tempo e a distância.",
+      "Junta detalhes como sono, comida, tempo e disposição para ver o que mais te ajuda.",
+      "Com as semanas, estas notas mostram o que torna possíveis as tuas melhores corridas."
+     ],
+     "q": "O que mais gostarias de aprender sobre ti com um diário de corrida?",
+     "c": "Depois da próxima corrida responde a três perguntas: melhor momento, momento mais difícil, algo que aprendi."
+    },
+    "pt_BR": {
+     "t": "Perguntas para o diário de corrida",
+     "g": "Aprenda a escrever algumas linhas depois de cada corrida para perceber padrões.",
+     "p": [
+      "Anote como você se sentiu antes, durante e depois, não só o tempo e a distância.",
+      "Inclua detalhes como sono, comida, clima e humor para ver o que mais ajuda você.",
+      "Com as semanas, essas anotações revelam o que faz suas melhores corridas acontecerem."
+     ],
+     "q": "O que você mais gostaria de aprender sobre si mesmo com um diário de corrida?",
+     "c": "Depois da próxima corrida, responda três perguntas: melhor momento, momento mais difícil, algo que aprendi."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dealing with side stitches",
+     "g": "Learn general tips runners use when a side stitch appears.",
+     "p": [
+      "A stitch is a sharp twinge under the ribs that many runners know well.",
+      "Slowing down, breathing out deeply and pressing gently on the spot often helps.",
+      "Some people find a lighter meal a little earlier before running reduces stitches."
+     ],
+     "q": "Have you ever had a side stitch, and what did you do about it?",
+     "c": "Next time a stitch appears, slow to a walk, exhale fully a few times and note what helped."
+    },
+    "de": {
+     "t": "Umgang mit Seitenstechen",
+     "g": "Lerne allgemeine Tipps, die Läufer bei Seitenstechen anwenden.",
+     "p": [
+      "Seitenstechen ist ein stechendes Ziehen unter den Rippen, das viele Läufer kennen.",
+      "Langsamer werden, tief ausatmen und sanft auf die Stelle drücken hilft oft.",
+      "Manche merken, dass eine leichtere, etwas frühere Mahlzeit vor dem Lauf Seitenstechen verringert."
+     ],
+     "q": "Hattest du schon mal Seitenstechen, und was hast du dagegen gemacht?",
+     "c": "Wenn das nächste Mal Seitenstechen kommt: gehen, ein paar Mal ganz ausatmen und notieren, was half."
+    },
+    "es": {
+     "t": "Cómo lidiar con el flato",
+     "g": "Conoce consejos generales que usan los corredores cuando aparece el flato.",
+     "p": [
+      "El flato es una punzada bajo las costillas que muchos corredores conocen bien.",
+      "Bajar el ritmo, soltar el aire a fondo y presionar suave en la zona suele ayudar.",
+      "Hay quien nota que una comida más ligera y algo más temprana antes de correr lo reduce."
+     ],
+     "q": "¿Has tenido flato alguna vez y qué hiciste?",
+     "c": "La próxima vez que aparezca, camina, suelta todo el aire varias veces y anota qué te ayudó."
+    },
+    "fr": {
+     "t": "Gérer le point de côté",
+     "g": "Découvre des conseils généraux utilisés par les coureurs face au point de côté.",
+     "p": [
+      "Le point de côté est un pincement vif sous les côtes que beaucoup de coureurs connaissent.",
+      "Ralentir, expirer profondément et appuyer doucement sur la zone aide souvent.",
+      "Certains constatent qu'un repas plus léger et un peu plus tôt avant de courir limite le problème."
+     ],
+     "q": "As-tu déjà eu un point de côté, et qu'as-tu fait ?",
+     "c": "La prochaine fois, passe à la marche, expire à fond plusieurs fois et note ce qui a aidé."
+    },
+    "it": {
+     "t": "Gestire la fitta al fianco",
+     "g": "Scopri consigli generali che usano i runner quando arriva la fitta al fianco.",
+     "p": [
+      "La fitta al fianco è un dolore pungente sotto le costole che molti runner conoscono.",
+      "Rallentare, espirare a fondo e premere piano sul punto spesso aiuta.",
+      "Alcuni notano che un pasto più leggero e un po' prima della corsa riduce le fitte."
+     ],
+     "q": "Ti è mai venuta una fitta al fianco e cosa hai fatto?",
+     "c": "La prossima volta, passa al cammino, espira a fondo qualche volta e annota cosa ha aiutato."
+    },
+    "pt": {
+     "t": "Lidar com a dor de burro",
+     "g": "Conhece dicas gerais que os corredores usam quando aparece a dor de burro.",
+     "p": [
+      "A dor de burro é uma pontada debaixo das costelas que muitos corredores conhecem bem.",
+      "Abrandar, expirar fundo e pressionar suavemente o sítio costuma ajudar.",
+      "Há quem note que uma refeição mais leve e um pouco mais cedo antes de correr a reduz."
+     ],
+     "q": "Já tiveste dor de burro e o que fizeste?",
+     "c": "Da próxima vez, passa a caminhar, expira a fundo algumas vezes e anota o que ajudou."
+    },
+    "pt_BR": {
+     "t": "Lidando com a dor do lado",
+     "g": "Conheça dicas gerais que corredores usam quando aparece a dor do lado.",
+     "p": [
+      "A dor do lado é uma pontada embaixo das costelas que muitos corredores conhecem bem.",
+      "Diminuir o ritmo, soltar todo o ar e pressionar de leve o local costuma ajudar.",
+      "Algumas pessoas percebem que uma refeição mais leve e um pouco mais cedo antes de correr ajuda."
+     ],
+     "q": "Você já sentiu dor do lado correndo e o que fez?",
+     "c": "Na próxima vez, passe a caminhar, solte todo o ar algumas vezes e anote o que ajudou."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running and stress relief",
+     "g": "Learn how many people use running to clear their heads.",
+     "p": [
+      "Rhythmic movement and fresh air help many people feel calmer.",
+      "An easy run can be a break from screens, worries and to-do lists.",
+      "Some runners solve problems on the move; others simply enjoy an empty mind."
+     ],
+     "q": "How do you usually feel mentally after a walk or run outdoors?",
+     "c": "Before your next run, rate your stress from 1 to 10, then rate it again afterwards."
+    },
+    "de": {
+     "t": "Laufen gegen Stress",
+     "g": "Lerne, wie viele Menschen das Laufen nutzen, um den Kopf freizubekommen.",
+     "p": [
+      "Rhythmische Bewegung und frische Luft helfen vielen, ruhiger zu werden.",
+      "Ein lockerer Lauf kann eine Pause von Bildschirmen, Sorgen und To-do-Listen sein.",
+      "Manche lösen Probleme in Bewegung, andere genießen einfach einen leeren Kopf."
+     ],
+     "q": "Wie fühlst du dich gedanklich meist nach einem Spaziergang oder Lauf draußen?",
+     "c": "Bewerte vor deinem nächsten Lauf deinen Stress von 1 bis 10 und danach noch einmal."
+    },
+    "es": {
+     "t": "Correr para soltar el estrés",
+     "g": "Descubre cómo mucha gente usa la carrera para despejar la mente.",
+     "p": [
+      "El movimiento rítmico y el aire libre ayudan a muchas personas a sentirse más tranquilas.",
+      "Una salida suave puede ser un descanso de pantallas, preocupaciones y listas de tareas.",
+      "Algunos resuelven problemas en movimiento; otros disfrutan de una mente en blanco."
+     ],
+     "q": "¿Cómo te sueles sentir mentalmente tras caminar o correr al aire libre?",
+     "c": "Antes de tu próxima salida puntúa tu estrés del 1 al 10 y vuelve a puntuarlo después."
+    },
+    "fr": {
+     "t": "Courir pour évacuer le stress",
+     "g": "Découvre comment beaucoup de gens courent pour se vider la tête.",
+     "p": [
+      "Le mouvement rythmé et le grand air aident beaucoup de gens à se sentir plus calmes.",
+      "Une sortie facile peut être une pause loin des écrans, des soucis et des listes de tâches.",
+      "Certains règlent des problèmes en courant ; d'autres savourent une tête vide."
+     ],
+     "q": "Comment te sens-tu mentalement après une marche ou une course en plein air ?",
+     "c": "Avant ta prochaine sortie, note ton stress de 1 à 10, puis note-le à nouveau après."
+    },
+    "it": {
+     "t": "Correre contro lo stress",
+     "g": "Scopri come molte persone usano la corsa per schiarirsi le idee.",
+     "p": [
+      "Il movimento ritmico e l'aria aperta aiutano molti a sentirsi più calmi.",
+      "Una corsa leggera può essere una pausa da schermi, pensieri e liste di cose da fare.",
+      "Alcuni risolvono problemi correndo, altri si godono semplicemente la mente libera."
+     ],
+     "q": "Come ti senti di solito a livello mentale dopo una camminata o una corsa all'aperto?",
+     "c": "Prima della prossima corsa dai un voto da 1 a 10 al tuo stress, poi ridallo dopo."
+    },
+    "pt": {
+     "t": "Correr para aliviar o stress",
+     "g": "Descobre como muitas pessoas usam a corrida para arejar a cabeça.",
+     "p": [
+      "O movimento ritmado e o ar livre ajudam muitas pessoas a sentir-se mais calmas.",
+      "Uma corrida leve pode ser uma pausa dos ecrãs, das preocupações e das listas de tarefas.",
+      "Há quem resolva problemas a correr; outros simplesmente aproveitam a mente vazia."
+     ],
+     "q": "Como te costumas sentir mentalmente depois de caminhar ou correr ao ar livre?",
+     "c": "Antes da próxima corrida dá uma nota de 1 a 10 ao teu stress e volta a avaliá-lo depois."
+    },
+    "pt_BR": {
+     "t": "Correr para aliviar o estresse",
+     "g": "Descubra como muita gente usa a corrida para esvaziar a cabeça.",
+     "p": [
+      "O movimento ritmado e o ar livre ajudam muita gente a se sentir mais calma.",
+      "Uma corrida leve pode ser uma pausa das telas, das preocupações e das listas de tarefas.",
+      "Alguns resolvem problemas correndo; outros só curtem a mente vazia."
+     ],
+     "q": "Como você costuma se sentir mentalmente depois de caminhar ou correr ao ar livre?",
+     "c": "Antes da próxima corrida, dê uma nota de 1 a 10 para seu estresse e avalie de novo depois."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: building the habit",
+     "g": "Recap motivation, strength basics and gradual progress from this month.",
+     "p": [
+      "Tricks like the five-minute rule, music, friends and clubs keep you heading out.",
+      "Mobility and simple strength work help you run steadier and feel stronger.",
+      "Gradual progress, listening to your body and asking a doctor when unsure keep it safe."
+     ],
+     "q": "Which new habit from this month do you want to keep for good?",
+     "c": "Write your plan for the next four weeks: three runs a week, one strength day and a small goal."
+    },
+    "de": {
+     "t": "Rückblick: die Gewohnheit aufbauen",
+     "g": "Fass Motivation, Kraftgrundlagen und schrittweise Steigerung dieses Monats zusammen.",
+     "p": [
+      "Tricks wie die Fünf-Minuten-Regel, Musik, Freunde und Lauftreffs bringen dich vor die Tür.",
+      "Mobilität und einfaches Krafttraining lassen dich stabiler laufen und stärker fühlen.",
+      "Schrittweise Steigerung, auf den Körper hören und im Zweifel den Arzt fragen halten es sicher."
+     ],
+     "q": "Welche neue Gewohnheit aus diesem Monat willst du für immer behalten?",
+     "c": "Schreib deinen Plan für die nächsten vier Wochen: drei Läufe pro Woche, ein Krafttag und ein kleines Ziel."
+    },
+    "es": {
+     "t": "Repaso: crear el hábito",
+     "g": "Repasa la motivación, la fuerza básica y el progreso gradual de este mes.",
+     "p": [
+      "Trucos como la regla de los cinco minutos, la música, los amigos y los clubes te hacen salir.",
+      "La movilidad y la fuerza sencilla te ayudan a correr más estable y sentirte más fuerte.",
+      "Progresar poco a poco, escuchar al cuerpo y consultar al médico si dudas lo mantiene seguro."
+     ],
+     "q": "¿Qué nuevo hábito de este mes quieres conservar para siempre?",
+     "c": "Escribe tu plan para las próximas cuatro semanas: tres salidas por semana, un día de fuerza y una meta pequeña."
+    },
+    "fr": {
+     "t": "Bilan : installer l'habitude",
+     "g": "Récapitule la motivation, les bases du renforcement et la progression douce de ce mois.",
+     "p": [
+      "Des astuces comme la règle des cinq minutes, la musique, les amis et les clubs te font sortir.",
+      "La mobilité et un renforcement simple t'aident à courir plus stable et à te sentir plus fort.",
+      "Progresser doucement, écouter ton corps et voir un médecin en cas de doute, c'est la sécurité."
+     ],
+     "q": "Quelle nouvelle habitude de ce mois veux-tu garder pour de bon ?",
+     "c": "Écris ton plan pour les quatre prochaines semaines : trois sorties par semaine, un jour de renfo et un petit objectif."
+    },
+    "it": {
+     "t": "Ripasso: costruire l'abitudine",
+     "g": "Ripassa motivazione, basi di forza e progressione graduale di questo mese.",
+     "p": [
+      "Trucchi come la regola dei cinque minuti, musica, amici e gruppi ti fanno uscire.",
+      "Mobilità e semplici esercizi di forza ti aiutano a correre più stabile e sentirti più forte.",
+      "Progredire piano, ascoltare il corpo e chiedere al medico nel dubbio mantiene tutto sicuro."
+     ],
+     "q": "Quale nuova abitudine di questo mese vuoi tenere per sempre?",
+     "c": "Scrivi il tuo piano per le prossime quattro settimane: tre corse a settimana, un giorno di forza e un piccolo obiettivo."
+    },
+    "pt": {
+     "t": "Revisão: criar o hábito",
+     "g": "Revê a motivação, o básico da força e a progressão gradual deste mês.",
+     "p": [
+      "Truques como a regra dos cinco minutos, música, amigos e clubes fazem-te sair de casa.",
+      "A mobilidade e a força simples ajudam-te a correr mais estável e a sentir-te mais forte.",
+      "Progredir devagar, ouvir o corpo e falar com um médico em caso de dúvida mantém tudo seguro."
+     ],
+     "q": "Que novo hábito deste mês queres manter para sempre?",
+     "c": "Escreve o teu plano para as próximas quatro semanas: três corridas por semana, um dia de força e um pequeno objetivo."
+    },
+    "pt_BR": {
+     "t": "Revisão: criando o hábito",
+     "g": "Relembre a motivação, o básico de força e a evolução gradual deste mês.",
+     "p": [
+      "Truques como a regra dos cinco minutos, música, amigos e grupos fazem você sair de casa.",
+      "Mobilidade e fortalecimento simples ajudam você a correr mais estável e se sentir mais forte.",
+      "Evoluir aos poucos, ouvir o corpo e procurar um médico na dúvida mantêm tudo seguro."
+     ],
+     "q": "Qual novo hábito deste mês você quer manter para sempre?",
+     "c": "Escreva seu plano para as próximas quatro semanas: três corridas por semana, um dia de força e uma meta pequena."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "pronunciation",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Word stress basics",
+     "g": "Notice that in every word one syllable stands out: a bit longer, louder and higher.",
+     "p": [
+      "In 'baNAna' the middle syllable is stressed: it is longer, a little louder and often higher in pitch.",
+      "Putting stress on the wrong syllable can confuse listeners more than a slightly wrong sound.",
+      "Unstressed syllables around it often get shorter and weaker, which creates the rhythm of the language."
+     ],
+     "q": "Can you hear which syllable is strongest in your own name?",
+     "c": "Say 'banana' three ways: BAnana, baNAna, banaNA; notice how only one sounds right."
+    },
+    "de": {
+     "t": "Grundlagen der Wortbetonung",
+     "g": "Bemerke, dass in jedem Wort eine Silbe hervorsticht: etwas länger, lauter und höher.",
+     "p": [
+      "In „Ba-NA-ne“ ist die mittlere Silbe betont: länger, etwas lauter und oft höher.",
+      "Eine falsch betonte Silbe verwirrt Zuhörende oft mehr als ein leicht falscher Laut.",
+      "Die unbetonten Silben drumherum werden oft kürzer und schwächer, so entsteht der Rhythmus der Sprache."
+     ],
+     "q": "Hörst du, welche Silbe in deinem eigenen Namen am stärksten ist?",
+     "c": "Sag „Banane“ auf drei Arten: BAnane, baNAne, banaNE; merke, dass nur eine richtig klingt."
+    },
+    "es": {
+     "t": "Lo básico del acento",
+     "g": "Observa que en cada palabra una sílaba destaca: un poco más larga, más fuerte y más aguda.",
+     "p": [
+      "En 'plá-ta-no' la primera sílaba es tónica; en 'ca-MI-sa', la del medio: suena más larga y fuerte.",
+      "Acentuar la sílaba equivocada puede confundir más que un sonido un poco imperfecto.",
+      "Las sílabas átonas de alrededor son más débiles, y en inglés incluso se acortan mucho: así nace el ritmo."
+     ],
+     "q": "¿Notas qué sílaba es la más fuerte en tu nombre?",
+     "c": "Di 'camisa' de tres maneras: CAmisa, caMIsa, camiSA; nota que solo una suena bien."
+    },
+    "fr": {
+     "t": "Les bases de l'accent de mot",
+     "g": "Remarque que dans chaque mot une syllabe ressort : un peu plus longue, plus forte et plus aiguë.",
+     "p": [
+      "Dans l'anglais 'baNAna', la syllabe du milieu est accentuée : plus longue, plus forte, souvent plus haute.",
+      "Mal placer l'accent peut gêner l'écoute davantage qu'un son un peu imparfait.",
+      "Les syllabes non accentuées autour s'affaiblissent souvent, ce qui crée le rythme de la langue."
+     ],
+     "q": "Entends-tu quelle syllabe ressort le plus quand tu dis ton prénom tout seul ?",
+     "c": "Dis l'anglais 'banana' de trois façons : BAnana, baNAna, banaNA ; remarque qu'une seule sonne juste."
+    },
+    "it": {
+     "t": "Le basi dell'accento",
+     "g": "Nota che in ogni parola una sillaba spicca: un po' più lunga, più forte e più acuta.",
+     "p": [
+      "In 'ba-NA-na' la sillaba centrale è accentata: più lunga, un po' più forte e spesso più alta.",
+      "Mettere l'accento sulla sillaba sbagliata può confondere più di un suono un po' imperfetto.",
+      "Le sillabe non accentuate intorno spesso diventano più deboli, e così nasce il ritmo della lingua."
+     ],
+     "q": "Riesci a sentire quale sillaba è la più forte nel tuo nome?",
+     "c": "Di' 'banana' in tre modi: BAnana, baNAna, banaNA; nota che solo una suona giusta."
+    },
+    "pt": {
+     "t": "O básico da acentuação",
+     "g": "Repara que em cada palavra uma sílaba se destaca: um pouco mais longa, mais forte e mais aguda.",
+     "p": [
+      "Em 'ba-NA-na' a sílaba do meio é tónica: mais longa, um pouco mais forte e muitas vezes mais aguda.",
+      "Pôr o acento na sílaba errada pode confundir mais do que um som ligeiramente imperfeito.",
+      "As sílabas átonas à volta ficam mais fracas, e em português europeu até quase desaparecem: daí o ritmo."
+     ],
+     "q": "Consegues ouvir qual é a sílaba mais forte do teu nome?",
+     "c": "Diz 'banana' de três maneiras: BAnana, baNAna, banaNA; repara que só uma soa bem."
+    },
+    "pt_BR": {
+     "t": "O básico da sílaba tônica",
+     "g": "Repare que em cada palavra uma sílaba se destaca: um pouco mais longa, mais forte e mais aguda.",
+     "p": [
+      "Em 'ba-NA-na' a sílaba do meio é a tônica: mais longa, um pouco mais forte e muitas vezes mais aguda.",
+      "Colocar a força na sílaba errada pode confundir mais do que um som um pouco imperfeito.",
+      "As sílabas átonas em volta ficam mais fracas, e é isso que cria o ritmo da língua."
+     ],
+     "q": "Você consegue ouvir qual é a sílaba mais forte do seu nome?",
+     "c": "Diga 'banana' de três jeitos: BAnana, baNAna, banaNA; repare que só um soa certo."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding stress in Spanish",
+     "g": "Use written accents and two simple rules to know where Spanish stress falls.",
+     "p": [
+      "Rule 1: words ending in a vowel, n or s stress the second-to-last syllable: 'CA-sa', 'HA-blan', 'LU-nes'.",
+      "Rule 2: words ending in any other consonant stress the last syllable: 'ha-BLAR', 'ciu-DAD', 'es-pa-ÑOL'.",
+      "A written accent breaks the rules and shows the stress directly: 'ca-FÉ', 'ár-bol', 'mú-si-ca'."
+     ],
+     "q": "Which Spanish word did you first say with the stress in the wrong place?",
+     "c": "Mark the stress in 'mesa, reloj, examen, lápiz, canción, sábado', then read them aloud."
+    },
+    "de": {
+     "t": "Die Betonung im Spanischen finden",
+     "g": "Nutze Akzentzeichen und zwei einfache Regeln, um die spanische Betonung zu finden.",
+     "p": [
+      "Regel 1: Endet ein Wort auf Vokal, n oder s, wird die vorletzte Silbe betont: 'CA-sa', 'HA-blan', 'LU-nes'.",
+      "Regel 2: Endet es auf einen anderen Konsonanten, wird die letzte betont: 'ha-BLAR', 'ciu-DAD', 'es-pa-ÑOL'.",
+      "Ein Akzentzeichen bricht die Regeln und zeigt die Betonung direkt: 'ca-FÉ', 'ár-bol', 'mú-si-ca'."
+     ],
+     "q": "Welches spanische Wort hast du anfangs falsch betont?",
+     "c": "Markiere die Betonung in 'mesa, reloj, examen, lápiz, canción, sábado' und lies die Wörter dann laut."
+    },
+    "es": {
+     "t": "Dónde cae el acento en español",
+     "g": "Usa las tildes y dos reglas sencillas para saber dónde cae el acento en español.",
+     "p": [
+      "Regla 1: las palabras acabadas en vocal, n o s llevan el acento en la penúltima sílaba: 'CA-sa', 'HA-blan', 'LU-nes'.",
+      "Regla 2: las acabadas en otra consonante lo llevan en la última: 'ha-BLAR', 'ciu-DAD', 'es-pa-ÑOL'.",
+      "La tilde rompe estas reglas y marca el acento directamente: 'ca-FÉ', 'ár-bol', 'mú-si-ca'."
+     ],
+     "q": "¿Qué palabra en español suele pronunciarse mal por un acento mal puesto?",
+     "c": "Marca la sílaba tónica de 'mesa, reloj, examen, lápiz, canción, sábado' y léelas en voz alta."
+    },
+    "fr": {
+     "t": "Trouver l'accent en espagnol",
+     "g": "Utilise les accents écrits et deux règles simples pour savoir où tombe l'accent espagnol.",
+     "p": [
+      "Règle 1 : les mots finis par une voyelle, n ou s sont accentués sur l'avant-dernière : 'CA-sa', 'HA-blan', 'LU-nes'.",
+      "Règle 2 : les mots finis par une autre consonne sont accentués sur la dernière : 'ha-BLAR', 'ciu-DAD'.",
+      "Un accent écrit casse ces règles et montre directement l'accent : 'ca-FÉ', 'ár-bol', 'mú-si-ca'."
+     ],
+     "q": "Quel mot espagnol as-tu d'abord prononcé avec l'accent au mauvais endroit ?",
+     "c": "Marque l'accent dans 'mesa, reloj, examen, lápiz, canción, sábado', puis lis-les à voix haute."
+    },
+    "it": {
+     "t": "Trovare l'accento in spagnolo",
+     "g": "Usa gli accenti scritti e due regole semplici per sapere dove cade l'accento spagnolo.",
+     "p": [
+      "Regola 1: le parole che finiscono in vocale, n o s sono accentate sulla penultima: 'CA-sa', 'HA-blan', 'LU-nes'.",
+      "Regola 2: quelle che finiscono in un'altra consonante sono accentate sull'ultima: 'ha-BLAR', 'ciu-DAD'.",
+      "L'accento scritto rompe le regole e mostra subito la sillaba forte: 'ca-FÉ', 'ár-bol', 'mú-si-ca'."
+     ],
+     "q": "Quale parola spagnola hai pronunciato all'inizio con l'accento nel posto sbagliato?",
+     "c": "Segna l'accento in 'mesa, reloj, examen, lápiz, canción, sábado' e poi leggile ad alta voce."
+    },
+    "pt": {
+     "t": "Encontrar a sílaba tónica em espanhol",
+     "g": "Usa os acentos escritos e duas regras simples para saber onde cai a força em espanhol.",
+     "p": [
+      "Regra 1: palavras acabadas em vogal, n ou s são graves, com força na penúltima: 'CA-sa', 'HA-blan', 'LU-nes'.",
+      "Regra 2: as acabadas noutra consoante têm a força na última: 'ha-BLAR', 'ciu-DAD', 'es-pa-ÑOL'.",
+      "O acento escrito quebra as regras e mostra logo a tónica: 'ca-FÉ', 'ár-bol', 'mú-si-ca'."
+     ],
+     "q": "Que palavra espanhola disseste ao início com a força no sítio errado?",
+     "c": "Marca a tónica em 'mesa, reloj, examen, lápiz, canción, sábado' e depois lê-as em voz alta."
+    },
+    "pt_BR": {
+     "t": "Achando a sílaba tônica em espanhol",
+     "g": "Use os acentos escritos e duas regras simples para saber onde cai a força em espanhol.",
+     "p": [
+      "Regra 1: palavras terminadas em vogal, n ou s são paroxítonas: 'CA-sa', 'HA-blan', 'LU-nes'.",
+      "Regra 2: as terminadas em outra consoante são oxítonas: 'ha-BLAR', 'ciu-DAD', 'es-pa-ÑOL'.",
+      "O acento escrito quebra as regras e mostra a tônica direto: 'ca-FÉ', 'ár-bol', 'mú-si-ca'."
+     ],
+     "q": "Qual palavra em espanhol você falou no começo com a força no lugar errado?",
+     "c": "Marque a tônica em 'mesa, reloj, examen, lápiz, canción, sábado' e depois leia em voz alta."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stress in Italian and Portuguese",
+     "g": "See why stress often falls on the second-to-last syllable in Italian and Portuguese, and how accent marks help.",
+     "p": [
+      "Most Italian and Portuguese words stress the second-to-last syllable: Italian 'a-MI-co', Portuguese 'ca-SA-co'.",
+      "Italian writes an accent only when the stress is on the final vowel: 'città', 'perché'; other exceptions are unmarked.",
+      "Portuguese marks many exceptions: 'ca-FÉ', 'MÉ-di-co', 'LÂM-pa-da'; words ending in l, r, z or i stress the end: 'ho-TEL'."
+     ],
+     "q": "Which Italian or Portuguese word do you love the sound of?",
+     "c": "Read Italian 'amico, città, tavolo' and Portuguese 'casaco, café, hotel, médico', tapping the stressed syllable."
+    },
+    "de": {
+     "t": "Betonung im Italienischen und Portugiesischen",
+     "g": "Sieh, warum die Betonung oft auf der vorletzten Silbe liegt und wie Akzentzeichen helfen.",
+     "p": [
+      "Die meisten Wörter betonen die vorletzte Silbe: italienisch 'a-MI-co', portugiesisch 'ca-SA-co'.",
+      "Italienisch setzt einen Akzent nur bei Betonung auf dem letzten Vokal: 'città', 'perché'; sonst nicht.",
+      "Portugiesisch markiert viele Ausnahmen: 'ca-FÉ', 'MÉ-di-co'; Wörter auf l, r, z oder i betonen das Ende: 'ho-TEL'."
+     ],
+     "q": "Welches italienische oder portugiesische Wort klingt für dich besonders schön?",
+     "c": "Lies italienisch 'amico, città, tavolo' und portugiesisch 'casaco, café, hotel, médico' und klopf die betonte Silbe."
+    },
+    "es": {
+     "t": "El acento en italiano y portugués",
+     "g": "Descubre por qué el acento suele caer en la penúltima sílaba en italiano y portugués, y cómo ayudan las tildes.",
+     "p": [
+      "La mayoría de las palabras llevan el acento en la penúltima sílaba: italiano 'a-MI-co', portugués 'ca-SA-co'.",
+      "El italiano solo escribe tilde si el acento cae en la última vocal: 'città', 'perché'; otras excepciones no se marcan.",
+      "El portugués marca muchas excepciones: 'ca-FÉ', 'MÉ-di-co'; las acabadas en l, r, z o i van al final: 'ho-TEL'."
+     ],
+     "q": "¿Qué palabra en italiano o portugués te encanta cómo suena?",
+     "c": "Lee el italiano 'amico, città, tavolo' y el portugués 'casaco, café, hotel, médico' marcando la sílaba tónica."
+    },
+    "fr": {
+     "t": "L'accent en italien et en portugais",
+     "g": "Vois pourquoi l'accent tombe souvent sur l'avant-dernière syllabe en italien et en portugais.",
+     "p": [
+      "La plupart des mots sont accentués sur l'avant-dernière syllabe : italien 'a-MI-co', portugais 'ca-SA-co'.",
+      "L'italien n'écrit l'accent que s'il tombe sur la dernière voyelle : 'città', 'perché' ; sinon, rien n'est marqué.",
+      "Le portugais marque beaucoup d'exceptions : 'ca-FÉ', 'MÉ-di-co' ; les mots en l, r, z ou i portent l'accent à la fin."
+     ],
+     "q": "Quel mot italien ou portugais aimes-tu particulièrement entendre ?",
+     "c": "Lis l'italien 'amico, città, tavolo' et le portugais 'casaco, café, hotel, médico' en tapant la syllabe accentuée."
+    },
+    "it": {
+     "t": "L'accento in italiano e portoghese",
+     "g": "Scopri perché l'accento cade spesso sulla penultima sillaba in italiano e portoghese e come aiutano gli accenti scritti.",
+     "p": [
+      "La maggior parte delle parole è piana, con l'accento sulla penultima: 'a-MI-co', portoghese 'ca-SA-co'.",
+      "L'italiano scrive l'accento solo sull'ultima vocale: 'città', 'perché'; parole come 'TA-vo-lo' non lo segnano.",
+      "Il portoghese segna molte eccezioni: 'ca-FÉ', 'MÉ-di-co'; le parole in l, r, z o i hanno l'accento in fondo: 'ho-TEL'."
+     ],
+     "q": "Quale parola italiana è più spesso pronunciata con l'accento sbagliato dagli stranieri?",
+     "c": "Leggi 'amico, città, tavolo' e il portoghese 'casaco, café, hotel, médico', battendo la sillaba accentata."
+    },
+    "pt": {
+     "t": "A tónica em italiano e português",
+     "g": "Percebe porque a força cai muitas vezes na penúltima sílaba em italiano e português, e como ajudam os acentos.",
+     "p": [
+      "A maioria das palavras é grave, com força na penúltima: 'ca-SA-co', 'ja-NE-la'; italiano 'a-MI-co'.",
+      "O italiano só escreve acento quando a força cai na última vogal: 'città', 'perché'; 'TA-vo-lo' não leva.",
+      "O português marca muitas exceções: 'ca-FÉ', 'MÉ-di-co', 'LÂM-pa-da'; terminadas em l, r, z ou i são agudas: 'ho-TEL'."
+     ],
+     "q": "Que palavra italiana tem para ti o som mais bonito?",
+     "c": "Lê o italiano 'amico, città, tavolo' e 'casaco, café, hotel, médico', batendo na sílaba tónica."
+    },
+    "pt_BR": {
+     "t": "A tônica em italiano e português",
+     "g": "Entenda por que a força cai muitas vezes na penúltima sílaba em italiano e português, e como os acentos ajudam.",
+     "p": [
+      "A maioria das palavras é paroxítona, com força na penúltima: 'ca-SA-co', 'ja-NE-la'; italiano 'a-MI-co'.",
+      "O italiano só escreve acento quando a força cai na última vogal: 'città', 'perché'; 'TA-vo-lo' não leva.",
+      "O português marca muitas exceções: 'ca-FÉ', 'MÉ-di-co', 'LÂM-pa-da'; terminadas em l, r, z ou i são oxítonas: 'ho-TEL'."
+     ],
+     "q": "Qual palavra italiana tem o som mais bonito para você?",
+     "c": "Leia o italiano 'amico, città, tavolo' e 'casaco, café, hotel, médico', batendo na sílaba tônica."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stress in English",
+     "g": "Learn stress with each English word, since there is no fixed rule: PHOtograph, phoTOgraphy.",
+     "p": [
+      "English stress can fall on any syllable, and it can even move inside a word family.",
+      "Look: 'PHO-to-graph', 'pho-TO-gra-phy', 'pho-to-GRA-phic': same root, three different stresses.",
+      "When you learn a new word, learn its stress too; dictionaries mark it with a small ' before the strong syllable."
+     ],
+     "q": "Which English word do you often hear stressed in different ways?",
+     "c": "Say 'photograph, photography, photographic' slowly, then fast, keeping the stress where it belongs."
+    },
+    "de": {
+     "t": "Betonung im Englischen",
+     "g": "Lerne die Betonung mit jedem englischen Wort mit, denn es gibt keine feste Regel: PHOtograph, phoTOgraphy.",
+     "p": [
+      "Im Englischen kann die Betonung auf jeder Silbe liegen und sogar innerhalb einer Wortfamilie wandern.",
+      "Schau: 'PHO-to-graph', 'pho-TO-gra-phy', 'pho-to-GRA-phic': gleicher Stamm, drei verschiedene Betonungen.",
+      "Lern bei jedem neuen Wort die Betonung mit; Wörterbücher markieren sie mit einem kleinen ' vor der starken Silbe."
+     ],
+     "q": "Welches englische Wort hörst du oft unterschiedlich betont?",
+     "c": "Sag 'photograph, photography, photographic' langsam und dann schnell, mit der Betonung an der richtigen Stelle."
+    },
+    "es": {
+     "t": "El acento en inglés",
+     "g": "Aprende el acento de cada palabra inglesa, porque no hay una regla fija: PHOtograph, phoTOgraphy.",
+     "p": [
+      "En inglés el acento puede caer en cualquier sílaba e incluso moverse dentro de una familia de palabras.",
+      "Mira: 'PHO-to-graph', 'pho-TO-gra-phy', 'pho-to-GRA-phic': misma raíz, tres acentos distintos.",
+      "Al aprender una palabra nueva, aprende también su acento; los diccionarios lo marcan con un pequeño ' delante."
+     ],
+     "q": "¿Qué palabra inglesa oyes a menudo con el acento en lugares distintos?",
+     "c": "Di 'photograph, photography, photographic' despacio y luego rápido, con el acento en su sitio."
+    },
+    "fr": {
+     "t": "L'accent en anglais",
+     "g": "Apprends l'accent avec chaque mot anglais, car il n'y a pas de règle fixe : PHOtograph, phoTOgraphy.",
+     "p": [
+      "En anglais, l'accent peut tomber sur n'importe quelle syllabe et même bouger dans une famille de mots.",
+      "Regarde : 'PHO-to-graph', 'pho-TO-gra-phy', 'pho-to-GRA-phic' : même racine, trois accents différents.",
+      "Quand tu apprends un mot, apprends aussi son accent ; les dictionnaires le marquent par un petit ' devant."
+     ],
+     "q": "Quel mot anglais entends-tu souvent accentué de différentes façons ?",
+     "c": "Dis 'photograph, photography, photographic' lentement puis vite, en gardant l'accent à sa place."
+    },
+    "it": {
+     "t": "L'accento in inglese",
+     "g": "Impara l'accento di ogni parola inglese, perché non c'è una regola fissa: PHOtograph, phoTOgraphy.",
+     "p": [
+      "In inglese l'accento può cadere su qualsiasi sillaba e perfino spostarsi in una famiglia di parole.",
+      "Guarda: 'PHO-to-graph', 'pho-TO-gra-phy', 'pho-to-GRA-phic': stessa radice, tre accenti diversi.",
+      "Quando impari una parola nuova, impara anche l'accento; i dizionari lo segnano con un piccolo ' davanti."
+     ],
+     "q": "Quale parola inglese senti spesso accentata in modi diversi?",
+     "c": "Di' 'photograph, photography, photographic' lentamente e poi veloce, con l'accento al posto giusto."
+    },
+    "pt": {
+     "t": "A tónica em inglês",
+     "g": "Aprende a tónica de cada palavra inglesa, porque não há regra fixa: PHOtograph, phoTOgraphy.",
+     "p": [
+      "Em inglês a força pode cair em qualquer sílaba e até mudar dentro de uma família de palavras.",
+      "Repara: 'PHO-to-graph', 'pho-TO-gra-phy', 'pho-to-GRA-phic': mesma raiz, três tónicas diferentes.",
+      "Quando aprendes uma palavra nova, aprende também a tónica; os dicionários marcam-na com um pequeno ' antes."
+     ],
+     "q": "Que palavra inglesa ouves muitas vezes com a força em sítios diferentes?",
+     "c": "Diz 'photograph, photography, photographic' devagar e depois depressa, com a força no sítio certo."
+    },
+    "pt_BR": {
+     "t": "A tônica em inglês",
+     "g": "Aprenda a tônica de cada palavra inglesa, porque não há regra fixa: PHOtograph, phoTOgraphy.",
+     "p": [
+      "Em inglês a força pode cair em qualquer sílaba e até mudar dentro de uma família de palavras.",
+      "Veja: 'PHO-to-graph', 'pho-TO-gra-phy', 'pho-to-GRA-phic': mesma raiz, três tônicas diferentes.",
+      "Quando aprender uma palavra nova, aprenda também a tônica; os dicionários marcam com um pequeno ' antes."
+     ],
+     "q": "Qual palavra em inglês você ouve muitas vezes com a força em lugares diferentes?",
+     "c": "Diga 'photograph, photography, photographic' devagar e depois rápido, com a força no lugar certo."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stress in German",
+     "g": "Learn that German stress usually falls on the first syllable, except after prefixes like be- and ver-.",
+     "p": [
+      "Most native German words stress the first syllable: 'AR-bei-ten', 'KIN-der', 'SCHÖ-ne'.",
+      "Unstressed prefixes like be-, ge-, er-, ver- and ent- pass the stress on: 'be-SU-chen', 'ver-STE-hen'.",
+      "Many borrowed words stress the end: 'Mu-SIK', 'Ho-TEL', 'Res-tau-RANT', 'stu-DIE-ren'."
+     ],
+     "q": "Which German word have you heard that seems to break these rules?",
+     "c": "Read 'Arbeit, Kinder, besuchen, verstehen, Geschenk, Musik, Hotel' aloud, tapping the stressed syllable."
+    },
+    "de": {
+     "t": "Betonung im Deutschen",
+     "g": "Erfahre, dass die deutsche Betonung meist auf der ersten Silbe liegt, außer nach Vorsilben wie be- und ver-.",
+     "p": [
+      "Die meisten deutschen Erbwörter betonen die erste Silbe: „AR-bei-ten“, „KIN-der“, „SCHÖ-ne“.",
+      "Unbetonte Vorsilben wie be-, ge-, er-, ver- und ent- geben die Betonung weiter: „be-SU-chen“, „ver-STE-hen“.",
+      "Viele Fremdwörter betonen das Ende: „Mu-SIK“, „Ho-TEL“, „Res-tau-RANT“, „stu-DIE-ren“."
+     ],
+     "q": "Kennst du ein deutsches Wort, das Lernenden beim Betonen oft Schwierigkeiten macht?",
+     "c": "Lies „Arbeit, Kinder, besuchen, verstehen, Geschenk, Musik, Hotel“ laut und klopf die betonte Silbe."
+    },
+    "es": {
+     "t": "El acento en alemán",
+     "g": "Aprende que en alemán el acento suele ir en la primera sílaba, salvo tras prefijos como be- y ver-.",
+     "p": [
+      "La mayoría de las palabras alemanas de origen propio acentúan la primera sílaba: 'AR-bei-ten', 'KIN-der'.",
+      "Los prefijos átonos be-, ge-, er-, ver- y ent- pasan el acento a la raíz: 'be-SU-chen', 'ver-STE-hen'.",
+      "Muchas palabras de otros idiomas acentúan el final: 'Mu-SIK', 'Ho-TEL', 'Res-tau-RANT', 'stu-DIE-ren'."
+     ],
+     "q": "¿Qué palabra alemana has oído que parezca romper estas reglas?",
+     "c": "Lee 'Arbeit, Kinder, besuchen, verstehen, Geschenk, Musik, Hotel' en voz alta marcando la sílaba tónica."
+    },
+    "fr": {
+     "t": "L'accent en allemand",
+     "g": "Découvre que l'accent allemand tombe en général sur la première syllabe, sauf après des préfixes comme be- et ver-.",
+     "p": [
+      "La plupart des mots allemands d'origine accentuent la première syllabe : 'AR-bei-ten', 'KIN-der', 'SCHÖ-ne'.",
+      "Les préfixes inaccentués be-, ge-, er-, ver- et ent- passent l'accent au radical : 'be-SU-chen', 'ver-STE-hen'.",
+      "Beaucoup de mots empruntés accentuent la fin : 'Mu-SIK', 'Ho-TEL', 'Res-tau-RANT', 'stu-DIE-ren'."
+     ],
+     "q": "Quel mot allemand as-tu entendu qui semble enfreindre ces règles ?",
+     "c": "Lis 'Arbeit, Kinder, besuchen, verstehen, Geschenk, Musik, Hotel' à voix haute en tapant la syllabe accentuée."
+    },
+    "it": {
+     "t": "L'accento in tedesco",
+     "g": "Scopri che in tedesco l'accento cade di solito sulla prima sillaba, tranne dopo prefissi come be- e ver-.",
+     "p": [
+      "La maggior parte delle parole tedesche native accentua la prima sillaba: 'AR-bei-ten', 'KIN-der', 'SCHÖ-ne'.",
+      "I prefissi atoni be-, ge-, er-, ver- ed ent- passano l'accento alla radice: 'be-SU-chen', 'ver-STE-hen'.",
+      "Molte parole prese da altre lingue accentuano la fine: 'Mu-SIK', 'Ho-TEL', 'Res-tau-RANT', 'stu-DIE-ren'."
+     ],
+     "q": "Quale parola tedesca hai sentito che sembra rompere queste regole?",
+     "c": "Leggi 'Arbeit, Kinder, besuchen, verstehen, Geschenk, Musik, Hotel' ad alta voce battendo la sillaba accentata."
+    },
+    "pt": {
+     "t": "A tónica em alemão",
+     "g": "Aprende que em alemão a força costuma cair na primeira sílaba, exceto depois de prefixos como be- e ver-.",
+     "p": [
+      "A maioria das palavras alemãs de origem própria tem a força na primeira sílaba: 'AR-bei-ten', 'KIN-der'.",
+      "Os prefixos átonos be-, ge-, er-, ver- e ent- passam a força para a raiz: 'be-SU-chen', 'ver-STE-hen'.",
+      "Muitas palavras vindas de outras línguas têm a força no fim: 'Mu-SIK', 'Ho-TEL', 'Res-tau-RANT'."
+     ],
+     "q": "Que palavra alemã já ouviste que parece quebrar estas regras?",
+     "c": "Lê 'Arbeit, Kinder, besuchen, verstehen, Geschenk, Musik, Hotel' em voz alta, batendo na sílaba tónica."
+    },
+    "pt_BR": {
+     "t": "A tônica em alemão",
+     "g": "Aprenda que em alemão a força costuma cair na primeira sílaba, exceto depois de prefixos como be- e ver-.",
+     "p": [
+      "A maioria das palavras alemãs de origem própria tem a força na primeira sílaba: 'AR-bei-ten', 'KIN-der'.",
+      "Os prefixos átonos be-, ge-, er-, ver- e ent- passam a força para a raiz: 'be-SU-chen', 'ver-STE-hen'.",
+      "Muitas palavras vindas de outras línguas têm a força no fim: 'Mu-SIK', 'Ho-TEL', 'Res-tau-RANT'."
+     ],
+     "q": "Qual palavra alemã você já ouviu que parece quebrar essas regras?",
+     "c": "Leia 'Arbeit, Kinder, besuchen, verstehen, Geschenk, Musik, Hotel' em voz alta, batendo na sílaba tônica."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stress in French",
+     "g": "Discover the gentle lift on the last syllable of each group of words in French.",
+     "p": [
+      "French does not stress single words strongly; all syllables get roughly equal weight, like even steps.",
+      "At the end of each group of words, the last syllable is a little longer and often higher: 'un ca-fé CRÈME'.",
+      "So 'res-tau-RANT' alone is stressed at the end, but in 'un restaurant ita-LIEN' the lift moves to the end of the group."
+     ],
+     "q": "Does French sound smooth and flowing to you, or fast and hard to follow?",
+     "c": "Say 'je voudrais / un café / s'il vous plaît' with even syllables and a small lift at the end of each group."
+    },
+    "de": {
+     "t": "Betonung im Französischen",
+     "g": "Entdecke die sanfte Hebung auf der letzten Silbe jeder Wortgruppe im Französischen.",
+     "p": [
+      "Französisch betont einzelne Wörter kaum; alle Silben bekommen ungefähr gleich viel Gewicht, wie gleichmäßige Schritte.",
+      "Am Ende jeder Wortgruppe ist die letzte Silbe etwas länger und oft höher: 'un ca-fé CRÈME'.",
+      "Allein wird 'res-tau-RANT' am Ende betont, in 'un restaurant ita-LIEN' wandert die Hebung ans Gruppenende."
+     ],
+     "q": "Klingt Französisch für dich weich und fließend oder schnell und schwer zu verstehen?",
+     "c": "Sag 'je voudrais / un café / s'il vous plaît' mit gleichmäßigen Silben und einer kleinen Hebung am Gruppenende."
+    },
+    "es": {
+     "t": "El acento en francés",
+     "g": "Descubre la suave subida en la última sílaba de cada grupo de palabras en francés.",
+     "p": [
+      "El francés no acentúa con fuerza cada palabra; todas las sílabas pesan más o menos igual, como pasos regulares.",
+      "Al final de cada grupo de palabras, la última sílaba es algo más larga y suele subir: 'un ca-fé CRÈME'.",
+      "Así, 'res-tau-RANT' solo se acentúa al final, pero en 'un restaurant ita-LIEN' la subida pasa al final del grupo."
+     ],
+     "q": "¿El francés te suena suave y fluido o rápido y difícil de seguir?",
+     "c": "Di 'je voudrais / un café / s'il vous plaît' con sílabas iguales y una pequeña subida al final de cada grupo."
+    },
+    "fr": {
+     "t": "L'accent en français",
+     "g": "Découvre la légère montée sur la dernière syllabe de chaque groupe de mots en français.",
+     "p": [
+      "Le français n'accentue pas fortement chaque mot : toutes les syllabes ont à peu près le même poids, comme des pas réguliers.",
+      "À la fin de chaque groupe de mots, la dernière syllabe est un peu plus longue et souvent plus haute : « un café CRÈME ».",
+      "Seul, « restaurant » est accentué à la fin, mais dans « un restaurant ita-LIEN » la montée passe à la fin du groupe."
+     ],
+     "q": "Quand tu parles une autre langue, gardes-tu ce rythme régulier du français ?",
+     "c": "Dis « je voudrais / un café / s'il vous plaît » avec des syllabes égales et une petite montée en fin de groupe."
+    },
+    "it": {
+     "t": "L'accento in francese",
+     "g": "Scopri la leggera salita sull'ultima sillaba di ogni gruppo di parole in francese.",
+     "p": [
+      "Il francese non accentua con forza le singole parole: tutte le sillabe pesano più o meno uguale, come passi regolari.",
+      "Alla fine di ogni gruppo di parole l'ultima sillaba è un po' più lunga e spesso più alta: 'un ca-fé CRÈME'.",
+      "Da sola 'res-tau-RANT' è accentata alla fine, ma in 'un restaurant ita-LIEN' la salita va alla fine del gruppo."
+     ],
+     "q": "Il francese ti sembra morbido e scorrevole o veloce e difficile da seguire?",
+     "c": "Di' 'je voudrais / un café / s'il vous plaît' con sillabe uguali e una piccola salita alla fine di ogni gruppo."
+    },
+    "pt": {
+     "t": "A acentuação em francês",
+     "g": "Descobre a leve subida na última sílaba de cada grupo de palavras em francês.",
+     "p": [
+      "O francês não marca com força cada palavra; todas as sílabas pesam mais ou menos o mesmo, como passos regulares.",
+      "No fim de cada grupo de palavras, a última sílaba é um pouco mais longa e costuma subir: 'un ca-fé CRÈME'.",
+      "Sozinha, 'res-tau-RANT' tem força no fim, mas em 'un restaurant ita-LIEN' a subida passa para o fim do grupo."
+     ],
+     "q": "O francês soa-te suave e fluido ou rápido e difícil de acompanhar?",
+     "c": "Diz 'je voudrais / un café / s'il vous plaît' com sílabas iguais e uma pequena subida no fim de cada grupo."
+    },
+    "pt_BR": {
+     "t": "A acentuação em francês",
+     "g": "Descubra a leve subida na última sílaba de cada grupo de palavras em francês.",
+     "p": [
+      "O francês não marca com força cada palavra; todas as sílabas pesam mais ou menos igual, como passos regulares.",
+      "No fim de cada grupo de palavras, a última sílaba é um pouco mais longa e costuma subir: 'un ca-fé CRÈME'.",
+      "Sozinha, 'res-tau-RANT' tem força no fim, mas em 'un restaurant ita-LIEN' a subida vai para o fim do grupo."
+     ],
+     "q": "O francês soa suave e fluido para você ou rápido e difícil de acompanhar?",
+     "c": "Diga 'je voudrais / un café / s'il vous plaît' com sílabas iguais e uma pequena subida no fim de cada grupo."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When stress changes meaning",
+     "g": "See how moving the stress can change a word, as in English REcord and reCORD or Spanish 'papa' and 'papá'.",
+     "p": [
+      "English: a 'REcord' is a thing (a noun), to 'reCORD' is an action (a verb); likewise 'PREsent' and 'preSENT'.",
+      "Spanish: 'PA-pa' is a potato, 'pa-PÁ' is dad; 'ES-te' (this) and 'es-TÉ' (be) also differ only by stress.",
+      "Italian: 'ÀN-co-ra' is an anchor, 'an-CO-ra' means again; Portuguese: 'SÁ-bia', 'sa-BI-a' and 'sa-bi-Á'."
+     ],
+     "q": "Have you ever been misunderstood because of stress in the wrong place?",
+     "c": "Say 'REcord, reCORD, papa, papá, àncora, ancora' and make a short sentence with each pair."
+    },
+    "de": {
+     "t": "Wenn Betonung die Bedeutung ändert",
+     "g": "Sieh, wie eine verschobene Betonung ein Wort verändert, etwa englisch REcord und reCORD oder spanisch 'papa' und 'papá'.",
+     "p": [
+      "Deutsch: „UM-fah-ren“ heißt etwas umstoßen, „um-FAH-ren“ heißt darum herumfahren; „MO-dern“ und „mo-DERN“.",
+      "Englisch: ein 'REcord' ist ein Ding, 'reCORD' eine Handlung; spanisch: 'PA-pa' ist Kartoffel, 'pa-PÁ' ist Papa.",
+      "Italienisch: 'ÀN-co-ra' ist ein Anker, 'an-CO-ra' heißt noch; portugiesisch: 'SÁ-bia', 'sa-BI-a', 'sa-bi-Á'."
+     ],
+     "q": "Wurdest du schon einmal wegen einer falschen Betonung missverstanden?",
+     "c": "Sag „MOdern, moDERN“, 'REcord, reCORD', 'papa, papá' und bilde mit jedem Paar einen kurzen Satz."
+    },
+    "es": {
+     "t": "Cuando el acento cambia el significado",
+     "g": "Mira cómo mover el acento puede cambiar una palabra, como 'papa' y 'papá' o el inglés REcord y reCORD.",
+     "p": [
+      "Español: 'PA-pa' es la patata, 'pa-PÁ' es el padre; 'ES-te' y 'es-TÉ', 'TÉR-mi-no', 'ter-MI-no' y 'ter-mi-NÓ'.",
+      "Inglés: un 'REcord' es una cosa (sustantivo), 'reCORD' es una acción (verbo); igual con 'PREsent' y 'preSENT'.",
+      "Italiano: 'ÀN-co-ra' es un ancla, 'an-CO-ra' significa todavía; portugués: 'SÁ-bia', 'sa-BI-a' y 'sa-bi-Á'."
+     ],
+     "q": "¿Alguna vez te entendieron mal por poner el acento en otro lugar?",
+     "c": "Di 'término, termino, terminó, papa, papá' y el inglés 'REcord, reCORD', y crea una frase con cada par."
+    },
+    "fr": {
+     "t": "Quand l'accent change le sens",
+     "g": "Vois comment déplacer l'accent peut changer un mot, comme l'anglais REcord et reCORD ou l'espagnol 'papa' et 'papá'.",
+     "p": [
+      "Anglais : un 'REcord' est une chose (nom), 'reCORD' une action (verbe) ; de même 'PREsent' et 'preSENT'.",
+      "Espagnol : 'PA-pa' est la pomme de terre, 'pa-PÁ' le papa ; en français, l'accent ne change jamais le sens.",
+      "Italien : 'ÀN-co-ra' est une ancre, 'an-CO-ra' veut dire encore ; portugais : 'SÁ-bia', 'sa-BI-a' et 'sa-bi-Á'."
+     ],
+     "q": "As-tu déjà été mal compris à cause d'un accent mal placé dans une autre langue ?",
+     "c": "Dis 'REcord, reCORD, papa, papá, àncora, ancora' et fais une petite phrase avec chaque paire."
+    },
+    "it": {
+     "t": "Quando l'accento cambia significato",
+     "g": "Scopri come spostare l'accento può cambiare una parola, come 'àncora' e 'ancora' o l'inglese REcord e reCORD.",
+     "p": [
+      "Italiano: 'ÀN-co-ra' è l'ancora della nave, 'an-CO-ra' significa di nuovo; anche 'PRIN-ci-pi' e 'prin-CI-pi'.",
+      "Inglese: un 'REcord' è una cosa (nome), 'reCORD' è un'azione (verbo); lo stesso per 'PREsent' e 'preSENT'.",
+      "Spagnolo: 'PA-pa' è la patata, 'pa-PÁ' è il papà; portoghese: 'SÁ-bia', 'sa-BI-a' e 'sa-bi-Á'."
+     ],
+     "q": "Ti è mai capitato di essere frainteso per un accento nel posto sbagliato?",
+     "c": "Di' 'àncora, ancora, prìncipi, princìpi' e l'inglese 'REcord, reCORD', e crea una frase per ogni coppia."
+    },
+    "pt": {
+     "t": "Quando a tónica muda o significado",
+     "g": "Vê como mudar a força pode mudar uma palavra, como 'sábia', 'sabia' e 'sabiá' ou o inglês REcord e reCORD.",
+     "p": [
+      "Português: 'SÁ-bia' (que sabe muito), 'sa-BI-a' (do verbo saber) e 'sa-bi-Á' (um pássaro).",
+      "Inglês: um 'REcord' é uma coisa (nome), 'reCORD' é uma ação (verbo); o mesmo com 'PREsent' e 'preSENT'.",
+      "Espanhol: 'PA-pa' é a batata, 'pa-PÁ' é o pai; italiano: 'ÀN-co-ra' é uma âncora, 'an-CO-ra' quer dizer ainda."
+     ],
+     "q": "Já foste mal compreendido por pôr a força no sítio errado?",
+     "c": "Diz 'sábia, sabia, sabiá', 'papa, papá' e o inglês 'REcord, reCORD', e faz uma frase com cada grupo."
+    },
+    "pt_BR": {
+     "t": "Quando a tônica muda o significado",
+     "g": "Veja como mudar a força pode mudar uma palavra, como 'sábia', 'sabia' e 'sabiá' ou o inglês REcord e reCORD.",
+     "p": [
+      "Português: 'SÁ-bia' (que sabe muito), 'sa-BI-a' (do verbo saber) e 'sa-bi-Á' (o passarinho).",
+      "Inglês: um 'REcord' é uma coisa (substantivo), 'reCORD' é uma ação (verbo); o mesmo com 'PREsent' e 'preSENT'.",
+      "Espanhol: 'PA-pa' é a batata, 'pa-PÁ' é o pai; italiano: 'ÀN-co-ra' é uma âncora, 'an-CO-ra' quer dizer ainda."
+     ],
+     "q": "Você já foi mal entendido por colocar a força no lugar errado?",
+     "c": "Diga 'sábia, sabia, sabiá', 'papa, papá' e o inglês 'REcord, reCORD', e faça uma frase com cada grupo."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Accent marks on letters",
+     "g": "Learn what é, è, ê, ã, ñ, ü and ç tell you about the sound.",
+     "p": [
+      "French é is a closed e, like a short 'ay' without a glide ('café'); è and ê are open, like the e in 'bed' ('mère', 'fête').",
+      "In Portuguese, é is open and ê is closed ('avó' and 'avô' work the same way with o); ã is a nasal vowel: 'mãe', 'pão'.",
+      "Spanish ñ is the ny sound ('año'); German ü is a rounded ee ('über'); ç is an s sound in French and Portuguese ('français', 'coração')."
+     ],
+     "q": "Which accent mark did you find most mysterious before today?",
+     "c": "Read 'café, mère, fête, avó, avô, pão, año, über, coração' aloud, saying what each mark does."
+    },
+    "de": {
+     "t": "Zeichen auf Buchstaben",
+     "g": "Lerne, was é, è, ê, ã, ñ, ü und ç über den Klang verraten.",
+     "p": [
+      "Französisch é ist ein geschlossenes e wie in „Tee“ ('café'); è und ê sind offen wie in „Bett“ ('mère', 'fête').",
+      "Im Portugiesischen ist é offen und ê geschlossen (ebenso 'avó' und 'avô'); ã ist ein Nasalvokal: 'mãe', 'pão'.",
+      "Spanisch ñ ist der nj-Laut ('año'); ü ist ein gerundetes i („über“); ç ist ein s im Französischen und Portugiesischen."
+     ],
+     "q": "Welches Zeichen auf einem Buchstaben fandest du vor heute am rätselhaftesten?",
+     "c": "Lies 'café, mère, fête, avó, avô, pão, año', „über“ und 'coração' laut und sag, was jedes Zeichen bewirkt."
+    },
+    "es": {
+     "t": "Las marcas sobre las letras",
+     "g": "Aprende qué te dicen sobre el sonido é, è, ê, ã, ñ, ü y ç.",
+     "p": [
+      "En francés é es una e cerrada ('café'); è y ê son abiertas, con la boca más abierta ('mère', 'fête').",
+      "En portugués é es abierta y ê cerrada (igual 'avó' y 'avô'); ã es una vocal nasal: 'mãe', 'pão'.",
+      "La ñ es la ñ de 'año'; la ü alemana es una i con labios redondos ('über'), y en 'pingüino' hace sonar la u; ç suena s."
+     ],
+     "q": "¿Qué marca sobre una letra te parecía más misteriosa antes de hoy?",
+     "c": "Lee 'café, mère, fête, avó, avô, pão, año, über, pingüino, coração' en voz alta diciendo qué hace cada marca."
+    },
+    "fr": {
+     "t": "Les signes sur les lettres",
+     "g": "Apprends ce que é, è, ê, ã, ñ, ü et ç disent du son.",
+     "p": [
+      "En français, é est un e fermé (« café ») ; è et ê sont ouverts, bouche plus ouverte (« mère », « fête »).",
+      "En portugais, é est ouvert et ê fermé (de même 'avó' et 'avô') ; ã est une voyelle nasale : 'mãe', 'pão'.",
+      "Le ñ espagnol est notre son gn ('año') ; le ü allemand est notre u ('über') ; ç se dit s : « français », 'coração'."
+     ],
+     "q": "Quel signe sur une lettre te semblait le plus mystérieux avant aujourd'hui ?",
+     "c": "Lis « café, mère, fête », 'avó, avô, pão, año, über, coração' à voix haute en disant ce que fait chaque signe."
+    },
+    "it": {
+     "t": "I segni sulle lettere",
+     "g": "Impara cosa dicono sul suono é, è, ê, ã, ñ, ü e ç.",
+     "p": [
+      "In francese é è una e chiusa ('café'); è ed ê sono aperte, con la bocca più aperta ('mère', 'fête').",
+      "In italiano vale lo stesso: 'perché' ha la e chiusa, 'è' e 'caffè' quella aperta; in portoghese ã è nasale: 'pão'.",
+      "La ñ spagnola è il nostro gn ('año'); la ü tedesca è una i con le labbra tonde ('über'); ç si legge s ('français')."
+     ],
+     "q": "Quale segno su una lettera ti sembrava più misterioso prima di oggi?",
+     "c": "Leggi 'café, mère, fête, perché, caffè, pão, año, über, coração' ad alta voce dicendo cosa fa ogni segno."
+    },
+    "pt": {
+     "t": "Os sinais nas letras",
+     "g": "Aprende o que é, è, ê, ã, ñ, ü e ç te dizem sobre o som.",
+     "p": [
+      "Em francês é é um e fechado ('café'); è e ê são abertos ('mère', 'fête') — ao contrário do português!",
+      "Em português é é aberto e ê é fechado ('avó' e 'avô' funcionam igual com o o); ã é nasal: 'mãe', 'pão'.",
+      "O ñ espanhol é o nosso nh ('año'); o ü alemão é um i com lábios redondos ('über'); ç soa s ('coração', 'français')."
+     ],
+     "q": "Que sinal numa letra te parecia mais misterioso antes de hoje?",
+     "c": "Lê 'café, mère, fête, avó, avô, pão, año, über, coração' em voz alta, dizendo o que faz cada sinal."
+    },
+    "pt_BR": {
+     "t": "Os sinais nas letras",
+     "g": "Aprenda o que é, è, ê, ã, ñ, ü e ç dizem sobre o som.",
+     "p": [
+      "Em francês é é um e fechado ('café'); è e ê são abertos ('mère', 'fête'), ao contrário do português!",
+      "Em português é é aberto e ê é fechado ('avó' e 'avô' funcionam igual com o o); ã é nasal: 'mãe', 'pão'.",
+      "O ñ espanhol é o nosso nh ('año'); o ü alemão é um i com lábios redondos ('über'); ç soa s ('coração', 'français')."
+     ],
+     "q": "Qual sinal numa letra parecia mais misterioso para você antes de hoje?",
+     "c": "Leia 'café, mère, fête, avó, avô, pão, año, über, coração' em voz alta, dizendo o que cada sinal faz."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "German ü, ö and ä",
+     "g": "Say ee with rounded lips for German ü, eh with rounded lips for ö, and an open eh for ä.",
+     "p": [
+      "For ü, say 'ee' and, without moving your tongue, round your lips as for 'oo': 'über', 'Tür', 'grün'.",
+      "For ö, say the 'e' of 'bed' or 'ay' and round your lips the same way: 'schön', 'Öl', 'können'.",
+      "Ä is simpler: an open e, like in 'bed' ('Äpfel', 'Mädchen'); French 'tu' and 'peu' use the same ü and ö."
+     ],
+     "q": "Which one is hardest for you: ü, ö or ä?",
+     "c": "Say 'ee' and slowly round your lips into 'ü' five times, then read 'über, schön, Mädchen, Brötchen'."
+    },
+    "de": {
+     "t": "Die Umlaute ü, ö und ä",
+     "g": "Sprich ü als i mit gerundeten Lippen, ö als e mit gerundeten Lippen und ä als offenes e.",
+     "p": [
+      "Für ü sagst du i und rundest, ohne die Zunge zu bewegen, die Lippen wie für u: „über“, „Tür“, „grün“.",
+      "Für ö sagst du e wie in „See“ und rundest die Lippen genauso: „schön“, „Öl“, „können“.",
+      "Ä ist einfacher: ein offenes e wie in „Bett“ („Äpfel“, „Mädchen“); französisch 'tu' und 'peu' nutzen ü und ö."
+     ],
+     "q": "Wie würdest du einer Freundin aus dem Ausland erklären, wie man ü ausspricht?",
+     "c": "Sag i und runde langsam die Lippen zu ü, fünfmal; lies dann „über, schön, Mädchen, Brötchen“."
+    },
+    "es": {
+     "t": "La ü, la ö y la ä alemanas",
+     "g": "Di una i con labios redondos para la ü alemana, una e con labios redondos para la ö y una e abierta para la ä.",
+     "p": [
+      "Para la ü, di 'i' y, sin mover la lengua, redondea los labios como para la 'u': 'über', 'Tür', 'grün'.",
+      "Para la ö, di 'e' y redondea los labios igual: 'schön', 'Öl', 'können'.",
+      "La ä es más fácil: una e abierta, como la de 'perro' ('Äpfel', 'Mädchen'); el francés 'tu' y 'peu' usan ü y ö."
+     ],
+     "q": "¿Cuál te cuesta más: la ü, la ö o la ä?",
+     "c": "Di 'i' y redondea despacio los labios hasta la 'ü' cinco veces; luego lee 'über, schön, Mädchen, Brötchen'."
+    },
+    "fr": {
+     "t": "Le ü, le ö et le ä allemands",
+     "g": "Le ü allemand est un i aux lèvres arrondies, le ö un é aux lèvres arrondies et le ä un è ouvert.",
+     "p": [
+      "Le ü allemand, c'est ton « u » : dis i, puis arrondis les lèvres sans bouger la langue : 'über', 'Tür', 'grün'.",
+      "Le ö, c'est ton « eu » : dis é et arrondis les lèvres de la même façon : 'schön' comme « peu », 'Öl', 'können'.",
+      "Le ä est plus simple : un è ouvert comme dans « mère » ('Äpfel', 'Mädchen')."
+     ],
+     "q": "Lequel est le plus facile pour toi grâce au français : ü, ö ou ä ?",
+     "c": "Dis « i » et arrondis lentement les lèvres jusqu'à « u » cinq fois, puis lis 'über, schön, Mädchen, Brötchen'."
+    },
+    "it": {
+     "t": "La ü, la ö e la ä tedesche",
+     "g": "Di' una i con le labbra tonde per la ü tedesca, una e con le labbra tonde per la ö e una e aperta per la ä.",
+     "p": [
+      "Per la ü di' 'i' e, senza muovere la lingua, arrotonda le labbra come per la 'u': 'über', 'Tür', 'grün'.",
+      "Per la ö di' una e chiusa e arrotonda le labbra allo stesso modo: 'schön', 'Öl', 'können'.",
+      "La ä è più semplice: una e aperta come in 'bello' ('Äpfel', 'Mädchen'); il francese 'tu' e 'peu' usano ü e ö."
+     ],
+     "q": "Quale trovi più difficile: ü, ö o ä? Nel dialetto lombardo o piemontese c'è qualcosa di simile?",
+     "c": "Di' 'i' e arrotonda lentamente le labbra fino alla 'ü' cinque volte; poi leggi 'über, schön, Mädchen, Brötchen'."
+    },
+    "pt": {
+     "t": "O ü, o ö e o ä alemães",
+     "g": "Diz um i com lábios redondos para o ü alemão, um ê com lábios redondos para o ö e um é aberto para o ä.",
+     "p": [
+      "Para o ü, diz 'i' e, sem mexer a língua, arredonda os lábios como para o 'u': 'über', 'Tür', 'grün'.",
+      "Para o ö, diz 'ê' e arredonda os lábios da mesma forma: 'schön', 'Öl', 'können'.",
+      "O ä é mais simples: um é aberto como em 'pé' ('Äpfel', 'Mädchen'); o francês 'tu' e 'peu' usam ü e ö."
+     ],
+     "q": "Qual achas mais difícil: ü, ö ou ä?",
+     "c": "Diz 'i' e arredonda devagar os lábios até 'ü' cinco vezes; depois lê 'über, schön, Mädchen, Brötchen'."
+    },
+    "pt_BR": {
+     "t": "O ü, o ö e o ä alemães",
+     "g": "Diga um i com lábios redondos para o ü alemão, um ê com lábios redondos para o ö e um é aberto para o ä.",
+     "p": [
+      "Para o ü, diga 'i' e, sem mexer a língua, arredonde os lábios como para o 'u': 'über', 'Tür', 'grün'.",
+      "Para o ö, diga 'ê' e arredonde os lábios do mesmo jeito: 'schön', 'Öl', 'können'.",
+      "O ä é mais simples: um é aberto como em 'pé' ('Äpfel', 'Mädchen'); o francês 'tu' e 'peu' usam ü e ö."
+     ],
+     "q": "Qual você acha mais difícil: ü, ö ou ä?",
+     "c": "Diga 'i' e arredonde devagar os lábios até 'ü' cinco vezes; depois leia 'über, schön, Mädchen, Brötchen'."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: letters, stress and marks",
+     "g": "Revisit r, h, th, silent letters and word stress, then read a short text aloud.",
+     "p": [
+      "Sounds: tapped, rolled, throaty and English r; breathy or silent h; th between the teeth; ich and ach.",
+      "Letters: silent letters, French final consonants, Italian c, g and doubles, and what accent marks tell you.",
+      "Stress: one syllable stands out; Spanish rules, German first syllable, French group endings, English word by word."
+     ],
+     "q": "Looking back at these two months, which lesson changed your speaking the most?",
+     "c": "Record yourself reading a short paragraph, mark three stressed syllables and one tricky sound, and listen kindly."
+    },
+    "de": {
+     "t": "Rückblick: Buchstaben, Betonung, Zeichen",
+     "g": "Wiederhole r, h, th, stumme Buchstaben und Wortbetonung und lies dann einen kurzen Text laut.",
+     "p": [
+      "Laute: getipptes, gerolltes, Rachen- und englisches r; gehauchtes oder stummes h; th zwischen den Zähnen; ich und ach.",
+      "Buchstaben: stumme Buchstaben, französische Endkonsonanten, italienisches c, g und Doppelkonsonanten, Zeichen.",
+      "Betonung: eine Silbe sticht hervor; spanische Regeln, deutsche erste Silbe, französisches Gruppenende, Englisch pro Wort."
+     ],
+     "q": "Wenn du auf diese zwei Monate zurückblickst: Welche Lektion hat dein Sprechen am meisten verändert?",
+     "c": "Nimm dich beim Lesen eines kurzen Absatzes auf, markiere drei betonte Silben und einen kniffligen Laut, hör freundlich zu."
+    },
+    "es": {
+     "t": "Repaso: letras, acento y marcas",
+     "g": "Repasa la r, la h, la th, las letras mudas y el acento, y lee un texto corto en voz alta.",
+     "p": [
+      "Sonidos: r simple, múltiple, gutural e inglesa; h aspirada o muda; th entre los dientes; la j y el ich alemán.",
+      "Letras: letras mudas, finales franceses, la c, la g y las dobles italianas, y lo que dicen las marcas.",
+      "Acento: una sílaba destaca; reglas del español, primera sílaba en alemán, final de grupo en francés, inglés palabra a palabra."
+     ],
+     "q": "Mirando atrás estos dos meses, ¿qué lección ha cambiado más tu forma de hablar?",
+     "c": "Grábate leyendo un párrafo corto, marca tres sílabas tónicas y un sonido difícil, y escúchate con cariño."
+    },
+    "fr": {
+     "t": "Révision : lettres, accent et signes",
+     "g": "Revois r, h, th, lettres muettes et accent de mot, puis lis un court texte à voix haute.",
+     "p": [
+      "Sons : r battu, roulé, de gorge et anglais ; h soufflé ou muet ; th entre les dents ; ich et ach allemands.",
+      "Lettres : lettres muettes, consonnes finales françaises, c, g et doubles italiens, et ce que disent les signes.",
+      "Accent : une syllabe ressort ; règles espagnoles, première syllabe en allemand, fin de groupe en français, anglais mot par mot."
+     ],
+     "q": "En repensant à ces deux mois, quelle leçon a le plus changé ta façon de parler ?",
+     "c": "Enregistre-toi en lisant un court paragraphe, marque trois syllabes accentuées et un son difficile, et écoute-toi avec bienveillance."
+    },
+    "it": {
+     "t": "Ripasso: lettere, accento e segni",
+     "g": "Ripassa r, h, th, lettere mute e accento, poi leggi ad alta voce un breve testo.",
+     "p": [
+      "Suoni: r battuta, vibrata, di gola e inglese; h aspirata o muta; th tra i denti; ich e ach tedeschi.",
+      "Lettere: lettere mute, finali francesi, c, g e doppie italiane, e cosa dicono i segni sulle lettere.",
+      "Accento: una sillaba spicca; regole spagnole, prima sillaba in tedesco, fine gruppo in francese, inglese parola per parola."
+     ],
+     "q": "Ripensando a questi due mesi, quale lezione ha cambiato di più il tuo modo di parlare?",
+     "c": "Registrati mentre leggi un breve paragrafo, segna tre sillabe accentate e un suono difficile, e riascoltati con gentilezza."
+    },
+    "pt": {
+     "t": "Revisão: letras, tónica e sinais",
+     "g": "Revê o r, o h, o th, as letras mudas e a sílaba tónica, e lê um texto curto em voz alta.",
+     "p": [
+      "Sons: r simples, vibrante, da garganta e inglês; h aspirado ou mudo; th entre os dentes; ich e ach alemães.",
+      "Letras: letras mudas, finais franceses, c, g e duplas italianas, e o que os sinais nas letras dizem.",
+      "Tónica: uma sílaba destaca-se; regras do espanhol, primeira sílaba em alemão, fim de grupo em francês, inglês palavra a palavra."
+     ],
+     "q": "Olhando para estes dois meses, que lição mudou mais a tua forma de falar?",
+     "c": "Grava-te a ler um parágrafo curto, marca três sílabas tónicas e um som difícil, e ouve-te com carinho."
+    },
+    "pt_BR": {
+     "t": "Revisão: letras, tônica e sinais",
+     "g": "Revise o r, o h, o th, as letras mudas e a sílaba tônica, e leia um texto curto em voz alta.",
+     "p": [
+      "Sons: r fraco, vibrante, de garganta e inglês; h aspirado ou mudo; th entre os dentes; ich e ach alemães.",
+      "Letras: letras mudas, finais franceses, c, g e duplas italianas, e o que os sinais nas letras dizem.",
+      "Tônica: uma sílaba se destaca; regras do espanhol, primeira sílaba em alemão, fim de grupo em francês, inglês palavra por palavra."
+     ],
+     "q": "Olhando para esses dois meses, qual lição mais mudou seu jeito de falar?",
+     "c": "Grave-se lendo um parágrafo curto, marque três sílabas tônicas e um som difícil, e ouça com carinho."
+    }
+   }
+  }
+ ]
+}

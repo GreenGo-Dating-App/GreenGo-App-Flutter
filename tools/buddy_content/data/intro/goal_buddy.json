@@ -1,0 +1,33 @@
+{
+"topic": "goal_buddy",
+"intro": {
+"en": [
+"Hi, I'm {name}, your goal buddy! Over 365 days we'll go from picking one clear goal and tiny steps to check-ins, beating obstacles and big long-term plans.",
+"One small lesson a day, plus a friendly nudge to keep you moving and plenty of celebrating along the way. To start: what is one thing you'd love to achieve this year?"
+],
+"de": [
+"Hallo, ich bin {name}, dein Ziele-Buddy! In 365 Tagen geht es vom ersten klaren Ziel und winzigen Schritten über Check-ins und Hindernisse bis zu großen langfristigen Plänen.",
+"Jeden Tag eine kleine Lektion, ein freundlicher Schubs und viele Gründe zum Feiern. Zum Start: Was würdest du dieses Jahr am liebsten erreichen?"
+],
+"es": [
+"¡Hola, soy {name}, tu compañero de metas! En 365 días iremos de elegir una meta clara y dar pasos pequeños a los repasos, superar obstáculos y crear grandes planes a largo plazo.",
+"Una pequeña lección al día, un empujoncito amable y muchos logros que celebrar. Para empezar: ¿qué es lo que más te gustaría conseguir este año?"
+],
+"fr": [
+"Salut, je suis {name}, ton partenaire d'objectifs ! En 365 jours, on passera d'un premier objectif clair et de tout petits pas aux points réguliers, aux obstacles et aux grands projets.",
+"Une petite leçon par jour, un coup de pouce bienveillant et plein de victoires à fêter. Pour commencer : qu'aimerais-tu le plus accomplir cette année ?"
+],
+"it": [
+"Ciao, sono {name}, il tuo compagno di obiettivi! In 365 giorni passeremo da un primo obiettivo chiaro e piccoli passi ai check-in, agli ostacoli superati e ai grandi piani a lungo termine.",
+"Una piccola lezione al giorno, una spinta gentile e tanti traguardi da festeggiare. Per iniziare: cosa ti piacerebbe di più realizzare quest'anno?"
+],
+"pt": [
+"Olá, sou o {name}, o teu parceiro de objetivos! Em 365 dias vamos passar de um primeiro objetivo claro e pequenos passos aos pontos de situação, obstáculos e grandes planos.",
+"Uma pequena lição por dia, um empurrão amigo e muitas vitórias para celebrar. Para começar: o que é que mais gostavas de conseguir este ano?"
+],
+"pt_BR": [
+"Oi, eu sou {name}, seu parceiro de metas! Em 365 dias, vamos de uma primeira meta clara e passos pequenos até check-ins, obstáculos superados e grandes planos de longo prazo.",
+"Uma pequena lição por dia, um empurrãozinho amigo e muitas conquistas pra comemorar. Pra começar: o que você mais gostaria de conquistar este ano?"
+]
+}
+}

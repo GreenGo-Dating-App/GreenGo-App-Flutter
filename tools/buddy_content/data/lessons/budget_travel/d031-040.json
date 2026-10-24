@@ -1,0 +1,835 @@
+{
+ "topic": "budget_travel",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Types of budget stays",
+     "g": "Get a quick overview of hostels, guesthouses, budget hotels, apartments and more.",
+     "p": [
+      "Hostels offer dorm beds and private rooms, often with a kitchen and a social vibe.",
+      "Guesthouses and budget hotels give you a simple private room, sometimes with breakfast.",
+      "Apartments, campsites and staying with locals suit longer trips, groups or adventurous travellers."
+     ],
+     "q": "Which kind of stay sounds most like you: social hostel, quiet guesthouse or your own apartment?",
+     "c": "For one city, find one example of each type of stay and note which one you would pick."
+    },
+    "de": {
+     "t": "Arten günstiger Unterkünfte",
+     "g": "Verschaffe dir einen Überblick über Hostels, Pensionen, günstige Hotels, Ferienwohnungen und mehr.",
+     "p": [
+      "Hostels bieten Schlafsaalbetten und Privatzimmer, oft mit Küche und geselliger Stimmung.",
+      "Pensionen und günstige Hotels bieten ein einfaches Privatzimmer, manchmal mit Frühstück.",
+      "Ferienwohnungen, Campingplätze und Übernachten bei Einheimischen passen zu langen Reisen, Gruppen oder Abenteurern."
+     ],
+     "q": "Welche Unterkunft passt am besten zu dir: geselliges Hostel, ruhige Pension oder eigene Wohnung?",
+     "c": "Finde für eine Stadt je ein Beispiel jeder Unterkunftsart und notiere, welche du wählen würdest."
+    },
+    "es": {
+     "t": "Tipos de alojamiento barato",
+     "g": "Haz un repaso rápido de albergues, pensiones, hoteles económicos, apartamentos y más.",
+     "p": [
+      "Los albergues ofrecen camas en dormitorios y habitaciones privadas, a menudo con cocina y buen ambiente.",
+      "Las pensiones y los hoteles económicos dan una habitación privada sencilla, a veces con desayuno.",
+      "Apartamentos, campings y alojarse con gente local encajan en viajes largos, grupos o espíritus aventureros."
+     ],
+     "q": "¿Qué tipo de alojamiento va más contigo: albergue social, pensión tranquila o tu propio apartamento?",
+     "c": "Para una ciudad, busca un ejemplo de cada tipo de alojamiento y apunta cuál elegirías."
+    },
+    "fr": {
+     "t": "Les types d'hébergement petit prix",
+     "g": "Fais le tour rapide des auberges, maisons d'hôtes, hôtels économiques, appartements et autres.",
+     "p": [
+      "Les auberges de jeunesse proposent des lits en dortoir et des chambres privées, souvent avec cuisine et ambiance conviviale.",
+      "Pensions et hôtels économiques offrent une chambre privée simple, parfois avec petit-déjeuner.",
+      "Appartements, campings et séjours chez l'habitant conviennent aux longs voyages, aux groupes ou aux aventuriers."
+     ],
+     "q": "Quel hébergement te ressemble le plus : auberge animée, pension calme ou appartement à toi ?",
+     "c": "Pour une ville, trouve un exemple de chaque type d'hébergement et note celui que tu choisirais."
+    },
+    "it": {
+     "t": "Tipi di alloggio economico",
+     "g": "Fai una panoramica veloce di ostelli, pensioni, hotel economici, appartamenti e altro.",
+     "p": [
+      "Gli ostelli offrono letti in dormitorio e camere private, spesso con cucina e un'atmosfera socievole.",
+      "Pensioni e hotel economici danno una camera privata semplice, a volte con colazione.",
+      "Appartamenti, campeggi e ospitalità da gente del posto si adattano a viaggi lunghi, gruppi o spiriti avventurosi."
+     ],
+     "q": "Quale alloggio ti somiglia di più: ostello socievole, pensione tranquilla o appartamento tutto tuo?",
+     "c": "Per una città, trova un esempio di ogni tipo di alloggio e annota quale sceglieresti."
+    },
+    "pt": {
+     "t": "Tipos de alojamento barato",
+     "g": "Faz uma visão rápida de hostels, pensões, hotéis económicos, apartamentos e mais.",
+     "p": [
+      "Os hostels oferecem camas em dormitório e quartos privados, muitas vezes com cozinha e bom ambiente.",
+      "Pensões e hotéis económicos dão um quarto privado simples, por vezes com pequeno-almoço.",
+      "Apartamentos, parques de campismo e ficar com locais combinam com viagens longas, grupos ou aventureiros."
+     ],
+     "q": "Que tipo de alojamento tem mais a ver contigo: hostel animado, pensão sossegada ou apartamento só teu?",
+     "c": "Para uma cidade, encontra um exemplo de cada tipo de alojamento e anota qual escolherias."
+    },
+    "pt_BR": {
+     "t": "Tipos de hospedagem barata",
+     "g": "Tenha uma visão rápida de hostels, pousadas, hotéis econômicos, apartamentos e mais.",
+     "p": [
+      "Hostels oferecem camas em quarto compartilhado e quartos privativos, muitas vezes com cozinha e clima social.",
+      "Pousadas e hotéis econômicos oferecem um quarto privativo simples, às vezes com café da manhã.",
+      "Apartamentos, campings e ficar na casa de locais combinam com viagens longas, grupos ou aventureiros."
+     ],
+     "q": "Que tipo de hospedagem tem mais a ver com você: hostel animado, pousada tranquila ou apartamento só seu?",
+     "c": "Para uma cidade, encontre um exemplo de cada tipo de hospedagem e anote qual você escolheria."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hostels demystified",
+     "g": "Understand dorms, private rooms, lockers and the friendly social side of hostel life.",
+     "p": [
+      "Dorms can be mixed or single-gender and range from four beds to much larger rooms.",
+      "Lockers keep your things safe; bring a small padlock, as some hostels charge to rent one.",
+      "Common rooms, shared kitchens and group activities make it easy to meet other travellers."
+     ],
+     "q": "What would you most enjoy about hostel life, and what would you find hardest?",
+     "c": "Pack a hostel mini kit on paper: padlock, earplugs, eye mask, flip-flops and a quick-dry towel."
+    },
+    "de": {
+     "t": "Hostels entzaubert",
+     "g": "Verstehe Schlafsäle, Privatzimmer, Schließfächer und die gesellige Seite des Hostellebens.",
+     "p": [
+      "Schlafsäle können gemischt oder nach Geschlecht getrennt sein, von vier Betten bis zu großen Räumen.",
+      "Schließfächer schützen deine Sachen; nimm ein kleines Vorhängeschloss mit, manche Hostels verlangen Leihgebühr.",
+      "Gemeinschaftsräume, Küchen und Gruppenaktivitäten machen es leicht, andere Reisende zu treffen."
+     ],
+     "q": "Was würde dir am Hostelleben am meisten gefallen, und was fändest du am schwierigsten?",
+     "c": "Pack auf Papier ein Hostel-Set: Vorhängeschloss, Ohrstöpsel, Schlafmaske, Badelatschen und ein schnell trocknendes Handtuch."
+    },
+    "es": {
+     "t": "Los albergues sin misterios",
+     "g": "Entiende los dormitorios, las habitaciones privadas, las taquillas y el lado social de los albergues.",
+     "p": [
+      "Los dormitorios pueden ser mixtos o solo para un género, desde cuatro camas hasta salas más grandes.",
+      "Las taquillas protegen tus cosas; lleva un candado pequeño, porque algunos albergues lo cobran.",
+      "Las zonas comunes, las cocinas compartidas y las actividades hacen fácil conocer a otros viajeros."
+     ],
+     "q": "¿Qué disfrutarías más de la vida en albergue y qué te costaría más?",
+     "c": "Prepara en papel un kit de albergue: candado, tapones, antifaz, chanclas y una toalla de secado rápido."
+    },
+    "fr": {
+     "t": "Les auberges de jeunesse démystifiées",
+     "g": "Comprends les dortoirs, les chambres privées, les casiers et le côté convivial de la vie en auberge.",
+     "p": [
+      "Les dortoirs peuvent être mixtes ou non mixtes, de quatre lits à des salles bien plus grandes.",
+      "Les casiers protègent tes affaires ; prends un petit cadenas, certaines auberges en font payer la location.",
+      "Salons communs, cuisines partagées et activités de groupe rendent les rencontres faciles."
+     ],
+     "q": "Qu'est-ce qui te plairait le plus dans la vie en auberge, et qu'est-ce qui serait le plus dur ?",
+     "c": "Prépare sur papier un kit auberge : cadenas, bouchons d'oreilles, masque, tongs et serviette à séchage rapide."
+    },
+    "it": {
+     "t": "Gli ostelli senza segreti",
+     "g": "Capisci dormitori, camere private, armadietti e il lato socievole della vita in ostello.",
+     "p": [
+      "I dormitori possono essere misti o solo per un genere, da quattro letti a stanze molto più grandi.",
+      "Gli armadietti proteggono le tue cose; porta un lucchetto piccolo, perché alcuni ostelli lo fanno pagare.",
+      "Sale comuni, cucine condivise e attività di gruppo rendono facile conoscere altri viaggiatori."
+     ],
+     "q": "Cosa ti piacerebbe di più della vita in ostello e cosa troveresti più difficile?",
+     "c": "Prepara su carta un kit da ostello: lucchetto, tappi, mascherina, ciabatte e asciugamano ad asciugatura rapida."
+    },
+    "pt": {
+     "t": "Hostels sem mistérios",
+     "g": "Percebe os dormitórios, os quartos privados, os cacifos e o lado social da vida num hostel.",
+     "p": [
+      "Os dormitórios podem ser mistos ou só para um género, de quatro camas até salas bem maiores.",
+      "Os cacifos protegem as tuas coisas; leva um cadeado pequeno, porque alguns hostels cobram o aluguer.",
+      "Salas comuns, cozinhas partilhadas e atividades em grupo facilitam conhecer outros viajantes."
+     ],
+     "q": "O que mais gostarias na vida de hostel e o que te custaria mais?",
+     "c": "Prepara no papel um kit de hostel: cadeado, tampões, máscara, chinelos e uma toalha de secagem rápida."
+    },
+    "pt_BR": {
+     "t": "Hostels sem mistério",
+     "g": "Entenda quartos compartilhados, quartos privativos, armários e o lado social da vida em hostel.",
+     "p": [
+      "Os quartos compartilhados podem ser mistos ou só femininos ou masculinos, de quatro camas a salas bem maiores.",
+      "Os armários protegem suas coisas; leve um cadeado pequeno, porque alguns hostels cobram aluguel.",
+      "Salas comuns, cozinhas compartilhadas e atividades em grupo facilitam conhecer outros viajantes."
+     ],
+     "q": "Do que você mais gostaria na vida de hostel e o que seria mais difícil?",
+     "c": "Monte no papel um kit de hostel: cadeado, protetor de ouvido, máscara, chinelo e toalha de secagem rápida."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a good hostel",
+     "g": "Read reviews for cleanliness, location, safety and atmosphere before you book.",
+     "p": [
+      "Cleanliness and safety scores matter most; look for 24-hour reception and secure lockers.",
+      "Check the location on a map: close to transport and sights saves money and time.",
+      "Read how guests describe the vibe, from quiet and relaxed to lively party place, and pick yours."
+     ],
+     "q": "Would you rather stay in a quiet hostel or a lively one with lots going on?",
+     "c": "Compare three hostels in one city by cleanliness, location, safety and atmosphere, then pick one."
+    },
+    "de": {
+     "t": "Ein gutes Hostel wählen",
+     "g": "Lies vor dem Buchen Bewertungen zu Sauberkeit, Lage, Sicherheit und Atmosphäre.",
+     "p": [
+      "Sauberkeit und Sicherheit zählen am meisten; achte auf eine Rezeption rund um die Uhr und sichere Schließfächer.",
+      "Prüf die Lage auf der Karte: Nähe zu Verkehr und Sehenswürdigkeiten spart Geld und Zeit.",
+      "Lies, wie Gäste die Stimmung beschreiben, von ruhig bis Partyhostel, und wähle deine."
+     ],
+     "q": "Wärst du lieber in einem ruhigen Hostel oder in einem lebhaften mit viel Programm?",
+     "c": "Vergleiche drei Hostels einer Stadt nach Sauberkeit, Lage, Sicherheit und Atmosphäre und wähle eins."
+    },
+    "es": {
+     "t": "Elegir un buen albergue",
+     "g": "Lee opiniones sobre limpieza, ubicación, seguridad y ambiente antes de reservar.",
+     "p": [
+      "La limpieza y la seguridad son lo más importante: busca recepción 24 horas y taquillas seguras.",
+      "Mira la ubicación en el mapa: estar cerca del transporte y de lo que quieres ver ahorra dinero y tiempo.",
+      "Lee cómo describen los huéspedes el ambiente, de tranquilo a muy fiestero, y elige el tuyo."
+     ],
+     "q": "¿Preferirías un albergue tranquilo o uno animado con muchas actividades?",
+     "c": "Compara tres albergues de una ciudad por limpieza, ubicación, seguridad y ambiente, y elige uno."
+    },
+    "fr": {
+     "t": "Choisir une bonne auberge",
+     "g": "Lis les avis sur la propreté, l'emplacement, la sécurité et l'ambiance avant de réserver.",
+     "p": [
+      "Propreté et sécurité comptent le plus : cherche une réception ouverte 24 h sur 24 et des casiers fiables.",
+      "Vérifie l'emplacement sur une carte : être près des transports et des sites fait gagner argent et temps.",
+      "Lis comment les clients décrivent l'ambiance, du calme reposant à la fête animée, et choisis la tienne."
+     ],
+     "q": "Préférerais-tu une auberge calme ou une auberge animée avec plein d'activités ?",
+     "c": "Compare trois auberges d'une ville selon propreté, emplacement, sécurité et ambiance, puis choisis-en une."
+    },
+    "it": {
+     "t": "Scegliere un buon ostello",
+     "g": "Leggi le recensioni su pulizia, posizione, sicurezza e atmosfera prima di prenotare.",
+     "p": [
+      "Pulizia e sicurezza contano di più: cerca una reception aperta 24 ore e armadietti sicuri.",
+      "Controlla la posizione sulla mappa: essere vicino ai mezzi e alle attrazioni fa risparmiare soldi e tempo.",
+      "Leggi come gli ospiti descrivono l'atmosfera, da tranquilla a festaiola, e scegli la tua."
+     ],
+     "q": "Preferiresti un ostello tranquillo o uno vivace con tante attività?",
+     "c": "Confronta tre ostelli di una città per pulizia, posizione, sicurezza e atmosfera, poi scegline uno."
+    },
+    "pt": {
+     "t": "Escolher um bom hostel",
+     "g": "Lê as avaliações sobre limpeza, localização, segurança e ambiente antes de reservar.",
+     "p": [
+      "Limpeza e segurança são o mais importante: procura receção 24 horas e cacifos seguros.",
+      "Vê a localização no mapa: estar perto dos transportes e dos pontos de interesse poupa dinheiro e tempo.",
+      "Lê como os hóspedes descrevem o ambiente, de sossegado a muito festivo, e escolhe o teu."
+     ],
+     "q": "Preferias um hostel sossegado ou um animado com muitas atividades?",
+     "c": "Compara três hostels de uma cidade por limpeza, localização, segurança e ambiente, e escolhe um."
+    },
+    "pt_BR": {
+     "t": "Escolhendo um bom hostel",
+     "g": "Leia avaliações sobre limpeza, localização, segurança e clima antes de reservar.",
+     "p": [
+      "Limpeza e segurança pesam mais: procure recepção 24 horas e armários seguros.",
+      "Veja a localização no mapa: ficar perto do transporte e das atrações economiza dinheiro e tempo.",
+      "Leia como os hóspedes descrevem o clima, de tranquilo a bem festeiro, e escolha o seu."
+     ],
+     "q": "Você preferiria um hostel tranquilo ou um animado com muita coisa acontecendo?",
+     "c": "Compare três hostels de uma cidade por limpeza, localização, segurança e clima, e escolha um."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Guesthouses and family-run stays",
+     "g": "Enjoy simple rooms with local hosts, often with breakfast and great insider tips.",
+     "p": [
+      "Guesthouses are small, often family-run places with a handful of rooms and a personal touch.",
+      "Breakfast is often included, and it may be homemade and very local.",
+      "Hosts usually know the best cheap eateries, shortcuts and hidden spots, so just ask."
+     ],
+     "q": "What would you love to ask a local host on your first evening in a new place?",
+     "c": "Write three questions to ask a guesthouse host, for example about food, walks and transport."
+    },
+    "de": {
+     "t": "Pensionen und Familienbetriebe",
+     "g": "Genieße einfache Zimmer bei Gastgebern vor Ort, oft mit Frühstück und tollen Insidertipps.",
+     "p": [
+      "Pensionen sind kleine, oft familiengeführte Häuser mit wenigen Zimmern und persönlicher Note.",
+      "Frühstück ist oft inklusive, manchmal hausgemacht und sehr regional.",
+      "Gastgeber kennen meist die besten günstigen Lokale, Abkürzungen und versteckten Orte, frag einfach."
+     ],
+     "q": "Was würdest du einen Gastgeber am ersten Abend an einem neuen Ort gern fragen?",
+     "c": "Schreib drei Fragen an einen Pensionsgastgeber auf, etwa zu Essen, Spaziergängen und Verkehr."
+    },
+    "es": {
+     "t": "Pensiones y casas familiares",
+     "g": "Disfruta de habitaciones sencillas con anfitriones locales, a menudo con desayuno y grandes consejos.",
+     "p": [
+      "Las pensiones son lugares pequeños, muchas veces familiares, con pocas habitaciones y un trato cercano.",
+      "El desayuno suele estar incluido y puede ser casero y muy local.",
+      "Los anfitriones conocen los mejores sitios baratos para comer, atajos y rincones escondidos: pregunta."
+     ],
+     "q": "¿Qué te encantaría preguntar a un anfitrión local tu primera noche en un lugar nuevo?",
+     "c": "Escribe tres preguntas para el anfitrión de una pensión, por ejemplo sobre comida, paseos y transporte."
+    },
+    "fr": {
+     "t": "Maisons d'hôtes et pensions familiales",
+     "g": "Profite de chambres simples chez des hôtes locaux, souvent avec petit-déjeuner et bons tuyaux.",
+     "p": [
+      "Les maisons d'hôtes sont de petites adresses, souvent familiales, avec quelques chambres et une touche personnelle.",
+      "Le petit-déjeuner est souvent inclus, parfois fait maison et très local.",
+      "Les hôtes connaissent en général les meilleures adresses pas chères, les raccourcis et les coins cachés : demande."
+     ],
+     "q": "Que voudrais-tu demander à un hôte local le premier soir dans un nouvel endroit ?",
+     "c": "Écris trois questions à poser à un hôte, par exemple sur la cuisine, les balades et les transports."
+    },
+    "it": {
+     "t": "Pensioni e B&B a conduzione familiare",
+     "g": "Goditi camere semplici con padroni di casa del posto, spesso con colazione e ottimi consigli.",
+     "p": [
+      "Le pensioni sono piccole strutture, spesso familiari, con poche camere e un tocco personale.",
+      "La colazione è spesso inclusa e può essere fatta in casa e molto locale.",
+      "I padroni di casa conoscono di solito i posti economici migliori, le scorciatoie e gli angoli nascosti: chiedi."
+     ],
+     "q": "Cosa ti piacerebbe chiedere a un padrone di casa la prima sera in un posto nuovo?",
+     "c": "Scrivi tre domande per il gestore di una pensione, per esempio su cibo, passeggiate e trasporti."
+    },
+    "pt": {
+     "t": "Pensões e casas de família",
+     "g": "Aproveita quartos simples com anfitriões locais, muitas vezes com pequeno-almoço e ótimas dicas.",
+     "p": [
+      "As pensões são sítios pequenos, muitas vezes familiares, com poucos quartos e um toque pessoal.",
+      "O pequeno-almoço costuma estar incluído e pode ser caseiro e bem local.",
+      "Os anfitriões costumam conhecer os melhores sítios baratos para comer, atalhos e cantos escondidos: pergunta."
+     ],
+     "q": "O que adorarias perguntar a um anfitrião local na primeira noite num sítio novo?",
+     "c": "Escreve três perguntas para o anfitrião de uma pensão, por exemplo sobre comida, passeios e transportes."
+    },
+    "pt_BR": {
+     "t": "Pousadas e casas de família",
+     "g": "Curta quartos simples com anfitriões locais, muitas vezes com café da manhã e ótimas dicas.",
+     "p": [
+      "Pousadas são lugares pequenos, muitas vezes de família, com poucos quartos e um toque pessoal.",
+      "O café da manhã costuma estar incluído e pode ser caseiro e bem regional.",
+      "Os anfitriões costumam conhecer os melhores lugares baratos para comer, atalhos e cantinhos escondidos: pergunte."
+     ],
+     "q": "O que você adoraria perguntar a um anfitrião local na primeira noite num lugar novo?",
+     "c": "Escreva três perguntas para o dono de uma pousada, por exemplo sobre comida, passeios e transporte."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Budget hotels and chains",
+     "g": "See when a simple hotel room is the best value, especially for two or three people.",
+     "p": [
+      "For two or three travellers, one private room can cost less than several dorm beds.",
+      "Budget chains offer predictable basics: a clean bed, a private bathroom and often a good location.",
+      "Check what is included, like breakfast or wifi, and whether city taxes are added at check-in."
+     ],
+     "q": "Travelling with friends, would you split a hotel room or each take a dorm bed?",
+     "c": "For two people, compare the cost of a budget hotel room with two hostel dorm beds in one city."
+    },
+    "de": {
+     "t": "Günstige Hotels und Ketten",
+     "g": "Erfahre, wann ein einfaches Hotelzimmer das beste Preis-Leistungs-Verhältnis bietet, vor allem zu zweit oder zu dritt.",
+     "p": [
+      "Für zwei oder drei Reisende kann ein Privatzimmer günstiger sein als mehrere Schlafsaalbetten.",
+      "Günstige Ketten bieten verlässliche Basics: ein sauberes Bett, ein eigenes Bad und oft eine gute Lage.",
+      "Prüfe, was inklusive ist, etwa Frühstück oder WLAN, und ob beim Check-in eine Ortstaxe dazukommt."
+     ],
+     "q": "Würdest du mit Freunden ein Hotelzimmer teilen oder nehmt ihr jeder ein Schlafsaalbett?",
+     "c": "Vergleiche für zwei Personen ein günstiges Hotelzimmer mit zwei Hostelbetten in einer Stadt."
+    },
+    "es": {
+     "t": "Hoteles económicos y cadenas",
+     "g": "Descubre cuándo una habitación de hotel sencilla es la mejor opción, sobre todo para dos o tres personas.",
+     "p": [
+      "Para dos o tres viajeros, una habitación privada puede costar menos que varias camas en dormitorio.",
+      "Las cadenas económicas ofrecen lo básico sin sorpresas: cama limpia, baño propio y a menudo buena ubicación.",
+      "Mira qué incluye, como desayuno o wifi, y si se añade una tasa turística al llegar."
+     ],
+     "q": "Viajando con amigos, ¿compartirías una habitación de hotel o cada uno tomaría una cama en dormitorio?",
+     "c": "Para dos personas, compara una habitación de hotel económico con dos camas de albergue en una ciudad."
+    },
+    "fr": {
+     "t": "Hôtels économiques et chaînes",
+     "g": "Vois quand une chambre d'hôtel simple est le meilleur choix, surtout à deux ou trois.",
+     "p": [
+      "À deux ou trois, une chambre privée peut coûter moins cher que plusieurs lits en dortoir.",
+      "Les chaînes économiques offrent un minimum fiable : lit propre, salle de bain privée et souvent un bon emplacement.",
+      "Vérifie ce qui est inclus, comme le petit-déjeuner ou le wifi, et si une taxe de séjour s'ajoute à l'arrivée."
+     ],
+     "q": "En voyage entre amis, partagerais-tu une chambre d'hôtel ou prendriez-vous chacun un lit en dortoir ?",
+     "c": "Pour deux personnes, compare une chambre d'hôtel économique et deux lits en auberge dans une ville."
+    },
+    "it": {
+     "t": "Hotel economici e catene",
+     "g": "Scopri quando una semplice camera d'albergo conviene di più, soprattutto in due o tre.",
+     "p": [
+      "In due o tre, una camera privata può costare meno di diversi letti in dormitorio.",
+      "Le catene economiche offrono basi affidabili: letto pulito, bagno privato e spesso una buona posizione.",
+      "Controlla cosa è incluso, come colazione o wifi, e se al check-in si aggiunge una tassa di soggiorno."
+     ],
+     "q": "Viaggiando con amici, divideresti una camera d'albergo o prendereste ciascuno un letto in dormitorio?",
+     "c": "Per due persone, confronta una camera in un hotel economico con due letti in ostello in una città."
+    },
+    "pt": {
+     "t": "Hotéis económicos e cadeias",
+     "g": "Percebe quando um quarto de hotel simples é a melhor opção, sobretudo para duas ou três pessoas.",
+     "p": [
+      "Para dois ou três viajantes, um quarto privado pode custar menos do que várias camas em dormitório.",
+      "As cadeias económicas oferecem o básico sem surpresas: cama limpa, casa de banho privada e muitas vezes boa localização.",
+      "Vê o que está incluído, como pequeno-almoço ou wifi, e se há taxa turística cobrada à chegada."
+     ],
+     "q": "A viajar com amigos, partilharias um quarto de hotel ou cada um ficava numa cama de dormitório?",
+     "c": "Para duas pessoas, compara um quarto de hotel económico com duas camas de hostel numa cidade."
+    },
+    "pt_BR": {
+     "t": "Hotéis econômicos e redes",
+     "g": "Entenda quando um quarto de hotel simples é a melhor opção, principalmente para duas ou três pessoas.",
+     "p": [
+      "Para dois ou três viajantes, um quarto privativo pode custar menos que várias camas em quarto compartilhado.",
+      "Redes econômicas oferecem o básico sem surpresa: cama limpa, banheiro privativo e muitas vezes boa localização.",
+      "Veja o que está incluído, como café da manhã ou wi-fi, e se há taxa de turismo cobrada no check-in."
+     ],
+     "q": "Viajando com amigos, você dividiria um quarto de hotel ou cada um ficaria numa cama de hostel?",
+     "c": "Para duas pessoas, compare um quarto de hotel econômico com duas camas de hostel numa cidade."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holiday rentals",
+     "g": "Learn how apartments with kitchens can save money on longer stays and for groups.",
+     "p": [
+      "A kitchen lets you cook some meals, which cuts food costs a lot over a week or more.",
+      "Split between a group, a whole apartment can cost less per person than hotel rooms.",
+      "Watch for cleaning fees and minimum stays, and read the house rules before booking."
+     ],
+     "q": "Who would be your ideal travel group to share an apartment with for a week?",
+     "c": "Find an apartment for four people and work out its cost per person per night, cleaning fee included."
+    },
+    "de": {
+     "t": "Ferienwohnungen",
+     "g": "Lerne, wie Wohnungen mit Küche bei längeren Aufenthalten und in Gruppen Geld sparen.",
+     "p": [
+      "Mit einer Küche kochst du einige Mahlzeiten selbst, das senkt die Essenskosten über eine Woche stark.",
+      "Unter einer Gruppe aufgeteilt, kostet eine ganze Wohnung pro Kopf oft weniger als Hotelzimmer.",
+      "Achte auf Reinigungsgebühren und Mindestaufenthalte und lies die Hausregeln vor dem Buchen."
+     ],
+     "q": "Mit wem würdest du am liebsten eine Woche lang eine Ferienwohnung teilen?",
+     "c": "Finde eine Wohnung für vier Personen und berechne den Preis pro Person und Nacht inklusive Reinigung."
+    },
+    "es": {
+     "t": "Apartamentos vacacionales",
+     "g": "Aprende cómo los apartamentos con cocina ahorran dinero en estancias largas y en grupo.",
+     "p": [
+      "Con cocina puedes preparar algunas comidas, y eso baja mucho el gasto en una semana o más.",
+      "Repartido entre un grupo, un apartamento entero puede salir más barato por persona que varias habitaciones de hotel.",
+      "Fíjate en la tarifa de limpieza y la estancia mínima, y lee las normas de la casa antes de reservar."
+     ],
+     "q": "¿Quién sería tu grupo ideal para compartir un apartamento durante una semana?",
+     "c": "Busca un apartamento para cuatro personas y calcula el coste por persona y noche, con la limpieza incluida."
+    },
+    "fr": {
+     "t": "Les locations de vacances",
+     "g": "Découvre comment un appartement avec cuisine fait économiser lors de longs séjours et en groupe.",
+     "p": [
+      "Avec une cuisine, tu prépares certains repas, ce qui réduit beaucoup le budget nourriture sur une semaine ou plus.",
+      "Partagé en groupe, un appartement entier peut coûter moins cher par personne que des chambres d'hôtel.",
+      "Attention aux frais de ménage et aux durées minimales, et lis le règlement avant de réserver."
+     ],
+     "q": "Avec qui aimerais-tu partager un appartement pendant une semaine de voyage ?",
+     "c": "Trouve un appartement pour quatre et calcule le prix par personne et par nuit, frais de ménage compris."
+    },
+    "it": {
+     "t": "Case vacanza",
+     "g": "Scopri come gli appartamenti con cucina fanno risparmiare nei soggiorni lunghi e in gruppo.",
+     "p": [
+      "Con una cucina puoi preparare alcuni pasti, e questo taglia molto la spesa per il cibo in una settimana o più.",
+      "Diviso in gruppo, un appartamento intero può costare meno a persona delle camere d'albergo.",
+      "Attenzione alle spese di pulizia e ai soggiorni minimi, e leggi le regole della casa prima di prenotare."
+     ],
+     "q": "Chi sarebbe il tuo gruppo ideale con cui condividere un appartamento per una settimana?",
+     "c": "Trova un appartamento per quattro persone e calcola il costo a persona a notte, pulizie incluse."
+    },
+    "pt": {
+     "t": "Alojamento local e apartamentos",
+     "g": "Aprende como apartamentos com cozinha poupam dinheiro em estadias longas e em grupo.",
+     "p": [
+      "Com cozinha podes fazer algumas refeições, o que corta muito o gasto em comida numa semana ou mais.",
+      "Dividido por um grupo, um apartamento inteiro pode sair mais barato por pessoa do que quartos de hotel.",
+      "Atenção às taxas de limpeza e às estadias mínimas, e lê as regras da casa antes de reservar."
+     ],
+     "q": "Quem seria o teu grupo ideal para partilhar um apartamento durante uma semana?",
+     "c": "Encontra um apartamento para quatro pessoas e calcula o custo por pessoa e por noite, com a limpeza incluída."
+    },
+    "pt_BR": {
+     "t": "Aluguel por temporada",
+     "g": "Aprenda como apartamentos com cozinha economizam em estadias longas e em grupo.",
+     "p": [
+      "Com cozinha você prepara algumas refeições, o que corta bastante o gasto com comida em uma semana ou mais.",
+      "Dividido por um grupo, um apartamento inteiro pode sair mais barato por pessoa que quartos de hotel.",
+      "Fique de olho na taxa de limpeza e na estadia mínima, e leia as regras da casa antes de reservar."
+     ],
+     "q": "Quem seria sua turma ideal para dividir um apartamento por uma semana?",
+     "c": "Ache um apartamento para quatro pessoas e calcule o custo por pessoa por noite, com a taxa de limpeza incluída."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Location vs price",
+     "g": "See how a cheap room far from everything may cost more in transport and time.",
+     "p": [
+      "Add daily transport costs to the room price to compare places fairly.",
+      "Your time has value too: an hour of commuting each day is an hour less of exploring.",
+      "A slightly pricier room within walking distance of the sights can be the better deal overall."
+     ],
+     "q": "Would you pay a little more to walk everywhere, or take a cheaper stay further out?",
+     "c": "Compare a central room and a cheaper outer one, adding two transit trips a day to the outer price."
+    },
+    "de": {
+     "t": "Lage oder Preis",
+     "g": "Erkenne, wie ein billiges Zimmer weit draußen am Ende mehr Fahrtkosten und Zeit kosten kann.",
+     "p": [
+      "Rechne tägliche Fahrtkosten zum Zimmerpreis dazu, um Unterkünfte fair zu vergleichen.",
+      "Auch deine Zeit ist wertvoll: Eine Stunde Pendeln pro Tag ist eine Stunde weniger Entdecken.",
+      "Ein etwas teureres Zimmer in Laufweite der Sehenswürdigkeiten kann insgesamt das bessere Angebot sein."
+     ],
+     "q": "Würdest du etwas mehr zahlen, um überall hinzulaufen, oder lieber günstiger weiter draußen wohnen?",
+     "c": "Vergleiche ein zentrales und ein günstigeres äußeres Zimmer und rechne beim äußeren zwei Fahrten pro Tag dazu."
+    },
+    "es": {
+     "t": "Ubicación frente a precio",
+     "g": "Descubre cómo una habitación barata lejos de todo puede costar más en transporte y tiempo.",
+     "p": [
+      "Suma el transporte diario al precio de la habitación para comparar de forma justa.",
+      "Tu tiempo también vale: una hora de trayecto al día es una hora menos para explorar.",
+      "Una habitación algo más cara a poca distancia a pie de todo puede salir mejor en conjunto."
+     ],
+     "q": "¿Pagarías un poco más para ir andando a todas partes o prefieres algo más barato y alejado?",
+     "c": "Compara una habitación céntrica y otra más barata en las afueras, sumando dos trayectos diarios a la segunda."
+    },
+    "fr": {
+     "t": "Emplacement ou prix",
+     "g": "Vois comment une chambre bon marché loin de tout peut coûter plus en transport et en temps.",
+     "p": [
+      "Ajoute les transports quotidiens au prix de la chambre pour comparer équitablement.",
+      "Ton temps a aussi de la valeur : une heure de trajet par jour, c'est une heure de découverte en moins.",
+      "Une chambre un peu plus chère à deux pas des sites peut être la meilleure affaire au final."
+     ],
+     "q": "Paierais-tu un peu plus pour tout faire à pied, ou préfères-tu un logement moins cher plus loin ?",
+     "c": "Compare une chambre centrale et une moins chère en périphérie, en ajoutant deux trajets par jour à la seconde."
+    },
+    "it": {
+     "t": "Posizione o prezzo",
+     "g": "Scopri come una camera economica lontana da tutto può costare di più in trasporti e tempo.",
+     "p": [
+      "Aggiungi il costo dei trasporti quotidiani al prezzo della camera per confrontare in modo onesto.",
+      "Anche il tuo tempo vale: un'ora di spostamenti al giorno è un'ora in meno per esplorare.",
+      "Una camera un po' più cara a due passi dalle attrazioni può essere nel complesso l'affare migliore."
+     ],
+     "q": "Pagheresti un po' di più per andare ovunque a piedi o preferisci un alloggio più economico e lontano?",
+     "c": "Confronta una camera centrale e una più economica in periferia, aggiungendo alla seconda due corse al giorno."
+    },
+    "pt": {
+     "t": "Localização ou preço",
+     "g": "Percebe como um quarto barato longe de tudo pode custar mais em transportes e tempo.",
+     "p": [
+      "Soma o transporte diário ao preço do quarto para comparares de forma justa.",
+      "O teu tempo também vale: uma hora de deslocação por dia é menos uma hora a explorar.",
+      "Um quarto um pouco mais caro a poucos passos de tudo pode ser, no fim, o melhor negócio."
+     ],
+     "q": "Pagavas um pouco mais para ir a pé a todo o lado ou preferes um sítio mais barato e afastado?",
+     "c": "Compara um quarto central e um mais barato na periferia, somando ao segundo duas viagens de transporte por dia."
+    },
+    "pt_BR": {
+     "t": "Localização ou preço",
+     "g": "Veja como um quarto barato longe de tudo pode custar mais em transporte e tempo.",
+     "p": [
+      "Some o transporte diário ao preço do quarto para comparar de forma justa.",
+      "Seu tempo também vale: uma hora de deslocamento por dia é uma hora a menos explorando.",
+      "Um quarto um pouco mais caro perto de tudo pode ser, no fim, o melhor negócio."
+     ],
+     "q": "Você pagaria um pouco mais para fazer tudo a pé ou prefere algo mais barato e afastado?",
+     "c": "Compare um quarto central e um mais barato na periferia, somando ao segundo duas viagens de transporte por dia."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading accommodation reviews",
+     "g": "Spot patterns in reviews and focus on recent, detailed ones.",
+     "p": [
+      "One bad review can be bad luck; the same complaint repeated many times is a real pattern.",
+      "Recent reviews matter most, because places can improve or get worse over time.",
+      "Detailed reviews with specifics, like noise at night or a broken lift, tell you far more than stars."
+     ],
+     "q": "What is the one thing a review could mention that would make you skip a place right away?",
+     "c": "Read ten recent reviews of one place and write down the top praise and the top complaint."
+    },
+    "de": {
+     "t": "Unterkunftsbewertungen lesen",
+     "g": "Erkenne Muster in Bewertungen und konzentriere dich auf aktuelle, ausführliche.",
+     "p": [
+      "Eine schlechte Bewertung kann Pech sein; dieselbe Beschwerde immer wieder ist ein echtes Muster.",
+      "Aktuelle Bewertungen zählen am meisten, weil Unterkünfte besser oder schlechter werden können.",
+      "Ausführliche Bewertungen mit Details, etwa Lärm nachts oder ein kaputter Aufzug, sagen mehr als Sterne."
+     ],
+     "q": "Was müsste in einer Bewertung stehen, damit du eine Unterkunft sofort streichst?",
+     "c": "Lies zehn aktuelle Bewertungen einer Unterkunft und notiere das häufigste Lob und die häufigste Kritik."
+    },
+    "es": {
+     "t": "Leer opiniones de alojamiento",
+     "g": "Detecta patrones en las opiniones y céntrate en las recientes y detalladas.",
+     "p": [
+      "Una mala opinión puede ser mala suerte; la misma queja repetida muchas veces es un patrón real.",
+      "Las opiniones recientes son las que más cuentan, porque los sitios pueden mejorar o empeorar.",
+      "Las opiniones con detalles, como ruido de noche o un ascensor roto, dicen mucho más que las estrellas."
+     ],
+     "q": "¿Qué detalle en una opinión te haría descartar un sitio de inmediato?",
+     "c": "Lee diez opiniones recientes de un alojamiento y apunta el elogio y la queja más repetidos."
+    },
+    "fr": {
+     "t": "Lire les avis sur les hébergements",
+     "g": "Repère les tendances dans les avis et concentre-toi sur les plus récents et détaillés.",
+     "p": [
+      "Un mauvais avis peut être de la malchance ; la même plainte répétée souvent est une vraie tendance.",
+      "Les avis récents comptent le plus, car un lieu peut s'améliorer ou se dégrader avec le temps.",
+      "Les avis précis, comme du bruit la nuit ou un ascenseur en panne, en disent bien plus que les étoiles."
+     ],
+     "q": "Quel détail dans un avis te ferait écarter un hébergement tout de suite ?",
+     "c": "Lis dix avis récents sur un logement et note le compliment et la plainte qui reviennent le plus."
+    },
+    "it": {
+     "t": "Leggere le recensioni degli alloggi",
+     "g": "Individua gli schemi nelle recensioni e concentrati su quelle recenti e dettagliate.",
+     "p": [
+      "Una recensione negativa può essere sfortuna; la stessa lamentela ripetuta tante volte è uno schema reale.",
+      "Le recensioni recenti contano di più, perché un posto può migliorare o peggiorare nel tempo.",
+      "Le recensioni dettagliate, come rumore di notte o un ascensore rotto, dicono molto più delle stelle."
+     ],
+     "q": "Quale dettaglio in una recensione ti farebbe scartare subito un alloggio?",
+     "c": "Leggi dieci recensioni recenti di un alloggio e annota il complimento e la lamentela più frequenti."
+    },
+    "pt": {
+     "t": "Ler avaliações de alojamento",
+     "g": "Deteta padrões nas avaliações e foca-te nas recentes e detalhadas.",
+     "p": [
+      "Uma má avaliação pode ser azar; a mesma queixa repetida muitas vezes é um padrão real.",
+      "As avaliações recentes contam mais, porque os sítios podem melhorar ou piorar com o tempo.",
+      "Avaliações com detalhes, como barulho à noite ou um elevador avariado, dizem muito mais do que estrelas."
+     ],
+     "q": "Que detalhe numa avaliação te faria pôr um sítio de lado logo?",
+     "c": "Lê dez avaliações recentes de um alojamento e anota o elogio e a queixa mais repetidos."
+    },
+    "pt_BR": {
+     "t": "Lendo avaliações de hospedagem",
+     "g": "Identifique padrões nas avaliações e foque nas recentes e detalhadas.",
+     "p": [
+      "Uma avaliação ruim pode ser azar; a mesma reclamação repetida muitas vezes é um padrão real.",
+      "As avaliações recentes valem mais, porque os lugares podem melhorar ou piorar com o tempo.",
+      "Avaliações com detalhes, como barulho à noite ou elevador quebrado, dizem muito mais que estrelas."
+     ],
+     "q": "Que detalhe numa avaliação faria você descartar um lugar na hora?",
+     "c": "Leia dez avaliações recentes de uma hospedagem e anote o elogio e a reclamação mais repetidos."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Booking direct vs platforms",
+     "g": "Find out when the property itself offers a better rate or small extras.",
+     "p": [
+      "Booking platforms make comparing easy, and some offer flexible cancellation or loyalty perks.",
+      "Once you find a place you like, check its own website or send a quick message.",
+      "Booking direct can bring a slightly better rate, free breakfast, an early check-in or a friendlier deal."
+     ],
+     "q": "Have you ever contacted a hotel or hostel directly? How did it go?",
+     "c": "Find one place on a platform, then check its own website and compare price and extras."
+    },
+    "de": {
+     "t": "Direkt buchen oder über Portale",
+     "g": "Finde heraus, wann die Unterkunft selbst einen besseren Preis oder kleine Extras bietet.",
+     "p": [
+      "Buchungsportale machen Vergleiche leicht, manche bieten flexible Stornierung oder Treuevorteile.",
+      "Hast du eine Unterkunft gefunden, die dir gefällt, prüf ihre eigene Webseite oder schreib kurz.",
+      "Direkt buchen bringt manchmal einen etwas besseren Preis, Gratisfrühstück oder einen frühen Check-in."
+     ],
+     "q": "Hast du schon mal ein Hotel oder Hostel direkt kontaktiert? Wie lief es?",
+     "c": "Such eine Unterkunft auf einem Portal, dann auf ihrer eigenen Webseite, und vergleiche Preis und Extras."
+    },
+    "es": {
+     "t": "Reservar directo o por plataformas",
+     "g": "Descubre cuándo el propio alojamiento ofrece mejor precio o pequeños extras.",
+     "p": [
+      "Las plataformas facilitan comparar y algunas ofrecen cancelación flexible o ventajas por fidelidad.",
+      "Cuando encuentres un sitio que te guste, mira su propia web o envía un mensaje rápido.",
+      "Reservar directo puede traer un precio algo mejor, desayuno gratis o entrar antes a la habitación."
+     ],
+     "q": "¿Alguna vez contactaste directamente con un hotel o albergue? ¿Qué tal fue?",
+     "c": "Busca un alojamiento en una plataforma, luego en su propia web, y compara precio y extras."
+    },
+    "fr": {
+     "t": "Réserver en direct ou via une plateforme",
+     "g": "Découvre quand l'établissement lui-même propose un meilleur tarif ou de petits extras.",
+     "p": [
+      "Les plateformes facilitent la comparaison, et certaines offrent annulation souple ou avantages fidélité.",
+      "Une fois un lieu repéré, regarde son propre site ou envoie-lui un petit message.",
+      "Réserver en direct peut apporter un tarif un peu meilleur, un petit-déjeuner offert ou une arrivée anticipée."
+     ],
+     "q": "As-tu déjà contacté un hôtel ou une auberge en direct ? Comment ça s'est passé ?",
+     "c": "Trouve un logement sur une plateforme, puis sur son propre site, et compare prix et extras."
+    },
+    "it": {
+     "t": "Prenotare diretto o tramite portali",
+     "g": "Scopri quando la struttura stessa offre una tariffa migliore o piccoli extra.",
+     "p": [
+      "I portali rendono facile confrontare, e alcuni offrono cancellazione flessibile o vantaggi fedeltà.",
+      "Quando trovi un posto che ti piace, guarda il suo sito o manda un breve messaggio.",
+      "Prenotare diretto può portare una tariffa un po' migliore, colazione gratis o un check-in anticipato."
+     ],
+     "q": "Hai mai contattato direttamente un hotel o un ostello? Com'è andata?",
+     "c": "Trova un alloggio su un portale, poi sul suo sito ufficiale, e confronta prezzo ed extra."
+    },
+    "pt": {
+     "t": "Reservar direto ou por plataformas",
+     "g": "Descobre quando o próprio alojamento oferece melhor preço ou pequenos extras.",
+     "p": [
+      "As plataformas facilitam comparar e algumas oferecem cancelamento flexível ou vantagens de fidelização.",
+      "Quando encontrares um sítio de que gostes, vê o site dele ou manda uma mensagem rápida.",
+      "Reservar direto pode trazer um preço um pouco melhor, pequeno-almoço grátis ou check-in mais cedo."
+     ],
+     "q": "Já contactaste diretamente um hotel ou hostel? Como correu?",
+     "c": "Encontra um alojamento numa plataforma, depois no site dele, e compara preço e extras."
+    },
+    "pt_BR": {
+     "t": "Reservar direto ou por plataformas",
+     "g": "Descubra quando a própria hospedagem oferece preço melhor ou pequenos extras.",
+     "p": [
+      "As plataformas facilitam comparar, e algumas oferecem cancelamento flexível ou vantagens de fidelidade.",
+      "Quando achar um lugar de que gostou, veja o site dele ou mande uma mensagem rápida.",
+      "Reservar direto pode trazer um preço um pouco melhor, café da manhã grátis ou check-in antecipado."
+     ],
+     "q": "Você já entrou em contato direto com um hotel ou hostel? Como foi?",
+     "c": "Ache uma hospedagem numa plataforma, depois no site dela, e compare preço e extras."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cancellation policies",
+     "g": "Compare flexible and non-refundable rates and learn when each one makes sense.",
+     "p": [
+      "Non-refundable rates are cheaper but you lose the money if your plans change.",
+      "Flexible rates cost a bit more and let you cancel for free until a set date.",
+      "Choose non-refundable when plans are certain, flexible when dates or routes might still move."
+     ],
+     "q": "How certain are your plans usually when you book: set in stone or likely to change?",
+     "c": "For one stay, compare the flexible and non-refundable prices and note the free cancellation deadline."
+    },
+    "de": {
+     "t": "Stornobedingungen",
+     "g": "Vergleiche flexible und nicht erstattbare Tarife und lerne, wann welcher sinnvoll ist.",
+     "p": [
+      "Nicht erstattbare Tarife sind günstiger, aber das Geld ist weg, wenn sich deine Pläne ändern.",
+      "Flexible Tarife kosten etwas mehr und erlauben kostenlose Stornierung bis zu einem festen Datum.",
+      "Wähle nicht erstattbar bei sicheren Plänen, flexibel, wenn sich Daten oder Route noch ändern könnten."
+     ],
+     "q": "Wie sicher sind deine Pläne meist beim Buchen: in Stein gemeißelt oder eher wackelig?",
+     "c": "Vergleiche für eine Unterkunft den flexiblen und den nicht erstattbaren Preis und notiere die Stornofrist."
+    },
+    "es": {
+     "t": "Políticas de cancelación",
+     "g": "Compara tarifas flexibles y no reembolsables, y aprende cuándo conviene cada una.",
+     "p": [
+      "Las tarifas no reembolsables son más baratas, pero pierdes el dinero si cambian tus planes.",
+      "Las flexibles cuestan algo más y te dejan cancelar gratis hasta una fecha concreta.",
+      "Elige no reembolsable si tus planes son seguros y flexible si las fechas o la ruta aún pueden cambiar."
+     ],
+     "q": "Cuando reservas, ¿tus planes suelen ser firmes o es probable que cambien?",
+     "c": "Para un alojamiento, compara el precio flexible y el no reembolsable y anota el plazo de cancelación gratuita."
+    },
+    "fr": {
+     "t": "Conditions d'annulation",
+     "g": "Compare les tarifs flexibles et non remboursables et apprends quand choisir l'un ou l'autre.",
+     "p": [
+      "Les tarifs non remboursables sont moins chers, mais tu perds l'argent si tes plans changent.",
+      "Les tarifs flexibles coûtent un peu plus et permettent d'annuler gratuitement jusqu'à une date donnée.",
+      "Choisis le non remboursable si tes plans sont sûrs, le flexible si les dates ou l'itinéraire peuvent bouger."
+     ],
+     "q": "Quand tu réserves, tes plans sont-ils en général gravés dans le marbre ou susceptibles de changer ?",
+     "c": "Pour un logement, compare le prix flexible et le non remboursable et note la date limite d'annulation gratuite."
+    },
+    "it": {
+     "t": "Politiche di cancellazione",
+     "g": "Confronta tariffe flessibili e non rimborsabili e impara quando conviene l'una o l'altra.",
+     "p": [
+      "Le tariffe non rimborsabili costano meno, ma perdi i soldi se i tuoi piani cambiano.",
+      "Le tariffe flessibili costano un po' di più e permettono di cancellare gratis fino a una certa data.",
+      "Scegli non rimborsabile se i piani sono certi, flessibile se date o itinerario possono ancora cambiare."
+     ],
+     "q": "Quando prenoti, i tuoi piani di solito sono sicuri o rischiano di cambiare?",
+     "c": "Per un alloggio, confronta il prezzo flessibile e quello non rimborsabile e annota la scadenza della cancellazione gratuita."
+    },
+    "pt": {
+     "t": "Políticas de cancelamento",
+     "g": "Compara tarifas flexíveis e não reembolsáveis e aprende quando compensa cada uma.",
+     "p": [
+      "As tarifas não reembolsáveis são mais baratas, mas perdes o dinheiro se os planos mudarem.",
+      "As flexíveis custam um pouco mais e permitem cancelar grátis até uma data definida.",
+      "Escolhe não reembolsável com planos certos e flexível se as datas ou a rota ainda puderem mudar."
+     ],
+     "q": "Quando reservas, os teus planos costumam ser firmes ou é provável que mudem?",
+     "c": "Para um alojamento, compara o preço flexível e o não reembolsável e anota o prazo de cancelamento grátis."
+    },
+    "pt_BR": {
+     "t": "Políticas de cancelamento",
+     "g": "Compare tarifas flexíveis e não reembolsáveis e aprenda quando cada uma vale a pena.",
+     "p": [
+      "Tarifas não reembolsáveis são mais baratas, mas você perde o dinheiro se os planos mudarem.",
+      "As flexíveis custam um pouco mais e deixam cancelar de graça até uma data definida.",
+      "Escolha não reembolsável com planos certos e flexível se datas ou roteiro ainda puderem mudar."
+     ],
+     "q": "Quando você reserva, seus planos costumam ser firmes ou é provável que mudem?",
+     "c": "Para uma hospedagem, compare o preço flexível e o não reembolsável e anote o prazo de cancelamento grátis."
+    }
+   }
+  }
+ ]
+}

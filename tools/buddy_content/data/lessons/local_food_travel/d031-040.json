@@ -1,0 +1,835 @@
+{
+ "topic": "local_food_travel",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coffee cultures",
+     "g": "Explore espresso bars, Turkish coffee, Vietnamese coffee and other café rituals.",
+     "p": [
+      "In Italy many people drink a quick espresso standing at the bar, and milky cappuccino is mostly a morning habit.",
+      "Turkish coffee is simmered in a small pot called a cezve and served unfiltered, so let the grounds settle first.",
+      "Vietnamese iced coffee is dripped through a metal filter over sweet condensed milk, a perfect break on a hot day."
+     ],
+     "q": "How do you like your coffee, and where do you usually drink it?",
+     "c": "Learn how to order a coffee the local way in one country you would like to visit."
+    },
+    "de": {
+     "t": "Kaffeekulturen",
+     "g": "Entdecke Espressobars, türkischen Kaffee, vietnamesischen Kaffee und andere Café-Rituale.",
+     "p": [
+      "In Italien trinken viele ihren Espresso schnell im Stehen an der Bar, Cappuccino ist meist ein Morgenritual.",
+      "Türkischer Kaffee köchelt in einem kleinen Kännchen namens Cezve und wird ungefiltert serviert: Lass den Satz erst sinken.",
+      "Vietnamesischer Eiskaffee tropft durch einen Metallfilter auf süße Kondensmilch, perfekt an heißen Tagen."
+     ],
+     "q": "Wie magst du deinen Kaffee, und wo trinkst du ihn meistens?",
+     "c": "Lerne, wie man in einem Wunschreiseland Kaffee auf lokale Art bestellt."
+    },
+    "es": {
+     "t": "Culturas del café",
+     "g": "Explora las barras de espresso, el café turco, el café vietnamita y otros rituales cafeteros.",
+     "p": [
+      "En Italia mucha gente toma un espresso rápido de pie en la barra, y el cappuccino es sobre todo cosa de la mañana.",
+      "El café turco se cuece a fuego lento en un cazo llamado cezve y se sirve sin filtrar: deja que el poso se asiente.",
+      "El café helado vietnamita gotea por un filtro metálico sobre leche condensada, una pausa perfecta en un día caluroso."
+     ],
+     "q": "¿Cómo te gusta el café y dónde sueles tomarlo?",
+     "c": "Aprende cómo pedir un café al estilo local en un país que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Les cultures du café",
+     "g": "Explore les bars à espresso, le café turc, le café vietnamien et d'autres rituels.",
+     "p": [
+      "En Italie, beaucoup boivent un espresso rapide debout au comptoir, et le cappuccino est surtout une habitude du matin.",
+      "Le café turc mijote dans une petite casserole appelée cezve et se sert non filtré : laisse d'abord le marc se déposer.",
+      "Le café glacé vietnamien coule goutte à goutte d'un filtre en métal sur du lait concentré sucré, parfait par temps chaud."
+     ],
+     "q": "Comment aimes-tu ton café, et où le bois-tu d'habitude ?",
+     "c": "Apprends à commander un café à la manière locale dans un pays que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Le culture del caffè",
+     "g": "Esplora i bar dell'espresso, il caffè turco, il caffè vietnamita e altri rituali.",
+     "p": [
+      "In Italia molti bevono un espresso veloce in piedi al banco, e il cappuccino è soprattutto un'abitudine del mattino.",
+      "Il caffè turco sobbolle in un pentolino chiamato cezve e si serve non filtrato: lascia prima depositare i fondi.",
+      "Il caffè freddo vietnamita gocciola da un filtro di metallo sul latte condensato, una pausa perfetta nelle giornate calde."
+     ],
+     "q": "Come ti piace il caffè, e dove lo bevi di solito?",
+     "c": "Impara come ordinare un caffè alla maniera locale in un paese che vorresti visitare."
+    },
+    "pt": {
+     "t": "Culturas do café",
+     "g": "Explora os bares de espresso, o café turco, o café vietnamita e outros rituais.",
+     "p": [
+      "Em Itália muita gente bebe um espresso rápido de pé ao balcão, e o cappuccino é sobretudo um hábito da manhã.",
+      "O café turco ferve devagar num pequeno bule chamado cezve e é servido sem filtrar: deixa primeiro assentar a borra.",
+      "O café gelado vietnamita pinga por um filtro de metal sobre leite condensado, uma pausa perfeita num dia quente."
+     ],
+     "q": "Como gostas do teu café, e onde costumas bebê-lo?",
+     "c": "Aprende a pedir um café à maneira local num país que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "Culturas do café",
+     "g": "Explore os bares de espresso, o café turco, o café vietnamita e outros rituais.",
+     "p": [
+      "Na Itália muita gente toma um espresso rápido em pé no balcão, e o cappuccino é mais um hábito da manhã.",
+      "O café turco é fervido devagar em um bulezinho chamado cezve e servido sem coar: deixe a borra assentar antes.",
+      "O café gelado vietnamita pinga de um filtro de metal sobre leite condensado, uma pausa perfeita num dia quente."
+     ],
+     "q": "Como você gosta do seu café, e onde costuma tomar?",
+     "c": "Aprenda a pedir um café do jeito local em um país que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea traditions",
+     "g": "Discover Chinese tea, Japanese matcha, British tea and Moroccan mint tea.",
+     "p": [
+      "In China tea is often brewed in small pots many times over, each infusion revealing new flavours.",
+      "Japanese matcha is powdered green tea whisked into a froth, at the heart of the calm tea ceremony.",
+      "British tea often comes with milk, and Moroccan mint tea is poured from high up as a warm sign of welcome."
+     ],
+     "q": "Are you a tea person? Which kind do you enjoy most?",
+     "c": "Try brewing a tea in a new way today, or learn the steps of one tea ritual."
+    },
+    "de": {
+     "t": "Teetraditionen",
+     "g": "Entdecke chinesischen Tee, japanischen Matcha, britischen Tee und marokkanischen Minztee.",
+     "p": [
+      "In China wird Tee oft in kleinen Kannen viele Male aufgegossen, jeder Aufguss zeigt neue Aromen.",
+      "Japanischer Matcha ist gemahlener Grüntee, schaumig geschlagen, im Mittelpunkt der ruhigen Teezeremonie.",
+      "Britischer Tee kommt oft mit Milch, und marokkanischer Minztee wird von hoch oben eingeschenkt, als herzlicher Willkommensgruß."
+     ],
+     "q": "Bist du ein Teemensch? Welche Sorte magst du am liebsten?",
+     "c": "Bereite heute einen Tee auf neue Art zu oder lerne die Schritte eines Teerituals."
+    },
+    "es": {
+     "t": "Tradiciones del té",
+     "g": "Descubre el té chino, el matcha japonés, el té británico y el té marroquí con menta.",
+     "p": [
+      "En China el té se prepara a menudo en teteras pequeñas muchas veces seguidas, y cada infusión revela sabores nuevos.",
+      "El matcha japonés es té verde en polvo batido hasta hacer espuma, el centro de la serena ceremonia del té.",
+      "El té británico suele llevar leche, y el té marroquí con menta se sirve desde lo alto como cálido gesto de bienvenida."
+     ],
+     "q": "¿Eres de té? ¿Cuál disfrutas más?",
+     "c": "Prepara hoy un té de una forma nueva, o aprende los pasos de un ritual del té."
+    },
+    "fr": {
+     "t": "Les traditions du thé",
+     "g": "Découvre le thé chinois, le matcha japonais, le thé britannique et le thé à la menthe marocain.",
+     "p": [
+      "En Chine, le thé est souvent infusé dans de petites théières à plusieurs reprises, chaque infusion révélant de nouveaux arômes.",
+      "Le matcha japonais est un thé vert en poudre fouetté en mousse, au cœur de la paisible cérémonie du thé.",
+      "Le thé britannique se boit souvent avec du lait, et le thé à la menthe marocain se verse de haut, en signe chaleureux de bienvenue."
+     ],
+     "q": "Es-tu plutôt thé ? Lequel préfères-tu ?",
+     "c": "Prépare aujourd'hui un thé d'une nouvelle façon, ou apprends les étapes d'un rituel du thé."
+    },
+    "it": {
+     "t": "Le tradizioni del tè",
+     "g": "Scopri il tè cinese, il matcha giapponese, il tè britannico e il tè alla menta marocchino.",
+     "p": [
+      "In Cina il tè si prepara spesso in piccole teiere con tante infusioni, e ognuna rivela nuovi sapori.",
+      "Il matcha giapponese è tè verde in polvere frullato fino a fare schiuma, cuore della serena cerimonia del tè.",
+      "Il tè britannico si beve spesso con il latte, e il tè alla menta marocchino si versa dall'alto come caldo segno di benvenuto."
+     ],
+     "q": "Sei una persona da tè? Quale ti piace di più?",
+     "c": "Prepara oggi un tè in un modo nuovo, o impara i passaggi di un rituale del tè."
+    },
+    "pt": {
+     "t": "Tradições do chá",
+     "g": "Descobre o chá chinês, o matcha japonês, o chá britânico e o chá de menta marroquino.",
+     "p": [
+      "Na China o chá é muitas vezes feito em bules pequenos várias vezes seguidas, e cada infusão revela novos sabores.",
+      "O matcha japonês é chá verde em pó batido até fazer espuma, o centro da serena cerimónia do chá.",
+      "O chá britânico leva muitas vezes leite, e o chá de menta marroquino é servido do alto como sinal caloroso de boas-vindas."
+     ],
+     "q": "És pessoa de chá? Qual preferes?",
+     "c": "Prepara hoje um chá de uma forma nova, ou aprende os passos de um ritual do chá."
+    },
+    "pt_BR": {
+     "t": "Tradições do chá",
+     "g": "Descubra o chá chinês, o matcha japonês, o chá britânico e o chá de hortelã marroquino.",
+     "p": [
+      "Na China o chá costuma ser feito em bules pequenos várias vezes seguidas, e cada infusão revela sabores novos.",
+      "O matcha japonês é chá verde em pó batido até espumar, o centro da serena cerimônia do chá.",
+      "O chá britânico muitas vezes leva leite, e o chá de hortelã marroquino é servido do alto como um caloroso sinal de boas-vindas."
+     ],
+     "q": "Você é do chá? De qual mais gosta?",
+     "c": "Prepare hoje um chá de um jeito novo, ou aprenda os passos de um ritual do chá."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cheese around the world",
+     "g": "Meet famous cheeses and see how regions shape their flavour.",
+     "p": [
+      "Parmigiano Reggiano from northern Italy is aged for many months, and Roquefort ripens in natural caves in southern France.",
+      "Spanish Manchego is made from the milk of La Mancha sheep, and Swiss Gruyère from cows grazing mountain pastures.",
+      "Protected origin labels guarantee a cheese comes from its home region and follows its traditional method."
+     ],
+     "q": "What is your favourite cheese, and where does it come from?",
+     "c": "Pick one cheese and find out which animal's milk it is made from and where."
+    },
+    "de": {
+     "t": "Käse aus aller Welt",
+     "g": "Lerne berühmte Käse kennen und sieh, wie Regionen ihren Geschmack prägen.",
+     "p": [
+      "Parmigiano Reggiano aus Norditalien reift viele Monate, Roquefort in natürlichen Höhlen in Südfrankreich.",
+      "Spanischer Manchego entsteht aus der Milch von Schafen der La Mancha, Schweizer Gruyère von Kühen auf Bergweiden.",
+      "Geschützte Herkunftssiegel garantieren, dass ein Käse aus seiner Heimatregion stammt und traditionell hergestellt wird."
+     ],
+     "q": "Was ist dein Lieblingskäse, und woher kommt er?",
+     "c": "Wähle einen Käse und finde heraus, aus welcher Milch und wo er gemacht wird."
+    },
+    "es": {
+     "t": "Quesos del mundo",
+     "g": "Conoce quesos famosos y descubre cómo cada región moldea su sabor.",
+     "p": [
+      "El Parmigiano Reggiano del norte de Italia se cura muchos meses, y el Roquefort madura en cuevas naturales del sur de Francia.",
+      "El queso manchego se hace con leche de oveja de La Mancha, y el Gruyère suizo con leche de vacas de pastos de montaña.",
+      "Las denominaciones de origen garantizan que un queso viene de su región y sigue el método tradicional."
+     ],
+     "q": "¿Cuál es tu queso favorito y de dónde viene?",
+     "c": "Elige un queso y averigua de qué leche se hace y dónde."
+    },
+    "fr": {
+     "t": "Les fromages du monde",
+     "g": "Découvre des fromages célèbres et comment les régions façonnent leur goût.",
+     "p": [
+      "Le Parmigiano Reggiano du nord de l'Italie est affiné de longs mois, et le roquefort mûrit dans des caves naturelles du sud de la France.",
+      "Le manchego espagnol est fait avec le lait des brebis de la Manche, et le gruyère suisse avec celui de vaches d'alpage.",
+      "Les appellations d'origine protégée garantissent qu'un fromage vient de sa région et suit la méthode traditionnelle."
+     ],
+     "q": "Quel est ton fromage préféré, et d'où vient-il ?",
+     "c": "Choisis un fromage et découvre avec quel lait et où il est fabriqué."
+    },
+    "it": {
+     "t": "I formaggi del mondo",
+     "g": "Conosci formaggi famosi e scopri come le regioni ne plasmano il sapore.",
+     "p": [
+      "Il Parmigiano Reggiano del nord Italia stagiona molti mesi, e il Roquefort matura in grotte naturali nel sud della Francia.",
+      "Il Manchego spagnolo è fatto con latte di pecore della Mancia, il Gruyère svizzero con quello di mucche al pascolo in montagna.",
+      "I marchi di origine protetta garantiscono che un formaggio viene dalla sua regione e segue il metodo tradizionale."
+     ],
+     "q": "Qual è il tuo formaggio preferito, e da dove viene?",
+     "c": "Scegli un formaggio e scopri con quale latte e dove viene prodotto."
+    },
+    "pt": {
+     "t": "Queijos do mundo",
+     "g": "Conhece queijos famosos e vê como as regiões moldam o seu sabor.",
+     "p": [
+      "O Parmigiano Reggiano do norte de Itália cura muitos meses, e o Roquefort amadurece em grutas naturais no sul de França.",
+      "O Manchego espanhol é feito com leite de ovelhas de La Mancha, e o Gruyère suíço com leite de vacas em pastos de montanha.",
+      "As denominações de origem protegida garantem que um queijo vem da sua região e segue o método tradicional."
+     ],
+     "q": "Qual é o teu queijo preferido, e de onde vem?",
+     "c": "Escolhe um queijo e descobre de que leite é feito e onde."
+    },
+    "pt_BR": {
+     "t": "Queijos do mundo",
+     "g": "Conheça queijos famosos e veja como as regiões moldam o sabor deles.",
+     "p": [
+      "O Parmigiano Reggiano do norte da Itália é curado por muitos meses, e o Roquefort amadurece em cavernas naturais no sul da França.",
+      "O Manchego espanhol é feito com leite de ovelhas de La Mancha, e o Gruyère suíço com leite de vacas em pastos de montanha.",
+      "Os selos de origem protegida garantem que um queijo vem da sua região e segue o método tradicional."
+     ],
+     "q": "Qual é seu queijo favorito, e de onde ele vem?",
+     "c": "Escolha um queijo e descubra de que leite ele é feito e onde."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spices and their stories",
+     "g": "Learn where key spices come from and how they travelled the world.",
+     "p": [
+      "Black pepper comes from India's Malabar coast, cinnamon is strongly linked to Sri Lanka and cloves to the Moluccas of Indonesia.",
+      "Saffron is the hand-picked stigma of a crocus flower, grown in places like Iran and Spain, which makes it precious.",
+      "Spice trade routes linked Asia, Africa and Europe for centuries, which is why spices appear in so many cuisines."
+     ],
+     "q": "Which spice could you never cook without?",
+     "c": "Smell or taste one spice from your kitchen and find out where it originally comes from."
+    },
+    "de": {
+     "t": "Gewürze und ihre Geschichten",
+     "g": "Lerne, woher wichtige Gewürze stammen und wie sie um die Welt reisten.",
+     "p": [
+      "Schwarzer Pfeffer stammt von Indiens Malabarküste, Zimt ist eng mit Sri Lanka verbunden, Nelken mit den Molukken.",
+      "Safran sind die handgepflückten Narben einer Krokusblüte, angebaut etwa im Iran und in Spanien, daher so wertvoll.",
+      "Gewürzhandelswege verbanden jahrhundertelang Asien, Afrika und Europa, deshalb finden sich Gewürze in so vielen Küchen."
+     ],
+     "q": "Ohne welches Gewürz könntest du nie kochen?",
+     "c": "Rieche oder schmecke ein Gewürz aus deiner Küche und finde heraus, woher es ursprünglich kommt."
+    },
+    "es": {
+     "t": "Las especias y sus historias",
+     "g": "Aprende de dónde vienen las especias clave y cómo viajaron por el mundo.",
+     "p": [
+      "La pimienta negra viene de la costa de Malabar en la India, la canela está ligada a Sri Lanka y el clavo a las Molucas.",
+      "El azafrán son los estigmas de una flor de azafrán recogidos a mano, cultivada en lugares como Irán y España: por eso es tan valioso.",
+      "Las rutas de las especias unieron Asia, África y Europa durante siglos, por eso aparecen en tantas cocinas."
+     ],
+     "q": "¿Sin qué especia no podrías cocinar nunca?",
+     "c": "Huele o prueba una especia de tu cocina y averigua de dónde viene originalmente."
+    },
+    "fr": {
+     "t": "Les épices et leurs histoires",
+     "g": "Apprends d'où viennent les grandes épices et comment elles ont voyagé.",
+     "p": [
+      "Le poivre noir vient de la côte de Malabar en Inde, la cannelle est liée au Sri Lanka et le clou de girofle aux Moluques.",
+      "Le safran, ce sont les stigmates d'une fleur de crocus cueillis à la main, en Iran ou en Espagne par exemple : d'où sa valeur.",
+      "Les routes des épices ont relié l'Asie, l'Afrique et l'Europe pendant des siècles, d'où leur présence dans tant de cuisines."
+     ],
+     "q": "Sans quelle épice ne pourrais-tu jamais cuisiner ?",
+     "c": "Sens ou goûte une épice de ta cuisine et découvre d'où elle vient à l'origine."
+    },
+    "it": {
+     "t": "Le spezie e le loro storie",
+     "g": "Scopri da dove vengono le spezie principali e come hanno viaggiato nel mondo.",
+     "p": [
+      "Il pepe nero viene dalla costa del Malabar in India, la cannella è legata allo Sri Lanka e i chiodi di garofano alle Molucche.",
+      "Lo zafferano sono gli stimmi di un fiore di croco raccolti a mano, coltivato per esempio in Iran e Spagna: per questo è prezioso.",
+      "Le vie delle spezie hanno unito Asia, Africa ed Europa per secoli, ecco perché le spezie sono in tante cucine."
+     ],
+     "q": "Senza quale spezia non potresti mai cucinare?",
+     "c": "Annusa o assaggia una spezia della tua cucina e scopri da dove viene in origine."
+    },
+    "pt": {
+     "t": "As especiarias e as suas histórias",
+     "g": "Aprende de onde vêm as principais especiarias e como viajaram pelo mundo.",
+     "p": [
+      "A pimenta-preta vem da costa do Malabar na Índia, a canela está ligada ao Sri Lanka e o cravinho às Molucas.",
+      "O açafrão são os estigmas de uma flor de croco apanhados à mão, cultivada por exemplo no Irão e em Espanha: daí o seu valor.",
+      "As rotas das especiarias ligaram a Ásia, a África e a Europa durante séculos, por isso aparecem em tantas cozinhas."
+     ],
+     "q": "Sem que especiaria nunca conseguirias cozinhar?",
+     "c": "Cheira ou prova uma especiaria da tua cozinha e descobre de onde vem originalmente."
+    },
+    "pt_BR": {
+     "t": "As especiarias e suas histórias",
+     "g": "Aprenda de onde vêm as principais especiarias e como elas viajaram pelo mundo.",
+     "p": [
+      "A pimenta-do-reino vem da costa do Malabar na Índia, a canela está ligada ao Sri Lanka e o cravo às Molucas.",
+      "O açafrão verdadeiro são os estigmas de uma flor colhidos à mão, cultivada por exemplo no Irã e na Espanha: por isso é tão valioso.",
+      "As rotas das especiarias ligaram Ásia, África e Europa por séculos, por isso elas aparecem em tantas cozinhas."
+     ],
+     "q": "Sem qual tempero você nunca conseguiria cozinhar?",
+     "c": "Cheire ou prove um tempero da sua cozinha e descubra de onde ele vem originalmente."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sweet treats and pastries",
+     "g": "Discover pastéis de nata, baklava, churros and other famous sweets.",
+     "p": [
+      "Pastéis de nata are Portuguese custard tarts with flaky pastry, famously linked to the Belém district of Lisbon.",
+      "Baklava layers thin filo pastry with chopped nuts and syrup or honey, loved from Turkey to the Balkans and the Levant.",
+      "In Spain churros are often dipped in thick hot chocolate, a favourite for breakfast or an afternoon treat."
+     ],
+     "q": "Which sweet from another country would you travel for?",
+     "c": "Find one traditional sweet from a country you have never visited and learn its main ingredients."
+    },
+    "de": {
+     "t": "Süßes und Gebäck",
+     "g": "Entdecke Pastéis de Nata, Baklava, Churros und andere berühmte Süßigkeiten.",
+     "p": [
+      "Pastéis de Nata sind portugiesische Puddingtörtchen aus Blätterteig, berühmt verbunden mit Lissabons Stadtteil Belém.",
+      "Baklava schichtet dünnen Filoteig mit gehackten Nüssen und Sirup oder Honig, beliebt von der Türkei bis zum Balkan und zur Levante.",
+      "In Spanien tunkt man Churros oft in dicke heiße Schokolade, beliebt zum Frühstück oder am Nachmittag."
+     ],
+     "q": "Für welche Süßigkeit aus einem anderen Land würdest du verreisen?",
+     "c": "Finde eine traditionelle Süßspeise aus einem Land, in dem du nie warst, und lerne ihre Hauptzutaten."
+    },
+    "es": {
+     "t": "Dulces y pasteles",
+     "g": "Descubre los pastéis de nata, la baklava, los churros y otros dulces famosos.",
+     "p": [
+      "Los pastéis de nata son pastelitos portugueses de crema y hojaldre, muy ligados al barrio de Belém, en Lisboa.",
+      "La baklava alterna finas capas de masa filo con frutos secos picados y almíbar o miel, adorada de Turquía a los Balcanes y el Levante.",
+      "En España los churros se mojan a menudo en chocolate caliente espeso, un favorito para desayunar o merendar."
+     ],
+     "q": "¿Por qué dulce de otro país harías un viaje?",
+     "c": "Busca un dulce tradicional de un país que nunca hayas visitado y aprende sus ingredientes principales."
+    },
+    "fr": {
+     "t": "Douceurs et pâtisseries",
+     "g": "Découvre les pastéis de nata, le baklava, les churros et d'autres douceurs célèbres.",
+     "p": [
+      "Les pastéis de nata sont des flans portugais en pâte feuilletée, célèbres pour leur lien avec le quartier de Belém à Lisbonne.",
+      "Le baklava superpose de fines feuilles de pâte filo, des noix hachées et du sirop ou du miel, adoré de la Turquie aux Balkans et au Levant.",
+      "En Espagne, on trempe souvent les churros dans un chocolat chaud épais, au petit-déjeuner ou au goûter."
+     ],
+     "q": "Pour quelle douceur d'un autre pays ferais-tu le voyage ?",
+     "c": "Trouve une douceur traditionnelle d'un pays où tu n'es jamais allé et apprends ses ingrédients principaux."
+    },
+    "it": {
+     "t": "Dolci e pasticcini",
+     "g": "Scopri i pastéis de nata, il baklava, i churros e altri dolci famosi.",
+     "p": [
+      "I pastéis de nata sono tortine portoghesi di crema e sfoglia, legate al quartiere di Belém a Lisbona.",
+      "Il baklava alterna sottili strati di pasta fillo, frutta secca tritata e sciroppo o miele, amato dalla Turchia ai Balcani e al Levante.",
+      "In Spagna i churros si inzuppano spesso in una densa cioccolata calda, a colazione o per merenda."
+     ],
+     "q": "Per quale dolce di un altro paese faresti un viaggio?",
+     "c": "Trova un dolce tradizionale di un paese che non hai mai visitato e scopri i suoi ingredienti principali."
+    },
+    "pt": {
+     "t": "Doces e pastelaria",
+     "g": "Descobre os pastéis de nata, a baklava, os churros e outros doces famosos.",
+     "p": [
+      "Os pastéis de nata são pastéis portugueses de massa folhada e creme, famosos pela ligação a Belém, em Lisboa.",
+      "A baklava alterna finas camadas de massa filo com frutos secos picados e calda ou mel, adorada da Turquia aos Balcãs e ao Levante.",
+      "Em Espanha os churros molham-se muitas vezes em chocolate quente espesso, ao pequeno-almoço ou ao lanche."
+     ],
+     "q": "Por que doce de outro país farias uma viagem?",
+     "c": "Encontra um doce tradicional de um país onde nunca foste e aprende os seus ingredientes principais."
+    },
+    "pt_BR": {
+     "t": "Doces e confeitaria",
+     "g": "Descubra os pastéis de nata, a baklava, os churros e outros doces famosos.",
+     "p": [
+      "Os pastéis de nata são docinhos portugueses de massa folhada e creme, famosos pela ligação com Belém, em Lisboa.",
+      "A baklava intercala finas camadas de massa filo com castanhas picadas e calda ou mel, amada da Turquia aos Bálcãs e ao Levante.",
+      "Na Espanha os churros costumam ser molhados em chocolate quente bem grosso, no café da manhã ou no lanche."
+     ],
+     "q": "Por qual doce de outro país você faria uma viagem?",
+     "c": "Encontre um doce tradicional de um país onde você nunca foi e aprenda os ingredientes principais."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fruit you only find locally",
+     "g": "Discover tropical and regional fruits worth seeking out on your travels.",
+     "p": [
+      "Southeast Asia offers mangosteen, rambutan and the famously strong-smelling durian, loved by many locals.",
+      "Brazil has jabuticaba, which grows right on the tree trunk, and the Andes have creamy cherimoya.",
+      "Ask vendors how to open and eat an unknown fruit, and whether it is ripe today: they love to show you."
+     ],
+     "q": "What is the most unusual fruit you have ever tasted?",
+     "c": "Find one fruit that grows only in a certain region and learn what it tastes like."
+    },
+    "de": {
+     "t": "Obst, das es nur vor Ort gibt",
+     "g": "Entdecke tropische und regionale Früchte, die du auf Reisen suchen solltest.",
+     "p": [
+      "Südostasien bietet Mangostan, Rambutan und die berühmt intensiv riechende Durian, die viele Einheimische lieben.",
+      "Brasilien hat die Jabuticaba, die direkt am Stamm wächst, und die Anden die cremige Cherimoya.",
+      "Frag Händler, wie man eine unbekannte Frucht öffnet und isst und ob sie heute reif ist: Sie zeigen es gern."
+     ],
+     "q": "Was ist die ungewöhnlichste Frucht, die du je probiert hast?",
+     "c": "Finde eine Frucht, die nur in einer bestimmten Region wächst, und lies nach, wie sie schmeckt."
+    },
+    "es": {
+     "t": "Frutas que solo encuentras allí",
+     "g": "Descubre frutas tropicales y regionales que merece la pena buscar en tus viajes.",
+     "p": [
+      "El sudeste asiático ofrece mangostán, rambután y el durián, famoso por su fuerte olor y adorado por muchos locales.",
+      "Brasil tiene la jabuticaba, que crece pegada al tronco del árbol, y los Andes la cremosa chirimoya.",
+      "Pregunta a los vendedores cómo abrir y comer una fruta desconocida y si está madura hoy: les encanta enseñarlo."
+     ],
+     "q": "¿Cuál es la fruta más curiosa que has probado?",
+     "c": "Busca una fruta que solo crezca en cierta región y averigua a qué sabe."
+    },
+    "fr": {
+     "t": "Les fruits qu'on ne trouve que sur place",
+     "g": "Découvre des fruits tropicaux et régionaux qui valent le détour en voyage.",
+     "p": [
+      "L'Asie du Sud-Est offre le mangoustan, le ramboutan et le durian, à l'odeur célèbre, adoré de beaucoup d'habitants.",
+      "Le Brésil a la jabuticaba, qui pousse directement sur le tronc, et les Andes la crémeuse chérimole.",
+      "Demande aux marchands comment ouvrir et manger un fruit inconnu et s'il est mûr aujourd'hui : ils adorent montrer."
+     ],
+     "q": "Quel est le fruit le plus étonnant que tu aies goûté ?",
+     "c": "Trouve un fruit qui ne pousse que dans une région précise et découvre son goût."
+    },
+    "it": {
+     "t": "Frutti che trovi solo sul posto",
+     "g": "Scopri frutti tropicali e regionali che vale la pena cercare in viaggio.",
+     "p": [
+      "Il Sud-est asiatico offre mangostano, rambutan e il durian, famoso per l'odore intenso e amato da tanti locali.",
+      "Il Brasile ha la jabuticaba, che cresce direttamente sul tronco, e le Ande la cremosa cherimoya.",
+      "Chiedi ai venditori come aprire e mangiare un frutto sconosciuto e se oggi è maturo: adorano mostrartelo."
+     ],
+     "q": "Qual è il frutto più insolito che tu abbia mai assaggiato?",
+     "c": "Trova un frutto che cresce solo in una certa regione e scopri che sapore ha."
+    },
+    "pt": {
+     "t": "Frutas que só encontras no local",
+     "g": "Descobre frutas tropicais e regionais que vale a pena procurar em viagem.",
+     "p": [
+      "O Sudeste Asiático oferece mangostão, rambutão e o durião, famoso pelo cheiro forte e adorado por muitos locais.",
+      "O Brasil tem a jabuticaba, que cresce agarrada ao tronco da árvore, e os Andes a cremosa anona.",
+      "Pergunta aos vendedores como abrir e comer uma fruta desconhecida e se está madura hoje: adoram mostrar."
+     ],
+     "q": "Qual foi a fruta mais invulgar que já provaste?",
+     "c": "Encontra uma fruta que só cresce numa certa região e descobre a que sabe."
+    },
+    "pt_BR": {
+     "t": "Frutas que só existem no lugar",
+     "g": "Descubra frutas tropicais e regionais que valem a busca nas viagens.",
+     "p": [
+      "O Sudeste Asiático oferece mangostão, rambutã e o durian, famoso pelo cheiro forte e amado por muitos locais.",
+      "O Brasil tem a jabuticaba, que nasce grudada no tronco da árvore, e os Andes a cremosa cherimoia.",
+      "Pergunte aos vendedores como abrir e comer uma fruta desconhecida e se ela está madura hoje: eles adoram mostrar."
+     ],
+     "q": "Qual foi a fruta mais diferente que você já provou?",
+     "c": "Encontre uma fruta que só cresce em certa região e descubra qual é o gosto dela."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fresh juices and local drinks",
+     "g": "Explore refreshing local drinks from agua fresca to lassi and caldo de cana.",
+     "p": [
+      "Mexican aguas frescas blend fruit, flowers or seeds with water, like hibiscus jamaica or rice-based horchata.",
+      "Indian lassi is a cool yoghurt drink, sweet, salty or with mango, perfect with spicy food.",
+      "In Brazil caldo de cana is sugarcane juice pressed fresh at street stalls, often with a squeeze of lime."
+     ],
+     "q": "Which drink do you always order when you visit somewhere new?",
+     "c": "Make or look up a simple local drink from another country and list its ingredients."
+    },
+    "de": {
+     "t": "Frische Säfte und lokale Getränke",
+     "g": "Entdecke erfrischende lokale Getränke von Agua Fresca bis Lassi und Caldo de Cana.",
+     "p": [
+      "Mexikanische Aguas Frescas mischen Obst, Blüten oder Samen mit Wasser, etwa Hibiskus-Jamaica oder Horchata aus Reis.",
+      "Indischer Lassi ist ein kühles Joghurtgetränk, süß, salzig oder mit Mango, perfekt zu scharfem Essen.",
+      "In Brasilien wird Caldo de Cana, Zuckerrohrsaft, an Straßenständen frisch gepresst, oft mit etwas Limette."
+     ],
+     "q": "Welches Getränk bestellst du immer, wenn du irgendwo neu bist?",
+     "c": "Mach oder recherchiere ein einfaches lokales Getränk aus einem anderen Land und notiere die Zutaten."
+    },
+    "es": {
+     "t": "Zumos frescos y bebidas locales",
+     "g": "Explora bebidas locales refrescantes, del agua fresca al lassi y el caldo de cana.",
+     "p": [
+      "Las aguas frescas mexicanas mezclan fruta, flores o semillas con agua, como la de jamaica o la horchata de arroz.",
+      "El lassi indio es una bebida fría de yogur, dulce, salada o de mango, perfecta con comida picante.",
+      "En Brasil el caldo de cana es jugo de caña de azúcar exprimido al momento en puestos callejeros, a menudo con lima."
+     ],
+     "q": "¿Qué bebida pides siempre cuando visitas un sitio nuevo?",
+     "c": "Prepara o busca una bebida local sencilla de otro país y apunta sus ingredientes."
+    },
+    "fr": {
+     "t": "Jus frais et boissons locales",
+     "g": "Explore des boissons locales rafraîchissantes, de l'agua fresca au lassi et au caldo de cana.",
+     "p": [
+      "Les aguas frescas mexicaines mélangent fruits, fleurs ou graines avec de l'eau, comme l'hibiscus jamaica ou l'horchata au riz.",
+      "Le lassi indien est une boisson fraîche au yaourt, sucrée, salée ou à la mangue, parfaite avec les plats épicés.",
+      "Au Brésil, le caldo de cana est un jus de canne à sucre pressé minute dans la rue, souvent avec un trait de citron vert."
+     ],
+     "q": "Quelle boisson commandes-tu toujours quand tu découvres un nouvel endroit ?",
+     "c": "Prépare ou cherche une boisson locale simple d'un autre pays et note ses ingrédients."
+    },
+    "it": {
+     "t": "Succhi freschi e bevande locali",
+     "g": "Esplora bevande locali rinfrescanti, dall'agua fresca al lassi e al caldo de cana.",
+     "p": [
+      "Le aguas frescas messicane uniscono frutta, fiori o semi con acqua, come l'ibisco jamaica o l'horchata di riso.",
+      "Il lassi indiano è una bevanda fresca allo yogurt, dolce, salata o al mango, perfetta con il cibo piccante.",
+      "In Brasile il caldo de cana è succo di canna da zucchero spremuto al momento nei chioschi, spesso con un po' di lime."
+     ],
+     "q": "Quale bevanda ordini sempre quando visiti un posto nuovo?",
+     "c": "Prepara o cerca una semplice bevanda locale di un altro paese e annota gli ingredienti."
+    },
+    "pt": {
+     "t": "Sumos frescos e bebidas locais",
+     "g": "Explora bebidas locais refrescantes, da agua fresca ao lassi e ao caldo de cana.",
+     "p": [
+      "As aguas frescas mexicanas misturam fruta, flores ou sementes com água, como a de hibisco jamaica ou a horchata de arroz.",
+      "O lassi indiano é uma bebida fresca de iogurte, doce, salgada ou de manga, perfeita com comida picante.",
+      "No Brasil o caldo de cana é sumo de cana-de-açúcar espremido na hora em bancas de rua, muitas vezes com lima."
+     ],
+     "q": "Que bebida pedes sempre quando visitas um sítio novo?",
+     "c": "Faz ou pesquisa uma bebida local simples de outro país e anota os ingredientes."
+    },
+    "pt_BR": {
+     "t": "Sucos frescos e bebidas locais",
+     "g": "Explore bebidas locais refrescantes, da agua fresca ao lassi e ao caldo de cana.",
+     "p": [
+      "As aguas frescas mexicanas misturam fruta, flores ou sementes com água, como a de hibisco jamaica ou a horchata de arroz.",
+      "O lassi indiano é uma bebida gelada de iogurte, doce, salgada ou de manga, perfeita com comida apimentada.",
+      "No Brasil o caldo de cana é moído na hora em barracas de rua, muitas vezes com um toque de limão."
+     ],
+     "q": "Qual bebida você sempre pede quando visita um lugar novo?",
+     "c": "Faça ou pesquise uma bebida local simples de outro país e anote os ingredientes."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Picnic culture",
+     "g": "Learn how to buy local ingredients and eat outdoors the local way.",
+     "p": [
+      "In Japan friends gather under cherry blossoms for hanami picnics, and in Paris people picnic along the Seine.",
+      "Build a picnic from a market: fresh bread, a local cheese, seasonal fruit and something sweet from a bakery.",
+      "Check local rules for parks, bring a cloth and a bag for rubbish, and leave the spot cleaner than you found it."
+     ],
+     "q": "Where would your perfect picnic be, and what would you bring?",
+     "c": "Plan a picnic menu with five local items from a city you would like to visit."
+    },
+    "de": {
+     "t": "Picknickkultur",
+     "g": "Lerne, lokale Zutaten zu kaufen und draußen wie die Einheimischen zu essen.",
+     "p": [
+      "In Japan treffen sich Freunde unter Kirschblüten zum Hanami-Picknick, in Paris picknickt man an der Seine.",
+      "Stell dein Picknick auf dem Markt zusammen: frisches Brot, regionaler Käse, Obst der Saison und etwas Süßes vom Bäcker.",
+      "Prüfe die Regeln im Park, nimm eine Decke und einen Müllbeutel mit und hinterlass den Ort sauberer als vorher."
+     ],
+     "q": "Wo wäre dein perfektes Picknick, und was würdest du mitnehmen?",
+     "c": "Plane ein Picknickmenü mit fünf lokalen Produkten aus einer Stadt, die du besuchen möchtest."
+    },
+    "es": {
+     "t": "La cultura del pícnic",
+     "g": "Aprende a comprar ingredientes locales y a comer al aire libre como la gente del lugar.",
+     "p": [
+      "En Japón los amigos se reúnen bajo los cerezos en flor para el hanami, y en París se hace pícnic junto al Sena.",
+      "Arma un pícnic en el mercado: pan recién hecho, un queso local, fruta de temporada y algo dulce de una panadería.",
+      "Consulta las normas del parque, lleva un mantel y una bolsa para la basura, y deja el sitio más limpio que antes."
+     ],
+     "q": "¿Dónde sería tu pícnic perfecto y qué llevarías?",
+     "c": "Planea un menú de pícnic con cinco productos locales de una ciudad que te gustaría visitar."
+    },
+    "fr": {
+     "t": "La culture du pique-nique",
+     "g": "Apprends à acheter des produits locaux et à manger dehors à la manière des habitants.",
+     "p": [
+      "Au Japon, on pique-nique entre amis sous les cerisiers en fleurs pour le hanami, et à Paris au bord de la Seine.",
+      "Compose ton pique-nique au marché : pain frais, fromage local, fruits de saison et une douceur de la boulangerie.",
+      "Renseigne-toi sur les règles du parc, prends une nappe et un sac pour les déchets, et laisse l'endroit plus propre."
+     ],
+     "q": "Où aurait lieu ton pique-nique idéal, et qu'apporterais-tu ?",
+     "c": "Prépare un menu de pique-nique avec cinq produits locaux d'une ville que tu aimerais visiter."
+    },
+    "it": {
+     "t": "La cultura del picnic",
+     "g": "Impara a comprare ingredienti locali e a mangiare all'aperto come la gente del posto.",
+     "p": [
+      "In Giappone gli amici si ritrovano sotto i ciliegi in fiore per l'hanami, a Parigi si fa picnic lungo la Senna.",
+      "Componi il picnic al mercato: pane fresco, un formaggio locale, frutta di stagione e un dolce dal forno.",
+      "Controlla le regole del parco, porta una tovaglia e un sacchetto per i rifiuti, e lascia il posto più pulito di prima."
+     ],
+     "q": "Dove sarebbe il tuo picnic perfetto, e cosa porteresti?",
+     "c": "Pianifica un menu da picnic con cinque prodotti locali di una città che vorresti visitare."
+    },
+    "pt": {
+     "t": "A cultura do piquenique",
+     "g": "Aprende a comprar ingredientes locais e a comer ao ar livre à maneira local.",
+     "p": [
+      "No Japão os amigos juntam-se sob as cerejeiras em flor para o hanami, e em Paris faz-se piquenique junto ao Sena.",
+      "Monta o piquenique no mercado: pão fresco, um queijo local, fruta da época e um doce de uma pastelaria.",
+      "Confirma as regras do parque, leva uma toalha e um saco para o lixo, e deixa o sítio mais limpo do que o encontraste."
+     ],
+     "q": "Onde seria o teu piquenique perfeito, e o que levarias?",
+     "c": "Planeia um menu de piquenique com cinco produtos locais de uma cidade que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "A cultura do piquenique",
+     "g": "Aprenda a comprar ingredientes locais e a comer ao ar livre do jeito local.",
+     "p": [
+      "No Japão os amigos se reúnem sob as cerejeiras em flor para o hanami, e em Paris se faz piquenique às margens do Sena.",
+      "Monte o piquenique no mercado: pão fresco, um queijo local, fruta da estação e um doce de padaria.",
+      "Confira as regras do parque, leve uma toalha e um saco para o lixo, e deixe o lugar mais limpo do que encontrou."
+     ],
+     "q": "Onde seria seu piquenique perfeito, e o que você levaria?",
+     "c": "Planeje um cardápio de piquenique com cinco produtos locais de uma cidade que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food words to learn",
+     "g": "Learn key words for cooking methods and ingredients in several languages.",
+     "p": [
+      "Grilled is a la plancha or a la parrilla in Spanish, alla griglia in Italian and grillé in French.",
+      "In Japanese yaki means grilled or pan-fried, as in yakitori, and in Thai pad means stir-fried, as in pad thai.",
+      "Learn the words for chicken, beef, pork, fish, vegetables and spicy where you go: they unlock most menus."
+     ],
+     "q": "Which food word in another language do you already know and love?",
+     "c": "Make a mini list of six food words in the language of your next dream destination."
+    },
+    "de": {
+     "t": "Wichtige Essenswörter",
+     "g": "Lerne Schlüsselwörter für Zubereitungen und Zutaten in mehreren Sprachen.",
+     "p": [
+      "Gegrillt heißt auf Spanisch a la plancha oder a la parrilla, auf Italienisch alla griglia und auf Französisch grillé.",
+      "Auf Japanisch bedeutet yaki gegrillt oder gebraten, wie bei Yakitori, auf Thai pad pfannengerührt, wie bei Pad Thai.",
+      "Lerne die Wörter für Huhn, Rind, Schwein, Fisch, Gemüse und scharf am Reiseziel: Damit knackst du fast jede Karte."
+     ],
+     "q": "Welches Essenswort aus einer anderen Sprache kennst und liebst du schon?",
+     "c": "Mach eine Mini-Liste mit sechs Essenswörtern in der Sprache deines nächsten Traumziels."
+    },
+    "es": {
+     "t": "Palabras de comida para aprender",
+     "g": "Aprende palabras clave de técnicas de cocina e ingredientes en varios idiomas.",
+     "p": [
+      "A la plancha se dice alla griglia en italiano y grillé en francés, y en inglés grilled.",
+      "En japonés yaki significa a la parrilla o a la plancha, como en yakitori, y en tailandés pad significa salteado, como en pad thai.",
+      "Aprende las palabras para pollo, ternera, cerdo, pescado, verduras y picante allá donde vayas: abren casi todas las cartas."
+     ],
+     "q": "¿Qué palabra de comida en otro idioma ya conoces y te encanta?",
+     "c": "Haz una minilista de seis palabras de comida en el idioma de tu próximo destino soñado."
+    },
+    "fr": {
+     "t": "Les mots de la cuisine à apprendre",
+     "g": "Apprends des mots clés de cuisson et d'ingrédients dans plusieurs langues.",
+     "p": [
+      "Grillé se dit a la plancha ou a la parrilla en espagnol, alla griglia en italien et grilled en anglais.",
+      "En japonais, yaki veut dire grillé ou poêlé, comme dans yakitori, et en thaï pad veut dire sauté, comme dans pad thaï.",
+      "Apprends les mots poulet, bœuf, porc, poisson, légumes et épicé là où tu vas : ils ouvrent presque tous les menus."
+     ],
+     "q": "Quel mot de cuisine d'une autre langue connais-tu déjà et adores-tu ?",
+     "c": "Fais une mini-liste de six mots culinaires dans la langue de ta prochaine destination de rêve."
+    },
+    "it": {
+     "t": "Parole del cibo da imparare",
+     "g": "Impara parole chiave per tecniche di cottura e ingredienti in varie lingue.",
+     "p": [
+      "Alla griglia si dice a la plancha o a la parrilla in spagnolo, grillé in francese e grilled in inglese.",
+      "In giapponese yaki significa alla griglia o in padella, come in yakitori, e in thailandese pad significa saltato, come in pad thai.",
+      "Impara le parole per pollo, manzo, maiale, pesce, verdure e piccante dove vai: aprono quasi tutti i menu."
+     ],
+     "q": "Quale parola del cibo in un'altra lingua conosci già e ami?",
+     "c": "Fai una mini lista di sei parole del cibo nella lingua della tua prossima meta dei sogni."
+    },
+    "pt": {
+     "t": "Palavras de comida para aprender",
+     "g": "Aprende palavras-chave de formas de cozinhar e ingredientes em várias línguas.",
+     "p": [
+      "Grelhado diz-se a la plancha ou a la parrilla em espanhol, alla griglia em italiano e grillé em francês.",
+      "Em japonês yaki quer dizer grelhado ou frito na chapa, como em yakitori, e em tailandês pad quer dizer salteado, como em pad thai.",
+      "Aprende as palavras para frango, vaca, porco, peixe, legumes e picante onde fores: abrem quase todas as ementas."
+     ],
+     "q": "Que palavra de comida noutra língua já conheces e adoras?",
+     "c": "Faz uma minilista de seis palavras de comida na língua do teu próximo destino de sonho."
+    },
+    "pt_BR": {
+     "t": "Palavras de comida para aprender",
+     "g": "Aprenda palavras-chave de modos de preparo e ingredientes em vários idiomas.",
+     "p": [
+      "Grelhado se diz a la plancha ou a la parrilla em espanhol, alla griglia em italiano e grillé em francês.",
+      "Em japonês yaki quer dizer grelhado ou na chapa, como em yakitori, e em tailandês pad quer dizer salteado, como em pad thai.",
+      "Aprenda as palavras para frango, carne bovina, porco, peixe, legumes e apimentado onde for: abrem quase todo cardápio."
+     ],
+     "q": "Qual palavra de comida em outro idioma você já conhece e adora?",
+     "c": "Faça uma minilista com seis palavras de comida no idioma do seu próximo destino dos sonhos."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping a food diary",
+     "g": "Learn to record the dishes, flavours and places you loved so the memories last.",
+     "p": [
+      "Note the dish's local name, the place, the date and three words for its taste and texture.",
+      "Add a photo, a sketch or the name of the person who served or recommended it, plus the story they told you.",
+      "Reading your diary later helps you cook the dish at home, recommend places and see how your taste grows."
+     ],
+     "q": "Which meal of the last month would deserve the first page of your food diary?",
+     "c": "Start a food diary today with one entry about something you ate recently."
+    },
+    "de": {
+     "t": "Ein Essenstagebuch führen",
+     "g": "Lerne, Gerichte, Aromen und Lieblingsorte festzuhalten, damit die Erinnerungen bleiben.",
+     "p": [
+      "Notiere den lokalen Namen des Gerichts, den Ort, das Datum und drei Wörter zu Geschmack und Textur.",
+      "Ergänze ein Foto, eine Skizze oder den Namen der Person, die es serviert oder empfohlen hat, samt ihrer Geschichte.",
+      "Später hilft dir das Tagebuch, das Gericht nachzukochen, Orte zu empfehlen und zu sehen, wie dein Geschmack wächst."
+     ],
+     "q": "Welches Essen des letzten Monats verdient die erste Seite deines Tagebuchs?",
+     "c": "Beginne heute ein Essenstagebuch mit einem Eintrag über etwas, das du kürzlich gegessen hast."
+    },
+    "es": {
+     "t": "Llevar un diario gastronómico",
+     "g": "Aprende a anotar los platos, sabores y lugares que te encantaron para que el recuerdo dure.",
+     "p": [
+      "Apunta el nombre local del plato, el lugar, la fecha y tres palabras sobre su sabor y textura.",
+      "Añade una foto, un dibujo o el nombre de quien te lo sirvió o recomendó, junto con la historia que te contó.",
+      "Releer el diario te ayuda a cocinar el plato en casa, recomendar sitios y ver cómo crece tu paladar."
+     ],
+     "q": "¿Qué comida del último mes merecería la primera página de tu diario?",
+     "c": "Empieza hoy un diario gastronómico con una entrada sobre algo que hayas comido hace poco."
+    },
+    "fr": {
+     "t": "Tenir un carnet gourmand",
+     "g": "Apprends à noter les plats, saveurs et lieux que tu as aimés pour garder les souvenirs.",
+     "p": [
+      "Note le nom local du plat, le lieu, la date et trois mots pour son goût et sa texture.",
+      "Ajoute une photo, un croquis ou le nom de la personne qui l'a servi ou conseillé, avec l'histoire qu'elle t'a racontée.",
+      "Relire ton carnet t'aide à recuisiner le plat, à recommander des adresses et à voir ton goût évoluer."
+     ],
+     "q": "Quel repas du mois dernier mériterait la première page de ton carnet ?",
+     "c": "Commence aujourd'hui un carnet gourmand avec une entrée sur un plat mangé récemment."
+    },
+    "it": {
+     "t": "Tenere un diario del cibo",
+     "g": "Impara ad annotare piatti, sapori e luoghi che hai amato perché i ricordi restino.",
+     "p": [
+      "Annota il nome locale del piatto, il luogo, la data e tre parole su sapore e consistenza.",
+      "Aggiungi una foto, uno schizzo o il nome di chi te l'ha servito o consigliato, con la storia che ti ha raccontato.",
+      "Rileggere il diario ti aiuta a rifare il piatto a casa, consigliare posti e vedere come cresce il tuo gusto."
+     ],
+     "q": "Quale pasto dell'ultimo mese meriterebbe la prima pagina del tuo diario?",
+     "c": "Inizia oggi un diario del cibo con una voce su qualcosa che hai mangiato di recente."
+    },
+    "pt": {
+     "t": "Manter um diário gastronómico",
+     "g": "Aprende a registar os pratos, sabores e lugares de que gostaste para as memórias durarem.",
+     "p": [
+      "Anota o nome local do prato, o lugar, a data e três palavras sobre o sabor e a textura.",
+      "Junta uma foto, um esboço ou o nome de quem o serviu ou recomendou, com a história que te contou.",
+      "Reler o diário ajuda-te a cozinhar o prato em casa, a recomendar sítios e a ver como o teu gosto cresce."
+     ],
+     "q": "Que refeição do último mês mereceria a primeira página do teu diário?",
+     "c": "Começa hoje um diário gastronómico com uma entrada sobre algo que comeste há pouco."
+    },
+    "pt_BR": {
+     "t": "Manter um diário gastronômico",
+     "g": "Aprenda a registrar pratos, sabores e lugares que você amou para as lembranças durarem.",
+     "p": [
+      "Anote o nome local do prato, o lugar, a data e três palavras sobre sabor e textura.",
+      "Inclua uma foto, um desenho ou o nome de quem serviu ou indicou, com a história que essa pessoa contou.",
+      "Reler o diário ajuda você a fazer o prato em casa, indicar lugares e ver seu paladar crescer."
+     ],
+     "q": "Qual refeição do último mês mereceria a primeira página do seu diário?",
+     "c": "Comece hoje um diário gastronômico com uma anotação sobre algo que você comeu recentemente."
+    }
+   }
+  }
+ ]
+}

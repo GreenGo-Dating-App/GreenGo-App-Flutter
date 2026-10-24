@@ -1,0 +1,835 @@
+{
+ "topic": "packing",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Money, cards and a backup",
+     "g": "Carry more than one way to pay and store each one in a different place.",
+     "p": [
+      "Take at least two cards, ideally on different networks, plus a little local cash for small costs.",
+      "Split them up: one card in your wallet, a backup card and some cash hidden in another bag.",
+      "Tell your bank about your trip if it asks for that, and save its emergency number offline."
+     ],
+     "q": "How do you usually pay when you travel: card, phone or cash?",
+     "c": "Choose today where your backup card and emergency cash will live on your next trip."
+    },
+    "de": {
+     "t": "Geld, Karten und ein Plan B",
+     "g": "Nimm mehr als eine Zahlungsmöglichkeit mit und verstaue jede an einem anderen Ort.",
+     "p": [
+      "Nimm mindestens zwei Karten mit, am besten verschiedener Anbieter, plus etwas Bargeld vor Ort.",
+      "Teile sie auf: eine Karte im Geldbeutel, eine Ersatzkarte und etwas Bargeld in einer anderen Tasche.",
+      "Informiere deine Bank über die Reise, falls sie das wünscht, und speichere ihre Notrufnummer offline."
+     ],
+     "q": "Wie bezahlst du auf Reisen meistens: Karte, Handy oder bar?",
+     "c": "Leg heute fest, wo Ersatzkarte und Notgeld auf deiner nächsten Reise liegen."
+    },
+    "es": {
+     "t": "Dinero, tarjetas y un plan B",
+     "g": "Lleva más de una forma de pago y guarda cada una en un lugar distinto.",
+     "p": [
+      "Lleva al menos dos tarjetas, mejor de redes distintas, y algo de efectivo local para gastos pequeños.",
+      "Repártelas: una tarjeta en la cartera, otra de reserva y algo de efectivo escondido en otra bolsa.",
+      "Avisa a tu banco del viaje si lo pide y guarda su número de emergencias sin conexión."
+     ],
+     "q": "¿Cómo sueles pagar cuando viajas: tarjeta, móvil o efectivo?",
+     "c": "Decide hoy dónde irán tu tarjeta de reserva y tu efectivo de emergencia en el próximo viaje."
+    },
+    "fr": {
+     "t": "Argent, cartes et plan B",
+     "g": "Emporte plusieurs moyens de paiement et range chacun à un endroit différent.",
+     "p": [
+      "Prends au moins deux cartes, idéalement de réseaux différents, et un peu d'espèces locales.",
+      "Répartis-les : une carte dans le portefeuille, une de secours et quelques billets dans un autre sac.",
+      "Préviens ta banque de ton voyage si elle le demande et note son numéro d'urgence hors ligne."
+     ],
+     "q": "Comment paies-tu le plus souvent en voyage : carte, téléphone ou espèces ?",
+     "c": "Décide aujourd'hui où vivront ta carte de secours et tes espèces d'urgence au prochain voyage."
+    },
+    "it": {
+     "t": "Soldi, carte e un piano B",
+     "g": "Porta più di un modo per pagare e conserva ciascuno in un posto diverso.",
+     "p": [
+      "Porta almeno due carte, meglio di circuiti diversi, e un po' di contanti locali per le piccole spese.",
+      "Dividile: una carta nel portafoglio, una di riserva e qualche contante nascosto in un'altra borsa.",
+      "Avvisa la banca del viaggio se lo richiede e salva offline il suo numero per le emergenze."
+     ],
+     "q": "Di solito come paghi in viaggio: carta, telefono o contanti?",
+     "c": "Decidi oggi dove staranno carta di riserva e contanti d'emergenza nel prossimo viaggio."
+    },
+    "pt": {
+     "t": "Dinheiro, cartões e um plano B",
+     "g": "Leva mais do que uma forma de pagamento e guarda cada uma num sítio diferente.",
+     "p": [
+      "Leva pelo menos dois cartões, de preferência de redes diferentes, e algum dinheiro local.",
+      "Divide-os: um cartão na carteira, outro de reserva e algum dinheiro escondido noutra mala.",
+      "Avisa o banco da viagem se ele o pedir e guarda o número de emergência offline."
+     ],
+     "q": "Como costumas pagar quando viajas: cartão, telemóvel ou dinheiro?",
+     "c": "Decide hoje onde vão ficar o cartão de reserva e o dinheiro de emergência na próxima viagem."
+    },
+    "pt_BR": {
+     "t": "Dinheiro, cartões e um plano B",
+     "g": "Leve mais de uma forma de pagamento e guarde cada uma num lugar diferente.",
+     "p": [
+      "Leve pelo menos dois cartões, de preferência de bandeiras diferentes, e um pouco de dinheiro local.",
+      "Separe: um cartão na carteira, outro de reserva e algum dinheiro escondido em outra bolsa.",
+      "Avise o banco sobre a viagem se ele pedir e salve o número de emergência offline."
+     ],
+     "q": "Como você costuma pagar quando viaja: cartão, celular ou dinheiro?",
+     "c": "Decida hoje onde vão ficar o cartão reserva e o dinheiro de emergência na próxima viagem."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The personal item bag",
+     "g": "Learn what belongs in the small bag you keep at your feet on a plane, train or bus.",
+     "p": [
+      "This bag holds what you need during the journey and what you cannot afford to lose.",
+      "Think documents, wallet, phone, charger, medicines, a snack, water bottle and a warm layer.",
+      "If your big bag goes missing, your personal item should get you through the first day."
+     ],
+     "q": "What do you always want within reach during a long journey?",
+     "c": "List the items that would let you survive one day if your main bag disappeared."
+    },
+    "de": {
+     "t": "Die kleine Tasche am Platz",
+     "g": "Erfahre, was in die kleine Tasche gehört, die im Flugzeug, Zug oder Bus zu deinen Füßen steht.",
+     "p": [
+      "Diese Tasche enthält, was du unterwegs brauchst und was du auf keinen Fall verlieren willst.",
+      "Denk an Dokumente, Geldbeutel, Handy, Ladegerät, Medikamente, Snack, Flasche und eine warme Schicht.",
+      "Geht dein großer Koffer verloren, sollte dich die kleine Tasche durch den ersten Tag bringen."
+     ],
+     "q": "Was willst du auf einer langen Fahrt immer griffbereit haben?",
+     "c": "Liste die Dinge auf, mit denen du einen Tag ohne deinen großen Koffer auskommen würdest."
+    },
+    "es": {
+     "t": "El bolso personal",
+     "g": "Aprende qué va en el bolso pequeño que llevas a tus pies en el avión, tren o autobús.",
+     "p": [
+      "Este bolso guarda lo que necesitas durante el trayecto y lo que no te puedes permitir perder.",
+      "Piensa en documentos, cartera, móvil, cargador, medicinas, un tentempié, agua y una prenda de abrigo.",
+      "Si tu maleta grande se pierde, el bolso personal debería salvarte el primer día."
+     ],
+     "q": "¿Qué quieres tener siempre a mano en un trayecto largo?",
+     "c": "Haz la lista de lo que te permitiría pasar un día entero si tu maleta principal desapareciera."
+    },
+    "fr": {
+     "t": "Le sac personnel",
+     "g": "Découvre ce qui va dans le petit sac posé à tes pieds en avion, en train ou en bus.",
+     "p": [
+      "Ce sac contient ce dont tu as besoin pendant le trajet et ce que tu ne peux pas te permettre de perdre.",
+      "Pense papiers, portefeuille, téléphone, chargeur, médicaments, en-cas, gourde et une couche chaude.",
+      "Si ton gros bagage se perd, ton sac personnel doit te permettre de tenir le premier jour."
+     ],
+     "q": "Qu'aimes-tu toujours avoir à portée de main pendant un long trajet ?",
+     "c": "Liste ce qui te permettrait de tenir une journée si ton bagage principal disparaissait."
+    },
+    "it": {
+     "t": "La borsa personale",
+     "g": "Scopri cosa va nella borsa piccola che tieni ai piedi in aereo, treno o autobus.",
+     "p": [
+      "Questa borsa contiene ciò che ti serve durante il viaggio e ciò che non puoi permetterti di perdere.",
+      "Pensa a documenti, portafoglio, telefono, caricatore, medicine, uno snack, borraccia e uno strato caldo.",
+      "Se la valigia grande si perde, la borsa personale dovrebbe farti superare il primo giorno."
+     ],
+     "q": "Cosa vuoi sempre a portata di mano in un viaggio lungo?",
+     "c": "Elenca le cose che ti farebbero passare un giorno intero se la valigia principale sparisse."
+    },
+    "pt": {
+     "t": "O saco pessoal",
+     "g": "Aprende o que vai no saco pequeno que levas aos pés no avião, comboio ou autocarro.",
+     "p": [
+      "Este saco guarda o que precisas durante a viagem e o que não te podes dar ao luxo de perder.",
+      "Pensa em documentos, carteira, telemóvel, carregador, medicamentos, um lanche, água e um agasalho.",
+      "Se a mala grande se perder, o saco pessoal deve aguentar-te o primeiro dia."
+     ],
+     "q": "O que queres ter sempre à mão numa viagem longa?",
+     "c": "Faz a lista do que te permitiria passar um dia inteiro se a mala principal desaparecesse."
+    },
+    "pt_BR": {
+     "t": "A bolsa pessoal",
+     "g": "Aprenda o que vai na bolsa pequena que fica aos seus pés no avião, trem ou ônibus.",
+     "p": [
+      "Essa bolsa guarda o que você precisa durante o trajeto e o que não pode perder de jeito nenhum.",
+      "Pense em documentos, carteira, celular, carregador, remédios, um lanche, água e um agasalho.",
+      "Se a mala grande se extraviar, a bolsa pessoal deve segurar o seu primeiro dia."
+     ],
+     "q": "O que você quer ter sempre à mão numa viagem longa?",
+     "c": "Faça a lista do que deixaria você passar um dia inteiro se a mala principal sumisse."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rolling versus folding",
+     "g": "Know when rolling clothes saves space and when folding keeps them neater.",
+     "p": [
+      "Rolling works well for T-shirts, knits, leggings and casual trousers: tight rolls fill gaps nicely.",
+      "Folding suits stiffer items like shirts, blazers and smart trousers, which crease less when laid flat.",
+      "Many travellers mix both: folded pieces in a flat layer, rolled pieces packed around them."
+     ],
+     "q": "Are you team rolling or team folding?",
+     "c": "Roll one T-shirt and fold another, then compare how much space and how many creases each gives."
+    },
+    "de": {
+     "t": "Rollen oder falten?",
+     "g": "Lerne, wann Rollen Platz spart und wann Falten die Kleidung ordentlicher hält.",
+     "p": [
+      "Rollen eignet sich für T-Shirts, Strick, Leggings und lässige Hosen: Feste Rollen füllen Lücken gut.",
+      "Falten passt zu festeren Teilen wie Hemden, Sakkos und Anzughosen, die flach weniger knittern.",
+      "Viele kombinieren beides: gefaltete Teile als flache Schicht, gerollte Teile drumherum."
+     ],
+     "q": "Bist du Team Rollen oder Team Falten?",
+     "c": "Roll ein T-Shirt, falte ein zweites und vergleiche Platzbedarf und Falten."
+    },
+    "es": {
+     "t": "Enrollar o doblar",
+     "g": "Descubre cuándo enrollar la ropa ahorra espacio y cuándo doblarla la mantiene más pulcra.",
+     "p": [
+      "Enrollar va bien con camisetas, punto, mallas y pantalones informales: los rollos rellenan huecos.",
+      "Doblar conviene a prendas rígidas como camisas, americanas y pantalones de vestir, que se arrugan menos.",
+      "Muchos combinan ambos: lo doblado en una capa plana y lo enrollado alrededor."
+     ],
+     "q": "¿Eres del equipo enrollar o del equipo doblar?",
+     "c": "Enrolla una camiseta y dobla otra, y compara el espacio y las arrugas de cada una."
+    },
+    "fr": {
+     "t": "Rouler ou plier ?",
+     "g": "Sache quand rouler les vêtements fait gagner de la place et quand les plier les garde nets.",
+     "p": [
+      "Rouler marche bien pour t-shirts, mailles, leggings et pantalons décontractés : les rouleaux comblent les vides.",
+      "Plier convient aux pièces rigides comme chemises, vestes et pantalons habillés, qui froissent moins à plat.",
+      "Beaucoup combinent les deux : pièces pliées en couche plate, pièces roulées tout autour."
+     ],
+     "q": "Tu es plutôt team rouler ou team plier ?",
+     "c": "Roule un t-shirt, plie-en un autre, puis compare la place prise et les plis."
+    },
+    "it": {
+     "t": "Arrotolare o piegare?",
+     "g": "Scopri quando arrotolare i vestiti fa risparmiare spazio e quando piegarli li tiene più in ordine.",
+     "p": [
+      "Arrotolare funziona con magliette, maglieria, leggings e pantaloni casual: i rotoli riempiono i vuoti.",
+      "Piegare va meglio per capi rigidi come camicie, giacche e pantaloni eleganti, che stesi si stropicciano meno.",
+      "Molti fanno entrambe le cose: capi piegati in uno strato piatto e capi arrotolati intorno."
+     ],
+     "q": "Sei del team arrotolare o del team piegare?",
+     "c": "Arrotola una maglietta e piegane un'altra, poi confronta spazio occupato e pieghe."
+    },
+    "pt": {
+     "t": "Enrolar ou dobrar?",
+     "g": "Percebe quando enrolar a roupa poupa espaço e quando dobrá-la a mantém mais arrumada.",
+     "p": [
+      "Enrolar resulta bem com t-shirts, malhas, leggings e calças informais: os rolos enchem os espaços.",
+      "Dobrar é melhor para peças rígidas como camisas, casacos e calças de vincos, que amarrotam menos.",
+      "Muitos combinam os dois: peças dobradas numa camada plana e peças enroladas à volta."
+     ],
+     "q": "És da equipa enrolar ou da equipa dobrar?",
+     "c": "Enrola uma t-shirt e dobra outra, e compara o espaço ocupado e os vincos."
+    },
+    "pt_BR": {
+     "t": "Enrolar ou dobrar?",
+     "g": "Entenda quando enrolar a roupa economiza espaço e quando dobrar deixa tudo mais arrumado.",
+     "p": [
+      "Enrolar funciona bem com camisetas, malhas, leggings e calças casuais: os rolinhos preenchem os vãos.",
+      "Dobrar é melhor para peças mais firmes como camisas, blazers e calças sociais, que amassam menos.",
+      "Muita gente mistura os dois: peças dobradas numa camada plana e enroladas em volta."
+     ],
+     "q": "Você é do time enrolar ou do time dobrar?",
+     "c": "Enrole uma camiseta e dobre outra, depois compare o espaço ocupado e os amassados."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing cubes explained",
+     "g": "See how packing cubes organise a bag, compress clothes and make unpacking easy.",
+     "p": [
+      "Cubes are zipped fabric boxes: one for tops, one for bottoms, one for underwear, and so on.",
+      "They keep things tidy when you dig for one item, and compression cubes squeeze out extra air.",
+      "At a hotel you can drop the cubes straight into a drawer, which makes unpacking take a minute."
+     ],
+     "q": "Have you ever used packing cubes, or a similar way to sort your bag?",
+     "c": "Sort your clothes for a weekend into three piles as if each pile were one cube."
+    },
+    "de": {
+     "t": "Packwürfel erklärt",
+     "g": "Sieh, wie Packwürfel Gepäck ordnen, Kleidung komprimieren und das Auspacken erleichtern.",
+     "p": [
+      "Packwürfel sind Stoffboxen mit Reißverschluss: einer für Oberteile, einer für Hosen, einer für Wäsche.",
+      "Sie halten Ordnung, wenn du etwas suchst, und Kompressionswürfel drücken zusätzlich Luft heraus.",
+      "Im Hotel legst du die Würfel einfach in eine Schublade, so dauert das Auspacken nur eine Minute."
+     ],
+     "q": "Hast du schon Packwürfel benutzt oder dein Gepäck ähnlich sortiert?",
+     "c": "Teile deine Kleidung für ein Wochenende in drei Stapel, als wäre jeder ein Würfel."
+    },
+    "es": {
+     "t": "Los organizadores de equipaje",
+     "g": "Descubre cómo los cubos organizadores ordenan la maleta, comprimen la ropa y facilitan deshacerla.",
+     "p": [
+      "Son cajas de tela con cremallera: una para camisetas, otra para pantalones, otra para ropa interior.",
+      "Mantienen el orden cuando buscas algo, y los de compresión sacan aire extra.",
+      "En el hotel puedes meter los cubos directamente en un cajón y deshacer la maleta en un minuto."
+     ],
+     "q": "¿Has usado alguna vez cubos organizadores o algo parecido?",
+     "c": "Separa la ropa de un fin de semana en tres montones, como si cada uno fuera un cubo."
+    },
+    "fr": {
+     "t": "Les cubes de rangement",
+     "g": "Découvre comment les cubes organisent un sac, compressent les vêtements et simplifient le déballage.",
+     "p": [
+      "Ce sont des pochettes zippées en tissu : une pour les hauts, une pour les bas, une pour les sous-vêtements.",
+      "Ils gardent l'ordre quand tu cherches un objet, et les cubes à compression chassent l'air en plus.",
+      "À l'hôtel, tu poses les cubes dans un tiroir et le déballage prend une minute."
+     ],
+     "q": "As-tu déjà utilisé des cubes de rangement, ou une méthode similaire ?",
+     "c": "Répartis tes vêtements pour un week-end en trois piles, comme si chacune était un cube."
+    },
+    "it": {
+     "t": "I packing cube spiegati",
+     "g": "Scopri come i packing cube organizzano la valigia, comprimono i vestiti e semplificano il disfarla.",
+     "p": [
+      "Sono scatole di tessuto con cerniera: una per le magliette, una per i pantaloni, una per l'intimo.",
+      "Tengono tutto in ordine quando cerchi qualcosa, e quelli a compressione eliminano aria in più.",
+      "In hotel puoi mettere i cube direttamente in un cassetto: disfare la valigia richiede un minuto."
+     ],
+     "q": "Hai mai usato i packing cube o un sistema simile?",
+     "c": "Dividi i vestiti per un weekend in tre pile, come se ognuna fosse un cube."
+    },
+    "pt": {
+     "t": "Os organizadores de mala",
+     "g": "Vê como os cubos organizadores arrumam a mala, comprimem a roupa e facilitam desfazê-la.",
+     "p": [
+      "São caixas de tecido com fecho: uma para camisolas, outra para calças, outra para roupa interior.",
+      "Mantêm tudo arrumado quando procuras algo, e os de compressão tiram ar extra.",
+      "No hotel podes pôr os cubos diretamente numa gaveta e desfazer a mala num minuto."
+     ],
+     "q": "Já usaste cubos organizadores ou algo parecido?",
+     "c": "Separa a roupa de um fim de semana em três montes, como se cada um fosse um cubo."
+    },
+    "pt_BR": {
+     "t": "Os organizadores de mala",
+     "g": "Veja como os organizadores arrumam a mala, comprimem a roupa e facilitam na hora de desfazer.",
+     "p": [
+      "São caixas de tecido com zíper: uma para blusas, outra para calças, outra para roupa íntima.",
+      "Mantêm tudo em ordem quando você procura algo, e os de compressão tiram ar extra.",
+      "No hotel dá para colocar os organizadores direto na gaveta e desfazer a mala em um minuto."
+     ],
+     "q": "Você já usou organizadores de mala ou algo parecido?",
+     "c": "Separe a roupa de um fim de semana em três montes, como se cada um fosse um organizador."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The bundle wrapping method",
+     "g": "Try wrapping clothes around a soft core to reduce creases on longer trips.",
+     "p": [
+      "Make a small soft core, like a pouch of socks and underwear, and place it in the middle.",
+      "Wrap clothes around it one by one, stiff items like shirts first, soft knits last on the outside.",
+      "With no sharp folds, the clothes curve gently and arrive smoother; it takes a little practice."
+     ],
+     "q": "Which of your clothes always come out of the bag the most creased?",
+     "c": "Try a mini bundle with two shirts and a pouch of socks, then unwrap it tomorrow and check."
+    },
+    "de": {
+     "t": "Die Bündel-Methode",
+     "g": "Probiere, Kleidung um einen weichen Kern zu wickeln, damit sie auf längeren Reisen weniger knittert.",
+     "p": [
+      "Bilde einen kleinen weichen Kern, etwa einen Beutel mit Socken und Wäsche, und leg ihn in die Mitte.",
+      "Wickle die Kleidung nacheinander darum, feste Teile wie Hemden zuerst, weiche Strickteile zuletzt.",
+      "Ohne scharfe Knicke liegt die Kleidung in sanften Bögen und kommt glatter an; es braucht etwas Übung."
+     ],
+     "q": "Welche deiner Kleidungsstücke kommen immer am zerknittertsten aus dem Koffer?",
+     "c": "Probier ein Mini-Bündel mit zwei Hemden und einem Sockenbeutel und wickle es morgen aus."
+    },
+    "es": {
+     "t": "El método del paquete",
+     "g": "Prueba a envolver la ropa alrededor de un núcleo blando para reducir arrugas en viajes largos.",
+     "p": [
+      "Haz un núcleo blando, como una bolsita con calcetines y ropa interior, y ponlo en el centro.",
+      "Envuelve las prendas una a una, primero las rígidas como camisas y al final el punto suave por fuera.",
+      "Sin dobleces marcados, la ropa se curva suavemente y llega más lisa; requiere un poco de práctica."
+     ],
+     "q": "¿Qué prendas tuyas salen siempre más arrugadas de la maleta?",
+     "c": "Prueba un mini paquete con dos camisas y una bolsa de calcetines y desenvuélvelo mañana."
+    },
+    "fr": {
+     "t": "La méthode du ballot",
+     "g": "Essaie d'envelopper tes vêtements autour d'un cœur souple pour limiter les plis en long voyage.",
+     "p": [
+      "Forme un petit cœur souple, comme une pochette de chaussettes et sous-vêtements, et place-le au centre.",
+      "Enroule les vêtements un par un autour : d'abord les pièces rigides comme les chemises, la maille à la fin.",
+      "Sans plis marqués, les vêtements s'arrondissent et arrivent plus lisses ; il faut un peu de pratique."
+     ],
+     "q": "Quels vêtements sortent toujours les plus froissés de ta valise ?",
+     "c": "Teste un mini ballot avec deux chemises et une pochette de chaussettes, puis défais-le demain."
+    },
+    "it": {
+     "t": "Il metodo a fagotto",
+     "g": "Prova ad avvolgere i vestiti intorno a un nucleo morbido per ridurre le pieghe nei viaggi lunghi.",
+     "p": [
+      "Crea un piccolo nucleo morbido, come una sacca di calzini e intimo, e mettilo al centro.",
+      "Avvolgi i capi uno alla volta, prima quelli rigidi come le camicie, alla fine la maglieria morbida.",
+      "Senza pieghe nette i vestiti si curvano dolcemente e arrivano più lisci; serve un po' di pratica."
+     ],
+     "q": "Quali dei tuoi vestiti escono sempre più stropicciati dalla valigia?",
+     "c": "Prova un mini fagotto con due camicie e una sacca di calzini, poi aprilo domani e controlla."
+    },
+    "pt": {
+     "t": "O método do embrulho",
+     "g": "Experimenta enrolar a roupa à volta de um núcleo macio para evitar vincos em viagens longas.",
+     "p": [
+      "Faz um pequeno núcleo macio, como uma bolsa de meias e roupa interior, e põe-no no centro.",
+      "Envolve as peças uma a uma, primeiro as rígidas como camisas e por último as malhas macias.",
+      "Sem dobras marcadas, a roupa curva suavemente e chega mais lisa; é preciso alguma prática."
+     ],
+     "q": "Que peças tuas saem sempre mais amarrotadas da mala?",
+     "c": "Experimenta um mini embrulho com duas camisas e uma bolsa de meias e desfá-lo amanhã."
+    },
+    "pt_BR": {
+     "t": "O método do embrulho",
+     "g": "Experimente envolver a roupa em volta de um núcleo macio para evitar amassados em viagens longas.",
+     "p": [
+      "Faça um pequeno núcleo macio, como uma bolsinha de meias e roupa íntima, e coloque no centro.",
+      "Envolva as peças uma a uma, primeiro as firmes como camisas e por último as malhas macias.",
+      "Sem dobras marcadas, a roupa fica em curvas suaves e chega mais lisa; exige um pouco de prática."
+     ],
+     "q": "Quais roupas suas sempre saem mais amassadas da mala?",
+     "c": "Teste um mini embrulho com duas camisas e uma bolsinha de meias e desfaça amanhã."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Heavy items at the bottom",
+     "g": "Place shoes and dense items near the wheels or your back for better balance.",
+     "p": [
+      "In a wheeled suitcase, heavy things go at the wheel end so the bag stands up and rolls without tipping.",
+      "In a backpack, keep dense items close to your back and in the middle, so the weight sits on your hips.",
+      "Light, squashable things like jackets and knits go on top or in the gaps around the heavy core."
+     ],
+     "q": "Has a bag ever tipped over or pulled you backwards because it was packed badly?",
+     "c": "Pack your bag with shoes at the wheel end or against the back panel and feel the difference."
+    },
+    "de": {
+     "t": "Schweres nach unten",
+     "g": "Leg Schuhe und schwere Dinge nah an die Rollen oder an den Rücken, für bessere Balance.",
+     "p": [
+      "Im Rollkoffer gehört Schweres ans Rollenende, damit er steht und rollt, ohne umzukippen.",
+      "Im Rucksack liegt Schweres nah am Rücken und mittig, damit das Gewicht auf den Hüften ruht.",
+      "Leichte, weiche Dinge wie Jacken und Pullis kommen nach oben oder in die Lücken."
+     ],
+     "q": "Ist dir schon einmal ein schlecht gepackter Koffer umgekippt oder hat dich ein Rucksack nach hinten gezogen?",
+     "c": "Pack Schuhe ans Rollenende oder an die Rückenseite und spüre den Unterschied."
+    },
+    "es": {
+     "t": "Lo pesado, abajo",
+     "g": "Coloca el calzado y lo más denso cerca de las ruedas o de tu espalda para un mejor equilibrio.",
+     "p": [
+      "En la maleta con ruedas, lo pesado va junto a las ruedas para que se mantenga de pie y no vuelque.",
+      "En la mochila, lo denso va pegado a la espalda y en el centro, para que el peso descanse en la cadera.",
+      "Lo ligero y blando, como chaquetas y jerséis, va arriba o rellenando huecos alrededor."
+     ],
+     "q": "¿Alguna vez una maleta mal hecha se te volcó o una mochila tiró de ti hacia atrás?",
+     "c": "Haz la maleta con el calzado junto a las ruedas o contra la espalda y nota la diferencia."
+    },
+    "fr": {
+     "t": "Le lourd en bas",
+     "g": "Place chaussures et objets denses près des roulettes ou contre ton dos pour un meilleur équilibre.",
+     "p": [
+      "Dans une valise à roulettes, le lourd va côté roulettes pour qu'elle tienne debout sans basculer.",
+      "Dans un sac à dos, garde le dense contre ton dos et au centre, pour que le poids repose sur les hanches.",
+      "Le léger et compressible, comme vestes et pulls, va en haut ou dans les vides autour."
+     ],
+     "q": "Une valise mal faite a-t-elle déjà basculé, ou un sac à dos t'a-t-il tiré en arrière ?",
+     "c": "Fais ton sac avec les chaussures côté roulettes ou contre le dos, et sens la différence."
+    },
+    "it": {
+     "t": "Il pesante in basso",
+     "g": "Metti scarpe e oggetti densi vicino alle ruote o alla schiena per un miglior equilibrio.",
+     "p": [
+      "Nel trolley il peso va dal lato delle ruote, così sta in piedi e scorre senza ribaltarsi.",
+      "Nello zaino tieni gli oggetti densi vicino alla schiena e al centro, così il peso grava sui fianchi.",
+      "Le cose leggere e comprimibili, come giacche e maglioni, vanno sopra o negli spazi intorno."
+     ],
+     "q": "Ti è mai capitato che una valigia mal fatta si ribaltasse o che uno zaino ti tirasse indietro?",
+     "c": "Prepara la borsa con le scarpe vicino alle ruote o contro lo schienale e senti la differenza."
+    },
+    "pt": {
+     "t": "O pesado em baixo",
+     "g": "Põe o calçado e os objetos densos junto às rodas ou às costas para melhor equilíbrio.",
+     "p": [
+      "Na mala de rodas, o peso vai do lado das rodas para ela ficar de pé e rolar sem tombar.",
+      "Na mochila, o que é denso vai encostado às costas e ao centro, para o peso assentar na anca.",
+      "O que é leve e macio, como casacos e camisolas, vai em cima ou a encher os espaços."
+     ],
+     "q": "Já te aconteceu uma mala mal feita tombar ou uma mochila puxar-te para trás?",
+     "c": "Faz a mala com o calçado junto às rodas ou encostado às costas e sente a diferença."
+    },
+    "pt_BR": {
+     "t": "O pesado embaixo",
+     "g": "Coloque calçados e itens pesados perto das rodinhas ou das costas para um melhor equilíbrio.",
+     "p": [
+      "Na mala de rodinhas, o peso vai do lado das rodas para ela ficar em pé e rolar sem tombar.",
+      "Na mochila, o que é pesado vai encostado nas costas e no meio, para o peso apoiar no quadril.",
+      "O que é leve e macio, como casacos e blusas, vai por cima ou preenchendo os vãos."
+     ],
+     "q": "Já aconteceu de uma mala mal arrumada tombar ou uma mochila puxar você para trás?",
+     "c": "Arrume a mala com os calçados perto das rodinhas ou nas costas e sinta a diferença."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Filling hidden spaces",
+     "g": "Use shoes, corners and gaps for socks, chargers and other small items.",
+     "p": [
+      "Shoes are hollow storage: socks, a charger or a small fragile item fit perfectly inside them.",
+      "The channels between a suitcase's handle bars, or the corners, are ideal for belts and rolled socks.",
+      "Filling the gaps keeps the contents from shifting, so things crease less and break less."
+     ],
+     "q": "What small items do you usually struggle to find a place for in your bag?",
+     "c": "Pack a pair of shoes today with something useful stuffed inside each one."
+    },
+    "de": {
+     "t": "Versteckte Räume nutzen",
+     "g": "Nutze Schuhe, Ecken und Lücken für Socken, Ladegeräte und andere Kleinigkeiten.",
+     "p": [
+      "Schuhe sind hohler Stauraum: Socken, ein Ladegerät oder etwas Zerbrechliches passen perfekt hinein.",
+      "Die Rinnen zwischen den Griffstangen im Koffer und die Ecken eignen sich für Gürtel und Socken.",
+      "Gefüllte Lücken verhindern Verrutschen, so knittert und zerbricht weniger."
+     ],
+     "q": "Für welche Kleinigkeiten findest du im Gepäck schwer einen Platz?",
+     "c": "Pack heute ein Paar Schuhe und steck in jeden etwas Nützliches."
+    },
+    "es": {
+     "t": "Aprovecha los huecos",
+     "g": "Usa zapatos, esquinas y huecos para calcetines, cargadores y otras cosas pequeñas.",
+     "p": [
+      "Los zapatos son almacenaje hueco: calcetines, un cargador o algo frágil caben perfectos dentro.",
+      "Los canales entre las barras del asa de la maleta y las esquinas son ideales para cinturones y calcetines.",
+      "Rellenar huecos evita que todo se mueva, así se arruga y se rompe menos."
+     ],
+     "q": "¿Qué cosas pequeñas te cuesta más ubicar en la maleta?",
+     "c": "Mete hoy un par de zapatos con algo útil dentro de cada uno."
+    },
+    "fr": {
+     "t": "Remplir les espaces cachés",
+     "g": "Utilise chaussures, coins et interstices pour chaussettes, chargeurs et petits objets.",
+     "p": [
+      "Les chaussures sont un rangement creux : chaussettes, chargeur ou petit objet fragile y tiennent parfaitement.",
+      "Les creux entre les tiges de la poignée et les coins de la valise sont parfaits pour ceintures et chaussettes.",
+      "Combler les vides empêche tout de bouger : moins de plis, moins de casse."
+     ],
+     "q": "Quels petits objets as-tu du mal à caser dans ton sac ?",
+     "c": "Range aujourd'hui une paire de chaussures avec quelque chose d'utile glissé dans chacune."
+    },
+    "it": {
+     "t": "Riempire gli spazi nascosti",
+     "g": "Usa scarpe, angoli e spazi vuoti per calzini, caricatori e altri piccoli oggetti.",
+     "p": [
+      "Le scarpe sono contenitori vuoti: calzini, un caricatore o un piccolo oggetto fragile ci stanno a pennello.",
+      "I canali tra le aste del manico del trolley e gli angoli sono perfetti per cinture e calzini.",
+      "Riempire i vuoti evita che il contenuto si sposti, così si stropiccia e si rompe meno."
+     ],
+     "q": "Per quali piccoli oggetti fai fatica a trovare posto in valigia?",
+     "c": "Metti oggi in valigia un paio di scarpe con qualcosa di utile dentro ciascuna."
+    },
+    "pt": {
+     "t": "Aproveitar os espaços escondidos",
+     "g": "Usa sapatos, cantos e espaços vazios para meias, carregadores e outras coisas pequenas.",
+     "p": [
+      "Os sapatos são arrumação oca: meias, um carregador ou algo frágil cabem lá dentro na perfeição.",
+      "Os canais entre as barras da pega da mala e os cantos são ideais para cintos e meias.",
+      "Encher os espaços evita que tudo se mexa, por isso amarrota e parte menos."
+     ],
+     "q": "Que coisas pequenas te custa mais arrumar na mala?",
+     "c": "Põe hoje na mala um par de sapatos com algo útil dentro de cada um."
+    },
+    "pt_BR": {
+     "t": "Aproveitando os espaços escondidos",
+     "g": "Use sapatos, cantos e vãos para meias, carregadores e outros itens pequenos.",
+     "p": [
+      "Sapatos são espaço oco: meias, um carregador ou algo frágil cabem certinho lá dentro.",
+      "Os vãos entre as barras da alça da mala e os cantos são ideais para cintos e meias.",
+      "Preencher os vãos evita que tudo se mexa, então amassa e quebra menos."
+     ],
+     "q": "Quais itens pequenos você tem mais dificuldade de encaixar na mala?",
+     "c": "Coloque hoje na mala um par de sapatos com algo útil dentro de cada pé."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shoes: how many pairs?",
+     "g": "Learn why two or three versatile pairs cover almost any trip.",
+     "p": [
+      "Shoes are the heaviest, bulkiest items in most bags, so every extra pair costs a lot of space.",
+      "A classic trio: comfortable walking shoes, a smarter or lighter pair, and sandals or flip-flops.",
+      "Wear the bulkiest pair while travelling, and only pack special shoes when your plans demand them."
+     ],
+     "q": "Which pair of shoes would you never travel without?",
+     "c": "Choose your two or three travel pairs for a week-long city trip and say why."
+    },
+    "de": {
+     "t": "Schuhe: wie viele Paare?",
+     "g": "Erfahre, warum zwei oder drei vielseitige Paare für fast jede Reise reichen.",
+     "p": [
+      "Schuhe sind meist das Schwerste und Sperrigste im Gepäck; jedes Extra-Paar kostet viel Platz.",
+      "Ein klassisches Trio: bequeme Laufschuhe, ein schickeres oder leichteres Paar und Sandalen.",
+      "Trag das sperrigste Paar auf der Reise und pack Spezialschuhe nur ein, wenn deine Pläne es verlangen."
+     ],
+     "q": "Ohne welches Paar Schuhe würdest du nie verreisen?",
+     "c": "Wähle deine zwei oder drei Paare für eine Woche Städtereise und begründe es."
+    },
+    "es": {
+     "t": "Zapatos: ¿cuántos pares?",
+     "g": "Descubre por qué dos o tres pares versátiles sirven para casi cualquier viaje.",
+     "p": [
+      "El calzado es lo más pesado y voluminoso de la maleta: cada par extra ocupa mucho espacio.",
+      "Un trío clásico: zapatillas cómodas para caminar, un par más arreglado o ligero y sandalias o chanclas.",
+      "Viaja con el par más voluminoso puesto y lleva calzado especial solo si tus planes lo exigen."
+     ],
+     "q": "¿Sin qué par de zapatos no viajarías nunca?",
+     "c": "Elige tus dos o tres pares para una semana de viaje urbano y explica por qué."
+    },
+    "fr": {
+     "t": "Chaussures : combien de paires ?",
+     "g": "Comprends pourquoi deux ou trois paires polyvalentes suffisent pour presque tous les voyages.",
+     "p": [
+      "Les chaussures sont l'élément le plus lourd et encombrant : chaque paire en plus coûte cher en place.",
+      "Un trio classique : des chaussures de marche confortables, une paire plus habillée ou légère, des sandales.",
+      "Porte la paire la plus volumineuse pendant le trajet et n'emporte de chaussures spéciales que si besoin."
+     ],
+     "q": "Sans quelle paire de chaussures ne partirais-tu jamais ?",
+     "c": "Choisis tes deux ou trois paires pour une semaine en ville et explique pourquoi."
+    },
+    "it": {
+     "t": "Scarpe: quante paia?",
+     "g": "Scopri perché due o tre paia versatili bastano per quasi ogni viaggio.",
+     "p": [
+      "Le scarpe sono gli oggetti più pesanti e ingombranti: ogni paio in più costa molto spazio.",
+      "Un trio classico: scarpe comode da camminata, un paio più elegante o leggero e sandali o infradito.",
+      "Indossa in viaggio il paio più ingombrante e porta scarpe speciali solo se i programmi lo richiedono."
+     ],
+     "q": "Senza quale paio di scarpe non partiresti mai?",
+     "c": "Scegli le tue due o tre paia per una settimana in città e spiega perché."
+    },
+    "pt": {
+     "t": "Sapatos: quantos pares?",
+     "g": "Percebe porque dois ou três pares versáteis chegam para quase qualquer viagem.",
+     "p": [
+      "O calçado é o mais pesado e volumoso da mala: cada par extra custa muito espaço.",
+      "Um trio clássico: sapatilhas confortáveis para andar, um par mais elegante ou leve e sandálias ou chinelos.",
+      "Viaja com o par mais volumoso calçado e leva calçado especial só se os teus planos o exigirem."
+     ],
+     "q": "Sem que par de sapatos nunca viajarias?",
+     "c": "Escolhe os teus dois ou três pares para uma semana de viagem urbana e explica porquê."
+    },
+    "pt_BR": {
+     "t": "Sapatos: quantos pares?",
+     "g": "Entenda por que dois ou três pares versáteis resolvem quase qualquer viagem.",
+     "p": [
+      "Calçados são os itens mais pesados e volumosos da mala: cada par extra ocupa muito espaço.",
+      "Um trio clássico: tênis confortável para caminhar, um par mais arrumado ou leve e sandálias ou chinelo.",
+      "Viaje usando o par mais volumoso e leve calçado especial só se a programação pedir."
+     ],
+     "q": "Sem qual par de sapatos você nunca viajaria?",
+     "c": "Escolha seus dois ou três pares para uma semana de viagem urbana e explique o porquê."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing shoes cleanly",
+     "g": "Keep your clothes clean with shoe bags, shower caps and smart placement.",
+     "p": [
+      "Wipe or brush soles before packing: dried mud and dust travel straight onto your clothes otherwise.",
+      "Put each pair in a shoe bag, a reused cloth bag or a hotel shower cap over the soles.",
+      "Place shoes sole to sole along the edges or near the wheels, away from light-coloured clothes."
+     ],
+     "q": "What do you use now to keep shoes away from your clothes?",
+     "c": "Find a bag at home you could reuse as a shoe bag and put it with your travel gear."
+    },
+    "de": {
+     "t": "Schuhe sauber verpacken",
+     "g": "Halte deine Kleidung sauber mit Schuhbeuteln, Duschhauben und klugem Platzieren.",
+     "p": [
+      "Wisch oder bürste die Sohlen vor dem Packen ab, sonst landen Schmutz und Staub direkt auf der Kleidung.",
+      "Steck jedes Paar in einen Schuhbeutel, einen alten Stoffbeutel oder zieh eine Duschhaube über die Sohlen.",
+      "Leg die Schuhe Sohle an Sohle an den Rand oder zu den Rollen, weg von heller Kleidung."
+     ],
+     "q": "Womit hältst du Schuhe bisher von deiner Kleidung fern?",
+     "c": "Such zu Hause einen Beutel, der als Schuhbeutel taugt, und leg ihn zu deinen Reisesachen."
+    },
+    "es": {
+     "t": "Zapatos limpios en la maleta",
+     "g": "Mantén la ropa limpia con bolsas para zapatos, gorros de ducha y una buena colocación.",
+     "p": [
+      "Limpia o cepilla las suelas antes de guardarlas: si no, el barro seco y el polvo acaban en tu ropa.",
+      "Mete cada par en una bolsa de zapatos, una bolsa de tela reutilizada o cubre las suelas con un gorro de ducha.",
+      "Coloca los zapatos suela con suela en los bordes o junto a las ruedas, lejos de la ropa clara."
+     ],
+     "q": "¿Qué usas ahora para separar los zapatos de la ropa?",
+     "c": "Busca en casa una bolsa que puedas reutilizar para zapatos y déjala con tus cosas de viaje."
+    },
+    "fr": {
+     "t": "Des chaussures propres dans la valise",
+     "g": "Garde tes vêtements propres grâce aux sacs à chaussures, bonnets de douche et bon placement.",
+     "p": [
+      "Essuie ou brosse les semelles avant de partir : sinon boue sèche et poussière finissent sur tes habits.",
+      "Mets chaque paire dans un sac à chaussures, un sac en tissu réutilisé ou un bonnet de douche sur les semelles.",
+      "Place les chaussures semelle contre semelle sur les bords ou près des roulettes, loin des vêtements clairs."
+     ],
+     "q": "Qu'utilises-tu aujourd'hui pour séparer chaussures et vêtements ?",
+     "c": "Trouve chez toi un sac réutilisable comme sac à chaussures et range-le avec tes affaires de voyage."
+    },
+    "it": {
+     "t": "Scarpe pulite in valigia",
+     "g": "Tieni puliti i vestiti con sacchetti per scarpe, cuffie da doccia e la giusta posizione.",
+     "p": [
+      "Pulisci o spazzola le suole prima di partire: altrimenti fango secco e polvere finiscono sui vestiti.",
+      "Metti ogni paio in un sacchetto per scarpe, una borsa di stoffa riutilizzata o una cuffia da doccia.",
+      "Sistema le scarpe suola contro suola lungo i bordi o vicino alle ruote, lontano dai capi chiari."
+     ],
+     "q": "Cosa usi adesso per separare le scarpe dai vestiti?",
+     "c": "Trova in casa una borsa da riusare come sacchetto per scarpe e mettila con le cose da viaggio."
+    },
+    "pt": {
+     "t": "Sapatos limpos na mala",
+     "g": "Mantém a roupa limpa com sacos para sapatos, toucas de duche e boa arrumação.",
+     "p": [
+      "Limpa ou escova as solas antes de arrumar: senão a lama seca e o pó vão parar à roupa.",
+      "Põe cada par num saco de sapatos, num saco de pano reaproveitado ou cobre as solas com uma touca de duche.",
+      "Coloca os sapatos sola com sola nas bordas ou junto às rodas, longe da roupa clara."
+     ],
+     "q": "O que usas agora para separar os sapatos da roupa?",
+     "c": "Procura em casa um saco que possas reaproveitar para sapatos e junta-o às tuas coisas de viagem."
+    },
+    "pt_BR": {
+     "t": "Sapatos limpos na mala",
+     "g": "Mantenha a roupa limpa com saquinhos para sapatos, toucas de banho e boa arrumação.",
+     "p": [
+      "Limpe ou escove as solas antes de guardar: senão a lama seca e a poeira vão parar na roupa.",
+      "Coloque cada par num saquinho de sapato, numa sacola de pano reaproveitada ou cubra as solas com touca de banho.",
+      "Ponha os sapatos sola com sola nas laterais ou perto das rodinhas, longe das roupas claras."
+     ],
+     "q": "O que você usa hoje para separar os sapatos da roupa?",
+     "c": "Ache em casa uma sacola para reaproveitar como saquinho de sapato e guarde com suas coisas de viagem."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mix-and-match clothing",
+     "g": "Choose pieces in a shared colour palette so every top goes with every bottom.",
+     "p": [
+      "If all your tops match all your bottoms, four tops and two bottoms already give eight outfits.",
+      "Pick two or three main colours plus one accent colour, and leave out pieces that match only one item.",
+      "Patterns are fine, but keep them to one or two pieces that pair well with your plain basics."
+     ],
+     "q": "What colours does most of your wardrobe already come in?",
+     "c": "Lay out four tops and two bottoms you own and count how many outfits they really make."
+    },
+    "de": {
+     "t": "Kombinierbare Kleidung",
+     "g": "Wähle Teile in einer gemeinsamen Farbpalette, damit jedes Oberteil zu jeder Hose passt.",
+     "p": [
+      "Passen alle Oberteile zu allen Hosen, ergeben vier Oberteile und zwei Hosen schon acht Outfits.",
+      "Wähle zwei oder drei Hauptfarben plus eine Akzentfarbe und lass Teile weg, die nur zu einem passen.",
+      "Muster sind okay, aber beschränke sie auf ein oder zwei Teile, die zu deinen schlichten Basics passen."
+     ],
+     "q": "In welchen Farben ist der Großteil deiner Garderobe schon jetzt?",
+     "c": "Leg vier Oberteile und zwei Hosen raus und zähle, wie viele Outfits sie wirklich ergeben."
+    },
+    "es": {
+     "t": "Ropa que combina",
+     "g": "Elige prendas de una paleta común para que cada parte de arriba combine con cada parte de abajo.",
+     "p": [
+      "Si todo combina con todo, cuatro partes de arriba y dos de abajo ya son ocho conjuntos.",
+      "Elige dos o tres colores base y uno de acento, y deja fuera prendas que solo van con una.",
+      "Los estampados valen, pero limítalos a una o dos prendas que combinen con tus básicos lisos."
+     ],
+     "q": "¿De qué colores es ya la mayor parte de tu armario?",
+     "c": "Saca cuatro partes de arriba y dos de abajo y cuenta cuántos conjuntos salen de verdad."
+    },
+    "fr": {
+     "t": "Des vêtements qui se combinent",
+     "g": "Choisis des pièces d'une même palette pour que chaque haut aille avec chaque bas.",
+     "p": [
+      "Si tous tes hauts vont avec tous tes bas, quatre hauts et deux bas donnent déjà huit tenues.",
+      "Choisis deux ou trois couleurs de base plus une couleur d'accent, et écarte ce qui ne va qu'avec une pièce.",
+      "Les motifs sont permis, mais limite-les à une ou deux pièces qui vont avec tes basiques unis."
+     ],
+     "q": "De quelles couleurs est déjà composée la majeure partie de ta garde-robe ?",
+     "c": "Sors quatre hauts et deux bas que tu possèdes et compte combien de tenues ils forment vraiment."
+    },
+    "it": {
+     "t": "Capi che si abbinano",
+     "g": "Scegli capi di una palette comune così ogni sopra si abbina a ogni sotto.",
+     "p": [
+      "Se tutto si abbina con tutto, quattro magliette e due pantaloni fanno già otto outfit.",
+      "Scegli due o tre colori base più un colore d'accento ed escludi i capi che vanno con uno solo.",
+      "Le fantasie vanno bene, ma limitale a uno o due capi che stanno bene con i basici in tinta unita."
+     ],
+     "q": "Di che colori è già la maggior parte del tuo guardaroba?",
+     "c": "Stendi quattro sopra e due sotto che possiedi e conta quanti outfit formano davvero."
+    },
+    "pt": {
+     "t": "Roupa que combina",
+     "g": "Escolhe peças de uma paleta comum para que cada parte de cima combine com cada parte de baixo.",
+     "p": [
+      "Se tudo combina com tudo, quatro partes de cima e duas de baixo já dão oito conjuntos.",
+      "Escolhe duas ou três cores base e uma de destaque, e deixa de fora peças que só combinam com uma.",
+      "Padrões são bem-vindos, mas limita-os a uma ou duas peças que combinem com os básicos lisos."
+     ],
+     "q": "De que cores é já a maior parte do teu guarda-roupa?",
+     "c": "Põe em cima da cama quatro partes de cima e duas de baixo e conta quantos conjuntos dão mesmo."
+    },
+    "pt_BR": {
+     "t": "Roupas que combinam",
+     "g": "Escolha peças de uma paleta em comum para que toda parte de cima combine com toda parte de baixo.",
+     "p": [
+      "Se tudo combina com tudo, quatro blusas e duas calças já rendem oito looks.",
+      "Escolha duas ou três cores base e uma de destaque, e deixe de fora peças que só combinam com uma.",
+      "Estampas são bem-vindas, mas limite a uma ou duas peças que combinem com os básicos lisos."
+     ],
+     "q": "De quais cores é a maior parte do seu guarda-roupa hoje?",
+     "c": "Separe quatro blusas e duas calças que você tem e conte quantos looks elas formam de verdade."
+    }
+   }
+  }
+ ]
+}

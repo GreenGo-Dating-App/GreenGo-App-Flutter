@@ -1,0 +1,835 @@
+{
+ "topic": "swimming",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people love swimming",
+     "g": "Discover the many reasons people all over the world love to swim.",
+     "p": [
+      "Swimming trains heart, lungs and muscles while the water supports your joints.",
+      "Many swimmers say the water calms the mind, like a moving meditation.",
+      "You can enjoy it at almost any age, from toddlers to grandparents."
+     ],
+     "q": "What attracts you most to swimming: fitness, calm or pure fun?",
+     "c": "Write down three words that describe how water makes you feel."
+    },
+    "de": {
+     "t": "Warum Menschen Schwimmen lieben",
+     "g": "Entdecke die vielen Gründe, warum Menschen weltweit gern schwimmen.",
+     "p": [
+      "Schwimmen trainiert Herz, Lunge und Muskeln, während das Wasser die Gelenke entlastet.",
+      "Viele sagen, das Wasser beruhigt den Kopf wie eine Meditation in Bewegung.",
+      "Man kann es in fast jedem Alter genießen, vom Kleinkind bis zur Oma."
+     ],
+     "q": "Was reizt dich am Schwimmen am meisten: Fitness, Ruhe oder einfach Spaß?",
+     "c": "Schreib drei Wörter auf, die beschreiben, wie sich Wasser für dich anfühlt."
+    },
+    "es": {
+     "t": "Por qué a la gente le encanta nadar",
+     "g": "Descubre las muchas razones por las que la gente de todo el mundo nada.",
+     "p": [
+      "Nadar entrena corazón, pulmones y músculos mientras el agua cuida tus articulaciones.",
+      "Muchos nadadores dicen que el agua calma la mente, como una meditación en movimiento.",
+      "Se disfruta a casi cualquier edad, desde los peques hasta los abuelos."
+     ],
+     "q": "¿Qué te atrae más de nadar: la forma física, la calma o la pura diversión?",
+     "c": "Escribe tres palabras que describan cómo te hace sentir el agua."
+    },
+    "fr": {
+     "t": "Pourquoi on aime tant nager",
+     "g": "Découvre les nombreuses raisons pour lesquelles on nage partout dans le monde.",
+     "p": [
+      "La natation entraîne cœur, poumons et muscles tout en ménageant les articulations.",
+      "Beaucoup de nageurs disent que l'eau apaise l'esprit, comme une méditation en mouvement.",
+      "On peut en profiter à presque tout âge, des tout-petits aux grands-parents."
+     ],
+     "q": "Qu'est-ce qui t'attire le plus : la forme, le calme ou le simple plaisir ?",
+     "c": "Note trois mots qui décrivent ce que tu ressens dans l'eau."
+    },
+    "it": {
+     "t": "Perché si ama nuotare",
+     "g": "Scopri i tanti motivi per cui le persone di tutto il mondo amano nuotare.",
+     "p": [
+      "Il nuoto allena cuore, polmoni e muscoli mentre l'acqua protegge le articolazioni.",
+      "Molti nuotatori dicono che l'acqua calma la mente, come una meditazione in movimento.",
+      "Si può praticare quasi a ogni età, dai bambini ai nonni."
+     ],
+     "q": "Cosa ti attira di più del nuoto: la forma fisica, la calma o il puro divertimento?",
+     "c": "Scrivi tre parole che descrivono come ti fa sentire l'acqua."
+    },
+    "pt": {
+     "t": "Porque é que tanta gente adora nadar",
+     "g": "Descobre as muitas razões pelas quais pessoas de todo o mundo nadam.",
+     "p": [
+      "Nadar treina coração, pulmões e músculos enquanto a água poupa as articulações.",
+      "Muitos nadadores dizem que a água acalma a mente, como uma meditação em movimento.",
+      "Pode praticar-se em quase todas as idades, dos miúdos aos avós."
+     ],
+     "q": "O que te atrai mais na natação: a forma física, a calma ou a pura diversão?",
+     "c": "Escreve três palavras que descrevam como a água te faz sentir."
+    },
+    "pt_BR": {
+     "t": "Por que as pessoas amam nadar",
+     "g": "Descubra os muitos motivos pelos quais pessoas do mundo todo nadam.",
+     "p": [
+      "Nadar treina coração, pulmões e músculos enquanto a água protege as articulações.",
+      "Muitos nadadores dizem que a água acalma a mente, como uma meditação em movimento.",
+      "Dá para curtir em quase qualquer idade, das crianças aos avós."
+     ],
+     "q": "O que mais te atrai na natação: condicionamento, calma ou pura diversão?",
+     "c": "Anote três palavras que descrevem como a água faz você se sentir."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your swimming story so far",
+     "g": "Look back at your water memories and decide what you want from swimming now.",
+     "p": [
+      "Early memories, good or shaky, shape how relaxed we feel in the water.",
+      "Every swimmer starts somewhere, and adults learn new skills all the time.",
+      "A clear personal reason keeps you motivated on lazy days."
+     ],
+     "q": "What is your earliest memory of being in the water?",
+     "c": "Write one sentence: I want swimming to give me ... and keep it in your bag."
+    },
+    "de": {
+     "t": "Deine Schwimmgeschichte bisher",
+     "g": "Blick auf deine Erinnerungen im Wasser zurück und überleg, was du dir jetzt wünschst.",
+     "p": [
+      "Frühe Erlebnisse, schöne oder wacklige, prägen, wie entspannt wir im Wasser sind.",
+      "Jeder hat mal angefangen, und auch Erwachsene lernen ständig Neues dazu.",
+      "Ein klarer persönlicher Grund motiviert dich an faulen Tagen."
+     ],
+     "q": "Was ist deine früheste Erinnerung an das Wasser?",
+     "c": "Schreib einen Satz: Schwimmen soll mir ... geben, und steck ihn in deine Tasche."
+    },
+    "es": {
+     "t": "Tu historia con la natación",
+     "g": "Recuerda tus vivencias en el agua y decide qué quieres que te dé nadar ahora.",
+     "p": [
+      "Los primeros recuerdos, buenos o inseguros, influyen en lo relajado que te sientes.",
+      "Todo nadador empezó en algún momento, y los adultos aprenden cosas nuevas a diario.",
+      "Un motivo personal claro te mantiene con ganas en los días de pereza."
+     ],
+     "q": "¿Cuál es tu primer recuerdo en el agua?",
+     "c": "Escribe una frase: Quiero que nadar me dé ... y guárdala en tu bolsa."
+    },
+    "fr": {
+     "t": "Ton histoire avec la natation",
+     "g": "Repense à tes souvenirs dans l'eau et décide ce que tu attends de la nage aujourd'hui.",
+     "p": [
+      "Les premiers souvenirs, joyeux ou hésitants, influencent notre aisance dans l'eau.",
+      "Chaque nageur a commencé un jour, et les adultes apprennent sans cesse.",
+      "Une raison personnelle claire te motive les jours de flemme."
+     ],
+     "q": "Quel est ton tout premier souvenir dans l'eau ?",
+     "c": "Écris une phrase : Je veux que la natation m'apporte ... et glisse-la dans ton sac."
+    },
+    "it": {
+     "t": "La tua storia con il nuoto",
+     "g": "Ripensa ai tuoi ricordi in acqua e decidi cosa vuoi che il nuoto ti dia adesso.",
+     "p": [
+      "I primi ricordi, belli o incerti, influenzano quanto ci sentiamo a nostro agio.",
+      "Ogni nuotatore ha iniziato da qualche parte e gli adulti imparano sempre cose nuove.",
+      "Un motivo personale chiaro ti dà la spinta nei giorni di pigrizia."
+     ],
+     "q": "Qual è il tuo primo ricordo in acqua?",
+     "c": "Scrivi una frase: Voglio che il nuoto mi dia ... e tienila nella borsa."
+    },
+    "pt": {
+     "t": "A tua história na água",
+     "g": "Recorda as tuas memórias na água e decide o que queres que a natação te dê agora.",
+     "p": [
+      "As primeiras memórias, boas ou receosas, influenciam o à-vontade que sentimos.",
+      "Todos os nadadores começaram algures e os adultos aprendem coisas novas sempre.",
+      "Um motivo pessoal claro dá-te ânimo nos dias de preguiça."
+     ],
+     "q": "Qual é a tua primeira memória dentro de água?",
+     "c": "Escreve uma frase: Quero que a natação me dê ... e guarda-a no saco."
+    },
+    "pt_BR": {
+     "t": "Sua história com a natação",
+     "g": "Relembre suas memórias na água e decida o que você quer que a natação te dê agora.",
+     "p": [
+      "As primeiras lembranças, boas ou inseguras, influenciam o quanto ficamos à vontade.",
+      "Todo nadador começou em algum momento, e adultos aprendem coisas novas o tempo todo.",
+      "Um motivo pessoal claro te anima nos dias de preguiça."
+     ],
+     "q": "Qual é a sua primeira lembrança dentro da água?",
+     "c": "Escreva uma frase: Quero que a natação me dê ... e guarde na sua bolsa."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feeling at home in the water",
+     "g": "Get comfortable in shallow water at your own pace, with zero pressure.",
+     "p": [
+      "Start where you can stand easily, with a lifeguard on duty nearby.",
+      "Walk, sway your arms and feel how the water pushes back gently.",
+      "Calm, slow breathing tells your body that everything is fine."
+     ],
+     "q": "Which part of being in the water feels easiest for you right now?",
+     "c": "Spend five relaxed minutes just walking and moving your arms in shallow water."
+    },
+    "de": {
+     "t": "Sich im Wasser wohlfühlen",
+     "g": "Gewöhn dich in flachem Wasser in deinem Tempo an das Element, ganz ohne Druck.",
+     "p": [
+      "Beginne dort, wo du locker stehen kannst und eine Aufsicht in der Nähe ist.",
+      "Geh umher, schwing die Arme und spür, wie das Wasser sanft dagegen drückt.",
+      "Ruhiges, langsames Atmen zeigt deinem Körper, dass alles in Ordnung ist."
+     ],
+     "q": "Was fühlt sich im Wasser für dich gerade am leichtesten an?",
+     "c": "Geh fünf entspannte Minuten im flachen Wasser umher und beweg die Arme."
+    },
+    "es": {
+     "t": "Sentirte como en casa en el agua",
+     "g": "Acostúmbrate al agua poco profunda a tu ritmo y sin ninguna presión.",
+     "p": [
+      "Empieza donde hagas pie fácilmente y con un socorrista cerca.",
+      "Camina, mueve los brazos y nota cómo el agua te empuja con suavidad.",
+      "Respirar despacio y con calma le dice a tu cuerpo que todo va bien."
+     ],
+     "q": "¿Qué parte de estar en el agua te resulta más fácil ahora mismo?",
+     "c": "Pasa cinco minutos tranquilos caminando y moviendo los brazos en agua poco profunda."
+    },
+    "fr": {
+     "t": "Se sentir bien dans l'eau",
+     "g": "Apprivoise l'eau peu profonde à ton rythme, sans aucune pression.",
+     "p": [
+      "Commence là où tu as pied facilement, avec un maître-nageur à proximité.",
+      "Marche, balance les bras et sens l'eau qui te repousse doucement.",
+      "Une respiration lente et calme dit à ton corps que tout va bien."
+     ],
+     "q": "Qu'est-ce qui te semble le plus facile dans l'eau en ce moment ?",
+     "c": "Passe cinq minutes détendues à marcher et bouger les bras en petite profondeur."
+    },
+    "it": {
+     "t": "Sentirsi a casa in acqua",
+     "g": "Prendi confidenza con l'acqua bassa ai tuoi tempi, senza alcuna pressione.",
+     "p": [
+      "Inizia dove tocchi comodamente, con un bagnino in servizio vicino.",
+      "Cammina, muovi le braccia e senti come l'acqua spinge dolcemente.",
+      "Un respiro lento e calmo dice al corpo che va tutto bene."
+     ],
+     "q": "Quale parte dello stare in acqua ti sembra più facile adesso?",
+     "c": "Passa cinque minuti rilassati camminando e muovendo le braccia in acqua bassa."
+    },
+    "pt": {
+     "t": "Sentir-se em casa na água",
+     "g": "Ganha à-vontade em água baixa ao teu ritmo, sem pressão nenhuma.",
+     "p": [
+      "Começa onde tens pé facilmente e com um nadador-salvador por perto.",
+      "Caminha, mexe os braços e sente a água a empurrar suavemente.",
+      "Respirar devagar e com calma diz ao corpo que está tudo bem."
+     ],
+     "q": "O que te parece mais fácil quando estás dentro de água?",
+     "c": "Passa cinco minutos tranquilos a caminhar e a mexer os braços em água baixa."
+    },
+    "pt_BR": {
+     "t": "Sentindo-se em casa na água",
+     "g": "Fique à vontade na parte rasa no seu ritmo, sem nenhuma pressão.",
+     "p": [
+      "Comece onde você dá pé com folga e com um salva-vidas por perto.",
+      "Caminhe, balance os braços e sinta a água empurrando de leve.",
+      "Respirar devagar e com calma avisa ao corpo que está tudo bem."
+     ],
+     "q": "O que parece mais fácil para você dentro da água agora?",
+     "c": "Passe cinco minutos tranquilos caminhando e mexendo os braços na parte rasa."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pools, lakes and seas",
+     "g": "Learn how pools, lakes and seas differ and why beginners start where it is calm.",
+     "p": [
+      "Pools offer clear water, marked depths, walls to rest on and lifeguards.",
+      "Lakes can be colder and darker; seas add waves, currents and salt.",
+      "Open water is for later, always at guarded spots and never alone."
+     ],
+     "q": "Where have you enjoyed being in the water most: pool, lake or sea?",
+     "c": "Find out the opening hours and lifeguard times of a pool near you."
+    },
+    "de": {
+     "t": "Becken, See und Meer",
+     "g": "Erfahre, wie sich Becken, See und Meer unterscheiden und warum Anfänger im Ruhigen starten.",
+     "p": [
+      "Hallenbäder bieten klares Wasser, markierte Tiefen, Ränder zum Ausruhen und Aufsicht.",
+      "Seen sind oft kälter und trüber, das Meer bringt Wellen, Strömung und Salz.",
+      "Freiwasser kommt später, immer an bewachten Stellen und nie allein."
+     ],
+     "q": "Wo warst du am liebsten im Wasser: im Becken, im See oder im Meer?",
+     "c": "Finde Öffnungszeiten und Aufsichtszeiten eines Bades in deiner Nähe heraus."
+    },
+    "es": {
+     "t": "Piscinas, lagos y mares",
+     "g": "Aprende en qué se diferencian piscina, lago y mar y por qué se empieza en aguas tranquilas.",
+     "p": [
+      "La piscina ofrece agua clara, profundidades marcadas, bordes para descansar y socorristas.",
+      "Los lagos pueden ser más fríos y oscuros; el mar suma olas, corrientes y sal.",
+      "Las aguas abiertas llegan después, siempre en zonas vigiladas y nunca solo."
+     ],
+     "q": "¿Dónde has disfrutado más del agua: piscina, lago o mar?",
+     "c": "Averigua el horario y los turnos de socorrista de una piscina cercana."
+    },
+    "fr": {
+     "t": "Piscines, lacs et mers",
+     "g": "Découvre ce qui distingue piscine, lac et mer, et pourquoi on débute en eau calme.",
+     "p": [
+      "La piscine offre une eau claire, des profondeurs indiquées, des bords et des surveillants.",
+      "Les lacs sont souvent plus froids et sombres ; la mer ajoute vagues, courants et sel.",
+      "L'eau libre viendra plus tard, toujours en zone surveillée et jamais seul."
+     ],
+     "q": "Où as-tu le plus aimé être dans l'eau : piscine, lac ou mer ?",
+     "c": "Renseigne-toi sur les horaires et la surveillance d'une piscine près de chez toi."
+    },
+    "it": {
+     "t": "Piscine, laghi e mari",
+     "g": "Scopri come cambiano piscina, lago e mare e perché si comincia dove l'acqua è calma.",
+     "p": [
+      "La piscina offre acqua limpida, profondità segnate, bordi per riposare e bagnini.",
+      "I laghi possono essere più freddi e scuri; il mare aggiunge onde, correnti e sale.",
+      "Le acque libere vengono dopo, sempre in zone sorvegliate e mai da soli."
+     ],
+     "q": "Dove ti sei goduto di più l'acqua: piscina, lago o mare?",
+     "c": "Cerca orari e turni dei bagnini di una piscina vicino a te."
+    },
+    "pt": {
+     "t": "Piscinas, lagos e mar",
+     "g": "Percebe como diferem piscina, lago e mar e porque se começa em água calma.",
+     "p": [
+      "A piscina tem água limpa, profundidades marcadas, bordas para descansar e vigilância.",
+      "Os lagos podem ser mais frios e escuros; o mar junta ondas, correntes e sal.",
+      "As águas abertas ficam para depois, sempre em zonas vigiadas e nunca sozinho."
+     ],
+     "q": "Onde gostaste mais de estar na água: piscina, lago ou mar?",
+     "c": "Descobre o horário e a vigilância de uma piscina perto de ti."
+    },
+    "pt_BR": {
+     "t": "Piscinas, lagos e mar",
+     "g": "Entenda como piscina, lago e mar são diferentes e por que se começa em água calma.",
+     "p": [
+      "A piscina tem água limpa, profundidades marcadas, bordas para descansar e salva-vidas.",
+      "Lagos podem ser mais frios e escuros; o mar traz ondas, correntes e sal.",
+      "Águas abertas ficam para depois, sempre em locais vigiados e nunca sozinho."
+     ],
+     "q": "Onde você mais curtiu estar na água: piscina, lago ou mar?",
+     "c": "Pesquise o horário e os turnos de salva-vidas de uma piscina perto de você."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a swimsuit",
+     "g": "Pick a swimsuit that feels comfortable and lets you move freely.",
+     "p": [
+      "A snug but not tight fit stays in place when you push off and kick.",
+      "Chlorine-resistant fabrics keep their shape and colour much longer.",
+      "Choose cuts that free your shoulders and hips so every stroke feels easy."
+     ],
+     "q": "What matters most to you in a swimsuit: comfort, style or durability?",
+     "c": "Check your swimsuit: can you lift your arms and kick without it shifting?"
+    },
+    "de": {
+     "t": "Die richtige Badekleidung",
+     "g": "Wähle Badekleidung, die bequem sitzt und dir volle Bewegungsfreiheit lässt.",
+     "p": [
+      "Eng anliegend, aber nicht drückend, bleibt sie beim Abstoßen und Beinschlag an Ort und Stelle.",
+      "Chlorbeständige Stoffe behalten Form und Farbe deutlich länger.",
+      "Schnitte mit freien Schultern und Hüften machen jeden Zug leicht."
+     ],
+     "q": "Was ist dir bei Badekleidung am wichtigsten: Komfort, Stil oder Haltbarkeit?",
+     "c": "Teste deine Badekleidung: Kannst du Arme heben und kicken, ohne dass sie verrutscht?"
+    },
+    "es": {
+     "t": "Elegir el bañador",
+     "g": "Escoge un bañador cómodo que te deje moverte con libertad.",
+     "p": [
+      "Ajustado pero sin apretar, se queda en su sitio al impulsarte y patear.",
+      "Los tejidos resistentes al cloro mantienen forma y color mucho más tiempo.",
+      "Elige cortes que liberen hombros y caderas para que cada brazada sea fácil."
+     ],
+     "q": "¿Qué te importa más en un bañador: comodidad, estilo o durabilidad?",
+     "c": "Prueba tu bañador: ¿puedes levantar los brazos y patear sin que se mueva?"
+    },
+    "fr": {
+     "t": "Choisir son maillot de bain",
+     "g": "Choisis un maillot confortable qui te laisse bouger librement.",
+     "p": [
+      "Ajusté sans serrer, il reste en place quand tu pousses au mur et que tu battes des jambes.",
+      "Les tissus résistants au chlore gardent leur forme et leur couleur bien plus longtemps.",
+      "Préfère des coupes qui libèrent épaules et hanches pour des mouvements faciles."
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi : confort, style ou solidité ?",
+     "c": "Teste ton maillot : peux-tu lever les bras et battre des jambes sans qu'il bouge ?"
+    },
+    "it": {
+     "t": "Scegliere il costume",
+     "g": "Scegli un costume comodo che ti lasci muovere in libertà.",
+     "p": [
+      "Aderente ma non stretto, resta al suo posto nella spinta e nella battuta di gambe.",
+      "I tessuti resistenti al cloro mantengono forma e colore molto più a lungo.",
+      "Scegli tagli che liberano spalle e fianchi per bracciate più facili."
+     ],
+     "q": "Cosa conta di più per te in un costume: comodità, stile o durata?",
+     "c": "Prova il costume: riesci ad alzare le braccia e battere le gambe senza che si sposti?"
+    },
+    "pt": {
+     "t": "Escolher o fato de banho",
+     "g": "Escolhe um fato de banho confortável que te deixe mexer à vontade.",
+     "p": [
+      "Justo mas sem apertar, fica no lugar quando te impulsionas e bates as pernas.",
+      "Os tecidos resistentes ao cloro mantêm a forma e a cor durante muito mais tempo.",
+      "Prefere cortes que libertem ombros e ancas para cada braçada ser fácil."
+     ],
+     "q": "O que é mais importante para ti num fato de banho: conforto, estilo ou durabilidade?",
+     "c": "Testa o teu fato: consegues levantar os braços e bater pernas sem que ele saia do sítio?"
+    },
+    "pt_BR": {
+     "t": "Escolhendo a roupa de natação",
+     "g": "Escolha um maiô ou sunga confortável que deixe você se mexer à vontade.",
+     "p": [
+      "Justo sem apertar, ele fica no lugar na impulsão e na pernada.",
+      "Tecidos resistentes ao cloro mantêm forma e cor por muito mais tempo.",
+      "Prefira modelos que deixem ombros e quadris livres para cada braçada ficar fácil."
+     ],
+     "q": "O que mais importa para você na roupa de natação: conforto, estilo ou durabilidade?",
+     "c": "Teste sua roupa: dá para levantar os braços e bater perna sem ela sair do lugar?"
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Goggles that fit well",
+     "g": "Choose and adjust goggles so they seal gently and stay clear.",
+     "p": [
+      "Press the goggles to your eyes without the strap: a good pair sticks for a moment.",
+      "Tighten the strap only enough to seal; too tight means sore eyes.",
+      "Avoid touching the inside lenses, which carry an anti-fog coating."
+     ],
+     "q": "Have you ever had leaky or foggy goggles? What happened?",
+     "c": "Do the press test with your goggles and adjust the strap and nose bridge."
+    },
+    "de": {
+     "t": "Schwimmbrillen, die gut sitzen",
+     "g": "Wähle und stelle deine Brille so ein, dass sie sanft abdichtet und klar bleibt.",
+     "p": [
+      "Drück die Brille ohne Band an die Augen: Eine passende bleibt kurz haften.",
+      "Zieh das Band nur so fest, dass sie dicht ist; zu fest drückt unangenehm.",
+      "Fass die Innenseite der Gläser nicht an, dort sitzt die Antibeschlag-Schicht."
+     ],
+     "q": "Hattest du schon mal eine undichte oder beschlagene Brille? Was ist passiert?",
+     "c": "Mach den Andrück-Test und stelle Band und Nasensteg passend ein."
+    },
+    "es": {
+     "t": "Gafas que ajustan bien",
+     "g": "Elige y ajusta tus gafas para que sellen suavemente y no se empañen.",
+     "p": [
+      "Presiónalas contra los ojos sin la goma: unas buenas se quedan pegadas un momento.",
+      "Aprieta la goma solo lo justo para sellar; demasiado apretadas molestan.",
+      "No toques el interior de las lentes, que llevan capa antivaho."
+     ],
+     "q": "¿Alguna vez se te han llenado de agua o empañado las gafas? ¿Qué pasó?",
+     "c": "Haz la prueba de presión y ajusta la goma y el puente nasal."
+    },
+    "fr": {
+     "t": "Des lunettes bien ajustées",
+     "g": "Choisis et règle tes lunettes pour qu'elles soient étanches en douceur et restent claires.",
+     "p": [
+      "Presse-les sur tes yeux sans l'élastique : une bonne paire tient un instant seule.",
+      "Serre l'élastique juste assez pour l'étanchéité ; trop serré, ça fait mal.",
+      "Évite de toucher l'intérieur des verres, traité antibuée."
+     ],
+     "q": "Tes lunettes ont-elles déjà pris l'eau ou fait de la buée ? Raconte !",
+     "c": "Fais le test de pression et ajuste l'élastique et le pont nasal."
+    },
+    "it": {
+     "t": "Occhialini che calzano bene",
+     "g": "Scegli e regola gli occhialini perché sigillino dolcemente e restino limpidi.",
+     "p": [
+      "Premili sugli occhi senza elastico: un buon paio resta attaccato per un attimo.",
+      "Stringi l'elastico solo quanto basta per sigillare; troppo stretto dà fastidio.",
+      "Non toccare l'interno delle lenti, che ha il trattamento antiappannamento."
+     ],
+     "q": "Ti è mai capitato di avere occhialini che imbarcano acqua o si appannano?",
+     "c": "Fai la prova della pressione e regola elastico e ponte nasale."
+    },
+    "pt": {
+     "t": "Óculos que assentam bem",
+     "g": "Escolhe e ajusta os óculos para vedarem com suavidade e não embaciarem.",
+     "p": [
+      "Encosta-os aos olhos sem o elástico: um bom par fica preso por um instante.",
+      "Aperta o elástico só o suficiente para vedar; demasiado apertado incomoda.",
+      "Evita tocar no interior das lentes, que têm tratamento antiembaciamento."
+     ],
+     "q": "Já tiveste óculos a meter água ou embaciados? O que aconteceu?",
+     "c": "Faz o teste da pressão e ajusta o elástico e a ponte do nariz."
+    },
+    "pt_BR": {
+     "t": "Óculos que vedam bem",
+     "g": "Escolha e ajuste os óculos para vedarem de leve e não embaçarem.",
+     "p": [
+      "Encoste nos olhos sem o elástico: um bom par fica grudado por um instante.",
+      "Aperte o elástico só o bastante para vedar; apertado demais incomoda.",
+      "Evite tocar na parte de dentro das lentes, que tem antiembaçante."
+     ],
+     "q": "Seus óculos já entraram água ou embaçaram? O que aconteceu?",
+     "c": "Faça o teste da pressão e ajuste o elástico e a ponte do nariz."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caps, towels and the swim bag",
+     "g": "Pack the small items that make every swim easier and more pleasant.",
+     "p": [
+      "A cap keeps hair out of your face and helps keep the pool clean.",
+      "Flip-flops, a towel and a water bottle are poolside best friends.",
+      "A separate wet bag keeps damp kit away from your dry clothes."
+     ],
+     "q": "What is the one item you always forget when going swimming?",
+     "c": "Pack your swim bag tonight with a checklist so it is ready to go."
+    },
+    "de": {
+     "t": "Kappe, Handtuch und Schwimmtasche",
+     "g": "Pack die kleinen Dinge ein, die jedes Schwimmen leichter und angenehmer machen.",
+     "p": [
+      "Eine Kappe hält Haare aus dem Gesicht und das Wasser sauberer.",
+      "Badeschlappen, Handtuch und Trinkflasche sind beste Freunde am Beckenrand.",
+      "Ein Nassbeutel trennt feuchte Sachen von der trockenen Kleidung."
+     ],
+     "q": "Welchen Gegenstand vergisst du beim Schwimmengehen immer?",
+     "c": "Pack heute Abend deine Tasche mit einer Checkliste, damit sie startklar ist."
+    },
+    "es": {
+     "t": "Gorro, toalla y bolsa de natación",
+     "g": "Prepara las pequeñas cosas que hacen cada baño más fácil y agradable.",
+     "p": [
+      "El gorro aparta el pelo de la cara y ayuda a mantener limpia la piscina.",
+      "Chanclas, toalla y botella de agua son grandes aliadas junto a la piscina.",
+      "Una bolsa estanca separa lo mojado de la ropa seca."
+     ],
+     "q": "¿Qué cosa se te olvida siempre cuando vas a nadar?",
+     "c": "Prepara esta noche tu bolsa con una lista para tenerla lista."
+    },
+    "fr": {
+     "t": "Bonnet, serviette et sac de piscine",
+     "g": "Prépare les petits objets qui rendent chaque séance plus simple et agréable.",
+     "p": [
+      "Le bonnet dégage le visage et aide à garder l'eau propre.",
+      "Tongs, serviette et gourde sont les meilleurs amis du bord de bassin.",
+      "Un sac étanche sépare les affaires mouillées des vêtements secs."
+     ],
+     "q": "Quel objet oublies-tu toujours quand tu vas nager ?",
+     "c": "Prépare ton sac ce soir avec une petite liste pour qu'il soit prêt."
+    },
+    "it": {
+     "t": "Cuffia, asciugamano e borsa",
+     "g": "Prepara le piccole cose che rendono ogni nuotata più facile e piacevole.",
+     "p": [
+      "La cuffia tiene i capelli lontani dal viso e aiuta a mantenere pulita l'acqua.",
+      "Ciabatte, asciugamano e borraccia sono i migliori amici a bordo vasca.",
+      "Una sacca impermeabile separa le cose bagnate dai vestiti asciutti."
+     ],
+     "q": "Qual è l'oggetto che dimentichi sempre quando vai in piscina?",
+     "c": "Prepara stasera la borsa con una lista, così è pronta."
+    },
+    "pt": {
+     "t": "Touca, toalha e saco da piscina",
+     "g": "Prepara as pequenas coisas que tornam cada ida à piscina mais fácil e agradável.",
+     "p": [
+      "A touca afasta o cabelo da cara e ajuda a manter a água limpa.",
+      "Chinelos, toalha e garrafa de água são os melhores amigos à beira da piscina.",
+      "Um saco impermeável separa o equipamento molhado da roupa seca."
+     ],
+     "q": "Qual é a coisa que te esqueces sempre quando vais nadar?",
+     "c": "Prepara hoje à noite o saco com uma lista para ficar pronto."
+    },
+    "pt_BR": {
+     "t": "Touca, toalha e bolsa de natação",
+     "g": "Separe os pequenos itens que deixam cada treino mais fácil e gostoso.",
+     "p": [
+      "A touca tira o cabelo do rosto e ajuda a manter a piscina limpa.",
+      "Chinelo, toalha e garrafinha são os melhores amigos na beira da piscina.",
+      "Uma bolsa impermeável separa o que está molhado da roupa seca."
+     ],
+     "q": "Qual item você sempre esquece quando vai nadar?",
+     "c": "Arrume sua bolsa hoje à noite com uma lista para deixar tudo pronto."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pool etiquette basics",
+     "g": "Learn the friendly rules that make pools pleasant for everyone.",
+     "p": [
+      "Shower before you swim; it keeps the water cleaner for all.",
+      "Follow the lane direction shown at your pool, usually swimming in circles.",
+      "Let faster swimmers pass at the wall and never stop in the middle of a lane."
+     ],
+     "q": "What pool habit from other swimmers makes you smile?",
+     "c": "At your next swim, notice which direction each lane is circling."
+    },
+    "de": {
+     "t": "Grundregeln im Schwimmbad",
+     "g": "Lerne die freundlichen Regeln, die das Bad für alle angenehm machen.",
+     "p": [
+      "Vor dem Schwimmen duschen hält das Wasser für alle sauberer.",
+      "Halte dich an die Bahnrichtung deines Bades, meist schwimmt man im Kreis.",
+      "Lass Schnellere am Rand vorbei und bleib nie mitten auf der Bahn stehen."
+     ],
+     "q": "Welche Gewohnheit anderer Schwimmer bringt dich zum Lächeln?",
+     "c": "Achte beim nächsten Mal darauf, in welche Richtung jede Bahn geschwommen wird."
+    },
+    "es": {
+     "t": "Normas básicas en la piscina",
+     "g": "Aprende las normas amables que hacen la piscina agradable para todos.",
+     "p": [
+      "Dúchate antes de nadar; así el agua se mantiene más limpia para todos.",
+      "Sigue el sentido de la calle que indique tu piscina, normalmente en círculo.",
+      "Deja pasar a los más rápidos en el borde y no te pares en mitad de la calle."
+     ],
+     "q": "¿Qué costumbre de otros nadadores te hace sonreír?",
+     "c": "En tu próximo baño, fíjate en qué sentido se nada en cada calle."
+    },
+    "fr": {
+     "t": "Les bases du savoir-vivre à la piscine",
+     "g": "Découvre les règles bienveillantes qui rendent la piscine agréable pour tous.",
+     "p": [
+      "Douche-toi avant de nager : l'eau reste plus propre pour tout le monde.",
+      "Respecte le sens de circulation de ta piscine, souvent en tournant dans la ligne.",
+      "Laisse passer les plus rapides au mur et ne t'arrête jamais au milieu."
+     ],
+     "q": "Quelle habitude d'autres nageurs te fait sourire ?",
+     "c": "À ta prochaine séance, observe le sens de nage de chaque ligne."
+    },
+    "it": {
+     "t": "Galateo di base in piscina",
+     "g": "Impara le regole gentili che rendono la piscina piacevole per tutti.",
+     "p": [
+      "Fai la doccia prima di nuotare: l'acqua resta più pulita per tutti.",
+      "Segui il senso di marcia della tua piscina, di solito si nuota in cerchio.",
+      "Lascia passare chi è più veloce al bordo e non fermarti a metà corsia."
+     ],
+     "q": "Quale abitudine degli altri nuotatori ti fa sorridere?",
+     "c": "Alla prossima nuotata osserva in che senso si nuota in ogni corsia."
+    },
+    "pt": {
+     "t": "Regras básicas na piscina",
+     "g": "Aprende as regras simpáticas que tornam a piscina agradável para todos.",
+     "p": [
+      "Toma duche antes de nadar; a água fica mais limpa para todos.",
+      "Segue o sentido da pista indicado na tua piscina, normalmente em círculo.",
+      "Deixa passar os mais rápidos na parede e nunca pares a meio da pista."
+     ],
+     "q": "Que hábito de outros nadadores te faz sorrir?",
+     "c": "Na próxima vez, repara em que sentido se nada em cada pista."
+    },
+    "pt_BR": {
+     "t": "Etiqueta básica na piscina",
+     "g": "Aprenda as regras gentis que deixam a piscina agradável para todo mundo.",
+     "p": [
+      "Tome uma ducha antes de nadar; a água fica mais limpa para todos.",
+      "Siga o sentido da raia que sua piscina indica, normalmente em círculo.",
+      "Deixe os mais rápidos passarem na borda e nunca pare no meio da raia."
+     ],
+     "q": "Qual hábito de outros nadadores faz você sorrir?",
+     "c": "No próximo treino, repare em que sentido cada raia está nadando."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading the lanes",
+     "g": "Understand slow, medium and fast lanes and choose the right one for you.",
+     "p": [
+      "Many pools label lanes by speed so everyone can swim at a comfy pace.",
+      "Watch a lane for a minute before joining to see if its pace suits you.",
+      "Starting in the slow lane is smart, not shy, and you can move up later."
+     ],
+     "q": "Which lane do you think you would choose today, and why?",
+     "c": "Next time, watch two lanes for one minute each before you get in."
+    },
+    "de": {
+     "t": "Bahnen richtig lesen",
+     "g": "Verstehe langsame, mittlere und schnelle Bahnen und wähl die passende.",
+     "p": [
+      "Viele Bäder kennzeichnen Bahnen nach Tempo, damit jeder entspannt schwimmen kann.",
+      "Beobachte eine Bahn kurz, bevor du einsteigst, ob das Tempo zu dir passt.",
+      "In der langsamen Bahn anzufangen ist klug, nicht schüchtern; wechseln kannst du später."
+     ],
+     "q": "Welche Bahn würdest du heute wählen, und warum?",
+     "c": "Beobachte beim nächsten Mal zwei Bahnen je eine Minute, bevor du reingehst."
+    },
+    "es": {
+     "t": "Entender las calles",
+     "g": "Conoce las calles lentas, medias y rápidas y elige la que te conviene.",
+     "p": [
+      "Muchas piscinas marcan las calles por ritmo para que todos naden a gusto.",
+      "Observa una calle un minuto antes de entrar para ver si su ritmo te va.",
+      "Empezar en la calle lenta es inteligente, no timidez, y luego puedes cambiar."
+     ],
+     "q": "¿Qué calle elegirías hoy y por qué?",
+     "c": "La próxima vez observa dos calles un minuto cada una antes de entrar."
+    },
+    "fr": {
+     "t": "Comprendre les lignes d'eau",
+     "g": "Repère les lignes lentes, moyennes et rapides et choisis celle qui te convient.",
+     "p": [
+      "Beaucoup de piscines classent les lignes par vitesse pour que chacun nage à l'aise.",
+      "Observe une ligne une minute avant d'y entrer pour voir si le rythme te va.",
+      "Commencer en ligne lente, c'est malin, pas timide, et tu pourras changer ensuite."
+     ],
+     "q": "Quelle ligne choisirais-tu aujourd'hui, et pourquoi ?",
+     "c": "La prochaine fois, observe deux lignes une minute chacune avant d'entrer."
+    },
+    "it": {
+     "t": "Leggere le corsie",
+     "g": "Conosci le corsie lente, medie e veloci e scegli quella giusta per te.",
+     "p": [
+      "Molte piscine dividono le corsie per velocità così ognuno nuota tranquillo.",
+      "Osserva una corsia per un minuto prima di entrare per capire se il ritmo fa per te.",
+      "Partire dalla corsia lenta è furbo, non timido, e poi potrai cambiare."
+     ],
+     "q": "Quale corsia sceglieresti oggi, e perché?",
+     "c": "La prossima volta osserva due corsie per un minuto ciascuna prima di entrare."
+    },
+    "pt": {
+     "t": "Perceber as pistas",
+     "g": "Conhece as pistas lentas, médias e rápidas e escolhe a que te serve.",
+     "p": [
+      "Muitas piscinas dividem as pistas por ritmo para todos nadarem à vontade.",
+      "Observa uma pista durante um minuto antes de entrar para ver se o ritmo te serve.",
+      "Começar na pista lenta é inteligente, não é timidez, e depois podes mudar."
+     ],
+     "q": "Que pista escolherias hoje e porquê?",
+     "c": "Da próxima vez, observa duas pistas durante um minuto cada antes de entrar."
+    },
+    "pt_BR": {
+     "t": "Entendendo as raias",
+     "g": "Conheça as raias lentas, médias e rápidas e escolha a certa para você.",
+     "p": [
+      "Muitas piscinas separam as raias por ritmo para todos nadarem tranquilos.",
+      "Observe uma raia por um minuto antes de entrar para ver se o ritmo combina.",
+      "Começar na raia lenta é esperteza, não timidez, e depois dá para mudar."
+     ],
+     "q": "Qual raia você escolheria hoje, e por quê?",
+     "c": "Na próxima vez, observe duas raias por um minuto cada antes de entrar."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blowing bubbles",
+     "g": "Practise breathing out slowly underwater, the very first breathing skill.",
+     "p": [
+      "Breathe in above water, then hum out through the nose and mouth below.",
+      "A steady stream of bubbles keeps water out of your nose.",
+      "Exhaling fully underwater makes the next breath in quick and easy."
+     ],
+     "q": "Do you find it easier to breathe out through your nose or your mouth?",
+     "c": "Standing in shallow water, blow ten slow bubble streams, each a little longer."
+    },
+    "de": {
+     "t": "Blubbern unter Wasser",
+     "g": "Übe langsames Ausatmen unter Wasser, die allererste Atemtechnik.",
+     "p": [
+      "Über Wasser einatmen, dann unter Wasser durch Nase und Mund aussummen.",
+      "Ein gleichmäßiger Blasenstrom hält Wasser aus der Nase fern.",
+      "Wer unter Wasser ganz ausatmet, kann danach schnell und leicht einatmen."
+     ],
+     "q": "Fällt dir das Ausatmen durch die Nase oder den Mund leichter?",
+     "c": "Stell dich ins flache Wasser und blubber zehnmal langsam, jedes Mal etwas länger."
+    },
+    "es": {
+     "t": "Hacer burbujas",
+     "g": "Practica soltar el aire despacio bajo el agua, la primera habilidad de respiración.",
+     "p": [
+      "Toma aire fuera del agua y suéltalo tarareando por nariz y boca debajo.",
+      "Un chorro constante de burbujas evita que entre agua por la nariz.",
+      "Vaciar bien el aire bajo el agua hace que la siguiente inspiración sea rápida."
+     ],
+     "q": "¿Te resulta más fácil soltar el aire por la nariz o por la boca?",
+     "c": "De pie en agua poco profunda, haz diez series de burbujas, cada una un poco más larga."
+    },
+    "fr": {
+     "t": "Faire des bulles",
+     "g": "Entraîne-toi à souffler lentement sous l'eau, la toute première compétence de respiration.",
+     "p": [
+      "Inspire hors de l'eau, puis expire en fredonnant par le nez et la bouche dessous.",
+      "Un flot régulier de bulles empêche l'eau d'entrer dans le nez.",
+      "Bien vider l'air sous l'eau rend l'inspiration suivante rapide et facile."
+     ],
+     "q": "Trouves-tu plus facile d'expirer par le nez ou par la bouche ?",
+     "c": "Debout en petite profondeur, fais dix séries de bulles, chacune un peu plus longue."
+    },
+    "it": {
+     "t": "Fare le bolle",
+     "g": "Allenati a espirare lentamente sott'acqua, la primissima abilità di respirazione.",
+     "p": [
+      "Inspira fuori dall'acqua, poi espira canticchiando da naso e bocca sotto.",
+      "Un flusso costante di bolle tiene l'acqua fuori dal naso.",
+      "Svuotare bene l'aria sott'acqua rende l'inspirazione successiva rapida e facile."
+     ],
+     "q": "Ti viene più facile espirare dal naso o dalla bocca?",
+     "c": "In piedi in acqua bassa, fai dieci serie di bolle, ognuna un po' più lunga."
+    },
+    "pt": {
+     "t": "Fazer bolhas",
+     "g": "Treina expirar devagar debaixo de água, a primeira competência de respiração.",
+     "p": [
+      "Inspira fora de água e depois expira a cantarolar pelo nariz e pela boca lá dentro.",
+      "Um fluxo contínuo de bolhas impede a água de entrar no nariz.",
+      "Esvaziar bem o ar debaixo de água torna a inspiração seguinte rápida e fácil."
+     ],
+     "q": "Achas mais fácil expirar pelo nariz ou pela boca?",
+     "c": "De pé em água baixa, faz dez séries de bolhas, cada uma um pouco mais longa."
+    },
+    "pt_BR": {
+     "t": "Fazendo bolhinhas",
+     "g": "Pratique soltar o ar devagar embaixo d'água, a primeira habilidade de respiração.",
+     "p": [
+      "Puxe o ar fora da água e solte cantarolando pelo nariz e pela boca embaixo.",
+      "Um fluxo constante de bolhas impede a água de entrar no nariz.",
+      "Soltar bem o ar embaixo d'água deixa a próxima inspiração rápida e fácil."
+     ],
+     "q": "Para você é mais fácil soltar o ar pelo nariz ou pela boca?",
+     "c": "Em pé na parte rasa, faça dez séries de bolhas, cada uma um pouco mais longa."
+    }
+   }
+  }
+ ]
+}

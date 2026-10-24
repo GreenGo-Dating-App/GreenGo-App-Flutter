@@ -1,0 +1,835 @@
+{
+ "topic": "basketball",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shot clock basics",
+     "g": "Learn how the shot clock keeps the game moving.",
+     "p": [
+      "A team has 24 seconds to attempt a shot that at least touches the rim.",
+      "The NBA introduced the 24-second clock in 1954 to stop teams from stalling with the ball.",
+      "After an offensive rebound off the rim, the clock resets to 14 seconds in both NBA and FIBA rules."
+     ],
+     "q": "How do you think games looked before there was a shot clock?",
+     "c": "Count 24 seconds out loud and imagine a whole attack in that time."
+    },
+    "de": {
+     "t": "Die Wurfuhr",
+     "g": "Lerne, wie die Wurfuhr das Spiel in Bewegung hält.",
+     "p": [
+      "Ein Team hat 24 Sekunden, um einen Wurf zu nehmen, der mindestens den Ring berührt.",
+      "Die NBA führte die 24-Sekunden-Uhr 1954 ein, damit Teams den Ball nicht ewig halten.",
+      "Nach einem Offensivrebound vom Ring springt die Uhr in NBA und FIBA auf 14 Sekunden."
+     ],
+     "q": "Wie sahen Spiele wohl aus, bevor es eine Wurfuhr gab?",
+     "c": "Zähl laut bis 24 und stell dir einen ganzen Angriff in dieser Zeit vor."
+    },
+    "es": {
+     "t": "El reloj de posesión",
+     "g": "Aprende cómo el reloj de 24 segundos mantiene vivo el juego.",
+     "p": [
+      "Un equipo tiene 24 segundos para lanzar un tiro que al menos toque el aro.",
+      "La NBA introdujo el reloj de 24 segundos en 1954 para evitar que los equipos congelaran el balón.",
+      "Tras un rebote ofensivo que toca el aro, el reloj vuelve a 14 segundos en NBA y FIBA."
+     ],
+     "q": "¿Cómo crees que eran los partidos antes del reloj de posesión?",
+     "c": "Cuenta 24 segundos en voz alta e imagina un ataque completo en ese tiempo."
+    },
+    "fr": {
+     "t": "Les 24 secondes",
+     "g": "Apprendre comment l'horloge des tirs garde le jeu vivant.",
+     "p": [
+      "Une équipe a 24 secondes pour tenter un tir qui touche au moins l'arceau.",
+      "La NBA a introduit les 24 secondes en 1954 pour empêcher les équipes de garder le ballon sans fin.",
+      "Après un rebond offensif qui a touché l'arceau, l'horloge repart à 14 secondes en NBA et en FIBA."
+     ],
+     "q": "À quoi ressemblaient les matchs avant les 24 secondes, à ton avis ?",
+     "c": "Compte 24 secondes à voix haute et imagine une attaque entière dans ce temps."
+    },
+    "it": {
+     "t": "Il cronometro dei 24 secondi",
+     "g": "Impara come i 24 secondi tengono vivo il gioco.",
+     "p": [
+      "Una squadra ha 24 secondi per tirare e almeno toccare il ferro.",
+      "La NBA introdusse i 24 secondi nel 1954 per impedire alle squadre di tenere palla all'infinito.",
+      "Dopo un rimbalzo offensivo che ha toccato il ferro, il cronometro riparte da 14 secondi in NBA e FIBA."
+     ],
+     "q": "Come pensi fossero le partite prima dei 24 secondi?",
+     "c": "Conta 24 secondi ad alta voce e immagina un attacco intero in quel tempo."
+    },
+    "pt": {
+     "t": "O relógio dos 24 segundos",
+     "g": "Aprende como o relógio de posse mantém o jogo vivo.",
+     "p": [
+      "Uma equipa tem 24 segundos para fazer um lançamento que pelo menos toque no aro.",
+      "A NBA criou o relógio de 24 segundos em 1954 para impedir as equipas de reter a bola.",
+      "Depois de um ressalto ofensivo que tocou no aro, o relógio volta aos 14 segundos na NBA e na FIBA."
+     ],
+     "q": "Como achas que eram os jogos antes do relógio de posse?",
+     "c": "Conta 24 segundos em voz alta e imagina um ataque inteiro nesse tempo."
+    },
+    "pt_BR": {
+     "t": "O cronômetro de 24 segundos",
+     "g": "Aprenda como o cronômetro de posse mantém o jogo andando.",
+     "p": [
+      "Um time tem 24 segundos para arremessar e a bola pelo menos tocar o aro.",
+      "A NBA criou o cronômetro de 24 segundos em 1954 para impedir que os times segurassem a bola.",
+      "Depois de um rebote ofensivo que tocou o aro, o relógio volta a 14 segundos na NBA e na FIBA."
+     ],
+     "q": "Como você acha que eram os jogos antes do cronômetro de posse?",
+     "c": "Conte 24 segundos em voz alta e imagine um ataque inteiro nesse tempo."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Three-second rule",
+     "g": "Understand why attackers cannot stand in the paint.",
+     "p": [
+      "An attacking player may not stay in the paint for more than three seconds in a row.",
+      "The rule keeps tall players from camping under the basket and keeps the game open.",
+      "The NBA also has defensive three seconds: a defender cannot wait in the paint without guarding someone."
+     ],
+     "q": "Why do you think tall players were the reason for this rule?",
+     "c": "Stand in a marked area and count three seconds: notice how short it is."
+    },
+    "de": {
+     "t": "Die Drei-Sekunden-Regel",
+     "g": "Verstehe, warum Angreifer nicht in der Zone stehen bleiben dürfen.",
+     "p": [
+      "Ein Angreifer darf nicht länger als drei Sekunden am Stück in der Zone stehen.",
+      "Die Regel verhindert, dass große Spieler unter dem Korb parken, und hält das Spiel offen.",
+      "Die NBA kennt auch defensive drei Sekunden: Ein Verteidiger darf dort nicht ohne Gegenspieler warten."
+     ],
+     "q": "Warum waren wohl große Spieler der Grund für diese Regel?",
+     "c": "Stell dich in einen markierten Bereich und zähl drei Sekunden: Merk, wie kurz das ist."
+    },
+    "es": {
+     "t": "La regla de tres segundos",
+     "g": "Entiende por qué los atacantes no pueden quedarse en la zona.",
+     "p": [
+      "Un atacante no puede permanecer más de tres segundos seguidos en la zona.",
+      "La regla impide que los altos se instalen bajo el aro y mantiene el juego abierto.",
+      "La NBA también tiene tres segundos defensivos: un defensor no puede esperar en la zona sin marcar a nadie."
+     ],
+     "q": "¿Por qué crees que los jugadores altos motivaron esta regla?",
+     "c": "Ponte en una zona marcada y cuenta tres segundos: fíjate en lo poco que duran."
+    },
+    "fr": {
+     "t": "La règle des trois secondes",
+     "g": "Comprendre pourquoi les attaquants ne peuvent pas rester dans la raquette.",
+     "p": [
+      "Un attaquant ne peut pas rester plus de trois secondes d'affilée dans la raquette.",
+      "La règle empêche les grands de s'installer sous le panier et garde le jeu ouvert.",
+      "La NBA a aussi trois secondes défensives : un défenseur ne peut pas y attendre sans marquer quelqu'un."
+     ],
+     "q": "Pourquoi les grands joueurs ont-ils inspiré cette règle, selon toi ?",
+     "c": "Place-toi dans une zone tracée et compte trois secondes : vois comme c'est court."
+    },
+    "it": {
+     "t": "La regola dei tre secondi",
+     "g": "Capisci perché gli attaccanti non possono restare in area.",
+     "p": [
+      "Un attaccante non può restare in area per più di tre secondi di fila.",
+      "La regola impedisce ai lunghi di piazzarsi sotto canestro e mantiene il gioco aperto.",
+      "In NBA esistono anche i tre secondi difensivi: un difensore non può sostare in area senza marcare nessuno."
+     ],
+     "q": "Perché pensi che i giocatori alti abbiano portato a questa regola?",
+     "c": "Mettiti in una zona segnata e conta tre secondi: nota quanto sono brevi."
+    },
+    "pt": {
+     "t": "A regra dos três segundos",
+     "g": "Percebe porque é que os atacantes não podem ficar na área restritiva.",
+     "p": [
+      "Um atacante não pode ficar mais de três segundos seguidos na área restritiva.",
+      "A regra impede os mais altos de se instalarem debaixo do cesto e mantém o jogo aberto.",
+      "A NBA tem também três segundos defensivos: um defensor não pode esperar lá sem marcar ninguém."
+     ],
+     "q": "Porque achas que os jogadores altos deram origem a esta regra?",
+     "c": "Põe-te numa zona marcada e conta três segundos: repara como é pouco."
+    },
+    "pt_BR": {
+     "t": "A regra dos três segundos",
+     "g": "Entenda por que os atacantes não podem ficar no garrafão.",
+     "p": [
+      "Um atacante não pode ficar mais de três segundos seguidos no garrafão.",
+      "A regra impede que os altos se instalem embaixo da cesta e mantém o jogo aberto.",
+      "A NBA tem também os três segundos defensivos: o marcador não pode ficar lá sem marcar ninguém."
+     ],
+     "q": "Por que você acha que os jogadores altos motivaram essa regra?",
+     "c": "Fique numa área marcada e conte três segundos: repare como é pouco."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backcourt violations",
+     "g": "Learn the rules about bringing the ball over half court.",
+     "p": [
+      "After gaining possession in its backcourt, a team has 8 seconds to cross the half-court line.",
+      "Once the ball is in the frontcourt, the attacking team may not send it back over half court.",
+      "This over-and-back rule stops teams from using the whole court to waste time."
+     ],
+     "q": "Have you ever seen a guard rush to beat the 8-second count?",
+     "c": "Walk from one baseline to the half-court line and time how long it takes."
+    },
+    "de": {
+     "t": "Rückfeld-Regeln",
+     "g": "Lerne die Regeln zum Überqueren der Mittellinie.",
+     "p": [
+      "Nach Ballgewinn im Rückfeld hat ein Team 8 Sekunden, um die Mittellinie zu überqueren.",
+      "Ist der Ball im Vorfeld, darf der Angreifer ihn nicht zurück über die Mittellinie spielen.",
+      "Diese Rückspielregel verhindert, dass Teams das ganze Feld zum Zeitschinden nutzen."
+     ],
+     "q": "Hast du schon einen Guard gesehen, der gegen die 8 Sekunden ankämpft?",
+     "c": "Geh von der Grundlinie zur Mittellinie und stopp die Zeit."
+    },
+    "es": {
+     "t": "Violaciones de campo atrás",
+     "g": "Aprende las reglas para pasar el balón de medio campo.",
+     "p": [
+      "Tras ganar la posesión en su campo, un equipo tiene 8 segundos para cruzar la línea central.",
+      "Una vez en campo de ataque, el equipo atacante no puede devolver el balón a su campo.",
+      "Esta regla de campo atrás evita que se use toda la cancha para perder tiempo."
+     ],
+     "q": "¿Has visto alguna vez a un base correr para no pasarse de los 8 segundos?",
+     "c": "Camina de la línea de fondo a la central y cronometra cuánto tardas."
+    },
+    "fr": {
+     "t": "Les violations de retour en zone",
+     "g": "Apprendre les règles pour franchir la ligne médiane.",
+     "p": [
+      "Après avoir pris le ballon dans sa zone arrière, une équipe a 8 secondes pour passer la ligne médiane.",
+      "Une fois en zone avant, l'équipe qui attaque ne peut pas renvoyer le ballon en zone arrière.",
+      "Cette règle du retour en zone empêche d'utiliser tout le terrain pour gagner du temps."
+     ],
+     "q": "As-tu déjà vu un meneur se dépêcher pour battre les 8 secondes ?",
+     "c": "Marche de la ligne de fond à la ligne médiane et chronomètre ton trajet."
+    },
+    "it": {
+     "t": "Le infrazioni di metà campo",
+     "g": "Impara le regole per passare la metà campo.",
+     "p": [
+      "Dopo aver preso palla nella propria metà campo, una squadra ha 8 secondi per superare la linea centrale.",
+      "Una volta in attacco, la squadra non può riportare la palla nella metà campo difensiva.",
+      "Questa regola dell'infrazione di campo evita di usare tutto il campo per perdere tempo."
+     ],
+     "q": "Hai mai visto un playmaker correre per battere gli 8 secondi?",
+     "c": "Cammina dalla linea di fondo a quella centrale e cronometra il tempo."
+    },
+    "pt": {
+     "t": "Violações de campo atrás",
+     "g": "Aprende as regras para passar o meio-campo.",
+     "p": [
+      "Depois de ganhar a posse no seu meio-campo, uma equipa tem 8 segundos para passar a linha central.",
+      "Com a bola no meio-campo ofensivo, o ataque não a pode devolver para trás da linha central.",
+      "Esta regra de bola atrás evita que se use o campo todo para ganhar tempo."
+     ],
+     "q": "Já viste algum base a correr para bater os 8 segundos?",
+     "c": "Caminha da linha de fundo até à linha central e cronometra quanto demoras."
+    },
+    "pt_BR": {
+     "t": "Violações de quadra de defesa",
+     "g": "Aprenda as regras para passar do meio da quadra.",
+     "p": [
+      "Depois de ganhar a posse na defesa, o time tem 8 segundos para cruzar a linha central.",
+      "Com a bola no ataque, o time atacante não pode devolvê-la para a quadra de defesa.",
+      "Essa regra de volta de bola impede que se use a quadra toda para gastar tempo."
+     ],
+     "q": "Você já viu um armador correr para não estourar os 8 segundos?",
+     "c": "Caminhe da linha de fundo até a linha central e cronometre quanto demora."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Out of bounds and inbounds",
+     "g": "Understand how the ball goes out and comes back into play.",
+     "p": [
+      "The ball is out when it or the player holding it touches the line or beyond.",
+      "The team that did not touch it last gets the ball and has 5 seconds to pass it in.",
+      "Games start with a jump ball at center court; the NBA uses jump balls for tie-ups, FIBA an alternating arrow."
+     ],
+     "q": "Did you know the lines themselves count as out of bounds?",
+     "c": "Watch a game restart and count how long the inbound pass takes."
+    },
+    "de": {
+     "t": "Aus und Einwurf",
+     "g": "Verstehe, wie der Ball ins Aus geht und zurück ins Spiel kommt.",
+     "p": [
+      "Der Ball ist im Aus, wenn er oder der Spieler mit Ball die Linie oder den Bereich dahinter berührt.",
+      "Das Team, das ihn nicht zuletzt berührt hat, bekommt Einwurf und hat dafür 5 Sekunden.",
+      "Spiele beginnen mit einem Sprungball; die NBA nutzt ihn auch bei Halteball, die FIBA einen Wechselpfeil."
+     ],
+     "q": "Wusstest du, dass die Linien selbst schon zum Aus gehören?",
+     "c": "Schau eine Spielfortsetzung und zähl, wie lange der Einwurf dauert."
+    },
+    "es": {
+     "t": "Fuera de banda y saque",
+     "g": "Entiende cómo sale el balón y cómo vuelve al juego.",
+     "p": [
+      "El balón está fuera cuando él o el jugador que lo tiene toca la línea o lo que hay detrás.",
+      "El equipo que no lo tocó último saca y tiene 5 segundos para pasarlo dentro.",
+      "Se empieza con salto entre dos; la NBA lo usa en balones retenidos, FIBA una flecha de posesión alterna."
+     ],
+     "q": "¿Sabías que las propias líneas cuentan como fuera?",
+     "c": "Mira una reanudación y cuenta cuánto tarda el saque."
+    },
+    "fr": {
+     "t": "Sorties et remises en jeu",
+     "g": "Comprendre comment le ballon sort et revient en jeu.",
+     "p": [
+      "Le ballon est dehors quand lui ou le joueur qui le tient touche la ligne ou au-delà.",
+      "L'équipe qui ne l'a pas touché en dernier fait la remise en jeu et a 5 secondes pour la jouer.",
+      "Le match débute par un entre-deux ; la NBA l'utilise sur ballon tenu, la FIBA une flèche d'alternance."
+     ],
+     "q": "Savais-tu que les lignes elles-mêmes sont hors du terrain ?",
+     "c": "Regarde une reprise du jeu et compte la durée de la remise en jeu."
+    },
+    "it": {
+     "t": "Fuori campo e rimessa",
+     "g": "Capisci come la palla esce e rientra in gioco.",
+     "p": [
+      "La palla è fuori quando lei o chi la tiene tocca la linea o oltre.",
+      "La squadra che non l'ha toccata per ultima fa la rimessa e ha 5 secondi per passarla.",
+      "Si inizia con la palla a due; la NBA la usa per le palle trattenute, la FIBA la freccia del possesso alternato."
+     ],
+     "q": "Sapevi che le linee stesse contano come fuori?",
+     "c": "Guarda una ripresa del gioco e conta quanto dura la rimessa."
+    },
+    "pt": {
+     "t": "Bola fora e reposição",
+     "g": "Percebe como a bola sai e volta ao jogo.",
+     "p": [
+      "A bola está fora quando ela ou o jogador que a tem toca a linha ou o que fica para lá dela.",
+      "A equipa que não lhe tocou por último repõe e tem 5 segundos para a passar.",
+      "O jogo começa com bola ao ar; a NBA usa-a nas bolas presas, a FIBA uma seta de posse alternada."
+     ],
+     "q": "Sabias que as próprias linhas já contam como fora?",
+     "c": "Vê um recomeço de jogo e conta quanto tempo demora a reposição."
+    },
+    "pt_BR": {
+     "t": "Bola fora e reposição",
+     "g": "Entenda como a bola sai e volta ao jogo.",
+     "p": [
+      "A bola está fora quando ela ou o jogador que a segura toca a linha ou além dela.",
+      "O time que não tocou por último repõe a bola e tem 5 segundos para passá-la.",
+      "O jogo começa com bola ao alto; a NBA usa isso em bolas presas, a FIBA uma seta de posse alternada."
+     ],
+     "q": "Você sabia que as próprias linhas já contam como fora?",
+     "c": "Assista a um reinício de jogo e conte quanto tempo leva a reposição."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Man-to-man defense",
+     "g": "Learn the most common way to defend.",
+     "p": [
+      "Each defender guards one opponent and follows them wherever they go.",
+      "Stay low in a defensive stance with knees bent and weight on the balls of your feet.",
+      "Keep yourself between your player and the basket at all times."
+     ],
+     "q": "Would you enjoy the challenge of guarding the other team's best player?",
+     "c": "Practice your defensive stance for 30 seconds three times today."
+    },
+    "de": {
+     "t": "Mann-Mann-Verteidigung",
+     "g": "Lerne die häufigste Art zu verteidigen.",
+     "p": [
+      "Jeder Verteidiger übernimmt einen Gegenspieler und folgt ihm überallhin.",
+      "Bleib tief in der Verteidigungsstellung, Knie gebeugt, Gewicht auf den Fußballen.",
+      "Halte dich immer zwischen deinem Gegenspieler und dem Korb."
+     ],
+     "q": "Würde dich die Aufgabe reizen, den besten Spieler des Gegners zu decken?",
+     "c": "Halte heute dreimal 30 Sekunden lang die Verteidigungsstellung."
+    },
+    "es": {
+     "t": "Defensa individual",
+     "g": "Aprende la forma más común de defender.",
+     "p": [
+      "Cada defensor marca a un rival y lo sigue allá donde vaya.",
+      "Mantente bajo en posición defensiva, rodillas flexionadas y peso en la parte delantera del pie.",
+      "Colócate siempre entre tu jugador y la canasta."
+     ],
+     "q": "¿Te gustaría el reto de defender al mejor jugador rival?",
+     "c": "Practica hoy la posición defensiva tres veces durante 30 segundos."
+    },
+    "fr": {
+     "t": "La défense individuelle",
+     "g": "Apprendre la manière la plus courante de défendre.",
+     "p": [
+      "Chaque défenseur marque un adversaire et le suit partout.",
+      "Reste bas en position défensive, genoux fléchis, poids sur l'avant des pieds.",
+      "Place-toi toujours entre ton joueur et le panier."
+     ],
+     "q": "Aimerais-tu le défi de défendre sur le meilleur joueur adverse ?",
+     "c": "Tiens ta position défensive trois fois 30 secondes aujourd'hui."
+    },
+    "it": {
+     "t": "Difesa a uomo",
+     "g": "Impara il modo più comune di difendere.",
+     "p": [
+      "Ogni difensore marca un avversario e lo segue ovunque vada.",
+      "Stai basso in posizione difensiva, ginocchia piegate e peso sugli avampiedi.",
+      "Mettiti sempre tra il tuo uomo e il canestro."
+     ],
+     "q": "Ti piacerebbe la sfida di marcare il miglior giocatore avversario?",
+     "c": "Mantieni la posizione difensiva per 30 secondi tre volte oggi."
+    },
+    "pt": {
+     "t": "Defesa individual",
+     "g": "Aprende a forma mais comum de defender.",
+     "p": [
+      "Cada defensor marca um adversário e segue-o para onde for.",
+      "Fica baixo na posição defensiva, joelhos fletidos e peso na parte da frente dos pés.",
+      "Mantém-te sempre entre o teu jogador e o cesto."
+     ],
+     "q": "Gostavas do desafio de defender o melhor jogador adversário?",
+     "c": "Pratica hoje a posição defensiva três vezes durante 30 segundos."
+    },
+    "pt_BR": {
+     "t": "Marcação individual",
+     "g": "Aprenda a forma mais comum de defender.",
+     "p": [
+      "Cada marcador cuida de um adversário e o acompanha para onde ele for.",
+      "Fique baixo na posição de defesa, joelhos dobrados e peso na ponta dos pés.",
+      "Fique sempre entre o seu jogador e a cesta."
+     ],
+     "q": "Você curtiria o desafio de marcar o melhor jogador rival?",
+     "c": "Pratique hoje a posição de defesa três vezes por 30 segundos."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Zone defense basics",
+     "g": "Learn how defending an area differs from guarding a player.",
+     "p": [
+      "In a zone, each defender covers an area of the court instead of one opponent.",
+      "The classic 2-3 zone puts two players up top and three along the baseline to protect the paint.",
+      "The NBA only allowed zone defense from 2001; before that it was illegal there."
+     ],
+     "q": "Where on the court do you think a 2-3 zone is weakest?",
+     "c": "Sketch a 2-3 zone with five dots on your court drawing from day 2."
+    },
+    "de": {
+     "t": "Zonenverteidigung: Grundlagen",
+     "g": "Lerne, wie sich Raumdeckung von Manndeckung unterscheidet.",
+     "p": [
+      "In der Zone deckt jeder Verteidiger einen Bereich statt eines Gegenspielers.",
+      "Die klassische 2-3-Zone stellt zwei Spieler vorn und drei an die Grundlinie, um die Zone zu schützen.",
+      "In der NBA ist Zonenverteidigung erst seit 2001 erlaubt, vorher war sie dort verboten."
+     ],
+     "q": "Wo ist eine 2-3-Zone deiner Meinung nach am schwächsten?",
+     "c": "Zeichne mit fünf Punkten eine 2-3-Zone in deine Feldskizze von Tag 2."
+    },
+    "es": {
+     "t": "Defensa en zona: lo básico",
+     "g": "Aprende en qué se diferencia defender un área de marcar a un jugador.",
+     "p": [
+      "En zona, cada defensor cubre un área de la cancha en lugar de un rival.",
+      "La clásica zona 2-3 pone dos jugadores arriba y tres en la línea de fondo para proteger la pintura.",
+      "La NBA no permitió la defensa en zona hasta 2001; antes allí estaba prohibida."
+     ],
+     "q": "¿Dónde crees que es más débil una zona 2-3?",
+     "c": "Dibuja una zona 2-3 con cinco puntos en tu esquema de cancha del día 2."
+    },
+    "fr": {
+     "t": "Les bases de la défense de zone",
+     "g": "Apprendre ce qui distingue défendre une zone et marquer un joueur.",
+     "p": [
+      "En zone, chaque défenseur couvre une partie du terrain au lieu d'un adversaire.",
+      "La zone 2-3 classique place deux joueurs devant et trois sur la ligne de fond pour protéger la raquette.",
+      "La NBA n'a autorisé la défense de zone qu'en 2001 ; avant, elle y était interdite."
+     ],
+     "q": "Où une zone 2-3 est-elle la plus faible, selon toi ?",
+     "c": "Dessine une zone 2-3 avec cinq points sur ton croquis de terrain du jour 2."
+    },
+    "it": {
+     "t": "Difesa a zona: le basi",
+     "g": "Impara la differenza tra difendere un'area e marcare un giocatore.",
+     "p": [
+      "A zona, ogni difensore copre un'area del campo invece di un avversario.",
+      "La classica zona 2-3 mette due giocatori in alto e tre sulla linea di fondo per proteggere l'area.",
+      "La NBA ha ammesso la difesa a zona solo dal 2001; prima lì era vietata."
+     ],
+     "q": "Dove pensi che una zona 2-3 sia più debole?",
+     "c": "Disegna una zona 2-3 con cinque punti sullo schizzo del campo del giorno 2."
+    },
+    "pt": {
+     "t": "Defesa à zona: o básico",
+     "g": "Aprende a diferença entre defender uma zona e marcar um jogador.",
+     "p": [
+      "Na defesa à zona, cada defensor cobre uma área do campo em vez de um adversário.",
+      "A clássica zona 2-3 põe dois jogadores à frente e três junto à linha de fundo para proteger a área.",
+      "A NBA só permitiu a defesa à zona a partir de 2001; antes era proibida lá."
+     ],
+     "q": "Onde achas que uma zona 2-3 é mais fraca?",
+     "c": "Desenha uma zona 2-3 com cinco pontos no esboço do campo do dia 2."
+    },
+    "pt_BR": {
+     "t": "Defesa por zona: o básico",
+     "g": "Aprenda a diferença entre defender uma área e marcar um jogador.",
+     "p": [
+      "Na zona, cada marcador cobre uma área da quadra em vez de um adversário.",
+      "A clássica zona 2-3 coloca dois jogadores na frente e três na linha de fundo para proteger o garrafão.",
+      "A NBA só liberou a defesa por zona em 2001; antes ela era proibida lá."
+     ],
+     "q": "Onde você acha que uma zona 2-3 é mais fraca?",
+     "c": "Desenhe uma zona 2-3 com cinco pontos no esboço de quadra do dia 2."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Referees and signals",
+     "g": "Learn to read the most common referee signals.",
+     "p": [
+      "Rolling fists in front of the body means traveling; a raised fist after a whistle means a foul.",
+      "Three fingers up signals a three-point attempt, and both arms up mean it went in.",
+      "Hands on hips signal a blocking foul; a fist hitting an open palm signals a charge."
+     ],
+     "q": "Which referee signal do you find the most fun to watch?",
+     "c": "Copy five referee signals in front of a mirror."
+    },
+    "de": {
+     "t": "Schiedsrichter und Handzeichen",
+     "g": "Lerne, die häufigsten Handzeichen der Schiedsrichter zu lesen.",
+     "p": [
+      "Kreisende Fäuste vor dem Körper heißen Schrittfehler, eine erhobene Faust nach dem Pfiff heißt Foul.",
+      "Drei erhobene Finger zeigen einen Dreierversuch, beide Arme oben bedeuten: Treffer.",
+      "Hände an den Hüften zeigen ein Blockfoul, eine Faust in die offene Hand ein Offensivfoul."
+     ],
+     "q": "Welches Schiedsrichterzeichen findest du am lustigsten?",
+     "c": "Mach fünf Schiedsrichterzeichen vor dem Spiegel nach."
+    },
+    "es": {
+     "t": "Árbitros y señales",
+     "g": "Aprende a leer las señales arbitrales más comunes.",
+     "p": [
+      "Girar los puños delante del cuerpo significa pasos; un puño en alto tras el silbato, falta.",
+      "Tres dedos arriba indican un intento de triple, y los dos brazos arriba que entró.",
+      "Las manos en la cadera señalan falta en bloqueo; un puño contra la palma, falta en ataque."
+     ],
+     "q": "¿Qué señal arbitral te parece más divertida de ver?",
+     "c": "Imita cinco señales arbitrales delante de un espejo."
+    },
+    "fr": {
+     "t": "Arbitres et gestes",
+     "g": "Apprendre à lire les gestes d'arbitre les plus courants.",
+     "p": [
+      "Rouler les poings devant soi signifie marcher ; un poing levé après le coup de sifflet, une faute.",
+      "Trois doigts levés signalent une tentative à trois points, les deux bras levés qu'elle est réussie.",
+      "Les mains sur les hanches signalent un écran illégal ou un blocage ; un poing dans la paume, un passage en force."
+     ],
+     "q": "Quel geste d'arbitre trouves-tu le plus amusant ?",
+     "c": "Imite cinq gestes d'arbitre devant un miroir."
+    },
+    "it": {
+     "t": "Arbitri e segnali",
+     "g": "Impara a leggere i segnali arbitrali più comuni.",
+     "p": [
+      "Ruotare i pugni davanti al corpo significa passi; un pugno alzato dopo il fischio, fallo.",
+      "Tre dita alzate indicano un tentativo da tre, entrambe le braccia in alto che è entrato.",
+      "Le mani sui fianchi segnalano un blocco irregolare; un pugno sul palmo, uno sfondamento."
+     ],
+     "q": "Quale segnale arbitrale trovi più divertente da guardare?",
+     "c": "Imita cinque segnali arbitrali davanti allo specchio."
+    },
+    "pt": {
+     "t": "Árbitros e sinais",
+     "g": "Aprende a ler os sinais de arbitragem mais comuns.",
+     "p": [
+      "Rodar os punhos à frente do corpo significa passos; um punho no ar depois do apito, falta.",
+      "Três dedos no ar indicam tentativa de três pontos, os dois braços no ar que entrou.",
+      "Mãos na cintura indicam falta por bloqueio; um punho a bater na palma, falta atacante."
+     ],
+     "q": "Que sinal de arbitragem achas mais divertido de ver?",
+     "c": "Imita cinco sinais de arbitragem em frente ao espelho."
+    },
+    "pt_BR": {
+     "t": "Árbitros e sinais",
+     "g": "Aprenda a ler os sinais de arbitragem mais comuns.",
+     "p": [
+      "Girar os punhos na frente do corpo significa andada; um punho erguido após o apito, falta.",
+      "Três dedos erguidos indicam tentativa de três, os dois braços erguidos que caiu.",
+      "Mãos na cintura indicam falta de bloqueio; punho batendo na palma, falta de ataque."
+     ],
+     "q": "Que sinal de arbitragem você acha mais divertido?",
+     "c": "Imite cinco sinais de arbitragem na frente do espelho."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The bench and substitutions",
+     "g": "Understand how coaches use their bench.",
+     "p": [
+      "Substitutions happen only when the ball is dead, and players check in at the scorer's table.",
+      "Timeouts let coaches rest players, fix problems and draw up a play.",
+      "The sixth player is the first one off the bench, and the NBA even gives a Sixth Man of the Year award."
+     ],
+     "q": "Would you rather start the game or be the spark off the bench?",
+     "c": "Watch a game and note the first moment a substitute comes in."
+    },
+    "de": {
+     "t": "Bank und Wechsel",
+     "g": "Verstehe, wie Trainer ihre Bank nutzen.",
+     "p": [
+      "Gewechselt wird nur, wenn der Ball tot ist, und der Spieler meldet sich am Kampfgericht.",
+      "Auszeiten geben Trainern Zeit, Spieler zu schonen, Probleme zu lösen und Spielzüge anzusagen.",
+      "Der sechste Mann ist der erste von der Bank, die NBA verleiht sogar den Preis Sixth Man of the Year."
+     ],
+     "q": "Würdest du lieber starten oder als Energiebündel von der Bank kommen?",
+     "c": "Schau ein Spiel und merk dir den ersten Moment, in dem eingewechselt wird."
+    },
+    "es": {
+     "t": "El banquillo y los cambios",
+     "g": "Entiende cómo usan los entrenadores su banquillo.",
+     "p": [
+      "Los cambios solo se hacen con el balón muerto, y el jugador avisa en la mesa de anotadores.",
+      "Los tiempos muertos sirven para dar descanso, corregir problemas y diseñar una jugada.",
+      "El sexto hombre es el primer suplente en entrar, y la NBA tiene hasta un premio al Mejor Sexto Hombre."
+     ],
+     "q": "¿Preferirías ser titular o la chispa que sale del banquillo?",
+     "c": "Mira un partido y anota el primer momento en que entra un suplente."
+    },
+    "fr": {
+     "t": "Le banc et les changements",
+     "g": "Comprendre comment les coachs utilisent leur banc.",
+     "p": [
+      "Les changements ont lieu seulement ballon mort, et le joueur se présente à la table de marque.",
+      "Les temps morts servent à reposer, corriger les problèmes et dessiner un système.",
+      "Le sixième homme est le premier à sortir du banc, et la NBA lui décerne même un trophée annuel."
+     ],
+     "q": "Tu préfères être titulaire ou l'étincelle qui sort du banc ?",
+     "c": "Regarde un match et note le premier moment où un remplaçant entre."
+    },
+    "it": {
+     "t": "La panchina e i cambi",
+     "g": "Capisci come gli allenatori usano la panchina.",
+     "p": [
+      "I cambi si fanno solo a palla morta, e il giocatore si presenta al tavolo degli ufficiali.",
+      "I timeout servono a far riposare, correggere problemi e disegnare uno schema.",
+      "Il sesto uomo è il primo a entrare dalla panchina, e la NBA gli dedica perfino un premio."
+     ],
+     "q": "Preferiresti partire titolare o essere la scintilla dalla panchina?",
+     "c": "Guarda una partita e annota il primo momento in cui entra un cambio."
+    },
+    "pt": {
+     "t": "O banco e as substituições",
+     "g": "Percebe como os treinadores usam o banco.",
+     "p": [
+      "As substituições só acontecem com a bola morta, e o jogador apresenta-se na mesa.",
+      "Os descontos de tempo servem para descansar, corrigir problemas e desenhar uma jogada.",
+      "O sexto homem é o primeiro a sair do banco, e a NBA até tem um prémio de Sexto Homem do Ano."
+     ],
+     "q": "Preferias ser titular ou a faísca que sai do banco?",
+     "c": "Vê um jogo e repara no primeiro momento em que entra um suplente."
+    },
+    "pt_BR": {
+     "t": "O banco e as substituições",
+     "g": "Entenda como os técnicos usam o banco.",
+     "p": [
+      "As substituições só acontecem com a bola parada, e o jogador se apresenta na mesa.",
+      "Os pedidos de tempo servem para descansar, corrigir problemas e desenhar uma jogada.",
+      "O sexto homem é o primeiro a sair do banco, e a NBA tem até um prêmio de Sexto Homem do Ano."
+     ],
+     "q": "Você prefere ser titular ou a faísca que sai do banco?",
+     "c": "Assista a um jogo e anote o primeiro momento em que entra um reserva."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watching your first game",
+     "g": "Learn what to follow on screen during a game.",
+     "p": [
+      "The scoreboard shows score, quarter, game clock and often the shot clock.",
+      "Team fouls tell you when the free-throw bonus starts, and player fouls show who is in trouble.",
+      "Follow possessions: who has the ball, how the attack starts and how it ends."
+     ],
+     "q": "Which team or league would you like to watch first?",
+     "c": "Watch five minutes of any game and track score, clock and fouls."
+    },
+    "de": {
+     "t": "Dein erstes Spiel schauen",
+     "g": "Lerne, worauf du beim Zuschauen achten kannst.",
+     "p": [
+      "Die Anzeige zeigt Spielstand, Viertel, Spieluhr und oft die Wurfuhr.",
+      "Teamfouls zeigen, ab wann Freiwürfe fällig sind, Spielerfouls, wer in Foulnot ist.",
+      "Verfolge die Ballbesitze: Wer hat den Ball, wie beginnt und wie endet der Angriff?"
+     ],
+     "q": "Welches Team oder welche Liga würdest du zuerst schauen?",
+     "c": "Schau fünf Minuten eines Spiels und verfolge Stand, Uhr und Fouls."
+    },
+    "es": {
+     "t": "Ver tu primer partido",
+     "g": "Aprende qué seguir en pantalla durante un partido.",
+     "p": [
+      "El marcador muestra resultado, cuarto, tiempo de juego y a menudo el reloj de posesión.",
+      "Las faltas de equipo dicen cuándo empiezan los tiros libres; las personales, quién está cargado.",
+      "Sigue las posesiones: quién tiene el balón, cómo empieza el ataque y cómo termina."
+     ],
+     "q": "¿Qué equipo o liga te gustaría ver primero?",
+     "c": "Mira cinco minutos de un partido y sigue marcador, reloj y faltas."
+    },
+    "fr": {
+     "t": "Regarder ton premier match",
+     "g": "Apprendre ce qu'il faut suivre à l'écran pendant un match.",
+     "p": [
+      "Le tableau indique le score, le quart-temps, le chrono et souvent les 24 secondes.",
+      "Les fautes d'équipe montrent quand les lancers commencent, les fautes perso qui est en danger.",
+      "Suis les possessions : qui a le ballon, comment l'attaque commence et comment elle finit."
+     ],
+     "q": "Quelle équipe ou quel championnat aimerais-tu regarder en premier ?",
+     "c": "Regarde cinq minutes d'un match en suivant score, chrono et fautes."
+    },
+    "it": {
+     "t": "Guardare la prima partita",
+     "g": "Impara cosa seguire sullo schermo durante una partita.",
+     "p": [
+      "Il tabellone mostra punteggio, quarto, cronometro e spesso i 24 secondi.",
+      "I falli di squadra dicono quando scattano i liberi, quelli personali chi è carico di falli.",
+      "Segui i possessi: chi ha palla, come inizia l'attacco e come finisce."
+     ],
+     "q": "Quale squadra o campionato ti piacerebbe guardare per primo?",
+     "c": "Guarda cinque minuti di una partita seguendo punteggio, cronometro e falli."
+    },
+    "pt": {
+     "t": "Ver o teu primeiro jogo",
+     "g": "Aprende o que seguir no ecrã durante um jogo.",
+     "p": [
+      "O marcador mostra o resultado, o período, o tempo de jogo e muitas vezes o relógio de posse.",
+      "As faltas de equipa dizem quando começam os lances livres, as pessoais quem está em apuros.",
+      "Segue as posses: quem tem a bola, como começa o ataque e como acaba."
+     ],
+     "q": "Que equipa ou liga gostavas de ver primeiro?",
+     "c": "Vê cinco minutos de um jogo e acompanha resultado, relógio e faltas."
+    },
+    "pt_BR": {
+     "t": "Assistindo ao seu primeiro jogo",
+     "g": "Aprenda o que acompanhar na tela durante um jogo.",
+     "p": [
+      "O placar mostra o resultado, o quarto, o tempo de jogo e muitas vezes o cronômetro de posse.",
+      "As faltas coletivas mostram quando começam os lances livres, as pessoais quem está pendurado.",
+      "Acompanhe as posses: quem tem a bola, como o ataque começa e como termina."
+     ],
+     "q": "Que time ou liga você gostaria de assistir primeiro?",
+     "c": "Assista a cinco minutos de um jogo acompanhando placar, relógio e faltas."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first month",
+     "g": "Look back at everything you learned in your first month.",
+     "p": [
+      "You know the court, the 3.05 m rim, how scoring works and how the clock runs.",
+      "You can name the five positions and the key violations: travel, double dribble, 3 and 8 seconds.",
+      "You learned dribbling, passing, the layup, BEEF shooting and the basics of defense."
+     ],
+     "q": "Which lesson from this month surprised you the most?",
+     "c": "Explain three basketball rules to a friend in your own words."
+    },
+    "de": {
+     "t": "Rückblick: erster Monat",
+     "g": "Schau zurück auf alles, was du im ersten Monat gelernt hast.",
+     "p": [
+      "Du kennst das Feld, den Korb in 3,05 m, das Punktesystem und die Spieluhr.",
+      "Du kannst die fünf Positionen nennen und die wichtigsten Verstöße: Schrittfehler, Doppeldribbling, 3 und 8 Sekunden.",
+      "Du hast Dribbeln, Passen, Korbleger, BEEF-Wurf und die Grundlagen der Abwehr gelernt."
+     ],
+     "q": "Welche Lektion dieses Monats hat dich am meisten überrascht?",
+     "c": "Erklär einem Freund drei Basketballregeln mit deinen eigenen Worten."
+    },
+    "es": {
+     "t": "Repaso: primer mes",
+     "g": "Repasa todo lo que aprendiste en tu primer mes.",
+     "p": [
+      "Conoces la cancha, el aro a 3,05 m, cómo se anota y cómo corre el reloj.",
+      "Sabes las cinco posiciones y las infracciones clave: pasos, dobles, 3 y 8 segundos.",
+      "Aprendiste a botar, pasar, la bandeja, el tiro BEEF y lo básico de la defensa."
+     ],
+     "q": "¿Qué lección de este mes te sorprendió más?",
+     "c": "Explica tres reglas del baloncesto a un amigo con tus propias palabras."
+    },
+    "fr": {
+     "t": "Bilan : premier mois",
+     "g": "Revoir tout ce que tu as appris pendant ton premier mois.",
+     "p": [
+      "Tu connais le terrain, l'arceau à 3,05 m, le système de points et le chrono.",
+      "Tu sais nommer les cinq postes et les violations clés : marcher, reprise de dribble, 3 et 8 secondes.",
+      "Tu as appris le dribble, la passe, le double pas, le tir BEEF et les bases de la défense."
+     ],
+     "q": "Quelle leçon de ce mois t'a le plus surpris ?",
+     "c": "Explique trois règles du basket à un ami avec tes propres mots."
+    },
+    "it": {
+     "t": "Ripasso: primo mese",
+     "g": "Ripassa tutto quello che hai imparato nel primo mese.",
+     "p": [
+      "Conosci il campo, il ferro a 3,05 m, come si segna e come scorre il cronometro.",
+      "Sai i cinque ruoli e le infrazioni chiave: passi, doppio palleggio, 3 e 8 secondi.",
+      "Hai imparato palleggio, passaggio, terzo tempo, tiro BEEF e le basi della difesa."
+     ],
+     "q": "Quale lezione di questo mese ti ha sorpreso di più?",
+     "c": "Spiega tre regole del basket a un amico con parole tue."
+    },
+    "pt": {
+     "t": "Revisão: primeiro mês",
+     "g": "Revê tudo o que aprendeste no teu primeiro mês.",
+     "p": [
+      "Conheces o campo, o aro a 3,05 m, como se marca e como corre o relógio.",
+      "Sabes as cinco posições e as violações principais: passos, dupla dribla, 3 e 8 segundos.",
+      "Aprendeste drible, passe, lançamento na passada, lançamento BEEF e o básico da defesa."
+     ],
+     "q": "Que lição deste mês mais te surpreendeu?",
+     "c": "Explica três regras do basquetebol a um amigo por palavras tuas."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiro mês",
+     "g": "Reveja tudo o que você aprendeu no primeiro mês.",
+     "p": [
+      "Você conhece a quadra, o aro a 3,05 m, como se pontua e como corre o relógio.",
+      "Sabe as cinco posições e as violações principais: andada, drible duplo, 3 e 8 segundos.",
+      "Aprendeu drible, passe, bandeja, arremesso BEEF e o básico da defesa."
+     ],
+     "q": "Qual lição deste mês mais surpreendeu você?",
+     "c": "Explique três regras do basquete a um amigo com suas próprias palavras."
+    }
+   }
+  }
+ ]
+}

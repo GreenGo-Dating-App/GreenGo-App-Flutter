@@ -1,0 +1,835 @@
+{
+ "topic": "packing",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The neutral colour base",
+     "g": "See why navy, grey, black, beige or olive make a travel wardrobe flexible.",
+     "p": [
+      "Neutrals go with each other and with almost any accent colour, so your outfits multiply.",
+      "Dark neutrals like navy, charcoal and black also hide small stains and creases on the road.",
+      "Choose one main neutral, add one lighter one, then let a scarf or top bring the colour."
+     ],
+     "q": "If you had to pick one neutral for your next trip, which would it be?",
+     "c": "Look in your wardrobe and pull out every piece in your favourite neutral colour."
+    },
+    "de": {
+     "t": "Die neutrale Farbbasis",
+     "g": "Sieh, warum Navy, Grau, Schwarz, Beige oder Oliv eine Reisegarderobe flexibel machen.",
+     "p": [
+      "Neutrale Farben passen zueinander und zu fast jeder Akzentfarbe, so vervielfachen sich die Outfits.",
+      "Dunkle Töne wie Navy, Anthrazit und Schwarz verstecken unterwegs auch kleine Flecken und Falten.",
+      "Wähle eine neutrale Hauptfarbe, ergänze eine hellere und lass Schal oder Oberteil Farbe bringen."
+     ],
+     "q": "Wenn du nur eine neutrale Farbe für die nächste Reise wählen dürftest, welche wäre es?",
+     "c": "Zieh aus deinem Schrank alle Teile in deiner neutralen Lieblingsfarbe heraus."
+    },
+    "es": {
+     "t": "La base de colores neutros",
+     "g": "Descubre por qué el azul marino, gris, negro, beis u oliva hacen flexible tu ropa de viaje.",
+     "p": [
+      "Los neutros combinan entre sí y con casi cualquier color de acento, así se multiplican los conjuntos.",
+      "Los neutros oscuros, como marino, gris marengo y negro, disimulan manchas y arrugas en el camino.",
+      "Elige un neutro principal, añade uno más claro y deja que un pañuelo o una camiseta pongan el color."
+     ],
+     "q": "Si tuvieras que elegir un solo neutro para tu próximo viaje, ¿cuál sería?",
+     "c": "Mira en tu armario y saca todas las prendas de tu color neutro favorito."
+    },
+    "fr": {
+     "t": "La base de couleurs neutres",
+     "g": "Comprends pourquoi marine, gris, noir, beige ou kaki rendent une garde-robe de voyage flexible.",
+     "p": [
+      "Les neutres vont ensemble et avec presque toute couleur d'accent : les tenues se multiplient.",
+      "Les neutres foncés comme marine, anthracite et noir cachent aussi petites taches et plis en route.",
+      "Choisis un neutre principal, ajoute-en un plus clair, et laisse un foulard ou un haut apporter la couleur."
+     ],
+     "q": "Si tu devais choisir un seul neutre pour ton prochain voyage, lequel serait-ce ?",
+     "c": "Ouvre ton armoire et sors toutes les pièces de ta couleur neutre préférée."
+    },
+    "it": {
+     "t": "La base di colori neutri",
+     "g": "Scopri perché blu navy, grigio, nero, beige o verde oliva rendono flessibile il guardaroba da viaggio.",
+     "p": [
+      "I neutri si abbinano tra loro e con quasi ogni colore d'accento, così gli outfit si moltiplicano.",
+      "I neutri scuri come navy, antracite e nero nascondono anche piccole macchie e pieghe in viaggio.",
+      "Scegli un neutro principale, aggiungine uno più chiaro e lascia che una sciarpa porti il colore."
+     ],
+     "q": "Se dovessi scegliere un solo neutro per il prossimo viaggio, quale sarebbe?",
+     "c": "Apri l'armadio e tira fuori tutti i capi nel tuo colore neutro preferito."
+    },
+    "pt": {
+     "t": "A base de cores neutras",
+     "g": "Percebe porque azul-marinho, cinzento, preto, bege ou verde-azeitona tornam a roupa de viagem flexível.",
+     "p": [
+      "Os neutros combinam entre si e com quase qualquer cor de destaque, por isso os conjuntos multiplicam-se.",
+      "Os neutros escuros, como marinho, antracite e preto, também disfarçam pequenas nódoas e vincos.",
+      "Escolhe um neutro principal, junta um mais claro e deixa um lenço ou camisola trazer a cor."
+     ],
+     "q": "Se tivesses de escolher um só neutro para a próxima viagem, qual seria?",
+     "c": "Abre o roupeiro e tira todas as peças da tua cor neutra preferida."
+    },
+    "pt_BR": {
+     "t": "A base de cores neutras",
+     "g": "Entenda por que azul-marinho, cinza, preto, bege ou verde-oliva deixam a roupa de viagem flexível.",
+     "p": [
+      "Os neutros combinam entre si e com quase qualquer cor de destaque, então os looks se multiplicam.",
+      "Neutros escuros, como marinho, grafite e preto, também disfarçam pequenas manchas e amassados.",
+      "Escolha um neutro principal, some um mais claro e deixe um lenço ou blusa trazer a cor."
+     ],
+     "q": "Se tivesse de escolher um só neutro para a próxima viagem, qual seria?",
+     "c": "Abra o guarda-roupa e tire todas as peças da sua cor neutra favorita."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Layering basics",
+     "g": "Use base, mid and outer layers to adapt to changing temperatures.",
+     "p": [
+      "The base layer sits on your skin and handles sweat; a T-shirt or thin long sleeve works well.",
+      "The mid layer keeps you warm, like a fleece or jumper; the outer layer blocks wind and rain.",
+      "Several thin layers are more flexible than one thick coat: add or remove them as the day changes."
+     ],
+     "q": "What do you usually wear when the morning is cold but the afternoon is warm?",
+     "c": "Build a three-layer outfit from your own wardrobe for a cool, breezy day."
+    },
+    "de": {
+     "t": "Grundlagen des Zwiebelprinzips",
+     "g": "Nutze Basis-, Mittel- und Außenschicht, um dich an wechselnde Temperaturen anzupassen.",
+     "p": [
+      "Die Basisschicht liegt auf der Haut und leitet Schweiß ab; ein T-Shirt oder dünnes Langarmshirt passt.",
+      "Die mittlere Schicht wärmt, etwa Fleece oder Pulli; die äußere hält Wind und Regen ab.",
+      "Mehrere dünne Schichten sind flexibler als ein dicker Mantel: an- und ausziehen, wie der Tag es braucht."
+     ],
+     "q": "Was trägst du meist, wenn der Morgen kalt und der Nachmittag warm ist?",
+     "c": "Stell aus deiner Garderobe ein Drei-Schichten-Outfit für einen kühlen, windigen Tag zusammen."
+    },
+    "es": {
+     "t": "Lo básico de las capas",
+     "g": "Usa capa base, intermedia y exterior para adaptarte a los cambios de temperatura.",
+     "p": [
+      "La capa base va pegada a la piel y gestiona el sudor; sirve una camiseta o una manga larga fina.",
+      "La intermedia abriga, como un forro polar o jersey; la exterior frena el viento y la lluvia.",
+      "Varias capas finas son más flexibles que un abrigo grueso: pon y quita según cambie el día."
+     ],
+     "q": "¿Qué sueles ponerte cuando la mañana es fría pero la tarde es cálida?",
+     "c": "Arma con tu propia ropa un conjunto de tres capas para un día fresco y con viento."
+    },
+    "fr": {
+     "t": "Les bases du système multicouche",
+     "g": "Utilise couche de base, intermédiaire et extérieure pour t'adapter aux changements de température.",
+     "p": [
+      "La couche de base touche la peau et gère la transpiration ; un t-shirt ou un manches longues fin suffit.",
+      "La couche intermédiaire tient chaud, comme une polaire ou un pull ; l'extérieure arrête vent et pluie.",
+      "Plusieurs couches fines sont plus souples qu'un gros manteau : ajoute ou retire selon la journée."
+     ],
+     "q": "Que portes-tu d'habitude quand le matin est froid et l'après-midi chaud ?",
+     "c": "Compose avec tes propres vêtements une tenue en trois couches pour une journée fraîche et venteuse."
+    },
+    "it": {
+     "t": "Le basi della vestizione a strati",
+     "g": "Usa strato base, intermedio ed esterno per adattarti alle temperature che cambiano.",
+     "p": [
+      "Lo strato base sta sulla pelle e gestisce il sudore; va bene una maglietta o una maglia sottile a maniche lunghe.",
+      "Lo strato intermedio scalda, come un pile o un maglione; quello esterno ferma vento e pioggia.",
+      "Più strati sottili sono più flessibili di un cappotto pesante: aggiungi o togli secondo la giornata."
+     ],
+     "q": "Cosa indossi di solito quando la mattina è fredda e il pomeriggio caldo?",
+     "c": "Componi con i tuoi vestiti un outfit a tre strati per una giornata fresca e ventosa."
+    },
+    "pt": {
+     "t": "O básico das camadas",
+     "g": "Usa camada base, intermédia e exterior para te adaptares às mudanças de temperatura.",
+     "p": [
+      "A camada base fica junto à pele e gere o suor; serve uma t-shirt ou uma manga comprida fina.",
+      "A intermédia aquece, como um polar ou camisola; a exterior trava o vento e a chuva.",
+      "Várias camadas finas são mais flexíveis do que um casaco grosso: tira e põe conforme o dia."
+     ],
+     "q": "O que costumas vestir quando a manhã é fria e a tarde quente?",
+     "c": "Monta com a tua roupa um conjunto de três camadas para um dia fresco e ventoso."
+    },
+    "pt_BR": {
+     "t": "O básico das camadas",
+     "g": "Use camada base, intermediária e externa para se adaptar às mudanças de temperatura.",
+     "p": [
+      "A camada base fica junto à pele e cuida do suor; serve uma camiseta ou manga longa fina.",
+      "A intermediária aquece, como um fleece ou suéter; a externa barra o vento e a chuva.",
+      "Várias camadas finas são mais flexíveis que um casaco grosso: tire e coloque conforme o dia."
+     ],
+     "q": "O que você costuma vestir quando a manhã é fria e a tarde é quente?",
+     "c": "Monte com suas roupas um look de três camadas para um dia fresco e com vento."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing travel fabrics",
+     "g": "Compare merino, cotton, linen and synthetics on comfort, drying time and odour.",
+     "p": [
+      "Merino wool feels soft, stays fresh for days and warms even when damp, though it needs gentle care.",
+      "Cotton is comfy and familiar but dries slowly; linen breathes beautifully in heat but creases easily.",
+      "Synthetics like polyester dry fast and pack light, but some hold odours, so look for blends."
+     ],
+     "q": "Which fabric do you feel best in on a long travel day?",
+     "c": "Check the labels of three favourite tops and note each fabric and how fast it dries."
+    },
+    "de": {
+     "t": "Reisetaugliche Stoffe wählen",
+     "g": "Vergleiche Merino, Baumwolle, Leinen und Synthetik bei Komfort, Trockenzeit und Geruch.",
+     "p": [
+      "Merinowolle ist weich, bleibt tagelang frisch und wärmt auch feucht, braucht aber sanfte Pflege.",
+      "Baumwolle ist bequem, trocknet aber langsam; Leinen atmet herrlich in der Hitze, knittert aber leicht.",
+      "Synthetik wie Polyester trocknet schnell und ist leicht, hält aber teils Gerüche; Mischgewebe helfen."
+     ],
+     "q": "In welchem Stoff fühlst du dich an einem langen Reisetag am wohlsten?",
+     "c": "Lies die Etiketten von drei Lieblingsoberteilen und notiere Stoff und Trockenzeit."
+    },
+    "es": {
+     "t": "Elegir tejidos para viajar",
+     "g": "Compara merino, algodón, lino y sintéticos en comodidad, secado y olor.",
+     "p": [
+      "La lana merino es suave, se mantiene fresca varios días y abriga aun húmeda, pero pide un lavado delicado.",
+      "El algodón es cómodo pero tarda en secar; el lino transpira de maravilla con calor pero se arruga fácil.",
+      "Los sintéticos como el poliéster secan rápido y pesan poco, pero algunos retienen olores: busca mezclas."
+     ],
+     "q": "¿Con qué tejido te sientes mejor en un día largo de viaje?",
+     "c": "Mira las etiquetas de tres prendas favoritas y apunta el tejido y lo rápido que secan."
+    },
+    "fr": {
+     "t": "Choisir ses matières de voyage",
+     "g": "Compare mérinos, coton, lin et synthétiques : confort, séchage et odeurs.",
+     "p": [
+      "La laine mérinos est douce, reste fraîche plusieurs jours et chauffe même humide, mais demande un lavage doux.",
+      "Le coton est agréable mais sèche lentement ; le lin respire très bien par la chaleur mais froisse vite.",
+      "Les synthétiques comme le polyester sèchent vite et sont légers, mais certains gardent les odeurs."
+     ],
+     "q": "Dans quelle matière te sens-tu le mieux lors d'une longue journée de voyage ?",
+     "c": "Regarde les étiquettes de trois hauts préférés et note la matière et le temps de séchage."
+    },
+    "it": {
+     "t": "Scegliere i tessuti da viaggio",
+     "g": "Confronta merino, cotone, lino e sintetici per comfort, asciugatura e odori.",
+     "p": [
+      "La lana merino è morbida, resta fresca per giorni e scalda anche umida, ma va lavata con delicatezza.",
+      "Il cotone è comodo ma asciuga lentamente; il lino traspira benissimo al caldo ma si stropiccia facilmente.",
+      "I sintetici come il poliestere asciugano in fretta e pesano poco, ma alcuni trattengono gli odori."
+     ],
+     "q": "In quale tessuto ti senti meglio in una lunga giornata di viaggio?",
+     "c": "Leggi le etichette di tre capi preferiti e annota tessuto e tempo di asciugatura."
+    },
+    "pt": {
+     "t": "Escolher tecidos de viagem",
+     "g": "Compara merino, algodão, linho e sintéticos em conforto, secagem e odor.",
+     "p": [
+      "A lã merino é macia, mantém-se fresca vários dias e aquece mesmo húmida, mas pede lavagem cuidadosa.",
+      "O algodão é confortável mas seca devagar; o linho respira muito bem no calor mas amarrota com facilidade.",
+      "Os sintéticos como o poliéster secam depressa e são leves, mas alguns retêm odores: procura misturas."
+     ],
+     "q": "Com que tecido te sentes melhor num dia longo de viagem?",
+     "c": "Vê as etiquetas de três peças favoritas e aponta o tecido e quanto tempo demoram a secar."
+    },
+    "pt_BR": {
+     "t": "Escolhendo tecidos de viagem",
+     "g": "Compare merino, algodão, linho e sintéticos em conforto, secagem e odor.",
+     "p": [
+      "A lã merino é macia, fica fresca por dias e aquece mesmo úmida, mas pede lavagem delicada.",
+      "O algodão é confortável mas seca devagar; o linho respira muito bem no calor mas amassa fácil.",
+      "Sintéticos como poliéster secam rápido e são leves, mas alguns seguram cheiro: prefira misturas."
+     ],
+     "q": "Com qual tecido você se sente melhor num dia longo de viagem?",
+     "c": "Confira as etiquetas de três blusas favoritas e anote o tecido e o tempo de secagem."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wrinkle-resistant clothing",
+     "g": "Pick fabrics and knits that arrive looking fresh after hours in a bag.",
+     "p": [
+      "Knits, jersey, merino and many synthetic blends bounce back after being squashed for hours.",
+      "Crisp cotton shirts and pure linen crease fast; save them for trips where a creased look is fine.",
+      "Quick fix on arrival: hang creased pieces in the bathroom while a hot shower runs, then let them dry."
+     ],
+     "q": "Which of your clothes always look fine straight out of a bag?",
+     "c": "Scrunch a corner of two different tops in your hand for ten seconds and see which one recovers."
+    },
+    "de": {
+     "t": "Knitterarme Kleidung",
+     "g": "Wähle Stoffe und Strick, die nach Stunden im Koffer noch frisch aussehen.",
+     "p": [
+      "Strick, Jersey, Merino und viele Mischgewebe erholen sich, auch wenn sie stundenlang gequetscht waren.",
+      "Steife Baumwollhemden und reines Leinen knittern schnell; nimm sie, wenn ein lässiger Look passt.",
+      "Schneller Trick: Häng zerknitterte Teile ins Bad, während die heiße Dusche läuft, und lass sie trocknen."
+     ],
+     "q": "Welche deiner Kleidungsstücke sehen direkt aus dem Koffer immer gut aus?",
+     "c": "Knautsch zehn Sekunden lang eine Ecke von zwei Oberteilen und schau, welches sich erholt."
+    },
+    "es": {
+     "t": "Ropa que no se arruga",
+     "g": "Elige tejidos y prendas de punto que lleguen como nuevos tras horas en la maleta.",
+     "p": [
+      "El punto, el jersey de algodón, el merino y muchas mezclas sintéticas se recuperan tras horas aplastados.",
+      "Las camisas de algodón rígido y el lino puro se arrugan rápido; guárdalos para viajes informales.",
+      "Truco al llegar: cuelga lo arrugado en el baño mientras corre una ducha caliente y deja que se seque."
+     ],
+     "q": "¿Qué prendas tuyas salen siempre bien directamente de la maleta?",
+     "c": "Estruja diez segundos una esquina de dos prendas y mira cuál se recupera."
+    },
+    "fr": {
+     "t": "Des vêtements qui ne froissent pas",
+     "g": "Choisis des matières et des mailles qui arrivent impeccables après des heures dans un sac.",
+     "p": [
+      "Mailles, jersey, mérinos et nombreux mélanges synthétiques reprennent forme après des heures écrasés.",
+      "Les chemises en coton raide et le lin pur froissent vite ; garde-les pour les voyages décontractés.",
+      "Astuce à l'arrivée : suspends les pièces froissées dans la salle de bains pendant une douche chaude."
+     ],
+     "q": "Quels vêtements sont toujours impeccables en sortant du sac ?",
+     "c": "Froisse dix secondes un coin de deux hauts différents et regarde lequel se remet."
+    },
+    "it": {
+     "t": "Capi che non si stropicciano",
+     "g": "Scegli tessuti e maglieria che arrivano freschi dopo ore in valigia.",
+     "p": [
+      "Maglieria, jersey, merino e molti misti sintetici tornano in forma dopo ore schiacciati.",
+      "Le camicie di cotone rigido e il lino puro si stropicciano subito; usali nei viaggi informali.",
+      "Trucco all'arrivo: appendi i capi stropicciati in bagno mentre fai una doccia calda, poi falli asciugare."
+     ],
+     "q": "Quali tuoi vestiti escono sempre perfetti dalla valigia?",
+     "c": "Stropiccia per dieci secondi un angolo di due capi diversi e guarda quale si riprende."
+    },
+    "pt": {
+     "t": "Roupa que não amarrota",
+     "g": "Escolhe tecidos e malhas que chegam frescos depois de horas na mala.",
+     "p": [
+      "Malhas, jersey, merino e muitas misturas sintéticas recuperam depois de horas espremidos.",
+      "Camisas de algodão rígido e linho puro amarrotam depressa; guarda-os para viagens descontraídas.",
+      "Truque à chegada: pendura a roupa amarrotada na casa de banho durante um duche quente e deixa secar."
+     ],
+     "q": "Que peças tuas saem sempre impecáveis da mala?",
+     "c": "Amarrota durante dez segundos um canto de duas peças diferentes e vê qual recupera."
+    },
+    "pt_BR": {
+     "t": "Roupas que não amassam",
+     "g": "Escolha tecidos e malhas que chegam com cara de novos depois de horas na mala.",
+     "p": [
+      "Malhas, jérsei, merino e muitas misturas sintéticas se recuperam depois de horas espremidos.",
+      "Camisas de algodão firme e linho puro amassam rápido; deixe para viagens mais descontraídas.",
+      "Truque ao chegar: pendure a roupa amassada no banheiro durante um banho quente e deixe secar."
+     ],
+     "q": "Quais roupas suas sempre saem perfeitas da mala?",
+     "c": "Amasse por dez segundos a ponta de duas peças diferentes e veja qual se recupera."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Underwear and socks maths",
+     "g": "Work out how many to pack and how a quick wash stretches a small supply.",
+     "p": [
+      "A handy rule: one pair per day up to about a week, then plan to wash instead of packing more.",
+      "Many travellers bring around five to seven pairs and rinse a few in the sink every couple of days.",
+      "Quick-dry fabrics like merino or synthetics dry overnight, while thick cotton socks take much longer."
+     ],
+     "q": "How many pairs of socks do you usually pack for a week?",
+     "c": "Count out the underwear and socks you would need for ten days if you washed once midway."
+    },
+    "de": {
+     "t": "Unterwäsche- und Socken-Rechnung",
+     "g": "Rechne aus, wie viel du brauchst und wie eine schnelle Wäsche einen kleinen Vorrat streckt.",
+     "p": [
+      "Faustregel: ein Paar pro Tag bis etwa eine Woche, danach waschen statt mehr einpacken.",
+      "Viele nehmen etwa fünf bis sieben Paar mit und spülen alle paar Tage einige im Waschbecken aus.",
+      "Schnelltrocknende Stoffe wie Merino oder Synthetik trocknen über Nacht, dicke Baumwollsocken viel später."
+     ],
+     "q": "Wie viele Paar Socken packst du normalerweise für eine Woche ein?",
+     "c": "Zähl ab, wie viel Unterwäsche und Socken du für zehn Tage mit einer Wäsche in der Mitte bräuchtest."
+    },
+    "es": {
+     "t": "Las cuentas de ropa interior y calcetines",
+     "g": "Calcula cuántos llevar y cómo un lavado rápido estira una pequeña reserva.",
+     "p": [
+      "Regla práctica: un par por día hasta una semana; después, planea lavar en vez de llevar más.",
+      "Muchos viajeros llevan de cinco a siete pares y lavan algunos en el lavabo cada par de días.",
+      "Los tejidos de secado rápido, como merino o sintéticos, secan en una noche; el algodón grueso tarda más."
+     ],
+     "q": "¿Cuántos pares de calcetines sueles llevar para una semana?",
+     "c": "Cuenta la ropa interior y los calcetines que necesitarías para diez días lavando una vez a mitad."
+    },
+    "fr": {
+     "t": "Le calcul sous-vêtements et chaussettes",
+     "g": "Calcule combien en emporter et comment une lessive rapide prolonge une petite réserve.",
+     "p": [
+      "Règle pratique : une paire par jour jusqu'à environ une semaine, puis prévoir une lessive plutôt que plus.",
+      "Beaucoup emportent cinq à sept paires et en rincent quelques-unes dans le lavabo tous les deux jours.",
+      "Les matières à séchage rapide comme le mérinos sèchent en une nuit ; les grosses chaussettes en coton non."
+     ],
+     "q": "Combien de paires de chaussettes emportes-tu d'habitude pour une semaine ?",
+     "c": "Compte les sous-vêtements et chaussettes nécessaires pour dix jours avec une lessive à mi-parcours."
+    },
+    "it": {
+     "t": "I conti di intimo e calzini",
+     "g": "Calcola quanti capi portare e come un lavaggio veloce allunga una piccola scorta.",
+     "p": [
+      "Regola pratica: un paio al giorno fino a una settimana circa, poi lava invece di portarne di più.",
+      "Molti viaggiatori portano da cinque a sette paia e ne sciacquano alcuni nel lavandino ogni due giorni.",
+      "I tessuti ad asciugatura rapida come merino o sintetici asciugano in una notte; il cotone spesso no."
+     ],
+     "q": "Quante paia di calzini porti di solito per una settimana?",
+     "c": "Conta intimo e calzini che ti servirebbero per dieci giorni con un bucato a metà viaggio."
+    },
+    "pt": {
+     "t": "As contas da roupa interior e meias",
+     "g": "Calcula quantas levar e como uma lavagem rápida estica uma pequena reserva.",
+     "p": [
+      "Regra prática: um par por dia até cerca de uma semana; depois, planeia lavar em vez de levar mais.",
+      "Muitos viajantes levam cinco a sete pares e lavam alguns no lavatório de dois em dois dias.",
+      "Tecidos de secagem rápida, como merino ou sintéticos, secam numa noite; meias grossas de algodão não."
+     ],
+     "q": "Quantos pares de meias costumas levar para uma semana?",
+     "c": "Conta a roupa interior e as meias que precisarias para dez dias lavando uma vez a meio."
+    },
+    "pt_BR": {
+     "t": "A conta de roupa íntima e meias",
+     "g": "Calcule quantas levar e como uma lavagem rápida estica um estoque pequeno.",
+     "p": [
+      "Regra prática: um par por dia até mais ou menos uma semana; depois, planeje lavar em vez de levar mais.",
+      "Muita gente leva de cinco a sete pares e lava alguns na pia a cada dois dias.",
+      "Tecidos de secagem rápida, como merino ou sintéticos, secam de um dia para o outro; algodão grosso não."
+     ],
+     "q": "Quantos pares de meia você costuma levar para uma semana?",
+     "c": "Conte a roupa íntima e as meias que precisaria para dez dias lavando uma vez no meio."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleepwear and loungewear",
+     "g": "Choose light, comfortable pieces for nights in hotels, hostels and trains.",
+     "p": [
+      "Pick sleepwear you would not mind being seen in, handy for shared rooms, night trains and hallways.",
+      "Soft leggings or joggers with a T-shirt can double as sleepwear, loungewear and a comfy travel outfit.",
+      "Thin fabrics pack small and dry fast; add warm socks if your rooms or trains might be chilly."
+     ],
+     "q": "What do you love to wear when you finally relax in your room after a long day?",
+     "c": "Choose one outfit you own that could work as both sleepwear and a relaxed travel outfit."
+    },
+    "de": {
+     "t": "Schlaf- und Loungekleidung",
+     "g": "Wähle leichte, bequeme Teile für Nächte in Hotels, Hostels und Zügen.",
+     "p": [
+      "Nimm Schlafkleidung, in der du dich zeigen kannst, praktisch für Mehrbettzimmer, Nachtzüge und Flure.",
+      "Weiche Leggings oder Jogginghosen mit T-Shirt dienen als Schlafanzug, Loungewear und bequemes Reiseoutfit.",
+      "Dünne Stoffe sind klein verpackt und trocknen schnell; nimm warme Socken mit, falls Räume kühl sind."
+     ],
+     "q": "Was ziehst du am liebsten an, wenn du nach einem langen Tag endlich im Zimmer entspannst?",
+     "c": "Wähle ein Outfit, das sowohl als Schlafkleidung als auch als lässiges Reiseoutfit taugt."
+    },
+    "es": {
+     "t": "Ropa para dormir y estar cómodo",
+     "g": "Elige prendas ligeras y cómodas para noches en hoteles, albergues y trenes.",
+     "p": [
+      "Escoge ropa de dormir con la que no te importe que te vean: útil en habitaciones compartidas y trenes nocturnos.",
+      "Unas mallas o un pantalón de chándal suave con camiseta sirven para dormir, estar en casa y viajar.",
+      "Los tejidos finos ocupan poco y secan rápido; añade calcetines gruesos si las habitaciones son frescas."
+     ],
+     "q": "¿Qué te encanta ponerte cuando por fin descansas en tu habitación tras un día largo?",
+     "c": "Elige un conjunto tuyo que sirva tanto para dormir como para un viaje relajado."
+    },
+    "fr": {
+     "t": "Tenues de nuit et de détente",
+     "g": "Choisis des pièces légères et confortables pour les nuits à l'hôtel, en auberge ou en train.",
+     "p": [
+      "Prends une tenue de nuit présentable, pratique en dortoir, en train de nuit ou dans les couloirs.",
+      "Un legging ou un jogging doux avec un t-shirt sert de pyjama, de tenue détente et de tenue de voyage.",
+      "Les matières fines prennent peu de place et sèchent vite ; ajoute des chaussettes chaudes si besoin."
+     ],
+     "q": "Qu'aimes-tu porter quand tu te détends enfin dans ta chambre après une longue journée ?",
+     "c": "Choisis une tenue que tu possèdes qui serve à la fois de pyjama et de tenue de voyage décontractée."
+    },
+    "it": {
+     "t": "Pigiama e abiti comodi",
+     "g": "Scegli capi leggeri e comodi per le notti in hotel, ostelli e treni.",
+     "p": [
+      "Scegli un pigiama presentabile, utile in camerate, treni notturni e corridoi.",
+      "Leggings o pantaloni della tuta morbidi con una maglietta fanno da pigiama, abito comodo e outfit da viaggio.",
+      "I tessuti sottili occupano poco e asciugano in fretta; aggiungi calzini caldi se le stanze sono fresche."
+     ],
+     "q": "Cosa ami indossare quando finalmente ti rilassi in camera dopo una lunga giornata?",
+     "c": "Scegli un tuo outfit che funzioni sia come pigiama sia come completo da viaggio rilassato."
+    },
+    "pt": {
+     "t": "Pijama e roupa confortável",
+     "g": "Escolhe peças leves e confortáveis para noites em hotéis, hostels e comboios.",
+     "p": [
+      "Escolhe um pijama com que não te importes de ser visto, útil em quartos partilhados e comboios noturnos.",
+      "Umas leggings ou calças de fato de treino macias com t-shirt servem de pijama, roupa de casa e de viagem.",
+      "Os tecidos finos ocupam pouco e secam depressa; junta meias quentes se os quartos forem frescos."
+     ],
+     "q": "O que adoras vestir quando finalmente descansas no quarto depois de um dia longo?",
+     "c": "Escolhe um conjunto teu que sirva tanto de pijama como de roupa de viagem descontraída."
+    },
+    "pt_BR": {
+     "t": "Pijama e roupa confortável",
+     "g": "Escolha peças leves e confortáveis para noites em hotéis, hostels e trens.",
+     "p": [
+      "Escolha um pijama com que você não se importe de ser visto, útil em quartos compartilhados e trens noturnos.",
+      "Uma legging ou calça de moletom macia com camiseta vira pijama, roupa de ficar e roupa de viagem.",
+      "Tecidos finos ocupam pouco e secam rápido; leve meias quentinhas se os quartos forem frios."
+     ],
+     "q": "O que você adora vestir quando finalmente relaxa no quarto depois de um dia longo?",
+     "c": "Escolha um conjunto seu que sirva tanto de pijama quanto de roupa de viagem confortável."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A versatile jacket",
+     "g": "Pick one outer layer that handles wind, light rain and cool evenings.",
+     "p": [
+      "A light, packable jacket with a hood covers most weather on most trips, from breezy coasts to city rain.",
+      "Choose a neutral colour so it works with every outfit, both on hikes and at dinner.",
+      "Wear it on travel days: it saves bag space, and its pockets hold small things you need on the way."
+     ],
+     "q": "What jacket do you reach for most often at home?",
+     "c": "Check your favourite jacket: does it handle wind and a light shower, and does it fold small?"
+    },
+    "de": {
+     "t": "Eine vielseitige Jacke",
+     "g": "Wähle eine Außenschicht, die Wind, leichten Regen und kühle Abende meistert.",
+     "p": [
+      "Eine leichte, verstaubare Jacke mit Kapuze deckt das meiste Wetter ab, von windigen Küsten bis Stadtregen.",
+      "Wähle eine neutrale Farbe, damit sie zu jedem Outfit passt, beim Wandern wie beim Abendessen.",
+      "Trag sie an Reisetagen: Das spart Platz, und in den Taschen ist Kleinkram für unterwegs."
+     ],
+     "q": "Zu welcher Jacke greifst du zu Hause am häufigsten?",
+     "c": "Prüfe deine Lieblingsjacke: Hält sie Wind und leichten Regen ab, und lässt sie sich klein falten?"
+    },
+    "es": {
+     "t": "Una chaqueta versátil",
+     "g": "Elige una prenda exterior que aguante viento, lluvia ligera y noches frescas.",
+     "p": [
+      "Una chaqueta ligera y plegable con capucha cubre casi cualquier clima, de costas con viento a lluvia urbana.",
+      "Elige un color neutro para que combine con todo, tanto en una caminata como en una cena.",
+      "Llévala puesta los días de viaje: ahorra espacio y sus bolsillos guardan cosas pequeñas para el camino."
+     ],
+     "q": "¿Qué chaqueta usas más a menudo en casa?",
+     "c": "Revisa tu chaqueta favorita: ¿aguanta viento y un chaparrón ligero, y se pliega pequeña?"
+    },
+    "fr": {
+     "t": "Une veste polyvalente",
+     "g": "Choisis une couche extérieure qui résiste au vent, à la petite pluie et aux soirées fraîches.",
+     "p": [
+      "Une veste légère et compressible à capuche couvre presque toutes les météos, des côtes ventées à la pluie en ville.",
+      "Choisis une couleur neutre pour qu'elle aille avec tout, en randonnée comme au restaurant.",
+      "Porte-la les jours de trajet : elle libère de la place, et ses poches gardent tes petites affaires."
+     ],
+     "q": "Quelle veste portes-tu le plus souvent chez toi ?",
+     "c": "Vérifie ta veste préférée : résiste-t-elle au vent et à une petite averse, et se plie-t-elle petit ?"
+    },
+    "it": {
+     "t": "Una giacca versatile",
+     "g": "Scegli uno strato esterno che regga vento, pioggia leggera e serate fresche.",
+     "p": [
+      "Una giacca leggera e ripiegabile con cappuccio copre quasi ogni clima, dalle coste ventose alla pioggia in città.",
+      "Scegli un colore neutro così si abbina a tutto, in escursione come a cena.",
+      "Indossala nei giorni di viaggio: risparmi spazio e nelle tasche tieni le piccole cose per il tragitto."
+     ],
+     "q": "Quale giacca usi più spesso a casa?",
+     "c": "Controlla la tua giacca preferita: regge vento e un acquazzone leggero, e si piega in poco spazio?"
+    },
+    "pt": {
+     "t": "Um casaco versátil",
+     "g": "Escolhe uma camada exterior que aguente vento, chuva fraca e noites frescas.",
+     "p": [
+      "Um casaco leve e dobrável com capuz cobre quase todo o tempo, de costas ventosas a chuva na cidade.",
+      "Escolhe uma cor neutra para combinar com tudo, tanto numa caminhada como num jantar.",
+      "Veste-o nos dias de viagem: poupa espaço e os bolsos guardam coisas pequenas para o caminho."
+     ],
+     "q": "Que casaco usas mais vezes em casa?",
+     "c": "Vê o teu casaco preferido: aguenta vento e um aguaceiro fraco, e dobra-se pequeno?"
+    },
+    "pt_BR": {
+     "t": "Uma jaqueta versátil",
+     "g": "Escolha uma camada externa que aguente vento, chuva fraca e noites frescas.",
+     "p": [
+      "Uma jaqueta leve e dobrável com capuz resolve quase todo clima, de praias com vento a chuva na cidade.",
+      "Escolha uma cor neutra para combinar com tudo, numa trilha ou num jantar.",
+      "Use no dia de viagem: economiza espaço e os bolsos guardam coisinhas para o caminho."
+     ],
+     "q": "Qual jaqueta você mais usa em casa?",
+     "c": "Confira sua jaqueta favorita: aguenta vento e garoa, e dobra pequena?"
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Accessories that do double duty",
+     "g": "Use a scarf or sarong as a wrap, a pillow, a towel or a cover-up.",
+     "p": [
+      "A large light scarf warms you on a cold plane, covers shoulders when a place asks for it, and dresses up an outfit.",
+      "A sarong works as a beach towel, picnic blanket, skirt, curtain for a bunk bed or a sun shade.",
+      "Before packing any accessory, ask: can it do at least two jobs? If not, think twice."
+     ],
+     "q": "Which item in your bag has surprised you by being useful in an unexpected way?",
+     "c": "Pick one scarf or sarong you own and find three different ways to use it."
+    },
+    "de": {
+     "t": "Accessoires mit Doppelfunktion",
+     "g": "Nutze Schal oder Sarong als Umhang, Kissen, Handtuch oder Überwurf.",
+     "p": [
+      "Ein großer leichter Schal wärmt im kalten Flugzeug, bedeckt Schultern, wo es erwünscht ist, und wertet ein Outfit auf.",
+      "Ein Sarong dient als Strandtuch, Picknickdecke, Rock, Vorhang am Stockbett oder Sonnenschutz.",
+      "Frag dich vor jedem Accessoire: Kann es mindestens zwei Aufgaben erfüllen? Wenn nicht, überleg es dir."
+     ],
+     "q": "Welches Teil in deinem Gepäck hat dich schon einmal mit einem unerwarteten Nutzen überrascht?",
+     "c": "Nimm einen Schal oder Sarong und finde drei verschiedene Verwendungen dafür."
+    },
+    "es": {
+     "t": "Accesorios con doble función",
+     "g": "Usa un pañuelo o pareo como chal, almohada, toalla o prenda para cubrirte.",
+     "p": [
+      "Un pañuelo grande y ligero abriga en un avión frío, cubre los hombros donde lo piden y arregla un conjunto.",
+      "Un pareo sirve de toalla de playa, manta de pícnic, falda, cortina de litera o sombra.",
+      "Antes de meter un accesorio, pregúntate: ¿cumple al menos dos funciones? Si no, piénsalo dos veces."
+     ],
+     "q": "¿Qué cosa de tu equipaje te sorprendió siendo útil de forma inesperada?",
+     "c": "Elige un pañuelo o pareo que tengas y encuentra tres usos diferentes."
+    },
+    "fr": {
+     "t": "Des accessoires à double usage",
+     "g": "Utilise un foulard ou un paréo comme étole, oreiller, serviette ou couvre-épaules.",
+     "p": [
+      "Un grand foulard léger réchauffe dans un avion froid, couvre les épaules là où c'est demandé et habille une tenue.",
+      "Un paréo sert de serviette de plage, nappe de pique-nique, jupe, rideau de couchette ou pare-soleil.",
+      "Avant d'emporter un accessoire, demande-toi : remplit-il au moins deux rôles ? Sinon, réfléchis."
+     ],
+     "q": "Quel objet de ton sac t'a déjà surpris en se montrant utile de façon inattendue ?",
+     "c": "Choisis un foulard ou un paréo que tu possèdes et trouve-lui trois usages différents."
+    },
+    "it": {
+     "t": "Accessori a doppio uso",
+     "g": "Usa una sciarpa o un pareo come scialle, cuscino, asciugamano o copricostume.",
+     "p": [
+      "Una sciarpa grande e leggera scalda in un aereo freddo, copre le spalle dove richiesto e valorizza un outfit.",
+      "Un pareo diventa telo mare, coperta da picnic, gonna, tenda per la cuccetta o riparo dal sole.",
+      "Prima di mettere in valigia un accessorio chiediti: fa almeno due lavori? Se no, pensaci due volte."
+     ],
+     "q": "Quale oggetto in valigia ti ha sorpreso per un'utilità inaspettata?",
+     "c": "Scegli una sciarpa o un pareo che hai e trova tre modi diversi di usarlo."
+    },
+    "pt": {
+     "t": "Acessórios com dupla função",
+     "g": "Usa um lenço ou pareo como xaile, almofada, toalha ou para te cobrires.",
+     "p": [
+      "Um lenço grande e leve aquece num avião frio, cobre os ombros onde é pedido e dá estilo a um conjunto.",
+      "Um pareo serve de toalha de praia, manta de piquenique, saia, cortina de beliche ou sombra.",
+      "Antes de levar um acessório, pergunta: faz pelo menos duas funções? Se não, pensa duas vezes."
+     ],
+     "q": "Que objeto da tua bagagem te surpreendeu por ser útil de forma inesperada?",
+     "c": "Escolhe um lenço ou pareo que tenhas e descobre três maneiras de o usar."
+    },
+    "pt_BR": {
+     "t": "Acessórios com dupla função",
+     "g": "Use um lenço ou canga como xale, travesseiro, toalha ou saída de praia.",
+     "p": [
+      "Um lenço grande e leve aquece no avião gelado, cobre os ombros onde pedem e deixa o look mais arrumado.",
+      "Uma canga vira toalha de praia, toalha de piquenique, saia, cortina de beliche ou sombra.",
+      "Antes de levar um acessório, pergunte: ele cumpre pelo menos duas funções? Se não, pense duas vezes."
+     ],
+     "q": "Qual item da sua bagagem já surpreendeu sendo útil de um jeito inesperado?",
+     "c": "Escolha um lenço ou canga que você tem e descubra três jeitos diferentes de usar."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing small valuables",
+     "g": "Keep jewellery and precious items few, organised and in your carry-on.",
+     "p": [
+      "Bring only the pieces you will truly wear; leave treasured or irreplaceable items safely at home.",
+      "Keep valuables in your carry-on or personal item, never in a bag that leaves your sight.",
+      "A small padded pouch or pill box keeps earrings and chains from tangling and getting lost."
+     ],
+     "q": "Is there a piece of jewellery or small item you always wear when you travel?",
+     "c": "Choose the few valuables you would take on a week away and find a small pouch for them."
+    },
+    "de": {
+     "t": "Kleine Wertsachen packen",
+     "g": "Halte Schmuck und Wertvolles gering, geordnet und im Handgepäck.",
+     "p": [
+      "Nimm nur Stücke mit, die du wirklich trägst; Erbstücke und Unersetzliches bleiben sicher zu Hause.",
+      "Wertsachen gehören ins Handgepäck oder in die kleine Tasche, nie in Gepäck, das du aus den Augen lässt.",
+      "Ein kleines gepolstertes Etui oder eine Pillendose verhindert, dass Ohrringe und Ketten sich verheddern."
+     ],
+     "q": "Gibt es ein Schmuckstück oder etwas Kleines, das du auf Reisen immer trägst?",
+     "c": "Wähle die wenigen Wertsachen für eine Woche weg und such ein kleines Etui dafür."
+    },
+    "es": {
+     "t": "Objetos de valor pequeños",
+     "g": "Lleva pocas joyas y objetos de valor, bien organizados y en el equipaje de mano.",
+     "p": [
+      "Lleva solo lo que de verdad te pondrás; deja en casa lo muy querido o irreemplazable.",
+      "Guarda los objetos de valor en el equipaje de mano o el bolso personal, nunca en una bolsa que pierdas de vista.",
+      "Un estuche acolchado pequeño o un pastillero evita que pendientes y cadenas se enreden o se pierdan."
+     ],
+     "q": "¿Hay alguna joya u objeto pequeño que siempre llevas cuando viajas?",
+     "c": "Elige los pocos objetos de valor que llevarías una semana y busca un estuche pequeño para ellos."
+    },
+    "fr": {
+     "t": "Les petits objets de valeur",
+     "g": "Garde bijoux et objets précieux en petit nombre, bien rangés et dans ton bagage cabine.",
+     "p": [
+      "N'emporte que ce que tu porteras vraiment ; laisse les pièces chères à ton cœur ou irremplaçables chez toi.",
+      "Garde tes objets de valeur en cabine ou dans ton sac personnel, jamais dans un sac hors de ta vue.",
+      "Une petite pochette rembourrée ou un pilulier évite que boucles et chaînes s'emmêlent ou se perdent."
+     ],
+     "q": "Y a-t-il un bijou ou un petit objet que tu portes toujours en voyage ?",
+     "c": "Choisis les quelques objets de valeur pour une semaine et trouve-leur une petite pochette."
+    },
+    "it": {
+     "t": "Piccoli oggetti di valore",
+     "g": "Tieni gioielli e oggetti preziosi pochi, in ordine e nel bagaglio a mano.",
+     "p": [
+      "Porta solo ciò che indosserai davvero; lascia a casa al sicuro i pezzi del cuore o insostituibili.",
+      "Tieni gli oggetti di valore nel bagaglio a mano o nella borsa personale, mai in una borsa fuori dalla tua vista.",
+      "Una piccola custodia imbottita o un portapillole evita che orecchini e catenine si aggroviglino o si perdano."
+     ],
+     "q": "C'è un gioiello o un piccolo oggetto che indossi sempre in viaggio?",
+     "c": "Scegli i pochi oggetti di valore per una settimana fuori e trova una piccola custodia per loro."
+    },
+    "pt": {
+     "t": "Pequenos objetos de valor",
+     "g": "Leva poucas joias e objetos de valor, arrumados e na bagagem de mão.",
+     "p": [
+      "Leva só o que vais mesmo usar; deixa em casa, em segurança, o que é muito estimado ou insubstituível.",
+      "Guarda os objetos de valor na bagagem de mão ou no saco pessoal, nunca numa mala longe da vista.",
+      "Uma bolsinha almofadada ou uma caixa de comprimidos evita que brincos e fios se enrolem ou percam."
+     ],
+     "q": "Há alguma joia ou objeto pequeno que usas sempre quando viajas?",
+     "c": "Escolhe os poucos objetos de valor para uma semana fora e arranja-lhes uma bolsinha."
+    },
+    "pt_BR": {
+     "t": "Pequenos objetos de valor",
+     "g": "Leve poucas joias e objetos de valor, organizados e na bagagem de mão.",
+     "p": [
+      "Leve só o que você vai usar de verdade; deixe em casa, em segurança, o que é muito querido ou insubstituível.",
+      "Guarde objetos de valor na bagagem de mão ou na bolsa pessoal, nunca numa mala longe dos seus olhos.",
+      "Um estojinho acolchoado ou porta-comprimidos evita que brincos e correntes se enrosquem ou sumam."
+     ],
+     "q": "Tem alguma joia ou objeto pequeno que você sempre usa quando viaja?",
+     "c": "Escolha os poucos objetos de valor para uma semana fora e ache um estojinho para eles."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your basic packing system",
+     "g": "Recap luggage, lists, folding, cubes and mix-and-match clothes in one practice pack.",
+     "p": [
+      "Start from your list: documents first, then a colour-matched capsule of clothes and two or three shoes.",
+      "Roll soft pieces, fold stiff ones, sort into cubes, keep heavy items low and fill every gap.",
+      "Check against your airline's limits, and keep valuables and essentials in your personal item."
+     ],
+     "q": "Which tip from this first month has changed your packing the most?",
+     "c": "Do a full practice pack for a 5-day trip, then take one item out that you would not truly need."
+    },
+    "de": {
+     "t": "Rückblick: dein Pack-Grundsystem",
+     "g": "Wiederhole Gepäck, Listen, Falten, Würfel und Kombi-Kleidung in einem Probepacken.",
+     "p": [
+      "Starte mit der Liste: zuerst Dokumente, dann eine farblich abgestimmte Kapselgarderobe und zwei, drei Paar Schuhe.",
+      "Weiches rollen, Festes falten, in Würfel sortieren, Schweres nach unten und jede Lücke füllen.",
+      "Vergleich mit den Grenzen deiner Airline und halte Wertsachen und Wichtiges in der kleinen Tasche."
+     ],
+     "q": "Welcher Tipp aus diesem ersten Monat hat dein Packen am meisten verändert?",
+     "c": "Pack probeweise für 5 Tage und nimm danach ein Teil heraus, das du nicht wirklich brauchst."
+    },
+    "es": {
+     "t": "Repaso: tu sistema básico de equipaje",
+     "g": "Repasa equipaje, listas, doblado, cubos y ropa combinable en una maleta de práctica.",
+     "p": [
+      "Empieza por la lista: primero documentos, luego una cápsula de ropa a juego y dos o tres pares de zapatos.",
+      "Enrolla lo blando, dobla lo rígido, ordena en cubos, lo pesado abajo y rellena cada hueco.",
+      "Comprueba los límites de tu aerolínea y lleva lo valioso y esencial en el bolso personal."
+     ],
+     "q": "¿Qué consejo de este primer mes ha cambiado más tu forma de hacer la maleta?",
+     "c": "Haz una maleta de práctica para 5 días y luego saca una cosa que no necesitarías de verdad."
+    },
+    "fr": {
+     "t": "Révision : ton système de base",
+     "g": "Revois bagages, listes, pliage, cubes et vêtements combinables en faisant une valise d'essai.",
+     "p": [
+      "Pars de ta liste : papiers d'abord, puis une capsule de vêtements assortis et deux ou trois paires de chaussures.",
+      "Roule le souple, plie le rigide, range en cubes, le lourd en bas et comble chaque vide.",
+      "Vérifie les limites de ta compagnie et garde objets de valeur et essentiels dans ton sac personnel."
+     ],
+     "q": "Quel conseil de ce premier mois a le plus changé ta façon de faire ta valise ?",
+     "c": "Fais une valise d'essai pour 5 jours, puis retires-en un objet dont tu n'aurais pas vraiment besoin."
+    },
+    "it": {
+     "t": "Ripasso: il tuo sistema di base",
+     "g": "Ripassa bagagli, liste, piegatura, cube e capi abbinabili con una valigia di prova.",
+     "p": [
+      "Parti dalla lista: prima i documenti, poi una capsula di capi abbinati e due o tre paia di scarpe.",
+      "Arrotola i capi morbidi, piega quelli rigidi, dividi nei cube, il peso in basso e riempi ogni vuoto.",
+      "Verifica i limiti della compagnia e tieni oggetti di valore ed essenziali nella borsa personale."
+     ],
+     "q": "Quale consiglio di questo primo mese ha cambiato di più il tuo modo di fare la valigia?",
+     "c": "Fai una valigia di prova per 5 giorni, poi togli una cosa che non ti servirebbe davvero."
+    },
+    "pt": {
+     "t": "Revisão: o teu sistema básico",
+     "g": "Revê bagagem, listas, dobragem, cubos e roupa combinável numa mala de treino.",
+     "p": [
+      "Começa pela lista: primeiro documentos, depois uma cápsula de roupa a condizer e dois ou três pares de sapatos.",
+      "Enrola o que é macio, dobra o que é rígido, arruma em cubos, o pesado em baixo e enche cada espaço.",
+      "Confirma os limites da companhia e guarda o valioso e o essencial no saco pessoal."
+     ],
+     "q": "Que dica deste primeiro mês mudou mais a tua maneira de fazer a mala?",
+     "c": "Faz uma mala de treino para 5 dias e depois tira uma coisa de que não precisarias mesmo."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu sistema básico",
+     "g": "Revise bagagem, listas, dobras, organizadores e roupas combináveis numa mala de treino.",
+     "p": [
+      "Comece pela lista: primeiro documentos, depois uma cápsula de roupas que combinam e dois ou três pares de sapatos.",
+      "Enrole o que é macio, dobre o que é firme, separe nos organizadores, peso embaixo e preencha cada vão.",
+      "Confira os limites da companhia e mantenha o valioso e o essencial na bolsa pessoal."
+     ],
+     "q": "Qual dica deste primeiro mês mais mudou o seu jeito de fazer a mala?",
+     "c": "Faça uma mala de treino para 5 dias e depois tire um item de que você não precisaria de verdade."
+    }
+   }
+  }
+ ]
+}

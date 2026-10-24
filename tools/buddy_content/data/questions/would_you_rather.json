@@ -1,0 +1,1305 @@
+{
+ "topic": "would_you_rather",
+ "questions": [
+  {
+   "id": "would_you_rather-001",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather wake up by the sea or in the mountains? Why?",
+    "de": "Würdest du lieber am Meer oder in den Bergen aufwachen? Warum?",
+    "es": "¿Preferirías despertar junto al mar o en la montaña? ¿Por qué?",
+    "fr": "Tu préférerais te réveiller au bord de la mer ou à la montagne ? Pourquoi ?",
+    "it": "Preferiresti svegliarti al mare o in montagna? Perché?",
+    "pt": "Preferias acordar junto ao mar ou na montanha? Porquê?",
+    "pt_BR": "Você preferiria acordar perto do mar ou nas montanhas? Por quê?"
+   }
+  },
+  {
+   "id": "would_you_rather-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather eat your favourite food every day or try a new dish every day?",
+    "de": "Würdest du lieber jeden Tag dein Lieblingsessen essen oder jeden Tag ein neues Gericht probieren?",
+    "es": "¿Preferirías comer tu plato favorito cada día o probar un plato nuevo cada día?",
+    "fr": "Tu préférerais manger ton plat préféré tous les jours ou goûter un nouveau plat chaque jour ?",
+    "it": "Preferiresti mangiare ogni giorno il tuo piatto preferito o provarne uno nuovo ogni giorno?",
+    "pt": "Preferias comer o teu prato favorito todos os dias ou provar um prato novo todos os dias?",
+    "pt_BR": "Você preferiria comer sua comida favorita todo dia ou provar um prato novo todo dia?"
+   }
+  },
+  {
+   "id": "would_you_rather-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather be able to fly or be invisible? What would you do first?",
+    "de": "Würdest du lieber fliegen können oder unsichtbar sein? Was würdest du zuerst tun?",
+    "es": "¿Preferirías poder volar o ser invisible? ¿Qué harías primero?",
+    "fr": "Tu préférerais pouvoir voler ou être invisible ? Que ferais-tu en premier ?",
+    "it": "Preferiresti saper volare o diventare invisibile? Cosa faresti per prima cosa?",
+    "pt": "Preferias conseguir voar ou ser invisível? O que farias primeiro?",
+    "pt_BR": "Você preferiria poder voar ou ficar invisível? O que faria primeiro?"
+   }
+  },
+  {
+   "id": "would_you_rather-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have a cat or a dog as your companion? What would you name it?",
+    "de": "Hättest du lieber eine Katze oder einen Hund als Begleiter? Wie würdest du ihn nennen?",
+    "es": "¿Preferirías tener un gato o un perro de compañía? ¿Qué nombre le pondrías?",
+    "fr": "Tu préférerais avoir un chat ou un chien comme compagnon ? Comment l'appellerais-tu ?",
+    "it": "Preferiresti avere un gatto o un cane come compagno? Come lo chiameresti?",
+    "pt": "Preferias ter um gato ou um cão como companhia? Que nome lhe davas?",
+    "pt_BR": "Você preferiria ter um gato ou um cachorro de companhia? Que nome daria a ele?"
+   }
+  },
+  {
+   "id": "would_you_rather-005",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather spend a free day reading at home or exploring outside?",
+    "de": "Würdest du einen freien Tag lieber lesend zu Hause oder draußen auf Entdeckungstour verbringen?",
+    "es": "¿Preferirías pasar un día libre leyendo en casa o explorando fuera?",
+    "fr": "Tu préférerais passer un jour de congé à lire chez toi ou à explorer dehors ?",
+    "it": "Preferiresti passare un giorno libero a leggere a casa o a esplorare fuori?",
+    "pt": "Preferias passar um dia livre a ler em casa ou a explorar lá fora?",
+    "pt_BR": "Você preferiria passar um dia de folga lendo em casa ou explorando lá fora?"
+   }
+  },
+  {
+   "id": "would_you_rather-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather speak every language or be able to talk with animals?",
+    "de": "Würdest du lieber alle Sprachen sprechen oder mit Tieren reden können?",
+    "es": "¿Preferirías hablar todos los idiomas o poder hablar con los animales?",
+    "fr": "Tu préférerais parler toutes les langues ou pouvoir parler aux animaux ?",
+    "it": "Preferiresti parlare tutte le lingue o poter parlare con gli animali?",
+    "pt": "Preferias falar todas as línguas ou conseguir falar com os animais?",
+    "pt_BR": "Você preferiria falar todos os idiomas ou conseguir conversar com os animais?"
+   }
+  },
+  {
+   "id": "would_you_rather-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather live where it's summer all year or where it snows every winter?",
+    "de": "Würdest du lieber dort leben, wo das ganze Jahr Sommer ist, oder wo es jeden Winter schneit?",
+    "es": "¿Preferirías vivir donde siempre es verano o donde nieva cada invierno?",
+    "fr": "Tu préférerais vivre là où c'est l'été toute l'année ou là où il neige chaque hiver ?",
+    "it": "Preferiresti vivere dove è estate tutto l'anno o dove nevica ogni inverno?",
+    "pt": "Preferias viver onde é verão o ano inteiro ou onde neva todos os invernos?",
+    "pt_BR": "Você preferiria morar onde é verão o ano todo ou onde neva todo inverno?"
+   }
+  },
+  {
+   "id": "would_you_rather-008",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather travel by train across a continent or sail around islands?",
+    "de": "Würdest du lieber mit dem Zug über einen Kontinent reisen oder zwischen Inseln segeln?",
+    "es": "¿Preferirías cruzar un continente en tren o navegar entre islas?",
+    "fr": "Tu préférerais traverser un continent en train ou naviguer d'île en île ?",
+    "it": "Preferiresti attraversare un continente in treno o navigare tra le isole?",
+    "pt": "Preferias atravessar um continente de comboio ou velejar entre ilhas?",
+    "pt_BR": "Você preferiria atravessar um continente de trem ou velejar entre ilhas?"
+   }
+  },
+  {
+   "id": "would_you_rather-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather be a great cook or a great dancer? Why that one?",
+    "de": "Wärst du lieber ein toller Koch oder ein toller Tänzer? Warum gerade das?",
+    "es": "¿Preferirías ser un gran cocinero o un gran bailarín? ¿Por qué?",
+    "fr": "Tu préférerais être un excellent cuisinier ou un excellent danseur ? Pourquoi ?",
+    "it": "Preferiresti essere un ottimo cuoco o un ottimo ballerino? Perché proprio quello?",
+    "pt": "Preferias ser um ótimo cozinheiro ou um ótimo dançarino? Porquê?",
+    "pt_BR": "Você preferiria ser um ótimo cozinheiro ou um ótimo dançarino? Por quê?"
+   }
+  },
+  {
+   "id": "would_you_rather-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather visit the past or the future for one day?",
+    "de": "Würdest du lieber für einen Tag in die Vergangenheit oder in die Zukunft reisen?",
+    "es": "¿Preferirías visitar el pasado o el futuro durante un día?",
+    "fr": "Tu préférerais visiter le passé ou le futur pendant une journée ?",
+    "it": "Preferiresti visitare il passato o il futuro per un giorno?",
+    "pt": "Preferias visitar o passado ou o futuro durante um dia?",
+    "pt_BR": "Você preferiria visitar o passado ou o futuro por um dia?"
+   }
+  },
+  {
+   "id": "would_you_rather-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have a big birthday party or a quiet dinner with close friends?",
+    "de": "Hättest du lieber eine große Geburtstagsparty oder ein ruhiges Abendessen mit engen Freunden?",
+    "es": "¿Preferirías una gran fiesta de cumpleaños o una cena tranquila con amigos cercanos?",
+    "fr": "Tu préférerais une grande fête d'anniversaire ou un dîner calme entre amis proches ?",
+    "it": "Preferiresti una grande festa di compleanno o una cena tranquilla con gli amici più stretti?",
+    "pt": "Preferias uma grande festa de anos ou um jantar tranquilo com amigos próximos?",
+    "pt_BR": "Você preferiria uma grande festa de aniversário ou um jantar tranquilo com amigos próximos?"
+   }
+  },
+  {
+   "id": "would_you_rather-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather learn to play guitar or learn to paint? What would you create?",
+    "de": "Würdest du lieber Gitarre spielen oder malen lernen? Was würdest du erschaffen?",
+    "es": "¿Preferirías aprender a tocar la guitarra o a pintar? ¿Qué crearías?",
+    "fr": "Tu préférerais apprendre la guitare ou la peinture ? Que créerais-tu ?",
+    "it": "Preferiresti imparare a suonare la chitarra o a dipingere? Cosa creeresti?",
+    "pt": "Preferias aprender a tocar guitarra ou a pintar? O que criavas?",
+    "pt_BR": "Você preferiria aprender a tocar violão ou a pintar? O que você criaria?"
+   }
+  },
+  {
+   "id": "would_you_rather-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather explore the deep ocean or outer space?",
+    "de": "Würdest du lieber die Tiefsee oder das Weltall erkunden?",
+    "es": "¿Preferirías explorar las profundidades del océano o el espacio?",
+    "fr": "Tu préférerais explorer les fonds marins ou l'espace ?",
+    "it": "Preferiresti esplorare gli abissi dell'oceano o lo spazio?",
+    "pt": "Preferias explorar o fundo do oceano ou o espaço?",
+    "pt_BR": "Você preferiria explorar o fundo do oceano ou o espaço sideral?"
+   }
+  },
+  {
+   "id": "would_you_rather-014",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather be a morning person or a night owl? Which one are you now?",
+    "de": "Wärst du lieber ein Morgenmensch oder eine Nachteule? Was bist du jetzt?",
+    "es": "¿Preferirías ser madrugador o noctámbulo? ¿Qué eres ahora?",
+    "fr": "Tu préférerais être du matin ou du soir ? Et toi, tu es plutôt quoi ?",
+    "it": "Preferiresti essere mattiniero o nottambulo? E adesso cosa sei?",
+    "pt": "Preferias ser uma pessoa da manhã ou da noite? E agora, qual és?",
+    "pt_BR": "Você preferiria ser uma pessoa matutina ou noturna? E hoje, qual você é?"
+   }
+  },
+  {
+   "id": "would_you_rather-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather live in a treehouse or on a houseboat for a year?",
+    "de": "Würdest du ein Jahr lang lieber in einem Baumhaus oder auf einem Hausboot leben?",
+    "es": "¿Preferirías vivir un año en una casa del árbol o en una casa flotante?",
+    "fr": "Tu préférerais vivre un an dans une cabane perchée ou sur une péniche ?",
+    "it": "Preferiresti vivere un anno in una casa sull'albero o su una casa galleggiante?",
+    "pt": "Preferias viver um ano numa casa na árvore ou numa casa flutuante?",
+    "pt_BR": "Você preferiria morar um ano numa casa na árvore ou num barco-casa?"
+   }
+  },
+  {
+   "id": "would_you_rather-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have sweet or salty snacks for a movie night?",
+    "de": "Hättest du beim Filmabend lieber süße oder salzige Snacks?",
+    "es": "¿Preferirías snacks dulces o salados para una noche de cine?",
+    "fr": "Pour une soirée film, tu préférerais des snacks sucrés ou salés ?",
+    "it": "Per una serata film preferiresti snack dolci o salati?",
+    "pt": "Para uma noite de cinema, preferias petiscos doces ou salgados?",
+    "pt_BR": "Numa noite de filme, você preferiria petiscos doces ou salgados?"
+   }
+  },
+  {
+   "id": "would_you_rather-017",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather plan every detail of a trip or just go with the flow?",
+    "de": "Würdest du eine Reise lieber bis ins Detail planen oder einfach spontan sein?",
+    "es": "¿Preferirías planear cada detalle de un viaje o improvisar sobre la marcha?",
+    "fr": "Tu préférerais planifier chaque détail d'un voyage ou te laisser porter ?",
+    "it": "Preferiresti pianificare ogni dettaglio di un viaggio o lasciarti andare?",
+    "pt": "Preferias planear cada pormenor de uma viagem ou deixar-te levar?",
+    "pt_BR": "Você preferiria planejar cada detalhe de uma viagem ou deixar rolar?"
+   }
+  },
+  {
+   "id": "would_you_rather-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather read the book first or watch the film first?",
+    "de": "Würdest du lieber zuerst das Buch lesen oder zuerst den Film sehen?",
+    "es": "¿Preferirías leer primero el libro o ver primero la película?",
+    "fr": "Tu préférerais lire d'abord le livre ou voir d'abord le film ?",
+    "it": "Preferiresti leggere prima il libro o vedere prima il film?",
+    "pt": "Preferias ler primeiro o livro ou ver primeiro o filme?",
+    "pt_BR": "Você preferiria ler o livro primeiro ou ver o filme primeiro?"
+   }
+  },
+  {
+   "id": "would_you_rather-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have a robot that cooks or one that cleans?",
+    "de": "Hättest du lieber einen Roboter, der kocht, oder einen, der putzt?",
+    "es": "¿Preferirías un robot que cocine o uno que limpie?",
+    "fr": "Tu préférerais un robot qui cuisine ou un robot qui fait le ménage ?",
+    "it": "Preferiresti un robot che cucina o uno che pulisce?",
+    "pt": "Preferias um robô que cozinha ou um que limpa a casa?",
+    "pt_BR": "Você preferiria um robô que cozinha ou um que faz faxina?"
+   }
+  },
+  {
+   "id": "would_you_rather-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather sing on stage or dance at a street festival?",
+    "de": "Würdest du lieber auf einer Bühne singen oder auf einem Straßenfest tanzen?",
+    "es": "¿Preferirías cantar en un escenario o bailar en una fiesta callejera?",
+    "fr": "Tu préférerais chanter sur scène ou danser dans une fête de rue ?",
+    "it": "Preferiresti cantare su un palco o ballare a una festa di strada?",
+    "pt": "Preferias cantar num palco ou dançar numa festa de rua?",
+    "pt_BR": "Você preferiria cantar num palco ou dançar numa festa de rua?"
+   }
+  },
+  {
+   "id": "would_you_rather-021",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather taste every cheese in France or every pastry in Portugal?",
+    "de": "Würdest du lieber jeden Käse in Frankreich oder jedes Gebäck in Portugal probieren?",
+    "es": "¿Preferirías probar todos los quesos de Francia o todos los dulces de Portugal?",
+    "fr": "Tu préférerais goûter tous les fromages de France ou toutes les pâtisseries du Portugal ?",
+    "it": "Preferiresti assaggiare tutti i formaggi della Francia o tutti i dolci del Portogallo?",
+    "pt": "Preferias provar todos os queijos de França ou todos os doces de Portugal?",
+    "pt_BR": "Você preferiria provar todos os queijos da França ou todos os doces de Portugal?"
+   }
+  },
+  {
+   "id": "would_you_rather-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have a magic door to anywhere or a flying carpet?",
+    "de": "Hättest du lieber eine Zaubertür, die überallhin führt, oder einen fliegenden Teppich?",
+    "es": "¿Preferirías una puerta mágica a cualquier lugar o una alfombra voladora?",
+    "fr": "Tu préférerais une porte magique vers n'importe où ou un tapis volant ?",
+    "it": "Preferiresti una porta magica verso qualsiasi luogo o un tappeto volante?",
+    "pt": "Preferias uma porta mágica para qualquer lugar ou um tapete voador?",
+    "pt_BR": "Você preferiria uma porta mágica para qualquer lugar ou um tapete voador?"
+   }
+  },
+  {
+   "id": "would_you_rather-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather spend a rainy afternoon baking or playing board games?",
+    "de": "Würdest du einen verregneten Nachmittag lieber mit Backen oder mit Brettspielen verbringen?",
+    "es": "¿Preferirías pasar una tarde lluviosa horneando o jugando a juegos de mesa?",
+    "fr": "Tu préférerais passer un après-midi pluvieux à faire des gâteaux ou à jouer à des jeux de société ?",
+    "it": "Preferiresti passare un pomeriggio piovoso a fare dolci o a giocare a giochi da tavolo?",
+    "pt": "Preferias passar uma tarde de chuva a fazer bolos ou a jogar jogos de tabuleiro?",
+    "pt_BR": "Você preferiria passar uma tarde chuvosa fazendo bolo ou jogando jogos de tabuleiro?"
+   }
+  },
+  {
+   "id": "would_you_rather-024",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather watch the northern lights or a sky full of desert stars?",
+    "de": "Würdest du lieber Polarlichter sehen oder einen Sternenhimmel in der Wüste?",
+    "es": "¿Preferirías ver la aurora boreal o un cielo lleno de estrellas en el desierto?",
+    "fr": "Tu préférerais voir une aurore boréale ou un ciel étoilé dans le désert ?",
+    "it": "Preferiresti vedere l'aurora boreale o un cielo stellato nel deserto?",
+    "pt": "Preferias ver a aurora boreal ou um céu cheio de estrelas no deserto?",
+    "pt_BR": "Você preferiria ver a aurora boreal ou um céu cheio de estrelas no deserto?"
+   }
+  },
+  {
+   "id": "would_you_rather-025",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have one long holiday a year or lots of long weekends?",
+    "de": "Hättest du lieber einen langen Urlaub im Jahr oder viele lange Wochenenden?",
+    "es": "¿Preferirías unas vacaciones largas al año o muchos puentes?",
+    "fr": "Tu préférerais de longues vacances une fois par an ou plein de longs week-ends ?",
+    "it": "Preferiresti una lunga vacanza all'anno o tanti ponti e weekend lunghi?",
+    "pt": "Preferias umas férias longas por ano ou muitas pontes e fins de semana prolongados?",
+    "pt_BR": "Você preferiria férias longas uma vez por ano ou vários feriadões?"
+   }
+  },
+  {
+   "id": "would_you_rather-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather stay with a local family or in a cosy cabin when travelling?",
+    "de": "Würdest du auf Reisen lieber bei einer Gastfamilie oder in einer gemütlichen Hütte wohnen?",
+    "es": "Cuando viajas, ¿preferirías alojarte con una familia local o en una cabaña acogedora?",
+    "fr": "En voyage, tu préférerais loger chez l'habitant ou dans un chalet douillet ?",
+    "it": "In viaggio preferiresti stare da una famiglia del posto o in una baita accogliente?",
+    "pt": "Em viagem, preferias ficar com uma família local ou numa cabana acolhedora?",
+    "pt_BR": "Viajando, você preferiria ficar com uma família local ou num chalé aconchegante?"
+   }
+  },
+  {
+   "id": "would_you_rather-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have super speed or super strength? How would you use it kindly?",
+    "de": "Hättest du lieber Supergeschwindigkeit oder Superkraft? Wie würdest du sie für Gutes nutzen?",
+    "es": "¿Preferirías tener supervelocidad o superfuerza? ¿Cómo la usarías para ayudar?",
+    "fr": "Tu préférerais la super vitesse ou la super force ? Comment l'utiliserais-tu pour aider ?",
+    "it": "Preferiresti la supervelocità o la superforza? Come la useresti per aiutare?",
+    "pt": "Preferias ter supervelocidade ou superforça? Como a usavas para ajudar?",
+    "pt_BR": "Você preferiria ter supervelocidade ou superforça? Como usaria isso para ajudar?"
+   }
+  },
+  {
+   "id": "would_you_rather-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather learn a traditional dance or a traditional recipe on a trip?",
+    "de": "Würdest du auf einer Reise lieber einen traditionellen Tanz oder ein traditionelles Rezept lernen?",
+    "es": "En un viaje, ¿preferirías aprender un baile tradicional o una receta tradicional?",
+    "fr": "En voyage, tu préférerais apprendre une danse traditionnelle ou une recette traditionnelle ?",
+    "it": "In viaggio preferiresti imparare un ballo tradizionale o una ricetta tradizionale?",
+    "pt": "Numa viagem, preferias aprender uma dança tradicional ou uma receita tradicional?",
+    "pt_BR": "Numa viagem, você preferiria aprender uma dança típica ou uma receita típica?"
+   }
+  },
+  {
+   "id": "would_you_rather-029",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have breakfast in bed or brunch with friends on Sunday?",
+    "de": "Würdest du sonntags lieber im Bett frühstücken oder mit Freunden brunchen?",
+    "es": "¿Preferirías desayunar en la cama o hacer un brunch con amigos el domingo?",
+    "fr": "Le dimanche, tu préférerais un petit-déjeuner au lit ou un brunch entre amis ?",
+    "it": "La domenica preferiresti la colazione a letto o un brunch con gli amici?",
+    "pt": "Ao domingo, preferias o pequeno-almoço na cama ou um brunch com amigos?",
+    "pt_BR": "No domingo, você preferiria café da manhã na cama ou um brunch com amigos?"
+   }
+  },
+  {
+   "id": "would_you_rather-030",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather live in a big city or a small village by the sea?",
+    "de": "Würdest du lieber in einer Großstadt oder in einem kleinen Dorf am Meer leben?",
+    "es": "¿Preferirías vivir en una gran ciudad o en un pueblito junto al mar?",
+    "fr": "Tu préférerais vivre dans une grande ville ou dans un petit village au bord de la mer ?",
+    "it": "Preferiresti vivere in una grande città o in un paesino sul mare?",
+    "pt": "Preferias viver numa grande cidade ou numa pequena aldeia à beira-mar?",
+    "pt_BR": "Você preferiria morar numa cidade grande ou numa vila pequena à beira-mar?"
+   }
+  },
+  {
+   "id": "would_you_rather-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have a talking pet or a pet dragon the size of a cat?",
+    "de": "Hättest du lieber ein sprechendes Haustier oder einen Drachen in Katzengröße?",
+    "es": "¿Preferirías una mascota que habla o un dragón del tamaño de un gato?",
+    "fr": "Tu préférerais un animal qui parle ou un dragon de la taille d'un chat ?",
+    "it": "Preferiresti un animale che parla o un draghetto grande come un gatto?",
+    "pt": "Preferias um animal de estimação que fala ou um dragão do tamanho de um gato?",
+    "pt_BR": "Você preferiria um bichinho que fala ou um dragão do tamanho de um gato?"
+   }
+  },
+  {
+   "id": "would_you_rather-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather try street food at a night market or dine at a famous restaurant?",
+    "de": "Würdest du lieber Streetfood auf einem Nachtmarkt essen oder in einem berühmten Restaurant?",
+    "es": "¿Preferirías comer en un mercado nocturno o cenar en un restaurante famoso?",
+    "fr": "Tu préférerais manger dans un marché de nuit ou dîner dans un restaurant célèbre ?",
+    "it": "Preferiresti lo street food di un mercato notturno o una cena in un ristorante famoso?",
+    "pt": "Preferias comida de rua num mercado noturno ou jantar num restaurante famoso?",
+    "pt_BR": "Você preferiria comida de rua num mercado noturno ou jantar num restaurante famoso?"
+   }
+  },
+  {
+   "id": "would_you_rather-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather know a little about everything or a lot about one thing?",
+    "de": "Würdest du lieber ein bisschen über alles oder sehr viel über eine Sache wissen?",
+    "es": "¿Preferirías saber un poco de todo o mucho de una sola cosa?",
+    "fr": "Tu préférerais savoir un peu de tout ou beaucoup sur une seule chose ?",
+    "it": "Preferiresti sapere un po' di tutto o moltissimo di una cosa sola?",
+    "pt": "Preferias saber um pouco de tudo ou muito sobre uma só coisa?",
+    "pt_BR": "Você preferiria saber um pouco de tudo ou muito sobre uma coisa só?"
+   }
+  },
+  {
+   "id": "would_you_rather-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather write a novel or direct a movie? What would it be about?",
+    "de": "Würdest du lieber einen Roman schreiben oder einen Film drehen? Worum ginge es?",
+    "es": "¿Preferirías escribir una novela o dirigir una película? ¿De qué trataría?",
+    "fr": "Tu préférerais écrire un roman ou réaliser un film ? De quoi parlerait-il ?",
+    "it": "Preferiresti scrivere un romanzo o dirigere un film? Di cosa parlerebbe?",
+    "pt": "Preferias escrever um romance ou realizar um filme? Sobre o que seria?",
+    "pt_BR": "Você preferiria escrever um romance ou dirigir um filme? Sobre o que seria?"
+   }
+  },
+  {
+   "id": "would_you_rather-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have tea in Morocco or coffee in Italy?",
+    "de": "Würdest du lieber Tee in Marokko oder Kaffee in Italien trinken?",
+    "es": "¿Preferirías tomar té en Marruecos o café en Italia?",
+    "fr": "Tu préférerais boire un thé au Maroc ou un café en Italie ?",
+    "it": "Preferiresti bere un tè in Marocco o un caffè in Italia?",
+    "pt": "Preferias tomar chá em Marrocos ou café em Itália?",
+    "pt_BR": "Você preferiria tomar chá no Marrocos ou café na Itália?"
+   }
+  },
+  {
+   "id": "would_you_rather-036",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather freeze time for an hour or rewind ten minutes once a day?",
+    "de": "Würdest du lieber die Zeit für eine Stunde anhalten oder einmal am Tag zehn Minuten zurückspulen?",
+    "es": "¿Preferirías detener el tiempo una hora o rebobinar diez minutos una vez al día?",
+    "fr": "Tu préférerais arrêter le temps une heure ou revenir dix minutes en arrière une fois par jour ?",
+    "it": "Preferiresti fermare il tempo per un'ora o riavvolgerlo di dieci minuti una volta al giorno?",
+    "pt": "Preferias parar o tempo durante uma hora ou recuar dez minutos uma vez por dia?",
+    "pt_BR": "Você preferiria parar o tempo por uma hora ou voltar dez minutos uma vez por dia?"
+   }
+  },
+  {
+   "id": "would_you_rather-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather send a friend a handwritten letter or a voice message?",
+    "de": "Würdest du einem Freund lieber einen handgeschriebenen Brief schicken oder eine Sprachnachricht?",
+    "es": "¿Preferirías enviar a un amigo una carta escrita a mano o un mensaje de voz?",
+    "fr": "Tu préférerais envoyer à un ami une lettre manuscrite ou un message vocal ?",
+    "it": "Preferiresti mandare a un amico una lettera scritta a mano o un messaggio vocale?",
+    "pt": "Preferias mandar a um amigo uma carta escrita à mão ou uma mensagem de voz?",
+    "pt_BR": "Você preferiria mandar para um amigo uma carta escrita à mão ou um áudio?"
+   }
+  },
+  {
+   "id": "would_you_rather-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather see the cherry blossoms in Japan or the autumn colours in Canada?",
+    "de": "Würdest du lieber die Kirschblüte in Japan oder den bunten Herbst in Kanada erleben?",
+    "es": "¿Preferirías ver los cerezos en flor de Japón o los colores del otoño en Canadá?",
+    "fr": "Tu préférerais voir les cerisiers en fleurs au Japon ou les couleurs d'automne au Canada ?",
+    "it": "Preferiresti vedere i ciliegi in fiore in Giappone o i colori d'autunno in Canada?",
+    "pt": "Preferias ver as cerejeiras em flor no Japão ou as cores do outono no Canadá?",
+    "pt_BR": "Você preferiria ver as cerejeiras em flor no Japão ou as cores do outono no Canadá?"
+   }
+  },
+  {
+   "id": "would_you_rather-039",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather have a theme song that plays when you enter a room or a narrator?",
+    "de": "Hättest du lieber eine Titelmelodie, wenn du einen Raum betrittst, oder einen Erzähler?",
+    "es": "¿Preferirías tener una canción que suene al entrar en una sala o un narrador?",
+    "fr": "Tu préférerais une chanson qui joue quand tu entres dans une pièce ou un narrateur ?",
+    "it": "Preferiresti una sigla che parte quando entri in una stanza o un narratore?",
+    "pt": "Preferias ter uma música que toca quando entras numa sala ou um narrador?",
+    "pt_BR": "Você preferiria uma música tema tocando quando entra num lugar ou um narrador?"
+   }
+  },
+  {
+   "id": "would_you_rather-040",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather be able to make anyone laugh or make anyone feel calm?",
+    "de": "Würdest du lieber jeden zum Lachen bringen oder jeden beruhigen können?",
+    "es": "¿Preferirías poder hacer reír a cualquiera o calmar a cualquiera?",
+    "fr": "Tu préférerais pouvoir faire rire n'importe qui ou apaiser n'importe qui ?",
+    "it": "Preferiresti saper far ridere chiunque o saper calmare chiunque?",
+    "pt": "Preferias conseguir fazer rir qualquer pessoa ou acalmar qualquer pessoa?",
+    "pt_BR": "Você preferiria conseguir fazer qualquer pessoa rir ou acalmar qualquer pessoa?"
+   }
+  },
+  {
+   "id": "would_you_rather-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather eat pizza or pasta tonight?",
+    "de": "Würdest du heute Abend lieber Pizza oder Pasta essen?",
+    "es": "¿Preferirías comer pizza o pasta esta noche?",
+    "fr": "Tu préférerais manger une pizza ou des pâtes ce soir ?",
+    "it": "Stasera preferiresti mangiare pizza o pasta?",
+    "pt": "Hoje à noite preferias comer piza ou massa?",
+    "pt_BR": "Hoje à noite você preferiria comer pizza ou macarrão?"
+   }
+  },
+  {
+   "id": "would_you_rather-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather drink tea or coffee in the morning?",
+    "de": "Würdest du morgens lieber Tee oder Kaffee trinken?",
+    "es": "¿Preferirías tomar té o café por la mañana?",
+    "fr": "Le matin, tu préférerais un thé ou un café ?",
+    "it": "La mattina preferiresti un tè o un caffè?",
+    "pt": "De manhã, preferias chá ou café?",
+    "pt_BR": "De manhã, você preferiria chá ou café?"
+   }
+  },
+  {
+   "id": "would_you_rather-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather go to the beach or to the mountains on holiday?",
+    "de": "Würdest du im Urlaub lieber ans Meer oder in die Berge fahren?",
+    "es": "En vacaciones, ¿preferirías ir a la playa o a la montaña?",
+    "fr": "En vacances, tu préférerais aller à la plage ou à la montagne ?",
+    "it": "In vacanza preferiresti andare al mare o in montagna?",
+    "pt": "Nas férias, preferias ir à praia ou à montanha?",
+    "pt_BR": "Nas férias, você preferiria ir à praia ou para a montanha?"
+   }
+  },
+  {
+   "id": "would_you_rather-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather have ice cream or cake at a party?",
+    "de": "Hättest du auf einer Party lieber Eis oder Kuchen?",
+    "es": "En una fiesta, ¿preferirías helado o pastel?",
+    "fr": "À une fête, tu préférerais une glace ou un gâteau ?",
+    "it": "A una festa preferiresti il gelato o la torta?",
+    "pt": "Numa festa, preferias gelado ou bolo?",
+    "pt_BR": "Numa festa, você preferiria sorvete ou bolo?"
+   }
+  },
+  {
+   "id": "would_you_rather-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather watch a comedy or an adventure film?",
+    "de": "Würdest du lieber eine Komödie oder einen Abenteuerfilm sehen?",
+    "es": "¿Preferirías ver una comedia o una película de aventuras?",
+    "fr": "Tu préférerais regarder une comédie ou un film d'aventure ?",
+    "it": "Preferiresti guardare una commedia o un film d'avventura?",
+    "pt": "Preferias ver uma comédia ou um filme de aventura?",
+    "pt_BR": "Você preferiria assistir a uma comédia ou a um filme de aventura?"
+   }
+  },
+  {
+   "id": "would_you_rather-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather walk in the rain or in the snow?",
+    "de": "Würdest du lieber im Regen oder im Schnee spazieren gehen?",
+    "es": "¿Preferirías pasear bajo la lluvia o bajo la nieve?",
+    "fr": "Tu préférerais te promener sous la pluie ou sous la neige ?",
+    "it": "Preferiresti passeggiare sotto la pioggia o sotto la neve?",
+    "pt": "Preferias passear à chuva ou na neve?",
+    "pt_BR": "Você preferiria caminhar na chuva ou na neve?"
+   }
+  },
+  {
+   "id": "would_you_rather-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather eat pancakes or waffles for breakfast?",
+    "de": "Würdest du zum Frühstück lieber Pfannkuchen oder Waffeln essen?",
+    "es": "¿Preferirías desayunar tortitas o gofres?",
+    "fr": "Au petit-déjeuner, tu préférerais des crêpes ou des gaufres ?",
+    "it": "A colazione preferiresti i pancake o i waffle?",
+    "pt": "Ao pequeno-almoço, preferias panquecas ou waffles?",
+    "pt_BR": "No café da manhã, você preferiria panquecas ou waffles?"
+   }
+  },
+  {
+   "id": "would_you_rather-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather ride a bike or take a bus into town?",
+    "de": "Würdest du lieber mit dem Fahrrad oder mit dem Bus in die Stadt fahren?",
+    "es": "¿Preferirías ir al centro en bici o en autobús?",
+    "fr": "Tu préférerais aller en ville à vélo ou en bus ?",
+    "it": "Preferiresti andare in centro in bici o in autobus?",
+    "pt": "Preferias ir à baixa de bicicleta ou de autocarro?",
+    "pt_BR": "Você preferiria ir para o centro de bicicleta ou de ônibus?"
+   }
+  },
+  {
+   "id": "would_you_rather-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather have a window seat or an aisle seat on a plane?",
+    "de": "Hättest du im Flugzeug lieber einen Fensterplatz oder einen Gangplatz?",
+    "es": "En el avión, ¿preferirías ventanilla o pasillo?",
+    "fr": "En avion, tu préférerais le hublot ou le couloir ?",
+    "it": "In aereo preferiresti il posto al finestrino o sul corridoio?",
+    "pt": "No avião, preferias o lugar à janela ou no corredor?",
+    "pt_BR": "No avião, você preferiria janela ou corredor?"
+   }
+  },
+  {
+   "id": "would_you_rather-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather listen to music or a podcast on a long trip?",
+    "de": "Würdest du auf einer langen Fahrt lieber Musik oder einen Podcast hören?",
+    "es": "En un viaje largo, ¿preferirías escuchar música o un pódcast?",
+    "fr": "Pendant un long trajet, tu préférerais écouter de la musique ou un podcast ?",
+    "it": "In un viaggio lungo preferiresti ascoltare musica o un podcast?",
+    "pt": "Numa viagem longa, preferias ouvir música ou um podcast?",
+    "pt_BR": "Numa viagem longa, você preferiria ouvir música ou um podcast?"
+   }
+  },
+  {
+   "id": "would_you_rather-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather have chocolate or vanilla ice cream?",
+    "de": "Hättest du lieber Schokoladen- oder Vanilleeis?",
+    "es": "¿Preferirías helado de chocolate o de vainilla?",
+    "fr": "Tu préférerais une glace au chocolat ou à la vanille ?",
+    "it": "Preferiresti il gelato al cioccolato o alla vaniglia?",
+    "pt": "Preferias gelado de chocolate ou de baunilha?",
+    "pt_BR": "Você preferiria sorvete de chocolate ou de baunilha?"
+   }
+  },
+  {
+   "id": "would_you_rather-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather play a board game or a video game with friends?",
+    "de": "Würdest du mit Freunden lieber ein Brettspiel oder ein Videospiel spielen?",
+    "es": "¿Preferirías jugar con amigos a un juego de mesa o a un videojuego?",
+    "fr": "Tu préférerais jouer entre amis à un jeu de société ou à un jeu vidéo ?",
+    "it": "Con gli amici preferiresti un gioco da tavolo o un videogioco?",
+    "pt": "Com amigos, preferias jogar um jogo de tabuleiro ou um videojogo?",
+    "pt_BR": "Com amigos, você preferiria um jogo de tabuleiro ou um videogame?"
+   }
+  },
+  {
+   "id": "would_you_rather-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather visit a zoo or an aquarium?",
+    "de": "Würdest du lieber einen Zoo oder ein Aquarium besuchen?",
+    "es": "¿Preferirías visitar un zoo o un acuario?",
+    "fr": "Tu préférerais visiter un zoo ou un aquarium ?",
+    "it": "Preferiresti visitare uno zoo o un acquario?",
+    "pt": "Preferias visitar um jardim zoológico ou um aquário?",
+    "pt_BR": "Você preferiria visitar um zoológico ou um aquário?"
+   }
+  },
+  {
+   "id": "would_you_rather-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather wear sneakers or sandals all summer?",
+    "de": "Würdest du den ganzen Sommer lieber Turnschuhe oder Sandalen tragen?",
+    "es": "¿Preferirías llevar zapatillas o sandalias todo el verano?",
+    "fr": "Tu préférerais porter des baskets ou des sandales tout l'été ?",
+    "it": "Preferiresti portare scarpe da ginnastica o sandali tutta l'estate?",
+    "pt": "Preferias andar de ténis ou de sandálias o verão todo?",
+    "pt_BR": "Você preferiria usar tênis ou sandálias o verão inteiro?"
+   }
+  },
+  {
+   "id": "would_you_rather-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather have a picnic in a park or on a beach?",
+    "de": "Würdest du lieber im Park oder am Strand picknicken?",
+    "es": "¿Preferirías hacer un pícnic en un parque o en la playa?",
+    "fr": "Tu préférerais pique-niquer dans un parc ou sur une plage ?",
+    "it": "Preferiresti fare un picnic in un parco o in spiaggia?",
+    "pt": "Preferias fazer um piquenique num parque ou na praia?",
+    "pt_BR": "Você preferiria fazer um piquenique num parque ou na praia?"
+   }
+  },
+  {
+   "id": "would_you_rather-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather draw a sunset or take a photo of it?",
+    "de": "Würdest du einen Sonnenuntergang lieber zeichnen oder fotografieren?",
+    "es": "¿Preferirías dibujar un atardecer o hacerle una foto?",
+    "fr": "Tu préférerais dessiner un coucher de soleil ou le prendre en photo ?",
+    "it": "Preferiresti disegnare un tramonto o fotografarlo?",
+    "pt": "Preferias desenhar um pôr do sol ou tirar-lhe uma fotografia?",
+    "pt_BR": "Você preferiria desenhar um pôr do sol ou tirar uma foto dele?"
+   }
+  },
+  {
+   "id": "would_you_rather-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather eat spicy food or mild food?",
+    "de": "Hättest du lieber scharfes oder mildes Essen?",
+    "es": "¿Preferirías comida picante o suave?",
+    "fr": "Tu préférerais un plat épicé ou un plat doux ?",
+    "it": "Preferiresti cibo piccante o delicato?",
+    "pt": "Preferias comida picante ou suave?",
+    "pt_BR": "Você preferiria comida apimentada ou suave?"
+   }
+  },
+  {
+   "id": "would_you_rather-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather have a garden full of flowers or full of fruit trees?",
+    "de": "Hättest du lieber einen Garten voller Blumen oder voller Obstbäume?",
+    "es": "¿Preferirías un jardín lleno de flores o de árboles frutales?",
+    "fr": "Tu préférerais un jardin plein de fleurs ou d'arbres fruitiers ?",
+    "it": "Preferiresti un giardino pieno di fiori o di alberi da frutto?",
+    "pt": "Preferias um jardim cheio de flores ou de árvores de fruto?",
+    "pt_BR": "Você preferiria um jardim cheio de flores ou de árvores frutíferas?"
+   }
+  },
+  {
+   "id": "would_you_rather-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather sleep in a tent or in a cabin?",
+    "de": "Würdest du lieber im Zelt oder in einer Hütte schlafen?",
+    "es": "¿Preferirías dormir en una tienda de campaña o en una cabaña?",
+    "fr": "Tu préférerais dormir sous une tente ou dans une cabane ?",
+    "it": "Preferiresti dormire in tenda o in una baita?",
+    "pt": "Preferias dormir numa tenda ou numa cabana?",
+    "pt_BR": "Você preferiria dormir numa barraca ou num chalé?"
+   }
+  },
+  {
+   "id": "would_you_rather-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather have fresh lemonade or hot chocolate right now?",
+    "de": "Hättest du gerade lieber frische Limonade oder heiße Schokolade?",
+    "es": "Ahora mismo, ¿preferirías una limonada fresca o un chocolate caliente?",
+    "fr": "Là, tout de suite, tu préférerais une citronnade fraîche ou un chocolat chaud ?",
+    "it": "Adesso preferiresti una limonata fresca o una cioccolata calda?",
+    "pt": "Neste momento, preferias uma limonada fresca ou um chocolate quente?",
+    "pt_BR": "Agora, você preferiria uma limonada gelada ou um chocolate quente?"
+   }
+  },
+  {
+   "id": "would_you_rather-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather see elephants or giraffes on a safari?",
+    "de": "Würdest du auf einer Safari lieber Elefanten oder Giraffen sehen?",
+    "es": "En un safari, ¿preferirías ver elefantes o jirafas?",
+    "fr": "En safari, tu préférerais voir des éléphants ou des girafes ?",
+    "it": "In un safari preferiresti vedere elefanti o giraffe?",
+    "pt": "Num safari, preferias ver elefantes ou girafas?",
+    "pt_BR": "Num safári, você preferiria ver elefantes ou girafas?"
+   }
+  },
+  {
+   "id": "would_you_rather-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather cook dinner or wash the dishes?",
+    "de": "Würdest du lieber das Abendessen kochen oder abwaschen?",
+    "es": "¿Preferirías hacer la cena o fregar los platos?",
+    "fr": "Tu préférerais préparer le dîner ou faire la vaisselle ?",
+    "it": "Preferiresti cucinare la cena o lavare i piatti?",
+    "pt": "Preferias fazer o jantar ou lavar a loiça?",
+    "pt_BR": "Você preferiria fazer o jantar ou lavar a louça?"
+   }
+  },
+  {
+   "id": "would_you_rather-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather have a red bike or a blue one? What else would it have?",
+    "de": "Hättest du lieber ein rotes oder ein blaues Fahrrad? Was hätte es noch?",
+    "es": "¿Preferirías una bici roja o azul? ¿Qué más le pondrías?",
+    "fr": "Tu préférerais un vélo rouge ou bleu ? Qu'est-ce que tu ajouterais ?",
+    "it": "Preferiresti una bici rossa o blu? Cos'altro le aggiungeresti?",
+    "pt": "Preferias uma bicicleta vermelha ou azul? O que mais lhe punhas?",
+    "pt_BR": "Você preferiria uma bicicleta vermelha ou azul? O que mais colocaria nela?"
+   }
+  },
+  {
+   "id": "would_you_rather-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather go to a concert or a football match?",
+    "de": "Würdest du lieber auf ein Konzert oder zu einem Fußballspiel gehen?",
+    "es": "¿Preferirías ir a un concierto o a un partido de fútbol?",
+    "fr": "Tu préférerais aller à un concert ou à un match de foot ?",
+    "it": "Preferiresti andare a un concerto o a una partita di calcio?",
+    "pt": "Preferias ir a um concerto ou a um jogo de futebol?",
+    "pt_BR": "Você preferiria ir a um show ou a um jogo de futebol?"
+   }
+  },
+  {
+   "id": "would_you_rather-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather have a sunny day at the park or a cosy day on the sofa?",
+    "de": "Hättest du lieber einen sonnigen Tag im Park oder einen gemütlichen Tag auf dem Sofa?",
+    "es": "¿Preferirías un día soleado en el parque o un día tranquilo en el sofá?",
+    "fr": "Tu préférerais une journée ensoleillée au parc ou une journée cocooning sur le canapé ?",
+    "it": "Preferiresti una giornata di sole al parco o una giornata comoda sul divano?",
+    "pt": "Preferias um dia de sol no parque ou um dia aconchegante no sofá?",
+    "pt_BR": "Você preferiria um dia de sol no parque ou um dia aconchegante no sofá?"
+   }
+  },
+  {
+   "id": "would_you_rather-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather learn salsa in Cuba or tango in Argentina? What draws you to it?",
+    "de": "Würdest du lieber Salsa in Kuba oder Tango in Argentinien lernen? Was reizt dich daran?",
+    "es": "¿Preferirías aprender salsa en Cuba o tango en Argentina? ¿Qué te atrae?",
+    "fr": "Tu préférerais apprendre la salsa à Cuba ou le tango en Argentine ? Qu'est-ce qui t'attire ?",
+    "it": "Preferiresti imparare la salsa a Cuba o il tango in Argentina? Cosa ti attira?",
+    "pt": "Preferias aprender salsa em Cuba ou tango na Argentina? O que te atrai?",
+    "pt_BR": "Você preferiria aprender salsa em Cuba ou tango na Argentina? O que te atrai?"
+   }
+  },
+  {
+   "id": "would_you_rather-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather try ten new hobbies in a year or truly master just one?",
+    "de": "Würdest du in einem Jahr lieber zehn neue Hobbys ausprobieren oder ein einziges meistern?",
+    "es": "¿Preferirías probar diez aficiones nuevas en un año o dominar solo una?",
+    "fr": "Tu préférerais essayer dix nouveaux loisirs en un an ou en maîtriser un seul ?",
+    "it": "Preferiresti provare dieci nuovi hobby in un anno o diventare bravissimo in uno solo?",
+    "pt": "Preferias experimentar dez passatempos novos num ano ou dominar só um?",
+    "pt_BR": "Você preferiria experimentar dez hobbies novos em um ano ou dominar só um?"
+   }
+  },
+  {
+   "id": "would_you_rather-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather celebrate New Year on Copacabana beach or under Sydney's fireworks?",
+    "de": "Würdest du Silvester lieber an der Copacabana oder unter dem Feuerwerk in Sydney feiern?",
+    "es": "¿Preferirías celebrar Año Nuevo en la playa de Copacabana o bajo los fuegos de Sídney?",
+    "fr": "Tu préférerais fêter le Nouvel An sur la plage de Copacabana ou sous les feux d'artifice de Sydney ?",
+    "it": "Preferiresti festeggiare Capodanno sulla spiaggia di Copacabana o sotto i fuochi di Sydney?",
+    "pt": "Preferias celebrar a passagem de ano na praia de Copacabana ou com o fogo de artifício de Sydney?",
+    "pt_BR": "Você preferiria passar o Réveillon em Copacabana ou sob os fogos de Sydney?"
+   }
+  },
+  {
+   "id": "would_you_rather-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather turn your hobby into a job or keep it just for fun?",
+    "de": "Würdest du dein Hobby lieber zum Beruf machen oder es nur zum Spaß behalten?",
+    "es": "¿Preferirías convertir tu afición en trabajo o mantenerla solo por diversión?",
+    "fr": "Tu préférerais faire de ta passion ton métier ou la garder juste pour le plaisir ?",
+    "it": "Preferiresti trasformare il tuo hobby in un lavoro o tenerlo solo per divertimento?",
+    "pt": "Preferias transformar o teu passatempo num trabalho ou mantê-lo só por prazer?",
+    "pt_BR": "Você preferiria transformar seu hobby em trabalho ou mantê-lo só por diversão?"
+   }
+  },
+  {
+   "id": "would_you_rather-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather live like a local for a month or visit ten countries in a month?",
+    "de": "Würdest du lieber einen Monat wie ein Einheimischer leben oder in einem Monat zehn Länder besuchen?",
+    "es": "¿Preferirías vivir un mes como un local o visitar diez países en un mes?",
+    "fr": "Tu préférerais vivre un mois comme un habitant ou visiter dix pays en un mois ?",
+    "it": "Preferiresti vivere un mese come uno del posto o visitare dieci paesi in un mese?",
+    "pt": "Preferias viver um mês como um local ou visitar dez países num mês?",
+    "pt_BR": "Você preferiria viver um mês como morador local ou visitar dez países em um mês?"
+   }
+  },
+  {
+   "id": "would_you_rather-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather invent a new holiday or a new sport? How would it work?",
+    "de": "Würdest du lieber einen neuen Feiertag oder eine neue Sportart erfinden? Wie würde das funktionieren?",
+    "es": "¿Preferirías inventar una fiesta nueva o un deporte nuevo? ¿Cómo sería?",
+    "fr": "Tu préférerais inventer une nouvelle fête ou un nouveau sport ? Comment ça marcherait ?",
+    "it": "Preferiresti inventare una nuova festa o un nuovo sport? Come funzionerebbe?",
+    "pt": "Preferias inventar um novo feriado ou um novo desporto? Como funcionaria?",
+    "pt_BR": "Você preferiria inventar um novo feriado ou um novo esporte? Como funcionaria?"
+   }
+  },
+  {
+   "id": "would_you_rather-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather step into your favourite book or your favourite painting?",
+    "de": "Würdest du lieber in dein Lieblingsbuch oder in dein Lieblingsgemälde eintreten?",
+    "es": "¿Preferirías entrar en tu libro favorito o en tu cuadro favorito?",
+    "fr": "Tu préférerais entrer dans ton livre préféré ou dans ton tableau préféré ?",
+    "it": "Preferiresti entrare nel tuo libro preferito o nel tuo quadro preferito?",
+    "pt": "Preferias entrar no teu livro favorito ou no teu quadro favorito?",
+    "pt_BR": "Você preferiria entrar no seu livro favorito ou na sua pintura favorita?"
+   }
+  },
+  {
+   "id": "would_you_rather-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather host a dinner party or be the favourite guest? What would you bring?",
+    "de": "Wärst du lieber Gastgeber einer Dinnerparty oder der Lieblingsgast? Was würdest du mitbringen?",
+    "es": "¿Preferirías organizar una cena o ser el invitado favorito? ¿Qué llevarías?",
+    "fr": "Tu préférerais organiser un dîner ou être l'invité préféré ? Qu'apporterais-tu ?",
+    "it": "Preferiresti organizzare una cena o essere l'ospite preferito? Cosa porteresti?",
+    "pt": "Preferias organizar um jantar ou ser o convidado favorito? O que levavas?",
+    "pt_BR": "Você preferiria dar um jantar ou ser o convidado favorito? O que levaria?"
+   }
+  },
+  {
+   "id": "would_you_rather-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather learn from a teacher or teach yourself with videos?",
+    "de": "Würdest du lieber von einem Lehrer lernen oder es dir mit Videos selbst beibringen?",
+    "es": "¿Preferirías aprender con un profesor o por tu cuenta con vídeos?",
+    "fr": "Tu préférerais apprendre avec un professeur ou tout seul avec des vidéos ?",
+    "it": "Preferiresti imparare con un insegnante o da solo con i video?",
+    "pt": "Preferias aprender com um professor ou sozinho com vídeos?",
+    "pt_BR": "Você preferiria aprender com um professor ou sozinho com vídeos?"
+   }
+  },
+  {
+   "id": "would_you_rather-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather visit a city in the clouds or a city under the sea?",
+    "de": "Würdest du lieber eine Stadt in den Wolken oder eine Stadt unter dem Meer besuchen?",
+    "es": "¿Preferirías visitar una ciudad en las nubes o una ciudad bajo el mar?",
+    "fr": "Tu préférerais visiter une ville dans les nuages ou une ville sous la mer ?",
+    "it": "Preferiresti visitare una città tra le nuvole o una città sotto il mare?",
+    "pt": "Preferias visitar uma cidade nas nuvens ou uma cidade debaixo do mar?",
+    "pt_BR": "Você preferiria visitar uma cidade nas nuvens ou uma cidade no fundo do mar?"
+   }
+  },
+  {
+   "id": "would_you_rather-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather join a choir or a theatre group? Which role would suit you?",
+    "de": "Würdest du lieber in einen Chor oder eine Theatergruppe gehen? Welche Rolle passt zu dir?",
+    "es": "¿Preferirías unirte a un coro o a un grupo de teatro? ¿Qué papel te iría bien?",
+    "fr": "Tu préférerais rejoindre une chorale ou une troupe de théâtre ? Quel rôle t'irait ?",
+    "it": "Preferiresti entrare in un coro o in una compagnia teatrale? Quale ruolo ti si addice?",
+    "pt": "Preferias entrar num coro ou num grupo de teatro? Que papel te ficava bem?",
+    "pt_BR": "Você preferiria entrar num coral ou num grupo de teatro? Que papel combinaria com você?"
+   }
+  },
+  {
+   "id": "would_you_rather-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather meet a friendly alien or a time traveller? What would you ask?",
+    "de": "Würdest du lieber einen freundlichen Außerirdischen oder einen Zeitreisenden treffen? Was würdest du fragen?",
+    "es": "¿Preferirías conocer a un extraterrestre simpático o a un viajero del tiempo? ¿Qué le preguntarías?",
+    "fr": "Tu préférerais rencontrer un extraterrestre sympa ou un voyageur du temps ? Que lui demanderais-tu ?",
+    "it": "Preferiresti incontrare un alieno simpatico o un viaggiatore del tempo? Cosa gli chiederesti?",
+    "pt": "Preferias conhecer um extraterrestre simpático ou um viajante do tempo? O que lhe perguntavas?",
+    "pt_BR": "Você preferiria conhecer um alienígena simpático ou um viajante do tempo? O que perguntaria?"
+   }
+  },
+  {
+   "id": "would_you_rather-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather keep a travel diary or make a photo album of your trips?",
+    "de": "Würdest du lieber ein Reisetagebuch führen oder ein Fotoalbum deiner Reisen gestalten?",
+    "es": "¿Preferirías llevar un diario de viaje o hacer un álbum de fotos de tus viajes?",
+    "fr": "Tu préférerais tenir un carnet de voyage ou faire un album photo de tes voyages ?",
+    "it": "Preferiresti tenere un diario di viaggio o fare un album di foto dei tuoi viaggi?",
+    "pt": "Preferias escrever um diário de viagem ou fazer um álbum de fotografias das tuas viagens?",
+    "pt_BR": "Você preferiria escrever um diário de viagem ou montar um álbum de fotos das suas viagens?"
+   }
+  },
+  {
+   "id": "would_you_rather-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather try a tea ceremony in Japan or a coffee ceremony in Ethiopia?",
+    "de": "Würdest du lieber eine Teezeremonie in Japan oder eine Kaffeezeremonie in Äthiopien erleben?",
+    "es": "¿Preferirías vivir una ceremonia del té en Japón o una del café en Etiopía?",
+    "fr": "Tu préférerais assister à une cérémonie du thé au Japon ou du café en Éthiopie ?",
+    "it": "Preferiresti partecipare a una cerimonia del tè in Giappone o del caffè in Etiopia?",
+    "pt": "Preferias assistir a uma cerimónia do chá no Japão ou do café na Etiópia?",
+    "pt_BR": "Você preferiria participar de uma cerimônia do chá no Japão ou do café na Etiópia?"
+   }
+  },
+  {
+   "id": "would_you_rather-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather fix things yourself or call an expert? What would you love to learn to fix?",
+    "de": "Würdest du Dinge lieber selbst reparieren oder einen Profi rufen? Was würdest du gern reparieren lernen?",
+    "es": "¿Preferirías arreglar las cosas tú mismo o llamar a un experto? ¿Qué te gustaría aprender a arreglar?",
+    "fr": "Tu préférerais réparer les choses toi-même ou appeler un pro ? Qu'aimerais-tu apprendre à réparer ?",
+    "it": "Preferiresti aggiustare le cose da solo o chiamare un esperto? Cosa vorresti imparare ad aggiustare?",
+    "pt": "Preferias arranjar as coisas sozinho ou chamar um especialista? O que gostavas de aprender a arranjar?",
+    "pt_BR": "Você preferiria consertar as coisas sozinho ou chamar um especialista? O que gostaria de aprender a consertar?"
+   }
+  },
+  {
+   "id": "would_you_rather-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather have a weekend full of plans or a completely empty one?",
+    "de": "Hättest du lieber ein Wochenende voller Pläne oder ein ganz leeres?",
+    "es": "¿Preferirías un fin de semana lleno de planes o uno totalmente libre?",
+    "fr": "Tu préférerais un week-end plein de projets ou un week-end complètement libre ?",
+    "it": "Preferiresti un weekend pieno di impegni o uno completamente libero?",
+    "pt": "Preferias um fim de semana cheio de planos ou um completamente livre?",
+    "pt_BR": "Você preferiria um fim de semana cheio de planos ou um totalmente livre?"
+   }
+  },
+  {
+   "id": "would_you_rather-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather be a dolphin or an eagle for a day? Where would you go?",
+    "de": "Wärst du einen Tag lang lieber ein Delfin oder ein Adler? Wohin würdest du reisen?",
+    "es": "¿Preferirías ser un delfín o un águila por un día? ¿Adónde irías?",
+    "fr": "Tu préférerais être un dauphin ou un aigle pendant une journée ? Où irais-tu ?",
+    "it": "Preferiresti essere un delfino o un'aquila per un giorno? Dove andresti?",
+    "pt": "Preferias ser um golfinho ou uma águia durante um dia? Para onde ias?",
+    "pt_BR": "Você preferiria ser um golfinho ou uma águia por um dia? Para onde iria?"
+   }
+  },
+  {
+   "id": "would_you_rather-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather share a dish from your culture or learn one from a new friend?",
+    "de": "Würdest du lieber ein Gericht aus deiner Kultur teilen oder eines von einem neuen Freund lernen?",
+    "es": "¿Preferirías compartir un plato de tu cultura o aprender uno de un nuevo amigo?",
+    "fr": "Tu préférerais partager un plat de ta culture ou en apprendre un d'un nouvel ami ?",
+    "it": "Preferiresti condividere un piatto della tua cultura o impararne uno da un nuovo amico?",
+    "pt": "Preferias partilhar um prato da tua cultura ou aprender um com um novo amigo?",
+    "pt_BR": "Você preferiria compartilhar um prato da sua cultura ou aprender um com um novo amigo?"
+   }
+  },
+  {
+   "id": "would_you_rather-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather design a theme park ride or a new board game?",
+    "de": "Würdest du lieber ein Fahrgeschäft für einen Freizeitpark oder ein neues Brettspiel entwerfen?",
+    "es": "¿Preferirías diseñar una atracción de parque temático o un juego de mesa nuevo?",
+    "fr": "Tu préférerais concevoir une attraction de parc ou un nouveau jeu de société ?",
+    "it": "Preferiresti progettare un'attrazione per un parco divertimenti o un nuovo gioco da tavolo?",
+    "pt": "Preferias criar uma diversão para um parque temático ou um novo jogo de tabuleiro?",
+    "pt_BR": "Você preferiria criar um brinquedo de parque de diversões ou um novo jogo de tabuleiro?"
+   }
+  },
+  {
+   "id": "would_you_rather-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather chat with strangers on a train or enjoy a quiet journey?",
+    "de": "Würdest du im Zug lieber mit Fremden plaudern oder eine ruhige Fahrt genießen?",
+    "es": "En un tren, ¿preferirías charlar con desconocidos o disfrutar de un viaje tranquilo?",
+    "fr": "Dans un train, tu préférerais discuter avec des inconnus ou profiter d'un trajet calme ?",
+    "it": "In treno preferiresti chiacchierare con sconosciuti o goderti un viaggio tranquillo?",
+    "pt": "No comboio, preferias conversar com desconhecidos ou desfrutar de uma viagem sossegada?",
+    "pt_BR": "No trem, você preferiria conversar com desconhecidos ou curtir uma viagem tranquila?"
+   }
+  },
+  {
+   "id": "would_you_rather-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather have many friends or a few very close ones? What makes a friendship strong for you?",
+    "de": "Hättest du lieber viele Freunde oder wenige sehr enge? Was macht für dich eine starke Freundschaft aus?",
+    "es": "¿Preferirías tener muchos amigos o pocos muy cercanos? ¿Qué hace fuerte una amistad para ti?",
+    "fr": "Tu préférerais beaucoup d'amis ou quelques amis très proches ? Qu'est-ce qui rend une amitié solide ?",
+    "it": "Preferiresti avere tanti amici o pochi ma molto stretti? Cosa rende forte un'amicizia per te?",
+    "pt": "Preferias ter muitos amigos ou poucos mas muito próximos? O que torna uma amizade forte para ti?",
+    "pt_BR": "Você preferiria ter muitos amigos ou poucos e bem próximos? O que torna uma amizade forte para você?"
+   }
+  },
+  {
+   "id": "would_you_rather-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather be remembered for your kindness or your creativity? Why?",
+    "de": "Würdest du lieber für deine Freundlichkeit oder für deine Kreativität in Erinnerung bleiben? Warum?",
+    "es": "¿Preferirías ser recordado por tu bondad o por tu creatividad? ¿Por qué?",
+    "fr": "Tu préférerais qu'on se souvienne de toi pour ta gentillesse ou pour ta créativité ? Pourquoi ?",
+    "it": "Preferiresti essere ricordato per la tua gentilezza o per la tua creatività? Perché?",
+    "pt": "Preferias ser lembrado pela tua bondade ou pela tua criatividade? Porquê?",
+    "pt_BR": "Você preferiria ser lembrado pela sua gentileza ou pela sua criatividade? Por quê?"
+   }
+  },
+  {
+   "id": "would_you_rather-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather plan your future carefully or live more in the moment? How do you mix both?",
+    "de": "Würdest du deine Zukunft lieber sorgfältig planen oder mehr im Moment leben? Wie verbindest du beides?",
+    "es": "¿Preferirías planear tu futuro con cuidado o vivir más el momento? ¿Cómo combinas ambas cosas?",
+    "fr": "Tu préférerais planifier ton avenir avec soin ou vivre davantage l'instant ? Comment mélanges-tu les deux ?",
+    "it": "Preferiresti pianificare con cura il tuo futuro o vivere di più il momento? Come unisci le due cose?",
+    "pt": "Preferias planear o futuro com cuidado ou viver mais o momento? Como juntas as duas coisas?",
+    "pt_BR": "Você preferiria planejar o futuro com cuidado ou viver mais o momento? Como você equilibra os dois?"
+   }
+  },
+  {
+   "id": "would_you_rather-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather talk to your younger self or your older self? What would you say?",
+    "de": "Würdest du lieber mit deinem jüngeren oder mit deinem älteren Ich sprechen? Was würdest du sagen?",
+    "es": "¿Preferirías hablar con tu yo más joven o con tu yo mayor? ¿Qué le dirías?",
+    "fr": "Tu préférerais parler à toi plus jeune ou à toi plus âgé ? Que te dirais-tu ?",
+    "it": "Preferiresti parlare con te stesso da giovane o da anziano? Cosa ti diresti?",
+    "pt": "Preferias falar com o teu eu mais novo ou com o teu eu mais velho? O que lhe dizias?",
+    "pt_BR": "Você preferiria conversar com seu eu mais jovem ou com seu eu mais velho? O que diria?"
+   }
+  },
+  {
+   "id": "would_you_rather-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather help one person a lot or many people a little? Why?",
+    "de": "Würdest du lieber einem Menschen sehr helfen oder vielen ein bisschen? Warum?",
+    "es": "¿Preferirías ayudar mucho a una persona o un poco a muchas? ¿Por qué?",
+    "fr": "Tu préférerais beaucoup aider une personne ou aider un peu beaucoup de gens ? Pourquoi ?",
+    "it": "Preferiresti aiutare molto una persona o un po' tante persone? Perché?",
+    "pt": "Preferias ajudar muito uma pessoa ou um pouco muitas pessoas? Porquê?",
+    "pt_BR": "Você preferiria ajudar muito uma pessoa ou um pouco muitas pessoas? Por quê?"
+   }
+  },
+  {
+   "id": "would_you_rather-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather understand everyone or be understood by everyone?",
+    "de": "Würdest du lieber jeden verstehen oder von jedem verstanden werden?",
+    "es": "¿Preferirías entender a todo el mundo o que todo el mundo te entendiera?",
+    "fr": "Tu préférerais comprendre tout le monde ou être compris de tout le monde ?",
+    "it": "Preferiresti capire tutti o essere capito da tutti?",
+    "pt": "Preferias compreender toda a gente ou ser compreendido por toda a gente?",
+    "pt_BR": "Você preferiria entender todo mundo ou ser entendido por todo mundo?"
+   }
+  },
+  {
+   "id": "would_you_rather-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather have one big adventure or many small joys in a year? Why?",
+    "de": "Hättest du in einem Jahr lieber ein großes Abenteuer oder viele kleine Freuden? Warum?",
+    "es": "¿Preferirías vivir una gran aventura o muchas pequeñas alegrías en un año? ¿Por qué?",
+    "fr": "Tu préférerais vivre une grande aventure ou plein de petites joies en un an ? Pourquoi ?",
+    "it": "Preferiresti vivere una grande avventura o tante piccole gioie in un anno? Perché?",
+    "pt": "Preferias viver uma grande aventura ou muitas pequenas alegrias num ano? Porquê?",
+    "pt_BR": "Você preferiria viver uma grande aventura ou várias pequenas alegrias em um ano? Por quê?"
+   }
+  },
+  {
+   "id": "would_you_rather-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather meet Leonardo da Vinci or Marie Curie? What would you ask them?",
+    "de": "Würdest du lieber Leonardo da Vinci oder Marie Curie treffen? Was würdest du fragen?",
+    "es": "¿Preferirías conocer a Leonardo da Vinci o a Marie Curie? ¿Qué le preguntarías?",
+    "fr": "Tu préférerais rencontrer Léonard de Vinci ou Marie Curie ? Que lui demanderais-tu ?",
+    "it": "Preferiresti incontrare Leonardo da Vinci o Marie Curie? Cosa gli chiederesti?",
+    "pt": "Preferias conhecer Leonardo da Vinci ou Marie Curie? O que lhe perguntavas?",
+    "pt_BR": "Você preferiria conhecer Leonardo da Vinci ou Marie Curie? O que perguntaria?"
+   }
+  },
+  {
+   "id": "would_you_rather-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather give every town a library or every school a garden? Why?",
+    "de": "Würdest du lieber jeder Stadt eine Bibliothek oder jeder Schule einen Garten schenken? Warum?",
+    "es": "¿Preferirías dar una biblioteca a cada pueblo o un huerto a cada escuela? ¿Por qué?",
+    "fr": "Tu préférerais offrir une bibliothèque à chaque ville ou un jardin à chaque école ? Pourquoi ?",
+    "it": "Preferiresti regalare una biblioteca a ogni città o un orto a ogni scuola? Perché?",
+    "pt": "Preferias dar uma biblioteca a cada cidade ou uma horta a cada escola? Porquê?",
+    "pt_BR": "Você preferiria dar uma biblioteca a cada cidade ou uma horta a cada escola? Por quê?"
+   }
+  },
+  {
+   "id": "would_you_rather-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather stay calm in every storm or bring sunshine into every room?",
+    "de": "Würdest du lieber in jedem Sturm ruhig bleiben oder in jeden Raum Sonnenschein bringen?",
+    "es": "¿Preferirías mantener la calma en cualquier tormenta o llevar alegría a cualquier lugar?",
+    "fr": "Tu préférerais rester calme dans toutes les tempêtes ou apporter du soleil partout où tu vas ?",
+    "it": "Preferiresti restare calmo in ogni tempesta o portare il sole in ogni stanza?",
+    "pt": "Preferias manter a calma em qualquer tempestade ou levar alegria a qualquer sala?",
+    "pt_BR": "Você preferiria manter a calma em qualquer tempestade ou levar alegria a qualquer lugar?"
+   }
+  },
+  {
+   "id": "would_you_rather-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather know why things happen or how things work?",
+    "de": "Würdest du lieber wissen, warum Dinge passieren, oder wie Dinge funktionieren?",
+    "es": "¿Preferirías saber por qué pasan las cosas o cómo funcionan?",
+    "fr": "Tu préférerais savoir pourquoi les choses arrivent ou comment elles fonctionnent ?",
+    "it": "Preferiresti sapere perché le cose succedono o come funzionano?",
+    "pt": "Preferias saber porque é que as coisas acontecem ou como funcionam?",
+    "pt_BR": "Você preferiria saber por que as coisas acontecem ou como elas funcionam?"
+   }
+  },
+  {
+   "id": "would_you_rather-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather feel at home everywhere or have one perfect place to call home?",
+    "de": "Würdest du dich lieber überall zu Hause fühlen oder einen perfekten Ort haben, den du Zuhause nennst?",
+    "es": "¿Preferirías sentirte en casa en cualquier lugar o tener un único hogar perfecto?",
+    "fr": "Tu préférerais te sentir chez toi partout ou avoir un seul endroit parfait à appeler maison ?",
+    "it": "Preferiresti sentirti a casa ovunque o avere un solo posto perfetto da chiamare casa?",
+    "pt": "Preferias sentir-te em casa em qualquer lugar ou ter um único lar perfeito?",
+    "pt_BR": "Você preferiria se sentir em casa em qualquer lugar ou ter um único lar perfeito?"
+   }
+  },
+  {
+   "id": "would_you_rather-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you invented a 'would you rather' for me, what two options would you give me?",
+    "de": "Wenn du dir ein „Würdest du lieber“ für mich ausdenken würdest, welche zwei Optionen gäbe es?",
+    "es": "Si inventaras un «¿qué prefieres?» para mí, ¿qué dos opciones me darías?",
+    "fr": "Si tu inventais un « tu préférerais » pour moi, quelles deux options me proposerais-tu ?",
+    "it": "Se inventassi un «preferiresti» per me, quali due opzioni mi daresti?",
+    "pt": "Se inventasses um «preferias» para mim, que duas opções me davas?",
+    "pt_BR": "Se você inventasse um “você prefere” para mim, quais duas opções me daria?"
+   }
+  },
+  {
+   "id": "would_you_rather-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you rather relive your best day or discover a brand new one? Tell me about your best day.",
+    "de": "Würdest du lieber deinen schönsten Tag noch einmal erleben oder einen ganz neuen entdecken? Erzähl mir davon.",
+    "es": "¿Preferirías revivir tu mejor día o descubrir uno totalmente nuevo? Cuéntame cómo fue ese día.",
+    "fr": "Tu préférerais revivre ta plus belle journée ou en découvrir une toute nouvelle ? Raconte-la-moi.",
+    "it": "Preferiresti rivivere il tuo giorno più bello o scoprirne uno nuovo? Raccontami di quel giorno.",
+    "pt": "Preferias reviver o teu melhor dia ou descobrir um completamente novo? Conta-me como foi.",
+    "pt_BR": "Você preferiria reviver seu melhor dia ou descobrir um totalmente novo? Me conta como foi."
+   }
+  },
+  {
+   "id": "would_you_rather-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Looking back, which 'would you rather' answer says the most about who you are?",
+    "de": "Rückblickend: Welche „Würdest du lieber“-Antwort sagt am meisten darüber, wer du bist?",
+    "es": "Mirando atrás, ¿qué respuesta de «¿qué prefieres?» dice más sobre quién eres?",
+    "fr": "Avec le recul, quelle réponse à un « tu préférerais » en dit le plus sur qui tu es ?",
+    "it": "Guardando indietro, quale risposta a un «preferiresti» dice di più su chi sei?",
+    "pt": "Olhando para trás, que resposta a um «preferias» diz mais sobre quem és?",
+    "pt_BR": "Olhando para trás, qual resposta de “você prefere” diz mais sobre quem você é?"
+   }
+  }
+ ]
+}

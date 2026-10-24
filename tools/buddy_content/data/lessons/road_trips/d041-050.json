@@ -1,0 +1,835 @@
+{
+ "topic": "road_trips",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fog, wind and glare",
+     "g": "Handle low visibility, strong side winds and a low sun with calm, simple habits.",
+     "p": [
+      "In fog, slow down, use dipped lights and fog lights where allowed, and follow the road edge lines.",
+      "In strong side winds, hold the wheel firmly and take care on bridges, open plains and past trucks.",
+      "Against a low sun, use sunglasses and the sun visor, keep the windscreen clean and slow down."
+     ],
+     "q": "Which of these is the trickiest for you: fog, wind or a low sun?",
+     "c": "Clean the inside of a windscreen today; a clean screen reduces glare a lot."
+    },
+    "de": {
+     "t": "Nebel, Wind und Blendung",
+     "g": "Meistere schlechte Sicht, starken Seitenwind und tiefe Sonne mit ruhigen, einfachen Gewohnheiten.",
+     "p": [
+      "Bei Nebel langsamer fahren, Abblendlicht und wo erlaubt Nebelleuchten nutzen, an Randlinien orientieren.",
+      "Bei starkem Seitenwind das Lenkrad fest halten, besonders auf Brücken, freien Flächen und neben Lkw.",
+      "Bei tiefer Sonne Sonnenbrille und Blende nutzen, die Scheibe sauber halten und langsamer fahren."
+     ],
+     "q": "Was ist für dich am kniffligsten: Nebel, Wind oder tiefe Sonne?",
+     "c": "Putz heute eine Windschutzscheibe von innen; eine saubere Scheibe verringert Blendung stark."
+    },
+    "es": {
+     "t": "Niebla, viento y deslumbramiento",
+     "g": "Afronta poca visibilidad, viento lateral fuerte y sol bajo con hábitos sencillos y calma.",
+     "p": [
+      "Con niebla, reduce la velocidad, usa luces de cruce y antiniebla donde se permita y guíate por las líneas.",
+      "Con viento lateral fuerte, sujeta bien el volante en puentes, llanuras abiertas y al pasar camiones.",
+      "Con el sol bajo, usa gafas de sol y parasol, mantén limpio el parabrisas y reduce la velocidad."
+     ],
+     "q": "¿Qué te resulta más complicado: niebla, viento o sol bajo?",
+     "c": "Limpia hoy el parabrisas por dentro; un cristal limpio reduce mucho el deslumbramiento."
+    },
+    "fr": {
+     "t": "Brouillard, vent et éblouissement",
+     "g": "Gère la faible visibilité, le vent latéral et le soleil rasant avec des gestes simples et calmes.",
+     "p": [
+      "Dans le brouillard, ralentis, allume les feux de croisement et antibrouillard si permis, suis les lignes de rive.",
+      "Par fort vent latéral, tiens bien le volant, surtout sur les ponts, en plaine et en doublant des camions.",
+      "Face au soleil rasant, mets lunettes et pare-soleil, garde le pare-brise propre et ralentis."
+     ],
+     "q": "Qu'est-ce qui est le plus délicat pour toi : brouillard, vent ou soleil rasant ?",
+     "c": "Nettoie aujourd'hui l'intérieur d'un pare-brise ; une vitre propre réduit beaucoup l'éblouissement."
+    },
+    "it": {
+     "t": "Nebbia, vento e abbagliamento",
+     "g": "Gestisci scarsa visibilità, forte vento laterale e sole basso con abitudini semplici e calma.",
+     "p": [
+      "Con la nebbia rallenta, usa anabbaglianti e fendinebbia dove consentito e segui le linee di margine.",
+      "Con forte vento laterale tieni saldo il volante su ponti, pianure aperte e accanto ai camion.",
+      "Con il sole basso usa occhiali da sole e aletta parasole, tieni pulito il parabrezza e rallenta."
+     ],
+     "q": "Cosa trovi più difficile: nebbia, vento o sole basso?",
+     "c": "Pulisci oggi il parabrezza dall'interno: un vetro pulito riduce molto l'abbagliamento."
+    },
+    "pt": {
+     "t": "Nevoeiro, vento e encandeamento",
+     "g": "Lida com pouca visibilidade, vento lateral forte e sol baixo com hábitos simples e calma.",
+     "p": [
+      "Com nevoeiro, abranda, usa os médios e os faróis de nevoeiro onde permitido e guia-te pelas linhas.",
+      "Com vento lateral forte, segura bem o volante em pontes, planícies abertas e ao passar camiões.",
+      "Com sol baixo, usa óculos de sol e pala, mantém o para-brisas limpo e abranda."
+     ],
+     "q": "O que te custa mais: nevoeiro, vento ou sol baixo?",
+     "c": "Limpa hoje o para-brisas por dentro; um vidro limpo reduz muito o encandeamento."
+    },
+    "pt_BR": {
+     "t": "Neblina, vento e ofuscamento",
+     "g": "Enfrente pouca visibilidade, vento lateral forte e sol baixo com hábitos simples e calma.",
+     "p": [
+      "Na neblina, reduza a velocidade, use farol baixo e de neblina onde permitido e siga as faixas laterais.",
+      "Com vento lateral forte, segure firme o volante em pontes, planícies abertas e ao passar caminhões.",
+      "Com sol baixo, use óculos de sol e quebra-sol, mantenha o para-brisa limpo e reduza a velocidade."
+     ],
+     "q": "O que é mais difícil para você: neblina, vento ou sol baixo?",
+     "c": "Limpe hoje o para-brisa por dentro; um vidro limpo reduz muito o ofuscamento."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Night driving basics",
+     "g": "Use headlights well, protect your eye comfort, watch for wildlife and know when to drive by day.",
+     "p": [
+      "Use full beam on empty dark roads and dip it early for oncoming traffic and cars ahead.",
+      "Keep the windscreen clean, dim the dashboard and look at the right edge of the road when dazzled.",
+      "Animals are more active at dusk and night, and scenery is invisible, so save beautiful roads for daylight."
+     ],
+     "q": "Do you enjoy driving at night, or do you prefer to arrive before dark?",
+     "c": "Find the high beam and dashboard dimmer controls in a car you use."
+    },
+    "de": {
+     "t": "Grundlagen Nachtfahrt",
+     "g": "Nutze Scheinwerfer richtig, schone deine Augen, achte auf Wild und wisse, wann du lieber tagsüber fährst.",
+     "p": [
+      "Nutze Fernlicht auf leeren, dunklen Straßen und blende früh ab bei Gegenverkehr und vorausfahrenden Autos.",
+      "Halte die Scheibe sauber, dimm das Armaturenbrett und schau bei Blendung auf den rechten Fahrbahnrand.",
+      "Tiere sind in Dämmerung und Nacht aktiver, die Landschaft ist unsichtbar: Spar schöne Strecken für den Tag."
+     ],
+     "q": "Fährst du gern nachts, oder kommst du lieber vor Einbruch der Dunkelheit an?",
+     "c": "Finde in einem Auto, das du nutzt, den Schalter fürs Fernlicht und die Dimmung des Armaturenbretts."
+    },
+    "es": {
+     "t": "Conducir de noche: lo básico",
+     "g": "Usa bien los faros, cuida tu vista, atento a la fauna y sabe cuándo conducir de día.",
+     "p": [
+      "Usa las largas en carreteras oscuras y vacías y cámbialas pronto ante tráfico de frente o coches delante.",
+      "Mantén limpio el parabrisas, baja el brillo del salpicadero y mira al borde derecho si te deslumbran.",
+      "Los animales se mueven más al anochecer y de noche y no se ve el paisaje: guarda las rutas bonitas para el día."
+     ],
+     "q": "¿Te gusta conducir de noche o prefieres llegar antes de que oscurezca?",
+     "c": "Localiza el mando de las luces largas y el regulador de brillo del salpicadero en un coche que uses."
+    },
+    "fr": {
+     "t": "Conduire de nuit : les bases",
+     "g": "Utilise bien tes phares, ménage tes yeux, guette la faune et sache quand rouler de jour.",
+     "p": [
+      "Mets les pleins phares sur les routes sombres et vides, et passe en code tôt pour les voitures en face ou devant.",
+      "Garde le pare-brise propre, baisse l'éclairage du tableau de bord et regarde le bord droit si tu es ébloui.",
+      "Les animaux sont plus actifs au crépuscule et la nuit, et le paysage est invisible : garde les belles routes pour le jour."
+     ],
+     "q": "Aimes-tu conduire de nuit, ou préfères-tu arriver avant la tombée du jour ?",
+     "c": "Trouve la commande des pleins phares et le réglage de l'éclairage du tableau de bord dans une voiture que tu utilises."
+    },
+    "it": {
+     "t": "Guida notturna: le basi",
+     "g": "Usa bene i fari, proteggi gli occhi, fai attenzione agli animali e sappi quando guidare di giorno.",
+     "p": [
+      "Usa gli abbaglianti su strade buie e vuote e passa presto agli anabbaglianti con auto davanti o in arrivo.",
+      "Tieni pulito il parabrezza, abbassa la luce del cruscotto e guarda il bordo destro se vieni abbagliato.",
+      "Gli animali sono più attivi al tramonto e di notte e il paesaggio non si vede: tieni le strade belle per il giorno."
+     ],
+     "q": "Ti piace guidare di notte o preferisci arrivare prima che faccia buio?",
+     "c": "Trova il comando degli abbaglianti e la regolazione della luce del cruscotto in un'auto che usi."
+    },
+    "pt": {
+     "t": "Conduzir à noite: o básico",
+     "g": "Usa bem os faróis, poupa os olhos, atenção aos animais e sabe quando conduzir de dia.",
+     "p": [
+      "Usa os máximos em estradas escuras e vazias e muda para médios cedo com trânsito em sentido contrário ou à frente.",
+      "Mantém o para-brisas limpo, baixa a luz do painel e olha para a berma direita se fores encandeado.",
+      "Os animais andam mais ao anoitecer e de noite e a paisagem não se vê: guarda as estradas bonitas para o dia."
+     ],
+     "q": "Gostas de conduzir à noite ou preferes chegar antes de escurecer?",
+     "c": "Encontra o comando dos máximos e o regulador da luz do painel num carro que uses."
+    },
+    "pt_BR": {
+     "t": "Dirigir à noite: o básico",
+     "g": "Use bem os faróis, poupe a vista, fique atento aos animais e saiba quando dirigir de dia.",
+     "p": [
+      "Use o farol alto em estradas escuras e vazias e troque cedo para o baixo com carros vindo ou à frente.",
+      "Mantenha o para-brisa limpo, diminua a luz do painel e olhe para a borda direita se for ofuscado.",
+      "Animais circulam mais ao anoitecer e à noite, e a paisagem some: deixe as estradas bonitas para o dia."
+     ],
+     "q": "Você gosta de dirigir à noite ou prefere chegar antes de escurecer?",
+     "c": "Ache o comando do farol alto e o ajuste de luz do painel num carro que você usa."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Speed limits differ everywhere",
+     "g": "See how limits change by country and road type, and how to spot them as you drive.",
+     "p": [
+      "Limits vary by country and by road type: towns, rural roads and motorways each have their own.",
+      "Some countries show a sign only when the limit changes, while others repeat signs often.",
+      "Limits can also depend on weather or vehicle type, so read an official guide before driving abroad."
+     ],
+     "q": "Have you ever been surprised by a speed limit in another region or country?",
+     "c": "Look up on an official site the default limits for towns and motorways in one country you would visit."
+    },
+    "de": {
+     "t": "Tempolimits sind überall anders",
+     "g": "Sieh, wie sich Limits je nach Land und Straßentyp ändern und wie du sie unterwegs erkennst.",
+     "p": [
+      "Limits unterscheiden sich nach Land und Straßentyp: Ort, Landstraße und Autobahn haben eigene Werte.",
+      "Manche Länder zeigen nur ein Schild, wenn sich das Limit ändert, andere wiederholen Schilder oft.",
+      "Limits können auch von Wetter oder Fahrzeugart abhängen, lies also vor Auslandsfahrten eine offizielle Übersicht."
+     ],
+     "q": "Hat dich ein Tempolimit in einer anderen Region oder einem anderen Land schon einmal überrascht?",
+     "c": "Such auf einer offiziellen Seite die üblichen Limits für Ort und Autobahn in einem Land, das du besuchen würdest."
+    },
+    "es": {
+     "t": "Los límites cambian en cada sitio",
+     "g": "Mira cómo cambian los límites según el país y el tipo de vía, y cómo detectarlos al conducir.",
+     "p": [
+      "Los límites varían según el país y la vía: ciudad, carretera y autopista tienen los suyos.",
+      "Algunos países solo ponen señal cuando cambia el límite; otros la repiten a menudo.",
+      "También pueden depender del clima o del vehículo, así que lee una guía oficial antes de conducir fuera."
+     ],
+     "q": "¿Te ha sorprendido alguna vez un límite de velocidad en otra región o país?",
+     "c": "Busca en una web oficial los límites generales de ciudad y autopista de un país que visitarías."
+    },
+    "fr": {
+     "t": "Les limitations changent partout",
+     "g": "Vois comment les limitations varient selon le pays et le type de route, et comment les repérer.",
+     "p": [
+      "Les limites varient selon le pays et la route : agglomération, route et autoroute ont chacune la leur.",
+      "Certains pays n'affichent un panneau que lorsque la limite change, d'autres le répètent souvent.",
+      "Elles peuvent aussi dépendre de la météo ou du véhicule : lis un guide officiel avant de conduire à l'étranger."
+     ],
+     "q": "As-tu déjà été surpris par une limitation de vitesse dans une autre région ou un autre pays ?",
+     "c": "Cherche sur un site officiel les limites habituelles en ville et sur autoroute d'un pays que tu visiterais."
+    },
+    "it": {
+     "t": "I limiti cambiano ovunque",
+     "g": "Scopri come i limiti cambiano per paese e tipo di strada, e come riconoscerli mentre guidi.",
+     "p": [
+      "I limiti variano per paese e tipo di strada: centri abitati, strade extraurbane e autostrade hanno i loro.",
+      "Alcuni paesi mettono il cartello solo quando il limite cambia, altri lo ripetono spesso.",
+      "Possono dipendere anche dal meteo o dal veicolo: leggi una guida ufficiale prima di guidare all'estero."
+     ],
+     "q": "Ti ha mai sorpreso un limite di velocità in un'altra regione o paese?",
+     "c": "Cerca su un sito ufficiale i limiti generali in città e in autostrada di un paese che visiteresti."
+    },
+    "pt": {
+     "t": "Os limites mudam em todo o lado",
+     "g": "Vê como os limites mudam por país e tipo de estrada e como os detetar enquanto conduzes.",
+     "p": [
+      "Os limites variam por país e tipo de via: localidades, estradas nacionais e autoestradas têm os seus.",
+      "Alguns países só mostram sinal quando o limite muda; outros repetem os sinais muitas vezes.",
+      "Podem também depender do tempo ou do veículo, por isso lê um guia oficial antes de conduzir fora."
+     ],
+     "q": "Já te surpreendeu um limite de velocidade noutra região ou país?",
+     "c": "Procura num site oficial os limites gerais em localidades e autoestradas de um país que visitarias."
+    },
+    "pt_BR": {
+     "t": "Limites de velocidade mudam",
+     "g": "Veja como os limites mudam por país e tipo de via, e como identificá-los enquanto dirige.",
+     "p": [
+      "Os limites variam por país e tipo de via: cidade, estrada e rodovia têm os seus.",
+      "Alguns países só colocam placa quando o limite muda; outros repetem as placas com frequência.",
+      "Eles também podem depender do clima ou do veículo, então leia um guia oficial antes de dirigir fora."
+     ],
+     "q": "Algum limite de velocidade em outra região ou país já surpreendeu você?",
+     "c": "Pesquise num site oficial os limites gerais na cidade e na rodovia de um país que você visitaria."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Driving on the other side",
+     "g": "Learn simple tips for adapting when traffic flows on the opposite side of the road.",
+     "p": [
+      "The trickiest moments are turning, roundabouts and pulling out of car parks or fuel stations.",
+      "Repeat a short phrase like 'driver to the centre line' to keep your position right.",
+      "Start on a quiet road, choose an automatic if you can, and let a passenger double-check junctions."
+     ],
+     "q": "Would driving on the other side excite you or make you a little nervous?",
+     "c": "Look at a map of a country that drives on the other side and imagine your first roundabout there."
+    },
+    "de": {
+     "t": "Fahren auf der anderen Seite",
+     "g": "Lerne einfache Tipps, um dich anzupassen, wenn der Verkehr auf der anderen Straßenseite fließt.",
+     "p": [
+      "Am kniffligsten sind Abbiegen, Kreisverkehre und das Ausfahren aus Parkplätzen oder Tankstellen.",
+      "Wiederhole einen kurzen Satz wie ‚Fahrer zur Mittellinie‘, um deine Position richtig zu halten.",
+      "Starte auf einer ruhigen Straße, nimm wenn möglich Automatik und lass Beifahrer Kreuzungen mitprüfen."
+     ],
+     "q": "Würde dich Fahren auf der anderen Seite reizen oder eher etwas nervös machen?",
+     "c": "Schau dir die Karte eines Landes mit Linksverkehr an und stell dir deinen ersten Kreisverkehr dort vor."
+    },
+    "es": {
+     "t": "Conducir por el otro lado",
+     "g": "Aprende trucos sencillos para adaptarte cuando el tráfico circula por el lado contrario.",
+     "p": [
+      "Los momentos más difíciles son los giros, las rotondas y salir de aparcamientos o gasolineras.",
+      "Repite una frase corta como «conductor hacia la línea central» para mantener bien tu posición.",
+      "Empieza por una carretera tranquila, elige automático si puedes y deja que un pasajero revise los cruces."
+     ],
+     "q": "¿Conducir por el otro lado te emocionaría o te pondría un poco nervioso?",
+     "c": "Mira el mapa de un país que conduce por el otro lado e imagina allí tu primera rotonda."
+    },
+    "fr": {
+     "t": "Rouler de l'autre côté",
+     "g": "Apprends des astuces simples pour t'adapter quand la circulation se fait du côté opposé.",
+     "p": [
+      "Les moments délicats : tourner, les ronds-points, et sortir d'un parking ou d'une station-service.",
+      "Répète une petite phrase comme « conducteur vers la ligne centrale » pour garder la bonne position.",
+      "Commence sur une route calme, prends une automatique si possible et laisse un passager vérifier les carrefours."
+     ],
+     "q": "Rouler de l'autre côté t'enthousiasmerait ou te rendrait un peu nerveux ?",
+     "c": "Regarde la carte d'un pays qui roule de l'autre côté et imagine ton premier rond-point là-bas."
+    },
+    "it": {
+     "t": "Guidare dall'altro lato",
+     "g": "Impara consigli semplici per adattarti quando il traffico scorre sul lato opposto della strada.",
+     "p": [
+      "I momenti più delicati sono le svolte, le rotatorie e l'uscita da parcheggi o distributori.",
+      "Ripeti una frase breve come «guidatore verso la linea di mezzeria» per mantenere la posizione giusta.",
+      "Inizia su una strada tranquilla, scegli l'automatico se puoi e lascia che un passeggero controlli gli incroci."
+     ],
+     "q": "Guidare dall'altro lato ti entusiasmerebbe o ti renderebbe un po' nervoso?",
+     "c": "Guarda la mappa di un paese con guida dall'altro lato e immagina lì la tua prima rotatoria."
+    },
+    "pt": {
+     "t": "Conduzir do outro lado",
+     "g": "Aprende dicas simples para te adaptares quando o trânsito circula pelo lado oposto da estrada.",
+     "p": [
+      "Os momentos mais difíceis são as viragens, as rotundas e a saída de parques ou bombas de gasolina.",
+      "Repete uma frase curta como «condutor junto à linha do meio» para manteres a posição certa.",
+      "Começa numa estrada calma, escolhe automático se puderes e deixa um passageiro confirmar os cruzamentos."
+     ],
+     "q": "Conduzir do outro lado entusiasmar-te-ia ou deixar-te-ia um pouco nervoso?",
+     "c": "Vê o mapa de um país que conduz do outro lado e imagina lá a tua primeira rotunda."
+    },
+    "pt_BR": {
+     "t": "Dirigindo do outro lado",
+     "g": "Aprenda dicas simples para se adaptar quando o trânsito anda pelo lado oposto da via.",
+     "p": [
+      "Os momentos mais difíceis são as conversões, as rotatórias e sair de estacionamentos ou postos.",
+      "Repita uma frase curta como «motorista junto à faixa do meio» para manter a posição certa.",
+      "Comece numa estrada tranquila, escolha automático se puder e deixe um passageiro conferir os cruzamentos."
+     ],
+     "q": "Dirigir do outro lado deixaria você animado ou um pouco nervoso?",
+     "c": "Veja o mapa de um país com mão inglesa e imagine sua primeira rotatória lá."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lane etiquette and overtaking",
+     "g": "Keep to your lane, overtake safely and be a courteous driver others are glad to meet.",
+     "p": [
+      "On multi-lane roads, use the lane for normal driving and return to it after overtaking.",
+      "Only overtake with a long clear view, check mirrors and blind spot, signal, pass and move back smoothly.",
+      "Be kind: let faster cars pass, thank others with a small wave and never rush a slow vehicle."
+     ],
+     "q": "What small courtesy from another driver always makes your day?",
+     "c": "On your next ride as a passenger, notice three courteous moves by drivers around you."
+    },
+    "de": {
+     "t": "Spurdisziplin und Überholen",
+     "g": "Bleib in deiner Spur, überhol sicher und sei ein höflicher Fahrer, dem andere gern begegnen.",
+     "p": [
+      "Auf mehrspurigen Straßen fährst du auf der normalen Spur und kehrst nach dem Überholen dorthin zurück.",
+      "Überhol nur mit langer freier Sicht: Spiegel und toter Winkel, blinken, vorbei und ruhig wieder einordnen.",
+      "Sei freundlich: Lass Schnellere vorbei, bedank dich mit einem kurzen Gruß und dräng nie Langsame."
+     ],
+     "q": "Welche kleine Höflichkeit eines anderen Fahrers macht dir immer den Tag?",
+     "c": "Achte bei deiner nächsten Fahrt als Beifahrer auf drei höfliche Gesten anderer Fahrer."
+    },
+    "es": {
+     "t": "Carriles y adelantamientos",
+     "g": "Mantén tu carril, adelanta con seguridad y sé un conductor amable con quien da gusto cruzarse.",
+     "p": [
+      "En vías de varios carriles, circula por el carril normal y vuelve a él tras adelantar.",
+      "Adelanta solo con buena visibilidad: espejos y ángulo muerto, intermitente, pasa y vuelve con suavidad.",
+      "Sé amable: deja pasar a los más rápidos, agradece con un gesto y nunca presiones a un vehículo lento."
+     ],
+     "q": "¿Qué pequeño gesto de otro conductor siempre te alegra el día?",
+     "c": "En tu próximo trayecto como pasajero, fíjate en tres gestos amables de otros conductores."
+    },
+    "fr": {
+     "t": "Voies et dépassements",
+     "g": "Reste dans ta voie, double en sécurité et sois un conducteur courtois que les autres aiment croiser.",
+     "p": [
+      "Sur les routes à plusieurs voies, roule sur la voie normale et reviens-y après avoir doublé.",
+      "Ne double qu'avec une longue visibilité : rétros et angle mort, clignotant, dépasse et rabats-toi en douceur.",
+      "Sois aimable : laisse passer les plus rapides, remercie d'un petit signe et ne presse jamais un véhicule lent."
+     ],
+     "q": "Quelle petite politesse d'un autre conducteur te fait toujours plaisir ?",
+     "c": "Lors de ton prochain trajet comme passager, repère trois gestes courtois des conducteurs autour."
+    },
+    "it": {
+     "t": "Corsie e sorpassi",
+     "g": "Resta nella tua corsia, sorpassa in sicurezza e sii un guidatore cortese che fa piacere incontrare.",
+     "p": [
+      "Sulle strade a più corsie usa la corsia di marcia normale e rientraci dopo il sorpasso.",
+      "Sorpassa solo con ampia visibilità: specchi e angolo cieco, freccia, sorpassa e rientra con dolcezza.",
+      "Sii gentile: lascia passare chi è più veloce, ringrazia con un cenno e non mettere mai fretta ai lenti."
+     ],
+     "q": "Quale piccola cortesia di un altro guidatore ti migliora sempre la giornata?",
+     "c": "Nel prossimo viaggio da passeggero, nota tre gesti cortesi dei guidatori intorno a te."
+    },
+    "pt": {
+     "t": "Vias e ultrapassagens",
+     "g": "Mantém-te na tua via, ultrapassa em segurança e sê um condutor cortês que dá gosto encontrar.",
+     "p": [
+      "Em estradas com várias vias, circula na via normal e volta a ela depois de ultrapassar.",
+      "Só ultrapassa com boa visibilidade: espelhos e ângulo morto, pisca, passa e volta com suavidade.",
+      "Sê simpático: deixa passar os mais rápidos, agradece com um aceno e nunca pressiones um veículo lento."
+     ],
+     "q": "Que pequena cortesia de outro condutor te alegra sempre o dia?",
+     "c": "Na tua próxima viagem como passageiro, repara em três gestos corteses dos condutores à volta."
+    },
+    "pt_BR": {
+     "t": "Faixas e ultrapassagens",
+     "g": "Mantenha sua faixa, ultrapasse com segurança e seja um motorista gentil que dá gosto encontrar.",
+     "p": [
+      "Em vias com várias faixas, rode na faixa normal e volte para ela depois de ultrapassar.",
+      "Só ultrapasse com boa visibilidade: retrovisores e ponto cego, seta, passe e volte com suavidade.",
+      "Seja gentil: deixe os mais rápidos passarem, agradeça com um aceno e nunca pressione um veículo lento."
+     ],
+     "q": "Qual pequena gentileza de outro motorista sempre melhora o seu dia?",
+     "c": "Na sua próxima viagem como passageiro, repare em três gestos gentis de motoristas ao redor."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "City driving survival",
+     "g": "Handle one-way streets, busy junctions and restricted zones in town centres calmly.",
+     "p": [
+      "Old town centres often have one-way streets, pedestrian zones and areas closed to normal traffic.",
+      "Restricted zones may be enforced by cameras; check signs and official city info before driving in.",
+      "Often the easiest plan is to park at the edge of town and explore the centre on foot or by bus."
+     ],
+     "q": "Do you enjoy driving in cities, or do you prefer to leave the car outside?",
+     "c": "Pick a city on your dream route and find a car park near the centre where you could leave the car."
+    },
+    "de": {
+     "t": "Überleben im Stadtverkehr",
+     "g": "Meistere Einbahnstraßen, volle Kreuzungen und gesperrte Zonen in Innenstädten gelassen.",
+     "p": [
+      "Altstädte haben oft Einbahnstraßen, Fußgängerzonen und Bereiche, die für normalen Verkehr gesperrt sind.",
+      "Gesperrte Zonen werden teils per Kamera überwacht; prüf Schilder und offizielle Infos der Stadt vorher.",
+      "Am einfachsten ist oft, am Stadtrand zu parken und das Zentrum zu Fuß oder mit dem Bus zu erkunden."
+     ],
+     "q": "Fährst du gern in Städten, oder lässt du das Auto lieber draußen?",
+     "c": "Wähle eine Stadt auf deiner Traumroute und finde einen Parkplatz nahe dem Zentrum."
+    },
+    "es": {
+     "t": "Sobrevivir conduciendo en ciudad",
+     "g": "Afronta con calma calles de sentido único, cruces concurridos y zonas restringidas en los centros.",
+     "p": [
+      "Los cascos antiguos suelen tener calles de sentido único, zonas peatonales y áreas cerradas al tráfico.",
+      "Las zonas restringidas pueden vigilarse con cámaras; revisa las señales y la info oficial de la ciudad.",
+      "A menudo lo más fácil es aparcar en las afueras y explorar el centro a pie o en autobús."
+     ],
+     "q": "¿Te gusta conducir por ciudad o prefieres dejar el coche fuera?",
+     "c": "Elige una ciudad de tu ruta soñada y busca un aparcamiento cerca del centro para dejar el coche."
+    },
+    "fr": {
+     "t": "Survivre à la conduite en ville",
+     "g": "Gère sereinement sens uniques, carrefours chargés et zones réglementées des centres-villes.",
+     "p": [
+      "Les centres anciens ont souvent des sens uniques, des zones piétonnes et des secteurs fermés à la circulation.",
+      "Les zones réglementées peuvent être contrôlées par caméra ; vérifie panneaux et infos officielles de la ville.",
+      "Souvent, le plus simple est de te garer en périphérie et de visiter le centre à pied ou en bus."
+     ],
+     "q": "Aimes-tu conduire en ville, ou préfères-tu laisser la voiture à l'extérieur ?",
+     "c": "Choisis une ville sur ton trajet rêvé et trouve un parking près du centre."
+    },
+    "it": {
+     "t": "Sopravvivere in città",
+     "g": "Affronta con calma sensi unici, incroci trafficati e zone a traffico limitato nei centri.",
+     "p": [
+      "I centri storici hanno spesso sensi unici, aree pedonali e zone chiuse al traffico normale.",
+      "Le zone a traffico limitato possono essere controllate da telecamere: verifica cartelli e info ufficiali del comune.",
+      "Spesso la cosa più semplice è parcheggiare fuori dal centro ed esplorarlo a piedi o in autobus."
+     ],
+     "q": "Ti piace guidare in città o preferisci lasciare l'auto fuori?",
+     "c": "Scegli una città sul tuo percorso dei sogni e trova un parcheggio vicino al centro."
+    },
+    "pt": {
+     "t": "Sobreviver à condução na cidade",
+     "g": "Lida com calma com ruas de sentido único, cruzamentos movimentados e zonas condicionadas nos centros.",
+     "p": [
+      "Os centros históricos têm muitas vezes ruas de sentido único, zonas pedonais e áreas fechadas ao trânsito.",
+      "As zonas condicionadas podem ser vigiadas por câmaras; vê os sinais e a informação oficial da cidade.",
+      "Muitas vezes o mais fácil é estacionar na periferia e explorar o centro a pé ou de autocarro."
+     ],
+     "q": "Gostas de conduzir na cidade ou preferes deixar o carro fora?",
+     "c": "Escolhe uma cidade no teu percurso de sonho e encontra um parque perto do centro."
+    },
+    "pt_BR": {
+     "t": "Sobrevivendo ao trânsito urbano",
+     "g": "Encare com calma ruas de mão única, cruzamentos movimentados e zonas restritas nos centros.",
+     "p": [
+      "Centros históricos costumam ter ruas de mão única, calçadões e áreas fechadas ao trânsito comum.",
+      "Zonas restritas podem ser fiscalizadas por câmeras; confira placas e informações oficiais da cidade.",
+      "Muitas vezes o mais fácil é estacionar na borda da cidade e explorar o centro a pé ou de ônibus."
+     ],
+     "q": "Você gosta de dirigir na cidade ou prefere deixar o carro do lado de fora?",
+     "c": "Escolha uma cidade da sua rota dos sonhos e encontre um estacionamento perto do centro."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Parking like a local",
+     "g": "Understand street parking rules, car parks, park-and-ride and parking discs.",
+     "p": [
+      "Read every parking sign: time limits, days, hours and whether you need a ticket, an app or a disc.",
+      "A parking disc is a card you set to your arrival time and leave visible behind the windscreen.",
+      "Park-and-ride sites let you leave the car outside the city and take public transport into the centre."
+     ],
+     "q": "What is the hardest part of parking for you: finding a spot, the rules or the manoeuvre?",
+     "c": "Next time you pass a parking sign, read it fully and explain its rules in your own words."
+    },
+    "de": {
+     "t": "Parken wie die Einheimischen",
+     "g": "Verstehe Parkregeln am Straßenrand, Parkhäuser, Park-and-Ride und Parkscheiben.",
+     "p": [
+      "Lies jedes Parkschild: Höchstdauer, Tage, Uhrzeiten und ob du Ticket, App oder Scheibe brauchst.",
+      "Eine Parkscheibe stellst du auf deine Ankunftszeit und legst sie gut sichtbar hinter die Scheibe.",
+      "Park-and-Ride-Plätze lassen dich das Auto am Stadtrand abstellen und mit Bus oder Bahn ins Zentrum fahren."
+     ],
+     "q": "Was ist für dich beim Parken am schwierigsten: Platz finden, Regeln oder das Einparken?",
+     "c": "Lies beim nächsten Parkschild alles genau und erkläre die Regeln in eigenen Worten."
+    },
+    "es": {
+     "t": "Aparcar como un local",
+     "g": "Entiende las normas de aparcamiento en la calle, los parkings, los disuasorios y los discos horarios.",
+     "p": [
+      "Lee cada señal: tiempo máximo, días, horas y si necesitas tique, app o disco horario.",
+      "El disco horario es una tarjeta que marcas con tu hora de llegada y dejas visible tras el parabrisas.",
+      "Los aparcamientos disuasorios te dejan el coche fuera de la ciudad para entrar en transporte público."
+     ],
+     "q": "¿Qué te cuesta más al aparcar: encontrar sitio, entender las normas o la maniobra?",
+     "c": "La próxima vez que veas una señal de aparcamiento, léela entera y explica sus normas con tus palabras."
+    },
+    "fr": {
+     "t": "Se garer comme un local",
+     "g": "Comprends les règles de stationnement, les parkings, les parcs relais et les disques.",
+     "p": [
+      "Lis chaque panneau : durée maximale, jours, horaires et besoin d'un ticket, d'une appli ou d'un disque.",
+      "Le disque de stationnement se règle sur ton heure d'arrivée et reste visible derrière le pare-brise.",
+      "Les parcs relais permettent de laisser la voiture en périphérie et de rejoindre le centre en transports."
+     ],
+     "q": "Qu'est-ce qui est le plus dur pour toi : trouver une place, les règles ou la manœuvre ?",
+     "c": "Au prochain panneau de stationnement, lis-le en entier et explique ses règles avec tes mots."
+    },
+    "it": {
+     "t": "Parcheggiare come la gente del posto",
+     "g": "Capisci le regole di sosta in strada, i parcheggi, i park and ride e i dischi orari.",
+     "p": [
+      "Leggi ogni cartello: durata massima, giorni, orari e se serve biglietto, app o disco orario.",
+      "Il disco orario si imposta sull'ora di arrivo e va lasciato ben visibile dietro il parabrezza.",
+      "I parcheggi di interscambio ti fanno lasciare l'auto fuori città ed entrare con i mezzi pubblici."
+     ],
+     "q": "Qual è la parte più difficile del parcheggio per te: trovare posto, le regole o la manovra?",
+     "c": "Al prossimo cartello di sosta, leggilo tutto e spiega le sue regole con parole tue."
+    },
+    "pt": {
+     "t": "Estacionar como os locais",
+     "g": "Percebe as regras de estacionamento na rua, os parques, o park and ride e os discos de estacionamento.",
+     "p": [
+      "Lê cada sinal: tempo máximo, dias, horas e se precisas de talão, app ou disco.",
+      "O disco de estacionamento acerta-se na hora de chegada e fica visível atrás do para-brisas.",
+      "Os parques dissuasores deixam-te o carro fora da cidade e entrar no centro em transportes públicos."
+     ],
+     "q": "O que te custa mais ao estacionar: encontrar lugar, as regras ou a manobra?",
+     "c": "No próximo sinal de estacionamento, lê-o todo e explica as regras por palavras tuas."
+    },
+    "pt_BR": {
+     "t": "Estacionando como um local",
+     "g": "Entenda regras de estacionamento na rua, estacionamentos, park and ride e discos de horário.",
+     "p": [
+      "Leia cada placa: tempo máximo, dias, horários e se precisa de tíquete, app ou disco.",
+      "O disco de estacionamento é ajustado na hora da chegada e fica visível atrás do para-brisa.",
+      "Estacionamentos de integração deixam você largar o carro fora da cidade e seguir de transporte público."
+     ],
+     "q": "O que é mais difícil para você ao estacionar: achar vaga, entender as regras ou a manobra?",
+     "c": "Na próxima placa de estacionamento, leia tudo e explique as regras com suas palavras."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Low emission zones",
+     "g": "Understand why many cities limit cars and how to check the rules before you drive in.",
+     "p": [
+      "Low emission zones keep older or more polluting vehicles out of certain areas to improve air quality.",
+      "Some need a sticker or online registration, often for foreign cars too; rules differ city by city.",
+      "Check the official city website before you go and consider parking outside the zone."
+     ],
+     "q": "Would you rather drive into a city centre or park outside and use public transport?",
+     "c": "Find out on an official site whether a city you would like to visit has a low emission zone."
+    },
+    "de": {
+     "t": "Umweltzonen",
+     "g": "Verstehe, warum viele Städte Autos beschränken und wie du die Regeln vor der Einfahrt prüfst.",
+     "p": [
+      "Umweltzonen halten ältere oder stärker belastende Fahrzeuge aus bestimmten Bereichen fern, für bessere Luft.",
+      "Manche verlangen eine Plakette oder Online-Registrierung, oft auch für ausländische Autos; Regeln variieren.",
+      "Prüf vorher die offizielle Website der Stadt und überleg, außerhalb der Zone zu parken."
+     ],
+     "q": "Fährst du lieber ins Stadtzentrum, oder parkst du außerhalb und nimmst Bus und Bahn?",
+     "c": "Finde auf einer offiziellen Seite heraus, ob eine Stadt, die du besuchen willst, eine Umweltzone hat."
+    },
+    "es": {
+     "t": "Zonas de bajas emisiones",
+     "g": "Entiende por qué muchas ciudades limitan los coches y cómo revisar las normas antes de entrar.",
+     "p": [
+      "Las zonas de bajas emisiones impiden la entrada de vehículos más antiguos o contaminantes para mejorar el aire.",
+      "Algunas exigen etiqueta o registro en línea, a menudo también para coches extranjeros; cada ciudad es distinta.",
+      "Consulta la web oficial de la ciudad antes de ir y piensa en aparcar fuera de la zona."
+     ],
+     "q": "¿Prefieres entrar en coche al centro o aparcar fuera y usar el transporte público?",
+     "c": "Averigua en una web oficial si una ciudad que quieres visitar tiene zona de bajas emisiones."
+    },
+    "fr": {
+     "t": "Zones à faibles émissions",
+     "g": "Comprends pourquoi beaucoup de villes limitent les voitures et comment vérifier les règles avant d'entrer.",
+     "p": [
+      "Ces zones écartent les véhicules anciens ou plus polluants de certains secteurs pour améliorer l'air.",
+      "Certaines exigent une vignette ou un enregistrement en ligne, souvent aussi pour les voitures étrangères.",
+      "Consulte le site officiel de la ville avant de partir et pense à te garer hors de la zone."
+     ],
+     "q": "Tu préfères entrer en voiture dans le centre ou te garer dehors et prendre les transports ?",
+     "c": "Vérifie sur un site officiel si une ville que tu veux visiter a une zone à faibles émissions."
+    },
+    "it": {
+     "t": "Zone a basse emissioni",
+     "g": "Capisci perché molte città limitano le auto e come verificare le regole prima di entrare.",
+     "p": [
+      "Le zone a basse emissioni tengono fuori da certe aree i veicoli più vecchi o inquinanti, per un'aria migliore.",
+      "Alcune richiedono un contrassegno o una registrazione online, spesso anche per le auto straniere.",
+      "Controlla il sito ufficiale della città prima di partire e valuta di parcheggiare fuori dalla zona."
+     ],
+     "q": "Preferisci entrare in auto in centro o parcheggiare fuori e usare i mezzi pubblici?",
+     "c": "Scopri su un sito ufficiale se una città che vuoi visitare ha una zona a basse emissioni."
+    },
+    "pt": {
+     "t": "Zonas de emissões reduzidas",
+     "g": "Percebe porque muitas cidades limitam os carros e como verificar as regras antes de entrar.",
+     "p": [
+      "Estas zonas impedem a entrada de veículos mais antigos ou poluentes em certas áreas para melhorar o ar.",
+      "Algumas pedem dístico ou registo online, muitas vezes também para carros estrangeiros; cada cidade é diferente.",
+      "Consulta o site oficial da cidade antes de ires e pondera estacionar fora da zona."
+     ],
+     "q": "Preferes entrar de carro no centro ou estacionar fora e usar transportes públicos?",
+     "c": "Descobre num site oficial se uma cidade que queres visitar tem zona de emissões reduzidas."
+    },
+    "pt_BR": {
+     "t": "Zonas de baixa emissão",
+     "g": "Entenda por que muitas cidades limitam carros e como checar as regras antes de entrar.",
+     "p": [
+      "Zonas de baixa emissão barram veículos mais antigos ou poluentes em certas áreas para melhorar o ar.",
+      "Algumas exigem selo ou cadastro online, muitas vezes também para carros estrangeiros; cada cidade é diferente.",
+      "Consulte o site oficial da cidade antes de ir e pense em estacionar fora da zona."
+     ],
+     "q": "Você prefere entrar de carro no centro ou estacionar fora e usar transporte público?",
+     "c": "Descubra num site oficial se uma cidade que você quer visitar tem zona de baixa emissão."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Narrow lanes and passing places",
+     "g": "Drive country lanes, reverse politely and share tight roads with a smile.",
+     "p": [
+      "On single-track roads, look far ahead and plan which passing place you will pull into.",
+      "The driver nearest a passing place usually pulls in or reverses; a friendly wave says thanks.",
+      "Never park in a passing place, and drive slowly enough to stop within the distance you can see."
+     ],
+     "q": "Does reversing on a narrow road sound fun or stressful to you?",
+     "c": "Practise reversing slowly in a straight line in an empty car park, using mirrors and a look back."
+    },
+    "de": {
+     "t": "Enge Straßen und Ausweichstellen",
+     "g": "Fahr auf schmalen Landstraßen, setz höflich zurück und teil enge Wege mit einem Lächeln.",
+     "p": [
+      "Auf einspurigen Straßen weit vorausschauen und planen, in welche Ausweichstelle du fährst.",
+      "Wer der Ausweichstelle am nächsten ist, fährt meist hinein oder setzt zurück; ein Gruß sagt danke.",
+      "Park nie in einer Ausweichstelle und fahr so langsam, dass du auf Sichtweite anhalten kannst."
+     ],
+     "q": "Klingt Rückwärtsfahren auf einer engen Straße für dich lustig oder stressig?",
+     "c": "Üb auf einem leeren Parkplatz langsam gerade rückwärts zu fahren, mit Spiegeln und Schulterblick."
+    },
+    "es": {
+     "t": "Caminos estrechos y apartaderos",
+     "g": "Conduce por caminos rurales, retrocede con educación y comparte vías estrechas con una sonrisa.",
+     "p": [
+      "En carreteras de un solo carril, mira lejos y planea en qué apartadero vas a meterte.",
+      "Quien está más cerca del apartadero suele apartarse o retroceder; un saludo amable da las gracias.",
+      "Nunca aparques en un apartadero y conduce tan despacio como para parar en la distancia que ves."
+     ],
+     "q": "¿Dar marcha atrás en un camino estrecho te parece divertido o estresante?",
+     "c": "Practica dar marcha atrás despacio y en línea recta en un aparcamiento vacío, con espejos y mirando atrás."
+    },
+    "fr": {
+     "t": "Routes étroites et refuges",
+     "g": "Roule sur les petites routes de campagne, recule poliment et partage les passages étroits avec le sourire.",
+     "p": [
+      "Sur une route à voie unique, regarde loin et prévois dans quel refuge tu vas te ranger.",
+      "Celui qui est le plus proche d'un refuge s'y range ou recule ; un petit signe de la main dit merci.",
+      "Ne te gare jamais dans un refuge et roule assez lentement pour t'arrêter dans la distance visible."
+     ],
+     "q": "Reculer sur une route étroite, ça te semble amusant ou stressant ?",
+     "c": "Entraîne-toi à reculer lentement en ligne droite sur un parking vide, avec rétros et regard arrière."
+    },
+    "it": {
+     "t": "Stradine e piazzole",
+     "g": "Guida su strade di campagna strette, fai retromarcia con cortesia e condividi i passaggi con un sorriso.",
+     "p": [
+      "Sulle strade a una corsia guarda lontano e pianifica in quale piazzola ti fermerai.",
+      "Chi è più vicino alla piazzola di solito si accosta o fa retromarcia; un cenno della mano dice grazie.",
+      "Non parcheggiare mai in una piazzola e guida abbastanza piano da fermarti nello spazio che vedi."
+     ],
+     "q": "Fare retromarcia su una strada stretta ti sembra divertente o stressante?",
+     "c": "Esercitati a fare retromarcia piano e dritto in un parcheggio vuoto, con specchi e sguardo indietro."
+    },
+    "pt": {
+     "t": "Estradas estreitas e baías",
+     "g": "Conduz em estradas rurais estreitas, faz marcha-atrás com simpatia e partilha passagens com um sorriso.",
+     "p": [
+      "Em estradas de uma só via, olha bem à frente e planeia em que baía te vais encostar.",
+      "Quem está mais perto da baía costuma encostar ou recuar; um aceno simpático agradece.",
+      "Nunca estaciones numa baía e conduz devagar o suficiente para parar na distância que vês."
+     ],
+     "q": "Fazer marcha-atrás numa estrada estreita parece-te divertido ou stressante?",
+     "c": "Treina marcha-atrás devagar e a direito num parque vazio, com espelhos e olhando para trás."
+    },
+    "pt_BR": {
+     "t": "Estradas estreitas e recuos",
+     "g": "Dirija em estradinhas rurais, dê ré com educação e divida passagens apertadas com um sorriso.",
+     "p": [
+      "Em estradas de pista única, olhe bem à frente e planeje em qual recuo você vai encostar.",
+      "Quem está mais perto do recuo costuma encostar ou dar ré; um aceno simpático agradece.",
+      "Nunca estacione num recuo e dirija devagar o bastante para parar dentro da distância que você enxerga."
+     ],
+     "q": "Dar ré numa estrada estreita parece divertido ou estressante para você?",
+     "c": "Pratique dar ré devagar e em linha reta num estacionamento vazio, usando retrovisores e olhando para trás."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First steps on mountain roads",
+     "g": "Handle hairpins, use lower gears and enjoy mountain views safely.",
+     "p": [
+      "Use a lower gear going downhill so the engine helps you brake and the brakes do not overheat.",
+      "Slow down before hairpins, stay in your lane and honk lightly on blind bends where it is customary.",
+      "Stop only at proper viewpoints and lay-bys, never on a bend, to enjoy the scenery."
+     ],
+     "q": "Which mountain road or pass would you love to drive one day?",
+     "c": "Find a famous mountain pass on a map and count how many hairpin bends it has."
+    },
+    "de": {
+     "t": "Erste Schritte auf Bergstraßen",
+     "g": "Meistere Serpentinen, nutze niedrige Gänge und genieß Bergblicke sicher.",
+     "p": [
+      "Fahr bergab in einem niedrigeren Gang, damit der Motor mitbremst und die Bremsen nicht überhitzen.",
+      "Brems vor Kehren ab, bleib in deiner Spur und hup in unübersichtlichen Kurven kurz, wo das üblich ist.",
+      "Halte nur an Aussichtspunkten und Parkbuchten, nie in einer Kurve, um die Landschaft zu genießen."
+     ],
+     "q": "Welche Bergstraße oder welchen Pass würdest du gern einmal fahren?",
+     "c": "Such auf einer Karte einen berühmten Pass und zähl, wie viele Kehren er hat."
+    },
+    "es": {
+     "t": "Primeros pasos en carreteras de montaña",
+     "g": "Afronta las curvas cerradas, usa marchas cortas y disfruta de las vistas con seguridad.",
+     "p": [
+      "Baja con una marcha corta para que el motor ayude a frenar y los frenos no se calienten.",
+      "Reduce antes de las curvas cerradas, sigue en tu carril y toca el claxon en curvas ciegas donde sea costumbre.",
+      "Para solo en miradores y apartaderos, nunca en una curva, para disfrutar del paisaje."
+     ],
+     "q": "¿Qué carretera de montaña o puerto te encantaría conducir algún día?",
+     "c": "Busca en un mapa un puerto de montaña famoso y cuenta cuántas curvas de herradura tiene."
+    },
+    "fr": {
+     "t": "Premiers pas sur routes de montagne",
+     "g": "Gère les lacets, utilise les rapports bas et profite des vues de montagne en sécurité.",
+     "p": [
+      "En descente, roule sur un rapport bas pour que le moteur freine et que les freins ne chauffent pas.",
+      "Ralentis avant les épingles, reste dans ta voie et klaxonne brièvement dans les virages sans visibilité si c'est l'usage.",
+      "Arrête-toi seulement aux belvédères et aires prévues, jamais dans un virage, pour profiter du paysage."
+     ],
+     "q": "Quelle route ou quel col de montagne aimerais-tu conduire un jour ?",
+     "c": "Trouve un col célèbre sur une carte et compte combien de lacets il compte."
+    },
+    "it": {
+     "t": "Primi passi sulle strade di montagna",
+     "g": "Affronta i tornanti, usa marce basse e goditi i panorami di montagna in sicurezza.",
+     "p": [
+      "In discesa usa una marcia bassa, così il motore aiuta a frenare e i freni non si surriscaldano.",
+      "Rallenta prima dei tornanti, resta nella tua corsia e suona brevemente nelle curve cieche dove si usa.",
+      "Fermati solo nei belvedere e nelle piazzole, mai in curva, per goderti il paesaggio."
+     ],
+     "q": "Quale strada o passo di montagna ti piacerebbe guidare un giorno?",
+     "c": "Trova su una mappa un passo di montagna famoso e conta quanti tornanti ha."
+    },
+    "pt": {
+     "t": "Primeiros passos em estradas de montanha",
+     "g": "Lida com curvas apertadas, usa mudanças baixas e aproveita as vistas da serra em segurança.",
+     "p": [
+      "A descer, usa uma mudança baixa para o motor ajudar a travar e os travões não aquecerem demais.",
+      "Abranda antes das curvas em gancho, mantém a tua via e buzina levemente em curvas sem visibilidade onde é costume.",
+      "Para só em miradouros e zonas de paragem, nunca numa curva, para apreciar a paisagem."
+     ],
+     "q": "Que estrada de montanha ou passagem adorarias conduzir um dia?",
+     "c": "Encontra num mapa uma passagem de montanha famosa e conta quantas curvas em gancho tem."
+    },
+    "pt_BR": {
+     "t": "Primeiros passos em estradas de serra",
+     "g": "Encare curvas fechadas, use marchas baixas e aproveite as vistas da serra com segurança.",
+     "p": [
+      "Na descida, use marcha baixa para o motor ajudar a frear e os freios não superaquecerem.",
+      "Reduza antes das curvas fechadas, fique na sua faixa e buzine de leve em curvas cegas onde for costume.",
+      "Pare só em mirantes e recuos, nunca numa curva, para curtir a paisagem."
+     ],
+     "q": "Qual estrada de serra ou passo de montanha você adoraria dirigir um dia?",
+     "c": "Ache num mapa uma estrada de montanha famosa e conte quantas curvas em cotovelo ela tem."
+    }
+   }
+  }
+ ]
+}

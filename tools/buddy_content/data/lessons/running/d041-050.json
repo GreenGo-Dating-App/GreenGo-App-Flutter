@@ -1,0 +1,835 @@
+{
+ "topic": "running",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introduction to strength work",
+     "g": "Understand why basic strength exercises support your running.",
+     "p": [
+      "Stronger muscles help your body handle the repeated impact of running steps.",
+      "A little strength work can make you feel more stable and efficient.",
+      "Two short sessions a week with your own body weight are a great start."
+     ],
+     "q": "Have you ever done any strength exercises, and how did you like them?",
+     "c": "Choose two days this week for a ten-minute strength session and add them to your plan."
+    },
+    "de": {
+     "t": "Einführung ins Krafttraining",
+     "g": "Verstehe, warum einfache Kraftübungen dein Laufen unterstützen.",
+     "p": [
+      "Kräftigere Muskeln helfen dem Körper, die wiederholten Laufschritte gut wegzustecken.",
+      "Etwas Krafttraining kann dich stabiler und effizienter fühlen lassen.",
+      "Zwei kurze Einheiten pro Woche mit dem eigenen Körpergewicht sind ein toller Start."
+     ],
+     "q": "Hast du schon mal Kraftübungen gemacht, und wie haben sie dir gefallen?",
+     "c": "Wähl zwei Tage diese Woche für zehn Minuten Krafttraining und trag sie in deinen Plan ein."
+    },
+    "es": {
+     "t": "Introducción a la fuerza",
+     "g": "Entiende por qué los ejercicios básicos de fuerza ayudan a tu carrera.",
+     "p": [
+      "Unos músculos más fuertes ayudan al cuerpo a soportar el impacto repetido de cada paso.",
+      "Un poco de fuerza puede hacer que te sientas más estable y eficiente.",
+      "Dos sesiones cortas a la semana con tu propio peso son un gran comienzo."
+     ],
+     "q": "¿Has hecho alguna vez ejercicios de fuerza y qué te parecieron?",
+     "c": "Elige dos días esta semana para diez minutos de fuerza y añádelos a tu plan."
+    },
+    "fr": {
+     "t": "Introduction au renforcement",
+     "g": "Comprends pourquoi des exercices de renforcement simples soutiennent ta course.",
+     "p": [
+      "Des muscles plus forts aident le corps à encaisser les impacts répétés de la foulée.",
+      "Un peu de renforcement peut te rendre plus stable et plus efficace.",
+      "Deux courtes séances par semaine au poids du corps sont un excellent début."
+     ],
+     "q": "As-tu déjà fait du renforcement musculaire, et qu'en as-tu pensé ?",
+     "c": "Choisis deux jours cette semaine pour dix minutes de renforcement et ajoute-les à ton planning."
+    },
+    "it": {
+     "t": "Introduzione al potenziamento",
+     "g": "Capisci perché semplici esercizi di forza aiutano la tua corsa.",
+     "p": [
+      "Muscoli più forti aiutano il corpo a sopportare l'impatto ripetuto dei passi.",
+      "Un po' di forza può farti sentire più stabile ed efficiente.",
+      "Due brevi sessioni a settimana a corpo libero sono un ottimo inizio."
+     ],
+     "q": "Hai mai fatto esercizi di forza e come ti sono sembrati?",
+     "c": "Scegli due giorni questa settimana per dieci minuti di forza e aggiungili al tuo programma."
+    },
+    "pt": {
+     "t": "Introdução ao treino de força",
+     "g": "Percebe porque é que exercícios básicos de força ajudam a tua corrida.",
+     "p": [
+      "Músculos mais fortes ajudam o corpo a aguentar o impacto repetido de cada passada.",
+      "Um pouco de força pode fazer-te sentir mais estável e eficiente.",
+      "Duas sessões curtas por semana com o peso do corpo são um ótimo começo."
+     ],
+     "q": "Já fizeste exercícios de força e o que achaste?",
+     "c": "Escolhe dois dias desta semana para dez minutos de força e junta-os ao teu plano."
+    },
+    "pt_BR": {
+     "t": "Introdução ao fortalecimento",
+     "g": "Entenda por que exercícios básicos de força ajudam na corrida.",
+     "p": [
+      "Músculos mais fortes ajudam o corpo a aguentar o impacto repetido de cada passada.",
+      "Um pouco de força pode deixar você mais estável e eficiente.",
+      "Dois treinos curtos por semana com o peso do corpo são um ótimo começo."
+     ],
+     "q": "Você já fez exercícios de força e o que achou?",
+     "c": "Escolha dois dias desta semana para dez minutos de fortalecimento e coloque no seu plano."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bodyweight squats and lunges",
+     "g": "Learn two leg-strength moves anyone can do at home.",
+     "p": [
+      "For a squat, sit back as if onto a chair, chest up, knees following your toes.",
+      "For a lunge, step forward and lower gently, keeping your front knee over your ankle.",
+      "Start with a few slow, controlled reps; good form matters more than numbers."
+     ],
+     "q": "Which feels easier for you right now, squats or lunges?",
+     "c": "Do two rounds of eight slow squats and five lunges per leg, resting as needed."
+    },
+    "de": {
+     "t": "Kniebeugen und Ausfallschritte",
+     "g": "Lerne zwei Beinkraftübungen, die jeder zu Hause machen kann.",
+     "p": [
+      "Bei der Kniebeuge setzt du dich nach hinten wie auf einen Stuhl, Brust hoch, Knie Richtung Zehen.",
+      "Beim Ausfallschritt trittst du nach vorn und senkst dich sanft, vorderes Knie über dem Knöchel.",
+      "Beginne mit wenigen langsamen, kontrollierten Wiederholungen; Technik zählt mehr als Zahlen."
+     ],
+     "q": "Was fällt dir gerade leichter, Kniebeugen oder Ausfallschritte?",
+     "c": "Mach zwei Runden mit acht langsamen Kniebeugen und fünf Ausfallschritten pro Bein, mit Pausen nach Bedarf."
+    },
+    "es": {
+     "t": "Sentadillas y zancadas",
+     "g": "Aprende dos ejercicios de fuerza para piernas que cualquiera puede hacer en casa.",
+     "p": [
+      "En la sentadilla, baja como si te sentaras en una silla, pecho arriba y rodillas hacia los pies.",
+      "En la zancada, da un paso al frente y baja suave, con la rodilla delantera sobre el tobillo.",
+      "Empieza con pocas repeticiones lentas y controladas; la técnica importa más que el número."
+     ],
+     "q": "¿Qué te resulta más fácil ahora mismo, sentadillas o zancadas?",
+     "c": "Haz dos rondas de ocho sentadillas lentas y cinco zancadas por pierna, descansando lo necesario."
+    },
+    "fr": {
+     "t": "Squats et fentes au poids du corps",
+     "g": "Apprends deux exercices de jambes que tout le monde peut faire chez soi.",
+     "p": [
+      "Pour le squat, assieds-toi en arrière comme sur une chaise, buste droit, genoux dans l'axe des pieds.",
+      "Pour la fente, avance d'un pas et descends doucement, genou avant au-dessus de la cheville.",
+      "Commence par quelques répétitions lentes et contrôlées ; la technique compte plus que le nombre."
+     ],
+     "q": "Qu'est-ce qui te semble le plus facile en ce moment, squats ou fentes ?",
+     "c": "Fais deux tours de huit squats lents et cinq fentes par jambe, avec des pauses si besoin."
+    },
+    "it": {
+     "t": "Squat e affondi a corpo libero",
+     "g": "Impara due esercizi per le gambe che chiunque può fare a casa.",
+     "p": [
+      "Nello squat siediti indietro come su una sedia, petto alto, ginocchia in linea con i piedi.",
+      "Nell'affondo fai un passo avanti e scendi piano, ginocchio anteriore sopra la caviglia.",
+      "Inizia con poche ripetizioni lente e controllate; la tecnica conta più dei numeri."
+     ],
+     "q": "Cosa ti sembra più facile adesso, squat o affondi?",
+     "c": "Fai due giri di otto squat lenti e cinque affondi per gamba, riposando quanto serve."
+    },
+    "pt": {
+     "t": "Agachamentos e afundos",
+     "g": "Aprende dois exercícios de força para pernas que qualquer pessoa pode fazer em casa.",
+     "p": [
+      "No agachamento, senta-te para trás como numa cadeira, peito erguido e joelhos alinhados com os pés.",
+      "No afundo, dá um passo em frente e desce devagar, com o joelho da frente sobre o tornozelo.",
+      "Começa com poucas repetições lentas e controladas; a técnica conta mais do que os números."
+     ],
+     "q": "O que te parece mais fácil agora, agachamentos ou afundos?",
+     "c": "Faz duas voltas de oito agachamentos lentos e cinco afundos por perna, descansando o necessário."
+    },
+    "pt_BR": {
+     "t": "Agachamentos e avanços",
+     "g": "Aprenda dois exercícios de força para as pernas que qualquer um faz em casa.",
+     "p": [
+      "No agachamento, sente para trás como numa cadeira, peito para cima e joelhos alinhados com os pés.",
+      "No avanço, dê um passo à frente e desça devagar, com o joelho da frente sobre o tornozelo.",
+      "Comece com poucas repetições lentas e controladas; a técnica importa mais que o número."
+     ],
+     "q": "O que parece mais fácil para você agora, agachamento ou avanço?",
+     "c": "Faça duas rodadas de oito agachamentos lentos e cinco avanços por perna, descansando quando precisar."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Core basics for runners",
+     "g": "Learn simple core exercises for a steadier stride.",
+     "p": [
+      "Your core includes your belly, back and hips, which keep your body stable as you run.",
+      "A plank on forearms or knees builds strength with no equipment.",
+      "Short holds with good form, like 15 to 20 seconds, are a fine start."
+     ],
+     "q": "Where do you feel most wobbly or tired at the end of a run?",
+     "c": "Try three planks of 15 seconds today, on knees if needed, breathing calmly."
+    },
+    "de": {
+     "t": "Rumpfkraft-Grundlagen für Läufer",
+     "g": "Lerne einfache Rumpfübungen für einen stabileren Schritt.",
+     "p": [
+      "Zum Rumpf gehören Bauch, Rücken und Hüfte, die deinen Körper beim Laufen stabil halten.",
+      "Ein Unterarmstütz, auch auf den Knien, baut ohne Geräte Kraft auf.",
+      "Kurze Halteübungen mit guter Technik, etwa 15 bis 20 Sekunden, sind ein guter Start."
+     ],
+     "q": "Wo fühlst du dich am Ende eines Laufs am wackligsten oder müdesten?",
+     "c": "Probier heute drei Unterarmstütze von je 15 Sekunden, wenn nötig auf den Knien, mit ruhiger Atmung."
+    },
+    "es": {
+     "t": "Core básico para corredores",
+     "g": "Aprende ejercicios sencillos de core para una zancada más estable.",
+     "p": [
+      "El core incluye abdomen, espalda y cadera, que mantienen estable tu cuerpo al correr.",
+      "Una plancha sobre antebrazos o rodillas desarrolla fuerza sin material.",
+      "Mantener posiciones cortas con buena técnica, de 15 a 20 segundos, es un buen comienzo."
+     ],
+     "q": "¿Dónde te notas más inestable o cansado al final de una carrera?",
+     "c": "Prueba hoy tres planchas de 15 segundos, sobre las rodillas si hace falta, respirando con calma."
+    },
+    "fr": {
+     "t": "Les bases du gainage pour coureurs",
+     "g": "Apprends des exercices de gainage simples pour une foulée plus stable.",
+     "p": [
+      "La sangle abdominale englobe ventre, dos et hanches, qui stabilisent ton corps en courant.",
+      "La planche sur les avant-bras ou les genoux renforce sans matériel.",
+      "De courts maintiens bien exécutés, de 15 à 20 secondes, suffisent pour démarrer."
+     ],
+     "q": "Où te sens-tu le plus instable ou fatigué à la fin d'une sortie ?",
+     "c": "Essaie trois planches de 15 secondes aujourd'hui, sur les genoux si besoin, en respirant calmement."
+    },
+    "it": {
+     "t": "Le basi del core per chi corre",
+     "g": "Impara semplici esercizi per il core per una falcata più stabile.",
+     "p": [
+      "Il core comprende addome, schiena e fianchi, che tengono stabile il corpo mentre corri.",
+      "Il plank sugli avambracci o sulle ginocchia rafforza senza attrezzi.",
+      "Tenute brevi con buona tecnica, da 15 a 20 secondi, sono un ottimo inizio."
+     ],
+     "q": "Dove ti senti più instabile o stanco alla fine di una corsa?",
+     "c": "Prova oggi tre plank da 15 secondi, sulle ginocchia se serve, respirando con calma."
+    },
+    "pt": {
+     "t": "Básico do core para corredores",
+     "g": "Aprende exercícios simples de core para uma passada mais estável.",
+     "p": [
+      "O core inclui abdómen, costas e ancas, que mantêm o corpo estável a correr.",
+      "Uma prancha sobre os antebraços ou os joelhos ganha força sem material.",
+      "Posições curtas com boa técnica, de 15 a 20 segundos, são um bom começo."
+     ],
+     "q": "Onde te sentes mais instável ou cansado no fim de uma corrida?",
+     "c": "Experimenta hoje três pranchas de 15 segundos, sobre os joelhos se for preciso, a respirar com calma."
+    },
+    "pt_BR": {
+     "t": "Core básico para corredores",
+     "g": "Aprenda exercícios simples de core para uma passada mais estável.",
+     "p": [
+      "O core inclui abdômen, lombar e quadril, que mantêm o corpo estável na corrida.",
+      "A prancha nos antebraços ou nos joelhos fortalece sem nenhum equipamento.",
+      "Segurar pouco tempo com boa técnica, de 15 a 20 segundos, é um bom começo."
+     ],
+     "q": "Onde você se sente mais instável ou cansado no fim de uma corrida?",
+     "c": "Faça hoje três pranchas de 15 segundos, nos joelhos se precisar, respirando com calma."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Calf and foot strength",
+     "g": "Learn calf raises and foot exercises for springy, confident steps.",
+     "p": [
+      "Calves and feet absorb and push off with every step you take.",
+      "Slow calf raises, up on your toes and down with control, build strength simply.",
+      "Picking up a towel with your toes or balancing on one foot wakes up small foot muscles."
+     ],
+     "q": "How do your feet and calves usually feel after a long day of walking?",
+     "c": "Do ten slow calf raises, then balance 20 seconds on each foot while brushing your teeth."
+    },
+    "de": {
+     "t": "Kräftige Waden und Füße",
+     "g": "Lerne Wadenheben und Fußübungen für federnde, sichere Schritte.",
+     "p": [
+      "Waden und Füße federn bei jedem Schritt ab und drücken dich wieder nach vorn.",
+      "Langsames Wadenheben, hoch auf die Zehen und kontrolliert runter, baut einfach Kraft auf.",
+      "Ein Handtuch mit den Zehen greifen oder auf einem Bein stehen weckt kleine Fußmuskeln."
+     ],
+     "q": "Wie fühlen sich deine Füße und Waden meist nach einem langen Tag auf den Beinen an?",
+     "c": "Mach zehn langsame Wadenheber und steh dann beim Zähneputzen je 20 Sekunden auf einem Bein."
+    },
+    "es": {
+     "t": "Fuerza en gemelos y pies",
+     "g": "Aprende elevaciones de talones y ejercicios de pies para pasos ágiles y seguros.",
+     "p": [
+      "Gemelos y pies amortiguan e impulsan en cada paso que das.",
+      "Subir lento de puntillas y bajar con control desarrolla fuerza de forma sencilla.",
+      "Recoger una toalla con los dedos o mantener el equilibrio a un pie activa los músculos pequeños del pie."
+     ],
+     "q": "¿Cómo sueles notar pies y gemelos tras un día largo caminando?",
+     "c": "Haz diez elevaciones lentas de talones y mantén el equilibrio 20 segundos sobre cada pie mientras te lavas los dientes."
+    },
+    "fr": {
+     "t": "Renforcer mollets et pieds",
+     "g": "Apprends des montées sur pointes et exercices de pieds pour des foulées dynamiques et sûres.",
+     "p": [
+      "Mollets et pieds amortissent et propulsent à chaque pas.",
+      "Monter lentement sur la pointe des pieds puis redescendre en contrôle renforce simplement.",
+      "Attraper une serviette avec les orteils ou tenir sur un pied réveille les petits muscles du pied."
+     ],
+     "q": "Comment se sentent d'habitude tes pieds et tes mollets après une longue journée debout ?",
+     "c": "Fais dix montées sur pointes lentes, puis tiens 20 secondes sur chaque pied en te brossant les dents."
+    },
+    "it": {
+     "t": "Forza di polpacci e piedi",
+     "g": "Impara sollevamenti sulle punte ed esercizi per i piedi per passi reattivi e sicuri.",
+     "p": [
+      "Polpacci e piedi ammortizzano e spingono a ogni passo.",
+      "Salire piano sulle punte e scendere con controllo costruisce forza in modo semplice.",
+      "Raccogliere un asciugamano con le dita o stare in equilibrio su un piede attiva i piccoli muscoli del piede."
+     ],
+     "q": "Come senti di solito piedi e polpacci dopo una lunga giornata in piedi?",
+     "c": "Fai dieci sollevamenti lenti sulle punte, poi resta 20 secondi su ogni piede mentre ti lavi i denti."
+    },
+    "pt": {
+     "t": "Força de gémeos e pés",
+     "g": "Aprende elevações dos calcanhares e exercícios para os pés para passadas ágeis e seguras.",
+     "p": [
+      "Gémeos e pés amortecem e impulsionam a cada passo.",
+      "Subir devagar em pontas e descer com controlo ganha força de forma simples.",
+      "Apanhar uma toalha com os dedos ou equilibrar-te num pé ativa os pequenos músculos do pé."
+     ],
+     "q": "Como sentes normalmente os pés e os gémeos depois de um dia longo de pé?",
+     "c": "Faz dez elevações lentas e depois equilibra-te 20 segundos em cada pé enquanto lavas os dentes."
+    },
+    "pt_BR": {
+     "t": "Força de panturrilhas e pés",
+     "g": "Aprenda elevações de calcanhar e exercícios para os pés para passadas leves e firmes.",
+     "p": [
+      "Panturrilhas e pés amortecem e impulsionam a cada passo.",
+      "Subir devagar na ponta dos pés e descer com controle fortalece de forma simples.",
+      "Pegar uma toalha com os dedos ou se equilibrar num pé ativa os pequenos músculos do pé."
+     ],
+     "q": "Como você sente os pés e as panturrilhas depois de um dia longo em pé?",
+     "c": "Faça dez elevações lentas e depois fique 20 segundos em cada pé enquanto escova os dentes."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running cadence explained",
+     "g": "Learn what cadence means and why slightly quicker steps can feel lighter.",
+     "p": [
+      "Cadence is the number of steps you take per minute.",
+      "Slightly shorter, quicker steps often feel lighter and keep your foot closer under you.",
+      "There is no magic number; small changes of a few percent are enough to try."
+     ],
+     "q": "Do you think your steps are long and bouncy or short and quick?",
+     "c": "Count your steps for 30 seconds on your next run, then double it to get your cadence."
+    },
+    "de": {
+     "t": "Schrittfrequenz erklärt",
+     "g": "Lerne, was Schrittfrequenz bedeutet und warum etwas schnellere Schritte leichter wirken können.",
+     "p": [
+      "Die Schrittfrequenz ist die Anzahl deiner Schritte pro Minute.",
+      "Etwas kürzere, schnellere Schritte fühlen sich oft leichter an und landen näher unter dir.",
+      "Es gibt keine magische Zahl; kleine Änderungen von wenigen Prozent reichen zum Ausprobieren."
+     ],
+     "q": "Sind deine Schritte eher lang und federnd oder kurz und schnell?",
+     "c": "Zähl beim nächsten Lauf 30 Sekunden lang deine Schritte und verdopple die Zahl für deine Schrittfrequenz."
+    },
+    "es": {
+     "t": "La cadencia explicada",
+     "g": "Aprende qué es la cadencia y por qué unos pasos algo más rápidos pueden sentirse más ligeros.",
+     "p": [
+      "La cadencia es el número de pasos que das por minuto.",
+      "Pasos un poco más cortos y rápidos suelen sentirse más ligeros y caen más bajo tu cuerpo.",
+      "No hay un número mágico; basta con probar pequeños cambios de unos pocos por ciento."
+     ],
+     "q": "¿Crees que tus pasos son largos y saltarines o cortos y rápidos?",
+     "c": "Cuenta tus pasos durante 30 segundos en tu próxima salida y multiplica por dos para saber tu cadencia."
+    },
+    "fr": {
+     "t": "La cadence expliquée",
+     "g": "Découvre ce qu'est la cadence et pourquoi des pas un peu plus rapides peuvent sembler plus légers.",
+     "p": [
+      "La cadence est le nombre de pas que tu fais par minute.",
+      "Des pas un peu plus courts et rapides semblent souvent plus légers et se posent plus près sous toi.",
+      "Il n'y a pas de chiffre magique ; de petits changements de quelques pour cent suffisent pour tester."
+     ],
+     "q": "Penses-tu que tes pas sont longs et bondissants ou courts et rapides ?",
+     "c": "Compte tes pas pendant 30 secondes à ta prochaine sortie, puis double le chiffre pour avoir ta cadence."
+    },
+    "it": {
+     "t": "La cadenza spiegata",
+     "g": "Scopri cos'è la cadenza e perché passi un po' più rapidi possono sembrare più leggeri.",
+     "p": [
+      "La cadenza è il numero di passi che fai al minuto.",
+      "Passi un po' più corti e rapidi spesso sembrano più leggeri e atterrano più sotto di te.",
+      "Non esiste un numero magico; bastano piccoli cambiamenti di pochi punti percentuali."
+     ],
+     "q": "Pensi che i tuoi passi siano lunghi e saltellanti o corti e rapidi?",
+     "c": "Conta i passi per 30 secondi nella prossima corsa e raddoppia il numero per avere la tua cadenza."
+    },
+    "pt": {
+     "t": "A cadência explicada",
+     "g": "Aprende o que é a cadência e porque é que passos um pouco mais rápidos podem parecer mais leves.",
+     "p": [
+      "A cadência é o número de passos que dás por minuto.",
+      "Passos um pouco mais curtos e rápidos parecem muitas vezes mais leves e assentam mais debaixo de ti.",
+      "Não há um número mágico; pequenas mudanças de poucos por cento chegam para experimentar."
+     ],
+     "q": "Achas que os teus passos são longos e saltitantes ou curtos e rápidos?",
+     "c": "Conta os passos durante 30 segundos na próxima corrida e multiplica por dois para saberes a tua cadência."
+    },
+    "pt_BR": {
+     "t": "Cadência explicada",
+     "g": "Entenda o que é cadência e por que passos um pouco mais rápidos podem parecer mais leves.",
+     "p": [
+      "Cadência é o número de passos que você dá por minuto.",
+      "Passos um pouco mais curtos e rápidos costumam parecer mais leves e caem mais embaixo do corpo.",
+      "Não existe número mágico; pequenas mudanças de poucos por cento já bastam para testar."
+     ],
+     "q": "Você acha que seus passos são longos e saltados ou curtos e rápidos?",
+     "c": "Conte seus passos por 30 segundos na próxima corrida e multiplique por dois para saber sua cadência."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running uphill",
+     "g": "Learn how to climb hills with steady effort and good form.",
+     "p": [
+      "Shorten your steps and keep a steady effort rather than a steady speed.",
+      "Drive your arms a little more and look a few metres ahead, not at your feet.",
+      "Walking a steep part is smart and perfectly normal for any runner."
+     ],
+     "q": "Is there a hill on one of your routes that you love or dread?",
+     "c": "Include one gentle hill in your next run and focus on short steps and calm breathing."
+    },
+    "de": {
+     "t": "Bergauf laufen",
+     "g": "Lerne, Hügel mit gleichmäßiger Anstrengung und guter Haltung zu nehmen.",
+     "p": [
+      "Verkürze die Schritte und halte die Anstrengung gleich, nicht das Tempo.",
+      "Setz die Arme etwas kräftiger ein und schau ein paar Meter nach vorn, nicht auf die Füße.",
+      "Ein steiles Stück zu gehen ist klug und für jeden Läufer völlig normal."
+     ],
+     "q": "Gibt es auf einer deiner Strecken einen Hügel, den du liebst oder fürchtest?",
+     "c": "Bau in deinen nächsten Lauf einen sanften Hügel ein und achte auf kurze Schritte und ruhigen Atem."
+    },
+    "es": {
+     "t": "Correr cuesta arriba",
+     "g": "Aprende a subir cuestas con esfuerzo constante y buena técnica.",
+     "p": [
+      "Acorta los pasos y mantén un esfuerzo constante en lugar de una velocidad constante.",
+      "Mueve un poco más los brazos y mira unos metros por delante, no a tus pies.",
+      "Caminar en un tramo empinado es inteligente y totalmente normal para cualquiera."
+     ],
+     "q": "¿Hay alguna cuesta en tus rutas que te encante o que temas?",
+     "c": "Incluye una cuesta suave en tu próxima salida y céntrate en pasos cortos y respiración tranquila."
+    },
+    "fr": {
+     "t": "Courir en montée",
+     "g": "Apprends à grimper les côtes avec un effort régulier et une bonne posture.",
+     "p": [
+      "Raccourcis tes pas et garde un effort constant plutôt qu'une vitesse constante.",
+      "Utilise un peu plus les bras et regarde quelques mètres devant, pas tes pieds.",
+      "Marcher dans une partie raide est malin et tout à fait normal pour n'importe quel coureur."
+     ],
+     "q": "Y a-t-il une côte sur l'un de tes parcours que tu adores ou redoutes ?",
+     "c": "Ajoute une petite côte à ta prochaine sortie en te concentrant sur des pas courts et un souffle calme."
+    },
+    "it": {
+     "t": "Correre in salita",
+     "g": "Impara ad affrontare le salite con sforzo costante e buona postura.",
+     "p": [
+      "Accorcia i passi e mantieni costante lo sforzo, non la velocità.",
+      "Usa un po' di più le braccia e guarda qualche metro avanti, non i piedi.",
+      "Camminare in un tratto ripido è furbo e del tutto normale per chiunque corra."
+     ],
+     "q": "C'è una salita su uno dei tuoi percorsi che ami o temi?",
+     "c": "Inserisci una salita dolce nella prossima corsa e concentrati su passi corti e respiro calmo."
+    },
+    "pt": {
+     "t": "Correr a subir",
+     "g": "Aprende a subir colinas com esforço constante e boa postura.",
+     "p": [
+      "Encurta os passos e mantém um esforço constante em vez de uma velocidade constante.",
+      "Usa um pouco mais os braços e olha uns metros à frente, não para os pés.",
+      "Caminhar numa parte íngreme é inteligente e perfeitamente normal para qualquer corredor."
+     ],
+     "q": "Há alguma subida num dos teus percursos que adores ou temas?",
+     "c": "Inclui uma subida suave na próxima corrida e concentra-te em passos curtos e respiração calma."
+    },
+    "pt_BR": {
+     "t": "Correndo na subida",
+     "g": "Aprenda a encarar subidas com esforço constante e boa postura.",
+     "p": [
+      "Encurte os passos e mantenha o esforço constante, e não a velocidade.",
+      "Use um pouco mais os braços e olhe alguns metros à frente, não para os pés.",
+      "Caminhar num trecho íngreme é inteligente e totalmente normal para qualquer corredor."
+     ],
+     "q": "Tem alguma subida nos seus trajetos que você ama ou teme?",
+     "c": "Inclua uma subida leve na próxima corrida e foque em passos curtos e respiração calma."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running downhill",
+     "g": "Learn to stay relaxed and in control when the road drops away.",
+     "p": [
+      "Keep your steps short and quick so you stay balanced.",
+      "Lean very slightly with the slope instead of leaning back and braking hard.",
+      "Look ahead and slow down on steep or slippery stretches."
+     ],
+     "q": "How do you feel on downhill stretches: free and fast or a bit nervous?",
+     "c": "On your next run, try one gentle downhill with short, light, quick steps."
+    },
+    "de": {
+     "t": "Bergab laufen",
+     "g": "Lerne, entspannt und kontrolliert zu bleiben, wenn es abwärts geht.",
+     "p": [
+      "Halte die Schritte kurz und schnell, damit du im Gleichgewicht bleibst.",
+      "Neig dich ganz leicht mit dem Gefälle, statt dich zurückzulehnen und stark zu bremsen.",
+      "Schau nach vorn und werde auf steilen oder rutschigen Stücken langsamer."
+     ],
+     "q": "Wie fühlst du dich bergab: frei und schnell oder etwas nervös?",
+     "c": "Probier beim nächsten Lauf ein sanftes Gefälle mit kurzen, leichten, schnellen Schritten."
+    },
+    "es": {
+     "t": "Correr cuesta abajo",
+     "g": "Aprende a ir relajado y con control cuando el camino baja.",
+     "p": [
+      "Mantén pasos cortos y rápidos para conservar el equilibrio.",
+      "Inclínate muy poco con la pendiente en lugar de echarte atrás y frenar fuerte.",
+      "Mira hacia delante y baja el ritmo en tramos empinados o resbaladizos."
+     ],
+     "q": "¿Cómo te sientes en las bajadas: libre y rápido o algo nervioso?",
+     "c": "En tu próxima salida prueba una bajada suave con pasos cortos, ligeros y rápidos."
+    },
+    "fr": {
+     "t": "Courir en descente",
+     "g": "Apprends à rester détendu et maître de toi quand la route descend.",
+     "p": [
+      "Garde des pas courts et rapides pour rester équilibré.",
+      "Penche-toi très légèrement avec la pente au lieu de te pencher en arrière et de freiner fort.",
+      "Regarde devant et ralentis dans les passages raides ou glissants."
+     ],
+     "q": "Comment te sens-tu en descente : libre et rapide ou un peu nerveux ?",
+     "c": "À ta prochaine sortie, essaie une petite descente avec des pas courts, légers et rapides."
+    },
+    "it": {
+     "t": "Correre in discesa",
+     "g": "Impara a restare rilassato e in controllo quando la strada scende.",
+     "p": [
+      "Mantieni passi corti e rapidi per restare in equilibrio.",
+      "Inclinati appena con la pendenza invece di tirarti indietro frenando forte.",
+      "Guarda avanti e rallenta nei tratti ripidi o scivolosi."
+     ],
+     "q": "Come ti senti in discesa: libero e veloce o un po' nervoso?",
+     "c": "Nella prossima corsa prova una discesa dolce con passi corti, leggeri e rapidi."
+    },
+    "pt": {
+     "t": "Correr a descer",
+     "g": "Aprende a manter-te descontraído e com controlo quando a estrada desce.",
+     "p": [
+      "Mantém passos curtos e rápidos para te manteres equilibrado.",
+      "Inclina-te muito ligeiramente com a descida em vez de te inclinares para trás e travares.",
+      "Olha em frente e abranda em troços íngremes ou escorregadios."
+     ],
+     "q": "Como te sentes nas descidas: livre e rápido ou um pouco nervoso?",
+     "c": "Na próxima corrida experimenta uma descida suave com passos curtos, leves e rápidos."
+    },
+    "pt_BR": {
+     "t": "Correndo na descida",
+     "g": "Aprenda a ficar relaxado e no controle quando o caminho desce.",
+     "p": [
+      "Mantenha passos curtos e rápidos para continuar equilibrado.",
+      "Incline-se bem pouco junto com a descida, em vez de jogar o corpo para trás e frear.",
+      "Olhe para a frente e diminua em trechos íngremes ou escorregadios."
+     ],
+     "q": "Como você se sente nas descidas: livre e rápido ou um pouco nervoso?",
+     "c": "Na próxima corrida, teste uma descida leve com passos curtos, leves e rápidos."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Exploring new routes",
+     "g": "Keep running fresh by discovering new parks, paths and streets.",
+     "p": [
+      "A new route turns an ordinary run into a small adventure.",
+      "Maps and running apps can help you find parks, riversides and quiet streets.",
+      "Start with loops close to known areas so getting lost is never a worry."
+     ],
+     "q": "Which part of your town or city have you never explored on foot?",
+     "c": "Plan a new route for your next run that passes at least one place you have never seen."
+    },
+    "de": {
+     "t": "Neue Strecken entdecken",
+     "g": "Halte das Laufen frisch, indem du neue Parks, Wege und Straßen entdeckst.",
+     "p": [
+      "Eine neue Strecke macht aus einem normalen Lauf ein kleines Abenteuer.",
+      "Karten und Lauf-Apps helfen dir, Parks, Flussufer und ruhige Straßen zu finden.",
+      "Starte mit Runden nahe bekannter Gegenden, dann ist Verlaufen kein Thema."
+     ],
+     "q": "Welchen Teil deiner Stadt hast du noch nie zu Fuß erkundet?",
+     "c": "Plane für deinen nächsten Lauf eine neue Strecke, die an mindestens einem unbekannten Ort vorbeiführt."
+    },
+    "es": {
+     "t": "Explorar rutas nuevas",
+     "g": "Mantén fresca tu rutina descubriendo parques, caminos y calles nuevas.",
+     "p": [
+      "Una ruta nueva convierte una carrera normal en una pequeña aventura.",
+      "Los mapas y las apps de running te ayudan a encontrar parques, riberas y calles tranquilas.",
+      "Empieza con circuitos cerca de zonas conocidas para no preocuparte por perderte."
+     ],
+     "q": "¿Qué parte de tu ciudad o pueblo nunca has explorado a pie?",
+     "c": "Planea una ruta nueva para tu próxima salida que pase por al menos un lugar que no conozcas."
+    },
+    "fr": {
+     "t": "Explorer de nouveaux parcours",
+     "g": "Garde la course vivante en découvrant de nouveaux parcs, chemins et rues.",
+     "p": [
+      "Un nouveau parcours transforme une sortie ordinaire en petite aventure.",
+      "Les cartes et applis de course aident à trouver parcs, berges et rues calmes.",
+      "Commence par des boucles près de zones connues pour ne jamais craindre de te perdre."
+     ],
+     "q": "Quel coin de ta ville n'as-tu jamais exploré à pied ?",
+     "c": "Prévois un nouveau parcours pour ta prochaine sortie, qui passe par au moins un endroit inconnu."
+    },
+    "it": {
+     "t": "Esplorare nuovi percorsi",
+     "g": "Mantieni la corsa sempre fresca scoprendo nuovi parchi, sentieri e strade.",
+     "p": [
+      "Un percorso nuovo trasforma una corsa normale in una piccola avventura.",
+      "Mappe e app di corsa aiutano a trovare parchi, lungofiumi e strade tranquille.",
+      "Inizia con anelli vicini a zone note, così perdersi non è mai un problema."
+     ],
+     "q": "Quale parte della tua città non hai mai esplorato a piedi?",
+     "c": "Pianifica un nuovo percorso per la prossima corsa che passi da almeno un posto mai visto."
+    },
+    "pt": {
+     "t": "Explorar novos percursos",
+     "g": "Mantém a corrida fresca a descobrir novos parques, caminhos e ruas.",
+     "p": [
+      "Um percurso novo transforma uma corrida normal numa pequena aventura.",
+      "Mapas e apps de corrida ajudam a encontrar parques, margens de rios e ruas calmas.",
+      "Começa com voltas perto de zonas conhecidas para nunca te preocupares em perder-te."
+     ],
+     "q": "Que parte da tua cidade nunca exploraste a pé?",
+     "c": "Planeia um percurso novo para a próxima corrida que passe por pelo menos um sítio que nunca viste."
+    },
+    "pt_BR": {
+     "t": "Explorando novos trajetos",
+     "g": "Mantenha a corrida sempre nova descobrindo parques, caminhos e ruas diferentes.",
+     "p": [
+      "Um trajeto novo transforma uma corrida comum numa pequena aventura.",
+      "Mapas e aplicativos de corrida ajudam a achar parques, beiras de rio e ruas tranquilas.",
+      "Comece com voltas perto de áreas conhecidas para nunca se preocupar em se perder."
+     ],
+     "q": "Que parte da sua cidade você nunca explorou a pé?",
+     "c": "Planeje um trajeto novo para a próxima corrida que passe por pelo menos um lugar que você não conhece."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running while travelling",
+     "g": "Learn how to pack for runs and explore new places on foot.",
+     "p": [
+      "Shoes, one outfit and a light layer fit into almost any bag.",
+      "An easy morning run is a lovely way to see a new city before it gets busy.",
+      "Ask locals or your accommodation for safe, popular running spots."
+     ],
+     "q": "Which city or place would you love to explore with a morning run?",
+     "c": "Write a mini packing list for running on your next trip, even if it is just a weekend away."
+    },
+    "de": {
+     "t": "Laufen auf Reisen",
+     "g": "Lerne, fürs Laufen zu packen und neue Orte zu Fuß zu erkunden.",
+     "p": [
+      "Schuhe, ein Outfit und eine leichte Schicht passen in fast jede Tasche.",
+      "Ein lockerer Morgenlauf ist eine schöne Art, eine neue Stadt zu sehen, bevor sie voll wird.",
+      "Frag Einheimische oder deine Unterkunft nach sicheren, beliebten Laufstrecken."
+     ],
+     "q": "Welche Stadt oder welchen Ort würdest du gern bei einem Morgenlauf erkunden?",
+     "c": "Schreib eine Mini-Packliste fürs Laufen auf deiner nächsten Reise, auch für ein Wochenende."
+    },
+    "es": {
+     "t": "Correr de viaje",
+     "g": "Aprende a preparar la maleta para correr y a explorar lugares nuevos a pie.",
+     "p": [
+      "Zapatillas, un conjunto y una capa ligera caben en casi cualquier bolsa.",
+      "Una carrera suave por la mañana es una forma preciosa de ver una ciudad antes de que se llene.",
+      "Pregunta a la gente local o en tu alojamiento por zonas seguras y populares para correr."
+     ],
+     "q": "¿Qué ciudad o lugar te encantaría explorar corriendo por la mañana?",
+     "c": "Escribe una mini lista para correr en tu próximo viaje, aunque sea solo un fin de semana."
+    },
+    "fr": {
+     "t": "Courir en voyage",
+     "g": "Apprends à préparer ton sac pour courir et à explorer de nouveaux lieux à pied.",
+     "p": [
+      "Chaussures, une tenue et une couche légère tiennent dans presque n'importe quel sac.",
+      "Une sortie facile le matin est une belle façon de découvrir une ville avant l'affluence.",
+      "Demande aux habitants ou à ton hébergement des coins sûrs et prisés pour courir."
+     ],
+     "q": "Quelle ville ou quel lieu aimerais-tu découvrir lors d'une sortie matinale ?",
+     "c": "Écris une mini liste de bagages pour courir lors de ton prochain voyage, même d'un week-end."
+    },
+    "it": {
+     "t": "Correre in viaggio",
+     "g": "Impara a preparare la valigia per correre e a esplorare posti nuovi a piedi.",
+     "p": [
+      "Scarpe, un completo e uno strato leggero stanno in quasi ogni borsa.",
+      "Una corsa leggera al mattino è un modo bellissimo di vedere una città prima della folla.",
+      "Chiedi alla gente del posto o al tuo alloggio zone sicure e frequentate per correre."
+     ],
+     "q": "Quale città o luogo ti piacerebbe esplorare con una corsa mattutina?",
+     "c": "Scrivi una mini lista per correre nel tuo prossimo viaggio, anche se è solo un weekend."
+    },
+    "pt": {
+     "t": "Correr em viagem",
+     "g": "Aprende a fazer a mala para correr e a explorar sítios novos a pé.",
+     "p": [
+      "Sapatilhas, um conjunto e uma camada leve cabem em quase qualquer saco.",
+      "Uma corrida leve de manhã é uma ótima forma de ver uma cidade antes da confusão.",
+      "Pergunta aos locais ou ao teu alojamento por zonas seguras e populares para correr."
+     ],
+     "q": "Que cidade ou lugar adorarias explorar numa corrida matinal?",
+     "c": "Escreve uma mini lista de mala para correr na próxima viagem, mesmo que seja só um fim de semana."
+    },
+    "pt_BR": {
+     "t": "Correndo em viagem",
+     "g": "Aprenda a arrumar a mala para correr e a explorar lugares novos a pé.",
+     "p": [
+      "Tênis, uma roupa e uma camada leve cabem em quase qualquer bolsa.",
+      "Uma corrida leve de manhã é um jeito lindo de conhecer uma cidade antes do movimento.",
+      "Pergunte aos moradores ou à sua hospedagem por lugares seguros e populares para correr."
+     ],
+     "q": "Que cidade ou lugar você adoraria explorar numa corrida de manhã?",
+     "c": "Escreva uma mini lista de mala para correr na próxima viagem, mesmo que seja só um fim de semana."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Running and sleep",
+     "g": "Learn the general links between good sleep and how your runs feel.",
+     "p": [
+      "Good sleep helps your body recover and makes runs feel easier.",
+      "Regular exercise often helps many people fall asleep more easily.",
+      "A hard run very late in the evening can leave some people too alert to sleep."
+     ],
+     "q": "How many hours of sleep make you feel your best?",
+     "c": "Go to bed 20 minutes earlier tonight and notice how your next run feels."
+    },
+    "de": {
+     "t": "Laufen und Schlaf",
+     "g": "Lerne die allgemeinen Zusammenhänge zwischen gutem Schlaf und deinen Läufen.",
+     "p": [
+      "Guter Schlaf hilft dem Körper bei der Erholung und lässt Läufe leichter wirken.",
+      "Regelmäßige Bewegung hilft vielen Menschen, leichter einzuschlafen.",
+      "Ein harter Lauf sehr spät am Abend kann manche zu wach zum Schlafen machen."
+     ],
+     "q": "Wie viele Stunden Schlaf brauchst du, um dich am besten zu fühlen?",
+     "c": "Geh heute 20 Minuten früher ins Bett und achte darauf, wie sich dein nächster Lauf anfühlt."
+    },
+    "es": {
+     "t": "Correr y dormir",
+     "g": "Conoce la relación general entre dormir bien y cómo te sientan las carreras.",
+     "p": [
+      "Dormir bien ayuda al cuerpo a recuperarse y hace que correr resulte más fácil.",
+      "El ejercicio regular suele ayudar a mucha gente a dormirse con más facilidad.",
+      "Una carrera intensa muy tarde puede dejar a algunas personas demasiado activas para dormir."
+     ],
+     "q": "¿Cuántas horas de sueño necesitas para sentirte en tu mejor momento?",
+     "c": "Acuéstate hoy 20 minutos antes y fíjate en cómo te sientes en tu próxima salida."
+    },
+    "fr": {
+     "t": "Course et sommeil",
+     "g": "Découvre les liens généraux entre un bon sommeil et tes sensations en courant.",
+     "p": [
+      "Bien dormir aide le corps à récupérer et rend les sorties plus faciles.",
+      "L'exercice régulier aide souvent beaucoup de gens à s'endormir plus facilement.",
+      "Une sortie intense très tard le soir peut laisser certains trop éveillés pour dormir."
+     ],
+     "q": "Combien d'heures de sommeil te font te sentir au mieux ?",
+     "c": "Couche-toi 20 minutes plus tôt ce soir et observe comment se passe ta prochaine sortie."
+    },
+    "it": {
+     "t": "Corsa e sonno",
+     "g": "Scopri i legami generali tra un buon sonno e come senti le tue corse.",
+     "p": [
+      "Dormire bene aiuta il corpo a recuperare e rende le corse più facili.",
+      "L'attività regolare aiuta molte persone ad addormentarsi più facilmente.",
+      "Una corsa intensa molto tardi la sera può lasciare alcuni troppo svegli per dormire."
+     ],
+     "q": "Quante ore di sonno ti fanno sentire al meglio?",
+     "c": "Vai a letto 20 minuti prima stasera e nota come ti senti nella prossima corsa."
+    },
+    "pt": {
+     "t": "Corrida e sono",
+     "g": "Conhece as ligações gerais entre dormir bem e como te sentes a correr.",
+     "p": [
+      "Dormir bem ajuda o corpo a recuperar e torna as corridas mais fáceis.",
+      "O exercício regular ajuda muitas pessoas a adormecer com mais facilidade.",
+      "Uma corrida intensa muito tarde pode deixar algumas pessoas demasiado despertas para dormir."
+     ],
+     "q": "Quantas horas de sono te fazem sentir no teu melhor?",
+     "c": "Deita-te 20 minutos mais cedo esta noite e repara como te sentes na próxima corrida."
+    },
+    "pt_BR": {
+     "t": "Corrida e sono",
+     "g": "Conheça as relações gerais entre dormir bem e como você se sente correndo.",
+     "p": [
+      "Dormir bem ajuda o corpo a se recuperar e deixa as corridas mais fáceis.",
+      "Exercício regular costuma ajudar muita gente a pegar no sono com mais facilidade.",
+      "Uma corrida intensa muito tarde da noite pode deixar algumas pessoas agitadas demais para dormir."
+     ],
+     "q": "Quantas horas de sono fazem você se sentir no seu melhor?",
+     "c": "Vá dormir 20 minutos mais cedo hoje e repare como você se sente na próxima corrida."
+    }
+   }
+  }
+ ]
+}

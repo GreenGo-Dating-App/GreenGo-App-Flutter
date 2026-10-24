@@ -1,0 +1,33 @@
+{
+"topic": "make_friends",
+"intro": {
+"en": [
+"Hi, I'm {name}! I'll be your guide on a 365-day path to making friends in a new city, from your very first hello to building a circle that feels like home.",
+"One small lesson a day: easy openers, great places to meet people, safe meetups and deeper friendships. To start, tell me: what do you love doing in your free time?"
+],
+"de": [
+"Hallo, ich bin {name}! Ich begleite dich 365 Tage lang dabei, in einer neuen Stadt Freunde zu finden, vom ersten Hallo bis zu einem Freundeskreis, der sich wie Zuhause anfühlt.",
+"Jeden Tag eine kleine Lektion: einfache Gesprächseinstiege, gute Orte zum Kennenlernen, sichere Treffen und tiefere Freundschaften. Erzähl mal: Was machst du in deiner Freizeit am liebsten?"
+],
+"es": [
+"¡Hola, soy {name}! Te acompañaré en un camino de 365 días para hacer amigos en una ciudad nueva, desde tu primer saludo hasta crear un círculo que se sienta como en casa.",
+"Una pequeña lección al día: formas fáciles de iniciar una charla, buenos lugares para conocer gente, encuentros seguros y amistades profundas. Para empezar, ¿qué te encanta hacer en tu tiempo libre?"
+],
+"fr": [
+"Salut, je suis {name} ! Je vais t'accompagner pendant 365 jours pour te faire des amis dans une nouvelle ville, du tout premier bonjour à un cercle où tu te sens chez toi.",
+"Une petite leçon par jour : des phrases simples pour briser la glace, de bons endroits pour rencontrer du monde, des rencontres sûres et des amitiés solides. Qu'aimes-tu faire de ton temps libre ?"
+],
+"it": [
+"Ciao, sono {name}! Ti guiderò in un percorso di 365 giorni per fare amicizia in una nuova città, dal primo saluto fino a una cerchia di amici che ti faccia sentire a casa.",
+"Una piccola lezione al giorno: modi semplici per rompere il ghiaccio, posti giusti per conoscere gente, incontri sicuri e amicizie profonde. Per cominciare, cosa ami fare nel tempo libero?"
+],
+"pt": [
+"Olá, sou {name}! Vou acompanhar-te num percurso de 365 dias para fazeres amigos numa cidade nova, desde o primeiro olá até um grupo de amigos que te faça sentir em casa.",
+"Uma pequena lição por dia: formas fáceis de começar uma conversa, bons sítios para conhecer pessoas, encontros seguros e amizades profundas. Para começar, o que mais gostas de fazer nos tempos livres?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vou te guiar numa jornada de 365 dias para fazer amigos em uma cidade nova, do primeiro oi até ter uma turma que faça você se sentir em casa.",
+"Uma pequena lição por dia: jeitos fáceis de puxar papo, bons lugares para conhecer gente, encontros seguros e amizades mais profundas. Para começar, o que você mais gosta de fazer no seu tempo livre?"
+]
+}
+}

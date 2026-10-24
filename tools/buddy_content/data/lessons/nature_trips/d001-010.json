@@ -1,0 +1,835 @@
+{
+ "topic": "nature_trips",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why nature trips matter",
+     "g": "Discover how time outdoors refreshes your mind and body and wakes up your curiosity.",
+     "p": [
+      "Even a short walk among trees or by water can lower stress and lift your mood.",
+      "Fresh air, daylight and gentle movement help you sleep better and feel more energetic.",
+      "Nature is full of questions: why is that bird singing, how did this valley form?"
+     ],
+     "q": "What place in nature makes you feel most relaxed and happy?",
+     "c": "Spend ten minutes outside today and notice three things you can hear."
+    },
+    "de": {
+     "t": "Warum Naturausflüge guttun",
+     "g": "Entdecke, wie Zeit draußen Körper und Geist erfrischt und deine Neugier weckt.",
+     "p": [
+      "Schon ein kurzer Spaziergang unter Bäumen oder am Wasser kann Stress senken und die Laune heben.",
+      "Frische Luft, Tageslicht und sanfte Bewegung helfen dir, besser zu schlafen und mehr Energie zu haben.",
+      "Die Natur steckt voller Fragen: Warum singt dieser Vogel, wie ist dieses Tal entstanden?"
+     ],
+     "q": "An welchem Ort in der Natur fühlst du dich am entspanntesten und glücklichsten?",
+     "c": "Verbringe heute zehn Minuten draußen und achte auf drei Dinge, die du hörst."
+    },
+    "es": {
+     "t": "Por qué importan las salidas a la naturaleza",
+     "g": "Descubre cómo el tiempo al aire libre renueva cuerpo y mente y despierta tu curiosidad.",
+     "p": [
+      "Incluso un paseo corto entre árboles o junto al agua puede bajar el estrés y mejorar el ánimo.",
+      "El aire fresco, la luz del día y el movimiento suave te ayudan a dormir mejor y a tener más energía.",
+      "La naturaleza está llena de preguntas: ¿por qué canta ese pájaro, cómo se formó este valle?"
+     ],
+     "q": "¿Qué lugar de la naturaleza te hace sentir más relajado y feliz?",
+     "c": "Pasa hoy diez minutos al aire libre y fíjate en tres cosas que puedas oír."
+    },
+    "fr": {
+     "t": "Pourquoi la nature fait du bien",
+     "g": "Découvre comment le temps passé dehors ressource le corps et l'esprit et éveille ta curiosité.",
+     "p": [
+      "Même une courte balade sous les arbres ou au bord de l'eau peut réduire le stress et remonter le moral.",
+      "L'air frais, la lumière du jour et un mouvement doux t'aident à mieux dormir et à avoir plus d'énergie.",
+      "La nature regorge de questions : pourquoi cet oiseau chante-t-il, comment cette vallée s'est-elle formée ?"
+     ],
+     "q": "Quel endroit dans la nature te rend le plus détendu et heureux ?",
+     "c": "Passe dix minutes dehors aujourd'hui et repère trois sons que tu entends."
+    },
+    "it": {
+     "t": "Perché le gite nella natura fanno bene",
+     "g": "Scopri come il tempo all'aperto rigenera corpo e mente e risveglia la tua curiosità.",
+     "p": [
+      "Anche una breve passeggiata tra gli alberi o vicino all'acqua può ridurre lo stress e migliorare l'umore.",
+      "Aria fresca, luce del giorno e movimento leggero ti aiutano a dormire meglio e ad avere più energia.",
+      "La natura è piena di domande: perché canta quell'uccello, come si è formata questa valle?"
+     ],
+     "q": "Quale luogo nella natura ti fa sentire più rilassato e felice?",
+     "c": "Oggi passa dieci minuti all'aperto e nota tre suoni che senti."
+    },
+    "pt": {
+     "t": "Porque as saídas à natureza importam",
+     "g": "Descobre como o tempo ao ar livre renova o corpo e a mente e desperta a tua curiosidade.",
+     "p": [
+      "Mesmo um passeio curto entre árvores ou junto à água pode baixar o stress e melhorar o humor.",
+      "Ar fresco, luz do dia e movimento suave ajudam-te a dormir melhor e a ter mais energia.",
+      "A natureza está cheia de perguntas: porque canta aquela ave, como se formou este vale?"
+     ],
+     "q": "Que lugar na natureza te faz sentir mais relaxado e feliz?",
+     "c": "Passa hoje dez minutos ao ar livre e repara em três sons que ouves."
+    },
+    "pt_BR": {
+     "t": "Por que passeios na natureza importam",
+     "g": "Descubra como o tempo ao ar livre renova corpo e mente e desperta sua curiosidade.",
+     "p": [
+      "Até uma caminhada curta entre árvores ou perto da água pode reduzir o estresse e melhorar o humor.",
+      "Ar fresco, luz do dia e movimento leve ajudam você a dormir melhor e a ter mais energia.",
+      "A natureza é cheia de perguntas: por que aquele pássaro canta, como esse vale se formou?"
+     ],
+     "q": "Qual lugar na natureza faz você se sentir mais relaxado e feliz?",
+     "c": "Passe dez minutos ao ar livre hoje e repare em três sons que você ouve."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kinds of nature trips",
+     "g": "Explore the many kinds of nature trips and start finding your own style.",
+     "p": [
+      "Beaches and lakes invite swimming and slow days; mountains and forests invite walking and views.",
+      "Deserts surprise with silence, colour and starry skies, while city parks offer nature close to home.",
+      "Your style can mix calm and adventure: a picnic one weekend, a long hike the next."
+     ],
+     "q": "Are you more of a beach person, a mountain person or a forest person?",
+     "c": "Write down three nature places you would love to visit one day."
+    },
+    "de": {
+     "t": "Arten von Naturausflügen",
+     "g": "Lerne die vielen Arten von Naturausflügen kennen und finde deinen eigenen Stil.",
+     "p": [
+      "Strände und Seen laden zum Baden und Entspannen ein, Berge und Wälder zum Wandern und Staunen.",
+      "Wüsten überraschen mit Stille, Farben und Sternenhimmel, Stadtparks bieten Natur direkt vor der Tür.",
+      "Dein Stil darf Ruhe und Abenteuer mischen: an einem Wochenende Picknick, am nächsten eine lange Wanderung."
+     ],
+     "q": "Bist du eher Strand-, Berg- oder Waldmensch?",
+     "c": "Schreib drei Naturorte auf, die du eines Tages gern besuchen würdest."
+    },
+    "es": {
+     "t": "Tipos de salidas a la naturaleza",
+     "g": "Explora los muchos tipos de salidas a la naturaleza y empieza a encontrar tu estilo.",
+     "p": [
+      "Playas y lagos invitan a nadar y descansar; montañas y bosques, a caminar y disfrutar de las vistas.",
+      "Los desiertos sorprenden con silencio, color y cielos estrellados; los parques urbanos ofrecen naturaleza cerca.",
+      "Tu estilo puede mezclar calma y aventura: un pícnic un fin de semana y una larga caminata el siguiente."
+     ],
+     "q": "¿Eres más de playa, de montaña o de bosque?",
+     "c": "Anota tres lugares naturales que te encantaría visitar algún día."
+    },
+    "fr": {
+     "t": "Les types de sorties nature",
+     "g": "Explore les nombreux types de sorties nature et commence à trouver ton style.",
+     "p": [
+      "Plages et lacs invitent à nager et à ralentir ; montagnes et forêts, à marcher et à admirer les vues.",
+      "Les déserts étonnent par leur silence, leurs couleurs et leurs ciels étoilés ; les parcs urbains offrent la nature tout près.",
+      "Ton style peut mêler calme et aventure : un pique-nique un week-end, une longue randonnée le suivant."
+     ],
+     "q": "Es-tu plutôt plage, montagne ou forêt ?",
+     "c": "Note trois lieux naturels que tu aimerais visiter un jour."
+    },
+    "it": {
+     "t": "Tipi di gite nella natura",
+     "g": "Esplora i tanti tipi di gite nella natura e inizia a trovare il tuo stile.",
+     "p": [
+      "Spiagge e laghi invitano a nuotare e rilassarsi; montagne e boschi a camminare e godersi i panorami.",
+      "I deserti stupiscono con silenzio, colori e cieli stellati, mentre i parchi cittadini offrono natura vicino a casa.",
+      "Il tuo stile può unire calma e avventura: un picnic un weekend, una lunga escursione quello dopo."
+     ],
+     "q": "Sei più tipo da mare, da montagna o da bosco?",
+     "c": "Scrivi tre luoghi naturali che ti piacerebbe visitare un giorno."
+    },
+    "pt": {
+     "t": "Tipos de saídas à natureza",
+     "g": "Explora os vários tipos de saídas à natureza e começa a descobrir o teu estilo.",
+     "p": [
+      "Praias e lagos convidam a nadar e descansar; montanhas e florestas, a caminhar e apreciar as vistas.",
+      "Os desertos surpreendem com silêncio, cor e céus estrelados; os parques urbanos oferecem natureza perto de casa.",
+      "O teu estilo pode juntar calma e aventura: um piquenique num fim de semana, uma longa caminhada no seguinte."
+     ],
+     "q": "És mais de praia, de montanha ou de floresta?",
+     "c": "Escreve três lugares naturais que adorarias visitar um dia."
+    },
+    "pt_BR": {
+     "t": "Tipos de passeios na natureza",
+     "g": "Explore os vários tipos de passeios na natureza e comece a descobrir seu estilo.",
+     "p": [
+      "Praias e lagos convidam a nadar e relaxar; montanhas e florestas, a caminhar e curtir a vista.",
+      "Desertos surpreendem com silêncio, cores e céus estrelados; parques urbanos oferecem natureza perto de casa.",
+      "Seu estilo pode misturar calma e aventura: um piquenique num fim de semana, uma trilha longa no outro."
+     ],
+     "q": "Você é mais de praia, de montanha ou de floresta?",
+     "c": "Anote três lugares na natureza que você adoraria visitar um dia."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a national park?",
+     "g": "Understand how protected areas work and why so many countries create them.",
+     "p": [
+      "A national park is a large area protected by law to keep its nature, wildlife and landscapes intact.",
+      "Parks balance two jobs: protecting nature and letting people visit, learn and enjoy it.",
+      "Rangers care for the land, guide visitors and keep trails, animals and people safe."
+     ],
+     "q": "Is there a national park in your country you have visited or would like to visit?",
+     "c": "Look up the national park closest to your home and find one special thing about it."
+    },
+    "de": {
+     "t": "Was ist ein Nationalpark?",
+     "g": "Verstehe, wie Schutzgebiete funktionieren und warum so viele Länder sie schaffen.",
+     "p": [
+      "Ein Nationalpark ist ein großes, gesetzlich geschütztes Gebiet, in dem Natur, Tiere und Landschaft erhalten bleiben.",
+      "Parks haben zwei Aufgaben: die Natur schützen und Menschen das Besuchen, Lernen und Genießen ermöglichen.",
+      "Ranger pflegen das Gebiet, informieren Besucher und sorgen für sichere Wege, Tiere und Menschen."
+     ],
+     "q": "Gibt es in deinem Land einen Nationalpark, den du kennst oder besuchen möchtest?",
+     "c": "Finde den Nationalpark, der dir am nächsten liegt, und eine Besonderheit von ihm."
+    },
+    "es": {
+     "t": "¿Qué es un parque nacional?",
+     "g": "Entiende cómo funcionan las áreas protegidas y por qué tantos países las crean.",
+     "p": [
+      "Un parque nacional es una gran zona protegida por ley para conservar su naturaleza, su fauna y sus paisajes.",
+      "Los parques equilibran dos tareas: proteger la naturaleza y permitir que la gente la visite, aprenda y disfrute.",
+      "Los guardaparques cuidan el territorio, orientan a los visitantes y mantienen seguros senderos, animales y personas."
+     ],
+     "q": "¿Hay algún parque nacional en tu país que hayas visitado o te gustaría visitar?",
+     "c": "Busca el parque nacional más cercano a tu casa y descubre algo especial de él."
+    },
+    "fr": {
+     "t": "C'est quoi, un parc national ?",
+     "g": "Comprends comment fonctionnent les espaces protégés et pourquoi tant de pays en créent.",
+     "p": [
+      "Un parc national est un vaste territoire protégé par la loi pour préserver sa nature, sa faune et ses paysages.",
+      "Les parcs ont deux missions : protéger la nature et permettre aux gens de la visiter, d'apprendre et d'en profiter.",
+      "Les gardes du parc entretiennent le site, guident les visiteurs et veillent à la sécurité des sentiers, des animaux et des gens."
+     ],
+     "q": "Y a-t-il un parc national dans ton pays que tu as visité ou que tu aimerais visiter ?",
+     "c": "Cherche le parc national le plus proche de chez toi et trouve une chose spéciale à son sujet."
+    },
+    "it": {
+     "t": "Che cos'è un parco nazionale?",
+     "g": "Capisci come funzionano le aree protette e perché tanti paesi le istituiscono.",
+     "p": [
+      "Un parco nazionale è una vasta area protetta per legge per conservare natura, fauna e paesaggi.",
+      "I parchi hanno due compiti: proteggere la natura e permettere alle persone di visitarla, conoscerla e goderla.",
+      "I guardiaparco curano il territorio, aiutano i visitatori e mantengono sicuri sentieri, animali e persone."
+     ],
+     "q": "C'è un parco nazionale nel tuo paese che hai visitato o che vorresti visitare?",
+     "c": "Cerca il parco nazionale più vicino a casa tua e scopri una cosa speciale su di esso."
+    },
+    "pt": {
+     "t": "O que é um parque nacional?",
+     "g": "Percebe como funcionam as áreas protegidas e porque tantos países as criam.",
+     "p": [
+      "Um parque nacional é uma grande área protegida por lei para preservar a natureza, a fauna e as paisagens.",
+      "Os parques equilibram duas missões: proteger a natureza e permitir que as pessoas a visitem, aprendam e desfrutem.",
+      "Os vigilantes da natureza cuidam do território, orientam os visitantes e mantêm trilhos, animais e pessoas em segurança."
+     ],
+     "q": "Há algum parque nacional no teu país que já visitaste ou gostarias de visitar?",
+     "c": "Procura o parque nacional mais perto de casa e descobre uma coisa especial sobre ele."
+    },
+    "pt_BR": {
+     "t": "O que é um parque nacional?",
+     "g": "Entenda como funcionam as áreas protegidas e por que tantos países as criam.",
+     "p": [
+      "Um parque nacional é uma grande área protegida por lei para preservar natureza, fauna e paisagens.",
+      "Os parques equilibram duas funções: proteger a natureza e deixar as pessoas visitarem, aprenderem e curtirem.",
+      "Guarda-parques cuidam da área, orientam visitantes e mantêm trilhas, animais e pessoas em segurança."
+     ],
+     "q": "Tem algum parque nacional no seu país que você já visitou ou gostaria de visitar?",
+     "c": "Pesquise o parque nacional mais perto da sua casa e descubra algo especial sobre ele."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first national parks",
+     "g": "Learn how Yellowstone became the first national park in 1872 and how the idea spread.",
+     "p": [
+      "Yellowstone in the United States was created in 1872 and is widely seen as the world's first national park.",
+      "Australia's Royal National Park followed in 1879 and Canada's Banff in 1885.",
+      "Today thousands of national parks protect landscapes on every continent except Antarctica."
+     ],
+     "q": "Why do you think people in the 1800s felt they needed to protect wild places?",
+     "c": "Find out when the first national park in your country was created."
+    },
+    "de": {
+     "t": "Die ersten Nationalparks",
+     "g": "Erfahre, wie Yellowstone 1872 der erste Nationalpark wurde und wie sich die Idee verbreitete.",
+     "p": [
+      "Yellowstone in den USA wurde 1872 gegründet und gilt weithin als erster Nationalpark der Welt.",
+      "Es folgten 1879 der Royal National Park in Australien und 1885 Banff in Kanada.",
+      "Heute schützen Tausende Nationalparks Landschaften auf allen Kontinenten außer der Antarktis."
+     ],
+     "q": "Warum wollten Menschen im 19. Jahrhundert wohl wilde Orte schützen?",
+     "c": "Finde heraus, wann der erste Nationalpark in deinem Land gegründet wurde."
+    },
+    "es": {
+     "t": "Los primeros parques nacionales",
+     "g": "Aprende cómo Yellowstone se convirtió en el primer parque nacional en 1872 y cómo se extendió la idea.",
+     "p": [
+      "Yellowstone, en Estados Unidos, se creó en 1872 y se considera el primer parque nacional del mundo.",
+      "Le siguieron el Royal National Park de Australia en 1879 y Banff, en Canadá, en 1885.",
+      "Hoy miles de parques nacionales protegen paisajes en todos los continentes menos la Antártida."
+     ],
+     "q": "¿Por qué crees que en el siglo XIX la gente sintió que debía proteger los lugares salvajes?",
+     "c": "Averigua cuándo se creó el primer parque nacional de tu país."
+    },
+    "fr": {
+     "t": "Les premiers parcs nationaux",
+     "g": "Découvre comment Yellowstone est devenu le premier parc national en 1872 et comment l'idée s'est répandue.",
+     "p": [
+      "Yellowstone, aux États-Unis, a été créé en 1872 et passe pour le premier parc national du monde.",
+      "Le Royal National Park en Australie a suivi en 1879, puis Banff au Canada en 1885.",
+      "Aujourd'hui, des milliers de parcs nationaux protègent des paysages sur tous les continents sauf l'Antarctique."
+     ],
+     "q": "Pourquoi, selon toi, les gens du XIXe siècle ont-ils voulu protéger les lieux sauvages ?",
+     "c": "Cherche quand le premier parc national de ton pays a été créé."
+    },
+    "it": {
+     "t": "I primi parchi nazionali",
+     "g": "Scopri come Yellowstone divenne il primo parco nazionale nel 1872 e come l'idea si diffuse.",
+     "p": [
+      "Yellowstone, negli Stati Uniti, fu istituito nel 1872 ed è considerato il primo parco nazionale al mondo.",
+      "Seguirono il Royal National Park in Australia nel 1879 e Banff in Canada nel 1885.",
+      "Oggi migliaia di parchi nazionali proteggono paesaggi in tutti i continenti tranne l'Antartide."
+     ],
+     "q": "Secondo te, perché nell'Ottocento si sentì il bisogno di proteggere i luoghi selvaggi?",
+     "c": "Scopri quando è stato istituito il primo parco nazionale del tuo paese."
+    },
+    "pt": {
+     "t": "Os primeiros parques nacionais",
+     "g": "Aprende como Yellowstone se tornou o primeiro parque nacional em 1872 e como a ideia se espalhou.",
+     "p": [
+      "Yellowstone, nos Estados Unidos, foi criado em 1872 e é visto como o primeiro parque nacional do mundo.",
+      "Seguiram-se o Royal National Park, na Austrália, em 1879, e Banff, no Canadá, em 1885.",
+      "Hoje há milhares de parques nacionais a proteger paisagens em todos os continentes, exceto a Antártida."
+     ],
+     "q": "Porque achas que no século XIX as pessoas sentiram necessidade de proteger os lugares selvagens?",
+     "c": "Descobre quando foi criado o primeiro parque nacional do teu país."
+    },
+    "pt_BR": {
+     "t": "Os primeiros parques nacionais",
+     "g": "Aprenda como Yellowstone virou o primeiro parque nacional em 1872 e como a ideia se espalhou.",
+     "p": [
+      "Yellowstone, nos Estados Unidos, foi criado em 1872 e é considerado o primeiro parque nacional do mundo.",
+      "Depois vieram o Royal National Park, na Austrália, em 1879, e Banff, no Canadá, em 1885.",
+      "Hoje milhares de parques nacionais protegem paisagens em todos os continentes, menos a Antártida."
+     ],
+     "q": "Por que você acha que no século 19 as pessoas sentiram que precisavam proteger lugares selvagens?",
+     "c": "Descubra quando foi criado o primeiro parque nacional do seu país."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing your first trip",
+     "g": "Learn to match distance, difficulty and season to your energy and free time.",
+     "p": [
+      "Start close to home: less travel time means more time enjoying nature and less stress.",
+      "Pick a route a bit easier than you think you can do; a happy first trip makes you want more.",
+      "Check the season: some trails are muddy in spring, too hot in summer or snowy in winter."
+     ],
+     "q": "How much time could you give a nature trip: two hours, a full day or a weekend?",
+     "c": "Choose one easy nature spot within an hour of home for your first trip."
+    },
+    "de": {
+     "t": "Deinen ersten Ausflug wählen",
+     "g": "Lerne, Entfernung, Schwierigkeit und Jahreszeit an deine Energie und Freizeit anzupassen.",
+     "p": [
+      "Fang in der Nähe an: weniger Anreise heißt mehr Zeit in der Natur und weniger Stress.",
+      "Wähle eine Route, die etwas leichter ist als du denkst; ein schöner erster Ausflug macht Lust auf mehr.",
+      "Achte auf die Jahreszeit: Manche Wege sind im Frühling matschig, im Sommer heiß oder im Winter verschneit."
+     ],
+     "q": "Wie viel Zeit hättest du für einen Naturausflug: zwei Stunden, einen Tag oder ein Wochenende?",
+     "c": "Such dir einen leichten Naturort in höchstens einer Stunde Entfernung für deinen ersten Ausflug."
+    },
+    "es": {
+     "t": "Elegir tu primera salida",
+     "g": "Aprende a ajustar distancia, dificultad y estación a tu energía y tu tiempo libre.",
+     "p": [
+      "Empieza cerca de casa: menos viaje significa más tiempo disfrutando y menos estrés.",
+      "Elige una ruta algo más fácil de lo que crees poder hacer; una primera salida feliz te dará ganas de más.",
+      "Mira la estación: algunos senderos están embarrados en primavera, muy calurosos en verano o nevados en invierno."
+     ],
+     "q": "¿Cuánto tiempo podrías dedicar a una salida: dos horas, un día entero o un fin de semana?",
+     "c": "Elige un lugar natural fácil a menos de una hora de casa para tu primera salida."
+    },
+    "fr": {
+     "t": "Choisir ta première sortie",
+     "g": "Apprends à adapter distance, difficulté et saison à ton énergie et à ton temps libre.",
+     "p": [
+      "Commence près de chez toi : moins de trajet, c'est plus de temps dans la nature et moins de stress.",
+      "Choisis un itinéraire un peu plus facile que tu ne le penses ; une première sortie réussie donne envie de recommencer.",
+      "Pense à la saison : certains sentiers sont boueux au printemps, très chauds en été ou enneigés en hiver."
+     ],
+     "q": "Combien de temps pourrais-tu consacrer à une sortie nature : deux heures, une journée ou un week-end ?",
+     "c": "Choisis un lieu nature facile à moins d'une heure de chez toi pour ta première sortie."
+    },
+    "it": {
+     "t": "Scegliere la prima gita",
+     "g": "Impara ad adattare distanza, difficoltà e stagione alla tua energia e al tuo tempo libero.",
+     "p": [
+      "Inizia vicino a casa: meno viaggio significa più tempo nella natura e meno stress.",
+      "Scegli un percorso un po' più facile di quanto pensi; una prima gita felice ti farà venire voglia di altre.",
+      "Controlla la stagione: alcuni sentieri sono fangosi in primavera, caldi d'estate o innevati d'inverno."
+     ],
+     "q": "Quanto tempo potresti dedicare a una gita: due ore, una giornata o un weekend?",
+     "c": "Scegli un luogo naturale facile a meno di un'ora da casa per la tua prima gita."
+    },
+    "pt": {
+     "t": "Escolher a tua primeira saída",
+     "g": "Aprende a ajustar distância, dificuldade e estação à tua energia e ao teu tempo livre.",
+     "p": [
+      "Começa perto de casa: menos viagem significa mais tempo na natureza e menos stress.",
+      "Escolhe um percurso um pouco mais fácil do que achas que consegues; uma primeira saída feliz dá vontade de repetir.",
+      "Vê a estação: alguns trilhos ficam enlameados na primavera, quentes no verão ou com neve no inverno."
+     ],
+     "q": "Quanto tempo poderias dar a uma saída: duas horas, um dia inteiro ou um fim de semana?",
+     "c": "Escolhe um sítio natural fácil a menos de uma hora de casa para a tua primeira saída."
+    },
+    "pt_BR": {
+     "t": "Escolhendo seu primeiro passeio",
+     "g": "Aprenda a combinar distância, dificuldade e estação com sua energia e seu tempo livre.",
+     "p": [
+      "Comece perto de casa: menos deslocamento significa mais tempo curtindo a natureza e menos estresse.",
+      "Escolha uma trilha um pouco mais fácil do que você acha que consegue; um primeiro passeio feliz dá vontade de mais.",
+      "Veja a estação: algumas trilhas ficam enlameadas na época de chuva, quentes demais no verão ou com neve no inverno."
+     ],
+     "q": "Quanto tempo você teria para um passeio: duas horas, um dia inteiro ou um fim de semana?",
+     "c": "Escolha um lugar fácil na natureza a menos de uma hora de casa para seu primeiro passeio."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Day trips vs overnight trips",
+     "g": "See what changes when you spend a night outdoors instead of going home.",
+     "p": [
+      "A day trip needs only a small bag and lets you test new places with little planning.",
+      "An overnight trip adds sleep, meals and warmth: a tent, hut or lodge and more gear to plan.",
+      "Staying the night rewards you with sunsets, starry skies and quiet early mornings."
+     ],
+     "q": "Would you rather come home each evening or wake up surrounded by nature?",
+     "c": "Imagine your dream overnight spot and list the three things you would need there."
+    },
+    "de": {
+     "t": "Tagesausflug oder Übernachtung",
+     "g": "Sieh, was sich ändert, wenn du draußen übernachtest statt heimzufahren.",
+     "p": [
+      "Für einen Tagesausflug reicht ein kleiner Rucksack, und du kannst neue Orte ohne viel Planung testen.",
+      "Eine Übernachtung bringt Schlafen, Essen und Wärme ins Spiel: Zelt, Hütte oder Unterkunft und mehr Ausrüstung.",
+      "Wer bleibt, wird mit Sonnenuntergängen, Sternenhimmel und stillen frühen Morgen belohnt."
+     ],
+     "q": "Kommst du lieber abends heim oder wachst du lieber mitten in der Natur auf?",
+     "c": "Stell dir deinen Traum-Übernachtungsort vor und notiere drei Dinge, die du dort brauchen würdest."
+    },
+    "es": {
+     "t": "Excursión de un día o con noche",
+     "g": "Mira qué cambia cuando pasas una noche al aire libre en vez de volver a casa.",
+     "p": [
+      "Una excursión de un día solo pide una mochila pequeña y te deja probar lugares nuevos sin mucha planificación.",
+      "Una salida con noche suma dormir, comer y abrigo: tienda, refugio o alojamiento y más equipo que planear.",
+      "Quedarte la noche te regala atardeceres, cielos estrellados y mañanas tranquilas."
+     ],
+     "q": "¿Prefieres volver a casa cada noche o despertarte rodeado de naturaleza?",
+     "c": "Imagina tu lugar ideal para pasar la noche y anota tres cosas que necesitarías allí."
+    },
+    "fr": {
+     "t": "Sortie à la journée ou avec nuit",
+     "g": "Vois ce qui change quand tu passes une nuit dehors au lieu de rentrer.",
+     "p": [
+      "Une sortie à la journée demande juste un petit sac et permet de tester de nouveaux lieux sans tout planifier.",
+      "Une sortie avec nuit ajoute sommeil, repas et chaleur : tente, refuge ou gîte, et plus d'équipement.",
+      "Rester la nuit t'offre couchers de soleil, ciels étoilés et petits matins calmes."
+     ],
+     "q": "Préfères-tu rentrer chaque soir ou te réveiller en pleine nature ?",
+     "c": "Imagine ton lieu de nuit idéal et note trois choses dont tu aurais besoin là-bas."
+    },
+    "it": {
+     "t": "Gita in giornata o con pernottamento",
+     "g": "Scopri cosa cambia quando passi una notte all'aperto invece di tornare a casa.",
+     "p": [
+      "Una gita in giornata richiede solo uno zainetto e ti fa provare posti nuovi con poca organizzazione.",
+      "Con il pernottamento si aggiungono sonno, pasti e calore: tenda, rifugio o alloggio e più attrezzatura.",
+      "Restare la notte ti regala tramonti, cieli stellati e mattine silenziose."
+     ],
+     "q": "Preferisci tornare a casa ogni sera o svegliarti circondato dalla natura?",
+     "c": "Immagina il tuo posto ideale per una notte all'aperto e scrivi tre cose che ti servirebbero."
+    },
+    "pt": {
+     "t": "Saída de um dia ou com dormida",
+     "g": "Vê o que muda quando passas uma noite na natureza em vez de voltar para casa.",
+     "p": [
+      "Uma saída de um dia pede só uma mochila pequena e deixa-te experimentar sítios novos com pouco planeamento.",
+      "Com dormida juntam-se sono, refeições e abrigo: tenda, refúgio ou alojamento e mais equipamento.",
+      "Ficar a noite dá-te pores do sol, céus estrelados e manhãs calmas."
+     ],
+     "q": "Preferes voltar para casa todas as noites ou acordar rodeado de natureza?",
+     "c": "Imagina o teu sítio ideal para dormir na natureza e escreve três coisas de que precisarias lá."
+    },
+    "pt_BR": {
+     "t": "Bate-volta ou pernoite",
+     "g": "Veja o que muda quando você passa uma noite ao ar livre em vez de voltar para casa.",
+     "p": [
+      "Um bate-volta pede só uma mochila pequena e deixa você conhecer lugares novos com pouco planejamento.",
+      "Um pernoite soma sono, refeições e abrigo: barraca, refúgio ou pousada e mais equipamento.",
+      "Ficar a noite traz pores do sol, céus estrelados e manhãs tranquilas."
+     ],
+     "q": "Você prefere voltar para casa toda noite ou acordar cercado de natureza?",
+     "c": "Imagine seu lugar ideal para pernoitar e anote três coisas de que você precisaria lá."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a park map",
+     "g": "Learn to read trails, viewpoints, visitor centres and common symbols on park maps.",
+     "p": [
+      "Coloured lines show trails; many maps add distance, time or difficulty next to each route.",
+      "Small icons mark parking, toilets, water, picnic areas, viewpoints and the visitor centre.",
+      "Contour lines show slopes: when they sit close together, the path is steep."
+     ],
+     "q": "Do you prefer paper maps or maps on your phone, and why?",
+     "c": "Open a map of a park you like and find the visitor centre, one viewpoint and one loop trail."
+    },
+    "de": {
+     "t": "Eine Parkkarte lesen",
+     "g": "Lerne, Wege, Aussichtspunkte, Besucherzentren und gängige Symbole auf Parkkarten zu lesen.",
+     "p": [
+      "Farbige Linien zeigen Wege; viele Karten nennen dazu Länge, Gehzeit oder Schwierigkeit.",
+      "Kleine Symbole markieren Parkplätze, Toiletten, Wasser, Rastplätze, Aussichtspunkte und das Besucherzentrum.",
+      "Höhenlinien zeigen das Gelände: Liegen sie eng beieinander, ist der Weg steil."
+     ],
+     "q": "Magst du lieber Papierkarten oder Karten auf dem Handy, und warum?",
+     "c": "Öffne die Karte eines Parks und finde das Besucherzentrum, einen Aussichtspunkt und einen Rundweg."
+    },
+    "es": {
+     "t": "Leer el mapa de un parque",
+     "g": "Aprende a leer senderos, miradores, centros de visitantes y los símbolos de los mapas de parques.",
+     "p": [
+      "Las líneas de colores son senderos; muchos mapas indican la distancia, el tiempo o la dificultad de cada ruta.",
+      "Pequeños iconos marcan aparcamiento, aseos, agua, zonas de pícnic, miradores y el centro de visitantes.",
+      "Las curvas de nivel muestran la pendiente: cuando están muy juntas, el camino es empinado."
+     ],
+     "q": "¿Prefieres los mapas de papel o los del móvil? ¿Por qué?",
+     "c": "Abre el mapa de un parque y encuentra el centro de visitantes, un mirador y un sendero circular."
+    },
+    "fr": {
+     "t": "Lire une carte de parc",
+     "g": "Apprends à lire sentiers, points de vue, centres d'accueil et symboles courants sur les cartes de parc.",
+     "p": [
+      "Les lignes colorées sont les sentiers ; beaucoup de cartes indiquent distance, durée ou difficulté.",
+      "De petites icônes signalent parking, toilettes, eau, aires de pique-nique, points de vue et centre d'accueil.",
+      "Les courbes de niveau montrent le relief : quand elles sont serrées, le chemin est raide."
+     ],
+     "q": "Préfères-tu les cartes papier ou celles sur ton téléphone, et pourquoi ?",
+     "c": "Ouvre la carte d'un parc et trouve le centre d'accueil, un point de vue et une boucle."
+    },
+    "it": {
+     "t": "Leggere la mappa di un parco",
+     "g": "Impara a leggere sentieri, punti panoramici, centri visita e simboli comuni delle mappe dei parchi.",
+     "p": [
+      "Le linee colorate sono i sentieri; molte mappe indicano distanza, tempo o difficoltà di ogni percorso.",
+      "Piccole icone segnano parcheggi, bagni, acqua, aree picnic, punti panoramici e centro visita.",
+      "Le curve di livello mostrano la pendenza: quando sono fitte, il sentiero è ripido."
+     ],
+     "q": "Preferisci le mappe di carta o quelle sul telefono, e perché?",
+     "c": "Apri la mappa di un parco e trova il centro visita, un punto panoramico e un percorso ad anello."
+    },
+    "pt": {
+     "t": "Ler o mapa de um parque",
+     "g": "Aprende a ler trilhos, miradouros, centros de interpretação e os símbolos dos mapas de parques.",
+     "p": [
+      "As linhas coloridas são trilhos; muitos mapas indicam distância, tempo ou dificuldade de cada percurso.",
+      "Pequenos ícones marcam estacionamento, casas de banho, água, parques de merendas, miradouros e o centro de visitantes.",
+      "As curvas de nível mostram o relevo: quando estão muito juntas, o caminho é íngreme."
+     ],
+     "q": "Preferes mapas em papel ou no telemóvel, e porquê?",
+     "c": "Abre o mapa de um parque e encontra o centro de visitantes, um miradouro e um percurso circular."
+    },
+    "pt_BR": {
+     "t": "Lendo o mapa de um parque",
+     "g": "Aprenda a ler trilhas, mirantes, centros de visitantes e os símbolos comuns dos mapas de parques.",
+     "p": [
+      "Linhas coloridas são trilhas; muitos mapas mostram distância, tempo ou dificuldade de cada percurso.",
+      "Ícones pequenos marcam estacionamento, banheiros, água, áreas de piquenique, mirantes e centro de visitantes.",
+      "Curvas de nível mostram o relevo: quando estão bem juntas, a trilha é íngreme."
+     ],
+     "q": "Você prefere mapa de papel ou no celular? Por quê?",
+     "c": "Abra o mapa de um parque e encontre o centro de visitantes, um mirante e uma trilha circular."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Visitor centres",
+     "g": "See why a first stop at the visitor centre makes the whole trip better.",
+     "p": [
+      "Staff and rangers share current trail conditions, closures and weather warnings.",
+      "Exhibits explain the park's geology, plants and animals, so you notice more on the trail.",
+      "You can pick up maps, ask about permits and learn the park's own rules."
+     ],
+     "q": "What question would you ask a ranger on your first visit to a park?",
+     "c": "Look up a visitor centre online and note one exhibit or activity it offers."
+    },
+    "de": {
+     "t": "Besucherzentren",
+     "g": "Sieh, warum ein erster Halt im Besucherzentrum den ganzen Ausflug besser macht.",
+     "p": [
+      "Mitarbeitende und Ranger kennen aktuelle Wegzustände, Sperrungen und Wetterwarnungen.",
+      "Ausstellungen erklären Geologie, Pflanzen und Tiere des Parks, so entdeckst du unterwegs mehr.",
+      "Du bekommst Karten, Infos zu Genehmigungen und erfährst die Regeln des Parks."
+     ],
+     "q": "Welche Frage würdest du einem Ranger bei deinem ersten Parkbesuch stellen?",
+     "c": "Schau dir online ein Besucherzentrum an und notiere eine Ausstellung oder Aktivität dort."
+    },
+    "es": {
+     "t": "Centros de visitantes",
+     "g": "Descubre por qué parar primero en el centro de visitantes mejora toda la salida.",
+     "p": [
+      "El personal y los guardaparques informan del estado de los senderos, cierres y avisos meteorológicos.",
+      "Las exposiciones explican la geología, las plantas y los animales del parque, así ves más en el camino.",
+      "Allí consigues mapas, preguntas por permisos y conoces las normas propias del parque."
+     ],
+     "q": "¿Qué le preguntarías a un guardaparques en tu primera visita a un parque?",
+     "c": "Busca en internet un centro de visitantes y anota una exposición o actividad que ofrezca."
+    },
+    "fr": {
+     "t": "Les centres d'accueil",
+     "g": "Découvre pourquoi un premier arrêt au centre d'accueil rend toute la sortie meilleure.",
+     "p": [
+      "Le personnel et les gardes connaissent l'état des sentiers, les fermetures et les alertes météo.",
+      "Les expositions expliquent la géologie, les plantes et les animaux du parc : tu remarques plus de choses en chemin.",
+      "Tu y trouves des cartes, des infos sur les autorisations et les règles propres au parc."
+     ],
+     "q": "Quelle question poserais-tu à un garde lors de ta première visite dans un parc ?",
+     "c": "Cherche un centre d'accueil en ligne et note une exposition ou une activité proposée."
+    },
+    "it": {
+     "t": "I centri visita",
+     "g": "Scopri perché una prima sosta al centro visita rende migliore tutta la gita.",
+     "p": [
+      "Personale e guardiaparco conoscono lo stato dei sentieri, le chiusure e gli avvisi meteo.",
+      "Le mostre spiegano geologia, piante e animali del parco, così noti molte più cose lungo il cammino.",
+      "Puoi prendere mappe, chiedere dei permessi e conoscere le regole del parco."
+     ],
+     "q": "Che domanda faresti a un guardiaparco alla tua prima visita in un parco?",
+     "c": "Cerca online un centro visita e annota una mostra o un'attività che propone."
+    },
+    "pt": {
+     "t": "Centros de visitantes",
+     "g": "Vê porque uma primeira paragem no centro de visitantes torna toda a saída melhor.",
+     "p": [
+      "Os funcionários e vigilantes informam sobre o estado dos trilhos, encerramentos e avisos meteorológicos.",
+      "As exposições explicam a geologia, as plantas e os animais do parque, para reparares em mais coisas no trilho.",
+      "Podes levar mapas, perguntar por autorizações e conhecer as regras do parque."
+     ],
+     "q": "Que pergunta farias a um vigilante na tua primeira visita a um parque?",
+     "c": "Procura um centro de visitantes na internet e anota uma exposição ou atividade que ofereça."
+    },
+    "pt_BR": {
+     "t": "Centros de visitantes",
+     "g": "Veja por que uma primeira parada no centro de visitantes deixa o passeio todo melhor.",
+     "p": [
+      "Funcionários e guarda-parques contam como estão as trilhas, o que está fechado e os alertas de tempo.",
+      "Exposições explicam a geologia, as plantas e os animais do parque, e você repara em muito mais na trilha.",
+      "Lá você pega mapas, pergunta sobre autorizações e conhece as regras do parque."
+     ],
+     "q": "Que pergunta você faria a um guarda-parque na sua primeira visita a um parque?",
+     "c": "Procure um centro de visitantes na internet e anote uma exposição ou atividade que ele oferece."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking the weather",
+     "g": "Learn to read forecasts for mountains and coasts, where conditions change fast.",
+     "p": [
+      "Check the forecast for the exact place and height you will visit, not just the nearest town.",
+      "Mountains are usually colder and windier than valleys, and coasts can turn foggy or stormy quickly.",
+      "Look at wind, rain chance and thunderstorm warnings, and have a plan B if things look bad."
+     ],
+     "q": "Have you ever been surprised by sudden weather on a trip?",
+     "c": "Check today's forecast for a nature spot you like, including wind and rain chance."
+    },
+    "de": {
+     "t": "Das Wetter prüfen",
+     "g": "Lerne, Vorhersagen für Berge und Küsten zu lesen, wo sich das Wetter schnell ändert.",
+     "p": [
+      "Prüfe die Vorhersage für den genauen Ort und die Höhe, nicht nur für die nächste Stadt.",
+      "Berge sind meist kälter und windiger als Täler, und an Küsten kommen Nebel oder Sturm schnell auf.",
+      "Achte auf Wind, Regenwahrscheinlichkeit und Gewitterwarnungen und hab einen Plan B."
+     ],
+     "q": "Hat dich unterwegs schon einmal plötzliches Wetter überrascht?",
+     "c": "Prüfe die heutige Vorhersage für einen Naturort, den du magst, inklusive Wind und Regen."
+    },
+    "es": {
+     "t": "Consultar el tiempo",
+     "g": "Aprende a leer previsiones para montaña y costa, donde las condiciones cambian rápido.",
+     "p": [
+      "Mira la previsión del lugar y la altura exactos que visitarás, no solo la del pueblo más cercano.",
+      "La montaña suele ser más fría y ventosa que el valle, y en la costa la niebla o la tormenta llegan rápido.",
+      "Fíjate en el viento, la probabilidad de lluvia y los avisos de tormenta, y ten un plan B."
+     ],
+     "q": "¿Alguna vez te sorprendió un cambio de tiempo repentino en una salida?",
+     "c": "Consulta la previsión de hoy para un lugar natural que te guste, con viento y lluvia."
+    },
+    "fr": {
+     "t": "Vérifier la météo",
+     "g": "Apprends à lire les prévisions pour la montagne et la côte, où le temps change vite.",
+     "p": [
+      "Vérifie la météo du lieu et de l'altitude exacts où tu iras, pas seulement de la ville voisine.",
+      "La montagne est souvent plus froide et venteuse que la vallée, et sur la côte brouillard ou tempête arrivent vite.",
+      "Regarde le vent, le risque de pluie et les alertes orage, et prévois un plan B."
+     ],
+     "q": "As-tu déjà été surpris par un changement de temps soudain en sortie ?",
+     "c": "Consulte la météo du jour pour un lieu nature que tu aimes, vent et pluie compris."
+    },
+    "it": {
+     "t": "Controllare il meteo",
+     "g": "Impara a leggere le previsioni per montagna e costa, dove il tempo cambia in fretta.",
+     "p": [
+      "Controlla le previsioni per il luogo e la quota precisi, non solo per il paese più vicino.",
+      "In montagna fa di solito più freddo e c'è più vento che a valle, e sulla costa nebbia o temporali arrivano presto.",
+      "Guarda vento, probabilità di pioggia e allerte temporali, e tieni pronto un piano B."
+     ],
+     "q": "Ti è mai capitato di essere sorpreso da un cambio di tempo improvviso durante una gita?",
+     "c": "Controlla le previsioni di oggi per un luogo naturale che ami, con vento e pioggia."
+    },
+    "pt": {
+     "t": "Ver o tempo",
+     "g": "Aprende a ler previsões para montanha e costa, onde as condições mudam depressa.",
+     "p": [
+      "Vê a previsão para o local e a altitude exatos que vais visitar, não só para a vila mais próxima.",
+      "A montanha costuma ser mais fria e ventosa do que o vale, e na costa o nevoeiro ou a tempestade chegam depressa.",
+      "Repara no vento, na probabilidade de chuva e nos avisos de trovoada, e tem um plano B."
+     ],
+     "q": "Já foste surpreendido por uma mudança súbita de tempo numa saída?",
+     "c": "Vê a previsão de hoje para um sítio natural de que gostes, incluindo vento e chuva."
+    },
+    "pt_BR": {
+     "t": "Conferindo a previsão do tempo",
+     "g": "Aprenda a ler previsões para montanha e litoral, onde o tempo muda rápido.",
+     "p": [
+      "Confira a previsão do lugar e da altitude exatos que você vai visitar, não só da cidade mais próxima.",
+      "A montanha costuma ser mais fria e ventosa que o vale, e no litoral neblina ou temporal chegam rápido.",
+      "Olhe vento, chance de chuva e alertas de tempestade, e tenha um plano B."
+     ],
+     "q": "Você já foi surpreendido por uma mudança repentina de tempo num passeio?",
+     "c": "Confira a previsão de hoje para um lugar na natureza que você gosta, com vento e chuva."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dressing in layers",
+     "g": "Learn how base, mid and outer layers keep you comfortable outdoors.",
+     "p": [
+      "The base layer sits on your skin and moves sweat away; wool or synthetic fabrics work better than cotton.",
+      "The mid layer, like fleece, traps warm air; add or remove it as you heat up or cool down.",
+      "The outer layer is a jacket that blocks wind and rain while letting some moisture out."
+     ],
+     "q": "Which do you feel more often outdoors: too hot or too cold?",
+     "c": "Pick three pieces from your wardrobe that could work as base, mid and outer layer."
+    },
+    "de": {
+     "t": "Zwiebelprinzip",
+     "g": "Lerne, wie Basis-, Mittel- und Außenschicht dich draußen angenehm temperiert halten.",
+     "p": [
+      "Die Basisschicht liegt auf der Haut und leitet Schweiß ab; Wolle oder Kunstfaser sind besser als Baumwolle.",
+      "Die Mittelschicht, etwa Fleece, hält warme Luft; zieh sie an oder aus, je nachdem, wie warm dir ist.",
+      "Die Außenschicht ist eine Jacke, die Wind und Regen abhält und trotzdem etwas Feuchtigkeit rauslässt."
+     ],
+     "q": "Was passiert dir draußen öfter: Ist dir zu warm oder zu kalt?",
+     "c": "Such drei Teile aus deinem Schrank, die als Basis-, Mittel- und Außenschicht taugen."
+    },
+    "es": {
+     "t": "Vestirse por capas",
+     "g": "Aprende cómo las capas base, intermedia y exterior te mantienen cómodo al aire libre.",
+     "p": [
+      "La capa base va pegada a la piel y aleja el sudor; la lana o los tejidos sintéticos funcionan mejor que el algodón.",
+      "La capa intermedia, como un forro polar, retiene aire caliente; póntela o quítatela según tengas calor o frío.",
+      "La capa exterior es una chaqueta que frena viento y lluvia y deja salir algo de humedad."
+     ],
+     "q": "¿Qué te pasa más a menudo al aire libre: tener calor o frío?",
+     "c": "Elige tres prendas de tu armario que sirvan como capa base, intermedia y exterior."
+    },
+    "fr": {
+     "t": "S'habiller en couches",
+     "g": "Apprends comment les couches de base, intermédiaire et extérieure te gardent à l'aise dehors.",
+     "p": [
+      "La première couche touche la peau et évacue la transpiration ; la laine ou le synthétique valent mieux que le coton.",
+      "La couche intermédiaire, comme une polaire, retient l'air chaud ; mets-la ou enlève-la selon ta température.",
+      "La couche extérieure est une veste qui coupe le vent et la pluie tout en laissant sortir un peu d'humidité."
+     ],
+     "q": "Dehors, as-tu plus souvent trop chaud ou trop froid ?",
+     "c": "Choisis trois vêtements de ton placard qui pourraient servir de couche de base, intermédiaire et extérieure."
+    },
+    "it": {
+     "t": "Vestirsi a strati",
+     "g": "Impara come strato base, intermedio ed esterno ti fanno stare comodo all'aperto.",
+     "p": [
+      "Lo strato base sta a contatto con la pelle e allontana il sudore; lana o sintetico funzionano meglio del cotone.",
+      "Lo strato intermedio, come il pile, trattiene l'aria calda; mettilo o toglilo quando hai caldo o freddo.",
+      "Lo strato esterno è una giacca che ferma vento e pioggia lasciando uscire un po' di umidità."
+     ],
+     "q": "All'aperto ti capita più spesso di avere troppo caldo o troppo freddo?",
+     "c": "Scegli tre capi del tuo armadio che potrebbero fare da strato base, intermedio ed esterno."
+    },
+    "pt": {
+     "t": "Vestir por camadas",
+     "g": "Aprende como as camadas base, intermédia e exterior te mantêm confortável ao ar livre.",
+     "p": [
+      "A camada base fica junto à pele e afasta o suor; lã ou tecidos sintéticos funcionam melhor do que algodão.",
+      "A camada intermédia, como um polar, retém ar quente; veste-a ou tira-a conforme aqueces ou arrefeces.",
+      "A camada exterior é um casaco que trava o vento e a chuva e deixa sair alguma humidade."
+     ],
+     "q": "Ao ar livre, sentes mais vezes calor a mais ou frio?",
+     "c": "Escolhe três peças do teu armário que possam servir de camada base, intermédia e exterior."
+    },
+    "pt_BR": {
+     "t": "Vestindo em camadas",
+     "g": "Aprenda como as camadas base, intermediária e externa deixam você confortável ao ar livre.",
+     "p": [
+      "A camada base fica na pele e afasta o suor; lã ou tecidos sintéticos funcionam melhor que algodão.",
+      "A camada intermediária, como um fleece, segura o ar quente; coloque ou tire conforme esquenta ou esfria.",
+      "A camada externa é uma jaqueta que barra vento e chuva e deixa sair um pouco da umidade."
+     ],
+     "q": "Ao ar livre, você sente mais calor ou mais frio?",
+     "c": "Escolha três peças do seu armário que funcionariam como camada base, intermediária e externa."
+    }
+   }
+  }
+ ]
+}

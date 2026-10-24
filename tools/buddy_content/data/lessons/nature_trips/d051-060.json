@@ -1,0 +1,835 @@
+{
+ "topic": "nature_trips",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wetlands and marshes",
+     "g": "Discover why wetlands are bird paradises and natural water filters.",
+     "p": [
+      "Wetlands like marshes, swamps and bogs clean water by trapping mud and pollution as it flows slowly through plants.",
+      "They soak up floodwater like a sponge and give food and rest to millions of migrating birds.",
+      "The Pantanal in South America is the largest tropical wetland; boardwalks and hides let you watch birds without disturbing them."
+     ],
+     "q": "Is there a lake shore, marsh or river delta near you where birds gather?",
+     "c": "Visit or look up a wetland nearby and list three birds that live there."
+    },
+    "de": {
+     "t": "Feuchtgebiete und Sümpfe",
+     "g": "Entdecke, warum Feuchtgebiete Vogelparadiese und natürliche Wasserfilter sind.",
+     "p": [
+      "Marschen, Sümpfe und Moore reinigen Wasser, weil sie Schlamm und Schadstoffe festhalten, während es langsam durch Pflanzen fließt.",
+      "Sie saugen Hochwasser auf wie ein Schwamm und bieten Millionen Zugvögeln Nahrung und Rast.",
+      "Das Pantanal in Südamerika ist das größte tropische Feuchtgebiet; Stege und Beobachtungshütten erlauben ungestörtes Vogelbeobachten."
+     ],
+     "q": "Gibt es in deiner Nähe ein Seeufer, einen Sumpf oder ein Flussdelta, wo sich Vögel sammeln?",
+     "c": "Besuche oder recherchiere ein Feuchtgebiet in deiner Nähe und notiere drei Vögel, die dort leben."
+    },
+    "es": {
+     "t": "Humedales y marismas",
+     "g": "Descubre por qué los humedales son paraísos de aves y filtros naturales de agua.",
+     "p": [
+      "Marismas, pantanos y turberas limpian el agua al atrapar barro y contaminación mientras fluye despacio entre las plantas.",
+      "Absorben las crecidas como una esponja y dan comida y descanso a millones de aves migratorias.",
+      "El Pantanal, en Sudamérica, es el mayor humedal tropical; pasarelas y observatorios permiten ver aves sin molestarlas."
+     ],
+     "q": "¿Hay cerca de ti una orilla de lago, marisma o delta donde se reúnan aves?",
+     "c": "Visita o investiga un humedal cercano y anota tres aves que vivan allí."
+    },
+    "fr": {
+     "t": "Zones humides et marais",
+     "g": "Découvre pourquoi les zones humides sont des paradis pour les oiseaux et des filtres naturels.",
+     "p": [
+      "Marais, marécages et tourbières nettoient l'eau en retenant boue et pollution pendant qu'elle traverse lentement les plantes.",
+      "Ils absorbent les crues comme une éponge et offrent nourriture et repos à des millions d'oiseaux migrateurs.",
+      "Le Pantanal, en Amérique du Sud, est la plus grande zone humide tropicale ; des observatoires y montrent les oiseaux sans les déranger."
+     ],
+     "q": "Y a-t-il près de chez toi une rive de lac, un marais ou un delta où se rassemblent les oiseaux ?",
+     "c": "Visite ou renseigne-toi sur une zone humide proche et note trois oiseaux qui y vivent."
+    },
+    "it": {
+     "t": "Zone umide e paludi",
+     "g": "Scopri perché le zone umide sono paradisi per gli uccelli e filtri naturali dell'acqua.",
+     "p": [
+      "Paludi, acquitrini e torbiere puliscono l'acqua trattenendo fango e inquinanti mentre scorre lenta tra le piante.",
+      "Assorbono le piene come una spugna e offrono cibo e riposo a milioni di uccelli migratori.",
+      "Il Pantanal, in Sud America, è la più grande zona umida tropicale; passerelle e capanni aiutano a osservare gli uccelli senza disturbarli."
+     ],
+     "q": "C'è vicino a te una riva di lago, una palude o un delta dove si radunano uccelli?",
+     "c": "Visita o cerca una zona umida vicina e annota tre uccelli che ci vivono."
+    },
+    "pt": {
+     "t": "Zonas húmidas e sapais",
+     "g": "Descobre porque as zonas húmidas são paraísos de aves e filtros naturais de água.",
+     "p": [
+      "Sapais, pântanos e turfeiras limpam a água ao reter lama e poluição enquanto ela corre devagar entre as plantas.",
+      "Absorvem as cheias como uma esponja e dão comida e descanso a milhões de aves migratórias.",
+      "O Pantanal, na América do Sul, é a maior zona húmida tropical; passadiços e observatórios deixam ver aves sem as perturbar."
+     ],
+     "q": "Há perto de ti uma margem de lago, sapal ou delta onde as aves se juntam?",
+     "c": "Visita ou pesquisa uma zona húmida perto de ti e anota três aves que vivam lá."
+    },
+    "pt_BR": {
+     "t": "Áreas úmidas e brejos",
+     "g": "Descubra por que áreas úmidas são paraísos das aves e filtros naturais de água.",
+     "p": [
+      "Brejos, pântanos e turfeiras limpam a água ao segurar lama e poluição enquanto ela passa devagar pelas plantas.",
+      "Elas absorvem as cheias como uma esponja e dão comida e descanso a milhões de aves migratórias.",
+      "O Pantanal, na América do Sul, é a maior área úmida tropical; passarelas e observatórios deixam ver aves sem incomodá-las."
+     ],
+     "q": "Tem perto de você uma beira de lago, brejo ou delta onde as aves se reúnem?",
+     "c": "Visite ou pesquise uma área úmida perto de você e anote três aves que vivem lá."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Islands",
+     "g": "Meet volcanic, coral and continental islands and their unique life.",
+     "p": [
+      "Volcanic islands, like Hawaii and Iceland, rise from eruptions on the sea floor.",
+      "Coral islands and atolls, like many in the Maldives, grow from reefs; continental islands, like Madagascar, broke off from larger land.",
+      "Isolation creates unique life, like Madagascar's lemurs; clean your shoes and bags so you never carry seeds or pests between islands."
+     ],
+     "q": "If you could explore any island in the world, which would it be?",
+     "c": "Pick an island and find one plant or animal that lives only there."
+    },
+    "de": {
+     "t": "Inseln",
+     "g": "Lerne vulkanische, Korallen- und Kontinentalinseln und ihr einzigartiges Leben kennen.",
+     "p": [
+      "Vulkaninseln wie Hawaii und Island entstehen durch Ausbrüche am Meeresboden.",
+      "Koralleninseln und Atolle, etwa viele auf den Malediven, wachsen aus Riffen; Kontinentalinseln wie Madagaskar lösten sich von größerem Land.",
+      "Isolation schafft einzigartiges Leben wie Madagaskars Lemuren; säubere Schuhe und Taschen, um keine Samen oder Schädlinge zu verschleppen."
+     ],
+     "q": "Wenn du jede Insel der Welt erkunden könntest, welche wäre es?",
+     "c": "Wähle eine Insel und finde eine Pflanze oder ein Tier, das nur dort lebt."
+    },
+    "es": {
+     "t": "Islas",
+     "g": "Conoce las islas volcánicas, coralinas y continentales y su vida única.",
+     "p": [
+      "Las islas volcánicas, como Hawái e Islandia, surgen de erupciones en el fondo del mar.",
+      "Los atolones, como muchos de Maldivas, crecen sobre arrecifes; las islas continentales, como Madagascar, se separaron de tierras mayores.",
+      "El aislamiento crea vida única, como los lémures de Madagascar; limpia calzado y bolsas para no llevar semillas ni plagas entre islas."
+     ],
+     "q": "Si pudieras explorar cualquier isla del mundo, ¿cuál sería?",
+     "c": "Elige una isla y busca una planta o un animal que solo viva allí."
+    },
+    "fr": {
+     "t": "Les îles",
+     "g": "Découvre les îles volcaniques, coralliennes et continentales, et leur vie unique.",
+     "p": [
+      "Les îles volcaniques, comme Hawaï et l'Islande, naissent d'éruptions au fond de la mer.",
+      "Les atolls, comme aux Maldives, poussent sur des récifs ; les îles continentales, comme Madagascar, se sont détachées d'un continent.",
+      "L'isolement crée une vie unique, comme les lémuriens de Madagascar ; nettoie chaussures et sacs pour ne transporter ni graines ni nuisibles."
+     ],
+     "q": "Si tu pouvais explorer n'importe quelle île du monde, laquelle choisirais-tu ?",
+     "c": "Choisis une île et trouve une plante ou un animal qui ne vit que là."
+    },
+    "it": {
+     "t": "Isole",
+     "g": "Conosci le isole vulcaniche, coralline e continentali e la loro vita unica.",
+     "p": [
+      "Le isole vulcaniche, come le Hawaii e l'Islanda, nascono da eruzioni sul fondo del mare.",
+      "Gli atolli, come alle Maldive, crescono sulle barriere; le isole continentali, come il Madagascar, si sono staccate da terre più grandi.",
+      "L'isolamento crea vita unica, come i lemuri del Madagascar; pulisci scarpe e borse per non portare semi o parassiti tra le isole."
+     ],
+     "q": "Se potessi esplorare qualsiasi isola al mondo, quale sceglieresti?",
+     "c": "Scegli un'isola e trova una pianta o un animale che vive solo lì."
+    },
+    "pt": {
+     "t": "Ilhas",
+     "g": "Conhece as ilhas vulcânicas, de coral e continentais e a sua vida única.",
+     "p": [
+      "As ilhas vulcânicas, como o Havai e a Islândia, nascem de erupções no fundo do mar.",
+      "Os atóis, como muitos nas Maldivas, crescem sobre recifes; as ilhas continentais, como Madagáscar, separaram-se de terras maiores.",
+      "O isolamento cria vida única, como os lémures de Madagáscar; limpa o calçado e os sacos para não levares sementes ou pragas entre ilhas."
+     ],
+     "q": "Se pudesses explorar qualquer ilha do mundo, qual seria?",
+     "c": "Escolhe uma ilha e encontra uma planta ou animal que só viva lá."
+    },
+    "pt_BR": {
+     "t": "Ilhas",
+     "g": "Conheça as ilhas vulcânicas, de coral e continentais e sua vida única.",
+     "p": [
+      "As ilhas vulcânicas, como o Havaí e a Islândia, nascem de erupções no fundo do mar.",
+      "Os atóis, como muitos nas Maldivas, crescem sobre recifes; as ilhas continentais, como Madagascar, se separaram de terras maiores.",
+      "O isolamento cria vida única, como os lêmures de Madagascar; limpe calçados e bolsas para não levar sementes ou pragas entre ilhas."
+     ],
+     "q": "Se você pudesse explorar qualquer ilha do mundo, qual seria?",
+     "c": "Escolha uma ilha e descubra uma planta ou animal que só vive lá."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Volcanoes",
+     "g": "Learn about active and dormant volcanoes and how to visit volcanic landscapes safely.",
+     "p": [
+      "An active volcano has erupted recently or shows signs it may; a dormant one is quiet now but could wake again.",
+      "Volcanic landscapes offer craters, lava fields, hot springs and very fertile soil for farming.",
+      "Visit with official trails or guides, respect closed areas, keep away from gas vents and check volcano alerts before you go."
+     ],
+     "q": "Would you like to stand on the rim of a volcano crater one day?",
+     "c": "Find an active volcano that visitors can see safely and learn when it last erupted."
+    },
+    "de": {
+     "t": "Vulkane",
+     "g": "Lerne aktive und ruhende Vulkane kennen und wie man Vulkanlandschaften sicher besucht.",
+     "p": [
+      "Ein aktiver Vulkan ist kürzlich ausgebrochen oder zeigt Anzeichen dafür; ein ruhender ist still, könnte aber wieder erwachen.",
+      "Vulkanlandschaften bieten Krater, Lavafelder, heiße Quellen und sehr fruchtbare Böden für die Landwirtschaft.",
+      "Nutze offizielle Wege oder Führungen, respektiere Sperrungen, halte Abstand zu Gasaustritten und prüfe vorher Vulkanwarnungen."
+     ],
+     "q": "Würdest du eines Tages gern am Rand eines Vulkankraters stehen?",
+     "c": "Finde einen aktiven Vulkan, den Besucher sicher sehen können, und wann er zuletzt ausbrach."
+    },
+    "es": {
+     "t": "Volcanes",
+     "g": "Aprende sobre volcanes activos y dormidos y cómo visitar paisajes volcánicos con seguridad.",
+     "p": [
+      "Un volcán activo ha entrado en erupción hace poco o muestra señales de hacerlo; uno dormido está tranquilo pero podría despertar.",
+      "Los paisajes volcánicos ofrecen cráteres, campos de lava, aguas termales y suelos muy fértiles para cultivar.",
+      "Visítalos por senderos oficiales o con guía, respeta las zonas cerradas, aléjate de las emisiones de gas y mira las alertas antes de ir."
+     ],
+     "q": "¿Te gustaría asomarte algún día al borde de un cráter?",
+     "c": "Busca un volcán activo que se pueda ver con seguridad y averigua cuándo fue su última erupción."
+    },
+    "fr": {
+     "t": "Les volcans",
+     "g": "Découvre les volcans actifs et endormis et comment visiter les paysages volcaniques en sécurité.",
+     "p": [
+      "Un volcan actif est entré en éruption récemment ou montre des signes d'activité ; un volcan endormi est calme mais pourrait se réveiller.",
+      "Les paysages volcaniques offrent cratères, coulées de lave, sources chaudes et sols très fertiles pour l'agriculture.",
+      "Suis les sentiers officiels ou un guide, respecte les zones fermées, fuis les émanations de gaz et consulte les alertes avant de partir."
+     ],
+     "q": "Aimerais-tu un jour te tenir au bord d'un cratère ?",
+     "c": "Trouve un volcan actif visible en sécurité et cherche la date de sa dernière éruption."
+    },
+    "it": {
+     "t": "Vulcani",
+     "g": "Scopri i vulcani attivi e quiescenti e come visitare i paesaggi vulcanici in sicurezza.",
+     "p": [
+      "Un vulcano attivo ha eruttato di recente o mostra segni di farlo; uno quiescente è tranquillo ora ma potrebbe risvegliarsi.",
+      "I paesaggi vulcanici offrono crateri, colate di lava, sorgenti calde e suoli molto fertili per l'agricoltura.",
+      "Usa sentieri ufficiali o una guida, rispetta le zone chiuse, stai lontano dalle emissioni di gas e controlla le allerte prima di partire."
+     ],
+     "q": "Ti piacerebbe un giorno affacciarti sul bordo di un cratere?",
+     "c": "Trova un vulcano attivo che si può vedere in sicurezza e scopri quando ha eruttato l'ultima volta."
+    },
+    "pt": {
+     "t": "Vulcões",
+     "g": "Aprende sobre vulcões ativos e adormecidos e como visitar paisagens vulcânicas em segurança.",
+     "p": [
+      "Um vulcão ativo entrou em erupção há pouco ou mostra sinais disso; um adormecido está calmo, mas pode voltar a acordar.",
+      "As paisagens vulcânicas oferecem crateras, campos de lava, águas termais e solos muito férteis para a agricultura.",
+      "Visita por trilhos oficiais ou com guia, respeita as zonas fechadas, afasta-te das saídas de gás e vê os alertas antes de ir."
+     ],
+     "q": "Gostavas um dia de estar à beira da cratera de um vulcão?",
+     "c": "Encontra um vulcão ativo que se possa ver em segurança e descobre quando foi a última erupção."
+    },
+    "pt_BR": {
+     "t": "Vulcões",
+     "g": "Aprenda sobre vulcões ativos e adormecidos e como visitar paisagens vulcânicas com segurança.",
+     "p": [
+      "Um vulcão ativo entrou em erupção há pouco tempo ou mostra sinais disso; um adormecido está calmo, mas pode despertar.",
+      "Paisagens vulcânicas oferecem crateras, campos de lava, fontes termais e solos muito férteis para plantar.",
+      "Visite por trilhas oficiais ou com guia, respeite áreas fechadas, fique longe das saídas de gás e veja os alertas antes de ir."
+     ],
+     "q": "Você gostaria de ficar um dia na borda da cratera de um vulcão?",
+     "c": "Encontre um vulcão ativo que dá para ver com segurança e descubra quando foi a última erupção."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Glaciers",
+     "g": "Learn how glaciers move and shape valleys.",
+     "p": [
+      "Glaciers form where snow builds up year after year and is pressed into ice, which slowly flows downhill under its own weight.",
+      "As they move, glaciers scrape rock and carve deep U-shaped valleys; Norway's fjords are valleys like these filled by the sea.",
+      "Admire glaciers from viewpoints or with certified guides only: hidden crevasses and falling ice make them dangerous to walk alone."
+     ],
+     "q": "Have you ever seen a glacier, or which one would you like to see?",
+     "c": "Look at a picture of a glacial valley and spot its U shape."
+    },
+    "de": {
+     "t": "Gletscher",
+     "g": "Lerne, wie Gletscher fließen und Täler formen.",
+     "p": [
+      "Gletscher entstehen, wo sich Jahr für Jahr Schnee sammelt und zu Eis gepresst wird, das unter seinem Gewicht langsam talwärts fließt.",
+      "Dabei schleifen Gletscher Gestein ab und formen tiefe U-Täler; Norwegens Fjorde sind solche Täler, die das Meer gefüllt hat.",
+      "Bewundere Gletscher nur von Aussichtspunkten oder mit zertifizierten Führern: Versteckte Spalten und Eisabbrüche sind gefährlich."
+     ],
+     "q": "Hast du schon einmal einen Gletscher gesehen, oder welchen würdest du gern sehen?",
+     "c": "Sieh dir ein Bild eines Gletschertals an und erkenne seine U-Form."
+    },
+    "es": {
+     "t": "Glaciares",
+     "g": "Aprende cómo se mueven los glaciares y cómo dan forma a los valles.",
+     "p": [
+      "Los glaciares se forman donde la nieve se acumula año tras año y se comprime en hielo, que fluye despacio cuesta abajo por su propio peso.",
+      "Al moverse, raspan la roca y excavan profundos valles en forma de U; los fiordos de Noruega son valles así inundados por el mar.",
+      "Admira los glaciares solo desde miradores o con guías certificados: las grietas ocultas y el hielo que cae los hacen peligrosos."
+     ],
+     "q": "¿Has visto alguna vez un glaciar, o cuál te gustaría ver?",
+     "c": "Mira la foto de un valle glaciar y descubre su forma de U."
+    },
+    "fr": {
+     "t": "Les glaciers",
+     "g": "Découvre comment les glaciers avancent et façonnent les vallées.",
+     "p": [
+      "Les glaciers naissent là où la neige s'accumule année après année et se tasse en glace, qui descend lentement sous son propre poids.",
+      "En avançant, ils raclent la roche et creusent de profondes vallées en U ; les fjords de Norvège sont de telles vallées envahies par la mer.",
+      "Admire les glaciers depuis des belvédères ou avec des guides diplômés : crevasses cachées et chutes de glace les rendent dangereux."
+     ],
+     "q": "As-tu déjà vu un glacier, ou lequel aimerais-tu voir ?",
+     "c": "Regarde une photo de vallée glaciaire et repère sa forme en U."
+    },
+    "it": {
+     "t": "Ghiacciai",
+     "g": "Scopri come si muovono i ghiacciai e come modellano le valli.",
+     "p": [
+      "I ghiacciai nascono dove la neve si accumula anno dopo anno e si compatta in ghiaccio, che scorre lento a valle per il proprio peso.",
+      "Muovendosi raschiano la roccia e scavano profonde valli a U; i fiordi della Norvegia sono valli così invase dal mare.",
+      "Ammira i ghiacciai solo dai punti panoramici o con guide certificate: crepacci nascosti e crolli di ghiaccio li rendono pericolosi."
+     ],
+     "q": "Hai mai visto un ghiacciaio, o quale ti piacerebbe vedere?",
+     "c": "Guarda la foto di una valle glaciale e individua la sua forma a U."
+    },
+    "pt": {
+     "t": "Glaciares",
+     "g": "Aprende como os glaciares se movem e moldam os vales.",
+     "p": [
+      "Os glaciares formam-se onde a neve se acumula ano após ano e é comprimida em gelo, que desliza devagar encosta abaixo com o próprio peso.",
+      "Ao moverem-se, raspam a rocha e escavam vales profundos em forma de U; os fiordes da Noruega são vales assim invadidos pelo mar.",
+      "Admira os glaciares só de miradouros ou com guias certificados: fendas escondidas e gelo a cair tornam-nos perigosos."
+     ],
+     "q": "Já viste um glaciar, ou qual gostavas de ver?",
+     "c": "Vê a fotografia de um vale glaciar e descobre a sua forma de U."
+    },
+    "pt_BR": {
+     "t": "Geleiras",
+     "g": "Aprenda como as geleiras se movem e moldam os vales.",
+     "p": [
+      "Geleiras se formam onde a neve se acumula ano após ano e vira gelo compactado, que desliza devagar morro abaixo pelo próprio peso.",
+      "Ao se mover, elas raspam a rocha e escavam vales fundos em forma de U; os fiordes da Noruega são vales assim invadidos pelo mar.",
+      "Admire geleiras só de mirantes ou com guias certificados: fendas escondidas e gelo caindo deixam tudo perigoso."
+     ],
+     "q": "Você já viu uma geleira, ou qual gostaria de ver?",
+     "c": "Veja a foto de um vale glacial e encontre o formato de U."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: wild landscapes",
+     "g": "Recap deserts, night skies, rivers, islands, volcanoes and glaciers.",
+     "p": [
+      "Deserts are full of adapted life; explore them early or late with plenty of water.",
+      "Dark, dry places reveal the Milky Way, and dark sky areas protect night views and wildlife.",
+      "Rivers carve canyons, islands grow unique life, volcanoes build new land and glaciers shape valleys."
+     ],
+     "q": "Which wild landscape from this week surprised you the most?",
+     "c": "Tell a friend one amazing fact you learned about deserts, stars, volcanoes or glaciers."
+    },
+    "de": {
+     "t": "Rückblick: wilde Landschaften",
+     "g": "Wiederhole Wüsten, Nachthimmel, Flüsse, Inseln, Vulkane und Gletscher.",
+     "p": [
+      "Wüsten sind voller angepasster Lebewesen; erkunde sie früh oder spät mit reichlich Wasser.",
+      "Dunkle, trockene Orte zeigen die Milchstraße, und Sternenparks schützen Nachthimmel und Tiere.",
+      "Flüsse graben Schluchten, Inseln bringen einzigartiges Leben hervor, Vulkane schaffen neues Land und Gletscher formen Täler."
+     ],
+     "q": "Welche wilde Landschaft dieser Woche hat dich am meisten überrascht?",
+     "c": "Erzähl jemandem eine erstaunliche Tatsache über Wüsten, Sterne, Vulkane oder Gletscher."
+    },
+    "es": {
+     "t": "Repaso: paisajes salvajes",
+     "g": "Repasa desiertos, cielos nocturnos, ríos, islas, volcanes y glaciares.",
+     "p": [
+      "Los desiertos están llenos de vida adaptada; explóralos temprano o tarde y con mucha agua.",
+      "Los lugares oscuros y secos revelan la Vía Láctea, y las zonas de cielo oscuro protegen la noche y la fauna.",
+      "Los ríos excavan cañones, las islas crean vida única, los volcanes forman tierra nueva y los glaciares moldean valles."
+     ],
+     "q": "¿Qué paisaje salvaje de esta semana te sorprendió más?",
+     "c": "Cuéntale a un amigo un dato asombroso que aprendiste sobre desiertos, estrellas, volcanes o glaciares."
+    },
+    "fr": {
+     "t": "Révision : paysages sauvages",
+     "g": "Révise déserts, ciels nocturnes, rivières, îles, volcans et glaciers.",
+     "p": [
+      "Les déserts regorgent de vie adaptée ; explore-les tôt ou tard, avec beaucoup d'eau.",
+      "Les lieux sombres et secs révèlent la Voie lactée, et les réserves de ciel étoilé protègent la nuit et la faune.",
+      "Les rivières creusent des canyons, les îles abritent une vie unique, les volcans créent des terres et les glaciers sculptent les vallées."
+     ],
+     "q": "Quel paysage sauvage de cette semaine t'a le plus surpris ?",
+     "c": "Raconte à un ami un fait étonnant appris sur les déserts, les étoiles, les volcans ou les glaciers."
+    },
+    "it": {
+     "t": "Ripasso: paesaggi selvaggi",
+     "g": "Ripassa deserti, cieli notturni, fiumi, isole, vulcani e ghiacciai.",
+     "p": [
+      "I deserti sono pieni di vita adattata; esplorali presto o tardi e con tanta acqua.",
+      "I luoghi bui e secchi mostrano la Via Lattea, e le aree di cielo buio proteggono la notte e la fauna.",
+      "I fiumi scavano canyon, le isole ospitano vita unica, i vulcani creano nuova terra e i ghiacciai modellano le valli."
+     ],
+     "q": "Quale paesaggio selvaggio di questa settimana ti ha sorpreso di più?",
+     "c": "Racconta a un amico una curiosità che hai imparato su deserti, stelle, vulcani o ghiacciai."
+    },
+    "pt": {
+     "t": "Revisão: paisagens selvagens",
+     "g": "Revê desertos, céus noturnos, rios, ilhas, vulcões e glaciares.",
+     "p": [
+      "Os desertos estão cheios de vida adaptada; explora-os cedo ou tarde e com muita água.",
+      "Os lugares escuros e secos revelam a Via Láctea, e as áreas de céu escuro protegem a noite e a fauna.",
+      "Os rios escavam desfiladeiros, as ilhas criam vida única, os vulcões formam terra nova e os glaciares moldam vales."
+     ],
+     "q": "Que paisagem selvagem desta semana te surpreendeu mais?",
+     "c": "Conta a um amigo um facto surpreendente que aprendeste sobre desertos, estrelas, vulcões ou glaciares."
+    },
+    "pt_BR": {
+     "t": "Revisão: paisagens selvagens",
+     "g": "Revise desertos, céus noturnos, rios, ilhas, vulcões e geleiras.",
+     "p": [
+      "Os desertos são cheios de vida adaptada; explore cedo ou no fim do dia e com bastante água.",
+      "Lugares escuros e secos revelam a Via Láctea, e as áreas de céu escuro protegem a noite e a fauna.",
+      "Rios escavam cânions, ilhas criam vida única, vulcões formam terra nova e geleiras moldam vales."
+     ],
+     "q": "Qual paisagem selvagem desta semana mais surpreendeu você?",
+     "c": "Conte para um amigo um fato incrível que aprendeu sobre desertos, estrelas, vulcões ou geleiras."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wildlife watching basics",
+     "g": "Learn how patience, quiet and the right time of day help you see animals.",
+     "p": [
+      "Many animals are most active around dawn and dusk, so early starts and evening walks pay off.",
+      "Move slowly, talk softly and wear muted colours; stop often and let the animals come into view.",
+      "Stay downwind if you can, use binoculars to watch from afar and enjoy the waiting as part of the fun."
+     ],
+     "q": "What wild animal would make your day if you spotted it?",
+     "c": "Sit still outdoors for ten minutes at dawn or dusk and note every animal you see or hear."
+    },
+    "de": {
+     "t": "Tierbeobachtung für Einsteiger",
+     "g": "Lerne, wie Geduld, Ruhe und die richtige Tageszeit dir helfen, Tiere zu sehen.",
+     "p": [
+      "Viele Tiere sind in der Dämmerung am aktivsten, deshalb lohnen sich frühe Starts und Abendspaziergänge.",
+      "Beweg dich langsam, sprich leise und trag gedeckte Farben; bleib oft stehen und lass die Tiere auftauchen.",
+      "Bleib wenn möglich auf der windabgewandten Seite, beobachte mit Fernglas aus der Ferne und genieß das Warten."
+     ],
+     "q": "Welches Wildtier würde dir den Tag versüßen, wenn du es entdeckst?",
+     "c": "Sitz zehn Minuten still draußen bei Morgen- oder Abenddämmerung und notiere jedes Tier, das du siehst oder hörst."
+    },
+    "es": {
+     "t": "Lo básico para ver fauna",
+     "g": "Aprende cómo la paciencia, el silencio y la hora adecuada te ayudan a ver animales.",
+     "p": [
+      "Muchos animales están más activos al amanecer y al atardecer, así que madrugar y pasear al caer el día compensa.",
+      "Muévete despacio, habla bajo y viste colores discretos; detente a menudo y deja que los animales aparezcan.",
+      "Ponte a favor del viento si puedes, usa prismáticos para mirar de lejos y disfruta la espera como parte de la diversión."
+     ],
+     "q": "¿Qué animal salvaje te alegraría el día si lo vieras?",
+     "c": "Siéntate quieto al aire libre diez minutos al amanecer o al atardecer y anota cada animal que veas u oigas."
+    },
+    "fr": {
+     "t": "Les bases de l'observation de la faune",
+     "g": "Apprends comment patience, silence et bon moment de la journée t'aident à voir des animaux.",
+     "p": [
+      "Beaucoup d'animaux sont plus actifs à l'aube et au crépuscule : partir tôt ou marcher le soir est payant.",
+      "Bouge lentement, parle doucement et porte des couleurs discrètes ; arrête-toi souvent et laisse les animaux apparaître.",
+      "Reste sous le vent si possible, observe de loin aux jumelles et savoure l'attente, elle fait partie du plaisir."
+     ],
+     "q": "Quel animal sauvage illuminerait ta journée si tu le voyais ?",
+     "c": "Assieds-toi immobile dehors dix minutes à l'aube ou au crépuscule et note chaque animal vu ou entendu."
+    },
+    "it": {
+     "t": "Basi per osservare la fauna",
+     "g": "Scopri come pazienza, silenzio e l'ora giusta ti aiutano a vedere gli animali.",
+     "p": [
+      "Molti animali sono più attivi all'alba e al tramonto, quindi partire presto e passeggiare la sera ripaga.",
+      "Muoviti piano, parla sottovoce e vesti colori neutri; fermati spesso e lascia che gli animali si mostrino.",
+      "Se puoi resta sottovento, usa il binocolo per osservare da lontano e goditi l'attesa come parte del divertimento."
+     ],
+     "q": "Quale animale selvatico ti renderebbe felice se lo avvistassi?",
+     "c": "Siediti immobile all'aperto dieci minuti all'alba o al tramonto e annota ogni animale che vedi o senti."
+    },
+    "pt": {
+     "t": "O básico de observar fauna",
+     "g": "Aprende como a paciência, o silêncio e a hora certa te ajudam a ver animais.",
+     "p": [
+      "Muitos animais estão mais ativos ao amanhecer e ao entardecer, por isso sair cedo e passear ao fim do dia compensa.",
+      "Mexe-te devagar, fala baixo e veste cores discretas; para muitas vezes e deixa os animais aparecerem.",
+      "Fica contra o vento se puderes, usa binóculos para ver de longe e aproveita a espera como parte da diversão."
+     ],
+     "q": "Que animal selvagem te faria o dia se o visses?",
+     "c": "Senta-te quieto ao ar livre dez minutos ao amanhecer ou ao entardecer e anota cada animal que vires ou ouvires."
+    },
+    "pt_BR": {
+     "t": "O básico de observar a vida selvagem",
+     "g": "Aprenda como paciência, silêncio e o horário certo ajudam você a ver animais.",
+     "p": [
+      "Muitos animais ficam mais ativos ao amanhecer e ao entardecer, então sair cedo e caminhar no fim do dia vale a pena.",
+      "Mexa-se devagar, fale baixo e use cores discretas; pare com frequência e deixe os animais aparecerem.",
+      "Fique contra o vento se puder, use binóculos para observar de longe e curta a espera como parte da diversão."
+     ],
+     "q": "Que animal selvagem faria seu dia se você o visse?",
+     "c": "Sente-se quieto ao ar livre por dez minutos ao amanhecer ou entardecer e anote cada animal que vir ou ouvir."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping a safe distance",
+     "g": "Understand why distance protects you and wildlife, and why we never feed animals.",
+     "p": [
+      "Many parks ask you to stay about 25 metres from most large animals and 100 metres from bears and wolves: always check local rules.",
+      "If an animal stops eating, stares or moves away because of you, you are too close: back off slowly.",
+      "Never feed wildlife: human food harms their health and teaches them to approach people, which can end badly for them."
+     ],
+     "q": "Have you ever seen people get too close to animals for a photo?",
+     "c": "Practise the thumb rule: if your outstretched thumb cannot cover the animal, you are too close."
+    },
+    "de": {
+     "t": "Sicheren Abstand halten",
+     "g": "Verstehe, warum Abstand dich und die Tiere schützt und warum wir Tiere nie füttern.",
+     "p": [
+      "Viele Parks verlangen etwa 25 Meter Abstand zu großen Tieren und 100 Meter zu Bären und Wölfen: prüfe immer die Regeln vor Ort.",
+      "Hört ein Tier wegen dir auf zu fressen, starrt dich an oder weicht aus, bist du zu nah: zieh dich langsam zurück.",
+      "Füttere nie Wildtiere: Menschenessen schadet ihnen und lehrt sie, Menschen zu nähern, was für sie schlecht enden kann."
+     ],
+     "q": "Hast du schon gesehen, wie Leute für ein Foto zu nah an Tiere herangingen?",
+     "c": "Übe die Daumenregel: Verdeckt dein ausgestreckter Daumen das Tier nicht, bist du zu nah."
+    },
+    "es": {
+     "t": "Mantener una distancia segura",
+     "g": "Entiende por qué la distancia te protege a ti y a la fauna, y por qué nunca alimentamos a los animales.",
+     "p": [
+      "Muchos parques piden unos 25 metros con la mayoría de animales grandes y 100 metros con osos y lobos: mira siempre las normas locales.",
+      "Si un animal deja de comer, te mira fijo o se aparta por ti, estás demasiado cerca: retrocede despacio.",
+      "Nunca des de comer a la fauna: la comida humana daña su salud y les enseña a acercarse a la gente, lo que puede acabar mal para ellos."
+     ],
+     "q": "¿Has visto alguna vez a gente acercarse demasiado a un animal para una foto?",
+     "c": "Practica la regla del pulgar: si tu pulgar estirado no tapa al animal, estás demasiado cerca."
+    },
+    "fr": {
+     "t": "Garder une distance de sécurité",
+     "g": "Comprends pourquoi la distance te protège, toi et la faune, et pourquoi on ne nourrit jamais les animaux.",
+     "p": [
+      "Beaucoup de parcs demandent 25 mètres avec la plupart des grands animaux et 100 mètres avec ours et loups : vérifie les règles locales.",
+      "Si un animal arrête de manger, te fixe ou s'éloigne à cause de toi, tu es trop près : recule doucement.",
+      "Ne nourris jamais la faune : la nourriture humaine nuit à sa santé et l'habitue aux gens, ce qui peut mal finir pour elle."
+     ],
+     "q": "As-tu déjà vu des gens trop s'approcher d'animaux pour une photo ?",
+     "c": "Essaie la règle du pouce : si ton pouce tendu ne cache pas l'animal, tu es trop près."
+    },
+    "it": {
+     "t": "Mantenere una distanza sicura",
+     "g": "Capisci perché la distanza protegge te e la fauna e perché non diamo mai da mangiare agli animali.",
+     "p": [
+      "Molti parchi chiedono circa 25 metri dalla maggior parte dei grandi animali e 100 metri da orsi e lupi: controlla sempre le regole locali.",
+      "Se un animale smette di mangiare, ti fissa o si allontana per causa tua, sei troppo vicino: indietreggia piano.",
+      "Non nutrire mai la fauna: il cibo umano danneggia la sua salute e la abitua ad avvicinarsi alle persone, cosa che può finire male per lei."
+     ],
+     "q": "Hai mai visto persone avvicinarsi troppo agli animali per una foto?",
+     "c": "Prova la regola del pollice: se il pollice teso non copre l'animale, sei troppo vicino."
+    },
+    "pt": {
+     "t": "Manter uma distância segura",
+     "g": "Percebe porque a distância te protege a ti e à fauna, e porque nunca damos comida aos animais.",
+     "p": [
+      "Muitos parques pedem cerca de 25 metros da maioria dos animais grandes e 100 metros de ursos e lobos: vê sempre as regras locais.",
+      "Se um animal deixa de comer, te fixa ou se afasta por tua causa, estás demasiado perto: recua devagar.",
+      "Nunca alimentes a fauna: a comida humana prejudica a saúde e ensina-os a aproximar-se das pessoas, o que pode acabar mal para eles."
+     ],
+     "q": "Já viste pessoas aproximarem-se demasiado de animais por causa de uma foto?",
+     "c": "Pratica a regra do polegar: se o polegar esticado não tapa o animal, estás demasiado perto."
+    },
+    "pt_BR": {
+     "t": "Mantendo uma distância segura",
+     "g": "Entenda por que a distância protege você e os animais, e por que nunca damos comida a eles.",
+     "p": [
+      "Muitos parques pedem uns 25 metros da maioria dos animais grandes e 100 metros de ursos e lobos: confira sempre as regras locais.",
+      "Se um animal para de comer, encara você ou se afasta por sua causa, você está perto demais: recue devagar.",
+      "Nunca alimente animais silvestres: comida humana faz mal e ensina eles a se aproximar das pessoas, o que pode acabar mal para eles."
+     ],
+     "q": "Você já viu gente chegando perto demais de animais por causa de uma foto?",
+     "c": "Pratique a regra do polegar: se o polegar esticado não cobre o animal, você está perto demais."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Birdwatching starter",
+     "g": "Get started with binoculars, field guides and your very first bird list.",
+     "p": [
+      "Binoculars marked 8x42 are a popular beginner choice: 8 times magnification with bright, steady views.",
+      "A field guide or bird app helps you identify birds by size, shape, colour, behaviour and song.",
+      "Start with the birds in your street or park and keep a simple list with date and place."
+     ],
+     "q": "Which bird do you see or hear most often where you live?",
+     "c": "Start your bird list today with every bird you notice, even pigeons and sparrows."
+    },
+    "de": {
+     "t": "Vogelbeobachtung für Einsteiger",
+     "g": "Starte mit Fernglas, Bestimmungsbuch und deiner allerersten Vogelliste.",
+     "p": [
+      "Ferngläser mit 8x42 sind eine beliebte Einsteigerwahl: achtfache Vergrößerung mit hellem, ruhigem Bild.",
+      "Ein Bestimmungsbuch oder eine Vogel-App hilft dir, Vögel an Größe, Form, Farbe, Verhalten und Gesang zu erkennen.",
+      "Fang mit den Vögeln in deiner Straße oder im Park an und führe eine einfache Liste mit Datum und Ort."
+     ],
+     "q": "Welchen Vogel siehst oder hörst du dort, wo du wohnst, am häufigsten?",
+     "c": "Beginne heute deine Vogelliste mit jedem Vogel, den du bemerkst, auch Tauben und Spatzen."
+    },
+    "es": {
+     "t": "Iniciación a la observación de aves",
+     "g": "Empieza con prismáticos, guías de campo y tu primera lista de aves.",
+     "p": [
+      "Los prismáticos 8x42 son una opción popular para empezar: 8 aumentos con imagen luminosa y estable.",
+      "Una guía de campo o una app de aves te ayuda a identificarlas por tamaño, forma, color, comportamiento y canto.",
+      "Empieza con las aves de tu calle o parque y lleva una lista sencilla con fecha y lugar."
+     ],
+     "q": "¿Qué ave ves u oyes más a menudo donde vives?",
+     "c": "Empieza hoy tu lista de aves con todas las que notes, incluso palomas y gorriones."
+    },
+    "fr": {
+     "t": "Débuter l'ornithologie",
+     "g": "Lance-toi avec des jumelles, un guide d'identification et ta toute première liste d'oiseaux.",
+     "p": [
+      "Les jumelles 8x42 sont un choix populaire pour débuter : grossissement 8 fois avec une image lumineuse et stable.",
+      "Un guide ou une appli d'oiseaux t'aide à les identifier par la taille, la forme, la couleur, le comportement et le chant.",
+      "Commence par les oiseaux de ta rue ou de ton parc et tiens une liste simple avec date et lieu."
+     ],
+     "q": "Quel oiseau vois-tu ou entends-tu le plus souvent là où tu vis ?",
+     "c": "Commence ta liste aujourd'hui avec chaque oiseau remarqué, même les pigeons et les moineaux."
+    },
+    "it": {
+     "t": "Primi passi nel birdwatching",
+     "g": "Inizia con binocolo, guida da campo e la tua primissima lista di uccelli.",
+     "p": [
+      "I binocoli 8x42 sono una scelta popolare per iniziare: 8 ingrandimenti con immagine luminosa e stabile.",
+      "Una guida da campo o un'app ti aiuta a riconoscere gli uccelli da dimensioni, forma, colore, comportamento e canto.",
+      "Comincia dagli uccelli della tua via o del parco e tieni una lista semplice con data e luogo."
+     ],
+     "q": "Quale uccello vedi o senti più spesso dove vivi?",
+     "c": "Inizia oggi la tua lista con ogni uccello che noti, anche piccioni e passeri."
+    },
+    "pt": {
+     "t": "Iniciação à observação de aves",
+     "g": "Começa com binóculos, guias de campo e a tua primeira lista de aves.",
+     "p": [
+      "Os binóculos 8x42 são uma escolha popular para começar: ampliação de 8 vezes com imagem luminosa e estável.",
+      "Um guia de campo ou uma app de aves ajuda-te a identificá-las pelo tamanho, forma, cor, comportamento e canto.",
+      "Começa pelas aves da tua rua ou parque e mantém uma lista simples com data e local."
+     ],
+     "q": "Que ave vês ou ouves mais vezes onde vives?",
+     "c": "Começa hoje a tua lista com todas as aves que notares, até pombos e pardais."
+    },
+    "pt_BR": {
+     "t": "Começando a observar aves",
+     "g": "Comece com binóculos, guias de campo e sua primeira lista de aves.",
+     "p": [
+      "Binóculos 8x42 são uma escolha popular para iniciantes: aumento de 8 vezes com imagem clara e estável.",
+      "Um guia de campo ou app de aves ajuda a identificá-las por tamanho, formato, cor, comportamento e canto.",
+      "Comece pelas aves da sua rua ou praça e faça uma lista simples com data e lugar."
+     ],
+     "q": "Qual ave você mais vê ou ouve onde mora?",
+     "c": "Comece hoje sua lista com todas as aves que notar, até pombos e pardais."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animal tracks and signs",
+     "g": "Learn to read footprints, feathers and other clues animals leave behind.",
+     "p": [
+      "Mud, sand and fresh snow are the best places to find clear footprints; count the toes and look for claw marks.",
+      "Other signs include chewed nuts and pine cones, feathers, nests, burrows and scratches on tree bark.",
+      "Photograph tracks next to a coin or your hand for scale, and look but do not touch droppings."
+     ],
+     "q": "Have you ever found animal tracks and wondered who made them?",
+     "c": "On your next walk, find one animal sign and take a photo to identify it later."
+    },
+    "de": {
+     "t": "Tierspuren und Zeichen",
+     "g": "Lerne, Fußabdrücke, Federn und andere Hinweise von Tieren zu lesen.",
+     "p": [
+      "Schlamm, Sand und Neuschnee sind die besten Orte für klare Abdrücke; zähl die Zehen und achte auf Krallenspuren.",
+      "Weitere Zeichen sind angeknabberte Nüsse und Zapfen, Federn, Nester, Baue und Kratzspuren an Baumrinde.",
+      "Fotografiere Spuren neben einer Münze oder deiner Hand als Maßstab, und Losung nur anschauen, nicht anfassen."
+     ],
+     "q": "Hast du schon einmal Tierspuren gefunden und dich gefragt, von wem sie stammen?",
+     "c": "Such bei deinem nächsten Spaziergang ein Tierzeichen und fotografiere es, um es später zu bestimmen."
+    },
+    "es": {
+     "t": "Huellas y rastros de animales",
+     "g": "Aprende a leer huellas, plumas y otras pistas que dejan los animales.",
+     "p": [
+      "El barro, la arena y la nieve fresca son los mejores lugares para huellas claras; cuenta los dedos y busca marcas de uñas.",
+      "Otros rastros son nueces y piñas roídas, plumas, nidos, madrigueras y arañazos en la corteza de los árboles.",
+      "Fotografía las huellas junto a una moneda o tu mano como escala, y mira los excrementos sin tocarlos."
+     ],
+     "q": "¿Has encontrado alguna vez huellas y te has preguntado de quién eran?",
+     "c": "En tu próximo paseo, encuentra un rastro animal y hazle una foto para identificarlo después."
+    },
+    "fr": {
+     "t": "Traces et indices d'animaux",
+     "g": "Apprends à lire empreintes, plumes et autres indices laissés par les animaux.",
+     "p": [
+      "La boue, le sable et la neige fraîche sont parfaits pour des empreintes nettes ; compte les doigts et cherche les griffes.",
+      "D'autres indices : noisettes et pommes de pin rongées, plumes, nids, terriers et griffures sur l'écorce.",
+      "Photographie les traces à côté d'une pièce ou de ta main pour l'échelle, et observe les crottes sans les toucher."
+     ],
+     "q": "As-tu déjà trouvé des traces d'animaux en te demandant qui les avait laissées ?",
+     "c": "Lors de ta prochaine balade, trouve un indice animal et photographie-le pour l'identifier plus tard."
+    },
+    "it": {
+     "t": "Tracce e segni degli animali",
+     "g": "Impara a leggere impronte, piume e altri indizi lasciati dagli animali.",
+     "p": [
+      "Fango, sabbia e neve fresca sono i posti migliori per impronte chiare; conta le dita e cerca i segni delle unghie.",
+      "Altri segni sono noci e pigne rosicchiate, piume, nidi, tane e graffi sulla corteccia degli alberi.",
+      "Fotografa le impronte accanto a una moneta o alla mano come scala, e osserva gli escrementi senza toccarli."
+     ],
+     "q": "Hai mai trovato impronte di animali chiedendoti chi le avesse lasciate?",
+     "c": "Nella prossima passeggiata trova un segno animale e fotografalo per riconoscerlo dopo."
+    },
+    "pt": {
+     "t": "Pegadas e sinais de animais",
+     "g": "Aprende a ler pegadas, penas e outras pistas que os animais deixam.",
+     "p": [
+      "Lama, areia e neve fresca são os melhores sítios para pegadas nítidas; conta os dedos e procura marcas de garras.",
+      "Outros sinais são nozes e pinhas roídas, penas, ninhos, tocas e arranhões na casca das árvores.",
+      "Fotografa as pegadas ao lado de uma moeda ou da tua mão para dar escala, e observa os excrementos sem lhes tocar."
+     ],
+     "q": "Já encontraste pegadas e ficaste a pensar de quem seriam?",
+     "c": "Na tua próxima caminhada, encontra um sinal de animal e fotografa-o para o identificares depois."
+    },
+    "pt_BR": {
+     "t": "Pegadas e sinais de animais",
+     "g": "Aprenda a ler pegadas, penas e outras pistas que os animais deixam.",
+     "p": [
+      "Lama, areia e neve fresca são os melhores lugares para pegadas nítidas; conte os dedos e procure marcas de garras.",
+      "Outros sinais são frutos e pinhas roídos, penas, ninhos, tocas e arranhões no tronco das árvores.",
+      "Fotografe as pegadas ao lado de uma moeda ou da sua mão para ter escala, e olhe as fezes sem tocar."
+     ],
+     "q": "Você já achou pegadas e ficou pensando de quem eram?",
+     "c": "Na próxima caminhada, encontre um sinal de animal e tire uma foto para identificar depois."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Marine life spotting",
+     "g": "Learn how to see seals, dolphins, turtles and whales from shore and boat.",
+     "p": [
+      "Seals often rest on beaches and rocks; watch from afar and never stand between them and the sea.",
+      "From headlands you can scan for dolphins and the spouts of whales, especially during their migration seasons.",
+      "Choose boat trips that keep their distance, slow down near animals and never chase or feed them."
+     ],
+     "q": "Which sea animal would you most love to see in the wild?",
+     "c": "Find out which marine animals can be seen from a coast near you and in which season."
+    },
+    "de": {
+     "t": "Meerestiere beobachten",
+     "g": "Lerne, wie du Robben, Delfine, Schildkröten und Wale von Land und Boot aus siehst.",
+     "p": [
+      "Robben ruhen oft an Stränden und auf Felsen; beobachte aus der Ferne und stell dich nie zwischen sie und das Meer.",
+      "Von Landzungen aus kannst du nach Delfinen und dem Blas von Walen Ausschau halten, besonders zur Zugzeit.",
+      "Wähle Bootstouren, die Abstand halten, bei Tieren langsam fahren und sie nie jagen oder füttern."
+     ],
+     "q": "Welches Meerestier würdest du am liebsten in freier Natur sehen?",
+     "c": "Finde heraus, welche Meerestiere man an einer Küste in deiner Nähe sehen kann und zu welcher Jahreszeit."
+    },
+    "es": {
+     "t": "Avistar vida marina",
+     "g": "Aprende a ver focas, delfines, tortugas y ballenas desde la costa y en barco.",
+     "p": [
+      "Las focas suelen descansar en playas y rocas; obsérvalas de lejos y nunca te pongas entre ellas y el mar.",
+      "Desde los cabos puedes buscar delfines y los soplos de las ballenas, sobre todo en sus épocas de migración.",
+      "Elige excursiones en barco que guarden distancia, vayan despacio cerca de los animales y nunca los persigan ni alimenten."
+     ],
+     "q": "¿Qué animal marino te encantaría ver en libertad?",
+     "c": "Averigua qué animales marinos se pueden ver desde una costa cercana y en qué época."
+    },
+    "fr": {
+     "t": "Observer la vie marine",
+     "g": "Apprends à voir phoques, dauphins, tortues et baleines depuis la côte et en bateau.",
+     "p": [
+      "Les phoques se reposent souvent sur les plages et les rochers ; observe-les de loin et ne te place jamais entre eux et la mer.",
+      "Depuis les caps, tu peux guetter les dauphins et les souffles des baleines, surtout pendant leurs migrations.",
+      "Choisis des sorties en mer qui gardent leurs distances, ralentissent près des animaux et ne les poursuivent ni ne les nourrissent."
+     ],
+     "q": "Quel animal marin aimerais-tu le plus voir en liberté ?",
+     "c": "Cherche quels animaux marins on peut voir depuis une côte proche de chez toi et à quelle saison."
+    },
+    "it": {
+     "t": "Avvistare la vita marina",
+     "g": "Scopri come vedere foche, delfini, tartarughe e balene dalla costa e dalla barca.",
+     "p": [
+      "Le foche spesso riposano su spiagge e scogli; osservale da lontano e non metterti mai tra loro e il mare.",
+      "Dai promontori puoi cercare delfini e gli sbuffi delle balene, soprattutto nelle stagioni di migrazione.",
+      "Scegli gite in barca che mantengono le distanze, rallentano vicino agli animali e non li inseguono né li nutrono."
+     ],
+     "q": "Quale animale marino ti piacerebbe di più vedere in libertà?",
+     "c": "Scopri quali animali marini si possono vedere da una costa vicina a te e in quale stagione."
+    },
+    "pt": {
+     "t": "Observar vida marinha",
+     "g": "Aprende a ver focas, golfinhos, tartarugas e baleias a partir da costa e de barco.",
+     "p": [
+      "As focas descansam muitas vezes em praias e rochas; observa de longe e nunca fiques entre elas e o mar.",
+      "Dos cabos podes procurar golfinhos e os sopros das baleias, sobretudo nas épocas de migração.",
+      "Escolhe passeios de barco que mantêm a distância, abrandam perto dos animais e nunca os perseguem nem alimentam."
+     ],
+     "q": "Que animal marinho mais gostavas de ver em liberdade?",
+     "c": "Descobre que animais marinhos se podem ver numa costa perto de ti e em que época."
+    },
+    "pt_BR": {
+     "t": "Observando a vida marinha",
+     "g": "Aprenda a ver focas, golfinhos, tartarugas e baleias da costa e de barco.",
+     "p": [
+      "Focas e lobos-marinhos costumam descansar em praias e pedras; observe de longe e nunca fique entre eles e o mar.",
+      "De pontas e mirantes dá para procurar golfinhos e os borrifos das baleias, principalmente na época de migração.",
+      "Escolha passeios de barco que mantêm distância, reduzem a velocidade perto dos animais e nunca os perseguem nem alimentam."
+     ],
+     "q": "Qual animal marinho você mais adoraria ver na natureza?",
+     "c": "Descubra quais animais marinhos dá para ver num litoral perto de você e em que época."
+    }
+   }
+  }
+ ]
+}

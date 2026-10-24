@@ -1,0 +1,1305 @@
+{
+"topic": "make_friends",
+"questions": [
+{
+"id": "make_friends-001",
+"lv": "any",
+"i18n": {
+"en": "What do you love doing in your free time, and would you enjoy doing it with new friends?",
+"de": "Was machst du in deiner Freizeit am liebsten, und würdest du das gern mit neuen Freunden machen?",
+"es": "¿Qué te encanta hacer en tu tiempo libre y te gustaría hacerlo con amigos nuevos?",
+"fr": "Qu'aimes-tu faire pendant ton temps libre, et aimerais-tu le faire avec de nouveaux amis ?",
+"it": "Cosa ami fare nel tempo libero, e ti piacerebbe farlo con nuovi amici?",
+"pt": "O que mais gostas de fazer nos tempos livres, e gostavas de o fazer com novos amigos?",
+"pt_BR": "O que você mais gosta de fazer no tempo livre, e curtiria fazer isso com amigos novos?"
+}
+},
+{
+"id": "make_friends-002",
+"lv": "any",
+"i18n": {
+"en": "How did you meet one of your closest friends?",
+"de": "Wie hast du einen deiner engsten Freunde kennengelernt?",
+"es": "¿Cómo conociste a una de tus amistades más cercanas?",
+"fr": "Comment as-tu rencontré l'un de tes amis les plus proches ?",
+"it": "Come hai conosciuto una delle tue amicizie più strette?",
+"pt": "Como conheceste um dos teus amigos mais próximos?",
+"pt_BR": "Como você conheceu um dos seus amigos mais próximos?"
+}
+},
+{
+"id": "make_friends-003",
+"lv": "any",
+"i18n": {
+"en": "What quality do you value most in a friend, and why?",
+"de": "Welche Eigenschaft schätzt du an einem Freund am meisten, und warum?",
+"es": "¿Qué cualidad valoras más en una amistad y por qué?",
+"fr": "Quelle qualité apprécies-tu le plus chez un ami, et pourquoi ?",
+"it": "Quale qualità apprezzi di più in un amico, e perché?",
+"pt": "Que qualidade mais valorizas num amigo, e porquê?",
+"pt_BR": "Qual qualidade você mais valoriza em um amigo, e por quê?"
+}
+},
+{
+"id": "make_friends-004",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect day out with friends look like for you?",
+"de": "Wie sieht für dich ein perfekter Tag mit Freunden aus?",
+"es": "¿Cómo sería para ti un día perfecto con amigos?",
+"fr": "À quoi ressemble pour toi une journée parfaite entre amis ?",
+"it": "Com'è per te una giornata perfetta con gli amici?",
+"pt": "Como é, para ti, um dia perfeito com amigos?",
+"pt_BR": "Como seria pra você um dia perfeito com os amigos?"
+}
+},
+{
+"id": "make_friends-005",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer big groups or meeting one or two people at a time? Why?",
+"de": "Magst du lieber große Gruppen oder triffst du dich lieber mit ein, zwei Leuten? Warum?",
+"es": "¿Prefieres los grupos grandes o quedar con una o dos personas? ¿Por qué?",
+"fr": "Tu préfères les grands groupes ou voir une ou deux personnes à la fois ? Pourquoi ?",
+"it": "Preferisci i gruppi numerosi o vedere una o due persone alla volta? Perché?",
+"pt": "Preferes grupos grandes ou estar com uma ou duas pessoas de cada vez? Porquê?",
+"pt_BR": "Você prefere grupos grandes ou encontrar uma ou duas pessoas por vez? Por quê?"
+}
+},
+{
+"id": "make_friends-006",
+"lv": "any",
+"i18n": {
+"en": "Which place in your city do you think is perfect for meeting new people?",
+"de": "Welcher Ort in deiner Stadt ist deiner Meinung nach perfekt, um neue Leute kennenzulernen?",
+"es": "¿Qué lugar de tu ciudad te parece perfecto para conocer gente nueva?",
+"fr": "Selon toi, quel endroit de ta ville est parfait pour rencontrer de nouvelles personnes ?",
+"it": "Secondo te, quale posto della tua città è perfetto per conoscere gente nuova?",
+"pt": "Que sítio da tua cidade achas perfeito para conhecer pessoas novas?",
+"pt_BR": "Qual lugar da sua cidade você acha perfeito para conhecer gente nova?"
+}
+},
+{
+"id": "make_friends-007",
+"lv": "any",
+"i18n": {
+"en": "What is the nicest thing a new acquaintance has ever done for you?",
+"de": "Was ist das Netteste, das eine neue Bekanntschaft je für dich getan hat?",
+"es": "¿Qué es lo más bonito que ha hecho por ti alguien a quien acababas de conocer?",
+"fr": "Quelle est la plus belle attention qu'une nouvelle connaissance ait eue pour toi ?",
+"it": "Qual è la cosa più gentile che una persona appena conosciuta abbia fatto per te?",
+"pt": "Qual foi a coisa mais simpática que alguém que acabavas de conhecer fez por ti?",
+"pt_BR": "Qual foi a coisa mais legal que alguém que você tinha acabado de conhecer fez por você?"
+}
+},
+{
+"id": "make_friends-008",
+"lv": "any",
+"i18n": {
+"en": "How do you usually start a conversation with someone you do not know?",
+"de": "Wie beginnst du normalerweise ein Gespräch mit jemandem, den du nicht kennst?",
+"es": "¿Cómo sueles empezar una conversación con alguien que no conoces?",
+"fr": "Comment engages-tu d'habitude la conversation avec quelqu'un que tu ne connais pas ?",
+"it": "Di solito come inizi una conversazione con qualcuno che non conosci?",
+"pt": "Como costumas começar uma conversa com alguém que não conheces?",
+"pt_BR": "Como você costuma puxar conversa com alguém que não conhece?"
+}
+},
+{
+"id": "make_friends-009",
+"lv": "any",
+"i18n": {
+"en": "What hobby or activity would you like to try with a group?",
+"de": "Welches Hobby oder welche Aktivität würdest du gern in einer Gruppe ausprobieren?",
+"es": "¿Qué afición o actividad te gustaría probar en grupo?",
+"fr": "Quel loisir ou quelle activité aimerais-tu essayer en groupe ?",
+"it": "Quale hobby o attività ti piacerebbe provare in gruppo?",
+"pt": "Que passatempo ou atividade gostavas de experimentar em grupo?",
+"pt_BR": "Que hobby ou atividade você gostaria de experimentar em grupo?"
+}
+},
+{
+"id": "make_friends-010",
+"lv": "any",
+"i18n": {
+"en": "What makes you feel instantly comfortable around someone?",
+"de": "Was sorgt dafür, dass du dich bei jemandem sofort wohlfühlst?",
+"es": "¿Qué hace que te sientas a gusto enseguida con alguien?",
+"fr": "Qu'est-ce qui te met tout de suite à l'aise avec quelqu'un ?",
+"it": "Che cosa ti fa sentire subito a tuo agio con qualcuno?",
+"pt": "O que te faz sentir logo à vontade com alguém?",
+"pt_BR": "O que faz você se sentir à vontade logo de cara com alguém?"
+}
+},
+{
+"id": "make_friends-011",
+"lv": "any",
+"i18n": {
+"en": "Who was your best friend as a child, and what did you do together?",
+"de": "Wer war als Kind dein bester Freund oder deine beste Freundin, und was habt ihr zusammen gemacht?",
+"es": "¿Quién era tu mejor amigo o amiga en la infancia y qué hacíais juntos?",
+"fr": "Qui était ton meilleur ami ou ta meilleure amie quand tu étais enfant, et que faisiez-vous ensemble ?",
+"it": "Chi era il tuo migliore amico o la tua migliore amica durante l'infanzia, e cosa facevate insieme?",
+"pt": "Quem era o teu melhor amigo ou a tua melhor amiga em criança, e o que faziam juntos?",
+"pt_BR": "Quem era seu melhor amigo ou sua melhor amiga na infância, e o que vocês faziam juntos?"
+}
+},
+{
+"id": "make_friends-012",
+"lv": "any",
+"i18n": {
+"en": "What is a fun fact about you that often surprises people?",
+"de": "Welche lustige Tatsache über dich überrascht die Leute oft?",
+"es": "¿Qué dato curioso sobre ti suele sorprender a la gente?",
+"fr": "Quelle anecdote amusante sur toi surprend souvent les gens ?",
+"it": "Qual è una curiosità su di te che sorprende spesso le persone?",
+"pt": "Que curiosidade sobre ti costuma surpreender as pessoas?",
+"pt_BR": "Que curiosidade sobre você costuma surpreender as pessoas?"
+}
+},
+{
+"id": "make_friends-013",
+"lv": "any",
+"i18n": {
+"en": "How do you like to stay in touch with friends: messages, calls or meeting up?",
+"de": "Wie hältst du am liebsten Kontakt zu Freunden: Nachrichten, Anrufe oder Treffen?",
+"es": "¿Cómo prefieres mantener el contacto con tus amigos: mensajes, llamadas o en persona?",
+"fr": "Comment préfères-tu garder le contact avec tes amis : messages, appels ou rencontres ?",
+"it": "Come preferisci restare in contatto con gli amici: messaggi, chiamate o incontri?",
+"pt": "Como preferes manter o contacto com os amigos: mensagens, chamadas ou encontros?",
+"pt_BR": "Como você prefere manter contato com os amigos: mensagens, ligações ou encontros?"
+}
+},
+{
+"id": "make_friends-014",
+"lv": "any",
+"i18n": {
+"en": "What kind of events or meetups have you enjoyed the most?",
+"de": "Welche Art von Veranstaltungen oder Treffen hat dir bisher am besten gefallen?",
+"es": "¿Qué tipo de eventos o encuentros has disfrutado más?",
+"fr": "Quel genre d'événements ou de rencontres as-tu le plus apprécié ?",
+"it": "Che tipo di eventi o incontri ti sono piaciuti di più?",
+"pt": "De que tipo de eventos ou encontros gostaste mais?",
+"pt_BR": "De que tipo de eventos ou encontros você mais gostou?"
+}
+},
+{
+"id": "make_friends-015",
+"lv": "any",
+"i18n": {
+"en": "What would your friends say is your best quality?",
+"de": "Was würden deine Freunde sagen, ist deine beste Eigenschaft?",
+"es": "¿Cuál dirían tus amigos que es tu mejor cualidad?",
+"fr": "Selon tes amis, quelle est ta plus grande qualité ?",
+"it": "Secondo i tuoi amici, qual è la tua qualità migliore?",
+"pt": "Qual diriam os teus amigos que é a tua melhor qualidade?",
+"pt_BR": "Qual seus amigos diriam que é a sua melhor qualidade?"
+}
+},
+{
+"id": "make_friends-016",
+"lv": "any",
+"i18n": {
+"en": "Is there a café, park or spot where you feel most like yourself?",
+"de": "Gibt es ein Café, einen Park oder einen Ort, an dem du dich am meisten wie du selbst fühlst?",
+"es": "¿Hay algún café, parque o rincón donde te sientas más tú?",
+"fr": "Y a-t-il un café, un parc ou un endroit où tu te sens vraiment toi-même ?",
+"it": "C'è un bar, un parco o un posto dove ti senti completamente a tuo agio?",
+"pt": "Há algum café, jardim ou sítio onde te sentes mais tu?",
+"pt_BR": "Tem algum café, parque ou cantinho onde você se sente mais você?"
+}
+},
+{
+"id": "make_friends-017",
+"lv": "any",
+"i18n": {
+"en": "What topic could you talk about for hours with a new friend?",
+"de": "Über welches Thema könntest du mit einem neuen Freund stundenlang reden?",
+"es": "¿De qué tema podrías hablar durante horas con una amistad nueva?",
+"fr": "De quel sujet pourrais-tu parler pendant des heures avec un nouvel ami ?",
+"it": "Di quale argomento potresti parlare per ore con un nuovo amico?",
+"pt": "Sobre que tema conseguias falar horas a fio com um novo amigo?",
+"pt_BR": "Sobre qual assunto você conseguiria conversar por horas com um amigo novo?"
+}
+},
+{
+"id": "make_friends-018",
+"lv": "any",
+"i18n": {
+"en": "How do you recharge after a busy social week?",
+"de": "Wie tankst du nach einer geselligen, vollen Woche wieder auf?",
+"es": "¿Cómo recargas energía después de una semana social muy intensa?",
+"fr": "Comment te ressources-tu après une semaine sociale bien remplie ?",
+"it": "Come ricarichi le energie dopo una settimana piena di impegni sociali?",
+"pt": "Como recarregas energias depois de uma semana cheia de convívio?",
+"pt_BR": "Como você recarrega as energias depois de uma semana cheia de compromissos sociais?"
+}
+},
+{
+"id": "make_friends-019",
+"lv": "any",
+"i18n": {
+"en": "What is a small habit that helps you feel connected to people?",
+"de": "Welche kleine Gewohnheit hilft dir, dich mit anderen verbunden zu fühlen?",
+"es": "¿Qué pequeño hábito te ayuda a sentirte en conexión con los demás?",
+"fr": "Quelle petite habitude t'aide à te sentir en lien avec les autres ?",
+"it": "Quale piccola abitudine ti aiuta a sentirti in contatto con gli altri?",
+"pt": "Que pequeno hábito te ajuda a sentir proximidade com as outras pessoas?",
+"pt_BR": "Que pequeno hábito ajuda você a sentir conexão com as pessoas?"
+}
+},
+{
+"id": "make_friends-020",
+"lv": "any",
+"i18n": {
+"en": "If you could invite three new friends to dinner, what would you cook or order?",
+"de": "Wenn du drei neue Freunde zum Essen einladen könntest, was würdest du kochen oder bestellen?",
+"es": "Si pudieras invitar a cenar a tres amigos nuevos, ¿qué cocinarías o pedirías?",
+"fr": "Si tu pouvais inviter trois nouveaux amis à dîner, que cuisinerais-tu ou commanderais-tu ?",
+"it": "Se potessi invitare a cena tre nuovi amici, cosa cucineresti o ordineresti?",
+"pt": "Se pudesses convidar três novos amigos para jantar, o que cozinhavas ou encomendavas?",
+"pt_BR": "Se você pudesse convidar três amigos novos para jantar, o que cozinharia ou pediria?"
+}
+},
+{
+"id": "make_friends-021",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to spend a weekend afternoon?",
+"de": "Wie verbringst du am liebsten einen Nachmittag am Wochenende?",
+"es": "¿Cuál es tu forma favorita de pasar una tarde de fin de semana?",
+"fr": "Quelle est ta façon préférée de passer un après-midi de week-end ?",
+"it": "Qual è il tuo modo preferito di passare un pomeriggio nel weekend?",
+"pt": "Qual é a tua forma preferida de passar uma tarde de fim de semana?",
+"pt_BR": "Qual é o seu jeito preferido de passar uma tarde de fim de semana?"
+}
+},
+{
+"id": "make_friends-022",
+"lv": "any",
+"i18n": {
+"en": "What makes a conversation memorable for you?",
+"de": "Was macht ein Gespräch für dich unvergesslich?",
+"es": "¿Qué hace que una conversación sea memorable para ti?",
+"fr": "Qu'est-ce qui rend une conversation mémorable pour toi ?",
+"it": "Che cosa rende memorabile una conversazione per te?",
+"pt": "O que torna uma conversa memorável para ti?",
+"pt_BR": "O que torna uma conversa marcante pra você?"
+}
+},
+{
+"id": "make_friends-023",
+"lv": "any",
+"i18n": {
+"en": "Have you ever made a friend in an unexpected place? What happened?",
+"de": "Hast du schon mal an einem unerwarteten Ort einen Freund gefunden? Was ist passiert?",
+"es": "¿Alguna vez hiciste un amigo en un lugar inesperado? ¿Qué pasó?",
+"fr": "T'es-tu déjà fait un ami dans un endroit inattendu ? Que s'est-il passé ?",
+"it": "Ti è mai capitato di fare amicizia in un posto inaspettato? Com'è andata?",
+"pt": "Já fizeste um amigo num sítio inesperado? O que aconteceu?",
+"pt_BR": "Você já fez amizade num lugar inesperado? O que aconteceu?"
+}
+},
+{
+"id": "make_friends-024",
+"lv": "any",
+"i18n": {
+"en": "What does home feel like to you, and who makes it feel that way?",
+"de": "Wie fühlt sich Zuhause für dich an, und wer sorgt für dieses Gefühl?",
+"es": "¿Qué significa sentirte en casa y quién te hace sentir así?",
+"fr": "Pour toi, qu'est-ce que se sentir chez soi, et qui te donne ce sentiment ?",
+"it": "Che cosa vuol dire per te sentirti a casa, e chi ti fa sentire così?",
+"pt": "O que é para ti sentires-te em casa, e quem te faz sentir assim?",
+"pt_BR": "O que é se sentir em casa pra você, e quem faz você se sentir assim?"
+}
+},
+{
+"id": "make_friends-025",
+"lv": "any",
+"i18n": {
+"en": "Which friendship from a book, film or series do you love most?",
+"de": "Welche Freundschaft aus einem Buch, Film oder einer Serie magst du am meisten?",
+"es": "¿Qué amistad de un libro, una película o una serie te encanta más?",
+"fr": "Quelle amitié d'un livre, d'un film ou d'une série préfères-tu ?",
+"it": "Quale amicizia di un libro, un film o una serie ami di più?",
+"pt": "Que amizade de um livro, filme ou série adoras mais?",
+"pt_BR": "Qual amizade de um livro, filme ou série você mais adora?"
+}
+},
+{
+"id": "make_friends-026",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when you walk into a room full of strangers?",
+"de": "Wie fühlst du dich, wenn du einen Raum voller Unbekannter betrittst?",
+"es": "¿Qué sientes cuando entras en una sala llena de desconocidos?",
+"fr": "Que ressens-tu quand tu entres dans une pièce pleine d'inconnus ?",
+"it": "Cosa provi quando entri in una stanza piena di sconosciuti?",
+"pt": "O que sentes quando entras numa sala cheia de desconhecidos?",
+"pt_BR": "O que você sente quando entra numa sala cheia de desconhecidos?"
+}
+},
+{
+"id": "make_friends-027",
+"lv": "any",
+"i18n": {
+"en": "In your experience, what music, food or activity always brings people together?",
+"de": "Welche Musik, welches Essen oder welche Aktivität bringt deiner Erfahrung nach immer Menschen zusammen?",
+"es": "Según tu experiencia, ¿qué música, comida o actividad siempre une a la gente?",
+"fr": "D'après ton expérience, quelle musique, quel plat ou quelle activité rassemble toujours les gens ?",
+"it": "Secondo la tua esperienza, quale musica, cibo o attività unisce sempre le persone?",
+"pt": "Pela tua experiência, que música, comida ou atividade junta sempre as pessoas?",
+"pt_BR": "Pela sua experiência, que música, comida ou atividade sempre aproxima as pessoas?"
+}
+},
+{
+"id": "make_friends-028",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you would love to learn from a friend?",
+"de": "Was würdest du gern von einem Freund lernen?",
+"es": "¿Qué te encantaría aprender de un amigo o una amiga?",
+"fr": "Qu'est-ce que tu aimerais apprendre d'un ami ?",
+"it": "C'è qualcosa che ti piacerebbe imparare da un amico?",
+"pt": "O que gostavas muito de aprender com um amigo?",
+"pt_BR": "O que você adoraria aprender com um amigo?"
+}
+},
+{
+"id": "make_friends-029",
+"lv": "any",
+"i18n": {
+"en": "How do you show a friend that you care about them?",
+"de": "Wie zeigst du einem Freund, dass er dir wichtig ist?",
+"es": "¿Cómo demuestras a tus amigos que te importan?",
+"fr": "Comment montres-tu à un ami qu'il compte pour toi ?",
+"it": "Come dimostri a un amico che ci tieni a lui?",
+"pt": "Como mostras a um amigo que gostas dele?",
+"pt_BR": "Como você mostra para um amigo que se importa com ele?"
+}
+},
+{
+"id": "make_friends-030",
+"lv": "any",
+"i18n": {
+"en": "What tradition would you love to start with a group of friends?",
+"de": "Welche Tradition würdest du gern mit einer Gruppe von Freunden beginnen?",
+"es": "¿Qué tradición te encantaría empezar con un grupo de amigos?",
+"fr": "Quelle tradition aimerais-tu lancer avec un groupe d'amis ?",
+"it": "Quale tradizione ti piacerebbe iniziare con un gruppo di amici?",
+"pt": "Que tradição gostavas de criar com um grupo de amigos?",
+"pt_BR": "Que tradição você adoraria começar com um grupo de amigos?"
+}
+},
+{
+"id": "make_friends-031",
+"lv": "any",
+"i18n": {
+"en": "What is the best piece of friendship advice you have ever received?",
+"de": "Was ist der beste Rat zum Thema Freundschaft, den du je bekommen hast?",
+"es": "¿Cuál es el mejor consejo sobre la amistad que te han dado?",
+"fr": "Quel est le meilleur conseil sur l'amitié qu'on t'ait jamais donné ?",
+"it": "Qual è il miglior consiglio sull'amicizia che tu abbia mai ricevuto?",
+"pt": "Qual foi o melhor conselho sobre amizade que alguma vez recebeste?",
+"pt_BR": "Qual foi o melhor conselho sobre amizade que você já recebeu?"
+}
+},
+{
+"id": "make_friends-032",
+"lv": "any",
+"i18n": {
+"en": "When did you last laugh really hard with someone, and what was so funny?",
+"de": "Wann hast du zuletzt so richtig mit jemandem gelacht, und was war so lustig?",
+"es": "¿Cuándo fue la última vez que te reíste a carcajadas con alguien y qué fue tan gracioso?",
+"fr": "Quand as-tu ri aux éclats avec quelqu'un pour la dernière fois, et qu'est-ce qui était si drôle ?",
+"it": "Quando hai riso di gusto con qualcuno l'ultima volta, e cosa c'era di così divertente?",
+"pt": "Quando foi a última vez que te riste a sério com alguém, e o que tinha tanta graça?",
+"pt_BR": "Quando foi a última vez que você riu muito com alguém, e o que foi tão engraçado?"
+}
+},
+{
+"id": "make_friends-033",
+"lv": "any",
+"i18n": {
+"en": "Which skill could you teach a new friend?",
+"de": "Welche Fähigkeit könntest du einem neuen Freund beibringen?",
+"es": "¿Qué habilidad podrías enseñarle a una amistad nueva?",
+"fr": "Quel savoir-faire pourrais-tu transmettre à un nouvel ami ?",
+"it": "Quale abilità potresti insegnare a un nuovo amico?",
+"pt": "Que habilidade podias ensinar a um novo amigo?",
+"pt_BR": "Que habilidade você poderia ensinar a um amigo novo?"
+}
+},
+{
+"id": "make_friends-034",
+"lv": "any",
+"i18n": {
+"en": "What does a good neighbour mean to you?",
+"de": "Was bedeutet für dich ein guter Nachbar?",
+"es": "¿Qué significa para ti ser buen vecino?",
+"fr": "Qu'est-ce qu'un bon voisin, pour toi ?",
+"it": "Che cosa significa per te essere un buon vicino?",
+"pt": "O que é para ti um bom vizinho?",
+"pt_BR": "O que significa pra você ser um bom vizinho?"
+}
+},
+{
+"id": "make_friends-035",
+"lv": "any",
+"i18n": {
+"en": "How do you like to celebrate your birthday?",
+"de": "Wie feierst du am liebsten deinen Geburtstag?",
+"es": "¿Cómo te gusta celebrar tu cumpleaños?",
+"fr": "Comment aimes-tu fêter ton anniversaire ?",
+"it": "Come ti piace festeggiare il tuo compleanno?",
+"pt": "Como gostas de celebrar o teu aniversário?",
+"pt_BR": "Como você gosta de comemorar seu aniversário?"
+}
+},
+{
+"id": "make_friends-036",
+"lv": "any",
+"i18n": {
+"en": "What kind of people do you find it easiest to connect with?",
+"de": "Mit welchen Menschen kommst du am leichtesten in Kontakt?",
+"es": "¿Con qué tipo de personas conectas con más facilidad?",
+"fr": "Avec quel genre de personnes crées-tu des liens le plus facilement ?",
+"it": "Con che tipo di persone entri in sintonia più facilmente?",
+"pt": "Com que tipo de pessoas crias ligação mais facilmente?",
+"pt_BR": "Com que tipo de pessoa você se conecta com mais facilidade?"
+}
+},
+{
+"id": "make_friends-037",
+"lv": "any",
+"i18n": {
+"en": "What is one place you would love to show a visitor in your city?",
+"de": "Welchen Ort in deiner Stadt würdest du einem Besucher am liebsten zeigen?",
+"es": "¿Qué lugar de tu ciudad te encantaría enseñarle a alguien que viene de visita?",
+"fr": "Quel endroit de ta ville adorerais-tu faire découvrir à un visiteur ?",
+"it": "Quale posto della tua città adoreresti mostrare a chi viene a trovarti?",
+"pt": "Que sítio da tua cidade adoravas mostrar a quem te visita?",
+"pt_BR": "Que lugar da sua cidade você adoraria mostrar para quem vem visitar?"
+}
+},
+{
+"id": "make_friends-038",
+"lv": "any",
+"i18n": {
+"en": "How do you usually spend your mornings, and could a friend join you?",
+"de": "Wie verbringst du normalerweise deine Vormittage, und könnte ein Freund dabei sein?",
+"es": "¿Cómo sueles pasar las mañanas? ¿Podría acompañarte alguien?",
+"fr": "Comment passes-tu tes matinées d'habitude, et un ami pourrait-il t'accompagner ?",
+"it": "Come passi di solito le mattine, e un amico potrebbe unirsi a te?",
+"pt": "Como costumas passar as manhãs, e um amigo podia juntar-se a ti?",
+"pt_BR": "Como você costuma passar as manhãs, e um amigo poderia ir junto?"
+}
+},
+{
+"id": "make_friends-039",
+"lv": "any",
+"i18n": {
+"en": "What is something that always makes your day better?",
+"de": "Was macht deinen Tag immer ein bisschen schöner?",
+"es": "¿Qué es algo que siempre te alegra el día?",
+"fr": "Qu'est-ce qui rend toujours ta journée meilleure ?",
+"it": "Che cosa rende sempre migliore la tua giornata?",
+"pt": "O que torna sempre o teu dia melhor?",
+"pt_BR": "O que sempre deixa o seu dia melhor?"
+}
+},
+{
+"id": "make_friends-040",
+"lv": "any",
+"i18n": {
+"en": "If you started a club, what would it be about?",
+"de": "Wenn du einen Club gründen würdest, worum würde es darin gehen?",
+"es": "Si fundaras un club, ¿de qué sería?",
+"fr": "Si tu créais un club, quel en serait le thème ?",
+"it": "Se fondassi un club, di cosa si occuperebbe?",
+"pt": "Se criasses um clube, qual seria o tema?",
+"pt_BR": "Se você criasse um clube, qual seria o tema?"
+}
+},
+{
+"id": "make_friends-041",
+"lv": "beginner",
+"i18n": {
+"en": "Have you moved to a new city before? What helped you settle in?",
+"de": "Bist du schon einmal in eine neue Stadt gezogen? Was hat dir geholfen, dich einzuleben?",
+"es": "¿Te has mudado alguna vez a una ciudad nueva? ¿Qué te ayudó a adaptarte?",
+"fr": "As-tu déjà déménagé dans une nouvelle ville ? Qu'est-ce qui a facilité ton installation ?",
+"it": "Ti è mai capitato di trasferirti in una nuova città? Che cosa ti ha aiutato ad ambientarti?",
+"pt": "Já te mudaste para uma cidade nova? O que te ajudou a adaptar-te?",
+"pt_BR": "Você já se mudou para uma cidade nova? O que te ajudou a se adaptar?"
+}
+},
+{
+"id": "make_friends-042",
+"lv": "beginner",
+"i18n": {
+"en": "What is the hardest part of meeting new people for you?",
+"de": "Was fällt dir beim Kennenlernen neuer Leute am schwersten?",
+"es": "¿Qué es lo que más te cuesta al conocer gente nueva?",
+"fr": "Qu'est-ce qui est le plus difficile pour toi quand tu rencontres de nouvelles personnes ?",
+"it": "Qual è per te la parte più difficile del conoscere gente nuova?",
+"pt": "Qual é para ti a parte mais difícil de conhecer pessoas novas?",
+"pt_BR": "Qual é pra você a parte mais difícil de conhecer gente nova?"
+}
+},
+{
+"id": "make_friends-043",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite easy way to say hello to someone new?",
+"de": "Wie sagst du am liebsten auf einfache Weise Hallo zu jemand Neuem?",
+"es": "¿Cuál es tu forma sencilla favorita de saludar a alguien nuevo?",
+"fr": "Quelle est ta façon simple préférée de dire bonjour à quelqu'un de nouveau ?",
+"it": "Qual è il tuo modo semplice preferito per salutare una persona nuova?",
+"pt": "Qual é a tua forma simples preferida de cumprimentar alguém novo?",
+"pt_BR": "Qual é o seu jeito simples preferido de cumprimentar alguém novo?"
+}
+},
+{
+"id": "make_friends-044",
+"lv": "beginner",
+"i18n": {
+"en": "Which local events or groups have you noticed in your area?",
+"de": "Welche Veranstaltungen oder Gruppen sind dir in deiner Gegend schon aufgefallen?",
+"es": "¿Qué eventos o grupos has visto en tu zona?",
+"fr": "Quels événements ou groupes locaux as-tu remarqués près de chez toi ?",
+"it": "Quali eventi o gruppi locali hai notato nella tua zona?",
+"pt": "Que eventos ou grupos locais já reparaste na tua zona?",
+"pt_BR": "Quais eventos ou grupos locais você já notou no seu bairro?"
+}
+},
+{
+"id": "make_friends-045",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather join a sports group, a class or a volunteering project? Why?",
+"de": "Würdest du lieber einer Sportgruppe, einem Kurs oder einem Ehrenamtsprojekt beitreten? Warum?",
+"es": "¿Preferirías unirte a un grupo deportivo, a una clase o a un voluntariado? ¿Por qué?",
+"fr": "Tu préférerais rejoindre un groupe sportif, un cours ou un projet bénévole ? Pourquoi ?",
+"it": "Preferiresti unirti a un gruppo sportivo, a un corso o a un progetto di volontariato? Perché?",
+"pt": "Preferias juntar-te a um grupo desportivo, a uma aula ou a um voluntariado? Porquê?",
+"pt_BR": "Você preferiria entrar num grupo de esporte, numa aula ou num voluntariado? Por quê?"
+}
+},
+{
+"id": "make_friends-046",
+"lv": "beginner",
+"i18n": {
+"en": "How do you remember people's names after meeting them?",
+"de": "Wie merkst du dir die Namen von Leuten, die du gerade kennengelernt hast?",
+"es": "¿Cómo recuerdas los nombres de las personas que acabas de conocer?",
+"fr": "Comment retiens-tu le prénom des gens que tu viens de rencontrer ?",
+"it": "Come fai a ricordare i nomi delle persone appena conosciute?",
+"pt": "Como fazes para te lembrares dos nomes das pessoas que acabaste de conhecer?",
+"pt_BR": "Como você faz para lembrar o nome das pessoas que acabou de conhecer?"
+}
+},
+{
+"id": "make_friends-047",
+"lv": "beginner",
+"i18n": {
+"en": "What would you write in a first message to someone who shares your hobby?",
+"de": "Was würdest du in einer ersten Nachricht an jemanden schreiben, der dein Hobby teilt?",
+"es": "¿Qué escribirías en un primer mensaje a alguien que comparte tu afición?",
+"fr": "Qu'écrirais-tu dans un premier message à quelqu'un qui partage ta passion ?",
+"it": "Cosa scriveresti nel primo messaggio a qualcuno che ha il tuo stesso hobby?",
+"pt": "O que escrevias numa primeira mensagem a alguém que partilha o teu passatempo?",
+"pt_BR": "O que você escreveria numa primeira mensagem para alguém que curte o mesmo hobby que você?"
+}
+},
+{
+"id": "make_friends-048",
+"lv": "beginner",
+"i18n": {
+"en": "Where would you feel safe meeting someone new for the first time?",
+"de": "Wo würdest du dich sicher fühlen, wenn du jemanden zum ersten Mal triffst?",
+"es": "¿En qué lugar te sentirías con tranquilidad para quedar por primera vez con alguien nuevo?",
+"fr": "Où te sentirais-tu en sécurité pour rencontrer quelqu'un de nouveau la première fois ?",
+"it": "In quale posto ti sentiresti al sicuro per incontrare qualcuno di nuovo la prima volta?",
+"pt": "Onde te sentirias em segurança para conhecer alguém novo pela primeira vez?",
+"pt_BR": "Onde você se sentiria em segurança para encontrar alguém novo pela primeira vez?"
+}
+},
+{
+"id": "make_friends-049",
+"lv": "beginner",
+"i18n": {
+"en": "What small step could you take this week to meet someone new?",
+"de": "Welchen kleinen Schritt könntest du diese Woche machen, um jemand Neues kennenzulernen?",
+"es": "¿Qué pequeño paso podrías dar esta semana para conocer a alguien nuevo?",
+"fr": "Quel petit pas pourrais-tu faire cette semaine pour rencontrer quelqu'un de nouveau ?",
+"it": "Quale piccolo passo potresti fare questa settimana per conoscere qualcuno di nuovo?",
+"pt": "Que pequeno passo podias dar esta semana para conhecer alguém novo?",
+"pt_BR": "Que pequeno passo você poderia dar esta semana para conhecer alguém novo?"
+}
+},
+{
+"id": "make_friends-050",
+"lv": "beginner",
+"i18n": {
+"en": "Which places do you visit regularly, like a café, gym or market?",
+"de": "Welche Orte besuchst du regelmäßig, zum Beispiel ein Café, ein Fitnessstudio oder einen Markt?",
+"es": "¿Qué lugares frecuentas, como un café, un gimnasio o un mercado?",
+"fr": "Quels lieux fréquentes-tu régulièrement, comme un café, une salle de sport ou un marché ?",
+"it": "Quali posti frequenti regolarmente, come un bar, una palestra o un mercato?",
+"pt": "Que sítios frequentas com regularidade, como um café, um ginásio ou um mercado?",
+"pt_BR": "Quais lugares você frequenta com regularidade, como um café, uma academia ou uma feira?"
+}
+},
+{
+"id": "make_friends-051",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried a language exchange or a meetup? How was it?",
+"de": "Hast du schon mal einen Sprachaustausch oder ein Meetup ausprobiert? Wie war es?",
+"es": "¿Has probado alguna vez un intercambio de idiomas o un meetup? ¿Qué tal fue?",
+"fr": "As-tu déjà essayé un échange linguistique ou un meetup ? C'était comment ?",
+"it": "Hai mai provato uno scambio linguistico o un meetup? Com'è andata?",
+"pt": "Já experimentaste um intercâmbio de línguas ou um encontro de grupo? Como correu?",
+"pt_BR": "Você já experimentou um intercâmbio de idiomas ou um meetup? Como foi?"
+}
+},
+{
+"id": "make_friends-052",
+"lv": "beginner",
+"i18n": {
+"en": "What questions do you like people to ask you when you first meet?",
+"de": "Welche Fragen hörst du gern, wenn du jemanden zum ersten Mal triffst?",
+"es": "¿Qué preguntas te gusta que te hagan cuando conoces a alguien?",
+"fr": "Quelles questions aimes-tu qu'on te pose lors d'une première rencontre ?",
+"it": "Quali domande ti piace sentirti fare quando conosci qualcuno?",
+"pt": "Que perguntas gostas que te façam quando conheces alguém?",
+"pt_BR": "Que perguntas você gosta que te façam quando conhece alguém?"
+}
+},
+{
+"id": "make_friends-053",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about using apps to find friends?",
+"de": "Was hältst du davon, Apps zu nutzen, um Freunde zu finden?",
+"es": "¿Qué opinas de usar aplicaciones para hacer amigos?",
+"fr": "Que penses-tu des applis pour se faire des amis ?",
+"it": "Cosa pensi delle app per trovare nuovi amici?",
+"pt": "O que achas de usar aplicações para fazer amigos?",
+"pt_BR": "O que você acha de usar aplicativos para fazer amigos?"
+}
+},
+{
+"id": "make_friends-054",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do when a conversation suddenly goes quiet?",
+"de": "Was machst du, wenn es in einem Gespräch plötzlich still wird?",
+"es": "¿Qué haces cuando una conversación se queda en silencio de repente?",
+"fr": "Que fais-tu quand une conversation retombe soudain dans le silence ?",
+"it": "Cosa fai quando in una conversazione cala all'improvviso il silenzio?",
+"pt": "O que fazes quando uma conversa fica de repente em silêncio?",
+"pt_BR": "O que você faz quando a conversa de repente fica em silêncio?"
+}
+},
+{
+"id": "make_friends-055",
+"lv": "beginner",
+"i18n": {
+"en": "What would make you say yes to an invitation from someone new?",
+"de": "Was würde dich dazu bringen, die Einladung von jemand Neuem anzunehmen?",
+"es": "¿Qué haría que aceptaras la invitación de alguien a quien acabas de conocer?",
+"fr": "Qu'est-ce qui te ferait accepter l'invitation de quelqu'un que tu connais à peine ?",
+"it": "Cosa ti spingerebbe ad accettare l'invito di una persona appena conosciuta?",
+"pt": "O que te levaria a aceitar o convite de alguém que acabaste de conhecer?",
+"pt_BR": "O que faria você aceitar o convite de alguém que acabou de conhecer?"
+}
+},
+{
+"id": "make_friends-056",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever invited someone you barely knew for a coffee? How did it go?",
+"de": "Hast du schon mal jemanden, den du kaum kanntest, auf einen Kaffee eingeladen? Wie lief es?",
+"es": "¿Alguna vez invitaste a un café a alguien a quien apenas conocías? ¿Cómo fue?",
+"fr": "As-tu déjà invité à prendre un café quelqu'un que tu connaissais à peine ? Comment ça s'est passé ?",
+"it": "Hai mai invitato a prendere un caffè qualcuno che conoscevi appena? Com'è andata?",
+"pt": "Já convidaste para um café alguém que mal conhecias? Como correu?",
+"pt_BR": "Você já chamou para um café alguém que mal conhecia? Como foi?"
+}
+},
+{
+"id": "make_friends-057",
+"lv": "beginner",
+"i18n": {
+"en": "How do you get to know your neighbours?",
+"de": "Wie lernst du deine Nachbarn kennen?",
+"es": "¿Cómo llegas a conocer a tus vecinos?",
+"fr": "Comment fais-tu connaissance avec tes voisins ?",
+"it": "Come fai a conoscere i tuoi vicini?",
+"pt": "Como fazes para conhecer os teus vizinhos?",
+"pt_BR": "Como você faz para conhecer seus vizinhos?"
+}
+},
+{
+"id": "make_friends-058",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you feel brave in social situations?",
+"de": "Was hilft dir, in sozialen Situationen mutig zu sein?",
+"es": "¿Qué te ayuda a sentir valor en situaciones sociales?",
+"fr": "Qu'est-ce qui t'aide à trouver du courage dans les situations sociales ?",
+"it": "Che cosa ti aiuta a trovare coraggio nelle situazioni sociali?",
+"pt": "O que te ajuda a ganhar coragem em situações sociais?",
+"pt_BR": "O que te ajuda a ter coragem em situações sociais?"
+}
+},
+{
+"id": "make_friends-059",
+"lv": "beginner",
+"i18n": {
+"en": "What would you suggest for a relaxed first hangout with a new friend?",
+"de": "Was würdest du für ein entspanntes erstes Treffen mit einem neuen Freund vorschlagen?",
+"es": "¿Qué propondrías para un primer plan tranquilo con una amistad nueva?",
+"fr": "Que proposerais-tu pour une première sortie détendue avec un nouvel ami ?",
+"it": "Cosa proporresti per una prima uscita rilassata con un nuovo amico?",
+"pt": "O que sugerias para um primeiro encontro descontraído com um novo amigo?",
+"pt_BR": "O que você sugeriria para um primeiro rolê tranquilo com um amigo novo?"
+}
+},
+{
+"id": "make_friends-060",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do to stay safe when meeting someone you met online?",
+"de": "Was tust du, um sicher zu bleiben, wenn du jemanden aus dem Internet triffst?",
+"es": "¿Qué haces para cuidar tu seguridad al quedar con alguien que conociste por internet?",
+"fr": "Que fais-tu pour rester en sécurité quand tu rencontres quelqu'un connu en ligne ?",
+"it": "Cosa fai per stare al sicuro quando incontri qualcuno conosciuto online?",
+"pt": "O que fazes para te manteres em segurança quando encontras alguém que conheceste online?",
+"pt_BR": "O que você faz para ficar em segurança quando vai encontrar alguém que conheceu na internet?"
+}
+},
+{
+"id": "make_friends-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which of your interests would make a great conversation starter?",
+"de": "Welches deiner Interessen wäre ein toller Gesprächseinstieg?",
+"es": "¿Cuál de tus intereses sería un buen tema para empezar una conversación?",
+"fr": "Lequel de tes centres d'intérêt serait parfait pour lancer une conversation ?",
+"it": "Quale dei tuoi interessi sarebbe perfetto per iniziare una conversazione?",
+"pt": "Qual dos teus interesses seria ótimo para começar uma conversa?",
+"pt_BR": "Qual dos seus interesses seria ótimo para puxar papo?"
+}
+},
+{
+"id": "make_friends-062",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about going to an event on your own?",
+"de": "Wie findest du es, allein zu einer Veranstaltung zu gehen?",
+"es": "¿Qué te parece ir a un evento sin conocer a nadie?",
+"fr": "Que penses-tu d'aller à un événement sans connaître personne ?",
+"it": "Come ti senti ad andare a un evento senza conoscere nessuno?",
+"pt": "O que achas de ir a um evento sem conhecer ninguém?",
+"pt_BR": "O que você acha de ir a um evento sem conhecer ninguém?"
+}
+},
+{
+"id": "make_friends-063",
+"lv": "beginner",
+"i18n": {
+"en": "What is one thing you would like to improve when chatting with new people?",
+"de": "Was würdest du beim Plaudern mit neuen Leuten gern verbessern?",
+"es": "¿Qué te gustaría mejorar cuando charlas con gente nueva?",
+"fr": "Qu'aimerais-tu améliorer quand tu discutes avec de nouvelles personnes ?",
+"it": "Che cosa vorresti migliorare quando chiacchieri con persone nuove?",
+"pt": "O que gostavas de melhorar quando conversas com pessoas novas?",
+"pt_BR": "O que você gostaria de melhorar quando conversa com gente nova?"
+}
+},
+{
+"id": "make_friends-064",
+"lv": "beginner",
+"i18n": {
+"en": "Who is someone you met recently and would like to know better?",
+"de": "Welche Person hast du vor Kurzem kennengelernt und würdest sie gern besser kennenlernen?",
+"es": "¿A quién has conocido hace poco y te gustaría conocer mejor?",
+"fr": "Qui as-tu rencontré récemment et aimerais-tu mieux connaître ?",
+"it": "Chi hai conosciuto di recente e ti piacerebbe conoscere meglio?",
+"pt": "Quem conheceste recentemente e gostavas de conhecer melhor?",
+"pt_BR": "Quem você conheceu recentemente e gostaria de conhecer melhor?"
+}
+},
+{
+"id": "make_friends-065",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of friend are you hoping to find in your city?",
+"de": "Was für einen Freund oder eine Freundin wünschst du dir in deiner Stadt?",
+"es": "¿Qué tipo de amistad esperas encontrar en tu ciudad?",
+"fr": "Quel genre d'ami espères-tu trouver dans ta ville ?",
+"it": "Che tipo di amicizia speri di trovare nella tua città?",
+"pt": "Que tipo de amigo esperas encontrar na tua cidade?",
+"pt_BR": "Que tipo de amizade você espera encontrar na sua cidade?"
+}
+},
+{
+"id": "make_friends-066",
+"lv": "intermediate",
+"i18n": {
+"en": "What helped an acquaintance of yours become a real friend?",
+"de": "Was hat dazu beigetragen, dass aus einer Bekanntschaft eine echte Freundschaft wurde?",
+"es": "¿Qué ayudó a que un simple conocido se convirtiera en un amigo de verdad?",
+"fr": "Qu'est-ce qui a permis à une simple connaissance de devenir un vrai ami ?",
+"it": "Che cosa ha trasformato una semplice conoscenza in una vera amicizia?",
+"pt": "O que ajudou um simples conhecido a tornar-se um verdadeiro amigo?",
+"pt_BR": "O que ajudou um simples conhecido a virar um amigo de verdade?"
+}
+},
+{
+"id": "make_friends-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep a friendship going when you are both very busy?",
+"de": "Wie hältst du eine Freundschaft lebendig, wenn ihr beide sehr beschäftigt seid?",
+"es": "¿Cómo mantienes viva una amistad cuando las dos personas están muy ocupadas?",
+"fr": "Comment fais-tu vivre une amitié quand vos agendas sont tous les deux très chargés ?",
+"it": "Come mantieni viva un'amicizia quando entrambi avete pochissimo tempo?",
+"pt": "Como manténs uma amizade viva quando os dois têm a vida muito ocupada?",
+"pt_BR": "Como você mantém uma amizade viva quando os dois estão sempre ocupados?"
+}
+},
+{
+"id": "make_friends-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What tradition or ritual do you share with a good friend?",
+"de": "Welche Tradition oder welches Ritual teilst du mit einem guten Freund?",
+"es": "¿Qué tradición o ritual compartes con una buena amistad?",
+"fr": "Quelle tradition ou quel rituel partages-tu avec un bon ami ?",
+"it": "Quale tradizione o rituale condividi con un buon amico?",
+"pt": "Que tradição ou ritual partilhas com um bom amigo?",
+"pt_BR": "Que tradição ou ritual você compartilha com um bom amigo?"
+}
+},
+{
+"id": "make_friends-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you react when a friend cancels plans at the last minute?",
+"de": "Wie reagierst du, wenn ein Freund kurzfristig absagt?",
+"es": "¿Cómo reaccionas cuando un amigo cancela un plan en el último momento?",
+"fr": "Comment réagis-tu quand un ami annule un projet à la dernière minute ?",
+"it": "Come reagisci quando un amico disdice un impegno all'ultimo minuto?",
+"pt": "Como reages quando um amigo cancela planos à última hora?",
+"pt_BR": "Como você reage quando um amigo cancela um programa em cima da hora?"
+}
+},
+{
+"id": "make_friends-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you like to support a friend who is having a hard time?",
+"de": "Wie unterstützt du am liebsten einen Freund, dem es gerade nicht gut geht?",
+"es": "¿Cómo te gusta apoyar a un amigo que está pasando por un momento difícil?",
+"fr": "Comment aimes-tu soutenir un ami qui traverse une période difficile ?",
+"it": "Come ti piace sostenere un amico che sta attraversando un momento difficile?",
+"pt": "Como gostas de apoiar um amigo que está a passar por uma fase difícil?",
+"pt_BR": "Como você gosta de apoiar um amigo que está passando por uma fase difícil?"
+}
+},
+{
+"id": "make_friends-071",
+"lv": "intermediate",
+"i18n": {
+"en": "When did you last say no to a friend, and how did you do it kindly?",
+"de": "Wann hast du zuletzt einem Freund Nein gesagt, und wie hast du es freundlich gemacht?",
+"es": "¿Cuándo fue la última vez que le dijiste que no a un amigo y cómo lo hiciste con amabilidad?",
+"fr": "Quand as-tu dit non à un ami pour la dernière fois, et comment l'as-tu fait avec gentillesse ?",
+"it": "Quando hai detto di no a un amico l'ultima volta, e come l'hai fatto con gentilezza?",
+"pt": "Quando foi a última vez que disseste não a um amigo, e como o fizeste com simpatia?",
+"pt_BR": "Quando foi a última vez que você disse não a um amigo, e como fez isso com gentileza?"
+}
+},
+{
+"id": "make_friends-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you bring different groups of friends together?",
+"de": "Wie bringst du verschiedene Freundeskreise zusammen?",
+"es": "¿Cómo juntas a tus distintos grupos de amigos?",
+"fr": "Comment réunis-tu tes différents cercles d'amis ?",
+"it": "Come fai a riunire i tuoi diversi gruppi di amici?",
+"pt": "Como juntas os teus diferentes grupos de amigos?",
+"pt_BR": "Como você junta seus diferentes grupos de amigos?"
+}
+},
+{
+"id": "make_friends-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What is the best get-together you have ever hosted or attended?",
+"de": "Was war das schönste Treffen, das du je veranstaltet oder besucht hast?",
+"es": "¿Cuál es la mejor reunión que has organizado o a la que has ido?",
+"fr": "Quelle est la meilleure soirée que tu aies organisée ou à laquelle tu aies participé ?",
+"it": "Qual è la rimpatriata più bella che hai organizzato o a cui hai partecipato?",
+"pt": "Qual foi o melhor encontro que já organizaste ou em que participaste?",
+"pt_BR": "Qual foi o melhor encontro que você já organizou ou de que participou?"
+}
+},
+{
+"id": "make_friends-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you stay close to friends who live far away?",
+"de": "Wie bleibst du Freunden nah, die weit weg wohnen?",
+"es": "¿Cómo mantienes la cercanía con amigos que viven lejos?",
+"fr": "Comment restes-tu proche d'amis qui habitent loin ?",
+"it": "Come mantieni il legame con gli amici che vivono lontano?",
+"pt": "Como manténs a proximidade com amigos que vivem longe?",
+"pt_BR": "Como você mantém a proximidade com amigos que moram longe?"
+}
+},
+{
+"id": "make_friends-075",
+"lv": "intermediate",
+"i18n": {
+"en": "What have you learned from a friend with a very different background?",
+"de": "Was hast du von einem Freund mit einem ganz anderen Hintergrund gelernt?",
+"es": "¿Qué has aprendido de una amistad con un origen muy distinto al tuyo?",
+"fr": "Qu'as-tu appris d'un ami venant d'un milieu très différent du tien ?",
+"it": "Che cosa hai imparato da un amico con un passato molto diverso dal tuo?",
+"pt": "O que aprendeste com um amigo de origens muito diferentes das tuas?",
+"pt_BR": "O que você aprendeu com um amigo de origem muito diferente da sua?"
+}
+},
+{
+"id": "make_friends-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle a disagreement with a friend?",
+"de": "Wie gehst du mit einer Meinungsverschiedenheit mit einem Freund um?",
+"es": "¿Cómo manejas un desacuerdo con un amigo?",
+"fr": "Comment gères-tu un désaccord avec un ami ?",
+"it": "Come gestisci un disaccordo con un amico?",
+"pt": "Como lidas com um desentendimento com um amigo?",
+"pt_BR": "Como você lida com um desentendimento com um amigo?"
+}
+},
+{
+"id": "make_friends-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes you trust someone?",
+"de": "Was bringt dich dazu, jemandem zu vertrauen?",
+"es": "¿Qué hace que confíes en alguien?",
+"fr": "Qu'est-ce qui te donne confiance en quelqu'un ?",
+"it": "Che cosa ti porta a fidarti di qualcuno?",
+"pt": "O que te faz confiar em alguém?",
+"pt_BR": "O que faz você confiar em alguém?"
+}
+},
+{
+"id": "make_friends-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you make a newcomer feel welcome in your group?",
+"de": "Wie sorgst du dafür, dass sich jemand Neues in deiner Gruppe willkommen fühlt?",
+"es": "¿Cómo haces que alguien nuevo se sienta bienvenido en tu grupo?",
+"fr": "Comment fais-tu pour qu'un nouveau venu se sente bien accueilli dans ton groupe ?",
+"it": "Come fai sentire benvenuta una persona nuova nel tuo gruppo?",
+"pt": "Como fazes alguém novo sentir-se bem-vindo no teu grupo?",
+"pt_BR": "Como você faz alguém novo se sentir bem-vindo no seu grupo?"
+}
+},
+{
+"id": "make_friends-079",
+"lv": "intermediate",
+"i18n": {
+"en": "What thoughtful gesture from a friend do you still remember?",
+"de": "An welche liebevolle Geste eines Freundes erinnerst du dich noch heute?",
+"es": "¿Qué detalle de un amigo todavía recuerdas con cariño?",
+"fr": "De quelle attention d'un ami te souviens-tu encore aujourd'hui ?",
+"it": "Quale gesto premuroso di un amico ricordi ancora oggi?",
+"pt": "De que gesto atencioso de um amigo ainda te lembras?",
+"pt_BR": "De qual gesto carinhoso de um amigo você ainda se lembra?"
+}
+},
+{
+"id": "make_friends-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance time with friends and time for yourself?",
+"de": "Wie findest du die Balance zwischen Zeit mit Freunden und Zeit für dich?",
+"es": "¿Cómo equilibras el tiempo con amigos y el tiempo para ti?",
+"fr": "Comment équilibres-tu le temps passé avec tes amis et le temps pour toi ?",
+"it": "Come trovi un equilibrio tra il tempo con gli amici e quello per te?",
+"pt": "Como equilibras o tempo com os amigos e o tempo para ti?",
+"pt_BR": "Como você equilibra o tempo com os amigos e o tempo pra você?"
+}
+},
+{
+"id": "make_friends-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you plan for a weekend trip with friends?",
+"de": "Was würdest du für einen Wochenendausflug mit Freunden planen?",
+"es": "¿Qué planearías para una escapada de fin de semana con amigos?",
+"fr": "Qu'organiserais-tu pour un week-end entre amis ?",
+"it": "Cosa organizzeresti per un weekend fuori con gli amici?",
+"pt": "O que planeavas para uma escapadinha de fim de semana com amigos?",
+"pt_BR": "O que você planejaria para uma viagem de fim de semana com os amigos?"
+}
+},
+{
+"id": "make_friends-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you reconnect with a friend after a long time apart?",
+"de": "Wie knüpfst du nach langer Zeit wieder an eine Freundschaft an?",
+"es": "¿Cómo retomas el contacto con un amigo después de mucho tiempo?",
+"fr": "Comment renoues-tu avec un ami après une longue période sans se voir ?",
+"it": "Come riallacci i rapporti con un amico dopo tanto tempo?",
+"pt": "Como reatas o contacto com um amigo depois de muito tempo?",
+"pt_BR": "Como você retoma o contato com um amigo depois de muito tempo?"
+}
+},
+{
+"id": "make_friends-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What role do you usually play in a group: organiser, joker, listener or something else?",
+"de": "Welche Rolle spielst du meist in einer Gruppe: Organisator, Spaßvogel, Zuhörer oder etwas anderes?",
+"es": "¿Qué papel sueles tener en un grupo: quien organiza, quien hace reír, quien escucha u otro?",
+"fr": "Quel rôle joues-tu souvent dans un groupe : l'organisation, l'humour, l'écoute ou autre chose ?",
+"it": "Che ruolo hai di solito in un gruppo: chi organizza, chi fa ridere, chi ascolta o altro?",
+"pt": "Que papel costumas ter num grupo: quem organiza, quem faz rir, quem ouve ou outro?",
+"pt_BR": "Que papel você costuma ter num grupo: quem organiza, quem faz rir, quem escuta ou outro?"
+}
+},
+{
+"id": "make_friends-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How has a friendship changed you for the better?",
+"de": "Wie hat dich eine Freundschaft zum Besseren verändert?",
+"es": "¿Cómo te ha cambiado una amistad para bien?",
+"fr": "Comment une amitié t'a-t-elle fait évoluer dans le bon sens ?",
+"it": "In che modo un'amicizia ti ha cambiato in meglio?",
+"pt": "Como é que uma amizade te mudou para melhor?",
+"pt_BR": "Como uma amizade mudou você para melhor?"
+}
+},
+{
+"id": "make_friends-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you appreciate about friends who are older or younger than you?",
+"de": "Was schätzt du an Freunden, die älter oder jünger sind als du?",
+"es": "¿Qué valoras de tus amigos mayores o más jóvenes que tú?",
+"fr": "Qu'apprécies-tu chez les amis plus âgés ou plus jeunes que toi ?",
+"it": "Cosa apprezzi negli amici più grandi o più giovani di te?",
+"pt": "O que valorizas nos amigos mais velhos ou mais novos do que tu?",
+"pt_BR": "O que você valoriza nos amigos mais velhos ou mais novos que você?"
+}
+},
+{
+"id": "make_friends-086",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think makes a friendship last for decades?",
+"de": "Was lässt deiner Meinung nach eine Freundschaft jahrzehntelang halten?",
+"es": "¿Qué crees que hace que una amistad dure décadas?",
+"fr": "Selon toi, qu'est-ce qui fait qu'une amitié dure des décennies ?",
+"it": "Secondo te, cosa fa durare un'amicizia per decenni?",
+"pt": "Na tua opinião, o que faz uma amizade durar décadas?",
+"pt_BR": "Na sua opinião, o que faz uma amizade durar décadas?"
+}
+},
+{
+"id": "make_friends-087",
+"lv": "advanced",
+"i18n": {
+"en": "What kind of friend do you want to be in ten years?",
+"de": "Was für ein Freund oder eine Freundin möchtest du in zehn Jahren sein?",
+"es": "¿Qué tipo de amistad quieres ofrecer dentro de diez años?",
+"fr": "Quel genre d'ami veux-tu être dans dix ans ?",
+"it": "Che tipo di amico vuoi essere tra dieci anni?",
+"pt": "Que tipo de amigo queres ser daqui a dez anos?",
+"pt_BR": "Que tipo de amigo você quer ser daqui a dez anos?"
+}
+},
+{
+"id": "make_friends-088",
+"lv": "advanced",
+"i18n": {
+"en": "What would your ideal community in your city look like?",
+"de": "Wie sähe deine ideale Gemeinschaft in deiner Stadt aus?",
+"es": "¿Cómo sería tu comunidad ideal en tu ciudad?",
+"fr": "À quoi ressemblerait ta communauté idéale dans ta ville ?",
+"it": "Come sarebbe la tua comunità ideale nella tua città?",
+"pt": "Como seria a tua comunidade ideal na tua cidade?",
+"pt_BR": "Como seria sua comunidade ideal na sua cidade?"
+}
+},
+{
+"id": "make_friends-089",
+"lv": "advanced",
+"i18n": {
+"en": "If you organised a welcome event for newcomers, what would it include?",
+"de": "Wenn du ein Willkommenstreffen für Neuankömmlinge organisieren würdest, was gäbe es dort?",
+"es": "Si organizaras un evento de bienvenida para recién llegados, ¿qué incluiría?",
+"fr": "Si tu organisais un événement d'accueil pour les nouveaux arrivants, que proposerait-il ?",
+"it": "Se organizzassi un evento di benvenuto per i nuovi arrivati, cosa includeresti?",
+"pt": "Se organizasses um evento de boas-vindas para recém-chegados, o que incluías?",
+"pt_BR": "Se você organizasse um evento de boas-vindas para quem acabou de chegar, o que ele teria?"
+}
+},
+{
+"id": "make_friends-090",
+"lv": "advanced",
+"i18n": {
+"en": "What have friendships taught you about yourself?",
+"de": "Was haben dir Freundschaften über dich selbst beigebracht?",
+"es": "¿Qué te han enseñado las amistades sobre ti?",
+"fr": "Qu'est-ce que tes amitiés t'ont appris sur toi-même ?",
+"it": "Che cosa ti hanno insegnato le amicizie su di te?",
+"pt": "O que te ensinaram as amizades sobre ti?",
+"pt_BR": "O que as amizades te ensinaram sobre você?"
+}
+},
+{
+"id": "make_friends-091",
+"lv": "advanced",
+"i18n": {
+"en": "How do you know when it is time to let a friendship fade?",
+"de": "Woran erkennst du, dass es Zeit ist, eine Freundschaft ausklingen zu lassen?",
+"es": "¿Cómo sabes cuándo es momento de dejar que una amistad se apague?",
+"fr": "Comment sais-tu qu'il est temps de laisser une amitié s'éloigner ?",
+"it": "Come capisci che è il momento di lasciare che un'amicizia si affievolisca?",
+"pt": "Como sabes quando é altura de deixar uma amizade esmorecer?",
+"pt_BR": "Como você sabe quando é hora de deixar uma amizade esfriar?"
+}
+},
+{
+"id": "make_friends-092",
+"lv": "advanced",
+"i18n": {
+"en": "What does belonging mean to you, and when did you first feel it in a new place?",
+"de": "Was bedeutet Zugehörigkeit für dich, und wann hast du sie an einem neuen Ort zum ersten Mal gespürt?",
+"es": "¿Qué significa para ti pertenecer a un lugar y cuándo lo sentiste por primera vez en un sitio nuevo?",
+"fr": "Que signifie pour toi le sentiment d'appartenance, et quand l'as-tu ressenti pour la première fois ailleurs ?",
+"it": "Che cosa significa per te sentirti parte di un luogo, e quando l'hai provato la prima volta altrove?",
+"pt": "O que significa para ti pertencer a um lugar, e quando o sentiste pela primeira vez num sítio novo?",
+"pt_BR": "O que significa pra você pertencer a um lugar, e quando sentiu isso pela primeira vez num lugar novo?"
+}
+},
+{
+"id": "make_friends-093",
+"lv": "advanced",
+"i18n": {
+"en": "How has technology changed the way you make and keep friends?",
+"de": "Wie hat die Technik verändert, wie du Freundschaften schließt und pflegst?",
+"es": "¿Cómo ha cambiado la tecnología tu forma de hacer y mantener amistades?",
+"fr": "Comment la technologie a-t-elle changé ta façon de te faire et de garder des amis ?",
+"it": "Come ha cambiato la tecnologia il tuo modo di fare e mantenere amicizie?",
+"pt": "Como mudou a tecnologia a tua forma de fazer e manter amizades?",
+"pt_BR": "Como a tecnologia mudou seu jeito de fazer e manter amizades?"
+}
+},
+{
+"id": "make_friends-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which habit of a great friend would you like to adopt?",
+"de": "Welche Gewohnheit eines wunderbaren Freundes würdest du gern übernehmen?",
+"es": "¿Qué hábito de un gran amigo te gustaría adoptar?",
+"fr": "Quelle habitude d'un ami formidable aimerais-tu adopter ?",
+"it": "Quale abitudine di un grande amico vorresti fare tua?",
+"pt": "Que hábito de um grande amigo gostavas de adotar?",
+"pt_BR": "Que hábito de um grande amigo você gostaria de adotar?"
+}
+},
+{
+"id": "make_friends-095",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think cultures differ in what they expect from friends?",
+"de": "Wie unterscheiden sich Kulturen deiner Meinung nach darin, was sie von Freunden erwarten?",
+"es": "¿En qué crees que se diferencian las culturas en lo que esperan de una amistad?",
+"fr": "Selon toi, en quoi les cultures diffèrent-elles dans ce qu'elles attendent des amis ?",
+"it": "Secondo te, in cosa differiscono le culture in ciò che si aspettano dagli amici?",
+"pt": "Na tua opinião, em que diferem as culturas naquilo que esperam dos amigos?",
+"pt_BR": "Na sua opinião, em que as culturas diferem no que esperam dos amigos?"
+}
+},
+{
+"id": "make_friends-096",
+"lv": "advanced",
+"i18n": {
+"en": "What advice would you give someone who has just moved to your city?",
+"de": "Welchen Rat würdest du jemandem geben, der gerade in deine Stadt gezogen ist?",
+"es": "¿Qué consejo le darías a alguien que acaba de mudarse a tu ciudad?",
+"fr": "Quel conseil donnerais-tu à quelqu'un qui vient d'emménager dans ta ville ?",
+"it": "Che consiglio daresti a chi si è appena trasferito nella tua città?",
+"pt": "Que conselho darias a alguém que acabou de se mudar para a tua cidade?",
+"pt_BR": "Que conselho você daria para alguém que acabou de se mudar para a sua cidade?"
+}
+},
+{
+"id": "make_friends-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you give honest feedback to a friend without hurting them?",
+"de": "Wie gibst du einem Freund ehrliches Feedback, ohne ihn zu verletzen?",
+"es": "¿Cómo le das una opinión sincera a un amigo sin herirlo?",
+"fr": "Comment fais-tu un retour honnête à un ami sans le blesser ?",
+"it": "Come dai un parere sincero a un amico senza ferirlo?",
+"pt": "Como dás uma opinião sincera a um amigo sem o magoar?",
+"pt_BR": "Como você dá uma opinião sincera a um amigo sem magoá-lo?"
+}
+},
+{
+"id": "make_friends-098",
+"lv": "advanced",
+"i18n": {
+"en": "Which friendship are you most grateful for, and have you told that friend?",
+"de": "Für welche Freundschaft bist du am dankbarsten, und hast du es dieser Person gesagt?",
+"es": "¿Por qué amistad sientes más gratitud y se lo has dicho a esa persona?",
+"fr": "Pour quelle amitié ressens-tu le plus de gratitude, et l'as-tu dit à cette personne ?",
+"it": "Per quale amicizia provi più gratitudine, e l'hai detto a quella persona?",
+"pt": "Por que amizade sentes mais gratidão, e já o disseste a essa pessoa?",
+"pt_BR": "Por qual amizade você sente mais gratidão, e já disse isso a essa pessoa?"
+}
+},
+{
+"id": "make_friends-099",
+"lv": "advanced",
+"i18n": {
+"en": "What would you like to change about how you connect with people?",
+"de": "Was würdest du gern daran ändern, wie du Kontakte knüpfst?",
+"es": "¿Qué te gustaría cambiar en tu forma de conectar con la gente?",
+"fr": "Qu'aimerais-tu changer dans ta façon de créer des liens avec les autres ?",
+"it": "Cosa vorresti cambiare nel tuo modo di entrare in contatto con le persone?",
+"pt": "O que gostavas de mudar na forma como te ligas às pessoas?",
+"pt_BR": "O que você gostaria de mudar no seu jeito de se conectar com as pessoas?"
+}
+},
+{
+"id": "make_friends-100",
+"lv": "advanced",
+"i18n": {
+"en": "Looking back at all your friendships, which story would you love to tell?",
+"de": "Wenn du auf all deine Freundschaften zurückblickst, welche Geschichte würdest du gern erzählen?",
+"es": "Si miras atrás a todas tus amistades, ¿qué historia te encantaría contar?",
+"fr": "En repensant à toutes tes amitiés, quelle histoire aimerais-tu raconter ?",
+"it": "Ripensando a tutte le tue amicizie, quale storia ti piacerebbe raccontare?",
+"pt": "Olhando para trás, para todas as tuas amizades, que história gostavas de contar?",
+"pt_BR": "Olhando para todas as suas amizades, qual história você adoraria contar?"
+}
+}
+]
+}

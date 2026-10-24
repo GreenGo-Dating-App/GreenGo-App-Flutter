@@ -1,0 +1,835 @@
+{
+ "topic": "basketball",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to basketball",
+     "g": "Discover what basketball is and how our 365-day path will work.",
+     "p": [
+      "Two teams of five try to shoot a ball through a hoop 3.05 m high.",
+      "It is played on every continent, from school gyms to huge arenas.",
+      "We start with the basics and grow step by step into tactics and history."
+     ],
+     "q": "What first made you curious about basketball?",
+     "c": "Find a basketball court near you, even just on a map."
+    },
+    "de": {
+     "t": "Willkommen beim Basketball",
+     "g": "Entdecke, was Basketball ist und wie unser 365-Tage-Weg funktioniert.",
+     "p": [
+      "Zwei Teams mit je fünf Spielern werfen einen Ball in einen Korb in 3,05 m Höhe.",
+      "Gespielt wird auf allen Kontinenten, von Schulhallen bis zu riesigen Arenen.",
+      "Wir beginnen mit den Grundlagen und wachsen Schritt für Schritt zu Taktik und Geschichte."
+     ],
+     "q": "Was hat dich zuerst neugierig auf Basketball gemacht?",
+     "c": "Such einen Basketballplatz in deiner Nähe, notfalls nur auf der Karte."
+    },
+    "es": {
+     "t": "Bienvenido al baloncesto",
+     "g": "Descubre qué es el baloncesto y cómo funcionará nuestro camino de 365 días.",
+     "p": [
+      "Dos equipos de cinco intentan meter un balón en un aro a 3,05 m de altura.",
+      "Se juega en todos los continentes, desde gimnasios escolares hasta grandes pabellones.",
+      "Empezamos por lo básico y avanzamos paso a paso hacia la táctica y la historia."
+     ],
+     "q": "¿Qué fue lo primero que despertó tu curiosidad por el baloncesto?",
+     "c": "Busca una cancha de baloncesto cerca de ti, aunque sea en un mapa."
+    },
+    "fr": {
+     "t": "Bienvenue dans le basket",
+     "g": "Découvre ce qu'est le basket et comment se déroulera notre parcours de 365 jours.",
+     "p": [
+      "Deux équipes de cinq essaient de mettre un ballon dans un panier placé à 3,05 m.",
+      "On y joue sur tous les continents, du gymnase scolaire aux immenses salles.",
+      "On commence par les bases, puis on avance pas à pas vers la tactique et l'histoire."
+     ],
+     "q": "Qu'est-ce qui t'a donné envie de t'intéresser au basket ?",
+     "c": "Repère un terrain de basket près de chez toi, même sur une carte."
+    },
+    "it": {
+     "t": "Benvenuto nel basket",
+     "g": "Scopri cos'è il basket e come funzionerà il nostro percorso di 365 giorni.",
+     "p": [
+      "Due squadre da cinque cercano di mettere la palla in un canestro alto 3,05 m.",
+      "Si gioca in tutti i continenti, dalle palestre scolastiche ai grandi palazzetti.",
+      "Partiamo dalle basi e cresciamo passo dopo passo fino a tattica e storia."
+     ],
+     "q": "Cosa ti ha incuriosito per primo del basket?",
+     "c": "Trova un campo da basket vicino a te, anche solo sulla mappa."
+    },
+    "pt": {
+     "t": "Bem-vindo ao basquetebol",
+     "g": "Descobre o que é o basquetebol e como vai funcionar o nosso percurso de 365 dias.",
+     "p": [
+      "Duas equipas de cinco tentam meter a bola num cesto a 3,05 m de altura.",
+      "Joga-se em todos os continentes, de pavilhões escolares a grandes arenas.",
+      "Começamos pelo básico e avançamos passo a passo até à tática e à história."
+     ],
+     "q": "O que te despertou primeiro a curiosidade pelo basquetebol?",
+     "c": "Procura um campo de basquetebol perto de ti, nem que seja no mapa."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao basquete",
+     "g": "Descubra o que é o basquete e como vai funcionar nossa jornada de 365 dias.",
+     "p": [
+      "Dois times de cinco tentam fazer a bola passar por uma cesta a 3,05 m de altura.",
+      "É jogado em todos os continentes, de ginásios de escola a grandes arenas.",
+      "Começamos pelo básico e avançamos passo a passo até tática e história."
+     ],
+     "q": "O que despertou primeiro sua curiosidade pelo basquete?",
+     "c": "Procure uma quadra de basquete perto de você, nem que seja no mapa."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The court at a glance",
+     "g": "Learn the main lines and areas of a basketball court.",
+     "p": [
+      "Baselines run behind each basket, sidelines along the long sides, and the half-court line splits it.",
+      "The paint is the painted area under the basket, ending at the free-throw line.",
+      "The three-point arc marks where a made shot is worth three points instead of two."
+     ],
+     "q": "Which part of the court do you think sees the most action?",
+     "c": "Draw a simple court sketch with the paint and the three-point arc."
+    },
+    "de": {
+     "t": "Das Spielfeld im Überblick",
+     "g": "Lerne die wichtigsten Linien und Bereiche des Basketballfelds kennen.",
+     "p": [
+      "Grundlinien liegen hinter den Körben, Seitenlinien an den langen Seiten, die Mittellinie teilt das Feld.",
+      "Die Zone ist der farbige Bereich unter dem Korb, sie endet an der Freiwurflinie.",
+      "Die Dreierlinie zeigt, ab wo ein Treffer drei statt zwei Punkte zählt."
+     ],
+     "q": "In welchem Bereich des Feldes passiert deiner Meinung nach am meisten?",
+     "c": "Zeichne eine einfache Skizze des Feldes mit Zone und Dreierlinie."
+    },
+    "es": {
+     "t": "La cancha de un vistazo",
+     "g": "Aprende las líneas y zonas principales de una cancha de baloncesto.",
+     "p": [
+      "Las líneas de fondo están detrás de cada aro, las laterales a lo largo y la central divide la cancha.",
+      "La zona, o pintura, es el área bajo el aro que termina en la línea de tiros libres.",
+      "La línea de tres marca desde dónde una canasta vale tres puntos en lugar de dos."
+     ],
+     "q": "¿Qué parte de la cancha crees que tiene más acción?",
+     "c": "Dibuja un esquema sencillo de la cancha con la zona y la línea de tres."
+    },
+    "fr": {
+     "t": "Le terrain en un coup d'œil",
+     "g": "Apprendre les lignes et zones principales d'un terrain de basket.",
+     "p": [
+      "Les lignes de fond sont derrière les paniers, les lignes de touche sur les côtés, la ligne médiane coupe le terrain.",
+      "La raquette est la zone peinte sous le panier, jusqu'à la ligne des lancers francs.",
+      "La ligne à trois points indique d'où un panier réussi vaut trois points au lieu de deux."
+     ],
+     "q": "Selon toi, quelle partie du terrain voit le plus d'action ?",
+     "c": "Dessine un petit croquis du terrain avec la raquette et la ligne à trois points."
+    },
+    "it": {
+     "t": "Il campo in breve",
+     "g": "Impara le linee e le zone principali di un campo da basket.",
+     "p": [
+      "Le linee di fondo stanno dietro i canestri, quelle laterali sui lati lunghi, la linea centrale divide il campo.",
+      "L'area colorata sotto il canestro si chiama pitturato e arriva fino alla linea del tiro libero.",
+      "L'arco da tre indica da dove un canestro vale tre punti invece di due."
+     ],
+     "q": "Secondo te, quale zona del campo vede più azione?",
+     "c": "Disegna uno schizzo del campo con l'area e l'arco da tre."
+    },
+    "pt": {
+     "t": "O campo num relance",
+     "g": "Aprende as principais linhas e zonas de um campo de basquetebol.",
+     "p": [
+      "As linhas de fundo ficam atrás dos cestos, as laterais nos lados compridos e a linha central divide o campo.",
+      "A área restritiva é a zona pintada debaixo do cesto, que acaba na linha de lance livre.",
+      "A linha de três pontos marca de onde um cesto vale três pontos em vez de dois."
+     ],
+     "q": "Que parte do campo achas que tem mais ação?",
+     "c": "Desenha um esboço simples do campo com a área restritiva e a linha de três."
+    },
+    "pt_BR": {
+     "t": "A quadra num relance",
+     "g": "Aprenda as principais linhas e áreas de uma quadra de basquete.",
+     "p": [
+      "As linhas de fundo ficam atrás das cestas, as laterais nos lados longos e a linha central divide a quadra.",
+      "O garrafão é a área pintada embaixo da cesta, que termina na linha de lance livre.",
+      "A linha de três pontos marca de onde uma cesta vale três pontos em vez de dois."
+     ],
+     "q": "Que parte da quadra você acha que tem mais ação?",
+     "c": "Desenhe um esboço simples da quadra com o garrafão e a linha de três."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ball and the hoop",
+     "g": "Get to know the equipment that makes the game work.",
+     "p": [
+      "Adult men use a size 7 ball, women a slightly smaller size 6, and kids often a size 5.",
+      "The rim always hangs 10 feet (3.05 m) above the floor, for pros and beginners alike.",
+      "The backboard lets you bank shots in, and the net shows clearly when a shot goes through."
+     ],
+     "q": "Have you ever held a real basketball? How did it feel?",
+     "c": "Bounce any ball ten times and notice how it comes back to your hand."
+    },
+    "de": {
+     "t": "Ball und Korb",
+     "g": "Lerne die Ausrüstung kennen, die das Spiel möglich macht.",
+     "p": [
+      "Männer spielen mit Ballgröße 7, Frauen mit der etwas kleineren Größe 6, Kinder oft mit Größe 5.",
+      "Der Ring hängt immer 3,05 m (10 Fuß) über dem Boden, für Profis wie für Anfänger.",
+      "Mit dem Brett kannst du über die Bande werfen, und das Netz zeigt klar jeden Treffer."
+     ],
+     "q": "Hattest du schon einmal einen echten Basketball in der Hand? Wie fühlte er sich an?",
+     "c": "Prelle einen beliebigen Ball zehnmal und spüre, wie er zur Hand zurückkommt."
+    },
+    "es": {
+     "t": "El balón y el aro",
+     "g": "Conoce el material que hace funcionar el juego.",
+     "p": [
+      "Los hombres usan un balón talla 7, las mujeres uno algo menor de talla 6 y los niños a menudo la talla 5.",
+      "El aro siempre está a 3,05 m (10 pies) del suelo, tanto para profesionales como para principiantes.",
+      "El tablero permite tirar a tabla, y la red muestra con claridad cuándo entra el tiro."
+     ],
+     "q": "¿Alguna vez has tenido un balón de baloncesto en las manos? ¿Qué sentiste?",
+     "c": "Bota cualquier pelota diez veces y fíjate cómo vuelve a tu mano."
+    },
+    "fr": {
+     "t": "Le ballon et le panier",
+     "g": "Découvrir le matériel qui fait vivre le jeu.",
+     "p": [
+      "Les hommes jouent avec un ballon taille 7, les femmes taille 6, un peu plus petit, et les enfants souvent taille 5.",
+      "L'arceau est toujours à 3,05 m (10 pieds) du sol, pour les pros comme pour les débutants.",
+      "La planche permet de jouer en appui, et le filet montre clairement quand le tir rentre."
+     ],
+     "q": "As-tu déjà tenu un vrai ballon de basket ? Quelle sensation ça t'a fait ?",
+     "c": "Fais rebondir n'importe quel ballon dix fois et observe comment il revient dans ta main."
+    },
+    "it": {
+     "t": "La palla e il canestro",
+     "g": "Conosci l'attrezzatura che fa funzionare il gioco.",
+     "p": [
+      "Gli uomini usano la palla misura 7, le donne la misura 6, un po' più piccola, i bambini spesso la 5.",
+      "Il ferro è sempre a 3,05 m (10 piedi) da terra, per professionisti e principianti.",
+      "Il tabellone permette di tirare di sponda e la retina mostra bene quando la palla entra."
+     ],
+     "q": "Hai mai tenuto in mano una vera palla da basket? Che sensazione era?",
+     "c": "Fai rimbalzare una palla qualsiasi dieci volte e senti come torna in mano."
+    },
+    "pt": {
+     "t": "A bola e o cesto",
+     "g": "Conhece o material que faz o jogo funcionar.",
+     "p": [
+      "Os homens usam bola de tamanho 7, as mulheres a de tamanho 6, um pouco menor, e as crianças muitas vezes a 5.",
+      "O aro está sempre a 3,05 m (10 pés) do chão, para profissionais e principiantes.",
+      "A tabela permite lançar de ressalto, e a rede mostra bem quando a bola entra."
+     ],
+     "q": "Já seguraste uma bola de basquetebol a sério? Como foi?",
+     "c": "Faz saltar uma bola qualquer dez vezes e repara como volta à tua mão."
+    },
+    "pt_BR": {
+     "t": "A bola e a cesta",
+     "g": "Conheça o equipamento que faz o jogo funcionar.",
+     "p": [
+      "Homens usam bola tamanho 7, mulheres a tamanho 6, um pouco menor, e crianças muitas vezes a 5.",
+      "O aro fica sempre a 3,05 m (10 pés) do chão, para profissionais e iniciantes.",
+      "A tabela permite arremessar batendo nela, e a rede mostra bem quando a bola entra."
+     ],
+     "q": "Você já segurou uma bola de basquete de verdade? Como foi?",
+     "c": "Quique qualquer bola dez vezes e repare como ela volta para sua mão."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Five players a side",
+     "g": "Understand how a basketball team is built.",
+     "p": [
+      "Each team has five players on court and more waiting on the bench to come in.",
+      "Starters begin the game, while bench players bring fresh legs and new energy.",
+      "Positions run from guards, who handle the ball, to forwards and centers near the basket."
+     ],
+     "q": "Would you rather be a ball handler or a tall player near the rim?",
+     "c": "Count how many players are on court when you next see a game or photo."
+    },
+    "de": {
+     "t": "Fünf gegen fünf",
+     "g": "Verstehe, wie eine Basketballmannschaft aufgebaut ist.",
+     "p": [
+      "Jedes Team hat fünf Spieler auf dem Feld und weitere auf der Bank, die eingewechselt werden können.",
+      "Die Starter beginnen das Spiel, die Bankspieler bringen frische Beine und neue Energie.",
+      "Die Positionen reichen von Guards mit dem Ball bis zu Forwards und Centern nahe am Korb."
+     ],
+     "q": "Wärst du lieber Ballführer oder ein großer Spieler am Korb?",
+     "c": "Zähl beim nächsten Spiel oder Foto, wie viele Spieler auf dem Feld stehen."
+    },
+    "es": {
+     "t": "Cinco por equipo",
+     "g": "Entiende cómo se forma un equipo de baloncesto.",
+     "p": [
+      "Cada equipo tiene cinco jugadores en pista y otros en el banquillo esperando para entrar.",
+      "Los titulares empiezan el partido y los suplentes aportan piernas frescas y nueva energía.",
+      "Las posiciones van de los bases, que manejan el balón, a aleros y pívots cerca del aro."
+     ],
+     "q": "¿Preferirías manejar el balón o ser un jugador alto cerca del aro?",
+     "c": "Cuenta cuántos jugadores hay en pista la próxima vez que veas un partido o una foto."
+    },
+    "fr": {
+     "t": "Cinq joueurs par équipe",
+     "g": "Comprendre comment se compose une équipe de basket.",
+     "p": [
+      "Chaque équipe a cinq joueurs sur le terrain et d'autres sur le banc, prêts à entrer.",
+      "Les titulaires débutent le match, les remplaçants apportent des jambes fraîches et de l'énergie.",
+      "Les postes vont des meneurs, qui portent le ballon, aux ailiers et pivots près du panier."
+     ],
+     "q": "Tu préférerais porter le ballon ou être un grand près du cercle ?",
+     "c": "Compte les joueurs sur le terrain la prochaine fois que tu vois un match ou une photo."
+    },
+    "it": {
+     "t": "Cinque per squadra",
+     "g": "Capisci come è formata una squadra di basket.",
+     "p": [
+      "Ogni squadra ha cinque giocatori in campo e altri in panchina pronti a entrare.",
+      "I titolari iniziano la partita, le riserve portano gambe fresche e nuova energia.",
+      "I ruoli vanno dai playmaker, che portano palla, alle ali e ai centri vicino al canestro."
+     ],
+     "q": "Preferiresti portare palla o essere un lungo vicino al ferro?",
+     "c": "Conta quanti giocatori ci sono in campo la prossima volta che vedi una partita o una foto."
+    },
+    "pt": {
+     "t": "Cinco de cada lado",
+     "g": "Percebe como se forma uma equipa de basquetebol.",
+     "p": [
+      "Cada equipa tem cinco jogadores em campo e outros no banco à espera de entrar.",
+      "Os titulares começam o jogo e os suplentes trazem pernas frescas e nova energia.",
+      "As posições vão dos bases, que conduzem a bola, aos extremos e postes junto ao cesto."
+     ],
+     "q": "Preferias conduzir a bola ou ser um jogador alto perto do aro?",
+     "c": "Conta quantos jogadores estão em campo da próxima vez que vires um jogo ou foto."
+    },
+    "pt_BR": {
+     "t": "Cinco de cada lado",
+     "g": "Entenda como um time de basquete é formado.",
+     "p": [
+      "Cada time tem cinco jogadores em quadra e outros no banco esperando para entrar.",
+      "Os titulares começam o jogo e os reservas trazem pernas descansadas e nova energia.",
+      "As posições vão dos armadores, que conduzem a bola, aos alas e pivôs perto da cesta."
+     ],
+     "q": "Você preferiria conduzir a bola ou ser um jogador alto perto do aro?",
+     "c": "Conte quantos jogadores estão em quadra na próxima vez que vir um jogo ou foto."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How you score",
+     "g": "Learn the three ways to put points on the board.",
+     "p": [
+      "A basket from inside the three-point arc counts two points.",
+      "A basket from beyond the arc counts three, and a free throw counts one.",
+      "A player fouled while scoring keeps the basket and gets a free throw: the and-one."
+     ],
+     "q": "Which shot sounds most exciting to you: a layup, a three or a free throw?",
+     "c": "Add up a pretend score: four twos, two threes and three free throws."
+    },
+    "de": {
+     "t": "So punktest du",
+     "g": "Lerne die drei Arten kennen, Punkte zu erzielen.",
+     "p": [
+      "Ein Treffer innerhalb der Dreierlinie zählt zwei Punkte.",
+      "Ein Treffer von jenseits der Linie zählt drei, ein Freiwurf einen Punkt.",
+      "Wer beim Korbwurf gefoult wird und trifft, bekommt zusätzlich einen Freiwurf: das And-one."
+     ],
+     "q": "Welcher Wurf klingt für dich am spannendsten: Korbleger, Dreier oder Freiwurf?",
+     "c": "Rechne einen Fantasie-Spielstand aus: vier Zweier, zwei Dreier und drei Freiwürfe."
+    },
+    "es": {
+     "t": "Cómo se anota",
+     "g": "Aprende las tres formas de sumar puntos.",
+     "p": [
+      "Una canasta desde dentro de la línea de tres vale dos puntos.",
+      "Desde fuera de la línea vale tres, y un tiro libre vale uno.",
+      "Si te hacen falta mientras anotas, la canasta vale y tiras un libre extra: el 2+1."
+     ],
+     "q": "¿Qué tiro te parece más emocionante: bandeja, triple o tiro libre?",
+     "c": "Suma un marcador imaginario: cuatro canastas de dos, dos triples y tres libres."
+    },
+    "fr": {
+     "t": "Comment on marque",
+     "g": "Apprendre les trois façons de marquer des points.",
+     "p": [
+      "Un panier réussi à l'intérieur de la ligne à trois points vaut deux points.",
+      "Derrière la ligne, il vaut trois, et un lancer franc vaut un point.",
+      "Un joueur fauté en marquant garde son panier et obtient un lancer franc : le and-one."
+     ],
+     "q": "Quel tir te paraît le plus excitant : double pas, tir à trois points ou lancer franc ?",
+     "c": "Calcule un score imaginaire : quatre paniers à deux, deux à trois et trois lancers francs."
+    },
+    "it": {
+     "t": "Come si segna",
+     "g": "Impara i tre modi per fare punti.",
+     "p": [
+      "Un canestro da dentro l'arco da tre vale due punti.",
+      "Da fuori l'arco ne vale tre, e un tiro libero vale uno.",
+      "Chi subisce fallo mentre segna tiene il canestro e ha un tiro libero in più: il gioco da tre punti."
+     ],
+     "q": "Quale tiro ti sembra più emozionante: terzo tempo, tripla o tiro libero?",
+     "c": "Somma un punteggio immaginario: quattro canestri da due, due triple e tre liberi."
+    },
+    "pt": {
+     "t": "Como se marca",
+     "g": "Aprende as três formas de somar pontos.",
+     "p": [
+      "Um cesto de dentro da linha de três pontos vale dois.",
+      "De fora da linha vale três, e um lance livre vale um ponto.",
+      "Quem sofre falta ao marcar fica com o cesto e ganha um lance livre extra: o and-one."
+     ],
+     "q": "Que lançamento te parece mais emocionante: na passada, triplo ou lance livre?",
+     "c": "Soma um resultado imaginário: quatro cestos de dois, dois triplos e três lances livres."
+    },
+    "pt_BR": {
+     "t": "Como se pontua",
+     "g": "Aprenda as três formas de marcar pontos.",
+     "p": [
+      "Uma cesta de dentro da linha de três vale dois pontos.",
+      "De fora da linha vale três, e um lance livre vale um.",
+      "Quem sofre falta ao pontuar fica com a cesta e ganha um lance livre extra: a cesta e falta."
+     ],
+     "q": "Que arremesso parece mais emocionante: bandeja, bola de três ou lance livre?",
+     "c": "Some um placar imaginário: quatro cestas de dois, duas de três e três lances livres."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The game clock",
+     "g": "Understand how a basketball game is timed.",
+     "p": [
+      "Games have four quarters: 12 minutes each in the NBA, 10 minutes each under FIBA rules.",
+      "Halftime splits the game in two, and the clock stops on fouls, timeouts and out-of-bounds.",
+      "If the score is tied, five-minute overtimes are played until someone wins."
+     ],
+     "q": "Why do you think the last two minutes of a game can last so long?",
+     "c": "Check how long a full NBA game and a FIBA game last on the clock."
+    },
+    "de": {
+     "t": "Die Spielzeit",
+     "g": "Verstehe, wie die Zeit im Basketball gemessen wird.",
+     "p": [
+      "Ein Spiel hat vier Viertel: in der NBA je 12 Minuten, nach FIBA-Regeln je 10 Minuten.",
+      "Die Halbzeitpause teilt das Spiel, und die Uhr stoppt bei Fouls, Auszeiten und Aus.",
+      "Bei Gleichstand gibt es Verlängerungen von je fünf Minuten, bis es einen Sieger gibt."
+     ],
+     "q": "Warum können die letzten zwei Minuten eines Spiels wohl so lange dauern?",
+     "c": "Rechne aus, wie lange ein NBA-Spiel und ein FIBA-Spiel netto dauern."
+    },
+    "es": {
+     "t": "El reloj del partido",
+     "g": "Entiende cómo se mide el tiempo en baloncesto.",
+     "p": [
+      "Hay cuatro cuartos: de 12 minutos en la NBA y de 10 minutos con reglas FIBA.",
+      "El descanso divide el partido, y el reloj se para en faltas, tiempos muertos y fueras.",
+      "Si hay empate, se juegan prórrogas de cinco minutos hasta que alguien gane."
+     ],
+     "q": "¿Por qué crees que los dos últimos minutos de un partido pueden durar tanto?",
+     "c": "Calcula cuánto dura en reloj un partido NBA y uno FIBA."
+    },
+    "fr": {
+     "t": "Le chrono du match",
+     "g": "Comprendre comment le temps est compté au basket.",
+     "p": [
+      "Un match compte quatre quart-temps : 12 minutes en NBA, 10 minutes selon les règles FIBA.",
+      "La mi-temps coupe le match, et le chrono s'arrête sur fautes, temps morts et sorties.",
+      "En cas d'égalité, on joue des prolongations de cinq minutes jusqu'à ce qu'il y ait un vainqueur."
+     ],
+     "q": "Pourquoi les deux dernières minutes d'un match durent-elles si longtemps, à ton avis ?",
+     "c": "Calcule la durée de jeu effective d'un match NBA et d'un match FIBA."
+    },
+    "it": {
+     "t": "Il cronometro",
+     "g": "Capisci come si misura il tempo nel basket.",
+     "p": [
+      "Ci sono quattro quarti: da 12 minuti in NBA e da 10 minuti con le regole FIBA.",
+      "L'intervallo divide la partita, e il cronometro si ferma su falli, timeout e palle fuori.",
+      "In caso di parità si giocano supplementari da cinque minuti finché qualcuno vince."
+     ],
+     "q": "Perché secondo te gli ultimi due minuti di una partita durano così tanto?",
+     "c": "Calcola quanto dura di tempo effettivo una partita NBA e una FIBA."
+    },
+    "pt": {
+     "t": "O relógio do jogo",
+     "g": "Percebe como se conta o tempo no basquetebol.",
+     "p": [
+      "Um jogo tem quatro períodos: 12 minutos cada na NBA e 10 minutos com regras FIBA.",
+      "O intervalo divide o jogo, e o relógio para em faltas, descontos de tempo e bolas fora.",
+      "Em caso de empate, jogam-se prolongamentos de cinco minutos até haver vencedor."
+     ],
+     "q": "Porque achas que os dois últimos minutos de um jogo podem durar tanto?",
+     "c": "Calcula quanto dura em tempo útil um jogo da NBA e um jogo FIBA."
+    },
+    "pt_BR": {
+     "t": "O relógio do jogo",
+     "g": "Entenda como o tempo é contado no basquete.",
+     "p": [
+      "Um jogo tem quatro quartos: 12 minutos cada na NBA e 10 minutos nas regras FIBA.",
+      "O intervalo divide o jogo, e o relógio para em faltas, pedidos de tempo e bolas fora.",
+      "Se der empate, jogam-se prorrogações de cinco minutos até alguém vencer."
+     ],
+     "q": "Por que você acha que os dois últimos minutos de um jogo podem demorar tanto?",
+     "c": "Calcule quanto dura em tempo de bola rolando um jogo da NBA e um da FIBA."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dribbling basics",
+     "g": "Learn why and how players bounce the ball.",
+     "p": [
+      "You may move with the ball only by dribbling: bouncing it with one hand at a time.",
+      "Control it with your fingertips and finger pads, not with a flat palm.",
+      "Keep your eyes up so you can see teammates and defenders, not the ball."
+     ],
+     "q": "Do you think you could dribble without looking at the ball?",
+     "c": "Dribble any ball 30 times with each hand while looking straight ahead."
+    },
+    "de": {
+     "t": "Dribbeln: die Grundlagen",
+     "g": "Lerne, warum und wie man den Ball prellt.",
+     "p": [
+      "Mit dem Ball darfst du dich nur dribbelnd bewegen, also prellend mit jeweils einer Hand.",
+      "Kontrolliere ihn mit Fingerspitzen und Fingerballen, nicht mit der flachen Handfläche.",
+      "Halte den Blick oben, um Mitspieler und Gegner zu sehen statt den Ball."
+     ],
+     "q": "Glaubst du, du könntest dribbeln, ohne auf den Ball zu schauen?",
+     "c": "Dribble einen Ball 30-mal mit jeder Hand und schau dabei geradeaus."
+    },
+    "es": {
+     "t": "Bote: lo básico",
+     "g": "Aprende por qué y cómo se bota el balón.",
+     "p": [
+      "Solo puedes avanzar con el balón botándolo, con una mano cada vez.",
+      "Contrólalo con las yemas de los dedos, no con la palma plana.",
+      "Mantén la vista arriba para ver a compañeros y rivales, no el balón."
+     ],
+     "q": "¿Crees que podrías botar sin mirar el balón?",
+     "c": "Bota cualquier pelota 30 veces con cada mano mirando al frente."
+    },
+    "fr": {
+     "t": "Les bases du dribble",
+     "g": "Apprendre pourquoi et comment on fait rebondir le ballon.",
+     "p": [
+      "On ne peut avancer avec le ballon qu'en dribblant, d'une seule main à la fois.",
+      "Contrôle-le du bout des doigts et avec la pulpe, pas avec la paume à plat.",
+      "Garde les yeux levés pour voir partenaires et défenseurs, pas le ballon."
+     ],
+     "q": "Penses-tu pouvoir dribbler sans regarder le ballon ?",
+     "c": "Dribble 30 fois de chaque main en regardant droit devant toi."
+    },
+    "it": {
+     "t": "Palleggio: le basi",
+     "g": "Impara perché e come si palleggia.",
+     "p": [
+      "Puoi muoverti con la palla solo palleggiando, con una mano alla volta.",
+      "Controllala con i polpastrelli, non con il palmo aperto.",
+      "Tieni lo sguardo alto per vedere compagni e avversari, non la palla."
+     ],
+     "q": "Pensi di riuscire a palleggiare senza guardare la palla?",
+     "c": "Palleggia 30 volte con ogni mano guardando dritto davanti a te."
+    },
+    "pt": {
+     "t": "Drible: o básico",
+     "g": "Aprende porque e como se dribla a bola.",
+     "p": [
+      "Só te podes deslocar com a bola driblando, batendo-a com uma mão de cada vez.",
+      "Controla-a com as pontas e almofadas dos dedos, não com a palma lisa.",
+      "Mantém os olhos levantados para veres colegas e adversários, não a bola."
+     ],
+     "q": "Achas que conseguias driblar sem olhar para a bola?",
+     "c": "Dribla uma bola 30 vezes com cada mão a olhar em frente."
+    },
+    "pt_BR": {
+     "t": "Drible: o básico",
+     "g": "Aprenda por que e como se quica a bola.",
+     "p": [
+      "Você só pode se deslocar com a bola driblando, quicando com uma mão de cada vez.",
+      "Controle com as pontas e as polpas dos dedos, não com a palma aberta.",
+      "Mantenha os olhos para cima para ver colegas e marcadores, não a bola."
+     ],
+     "q": "Você acha que conseguiria driblar sem olhar para a bola?",
+     "c": "Drible uma bola 30 vezes com cada mão olhando para a frente."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Traveling explained",
+     "g": "Understand the most common violation for beginners.",
+     "p": [
+      "Traveling means moving your feet illegally while holding the ball without dribbling.",
+      "Once you stop, one foot becomes the pivot foot and must stay on the floor while you turn.",
+      "Classic beginner mistakes: shuffling the pivot foot or taking an extra step before dribbling."
+     ],
+     "q": "Have you ever seen a player called for traveling and wondered why?",
+     "c": "Stand still with a ball and pivot on one foot without lifting it."
+    },
+    "de": {
+     "t": "Schrittfehler erklärt",
+     "g": "Verstehe den häufigsten Regelverstoß bei Anfängern.",
+     "p": [
+      "Ein Schrittfehler ist eine unerlaubte Fußbewegung mit dem Ball in der Hand, ohne zu dribbeln.",
+      "Nach dem Stoppen wird ein Fuß zum Standbein und muss beim Drehen am Boden bleiben.",
+      "Typische Fehler: das Standbein verschieben oder vor dem Dribbling einen Schritt zu viel machen."
+     ],
+     "q": "Hast du schon einen Schrittfehler-Pfiff gesehen und dich gefragt, warum?",
+     "c": "Steh mit einem Ball still und dreh dich auf einem Fuß, ohne ihn anzuheben."
+    },
+    "es": {
+     "t": "Los pasos, explicados",
+     "g": "Entiende la infracción más habitual entre principiantes.",
+     "p": [
+      "Hacer pasos es mover los pies de forma ilegal con el balón en las manos sin botar.",
+      "Al parar, un pie pasa a ser el pie de pivote y debe seguir en el suelo mientras giras.",
+      "Errores típicos: arrastrar el pie de pivote o dar un paso de más antes de botar."
+     ],
+     "q": "¿Has visto pitar pasos alguna vez y te preguntaste por qué?",
+     "c": "Quédate quieto con un balón y pivota sobre un pie sin levantarlo."
+    },
+    "fr": {
+     "t": "Le marcher expliqué",
+     "g": "Comprendre la violation la plus courante chez les débutants.",
+     "p": [
+      "Le marcher, c'est bouger les pieds de façon illégale avec le ballon en main, sans dribbler.",
+      "Une fois arrêté, un pied devient le pied de pivot et doit rester au sol pendant que tu tournes.",
+      "Erreurs classiques : déplacer le pied de pivot ou faire un pas de trop avant de dribbler."
+     ],
+     "q": "As-tu déjà vu siffler un marcher sans comprendre pourquoi ?",
+     "c": "Reste immobile avec un ballon et pivote sur un pied sans le soulever."
+    },
+    "it": {
+     "t": "I passi spiegati",
+     "g": "Capisci l'infrazione più comune tra i principianti.",
+     "p": [
+      "Fare passi significa muovere i piedi in modo irregolare con la palla in mano senza palleggiare.",
+      "Quando ti fermi, un piede diventa il piede perno e deve restare a terra mentre ruoti.",
+      "Errori tipici: spostare il piede perno o fare un passo di troppo prima di palleggiare."
+     ],
+     "q": "Hai mai visto fischiare passi chiedendoti il perché?",
+     "c": "Stai fermo con una palla e ruota su un piede senza sollevarlo."
+    },
+    "pt": {
+     "t": "Passos explicados",
+     "g": "Percebe a violação mais comum entre principiantes.",
+     "p": [
+      "Fazer passos é mexer os pés de forma ilegal com a bola na mão sem driblar.",
+      "Quando paras, um pé passa a ser o pé de pivô e tem de ficar no chão enquanto rodas.",
+      "Erros típicos: arrastar o pé de pivô ou dar um passo a mais antes de driblar."
+     ],
+     "q": "Já viste apitarem passos e ficaste sem perceber porquê?",
+     "c": "Fica parado com uma bola e roda sobre um pé sem o levantar."
+    },
+    "pt_BR": {
+     "t": "Andada explicada",
+     "g": "Entenda a violação mais comum entre iniciantes.",
+     "p": [
+      "Andada é mexer os pés de forma irregular com a bola nas mãos sem driblar.",
+      "Ao parar, um pé vira o pé de pivô e precisa ficar no chão enquanto você gira.",
+      "Erros típicos: arrastar o pé de pivô ou dar um passo a mais antes de driblar."
+     ],
+     "q": "Você já viu marcarem andada e ficou sem entender por quê?",
+     "c": "Fique parado com uma bola e gire sobre um pé sem tirá-lo do chão."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Double dribble and carrying",
+     "g": "Learn two classic ball-handling violations.",
+     "p": [
+      "Double dribble: dribbling with both hands at once, or dribbling again after you stopped.",
+      "Carrying, or palming: letting the ball rest in your hand and turning it over mid-dribble.",
+      "Referees watch the hand: it should push down on top of the ball, not scoop under it."
+     ],
+     "q": "Which violation do you think is easier to commit by accident?",
+     "c": "Dribble slowly and keep your hand on top of the ball for one full minute."
+    },
+    "de": {
+     "t": "Doppeldribbling und Tragen",
+     "g": "Lerne zwei klassische Regelverstöße beim Dribbeln kennen.",
+     "p": [
+      "Doppeldribbling: mit beiden Händen gleichzeitig dribbeln oder nach dem Stoppen erneut dribbeln.",
+      "Tragen: den Ball beim Dribbeln in der Hand ruhen lassen und ihn umdrehen.",
+      "Schiedsrichter achten auf die Hand: Sie drückt von oben auf den Ball, nicht von unten."
+     ],
+     "q": "Welcher Fehler passiert deiner Meinung nach leichter aus Versehen?",
+     "c": "Dribble eine Minute langsam und halte die Hand dabei immer oben auf dem Ball."
+    },
+    "es": {
+     "t": "Dobles y conducción",
+     "g": "Aprende dos infracciones clásicas al manejar el balón.",
+     "p": [
+      "Dobles: botar con las dos manos a la vez o volver a botar después de haber parado.",
+      "Conducción, o acompañar: dejar el balón en la mano y darle la vuelta mientras botas.",
+      "Los árbitros miran la mano: debe empujar el balón desde arriba, no recogerlo por debajo."
+     ],
+     "q": "¿Qué infracción crees que es más fácil cometer sin querer?",
+     "c": "Bota despacio durante un minuto con la mano siempre encima del balón."
+    },
+    "fr": {
+     "t": "Reprise de dribble et portée",
+     "g": "Apprendre deux violations classiques du dribble.",
+     "p": [
+      "Reprise de dribble : dribbler à deux mains ou redribbler après s'être arrêté.",
+      "Le ballon porté : laisser le ballon reposer dans la main et le retourner pendant le dribble.",
+      "Les arbitres regardent la main : elle pousse le ballon par le dessus, sans passer dessous."
+     ],
+     "q": "Quelle violation te semble la plus facile à commettre sans le vouloir ?",
+     "c": "Dribble lentement pendant une minute, la main toujours sur le dessus du ballon."
+    },
+    "it": {
+     "t": "Doppio palleggio ed accompagnata",
+     "g": "Impara due classiche infrazioni nel palleggio.",
+     "p": [
+      "Doppio palleggio: palleggiare con due mani insieme o ripartire in palleggio dopo essersi fermati.",
+      "Accompagnata: lasciare la palla ferma nella mano e girarla durante il palleggio.",
+      "Gli arbitri guardano la mano: deve spingere la palla dall'alto, non raccoglierla da sotto."
+     ],
+     "q": "Quale infrazione pensi sia più facile commettere per sbaglio?",
+     "c": "Palleggia piano per un minuto tenendo sempre la mano sopra la palla."
+    },
+    "pt": {
+     "t": "Dupla dribla e transporte",
+     "g": "Aprende duas violações clássicas no drible.",
+     "p": [
+      "Dupla dribla: driblar com as duas mãos ao mesmo tempo ou voltar a driblar depois de parar.",
+      "Transporte de bola: deixar a bola pousar na mão e virá-la durante o drible.",
+      "Os árbitros olham para a mão: deve empurrar a bola por cima, não apanhá-la por baixo."
+     ],
+     "q": "Que violação achas mais fácil de cometer sem querer?",
+     "c": "Dribla devagar durante um minuto com a mão sempre por cima da bola."
+    },
+    "pt_BR": {
+     "t": "Drible duplo e condução",
+     "g": "Aprenda duas violações clássicas no drible.",
+     "p": [
+      "Drible duplo: driblar com as duas mãos juntas ou voltar a driblar depois de parar.",
+      "Condução de bola: deixar a bola parar na mão e virá-la durante o drible.",
+      "Os árbitros olham a mão: ela empurra a bola por cima, sem pegar por baixo."
+     ],
+     "q": "Qual violação você acha mais fácil de cometer sem querer?",
+     "c": "Drible devagar por um minuto com a mão sempre em cima da bola."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Passing fundamentals",
+     "g": "Learn the three basic passes and when to use them.",
+     "p": [
+      "Chest pass: two hands, straight from your chest to your teammate's chest, fast and flat.",
+      "Bounce pass: aim about two-thirds of the way to your teammate so it bounces up to their waist.",
+      "Overhead pass: from above your head, great for passing over a defender or starting a fast break."
+     ],
+     "q": "Which pass do you think is hardest for a defender to steal?",
+     "c": "Throw ten chest passes against a wall and catch each one cleanly."
+    },
+    "de": {
+     "t": "Grundlagen des Passens",
+     "g": "Lerne die drei Grundpässe und wann du sie einsetzt.",
+     "p": [
+      "Brustpass: beidhändig, gerade von deiner Brust zur Brust des Mitspielers, schnell und flach.",
+      "Bodenpass: Ziel etwa auf zwei Drittel des Weges, damit der Ball bis zur Hüfte hochspringt.",
+      "Überkopfpass: von über dem Kopf, ideal über einen Verteidiger oder für einen Schnellangriff."
+     ],
+     "q": "Welcher Pass ist für Verteidiger wohl am schwersten abzufangen?",
+     "c": "Spiel zehn Brustpässe gegen eine Wand und fang jeden sauber."
+    },
+    "es": {
+     "t": "Fundamentos del pase",
+     "g": "Aprende los tres pases básicos y cuándo usar cada uno.",
+     "p": [
+      "Pase de pecho: a dos manos, recto de tu pecho al pecho del compañero, rápido y tenso.",
+      "Pase picado: apunta a unos dos tercios de distancia para que bote hasta su cintura.",
+      "Pase por encima de la cabeza: ideal para superar a un defensor o iniciar un contraataque."
+     ],
+     "q": "¿Qué pase crees que es más difícil de robar para un defensor?",
+     "c": "Lanza diez pases de pecho contra una pared y atrapa cada uno con limpieza."
+    },
+    "fr": {
+     "t": "Les bases de la passe",
+     "g": "Apprendre les trois passes de base et quand les utiliser.",
+     "p": [
+      "Passe poitrine à deux mains : de ta poitrine à celle du partenaire, rapide et tendue.",
+      "Passe à rebond : vise aux deux tiers du trajet pour que le ballon remonte à sa taille.",
+      "Passe au-dessus de la tête : idéale pour passer un défenseur ou lancer une contre-attaque."
+     ],
+     "q": "Quelle passe est la plus difficile à intercepter, selon toi ?",
+     "c": "Fais dix passes à deux mains contre un mur et rattrape chaque ballon proprement."
+    },
+    "it": {
+     "t": "I fondamentali del passaggio",
+     "g": "Impara i tre passaggi base e quando usarli.",
+     "p": [
+      "Passaggio a due mani dal petto: dritto dal tuo petto a quello del compagno, veloce e teso.",
+      "Passaggio battuto a terra: mira a circa due terzi della distanza, così rimbalza fino alla vita.",
+      "Passaggio sopra la testa: ottimo per superare un difensore o lanciare un contropiede."
+     ],
+     "q": "Quale passaggio pensi sia più difficile da rubare?",
+     "c": "Fai dieci passaggi dal petto contro un muro e riprendi ogni palla pulita."
+    },
+    "pt": {
+     "t": "Fundamentos do passe",
+     "g": "Aprende os três passes básicos e quando usá-los.",
+     "p": [
+      "Passe de peito: com as duas mãos, direto do teu peito ao do colega, rápido e tenso.",
+      "Passe picado: aponta a cerca de dois terços da distância para a bola subir até à cintura dele.",
+      "Passe por cima da cabeça: ótimo para passar por cima de um defensor ou lançar um contra-ataque."
+     ],
+     "q": "Que passe achas mais difícil de roubar para um defensor?",
+     "c": "Faz dez passes de peito contra uma parede e apanha cada um com limpeza."
+    },
+    "pt_BR": {
+     "t": "Fundamentos do passe",
+     "g": "Aprenda os três passes básicos e quando usar cada um.",
+     "p": [
+      "Passe de peito: com as duas mãos, reto do seu peito ao peito do colega, rápido e firme.",
+      "Passe quicado: mire a uns dois terços da distância para a bola subir até a cintura dele.",
+      "Passe por cima da cabeça: ótimo para passar por cima do marcador ou iniciar um contra-ataque."
+     ],
+     "q": "Qual passe você acha mais difícil de o marcador roubar?",
+     "c": "Faça dez passes de peito contra uma parede e segure cada um com firmeza."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 111,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Island and mountain cultures",
+     "g": "See how geography shapes customs in remote islands and high mountains.",
+     "p": [
+      "On islands the sea shapes daily life: fishing, boats, seafood dishes and a strong habit of sharing scarce resources.",
+      "In mountain villages people built terraces, kept animals like yaks or goats and developed warm clothing and hearty food.",
+      "Remote places often keep old dialects, crafts and songs alive because they were less connected to the outside world."
+     ],
+     "q": "Do you know a place where geography has shaped the local way of life?",
+     "c": "Think of one custom where you live and ask yourself how the landscape or climate may have shaped it."
+    },
+    "de": {
+     "t": "Insel- und Bergkulturen",
+     "g": "Sieh, wie die Geografie Bräuche auf abgelegenen Inseln und in hohen Bergen prägt.",
+     "p": [
+      "Auf Inseln bestimmt das Meer den Alltag: Fischfang, Boote, Gerichte mit Meeresfrüchten und das Teilen knapper Ressourcen.",
+      "In Bergdörfern legte man Terrassen an, hielt Tiere wie Yaks oder Ziegen und entwickelte warme Kleidung und deftiges Essen.",
+      "Abgelegene Orte bewahren oft alte Dialekte, Handwerk und Lieder, weil sie weniger mit der Außenwelt verbunden waren."
+     ],
+     "q": "Kennst du einen Ort, an dem die Geografie die Lebensweise geprägt hat?",
+     "c": "Denk an einen Brauch bei dir und überlege, wie Landschaft oder Klima ihn geprägt haben könnten."
+    },
+    "es": {
+     "t": "Culturas de islas y montañas",
+     "g": "Mira cómo la geografía da forma a las costumbres en islas remotas y altas montañas.",
+     "p": [
+      "En las islas el mar marca la vida diaria: pesca, barcas, platos de mar y la costumbre de compartir recursos escasos.",
+      "En los pueblos de montaña se construyeron terrazas, se criaron animales como yaks o cabras y se crearon ropa abrigada y comida contundente.",
+      "Los lugares remotos suelen conservar dialectos, oficios y canciones antiguos porque estaban menos conectados con el exterior."
+     ],
+     "q": "¿Conoces algún lugar donde la geografía haya marcado la forma de vida local?",
+     "c": "Piensa en una costumbre de donde vives y pregúntate cómo el paisaje o el clima pudieron influir en ella."
+    },
+    "fr": {
+     "t": "Cultures des îles et des montagnes",
+     "g": "Vois comment la géographie façonne les coutumes des îles isolées et des hautes montagnes.",
+     "p": [
+      "Sur les îles, la mer rythme la vie : pêche, bateaux, plats de la mer et habitude de partager des ressources rares.",
+      "Dans les villages de montagne, on a bâti des terrasses, élevé yaks ou chèvres et créé vêtements chauds et plats copieux.",
+      "Les lieux isolés gardent souvent dialectes, artisanats et chants anciens, car ils étaient moins reliés au monde extérieur."
+     ],
+     "q": "Connais-tu un lieu où la géographie a façonné le mode de vie local ?",
+     "c": "Pense à une coutume de chez toi et demande-toi comment le paysage ou le climat a pu la façonner."
+    },
+    "it": {
+     "t": "Culture delle isole e delle montagne",
+     "g": "Scopri come la geografia plasma le usanze di isole remote e alte montagne.",
+     "p": [
+      "Sulle isole il mare scandisce la vita: pesca, barche, piatti di mare e l'abitudine di condividere risorse scarse.",
+      "Nei villaggi di montagna si sono costruite terrazze, allevati animali come yak o capre e creati abiti caldi e cibi sostanziosi.",
+      "I luoghi remoti conservano spesso dialetti, mestieri e canti antichi, perché erano meno collegati al mondo esterno."
+     ],
+     "q": "Conosci un luogo in cui la geografia ha dato forma allo stile di vita locale?",
+     "c": "Pensa a un'usanza del posto in cui vivi e chiediti come il paesaggio o il clima possano averla plasmata."
+    },
+    "pt": {
+     "t": "Culturas de ilhas e montanhas",
+     "g": "Vê como a geografia molda os costumes em ilhas remotas e altas montanhas.",
+     "p": [
+      "Nas ilhas o mar marca o dia a dia: pesca, barcos, pratos de peixe e marisco e o hábito de partilhar recursos escassos.",
+      "Nas aldeias de montanha construíram-se socalcos, criaram-se animais como iaques ou cabras e surgiram roupas quentes e comida farta.",
+      "Os lugares remotos guardam muitas vezes dialetos, ofícios e canções antigos, por estarem menos ligados ao mundo exterior."
+     ],
+     "q": "Conheces algum lugar onde a geografia moldou o modo de vida local?",
+     "c": "Pensa num costume da tua terra e pergunta-te como a paisagem ou o clima o podem ter moldado."
+    },
+    "pt_BR": {
+     "t": "Culturas de ilhas e montanhas",
+     "g": "Veja como a geografia molda os costumes em ilhas remotas e altas montanhas.",
+     "p": [
+      "Nas ilhas o mar marca o dia a dia: pesca, barcos, pratos de frutos do mar e o hábito de compartilhar recursos escassos.",
+      "Nas vilas de montanha foram construídos terraços, criados animais como iaques ou cabras e surgiram roupas quentes e comida farta.",
+      "Os lugares remotos muitas vezes guardam dialetos, ofícios e canções antigos, por serem menos ligados ao mundo de fora."
+     ],
+     "q": "Você conhece algum lugar onde a geografia moldou o jeito de viver local?",
+     "c": "Pense num costume da sua região e se pergunte como a paisagem ou o clima podem tê-lo moldado."
+    }
+   }
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "City life versus village life",
+     "g": "Compare how customs differ between big cities and rural communities.",
+     "p": [
+      "In big cities life is fast, with many cultures side by side, endless choice and often less time to chat with neighbours.",
+      "In villages people often know each other by name, help with harvests and celebrations, and follow the rhythm of seasons.",
+      "Many people move between both worlds, living in the city but returning to a family village for holidays and festivals."
+     ],
+     "q": "Do you prefer city life or village life? What do you love about it?",
+     "c": "Notice one thing today that makes your place feel like a city or like a village."
+    },
+    "de": {
+     "t": "Stadtleben und Dorfleben",
+     "g": "Vergleiche, wie sich Bräuche in großen Städten und ländlichen Gemeinschaften unterscheiden.",
+     "p": [
+      "In Großstädten ist das Leben schnell, viele Kulturen leben nebeneinander, es gibt endlose Auswahl und oft wenig Zeit für Nachbarn.",
+      "Im Dorf kennt man sich oft beim Namen, hilft bei Ernte und Festen und lebt im Rhythmus der Jahreszeiten.",
+      "Viele bewegen sich zwischen beiden Welten: Sie leben in der Stadt und kehren zu Feiertagen ins Heimatdorf der Familie zurück."
+     ],
+     "q": "Magst du lieber das Stadtleben oder das Dorfleben? Was gefällt dir daran?",
+     "c": "Achte heute auf eine Sache, durch die sich dein Wohnort wie eine Stadt oder wie ein Dorf anfühlt."
+    },
+    "es": {
+     "t": "Vida en la ciudad y vida en el pueblo",
+     "g": "Compara cómo cambian las costumbres entre las grandes ciudades y las comunidades rurales.",
+     "p": [
+      "En las grandes ciudades la vida es rápida, con muchas culturas juntas, opciones sin fin y a menudo poco tiempo para los vecinos.",
+      "En los pueblos la gente suele conocerse por su nombre, ayuda en cosechas y fiestas, y vive al ritmo de las estaciones.",
+      "Mucha gente vive entre ambos mundos: reside en la ciudad pero vuelve al pueblo familiar en vacaciones y fiestas."
+     ],
+     "q": "¿Prefieres la vida en la ciudad o en el pueblo? ¿Qué te encanta de ella?",
+     "c": "Fíjate hoy en algo que haga que tu lugar se sienta como una ciudad o como un pueblo."
+    },
+    "fr": {
+     "t": "Vie en ville et vie au village",
+     "g": "Compare les coutumes des grandes villes et celles des communautés rurales.",
+     "p": [
+      "En ville, la vie est rapide, avec beaucoup de cultures côte à côte, un choix infini et souvent peu de temps pour les voisins.",
+      "Au village, on se connaît souvent par son prénom, on s'entraide pour les récoltes et les fêtes, au rythme des saisons.",
+      "Beaucoup vivent entre les deux mondes : en ville toute l'année, puis au village familial pour les vacances et les fêtes."
+     ],
+     "q": "Préfères-tu la vie en ville ou au village ? Qu'est-ce que tu y aimes ?",
+     "c": "Remarque aujourd'hui un détail qui donne à ton lieu de vie un air de ville ou de village."
+    },
+    "it": {
+     "t": "Vita in città e vita di paese",
+     "g": "Confronta come cambiano le usanze tra grandi città e comunità rurali.",
+     "p": [
+      "Nelle grandi città la vita è veloce, con tante culture fianco a fianco, scelte infinite e spesso poco tempo per i vicini.",
+      "Nei paesi ci si conosce spesso per nome, ci si aiuta per raccolti e feste e si vive al ritmo delle stagioni.",
+      "Molti vivono tra due mondi: abitano in città ma tornano al paese di famiglia per le vacanze e le feste."
+     ],
+     "q": "Preferisci la vita in città o quella di paese? Cosa ti piace di più?",
+     "c": "Nota oggi una cosa che fa sembrare il posto in cui vivi una città o un paese."
+    },
+    "pt": {
+     "t": "Vida na cidade e vida na aldeia",
+     "g": "Compara como os costumes mudam entre as grandes cidades e as comunidades rurais.",
+     "p": [
+      "Nas grandes cidades a vida é rápida, com muitas culturas lado a lado, escolhas sem fim e muitas vezes pouco tempo para os vizinhos.",
+      "Nas aldeias as pessoas conhecem-se pelo nome, ajudam nas colheitas e nas festas e vivem ao ritmo das estações.",
+      "Muita gente vive entre os dois mundos: mora na cidade mas volta à aldeia da família nas férias e nas festas."
+     ],
+     "q": "Preferes a vida na cidade ou na aldeia? Do que gostas mais?",
+     "c": "Repara hoje numa coisa que faz o teu lugar parecer uma cidade ou uma aldeia."
+    },
+    "pt_BR": {
+     "t": "Vida na cidade e vida no interior",
+     "g": "Compare como os costumes mudam entre as grandes cidades e as comunidades rurais.",
+     "p": [
+      "Nas grandes cidades a vida é corrida, com muitas culturas lado a lado, opções sem fim e muitas vezes pouco tempo para os vizinhos.",
+      "No interior as pessoas costumam se conhecer pelo nome, ajudam nas colheitas e nas festas e vivem no ritmo das estações.",
+      "Muita gente vive entre os dois mundos: mora na cidade, mas volta à cidadezinha da família nas férias e nas festas."
+     ],
+     "q": "Você prefere a vida na cidade ou no interior? Do que mais gosta?",
+     "c": "Repare hoje em algo que faz o seu lugar parecer uma cidade grande ou uma cidade do interior."
+    }
+   }
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Languages and cultures",
+     "g": "Explore how the language people speak can shape what they notice.",
+     "p": [
+      "Some Aboriginal Australian languages, like Guugu Yimithirr, use north, south, east and west instead of left and right.",
+      "Languages divide colours differently: Russian, for example, has separate everyday words for light blue and dark blue.",
+      "Many languages, like Korean and Japanese, build politeness into grammar, so speakers constantly notice age and social roles."
+     ],
+     "q": "Does your language have a word or habit that makes you notice something others might miss?",
+     "c": "Pay attention today to one word in your language that has no simple equivalent in another."
+    },
+    "de": {
+     "t": "Sprachen und Kulturen",
+     "g": "Erkunde, wie die Sprache, die wir sprechen, beeinflussen kann, was wir wahrnehmen.",
+     "p": [
+      "Manche Sprachen der Aborigines, wie Guugu Yimithirr, nutzen Norden, Süden, Osten und Westen statt links und rechts.",
+      "Sprachen teilen Farben verschieden ein: Russisch hat zum Beispiel eigene Alltagswörter für Hellblau und Dunkelblau.",
+      "Viele Sprachen, wie Koreanisch und Japanisch, bauen Höflichkeit in die Grammatik ein, sodass man ständig Alter und Rollen beachtet."
+     ],
+     "q": "Hat deine Sprache ein Wort oder eine Gewohnheit, durch die du etwas bemerkst, das anderen entgehen könnte?",
+     "c": "Achte heute auf ein Wort deiner Sprache, das in einer anderen keine einfache Entsprechung hat."
+    },
+    "es": {
+     "t": "Lenguas y culturas",
+     "g": "Explora cómo la lengua que hablamos puede influir en lo que notamos.",
+     "p": [
+      "Algunas lenguas aborígenes australianas, como el guugu yimithirr, usan norte, sur, este y oeste en lugar de izquierda y derecha.",
+      "Las lenguas dividen los colores de forma distinta: el ruso, por ejemplo, tiene palabras propias para azul claro y azul oscuro.",
+      "Muchas lenguas, como el coreano y el japonés, integran la cortesía en la gramática, así que se presta atención a la edad y los roles."
+     ],
+     "q": "¿Tiene tu lengua alguna palabra o costumbre que te haga notar algo que otros podrían pasar por alto?",
+     "c": "Fíjate hoy en una palabra de tu lengua que no tenga un equivalente sencillo en otra."
+    },
+    "fr": {
+     "t": "Langues et cultures",
+     "g": "Explore comment la langue que l'on parle peut influencer ce que l'on remarque.",
+     "p": [
+      "Certaines langues aborigènes d'Australie, comme le guugu yimithirr, disent nord, sud, est et ouest au lieu de gauche et droite.",
+      "Les langues découpent les couleurs autrement : le russe, par exemple, a des mots distincts pour le bleu clair et le bleu foncé.",
+      "Des langues comme le coréen et le japonais intègrent la politesse dans la grammaire, attentive à l'âge et aux rôles."
+     ],
+     "q": "Ta langue a-t-elle un mot ou une habitude qui te fait remarquer ce que d'autres pourraient manquer ?",
+     "c": "Repère aujourd'hui un mot de ta langue qui n'a pas d'équivalent simple dans une autre."
+    },
+    "it": {
+     "t": "Lingue e culture",
+     "g": "Esplora come la lingua che parliamo può influenzare ciò che notiamo.",
+     "p": [
+      "Alcune lingue aborigene australiane, come il guugu yimithirr, usano nord, sud, est e ovest al posto di destra e sinistra.",
+      "Le lingue dividono i colori in modo diverso: il russo, per esempio, ha parole distinte per l'azzurro e il blu scuro.",
+      "Molte lingue, come il coreano e il giapponese, inseriscono la cortesia nella grammatica, attenta all'età e ai ruoli sociali."
+     ],
+     "q": "La tua lingua ha una parola o un'abitudine che ti fa notare qualcosa che ad altri potrebbe sfuggire?",
+     "c": "Fai caso oggi a una parola della tua lingua che non ha un equivalente semplice in un'altra."
+    },
+    "pt": {
+     "t": "Línguas e culturas",
+     "g": "Explora como a língua que falamos pode influenciar aquilo que reparamos.",
+     "p": [
+      "Algumas línguas aborígenes australianas, como o guugu yimithirr, usam norte, sul, leste e oeste em vez de esquerda e direita.",
+      "As línguas dividem as cores de forma diferente: o russo, por exemplo, tem palavras próprias para azul-claro e azul-escuro.",
+      "Muitas línguas, como o coreano e o japonês, põem a cortesia na gramática, atenta à idade e aos papéis sociais."
+     ],
+     "q": "A tua língua tem alguma palavra ou hábito que te faça reparar em algo que outros poderiam não ver?",
+     "c": "Repara hoje numa palavra da tua língua que não tenha um equivalente simples noutra."
+    },
+    "pt_BR": {
+     "t": "Línguas e culturas",
+     "g": "Explore como a língua que falamos pode influenciar aquilo que percebemos.",
+     "p": [
+      "Algumas línguas aborígenes australianas, como o guugu yimithirr, usam norte, sul, leste e oeste em vez de esquerda e direita.",
+      "As línguas dividem as cores de jeitos diferentes: o russo, por exemplo, tem palavras próprias para azul-claro e azul-escuro.",
+      "Muitas línguas, como o coreano e o japonês, colocam a cortesia na gramática, atenta à idade e aos papéis sociais."
+     ],
+     "q": "A sua língua tem alguma palavra ou hábito que faz você perceber algo que outros poderiam não notar?",
+     "c": "Repare hoje numa palavra da sua língua que não tem um equivalente simples em outra."
+    }
+   }
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Untranslatable words",
+     "g": "Discover words like hygge, saudade and ikigai that capture something special about a culture.",
+     "p": [
+      "Ikigai in Japanese means a reason for being, the thing that makes you want to get up in the morning.",
+      "Gezellig in Dutch describes a cosy, friendly atmosphere, and sobremesa in Spanish is the relaxed talk after a meal.",
+      "Saudade in Portuguese and hygge in Danish, which you met earlier, also show feelings a single word can hold."
+     ],
+     "q": "Which word from your language would you love the rest of the world to learn?",
+     "c": "Teach one untranslatable word from your language, or from this lesson, to someone today."
+    },
+    "de": {
+     "t": "Unübersetzbare Wörter",
+     "g": "Entdecke Wörter wie Hygge, Saudade und Ikigai, die etwas Besonderes einer Kultur einfangen.",
+     "p": [
+      "Ikigai bedeutet im Japanischen Lebenssinn, das, wofür man morgens gern aufsteht.",
+      "Gezellig beschreibt im Niederländischen eine gemütliche, freundliche Atmosphäre, und Sobremesa im Spanischen das Plaudern nach dem Essen.",
+      "Saudade auf Portugiesisch und Hygge auf Dänisch, die du schon kennst, zeigen ebenfalls Gefühle, die ein einziges Wort fassen kann."
+     ],
+     "q": "Welches Wort aus deiner Sprache sollte die ganze Welt lernen?",
+     "c": "Bring heute jemandem ein unübersetzbares Wort bei, aus deiner Sprache oder aus dieser Lektion."
+    },
+    "es": {
+     "t": "Palabras intraducibles",
+     "g": "Descubre palabras como hygge, saudade e ikigai, que capturan algo especial de una cultura.",
+     "p": [
+      "Ikigai en japonés significa una razón de ser, aquello que te da ganas de levantarte por la mañana.",
+      "Gezellig en neerlandés describe un ambiente acogedor y amistoso, y la sobremesa es la charla tranquila después de comer.",
+      "La saudade portuguesa y el hygge danés, que ya conociste, también muestran sentimientos que caben en una sola palabra."
+     ],
+     "q": "¿Qué palabra de tu lengua te encantaría que aprendiera el resto del mundo?",
+     "c": "Enseña hoy a alguien una palabra intraducible de tu lengua o de esta lección."
+    },
+    "fr": {
+     "t": "Mots intraduisibles",
+     "g": "Découvre des mots comme hygge, saudade et ikigai, qui saisissent quelque chose de spécial d'une culture.",
+     "p": [
+      "Ikigai, en japonais, signifie une raison d'être, ce qui donne envie de se lever le matin.",
+      "Gezellig, en néerlandais, décrit une ambiance douillette et conviviale, et sobremesa, en espagnol, la discussion après le repas.",
+      "La saudade portugaise et le hygge danois, déjà vus, montrent aussi des sentiments qu'un seul mot peut contenir."
+     ],
+     "q": "Quel mot de ta langue aimerais-tu que le monde entier apprenne ?",
+     "c": "Apprends aujourd'hui à quelqu'un un mot intraduisible de ta langue ou de cette leçon."
+    },
+    "it": {
+     "t": "Parole intraducibili",
+     "g": "Scopri parole come hygge, saudade e ikigai, che catturano qualcosa di speciale di una cultura.",
+     "p": [
+      "Ikigai in giapponese significa ragione di vita, ciò che ti fa venire voglia di alzarti al mattino.",
+      "Gezellig in olandese descrive un'atmosfera accogliente e cordiale, e sobremesa in spagnolo è la chiacchierata dopo il pasto.",
+      "La saudade portoghese e l'hygge danese, che hai già incontrato, mostrano anch'esse sentimenti racchiusi in una sola parola."
+     ],
+     "q": "Quale parola della tua lingua vorresti che il resto del mondo imparasse?",
+     "c": "Insegna oggi a qualcuno una parola intraducibile della tua lingua o di questa lezione."
+    },
+    "pt": {
+     "t": "Palavras intraduzíveis",
+     "g": "Descobre palavras como hygge, saudade e ikigai, que captam algo especial de uma cultura.",
+     "p": [
+      "Ikigai em japonês significa uma razão de ser, aquilo que nos dá vontade de nos levantarmos de manhã.",
+      "Gezellig em neerlandês descreve um ambiente acolhedor e amigável, e sobremesa em espanhol é a conversa calma depois da refeição.",
+      "A saudade portuguesa e o hygge dinamarquês, que já conheceste, também mostram sentimentos que cabem numa só palavra."
+     ],
+     "q": "Que palavra da tua língua adoravas que o resto do mundo aprendesse?",
+     "c": "Ensina hoje a alguém uma palavra intraduzível da tua língua ou desta lição."
+    },
+    "pt_BR": {
+     "t": "Palavras intraduzíveis",
+     "g": "Descubra palavras como hygge, saudade e ikigai, que capturam algo especial de uma cultura.",
+     "p": [
+      "Ikigai em japonês significa uma razão de ser, aquilo que dá vontade de levantar de manhã.",
+      "Gezellig em holandês descreve um clima aconchegante e amigável, e sobremesa em espanhol é o papo tranquilo depois da refeição.",
+      "A saudade portuguesa e o hygge dinamarquês, que você já conheceu, também mostram sentimentos que cabem numa só palavra."
+     ],
+     "q": "Que palavra da sua língua você adoraria que o resto do mundo aprendesse?",
+     "c": "Ensine hoje a alguém uma palavra intraduzível da sua língua ou desta lição."
+    }
+   }
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing systems of the world",
+     "g": "Learn how alphabets, syllabaries and characters work.",
+     "p": [
+      "Alphabets like Latin, Greek and Cyrillic use letters for single sounds, while Arabic and Hebrew are written from right to left.",
+      "Syllabaries use one sign per syllable, like Japanese hiragana and katakana, which are used together with kanji.",
+      "Chinese characters represent words or meanings, and Korean hangul, created in the 15th century, groups letters into syllable blocks."
+     ],
+     "q": "Which writing system would you most like to learn to read?",
+     "c": "Try writing your name today in another script, such as Greek, Cyrillic, Japanese katakana or Korean hangul."
+    },
+    "de": {
+     "t": "Schriftsysteme der Welt",
+     "g": "Lerne, wie Alphabete, Silbenschriften und Schriftzeichen funktionieren.",
+     "p": [
+      "Lateinische, griechische und kyrillische Buchstaben stehen für einzelne Laute, Arabisch und Hebräisch schreibt man von rechts nach links.",
+      "Silbenschriften nutzen ein Zeichen pro Silbe, wie die japanischen Hiragana und Katakana, die zusammen mit Kanji verwendet werden.",
+      "Chinesische Zeichen stehen für Wörter oder Bedeutungen, und das koreanische Hangul aus dem 15. Jahrhundert bildet Silbenblöcke."
+     ],
+     "q": "Welches Schriftsystem würdest du am liebsten lesen lernen?",
+     "c": "Versuche heute, deinen Namen in einer anderen Schrift zu schreiben, etwa Griechisch, Kyrillisch, Katakana oder Hangul."
+    },
+    "es": {
+     "t": "Sistemas de escritura del mundo",
+     "g": "Aprende cómo funcionan los alfabetos, los silabarios y los caracteres.",
+     "p": [
+      "Los alfabetos latino, griego y cirílico usan letras para sonidos sueltos, y el árabe y el hebreo se escriben de derecha a izquierda.",
+      "Los silabarios usan un signo por sílaba, como el hiragana y el katakana japoneses, que se usan junto con los kanji.",
+      "Los caracteres chinos representan palabras o significados, y el hangul coreano, creado en el siglo XV, agrupa letras en bloques silábicos."
+     ],
+     "q": "¿Qué sistema de escritura te gustaría más aprender a leer?",
+     "c": "Prueba hoy a escribir tu nombre en otra escritura, como el griego, el cirílico, el katakana japonés o el hangul coreano."
+    },
+    "fr": {
+     "t": "Les systèmes d'écriture du monde",
+     "g": "Découvre comment fonctionnent les alphabets, les syllabaires et les caractères.",
+     "p": [
+      "Les alphabets latin, grec et cyrillique notent des sons isolés, tandis que l'arabe et l'hébreu s'écrivent de droite à gauche.",
+      "Les syllabaires ont un signe par syllabe, comme les hiragana et katakana japonais, utilisés avec les kanji.",
+      "Les caractères chinois notent des mots ou des sens, et le hangul coréen, créé au XVe siècle, groupe les lettres en blocs syllabiques."
+     ],
+     "q": "Quel système d'écriture aimerais-tu le plus apprendre à lire ?",
+     "c": "Essaie aujourd'hui d'écrire ton prénom dans une autre écriture : grec, cyrillique, katakana japonais ou hangul coréen."
+    },
+    "it": {
+     "t": "I sistemi di scrittura del mondo",
+     "g": "Scopri come funzionano alfabeti, sillabari e caratteri.",
+     "p": [
+      "Alfabeti come il latino, il greco e il cirillico usano lettere per singoli suoni, mentre arabo ed ebraico si scrivono da destra a sinistra.",
+      "I sillabari usano un segno per sillaba, come l'hiragana e il katakana giapponesi, usati insieme ai kanji.",
+      "I caratteri cinesi rappresentano parole o significati, e l'hangul coreano, creato nel XV secolo, raggruppa le lettere in blocchi sillabici."
+     ],
+     "q": "Quale sistema di scrittura vorresti di più imparare a leggere?",
+     "c": "Prova oggi a scrivere il tuo nome in un'altra scrittura, come il greco, il cirillico, il katakana giapponese o l'hangul coreano."
+    },
+    "pt": {
+     "t": "Sistemas de escrita do mundo",
+     "g": "Aprende como funcionam os alfabetos, os silabários e os caracteres.",
+     "p": [
+      "Alfabetos como o latino, o grego e o cirílico usam letras para sons isolados, e o árabe e o hebraico escrevem-se da direita para a esquerda.",
+      "Os silabários usam um sinal por sílaba, como o hiragana e o katakana japoneses, usados em conjunto com os kanji.",
+      "Os caracteres chineses representam palavras ou significados, e o hangul coreano, criado no século XV, agrupa letras em blocos silábicos."
+     ],
+     "q": "Que sistema de escrita gostavas mais de aprender a ler?",
+     "c": "Experimenta hoje escrever o teu nome noutra escrita, como o grego, o cirílico, o katakana japonês ou o hangul coreano."
+    },
+    "pt_BR": {
+     "t": "Sistemas de escrita do mundo",
+     "g": "Aprenda como funcionam os alfabetos, os silabários e os caracteres.",
+     "p": [
+      "Os alfabetos latino, grego e cirílico usam letras para sons isolados, e o árabe e o hebraico são escritos da direita para a esquerda.",
+      "Os silabários usam um sinal por sílaba, como o hiragana e o katakana japoneses, usados junto com os kanji.",
+      "Os caracteres chineses representam palavras ou significados, e o hangul coreano, criado no século XV, agrupa letras em blocos silábicos."
+     ],
+     "q": "Qual sistema de escrita você mais gostaria de aprender a ler?",
+     "c": "Experimente hoje escrever seu nome em outra escrita, como o grego, o cirílico, o katakana japonês ou o hangul coreano."
+    }
+   }
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "School life around the world",
+     "g": "Compare school days, uniforms, lunches and holidays in different countries.",
+     "p": [
+      "In Japan pupils often clean their classrooms together, a habit that teaches responsibility and teamwork.",
+      "School uniforms are common in places like the UK, Japan, India and Brazil, while in many other countries pupils wear their own clothes.",
+      "In France the school lunch is a proper sit-down meal, and summer holidays range from a few weeks to about three months by country."
+     ],
+     "q": "What do you remember most about school days, or what is school like for you now?",
+     "c": "Share one memory or fact about your school life with someone today."
+    },
+    "de": {
+     "t": "Schulleben weltweit",
+     "g": "Vergleiche Schultage, Uniformen, Mittagessen und Ferien in verschiedenen Ländern.",
+     "p": [
+      "In Japan putzen Schüler ihre Klassenzimmer oft gemeinsam, eine Gewohnheit, die Verantwortung und Teamgeist lehrt.",
+      "Schuluniformen sind etwa in Großbritannien, Japan, Indien und Brasilien üblich, in vielen anderen Ländern trägt man eigene Kleidung.",
+      "In Frankreich ist das Schulessen eine echte Mahlzeit am Tisch, und Sommerferien dauern je nach Land Wochen bis etwa drei Monate."
+     ],
+     "q": "Woran erinnerst du dich am meisten aus deiner Schulzeit, oder wie ist die Schule für dich heute?",
+     "c": "Erzähle heute jemandem eine Erinnerung oder eine Tatsache aus deinem Schulleben."
+    },
+    "es": {
+     "t": "La vida escolar en el mundo",
+     "g": "Compara jornadas escolares, uniformes, comidas y vacaciones en distintos países.",
+     "p": [
+      "En Japón los alumnos suelen limpiar juntos su aula, un hábito que enseña responsabilidad y trabajo en equipo.",
+      "El uniforme escolar es común en lugares como el Reino Unido, Japón, India y Brasil, y en muchos otros países se va con ropa propia.",
+      "En Francia el almuerzo escolar es una comida completa en la mesa, y el verano libre va de unas semanas a tres meses según el país."
+     ],
+     "q": "¿Qué es lo que más recuerdas de tus días de escuela, o cómo es la escuela para ti ahora?",
+     "c": "Comparte hoy con alguien un recuerdo o un dato sobre tu vida escolar."
+    },
+    "fr": {
+     "t": "La vie scolaire dans le monde",
+     "g": "Compare journées d'école, uniformes, repas et vacances dans différents pays.",
+     "p": [
+      "Au Japon, les élèves nettoient souvent leur classe ensemble, une habitude qui apprend la responsabilité et l'esprit d'équipe.",
+      "L'uniforme est courant au Royaume-Uni, au Japon, en Inde ou au Brésil, alors qu'ailleurs on porte souvent ses propres vêtements.",
+      "En France, la cantine sert un vrai repas assis, et les grandes vacances vont de quelques semaines à environ trois mois selon les pays."
+     ],
+     "q": "De quoi te souviens-tu le plus de l'école, ou comment est l'école pour toi aujourd'hui ?",
+     "c": "Partage aujourd'hui avec quelqu'un un souvenir ou un fait sur ta vie scolaire."
+    },
+    "it": {
+     "t": "La vita scolastica nel mondo",
+     "g": "Confronta giornate di scuola, divise, pranzi e vacanze in paesi diversi.",
+     "p": [
+      "In Giappone gli alunni puliscono spesso insieme la propria aula, un'abitudine che insegna responsabilità e lavoro di squadra.",
+      "La divisa scolastica è comune in paesi come Regno Unito, Giappone, India e Brasile, mentre in molti altri si va con i propri vestiti.",
+      "In Francia il pranzo a scuola è un vero pasto a tavola, e le vacanze estive vanno da poche settimane a circa tre mesi secondo il paese."
+     ],
+     "q": "Cosa ricordi di più dei tuoi giorni di scuola, o com'è la scuola per te adesso?",
+     "c": "Condividi oggi con qualcuno un ricordo o una curiosità sulla tua vita scolastica."
+    },
+    "pt": {
+     "t": "A vida escolar pelo mundo",
+     "g": "Compara dias de escola, fardas, almoços e férias em diferentes países.",
+     "p": [
+      "No Japão os alunos limpam muitas vezes a sala juntos, um hábito que ensina responsabilidade e espírito de equipa.",
+      "A farda escolar é comum em países como o Reino Unido, o Japão, a Índia e o Brasil, enquanto em muitos outros se vai com roupa própria.",
+      "Em França o almoço escolar é uma refeição completa à mesa, e as férias de verão vão de semanas a cerca de três meses, conforme o país."
+     ],
+     "q": "De que te lembras mais dos tempos de escola, ou como é a escola para ti agora?",
+     "c": "Partilha hoje com alguém uma memória ou curiosidade sobre a tua vida escolar."
+    },
+    "pt_BR": {
+     "t": "A vida escolar pelo mundo",
+     "g": "Compare dias de escola, uniformes, lanches e férias em diferentes países.",
+     "p": [
+      "No Japão os alunos costumam limpar a sala juntos, um hábito que ensina responsabilidade e trabalho em equipe.",
+      "O uniforme escolar é comum em países como Reino Unido, Japão, Índia e Brasil, enquanto em muitos outros se vai com a própria roupa.",
+      "Na França o almoço escolar é uma refeição completa à mesa, e as férias de verão vão de semanas a cerca de três meses, conforme o país."
+     ],
+     "q": "Do que você mais se lembra dos tempos de escola, ou como é a escola para você agora?",
+     "c": "Compartilhe hoje com alguém uma lembrança ou curiosidade sobre a sua vida escolar."
+    }
+   }
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Childhood traditions",
+     "g": "Discover coming-of-age days, first school day customs and children's festivals.",
+     "p": [
+      "In Germany children often receive a Schultüte, a big paper cone filled with sweets and school supplies, on their first school day.",
+      "Japan and South Korea celebrate Children's Day on 5 May, and Japan marks adulthood with Coming of Age Day in January.",
+      "In many Latin American countries a quinceañera is a big celebration of a girl's fifteenth birthday with family and friends."
+     ],
+     "q": "Which childhood tradition from your culture do you remember fondly?",
+     "c": "Ask someone today about a childhood tradition from their family or culture."
+    },
+    "de": {
+     "t": "Kindheitstraditionen",
+     "g": "Entdecke Volljährigkeitsfeiern, Bräuche zum ersten Schultag und Kinderfeste.",
+     "p": [
+      "In Deutschland bekommen Kinder zum ersten Schultag oft eine Schultüte, eine große Papiertüte voller Süßigkeiten und Schulsachen.",
+      "Japan und Südkorea feiern am 5. Mai den Kindertag, und Japan feiert das Erwachsenwerden im Januar mit dem Tag der Mündigkeit.",
+      "In vielen Ländern Lateinamerikas ist die Quinceañera ein großes Fest zum fünfzehnten Geburtstag eines Mädchens mit Familie und Freunden."
+     ],
+     "q": "An welche Kindheitstradition deiner Kultur erinnerst du dich gern?",
+     "c": "Frag heute jemanden nach einer Kindheitstradition aus seiner Familie oder Kultur."
+    },
+    "es": {
+     "t": "Tradiciones de la infancia",
+     "g": "Descubre los días de mayoría de edad, las costumbres del primer día de escuela y las fiestas infantiles.",
+     "p": [
+      "En Alemania los niños suelen recibir una Schultüte, un gran cono de papel lleno de dulces y material escolar, en su primer día de clase.",
+      "Japón y Corea del Sur celebran el Día del Niño el 5 de mayo, y Japón celebra la mayoría de edad con el Día de la Mayoría de Edad en enero.",
+      "En muchos países de América Latina, la quinceañera es una gran fiesta por los quince años de una chica con familia y amigos."
+     ],
+     "q": "¿Qué tradición de la infancia de tu cultura recuerdas con cariño?",
+     "c": "Pregúntale hoy a alguien por una tradición de la infancia de su familia o su cultura."
+    },
+    "fr": {
+     "t": "Traditions de l'enfance",
+     "g": "Découvre les fêtes du passage à l'âge adulte, les coutumes de la rentrée et les fêtes des enfants.",
+     "p": [
+      "En Allemagne, les enfants reçoivent souvent pour leur premier jour d'école une Schultüte, un grand cornet de bonbons et de fournitures.",
+      "Le Japon et la Corée du Sud fêtent les enfants le 5 mai, et le Japon célèbre la majorité en janvier lors du Jour de la majorité.",
+      "Dans de nombreux pays d'Amérique latine, la quinceañera fête en grand les quinze ans d'une jeune fille, en famille et entre amis."
+     ],
+     "q": "De quelle tradition d'enfance de ta culture te souviens-tu avec tendresse ?",
+     "c": "Demande aujourd'hui à quelqu'un de te parler d'une tradition d'enfance de sa famille ou de sa culture."
+    },
+    "it": {
+     "t": "Tradizioni dell'infanzia",
+     "g": "Scopri le feste della maggiore età, le usanze del primo giorno di scuola e le feste dei bambini.",
+     "p": [
+      "In Germania i bambini ricevono spesso per il primo giorno di scuola una Schultüte, un grande cono pieno di dolci e materiale scolastico.",
+      "Giappone e Corea del Sud festeggiano la Festa dei bambini il 5 maggio, e il Giappone celebra la maggiore età a gennaio.",
+      "In molti paesi dell'America Latina la quinceañera è una grande festa per i quindici anni di una ragazza, con famiglia e amici."
+     ],
+     "q": "Quale tradizione dell'infanzia della tua cultura ricordi con affetto?",
+     "c": "Chiedi oggi a qualcuno di raccontarti una tradizione dell'infanzia della sua famiglia o cultura."
+    },
+    "pt": {
+     "t": "Tradições da infância",
+     "g": "Descobre os dias da maioridade, os costumes do primeiro dia de escola e as festas das crianças.",
+     "p": [
+      "Na Alemanha as crianças recebem muitas vezes no primeiro dia de escola uma Schultüte, um grande cone cheio de doces e material escolar.",
+      "O Japão e a Coreia do Sul celebram o Dia da Criança a 5 de maio, e o Japão assinala a maioridade em janeiro, no Dia da Maioridade.",
+      "Em muitos países da América Latina, a quinceañera é uma grande festa pelos quinze anos de uma rapariga, com família e amigos."
+     ],
+     "q": "De que tradição da infância da tua cultura te lembras com carinho?",
+     "c": "Pergunta hoje a alguém por uma tradição de infância da sua família ou cultura."
+    },
+    "pt_BR": {
+     "t": "Tradições da infância",
+     "g": "Descubra os dias da maioridade, os costumes do primeiro dia de aula e as festas das crianças.",
+     "p": [
+      "Na Alemanha as crianças costumam ganhar no primeiro dia de aula uma Schultüte, um grande cone cheio de doces e material escolar.",
+      "Japão e Coreia do Sul comemoram o Dia das Crianças em 5 de maio, e o Japão celebra a maioridade em janeiro, no Dia da Maioridade.",
+      "Em muitos países da América Latina, a festa de quinze anos é uma grande comemoração para as meninas, com família e amigos."
+     ],
+     "q": "De que tradição da infância da sua cultura você se lembra com carinho?",
+     "c": "Pergunte hoje a alguém sobre uma tradição de infância da família ou da cultura dela."
+    }
+   }
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Birthdays around the world",
+     "g": "Discover noodles for long life, pulled ears and other birthday customs.",
+     "p": [
+      "In China long noodles are eaten on birthdays as a wish for a long life, and in Korea people eat seaweed soup.",
+      "In Brazil and Italy friends may gently pull the birthday person's ears, once for each year, for luck.",
+      "In Mexico the birthday person often takes the first bite of cake as friends sing, and in the Netherlands relatives are congratulated too."
+     ],
+     "q": "How do you like to celebrate your birthday?",
+     "c": "Learn how to say happy birthday in a new language today."
+    },
+    "de": {
+     "t": "Geburtstage weltweit",
+     "g": "Entdecke Nudeln für ein langes Leben, gezogene Ohren und andere Geburtstagsbräuche.",
+     "p": [
+      "In China isst man am Geburtstag lange Nudeln als Wunsch für ein langes Leben, und in Korea gibt es Seetangsuppe.",
+      "In Brasilien und Italien ziehen Freunde dem Geburtstagskind manchmal sanft an den Ohren, einmal pro Lebensjahr, als Glücksbringer.",
+      "In Mexiko beißt das Geburtstagskind oft zuerst in den Kuchen, während alle singen, in den Niederlanden gratuliert man auch Verwandten."
+     ],
+     "q": "Wie feierst du am liebsten deinen Geburtstag?",
+     "c": "Lerne heute, wie man in einer neuen Sprache alles Gute zum Geburtstag sagt."
+    },
+    "es": {
+     "t": "Cumpleaños por el mundo",
+     "g": "Descubre los fideos de larga vida, los tirones de orejas y otras costumbres de cumpleaños.",
+     "p": [
+      "En China se comen fideos largos en el cumpleaños como deseo de una vida larga, y en Corea se toma sopa de algas.",
+      "En Brasil e Italia los amigos pueden tirar suavemente de las orejas del cumpleañero, una vez por año, para dar suerte.",
+      "En México el cumpleañero suele dar la primera mordida al pastel mientras le cantan, y en los Países Bajos se felicita también a la familia."
+     ],
+     "q": "¿Cómo te gusta celebrar tu cumpleaños?",
+     "c": "Aprende hoy a decir feliz cumpleaños en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Les anniversaires dans le monde",
+     "g": "Découvre les nouilles de longue vie, les oreilles tirées et d'autres coutumes d'anniversaire.",
+     "p": [
+      "En Chine, on mange de longues nouilles le jour de son anniversaire pour souhaiter une longue vie, et en Corée une soupe d'algues.",
+      "Au Brésil et en Italie, les amis tirent parfois doucement les oreilles de celui qui fête son anniversaire, une fois par an, pour la chance.",
+      "Au Mexique, on croque souvent le gâteau en premier pendant le chant, et aux Pays-Bas on félicite aussi la famille."
+     ],
+     "q": "Comment aimes-tu fêter ton anniversaire ?",
+     "c": "Apprends aujourd'hui à dire joyeux anniversaire dans une nouvelle langue."
+    },
+    "it": {
+     "t": "I compleanni nel mondo",
+     "g": "Scopri i noodles della lunga vita, le tirate d'orecchie e altre usanze di compleanno.",
+     "p": [
+      "In Cina per il compleanno si mangiano noodles lunghi come augurio di lunga vita, e in Corea si mangia la zuppa di alghe.",
+      "In Brasile e in Italia gli amici tirano piano le orecchie al festeggiato, una volta per ogni anno, come portafortuna.",
+      "In Messico il festeggiato dà spesso il primo morso alla torta mentre tutti cantano, e nei Paesi Bassi si fanno gli auguri anche ai parenti."
+     ],
+     "q": "Come ti piace festeggiare il tuo compleanno?",
+     "c": "Impara oggi a dire buon compleanno in una nuova lingua."
+    },
+    "pt": {
+     "t": "Aniversários pelo mundo",
+     "g": "Descobre a massa da longa vida, os puxões de orelhas e outros costumes de aniversário.",
+     "p": [
+      "Na China come-se massa comprida no aniversário como desejo de uma vida longa, e na Coreia come-se sopa de algas.",
+      "No Brasil e em Itália os amigos podem puxar levemente as orelhas do aniversariante, uma vez por cada ano, para dar sorte.",
+      "No México o aniversariante costuma dar a primeira dentada no bolo enquanto todos cantam, e nos Países Baixos dão-se os parabéns à família."
+     ],
+     "q": "Como gostas de festejar o teu aniversário?",
+     "c": "Aprende hoje a dizer feliz aniversário numa língua nova."
+    },
+    "pt_BR": {
+     "t": "Aniversários pelo mundo",
+     "g": "Descubra o macarrão da vida longa, os puxões de orelha e outros costumes de aniversário.",
+     "p": [
+      "Na China se come macarrão comprido no aniversário como desejo de uma vida longa, e na Coreia se toma sopa de algas.",
+      "No Brasil e na Itália os amigos podem puxar de leve a orelha do aniversariante, uma vez por ano de vida, para dar sorte.",
+      "No México o aniversariante costuma dar a primeira mordida no bolo enquanto todos cantam, e na Holanda os parentes também recebem parabéns."
+     ],
+     "q": "Como você gosta de comemorar o seu aniversário?",
+     "c": "Aprenda hoje a dizer feliz aniversário numa língua nova."
+    }
+   }
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kindness customs",
+     "g": "Discover small daily kindnesses that different cultures value.",
+     "p": [
+      "In Naples, Italy, a caffè sospeso is a coffee paid in advance for a stranger who may need it later.",
+      "In Japan omotenashi means wholehearted hospitality, anticipating what a guest needs before they ask.",
+      "In many places, from Ireland to Australia, passengers thank the bus driver when they get off."
+     ],
+     "q": "What small act of kindness from another person do you still remember?",
+     "c": "Do one small kindness today, like paying for someone's coffee or thanking someone who serves you."
+    },
+    "de": {
+     "t": "Bräuche der Freundlichkeit",
+     "g": "Entdecke kleine alltägliche Freundlichkeiten, die verschiedene Kulturen schätzen.",
+     "p": [
+      "In Neapel ist ein Caffè sospeso ein im Voraus bezahlter Kaffee für einen Fremden, der ihn später brauchen könnte.",
+      "In Japan bedeutet Omotenashi herzliche Gastfreundschaft, die erahnt, was ein Gast braucht, bevor er fragt.",
+      "An vielen Orten, von Irland bis Australien, bedanken sich Fahrgäste beim Aussteigen beim Busfahrer."
+     ],
+     "q": "An welche kleine Freundlichkeit eines anderen Menschen erinnerst du dich noch?",
+     "c": "Tu heute eine kleine Freundlichkeit, etwa jemandem einen Kaffee spendieren oder dich bei jemandem bedanken, der dich bedient."
+    },
+    "es": {
+     "t": "Costumbres de amabilidad",
+     "g": "Descubre pequeñas amabilidades diarias que valoran distintas culturas.",
+     "p": [
+      "En Nápoles, Italia, un caffè sospeso es un café pagado por adelantado para un desconocido que pueda necesitarlo después.",
+      "En Japón, omotenashi significa una hospitalidad de corazón, que anticipa lo que el invitado necesita antes de que lo pida.",
+      "En muchos lugares, de Irlanda a Australia, los pasajeros dan las gracias al conductor del autobús al bajar."
+     ],
+     "q": "¿Qué pequeño gesto de amabilidad de otra persona todavía recuerdas?",
+     "c": "Haz hoy una pequeña amabilidad, como invitar a alguien a un café o dar las gracias a quien te atiende."
+    },
+    "fr": {
+     "t": "Coutumes de gentillesse",
+     "g": "Découvre de petites gentillesses du quotidien que différentes cultures apprécient.",
+     "p": [
+      "À Naples, un caffè sospeso est un café payé d'avance pour un inconnu qui pourrait en avoir besoin plus tard.",
+      "Au Japon, l'omotenashi est une hospitalité de tout cœur, qui devine ce dont un invité a besoin avant qu'il ne le demande.",
+      "Dans bien des endroits, de l'Irlande à l'Australie, les passagers remercient le chauffeur en descendant du bus."
+     ],
+     "q": "De quel petit geste de gentillesse d'une autre personne te souviens-tu encore ?",
+     "c": "Fais aujourd'hui une petite gentillesse, comme offrir un café ou remercier quelqu'un qui te sert."
+    },
+    "it": {
+     "t": "Usanze di gentilezza",
+     "g": "Scopri le piccole gentilezze quotidiane apprezzate da culture diverse.",
+     "p": [
+      "A Napoli il caffè sospeso è un caffè pagato in anticipo per uno sconosciuto che potrebbe averne bisogno più tardi.",
+      "In Giappone omotenashi significa ospitalità di cuore, che anticipa ciò di cui l'ospite ha bisogno prima che lo chieda.",
+      "In molti luoghi, dall'Irlanda all'Australia, i passeggeri ringraziano l'autista quando scendono dall'autobus."
+     ],
+     "q": "Quale piccolo gesto di gentilezza di un'altra persona ricordi ancora?",
+     "c": "Fai oggi una piccola gentilezza, come offrire un caffè a qualcuno o ringraziare chi ti serve."
+    },
+    "pt": {
+     "t": "Costumes de gentileza",
+     "g": "Descobre pequenas gentilezas diárias que diferentes culturas valorizam.",
+     "p": [
+      "Em Nápoles, Itália, um caffè sospeso é um café pago antecipadamente para um desconhecido que possa precisar dele mais tarde.",
+      "No Japão, omotenashi significa hospitalidade de coração, que antecipa aquilo de que o convidado precisa antes de ele pedir.",
+      "Em muitos lugares, da Irlanda à Austrália, os passageiros agradecem ao motorista quando saem do autocarro."
+     ],
+     "q": "Que pequeno gesto de gentileza de outra pessoa ainda recordas?",
+     "c": "Faz hoje uma pequena gentileza, como pagar um café a alguém ou agradecer a quem te atende."
+    },
+    "pt_BR": {
+     "t": "Costumes de gentileza",
+     "g": "Descubra pequenas gentilezas diárias que diferentes culturas valorizam.",
+     "p": [
+      "Em Nápoles, na Itália, um caffè sospeso é um café pago antecipadamente para um desconhecido que possa precisar dele depois.",
+      "No Japão, omotenashi significa hospitalidade de coração, que antecipa o que o convidado precisa antes que ele peça.",
+      "Em muitos lugares, da Irlanda à Austrália, os passageiros agradecem ao motorista quando descem do ônibus."
+     ],
+     "q": "Que pequeno gesto de gentileza de outra pessoa você ainda lembra?",
+     "c": "Faça hoje uma pequena gentileza, como pagar um café para alguém ou agradecer a quem atende você."
+    }
+   }
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the world tour so far",
+     "g": "Enjoy a light quiz on the regions, daily life and traditions of your world tour.",
+     "p": [
+      "Quick quiz: what is mate, and in which country do people enjoy an evening passeggiata?",
+      "Quick quiz: what do hygge, lagom and sisu mean, and where do people say pura vida?",
+      "Quick quiz: which Arctic people practise joik, and what is a Schultüte?"
+     ],
+     "q": "Which place from our world tour would you most like to visit one day?",
+     "c": "Answer the quiz today, then tell someone about your favourite custom from the tour."
+    },
+    "de": {
+     "t": "Rückblick: die Weltreise bisher",
+     "g": "Genieße ein kleines Quiz über Regionen, Alltag und Traditionen deiner Weltreise.",
+     "p": [
+      "Quizfrage: Was ist Mate, und in welchem Land macht man abends eine Passeggiata?",
+      "Quizfrage: Was bedeuten Hygge, Lagom und Sisu, und wo sagt man pura vida?",
+      "Quizfrage: Welches arktische Volk pflegt den Joik, und was ist eine Schultüte?"
+     ],
+     "q": "Welchen Ort unserer Weltreise würdest du eines Tages am liebsten besuchen?",
+     "c": "Beantworte heute das Quiz und erzähle dann jemandem von deinem liebsten Brauch der Reise."
+    },
+    "es": {
+     "t": "Repaso: la vuelta al mundo hasta ahora",
+     "g": "Disfruta de un quiz ligero sobre las regiones, la vida diaria y las tradiciones de tu vuelta al mundo.",
+     "p": [
+      "Pregunta rápida: ¿qué es el mate y en qué país se da la passeggiata de la tarde?",
+      "Pregunta rápida: ¿qué significan hygge, lagom y sisu, y dónde se dice pura vida?",
+      "Pregunta rápida: ¿qué pueblo ártico practica el joik y qué es una Schultüte?"
+     ],
+     "q": "¿Qué lugar de nuestra vuelta al mundo te gustaría más visitar algún día?",
+     "c": "Responde hoy el quiz y luego cuéntale a alguien tu costumbre favorita del viaje."
+    },
+    "fr": {
+     "t": "Révision : le tour du monde jusqu'ici",
+     "g": "Profite d'un petit quiz sur les régions, la vie quotidienne et les traditions de ton tour du monde.",
+     "p": [
+      "Quiz : qu'est-ce que le maté, et dans quel pays fait-on la passeggiata du soir ?",
+      "Quiz : que signifient hygge, lagom et sisu, et où dit-on pura vida ?",
+      "Quiz : quel peuple de l'Arctique pratique le joik, et qu'est-ce qu'une Schultüte ?"
+     ],
+     "q": "Quel lieu de notre tour du monde aimerais-tu le plus visiter un jour ?",
+     "c": "Réponds au quiz aujourd'hui, puis parle à quelqu'un de ta coutume préférée du voyage."
+    },
+    "it": {
+     "t": "Ripasso: il giro del mondo finora",
+     "g": "Goditi un quiz leggero su regioni, vita quotidiana e tradizioni del tuo giro del mondo.",
+     "p": [
+      "Quiz: che cos'è il mate, e in quale paese si fa la passeggiata serale?",
+      "Quiz: che cosa significano hygge, lagom e sisu, e dove si dice pura vida?",
+      "Quiz: quale popolo artico pratica lo joik, e che cos'è una Schultüte?"
+     ],
+     "q": "Quale luogo del nostro giro del mondo vorresti di più visitare un giorno?",
+     "c": "Rispondi oggi al quiz, poi racconta a qualcuno la tua usanza preferita del viaggio."
+    },
+    "pt": {
+     "t": "Revisão: a volta ao mundo até agora",
+     "g": "Aproveita um quiz leve sobre as regiões, o dia a dia e as tradições da tua volta ao mundo.",
+     "p": [
+      "Quiz: o que é o mate, e em que país se faz a passeggiata ao fim da tarde?",
+      "Quiz: o que significam hygge, lagom e sisu, e onde se diz pura vida?",
+      "Quiz: que povo do Ártico pratica o joik, e o que é uma Schultüte?"
+     ],
+     "q": "Que lugar da nossa volta ao mundo gostavas mais de visitar um dia?",
+     "c": "Responde hoje ao quiz e depois conta a alguém o teu costume preferido da viagem."
+    },
+    "pt_BR": {
+     "t": "Revisão: a volta ao mundo até agora",
+     "g": "Aproveite um quiz leve sobre as regiões, o dia a dia e as tradições da sua volta ao mundo.",
+     "p": [
+      "Quiz: o que é o mate, e em que país se faz a passeggiata no fim da tarde?",
+      "Quiz: o que significam hygge, lagom e sisu, e onde se diz pura vida?",
+      "Quiz: que povo do Ártico pratica o joik, e o que é uma Schultüte?"
+     ],
+     "q": "Que lugar da nossa volta ao mundo você mais gostaria de visitar um dia?",
+     "c": "Responda hoje ao quiz e depois conte a alguém seu costume favorito da viagem."
+    }
+   }
+  }
+ ]
+}

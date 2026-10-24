@@ -1,0 +1,835 @@
+{
+ "topic": "budget_travel",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shoulder season magic",
+     "g": "Discover how travelling just before or after peak season brings lower prices and fewer crowds.",
+     "p": [
+      "Shoulder season is the weeks between busy high season and quiet low season.",
+      "Prices for beds and transport often drop, while the weather is usually still pleasant.",
+      "Fewer crowds mean shorter queues, calmer streets and friendlier, less busy locals."
+     ],
+     "q": "Is there a place you love that you would enjoy more with fewer crowds around?",
+     "c": "Pick one destination and find out which months count as its shoulder season."
+    },
+    "de": {
+     "t": "Der Zauber der Nebensaison",
+     "g": "Entdecke, wie Reisen kurz vor oder nach der Hochsaison niedrigere Preise und weniger Trubel bringt.",
+     "p": [
+      "Die Zwischensaison sind die Wochen zwischen voller Hochsaison und ruhiger Nebensaison.",
+      "Preise für Betten und Transport sinken oft, während das Wetter meist noch angenehm ist.",
+      "Weniger Andrang heißt kürzere Schlangen, ruhigere Straßen und entspanntere Einheimische."
+     ],
+     "q": "Gibt es einen Ort, den du mit weniger Menschenmassen noch mehr genießen würdest?",
+     "c": "Wähle ein Reiseziel und finde heraus, welche Monate dort als Zwischensaison gelten."
+    },
+    "es": {
+     "t": "La magia de la temporada media",
+     "g": "Descubre cómo viajar justo antes o después de la temporada alta trae precios más bajos y menos gente.",
+     "p": [
+      "La temporada media son las semanas entre la temporada alta y la baja.",
+      "Las camas y el transporte suelen bajar de precio y el tiempo todavía acompaña.",
+      "Menos gente significa colas más cortas, calles tranquilas y vecinos más relajados."
+     ],
+     "q": "¿Hay algún lugar que te encanta y que disfrutarías más con menos multitudes?",
+     "c": "Elige un destino y averigua qué meses son su temporada media."
+    },
+    "fr": {
+     "t": "La magie de l'intersaison",
+     "g": "Découvre comment partir juste avant ou après la haute saison fait baisser les prix et la foule.",
+     "p": [
+      "L'intersaison, ce sont les semaines entre la haute saison chargée et la basse saison calme.",
+      "Les prix des lits et des transports baissent souvent, et la météo reste en général agréable.",
+      "Moins de monde, c'est moins de files, des rues plus calmes et des habitants plus détendus."
+     ],
+     "q": "Y a-t-il un endroit que tu aimes et que tu apprécierais davantage avec moins de foule ?",
+     "c": "Choisis une destination et découvre quels mois forment son intersaison."
+    },
+    "it": {
+     "t": "La magia della mezza stagione",
+     "g": "Scopri come viaggiare poco prima o dopo l'alta stagione porta prezzi più bassi e meno folla.",
+     "p": [
+      "La mezza stagione sono le settimane tra l'alta stagione affollata e la bassa stagione tranquilla.",
+      "I prezzi di letti e trasporti spesso calano, mentre il clima di solito è ancora piacevole.",
+      "Meno folla vuol dire code più corte, strade più calme e gente del posto più rilassata."
+     ],
+     "q": "C'è un posto che ami e che ti godresti di più con meno folla intorno?",
+     "c": "Scegli una meta e scopri quali mesi sono la sua mezza stagione."
+    },
+    "pt": {
+     "t": "A magia da época intermédia",
+     "g": "Descobre como viajar logo antes ou depois da época alta traz preços mais baixos e menos multidões.",
+     "p": [
+      "A época intermédia são as semanas entre a época alta movimentada e a época baixa tranquila.",
+      "Os preços de camas e transportes costumam descer e o tempo ainda é agradável.",
+      "Menos multidões significam filas mais curtas, ruas mais calmas e moradores mais descontraídos."
+     ],
+     "q": "Há algum sítio de que gostas que aproveitarias mais com menos gente à volta?",
+     "c": "Escolhe um destino e descobre que meses são a sua época intermédia."
+    },
+    "pt_BR": {
+     "t": "A mágica da média temporada",
+     "g": "Descubra como viajar logo antes ou depois da alta temporada traz preços menores e menos multidão.",
+     "p": [
+      "A média temporada são as semanas entre a alta temporada lotada e a baixa temporada tranquila.",
+      "Os preços de hospedagem e transporte costumam cair, e o clima ainda é agradável.",
+      "Menos gente significa filas menores, ruas mais calmas e moradores mais tranquilos."
+     ],
+     "q": "Existe algum lugar que você ama e curtiria mais com menos multidão?",
+     "c": "Escolha um destino e descubra quais meses são a média temporada dele."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Off-season pros and cons",
+     "g": "Weigh bargains and quiet streets against shorter opening hours and some closed sights.",
+     "p": [
+      "Low season often brings the lowest prices and the most authentic, everyday feel.",
+      "Some attractions, boats or beach businesses may close or open shorter hours.",
+      "Weather can be cold, rainy or very hot, so check what the low season really looks like."
+     ],
+     "q": "Would you enjoy a quiet off-season trip, or do you love the buzz of busy places?",
+     "c": "Pick a beach or ski town and list one big pro and one big con of visiting it off-season."
+    },
+    "de": {
+     "t": "Vor- und Nachteile der Nebensaison",
+     "g": "Wäge Schnäppchen und ruhige Straßen gegen kürzere Öffnungszeiten und geschlossene Sehenswürdigkeiten ab.",
+     "p": [
+      "Die Nebensaison bringt oft die niedrigsten Preise und das echteste Alltagsgefühl.",
+      "Manche Attraktionen, Bootsfahrten oder Strandbetriebe schließen oder öffnen kürzer.",
+      "Das Wetter kann kalt, nass oder sehr heiß sein, also prüf, wie die Nebensaison wirklich aussieht."
+     ],
+     "q": "Würde dir eine ruhige Reise in der Nebensaison gefallen, oder liebst du den Trubel?",
+     "c": "Wähle einen Strand- oder Skiort und notiere einen großen Vor- und einen Nachteil der Nebensaison."
+    },
+    "es": {
+     "t": "Pros y contras de la temporada baja",
+     "g": "Compara chollos y calles tranquilas con horarios más cortos y algunos lugares cerrados.",
+     "p": [
+      "La temporada baja suele traer los precios más bajos y el ambiente más auténtico y cotidiano.",
+      "Algunas atracciones, barcos o negocios de playa pueden cerrar o abrir menos horas.",
+      "El tiempo puede ser frío, lluvioso o muy caluroso: mira cómo es de verdad la temporada baja."
+     ],
+     "q": "¿Disfrutarías de un viaje tranquilo en temporada baja o te encanta el bullicio?",
+     "c": "Elige un pueblo de playa o de esquí y anota una gran ventaja y una gran desventaja de ir en temporada baja."
+    },
+    "fr": {
+     "t": "Basse saison : pour et contre",
+     "g": "Mets en balance bonnes affaires et rues calmes face aux horaires réduits et à quelques sites fermés.",
+     "p": [
+      "La basse saison offre souvent les prix les plus bas et l'ambiance la plus authentique.",
+      "Certaines attractions, bateaux ou commerces de plage ferment ou ouvrent moins longtemps.",
+      "La météo peut être froide, pluvieuse ou très chaude : vérifie à quoi ressemble vraiment la basse saison."
+     ],
+     "q": "Aimerais-tu un voyage calme en basse saison, ou adores-tu l'animation des lieux bondés ?",
+     "c": "Choisis une station balnéaire ou de ski et note un gros avantage et un gros inconvénient en basse saison."
+    },
+    "it": {
+     "t": "Pro e contro della bassa stagione",
+     "g": "Metti sulla bilancia affari e strade tranquille contro orari ridotti e qualche luogo chiuso.",
+     "p": [
+      "La bassa stagione porta spesso i prezzi più bassi e l'atmosfera più autentica e quotidiana.",
+      "Alcune attrazioni, battelli o lidi possono chiudere o avere orari più brevi.",
+      "Il clima può essere freddo, piovoso o molto caldo: verifica com'è davvero la bassa stagione."
+     ],
+     "q": "Ti piacerebbe un viaggio tranquillo in bassa stagione o ami il fermento dei posti affollati?",
+     "c": "Scegli una località di mare o sciistica e scrivi un grande pro e un grande contro della bassa stagione."
+    },
+    "pt": {
+     "t": "Prós e contras da época baixa",
+     "g": "Pesa as pechinchas e as ruas calmas contra horários mais curtos e alguns locais fechados.",
+     "p": [
+      "A época baixa traz muitas vezes os preços mais baixos e o ambiente mais autêntico.",
+      "Algumas atrações, barcos ou negócios de praia podem fechar ou abrir menos horas.",
+      "O tempo pode estar frio, chuvoso ou muito quente: confirma como é mesmo a época baixa."
+     ],
+     "q": "Gostavas de uma viagem calma na época baixa ou adoras a animação dos sítios cheios?",
+     "c": "Escolhe uma vila de praia ou de esqui e anota uma grande vantagem e uma grande desvantagem da época baixa."
+    },
+    "pt_BR": {
+     "t": "Prós e contras da baixa temporada",
+     "g": "Compare pechinchas e ruas tranquilas com horários menores e algumas atrações fechadas.",
+     "p": [
+      "A baixa temporada costuma trazer os menores preços e o clima mais autêntico do dia a dia.",
+      "Algumas atrações, passeios de barco ou quiosques de praia podem fechar ou abrir menos horas.",
+      "O tempo pode estar frio, chuvoso ou muito quente: confira como é de fato a baixa temporada."
+     ],
+     "q": "Você curtiria uma viagem tranquila na baixa temporada ou ama o agito dos lugares cheios?",
+     "c": "Escolha uma cidade de praia ou de esqui e anote uma grande vantagem e uma grande desvantagem da baixa temporada."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flexible dates save money",
+     "g": "See how shifting your trip by a few days can change transport and accommodation costs.",
+     "p": [
+      "Prices change from day to day, so moving a trip slightly can make a real difference.",
+      "Many search tools show a calendar or chart of prices across a whole week or month.",
+      "Being flexible by even one or two days on either end opens up cheaper options."
+     ],
+     "q": "How flexible are your travel dates usually: fixed, a little flexible or very open?",
+     "c": "Look at prices for one route over a full week and note the cheapest and the priciest day."
+    },
+    "de": {
+     "t": "Flexible Daten sparen Geld",
+     "g": "Erfahre, wie ein paar Tage Verschiebung die Kosten für Transport und Unterkunft verändern können.",
+     "p": [
+      "Preise ändern sich täglich, deshalb kann eine kleine Verschiebung viel ausmachen.",
+      "Viele Suchportale zeigen einen Kalender oder eine Grafik mit Preisen für eine ganze Woche oder einen Monat.",
+      "Schon ein oder zwei Tage Flexibilität am Anfang oder Ende eröffnen günstigere Optionen."
+     ],
+     "q": "Wie flexibel sind deine Reisedaten meist: fest, etwas flexibel oder ganz offen?",
+     "c": "Schau dir die Preise einer Strecke über eine ganze Woche an und notiere den günstigsten und teuersten Tag."
+    },
+    "es": {
+     "t": "Las fechas flexibles ahorran",
+     "g": "Descubre cómo mover tu viaje unos días puede cambiar el precio del transporte y el alojamiento.",
+     "p": [
+      "Los precios cambian cada día, así que mover un poco el viaje puede notarse mucho.",
+      "Muchos buscadores muestran un calendario o gráfico con precios de toda una semana o un mes.",
+      "Ser flexible aunque sea uno o dos días al principio o al final abre opciones más baratas."
+     ],
+     "q": "¿Qué tan flexibles suelen ser tus fechas: fijas, algo flexibles o muy abiertas?",
+     "c": "Mira los precios de una ruta durante una semana entera y anota el día más barato y el más caro."
+    },
+    "fr": {
+     "t": "Des dates souples, des économies",
+     "g": "Vois comment décaler ton voyage de quelques jours peut changer le prix du transport et du logement.",
+     "p": [
+      "Les prix changent d'un jour à l'autre : décaler un peu le voyage peut tout changer.",
+      "Beaucoup d'outils de recherche affichent un calendrier ou un graphique des prix sur une semaine ou un mois.",
+      "Être souple d'un ou deux jours au départ ou au retour ouvre des options moins chères."
+     ],
+     "q": "Tes dates de voyage sont-elles d'habitude fixes, un peu souples ou très ouvertes ?",
+     "c": "Regarde les prix d'un trajet sur une semaine entière et note le jour le moins cher et le plus cher."
+    },
+    "it": {
+     "t": "Date flessibili, soldi risparmiati",
+     "g": "Scopri come spostare il viaggio di qualche giorno può cambiare i costi di trasporti e alloggio.",
+     "p": [
+      "I prezzi cambiano di giorno in giorno, quindi spostare di poco il viaggio può fare la differenza.",
+      "Molti motori di ricerca mostrano un calendario o un grafico dei prezzi su una settimana o un mese.",
+      "Essere flessibili anche solo di uno o due giorni all'andata o al ritorno apre opzioni più economiche."
+     ],
+     "q": "Di solito le tue date di viaggio sono fisse, un po' flessibili o molto aperte?",
+     "c": "Guarda i prezzi di una tratta per una settimana intera e annota il giorno più economico e quello più caro."
+    },
+    "pt": {
+     "t": "Datas flexíveis poupam dinheiro",
+     "g": "Vê como mudar a viagem uns dias pode alterar os custos de transporte e alojamento.",
+     "p": [
+      "Os preços mudam de dia para dia, por isso mexer um pouco na viagem pode fazer diferença.",
+      "Muitas ferramentas de pesquisa mostram um calendário ou gráfico com preços de uma semana ou mês inteiro.",
+      "Ter flexibilidade de um ou dois dias na ida ou na volta abre opções mais baratas."
+     ],
+     "q": "As tuas datas de viagem costumam ser fixas, um pouco flexíveis ou muito abertas?",
+     "c": "Vê os preços de uma rota durante uma semana inteira e anota o dia mais barato e o mais caro."
+    },
+    "pt_BR": {
+     "t": "Datas flexíveis economizam",
+     "g": "Veja como mudar a viagem alguns dias pode alterar o custo de transporte e hospedagem.",
+     "p": [
+      "Os preços mudam de um dia para o outro, então mexer um pouco na viagem pode fazer diferença.",
+      "Muitos buscadores mostram um calendário ou gráfico com preços de uma semana ou mês inteiro.",
+      "Ter flexibilidade de um ou dois dias na ida ou na volta abre opções mais baratas."
+     ],
+     "q": "Suas datas de viagem costumam ser fixas, um pouco flexíveis ou bem abertas?",
+     "c": "Veja os preços de uma rota durante uma semana inteira e anote o dia mais barato e o mais caro."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Midweek travel advantages",
+     "g": "Find out why midweek departures and stays are often cheaper than weekends.",
+     "p": [
+      "Many people travel on Fridays and Sundays, so those days are often the most expensive.",
+      "City hotels aimed at business travellers can be cheaper at weekends, so always compare.",
+      "Midweek visits to popular sights usually mean fewer crowds and a calmer experience."
+     ],
+     "q": "Could you shift a future trip to leave or return midweek instead of at the weekend?",
+     "c": "Compare the price of one route leaving on a Friday versus a Tuesday or Wednesday."
+    },
+    "de": {
+     "t": "Vorteile unter der Woche",
+     "g": "Finde heraus, warum Abreisen und Übernachtungen unter der Woche oft günstiger sind als am Wochenende.",
+     "p": [
+      "Viele reisen freitags und sonntags, deshalb sind diese Tage oft am teuersten.",
+      "Stadthotels für Geschäftsreisende sind am Wochenende manchmal günstiger, also immer vergleichen.",
+      "Besuche unter der Woche bedeuten bei beliebten Zielen meist weniger Andrang und mehr Ruhe."
+     ],
+     "q": "Könntest du eine nächste Reise so legen, dass du unter der Woche statt am Wochenende fährst?",
+     "c": "Vergleiche den Preis einer Strecke mit Abreise am Freitag und am Dienstag oder Mittwoch."
+    },
+    "es": {
+     "t": "Ventajas de viajar entre semana",
+     "g": "Descubre por qué salir y alojarse entre semana suele ser más barato que el fin de semana.",
+     "p": [
+      "Mucha gente viaja los viernes y los domingos, así que esos días suelen ser los más caros.",
+      "Los hoteles urbanos para viajes de negocios a veces son más baratos el fin de semana: compara siempre.",
+      "Visitar lugares populares entre semana suele significar menos gente y más calma."
+     ],
+     "q": "¿Podrías mover un próximo viaje para salir o volver entre semana en vez de en fin de semana?",
+     "c": "Compara el precio de una ruta saliendo un viernes con uno saliendo un martes o miércoles."
+    },
+    "fr": {
+     "t": "Les atouts du milieu de semaine",
+     "g": "Découvre pourquoi partir et dormir en semaine coûte souvent moins cher que le week-end.",
+     "p": [
+      "Beaucoup de gens voyagent le vendredi et le dimanche, donc ces jours sont souvent les plus chers.",
+      "Les hôtels de ville visant les voyageurs d'affaires peuvent être moins chers le week-end : compare toujours.",
+      "En semaine, les sites populaires sont en général moins bondés et plus agréables."
+     ],
+     "q": "Pourrais-tu décaler un prochain voyage pour partir ou rentrer en semaine plutôt que le week-end ?",
+     "c": "Compare le prix d'un trajet avec un départ le vendredi et un départ le mardi ou le mercredi."
+    },
+    "it": {
+     "t": "I vantaggi di metà settimana",
+     "g": "Scopri perché partire e soggiornare a metà settimana costa spesso meno che nel weekend.",
+     "p": [
+      "Molti viaggiano il venerdì e la domenica, quindi quei giorni sono spesso i più cari.",
+      "Gli hotel di città pensati per chi viaggia per lavoro possono costare meno nel weekend: confronta sempre.",
+      "Visitare luoghi famosi a metà settimana di solito significa meno folla e più calma."
+     ],
+     "q": "Potresti spostare un prossimo viaggio per partire o tornare a metà settimana invece che nel weekend?",
+     "c": "Confronta il prezzo di una tratta con partenza di venerdì e con partenza di martedì o mercoledì."
+    },
+    "pt": {
+     "t": "Vantagens de viajar a meio da semana",
+     "g": "Descobre porque partir e ficar a meio da semana costuma ser mais barato do que ao fim de semana.",
+     "p": [
+      "Muita gente viaja à sexta e ao domingo, por isso esses dias são muitas vezes os mais caros.",
+      "Hotéis de cidade para quem viaja em trabalho podem ser mais baratos ao fim de semana: compara sempre.",
+      "Visitar locais populares a meio da semana costuma significar menos gente e mais calma."
+     ],
+     "q": "Podias mudar uma próxima viagem para partir ou voltar a meio da semana em vez do fim de semana?",
+     "c": "Compara o preço de uma rota com partida à sexta-feira e com partida à terça ou quarta-feira."
+    },
+    "pt_BR": {
+     "t": "Vantagens de viajar no meio da semana",
+     "g": "Descubra por que partir e se hospedar no meio da semana costuma ser mais barato que no fim de semana.",
+     "p": [
+      "Muita gente viaja na sexta e no domingo, então esses dias costumam ser os mais caros.",
+      "Hotéis de cidade voltados a viagens a trabalho podem ser mais baratos no fim de semana: compare sempre.",
+      "Visitar atrações populares no meio da semana costuma significar menos gente e mais tranquilidade."
+     ],
+     "q": "Você poderia mudar uma próxima viagem para ir ou voltar no meio da semana em vez do fim de semana?",
+     "c": "Compare o preço de uma rota saindo na sexta-feira e saindo na terça ou quarta-feira."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Local holidays and events",
+     "g": "Check calendars so festivals and school breaks don't surprise your budget.",
+     "p": [
+      "Big festivals, sports events and trade fairs can make beds scarce and prices jump.",
+      "School holidays and national long weekends fill trains, roads and family-friendly spots.",
+      "Love a festival? Book very early. Not interested? Pick dates just before or after it."
+     ],
+     "q": "Have you ever arrived somewhere to find a big event you did not know about?",
+     "c": "Look up the public holidays and big events of one destination for the month you would visit."
+    },
+    "de": {
+     "t": "Feiertage und Events vor Ort",
+     "g": "Prüfe Kalender, damit Feste und Schulferien dein Budget nicht überraschen.",
+     "p": [
+      "Große Feste, Sportevents und Messen machen Betten knapp und lassen Preise steigen.",
+      "Schulferien und lange Feiertagswochenenden füllen Züge, Straßen und familienfreundliche Orte.",
+      "Du liebst das Fest? Buch sehr früh. Kein Interesse? Wähle Tage kurz davor oder danach."
+     ],
+     "q": "Bist du schon mal irgendwo angekommen und hast ein großes Event entdeckt, von dem du nichts wusstest?",
+     "c": "Such die Feiertage und großen Events eines Reiseziels für den Monat heraus, in dem du reisen würdest."
+    },
+    "es": {
+     "t": "Festivos y eventos locales",
+     "g": "Revisa calendarios para que fiestas y vacaciones escolares no sorprendan a tu presupuesto.",
+     "p": [
+      "Grandes fiestas, eventos deportivos y ferias pueden agotar las camas y disparar los precios.",
+      "Las vacaciones escolares y los puentes llenan trenes, carreteras y sitios para familias.",
+      "¿Te encanta la fiesta? Reserva muy pronto. ¿No te interesa? Elige fechas justo antes o después."
+     ],
+     "q": "¿Alguna vez llegaste a un sitio y te encontraste un gran evento del que no sabías nada?",
+     "c": "Busca los festivos y grandes eventos de un destino en el mes en que lo visitarías."
+    },
+    "fr": {
+     "t": "Fêtes et événements locaux",
+     "g": "Consulte les calendriers pour que festivals et vacances scolaires ne surprennent pas ton budget.",
+     "p": [
+      "Grands festivals, événements sportifs et salons peuvent rendre les lits rares et faire grimper les prix.",
+      "Vacances scolaires et ponts remplissent trains, routes et lieux adaptés aux familles.",
+      "Tu adores le festival ? Réserve très tôt. Pas intéressé ? Choisis des dates juste avant ou après."
+     ],
+     "q": "Es-tu déjà arrivé quelque part en tombant sur un grand événement dont tu ignorais tout ?",
+     "c": "Cherche les jours fériés et grands événements d'une destination pour le mois où tu partirais."
+    },
+    "it": {
+     "t": "Feste ed eventi locali",
+     "g": "Controlla i calendari così feste e vacanze scolastiche non sorprendono il tuo budget.",
+     "p": [
+      "Grandi feste, eventi sportivi e fiere possono esaurire i letti e far salire i prezzi.",
+      "Vacanze scolastiche e ponti riempiono treni, strade e posti per famiglie.",
+      "Ami la festa? Prenota molto presto. Non ti interessa? Scegli date poco prima o poco dopo."
+     ],
+     "q": "Ti è mai capitato di arrivare in un posto e trovare un grande evento di cui non sapevi nulla?",
+     "c": "Cerca festività e grandi eventi di una meta nel mese in cui ci andresti."
+    },
+    "pt": {
+     "t": "Feriados e eventos locais",
+     "g": "Consulta calendários para que festas e férias escolares não surpreendam o teu orçamento.",
+     "p": [
+      "Grandes festas, eventos desportivos e feiras podem esgotar camas e fazer subir os preços.",
+      "Férias escolares e pontes enchem comboios, estradas e sítios para famílias.",
+      "Adoras a festa? Reserva muito cedo. Não te interessa? Escolhe datas mesmo antes ou depois."
+     ],
+     "q": "Já chegaste a algum sítio e deste com um grande evento de que não sabias nada?",
+     "c": "Procura os feriados e grandes eventos de um destino no mês em que o visitarias."
+    },
+    "pt_BR": {
+     "t": "Feriados e eventos locais",
+     "g": "Confira calendários para que festas e férias escolares não surpreendam seu orçamento.",
+     "p": [
+      "Grandes festas, eventos esportivos e feiras podem esgotar a hospedagem e fazer os preços dispararem.",
+      "Férias escolares e feriadões lotam ônibus, estradas e lugares para famílias.",
+      "Ama a festa? Reserve bem cedo. Não liga? Escolha datas logo antes ou depois."
+     ],
+     "q": "Você já chegou a um lugar e deu de cara com um grande evento que não conhecia?",
+     "c": "Pesquise os feriados e grandes eventos de um destino no mês em que você iria."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Booking timing basics",
+     "g": "Learn when booking early pays off and when last-minute deals can actually work.",
+     "p": [
+      "Book early for peak dates, festivals, popular routes and anything with limited seats or beds.",
+      "Last-minute deals can appear off-season or on routes and stays that are not filling up.",
+      "If your dates are fixed and important, booking early usually lowers both price and stress."
+     ],
+     "q": "Are you more of an early planner or a spontaneous last-minute traveller?",
+     "c": "Think of one trip where booking early clearly makes sense and one where waiting could work."
+    },
+    "de": {
+     "t": "Grundlagen zum Buchungszeitpunkt",
+     "g": "Lerne, wann sich frühes Buchen lohnt und wann Last-Minute-Angebote wirklich funktionieren.",
+     "p": [
+      "Buch früh für Hochsaison, Feste, beliebte Strecken und alles mit wenigen Plätzen oder Betten.",
+      "Last-Minute-Angebote gibt es eher in der Nebensaison oder bei Strecken und Unterkünften, die nicht voll werden.",
+      "Sind deine Daten fest und wichtig, senkt frühes Buchen meist Preis und Stress."
+     ],
+     "q": "Bist du eher frühe Planerin, früher Planer oder spontan auf den letzten Drücker unterwegs?",
+     "c": "Denk an eine Reise, bei der frühes Buchen klar sinnvoll ist, und eine, bei der Warten klappen könnte."
+    },
+    "es": {
+     "t": "Cuándo reservar: lo básico",
+     "g": "Aprende cuándo compensa reservar pronto y cuándo las ofertas de última hora sí funcionan.",
+     "p": [
+      "Reserva pronto para fechas punta, fiestas, rutas populares y todo lo que tenga plazas o camas limitadas.",
+      "Las ofertas de última hora aparecen más en temporada baja o en rutas y alojamientos que no se llenan.",
+      "Si tus fechas son fijas e importantes, reservar pronto suele bajar el precio y el estrés."
+     ],
+     "q": "¿Eres más de planificar con tiempo o de viajar espontáneamente a última hora?",
+     "c": "Piensa en un viaje donde reservar pronto tiene todo el sentido y otro donde esperar podría salir bien."
+    },
+    "fr": {
+     "t": "Quand réserver : les bases",
+     "g": "Apprends quand réserver tôt est payant et quand les offres de dernière minute fonctionnent vraiment.",
+     "p": [
+      "Réserve tôt pour les dates de pointe, les festivals, les trajets populaires et tout ce qui a peu de places.",
+      "Les offres de dernière minute apparaissent plutôt hors saison ou sur des trajets et logements peu remplis.",
+      "Si tes dates sont fixes et importantes, réserver tôt réduit souvent le prix et le stress."
+     ],
+     "q": "Es-tu plutôt du genre à planifier tôt ou à partir spontanément à la dernière minute ?",
+     "c": "Pense à un voyage où réserver tôt s'impose et à un autre où attendre pourrait marcher."
+    },
+    "it": {
+     "t": "Quando prenotare: le basi",
+     "g": "Impara quando conviene prenotare presto e quando le offerte last minute funzionano davvero.",
+     "p": [
+      "Prenota presto per date di punta, feste, tratte popolari e tutto ciò che ha posti o letti limitati.",
+      "Le offerte last minute compaiono più in bassa stagione o su tratte e alloggi che non si riempiono.",
+      "Se le tue date sono fisse e importanti, prenotare presto di solito abbassa prezzo e stress."
+     ],
+     "q": "Sei più tipo da pianificare in anticipo o da partenza spontanea all'ultimo minuto?",
+     "c": "Pensa a un viaggio in cui prenotare presto ha chiaramente senso e a uno in cui aspettare potrebbe funzionare."
+    },
+    "pt": {
+     "t": "Quando reservar: o básico",
+     "g": "Aprende quando compensa reservar cedo e quando as ofertas de última hora funcionam mesmo.",
+     "p": [
+      "Reserva cedo para datas de pico, festas, rotas populares e tudo o que tenha lugares ou camas limitados.",
+      "As ofertas de última hora surgem mais na época baixa ou em rotas e alojamentos que não enchem.",
+      "Se as tuas datas são fixas e importantes, reservar cedo costuma baixar o preço e o stress."
+     ],
+     "q": "És mais de planear com antecedência ou de viajar de forma espontânea à última hora?",
+     "c": "Pensa numa viagem em que reservar cedo faz todo o sentido e noutra em que esperar podia resultar."
+    },
+    "pt_BR": {
+     "t": "Quando reservar: o básico",
+     "g": "Aprenda quando vale a pena reservar cedo e quando as ofertas de última hora funcionam de verdade.",
+     "p": [
+      "Reserve cedo para datas de pico, festas, rotas populares e tudo que tenha poucas vagas ou camas.",
+      "Ofertas de última hora aparecem mais na baixa temporada ou em rotas e hospedagens que não lotam.",
+      "Se suas datas são fixas e importantes, reservar cedo costuma baixar o preço e o estresse."
+     ],
+     "q": "Você é mais de planejar com antecedência ou de viajar de forma espontânea na última hora?",
+     "c": "Pense numa viagem em que reservar cedo faz todo sentido e noutra em que esperar poderia dar certo."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How flight prices work",
+     "g": "Understand demand, seat classes and fare buckets explained in plain words.",
+     "p": [
+      "Airlines sell seats on the same flight at different prices, grouped in so-called fare buckets.",
+      "The cheapest buckets usually sell out first, so prices tend to rise as a flight fills up.",
+      "High demand, like holidays or popular hours, pushes prices up; quiet times bring them down."
+     ],
+     "q": "Have you ever been surprised that the person next to you paid a very different fare?",
+     "c": "Check one flight route twice today, morning and evening, and see whether the price moved."
+    },
+    "de": {
+     "t": "Wie Flugpreise funktionieren",
+     "g": "Verstehe Nachfrage, Sitzklassen und Tarifstufen in einfachen Worten.",
+     "p": [
+      "Airlines verkaufen Sitze im selben Flug zu verschiedenen Preisen, gruppiert in sogenannte Tarifstufen.",
+      "Die günstigsten Stufen sind meist zuerst weg, darum steigen Preise oft, je voller ein Flug wird.",
+      "Hohe Nachfrage wie in Ferien oder zu beliebten Uhrzeiten treibt Preise hoch, ruhige Zeiten senken sie."
+     ],
+     "q": "Hat es dich schon mal überrascht, dass dein Sitznachbar einen ganz anderen Preis bezahlt hat?",
+     "c": "Prüfe heute eine Flugstrecke zweimal, morgens und abends, und schau, ob sich der Preis bewegt."
+    },
+    "es": {
+     "t": "Cómo funcionan los precios de los vuelos",
+     "g": "Entiende la demanda, las clases de asiento y las tarifas por tramos explicadas con palabras sencillas.",
+     "p": [
+      "Las aerolíneas venden asientos del mismo vuelo a precios distintos, agrupados en tramos de tarifa.",
+      "Los tramos más baratos suelen agotarse primero, por eso el precio sube a medida que el vuelo se llena.",
+      "La demanda alta, como en vacaciones u horas populares, sube los precios; las épocas tranquilas los bajan."
+     ],
+     "q": "¿Te ha sorprendido alguna vez que la persona de al lado pagara un precio muy distinto?",
+     "c": "Mira hoy una ruta de vuelo dos veces, por la mañana y por la noche, y comprueba si el precio cambió."
+    },
+    "fr": {
+     "t": "Comment fonctionnent les prix des vols",
+     "g": "Comprends la demande, les classes de siège et les paliers tarifaires expliqués simplement.",
+     "p": [
+      "Les compagnies vendent les sièges d'un même vol à des prix différents, regroupés en paliers tarifaires.",
+      "Les paliers les moins chers partent souvent en premier, donc les prix montent quand l'avion se remplit.",
+      "Une forte demande, comme les vacances ou les horaires prisés, fait monter les prix ; les périodes calmes les baissent."
+     ],
+     "q": "As-tu déjà été surpris que ton voisin de siège ait payé un tarif très différent ?",
+     "c": "Regarde un trajet en avion deux fois aujourd'hui, le matin et le soir, et vois si le prix a bougé."
+    },
+    "it": {
+     "t": "Come funzionano i prezzi dei voli",
+     "g": "Capisci domanda, classi di posto e fasce tariffarie spiegate in parole semplici.",
+     "p": [
+      "Le compagnie vendono i posti dello stesso volo a prezzi diversi, raggruppati in fasce tariffarie.",
+      "Le fasce più economiche di solito finiscono per prime, quindi i prezzi salgono mentre il volo si riempie.",
+      "Una domanda alta, come in vacanza o negli orari preferiti, fa salire i prezzi; i periodi tranquilli li abbassano."
+     ],
+     "q": "Ti ha mai sorpreso che il tuo vicino di posto avesse pagato una tariffa molto diversa?",
+     "c": "Controlla oggi una tratta aerea due volte, mattina e sera, e guarda se il prezzo si è mosso."
+    },
+    "pt": {
+     "t": "Como funcionam os preços dos voos",
+     "g": "Percebe a procura, as classes de lugar e os escalões tarifários explicados por palavras simples.",
+     "p": [
+      "As companhias vendem lugares do mesmo voo a preços diferentes, agrupados em escalões tarifários.",
+      "Os escalões mais baratos costumam esgotar primeiro, por isso o preço sobe à medida que o voo enche.",
+      "Muita procura, como nas férias ou em horas populares, faz subir os preços; épocas calmas baixam-nos."
+     ],
+     "q": "Já te surpreendeu que a pessoa ao lado tivesse pago um preço muito diferente?",
+     "c": "Vê hoje uma rota de voo duas vezes, de manhã e à noite, e repara se o preço mudou."
+    },
+    "pt_BR": {
+     "t": "Como funcionam os preços das passagens",
+     "g": "Entenda demanda, classes de assento e faixas tarifárias explicadas em palavras simples.",
+     "p": [
+      "As companhias vendem assentos do mesmo voo a preços diferentes, agrupados em faixas tarifárias.",
+      "As faixas mais baratas costumam esgotar primeiro, por isso o preço sobe conforme o voo enche.",
+      "Demanda alta, como em feriados ou horários populares, sobe os preços; épocas tranquilas baixam."
+     ],
+     "q": "Você já se surpreendeu ao saber que a pessoa ao lado pagou um preço bem diferente?",
+     "c": "Veja hoje uma rota aérea duas vezes, de manhã e à noite, e repare se o preço mudou."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using flight search engines",
+     "g": "Compare many airlines at once using flexible dates and nearby airports.",
+     "p": [
+      "A search engine shows many airlines side by side, so you see the whole picture in one go.",
+      "Use the flexible dates or whole-month view to spot the cheapest days at a glance.",
+      "Tick the option to include nearby airports, then check the final price on the airline's own site."
+     ],
+     "q": "When you search for flights, what matters most to you: price, timing or number of stops?",
+     "c": "Run one search with exact dates, then again with flexible dates and nearby airports, and compare."
+    },
+    "de": {
+     "t": "Flugsuchmaschinen nutzen",
+     "g": "Vergleiche viele Airlines auf einmal mit flexiblen Daten und nahe gelegenen Flughäfen.",
+     "p": [
+      "Eine Suchmaschine zeigt viele Airlines nebeneinander, so siehst du das ganze Bild auf einen Blick.",
+      "Nutze die Ansicht mit flexiblen Daten oder dem ganzen Monat, um die günstigsten Tage zu finden.",
+      "Aktiviere nahe Flughäfen und prüfe den Endpreis dann auf der Webseite der Airline."
+     ],
+     "q": "Was ist dir bei der Flugsuche am wichtigsten: Preis, Uhrzeit oder Anzahl der Umstiege?",
+     "c": "Such einmal mit festen Daten, dann mit flexiblen Daten und nahen Flughäfen, und vergleiche."
+    },
+    "es": {
+     "t": "Usar buscadores de vuelos",
+     "g": "Compara muchas aerolíneas a la vez con fechas flexibles y aeropuertos cercanos.",
+     "p": [
+      "Un buscador muestra muchas aerolíneas juntas, así ves todo el panorama de un vistazo.",
+      "Usa la vista de fechas flexibles o de mes completo para ver los días más baratos enseguida.",
+      "Marca la opción de aeropuertos cercanos y luego comprueba el precio final en la web de la aerolínea."
+     ],
+     "q": "Cuando buscas vuelos, ¿qué te importa más: el precio, el horario o el número de escalas?",
+     "c": "Haz una búsqueda con fechas exactas y otra con fechas flexibles y aeropuertos cercanos, y compara."
+    },
+    "fr": {
+     "t": "Utiliser les comparateurs de vols",
+     "g": "Compare de nombreuses compagnies à la fois avec des dates souples et des aéroports proches.",
+     "p": [
+      "Un comparateur affiche plein de compagnies côte à côte : tu vois tout d'un seul coup d'œil.",
+      "Utilise la vue dates flexibles ou mois entier pour repérer tout de suite les jours les moins chers.",
+      "Coche les aéroports proches, puis vérifie le prix final sur le site de la compagnie."
+     ],
+     "q": "Quand tu cherches un vol, qu'est-ce qui compte le plus : le prix, l'horaire ou le nombre d'escales ?",
+     "c": "Fais une recherche avec des dates fixes, puis avec des dates souples et des aéroports proches, et compare."
+    },
+    "it": {
+     "t": "Usare i motori di ricerca voli",
+     "g": "Confronta tante compagnie insieme usando date flessibili e aeroporti vicini.",
+     "p": [
+      "Un motore di ricerca mostra molte compagnie affiancate, così hai il quadro completo in un colpo d'occhio.",
+      "Usa la vista a date flessibili o a mese intero per individuare subito i giorni più economici.",
+      "Spunta l'opzione aeroporti vicini, poi verifica il prezzo finale sul sito della compagnia."
+     ],
+     "q": "Quando cerchi voli, cosa conta di più per te: prezzo, orari o numero di scali?",
+     "c": "Fai una ricerca con date fisse, poi una con date flessibili e aeroporti vicini, e confronta."
+    },
+    "pt": {
+     "t": "Usar motores de busca de voos",
+     "g": "Compara muitas companhias de uma vez com datas flexíveis e aeroportos próximos.",
+     "p": [
+      "Um motor de busca mostra muitas companhias lado a lado, por isso vês o panorama todo de uma vez.",
+      "Usa a vista de datas flexíveis ou de mês inteiro para veres logo os dias mais baratos.",
+      "Ativa a opção de aeroportos próximos e depois confirma o preço final no site da companhia."
+     ],
+     "q": "Quando procuras voos, o que importa mais: o preço, o horário ou o número de escalas?",
+     "c": "Faz uma pesquisa com datas fixas e outra com datas flexíveis e aeroportos próximos, e compara."
+    },
+    "pt_BR": {
+     "t": "Usando buscadores de passagens",
+     "g": "Compare várias companhias de uma vez com datas flexíveis e aeroportos próximos.",
+     "p": [
+      "Um buscador mostra várias companhias lado a lado, então você vê o panorama todo de uma vez.",
+      "Use a visão de datas flexíveis ou do mês inteiro para achar logo os dias mais baratos.",
+      "Marque a opção de aeroportos próximos e depois confira o preço final no site da companhia."
+     ],
+     "q": "Quando você busca voos, o que pesa mais: preço, horário ou número de escalas?",
+     "c": "Faça uma busca com datas fixas e outra com datas flexíveis e aeroportos próximos, e compare."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Budget airlines explained",
+     "g": "Learn what low-cost carriers include, what costs extra and how to stay within the base fare.",
+     "p": [
+      "The base fare usually covers you and one small personal bag that fits under the seat.",
+      "Larger cabin bags, checked bags, seat choice, food and sometimes airport check-in cost extra.",
+      "Travel light, check in online, bring snacks and your boarding pass, and the base fare can stay the deal."
+     ],
+     "q": "Have you flown with a low-cost airline? How did it go with bags and extras?",
+     "c": "Read the bag and extras rules of one budget airline and list what is included in the base fare."
+    },
+    "de": {
+     "t": "Billigairlines erklärt",
+     "g": "Lerne, was Billigflieger enthalten, was extra kostet und wie du beim Grundpreis bleibst.",
+     "p": [
+      "Der Grundpreis deckt meist dich und eine kleine persönliche Tasche, die unter den Sitz passt.",
+      "Größeres Handgepäck, Aufgabegepäck, Sitzwahl, Essen und teils Check-in am Flughafen kosten extra.",
+      "Reise leicht, check online ein, nimm Snacks und deine Bordkarte mit, dann bleibt der Grundpreis ein Schnäppchen."
+     ],
+     "q": "Bist du schon mit einer Billigairline geflogen? Wie lief es mit Gepäck und Extras?",
+     "c": "Lies die Gepäck- und Extraregeln einer Billigairline und notiere, was im Grundpreis enthalten ist."
+    },
+    "es": {
+     "t": "Las aerolíneas low cost",
+     "g": "Aprende qué incluyen las aerolíneas de bajo coste, qué se paga aparte y cómo quedarte en la tarifa básica.",
+     "p": [
+      "La tarifa básica suele cubrirte a ti y un bolso pequeño que cabe bajo el asiento.",
+      "La maleta de cabina grande, la facturada, elegir asiento, la comida y a veces facturar en el aeropuerto se pagan.",
+      "Viaja ligero, haz el check-in online, lleva tentempiés y tu tarjeta de embarque, y la tarifa básica seguirá siendo un chollo."
+     ],
+     "q": "¿Has volado con una aerolínea low cost? ¿Qué tal con el equipaje y los extras?",
+     "c": "Lee las normas de equipaje y extras de una aerolínea low cost y anota qué incluye la tarifa básica."
+    },
+    "fr": {
+     "t": "Les compagnies low cost",
+     "g": "Découvre ce que comprennent les compagnies à bas prix, ce qui est en supplément et comment rester au tarif de base.",
+     "p": [
+      "Le tarif de base couvre en général toi et un petit sac personnel qui tient sous le siège.",
+      "Grand bagage cabine, bagage en soute, choix du siège, repas et parfois enregistrement à l'aéroport sont payants.",
+      "Voyage léger, enregistre-toi en ligne, prends des en-cas et ta carte d'embarquement : le tarif de base reste une affaire."
+     ],
+     "q": "As-tu déjà volé en low cost ? Comment ça s'est passé avec les bagages et les options ?",
+     "c": "Lis les règles bagages et options d'une compagnie low cost et note ce que comprend le tarif de base."
+    },
+    "it": {
+     "t": "Le compagnie low cost spiegate",
+     "g": "Scopri cosa includono le compagnie low cost, cosa si paga a parte e come restare nella tariffa base.",
+     "p": [
+      "La tariffa base di solito copre te e una piccola borsa personale che sta sotto il sedile.",
+      "Trolley grande, bagaglio in stiva, scelta del posto, cibo e talvolta il check-in in aeroporto si pagano.",
+      "Viaggia leggero, fai il check-in online, porta snack e carta d'imbarco, e la tariffa base resta un affare."
+     ],
+     "q": "Hai mai volato con una low cost? Com'è andata con bagagli ed extra?",
+     "c": "Leggi le regole su bagagli ed extra di una low cost e scrivi cosa include la tariffa base."
+    },
+    "pt": {
+     "t": "As companhias low cost",
+     "g": "Aprende o que incluem as companhias de baixo custo, o que se paga à parte e como ficar na tarifa base.",
+     "p": [
+      "A tarifa base costuma cobrir-te a ti e a uma mala pequena que cabe debaixo do banco.",
+      "Mala de cabine maior, bagagem de porão, escolha de lugar, comida e às vezes check-in no aeroporto pagam-se.",
+      "Viaja leve, faz check-in online, leva snacks e o cartão de embarque, e a tarifa base continua a ser um bom negócio."
+     ],
+     "q": "Já voaste numa companhia low cost? Como correu com a bagagem e os extras?",
+     "c": "Lê as regras de bagagem e extras de uma low cost e anota o que está incluído na tarifa base."
+    },
+    "pt_BR": {
+     "t": "Companhias aéreas de baixo custo",
+     "g": "Aprenda o que as low cost incluem, o que é cobrado à parte e como ficar só na tarifa básica.",
+     "p": [
+      "A tarifa básica costuma cobrir você e uma bolsa pequena que cabe embaixo do assento.",
+      "Mala de mão maior, bagagem despachada, escolha de assento, comida e às vezes check-in no aeroporto são pagos.",
+      "Viaje leve, faça check-in online, leve lanche e o cartão de embarque, e a tarifa básica continua um bom negócio."
+     ],
+     "q": "Você já voou numa low cost? Como foi com bagagem e extras?",
+     "c": "Leia as regras de bagagem e extras de uma low cost e anote o que está incluído na tarifa básica."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Baggage rules and fees",
+     "g": "Know cabin bag sizes and weights so you avoid costly surprises at the gate.",
+     "p": [
+      "Each airline sets its own size and weight limits, and they can differ even on the same route.",
+      "Measure your bag with wheels and handles included, and weigh it when packed.",
+      "A soft backpack that squeezes into the sizer is often easier than a rigid suitcase."
+     ],
+     "q": "What is the one item you always pack that takes up too much space?",
+     "c": "Measure and weigh your usual travel bag and compare it with one airline's cabin bag rules."
+    },
+    "de": {
+     "t": "Gepäckregeln und Gebühren",
+     "g": "Kenne Größe und Gewicht fürs Handgepäck, damit dich am Gate keine teuren Überraschungen erwarten.",
+     "p": [
+      "Jede Airline legt eigene Größen- und Gewichtsgrenzen fest, selbst auf derselben Strecke.",
+      "Miss deine Tasche samt Rollen und Griffen und wiege sie fertig gepackt.",
+      "Ein weicher Rucksack passt oft leichter in den Messrahmen als ein fester Koffer."
+     ],
+     "q": "Welchen Gegenstand packst du immer ein, der zu viel Platz wegnimmt?",
+     "c": "Miss und wiege deine übliche Reisetasche und vergleiche sie mit den Handgepäckregeln einer Airline."
+    },
+    "es": {
+     "t": "Normas y tasas de equipaje",
+     "g": "Conoce medidas y pesos del equipaje de cabina para evitar sorpresas caras en la puerta de embarque.",
+     "p": [
+      "Cada aerolínea fija sus propios límites de tamaño y peso, incluso en la misma ruta.",
+      "Mide tu maleta con ruedas y asas incluidas, y pésala ya hecha.",
+      "Una mochila blanda que se adapta al medidor suele ser más fácil que una maleta rígida."
+     ],
+     "q": "¿Qué cosa metes siempre en la maleta que ocupa demasiado espacio?",
+     "c": "Mide y pesa tu bolsa de viaje habitual y compárala con las normas de cabina de una aerolínea."
+    },
+    "fr": {
+     "t": "Règles et frais de bagages",
+     "g": "Connais les tailles et poids autorisés en cabine pour éviter les mauvaises surprises coûteuses à la porte.",
+     "p": [
+      "Chaque compagnie fixe ses propres limites de taille et de poids, même sur un même trajet.",
+      "Mesure ton bagage roues et poignées comprises, et pèse-le une fois rempli.",
+      "Un sac à dos souple qui se glisse dans le gabarit est souvent plus pratique qu'une valise rigide."
+     ],
+     "q": "Quel objet emportes-tu toujours alors qu'il prend trop de place ?",
+     "c": "Mesure et pèse ton sac de voyage habituel et compare-le aux règles cabine d'une compagnie."
+    },
+    "it": {
+     "t": "Regole e costi del bagaglio",
+     "g": "Conosci misure e pesi del bagaglio a mano per evitare sorprese costose al gate.",
+     "p": [
+      "Ogni compagnia fissa i propri limiti di misura e peso, anche sulla stessa tratta.",
+      "Misura il bagaglio con ruote e maniglie comprese e pesalo quando è pieno.",
+      "Uno zaino morbido che entra nel misuratore è spesso più comodo di una valigia rigida."
+     ],
+     "q": "Qual è l'oggetto che metti sempre in valigia e che occupa troppo spazio?",
+     "c": "Misura e pesa la tua solita borsa da viaggio e confrontala con le regole del bagaglio a mano di una compagnia."
+    },
+    "pt": {
+     "t": "Regras e taxas de bagagem",
+     "g": "Conhece as medidas e pesos da bagagem de cabine para evitares surpresas caras na porta de embarque.",
+     "p": [
+      "Cada companhia define os seus limites de tamanho e peso, mesmo na mesma rota.",
+      "Mede a mala com rodas e pegas incluídas e pesa-a já feita.",
+      "Uma mochila mole que entra no medidor é muitas vezes mais fácil do que uma mala rígida."
+     ],
+     "q": "Que objeto levas sempre na mala e que ocupa espaço demais?",
+     "c": "Mede e pesa a tua mala de viagem habitual e compara-a com as regras de cabine de uma companhia."
+    },
+    "pt_BR": {
+     "t": "Regras e taxas de bagagem",
+     "g": "Conheça as medidas e pesos da bagagem de mão para evitar surpresas caras no portão de embarque.",
+     "p": [
+      "Cada companhia define seus próprios limites de tamanho e peso, mesmo na mesma rota.",
+      "Meça a mala com rodinhas e alças incluídas e pese já arrumada.",
+      "Uma mochila macia que cabe no medidor costuma ser mais fácil que uma mala rígida."
+     ],
+     "q": "Qual item você sempre leva na mala e que ocupa espaço demais?",
+     "c": "Meça e pese sua mala de viagem de sempre e compare com as regras de bagagem de mão de uma companhia."
+    }
+   }
+  }
+ ]
+}

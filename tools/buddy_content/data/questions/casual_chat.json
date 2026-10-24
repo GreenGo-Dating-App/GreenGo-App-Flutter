@@ -1,0 +1,1305 @@
+{
+"topic": "casual_chat",
+"questions": [
+{
+"id": "casual_chat-001",
+"lv": "any",
+"i18n": {
+"en": "What's the best thing that happened to you today?",
+"de": "Was war heute das Schönste, das dir passiert ist?",
+"es": "¿Qué es lo mejor que te ha pasado hoy?",
+"fr": "Quelle est la meilleure chose qui t'est arrivée aujourd'hui ?",
+"it": "Qual è la cosa più bella che ti è successa oggi?",
+"pt": "Qual foi a melhor coisa que te aconteceu hoje?",
+"pt_BR": "Qual foi a melhor coisa que aconteceu com você hoje?"
+}
+},
+{
+"id": "casual_chat-002",
+"lv": "any",
+"i18n": {
+"en": "Coffee, tea or something else: what's your favourite drink?",
+"de": "Kaffee, Tee oder etwas ganz anderes: Was ist dein Lieblingsgetränk?",
+"es": "¿Café, té u otra cosa? ¿Cuál es tu bebida favorita?",
+"fr": "Café, thé ou autre chose : quelle est ta boisson préférée ?",
+"it": "Caffè, tè o altro: qual è la tua bevanda preferita?",
+"pt": "Café, chá ou outra coisa: qual é a tua bebida preferida?",
+"pt_BR": "Café, chá ou outra coisa: qual é a sua bebida favorita?"
+}
+},
+{
+"id": "casual_chat-003",
+"lv": "any",
+"i18n": {
+"en": "What did you have for breakfast, and is it your usual?",
+"de": "Was hattest du zum Frühstück, und ist das dein übliches?",
+"es": "¿Qué desayunaste y es lo que sueles tomar?",
+"fr": "Qu'as-tu pris au petit-déjeuner, et est-ce ton habitude ?",
+"it": "Cosa hai mangiato a colazione, ed è la tua solita?",
+"pt": "O que comeste ao pequeno-almoço, e é o habitual?",
+"pt_BR": "O que você tomou no café da manhã, e é o de sempre?"
+}
+},
+{
+"id": "casual_chat-004",
+"lv": "any",
+"i18n": {
+"en": "What are you looking forward to this weekend?",
+"de": "Worauf freust du dich an diesem Wochenende?",
+"es": "¿Qué te hace ilusión hacer este fin de semana?",
+"fr": "Qu'est-ce qui te réjouit pour ce week-end ?",
+"it": "Cosa non vedi l'ora di fare questo fine settimana?",
+"pt": "O que estás ansioso por fazer este fim de semana?",
+"pt_BR": "O que você está animado para fazer neste fim de semana?"
+}
+},
+{
+"id": "casual_chat-005",
+"lv": "any",
+"i18n": {
+"en": "Which song have you been listening to a lot lately?",
+"de": "Welchen Song hörst du in letzter Zeit ständig?",
+"es": "¿Qué canción has escuchado mucho últimamente?",
+"fr": "Quelle chanson écoutes-tu beaucoup ces temps-ci ?",
+"it": "Quale canzone ascolti spesso ultimamente?",
+"pt": "Que música tens ouvido muito ultimamente?",
+"pt_BR": "Que música você tem ouvido muito ultimamente?"
+}
+},
+{
+"id": "casual_chat-006",
+"lv": "any",
+"i18n": {
+"en": "What's a film or series you'd recommend to a friend?",
+"de": "Welchen Film oder welche Serie würdest du einem Freund empfehlen?",
+"es": "¿Qué película o serie le recomendarías a un amigo?",
+"fr": "Quel film ou quelle série recommanderais-tu à un ami ?",
+"it": "Quale film o serie consiglieresti a un amico?",
+"pt": "Que filme ou série recomendarias a um amigo?",
+"pt_BR": "Que filme ou série você recomendaria para um amigo?"
+}
+},
+{
+"id": "casual_chat-007",
+"lv": "any",
+"i18n": {
+"en": "Are you a morning person or a night owl?",
+"de": "Bist du eher Frühaufsteher oder Nachteule?",
+"es": "¿Eres más de mañanas o de noches?",
+"fr": "Es-tu plutôt du matin ou du soir ?",
+"it": "Sei più una persona mattiniera o un nottambulo?",
+"pt": "És mais pessoa da manhã ou da noite?",
+"pt_BR": "Você é mais uma pessoa matutina ou noturna?"
+}
+},
+{
+"id": "casual_chat-008",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite way to spend a lazy afternoon?",
+"de": "Wie verbringst du am liebsten einen faulen Nachmittag?",
+"es": "¿Cuál es tu forma favorita de pasar una tarde tranquila?",
+"fr": "Quelle est ta façon préférée de passer un après-midi tranquille ?",
+"it": "Qual è il tuo modo preferito di passare un pomeriggio pigro?",
+"pt": "Qual é a tua forma preferida de passar uma tarde preguiçosa?",
+"pt_BR": "Qual é o seu jeito favorito de passar uma tarde de preguiça?"
+}
+},
+{
+"id": "casual_chat-009",
+"lv": "any",
+"i18n": {
+"en": "Which season do you love most, and why?",
+"de": "Welche Jahreszeit liebst du am meisten, und warum?",
+"es": "¿Qué estación del año te gusta más y por qué?",
+"fr": "Quelle saison préfères-tu, et pourquoi ?",
+"it": "Quale stagione ami di più, e perché?",
+"pt": "Que estação do ano adoras mais, e porquê?",
+"pt_BR": "Qual estação do ano você mais ama, e por quê?"
+}
+},
+{
+"id": "casual_chat-010",
+"lv": "any",
+"i18n": {
+"en": "What's a dish you could eat every week?",
+"de": "Welches Gericht könntest du jede Woche essen?",
+"es": "¿Qué plato podrías comer todas las semanas?",
+"fr": "Quel plat pourrais-tu manger chaque semaine ?",
+"it": "Quale piatto potresti mangiare ogni settimana?",
+"pt": "Que prato podias comer todas as semanas?",
+"pt_BR": "Que prato você poderia comer toda semana?"
+}
+},
+{
+"id": "casual_chat-011",
+"lv": "any",
+"i18n": {
+"en": "If you could visit any city tomorrow, where would you go?",
+"de": "Wenn du morgen jede beliebige Stadt besuchen könntest, wohin würdest du fahren?",
+"es": "Si mañana pudieras visitar cualquier ciudad, ¿adónde irías?",
+"fr": "Si tu pouvais visiter n'importe quelle ville demain, où irais-tu ?",
+"it": "Se domani potessi visitare qualsiasi città, dove andresti?",
+"pt": "Se amanhã pudesses visitar qualquer cidade, para onde irias?",
+"pt_BR": "Se amanhã você pudesse visitar qualquer cidade, para onde iria?"
+}
+},
+{
+"id": "casual_chat-012",
+"lv": "any",
+"i18n": {
+"en": "What's a hobby you enjoy, or would love to start?",
+"de": "Welches Hobby hast du, oder welches würdest du gern anfangen?",
+"es": "¿Qué afición disfrutas o te encantaría empezar?",
+"fr": "Quel loisir aimes-tu, ou aimerais-tu commencer ?",
+"it": "Quale hobby ti piace, o ti piacerebbe iniziare?",
+"pt": "Que passatempo gostas de ter, ou adoravas começar?",
+"pt_BR": "Que hobby você curte, ou adoraria começar?"
+}
+},
+{
+"id": "casual_chat-013",
+"lv": "any",
+"i18n": {
+"en": "Do you have a pet, or a dream pet?",
+"de": "Hast du ein Haustier oder ein Traumhaustier?",
+"es": "¿Tienes mascota o una mascota soñada?",
+"fr": "As-tu un animal de compagnie, ou un animal de rêve ?",
+"it": "Hai un animale domestico, o un animale dei sogni?",
+"pt": "Tens um animal de estimação, ou um de sonho?",
+"pt_BR": "Você tem um bichinho de estimação, ou um dos sonhos?"
+}
+},
+{
+"id": "casual_chat-014",
+"lv": "any",
+"i18n": {
+"en": "What made you laugh recently?",
+"de": "Was hat dich in letzter Zeit zum Lachen gebracht?",
+"es": "¿Qué te ha hecho reír últimamente?",
+"fr": "Qu'est-ce qui t'a fait rire récemment ?",
+"it": "Cosa ti ha fatto ridere di recente?",
+"pt": "O que te fez rir ultimamente?",
+"pt_BR": "O que te fez rir recentemente?"
+}
+},
+{
+"id": "casual_chat-015",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite place in your town?",
+"de": "Was ist dein Lieblingsort in deiner Stadt?",
+"es": "¿Cuál es tu lugar favorito de tu ciudad?",
+"fr": "Quel est ton endroit préféré dans ta ville ?",
+"it": "Qual è il tuo posto preferito nella tua città?",
+"pt": "Qual é o teu sítio preferido na tua terra?",
+"pt_BR": "Qual é o seu lugar favorito na sua cidade?"
+}
+},
+{
+"id": "casual_chat-016",
+"lv": "any",
+"i18n": {
+"en": "Which snack can you never say no to?",
+"de": "Zu welchem Snack kannst du nie Nein sagen?",
+"es": "¿A qué snack nunca puedes decir que no?",
+"fr": "À quel en-cas ne peux-tu jamais dire non ?",
+"it": "A quale snack non riesci mai a dire di no?",
+"pt": "A que petisco nunca consegues dizer que não?",
+"pt_BR": "Para qual lanchinho você nunca consegue dizer não?"
+}
+},
+{
+"id": "casual_chat-017",
+"lv": "any",
+"i18n": {
+"en": "What's the weather like where you are, and do you like it?",
+"de": "Wie ist das Wetter bei dir, und gefällt es dir?",
+"es": "¿Qué tiempo hace donde estás y te gusta?",
+"fr": "Quel temps fait-il chez toi, et ça te plaît ?",
+"it": "Che tempo fa dove sei, e ti piace?",
+"pt": "Como está o tempo onde estás, e gostas?",
+"pt_BR": "Como está o tempo aí onde você está, e você gosta?"
+}
+},
+{
+"id": "casual_chat-018",
+"lv": "any",
+"i18n": {
+"en": "What's a small pleasure that makes your day better?",
+"de": "Welche kleine Freude macht deinen Tag besser?",
+"es": "¿Qué pequeño placer mejora tu día?",
+"fr": "Quel petit plaisir rend ta journée meilleure ?",
+"it": "Quale piccolo piacere rende migliore la tua giornata?",
+"pt": "Que pequeno prazer torna o teu dia melhor?",
+"pt_BR": "Que pequeno prazer deixa o seu dia melhor?"
+}
+},
+{
+"id": "casual_chat-019",
+"lv": "any",
+"i18n": {
+"en": "Which app do you open most on your phone?",
+"de": "Welche App öffnest du auf deinem Handy am häufigsten?",
+"es": "¿Qué aplicación abres más en el móvil?",
+"fr": "Quelle appli ouvres-tu le plus sur ton téléphone ?",
+"it": "Quale app apri di più sul telefono?",
+"pt": "Que aplicação abres mais no telemóvel?",
+"pt_BR": "Qual aplicativo você mais abre no celular?"
+}
+},
+{
+"id": "casual_chat-020",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite thing to cook?",
+"de": "Was kochst du am liebsten?",
+"es": "¿Qué es lo que más te gusta cocinar?",
+"fr": "Qu'est-ce que tu préfères cuisiner ?",
+"it": "Qual è la cosa che ami di più cucinare?",
+"pt": "O que mais gostas de cozinhar?",
+"pt_BR": "O que você mais gosta de cozinhar?"
+}
+},
+{
+"id": "casual_chat-021",
+"lv": "any",
+"i18n": {
+"en": "What's a fun fact you know that surprises people?",
+"de": "Welche lustige Tatsache kennst du, die Leute überrascht?",
+"es": "¿Qué dato curioso conoces que sorprenda a la gente?",
+"fr": "Quelle anecdote amusante connais-tu qui surprend les gens ?",
+"it": "Quale curiosità conosci che sorprende sempre le persone?",
+"pt": "Que curiosidade conheces que surpreende as pessoas?",
+"pt_BR": "Que curiosidade você conhece que surpreende as pessoas?"
+}
+},
+{
+"id": "casual_chat-022",
+"lv": "any",
+"i18n": {
+"en": "Which game did you love playing as a kid?",
+"de": "Welches Spiel hast du als Kind geliebt?",
+"es": "¿A qué juego te encantaba jugar de pequeño?",
+"fr": "À quel jeu adorais-tu jouer quand tu étais petit ?",
+"it": "A quale gioco amavi giocare da piccolo?",
+"pt": "A que jogo adoravas jogar em criança?",
+"pt_BR": "Qual brincadeira você adorava quando era criança?"
+}
+},
+{
+"id": "casual_chat-023",
+"lv": "any",
+"i18n": {
+"en": "What's a book or story you still remember?",
+"de": "An welches Buch oder welche Geschichte erinnerst du dich noch heute?",
+"es": "¿Qué libro o historia todavía recuerdas?",
+"fr": "Quel livre ou quelle histoire te reste encore en mémoire ?",
+"it": "Quale libro o storia ricordi ancora?",
+"pt": "Que livro ou história ainda recordas?",
+"pt_BR": "Que livro ou história você ainda lembra?"
+}
+},
+{
+"id": "casual_chat-024",
+"lv": "any",
+"i18n": {
+"en": "What's your idea of a perfect day?",
+"de": "Wie sieht für dich ein perfekter Tag aus?",
+"es": "¿Cómo sería para ti un día perfecto?",
+"fr": "À quoi ressemblerait ta journée parfaite ?",
+"it": "Come sarebbe per te una giornata perfetta?",
+"pt": "Como seria para ti um dia perfeito?",
+"pt_BR": "Como seria um dia perfeito para você?"
+}
+},
+{
+"id": "casual_chat-025",
+"lv": "any",
+"i18n": {
+"en": "Which festival or celebration do you enjoy most?",
+"de": "Welches Fest oder welche Feier magst du am liebsten?",
+"es": "¿Qué fiesta o celebración disfrutas más?",
+"fr": "Quelle fête ou célébration préfères-tu ?",
+"it": "Quale festa o celebrazione ti piace di più?",
+"pt": "Que festa ou celebração mais aprecias?",
+"pt_BR": "Qual festa ou comemoração você mais curte?"
+}
+},
+{
+"id": "casual_chat-026",
+"lv": "any",
+"i18n": {
+"en": "What's a word in any language that you love?",
+"de": "Welches Wort, egal in welcher Sprache, liebst du?",
+"es": "¿Qué palabra, en cualquier idioma, te encanta?",
+"fr": "Quel mot, dans n'importe quelle langue, adores-tu ?",
+"it": "Quale parola, in qualsiasi lingua, ami particolarmente?",
+"pt": "Que palavra, em qualquer língua, adoras?",
+"pt_BR": "Qual palavra, em qualquer idioma, você adora?"
+}
+},
+{
+"id": "casual_chat-027",
+"lv": "any",
+"i18n": {
+"en": "Beach or mountains: which do you prefer, and why?",
+"de": "Strand oder Berge: Was ist dir lieber, und warum?",
+"es": "¿Playa o montaña? ¿Qué prefieres y por qué?",
+"fr": "Plage ou montagne : que préfères-tu, et pourquoi ?",
+"it": "Mare o montagna: cosa preferisci, e perché?",
+"pt": "Praia ou montanha: o que preferes, e porquê?",
+"pt_BR": "Praia ou montanha: qual você prefere, e por quê?"
+}
+},
+{
+"id": "casual_chat-028",
+"lv": "any",
+"i18n": {
+"en": "What's something new you'd like to try soon?",
+"de": "Was Neues würdest du bald gern ausprobieren?",
+"es": "¿Qué cosa nueva te gustaría probar pronto?",
+"fr": "Quelle nouveauté aimerais-tu essayer bientôt ?",
+"it": "Cosa di nuovo ti piacerebbe provare presto?",
+"pt": "Que coisa nova gostavas de experimentar em breve?",
+"pt_BR": "Que coisa nova você gostaria de experimentar em breve?"
+}
+},
+{
+"id": "casual_chat-029",
+"lv": "any",
+"i18n": {
+"en": "Which sound do you find relaxing?",
+"de": "Welches Geräusch findest du entspannend?",
+"es": "¿Qué sonido te resulta relajante?",
+"fr": "Quel son trouves-tu relaxant ?",
+"it": "Quale suono trovi rilassante?",
+"pt": "Que som achas relaxante?",
+"pt_BR": "Que som você acha relaxante?"
+}
+},
+{
+"id": "casual_chat-030",
+"lv": "any",
+"i18n": {
+"en": "What's the most interesting place you've ever visited?",
+"de": "Was ist der interessanteste Ort, den du je besucht hast?",
+"es": "¿Cuál es el lugar más interesante que has visitado?",
+"fr": "Quel est l'endroit le plus intéressant que tu aies visité ?",
+"it": "Qual è il posto più interessante che tu abbia mai visitato?",
+"pt": "Qual é o lugar mais interessante que já visitaste?",
+"pt_BR": "Qual é o lugar mais interessante que você já visitou?"
+}
+},
+{
+"id": "casual_chat-031",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer sweet or savoury snacks?",
+"de": "Magst du lieber süße oder herzhafte Snacks?",
+"es": "¿Prefieres picar algo dulce o salado?",
+"fr": "Préfères-tu les en-cas sucrés ou salés ?",
+"it": "Preferisci gli snack dolci o salati?",
+"pt": "Preferes petiscos doces ou salgados?",
+"pt_BR": "Você prefere lanchinhos doces ou salgados?"
+}
+},
+{
+"id": "casual_chat-032",
+"lv": "any",
+"i18n": {
+"en": "What's a tradition from your home that you love?",
+"de": "Welche Tradition aus deiner Heimat liebst du?",
+"es": "¿Qué tradición de tu tierra te encanta?",
+"fr": "Quelle tradition de chez toi adores-tu ?",
+"it": "Quale tradizione di casa tua ami?",
+"pt": "Que tradição da tua terra adoras?",
+"pt_BR": "Que tradição da sua terra você adora?"
+}
+},
+{
+"id": "casual_chat-033",
+"lv": "any",
+"i18n": {
+"en": "Who is the funniest person you know?",
+"de": "Wer ist der lustigste Mensch, den du kennst?",
+"es": "¿Quién es la persona más divertida que conoces?",
+"fr": "Qui est la personne la plus drôle que tu connaisses ?",
+"it": "Chi è la persona più divertente che conosci?",
+"pt": "Quem é a pessoa mais divertida que conheces?",
+"pt_BR": "Quem é a pessoa mais engraçada que você conhece?"
+}
+},
+{
+"id": "casual_chat-034",
+"lv": "any",
+"i18n": {
+"en": "What's something you're really good at?",
+"de": "Worin bist du richtig gut?",
+"es": "¿En qué eres realmente bueno o buena?",
+"fr": "Dans quoi es-tu vraiment doué ou douée ?",
+"it": "In cosa sei davvero bravo o brava?",
+"pt": "Em que és mesmo bom ou boa?",
+"pt_BR": "Em que você é muito bom?"
+}
+},
+{
+"id": "casual_chat-035",
+"lv": "any",
+"i18n": {
+"en": "Which colour makes you happy?",
+"de": "Welche Farbe macht dich glücklich?",
+"es": "¿Qué color te pone de buen humor?",
+"fr": "Quelle couleur te rend heureux ou heureuse ?",
+"it": "Quale colore ti mette di buon umore?",
+"pt": "Que cor te deixa feliz?",
+"pt_BR": "Que cor te deixa feliz?"
+}
+},
+{
+"id": "casual_chat-036",
+"lv": "any",
+"i18n": {
+"en": "How do you like to spend time with friends?",
+"de": "Wie verbringst du am liebsten Zeit mit Freunden?",
+"es": "¿Cómo te gusta pasar el tiempo con tus amigos?",
+"fr": "Comment aimes-tu passer du temps avec tes amis ?",
+"it": "Come ti piace passare il tempo con gli amici?",
+"pt": "Como gostas de passar tempo com os amigos?",
+"pt_BR": "Como você gosta de passar o tempo com os amigos?"
+}
+},
+{
+"id": "casual_chat-037",
+"lv": "any",
+"i18n": {
+"en": "What's the best advice you've ever received?",
+"de": "Was ist der beste Rat, den du je bekommen hast?",
+"es": "¿Cuál es el mejor consejo que te han dado?",
+"fr": "Quel est le meilleur conseil qu'on t'ait jamais donné ?",
+"it": "Qual è il miglior consiglio che tu abbia mai ricevuto?",
+"pt": "Qual foi o melhor conselho que já recebeste?",
+"pt_BR": "Qual foi o melhor conselho que você já recebeu?"
+}
+},
+{
+"id": "casual_chat-038",
+"lv": "any",
+"i18n": {
+"en": "Which skill would you learn in a day if you could?",
+"de": "Welche Fähigkeit würdest du gern an einem einzigen Tag lernen, wenn das ginge?",
+"es": "Si pudieras, ¿qué habilidad aprenderías en un solo día?",
+"fr": "Si tu le pouvais, quelle compétence apprendrais-tu en une journée ?",
+"it": "Se potessi, quale abilità impareresti in un solo giorno?",
+"pt": "Se pudesses, que capacidade aprenderias num só dia?",
+"pt_BR": "Se pudesse, que habilidade você aprenderia em um único dia?"
+}
+},
+{
+"id": "casual_chat-039",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite thing about where you live?",
+"de": "Was gefällt dir am besten an dem Ort, an dem du lebst?",
+"es": "¿Qué es lo que más te gusta del lugar donde vives?",
+"fr": "Qu'est-ce que tu préfères dans l'endroit où tu vis ?",
+"it": "Cosa ti piace di più del posto in cui vivi?",
+"pt": "O que mais gostas no sítio onde vives?",
+"pt_BR": "O que você mais gosta no lugar onde mora?"
+}
+},
+{
+"id": "casual_chat-040",
+"lv": "any",
+"i18n": {
+"en": "What's a little goal you have for this week?",
+"de": "Welches kleine Ziel hast du dir für diese Woche vorgenommen?",
+"es": "¿Qué pequeña meta tienes para esta semana?",
+"fr": "Quel petit objectif as-tu pour cette semaine ?",
+"it": "Quale piccolo obiettivo hai per questa settimana?",
+"pt": "Que pequeno objetivo tens para esta semana?",
+"pt_BR": "Que pequena meta você tem para esta semana?"
+}
+},
+{
+"id": "casual_chat-041",
+"lv": "beginner",
+"i18n": {
+"en": "How was your day so far?",
+"de": "Wie war dein Tag bisher?",
+"es": "¿Qué tal tu día hasta ahora?",
+"fr": "Comment se passe ta journée jusqu'ici ?",
+"it": "Com'è andata la giornata finora?",
+"pt": "Como está a correr o teu dia até agora?",
+"pt_BR": "Como está sendo o seu dia até agora?"
+}
+},
+{
+"id": "casual_chat-042",
+"lv": "beginner",
+"i18n": {
+"en": "Where are you from, and what is it like there?",
+"de": "Woher kommst du, und wie ist es dort?",
+"es": "¿De dónde eres y cómo es aquello?",
+"fr": "D'où viens-tu, et comment c'est là-bas ?",
+"it": "Di dove sei, e com'è lì?",
+"pt": "De onde és, e como é lá?",
+"pt_BR": "De onde você é, e como é lá?"
+}
+},
+{
+"id": "casual_chat-043",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually do after work or school?",
+"de": "Was machst du normalerweise nach der Arbeit oder der Schule?",
+"es": "¿Qué sueles hacer después del trabajo o de clase?",
+"fr": "Que fais-tu d'habitude après le travail ou les cours ?",
+"it": "Cosa fai di solito dopo il lavoro o la scuola?",
+"pt": "O que costumas fazer depois do trabalho ou das aulas?",
+"pt_BR": "O que você costuma fazer depois do trabalho ou da escola?"
+}
+},
+{
+"id": "casual_chat-044",
+"lv": "beginner",
+"i18n": {
+"en": "Which three words describe your hometown?",
+"de": "Welche drei Wörter beschreiben deine Heimatstadt?",
+"es": "¿Qué tres palabras describen tu ciudad natal?",
+"fr": "Quels trois mots décrivent ta ville natale ?",
+"it": "Quali tre parole descrivono la tua città natale?",
+"pt": "Que três palavras descrevem a tua terra natal?",
+"pt_BR": "Quais três palavras descrevem a sua cidade natal?"
+}
+},
+{
+"id": "casual_chat-045",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite food from your country?",
+"de": "Was ist dein Lieblingsessen aus deinem Land?",
+"es": "¿Cuál es tu comida favorita de tu país?",
+"fr": "Quel est ton plat préféré de ton pays ?",
+"it": "Qual è il tuo piatto preferito del tuo paese?",
+"pt": "Qual é a tua comida preferida do teu país?",
+"pt_BR": "Qual é a sua comida favorita do seu país?"
+}
+},
+{
+"id": "casual_chat-046",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually get around: bus, bike, car or on foot?",
+"de": "Wie bist du meistens unterwegs: mit Bus, Fahrrad, Auto oder zu Fuß?",
+"es": "¿Cómo te sueles mover: en autobús, bici, coche o a pie?",
+"fr": "Comment te déplaces-tu d'habitude : bus, vélo, voiture ou à pied ?",
+"it": "Come ti sposti di solito: autobus, bici, auto o a piedi?",
+"pt": "Como costumas deslocar-te: autocarro, bicicleta, carro ou a pé?",
+"pt_BR": "Como você costuma se locomover: ônibus, bicicleta, carro ou a pé?"
+}
+},
+{
+"id": "casual_chat-047",
+"lv": "beginner",
+"i18n": {
+"en": "What time do you usually wake up?",
+"de": "Wann stehst du normalerweise auf?",
+"es": "¿A qué hora te sueles despertar?",
+"fr": "À quelle heure te réveilles-tu d'habitude ?",
+"it": "A che ora ti svegli di solito?",
+"pt": "A que horas costumas acordar?",
+"pt_BR": "Que horas você costuma acordar?"
+}
+},
+{
+"id": "casual_chat-048",
+"lv": "beginner",
+"i18n": {
+"en": "What music do you like to listen to when you relax?",
+"de": "Welche Musik hörst du gern zum Entspannen?",
+"es": "¿Qué música te gusta escuchar para relajarte?",
+"fr": "Quelle musique aimes-tu écouter pour te détendre ?",
+"it": "Che musica ti piace ascoltare per rilassarti?",
+"pt": "Que música gostas de ouvir para relaxar?",
+"pt_BR": "Que música você gosta de ouvir para relaxar?"
+}
+},
+{
+"id": "casual_chat-049",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite day of the week, and why?",
+"de": "Was ist dein Lieblingswochentag, und warum?",
+"es": "¿Cuál es tu día favorito de la semana y por qué?",
+"fr": "Quel est ton jour préféré de la semaine, et pourquoi ?",
+"it": "Qual è il tuo giorno preferito della settimana, e perché?",
+"pt": "Qual é o teu dia preferido da semana, e porquê?",
+"pt_BR": "Qual é o seu dia favorito da semana, e por quê?"
+}
+},
+{
+"id": "casual_chat-050",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like cooking, or do you prefer eating out?",
+"de": "Kochst du gern, oder gehst du lieber essen?",
+"es": "¿Te gusta cocinar o prefieres comer fuera?",
+"fr": "Aimes-tu cuisiner, ou préfères-tu manger dehors ?",
+"it": "Ti piace cucinare o preferisci mangiare fuori?",
+"pt": "Gostas de cozinhar ou preferes comer fora?",
+"pt_BR": "Você gosta de cozinhar ou prefere comer fora?"
+}
+},
+{
+"id": "casual_chat-051",
+"lv": "beginner",
+"i18n": {
+"en": "What's the last photo you took on your phone?",
+"de": "Was ist das letzte Foto, das du mit deinem Handy gemacht hast?",
+"es": "¿Cuál es la última foto que hiciste con el móvil?",
+"fr": "Quelle est la dernière photo que tu as prise avec ton téléphone ?",
+"it": "Qual è l'ultima foto che hai scattato con il telefono?",
+"pt": "Qual foi a última fotografia que tiraste com o telemóvel?",
+"pt_BR": "Qual foi a última foto que você tirou no celular?"
+}
+},
+{
+"id": "casual_chat-052",
+"lv": "beginner",
+"i18n": {
+"en": "Which sport do you enjoy watching or playing?",
+"de": "Welchen Sport schaust oder spielst du gern?",
+"es": "¿Qué deporte te gusta ver o practicar?",
+"fr": "Quel sport aimes-tu regarder ou pratiquer ?",
+"it": "Quale sport ti piace guardare o praticare?",
+"pt": "Que desporto gostas de ver ou praticar?",
+"pt_BR": "Que esporte você gosta de assistir ou praticar?"
+}
+},
+{
+"id": "casual_chat-053",
+"lv": "beginner",
+"i18n": {
+"en": "What do you like to do when it rains?",
+"de": "Was machst du gern, wenn es regnet?",
+"es": "¿Qué te gusta hacer cuando llueve?",
+"fr": "Qu'aimes-tu faire quand il pleut ?",
+"it": "Cosa ti piace fare quando piove?",
+"pt": "O que gostas de fazer quando chove?",
+"pt_BR": "O que você gosta de fazer quando chove?"
+}
+},
+{
+"id": "casual_chat-054",
+"lv": "beginner",
+"i18n": {
+"en": "What was your favourite cartoon as a child?",
+"de": "Was war als Kind deine Lieblingszeichentrickserie?",
+"es": "¿Cuáles eran tus dibujos animados favoritos de pequeño?",
+"fr": "Quel était ton dessin animé préféré quand tu étais enfant ?",
+"it": "Qual era il tuo cartone animato preferito da bambino?",
+"pt": "Qual era o teu desenho animado preferido em criança?",
+"pt_BR": "Qual era o seu desenho animado favorito quando criança?"
+}
+},
+{
+"id": "casual_chat-055",
+"lv": "beginner",
+"i18n": {
+"en": "Which languages do you speak or want to learn?",
+"de": "Welche Sprachen sprichst du oder möchtest du lernen?",
+"es": "¿Qué idiomas hablas o quieres aprender?",
+"fr": "Quelles langues parles-tu ou veux-tu apprendre ?",
+"it": "Quali lingue parli o vorresti imparare?",
+"pt": "Que línguas falas ou queres aprender?",
+"pt_BR": "Quais idiomas você fala ou quer aprender?"
+}
+},
+{
+"id": "casual_chat-056",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite fruit?",
+"de": "Was ist dein Lieblingsobst?",
+"es": "¿Cuál es tu fruta favorita?",
+"fr": "Quel est ton fruit préféré ?",
+"it": "Qual è il tuo frutto preferito?",
+"pt": "Qual é a tua fruta preferida?",
+"pt_BR": "Qual é a sua fruta favorita?"
+}
+},
+{
+"id": "casual_chat-057",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like shopping at markets?",
+"de": "Gehst du gern auf Märkten einkaufen?",
+"es": "¿Te gusta comprar en los mercados?",
+"fr": "Aimes-tu faire tes courses au marché ?",
+"it": "Ti piace fare la spesa al mercato?",
+"pt": "Gostas de fazer compras nos mercados?",
+"pt_BR": "Você gosta de fazer compras em feiras e mercados?"
+}
+},
+{
+"id": "casual_chat-058",
+"lv": "beginner",
+"i18n": {
+"en": "What did you do last weekend?",
+"de": "Was hast du letztes Wochenende gemacht?",
+"es": "¿Qué hiciste el fin de semana pasado?",
+"fr": "Qu'as-tu fait le week-end dernier ?",
+"it": "Cosa hai fatto lo scorso fine settimana?",
+"pt": "O que fizeste no fim de semana passado?",
+"pt_BR": "O que você fez no fim de semana passado?"
+}
+},
+{
+"id": "casual_chat-059",
+"lv": "beginner",
+"i18n": {
+"en": "Which room in your home do you like most?",
+"de": "Welches Zimmer in deinem Zuhause magst du am liebsten?",
+"es": "¿Qué habitación de tu casa te gusta más?",
+"fr": "Quelle pièce de ton logement préfères-tu ?",
+"it": "Quale stanza di casa tua ti piace di più?",
+"pt": "De que divisão da tua casa gostas mais?",
+"pt_BR": "De qual cômodo da sua casa você mais gosta?"
+}
+},
+{
+"id": "casual_chat-060",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite ice cream flavour?",
+"de": "Was ist deine Lieblingseissorte?",
+"es": "¿Cuál es tu sabor de helado favorito?",
+"fr": "Quel est ton parfum de glace préféré ?",
+"it": "Qual è il tuo gusto di gelato preferito?",
+"pt": "Qual é o teu sabor de gelado preferido?",
+"pt_BR": "Qual é o seu sabor de sorvete favorito?"
+}
+},
+{
+"id": "casual_chat-061",
+"lv": "beginner",
+"i18n": {
+"en": "How do you like to celebrate your birthday?",
+"de": "Wie feierst du am liebsten deinen Geburtstag?",
+"es": "¿Cómo te gusta celebrar tu cumpleaños?",
+"fr": "Comment aimes-tu fêter ton anniversaire ?",
+"it": "Come ti piace festeggiare il tuo compleanno?",
+"pt": "Como gostas de celebrar o teu aniversário?",
+"pt_BR": "Como você gosta de comemorar seu aniversário?"
+}
+},
+{
+"id": "casual_chat-062",
+"lv": "beginner",
+"i18n": {
+"en": "What's a place near you that visitors should see?",
+"de": "Welchen Ort in deiner Nähe sollten Besucher unbedingt sehen?",
+"es": "¿Qué lugar cerca de ti deberían ver los visitantes?",
+"fr": "Quel endroit près de chez toi les visiteurs devraient-ils voir ?",
+"it": "Quale posto vicino a te dovrebbero vedere i visitatori?",
+"pt": "Que sítio perto de ti os visitantes deviam ver?",
+"pt_BR": "Que lugar perto de você os visitantes deveriam conhecer?"
+}
+},
+{
+"id": "casual_chat-063",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer calls, texts or voice messages?",
+"de": "Magst du lieber Anrufe, Textnachrichten oder Sprachnachrichten?",
+"es": "¿Prefieres llamadas, mensajes de texto o audios?",
+"fr": "Préfères-tu les appels, les textos ou les messages vocaux ?",
+"it": "Preferisci chiamate, messaggi scritti o vocali?",
+"pt": "Preferes chamadas, mensagens escritas ou mensagens de voz?",
+"pt_BR": "Você prefere ligações, mensagens de texto ou áudios?"
+}
+},
+{
+"id": "casual_chat-064",
+"lv": "beginner",
+"i18n": {
+"en": "What's a gadget you use every day?",
+"de": "Welches Gerät benutzt du jeden Tag?",
+"es": "¿Qué aparato usas todos los días?",
+"fr": "Quel gadget utilises-tu tous les jours ?",
+"it": "Quale gadget usi ogni giorno?",
+"pt": "Que aparelho usas todos os dias?",
+"pt_BR": "Que aparelho você usa todos os dias?"
+}
+},
+{
+"id": "casual_chat-065",
+"lv": "beginner",
+"i18n": {
+"en": "What's the nicest thing someone did for you recently?",
+"de": "Was ist das Netteste, das jemand in letzter Zeit für dich getan hat?",
+"es": "¿Qué es lo más bonito que alguien ha hecho por ti últimamente?",
+"fr": "Quelle est la plus gentille chose qu'on ait faite pour toi récemment ?",
+"it": "Qual è la cosa più carina che qualcuno ha fatto per te di recente?",
+"pt": "Qual foi a coisa mais simpática que alguém fez por ti ultimamente?",
+"pt_BR": "Qual foi a coisa mais legal que alguém fez por você recentemente?"
+}
+},
+{
+"id": "casual_chat-066",
+"lv": "intermediate",
+"i18n": {
+"en": "What's a funny travel story you like to tell?",
+"de": "Welche lustige Reisegeschichte erzählst du gern?",
+"es": "¿Qué anécdota divertida de viaje te gusta contar?",
+"fr": "Quelle anecdote de voyage amusante aimes-tu raconter ?",
+"it": "Quale storia di viaggio divertente ti piace raccontare?",
+"pt": "Que história engraçada de viagem gostas de contar?",
+"pt_BR": "Que história engraçada de viagem você gosta de contar?"
+}
+},
+{
+"id": "casual_chat-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which dish from another culture would you love to learn to cook?",
+"de": "Welches Gericht aus einer anderen Kultur würdest du gern kochen lernen?",
+"es": "¿Qué plato de otra cultura te encantaría aprender a cocinar?",
+"fr": "Quel plat d'une autre culture aimerais-tu apprendre à cuisiner ?",
+"it": "Quale piatto di un'altra cultura ti piacerebbe imparare a cucinare?",
+"pt": "Que prato de outra cultura adoravas aprender a cozinhar?",
+"pt_BR": "Que prato de outra cultura você adoraria aprender a cozinhar?"
+}
+},
+{
+"id": "casual_chat-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What's a cooking disaster you can laugh about now?",
+"de": "Über welches Küchendesaster kannst du heute lachen?",
+"es": "¿De qué desastre en la cocina puedes reírte ahora?",
+"fr": "De quelle catastrophe en cuisine peux-tu rire aujourd'hui ?",
+"it": "Di quale disastro in cucina riesci a ridere adesso?",
+"pt": "De que desastre na cozinha já consegues rir?",
+"pt_BR": "De qual desastre na cozinha você já consegue rir?"
+}
+},
+{
+"id": "casual_chat-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which underrated song, film or place should more people know?",
+"de": "Welcher unterschätzte Song, Film oder Ort sollte bekannter sein?",
+"es": "¿Qué canción, película o lugar infravalorado debería conocer más gente?",
+"fr": "Quelle chanson, quel film ou quel lieu sous-estimé mériterait d'être plus connu ?",
+"it": "Quale canzone, film o posto sottovalutato meriterebbe di essere più conosciuto?",
+"pt": "Que música, filme ou lugar subvalorizado devia ser mais conhecido?",
+"pt_BR": "Que música, filme ou lugar subestimado deveria ser mais conhecido?"
+}
+},
+{
+"id": "casual_chat-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What's a harmless debate you always enjoy, like pineapple on pizza?",
+"de": "Welche harmlose Diskussion macht dir immer Spaß, etwa Ananas auf Pizza?",
+"es": "¿Qué debate inofensivo siempre disfrutas, como la piña en la pizza?",
+"fr": "Quel débat inoffensif adores-tu, comme l'ananas sur la pizza ?",
+"it": "Quale dibattito innocuo ti diverte sempre, come l'ananas sulla pizza?",
+"pt": "Que debate inofensivo adoras sempre, como o ananás na pizza?",
+"pt_BR": "Que debate inofensivo você sempre curte, tipo abacaxi na pizza?"
+}
+},
+{
+"id": "casual_chat-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Which custom from another country surprised you?",
+"de": "Welcher Brauch aus einem anderen Land hat dich überrascht?",
+"es": "¿Qué costumbre de otro país te sorprendió?",
+"fr": "Quelle coutume d'un autre pays t'a surpris ?",
+"it": "Quale usanza di un altro paese ti ha sorpreso?",
+"pt": "Que costume de outro país te surpreendeu?",
+"pt_BR": "Que costume de outro país te surpreendeu?"
+}
+},
+{
+"id": "casual_chat-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What's an expression in your language that's hard to translate?",
+"de": "Welcher Ausdruck in deiner Sprache ist schwer zu übersetzen?",
+"es": "¿Qué expresión de tu idioma es difícil de traducir?",
+"fr": "Quelle expression de ta langue est difficile à traduire ?",
+"it": "Quale espressione della tua lingua è difficile da tradurre?",
+"pt": "Que expressão da tua língua é difícil de traduzir?",
+"pt_BR": "Que expressão do seu idioma é difícil de traduzir?"
+}
+},
+{
+"id": "casual_chat-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What's a funny mix-up you had while learning a language?",
+"de": "Welche lustige Verwechslung ist dir beim Sprachenlernen passiert?",
+"es": "¿Qué confusión divertida tuviste aprendiendo un idioma?",
+"fr": "Quel quiproquo amusant as-tu vécu en apprenant une langue ?",
+"it": "Quale equivoco divertente ti è capitato imparando una lingua?",
+"pt": "Que confusão engraçada tiveste a aprender uma língua?",
+"pt_BR": "Que confusão engraçada você já fez aprendendo um idioma?"
+}
+},
+{
+"id": "casual_chat-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What did you believe as a child that makes you laugh now?",
+"de": "Was hast du als Kind geglaubt, worüber du heute lachst?",
+"es": "¿Qué creías de pequeño que ahora te hace reír?",
+"fr": "Que croyais-tu enfant qui te fait rire aujourd'hui ?",
+"it": "Cosa credevi da bambino che ora ti fa ridere?",
+"pt": "Em que acreditavas em criança que agora te faz rir?",
+"pt_BR": "Em que você acreditava quando criança que hoje te faz rir?"
+}
+},
+{
+"id": "casual_chat-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which teacher do you remember fondly, and why?",
+"de": "An welche Lehrerin oder welchen Lehrer erinnerst du dich gern, und warum?",
+"es": "¿Qué profesor o profesora recuerdas con cariño y por qué?",
+"fr": "De quel enseignant gardes-tu un bon souvenir, et pourquoi ?",
+"it": "Quale insegnante ricordi con affetto, e perché?",
+"pt": "De que professor te lembras com carinho, e porquê?",
+"pt_BR": "De qual professor você se lembra com carinho, e por quê?"
+}
+},
+{
+"id": "casual_chat-076",
+"lv": "intermediate",
+"i18n": {
+"en": "If you opened a café, what would it be like?",
+"de": "Wenn du ein Café eröffnen würdest, wie wäre es?",
+"es": "Si abrieras una cafetería, ¿cómo sería?",
+"fr": "Si tu ouvrais un café, à quoi ressemblerait-il ?",
+"it": "Se aprissi un bar, come sarebbe?",
+"pt": "Se abrisses um café, como seria?",
+"pt_BR": "Se você abrisse uma cafeteria, como ela seria?"
+}
+},
+{
+"id": "casual_chat-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What would the title of a film about your life be?",
+"de": "Wie würde ein Film über dein Leben heißen?",
+"es": "¿Cómo se titularía una película sobre tu vida?",
+"fr": "Quel serait le titre d'un film sur ta vie ?",
+"it": "Quale sarebbe il titolo di un film sulla tua vita?",
+"pt": "Qual seria o título de um filme sobre a tua vida?",
+"pt_BR": "Qual seria o título de um filme sobre a sua vida?"
+}
+},
+{
+"id": "casual_chat-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which three things would you take to a desert island?",
+"de": "Welche drei Dinge würdest du auf eine einsame Insel mitnehmen?",
+"es": "¿Qué tres cosas te llevarías a una isla desierta?",
+"fr": "Quelles trois choses emporterais-tu sur une île déserte ?",
+"it": "Quali tre cose porteresti su un'isola deserta?",
+"pt": "Que três coisas levarias para uma ilha deserta?",
+"pt_BR": "Quais três coisas você levaria para uma ilha deserta?"
+}
+},
+{
+"id": "casual_chat-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How has your town changed since you were younger?",
+"de": "Wie hat sich deine Stadt verändert, seit du jünger warst?",
+"es": "¿Cómo ha cambiado tu ciudad desde que eras más joven?",
+"fr": "Comment ta ville a-t-elle changé depuis ta jeunesse ?",
+"it": "Com'è cambiata la tua città da quando eri più giovane?",
+"pt": "Como mudou a tua terra desde que eras mais novo?",
+"pt_BR": "Como a sua cidade mudou desde que você era mais novo?"
+}
+},
+{
+"id": "casual_chat-080",
+"lv": "intermediate",
+"i18n": {
+"en": "What's a strange or funny dream you remember?",
+"de": "An welchen seltsamen oder lustigen Traum erinnerst du dich?",
+"es": "¿Qué sueño raro o divertido recuerdas?",
+"fr": "De quel rêve étrange ou drôle te souviens-tu ?",
+"it": "Quale sogno strano o divertente ricordi?",
+"pt": "De que sonho estranho ou engraçado te lembras?",
+"pt_BR": "De qual sonho estranho ou engraçado você se lembra?"
+}
+},
+{
+"id": "casual_chat-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which historical figure would you love to have dinner with?",
+"de": "Mit welcher historischen Persönlichkeit würdest du gern zu Abend essen?",
+"es": "¿Con qué personaje histórico te encantaría cenar?",
+"fr": "Avec quel personnage historique aimerais-tu dîner ?",
+"it": "Con quale personaggio storico ti piacerebbe cenare?",
+"pt": "Com que figura histórica adoravas jantar?",
+"pt_BR": "Com qual personagem histórico você adoraria jantar?"
+}
+},
+{
+"id": "casual_chat-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What's a life hack that really works for you?",
+"de": "Welcher Alltagstrick funktioniert bei dir wirklich?",
+"es": "¿Qué truco cotidiano te funciona de verdad?",
+"fr": "Quelle astuce du quotidien marche vraiment pour toi ?",
+"it": "Quale trucchetto quotidiano funziona davvero per te?",
+"pt": "Que truque do dia a dia resulta mesmo contigo?",
+"pt_BR": "Que truque do dia a dia funciona de verdade para você?"
+}
+},
+{
+"id": "casual_chat-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep in touch with friends who live far away?",
+"de": "Wie hältst du Kontakt zu Freunden, die weit weg wohnen?",
+"es": "¿Cómo mantienes el contacto con amigos que viven lejos?",
+"fr": "Comment restes-tu en contact avec des amis qui vivent loin ?",
+"it": "Come resti in contatto con gli amici che vivono lontano?",
+"pt": "Como manténs o contacto com amigos que vivem longe?",
+"pt_BR": "Como você mantém contato com amigos que moram longe?"
+}
+},
+{
+"id": "casual_chat-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes a new place start to feel like home for you?",
+"de": "Was sorgt dafür, dass sich ein neuer Ort für dich wie Zuhause anfühlt?",
+"es": "¿Qué hace que un lugar nuevo empiece a sentirse como tu hogar?",
+"fr": "Qu'est-ce qui fait qu'un nouvel endroit commence à ressembler à chez toi ?",
+"it": "Cosa fa sì che un posto nuovo inizi a sembrarti casa?",
+"pt": "O que faz um lugar novo começar a parecer a tua casa?",
+"pt_BR": "O que faz um lugar novo começar a parecer sua casa?"
+}
+},
+{
+"id": "casual_chat-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What's the kindest thing a stranger has done for you?",
+"de": "Was ist das Freundlichste, das ein Fremder je für dich getan hat?",
+"es": "¿Qué es lo más amable que ha hecho por ti un desconocido?",
+"fr": "Quelle est la plus belle attention qu'un inconnu ait eue pour toi ?",
+"it": "Qual è la cosa più gentile che uno sconosciuto ha fatto per te?",
+"pt": "Qual foi a coisa mais gentil que um desconhecido fez por ti?",
+"pt_BR": "Qual foi a coisa mais gentil que um desconhecido já fez por você?"
+}
+},
+{
+"id": "casual_chat-086",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a conversation truly memorable for you?",
+"de": "Was macht ein Gespräch für dich wirklich unvergesslich?",
+"es": "¿Qué hace que una conversación sea realmente memorable para ti?",
+"fr": "Qu'est-ce qui rend une conversation vraiment mémorable pour toi ?",
+"it": "Cosa rende davvero memorabile una conversazione per te?",
+"pt": "O que torna uma conversa realmente memorável para ti?",
+"pt_BR": "O que torna uma conversa realmente marcante para você?"
+}
+},
+{
+"id": "casual_chat-087",
+"lv": "advanced",
+"i18n": {
+"en": "What does a good life look like to you?",
+"de": "Wie sieht für dich ein gutes Leben aus?",
+"es": "¿Cómo es para ti una buena vida?",
+"fr": "À quoi ressemble une belle vie pour toi ?",
+"it": "Com'è per te una bella vita?",
+"pt": "Como é, para ti, uma boa vida?",
+"pt_BR": "Como é uma vida boa para você?"
+}
+},
+{
+"id": "casual_chat-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which book or film changed the way you see things?",
+"de": "Welches Buch oder welcher Film hat deine Sicht auf die Dinge verändert?",
+"es": "¿Qué libro o película cambió tu forma de ver las cosas?",
+"fr": "Quel livre ou quel film a changé ta façon de voir les choses ?",
+"it": "Quale libro o film ha cambiato il tuo modo di vedere le cose?",
+"pt": "Que livro ou filme mudou a tua forma de ver as coisas?",
+"pt_BR": "Que livro ou filme mudou o seu jeito de ver as coisas?"
+}
+},
+{
+"id": "casual_chat-089",
+"lv": "advanced",
+"i18n": {
+"en": "What have friends from other cultures taught you?",
+"de": "Was haben dir Freunde aus anderen Kulturen beigebracht?",
+"es": "¿Qué te han enseñado tus amigos de otras culturas?",
+"fr": "Qu'est-ce que tes amis d'autres cultures t'ont appris ?",
+"it": "Cosa ti hanno insegnato gli amici di altre culture?",
+"pt": "O que te ensinaram os amigos de outras culturas?",
+"pt_BR": "O que os amigos de outras culturas te ensinaram?"
+}
+},
+{
+"id": "casual_chat-090",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think makes a great friend?",
+"de": "Was macht deiner Meinung nach einen tollen Freund aus?",
+"es": "¿Qué crees que hace a alguien un gran amigo?",
+"fr": "Selon toi, qu'est-ce qui fait un ami formidable ?",
+"it": "Secondo te, cosa rende qualcuno un grande amico?",
+"pt": "O que achas que faz de alguém um grande amigo?",
+"pt_BR": "O que você acha que faz de alguém um grande amigo?"
+}
+},
+{
+"id": "casual_chat-091",
+"lv": "advanced",
+"i18n": {
+"en": "How do you make people feel included in a group chat?",
+"de": "Wie sorgst du dafür, dass sich alle in einem Gruppenchat einbezogen fühlen?",
+"es": "¿Cómo haces que todos se sientan incluidos en un chat de grupo?",
+"fr": "Comment fais-tu pour que chacun se sente inclus dans une discussion de groupe ?",
+"it": "Come fai sentire tutti inclusi in una chat di gruppo?",
+"pt": "Como fazes com que todos se sintam incluídos numa conversa de grupo?",
+"pt_BR": "Como você faz todo mundo se sentir incluído num grupo de conversa?"
+}
+},
+{
+"id": "casual_chat-092",
+"lv": "advanced",
+"i18n": {
+"en": "Which question do you love being asked, and why?",
+"de": "Welche Frage wird dir besonders gern gestellt, und warum?",
+"es": "¿Qué pregunta te encanta que te hagan y por qué?",
+"fr": "Quelle question adores-tu qu'on te pose, et pourquoi ?",
+"it": "Quale domanda ami che ti facciano, e perché?",
+"pt": "Que pergunta adoras que te façam, e porquê?",
+"pt_BR": "Que pergunta você adora que te façam, e por quê?"
+}
+},
+{
+"id": "casual_chat-093",
+"lv": "advanced",
+"i18n": {
+"en": "What does home mean to you?",
+"de": "Was bedeutet Zuhause für dich?",
+"es": "¿Qué significa para ti el hogar?",
+"fr": "Que représente « chez soi » pour toi ?",
+"it": "Cosa significa per te sentirti a casa?",
+"pt": "O que significa casa para ti?",
+"pt_BR": "O que significa lar para você?"
+}
+},
+{
+"id": "casual_chat-094",
+"lv": "advanced",
+"i18n": {
+"en": "How have you changed as a person over the years?",
+"de": "Wie hast du dich im Laufe der Jahre als Mensch verändert?",
+"es": "¿Cómo has cambiado como persona con los años?",
+"fr": "Comment as-tu changé en tant que personne au fil des années ?",
+"it": "Come sei cambiato come persona nel corso degli anni?",
+"pt": "Como mudaste enquanto pessoa ao longo dos anos?",
+"pt_BR": "Como você mudou como pessoa ao longo dos anos?"
+}
+},
+{
+"id": "casual_chat-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which simple pleasures do you think people everywhere share?",
+"de": "Welche einfachen Freuden teilen deiner Meinung nach Menschen überall?",
+"es": "¿Qué placeres sencillos crees que comparte la gente de todo el mundo?",
+"fr": "Quels plaisirs simples les gens partagent-ils partout, selon toi ?",
+"it": "Quali piccoli piaceri pensi che le persone condividano ovunque?",
+"pt": "Que prazeres simples achas que as pessoas partilham em todo o lado?",
+"pt_BR": "Que prazeres simples você acha que as pessoas compartilham no mundo todo?"
+}
+},
+{
+"id": "casual_chat-096",
+"lv": "advanced",
+"i18n": {
+"en": "What's the best conversation you've had recently?",
+"de": "Was war das beste Gespräch, das du in letzter Zeit geführt hast?",
+"es": "¿Cuál es la mejor conversación que has tenido últimamente?",
+"fr": "Quelle est la meilleure conversation que tu as eue récemment ?",
+"it": "Qual è la conversazione più bella che hai avuto di recente?",
+"pt": "Qual foi a melhor conversa que tiveste ultimamente?",
+"pt_BR": "Qual foi a melhor conversa que você teve recentemente?"
+}
+},
+{
+"id": "casual_chat-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you like to listen when a friend needs to talk?",
+"de": "Wie hörst du am liebsten zu, wenn ein Freund reden muss?",
+"es": "¿Cómo te gusta escuchar cuando un amigo necesita hablar?",
+"fr": "Comment aimes-tu écouter quand un ami a besoin de parler ?",
+"it": "Come ti piace ascoltare quando un amico ha bisogno di parlare?",
+"pt": "Como gostas de ouvir quando um amigo precisa de falar?",
+"pt_BR": "Como você gosta de ouvir quando um amigo precisa conversar?"
+}
+},
+{
+"id": "casual_chat-098",
+"lv": "advanced",
+"i18n": {
+"en": "Which tradition would you love to share with people from other countries?",
+"de": "Welche Tradition würdest du gern mit Menschen aus anderen Ländern teilen?",
+"es": "¿Qué tradición te encantaría compartir con gente de otros países?",
+"fr": "Quelle tradition aimerais-tu partager avec des gens d'autres pays ?",
+"it": "Quale tradizione ti piacerebbe condividere con persone di altri paesi?",
+"pt": "Que tradição adoravas partilhar com pessoas de outros países?",
+"pt_BR": "Que tradição você adoraria compartilhar com pessoas de outros países?"
+}
+},
+{
+"id": "casual_chat-099",
+"lv": "advanced",
+"i18n": {
+"en": "What would you tell your younger self about making friends?",
+"de": "Was würdest du deinem jüngeren Ich über das Freundefinden sagen?",
+"es": "¿Qué le dirías a tu yo más joven sobre hacer amigos?",
+"fr": "Que dirais-tu à ton toi plus jeune sur l'art de se faire des amis ?",
+"it": "Cosa diresti al te stesso più giovane su come farsi degli amici?",
+"pt": "O que dirias ao teu eu mais novo sobre fazer amigos?",
+"pt_BR": "O que você diria para o seu eu mais novo sobre fazer amigos?"
+}
+},
+{
+"id": "casual_chat-100",
+"lv": "advanced",
+"i18n": {
+"en": "What do you hope people feel after chatting with you?",
+"de": "Was sollen Menschen deiner Hoffnung nach fühlen, nachdem sie mit dir geplaudert haben?",
+"es": "¿Qué esperas que sienta la gente después de charlar contigo?",
+"fr": "Qu'espères-tu que les gens ressentent après avoir discuté avec toi ?",
+"it": "Cosa speri che provino le persone dopo aver chiacchierato con te?",
+"pt": "O que esperas que as pessoas sintam depois de conversarem contigo?",
+"pt_BR": "O que você espera que as pessoas sintam depois de conversar com você?"
+}
+}
+]
+}

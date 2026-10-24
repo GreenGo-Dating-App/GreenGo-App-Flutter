@@ -1,0 +1,835 @@
+{
+ "topic": "yoga",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Halfway lift",
+     "g": "Lengthen the spine forward with a flat back from your forward fold.",
+     "p": [
+      "From a forward fold, place your hands on your shins or thighs and lift the chest halfway up.",
+      "Think of reaching the crown of the head forward and the hips back, making the back long and flat.",
+      "Bend the knees as much as needed so the back stays straight rather than rounded."
+     ],
+     "q": "Yesterday you practised the forward fold: did your back feel rounded or long when you hung down?",
+     "c": "Move between forward fold and halfway lift five times, breathing in to lift and out to fold."
+    },
+    "de": {
+     "t": "Halbe Aufrichtung",
+     "g": "Verlängere die Wirbelsäule aus der Vorbeuge mit flachem Rücken nach vorn.",
+     "p": [
+      "Leg die Hände aus der Vorbeuge auf Schienbeine oder Oberschenkel und heb die Brust halb an.",
+      "Schieb den Scheitel nach vorn und das Becken nach hinten, sodass der Rücken lang und flach wird.",
+      "Beug die Knie so weit wie nötig, damit der Rücken gerade bleibt statt rund zu werden."
+     ],
+     "q": "Gestern hast du die Vorbeuge geübt: War dein Rücken beim Hängen eher rund oder lang?",
+     "c": "Wechsle fünfmal zwischen Vorbeuge und halber Aufrichtung: einatmen zum Heben, ausatmen zum Beugen."
+    },
+    "es": {
+     "t": "Media elevación",
+     "g": "Alarga la columna hacia delante con la espalda plana desde la flexión.",
+     "p": [
+      "Desde la flexión hacia delante, lleva las manos a las espinillas o los muslos y eleva el pecho a media altura.",
+      "Imagina llevar la coronilla hacia delante y la cadera hacia atrás, con la espalda larga y plana.",
+      "Flexiona las rodillas lo necesario para que la espalda quede recta y no redondeada."
+     ],
+     "q": "Ayer practicaste la flexión hacia delante: ¿sentiste la espalda redondeada o larga al colgar?",
+     "c": "Alterna cinco veces entre flexión y media elevación: inhala para subir y exhala para bajar."
+    },
+    "fr": {
+     "t": "La demi-élévation",
+     "g": "Allonger la colonne vers l'avant, dos plat, depuis la flexion avant.",
+     "p": [
+      "Depuis la flexion avant, place les mains sur les tibias ou les cuisses et soulève la poitrine à mi-hauteur.",
+      "Imagine le sommet du crâne qui avance et les hanches qui reculent : le dos devient long et plat.",
+      "Plie les genoux autant que nécessaire pour que le dos reste droit plutôt qu'arrondi."
+     ],
+     "q": "Hier tu as pratiqué la flexion avant : ton dos était-il plutôt rond ou long quand tu pendais ?",
+     "c": "Alterne cinq fois flexion avant et demi-élévation : inspire pour monter, expire pour plonger."
+    },
+    "it": {
+     "t": "Mezza elevazione",
+     "g": "Allungare la colonna in avanti con la schiena piatta partendo dal piegamento.",
+     "p": [
+      "Dal piegamento in avanti porta le mani su tibie o cosce e solleva il petto a metà.",
+      "Immagina la sommità del capo che va avanti e il bacino indietro: la schiena diventa lunga e piatta.",
+      "Piega le ginocchia quanto serve perché la schiena resti dritta e non curva."
+     ],
+     "q": "Ieri hai provato il piegamento in avanti: la schiena era più curva o più lunga mentre pendevi?",
+     "c": "Alterna cinque volte piegamento e mezza elevazione: inspira per salire, espira per scendere."
+    },
+    "pt": {
+     "t": "Meia elevação",
+     "g": "Alongar a coluna para a frente, com as costas direitas, a partir da flexão.",
+     "p": [
+      "A partir da flexão à frente, leva as mãos às canelas ou às coxas e levanta o peito até meio.",
+      "Imagina o topo da cabeça a ir para a frente e as ancas para trás, com as costas longas e direitas.",
+      "Dobra os joelhos o necessário para que as costas fiquem direitas e não arredondadas."
+     ],
+     "q": "Ontem praticaste a flexão à frente: sentiste as costas arredondadas ou longas ao ficares pendurado?",
+     "c": "Alterna cinco vezes entre flexão e meia elevação: inspira para subir e expira para descer."
+    },
+    "pt_BR": {
+     "t": "Meia elevação",
+     "g": "Alongar a coluna para a frente com as costas retas a partir da flexão.",
+     "p": [
+      "Da flexão à frente, leve as mãos às canelas ou às coxas e erga o peito até a metade.",
+      "Imagine o topo da cabeça indo para a frente e o quadril para trás, com as costas longas e retas.",
+      "Dobre os joelhos o necessário para que as costas fiquem retas, e não arredondadas."
+     ],
+     "q": "Ontem você praticou a flexão à frente: sentiu as costas arredondadas ou longas ao ficar pendurado?",
+     "c": "Alterne cinco vezes entre flexão e meia elevação: inspire para subir e expire para descer."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Final relaxation pose",
+     "g": "Learn savasana, lying on your back and letting the whole body rest.",
+     "p": [
+      "Lie on your back with legs slightly apart, arms a little away from the body and palms up.",
+      "Let the breath become natural and allow each part of the body to feel heavy and soft.",
+      "A blanket over you and a cushion under the knees can make it more comfortable."
+     ],
+     "q": "How easy is it for you to lie still and do nothing for a few minutes?",
+     "c": "Rest in savasana for five minutes today, with a light blanket and your phone out of reach."
+    },
+    "de": {
+     "t": "Schlussentspannung",
+     "g": "Lerne Savasana: auf dem Rücken liegen und den ganzen Körper ruhen lassen.",
+     "p": [
+      "Leg dich auf den Rücken, Beine leicht geöffnet, Arme etwas vom Körper entfernt, Handflächen nach oben.",
+      "Lass den Atem natürlich werden und jeden Körperteil schwer und weich werden.",
+      "Eine Decke über dir und ein Kissen unter den Knien machen es oft bequemer."
+     ],
+     "q": "Wie leicht fällt es dir, ein paar Minuten still zu liegen und nichts zu tun?",
+     "c": "Ruh heute fünf Minuten in Savasana, mit einer leichten Decke und dem Handy außer Reichweite."
+    },
+    "es": {
+     "t": "La postura de relajación final",
+     "g": "Aprende savasana: tumbarte boca arriba y dejar que todo el cuerpo descanse.",
+     "p": [
+      "Túmbate boca arriba con las piernas algo separadas, los brazos un poco alejados del cuerpo y las palmas hacia arriba.",
+      "Deja que la respiración sea natural y que cada parte del cuerpo se sienta pesada y blanda.",
+      "Una manta por encima y un cojín bajo las rodillas pueden hacerlo más cómodo."
+     ],
+     "q": "¿Te resulta fácil quedarte quieto sin hacer nada durante unos minutos?",
+     "c": "Descansa hoy cinco minutos en savasana, con una manta ligera y el móvil lejos."
+    },
+    "fr": {
+     "t": "La posture de relaxation finale",
+     "g": "Apprendre savasana : s'allonger sur le dos et laisser tout le corps se reposer.",
+     "p": [
+      "Allonge-toi sur le dos, jambes légèrement écartées, bras un peu éloignés du corps, paumes vers le ciel.",
+      "Laisse la respiration redevenir naturelle et chaque partie du corps devenir lourde et souple.",
+      "Une couverture sur toi et un coussin sous les genoux peuvent rendre la posture plus confortable."
+     ],
+     "q": "Est-ce facile pour toi de rester allongé sans rien faire pendant quelques minutes ?",
+     "c": "Repose-toi cinq minutes en savasana aujourd'hui, avec une couverture légère et le téléphone hors de portée."
+    },
+    "it": {
+     "t": "La posizione di rilassamento finale",
+     "g": "Imparare savasana: sdraiarsi sulla schiena e lasciar riposare tutto il corpo.",
+     "p": [
+      "Sdraiati sulla schiena, gambe leggermente divaricate, braccia un po' lontane dal corpo e palmi in su.",
+      "Lascia che il respiro torni naturale e che ogni parte del corpo diventi pesante e morbida.",
+      "Una coperta addosso e un cuscino sotto le ginocchia possono renderla più comoda."
+     ],
+     "q": "Quanto ti viene facile restare sdraiato fermo senza fare nulla per qualche minuto?",
+     "c": "Riposa oggi cinque minuti in savasana, con una coperta leggera e il telefono lontano."
+    },
+    "pt": {
+     "t": "A postura de relaxamento final",
+     "g": "Aprender o savasana: deitar de costas e deixar o corpo todo descansar.",
+     "p": [
+      "Deita-te de costas, pernas ligeiramente afastadas, braços um pouco afastados do corpo e palmas para cima.",
+      "Deixa a respiração ficar natural e cada parte do corpo ficar pesada e mole.",
+      "Uma manta por cima e uma almofada debaixo dos joelhos podem torná-la mais confortável."
+     ],
+     "q": "É fácil para ti ficares deitado, quieto, sem fazer nada durante alguns minutos?",
+     "c": "Descansa hoje cinco minutos em savasana, com uma manta leve e o telemóvel longe."
+    },
+    "pt_BR": {
+     "t": "Postura de relaxamento final",
+     "g": "Aprender o savasana: deitar de costas e deixar o corpo inteiro descansar.",
+     "p": [
+      "Deite de costas, pernas levemente afastadas, braços um pouco longe do corpo e palmas para cima.",
+      "Deixe a respiração ficar natural e cada parte do corpo ficar pesada e solta.",
+      "Uma manta por cima e uma almofada embaixo dos joelhos podem deixar tudo mais confortável."
+     ],
+     "q": "É fácil para você ficar deitado, parado, sem fazer nada por alguns minutos?",
+     "c": "Descanse hoje cinco minutos em savasana, com uma manta leve e o celular longe."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first mini routine",
+     "g": "Link breath and simple poses into a calm ten-minute flow.",
+     "p": [
+      "Begin seated with two minutes of belly or three-part breathing to arrive.",
+      "Move to tabletop for cat and cow, rest in child's pose, then roll up to stand in mountain pose.",
+      "Finish lying down in savasana for a few minutes: the rest is part of the routine."
+     ],
+     "q": "Which of the poses so far has become your favourite, and why?",
+     "c": "Do the full ten-minute mini routine today: breath, cat-cow, child's pose, mountain and rest."
+    },
+    "de": {
+     "t": "Deine erste Mini-Routine",
+     "g": "Verbinde Atem und einfache Haltungen zu einem ruhigen zehnminütigen Ablauf.",
+     "p": [
+      "Beginne im Sitzen mit zwei Minuten Bauch- oder dreiteiliger Atmung, um anzukommen.",
+      "Geh in den Vierfüßlerstand für Katze und Kuh, ruh in der Kindhaltung und roll dich in die Berghaltung auf.",
+      "Beende alles im Liegen mit ein paar Minuten Savasana: Die Ruhe gehört zur Routine."
+     ],
+     "q": "Welche der bisherigen Haltungen ist deine Lieblingshaltung geworden, und warum?",
+     "c": "Mach heute die ganze zehnminütige Mini-Routine: Atem, Katze-Kuh, Kindhaltung, Berg und Ruhe."
+    },
+    "es": {
+     "t": "Tu primera minirrutina",
+     "g": "Une respiración y posturas sencillas en una secuencia tranquila de diez minutos.",
+     "p": [
+      "Empieza sentado con dos minutos de respiración abdominal o en tres partes para llegar.",
+      "Pasa a la mesa para el gato y la vaca, descansa en la postura del niño y sube hasta la montaña.",
+      "Termina tumbado en savasana unos minutos: el descanso también forma parte de la rutina."
+     ],
+     "q": "¿Cuál de las posturas vistas hasta ahora se ha convertido en tu favorita y por qué?",
+     "c": "Haz hoy la minirrutina completa de diez minutos: respiración, gato-vaca, niño, montaña y descanso."
+    },
+    "fr": {
+     "t": "Ta première mini-routine",
+     "g": "Enchaîner souffle et postures simples en une séance calme de dix minutes.",
+     "p": [
+      "Commence assis avec deux minutes de respiration abdominale ou en trois temps pour te poser.",
+      "Passe à la table pour le chat-vache, repose-toi dans l'enfant, puis déroule-toi jusqu'à la montagne.",
+      "Termine allongé en savasana quelques minutes : le repos fait partie de la routine."
+     ],
+     "q": "Laquelle des postures vues jusqu'ici est devenue ta préférée, et pourquoi ?",
+     "c": "Fais aujourd'hui toute la mini-routine de dix minutes : souffle, chat-vache, enfant, montagne et repos."
+    },
+    "it": {
+     "t": "La tua prima mini routine",
+     "g": "Unire respiro e posizioni semplici in una sequenza tranquilla di dieci minuti.",
+     "p": [
+      "Inizia seduto con due minuti di respirazione addominale o in tre parti per arrivare.",
+      "Passa al tavolo per gatto e mucca, riposa nel bambino e poi risali fino alla montagna.",
+      "Concludi sdraiato in savasana per qualche minuto: anche il riposo fa parte della routine."
+     ],
+     "q": "Quale delle posizioni viste finora è diventata la tua preferita, e perché?",
+     "c": "Fai oggi tutta la mini routine di dieci minuti: respiro, gatto-mucca, bambino, montagna e riposo."
+    },
+    "pt": {
+     "t": "A tua primeira mini-rotina",
+     "g": "Ligar respiração e posturas simples numa sequência calma de dez minutos.",
+     "p": [
+      "Começa sentado com dois minutos de respiração abdominal ou em três partes para chegares.",
+      "Passa para a mesa para o gato e vaca, descansa na criança e sobe até à montanha.",
+      "Termina deitado em savasana durante alguns minutos: o descanso faz parte da rotina."
+     ],
+     "q": "Qual das posturas aprendidas até agora se tornou a tua preferida, e porquê?",
+     "c": "Faz hoje a mini-rotina completa de dez minutos: respiração, gato-vaca, criança, montanha e descanso."
+    },
+    "pt_BR": {
+     "t": "Sua primeira mini-rotina",
+     "g": "Unir respiração e posturas simples numa sequência tranquila de dez minutos.",
+     "p": [
+      "Comece sentado com dois minutos de respiração abdominal ou em três partes para chegar.",
+      "Passe para a mesa para o gato e vaca, descanse na criança e suba até a montanha.",
+      "Termine deitado em savasana por alguns minutos: o descanso faz parte da rotina."
+     ],
+     "q": "Qual das posturas até agora virou sua favorita, e por quê?",
+     "c": "Faça hoje a mini-rotina completa de dez minutos: respiração, gato-vaca, criança, montanha e descanso."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yoga etiquette",
+     "g": "Know how a yoga class usually works so you feel at ease.",
+     "p": [
+      "Arrive a few minutes early, put your phone on silent and tell the teacher if you are new.",
+      "Leave a little space between mats and step around other people's mats, not over them.",
+      "Follow the teacher's cues, rest when you need to and help tidy props away at the end."
+     ],
+     "q": "Have you ever joined a group class of any kind? What helped you feel welcome there?",
+     "c": "Imagine your first class: write down one question you would like to ask the teacher."
+    },
+    "de": {
+     "t": "Yoga-Etikette",
+     "g": "Erfahre, wie eine Yogastunde meist abläuft, damit du dich wohlfühlst.",
+     "p": [
+      "Komm ein paar Minuten früher, schalte das Handy stumm und sag der Lehrkraft, wenn du neu bist.",
+      "Lass etwas Abstand zwischen den Matten und geh um fremde Matten herum statt darüber.",
+      "Folge den Anleitungen, ruh dich aus, wenn du es brauchst, und hilf am Ende beim Aufräumen."
+     ],
+     "q": "Warst du schon mal in einem Gruppenkurs? Was hat dir geholfen, dich willkommen zu fühlen?",
+     "c": "Stell dir deine erste Stunde vor und schreib eine Frage auf, die du der Lehrkraft stellen möchtest."
+    },
+    "es": {
+     "t": "Normas de una clase de yoga",
+     "g": "Conoce cómo suele funcionar una clase para sentirte a gusto.",
+     "p": [
+      "Llega unos minutos antes, pon el móvil en silencio y avisa al profesor si eres nuevo.",
+      "Deja algo de espacio entre esterillas y rodea las de los demás en lugar de pisarlas.",
+      "Sigue las indicaciones, descansa cuando lo necesites y ayuda a recoger el material al final."
+     ],
+     "q": "¿Has ido alguna vez a una clase en grupo? ¿Qué te ayudó a sentirte bienvenido?",
+     "c": "Imagina tu primera clase y apunta una pregunta que te gustaría hacerle al profesor."
+    },
+    "fr": {
+     "t": "Les codes d'un cours de yoga",
+     "g": "Savoir comment se déroule un cours pour te sentir à l'aise.",
+     "p": [
+      "Arrive quelques minutes en avance, mets ton téléphone en silencieux et dis au prof que tu débutes.",
+      "Laisse un peu d'espace entre les tapis et contourne ceux des autres au lieu de les enjamber.",
+      "Suis les consignes, repose-toi si besoin et aide à ranger le matériel à la fin."
+     ],
+     "q": "As-tu déjà suivi un cours collectif ? Qu'est-ce qui t'a aidé à te sentir bienvenu ?",
+     "c": "Imagine ton premier cours et note une question que tu aimerais poser à l'enseignant."
+    },
+    "it": {
+     "t": "Il galateo dello yoga",
+     "g": "Sapere come funziona di solito una lezione per sentirti a tuo agio.",
+     "p": [
+      "Arriva qualche minuto prima, metti il telefono in silenzioso e di' all'insegnante che sei nuovo.",
+      "Lascia un po' di spazio tra i tappetini e gira attorno a quelli degli altri invece di scavalcarli.",
+      "Segui le indicazioni, riposa quando serve e aiuta a riordinare i supporti alla fine."
+     ],
+     "q": "Hai mai frequentato un corso di gruppo? Cosa ti ha fatto sentire benvenuto?",
+     "c": "Immagina la tua prima lezione e scrivi una domanda che vorresti fare all'insegnante."
+    },
+    "pt": {
+     "t": "Etiqueta no yoga",
+     "g": "Saber como costuma funcionar uma aula para te sentires à vontade.",
+     "p": [
+      "Chega uns minutos mais cedo, põe o telemóvel em silêncio e avisa o professor se és novo.",
+      "Deixa algum espaço entre tapetes e contorna os tapetes dos outros em vez de passar por cima.",
+      "Segue as indicações, descansa quando precisares e ajuda a arrumar o material no fim."
+     ],
+     "q": "Já foste a alguma aula de grupo? O que te ajudou a sentir-te bem-vindo?",
+     "c": "Imagina a tua primeira aula e escreve uma pergunta que gostavas de fazer ao professor."
+    },
+    "pt_BR": {
+     "t": "Etiqueta na ioga",
+     "g": "Saber como uma aula costuma funcionar para você se sentir à vontade.",
+     "p": [
+      "Chegue alguns minutos antes, deixe o celular no silencioso e avise o professor se for iniciante.",
+      "Deixe um espaço entre os tapetinhos e contorne os dos outros em vez de pisar neles.",
+      "Siga as orientações, descanse quando precisar e ajude a guardar os acessórios no final."
+     ],
+     "q": "Você já fez alguma aula em grupo? O que ajudou você a se sentir bem-vindo?",
+     "c": "Imagine sua primeira aula e anote uma pergunta que gostaria de fazer ao professor."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common yoga words",
+     "g": "Learn some words you will often hear in a yoga class.",
+     "p": [
+      "Asana means a posture, and pranayama refers to breathing practices.",
+      "Vinyasa describes linking movement with breath; savasana is the final relaxation you already know.",
+      "Namaste is a respectful greeting sometimes said at the end of class, often with hands together."
+     ],
+     "q": "Have you heard any of these words before? Which one sounds the most interesting to you?",
+     "c": "Use two of today's words when you describe your practice to yourself or a friend."
+    },
+    "de": {
+     "t": "Typische Yoga-Begriffe",
+     "g": "Lerne einige Wörter, die du in einer Yogastunde oft hören wirst.",
+     "p": [
+      "Asana bedeutet Körperhaltung, und Pranayama bezeichnet Atemübungen.",
+      "Vinyasa beschreibt die Verbindung von Bewegung und Atem; Savasana kennst du schon als Schlussentspannung.",
+      "Namaste ist ein respektvoller Gruß, den man manchmal am Ende mit aneinandergelegten Händen sagt."
+     ],
+     "q": "Hast du eines dieser Wörter schon mal gehört? Welches klingt für dich am spannendsten?",
+     "c": "Benutze zwei der heutigen Wörter, wenn du deine Praxis dir selbst oder jemandem beschreibst."
+    },
+    "es": {
+     "t": "Palabras habituales del yoga",
+     "g": "Aprende algunas palabras que oirás a menudo en una clase de yoga.",
+     "p": [
+      "Asana significa postura, y pranayama se refiere a las prácticas de respiración.",
+      "Vinyasa describe unir movimiento y respiración; savasana es la relajación final que ya conoces.",
+      "Namaste es un saludo respetuoso que a veces se dice al final de la clase, con las manos juntas."
+     ],
+     "q": "¿Habías oído alguna de estas palabras? ¿Cuál te parece más interesante?",
+     "c": "Usa dos de las palabras de hoy al describir tu práctica, para ti o a un amigo."
+    },
+    "fr": {
+     "t": "Les mots courants du yoga",
+     "g": "Apprendre quelques mots que tu entendras souvent en cours de yoga.",
+     "p": [
+      "Asana signifie posture, et pranayama désigne les pratiques de respiration.",
+      "Vinyasa décrit l'enchaînement du mouvement et du souffle ; savasana est la relaxation finale déjà connue.",
+      "Namaste est une salutation respectueuse parfois dite en fin de cours, mains jointes."
+     ],
+     "q": "Avais-tu déjà entendu certains de ces mots ? Lequel te semble le plus intéressant ?",
+     "c": "Utilise deux des mots du jour pour décrire ta pratique, à toi-même ou à un ami."
+    },
+    "it": {
+     "t": "Parole comuni dello yoga",
+     "g": "Imparare alcune parole che sentirai spesso in una lezione di yoga.",
+     "p": [
+      "Asana significa posizione, e pranayama indica le pratiche di respirazione.",
+      "Vinyasa descrive l'unione di movimento e respiro; savasana è il rilassamento finale che già conosci.",
+      "Namaste è un saluto rispettoso a volte detto a fine lezione, con le mani giunte."
+     ],
+     "q": "Avevi già sentito qualcuna di queste parole? Quale ti incuriosisce di più?",
+     "c": "Usa due delle parole di oggi per descrivere la tua pratica, a te stesso o a un amico."
+    },
+    "pt": {
+     "t": "Palavras comuns do yoga",
+     "g": "Aprender algumas palavras que vais ouvir muitas vezes numa aula de yoga.",
+     "p": [
+      "Asana significa postura, e pranayama refere-se às práticas de respiração.",
+      "Vinyasa descreve a ligação entre movimento e respiração; savasana é o relaxamento final que já conheces.",
+      "Namaste é uma saudação respeitosa por vezes dita no fim da aula, com as mãos juntas."
+     ],
+     "q": "Já tinhas ouvido alguma destas palavras? Qual te parece mais interessante?",
+     "c": "Usa duas das palavras de hoje para descrever a tua prática, a ti próprio ou a um amigo."
+    },
+    "pt_BR": {
+     "t": "Palavras comuns da ioga",
+     "g": "Aprender algumas palavras que você vai ouvir bastante numa aula de ioga.",
+     "p": [
+      "Asana significa postura, e pranayama se refere às práticas de respiração.",
+      "Vinyasa descreve unir movimento e respiração; savasana é o relaxamento final que você já conhece.",
+      "Namastê é uma saudação respeitosa às vezes dita no fim da aula, com as mãos unidas."
+     ],
+     "q": "Você já tinha ouvido alguma dessas palavras? Qual parece mais interessante?",
+     "c": "Use duas palavras de hoje para descrever sua prática, para você mesmo ou para um amigo."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a vinyasa?",
+     "g": "Understand the idea of linking one movement to one breath.",
+     "p": [
+      "In vinyasa, each movement is paired with an inhale or an exhale, like a slow dance with the breath.",
+      "Lifting and opening movements often go with the inhale; folding and lowering often go with the exhale.",
+      "You already did this in cat and cow: breathe in for cow, breathe out for cat."
+     ],
+     "q": "Do you like moving in a rhythm, like dancing or walking to music?",
+     "c": "Flow between mountain pose with arms up and a forward fold six times, one breath per movement."
+    },
+    "de": {
+     "t": "Was ist ein Vinyasa?",
+     "g": "Verstehe die Idee, eine Bewegung mit einem Atemzug zu verbinden.",
+     "p": [
+      "Im Vinyasa gehört zu jeder Bewegung ein Ein- oder Ausatmen, wie ein langsamer Tanz mit dem Atem.",
+      "Hebende, öffnende Bewegungen passen oft zum Einatmen, beugende und senkende zum Ausatmen.",
+      "Das hast du schon bei Katze und Kuh gemacht: einatmen zur Kuh, ausatmen zur Katze."
+     ],
+     "q": "Magst du es, dich im Rhythmus zu bewegen, etwa beim Tanzen oder Gehen mit Musik?",
+     "c": "Fließ sechsmal zwischen Berghaltung mit erhobenen Armen und Vorbeuge, ein Atemzug pro Bewegung."
+    },
+    "es": {
+     "t": "¿Qué es un vinyasa?",
+     "g": "Entiende la idea de unir un movimiento a una respiración.",
+     "p": [
+      "En el vinyasa cada movimiento va con una inhalación o una exhalación, como un baile lento con la respiración.",
+      "Los movimientos que elevan y abren suelen ir con la inhalación; los que pliegan y bajan, con la exhalación.",
+      "Ya lo hiciste en el gato y la vaca: inhalas para la vaca y exhalas para el gato."
+     ],
+     "q": "¿Te gusta moverte con ritmo, como al bailar o caminar con música?",
+     "c": "Fluye seis veces entre la montaña con los brazos arriba y la flexión, una respiración por movimiento."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un vinyasa ?",
+     "g": "Comprendre l'idée d'associer un mouvement à une respiration.",
+     "p": [
+      "Dans le vinyasa, chaque mouvement va avec une inspiration ou une expiration, comme une danse lente avec le souffle.",
+      "Les mouvements qui montent et ouvrent vont souvent avec l'inspiration ; ceux qui plient et descendent avec l'expiration.",
+      "Tu l'as déjà fait avec le chat-vache : inspire pour la vache, expire pour le chat."
+     ],
+     "q": "Aimes-tu bouger en rythme, comme en dansant ou en marchant en musique ?",
+     "c": "Enchaîne six fois montagne bras levés et flexion avant, une respiration par mouvement."
+    },
+    "it": {
+     "t": "Che cos'è un vinyasa?",
+     "g": "Capire l'idea di unire un movimento a un respiro.",
+     "p": [
+      "Nel vinyasa ogni movimento va con un'inspirazione o un'espirazione, come una danza lenta con il respiro.",
+      "I movimenti che sollevano e aprono vanno spesso con l'inspirazione; quelli che piegano e scendono con l'espirazione.",
+      "L'hai già fatto con gatto e mucca: inspiri per la mucca ed espiri per il gatto."
+     ],
+     "q": "Ti piace muoverti a ritmo, come quando balli o cammini con la musica?",
+     "c": "Fluisci sei volte tra montagna a braccia alzate e piegamento in avanti, un respiro per movimento."
+    },
+    "pt": {
+     "t": "O que é um vinyasa?",
+     "g": "Perceber a ideia de ligar um movimento a uma respiração.",
+     "p": [
+      "No vinyasa, cada movimento acompanha uma inspiração ou expiração, como uma dança lenta com a respiração.",
+      "Os movimentos que sobem e abrem costumam ir com a inspiração; os que dobram e descem, com a expiração.",
+      "Já o fizeste no gato e vaca: inspiras para a vaca e expiras para o gato."
+     ],
+     "q": "Gostas de te mexer com ritmo, como a dançar ou a caminhar com música?",
+     "c": "Flui seis vezes entre a montanha de braços no ar e a flexão à frente, uma respiração por movimento."
+    },
+    "pt_BR": {
+     "t": "O que é um vinyasa?",
+     "g": "Entender a ideia de unir um movimento a uma respiração.",
+     "p": [
+      "No vinyasa, cada movimento acompanha uma inspiração ou expiração, como uma dança lenta com a respiração.",
+      "Movimentos que sobem e abrem costumam ir com a inspiração; os que dobram e descem, com a expiração.",
+      "Você já fez isso no gato e vaca: inspira para a vaca e expira para o gato."
+     ],
+     "q": "Você gosta de se mexer no ritmo, como dançando ou caminhando com música?",
+     "c": "Flua seis vezes entre a montanha de braços para cima e a flexão à frente, uma respiração por movimento."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warming up gently",
+     "g": "Prepare your body before poses with small, easy movements.",
+     "p": [
+      "Slowly tilt and turn the head, avoiding big full circles if the neck feels tight.",
+      "Roll the shoulders up, back and down several times to release tension.",
+      "Circle the wrists and ankles in both directions to get them ready to carry your weight."
+     ],
+     "q": "Which part of your body usually needs the most warming up before you move?",
+     "c": "Do a three-minute warm-up today: neck, shoulders, wrists and ankles, all slow and gentle."
+    },
+    "de": {
+     "t": "Sanft aufwärmen",
+     "g": "Bereite deinen Körper mit kleinen, leichten Bewegungen auf die Haltungen vor.",
+     "p": [
+      "Neig und dreh den Kopf langsam und vermeide große Kreise, wenn der Nacken verspannt ist.",
+      "Roll die Schultern mehrmals nach oben, hinten und unten, um Spannung zu lösen.",
+      "Kreis Handgelenke und Knöchel in beide Richtungen, damit sie bereit sind, dein Gewicht zu tragen."
+     ],
+     "q": "Welcher Teil deines Körpers braucht vor dem Bewegen meist das meiste Aufwärmen?",
+     "c": "Mach heute drei Minuten Aufwärmen: Nacken, Schultern, Handgelenke und Knöchel, alles langsam und sanft."
+    },
+    "es": {
+     "t": "Calentar con suavidad",
+     "g": "Prepara el cuerpo antes de las posturas con movimientos pequeños y fáciles.",
+     "p": [
+      "Inclina y gira la cabeza despacio, evitando círculos completos si notas el cuello tenso.",
+      "Rueda los hombros hacia arriba, atrás y abajo varias veces para soltar tensión.",
+      "Haz círculos con muñecas y tobillos en ambos sentidos para que estén listos para soportar tu peso."
+     ],
+     "q": "¿Qué parte de tu cuerpo suele necesitar más calentamiento antes de moverte?",
+     "c": "Haz hoy tres minutos de calentamiento: cuello, hombros, muñecas y tobillos, todo lento y suave."
+    },
+    "fr": {
+     "t": "S'échauffer en douceur",
+     "g": "Préparer le corps avant les postures avec de petits mouvements faciles.",
+     "p": [
+      "Incline et tourne lentement la tête, en évitant les grands cercles si la nuque est tendue.",
+      "Fais rouler les épaules vers le haut, l'arrière et le bas plusieurs fois pour relâcher les tensions.",
+      "Fais des cercles avec les poignets et les chevilles dans les deux sens pour les préparer à porter ton poids."
+     ],
+     "q": "Quelle partie de ton corps a le plus besoin d'échauffement avant de bouger ?",
+     "c": "Fais aujourd'hui trois minutes d'échauffement : nuque, épaules, poignets et chevilles, lentement et en douceur."
+    },
+    "it": {
+     "t": "Riscaldarsi con dolcezza",
+     "g": "Preparare il corpo prima delle posizioni con movimenti piccoli e semplici.",
+     "p": [
+      "Inclina e ruota lentamente la testa, evitando cerchi completi se il collo è rigido.",
+      "Ruota le spalle in su, indietro e in giù più volte per sciogliere la tensione.",
+      "Fai cerchi con polsi e caviglie in entrambe le direzioni per prepararli a sostenere il peso."
+     ],
+     "q": "Quale parte del tuo corpo ha di solito più bisogno di riscaldamento prima di muoverti?",
+     "c": "Fai oggi tre minuti di riscaldamento: collo, spalle, polsi e caviglie, tutto lento e delicato."
+    },
+    "pt": {
+     "t": "Aquecer com suavidade",
+     "g": "Preparar o corpo antes das posturas com movimentos pequenos e fáceis.",
+     "p": [
+      "Inclina e roda a cabeça devagar, evitando círculos completos se o pescoço estiver tenso.",
+      "Roda os ombros para cima, para trás e para baixo várias vezes para soltar a tensão.",
+      "Faz círculos com os pulsos e tornozelos nos dois sentidos para os preparar para o teu peso."
+     ],
+     "q": "Que parte do teu corpo costuma precisar de mais aquecimento antes de te mexeres?",
+     "c": "Faz hoje três minutos de aquecimento: pescoço, ombros, pulsos e tornozelos, tudo lento e suave."
+    },
+    "pt_BR": {
+     "t": "Aquecendo com suavidade",
+     "g": "Preparar o corpo antes das posturas com movimentos pequenos e fáceis.",
+     "p": [
+      "Incline e gire a cabeça devagar, evitando círculos completos se o pescoço estiver tenso.",
+      "Gire os ombros para cima, para trás e para baixo várias vezes para soltar a tensão.",
+      "Faça círculos com punhos e tornozelos nos dois sentidos para prepará-los para o seu peso."
+     ],
+     "q": "Qual parte do seu corpo costuma precisar de mais aquecimento antes de se mexer?",
+     "c": "Faça hoje três minutos de aquecimento: pescoço, ombros, punhos e tornozelos, tudo lento e suave."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooling down",
+     "g": "Slow the pace at the end of practice and ease into rest.",
+     "p": [
+      "Gradually make movements smaller and breaths longer as you near the end.",
+      "Gentle lying twists, with knees falling to one side, help the back unwind.",
+      "A simple knees-to-chest hug relaxes the lower back before savasana."
+     ],
+     "q": "How do you usually wind down after a busy or active day?",
+     "c": "End your next practice with a lying twist on each side, a knees-to-chest hug and two minutes of rest."
+    },
+    "de": {
+     "t": "Abkühlen",
+     "g": "Verlangsame das Tempo am Ende der Praxis und gleite in die Ruhe.",
+     "p": [
+      "Mach die Bewegungen gegen Ende allmählich kleiner und die Atemzüge länger.",
+      "Sanfte Drehungen im Liegen, bei denen die Knie zur Seite sinken, entspannen den Rücken.",
+      "Die Knie zur Brust zu umarmen lockert den unteren Rücken vor dem Savasana."
+     ],
+     "q": "Wie kommst du normalerweise nach einem vollen oder aktiven Tag zur Ruhe?",
+     "c": "Beende deine nächste Praxis mit einer Drehung im Liegen pro Seite, Knie zur Brust und zwei Minuten Ruhe."
+    },
+    "es": {
+     "t": "Volver a la calma",
+     "g": "Baja el ritmo al final de la práctica y entra poco a poco en el descanso.",
+     "p": [
+      "Haz los movimientos cada vez más pequeños y las respiraciones más largas al acercarte al final.",
+      "Las torsiones suaves tumbado, dejando caer las rodillas a un lado, ayudan a relajar la espalda.",
+      "Abrazar las rodillas contra el pecho relaja la zona lumbar antes de savasana."
+     ],
+     "q": "¿Cómo sueles desconectar después de un día intenso o activo?",
+     "c": "Termina tu próxima práctica con una torsión tumbado por lado, rodillas al pecho y dos minutos de descanso."
+    },
+    "fr": {
+     "t": "Le retour au calme",
+     "g": "Ralentir le rythme en fin de pratique et glisser vers le repos.",
+     "p": [
+      "Rends les mouvements plus petits et les respirations plus longues à l'approche de la fin.",
+      "Des torsions douces allongé, genoux basculant d'un côté, aident le dos à se détendre.",
+      "Serrer les genoux contre la poitrine relâche le bas du dos avant savasana."
+     ],
+     "q": "Comment te détends-tu d'habitude après une journée chargée ou active ?",
+     "c": "Termine ta prochaine pratique par une torsion allongée de chaque côté, genoux contre la poitrine et deux minutes de repos."
+    },
+    "it": {
+     "t": "Defaticamento",
+     "g": "Rallentare il ritmo a fine pratica e scivolare verso il riposo.",
+     "p": [
+      "Rendi i movimenti sempre più piccoli e i respiri più lunghi man mano che arrivi alla fine.",
+      "Torsioni dolci da sdraiato, con le ginocchia che cadono da un lato, aiutano la schiena a sciogliersi.",
+      "Abbracciare le ginocchia al petto rilassa la zona lombare prima di savasana."
+     ],
+     "q": "Come ti rilassi di solito dopo una giornata piena o attiva?",
+     "c": "Chiudi la prossima pratica con una torsione da sdraiato per lato, ginocchia al petto e due minuti di riposo."
+    },
+    "pt": {
+     "t": "Voltar à calma",
+     "g": "Abrandar o ritmo no fim da prática e entrar aos poucos no descanso.",
+     "p": [
+      "Torna os movimentos mais pequenos e as respirações mais longas à medida que te aproximas do fim.",
+      "Torções suaves deitado, com os joelhos a cair para um lado, ajudam as costas a soltar.",
+      "Abraçar os joelhos contra o peito relaxa a zona lombar antes do savasana."
+     ],
+     "q": "Como costumas descontrair depois de um dia cheio ou ativo?",
+     "c": "Termina a próxima prática com uma torção deitado de cada lado, joelhos ao peito e dois minutos de descanso."
+    },
+    "pt_BR": {
+     "t": "Desaquecimento",
+     "g": "Diminuir o ritmo no fim da prática e entrar aos poucos no descanso.",
+     "p": [
+      "Deixe os movimentos menores e as respirações mais longas conforme se aproxima do fim.",
+      "Torções suaves deitado, com os joelhos caindo para um lado, ajudam as costas a relaxar.",
+      "Abraçar os joelhos junto ao peito relaxa a lombar antes do savasana."
+     ],
+     "q": "Como você costuma desacelerar depois de um dia cheio ou ativo?",
+     "c": "Termine a próxima prática com uma torção deitado de cada lado, joelhos no peito e dois minutos de descanso."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rest days and rhythm",
+     "g": "See why short, regular sessions often feel better than rare, long ones.",
+     "p": [
+      "Ten calm minutes most days usually build a habit more easily than one long session a week.",
+      "Rest days are part of the rhythm and give the body time to feel refreshed.",
+      "Pick a regular time, such as after waking up or before dinner, so practice becomes easy to remember."
+     ],
+     "q": "What time of day would suit a short practice best in your routine?",
+     "c": "Choose your practice time for the coming week and set a gentle reminder for it."
+    },
+    "de": {
+     "t": "Ruhetage und Rhythmus",
+     "g": "Erkenne, warum kurze, regelmäßige Einheiten oft besser tun als seltene, lange.",
+     "p": [
+      "Zehn ruhige Minuten an den meisten Tagen formen eine Gewohnheit meist leichter als eine lange Einheit pro Woche.",
+      "Ruhetage gehören zum Rhythmus und geben dem Körper Zeit, sich frisch zu fühlen.",
+      "Wähl eine feste Zeit, etwa nach dem Aufstehen oder vor dem Abendessen, damit du leicht daran denkst."
+     ],
+     "q": "Welche Tageszeit würde in deinem Alltag am besten für eine kurze Praxis passen?",
+     "c": "Leg deine Übungszeit für die kommende Woche fest und stell dir eine sanfte Erinnerung."
+    },
+    "es": {
+     "t": "Días de descanso y ritmo",
+     "g": "Descubre por qué las sesiones cortas y regulares suelen sentar mejor que las largas y esporádicas.",
+     "p": [
+      "Diez minutos tranquilos casi todos los días suelen crear el hábito más fácilmente que una sesión larga a la semana.",
+      "Los días de descanso forman parte del ritmo y dan al cuerpo tiempo para sentirse renovado.",
+      "Elige un momento fijo, como al despertar o antes de cenar, para que la práctica sea fácil de recordar."
+     ],
+     "q": "¿Qué momento del día encajaría mejor con una práctica corta en tu rutina?",
+     "c": "Elige tu hora de práctica para la próxima semana y pon un recordatorio amable."
+    },
+    "fr": {
+     "t": "Jours de repos et rythme",
+     "g": "Comprendre pourquoi des séances courtes et régulières font souvent plus de bien que des longues et rares.",
+     "p": [
+      "Dix minutes calmes presque chaque jour installent une habitude plus facilement qu'une longue séance par semaine.",
+      "Les jours de repos font partie du rythme et laissent au corps le temps de se sentir ressourcé.",
+      "Choisis un moment fixe, au réveil ou avant le dîner, pour que la pratique soit facile à retenir."
+     ],
+     "q": "Quel moment de la journée conviendrait le mieux à une courte pratique dans ta routine ?",
+     "c": "Choisis ton horaire de pratique pour la semaine à venir et programme un rappel bienveillant."
+    },
+    "it": {
+     "t": "Giorni di riposo e ritmo",
+     "g": "Capire perché sessioni brevi e regolari spesso fanno stare meglio di sessioni lunghe e rare.",
+     "p": [
+      "Dieci minuti tranquilli quasi ogni giorno creano un'abitudine più facilmente di una lunga sessione a settimana.",
+      "I giorni di riposo fanno parte del ritmo e danno al corpo il tempo di sentirsi rinnovato.",
+      "Scegli un momento fisso, come appena sveglio o prima di cena, così è facile ricordarsene."
+     ],
+     "q": "Quale momento della giornata sarebbe più adatto a una breve pratica nella tua routine?",
+     "c": "Scegli l'orario di pratica per la prossima settimana e imposta un promemoria gentile."
+    },
+    "pt": {
+     "t": "Dias de descanso e ritmo",
+     "g": "Perceber porque é que sessões curtas e regulares costumam saber melhor do que longas e raras.",
+     "p": [
+      "Dez minutos calmos na maioria dos dias criam o hábito mais facilmente do que uma sessão longa por semana.",
+      "Os dias de descanso fazem parte do ritmo e dão ao corpo tempo para se sentir renovado.",
+      "Escolhe uma hora fixa, como ao acordar ou antes do jantar, para que a prática seja fácil de lembrar."
+     ],
+     "q": "Que altura do dia seria melhor para uma prática curta na tua rotina?",
+     "c": "Escolhe a tua hora de prática para a próxima semana e cria um lembrete simpático."
+    },
+    "pt_BR": {
+     "t": "Dias de descanso e ritmo",
+     "g": "Entender por que sessões curtas e regulares costumam fazer mais bem do que longas e raras.",
+     "p": [
+      "Dez minutos tranquilos na maioria dos dias criam o hábito com mais facilidade do que uma sessão longa por semana.",
+      "Os dias de descanso fazem parte do ritmo e dão ao corpo tempo para se sentir renovado.",
+      "Escolha um horário fixo, como ao acordar ou antes do jantar, para a prática ficar fácil de lembrar."
+     ],
+     "q": "Qual horário do dia combinaria melhor com uma prática curta na sua rotina?",
+     "c": "Escolha seu horário de prática para a próxima semana e crie um lembrete gentil."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back at the breaths, poses and habits you explored this month.",
+     "p": [
+      "You learned to notice your breath and practise belly and three-part breathing.",
+      "You met key poses: mountain, easy seat, child's pose, cat-cow, downward dog, lunge, folds and savasana.",
+      "You also explored safety, props, warming up, cooling down and a regular rhythm."
+     ],
+     "q": "Looking back on this first month, what surprised you most about yoga?",
+     "c": "Do your ten-minute mini routine today and add one pose from this month that you enjoyed."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Schau zurück auf die Atemübungen, Haltungen und Gewohnheiten dieses Monats.",
+     "p": [
+      "Du hast gelernt, deinen Atem zu bemerken und Bauch- sowie dreiteilige Atmung zu üben.",
+      "Du kennst jetzt Berg, einfachen Sitz, Kindhaltung, Katze-Kuh, Hund, Ausfallschritt, Vorbeugen und Savasana.",
+      "Außerdem ging es um Sicherheit, Hilfsmittel, Aufwärmen, Abkühlen und einen regelmäßigen Rhythmus."
+     ],
+     "q": "Was hat dich im ersten Monat am meisten am Yoga überrascht?",
+     "c": "Mach heute deine zehnminütige Mini-Routine und füg eine Haltung aus diesem Monat hinzu, die dir gefallen hat."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasa las respiraciones, posturas y hábitos que has explorado este mes.",
+     "p": [
+      "Aprendiste a observar la respiración y a practicar la respiración abdominal y en tres partes.",
+      "Conociste posturas clave: montaña, postura fácil, niño, gato-vaca, perro, zancada, flexiones y savasana.",
+      "También exploraste la seguridad, los accesorios, el calentamiento, la vuelta a la calma y un ritmo regular."
+     ],
+     "q": "Mirando atrás, ¿qué es lo que más te ha sorprendido del yoga este primer mes?",
+     "c": "Haz hoy tu minirrutina de diez minutos y añade una postura de este mes que hayas disfrutado."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Revenir sur les respirations, postures et habitudes explorées ce mois-ci.",
+     "p": [
+      "Tu as appris à observer ton souffle et à pratiquer la respiration abdominale et en trois temps.",
+      "Tu connais les postures clés : montagne, posture facile, enfant, chat-vache, chien, fente, flexions et savasana.",
+      "Tu as aussi exploré la sécurité, les accessoires, l'échauffement, le retour au calme et un rythme régulier."
+     ],
+     "q": "En regardant ce premier mois, qu'est-ce qui t'a le plus surpris dans le yoga ?",
+     "c": "Fais aujourd'hui ta mini-routine de dix minutes en ajoutant une posture du mois que tu as aimée."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripercorrere respiri, posizioni e abitudini esplorati in questo mese.",
+     "p": [
+      "Hai imparato a osservare il respiro e a praticare la respirazione addominale e in tre parti.",
+      "Conosci le posizioni chiave: montagna, posizione facile, bambino, gatto-mucca, cane, affondo, piegamenti e savasana.",
+      "Hai esplorato anche sicurezza, supporti, riscaldamento, defaticamento e un ritmo regolare."
+     ],
+     "q": "Guardando a questo primo mese, cosa ti ha sorpreso di più dello yoga?",
+     "c": "Fai oggi la tua mini routine di dieci minuti e aggiungi una posizione del mese che ti è piaciuta."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Olhar para trás para as respirações, posturas e hábitos explorados este mês.",
+     "p": [
+      "Aprendeste a observar a respiração e a praticar a respiração abdominal e em três partes.",
+      "Conheceste posturas-chave: montanha, postura fácil, criança, gato-vaca, cão, afundo, flexões e savasana.",
+      "Também exploraste a segurança, os acessórios, o aquecimento, o regresso à calma e um ritmo regular."
+     ],
+     "q": "Olhando para este primeiro mês, o que mais te surpreendeu no yoga?",
+     "c": "Faz hoje a tua mini-rotina de dez minutos e junta uma postura deste mês de que tenhas gostado."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Relembrar as respirações, posturas e hábitos explorados neste mês.",
+     "p": [
+      "Você aprendeu a observar a respiração e a praticar a respiração abdominal e em três partes.",
+      "Conheceu posturas-chave: montanha, postura fácil, criança, gato-vaca, cachorro, avanço, flexões e savasana.",
+      "Também explorou segurança, acessórios, aquecimento, desaquecimento e um ritmo regular."
+     ],
+     "q": "Olhando para este primeiro mês, o que mais surpreendeu você na ioga?",
+     "c": "Faça hoje sua mini-rotina de dez minutos e inclua uma postura deste mês de que você gostou."
+    }
+   }
+  }
+ ]
+}

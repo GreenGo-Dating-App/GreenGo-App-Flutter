@@ -1,0 +1,835 @@
+{
+ "topic": "gym",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cardio machines overview",
+     "g": "Compare the treadmill, bike, rower and elliptical.",
+     "p": [
+      "Treadmill: walking or jogging, simple and familiar.",
+      "Bike and elliptical: low impact and easy on the joints for many people.",
+      "Rower: works legs, back and arms together in one rhythm."
+     ],
+     "q": "Which cardio machine are you most curious about?",
+     "c": "Spend 5 minutes on a cardio machine you have never used."
+    },
+    "de": {
+     "t": "Cardiogeräte im Überblick",
+     "g": "Vergleiche Laufband, Fahrrad, Rudergerät und Crosstrainer.",
+     "p": [
+      "Laufband: Gehen oder Joggen, einfach und vertraut.",
+      "Rad und Crosstrainer: gelenkschonend und für viele angenehm.",
+      "Rudergerät: trainiert Beine, Rücken und Arme in einem Rhythmus."
+     ],
+     "q": "Auf welches Cardiogerät bist du am meisten neugierig?",
+     "c": "Verbring 5 Minuten auf einem Cardiogerät, das du noch nie benutzt hast."
+    },
+    "es": {
+     "t": "Las máquinas de cardio",
+     "g": "Compara cinta, bicicleta, remo y elíptica.",
+     "p": [
+      "Cinta: caminar o trotar, sencillo y familiar.",
+      "Bici y elíptica: bajo impacto y suaves con las articulaciones para mucha gente.",
+      "Remo: trabaja piernas, espalda y brazos en un mismo ritmo."
+     ],
+     "q": "¿Qué máquina de cardio te da más curiosidad?",
+     "c": "Pasa 5 minutos en una máquina de cardio que nunca hayas usado."
+    },
+    "fr": {
+     "t": "Tour des machines cardio",
+     "g": "Compare tapis, vélo, rameur et elliptique.",
+     "p": [
+      "Tapis : marche ou course légère, simple et familier.",
+      "Vélo et elliptique : faible impact, doux pour les articulations de beaucoup.",
+      "Rameur : fait travailler jambes, dos et bras dans un même rythme."
+     ],
+     "q": "Quelle machine cardio te rend le plus curieux ?",
+     "c": "Passe 5 minutes sur une machine cardio que tu n’as jamais utilisée."
+    },
+    "it": {
+     "t": "Panoramica delle macchine cardio",
+     "g": "Confronta tapis roulant, cyclette, vogatore ed ellittica.",
+     "p": [
+      "Tapis roulant: camminata o corsetta, semplice e familiare.",
+      "Cyclette ed ellittica: basso impatto e delicate per le articolazioni di molti.",
+      "Vogatore: allena gambe, schiena e braccia in un unico ritmo."
+     ],
+     "q": "Quale macchina cardio ti incuriosisce di più?",
+     "c": "Passa 5 minuti su una macchina cardio che non hai mai usato."
+    },
+    "pt": {
+     "t": "As máquinas de cardio",
+     "g": "Compara passadeira, bicicleta, remo e elíptica.",
+     "p": [
+      "Passadeira: caminhar ou correr devagar, simples e familiar.",
+      "Bicicleta e elíptica: baixo impacto e suaves para as articulações de muitos.",
+      "Remo: trabalha pernas, costas e braços num só ritmo."
+     ],
+     "q": "Que máquina de cardio te deixa mais curioso?",
+     "c": "Passa 5 minutos numa máquina de cardio que nunca usaste."
+    },
+    "pt_BR": {
+     "t": "Os aparelhos de cardio",
+     "g": "Compare esteira, bike, remo e elíptico.",
+     "p": [
+      "Esteira: caminhar ou trotar, simples e familiar.",
+      "Bike e elíptico: baixo impacto e suaves para as articulações de muita gente.",
+      "Remo: trabalha pernas, costas e braços num só ritmo."
+     ],
+     "q": "Qual aparelho de cardio deixa você mais curioso?",
+     "c": "Passe 5 minutos em um aparelho de cardio que você nunca usou."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Steady-state cardio",
+     "g": "See why moderate, comfortable cardio is so popular.",
+     "p": [
+      "Steady-state means a pace you can hold for a while.",
+      "A simple guide: you can still talk in short sentences.",
+      "Many people find it relaxing and great for clearing the mind."
+     ],
+     "q": "What do you like to listen to during cardio?",
+     "c": "Do 15 minutes of easy cardio at a pace where you can still talk."
+    },
+    "de": {
+     "t": "Gleichmäßiges Ausdauertraining",
+     "g": "Sieh, warum moderates, angenehmes Cardio so beliebt ist.",
+     "p": [
+      "Gleichmäßig heißt: ein Tempo, das du eine Weile halten kannst.",
+      "Faustregel: Du kannst dabei noch in kurzen Sätzen sprechen.",
+      "Viele finden es entspannend und gut, um den Kopf frei zu bekommen."
+     ],
+     "q": "Was hörst du gern beim Cardiotraining?",
+     "c": "Mach 15 Minuten lockeres Cardio in einem Tempo, bei dem du noch reden kannst."
+    },
+    "es": {
+     "t": "Cardio continuo",
+     "g": "Descubre por qué el cardio moderado y cómodo es tan popular.",
+     "p": [
+      "Continuo significa un ritmo que puedes mantener un buen rato.",
+      "Una guía sencilla: aún puedes hablar con frases cortas.",
+      "A mucha gente le relaja y le ayuda a despejar la mente."
+     ],
+     "q": "¿Qué te gusta escuchar mientras haces cardio?",
+     "c": "Haz 15 minutos de cardio suave a un ritmo en el que puedas hablar."
+    },
+    "fr": {
+     "t": "Le cardio en endurance douce",
+     "g": "Comprends pourquoi le cardio modéré et confortable plaît tant.",
+     "p": [
+      "Endurance douce veut dire un rythme que tu peux tenir un moment.",
+      "Repère simple : tu peux encore parler en phrases courtes.",
+      "Beaucoup le trouvent relaxant et idéal pour se vider la tête."
+     ],
+     "q": "Qu’aimes-tu écouter pendant le cardio ?",
+     "c": "Fais 15 minutes de cardio léger à un rythme où tu peux encore parler."
+    },
+    "it": {
+     "t": "Cardio a ritmo costante",
+     "g": "Capire perché il cardio moderato e piacevole è così amato.",
+     "p": [
+      "Ritmo costante significa un’andatura che puoi mantenere a lungo.",
+      "Una guida semplice: riesci ancora a parlare con frasi brevi.",
+      "Molti lo trovano rilassante e ottimo per liberare la mente."
+     ],
+     "q": "Cosa ti piace ascoltare mentre fai cardio?",
+     "c": "Fai 15 minuti di cardio leggero a un ritmo in cui riesci a parlare."
+    },
+    "pt": {
+     "t": "Cardio contínuo",
+     "g": "Perceber porque o cardio moderado e confortável é tão popular.",
+     "p": [
+      "Contínuo quer dizer um ritmo que consegues manter durante algum tempo.",
+      "Uma regra simples: ainda consegues falar com frases curtas.",
+      "Muita gente acha relaxante e ótimo para limpar a cabeça."
+     ],
+     "q": "O que gostas de ouvir enquanto fazes cardio?",
+     "c": "Faz 15 minutos de cardio leve num ritmo em que ainda consigas falar."
+    },
+    "pt_BR": {
+     "t": "Cardio contínuo",
+     "g": "Entenda por que o cardio moderado e confortável é tão popular.",
+     "p": [
+      "Contínuo significa um ritmo que você consegue manter por um tempo.",
+      "Uma regra simples: você ainda consegue falar frases curtas.",
+      "Muita gente acha relaxante e ótimo para esvaziar a cabeça."
+     ],
+     "q": "O que você gosta de ouvir durante o cardio?",
+     "c": "Faça 15 minutos de cardio leve num ritmo em que ainda dê para conversar."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rowing machine technique",
+     "g": "Learn the basic rowing sequence: legs, body, arms.",
+     "p": [
+      "Drive first with your legs, then lean back slightly, then pull with your arms.",
+      "On the way back: arms out, body forward, then bend the knees.",
+      "Keep a neutral back and a smooth, steady rhythm."
+     ],
+     "q": "Have you ever rowed a real boat or a rowing machine?",
+     "c": "Row 5 easy minutes, saying legs, body, arms in your head."
+    },
+    "de": {
+     "t": "Technik am Rudergerät",
+     "g": "Lerne die Grundabfolge beim Rudern: Beine, Oberkörper, Arme.",
+     "p": [
+      "Zuerst mit den Beinen drücken, dann leicht zurücklehnen, dann mit den Armen ziehen.",
+      "Zurück: Arme vor, Oberkörper nach vorn, dann die Knie beugen.",
+      "Halte den Rücken neutral und den Rhythmus ruhig und gleichmäßig."
+     ],
+     "q": "Bist du schon einmal in einem echten Boot oder am Rudergerät gerudert?",
+     "c": "Rudere 5 lockere Minuten und denk dabei: Beine, Oberkörper, Arme."
+    },
+    "es": {
+     "t": "Técnica en la máquina de remo",
+     "g": "Aprende la secuencia básica: piernas, tronco, brazos.",
+     "p": [
+      "Empuja primero con las piernas, luego inclínate un poco atrás y tira con los brazos.",
+      "Al volver: brazos estirados, tronco adelante y luego dobla las rodillas.",
+      "Mantén la espalda neutra y un ritmo suave y constante."
+     ],
+     "q": "¿Has remado alguna vez en un barco o en una máquina?",
+     "c": "Rema 5 minutos suaves repitiendo en tu mente: piernas, tronco, brazos."
+    },
+    "fr": {
+     "t": "La technique au rameur",
+     "g": "Apprends la séquence de base : jambes, buste, bras.",
+     "p": [
+      "Pousse d’abord avec les jambes, incline-toi un peu en arrière, puis tire avec les bras.",
+      "Au retour : bras devant, buste en avant, puis plie les genoux.",
+      "Garde le dos neutre et un rythme fluide et régulier."
+     ],
+     "q": "As-tu déjà ramé sur un vrai bateau ou sur un rameur ?",
+     "c": "Rame 5 minutes tranquilles en te répétant : jambes, buste, bras."
+    },
+    "it": {
+     "t": "Tecnica al vogatore",
+     "g": "Impara la sequenza base: gambe, busto, braccia.",
+     "p": [
+      "Spingi prima con le gambe, poi inclinati un po’ indietro, poi tira con le braccia.",
+      "Al ritorno: braccia avanti, busto avanti, poi piega le ginocchia.",
+      "Mantieni la schiena neutra e un ritmo fluido e costante."
+     ],
+     "q": "Hai mai remato su una vera barca o al vogatore?",
+     "c": "Rema 5 minuti tranquilli ripetendo in mente: gambe, busto, braccia."
+    },
+    "pt": {
+     "t": "Técnica na máquina de remo",
+     "g": "Aprende a sequência básica: pernas, tronco, braços.",
+     "p": [
+      "Empurra primeiro com as pernas, inclina-te um pouco para trás e puxa com os braços.",
+      "No regresso: braços à frente, tronco para a frente e depois dobra os joelhos.",
+      "Mantém as costas neutras e um ritmo suave e constante."
+     ],
+     "q": "Já remaste num barco a sério ou numa máquina de remo?",
+     "c": "Rema 5 minutos leves a repetir na cabeça: pernas, tronco, braços."
+    },
+    "pt_BR": {
+     "t": "Técnica no remo ergométrico",
+     "g": "Aprenda a sequência básica: pernas, tronco, braços.",
+     "p": [
+      "Empurre primeiro com as pernas, incline um pouco para trás e puxe com os braços.",
+      "Na volta: braços à frente, tronco para a frente e depois dobre os joelhos.",
+      "Mantenha as costas neutras e um ritmo suave e constante."
+     ],
+     "q": "Você já remou em um barco de verdade ou no remo da academia?",
+     "c": "Reme 5 minutos leves repetindo na cabeça: pernas, tronco, braços."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using the stationary bike",
+     "g": "Set up the bike for comfortable pedalling.",
+     "p": [
+      "Seat height: a slight bend in the knee at the bottom of the pedal stroke.",
+      "Sit tall with relaxed shoulders and a light grip on the handles.",
+      "Start with low resistance and a smooth, steady cadence."
+     ],
+     "q": "Do you enjoy cycling outside as well?",
+     "c": "Adjust the seat properly and ride 10 easy minutes."
+    },
+    "de": {
+     "t": "Das Standfahrrad nutzen",
+     "g": "Stell das Rad für angenehmes Treten ein.",
+     "p": [
+      "Sitzhöhe: Das Knie ist unten in der Tretbewegung leicht gebeugt.",
+      "Sitz aufrecht, Schultern locker, Griffe nur leicht halten.",
+      "Beginne mit wenig Widerstand und gleichmäßiger Trittfrequenz."
+     ],
+     "q": "Fährst du auch draußen gern Rad?",
+     "c": "Stell den Sitz richtig ein und fahr 10 lockere Minuten."
+    },
+    "es": {
+     "t": "Usar la bicicleta estática",
+     "g": "Ajusta la bici para pedalear con comodidad.",
+     "p": [
+      "Altura del sillín: la rodilla algo flexionada en el punto más bajo del pedal.",
+      "Siéntate erguido, hombros relajados y agarre suave del manillar.",
+      "Empieza con poca resistencia y una cadencia suave y constante."
+     ],
+     "q": "¿Te gusta también ir en bici al aire libre?",
+     "c": "Ajusta bien el sillín y pedalea 10 minutos suaves."
+    },
+    "fr": {
+     "t": "Utiliser le vélo d’appartement",
+     "g": "Règle le vélo pour pédaler confortablement.",
+     "p": [
+      "Hauteur de selle : le genou reste légèrement fléchi en bas du coup de pédale.",
+      "Assieds-toi droit, épaules relâchées, prise légère sur le guidon.",
+      "Commence avec peu de résistance et une cadence fluide et régulière."
+     ],
+     "q": "Aimes-tu aussi faire du vélo en extérieur ?",
+     "c": "Règle bien la selle et pédale 10 minutes tranquilles."
+    },
+    "it": {
+     "t": "Usare la cyclette",
+     "g": "Regola la cyclette per pedalare comodamente.",
+     "p": [
+      "Altezza del sellino: ginocchio leggermente piegato nel punto più basso della pedalata.",
+      "Siediti dritto, spalle rilassate e presa leggera sul manubrio.",
+      "Inizia con poca resistenza e una cadenza fluida e costante."
+     ],
+     "q": "Ti piace andare in bici anche all’aperto?",
+     "c": "Regola bene il sellino e pedala 10 minuti tranquilli."
+    },
+    "pt": {
+     "t": "Usar a bicicleta estática",
+     "g": "Ajusta a bicicleta para pedalar com conforto.",
+     "p": [
+      "Altura do selim: joelho ligeiramente dobrado no ponto mais baixo da pedalada.",
+      "Senta-te direito, ombros relaxados e mãos leves no guiador.",
+      "Começa com pouca resistência e uma cadência suave e constante."
+     ],
+     "q": "Também gostas de andar de bicicleta ao ar livre?",
+     "c": "Ajusta bem o selim e pedala 10 minutos leves."
+    },
+    "pt_BR": {
+     "t": "Usando a bike ergométrica",
+     "g": "Ajuste a bike para pedalar com conforto.",
+     "p": [
+      "Altura do banco: joelho levemente dobrado no ponto mais baixo da pedalada.",
+      "Sente ereto, ombros relaxados e mãos leves no guidão.",
+      "Comece com pouca carga e uma cadência suave e constante."
+     ],
+     "q": "Você também gosta de pedalar ao ar livre?",
+     "c": "Ajuste bem o banco e pedale 10 minutos leves."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Walking on an incline",
+     "g": "Raise your heart rate in a low-impact way.",
+     "p": [
+      "Set the treadmill to a gentle incline and a comfortable walking pace.",
+      "Walk tall and try not to lean on the handrails.",
+      "Increase the incline gradually over weeks, not all at once."
+     ],
+     "q": "Do you prefer walking indoors or outdoors?",
+     "c": "Walk 10 minutes on a gentle incline without holding the rails."
+    },
+    "de": {
+     "t": "Gehen mit Steigung",
+     "g": "Bring deinen Puls auf gelenkschonende Weise nach oben.",
+     "p": [
+      "Stell das Laufband auf eine leichte Steigung und ein angenehmes Gehtempo.",
+      "Geh aufrecht und stütz dich möglichst nicht auf die Haltegriffe.",
+      "Erhöhe die Steigung über Wochen nach und nach, nicht auf einmal."
+     ],
+     "q": "Gehst du lieber drinnen oder draußen?",
+     "c": "Geh 10 Minuten mit leichter Steigung, ohne dich festzuhalten."
+    },
+    "es": {
+     "t": "Caminar en pendiente",
+     "g": "Sube tus pulsaciones con un ejercicio de bajo impacto.",
+     "p": [
+      "Pon la cinta con una inclinación suave y un ritmo cómodo de paseo.",
+      "Camina erguido e intenta no apoyarte en las barras.",
+      "Aumenta la inclinación poco a poco a lo largo de semanas, no de golpe."
+     ],
+     "q": "¿Prefieres caminar en interior o al aire libre?",
+     "c": "Camina 10 minutos con una inclinación suave sin agarrarte a las barras."
+    },
+    "fr": {
+     "t": "Marcher en pente",
+     "g": "Augmente ton rythme cardiaque avec peu d’impact.",
+     "p": [
+      "Règle le tapis sur une pente douce et une allure de marche confortable.",
+      "Marche bien droit et évite de t’appuyer sur les barres.",
+      "Augmente la pente progressivement sur plusieurs semaines, pas d’un coup."
+     ],
+     "q": "Préfères-tu marcher en intérieur ou en extérieur ?",
+     "c": "Marche 10 minutes en pente douce sans tenir les barres."
+    },
+    "it": {
+     "t": "Camminare in salita",
+     "g": "Alza il battito con un esercizio a basso impatto.",
+     "p": [
+      "Imposta il tapis roulant con una pendenza leggera e un passo comodo.",
+      "Cammina dritto e cerca di non appoggiarti ai corrimano.",
+      "Aumenta la pendenza gradualmente nel corso delle settimane, non tutta insieme."
+     ],
+     "q": "Preferisci camminare al chiuso o all’aperto?",
+     "c": "Cammina 10 minuti in leggera salita senza tenerti ai corrimano."
+    },
+    "pt": {
+     "t": "Caminhar em inclinação",
+     "g": "Aumenta o ritmo cardíaco com baixo impacto.",
+     "p": [
+      "Põe a passadeira com uma inclinação suave e um ritmo de caminhada confortável.",
+      "Caminha direito e tenta não te apoiar nas barras.",
+      "Aumenta a inclinação aos poucos ao longo de semanas, não de uma vez."
+     ],
+     "q": "Preferes caminhar dentro de casa ou ao ar livre?",
+     "c": "Caminha 10 minutos numa inclinação suave sem segurar as barras."
+    },
+    "pt_BR": {
+     "t": "Caminhada na inclinação",
+     "g": "Aumente os batimentos com um exercício de baixo impacto.",
+     "p": [
+      "Coloque a esteira numa inclinação suave e num ritmo de caminhada confortável.",
+      "Caminhe ereto e tente não se apoiar nas barras.",
+      "Aumente a inclinação aos poucos ao longo das semanas, não de uma vez."
+     ],
+     "q": "Você prefere caminhar em ambiente fechado ou ao ar livre?",
+     "c": "Caminhe 10 minutos numa inclinação suave sem segurar nas barras."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Combining cardio and weights",
+     "g": "Fit both cardio and strength into one week.",
+     "p": [
+      "Option one: short cardio after your weights on training days.",
+      "Option two: separate light cardio sessions on rest days.",
+      "Choose what fits your schedule and keep it enjoyable."
+     ],
+     "q": "Which option sounds more practical for your week?",
+     "c": "Plan one week with your strength days and two short cardio sessions."
+    },
+    "de": {
+     "t": "Cardio und Krafttraining kombinieren",
+     "g": "Bring Cardio und Kraft in einer Woche unter.",
+     "p": [
+      "Option eins: kurzes Cardio nach dem Krafttraining an Trainingstagen.",
+      "Option zwei: eigene lockere Cardioeinheiten an Ruhetagen.",
+      "Wähl, was zu deinem Alltag passt, und hab Spaß dabei."
+     ],
+     "q": "Welche Option klingt für deine Woche praktischer?",
+     "c": "Plane eine Woche mit deinen Krafttagen und zwei kurzen Cardioeinheiten."
+    },
+    "es": {
+     "t": "Combinar cardio y pesas",
+     "g": "Encaja cardio y fuerza en una misma semana.",
+     "p": [
+      "Opción uno: un poco de cardio después de las pesas en los días de entreno.",
+      "Opción dos: sesiones de cardio suave aparte en días de descanso.",
+      "Elige lo que encaje en tu agenda y que te resulte agradable."
+     ],
+     "q": "¿Qué opción te parece más práctica para tu semana?",
+     "c": "Planifica una semana con tus días de fuerza y dos sesiones cortas de cardio."
+    },
+    "fr": {
+     "t": "Combiner cardio et musculation",
+     "g": "Intègre cardio et renforcement dans une même semaine.",
+     "p": [
+      "Option un : un peu de cardio après la musculation les jours d’entraînement.",
+      "Option deux : des séances de cardio léger à part, les jours de repos.",
+      "Choisis ce qui colle à ton emploi du temps et garde le plaisir."
+     ],
+     "q": "Quelle option te semble la plus pratique pour ta semaine ?",
+     "c": "Planifie une semaine avec tes jours de muscu et deux courtes séances cardio."
+    },
+    "it": {
+     "t": "Unire cardio e pesi",
+     "g": "Inserisci cardio e forza nella stessa settimana.",
+     "p": [
+      "Opzione uno: un po’ di cardio dopo i pesi nei giorni di allenamento.",
+      "Opzione due: sedute di cardio leggero a parte nei giorni di riposo.",
+      "Scegli ciò che si adatta ai tuoi impegni e che ti diverte."
+     ],
+     "q": "Quale opzione ti sembra più pratica per la tua settimana?",
+     "c": "Pianifica una settimana con i giorni di forza e due brevi sedute di cardio."
+    },
+    "pt": {
+     "t": "Combinar cardio e pesos",
+     "g": "Encaixa cardio e força na mesma semana.",
+     "p": [
+      "Opção um: um pouco de cardio depois dos pesos nos dias de treino.",
+      "Opção dois: sessões de cardio leve à parte nos dias de descanso.",
+      "Escolhe o que se ajusta à tua agenda e mantém o prazer."
+     ],
+     "q": "Que opção te parece mais prática para a tua semana?",
+     "c": "Planeia uma semana com os teus dias de força e duas sessões curtas de cardio."
+    },
+    "pt_BR": {
+     "t": "Combinando cardio e musculação",
+     "g": "Encaixe cardio e força na mesma semana.",
+     "p": [
+      "Opção um: um pouco de cardio depois da musculação nos dias de treino.",
+      "Opção dois: sessões de cardio leve separadas nos dias de descanso.",
+      "Escolha o que cabe na sua rotina e mantenha o treino prazeroso."
+     ],
+     "q": "Qual opção parece mais prática para a sua semana?",
+     "c": "Planeje uma semana com seus dias de força e duas sessões curtas de cardio."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flexibility vs mobility",
+     "g": "Understand two related ideas in simple terms.",
+     "p": [
+      "Flexibility is how far a muscle can lengthen, often tested while relaxed.",
+      "Mobility is how well you can move a joint actively and with control.",
+      "Both help you move comfortably, in the gym and in daily life."
+     ],
+     "q": "Where do you feel stiff most often?",
+     "c": "Try a slow, controlled arm circle and a gentle shoulder stretch; notice the difference."
+    },
+    "de": {
+     "t": "Beweglichkeit und Mobilität",
+     "g": "Verstehe zwei verwandte Begriffe ganz einfach.",
+     "p": [
+      "Dehnfähigkeit beschreibt, wie weit sich ein Muskel verlängern lässt, oft entspannt geprüft.",
+      "Mobilität beschreibt, wie gut du ein Gelenk aktiv und kontrolliert bewegst.",
+      "Beides hilft dir, dich angenehm zu bewegen, im Studio und im Alltag."
+     ],
+     "q": "Wo fühlst du dich am häufigsten steif?",
+     "c": "Probier langsames Armkreisen und eine sanfte Schulterdehnung; spür den Unterschied."
+    },
+    "es": {
+     "t": "Flexibilidad y movilidad",
+     "g": "Entiende dos ideas relacionadas de forma sencilla.",
+     "p": [
+      "La flexibilidad es cuánto puede alargarse un músculo, a menudo en reposo.",
+      "La movilidad es lo bien que mueves una articulación de forma activa y controlada.",
+      "Ambas te ayudan a moverte con comodidad, en el gimnasio y en tu día."
+     ],
+     "q": "¿Dónde te sientes rígido con más frecuencia?",
+     "c": "Prueba un círculo de brazo lento y un estiramiento suave de hombro; nota la diferencia."
+    },
+    "fr": {
+     "t": "Souplesse et mobilité",
+     "g": "Comprends deux notions proches, simplement.",
+     "p": [
+      "La souplesse, c’est jusqu’où un muscle peut s’allonger, souvent au repos.",
+      "La mobilité, c’est ta capacité à bouger une articulation activement et avec contrôle.",
+      "Les deux t’aident à bouger confortablement, en salle comme au quotidien."
+     ],
+     "q": "Où te sens-tu raide le plus souvent ?",
+     "c": "Essaie un cercle de bras lent puis un étirement doux d’épaule ; sens la différence."
+    },
+    "it": {
+     "t": "Flessibilità e mobilità",
+     "g": "Capire due concetti vicini in modo semplice.",
+     "p": [
+      "La flessibilità è quanto un muscolo può allungarsi, spesso da rilassato.",
+      "La mobilità è quanto bene muovi un’articolazione in modo attivo e controllato.",
+      "Entrambe ti aiutano a muoverti con comodità, in palestra e nella vita."
+     ],
+     "q": "Dove ti senti rigido più spesso?",
+     "c": "Prova un cerchio lento con il braccio e un leggero allungamento della spalla; nota la differenza."
+    },
+    "pt": {
+     "t": "Flexibilidade e mobilidade",
+     "g": "Perceber duas ideias próximas de forma simples.",
+     "p": [
+      "Flexibilidade é quanto um músculo consegue alongar, muitas vezes em repouso.",
+      "Mobilidade é a capacidade de mexer uma articulação de forma ativa e controlada.",
+      "Ambas ajudam-te a mexer com conforto, no ginásio e no dia a dia."
+     ],
+     "q": "Onde te sentes mais rígido com frequência?",
+     "c": "Experimenta um círculo de braço lento e um alongamento suave do ombro; sente a diferença."
+    },
+    "pt_BR": {
+     "t": "Flexibilidade e mobilidade",
+     "g": "Entenda duas ideias parecidas de um jeito simples.",
+     "p": [
+      "Flexibilidade é o quanto um músculo consegue alongar, muitas vezes em repouso.",
+      "Mobilidade é o quanto você movimenta uma articulação de forma ativa e controlada.",
+      "As duas ajudam você a se mexer com conforto, na academia e no dia a dia."
+     ],
+     "q": "Onde você se sente travado com mais frequência?",
+     "c": "Faça um círculo de braço lento e um alongamento suave de ombro; perceba a diferença."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple stretches after training",
+     "g": "Learn gentle stretches for the major muscle groups.",
+     "p": [
+      "Thighs, hips, chest and back are good places to start.",
+      "Hold each stretch gently for around 20 to 30 seconds, breathing calmly.",
+      "Stretch to mild tension, never to pain, and avoid bouncing."
+     ],
+     "q": "Which muscles feel tightest after you train?",
+     "c": "After your next workout, do 4 gentle stretches for 20 seconds each."
+    },
+    "de": {
+     "t": "Einfache Dehnungen nach dem Training",
+     "g": "Lerne sanfte Dehnungen für die großen Muskelgruppen.",
+     "p": [
+      "Oberschenkel, Hüfte, Brust und Rücken sind ein guter Anfang.",
+      "Halte jede Dehnung sanft etwa 20 bis 30 Sekunden und atme ruhig.",
+      "Dehn bis zu leichter Spannung, nie bis zum Schmerz, und federe nicht."
+     ],
+     "q": "Welche Muskeln fühlen sich nach dem Training am festesten an?",
+     "c": "Mach nach dem nächsten Training 4 sanfte Dehnungen von je 20 Sekunden."
+    },
+    "es": {
+     "t": "Estiramientos sencillos tras entrenar",
+     "g": "Aprende estiramientos suaves para los grandes grupos musculares.",
+     "p": [
+      "Muslos, cadera, pecho y espalda son un buen punto de partida.",
+      "Mantén cada estiramiento unos 20 a 30 segundos, respirando con calma.",
+      "Estira hasta una tensión leve, nunca hasta el dolor, y sin rebotes."
+     ],
+     "q": "¿Qué músculos notas más tensos después de entrenar?",
+     "c": "Tras tu próximo entreno, haz 4 estiramientos suaves de 20 segundos."
+    },
+    "fr": {
+     "t": "Étirements simples après la séance",
+     "g": "Apprends des étirements doux pour les grands groupes musculaires.",
+     "p": [
+      "Cuisses, hanches, poitrine et dos sont un bon point de départ.",
+      "Tiens chaque étirement en douceur 20 à 30 secondes en respirant calmement.",
+      "Étire jusqu’à une légère tension, jamais jusqu’à la douleur, sans à-coups."
+     ],
+     "q": "Quels muscles te semblent les plus raides après l’entraînement ?",
+     "c": "Après ta prochaine séance, fais 4 étirements doux de 20 secondes."
+    },
+    "it": {
+     "t": "Allungamenti semplici dopo l’allenamento",
+     "g": "Impara allungamenti dolci per i grandi gruppi muscolari.",
+     "p": [
+      "Cosce, anche, petto e schiena sono un buon punto di partenza.",
+      "Tieni ogni allungamento con dolcezza per 20-30 secondi, respirando con calma.",
+      "Allunga fino a una leggera tensione, mai fino al dolore, senza molleggiare."
+     ],
+     "q": "Quali muscoli senti più rigidi dopo l’allenamento?",
+     "c": "Dopo il prossimo allenamento, fai 4 allungamenti dolci da 20 secondi."
+    },
+    "pt": {
+     "t": "Alongamentos simples depois do treino",
+     "g": "Aprende alongamentos suaves para os grandes grupos musculares.",
+     "p": [
+      "Coxas, anca, peito e costas são um bom ponto de partida.",
+      "Mantém cada alongamento com suavidade 20 a 30 segundos, a respirar com calma.",
+      "Alonga até uma tensão ligeira, nunca até à dor, e sem balanços."
+     ],
+     "q": "Que músculos sentes mais tensos depois de treinar?",
+     "c": "Depois do próximo treino, faz 4 alongamentos suaves de 20 segundos."
+    },
+    "pt_BR": {
+     "t": "Alongamentos simples pós-treino",
+     "g": "Aprenda alongamentos suaves para os grandes grupos musculares.",
+     "p": [
+      "Coxas, quadril, peito e costas são um bom ponto de partida.",
+      "Segure cada alongamento com suavidade por 20 a 30 segundos, respirando com calma.",
+      "Alongue até uma tensão leve, nunca até a dor, e sem dar balanço."
+     ],
+     "q": "Quais músculos você sente mais tensos depois do treino?",
+     "c": "Depois do próximo treino, faça 4 alongamentos suaves de 20 segundos."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mobility for the hips",
+     "g": "Try general movements to help your hips feel looser.",
+     "p": [
+      "Hip circles and leg swings are gentle ways to move the joint.",
+      "A kneeling hip flexor stretch helps after long periods of sitting.",
+      "Move slowly within a comfortable range and stop if anything hurts."
+     ],
+     "q": "Do your hips feel stiff after sitting for a long time?",
+     "c": "Do 10 hip circles each way and a 30-second kneeling hip stretch per side."
+    },
+    "de": {
+     "t": "Mobilität für die Hüfte",
+     "g": "Probier allgemeine Bewegungen, damit sich deine Hüfte lockerer anfühlt.",
+     "p": [
+      "Hüftkreisen und Beinschwingen bewegen das Gelenk sanft.",
+      "Eine kniende Hüftbeuger-Dehnung tut nach langem Sitzen gut.",
+      "Beweg dich langsam im angenehmen Bereich und hör auf, wenn etwas wehtut."
+     ],
+     "q": "Fühlt sich deine Hüfte nach langem Sitzen steif an?",
+     "c": "Mach 10 Hüftkreise in jede Richtung und 30 Sekunden kniende Hüftdehnung pro Seite."
+    },
+    "es": {
+     "t": "Movilidad de cadera",
+     "g": "Prueba movimientos generales para que tu cadera se sienta más suelta.",
+     "p": [
+      "Los círculos de cadera y los balanceos de pierna mueven la articulación con suavidad.",
+      "Un estiramiento de flexores de cadera de rodillas ayuda tras estar mucho sentado.",
+      "Muévete despacio en un rango cómodo y para si algo duele."
+     ],
+     "q": "¿Notas la cadera rígida después de estar mucho rato sentado?",
+     "c": "Haz 10 círculos de cadera hacia cada lado y 30 segundos de estiramiento de rodillas por lado."
+    },
+    "fr": {
+     "t": "Mobilité des hanches",
+     "g": "Essaie des mouvements simples pour des hanches plus libres.",
+     "p": [
+      "Cercles de hanches et balancés de jambes mobilisent l’articulation en douceur.",
+      "Un étirement des fléchisseurs de hanche à genou aide après une longue position assise.",
+      "Bouge lentement dans une amplitude confortable et arrête si ça fait mal."
+     ],
+     "q": "Tes hanches sont-elles raides après être resté longtemps assis ?",
+     "c": "Fais 10 cercles de hanches dans chaque sens et 30 secondes d’étirement à genou par côté."
+    },
+    "it": {
+     "t": "Mobilità delle anche",
+     "g": "Prova movimenti generali per sentire le anche più sciolte.",
+     "p": [
+      "Cerchi con il bacino e slanci delle gambe muovono l’articolazione con dolcezza.",
+      "Un allungamento dei flessori dell’anca in ginocchio aiuta dopo tanto tempo seduti.",
+      "Muoviti lentamente in un’ampiezza comoda e fermati se senti dolore."
+     ],
+     "q": "Senti le anche rigide dopo essere stato seduto a lungo?",
+     "c": "Fai 10 cerchi con il bacino per verso e 30 secondi di allungamento in ginocchio per lato."
+    },
+    "pt": {
+     "t": "Mobilidade da anca",
+     "g": "Experimenta movimentos gerais para sentires a anca mais solta.",
+     "p": [
+      "Círculos de anca e balanços de pernas mexem a articulação com suavidade.",
+      "Um alongamento dos flexores da anca de joelhos ajuda depois de muito tempo sentado.",
+      "Mexe-te devagar numa amplitude confortável e para se algo doer."
+     ],
+     "q": "Sentes a anca rígida depois de estar muito tempo sentado?",
+     "c": "Faz 10 círculos de anca para cada lado e 30 segundos de alongamento de joelhos por lado."
+    },
+    "pt_BR": {
+     "t": "Mobilidade de quadril",
+     "g": "Experimente movimentos gerais para sentir o quadril mais solto.",
+     "p": [
+      "Círculos de quadril e balanços de perna movimentam a articulação com suavidade.",
+      "Um alongamento de flexores do quadril ajoelhado ajuda depois de muito tempo sentado.",
+      "Mova-se devagar numa amplitude confortável e pare se algo doer."
+     ],
+     "q": "Você sente o quadril travado depois de ficar muito tempo sentado?",
+     "c": "Faça 10 círculos de quadril para cada lado e 30 segundos de alongamento ajoelhado por lado."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: building routines",
+     "g": "Look back at routines, progression and cardio.",
+     "p": [
+      "A simple full-body routine two or three times a week is a strong base.",
+      "Track your workouts and progress gradually: reps first, then weight.",
+      "Add cardio you enjoy and finish with gentle stretching."
+     ],
+     "q": "What has been your biggest win in the last month?",
+     "c": "Review your log and set one small target for next month."
+    },
+    "de": {
+     "t": "Rückblick: Routinen aufbauen",
+     "g": "Schau zurück auf Routinen, Fortschritt und Cardio.",
+     "p": [
+      "Eine einfache Ganzkörperroutine zwei- bis dreimal pro Woche ist eine starke Basis.",
+      "Zeichne dein Training auf und steigere dich langsam: erst Wiederholungen, dann Gewicht.",
+      "Ergänze Cardio, das dir Spaß macht, und schließe mit sanftem Dehnen ab."
+     ],
+     "q": "Was war dein größter Erfolg im letzten Monat?",
+     "c": "Sieh dein Trainingstagebuch durch und setz dir ein kleines Ziel für den nächsten Monat."
+    },
+    "es": {
+     "t": "Repaso: construir rutinas",
+     "g": "Repasa rutinas, progresión y cardio.",
+     "p": [
+      "Una rutina sencilla de cuerpo completo dos o tres veces por semana es una base sólida.",
+      "Registra tus entrenos y progresa poco a poco: primero repeticiones, luego peso.",
+      "Añade un cardio que disfrutes y termina con estiramientos suaves."
+     ],
+     "q": "¿Cuál ha sido tu mayor logro del último mes?",
+     "c": "Revisa tu registro y fija un pequeño objetivo para el próximo mes."
+    },
+    "fr": {
+     "t": "Bilan : construire ses routines",
+     "g": "Reviens sur les routines, la progression et le cardio.",
+     "p": [
+      "Une routine full body simple deux ou trois fois par semaine est une base solide.",
+      "Note tes séances et progresse peu à peu : d’abord les répétitions, puis la charge.",
+      "Ajoute un cardio que tu aimes et termine par des étirements doux."
+     ],
+     "q": "Quelle a été ta plus belle réussite du mois dernier ?",
+     "c": "Relis ton carnet et fixe-toi un petit objectif pour le mois prochain."
+    },
+    "it": {
+     "t": "Ripasso: costruire le routine",
+     "g": "Ripassa routine, progressione e cardio.",
+     "p": [
+      "Una semplice routine full body due o tre volte a settimana è una base solida.",
+      "Registra gli allenamenti e progredisci gradualmente: prima ripetizioni, poi peso.",
+      "Aggiungi un cardio che ti piace e chiudi con allungamenti dolci."
+     ],
+     "q": "Qual è stato il tuo successo più grande nell’ultimo mese?",
+     "c": "Rileggi il diario e fissa un piccolo obiettivo per il prossimo mese."
+    },
+    "pt": {
+     "t": "Revisão: construir rotinas",
+     "g": "Revê rotinas, progressão e cardio.",
+     "p": [
+      "Uma rotina simples de corpo inteiro duas ou três vezes por semana é uma base sólida.",
+      "Regista os treinos e progride aos poucos: primeiro repetições, depois peso.",
+      "Junta um cardio de que gostes e termina com alongamentos suaves."
+     ],
+     "q": "Qual foi a tua maior conquista no último mês?",
+     "c": "Revê o teu registo e define um pequeno objetivo para o próximo mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: montando rotinas",
+     "g": "Relembre rotinas, progressão e cardio.",
+     "p": [
+      "Uma rotina simples de corpo inteiro duas ou três vezes por semana é uma base sólida.",
+      "Registre seus treinos e progrida aos poucos: primeiro repetições, depois carga.",
+      "Inclua um cardio de que você goste e termine com alongamentos suaves."
+     ],
+     "q": "Qual foi sua maior conquista no último mês?",
+     "c": "Revise seu registro e defina uma pequena meta para o próximo mês."
+    }
+   }
+  }
+ ]
+}

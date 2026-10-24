@@ -1,0 +1,1305 @@
+{
+"topic": "storytelling",
+"questions": [
+{
+"id": "storytelling-001",
+"lv": "any",
+"i18n": {
+"en": "What story did you love most as a child?",
+"de": "Welche Geschichte hast du als Kind am meisten geliebt?",
+"es": "¿Qué historia te encantaba más de niño?",
+"fr": "Quelle histoire adorais-tu le plus quand tu étais enfant ?",
+"it": "Qual era la storia che amavi di più da bambino?",
+"pt": "Qual era a história de que mais gostavas em criança?",
+"pt_BR": "Qual história você mais amava quando era criança?"
+}
+},
+{
+"id": "storytelling-002",
+"lv": "any",
+"i18n": {
+"en": "Who told you stories when you were little?",
+"de": "Wer hat dir Geschichten erzählt, als du klein warst?",
+"es": "¿Quién te contaba cuentos cuando eras pequeño?",
+"fr": "Qui te racontait des histoires quand tu étais petit ?",
+"it": "Chi ti raccontava storie quando eri piccolo?",
+"pt": "Quem te contava histórias quando eras pequeno?",
+"pt_BR": "Quem te contava histórias quando você era pequeno?"
+}
+},
+{
+"id": "storytelling-003",
+"lv": "any",
+"i18n": {
+"en": "Which folk tale from your country do you know best?",
+"de": "Welches Volksmärchen aus deinem Land kennst du am besten?",
+"es": "¿Qué cuento popular de tu país conoces mejor?",
+"fr": "Quel conte populaire de ton pays connais-tu le mieux ?",
+"it": "Quale fiaba popolare del tuo paese conosci meglio?",
+"pt": "Que conto popular do teu país conheces melhor?",
+"pt_BR": "Qual conto popular do seu país você conhece melhor?"
+}
+},
+{
+"id": "storytelling-004",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer telling stories or listening to them? Why?",
+"de": "Erzählst du lieber Geschichten oder hörst du lieber zu? Warum?",
+"es": "¿Prefieres contar historias o escucharlas? ¿Por qué?",
+"fr": "Préfères-tu raconter des histoires ou les écouter ? Pourquoi ?",
+"it": "Preferisci raccontare storie o ascoltarle? Perché?",
+"pt": "Preferes contar histórias ou ouvi-las? Porquê?",
+"pt_BR": "Você prefere contar histórias ou ouvir? Por quê?"
+}
+},
+{
+"id": "storytelling-005",
+"lv": "any",
+"i18n": {
+"en": "What is the funniest thing that happened to you recently?",
+"de": "Was ist das Lustigste, das dir in letzter Zeit passiert ist?",
+"es": "¿Qué es lo más gracioso que te ha pasado últimamente?",
+"fr": "Quelle est la chose la plus drôle qui te soit arrivée récemment ?",
+"it": "Qual è la cosa più divertente che ti è successa di recente?",
+"pt": "Qual foi a coisa mais engraçada que te aconteceu recentemente?",
+"pt_BR": "Qual foi a coisa mais engraçada que te aconteceu recentemente?"
+}
+},
+{
+"id": "storytelling-006",
+"lv": "any",
+"i18n": {
+"en": "Which book or film has a story you can never forget?",
+"de": "Welches Buch oder welcher Film hat eine Geschichte, die du nie vergisst?",
+"es": "¿Qué libro o película tiene una historia que nunca olvidarás?",
+"fr": "Quel livre ou quel film raconte une histoire que tu n'oublieras jamais ?",
+"it": "Quale libro o film ha una storia che non dimenticherai mai?",
+"pt": "Que livro ou filme tem uma história que nunca vais esquecer?",
+"pt_BR": "Qual livro ou filme tem uma história que você nunca vai esquecer?"
+}
+},
+{
+"id": "storytelling-007",
+"lv": "any",
+"i18n": {
+"en": "If you could step into any story, which would you choose?",
+"de": "Wenn du in eine beliebige Geschichte hineinspringen könntest, welche wäre es?",
+"es": "Si pudieras meterte en cualquier historia, ¿cuál elegirías?",
+"fr": "Si tu pouvais entrer dans n'importe quelle histoire, laquelle choisirais-tu ?",
+"it": "Se potessi entrare in qualsiasi storia, quale sceglieresti?",
+"pt": "Se pudesses entrar em qualquer história, qual escolherias?",
+"pt_BR": "Se você pudesse entrar em qualquer história, qual escolheria?"
+}
+},
+{
+"id": "storytelling-008",
+"lv": "any",
+"i18n": {
+"en": "Which fictional character would you love to have as a friend?",
+"de": "Welche erfundene Figur hättest du gern als Freund?",
+"es": "¿Qué personaje de ficción te encantaría tener como amigo?",
+"fr": "Quel personnage de fiction aimerais-tu avoir comme ami ?",
+"it": "Quale personaggio immaginario vorresti avere come amico?",
+"pt": "Que personagem de ficção gostavas de ter como amigo?",
+"pt_BR": "Qual personagem de ficção você adoraria ter como amigo?"
+}
+},
+{
+"id": "storytelling-009",
+"lv": "any",
+"i18n": {
+"en": "What is a story your family loves to tell again and again?",
+"de": "Welche Geschichte erzählt deine Familie immer wieder gern?",
+"es": "¿Qué historia le encanta contar una y otra vez a tu familia?",
+"fr": "Quelle histoire ta famille adore-t-elle raconter encore et encore ?",
+"it": "Quale storia la tua famiglia ama raccontare ancora e ancora?",
+"pt": "Que história a tua família adora contar vezes sem conta?",
+"pt_BR": "Qual história sua família adora contar de novo e de novo?"
+}
+},
+{
+"id": "storytelling-010",
+"lv": "any",
+"i18n": {
+"en": "Do you like happy endings or surprise endings more?",
+"de": "Magst du lieber Happy Ends oder überraschende Enden?",
+"es": "¿Te gustan más los finales felices o los finales sorpresa?",
+"fr": "Préfères-tu les fins heureuses ou les fins surprenantes ?",
+"it": "Preferisci i lieto fine o i finali a sorpresa?",
+"pt": "Gostas mais de finais felizes ou de finais surpreendentes?",
+"pt_BR": "Você gosta mais de finais felizes ou de finais surpreendentes?"
+}
+},
+{
+"id": "storytelling-011",
+"lv": "any",
+"i18n": {
+"en": "Which animal would make the best hero for a story? Why?",
+"de": "Welches Tier wäre der beste Held für eine Geschichte? Warum?",
+"es": "¿Qué animal sería el mejor héroe para una historia? ¿Por qué?",
+"fr": "Quel animal ferait le meilleur héros d'histoire ? Pourquoi ?",
+"it": "Quale animale sarebbe il miglior eroe per una storia? Perché?",
+"pt": "Que animal seria o melhor herói para uma história? Porquê?",
+"pt_BR": "Qual animal seria o melhor herói pra uma história? Por quê?"
+}
+},
+{
+"id": "storytelling-012",
+"lv": "any",
+"i18n": {
+"en": "What is the best place you have ever visited for a story setting?",
+"de": "Welcher Ort, den du besucht hast, wäre die beste Kulisse für eine Geschichte?",
+"es": "¿Qué lugar que has visitado sería el mejor escenario para una historia?",
+"fr": "Quel lieu que tu as visité serait le meilleur décor pour une histoire ?",
+"it": "Quale posto che hai visitato sarebbe la migliore ambientazione per una storia?",
+"pt": "Que lugar que visitaste seria o melhor cenário para uma história?",
+"pt_BR": "Qual lugar que você visitou seria o melhor cenário pra uma história?"
+}
+},
+{
+"id": "storytelling-013",
+"lv": "any",
+"i18n": {
+"en": "Do you read stories on paper, on screen or listen to audiobooks?",
+"de": "Liest du Geschichten auf Papier, auf dem Bildschirm oder hörst du Hörbücher?",
+"es": "¿Lees historias en papel, en pantalla o escuchas audiolibros?",
+"fr": "Lis-tu des histoires sur papier, sur écran ou écoutes-tu des livres audio ?",
+"it": "Leggi storie su carta, su schermo o ascolti audiolibri?",
+"pt": "Lês histórias em papel, no ecrã ou ouves audiolivros?",
+"pt_BR": "Você lê histórias no papel, na tela ou ouve audiolivros?"
+}
+},
+{
+"id": "storytelling-014",
+"lv": "any",
+"i18n": {
+"en": "What is a small moment from today that could become a story?",
+"de": "Welcher kleine Moment von heute könnte eine Geschichte werden?",
+"es": "¿Qué pequeño momento de hoy podría convertirse en una historia?",
+"fr": "Quel petit moment d'aujourd'hui pourrait devenir une histoire ?",
+"it": "Quale piccolo momento di oggi potrebbe diventare una storia?",
+"pt": "Que pequeno momento de hoje podia virar uma história?",
+"pt_BR": "Que pequeno momento de hoje poderia virar uma história?"
+}
+},
+{
+"id": "storytelling-015",
+"lv": "any",
+"i18n": {
+"en": "Which storyteller, writer or comedian do you admire?",
+"de": "Welchen Geschichtenerzähler, Autor oder Comedian bewunderst du?",
+"es": "¿Qué narrador, escritor o humorista admiras?",
+"fr": "Quel conteur, écrivain ou humoriste admires-tu ?",
+"it": "Quale narratore, scrittore o comico ammiri?",
+"pt": "Que contador de histórias, escritor ou humorista admiras?",
+"pt_BR": "Qual contador de histórias, escritor ou humorista você admira?"
+}
+},
+{
+"id": "storytelling-016",
+"lv": "any",
+"i18n": {
+"en": "What kind of stories do you enjoy most: adventure, mystery, comedy or something else?",
+"de": "Welche Geschichten magst du am liebsten: Abenteuer, Krimi, Komödie oder etwas anderes?",
+"es": "¿Qué historias te gustan más: aventura, misterio, comedia u otra cosa?",
+"fr": "Quelles histoires préfères-tu : aventure, mystère, comédie ou autre chose ?",
+"it": "Quali storie ti piacciono di più: avventura, mistero, commedia o altro?",
+"pt": "Que histórias preferes: aventura, mistério, comédia ou outra coisa?",
+"pt_BR": "Que tipo de história você mais curte: aventura, mistério, comédia ou outra coisa?"
+}
+},
+{
+"id": "storytelling-017",
+"lv": "any",
+"i18n": {
+"en": "Is there a song that tells a story you love?",
+"de": "Gibt es ein Lied, das eine Geschichte erzählt, die du liebst?",
+"es": "¿Hay alguna canción que cuente una historia que te encanta?",
+"fr": "Y a-t-il une chanson qui raconte une histoire que tu adores ?",
+"it": "C'è una canzone che racconta una storia che ami?",
+"pt": "Há alguma música que conte uma história de que gostes muito?",
+"pt_BR": "Tem alguma música que conta uma história que você ama?"
+}
+},
+{
+"id": "storytelling-018",
+"lv": "any",
+"i18n": {
+"en": "What is a story from your travels you like to share?",
+"de": "Welche Geschichte von deinen Reisen erzählst du gern?",
+"es": "¿Qué historia de tus viajes te gusta contar?",
+"fr": "Quelle histoire de voyage aimes-tu raconter ?",
+"it": "Quale storia dei tuoi viaggi ti piace raccontare?",
+"pt": "Que história das tuas viagens gostas de contar?",
+"pt_BR": "Qual história das suas viagens você gosta de contar?"
+}
+},
+{
+"id": "storytelling-019",
+"lv": "any",
+"i18n": {
+"en": "Which story opening line do you still remember?",
+"de": "An welchen ersten Satz einer Geschichte erinnerst du dich noch?",
+"es": "¿Qué frase de inicio de una historia todavía recuerdas?",
+"fr": "De quelle première phrase d'histoire te souviens-tu encore ?",
+"it": "Quale frase d'apertura di una storia ricordi ancora?",
+"pt": "De que frase de abertura de uma história ainda te lembras?",
+"pt_BR": "De qual frase de abertura de uma história você ainda se lembra?"
+}
+},
+{
+"id": "storytelling-020",
+"lv": "any",
+"i18n": {
+"en": "How do people in your culture usually begin a fairy tale?",
+"de": "Wie beginnt man in deiner Kultur normalerweise ein Märchen?",
+"es": "¿Cómo se suele empezar un cuento de hadas en tu cultura?",
+"fr": "Comment commence-t-on d'habitude un conte dans ta culture ?",
+"it": "Come si inizia di solito una fiaba nella tua cultura?",
+"pt": "Como se costuma começar um conto de fadas na tua cultura?",
+"pt_BR": "Como se costuma começar um conto de fadas na sua cultura?"
+}
+},
+{
+"id": "storytelling-021",
+"lv": "any",
+"i18n": {
+"en": "What is a funny misunderstanding you have experienced?",
+"de": "Welches lustige Missverständnis hast du schon erlebt?",
+"es": "¿Qué malentendido divertido has vivido?",
+"fr": "Quel malentendu amusant as-tu déjà vécu ?",
+"it": "Quale malinteso divertente ti è capitato?",
+"pt": "Que mal-entendido engraçado já viveste?",
+"pt_BR": "Qual mal-entendido engraçado você já viveu?"
+}
+},
+{
+"id": "storytelling-022",
+"lv": "any",
+"i18n": {
+"en": "If your day today were a story, what would its title be?",
+"de": "Wenn dein heutiger Tag eine Geschichte wäre, wie hieße sie?",
+"es": "Si tu día de hoy fuera una historia, ¿qué título tendría?",
+"fr": "Si ta journée d'aujourd'hui était une histoire, quel serait son titre ?",
+"it": "Se la tua giornata di oggi fosse una storia, che titolo avrebbe?",
+"pt": "Se o teu dia de hoje fosse uma história, que título teria?",
+"pt_BR": "Se o seu dia de hoje fosse uma história, qual seria o título?"
+}
+},
+{
+"id": "storytelling-023",
+"lv": "any",
+"i18n": {
+"en": "Which object in your home has an interesting story behind it?",
+"de": "Welcher Gegenstand bei dir zu Hause hat eine spannende Geschichte?",
+"es": "¿Qué objeto de tu casa tiene una historia interesante detrás?",
+"fr": "Quel objet chez toi a une histoire intéressante ?",
+"it": "Quale oggetto di casa tua ha una storia interessante alle spalle?",
+"pt": "Que objeto da tua casa tem uma história interessante por trás?",
+"pt_BR": "Qual objeto da sua casa tem uma história interessante por trás?"
+}
+},
+{
+"id": "storytelling-024",
+"lv": "any",
+"i18n": {
+"en": "What is the kindest thing a stranger has ever done for you?",
+"de": "Was ist das Netteste, das ein Fremder je für dich getan hat?",
+"es": "¿Qué es lo más amable que un desconocido ha hecho por ti?",
+"fr": "Quelle est la chose la plus gentille qu'un inconnu ait faite pour toi ?",
+"it": "Qual è la cosa più gentile che uno sconosciuto abbia mai fatto per te?",
+"pt": "Qual foi a coisa mais simpática que um desconhecido já fez por ti?",
+"pt_BR": "Qual foi a coisa mais gentil que um desconhecido já fez por você?"
+}
+},
+{
+"id": "storytelling-025",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favorite fable? What lesson does it teach?",
+"de": "Hast du eine Lieblingsfabel? Was lehrt sie?",
+"es": "¿Tienes una fábula favorita? ¿Qué enseñanza deja?",
+"fr": "As-tu une fable préférée ? Quelle leçon donne-t-elle ?",
+"it": "Hai una favola preferita? Che insegnamento dà?",
+"pt": "Tens uma fábula preferida? Que lição ensina?",
+"pt_BR": "Você tem uma fábula preferida? Que lição ela ensina?"
+}
+},
+{
+"id": "storytelling-026",
+"lv": "any",
+"i18n": {
+"en": "What was your favorite game as a child, and is there a story in it?",
+"de": "Was war als Kind dein Lieblingsspiel, und steckt eine Geschichte darin?",
+"es": "¿Cuál era tu juego favorito de niño y hay alguna historia en él?",
+"fr": "Quel était ton jeu préféré enfant, et y a-t-il une histoire derrière ?",
+"it": "Qual era il tuo gioco preferito da bambino, e c'è una storia dietro?",
+"pt": "Qual era o teu jogo preferido em criança, e há uma história nele?",
+"pt_BR": "Qual era seu jogo preferido na infância, e tem alguma história nele?"
+}
+},
+{
+"id": "storytelling-027",
+"lv": "any",
+"i18n": {
+"en": "Which legend from your region would you tell a visitor?",
+"de": "Welche Legende aus deiner Region würdest du einem Besucher erzählen?",
+"es": "¿Qué leyenda de tu región le contarías a un visitante?",
+"fr": "Quelle légende de ta région raconterais-tu à un visiteur ?",
+"it": "Quale leggenda della tua regione racconteresti a un visitatore?",
+"pt": "Que lenda da tua região contarias a um visitante?",
+"pt_BR": "Qual lenda da sua região você contaria a um visitante?"
+}
+},
+{
+"id": "storytelling-028",
+"lv": "any",
+"i18n": {
+"en": "What makes a story really good for you?",
+"de": "Was macht für dich eine richtig gute Geschichte aus?",
+"es": "¿Qué hace que una historia sea realmente buena para ti?",
+"fr": "Qu'est-ce qui rend une histoire vraiment bonne pour toi ?",
+"it": "Cosa rende davvero bella una storia per te?",
+"pt": "O que torna uma história realmente boa para ti?",
+"pt_BR": "O que faz uma história ser realmente boa pra você?"
+}
+},
+{
+"id": "storytelling-029",
+"lv": "any",
+"i18n": {
+"en": "Have you ever made up a story for a child or a friend?",
+"de": "Hast du dir schon mal eine Geschichte für ein Kind oder einen Freund ausgedacht?",
+"es": "¿Alguna vez has inventado una historia para un niño o un amigo?",
+"fr": "As-tu déjà inventé une histoire pour un enfant ou un ami ?",
+"it": "Hai mai inventato una storia per un bambino o un amico?",
+"pt": "Já inventaste alguma história para uma criança ou um amigo?",
+"pt_BR": "Você já inventou uma história pra uma criança ou um amigo?"
+}
+},
+{
+"id": "storytelling-030",
+"lv": "any",
+"i18n": {
+"en": "Which superpower would you give the hero of your story?",
+"de": "Welche Superkraft würdest du dem Helden deiner Geschichte geben?",
+"es": "¿Qué superpoder le darías al héroe de tu historia?",
+"fr": "Quel super-pouvoir donnerais-tu au héros de ton histoire ?",
+"it": "Quale superpotere daresti all'eroe della tua storia?",
+"pt": "Que superpoder darias ao herói da tua história?",
+"pt_BR": "Qual superpoder você daria ao herói da sua história?"
+}
+},
+{
+"id": "storytelling-031",
+"lv": "any",
+"i18n": {
+"en": "What is a tradition in your culture that has a story behind it?",
+"de": "Welche Tradition in deiner Kultur hat eine Geschichte dahinter?",
+"es": "¿Qué tradición de tu cultura tiene una historia detrás?",
+"fr": "Quelle tradition de ta culture cache une histoire ?",
+"it": "Quale tradizione della tua cultura ha una storia alle spalle?",
+"pt": "Que tradição da tua cultura tem uma história por trás?",
+"pt_BR": "Que tradição da sua cultura tem uma história por trás?"
+}
+},
+{
+"id": "storytelling-032",
+"lv": "any",
+"i18n": {
+"en": "Do you remember a teacher who told great stories?",
+"de": "Erinnerst du dich an eine Lehrkraft, die toll erzählen konnte?",
+"es": "¿Recuerdas a algún profesor que contara historias geniales?",
+"fr": "Te souviens-tu d'un professeur qui racontait de super histoires ?",
+"it": "Ricordi un insegnante che raccontava storie bellissime?",
+"pt": "Lembras-te de algum professor que contava histórias fantásticas?",
+"pt_BR": "Você se lembra de algum professor que contava histórias incríveis?"
+}
+},
+{
+"id": "storytelling-033",
+"lv": "any",
+"i18n": {
+"en": "What is a dream you had that felt like a story?",
+"de": "Welchen Traum hattest du, der sich wie eine Geschichte anfühlte?",
+"es": "¿Qué sueño tuviste que parecía una historia?",
+"fr": "Quel rêve as-tu fait qui ressemblait à une histoire ?",
+"it": "Quale sogno hai fatto che sembrava una storia?",
+"pt": "Que sonho tiveste que parecia uma história?",
+"pt_BR": "Qual sonho você teve que parecia uma história?"
+}
+},
+{
+"id": "storytelling-034",
+"lv": "any",
+"i18n": {
+"en": "Which cartoon or comic did you love growing up?",
+"de": "Welchen Zeichentrickfilm oder Comic hast du als Kind geliebt?",
+"es": "¿Qué dibujo animado o cómic te encantaba de pequeño?",
+"fr": "Quel dessin animé ou quelle BD adorais-tu en grandissant ?",
+"it": "Quale cartone animato o fumetto amavi da piccolo?",
+"pt": "Que desenho animado ou banda desenhada adoravas em pequeno?",
+"pt_BR": "Qual desenho animado ou gibi você amava na infância?"
+}
+},
+{
+"id": "storytelling-035",
+"lv": "any",
+"i18n": {
+"en": "What is a story you have told so many times you know it by heart?",
+"de": "Welche Geschichte hast du so oft erzählt, dass du sie auswendig kannst?",
+"es": "¿Qué historia has contado tantas veces que te la sabes de memoria?",
+"fr": "Quelle histoire as-tu racontée si souvent que tu la connais par cœur ?",
+"it": "Quale storia hai raccontato così tante volte da saperla a memoria?",
+"pt": "Que história já contaste tantas vezes que a sabes de cor?",
+"pt_BR": "Qual história você já contou tantas vezes que sabe de cor?"
+}
+},
+{
+"id": "storytelling-036",
+"lv": "any",
+"i18n": {
+"en": "Which character from a folk tale is most like you?",
+"de": "Welche Figur aus einem Volksmärchen ist dir am ähnlichsten?",
+"es": "¿Qué personaje de un cuento popular se parece más a ti?",
+"fr": "Quel personnage de conte te ressemble le plus ?",
+"it": "Quale personaggio di una fiaba ti somiglia di più?",
+"pt": "Que personagem de um conto popular é mais parecida contigo?",
+"pt_BR": "Qual personagem de um conto popular é mais parecido com você?"
+}
+},
+{
+"id": "storytelling-037",
+"lv": "any",
+"i18n": {
+"en": "If you wrote a book, what would it be about?",
+"de": "Wenn du ein Buch schreiben würdest, worum ginge es?",
+"es": "Si escribieras un libro, ¿de qué trataría?",
+"fr": "Si tu écrivais un livre, de quoi parlerait-il ?",
+"it": "Se scrivessi un libro, di cosa parlerebbe?",
+"pt": "Se escrevesses um livro, sobre o que seria?",
+"pt_BR": "Se você escrevesse um livro, sobre o que seria?"
+}
+},
+{
+"id": "storytelling-038",
+"lv": "any",
+"i18n": {
+"en": "Where do you like to read or listen to stories?",
+"de": "Wo liest oder hörst du am liebsten Geschichten?",
+"es": "¿Dónde te gusta leer o escuchar historias?",
+"fr": "Où aimes-tu lire ou écouter des histoires ?",
+"it": "Dove ti piace leggere o ascoltare storie?",
+"pt": "Onde gostas de ler ou ouvir histórias?",
+"pt_BR": "Onde você gosta de ler ou ouvir histórias?"
+}
+},
+{
+"id": "storytelling-039",
+"lv": "any",
+"i18n": {
+"en": "What is a story about a first day that you remember well?",
+"de": "An welche Geschichte von einem ersten Tag erinnerst du dich gut?",
+"es": "¿Qué historia de un primer día recuerdas bien?",
+"fr": "De quelle histoire de premier jour te souviens-tu bien ?",
+"it": "Quale storia di un primo giorno ricordi bene?",
+"pt": "De que história de um primeiro dia te lembras bem?",
+"pt_BR": "De qual história de um primeiro dia você se lembra bem?"
+}
+},
+{
+"id": "storytelling-040",
+"lv": "any",
+"i18n": {
+"en": "Which story would you like to tell me today?",
+"de": "Welche Geschichte möchtest du mir heute erzählen?",
+"es": "¿Qué historia te gustaría contarme hoy?",
+"fr": "Quelle histoire aimerais-tu me raconter aujourd'hui ?",
+"it": "Quale storia ti piacerebbe raccontarmi oggi?",
+"pt": "Que história gostavas de me contar hoje?",
+"pt_BR": "Qual história você gostaria de me contar hoje?"
+}
+},
+{
+"id": "storytelling-041",
+"lv": "beginner",
+"i18n": {
+"en": "Can you invent a main character with a name and one funny quirk?",
+"de": "Kannst du eine Hauptfigur mit Namen und einer lustigen Eigenart erfinden?",
+"es": "¿Puedes inventar un protagonista con nombre y una manía divertida?",
+"fr": "Peux-tu inventer un personnage principal avec un nom et une petite manie drôle ?",
+"it": "Riesci a inventare un protagonista con un nome e una buffa stranezza?",
+"pt": "Consegues inventar uma personagem principal com nome e uma mania engraçada?",
+"pt_BR": "Você consegue inventar um protagonista com nome e uma mania engraçada?"
+}
+},
+{
+"id": "storytelling-042",
+"lv": "beginner",
+"i18n": {
+"en": "What does your hero wish for more than anything?",
+"de": "Was wünscht sich dein Held mehr als alles andere?",
+"es": "¿Qué desea tu héroe más que nada en el mundo?",
+"fr": "Que souhaite ton héros plus que tout ?",
+"it": "Cosa desidera il tuo eroe più di ogni altra cosa?",
+"pt": "O que é que o teu herói deseja mais do que tudo?",
+"pt_BR": "O que o seu herói deseja mais do que tudo?"
+}
+},
+{
+"id": "storytelling-043",
+"lv": "beginner",
+"i18n": {
+"en": "Where should our story take place: a city, a forest or somewhere magical?",
+"de": "Wo soll unsere Geschichte spielen: in einer Stadt, im Wald oder an einem magischen Ort?",
+"es": "¿Dónde debería pasar nuestra historia: en una ciudad, un bosque o un lugar mágico?",
+"fr": "Où devrait se passer notre histoire : en ville, en forêt ou dans un lieu magique ?",
+"it": "Dove dovrebbe svolgersi la nostra storia: in città, in un bosco o in un luogo magico?",
+"pt": "Onde deve passar-se a nossa história: numa cidade, numa floresta ou num lugar mágico?",
+"pt_BR": "Onde nossa história deve se passar: numa cidade, numa floresta ou num lugar mágico?"
+}
+},
+{
+"id": "storytelling-044",
+"lv": "beginner",
+"i18n": {
+"en": "What problem could our hero face in the first scene?",
+"de": "Vor welchem Problem könnte unser Held in der ersten Szene stehen?",
+"es": "¿Qué problema podría tener nuestro héroe en la primera escena?",
+"fr": "Quel problème notre héros pourrait-il rencontrer dans la première scène ?",
+"it": "Quale problema potrebbe affrontare il nostro eroe nella prima scena?",
+"pt": "Que problema podia o nosso herói enfrentar na primeira cena?",
+"pt_BR": "Que problema nosso herói poderia enfrentar na primeira cena?"
+}
+},
+{
+"id": "storytelling-045",
+"lv": "beginner",
+"i18n": {
+"en": "What would you add next to our story in one sentence?",
+"de": "Was würdest du unserer Geschichte als Nächstes in einem Satz hinzufügen?",
+"es": "¿Qué añadirías a continuación a nuestra historia en una frase?",
+"fr": "Qu'ajouterais-tu ensuite à notre histoire en une phrase ?",
+"it": "Cosa aggiungeresti alla nostra storia in una frase?",
+"pt": "O que acrescentarias a seguir à nossa história numa frase?",
+"pt_BR": "O que você acrescentaria agora à nossa história em uma frase?"
+}
+},
+{
+"id": "storytelling-046",
+"lv": "beginner",
+"i18n": {
+"en": "Can you describe your favorite place using all five senses?",
+"de": "Kannst du deinen Lieblingsort mit allen fünf Sinnen beschreiben?",
+"es": "¿Puedes describir tu lugar favorito usando los cinco sentidos?",
+"fr": "Peux-tu décrire ton endroit préféré avec les cinq sens ?",
+"it": "Riesci a descrivere il tuo posto preferito usando tutti e cinque i sensi?",
+"pt": "Consegues descrever o teu lugar preferido usando os cinco sentidos?",
+"pt_BR": "Você consegue descrever seu lugar favorito usando os cinco sentidos?"
+}
+},
+{
+"id": "storytelling-047",
+"lv": "beginner",
+"i18n": {
+"en": "Can you tell a whole story in just six words?",
+"de": "Kannst du eine ganze Geschichte in nur sechs Wörtern erzählen?",
+"es": "¿Puedes contar una historia entera en solo seis palabras?",
+"fr": "Peux-tu raconter toute une histoire en six mots seulement ?",
+"it": "Riesci a raccontare un'intera storia in sole sei parole?",
+"pt": "Consegues contar uma história inteira em apenas seis palavras?",
+"pt_BR": "Você consegue contar uma história inteira em só seis palavras?"
+}
+},
+{
+"id": "storytelling-048",
+"lv": "beginner",
+"i18n": {
+"en": "Which sidekick would be the perfect friend for our hero?",
+"de": "Welcher Begleiter wäre der perfekte Freund für unseren Helden?",
+"es": "¿Qué compañero sería el amigo perfecto para nuestro héroe?",
+"fr": "Quel acolyte serait l'ami parfait pour notre héros ?",
+"it": "Quale spalla sarebbe l'amico perfetto per il nostro eroe?",
+"pt": "Que companheiro seria o amigo perfeito para o nosso herói?",
+"pt_BR": "Que parceiro seria o amigo perfeito pro nosso herói?"
+}
+},
+{
+"id": "storytelling-049",
+"lv": "beginner",
+"i18n": {
+"en": "What object could start a story: a key, a hat or something else?",
+"de": "Welcher Gegenstand könnte eine Geschichte auslösen: ein Schlüssel, ein Hut oder etwas anderes?",
+"es": "¿Qué objeto podría iniciar una historia: una llave, un sombrero u otra cosa?",
+"fr": "Quel objet pourrait lancer une histoire : une clé, un chapeau ou autre chose ?",
+"it": "Quale oggetto potrebbe far nascere una storia: una chiave, un cappello o altro?",
+"pt": "Que objeto podia dar início a uma história: uma chave, um chapéu ou outra coisa?",
+"pt_BR": "Que objeto poderia dar início a uma história: uma chave, um chapéu ou outra coisa?"
+}
+},
+{
+"id": "storytelling-050",
+"lv": "beginner",
+"i18n": {
+"en": "What if animals could talk for one day? What would happen?",
+"de": "Was wäre, wenn Tiere einen Tag lang sprechen könnten? Was würde passieren?",
+"es": "¿Y si los animales pudieran hablar durante un día? ¿Qué pasaría?",
+"fr": "Et si les animaux pouvaient parler pendant une journée ? Que se passerait-il ?",
+"it": "E se gli animali potessero parlare per un giorno? Cosa succederebbe?",
+"pt": "E se os animais pudessem falar durante um dia? O que aconteceria?",
+"pt_BR": "E se os animais pudessem falar por um dia? O que aconteceria?"
+}
+},
+{
+"id": "storytelling-051",
+"lv": "beginner",
+"i18n": {
+"en": "How would you retell The Tortoise and the Hare in your own words?",
+"de": "Wie würdest du die Fabel vom Hasen und der Schildkröte mit eigenen Worten erzählen?",
+"es": "¿Cómo contarías la fábula de la liebre y la tortuga con tus palabras?",
+"fr": "Comment raconterais-tu « Le Lièvre et la Tortue » avec tes propres mots ?",
+"it": "Come racconteresti con parole tue la favola della lepre e della tartaruga?",
+"pt": "Como contarias a fábula da lebre e da tartaruga por palavras tuas?",
+"pt_BR": "Como você contaria a fábula da lebre e da tartaruga com suas palavras?"
+}
+},
+{
+"id": "storytelling-052",
+"lv": "beginner",
+"i18n": {
+"en": "What small moment from your week would make a good anecdote?",
+"de": "Welcher kleine Moment deiner Woche wäre eine gute Anekdote?",
+"es": "¿Qué pequeño momento de tu semana daría para una buena anécdota?",
+"fr": "Quel petit moment de ta semaine ferait une bonne anecdote ?",
+"it": "Quale piccolo momento della tua settimana sarebbe un buon aneddoto?",
+"pt": "Que pequeno momento da tua semana dava um bom episódio para contar?",
+"pt_BR": "Que pequeno momento da sua semana daria uma boa história pra contar?"
+}
+},
+{
+"id": "storytelling-053",
+"lv": "beginner",
+"i18n": {
+"en": "How should our story end: happily, with a surprise or with a lesson?",
+"de": "Wie soll unsere Geschichte enden: glücklich, überraschend oder mit einer Lehre?",
+"es": "¿Cómo debería terminar nuestra historia: feliz, con sorpresa o con una enseñanza?",
+"fr": "Comment notre histoire devrait-elle finir : bien, par une surprise ou par une leçon ?",
+"it": "Come dovrebbe finire la nostra storia: felicemente, a sorpresa o con una morale?",
+"pt": "Como deve acabar a nossa história: bem, com uma surpresa ou com uma lição?",
+"pt_BR": "Como nossa história deve terminar: feliz, com surpresa ou com uma lição?"
+}
+},
+{
+"id": "storytelling-054",
+"lv": "beginner",
+"i18n": {
+"en": "Which name would you give a clever little fox in a fable?",
+"de": "Welchen Namen würdest du einem schlauen kleinen Fuchs in einer Fabel geben?",
+"es": "¿Qué nombre le pondrías a un zorrito astuto en una fábula?",
+"fr": "Quel nom donnerais-tu à un petit renard rusé dans une fable ?",
+"it": "Che nome daresti a una piccola volpe furba in una favola?",
+"pt": "Que nome darias a uma raposinha esperta numa fábula?",
+"pt_BR": "Que nome você daria a uma raposinha esperta numa fábula?"
+}
+},
+{
+"id": "storytelling-055",
+"lv": "beginner",
+"i18n": {
+"en": "What is a fun opening line you could use for a new story?",
+"de": "Mit welchem witzigen ersten Satz könntest du eine neue Geschichte beginnen?",
+"es": "¿Qué frase de inicio divertida podrías usar para una nueva historia?",
+"fr": "Quelle première phrase amusante pourrais-tu utiliser pour une nouvelle histoire ?",
+"it": "Quale frase d'apertura divertente potresti usare per una nuova storia?",
+"pt": "Que frase de abertura divertida podias usar numa nova história?",
+"pt_BR": "Que frase de abertura divertida você poderia usar numa nova história?"
+}
+},
+{
+"id": "storytelling-056",
+"lv": "beginner",
+"i18n": {
+"en": "What does our hero's home look like?",
+"de": "Wie sieht das Zuhause unseres Helden aus?",
+"es": "¿Cómo es la casa de nuestro héroe?",
+"fr": "À quoi ressemble la maison de notre héros ?",
+"it": "Com'è la casa del nostro eroe?",
+"pt": "Como é a casa do nosso herói?",
+"pt_BR": "Como é a casa do nosso herói?"
+}
+},
+{
+"id": "storytelling-057",
+"lv": "beginner",
+"i18n": {
+"en": "What would our hero say when meeting a talking tree?",
+"de": "Was würde unser Held sagen, wenn er einem sprechenden Baum begegnet?",
+"es": "¿Qué diría nuestro héroe al encontrarse con un árbol que habla?",
+"fr": "Que dirait notre héros en rencontrant un arbre qui parle ?",
+"it": "Cosa direbbe il nostro eroe incontrando un albero parlante?",
+"pt": "O que diria o nosso herói ao encontrar uma árvore falante?",
+"pt_BR": "O que nosso herói diria ao encontrar uma árvore falante?"
+}
+},
+{
+"id": "storytelling-058",
+"lv": "beginner",
+"i18n": {
+"en": "Can you turn a photo on your phone into a tiny story?",
+"de": "Kannst du aus einem Foto auf deinem Handy eine kleine Geschichte machen?",
+"es": "¿Puedes convertir una foto de tu móvil en una pequeña historia?",
+"fr": "Peux-tu transformer une photo de ton téléphone en petite histoire ?",
+"it": "Riesci a trasformare una foto del tuo telefono in una piccola storia?",
+"pt": "Consegues transformar uma foto do teu telemóvel numa pequena história?",
+"pt_BR": "Você consegue transformar uma foto do seu celular numa pequena história?"
+}
+},
+{
+"id": "storytelling-059",
+"lv": "beginner",
+"i18n": {
+"en": "Which feeling would you like our next story to show?",
+"de": "Welches Gefühl soll unsere nächste Geschichte zeigen?",
+"es": "¿Qué sentimiento te gustaría que mostrara nuestra próxima historia?",
+"fr": "Quelle émotion aimerais-tu que notre prochaine histoire montre ?",
+"it": "Quale emozione vorresti che mostrasse la nostra prossima storia?",
+"pt": "Que sentimento gostavas que a nossa próxima história mostrasse?",
+"pt_BR": "Que sentimento você gostaria que a nossa próxima história mostrasse?"
+}
+},
+{
+"id": "storytelling-060",
+"lv": "beginner",
+"i18n": {
+"en": "What friendly rival could make our hero's journey more exciting?",
+"de": "Welcher freundliche Rivale könnte die Reise unseres Helden spannender machen?",
+"es": "¿Qué rival amistoso podría hacer más emocionante el viaje de nuestro héroe?",
+"fr": "Quel rival sympathique pourrait rendre le voyage de notre héros plus palpitant ?",
+"it": "Quale rivale simpatico potrebbe rendere più emozionante il viaggio del nostro eroe?",
+"pt": "Que rival simpático podia tornar a viagem do nosso herói mais emocionante?",
+"pt_BR": "Que rival simpático poderia deixar a jornada do nosso herói mais emocionante?"
+}
+},
+{
+"id": "storytelling-061",
+"lv": "beginner",
+"i18n": {
+"en": "Who, what, where, when and why: can you plan a mini story with them?",
+"de": "Wer, was, wo, wann und warum: Kannst du damit eine Mini-Geschichte planen?",
+"es": "Quién, qué, dónde, cuándo y por qué: ¿puedes planear una minihistoria con ellos?",
+"fr": "Qui, quoi, où, quand et pourquoi : peux-tu planifier une mini-histoire avec ?",
+"it": "Chi, cosa, dove, quando e perché: riesci a pianificare una mini storia così?",
+"pt": "Quem, o quê, onde, quando e porquê: consegues planear uma mini-história com isto?",
+"pt_BR": "Quem, o quê, onde, quando e por quê: você consegue planejar uma mini-história com isso?"
+}
+},
+{
+"id": "storytelling-062",
+"lv": "beginner",
+"i18n": {
+"en": "What is a story about food or cooking you could share?",
+"de": "Welche Geschichte rund ums Essen oder Kochen könntest du erzählen?",
+"es": "¿Qué historia sobre comida o cocina podrías contar?",
+"fr": "Quelle histoire de cuisine ou de repas pourrais-tu raconter ?",
+"it": "Quale storia sul cibo o sulla cucina potresti raccontare?",
+"pt": "Que história sobre comida ou cozinha podias contar?",
+"pt_BR": "Que história sobre comida ou cozinha você poderia contar?"
+}
+},
+{
+"id": "storytelling-063",
+"lv": "beginner",
+"i18n": {
+"en": "Which of the five senses do you forget most when you describe things?",
+"de": "Welchen der fünf Sinne vergisst du beim Beschreiben am häufigsten?",
+"es": "¿Qué sentido olvidas más cuando describes algo?",
+"fr": "Quel sens oublies-tu le plus quand tu décris quelque chose ?",
+"it": "Quale dei cinque sensi dimentichi più spesso quando descrivi qualcosa?",
+"pt": "Que sentido esqueces mais quando descreves alguma coisa?",
+"pt_BR": "Qual dos cinco sentidos você mais esquece quando descreve algo?"
+}
+},
+{
+"id": "storytelling-064",
+"lv": "beginner",
+"i18n": {
+"en": "Shall we play the one-word story game? What is your first word?",
+"de": "Spielen wir das Ein-Wort-Geschichtenspiel? Was ist dein erstes Wort?",
+"es": "¿Jugamos a la historia palabra por palabra? ¿Cuál es tu primera palabra?",
+"fr": "On joue à l'histoire mot par mot ? Quel est ton premier mot ?",
+"it": "Giochiamo alla storia una parola alla volta? Qual è la tua prima parola?",
+"pt": "Jogamos à história palavra a palavra? Qual é a tua primeira palavra?",
+"pt_BR": "Vamos jogar a história palavra por palavra? Qual é a sua primeira palavra?"
+}
+},
+{
+"id": "storytelling-065",
+"lv": "beginner",
+"i18n": {
+"en": "What lesson would you put in a fable you wrote yourself?",
+"de": "Welche Lehre würdest du in eine selbst geschriebene Fabel packen?",
+"es": "¿Qué enseñanza pondrías en una fábula escrita por ti?",
+"fr": "Quelle leçon mettrais-tu dans une fable écrite par toi ?",
+"it": "Quale morale metteresti in una favola scritta da te?",
+"pt": "Que lição porias numa fábula escrita por ti?",
+"pt_BR": "Que lição você colocaria numa fábula escrita por você?"
+}
+},
+{
+"id": "storytelling-066",
+"lv": "intermediate",
+"i18n": {
+"en": "What event could push our hero out of their everyday life?",
+"de": "Welches Ereignis könnte unseren Helden aus seinem Alltag reißen?",
+"es": "¿Qué suceso podría sacar a nuestro héroe de su vida cotidiana?",
+"fr": "Quel événement pourrait arracher notre héros à son quotidien ?",
+"it": "Quale evento potrebbe spingere il nostro eroe fuori dalla sua vita di tutti i giorni?",
+"pt": "Que acontecimento podia tirar o nosso herói da sua vida de todos os dias?",
+"pt_BR": "Que acontecimento poderia tirar nosso herói da rotina?"
+}
+},
+{
+"id": "storytelling-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which trickster do you like more: Anansi, Coyote or Nasreddin? Why?",
+"de": "Welchen Schelm magst du lieber: Anansi, Kojote oder Nasreddin? Warum?",
+"es": "¿Qué pícaro te gusta más: Anansi, Coyote o Nasreddín? ¿Por qué?",
+"fr": "Quel filou préfères-tu : Anansi, Coyote ou Nasreddine ? Pourquoi ?",
+"it": "Quale briccone preferisci: Anansi, Coyote o Nasreddin? Perché?",
+"pt": "Que malandro preferes: Anansi, o Coiote ou Nasrudin? Porquê?",
+"pt_BR": "Qual malandro você prefere: Anansi, o Coiote ou Nasrudin? Por quê?"
+}
+},
+{
+"id": "storytelling-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you build gentle suspense in a story about a lost key?",
+"de": "Wie würdest du in einer Geschichte über einen verlorenen Schlüssel sanfte Spannung aufbauen?",
+"es": "¿Cómo crearías un suspense suave en una historia sobre una llave perdida?",
+"fr": "Comment créerais-tu un suspense tout doux dans une histoire de clé perdue ?",
+"it": "Come creeresti una suspense leggera in una storia su una chiave perduta?",
+"pt": "Como criarias um suspense suave numa história sobre uma chave perdida?",
+"pt_BR": "Como você criaria um suspense leve numa história sobre uma chave perdida?"
+}
+},
+{
+"id": "storytelling-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which why story would you invent: why the moon changes shape or why cats purr?",
+"de": "Welche Warum-Geschichte würdest du erfinden: warum der Mond seine Form ändert oder warum Katzen schnurren?",
+"es": "¿Qué cuento de los porqués inventarías: por qué cambia la luna o por qué ronronean los gatos?",
+"fr": "Quel conte des pourquoi inventerais-tu : pourquoi la lune change ou pourquoi les chats ronronnent ?",
+"it": "Quale storia del perché inventeresti: perché la luna cambia forma o perché i gatti fanno le fusa?",
+"pt": "Que história do porquê inventarias: porque muda a lua de forma ou porque ronronam os gatos?",
+"pt_BR": "Que história do porquê você inventaria: por que a lua muda de forma ou por que os gatos ronronam?"
+}
+},
+{
+"id": "storytelling-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you make a story funnier when you tell it out loud?",
+"de": "Wie machst du eine Geschichte lustiger, wenn du sie laut erzählst?",
+"es": "¿Cómo haces más graciosa una historia cuando la cuentas en voz alta?",
+"fr": "Comment rends-tu une histoire plus drôle quand tu la racontes à voix haute ?",
+"it": "Come rendi più divertente una storia quando la racconti ad alta voce?",
+"pt": "Como tornas uma história mais engraçada quando a contas em voz alta?",
+"pt_BR": "Como você deixa uma história mais engraçada quando conta em voz alta?"
+}
+},
+{
+"id": "storytelling-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Can you retell a famous fable from the point of view of the other animal?",
+"de": "Kannst du eine bekannte Fabel aus der Sicht des anderen Tiers erzählen?",
+"es": "¿Puedes contar una fábula famosa desde el punto de vista del otro animal?",
+"fr": "Peux-tu raconter une fable célèbre du point de vue de l'autre animal ?",
+"it": "Riesci a raccontare una favola famosa dal punto di vista dell'altro animale?",
+"pt": "Consegues contar uma fábula famosa do ponto de vista do outro animal?",
+"pt_BR": "Você consegue contar uma fábula famosa do ponto de vista do outro animal?"
+}
+},
+{
+"id": "storytelling-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What wise mentor could help our hero, and what would they teach?",
+"de": "Welcher weise Mentor könnte unserem Helden helfen, und was würde er ihm beibringen?",
+"es": "¿Qué mentor sabio podría ayudar a nuestro héroe y qué le enseñaría?",
+"fr": "Quel sage mentor pourrait aider notre héros, et que lui apprendrait-il ?",
+"it": "Quale saggio mentore potrebbe aiutare il nostro eroe, e cosa gli insegnerebbe?",
+"pt": "Que mentor sábio podia ajudar o nosso herói, e o que lhe ensinaria?",
+"pt_BR": "Que mentor sábio poderia ajudar nosso herói, e o que ele ensinaria?"
+}
+},
+{
+"id": "storytelling-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which tall tale could you invent about your morning commute?",
+"de": "Welche Lügengeschichte könntest du über deinen Weg zur Arbeit oder Schule erfinden?",
+"es": "¿Qué historia exagerada podrías inventar sobre tu trayecto de la mañana?",
+"fr": "Quelle histoire à dormir debout pourrais-tu inventer sur ton trajet du matin ?",
+"it": "Quale storia esagerata potresti inventare sul tuo tragitto mattutino?",
+"pt": "Que história exagerada podias inventar sobre o teu caminho de manhã?",
+"pt_BR": "Que história exagerada você poderia inventar sobre o seu trajeto de manhã?"
+}
+},
+{
+"id": "storytelling-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Where would you add a cliffhanger in our current story?",
+"de": "Wo würdest du in unserer aktuellen Geschichte einen Cliffhanger einbauen?",
+"es": "¿Dónde pondrías un final en suspenso en nuestra historia actual?",
+"fr": "Où placerais-tu un moment de suspense dans notre histoire actuelle ?",
+"it": "Dove metteresti un colpo di scena sospeso nella nostra storia attuale?",
+"pt": "Onde porias um momento de suspense na nossa história atual?",
+"pt_BR": "Onde você colocaria um gancho de suspense na nossa história atual?"
+}
+},
+{
+"id": "storytelling-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you change your voice for different characters?",
+"de": "Wie veränderst du deine Stimme für verschiedene Figuren?",
+"es": "¿Cómo cambias la voz para los distintos personajes?",
+"fr": "Comment changes-tu ta voix selon les personnages ?",
+"it": "Come cambi la voce per i diversi personaggi?",
+"pt": "Como mudas a voz para as diferentes personagens?",
+"pt_BR": "Como você muda a voz para os diferentes personagens?"
+}
+},
+{
+"id": "storytelling-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which folk tale from another culture surprised you the most?",
+"de": "Welches Volksmärchen aus einer anderen Kultur hat dich am meisten überrascht?",
+"es": "¿Qué cuento popular de otra cultura te sorprendió más?",
+"fr": "Quel conte d'une autre culture t'a le plus surpris ?",
+"it": "Quale fiaba di un'altra cultura ti ha sorpreso di più?",
+"pt": "Que conto popular de outra cultura te surpreendeu mais?",
+"pt_BR": "Qual conto popular de outra cultura mais te surpreendeu?"
+}
+},
+{
+"id": "storytelling-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you tell a story to someone still learning your language?",
+"de": "Wie würdest du einer Person eine Geschichte erzählen, die deine Sprache noch lernt?",
+"es": "¿Cómo contarías una historia a alguien que aún está aprendiendo tu idioma?",
+"fr": "Comment raconterais-tu une histoire à quelqu'un qui apprend encore ta langue ?",
+"it": "Come racconteresti una storia a chi sta ancora imparando la tua lingua?",
+"pt": "Como contarias uma história a alguém que ainda está a aprender a tua língua?",
+"pt_BR": "Como você contaria uma história pra alguém que ainda está aprendendo seu idioma?"
+}
+},
+{
+"id": "storytelling-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What harmless false clue could we hide in a cozy mystery?",
+"de": "Welche harmlose falsche Spur könnten wir in einem gemütlichen Krimi verstecken?",
+"es": "¿Qué pista falsa inofensiva podríamos esconder en un misterio tranquilo?",
+"fr": "Quel faux indice inoffensif pourrions-nous cacher dans un petit mystère tranquille ?",
+"it": "Quale falso indizio innocuo potremmo nascondere in un giallo tranquillo?",
+"pt": "Que pista falsa inofensiva podíamos esconder num mistério tranquilo?",
+"pt_BR": "Que pista falsa inofensiva poderíamos esconder num mistério tranquilo?"
+}
+},
+{
+"id": "storytelling-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you plan stories before writing or discover them as you go?",
+"de": "Planst du Geschichten vorher oder entdeckst du sie beim Schreiben?",
+"es": "¿Planificas tus historias antes de escribir o las descubres sobre la marcha?",
+"fr": "Planifies-tu tes histoires avant d'écrire ou les découvres-tu en chemin ?",
+"it": "Pianifichi le storie prima di scrivere o le scopri strada facendo?",
+"pt": "Planeias as histórias antes de escrever ou descobre-las pelo caminho?",
+"pt_BR": "Você planeja as histórias antes de escrever ou descobre no caminho?"
+}
+},
+{
+"id": "storytelling-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Which storytelling tradition would you love to see live, like rakugo or a griot?",
+"de": "Welche Erzähltradition würdest du gern live erleben, etwa Rakugo oder einen Griot?",
+"es": "¿Qué tradición narrativa te encantaría ver en vivo, como el rakugo o un griot?",
+"fr": "Quelle tradition de conte aimerais-tu voir en vrai, comme le rakugo ou un griot ?",
+"it": "Quale tradizione narrativa ti piacerebbe vedere dal vivo, come il rakugo o un griot?",
+"pt": "Que tradição de contar histórias gostavas de ver ao vivo, como o rakugo ou um griô?",
+"pt_BR": "Qual tradição de contar histórias você adoraria ver ao vivo, como o rakugo ou um griô?"
+}
+},
+{
+"id": "storytelling-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What would happen if we started our story in the middle of the action?",
+"de": "Was würde passieren, wenn wir unsere Geschichte mitten in der Handlung beginnen?",
+"es": "¿Qué pasaría si empezáramos nuestra historia en plena acción?",
+"fr": "Que se passerait-il si on commençait notre histoire en pleine action ?",
+"it": "Cosa succederebbe se iniziassimo la nostra storia nel pieno dell'azione?",
+"pt": "O que aconteceria se começássemos a nossa história a meio da ação?",
+"pt_BR": "O que aconteceria se começássemos nossa história no meio da ação?"
+}
+},
+{
+"id": "storytelling-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which version of Cinderella or another classic tale do you know?",
+"de": "Welche Version von Aschenputtel oder einem anderen Klassiker kennst du?",
+"es": "¿Qué versión de Cenicienta u otro cuento clásico conoces?",
+"fr": "Quelle version de Cendrillon ou d'un autre conte classique connais-tu ?",
+"it": "Quale versione di Cenerentola o di un'altra fiaba classica conosci?",
+"pt": "Que versão da Cinderela ou de outro conto clássico conheces?",
+"pt_BR": "Qual versão da Cinderela ou de outro conto clássico você conhece?"
+}
+},
+{
+"id": "storytelling-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep listeners curious when you tell a story?",
+"de": "Wie hältst du Zuhörer neugierig, wenn du eine Geschichte erzählst?",
+"es": "¿Cómo mantienes la curiosidad de quien te escucha cuando cuentas una historia?",
+"fr": "Comment gardes-tu tes auditeurs curieux quand tu racontes une histoire ?",
+"it": "Come tieni viva la curiosità di chi ascolta quando racconti una storia?",
+"pt": "Como manténs quem te ouve curioso quando contas uma história?",
+"pt_BR": "Como você mantém quem escuta curioso quando conta uma história?"
+}
+},
+{
+"id": "storytelling-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which detail would make our story's setting feel more alive?",
+"de": "Welches Detail würde den Schauplatz unserer Geschichte lebendiger machen?",
+"es": "¿Qué detalle haría que el escenario de nuestra historia pareciera más vivo?",
+"fr": "Quel détail rendrait le décor de notre histoire plus vivant ?",
+"it": "Quale dettaglio renderebbe più viva l'ambientazione della nostra storia?",
+"pt": "Que pormenor tornaria o cenário da nossa história mais vivo?",
+"pt_BR": "Que detalhe deixaria o cenário da nossa história mais vivo?"
+}
+},
+{
+"id": "storytelling-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a funny folk hero from your country, like Juan Bobo or Giufà?",
+"de": "Welcher lustige Volksheld stammt aus deinem Land, so wie Juan Bobo oder Giufà?",
+"es": "¿Qué héroe popular divertido hay en tu país, como Juan Bobo o Giufà?",
+"fr": "Quel héros populaire amusant vient de ton pays, comme Juan Bobo ou Giufà ?",
+"it": "Quale buffo eroe popolare c'è nel tuo paese, come Juan Bobo o Giufà?",
+"pt": "Que herói popular engraçado há no teu país, como o Pedro Malasartes ou o Giufà?",
+"pt_BR": "Qual herói popular engraçado existe no seu país, como Pedro Malasartes ou Giufà?"
+}
+},
+{
+"id": "storytelling-086",
+"lv": "advanced",
+"i18n": {
+"en": "Can you write a complete story in exactly 100 words?",
+"de": "Kannst du eine vollständige Geschichte in genau 100 Wörtern schreiben?",
+"es": "¿Puedes escribir una historia completa en exactamente 100 palabras?",
+"fr": "Peux-tu écrire une histoire complète en exactement 100 mots ?",
+"it": "Riesci a scrivere una storia completa in esattamente 100 parole?",
+"pt": "Consegues escrever uma história completa em exatamente 100 palavras?",
+"pt_BR": "Você consegue escrever uma história completa em exatamente 100 palavras?"
+}
+},
+{
+"id": "storytelling-087",
+"lv": "advanced",
+"i18n": {
+"en": "What theme or deeper idea would you like your next story to carry?",
+"de": "Welches Thema oder welche tiefere Idee soll deine nächste Geschichte tragen?",
+"es": "¿Qué tema o idea profunda te gustaría que tuviera tu próxima historia?",
+"fr": "Quel thème ou quelle idée profonde aimerais-tu que porte ta prochaine histoire ?",
+"it": "Quale tema o idea profonda vorresti nella tua prossima storia?",
+"pt": "Que tema ou ideia mais profunda gostavas que a tua próxima história tivesse?",
+"pt_BR": "Que tema ou ideia mais profunda você gostaria que sua próxima história tivesse?"
+}
+},
+{
+"id": "storytelling-088",
+"lv": "advanced",
+"i18n": {
+"en": "How would you move a classic folk tale into a modern city?",
+"de": "Wie würdest du ein klassisches Volksmärchen in eine moderne Stadt verlegen?",
+"es": "¿Cómo trasladarías un cuento popular clásico a una ciudad moderna?",
+"fr": "Comment transposerais-tu un conte classique dans une ville moderne ?",
+"it": "Come sposteresti una fiaba classica in una città moderna?",
+"pt": "Como levarias um conto popular clássico para uma cidade moderna?",
+"pt_BR": "Como você levaria um conto popular clássico para uma cidade moderna?"
+}
+},
+{
+"id": "storytelling-089",
+"lv": "advanced",
+"i18n": {
+"en": "What rules would magic follow in a world you invent?",
+"de": "Welchen Regeln würde Magie in einer von dir erfundenen Welt folgen?",
+"es": "¿Qué reglas seguiría la magia en un mundo inventado por ti?",
+"fr": "Quelles règles suivrait la magie dans un monde que tu inventerais ?",
+"it": "Quali regole seguirebbe la magia in un mondo inventato da te?",
+"pt": "Que regras seguiria a magia num mundo inventado por ti?",
+"pt_BR": "Que regras a magia seguiria num mundo inventado por você?"
+}
+},
+{
+"id": "storytelling-090",
+"lv": "advanced",
+"i18n": {
+"en": "Which line of dialogue could say a lot without saying it directly?",
+"de": "Welche Dialogzeile könnte viel sagen, ohne es direkt auszusprechen?",
+"es": "¿Qué frase de diálogo podría decir mucho sin decirlo directamente?",
+"fr": "Quelle réplique pourrait en dire beaucoup sans le dire directement ?",
+"it": "Quale battuta di dialogo potrebbe dire molto senza dirlo apertamente?",
+"pt": "Que fala de diálogo podia dizer muito sem o dizer diretamente?",
+"pt_BR": "Que fala de diálogo poderia dizer muito sem dizer diretamente?"
+}
+},
+{
+"id": "storytelling-091",
+"lv": "advanced",
+"i18n": {
+"en": "How has a character you love changed from the start to the end of their story?",
+"de": "Wie hat sich eine Figur, die du liebst, vom Anfang bis zum Ende ihrer Geschichte verändert?",
+"es": "¿Cómo cambia un personaje que te encanta del principio al final de su historia?",
+"fr": "Comment un personnage que tu aimes change-t-il du début à la fin de son histoire ?",
+"it": "Come cambia un personaggio che ami dall'inizio alla fine della sua storia?",
+"pt": "Como muda uma personagem de que gostas do início ao fim da sua história?",
+"pt_BR": "Como um personagem que você ama muda do começo ao fim da história dele?"
+}
+},
+{
+"id": "storytelling-092",
+"lv": "advanced",
+"i18n": {
+"en": "Would you rather write a story in letters, diary entries or chat messages?",
+"de": "Würdest du eine Geschichte lieber in Briefen, Tagebucheinträgen oder Chatnachrichten schreiben?",
+"es": "¿Preferirías escribir una historia en cartas, en un diario o en mensajes de chat?",
+"fr": "Préférerais-tu écrire une histoire en lettres, en pages de journal ou en messages ?",
+"it": "Preferiresti scrivere una storia in lettere, pagine di diario o messaggi in chat?",
+"pt": "Preferias escrever uma história em cartas, num diário ou em mensagens de chat?",
+"pt_BR": "Você preferiria escrever uma história em cartas, num diário ou em mensagens de chat?"
+}
+},
+{
+"id": "storytelling-093",
+"lv": "advanced",
+"i18n": {
+"en": "What true story from your family would you like to record for the future?",
+"de": "Welche wahre Geschichte aus deiner Familie würdest du gern für später festhalten?",
+"es": "¿Qué historia real de tu familia te gustaría guardar para el futuro?",
+"fr": "Quelle histoire vraie de ta famille aimerais-tu conserver pour l'avenir ?",
+"it": "Quale storia vera della tua famiglia vorresti conservare per il futuro?",
+"pt": "Que história verdadeira da tua família gostavas de guardar para o futuro?",
+"pt_BR": "Qual história real da sua família você gostaria de registrar para o futuro?"
+}
+},
+{
+"id": "storytelling-094",
+"lv": "advanced",
+"i18n": {
+"en": "How would you use a short story to open a presentation?",
+"de": "Wie würdest du eine kurze Geschichte nutzen, um eine Präsentation zu beginnen?",
+"es": "¿Cómo usarías una historia corta para abrir una presentación?",
+"fr": "Comment utiliserais-tu une courte histoire pour ouvrir une présentation ?",
+"it": "Come useresti una breve storia per aprire una presentazione?",
+"pt": "Como usarias uma pequena história para abrir uma apresentação?",
+"pt_BR": "Como você usaria uma história curta pra abrir uma apresentação?"
+}
+},
+{
+"id": "storytelling-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which two folk tales would make a fun mash-up?",
+"de": "Welche zwei Volksmärchen würden eine lustige Mischung ergeben?",
+"es": "¿Qué dos cuentos populares darían una mezcla divertida?",
+"fr": "Quels deux contes feraient un mélange amusant ?",
+"it": "Quali due fiabe darebbero un mix divertente?",
+"pt": "Que dois contos populares davam uma mistura divertida?",
+"pt_BR": "Quais dois contos populares dariam uma mistura divertida?"
+}
+},
+{
+"id": "storytelling-096",
+"lv": "advanced",
+"i18n": {
+"en": "What choices would readers make in a choose-your-path story by you?",
+"de": "Welche Entscheidungen würden Leser in deiner Geschichte mit mehreren Wegen treffen?",
+"es": "¿Qué decisiones tomarían los lectores en una historia de caminos elegibles escrita por ti?",
+"fr": "Quels choix les lecteurs feraient-ils dans une histoire dont ils sont les héros écrite par toi ?",
+"it": "Quali scelte farebbero i lettori in una tua storia a bivi?",
+"pt": "Que escolhas fariam os leitores numa história de caminhos à escolha escrita por ti?",
+"pt_BR": "Que escolhas os leitores fariam numa história de escolha seu caminho escrita por você?"
+}
+},
+{
+"id": "storytelling-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which story would you choose to open our final story collection?",
+"de": "Mit welcher Geschichte würdest du unsere Geschichtensammlung eröffnen?",
+"es": "¿Qué historia elegirías para abrir nuestra colección final de cuentos?",
+"fr": "Quelle histoire choisirais-tu pour ouvrir notre recueil final ?",
+"it": "Quale storia sceglieresti per aprire la nostra raccolta finale di racconti?",
+"pt": "Que história escolherias para abrir a nossa coletânea final?",
+"pt_BR": "Qual história você escolheria pra abrir a nossa coletânea final?"
+}
+},
+{
+"id": "storytelling-098",
+"lv": "advanced",
+"i18n": {
+"en": "How has your way of telling stories changed over time?",
+"de": "Wie hat sich deine Art, Geschichten zu erzählen, mit der Zeit verändert?",
+"es": "¿Cómo ha cambiado tu forma de contar historias con el tiempo?",
+"fr": "Comment ta façon de raconter des histoires a-t-elle évolué avec le temps ?",
+"it": "Com'è cambiato nel tempo il tuo modo di raccontare storie?",
+"pt": "Como mudou a tua maneira de contar histórias ao longo do tempo?",
+"pt_BR": "Como o seu jeito de contar histórias mudou com o tempo?"
+}
+},
+{
+"id": "storytelling-099",
+"lv": "advanced",
+"i18n": {
+"en": "What story would you love to pass on to someone younger?",
+"de": "Welche Geschichte würdest du gern an einen jüngeren Menschen weitergeben?",
+"es": "¿Qué historia te encantaría transmitir a alguien más joven?",
+"fr": "Quelle histoire aimerais-tu transmettre à quelqu'un de plus jeune ?",
+"it": "Quale storia ti piacerebbe tramandare a qualcuno più giovane?",
+"pt": "Que história gostavas de passar a alguém mais novo?",
+"pt_BR": "Qual história você adoraria passar adiante pra alguém mais novo?"
+}
+},
+{
+"id": "storytelling-100",
+"lv": "advanced",
+"i18n": {
+"en": "If you wrote the story of your own year, what would the chapters be?",
+"de": "Wenn du die Geschichte deines eigenen Jahres schreiben würdest, welche Kapitel hätte sie?",
+"es": "Si escribieras la historia de tu propio año, ¿cuáles serían los capítulos?",
+"fr": "Si tu écrivais l'histoire de ton année, quels en seraient les chapitres ?",
+"it": "Se scrivessi la storia del tuo anno, quali sarebbero i capitoli?",
+"pt": "Se escrevesses a história do teu ano, quais seriam os capítulos?",
+"pt_BR": "Se você escrevesse a história do seu ano, quais seriam os capítulos?"
+}
+}
+]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "football",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "VAR basics",
+     "g": "See how video assistant referees help review key decisions.",
+     "p": [
+      "VAR can check four kinds of moments: goals, penalties, direct red cards and mistaken identity.",
+      "It should only step in for a clear and obvious error or a serious missed incident.",
+      "The referee can watch the replay on a pitchside screen before making the final call."
+     ],
+     "q": "Do you think VAR makes football fairer or less fun?",
+     "c": "During a VAR check, try to guess the decision before it is announced."
+    },
+    "de": {
+     "t": "VAR-Grundlagen",
+     "g": "Sieh, wie Videoassistenten bei wichtigen Entscheidungen helfen.",
+     "p": [
+      "Der VAR prüft vier Situationen: Tore, Elfmeter, glatte Rote Karten und Spielerverwechslungen.",
+      "Er greift nur bei klaren und offensichtlichen Fehlern oder übersehenen schweren Vorfällen ein.",
+      "Der Schiedsrichter kann sich die Szene am Monitor am Spielfeldrand ansehen und dann entscheiden."
+     ],
+     "q": "Macht der VAR Fußball für dich fairer oder weniger spaßig?",
+     "c": "Rate bei einem VAR-Check die Entscheidung, bevor sie verkündet wird."
+    },
+    "es": {
+     "t": "Lo básico del VAR",
+     "g": "Descubre cómo el videoarbitraje ayuda a revisar las decisiones clave.",
+     "p": [
+      "El VAR revisa cuatro tipos de jugadas: goles, penaltis, rojas directas y errores de identidad.",
+      "Solo debe intervenir ante un error claro y manifiesto o una acción grave no vista.",
+      "El árbitro puede ver la repetición en un monitor junto al campo antes de decidir."
+     ],
+     "q": "¿Crees que el VAR hace el fútbol más justo o menos divertido?",
+     "c": "Durante una revisión del VAR, intenta adivinar la decisión antes de que se anuncie."
+    },
+    "fr": {
+     "t": "Les bases de la VAR",
+     "g": "Découvre comment l'assistance vidéo aide à revoir les décisions clés.",
+     "p": [
+      "La VAR vérifie quatre types d'actions : buts, penalties, cartons rouges directs et erreurs d'identité.",
+      "Elle n'intervient qu'en cas d'erreur claire et évidente ou d'incident grave non vu.",
+      "L'arbitre peut revoir l'action sur un écran au bord du terrain avant de trancher."
+     ],
+     "q": "Selon toi, la VAR rend-elle le foot plus juste ou moins amusant ?",
+     "c": "Pendant une vérification VAR, essaie de deviner la décision avant l'annonce."
+    },
+    "it": {
+     "t": "Le basi del VAR",
+     "g": "Scopri come il VAR aiuta a rivedere le decisioni più importanti.",
+     "p": [
+      "Il VAR controlla quattro situazioni: gol, rigori, rossi diretti e scambi di persona.",
+      "Interviene solo per un errore chiaro ed evidente o un episodio grave non visto.",
+      "L'arbitro può rivedere l'azione al monitor a bordo campo prima di decidere."
+     ],
+     "q": "Secondo te il VAR rende il calcio più giusto o meno divertente?",
+     "c": "Durante un controllo VAR, prova a indovinare la decisione prima dell'annuncio."
+    },
+    "pt": {
+     "t": "O básico do VAR",
+     "g": "Descobre como o videoárbitro ajuda a rever as decisões importantes.",
+     "p": [
+      "O VAR verifica quatro tipos de lances: golos, penáltis, vermelhos diretos e erros de identidade.",
+      "Só deve intervir perante um erro claro e óbvio ou um lance grave que escapou.",
+      "O árbitro pode ver a repetição num monitor junto ao campo antes de decidir."
+     ],
+     "q": "Achas que o VAR torna o futebol mais justo ou menos divertido?",
+     "c": "Durante uma revisão do VAR, tenta adivinhar a decisão antes do anúncio."
+    },
+    "pt_BR": {
+     "t": "O básico do VAR",
+     "g": "Descubra como o árbitro de vídeo ajuda a revisar os lances decisivos.",
+     "p": [
+      "O VAR revisa quatro tipos de lance: gols, pênaltis, vermelhos diretos e erro de identidade.",
+      "Ele só deve intervir em erro claro e óbvio ou num lance grave que passou batido.",
+      "O árbitro pode ver o replay num monitor à beira do campo antes de decidir."
+     ],
+     "q": "Você acha que o VAR deixa o futebol mais justo ou menos divertido?",
+     "c": "Durante uma revisão do VAR, tente adivinhar a decisão antes do anúncio."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The advantage rule",
+     "g": "Learn why referees sometimes let play continue after a foul.",
+     "p": [
+      "If stopping play would hurt the fouled team, the referee can wave play on.",
+      "The signal is both arms stretched forward, pointing towards the attack.",
+      "If the advantage does not come within a few seconds, the referee can still give the free kick."
+     ],
+     "q": "Can you remember a goal that came straight after a smart advantage call?",
+     "c": "Next match, look for the two-arm signal and count how often it appears."
+    },
+    "de": {
+     "t": "Die Vorteilsregel",
+     "g": "Lerne, warum der Schiri nach einem Foul manchmal weiterspielen lässt.",
+     "p": [
+      "Würde eine Unterbrechung dem gefoulten Team schaden, lässt der Schiri weiterlaufen.",
+      "Das Zeichen: beide Arme nach vorn gestreckt, in Angriffsrichtung.",
+      "Bleibt der Vorteil nach wenigen Sekunden aus, kann er den Freistoß noch nachträglich geben."
+     ],
+     "q": "Erinnerst du dich an ein Tor nach einem klugen Vorteil?",
+     "c": "Achte im nächsten Spiel auf das Zeichen mit beiden Armen und zähle, wie oft es kommt."
+    },
+    "es": {
+     "t": "La ley de la ventaja",
+     "g": "Aprende por qué el árbitro a veces deja seguir tras una falta.",
+     "p": [
+      "Si parar el juego perjudicaría al equipo que recibió la falta, el árbitro deja seguir.",
+      "La señal son los dos brazos extendidos hacia delante, en dirección al ataque.",
+      "Si la ventaja no llega en unos segundos, el árbitro aún puede pitar la falta."
+     ],
+     "q": "¿Recuerdas un gol que llegó justo tras una buena ley de la ventaja?",
+     "c": "En el próximo partido, busca la señal de los dos brazos y cuenta cuántas veces aparece."
+    },
+    "fr": {
+     "t": "La règle de l'avantage",
+     "g": "Découvre pourquoi l'arbitre laisse parfois jouer après une faute.",
+     "p": [
+      "Si arrêter le jeu pénalisait l'équipe victime de la faute, l'arbitre laisse l'avantage.",
+      "Le signal : les deux bras tendus vers l'avant, dans le sens de l'attaque.",
+      "Si l'avantage ne se concrétise pas en quelques secondes, il peut encore siffler le coup franc."
+     ],
+     "q": "Te souviens-tu d'un but marqué juste après un avantage bien laissé ?",
+     "c": "Au prochain match, guette le signal des deux bras et compte combien de fois il apparaît."
+    },
+    "it": {
+     "t": "La regola del vantaggio",
+     "g": "Scopri perché l'arbitro a volte lascia proseguire dopo un fallo.",
+     "p": [
+      "Se fermare il gioco danneggerebbe la squadra che ha subito fallo, l'arbitro lascia correre.",
+      "Il segnale sono entrambe le braccia tese in avanti, nella direzione dell'attacco.",
+      "Se il vantaggio non si concretizza in pochi secondi, può ancora fischiare la punizione."
+     ],
+     "q": "Ricordi un gol arrivato subito dopo un vantaggio ben concesso?",
+     "c": "Alla prossima partita, cerca il segnale delle due braccia e conta quante volte appare."
+    },
+    "pt": {
+     "t": "A lei da vantagem",
+     "g": "Aprende porque é que o árbitro às vezes deixa seguir depois de uma falta.",
+     "p": [
+      "Se parar o jogo prejudicasse a equipa que sofreu a falta, o árbitro deixa seguir.",
+      "O sinal são os dois braços esticados para a frente, no sentido do ataque.",
+      "Se a vantagem não surgir em poucos segundos, o árbitro ainda pode marcar o livre."
+     ],
+     "q": "Lembras-te de um golo que nasceu de uma boa lei da vantagem?",
+     "c": "No próximo jogo, procura o sinal dos dois braços e conta quantas vezes aparece."
+    },
+    "pt_BR": {
+     "t": "A lei da vantagem",
+     "g": "Aprenda por que o árbitro às vezes deixa o jogo seguir depois de uma falta.",
+     "p": [
+      "Se parar o jogo prejudicar o time que sofreu a falta, o árbitro manda seguir.",
+      "O sinal são os dois braços esticados para frente, na direção do ataque.",
+      "Se a vantagem não vier em poucos segundos, o árbitro ainda pode marcar a falta."
+     ],
+     "q": "Você lembra de um gol que saiu logo depois de uma boa vantagem?",
+     "c": "No próximo jogo, procure o sinal dos dois braços e conte quantas vezes aparece."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Substitutions",
+     "g": "Find out how substitutions work and why they matter so much.",
+     "p": [
+      "A substitute can only come on after the player leaving has walked off the pitch.",
+      "In standard matches, a player who has been replaced cannot return to the game.",
+      "Substitutes were first allowed at a World Cup in 1970, and now fresh legs often decide matches."
+     ],
+     "q": "If you were the coach, when would you make your first change?",
+     "c": "In your next match, note the minute of each substitution and what changed afterwards."
+    },
+    "de": {
+     "t": "Auswechslungen",
+     "g": "Erfahre, wie Wechsel funktionieren und warum sie so wichtig sind.",
+     "p": [
+      "Ein Einwechselspieler darf erst rein, wenn der ausgewechselte Spieler das Feld verlassen hat.",
+      "In normalen Spielen darf ein ausgewechselter Spieler nicht zurückkehren.",
+      "Bei einer WM durfte erstmals 1970 gewechselt werden, heute entscheiden frische Beine oft Spiele."
+     ],
+     "q": "Wann würdest du als Trainer zum ersten Mal wechseln?",
+     "c": "Notiere im nächsten Spiel die Minute jedes Wechsels und was sich danach änderte."
+    },
+    "es": {
+     "t": "Los cambios",
+     "g": "Descubre cómo funcionan las sustituciones y por qué importan tanto.",
+     "p": [
+      "El suplente solo puede entrar cuando el jugador sustituido ha salido del campo.",
+      "En los partidos normales, un jugador sustituido no puede volver a entrar.",
+      "Los cambios se permitieron por primera vez en un Mundial en 1970, y hoy las piernas frescas deciden partidos."
+     ],
+     "q": "Si fueras el entrenador, ¿cuándo harías tu primer cambio?",
+     "c": "En el próximo partido, anota el minuto de cada cambio y qué cambió después."
+    },
+    "fr": {
+     "t": "Les remplacements",
+     "g": "Découvre comment fonctionnent les remplacements et pourquoi ils comptent autant.",
+     "p": [
+      "Le remplaçant n'entre qu'une fois que le joueur remplacé a quitté le terrain.",
+      "Dans un match classique, un joueur remplacé ne peut pas revenir.",
+      "Les remplacements sont autorisés en Coupe du monde depuis 1970, et des jambes fraîches font souvent la différence."
+     ],
+     "q": "Si tu étais l'entraîneur, quand ferais-tu ton premier changement ?",
+     "c": "Au prochain match, note la minute de chaque changement et ce qui a changé ensuite."
+    },
+    "it": {
+     "t": "Le sostituzioni",
+     "g": "Scopri come funzionano i cambi e perché contano tanto.",
+     "p": [
+      "Il subentrante può entrare solo dopo che il giocatore sostituito è uscito dal campo.",
+      "Nelle partite normali, chi viene sostituito non può rientrare.",
+      "I cambi furono ammessi per la prima volta a un Mondiale nel 1970, e oggi gambe fresche decidono partite."
+     ],
+     "q": "Se fossi l'allenatore, quando faresti il primo cambio?",
+     "c": "Alla prossima partita, annota il minuto di ogni cambio e cosa è cambiato dopo."
+    },
+    "pt": {
+     "t": "As substituições",
+     "g": "Descobre como funcionam as substituições e porque contam tanto.",
+     "p": [
+      "O suplente só pode entrar depois de o jogador substituído sair do campo.",
+      "Nos jogos normais, um jogador substituído não pode voltar a entrar.",
+      "As substituições chegaram ao Mundial em 1970, e hoje pernas frescas decidem muitos jogos."
+     ],
+     "q": "Se fosses o treinador, quando farias a primeira substituição?",
+     "c": "No próximo jogo, aponta o minuto de cada substituição e o que mudou depois."
+    },
+    "pt_BR": {
+     "t": "As substituições",
+     "g": "Descubra como funcionam as substituições e por que importam tanto.",
+     "p": [
+      "O reserva só pode entrar depois que o jogador substituído sai do campo.",
+      "Em jogos normais, quem foi substituído não pode voltar.",
+      "As substituições chegaram à Copa do Mundo em 1970, e hoje pernas descansadas decidem jogos."
+     ],
+     "q": "Se você fosse o técnico, quando faria a primeira troca?",
+     "c": "No próximo jogo, anote o minuto de cada substituição e o que mudou depois."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Extra time and penalty shootouts",
+     "g": "Learn how drawn knockout matches are decided.",
+     "p": [
+      "If a knockout match is level, two halves of 15 minutes of extra time are often played.",
+      "If it is still level, a penalty shootout follows: five kicks each, then sudden death.",
+      "The 1994 World Cup final was the first to be decided on penalties, with Brazil beating Italy."
+     ],
+     "q": "Could you handle the pressure of taking a shootout penalty?",
+     "c": "Watch a shootout clip and track the score kick by kick on paper."
+    },
+    "de": {
+     "t": "Verlängerung und Elfmeterschießen",
+     "g": "Lerne, wie unentschiedene K.-o.-Spiele entschieden werden.",
+     "p": [
+      "Steht es im K.-o.-Spiel unentschieden, folgt oft eine Verlängerung von zweimal 15 Minuten.",
+      "Steht es dann noch gleich, gibt es Elfmeterschießen: je fünf Schüsse, dann Entscheidung Schuss um Schuss.",
+      "Das WM-Finale 1994 wurde als erstes im Elfmeterschießen entschieden: Brasilien schlug Italien."
+     ],
+     "q": "Würdest du den Druck im Elfmeterschießen aushalten?",
+     "c": "Schau dir ein Elfmeterschießen an und notiere den Stand Schuss für Schuss."
+    },
+    "es": {
+     "t": "Prórroga y tanda de penaltis",
+     "g": "Aprende cómo se decide un partido de eliminatoria empatado.",
+     "p": [
+      "Si una eliminatoria acaba en empate, a menudo se juega una prórroga de dos partes de 15 minutos.",
+      "Si sigue el empate, llega la tanda de penaltis: cinco por equipo y luego muerte súbita.",
+      "La final del Mundial de 1994 fue la primera decidida en penaltis: Brasil venció a Italia."
+     ],
+     "q": "¿Aguantarías la presión de tirar un penalti en una tanda?",
+     "c": "Mira una tanda de penaltis y apunta el marcador lanzamiento a lanzamiento."
+    },
+    "fr": {
+     "t": "Prolongation et tirs au but",
+     "g": "Découvre comment se décide un match à élimination directe resté nul.",
+     "p": [
+      "En cas d'égalité, on joue souvent une prolongation de deux fois 15 minutes.",
+      "Si l'égalité persiste, place aux tirs au but : cinq chacun, puis mort subite.",
+      "La finale de la Coupe du monde 1994 fut la première décidée aux tirs au but : le Brésil battit l'Italie."
+     ],
+     "q": "Supporterais-tu la pression d'un tir au but décisif ?",
+     "c": "Regarde une séance de tirs au but et note le score tir après tir."
+    },
+    "it": {
+     "t": "Supplementari e rigori",
+     "g": "Scopri come si decide una partita a eliminazione finita in parità.",
+     "p": [
+      "In caso di pareggio si giocano spesso due tempi supplementari da 15 minuti.",
+      "Se è ancora pari, si va ai rigori: cinque per parte, poi a oltranza.",
+      "La finale dei Mondiali 1994 fu la prima decisa ai rigori: il Brasile batté l'Italia."
+     ],
+     "q": "Reggeresti la pressione di un rigore decisivo?",
+     "c": "Guarda una serie di rigori e segna il punteggio tiro dopo tiro."
+    },
+    "pt": {
+     "t": "Prolongamento e desempate por penáltis",
+     "g": "Aprende como se decide um jogo a eliminar que acaba empatado.",
+     "p": [
+      "Em caso de empate, joga-se muitas vezes um prolongamento de duas partes de 15 minutos.",
+      "Se o empate continuar, há penáltis: cinco para cada equipa e depois morte súbita.",
+      "A final do Mundial de 1994 foi a primeira decidida nos penáltis: o Brasil venceu a Itália."
+     ],
+     "q": "Aguentavas a pressão de marcar um penálti no desempate?",
+     "c": "Vê um desempate por penáltis e aponta o resultado remate a remate."
+    },
+    "pt_BR": {
+     "t": "Prorrogação e disputa de pênaltis",
+     "g": "Aprenda como se decide um mata-mata que termina empatado.",
+     "p": [
+      "Se o mata-mata empatar, muitas vezes há prorrogação de dois tempos de 15 minutos.",
+      "Se o empate continuar, vem a disputa de pênaltis: cinco para cada time e depois alternadas.",
+      "A final da Copa de 1994 foi a primeira decidida nos pênaltis: o Brasil venceu a Itália."
+     ],
+     "q": "Você aguentaria a pressão de bater um pênalti na disputa?",
+     "c": "Veja uma disputa de pênaltis e anote o placar cobrança a cobrança."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leagues and cups",
+     "g": "Understand the difference between league tables and knockout competitions.",
+     "p": [
+      "In a league, every team plays every other team, usually home and away, and points decide the winner.",
+      "In a cup, losing a knockout tie sends you out, so surprises happen often.",
+      "England's FA Cup, first played in 1871-72, is the oldest national football competition."
+     ],
+     "q": "Do you prefer the long story of a league or the drama of a cup?",
+     "c": "Name one league and one cup competition you know, from any country."
+    },
+    "de": {
+     "t": "Ligen und Pokale",
+     "g": "Verstehe den Unterschied zwischen Ligatabelle und K.-o.-Wettbewerb.",
+     "p": [
+      "In einer Liga spielt jeder gegen jeden, meist mit Hin- und Rückspiel, und Punkte entscheiden.",
+      "Im Pokal fliegt raus, wer verliert, darum gibt es oft Überraschungen.",
+      "Der englische FA Cup, erstmals 1871/72 ausgetragen, ist der älteste nationale Fußballwettbewerb."
+     ],
+     "q": "Magst du lieber die lange Geschichte einer Liga oder das Drama im Pokal?",
+     "c": "Nenne eine Liga und einen Pokalwettbewerb aus einem beliebigen Land."
+    },
+    "es": {
+     "t": "Ligas y copas",
+     "g": "Entiende la diferencia entre una liga y una competición de eliminatorias.",
+     "p": [
+      "En una liga todos juegan contra todos, normalmente ida y vuelta, y los puntos deciden.",
+      "En una copa, quien pierde la eliminatoria queda fuera, por eso hay tantas sorpresas.",
+      "La FA Cup inglesa, disputada desde 1871-72, es la competición nacional de fútbol más antigua."
+     ],
+     "q": "¿Prefieres la larga historia de una liga o el drama de una copa?",
+     "c": "Nombra una liga y una copa que conozcas, de cualquier país."
+    },
+    "fr": {
+     "t": "Championnats et coupes",
+     "g": "Comprends la différence entre un championnat et une compétition à élimination.",
+     "p": [
+      "En championnat, chaque équipe affronte toutes les autres, souvent aller-retour, et les points décident.",
+      "En coupe, perdre un match élimine, d'où les nombreuses surprises.",
+      "La FA Cup anglaise, disputée depuis 1871-72, est la plus ancienne compétition nationale de foot."
+     ],
+     "q": "Tu préfères la longue histoire d'un championnat ou le suspense d'une coupe ?",
+     "c": "Cite un championnat et une coupe que tu connais, de n'importe quel pays."
+    },
+    "it": {
+     "t": "Campionati e coppe",
+     "g": "Capisci la differenza tra campionato e competizione a eliminazione.",
+     "p": [
+      "In un campionato tutti affrontano tutti, di solito andata e ritorno, e decidono i punti.",
+      "In coppa chi perde è eliminato, per questo le sorprese sono frequenti.",
+      "La FA Cup inglese, giocata dal 1871-72, è la competizione nazionale di calcio più antica."
+     ],
+     "q": "Preferisci la lunga storia di un campionato o il brivido di una coppa?",
+     "c": "Nomina un campionato e una coppa che conosci, di qualsiasi paese."
+    },
+    "pt": {
+     "t": "Ligas e taças",
+     "g": "Percebe a diferença entre um campeonato e uma competição a eliminar.",
+     "p": [
+      "Num campeonato, todos jogam contra todos, normalmente em casa e fora, e os pontos decidem.",
+      "Numa taça, quem perde a eliminatória sai, por isso há tantas surpresas.",
+      "A FA Cup inglesa, disputada desde 1871-72, é a competição nacional de futebol mais antiga."
+     ],
+     "q": "Preferes a longa história de um campeonato ou o drama de uma taça?",
+     "c": "Diz o nome de um campeonato e de uma taça que conheças, de qualquer país."
+    },
+    "pt_BR": {
+     "t": "Campeonatos e copas",
+     "g": "Entenda a diferença entre campeonato de pontos corridos e mata-mata.",
+     "p": [
+      "Nos pontos corridos, todos jogam contra todos, em geral ida e volta, e os pontos decidem.",
+      "Na copa, quem perde o mata-mata está fora, por isso as zebras são comuns.",
+      "A FA Cup inglesa, disputada desde 1871-72, é a competição nacional de futebol mais antiga."
+     ],
+     "q": "Você prefere a longa história de um campeonato ou a emoção de uma copa?",
+     "c": "Diga o nome de um campeonato e de uma copa que você conhece, de qualquer país."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How league tables work",
+     "g": "Read a league table like a pro: points, wins, draws and goal difference.",
+     "p": [
+      "A win earns three points, a draw one point and a defeat none.",
+      "Teams level on points are usually separated by goal difference: goals scored minus goals conceded.",
+      "England switched to three points for a win in 1981, and the World Cup followed in 1994."
+     ],
+     "q": "Why do you think a win is worth three points instead of two?",
+     "c": "Look at any league table and work out one team's goal difference yourself."
+    },
+    "de": {
+     "t": "So funktioniert eine Tabelle",
+     "g": "Lies eine Tabelle wie ein Profi: Punkte, Siege, Remis und Tordifferenz.",
+     "p": [
+      "Ein Sieg bringt drei Punkte, ein Unentschieden einen, eine Niederlage keinen.",
+      "Bei Punktgleichheit entscheidet meist die Tordifferenz: geschossene minus kassierte Tore.",
+      "England führte 1981 die Drei-Punkte-Regel ein, die WM folgte 1994."
+     ],
+     "q": "Warum ist ein Sieg wohl drei statt zwei Punkte wert?",
+     "c": "Schau dir eine Tabelle an und rechne die Tordifferenz eines Teams selbst aus."
+    },
+    "es": {
+     "t": "Cómo funciona la clasificación",
+     "g": "Lee una tabla como un experto: puntos, victorias, empates y diferencia de goles.",
+     "p": [
+      "Una victoria da tres puntos, un empate uno y una derrota ninguno.",
+      "Con empate a puntos se suele mirar la diferencia de goles, aunque algunas ligas miran antes el enfrentamiento directo.",
+      "Inglaterra adoptó los tres puntos por victoria en 1981 y el Mundial lo hizo en 1994."
+     ],
+     "q": "¿Por qué crees que ganar vale tres puntos y no dos?",
+     "c": "Mira una clasificación y calcula tú la diferencia de goles de un equipo."
+    },
+    "fr": {
+     "t": "Comment lire un classement",
+     "g": "Lis un classement comme un pro : points, victoires, nuls et différence de buts.",
+     "p": [
+      "Une victoire rapporte trois points, un nul un point et une défaite aucun.",
+      "À égalité de points, on regarde souvent la différence de buts : buts marqués moins buts encaissés.",
+      "L'Angleterre a adopté la victoire à trois points en 1981, la Coupe du monde en 1994."
+     ],
+     "q": "Pourquoi, selon toi, une victoire vaut-elle trois points et pas deux ?",
+     "c": "Regarde un classement et calcule toi-même la différence de buts d'une équipe."
+    },
+    "it": {
+     "t": "Come funziona la classifica",
+     "g": "Leggi una classifica da esperto: punti, vittorie, pareggi e differenza reti.",
+     "p": [
+      "Una vittoria vale tre punti, un pareggio uno, una sconfitta zero.",
+      "A pari punti contano spesso gli scontri diretti o la differenza reti: gol fatti meno gol subiti.",
+      "L'Inghilterra adottò i tre punti a vittoria nel 1981, i Mondiali nel 1994."
+     ],
+     "q": "Perché secondo te una vittoria vale tre punti e non due?",
+     "c": "Guarda una classifica e calcola tu la differenza reti di una squadra."
+    },
+    "pt": {
+     "t": "Como funciona a classificação",
+     "g": "Lê uma tabela como um especialista: pontos, vitórias, empates e diferença de golos.",
+     "p": [
+      "Uma vitória vale três pontos, um empate um e uma derrota nenhum.",
+      "Em caso de igualdade, conta muitas vezes a diferença de golos ou o confronto direto.",
+      "Inglaterra adotou os três pontos por vitória em 1981 e o Mundial em 1994."
+     ],
+     "q": "Porque achas que uma vitória vale três pontos e não dois?",
+     "c": "Vê uma tabela classificativa e calcula tu a diferença de golos de uma equipa."
+    },
+    "pt_BR": {
+     "t": "Como funciona a tabela",
+     "g": "Leia a tabela como um especialista: pontos, vitórias, empates e saldo de gols.",
+     "p": [
+      "Vitória vale três pontos, empate vale um e derrota não vale nada.",
+      "Em caso de empate em pontos, costuma contar o número de vitórias ou o saldo de gols.",
+      "A Inglaterra adotou os três pontos por vitória em 1981, e a Copa do Mundo em 1994."
+     ],
+     "q": "Por que você acha que a vitória vale três pontos e não dois?",
+     "c": "Olhe uma tabela e calcule você mesmo o saldo de gols de um time."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Football vocabulary, part 1",
+     "g": "Learn classic terms like clean sheet, brace, hat-trick and equaliser.",
+     "p": [
+      "A clean sheet means a team or keeper conceded no goals in a match.",
+      "A brace is two goals by one player; a hat-trick is three, a term borrowed from cricket.",
+      "An equaliser is the goal that levels the score."
+     ],
+     "q": "Which football word do you enjoy saying the most?",
+     "c": "Use two of today's words to describe a match you remember."
+    },
+    "de": {
+     "t": "Fußballvokabeln, Teil 1",
+     "g": "Lerne Begriffe wie zu null, Doppelpack, Hattrick und Ausgleich.",
+     "p": [
+      "Zu null spielen heißt: Das Team oder der Torwart kassiert kein Gegentor.",
+      "Ein Doppelpack sind zwei Tore eines Spielers, ein Hattrick drei, ein Begriff aus dem Cricket.",
+      "Der Ausgleich ist das Tor, das den Spielstand wieder ausgeglichen macht."
+     ],
+     "q": "Welches Fußballwort sagst du am liebsten?",
+     "c": "Beschreib ein Spiel, an das du dich erinnerst, mit zwei der heutigen Wörter."
+    },
+    "es": {
+     "t": "Vocabulario futbolero, parte 1",
+     "g": "Aprende términos clásicos como portería a cero, doblete, hat-trick y empate.",
+     "p": [
+      "Dejar la portería a cero significa no recibir ningún gol en un partido.",
+      "Un doblete son dos goles de un jugador; un hat-trick son tres, palabra tomada del críquet.",
+      "El gol del empate es el que iguala el marcador."
+     ],
+     "q": "¿Qué palabra futbolera te gusta más decir?",
+     "c": "Usa dos palabras de hoy para describir un partido que recuerdes."
+    },
+    "fr": {
+     "t": "Vocabulaire du foot, partie 1",
+     "g": "Apprends des termes classiques : clean sheet, doublé, triplé et égalisation.",
+     "p": [
+      "Garder sa cage inviolée signifie n'encaisser aucun but pendant un match.",
+      "Un doublé, ce sont deux buts d'un joueur ; un triplé ou hat-trick, trois, terme venu du cricket.",
+      "L'égalisation est le but qui remet les deux équipes à égalité."
+     ],
+     "q": "Quel mot du foot préfères-tu prononcer ?",
+     "c": "Utilise deux mots du jour pour décrire un match dont tu te souviens."
+    },
+    "it": {
+     "t": "Vocabolario del calcio, parte 1",
+     "g": "Impara termini classici come porta inviolata, doppietta, tripletta e pareggio.",
+     "p": [
+      "Porta inviolata, o clean sheet, significa non subire gol in una partita.",
+      "La doppietta sono due gol dello stesso giocatore; la tripletta, o hat-trick, tre, dal cricket.",
+      "Il gol del pareggio è quello che rimette il punteggio in parità."
+     ],
+     "q": "Quale parola del calcio ti piace di più dire?",
+     "c": "Usa due parole di oggi per descrivere una partita che ricordi."
+    },
+    "pt": {
+     "t": "Vocabulário do futebol, parte 1",
+     "g": "Aprende termos clássicos como baliza a zeros, bis, hat-trick e golo do empate.",
+     "p": [
+      "Manter a baliza a zeros significa não sofrer golos num jogo.",
+      "Um bis são dois golos do mesmo jogador; um hat-trick são três, termo que vem do críquete.",
+      "O golo do empate é o que iguala o marcador."
+     ],
+     "q": "Que palavra do futebol mais gostas de dizer?",
+     "c": "Usa duas palavras de hoje para descrever um jogo de que te lembres."
+    },
+    "pt_BR": {
+     "t": "Vocabulário do futebol, parte 1",
+     "g": "Aprenda termos clássicos como clean sheet, hat-trick e gol de empate.",
+     "p": [
+      "Clean sheet é quando o time ou o goleiro termina o jogo sem sofrer gols.",
+      "Dois gols de um jogador já é festa; três é um hat-trick, termo que vem do críquete.",
+      "O gol de empate é aquele que iguala o placar."
+     ],
+     "q": "Qual palavra do futebol você mais gosta de falar?",
+     "c": "Use duas palavras de hoje para descrever um jogo de que você se lembra."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Football vocabulary, part 2",
+     "g": "Learn fun terms like nutmeg, through ball, one-two and Panenka.",
+     "p": [
+      "A nutmeg is when you play the ball between an opponent's legs and collect it behind them.",
+      "A through ball splits the defence for a runner; a one-two is a quick give-and-go pass.",
+      "A Panenka is a gently chipped penalty, named after Antonín Panenka in the Euro 1976 final."
+     ],
+     "q": "Have you ever pulled off a nutmeg, or been nutmegged?",
+     "c": "Spot one through ball or one-two in a match clip today."
+    },
+    "de": {
+     "t": "Fußballvokabeln, Teil 2",
+     "g": "Lerne lustige Begriffe wie Tunnel, Steilpass, Doppelpass und Panenka.",
+     "p": [
+      "Beim Tunnel spielst du den Ball durch die Beine des Gegners und holst ihn dahinter.",
+      "Ein Steilpass schickt einen Mitspieler durch die Abwehr, ein Doppelpass ist ein schnelles Hin und Her.",
+      "Ein Panenka ist ein lässig gelupfter Elfmeter, benannt nach Antonín Panenka im EM-Finale 1976."
+     ],
+     "q": "Hast du schon mal jemanden getunnelt oder wurdest getunnelt?",
+     "c": "Entdecke heute in einem Spielausschnitt einen Steilpass oder Doppelpass."
+    },
+    "es": {
+     "t": "Vocabulario futbolero, parte 2",
+     "g": "Aprende términos divertidos como caño, pase al hueco, pared y penalti a lo Panenka.",
+     "p": [
+      "Un caño es pasar el balón entre las piernas del rival y recogerlo detrás.",
+      "El pase al hueco deja solo a un compañero; la pared es un pase rápido de ida y vuelta.",
+      "Un Panenka es un penalti picado suave, por Antonín Panenka en la final de la Eurocopa de 1976."
+     ],
+     "q": "¿Alguna vez has hecho un caño o te lo han hecho a ti?",
+     "c": "Busca hoy un pase al hueco o una pared en un vídeo de un partido."
+    },
+    "fr": {
+     "t": "Vocabulaire du foot, partie 2",
+     "g": "Apprends des termes amusants : petit pont, passe en profondeur, une-deux et panenka.",
+     "p": [
+      "Un petit pont, c'est faire passer le ballon entre les jambes de l'adversaire et le récupérer derrière.",
+      "La passe en profondeur lance un coéquipier dans le dos de la défense ; le une-deux est un échange rapide.",
+      "La panenka est un penalty piqué tout en douceur, du nom d'Antonín Panenka en finale de l'Euro 1976."
+     ],
+     "q": "As-tu déjà réussi un petit pont, ou en as-tu subi un ?",
+     "c": "Repère aujourd'hui une passe en profondeur ou un une-deux dans un extrait de match."
+    },
+    "it": {
+     "t": "Vocabolario del calcio, parte 2",
+     "g": "Impara termini divertenti come tunnel, filtrante, uno-due e cucchiaio.",
+     "p": [
+      "Il tunnel è far passare la palla tra le gambe dell'avversario e riprenderla dietro.",
+      "Il filtrante libera un compagno davanti alla porta; l'uno-due è un rapido scambio.",
+      "Il cucchiaio è un rigore a pallonetto, reso celebre da Antonín Panenka nella finale dell'Europeo 1976."
+     ],
+     "q": "Hai mai fatto un tunnel, o l'hai subito?",
+     "c": "Trova oggi un filtrante o un uno-due in un video di una partita."
+    },
+    "pt": {
+     "t": "Vocabulário do futebol, parte 2",
+     "g": "Aprende termos divertidos como cueca, passe de rutura, tabelinha e Panenka.",
+     "p": [
+      "Uma cueca é passar a bola entre as pernas do adversário e apanhá-la do outro lado.",
+      "O passe de rutura isola um colega na cara do golo; a tabelinha é um passe rápido de ida e volta.",
+      "Um Panenka é um penálti em chapéu suave, de Antonín Panenka na final do Europeu de 1976."
+     ],
+     "q": "Já fizeste uma cueca a alguém, ou já ta fizeram?",
+     "c": "Encontra hoje um passe de rutura ou uma tabelinha num vídeo de um jogo."
+    },
+    "pt_BR": {
+     "t": "Vocabulário do futebol, parte 2",
+     "g": "Aprenda termos divertidos como caneta, enfiada de bola, tabela e cavadinha.",
+     "p": [
+      "Caneta é passar a bola entre as pernas do adversário e pegá-la do outro lado.",
+      "A enfiada deixa um companheiro na cara do gol; a tabela é um passe rápido de ida e volta.",
+      "A cavadinha no pênalti ficou famosa com Antonín Panenka na final da Eurocopa de 1976."
+     ],
+     "q": "Você já deu uma caneta em alguém, ou já levou uma?",
+     "c": "Encontre hoje uma enfiada de bola ou uma tabela num vídeo de jogo."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a team to support",
+     "g": "Explore why people support the clubs they love.",
+     "p": [
+      "Many fans follow their local club or the team their family has always supported.",
+      "Others fall for a club because of a legendary player, a style of play or a famous kit.",
+      "Supporting a team is about belonging, shared joy and great stories, win or lose."
+     ],
+     "q": "Which team do you support, or which one would you like to follow?",
+     "c": "Find out one fun fact about the team you support or like."
+    },
+    "de": {
+     "t": "Ein Team zum Anfeuern wählen",
+     "g": "Entdecke, warum Menschen ihre Lieblingsvereine lieben.",
+     "p": [
+      "Viele Fans halten zum Verein ihrer Stadt oder zum Team, das schon die Familie liebt.",
+      "Andere verlieben sich wegen eines Stars, eines Spielstils oder eines Trikots in einen Club.",
+      "Fan sein heißt dazugehören, Freude teilen und Geschichten erleben, egal ob Sieg oder Niederlage."
+     ],
+     "q": "Welches Team unterstützt du, oder welchem würdest du gern folgen?",
+     "c": "Finde eine lustige Tatsache über das Team heraus, das du magst."
+    },
+    "es": {
+     "t": "Elegir un equipo",
+     "g": "Descubre por qué la gente apoya a los clubes que ama.",
+     "p": [
+      "Muchos aficionados siguen al club de su ciudad o al equipo de toda la vida de su familia.",
+      "Otros se enamoran de un club por un jugador mítico, un estilo de juego o una camiseta.",
+      "Ser de un equipo es sentirse parte de algo, compartir alegrías y vivir historias, se gane o se pierda."
+     ],
+     "q": "¿De qué equipo eres, o a cuál te gustaría seguir?",
+     "c": "Busca un dato curioso sobre el equipo que te gusta."
+    },
+    "fr": {
+     "t": "Choisir son équipe de cœur",
+     "g": "Découvre pourquoi les gens supportent les clubs qu'ils aiment.",
+     "p": [
+      "Beaucoup soutiennent le club de leur ville ou l'équipe que leur famille suit depuis toujours.",
+      "D'autres craquent pour un club grâce à un joueur de légende, un style de jeu ou un maillot.",
+      "Supporter une équipe, c'est appartenir à un groupe et partager joies et histoires, quel que soit le score."
+     ],
+     "q": "Quelle équipe soutiens-tu, ou laquelle aimerais-tu suivre ?",
+     "c": "Trouve une anecdote amusante sur l'équipe que tu aimes."
+    },
+    "it": {
+     "t": "Scegliere la squadra del cuore",
+     "g": "Scopri perché le persone tifano per i club che amano.",
+     "p": [
+      "Molti tifano la squadra della propria città o quella di famiglia da generazioni.",
+      "Altri si innamorano di un club per un campione, uno stile di gioco o una maglia.",
+      "Tifare significa appartenere, condividere gioie e vivere storie, che si vinca o si perda."
+     ],
+     "q": "Per quale squadra tifi, o quale ti piacerebbe seguire?",
+     "c": "Trova una curiosità divertente sulla squadra che ti piace."
+    },
+    "pt": {
+     "t": "Escolher um clube",
+     "g": "Descobre porque é que as pessoas apoiam os clubes que amam.",
+     "p": [
+      "Muitos adeptos apoiam o clube da sua terra ou o clube de sempre da família.",
+      "Outros apaixonam-se por um clube por causa de um jogador lendário, de um estilo ou de uma camisola.",
+      "Apoiar uma equipa é pertencer, partilhar alegrias e viver histórias, ganhe-se ou perca-se."
+     ],
+     "q": "De que clube és, ou qual gostavas de seguir?",
+     "c": "Descobre uma curiosidade divertida sobre o clube de que gostas."
+    },
+    "pt_BR": {
+     "t": "Escolher um time para torcer",
+     "g": "Descubra por que as pessoas torcem pelos times que amam.",
+     "p": [
+      "Muitos torcedores seguem o time da sua cidade ou o time de sempre da família.",
+      "Outros se apaixonam por um clube por causa de um craque, de um estilo de jogo ou de uma camisa.",
+      "Torcer é pertencer, dividir alegrias e viver histórias, ganhando ou perdendo."
+     ],
+     "q": "Para qual time você torce, ou qual gostaria de acompanhar?",
+     "c": "Descubra uma curiosidade divertida sobre o time de que você gosta."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: rules and roles",
+     "g": "Recap the first month of football basics.",
+     "p": [
+      "Eleven players per side, two halves of 45 minutes, and the most goals wins.",
+      "Restarts include kick-offs, throw-ins, goal kicks, corners, free kicks and penalties.",
+      "Offside, cards, VAR and advantage help keep the game fair and flowing."
+     ],
+     "q": "Which rule from this month surprised you the most?",
+     "c": "Explain offside or the penalty rule to someone without looking at your notes."
+    },
+    "de": {
+     "t": "Rückblick: Regeln und Rollen",
+     "g": "Wiederhole die Fußball-Grundlagen des ersten Monats.",
+     "p": [
+      "Elf Spieler pro Team, zwei Halbzeiten zu 45 Minuten, und wer mehr Tore schießt, gewinnt.",
+      "Fortsetzungen sind Anstoß, Einwurf, Abstoß, Ecke, Freistoß und Elfmeter.",
+      "Abseits, Karten, VAR und Vorteil sorgen für ein faires, flüssiges Spiel."
+     ],
+     "q": "Welche Regel aus diesem Monat hat dich am meisten überrascht?",
+     "c": "Erklär jemandem Abseits oder den Elfmeter, ohne in deine Notizen zu schauen."
+    },
+    "es": {
+     "t": "Repaso: reglas y posiciones",
+     "g": "Repasa lo básico del fútbol del primer mes.",
+     "p": [
+      "Once jugadores por equipo, dos partes de 45 minutos y gana quien marque más goles.",
+      "Las reanudaciones son saque inicial, de banda, de puerta, córner, tiro libre y penalti.",
+      "El fuera de juego, las tarjetas, el VAR y la ventaja mantienen el juego justo y fluido."
+     ],
+     "q": "¿Qué regla de este mes te sorprendió más?",
+     "c": "Explica a alguien el fuera de juego o el penalti sin mirar tus apuntes."
+    },
+    "fr": {
+     "t": "Révision : règles et rôles",
+     "g": "Récapitule les bases du foot vues ce premier mois.",
+     "p": [
+      "Onze joueurs par équipe, deux mi-temps de 45 minutes, et celui qui marque le plus gagne.",
+      "Les reprises : coup d'envoi, touche, six mètres, corner, coup franc et penalty.",
+      "Hors-jeu, cartons, VAR et avantage gardent le jeu juste et fluide."
+     ],
+     "q": "Quelle règle de ce mois t'a le plus surpris ?",
+     "c": "Explique le hors-jeu ou le penalty à quelqu'un sans regarder tes notes."
+    },
+    "it": {
+     "t": "Ripasso: regole e ruoli",
+     "g": "Ripassa le basi del calcio del primo mese.",
+     "p": [
+      "Undici giocatori per squadra, due tempi da 45 minuti, e vince chi segna di più.",
+      "Le riprese sono calcio d'inizio, rimessa laterale, rinvio dal fondo, corner, punizione e rigore.",
+      "Fuorigioco, cartellini, VAR e vantaggio rendono il gioco giusto e scorrevole."
+     ],
+     "q": "Quale regola di questo mese ti ha sorpreso di più?",
+     "c": "Spiega a qualcuno il fuorigioco o il rigore senza guardare gli appunti."
+    },
+    "pt": {
+     "t": "Revisão: regras e funções",
+     "g": "Revê o básico do futebol do primeiro mês.",
+     "p": [
+      "Onze jogadores por equipa, duas partes de 45 minutos, e ganha quem marcar mais golos.",
+      "Os recomeços são pontapé de saída, lançamento, pontapé de baliza, canto, livre e penálti.",
+      "O fora de jogo, os cartões, o VAR e a vantagem mantêm o jogo justo e fluido."
+     ],
+     "q": "Que regra deste mês mais te surpreendeu?",
+     "c": "Explica a alguém o fora de jogo ou o penálti sem olhar para os apontamentos."
+    },
+    "pt_BR": {
+     "t": "Revisão: regras e funções",
+     "g": "Revise o básico do futebol do primeiro mês.",
+     "p": [
+      "Onze jogadores por time, dois tempos de 45 minutos, e vence quem fizer mais gols.",
+      "Os reinícios são saída de bola, lateral, tiro de meta, escanteio, falta e pênalti.",
+      "Impedimento, cartões, VAR e vantagem deixam o jogo justo e fluido."
+     ],
+     "q": "Qual regra deste mês mais surpreendeu você?",
+     "c": "Explique a alguém o impedimento ou o pênalti sem olhar suas anotações."
+    }
+   }
+  }
+ ]
+}

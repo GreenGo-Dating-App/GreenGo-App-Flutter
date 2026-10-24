@@ -1,0 +1,835 @@
+{
+ "topic": "martial_arts",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What martial arts really are",
+     "g": "Discover martial arts as arts of movement, discipline and self-improvement.",
+     "p": [
+      "Martial arts are systems of movement and training that grew in many cultures over centuries.",
+      "Today most people practise them for health, focus, culture and personal growth.",
+      "Respect, patience and self-control sit at the heart of almost every tradition."
+     ],
+     "q": "When you hear the words martial arts, what images come to your mind first?",
+     "c": "Write down three words you connect with martial arts and keep them for later."
+    },
+    "de": {
+     "t": "Was Kampfkünste wirklich sind",
+     "g": "Entdecke Kampfkünste als Künste der Bewegung, Disziplin und Selbstverbesserung.",
+     "p": [
+      "Kampfkünste sind Bewegungs- und Trainingssysteme, die über Jahrhunderte in vielen Kulturen entstanden.",
+      "Heute üben die meisten sie für Gesundheit, Konzentration, Kultur und persönliches Wachstum.",
+      "Respekt, Geduld und Selbstbeherrschung stehen im Kern fast jeder Tradition."
+     ],
+     "q": "Welche Bilder kommen dir zuerst in den Sinn, wenn du das Wort Kampfkunst hörst?",
+     "c": "Schreib drei Wörter auf, die du mit Kampfkunst verbindest, und heb sie auf."
+    },
+    "es": {
+     "t": "Qué son realmente las artes marciales",
+     "g": "Descubre las artes marciales como artes de movimiento, disciplina y superación personal.",
+     "p": [
+      "Son sistemas de movimiento y entrenamiento que nacieron en muchas culturas a lo largo de siglos.",
+      "Hoy la mayoría las practica por salud, concentración, cultura y crecimiento personal.",
+      "El respeto, la paciencia y el autocontrol están en el corazón de casi todas las tradiciones."
+     ],
+     "q": "Cuando oyes artes marciales, ¿qué imágenes te vienen primero a la mente?",
+     "c": "Escribe tres palabras que asocies con las artes marciales y guárdalas para más adelante."
+    },
+    "fr": {
+     "t": "Ce que sont vraiment les arts martiaux",
+     "g": "Découvre les arts martiaux comme des arts du mouvement, de la discipline et du progrès personnel.",
+     "p": [
+      "Ce sont des systèmes de mouvement et d'entraînement nés dans de nombreuses cultures au fil des siècles.",
+      "Aujourd'hui, on les pratique surtout pour la santé, la concentration, la culture et l'épanouissement.",
+      "Le respect, la patience et la maîtrise de soi sont au cœur de presque toutes les traditions."
+     ],
+     "q": "Quand tu entends « arts martiaux », quelles images te viennent en premier ?",
+     "c": "Note trois mots que tu associes aux arts martiaux et garde-les pour plus tard."
+    },
+    "it": {
+     "t": "Cosa sono davvero le arti marziali",
+     "g": "Scopri le arti marziali come arti di movimento, disciplina e crescita personale.",
+     "p": [
+      "Sono sistemi di movimento e allenamento nati in molte culture nel corso dei secoli.",
+      "Oggi la maggior parte delle persone le pratica per salute, concentrazione, cultura e crescita.",
+      "Rispetto, pazienza e autocontrollo sono al centro di quasi tutte le tradizioni."
+     ],
+     "q": "Quando senti le parole arti marziali, quali immagini ti vengono in mente per prime?",
+     "c": "Scrivi tre parole che associ alle arti marziali e conservale per dopo."
+    },
+    "pt": {
+     "t": "O que são realmente as artes marciais",
+     "g": "Descobre as artes marciais como artes de movimento, disciplina e autossuperação.",
+     "p": [
+      "São sistemas de movimento e treino que nasceram em muitas culturas ao longo de séculos.",
+      "Hoje a maioria das pessoas pratica-as pela saúde, concentração, cultura e crescimento pessoal.",
+      "O respeito, a paciência e o autocontrolo estão no centro de quase todas as tradições."
+     ],
+     "q": "Quando ouves as palavras artes marciais, que imagens te vêm primeiro à cabeça?",
+     "c": "Escreve três palavras que associas às artes marciais e guarda-as para mais tarde."
+    },
+    "pt_BR": {
+     "t": "O que são de verdade as artes marciais",
+     "g": "Descubra as artes marciais como artes de movimento, disciplina e autossuperação.",
+     "p": [
+      "São sistemas de movimento e treino que surgiram em muitas culturas ao longo de séculos.",
+      "Hoje a maioria das pessoas pratica pela saúde, foco, cultura e crescimento pessoal.",
+      "Respeito, paciência e autocontrole estão no centro de quase todas as tradições."
+     ],
+     "q": "Quando você ouve as palavras artes marciais, que imagens vêm primeiro à sua cabeça?",
+     "c": "Anote três palavras que você associa às artes marciais e guarde para depois."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your martial arts story so far",
+     "g": "Reflect on what first sparked your interest in martial arts.",
+     "p": [
+      "Many people first meet martial arts through films, cartoons or a friend who trains.",
+      "Others discover them through a school club, a trip abroad or a local festival.",
+      "Your reasons for being curious are a great compass for choosing what to explore."
+     ],
+     "q": "What was your very first contact with martial arts, and how did it feel?",
+     "c": "Tell a friend or write one sentence about the moment martial arts caught your eye."
+    },
+    "de": {
+     "t": "Deine bisherige Kampfkunst-Geschichte",
+     "g": "Überlege, was dein Interesse an Kampfkünsten zuerst geweckt hat.",
+     "p": [
+      "Viele begegnen Kampfkünsten zuerst in Filmen, Zeichentrickserien oder über Freunde, die trainieren.",
+      "Andere entdecken sie in einer Schul-AG, auf einer Reise oder bei einem Fest vor Ort.",
+      "Die Gründe deiner Neugier sind ein guter Kompass bei der Wahl, was du erkunden willst."
+     ],
+     "q": "Was war dein allererster Kontakt mit Kampfkünsten, und wie hat er sich angefühlt?",
+     "c": "Erzähl jemandem davon oder schreib einen Satz über den Moment, der dein Interesse weckte."
+    },
+    "es": {
+     "t": "Tu historia con las artes marciales",
+     "g": "Reflexiona sobre qué despertó por primera vez tu interés por las artes marciales.",
+     "p": [
+      "Mucha gente las conoce por películas, dibujos animados o un amigo que entrena.",
+      "Otros las descubren en un club escolar, un viaje al extranjero o una fiesta local.",
+      "Los motivos de tu curiosidad son una gran brújula para elegir qué explorar."
+     ],
+     "q": "¿Cuál fue tu primer contacto con las artes marciales y qué sentiste?",
+     "c": "Cuéntale a alguien o escribe una frase sobre el momento en que te llamaron la atención."
+    },
+    "fr": {
+     "t": "Ton histoire avec les arts martiaux",
+     "g": "Réfléchis à ce qui a éveillé ton intérêt pour les arts martiaux.",
+     "p": [
+      "Beaucoup les découvrent grâce aux films, aux dessins animés ou à un ami qui s'entraîne.",
+      "D'autres les rencontrent dans un club scolaire, en voyage ou lors d'une fête locale.",
+      "Les raisons de ta curiosité sont une belle boussole pour choisir quoi explorer."
+     ],
+     "q": "Quel a été ton tout premier contact avec les arts martiaux, et qu'as-tu ressenti ?",
+     "c": "Raconte à un proche ou écris une phrase sur le moment où les arts martiaux t'ont attiré."
+    },
+    "it": {
+     "t": "La tua storia con le arti marziali",
+     "g": "Rifletti su cosa ha acceso per la prima volta il tuo interesse per le arti marziali.",
+     "p": [
+      "Molti le incontrano per la prima volta nei film, nei cartoni animati o tramite un amico che si allena.",
+      "Altri le scoprono in un club scolastico, in viaggio o durante una festa locale.",
+      "I motivi della tua curiosità sono un'ottima bussola per scegliere cosa esplorare."
+     ],
+     "q": "Qual è stato il tuo primissimo contatto con le arti marziali e cosa hai provato?",
+     "c": "Raccontalo a un amico o scrivi una frase sul momento in cui le arti marziali ti hanno colpito."
+    },
+    "pt": {
+     "t": "A tua história com as artes marciais",
+     "g": "Reflete sobre o que despertou primeiro o teu interesse pelas artes marciais.",
+     "p": [
+      "Muita gente conhece-as primeiro através de filmes, desenhos animados ou de um amigo que treina.",
+      "Outros descobrem-nas num clube da escola, numa viagem ou numa festa local.",
+      "As razões da tua curiosidade são uma ótima bússola para escolher o que explorar."
+     ],
+     "q": "Qual foi o teu primeiríssimo contacto com as artes marciais e o que sentiste?",
+     "c": "Conta a um amigo ou escreve uma frase sobre o momento em que as artes marciais te chamaram a atenção."
+    },
+    "pt_BR": {
+     "t": "Sua história com as artes marciais",
+     "g": "Reflita sobre o que despertou primeiro o seu interesse pelas artes marciais.",
+     "p": [
+      "Muita gente conhece as artes marciais por filmes, desenhos animados ou um amigo que treina.",
+      "Outros descobrem num clube da escola, numa viagem ou numa festa local.",
+      "Os motivos da sua curiosidade são uma ótima bússola para escolher o que explorar."
+     ],
+     "q": "Qual foi o seu primeiro contato com as artes marciais e como você se sentiu?",
+     "c": "Conte para alguém ou escreva uma frase sobre o momento em que as artes marciais chamaram sua atenção."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people practise martial arts",
+     "g": "Explore the many positive reasons people step onto the mat.",
+     "p": [
+      "Training builds fitness, coordination and balance in a fun and varied way.",
+      "Learning step by step trains focus and gives a calm, quiet confidence.",
+      "Clubs create friendships across ages and backgrounds, united by shared practice."
+     ],
+     "q": "Which of these benefits would matter most to you, and why?",
+     "c": "Pick one benefit from today and imagine how it could improve a normal day of yours."
+    },
+    "de": {
+     "t": "Warum Menschen Kampfkunst üben",
+     "g": "Entdecke die vielen positiven Gründe, warum Menschen auf die Matte gehen.",
+     "p": [
+      "Training stärkt Fitness, Koordination und Gleichgewicht auf spaßige, abwechslungsreiche Art.",
+      "Schritt für Schritt zu lernen schult die Konzentration und schenkt ruhiges Selbstvertrauen.",
+      "Vereine verbinden Menschen jeden Alters und jeder Herkunft durch gemeinsames Üben."
+     ],
+     "q": "Welcher dieser Vorteile wäre dir am wichtigsten, und warum?",
+     "c": "Wähl einen Vorteil von heute und stell dir vor, wie er deinen Alltag verbessern könnte."
+    },
+    "es": {
+     "t": "Por qué la gente practica artes marciales",
+     "g": "Explora los muchos motivos positivos por los que la gente sube al tatami.",
+     "p": [
+      "Entrenar mejora la forma física, la coordinación y el equilibrio de forma divertida y variada.",
+      "Aprender paso a paso entrena la concentración y da una confianza tranquila.",
+      "Los clubes crean amistades entre edades y orígenes distintos, unidos por la práctica."
+     ],
+     "q": "¿Cuál de estos beneficios sería el más importante para ti y por qué?",
+     "c": "Elige un beneficio de hoy e imagina cómo podría mejorar un día normal tuyo."
+    },
+    "fr": {
+     "t": "Pourquoi pratique-t-on les arts martiaux",
+     "g": "Explore les nombreuses raisons positives de monter sur le tapis.",
+     "p": [
+      "L'entraînement développe la forme, la coordination et l'équilibre de façon ludique et variée.",
+      "Apprendre pas à pas entraîne la concentration et apporte une confiance calme.",
+      "Les clubs créent des amitiés entre âges et origines, réunis par une pratique commune."
+     ],
+     "q": "Lequel de ces bienfaits compterait le plus pour toi, et pourquoi ?",
+     "c": "Choisis un bienfait du jour et imagine comment il pourrait améliorer une de tes journées."
+    },
+    "it": {
+     "t": "Perché si praticano le arti marziali",
+     "g": "Esplora i tanti motivi positivi per cui le persone salgono sul tatami.",
+     "p": [
+      "Allenarsi migliora forma fisica, coordinazione ed equilibrio in modo divertente e vario.",
+      "Imparare passo dopo passo allena la concentrazione e dona una sicurezza tranquilla.",
+      "I club creano amicizie tra età e provenienze diverse, unite dalla pratica comune."
+     ],
+     "q": "Quale di questi benefici sarebbe più importante per te, e perché?",
+     "c": "Scegli un beneficio di oggi e immagina come potrebbe migliorare una tua giornata normale."
+    },
+    "pt": {
+     "t": "Porque se praticam artes marciais",
+     "g": "Explora as muitas razões positivas que levam as pessoas ao tapete.",
+     "p": [
+      "Treinar melhora a forma física, a coordenação e o equilíbrio de forma divertida e variada.",
+      "Aprender passo a passo treina a concentração e dá uma confiança tranquila.",
+      "Os clubes criam amizades entre idades e origens diferentes, unidas pela prática."
+     ],
+     "q": "Qual destes benefícios seria o mais importante para ti, e porquê?",
+     "c": "Escolhe um benefício de hoje e imagina como poderia melhorar um dia normal teu."
+    },
+    "pt_BR": {
+     "t": "Por que as pessoas praticam artes marciais",
+     "g": "Explore os muitos motivos positivos que levam as pessoas ao tatame.",
+     "p": [
+      "Treinar melhora o condicionamento, a coordenação e o equilíbrio de um jeito divertido e variado.",
+      "Aprender passo a passo treina o foco e traz uma confiança tranquila.",
+      "As academias criam amizades entre idades e origens diferentes, unidas pela prática."
+     ],
+     "q": "Qual desses benefícios seria o mais importante para você, e por quê?",
+     "c": "Escolha um benefício de hoje e imagine como ele poderia melhorar um dia comum seu."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Myths about martial arts",
+     "g": "Learn why you do not need to be young, flexible or strong to begin.",
+     "p": [
+      "Many people start in their thirties, fifties or later and enjoy steady progress.",
+      "Flexibility and strength grow through training, so they are results, not entry tickets.",
+      "Good teachers adapt exercises to each body and welcome complete beginners."
+     ],
+     "q": "Which myth about martial arts did you believe before today?",
+     "c": "Tell someone one myth you now know is not true."
+    },
+    "de": {
+     "t": "Mythen über Kampfkünste",
+     "g": "Erfahre, warum du weder jung noch beweglich noch stark sein musst, um anzufangen.",
+     "p": [
+      "Viele beginnen mit dreißig, fünfzig oder später und freuen sich über stetige Fortschritte.",
+      "Beweglichkeit und Kraft wachsen durchs Training: Sie sind Ergebnis, keine Eintrittskarte.",
+      "Gute Lehrer passen Übungen an jeden Körper an und heißen Anfänger herzlich willkommen."
+     ],
+     "q": "Welchen Mythos über Kampfkünste hast du vor heute geglaubt?",
+     "c": "Erzähl jemandem von einem Mythos, von dem du jetzt weißt, dass er nicht stimmt."
+    },
+    "es": {
+     "t": "Mitos sobre las artes marciales",
+     "g": "Descubre por qué no necesitas ser joven, flexible ni fuerte para empezar.",
+     "p": [
+      "Mucha gente empieza a los treinta, a los cincuenta o más tarde y disfruta de un progreso constante.",
+      "La flexibilidad y la fuerza crecen entrenando: son resultados, no requisitos de entrada.",
+      "Los buenos profesores adaptan los ejercicios a cada cuerpo y acogen a principiantes totales."
+     ],
+     "q": "¿Qué mito sobre las artes marciales creías antes de hoy?",
+     "c": "Cuéntale a alguien un mito que ahora sabes que no es verdad."
+    },
+    "fr": {
+     "t": "Les idées reçues sur les arts martiaux",
+     "g": "Découvre pourquoi il n'est pas nécessaire d'être jeune, souple ou fort pour commencer.",
+     "p": [
+      "Beaucoup commencent à trente ans, cinquante ans ou plus et progressent avec plaisir.",
+      "La souplesse et la force viennent avec l'entraînement : ce sont des résultats, pas des prérequis.",
+      "Les bons enseignants adaptent les exercices à chaque corps et accueillent les vrais débutants."
+     ],
+     "q": "Quelle idée reçue sur les arts martiaux croyais-tu avant aujourd'hui ?",
+     "c": "Partage avec quelqu'un une idée reçue dont tu sais maintenant qu'elle est fausse."
+    },
+    "it": {
+     "t": "I miti sulle arti marziali",
+     "g": "Scopri perché non serve essere giovani, flessibili o forti per iniziare.",
+     "p": [
+      "Molte persone iniziano a trenta, cinquant'anni o più tardi e progrediscono con costanza.",
+      "Flessibilità e forza crescono allenandosi: sono risultati, non biglietti d'ingresso.",
+      "I bravi insegnanti adattano gli esercizi a ogni corpo e accolgono i principianti assoluti."
+     ],
+     "q": "Quale mito sulle arti marziali credevi vero prima di oggi?",
+     "c": "Racconta a qualcuno un mito che ora sai non essere vero."
+    },
+    "pt": {
+     "t": "Mitos sobre as artes marciais",
+     "g": "Descobre porque não precisas de ser jovem, flexível ou forte para começar.",
+     "p": [
+      "Muitas pessoas começam aos trinta, aos cinquenta ou mais tarde e progridem com gosto.",
+      "A flexibilidade e a força crescem com o treino: são resultados, não bilhetes de entrada.",
+      "Os bons professores adaptam os exercícios a cada corpo e acolhem principiantes totais."
+     ],
+     "q": "Que mito sobre as artes marciais acreditavas antes de hoje?",
+     "c": "Conta a alguém um mito que agora sabes que não é verdade."
+    },
+    "pt_BR": {
+     "t": "Mitos sobre as artes marciais",
+     "g": "Descubra por que você não precisa ser jovem, flexível ou forte para começar.",
+     "p": [
+      "Muita gente começa aos trinta, aos cinquenta ou mais tarde e evolui com prazer.",
+      "Flexibilidade e força crescem com o treino: são resultados, não ingressos de entrada.",
+      "Bons professores adaptam os exercícios a cada corpo e acolhem iniciantes totais."
+     ],
+     "q": "Em qual mito sobre artes marciais você acreditava antes de hoje?",
+     "c": "Conte para alguém um mito que agora você sabe que não é verdade."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A world map of martial arts",
+     "g": "Take a quick tour of the countries where famous martial arts were born.",
+     "p": [
+      "Japan gave us judo, karate and aikido, while China is home to kung fu and tai chi.",
+      "Korea developed taekwondo, Thailand Muay Thai and Brazil capoeira and Brazilian jiu-jitsu.",
+      "India has kalaripayattu and the Philippines has arnis, also called eskrima or kali."
+     ],
+     "q": "Which country on this map would you most like to visit to see its martial art?",
+     "c": "Find three of these countries on a map and say the art born in each one aloud."
+    },
+    "de": {
+     "t": "Eine Weltkarte der Kampfkünste",
+     "g": "Mach eine kurze Reise zu den Ländern, in denen berühmte Kampfkünste entstanden.",
+     "p": [
+      "Japan schenkte uns Judo, Karate und Aikido, China ist die Heimat von Kung Fu und Tai Chi.",
+      "Korea entwickelte Taekwondo, Thailand Muay Thai, Brasilien Capoeira und Brazilian Jiu-Jitsu.",
+      "Indien hat Kalaripayattu, die Philippinen haben Arnis, auch Eskrima oder Kali genannt."
+     ],
+     "q": "Welches Land dieser Karte würdest du am liebsten besuchen, um seine Kampfkunst zu sehen?",
+     "c": "Such drei dieser Länder auf einer Karte und nenn laut die Kampfkunst, die dort entstand."
+    },
+    "es": {
+     "t": "Un mapa mundial de las artes marciales",
+     "g": "Haz un recorrido rápido por los países donde nacieron artes marciales famosas.",
+     "p": [
+      "Japón nos dio el judo, el kárate y el aikido; China es la cuna del kung fu y el taichí.",
+      "Corea creó el taekwondo, Tailandia el muay thai y Brasil la capoeira y el jiu-jitsu brasileño.",
+      "India tiene el kalaripayattu y Filipinas el arnis, también llamado eskrima o kali."
+     ],
+     "q": "¿Qué país de este mapa te gustaría más visitar para ver su arte marcial?",
+     "c": "Busca tres de estos países en un mapa y di en voz alta el arte nacido en cada uno."
+    },
+    "fr": {
+     "t": "Une carte du monde des arts martiaux",
+     "g": "Fais un petit tour des pays où sont nés des arts martiaux célèbres.",
+     "p": [
+      "Le Japon nous a donné le judo, le karaté et l'aïkido ; la Chine, le kung-fu et le tai-chi.",
+      "La Corée a créé le taekwondo, la Thaïlande la boxe thaïe, le Brésil la capoeira et le jiu-jitsu brésilien.",
+      "L'Inde a le kalaripayatt et les Philippines l'arnis, aussi appelé eskrima ou kali."
+     ],
+     "q": "Quel pays de cette carte aimerais-tu le plus visiter pour découvrir son art martial ?",
+     "c": "Trouve trois de ces pays sur une carte et dis à voix haute l'art né dans chacun."
+    },
+    "it": {
+     "t": "Una mappa mondiale delle arti marziali",
+     "g": "Fai un breve giro tra i paesi dove sono nate arti marziali famose.",
+     "p": [
+      "Il Giappone ci ha dato judo, karate e aikido; la Cina è la patria del kung fu e del tai chi.",
+      "La Corea ha creato il taekwondo, la Thailandia la muay thai, il Brasile capoeira e jiu-jitsu brasiliano.",
+      "L'India ha il kalaripayattu e le Filippine l'arnis, chiamato anche eskrima o kali."
+     ],
+     "q": "Quale paese di questa mappa vorresti visitare di più per vedere la sua arte marziale?",
+     "c": "Trova tre di questi paesi su una mappa e pronuncia ad alta voce l'arte nata in ciascuno."
+    },
+    "pt": {
+     "t": "Um mapa-múndi das artes marciais",
+     "g": "Faz uma viagem rápida pelos países onde nasceram artes marciais famosas.",
+     "p": [
+      "O Japão deu-nos o judo, o karaté e o aikido; a China é a casa do kung fu e do tai chi.",
+      "A Coreia criou o taekwondo, a Tailândia o muay thai e o Brasil a capoeira e o jiu-jitsu brasileiro.",
+      "A Índia tem o kalaripayattu e as Filipinas o arnis, também chamado eskrima ou kali."
+     ],
+     "q": "Que país deste mapa gostarias mais de visitar para ver a sua arte marcial?",
+     "c": "Procura três destes países num mapa e diz em voz alta a arte nascida em cada um."
+    },
+    "pt_BR": {
+     "t": "Um mapa-múndi das artes marciais",
+     "g": "Faça uma viagem rápida pelos países onde nasceram artes marciais famosas.",
+     "p": [
+      "O Japão nos deu o judô, o caratê e o aikidô; a China é o lar do kung fu e do tai chi.",
+      "A Coreia criou o taekwondo, a Tailândia o muay thai e o Brasil a capoeira e o jiu-jítsu brasileiro.",
+      "A Índia tem o kalaripayattu e as Filipinas o arnis, também chamado eskrima ou kali."
+     ],
+     "q": "Qual país desse mapa você mais gostaria de visitar para ver sua arte marcial?",
+     "c": "Procure três desses países num mapa e diga em voz alta a arte nascida em cada um."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Striking, grappling and forms",
+     "g": "Meet the three broad families that most martial arts belong to.",
+     "p": [
+      "Striking arts like karate and taekwondo focus on precise hand and foot techniques.",
+      "Grappling arts like judo and jiu-jitsu focus on balance, leverage, throws and holds.",
+      "Forms-based practice, like tai chi, centres on flowing sequences performed solo."
+     ],
+     "q": "Which family sounds most interesting to you right now?",
+     "c": "Watch a short clip of any art and decide which family it mostly belongs to."
+    },
+    "de": {
+     "t": "Schlagen, Ringen und Formen",
+     "g": "Lerne die drei großen Familien kennen, zu denen die meisten Kampfkünste gehören.",
+     "p": [
+      "Schlagkünste wie Karate und Taekwondo setzen auf präzise Hand- und Fußtechniken.",
+      "Griffkünste wie Judo und Jiu-Jitsu setzen auf Gleichgewicht, Hebel, Würfe und Haltegriffe.",
+      "Formenbasierte Praxis wie Tai Chi dreht sich um fließende Abläufe, die man allein übt."
+     ],
+     "q": "Welche Familie klingt für dich gerade am spannendsten?",
+     "c": "Schau einen kurzen Clip einer Kampfkunst und entscheide, zu welcher Familie sie gehört."
+    },
+    "es": {
+     "t": "Golpeo, agarre y formas",
+     "g": "Conoce las tres grandes familias a las que pertenecen la mayoría de las artes marciales.",
+     "p": [
+      "Las artes de golpeo, como el kárate y el taekwondo, se centran en técnicas precisas de mano y pie.",
+      "Las de agarre, como el judo y el jiu-jitsu, se centran en equilibrio, palanca, proyecciones y controles.",
+      "La práctica de formas, como el taichí, gira en torno a secuencias fluidas que se hacen en solitario."
+     ],
+     "q": "¿Qué familia te parece más interesante ahora mismo?",
+     "c": "Mira un vídeo corto de cualquier arte y decide a qué familia pertenece sobre todo."
+    },
+    "fr": {
+     "t": "Percussion, saisie et formes",
+     "g": "Découvre les trois grandes familles auxquelles appartiennent la plupart des arts martiaux.",
+     "p": [
+      "Les arts de percussion comme le karaté et le taekwondo misent sur des techniques précises des mains et des pieds.",
+      "Les arts de saisie comme le judo et le jiu-jitsu misent sur l'équilibre, le levier, les projections et contrôles.",
+      "La pratique des formes, comme le tai-chi, repose sur des enchaînements fluides réalisés seul."
+     ],
+     "q": "Quelle famille te semble la plus intéressante en ce moment ?",
+     "c": "Regarde une courte vidéo d'un art et décide à quelle famille il appartient surtout."
+    },
+    "it": {
+     "t": "Percussione, presa e forme",
+     "g": "Conosci le tre grandi famiglie a cui appartiene la maggior parte delle arti marziali.",
+     "p": [
+      "Le arti di percussione come karate e taekwondo puntano su tecniche precise di mani e piedi.",
+      "Le arti di presa come judo e jiu-jitsu puntano su equilibrio, leva, proiezioni e controlli.",
+      "La pratica delle forme, come il tai chi, ruota attorno a sequenze fluide eseguite da soli."
+     ],
+     "q": "Quale famiglia ti sembra più interessante in questo momento?",
+     "c": "Guarda un breve video di un'arte e decidi a quale famiglia appartiene soprattutto."
+    },
+    "pt": {
+     "t": "Percussão, agarre e formas",
+     "g": "Conhece as três grandes famílias a que pertence a maioria das artes marciais.",
+     "p": [
+      "As artes de percussão, como o karaté e o taekwondo, focam-se em técnicas precisas de mãos e pés.",
+      "As de agarre, como o judo e o jiu-jitsu, focam-se no equilíbrio, alavanca, projeções e imobilizações.",
+      "A prática de formas, como o tai chi, centra-se em sequências fluidas feitas a solo."
+     ],
+     "q": "Que família te parece mais interessante neste momento?",
+     "c": "Vê um vídeo curto de qualquer arte e decide a que família pertence sobretudo."
+    },
+    "pt_BR": {
+     "t": "Golpes, agarramento e formas",
+     "g": "Conheça as três grandes famílias às quais pertence a maioria das artes marciais.",
+     "p": [
+      "Artes de golpes, como caratê e taekwondo, focam em técnicas precisas de mãos e pés.",
+      "Artes de agarramento, como judô e jiu-jítsu, focam em equilíbrio, alavanca, projeções e imobilizações.",
+      "A prática de formas, como o tai chi, gira em torno de sequências fluidas feitas sozinho."
+     ],
+     "q": "Qual família parece mais interessante para você agora?",
+     "c": "Assista a um vídeo curto de qualquer arte e decida a qual família ela pertence mais."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Internal and external styles",
+     "g": "Understand the classic Chinese idea of internal and external martial arts.",
+     "p": [
+      "External styles train speed, power and visible athletic movement, like many Shaolin styles.",
+      "Internal styles, such as tai chi, xingyiquan and baguazhang, stress calm, breath and relaxed power.",
+      "Most teachers agree both paths meet in the end: body and mind trained together."
+     ],
+     "q": "Do you feel drawn more to soft and calm or to dynamic and energetic practice?",
+     "c": "Move one arm very slowly for one minute, then quickly for ten seconds, and notice the difference."
+    },
+    "de": {
+     "t": "Innere und äußere Stile",
+     "g": "Verstehe die klassische chinesische Idee von inneren und äußeren Kampfkünsten.",
+     "p": [
+      "Äußere Stile trainieren Tempo, Kraft und sichtbare Athletik, etwa viele Shaolin-Stile.",
+      "Innere Stile wie Tai Chi, Xingyiquan und Baguazhang betonen Ruhe, Atem und entspannte Kraft.",
+      "Viele Lehrer sagen, beide Wege treffen sich am Ende: Körper und Geist werden gemeinsam geschult."
+     ],
+     "q": "Zieht es dich eher zu sanfter, ruhiger oder zu dynamischer, energiegeladener Praxis?",
+     "c": "Bewege einen Arm eine Minute lang ganz langsam, dann zehn Sekunden schnell, und spür den Unterschied."
+    },
+    "es": {
+     "t": "Estilos internos y externos",
+     "g": "Comprende la idea clásica china de las artes marciales internas y externas.",
+     "p": [
+      "Los estilos externos entrenan velocidad, potencia y movimiento atlético visible, como muchos de Shaolin.",
+      "Los internos, como el taichí, el xingyiquan y el baguazhang, destacan la calma, la respiración y la fuerza relajada.",
+      "Muchos maestros dicen que ambos caminos se encuentran: cuerpo y mente entrenados juntos."
+     ],
+     "q": "¿Te atrae más una práctica suave y tranquila o una dinámica y enérgica?",
+     "c": "Mueve un brazo muy despacio durante un minuto y luego rápido diez segundos; nota la diferencia."
+    },
+    "fr": {
+     "t": "Styles internes et externes",
+     "g": "Comprends l'idée chinoise classique des arts martiaux internes et externes.",
+     "p": [
+      "Les styles externes travaillent vitesse, puissance et mouvement athlétique visible, comme bien des styles Shaolin.",
+      "Les styles internes, comme le tai-chi, le xingyiquan et le baguazhang, privilégient calme, souffle et force détendue.",
+      "Beaucoup de maîtres disent que les deux voies se rejoignent : corps et esprit entraînés ensemble."
+     ],
+     "q": "Es-tu plutôt attiré par une pratique douce et calme ou dynamique et énergique ?",
+     "c": "Bouge un bras très lentement pendant une minute, puis vite dix secondes, et observe la différence."
+    },
+    "it": {
+     "t": "Stili interni ed esterni",
+     "g": "Comprendi la classica idea cinese di arti marziali interne ed esterne.",
+     "p": [
+      "Gli stili esterni allenano velocità, potenza e movimento atletico visibile, come molti stili Shaolin.",
+      "Gli stili interni, come tai chi, xingyiquan e baguazhang, curano calma, respiro e forza rilassata.",
+      "Molti maestri dicono che le due vie alla fine si incontrano: corpo e mente allenati insieme."
+     ],
+     "q": "Ti attira di più una pratica morbida e calma o una dinamica ed energica?",
+     "c": "Muovi un braccio lentissimo per un minuto, poi veloce per dieci secondi, e nota la differenza."
+    },
+    "pt": {
+     "t": "Estilos internos e externos",
+     "g": "Compreende a ideia chinesa clássica de artes marciais internas e externas.",
+     "p": [
+      "Os estilos externos treinam velocidade, potência e movimento atlético visível, como muitos estilos Shaolin.",
+      "Os internos, como o tai chi, o xingyiquan e o baguazhang, valorizam a calma, a respiração e a força relaxada.",
+      "Muitos mestres dizem que os dois caminhos se encontram: corpo e mente treinados juntos."
+     ],
+     "q": "Sentes-te mais atraído por uma prática suave e calma ou dinâmica e enérgica?",
+     "c": "Move um braço muito devagar durante um minuto e depois depressa dez segundos; nota a diferença."
+    },
+    "pt_BR": {
+     "t": "Estilos internos e externos",
+     "g": "Entenda a ideia chinesa clássica de artes marciais internas e externas.",
+     "p": [
+      "Estilos externos treinam velocidade, potência e movimento atlético visível, como muitos estilos Shaolin.",
+      "Os internos, como tai chi, xingyiquan e baguazhang, valorizam calma, respiração e força relaxada.",
+      "Muitos mestres dizem que os dois caminhos se encontram: corpo e mente treinados juntos."
+     ],
+     "q": "Você se sente mais atraído por uma prática suave e calma ou dinâmica e enérgica?",
+     "c": "Mova um braço bem devagar por um minuto e depois rápido por dez segundos; note a diferença."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sport, tradition and health",
+     "g": "See how arts can lean towards competition, heritage or wellbeing.",
+     "p": [
+      "Sport-focused arts like judo and taekwondo have rules, referees and Olympic events.",
+      "Traditional arts preserve old forms, customs and history passed from teacher to student.",
+      "Health-focused practice, like much tai chi, aims at balance, mobility and calm."
+     ],
+     "q": "Which of these three directions fits your personality best?",
+     "c": "Write down one art for each direction: sport, tradition and health."
+    },
+    "de": {
+     "t": "Sport, Tradition und Gesundheit",
+     "g": "Sieh, wie Kampfkünste zu Wettkampf, Erbe oder Wohlbefinden tendieren können.",
+     "p": [
+      "Sportlich ausgerichtete Künste wie Judo und Taekwondo haben Regeln, Kampfrichter und Olympia-Disziplinen.",
+      "Traditionelle Künste bewahren alte Formen, Bräuche und Geschichte, weitergegeben vom Lehrer an den Schüler.",
+      "Gesundheitsorientierte Praxis, wie oft beim Tai Chi, zielt auf Gleichgewicht, Beweglichkeit und Ruhe."
+     ],
+     "q": "Welche dieser drei Richtungen passt am besten zu deiner Persönlichkeit?",
+     "c": "Schreib zu jeder Richtung eine Kampfkunst auf: Sport, Tradition und Gesundheit."
+    },
+    "es": {
+     "t": "Deporte, tradición y salud",
+     "g": "Mira cómo las artes pueden inclinarse hacia la competición, el patrimonio o el bienestar.",
+     "p": [
+      "Las artes deportivas como el judo y el taekwondo tienen reglas, árbitros y pruebas olímpicas.",
+      "Las tradicionales conservan formas, costumbres e historia transmitidas de maestro a alumno.",
+      "La práctica orientada a la salud, como gran parte del taichí, busca equilibrio, movilidad y calma."
+     ],
+     "q": "¿Cuál de estas tres direcciones encaja mejor con tu personalidad?",
+     "c": "Escribe un arte para cada dirección: deporte, tradición y salud."
+    },
+    "fr": {
+     "t": "Sport, tradition et santé",
+     "g": "Vois comment un art peut pencher vers la compétition, le patrimoine ou le bien-être.",
+     "p": [
+      "Les arts sportifs comme le judo et le taekwondo ont des règles, des arbitres et des épreuves olympiques.",
+      "Les arts traditionnels préservent formes, coutumes et histoire transmises de maître à élève.",
+      "La pratique axée santé, comme souvent le tai-chi, vise l'équilibre, la mobilité et le calme."
+     ],
+     "q": "Laquelle de ces trois directions correspond le mieux à ta personnalité ?",
+     "c": "Note un art pour chaque direction : sport, tradition et santé."
+    },
+    "it": {
+     "t": "Sport, tradizione e salute",
+     "g": "Scopri come le arti possono puntare su competizione, eredità culturale o benessere.",
+     "p": [
+      "Le arti sportive come judo e taekwondo hanno regole, arbitri e gare olimpiche.",
+      "Le arti tradizionali conservano forme, usanze e storia tramandate da maestro ad allievo.",
+      "La pratica per la salute, come gran parte del tai chi, mira a equilibrio, mobilità e calma."
+     ],
+     "q": "Quale di queste tre direzioni si adatta meglio alla tua personalità?",
+     "c": "Scrivi un'arte per ogni direzione: sport, tradizione e salute."
+    },
+    "pt": {
+     "t": "Desporto, tradição e saúde",
+     "g": "Vê como as artes podem pender para a competição, o património ou o bem-estar.",
+     "p": [
+      "As artes desportivas, como o judo e o taekwondo, têm regras, árbitros e provas olímpicas.",
+      "As tradicionais preservam formas, costumes e história passados de mestre para aluno.",
+      "A prática virada para a saúde, como grande parte do tai chi, procura equilíbrio, mobilidade e calma."
+     ],
+     "q": "Qual destas três direções combina melhor com a tua personalidade?",
+     "c": "Escreve uma arte para cada direção: desporto, tradição e saúde."
+    },
+    "pt_BR": {
+     "t": "Esporte, tradição e saúde",
+     "g": "Veja como as artes podem tender para a competição, a herança cultural ou o bem-estar.",
+     "p": [
+      "Artes esportivas, como judô e taekwondo, têm regras, árbitros e provas olímpicas.",
+      "As tradicionais preservam formas, costumes e história passados de mestre para aluno.",
+      "A prática voltada à saúde, como boa parte do tai chi, busca equilíbrio, mobilidade e calma."
+     ],
+     "q": "Qual dessas três direções combina mais com a sua personalidade?",
+     "c": "Anote uma arte para cada direção: esporte, tradição e saúde."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Karate at a glance",
+     "g": "Get to know karate, the art from Okinawa known for clear stances and kata.",
+     "p": [
+      "Karate grew on Okinawa, influenced by Chinese arts, and its name means empty hand.",
+      "Gichin Funakoshi helped bring karate to mainland Japan in the 1920s.",
+      "Training mixes basics called kihon, forms called kata and controlled partner work called kumite."
+     ],
+     "q": "What do you think the idea of an empty hand says about karate's spirit?",
+     "c": "Look up where Okinawa is on a map and picture the islands where karate grew."
+    },
+    "de": {
+     "t": "Karate auf einen Blick",
+     "g": "Lerne Karate kennen, die Kunst aus Okinawa mit klaren Ständen und Kata.",
+     "p": [
+      "Karate entstand auf Okinawa unter chinesischem Einfluss; der Name bedeutet leere Hand.",
+      "Gichin Funakoshi brachte Karate in den 1920er-Jahren auf die japanischen Hauptinseln.",
+      "Das Training verbindet Grundtechniken (Kihon), Formen (Kata) und kontrollierte Partnerübungen (Kumite)."
+     ],
+     "q": "Was sagt die Idee der leeren Hand deiner Meinung nach über den Geist des Karate?",
+     "c": "Such Okinawa auf einer Karte und stell dir die Inseln vor, auf denen Karate entstand."
+    },
+    "es": {
+     "t": "El kárate de un vistazo",
+     "g": "Conoce el kárate, el arte de Okinawa famoso por sus posiciones claras y sus katas.",
+     "p": [
+      "El kárate nació en Okinawa con influencia de artes chinas, y su nombre significa mano vacía.",
+      "Gichin Funakoshi ayudó a llevar el kárate a las islas principales de Japón en los años veinte.",
+      "Se entrena con técnica básica (kihon), formas (kata) y trabajo controlado en pareja (kumite)."
+     ],
+     "q": "¿Qué crees que dice la idea de una mano vacía sobre el espíritu del kárate?",
+     "c": "Busca Okinawa en un mapa e imagina las islas donde nació el kárate."
+    },
+    "fr": {
+     "t": "Le karaté en un coup d'œil",
+     "g": "Découvre le karaté, l'art d'Okinawa connu pour ses positions nettes et ses kata.",
+     "p": [
+      "Le karaté est né à Okinawa sous l'influence d'arts chinois ; son nom signifie main vide.",
+      "Gichin Funakoshi a contribué à l'introduire au Japon continental dans les années 1920.",
+      "L'entraînement mêle bases (kihon), formes (kata) et travail contrôlé à deux (kumite)."
+     ],
+     "q": "Selon toi, que dit l'idée de main vide sur l'esprit du karaté ?",
+     "c": "Cherche Okinawa sur une carte et imagine les îles où le karaté est né."
+    },
+    "it": {
+     "t": "Il karate in breve",
+     "g": "Conosci il karate, l'arte di Okinawa famosa per posizioni nitide e kata.",
+     "p": [
+      "Il karate nacque a Okinawa con influenze cinesi, e il suo nome significa mano vuota.",
+      "Gichin Funakoshi contribuì a portarlo nel Giappone continentale negli anni Venti.",
+      "L'allenamento unisce tecniche di base (kihon), forme (kata) e lavoro controllato in coppia (kumite)."
+     ],
+     "q": "Secondo te, cosa dice l'idea di mano vuota sullo spirito del karate?",
+     "c": "Cerca Okinawa su una mappa e immagina le isole dove è nato il karate."
+    },
+    "pt": {
+     "t": "O karaté num relance",
+     "g": "Conhece o karaté, a arte de Okinawa conhecida pelas posições claras e pelos kata.",
+     "p": [
+      "O karaté nasceu em Okinawa com influência de artes chinesas, e o nome significa mão vazia.",
+      "Gichin Funakoshi ajudou a levá-lo para as ilhas principais do Japão nos anos 1920.",
+      "O treino junta técnica de base (kihon), formas (kata) e trabalho controlado a pares (kumite)."
+     ],
+     "q": "O que achas que a ideia de mão vazia diz sobre o espírito do karaté?",
+     "c": "Procura Okinawa num mapa e imagina as ilhas onde o karaté nasceu."
+    },
+    "pt_BR": {
+     "t": "O caratê num relance",
+     "g": "Conheça o caratê, a arte de Okinawa famosa por bases claras e katas.",
+     "p": [
+      "O caratê nasceu em Okinawa com influência de artes chinesas, e o nome significa mão vazia.",
+      "Gichin Funakoshi ajudou a levar o caratê para as ilhas principais do Japão nos anos 1920.",
+      "O treino une técnica básica (kihon), formas (kata) e trabalho controlado em dupla (kumite)."
+     ],
+     "q": "O que você acha que a ideia de mão vazia diz sobre o espírito do caratê?",
+     "c": "Procure Okinawa num mapa e imagine as ilhas onde o caratê nasceu."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Judo at a glance",
+     "g": "Meet judo, the gentle way, founded in Japan in 1882.",
+     "p": [
+      "Jigoro Kano founded judo at the Kodokan in Tokyo in 1882, building on older jujutsu.",
+      "Its two core ideas are maximum efficiency and mutual welfare and benefit.",
+      "Judo became an Olympic sport at the 1964 Tokyo Games and is practised worldwide."
+     ],
+     "q": "How could the idea of mutual welfare apply to your work, studies or friendships?",
+     "c": "Try to stand on one foot for thirty seconds while breathing calmly, like a judoka keeping balance."
+    },
+    "de": {
+     "t": "Judo auf einen Blick",
+     "g": "Lerne Judo kennen, den sanften Weg, 1882 in Japan gegründet.",
+     "p": [
+      "Jigoro Kano gründete Judo 1882 im Kodokan in Tokio, aufbauend auf älterem Jujutsu.",
+      "Seine zwei Kernideen sind bestmöglicher Einsatz der Kraft und gegenseitiges Wohlergehen.",
+      "Judo wurde bei den Spielen 1964 in Tokio olympisch und wird weltweit geübt."
+     ],
+     "q": "Wie könnte die Idee des gegenseitigen Wohlergehens in Arbeit, Studium oder Freundschaft helfen?",
+     "c": "Steh dreißig Sekunden auf einem Bein und atme ruhig, wie ein Judoka, der sein Gleichgewicht hält."
+    },
+    "es": {
+     "t": "El judo de un vistazo",
+     "g": "Conoce el judo, el camino suave, fundado en Japón en 1882.",
+     "p": [
+      "Jigoro Kano fundó el judo en el Kodokan de Tokio en 1882, a partir del antiguo jujutsu.",
+      "Sus dos ideas clave son la máxima eficacia y el bienestar y beneficio mutuo.",
+      "El judo se volvió deporte olímpico en Tokio 1964 y se practica en todo el mundo."
+     ],
+     "q": "¿Cómo podría aplicarse la idea del beneficio mutuo a tu trabajo, estudios o amistades?",
+     "c": "Mantente sobre un pie treinta segundos respirando con calma, como un judoca que guarda el equilibrio."
+    },
+    "fr": {
+     "t": "Le judo en un coup d'œil",
+     "g": "Découvre le judo, la voie de la souplesse, fondé au Japon en 1882.",
+     "p": [
+      "Jigoro Kano a fondé le judo au Kodokan de Tokyo en 1882, à partir de l'ancien jujutsu.",
+      "Ses deux idées clés : la meilleure utilisation de l'énergie et l'entraide pour le progrès mutuel.",
+      "Le judo est devenu olympique aux Jeux de Tokyo en 1964 et se pratique partout dans le monde."
+     ],
+     "q": "Comment l'idée d'entraide pourrait-elle s'appliquer à ton travail, tes études ou tes amitiés ?",
+     "c": "Tiens-toi sur un pied trente secondes en respirant calmement, comme un judoka qui garde l'équilibre."
+    },
+    "it": {
+     "t": "Il judo in breve",
+     "g": "Conosci il judo, la via della cedevolezza, fondato in Giappone nel 1882.",
+     "p": [
+      "Jigoro Kano fondò il judo al Kodokan di Tokyo nel 1882, partendo dall'antico jujutsu.",
+      "Le sue due idee chiave sono la massima efficacia e il reciproco benessere e beneficio.",
+      "Il judo divenne sport olimpico ai Giochi di Tokyo del 1964 ed è praticato in tutto il mondo."
+     ],
+     "q": "Come potresti applicare l'idea del reciproco beneficio al lavoro, allo studio o alle amicizie?",
+     "c": "Stai su un piede per trenta secondi respirando con calma, come un judoka che mantiene l'equilibrio."
+    },
+    "pt": {
+     "t": "O judo num relance",
+     "g": "Conhece o judo, o caminho suave, fundado no Japão em 1882.",
+     "p": [
+      "Jigoro Kano fundou o judo no Kodokan, em Tóquio, em 1882, a partir do antigo jujutsu.",
+      "As suas duas ideias centrais são a máxima eficiência e o bem-estar e benefício mútuo.",
+      "O judo tornou-se modalidade olímpica nos Jogos de Tóquio de 1964 e pratica-se em todo o mundo."
+     ],
+     "q": "Como poderia a ideia de benefício mútuo aplicar-se ao teu trabalho, estudos ou amizades?",
+     "c": "Fica num pé durante trinta segundos a respirar com calma, como um judoca a manter o equilíbrio."
+    },
+    "pt_BR": {
+     "t": "O judô num relance",
+     "g": "Conheça o judô, o caminho suave, fundado no Japão em 1882.",
+     "p": [
+      "Jigoro Kano fundou o judô no Kodokan, em Tóquio, em 1882, a partir do antigo jujutsu.",
+      "Suas duas ideias centrais são a máxima eficiência e o bem-estar e benefício mútuo.",
+      "O judô virou esporte olímpico nos Jogos de Tóquio de 1964 e é praticado no mundo todo."
+     ],
+     "q": "Como a ideia de benefício mútuo poderia se aplicar ao seu trabalho, estudos ou amizades?",
+     "c": "Fique num pé só por trinta segundos respirando com calma, como um judoca mantendo o equilíbrio."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "cycling",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Frame materials",
+     "g": "Compare steel, aluminium, carbon and titanium and how each one rides.",
+     "p": [
+      "Steel is strong, comfortable and easy to repair, though usually heavier than other materials.",
+      "Aluminium is light, stiff and affordable, which is why so many everyday and sporty bikes use it.",
+      "Carbon can be very light and shaped freely; titanium is light, springy and very long-lasting."
+     ],
+     "q": "If you could choose any frame material, which would you pick and why?",
+     "c": "Find out what your bike, or a bike you like, is made of."
+    },
+    "de": {
+     "t": "Rahmenmaterialien",
+     "g": "Vergleiche Stahl, Aluminium, Carbon und Titan und wie sie sich fahren.",
+     "p": [
+      "Stahl ist robust, komfortabel und leicht zu reparieren, aber meist schwerer als andere Materialien.",
+      "Aluminium ist leicht, steif und günstig, darum nutzen es so viele Alltags- und Sporträder.",
+      "Carbon kann sehr leicht und frei geformt sein; Titan ist leicht, federnd und extrem langlebig."
+     ],
+     "q": "Wenn du frei wählen könntest: Welches Rahmenmaterial würdest du nehmen und warum?",
+     "c": "Finde heraus, aus welchem Material dein Rad oder ein Rad, das dir gefällt, besteht."
+    },
+    "es": {
+     "t": "Materiales del cuadro",
+     "g": "Compara acero, aluminio, carbono y titanio y cómo se siente cada uno.",
+     "p": [
+      "El acero es resistente, cómodo y fácil de reparar, aunque suele pesar más que otros materiales.",
+      "El aluminio es ligero, rígido y asequible, por eso lo usan tantas bicis urbanas y deportivas.",
+      "El carbono puede ser muy ligero y tomar cualquier forma; el titanio es ligero, elástico y muy duradero."
+     ],
+     "q": "Si pudieras elegir cualquier material de cuadro, ¿cuál escogerías y por qué?",
+     "c": "Averigua de qué material está hecha tu bici o una bici que te guste."
+    },
+    "fr": {
+     "t": "Les matériaux du cadre",
+     "g": "Compare acier, aluminium, carbone et titane et leur comportement sur la route.",
+     "p": [
+      "L'acier est solide, confortable et facile à réparer, mais souvent plus lourd que les autres matériaux.",
+      "L'aluminium est léger, rigide et abordable : c'est pourquoi tant de vélos de tous les jours l'utilisent.",
+      "Le carbone peut être très léger et prendre toutes les formes ; le titane est léger, souple et très durable."
+     ],
+     "q": "Si tu pouvais choisir n'importe quel matériau de cadre, lequel prendrais-tu et pourquoi ?",
+     "c": "Découvre en quel matériau est fait ton vélo, ou un vélo qui te plaît."
+    },
+    "it": {
+     "t": "I materiali del telaio",
+     "g": "Confronta acciaio, alluminio, carbonio e titanio e come si comporta ognuno.",
+     "p": [
+      "L'acciaio è robusto, confortevole e facile da riparare, anche se di solito pesa di più.",
+      "L'alluminio è leggero, rigido ed economico: per questo lo usano tante bici da città e sportive.",
+      "Il carbonio può essere leggerissimo e prendere ogni forma; il titanio è leggero, elastico e molto durevole."
+     ],
+     "q": "Se potessi scegliere qualsiasi materiale per il telaio, quale prenderesti e perché?",
+     "c": "Scopri di che materiale è fatta la tua bici o una bici che ti piace."
+    },
+    "pt": {
+     "t": "Materiais do quadro",
+     "g": "Compara aço, alumínio, carbono e titânio e como cada um se comporta.",
+     "p": [
+      "O aço é resistente, confortável e fácil de reparar, embora costume ser mais pesado.",
+      "O alumínio é leve, rígido e acessível, por isso tantas bicicletas do dia a dia e desportivas o usam.",
+      "O carbono pode ser muito leve e ganhar qualquer forma; o titânio é leve, elástico e muito duradouro."
+     ],
+     "q": "Se pudesses escolher qualquer material de quadro, qual escolherias e porquê?",
+     "c": "Descobre de que material é feita a tua bicicleta ou uma de que gostes."
+    },
+    "pt_BR": {
+     "t": "Materiais do quadro",
+     "g": "Compare aço, alumínio, carbono e titânio e como cada um se comporta.",
+     "p": [
+      "O aço é resistente, confortável e fácil de consertar, embora costume ser mais pesado.",
+      "O alumínio é leve, rígido e acessível, por isso tantas bikes do dia a dia e esportivas o usam.",
+      "O carbono pode ser bem leve e ganhar qualquer forma; o titânio é leve, elástico e muito durável."
+     ],
+     "q": "Se pudesse escolher qualquer material de quadro, qual você escolheria e por quê?",
+     "c": "Descubra de que material é feita a sua bike ou uma bike de que você goste."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wheels and tyres",
+     "g": "Understand rim sizes, tyre widths and tread so you can read your own tyres.",
+     "p": [
+      "Common adult wheel sizes include 700c on road and gravel bikes and 27.5 or 29 inches on mountain bikes.",
+      "Wider tyres at lower pressure feel more comfortable and grippy; narrow tyres at higher pressure feel faster.",
+      "The tyre sidewall shows its size and the recommended pressure range, so always stay inside it."
+     ],
+     "q": "Do you prefer a smooth, fast feel or a soft, cushioned ride?",
+     "c": "Read the sidewall of a bike tyre and find its size and pressure range."
+    },
+    "de": {
+     "t": "Laufräder und Reifen",
+     "g": "Verstehe Felgengrößen, Reifenbreiten und Profil, damit du deine Reifen lesen kannst.",
+     "p": [
+      "Übliche Größen sind 700c an Renn- und Gravelrädern und 27,5 oder 29 Zoll an Mountainbikes.",
+      "Breite Reifen mit weniger Druck sind bequem und griffig; schmale Reifen mit mehr Druck fühlen sich schneller an.",
+      "Auf der Reifenflanke stehen Größe und empfohlener Druckbereich, und in dem solltest du immer bleiben."
+     ],
+     "q": "Magst du es lieber glatt und schnell oder weich und gedämpft?",
+     "c": "Lies die Flanke eines Fahrradreifens und finde Größe und Druckbereich."
+    },
+    "es": {
+     "t": "Ruedas y cubiertas",
+     "g": "Entiende tamaños de llanta, anchos de cubierta y dibujo para leer tus propias ruedas.",
+     "p": [
+      "Los tamaños comunes son 700c en bicis de carretera y gravel, y 27,5 o 29 pulgadas en las de montaña.",
+      "Cubiertas anchas con menos presión son más cómodas y agarran más; las estrechas con más presión se sienten rápidas.",
+      "El flanco de la cubierta indica su medida y el rango de presión recomendado: mantente siempre dentro."
+     ],
+     "q": "¿Prefieres una sensación lisa y rápida o una rodada suave y amortiguada?",
+     "c": "Lee el flanco de una cubierta y encuentra su medida y su rango de presión."
+    },
+    "fr": {
+     "t": "Roues et pneus",
+     "g": "Comprends tailles de jante, largeurs de pneus et sculptures pour lire tes propres pneus.",
+     "p": [
+      "Les tailles courantes sont 700c sur route et gravel, et 27,5 ou 29 pouces sur VTT.",
+      "Un pneu large peu gonflé est confortable et accrocheur ; un pneu fin bien gonflé paraît plus rapide.",
+      "Le flanc du pneu indique sa taille et la plage de pression conseillée : reste toujours dedans."
+     ],
+     "q": "Tu préfères une sensation lisse et rapide ou un roulage doux et amorti ?",
+     "c": "Lis le flanc d'un pneu de vélo et trouve sa taille et sa plage de pression."
+    },
+    "it": {
+     "t": "Ruote e copertoni",
+     "g": "Capisci misure dei cerchi, larghezza e battistrada per leggere le tue gomme.",
+     "p": [
+      "Le misure comuni sono 700c su bici da corsa e gravel, e 27,5 o 29 pollici sulle mountain bike.",
+      "Gomme larghe con meno pressione sono comode e aderenti; gomme strette con più pressione sembrano più veloci.",
+      "Il fianco del copertone indica misura e intervallo di pressione consigliato: resta sempre al suo interno."
+     ],
+     "q": "Preferisci una sensazione liscia e veloce o una guida morbida e ammortizzata?",
+     "c": "Leggi il fianco di un copertone e trova misura e intervallo di pressione."
+    },
+    "pt": {
+     "t": "Rodas e pneus",
+     "g": "Percebe tamanhos de aro, larguras de pneu e piso para saberes ler os teus pneus.",
+     "p": [
+      "Os tamanhos comuns são 700c nas de estrada e gravel e 27,5 ou 29 polegadas nas de montanha.",
+      "Pneus largos com menos pressão são confortáveis e aderentes; estreitos com mais pressão parecem mais rápidos.",
+      "O flanco do pneu mostra a medida e o intervalo de pressão recomendado: fica sempre dentro dele."
+     ],
+     "q": "Preferes uma sensação lisa e rápida ou um andar suave e amortecido?",
+     "c": "Lê o flanco de um pneu de bicicleta e encontra a medida e a pressão indicada."
+    },
+    "pt_BR": {
+     "t": "Rodas e pneus",
+     "g": "Entenda tamanhos de aro, larguras de pneu e cravos para saber ler seus pneus.",
+     "p": [
+      "Os tamanhos comuns são 700c nas speeds e gravel e aro 27,5 ou 29 nas mountain bikes.",
+      "Pneus largos com menos pressão são confortáveis e aderentes; finos com mais pressão parecem mais rápidos.",
+      "A lateral do pneu mostra a medida e a faixa de pressão recomendada: fique sempre dentro dela."
+     ],
+     "q": "Você prefere uma sensação lisa e rápida ou uma pedalada macia e amortecida?",
+     "c": "Leia a lateral de um pneu de bike e encontre a medida e a faixa de pressão."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How gears work",
+     "g": "See how chainrings, cassette and derailleurs team up to make pedalling easier.",
+     "p": [
+      "The chainrings sit by the pedals and the cassette sits on the rear wheel; derailleurs move the chain between them.",
+      "Small chainring plus big rear cog gives an easy gear for climbs; big chainring plus small cog is for speed.",
+      "Avoid the extreme combos of big-big and small-small, which twist the chain and wear parts faster."
+     ],
+     "q": "When do you think you would use your easiest gear?",
+     "c": "Lift the back wheel, turn the pedals and watch the chain move as you change gear."
+    },
+    "de": {
+     "t": "Wie die Schaltung funktioniert",
+     "g": "Sieh, wie Kettenblätter, Kassette und Schaltwerk zusammen das Treten leichter machen.",
+     "p": [
+      "Die Kettenblätter sitzen an den Pedalen, die Kassette am Hinterrad; Umwerfer und Schaltwerk führen die Kette.",
+      "Kleines Kettenblatt mit großem Ritzel ist ein leichter Gang zum Klettern, groß mit klein ist für Tempo.",
+      "Vermeide groß-groß und klein-klein: Die Kette läuft schräg und Teile verschleißen schneller."
+     ],
+     "q": "Wann würdest du wohl deinen leichtesten Gang benutzen?",
+     "c": "Heb das Hinterrad an, dreh die Pedale und beobachte die Kette beim Schalten."
+    },
+    "es": {
+     "t": "Cómo funcionan los cambios",
+     "g": "Mira cómo platos, casete y desviadores trabajan juntos para facilitar el pedaleo.",
+     "p": [
+      "Los platos están junto a los pedales y el casete en la rueda trasera; los desviadores mueven la cadena.",
+      "Plato pequeño con piñón grande da una marcha suave para subir; plato grande con piñón pequeño es para velocidad.",
+      "Evita los cruces extremos grande-grande y pequeño-pequeño: tuercen la cadena y desgastan antes las piezas."
+     ],
+     "q": "¿Cuándo crees que usarías tu marcha más suave?",
+     "c": "Levanta la rueda trasera, gira los pedales y observa la cadena al cambiar de marcha."
+    },
+    "fr": {
+     "t": "Comment marchent les vitesses",
+     "g": "Vois comment plateaux, cassette et dérailleurs s'associent pour rendre le pédalage plus facile.",
+     "p": [
+      "Les plateaux sont près des pédales, la cassette sur la roue arrière ; les dérailleurs déplacent la chaîne.",
+      "Petit plateau et grand pignon donnent un braquet facile pour grimper ; grand plateau et petit pignon, c'est la vitesse.",
+      "Évite les croisements grand-grand et petit-petit, qui tordent la chaîne et usent les pièces plus vite."
+     ],
+     "q": "À ton avis, quand utiliserais-tu ton braquet le plus facile ?",
+     "c": "Soulève la roue arrière, tourne les pédales et observe la chaîne en changeant de vitesse."
+    },
+    "it": {
+     "t": "Come funzionano le marce",
+     "g": "Guarda come corone, cassetta e deragliatori lavorano insieme per rendere più facile pedalare.",
+     "p": [
+      "Le corone sono vicino ai pedali e la cassetta sulla ruota posteriore; i deragliatori spostano la catena.",
+      "Corona piccola e pignone grande danno un rapporto agile per salire; corona grande e pignone piccolo servono per la velocità.",
+      "Evita gli incroci estremi grande-grande e piccolo-piccolo: storcono la catena e consumano prima i componenti."
+     ],
+     "q": "Quando pensi che useresti il tuo rapporto più agile?",
+     "c": "Solleva la ruota posteriore, gira i pedali e guarda la catena mentre cambi marcia."
+    },
+    "pt": {
+     "t": "Como funcionam as mudanças",
+     "g": "Vê como pratos, cassete e desviadores trabalham juntos para tornar a pedalada mais fácil.",
+     "p": [
+      "Os pratos ficam junto aos pedais e a cassete na roda traseira; os desviadores movem a corrente entre eles.",
+      "Prato pequeno com carreto grande dá uma mudança leve para subir; prato grande com carreto pequeno é para velocidade.",
+      "Evita os cruzamentos grande-grande e pequeno-pequeno, que torcem a corrente e gastam as peças mais depressa."
+     ],
+     "q": "Quando achas que usarias a tua mudança mais leve?",
+     "c": "Levanta a roda traseira, roda os pedais e observa a corrente ao mudar de mudança."
+    },
+    "pt_BR": {
+     "t": "Como funcionam as marchas",
+     "g": "Veja como coroas, cassete e câmbios trabalham juntos para deixar a pedalada mais fácil.",
+     "p": [
+      "As coroas ficam junto aos pedais e o cassete na roda traseira; os câmbios movem a corrente entre eles.",
+      "Coroa pequena com catraca grande dá uma marcha leve para subir; coroa grande com catraca pequena é para velocidade.",
+      "Evite os cruzamentos grande-grande e pequeno-pequeno, que torcem a corrente e gastam as peças mais rápido."
+     ],
+     "q": "Quando você acha que usaria sua marcha mais leve?",
+     "c": "Levante a roda traseira, gire os pedais e observe a corrente ao trocar de marcha."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brakes explained",
+     "g": "Learn the difference between rim and disc brakes and between cable and hydraulic systems.",
+     "p": [
+      "Rim brakes squeeze the wheel rim with pads; they are light and simple but weaker when rims are wet.",
+      "Disc brakes grip a rotor at the hub and stop consistently in rain, mud and on long descents.",
+      "Mechanical brakes use a cable; hydraulic brakes use fluid and need a lighter pull for the same power."
+     ],
+     "q": "Which kind of brakes does your bike, or a bike you know, have?",
+     "c": "Squeeze each brake lever gently and look at what moves at the wheel."
+    },
+    "de": {
+     "t": "Bremsen erklärt",
+     "g": "Lerne den Unterschied zwischen Felgen- und Scheibenbremsen sowie Seilzug und Hydraulik.",
+     "p": [
+      "Felgenbremsen drücken Beläge auf die Felge; sie sind leicht und simpel, aber bei Nässe schwächer.",
+      "Scheibenbremsen greifen eine Scheibe an der Nabe und bremsen bei Regen, Schlamm und langen Abfahrten gleichmäßig.",
+      "Mechanische Bremsen arbeiten mit Seilzug, hydraulische mit Flüssigkeit und brauchen weniger Handkraft."
+     ],
+     "q": "Welche Bremsen hat dein Rad oder ein Rad, das du kennst?",
+     "c": "Zieh sanft an jedem Bremshebel und schau, was sich am Laufrad bewegt."
+    },
+    "es": {
+     "t": "Los frenos explicados",
+     "g": "Aprende la diferencia entre frenos de llanta y de disco, y entre cable e hidráulicos.",
+     "p": [
+      "Los de llanta aprietan la llanta con zapatas; son ligeros y sencillos, pero pierden fuerza con la llanta mojada.",
+      "Los de disco muerden un rotor en el buje y frenan de forma constante con lluvia, barro y en bajadas largas.",
+      "Los mecánicos usan cable; los hidráulicos usan líquido y necesitan menos fuerza para la misma potencia."
+     ],
+     "q": "¿Qué tipo de frenos tiene tu bici o una bici que conozcas?",
+     "c": "Aprieta suavemente cada maneta y mira qué se mueve en la rueda."
+    },
+    "fr": {
+     "t": "Les freins expliqués",
+     "g": "Apprends la différence entre freins sur jante et à disque, et entre câble et hydraulique.",
+     "p": [
+      "Les freins sur jante pincent la jante avec des patins ; légers et simples, ils perdent en efficacité sous la pluie.",
+      "Les freins à disque pincent un disque au moyeu et freinent de façon régulière sous la pluie, dans la boue et en descente.",
+      "Les freins mécaniques utilisent un câble ; les hydrauliques un liquide, avec moins d'effort au levier."
+     ],
+     "q": "Quel type de freins a ton vélo, ou un vélo que tu connais ?",
+     "c": "Serre doucement chaque levier de frein et regarde ce qui bouge au niveau de la roue."
+    },
+    "it": {
+     "t": "I freni spiegati",
+     "g": "Impara la differenza tra freni a pattino e a disco, e tra cavo e idraulici.",
+     "p": [
+      "I freni a pattino stringono il cerchio; sono leggeri e semplici, ma meno efficaci con il cerchio bagnato.",
+      "I freni a disco stringono un rotore sul mozzo e frenano in modo costante con pioggia, fango e lunghe discese.",
+      "I meccanici usano un cavo; gli idraulici un fluido e richiedono meno forza sulla leva a parità di potenza."
+     ],
+     "q": "Che tipo di freni ha la tua bici o una bici che conosci?",
+     "c": "Stringi piano ogni leva del freno e guarda cosa si muove sulla ruota."
+    },
+    "pt": {
+     "t": "Os travões explicados",
+     "g": "Aprende a diferença entre travões de aro e de disco, e entre cabo e hidráulicos.",
+     "p": [
+      "Os travões de aro apertam o aro com calços; são leves e simples, mas perdem força com o aro molhado.",
+      "Os de disco apertam um disco no cubo e travam de forma constante com chuva, lama e em descidas longas.",
+      "Os mecânicos usam um cabo; os hidráulicos usam óleo e precisam de menos força na manete."
+     ],
+     "q": "Que tipo de travões tem a tua bicicleta ou uma que conheças?",
+     "c": "Aperta suavemente cada manete de travão e vê o que se mexe junto à roda."
+    },
+    "pt_BR": {
+     "t": "Os freios explicados",
+     "g": "Aprenda a diferença entre freios de aro e a disco, e entre cabo e hidráulicos.",
+     "p": [
+      "Os freios de aro (V-brake ou ferradura) apertam o aro com sapatas; são leves, mas perdem força com o aro molhado.",
+      "Os freios a disco apertam um disco no cubo e freiam de forma constante na chuva, na lama e em descidas longas.",
+      "Os mecânicos usam cabo; os hidráulicos usam fluido e pedem menos força no manete para a mesma potência."
+     ],
+     "q": "Que tipo de freio tem a sua bike ou uma bike que você conhece?",
+     "c": "Aperte de leve cada manete de freio e veja o que se mexe perto da roda."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding the right frame size",
+     "g": "Learn how height, standover and reach help you choose a bike that fits.",
+     "p": [
+      "Size charts use your height and inside-leg length as a starting point, but brands size bikes differently.",
+      "Standing over the frame with both feet flat, you should have some clearance between you and the top tube.",
+      "Reach is how far forward you stretch to the bars; it should feel natural, not cramped or overstretched."
+     ],
+     "q": "Have you ever ridden a bike that felt too big or too small?",
+     "c": "Measure your height and inside-leg length and keep the numbers for bike shopping."
+    },
+    "de": {
+     "t": "Die richtige Rahmengröße finden",
+     "g": "Lerne, wie Körpergröße, Überstandshöhe und Reach dir helfen, ein passendes Rad zu wählen.",
+     "p": [
+      "Größentabellen nutzen Körpergröße und Schrittlänge als Startpunkt, aber jede Marke misst etwas anders.",
+      "Stehst du mit beiden Füßen flach über dem Rahmen, sollte etwas Luft zum Oberrohr bleiben.",
+      "Der Reach ist, wie weit du dich zum Lenker streckst; es soll sich natürlich anfühlen, nicht gestaucht oder gedehnt."
+     ],
+     "q": "Bist du schon einmal ein Rad gefahren, das zu groß oder zu klein wirkte?",
+     "c": "Miss Körpergröße und Schrittlänge und notier die Werte für den nächsten Radkauf."
+    },
+    "es": {
+     "t": "Encontrar la talla de cuadro",
+     "g": "Aprende cómo la altura, el paso de entrepierna y el alcance te ayudan a elegir una bici que encaje.",
+     "p": [
+      "Las tablas de tallas usan tu altura y tu entrepierna como punto de partida, pero cada marca mide distinto.",
+      "De pie sobre el cuadro con ambos pies planos, debe quedar algo de espacio entre tú y el tubo superior.",
+      "El alcance es cuánto te estiras hacia el manillar; debe sentirse natural, ni encogido ni demasiado estirado."
+     ],
+     "q": "¿Alguna vez montaste una bici que te quedaba grande o pequeña?",
+     "c": "Mide tu altura y tu entrepierna y guarda los datos para cuando busques bici."
+    },
+    "fr": {
+     "t": "Trouver la bonne taille de cadre",
+     "g": "Découvre comment taille, hauteur d'enjambement et reach t'aident à choisir un vélo adapté.",
+     "p": [
+      "Les tableaux de tailles partent de ta taille et de ton entrejambe, mais chaque marque mesure différemment.",
+      "Debout au-dessus du cadre, pieds à plat, il doit rester un peu d'espace entre toi et le tube supérieur.",
+      "Le reach, c'est la distance jusqu'au guidon : la position doit être naturelle, ni tassée ni trop allongée."
+     ],
+     "q": "As-tu déjà roulé sur un vélo trop grand ou trop petit pour toi ?",
+     "c": "Mesure ta taille et ton entrejambe et garde ces chiffres pour choisir un vélo."
+    },
+    "it": {
+     "t": "Trovare la taglia del telaio",
+     "g": "Scopri come altezza, cavallo e reach ti aiutano a scegliere una bici della misura giusta.",
+     "p": [
+      "Le tabelle taglie partono da altezza e cavallo, ma ogni marca misura le bici in modo diverso.",
+      "In piedi sopra il telaio con entrambi i piedi a terra, deve restare un po' di spazio tra te e il tubo orizzontale.",
+      "Il reach è quanto ti allunghi verso il manubrio: deve sembrare naturale, né rannicchiato né troppo disteso."
+     ],
+     "q": "Ti è mai capitato di guidare una bici troppo grande o troppo piccola?",
+     "c": "Misura altezza e cavallo e conserva i numeri per quando sceglierai una bici."
+    },
+    "pt": {
+     "t": "Encontrar o tamanho certo do quadro",
+     "g": "Aprende como a altura, o entrepernas e o alcance te ajudam a escolher uma bicicleta à medida.",
+     "p": [
+      "As tabelas de tamanhos usam a tua altura e o entrepernas como ponto de partida, mas cada marca mede de forma diferente.",
+      "De pé sobre o quadro com os dois pés assentes, deve sobrar algum espaço entre ti e o tubo superior.",
+      "O alcance é quanto te esticas até ao guiador; deve ser natural, nem encolhido nem esticado demais."
+     ],
+     "q": "Já andaste numa bicicleta que parecia grande ou pequena demais?",
+     "c": "Mede a tua altura e o entrepernas e guarda os números para quando escolheres bicicleta."
+    },
+    "pt_BR": {
+     "t": "Encontrando o tamanho certo do quadro",
+     "g": "Aprenda como altura, cavalo e alcance ajudam você a escolher uma bike do seu tamanho.",
+     "p": [
+      "As tabelas de tamanho usam sua altura e a medida do cavalo como ponto de partida, mas cada marca mede diferente.",
+      "Em pé sobre o quadro com os dois pés no chão, deve sobrar um espaço entre você e o tubo superior.",
+      "O alcance é quanto você se estica até o guidão; deve parecer natural, nem encolhido nem esticado demais."
+     ],
+     "q": "Você já pedalou uma bike que parecia grande ou pequena demais?",
+     "c": "Meça sua altura e o cavalo e guarde os números para quando for escolher uma bike."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saddle height",
+     "g": "Set your saddle so your legs extend comfortably and pedalling feels easy.",
+     "p": [
+      "Sit on the bike with your heel on the pedal at its lowest point: your leg should be almost straight.",
+      "When you pedal with the ball of your foot, this leaves a slight bend in the knee, which is what you want.",
+      "Too low strains the knees; too high makes your hips rock. Adjust in small steps and never pass the minimum insert mark."
+     ],
+     "q": "Have you ever noticed your knees or hips feeling odd while pedalling?",
+     "c": "Try the heel method on a bike, ideally with a friend holding it steady."
+    },
+    "de": {
+     "t": "Die Sattelhöhe",
+     "g": "Stell deinen Sattel so ein, dass sich die Beine angenehm strecken und das Treten leicht fällt.",
+     "p": [
+      "Setz dich aufs Rad, Ferse auf dem Pedal am tiefsten Punkt: Das Bein sollte fast gestreckt sein.",
+      "Trittst du dann mit dem Fußballen, bleibt das Knie leicht gebeugt, und genau so soll es sein.",
+      "Zu tief belastet die Knie, zu hoch lässt die Hüfte kippen; stell in kleinen Schritten ein und beachte die Mindesteinstecktiefe."
+     ],
+     "q": "Hast du beim Treten schon einmal komische Gefühle in Knien oder Hüfte bemerkt?",
+     "c": "Probier die Fersen-Methode aus, am besten hält jemand das Rad fest."
+    },
+    "es": {
+     "t": "La altura del sillín",
+     "g": "Ajusta el sillín para que las piernas se extiendan cómodamente y pedalear sea fácil.",
+     "p": [
+      "Sentado en la bici, con el talón en el pedal en su punto más bajo, la pierna debe quedar casi recta.",
+      "Al pedalear con la planta del pie, la rodilla queda ligeramente flexionada, que es justo lo que buscas.",
+      "Demasiado bajo carga las rodillas; demasiado alto hace bailar la cadera. Ajusta poco a poco y respeta la marca mínima."
+     ],
+     "q": "¿Alguna vez notaste las rodillas o la cadera raras al pedalear?",
+     "c": "Prueba el método del talón en una bici, mejor con alguien que la sujete."
+    },
+    "fr": {
+     "t": "La hauteur de selle",
+     "g": "Règle ta selle pour que tes jambes s'étendent confortablement et que le pédalage soit facile.",
+     "p": [
+      "Assis sur le vélo, talon sur la pédale au point le plus bas, ta jambe doit être presque tendue.",
+      "En pédalant avec l'avant du pied, le genou garde alors une légère flexion : c'est exactement ce qu'il faut.",
+      "Trop basse, elle fatigue les genoux ; trop haute, le bassin se balance. Règle par petites étapes et respecte le repère minimum."
+     ],
+     "q": "As-tu déjà senti une gêne aux genoux ou aux hanches en pédalant ?",
+     "c": "Essaie la méthode du talon sur un vélo, idéalement avec quelqu'un qui le tient."
+    },
+    "it": {
+     "t": "L'altezza della sella",
+     "g": "Regola la sella perché le gambe si distendano comodamente e pedalare sia facile.",
+     "p": [
+      "Seduto in bici, col tallone sul pedale nel punto più basso, la gamba deve essere quasi dritta.",
+      "Pedalando con l'avampiede, il ginocchio resta leggermente piegato, ed è proprio ciò che vuoi.",
+      "Troppo bassa affatica le ginocchia, troppo alta fa ondeggiare il bacino; regola a piccoli passi e rispetta il segno di minimo."
+     ],
+     "q": "Hai mai sentito qualcosa di strano a ginocchia o anche mentre pedalavi?",
+     "c": "Prova il metodo del tallone su una bici, meglio se qualcuno la tiene ferma."
+    },
+    "pt": {
+     "t": "A altura do selim",
+     "g": "Ajusta o selim para que as pernas estiquem com conforto e pedalar seja fácil.",
+     "p": [
+      "Sentado na bicicleta, com o calcanhar no pedal no ponto mais baixo, a perna deve ficar quase esticada.",
+      "Ao pedalar com a parte da frente do pé, o joelho fica ligeiramente dobrado, que é o que se pretende.",
+      "Baixo demais força os joelhos; alto demais faz a anca balançar. Ajusta aos poucos e respeita a marca mínima do espigão."
+     ],
+     "q": "Já sentiste os joelhos ou a anca estranhos ao pedalar?",
+     "c": "Experimenta o método do calcanhar numa bicicleta, de preferência com alguém a segurá-la."
+    },
+    "pt_BR": {
+     "t": "A altura do selim",
+     "g": "Ajuste o selim para que as pernas estiquem com conforto e pedalar fique fácil.",
+     "p": [
+      "Sentado na bike, com o calcanhar no pedal no ponto mais baixo, a perna deve ficar quase esticada.",
+      "Ao pedalar com a ponta do pé, o joelho fica levemente dobrado, que é exatamente o que você quer.",
+      "Baixo demais força os joelhos; alto demais faz o quadril balançar. Ajuste aos poucos e respeite a marca mínima do canote."
+     ],
+     "q": "Você já sentiu algo estranho nos joelhos ou no quadril ao pedalar?",
+     "c": "Teste o método do calcanhar numa bike, de preferência com alguém segurando."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saddle position and tilt",
+     "g": "Fine-tune where your saddle sits and how it is angled for a comfortable ride.",
+     "p": [
+      "Most saddles can slide forward and back on their rails, which changes how your knees line up over the pedals.",
+      "A good start: with the cranks level, your front knee sits roughly above the pedal axle.",
+      "Keep the saddle level at first; a nose that points up or down makes you slide or press on your hands."
+     ],
+     "q": "Where do you feel the most pressure when you sit on a bike?",
+     "c": "Lay a phone level app or a book on your saddle and check if it is flat."
+    },
+    "de": {
+     "t": "Sattelposition und Neigung",
+     "g": "Feinjustiere, wo dein Sattel sitzt und wie er geneigt ist, für bequemes Fahren.",
+     "p": [
+      "Die meisten Sättel lassen sich auf ihren Streben vor und zurück schieben, das ändert die Kniestellung über dem Pedal.",
+      "Ein guter Start: Bei waagerechten Kurbeln liegt das vordere Knie ungefähr über der Pedalachse.",
+      "Halte den Sattel zunächst waagerecht; zeigt die Spitze nach oben oder unten, rutschst du oder drückst auf die Hände."
+     ],
+     "q": "Wo spürst du den meisten Druck, wenn du auf einem Rad sitzt?",
+     "c": "Leg eine Wasserwaage-App oder ein Buch auf den Sattel und prüf, ob er gerade ist."
+    },
+    "es": {
+     "t": "Posición e inclinación del sillín",
+     "g": "Afina dónde se coloca el sillín y su ángulo para ir cómodo.",
+     "p": [
+      "La mayoría de sillines se deslizan adelante y atrás sobre sus raíles, lo que cambia cómo quedan las rodillas sobre los pedales.",
+      "Un buen inicio: con las bielas horizontales, la rodilla delantera queda más o menos sobre el eje del pedal.",
+      "Al principio deja el sillín horizontal; si la punta sube o baja, resbalas o cargas peso en las manos."
+     ],
+     "q": "¿Dónde notas más presión cuando te sientas en una bici?",
+     "c": "Pon una app de nivel o un libro sobre el sillín y comprueba si está recto."
+    },
+    "fr": {
+     "t": "Position et inclinaison de la selle",
+     "g": "Affine l'emplacement de ta selle et son angle pour rouler confortablement.",
+     "p": [
+      "La plupart des selles coulissent d'avant en arrière sur leurs rails, ce qui change la position des genoux au-dessus des pédales.",
+      "Bon point de départ : manivelles à l'horizontale, ton genou avant se trouve à peu près au-dessus de l'axe de la pédale.",
+      "Garde d'abord la selle à plat ; un bec relevé ou baissé te fait glisser ou appuyer sur les mains."
+     ],
+     "q": "Où ressens-tu le plus de pression quand tu es assis sur un vélo ?",
+     "c": "Pose une appli niveau ou un livre sur ta selle et vérifie qu'elle est bien à plat."
+    },
+    "it": {
+     "t": "Posizione e inclinazione della sella",
+     "g": "Perfeziona dove si trova la sella e com'è inclinata per pedalare comodo.",
+     "p": [
+      "Quasi tutte le selle scorrono avanti e indietro sui binari, cambiando la posizione delle ginocchia sopra i pedali.",
+      "Un buon inizio: con le pedivelle orizzontali, il ginocchio anteriore sta più o meno sopra l'asse del pedale.",
+      "All'inizio tieni la sella in piano; con la punta in su o in giù scivoli o carichi peso sulle mani."
+     ],
+     "q": "Dove senti più pressione quando sei seduto su una bici?",
+     "c": "Appoggia un'app livella o un libro sulla sella e controlla che sia in piano."
+    },
+    "pt": {
+     "t": "Posição e inclinação do selim",
+     "g": "Afina onde fica o selim e o seu ângulo para pedalar com conforto.",
+     "p": [
+      "A maioria dos selins desliza para a frente e para trás nos carris, o que muda a posição dos joelhos sobre os pedais.",
+      "Um bom começo: com os pedais na horizontal, o joelho da frente fica mais ou menos por cima do eixo do pedal.",
+      "Começa com o selim nivelado; com a ponta para cima ou para baixo escorregas ou carregas as mãos."
+     ],
+     "q": "Onde sentes mais pressão quando te sentas numa bicicleta?",
+     "c": "Põe uma app de nível ou um livro em cima do selim e vê se está direito."
+    },
+    "pt_BR": {
+     "t": "Posição e inclinação do selim",
+     "g": "Ajuste fino de onde o selim fica e do seu ângulo para pedalar com conforto.",
+     "p": [
+      "A maioria dos selins desliza para frente e para trás nos trilhos, o que muda a posição dos joelhos sobre os pedais.",
+      "Um bom começo: com os pedais na horizontal, o joelho da frente fica mais ou menos sobre o eixo do pedal.",
+      "Comece com o selim nivelado; com o bico para cima ou para baixo você escorrega ou força as mãos."
+     ],
+     "q": "Onde você sente mais pressão quando senta numa bike?",
+     "c": "Coloque um app de nível ou um livro sobre o selim e veja se ele está reto."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Handlebar reach and height",
+     "g": "Find a relaxed upper-body position that keeps your hands, neck and back happy.",
+     "p": [
+      "Your elbows should stay slightly bent, with shoulders low and loose instead of locked or hunched.",
+      "Higher bars feel more upright and relaxed; lower bars feel sportier but ask more of your back and neck.",
+      "Spacers, a different stem or a rise bar can change height and reach; a bike shop can help you test options."
+     ],
+     "q": "Do you prefer sitting upright or leaning forward when you ride?",
+     "c": "On your next ride, notice your elbows and shoulders and try to relax them."
+    },
+    "de": {
+     "t": "Lenkerabstand und -höhe",
+     "g": "Finde eine entspannte Oberkörperhaltung, die Hände, Nacken und Rücken schont.",
+     "p": [
+      "Die Ellbogen bleiben leicht gebeugt, die Schultern tief und locker statt durchgedrückt oder hochgezogen.",
+      "Ein höherer Lenker fühlt sich aufrechter an, ein tieferer sportlicher, fordert aber Rücken und Nacken mehr.",
+      "Spacer, ein anderer Vorbau oder ein Lenker mit Rise ändern Höhe und Abstand; ein Radladen hilft beim Testen."
+     ],
+     "q": "Sitzt du beim Fahren lieber aufrecht oder nach vorn gebeugt?",
+     "c": "Achte bei der nächsten Fahrt auf Ellbogen und Schultern und lockere sie bewusst."
+    },
+    "es": {
+     "t": "Alcance y altura del manillar",
+     "g": "Encuentra una postura relajada que cuide manos, cuello y espalda.",
+     "p": [
+      "Los codos deben ir algo flexionados, con los hombros bajos y sueltos, no rígidos ni encogidos.",
+      "Un manillar alto se siente más erguido y relajado; uno bajo es más deportivo pero exige más a espalda y cuello.",
+      "Espaciadores, otra potencia o un manillar con elevación cambian altura y alcance; una tienda te ayuda a probar."
+     ],
+     "q": "¿Prefieres ir erguido o inclinado hacia delante cuando pedaleas?",
+     "c": "En tu próxima salida, fíjate en codos y hombros e intenta relajarlos."
+    },
+    "fr": {
+     "t": "Distance et hauteur du guidon",
+     "g": "Trouve une position du haut du corps détendue pour tes mains, ta nuque et ton dos.",
+     "p": [
+      "Les coudes restent légèrement fléchis, les épaules basses et souples, ni crispées ni remontées.",
+      "Un guidon haut te redresse et détend ; plus bas, c'est plus sportif mais plus exigeant pour le dos et la nuque.",
+      "Entretoises, autre potence ou cintre relevé modifient hauteur et distance ; un magasin peut t'aider à tester."
+     ],
+     "q": "Tu préfères rouler bien droit ou penché vers l'avant ?",
+     "c": "Lors de ta prochaine sortie, observe tes coudes et tes épaules et détends-les."
+    },
+    "it": {
+     "t": "Distanza e altezza del manubrio",
+     "g": "Trova una posizione rilassata del busto che faccia stare bene mani, collo e schiena.",
+     "p": [
+      "I gomiti restano leggermente piegati, con le spalle basse e morbide, non rigide o sollevate.",
+      "Un manubrio alto è più eretto e rilassato; uno basso è più sportivo ma impegna di più schiena e collo.",
+      "Spessori, un altro attacco o un manubrio rialzato cambiano altezza e distanza; un negozio può aiutarti a provare."
+     ],
+     "q": "Preferisci pedalare dritto o inclinato in avanti?",
+     "c": "Nella prossima uscita osserva gomiti e spalle e prova a rilassarli."
+    },
+    "pt": {
+     "t": "Alcance e altura do guiador",
+     "g": "Encontra uma postura relaxada que poupe mãos, pescoço e costas.",
+     "p": [
+      "Os cotovelos ficam ligeiramente dobrados, com os ombros baixos e soltos, nem rígidos nem encolhidos.",
+      "Um guiador alto deixa-te mais direito e relaxado; um baixo é mais desportivo, mas exige mais das costas e do pescoço.",
+      "Espaçadores, outro avanço ou um guiador elevado mudam altura e alcance; uma loja pode ajudar-te a testar."
+     ],
+     "q": "Preferes pedalar direito ou inclinado para a frente?",
+     "c": "No próximo passeio, repara nos cotovelos e nos ombros e tenta relaxá-los."
+    },
+    "pt_BR": {
+     "t": "Alcance e altura do guidão",
+     "g": "Encontre uma postura relaxada que poupe mãos, pescoço e costas.",
+     "p": [
+      "Os cotovelos ficam levemente dobrados, com os ombros baixos e soltos, nem travados nem encolhidos.",
+      "Um guidão alto deixa você mais ereto e relaxado; um baixo é mais esportivo, mas exige mais das costas e do pescoço.",
+      "Espaçadores, outra mesa ou um guidão com elevação mudam altura e alcance; uma bicicletaria ajuda a testar."
+     ],
+     "q": "Você prefere pedalar ereto ou inclinado para frente?",
+     "c": "No próximo passeio, repare nos cotovelos e nos ombros e tente relaxá-los."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a helmet",
+     "g": "Learn how to pick a helmet that fits well and how to know when to replace it.",
+     "p": [
+      "Look for a safety certification label inside, such as EN 1078 in Europe or CPSC in the United States.",
+      "A good fit sits level, about two fingers above your eyebrows, with straps forming a V under each ear.",
+      "Replace a helmet after any crash or hard knock, even if it looks fine, and follow the maker's age advice."
+     ],
+     "q": "What would make you more likely to wear a helmet on every ride?",
+     "c": "Check the fit of a helmet in a mirror using the two-finger and V-strap rules."
+    },
+    "de": {
+     "t": "Den richtigen Helm wählen",
+     "g": "Lerne, einen gut sitzenden Helm auszuwählen und zu erkennen, wann er ersetzt werden muss.",
+     "p": [
+      "Achte innen auf ein Prüfzeichen, etwa EN 1078 in Europa oder CPSC in den USA.",
+      "Er sitzt gerade, etwa zwei Finger über den Augenbrauen, und die Gurte bilden unter jedem Ohr ein V.",
+      "Ersetze den Helm nach jedem Sturz oder harten Schlag, auch wenn er heil aussieht, und beachte die Herstellerangaben."
+     ],
+     "q": "Was würde dich dazu bringen, bei jeder Fahrt einen Helm zu tragen?",
+     "c": "Prüf vor dem Spiegel den Sitz eines Helms mit der Zwei-Finger- und V-Regel."
+    },
+    "es": {
+     "t": "Elegir un casco",
+     "g": "Aprende a elegir un casco que ajuste bien y a saber cuándo cambiarlo.",
+     "p": [
+      "Busca dentro una etiqueta de certificación, como EN 1078 en Europa o CPSC en Estados Unidos.",
+      "Debe ir horizontal, unos dos dedos por encima de las cejas, con las correas formando una V bajo cada oreja.",
+      "Cambia el casco tras cualquier caída o golpe fuerte, aunque parezca intacto, y sigue las indicaciones del fabricante."
+     ],
+     "q": "¿Qué te animaría a llevar casco en cada salida?",
+     "c": "Comprueba el ajuste de un casco frente al espejo con las reglas de los dos dedos y la V."
+    },
+    "fr": {
+     "t": "Choisir un casque",
+     "g": "Apprends à choisir un casque bien ajusté et à savoir quand le remplacer.",
+     "p": [
+      "Cherche à l'intérieur une norme de sécurité, comme EN 1078 en Europe ou CPSC aux États-Unis.",
+      "Bien ajusté, il est droit, environ deux doigts au-dessus des sourcils, avec les sangles en V sous chaque oreille.",
+      "Remplace ton casque après toute chute ou choc violent, même s'il semble intact, et suis les conseils du fabricant."
+     ],
+     "q": "Qu'est-ce qui te donnerait envie de porter un casque à chaque sortie ?",
+     "c": "Vérifie l'ajustement d'un casque devant un miroir avec les règles des deux doigts et du V."
+    },
+    "it": {
+     "t": "Scegliere il casco",
+     "g": "Impara a scegliere un casco che calzi bene e a capire quando sostituirlo.",
+     "p": [
+      "Cerca all'interno un'etichetta di certificazione, come EN 1078 in Europa o CPSC negli Stati Uniti.",
+      "Deve stare dritto, circa due dita sopra le sopracciglia, con le cinghie a V sotto ogni orecchio.",
+      "Sostituisci il casco dopo ogni caduta o colpo forte, anche se sembra integro, e segui le indicazioni del produttore."
+     ],
+     "q": "Cosa ti spingerebbe a indossare il casco a ogni uscita?",
+     "c": "Controlla allo specchio come calza un casco con le regole delle due dita e della V."
+    },
+    "pt": {
+     "t": "Escolher um capacete",
+     "g": "Aprende a escolher um capacete que assente bem e a saber quando o trocar.",
+     "p": [
+      "Procura no interior uma etiqueta de certificação, como EN 1078 na Europa ou CPSC nos Estados Unidos.",
+      "Deve ficar direito, cerca de dois dedos acima das sobrancelhas, com as fitas em V debaixo de cada orelha.",
+      "Troca o capacete depois de qualquer queda ou pancada forte, mesmo que pareça intacto, e segue as indicações do fabricante."
+     ],
+     "q": "O que te levaria a usar capacete em todos os passeios?",
+     "c": "Verifica ao espelho o ajuste de um capacete com as regras dos dois dedos e do V."
+    },
+    "pt_BR": {
+     "t": "Escolhendo um capacete",
+     "g": "Aprenda a escolher um capacete que encaixe bem e a saber quando trocá-lo.",
+     "p": [
+      "Procure dentro uma etiqueta de certificação, como o selo do Inmetro no Brasil, EN 1078 na Europa ou CPSC nos EUA.",
+      "Ele deve ficar reto, uns dois dedos acima das sobrancelhas, com as fitas em V embaixo de cada orelha.",
+      "Troque o capacete depois de qualquer queda ou batida forte, mesmo que pareça inteiro, e siga as orientações do fabricante."
+     ],
+     "q": "O que faria você usar capacete em todo passeio?",
+     "c": "Confira no espelho o ajuste de um capacete com as regras dos dois dedos e do V."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lights and reflectors",
+     "g": "Understand which lights and reflectors help others see you, day and night.",
+     "p": [
+      "A white light at the front and a red light at the rear are the basic setup in most countries.",
+      "Reflectors on pedals, wheels and rear bounce back car headlights; rules on what is required vary by place.",
+      "Daytime lights also help drivers notice you sooner, especially in shade, fog or at dusk."
+     ],
+     "q": "When do you think lights matter most on a bike?",
+     "c": "Check that your bike lights work and are charged, or note which lights you still need."
+    },
+    "de": {
+     "t": "Licht und Reflektoren",
+     "g": "Verstehe, welche Lichter und Reflektoren dich tags und nachts sichtbar machen.",
+     "p": [
+      "Weißes Licht vorn und rotes Licht hinten sind in den meisten Ländern die Grundausstattung.",
+      "Reflektoren an Pedalen, Speichen und hinten werfen Scheinwerferlicht zurück; die Pflichten sind je nach Land verschieden.",
+      "Tagfahrlicht hilft Autofahrern, dich früher zu bemerken, besonders im Schatten, bei Nebel oder in der Dämmerung."
+     ],
+     "q": "Wann ist Licht am Fahrrad deiner Meinung nach am wichtigsten?",
+     "c": "Prüf, ob deine Radlichter funktionieren und geladen sind, oder notier, was dir noch fehlt."
+    },
+    "es": {
+     "t": "Luces y reflectantes",
+     "g": "Entiende qué luces y reflectantes ayudan a que te vean de día y de noche.",
+     "p": [
+      "Una luz blanca delante y una roja detrás son el equipo básico en la mayoría de países.",
+      "Los reflectantes en pedales, ruedas y parte trasera devuelven la luz de los coches; lo obligatorio varía según el lugar.",
+      "Las luces de día también ayudan a que los conductores te vean antes, sobre todo en sombra, niebla o al atardecer."
+     ],
+     "q": "¿Cuándo crees que las luces importan más en una bici?",
+     "c": "Comprueba que tus luces funcionan y están cargadas, o apunta las que te faltan."
+    },
+    "fr": {
+     "t": "Éclairage et catadioptres",
+     "g": "Comprends quels feux et catadioptres aident les autres à te voir, de jour comme de nuit.",
+     "p": [
+      "Un feu blanc à l'avant et un feu rouge à l'arrière forment l'équipement de base dans la plupart des pays.",
+      "Les catadioptres sur pédales, roues et à l'arrière renvoient la lumière des phares ; les obligations varient selon les pays.",
+      "Les feux de jour aident aussi les conducteurs à te repérer plus tôt, surtout à l'ombre, dans le brouillard ou au crépuscule."
+     ],
+     "q": "Selon toi, quand l'éclairage compte-t-il le plus à vélo ?",
+     "c": "Vérifie que tes lumières fonctionnent et sont chargées, ou note celles qui te manquent."
+    },
+    "it": {
+     "t": "Luci e catarifrangenti",
+     "g": "Capisci quali luci e catarifrangenti ti rendono visibile, di giorno e di notte.",
+     "p": [
+      "Una luce bianca davanti e una rossa dietro sono la dotazione base nella maggior parte dei paesi.",
+      "I catarifrangenti su pedali, ruote e retro rimandano la luce dei fari; gli obblighi cambiano da paese a paese.",
+      "Le luci di giorno aiutano gli automobilisti a notarti prima, soprattutto all'ombra, con la nebbia o al tramonto."
+     ],
+     "q": "Secondo te quando contano di più le luci sulla bici?",
+     "c": "Controlla che le tue luci funzionino e siano cariche, o annota quelle che ti mancano."
+    },
+    "pt": {
+     "t": "Luzes e refletores",
+     "g": "Percebe que luzes e refletores ajudam os outros a ver-te, de dia e de noite.",
+     "p": [
+      "Uma luz branca à frente e uma vermelha atrás são o equipamento básico na maioria dos países.",
+      "Refletores nos pedais, rodas e atrás devolvem a luz dos faróis; o que é obrigatório varia de país para país.",
+      "Luzes durante o dia também ajudam os condutores a ver-te mais cedo, sobretudo à sombra, com nevoeiro ou ao anoitecer."
+     ],
+     "q": "Quando achas que as luzes são mais importantes numa bicicleta?",
+     "c": "Verifica se as tuas luzes funcionam e estão carregadas, ou anota as que te faltam."
+    },
+    "pt_BR": {
+     "t": "Luzes e refletores",
+     "g": "Entenda quais luzes e refletores ajudam os outros a ver você, de dia e de noite.",
+     "p": [
+      "Uma luz branca na frente e uma vermelha atrás são o equipamento básico na maioria dos países.",
+      "Refletores nos pedais, rodas e traseira devolvem a luz dos faróis; o que é obrigatório muda de lugar para lugar.",
+      "Luzes durante o dia também ajudam os motoristas a ver você antes, principalmente na sombra, na neblina ou no fim de tarde."
+     ],
+     "q": "Quando você acha que as luzes importam mais numa bike?",
+     "c": "Confira se suas luzes funcionam e estão carregadas, ou anote as que ainda faltam."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "pronunciation",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The paper test",
+     "g": "Use a strip of paper in front of your lips to see the puff of air after p, t and k.",
+     "p": [
+      "Hold a thin strip of paper or a tissue a few centimetres in front of your mouth, hanging loosely.",
+      "Say English 'pen' or German 'Paul': the paper should jump. Say 'Ben' or 'ball': it should barely move.",
+      "For Spanish, French or Italian 'p', the paper should stay almost still, even on 'papá' or 'pane'."
+     ],
+     "q": "Did the paper move the way you expected, or did it surprise you?",
+     "c": "Do the paper test with 'park, town, cat' and then 'bark, down, gap', counting how often the paper jumps."
+    },
+    "de": {
+     "t": "Der Papiertest",
+     "g": "Nutze einen Papierstreifen vor den Lippen, um den Lufthauch nach p, t und k sichtbar zu machen.",
+     "p": [
+      "Halte einen dünnen Papierstreifen oder ein Taschentuch locker ein paar Zentimeter vor den Mund.",
+      "Sag „Paul“ oder englisch 'pen': Das Papier sollte springen. Bei „Ball“ bewegt es sich kaum.",
+      "Beim spanischen, französischen oder italienischen p bleibt das Papier fast ruhig, etwa bei 'papá' oder 'pane'."
+     ],
+     "q": "Hat sich das Papier so bewegt, wie du erwartet hast, oder hat es dich überrascht?",
+     "c": "Mach den Papiertest mit „Park, Tor, Kamm“ und dann „Bad, Dorf, Gast“ und zähle, wie oft das Papier springt."
+    },
+    "es": {
+     "t": "La prueba del papel",
+     "g": "Usa una tira de papel delante de los labios para ver el soplo de aire tras p, t y k.",
+     "p": [
+      "Sujeta una tira fina de papel o un pañuelo a unos centímetros de la boca, colgando suelto.",
+      "Di en inglés 'pen' o en alemán 'Paul': el papel debería saltar. Con 'Ben' o 'ball' casi no se mueve.",
+      "Con la p española, francesa o italiana el papel debe quedarse casi quieto, incluso en 'papá'."
+     ],
+     "q": "¿El papel se movió como esperabas o te sorprendió?",
+     "c": "Haz la prueba con 'park, town, cat' y luego con 'papá, tomate, casa', contando cuántas veces salta el papel."
+    },
+    "fr": {
+     "t": "Le test du papier",
+     "g": "Utilise une bande de papier devant tes lèvres pour voir le souffle après p, t et k.",
+     "p": [
+      "Tiens une fine bande de papier ou un mouchoir à quelques centimètres de ta bouche, bien libre.",
+      "Dis l'anglais 'pen' ou l'allemand 'Paul' : le papier doit sauter. Avec 'Ben' ou 'ball', il bouge à peine.",
+      "Avec le p français, comme dans « papa » ou « pain », le papier doit rester presque immobile."
+     ],
+     "q": "Le papier a-t-il bougé comme tu t'y attendais, ou t'a-t-il surpris ?",
+     "c": "Fais le test avec 'park, town, cat' puis « papa, tomate, café » et compte combien de fois le papier saute."
+    },
+    "it": {
+     "t": "La prova del foglio",
+     "g": "Usa una striscia di carta davanti alle labbra per vedere il soffio dopo p, t e k.",
+     "p": [
+      "Tieni una striscia sottile di carta o un fazzoletto a pochi centimetri dalla bocca, libero di muoversi.",
+      "Di' l'inglese 'pen' o il tedesco 'Paul': il foglio dovrebbe saltare. Con 'Ben' o 'ball' si muove appena.",
+      "Con la p italiana, come in 'papà' o 'pane', il foglio deve restare quasi fermo."
+     ],
+     "q": "Il foglio si è mosso come ti aspettavi o ti ha sorpreso?",
+     "c": "Fai la prova con 'park, town, cat' e poi con 'papà, torta, casa', contando quante volte salta il foglio."
+    },
+    "pt": {
+     "t": "O teste do papel",
+     "g": "Usa uma tira de papel à frente dos lábios para ver o sopro de ar depois de p, t e k.",
+     "p": [
+      "Segura uma tira fina de papel ou um lenço a poucos centímetros da boca, solta.",
+      "Diz o inglês 'pen' ou o alemão 'Paul': o papel deve saltar. Com 'Ben' ou 'ball' mal se mexe.",
+      "Com o p português, como em 'papá' ou 'pão', o papel deve ficar quase parado."
+     ],
+     "q": "O papel mexeu-se como esperavas ou surpreendeu-te?",
+     "c": "Faz o teste com 'park, town, cat' e depois com 'pato, tomate, casa', contando quantas vezes o papel salta."
+    },
+    "pt_BR": {
+     "t": "O teste do papel",
+     "g": "Use uma tira de papel na frente dos lábios para ver o sopro de ar depois de p, t e k.",
+     "p": [
+      "Segure uma tira fina de papel ou um lenço a poucos centímetros da boca, solta.",
+      "Diga o inglês 'pen' ou o alemão 'Paul': o papel deve pular. Com 'Ben' ou 'ball' ele quase não mexe.",
+      "Com o p do português, como em 'papai' ou 'pão', o papel deve ficar quase parado."
+     ],
+     "q": "O papel se mexeu como você esperava ou te surpreendeu?",
+     "c": "Faça o teste com 'park, town, cat' e depois com 'pato, tomate, casa', contando quantas vezes o papel pula."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Teeth on lip: f and v",
+     "g": "Place your upper teeth gently on your lower lip for f and v, and stop mixing up v and b.",
+     "p": [
+      "For f, rest your upper front teeth lightly on your lower lip and blow air through the gap: 'fan'.",
+      "For v, keep exactly the same position and switch the voice on, so it buzzes: 'van'.",
+      "Learners whose language has no v often say b instead, so 'very' becomes 'berry'; check the teeth touch the lip."
+     ],
+     "q": "Is there a word with v that you find tricky to say?",
+     "c": "Say 'fan, van, ban' slowly in a mirror, checking that your teeth touch your lip for f and v but not for b."
+    },
+    "de": {
+     "t": "Zähne auf der Lippe: f und w",
+     "g": "Setz die oberen Zähne leicht auf die Unterlippe für f und w, und verwechsle w und b nicht mehr.",
+     "p": [
+      "Für f legst du die oberen Schneidezähne leicht auf die Unterlippe und bläst Luft hindurch: „Fisch“.",
+      "Für w bleibt die Stellung genau gleich, nur die Stimme kommt dazu und summt: „Wasser“.",
+      "Wer keinen w-Laut kennt, sagt oft b, dann wird englisch 'very' zu 'berry'; prüfe, ob Zähne die Lippe berühren."
+     ],
+     "q": "Gibt es ein Wort mit w oder v, das dir schwerfällt?",
+     "c": "Sag langsam „Fall, Wall, Ball“ vor dem Spiegel und prüfe: Zähne auf der Lippe bei f und w, nicht bei b."
+    },
+    "es": {
+     "t": "Dientes sobre el labio: f y v",
+     "g": "Apoya los dientes de arriba en el labio inferior para la f y la v de otros idiomas, sin confundir v y b.",
+     "p": [
+      "Para la f, apoya suavemente los dientes superiores en el labio de abajo y sopla: 'foca'.",
+      "La v del inglés, el francés o el italiano usa la misma posición con voz, que vibra: inglés 'van'.",
+      "Quien habla español suele decir b, y el inglés 'very' suena como 'berry'; comprueba que los dientes toquen el labio."
+     ],
+     "q": "¿Hay alguna palabra con v en otro idioma que te cueste decir?",
+     "c": "Di 'fan, van, ban' despacio frente al espejo: dientes en el labio para f y v, pero no para b."
+    },
+    "fr": {
+     "t": "Les dents sur la lèvre : f et v",
+     "g": "Pose doucement les dents du haut sur la lèvre inférieure pour f et v, sans confondre v et b.",
+     "p": [
+      "Pour f, pose légèrement les incisives du haut sur la lèvre du bas et souffle : « fil ».",
+      "Pour v, garde exactement la même position et ajoute la voix, qui vibre : « ville ».",
+      "Les personnes dont la langue n'a pas de v disent souvent b : « vin » devient « bain » ; vérifie le contact dent-lèvre."
+     ],
+     "q": "Y a-t-il un mot avec v qui te semble difficile à dire dans une autre langue ?",
+     "c": "Dis lentement « faim, vin, bain » devant un miroir : dents sur la lèvre pour f et v, pas pour b."
+    },
+    "it": {
+     "t": "Denti sul labbro: f e v",
+     "g": "Appoggia i denti superiori sul labbro inferiore per f e v, senza più confondere v e b.",
+     "p": [
+      "Per la f appoggia leggermente gli incisivi superiori sul labbro inferiore e soffia: 'fame'.",
+      "Per la v tieni la stessa identica posizione e accendi la voce, che vibra: 'vino'.",
+      "Chi parla una lingua senza v spesso dice b, e 'vino' diventa 'bino'; controlla che i denti tocchino il labbro."
+     ],
+     "q": "C'è una parola con la v che ti risulta difficile in un'altra lingua?",
+     "c": "Di' lentamente 'fino, vino, bino' allo specchio: denti sul labbro per f e v, ma non per b."
+    },
+    "pt": {
+     "t": "Dentes no lábio: f e v",
+     "g": "Encosta os dentes de cima ao lábio inferior para o f e o v, sem trocar v por b.",
+     "p": [
+      "Para o f, encosta levemente os dentes de cima ao lábio de baixo e sopra: 'faca'.",
+      "Para o v, mantém exatamente a mesma posição e liga a voz, que vibra: 'vaca'.",
+      "Quem fala espanhol ou certas variedades do norte de Portugal troca às vezes v por b; confirma o toque no lábio."
+     ],
+     "q": "Há alguma palavra com v que te custe dizer noutra língua?",
+     "c": "Diz devagar 'faca, vaca, baca' ao espelho: dentes no lábio para f e v, mas não para b."
+    },
+    "pt_BR": {
+     "t": "Dentes no lábio: f e v",
+     "g": "Encoste os dentes de cima no lábio inferior para o f e o v, sem trocar v por b.",
+     "p": [
+      "Para o f, encoste de leve os dentes de cima no lábio de baixo e sopre: 'faca'.",
+      "Para o v, mantenha exatamente a mesma posição e ligue a voz, que vibra: 'vaca'.",
+      "Quem fala espanhol costuma trocar v por b, e 'vaca' soa quase 'baca'; confira se os dentes tocam o lábio."
+     ],
+     "q": "Tem alguma palavra com v que é difícil para você em outro idioma?",
+     "c": "Diga devagar 'faca, vaca, baca' no espelho: dentes no lábio para f e v, mas não para b."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "B and V in Spanish",
+     "g": "Learn why Spanish 'b' and 'v' sound the same and turn soft between vowels.",
+     "p": [
+      "In Spanish, 'b' and 'v' are one sound: 'vaca' (cow) and 'baca' (roof rack) are said exactly alike.",
+      "At the start, or after m and n, it is a full b with closed lips: 'vino', 'un vaso', 'bueno'.",
+      "Between vowels the lips almost touch but let air slip through, a soft b: 'uva', 'lobo', 'la vaca'."
+     ],
+     "q": "Did you expect Spanish to have a separate v sound like English?",
+     "c": "Say 'bebé', 'uva' and 'lobo' and let the middle b get softer, with lips barely touching."
+    },
+    "de": {
+     "t": "B und V im Spanischen",
+     "g": "Lerne, warum spanisches b und v gleich klingen und zwischen Vokalen weich werden.",
+     "p": [
+      "Im Spanischen sind b und v ein Laut: 'vaca' (Kuh) und 'baca' (Dachträger) klingen genau gleich.",
+      "Am Anfang oder nach m und n ist es ein volles b mit geschlossenen Lippen: 'vino', 'un vaso', 'bueno'.",
+      "Zwischen Vokalen berühren sich die Lippen fast, lassen aber Luft durch, ein weiches b: 'uva', 'lobo'."
+     ],
+     "q": "Hättest du gedacht, dass das Spanische kein eigenes v wie das deutsche w hat?",
+     "c": "Sag 'bebé', 'uva' und 'lobo' und lass das mittlere b weicher werden, die Lippen berühren sich kaum."
+    },
+    "es": {
+     "t": "La B y la V en español",
+     "g": "Entiende por qué en español la b y la v suenan igual y se suavizan entre vocales.",
+     "p": [
+      "En español, b y v son un solo sonido: 'vaca' y 'baca' se pronuncian exactamente igual.",
+      "Al principio, o tras m y n, es una b completa con los labios cerrados: 'vino', 'un vaso', 'bueno'.",
+      "Entre vocales los labios casi se tocan pero dejan pasar aire, una b suave: 'uva', 'lobo', 'la vaca'."
+     ],
+     "q": "¿Sabías que la diferencia entre b y v en español es solo de escritura?",
+     "c": "Di 'bebé', 'uva' y 'lobo' y deja que la b del medio sea más suave, con los labios apenas rozándose."
+    },
+    "fr": {
+     "t": "Le B et le V en espagnol",
+     "g": "Découvre pourquoi le b et le v espagnols se prononcent pareil et s'adoucissent entre deux voyelles.",
+     "p": [
+      "En espagnol, b et v sont un seul son : 'vaca' (vache) et 'baca' (galerie de toit) se disent pareil.",
+      "Au début, ou après m et n, c'est un vrai b, lèvres fermées : 'vino', 'un vaso', 'bueno'.",
+      "Entre deux voyelles, les lèvres se frôlent sans se fermer, un b doux : 'uva', 'lobo', 'la vaca'."
+     ],
+     "q": "T'attendais-tu à ce que l'espagnol n'ait pas de vrai son v comme en français ?",
+     "c": "Dis 'bebé', 'uva' et 'lobo' et laisse le b du milieu s'adoucir, les lèvres se touchant à peine."
+    },
+    "it": {
+     "t": "La B e la V in spagnolo",
+     "g": "Scopri perché in spagnolo b e v suonano uguali e si addolciscono tra due vocali.",
+     "p": [
+      "In spagnolo b e v sono un solo suono: 'vaca' (mucca) e 'baca' (portapacchi) si dicono uguali.",
+      "All'inizio, o dopo m e n, è una b piena a labbra chiuse: 'vino', 'un vaso', 'bueno'.",
+      "Tra vocali le labbra quasi si toccano ma lasciano passare aria, una b morbida: 'uva', 'lobo'."
+     ],
+     "q": "Ti aspettavi che lo spagnolo non avesse una vera v come l'italiano?",
+     "c": "Di' 'bebé', 'uva' e 'lobo' e lascia la b centrale più morbida, con le labbra che si sfiorano appena."
+    },
+    "pt": {
+     "t": "O B e o V em espanhol",
+     "g": "Percebe porque em espanhol o b e o v soam igual e ficam suaves entre vogais.",
+     "p": [
+      "Em espanhol, b e v são um só som: 'vaca' e 'baca' (bagageira) dizem-se exatamente igual.",
+      "No início, ou depois de m e n, é um b completo de lábios fechados: 'vino', 'un vaso', 'bueno'.",
+      "Entre vogais os lábios quase se tocam mas deixam passar ar, um b suave: 'uva', 'lobo', 'la vaca'."
+     ],
+     "q": "Esperavas que o espanhol não tivesse um v verdadeiro como o português?",
+     "c": "Diz 'bebé', 'uva' e 'lobo' à espanhola e deixa o b do meio mais suave, com os lábios quase sem tocar."
+    },
+    "pt_BR": {
+     "t": "O B e o V em espanhol",
+     "g": "Entenda por que em espanhol o b e o v soam igual e ficam suaves entre vogais.",
+     "p": [
+      "Em espanhol, b e v são um só som: 'vaca' e 'baca' (bagageiro) são ditas exatamente igual.",
+      "No começo, ou depois de m e n, é um b completo de lábios fechados: 'vino', 'un vaso', 'bueno'.",
+      "Entre vogais os lábios quase se tocam mas deixam o ar passar, um b suave: 'uva', 'lobo', 'la vaca'."
+     ],
+     "q": "Você esperava que o espanhol não tivesse um v de verdade como o português?",
+     "c": "Diga 'bebé', 'uva' e 'lobo' do jeito espanhol, deixando o b do meio mais suave, com os lábios quase sem tocar."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where t and d live",
+     "g": "Find the tongue spot for t and d: on the teeth in Spanish, French and Italian, on the ridge in English and German.",
+     "p": [
+      "In Spanish, French, Italian and Portuguese, the tongue tip touches the back of the upper front teeth.",
+      "In English and German, the tongue tip touches the ridge just behind the teeth, a little further back.",
+      "This small shift changes the colour of the sound, so moving your tongue makes you sound more natural."
+     ],
+     "q": "Before today, had you ever noticed where your tongue goes for t?",
+     "c": "Say Italian 'tutto' with your tongue on your teeth, then English 'top' with it on the ridge; feel the move."
+    },
+    "de": {
+     "t": "Wo t und d wohnen",
+     "g": "Finde die Zungenstelle für t und d: an den Zähnen im Spanischen und Italienischen, am Zahndamm im Deutschen.",
+     "p": [
+      "Im Spanischen, Französischen, Italienischen und Portugiesischen berührt die Zungenspitze die oberen Schneidezähne.",
+      "Im Deutschen und Englischen berührt die Zungenspitze den Zahndamm, etwas weiter hinten.",
+      "Diese kleine Verschiebung verändert den Klang, also klingst du mit der richtigen Zungenstelle natürlicher."
+     ],
+     "q": "Hast du vor heute schon einmal bemerkt, wohin deine Zunge beim t geht?",
+     "c": "Sag italienisch 'tutto' mit der Zunge an den Zähnen, dann „Tor“ mit der Zunge am Zahndamm; spür den Wechsel."
+    },
+    "es": {
+     "t": "Dónde viven la t y la d",
+     "g": "Encuentra dónde va la lengua para t y d: en los dientes en español, en los alvéolos en inglés y alemán.",
+     "p": [
+      "En español, francés, italiano y portugués, la punta de la lengua toca la cara interna de los dientes de arriba.",
+      "En inglés y alemán, la punta toca los alvéolos, el bultito detrás de los dientes, un poco más atrás.",
+      "Ese pequeño cambio modifica el color del sonido, así que mover la lengua te hará sonar más natural."
+     ],
+     "q": "Antes de hoy, ¿te habías fijado en dónde pones la lengua para decir t?",
+     "c": "Di 'todo' con la lengua en los dientes y luego el inglés 'top' con la lengua en los alvéolos; nota el cambio."
+    },
+    "fr": {
+     "t": "Où vivent le t et le d",
+     "g": "Trouve la place de la langue pour t et d : sur les dents en français, sur les alvéoles en anglais et allemand.",
+     "p": [
+      "En français, espagnol, italien et portugais, le bout de la langue touche l'arrière des incisives du haut.",
+      "En anglais et en allemand, il touche les alvéoles, la petite bosse juste derrière les dents.",
+      "Ce petit déplacement change la couleur du son : bien placer la langue te rend plus naturel."
+     ],
+     "q": "Avant aujourd'hui, avais-tu remarqué où va ta langue pour dire t ?",
+     "c": "Dis « tout » langue contre les dents, puis l'anglais 'top' langue sur les alvéoles, et sens le déplacement."
+    },
+    "it": {
+     "t": "Dove vivono la t e la d",
+     "g": "Trova dove va la lingua per t e d: sui denti in italiano, sugli alveoli in inglese e tedesco.",
+     "p": [
+      "In italiano, spagnolo, francese e portoghese la punta della lingua tocca il retro degli incisivi superiori.",
+      "In inglese e tedesco la punta tocca gli alveoli, il rilievo subito dietro i denti, un po' più indietro.",
+      "Questo piccolo spostamento cambia il colore del suono: spostare la lingua ti fa suonare più naturale."
+     ],
+     "q": "Prima di oggi avevi mai notato dove va la lingua quando dici t?",
+     "c": "Di' 'tutto' con la lingua sui denti, poi l'inglese 'top' con la lingua sugli alveoli; senti lo spostamento."
+    },
+    "pt": {
+     "t": "Onde vivem o t e o d",
+     "g": "Descobre onde fica a língua para t e d: nos dentes em português, nos alvéolos em inglês e alemão.",
+     "p": [
+      "Em português, espanhol, francês e italiano, a ponta da língua toca a parte de trás dos dentes de cima.",
+      "Em inglês e alemão, a ponta toca os alvéolos, a saliência logo atrás dos dentes, um pouco mais atrás.",
+      "Esta pequena mudança altera a cor do som, por isso mover a língua faz-te soar mais natural."
+     ],
+     "q": "Antes de hoje, já tinhas reparado onde pões a língua para dizer t?",
+     "c": "Diz 'tudo' com a língua nos dentes e depois o inglês 'top' com a língua nos alvéolos; sente a mudança."
+    },
+    "pt_BR": {
+     "t": "Onde moram o t e o d",
+     "g": "Descubra onde fica a língua para t e d: nos dentes em português, nos alvéolos em inglês e alemão.",
+     "p": [
+      "Em português, espanhol, francês e italiano, a ponta da língua toca a parte de trás dos dentes de cima.",
+      "Em inglês e alemão, a ponta toca os alvéolos, a saliência logo atrás dos dentes, um pouco mais para trás.",
+      "No Brasil, antes de i, o t e o d costumam virar 'tch' e 'dj', como em 'tia' e 'dia'."
+     ],
+     "q": "Antes de hoje, você já tinha reparado onde coloca a língua para falar t?",
+     "c": "Diga 'tatu' com a língua nos dentes e depois o inglês 'top' com a língua nos alvéolos; sinta a mudança."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snake and bee: s and z",
+     "g": "Practise the hissing s and the buzzing z, and switch smoothly between them.",
+     "p": [
+      "For s, keep your tongue tip just behind your upper teeth and push a thin stream of air: a snake's hiss.",
+      "For z, keep the same tongue position and switch on your voice: a bee's buzz, as in 'zoo'.",
+      "Pairs like English 'sip' and 'zip' or French 'poisson' and 'poison' show how much this difference matters."
+     ],
+     "q": "Does your language have both s and z, or just one of them?",
+     "c": "Hiss like a snake for five seconds, then buzz like a bee, without moving your tongue; repeat three times."
+    },
+    "de": {
+     "t": "Schlange und Biene: s und z",
+     "g": "Übe das zischende s und das summende s und wechsle weich zwischen ihnen.",
+     "p": [
+      "Für das scharfe s bleibt die Zungenspitze hinter den oberen Zähnen und ein dünner Luftstrom zischt: „Bus“.",
+      "Für das weiche s bleibt die Zunge gleich, nur die Stimme summt mit wie eine Biene: „Sonne“, „Rose“.",
+      "Paare wie „reißen“ und „reisen“ oder französisch 'poisson' und 'poison' zeigen, wie wichtig der Unterschied ist."
+     ],
+     "q": "Hat deine Sprache beide s-Laute oder nur einen davon?",
+     "c": "Zisch fünf Sekunden wie eine Schlange, dann summe wie eine Biene, ohne die Zunge zu bewegen; dreimal."
+    },
+    "es": {
+     "t": "Serpiente y abeja: s y z",
+     "g": "Practica la s que silba y la z que zumba, y cambia con suavidad entre ellas.",
+     "p": [
+      "Para la s, deja la punta de la lengua detrás de los dientes de arriba y suelta un hilo de aire: el silbido de una serpiente.",
+      "Para la z zumbadora del inglés o el francés, misma posición con voz: el zumbido de una abeja, como en 'zoo'.",
+      "Pares como el inglés 'sip' y 'zip' o el francés 'poisson' y 'poison' muestran cuánto importa esta diferencia."
+     ],
+     "q": "¿Tu idioma tiene los dos sonidos, s y z, o solo uno?",
+     "c": "Silba como una serpiente cinco segundos y luego zumba como una abeja sin mover la lengua; repite tres veces."
+    },
+    "fr": {
+     "t": "Serpent et abeille : s et z",
+     "g": "Entraîne-toi au s qui siffle et au z qui bourdonne, et passe de l'un à l'autre en douceur.",
+     "p": [
+      "Pour s, garde le bout de la langue derrière les dents du haut et pousse un mince filet d'air : le serpent.",
+      "Pour z, même position de langue, mais la voix s'allume : l'abeille, comme dans « zoo » ou « rose ».",
+      "Des paires comme « poisson » et « poison » ou « dessert » et « désert » montrent l'importance de ce contraste."
+     ],
+     "q": "Ta langue maternelle a-t-elle les deux sons, s et z, ou un seul ?",
+     "c": "Siffle comme un serpent cinq secondes, puis bourdonne comme une abeille sans bouger la langue ; trois fois."
+    },
+    "it": {
+     "t": "Serpente e ape: s e z",
+     "g": "Esercitati con la s che sibila e quella che ronza, e passa dall'una all'altra senza scatti.",
+     "p": [
+      "Per la s sorda tieni la punta della lingua dietro gli incisivi superiori e spingi un filo d'aria: il serpente.",
+      "Per la s sonora, stessa posizione con la voce accesa: il ronzio dell'ape, come in 'rosa' al Nord o nell'inglese 'zoo'.",
+      "Coppie come l'inglese 'sip' e 'zip' o il francese 'poisson' e 'poison' mostrano quanto conti questa differenza."
+     ],
+     "q": "Nella tua lingua ci sono entrambi i suoni, s sorda e sonora, o solo uno?",
+     "c": "Sibila come un serpente per cinque secondi, poi ronza come un'ape senza muovere la lingua; ripeti tre volte."
+    },
+    "pt": {
+     "t": "Cobra e abelha: s e z",
+     "g": "Pratica o s que sibila e o z que zumbe, e passa de um para o outro com suavidade.",
+     "p": [
+      "Para o s, mantém a ponta da língua atrás dos dentes de cima e solta um fio de ar: o silvo de uma cobra.",
+      "Para o z, a mesma posição com a voz ligada: o zumbido de uma abelha, como em 'zero' ou 'casa'.",
+      "Pares como 'caça' e 'casa' ou 'assa' e 'asa' mostram como esta diferença muda o significado."
+     ],
+     "q": "Na tua língua materna existem os dois sons, s e z, ou só um?",
+     "c": "Silva como uma cobra cinco segundos e depois zumbe como uma abelha sem mexer a língua; repete três vezes."
+    },
+    "pt_BR": {
+     "t": "Cobra e abelha: s e z",
+     "g": "Pratique o s que chia e o z que zumbe, e passe de um para o outro com suavidade.",
+     "p": [
+      "Para o s, deixe a ponta da língua atrás dos dentes de cima e solte um fio de ar: o chiado de uma cobra.",
+      "Para o z, a mesma posição com a voz ligada: o zumbido de uma abelha, como em 'zero' ou 'casa'.",
+      "Pares como 'caça' e 'casa' ou 'assa' e 'asa' mostram como essa diferença muda o significado."
+     ],
+     "q": "No seu idioma existem os dois sons, s e z, ou só um?",
+     "c": "Faça o som de cobra por cinco segundos e depois zumba como abelha sem mexer a língua; repita três vezes."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The sh and zh family",
+     "g": "Make sh and zh with lips pushed forward, as in English 'ship', French 'chat', Portuguese 'chá' and French 'je'.",
+     "p": [
+      "For sh, pull your tongue a little back from s, push your lips forward and let air rush out: 'ship', 'chat'.",
+      "For zh, keep that same shape and add voice: the 's' in English 'measure', French 'je' or Portuguese 'janela'.",
+      "The rounded lips are the secret; with flat lips, sh can slip back into s and 'she' sounds like 'see'."
+     ],
+     "q": "Which words with sh or zh do you use most often?",
+     "c": "Say 'sss' then round your lips and slide your tongue back into 'shhh'; then add voice for 'zhhh'."
+    },
+    "de": {
+     "t": "Die sch-Familie",
+     "g": "Bilde sch und sein stimmhaftes Gegenstück mit vorgeschobenen Lippen, wie in „Schiff“, französisch 'je'.",
+     "p": [
+      "Für sch ziehst du die Zunge etwas hinter die s-Stellung, schiebst die Lippen vor und lässt Luft rauschen: „Schiff“.",
+      "Für die stimmhafte Variante kommt Stimme dazu: das g in „Garage“, französisch 'je' oder portugiesisch 'janela'.",
+      "Die gerundeten Lippen sind das Geheimnis; mit flachen Lippen rutscht sch zum s, und „Schein“ klingt wie „sein“."
+     ],
+     "q": "Welche Wörter mit sch benutzt du am häufigsten?",
+     "c": "Sag „sss“, runde dann die Lippen und schieb die Zunge zurück zu „schhh“; dann mit Stimme wie in „Garage“."
+    },
+    "es": {
+     "t": "La familia sh y zh",
+     "g": "Haz los sonidos sh y zh con los labios hacia delante, como en inglés 'ship', francés 'chat' y portugués 'chá'.",
+     "p": [
+      "Para sh, lleva la lengua un poco más atrás que para la s, adelanta los labios y deja salir el aire: 'ship', 'chat'.",
+      "Para zh, misma forma con voz: la 's' del inglés 'measure', el francés 'je' o el portugués 'janela'.",
+      "Los labios redondeados son el secreto; con los labios planos, sh se convierte en s y 'she' suena como 'see'."
+     ],
+     "q": "¿Conoces palabras de otros idiomas con sh o zh que te gusten?",
+     "c": "Di 'sss', redondea los labios y lleva la lengua atrás hasta 'shhh'; luego añade voz para 'zhhh'."
+    },
+    "fr": {
+     "t": "La famille ch et j",
+     "g": "Fais ch et j avec les lèvres en avant, comme dans « chat », « je », l'anglais 'ship' ou le portugais 'chá'.",
+     "p": [
+      "Pour ch, recule un peu la langue par rapport au s, avance les lèvres et laisse filer l'air : « chat », 'ship'.",
+      "Pour j, garde la même forme et ajoute la voix : « je », « rouge », comme le portugais 'janela'.",
+      "Les lèvres arrondies sont le secret : avec des lèvres plates, ch glisse vers s et « chou » sonne comme « sou »."
+     ],
+     "q": "Quels mots avec ch ou j utilises-tu le plus souvent ?",
+     "c": "Dis « sss », arrondis les lèvres et recule la langue jusqu'à « chhh » ; ajoute ensuite la voix pour « jjj »."
+    },
+    "it": {
+     "t": "La famiglia sc e j francese",
+     "g": "Fai il suono sc e il suo gemello sonoro con le labbra in avanti, come in 'scena', francese 'je' o portoghese 'chá'.",
+     "p": [
+      "Per sc porta la lingua un po' più indietro che per la s, spingi le labbra avanti e lascia uscire l'aria: 'scena', 'pesce'.",
+      "Per la versione sonora aggiungi la voce: la j francese di 'je', la s inglese di 'measure', la j portoghese di 'janela'.",
+      "Le labbra arrotondate sono il segreto: con le labbra piatte sc scivola verso s e 'scena' sembra 'sena'."
+     ],
+     "q": "Quali parole con sc usi più spesso?",
+     "c": "Di' 'sss', poi arrotonda le labbra e porta indietro la lingua fino a 'sciii'; poi aggiungi voce come nel francese 'je'."
+    },
+    "pt": {
+     "t": "A família ch e j",
+     "g": "Faz o ch e o j com os lábios para a frente, como em 'chá', 'janela', no francês 'chat' e no inglês 'ship'.",
+     "p": [
+      "Para o ch, recua um pouco a língua em relação ao s, projeta os lábios e deixa o ar sair: 'chá', 'chave'.",
+      "Para o j, mantém a mesma forma e liga a voz: 'janela', 'gente', como o francês 'je'.",
+      "Os lábios arredondados são o segredo: com lábios planos, o ch escorrega para s e 'chá' soa quase como 'sá'."
+     ],
+     "q": "Que palavras com ch ou j usas mais vezes?",
+     "c": "Diz 'sss', arredonda os lábios e recua a língua até 'chhh'; depois liga a voz para 'jjj'."
+    },
+    "pt_BR": {
+     "t": "A família ch e j",
+     "g": "Faça o ch e o j com os lábios para frente, como em 'chá', 'janela', no francês 'chat' e no inglês 'ship'.",
+     "p": [
+      "Para o ch, recue um pouco a língua em relação ao s, projete os lábios e deixe o ar sair: 'chá', 'chave'.",
+      "Para o j, mantenha a mesma forma e ligue a voz: 'janela', 'gente', como o francês 'je'.",
+      "Os lábios arredondados são o segredo: com lábios planos, o ch escorrega para s e 'chá' soa quase como 'sá'."
+     ],
+     "q": "Quais palavras com ch ou j você usa mais?",
+     "c": "Diga 'sss', arredonde os lábios e recue a língua até 'chhh'; depois ligue a voz para 'jjj'."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Back of the tongue: k and g",
+     "g": "Make k and g where the back of the tongue meets the soft palate, and spot hard and soft g in different languages.",
+     "p": [
+      "For k and g, the back of your tongue rises and presses against the soft palate, then releases.",
+      "K has no voice, g has voice: 'cap' and 'gap', or Spanish 'casa' and 'gasa'.",
+      "Many languages soften g before e and i: English 'gem', French 'genou', Italian 'gelato', Spanish 'gente'."
+     ],
+     "q": "Did you know the letter g can sound so different from one language to another?",
+     "c": "Say 'go, gate, gift' then 'gem, giant'; notice when the back of the tongue touches and when it does not."
+    },
+    "de": {
+     "t": "Hinterzunge: k und g",
+     "g": "Bilde k und g dort, wo die Hinterzunge das Gaumensegel trifft, und erkenne hartes und weiches g.",
+     "p": [
+      "Für k und g hebt sich der hintere Zungenrücken, drückt gegen das Gaumensegel und löst sich wieder.",
+      "K ist stimmlos, g stimmhaft: „Kasse“ und „Gasse“, „Kern“ und „gern“.",
+      "Viele Sprachen machen g vor e und i weich: englisch 'gem', französisch 'genou', italienisch 'gelato'."
+     ],
+     "q": "Wusstest du, dass der Buchstabe g von Sprache zu Sprache so verschieden klingen kann?",
+     "c": "Sag „Gans, gut, geben“ und dann italienisch 'gelato'; merke, wann die Hinterzunge anstößt und wann nicht."
+    },
+    "es": {
+     "t": "El fondo de la lengua: k y g",
+     "g": "Forma k y g donde la parte de atrás de la lengua toca el velo del paladar, y distingue g fuerte y suave.",
+     "p": [
+      "Para k y g, el dorso de la lengua sube, presiona contra el velo del paladar y luego se suelta.",
+      "La k no tiene voz y la g sí: 'casa' y 'gasa', 'coma' y 'goma'.",
+      "Muchos idiomas cambian la g ante e e i: español 'gente' (como j), inglés 'gem', italiano 'gelato'."
+     ],
+     "q": "¿Sabías que la letra g puede sonar tan distinta de un idioma a otro?",
+     "c": "Di 'gato, gota, guiso' y luego 'gente, gira'; nota cuándo toca el fondo de la lengua y cuándo no."
+    },
+    "fr": {
+     "t": "Le fond de la langue : k et g",
+     "g": "Forme k et g là où l'arrière de la langue touche le voile du palais, et repère le g dur et le g doux.",
+     "p": [
+      "Pour k et g, l'arrière de la langue monte, se plaque contre le voile du palais, puis se relâche.",
+      "K est sourd, g est sonore : « car » et « gare », « col » et « gol ».",
+      "Beaucoup de langues adoucissent le g devant e et i : « genou », « girafe », italien 'gelato', anglais 'gem'."
+     ],
+     "q": "Savais-tu que la lettre g pouvait sonner si différemment d'une langue à l'autre ?",
+     "c": "Dis « gare, goût, guide » puis « genou, girafe » et remarque quand l'arrière de la langue touche ou non."
+    },
+    "it": {
+     "t": "Il dorso della lingua: k e g",
+     "g": "Forma k e g dove il dorso della lingua incontra il palato molle e distingui g dura e g dolce.",
+     "p": [
+      "Per k e g il dorso della lingua sale, preme contro il palato molle e poi si stacca.",
+      "La c dura è sorda, la g dura è sonora: 'casa' e 'gatto', 'cara' e 'gara'.",
+      "Molte lingue addolciscono la g davanti a e e i: 'gelato', 'giro', francese 'genou', inglese 'gem'."
+     ],
+     "q": "Sapevi che la lettera g può suonare così diversa da una lingua all'altra?",
+     "c": "Di' 'gatto, gola, ghiro' e poi 'gelato, giro'; nota quando il dorso della lingua tocca e quando no."
+    },
+    "pt": {
+     "t": "O fundo da língua: k e g",
+     "g": "Forma o k e o g onde a parte de trás da língua toca o véu palatino, e distingue o g duro do g suave.",
+     "p": [
+      "Para k e g, o dorso da língua sobe, encosta ao véu palatino e depois solta-se.",
+      "O k não tem voz e o g tem: 'cato' e 'gato', 'cola' e 'gola'.",
+      "Muitas línguas suavizam o g antes de e e i: 'gente' e 'girafa' (como j), italiano 'gelato', inglês 'gem'."
+     ],
+     "q": "Sabias que a letra g pode soar tão diferente de uma língua para outra?",
+     "c": "Diz 'gato, gota, guia' e depois 'gente, girafa'; repara quando o fundo da língua toca e quando não."
+    },
+    "pt_BR": {
+     "t": "O fundo da língua: k e g",
+     "g": "Forme o k e o g onde a parte de trás da língua toca o palato mole, e diferencie o g duro do g suave.",
+     "p": [
+      "Para k e g, o dorso da língua sobe, encosta no palato mole e depois se solta.",
+      "O k não tem voz e o g tem: 'cato' e 'gato', 'cola' e 'gola'.",
+      "Muitas línguas suavizam o g antes de e e i: 'gente' e 'girafa' (som de j), italiano 'gelato', inglês 'gem'."
+     ],
+     "q": "Você sabia que a letra g pode soar tão diferente de um idioma para outro?",
+     "c": "Diga 'gato, gota, guia' e depois 'gente, girafa'; repare quando o fundo da língua toca e quando não."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Humming sounds: m, n, ng",
+     "g": "Send air through your nose for m, n and ng, and feel your nose vibrate as you hum.",
+     "p": [
+      "For m the lips close, for n the tongue tip touches the ridge, and for ng the back of the tongue rises.",
+      "In all three the air goes out through your nose; touch the side of your nose and feel it buzz.",
+      "Ng is the sound at the end of English 'sing' and German 'singen'; there is no hard g after it."
+     ],
+     "q": "Do you know a language where ng can appear at the start of a word?",
+     "c": "Hum 'mmm', then 'nnn', then 'nnng' with a finger on your nose, feeling the buzz move back in your mouth."
+    },
+    "de": {
+     "t": "Summlaute: m, n, ng",
+     "g": "Schick die Luft für m, n und ng durch die Nase und spür, wie sie beim Summen vibriert.",
+     "p": [
+      "Beim m schließen sich die Lippen, beim n berührt die Zungenspitze den Zahndamm, beim ng hebt sich die Hinterzunge.",
+      "Bei allen dreien strömt die Luft durch die Nase; berühr deinen Nasenflügel und spür das Vibrieren.",
+      "Ng ist der Laut am Ende von „singen“ und „lang“; danach folgt kein hartes g."
+     ],
+     "q": "Kennst du eine Sprache, in der ng am Wortanfang stehen kann?",
+     "c": "Summe „mmm“, dann „nnn“, dann „ng“ mit dem Finger an der Nase und spür, wie der Laut nach hinten wandert."
+    },
+    "es": {
+     "t": "Sonidos que zumban: m, n, ng",
+     "g": "Haz salir el aire por la nariz para m, n y ng, y siente cómo vibra al tararear.",
+     "p": [
+      "Para la m se cierran los labios, para la n la punta de la lengua toca los alvéolos y para ng sube el dorso.",
+      "En los tres el aire sale por la nariz; toca un lado de tu nariz y nota la vibración.",
+      "Ng es el sonido final del inglés 'sing' y de la n de 'tengo' o 'banco' en español, sin g fuerte detrás."
+     ],
+     "q": "¿Conoces algún idioma en el que ng pueda aparecer al principio de una palabra?",
+     "c": "Tararea 'mmm', luego 'nnn' y luego 'nnng' con un dedo en la nariz, sintiendo cómo el zumbido va hacia atrás."
+    },
+    "fr": {
+     "t": "Les sons qui bourdonnent : m, n, ng",
+     "g": "Fais passer l'air par le nez pour m, n et ng, et sens ton nez vibrer quand tu fredonnes.",
+     "p": [
+      "Pour m les lèvres se ferment, pour n la langue touche les alvéoles, pour ng l'arrière de la langue monte.",
+      "Dans les trois, l'air sort par le nez : touche l'aile de ton nez et sens-la vibrer.",
+      "Ng est le son final de l'anglais 'sing' et de l'allemand 'singen', comme dans « parking », sans g dur après."
+     ],
+     "q": "Connais-tu une langue où ng peut se trouver en début de mot ?",
+     "c": "Fredonne « mmm », puis « nnn », puis « ng », un doigt sur le nez, en sentant le son reculer dans la bouche."
+    },
+    "it": {
+     "t": "Suoni che ronzano: m, n, ng",
+     "g": "Fai uscire l'aria dal naso per m, n e ng e senti il naso vibrare mentre canticchi.",
+     "p": [
+      "Per la m si chiudono le labbra, per la n la punta della lingua tocca gli alveoli, per ng sale il dorso.",
+      "In tutti e tre l'aria esce dal naso: tocca un lato del naso e senti la vibrazione.",
+      "Ng è il suono finale dell'inglese 'sing', simile alla n di 'banca' o 'lungo', senza una g dura dopo."
+     ],
+     "q": "Conosci una lingua in cui ng può stare all'inizio di una parola?",
+     "c": "Canticchia 'mmm', poi 'nnn', poi 'nnng' con un dito sul naso, sentendo il ronzio spostarsi indietro."
+    },
+    "pt": {
+     "t": "Sons que zumbem: m, n, ng",
+     "g": "Faz sair o ar pelo nariz para m, n e ng, e sente o nariz a vibrar quando cantarolas.",
+     "p": [
+      "Para o m fecham-se os lábios, para o n a ponta da língua toca os alvéolos e para ng sobe o dorso da língua.",
+      "Nos três o ar sai pelo nariz: toca de lado no nariz e sente a vibração.",
+      "Ng é o som final do inglês 'sing' e do alemão 'singen', sem um g duro a seguir."
+     ],
+     "q": "Conheces alguma língua em que ng possa aparecer no início de uma palavra?",
+     "c": "Cantarola 'mmm', depois 'nnn' e depois 'nnng' com um dedo no nariz, sentindo o zumbido a recuar."
+    },
+    "pt_BR": {
+     "t": "Sons que zumbem: m, n, ng",
+     "g": "Faça o ar sair pelo nariz para m, n e ng, e sinta o nariz vibrar quando cantarola.",
+     "p": [
+      "Para o m os lábios se fecham, para o n a ponta da língua toca os alvéolos e para ng sobe o dorso da língua.",
+      "Nos três o ar sai pelo nariz: toque a lateral do nariz e sinta a vibração.",
+      "Ng é o som final do inglês 'sing' e do alemão 'singen', sem um g duro depois."
+     ],
+     "q": "Você conhece algum idioma em que ng pode aparecer no começo de uma palavra?",
+     "c": "Cantarole 'mmm', depois 'nnn' e depois 'nnng' com um dedo no nariz, sentindo o zumbido ir para trás."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ny sound",
+     "g": "Meet one sound with many spellings: Spanish ñ, French and Italian gn, Portuguese nh.",
+     "p": [
+      "Press the middle of your tongue flat against the roof of your mouth, with the tip down behind the lower teeth.",
+      "Then hum through your nose and release: Spanish 'niño', French 'montagne', Italian 'gnocchi', Portuguese 'vinho'.",
+      "It is close to the 'ny' in English 'canyon', but said as one smooth sound, not n plus y."
+     ],
+     "q": "Which of these words do you like best: 'España', 'champagne', 'lasagna' or 'vinho'?",
+     "c": "Say 'nnn' then press the middle of your tongue up into 'ñññ'; then try 'año', 'bagno' and 'banho'."
+    },
+    "de": {
+     "t": "Der nj-Laut",
+     "g": "Lerne einen Laut mit vielen Schreibweisen kennen: spanisch ñ, französisch und italienisch gn, portugiesisch nh.",
+     "p": [
+      "Drück die Zungenmitte flach an den harten Gaumen, die Zungenspitze liegt unten hinter den Zähnen.",
+      "Dann summe durch die Nase und löse: spanisch 'niño', französisch 'montagne', italienisch 'gnocchi', portugiesisch 'vinho'.",
+      "Er ähnelt dem „nj“ in „Champignon“, wird aber als ein weicher Laut gesprochen, nicht als n plus j."
+     ],
+     "q": "Welches dieser Wörter magst du am liebsten: 'España', 'champagne', 'lasagna' oder 'vinho'?",
+     "c": "Sag „nnn“, drück dann die Zungenmitte hoch zu „ñññ“; versuch dann 'año', 'bagno' und 'banho'."
+    },
+    "es": {
+     "t": "El sonido de la ñ",
+     "g": "Conoce un sonido con muchas grafías: la ñ española, el gn francés e italiano y el nh portugués.",
+     "p": [
+      "Aprieta el centro de la lengua contra el paladar duro, con la punta abajo, detrás de los dientes inferiores.",
+      "Luego deja salir el aire por la nariz y suelta: 'niño', francés 'montagne', italiano 'gnocchi', portugués 'vinho'.",
+      "No es una n seguida de i: es un solo sonido suave, por eso 'uña' no suena igual que 'unía'."
+     ],
+     "q": "¿Qué palabra con ñ te gusta más decir en voz alta?",
+     "c": "Di 'nnn' y luego sube el centro de la lengua hasta 'ñññ'; después prueba 'año', 'bagno' y 'banho'."
+    },
+    "fr": {
+     "t": "Le son gn",
+     "g": "Découvre un son aux nombreuses graphies : ñ espagnol, gn français et italien, nh portugais.",
+     "p": [
+      "Plaque le milieu de la langue contre le palais dur, la pointe en bas derrière les dents inférieures.",
+      "Puis fais passer l'air par le nez et relâche : « montagne », espagnol 'niño', italien 'gnocchi', portugais 'vinho'.",
+      "Ce n'est pas un n suivi de i : c'est un seul son doux, comme dans « agneau » ou « oignon »."
+     ],
+     "q": "Lequel de ces mots préfères-tu : « campagne », 'España', 'lasagna' ou 'vinho' ?",
+     "c": "Dis « nnn » puis remonte le milieu de la langue jusqu'à « gn » ; essaie ensuite « ligne », 'año' et 'banho'."
+    },
+    "it": {
+     "t": "Il suono gn",
+     "g": "Conosci un suono con tante grafie: gn italiano e francese, ñ spagnola, nh portoghese.",
+     "p": [
+      "Premi la parte centrale della lingua contro il palato duro, con la punta in basso dietro i denti inferiori.",
+      "Poi fai uscire l'aria dal naso e stacca: 'gnocchi', 'bagno', spagnolo 'niño', portoghese 'vinho'.",
+      "Non è una n seguita da i: è un solo suono morbido, e in italiano tra vocali si pronuncia un po' lungo."
+     ],
+     "q": "Quale di queste parole ti piace di più: 'lasagna', 'España', 'champagne' o 'vinho'?",
+     "c": "Di' 'nnn', poi alza il centro della lingua fino a 'gn'; prova poi 'sogno', 'año' e 'banho'."
+    },
+    "pt": {
+     "t": "O som nh",
+     "g": "Conhece um som com muitas grafias: nh português, ñ espanhol, gn francês e italiano.",
+     "p": [
+      "Encosta o meio da língua ao palato duro, com a ponta em baixo, atrás dos dentes inferiores.",
+      "Depois deixa o ar sair pelo nariz e solta: 'vinho', espanhol 'niño', francês 'montagne', italiano 'gnocchi'.",
+      "Não é um n seguido de i: é um só som suave, feito com o meio da língua colado ao palato."
+     ],
+     "q": "Qual destas palavras gostas mais de dizer: 'vinho', 'España', 'lasagna' ou 'champagne'?",
+     "c": "Diz 'nnn' e depois sobe o meio da língua até 'nhhh'; experimenta 'banho', 'año' e 'bagno'."
+    },
+    "pt_BR": {
+     "t": "O som nh",
+     "g": "Conheça um som com muitas grafias: nh do português, ñ do espanhol, gn do francês e do italiano.",
+     "p": [
+      "Encoste o meio da língua no palato duro, com a ponta para baixo, atrás dos dentes inferiores.",
+      "Depois deixe o ar sair pelo nariz e solte: 'vinho', espanhol 'niño', francês 'montagne', italiano 'gnocchi'.",
+      "Não é um n seguido de i: é um único som suave, feito com o meio da língua colado no palato."
+     ],
+     "q": "Qual dessas palavras você mais gosta de falar: 'vinho', 'España', 'lasanha' ou 'champagne'?",
+     "c": "Diga 'nnn' e depois suba o meio da língua até 'nhhh'; experimente 'banho', 'año' e 'bagno'."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your sound toolkit",
+     "g": "Revisit mouth parts, voicing, vowels and the first consonants with a quick, friendly self-check.",
+     "p": [
+      "Mouth map: lips, teeth, ridge, hard palate and soft palate; voice on or off with a hand on your throat.",
+      "Vowels: smile for ee, round for oo, tongue high or low; hold pure vowels and let glides slide.",
+      "Consonants: p b m on the lips, f v on teeth and lip, t d s z near the teeth, sh, k g at the back, ny."
+     ],
+     "q": "Which sound from this first month feels easiest now, and which still needs love?",
+     "c": "Record yourself saying 'pa, ba, ma, fa, va, ta, da, sa, za, sha, ka, ga, nya' and listen back kindly."
+    },
+    "de": {
+     "t": "Rückblick: dein Laut-Werkzeugkasten",
+     "g": "Wiederhole Mundteile, Stimmhaftigkeit, Vokale und die ersten Konsonanten mit einem kurzen Selbsttest.",
+     "p": [
+      "Mundkarte: Lippen, Zähne, Zahndamm, harter und weicher Gaumen; Stimme an oder aus, Hand am Hals.",
+      "Vokale: lächeln für i, runden für u, Zunge hoch oder tief; reine Vokale halten, Doppellaute gleiten lassen.",
+      "Konsonanten: p b m an den Lippen, f w an Zähnen und Lippe, t d s nahe den Zähnen, sch, k g hinten, nj."
+     ],
+     "q": "Welcher Laut aus diesem ersten Monat fällt dir jetzt leicht, und welcher braucht noch Zuwendung?",
+     "c": "Nimm „pa, ba, ma, fa, wa, ta, da, sa, scha, ka, ga, nja“ auf und hör es dir freundlich an."
+    },
+    "es": {
+     "t": "Repaso: tu caja de sonidos",
+     "g": "Repasa las partes de la boca, la voz, las vocales y las primeras consonantes con un breve autotest.",
+     "p": [
+      "Mapa de la boca: labios, dientes, alvéolos, paladar duro y velo; voz encendida o apagada con la mano en la garganta.",
+      "Vocales: sonrisa para la i, círculo para la u, lengua alta o baja; vocales puras firmes y diptongos que se deslizan.",
+      "Consonantes: p b m en los labios, f en dientes y labio, t d s cerca de los dientes, sh, k g atrás, ñ."
+     ],
+     "q": "¿Qué sonido de este primer mes te sale ahora más fácil y cuál necesita aún cariño?",
+     "c": "Grábate diciendo 'pa, ba, ma, fa, va, ta, da, sa, za, sha, ka, ga, ña' y escúchate con amabilidad."
+    },
+    "fr": {
+     "t": "Révision : ta boîte à sons",
+     "g": "Revois les parties de la bouche, la voix, les voyelles et les premières consonnes avec un petit autotest.",
+     "p": [
+      "Carte de la bouche : lèvres, dents, alvéoles, palais dur et voile ; voix allumée ou éteinte, main sur la gorge.",
+      "Voyelles : sourire pour i, rond pour ou, langue haute ou basse ; voyelles pures stables, diphtongues qui glissent.",
+      "Consonnes : p b m aux lèvres, f v dents sur lèvre, t d s z près des dents, ch j, k g au fond, gn."
+     ],
+     "q": "Quel son de ce premier mois te semble facile maintenant, et lequel demande encore de l'attention ?",
+     "c": "Enregistre « pa, ba, ma, fa, va, ta, da, sa, za, cha, ka, ga, gna » et réécoute-toi avec bienveillance."
+    },
+    "it": {
+     "t": "Ripasso: la tua cassetta dei suoni",
+     "g": "Ripassa parti della bocca, voce, vocali e prime consonanti con un breve autotest.",
+     "p": [
+      "Mappa della bocca: labbra, denti, alveoli, palato duro e molle; voce accesa o spenta con la mano sulla gola.",
+      "Vocali: sorriso per la i, cerchio per la u, lingua alta o bassa; vocali pure ferme e dittonghi che scivolano.",
+      "Consonanti: p b m sulle labbra, f v denti sul labbro, t d s vicino ai denti, sc, k g dietro, gn."
+     ],
+     "q": "Quale suono di questo primo mese ti viene facile ora, e quale ha ancora bisogno di cura?",
+     "c": "Registrati mentre dici 'pa, ba, ma, fa, va, ta, da, sa, scia, ca, ga, gna' e riascoltati con gentilezza."
+    },
+    "pt": {
+     "t": "Revisão: a tua caixa de sons",
+     "g": "Revê as partes da boca, a voz, as vogais e as primeiras consoantes com um pequeno autoteste.",
+     "p": [
+      "Mapa da boca: lábios, dentes, alvéolos, palato duro e véu; voz ligada ou desligada com a mão na garganta.",
+      "Vogais: sorriso para o i, círculo para o u, língua alta ou baixa; vogais puras firmes e ditongos que deslizam.",
+      "Consoantes: p b m nos lábios, f v nos dentes e lábio, t d s z junto aos dentes, ch j, k g atrás, nh."
+     ],
+     "q": "Que som deste primeiro mês te sai agora mais fácil, e qual ainda precisa de carinho?",
+     "c": "Grava-te a dizer 'pa, ba, ma, fa, va, ta, da, sa, za, cha, ja, ca, ga, nha' e ouve-te com gentileza."
+    },
+    "pt_BR": {
+     "t": "Revisão: sua caixa de sons",
+     "g": "Revise as partes da boca, a voz, as vogais e as primeiras consoantes com um rápido autoteste.",
+     "p": [
+      "Mapa da boca: lábios, dentes, alvéolos, palato duro e mole; voz ligada ou desligada com a mão na garganta.",
+      "Vogais: sorriso para o i, círculo para o u, língua alta ou baixa; vogais puras firmes e ditongos que deslizam.",
+      "Consoantes: p b m nos lábios, f v nos dentes e lábio, t d s z perto dos dentes, ch j, k g atrás, nh."
+     ],
+     "q": "Qual som deste primeiro mês ficou mais fácil agora, e qual ainda precisa de carinho?",
+     "c": "Grave-se falando 'pa, ba, ma, fa, va, ta, da, sa, za, cha, ja, ca, ga, nha' e ouça com gentileza."
+    }
+   }
+  }
+ ]
+}

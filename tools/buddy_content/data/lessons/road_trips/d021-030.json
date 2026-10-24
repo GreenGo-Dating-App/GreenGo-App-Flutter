@@ -1,0 +1,835 @@
+{
+ "topic": "road_trips",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing light for the car",
+     "g": "Use soft bags and smart layers, and see why less luggage makes every stop easier.",
+     "p": [
+      "Soft bags squeeze into odd corners of the boot far better than hard suitcases.",
+      "Pack one small overnight bag so you do not unload everything at each stop.",
+      "Choose clothes that mix and layer; you can wash a few items on the way."
+     ],
+     "q": "Are you someone who packs light, or do you always take a bit too much?",
+     "c": "Lay out what you would pack for a weekend trip, then remove three items."
+    },
+    "de": {
+     "t": "Leicht packen fürs Auto",
+     "g": "Nutze weiche Taschen und clevere Schichten und sieh, warum weniger Gepäck jeden Stopp erleichtert.",
+     "p": [
+      "Weiche Taschen passen viel besser in verwinkelte Kofferraumecken als harte Koffer.",
+      "Pack eine kleine Übernachtungstasche, damit du nicht bei jedem Halt alles auslädst.",
+      "Wähl kombinierbare Kleidung für den Zwiebellook; ein paar Teile kannst du unterwegs waschen."
+     ],
+     "q": "Packst du eher leicht, oder nimmst du immer etwas zu viel mit?",
+     "c": "Leg hin, was du für ein Wochenende einpacken würdest, und nimm dann drei Teile wieder heraus."
+    },
+    "es": {
+     "t": "Equipaje ligero para el coche",
+     "g": "Usa bolsas blandas y capas inteligentes, y descubre por qué menos equipaje facilita cada parada.",
+     "p": [
+      "Las bolsas blandas se adaptan a los rincones del maletero mucho mejor que las maletas rígidas.",
+      "Prepara una bolsa pequeña para la noche y así no descargas todo en cada parada.",
+      "Elige ropa combinable y por capas; puedes lavar algunas prendas por el camino."
+     ],
+     "q": "¿Eres de los que viajan ligeros o siempre llevas un poco de más?",
+     "c": "Extiende lo que llevarías para un fin de semana y luego quita tres cosas."
+    },
+    "fr": {
+     "t": "Voyager léger en voiture",
+     "g": "Utilise des sacs souples et des couches malines, et vois pourquoi moins de bagages facilite chaque arrêt.",
+     "p": [
+      "Les sacs souples se glissent dans les recoins du coffre bien mieux que les valises rigides.",
+      "Prépare un petit sac pour la nuit afin de ne pas tout décharger à chaque étape.",
+      "Choisis des vêtements qui se combinent et se superposent ; tu peux laver quelques pièces en route."
+     ],
+     "q": "Tu voyages plutôt léger, ou tu emportes toujours un peu trop ?",
+     "c": "Étale ce que tu prendrais pour un week-end, puis retire trois affaires."
+    },
+    "it": {
+     "t": "Bagaglio leggero in auto",
+     "g": "Usa borse morbide e strati furbi, e scopri perché meno bagagli rendono ogni sosta più facile.",
+     "p": [
+      "Le borse morbide si infilano negli angoli del bagagliaio molto meglio delle valigie rigide.",
+      "Prepara una borsa piccola per la notte, così non scarichi tutto a ogni tappa.",
+      "Scegli capi abbinabili e a strati; qualcosa puoi lavarlo lungo la strada."
+     ],
+     "q": "Sei una persona che viaggia leggera o porti sempre un po' troppo?",
+     "c": "Disponi ciò che porteresti per un weekend e poi togli tre cose."
+    },
+    "pt": {
+     "t": "Bagagem leve para o carro",
+     "g": "Usa sacos moles e camadas inteligentes, e vê porque menos bagagem facilita cada paragem.",
+     "p": [
+      "Os sacos moles encaixam nos cantos da bagageira muito melhor do que malas rígidas.",
+      "Prepara um saco pequeno para a noite, para não descarregares tudo em cada paragem.",
+      "Escolhe roupa que combine e se use por camadas; podes lavar algumas peças pelo caminho."
+     ],
+     "q": "És de viajar leve ou levas sempre um pouco a mais?",
+     "c": "Espalha o que levarias para um fim de semana e depois tira três coisas."
+    },
+    "pt_BR": {
+     "t": "Bagagem leve para o carro",
+     "g": "Use bolsas macias e camadas espertas, e veja por que menos bagagem facilita cada parada.",
+     "p": [
+      "Bolsas macias se ajeitam nos cantos do porta-malas muito melhor que malas rígidas.",
+      "Monte uma bolsa pequena para a noite, assim você não descarrega tudo em cada parada.",
+      "Escolha roupas que combinam e funcionam em camadas; dá para lavar algumas peças no caminho."
+     ],
+     "q": "Você é de viajar leve ou sempre leva um pouco a mais?",
+     "c": "Separe o que você levaria para um fim de semana e depois tire três itens."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The car essentials kit",
+     "g": "Know the items worth keeping on board: warning triangle, vest, torch, first-aid kit and more.",
+     "p": [
+      "A warning triangle and a reflective vest help others see you if you stop on the roadside.",
+      "Some countries require certain items in the car; check official sources for each country you visit.",
+      "Add a torch, first-aid kit, phone cable, blanket and some water for small surprises."
+     ],
+     "q": "What is already in your car's boot right now, and what is missing?",
+     "c": "Write a checklist of six essentials and tick off the ones you already have."
+    },
+    "de": {
+     "t": "Die Notfallausrüstung im Auto",
+     "g": "Wisse, was an Bord gehört: Warndreieck, Warnweste, Taschenlampe, Verbandskasten und mehr.",
+     "p": [
+      "Warndreieck und Warnweste sorgen dafür, dass andere dich sehen, wenn du am Rand halten musst.",
+      "Manche Länder schreiben bestimmte Dinge im Auto vor; prüf für jedes Reiseland offizielle Quellen.",
+      "Ergänze Taschenlampe, Verbandskasten, Ladekabel, Decke und etwas Wasser für kleine Überraschungen."
+     ],
+     "q": "Was liegt gerade im Kofferraum deines Autos, und was fehlt noch?",
+     "c": "Schreib eine Checkliste mit sechs Dingen und hak ab, was du schon hast."
+    },
+    "es": {
+     "t": "El kit básico del coche",
+     "g": "Conoce lo que conviene llevar a bordo: triángulo, chaleco, linterna, botiquín y más.",
+     "p": [
+      "Los triángulos y el chaleco reflectante ayudan a que te vean si paras en el arcén.",
+      "Algunos países exigen ciertos elementos en el coche; consulta fuentes oficiales de cada país.",
+      "Añade linterna, botiquín, cable para el móvil, una manta y algo de agua para pequeños imprevistos."
+     ],
+     "q": "¿Qué hay ahora mismo en el maletero de tu coche y qué falta?",
+     "c": "Haz una lista de seis imprescindibles y marca los que ya tienes."
+    },
+    "fr": {
+     "t": "Le kit essentiel de la voiture",
+     "g": "Connais les objets à garder à bord : triangle, gilet, lampe, trousse de secours et plus.",
+     "p": [
+      "Le triangle et le gilet réfléchissant aident les autres à te voir si tu t'arrêtes au bord de la route.",
+      "Certains pays imposent des équipements précis ; vérifie les sources officielles de chaque pays visité.",
+      "Ajoute une lampe, une trousse de secours, un câble de téléphone, une couverture et de l'eau."
+     ],
+     "q": "Qu'y a-t-il en ce moment dans le coffre de ta voiture, et que manque-t-il ?",
+     "c": "Écris une liste de six indispensables et coche ceux que tu as déjà."
+    },
+    "it": {
+     "t": "Il kit essenziale dell'auto",
+     "g": "Conosci gli oggetti da tenere a bordo: triangolo, giubbotto, torcia, kit di primo soccorso e altro.",
+     "p": [
+      "Triangolo e giubbotto riflettente aiutano gli altri a vederti se ti fermi a bordo strada.",
+      "Alcuni paesi richiedono dotazioni precise in auto: controlla le fonti ufficiali di ogni paese.",
+      "Aggiungi torcia, kit di primo soccorso, cavo del telefono, una coperta e un po' d'acqua."
+     ],
+     "q": "Cosa c'è adesso nel bagagliaio della tua auto e cosa manca?",
+     "c": "Scrivi una lista di sei oggetti essenziali e spunta quelli che hai già."
+    },
+    "pt": {
+     "t": "O kit essencial do carro",
+     "g": "Conhece o que vale a pena ter a bordo: triângulo, colete, lanterna, kit de primeiros socorros e mais.",
+     "p": [
+      "O triângulo e o colete refletor ajudam os outros a ver-te se parares na berma.",
+      "Alguns países exigem certos itens no carro; consulta fontes oficiais de cada país que visitares.",
+      "Junta uma lanterna, kit de primeiros socorros, cabo do telemóvel, uma manta e alguma água."
+     ],
+     "q": "O que está agora na bagageira do teu carro e o que falta?",
+     "c": "Escreve uma lista de seis essenciais e marca os que já tens."
+    },
+    "pt_BR": {
+     "t": "O kit essencial do carro",
+     "g": "Saiba o que vale levar a bordo: triângulo, colete, lanterna, kit de primeiros socorros e mais.",
+     "p": [
+      "O triângulo e o colete refletivo ajudam os outros a ver você se precisar parar no acostamento.",
+      "Alguns países exigem itens específicos no carro; confira fontes oficiais de cada país visitado.",
+      "Inclua lanterna, kit de primeiros socorros, cabo do celular, uma manta e um pouco de água."
+     ],
+     "q": "O que tem agora no porta-malas do seu carro e o que está faltando?",
+     "c": "Faça uma lista de seis itens essenciais e marque os que você já tem."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snacks and water strategy",
+     "g": "Plan healthy road snacks, a cool bag and enough water for long empty stretches.",
+     "p": [
+      "Choose snacks that are easy to eat and not messy: nuts, fruit, crackers, cut vegetables.",
+      "A small cool bag keeps drinks and fresh food pleasant on warm days.",
+      "Carry more water than you think in remote areas; refill bottles whenever you can."
+     ],
+     "q": "What is your all-time favourite road trip snack?",
+     "c": "Plan a snack bag for a four-hour drive with something fresh, something crunchy and water."
+    },
+    "de": {
+     "t": "Snacks und Wasser planen",
+     "g": "Plane gesunde Reisesnacks, eine Kühltasche und genug Wasser für lange, leere Strecken.",
+     "p": [
+      "Wähl Snacks, die leicht zu essen sind und nicht krümeln: Nüsse, Obst, Cracker, Gemüsesticks.",
+      "Eine kleine Kühltasche hält Getränke und frisches Essen an warmen Tagen angenehm.",
+      "Nimm in abgelegenen Gegenden mehr Wasser mit als gedacht und füll Flaschen auf, wann immer es geht."
+     ],
+     "q": "Was ist dein absoluter Lieblingssnack auf Autofahrten?",
+     "c": "Plane eine Snacktasche für vier Stunden Fahrt mit etwas Frischem, etwas Knusprigem und Wasser."
+    },
+    "es": {
+     "t": "Estrategia de snacks y agua",
+     "g": "Planea tentempiés sanos, una nevera pequeña y agua suficiente para tramos largos y vacíos.",
+     "p": [
+      "Elige tentempiés fáciles de comer y que no ensucien: frutos secos, fruta, galletas saladas, verduras cortadas.",
+      "Una pequeña nevera portátil mantiene bebidas y comida fresca agradables en días de calor.",
+      "Lleva más agua de la que crees en zonas remotas y rellena las botellas siempre que puedas."
+     ],
+     "q": "¿Cuál es tu tentempié favorito de todos los tiempos para la carretera?",
+     "c": "Prepara una bolsa para cuatro horas de viaje con algo fresco, algo crujiente y agua."
+    },
+    "fr": {
+     "t": "En-cas et eau",
+     "g": "Prévois des en-cas sains, une glacière souple et assez d'eau pour les longues routes isolées.",
+     "p": [
+      "Choisis des en-cas faciles à manger et peu salissants : noix, fruits, crackers, légumes coupés.",
+      "Une petite glacière garde boissons et produits frais agréables par temps chaud.",
+      "Emporte plus d'eau que prévu dans les zones isolées et remplis tes gourdes dès que possible."
+     ],
+     "q": "Quel est ton en-cas de road trip préféré de tous les temps ?",
+     "c": "Prépare un sac d'en-cas pour quatre heures de route : du frais, du croquant et de l'eau."
+    },
+    "it": {
+     "t": "Spuntini e acqua",
+     "g": "Pianifica spuntini sani, una borsa frigo e acqua sufficiente per tratti lunghi e isolati.",
+     "p": [
+      "Scegli spuntini facili da mangiare e che non sporcano: frutta secca, frutta, cracker, verdure tagliate.",
+      "Una piccola borsa frigo mantiene bevande e cibo fresco piacevoli nelle giornate calde.",
+      "Nelle zone isolate porta più acqua di quanto pensi e riempi le borracce ogni volta che puoi."
+     ],
+     "q": "Qual è il tuo spuntino da viaggio in auto preferito di sempre?",
+     "c": "Prepara una borsa spuntini per quattro ore di guida con qualcosa di fresco, di croccante e acqua."
+    },
+    "pt": {
+     "t": "Estratégia de lanches e água",
+     "g": "Planeia lanches saudáveis, uma geleira pequena e água suficiente para troços longos e vazios.",
+     "p": [
+      "Escolhe lanches fáceis de comer e que não sujem: frutos secos, fruta, bolachas de água e sal, legumes.",
+      "Uma pequena geleira mantém bebidas e comida fresca agradáveis em dias de calor.",
+      "Leva mais água do que pensas em zonas remotas e enche as garrafas sempre que puderes."
+     ],
+     "q": "Qual é o teu lanche de viagem de carro preferido de sempre?",
+     "c": "Prepara um saco de lanches para quatro horas com algo fresco, algo crocante e água."
+    },
+    "pt_BR": {
+     "t": "Estratégia de lanches e água",
+     "g": "Planeje lanches saudáveis, uma bolsa térmica e água suficiente para trechos longos e vazios.",
+     "p": [
+      "Escolha lanches fáceis de comer e que não sujam: castanhas, frutas, biscoitos, legumes cortados.",
+      "Uma bolsa térmica pequena mantém bebidas e comida fresca gostosas em dias quentes.",
+      "Leve mais água do que você imagina em regiões remotas e encha as garrafas sempre que der."
+     ],
+     "q": "Qual é o seu lanche de viagem de carro favorito de todos os tempos?",
+     "c": "Monte uma sacola de lanches para quatro horas com algo fresco, algo crocante e água."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dressing for the drive",
+     "g": "Choose comfortable clothes and shoes for driving, plus layers for changing weather.",
+     "p": [
+      "Wear shoes with thin, flexible soles that let you feel the pedals; avoid flip-flops and heavy boots.",
+      "Loose, breathable clothes keep you comfortable on long stretches in the seat.",
+      "Keep a jacket or jumper within reach, since mountains, coasts and evenings can turn cool quickly."
+     ],
+     "q": "What is your go-to comfy outfit for a long day of travel?",
+     "c": "Pick a pair of shoes you would drive in and check that they feel good on the pedals."
+    },
+    "de": {
+     "t": "Die richtige Kleidung zum Fahren",
+     "g": "Wähle bequeme Kleidung und Schuhe zum Fahren, dazu Schichten für wechselndes Wetter.",
+     "p": [
+      "Trag Schuhe mit dünnen, flexiblen Sohlen, damit du die Pedale spürst; meide Flip-Flops und schwere Stiefel.",
+      "Lockere, atmungsaktive Kleidung hält dich auf langen Strecken im Sitz bequem.",
+      "Halte eine Jacke oder einen Pulli griffbereit, denn Berge, Küsten und Abende werden schnell kühl."
+     ],
+     "q": "Was ist dein liebstes bequemes Outfit für einen langen Reisetag?",
+     "c": "Such dir ein Paar Schuhe zum Fahren aus und prüf, ob sie sich an den Pedalen gut anfühlen."
+    },
+    "es": {
+     "t": "Vestirse para conducir",
+     "g": "Elige ropa y calzado cómodos para conducir, y capas para el tiempo cambiante.",
+     "p": [
+      "Usa zapatos de suela fina y flexible que te dejen sentir los pedales; evita chanclas y botas pesadas.",
+      "La ropa holgada y transpirable te mantiene cómodo en tramos largos sentado.",
+      "Ten una chaqueta o jersey a mano: montañas, costas y atardeceres pueden refrescar rápido."
+     ],
+     "q": "¿Cuál es tu conjunto cómodo de siempre para un día largo de viaje?",
+     "c": "Elige unos zapatos para conducir y comprueba que se sienten bien en los pedales."
+    },
+    "fr": {
+     "t": "S'habiller pour la route",
+     "g": "Choisis des vêtements et chaussures confortables pour conduire, plus des couches pour la météo.",
+     "p": [
+      "Porte des chaussures à semelle fine et souple pour sentir les pédales ; évite tongs et grosses bottes.",
+      "Des vêtements amples et respirants restent confortables pendant les longues heures assis.",
+      "Garde une veste ou un pull à portée de main : montagne, côte et soirées se rafraîchissent vite."
+     ],
+     "q": "Quelle est ta tenue confortable préférée pour une longue journée de voyage ?",
+     "c": "Choisis une paire de chaussures pour conduire et vérifie qu'elles sont agréables sur les pédales."
+    },
+    "it": {
+     "t": "Vestirsi per guidare",
+     "g": "Scegli abiti e scarpe comodi per guidare, più strati per il meteo che cambia.",
+     "p": [
+      "Indossa scarpe con suola sottile e flessibile per sentire i pedali; evita infradito e scarponi pesanti.",
+      "Abiti morbidi e traspiranti ti tengono comodo nei lunghi tratti seduto.",
+      "Tieni una giacca o un maglione a portata di mano: montagna, costa e sera rinfrescano in fretta."
+     ],
+     "q": "Qual è il tuo outfit comodo preferito per una lunga giornata di viaggio?",
+     "c": "Scegli un paio di scarpe per guidare e verifica che siano comode sui pedali."
+    },
+    "pt": {
+     "t": "Vestir para conduzir",
+     "g": "Escolhe roupa e calçado confortáveis para conduzir e camadas para o tempo que muda.",
+     "p": [
+      "Usa sapatos de sola fina e flexível que te deixem sentir os pedais; evita chinelos e botas pesadas.",
+      "Roupa larga e respirável mantém-te confortável em troços longos sentado.",
+      "Tem um casaco ou camisola à mão: serra, costa e fim de tarde arrefecem depressa."
+     ],
+     "q": "Qual é a tua roupa confortável de sempre para um dia longo de viagem?",
+     "c": "Escolhe uns sapatos para conduzir e vê se são confortáveis nos pedais."
+    },
+    "pt_BR": {
+     "t": "Roupa para dirigir",
+     "g": "Escolha roupas e calçados confortáveis para dirigir, mais camadas para o clima que muda.",
+     "p": [
+      "Use calçado de sola fina e flexível que deixe você sentir os pedais; evite chinelo e botas pesadas.",
+      "Roupas folgadas e respiráveis deixam você confortável em trechos longos sentado.",
+      "Deixe um casaco ou moletom à mão: serra, litoral e fim de tarde esfriam rápido."
+     ],
+     "q": "Qual é o seu look confortável preferido para um dia longo de viagem?",
+     "c": "Escolha um calçado para dirigir e veja se ele fica confortável nos pedais."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chargers and gadgets",
+     "g": "Get car chargers, power banks and a phone mount ready so your devices keep up with the trip.",
+     "p": [
+      "A car charger with two ports keeps both the navigation phone and a passenger device powered.",
+      "A charged power bank is your backup for hikes, cafés and evenings away from the car.",
+      "A secure phone mount keeps the map visible without holding the phone; set it up before you drive."
+     ],
+     "q": "Which gadget could you never travel without?",
+     "c": "Gather your chargers and cables in one small pouch and test that each one works."
+    },
+    "de": {
+     "t": "Ladegeräte und Gadgets",
+     "g": "Mach Autoladegerät, Powerbank und Handyhalterung startklar, damit deine Geräte mithalten.",
+     "p": [
+      "Ein Autoladegerät mit zwei Anschlüssen versorgt das Navi-Handy und ein Gerät der Beifahrer.",
+      "Eine geladene Powerbank ist dein Backup für Wanderungen, Cafés und Abende fern vom Auto.",
+      "Eine feste Handyhalterung zeigt die Karte, ohne dass du das Handy hältst; richte sie vor der Fahrt ein."
+     ],
+     "q": "Auf welches Gadget könntest du auf Reisen nie verzichten?",
+     "c": "Sammle deine Ladegeräte und Kabel in einer kleinen Tasche und teste, ob jedes funktioniert."
+    },
+    "es": {
+     "t": "Cargadores y gadgets",
+     "g": "Prepara cargador de coche, batería externa y soporte para el móvil para que tus dispositivos aguanten.",
+     "p": [
+      "Un cargador de coche con dos puertos mantiene cargados el móvil del navegador y otro dispositivo.",
+      "Una batería externa cargada es tu reserva para rutas a pie, cafés y noches lejos del coche.",
+      "Un soporte firme deja ver el mapa sin sujetar el móvil; colócalo antes de arrancar."
+     ],
+     "q": "¿Sin qué gadget no podrías viajar nunca?",
+     "c": "Reúne cargadores y cables en una bolsita y comprueba que todos funcionan."
+    },
+    "fr": {
+     "t": "Chargeurs et gadgets",
+     "g": "Prépare chargeur de voiture, batterie externe et support de téléphone pour que tes appareils suivent.",
+     "p": [
+      "Un chargeur allume-cigare à deux ports alimente le téléphone GPS et l'appareil d'un passager.",
+      "Une batterie externe chargée sert de secours pour les balades, les cafés et les soirées loin de la voiture.",
+      "Un support solide garde la carte visible sans tenir le téléphone ; installe-le avant de démarrer."
+     ],
+     "q": "Sans quel gadget ne pourrais-tu jamais voyager ?",
+     "c": "Range chargeurs et câbles dans une petite pochette et vérifie qu'ils fonctionnent tous."
+    },
+    "it": {
+     "t": "Caricabatterie e gadget",
+     "g": "Prepara caricatore da auto, power bank e supporto per il telefono così i dispositivi reggono il viaggio.",
+     "p": [
+      "Un caricatore da auto con due porte alimenta il telefono del navigatore e un altro dispositivo.",
+      "Un power bank carico è la riserva per escursioni, bar e serate lontano dall'auto.",
+      "Un supporto stabile mostra la mappa senza tenere il telefono in mano; sistemalo prima di partire."
+     ],
+     "q": "Senza quale gadget non potresti mai viaggiare?",
+     "c": "Raccogli caricatori e cavi in una piccola custodia e verifica che funzionino tutti."
+    },
+    "pt": {
+     "t": "Carregadores e gadgets",
+     "g": "Prepara carregador de isqueiro, powerbank e suporte de telemóvel para os aparelhos aguentarem a viagem.",
+     "p": [
+      "Um carregador de carro com duas portas mantém carregados o telemóvel da navegação e outro aparelho.",
+      "Uma powerbank carregada é a reserva para caminhadas, cafés e noites longe do carro.",
+      "Um suporte firme deixa ver o mapa sem segurar o telemóvel; monta-o antes de arrancar."
+     ],
+     "q": "Sem que gadget nunca conseguirias viajar?",
+     "c": "Junta carregadores e cabos numa bolsinha e testa se todos funcionam."
+    },
+    "pt_BR": {
+     "t": "Carregadores e gadgets",
+     "g": "Deixe carregador veicular, power bank e suporte de celular prontos para os aparelhos aguentarem.",
+     "p": [
+      "Um carregador veicular com duas portas mantém o celular do GPS e outro aparelho carregados.",
+      "Um power bank carregado é a reserva para trilhas, cafés e noites longe do carro.",
+      "Um suporte firme mostra o mapa sem você segurar o celular; instale antes de dar a partida."
+     ],
+     "q": "Sem qual gadget você nunca conseguiria viajar?",
+     "c": "Junte carregadores e cabos num estojinho e teste se todos funcionam."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Offline maps and apps",
+     "g": "Download maps and key information so you can navigate even without mobile data.",
+     "p": [
+      "Mountains, deserts and border areas often have no signal, so do not rely on live maps alone.",
+      "Most map apps let you download a region; do it on Wi-Fi before you leave.",
+      "Save addresses of your stays, fuel stops and a garage, plus a screenshot of your booking details."
+     ],
+     "q": "Have you ever lost signal on a trip? How did you find your way?",
+     "c": "Download an offline map of one region you would like to drive through."
+    },
+    "de": {
+     "t": "Offline-Karten und Apps",
+     "g": "Lade Karten und wichtige Infos herunter, damit du auch ohne mobile Daten navigieren kannst.",
+     "p": [
+      "Berge, Wüsten und Grenzregionen haben oft kein Netz, verlass dich also nicht nur auf Live-Karten.",
+      "Die meisten Karten-Apps erlauben, eine Region herunterzuladen; mach das vorher im WLAN.",
+      "Speichere Adressen von Unterkünften, Tankstellen und einer Werkstatt sowie Screenshots deiner Buchungen."
+     ],
+     "q": "Hattest du auf einer Reise schon einmal kein Netz? Wie hast du den Weg gefunden?",
+     "c": "Lade die Offline-Karte einer Region herunter, durch die du gern fahren würdest."
+    },
+    "es": {
+     "t": "Mapas y apps sin conexión",
+     "g": "Descarga mapas e información clave para orientarte incluso sin datos móviles.",
+     "p": [
+      "Montañas, desiertos y zonas fronterizas a menudo no tienen cobertura: no dependas solo de mapas en línea.",
+      "Casi todas las apps de mapas permiten descargar una región; hazlo con wifi antes de salir.",
+      "Guarda direcciones de alojamientos, gasolineras y un taller, y capturas de tus reservas."
+     ],
+     "q": "¿Te has quedado alguna vez sin cobertura en un viaje? ¿Cómo encontraste el camino?",
+     "c": "Descarga el mapa sin conexión de una región por la que te gustaría conducir."
+    },
+    "fr": {
+     "t": "Cartes et applis hors ligne",
+     "g": "Télécharge cartes et infos clés pour te repérer même sans données mobiles.",
+     "p": [
+      "Montagnes, déserts et zones frontalières n'ont souvent pas de réseau : ne compte pas que sur les cartes en ligne.",
+      "La plupart des applis de cartes permettent de télécharger une région ; fais-le en wifi avant de partir.",
+      "Enregistre les adresses de tes hébergements, stations et d'un garage, plus des captures de tes réservations."
+     ],
+     "q": "As-tu déjà perdu le réseau en voyage ? Comment as-tu retrouvé ton chemin ?",
+     "c": "Télécharge la carte hors ligne d'une région que tu aimerais traverser en voiture."
+    },
+    "it": {
+     "t": "Mappe e app offline",
+     "g": "Scarica mappe e informazioni chiave per orientarti anche senza dati mobili.",
+     "p": [
+      "Montagne, deserti e zone di confine spesso non hanno campo: non affidarti solo alle mappe online.",
+      "Quasi tutte le app di mappe permettono di scaricare una zona; fallo col wifi prima di partire.",
+      "Salva gli indirizzi di alloggi, distributori e un'officina, più gli screenshot delle prenotazioni."
+     ],
+     "q": "Ti è mai capitato di restare senza campo in viaggio? Come hai trovato la strada?",
+     "c": "Scarica la mappa offline di una regione che ti piacerebbe attraversare in auto."
+    },
+    "pt": {
+     "t": "Mapas e apps offline",
+     "g": "Descarrega mapas e informação essencial para te orientares mesmo sem dados móveis.",
+     "p": [
+      "Serras, desertos e zonas de fronteira muitas vezes não têm rede: não dependas só de mapas online.",
+      "A maioria das apps de mapas deixa descarregar uma região; fá-lo com wi-fi antes de partir.",
+      "Guarda as moradas dos alojamentos, bombas e de uma oficina, e capturas de ecrã das reservas."
+     ],
+     "q": "Já ficaste sem rede numa viagem? Como encontraste o caminho?",
+     "c": "Descarrega o mapa offline de uma região por onde gostarias de conduzir."
+    },
+    "pt_BR": {
+     "t": "Mapas e apps offline",
+     "g": "Baixe mapas e informações importantes para se orientar mesmo sem dados móveis.",
+     "p": [
+      "Serras, desertos e regiões de fronteira muitas vezes ficam sem sinal: não dependa só de mapas online.",
+      "A maioria dos apps de mapa permite baixar uma região; faça isso no wi-fi antes de sair.",
+      "Salve endereços das hospedagens, postos e de uma oficina, além de prints das reservas."
+     ],
+     "q": "Você já ficou sem sinal numa viagem? Como encontrou o caminho?",
+     "c": "Baixe o mapa offline de uma região por onde você gostaria de dirigir."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building the perfect playlist",
+     "g": "Pick music, podcasts and audiobooks that match the mood of each stretch of road.",
+     "p": [
+      "Upbeat songs suit sunny coastal roads; calmer music fits long, quiet highways at dusk.",
+      "Podcasts and audiobooks make long stretches fly by; download them so they play offline.",
+      "Let every traveller add a few songs so the playlist feels like a shared story."
+     ],
+     "q": "Which song would be the opening track of your road trip playlist?",
+     "c": "Create a playlist with ten songs for your dream trip and give it a fun name."
+    },
+    "de": {
+     "t": "Die perfekte Playlist",
+     "g": "Wähle Musik, Podcasts und Hörbücher, die zur Stimmung jedes Streckenabschnitts passen.",
+     "p": [
+      "Gute-Laune-Songs passen zu sonnigen Küstenstraßen, ruhige Musik zu langen Strecken in der Dämmerung.",
+      "Podcasts und Hörbücher lassen lange Etappen verfliegen; lade sie herunter, damit sie offline laufen.",
+      "Lass alle Mitreisenden ein paar Songs beisteuern, damit die Playlist eine gemeinsame Geschichte wird."
+     ],
+     "q": "Welcher Song wäre der erste Titel auf deiner Roadtrip-Playlist?",
+     "c": "Erstelle eine Playlist mit zehn Songs für deine Traumreise und gib ihr einen lustigen Namen."
+    },
+    "es": {
+     "t": "La playlist perfecta",
+     "g": "Elige música, pódcasts y audiolibros que encajen con el ambiente de cada tramo.",
+     "p": [
+      "Las canciones alegres van con carreteras soleadas de costa; la música tranquila, con autopistas al atardecer.",
+      "Los pódcasts y audiolibros hacen volar los tramos largos; descárgalos para oírlos sin conexión.",
+      "Deja que cada viajero añada algunas canciones para que la lista sea una historia compartida."
+     ],
+     "q": "¿Qué canción abriría la playlist de tu road trip?",
+     "c": "Crea una playlist de diez canciones para tu viaje soñado y ponle un nombre divertido."
+    },
+    "fr": {
+     "t": "La playlist parfaite",
+     "g": "Choisis musique, podcasts et livres audio selon l'ambiance de chaque portion de route.",
+     "p": [
+      "Les morceaux entraînants vont avec les routes côtières ensoleillées, la musique douce avec l'autoroute au crépuscule.",
+      "Podcasts et livres audio font filer les longues étapes ; télécharge-les pour l'écoute hors ligne.",
+      "Laisse chaque voyageur ajouter quelques titres pour que la playlist raconte une histoire commune."
+     ],
+     "q": "Quel morceau ouvrirait la playlist de ton road trip ?",
+     "c": "Crée une playlist de dix titres pour ton voyage rêvé et donne-lui un nom amusant."
+    },
+    "it": {
+     "t": "La playlist perfetta",
+     "g": "Scegli musica, podcast e audiolibri adatti all'atmosfera di ogni tratto di strada.",
+     "p": [
+      "Le canzoni allegre stanno bene sulle strade costiere al sole, la musica calma sulle autostrade al tramonto.",
+      "Podcast e audiolibri fanno volare i tratti lunghi; scaricali per ascoltarli offline.",
+      "Lascia che ogni viaggiatore aggiunga qualche brano, così la playlist diventa una storia condivisa."
+     ],
+     "q": "Quale canzone aprirebbe la playlist del tuo road trip?",
+     "c": "Crea una playlist di dieci brani per il viaggio dei sogni e dalle un nome divertente."
+    },
+    "pt": {
+     "t": "A playlist perfeita",
+     "g": "Escolhe música, podcasts e audiolivros que combinem com o ambiente de cada troço.",
+     "p": [
+      "Músicas animadas combinam com estradas de costa ao sol; música calma com autoestradas ao fim do dia.",
+      "Podcasts e audiolivros fazem voar os troços longos; descarrega-os para ouvir offline.",
+      "Deixa cada viajante juntar algumas músicas para a playlist ser uma história partilhada."
+     ],
+     "q": "Que música abriria a playlist da tua road trip?",
+     "c": "Cria uma playlist de dez músicas para a viagem de sonho e dá-lhe um nome divertido."
+    },
+    "pt_BR": {
+     "t": "A playlist perfeita",
+     "g": "Escolha músicas, podcasts e audiolivros que combinem com o clima de cada trecho.",
+     "p": [
+      "Músicas animadas combinam com estradas litorâneas ensolaradas; músicas calmas com rodovias ao entardecer.",
+      "Podcasts e audiolivros fazem os trechos longos voarem; baixe tudo para ouvir offline.",
+      "Deixe cada viajante incluir algumas músicas para a playlist virar uma história compartilhada."
+     ],
+     "q": "Qual música abriria a playlist da sua road trip?",
+     "c": "Crie uma playlist de dez músicas para a viagem dos sonhos e dê a ela um nome divertido."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Organising the car interior",
+     "g": "Decide where maps, snacks, rubbish and valuables go so the cabin stays calm and tidy.",
+     "p": [
+      "Keep what the driver needs, like sunglasses and toll cash or cards, in one fixed easy spot.",
+      "Use a small bag for rubbish and empty it at every fuel stop.",
+      "Keep valuables out of sight and never leave them visible when you park."
+     ],
+     "q": "Is your car usually tidy, or does it slowly fill with bits and pieces?",
+     "c": "Choose a fixed place for five items: phone, sunglasses, snacks, rubbish bag and documents."
+    },
+    "de": {
+     "t": "Das Auto innen organisieren",
+     "g": "Leg fest, wo Karten, Snacks, Müll und Wertsachen hingehören, damit es im Auto ruhig bleibt.",
+     "p": [
+      "Bewahr, was der Fahrer braucht, etwa Sonnenbrille und Mautkarte, an einem festen, leicht erreichbaren Platz auf.",
+      "Nutze einen kleinen Müllbeutel und leere ihn bei jedem Tankstopp.",
+      "Halte Wertsachen außer Sicht und lass sie beim Parken nie sichtbar liegen."
+     ],
+     "q": "Ist dein Auto meist ordentlich, oder füllt es sich langsam mit Kleinkram?",
+     "c": "Lege feste Plätze für fünf Dinge fest: Handy, Sonnenbrille, Snacks, Müllbeutel und Papiere."
+    },
+    "es": {
+     "t": "Ordenar el interior del coche",
+     "g": "Decide dónde van mapas, tentempiés, basura y objetos de valor para que el habitáculo esté en calma.",
+     "p": [
+      "Deja lo que necesita quien conduce, como gafas de sol y tarjeta para peajes, en un sitio fijo y fácil.",
+      "Usa una bolsa pequeña para la basura y vacíala en cada parada a repostar.",
+      "Guarda los objetos de valor fuera de la vista y nunca los dejes visibles al aparcar."
+     ],
+     "q": "¿Tu coche suele estar ordenado o se va llenando poco a poco de cosas?",
+     "c": "Elige un sitio fijo para cinco cosas: móvil, gafas de sol, tentempiés, bolsa de basura y papeles."
+    },
+    "fr": {
+     "t": "Organiser l'habitacle",
+     "g": "Décide où vont cartes, en-cas, déchets et objets de valeur pour garder un habitacle calme.",
+     "p": [
+      "Range ce dont le conducteur a besoin, lunettes de soleil et carte pour les péages, à un endroit fixe.",
+      "Utilise un petit sac pour les déchets et vide-le à chaque plein.",
+      "Garde les objets de valeur hors de vue et ne les laisse jamais visibles quand tu te gares."
+     ],
+     "q": "Ta voiture est plutôt rangée, ou elle se remplit peu à peu de petites choses ?",
+     "c": "Choisis une place fixe pour cinq objets : téléphone, lunettes, en-cas, sac à déchets et papiers."
+    },
+    "it": {
+     "t": "Organizzare l'abitacolo",
+     "g": "Decidi dove vanno mappe, spuntini, rifiuti e oggetti di valore per un abitacolo sereno.",
+     "p": [
+      "Tieni ciò che serve a chi guida, come occhiali da sole e tessera per i pedaggi, in un posto fisso.",
+      "Usa un sacchetto per i rifiuti e svuotalo a ogni rifornimento.",
+      "Tieni gli oggetti di valore fuori vista e non lasciarli mai in vista quando parcheggi."
+     ],
+     "q": "La tua auto è di solito in ordine o si riempie piano piano di cose?",
+     "c": "Scegli un posto fisso per cinque cose: telefono, occhiali, spuntini, sacchetto rifiuti e documenti."
+    },
+    "pt": {
+     "t": "Organizar o interior do carro",
+     "g": "Decide onde ficam mapas, lanches, lixo e valores para o habitáculo se manter calmo.",
+     "p": [
+      "Guarda o que o condutor precisa, como óculos de sol e cartão para portagens, num sítio fixo e fácil.",
+      "Usa um saco pequeno para o lixo e esvazia-o em cada paragem para abastecer.",
+      "Mantém os objetos de valor fora da vista e nunca os deixes à vista ao estacionar."
+     ],
+     "q": "O teu carro costuma estar arrumado ou vai-se enchendo de coisinhas?",
+     "c": "Escolhe um sítio fixo para cinco coisas: telemóvel, óculos, lanches, saco do lixo e documentos."
+    },
+    "pt_BR": {
+     "t": "Organizando o interior do carro",
+     "g": "Decida onde ficam mapas, lanches, lixo e objetos de valor para o carro ficar tranquilo.",
+     "p": [
+      "Deixe o que o motorista usa, como óculos de sol e cartão para pedágio, num lugar fixo e fácil.",
+      "Use um saquinho de lixo e esvazie em cada parada para abastecer.",
+      "Mantenha objetos de valor fora de vista e nunca deixe nada à mostra ao estacionar."
+     ],
+     "q": "Seu carro costuma ser arrumado ou vai enchendo de coisinhas aos poucos?",
+     "c": "Escolha um lugar fixo para cinco coisas: celular, óculos, lanches, saquinho de lixo e documentos."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing your plan with someone",
+     "g": "See why you tell a friend your route and check-in times before you leave.",
+     "p": [
+      "If something goes wrong in a remote place, someone will know where to start looking.",
+      "Share your route, where you sleep each night and a simple daily check-in time.",
+      "Agree what happens if you miss a check-in, so nobody worries for no reason."
+     ],
+     "q": "Who would you share your road trip plan with, and how often would you check in?",
+     "c": "Write a short message with your route and nightly stops that you could send to a friend."
+    },
+    "de": {
+     "t": "Den Plan mit jemandem teilen",
+     "g": "Sieh, warum du einer Vertrauensperson Route und Meldezeiten vor der Abfahrt mitteilst.",
+     "p": [
+      "Geht an einem abgelegenen Ort etwas schief, weiß jemand, wo die Suche beginnen soll.",
+      "Teile deine Route, die Übernachtungsorte und eine einfache tägliche Meldezeit.",
+      "Vereinbart, was passiert, wenn eine Meldung ausbleibt, damit sich niemand grundlos sorgt."
+     ],
+     "q": "Mit wem würdest du deinen Roadtrip-Plan teilen, und wie oft würdest du dich melden?",
+     "c": "Schreib eine kurze Nachricht mit Route und Übernachtungen, die du einer Freundin schicken könntest."
+    },
+    "es": {
+     "t": "Compartir tu plan",
+     "g": "Descubre por qué conviene contar tu ruta y tus horas de aviso a alguien antes de salir.",
+     "p": [
+      "Si algo sale mal en un lugar remoto, alguien sabrá por dónde empezar a buscar.",
+      "Comparte tu ruta, dónde duermes cada noche y una hora sencilla para avisar cada día.",
+      "Acordad qué pasa si no llega un aviso, para que nadie se preocupe sin motivo."
+     ],
+     "q": "¿Con quién compartirías el plan de tu road trip y cada cuánto darías señales?",
+     "c": "Escribe un mensaje corto con tu ruta y tus paradas nocturnas para enviar a un amigo."
+    },
+    "fr": {
+     "t": "Partager ton plan",
+     "g": "Comprends pourquoi confier ton itinéraire et tes heures de nouvelles à un proche avant de partir.",
+     "p": [
+      "Si un souci arrive dans un endroit isolé, quelqu'un saura par où commencer à chercher.",
+      "Partage ton itinéraire, tes lieux de nuit et une heure simple pour donner des nouvelles chaque jour.",
+      "Convenez de ce qui se passe si un message manque, pour que personne ne s'inquiète pour rien."
+     ],
+     "q": "Avec qui partagerais-tu ton plan de road trip, et à quelle fréquence donnerais-tu des nouvelles ?",
+     "c": "Écris un court message avec ton itinéraire et tes nuits que tu pourrais envoyer à un ami."
+    },
+    "it": {
+     "t": "Condividere il piano",
+     "g": "Scopri perché comunicare percorso e orari di aggiornamento a qualcuno prima di partire.",
+     "p": [
+      "Se qualcosa va storto in un posto isolato, qualcuno saprà da dove iniziare a cercare.",
+      "Condividi il percorso, dove dormi ogni notte e un orario semplice per farti sentire ogni giorno.",
+      "Decidete cosa succede se un messaggio non arriva, così nessuno si preoccupa senza motivo."
+     ],
+     "q": "Con chi condivideresti il piano del tuo road trip e quanto spesso ti faresti sentire?",
+     "c": "Scrivi un breve messaggio con percorso e tappe notturne da mandare a un amico."
+    },
+    "pt": {
+     "t": "Partilhar o plano",
+     "g": "Vê porque deves contar a alguém o teu percurso e as horas de contacto antes de partir.",
+     "p": [
+      "Se algo correr mal num sítio remoto, alguém saberá por onde começar a procurar.",
+      "Partilha o percurso, onde dormes cada noite e uma hora simples para dares notícias todos os dias.",
+      "Combinem o que acontece se faltar um contacto, para ninguém se preocupar sem razão."
+     ],
+     "q": "Com quem partilharias o plano da tua road trip e de quanto em quanto tempo darias notícias?",
+     "c": "Escreve uma mensagem curta com o percurso e as dormidas que pudesses enviar a um amigo."
+    },
+    "pt_BR": {
+     "t": "Compartilhando seu plano",
+     "g": "Veja por que contar seu roteiro e horários de contato a alguém antes de sair.",
+     "p": [
+      "Se algo der errado num lugar remoto, alguém vai saber por onde começar a procurar.",
+      "Compartilhe o roteiro, onde você dorme cada noite e um horário simples para dar notícias todo dia.",
+      "Combinem o que fazer se faltar um contato, para ninguém se preocupar à toa."
+     ],
+     "q": "Com quem você compartilharia o plano da sua road trip e com que frequência daria notícias?",
+     "c": "Escreva uma mensagem curta com o roteiro e os pernoites que você poderia mandar a um amigo."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: planning foundations",
+     "g": "Look back at routes, vehicles, checks and packing, then plan a mini weekend trip.",
+     "p": [
+      "Route: a start, an end, a few highlights, realistic daily hours and free time each day.",
+      "Car: the right size and gearbox, documents ready, tyres, fluids, lights and spare checked.",
+      "Packing: light bags, an essentials kit, snacks, water, chargers, offline maps and a shared plan."
+     ],
+     "q": "Which lesson from this first month surprised you the most?",
+     "c": "Plan a two-day mini trip: route, daily hours, car checks and a short packing list."
+    },
+    "de": {
+     "t": "Rückblick: Planungsgrundlagen",
+     "g": "Blick zurück auf Routen, Fahrzeuge, Checks und Packen und plane einen Mini-Wochenendtrip.",
+     "p": [
+      "Route: Start, Ziel, ein paar Highlights, realistische Fahrstunden und täglicher Freiraum.",
+      "Auto: passende Größe und Schaltung, Papiere bereit, Reifen, Flüssigkeiten, Licht und Reserverad geprüft.",
+      "Packen: leichte Taschen, Notfallset, Snacks, Wasser, Ladegeräte, Offline-Karten und ein geteilter Plan."
+     ],
+     "q": "Welche Lektion aus diesem ersten Monat hat dich am meisten überrascht?",
+     "c": "Plane einen Zwei-Tage-Trip: Route, Fahrstunden pro Tag, Autocheck und eine kurze Packliste."
+    },
+    "es": {
+     "t": "Repaso: bases de la planificación",
+     "g": "Repasa rutas, vehículos, revisiones y equipaje, y luego planea una mini escapada de fin de semana.",
+     "p": [
+      "Ruta: inicio, final, algunos puntos fuertes, horas diarias realistas y tiempo libre cada día.",
+      "Coche: tamaño y cambio adecuados, papeles listos, neumáticos, líquidos, luces y repuesto revisados.",
+      "Equipaje: bolsas ligeras, kit básico, tentempiés, agua, cargadores, mapas sin conexión y plan compartido."
+     ],
+     "q": "¿Qué lección de este primer mes te ha sorprendido más?",
+     "c": "Planea una mini escapada de dos días: ruta, horas diarias, revisión del coche y lista corta de equipaje."
+    },
+    "fr": {
+     "t": "Bilan : les bases de la préparation",
+     "g": "Revois itinéraires, véhicules, contrôles et bagages, puis prépare un mini week-end.",
+     "p": [
+      "Itinéraire : un départ, une arrivée, quelques temps forts, des heures réalistes et du temps libre.",
+      "Voiture : bonne taille et bonne boîte, papiers prêts, pneus, niveaux, feux et roue de secours vérifiés.",
+      "Bagages : sacs légers, kit essentiel, en-cas, eau, chargeurs, cartes hors ligne et plan partagé."
+     ],
+     "q": "Quelle leçon de ce premier mois t'a le plus surpris ?",
+     "c": "Prépare un mini voyage de deux jours : itinéraire, heures par jour, contrôles et courte liste de bagages."
+    },
+    "it": {
+     "t": "Ripasso: basi della pianificazione",
+     "g": "Ripassa percorsi, veicoli, controlli e bagagli, poi pianifica un mini weekend.",
+     "p": [
+      "Percorso: partenza, arrivo, qualche tappa forte, ore di guida realistiche e tempo libero ogni giorno.",
+      "Auto: misura e cambio giusti, documenti pronti, gomme, liquidi, luci e ruota di scorta controllati.",
+      "Bagagli: borse leggere, kit essenziale, spuntini, acqua, caricatori, mappe offline e piano condiviso."
+     ],
+     "q": "Quale lezione di questo primo mese ti ha sorpreso di più?",
+     "c": "Pianifica un mini viaggio di due giorni: percorso, ore al giorno, controlli all'auto e breve lista bagagli."
+    },
+    "pt": {
+     "t": "Revisão: bases do planeamento",
+     "g": "Revê percursos, veículos, verificações e bagagem e depois planeia uma mini escapadinha de fim de semana.",
+     "p": [
+      "Percurso: partida, chegada, alguns pontos altos, horas diárias realistas e tempo livre todos os dias.",
+      "Carro: tamanho e caixa certos, documentos prontos, pneus, líquidos, luzes e sobresselente verificados.",
+      "Bagagem: sacos leves, kit essencial, lanches, água, carregadores, mapas offline e plano partilhado."
+     ],
+     "q": "Que lição deste primeiro mês mais te surpreendeu?",
+     "c": "Planeia uma mini viagem de dois dias: percurso, horas por dia, verificações do carro e lista curta de bagagem."
+    },
+    "pt_BR": {
+     "t": "Revisão: bases do planejamento",
+     "g": "Revise rotas, veículos, checagens e bagagem e depois planeje uma mini viagem de fim de semana.",
+     "p": [
+      "Rota: partida, chegada, alguns destaques, horas diárias realistas e tempo livre todo dia.",
+      "Carro: tamanho e câmbio certos, documentos prontos, pneus, fluidos, luzes e estepe checados.",
+      "Bagagem: bolsas leves, kit essencial, lanches, água, carregadores, mapas offline e plano compartilhado."
+     ],
+     "q": "Qual lição deste primeiro mês mais surpreendeu você?",
+     "c": "Planeje uma mini viagem de dois dias: rota, horas por dia, checagem do carro e lista curta de bagagem."
+    }
+   }
+  }
+ ]
+}

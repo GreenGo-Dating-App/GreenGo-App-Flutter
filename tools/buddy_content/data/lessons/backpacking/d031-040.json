@@ -1,0 +1,835 @@
+{
+ "topic": "backpacking",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hostels 101",
+     "g": "Learn what hostels are, how they work and who stays in them.",
+     "p": [
+      "Hostels rent beds in shared dorms and often private rooms too, with shared kitchens and lounges.",
+      "You book a bed, not a whole room, so you share space with travellers from around the world.",
+      "Guests include solo travellers, friends, couples and families; many hostels welcome all ages."
+     ],
+     "q": "What picture comes to mind when you hear the word hostel?",
+     "c": "Look up one hostel in a city you like and read what its common areas offer."
+    },
+    "de": {
+     "t": "Hostels 101",
+     "g": "Erfahre, was Hostels sind, wie sie funktionieren und wer dort übernachtet.",
+     "p": [
+      "Hostels vermieten Betten in Schlafsälen und oft auch Privatzimmer, mit Gemeinschaftsküche und Lounge.",
+      "Du buchst ein Bett, kein ganzes Zimmer, und teilst den Raum mit Reisenden aus aller Welt.",
+      "Zu den Gästen gehören Alleinreisende, Freunde, Paare und Familien; viele Hostels heißen jedes Alter willkommen."
+     ],
+     "q": "Welches Bild hast du im Kopf, wenn du das Wort Hostel hörst?",
+     "c": "Such ein Hostel in einer Stadt, die du magst, und lies, was die Gemeinschaftsräume bieten."
+    },
+    "es": {
+     "t": "Albergues para principiantes",
+     "g": "Aprende qué son los hostales o albergues, cómo funcionan y quién se aloja en ellos.",
+     "p": [
+      "Los albergues alquilan camas en dormitorios compartidos y a menudo habitaciones privadas, con cocina y salón comunes.",
+      "Reservas una cama, no una habitación entera, y compartes espacio con viajeros de todo el mundo.",
+      "Hay viajeros solos, amigos, parejas y familias; muchos albergues reciben a gente de todas las edades."
+     ],
+     "q": "¿Qué imagen te viene a la cabeza cuando oyes la palabra albergue?",
+     "c": "Busca un albergue en una ciudad que te guste y lee qué ofrecen sus zonas comunes."
+    },
+    "fr": {
+     "t": "Les auberges, mode d'emploi",
+     "g": "Découvre ce que sont les auberges de jeunesse, comment elles fonctionnent et qui y loge.",
+     "p": [
+      "Les auberges louent des lits en dortoir et souvent des chambres privées, avec cuisine et salon communs.",
+      "Tu réserves un lit, pas une chambre entière, et tu partages l'espace avec des voyageurs du monde entier.",
+      "On y croise voyageurs solo, amis, couples et familles ; beaucoup d'auberges accueillent tous les âges."
+     ],
+     "q": "Quelle image te vient à l'esprit quand tu entends le mot auberge ?",
+     "c": "Cherche une auberge dans une ville que tu aimes et lis ce que proposent ses espaces communs."
+    },
+    "it": {
+     "t": "Ostelli: le basi",
+     "g": "Scopri cosa sono gli ostelli, come funzionano e chi ci soggiorna.",
+     "p": [
+      "Gli ostelli affittano letti in camerate condivise e spesso camere private, con cucina e sala comuni.",
+      "Prenoti un letto, non una camera intera, e condividi gli spazi con viaggiatori da tutto il mondo.",
+      "Ci sono viaggiatori soli, amici, coppie e famiglie; molti ostelli accolgono persone di ogni età."
+     ],
+     "q": "Che immagine ti viene in mente quando senti la parola ostello?",
+     "c": "Cerca un ostello in una città che ti piace e leggi cosa offrono gli spazi comuni."
+    },
+    "pt": {
+     "t": "Hostels para principiantes",
+     "g": "Aprende o que são hostels, como funcionam e quem fica neles.",
+     "p": [
+      "Os hostels alugam camas em dormitórios partilhados e muitas vezes quartos privados, com cozinha e sala comuns.",
+      "Reservas uma cama, não um quarto inteiro, e partilhas o espaço com viajantes de todo o mundo.",
+      "Há viajantes sozinhos, amigos, casais e famílias; muitos hostels recebem pessoas de todas as idades."
+     ],
+     "q": "Que imagem te vem à cabeça quando ouves a palavra hostel?",
+     "c": "Procura um hostel numa cidade de que gostes e lê o que oferecem os espaços comuns."
+    },
+    "pt_BR": {
+     "t": "Hostels para iniciantes",
+     "g": "Aprenda o que são hostels, como funcionam e quem se hospeda neles.",
+     "p": [
+      "Hostels alugam camas em quartos compartilhados e muitas vezes quartos privativos, com cozinha e sala comuns.",
+      "Você reserva uma cama, não um quarto inteiro, e divide o espaço com viajantes do mundo todo.",
+      "Tem viajantes solo, amigos, casais e famílias; muitos hostels recebem pessoas de todas as idades."
+     ],
+     "q": "Que imagem vem à sua cabeça quando você ouve a palavra hostel?",
+     "c": "Procure um hostel numa cidade de que você gosta e leia o que as áreas comuns oferecem."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dorms vs private rooms",
+     "g": "Choose between a dorm bed and a private room based on budget, privacy and how well you sleep.",
+     "p": [
+      "Dorms are the cheapest option and make it easy to meet people, but you share noise and light.",
+      "Private rooms cost more but give you quiet, a door that locks and sometimes your own bathroom.",
+      "Many travellers mix both: dorms most nights, a private room when they need proper rest."
+     ],
+     "q": "Are you a light sleeper or could you sleep through almost anything?",
+     "c": "Compare a dorm bed and a private room in the same hostel and note the main differences."
+    },
+    "de": {
+     "t": "Schlafsaal oder Privatzimmer",
+     "g": "Entscheide zwischen Schlafsaalbett und Privatzimmer nach Budget, Privatsphäre und Schlafqualität.",
+     "p": [
+      "Schlafsäle sind am günstigsten und machen Kontakte leicht, aber du teilst Geräusche und Licht.",
+      "Privatzimmer kosten mehr, bieten aber Ruhe, eine abschließbare Tür und manchmal ein eigenes Bad.",
+      "Viele mischen beides: meist Schlafsaal, ein Privatzimmer, wenn sie richtig Erholung brauchen."
+     ],
+     "q": "Hast du einen leichten Schlaf, oder könntest du fast alles verschlafen?",
+     "c": "Vergleich ein Schlafsaalbett und ein Privatzimmer im selben Hostel und notier die Unterschiede."
+    },
+    "es": {
+     "t": "Dormitorio o habitación privada",
+     "g": "Elige entre cama en dormitorio o habitación privada según presupuesto, privacidad y cómo duermes.",
+     "p": [
+      "Los dormitorios son lo más barato y facilitan conocer gente, pero compartes ruido y luz.",
+      "Las privadas cuestan más pero dan silencio, una puerta con llave y a veces baño propio.",
+      "Muchos viajeros combinan: dormitorio casi siempre y una privada cuando necesitan descansar de verdad."
+     ],
+     "q": "¿Tienes el sueño ligero o podrías dormir con casi cualquier cosa?",
+     "c": "Compara una cama en dormitorio y una habitación privada del mismo albergue y anota las diferencias."
+    },
+    "fr": {
+     "t": "Dortoir ou chambre privée",
+     "g": "Choisis entre un lit en dortoir et une chambre privée selon ton budget, ton intimité et ton sommeil.",
+     "p": [
+      "Les dortoirs sont l'option la moins chère et facilitent les rencontres, mais on partage bruit et lumière.",
+      "Les chambres privées coûtent plus, mais offrent calme, une porte qui ferme et parfois une salle de bain.",
+      "Beaucoup mélangent les deux : dortoir la plupart du temps, chambre privée pour bien récupérer."
+     ],
+     "q": "As-tu le sommeil léger, ou pourrais-tu dormir malgré presque tout ?",
+     "c": "Compare un lit en dortoir et une chambre privée dans la même auberge et note les différences."
+    },
+    "it": {
+     "t": "Camerata o camera privata",
+     "g": "Scegli tra letto in camerata e camera privata in base a budget, privacy e qualità del sonno.",
+     "p": [
+      "Le camerate sono l'opzione più economica e aiutano a conoscere gente, ma condividi rumori e luci.",
+      "Le camere private costano di più ma offrono silenzio, una porta che si chiude e a volte il bagno.",
+      "Molti viaggiatori alternano: camerata quasi sempre, camera privata quando serve riposare davvero."
+     ],
+     "q": "Hai il sonno leggero o riusciresti a dormire quasi in ogni situazione?",
+     "c": "Confronta un letto in camerata e una camera privata nello stesso ostello e annota le differenze."
+    },
+    "pt": {
+     "t": "Dormitório ou quarto privado",
+     "g": "Escolhe entre cama em dormitório e quarto privado conforme o orçamento, a privacidade e o sono.",
+     "p": [
+      "Os dormitórios são a opção mais barata e facilitam conhecer pessoas, mas partilhas barulho e luz.",
+      "Os quartos privados custam mais mas dão sossego, uma porta que tranca e às vezes casa de banho própria.",
+      "Muitos viajantes alternam: dormitório quase sempre e quarto privado quando precisam de descansar a sério."
+     ],
+     "q": "Tens o sono leve ou conseguias dormir com quase tudo?",
+     "c": "Compara uma cama em dormitório e um quarto privado no mesmo hostel e aponta as diferenças."
+    },
+    "pt_BR": {
+     "t": "Quarto coletivo ou privativo",
+     "g": "Escolha entre cama em quarto coletivo e quarto privativo pelo orçamento, privacidade e qualidade do sono.",
+     "p": [
+      "Quartos coletivos são a opção mais barata e facilitam fazer amigos, mas você divide barulho e luz.",
+      "Quartos privativos custam mais, mas dão sossego, uma porta que tranca e às vezes banheiro próprio.",
+      "Muitos viajantes alternam: coletivo na maioria das noites e privativo quando precisam descansar de verdade."
+     ],
+     "q": "Você tem sono leve ou dorme com quase qualquer coisa?",
+     "c": "Compare uma cama em quarto coletivo e um quarto privativo no mesmo hostel e anote as diferenças."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mixed and single-gender dorms",
+     "g": "Get to know the dorm options hostels offer and choose what feels most comfortable for you.",
+     "p": [
+      "Mixed dorms are the most common and are often the easiest to book at short notice.",
+      "Many hostels also offer female-only or male-only dorms, listed clearly when you book.",
+      "There is no right answer: pick the option that helps you feel relaxed and sleep well."
+     ],
+     "q": "Which dorm type would you feel most comfortable in, and why?",
+     "c": "Check a hostel booking page and find which dorm types it offers."
+    },
+    "de": {
+     "t": "Gemischte und getrennte Schlafsäle",
+     "g": "Lern die Schlafsaal-Optionen der Hostels kennen und wähl, was sich für dich am angenehmsten anfühlt.",
+     "p": [
+      "Gemischte Schlafsäle sind am häufigsten und oft am leichtesten kurzfristig zu buchen.",
+      "Viele Hostels bieten auch reine Frauen- oder Männerschlafsäle an, klar gekennzeichnet bei der Buchung.",
+      "Es gibt keine richtige Antwort: Wähl, wobei du dich entspannt fühlst und gut schläfst."
+     ],
+     "q": "In welcher Art Schlafsaal würdest du dich am wohlsten fühlen, und warum?",
+     "c": "Schau auf eine Hostel-Buchungsseite und finde heraus, welche Schlafsaalarten es gibt."
+    },
+    "es": {
+     "t": "Dormitorios mixtos y separados",
+     "g": "Conoce los tipos de dormitorio que ofrecen los albergues y elige el que te haga sentir más cómodo.",
+     "p": [
+      "Los dormitorios mixtos son los más comunes y suelen ser los más fáciles de reservar a última hora.",
+      "Muchos albergues ofrecen también dormitorios solo para mujeres o solo para hombres, bien indicados.",
+      "No hay respuesta correcta: elige la opción que te ayude a estar tranquilo y dormir bien."
+     ],
+     "q": "¿En qué tipo de dormitorio te sentirías más cómodo y por qué?",
+     "c": "Mira la página de reservas de un albergue y busca qué tipos de dormitorio ofrece."
+    },
+    "fr": {
+     "t": "Dortoirs mixtes ou non mixtes",
+     "g": "Découvre les types de dortoirs proposés et choisis celui où tu te sens le plus à l'aise.",
+     "p": [
+      "Les dortoirs mixtes sont les plus courants et souvent les plus faciles à réserver au dernier moment.",
+      "Beaucoup d'auberges proposent aussi des dortoirs réservés aux femmes ou aux hommes, bien indiqués.",
+      "Il n'y a pas de bonne réponse : choisis l'option qui t'aide à te détendre et à bien dormir."
+     ],
+     "q": "Dans quel type de dortoir te sentirais-tu le plus à l'aise, et pourquoi ?",
+     "c": "Regarde la page de réservation d'une auberge et repère les types de dortoirs proposés."
+    },
+    "it": {
+     "t": "Camerate miste e separate",
+     "g": "Conosci i tipi di camerata offerti dagli ostelli e scegli quello in cui ti senti più a tuo agio.",
+     "p": [
+      "Le camerate miste sono le più comuni e spesso le più facili da prenotare all'ultimo momento.",
+      "Molti ostelli offrono anche camerate solo femminili o solo maschili, indicate chiaramente.",
+      "Non esiste una risposta giusta: scegli l'opzione che ti fa stare tranquillo e dormire bene."
+     ],
+     "q": "In che tipo di camerata ti sentiresti più a tuo agio, e perché?",
+     "c": "Guarda la pagina di prenotazione di un ostello e scopri quali tipi di camerata offre."
+    },
+    "pt": {
+     "t": "Dormitórios mistos e separados",
+     "g": "Conhece os tipos de dormitório que os hostels oferecem e escolhe aquele em que te sentes melhor.",
+     "p": [
+      "Os dormitórios mistos são os mais comuns e muitas vezes os mais fáceis de reservar em cima da hora.",
+      "Muitos hostels têm também dormitórios só femininos ou só masculinos, bem indicados na reserva.",
+      "Não há resposta certa: escolhe a opção que te deixa tranquilo e te faz dormir bem."
+     ],
+     "q": "Em que tipo de dormitório te sentirias mais à vontade, e porquê?",
+     "c": "Vê a página de reservas de um hostel e descobre que tipos de dormitório oferece."
+    },
+    "pt_BR": {
+     "t": "Quartos mistos e separados",
+     "g": "Conheça os tipos de quarto coletivo que os hostels oferecem e escolha o que deixa você mais à vontade.",
+     "p": [
+      "Quartos mistos são os mais comuns e costumam ser os mais fáceis de reservar em cima da hora.",
+      "Muitos hostels também têm quartos só femininos ou só masculinos, bem indicados na reserva.",
+      "Não existe resposta certa: escolha a opção que deixa você tranquilo e dormindo bem."
+     ],
+     "q": "Em que tipo de quarto você se sentiria mais à vontade, e por quê?",
+     "c": "Veja a página de reservas de um hostel e descubra que tipos de quarto ele oferece."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading hostel reviews",
+     "g": "Learn what ratings for cleanliness, staff and atmosphere really tell you about a hostel.",
+     "p": [
+      "Read the most recent reviews first, because hostels can change a lot over time.",
+      "Look for patterns: one bad review is luck, five mentioning bedbugs or noise is a warning.",
+      "Match the atmosphere score to your style; a top party hostel may be terrible for sleep."
+     ],
+     "q": "What matters most to you in a place to sleep: cleanliness, location, people or price?",
+     "c": "Read ten reviews of one hostel and sum it up in a single sentence."
+    },
+    "de": {
+     "t": "Hostelbewertungen lesen",
+     "g": "Lerne, was Bewertungen für Sauberkeit, Personal und Atmosphäre wirklich über ein Hostel verraten.",
+     "p": [
+      "Lies zuerst die neuesten Bewertungen, denn Hostels können sich mit der Zeit stark verändern.",
+      "Achte auf Muster: Eine schlechte Bewertung ist Pech, fünf über Bettwanzen oder Lärm sind eine Warnung.",
+      "Gleich die Atmosphäre mit deinem Stil ab; ein Top-Partyhostel kann furchtbar zum Schlafen sein."
+     ],
+     "q": "Was ist dir bei einer Unterkunft am wichtigsten: Sauberkeit, Lage, Menschen oder Preis?",
+     "c": "Lies zehn Bewertungen eines Hostels und fass sie in einem einzigen Satz zusammen."
+    },
+    "es": {
+     "t": "Leer reseñas de albergues",
+     "g": "Aprende qué te dicen de verdad las notas de limpieza, personal y ambiente de un albergue.",
+     "p": [
+      "Lee primero las reseñas más recientes, porque los albergues pueden cambiar mucho con el tiempo.",
+      "Busca patrones: una mala reseña es mala suerte, cinco que hablan de chinches o ruido son un aviso.",
+      "Compara la nota de ambiente con tu estilo; un albergue de fiesta top puede ser fatal para dormir."
+     ],
+     "q": "¿Qué es lo más importante para ti al dormir fuera: limpieza, ubicación, gente o precio?",
+     "c": "Lee diez reseñas de un albergue y resúmelas en una sola frase."
+    },
+    "fr": {
+     "t": "Lire les avis sur les auberges",
+     "g": "Apprends ce que les notes de propreté, de personnel et d'ambiance disent vraiment d'une auberge.",
+     "p": [
+      "Lis d'abord les avis les plus récents, car une auberge peut beaucoup changer avec le temps.",
+      "Cherche les tendances : un mauvais avis, c'est la malchance ; cinq sur les punaises ou le bruit, c'est une alerte.",
+      "Compare la note d'ambiance à ton style : une auberge très festive peut être terrible pour dormir."
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi dans un hébergement : propreté, emplacement, gens ou prix ?",
+     "c": "Lis dix avis sur une auberge et résume-les en une seule phrase."
+    },
+    "it": {
+     "t": "Leggere le recensioni",
+     "g": "Impara cosa dicono davvero i voti su pulizia, staff e atmosfera di un ostello.",
+     "p": [
+      "Leggi prima le recensioni più recenti, perché un ostello può cambiare molto nel tempo.",
+      "Cerca gli schemi: una recensione negativa è sfortuna, cinque che parlano di cimici o rumore sono un avviso.",
+      "Confronta il voto sull'atmosfera con il tuo stile: un ostello da festa top può essere pessimo per dormire."
+     ],
+     "q": "Cosa conta di più per te in un alloggio: pulizia, posizione, persone o prezzo?",
+     "c": "Leggi dieci recensioni di un ostello e riassumile in una sola frase."
+    },
+    "pt": {
+     "t": "Ler avaliações de hostels",
+     "g": "Aprende o que as notas de limpeza, staff e ambiente dizem realmente sobre um hostel.",
+     "p": [
+      "Lê primeiro as avaliações mais recentes, porque um hostel pode mudar muito com o tempo.",
+      "Procura padrões: uma má avaliação é azar, cinco a falar de percevejos ou barulho são um aviso.",
+      "Compara a nota de ambiente com o teu estilo; um hostel de festa top pode ser péssimo para dormir."
+     ],
+     "q": "O que é mais importante para ti num sítio para dormir: limpeza, localização, pessoas ou preço?",
+     "c": "Lê dez avaliações de um hostel e resume-as numa só frase."
+    },
+    "pt_BR": {
+     "t": "Lendo avaliações de hostels",
+     "g": "Aprenda o que as notas de limpeza, equipe e clima dizem de verdade sobre um hostel.",
+     "p": [
+      "Leia primeiro as avaliações mais recentes, porque um hostel pode mudar muito com o tempo.",
+      "Procure padrões: uma avaliação ruim é azar, cinco falando de percevejos ou barulho são um alerta.",
+      "Compare a nota de clima com o seu estilo; um hostel de festa top pode ser péssimo para dormir."
+     ],
+     "q": "O que é mais importante para você num lugar para dormir: limpeza, localização, pessoas ou preço?",
+     "c": "Leia dez avaliações de um hostel e resuma tudo numa única frase."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lively vs quiet hostels",
+     "g": "Pick a hostel vibe that matches your travel style, from party spots to calm retreats.",
+     "p": [
+      "Party hostels have bars, events and late nights; great for socialising, harder for sleeping.",
+      "Quiet or boutique hostels focus on comfort, calm common rooms and early-morning explorers.",
+      "Descriptions like social, chilled or family-friendly in the listing usually tell you the vibe."
+     ],
+     "q": "On a trip, would you rather dance until late or wake up early for a sunrise?",
+     "c": "Find one lively and one quiet hostel in the same city and compare how they describe themselves."
+    },
+    "de": {
+     "t": "Lebhafte oder ruhige Hostels",
+     "g": "Wähl ein Hostel, dessen Stimmung zu deinem Reisestil passt, vom Partyort bis zur Ruheoase.",
+     "p": [
+      "Partyhostels haben Bars, Events und lange Nächte; toll zum Kennenlernen, schwer zum Schlafen.",
+      "Ruhige oder Boutique-Hostels setzen auf Komfort, entspannte Aufenthaltsräume und Frühaufsteher.",
+      "Wörter wie gesellig, entspannt oder familienfreundlich in der Beschreibung verraten meist die Stimmung."
+     ],
+     "q": "Würdest du auf Reisen lieber bis spät tanzen oder früh für einen Sonnenaufgang aufstehen?",
+     "c": "Such ein lebhaftes und ein ruhiges Hostel in derselben Stadt und vergleich, wie sie sich beschreiben."
+    },
+    "es": {
+     "t": "Albergues animados o tranquilos",
+     "g": "Elige un albergue cuyo ambiente encaje con tu forma de viajar, de la fiesta a la calma.",
+     "p": [
+      "Los albergues de fiesta tienen bar, eventos y noches largas; geniales para socializar, difíciles para dormir.",
+      "Los tranquilos o boutique apuestan por la comodidad, salones relajados y madrugadores.",
+      "Palabras como social, relajado o familiar en la descripción suelen revelar el ambiente."
+     ],
+     "q": "De viaje, ¿prefieres bailar hasta tarde o madrugar para ver el amanecer?",
+     "c": "Busca un albergue animado y otro tranquilo en la misma ciudad y compara cómo se describen."
+    },
+    "fr": {
+     "t": "Auberge animée ou calme",
+     "g": "Choisis une ambiance d'auberge adaptée à ton style, du lieu festif au refuge tranquille.",
+     "p": [
+      "Les auberges festives ont bar, soirées et nuits longues : top pour rencontrer, dur pour dormir.",
+      "Les auberges calmes ou boutique misent sur le confort, des salons paisibles et les lève-tôt.",
+      "Des mots comme convivial, détendu ou familial dans la description révèlent souvent l'ambiance."
+     ],
+     "q": "En voyage, préfères-tu danser tard ou te lever tôt pour un lever de soleil ?",
+     "c": "Trouve une auberge animée et une calme dans la même ville et compare leurs descriptions."
+    },
+    "it": {
+     "t": "Ostelli vivaci o tranquilli",
+     "g": "Scegli un ostello con un'atmosfera adatta al tuo stile, dal posto festaiolo al rifugio tranquillo.",
+     "p": [
+      "Gli ostelli da festa hanno bar, eventi e notti lunghe: ottimi per socializzare, difficili per dormire.",
+      "Quelli tranquilli o boutique puntano su comfort, sale comuni rilassate e chi si alza presto.",
+      "Parole come sociale, rilassato o adatto alle famiglie nella descrizione rivelano di solito l'atmosfera."
+     ],
+     "q": "In viaggio preferisci ballare fino a tardi o svegliarti presto per l'alba?",
+     "c": "Trova un ostello vivace e uno tranquillo nella stessa città e confronta come si descrivono."
+    },
+    "pt": {
+     "t": "Hostels animados ou calmos",
+     "g": "Escolhe um hostel cujo ambiente combine com o teu estilo, da festa ao refúgio tranquilo.",
+     "p": [
+      "Os hostels de festa têm bar, eventos e noites longas; ótimos para conviver, difíceis para dormir.",
+      "Os calmos ou boutique apostam no conforto, salas tranquilas e em quem acorda cedo.",
+      "Palavras como social, descontraído ou familiar na descrição costumam revelar o ambiente."
+     ],
+     "q": "Em viagem, preferes dançar até tarde ou acordar cedo para ver o nascer do sol?",
+     "c": "Encontra um hostel animado e outro calmo na mesma cidade e compara como se descrevem."
+    },
+    "pt_BR": {
+     "t": "Hostels agitados ou tranquilos",
+     "g": "Escolha um hostel com um clima que combine com seu estilo, da balada ao refúgio tranquilo.",
+     "p": [
+      "Hostels de festa têm bar, eventos e noites longas; ótimos para socializar, difíceis para dormir.",
+      "Os tranquilos ou boutique apostam em conforto, salas calmas e em quem acorda cedo.",
+      "Palavras como social, tranquilo ou para famílias na descrição costumam revelar o clima."
+     ],
+     "q": "Em viagem, você prefere dançar até tarde ou acordar cedo para ver o nascer do sol?",
+     "c": "Ache um hostel agitado e um tranquilo na mesma cidade e compare como eles se descrevem."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hostel check-in",
+     "g": "Know what to expect at hostel reception: ID, keys, deposits and house rules.",
+     "p": [
+      "Have your passport or ID ready; many hostels must record it, and some keep a copy.",
+      "You may get a key card, a key or a code, sometimes in exchange for a small refundable deposit.",
+      "Ask about check-out time, quiet hours, towel rental and where to leave your bag if you arrive early."
+     ],
+     "q": "What is one question you would always ask at reception when you arrive?",
+     "c": "Write three short questions you would ask at a hostel reception."
+    },
+    "de": {
+     "t": "Einchecken im Hostel",
+     "g": "Wisse, was dich an der Hostelrezeption erwartet: Ausweis, Schlüssel, Kaution und Hausregeln.",
+     "p": [
+      "Halt Pass oder Ausweis bereit; viele Hostels müssen ihn erfassen, manche machen eine Kopie.",
+      "Du bekommst eine Schlüsselkarte, einen Schlüssel oder einen Code, manchmal gegen eine kleine Kaution.",
+      "Frag nach Check-out-Zeit, Ruhezeiten, Handtuchverleih und wo du dein Gepäck bei früher Ankunft lässt."
+     ],
+     "q": "Welche Frage würdest du bei der Ankunft an der Rezeption immer stellen?",
+     "c": "Schreib drei kurze Fragen auf, die du an einer Hostelrezeption stellen würdest."
+    },
+    "es": {
+     "t": "El check-in en el albergue",
+     "g": "Sabe qué esperar en la recepción del albergue: documento, llaves, fianzas y normas de la casa.",
+     "p": [
+      "Ten a mano tu pasaporte o documento; muchos albergues deben registrarlo y algunos guardan una copia.",
+      "Te darán una tarjeta, una llave o un código, a veces a cambio de una pequeña fianza reembolsable.",
+      "Pregunta la hora de salida, las horas de silencio, si alquilan toallas y dónde dejar la mochila si llegas pronto."
+     ],
+     "q": "¿Qué pregunta harías siempre en recepción al llegar?",
+     "c": "Escribe tres preguntas cortas que harías en la recepción de un albergue."
+    },
+    "fr": {
+     "t": "L'arrivée à l'auberge",
+     "g": "Sache à quoi t'attendre à la réception : pièce d'identité, clés, caution et règlement intérieur.",
+     "p": [
+      "Prépare ton passeport ou ta pièce d'identité ; beaucoup d'auberges doivent l'enregistrer.",
+      "Tu recevras une carte, une clé ou un code, parfois contre une petite caution remboursable.",
+      "Demande l'heure de départ, les heures calmes, la location de serviettes et où laisser ton sac si tu arrives tôt."
+     ],
+     "q": "Quelle question poserais-tu toujours à la réception en arrivant ?",
+     "c": "Écris trois petites questions que tu poserais à la réception d'une auberge."
+    },
+    "it": {
+     "t": "Il check-in in ostello",
+     "g": "Sappi cosa aspettarti alla reception: documento, chiavi, cauzione e regole della casa.",
+     "p": [
+      "Tieni pronto il passaporto o il documento: molti ostelli devono registrarlo e alcuni ne fanno una copia.",
+      "Riceverai una tessera, una chiave o un codice, a volte in cambio di una piccola cauzione rimborsabile.",
+      "Chiedi l'orario di check-out, le ore di silenzio, il noleggio asciugamani e dove lasciare lo zaino se arrivi presto."
+     ],
+     "q": "Qual è una domanda che faresti sempre alla reception appena arrivi?",
+     "c": "Scrivi tre brevi domande che faresti alla reception di un ostello."
+    },
+    "pt": {
+     "t": "O check-in no hostel",
+     "g": "Sabe o que esperar na receção do hostel: identificação, chaves, cauções e regras da casa.",
+     "p": [
+      "Tem o passaporte ou documento à mão; muitos hostels têm de o registar e alguns guardam uma cópia.",
+      "Recebes um cartão, uma chave ou um código, às vezes em troca de uma pequena caução reembolsável.",
+      "Pergunta a hora de saída, as horas de silêncio, se alugam toalhas e onde deixar a mochila se chegares cedo."
+     ],
+     "q": "Que pergunta farias sempre na receção ao chegar?",
+     "c": "Escreve três perguntas curtas que farias na receção de um hostel."
+    },
+    "pt_BR": {
+     "t": "O check-in no hostel",
+     "g": "Saiba o que esperar na recepção do hostel: documento, chaves, caução e regras da casa.",
+     "p": [
+      "Deixe o passaporte ou documento à mão; muitos hostels precisam registrá-lo e alguns guardam uma cópia.",
+      "Você recebe um cartão, uma chave ou um código, às vezes em troca de uma pequena caução reembolsável.",
+      "Pergunte o horário de check-out, o horário de silêncio, se alugam toalha e onde deixar a mochila se chegar cedo."
+     ],
+     "q": "Que pergunta você sempre faria na recepção ao chegar?",
+     "c": "Escreva três perguntas curtas que você faria na recepção de um hostel."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lockers and security",
+     "g": "Use padlocks and simple habits to keep your valuables safe in shared rooms.",
+     "p": [
+      "Lock your passport, cards, laptop and spare cash in the locker whenever you leave the room.",
+      "Bring your own padlock; a compact one with a long shackle fits most hostel lockers.",
+      "Keep a small pouch with essentials near you at night, and never leave a phone charging unattended."
+     ],
+     "q": "How do you usually keep your important things safe when you are out?",
+     "c": "Check if your padlock fits through a thick loop, like the shackle hole of a gym locker."
+    },
+    "de": {
+     "t": "Spinde und Sicherheit",
+     "g": "Nutz Vorhängeschlösser und einfache Gewohnheiten, um Wertsachen im Schlafsaal sicher zu halten.",
+     "p": [
+      "Schließ Pass, Karten, Laptop und Bargeld in den Spind, sobald du das Zimmer verlässt.",
+      "Bring dein eigenes Schloss mit; ein kompaktes mit langem Bügel passt in die meisten Spinde.",
+      "Halt nachts eine kleine Tasche mit dem Wichtigsten bei dir und lass ein ladendes Handy nie unbeaufsichtigt."
+     ],
+     "q": "Wie schützt du unterwegs normalerweise deine wichtigen Sachen?",
+     "c": "Prüf, ob dein Schloss durch eine dicke Öse passt, etwa wie bei einem Spind im Fitnessstudio."
+    },
+    "es": {
+     "t": "Taquillas y seguridad",
+     "g": "Usa candados y hábitos sencillos para mantener a salvo tus objetos de valor en espacios compartidos.",
+     "p": [
+      "Guarda pasaporte, tarjetas, portátil y dinero extra en la taquilla siempre que salgas del cuarto.",
+      "Lleva tu propio candado; uno compacto con arco largo encaja en la mayoría de taquillas.",
+      "De noche ten cerca una bolsita con lo esencial y nunca dejes el móvil cargando sin vigilar."
+     ],
+     "q": "¿Cómo sueles proteger tus cosas importantes cuando estás fuera?",
+     "c": "Comprueba si tu candado pasa por una anilla gruesa, como la de una taquilla del gimnasio."
+    },
+    "fr": {
+     "t": "Casiers et sécurité",
+     "g": "Utilise des cadenas et de bonnes habitudes pour protéger tes objets de valeur en dortoir.",
+     "p": [
+      "Range passeport, cartes, ordinateur et argent de secours dans le casier dès que tu quittes la chambre.",
+      "Apporte ton propre cadenas ; un modèle compact à anse longue va dans la plupart des casiers.",
+      "La nuit, garde près de toi une pochette avec l'essentiel, et ne laisse jamais un téléphone charger sans surveillance."
+     ],
+     "q": "Comment protèges-tu en général tes affaires importantes quand tu sors ?",
+     "c": "Vérifie si ton cadenas passe dans un anneau épais, comme celui d'un casier de salle de sport."
+    },
+    "it": {
+     "t": "Armadietti e sicurezza",
+     "g": "Usa lucchetti e abitudini semplici per tenere al sicuro i tuoi oggetti di valore negli spazi condivisi.",
+     "p": [
+      "Chiudi passaporto, carte, portatile e contanti di scorta nell'armadietto ogni volta che esci dalla stanza.",
+      "Porta il tuo lucchetto: uno compatto con arco lungo va bene per quasi tutti gli armadietti.",
+      "Di notte tieni vicino una pochette con l'essenziale e non lasciare mai il telefono in carica incustodito."
+     ],
+     "q": "Come proteggi di solito le tue cose importanti quando sei fuori?",
+     "c": "Controlla se il tuo lucchetto passa in un anello spesso, come quello di un armadietto in palestra."
+    },
+    "pt": {
+     "t": "Cacifos e segurança",
+     "g": "Usa cadeados e hábitos simples para manter os objetos de valor seguros em espaços partilhados.",
+     "p": [
+      "Tranca passaporte, cartões, portátil e dinheiro extra no cacifo sempre que saíres do quarto.",
+      "Leva o teu próprio cadeado; um compacto com arco comprido serve na maioria dos cacifos.",
+      "À noite, mantém perto de ti uma bolsinha com o essencial e nunca deixes o telemóvel a carregar sozinho."
+     ],
+     "q": "Como costumas proteger as tuas coisas importantes quando estás fora?",
+     "c": "Vê se o teu cadeado passa numa argola grossa, como a de um cacifo de ginásio."
+    },
+    "pt_BR": {
+     "t": "Armários e segurança",
+     "g": "Use cadeados e hábitos simples para manter seus objetos de valor seguros em espaços compartilhados.",
+     "p": [
+      "Tranque passaporte, cartões, notebook e dinheiro extra no armário sempre que sair do quarto.",
+      "Leve seu próprio cadeado; um compacto com haste longa serve na maioria dos armários.",
+      "À noite, mantenha perto uma bolsinha com o essencial e nunca deixe o celular carregando sozinho."
+     ],
+     "q": "Como você costuma proteger suas coisas importantes quando está na rua?",
+     "c": "Veja se seu cadeado passa por uma argola grossa, como a de um armário de academia."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hostel etiquette",
+     "g": "Be a considerate roommate: respect quiet hours, lights and early or late packing.",
+     "p": [
+      "Respect quiet hours and keep calls, music and long chats for the common room.",
+      "If you come back late or leave early, use your headlamp, not the main light.",
+      "Pack the night before an early departure so your rustling bags do not wake the whole dorm."
+     ],
+     "q": "What is one habit that would make someone a great roommate in your eyes?",
+     "c": "Write down three dorm rules you would want everyone to follow."
+    },
+    "de": {
+     "t": "Hostel-Knigge",
+     "g": "Sei ein rücksichtsvoller Mitbewohner: Achte Ruhezeiten, Licht und frühes oder spätes Packen.",
+     "p": [
+      "Halte die Ruhezeiten ein und verleg Telefonate, Musik und lange Gespräche in den Aufenthaltsraum.",
+      "Kommst du spät oder gehst früh, nimm die Stirnlampe, nicht das Deckenlicht.",
+      "Pack am Abend vor einer frühen Abfahrt, damit raschelnde Tüten nicht den ganzen Schlafsaal wecken."
+     ],
+     "q": "Welche Gewohnheit macht für dich einen tollen Zimmergenossen aus?",
+     "c": "Schreib drei Schlafsaalregeln auf, an die sich alle halten sollten."
+    },
+    "es": {
+     "t": "Etiqueta en el albergue",
+     "g": "Sé un buen compañero de cuarto: respeta las horas de silencio, la luz y no hagas ruido al recoger.",
+     "p": [
+      "Respeta las horas de silencio y deja llamadas, música y charlas largas para la zona común.",
+      "Si vuelves tarde o sales temprano, usa tu frontal, no la luz principal.",
+      "Haz la mochila la noche antes de una salida temprana para que el ruido de bolsas no despierte a nadie."
+     ],
+     "q": "¿Qué costumbre hace, para ti, que alguien sea un gran compañero de cuarto?",
+     "c": "Escribe tres normas del dormitorio que te gustaría que todos cumplieran."
+    },
+    "fr": {
+     "t": "Le savoir-vivre en auberge",
+     "g": "Sois un colocataire attentionné : respecte les heures calmes, la lumière et les départs matinaux.",
+     "p": [
+      "Respecte les heures calmes et garde appels, musique et longues discussions pour le salon.",
+      "Si tu rentres tard ou pars tôt, utilise ta frontale, pas la lumière principale.",
+      "Fais ton sac la veille d'un départ matinal pour que le bruit des sacs ne réveille pas tout le dortoir."
+     ],
+     "q": "Quelle habitude fait, selon toi, un super compagnon de chambre ?",
+     "c": "Écris trois règles de dortoir que tu aimerais voir respectées par tous."
+    },
+    "it": {
+     "t": "Il galateo dell'ostello",
+     "g": "Sii un compagno di stanza attento: rispetta le ore di silenzio, le luci e chi dorme quando prepari lo zaino.",
+     "p": [
+      "Rispetta le ore di silenzio e lascia telefonate, musica e lunghe chiacchiere per la sala comune.",
+      "Se rientri tardi o parti presto, usa la frontale e non la luce principale.",
+      "Prepara lo zaino la sera prima di una partenza all'alba, così il fruscio dei sacchetti non sveglia nessuno."
+     ],
+     "q": "Quale abitudine rende qualcuno, secondo te, un ottimo compagno di stanza?",
+     "c": "Scrivi tre regole della camerata che vorresti fossero rispettate da tutti."
+    },
+    "pt": {
+     "t": "Etiqueta no hostel",
+     "g": "Sê um bom colega de quarto: respeita as horas de silêncio, a luz e quem dorme quando fazes a mochila.",
+     "p": [
+      "Respeita as horas de silêncio e deixa chamadas, música e conversas longas para a sala comum.",
+      "Se voltares tarde ou saíres cedo, usa a lanterna de cabeça e não a luz principal.",
+      "Faz a mochila na noite anterior a uma partida cedo para o barulho dos sacos não acordar o dormitório."
+     ],
+     "q": "Que hábito faz de alguém, para ti, um ótimo colega de quarto?",
+     "c": "Escreve três regras de dormitório que gostavas que todos cumprissem."
+    },
+    "pt_BR": {
+     "t": "Etiqueta no hostel",
+     "g": "Seja um bom colega de quarto: respeite o horário de silêncio, a luz e quem dorme quando arrumar a mochila.",
+     "p": [
+      "Respeite o horário de silêncio e deixe ligações, música e papos longos para a área comum.",
+      "Se voltar tarde ou sair cedo, use a lanterna de cabeça, não a luz principal.",
+      "Arrume a mochila na noite anterior a uma saída cedo, para o barulho das sacolas não acordar o quarto."
+     ],
+     "q": "Que hábito faz de alguém, para você, um ótimo colega de quarto?",
+     "c": "Escreva três regras de quarto coletivo que você gostaria que todos seguissem."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleeping well in dorms",
+     "g": "Sleep better in shared rooms with earplugs, an eye mask and a smart choice of bunk.",
+     "p": [
+      "Earplugs and an eye mask block snoring, late arrivals and early lights; try them at home first.",
+      "Bottom bunks are easier to get in and out of; top bunks often get less disturbance from others.",
+      "Avoid beds right next to the door or bathroom, where people pass by all night."
+     ],
+     "q": "Top bunk or bottom bunk: which would you choose, and why?",
+     "c": "Try sleeping with earplugs or an eye mask tonight to see how they feel."
+    },
+    "de": {
+     "t": "Gut schlafen im Schlafsaal",
+     "g": "Schlaf besser im Gemeinschaftszimmer mit Ohrstöpseln, Schlafmaske und dem richtigen Bett.",
+     "p": [
+      "Ohrstöpsel und Schlafmaske halten Schnarchen, späte Ankünfte und frühes Licht ab; teste sie vorher daheim.",
+      "Untere Betten sind leichter zu erreichen; obere Betten werden oft weniger gestört.",
+      "Meide Betten direkt neben Tür oder Bad, wo die ganze Nacht Leute vorbeigehen."
+     ],
+     "q": "Oberes oder unteres Bett: Was würdest du wählen, und warum?",
+     "c": "Probier heute Nacht, mit Ohrstöpseln oder Schlafmaske zu schlafen, und schau, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "Dormir bien en dormitorios",
+     "g": "Duerme mejor en habitaciones compartidas con tapones, antifaz y una buena elección de litera.",
+     "p": [
+      "Los tapones y el antifaz frenan ronquidos, llegadas tardías y luces tempranas; pruébalos antes en casa.",
+      "La litera de abajo es más fácil para entrar y salir; la de arriba suele recibir menos molestias.",
+      "Evita camas junto a la puerta o el baño, donde pasa gente toda la noche."
+     ],
+     "q": "Litera de arriba o de abajo: ¿cuál elegirías y por qué?",
+     "c": "Prueba esta noche a dormir con tapones o antifaz para ver qué tal te sientan."
+    },
+    "fr": {
+     "t": "Bien dormir en dortoir",
+     "g": "Dors mieux en chambre partagée avec bouchons, masque de nuit et un bon choix de lit.",
+     "p": [
+      "Bouchons et masque bloquent ronflements, arrivées tardives et lumières matinales ; teste-les chez toi avant.",
+      "Le lit du bas est plus facile d'accès ; celui du haut est souvent moins dérangé.",
+      "Évite les lits près de la porte ou de la salle de bain, où l'on passe toute la nuit."
+     ],
+     "q": "Lit du haut ou du bas : lequel choisirais-tu, et pourquoi ?",
+     "c": "Essaie de dormir ce soir avec des bouchons ou un masque pour voir ce que ça donne."
+    },
+    "it": {
+     "t": "Dormire bene in camerata",
+     "g": "Dormi meglio nelle stanze condivise con tappi, mascherina e la scelta giusta del letto a castello.",
+     "p": [
+      "Tappi e mascherina bloccano russare, arrivi tardivi e luci all'alba; provali prima a casa.",
+      "Il letto in basso è più comodo per salire e scendere; quello in alto viene spesso disturbato meno.",
+      "Evita i letti vicino alla porta o al bagno, dove passa gente tutta la notte."
+     ],
+     "q": "Letto sopra o sotto: quale sceglieresti e perché?",
+     "c": "Prova stanotte a dormire con i tappi o la mascherina per vedere come ti trovi."
+    },
+    "pt": {
+     "t": "Dormir bem em dormitórios",
+     "g": "Dorme melhor em quartos partilhados com tampões, máscara e uma boa escolha de beliche.",
+     "p": [
+      "Tampões e máscara travam ressonar, chegadas tardias e luzes cedo; experimenta-os primeiro em casa.",
+      "A cama de baixo é mais fácil para entrar e sair; a de cima costuma ter menos incómodos.",
+      "Evita camas junto à porta ou à casa de banho, onde passa gente a noite toda."
+     ],
+     "q": "Cama de cima ou de baixo no beliche: qual escolherias e porquê?",
+     "c": "Experimenta dormir esta noite com tampões ou máscara para ver como te sentes."
+    },
+    "pt_BR": {
+     "t": "Dormindo bem no quarto coletivo",
+     "g": "Durma melhor em quartos compartilhados com protetor de ouvido, máscara e a escolha certa do beliche.",
+     "p": [
+      "Protetor de ouvido e máscara barram ronco, chegadas tardias e luz cedo; teste antes em casa.",
+      "A cama de baixo é mais fácil para entrar e sair; a de cima costuma ser menos incomodada.",
+      "Evite camas perto da porta ou do banheiro, onde passa gente a noite toda."
+     ],
+     "q": "Cama de cima ou de baixo do beliche: qual você escolheria e por quê?",
+     "c": "Experimente dormir hoje com protetor de ouvido ou máscara para ver como se sente."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hostel kitchens",
+     "g": "Use shared hostel kitchens well: label your food, clean up and cook simple meals for one.",
+     "p": [
+      "Label your food bag with your name and check-out date, as many hostels clear the fridge regularly.",
+      "Wash, dry and put away what you use straight after cooking, and wipe the counter.",
+      "One-pot meals like pasta, rice with vegetables or eggs are quick, cheap and easy to share."
+     ],
+     "q": "What is a simple dish you could cook in any kitchen in the world?",
+     "c": "Write down a one-pot recipe with five ingredients or fewer."
+    },
+    "de": {
+     "t": "Hostelküchen",
+     "g": "Nutz Gemeinschaftsküchen gut: Beschrifte dein Essen, räum auf und koch einfache Gerichte für dich.",
+     "p": [
+      "Beschrifte deine Essenstüte mit Namen und Abreisedatum, denn viele Hostels räumen den Kühlschrank regelmäßig.",
+      "Spül, trockne und räum alles direkt nach dem Kochen weg und wisch die Arbeitsfläche ab.",
+      "Eintopfgerichte wie Pasta, Reis mit Gemüse oder Eier sind schnell, günstig und leicht zu teilen."
+     ],
+     "q": "Welches einfache Gericht könntest du in jeder Küche der Welt kochen?",
+     "c": "Schreib ein Eintopfrezept mit höchstens fünf Zutaten auf."
+    },
+    "es": {
+     "t": "Cocinas de albergue",
+     "g": "Usa bien la cocina compartida: etiqueta tu comida, limpia y cocina platos sencillos para uno.",
+     "p": [
+      "Pon en tu bolsa de comida tu nombre y fecha de salida, porque muchos albergues vacían la nevera a menudo.",
+      "Lava, seca y guarda lo que uses justo después de cocinar, y limpia la encimera.",
+      "Los platos de una sola olla, como pasta, arroz con verduras o huevos, son rápidos, baratos y fáciles de compartir."
+     ],
+     "q": "¿Qué plato sencillo podrías cocinar en cualquier cocina del mundo?",
+     "c": "Apunta una receta de una sola olla con cinco ingredientes o menos."
+    },
+    "fr": {
+     "t": "La cuisine de l'auberge",
+     "g": "Utilise bien la cuisine commune : étiquette ta nourriture, nettoie et cuisine simple pour toi.",
+     "p": [
+      "Note ton nom et ta date de départ sur ton sac de courses, car beaucoup d'auberges vident le frigo souvent.",
+      "Lave, essuie et range ce que tu utilises juste après avoir cuisiné, et nettoie le plan de travail.",
+      "Les plats en une casserole, comme pâtes, riz aux légumes ou œufs, sont rapides, pas chers et faciles à partager."
+     ],
+     "q": "Quel plat simple pourrais-tu cuisiner dans n'importe quelle cuisine du monde ?",
+     "c": "Note une recette en une casserole avec cinq ingrédients ou moins."
+    },
+    "it": {
+     "t": "La cucina dell'ostello",
+     "g": "Usa bene la cucina comune: etichetta il cibo, pulisci e cucina piatti semplici per una persona.",
+     "p": [
+      "Scrivi nome e data di partenza sul sacchetto del cibo, perché molti ostelli svuotano spesso il frigo.",
+      "Lava, asciuga e rimetti a posto ciò che usi subito dopo aver cucinato, e pulisci il piano.",
+      "I piatti in una sola pentola, come pasta, riso con verdure o uova, sono veloci, economici e facili da condividere."
+     ],
+     "q": "Quale piatto semplice potresti cucinare in qualsiasi cucina del mondo?",
+     "c": "Annota una ricetta in una sola pentola con al massimo cinque ingredienti."
+    },
+    "pt": {
+     "t": "A cozinha do hostel",
+     "g": "Usa bem a cozinha partilhada: identifica a tua comida, limpa e cozinha pratos simples para um.",
+     "p": [
+      "Escreve o teu nome e a data de saída no saco da comida, porque muitos hostels esvaziam o frigorífico.",
+      "Lava, seca e arruma o que usares logo depois de cozinhar, e limpa a bancada.",
+      "Pratos de uma só panela, como massa, arroz com legumes ou ovos, são rápidos, baratos e fáceis de partilhar."
+     ],
+     "q": "Que prato simples conseguias cozinhar em qualquer cozinha do mundo?",
+     "c": "Aponta uma receita de uma só panela com cinco ingredientes ou menos."
+    },
+    "pt_BR": {
+     "t": "A cozinha do hostel",
+     "g": "Use bem a cozinha compartilhada: identifique sua comida, limpe tudo e cozinhe pratos simples para um.",
+     "p": [
+      "Escreva seu nome e a data de saída na sacola de comida, porque muitos hostels esvaziam a geladeira.",
+      "Lave, seque e guarde o que usar logo depois de cozinhar, e limpe a bancada.",
+      "Pratos de uma panela só, como macarrão, arroz com legumes ou ovos, são rápidos, baratos e fáceis de dividir."
+     ],
+     "q": "Que prato simples você conseguiria cozinhar em qualquer cozinha do mundo?",
+     "c": "Anote uma receita de uma panela só com cinco ingredientes ou menos."
+    }
+   }
+  }
+ ]
+}

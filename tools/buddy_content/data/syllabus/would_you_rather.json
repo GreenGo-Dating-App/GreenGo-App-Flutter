@@ -1,0 +1,2195 @@
+{
+ "topic": "would_you_rather",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "Welcome to Would You Rather",
+   "f": "How the game works: two options, pick one, then share the reason why"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "Sunny beach or snowy mountain",
+   "f": "Choosing a dream holiday setting and describing what you would do there"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "Pizza or pasta forever",
+   "f": "Picking a favourite comfort food and explaining what makes it special"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Cats or dogs as a companion",
+   "f": "Comparing two classic pets and the daily life each one brings"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Morning person or night owl",
+   "f": "Talking about the time of day when you feel most awake and happy"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "Fly or be invisible",
+   "f": "The classic superpower choice and the first thing you would do with it"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Read the book or watch the film",
+   "f": "How you prefer to enjoy a good story and why"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Tea or coffee to start the day",
+   "f": "Sharing morning drink habits and little rituals from around the world"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "Summer or winter all year",
+   "f": "Picking a forever season and the activities that come with it"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "City lights or quiet countryside",
+   "f": "Imagining where you would live and what a normal day would look like"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Sing or dance in public",
+   "f": "Choosing a fun performance and the kind of song or style you would pick"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "Sweet or salty snacks",
+   "f": "Snack preferences and favourite treats from different countries"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Talk to animals or speak every language",
+   "f": "Two communication powers and who you would chat with first"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Train journey or road trip",
+   "f": "Comparing ways to travel and the joys of each kind of journey"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Breakfast for dinner or dinner for breakfast",
+   "f": "Playful food swaps and favourite meals at any time of day"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Live in a treehouse or a houseboat",
+   "f": "Unusual homes and what daily life would feel like in each one"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Paint or play an instrument",
+   "f": "Picking a creative hobby to master and what you would create"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Explore space or the deep ocean",
+   "f": "Two great frontiers and what you would hope to discover"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Rainy day in or sunny day out",
+   "f": "How you like to spend a free day depending on the weather"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Spicy food or mild flavours",
+   "f": "Talking about spice levels and dishes that changed your taste"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "Robot helper or magic wand",
+   "f": "Imagining everyday chores made easy and how you would use the help"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Famous chef or famous musician",
+   "f": "Dream careers just for fun and what your signature work would be"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Visit the past or the future",
+   "f": "Time travel basics: which direction you would choose and why"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Ice cream or cake at a party",
+   "f": "Party treats, flavours and celebration habits across cultures"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "Beach volleyball or mountain hiking",
+   "f": "Active holiday choices and how you like to move outdoors"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Always know the time or never get lost",
+   "f": "Small practical superpowers and how they would change your day"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Big party or small dinner",
+   "f": "Ways of celebrating with friends and what makes a great gathering"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Write a novel or film a movie",
+   "f": "Telling stories in different ways and the plot you would pick"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "Live by a lake or by the sea",
+   "f": "Waterside life and the activities each place offers"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review day: your first favourite picks",
+   "f": "Looking back at the first month of choices and spotting your patterns"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "Theme month: around the world in choices",
+   "f": "Starting a month of travel dilemmas and naming dream destinations"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Tokyo streets or Paris cafes",
+   "f": "Two famous city vibes and what you would explore first"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Safari or rainforest trek",
+   "f": "Wildlife adventures and the animals you would love to see"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "Northern lights or a desert sky",
+   "f": "Natural wonders of the night and where to see them"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Hostel friends or hotel comfort",
+   "f": "Travel styles and the experiences each one brings"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Plan every detail or go with the flow",
+   "f": "Trip planning personalities and how you handle surprises"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Window seat or aisle seat",
+   "f": "Small travel preferences and the little things that matter on a trip"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Street food tour or fancy restaurant",
+   "f": "Eating while travelling and memorable meals abroad"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Surf in Bali or ski in the Alps",
+   "f": "Picking a holiday skill to learn and the place to learn it"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Visit castles or ancient ruins",
+   "f": "History on the road and famous sites you would like to see"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Cruise ship or camper van",
+   "f": "Two slow ways to travel and the freedom each one gives"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "One long trip or many short ones",
+   "f": "How you would split your holiday time across a year"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Travel solo or with a group",
+   "f": "Company on the road and what you enjoy about each option"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "Island hopping or a city break",
+   "f": "Picking between relaxed islands and busy city adventures"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Photos of everything or no camera at all",
+   "f": "How you like to remember trips and share them with others"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Pack light or pack for everything",
+   "f": "Packing styles and the one item you never travel without"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Hot springs in Iceland or beaches in Brazil",
+   "f": "Comparing two dream relaxing spots and what makes them special"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Hot air balloon or helicopter ride",
+   "f": "Seeing the world from above and the view you would choose"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Learn a local dance or a local recipe",
+   "f": "Taking a piece of culture home after a trip"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Visit every capital or every wonder",
+   "f": "Big travel goals and how you would plan them"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Stay with locals or in a quiet cabin",
+   "f": "Meeting people versus finding peace while travelling"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Night market or morning market",
+   "f": "Markets around the world and the treasures found in them"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Bike across a country or walk a famous trail",
+   "f": "Slow adventures on wheels or on foot"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Lighthouse keeper or mountain hut host",
+   "f": "Dreamy remote jobs and a day in each life"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Festival of lights or festival of colours",
+   "f": "Joyful celebrations around the world and how people join in"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Tropical fruit or European pastries",
+   "f": "Travel treats you would fly across the world to taste"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Teleport once a week or fly free forever",
+   "f": "Travel superpowers and how often you would use them"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Souvenir magnets or local crafts",
+   "f": "What you bring home from trips and why it matters"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Get lost in a new city or follow a guide",
+   "f": "Exploring style and the joy of unexpected discoveries"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review day: your travel personality",
+   "f": "Summing up a month of travel choices into your traveller profile"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Theme month: the great food debate",
+   "f": "Starting a month of tasty dilemmas and naming your top three foods"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "Only soup or only sandwiches",
+   "f": "Choosing one food format for a week and how to keep it exciting"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Cook every meal or never cook again",
+   "f": "How you feel about cooking and the dishes you would miss"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Chocolate or vanilla everything",
+   "f": "Classic flavour battles and the desserts that go with them"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Tacos or sushi night",
+   "f": "Two beloved dishes, how they are eaten and favourite fillings"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Fruit for dessert or a rich pudding",
+   "f": "Light or indulgent endings to a meal around the world"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Pancakes or waffles",
+   "f": "Breakfast classics and toppings people love in different countries"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Grandma recipes or new food trends",
+   "f": "Traditional cooking versus trying the newest dishes"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Chopsticks or eating with your hands",
+   "f": "Eating styles across cultures and the foods that suit them"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Picnic in a park or dinner on a rooftop",
+   "f": "Picking a perfect setting for a meal with friends"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "Taste every cheese or every bread",
+   "f": "Food exploration goals and famous regional specialities"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Fresh lemonade or hot chocolate",
+   "f": "Favourite drinks for different moods and seasons"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Bake a giant cake or tiny cookies",
+   "f": "Baking projects and who you would share them with"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Food truck owner or cafe owner",
+   "f": "Dream food businesses and what you would serve"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Endless popcorn or endless fries",
+   "f": "Silly unlimited snack choices and the perfect pairing"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Cook with a famous chef or eat at a market",
+   "f": "Learning about food from experts or from locals"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Breakfast in bed or brunch with friends",
+   "f": "Lazy mornings and the best way to start a weekend"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Only sweet breakfast or only savoury",
+   "f": "Morning food habits from around the world"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Guess ingredients blindfolded or by smell",
+   "f": "Fun tasting games and how well you know your flavours"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Grow vegetables or forage berries",
+   "f": "Getting food from nature and the joy of fresh produce"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Mild curry or fiery hot salsa",
+   "f": "Spice from different cuisines and how brave you are"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "One dish forever or a new dish every day",
+   "f": "Comfort versus variety in what you eat"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Dinner party host or favourite guest",
+   "f": "Social roles around the table and what each one involves"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Ice cream in winter or soup in summer",
+   "f": "Breaking food season rules and enjoying it"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Invent a new flavour or a new snack",
+   "f": "Creative food ideas and what you would name them"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Family-style sharing or your own plate",
+   "f": "Ways of serving food in different cultures"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Cooking show judge or contestant",
+   "f": "Food competitions and how you handle pressure in the kitchen"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Midnight snack or early breakfast",
+   "f": "Late-night and early-morning eating habits"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Mango or strawberry season",
+   "f": "Favourite fruits and the memories that come with them"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review day: your food profile",
+   "f": "Summing up a month of tasty choices into your personal food map"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "Theme month: superpowers and magic",
+   "f": "Starting a month of magical choices and naming your dream power"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Super speed or super strength",
+   "f": "Classic hero powers and the kind ways you would use them"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Read minds or see the future",
+   "f": "Knowledge powers and why you might choose to use them rarely"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Breathe underwater or walk on clouds",
+   "f": "Elemental powers and the places they would let you explore"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Ant size or giant size",
+   "f": "Changing size for a day and what you would see"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Freeze time or rewind ten minutes",
+   "f": "Time powers for everyday moments and little mistakes"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Control the weather or grow plants instantly",
+   "f": "Nature powers and how you would help your town"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Talk to plants or understand babies",
+   "f": "Funny listening powers and what you might learn"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Flying carpet or magic door",
+   "f": "Magical transport and your first destination"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Never need sleep or never feel tired",
+   "f": "Energy powers and how you would spend the extra time"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Wizard or superhero",
+   "f": "Two fantasy roles and the style of each one"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Shape-shift into animals or objects",
+   "f": "Transformation powers and the funniest choice you would make"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Instant learning or perfect memory",
+   "f": "Brain powers and the skills you would master first"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Healing touch or calming voice",
+   "f": "Gentle powers that help people feel better"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Pet dragon or talking owl",
+   "f": "Fantasy companions and the adventures you would share"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Invisibility cloak or flying boots",
+   "f": "Magical items and the fun you would have with them"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Teleport anywhere or pause any moment",
+   "f": "Choosing between freedom of place and freedom of time"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Light up rooms or make music appear",
+   "f": "Fun cosy powers for parties and quiet evenings"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Super hearing or eagle eyesight",
+   "f": "Sharp senses and the beautiful details you would notice"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Big power for a day or small power forever",
+   "f": "Big but short versus small but permanent magic"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Magic paintbrush or magic notebook",
+   "f": "Creative powers where drawings or words come to life"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Clone yourself or be in two places",
+   "f": "Doubling yourself and what each version would do"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Make anyone laugh or make anyone calm",
+   "f": "Kind social powers and when they would be useful"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Unlimited books or unlimited songs",
+   "f": "Endless entertainment and the genres you would choose"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Hero sidekick or wise mentor",
+   "f": "Supporting roles in a hero story and why they matter"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Breathe fire or blow ice",
+   "f": "Playful dragon powers and harmless, useful ways to use them"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Magic school or hero academy",
+   "f": "Fantasy schools and the subjects you would love to study"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Change your hair colour or your voice at will",
+   "f": "Fun appearance powers and silly uses for them"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Design your own superhero",
+   "f": "Combining favourite powers into one original, kind hero"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review day: your power profile",
+   "f": "Summing up your magical choices and what they say about you"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Theme month: hobbies and free time",
+   "f": "Starting a month about hobbies and how you love to spend free time"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Learn guitar or learn piano",
+   "f": "Choosing an instrument and the songs you would play first"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Gardening or birdwatching",
+   "f": "Calm outdoor hobbies and the patience they teach"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "Board games or video games night",
+   "f": "Game night styles and favourite games to play with friends"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "Knitting or woodworking",
+   "f": "Making things by hand and the first project you would try"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Running club or yoga class",
+   "f": "Ways to stay active and the community each one brings"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Photography or sketching",
+   "f": "Capturing the world in images and what you love to record"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Puzzle lover or crossword fan",
+   "f": "Brain games and how you like to challenge your mind"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Join a choir or a theatre group",
+   "f": "Group arts and the fun of performing together"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Collect stamps or collect postcards",
+   "f": "Collecting hobbies and the stories behind each piece"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Rock climbing or kayaking",
+   "f": "Adventurous hobbies and the skills they build"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Bake bread or make homemade lemonade",
+   "f": "Kitchen hobbies and the satisfaction of making things yourself"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Magic tricks or juggling",
+   "f": "Fun party skills and how long they take to learn"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Pottery or painting class",
+   "f": "Creative classes and the joy of messy hands"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Write a blog or record a podcast",
+   "f": "Sharing your passions and the topics you would cover"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Fishing trips or cycling tours",
+   "f": "Weekend hobbies outdoors and their peaceful moments"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Learn chess or a classic card game",
+   "f": "Strategy games from around the world and how they are played"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Volunteer with animals or in a garden",
+   "f": "Giving time to causes you care about in a friendly way"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "Origami or calligraphy",
+   "f": "Art forms with deep cultural roots and patient practice"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Dance salsa or tango",
+   "f": "Partner dances from Latin America and their rhythms"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Model ships or model trains",
+   "f": "Miniature worlds and the patience behind them"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "Stargazing or cloud watching",
+   "f": "Looking up at the sky by night or by day"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Sew clothes or fix bikes",
+   "f": "Useful hobbies that make life easier and save things from waste"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Watch sports or play sports",
+   "f": "Fan life versus taking part and how each one feels"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Hobby to relax or hobby to challenge",
+   "f": "What you want from free time and why"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Try ten hobbies or master one",
+   "f": "Exploring widely versus going deep"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Learn from videos or from a teacher",
+   "f": "Ways of learning a new hobby and what works best for you"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Hobby alone or with friends",
+   "f": "Solo calm versus social fun in free time"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Hobby as a job or just for fun",
+   "f": "Passion and work and how they can mix"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Review day: your hobby map",
+   "f": "Looking back at hobby choices and picking one to try soon"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Theme month: cultures and traditions",
+   "f": "Starting a month about customs and celebrations around the world"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "New Year in Rio or in Sydney",
+   "f": "Famous New Year celebrations and their traditions"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Learn flamenco or the haka",
+   "f": "Traditional performances and the stories they tell"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "Tea ceremony or coffee ceremony",
+   "f": "Drink rituals from Japan and Ethiopia and their meaning"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Wear a kimono or a sari for a day",
+   "f": "Traditional clothing and the occasions it is worn for"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "Carnival in Venice or in Brazil",
+   "f": "Two famous carnivals and their very different styles"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "A greeting from every continent",
+   "f": "Ways people say hello around the world"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Siesta culture or early dinner culture",
+   "f": "Daily rhythms in different countries and how they feel"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Lantern festival or kite festival",
+   "f": "Festivals of light and wind and how they are celebrated"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Bow, handshake or cheek kiss",
+   "f": "Greeting customs and how to choose the right one politely"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "Mexican fiesta foods or Lunar New Year treats",
+   "f": "Festive foods and the luck or joy they represent"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Traditional instrument or folk songs",
+   "f": "Music traditions passed down through generations"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Big family gatherings or small ones",
+   "f": "How families celebrate holidays in different cultures"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "A proverb from every country",
+   "f": "Wise sayings and what they show about a culture"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "A holiday in Morocco or in India",
+   "f": "Two colourful cultures and what you would love to experience"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Traditional craft or traditional game",
+   "f": "Hands-on culture: crafts and childhood games"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Market haggling or fixed prices",
+   "f": "Shopping customs and the fun of local markets"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Sign language or a whistled language",
+   "f": "Unusual ways people communicate around the world"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "A national dish in its home country",
+   "f": "Why food tastes different in the place where it was born"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "Gift customs or table manners",
+   "f": "Polite habits worth knowing before visiting a country"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Midsummer in Sweden or Diwali in India",
+   "f": "Seasonal celebrations of light and nature"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Live like a local for a week or a month",
+   "f": "Cultural immersion and what you would learn"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Dance at a wedding or at a festival",
+   "f": "Joining celebrations as a guest and following local customs"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Postcards from everywhere or a pen pal",
+   "f": "Old-fashioned ways of connecting across cultures"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Visit a village or a big capital",
+   "f": "Different faces of the same country"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "The story of a famous monument",
+   "f": "History behind places like the Great Wall or Machu Picchu"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Share your dish or learn a new one",
+   "f": "Exchanging food traditions with new friends"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Ten words in ten languages",
+   "f": "Small language steps that open many doors"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Host a cultural evening for friends",
+   "f": "Planning a night of food, music and games from one culture"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Review day: culture favourites",
+   "f": "Looking back at the traditions you discovered and liked most"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Theme month: imagination unlimited",
+   "f": "Starting a month of creative and dreamy what-if choices"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Live in a castle or a lighthouse",
+   "f": "Dream homes from stories and their cosy corners"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Design a new planet or a new island",
+   "f": "Creating imaginary places and their rules"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Talking animals or toys that come alive",
+   "f": "Whimsical worlds and what would change first"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "A day as a cloud or as a river",
+   "f": "Imagining life as part of nature"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Fairy tale or science fiction world",
+   "f": "Story worlds and the role you would play in them"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Invent a holiday or a new sport",
+   "f": "Creating fun new traditions and how to celebrate them"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "A door into any book or any painting",
+   "f": "Stepping into art and stories"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "A house that flies or one that floats",
+   "f": "Moving homes and the views from them"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Invent a new colour or a new musical note",
+   "f": "Imagining new senses and how to describe them"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "Friendly alien or time traveller",
+   "f": "Surprise visitors and what you would ask them"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "City in the clouds or under the sea",
+   "f": "Fantastic cities and how people would live there"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Your pet can talk for one day",
+   "f": "What animals might say and the questions you would ask"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Pocket-sized house or giant tiny garden",
+   "f": "Playful size changes in everyday life"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Hero or narrator of a story",
+   "f": "Roles in storytelling and their different points of view"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Write a new ending for a famous tale",
+   "f": "Rewriting classic stories with a kind twist"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Ride a dragon or a giant eagle",
+   "f": "Fantasy flights and the lands you would cross"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Invent a gadget for your mornings",
+   "f": "Imaginary inventions that solve small daily problems"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Every book or every film ever made",
+   "f": "Endless stories and where you would start"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "Day 200 celebration round",
+   "f": "A cheerful mix of favourite choices to celebrate 200 days"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "Live in a snow globe or a music box",
+   "f": "Tiny magical worlds and life inside them"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "A world without cars or without screens",
+   "f": "Imagining calmer worlds and what would fill the time"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Design a theme park ride",
+   "f": "Creating the ride of your dreams with friends"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Talking furniture or dancing kitchen tools",
+   "f": "Silly household magic in the style of animated films"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Swap lives with a story character",
+   "f": "Which character you would be for a day and why"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "A city of candy or a city of books",
+   "f": "Playful architecture and what each building would be"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "New season every day or one forever",
+   "f": "Imagining weather rules and how life would adapt"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Moon base or ocean station",
+   "f": "Future homes in extreme places and daily life there"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Your dreams become films",
+   "f": "Sharing dreams as stories and choosing a genre for them"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Review day: imagination gallery",
+   "f": "Looking back at your most creative answers of the month"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Theme month: everyday life choices",
+   "f": "Starting a month of relatable daily dilemmas"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Clean as you go or one big clean",
+   "f": "Tidying styles and tips that make chores lighter"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Early alarm or slow morning",
+   "f": "Morning routines and what helps you start the day well"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "Phone calls or voice messages",
+   "f": "Ways of keeping in touch and the good sides of each"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Work from a cafe or from home",
+   "f": "Favourite places to focus and what makes them good"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Walk to work or cycle",
+   "f": "Commuting choices and how they shape the day"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Lists on paper or in apps",
+   "f": "Organising habits and the tools you trust"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Weekends full of plans or empty",
+   "f": "Balancing activity and rest on free days"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Surprise gifts or wish lists",
+   "f": "Gift habits and what makes a present special"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Morning shower or evening shower",
+   "f": "Daily rituals and the reasons behind them"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Music while working or silence",
+   "f": "How sound helps or distracts you"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Cook at home or try new places",
+   "f": "Everyday eating habits and small adventures"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Plan outfits or grab and go",
+   "f": "Getting dressed and personal style"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "News every day or once a week",
+   "f": "Staying informed in a calm, balanced way"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "City apartment or small town house",
+   "f": "Everyday life in different places"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "One big holiday or many long weekends",
+   "f": "Planning rest across the year"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Reply fast or think first",
+   "f": "Messaging styles and friendly communication"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Always early or just on time",
+   "f": "Punctuality habits across cultures"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Learn every day or rest your mind",
+   "f": "Balancing growth and relaxation"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Shop online or in stores",
+   "f": "Shopping habits and what you enjoy about each"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Keep a diary or take photos",
+   "f": "Ways to remember everyday moments"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Sunrise walk or sunset walk",
+   "f": "Favourite times for a calm stroll"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Same routine or something new each day",
+   "f": "How much change you like in daily life"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Fix it yourself or call an expert",
+   "f": "Practical habits and skills you would like to learn"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Handwritten cards or digital greetings",
+   "f": "Sending wishes and why the format matters"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Houseplants or a pet fish",
+   "f": "Low-key companions for everyday life"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Cafe regular or cafe explorer",
+   "f": "Finding favourite spots or always trying new ones"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Small talk or a quiet journey",
+   "f": "Social habits on trains, buses and in queues"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Save the best for last or eat it first",
+   "f": "Little habits that reveal your personality"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Review day: daily life patterns",
+   "f": "Looking back at your everyday choices and small wins"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Theme month: nature and animals",
+   "f": "Starting a month of choices about the natural world"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Dolphin or eagle for a day",
+   "f": "Animal lives in the sea and in the sky"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Forest cabin or beach hut",
+   "f": "Nature retreats and the sounds of each place"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Watch whales or see penguins",
+   "f": "Wildlife trips and famous places to see them"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Plant a forest or clean a beach",
+   "f": "Positive ways to care for nature together"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Mountain home or waterfall home",
+   "f": "Natural landscapes as a place to live"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Flower garden or vegetable garden",
+   "f": "Gardening dreams and what you would grow"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Glacier hike or volcano viewpoint",
+   "f": "Dramatic landscapes and safe ways to enjoy them"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "A day with a panda or a koala",
+   "f": "Beloved animals and fun facts about them"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Spring blossoms or autumn leaves",
+   "f": "Seasonal beauty in nature around the world"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "Theme month: thoughtful choices",
+   "f": "Starting a month of deeper but light dilemmas about values"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Be wise or be very curious",
+   "f": "Qualities you value and how they shape a life"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Many friends or a few close ones",
+   "f": "Friendship styles and what matters most to you"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Always honest or always tactful",
+   "f": "Kindness and honesty and how to balance them"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Expert in one thing or a bit of everything",
+   "f": "Specialist versus generalist and the joys of each"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Remembered for kindness or creativity",
+   "f": "What you would love people to say about you"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "More time or more energy",
+   "f": "What you feel you need most and why"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "A year abroad or a month away every year",
+   "f": "Big experiences versus regular adventures"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Learn from mistakes or from others",
+   "f": "Ways of growing and lessons that stuck with you"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Great listener or great storyteller",
+   "f": "Social talents and how they help friendships"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Peaceful life or exciting life",
+   "f": "What kind of days make you happiest"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Master a skill slowly or learn many quickly",
+   "f": "Patience and progress in learning"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Give advice or ask for it",
+   "f": "How you like to support others and be supported"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Have a mentor or be a mentor",
+   "f": "Learning and teaching relationships and what they give"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "Plan the future or live in the moment",
+   "f": "Two mindsets and how to mix them well"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Change one habit or start a new one",
+   "f": "Small personal changes that make a difference"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Be brave or be patient",
+   "f": "Strengths for different moments in life"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Inspire people or comfort people",
+   "f": "Ways you like to make others feel good"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "A job you love or lots of free time",
+   "f": "Work and life balance seen in a light way"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Review day: your values compass",
+   "f": "Looking back at choices that show what matters to you"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Theme month: if you could change the world",
+   "f": "Starting a month of hopeful ideas for a better world"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Books for every child or a park in every town",
+   "f": "Gifts to communities and their long-term effect"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Clean oceans or green cities",
+   "f": "Hopeful environmental dreams and small steps you can take today"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "One shared language or every language kept",
+   "f": "Language diversity, connection and what each would bring"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Free music lessons or free sports clubs",
+   "f": "Activities that bring people of all ages together"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "A cure for boredom or for loneliness",
+   "f": "Gentle ideas to make daily life brighter for everyone"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Libraries everywhere or museums everywhere",
+   "f": "Spaces for learning and culture in every town"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Teach the world to cook or to garden",
+   "f": "Practical skills that help everyone"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "One day a year without phones",
+   "f": "Imagining a shared day offline and what people would do"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Kindness week or gratitude week",
+   "f": "Ideas for celebrating good habits together"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Free buses or free bikes for all",
+   "f": "Ideas for easier, greener travel in cities"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "A garden or an orchestra in every school",
+   "f": "Enriching school life in creative ways"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "A festival that unites countries",
+   "f": "Designing a celebration for people of every culture"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Pen pals for all or exchange trips",
+   "f": "Ways to build friendships across borders"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "A tree for every birthday",
+   "f": "Simple traditions that could help the planet"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Gadget to save water or to save energy",
+   "f": "Creative eco inventions you can imagine"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Neighbourhood dinners or street festivals",
+   "f": "Bringing neighbours closer together"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Teach a skill or learn one from a neighbour",
+   "f": "Sharing knowledge in your community"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "A perfect playground for all ages",
+   "f": "Creating spaces where everyone can play"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "A letter to the future",
+   "f": "What you would tell people in a hundred years"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Adopt a forest animal or a sea animal",
+   "f": "Learning about wildlife protection in kind, practical ways"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "One wish for your city",
+   "f": "Imagining a single change that would make your city better"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Pick a world record to set",
+   "f": "Fun records like the most high fives and how you would train"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Start a club or start a tradition",
+   "f": "Creating something that brings people together"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "A kindness app or a sharing app",
+   "f": "Imagining apps that help people help each other"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Help one person a lot or many a little",
+   "f": "Different ways of making a difference"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "A museum of happy moments",
+   "f": "Imagining what would be displayed there and why"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Teach the world one thing",
+   "f": "The single lesson you would share with everyone"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "A global day of play",
+   "f": "Designing a day when the whole world plays games together"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Review day: your better world",
+   "f": "Looking back at your hopeful ideas and picking one small action"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Theme month: time travel and history",
+   "f": "Starting a month of light journeys through history and the future"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Pyramids being built or the first flight",
+   "f": "Witnessing famous moments of human achievement"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Meet Leonardo da Vinci or Marie Curie",
+   "f": "Great minds of history and what you would ask them"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "A day in ancient Rome or ancient Egypt",
+   "f": "Daily life in famous ancient civilisations"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "First modern Olympics or first world fair",
+   "f": "Historic events of the 1800s and their atmosphere"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Sail with explorers or walk the Silk Road",
+   "f": "Historic journeys and the cultures they connected"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Visit the year 2100 or the year 3000",
+   "f": "Imagining the near and the far future"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "A concert by Mozart or by the Beatles",
+   "f": "Musical legends from different eras"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Live without electricity or without the wheel",
+   "f": "Inventions that changed daily life"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "See dinosaurs or woolly mammoths",
+   "f": "Prehistoric creatures and fun facts about them"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Viking voyage or Polynesian canoe journey",
+   "f": "Ancient seafarers and their navigation skills"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Moon landing live or the first email",
+   "f": "Technology milestones and how people reacted"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Calligraphy from a monk or art from a master",
+   "f": "Arts of the past and patient learning"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "A lost invention or a lost recipe",
+   "f": "Treasures from history worth rediscovering"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "The Renaissance or the Belle Époque",
+   "f": "Cultural golden ages and their highlights"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "Meet your ancestors or your descendants",
+   "f": "Family across time and what you would share"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Send a kind message to the past",
+   "f": "Gentle advice you would give to an earlier you"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Library of Alexandria or Hanging Gardens",
+   "f": "Wonders of the ancient world and what we know about them"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Ride the first train or the first bicycle",
+   "f": "Early transport and the excitement it brought"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Time capsule: what to include",
+   "f": "Choosing objects that show what life is like today"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Your city 100 years ago or 100 years ahead",
+   "f": "Imagining how places change over time"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "A skill from the past or from the future",
+   "f": "Old crafts versus future technology"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "The birth of chocolate or of pizza",
+   "f": "Food history and how favourite dishes began"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Medieval knight or court musician",
+   "f": "Roles from the Middle Ages seen in a light way"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "The first cinema or an ancient theatre",
+   "f": "Entertainment through the ages"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "A history mystery you would solve",
+   "f": "Famous puzzles of history and gentle theories about them"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Pioneer or future space settler",
+   "f": "Starting fresh in new lands and what you would bring"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Greek theatre or a Roman chariot race",
+   "f": "Spectacles of the ancient world and their atmosphere"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Choose a historic festival to join",
+   "f": "Celebrations from the past and their joy"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Review day: your time machine log",
+   "f": "Looking back at your favourite historic journeys"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "Theme month: deep but light questions",
+   "f": "Starting a month of reflective would you rather questions"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Know why or know how",
+   "f": "Curiosity styles and how you like to learn"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Relive your best day or discover a new one",
+   "f": "Memory versus new experience"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "A theme song or a narrator for your life",
+   "f": "Playful ways your life could feel like a film"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Never bored or never in a hurry",
+   "f": "Two kinds of calm and which one you would choose"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Understand all or be understood by all",
+   "f": "Communication and connection at a deeper level"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "One big adventure or many small joys",
+   "f": "What makes a life feel full"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Talk to your younger or older self",
+   "f": "Advice across your own life"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Keep every memory or forget the awkward ones",
+   "f": "Memory and how we grow from small moments"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "First to discover or best to explain",
+   "f": "Discovery versus teaching"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Find a lost treasure or an old friend",
+   "f": "What feels more precious and why"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "The right word or the right moment",
+   "f": "Social timing and expression"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "A world of music or a world of colour",
+   "f": "Senses and the beauty you value most"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Answer any question or ask the perfect one",
+   "f": "Knowledge and curiosity"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Great team or your own path",
+   "f": "Collaboration versus independence"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "At home everywhere or one perfect home",
+   "f": "Belonging, travel and what home means to you"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "A day with no rules or perfect order",
+   "f": "Freedom and structure and how much of each you like"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Every instrument or every dance",
+   "f": "Expressing yourself through art"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "One person very happy or many smiling",
+   "f": "Small joys and how they spread"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Understand animals or understand the stars",
+   "f": "Two mysteries of our world"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "A secret garden or a secret library",
+   "f": "Private happy places and what they mean"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Live slowly or see everything",
+   "f": "Depth versus breadth in experiences"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Calm in every storm or sunshine in every room",
+   "f": "Personal gifts you would like to have"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Swap a skill with a friend",
+   "f": "What you could teach and what you would love to learn"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Write the rules of a perfect day",
+   "f": "Designing your ideal day from start to finish"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Choose a motto for life",
+   "f": "A short phrase that captures your choices"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Ask the world one question",
+   "f": "The one question you would like everyone to answer"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Create your own would you rather",
+   "f": "Inventing original dilemmas for friends"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Host a would you rather party",
+   "f": "Running the game with friends from different cultures"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Review day: your favourite rounds",
+   "f": "Looking back at the best choices from the whole path"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Your year of choices in one picture",
+   "f": "Describing what your answers say about you"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "The hardest choice of the year",
+   "f": "Revisiting the toughest dilemma and whether your answer changed"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Ultimate round: travel, food and powers",
+   "f": "A final mix of favourite themes in one round"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Choices for the year ahead",
+   "f": "Light would you rather questions about your next goals"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Celebration day: you made it",
+   "f": "Celebrating 365 days of fun choices and your favourite memory"
+  }
+ ]
+}

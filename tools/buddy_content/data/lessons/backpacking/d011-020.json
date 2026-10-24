@@ -1,0 +1,835 @@
+{
+ "topic": "backpacking",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The art of travelling light",
+     "g": "See why carrying less gives you more freedom, flexibility and fun on the road.",
+     "p": [
+      "A light bag lets you walk from the station to the hostel instead of hunting for a taxi.",
+      "With less stuff you pack faster, worry less about theft and can change plans in minutes.",
+      "Most things you forget can be bought on the way, so pack for one week, not the whole trip."
+     ],
+     "q": "What is one thing you always pack but almost never use?",
+     "c": "Pick three items from your usual travel kit that you could happily leave at home."
+    },
+    "de": {
+     "t": "Die Kunst des leichten Reisens",
+     "g": "Erfahre, warum weniger Gepäck dir unterwegs mehr Freiheit, Flexibilität und Spaß schenkt.",
+     "p": [
+      "Mit leichtem Gepäck gehst du vom Bahnhof zum Hostel zu Fuß, statt ein Taxi zu suchen.",
+      "Mit weniger Zeug packst du schneller, sorgst dich weniger um Diebstahl und änderst Pläne in Minuten.",
+      "Vergessenes kannst du meist unterwegs kaufen, also pack für eine Woche, nicht für die ganze Reise."
+     ],
+     "q": "Was packst du immer ein, benutzt es aber fast nie?",
+     "c": "Wähl drei Dinge aus deinem üblichen Reisegepäck, die du gern zu Hause lassen könntest."
+    },
+    "es": {
+     "t": "El arte de viajar ligero",
+     "g": "Descubre por qué llevar menos te da más libertad, flexibilidad y diversión en el camino.",
+     "p": [
+      "Con una mochila ligera vas andando de la estación al albergue en lugar de buscar un taxi.",
+      "Con menos cosas haces la mochila más rápido, temes menos los robos y cambias de planes en minutos.",
+      "Casi todo lo que olvides se compra por el camino, así que prepara para una semana, no para todo el viaje."
+     ],
+     "q": "¿Qué cosa metes siempre en la maleta pero casi nunca usas?",
+     "c": "Elige tres cosas de tu equipaje habitual que podrías dejar en casa sin problema."
+    },
+    "fr": {
+     "t": "L'art de voyager léger",
+     "g": "Découvre pourquoi porter moins t'apporte plus de liberté, de souplesse et de plaisir en route.",
+     "p": [
+      "Avec un sac léger, tu vas à pied de la gare à l'auberge au lieu de chercher un taxi.",
+      "Avec moins d'affaires, tu fais ton sac plus vite, crains moins le vol et changes de plan en minutes.",
+      "Ce que tu oublies s'achète souvent sur place : prépare-toi pour une semaine, pas pour tout le voyage."
+     ],
+     "q": "Quel objet emportes-tu toujours sans presque jamais l'utiliser ?",
+     "c": "Choisis trois objets de ton bagage habituel que tu pourrais laisser chez toi sans regret."
+    },
+    "it": {
+     "t": "L'arte di viaggiare leggeri",
+     "g": "Scopri perché portare meno ti regala più libertà, flessibilità e divertimento in viaggio.",
+     "p": [
+      "Con uno zaino leggero vai a piedi dalla stazione all'ostello invece di cercare un taxi.",
+      "Con meno cose prepari lo zaino in fretta, temi meno i furti e cambi programma in pochi minuti.",
+      "Quasi tutto ciò che dimentichi si compra per strada, quindi prepara per una settimana, non per tutto il viaggio."
+     ],
+     "q": "Qual è una cosa che metti sempre in valigia ma non usi quasi mai?",
+     "c": "Scegli tre cose del tuo bagaglio abituale che potresti lasciare a casa volentieri."
+    },
+    "pt": {
+     "t": "A arte de viajar leve",
+     "g": "Descobre porque levar menos te dá mais liberdade, flexibilidade e diversão na estrada.",
+     "p": [
+      "Com uma mochila leve vais a pé da estação ao hostel em vez de procurar um táxi.",
+      "Com menos coisas fazes a mochila mais depressa, temes menos roubos e mudas de planos em minutos.",
+      "Quase tudo o que esqueceres compra-se pelo caminho, por isso prepara para uma semana, não para a viagem toda."
+     ],
+     "q": "Que coisa levas sempre mas quase nunca usas?",
+     "c": "Escolhe três coisas da tua bagagem habitual que podias deixar em casa sem pena."
+    },
+    "pt_BR": {
+     "t": "A arte de viajar leve",
+     "g": "Descubra por que levar menos dá a você mais liberdade, flexibilidade e diversão na estrada.",
+     "p": [
+      "Com uma mochila leve você vai a pé da rodoviária ao hostel em vez de caçar um táxi.",
+      "Com menos coisas você arruma a mochila rápido, se preocupa menos com furtos e muda de plano em minutos.",
+      "Quase tudo o que você esquecer dá para comprar no caminho, então arrume para uma semana, não para a viagem toda."
+     ],
+     "q": "Que coisa você sempre leva mas quase nunca usa?",
+     "c": "Escolha três itens da sua bagagem de sempre que você poderia deixar em casa numa boa."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One-bag travel",
+     "g": "Discover how to travel with a single carry-on-sized backpack and why so many people swear by it.",
+     "p": [
+      "One bag means no checked luggage, no waiting at the carousel and nothing lost in transit.",
+      "Airline cabin limits vary, so check the size and weight rules of the companies you fly with.",
+      "Liquids, sharp tools and big toiletries may need rethinking when everything goes in the cabin."
+     ],
+     "q": "Could you imagine fitting everything for a two-week trip into one small bag?",
+     "c": "Look up the cabin bag size rules of one airline you might use and note them down."
+    },
+    "de": {
+     "t": "Reisen mit nur einem Gepäckstück",
+     "g": "Entdecke, wie du mit einem einzigen handgepäcktauglichen Rucksack reist und warum viele darauf schwören.",
+     "p": [
+      "Ein Gepäckstück heißt: nichts aufgeben, kein Warten am Gepäckband, nichts geht unterwegs verloren.",
+      "Die Handgepäckregeln unterscheiden sich, also prüf Größe und Gewicht bei deinen Fluggesellschaften.",
+      "Flüssigkeiten, spitze Werkzeuge und große Kosmetik musst du überdenken, wenn alles in die Kabine geht."
+     ],
+     "q": "Kannst du dir vorstellen, alles für zwei Wochen in einen kleinen Rucksack zu packen?",
+     "c": "Such die Handgepäckmaße einer Airline heraus, die du nutzen könntest, und schreib sie auf."
+    },
+    "es": {
+     "t": "Viajar con una sola mochila",
+     "g": "Descubre cómo viajar con una sola mochila de tamaño cabina y por qué tanta gente lo adora.",
+     "p": [
+      "Una sola mochila significa no facturar, no esperar en la cinta y no perder nada en el trayecto.",
+      "Las medidas de cabina cambian según la aerolínea, así que revisa tamaño y peso de las que uses.",
+      "Los líquidos, herramientas afiladas y neceseres grandes hay que repensarlos si todo va en cabina."
+     ],
+     "q": "¿Te imaginas meter todo lo de un viaje de dos semanas en una mochila pequeña?",
+     "c": "Busca las medidas de equipaje de mano de una aerolínea que podrías usar y anótalas."
+    },
+    "fr": {
+     "t": "Voyager avec un seul sac",
+     "g": "Découvre comment voyager avec un seul sac format cabine et pourquoi tant de gens ne jurent que par ça.",
+     "p": [
+      "Un seul sac, c'est pas de bagage en soute, pas d'attente au tapis et rien de perdu en route.",
+      "Les limites cabine varient : vérifie la taille et le poids autorisés par les compagnies que tu prends.",
+      "Liquides, outils tranchants et grosse trousse de toilette sont à repenser si tout va en cabine."
+     ],
+     "q": "Peux-tu imaginer faire tenir deux semaines de voyage dans un seul petit sac ?",
+     "c": "Cherche les dimensions cabine d'une compagnie que tu pourrais prendre et note-les."
+    },
+    "it": {
+     "t": "Viaggiare con un solo zaino",
+     "g": "Scopri come viaggiare con un unico zaino da bagaglio a mano e perché tanti non tornano più indietro.",
+     "p": [
+      "Un solo zaino significa niente stiva, niente attesa al nastro e niente bagagli smarriti.",
+      "I limiti per il bagaglio a mano cambiano, quindi controlla misure e peso delle compagnie che usi.",
+      "Liquidi, attrezzi appuntiti e grandi beauty case vanno ripensati se tutto viaggia in cabina."
+     ],
+     "q": "Riusciresti a mettere tutto per un viaggio di due settimane in un solo zaino piccolo?",
+     "c": "Cerca le misure del bagaglio a mano di una compagnia che potresti usare e annotale."
+    },
+    "pt": {
+     "t": "Viajar só com uma mochila",
+     "g": "Descobre como viajar com uma única mochila de cabine e porque tanta gente jura por isso.",
+     "p": [
+      "Uma só mochila significa não despachar, não esperar no tapete e nada perdido pelo caminho.",
+      "Os limites de cabine variam, por isso verifica o tamanho e o peso nas companhias que usas.",
+      "Líquidos, ferramentas afiadas e necessaires grandes têm de ser repensados se tudo vai na cabine."
+     ],
+     "q": "Consegues imaginar meter tudo para duas semanas numa só mochila pequena?",
+     "c": "Procura as medidas de bagagem de mão de uma companhia aérea que possas usar e aponta-as."
+    },
+    "pt_BR": {
+     "t": "Viajar com uma mochila só",
+     "g": "Descubra como viajar com uma única mochila de bagagem de mão e por que tanta gente adora.",
+     "p": [
+      "Uma mochila só significa nada despachado, nada de esperar na esteira e nada extraviado.",
+      "Os limites de bagagem de mão variam, então confira tamanho e peso nas companhias que você usa.",
+      "Líquidos, ferramentas cortantes e nécessaires grandes precisam ser repensados se tudo vai na cabine."
+     ],
+     "q": "Você consegue imaginar levar tudo para duas semanas numa mochila pequena?",
+     "c": "Pesquise as medidas de bagagem de mão de uma companhia que você poderia usar e anote."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packing cubes and organisation",
+     "g": "Learn how packing cubes and a simple system keep your bag tidy and help you find things fast.",
+     "p": [
+      "Packing cubes are zip bags that group things: one for tops, one for bottoms, one for underwear.",
+      "Use different colours or sizes so you can grab the right cube without opening them all.",
+      "Keep a small pouch for daily essentials on top, so you never empty the whole bag for one thing."
+     ],
+     "q": "When you travel, how long does it usually take you to find one specific item in your bag?",
+     "c": "Group your clothes into three piles as if you had three packing cubes."
+    },
+    "de": {
+     "t": "Packwürfel und Ordnung",
+     "g": "Lerne, wie Packwürfel und ein einfaches System deinen Rucksack ordentlich halten.",
+     "p": [
+      "Packwürfel sind Reißverschlusstaschen, die Dinge gruppieren: Oberteile, Hosen, Unterwäsche.",
+      "Nimm verschiedene Farben oder Größen, damit du den richtigen Würfel greifst, ohne alle zu öffnen.",
+      "Leg eine kleine Tasche mit dem Tagesbedarf nach oben, damit du nie alles ausräumen musst."
+     ],
+     "q": "Wie lange brauchst du auf Reisen meist, um ein bestimmtes Teil im Rucksack zu finden?",
+     "c": "Sortier deine Kleidung in drei Stapel, als hättest du drei Packwürfel."
+    },
+    "es": {
+     "t": "Cubos de equipaje y orden",
+     "g": "Aprende cómo los cubos organizadores y un sistema sencillo mantienen tu mochila ordenada.",
+     "p": [
+      "Los cubos son bolsas con cremallera que agrupan cosas: uno para camisetas, otro para pantalones, otro para ropa interior.",
+      "Usa colores o tamaños distintos para coger el cubo correcto sin abrirlos todos.",
+      "Lleva arriba una bolsita con lo de cada día, así nunca vacías la mochila entera por una cosa."
+     ],
+     "q": "Cuando viajas, ¿cuánto tardas normalmente en encontrar algo concreto en tu mochila?",
+     "c": "Separa tu ropa en tres montones como si tuvieras tres cubos organizadores."
+    },
+    "fr": {
+     "t": "Cubes de rangement et organisation",
+     "g": "Apprends comment les cubes de rangement et un système simple gardent ton sac bien ordonné.",
+     "p": [
+      "Les cubes sont des pochettes zippées qui regroupent : hauts, bas, sous-vêtements.",
+      "Choisis des couleurs ou tailles différentes pour attraper le bon cube sans tout ouvrir.",
+      "Garde en haut une petite pochette pour l'essentiel du jour, pour ne jamais vider tout le sac."
+     ],
+     "q": "En voyage, combien de temps te faut-il en général pour trouver un objet précis dans ton sac ?",
+     "c": "Classe tes vêtements en trois piles comme si tu avais trois cubes de rangement."
+    },
+    "it": {
+     "t": "Organizer e ordine",
+     "g": "Impara come gli organizer da viaggio e un sistema semplice tengono lo zaino in ordine.",
+     "p": [
+      "Gli organizer sono sacchetti con zip che raggruppano: magliette, pantaloni, biancheria.",
+      "Usa colori o misure diverse per prendere quello giusto senza aprirli tutti.",
+      "Tieni in cima una pochette con le cose di ogni giorno, così non svuoti mai tutto lo zaino."
+     ],
+     "q": "In viaggio, quanto ci metti di solito a trovare una cosa precisa nello zaino?",
+     "c": "Dividi i tuoi vestiti in tre mucchi come se avessi tre organizer."
+    },
+    "pt": {
+     "t": "Cubos de arrumação",
+     "g": "Aprende como os cubos de arrumação e um sistema simples mantêm a mochila organizada.",
+     "p": [
+      "Os cubos são bolsas com fecho que agrupam coisas: partes de cima, de baixo e roupa interior.",
+      "Usa cores ou tamanhos diferentes para tirares o cubo certo sem abrir todos.",
+      "Guarda em cima uma bolsinha com o essencial do dia, para nunca esvaziares a mochila toda."
+     ],
+     "q": "Em viagem, quanto tempo demoras normalmente a encontrar uma coisa específica na mochila?",
+     "c": "Separa a tua roupa em três montes como se tivesses três cubos de arrumação."
+    },
+    "pt_BR": {
+     "t": "Organizadores de mala",
+     "g": "Aprenda como os organizadores de mala e um sistema simples deixam sua mochila em ordem.",
+     "p": [
+      "Os organizadores são bolsas com zíper que agrupam coisas: blusas, calças e roupa íntima.",
+      "Use cores ou tamanhos diferentes para pegar o certo sem abrir todos.",
+      "Deixe por cima uma necessaire com o essencial do dia, para nunca esvaziar a mochila inteira."
+     ],
+     "q": "Em viagem, quanto tempo você costuma levar para achar uma coisa específica na mochila?",
+     "c": "Separe suas roupas em três pilhas como se você tivesse três organizadores."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rolling vs folding clothes",
+     "g": "Try simple rolling and folding techniques that save space and keep wrinkles down.",
+     "p": [
+      "Rolling soft items like T-shirts and leggings packs them tightly and reduces sharp creases.",
+      "Folding works better for stiff things like shirts or trousers you want to keep smart.",
+      "Fill gaps by stuffing socks into shoes and tucking small rolls into empty corners."
+     ],
+     "q": "Are you a roller or a folder when you pack, or have you never really thought about it?",
+     "c": "Pack five T-shirts rolled, then folded, and see which takes less space."
+    },
+    "de": {
+     "t": "Rollen oder Falten",
+     "g": "Probier einfache Roll- und Falttechniken aus, die Platz sparen und Falten vermeiden.",
+     "p": [
+      "Weiche Teile wie T-Shirts und Leggings rollst du eng zusammen, so entstehen kaum harte Knicke.",
+      "Falten ist besser für steife Sachen wie Hemden oder Hosen, die schick bleiben sollen.",
+      "Füll Lücken, indem du Socken in Schuhe stopfst und kleine Rollen in leere Ecken steckst."
+     ],
+     "q": "Rollst oder faltest du beim Packen, oder hast du nie darüber nachgedacht?",
+     "c": "Pack fünf T-Shirts einmal gerollt und einmal gefaltet und schau, was weniger Platz braucht."
+    },
+    "es": {
+     "t": "Enrollar o doblar la ropa",
+     "g": "Prueba técnicas sencillas para enrollar y doblar que ahorran espacio y evitan arrugas.",
+     "p": [
+      "Enrollar prendas blandas como camisetas y mallas las compacta y evita marcas fuertes.",
+      "Doblar va mejor para prendas rígidas como camisas o pantalones que quieres llevar bien.",
+      "Rellena huecos metiendo calcetines en los zapatos y pequeños rollos en las esquinas."
+     ],
+     "q": "¿Eres de enrollar o de doblar al hacer la maleta, o nunca lo has pensado?",
+     "c": "Guarda cinco camisetas enrolladas y luego dobladas, y mira cuál ocupa menos."
+    },
+    "fr": {
+     "t": "Rouler ou plier ses vêtements",
+     "g": "Teste des techniques simples de roulage et de pliage pour gagner de la place et limiter les plis.",
+     "p": [
+      "Rouler les vêtements souples comme les t-shirts et leggings les compacte et évite les gros plis.",
+      "Plier convient mieux aux pièces rigides comme les chemises ou pantalons à garder impeccables.",
+      "Comble les vides en glissant les chaussettes dans les chaussures et de petits rouleaux dans les coins."
+     ],
+     "q": "Tu roules ou tu plies quand tu fais ton sac, ou tu ne t'es jamais posé la question ?",
+     "c": "Range cinq t-shirts roulés puis pliés, et regarde ce qui prend le moins de place."
+    },
+    "it": {
+     "t": "Arrotolare o piegare",
+     "g": "Prova semplici tecniche per arrotolare e piegare che fanno risparmiare spazio e riducono le pieghe.",
+     "p": [
+      "Arrotolare capi morbidi come magliette e leggings li compatta e riduce le pieghe nette.",
+      "Piegare funziona meglio per capi rigidi come camicie o pantaloni da tenere in ordine.",
+      "Riempi i vuoti infilando i calzini nelle scarpe e piccoli rotoli negli angoli."
+     ],
+     "q": "Quando fai lo zaino arrotoli o pieghi, oppure non ci hai mai pensato?",
+     "c": "Metti via cinque magliette arrotolate e poi piegate, e guarda cosa occupa meno spazio."
+    },
+    "pt": {
+     "t": "Enrolar ou dobrar a roupa",
+     "g": "Experimenta técnicas simples de enrolar e dobrar que poupam espaço e evitam vincos.",
+     "p": [
+      "Enrolar peças macias como t-shirts e leggings compacta-as e evita vincos marcados.",
+      "Dobrar funciona melhor para peças rígidas como camisas ou calças que queres manter arrumadas.",
+      "Preenche espaços com meias dentro dos sapatos e pequenos rolos nos cantos vazios."
+     ],
+     "q": "És de enrolar ou de dobrar quando fazes a mochila, ou nunca pensaste nisso?",
+     "c": "Arruma cinco t-shirts enroladas e depois dobradas, e vê qual ocupa menos espaço."
+    },
+    "pt_BR": {
+     "t": "Enrolar ou dobrar a roupa",
+     "g": "Teste técnicas simples de enrolar e dobrar que economizam espaço e evitam amassados.",
+     "p": [
+      "Enrolar peças macias como camisetas e leggings deixa tudo compacto e evita vincos marcados.",
+      "Dobrar funciona melhor para peças mais duras, como camisas ou calças que você quer manter alinhadas.",
+      "Preencha espaços com meias dentro dos sapatos e rolinhos nos cantos vazios."
+     ],
+     "q": "Você é de enrolar ou de dobrar quando arruma a mochila, ou nunca pensou nisso?",
+     "c": "Guarde cinco camisetas enroladas e depois dobradas, e veja qual ocupa menos espaço."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The capsule wardrobe",
+     "g": "Build a small set of mix-and-match clothes in colours that all go together.",
+     "p": [
+      "Choose two or three base colours, like navy, grey or beige, plus one or two accent colours.",
+      "If every top goes with every bottom, five items can make many different outfits.",
+      "Pick versatile pieces that work for a hike in the morning and a casual dinner in the evening."
+     ],
+     "q": "Which colours do you wear most often, and do they go well together?",
+     "c": "Lay out three tops and two bottoms you own and count how many outfits they make."
+    },
+    "de": {
+     "t": "Die Capsule Wardrobe",
+     "g": "Stell dir eine kleine Auswahl kombinierbarer Kleidung in Farben zusammen, die alle zueinander passen.",
+     "p": [
+      "Wähl zwei oder drei Grundfarben wie Marine, Grau oder Beige und ein, zwei Akzentfarben.",
+      "Passt jedes Oberteil zu jeder Hose, ergeben fünf Teile viele verschiedene Outfits.",
+      "Nimm vielseitige Teile, die morgens zum Wandern und abends zum lockeren Essen taugen."
+     ],
+     "q": "Welche Farben trägst du am häufigsten, und passen sie gut zusammen?",
+     "c": "Leg drei Oberteile und zwei Hosen hin und zähl, wie viele Outfits sie ergeben."
+    },
+    "es": {
+     "t": "El armario cápsula",
+     "g": "Arma un pequeño conjunto de prendas combinables en colores que pegan entre sí.",
+     "p": [
+      "Elige dos o tres colores base, como azul marino, gris o beige, y uno o dos de acento.",
+      "Si cada parte de arriba combina con cada parte de abajo, cinco prendas dan muchos conjuntos.",
+      "Escoge piezas versátiles que sirvan para caminar por la mañana y para una cena informal."
+     ],
+     "q": "¿Qué colores llevas más a menudo y combinan bien entre ellos?",
+     "c": "Coloca tres partes de arriba y dos de abajo y cuenta cuántos conjuntos salen."
+    },
+    "fr": {
+     "t": "La garde-robe capsule",
+     "g": "Compose une petite sélection de vêtements à combiner, dans des couleurs qui vont toutes ensemble.",
+     "p": [
+      "Choisis deux ou trois couleurs de base, comme marine, gris ou beige, plus une ou deux couleurs vives.",
+      "Si chaque haut va avec chaque bas, cinq pièces donnent de nombreuses tenues différentes.",
+      "Prends des pièces polyvalentes, bonnes pour une rando le matin et un dîner détendu le soir."
+     ],
+     "q": "Quelles couleurs portes-tu le plus souvent, et vont-elles bien ensemble ?",
+     "c": "Pose trois hauts et deux bas que tu possèdes et compte combien de tenues ils forment."
+    },
+    "it": {
+     "t": "Il guardaroba capsula",
+     "g": "Crea un piccolo insieme di capi abbinabili in colori che stanno tutti bene insieme.",
+     "p": [
+      "Scegli due o tre colori base, come blu, grigio o beige, più uno o due colori accento.",
+      "Se ogni maglia sta bene con ogni pantalone, cinque capi danno tantissimi abbinamenti.",
+      "Prendi capi versatili, adatti a un'escursione al mattino e a una cena informale la sera."
+     ],
+     "q": "Quali colori indossi più spesso, e stanno bene insieme?",
+     "c": "Disponi tre maglie e due pantaloni che hai e conta quanti abbinamenti ottieni."
+    },
+    "pt": {
+     "t": "O guarda-roupa cápsula",
+     "g": "Monta um pequeno conjunto de peças combináveis em cores que ficam bem todas juntas.",
+     "p": [
+      "Escolhe duas ou três cores base, como azul-marinho, cinzento ou bege, mais uma ou duas de destaque.",
+      "Se cada parte de cima combinar com cada parte de baixo, cinco peças dão muitos conjuntos.",
+      "Escolhe peças versáteis que sirvam para uma caminhada de manhã e um jantar descontraído."
+     ],
+     "q": "Que cores usas mais vezes, e combinam bem entre si?",
+     "c": "Põe três partes de cima e duas de baixo que tenhas e conta quantos conjuntos dão."
+    },
+    "pt_BR": {
+     "t": "O guarda-roupa cápsula",
+     "g": "Monte um conjunto pequeno de peças que combinam entre si, em cores que conversam.",
+     "p": [
+      "Escolha duas ou três cores base, como azul-marinho, cinza ou bege, mais uma ou duas de destaque.",
+      "Se toda parte de cima combinar com toda parte de baixo, cinco peças viram muitos looks.",
+      "Escolha peças versáteis que sirvam para uma trilha de manhã e um jantar descontraído à noite."
+     ],
+     "q": "Quais cores você mais usa, e elas combinam bem entre si?",
+     "c": "Separe três partes de cima e duas de baixo que você tem e conte quantos looks saem."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Quick-dry fabrics",
+     "g": "Learn why merino wool and synthetics beat cotton when you wash clothes in a sink and travel on.",
+     "p": [
+      "Merino wool stays warm when damp, resists odour and can be worn several days before washing.",
+      "Synthetics like polyester and nylon are light, tough and dry overnight after a hand wash.",
+      "Cotton soaks up water and can stay damp for a day or more, so keep it to a piece or two."
+     ],
+     "q": "Do you know what most of your clothes are made of? Have a guess before you check.",
+     "c": "Check the labels of five clothes you might pack and sort them into quick-dry or slow-dry."
+    },
+    "de": {
+     "t": "Schnell trocknende Stoffe",
+     "g": "Erfahre, warum Merinowolle und Kunstfasern Baumwolle schlagen, wenn du im Waschbecken wäschst.",
+     "p": [
+      "Merinowolle wärmt auch feucht, riecht kaum und kann mehrere Tage getragen werden.",
+      "Kunstfasern wie Polyester und Nylon sind leicht, robust und nach der Handwäsche über Nacht trocken.",
+      "Baumwolle saugt Wasser auf und bleibt oft einen Tag oder länger feucht, also nur ein, zwei Teile."
+     ],
+     "q": "Weißt du, woraus die meisten deiner Kleidungsstücke sind? Rate erst, bevor du nachsiehst.",
+     "c": "Lies die Etiketten von fünf Teilen, die du einpacken würdest, und sortier nach schnell oder langsam trocknend."
+    },
+    "es": {
+     "t": "Tejidos de secado rápido",
+     "g": "Aprende por qué la lana merino y los sintéticos ganan al algodón cuando lavas en un lavabo.",
+     "p": [
+      "La lana merino abriga aunque esté húmeda, no retiene olores y aguanta varios días de uso.",
+      "Los sintéticos como el poliéster y el nailon son ligeros, resistentes y se secan en una noche.",
+      "El algodón absorbe agua y puede seguir húmedo un día o más, así que lleva solo una o dos prendas."
+     ],
+     "q": "¿Sabes de qué están hechas casi todas tus prendas? Adivina antes de mirar.",
+     "c": "Mira las etiquetas de cinco prendas que llevarías y sepáralas en secado rápido o lento."
+    },
+    "fr": {
+     "t": "Les tissus à séchage rapide",
+     "g": "Découvre pourquoi la laine mérinos et les synthétiques battent le coton quand tu laves au lavabo.",
+     "p": [
+      "La laine mérinos tient chaud même humide, garde peu les odeurs et se porte plusieurs jours.",
+      "Les synthétiques comme le polyester et le nylon sont légers, solides et sèchent en une nuit.",
+      "Le coton absorbe l'eau et peut rester humide un jour ou plus, alors limite-toi à une ou deux pièces."
+     ],
+     "q": "Sais-tu en quoi sont faits la plupart de tes vêtements ? Devine avant de vérifier.",
+     "c": "Lis les étiquettes de cinq vêtements à emporter et classe-les en séchage rapide ou lent."
+    },
+    "it": {
+     "t": "Tessuti ad asciugatura rapida",
+     "g": "Scopri perché lana merino e sintetici battono il cotone quando lavi i vestiti nel lavandino.",
+     "p": [
+      "La lana merino scalda anche da umida, trattiene poco gli odori e si indossa per più giorni.",
+      "I sintetici come poliestere e nylon sono leggeri, resistenti e asciugano in una notte.",
+      "Il cotone assorbe acqua e può restare umido un giorno o più, quindi portane solo uno o due capi."
+     ],
+     "q": "Sai di cosa sono fatti quasi tutti i tuoi vestiti? Prova a indovinare prima di guardare.",
+     "c": "Leggi le etichette di cinque capi che porteresti e dividili tra asciugatura rapida o lenta."
+    },
+    "pt": {
+     "t": "Tecidos de secagem rápida",
+     "g": "Aprende porque a lã merino e os sintéticos ganham ao algodão quando lavas roupa no lavatório.",
+     "p": [
+      "A lã merino aquece mesmo húmida, não ganha cheiro facilmente e aguenta vários dias de uso.",
+      "Sintéticos como o poliéster e o nylon são leves, resistentes e secam numa noite.",
+      "O algodão absorve água e pode ficar húmido um dia ou mais, por isso leva só uma ou duas peças."
+     ],
+     "q": "Sabes de que é feita a maior parte da tua roupa? Tenta adivinhar antes de veres.",
+     "c": "Vê as etiquetas de cinco peças que levarias e separa-as em secagem rápida ou lenta."
+    },
+    "pt_BR": {
+     "t": "Tecidos de secagem rápida",
+     "g": "Aprenda por que a lã merino e os sintéticos vencem o algodão quando você lava roupa na pia.",
+     "p": [
+      "A lã merino esquenta mesmo úmida, quase não pega cheiro e aguenta vários dias de uso.",
+      "Sintéticos como poliéster e náilon são leves, resistentes e secam de um dia para o outro.",
+      "O algodão absorve água e pode ficar úmido por um dia ou mais, então leve só uma ou duas peças."
+     ],
+     "q": "Você sabe de que é feita a maior parte das suas roupas? Chute antes de conferir.",
+     "c": "Confira as etiquetas de cinco peças que você levaria e separe em secagem rápida ou lenta."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Layering for any climate",
+     "g": "Understand base, mid and outer layers so a few clothes can handle heat, cold, wind and rain.",
+     "p": [
+      "The base layer sits on your skin and moves sweat away, like a thin merino or synthetic top.",
+      "The mid layer keeps you warm, for example a fleece or a light insulated jacket.",
+      "The outer layer blocks wind and rain; together, layers adapt as the day warms or cools."
+     ],
+     "q": "What do you usually do when the weather changes suddenly while you are out?",
+     "c": "Pick one base, one mid and one outer layer from your wardrobe for a cool, rainy day."
+    },
+    "de": {
+     "t": "Das Zwiebelprinzip",
+     "g": "Verstehe Basis-, Zwischen- und Außenschicht, damit wenige Teile Hitze, Kälte, Wind und Regen meistern.",
+     "p": [
+      "Die Basisschicht liegt auf der Haut und leitet Schweiß ab, etwa ein dünnes Merino- oder Funktionsshirt.",
+      "Die Zwischenschicht wärmt, zum Beispiel ein Fleece oder eine leichte isolierte Jacke.",
+      "Die Außenschicht hält Wind und Regen ab; zusammen passen sich die Schichten dem Tag an."
+     ],
+     "q": "Was machst du meistens, wenn das Wetter unterwegs plötzlich umschlägt?",
+     "c": "Wähl aus deinem Schrank je eine Basis-, Zwischen- und Außenschicht für einen kühlen Regentag."
+    },
+    "es": {
+     "t": "Vestirse por capas",
+     "g": "Entiende las capas base, intermedia y exterior para que poca ropa sirva para calor, frío, viento y lluvia.",
+     "p": [
+      "La capa base va pegada a la piel y aleja el sudor, como una camiseta fina de merino o sintética.",
+      "La capa intermedia abriga, por ejemplo un forro polar o una chaqueta ligera acolchada.",
+      "La capa exterior frena viento y lluvia; juntas, las capas se adaptan si el día se calienta o enfría."
+     ],
+     "q": "¿Qué sueles hacer cuando el tiempo cambia de repente mientras estás fuera?",
+     "c": "Elige de tu armario una capa base, una intermedia y una exterior para un día fresco y lluvioso."
+    },
+    "fr": {
+     "t": "S'habiller en couches",
+     "g": "Comprends les couches de base, intermédiaire et externe pour affronter chaleur, froid, vent et pluie.",
+     "p": [
+      "La première couche touche la peau et évacue la transpiration, comme un haut fin en mérinos ou synthétique.",
+      "La couche intermédiaire tient chaud, par exemple une polaire ou une doudoune légère.",
+      "La couche externe coupe le vent et la pluie ; ensemble, elles s'adaptent quand la journée change."
+     ],
+     "q": "Que fais-tu en général quand la météo change brusquement pendant une sortie ?",
+     "c": "Choisis dans ton armoire une couche de base, une intermédiaire et une externe pour un jour frais et pluvieux."
+    },
+    "it": {
+     "t": "Vestirsi a strati",
+     "g": "Capisci strato base, intermedio ed esterno, così pochi capi bastano per caldo, freddo, vento e pioggia.",
+     "p": [
+      "Lo strato base sta sulla pelle e allontana il sudore, come una maglia sottile in merino o sintetica.",
+      "Lo strato intermedio tiene caldo, per esempio un pile o una giacca imbottita leggera.",
+      "Lo strato esterno ferma vento e pioggia; insieme gli strati si adattano quando la giornata cambia."
+     ],
+     "q": "Cosa fai di solito quando il tempo cambia all'improvviso mentre sei fuori?",
+     "c": "Scegli dal tuo armadio uno strato base, uno intermedio e uno esterno per una giornata fresca e piovosa."
+    },
+    "pt": {
+     "t": "Vestir por camadas",
+     "g": "Percebe as camadas base, intermédia e exterior para que pouca roupa aguente calor, frio, vento e chuva.",
+     "p": [
+      "A camada base fica junto à pele e afasta o suor, como uma camisola fina de merino ou sintética.",
+      "A camada intermédia aquece, por exemplo um polar ou um casaco leve acolchoado.",
+      "A camada exterior trava vento e chuva; juntas, as camadas adaptam-se quando o dia aquece ou arrefece."
+     ],
+     "q": "O que costumas fazer quando o tempo muda de repente enquanto estás na rua?",
+     "c": "Escolhe do teu armário uma camada base, uma intermédia e uma exterior para um dia fresco e chuvoso."
+    },
+    "pt_BR": {
+     "t": "Vestir em camadas",
+     "g": "Entenda as camadas base, intermediária e externa para pouca roupa encarar calor, frio, vento e chuva.",
+     "p": [
+      "A camada base fica na pele e afasta o suor, como uma blusa fina de merino ou sintética.",
+      "A camada intermediária esquenta, por exemplo um fleece ou uma jaqueta leve acolchoada.",
+      "A camada externa barra vento e chuva; juntas, as camadas se ajustam quando o dia esquenta ou esfria."
+     ],
+     "q": "O que você costuma fazer quando o tempo muda de repente enquanto está na rua?",
+     "c": "Escolha no seu armário uma camada base, uma intermediária e uma externa para um dia fresco e chuvoso."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Footwear choices",
+     "g": "See why one pair of comfortable walking shoes plus a pair of sandals covers most backpacking trips.",
+     "p": [
+      "Your main shoes should already be broken in; brand-new shoes on a long walk mean blisters.",
+      "Light trail runners or walking shoes handle cities and easy trails without the weight of boots.",
+      "Sandals or flip-flops work for hot days, beaches and hostel showers, where they also protect your feet."
+     ],
+     "q": "Which shoes do you own that you could walk in all day without thinking about them?",
+     "c": "Walk at least an hour today in the shoes you would take and notice any rubbing spots."
+    },
+    "de": {
+     "t": "Die richtigen Schuhe",
+     "g": "Erfahre, warum ein Paar bequeme Laufschuhe plus Sandalen für die meisten Backpacking-Reisen reicht.",
+     "p": [
+      "Deine Hauptschuhe sollten eingelaufen sein, neue Schuhe auf langen Wegen bedeuten Blasen.",
+      "Leichte Trailrunner oder Wanderhalbschuhe schaffen Städte und leichte Wege ohne Stiefelgewicht.",
+      "Sandalen oder Flip-Flops passen zu heißen Tagen, Strand und Hostelduschen, wo sie die Füße schützen."
+     ],
+     "q": "Welche deiner Schuhe könntest du den ganzen Tag tragen, ohne an sie zu denken?",
+     "c": "Geh heute mindestens eine Stunde in den Schuhen, die du mitnehmen würdest, und achte auf Druckstellen."
+    },
+    "es": {
+     "t": "Elegir el calzado",
+     "g": "Descubre por qué un par de zapatillas cómodas más unas sandalias bastan para casi todos los viajes.",
+     "p": [
+      "Tu calzado principal debe estar ya domado; estrenar zapatos en una caminata larga es pedir ampollas.",
+      "Unas zapatillas ligeras de trail o de caminar sirven para ciudad y senderos fáciles sin el peso de las botas.",
+      "Las sandalias o chanclas van bien en días de calor, playa y duchas del albergue, donde protegen tus pies."
+     ],
+     "q": "¿Qué calzado tienes con el que podrías andar todo el día sin pensar en él?",
+     "c": "Camina hoy al menos una hora con el calzado que llevarías y fíjate si roza en algún sitio."
+    },
+    "fr": {
+     "t": "Bien choisir ses chaussures",
+     "g": "Découvre pourquoi une paire de chaussures de marche confortables et des sandales suffisent presque toujours.",
+     "p": [
+      "Tes chaussures principales doivent être faites à ton pied ; des neuves sur une longue marche, c'est des ampoules.",
+      "Des chaussures de trail légères ou de marche gèrent villes et sentiers faciles sans le poids des bottes.",
+      "Sandales ou tongs servent par temps chaud, à la plage et dans les douches d'auberge, où elles protègent."
+     ],
+     "q": "Quelles chaussures as-tu dans lesquelles tu pourrais marcher toute la journée sans y penser ?",
+     "c": "Marche au moins une heure aujourd'hui avec les chaussures que tu emporterais et repère les frottements."
+    },
+    "it": {
+     "t": "Scegliere le scarpe",
+     "g": "Scopri perché un paio di scarpe comode da camminata più dei sandali bastano per quasi ogni viaggio.",
+     "p": [
+      "Le scarpe principali devono essere già rodate: scarpe nuove su una lunga camminata significano vesciche.",
+      "Scarpe leggere da trail o da camminata vanno bene in città e su sentieri facili, senza il peso degli scarponi.",
+      "Sandali o infradito servono nei giorni caldi, in spiaggia e nelle docce dell'ostello, dove proteggono i piedi."
+     ],
+     "q": "Quali scarpe hai con cui potresti camminare tutto il giorno senza pensarci?",
+     "c": "Cammina oggi almeno un'ora con le scarpe che porteresti e nota eventuali punti che sfregano."
+    },
+    "pt": {
+     "t": "Escolher o calçado",
+     "g": "Descobre porque um par de sapatilhas confortáveis e umas sandálias chegam para quase todas as viagens.",
+     "p": [
+      "O calçado principal deve estar já laceado; sapatos novos numa caminhada longa significam bolhas.",
+      "Sapatilhas leves de trail ou de caminhada servem cidades e trilhos fáceis sem o peso das botas.",
+      "Sandálias ou chinelos dão jeito em dias quentes, praias e duches do hostel, onde protegem os pés."
+     ],
+     "q": "Que calçado tens com que conseguirias andar o dia todo sem pensar nele?",
+     "c": "Caminha hoje pelo menos uma hora com o calçado que levarias e repara se roça em algum sítio."
+    },
+    "pt_BR": {
+     "t": "Escolhendo o calçado",
+     "g": "Descubra por que um par de tênis confortável mais uma sandália resolve quase todo mochilão.",
+     "p": [
+      "O calçado principal deve estar amaciado; sapato novo numa caminhada longa é bolha na certa.",
+      "Tênis leves de trilha ou caminhada encaram cidades e trilhas fáceis sem o peso de uma bota.",
+      "Sandálias ou chinelos servem para dias quentes, praia e chuveiros do hostel, onde protegem os pés."
+     ],
+     "q": "Qual calçado você tem com o qual andaria o dia todo sem nem pensar nele?",
+     "c": "Caminhe hoje pelo menos uma hora com o calçado que você levaria e repare se algo machuca."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The daypack",
+     "g": "Discover why a small, foldable daypack makes day trips and city walks easier and safer.",
+     "p": [
+      "Your big pack stays at the hostel while a light daypack carries water, snacks and a layer.",
+      "Foldable daypacks pack down to the size of a fist, so they cost almost no space.",
+      "In crowds or on buses, wear it on your front and keep valuables in an inner pocket."
+     ],
+     "q": "What would you put in your daypack for a full day exploring a new city?",
+     "c": "Pack a daypack for tomorrow with only what you truly need for the day."
+    },
+    "de": {
+     "t": "Der Tagesrucksack",
+     "g": "Entdecke, warum ein kleiner faltbarer Tagesrucksack Ausflüge und Stadtbummel leichter und sicherer macht.",
+     "p": [
+      "Dein großer Rucksack bleibt im Hostel, der leichte Tagesrucksack trägt Wasser, Snacks und eine Jacke.",
+      "Faltbare Tagesrucksäcke werden faustgroß und brauchen fast keinen Platz.",
+      "Im Gedränge oder im Bus trägst du ihn vorne und Wertsachen in einer Innentasche."
+     ],
+     "q": "Was würdest du für einen ganzen Tag in einer neuen Stadt in deinen Tagesrucksack packen?",
+     "c": "Pack für morgen einen Tagesrucksack mit nur dem, was du wirklich brauchst."
+    },
+    "es": {
+     "t": "La mochila de día",
+     "g": "Descubre por qué una mochila pequeña y plegable hace más fáciles y seguras las excursiones y paseos.",
+     "p": [
+      "La mochila grande se queda en el albergue y la de día lleva agua, algo de comer y una capa.",
+      "Las plegables se reducen al tamaño de un puño, así que casi no ocupan espacio.",
+      "Entre multitudes o en el autobús, llévala delante y guarda lo valioso en un bolsillo interior."
+     ],
+     "q": "¿Qué meterías en tu mochila de día para pasar una jornada explorando una ciudad nueva?",
+     "c": "Prepara una mochila de día para mañana solo con lo que de verdad necesitas."
+    },
+    "fr": {
+     "t": "Le sac de jour",
+     "g": "Découvre pourquoi un petit sac pliable rend les excursions et balades en ville plus simples et plus sûres.",
+     "p": [
+      "Ton gros sac reste à l'auberge, et un sac léger emporte eau, en-cas et une couche chaude.",
+      "Les sacs pliables tiennent dans le poing une fois repliés, ils ne prennent presque pas de place.",
+      "Dans la foule ou le bus, porte-le devant toi et garde tes objets de valeur dans une poche intérieure."
+     ],
+     "q": "Que mettrais-tu dans ton sac de jour pour une journée à explorer une nouvelle ville ?",
+     "c": "Prépare un sac de jour pour demain avec seulement ce dont tu as vraiment besoin."
+    },
+    "it": {
+     "t": "Lo zainetto da giorno",
+     "g": "Scopri perché uno zainetto piccolo e pieghevole rende gite ed esplorazioni in città più facili e sicure.",
+     "p": [
+      "Lo zaino grande resta in ostello, lo zainetto leggero porta acqua, snack e uno strato in più.",
+      "Gli zainetti pieghevoli diventano grandi come un pugno, quindi non occupano quasi spazio.",
+      "Tra la folla o in autobus portalo davanti e tieni gli oggetti di valore in una tasca interna."
+     ],
+     "q": "Cosa metteresti nello zainetto per un giorno intero a esplorare una città nuova?",
+     "c": "Prepara uno zainetto per domani con solo ciò che ti serve davvero."
+    },
+    "pt": {
+     "t": "A mochila de dia",
+     "g": "Descobre porque uma mochila pequena e dobrável torna as excursões e passeios mais fáceis e seguros.",
+     "p": [
+      "A mochila grande fica no hostel e a de dia leva água, snacks e uma camada extra.",
+      "As dobráveis ficam do tamanho de um punho, por isso quase não ocupam espaço.",
+      "Em multidões ou no autocarro, leva-a à frente e guarda os objetos de valor num bolso interior."
+     ],
+     "q": "O que porias na mochila de dia para passar um dia inteiro a explorar uma cidade nova?",
+     "c": "Prepara uma mochila de dia para amanhã só com o que precisas mesmo."
+    },
+    "pt_BR": {
+     "t": "A mochila de ataque",
+     "g": "Descubra por que uma mochila pequena e dobrável deixa passeios e bate-voltas mais fáceis e seguros.",
+     "p": [
+      "A mochila grande fica no hostel e a pequena leva água, lanche e uma camada extra.",
+      "As dobráveis ficam do tamanho de um punho, então quase não ocupam espaço.",
+      "Em aglomerações ou no ônibus, use-a na frente e guarde objetos de valor num bolso interno."
+     ],
+     "q": "O que você colocaria na mochila pequena para um dia inteiro explorando uma cidade nova?",
+     "c": "Arrume uma mochila pequena para amanhã só com o que você realmente precisa."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Toiletries for backpackers",
+     "g": "Learn to pick small, solid and multi-use toiletries that save space, weight and spills.",
+     "p": [
+      "Solid shampoo, soap and deodorant bars cannot leak and do not count as liquids at airport security.",
+      "Multi-use products, like a soap for body, hair and laundry, mean fewer bottles to carry.",
+      "Decant liquids into small refillable bottles and keep them together in one clear bag."
+     ],
+     "q": "Which toiletry could you swap for a solid or multi-use version first?",
+     "c": "Gather your toiletries and remove one item you could replace or skip."
+    },
+    "de": {
+     "t": "Kosmetik für Backpacker",
+     "g": "Lerne, kleine, feste und vielseitige Pflegeprodukte zu wählen, die Platz, Gewicht und Ärger sparen.",
+     "p": [
+      "Festes Shampoo, Seife und Deo-Stücke laufen nicht aus und zählen bei der Kontrolle nicht als Flüssigkeit.",
+      "Multi-Produkte wie eine Seife für Körper, Haare und Wäsche heißen weniger Flaschen.",
+      "Füll Flüssiges in kleine Nachfüllflaschen und bewahr sie zusammen in einem durchsichtigen Beutel auf."
+     ],
+     "q": "Welches Pflegeprodukt könntest du als Erstes gegen eine feste oder vielseitige Version tauschen?",
+     "c": "Sammle deine Kosmetik und nimm ein Teil heraus, das du ersetzen oder weglassen könntest."
+    },
+    "es": {
+     "t": "Aseo para mochileros",
+     "g": "Aprende a elegir productos de aseo pequeños, sólidos y multiuso que ahorran espacio, peso y derrames.",
+     "p": [
+      "El champú, el jabón y el desodorante en barra no se derraman ni cuentan como líquidos en el control.",
+      "Los productos multiuso, como un jabón para cuerpo, pelo y ropa, significan menos botes.",
+      "Pasa los líquidos a botes pequeños rellenables y guárdalos juntos en una bolsa transparente."
+     ],
+     "q": "¿Qué producto de aseo podrías cambiar primero por uno sólido o multiuso?",
+     "c": "Reúne tus cosas de aseo y quita una que podrías reemplazar o no llevar."
+    },
+    "fr": {
+     "t": "La trousse de toilette",
+     "g": "Apprends à choisir des produits petits, solides et polyvalents qui économisent place, poids et fuites.",
+     "p": [
+      "Shampoing, savon et déodorant solides ne fuient pas et ne comptent pas comme liquides au contrôle.",
+      "Les produits multi-usages, comme un savon pour corps, cheveux et linge, réduisent le nombre de flacons.",
+      "Transvase les liquides dans de petits flacons rechargeables, réunis dans un sac transparent."
+     ],
+     "q": "Quel produit de toilette pourrais-tu remplacer en premier par une version solide ou polyvalente ?",
+     "c": "Rassemble ta trousse et retire un produit que tu pourrais remplacer ou laisser."
+    },
+    "it": {
+     "t": "Il beauty da backpacker",
+     "g": "Impara a scegliere prodotti per l'igiene piccoli, solidi e multiuso che fanno risparmiare spazio e peso.",
+     "p": [
+      "Shampoo, sapone e deodorante solidi non perdono e ai controlli non contano come liquidi.",
+      "I prodotti multiuso, come un sapone per corpo, capelli e bucato, significano meno flaconi.",
+      "Travasa i liquidi in piccoli flaconi ricaricabili e tienili insieme in una busta trasparente."
+     ],
+     "q": "Quale prodotto potresti sostituire per primo con una versione solida o multiuso?",
+     "c": "Raduna i tuoi prodotti per l'igiene e togline uno che potresti sostituire o lasciare a casa."
+    },
+    "pt": {
+     "t": "Higiene para mochileiros",
+     "g": "Aprende a escolher produtos de higiene pequenos, sólidos e multiusos que poupam espaço, peso e derrames.",
+     "p": [
+      "Champô, sabonete e desodorizante sólidos não vertem e não contam como líquidos no controlo.",
+      "Produtos multiusos, como um sabão para corpo, cabelo e roupa, significam menos frascos.",
+      "Passa os líquidos para frascos pequenos recarregáveis e guarda-os juntos num saco transparente."
+     ],
+     "q": "Que produto de higiene podias trocar primeiro por uma versão sólida ou multiusos?",
+     "c": "Junta os teus produtos de higiene e tira um que podias substituir ou deixar."
+    },
+    "pt_BR": {
+     "t": "Higiene para mochileiros",
+     "g": "Aprenda a escolher produtos de higiene pequenos, sólidos e multiuso que economizam espaço e peso.",
+     "p": [
+      "Xampu, sabonete e desodorante em barra não vazam e não contam como líquidos na inspeção.",
+      "Produtos multiuso, como um sabão para corpo, cabelo e roupa, significam menos frascos.",
+      "Passe os líquidos para frascos pequenos recarregáveis e guarde todos juntos num saquinho transparente."
+     ],
+     "q": "Qual produto de higiene você poderia trocar primeiro por uma versão sólida ou multiuso?",
+     "c": "Junte seus itens de higiene e tire um que você poderia substituir ou deixar."
+    }
+   }
+  }
+ ]
+}

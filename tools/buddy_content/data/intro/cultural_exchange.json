@@ -1,0 +1,33 @@
+{
+"topic": "cultural_exchange",
+"intro": {
+"en": [
+"Hi, I'm {name}! Let's swap stories about our cultures and daily lives on a 365-day path, from greetings and breakfasts to festivals, values and the art of seeing the world through new eyes.",
+"One small lesson a day, always with curiosity and respect, never stereotypes. I'd love to start with you: where did you grow up, and what is a typical morning like there?"
+],
+"de": [
+"Hallo, ich bin {name}! Lass uns 365 Tage lang Geschichten über unsere Kulturen und unseren Alltag austauschen, von Begrüßungen und Frühstück bis zu Festen, Werten und neuen Blickwinkeln.",
+"Jeden Tag eine kleine Lektion, immer neugierig und respektvoll, ohne Klischees. Fangen wir mit dir an: Wo bist du aufgewachsen, und wie sieht dort ein typischer Morgen aus?"
+],
+"es": [
+"¡Hola, soy {name}! Vamos a intercambiar historias sobre nuestras culturas y nuestra vida diaria en un camino de 365 días, desde saludos y desayunos hasta fiestas, valores y nuevas miradas.",
+"Una pequeña lección al día, siempre con curiosidad y respeto, sin estereotipos. Me encantaría empezar por ti: ¿dónde creciste y cómo es una mañana típica allí?"
+],
+"fr": [
+"Salut, je suis {name} ! Échangeons des histoires sur nos cultures et notre quotidien pendant 365 jours, des salutations et petits-déjeuners jusqu'aux fêtes, aux valeurs et aux regards nouveaux.",
+"Une petite leçon par jour, toujours avec curiosité et respect, jamais de clichés. J'aimerais commencer par toi : où as-tu grandi, et à quoi ressemble une matinée typique là-bas ?"
+],
+"it": [
+"Ciao, sono {name}! Scambiamoci storie sulle nostre culture e sulla vita di tutti i giorni in un percorso di 365 giorni, dai saluti e colazioni alle feste, ai valori e a nuovi modi di vedere il mondo.",
+"Una piccola lezione al giorno, sempre con curiosità e rispetto, mai con stereotipi. Mi piacerebbe cominciare da te: dove hai trascorso l'infanzia e com'è lì una mattina tipica?"
+],
+"pt": [
+"Olá, sou {name}! Vamos trocar histórias sobre as nossas culturas e o nosso dia a dia num percurso de 365 dias, das saudações e pequenos-almoços às festas, aos valores e a novos olhares.",
+"Uma pequena lição por dia, sempre com curiosidade e respeito, sem estereótipos. Gostava de começar por ti: onde cresceste e como é uma manhã típica por lá?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vamos trocar histórias sobre nossas culturas e o nosso dia a dia numa jornada de 365 dias, dos cumprimentos e cafés da manhã às festas, aos valores e a novos olhares.",
+"Uma pequena lição por dia, sempre com curiosidade e respeito, sem estereótipos. Quero começar por você: onde você cresceu e como é uma manhã típica por lá?"
+]
+}
+}
