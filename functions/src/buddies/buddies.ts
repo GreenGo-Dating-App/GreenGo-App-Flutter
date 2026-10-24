@@ -45,6 +45,8 @@ const runtime = { memory: '512MiB' as const, timeoutSeconds: 60 };
 export const BUDDY_JOBS = 'ai_buddy_jobs';
 /** Time between the bubbles of one Buddy turn. */
 export const BUBBLE_GAP_MS = 1000;
+/** Owner 2026-10-24: 1 bubble per turn, 2 only for a really long answer. */
+export const MAX_BUBBLES = 2;
 /** Messages per user per 10 minutes (all Buddies). */
 export const RATE_LIMIT_10MIN = 30;
 
@@ -520,7 +522,7 @@ export function parseBuddyReply(raw: string, r: CapabilityRules, fallback: strin
     }
     const clean = applyReplyRules(m.replace(/<\/?[a-z]*\s*\/?>/gi, ' '), { stripMarkdown: true, stripLinks: true });
     for (const b of splitIntoBubbles(clean.text, max)) {
-      if (bubbles.length >= 3) break;
+      if (bubbles.length >= MAX_BUBBLES) break;
       const banned = applyReplyRules(b, { bannedTerms: r.bannedTerms }).banned;
       const text = isUnsafeReply(b, banned) ? fallback : b;
       if (!bubbles.includes(text)) bubbles.push(text);

@@ -90,14 +90,14 @@ export function conversationBlock(b: BuddySettings): string {
 }
 
 /**
- * Output contract for a chat reply: 1-3 separate messages (more for complex
- * topics), each like a chat bubble, plus the places mentioned.
+ * Output contract for a chat reply (owner 2026-10-24): 1 message, 2 only for
+ * a really long answer, each like a chat bubble, plus the places mentioned.
  */
 export function replyFormatBlock(maxChars: number): string {
   return [
     'Answer with ONE JSON object and nothing else:',
-    '{"messages": ["first chat message", "optional second", "optional third"], "keywords": [{"type": "city|attraction|country", "name": "..."}]}',
-    `Send 1 message for simple chat, 2 or 3 when the topic needs more. EACH message must be complete and at most ${maxChars} characters (about 2 short sentences), no markdown. Keep the whole reply short.`,
+    '{"messages": ["your chat message"], "keywords": [{"type": "city|attraction|country", "name": "..."}]}',
+    `Almost always send exactly 1 message. Only when the answer truly cannot fit, send 2 (never more). EACH message must be complete and at most ${maxChars} characters (about 2 short sentences), no markdown. Keep it short like a real chat.`,
     '"keywords" lists the cities, attractions and countries you mentioned (may be empty).',
   ].join('\n');
 }

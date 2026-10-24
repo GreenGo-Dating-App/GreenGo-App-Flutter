@@ -180,9 +180,9 @@ import { conversationBlock, replyFormatBlock } from '../prompt';
 
 describe('multi-message replies', () => {
   const rules = DEFAULT_RULES.text_buddies;
-  it('keeps 1-3 cleaned messages and drops a 4th', () => {
-    const r = parseBuddyReply(JSON.stringify({ messages: ['**Ciao!**', 'Come stai?', 'E Roma?', 'quarto'], keywords: [] }), rules, 'FB');
-    expect(r.messages).toEqual(['Ciao!', 'Come stai?', 'E Roma?']);
+  it('keeps at most 2 cleaned messages', () => {
+    const r = parseBuddyReply(JSON.stringify({ messages: ['**Ciao!**', 'Come stai?', 'E Roma?'], keywords: [] }), rules, 'FB');
+    expect(r.messages).toEqual(['Ciao!', 'Come stai?']);
   });
   it('plain text (no JSON) is one message, cut to 200 chars', () => {
     const r = parseBuddyReply('x '.repeat(200), rules, 'FB');
@@ -229,9 +229,9 @@ describe('never truncated bubbles', () => {
     expect(r.messages).toEqual(['Ciao! Va bene, grazie. Sono felice di sentirti, come stai oggi?']);
     expect(parseBuddyReply('{"messages": [', DEFAULT_RULES.text_buddies, 'FB').messages).toEqual(['FB']);
   });
-  it('at most 3 bubbles per turn', () => {
+  it('at most 2 bubbles per turn', () => {
     const r = parseBuddyReply(JSON.stringify({ messages: ['A. '.repeat(90), 'B', 'C', 'D'] }), DEFAULT_RULES.text_buddies, 'FB');
-    expect(r.messages.length).toBeLessThanOrEqual(3);
+    expect(r.messages.length).toBeLessThanOrEqual(2);
   });
 });
 
