@@ -318,3 +318,14 @@ describe('never translate a language into itself', () => {
     expect(en).toEqual({ user: null, replies: [null] });
   });
 });
+
+describe('the Buddy starts the chat', () => {
+  it('opening prompt names the topic and asks one question', () => {
+    const { openingPrompt } = require('../prompt');
+    const p = openingPrompt(settings({ topic: 'city_guides', language: 'en' }), DEFAULT_RULES.text_buddies);
+    expect(p.user).toMatch(/very first message/);
+    expect(p.user).toMatch(/travel/);
+    expect(p.user).toMatch(/ONE open, specific question/);
+    expect(p.system).toMatch(/You speak ONLY English/);
+  });
+});

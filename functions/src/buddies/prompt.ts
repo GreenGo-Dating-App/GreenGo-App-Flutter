@@ -106,6 +106,23 @@ export function replyFormatBlock(maxChars: number): string {
  * The Buddy writes first after [hoursSilent] hours. One question, specific to
  * what it remembers (a plan, a goal, an event), else to the topic.
  */
+/**
+ * Owner 2026-10-24: right after a Buddy is created it starts the chat: a
+ * short hello that fits its category + sub-category, ending with ONE open
+ * question to get to know the user's interest in the topic.
+ */
+export function openingPrompt(b: BuddySettings, rules: CapabilityRules): { system: string; user: string } {
+  const topic = topicById(b.topic);
+  return {
+    system: `${systemPrompt(b, rules, [], '')}\n\n${replyFormatBlock(rules.maxOutputChars ?? 200)}`,
+    user: [
+      '[GreenGo instruction, not from the user] You were just created and this is the very first message of the chat.',
+      `Start the conversation yourself: greet the user warmly, say your name, connect to your topic (${topic?.group ?? 'friendship'} / ${topic?.brief ?? 'friendly chat'}),`,
+      'and end with ONE open, specific question about the user and this topic to get to know them. One single short message.',
+    ].join('\n'),
+  };
+}
+
 export function checkInPrompt(b: BuddySettings, rules: CapabilityRules, memory: MemoryFact[], summary: string,
   lastMessages: { role: string; content: string }[], hoursSilent: number, unanswered: number): { system: string; user: string } {
   const recent = lastMessages.slice(-6).map((m) => `${m.role === 'user' ? 'User' : 'You'}: ${m.content}`).join('\n');

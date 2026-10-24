@@ -37,7 +37,7 @@ import {
   FREE_REPLIES_PER_DAY, Language, MemoryFact, USER_MESSAGE_MAX, utcDay, validateSettings,
 } from './model';
 import { CRISIS_REPLY, FALLBACK_REPLY, isCrisis, isUnsafeReply } from './crisis';
-import { checkInPrompt, memoryPrompt, parseJsonObject, replyFormatBlock, summaryPrompt, systemPrompt } from './prompt';
+import { checkInPrompt, memoryPrompt, openingPrompt, parseJsonObject, replyFormatBlock, summaryPrompt, systemPrompt } from './prompt';
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
@@ -181,8 +181,46 @@ export const createBuddy = callable('createBuddy', async (uid, data) => {
       summaryCoveredUntil: null,
     });
   });
-  return { buddyId: ref.id };
+  // The Buddy writes first (free). Best effort: the Buddy exists either way.
+  const opened = await sendOpening(uid, ref, s).catch((e) => {
+    console.warn('createBuddy: opening message failed', e?.message ?? e);
+    return false;
+  });
+  return { buddyId: ref.id, opened };
 });
+
+/**
+ * Generates and stores the Buddy's first message (free, kind 'chat', charged
+ * 'none'), translated once into the chat language like every message.
+ * Skipped (false) when the user has no AI provider for Buddies yet.
+ */
+export async function sendOpening(uid: string, ref: admin.firestore.DocumentReference, b: BuddySettings): Promise<boolean> {
+  const consentVersion = await aiConsentVersion(uid);
+  const config = await loadConfig();
+  if (!eligibleChain(config, 'text_buddies', { consentVersion }).length) return false;
+  const r = config.rules.text_buddies ?? {};
+  const p = openingPrompt(b, r);
+  const out = await generate('text_buddies', { system: p.system, messages: [{ role: 'user', content: p.user }], json: true },
+    { consentVersion }, { rawReply: true, rules: { maxTokens: Math.max(r.maxTokens ?? 120, 600) } });
+  const lang = b.language as Language;
+  const parsed = parseBuddyReply(out.text, r, FALLBACK_REPLY[lang] ?? FALLBACK_REPLY.en);
+  const text = parsed.messages[0];
+  const tr = await translateTurn(b, null, [text], consentVersion);
+  const at = TS();
+  const batch = db().batch();
+  batch.set(ref.collection('messages').doc(), {
+    role: 'buddy', text, kind: 'chat', charged: 'none', createdAt: at,
+    ...(parsed.keywords.length ? { keywords: parsed.keywords } : {}),
+    ...(tr.replies[0] ? { translation: tr.replies[0] } : {}),
+  });
+  const checkIn = r.checkInsEnabled !== false && b.checkInsEnabled !== false;
+  batch.update(ref, {
+    lastMessage: text.slice(0, 200), lastMessageAt: at, messageCount: admin.firestore.FieldValue.increment(1),
+    nextCheckInAt: checkIn ? admin.firestore.Timestamp.fromMillis(Date.now() + (r.checkInAfterHours ?? 24) * 3600_000) : null,
+  });
+  await batch.commit();
+  return true;
+}
 
 export const updateBuddy = callable('updateBuddy', async (uid, data) => {
   const buddyId = okId(data.buddyId);
