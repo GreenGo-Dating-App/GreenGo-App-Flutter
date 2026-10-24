@@ -478,3 +478,20 @@ describe('supported languages per model', () => {
     expect(String(fetchMock.mock.calls[0][0])).toContain('translation.googleapis.com');
   });
 });
+
+describe('chat-model translation guards', () => {
+  const { parseTranslationJson, plausibleTranslation } = require('../adapters');
+  it('reads {"translation"} even with text or fences around it', () => {
+    expect(parseTranslationJson('{"translation": "Ciao!"}')).toBe('Ciao!');
+    expect(parseTranslationJson('```json\n{"translation":"Ciao"}\n```')).toBe('Ciao');
+    expect(parseTranslationJson('Ciao!')).toBeNull();
+    expect(parseTranslationJson('{"translation": ""}')).toBeNull();
+  });
+  it('rejects an "answer" that is far longer or shorter than the text', () => {
+    const t = 'Naples is the home of pizza margherita! Have you ever tried a real one there?';
+    expect(plausibleTranslation(t, 'Napoli è la patria della pizza margherita! Hai mai provato una vera pizza lì?')).toBe(true);
+    expect(plausibleTranslation(t, 'Sì!')).toBe(false);
+    expect(plausibleTranslation(t, t.repeat(4))).toBe(false);
+    expect(plausibleTranslation('Hi!', 'Ciao a te, come stai oggi?')).toBe(true);
+  });
+});
