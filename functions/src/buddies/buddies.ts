@@ -584,6 +584,15 @@ export function verifyMemoryFacts(raw: unknown, userTexts: string[], previous: M
 }
 
 export interface StoredTranslation { text: string; lang: string }
+
+/**
+ * True when a "translation" only differs by case, accents, punctuation or
+ * spacing (the text already was in the target language): not shown.
+ */
+export function nearlySame(a: string, b: string): boolean {
+  const n = (s: string) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
+  return n(a) === n(b);
+}
 const baseLang = (c: string) => c.toLowerCase().replace(/_/g, '-').split('-')[0];
 const routerLang = (c: string) => c.replace('_', '-');
 
@@ -599,13 +608,15 @@ export async function translateTurn(b: BuddySettings, userText: string | null, r
   Promise<{ user: StoredTranslation | null; replies: (StoredTranslation | null)[] }> {
   const target = b.chatLanguage ?? b.language;
   const none = { user: null, replies: replies.map(() => null) };
-  if (!target) return none;
+  // Owner 2026-10-24: never translate Italian into Italian, English into
+  // English...: a chat read in the Buddy's own language translates nothing.
+  if (!target || baseLang(target) === baseLang(b.language)) return none;
   const out: { user: StoredTranslation | null; replies: (StoredTranslation | null)[] } = { user: null, replies: replies.map(() => null) };
   try {
     if (replies.length && baseLang(target) !== baseLang(b.language)) {
       const r = await translate('translate_chat', replies, routerLang(target), { consentVersion }, { source: routerLang(b.language) });
       r.items.forEach((it, i) => {
-        if (it && !it.sameLanguage && it.text.trim() && it.text !== replies[i]) out.replies[i] = { text: it.text, lang: target };
+        if (it && !it.sameLanguage && it.text.trim() && !nearlySame(it.text, replies[i])) out.replies[i] = { text: it.text, lang: target };
       });
     }
     if (userText && userText.trim()) {
@@ -613,7 +624,9 @@ export async function translateTurn(b: BuddySettings, userText: string | null, r
       const it = r.items[0];
       const detected = it?.detectedLanguage ?? null;
       const sameAsTarget = detected ? baseLang(detected) === baseLang(target) : false;
-      if (it && !it.sameLanguage && !sameAsTarget && it.text.trim() && it.text !== userText) out.user = { text: it.text, lang: target };
+      if (it && !it.sameLanguage && !sameAsTarget && it.text.trim() && !nearlySame(it.text, userText)) {
+        out.user = { text: it.text, lang: target };
+      }
     }
   } catch (e: any) {
     console.warn('buddy translateTurn failed', e?.message ?? e);

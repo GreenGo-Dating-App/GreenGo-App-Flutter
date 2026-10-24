@@ -303,3 +303,18 @@ describe('chat language + translate once', () => {
     expect(tr.replies).toEqual([null]);
   });
 });
+
+describe('never translate a language into itself', () => {
+  it('nearlySame ignores case, accents, punctuation and spaces', () => {
+    const { nearlySame } = require('../buddies');
+    expect(nearlySame('Ciao, come stai?', 'ciao come stai')).toBe(true);
+    expect(nearlySame('Perché no!', 'perche no')).toBe(true);
+    expect(nearlySame('Hello', 'Ciao')).toBe(false);
+  });
+  it('a chat read in the Buddy language translates nothing at all (it/it, en/en)', async () => {
+    const it = await translateTurn(settings({ language: 'it', chatLanguage: 'it' }), 'Ciao!', ['Ciao, come va?'], 3);
+    expect(it).toEqual({ user: null, replies: [null] });
+    const en = await translateTurn(settings({ language: 'en', chatLanguage: 'en' }), 'Hi!', ['Hello!'], 3);
+    expect(en).toEqual({ user: null, replies: [null] });
+  });
+});
